@@ -173,10 +173,15 @@ def _parse_links(raw: list | None) -> list[EvidenceLink]:
         if not isinstance(item, dict):
             continue
         try:
+            aid = str(item.get("atom_id", ""))
+            cid = str(item.get("claim_id", ""))
+            if not aid or not cid:
+                logger.warning("Skipping link with missing atom_id or claim_id: %s", item)
+                continue
             links.append(
                 EvidenceLink(
-                    atom_id=str(item.get("atom_id", "")),
-                    claim_id=str(item.get("claim_id", "")),
+                    atom_id=aid,
+                    claim_id=cid,
                     confidence=float(item.get("confidence", 0.0)),
                     reasoning=str(item.get("reasoning", "")),
                     relevance_type=str(item.get("relevance_type", "direct")),
