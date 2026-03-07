@@ -154,57 +154,57 @@ def _build_queries(vehicle_id: str, lane: str, claim_ids: list[str] | None = Non
     """
     queries: dict[str, tuple[str, tuple]] = {}
 
-    # 1. Claims
+    # 1. Claims — select only columns needed for filing assembly
     queries["claims"] = (
-        "SELECT * FROM claims WHERE classification LIKE ? OR claim_id LIKE ?",
+        "SELECT claim_id, classification, claim_text, elements, status FROM claims WHERE classification LIKE ? OR claim_id LIKE ?",
         (f"%{lane}%", f"%{vehicle_id}%"),
     )
 
-    # 2. Evidence quotes (top 500 most recent)
+    # 2. Evidence quotes (top 500 most recent) — explicit columns
     queries["evidence"] = (
-        "SELECT * FROM evidence_quotes ORDER BY id DESC LIMIT 500",
+        "SELECT id, quote_text, evidence_category, source_file, page_number, relevance_score FROM evidence_quotes ORDER BY id DESC LIMIT 500",
         (),
     )
 
     # 3. Claim-evidence links
     queries["claim_evidence_links"] = (
-        "SELECT * FROM claim_evidence_links ORDER BY id DESC LIMIT 1000",
+        "SELECT id, claim_id, evidence_id, link_type, strength FROM claim_evidence_links ORDER BY id DESC LIMIT 1000",
         (),
     )
 
     # 4. Authority chains
     queries["authority"] = (
-        "SELECT * FROM authority_chains WHERE filing_vehicle LIKE ?",
+        "SELECT id, filing_vehicle, authority_type, citation, rule_text, chain_complete FROM authority_chains WHERE filing_vehicle LIKE ?",
         (f"%{vehicle_id}%",),
     )
 
     # 5. Auth rules (all — typically small table)
     queries["auth_rules"] = (
-        "SELECT * FROM auth_rules LIMIT 2000",
+        "SELECT id, rule_number, title, full_text FROM auth_rules LIMIT 2000",
         (),
     )
 
     # 6. Deadlines
     queries["deadlines"] = (
-        "SELECT * FROM deadlines WHERE status = 'active' ORDER BY due_date_iso ASC",
+        "SELECT id, deadline_name, due_date_iso, status, vehicle_name, court FROM deadlines WHERE status = 'active' ORDER BY due_date_iso ASC",
         (),
     )
 
     # 7. Filing readiness
     queries["filing_readiness"] = (
-        "SELECT * FROM filing_readiness WHERE vehicle_name LIKE ?",
+        "SELECT id, vehicle_name, readiness_score, missing_items, status FROM filing_readiness WHERE vehicle_name LIKE ?",
         (f"%{vehicle_id}%",),
     )
 
-    # 8. Impeachment items (all — used for cross-examination prep)
+    # 8. Impeachment items (critical for cross-examination prep)
     queries["impeachment"] = (
-        "SELECT * FROM impeachment_items ORDER BY severity DESC LIMIT 200",
+        "SELECT id, target_name, statement, contradiction, severity, source_file FROM impeachment_items ORDER BY severity DESC LIMIT 200",
         (),
     )
 
     # 9. Judicial violations (critical + high only)
     queries["judicial_violations"] = (
-        "SELECT * FROM judicial_violations WHERE severity IN ('critical','high') LIMIT 50",
+        "SELECT id, violation_type, description, severity, judge_name, evidence_ref FROM judicial_violations WHERE severity IN ('critical','high') LIMIT 50",
         (),
     )
 
