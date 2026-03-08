@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "agent-memory": {
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/.agents/skills/agent-memory/out/mcp-server/server.js",
+        "LitigationOS",
+        "${workspaceFolder}"
+      ]
+    }
+  }
+}
