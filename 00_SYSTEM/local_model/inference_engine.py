@@ -102,6 +102,7 @@ class MichiganLegalModel:
         self._inverted_index = None  # fast-path inverted index
         self._hot_cache = {}  # preloaded data for sub-millisecond lookups
         self._engine_cache = {}  # lazy-loading engine registry
+        self._query_rewriter = None  # AdaptiveRewriter for LIKE→FTS5 rewrites
         self._load()
         self._preload_hot_data()
 
@@ -267,12 +268,78 @@ class MichiganLegalModel:
                 self._db.execute("PRAGMA synchronous=NORMAL")
                 self._db.execute("PRAGMA busy_timeout=180000")
                 self._db.row_factory = sqlite3.Row
+                # Wire AdaptiveRewriter for automatic LIKE→FTS5 optimization
+                if self._query_rewriter is None:
+                    self._query_rewriter = self._init_query_rewriter()
                 return self._db
             except Exception as e:
                 self._log_error("db_connection", f"Attempt {attempt+1}: {e}")
                 time.sleep(0.5 * (attempt + 1))
                 self._db = None
         return None
+
+    def _init_query_rewriter(self):
+        """Lazy-load AdaptiveRewriter for transparent LIKE→FTS5 rewrites."""
+        try:
+            pipeline_dir = Path(__file__).resolve().parent.parent / "pipeline"
+            rewriter_path = pipeline_dir / "adaptive_query_rewriter.py"
+            if rewriter_path.exists():
+                import importlib.util
+                spec = importlib.util.spec_from_file_location(
+                    "adaptive_query_rewriter", str(rewriter_path))
+                if spec and spec.loader:
+                    mod = importlib.util.module_from_spec(spec)
+                    spec.loader.exec_module(mod)
+                    return mod.AdaptiveRewriter(DB_PATH)
+        except Exception as e:
+            logger.debug(f"AdaptiveRewriter init failed (non-fatal): {e}")
+        return None
+
+    def _rewrite_sql(self, sql: str, params: tuple | None = None):
+        """Rewrite SQL through AdaptiveRewriter if available."""
+        if self._query_rewriter:
+            try:
+                return self._query_rewriter.rewrite(sql, params)
+            except Exception:
+                pass
+        return sql, params
+
+    @staticmethod
+    def _stem_word(word: str) -> str:
+        """Lightweight Porter-style suffix stripping (zero dependencies).
+
+        Handles the most impactful legal suffixes so "disqualification"
+        matches "disqualify", "violation" matches "violat", etc.
+        """
+        if len(word) < 5:
+            return word
+        # Order matters — try longest suffixes first
+        for suffix, replacement in [
+            ("ication", ""),   # disqualification → disqualif
+            ("ation", ""),     # violation → viol, modification → modif
+            ("ment", ""),      # judgment → judg, enforcement → enforc
+            ("ness", ""),      # willingness → willing
+            ("ible", ""),      # admissible → admiss
+            ("able", ""),      # reasonable → reason
+            ("ious", ""),      # egregious → egreg
+            ("eous", ""),      # erroneous → erron
+            ("ing", ""),       # filing → fil
+            ("tion", ""),      # objection → objec
+            ("sion", ""),      # decision → deci
+            ("ity", ""),       # custody → custod
+            ("ies", "y"),      # parties → party
+            ("ive", ""),       # protective → protect
+            ("ful", ""),       # unlawful → unlaw
+            ("ous", ""),       # frivolous → frivol
+            ("ed", ""),        # dismissed → dismiss
+            ("ly", ""),        # properly → proper
+            ("er", ""),        # order → ord
+            ("es", ""),        # causes → caus
+            ("al", ""),        # procedural → procedur
+        ]:
+            if word.endswith(suffix) and len(word) - len(suffix) + len(replacement) >= 3:
+                return word[: -len(suffix)] + replacement
+        return word
 
     def _log_error(self, component: str, msg: str):
         """Log error for self-healing analysis."""
@@ -818,8 +885,14 @@ class MichiganLegalModel:
 
             top_idx = sims.argsort()[-top_k:][::-1]
             results = []
+            # Dynamic threshold: use max(0.01, mean of top-k scores - 1 std)
+            top_scores = sims[top_idx]
+            if len(top_scores) > 1:
+                score_threshold = max(0.005, float(np.mean(top_scores) - np.std(top_scores)))
+            else:
+                score_threshold = 0.005
             for idx in top_idx:
-                if sims[idx] < 0.01:
+                if sims[idx] < score_threshold:
                     continue
                 results.append({
                     "score": round(float(sims[idx]), 4),
@@ -985,11 +1058,13 @@ class MichiganLegalModel:
             if keywords and not results:
                 try:
                     kw = keywords[0].replace("'", "''")
-                    rows = conn.execute(
+                    raw_sql = (
                         f"SELECT passage_text, section, source_file "
                         f"FROM auth_authority_passages "
                         f"WHERE passage_text LIKE '%{kw}%' LIMIT 5"
-                    ).fetchall()
+                    )
+                    opt_sql, opt_params = self._rewrite_sql(raw_sql)
+                    rows = conn.execute(opt_sql, opt_params or ()).fetchall()
                     for row in rows:
                         results.append({
                             "type": "authority_passage",
@@ -1241,7 +1316,7 @@ class MichiganLegalModel:
             # 3. Match legal concepts
             concepts = self.match_concepts(text)
 
-            # 4. Extract keywords for fallback search
+            # 4. Extract keywords for fallback search (with stemming)
             stop = {
                 "the", "a", "an", "is", "are", "was", "were", "be", "been",
                 "have", "has", "had", "do", "does", "did", "will", "would",
@@ -1250,10 +1325,16 @@ class MichiganLegalModel:
                 "how", "when", "where", "why", "which", "who", "about", "this",
                 "that", "and", "or", "but", "not", "if", "my", "me", "i",
             }
-            keywords = [
+            raw_keywords = [
                 w for w in re.sub(r"[^a-z0-9\s.]", " ", text.lower()).split()
                 if len(w) > 2 and w not in stop
             ]
+            # Expand keywords with stems so "disqualification" also matches "disqualify"
+            keywords = list(raw_keywords)
+            for w in raw_keywords:
+                stem = self._stem_word(w)
+                if stem and stem != w and stem not in keywords:
+                    keywords.append(stem)
 
             # 5. Retrieve from TF-IDF corpus (with self-heal)
             label_filter = None
@@ -1879,7 +1960,8 @@ class MichiganLegalModel:
 
         for table, sql in tables_queries:
             try:
-                rows = conn.execute(sql).fetchall()
+                opt_sql, opt_params = self._rewrite_sql(sql)
+                rows = conn.execute(opt_sql, opt_params or ()).fetchall()
                 for r in rows:
                     results.append({"source": table, **{k: r[k] for k in r.keys()}})
             except Exception as e:

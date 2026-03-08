@@ -482,7 +482,7 @@ class SelfEvolver:
 
             vectorizer = TfidfVectorizer(
                 max_features=_TFIDF_MAX_FEATURES,
-                ngram_range=getattr(self, "_tfidf_ngram_range", (1, 2)),
+                ngram_range=getattr(self, "_tfidf_ngram_range", (1, 3)),
                 min_df=getattr(self, "_tfidf_min_df", 2),
                 max_df=getattr(self, "_tfidf_max_df", 0.95),
                 sublinear_tf=True,
