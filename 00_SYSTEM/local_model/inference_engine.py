@@ -103,6 +103,10 @@ class MichiganLegalModel:
         self._hot_cache = {}  # preloaded data for sub-millisecond lookups
         self._engine_cache = {}  # lazy-loading engine registry
         self._query_rewriter = None  # AdaptiveRewriter for LIKE→FTS5 rewrites
+        self._hybrid_retriever = None  # HybridRetriever (BM25S+Semantic+FTS5 via RRF)
+        self._hybrid_init_failed = False  # True if init was attempted and failed
+        self._session_patterns = None  # cached cross-session topic patterns
+        self._session_patterns_ts = 0  # timestamp of last session pattern refresh
         self._load()
         self._preload_hot_data()
 
@@ -1365,24 +1369,73 @@ class MichiganLegalModel:
                     retrieved = self.retrieve(expanded_text, top_k=10, label_filter=label_filter)
 
             # 5b. EPOCH v5.0: Hybrid retrieval (BM25S + Semantic + FTS5 via RRF)
+            if not self._hybrid_init_failed:
+                try:
+                    if self._hybrid_retriever is None:
+                        try:
+                            import importlib.util as _ilu
+                            _hr_path = Path(__file__).parent / "hybrid_retriever.py"
+                            _hr_spec = _ilu.spec_from_file_location("hybrid_retriever", _hr_path)
+                            _hr_mod = _ilu.module_from_spec(_hr_spec)
+                            _hr_spec.loader.exec_module(_hr_mod)
+                            self._hybrid_retriever = _hr_mod.HybridRetriever()
+                            logger.info("HybridRetriever initialized (BM25S+Semantic+FTS5 via RRF)")
+                        except Exception as init_err:
+                            self._hybrid_init_failed = True
+                            logger.warning(f"HybridRetriever init failed (falling back to TF-IDF): {init_err}")
+
+                    if self._hybrid_retriever is not None:
+                        hybrid_hits = self._hybrid_retriever.search(text, top_k=8)
+                        if hybrid_hits:
+                            seen = {r.get("text", "")[:100] for r in retrieved}
+                            for h in hybrid_hits:
+                                snippet = h.get("text", "")[:100]
+                                if snippet not in seen:
+                                    retrieved.append({
+                                        "text": h.get("text", ""),
+                                        "score": h.get("score", 0.0),
+                                        "source": h.get("source", "hybrid"),
+                                        "label": h.get("table", "hybrid"),
+                                    })
+                                    seen.add(snippet)
+                except Exception as hybrid_err:
+                    logger.warning(f"Hybrid retrieval query error: {hybrid_err}")
+
+            # 5c. EPOCH v6.0: Cross-session topic boosting
             try:
-                from hybrid_retriever import HybridRetriever
-                _hybrid = HybridRetriever()
-                hybrid_hits = _hybrid.search(text, top_k=8)
-                if hybrid_hits:
-                    seen = {r.get("text", "")[:100] for r in retrieved}
-                    for h in hybrid_hits:
-                        snippet = h.get("text", "")[:100]
-                        if snippet not in seen:
-                            retrieved.append({
-                                "text": h.get("text", ""),
-                                "score": h.get("score", 0.0),
-                                "source": h.get("source", "hybrid"),
-                                "label": h.get("table", "hybrid"),
-                            })
-                            seen.add(snippet)
-            except Exception:
-                pass  # Hybrid retriever unavailable — TF-IDF only
+                _now = time.time()
+                if self._session_patterns is None or (_now - self._session_patterns_ts) > 300:
+                    try:
+                        import importlib.util as _ilu2
+                        _sr_path = Path(__file__).parent / "session_recall.py"
+                        _sr_spec = _ilu2.spec_from_file_location("session_recall", _sr_path)
+                        _sr_mod = _ilu2.module_from_spec(_sr_spec)
+                        _sr_spec.loader.exec_module(_sr_mod)
+                        _sr = _sr_mod.SessionRecall()
+                        self._session_patterns = _sr.get_cross_session_patterns()
+                        self._session_patterns_ts = _now
+                        _sr.close()
+                    except Exception as sr_err:
+                        logger.debug(f"Session recall unavailable: {sr_err}")
+                        self._session_patterns = {"topic_frequency": []}
+
+                if self._session_patterns and retrieved:
+                    topic_map = {
+                        t["topic"]: t["count"]
+                        for t in self._session_patterns.get("topic_frequency", [])
+                    }
+                    if topic_map:
+                        max_count = max(topic_map.values()) if topic_map else 1
+                        text_lower = text.lower()
+                        boost = 0.0
+                        for topic, count in topic_map.items():
+                            if topic in text_lower:
+                                boost = max(boost, 0.05 * (count / max_count))
+                        if boost > 0:
+                            for r in retrieved:
+                                r["score"] = r.get("score", 0.0) + boost
+            except Exception as sess_err:
+                logger.debug(f"Session topic boosting error: {sess_err}")
 
             # 6. Direct DB lookups (with self-heal)
             db_results = self._db_lookup(intent, entities, keywords)

@@ -1,67 +1,78 @@
 ---
-description: Shell session management rules for Copilot agents in LitigationOS. Apply when running PowerShell commands, spawning sub-agents, or performing multi-step operations.
+description: Shell session management rules for Copilot agents in LitigationOS. Apply when running PowerShell commands, spawning sub-agents, or performing multi-step operations. CRITICAL — violations cause unrecoverable "Invalid shell ID" crashes.
 applyTo: "**/*"
 ---
 
-# Shell Session Management — Permanent Rules
+# Shell Session Management — ENFORCED Rules (v3.0)
 
-Hard-won rules from 200+ stale session crashes. Violating these WILL cause "Invalid shell ID" errors.
+Hard-won rules from 200+ stale session crashes. Violating these WILL cause "Invalid shell ID" errors
+that cannot be recovered without restarting the entire Copilot session.
 
 ## The Root Cause
 
-PowerShell sessions are finite OS resources. When an agent creates 20+ sessions without
-cleaning up, the runtime exhausts its session pool. New session IDs become invalid immediately
-after creation — the telltale sign is `"Invalid shell ID: X"` on a shell you JUST created.
+PowerShell sessions are finite OS resources managed by the Copilot CLI runtime.
+When an agent creates 20+ sessions without cleanup, the runtime exhausts its pool.
+New session IDs become invalid immediately after creation — the telltale sign is
+`"Invalid shell ID: X"` on a shell you JUST created. Once this happens, NO new shells
+can be created until ALL existing sessions are stopped and the pool resets.
 
-## Prevention Rules (MANDATORY)
+## Prevention Rules (MANDATORY — Zero Tolerance)
 
-### 1. One Shell at a Time (Sync)
+### 1. HARD LIMIT: Max 3 Concurrent Async Shells
 
-For sync commands, reuse the same shell when possible. Chain commands with `&&`:
+**Before creating ANY new shell**, count existing shells. If 3+ async shells exist, you MUST
+stop one before creating another. This is NOT a guideline — it is a hard resource limit.
+Exceeding it corrupts the session pool for the rest of the agent run.
+
+### 2. Chain Related Commands — ALWAYS
+
+Use `&&` to chain related commands in ONE shell. Creating separate shells for related
+commands is the #1 cause of pool exhaustion:
 
 ```powershell
-# GOOD — one shell, three commands
+# CORRECT — one shell, three commands
 cd C:\Users\andre\LitigationOS && git --no-pager status && git --no-pager diff --stat
 
-# BAD — three separate shells for related commands
+# WRONG — three shells for one workflow (wastes 2 sessions)
 # Shell 1: cd C:\Users\andre\LitigationOS
 # Shell 2: git status
 # Shell 3: git diff
 ```
 
-### 2. Max 3 Concurrent Async Shells
+### 3. Stop Completed Shells IMMEDIATELY
 
-Never have more than 3 async shells running simultaneously. Before creating a new async
-shell, call `list_powershell` and count active sessions. If 3+ exist, WAIT or STOP one.
+After reading output from ANY async shell, call `stop_powershell` on it RIGHT AWAY.
+Every dangling shell consumes a pool slot. 5 dangling shells = 5 wasted slots.
 
-### 3. Always Stop Completed Async Shells
+### 4. Use Named Shell IDs — ALWAYS
 
-After reading output from an async shell, immediately `stop_powershell` it. Don't leave
-completed shells dangling.
+Always provide explicit `shellId` values (`"build"`, `"test"`, `"lint"`, `"git1"`).
+Named IDs make cleanup deterministic — you know exactly which shells to stop.
+Auto-generated IDs lead to orphaned sessions that can't be tracked.
 
-### 4. Use Named Shell IDs
+### 5. Pre-flight Cleanup Before Multi-Step Operations
 
-Always provide explicit `shellId` values (e.g., `"build"`, `"test"`, `"lint"`). This makes
-cleanup deterministic — you know exactly which shells to stop.
-
-### 5. Pre-flight Cleanup at Session Start
-
-At the start of every multi-step operation, run:
+At the start of every multi-step operation (builds, tests, commits, agent spawning):
 ```
-list_powershell  →  stop all completed/stale sessions  →  then proceed
+Step 1: list_powershell → count active sessions
+Step 2: stop_powershell on ALL completed/stale sessions
+Step 3: Verify count is below 3
+Step 4: Only then proceed with new commands
 ```
 
-### 6. Recovery Protocol
+### 6. Recovery Protocol (When "Invalid shell ID" Appears)
 
-If you see "Invalid shell ID" on a fresh shell:
+This error means the pool is exhausted. Recovery requires a full flush:
 1. Call `list_powershell` to see all sessions
-2. Stop ALL sessions with `stop_powershell`
-3. Wait 5 seconds
-4. Try again with a new shell
+2. Call `stop_powershell` on EVERY session listed (no exceptions)
+3. Wait 5 seconds for the runtime to reclaim resources
+4. Create ONE new shell with a named ID to verify recovery
+5. If it still fails, the Copilot session must be restarted
 
 ## Safe Python Execution
 
-Never use `python -c "..."` in PowerShell — backslashes and quotes break. Instead:
+**NEVER** use `python -c "..."` in PowerShell — backslashes, quotes, and f-strings break.
+Write Python to a temp `.py` file, execute it, then clean up:
 
 ```powershell
 # Load the agent profile first
@@ -73,6 +84,7 @@ srun script.py --arg      # safe run (avoids shadow modules)
 spy "print(1+1)"          # safe inline Python (temp file, not -c)
 senv                      # environment health check
 sshadow                   # shadow module audit
+spreflight                # kill orphan processes + clean temp files
 ```
 
 Or use the toolkit directly:
@@ -85,12 +97,13 @@ python C:\Users\andre\LitigationOS\00_SYSTEM\tools\safe_shell.py run script.py
 ## Shadow Modules (22 in Repo Root)
 
 The repo root contains `json.py`, `typing.py`, `tokenize.py`, `numpy.py`, `pandas.py` and 17
-others that shadow Python stdlib/third-party modules. NEVER set CWD to the repo root when
+others that shadow Python stdlib/third-party modules. **NEVER** set CWD to the repo root when
 running Python. Use `safe_run()` or set CWD to the script's own directory.
 
 ## Sub-Agent Shell Budget
 
 When spawning sub-agents via `task` tool:
 - Each sub-agent gets its own shell sessions
-- Limit to 2 parallel sub-agents to stay under the total session budget
+- **Limit to 2 parallel sub-agents** to stay under the total session budget
 - Sub-agent shells auto-cleanup on completion, but count toward the global limit while running
+- Before spawning a sub-agent, ensure main session has ≤1 active async shell

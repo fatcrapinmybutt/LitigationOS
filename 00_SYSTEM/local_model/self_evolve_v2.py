@@ -1155,6 +1155,71 @@ class SelfEvolver:
         return result
 
     # ------------------------------------------------------------------
+    # 7b. Consume Feedback & Knowledge Gaps (NEW — Wave 3C)
+    # ------------------------------------------------------------------
+    def consume_feedback_gaps(self) -> dict:
+        """Read brain DB tables (query_history, knowledge_gaps) to guide tuning.
+
+        Returns a summary dict with:
+        - low_confidence_topics: intent→count for queries with confidence < 0.3
+        - gap_types: gap_type→count from knowledge_gaps
+        - suggested_focus_intents: top intents needing more training data
+        """
+        result = {
+            "low_confidence_topics": {},
+            "gap_types": {},
+            "suggested_focus_intents": [],
+            "total_gaps": 0,
+            "total_low_conf": 0,
+        }
+        conn = _get_db(self.db_path)
+        if conn is None:
+            return result
+
+        try:
+            # 1. Low-confidence queries grouped by intent
+            if _table_exists(conn, "query_history"):
+                rows = _safe_query(
+                    conn,
+                    "SELECT intent_predicted, COUNT(*) as cnt "
+                    "FROM query_history WHERE confidence < 0.3 "
+                    "GROUP BY intent_predicted ORDER BY cnt DESC LIMIT 20",
+                )
+                for r in rows:
+                    intent = r["intent_predicted"] or "unknown"
+                    result["low_confidence_topics"][intent] = r["cnt"]
+                    result["total_low_conf"] += r["cnt"]
+
+            # 2. Knowledge gap types
+            if _table_exists(conn, "knowledge_gaps"):
+                rows = _safe_query(
+                    conn,
+                    "SELECT gap_type, COUNT(*) as cnt "
+                    "FROM knowledge_gaps GROUP BY gap_type ORDER BY cnt DESC",
+                )
+                for r in rows:
+                    result["gap_types"][r["gap_type"]] = r["cnt"]
+                    result["total_gaps"] += r["cnt"]
+
+            # 3. Suggest intents that need more training weight
+            if result["low_confidence_topics"]:
+                top_weak = sorted(
+                    result["low_confidence_topics"].items(),
+                    key=lambda x: -x[1],
+                )[:5]
+                result["suggested_focus_intents"] = [t for t, _ in top_weak]
+
+        except Exception as exc:
+            _safe_log(f"consume_feedback_gaps error: {exc}")
+        finally:
+            conn.close()
+
+        _safe_log(f"  Feedback gaps: {result['total_low_conf']} low-conf queries, "
+                   f"{result['total_gaps']} knowledge gaps, "
+                   f"focus intents: {result['suggested_focus_intents']}")
+        return result
+
+    # ------------------------------------------------------------------
     # 8. Get Evolution Log
     # ------------------------------------------------------------------
     def get_evolution_log(self) -> list[dict]:
@@ -1337,38 +1402,65 @@ class SelfEvolver:
             "adjustment_applied": None,
         }
 
-        # --- Plateau detection: read last N entries from evolution log ---
+        # --- Plateau detection: read from DB first (mllm_improvement_cycles), JSON fallback ---
         plateau_detected = False
         plateau_streak = 0
         try:
-            if _EVOLVE_LOG.exists():
-                with open(_EVOLVE_LOG, encoding="utf-8") as fh:
-                    log_data = json.load(fh) if _EVOLVE_LOG.stat().st_size > 2 else []
-                if isinstance(log_data, list) and len(log_data) >= _PLATEAU_STREAK_THRESHOLD:
-                    recent = log_data[-_PLATEAU_STREAK_THRESHOLD:]
-                    # Check if all recent entries have identical metrics
-                    ref = recent[0]
-                    all_same = True
-                    for entry in recent[1:]:
-                        if (entry.get("retrain_accuracy") != ref.get("retrain_accuracy")
-                                or entry.get("engine_scores") != ref.get("engine_scores")
-                                or entry.get("patterns_found") != ref.get("patterns_found")):
-                            all_same = False
-                            break
-                    if all_same:
-                        # Count how many consecutive identical entries from the end
-                        streak = 1
-                        for i in range(len(log_data) - 2, -1, -1):
-                            e = log_data[i]
-                            if (e.get("retrain_accuracy") == ref.get("retrain_accuracy")
-                                    and e.get("engine_scores") == ref.get("engine_scores")
-                                    and e.get("patterns_found") == ref.get("patterns_found")):
-                                streak += 1
-                            else:
-                                break
-                        plateau_streak = streak
-                        plateau_detected = True
-                        _safe_log(f"  ⚠ PLATEAU DETECTED: {plateau_streak} consecutive identical cycles")
+            _plateau_entries = []
+            conn = _get_db(self.db_path)
+            if conn is not None:
+                try:
+                    if _table_exists(conn, "mllm_improvement_cycles"):
+                        rows = _safe_query(
+                            conn,
+                            "SELECT pass_rate, intent_accuracy, avg_confidence "
+                            "FROM mllm_improvement_cycles ORDER BY id DESC LIMIT 20",
+                        )
+                        _plateau_entries = [
+                            {"pass_rate": r["pass_rate"],
+                             "intent_accuracy": r["intent_accuracy"],
+                             "avg_confidence": r["avg_confidence"]}
+                            for r in rows
+                        ]
+                        _plateau_entries.reverse()  # oldest first
+                except Exception as db_err:
+                    _safe_log(f"  Plateau DB read failed: {db_err}")
+                finally:
+                    conn.close()
+
+            # Fallback to JSON if DB returned nothing
+            if not _plateau_entries and _EVOLVE_LOG.exists():
+                try:
+                    with open(_EVOLVE_LOG, encoding="utf-8") as fh:
+                        log_data = json.load(fh) if _EVOLVE_LOG.stat().st_size > 2 else []
+                    if isinstance(log_data, list):
+                        _plateau_entries = log_data[-20:]
+                except Exception:
+                    pass
+
+            if len(_plateau_entries) >= _PLATEAU_STREAK_THRESHOLD:
+                ref = _plateau_entries[-1]
+                ref_key = (
+                    ref.get("pass_rate") or ref.get("retrain_accuracy"),
+                    ref.get("intent_accuracy") or ref.get("engine_scores"),
+                    ref.get("avg_confidence") or ref.get("patterns_found"),
+                )
+                streak = 1
+                for i in range(len(_plateau_entries) - 2, -1, -1):
+                    e = _plateau_entries[i]
+                    e_key = (
+                        e.get("pass_rate") or e.get("retrain_accuracy"),
+                        e.get("intent_accuracy") or e.get("engine_scores"),
+                        e.get("avg_confidence") or e.get("patterns_found"),
+                    )
+                    if e_key == ref_key:
+                        streak += 1
+                    else:
+                        break
+                plateau_streak = streak
+                if streak >= _PLATEAU_STREAK_THRESHOLD:
+                    plateau_detected = True
+                    _safe_log(f"  ⚠ PLATEAU DETECTED: {plateau_streak} consecutive identical cycles (source: {'DB' if conn else 'file'})")
         except Exception as exc:
             _safe_log(f"  Plateau detection failed (non-fatal): {exc}")
 
@@ -1399,15 +1491,28 @@ class SelfEvolver:
 
         # Step 1: Analyze performance
         try:
-            _safe_log("[Step 1/6] Analyze query performance")
+            _safe_log("[Step 1/7] Analyze query performance")
             report["steps"]["performance"] = self.analyze_query_performance()
         except Exception as exc:
             report["steps"]["performance"] = {"error": str(exc)}
             _safe_log(f"Step 1 failed: {exc}")
 
+        # Step 1b: Consume feedback & knowledge gaps from brain DB
+        try:
+            _safe_log("[Step 1b/7] Consume feedback gaps")
+            feedback_gaps = self.consume_feedback_gaps()
+            report["steps"]["feedback_gaps"] = feedback_gaps
+            # If plateau AND feedback gaps suggest specific intents, use them to bias retraining
+            if plateau_detected and feedback_gaps.get("suggested_focus_intents"):
+                report["feedback_guided"] = True
+                _safe_log(f"  → Feedback-guided retrain: focus intents = {feedback_gaps['suggested_focus_intents']}")
+        except Exception as exc:
+            report["steps"]["feedback_gaps"] = {"error": str(exc)}
+            _safe_log(f"Step 1b failed: {exc}")
+
         # Step 2: Discover patterns
         try:
-            _safe_log("[Step 2/6] Discover new patterns")
+            _safe_log("[Step 2/7] Discover new patterns")
             report["steps"]["patterns"] = self.discover_new_patterns()
         except Exception as exc:
             report["steps"]["patterns"] = {"error": str(exc)}
@@ -1415,7 +1520,7 @@ class SelfEvolver:
 
         # Step 3: Check if retrain needed
         try:
-            _safe_log("[Step 3/6] Evaluate classifier retrain")
+            _safe_log("[Step 3/7] Evaluate classifier retrain")
             needs_retrain = False
             # Force retrain on plateau detection
             if plateau_detected:
@@ -1471,7 +1576,7 @@ class SelfEvolver:
 
         # Step 4: Optimize engine weights
         try:
-            _safe_log("[Step 4/6] Optimize engine weights")
+            _safe_log("[Step 4/7] Optimize engine weights")
             report["steps"]["weights"] = self.optimize_engine_weights()
         except Exception as exc:
             report["steps"]["weights"] = {"error": str(exc)}
@@ -1479,7 +1584,7 @@ class SelfEvolver:
 
         # Step 5: Evolve thesaurus + aliases
         try:
-            _safe_log("[Step 5/6] Evolve thesaurus and entity aliases")
+            _safe_log("[Step 5/7] Evolve thesaurus and entity aliases")
             report["steps"]["thesaurus"] = self.evolve_thesaurus()
             report["steps"]["aliases"] = self.evolve_entity_aliases()
         except Exception as exc:
@@ -1489,7 +1594,7 @@ class SelfEvolver:
 
         # Step 6: Generate report and log
         try:
-            _safe_log("[Step 6/6] Generate report and log cycle")
+            _safe_log("[Step 6/7] Generate report and log cycle")
             report["human_report"] = self.generate_improvement_report(
                 perf=report["steps"].get("performance"),
                 patterns=report["steps"].get("patterns"),

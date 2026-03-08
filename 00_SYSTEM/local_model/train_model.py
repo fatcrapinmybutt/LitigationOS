@@ -470,21 +470,43 @@ INTENT_TRAINING = [
 
 
 def build_intent_classifier(vectorizer):
-    """Train Naive Bayes intent classifier."""
+    """Train Naive Bayes intent classifier with label imbalance detection."""
     log("Training intent classifier...")
     texts = [t for t, _ in INTENT_TRAINING]
     labels = [l for _, l in INTENT_TRAINING]
+
+    # Label imbalance detection
+    label_dist = Counter(labels)
+    max_count = max(label_dist.values())
+    min_count = min(label_dist.values())
+    imbalance_ratio = max_count / max(min_count, 1)
+    log(f"  Label distribution: {len(label_dist)} classes, "
+        f"min={min_count}, max={max_count}, imbalance_ratio={imbalance_ratio:.1f}x")
+    if imbalance_ratio > 3.0:
+        log(f"  ⚠ Imbalanced labels detected (ratio {imbalance_ratio:.1f}x > 3.0)")
+        underrep = [cls for cls, cnt in label_dist.items() if cnt < max_count * 0.33]
+        if underrep:
+            log(f"  Under-represented classes: {underrep}")
 
     le = LabelEncoder()
     y = le.fit_transform(labels)
     X = vectorizer.transform(texts)
 
+    # Compute sample weights to compensate for imbalance
+    n_samples = len(labels)
+    n_classes = len(label_dist)
+    sample_weights = np.array([
+        n_samples / (n_classes * label_dist[label])
+        for label in labels
+    ]) if imbalance_ratio > 2.0 else None
+
     clf = MultinomialNB(alpha=0.1)
-    clf.fit(X, y)
+    clf.fit(X, y, sample_weight=sample_weights)
 
     # Test accuracy on training set (should be near 100%)
     acc = clf.score(X, y)
-    log(f"Intent classifier trained: {len(le.classes_)} classes, train acc={acc:.2%}")
+    weighted_note = " (sample_weight applied)" if sample_weights is not None else ""
+    log(f"Intent classifier trained: {len(le.classes_)} classes, train acc={acc:.2%}{weighted_note}")
 
     # 5-fold cross-validation for generalization estimate
     if len(labels) >= 10:
@@ -536,7 +558,7 @@ def extract_entities(text: str) -> dict[str, list[str]]:
 # Phase 5: Document Type Classifier
 # ──────────────────────────────────────────────────────────────────
 def build_doctype_classifier(vectorizer, texts, labels):
-    """Train a document type classifier from the corpus labels."""
+    """Train a document type classifier from the corpus labels with imbalance detection."""
     log("Training document type classifier...")
     le = LabelEncoder()
     y = le.fit_transform(labels)
@@ -551,11 +573,34 @@ def build_doctype_classifier(vectorizer, texts, labels):
 
     X_train = X[valid_mask]
     y_train = y[valid_mask]
+    labels_train = [l for l, m in zip(labels, valid_mask) if m]
+
+    # Label imbalance detection for doctype
+    dt_label_dist = Counter(labels_train)
+    if dt_label_dist:
+        dt_max = max(dt_label_dist.values())
+        dt_min = min(dt_label_dist.values())
+        dt_ratio = dt_max / max(dt_min, 1)
+        log(f"  Doctype label distribution: {len(dt_label_dist)} classes, "
+            f"min={dt_min}, max={dt_max}, imbalance_ratio={dt_ratio:.1f}x")
+        if dt_ratio > 5.0:
+            log(f"  ⚠ Doctype labels heavily imbalanced (ratio {dt_ratio:.1f}x > 5.0)")
+
+        # Compute sample weights for heavy imbalance
+        n_dt = len(labels_train)
+        n_dt_classes = len(dt_label_dist)
+        sample_weights = np.array([
+            n_dt / (n_dt_classes * dt_label_dist[label])
+            for label in labels_train
+        ]) if dt_ratio > 3.0 else None
+    else:
+        sample_weights = None
 
     clf = MultinomialNB(alpha=0.01)
-    clf.fit(X_train, y_train)
+    clf.fit(X_train, y_train, sample_weight=sample_weights)
     acc = clf.score(X_train, y_train)
-    log(f"Doctype classifier: {len(le.classes_)} types, train acc={acc:.2%}")
+    weighted_note = " (sample_weight applied)" if sample_weights is not None else ""
+    log(f"Doctype classifier: {len(le.classes_)} types, train acc={acc:.2%}{weighted_note}")
     return clf, le
 
 

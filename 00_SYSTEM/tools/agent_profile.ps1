@@ -64,7 +64,7 @@ function schain {
     Invoke-Expression $joined
 }
 
-# Pre-flight cleanup: kill orphan Python processes older than 5 min
+# Pre-flight cleanup: kill orphan Python processes older than 5 min + temp file sweep
 function spreflight {
     Write-Host "[preflight] Checking for orphan processes..." -ForegroundColor Yellow
     $cutoff = (Get-Date).AddMinutes(-5)
@@ -91,6 +91,21 @@ function spreflight {
     Write-Host "[preflight] Ready ✅" -ForegroundColor Green
 }
 
-Write-Host "LitigationOS agent profile v2.0 loaded" -ForegroundColor Green
+# ─── Shell Session Budget Monitor ────────────────────────────────────
+
+# Shell budget check — warns if approaching the 3-shell limit
+# Usage: sbudget (call before creating new async shells)
+function sbudget {
+    Write-Host "[shell-budget] ⚠ REMINDER: Max 3 concurrent async shells" -ForegroundColor Yellow
+    Write-Host "  Before creating a new shell:" -ForegroundColor DarkGray
+    Write-Host "    1. Call list_powershell to count active sessions" -ForegroundColor DarkGray
+    Write-Host "    2. Stop completed shells with stop_powershell" -ForegroundColor DarkGray
+    Write-Host "    3. Chain related commands with && in one shell" -ForegroundColor DarkGray
+    Write-Host "    4. Always use named shellIds (build, test, lint)" -ForegroundColor DarkGray
+    Write-Host "  Recovery (Invalid shell ID):" -ForegroundColor DarkGray
+    Write-Host "    list_powershell → stop ALL → wait 5s → retry" -ForegroundColor DarkGray
+}
+
+Write-Host "LitigationOS agent profile v3.0 loaded" -ForegroundColor Green
 Write-Host "  Python: sspy, srun, senv, sshadow, spy" -ForegroundColor DarkGray
-Write-Host "  Shell:  schain, spreflight" -ForegroundColor DarkGray
+Write-Host "  Shell:  schain, spreflight, sbudget" -ForegroundColor DarkGray
