@@ -46,7 +46,7 @@ ________________________________/
 
 ## I. PARTIES
 
-1. **Plaintiff ANDREW J. PIGORS** ("Plaintiff") is a natural person and resident of Muskegon County, Michigan. Plaintiff was a tenant and titled mobile home owner at Lot 17, 1977 Whitehall Road, Shady Oaks Mobile Home Community, Laketon Township, Muskegon County, Michigan 49445. Plaintiff is the registered owner of a 1970 Marlette mobile home, VIN 1646732, as confirmed by the Michigan Secretary of State. Plaintiff resided at Shady Oaks with his minor son, Lincoln David Watson, paying monthly lot rent and complying with all lease obligations.
+1. **Plaintiff ANDREW J. PIGORS** ("Plaintiff") is a natural person and resident of Muskegon County, Michigan. Plaintiff was a tenant and titled mobile home owner at Lot 17, 1977 Whitehall Road, Shady Oaks Mobile Home Community, Laketon Township, Muskegon County, Michigan 49445. Plaintiff is the registered owner of a 1970 Marlette mobile home, VIN 1646732, as confirmed by the Michigan Secretary of State. Plaintiff resided at Shady Oaks with his minor son, L.D.W., paying monthly lot rent and complying with all lease obligations.
 
 2. **Defendant SHADY OAKS PARK MHP** ("Shady Oaks") is a New Jersey limited liability company registered at PO Box 249, 77 Engle Street, Englewood, NJ 07631. According to the 2024 Muskegon County Ad Valorem Assessment Roll, this entity purchased the real property at 1977 Whitehall Rd. (Parcel No. 09-001-200-0064-00) on July 30, 2021, for $1,400,000. Shady Oaks owns the land at Shady Oaks Mobile Home Community, operates the park, and is the landlord entity that collected rent, billed utilities, and initiated eviction proceedings against Plaintiff. Its LARA-registered licensee contact is Bryon Fields at License #1201891. *(Source: MEEK1 Entity Map — "Shady Oaks Park MHP, Landlord/Park, Housing adversary"; Exhibit — 2024 Assessment Roll; EGLE Violation Notice VN-017235.)*
 
@@ -76,7 +76,7 @@ ________________________________/
 
 10. Plaintiff is the titled owner of a 1970 Marlette mobile home, VIN 1646732, located at Lot 17. Under Michigan law, a mobile home is **personal property** belonging to the titled owner, distinct from the real property (lot) on which it sits. **MCL 125.2330i; MCL 125.1305.** Plaintiff's title is current and valid, recently renewed with the Michigan Secretary of State. *(Exhibit C — Michigan SOS Title Record.)*
 
-11. Plaintiff resided at Shady Oaks with his minor son, **Lincoln David Watson**, who was approximately 3 years old at the time of tenancy. The home at Lot 17 was Lincoln's primary residence during Plaintiff's custodial periods. *(Mega Complaint ¶¶18, 39.)*
+11. Plaintiff resided at Shady Oaks with his minor son, **L.D.W.**, who was approximately 3 years old at the time of tenancy. The home at Lot 17 was L.D.W.'s primary residence during Plaintiff's custodial periods. *(Mega Complaint ¶¶18, 39.)*
 
 ### B. Rent Overcharges and Lease Coercion
 
@@ -201,7 +201,7 @@ ________________________________/
    c. Locks were drilled. Every item of personal property was removed. Nothing was carefully packed or stored;
    d. Plaintiff's belongings were thrown into dumpsters or piled outside with a **"FREE" sign** inviting public scavenging;
    e. No inventory was made, no receipts provided, no court officer supervised the removal;
-   f. **Plaintiff's three-year-old son, Lincoln David Watson, was present** during the forced removal.
+   f. **Plaintiff's three-year-old son, L.D.W., was present** during the forced removal.
 
    *(Mega Complaint ¶¶56–58; Exhibits 0047–0049; Witness Affidavit — Mitchell Shafer.)*
 

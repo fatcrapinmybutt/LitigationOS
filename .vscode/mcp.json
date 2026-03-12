@@ -1,12 +1,43 @@
 {
-  "servers": {
-    "agent-memory": {
-      "command": "node",
-      "args": [
-        "${workspaceFolder}/.agents/skills/agent-memory/out/mcp-server/server.js",
-        "LitigationOS",
-        "${workspaceFolder}"
-      ]
-    }
-  }
+	"inputs": [],
+	"servers": {
+		"command-runner": {
+			"command": "python",
+			"args": [
+				"${workspaceFolder}/00_SYSTEM/mcp_server/command_runner.py"
+			],
+			"env": {
+				"PYTHONUTF8": "1"
+			},
+			"type": "stdio"
+		},
+		"litigation-context": {
+			"command": "python",
+			"args": [
+				"-m",
+				"litigation_context_mcp.server"
+			],
+			"cwd": "${workspaceFolder}/00_SYSTEM/mcp_server",
+			"env": {
+				"PYTHONUTF8": "1"
+			},
+			"type": "stdio"
+		},
+		"agent-memory": {
+			"command": "node",
+			"args": [
+				"${workspaceFolder}/.agents/skills/agent-memory/out/mcp-server/server.js",
+				"LitigationOS",
+				"${workspaceFolder}"
+			],
+			"type": "stdio"
+		},
+		"awesome-copilot-mcp": {
+			"command": "npx",
+			"args": [
+				"awesome-copilot-mcp@0.3.6"
+			],
+			"type": "stdio"
+		}
+	}
 }

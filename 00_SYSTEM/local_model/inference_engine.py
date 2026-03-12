@@ -99,6 +99,13 @@ class MichiganLegalModel:
         self._heal_attempts = {}  # track auto-heal attempts per component
         self._brain_db = None  # writable connection for brain tables
         self._context_window: list[dict] = []  # sliding window of last 10 queries
+        # Unified context manager overlay (fail-safe — None if unavailable)
+        self._ctx_mgr = None
+        try:
+            from context_manager import ContextManager as _CM
+            self._ctx_mgr = _CM("manbearpig")
+        except Exception:
+            pass  # Falls back to raw list-based _context_window
         self._inverted_index = None  # fast-path inverted index
         self._hot_cache = {}  # preloaded data for sub-millisecond lookups
         self._engine_cache = {}  # lazy-loading engine registry
@@ -637,14 +644,40 @@ class MichiganLegalModel:
         self._context_window.append(entry)
         if len(self._context_window) > 10:
             self._context_window = self._context_window[-10:]
+        # Mirror to unified context manager (fail-safe)
+        if self._ctx_mgr:
+            try:
+                self._ctx_mgr.add_to_window(
+                    key=f"query_{int(time.time())}",
+                    value=entry,
+                    priority="MEDIUM",
+                    category="query_context",
+                )
+            except Exception:
+                pass
 
     def get_context(self) -> list[dict]:
         """Return the current conversation context window."""
         return list(self._context_window)
 
+    def get_context_health(self) -> dict:
+        """Return unified context health report (ContextManager + raw window)."""
+        health = {"raw_window_size": len(self._context_window)}
+        if self._ctx_mgr:
+            try:
+                health.update(self._ctx_mgr.health())
+            except Exception:
+                health["ctx_mgr_status"] = "error"
+        return health
+
     def clear_context(self):
         """Reset the conversation context window."""
         self._context_window.clear()
+        if self._ctx_mgr:
+            try:
+                self._ctx_mgr.window.clear()
+            except Exception:
+                pass
 
     # ── Quality Feedback Loop ─────────────────────────────────────
 

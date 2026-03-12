@@ -141,7 +141,7 @@ STEP 7: SERVE THE OPPOSING PARTY
 
     MCR 2.107 requires service on all parties. You MUST serve:
 
-☐ Emily M. Watson (Defendant/Mother)
+☐ Emily A. Watson (Defendant/Mother)
     - If represented by counsel, serve counsel
     - If pro se, serve at address on file with court
 

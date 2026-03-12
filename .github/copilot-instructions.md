@@ -15,6 +15,44 @@
 - **ALL DUPLICATES → I:\ drive** — never delete duplicates. Move them to a dedup folder on `I:\`.
 - **Save progress CONSTANTLY** — checkpoint to SQL todos + filesystem every 10 minutes or every 3 agent completions during autonomous runs. GOAWAY 503 errors kill agents after 27-40 minutes. If you don't checkpoint, work is LOST.
 
+### Verified Party Identity (NEVER fabricate names, bar numbers, or evidence)
+Past sessions fabricated "Jane Berry", "Patricia Berry (SBN P35878)", "9 CPS investigations", and "91% alienation score" — none of which existed. These hallucinations appeared in 60+ files and could constitute perjury if filed in sworn documents. **The following table is the ONLY source of truth for party identity:**
+
+| Role | Name | Details |
+|------|------|---------|
+| **Plaintiff** | Andrew James Pigors | 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 · (231) 903-5690 · andrewjpigors@gmail.com |
+| **Defendant** | Emily A. Watson | 2160 Garland Drive, Norton Shores, MI 49441 (NOT "Emily Ann", NOT "Emily M.", NOT "Tiffany") |
+| **Child** | L.D.W. | Use initials ONLY per MCR 8.119(H) — NEVER full name in filings |
+| **Judge** | Hon. Jenny L. McNeill | 14th Circuit Court, Family Division (NOT "Amy McNeill") |
+| **Emily's Attorney** | Jennifer Barnes (P55406) | Barnes Law Firm PLLC, 880 Jefferson St Ste B, Muskegon, MI 49440 — **WITHDREW** |
+| **FOC** | Pamela Rusco | 990 Terrace St, Muskegon, MI 49442 |
+| **Ronald Berry** | NON-ATTORNEY | Emily's boyfriend/domestic partner. No bar number. No "Esq." Never was Emily's attorney. |
+
+**Hard rules:**
+- **NEVER invent a party name.** If you don't know the name, insert `[UNKNOWN — VERIFY]` — never guess.
+- **NEVER invent a bar number.** If you don't have it, query `litigation_context.db` or leave blank.
+- **NEVER fabricate evidence statistics** (e.g., "9 CPS investigations"). If a stat isn't in the DB, don't cite it.
+- **"Jane Berry" and "Patricia Berry" NEVER EXISTED.** Any occurrence is a hallucination to be purged.
+
+### DB-First Before Any Placeholder (violation = user frustration)
+The DB has hundreds of tables and millions of rows of real data. Past sessions left hundreds of `[ANDREW_REQUIRED]` placeholders in filings when the data was available in `litigation_context.db` the entire time. The user explicitly said: *"thats the whole point of this. to USE MY FILES ON MY DRIVES. come on man."*
+
+**Before inserting ANY placeholder (`[ANDREW_REQUIRED]`, `[INSERT]`, `[ATTACH]`):**
+1. Query `litigation_context.db` for the data (try: `docket_events`, `evidence_quotes`, `claims`, `deadlines`, `documents`, `judicial_violations`)
+2. Search the filesystem (`rg`, `fd`, `grep`) across all 6 drives for existing content
+3. Check `COMPLETE_FILING_DATA_SUMMARY.txt` and `QUICK_REFERENCE_FILING_PLACEHOLDERS.txt` in repo root
+4. **Only if ALL three return nothing** → insert a placeholder with specific instructions on where to find the data
+
+### Traceable Statistics (no inflated numbers — applies to ALL generated content)
+Past sessions generated inflated or fabricated aggregate statistics that were embedded in sworn filings. The "91% alienation score" was pseudo-scientific. Duplicate counting inflated evidence counts.
+
+**Rules (apply to filings, dashboards, analyses, summaries, and all generated documents):**
+- Every statistic cited in ANY generated document MUST be traceable to a specific DB query (table + WHERE clause)
+- Before citing a count (e.g., "305 interference incidents"), run `SELECT COUNT(*) FROM [table] WHERE [condition]` and note the query
+- Never round up, extrapolate, or generate synthetic scores (e.g., "91% alienation") — use documented incident counts instead
+- When aggregating across tables, check for and exclude duplicates before reporting totals
+- Dashboard summaries and progress reports are NOT exempt — inflated progress numbers mislead the user just as much as inflated filing numbers
+
 ### Prior Work Discovery (BEFORE creating any document)
 - **ALWAYS search before creating.** Before generating any filing, motion, brief, or document from scratch, search ALL drives for existing versions first:
   ```powershell
@@ -38,19 +76,32 @@
 - For inline Python: use `spy "print(1+1)"` after dot-sourcing agent_profile.ps1
 
 ### Shell Session Management (violation = "Invalid shell ID" cascade)
+- **ZERO-SHELL DEFAULT: Use `task` agents for ALL command execution (builds, tests, scripts, git).** Task agents get isolated pipes — if one crashes, main session survives. This is the ONLY proven EAGAIN prevention that works. 4 sessions, 8+ user complaints about EAGAIN — verbose rules don't help; behavioral default does.
+- **PREFER COMMAND-RUNNER MCP** over the `powershell` tool for the rare cases you need a shell.
+  - `exec_command(command)` — any shell command (unlimited, zero session pool cost)
+  - `exec_python(script_path, args)` — Python scripts with shadow-module safety
+  - `exec_git(args)` — git operations with --no-pager
+  - `exec_pipeline_phase(phase)` — pipeline phases (noreply_pdfs, backup, ocr_evidence, autonomous, etc.)
+  - `system_status()` — system health without shell
+- **FALLBACK ONLY**: Use `powershell` tool for interactive/async needs (max 50 per session).
 - **HARD LIMIT: Max 3 concurrent async shells** — sessions are finite OS resources
 - **Chain related commands** with `&&` in one shell instead of creating separate shells
 - **Always `stop_powershell`** completed async shells immediately after reading output
 - **Use named shellIds** (`"build"`, `"test"`) — never rely on auto-generated IDs
 - **Pre-flight cleanup**: Run `list_powershell` → stop all stale sessions → BEFORE any multi-step operation
 - **Recovery**: If "Invalid shell ID" appears on a fresh shell → stop ALL sessions → wait 5s → retry
-- Root cause: 20+ accumulated sessions exhaust the runtime's session pool. Prevention is the only cure.
+- Root cause: 20+ accumulated sessions exhaust the runtime's session pool. MCP is the permanent fix.
 
 ### DB Schema Verification (prevents column-name crashes)
 - Before querying any table for the first time in a session, run `PRAGMA table_info(table_name)` to verify columns.
 - **Never assume column names from this file** — the DB schema evolves faster than these instructions.
 - Known corrections: `authority_chains.chain_complete` (not `is_complete`), `filing_readiness.vehicle_name` (not `vehicle`), `deadlines.due_date_iso` (not `deadline_date`), `claims.claim_id` (not `id`)
 - Also check `schema_reference` table: `SELECT * FROM schema_reference WHERE table_name = 'X'`
+
+### Retrieve Agent Results IMMEDIATELY (violation = lost work)
+- **On EVERY `system_notification` of agent completion → call `read_agent` IMMEDIATELY in your next response.** Do not defer, do not batch, do not "get to it later."
+- Context compaction can clear agent results at any time. If you don't read them before compaction, ALL work done by that agent is gone and must be re-run.
+- Past sessions lost an entire 12-packet placeholder fill because agent-60 results were never retrieved.
 
 ### Autonomous Execution Protocol
 - During long autonomous runs, write incremental progress reports to `00_SYSTEM\PROGRESS_LOG.md` after every agent completion.
@@ -88,7 +139,7 @@ The startup hook generates `STARTUP_REPORT.md` with: separation day count, deadl
 
 ## System Identity
 
-LitigationOS is a litigation intelligence system for Michigan family law (Pigors v. Watson). It has three integrated subsystems: a **16-phase Python data pipeline** with a **155+ agent fleet** (Delta9 + Delta999 + 64 Copilot + Superpower + Convergence agents), a **local-first AI engine** (zero-network, 66 modules), and a **pip-installable desktop app** with CustomTkinter GUI. All data stays local on Windows. The pipeline processes evidence across 6+ drives (125,000+ files) into court-ready filings via 79 engines. Central DB: 694 tables, 10.22 GB.
+LitigationOS is a litigation intelligence system for Michigan family law (Pigors v. Watson). It has three integrated subsystems: a **16-phase Python data pipeline** with a **155+ agent fleet** (Delta9 + Delta999 + 64 Copilot + Superpower + Convergence agents), a **local-first AI engine** (zero-network), and a **pip-installable desktop app** with CustomTkinter GUI. All data stays local on Windows. The pipeline processes evidence across 6+ drives into court-ready filings. Central DB: `litigation_context.db` — run `python 00_SYSTEM\local_model\copilot_startup_hook.py --file` for current table count, size, and row counts. **Never hardcode DB statistics — they change constantly.**
 
 ---
 
@@ -165,7 +216,7 @@ Pip-installable Python package (Python ≥3.12). CustomTkinter GUI with 14 scree
 
 ### MCP Server v2
 
-`00_SYSTEM/mcp_server/` — `litigation-context-mcp` v2. PyMuPDF + Pydantic. Install: `pip install -e 00_SYSTEM/mcp_server/`. **45 tools** across 9 categories:
+`00_SYSTEM/mcp_server/` — `litigation-context-mcp` v2+. PyMuPDF + Pydantic. Install: `pip install -e 00_SYSTEM/mcp_server/`. Tools across 9 categories (run `litigation_system_health` for current tool count):
 
 | Category | Count | Tools |
 |----------|-------|-------|
@@ -190,7 +241,7 @@ All tools are prefixed with `litigation_` (e.g., `litigation_deadline_dashboard`
 ```powershell
 cd 11_CODE\litigationos
 pip install -e ".[dev]"                                # Install with test deps
-python -m pytest tests/ -q                             # All tests (~266)
+python -m pytest tests/ -q                             # All tests (run for current count)
 python -m pytest tests/test_brief_compliance.py -v     # Single test file
 python -m pytest tests/test_models.py::test_case -v    # Single test function
 python -m pytest tests/ --cov=litigationos             # With coverage
@@ -291,7 +342,7 @@ Nothing in LITIGATIONOS_MASTER gets modified until a verified backup exists. `sa
 
 ### Database Patterns
 
-- **Central DB:** `C:\Users\andre\LitigationOS\litigation_context.db` (query `PRAGMA page_count` × `PRAGMA page_size` for current size)
+- **Central DB:** `C:\Users\andre\LitigationOS\litigation_context.db` — run `SELECT (page_count * page_size) / (1024*1024*1024.0) as size_gb FROM pragma_page_count(), pragma_page_size()` for current size. Never hardcode table counts or DB size.
 - **Schema safety:** See **DB Schema Verification** in NON-NEGOTIABLE rules above. Also check `schema_reference` table.
 - **Pipeline:** SQLite WAL mode everywhere. `PRAGMA journal_mode=WAL; PRAGMA synchronous=NORMAL; PRAGMA busy_timeout=120000`. FTS5 for search. One DB per lane in `06_CASE_DATABASES/`. Agent fleet shares `agents/master_index.db`.
 - **Product app:** `DatabaseManager` from `litigationos.db.connection` — SQLite WAL + foreign keys ON.
@@ -433,8 +484,8 @@ Court filings are organized in `01_FILINGS/` by case type (TRIAL_14TH, COA_36681
 
 ### Key Statistics
 
-- **Run `python 00_SYSTEM\local_model\copilot_startup_hook.py --file` for current counts.** Never cite stale statistics — always query.
-- **Parent-child separation since Aug 8, 2025** — calculate current day count from today's date.
+- **Run `python 00_SYSTEM\local_model\copilot_startup_hook.py --file` for current counts.** Never cite stale statistics — always query the DB.
+- **Parent-child separation since Aug 8, 2025** — calculate current day count dynamically from today's date.
 
 ### Critical Evidence Sources
 
@@ -475,384 +526,20 @@ Run startup hook for current deadlines with countdowns. Key deadlines managed by
 
 ---
 
-## Delta999 Engine Directory
+## Reference Catalogs
 
-| Engine | File | Purpose |
-|--------|------|---------|
-| **LLM Classifier** | `llm_classifier_engine.py` | Auto-classification of documents by type/lane/relevance |
-| **Filing Validator** | `filing_validator_engine.py` | MCR compliance checking — format, citation, caption, service rules |
-| **Brief Quality** | `brief_quality_engine.py` | Scoring briefs on persuasion, authority, IRAC structure, readability |
-| **Opposing Analysis** | `opposing_analysis_engine.py` | Adversary pattern detection — Barnes/Watson tactics, response prediction |
-| **Settlement Engine** | `settlement_engine.py` | Case valuation — damages, leverage, risk, settlement range calculation |
-| **Doc Assembly** | `doc_assembly_engine.py` | MD → DOCX → PDF pipeline with template injection and Bates stamping |
-| **Deadline Alert** | `deadline_alert_engine.py` | Deadline tracking with escalating urgency alerts and calendar sync |
-| **DB Lock Manager** | `db_lock_manager.py` v3.0 | EAGAIN prevention — WAL enforcement, busy_timeout, connection pooling |
-
----
-
-## MANBEARPIG JSON-RPC Methods (via --pipe)
-
-- **Core:** `query`, `find_authority`, `check_citations`, `analyze_document`, `detect_patterns`, `status`, `irac_analysis`, `document_qa`
-- **Skills:** `jtc_complaint`, `adversary_predict`, `adversary_wargame`, `filing_package`, `generate_motion`, `analyze_order`, `score_case`, `cluster_evidence`, `build_narrative`, `build_brief`, `find_authority_graph`, `search_citations`, `build_timeline`, `alienation_analysis`, `forensic_report`, `weaponization_report`, `witness_prep`, `risk_dashboard`
-- **OMEGA-INFINITY:** `startup_diagnostics`, `deadline_urgency`, `filing_optimizer`, `evidence_gaps`, `session_recall`
-
-50 skills in `local_model/skills/` — lazy-loaded via `SKILL_REGISTRY`. Session recall (`session_recall.py`) provides cross-session learning from `~/.copilot/session-state/`.
+For full inventories of engines, agents, modules, and directory structure, see **`docs/REFERENCE_CATALOG.md`**. Key sections available there:
+- Delta999 Engine Directory (8 engines)
+- MANBEARPIG JSON-RPC Methods (50 skills)
+- CLI Tools Available
+- Copilot Agent Directory (64 agents — litigation-specific + general-purpose)
+- Superpower Agents (13 cross-cutting)
+- Engine Inventory (79 engines in 7 categories)
+- MANBEARPIG Inference Engine (66 modules)
+- Directory Structure and Filing Structure
+- Convergence Workflow, QA Verdict Levels, Urgency Levels
+- Docs Directory
 
 ---
 
-## CLI Tools Available
-
-| Tool | Purpose |
-|------|---------|
-| `pandoc` | Document conversion (MD → DOCX → PDF, HTML → MD, etc.) |
-| `fd` | Fast file finder (rust-based, replaces `find`) |
-| `rg` | ripgrep — fast content search (rust-based, replaces `grep`) |
-| `jq` | JSON processor for pipeline data manipulation |
-
----
-
-## Copilot Agent Directory (64 agents in `.copilot/agents/`)
-
-### Litigation-Specific Agents
-
-| Agent | Purpose |
-|-------|---------|
-| `adversary-war-room` | Analyze opposing party behavior, predict responses, map weaknesses |
-| `appellate-strategy` | Appellate strategy, standard of review, preservation of error |
-| `brief-polisher` | Polish briefs for submission, check citation format and compliance |
-| `brief-quality-scorer` | Score brief persuasiveness, check citation density |
-| `brief-writer` | Write appellate briefs, legal memoranda, substantive arguments |
-| `child-best-interest` | Analyze MCL 722.23 best interest factors, score evidence against 12 factors |
-| `citation-researcher` | Find legal authorities, verify citations, build authority lists |
-| `convergence-coordinator` | Link evidence across lanes, build unified theories, multi-forum strategy |
-| `cost-tracker` | Track litigation costs (filing fees, service, copies, mileage) |
-| `court-form-finder` | Find correct SCAO/court form for any filing type and jurisdiction |
-| `damages-calculator` | Calculate damages across all case lanes, generate damages exhibits |
-| `deadline-sentinel` | Track deadlines, calculate filing windows, monitor SOL |
-| `deposition-prep` | Build deposition question outlines, identify impeachment traps |
-| `discovery-manager` | Manage discovery requests, track responses, identify deficiencies |
-| `docket-monitor` | Monitor case dockets, check new entries, calculate response deadlines |
-| `document-classifier` | Auto-classify documents by type and route to correct folders |
-| `evidence-authenticator` | Authenticate evidence, prepare exhibits, assign Bates numbers |
-| `evidence-harvester` | Find, extract, link, validate evidence from litigation database |
-| `exhibit-curator` | Select, organize, authenticate, package exhibits for proceedings |
-| `exhibit-formatter` | Format exhibits with Bates stamps, tabs, and index generation |
-| `federal-1983-specialist` | 42 USC §1983 civil rights claims, qualified immunity analysis |
-| `filing-assembler` | Compile court-ready filing packages, assemble exhibits with covers |
-| `filing-countdown` | Deadline countdown dashboard for all active filing deadlines |
-| `filing-router` | Determine optimal court, jurisdiction, venue, forms, and filing path |
-| `financial-analyst` | Financial evidence analysis, child support calculations |
-| `foia-tracker` | Track FOIA requests, manage response deadlines, generate appeals |
-| `harm-tracker` | Track harms to child, update separation counters, build narratives |
-| `hearing-prep` | Prepare for hearings, generate argument outlines and checklists |
-| `impeachment-commander` | Build impeachment outlines, find contradictions, prep cross-exam |
-| `judge-profiler` | Profile Judge McNeill, track ruling patterns, analyze bias |
-| `judicial-bias-detector` | Analyze judicial bias patterns, detect ex parte communications |
-| `legal-phase-indexer` | Structure and organize complex legal workflows |
-| `legal-research-deep` | Deep multi-source authority search and ranking |
-| `mcr-compliance-validator` | Validate filings against MCR for format and compliance |
-| `michigan-litigation-orchestrator` | Manage complex multi-step Michigan litigation workflows |
-| `motion-drafter` | Draft court motions including emergency motions and motions to compel |
-| `motion-generator` | Generate motions from templates using MCR 2.119 format |
-| `msc-fleet-commander` | Michigan Supreme Court application strategy and filings |
-| `opposing-counsel-analyzer` | Analyze opposing parties' patterns and predict defenses |
-| `opposing-counsel-profiler` | Profile Barnes/Martini, track filing patterns |
-| `order-compliance-monitor` | Track compliance with existing court orders by all parties |
-| `pre-filing-qa` | Pre-filing quality assurance sweep with GO/NO-GO report |
-| `pro-se-compliance` | Help pro se litigants with compliance and procedural traps |
-| `redaction-agent` | Auto-redact PII and sensitive information from filings |
-| `service-tracker` | Track proof of service for every filing across all cases |
-| `settlement-calculator` | Calculate case valuation, estimate damages, analyze settlement ranges |
-| `spoliation-watcher` | Monitor evidence spoliation risk, track preservation obligations |
-| `timeline-builder` | Build case timelines, extract dates, create chronological narratives |
-| `transcript-analyzer` | Extract key testimony, rulings, objections from transcripts |
-| `witness-profiler` | Build witness profiles, assess credibility, track prior statements |
-| `gdrive-watcher` | Check Google Drive sync status, trigger syncs, troubleshoot |
-
-### General-Purpose Agents
-
-| Agent | Purpose |
-|-------|---------|
-| `context-architect` | Plan multi-file changes by identifying context and dependencies |
-| `critical-thinking` | Challenge assumptions, encourage critical thinking |
-| `debug` | Debug applications to find and fix bugs |
-| `devils-advocate` | Play devil's advocate, find flaws and risks |
-| `janitor` | Codebase cleanup and tech debt reduction |
-| `ms-sql-dba` | Microsoft SQL Server database operations |
-| `plan` | Strategic planning and architecture |
-| `planner` | Generate implementation plans for features or refactoring |
-| `principal-software-engineer` | Principal-level software engineering guidance |
-| `repo-architect` | Bootstrap and validate agentic project structures |
-| `research-technical-spike` | Research and validate technical spike documents |
-| `se-security-reviewer` | Security-focused code review (OWASP Top 10, Zero Trust) |
-| `se-technical-writer` | Technical writing specialist |
-
----
-
-## Superpower Agents (13 cross-cutting)
-
-| Agent | Role |
-|-------|------|
-| `fleet-orchestrator` | Coordinates all agents — scheduling, priority, conflict resolution |
-| `self-evolution-controller` | Manages MANBEARPIG self-evolution cycles |
-| `governance-auditor` | Compliance logging and audit trail for all agent actions |
-| `session-continuity` | Cross-session memory and learning via session_recall.py |
-| `db-health-monitor` | Monitors litigation_context.db integrity, WAL checkpointing, size |
-| `pipeline-scheduler` | Schedules 16-phase pipeline runs with dependency resolution |
-| `evidence-ingestion-coordinator` | Coordinates multi-drive evidence scanning and dedup |
-| `filing-production-manager` | Manages filing stacks through review → final → filed workflow |
-| `quality-gate-enforcer` | Enforces quality thresholds before filings reach COURT_READY |
-| `backup-integrity-checker` | Verifies SHA-256 manifests and backup completeness |
-| `conflict-resolver` | Detects and resolves lane cross-contamination and data conflicts |
-| `metric-dashboard-generator` | Produces system health and case progress dashboards |
-| `emergency-motion-accelerator` | Fast-tracks emergency filings with abbreviated review |
-
----
-
-## Engine Inventory (79 engines in `00_SYSTEM/engines/`)
-
-### Core Filing Engines
-
-| Engine | Purpose |
-|--------|---------|
-| `filing_validator_engine.py` | MCR compliance — format, citation, caption, service rules |
-| `filing_assembly_pipeline.py` | End-to-end filing assembly pipeline |
-| `filing_production_pipeline.py` | Filing production orchestration |
-| `filing_production_runner.py` | Runs filing production batches |
-| `filing_sequencer.py` | Determines optimal filing order |
-| `filing_finalizer.py` | Final pass before filing |
-| `doc_assembly_engine.py` | MD → DOCX → PDF with template injection and Bates stamping |
-| `efiling_prep_engine.py` | TrueFiling/MiFILE/PACER packet assembly |
-
-### Brief & Citation Engines
-
-| Engine | Purpose |
-|--------|---------|
-| `brief_compliance_engine.py` | MCR 7.212 validation |
-| `brief_quality_engine.py` | Scoring on persuasion, authority, IRAC, readability |
-| `coa_brief_engine.py` | COA-specific brief generation |
-| `coa_brief_polisher.py` | Final polish for COA briefs |
-| `citation_validator.py` | Citation format and existence validation |
-| `authority_index_engine.py` | Searchable citation graph and authority database |
-
-### Evidence & Analysis Engines
-
-| Engine | Purpose |
-|--------|---------|
-| `evidence_chain_engine.py` | Chain of custody and gap analysis |
-| `exhibit_compiler.py` | Exhibit compilation and packaging |
-| `impeachment_index.py` | Build impeachment material index |
-| `best_interest_engine.py` | MCL 722.23 factor analysis |
-| `damages_engine.py` | Damages calculation |
-| `damages_calculation_engine.py` | Detailed damages computation |
-| `opposing_analysis_engine.py` | Adversary pattern detection and response prediction |
-| `settlement_engine.py` | Case valuation — damages, leverage, risk, settlement ranges |
-| `alienation_quantifier.py` | Parental alienation evidence quantification |
-| `constitutional_mapper.py` | Constitutional rights violation mapping |
-
-### Timeline & Calendar Engines
-
-| Engine | Purpose |
-|--------|---------|
-| `court_calendar_engine.py` | Deadline dashboard + ICS calendar export |
-| `deadline_alert_engine.py` | Escalating urgency alerts and calendar sync |
-| `timeline_engine.py` | Core timeline construction |
-| `timeline_consolidator.py` | Merge multiple timelines |
-| `timeline_exhibit_engine.py` | Court-ready timeline exhibits |
-| `master_timeline_builder.py` | Master consolidated timeline |
-| `court_timeline_final.py` | Final court timeline |
-
-### QA & Compliance Engines
-
-| Engine | Purpose |
-|--------|---------|
-| `prefiling_qa_engine.py` | GO/NO-GO sweep across all stacks |
-| `placeholder_resolver_v2.py` | Auto-fill placeholders from master DB |
-| `placeholder_scanner.py` | Detect unresolved placeholders |
-| `compliance_checker.py` | MCR compliance validation |
-| `health_check.py` | System health diagnostics |
-
-### Infrastructure Engines
-
-| Engine | Purpose |
-|--------|---------|
-| `db_lock_manager.py` v3.0 | EAGAIN prevention — WAL, busy_timeout, connection pooling |
-| `db_backup_engine.py` | Database backup operations |
-| `db_rag_bridge.py` | RAG-to-database bridge |
-| `backup_version_engine.py` | File snapshot and version tracking |
-| `omega_dedup_engine.py` | Deduplication engine |
-| `folder_reorganizer.py` | Directory structure optimization |
-| `engine_harness.py` | Engine orchestration framework |
-| `llm_bridge.py` | LLM integration bridge |
-| `llm_classifier_engine.py` | Document auto-classification |
-
-### Apex & Convergence Engines
-
-| Engine | Purpose |
-|--------|---------|
-| `apex_convergence_engine.py` | Master convergence orchestration |
-| `apex_judicial_engine.py` | Judicial analysis integration |
-| `adversary_reader.py` | Opposing party document analysis |
-| `litigation_rag_engine.py` | RAG-based litigation assistance |
-| `rag_indexer.py` | RAG index builder |
-
-### Skill Engines (in `00_SYSTEM/engines/`)
-
-| Engine | Purpose |
-|--------|---------|
-| `skill_authority_validator.py` | Authority chain validation |
-| `skill_best_interest.py` | Best interest factor analysis |
-| `skill_bias_quantifier.py` | Judicial bias quantification |
-| `skill_convergence_engine.py` | Cross-lane convergence |
-| `skill_deadline_sentinel.py` | Deadline monitoring |
-| `skill_filing_tracker.py` | Filing status tracking |
-| `skill_landlord_tenant.py` | Landlord-tenant law (Lane B) |
-| `skill_mcl_library.py` | Michigan Compiled Laws reference |
-| `skill_mcr_encyclopedia.py` | Michigan Court Rules encyclopedia |
-| `skill_michigan_tort_lawsuit.py` | Michigan tort law |
-| `skill_ppo_detector.py` | PPO pattern detection |
-| `skill_scao_forms.py` | SCAO form identification and completion |
-| `skill_timeline_builder.py` | Timeline construction skill |
-| `skill_torts_claims.py` | Tort claims analysis |
-
----
-
-## MANBEARPIG Inference Engine (66 modules in `00_SYSTEM/local_model/`)
-
-Key modules beyond the inference engine:
-- `admissibility_scorer.py` — Evidence admissibility scoring
-- `adversarial_engine.py` — Opposing party strategy simulation
-- `authority_pagerank.py` — PageRank-based authority ranking
-- `bm25_engine.py` — BM25 search ranking
-- `citation_gap_finder.py` — Identifies missing citation support
-- `contradiction_discovery.py` — Finds contradictions in evidence
-- `copilot_startup_hook.py` — Session startup diagnostics
-- `cross_reference_engine.py` — Cross-reference detection
-- `doc_classifier.py` — Document type classification
-- `document_qa.py` — Document question-answering
-- `evidence_chains.py` — Evidence chain analysis
-- `filing_assembler.py` — Filing package assembly
-- `filing_optimizer.py` — Filing strategy optimization
-- `filing_quality_validator.py` — Filing quality checks
-- `gap_resolver.py` — Evidence gap resolution
-- `graph_rag.py` — Graph-enhanced RAG
-- `session_recall.py` — Cross-session learning
-- `self_evolve_v2.py` — Self-evolution cycle (current)
-- `train_model.py` — Model training (~60s)
-
----
-
-## Directory Structure (verified live — do NOT assume old paths)
-
-```
-C:\Users\andre\LitigationOS\
-├── 00_SYSTEM/          — Pipeline, engines (79), local_model (66), MCP server, backups, LEXOS
-├── 01_FILINGS/         — Court filings organized by case type (see below)
-├── 05_ANALYSIS/        — Analysis outputs, briefs, legal output (6,519 files)
-├── 07_PDF/             — PDF documents (2,439 files)
-├── 08_APPS/            — Application code and legacy migrations
-├── 08_TEXT/            — Text documents (11,518 files)
-├── 09_DATA/            — Data files, lexos_index.json (13,255 files)
-├── 10_IMAGES/          — Image evidence (11,076 files)
-├── 11_CODE/            — Product code: litigationos package (10,115 files)
-├── 12_ARCHIVES/        — Archives, historical backups (9,495 files)
-├── 13_TOOLS/           — External tools and utilities (56,469 files)
-├── .copilot/agents/    — 64 Copilot sub-agents
-├── tooling/            — Event Horizon tools (doctor_all.py, pass_gate_check.py)
-├── mcp_servers/        — MCP server implementations
-├── docs/               — System documentation (8 docs)
-├── scripts/            — Utility scripts
-├── skills/             — Skill definitions
-├── AGENTS.md           — Event Horizon pipeline definition
-└── litigation_context.db — Central DB (10.22 GB, 694 tables, 12 views)
-```
-
-### Filing Structure (`01_FILINGS/`)
-
-| Subdirectory | Court/Forum | Case |
-|-------------|-------------|------|
-| `TRIAL_14TH/` | 14th Judicial Circuit, Muskegon County | 2024-001507-DC |
-| `COA_366810/` | Michigan Court of Appeals | COA #366810 |
-| `MSC_ACTION/` | Michigan Supreme Court | Pending |
-| `JTC_MCNEILL/` | Judicial Tenure Commission | McNeill misconduct |
-| `FEDERAL_1983/` | WDMI Federal Court | 42 USC §1983 |
-| `BAR_BARNES/` | Attorney Grievance Commission | Barnes ethics |
-| `EMERGENCY/` | Emergency motions (any court) | Cross-lane |
-| `ADMIN/` | Administrative filings | Cross-lane |
-
-⚠️ **Old path `04_COURT_FILINGS/` no longer exists.** All filings are now in `01_FILINGS/`. An archive exists at `12_ARCHIVES/04_COURT_FILINGS.rar`.
-
----
-
-## Session-Learned Gotchas (from crash analysis)
-
-### 🔴 Critical Failures (caused session crashes)
-1. **Inline Python via PowerShell `-c`** — ALWAYS breaks. Backslashes, quotes, f-strings cause SyntaxError cascades. ALWAYS write to temp `.py` file.
-2. **Massive single-prompt requests** (12+ deliverables) — Caused 100% failure rate in session bde1051e. Decompose to max 3 per wave.
-3. **Assuming column names** — `filing_readiness.readiness_score` doesn't exist. ALWAYS `PRAGMA table_info()` first.
-4. **Not checkpointing** — GOAWAY 503 kills agents at 27-40 min. If no checkpoint, ALL work is lost.
-
-### 🟡 Performance Gotchas
-5. **C: drive has limited free space** (~8GB) — Check `(Get-PSDrive C).Free / 1GB` before any migration.
-6. **H: drive has 454 ZIPs (5.84GB)** — Cannot unpack to C: without overflow. Need alternative target.
-7. **DB is 10.22 GB** — Large query results MUST pipe to files (`> output.txt`), not stdout.
-8. **robocopy exit codes** — Codes 0-7 are SUCCESS. Always use `/XD node_modules .git .next dist build __pycache__`.
-9. **D: drive originals preserved** — Use `Copy-Item` (not `Move-Item`) from D: to keep backups.
-
-### 🟢 Operational Wisdom
-10. **`managed_db()` is mandatory** — Context manager from `db_lock_manager.py`. Auto-purges stale locks, PID-validates, hard cap 3 concurrent.
-11. **Skills and screens directories** — May not exist at expected paths. Verify with `Test-Path` before assuming.
-12. **Instructions file loads 3x in system prompt** — Once from this file, twice from `<custom_instruction>` blocks. The other copies may be stale.
-
----
-
-## Convergence Workflow (full engine sequence)
-
-```
-1. court_calendar_engine.py     → Deadline dashboard + ICS calendar
-2. evidence_chain_engine.py     → Evidence gaps + chain of custody
-3. authority_index_engine.py    → Citation graph + authority database
-4. placeholder_resolver_v2.py   → Auto-fill placeholders from DB
-5. brief_compliance_engine.py   → MCR 7.212 validation
-6. prefiling_qa_engine.py       → GO/NO-GO verdict per stack
-7. efiling_prep_engine.py       → E-filing packet assembly
-8. backup_version_engine.py     → Snapshot + version tracking
-```
-
-### QA Verdict Levels
-
-| Verdict | Meaning |
-|---------|---------|
-| **GO** | All checks pass — ready to file |
-| **CONDITIONAL** | Critical checks pass but warnings exist — review before filing |
-| **NO-GO** | Critical issues found — must resolve before filing |
-
-### Urgency Levels (deadline engine)
-
-| Level | Days Remaining | Action |
-|-------|---------------|--------|
-| OVERDUE | < 0 | EMERGENCY — file immediately or seek extension |
-| EMERGENCY | 0-3 | Drop everything, finalize and file |
-| CRITICAL | 4-7 | Final review, prepare e-filing packet |
-| URGENT | 8-14 | Complete drafts, run QA checks |
-| APPROACHING | 15-30 | Active drafting, evidence gathering |
-| SCHEDULED | 30+ | Planning phase, research |
-
----
-
-## Docs Directory (`docs/`)
-
-| File | Purpose |
-|------|---------|
-| `AGENT_HQ_README.md` | Agent headquarters setup and configuration |
-| `AGENT_MIGRATION_NOTES_v10.md` | Migration notes for agent fleet v10 |
-| `INTERNET_UPGRADES_NOTES.md` | Network/connectivity upgrade notes |
-| `MCP_SECURITY_HARDENING.md` | MCP server security hardening guide |
-| `MCP_SETUP.md` | MCP server setup instructions |
-| `NEXT_UPGRADE_PLAYBOOK_v11.md` | System upgrade playbook v11 |
-| `SECURITY_KEYS.md` | Security key management |
-| `VSCODE_PROFILE.md` | VS Code profile configuration |
-
----
-
-*Version: v18.0 CONVERGENCE | Fully evolved — 64 agents cataloged, 79 engines inventoried, directory structure verified live, session-learned gotchas, convergence workflow, corrected filing paths, superpower agents, full MANBEARPIG module list | 155+ total agents | 45 MCP tools | 9 agency types | 694 DB tables*
+*Version: v19.1 CHRONICLE | Evolved from v18.0 — zero-shell-default EAGAIN prevention, reference catalogs moved to docs/REFERENCE_CATALOG.md (~380 lines saved), all hardcoded statistics replaced with runtime queries, agent-result retrieval promoted to NON-NEGOTIABLE, traceable-statistics rule extended to all outputs | See docs/REFERENCE_CATALOG.md for full inventories*

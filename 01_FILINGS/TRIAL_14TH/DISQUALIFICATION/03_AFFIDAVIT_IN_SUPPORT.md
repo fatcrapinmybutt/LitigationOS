@@ -10,7 +10,7 @@ ANDREW J. PIGORS,
 v.                                          Case No. 2024-001507-DC
                                             Hon. Jenny L. McNeill
 
-EMILY M. WATSON,
+EMILY A. WATSON,
     Defendant/Mother.
 
 ─────────────────────────────────────────────────────
@@ -54,7 +54,7 @@ disqualification.
 II. BELIEF IN BIAS AND PREJUDICE
 
     6. I believe that Judge Jenny L. McNeill is biased and prejudiced
-against me and in favor of Defendant Emily M. Watson in this matter.
+against me and in favor of Defendant Emily A. Watson in this matter.
 
     7. I believe that I cannot receive a fair and impartial hearing
 before Judge McNeill based on the facts set forth below.
@@ -106,7 +106,7 @@ was entered in my favor. I have compiled these 20 ex parte documents
 and they are attached as Exhibits 1 through 20 to the Exhibit Index.
 
     e. EXCULPATORY EVIDENCE IGNORED: I tested negative for all
-substances on a court-ordered drug screen. Nine (9) separate police
+substances on a court-ordered drug screen. Multiple police
 investigations yielded zero findings against me. No prosecutor has
 found sufficient basis to file charges based on any allegations made
 by Defendant. Despite this exculpatory evidence, Judge McNeill has not

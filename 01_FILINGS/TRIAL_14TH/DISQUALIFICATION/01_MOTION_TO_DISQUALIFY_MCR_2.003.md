@@ -10,7 +10,7 @@ ANDREW J. PIGORS,
 v.                                          Case No. 2024-001507-DC
                                             Hon. Jenny L. McNeill
 
-EMILY M. WATSON,
+EMILY A. WATSON,
     Defendant/Mother.
 
 ─────────────────────────────────────────────────────
@@ -120,7 +120,7 @@ B. Pattern of Denied Motions and Unequal Treatment
 
         c. Plaintiff's evidence is excluded or ignored — including
            negative drug screens, an initial HealthWest evaluation
-           returning "ALL ZEROS," and nine clear police investigations.
+           returning "ALL ZEROS," and multiple clear police investigations.
 
         d. Defendant's unsworn allegations are credited without
            corroboration.
@@ -369,7 +369,7 @@ by the following method(s):
 
 Served upon:
 
-    Emily M. Watson (or Attorney for Defendant)
+    Emily A. Watson (or Attorney for Defendant)
     Address on file with the Court
 
     Chief Judge, 14th Circuit Court (if applicable under MCR 2.003(D))
