@@ -1,5 +1,5 @@
-# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v3.0
-## Generated: 2026-03-13 | Distilled from 24 sessions, 143 checkpoints, 1,058 todos, 772-table DB deep mine, 2,542-line schema analysis
+# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v4.0
+## Generated: 2026-03-13 | Distilled from 24 sessions, 143 checkpoints, 1,058 todos, 772-table DB deep mine, 2,542-line schema analysis, 767-file I: drive harvest deep analysis (17K lines)
 
 > **This file is the SINGLE SOURCE OF TRUTH for new Copilot sessions.**
 > Read it top to bottom. It replaces all older startup/enhanced instruction files.
@@ -617,4 +617,112 @@ SELECT
 
 ---
 
-*LitigationOS GOLDEN MASTER v3.0 | 24 sessions · 143 checkpoints · 772 tables · 2,542-line schema study · 508-row schema_reference | Distilled 2026-02-19 through 2026-03-13*
+## 23. HARVEST EVIDENCE ARSENAL (767 files — I: drive, 26.4 MB text)
+
+Source: `I:\20260209_0430_HARVEST_000000006_FULL_SAFE\texts` — all 767 files read, cataloged, and cross-referenced.
+Deep analysis: `temp\harvest_deep_analysis.txt` (17,067 lines, 778 KB). Catalog: `temp\harvest_catalog.jsonl`.
+
+### Topic Distribution
+| Topic | Files | Key Content |
+|-------|-------|-------------|
+| **Custody** | 183 | Court orders, custody judgment, FIG conference, PT schedules, best interest factors, police narratives |
+| **Housing** | 161 | Shady Oaks eviction, lock-change, sewage, Cricklewood MHP, EGLE violations, affidavits |
+| **PPO** | 100 | PPO extensions, show cause orders, contempt, violation hearings, docket sheets |
+| **General** | 96 | Mixed administrative, court forms, scheduling orders |
+| **Judicial Misconduct** | 89 | JTC complaint, canon violations, disqualification motion, bench warrant orders |
+| **Evidence** | 74 | Exhibit indexes, affidavits, police reports, ChatGPT export analysis tools |
+| **Financial** | 46 | Child support calculations, FOC UCSOMs, deviation orders, $50/month CS |
+| **Appellate** | 18 | COA briefs, MSC applications, supervisory orders, proposed orders |
+
+### Cross-Cutting Evidence (critical for filings)
+| Category | Files | Key Finding |
+|----------|-------|-------------|
+| **Court Orders** | 83 | Actual "IT IS ORDERED" text — custody judgment, PT suspensions, $250 bond, HealthWest order |
+| **Affidavits** | 90 | 10+ Andrew Pigors affidavits (custody mod, flight risk, alienation, bias, refutations, housing, PPO) |
+| **Ex Parte Evidence** | 165 | Massive — 165 files document ex parte handling. Emily's emergency motion, McNeill's suspension order, chambers-only HealthWest directives |
+| **HealthWest Records** | 114 | Two complete evaluations (08/05/2025 & 09/11/2025), Case #02508341, DeAugustine/Gansen clinicians, PHQ-9, C-SSRS, CANS, consent forms, release packets |
+| **Testimony/Transcripts** | 70 | PPO Oct 30 2024 transcript pages, hearing testimony references |
+| **Financial Data** | 143 | CS calculations, deviation at $50/month, FOC forms, $3,480 arrears, Kent County payroll (Emily Emp ID 13380) |
+| **$250 Bond** | 8 | May 16, 2025 order imposing filing bond — documented in JTC complaint, court orders, ex parte filings |
+
+### Party Mentions (across all 767 files)
+| Party | Files Mentioned | Context |
+|-------|----------------|---------|
+| **Pigors** | 466 (61%) | Plaintiff in virtually all documents |
+| **Watson** | 355 (46%) | Emily A. Watson as defendant/petitioner |
+| **McNeill** | 188 (24%) | Judge — orders, ex parte handling, JTC complaint |
+| **Rusco** | 48 (6%) | FOC secretary — email correspondence, HealthWest transmittal |
+| **Barnes** | 33 (4%) | Jennifer Barnes P55406 — withdrew as Emily's attorney |
+| **Berry** | 14 (2%) | Ronald Berry — Emily's partner (NON-attorney) |
+
+### High-Value Files (top 10 by legal term density)
+| File | Size | Hits | Topic |
+|------|------|------|-------|
+| `master_nodes.csv.txt` | 8.0 MB | 87,947 | Graph DB export — authority hubs, violation nodes, evidence links |
+| `massiveeee_evidence_atoms.csv.txt` | 2.0 MB | 25,571 | Evidence atom CSV — structured evidence with case numbers + lanes |
+| `MindEye2_nodes_combined.csv.txt` | 7.9 MB | 17,801 | MindEye graph nodes — motion generators, adversary models |
+| `Comprehensive_Overview_MEEK1_MEEK4.docx.txt` | 84 KB | 877 | Complete legal overview of all 4 MEEK actions |
+| `000ZIPS_doc_index.csv.txt` | 33 KB | 479 | Master index of all ZIP-extracted documents |
+| `CASE_CHRONOLOGY_PROCEEDING_MAP.html.txt` | 37 KB | 358 | Full case chronology with graph-extracted anchors |
+| `Verified_Chronology_Procedural_Violations.pdf.txt` | 25 KB | 285 | Pin-cited chronology of every MCR violation |
+| `SCANNEDMergeddocketsnotices.pdf.txt` | 12 KB | 218 | Merged docket sheets — complete PPO record |
+| `AffidavitAndrew_FLIGHTRISK_.docx.txt` | 27 KB | 129 | International flight risk affidavit (non-Hague concerns) |
+| `Response_to_show_cause_.docx.txt` | 12 KB | 118 | Show cause response — AppClose not harassment |
+
+### Legal Authority Coverage
+- **5,190 unique legal authorities** cited across harvest files
+- Top MCR citations: MCR 3.207(B) (493), MCR 3.203 (486), MCR 3.211 (455), MCR 2.003(C) (349)
+- **1,185 unique dates** referenced (coverage: 2021 through 2026)
+- **20 unique case numbers** including all 5 case lane variants
+
+### ⚠️ NEW EVIDENCE: 760 of 767 files contain content NOT in `litigation_context.db`
+This harvest is almost entirely unmined material. Only 7 files had content matching existing `evidence_quotes`.
+Ingestion into the DB would dramatically expand the evidence base.
+
+### Email Files Found (5 total)
+| File | Key Content |
+|------|-------------|
+| `Healthwest_Exam.eml.txt` | Rusco/Pigors exchange re: HealthWest evaluation transmittal to chambers |
+| `HealthWest_Lobby_Support_Specialist_Prescreen_Questions.eml.txt` | Barb Carriere prescreen — shows Andrew applied for HealthWest staff role |
+| `PROVENANCE_INDEX...csv.txt` | References to additional .eml files in massiveeee.zip archive |
+
+### HealthWest Assessment Details (from harvest — critical evidence)
+- **Case #**: 02508341
+- **DOB confirmed**: 12/30/1987 (Andrew)
+- **Address at evaluation**: 1977 Whitehall Road Lot 17, Muskegon, MI 49445
+- **1st Assessment**: 08/05/2025 (Service H0002, Brief screening to non-inpatient) — Clinician: Melissa DeAugustine LBSW
+- **2nd Assessment**: 09/11/2025 — Clinician: Gansen
+- **Key finding**: "seeking information only. He is not opening to HealthWest services. He is in agreement with this plan."
+- **Diagnosis code**: F22 (Delusional disorder) — listed as "rule out" status
+- **Critical**: Judge directed HealthWest eval be submitted to CHAMBERS email (not filed with clerk) — ex parte handling of merits evidence
+
+---
+
+## 24. KEY EVIDENCE QUOTES (harvest-sourced — verbatim, citable)
+
+### Ex Parte Motion Text (Emily Watson, Aug 8, 2025)
+> "NOW COMES Defendant, Emily Watson, files the Emergency Ex Parte Motion to Suspend Parenting Time"
+> — Filed WITHOUT sworn affidavit or verification (MCR 3.207 violation)
+
+### Court's Ex Parte Order
+> "IT IS HEREBY ORDERED that Defendant's Ex Parte Motion to Suspend Plaintiff's Parenting Time is: Granted as follows: Suspend the Plaintiff's parenting time with minor child, Lincoln"
+> — Signed by Hon. Jenny L. McNeill, August 2025
+
+### HealthWest Chambers Directive
+> "staff instructed me by email to submit my HealthWest evaluation directly to the judge's chambers email instead of filing it with the clerk, keeping this central piece of evidence out of the official court file"
+
+### $250 Bond Order
+> "It is further ordered that the Plaintiff must pay a bond of $250 (for each motion) before he may file another motion in this matter"
+> — May 16, 2025 order (Boddie v. Connecticut violation — access to courts)
+
+### Police Report (Emily's PPO Basis)
+> "Emily can go tomorrow to get an Ex Parte order for full custody of her son. Emily said she is supposed to exchange her son with Andrew tomorrow and she does not feel comfortable with Andrew caring for the child."
+> — Officer Randall 47437, Case NS2505044
+
+### Affidavit of Parentage
+> "In the affidavit it states the mother of the child has initial custody of the child until determined otherwise by the court. Andrew was shown this affidavit."
+> — NSPD report confirming signed Affidavit of Parentage by both parties
+
+---
+
+*LitigationOS GOLDEN MASTER v4.0 | 24 sessions · 143 checkpoints · 772 tables · 2,542-line schema study · 508-row schema_reference · 767-file harvest deep analysis | Distilled 2026-02-19 through 2026-03-13*
