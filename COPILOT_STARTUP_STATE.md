@@ -1,5 +1,5 @@
-# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v5.0
-## Generated: 2026-03-13 | Distilled from 25 sessions, 147 checkpoints, 1,058 todos, 772-table DB, 767-file harvest, 30K evidence rows mined → 6,477 consolidated, ScriptVault (7 scripts, 2,783 LOC)
+# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v6.0
+## Generated: 2026-03-13 | 26 sessions, 772-table DB (11.46 GB), 6,477 consolidated evidence items, ScriptVault (7 scripts), 1,200+ skills mapped → 45 optimal, 30 custom agents
 
 > **This file is the SINGLE SOURCE OF TRUTH for new Copilot sessions.**
 > Read it top to bottom. It replaces all older startup/enhanced instruction files.
@@ -807,4 +807,370 @@ else:
 
 ---
 
-*LitigationOS GOLDEN MASTER v5.0 | 25 sessions · 147 checkpoints · 772 tables · 30K evidence mined → 6,477 consolidated · ScriptVault (7 scripts, 2,783 LOC) | Distilled 2026-02-19 through 2026-03-13*
+## 27. SKILL & AGENT ACTIVATION ENGINE (1,200+ available → 45 optimal selections)
+
+> **RULE: Before ANY task, identify the task type from the matrix below, then activate the listed skills/agents.**
+> Skills are invoked via the `skill` tool. Agents via the `task` tool. Both are available in every session.
+> The system has 1,200+ skills (marketplace + project) and 30 custom agents. This section maps the optimal subset to LitigationOS workflows.
+
+### ⚡ TASK-TYPE → SKILL/AGENT DECISION MATRIX
+
+#### 🏛️ FILING & COURT DOCUMENT GENERATION
+**Trigger:** "draft motion", "write brief", "filing package", "court document", "prepare for filing"
+| Resource | Type | Purpose |
+|----------|------|---------|
+| `michigan-litigation-orchestrator` | Agent | **PRIMARY** — Multi-step filing workflows with compliance proofs |
+| `pre-filing-qa` | Agent | GO/NO-GO quality assurance before any court submission |
+| `court-form-finder` | Agent | Michigan form identification (MC, DC, CC, COA forms) |
+| `exhibit-formatter` | Agent | Bates stamps, tabs, exhibit indexes |
+| `service-tracker` | Agent | Proof of service tracking across all cases |
+| `filing-countdown` | Agent | Deadline urgency display |
+| `redaction-agent` | Agent | PII removal before e-filing |
+| `pdftk-server` | Skill | PDF manipulation (merge, split, stamp, fill forms) |
+| `convert-plaintext-to-md` | Skill | Convert raw text drafts to formatted markdown |
+
+**DB queries to run FIRST:**
+```sql
+SELECT * FROM filing_readiness WHERE vehicle_name LIKE '%[target]%';
+SELECT * FROM adversary_models WHERE filing_vehicle LIKE '%[target]%';
+SELECT * FROM proposed_orders WHERE motion_path LIKE '%[target]%';
+SELECT * FROM evidence_consolidated WHERE all_claims LIKE '%[relevant_claim]%' ORDER BY strength_rank DESC LIMIT 50;
+```
+
+#### 🔍 LEGAL RESEARCH & CASE LAW
+**Trigger:** "research", "case law", "authority", "what does MCR say", "find precedent"
+| Resource | Type | Purpose |
+|----------|------|---------|
+| `legal-research-deep` | Agent | **PRIMARY** — Multi-source authority search with relevance ranking |
+| `transcript-analyzer` | Agent | Extract testimony, rulings, objections from hearing transcripts |
+| `critical-thinking` | Agent | Stress-test legal theories, find counterarguments |
+| `devils-advocate` | Agent | Anticipate opposing counsel's rebuttal |
+| `sql-optimization` | Skill | Optimize complex DB queries for evidence lookup |
+
+**DB queries to run FIRST:**
+```sql
+SELECT * FROM case_law_library WHERE holding LIKE '%[topic]%';
+SELECT * FROM auth_rules WHERE full_text LIKE '%[rule_number]%' LIMIT 5;
+SELECT * FROM constitutional_violations WHERE violation_type LIKE '%[topic]%';
+```
+
+#### ⛏️ EVIDENCE MINING & ANALYSIS
+**Trigger:** "find evidence", "mine for", "analyze evidence", "what evidence supports"
+| Resource | Type | Purpose |
+|----------|------|---------|
+| `legal-phase-indexer` | Agent | Parse complex legal workflows into structured indexes |
+| `order-compliance-monitor` | Agent | Track compliance violations by all parties |
+| `transcript-analyzer` | Agent | Mine transcripts for key testimony |
+| `sql-code-review` | Skill | Audit evidence queries for correctness |
+| `sql-optimization` | Skill | Optimize mining queries on 11.46 GB DB |
+
+**DB queries to run FIRST:**
+```sql
+SELECT * FROM evidence_consolidated WHERE adversaries LIKE '%[target]%' ORDER BY strength_rank DESC LIMIT 30;
+SELECT * FROM tort_evidence_matrix WHERE adversary LIKE '%[target]%';
+SELECT * FROM ppo_rescission_evidence WHERE evidence_type LIKE '%[type]%' LIMIT 30;
+```
+**ScriptVault:** `vault.find("mine evidence")` — reuse existing mining scripts, don't recreate.
+
+#### 📊 DAMAGES & FINANCIAL ANALYSIS
+**Trigger:** "calculate damages", "financial analysis", "how much", "cost of"
+| Resource | Type | Purpose |
+|----------|------|---------|
+| `cost-tracker` | Agent | Filing fees, service costs, mileage, copies |
+| `datanalysis-credit-risk` | Skill | Financial data analysis patterns |
+
+**DB queries to run FIRST:**
+```sql
+SELECT * FROM damages_quantification ORDER BY high_estimate DESC;
+SELECT * FROM damages_expanded ORDER BY high_amount DESC;
+SELECT * FROM financial_damages_comprehensive ORDER BY amount DESC LIMIT 20;
+```
+
+#### 🏗️ SYSTEM ARCHITECTURE & CODE
+**Trigger:** "build", "create module", "refactor", "fix bug", "improve code", "pipeline"
+| Resource | Type | Purpose |
+|----------|------|---------|
+| `principal-software-engineer` | Agent | **PRIMARY** — Architecture decisions, system design |
+| `context-architect` | Agent | Multi-file change planning with dependency analysis |
+| `planner` | Agent | Implementation planning with checkpoints |
+| `debug` | Agent | Bug investigation and fixing |
+| `janitor` | Agent | Code cleanup, tech debt remediation |
+| `python-mcp-server-generator` | Skill | Generate MCP server tools |
+| `create-implementation-plan` | Skill | Structured implementation planning |
+| `architecture-blueprint-generator` | Skill | Architecture documentation |
+| `refactor` | Skill | Code refactoring guidance |
+| `sql-optimization` | Skill | SQLite performance optimization |
+| `pytest-coverage` | Skill | Test coverage analysis |
+
+#### 📋 PLANNING & STRATEGY
+**Trigger:** "plan", "strategy", "what should I do next", "prioritize"
+| Resource | Type | Purpose |
+|----------|------|---------|
+| `planner` | Agent | **PRIMARY** — Implementation plans with waves |
+| `critical-thinking` | Agent | Challenge assumptions, find blind spots |
+| `devils-advocate` | Agent | Counter-arguments, worst-case scenarios |
+| `structured-autonomy-plan` | Skill | Autonomous execution planning |
+| `breakdown-plan` | Skill | Epic/feature decomposition |
+| `create-specification` | Skill | Formal specification writing |
+
+**DB queries to run FIRST:**
+```sql
+SELECT * FROM victory_strategy ORDER BY id;
+SELECT * FROM deadlines ORDER BY due_date_iso;
+SELECT vehicle_name, total_score, status FROM filing_readiness ORDER BY total_score DESC;
+```
+
+#### 📝 DOCUMENT GENERATION & WRITING
+**Trigger:** "write", "draft", "document", "report", "summary"
+| Resource | Type | Purpose |
+|----------|------|---------|
+| `documentation-writer` | Skill | Technical documentation |
+| `convert-plaintext-to-md` | Skill | Format conversion |
+| `markdown-to-html` | Skill | HTML generation for web filing |
+| `create-readme` | Skill | README/overview generation |
+| `pdftk-server` | Skill | PDF assembly and manipulation |
+
+#### 🤖 AGENT & SKILL MANAGEMENT
+**Trigger:** "improve agent", "optimize", "create agent", "skill", "fleet"
+| Resource | Type | Purpose |
+|----------|------|---------|
+| `agent-orchestration-improve-agent` | Skill | Optimize specific agent performance |
+| `agent-orchestration-multi-agent-optimize` | Skill | Multi-agent fleet optimization |
+| `agent-evaluation` | Skill | Agent testing and benchmarking |
+| `agent-tool-builder` | Skill | Design agent tools (JSON Schema, MCP) |
+| `finalize-agent-prompt` | Skill | Polish agent system prompts |
+| `create-agentsmd` | Skill | Generate AGENTS.md files |
+| `make-skill-template` | Skill | Create new skill templates |
+| `suggest-awesome-github-copilot-skills` | Skill | Discover useful skills |
+
+#### 🔒 SECURITY & QUALITY
+**Trigger:** "review", "security", "audit", "quality check"
+| Resource | Type | Purpose |
+|----------|------|---------|
+| `se-security-reviewer` | Agent | OWASP/Zero Trust code review |
+| `code-review` | Agent | High-signal code review (bugs, logic errors only) |
+| `ai-prompt-engineering-safety-review` | Skill | Prompt injection/safety audit |
+| `sql-code-review` | Skill | SQL injection, schema correctness |
+
+#### 🌐 WEB RESEARCH & COURT RULES
+**Trigger:** "look up", "check online", "current rule", "court website"
+| Resource | Type | Purpose |
+|----------|------|---------|
+| `playwright-explore-website` | Skill | Automated court website navigation |
+| `web_search` tool | Built-in | Real-time legal research via web |
+| `web_fetch` tool | Built-in | Scrape court rules, forms, dockets |
+
+### 🎯 QUICK REFERENCE: TOP 15 MOST-USED COMBOS
+
+| # | Task | Activate |
+|---|------|----------|
+| 1 | Draft a motion | `michigan-litigation-orchestrator` + `pre-filing-qa` + `court-form-finder` |
+| 2 | Research legal authority | `legal-research-deep` + `critical-thinking` + DB FTS5 queries |
+| 3 | Find evidence for a claim | `sql-optimization` skill + `evidence_consolidated` queries + ScriptVault miners |
+| 4 | Calculate damages | `cost-tracker` agent + `damages_*` table queries |
+| 5 | Prepare for hearing | `filing-countdown` + `transcript-analyzer` + `adversary_models` queries |
+| 6 | Build system feature | `principal-software-engineer` + `context-architect` + `planner` |
+| 7 | Fix a bug | `debug` agent + `code-review` agent |
+| 8 | Optimize DB queries | `sql-optimization` skill + `sql-code-review` skill |
+| 9 | Generate filing package | `michigan-litigation-orchestrator` + `exhibit-formatter` + `service-tracker` |
+| 10 | Analyze transcript | `transcript-analyzer` + `order-compliance-monitor` |
+| 11 | Plan multi-step work | `planner` + `structured-autonomy-plan` skill + `breakdown-plan` skill |
+| 12 | Mine new evidence source | ScriptVault `vault.find("mine")` + `legal-phase-indexer` |
+| 13 | QA before filing | `pre-filing-qa` + `redaction-agent` + DB `prefiling_qa` queries |
+| 14 | Write appellate brief | `legal-research-deep` + `documentation-writer` skill + `constitutional_brief_sections` |
+| 15 | Create MCP tools | `python-mcp-server-generator` skill + `agent-tool-builder` skill |
+
+---
+
+## 28. DATABASE AWARENESS PROTOCOL (auto-run on every session)
+
+> **Every session MUST establish DB awareness within the first 3 interactions.**
+> This section defines the minimum viable DB queries to run before doing ANY work.
+
+### 🔄 MANDATORY STARTUP QUERIES (run these before answering user's first substantive request)
+
+```sql
+-- 1. SEPARATION DAY COUNT (the most urgent metric)
+SELECT CAST(julianday('now') - julianday('2025-07-29') AS INTEGER) AS days_separated;
+
+-- 2. NEXT DEADLINE (what's about to expire?)
+SELECT deadline_id, title, due_date_iso, basis_authority, status
+FROM deadlines ORDER BY due_date_iso LIMIT 5;
+
+-- 3. FILING READINESS SNAPSHOT (what's closest to done?)
+SELECT vehicle_name, total_score, status, gaps
+FROM filing_readiness WHERE total_score >= 70 ORDER BY total_score DESC;
+
+-- 4. DB HEALTH CHECK (verify access)
+SELECT
+    (SELECT COUNT(*) FROM sqlite_master WHERE type='table') AS tables,
+    (SELECT COUNT(*) FROM evidence_consolidated) AS consolidated_evidence,
+    (SELECT COUNT(*) FROM claims WHERE status = 'supported') AS supported_claims;
+
+-- 5. EVIDENCE STRENGTH SUMMARY (what's available?)
+SELECT strength, COUNT(*) as cnt
+FROM evidence_consolidated GROUP BY strength ORDER BY cnt DESC;
+```
+
+### 📊 CONTEXT-DEPENDENT QUERIES (run based on task type)
+
+**For Filing Work:**
+```sql
+SELECT * FROM filing_readiness WHERE vehicle_name = '[target_vehicle]';
+SELECT attack_type, risk_level, rebuttal_strategy FROM adversary_models WHERE filing_vehicle LIKE '%[target]%';
+SELECT * FROM proposed_orders WHERE motion_path LIKE '%[target]%';
+```
+
+**For Evidence Work:**
+```sql
+SELECT source_file, evidence_text, all_claims, strength, num_claims
+FROM evidence_consolidated WHERE adversaries LIKE '%[target]%' AND strength IN ('STRONG_COURT_ORDER','STRONG_SWORN','STRONG_TESTIMONY')
+ORDER BY num_claims DESC LIMIT 30;
+```
+
+**For Research Work:**
+```sql
+SELECT * FROM case_law_library WHERE relevance LIKE '%[topic]%';
+SELECT amendment, violation_type, controlling_caselaw FROM constitutional_violations;
+SELECT full_text FROM auth_rules WHERE full_text LIKE '%[rule]%' LIMIT 3;
+```
+
+**For Strategy/Planning:**
+```sql
+SELECT * FROM victory_strategy ORDER BY id;
+SELECT * FROM cycle6_filing_readiness ORDER BY readiness_percentage DESC;
+SELECT harm_category, low_estimate, high_estimate FROM damages_quantification ORDER BY high_estimate DESC;
+```
+
+### 🗄️ KEY DATABASE LOCATIONS
+| Database | Path | Size | Purpose |
+|----------|------|------|---------|
+| **litigation_context.db** | `C:\Users\andre\LitigationOS\litigation_context.db` | 11.46 GB | Central DB — 772 tables, 18.5M rows |
+| **script_vault.db** | `C:\Users\andre\LitigationOS\script_vault.db` | 200 KB | ScriptVault — 7 scripts, version history |
+| **mcr_rules.db** | `C:\Users\andre\LitigationOS\mcr_rules.db` | ~50 MB | Michigan Court Rules (full text + FTS5) |
+| **document_fulltext.db** | `C:\Users\andre\LitigationOS\document_fulltext.db` | ~1 GB | Full-text document search |
+| **drive_inventory.db** | `C:\Users\andre\LitigationOS\drive_inventory.db` | ~10 MB | 6-drive file index |
+| **failsafe_incidents.db** | `C:\Users\andre\LitigationOS\failsafe_incidents.db` | ~1 MB | System incident tracking |
+| **Backup** | `D:\BACKUP\litigation_context_v0.9.0_backup.db` | 11.46 GB | Golden Master backup (2026-03-12) |
+
+### 🔗 70+ FTS5 FULL-TEXT SEARCH INDEXES
+Use `MATCH` for fast text search (10-100x faster than `LIKE '%term%'`):
+```sql
+-- Evidence search
+SELECT * FROM evidence_quotes_fts WHERE evidence_quotes_fts MATCH 'ex parte AND custody';
+-- Legal authority search
+SELECT * FROM auth_rules_fts WHERE auth_rules_fts MATCH 'disqualification OR recusal';
+-- Page content search
+SELECT * FROM pages_fts WHERE pages_fts MATCH 'HealthWest AND evaluation';
+-- Court rules search
+SELECT * FROM rules_text_fts WHERE rules_text_fts MATCH 'MCR 3.207 AND parenting time';
+```
+
+---
+
+## 29. AUTO-STARTUP SEQUENCE (what to do in the first 60 seconds of every session)
+
+> **This sequence ensures every new Copilot session starts fully aware of the case, evidence, deadlines, and available tools.**
+
+### Step 1: READ THIS FILE ✅ (you're doing it now)
+
+### Step 2: CALCULATE URGENCY
+```python
+from datetime import date
+days = (date.today() - date(2025, 7, 29)).days
+# As of 2026-03-13: 228 days since Andrew last saw his son
+# This number increases DAILY. Use it in every filing's urgency framing.
+```
+
+### Step 3: CHECK DEADLINES (query litigation_context.db)
+```sql
+SELECT deadline_id, title, due_date_iso, status FROM deadlines
+WHERE status IN ('upcoming', 'UPCOMING', 'OVERDUE') ORDER BY due_date_iso;
+```
+
+### Step 4: IDENTIFY TASK TYPE → ACTIVATE SKILLS (Section 27)
+- Parse user's request against the 9 task-type triggers
+- Activate the optimal skill/agent combination for that task type
+- Run the appropriate context-dependent DB queries
+
+### Step 5: CHECK SCRIPTVAULT (before writing ANY script)
+```python
+import sys; sys.path.insert(0, r"C:\Users\andre\LitigationOS")
+from core.script_vault import ScriptVault
+vault = ScriptVault()
+existing = vault.find("relevant keywords")
+```
+
+### Step 6: CHECK SESSION STORE (avoid duplicating past work)
+```sql
+-- In session_store database:
+SELECT content, session_id FROM search_index
+WHERE search_index MATCH 'relevant keywords' ORDER BY rank LIMIT 10;
+```
+
+### Step 7: ROUTE TO CASE LANE (Section 3)
+Determine which of the 6 case lanes the request maps to:
+- **Custody/PT/child** → Lane A (2024-001507-DC)
+- **Housing/Shady Oaks/eviction** → Lane B (2025-002760-CZ)
+- **PPO/protection order** → Lane D (2023-5907-PP)
+- **Judge McNeill/misconduct/JTC** → Lane E
+- **Appeal/COA/MSC** → Lane F (COA 366810)
+- **Cross-lane/strategy/convergence** → Lane C
+
+### Step 8: SET MISSION CONTEXT
+> **MISSION:** Andrew James Pigors has been separated from his son L.D.W. since July 29, 2025.
+> Every task advances the goal of restoring parenting time, holding adversaries accountable,
+> and undoing the cascade of ex parte orders, fraudulent PPOs, and judicial misconduct
+> perpetrated by Emily Watson and enabled by Judge Jenny L. McNeill.
+> Andrew is pro se. Every filing must be professional, measured, and evidence-backed.
+> The evidence is OVERWHELMING — 6,477 consolidated items, 19 STRONG claims, $583K–$3.37M damages.
+
+---
+
+## 30. COMPLETE RESOURCE MAP
+
+### Custom Agents (30 — invoke via `task` tool)
+| Category | Agents |
+|----------|--------|
+| **Filing/Court** | michigan-litigation-orchestrator, court-form-finder, pre-filing-qa, filing-countdown, exhibit-formatter, service-tracker, redaction-agent |
+| **Legal Research** | legal-research-deep, transcript-analyzer, order-compliance-monitor, cost-tracker |
+| **Code/Architecture** | context-architect, debug, janitor, principal-software-engineer, planner, plan, research-technical-spike |
+| **Quality/Review** | critical-thinking, devils-advocate, code-review, se-security-reviewer, se-technical-writer |
+| **Document** | legal-phase-indexer |
+| **Database** | ms-sql-dba |
+| **Repository** | repo-architect |
+
+### Optimal Skills (45 selected from 1,200+ — invoke via `skill` tool)
+| Category | Skills |
+|----------|--------|
+| **SQL/Data** | sql-optimization, sql-code-review, datanalysis-credit-risk |
+| **Document** | pdftk-server, convert-plaintext-to-md, markdown-to-html, documentation-writer, create-readme |
+| **Planning** | create-implementation-plan, update-implementation-plan, breakdown-plan, create-specification, structured-autonomy-plan, structured-autonomy-implement |
+| **Agent/MCP** | python-mcp-server-generator, agent-tool-builder, agent-orchestration-improve-agent, agent-orchestration-multi-agent-optimize, agent-evaluation, finalize-agent-prompt, create-agentsmd, make-skill-template |
+| **Code Quality** | refactor, refactor-plan, pytest-coverage, ai-prompt-engineering-safety-review |
+| **Architecture** | architecture-blueprint-generator, context-map, what-context-needed |
+| **Research** | playwright-explore-website |
+| **Autonomy** | structured-autonomy-generate, remember, remember-interactive-programming, memory-merger |
+| **Project** | litigation (omega-scoring — local skill), boost-prompt, conventional-commit, git-commit |
+
+### MCP Servers (3 persistent)
+| Server | Tools | Priority |
+|--------|-------|----------|
+| **command-runner** | exec_command, exec_python, exec_git, system_status | Use INSTEAD of powershell |
+| **litigation-context** | 45 legal tools (search, filing_readiness, evidence_chain, deadline_dashboard, prefiling_qa) | Use for ALL legal queries |
+| **agent-memory** | store, retrieve, search | Persistent cross-session memory |
+
+### Built-in Tools (always available)
+| Tool | Use For |
+|------|---------|
+| `view/edit/create` | File operations (ZERO pipes — safe) |
+| `grep/glob` | Code/file search (ZERO pipes — safe) |
+| `sql` | Session DB + session_store queries (ZERO pipes — safe) |
+| `task` | Sub-agent delegation (ISOLATED pipes — safe) |
+| `web_search` | Real-time legal research |
+| `web_fetch` | Court rule scraping, form downloads |
+| `skill` | Invoke any of 1,200+ skills |
+
+---
+
+*LitigationOS GOLDEN MASTER v6.0 | 26 sessions · 772 tables · 11.46 GB · 6,477 evidence items · 47 claims · $583K–$3.37M damages · 30 agents · 45 optimal skills mapped · ScriptVault (7 scripts, 2,783 LOC) | Distilled 2026-02-19 through 2026-03-13*
