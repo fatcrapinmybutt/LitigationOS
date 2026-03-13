@@ -1,5 +1,5 @@
-# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v2.1
-## Generated: 2026-03-13 | Distilled from 24 sessions, 143 checkpoints, 1,058 todos, 772-table DB deep mine
+# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v3.0
+## Generated: 2026-03-13 | Distilled from 24 sessions, 143 checkpoints, 1,058 todos, 772-table DB deep mine, 2,542-line schema analysis
 
 > **This file is the SINGLE SOURCE OF TRUTH for new Copilot sessions.**
 > Read it top to bottom. It replaces all older startup/enhanced instruction files.
@@ -101,7 +101,31 @@
 | `filing_packages` | 29 | Court filing packages |
 | `deadlines` | 23 | Active litigation deadlines |
 | `vehicles` | 6 | Active litigation vehicles |
-| `claims` | 57 | Legal claims tracked |
+| `claims` | 653 | Legal claims tracked (429 supported, 90 active) |
+
+### 🔥 HIGH-VALUE ACTIONABLE TABLES (discovered in deep study — USE THESE)
+
+| Table | Rows | Purpose | Key Columns |
+|-------|------|---------|-------------|
+| `victory_strategy` | 12 | **Ranked actions to undo** with evidence strength | action_to_undo, filing_vehicle, confidence, risk_level |
+| `adversary_models` | 114 | **Anticipated attacks + rebuttals** per filing | attack_type, weakness_exploited, rebuttal_strategy, rebuttal_authority |
+| `constitutional_violations` | 11 | **Documented 14th/1st/6th Amendment violations** | amendment, violation_type, controlling_caselaw, filing_target |
+| `constitutional_brief_sections` | 6 | **Pre-drafted IRAC sections** for 6 rights | right_name, issue_text, rule_text, application_text, key_citations |
+| `constitutional_rights_tracker` | 6 | **Violation counts per right** with remedies | right, violation_count, evidence_sources, remedy |
+| `case_law_library` | 25 | **Indexed cases** with holdings + filing stacks | case_name, holding, relevance, filing_stacks |
+| `risk_events` | 21 | **Risk types** with severity + cure packets | risk_type, severity, cure_packet, authority_ref |
+| `witness_profiles` | 10 | **Witness data** with credibility scores | name, role, credibility_score |
+| `cycle6_witnesses` | 9 | **Subpoena priorities** with evidence refs | name, priority, evidence_ref |
+| `hearing_transcripts` | 311 | **Indexed hearing files** with key findings | hearing_date, hearing_type, key_findings |
+| `hearing_calendar` | 4 | **Upcoming hearings** with filing deadlines | hearing_date, filing_deadline, service_deadline |
+| `docket_events` | 221 | **Procedural history** (62 hearings, 30 orders, 24 ex parte) | event_date_iso, title, event_type, summary |
+| `damages_quantification` | 18 | **Damages by harm category** with ranges | harm_category, low_estimate, mid_estimate, high_estimate |
+| `damages_calculations` | 16 | **Damages by forum** with authorities | category, amount_low, amount_high, authority |
+| `damages_itemization` | 15 | **Line-item damages** with evidence refs | category, amount, evidence_ref, legal_basis |
+| `schema_reference` | 508 | **DB self-documentation** — maps column names | table_name, column_name, common_mistake, correct_usage |
+| `andrew_messages` | 48K | **Andrew's ChatGPT messages** — canonical truth | message_text, conversation_title |
+| `canonical_fact_index` | 41K | **Verified facts** with confidence scores | fact_text, confidence, source |
+| `proposed_orders` | 16 | **Pre-drafted proposed orders** per motion | motion_path, order_text, relief_items |
 
 **70+ FTS5 full-text search indexes** available. Key ones: `evidence_quotes_fts`, `auth_rules_fts`, `pages_fts`, `rules_text_fts`, `md_sections_fts`, `master_csv_fts`
 
@@ -237,7 +261,7 @@ The `session_store` SQL database contains history from ALL past sessions (24+). 
 | (j) Willingness to facilitate | **100/100** | Father facilitates; Mother obstructs (ZERO consequences) |
 | (k) False reporting | **95/100** | Emily perjury documented |
 
-### Claims Matrix (27 classified legal claims in `cycle6_legal_claims`)
+### Claims Matrix (653 classified legal claims — 429 supported, 90 active, 44 active-critical)
 
 | Claim | Probability | Authority | Lane |
 |-------|-------------|-----------|------|
@@ -339,4 +363,258 @@ python 00_SYSTEM\tools\safe_shell.py run script.py    # Safe run
 | **Safe Shell** | `00_SYSTEM/tools/safe_shell.py` |
 
 ---
-*LitigationOS GOLDEN MASTER v2.1 | Distilled from 24 sessions across 2026-02-19 to 2026-03-13 | 143 checkpoints | 772-table DB deep mine*
+
+## 14. SCHEMA QUICK REFERENCE (prevents the #1 query failure mode)
+
+> Past sessions crashed repeatedly on wrong column names. ALWAYS run `PRAGMA table_info(table_name)` on first use.
+> The `schema_reference` table (508 rows) self-documents the DB: `SELECT * FROM schema_reference WHERE table_name = 'X'`
+
+| Table | ✅ Correct Column | ❌ Common Mistake | Notes |
+|-------|-------------------|-------------------|-------|
+| `authority_chains` | `chain_complete` | `is_complete` | INTEGER, use `WHERE chain_complete = 1` |
+| `authority_chains` | `filing_vehicle` | `action_name` | TEXT |
+| `filing_readiness` | `vehicle_name` | `vehicle` | TEXT |
+| `filing_readiness` | `total_score` | `readiness_score` | INTEGER |
+| `claims` | `claim_id` | `id` | TEXT (not INTEGER) |
+| `auth_rules` | `full_text` | `rule_text` | TEXT |
+| `omega_scores` | `name` | `action_name` | TEXT |
+| `docket_events` | `event_date_iso` | `event_date` | TEXT (ISO format) |
+| `docket_events` | `title`, `summary` | `description` | Two separate columns |
+| `judicial_violations` | `canon_number` | `category`, `violation_type` | TEXT |
+| `impeachment_items` | `item_type` | `category` | Top types: TIMELINE_CONTRADICTION (7,189), PRIOR_INCONSISTENT_STATEMENT (3,538) |
+| `evidence_quotes` | `quote_text` | `text`, `content` | TEXT |
+| `evidence_quotes` | `source_type` | `type` | Values: PDF_COURT_DOC (308K), CHATGPT_REFERENCE (32) |
+| `extracted_harms` | `category` | `harm_type` | TEXT |
+
+### Filing Readiness Columns (COMPLETE — 15 columns)
+`id, vehicle_name, best_source, best_source_path, authority_score, evidence_score, compliance_score, impeachment_score, total_score, gaps, strengths, attack_vectors, rebuttals_ready, status, created_at`
+
+### Evidence Quotes Columns (COMPLETE — 12 columns)
+`id, document_id, page_number, evidence_category, quote_text, quote_hash, quote_type, speaker, date_ref, legal_significance, created_at, source_type`
+
+### Deadlines Columns (COMPLETE — 10 columns)
+`deadline_id, case_id, title, due_date_iso, basis, basis_authority, risk_if_missed, status, created_at, updated_at`
+
+---
+
+## 15. FILING REQUIREMENTS BY COURT
+
+| Court | Copies | Fee | Key Rules | Mandatory Forms | Service |
+|-------|--------|-----|-----------|-----------------|---------|
+| **MSC** | 13 | $375 (or MC 20 waiver) | MCR 7.305(B), 7.306 | MC 20 (fee waiver) | Serve all parties |
+| **COA** | 5 | $375 (or MC 20 waiver) | MCR 7.212 (brief format) | Word count certificate | Serve all parties |
+| **JTC** | 2 | **FREE** | MCR 9.200-9.252 | Notarized affidavit REQUIRED | Mail to JTC office |
+| **14th Circuit** | 3 | $20/motion | MCR 2.119 (9+3=12 day service) | CC 377/380 (PPO); FOC 65/67 (PT) | MCR 2.107 |
+| **USDC W.D. Mich** | 1 (e-file) | $405 (or IFP) | 28 USC §1915 (IFP) | JS 44 civil cover sheet; summons per defendant | Fed. R. Civ. P. 4 |
+
+**UNIVERSAL RULES:**
+- **Certificate of Service ALWAYS LAST** (MCR 2.107) — every filing, no exceptions
+- **MCR 2.003(D):** Disqualification motions go to **CHIEF JUDGE**, not the challenged judge
+- **SCAO forms MANDATORY:** FOC 65/67 for parenting time, CC 377/380 for PPO
+- **Pro se signature block:** Andrew James Pigors, 1423 W. Norton Ave, Norton Shores, MI 49441, (231) 260-1936, andrewjpigors@gmail.com
+- **Child reference:** L.D.W. (initials only per MCR 8.119(H))
+
+---
+
+## 16. CONSTITUTIONAL FRAMEWORK (ready for COA brief + §1983 complaint)
+
+### 6 Constitutional Rights Violated (from `constitutional_rights_tracker`)
+
+| Right | Amendment | Violation Count | Remedy | Filing Target |
+|-------|-----------|-----------------|--------|---------------|
+| Due Process — Right to Parent | 14th Amend | **15,677** | Restore PT; vacate ex parte orders; MSC superintending control | MSC, Emergency PT, COA, §1983 |
+| Michigan Due Process | Art 1 § 17 | **8,895** | MSC superintending control; vacate deficient orders; reassignment | MSC, JTC, all circuit motions |
+| Right to Petition / Access Courts | 1st Amend | **6,865** | Vacate $250 bond (Boddie); remove filing restrictions | MSC, §1983, reconsideration |
+| Equal Protection | 14th Amend | **3,326** | Judicial disqualification MCR 2.003(C)(1); equal enforcement | MSC, JTC, reconsideration |
+| Right to Confront Witnesses | 6th Amend (via 14th) | **2,314** | Vacate contempt findings; mandate right to be heard | COA, MSC, reconsideration |
+| Family Integrity | 14th/9th Amend | **567+ days** | Immediate restoration; therapeutic reunification; compensatory PT | MSC, COA, §1983, emergency |
+
+### 11 Documented Constitutional Violations (from `constitutional_violations`)
+Each has: amendment, clause, violation_type, controlling_caselaw (SCOTUS + Michigan), michigan_authority, filing_target, severity
+
+### 6 Pre-Drafted IRAC Sections (from `constitutional_brief_sections`)
+Ready-to-use for COA brief and §1983 complaint — each has Issue, Rule, Application (with DB-verified evidence quotes), and Conclusion:
+1. **Due Process — Procedural** (Mathews v. Eldridge; Santosky v. Kramer)
+2. **Due Process — Substantive / Right to Parent** (Troxel v. Granville; Stanley v. Illinois)
+3. **Equal Protection — Disparate Treatment** (MCR 2.003(C)(1))
+4. **First Amendment — Right to Petition** (Boddie v. Connecticut; California Motor Transport)
+5. **Right to Family Integrity** (Moore v. East Cleveland; Meyer v. Nebraska; Pierce v. Society of Sisters)
+6. **6th Amendment — Right to Confront** (applicable in civil contempt via Due Process)
+
+### Key Controlling Cases
+| Case | Holding | Use In |
+|------|---------|--------|
+| **Troxel v. Granville**, 530 U.S. 57 (2000) | Parental rights are fundamental; fit parents presumed to act in child's interest | COA, §1983, Emergency PT |
+| **Santosky v. Kramer**, 455 U.S. 745 (1982) | Clear and convincing evidence required to terminate parental rights | COA, MSC |
+| **Mathews v. Eldridge**, 424 U.S. 319 (1976) | Three-part due process balancing test | COA, §1983 |
+| **Boddie v. Connecticut**, 401 U.S. 371 (1971) | Financial barriers cannot deny court access to indigent litigants | MSC, §1983 |
+| **Vodvarka v. Grasmeyer**, 259 Mich App 499 (2003) | Proper cause/change of circumstances for custody modification | COA, 14th Circuit |
+
+> Run `SELECT * FROM constitutional_violations` and `SELECT * FROM constitutional_brief_sections` for full content.
+> Run `SELECT * FROM case_law_library` for all 25 indexed cases with holdings.
+
+---
+
+## 17. ADVERSARY MODELS (114 anticipated attacks — defense prep)
+
+The `adversary_models` table (114 rows) maps attacks Emily/McNeill may make against EACH filing vehicle:
+
+**Columns:** id, filing_vehicle, attack_type, attack_description, weakness_exploited, risk_level, rebuttal_strategy, rebuttal_evidence, rebuttal_authority, our_evidence_strength
+
+### Sample Attack/Rebuttal Pairs
+| Filing | Attack | Risk | Rebuttal Authority |
+|--------|--------|------|--------------------|
+| Emergency PT | "Father is a danger to child" | HIGH | HealthWest assessment clears Father; no founded CPS findings |
+| Disqualification | "No actual bias shown" | MEDIUM | 1,127 judicial violations in DB; 43.6% ex parte rate |
+| COA Brief | "Discretion of trial court" | MEDIUM | Constitutional violations override discretion (Troxel, Santosky) |
+| §1983 Federal | "Judicial immunity" | HIGH | Exception: acts in clear absence of jurisdiction (Mireles v. Waco) |
+| JTC Complaint | "Isolated incidents" | LOW | Pattern of 1,127 violations over 221 docket events = systemic |
+
+> Run `SELECT filing_vehicle, attack_type, risk_level, rebuttal_strategy FROM adversary_models ORDER BY filing_vehicle` for full defense playbook.
+
+---
+
+## 18. VICTORY STRATEGY (12 ranked actions to undo — from `victory_strategy`)
+
+| Priority | Action to Undo | Filing Vehicle | Evidence Strength | Confidence |
+|----------|---------------|----------------|-------------------|------------|
+| **1** | Ex parte order suspending ALL PT (Aug 8, 2025) | MSC Superintending + Emergency PT | OVERWHELMING — 5 ex parte on single day; 24/55 orders (43.6%) ex parte | HIGH (95%) |
+| **2** | $250 bond for new filings | MSC Superintending + §1983 | STRONG — Boddie directly on point; no statutory basis | VERY HIGH (98%) |
+| **3** | Denial of motion to restore PT | MSC Mandamus + COA 366810 | STRONG — MCL 722.27a requires PT; no BIF hearing conducted | HIGH (90%) |
+
+> Run `SELECT * FROM victory_strategy ORDER BY id` for all 12 actions with full risk/mitigation strategies.
+
+---
+
+## 19. DAMAGES FRAMEWORK ($277K–$1.74M quantified across 5 tables)
+
+### Summary by Harm Category (from `damages_quantification`)
+
+| Category | Low | Mid | High | Evidence |
+|----------|-----|-----|------|----------|
+| Lost Parenting Time (329+ days) | $13,522 | $24,675 | $39,480 | cycle6_statistics |
+| Emotional Distress (parent-child separation) | $16,450 | $41,125 | $65,800 | 540 alienation indicators |
+| Emotional Distress (child psychological harm) | $50,000 | — | $250,000 | MCL 722.23(a)-(l) |
+| Wrongful Incarceration (59 days) | $8,850 | — | $17,700 | Jail records; MCL 691.1755 |
+| Lost Employment (2 job losses) | $35,000 | — | $70,000 | Employment/termination records |
+| Attorney Fees / Litigation Costs | $2,000 | — | $8,000 | docket_events |
+| **Federal §1983** (all categories) | **$100,000** | — | **$500,000+** | 42 USC §1983; Troxel |
+
+### 5 Damages Tables
+| Table | Rows | Focus |
+|-------|------|-------|
+| `damages_quantification` | 18 | By harm category with low/mid/high estimates |
+| `damages_calculations` | 16 | By forum with authorities |
+| `damages_items` | 47 | Individual damage items |
+| `financial_damages_comprehensive` | 45 | Comprehensive financial analysis |
+| `damages_itemization` | 15 | Line-items with evidence refs and legal basis |
+
+> Run `SELECT * FROM damages_quantification ORDER BY high_estimate DESC` for full breakdown.
+
+---
+
+## 20. WITNESS PROFILES & SUBPOENA PRIORITIES
+
+### Key Witnesses (from `witness_profiles` + `cycle6_witnesses`)
+
+| Name | Role | Priority | Key Evidence |
+|------|------|----------|-------------|
+| **Emily A. Watson** | Defendant/Mother | CRITICAL | Emp ID 13380, Kent Co Prosecutor's Office; DOB discrepancy (10/27/89 vs 10/4/94 — investigate) |
+| **Andrew J. Pigors** | Plaintiff/Father | — | Credibility 0.85; HealthWest cleared |
+| **Jennifer Barnes (P55406)** | Emily's former atty | HIGH | WITHDREW; credibility 0.9 |
+| **Judge Jenny L. McNeill** | Trial judge | — | 1,127 violations; credibility 1.0 (as witness) |
+| **Officer Tyler Ritchie** | NSPD | HIGH | Report NSPD-2023-08121 |
+| **Lori Watson** | Emily's mother / Kent Co employee | HIGH | Emp ID 1190; payroll records |
+| **Albert Watson** | Emily's father | MEDIUM | Witness to family dynamics |
+| **Cody Watson** | Emily's brother | MEDIUM | Witness to family dynamics |
+| **Lincoln D.W.** | Child (DOB: Nov 9, 2022) | — | Use initials only (MCR 8.119(H)) |
+| **Pamela Rusco** | FOC | — | 990 Terrace St, Muskegon |
+
+> ⚠️ DB has "Tiffany Watson" in some older records (docket_events DE-001, witness_profiles). This is STALE DATA — always use "Emily A. Watson."
+
+---
+
+## 21. DB QUERY COOKBOOK (benchmarks + fast patterns)
+
+### Performance Benchmarks
+| Query | Time | Notes |
+|-------|------|-------|
+| `auth_rules` LIKE search | **0.6ms** | Fast — use for quick lookups |
+| `auth_rules_fts` MATCH | **5.0ms** | FTS5 — better for multi-term |
+| `evidence_quotes_fts` MATCH | **4.5ms** | FTS5 — good performance |
+| `evidence_quotes` COUNT(*) | **146ms** | 308K rows — acceptable |
+| `filing_readiness` full table | **0.8ms** | 24 rows — instant |
+| `claims` JOIN `evidence_links` | **1.5ms** | Fast JOINs |
+| `master_citations` COUNT(*) | **3,622ms** | ⚠️ SLOW (3.7M rows) — use mmap for 10.8x speedup |
+
+### Connection Template (ALWAYS use this)
+```python
+import sqlite3
+conn = sqlite3.connect(r"C:\Users\andre\LitigationOS\litigation_context.db", timeout=180)
+conn.execute("PRAGMA busy_timeout = 180000")
+conn.execute("PRAGMA journal_mode = WAL")
+conn.execute("PRAGMA cache_size = -32000")  # 32 MB
+conn.execute("PRAGMA temp_store = MEMORY")
+conn.execute("PRAGMA synchronous = NORMAL")
+```
+
+### ❌ NEVER DO THIS
+```python
+# NEVER run get_robust_connection() on production DB — triggers PRAGMA integrity_check on 11.46 GB, hangs indefinitely
+# NEVER run python -c "..." in PowerShell — use temp .py files
+# NEVER set CWD to repo root for Python (shadow modules: json.py, typing.py, etc.)
+# NEVER assume column names from memory — run PRAGMA table_info() first
+```
+
+### Fast Lookup Patterns
+```sql
+-- Filing readiness for a vehicle
+SELECT * FROM filing_readiness WHERE vehicle_name = 'EMERGENCY_MOTION_RESTORE_PT';
+
+-- Evidence for a specific claim
+SELECT eq.quote_text, eq.speaker, eq.date_ref
+FROM evidence_quotes eq
+WHERE eq.evidence_category = 'court_order' AND eq.quote_type = 'RULING'
+LIMIT 20;
+
+-- Adversary attacks for a filing
+SELECT attack_type, risk_level, rebuttal_strategy
+FROM adversary_models WHERE filing_vehicle LIKE '%EMERGENCY%';
+
+-- Constitutional violation + authority
+SELECT amendment, violation_type, controlling_caselaw, filing_target
+FROM constitutional_violations WHERE severity = 'CRITICAL';
+
+-- Schema lookup (prevent query crashes)
+SELECT column_name, column_type, common_mistake, correct_usage
+FROM schema_reference WHERE table_name = 'filing_readiness';
+
+-- Consolidated counts (single query, not N separate COUNT(*) calls)
+SELECT
+    (SELECT COUNT(*) FROM evidence_quotes) AS quotes,
+    (SELECT COUNT(*) FROM judicial_violations) AS violations,
+    (SELECT COUNT(*) FROM claims WHERE status = 'supported') AS supported_claims,
+    (SELECT COUNT(*) FROM deadlines WHERE status = 'upcoming') AS upcoming_deadlines;
+```
+
+---
+
+## 22. DOCKET EVENT TYPES (221 events in `docket_events`)
+
+| Event Type | Count | Examples |
+|------------|-------|---------|
+| hearing | 62 | Evidentiary hearings, status conferences |
+| order | 30 | Court orders |
+| parenting_time | 21 | PT modifications, suspensions |
+| evidentiary_hearing | 16 | Contested hearings |
+| ex_parte_order | 24 | Ex parte orders (43.6% of all orders) |
+| motion | 14 | Filed motions |
+| contempt | 8 | Show cause, contempt findings |
+| appeal | 5 | COA filings |
+| ppo | 5 | PPO actions |
+
+> Run `SELECT event_type, COUNT(*) FROM docket_events GROUP BY event_type ORDER BY COUNT(*) DESC` for live distribution.
+
+---
+
+*LitigationOS GOLDEN MASTER v3.0 | 24 sessions · 143 checkpoints · 772 tables · 2,542-line schema study · 508-row schema_reference | Distilled 2026-02-19 through 2026-03-13*
