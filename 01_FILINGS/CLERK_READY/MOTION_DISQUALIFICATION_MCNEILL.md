@@ -120,7 +120,7 @@
 
 ## V. ABUSE OF CONTEMPT POWER — PATTERN OF PUNISHMENT WITHOUT DUE PROCESS
 
-**Show Cause #4 — November 15, 2024:**
+**Show Cause #5 — November 15, 2024 (First Jailing):**
 
 24. Judge McNeill sentenced Plaintiff to **two (2) weeks in jail** for contempt based on allegations of yelling at Defendant at a parenting exchange. The hearing was conducted **remotely**. Defendant presented **no physical evidence** — only unsworn oral testimony.
 
@@ -130,9 +130,9 @@
 
 27. The two-week jail sentence directly caused Plaintiff to **lose his house and his employment**.
 
-**Show Cause #5 — November 26, 2025 (Day Before Thanksgiving):**
+**Show Causes #6 and #7 — November 26, 2025 (Second Jailing, Day Before Thanksgiving):**
 
-28. Judge McNeill sentenced Plaintiff to **forty-five (45) days in jail** for contempt. The alleged violation: Plaintiff sent messages through the court-sanctioned **AppClose co-parenting application** requesting to see L.D.W. for the child's **third birthday**, after parenting time had been suspended on **August 8, 2025**.
+28. Judge McNeill sentenced Plaintiff to **forty-five (45) days in jail** for contempt on Show Causes #6 and #7, which were litigated together. The alleged violation: Plaintiff sent messages through the court-sanctioned **AppClose co-parenting application** requesting to see L.D.W. for the child's **third birthday**, after parenting time had been suspended on **August 8, 2025**.
 
 29. Defendant weaponized a father's birthday messages to his own child — sent through a platform designed for parental communication — as the basis for a 45-day jail sentence. Judge McNeill imposed this sentence **the day before Thanksgiving**, maximizing the punitive impact on Plaintiff and further separating Plaintiff from his child during the holiday season.
 
@@ -200,7 +200,7 @@ D. **Reassign** this matter to a visiting judge assigned by the SCAO;
 
 E. **Order immediate restoration of reasonable parenting time** between Plaintiff and L.D.W. pending de novo review by the visiting judge, consistent with the statutory presumption under MCL 722.27a and the child's fundamental right to a relationship with both parents — the child having been separated from Plaintiff for over 228 days;
 
-F. **Enter an order vacating** any orders entered after the date on which the grounds for disqualification became apparent — or, in the alternative, order the visiting judge to conduct a de novo review of all contested orders entered during the period of demonstrated bias, including but not limited to the contempt findings of November 15, 2024 and November 26, 2025;
+F. **Enter an order vacating** any orders entered after the date on which the grounds for disqualification became apparent — or, in the alternative, order the visiting judge to conduct a de novo review of all contested orders entered during the period of demonstrated bias, including but not limited to the contempt findings of November 15, 2024 (Show Cause #5) and November 26, 2025 (Show Causes #6 and #7);
 
 G. **Stay all proceedings** before Judge McNeill pending the visiting judge's assignment and review;
 
@@ -290,7 +290,7 @@ Date: March \_\_\_, 2026
 
 5. **Parenting time** between Plaintiff and the minor child, L.D.W., is **IMMEDIATELY RESTORED** on a reasonable schedule pending the visiting judge's review, consistent with the statutory presumption of MCL 722.27a. The child has been separated from Plaintiff for over 228 days.
 
-6. The visiting judge shall conduct a **de novo review** of all contested orders entered during the period of disqualification, including but not limited to the contempt findings of November 15, 2024 and November 26, 2025.
+6. The visiting judge shall conduct a **de novo review** of all contested orders entered during the period of disqualification, including but not limited to the contempt findings of November 15, 2024 (Show Cause #5) and November 26, 2025 (Show Causes #6 and #7).
 
 7. All pending motions and hearing dates before the Hon. Jenny L. McNeill are **VACATED** and shall be rescheduled before the visiting judge.
 
