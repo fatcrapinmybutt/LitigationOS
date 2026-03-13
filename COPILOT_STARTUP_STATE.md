@@ -1,5 +1,5 @@
-# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v6.0
-## Generated: 2026-03-13 | 26 sessions, 772-table DB (11.46 GB), 6,477 consolidated evidence items, ScriptVault (7 scripts), 1,200+ skills mapped → 45 optimal, 30 custom agents
+# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v7.0
+## Generated: 2026-03-13 | 26 sessions, 780-table DB (11.8 GB), 6,477 consolidated evidence items, ScriptVault (8 scripts), 3 clerk-ready filings, 6 MSC proposed orders, War Room dashboard
 
 > **This file is the SINGLE SOURCE OF TRUTH for new Copilot sessions.**
 > Read it top to bottom. It replaces all older startup/enhanced instruction files.
@@ -1185,4 +1185,80 @@ Determine which of the 6 case lanes the request maps to:
 
 ---
 
-*LitigationOS GOLDEN MASTER v6.0 | 26 sessions · 772 tables · 11.46 GB · 6,477 evidence items · 47 claims · $583K–$3.37M damages · 30 agents · 45 optimal skills mapped · ScriptVault (7 scripts, 2,783 LOC) | Distilled 2026-02-19 through 2026-03-13*
+*LitigationOS GOLDEN MASTER v7.0 | 26 sessions · 780 tables · 11.8 GB · 6,477 evidence items · 47 claims · $583K–$3.37M damages · 30 agents · 45 optimal skills · ScriptVault (8 scripts) · 3 clerk-ready motions · 6 MSC proposed orders · War Room dashboard | Distilled 2026-02-19 through 2026-03-13*
+
+---
+
+## 31. CLERK-READY FILINGS (court-ready, DB-verified, committed to git)
+
+> **These filings are DONE. Do not recreate them.** If modifications are needed, edit the existing files.
+
+### 📁 01_FILINGS/CLERK_READY/
+
+| File | Size | Case No. | Deadline | Status |
+|------|------|----------|----------|--------|
+| **MOTION_DISQUALIFICATION_MCNEILL.md** | 13.5 KB | 2024-001507-DC | **March 15, 2026 — URGENT** | ✅ Court-ready |
+| **MOTION_DISSOLVE_PPO.md** | 26.6 KB | 2023-5907-PP | Open | ✅ Court-ready |
+| **MSC_PROPOSED_ORDERS_FLEET.md** | 33 KB | MSC (multiple) | Per filing | ✅ 6 orders ready |
+
+### Disqualification Motion (MCR 2.003(C)(1))
+- 5 grounds: ex parte orders (11/41 = 26.8%), HealthWest interference, $250 bond, 1,127 violations, 4 authority chains
+- Directed to Chief Judge per MCR 2.003(D)
+- Includes proposed order + COS
+
+### PPO Dissolution Motion (MCL 600.2950(4))
+- 6 grounds: compliance (227+ days), evidentiary deficiency, weaponization (score 10/10), false allegations (677), disproportionate burden, Watson conspiracy
+- 4,449 evidence items cited
+- Includes proposed order + COS
+
+### MSC Proposed Orders (6 fleet vehicles)
+| # | Vehicle | Score | Key Relief |
+|---|---------|-------|------------|
+| 1 | Superintending Control | 100 | Vacate 24 ex parte orders, restore PT, remove bond, reassign |
+| 2 | Mandamus | 100 | BIF hearing within 21 days, interim PT |
+| 3 | Emergency Application | 100 | Immediate PT restoration, stay orders |
+| 4 | Prohibition | 97 | Bar ex parte proceedings |
+| 5 | Declaratory | 97 | 5 constitutional declarations |
+| 6 | Habeas Corpus | 89 | Release L.D.W. within 72 hours |
+
+---
+
+## 32. WAR ROOM DASHBOARD (run for instant status)
+
+```powershell
+# Full dashboard (10 sections: separation, deadlines, filings, evidence, torts, damages, violations, strategy, clerk-ready, DB health)
+cd C:\Users\andre\LitigationOS\08_SCRIPTS\vault\dashboard && python war_room.py
+
+# Quick summary (one screen)
+python war_room.py --brief
+
+# JSON for automation
+python war_room.py --json
+
+# Single section
+python war_room.py --section deadlines
+python war_room.py --section damages
+python war_room.py --section strategy
+```
+
+**Available sections:** separation, deadlines, filings, evidence, torts, damages, violations, strategy, clerk, db
+
+> ⚠️ ALWAYS run from script directory (not repo root) to avoid shadow module conflicts.
+
+---
+
+## 33. COA BRIEF 366810 — GAP ANALYSIS (readiness: 71.8/100)
+
+**Brief is COMPLETE at 14,070 words (MCR 7.212 compliant) — 6 issues fully briefed.**
+
+### BLOCKING ITEMS (must resolve before filing April 15, 2026):
+1. **Obtain 7 hearing transcripts** (7/16/24, 8/23/24, 8/22-29/25, 9/4/25, 9/22/25, 10/29/25, 11/26/25)
+2. **Complete MC 20 fee waiver** (template at `02_Court_Forms/Clerk_Filing_Coversheet_MC20.docx`)
+3. **Resolve 5 placeholders**: Claim of Appeal date, disqualification dates, transcript page counts, Barnes email, six dismissed motions list
+4. **Obtain MSC case number** (petition filed 10/29/25)
+
+### FILES:
+- Brief: `01_FILINGS/COA_366810/SUBMIT_THIS/COA_BRIEF_366810_FINAL.md` (119 KB)
+- Appendix: `COA_APPENDIX_INDEX_366810.md` (13 KB, 26 tabs A-Z)
+- Table of Authorities: `03_TABLE_OF_AUTHORITIES.md` (4.1 KB)
+- Proof/Certificate of Service, Cover Page, README — all ready
