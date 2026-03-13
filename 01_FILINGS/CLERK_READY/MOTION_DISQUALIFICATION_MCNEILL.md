@@ -118,7 +118,23 @@
 
 ---
 
-## V. RELIEF REQUESTED
+## V. NOTICE OF SUBMISSION
+
+24. Pursuant to **MCR 2.119(A)(2)** and **MCR 2.003(D)(3)(a)**, this Motion is submitted to the Chief Judge **for determination on the papers**, without oral hearing, as is the default procedure for judicial disqualification motions under MCR 2.003(D). Plaintiff respectfully requests that the Chief Judge issue a ruling within **14 days** as contemplated by the court rules.
+
+---
+
+## VI. ONGOING IRREPARABLE HARM TO THE MINOR CHILD
+
+25. Plaintiff's minor child, L.D.W., has been **completely separated from Plaintiff for over 227 days** as of the date of this filing — since July 29, 2025 — as a direct result of orders entered by Judge McNeill, including ex parte orders entered without notice or hearing.
+
+26. This separation constitutes an **ongoing and compounding deprivation** of the child's fundamental right to a relationship with both parents. MCL 722.27a establishes a presumption that parenting time is in the child's best interest. Every additional day of separation deepens the developmental and psychological harm to L.D.W. and makes reunification more difficult. *See* **Troxel v. Granville**, 530 US 57, 65 (2000) (recognizing the fundamental liberty interest of parents in the care and custody of their children).
+
+27. The urgency of this Motion is not diminished by the length of the separation — it is **amplified by it**. The delay is attributable to Judge McNeill's procedural irregularities, not to any inaction by Plaintiff, who has diligently pursued every available remedy.
+
+---
+
+## VII. RELIEF REQUESTED
 
 **WHEREFORE**, Plaintiff respectfully requests that the Chief Judge:
 
@@ -126,9 +142,13 @@ A. **Disqualify** Hon. Jenny L. McNeill from further proceedings in Case No. 202
 
 B. **Reassign** this matter to a different judge of the 14th Circuit Court, Family Division, or to a visiting judge if necessary to avoid the appearance of impropriety;
 
-C. **Enter an order vacating** any orders entered after the date on which the grounds for disqualification became apparent — or, in the alternative, order the successor judge to conduct a de novo review of all contested orders entered during the period of demonstrated bias;
+C. **Order immediate restoration of reasonable parenting time** between Plaintiff and L.D.W. pending reassignment and de novo review, consistent with the statutory presumption under MCL 722.27a and the child's fundamental right to a relationship with both parents;
 
-D. Grant such other and further relief as this Court deems just and equitable.
+D. **Enter an order vacating** any orders entered after the date on which the grounds for disqualification became apparent — or, in the alternative, order the successor judge to conduct a de novo review of all contested orders entered during the period of demonstrated bias;
+
+E. **Stay all proceedings** before Judge McNeill pending the Chief Judge's determination on this Motion;
+
+F. Grant such other and further relief as this Court deems just and equitable.
 
 ---
 
@@ -202,9 +222,13 @@ Date: March \_\_\_, 2026
 
 2. This case is **REASSIGNED** to the Hon. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ for all further proceedings.
 
-3. The successor judge shall conduct a review of contested orders entered during the period of disqualification and may, in the exercise of judicial discretion, set any such orders for de novo hearing upon motion of either party.
+3. **Parenting time** between Plaintiff and the minor child, L.D.W., is **IMMEDIATELY RESTORED** on a reasonable schedule pending the successor judge's review, consistent with the statutory presumption of MCL 722.27a.
 
-4. All pending motions and hearing dates before the Hon. Jenny L. McNeill are **VACATED** and shall be rescheduled before the successor judge.
+4. The successor judge shall conduct a review of contested orders entered during the period of disqualification and may, in the exercise of judicial discretion, set any such orders for de novo hearing upon motion of either party.
+
+5. All pending motions and hearing dates before the Hon. Jenny L. McNeill are **VACATED** and shall be rescheduled before the successor judge.
+
+6. All proceedings in this case are **STAYED** until the successor judge is assigned and able to review the file.
 
 ---
 
