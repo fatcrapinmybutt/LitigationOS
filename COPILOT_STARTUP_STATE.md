@@ -1,5 +1,5 @@
-# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v4.0
-## Generated: 2026-03-13 | Distilled from 24 sessions, 143 checkpoints, 1,058 todos, 772-table DB deep mine, 2,542-line schema analysis, 767-file I: drive harvest deep analysis (17K lines)
+# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v5.0
+## Generated: 2026-03-13 | Distilled from 25 sessions, 147 checkpoints, 1,058 todos, 772-table DB, 767-file harvest, 30K evidence rows mined → 6,477 consolidated, ScriptVault (7 scripts, 2,783 LOC)
 
 > **This file is the SINGLE SOURCE OF TRUTH for new Copilot sessions.**
 > Read it top to bottom. It replaces all older startup/enhanced instruction files.
@@ -725,4 +725,86 @@ Ingestion into the DB would dramatically expand the evidence base.
 
 ---
 
-*LitigationOS GOLDEN MASTER v4.0 | 24 sessions · 143 checkpoints · 772 tables · 2,542-line schema study · 508-row schema_reference · 767-file harvest deep analysis | Distilled 2026-02-19 through 2026-03-13*
+## 25. EVIDENCE MINING RESULTS (mined → deduped → consolidated)
+
+### Pipeline: 1,531 harvest texts → 47 claim patterns → 30,418 raw hits → **6,477 unique evidence items**
+
+| Adversary | Unique Items | STRONG+ | Claims Covered |
+|-----------|-------------|---------|----------------|
+| **McNeill** | 5,127 | 1,362 | 18 (ex parte, bias, due process, IIED, retaliation, contempt, etc.) |
+| **Emily Watson** | 1,886 | 699 | 8 (perjury, alienation, contempt, bad faith, financial fraud) |
+| **Muskegon County** | 1,182 | 430 | 4 (Monell OVERWHELMING, systemic failure, deliberate indifference) |
+| **Watson Family (collective)** | 305 | 180 | Conspiracy, coordinated alienation |
+| **Lori Watson** | 157 | 83 | Kent County conflict (Emp ID 1190), improper influence |
+| **Albert Watson** | 116 | 85 | Alienation participant, visitation interference |
+| **Cody Watson** | 65 | 40 | Alienation participant |
+| **Ronald Berry** | 13 | 6 | Interference, possible UPL |
+
+### Key Tables
+| Table | Rows | Purpose |
+|-------|------|---------|
+| `evidence_consolidated` | 6,477 | **THE deduplicated source of truth** — each item tagged with ALL claims |
+| `actionable_evidence` | 30,418 | Raw mining output (use `evidence_consolidated` instead) |
+| `ppo_rescission_evidence` | 4,449 | PPO-specific lies/perjury evidence |
+| `watson_family_conspiracy` | 529 | Per-member conspiracy evidence |
+| `damages_expanded` | 14 | $583K–$3.37M across 14 damage categories |
+| `tort_evidence_matrix` | 44 | Sufficiency rating per claim (19 STRONG, 25 MODERATE) |
+
+### Power Evidence (multi-claim items — 41% of consolidated)
+```sql
+-- Find evidence supporting 3+ claims (most impactful for filings)
+SELECT source_file, evidence_text, all_claims, strength, num_claims
+FROM evidence_consolidated WHERE num_claims >= 3
+ORDER BY strength_rank DESC, num_claims DESC LIMIT 20;
+```
+
+### Damages Framework
+| Category | Low | High |
+|----------|-----|------|
+| Emotional distress (IIED) | $75,000 | $500,000 |
+| Loss of parental companionship | $100,000 | $750,000 |
+| Monell liability (§1983) | $150,000 | $1,000,000 |
+| Legal fees (pro se equivalent) | $50,000 | $200,000 |
+| **TOTAL** | **$583,000** | **$3,365,000** |
+
+---
+
+## 26. SCRIPTVAULT — Persistent Script Management (MANDATORY for all agents)
+
+### ⚠️ RULE: NEVER create scripts from scratch without checking the vault first
+
+```python
+import sys; sys.path.insert(0, r"C:\Users\andre\LitigationOS")
+from core.script_vault import ScriptVault
+vault = ScriptVault()
+
+# ALWAYS search before creating
+existing = vault.find("evidence mining")  # FTS5 search
+if existing:
+    script = vault.load(existing[0]['script_id'])  # load the code
+    # Modify and upgrade:
+    vault.upgrade(existing[0]['script_id'], new_code, "Added new claim patterns")
+else:
+    vault.register("new_script.py", code, "mining", "New mining script", ["evidence"])
+```
+
+### Registered Scripts (commit fd0c3e2)
+| Script | Category | LOC | Purpose |
+|--------|----------|-----|---------|
+| `mine_actionable_evidence.py` | mining | 576 | 22 tort patterns, 5 adversaries |
+| `mine_expanded_evidence.py` | mining | 603 | 25 expanded patterns, Watson family + Monell |
+| `ingest_harvest_evidence.py` | ingestion | 297 | I: drive harvest → DB |
+| `catalog_harvest.py` | ingestion | 270 | Harvest file catalog + metadata |
+| `harvest_to_startup.py` | analysis | 680 | Deep cross-cutting analysis (17K-line report) |
+| `dedup_evidence.py` | dedup | 231 | 30K→6.5K consolidation |
+| `query_adversaries.py` | query | 126 | Adversary/Watson family DB queries |
+
+### System Location
+- **Engine**: `core/script_vault.py` (ScriptVault class)
+- **Database**: `script_vault.db` (scripts, versions, runs, FTS5 search)
+- **Script Storage**: `08_SCRIPTS/vault/{category}/`
+- **Archives**: `08_SCRIPTS/vault/_archive/` (old versions preserved)
+
+---
+
+*LitigationOS GOLDEN MASTER v5.0 | 25 sessions · 147 checkpoints · 772 tables · 30K evidence mined → 6,477 consolidated · ScriptVault (7 scripts, 2,783 LOC) | Distilled 2026-02-19 through 2026-03-13*
