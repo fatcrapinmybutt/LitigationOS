@@ -385,6 +385,18 @@ python 00_SYSTEM\tools\safe_shell.py run script.py    # Safe run
 | `evidence_quotes` | `quote_text` | `text`, `content` | TEXT |
 | `evidence_quotes` | `source_type` | `type` | Values: PDF_COURT_DOC (308K), CHATGPT_REFERENCE (32) |
 | `extracted_harms` | `category` | `harm_type` | TEXT |
+| `evidence_consolidated` | `best_strength` | `strength` | TEXT — values: STRONG_COURT_ORDER, STRONG_SWORN, etc. |
+| `evidence_consolidated` | `claim_names`, `claim_ids` | `claim_name`, `claims` | TEXT (comma-separated) |
+| `evidence_consolidated` | `adversaries` | `adversary` | TEXT (comma-separated) |
+| `tort_evidence_matrix` | `tort_type`, `claim_id`, `adversary` | `claim_name` | Three separate columns |
+| `tort_evidence_matrix` | `evidence_sufficient` | `sufficiency_rating` | TEXT |
+| `tort_evidence_matrix` | `total_hits` | `evidence_count` | INTEGER |
+| `risk_events` | `risk_type_id`, `risk_class`, `severity` | `risk_type` | Three separate columns |
+| `risk_events` | `authority_refs_json` | `authority_ref` | JSON text |
+| `cycle6_filing_readiness` | `document`, `lane`, `readiness_pct` | `filing_lane`, `readiness_percentage` | Use `readiness_pct` not `readiness_percentage` |
+
+### Evidence Consolidated Columns (COMPLETE — 18 columns)
+`id, source_file, line_number, evidence_text, best_strength, strength_rank, admissibility, claim_ids, claim_names, tort_types, adversaries, filing_vehicles, num_claims, num_patterns, case_lane, topic, harvest_id, created_at`
 
 ### Filing Readiness Columns (COMPLETE — 15 columns)
 `id, vehicle_name, best_source, best_source_path, authority_score, evidence_score, compliance_score, impeachment_score, total_score, gaps, strengths, attack_vectors, rebuttals_ready, status, created_at`
