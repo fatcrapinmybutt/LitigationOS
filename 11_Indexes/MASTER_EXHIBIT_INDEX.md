@@ -31,28 +31,28 @@ Each filing's local exhibit letter is mapped below.
 
 | UID | Description | F1 | F2 | F3 | F5 | F6 | Status | File Location |
 |-----|-------------|----|----|----|----|----|----|---------------|
-| U-001 | **Interference Incident Log (305+ incidents)** | A | — | D | — | — | ❌ MISSING | Generate from `litigation_context.db → evidence_quotes WHERE category='interference'` |
+| U-001 | **Interference Incident Log (305+ incidents)** | A | — | D | — | — | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\Exhibit_U-001_Interference_Incident_Log.md` |
 | U-002 | **NSPD Report NS2505044 (Albert Watson Statement)** | B | F | A | — | — | ✅ EXISTS | `03_EVIDENCE\Police_Reports\NSPD\` (26 PDFs) + `10_Exhibits\AudioVideo\nspd police reports.zip` |
 | U-003 | **PPO 2023-05907-PP Docket ("NOT SERVED" Status)** | C | H | H | — | — | ⚠️ PARTIAL | `10_Exhibits\Images\docket screenshot.jpg` (one image only) |
 | U-004 | **Negative Poisoning Test Result** | D | — | B | — | — | ❌ MISSING | Andrew must provide original lab report |
-| U-005 | **Show Cause History Summary (7 Proceedings)** | E | G | F | — | — | ❌ MISSING | Generate from `litigation_context.db → docket_events WHERE event_type LIKE '%show_cause%'` |
+| U-005 | **Show Cause History Summary (7 Proceedings)** | E | G | F | — | — | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\Exhibit_U-005_Show_Cause_History.md` |
 | U-006 | **Employment Loss Documentation (2 Jobs, 2 Homes)** | F | I | G | — | — | ❌ MISSING | Andrew must provide pay stubs, termination letters, eviction notices |
-| U-007 | **Parenting Time Denial Calendar (229+ Days)** | G | J | C | — | — | ❌ MISSING | Generate from `litigation_context.db → docket_events WHERE event_type='parenting_time'` |
+| U-007 | **Parenting Time Denial Calendar (229+ Days)** | G | J | C | — | — | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\Exhibit_U-007_Parenting_Time_Denial_Calendar.md` |
 | U-008 | **USB Recording Chain of Custody** | H | — | I | AG | — | ❌ MISSING | Andrew must provide chain-of-custody documentation |
 | U-009 | **HealthWest Evaluation #1 (ALL ZEROS — Clearing Father)** | I | — | J | I | — | ✅ EXISTS | `I:\!!!TEXT!!!\Exhibit_M_HealthWest_v10.pdf` (3 MB) — ALSO: `03_EVIDENCE\EXHIBITS\` older version `healthwest08052025.pdf` per CSV |
 | U-010 | **HealthWest Evaluation — Parental Alienation Documented** | J | — | K | J | — | ⚠️ PARTIAL | Part of same HealthWest report; specific pages TBD |
 | U-011 | **Second Evaluation Routed to Secretary (Not Clerk)** | K | — | — | K | — | ❌ MISSING | Andrew must provide proof of routing (email, delivery receipt) |
 | U-012 | **Transcript — "Ghost Evaluation" / "I Had My Staff Listen"** | L | — | L | L | C | ❌ MISSING | Must obtain certified transcript from court reporter |
-| U-013 | **Ex Parte Order Log (24/55 = 44%)** | M | — | — | P | — | ❌ MISSING | Generate from `litigation_context.db → docket_events WHERE event_type='ex_parte_order'` |
+| U-013 | **Ex Parte Order Log (24/55 = 44%)** | M | — | — | P | — | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\Exhibit_U-013_Ex_Parte_Order_Log.md` |
 | U-014 | **Affidavit of Bias (MCR 2.003(D)(1))** | — | A | — | — | — | ✅ EXISTS | `01_FILINGS\CLERK_READY\AFFIDAVIT_OF_DISQUALIFICATION.md` |
-| U-015 | **Statistical Analysis of Judicial Conduct** | — | B | — | — | — | ❌ MISSING | Generate from `litigation_context.db → judicial_violations` aggregate query |
+| U-015 | **Statistical Analysis of Judicial Conduct** | — | B | — | — | — | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\Exhibit_U-015_Judicial_Conduct_Analysis.md` |
 | U-016 | **Hearing Transcript — Muting Incidents (3 Occasions)** | — | C | — | — | — | ❌ MISSING | Must obtain certified transcript |
 | U-017 | **Order Imposing $250 Filing Bond** | — | D | — | S | — | ❌ MISSING | Must obtain certified copy from court clerk |
 | U-018 | **Hearing Transcript — AI Research Disparagement** | — | E | — | — | — | ❌ MISSING | Must obtain certified transcript |
 | U-019 | **August 8, 2025 Five Ex Parte Orders** | — | — | — | Q | — | ❌ MISSING | Must obtain certified copies from court clerk |
 | U-020 | **Transcript Excerpt — USB Review Admission** | — | — | — | R | — | ❌ MISSING | Must obtain certified transcript |
-| U-021 | **MCL 750.539 Felony Wiretapping Analysis** | — | — | — | AH | — | ❌ MISSING | Generate legal analysis document |
-| U-022 | **MRE 901 Authentication Failure Analysis** | — | — | — | AI | — | ❌ MISSING | Generate legal analysis document |
+| U-021 | **MCL 750.539 Felony Wiretapping Analysis** | — | — | — | AH | — | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\EXHIBIT_U021_MCL750539_ANALYSIS.md` |
+| U-022 | **MRE 901 Authentication Failure Analysis** | — | — | — | AI | — | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\EXHIBIT_U022_MRE901_ANALYSIS.md` |
 | U-023 | **Court Orders Referencing Undisclosed 2nd HealthWest Eval** | — | — | — | AK | — | ❌ MISSING | Must obtain certified copies from court clerk |
 | U-024 | **Final Judgment of Custody/PT (July 17, 2024)** | — | — | E | — | — | ❌ MISSING | Must obtain certified copy from court clerk |
 | U-025 | **Hearing Transcript, October 30, 2024** | — | — | — | — | C | ✅ EXISTS | `Exhibit_Index.csv → Ex. B: Pigors Transcript. Partial Excerpts Only 10.30.24.pdf` (334 KB) |
@@ -121,17 +121,17 @@ All NSPD police report pages, extracted and ready for filing.
 
 ## SECTION 3: GAP ANALYSIS — WHAT'S MISSING
 
-### Tier 1: CAN GENERATE FROM DATABASE (no human input needed)
+### Tier 1: ~~CAN GENERATE FROM DATABASE~~ ✅ ALL GENERATED
 
-| UID | Document | Generation Method |
-|-----|----------|-------------------|
-| U-001 | Interference Incident Log | `SELECT * FROM evidence_quotes WHERE category LIKE '%interference%' ORDER BY date` |
-| U-005 | Show Cause History Summary | `SELECT * FROM docket_events WHERE event_type LIKE '%show_cause%' OR event_type LIKE '%contempt%'` |
-| U-007 | Parenting Time Denial Calendar | `SELECT * FROM docket_events WHERE event_type='parenting_time'` + compute day counts |
-| U-013 | Ex Parte Order Log | `SELECT * FROM docket_events WHERE event_type='ex_parte_order'` + statistics |
-| U-015 | Statistical Analysis of Judicial Conduct | `SELECT severity, COUNT(*) FROM judicial_violations GROUP BY severity` |
-| U-021 | MCL 750.539 Analysis | Legal analysis document — can draft from statute text |
-| U-022 | MRE 901 Authentication Analysis | Legal analysis document — can draft from rule text |
+| UID | Document | Status | File |
+|-----|----------|--------|------|
+| U-001 | Interference Incident Log | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\Exhibit_U-001_Interference_Incident_Log.md` |
+| U-005 | Show Cause History Summary | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\Exhibit_U-005_Show_Cause_History.md` |
+| U-007 | Parenting Time Denial Calendar | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\Exhibit_U-007_Parenting_Time_Denial_Calendar.md` |
+| U-013 | Ex Parte Order Log | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\Exhibit_U-013_Ex_Parte_Order_Log.md` |
+| U-015 | Statistical Analysis of Judicial Conduct | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\Exhibit_U-015_Judicial_Conduct_Analysis.md` |
+| U-021 | MCL 750.539 Analysis | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\EXHIBIT_U021_MCL750539_ANALYSIS.md` |
+| U-022 | MRE 901 Authentication Analysis | ✅ GENERATED | `03_EVIDENCE\GENERATED_EXHIBITS\EXHIBIT_U022_MRE901_ANALYSIS.md` |
 
 ### Tier 2: MUST OBTAIN FROM COURT CLERK ($1.25/page certified)
 
@@ -165,16 +165,16 @@ All NSPD police report pages, extracted and ready for filing.
 | F2 Letter | F5 Letter | UID | Document | Status |
 |-----------|-----------|-----|----------|--------|
 | A | — | U-014 | Affidavit of Bias | ✅ CREATED |
-| B | — | U-015 | Statistical Analysis | ❌ Generate |
+| B | — | U-015 | Statistical Analysis | ✅ GENERATED |
 | C | — | U-016 | Transcript — Muting | ❌ Court clerk |
 | D | S | U-017 | Filing Bond Order | ❌ Court clerk |
 | E | — | U-018 | Transcript — AI | ❌ Court clerk |
 | F | — | U-002 | NSPD Report | ✅ EXISTS |
-| G | — | U-005 | Show Cause Summary | ❌ Generate |
+| G | — | U-005 | Show Cause Summary | ✅ GENERATED |
 | H | — | U-003 | PPO Docket | ⚠️ PARTIAL |
 | I | — | U-006 | Employment Loss | ❌ Andrew |
-| J | — | U-007 | PT Denial Calendar | ❌ Generate |
-| — | P | U-013 | Ex Parte Order Log | ❌ Generate |
+| J | — | U-007 | PT Denial Calendar | ✅ GENERATED |
+| — | P | U-013 | Ex Parte Order Log | ✅ GENERATED |
 | — | Q | U-019 | Aug 8 Ex Parte Orders | ❌ Court clerk |
 | — | R | U-020 | Transcript — USB | ❌ Court clerk |
 | — | I | U-009 | HealthWest Eval #1 | ✅ EXISTS |
@@ -182,31 +182,31 @@ All NSPD police report pages, extracted and ready for filing.
 | — | K | U-011 | Secretary Routing | ❌ Andrew |
 | — | L | U-012 | Transcript — Ghost | ❌ Court clerk |
 | — | AG | U-008 | USB Chain of Custody | ❌ Andrew |
-| — | AH | U-021 | MCL 750.539 Analysis | ❌ Generate |
-| — | AI | U-022 | MRE 901 Analysis | ❌ Generate |
+| — | AH | U-021 | MCL 750.539 Analysis | ✅ GENERATED |
+| — | AI | U-022 | MRE 901 Analysis | ✅ GENERATED |
 | — | AK | U-023 | Orders re: 2nd Eval | ❌ Court clerk |
 
-**Score: 4/21 ready (19%), 5 generatable, 7 need court clerk, 3 need Andrew**
+**Score: 9/21 ready (43%), 0 generatable remaining, 7 need court clerk, 3 need Andrew**
 
 ### ✅ Emergency PT Motion (F1)
 
 | F1 Letter | UID | Status |
 |-----------|-----|--------|
-| A | U-001 | ❌ Generate |
+| A | U-001 | ✅ GENERATED |
 | B | U-002 | ✅ EXISTS |
 | C | U-003 | ⚠️ PARTIAL |
 | D | U-004 | ❌ Andrew |
-| E | U-005 | ❌ Generate |
+| E | U-005 | ✅ GENERATED |
 | F | U-006 | ❌ Andrew |
-| G | U-007 | ❌ Generate |
+| G | U-007 | ✅ GENERATED |
 | H | U-008 | ❌ Andrew |
 | I | U-009 | ✅ EXISTS |
 | J | U-010 | ⚠️ PARTIAL |
 | K | U-011 | ❌ Andrew |
 | L | U-012 | ❌ Court clerk |
-| M | U-013 | ❌ Generate |
+| M | U-013 | ✅ GENERATED |
 
-**Score: 2/13 ready (15%), 4 generatable, 1 court clerk, 4 need Andrew**
+**Score: 6/13 ready (46%), 0 generatable remaining, 1 court clerk, 4 need Andrew**
 
 ### ✅ Contempt Motion (F3)
 
@@ -214,10 +214,10 @@ All NSPD police report pages, extracted and ready for filing.
 |-----------|-----|--------|
 | A | U-002 | ✅ EXISTS |
 | B | U-004 | ❌ Andrew |
-| C | U-007 | ❌ Generate |
-| D | U-001 | ❌ Generate |
+| C | U-007 | ✅ GENERATED |
+| D | U-001 | ✅ GENERATED |
 | E | U-024 | ❌ Court clerk |
-| F | U-005 | ❌ Generate |
+| F | U-005 | ✅ GENERATED |
 | G | U-006 | ❌ Andrew |
 | H | U-003 | ⚠️ PARTIAL |
 | I | U-008 | ❌ Andrew |
@@ -225,20 +225,21 @@ All NSPD police report pages, extracted and ready for filing.
 | K | U-010 | ⚠️ PARTIAL |
 | L | U-012 | ❌ Court clerk |
 
-**Score: 2/12 ready (17%), 3 generatable, 2 court clerk, 3 need Andrew**
+**Score: 5/12 ready (42%), 0 generatable remaining, 2 court clerk, 3 need Andrew**
 
 ---
 
 ## SECTION 5: IMMEDIATE ACTION ITEMS
 
-### 🔴 AUTOMATED (Copilot can generate now)
-1. Interference Incident Log (U-001)
-2. Show Cause History Summary (U-005)
-3. Parenting Time Denial Calendar (U-007)
-4. Ex Parte Order Log with statistics (U-013)
-5. Statistical Analysis of Judicial Conduct (U-015)
-6. MCL 750.539 Analysis (U-021)
-7. MRE 901 Authentication Analysis (U-022)
+### ✅ AUTOMATED — ALL 7 DB-GENERATABLE EXHIBITS COMPLETED
+All Tier 1 exhibits have been generated from litigation_context.db:
+- U-001 Interference Incident Log ✅
+- U-005 Show Cause History ✅
+- U-007 PT Denial Calendar ✅
+- U-013 Ex Parte Order Log ✅
+- U-015 Judicial Conduct Stats ✅
+- U-021 MCL 750.539 Analysis ✅
+- U-022 MRE 901 Analysis ✅
 
 ### 🟡 ANDREW ACTION REQUIRED
 8. Provide poisoning test result (U-004)
