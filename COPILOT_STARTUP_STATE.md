@@ -1,5 +1,5 @@
-# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v7.0
-## Generated: 2026-03-13 | 26 sessions, 780-table DB (11.8 GB), 6,477 consolidated evidence items, ScriptVault (8 scripts), 3 clerk-ready filings, 6 MSC proposed orders, War Room dashboard
+# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v9.0
+## Generated: 2026-03-14 | 28+ sessions, 782-table DB (11.5 GB), 308,704 evidence quotes, 1,127 judicial violations, 6 CLERK-READY filings (converged), 6 MSC proposed orders, COA Brief 366810 (conditional GO)
 
 > **This file is the SINGLE SOURCE OF TRUTH for new Copilot sessions.**
 > Read it top to bottom. It replaces all older startup/enhanced instruction files.
@@ -11,7 +11,7 @@
 
 | Role | Name | Details |
 |------|------|---------|
-| **Plaintiff** | Andrew James Pigors | 1423 W. Norton Ave, Norton Shores, MI 49441 · (231) 260-1936 · andrewjpigors@gmail.com |
+| **Plaintiff** | Andrew James Pigors | 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 · (231) 903-5690 · andrewjpigors@gmail.com |
 | **Defendant** | Emily A. Watson | 2160 Garland Drive, Norton Shores, MI 49441 (NOT "Emily Ann", NOT "Emily M.", NOT "Tiffany") |
 | **Child** | L.D.W. | Initials ONLY per MCR 8.119(H) — NEVER full name in filings |
 | **Judge** | Hon. Jenny L. McNeill | 14th Circuit Court, Family Division (NOT "Amy McNeill") |
@@ -21,12 +21,33 @@
 
 **Separation date:** July 29, 2025. Calculate days dynamically: `(today - 2025-07-29).days`
 
+### ⚖️ JUDICIAL CONFLICT WEB (critical for disqualification + JTC)
+- **Judge Jenny L. McNeill** — 14th Circuit, challenged judge (1,127 violations)
+- **Chief Judge Kenneth Hoopes** — married to Maria Ladas Hoopes; **ALL THREE** (Hoopes, Ladas Hoopes, McNeill) formerly shared a law office in North Muskegon
+- **Judge Maria Ladas Hoopes** — evicted Andrew, ignored evidence at housing hearings; Andrew was arrested for contempt by McNeill DURING a hearing in front of Ladas Hoopes (remote, Nov 15 2024)
+- **Emily Watson** — works at Kent County Prosecutor's Office, Family Court Division (Emp ID 13380, ~9 years). Her mother **Lori Watson** (Emp ID 1190) also works for Kent County.
+- Chief Judge Hoopes **dismissed the Shady Oaks CZ case** without allowing Andrew to present evidence/exhibits at a hearing, then let objections go unanswered before closing.
+- Bias risk is EXTREMELY HIGH in trial courts due to: shared law office history, spousal relationship, prosecutorial office employment
+
+### ⚔️ SHOW CAUSE / CONTEMPT TIMELINE (user-verified — do NOT alter)
+| SC# | Date | Result | Details |
+|-----|------|--------|---------|
+| SC#1-3 | Various | **DISMISSED/MOOTED** | — |
+| SC#4 | Various | **DISMISSED** | NOT a jailing — was dismissed |
+| SC#5 | Nov 15, 2024 | **14 DAYS JAIL** | Remote hearing before Ladas Hoopes; McNeill sentenced via remote; Andrew muted 3× while presenting police report evidence; arrested at hearing; allegations: yelling at Emily at parenting exchange; oral testimony only, no evidence; caused loss of 1st house + 1st job |
+| SC#6+7 | Nov 26, 2025 (day before Thanksgiving) | **45 DAYS JAIL** | Litigated together; McNeill sentenced; based on AppClose birthday messages (requesting to see son for 3rd birthday); PT was suspended since Aug 8, 2025; caused loss of 2nd house + 2nd job |
+| **TOTAL** | — | **59 days jail** | 2 jobs lost, 2 homes lost, 3 periods of homelessness |
+
 ### ☠️ HALLUCINATION GRAVEYARD (names/stats that NEVER existed)
 - ❌ "Tiffany Watson" / "Tiffany A. Watson" — The defendant is **Emily A. Watson**
 - ❌ "Jane Berry" / "Patricia Berry (SBN P35878)" — fabricated in 60+ files across prior sessions
 - ❌ "91% alienation score" — pseudo-scientific, never cite
 - ❌ "9 CPS investigations" — unverified, never cite unless DB confirms
 - ❌ Hardcoded "329+ days" or "605+ days" — always CALCULATE from July 29, 2025
+- ❌ "1423 W. Norton Ave" — OLD address. Current: **1977 Whitehall Road, Lot 17, North Muskegon, MI 49445**
+- ❌ "(231) 260-1936" — OLD phone. Current: **(231) 903-5690**
+- ❌ "Amy McNeill" — Judge is **Jenny L. McNeill**
+- ❌ "SC#4 = 14 days jail" — SC#4 was DISMISSED. SC#5 = 14 days, SC#6+7 = 45 days
 
 ---
 
@@ -36,12 +57,12 @@
 |----------|-------|
 | **System** | LitigationOS GOLDEN MASTER v0.9.0 (tagged 2026-03-12, commit 19cf09d) |
 | **Architecture** | Michigan-first litigation intelligence · 16-phase pipeline · 155+ agent fleet |
-| **Database** | `C:\Users\andre\LitigationOS\litigation_context.db` — **772 tables, 11.46 GB, 18.5M rows** |
+| **Database** | `C:\Users\andre\LitigationOS\litigation_context.db` — **782 tables, 11.5 GB** |
 | **Product App** | Python ≥3.12, CustomTkinter GUI, 539 tests passing, pip-installable |
 | **Canonical Root** | `C:\Users\andre\LitigationOS` |
 | **Network** | Copilot HAS internet access. Pipeline AI inference is local-only. |
 
-> ⚠️ DB stats above are from 2026-03-13. Run `PRAGMA table_info()` before querying any table.
+> ⚠️ DB stats above are from 2026-03-14. Run `PRAGMA table_info()` before querying any table.
 > Run `SELECT COUNT(*) FROM sqlite_master WHERE type='table'` for live table count.
 
 ---
@@ -67,10 +88,10 @@
 
 | ID | Case | Deadline | Date | Authority | Status |
 |----|------|----------|------|-----------|--------|
+| DL-DISQUALIFY | 2024-001507 | **Disqualification Motion** | **2026-03-15** | MCR 2.003(D) | 🔴 IMMINENT |
+| DL-MSC-ORIGINAL | MSC | MSC Superintending Control | 2026-04-01 | MCR 7.305(B)/7.306 | 🔴 UPCOMING |
 | DL-001 | COA-366810 | **COA Appellant Brief** | **2026-04-15** | MCR 7.212(A)(1) | 🔴 UPCOMING |
 | DL-COA-APPENDIX | COA-366810 | COA Appendix with Brief | 2026-04-15 | MCR 7.212(D) | UPCOMING |
-| DL-DISQUALIFY | 2024-001507 | Disqualification Motion | 2026-03-15 | MCR 2.003(D) | UPCOMING |
-| DL-MSC-ORIGINAL | MSC | MSC Superintending Control | 2026-04-01 | MCR 7.305(B)/7.306 | UPCOMING |
 | DL-CIVIL-CONSPIRACY | Convergence | Civil Conspiracy Complaint | 2026-04-30 | MCL 600.2910; 42 USC 1983 | UPCOMING |
 | DL-SHADY-OAKS | Housing | Shady Oaks Housing Complaint | 2026-04-30 | MCL 600.5775; FHA | UPCOMING |
 | DL-JTC-FOLLOWUP | JTC | JTC Complaint Follow-up | 2026-05-01 | MCR 9.200 | UPCOMING |
@@ -87,6 +108,7 @@
 | Table | ~Rows | Purpose |
 |-------|-------|---------|
 | `master_citations` | 3.68M | Citation intelligence across all authorities |
+| `evidence_quotes` | **308,704** | Categorized evidence (speaker, type, legal significance) |
 | `master_csv_data` | 591K | Structured CSV data imports |
 | `file_inventory` | 467K | File metadata across all drives |
 | `disk_inventory_omega` | 249K | Drive scanning results |
@@ -95,13 +117,14 @@
 | `drive_file_index` | 159K | 6-drive file index (C, D, F, G, H, I) |
 | `master_timeline_parsed` | 132K | Parsed chronological events |
 | `evidence_file_index` | 153K | Evidence file metadata |
+| `master_violations_parsed` | **100,995** | 49 violation types across 377 files |
 | `mega_file_harvest` | 53K | Deep file harvest (5.9 GB text, 41K PDF pages) |
-| `impeachment_items` | 15K | Witness impeachment material |
-| `contradiction_map` | 10K | Detected contradictions |
-| `filing_packages` | 29 | Court filing packages |
+| `impeachment_items` | **15,171** | Witness impeachment material |
+| `contradiction_map` | 10,672 | Detected contradictions |
+| `judicial_violations` | **1,127** | Canon violations, ex parte, bias (484 medium, 377 critical, 243 high) |
+| `claims` | 653 | Legal claims (429 supported, 90 active, 44 active-critical) |
+| `filing_readiness` | 24 | Filing vehicle readiness scores |
 | `deadlines` | 23 | Active litigation deadlines |
-| `vehicles` | 6 | Active litigation vehicles |
-| `claims` | 653 | Legal claims tracked (429 supported, 90 active) |
 
 ### 🔥 HIGH-VALUE ACTIONABLE TABLES (discovered in deep study — USE THESE)
 
@@ -137,16 +160,15 @@
 
 | Vehicle | Score | Status | Lane | Key Gaps |
 |---------|-------|--------|------|----------|
-| EMERGENCY_MOTION_RESTORE_PT | **92** | READY | A | Needs notarized affidavit |
-| COA_APPELLANT_BRIEF_366810 | **85** | READY | F | Needs fee waiver (due Apr 15) |
-| MOTION_FOR_RECONSIDERATION | **85** | READY | A | Needs signature |
+| JUDICIAL_DISQUALIFICATION | **97** | EVIDENCE_READY | A/E | Needs Affidavit of Bias (MCR 2.003(D)(1) REQUIRED) |
+| CONTEMPT_SHOW_CAUSE | **97** | EVIDENCE_READY | A | USB wiretapping + HealthWest suppression injected |
+| MODIFY_TERMINATE_PPO | **95** | EVIDENCE_READY | D | MCR 3.740/3.745 corrected; wiretapping in proposed order |
+| EMERGENCY_MOTION_RESTORE_PT | **94** | EVIDENCE_READY | A | USB + HealthWest sections added; needs notarized affidavit |
+| COA_APPELLANT_BRIEF_366810 | **84** | READY | F | 5 procedural items remain (due Apr 15) |
 | MSC_SUPERINTENDING_CONTROL | **82** | READY | E | Needs 13 copies, notarization |
-| JTC_FORMAL_COMPLAINT | **80** | READY | E | Needs signature and mailing |
-| JUDICIAL_DISQUALIFICATION | **80** | READY | A/E | Needs evidence backing |
-| MODIFY_TERMINATE_PPO | **80** | READY | D | 39 quotes, 11 impeachment items |
-| CONTEMPT_SHOW_CAUSE | **75** | READY | A | 65 quotes, 13 impeachment items |
+| JTC_COMPLAINT | **80** | EVIDENCE_READY | E | Conflict web + wiretapping added |
+| 42USC1983_FEDERAL | **78** | READY | Fed | USB wiretapping is federal crime; needs authority expansion |
 | MSC_APPLICATION | **72** | NEEDS_WORK | E/F | Physical assembly needed |
-| 42USC1983_FEDERAL | **65** | NEEDS_WORK | Fed | Authority chain gaps |
 
 ### MSC Fleet (9 vehicles, evidence-ready, scores 81-100)
 
@@ -295,11 +317,13 @@ The `session_store` SQL database contains history from ALL past sessions (24+). 
 8. **Inflammatory tone** — "textbook bias", "gratuitous cruelty", "Justice is blind" HURTS credibility with judges. Use measured, professional language.
 9. **Shadow modules** — Repo root has `json.py`, `typing.py`, etc. that shadow stdlib. NEVER set CWD to repo root for Python. Use `safe_shell.py`.
 10. **Ron Berry confusion** — He is NOT an attorney. No bar number. No "Esq." He is Emily's boyfriend who provided shadow help.
+11. **Old address propagation** — "1423 W. Norton Ave" and "(231) 260-1936" are STALE. Current: **1977 Whitehall Rd Lot 17, North Muskegon 49445**, **(231) 903-5690**.
+12. **Exhibit files don't exist** — Filings cite ~50 exhibits but only 2 files exist in 10_Exhibits/. Creating filings without assembling exhibit packages = incomplete court submissions.
 
 ### ✅ PATTERNS THAT WORK
 1. **Zero-pipe orchestration** — Main session uses `view/edit/grep/glob/sql` (zero pipes). ALL execution delegated to `task` agents (isolated pipes). Session becomes immune to EAGAIN.
 2. **Wave-based autonomous execution** — Max 3 deliverables per wave, checkpoint between waves.
-3. **DB-first research** — Query `litigation_context.db` before generating any content. 772 tables = most answers are already there.
+3. **DB-first research** — Query `litigation_context.db` before generating any content. 782 tables = most answers are already there.
 4. **Session store continuity** — Query `session_store` to find prior work before starting fresh.
 5. **Task agents for commands** — `task(task)` for builds/tests, `task(explore)` for codebase questions. Never raw `powershell` for heavy work.
 
@@ -331,7 +355,7 @@ python 00_SYSTEM\tools\safe_shell.py run script.py    # Safe run
 1. **Read this file** — you're doing it now ✅
 2. **Calculate separation days** — `(today - 2025-07-29).days` → inject into urgency framing
 3. **Check deadlines** — `SELECT * FROM deadlines ORDER BY rowid` (23 active)
-4. **Verify DB accessible** — `SELECT COUNT(*) FROM sqlite_master WHERE type='table'` → expect ~772
+4. **Verify DB accessible** — `SELECT COUNT(*) FROM sqlite_master WHERE type='table'` → expect ~782
 5. **Query session store** — `SELECT * FROM search_index WHERE search_index MATCH 'relevant topic'` for prior work
 6. **Identify case lane(s)** — Route to A-F based on user request
 7. **Load relevant authority** — Use FTS5 indexes for fast lookups
@@ -350,7 +374,7 @@ python 00_SYSTEM\tools\safe_shell.py run script.py    # Safe run
 | **EAGAIN Prevention** | `.github/instructions/eagain-prevention.instructions.md` |
 | **Shell Management** | `.github/instructions/shell-management.instructions.md` |
 | **Agent Activation** | `.github/instructions/agent-activation.instructions.md` |
-| **Database** | `litigation_context.db` (11.46 GB, 772 tables, 18.5M rows) |
+| **Database** | `litigation_context.db` (11.5 GB, 782 tables) |
 | **Backup DB** | `D:\BACKUP\litigation_context_v0.9.0_backup.db` |
 | **Inference Engine** | `00_SYSTEM/local_model/inference_engine.py` |
 | **Pipeline** | `00_SYSTEM/pipeline/run_omega_pipeline.py` |
@@ -423,7 +447,7 @@ python 00_SYSTEM\tools\safe_shell.py run script.py    # Safe run
 - **Certificate of Service ALWAYS LAST** (MCR 2.107) — every filing, no exceptions
 - **MCR 2.003(D):** Disqualification motions go to **CHIEF JUDGE**, not the challenged judge
 - **SCAO forms MANDATORY:** FOC 65/67 for parenting time, CC 377/380 for PPO
-- **Pro se signature block:** Andrew James Pigors, 1423 W. Norton Ave, Norton Shores, MI 49441, (231) 260-1936, andrewjpigors@gmail.com
+- **Pro se signature block:** Andrew James Pigors, In Propria Persona, 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445, (231) 903-5690, andrewjpigors@gmail.com
 - **Child reference:** L.D.W. (initials only per MCR 8.119(H))
 
 ---
@@ -611,7 +635,51 @@ SELECT
 
 ---
 
-## 22. DOCKET EVENT TYPES (221 events in `docket_events`)
+## 22A. CONVERGENCE STATUS (as of 2026-03-14, commit 9e589b5)
+
+### 🟢 CLERK-READY FILINGS (all converged — 0 placeholders, 0 wrong names, 0 stale dates)
+
+| File | Size | Key Improvements |
+|------|------|-----------------|
+| `01_EMERGENCY_PT_MOTION.md` | 20 KB | USB wiretapping (§F) + HealthWest Brady (§G) injected; ¶1-31 renumbered; 13 exhibits (A-M) |
+| `02_DISQUALIFICATION_MOTION.md` | 19 KB | Legacy v1 — address, COS, day counts fixed |
+| `03_CONTEMPT_MOTION.md` | 20 KB | USB wiretapping (Cat 8) + HealthWest (Cat 9); ¶1-35; 12 exhibits (A-L) |
+| `MOTION_DISQUALIFICATION_MCNEILL.md` | 29 KB | PRIMARY — ¶1-49 sequential; 6 grounds (A-F); dual disqualification (McNeill + Hoopes); 19 exhibits |
+| `MOTION_DISSOLVE_PPO.md` | 33 KB | MCR 3.707→3.740/3.745 fixed (5x); ¶1-43; wiretapping + HealthWest in proposed order |
+| `MSC_PROPOSED_ORDERS_FLEET.md` | 37 KB | 6 orders (Superintending, Mandamus, Emergency, Prohibition, Declaratory, Habeas); all 229+ days |
+
+### 🔴 CRITICAL EVIDENCE GAPS (exhibit files mostly don't exist yet)
+
+Filings cite ~50+ exhibits across ~40 unique document types. The **actual exhibit repository contains only 2 files** (police report zip + docket screenshot). Gap: ~96%.
+
+**TIER 1 — Procedurally REQUIRED:**
+- [ ] **Affidavit of Bias** — MCR 2.003(D)(1) REQUIRES this with disqualification motion. Motion cites "Exhibit A" but no affidavit file exists.
+
+**TIER 2 — Foundation documents:**
+- [ ] HealthWest evaluations (Sept 4 + Sept 11, 2025) — cited in 4 filings
+- [ ] Negative poisoning test result — cited in 2 filings
+- [ ] Final Judgment of Custody (July 17, 2024) — foundation for contempt
+- [ ] Parenting Time Denial Calendar (229+ days)
+- [ ] Interference Incident Log (305+ incidents)
+- [ ] Employment termination letters (2 jobs lost)
+- [ ] USB recording chain of custody + MCL 750.539c analysis
+
+**TIER 3 — Supporting documents:**
+- [ ] Transcript excerpts (muting incidents, ghost eval, staff review of USB)
+- [ ] Ex parte order log (24/55 = 44%)
+- [ ] August 8, 2025 five ex parte orders
+- [ ] $250 filing deposit order
+- [ ] Master Exhibit Index aligning all 6 filings
+
+### ⚠️ EXHIBIT LETTERING CONFLICT
+Each filing uses independent exhibit letters (Filing 1's "Exhibit D" ≠ Filing 3's "Exhibit D"). A **Master Exhibit Index** is needed to disambiguate or standardize.
+
+### COA BRIEF 366810 — CONDITIONAL GO
+- Brief text: **COMPLETE** (14,070 words, under 16K MCR limit)
+- 6 issues on appeal, all MCR 7.212-compliant
+- 5 remaining items: Claim of Appeal date, disqualification denial date, Barnes email, PDF regeneration, appendix assembly
+- **Due: April 15, 2026** via TrueFiling
+- See `/01_FILINGS/COA_366810/COA_BRIEF_366810_FINAL.md` for main brief
 
 | Event Type | Count | Examples |
 |------------|-------|---------|
