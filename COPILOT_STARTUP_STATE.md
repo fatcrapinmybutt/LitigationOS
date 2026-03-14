@@ -638,64 +638,57 @@ SELECT
 
 ---
 
-## 22A. CONVERGENCE STATUS (as of 2026-03-15, commit ca5d4c9)
+## 22A. CONVERGENCE STATUS (as of 2026-03-15, commit f98af23)
 
-### 🟢 CLERK-READY FILINGS (all converged — 0 placeholders, 0 wrong names, 0 stale dates)
+### 🟢 CLERK-READY FILINGS — ALL CONVERTED TO PDF
 
-| File | Size | Key Improvements |
-|------|------|-----------------|
-| `01_EMERGENCY_PT_MOTION.md` | 20 KB | USB wiretapping (§F) + HealthWest Brady (§G) injected; ¶1-31 renumbered; 13 exhibits (A-M) |
-| `02_DISQUALIFICATION_MOTION.md` | 19 KB | Legacy v1 — address, COS, day counts fixed |
-| `03_CONTEMPT_MOTION.md` | 20 KB | USB wiretapping (Cat 8) + HealthWest (Cat 9); ¶1-35; 12 exhibits (A-L) |
-| `AFFIDAVIT_OF_DISQUALIFICATION.md` | 10 KB | **NEW** — 40 sworn paragraphs, 9 sections, jurat/notary block; MCR 2.003(B)/(D)(1) REQUIRED companion |
-| `MOTION_DISQUALIFICATION_MCNEILL.md` | 29 KB | PRIMARY — ¶1-49 sequential; 6 grounds (A-F); dual disqualification (McNeill + Hoopes); 19 exhibits |
-| `MOTION_DISSOLVE_PPO.md` | 33 KB | MCR 3.707→3.740/3.745 fixed (5x); ¶1-43; wiretapping + HealthWest in proposed order |
-| `MSC_PROPOSED_ORDERS_FLEET.md` | 37 KB | 6 orders (Superintending, Mandamus, Emergency, Prohibition, Declaratory, Habeas); all 229+ days |
+| File | MD | PDF | Key Improvements |
+|------|------|------|-----------------|
+| `01_EMERGENCY_PT_MOTION.md` | 20 KB | ✅ 18.0 KB | USB wiretapping (§F) + HealthWest Brady (§G); 13 exhibits (A-M) |
+| `02_DISQUALIFICATION_MOTION.md` | 19 KB | ✅ 18.5 KB | Legacy v1 — address, COS, day counts fixed |
+| `03_CONTEMPT_MOTION.md` | 20 KB | ✅ 16.3 KB | USB wiretapping (Cat 8) + HealthWest (Cat 9); 12 exhibits (A-L) |
+| `AFFIDAVIT_OF_DISQUALIFICATION.md` | 10 KB | ✅ 15.1 KB | 40 sworn paragraphs, jurat/notary block; MCR 2.003(B)/(D)(1) |
+| `MOTION_DISQUALIFICATION_MCNEILL.md` | 29 KB | ✅ 19.3 KB | PRIMARY — ¶1-49; 6 grounds (A-F); dual disqualification; 19 exhibits |
+| `MOTION_DISSOLVE_PPO.md` | 33 KB | ✅ 20.3 KB | MCR 3.707→3.740/3.745 fixed (5x); ¶1-43; wiretapping + HealthWest |
+| `MSC_PROPOSED_ORDERS_FLEET.md` | 37 KB | ✅ 24.2 KB | 6 orders (Superintending, Mandamus, Emergency, Prohibition, Declaratory, Habeas) |
 
-### 📋 MASTER EXHIBIT INDEX (NEW — `11_Indexes/MASTER_EXHIBIT_INDEX.md`)
+**All PDFs in `01_FILINGS/PDF_READY/`** — court-formatted: 1" margins, 12pt Times New Roman, double-spaced, page numbers.
+
+### 📋 MASTER EXHIBIT INDEX (`11_Indexes/MASTER_EXHIBIT_INDEX.md`)
 - **27 unified exhibit IDs (U-001 through U-027)** cross-referenced across all 7 filings
 - Collision map resolves different filings using same letters for different documents
-- Gap analysis: **11/27 exhibits now exist** (was 4/27 before Wave 2)
-- Tier 1 (generate from DB): 5 DONE + 2 remaining
-- Tier 2 (court clerk): 8 needed
-- Tier 3 (Andrew provides): 4 needed
+- **All 7 Tier 1 exhibits complete + converted to PDF**
 
-### 📄 GENERATED EXHIBITS (NEW — `03_EVIDENCE/GENERATED_EXHIBITS/`)
+### 📄 GENERATED EXHIBITS — ALL CONVERTED TO PDF (`03_EVIDENCE/GENERATED_EXHIBITS/`)
 
-| Exhibit | File | Source | Key Data |
-|---------|------|--------|----------|
-| **U-005** | Show Cause History | DB: docket_events | 7 SC proceedings, SC#4 dismissed, SC#5 14d, SC#6+7 45d |
-| **U-007** | PT Denial Calendar | DB: docket_events | 229 consecutive days, month-by-month calendar |
-| **U-013** | Ex Parte Order Log | DB: docket_events | 49 total orders, ex parte statistics |
-| **U-015** | Judicial Conduct Analysis | DB: judicial_violations | 1,127 violations (377 critical, 243 high) |
-| **U-021** | MCL 750.539 Analysis | Legal analysis | Felony wiretapping applied to USB recording |
-| **U-022** | MRE 901 Analysis | Legal analysis | 0/7 Berkey authentication factors satisfied |
+| Exhibit | File | PDF | Source | Key Data |
+|---------|------|-----|--------|----------|
+| **U-001** | Interference Incident Log | ✅ 388.9 KB | DB: evidence_quotes + docket_events | 751 incidents |
+| **U-005** | Show Cause History | ✅ 10.0 KB | DB: docket_events | 7 SC proceedings |
+| **U-007** | PT Denial Calendar | ✅ 21.6 KB | DB: docket_events | 229+ days separated |
+| **U-013** | Ex Parte Order Log | ✅ 13.3 KB | DB: docket_events | 49 orders |
+| **U-015** | Judicial Conduct Analysis | ✅ 11.8 KB | DB: judicial_violations | 1,127 violations |
+| **U-021** | MCL 750.539 Analysis | ✅ 8.8 KB | Legal analysis | Felony wiretapping |
+| **U-022** | MRE 901 Analysis | ✅ 9.9 KB | Legal analysis | 0/7 Berkey factors |
 
-### 🔴 REMAINING EVIDENCE GAPS (reduced from 96% → ~59%)
-
-Filings cite 27 unified exhibits. **11 now exist as files**, 16 still needed:
-
-**TIER 1 — Can Generate from DB (2 remaining):**
-- [ ] U-001: Interference Incident Log (305+ incidents) — query evidence_quotes
-- [ ] U-015: Statistical Analysis refinement (generated, may need polish)
+### 🟡 REMAINING EVIDENCE GAPS (12 of 27 — down from 96%)
 
 **TIER 2 — Must Obtain from Court Clerk ($1.25/page):**
-- [ ] U-012: Transcript — "Ghost Evaluation" statement
-- [ ] U-016: Transcript — Muting incidents (3 occasions)
-- [ ] U-017: Filing Bond Order (May 16, 2025)
-- [ ] U-018: Transcript — AI Research Disparagement
-- [ ] U-019: Five Ex Parte Orders (August 8, 2025)
-- [ ] U-020: Transcript — USB Review Admission
-- [ ] U-023: Orders referencing 2nd HealthWest evaluation
-- [ ] U-024: Final Judgment of Custody (July 17, 2024)
+- Transcript request letter CREATED (`01_FILINGS/TRANSCRIPT_REQUEST_LETTER.md`)
+- 10 hearing transcripts + 8 certified orders requested
+- U-012, U-016, U-017, U-018, U-019, U-020, U-023, U-024
 
 **TIER 3 — Andrew Must Provide:**
-- [ ] U-004: Negative Poisoning Test Result (lab report)
-- [ ] U-006: Employment Loss Documentation (pay stubs, termination letters)
-- [ ] U-008: USB Recording Chain of Custody
-- [ ] U-011: Proof of Secretary Routing (email/receipt)
+- U-004: Negative Poisoning Test Result (lab report)
+- U-006: Employment Loss Documentation
+- U-008: USB Recording Chain of Custody
+- U-011: Proof of Secretary Routing
 
-**Pro tip:** File MC 20 Fee Waiver to avoid transcript/certification costs.
+### 📝 FILING SUPPORT DOCUMENTS (NEW)
+- `01_FILINGS/FILING_CHECKLISTS.md` — Phase-by-phase physical filing instructions
+- `01_FILINGS/MC20_FEE_WAIVER_GUIDE.md` — Pre-filled MC 20 guide
+- `01_FILINGS/TRANSCRIPT_REQUEST_LETTER.md` — Court clerk request for 10 transcripts + 8 orders
+- `08_TOOLS/court_pdf_generator.py` — Reusable MD→PDF pipeline (reportlab)
 
 ### COA BRIEF 366810 — CONDITIONAL GO
 - Brief text: **COMPLETE** (14,070 words, under 16K MCR limit)

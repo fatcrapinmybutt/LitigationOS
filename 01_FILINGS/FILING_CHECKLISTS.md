@@ -183,18 +183,24 @@ Same as Phase 1: Print 3 copies → Sign → File → Serve → POS
 - [ ] File at 14th Circuit (request hearing before visiting judge)
 - [ ] Serve Emily Watson
 
-### Court Clerk Requests (do this NOW — takes 2-4 weeks)
-- [ ] Request certified copies of these 8 documents from 14th Circuit Clerk:
-  1. All hearing transcripts from 2024-001507-DC (5+ hearings)
-  2. All hearing transcripts from 2023-5907-PP
-  3. $250 bond order
-  4. August 8, 2025 ex parte orders
-  5. 2nd HealthWest evaluation orders
-  6. Custody judgment/order
-  7. SC#5 contempt sentence (Nov 15, 2024)
-  8. SC#6/7 contempt sentence (Nov 26, 2025)
-- [ ] **Cost: $1.25 per page** — request page count estimate from clerk first
-- [ ] File MC 20 to waive transcript costs if possible
+### Court Clerk Requests (START NOW — multiple paths available)
+- [ ] **Path A:** File MC 20 requesting transcript costs waived at public expense (MCR 7.210(B)(2))
+- [ ] **Path B (backup):** Begin drafting Settled Statements of Facts for each hearing (MCR 7.210(B)(2))
+  - Use DB evidence_quotes + docket_events to reconstruct hearing summaries
+  - Free alternative — no transcript needed
+- [ ] **Path C (if MC 20 denied):** File COA motion for transcripts at public expense
+  - Cite *Griffin v. Illinois*, 351 U.S. 12 (1956)
+  - Cite *Mayer v. City of Chicago*, 404 U.S. 189 (1971)
+- [ ] Request certified orders (separate from transcripts — much cheaper):
+  1. $250 bond order
+  2. August 8, 2025 ex parte orders
+  3. 2nd HealthWest evaluation orders
+  4. Custody judgment
+  5. SC#5 + SC#6/7 contempt sentences
+  6. PT suspension order
+  7. PPO entry/renewal orders
+- [ ] **Muskegon County note:** Uses ONLY 3rd-party court reporters. Use the court's specific form (available at clerk's window), NOT a custom letter.
+- [ ] **Cost: $1.00/page** — MC 20 fee waiver covers this if granted
 
 ---
 
