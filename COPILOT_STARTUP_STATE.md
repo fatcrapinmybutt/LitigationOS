@@ -307,7 +307,7 @@ The `session_store` SQL database contains history from ALL past sessions (24+). 
 ## 10. LESSONS LEARNED (24 sessions, distilled)
 
 ### 🔴 FATAL MISTAKES TO NEVER REPEAT
-1. **EAGAIN crashes** — Caused by >3 concurrent shells/agents. Max 2 shells + 2 agents = 4 total pipe-producing processes. See `.github/instructions/eagain-prevention.instructions.md`
+1. **EAGAIN crashes** — Caused by too many SHARED pipes (PowerShell). Max 2 shells (SHARED) + 3 agents (ISOLATED) = 5 total. Agents are safe to expand — their pipes don't affect the main session. See `.github/instructions/eagain-prevention.instructions.md` v2.0
 2. **Placeholder proliferation** — Sessions left hundreds of `[ANDREW_REQUIRED]` when data was IN THE DB. Always query `litigation_context.db` FIRST. Andrew said: *"thats the whole point of this. to USE MY FILES ON MY DRIVES."*
 3. **Name hallucinations** — "Jane Berry", "Tiffany Watson" propagated to 60+ files. See Graveyard above.
 4. **Inflated statistics** — "91% alienation score" was pseudo-scientific. Every stat MUST trace to a specific SQL query.
@@ -323,10 +323,12 @@ The `session_store` SQL database contains history from ALL past sessions (24+). 
 
 ### ✅ PATTERNS THAT WORK
 1. **Zero-pipe orchestration** — Main session uses `view/edit/grep/glob/sql` (zero pipes). ALL execution delegated to `task` agents (isolated pipes). Session becomes immune to EAGAIN.
-2. **Wave-based autonomous execution** — Max 3 deliverables per wave, checkpoint between waves.
-3. **DB-first research** — Query `litigation_context.db` before generating any content. 782 tables = most answers are already there.
-4. **Session store continuity** — Query `session_store` to find prior work before starting fresh.
-5. **Task agents for commands** — `task(task)` for builds/tests, `task(explore)` for codebase questions. Never raw `powershell` for heavy work.
+2. **Expanded agent fleet** — 3 agents concurrently (v2.0). Agents have ISOLATED pipes — if one crashes, only it dies. Can dispatch 2 agents in one tool call.
+3. **Wave-based autonomous execution** — Max 3 deliverables per wave, checkpoint between waves.
+4. **DB-first research** — Query `litigation_context.db` before generating any content. 782 tables = most answers are already there.
+5. **Session store continuity** — Query `session_store` to find prior work before starting fresh.
+6. **Task agents for commands** — `task(task)` for builds/tests, `task(explore)` for codebase questions. Never raw `powershell` for heavy work.
+7. **Dynamic throttle** — 4-level auto-scaling: if EAGAIN symptoms appear, reduce to shells:1 agents:2 automatically. Self-heals after 5 min stability.
 
 ---
 

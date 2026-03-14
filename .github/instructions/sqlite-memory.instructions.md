@@ -99,6 +99,7 @@ optimized_sql = rewrite(original_sql)
 Hard limit: **max 3 concurrent DB connections** (enforced by `db_lock_manager.py`). Before opening a new connection in any agent or background thread, verify the cap is not exceeded. Use `managed_db()` context manager for automatic lifecycle management.
 
 **Relationship to write EAGAIN:** SQLite EAGAIN and pipe EAGAIN share the same root — resource exhaustion.
-When pipe buffers overflow (too many shells/agents), DB connections may also fail because the OS is
-starved for file descriptors. Controlling pipe pressure (max 2 shells + 2 agents) indirectly protects
-DB connections. Never open DB connections inside shell commands — use dedicated Python scripts instead.
+When pipe buffers overflow (too many shells), DB connections may also fail because the OS is
+starved for file descriptors. Controlling SHARED pipe pressure (max 2 shells) indirectly protects
+DB connections. Agents use ISOLATED pipes (safe at 3 concurrent). Total: max 2 shells + 3 agents = 5.
+Never open DB connections inside shell commands — use dedicated Python scripts instead.

@@ -24,17 +24,23 @@ Once either occurs, NO new shells can be created until ALL sessions are stopped 
 
 ## Prevention Rules (MANDATORY — Zero Tolerance)
 
-### 1. HARD LIMIT: Max 2 Concurrent Async Shells (reduced from 3 → 2 to prevent EAGAIN)
+### 1. HARD LIMIT: Max 2 Concurrent Async Shells (SHARED pipes — the ONLY EAGAIN vector)
 
-**Before creating ANY new shell**, count existing shells AND agents. If shells + agents >= 4,
-you MUST stop a shell or wait for an agent before creating another. This prevents `write EAGAIN`.
+> **v2.0 UPDATE:** Shells and agents have SEPARATE pipe budgets. Shells use SHARED pipes
+> (direct EAGAIN risk). Agents use ISOLATED pipes (overflow kills only that agent).
+> See `eagain-prevention.instructions.md` v2.0 for the engineering proof.
 
-**Pre-spawn checklist:**
+**Shell pre-spawn checklist (SHARED pipe budget):**
 1. `list_powershell` → count active shells
-2. `list_agents` → count running agents
-3. shells + agents must be < 4 total
-4. Wait 2 seconds between any two spawn operations
-5. NEVER spawn a shell and an agent in the same tool response
+2. Active shells must be < 2
+3. Wait 2 seconds between shell spawns (shared pipes need buffer drain time)
+
+**Agent pre-spawn checklist (ISOLATED pipe budget — separate from shells):**
+1. `list_agents` → count RUNNING agents (exclude completed/idle)
+2. Running agents must be < 3
+3. Wait 1 second between agent spawns
+4. Can spawn 2 agents in parallel (same tool call) — they don't share pipes
+5. Can spawn 1 shell + 1 agent in same tool call — different pipe pools
 
 ### 2. Chain Related Commands — ALWAYS
 
@@ -133,15 +139,17 @@ The repo root contains `json.py`, `typing.py`, `tokenize.py`, `numpy.py`, `panda
 others that shadow Python stdlib/third-party modules. **NEVER** set CWD to the repo root when
 running Python. Use `safe_run()` or set CWD to the script's own directory.
 
-## Sub-Agent Shell Budget
+## Sub-Agent Shell Budget (v2.0 — EXPANDED)
 
 When spawning sub-agents via `task` tool:
-- Each sub-agent gets its own shell sessions (its own pipes)
-- **Limit to 2 parallel sub-agents** to stay under the total pipe budget
-- Sub-agent shells auto-cleanup on completion, but count toward the global limit while running
-- Before spawning a sub-agent, ensure main session has **0 active async shells**
-- **2-second cooldown** between spawning any two agents
-- **NEVER** spawn an agent and a shell in the same tool response (sequential only)
+- Each sub-agent gets its own ISOLATED shell sessions (its own pipes — NOT shared with main)
+- **Limit to 3 parallel sub-agents** (expanded from 2 — isolated pipes are safe)
+- Sub-agent shells auto-cleanup on completion
+- **Agent pipes do NOT count against main session's shell budget** (different pipe pools)
+- **1-second cooldown** between spawning agents (reduced from 2s — isolated pipes)
+- Can spawn **2 agents in parallel** in one tool call (they don't interfere)
+- Can spawn **1 shell + 1 agent** in same tool call (different pipe pools)
+- Before spawning a sub-agent, check: running agents < 3 (via `list_agents`)
 
 ## Output Volume Control (EAGAIN Prevention)
 
