@@ -50,59 +50,83 @@
 
 ### A. Pattern of Ex Parte Orders Without Notice or Hearing
 
-7. The docket in this matter reflects that of the **41 total orders** entered by the Court, **11 were entered ex parte** — without prior notice to Plaintiff and without affording Plaintiff an opportunity to be heard. This represents an ex parte order rate of approximately **26.8%** of all orders entered.
+7. The docket in this matter reflects that of the **55 total orders** entered by the Court, **24 were entered ex parte** — without prior notice to Plaintiff and without affording Plaintiff an opportunity to be heard. This represents an ex parte order rate of approximately **44%** of all orders entered.
 
-   *(Source: docket_events table, litigation_context.db — event_type = 'ex_parte_order': 11; event_type IN ('order', 'ex_parte_order'): 41.)*
+   *(Source: docket_events table, litigation_context.db — 24 ex parte orders of 55 total.)*
 
-8. Most significantly, on or about **August 8, 2025**, the Court signed an ex parte order suspending **all** of Plaintiff's parenting time with L.D.W. based solely upon Defendant's unsworn ex parte motion — without an evidentiary hearing and without findings of fact as required by MCL 722.27a.
+8. Most significantly, on or about **August 5, 2025**, the Court directed an emergency ex parte suspension of **all** of Plaintiff's parenting time with L.D.W. — issued the **same day** evidence was submitted by Defendant's mother — without an evidentiary hearing and without findings of fact as required by MCL 722.27a. Plaintiff was not served until **August 8, 2025**, on which date the Court entered **five (5) additional ex parte orders** in a single day.
 
-9. As of the date of this filing, Plaintiff has been separated from his child for approximately **227 consecutive days** since the ex parte suspension of parenting time on July 29, 2025, without a final adjudication on the merits.
+9. As of the date of this filing, Plaintiff has been separated from his child for approximately **228 consecutive days** since the last parenting time contact on July 29, 2025, without a final adjudication on the merits.
 
-   *(Source: SELECT CAST(julianday('now') - julianday('2025-07-29') AS INTEGER) = 227.)*
+   *(Source: SELECT CAST(julianday('2026-03-14') - julianday('2025-07-29') AS INTEGER) = 228.)*
 
 10. The entry of ex parte orders affecting fundamental parental rights — without notice, without hearing, and without required statutory findings — reflects a departure from the impartiality required of the bench. *See* **Shinkle v Shinkle**, 255 Mich App 221, 225 (2003) (parenting-time restrictions require findings supported by the record).
 
-### B. Ex Parte Communication Regarding HealthWest Evaluation
+### B. Admission of Felony-Derived Evidence — Ex Parte USB Recording
 
-11. In or about September 2025, the Court ordered Plaintiff to undergo a mental health assessment through HealthWest. The first evaluation returned a result showing **no clinical findings** (all assessment scores of zero).
+11. The ex parte suspension order of August 5, 2025, was based upon a **USB recording** made by **Lori Watson** (Defendant's mother) of a parenting exchange, recorded **without Plaintiff's knowledge or consent**.
 
-12. Following receipt of this result, Judge McNeill sent correspondence directly to the HealthWest evaluator — outside the presence of the parties and without notice to Plaintiff. A second evaluation was thereafter conducted, which produced a materially different "Rule Out" finding.
+12. Michigan is a **two-party consent state**. The recording of a private conversation without the consent of all parties constitutes a felony under **MCL 750.539c** (Eavesdropping upon private conversation), punishable by up to 2 years imprisonment. Evidence obtained through a violation of MCL 750.539 is **inadmissible** under **MCL 750.539g** (fruits of the poisonous tree).
 
-   *(Source: constitutional_violations table, id 13 — "Judge McNeill sent biasing letter to HealthWest evaluator after first eval returned ALL ZEROS, resulting in changed 'Rule Out' finding"; evidence_ref: "HealthWest eval #1 (all zeros); eval #2 (rule out); judge letter to evaluator.")*
+13. Judge McNeill admitted on the record that she directed her staff to review this USB recording **ex parte**, stating: **"Yes, I had my staff listen to it."** This constitutes: (a) ex parte review of evidence without notice to Plaintiff, in violation of **Canon 3(A)(4)** of the Michigan Code of Judicial Conduct; (b) admission of feloniously obtained evidence without authentication under **MRE 901**; and (c) reliance on illegally obtained evidence to deprive a parent of fundamental constitutional rights.
 
-13. Regardless of the ultimate clinical merits, this ex parte communication between the presiding judge and a court-ordered evaluator, outside the record and without notice to Plaintiff, raises a serious appearance-of-impropriety concern under **MCJC Canon 2(A)** and constitutes an independent ground for disqualification under **MCR 2.003(C)(1)(b)** (ex parte communication concerning a pending proceeding). *See also* **Ward v. Village of Monroeville**, 409 U.S. 57 (1972) (due process requires a neutral and detached arbiter).
+   *(Source: Exhibit R — Transcript excerpt; Exhibit AG — USB Recording Chain of Custody; Exhibit AH — MCL 750.539 Analysis.)*
 
-### C. Imposition of Filing Bond Restricting Court Access
+14. The same-day timeline — evidence submitted, ex parte staff review, emergency order issued — demonstrates a **pre-determined outcome**: the evidence was reviewed and the order issued before Plaintiff had any opportunity to respond, challenge authentication, or raise the felony-wiretapping objection. *See* **Mapp v. Ohio**, 367 U.S. 643 (1961) (exclusionary rule); **Caperton v. A.T. Massey Coal Co.**, 556 U.S. 868 (2009) (due process requires recusal when probability of bias is too high).
 
-14. On **May 16, 2025**, the Court entered an order imposing a filing bond requirement on Plaintiff, effectively conditioning Plaintiff's right to petition the Court upon payment of a monetary bond.
+### C. Ex Parte Manipulation of HealthWest Evaluation — Brady Violation
+
+15. In September 2025, the Court ordered Plaintiff to undergo a mental health assessment through HealthWest (West Michigan Community Mental Health). The first evaluation, conducted on **September 4, 2025**, returned a result showing **no clinical findings** — all assessment scores of zero. The evaluator further **documented parental alienation by Defendant** against Plaintiff.
+
+   *(Source: Exhibit I — HealthWest Psychological Evaluation Clearing Father; Exhibit J — HealthWest Findings Documenting Parental Alienation.)*
+
+16. Rather than accepting this exculpatory result, Judge McNeill sent a **biasing letter directly to the HealthWest evaluator** on or about **September 9, 2025** — outside the presence of the parties and without notice to Plaintiff — and ordered a **second evaluation** conducted on **September 11, 2025**. The second evaluation produced a materially different finding: a tentative **"rule-out delusional disorder"** diagnosis.
+
+17. The second evaluation report was routed to **Judge McNeill's secretary** rather than the Clerk of Court, circumventing the normal filing process. **This report was never disclosed to Plaintiff** — constituting a violation of **Brady v. Maryland**, 373 U.S. 83 (1963), which requires disclosure of material evidence favorable to the accused. The first evaluation's clean result and documented alienation findings were favorable to Plaintiff; their suppression in favor of the biased second evaluation is a due process violation of constitutional dimension.
+
+   *(Source: Exhibit K — Second Evaluation Routing to Secretary; Exhibit AK — Court Orders Referencing Undisclosed Second HealthWest Evaluation.)*
+
+18. Judge McNeill subsequently referred to the first (exculpatory) evaluation dismissively as a **"ghost" mental health evaluation** on the record, further demonstrating prejudgment and contempt for evidence favorable to Plaintiff.
+
+   *(Source: Exhibit L — Transcript excerpt, "ghost evaluation" comment.)*
+
+19. On **November 26, 2025**, HealthWest workers testified and parenting time suspension was continued — **without written findings of fact** as required by **MCR 2.517** and **MCR 3.210(D)**. Plaintiff's objection to the second evaluation was **overruled**.
+
+### D. Imposition of Filing Bond Restricting Court Access
+
+20. On **May 16, 2025**, the Court entered an order imposing a filing bond requirement on Plaintiff, effectively conditioning Plaintiff's right to petition the Court upon payment of a monetary bond.
 
    *(Source: docket_events table — 2025-05-16, "Order Imposing Filing Bond Requirement.")*
 
-15. The United States Supreme Court has held that a state may not condition access to its courts upon the payment of fees by parties who cannot afford them, particularly in cases involving fundamental family rights. **Boddie v. Connecticut**, 401 U.S. 371, 374 (1971) ("a cost requirement, valid on its face, may offend due process because it operates to foreclose a particular party's opportunity to be heard"). *See also* **M.L.B. v. S.L.J.**, 519 U.S. 102 (1996) (extending *Boddie* to parental-rights proceedings).
+21. The United States Supreme Court has held that a state may not condition access to its courts upon the payment of fees by parties who cannot afford them, particularly in cases involving fundamental family rights. **Boddie v. Connecticut**, 401 U.S. 371, 374 (1971) ("a cost requirement, valid on its face, may offend due process because it operates to foreclose a particular party's opportunity to be heard"). *See also* **M.L.B. v. S.L.J.**, 519 U.S. 102 (1996) (extending *Boddie* to parental-rights proceedings).
 
-16. Imposing a filing bond on a self-represented litigant who is actively seeking to exercise his parental rights — while imposing no reciprocal requirement on the opposing party — further supports a reasonable perception of unequal treatment.
+22. Imposing a filing bond on a self-represented litigant who is actively seeking to exercise his parental rights — while imposing no reciprocal requirement on the opposing party — further supports a reasonable perception of unequal treatment.
 
-### D. Documented Judicial Violations
+### E. Documented Judicial Violations
 
-17. A comprehensive review of the proceedings in this case has identified **1,127 documented instances** in which judicial conduct in this matter departed from applicable standards, including the Michigan Code of Judicial Conduct, Michigan Court Rules, and constitutional due-process requirements.
+23. A comprehensive review of the proceedings in this case has identified **1,127 documented instances** in which judicial conduct in this matter departed from applicable standards, including the Michigan Code of Judicial Conduct, Michigan Court Rules, and constitutional due-process requirements.
 
    *(Source: SELECT COUNT(*) FROM judicial_violations = 1,127. Breakdown: 377 Critical severity, 243 High severity, 484 Medium severity, 23 Low severity.)*
 
-18. While Plaintiff acknowledges that not every adverse ruling constitutes evidence of bias, the **cumulative pattern** — including the severity distribution showing 377 critical and 243 high-severity entries — supports a finding that the totality of the Court's conduct crosses the threshold from mere adverse rulings into structural bias. *See* **Armstrong v. Ypsilanti Twp**, 248 Mich App 573, 597 (2001) (cumulative pattern of judicial conduct may support disqualification even when individual instances might not).
+24. While Plaintiff acknowledges that not every adverse ruling constitutes evidence of bias, the **cumulative pattern** — including the severity distribution showing 377 critical and 243 high-severity entries — supports a finding that the totality of the Court's conduct crosses the threshold from mere adverse rulings into structural bias. *See* **Armstrong v. Ypsilanti Twp**, 248 Mich App 573, 597 (2001) (cumulative pattern of judicial conduct may support disqualification even when individual instances might not).
 
-### E. Four Complete Authority Chains Supporting Disqualification
+### F. Six Complete Authority Chains Supporting Disqualification
 
-19. The evidentiary record establishes four independently complete authority chains supporting disqualification under MCR 2.003(C):
+25. The evidentiary record establishes **six** independently complete authority chains supporting disqualification under MCR 2.003(C):
 
-    a. **Personal bias or prejudice** — MCR 2.003(C): supported by the pattern of one-sided orders, suspension of parenting time without hearing, and disparate treatment between parties. *(Authority chain complete.)*
+    a. **Personal bias or prejudice** — MCR 2.003(C)(1): supported by the pattern of one-sided orders, suspension of parenting time without hearing, contempt sentences while suppressing defense, and disparate treatment between parties. *(Authority chain complete.)*
 
-    b. **Ex parte communication** — MCR 2.003(C): supported by the judge's direct correspondence with the HealthWest evaluator outside the presence of the parties. *(Authority chain complete.)*
+    b. **Ex parte communication** — MCR 2.003(C)(1): supported by the judge's direct correspondence with the HealthWest evaluator, ex parte staff review of the USB recording, and the 44% ex parte order rate. *(Authority chain complete.)*
 
-    c. **Personal knowledge of disputed facts** — MCR 2.003(C): the Court's conduct reflects reliance on information obtained outside the record, including through the ex parte evaluation correspondence. *(Authority chain complete.)*
+    c. **Admission of illegally obtained evidence** — MCR 2.003(C)(1); MCL 750.539c/g: the USB recording was made without consent (felony wiretapping), reviewed ex parte, and used as the basis for PT suspension without authentication under MRE 901. *(Authority chain complete.)*
 
-    d. **Appearance of impropriety** — MCR 2.003(C); MCJC Canon 2(A)–(B): a reasonable person, fully informed of the facts, would harbor a justified doubt as to the Court's impartiality. *(Authority chain complete.)*
+    d. **Brady violation / suppression of exculpatory evidence** — MCR 2.003(C)(1); Brady v. Maryland: the first HealthWest evaluation (clearing Plaintiff) was suppressed; a biased second evaluation was obtained through ex parte communication and never disclosed. *(Authority chain complete.)*
 
-   *(Source: authority_chains table, filing_vehicle = 'JUDICIAL_DISQUALIFICATION' — 4 chains, all chain_complete = 1.)*
+    e. **Personal knowledge of disputed facts** — MCR 2.003(C)(1): the Court's conduct reflects reliance on information obtained outside the record, including through the ex parte evaluation correspondence and private USB review. *(Authority chain complete.)*
+
+    f. **Appearance of impropriety** — MCR 2.003(C)(1); MCJC Canon 2(A)–(B): a reasonable person, fully informed of the facts — including the judge's former law partnership with the reviewing Chief Judge — would harbor a justified doubt as to the Court's impartiality. *(Authority chain complete.)*
+
+   *(Source: authority_chains table, filing_vehicle = 'JUDICIAL_DISQUALIFICATION' — expanded from 4 to 6 chains.)*
 
 ---
 
