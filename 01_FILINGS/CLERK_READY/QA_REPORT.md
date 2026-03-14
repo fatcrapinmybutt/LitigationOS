@@ -138,11 +138,11 @@
 | Armstrong v Ypsilanti Charter Twp, 248 Mich App 573, 597 (2001) | On confirmed list | ✅ REAL |
 | Cain v Dep't of Corrections, 451 Mich 470, 497 (1996) | On confirmed list | ✅ REAL |
 | Troxel v Granville, 530 US 57, 65 (2000) | On confirmed list | ✅ REAL |
-| **In re Contempt of Henry, 282 Mich App 656; 766 NW2d 44 (2009)** | NOT on confirmed list | ⚠️ **[VERIFY]** |
-| **Crampton v Dep't of State, 395 Mich 347, 351 (1975)** | NOT on confirmed list | ⚠️ **[VERIFY]** |
-| MCL 600.2145 (right to counsel in contempt) | Needs verification | ⚠️ **[VERIFY]** |
+| **In re Contempt of Henry, 282 Mich App 656; 766 NW2d 44 (2009)** | Web-verified (FindLaw, vLex, CaseMine) | ✅ REAL — contempt standards, "court speaks through orders" |
+| **Crampton v Dep't of State, 395 Mich 347, 351 (1975)** | Web-verified (Justia, Michigan Courts) | ✅ REAL — structural bias violates due process |
+| ~~MCL 600.2145~~ → *Mead v Batchlor*, 435 Mich 480 (1990) | **CORRECTED** — MCL 600.2145 is open accounts, not contempt | ✅ FIXED — right to counsel in contempt is *Mead*, not 600.2145 |
 
-**Citation Issues Found:** 3 citations need independent verification before filing. **In re Contempt of Henry** is particularly important because it shares volume 282 Mich App with the known-hallucinated McCraney case (282 Mich App 647). While different page numbers and case names suggest it may be a separate real case, this MUST be independently confirmed. Crampton is cited for a foundational test — verify or substitute with a confirmed authority.
+**Citation Issues Found:** ~~3 citations need verification~~ **All 3 resolved.** Henry and Crampton are verified real cases. MCL 600.2145 was **incorrect** (it covers open accounts, not contempt). Replaced with *Mead v Batchlor*, 435 Mich 480; 460 NW2d 493 (1990) — the actual Michigan Supreme Court authority on right to counsel in contempt proceedings involving incarceration.
 
 ## MCR Compliance: ⚠️ CONDITIONAL PASS
 
@@ -195,8 +195,8 @@
 ## Recommended Fixes
 
 1. **🔴 CRITICAL — Add MCR 2.003(D)(1) timeliness argument.** This is the single most important fix. Without it, the motion will be struck on procedural grounds without reaching the merits. Add a new Section II.C or III subsection addressing the 14-day filing window.
-2. **🔴 CRITICAL — Verify 3 unconfirmed citations.** In re Contempt of Henry (282 Mich App 656), Crampton v Dep't of State (395 Mich 347), and MCL 600.2145 must be independently verified in a legal database (Westlaw/LexisNexis/Michigan One Court of Justice). If unverifiable, substitute with confirmed authorities.
-3. **🟡 HIGH — Confirm the Affidavit of Bias (Exhibit A) exists as a separate document** with its own jurat/notarization. The motion references it but does not include it. MCR 2.003(D)(1) requires an accompanying affidavit — without it, the motion is procedurally deficient.
+2. **✅ RESOLVED — 3 citations verified/corrected.** In re Contempt of Henry (282 Mich App 656) — VERIFIED REAL. Crampton v Dep't of State (395 Mich 347) — VERIFIED REAL. MCL 600.2145 was **WRONG** (open accounts statute) — replaced with *Mead v Batchlor*, 435 Mich 480 (1990) in all CLERK_READY filings.
+3. **✅ RESOLVED — Affidavit of Bias now exists.** Created as `AFFIDAVIT_OF_DISQUALIFICATION.md` — 40 sworn paragraphs, 9 sections, jurat/notary block, COS.
 4. **🟡 HIGH — Source or reframe the "3.65× normal rate" claim.** Either cite a specific data source or remove the multiplier and rely on the raw 18.26% figure with qualitative framing.
 5. **🟡 MEDIUM — Separate vacatur request** from the disqualification relief, or reframe as a recommendation to the successor judge.
 6. **Fill both placeholders** (Berry's address/email) before filing.
@@ -330,9 +330,9 @@
 
 1. **Filing 2 — Add MCR 2.003(D)(1) timeliness argument.** Without this, the disqualification motion will be struck on procedural grounds. This is the #1 priority fix across all three filings.
 
-2. **Filing 2 — Verify 3 unconfirmed citations.** In re Contempt of Henry (282 Mich App 656), Crampton v Dep't of State (395 Mich 347), and MCL 600.2145. If any are hallucinated, the court will lose confidence in the entire motion.
+2. **✅ RESOLVED — Filing 2 citations verified/corrected.** Henry and Crampton are real cases. MCL 600.2145 replaced with *Mead v Batchlor*, 435 Mich 480 (1990).
 
-3. **Filing 2 — Confirm Affidavit of Bias (Exhibit A) exists as a standalone document.** MCR 2.003(D)(1) requires an accompanying affidavit. The motion references it but does not include it.
+3. **✅ RESOLVED — Affidavit of Bias (Exhibit A) now exists** as `AFFIDAVIT_OF_DISQUALIFICATION.md` in CLERK_READY.
 
 4. **Filing 3 — Address the "compliance with ex parte order" defense.** The contempt motion's entire theory for the 215-day period collapses if Defendant argues she was following the court's own order. This must be addressed proactively.
 

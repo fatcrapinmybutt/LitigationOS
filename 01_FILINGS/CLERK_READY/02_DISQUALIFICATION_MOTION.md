@@ -98,7 +98,7 @@ EMILY A. WATSON,
 
 &nbsp;&nbsp;&nbsp;&nbsp;a. Adequate notice of the specific charges;
 
-&nbsp;&nbsp;&nbsp;&nbsp;b. The right to counsel under MCL 600.2145;
+&nbsp;&nbsp;&nbsp;&nbsp;b. The right to counsel under *Mead v Batchlor*, 435 Mich 480; 460 NW2d 493 (1990);
 
 &nbsp;&nbsp;&nbsp;&nbsp;c. The opportunity to present a defense;
 
@@ -192,7 +192,7 @@ EMILY A. WATSON,
 
 ### C. The Incarceration Without Safeguards Demonstrates Bias
 
-29. The imposition of 59 days of incarceration without the procedural protections mandated by *In re Contempt of Dougherty* — including the right to counsel under MCL 600.2145 — independently warrants disqualification. These incarcerations directly caused the loss of three jobs and three months of homelessness, compounding the harm to both Plaintiff and L.D.W.
+29. The imposition of 59 days of incarceration without the procedural protections mandated by *In re Contempt of Dougherty* — including the right to counsel recognized in *Mead v Batchlor*, 435 Mich 480 (1990) — independently warrants disqualification. These incarcerations directly caused the loss of three jobs and three months of homelessness, compounding the harm to both Plaintiff and L.D.W.
 
 ### D. Cumulative Error Requires Disqualification
 
