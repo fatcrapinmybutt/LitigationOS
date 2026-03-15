@@ -153,15 +153,128 @@ CREATE INDEX IF NOT EXISTS idx_audit_action ON audit_log(action);
 CREATE INDEX IF NOT EXISTS idx_audit_op ON audit_log(operation_id);
 """
 
+# Case-intelligence schema — tracks extracted facts, named evidence atoms,
+# violations, litigation vehicles, and overall case state.
+CASE_INTELLIGENCE_SCHEMA = """
+PRAGMA journal_mode = WAL;
+PRAGMA busy_timeout = 60000;
+PRAGMA cache_size = -32000;
+PRAGMA synchronous = NORMAL;
+
+-- Extracted facts (FE-XXX)
+CREATE TABLE IF NOT EXISTS extracted_facts (
+    fact_id           TEXT PRIMARY KEY,   -- e.g. FE-032
+    summary           TEXT NOT NULL,
+    fact_state        TEXT NOT NULL,      -- UNVERIFIED | VERIFIED | DISPUTED
+    proof_needed      TEXT DEFAULT '',
+    significance      TEXT DEFAULT '',
+    evidence_refs_json TEXT DEFAULT '[]', -- JSON array of EA-XXX IDs
+    created_at        TEXT DEFAULT (datetime('now')),
+    updated_at        TEXT DEFAULT (datetime('now'))
+);
+
+-- Named evidence atoms (EA-XXX) — specific, titled evidence items
+CREATE TABLE IF NOT EXISTS named_evidence_atoms (
+    atom_id           TEXT PRIMARY KEY,   -- e.g. EA-001
+    description       TEXT NOT NULL,
+    atom_type         TEXT NOT NULL,      -- DOCUMENT|AUDIO|PHOTO|TEXT_MESSAGE|PUBLIC_RECORD|OTHER
+    relevance         TEXT DEFAULT '',
+    priority          TEXT NOT NULL,      -- CRITICAL | HIGH | MEDIUM
+    preserve_note     TEXT DEFAULT '',
+    fact_refs_json    TEXT DEFAULT '[]',  -- JSON array of FE-XXX IDs
+    created_at        TEXT DEFAULT (datetime('now')),
+    updated_at        TEXT DEFAULT (datetime('now'))
+);
+
+-- Violations inventory (V-XXX)
+CREATE TABLE IF NOT EXISTS violations_inventory (
+    violation_id   TEXT PRIMARY KEY,      -- e.g. V-001
+    category       TEXT NOT NULL,         -- JUDICIAL_MISCONDUCT|DUE_PROCESS|ATTORNEY_MISCONDUCT|PPO_FRAUD|ABUSE_OF_PROCESS|CHILD_SAFETY
+    summary        TEXT NOT NULL,
+    fact_refs_json TEXT DEFAULT '[]',     -- JSON array of FE-XXX IDs
+    created_at     TEXT DEFAULT (datetime('now')),
+    updated_at     TEXT DEFAULT (datetime('now'))
+);
+
+-- Ranked litigation vehicles
+CREATE TABLE IF NOT EXISTS litigation_vehicles (
+    vehicle_id           TEXT PRIMARY KEY, -- e.g. RANK-01
+    rank                 INTEGER NOT NULL,
+    tier                 INTEGER NOT NULL, -- 1|2|3|4
+    name                 TEXT NOT NULL,
+    authority            TEXT DEFAULT '',
+    court                TEXT DEFAULT '',
+    basis_json           TEXT DEFAULT '[]',
+    evidence_needed_json TEXT DEFAULT '[]',
+    assurance            INTEGER DEFAULT 0,
+    notes                TEXT DEFAULT '',
+    created_at           TEXT DEFAULT (datetime('now')),
+    updated_at           TEXT DEFAULT (datetime('now'))
+);
+
+-- Overall case state (single-row table, id=1)
+CREATE TABLE IF NOT EXISTS case_state (
+    id                   INTEGER PRIMARY KEY DEFAULT 1,
+    assurance            INTEGER NOT NULL,
+    assurance_label      TEXT NOT NULL,
+    severity             INTEGER NOT NULL,
+    days_since_contact   INTEGER NOT NULL,
+    last_contact_date    TEXT NOT NULL,
+    total_violations     INTEGER NOT NULL,
+    total_facts          INTEGER NOT NULL,
+    total_evidence_atoms INTEGER NOT NULL,
+    sbna                 TEXT DEFAULT '',
+    updated_at           TEXT DEFAULT (datetime('now'))
+);
+
+-- Indexes
+CREATE INDEX IF NOT EXISTS idx_facts_state ON extracted_facts(fact_state);
+CREATE INDEX IF NOT EXISTS idx_atoms_priority ON named_evidence_atoms(priority);
+CREATE INDEX IF NOT EXISTS idx_violations_cat ON violations_inventory(category);
+CREATE INDEX IF NOT EXISTS idx_vehicles_rank ON litigation_vehicles(rank);
+CREATE INDEX IF NOT EXISTS idx_vehicles_tier ON litigation_vehicles(tier);
+"""
+
+
+def add_case_intelligence_schema(conn) -> None:
+    """Create the case-intelligence tables in *conn* (idempotent).
+
+    Uses ``CREATE TABLE IF NOT EXISTS`` throughout, so it is safe to call
+    on an existing database — it will only add tables that are absent.
+    """
+    conn.executescript(CASE_INTELLIGENCE_SCHEMA)
+    conn.commit()
+
+
+def _current_schema_version(conn) -> str:
+    """Return the stored schema_version, or '0.0.0' if not set."""
+    try:
+        row = conn.execute(
+            "SELECT value FROM settings WHERE key = 'schema_version'"
+        ).fetchone()
+        return row[0] if row else "0.0.0"
+    except Exception:
+        return "0.0.0"
+
 
 def init_db():
-    """Initialize the Copilot state database with full schema."""
+    """Initialize the Copilot state database with full schema.
+
+    Idempotent: safe to call on both new and existing databases.
+    All DDL uses ``CREATE TABLE IF NOT EXISTS`` / ``CREATE INDEX IF NOT EXISTS``,
+    so existing data is never dropped.  The schema_version is bumped to
+    ``1.1.0`` only when the current stored version is older.
+    """
     conn = sqlite3.connect(str(DB_PATH))
     conn.executescript(SCHEMA)
-    conn.execute(
-        "INSERT OR REPLACE INTO settings (key, value) VALUES (?, ?)",
-        ("schema_version", "1.0.0"),
-    )
+    add_case_intelligence_schema(conn)
+    existing_version = _current_schema_version(conn)
+    # Only update the version tag when we are actually upgrading.
+    if existing_version < "1.1.0":
+        conn.execute(
+            "INSERT OR REPLACE INTO settings (key, value) VALUES (?, ?)",
+            ("schema_version", "1.1.0"),
+        )
     conn.execute(
         "INSERT OR REPLACE INTO settings (key, value) VALUES (?, ?)",
         ("created_by", "copilot_state_init"),
