@@ -1,0 +1,179 @@
+[
+  {
+    "filing_id": "F10",
+    "name": "COA Emergency Motion",
+    "court": "Michigan Court of Appeals",
+    "deadline": "2026-04-01",
+    "days_remaining": 14,
+    "business_days": 10,
+    "urgency": 100,
+    "severity": "CRITICAL",
+    "consequence": "No emergency relief \u2014 continued PT suspension",
+    "rule": "MCR 7.211(C)(6) \u2014 Emergency motion filed with brief",
+    "service_to": [
+      "Emily A. Watson"
+    ],
+    "dependencies": [
+      "F9"
+    ]
+  },
+  {
+    "filing_id": "F3",
+    "name": "Disqualification Motion (MCR 2.003)",
+    "court": "14th Circuit Court",
+    "deadline": "2026-04-01",
+    "days_remaining": 14,
+    "business_days": 10,
+    "urgency": 94,
+    "severity": "HIGH",
+    "consequence": "Waiver of disqualification right",
+    "rule": "MCR 2.003(D)(1) \u2014 Filed when grounds discovered",
+    "service_to": [
+      "Emily A. Watson",
+      "Hon. Jenny L. McNeill (via clerk)"
+    ],
+    "dependencies": []
+  },
+  {
+    "filing_id": "F9",
+    "name": "COA Brief on Appeal",
+    "court": "Michigan Court of Appeals",
+    "deadline": "2026-04-15",
+    "days_remaining": 28,
+    "business_days": 20,
+    "urgency": 90,
+    "severity": "CATASTROPHIC",
+    "consequence": "APPEAL DISMISSAL \u2014 MCR 7.217(B)(1)",
+    "rule": "MCR 7.212(A)(1) \u2014 56 days from claim of appeal",
+    "service_to": [
+      "Emily A. Watson (2160 Garland Dr, Norton Shores MI 49441)"
+    ],
+    "dependencies": [
+      "F3"
+    ]
+  },
+  {
+    "filing_id": "F1",
+    "name": "Emergency TRO (Housing)",
+    "court": "14th Circuit Court \u2014 Chief Judge Kenneth Hoopes",
+    "deadline": "2026-04-15",
+    "days_remaining": 28,
+    "business_days": 20,
+    "urgency": 54,
+    "severity": "MEDIUM",
+    "consequence": "Continued housing instability / illegal eviction risk",
+    "rule": "MCR 3.310 \u2014 Temporary restraining order",
+    "service_to": [
+      "Shady Oaks MHP",
+      "Cricklewood MHP LLC"
+    ],
+    "dependencies": []
+  },
+  {
+    "filing_id": "F7",
+    "name": "Custody Modification Motion",
+    "court": "14th Circuit Court",
+    "deadline": "2026-05-01",
+    "days_remaining": 44,
+    "business_days": 32,
+    "urgency": 44,
+    "severity": "HIGH",
+    "consequence": "Current 79-overnight order stands (effectively 0 due to suspension)",
+    "rule": "MCL 722.27(1)(c) \u2014 Proper cause / change of circumstances",
+    "service_to": [
+      "Emily A. Watson"
+    ],
+    "dependencies": [
+      "F3"
+    ]
+  },
+  {
+    "filing_id": "F5",
+    "name": "MSC Original Action",
+    "court": "Michigan Supreme Court",
+    "deadline": "2026-05-15",
+    "days_remaining": 58,
+    "business_days": 42,
+    "urgency": 44,
+    "severity": "HIGH",
+    "consequence": "No MSC intervention \u2014 remain in Muskegon courts",
+    "rule": "Const 1963 Art 6 \u00a74 \u2014 Superintending control",
+    "service_to": [
+      "Emily A. Watson",
+      "14th Circuit Court Clerk"
+    ],
+    "dependencies": [
+      "F3"
+    ]
+  },
+  {
+    "filing_id": "F8",
+    "name": "PPO Termination / Modification",
+    "court": "14th Circuit Court",
+    "deadline": "2026-05-15",
+    "days_remaining": 58,
+    "business_days": 42,
+    "urgency": 36,
+    "severity": "MEDIUM",
+    "consequence": "PPO remains in effect (criminal contempt risk)",
+    "rule": "MCL 600.2950(8) \u2014 Motion to modify/terminate PPO",
+    "service_to": [
+      "Emily A. Watson"
+    ],
+    "dependencies": []
+  },
+  {
+    "filing_id": "F2",
+    "name": "Amended Complaint (Housing)",
+    "court": "14th Circuit Court \u2014 Chief Judge Kenneth Hoopes",
+    "deadline": "2026-05-01",
+    "days_remaining": 44,
+    "business_days": 32,
+    "urgency": 28,
+    "severity": "LOW",
+    "consequence": "Original complaint stands (weaker arguments)",
+    "rule": "MCR 2.118(A)(1) \u2014 Amendment as of right",
+    "service_to": [
+      "Shady Oaks MHP",
+      "Cricklewood MHP LLC"
+    ],
+    "dependencies": [
+      "F1"
+    ]
+  },
+  {
+    "filing_id": "F4",
+    "name": "Federal \u00a71983 Complaint",
+    "court": "US District Court, Western District of Michigan",
+    "deadline": "2026-06-01",
+    "days_remaining": 75,
+    "business_days": 52,
+    "urgency": 22,
+    "severity": "HIGH",
+    "consequence": "Time-barred claims for events >3 years old",
+    "rule": "42 USC \u00a71983 \u2014 Statute of limitations: 3 years (MI personal injury)",
+    "service_to": [
+      "Emily A. Watson",
+      "Ronald T. Berry",
+      "Jennifer Barnes P55406",
+      "Hon. Jenny L. McNeill"
+    ],
+    "dependencies": []
+  },
+  {
+    "filing_id": "F6",
+    "name": "JTC Complaint",
+    "court": "Michigan Judicial Tenure Commission",
+    "deadline": "2026-06-30",
+    "days_remaining": 104,
+    "business_days": 73,
+    "urgency": 9,
+    "severity": "MEDIUM",
+    "consequence": "No disciplinary proceedings against McNeill",
+    "rule": "MCR 9.104 \u2014 Complaint to JTC",
+    "service_to": [
+      "Michigan JTC, 3034 W Grand Blvd, Suite 8-450, Detroit MI 48202"
+    ],
+    "dependencies": []
+  }
+]
