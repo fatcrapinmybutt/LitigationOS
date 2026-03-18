@@ -1,0 +1,295 @@
+{
+  "results": {
+    "F1": {
+      "total_citations": 38,
+      "avg_strength": 79.5,
+      "strong_count": 15,
+      "weak_count": 0,
+      "top_5": [
+        {
+          "name": "MCL 554.139",
+          "score": 88.5
+        },
+        {
+          "name": "MCL 450.4802",
+          "score": 84.0
+        },
+        {
+          "name": "MCL 600.2918",
+          "score": 84.0
+        },
+        {
+          "name": "MCL 600.5714",
+          "score": 84.0
+        },
+        {
+          "name": "MCL 125.2312f",
+          "score": 84.0
+        }
+      ],
+      "weak_5": []
+    },
+    "F2": {
+      "total_citations": 75,
+      "avg_strength": 77.6,
+      "strong_count": 11,
+      "weak_count": 0,
+      "top_5": [
+        {
+          "name": "MCL 450.4802",
+          "score": 88.5
+        },
+        {
+          "name": "MCL 125.1305",
+          "score": 84.0
+        },
+        {
+          "name": "MCL 445.903",
+          "score": 84.0
+        },
+        {
+          "name": "MCL 554.139",
+          "score": 84.0
+        },
+        {
+          "name": "MCL 554.139",
+          "score": 84.0
+        }
+      ],
+      "weak_5": []
+    },
+    "F3": {
+      "total_citations": 68,
+      "avg_strength": 84.4,
+      "strong_count": 57,
+      "weak_count": 0,
+      "top_5": [
+        {
+          "name": "MCL 722.23",
+          "score": 91.5
+        },
+        {
+          "name": "MCL 722.27a",
+          "score": 91.5
+        },
+        {
+          "name": "MCL 750.423",
+          "score": 91.5
+        },
+        {
+          "name": "MCR 2.003(C)(1)",
+          "score": 91.5
+        },
+        {
+          "name": "MCR 2.003(C)(1)",
+          "score": 91.5
+        }
+      ],
+      "weak_5": []
+    },
+    "F4": {
+      "total_citations": 82,
+      "avg_strength": 72.9,
+      "strong_count": 23,
+      "weak_count": 0,
+      "top_5": [
+        {
+          "name": "MCL 750.423",
+          "score": 91.5
+        },
+        {
+          "name": "MCL 552.511b",
+          "score": 88.5
+        },
+        {
+          "name": "MCL 722.27",
+          "score": 88.5
+        },
+        {
+          "name": "MCR 2.003(C)",
+          "score": 88.5
+        },
+        {
+          "name": "MCR 2.612(C)(1)",
+          "score": 88.5
+        }
+      ],
+      "weak_5": []
+    },
+    "F5": {
+      "total_citations": 137,
+      "avg_strength": 82.0,
+      "strong_count": 82,
+      "weak_count": 0,
+      "top_5": [
+        {
+          "name": "MCL 722.23",
+          "score": 91.5
+        },
+        {
+          "name": "MCL 722.27",
+          "score": 91.5
+        },
+        {
+          "name": "MCL 722.27a",
+          "score": 91.5
+        },
+        {
+          "name": "MCL 722.23",
+          "score": 91.5
+        },
+        {
+          "name": "MCL 722.27a",
+          "score": 91.5
+        }
+      ],
+      "weak_5": []
+    },
+    "F6": {
+      "total_citations": 28,
+      "avg_strength": 81.8,
+      "strong_count": 16,
+      "weak_count": 0,
+      "top_5": [
+        {
+          "name": "MCL 750.539",
+          "score": 88.5
+        },
+        {
+          "name": "MCR 2.003",
+          "score": 88.5
+        },
+        {
+          "name": "MCR 2.003(D)(1)",
+          "score": 88.5
+        },
+        {
+          "name": "MCR 3.207(C)(5)",
+          "score": 88.5
+        },
+        {
+          "name": "MCR 2.003",
+          "score": 88.5
+        }
+      ],
+      "weak_5": []
+    },
+    "F7": {
+      "total_citations": 61,
+      "avg_strength": 82.4,
+      "strong_count": 39,
+      "weak_count": 0,
+      "top_5": [
+        {
+          "name": "MCL 722.27",
+          "score": 91.5
+        },
+        {
+          "name": "MCR 3.210",
+          "score": 91.5
+        },
+        {
+          "name": "MCL 722.27",
+          "score": 88.5
+        },
+        {
+          "name": "MCL 722.27a",
+          "score": 88.5
+        },
+        {
+          "name": "MCL 722.27",
+          "score": 88.5
+        }
+      ],
+      "weak_5": []
+    },
+    "F8": {
+      "total_citations": 42,
+      "avg_strength": 83.3,
+      "strong_count": 34,
+      "weak_count": 0,
+      "top_5": [
+        {
+          "name": "MCL 600.2950a",
+          "score": 88.5
+        },
+        {
+          "name": "MCL 600.2950",
+          "score": 88.5
+        },
+        {
+          "name": "MCL 600.2950a",
+          "score": 88.5
+        },
+        {
+          "name": "MCR 3.207(B)(1)",
+          "score": 88.5
+        },
+        {
+          "name": "MCR 2.612(C)(1)",
+          "score": 88.5
+        }
+      ],
+      "weak_5": []
+    },
+    "F9": {
+      "total_citations": 93,
+      "avg_strength": 83.2,
+      "strong_count": 67,
+      "weak_count": 0,
+      "top_5": [
+        {
+          "name": "MCR 3.207(B)",
+          "score": 91.5
+        },
+        {
+          "name": "MCR 2.003(C)(1)",
+          "score": 91.5
+        },
+        {
+          "name": "MCL 600.2950",
+          "score": 88.5
+        },
+        {
+          "name": "MCL 722.23",
+          "score": 88.5
+        },
+        {
+          "name": "MCL 722.27",
+          "score": 88.5
+        }
+      ],
+      "weak_5": []
+    },
+    "F10": {
+      "total_citations": 13,
+      "avg_strength": 81.2,
+      "strong_count": 7,
+      "weak_count": 0,
+      "top_5": [
+        {
+          "name": "MCR 3.207",
+          "score": 88.5
+        },
+        {
+          "name": "MCR 3.210",
+          "score": 88.5
+        },
+        {
+          "name": "MCR 3.207(B)(1)",
+          "score": 84.0
+        },
+        {
+          "name": "MCR 3.207(B)",
+          "score": 84.0
+        },
+        {
+          "name": "MCR 2.003(C)",
+          "score": 84.0
+        }
+      ],
+      "weak_5": []
+    }
+  },
+  "generated": "2026-03-18T19:50:00.608699"
+}
