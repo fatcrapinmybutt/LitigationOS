@@ -1,0 +1,712 @@
+{
+  "generated": "2026-03-17 12:52:42",
+  "agent": "LEVIATHAN_WAVE_10_MSC_AUTHORITY_MINING",
+  "case": "Pigors v. Watson (2024-001507-DC)",
+  "files_scanned": 10926,
+  "files_with_citations": 1527,
+  "db_citations_checked": 55618,
+  "total_raw_matches": 487530,
+  "total_unique_citations": 12075,
+  "total_new_citations": 5969,
+  "type_breakdown": {
+    "MSC_OPINION": {
+      "raw_matches": 9190,
+      "unique": 256,
+      "new": 77
+    },
+    "COA_OPINION": {
+      "raw_matches": 7844,
+      "unique": 307,
+      "new": 89
+    },
+    "MCR": {
+      "raw_matches": 282693,
+      "unique": 6483,
+      "new": 4489
+    },
+    "MCL": {
+      "raw_matches": 126918,
+      "unique": 3567,
+      "new": 159
+    },
+    "CONST": {
+      "raw_matches": 1601,
+      "unique": 48,
+      "new": 41
+    },
+    "CONST_ART": {
+      "raw_matches": 977,
+      "unique": 43,
+      "new": 39
+    },
+    "SCOTUS": {
+      "raw_matches": 1756,
+      "unique": 110,
+      "new": 77
+    },
+    "NW2d": {
+      "raw_matches": 3808,
+      "unique": 111,
+      "new": 55
+    },
+    "6TH_CIR": {
+      "raw_matches": 210,
+      "unique": 37,
+      "new": 33
+    },
+    "MRE": {
+      "raw_matches": 46229,
+      "unique": 1016,
+      "new": 883
+    },
+    "USC": {
+      "raw_matches": 6304,
+      "unique": 97,
+      "new": 27
+    }
+  },
+  "filing_coverage": {
+    "F10_MISCONDUCT": 2343,
+    "F1_DISQUALIFICATION": 1256,
+    "F2_CUSTODY": 2583,
+    "F3_CONTEMPT": 2878,
+    "F4_FOC": 792,
+    "F5_DISCOVERY": 1360,
+    "F6_PPO": 2311,
+    "F7_COA_APPEAL": 1652,
+    "F8_DUE_PROCESS": 8903,
+    "F9_FRAUD": 687,
+    "GENERAL": 11330
+  },
+  "fabrication_flags": 106,
+  "fabrication_details": [
+    {
+      "pattern": "McCraney v Ford Motor Co",
+      "flag_type": "KNOWN_FABRICATION",
+      "file": "CITATION_AUDIT_REPORT.md"
+    },
+    {
+      "pattern": "McCraney v Ford Motor Co",
+      "flag_type": "KNOWN_FABRICATION",
+      "file": "CITATION_AUDIT_REPORT.md"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "CITATION_AUDIT_REPORT.md"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "CITATION_AUDIT_REPORT.md"
+    },
+    {
+      "pattern": "McCraney v Ford Motor Co",
+      "flag_type": "KNOWN_FABRICATION",
+      "file": "CITATION_HARDENING_REPORT.md"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "CITATION_HARDENING_REPORT.md"
+    },
+    {
+      "pattern": "Jane Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "CITATION_HARDENING_REPORT.md"
+    },
+    {
+      "pattern": "Patricia Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "CITATION_HARDENING_REPORT.md"
+    },
+    {
+      "pattern": "Jane Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "CROSS_FILING_CONSISTENCY_REPORT.md"
+    },
+    {
+      "pattern": "Patricia Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "CROSS_FILING_CONSISTENCY_REPORT.md"
+    },
+    {
+      "pattern": "McCraney v Ford Motor Co",
+      "flag_type": "KNOWN_FABRICATION",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "Jane Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "Patricia Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "SBN P35878",
+      "flag_type": "FABRICATED_BAR_NUMBER",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "91% alienation",
+      "flag_type": "FABRICATED_STATISTIC",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "91% alienation",
+      "flag_type": "FABRICATED_STATISTIC",
+      "file": "DAMAGES_CALCULATION.md"
+    },
+    {
+      "pattern": "McCraney v Ford Motor Co",
+      "flag_type": "KNOWN_FABRICATION",
+      "file": "CITATION_AUDIT_REPORT.md"
+    },
+    {
+      "pattern": "McCraney v Ford Motor Co",
+      "flag_type": "KNOWN_FABRICATION",
+      "file": "CITATION_AUDIT_REPORT.md"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "CITATION_AUDIT_REPORT.md"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "CITATION_AUDIT_REPORT.md"
+    },
+    {
+      "pattern": "Jane Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "CROSS_FILING_CONSISTENCY_REPORT.md"
+    },
+    {
+      "pattern": "Patricia Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "CROSS_FILING_CONSISTENCY_REPORT.md"
+    },
+    {
+      "pattern": "Jane Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "enc_part6.py"
+    },
+    {
+      "pattern": "Patricia Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "enc_part6.py"
+    },
+    {
+      "pattern": "Patricia Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "filing_go_nogo_checker.py"
+    },
+    {
+      "pattern": "91% alienation",
+      "flag_type": "FABRICATED_STATISTIC",
+      "file": "gen_exec_dashboard.py"
+    },
+    {
+      "pattern": "91% alienation",
+      "flag_type": "FABRICATED_STATISTIC",
+      "file": "gen_exec_dashboard.py"
+    },
+    {
+      "pattern": "Jane Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "PROMPT_OPTIMIZATION_REPORT.md"
+    },
+    {
+      "pattern": "Patricia Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "PROMPT_OPTIMIZATION_REPORT.md"
+    },
+    {
+      "pattern": "91% alienation",
+      "flag_type": "FABRICATED_STATISTIC",
+      "file": "PROMPT_OPTIMIZATION_REPORT.md"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "qa_details_output.txt"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "qa_details_output.txt"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "qa_direct_output.txt"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "qa_direct_output.txt"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "qa_out_final.txt"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "qa_out_final.txt"
+    },
+    {
+      "pattern": "McCraney v Ford Motor Co",
+      "flag_type": "KNOWN_FABRICATION",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "Jane Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "Patricia Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "SBN P35878",
+      "flag_type": "FABRICATED_BAR_NUMBER",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "91% alienation",
+      "flag_type": "FABRICATED_STATISTIC",
+      "file": "SESSION_CONTEXT_SAVE_20260316.md"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "validate_authorities.py"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "validate_authorities.py"
+    },
+    {
+      "pattern": "MCL 600.2145",
+      "flag_type": "MISAPPLIED_CITATION",
+      "file": "validate_authorities.py"
+    },
+    {
+      "pattern": "Jane Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "validate_authorities.py"
+    },
+    {
+      "pattern": "Patricia Berry",
+      "flag_type": "FABRICATED_PARTY",
+      "file": "validate_authorities.py"
+    }
+  ],
+  "top_20_citations": [
+    {
+      "type": "MCR",
+      "citation": "MCR 3.707",
+      "count": 16354,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MRE",
+      "citation": "MRE 401",
+      "count": 15556,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCL",
+      "citation": "MCL 600.2950",
+      "count": 14665,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCR",
+      "citation": "MCR 7.205",
+      "count": 14226,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCR",
+      "citation": "MCR 7.205(A)",
+      "count": 13111,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCR",
+      "citation": "MCR 3.207",
+      "count": 12423,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCL",
+      "citation": "MCL 722.27",
+      "count": 11742,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCL",
+      "citation": "MCL 722.23",
+      "count": 11244,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCR",
+      "citation": "MCR 2.003",
+      "count": 11208,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCR",
+      "citation": "MCR 2.119",
+      "count": 9436,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCR",
+      "citation": "MCR 9.220(A)",
+      "count": 7381,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MRE",
+      "citation": "MRE 602",
+      "count": 6587,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCR",
+      "citation": "MCR 2.517(A)",
+      "count": 6216,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MRE",
+      "citation": "MRE 901",
+      "count": 5887,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCR",
+      "citation": "MCR 2.003(C)",
+      "count": 5878,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCL",
+      "citation": "MCL 722.27a",
+      "count": 5555,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MRE",
+      "citation": "MRE 801",
+      "count": 5086,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCR",
+      "citation": "MCR 2.612(C)",
+      "count": 4508,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCL",
+      "citation": "MCL 600.2910",
+      "count": 4370,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    },
+    {
+      "type": "MCL",
+      "citation": "MCL 750.423",
+      "count": 4171,
+      "filing_targets": [
+        "F10_MISCONDUCT",
+        "F1_DISQUALIFICATION",
+        "F2_CUSTODY",
+        "F3_CONTEMPT",
+        "F4_FOC",
+        "F5_DISCOVERY",
+        "F6_PPO",
+        "F7_COA_APPEAL",
+        "F8_DUE_PROCESS",
+        "F9_FRAUD",
+        "GENERAL"
+      ],
+      "in_db": true
+    }
+  ]
+}

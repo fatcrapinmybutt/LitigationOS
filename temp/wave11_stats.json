@@ -1,0 +1,77 @@
+{
+  "wave": 11,
+  "task": "FEDERAL_CASELAW_SCOTUS_AUTHORITY_MINING",
+  "timestamp": "2026-03-16T00:00:00Z",
+  "status": "COMPLETE",
+  "summary": {
+    "total_unique_citations": 94,
+    "breakdown": {
+      "SCOTUS": 69,
+      "6TH_CIR": 15,
+      "OTHER_CIRCUITS": 2,
+      "USC_STATUTES": 11,
+      "CONSTITUTIONAL_AMENDMENTS": 5,
+      "KEY_DOCTRINES": 6
+    },
+    "files_mined": 98,
+    "directories_searched": 5,
+    "priority_authorities_found": 8,
+    "priority_authorities_total": 8,
+    "priority_hit_rate": 1.0
+  },
+  "priority_authority_status": {
+    "Mathews_v_Eldridge": { "citation": "424 U.S. 319 (1976)", "found": true, "file_count": 6, "filings": ["F4", "F9"] },
+    "Caperton_v_Massey": { "citation": "556 U.S. 868 (2009)", "found": true, "file_count": 4, "filings": ["F3", "F4", "F6"] },
+    "Santosky_v_Kramer": { "citation": "455 U.S. 745 (1982)", "found": true, "file_count": 10, "filings": ["F4", "F8", "F9"] },
+    "Troxel_v_Granville": { "citation": "530 U.S. 57 (2000)", "found": true, "file_count": 15, "filings": ["F3", "F4", "F6", "F8", "F9"] },
+    "Turner_v_Rogers": { "citation": "564 U.S. 431 (2011)", "found": true, "file_count": 8, "filings": ["F1", "F3", "F4", "F8"] },
+    "Boddie_v_Connecticut": { "citation": "401 U.S. 371 (1971)", "found": true, "file_count": 5, "filings": ["F4"] },
+    "Monell_v_NYC": { "citation": "436 U.S. 658 (1978)", "found": true, "file_count": 8, "filings": ["F4", "F5"] },
+    "Strickland_v_Washington": { "citation": "466 U.S. 668 (1984)", "found": true, "file_count": 6, "filings": ["F3", "F6", "F8", "F9"] }
+  },
+  "doctrine_defense_status": {
+    "Rooker_Feldman": { "status": "THOROUGHLY_ADDRESSED", "strength": "HIGH", "cases_cited": 4 },
+    "Younger_Abstention": { "status": "THOROUGHLY_ADDRESSED", "strength": "HIGH", "cases_cited": 3 },
+    "Domestic_Relations_Exception": { "status": "THOROUGHLY_ADDRESSED", "strength": "HIGH", "cases_cited": 2 },
+    "Qualified_Immunity": { "status": "THOROUGHLY_ADDRESSED", "strength": "HIGH", "cases_cited": 3 },
+    "Judicial_Immunity": { "status": "THOROUGHLY_ADDRESSED", "strength": "HIGH", "cases_cited": 3 },
+    "Monell_Municipal_Liability": { "status": "ADDRESSED", "strength": "MODERATE", "cases_cited": 2 }
+  },
+  "emerging_theories": [
+    { "name": "Immunity Erosion via Clear Absence of Jurisdiction", "strength": "HIGH" },
+    { "name": "Domestic Relations Exception Narrowing", "strength": "HIGH" },
+    { "name": "Monell Pattern/Practice in Family Court", "strength": "MODERATE" },
+    { "name": "Private Party Conspiracy (Watson-Berry-McNeill)", "strength": "HIGH" },
+    { "name": "Heck Bar Avoidance", "strength": "HIGH" },
+    { "name": "Younger Bad Faith Exception", "strength": "HIGH" }
+  ],
+  "recommended_additions": [
+    { "case": "Lassiter v. Dept. of Social Services", "citation": "452 U.S. 18 (1981)", "purpose": "Right to counsel in parental termination", "target": "F4 Count VIII" },
+    { "case": "Owen v. City of Independence", "citation": "445 U.S. 622 (1980)", "purpose": "Municipalities cannot claim qualified immunity", "target": "F4 Monell count" },
+    { "case": "City of Canton v. Harris", "citation": "489 U.S. 378 (1989)", "purpose": "Failure-to-train liability standard", "target": "F4 Monell count" },
+    { "case": "Connick v. Thompson", "citation": "563 U.S. 51 (2011)", "purpose": "Deliberate indifference standard", "target": "F4 Monell count" },
+    { "case": "Lance v. Dennis", "citation": "546 U.S. 459 (2006)", "purpose": "Rooker-Feldman limited to state-court losers", "target": "F4 jurisdictional defense" },
+    { "case": "Tennessee v. Lane", "citation": "541 U.S. 509 (2004)", "purpose": "Access to courts as fundamental right", "target": "F4 Count IX" }
+  ],
+  "authority_chains": {
+    "parental_rights_cascade": { "length": 5, "status": "COMPLETE", "cases": ["Meyer 1923", "Pierce 1925", "Stanley 1972", "Santosky 1982", "Troxel 2000"] },
+    "due_process_framework": { "length": 4, "status": "COMPLETE", "cases": ["Goldberg 1970", "Fuentes 1972", "Mathews 1976", "Turner 2011"] },
+    "access_to_courts": { "length": 3, "status": "COMPLETE", "cases": ["Boddie 1971", "Bounds 1977", "Christopher 2002"] },
+    "judicial_immunity_erosion": { "length": 4, "status": "COMPLETE", "cases": ["Ex parte Young 1908", "Stump 1978", "Mireles 1991", "Barnes 6th Cir 1997"] },
+    "rooker_feldman_narrowing": { "length": 4, "status": "COMPLETE", "cases": ["Rooker 1923", "Feldman 1983", "Exxon Mobil 2005", "McCormick 6th Cir 2006"] }
+  },
+  "top_cited_scotus": [
+    { "case": "Troxel v. Granville", "mentions": 15 },
+    { "case": "Santosky v. Kramer", "mentions": 10 },
+    { "case": "Turner v. Rogers", "mentions": 8 },
+    { "case": "Stanley v. Illinois", "mentions": 8 },
+    { "case": "Monell v. NYC", "mentions": 8 }
+  ],
+  "top_cited_6th_circuit": [
+    { "case": "Catz v. Chalker", "mentions": 6 },
+    { "case": "McCormick v. Braverman", "mentions": 6 },
+    { "case": "Doe v. Claiborne County", "mentions": 4 },
+    { "case": "Kovacic v. Cuyahoga Cty.", "mentions": 4 },
+    { "case": "Thaddeus-X v. Blatter", "mentions": 4 }
+  ]
+}
