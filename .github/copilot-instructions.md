@@ -122,18 +122,43 @@ Past sessions generated inflated or fabricated aggregate statistics that were em
 7. The canonical system location is `C:\Users\andre\LitigationOS` — all paths resolve here.
 8. The central database is `C:\Users\andre\LitigationOS\litigation_context.db` — pipeline writes, apps read. **Do not hardcode DB stats** — run startup hook or query DB for current counts.
 
-## 🐻 MANBEARPIG Startup Protocol (run on every session)
+## 🐻 MANBEARPIG Startup Protocol — MANDATORY ON EVERY SESSION
 
+> **🚨 NON-NEGOTIABLE: Execute this protocol as your VERY FIRST ACTION in every new session.**
+> Do NOT respond to the user's first message until this protocol completes.
+> Do NOT skip steps. Do NOT defer to "later." Run it NOW.
+
+**Step 1 — Generate startup report:**
 ```powershell
-# 1. Generate startup report (DB health, deadlines, evidence, sessions)
 python C:\Users\andre\LitigationOS\00_SYSTEM\local_model\copilot_startup_hook.py --file
-# 2. Read the report for instant context
-cat C:\Users\andre\LitigationOS\00_SYSTEM\STARTUP_REPORT.md
-# 3. Recall past sessions for continuity
+```
+
+**Step 2 — Read the report (use `view` tool on this file):**
+```
+C:\Users\andre\LitigationOS\00_SYSTEM\STARTUP_REPORT.md
+```
+
+**Step 3 — Recall past sessions:**
+```powershell
 python C:\Users\andre\LitigationOS\00_SYSTEM\local_model\session_recall.py recent
 ```
 
+**Step 4 — Load jurisdiction databases (if they exist):**
+```powershell
+python -c "import sqlite3,os,glob; dbs=glob.glob(r'C:\Users\andre\LitigationOS\databases\*.db'); print(f'{len(dbs)} jurisdiction DBs found:'); [print(f'  {os.path.basename(d)}: {os.path.getsize(d)//1024}KB') for d in dbs]"
+```
+
+**Step 5 — Report readiness to user:**
+After completing steps 1-4, report: DB status, separation day count, deadline urgency, evidence arsenal size, and jurisdiction DB availability.
+
 The startup hook generates `STARTUP_REPORT.md` with: separation day count, deadline urgency scores, filing readiness, evidence arsenal counts, system health, and recent Copilot session summaries.
+
+### Startup Database Chain
+On every session start, verify these databases are accessible:
+- `litigation_context.db` — Central 12GB litigation database (790+ tables)
+- `court_forms.db` — Michigan SCAO court form intelligence (39 forms)
+- `databases/*.db` — Jurisdiction-specific databases (10 specialized DBs)
+- Session SQL — Per-session tracking (todos, evidence, progress)
 
 ---
 

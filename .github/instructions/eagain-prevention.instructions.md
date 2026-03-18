@@ -1,13 +1,291 @@
 ---
-description: "EAGAIN Prevention Protocol v2.0 — Expanded concurrency with pipe isolation architecture. Master defense against write EAGAIN, SQLITE_BUSY, and pipe buffer overflow. Apply to ALL interactions, ALL file types."
+description: "EAGAIN Prevention Protocol v3.0 — Maximum velocity with pipe-free architecture. Master defense against write EAGAIN, SQLITE_BUSY, and pipe buffer overflow. Apply to ALL interactions, ALL file types."
 applyTo: "**/*"
 ---
 
-# EAGAIN Prevention Protocol v2.0 — EXPANDED CONCURRENCY
+# EAGAIN Prevention Protocol v3.0 — MAXIMUM VELOCITY
 
-> **Upgrade from v1.0:** Engineering analysis proved task agents use ISOLATED pipes (separate
-> child processes). Agent pipe overflow kills only that agent — never the main session.
-> This allows safely expanding agent concurrency from 2→3 while keeping shell limits at 2.
+> **Upgrade path:** v1.0 (conservative) → v2.0 (isolated pipe proof) → **v3.0 (pipe-free-first architecture)**
+>
+> v3.0 insight: If the main session NEVER touches shared pipes, EAGAIN is structurally
+> impossible regardless of how many agents run. MCP commands + task agents + zero-pipe tools
+> cover 100% of use cases. PowerShell becomes a legacy fallback, not a primary tool.
+
+## Architecture: The Pipe-Free-First Principle
+
+```
+v1.0: Throttle everything → hope EAGAIN doesn't happen (reactive)
+v2.0: Separate shared/isolated budgets → expand agents safely (structural)
+v3.0: Eliminate shared pipes from normal workflow entirely (immune)
+
+The progression:
+  v1.0 → "Don't use too many pipes"         (mitigation)
+  v2.0 → "Only shell pipes are dangerous"    (isolation)
+  v3.0 → "Don't use shell pipes at all"      (elimination)
+```
+
+### Command Routing Hierarchy (v3.0 — MANDATORY)
+
+Every command MUST be routed through this hierarchy. The first viable option wins:
+
+```
+PRIORITY 1: Zero-pipe tools (view/edit/create/grep/glob/sql)
+  → Use when: reading files, editing code, searching, tracking state
+  → Pipe risk: ZERO. Unlimited. Always prefer.
+
+PRIORITY 2: MCP command-runner (exec_command/exec_python/exec_git)
+  → Use when: running scripts, builds, git, any non-interactive command
+  → Pipe risk: ZERO. Uses subprocess.run() — completely outside pipe pool.
+  → Output cap: 250KB (expanded from 100KB in v3.0)
+  → This is the PRIMARY command execution method.
+
+PRIORITY 3: Task agents (explore/task/general-purpose/code-review)
+  → Use when: complex multi-step work, parallel investigation, code review
+  → Pipe risk: ISOLATED. Each agent = separate process. Max 4 concurrent.
+  → This is the PRIMARY parallelism method.
+
+PRIORITY 4: PowerShell (async/sync shells)
+  → Use when: interactive debugging, REPL sessions, live process monitoring
+  → Pipe risk: ⚠️ SHARED. Max 2 concurrent. LAST RESORT only.
+  → In v3.0, most sessions should use 0 shells for the entire session.
+```
+
+### Why This Makes EAGAIN Structurally Impossible
+
+```
+Main session tool calls:
+  view/edit/grep/glob/sql  →  0 pipes  (in-process)
+  MCP exec_command         →  0 pipes  (MCP server's subprocess, not main pipes)
+  task(agent)              →  0 SHARED pipes  (agent has isolated child process)
+  powershell               →  3 SHARED pipes  ← THE ONLY VECTOR
+
+If powershell is never called → 0 shared pipes → EAGAIN is impossible.
+v3.0 goal: 0 powershell calls per session for 95%+ of sessions.
+```
+
+## Concurrency Limits (v3.0)
+
+### Primary: Agent Fleet (ISOLATED — the velocity engine)
+
+| Setting | v1.0 | v2.0 | **v3.0** | Rationale |
+|---------|------|------|----------|-----------|
+| Max background agents | 2 | 3 | **4** | Isolated pipes. OS handles 4 child processes easily. |
+| Agent spawn cooldown | 2s | 1s | **0.5s** | Agents don't share any pipe state. Minimal cooldown for OS scheduler. |
+| Parallel dispatch per tool call | 1 | 2 | **3** | 3 agents in one tool call — all get independent pipes. |
+| Agent output read | truncated | full | **full + cached in session SQL** | Never lose agent work to compaction. |
+
+### Secondary: Shell Pool (SHARED — legacy fallback)
+
+| Setting | v1.0 | v2.0 | **v3.0** | Rationale |
+|---------|------|------|----------|-----------|
+| Max async shells | 2 | 2 | **2** (unchanged) | Shared pipes remain dangerous. But rarely needed now. |
+| Shell spawn cooldown | 2s | 2s | **2s** (unchanged) | Conservative for the rare case shells are used. |
+| Shell output cap | 100 lines | 100 lines | **200 lines** (expanded) | With file-redirect-first, direct pipe use is rare and short. |
+| Shell + agent same turn | NEVER | OK | **OK** | Different pipe pools, confirmed safe in v2.0. |
+
+### Tertiary: MCP Commands (ZERO pipes — unlimited)
+
+| Setting | v1.0 | v2.0 | **v3.0** | Rationale |
+|---------|------|------|----------|-----------|
+| MCP output cap | 100KB | 100KB | **250KB** | subprocess.run() = no pipe pressure. More output = larger context window. |
+| MCP timeout | 300s | 300s | **600s** | Long-running scripts need full 10-minute window. |
+| MCP concurrent calls | unlimited | unlimited | **unlimited** | Zero pipe risk. No throttling needed. |
+
+### Combined Limits (v3.0)
+
+| Resource | Max | Pipe Type | Notes |
+|----------|-----|-----------|-------|
+| Task agents | **4** | Isolated | The primary parallelism engine |
+| PowerShell shells | **2** | Shared | Legacy fallback — avoid when possible |
+| MCP commands | **Unlimited** | None | Primary command execution — no limits |
+| Zero-pipe tools | **Unlimited** | None | view/edit/grep/glob/sql — always safe |
+| Total concurrent processes | **6** | 4 isolated + 2 shared | But shared pipes used only as last resort |
+
+## Context Window Expansion (v3.0)
+
+### The Problem (v1.0-v2.0)
+Small output caps + conservative limits = agent can only see ~100 lines per command, 100KB per MCP call.
+For a 10 GB litigation database with 782 tables, this was a bottleneck.
+
+### The Solution (v3.0): Adaptive Output Routing
+
+```
+Command classification → automatic routing:
+
+SHORT OUTPUT (<50 lines expected):
+  → Direct pipe OK (shell or MCP)
+  → Examples: git status, file count, simple query
+  → Fast: no file I/O overhead
+
+MEDIUM OUTPUT (50-500 lines expected):
+  → MCP with 250KB cap (expanded from 100KB)
+  → Examples: test results, build output, DB schema dump
+  → Trade-off: larger context window, still fits in one read
+
+LARGE OUTPUT (>500 lines expected):
+  → File redirect → view tool (chunked reading)
+  → Examples: full git diff, recursive file listing, large query results
+  → Pattern: command > temp/output.txt && echo "DONE"
+  → Then: view("temp/output.txt", view_range=[1, 200])
+
+STREAMING OUTPUT (continuous/unknown size):
+  → Task agent (isolated pipes, own buffer management)
+  → Examples: watch mode, long builds, pipeline runs
+  → Agent handles buffering internally — main session immune
+```
+
+### Expanded Data Throughput
+
+| Channel | v2.0 | **v3.0** | Use Case |
+|---------|------|----------|----------|
+| Shell pipe | 100 lines (~10KB) | **200 lines (~20KB)** | Quick checks only |
+| MCP output | 100KB | **250KB** | Builds, tests, queries |
+| Agent result | ~50KB typical | **full + SQL cache** | Complex multi-step work |
+| File redirect + view | unlimited (chunked) | **unlimited** | Large outputs |
+| SQL query result | limited by tool | **unlimited rows** | DB analysis |
+
+### Agent Result Preservation (NEW in v3.0)
+
+```
+Problem: Context compaction deletes agent results. If you don't read_agent
+immediately, work is LOST.
+
+v3.0 solution: Cache critical agent results in session SQL DB.
+After every agent completion:
+  1. read_agent → get full result
+  2. INSERT INTO agent_results (agent_id, task, result_summary, ...) VALUES (...)
+  3. Result survives compaction — queryable anytime
+
+This effectively gives infinite "context window" for agent work products.
+```
+
+## Dynamic Throttle Protocol (v3.0 — faster recovery)
+
+| Level | Name | Shells | Agents | MCP | Trigger | Recovery Time |
+|-------|------|--------|--------|-----|---------|--------------|
+| **L0** | MAXIMUM | 2 | 4 | ∞ | No symptoms | — |
+| **L1** | ELEVATED | 1 | 4 | ∞ | 1 shell timeout | 3 min stable → L0 |
+| **L2** | WARNING | 1 | 3 | ∞ | Agent error or 2+ shell issues | 3 min stable → L1 |
+| **L3** | CRITICAL | 0 | 2 | ∞ | write EAGAIN detected | 5 min stable → L2 |
+| **L4** | EMERGENCY | 0 | 1 | ∞ | Multiple EAGAIN + invalid shells | 5 min stable → L3 |
+| **L5** | DEAD | 0 | 0 | ∞ | Agents also failing | AUTONOMOS only |
+
+**Key v3.0 change:** MCP is ALWAYS available (∞) at every level — it uses zero pipes.
+Even at L5 (DEAD), MCP exec_command still works. This means you're never truly stuck.
+
+**Faster recovery:** De-escalation time reduced from 5 min → 3 min for L0-L2.
+Agent throttle starts at L2 not L1 (agents are isolated — no reason to reduce early).
+
+## Pre-Spawn Decision Tree (v3.0)
+
+```
+Need to run a command?
+  ├─ Is it non-interactive? → USE MCP (exec_command/exec_python/exec_git)
+  │   └─ Done. Zero pipes. No spawn check needed.
+  │
+  ├─ Need parallel work? → USE TASK AGENT
+  │   ├─ list_agents → running < 4? → spawn agent (0.5s cooldown)
+  │   ├─ Can dispatch up to 3 agents in one tool call
+  │   └─ Agent + shell in same turn is OK
+  │
+  └─ Need interactive/REPL? → USE POWERSHELL (last resort)
+      ├─ list_powershell → active < 2? → spawn shell (2s cooldown)
+      ├─ Output MUST be < 200 lines or file-redirected
+      └─ Stop shell IMMEDIATELY after use
+```
+
+## Recovery Protocol (v3.0 — MCP-aware)
+
+```
+STEP 1: FULL STOP on shells — Do not spawn new shells
+STEP 2: list_powershell → stop ALL sessions (every one)
+STEP 3: Wait 3 seconds (reduced from 5s — faster recovery)
+STEP 4: MCP exec_command("Write-Output 'alive'") — test MCP (always works)
+STEP 5: If MCP works (it should) → continue all work through MCP + agents
+STEP 6: Test ONE shell → if works, resume at L2 for 3 min
+STEP 7: If shells dead → stay on MCP + agents (L3/L4) — still fully functional
+STEP 8: If agents also dead → MCP-only mode (L5) — exec_command handles everything
+STEP 9: If MCP dead → AUTONOMOS file-based (create scripts → user runs)
+```
+
+**v3.0 insight:** Because MCP uses subprocess.run() (not session pool pipes),
+MCP NEVER fails from EAGAIN. Even when all shells and agents are dead, MCP works.
+This makes the system **always recoverable** without user intervention.
+
+## Integration Notes
+
+### cycle_method.py (v3.0 tuning)
+- Chunk size: 4KB → **8KB** (12.5% of 64KB pipe buffer — safe with flush-after-chunk)
+- Max retries: 10 (unchanged — proven reliable)
+- Backoff: 10ms → 640ms (unchanged)
+- Used only by Python scripts writing to stdout — agents handle their own I/O
+
+### command_runner.py (v3.0 expansion)
+- MAX_OUTPUT: 100KB → **250KB** (subprocess.run() = no pipe pressure)
+- DEFAULT_TIMEOUT: 300s → **600s** (long pipeline runs need full window)
+- New: result caching in temp files for outputs > 250KB
+
+### db_lock_manager.py (unchanged)
+- Max 3 concurrent DB connections (agents share the pool)
+- busy_timeout=60000ms, WAL mode, cache_size=-32000
+- Agent expansion to 4 does NOT increase DB pressure
+
+### agent-activation.instructions.md (v3.0 sync)
+- Agent budget: 3 → **4**
+- Agent cooldown: 1s → **0.5s**
+- Parallel dispatch: 2 → **3 per tool call**
+
+### shell-management.instructions.md (v3.0 sync)
+- Shell budget: 2 (unchanged — legacy fallback)
+- Output cap: 100 → **200 lines**
+- Shell-free sessions are the GOAL — most sessions should use 0 shells
+
+## v3.0 Quick Reference Card
+
+```
+╔═══════════════════════════════════════════════════════════════╗
+║     EAGAIN PREVENTION v3.0 — MAXIMUM VELOCITY QUICK REF     ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                               ║
+║  COMMAND ROUTING (in priority order):                         ║
+║    1. Zero-pipe tools (view/edit/grep/glob/sql)  = UNLIMITED  ║
+║    2. MCP (exec_command/exec_python/exec_git)    = UNLIMITED  ║
+║    3. Task agents (explore/task/general-purpose)  = 4 max     ║
+║    4. PowerShell (async/sync shells)              = 2 max     ║
+║                                                               ║
+║  AGENT FLEET (ISOLATED pipes — the velocity engine):          ║
+║    Max background agents:  4 (expanded from 3)                ║
+║    Spawn cooldown:         0.5 seconds                        ║
+║    Parallel dispatch:      3 agents per tool call             ║
+║    Agent result caching:   YES → session SQL DB               ║
+║                                                               ║
+║  MCP COMMANDS (ZERO pipes — unlimited):                       ║
+║    Output cap:             250 KB (expanded from 100KB)       ║
+║    Timeout:                600 seconds                        ║
+║    Concurrent:             Unlimited                          ║
+║                                                               ║
+║  SHELL POOL (SHARED pipes — legacy fallback):                 ║
+║    Max async shells:       2 (unchanged — rarely needed)      ║
+║    Output cap:             200 lines (expanded from 100)      ║
+║    Goal:                   0 shells per session               ║
+║                                                               ║
+║  CONTEXT WINDOW:                                              ║
+║    MCP output:     250 KB per call                            ║
+║    Shell output:   200 lines (~20 KB)                         ║
+║    Agent results:  Full + cached in SQL                       ║
+║    File redirect:  Unlimited (chunked view)                   ║
+║    Cycle chunks:   8 KB (up from 4 KB)                        ║
+║                                                               ║
+║  THROTTLE: L0(4a+2s) → L1(4a+1s) → L2(3a+1s) →             ║
+║            L3(2a+0s) → L4(1a+0s) → L5(MCP-only)             ║
+║  MCP available at ALL levels — you're never truly stuck.      ║
+║                                                               ║
+╠═══════════════════════════════════════════════════════════════╣
+║  GOLDEN RULE: Route through MCP first. Agents for parallel.  ║
+║  Shells only for interactive. Zero-pipe tools for everything  ║
+║  else. EAGAIN becomes structurally impossible.                ║
+╚═══════════════════════════════════════════════════════════════╝
+```
 
 ## Root Cause Chain (reverse-engineered)
 
