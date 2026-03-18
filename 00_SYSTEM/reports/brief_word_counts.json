@@ -1,0 +1,161 @@
+{
+  "results": {
+    "F1": {
+      "countable_words": 4175,
+      "estimated_pages": 16.7,
+      "total_lines": 516,
+      "compliance": {
+        "status": "COMPLIANT",
+        "issues": [],
+        "rule": "MCR 2.119(A)(2)",
+        "max_pages": 20,
+        "max_words": 5000,
+        "pct_of_page_limit": 83.5,
+        "pct_of_word_limit": 83.5
+      }
+    },
+    "F2": {
+      "countable_words": 8473,
+      "estimated_pages": 33.9,
+      "total_lines": 657,
+      "compliance": {
+        "status": "COMPLIANT",
+        "issues": [],
+        "rule": "MCR 2.111",
+        "max_pages": null,
+        "max_words": null,
+        "pct_of_page_limit": null,
+        "pct_of_word_limit": null
+      }
+    },
+    "F3": {
+      "countable_words": 14016,
+      "estimated_pages": 56.1,
+      "total_lines": 909,
+      "compliance": {
+        "status": "OVER_LIMIT",
+        "issues": [
+          "OVER PAGE LIMIT: ~56.1 pages vs 20 max (MCR 2.003 / 2.119)",
+          "OVER WORD LIMIT: 14,016 words vs 5,000 max"
+        ],
+        "rule": "MCR 2.003 / 2.119",
+        "max_pages": 20,
+        "max_words": 5000,
+        "pct_of_page_limit": 280.5,
+        "pct_of_word_limit": 280.3
+      }
+    },
+    "F4": {
+      "countable_words": 13658,
+      "estimated_pages": 54.6,
+      "total_lines": 879,
+      "compliance": {
+        "status": "COMPLIANT",
+        "issues": [],
+        "rule": "FRCP 8",
+        "max_pages": null,
+        "max_words": null,
+        "pct_of_page_limit": null,
+        "pct_of_word_limit": null
+      }
+    },
+    "F5": {
+      "countable_words": 24460,
+      "estimated_pages": 97.8,
+      "total_lines": 2050,
+      "compliance": {
+        "status": "OVER_LIMIT",
+        "issues": [
+          "OVER PAGE LIMIT: ~97.8 pages vs 50 max (MCR 7.306(D))",
+          "OVER WORD LIMIT: 24,460 words vs 12,500 max"
+        ],
+        "rule": "MCR 7.306(D)",
+        "max_pages": 50,
+        "max_words": 12500,
+        "pct_of_page_limit": 195.6,
+        "pct_of_word_limit": 195.7
+      }
+    },
+    "F6": {
+      "countable_words": 7344,
+      "estimated_pages": 29.4,
+      "total_lines": 591,
+      "compliance": {
+        "status": "COMPLIANT",
+        "issues": [],
+        "rule": "MCR 9.116",
+        "max_pages": null,
+        "max_words": null,
+        "pct_of_page_limit": null,
+        "pct_of_word_limit": null
+      }
+    },
+    "F7": {
+      "countable_words": 8756,
+      "estimated_pages": 35.0,
+      "total_lines": 699,
+      "compliance": {
+        "status": "OVER_LIMIT",
+        "issues": [
+          "OVER PAGE LIMIT: ~35.0 pages vs 20 max (MCR 2.119(A)(2))",
+          "OVER WORD LIMIT: 8,756 words vs 5,000 max"
+        ],
+        "rule": "MCR 2.119(A)(2)",
+        "max_pages": 20,
+        "max_words": 5000,
+        "pct_of_page_limit": 175.0,
+        "pct_of_word_limit": 175.1
+      }
+    },
+    "F8": {
+      "countable_words": 7905,
+      "estimated_pages": 31.6,
+      "total_lines": 788,
+      "compliance": {
+        "status": "OVER_LIMIT",
+        "issues": [
+          "OVER PAGE LIMIT: ~31.6 pages vs 20 max (MCR 2.119(A)(2))",
+          "OVER WORD LIMIT: 7,905 words vs 5,000 max"
+        ],
+        "rule": "MCR 2.119(A)(2)",
+        "max_pages": 20,
+        "max_words": 5000,
+        "pct_of_page_limit": 158.0,
+        "pct_of_word_limit": 158.1
+      }
+    },
+    "F9": {
+      "countable_words": 7353,
+      "estimated_pages": 29.4,
+      "total_lines": 590,
+      "compliance": {
+        "status": "COMPLIANT",
+        "issues": [
+          "No font specification found \u2014 MCR 7.212(B) requires 12pt minimum"
+        ],
+        "rule": "MCR 7.212(B)",
+        "max_pages": 50,
+        "max_words": 12500,
+        "pct_of_page_limit": 58.8,
+        "pct_of_word_limit": 58.8
+      }
+    },
+    "F10": {
+      "countable_words": 1992,
+      "estimated_pages": 8.0,
+      "total_lines": 224,
+      "compliance": {
+        "status": "COMPLIANT",
+        "issues": [
+          "No font specification found \u2014 MCR 7.212(B) requires 12pt minimum"
+        ],
+        "rule": "MCR 7.211(C)(2)",
+        "max_pages": 20,
+        "max_words": 5000,
+        "pct_of_page_limit": 40.0,
+        "pct_of_word_limit": 39.8
+      }
+    }
+  },
+  "generated": "2026-03-18T19:46:26.345408"
+}

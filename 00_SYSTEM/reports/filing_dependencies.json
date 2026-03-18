@@ -1,0 +1,167 @@
+{
+  "filings": {
+    "F1": {
+      "name": "Emergency TRO (Housing)",
+      "court": "14th Circuit",
+      "deadline": "2026-04-15",
+      "urgency": 85,
+      "ready": true,
+      "score": 90
+    },
+    "F2": {
+      "name": "Amended Complaint (Housing)",
+      "court": "14th Circuit",
+      "deadline": "2026-05-01",
+      "urgency": 70,
+      "ready": true,
+      "score": 85
+    },
+    "F3": {
+      "name": "Disqualification Motion",
+      "court": "14th Circuit",
+      "deadline": "2026-04-01",
+      "urgency": 94,
+      "ready": true,
+      "score": 95
+    },
+    "F4": {
+      "name": "Federal \u00a71983 Complaint",
+      "court": "USDC WDMI",
+      "deadline": "2026-06-01",
+      "urgency": 60,
+      "ready": false,
+      "score": 70
+    },
+    "F5": {
+      "name": "MSC Original Action",
+      "court": "MSC",
+      "deadline": "2026-05-15",
+      "urgency": 75,
+      "ready": false,
+      "score": 75
+    },
+    "F6": {
+      "name": "JTC Complaint",
+      "court": "JTC",
+      "deadline": "2026-06-30",
+      "urgency": 50,
+      "ready": false,
+      "score": 65
+    },
+    "F7": {
+      "name": "Custody Modification",
+      "court": "14th Circuit",
+      "deadline": "2026-05-01",
+      "urgency": 70,
+      "ready": false,
+      "score": 67.5
+    },
+    "F8": {
+      "name": "PPO Termination",
+      "court": "14th Circuit",
+      "deadline": "2026-05-15",
+      "urgency": 65,
+      "ready": false,
+      "score": 72.5
+    },
+    "F9": {
+      "name": "COA Brief on Appeal",
+      "court": "COA",
+      "deadline": "2026-04-15",
+      "urgency": 90,
+      "ready": false,
+      "score": 85
+    },
+    "F10": {
+      "name": "COA Emergency Motion",
+      "court": "COA",
+      "deadline": "2026-04-01",
+      "urgency": 94,
+      "ready": false,
+      "score": 58.3
+    }
+  },
+  "dependencies": [
+    {
+      "from": "F3",
+      "to": "F5",
+      "reason": "Disqualification strengthens MSC petition"
+    },
+    {
+      "from": "F3",
+      "to": "F7",
+      "reason": "Disqualification before custody motion to same judge"
+    },
+    {
+      "from": "F3",
+      "to": "F9",
+      "reason": "Disqualification is key argument in COA brief"
+    },
+    {
+      "from": "F3",
+      "to": "F10",
+      "reason": "Disqualification underpins emergency motion"
+    },
+    {
+      "from": "F1",
+      "to": "F2",
+      "reason": "TRO emergency first, then full complaint"
+    },
+    {
+      "from": "F9",
+      "to": "F10",
+      "reason": "Brief filed before emergency motion relies on it"
+    },
+    {
+      "from": "F3",
+      "to": "F8",
+      "reason": "Disqualification before PPO modification"
+    }
+  ],
+  "recommended_order": [
+    "F3",
+    "F9",
+    "F10",
+    "F1",
+    "F5",
+    "F2",
+    "F7",
+    "F8",
+    "F4",
+    "F6"
+  ],
+  "critical_path": [
+    "F3",
+    "F9",
+    "F10"
+  ],
+  "independent": [
+    "F3",
+    "F1",
+    "F4",
+    "F6"
+  ],
+  "lanes": {
+    "Bypass Muskegon": [
+      "F3",
+      "F5",
+      "F9",
+      "F10"
+    ],
+    "Housing Emergency": [
+      "F1",
+      "F2"
+    ],
+    "Federal Offensive": [
+      "F4"
+    ],
+    "Judicial Accountability": [
+      "F6"
+    ],
+    "Family Court Reform": [
+      "F7",
+      "F8"
+    ]
+  },
+  "generated": "2026-03-18T19:46:26.984164"
+}

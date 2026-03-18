@@ -1,0 +1,523 @@
+{
+  "results": {
+    "F1": {
+      "total_references": 9,
+      "unique_exhibits": 5,
+      "declared_in_index": 0,
+      "orphans": [],
+      "unused": []
+    },
+    "F2": {
+      "total_references": 5,
+      "unique_exhibits": 3,
+      "declared_in_index": 0,
+      "orphans": [],
+      "unused": []
+    },
+    "F3": {
+      "total_references": 88,
+      "unique_exhibits": 9,
+      "declared_in_index": 0,
+      "orphans": [],
+      "unused": []
+    },
+    "F4": {
+      "total_references": 62,
+      "unique_exhibits": 4,
+      "declared_in_index": 0,
+      "orphans": [],
+      "unused": []
+    },
+    "F5": {
+      "total_references": 121,
+      "unique_exhibits": 16,
+      "declared_in_index": 4,
+      "orphans": [
+        "P",
+        "17",
+        "F",
+        "656",
+        "556",
+        "499",
+        "DISORDERS",
+        "AND",
+        "BONDS",
+        "320",
+        "555",
+        "AT"
+      ],
+      "unused": []
+    },
+    "F6": {
+      "total_references": 45,
+      "unique_exhibits": 2,
+      "declared_in_index": 0,
+      "orphans": [],
+      "unused": []
+    },
+    "F7": {
+      "total_references": 164,
+      "unique_exhibits": 24,
+      "declared_in_index": 17,
+      "orphans": [
+        "FIGURE",
+        "17",
+        "499",
+        "AND",
+        "68",
+        "SECURITY",
+        "AT"
+      ],
+      "unused": []
+    },
+    "F8": {
+      "total_references": 30,
+      "unique_exhibits": 8,
+      "declared_in_index": 0,
+      "orphans": [],
+      "unused": []
+    },
+    "F9": {
+      "total_references": 54,
+      "unique_exhibits": 7,
+      "declared_in_index": 0,
+      "orphans": [],
+      "unused": []
+    },
+    "F10": {
+      "total_references": 16,
+      "unique_exhibits": 3,
+      "declared_in_index": 0,
+      "orphans": [],
+      "unused": []
+    }
+  },
+  "opportunities": [
+    {
+      "exhibit": "548",
+      "current_filing": "F1",
+      "could_strengthen": "F3",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "548",
+      "current_filing": "F1",
+      "could_strengthen": "F4",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "548",
+      "current_filing": "F1",
+      "could_strengthen": "F5",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "548",
+      "current_filing": "F1",
+      "could_strengthen": "F6",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "548",
+      "current_filing": "F1",
+      "could_strengthen": "F7",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "548",
+      "current_filing": "F1",
+      "could_strengthen": "F8",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "548",
+      "current_filing": "F1",
+      "could_strengthen": "F9",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "548",
+      "current_filing": "F1",
+      "could_strengthen": "F10",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "555",
+      "current_filing": "F5",
+      "could_strengthen": "F4",
+      "shared_themes": [
+        "perjury"
+      ]
+    },
+    {
+      "exhibit": "555",
+      "current_filing": "F5",
+      "could_strengthen": "F8",
+      "shared_themes": [
+        "perjury"
+      ]
+    },
+    {
+      "exhibit": "M",
+      "current_filing": "F7",
+      "could_strengthen": "F1",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "M",
+      "current_filing": "F7",
+      "could_strengthen": "F3",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "M",
+      "current_filing": "F7",
+      "could_strengthen": "F4",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "M",
+      "current_filing": "F7",
+      "could_strengthen": "F5",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "M",
+      "current_filing": "F7",
+      "could_strengthen": "F6",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "M",
+      "current_filing": "F7",
+      "could_strengthen": "F8",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "M",
+      "current_filing": "F7",
+      "could_strengthen": "F9",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "M",
+      "current_filing": "F7",
+      "could_strengthen": "F10",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "O",
+      "current_filing": "F7",
+      "could_strengthen": "F1",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "O",
+      "current_filing": "F7",
+      "could_strengthen": "F2",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "O",
+      "current_filing": "F7",
+      "could_strengthen": "F3",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "O",
+      "current_filing": "F7",
+      "could_strengthen": "F4",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "O",
+      "current_filing": "F7",
+      "could_strengthen": "F5",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "O",
+      "current_filing": "F7",
+      "could_strengthen": "F6",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "O",
+      "current_filing": "F7",
+      "could_strengthen": "F8",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "O",
+      "current_filing": "F7",
+      "could_strengthen": "F9",
+      "shared_themes": [
+        "ex_parte",
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "O",
+      "current_filing": "F7",
+      "could_strengthen": "F10",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "Q",
+      "current_filing": "F7",
+      "could_strengthen": "F1",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "Q",
+      "current_filing": "F7",
+      "could_strengthen": "F2",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "Q",
+      "current_filing": "F7",
+      "could_strengthen": "F3",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "Q",
+      "current_filing": "F7",
+      "could_strengthen": "F4",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "Q",
+      "current_filing": "F7",
+      "could_strengthen": "F5",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "Q",
+      "current_filing": "F7",
+      "could_strengthen": "F6",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "Q",
+      "current_filing": "F7",
+      "could_strengthen": "F8",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "Q",
+      "current_filing": "F7",
+      "could_strengthen": "F9",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "Q",
+      "current_filing": "F7",
+      "could_strengthen": "F10",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "298",
+      "current_filing": "F8",
+      "could_strengthen": "F1",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "298",
+      "current_filing": "F8",
+      "could_strengthen": "F3",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "298",
+      "current_filing": "F8",
+      "could_strengthen": "F4",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "298",
+      "current_filing": "F8",
+      "could_strengthen": "F5",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "298",
+      "current_filing": "F8",
+      "could_strengthen": "F6",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "298",
+      "current_filing": "F8",
+      "could_strengthen": "F7",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "298",
+      "current_filing": "F8",
+      "could_strengthen": "F9",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "298",
+      "current_filing": "F8",
+      "could_strengthen": "F10",
+      "shared_themes": [
+        "judicial_violation"
+      ]
+    },
+    {
+      "exhibit": "DAMAGE",
+      "current_filing": "F10",
+      "could_strengthen": "F1",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "DAMAGE",
+      "current_filing": "F10",
+      "could_strengthen": "F2",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "DAMAGE",
+      "current_filing": "F10",
+      "could_strengthen": "F3",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "DAMAGE",
+      "current_filing": "F10",
+      "could_strengthen": "F4",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "DAMAGE",
+      "current_filing": "F10",
+      "could_strengthen": "F5",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "DAMAGE",
+      "current_filing": "F10",
+      "could_strengthen": "F6",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "DAMAGE",
+      "current_filing": "F10",
+      "could_strengthen": "F7",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "DAMAGE",
+      "current_filing": "F10",
+      "could_strengthen": "F8",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    },
+    {
+      "exhibit": "DAMAGE",
+      "current_filing": "F10",
+      "could_strengthen": "F9",
+      "shared_themes": [
+        "ex_parte"
+      ]
+    }
+  ],
+  "generated": "2026-03-18T19:46:26.780896"
+}

@@ -1,0 +1,260 @@
+{
+  "parties": {
+    "andrew": {
+      "name": "Andrew James Pigors",
+      "role": "Plaintiff / Petitioner / Appellant",
+      "address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+      "phone": "(231) 903-5690",
+      "email": "andrewjpigors@gmail.com",
+      "pro_se": true
+    },
+    "emily": {
+      "name": "Emily A. Watson",
+      "role": "Defendant / Respondent / Appellee",
+      "address": "2160 Garland Drive, Norton Shores, MI 49441",
+      "attorney": null,
+      "service_method": "First-class mail + Certificate of Mailing"
+    },
+    "mcneill": {
+      "name": "Hon. Jenny L. McNeill",
+      "role": "Respondent Judge",
+      "address": "14th Circuit Court, 990 Terrace St, Muskegon, MI 49442",
+      "service_method": "Via court clerk"
+    },
+    "berry": {
+      "name": "Ronald T. Berry",
+      "role": "Co-Defendant (Emily's boyfriend)",
+      "address": "[ADDRESS NEEDED \u2014 east side of MI]",
+      "service_method": "First-class mail"
+    },
+    "barnes": {
+      "name": "Jennifer Barnes (P55406)",
+      "role": "Former Attorney \u2014 WITHDREW",
+      "address": "Barnes Law Firm PLLC, 880 Jefferson St Ste B, Muskegon, MI 49440",
+      "service_method": "First-class mail"
+    },
+    "jtc": {
+      "name": "Michigan Judicial Tenure Commission",
+      "role": "Regulatory Body",
+      "address": "3034 W Grand Blvd, Suite 8-450, Detroit, MI 48202",
+      "service_method": "First-class mail"
+    },
+    "shady_oaks": {
+      "name": "Shady Oaks MHP / Cricklewood MHP LLC",
+      "role": "Defendant (Housing)",
+      "address": "[LARA REGISTERED AGENT ADDRESS NEEDED]",
+      "service_method": "Personal service or registered agent"
+    },
+    "14th_circuit_clerk": {
+      "name": "14th Circuit Court Clerk",
+      "role": "Court Clerk",
+      "address": "990 Terrace St, Muskegon, MI 49442",
+      "service_method": "Filing via MiFILE or in-person"
+    }
+  },
+  "requirements": {
+    "F1": {
+      "name": "Emergency TRO (Housing)",
+      "court": "14th Circuit Court",
+      "filing_method": "MiFILE (mifile.courts.michigan.gov) or in-person",
+      "serve": [
+        {
+          "party": "shady_oaks",
+          "method": "Personal service \u2014 MCR 2.105(A)",
+          "timing": "Before or at TRO hearing"
+        },
+        {
+          "party": "14th_circuit_clerk",
+          "method": "MiFILE e-filing",
+          "timing": "With motion"
+        }
+      ],
+      "rules": [
+        "MCR 3.310(B)",
+        "MCR 2.105(A)"
+      ],
+      "notes": "Emergency TRO may be granted ex-parte; service within reasonable time after."
+    },
+    "F2": {
+      "name": "Amended Complaint (Housing)",
+      "court": "14th Circuit Court \u2014 Chief Judge Kenneth Hoopes",
+      "filing_method": "MiFILE",
+      "serve": [
+        {
+          "party": "shady_oaks",
+          "method": "Personal service via process server \u2014 MCR 2.105(A)",
+          "timing": "Within 91 days of filing \u2014 MCR 2.102(D)"
+        }
+      ],
+      "rules": [
+        "MCR 2.118(A)",
+        "MCR 2.105(A)",
+        "MCR 2.102(D)"
+      ],
+      "notes": "Amendment as of right within 21 days. After: leave of court needed."
+    },
+    "F3": {
+      "name": "Disqualification Motion (MCR 2.003)",
+      "court": "14th Circuit Court",
+      "filing_method": "MiFILE",
+      "serve": [
+        {
+          "party": "emily",
+          "method": "First-class mail \u2014 MCR 2.107(C)(1)",
+          "timing": "Same day as filing"
+        },
+        {
+          "party": "mcneill",
+          "method": "Via court clerk \u2014 MCR 2.003(D)",
+          "timing": "Filed with clerk, forwarded to judge"
+        }
+      ],
+      "rules": [
+        "MCR 2.003(D)",
+        "MCR 2.107(C)(1)"
+      ],
+      "notes": "MCR 2.003(D)(1): Motion must be filed and served promptly after grounds discovered."
+    },
+    "F4": {
+      "name": "Federal \u00a71983 Complaint",
+      "court": "US District Court, Western District of Michigan (Grand Rapids)",
+      "filing_method": "CM/ECF (pacer.uscourts.gov) or in-person",
+      "serve": [
+        {
+          "party": "emily",
+          "method": "Personal service or waiver \u2014 FRCP 4(e)",
+          "timing": "90 days from filing \u2014 FRCP 4(m)"
+        },
+        {
+          "party": "berry",
+          "method": "Personal service \u2014 FRCP 4(e)",
+          "timing": "90 days from filing"
+        },
+        {
+          "party": "barnes",
+          "method": "Personal service \u2014 FRCP 4(e)",
+          "timing": "90 days from filing"
+        },
+        {
+          "party": "mcneill",
+          "method": "State AG + judge personally \u2014 FRCP 4(j)",
+          "timing": "90 days from filing"
+        }
+      ],
+      "rules": [
+        "FRCP 4(c)-(m)",
+        "42 USC \u00a71983",
+        "28 USC \u00a71915 (IFP)"
+      ],
+      "notes": "IFP: if granted, USMS serves. Request waiver of service (FRCP 4(d)) to save costs."
+    },
+    "F5": {
+      "name": "MSC Original Action",
+      "court": "Michigan Supreme Court",
+      "filing_method": "MiFILE or mail to MSC Clerk",
+      "serve": [
+        {
+          "party": "emily",
+          "method": "First-class mail \u2014 MCR 7.306(B)",
+          "timing": "Within 7 days of filing"
+        },
+        {
+          "party": "14th_circuit_clerk",
+          "method": "First-class mail \u2014 MCR 7.306(B)",
+          "timing": "Within 7 days of filing"
+        }
+      ],
+      "rules": [
+        "MCR 7.306(B)",
+        "Const 1963 Art 6 \u00a74"
+      ],
+      "notes": "Extraordinary action \u2014 must demonstrate lower court systemic failure."
+    },
+    "F6": {
+      "name": "JTC Complaint",
+      "court": "Michigan Judicial Tenure Commission",
+      "filing_method": "Mail to JTC",
+      "serve": [
+        {
+          "party": "jtc",
+          "method": "First-class mail to JTC office",
+          "timing": "N/A \u2014 complaint to agency"
+        }
+      ],
+      "rules": [
+        "MCR 9.104",
+        "MCR 9.116"
+      ],
+      "notes": "JTC handles its own investigation and service. No party service required."
+    },
+    "F7": {
+      "name": "Custody Modification Motion",
+      "court": "14th Circuit Court",
+      "filing_method": "MiFILE",
+      "serve": [
+        {
+          "party": "emily",
+          "method": "First-class mail \u2014 MCR 2.107(C)(1)",
+          "timing": "At least 9 days before hearing \u2014 MCR 2.119(C)(1)"
+        }
+      ],
+      "rules": [
+        "MCR 2.119(C)(1)",
+        "MCL 722.27(1)(c)"
+      ],
+      "notes": "Motion hearing: 9 days notice by mail (MCR 2.119(C)(1) + 3 days for mail)."
+    },
+    "F8": {
+      "name": "PPO Termination / Modification",
+      "court": "14th Circuit Court",
+      "filing_method": "MiFILE",
+      "serve": [
+        {
+          "party": "emily",
+          "method": "First-class mail \u2014 MCR 2.107(C)(1)",
+          "timing": "9 days before hearing"
+        }
+      ],
+      "rules": [
+        "MCL 600.2950(8)",
+        "MCR 3.706(H)"
+      ],
+      "notes": "Motion to modify/terminate PPO under MCL 600.2950(8)."
+    },
+    "F9": {
+      "name": "COA Brief on Appeal",
+      "court": "Michigan Court of Appeals",
+      "filing_method": "MiFILE (COA e-filing)",
+      "serve": [
+        {
+          "party": "emily",
+          "method": "First-class mail \u2014 MCR 7.215(B)",
+          "timing": "Same day as filing"
+        }
+      ],
+      "rules": [
+        "MCR 7.212(A)(6)",
+        "MCR 7.215(B)"
+      ],
+      "notes": "COA Case No. 366810. Cert of Service must name method and date."
+    },
+    "F10": {
+      "name": "COA Emergency Motion",
+      "court": "Michigan Court of Appeals",
+      "filing_method": "MiFILE + call COA clerk",
+      "serve": [
+        {
+          "party": "emily",
+          "method": "Email + mail \u2014 MCR 7.211(C)(6)",
+          "timing": "Same day \u2014 emergency"
+        }
+      ],
+      "rules": [
+        "MCR 7.211(C)(6)",
+        "MCR 7.215(B)"
+      ],
+      "notes": "Emergency: call COA clerk after filing. Opposing party must receive same-day notice."
+    }
+  },
+  "generated": "2026-03-18T19:42:18.519088"
+}
