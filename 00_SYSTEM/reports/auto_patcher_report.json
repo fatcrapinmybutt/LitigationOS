@@ -1,0 +1,128 @@
+{
+  "generated": "2026-03-18T19:32:22.116178",
+  "total_issues": 16,
+  "by_filing": {
+    "F1": [
+      {
+        "line": 180,
+        "match": "$4,200",
+        "replacement": "$15,000",
+        "category": "FACT_CORRECTION",
+        "description": "Mobile home value is $15,000 (not $4,200)"
+      }
+    ],
+    "F10": [
+      {
+        "line": 114,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      }
+    ],
+    "F3": [
+      {
+        "line": 103,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      },
+      {
+        "line": 273,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      },
+      {
+        "line": 277,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      },
+      {
+        "line": 375,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      },
+      {
+        "line": 449,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      }
+    ],
+    "F4": [
+      {
+        "line": 43,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      },
+      {
+        "line": 331,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      },
+      {
+        "line": 407,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      },
+      {
+        "line": 467,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      },
+      {
+        "line": 509,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      },
+      {
+        "line": 523,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      },
+      {
+        "line": 686,
+        "match": "two jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      }
+    ],
+    "F5": [
+      {
+        "line": 659,
+        "match": "2 jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      },
+      {
+        "line": 950,
+        "match": "2 jobs",
+        "replacement": "four jobs (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.)",
+        "category": "FACT_CORRECTION",
+        "description": "Andrew lost 4 jobs, not 2"
+      }
+    ]
+  }
+}

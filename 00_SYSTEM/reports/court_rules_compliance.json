@@ -1,0 +1,594 @@
+{
+  "F1": {
+    "filing_id": "F1",
+    "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\01_MAIN_FILING.md",
+    "total_checks": 6,
+    "passed": 5,
+    "failed": 1,
+    "score": 83.3,
+    "grade": "B",
+    "word_count": 5073,
+    "results": [
+      {
+        "check": "caption",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must have caption with case number",
+        "mcr": "MCR 2.113(A)"
+      },
+      {
+        "check": "statement_of_issues",
+        "passed": false,
+        "severity": "HIGH",
+        "description": "Must concisely state issues",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "authorities",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must cite controlling authority",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "relief_requested",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must state relief sought",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "verification",
+        "passed": true,
+        "severity": "MEDIUM",
+        "description": "Should include verification/affidavit",
+        "mcr": "MCR 2.114(A)"
+      },
+      {
+        "check": "cert_of_service",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must include proof of service",
+        "mcr": "MCR 2.107(A)"
+      }
+    ],
+    "name": "Emergency TRO (Housing)"
+  },
+  "F10": {
+    "filing_id": "F10",
+    "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION\\01_MAIN_FILING.md",
+    "total_checks": 6,
+    "passed": 5,
+    "failed": 1,
+    "score": 83.3,
+    "grade": "B",
+    "word_count": 2123,
+    "results": [
+      {
+        "check": "caption",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must have caption with case number",
+        "mcr": "MCR 2.113(A)"
+      },
+      {
+        "check": "statement_of_issues",
+        "passed": false,
+        "severity": "HIGH",
+        "description": "Must concisely state issues",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "authorities",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must cite controlling authority",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "relief_requested",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must state relief sought",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "verification",
+        "passed": true,
+        "severity": "MEDIUM",
+        "description": "Should include verification/affidavit",
+        "mcr": "MCR 2.114(A)"
+      },
+      {
+        "check": "cert_of_service",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must include proof of service",
+        "mcr": "MCR 2.107(A)"
+      }
+    ],
+    "name": "COA Emergency Motion"
+  },
+  "F2": {
+    "filing_id": "F2",
+    "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\01_MAIN_FILING.md",
+    "total_checks": 6,
+    "passed": 5,
+    "failed": 1,
+    "score": 83.3,
+    "grade": "B",
+    "word_count": 8729,
+    "results": [
+      {
+        "check": "caption",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must have caption with case number",
+        "mcr": "MCR 2.113(A)"
+      },
+      {
+        "check": "statement_of_issues",
+        "passed": false,
+        "severity": "HIGH",
+        "description": "Must concisely state issues",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "authorities",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must cite controlling authority",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "relief_requested",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must state relief sought",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "verification",
+        "passed": true,
+        "severity": "MEDIUM",
+        "description": "Should include verification/affidavit",
+        "mcr": "MCR 2.114(A)"
+      },
+      {
+        "check": "cert_of_service",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must include proof of service",
+        "mcr": "MCR 2.107(A)"
+      }
+    ],
+    "name": "Amended Complaint (Housing)"
+  },
+  "F3": {
+    "filing_id": "F3",
+    "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\01_MAIN_FILING.md",
+    "total_checks": 6,
+    "passed": 6,
+    "failed": 0,
+    "score": 100.0,
+    "grade": "A",
+    "word_count": 14671,
+    "results": [
+      {
+        "check": "caption",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must have caption with case number",
+        "mcr": "MCR 2.113(A)"
+      },
+      {
+        "check": "statement_of_issues",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must concisely state issues",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "authorities",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must cite controlling authority",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "relief_requested",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must state relief sought",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "verification",
+        "passed": true,
+        "severity": "MEDIUM",
+        "description": "Should include verification/affidavit",
+        "mcr": "MCR 2.114(A)"
+      },
+      {
+        "check": "cert_of_service",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must include proof of service",
+        "mcr": "MCR 2.107(A)"
+      }
+    ],
+    "name": "Disqualification Motion"
+  },
+  "F4": {
+    "filing_id": "F4",
+    "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\01_MAIN_FILING.md",
+    "total_checks": 6,
+    "passed": 5,
+    "failed": 1,
+    "score": 83.3,
+    "grade": "B",
+    "word_count": 15172,
+    "results": [
+      {
+        "check": "caption",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must have caption with parties and court",
+        "mcr": "FRCP 10(a)"
+      },
+      {
+        "check": "jurisdiction",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must allege basis for jurisdiction",
+        "mcr": "FRCP 8(a)(1)"
+      },
+      {
+        "check": "claim_statement",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must contain short and plain statement",
+        "mcr": "FRCP 8(a)(2)"
+      },
+      {
+        "check": "relief_demanded",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must state relief demanded",
+        "mcr": "FRCP 8(a)(3)"
+      },
+      {
+        "check": "numbered_paragraphs",
+        "passed": false,
+        "severity": "HIGH",
+        "description": "Allegations must be in numbered paragraphs",
+        "mcr": "FRCP 10(b)"
+      },
+      {
+        "check": "verification",
+        "passed": true,
+        "severity": "MEDIUM",
+        "description": "Should include verification under oath",
+        "mcr": "28 USC \u00a71746"
+      }
+    ],
+    "name": "Federal \u00a71983 Complaint"
+  },
+  "F5": {
+    "filing_id": "F5",
+    "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\01_MAIN_FILING.md",
+    "total_checks": 6,
+    "passed": 6,
+    "failed": 0,
+    "score": 100.0,
+    "grade": "A",
+    "word_count": 25148,
+    "results": [
+      {
+        "check": "caption",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must have caption with case number",
+        "mcr": "MCR 2.113(A)"
+      },
+      {
+        "check": "statement_of_issues",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must concisely state issues",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "authorities",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must cite controlling authority",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "relief_requested",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must state relief sought",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "verification",
+        "passed": true,
+        "severity": "MEDIUM",
+        "description": "Should include verification/affidavit",
+        "mcr": "MCR 2.114(A)"
+      },
+      {
+        "check": "cert_of_service",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must include proof of service",
+        "mcr": "MCR 2.107(A)"
+      }
+    ],
+    "name": "MSC Original Action"
+  },
+  "F6": {
+    "filing_id": "F6",
+    "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\01_MAIN_FILING.md",
+    "total_checks": 6,
+    "passed": 5,
+    "failed": 1,
+    "score": 83.3,
+    "grade": "B",
+    "word_count": 7709,
+    "results": [
+      {
+        "check": "caption",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must have caption with case number",
+        "mcr": "MCR 2.113(A)"
+      },
+      {
+        "check": "statement_of_issues",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must concisely state issues",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "authorities",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must cite controlling authority",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "relief_requested",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must state relief sought",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "verification",
+        "passed": true,
+        "severity": "MEDIUM",
+        "description": "Should include verification/affidavit",
+        "mcr": "MCR 2.114(A)"
+      },
+      {
+        "check": "cert_of_service",
+        "passed": false,
+        "severity": "CRITICAL",
+        "description": "Must include proof of service",
+        "mcr": "MCR 2.107(A)"
+      }
+    ],
+    "name": "JTC Complaint"
+  },
+  "F7": {
+    "filing_id": "F7",
+    "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F7_CUSTODY_MODIFICATION\\01_MAIN_FILING.md",
+    "total_checks": 6,
+    "passed": 5,
+    "failed": 1,
+    "score": 83.3,
+    "grade": "B",
+    "word_count": 9371,
+    "results": [
+      {
+        "check": "caption",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must have caption with case number",
+        "mcr": "MCR 2.113(A)"
+      },
+      {
+        "check": "statement_of_issues",
+        "passed": false,
+        "severity": "HIGH",
+        "description": "Must concisely state issues",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "authorities",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must cite controlling authority",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "relief_requested",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must state relief sought",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "verification",
+        "passed": true,
+        "severity": "MEDIUM",
+        "description": "Should include verification/affidavit",
+        "mcr": "MCR 2.114(A)"
+      },
+      {
+        "check": "cert_of_service",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must include proof of service",
+        "mcr": "MCR 2.107(A)"
+      }
+    ],
+    "name": "Custody Modification"
+  },
+  "F8": {
+    "filing_id": "F8",
+    "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F8_PPO_TERMINATION\\01_MAIN_FILING.md",
+    "total_checks": 6,
+    "passed": 5,
+    "failed": 1,
+    "score": 83.3,
+    "grade": "B",
+    "word_count": 8266,
+    "results": [
+      {
+        "check": "caption",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must have caption with case number",
+        "mcr": "MCR 2.113(A)"
+      },
+      {
+        "check": "statement_of_issues",
+        "passed": false,
+        "severity": "HIGH",
+        "description": "Must concisely state issues",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "authorities",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must cite controlling authority",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "relief_requested",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must state relief sought",
+        "mcr": "MCR 2.119(A)(2)"
+      },
+      {
+        "check": "verification",
+        "passed": true,
+        "severity": "MEDIUM",
+        "description": "Should include verification/affidavit",
+        "mcr": "MCR 2.114(A)"
+      },
+      {
+        "check": "cert_of_service",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must include proof of service",
+        "mcr": "MCR 2.107(A)"
+      }
+    ],
+    "name": "PPO Termination"
+  },
+  "F9": {
+    "filing_id": "F9",
+    "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F9_COA_BRIEF_ON_APPEAL\\01_MAIN_FILING.md",
+    "total_checks": 12,
+    "passed": 10,
+    "failed": 2,
+    "score": 83.3,
+    "grade": "B",
+    "word_count": 7724,
+    "results": [
+      {
+        "check": "caption",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Brief must have caption with case number",
+        "mcr": "MCR 7.212(A)"
+      },
+      {
+        "check": "statement_of_jurisdiction",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must include basis for jurisdiction",
+        "mcr": "MCR 7.212(C)(1)"
+      },
+      {
+        "check": "statement_of_questions",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must present questions involved",
+        "mcr": "MCR 7.212(C)(2)"
+      },
+      {
+        "check": "statement_of_facts",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must include statement of facts",
+        "mcr": "MCR 7.212(C)(4)"
+      },
+      {
+        "check": "argument",
+        "passed": false,
+        "severity": "CRITICAL",
+        "description": "Must include argument section",
+        "mcr": "MCR 7.212(C)(6)"
+      },
+      {
+        "check": "relief_requested",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must state relief requested",
+        "mcr": "MCR 7.212(C)(7)"
+      },
+      {
+        "check": "cert_of_compliance",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must include certificate of word count compliance",
+        "mcr": "MCR 7.212(D)"
+      },
+      {
+        "check": "cert_of_service",
+        "passed": true,
+        "severity": "CRITICAL",
+        "description": "Must include proof of service",
+        "mcr": "MCR 7.212(A)(6)"
+      },
+      {
+        "check": "appendix_ref",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Must reference required appendix",
+        "mcr": "MCR 7.212(G)"
+      },
+      {
+        "check": "record_citations",
+        "passed": false,
+        "severity": "MEDIUM",
+        "description": "Facts should cite to lower court record",
+        "mcr": "MCR 7.212(C)(4)"
+      },
+      {
+        "check": "standard_of_review",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Should state standard of review",
+        "mcr": "MCR 7.212(C)(5)"
+      },
+      {
+        "check": "word_limit",
+        "passed": true,
+        "severity": "HIGH",
+        "description": "Brief must not exceed 16,000 words",
+        "mcr": "MCR 7.212(B)"
+      }
+    ],
+    "name": "COA Brief on Appeal"
+  }
+}
