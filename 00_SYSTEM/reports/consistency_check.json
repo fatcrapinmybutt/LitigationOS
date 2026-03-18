@@ -1,0 +1,421 @@
+{
+  "generated": "2026-03-18T19:18:48.130387",
+  "total_assertions": 416,
+  "total_issues": 12,
+  "critical": 5,
+  "high": 2,
+  "medium": 5,
+  "issues": [
+    {
+      "type": "NUMERIC_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "category": "jail_days",
+      "values_found": [
+        14,
+        45,
+        59
+      ],
+      "verified_value": 59,
+      "details": [
+        "F3 line 111: 14 \u274c",
+        "F3 line 113: 45 \u274c",
+        "F3 line 537: 45 \u274c",
+        "F3 line 589: 45 \u274c",
+        "F4 line 129: 14 \u274c",
+        "F4 line 145: 45 \u274c",
+        "F4 line 191: 59 \u2705",
+        "F5 line 94: 59 \u2705",
+        "F5 line 385: 59 \u2705",
+        "F5 line 596: 59 \u2705",
+        "F5 line 936: 59 \u2705",
+        "F5 line 1014: 59 \u2705",
+        "F5 line 1018: 59 \u2705",
+        "F5 line 1185: 59 \u2705",
+        "F6 line 67: 14 \u274c",
+        "F6 line 68: 45 \u274c",
+        "F6 line 71: 14 \u274c",
+        "F6 line 112: 14 \u274c",
+        "F6 line 264: 14 \u274c",
+        "F6 line 298: 45 \u274c",
+        "F6 line 304: 45 \u274c",
+        "F6 line 369: 14 \u274c",
+        "F8 line 96: 14 \u274c",
+        "F8 line 97: 45 \u274c",
+        "F9 line 308: 14 \u274c",
+        "F9 line 309: 45 \u274c"
+      ],
+      "filings": [
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F8",
+        "F9"
+      ]
+    },
+    {
+      "type": "NUMERIC_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "category": "trailer_value",
+      "values_found": [
+        325,
+        750,
+        4200,
+        7633,
+        9551,
+        15000,
+        60000,
+        1400000
+      ],
+      "verified_value": 15000,
+      "details": [
+        "F1 line 55: 750 \u274c",
+        "F1 line 57: 7633 \u274c",
+        "F1 line 69: 1400000 \u274c",
+        "F1 line 180: 4200 \u274c",
+        "F1 line 286: 750 \u274c",
+        "F1 line 506: 750 \u274c",
+        "F2 line 56: 1400000 \u274c",
+        "F2 line 84: 325 \u274c",
+        "F2 line 184: 60000 \u274c",
+        "F2 line 229: 750 \u274c",
+        "F2 line 241: 15000 \u2705",
+        "F2 line 317: 60000 \u274c",
+        "F2 line 325: 15000 \u2705",
+        "F2 line 360: 9551 \u274c",
+        "F2 line 557: 15000 \u2705",
+        "F2 line 561: 60000 \u274c"
+      ],
+      "filings": [
+        "F1",
+        "F2"
+      ]
+    },
+    {
+      "type": "NUMERIC_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "category": "child_birth_year",
+      "values_found": [
+        2010,
+        2022,
+        2025
+      ],
+      "verified_value": null,
+      "details": [
+        "F1 line 15: 2022 \u274c",
+        "F2 line 15: 2022 \u274c",
+        "F3 line 181: 2025 \u274c",
+        "F3 line 643: 2025 \u274c",
+        "F3 line 725: 2025 \u274c",
+        "F3 line 15: 2022 \u274c",
+        "F4 line 89: 2022 \u274c",
+        "F4 line 361: 2010 \u274c",
+        "F4 line 439: 2025 \u274c",
+        "F4 line 15: 2022 \u274c",
+        "F5 line 650: 2022 \u274c",
+        "F5 line 694: 2022 \u274c",
+        "F5 line 1074: 2022 \u274c",
+        "F5 line 1415: 2022 \u274c",
+        "F5 line 15: 2022 \u274c",
+        "F6 line 15: 2022 \u274c",
+        "F7 line 453: 2022 \u274c",
+        "F7 line 15: 2022 \u274c",
+        "F8 line 15: 2022 \u274c",
+        "F9 line 190: 2022 \u274c",
+        "F9 line 459: 2025 \u274c",
+        "F9 line 15: 2022 \u274c",
+        "F10 line 15: 2022 \u274c"
+      ],
+      "filings": [
+        "F1",
+        "F10",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "F9"
+      ]
+    },
+    {
+      "type": "NUMERIC_INCONSISTENCY",
+      "severity": "CRITICAL",
+      "category": "exparte_count",
+      "values_found": [
+        3,
+        5,
+        2025
+      ],
+      "verified_value": null,
+      "details": [
+        "F3 line 181: 2025 \u274c",
+        "F3 line 223: 3 \u274c",
+        "F3 line 289: 2025 \u274c",
+        "F3 line 545: 2025 \u274c",
+        "F3 line 643: 2025 \u274c",
+        "F4 line 187: 2025 \u274c",
+        "F4 line 211: 2025 \u274c",
+        "F4 line 311: 2025 \u274c",
+        "F4 line 381: 2025 \u274c",
+        "F4 line 389: 2025 \u274c",
+        "F4 line 401: 2025 \u274c",
+        "F4 line 465: 2025 \u274c",
+        "F4 line 477: 2025 \u274c",
+        "F4 line 575: 2025 \u274c",
+        "F6 line 52: 5 \u274c",
+        "F6 line 72: 3 \u274c",
+        "F6 line 144: 5 \u274c",
+        "F6 line 242: 5 \u274c",
+        "F6 line 474: 5 \u274c",
+        "F6 line 498: 3 \u274c",
+        "F9 line 123: 2025 \u274c",
+        "F9 line 333: 2025 \u274c",
+        "F9 line 341: 2025 \u274c",
+        "F9 line 343: 2025 \u274c",
+        "F9 line 349: 2025 \u274c",
+        "F9 line 513: 2025 \u274c",
+        "F10 line 38: 2025 \u274c",
+        "F10 line 52: 2025 \u274c",
+        "F10 line 95: 2025 \u274c",
+        "F10 line 149: 2025 \u274c"
+      ],
+      "filings": [
+        "F10",
+        "F3",
+        "F4",
+        "F6",
+        "F9"
+      ]
+    },
+    {
+      "type": "FABRICATED_CITATION",
+      "severity": "CRITICAL",
+      "category": "canon_cite",
+      "description": "Canon 4 was identified as fabricated \u2014 MI Judicial Canons have no Canon 4 for delegation",
+      "details": [
+        "F6 line 216: cites Canon 4",
+        "F6 line 351: cites Canon 4",
+        "F6 line 360: cites Canon 4",
+        "F9 line 115: cites Canon 4",
+        "F9 line 243: cites Canon 4"
+      ],
+      "filings": [
+        "F6",
+        "F9"
+      ]
+    },
+    {
+      "type": "PARTY_TITLE_ERROR",
+      "severity": "HIGH",
+      "category": "rusco_title",
+      "correct": "judicial secretary",
+      "found": [
+        "clerk",
+        "judicial secretary"
+      ],
+      "details": [
+        "F3 line 485: calls Rusco 'clerk'",
+        "F6 line 128: calls Rusco 'clerk'",
+        "F6 line 226: calls Rusco 'clerk'",
+        "F7 line 130: calls Rusco 'clerk'"
+      ],
+      "filings": [
+        "F3",
+        "F6",
+        "F7"
+      ]
+    },
+    {
+      "type": "PARTY_TITLE_ERROR",
+      "severity": "HIGH",
+      "category": "berry_title",
+      "correct": "boyfriend (no verified bar number)",
+      "found": [
+        "attorney"
+      ],
+      "details": [
+        "F3 line 127: calls Berry 'attorney'",
+        "F3 line 699: calls Berry 'attorney'",
+        "F3 line 701: calls Berry 'attorney'",
+        "F4 line 79: calls Berry 'attorney'",
+        "F4 line 245: calls Berry 'attorney'",
+        "F4 line 475: calls Berry 'attorney'",
+        "F5 line 327: calls Berry 'attorney'",
+        "F5 line 505: calls Berry 'attorney'",
+        "F5 line 597: calls Berry 'attorney'",
+        "F5 line 698: calls Berry 'attorney'",
+        "F5 line 1173: calls Berry 'attorney'"
+      ],
+      "filings": [
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    {
+      "type": "EMPLOYER_WARNING",
+      "severity": "MEDIUM",
+      "category": "employer_mention",
+      "description": "F5 mentions Shape Corp \u2014 verify context (Shape Corp may be Emily's employer)",
+      "filings": [
+        "F5"
+      ],
+      "details": [
+        "F5 line 483: mentions Shape Corp"
+      ]
+    },
+    {
+      "type": "EMPLOYER_WARNING",
+      "severity": "MEDIUM",
+      "category": "employer_mention",
+      "description": "F6 mentions Shape Corp \u2014 verify context (Shape Corp may be Emily's employer)",
+      "filings": [
+        "F6"
+      ],
+      "details": [
+        "F6 line 90: mentions Shape Corp"
+      ]
+    },
+    {
+      "type": "EMPLOYER_WARNING",
+      "severity": "MEDIUM",
+      "category": "employer_mention",
+      "description": "F7 mentions Shape Corp \u2014 verify context (Shape Corp may be Emily's employer)",
+      "filings": [
+        "F7"
+      ],
+      "details": [
+        "F7 line 184: mentions Shape Corp",
+        "F7 line 322: mentions Shape Corp",
+        "F7 line 370: mentions Shape Corp",
+        "F7 line 489: mentions Shape Corp"
+      ]
+    },
+    {
+      "type": "EMPLOYER_WARNING",
+      "severity": "MEDIUM",
+      "category": "employer_mention",
+      "description": "F8 mentions Shape Corp \u2014 verify context (Shape Corp may be Emily's employer)",
+      "filings": [
+        "F8"
+      ],
+      "details": [
+        "F8 line 297: mentions Shape Corp",
+        "F8 line 333: mentions Shape Corp",
+        "F8 line 444: mentions Shape Corp"
+      ]
+    },
+    {
+      "type": "EMPLOYER_WARNING",
+      "severity": "MEDIUM",
+      "category": "employer_mention",
+      "description": "F9 mentions Shape Corp \u2014 verify context (Shape Corp may be Emily's employer)",
+      "filings": [
+        "F9"
+      ],
+      "details": [
+        "F9 line 273: mentions Shape Corp"
+      ]
+    }
+  ],
+  "matrix": {
+    "jobs_lost": {
+      "F1": "\u2014",
+      "F2": "\u2014",
+      "F3": "\u2014",
+      "F4": "\u2014",
+      "F5": "\u2014",
+      "F6": "\u2014",
+      "F7": "\u2014",
+      "F8": "\u2014",
+      "F9": "2",
+      "F10": "\u2014"
+    },
+    "jail_days": {
+      "F1": "\u2014",
+      "F2": "\u2014",
+      "F3": "14/45",
+      "F4": "14/45/59",
+      "F5": "59",
+      "F6": "14/45",
+      "F7": "\u2014",
+      "F8": "14/45",
+      "F9": "14/45",
+      "F10": "\u2014"
+    },
+    "trailer_value": {
+      "F1": "750/4200/7633/1400000",
+      "F2": "325/750/9551/15000/60000/1400000",
+      "F3": "\u2014",
+      "F4": "\u2014",
+      "F5": "\u2014",
+      "F6": "\u2014",
+      "F7": "\u2014",
+      "F8": "\u2014",
+      "F9": "\u2014",
+      "F10": "\u2014"
+    },
+    "child_birth_year": {
+      "F1": "2022",
+      "F2": "2022",
+      "F3": "2022/2025",
+      "F4": "2010/2022/2025",
+      "F5": "2022",
+      "F6": "2022",
+      "F7": "2022",
+      "F8": "2022",
+      "F9": "2022/2025",
+      "F10": "2022"
+    },
+    "rusco_title": {
+      "F1": "\u2014",
+      "F2": "\u2014",
+      "F3": "clerk/judicial secretary",
+      "F4": "\u2014",
+      "F5": "judicial secretary",
+      "F6": "clerk/judicial secretary",
+      "F7": "clerk",
+      "F8": "\u2014",
+      "F9": "judicial secretary",
+      "F10": "judicial secretary"
+    },
+    "exparte_count": {
+      "F1": "\u2014",
+      "F2": "\u2014",
+      "F3": "3/2025",
+      "F4": "2025",
+      "F5": "\u2014",
+      "F6": "3/5",
+      "F7": "\u2014",
+      "F8": "\u2014",
+      "F9": "2025",
+      "F10": "2025"
+    }
+  },
+  "verified_facts": {
+    "plaintiff_name": "Andrew James Pigors",
+    "defendant_name": "Emily A. Watson",
+    "child_initials": "L.D.W.",
+    "child_dob": "2022-11-09",
+    "judge": "Hon. Jenny L. McNeill",
+    "custody_case": "2024-001507-DC",
+    "ppo_case": "2023-5907-PP",
+    "housing_case": "2025-002760-CZ",
+    "coa_case": "COA 366810",
+    "jobs_lost": "4",
+    "job_names": "['Metal Arc', 'IndiGrow', 'USPS', 'Shape Corp']",
+    "jail_days": "59",
+    "rusco_title": "judicial secretary",
+    "trailer_value": "15000",
+    "rent_original": "395",
+    "rent_current": "720",
+    "emily_employer": "Kent County Prosecutor's Office",
+    "emily_employee_id": "13380",
+    "ronald_berry_role": "boyfriend",
+    "barnes_bar": "P55406",
+    "plaintiff_address": "1977 Whitehall Road, Lot 17",
+    "defendant_address": "2160 Garland Drive"
+  }
+}
