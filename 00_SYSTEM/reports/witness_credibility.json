@@ -1,0 +1,290 @@
+{
+  "Emily Watson": {
+    "role": "Defendant/Opposing Party",
+    "overall_score": 31.4,
+    "grade": "F (Not Credible)",
+    "dimension_scores": {
+      "internal_consistency": 48,
+      "external_corroboration": 0,
+      "prior_false_statements": 0,
+      "bias_interest": 10,
+      "deception_language": 99
+    },
+    "dimension_details": {
+      "internal_consistency": {
+        "contradictions": 660,
+        "statements": 2525,
+        "ratio": 0.261
+      },
+      "external_corroboration": {
+        "with_rebuttal": 9176,
+        "without_rebuttal": 0,
+        "rebuttal_ratio": 1.0
+      },
+      "prior_false_statements": {
+        "documented_false_statements": 3073
+      },
+      "bias_interest": {
+        "bias_level": "EXTREME",
+        "interest": "Custody retention, PPO maintenance, financial"
+      },
+      "deception_language": {
+        "indicators": {
+          "memory_evasion": 0,
+          "hedging": 4,
+          "absolute_denial": 14,
+          "absolute_claim": 0,
+          "truthfulness_emphasis": 0,
+          "minimization": 2,
+          "vagueness": 1
+        },
+        "total_words_analyzed": 85657
+      }
+    },
+    "cross_exam_strategies": [
+      {
+        "strategy": "Prior Inconsistent Statements (MRE 613)",
+        "approach": "Confront with 660 documented contradictions",
+        "priority": "HIGH"
+      },
+      {
+        "strategy": "Pattern of Dishonesty (MRE 608(b))",
+        "approach": "Establish pattern using 3073 documented false statements",
+        "priority": "HIGH"
+      },
+      {
+        "strategy": "Bias/Interest Impeachment (MRE 616)",
+        "approach": "Expose financial/personal interest: Custody retention, PPO maintenance, financial",
+        "priority": "HIGH"
+      },
+      {
+        "strategy": "Lack of Corroboration",
+        "approach": "Demand documentary proof for key claims \u2014 none exists",
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  "Ronald Berry": {
+    "role": "Non-Party Witness / Emily's Partner",
+    "overall_score": 55.0,
+    "grade": "C (Questionable)",
+    "dimension_scores": {
+      "internal_consistency": 50,
+      "external_corroboration": 50,
+      "prior_false_statements": 100,
+      "bias_interest": 25,
+      "deception_language": 50
+    },
+    "dimension_details": {
+      "internal_consistency": {
+        "contradictions": 0,
+        "statements": 0
+      },
+      "external_corroboration": {
+        "corroborated": 0,
+        "uncorroborated": 0
+      },
+      "prior_false_statements": {
+        "documented_false_statements": 0
+      },
+      "bias_interest": {
+        "bias_level": "HIGH",
+        "interest": "Protecting Emily, maintaining household control"
+      },
+      "deception_language": {
+        "indicators": {},
+        "total_words_analyzed": 0
+      }
+    },
+    "cross_exam_strategies": [
+      {
+        "strategy": "Bias/Interest Impeachment (MRE 616)",
+        "approach": "Expose financial/personal interest: Protecting Emily, maintaining household control",
+        "priority": "HIGH"
+      }
+    ]
+  },
+  "Jennifer Barnes": {
+    "role": "Former Attorney (WITHDREW)",
+    "overall_score": 55.0,
+    "grade": "C (Questionable)",
+    "dimension_scores": {
+      "internal_consistency": 50,
+      "external_corroboration": 50,
+      "prior_false_statements": 100,
+      "bias_interest": 25,
+      "deception_language": 50
+    },
+    "dimension_details": {
+      "internal_consistency": {
+        "contradictions": 0,
+        "statements": 0
+      },
+      "external_corroboration": {
+        "corroborated": 0,
+        "uncorroborated": 0
+      },
+      "prior_false_statements": {
+        "documented_false_statements": 0
+      },
+      "bias_interest": {
+        "bias_level": "HIGH",
+        "interest": "Professional reputation, avoiding malpractice"
+      },
+      "deception_language": {
+        "indicators": {},
+        "total_words_analyzed": 0
+      }
+    },
+    "cross_exam_strategies": [
+      {
+        "strategy": "Bias/Interest Impeachment (MRE 616)",
+        "approach": "Expose financial/personal interest: Professional reputation, avoiding malpractice",
+        "priority": "HIGH"
+      }
+    ]
+  },
+  "Hon. Jenny McNeill": {
+    "role": "Judge \u2014 14th Circuit",
+    "overall_score": 44.2,
+    "grade": "D (Low Credibility)",
+    "dimension_scores": {
+      "internal_consistency": 50,
+      "external_corroboration": 50,
+      "prior_false_statements": 100,
+      "bias_interest": 15,
+      "deception_language": 50,
+      "judicial_violations": 0
+    },
+    "dimension_details": {
+      "internal_consistency": {
+        "contradictions": 0,
+        "statements": 0
+      },
+      "external_corroboration": {
+        "corroborated": 0,
+        "uncorroborated": 0
+      },
+      "prior_false_statements": {
+        "documented_false_statements": 0
+      },
+      "bias_interest": {
+        "bias_level": "SUBJECT OF COMPLAINT",
+        "interest": "Judicial reputation, avoiding JTC complaint"
+      },
+      "deception_language": {
+        "indicators": {},
+        "total_words_analyzed": 0
+      },
+      "judicial_violations": {
+        "documented_violations": 5242
+      }
+    },
+    "cross_exam_strategies": [
+      {
+        "strategy": "Bias/Interest Impeachment (MRE 616)",
+        "approach": "Expose financial/personal interest: Judicial reputation, avoiding JTC complaint",
+        "priority": "HIGH"
+      },
+      {
+        "strategy": "Judicial Misconduct Record",
+        "approach": "5242 documented violations \u2014 pattern of bias",
+        "priority": "HIGH"
+      }
+    ]
+  },
+  "Lori Watson": {
+    "role": "Non-Party Witness",
+    "overall_score": 61.4,
+    "grade": "C (Questionable)",
+    "dimension_scores": {
+      "internal_consistency": 34,
+      "external_corroboration": 50,
+      "prior_false_statements": 98,
+      "bias_interest": 25,
+      "deception_language": 100
+    },
+    "dimension_details": {
+      "internal_consistency": {
+        "contradictions": 2,
+        "statements": 6,
+        "ratio": 0.333
+      },
+      "external_corroboration": {
+        "corroborated": 0,
+        "uncorroborated": 0
+      },
+      "prior_false_statements": {
+        "documented_false_statements": 1
+      },
+      "bias_interest": {
+        "bias_level": "HIGH",
+        "interest": "Protecting daughter, maintaining access to grandchild"
+      },
+      "deception_language": {
+        "indicators": {
+          "memory_evasion": 0,
+          "hedging": 0,
+          "absolute_denial": 0,
+          "absolute_claim": 0,
+          "truthfulness_emphasis": 0,
+          "minimization": 0,
+          "vagueness": 0
+        },
+        "total_words_analyzed": 147
+      }
+    },
+    "cross_exam_strategies": [
+      {
+        "strategy": "Prior Inconsistent Statements (MRE 613)",
+        "approach": "Confront with 2 documented contradictions",
+        "priority": "HIGH"
+      },
+      {
+        "strategy": "Bias/Interest Impeachment (MRE 616)",
+        "approach": "Expose financial/personal interest: Protecting daughter, maintaining access to grandchild",
+        "priority": "HIGH"
+      }
+    ]
+  },
+  "Pamela Rusco": {
+    "role": "Judicial Secretary",
+    "overall_score": 60.0,
+    "grade": "C (Questionable)",
+    "dimension_scores": {
+      "internal_consistency": 50,
+      "external_corroboration": 50,
+      "prior_false_statements": 100,
+      "bias_interest": 50,
+      "deception_language": 50
+    },
+    "dimension_details": {
+      "internal_consistency": {
+        "contradictions": 0,
+        "statements": 0
+      },
+      "external_corroboration": {
+        "corroborated": 0,
+        "uncorroborated": 0
+      },
+      "prior_false_statements": {
+        "documented_false_statements": 0
+      },
+      "bias_interest": {
+        "bias_level": "MODERATE",
+        "interest": "Job security, loyalty to judge"
+      },
+      "deception_language": {
+        "indicators": {},
+        "total_words_analyzed": 0
+      }
+    },
+    "cross_exam_strategies": [
+      {
+        "strategy": "Standard Cross-Examination",
+        "approach": "Focus on specifics \u2014 dates, times, exact words",
+        "priority": "STANDARD"
+      }
+    ]
+  }
+}

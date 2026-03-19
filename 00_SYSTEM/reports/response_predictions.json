@@ -1,0 +1,592 @@
+{
+  "F1": {
+    "filing_id": "F1",
+    "filing_name": "Emergency TRO (Housing)",
+    "court": "14th Circuit",
+    "respondent": "Shady Oaks / Cricklewood",
+    "response_deadline_days": 7,
+    "historical_responses": 0,
+    "likely_defenses": [
+      {
+        "defense": "qualified_immunity",
+        "description": "McNeill claims judicial immunity",
+        "probability": 0.95,
+        "counter_strategy": "Dennis v Sparks: immunity pierced by conspiracy; Mireles v Waco exceptions"
+      },
+      {
+        "defense": "abstention_argument",
+        "description": "Argue federal court should abstain (Younger/Rooker-Feldman)",
+        "probability": 0.9,
+        "counter_strategy": "Sprint v Jacobs narrows Younger; fraud exception to Rooker-Feldman"
+      },
+      {
+        "defense": "victim_narrative",
+        "description": "Present Emily as victim, Andrew as aggressor",
+        "probability": 0.85,
+        "counter_strategy": "Document pattern of false allegations + retracted claims"
+      },
+      {
+        "defense": "domestic_relations_exception",
+        "description": "Argue domestic relations exception bars federal claims",
+        "probability": 0.85,
+        "counter_strategy": "Catz v Chalker: \u00a71983 claims NOT barred; Ankenbrandt limits exception"
+      },
+      {
+        "defense": "ppo_shield",
+        "description": "Use PPO as basis to restrict contact/parenting",
+        "probability": 0.8,
+        "counter_strategy": "Challenge PPO foundation (fraud) + move to terminate"
+      },
+      {
+        "defense": "fabricated_safety",
+        "description": "Allege safety concerns to maintain restrictions",
+        "probability": 0.8,
+        "counter_strategy": "No police reports, no CPS findings, contradicted by own evidence"
+      }
+    ],
+    "judge_prediction": {
+      "likely_ruling": "ADVERSE",
+      "adverse_probability": 0.628,
+      "expected_turnaround_days": 21,
+      "known_tendencies": [
+        "Consistently rules against father in custody matters",
+        "Grants ex-parte orders without required MCL 722.27a(3) findings",
+        "Defers to PPO existence regardless of underlying fraud",
+        "Limits pro se filings (\"Do not file anymore\")"
+      ],
+      "mitigation": "Filing in higher court bypasses McNeill entirely"
+    },
+    "response_timing": "EXPEDITED (48-72 hours)",
+    "success_probability": 0.45,
+    "risks": [
+      "McNeill may rule adversely (62.8% historical rate)"
+    ]
+  },
+  "F2": {
+    "filing_id": "F2",
+    "filing_name": "Housing Rights Complaint",
+    "court": "14th Circuit Civil",
+    "respondent": "Shady Oaks / Cricklewood",
+    "response_deadline_days": 21,
+    "historical_responses": 0,
+    "likely_defenses": [
+      {
+        "defense": "qualified_immunity",
+        "description": "McNeill claims judicial immunity",
+        "probability": 0.95,
+        "counter_strategy": "Dennis v Sparks: immunity pierced by conspiracy; Mireles v Waco exceptions"
+      },
+      {
+        "defense": "abstention_argument",
+        "description": "Argue federal court should abstain (Younger/Rooker-Feldman)",
+        "probability": 0.9,
+        "counter_strategy": "Sprint v Jacobs narrows Younger; fraud exception to Rooker-Feldman"
+      },
+      {
+        "defense": "victim_narrative",
+        "description": "Present Emily as victim, Andrew as aggressor",
+        "probability": 0.85,
+        "counter_strategy": "Document pattern of false allegations + retracted claims"
+      },
+      {
+        "defense": "domestic_relations_exception",
+        "description": "Argue domestic relations exception bars federal claims",
+        "probability": 0.85,
+        "counter_strategy": "Catz v Chalker: \u00a71983 claims NOT barred; Ankenbrandt limits exception"
+      },
+      {
+        "defense": "ppo_shield",
+        "description": "Use PPO as basis to restrict contact/parenting",
+        "probability": 0.8,
+        "counter_strategy": "Challenge PPO foundation (fraud) + move to terminate"
+      },
+      {
+        "defense": "fabricated_safety",
+        "description": "Allege safety concerns to maintain restrictions",
+        "probability": 0.8,
+        "counter_strategy": "No police reports, no CPS findings, contradicted by own evidence"
+      }
+    ],
+    "response_timing": "Standard (21 days)",
+    "success_probability": 0.6,
+    "risks": []
+  },
+  "F3": {
+    "filing_id": "F3",
+    "filing_name": "Judicial Disqualification (MCR 2.003)",
+    "court": "14th Circuit",
+    "respondent": "Hon. Jenny McNeill",
+    "response_deadline_days": 14,
+    "historical_responses": 0,
+    "likely_defenses": [
+      {
+        "defense": "qualified_immunity",
+        "description": "McNeill claims judicial immunity",
+        "probability": 0.95,
+        "counter_strategy": "Dennis v Sparks: immunity pierced by conspiracy; Mireles v Waco exceptions"
+      },
+      {
+        "defense": "abstention_argument",
+        "description": "Argue federal court should abstain (Younger/Rooker-Feldman)",
+        "probability": 0.9,
+        "counter_strategy": "Sprint v Jacobs narrows Younger; fraud exception to Rooker-Feldman"
+      },
+      {
+        "defense": "domestic_relations_exception",
+        "description": "Argue domestic relations exception bars federal claims",
+        "probability": 0.85,
+        "counter_strategy": "Catz v Chalker: \u00a71983 claims NOT barred; Ankenbrandt limits exception"
+      },
+      {
+        "defense": "fabricated_safety",
+        "description": "Allege safety concerns to maintain restrictions",
+        "probability": 0.8,
+        "counter_strategy": "No police reports, no CPS findings, contradicted by own evidence"
+      },
+      {
+        "defense": "best_interest_claim",
+        "description": "Claim current arrangement serves child best interest",
+        "probability": 0.75,
+        "counter_strategy": "MCL 722.23 factors analysis shows arrangement harms child"
+      },
+      {
+        "defense": "pro_se_dismissal",
+        "description": "Attack pro se filing quality/standing",
+        "probability": 0.7,
+        "counter_strategy": "Cite Haines v Kerner 404 US 519 (pro se pleadings liberally construed)"
+      }
+    ],
+    "judge_prediction": {
+      "likely_ruling": "ADVERSE",
+      "adverse_probability": 0.628,
+      "expected_turnaround_days": 21,
+      "known_tendencies": [
+        "Consistently rules against father in custody matters",
+        "Grants ex-parte orders without required MCL 722.27a(3) findings",
+        "Defers to PPO existence regardless of underlying fraud",
+        "Limits pro se filings (\"Do not file anymore\")"
+      ],
+      "mitigation": "Filing in higher court bypasses McNeill entirely"
+    },
+    "response_timing": "Within 14 days",
+    "success_probability": 0.5,
+    "risks": [
+      "McNeill may rule adversely (62.8% historical rate)",
+      "McNeill may deny own disqualification \u2014 plan for mandamus"
+    ]
+  },
+  "F4": {
+    "filing_id": "F4",
+    "filing_name": "Federal \u00a71983 Civil Rights",
+    "court": "USDC Western District MI",
+    "respondent": "Emily Watson, Ronald Berry, Jennifer Barnes, McNeill",
+    "response_deadline_days": 21,
+    "historical_responses": 9176,
+    "likely_defenses": [
+      {
+        "defense": "abstention_argument",
+        "description": "Argue federal court should abstain (Younger/Rooker-Feldman)",
+        "probability": 0.99,
+        "counter_strategy": "Sprint v Jacobs narrows Younger; fraud exception to Rooker-Feldman"
+      },
+      {
+        "defense": "domestic_relations_exception",
+        "description": "Argue domestic relations exception bars federal claims",
+        "probability": 0.99,
+        "counter_strategy": "Catz v Chalker: \u00a71983 claims NOT barred; Ankenbrandt limits exception"
+      },
+      {
+        "defense": "qualified_immunity",
+        "description": "McNeill claims judicial immunity",
+        "probability": 0.99,
+        "counter_strategy": "Dennis v Sparks: immunity pierced by conspiracy; Mireles v Waco exceptions"
+      },
+      {
+        "defense": "victim_narrative",
+        "description": "Present Emily as victim, Andrew as aggressor",
+        "probability": 0.85,
+        "counter_strategy": "Document pattern of false allegations + retracted claims"
+      },
+      {
+        "defense": "fabricated_safety",
+        "description": "Allege safety concerns to maintain restrictions",
+        "probability": 0.8,
+        "counter_strategy": "No police reports, no CPS findings, contradicted by own evidence"
+      },
+      {
+        "defense": "pro_se_dismissal",
+        "description": "Attack pro se filing quality/standing",
+        "probability": 0.7,
+        "counter_strategy": "Cite Haines v Kerner 404 US 519 (pro se pleadings liberally construed)"
+      }
+    ],
+    "judge_prediction": {
+      "likely_ruling": "ADVERSE",
+      "adverse_probability": 0.628,
+      "expected_turnaround_days": 21,
+      "known_tendencies": [
+        "Consistently rules against father in custody matters",
+        "Grants ex-parte orders without required MCL 722.27a(3) findings",
+        "Defers to PPO existence regardless of underlying fraud",
+        "Limits pro se filings (\"Do not file anymore\")"
+      ],
+      "mitigation": "Filing in higher court bypasses McNeill entirely"
+    },
+    "response_timing": "Standard (21 days)",
+    "success_probability": 0.65,
+    "risks": [
+      "Younger abstention risk \u2014 pre-empt in complaint",
+      "Domestic relations exception \u2014 cite Catz v Chalker",
+      "Emily may file counter-motions or emergency PPO modifications"
+    ]
+  },
+  "F5": {
+    "filing_id": "F5",
+    "filing_name": "MSC Superintending Control",
+    "court": "Michigan Supreme Court",
+    "respondent": "14th Circuit / McNeill",
+    "response_deadline_days": 28,
+    "historical_responses": 0,
+    "likely_defenses": [
+      {
+        "defense": "qualified_immunity",
+        "description": "McNeill claims judicial immunity",
+        "probability": 0.95,
+        "counter_strategy": "Dennis v Sparks: immunity pierced by conspiracy; Mireles v Waco exceptions"
+      },
+      {
+        "defense": "abstention_argument",
+        "description": "Argue federal court should abstain (Younger/Rooker-Feldman)",
+        "probability": 0.9,
+        "counter_strategy": "Sprint v Jacobs narrows Younger; fraud exception to Rooker-Feldman"
+      },
+      {
+        "defense": "victim_narrative",
+        "description": "Present Emily as victim, Andrew as aggressor",
+        "probability": 0.85,
+        "counter_strategy": "Document pattern of false allegations + retracted claims"
+      },
+      {
+        "defense": "domestic_relations_exception",
+        "description": "Argue domestic relations exception bars federal claims",
+        "probability": 0.85,
+        "counter_strategy": "Catz v Chalker: \u00a71983 claims NOT barred; Ankenbrandt limits exception"
+      },
+      {
+        "defense": "ppo_shield",
+        "description": "Use PPO as basis to restrict contact/parenting",
+        "probability": 0.8,
+        "counter_strategy": "Challenge PPO foundation (fraud) + move to terminate"
+      },
+      {
+        "defense": "fabricated_safety",
+        "description": "Allege safety concerns to maintain restrictions",
+        "probability": 0.8,
+        "counter_strategy": "No police reports, no CPS findings, contradicted by own evidence"
+      }
+    ],
+    "judge_prediction": {
+      "likely_ruling": "ADVERSE",
+      "adverse_probability": 0.628,
+      "expected_turnaround_days": 21,
+      "known_tendencies": [
+        "Consistently rules against father in custody matters",
+        "Grants ex-parte orders without required MCL 722.27a(3) findings",
+        "Defers to PPO existence regardless of underlying fraud",
+        "Limits pro se filings (\"Do not file anymore\")"
+      ],
+      "mitigation": "Filing in higher court bypasses McNeill entirely"
+    },
+    "response_timing": "Within 28 days",
+    "success_probability": 0.6,
+    "risks": []
+  },
+  "F6": {
+    "filing_id": "F6",
+    "filing_name": "JTC Complaint",
+    "court": "Judicial Tenure Commission",
+    "respondent": "Hon. Jenny McNeill",
+    "response_deadline_days": 56,
+    "historical_responses": 0,
+    "likely_defenses": [
+      {
+        "defense": "jurisdiction_challenge",
+        "description": "Challenge jurisdiction/venue/standing",
+        "probability": 0.68,
+        "counter_strategy": "Pre-emptively establish jurisdiction in filing"
+      },
+      {
+        "defense": "qualified_immunity",
+        "description": "McNeill claims judicial immunity",
+        "probability": 0.38,
+        "counter_strategy": "Dennis v Sparks: immunity pierced by conspiracy; Mireles v Waco exceptions"
+      },
+      {
+        "defense": "abstention_argument",
+        "description": "Argue federal court should abstain (Younger/Rooker-Feldman)",
+        "probability": 0.36,
+        "counter_strategy": "Sprint v Jacobs narrows Younger; fraud exception to Rooker-Feldman"
+      },
+      {
+        "defense": "victim_narrative",
+        "description": "Present Emily as victim, Andrew as aggressor",
+        "probability": 0.34,
+        "counter_strategy": "Document pattern of false allegations + retracted claims"
+      },
+      {
+        "defense": "domestic_relations_exception",
+        "description": "Argue domestic relations exception bars federal claims",
+        "probability": 0.34,
+        "counter_strategy": "Catz v Chalker: \u00a71983 claims NOT barred; Ankenbrandt limits exception"
+      },
+      {
+        "defense": "ppo_shield",
+        "description": "Use PPO as basis to restrict contact/parenting",
+        "probability": 0.32,
+        "counter_strategy": "Challenge PPO foundation (fraud) + move to terminate"
+      }
+    ],
+    "judge_prediction": {
+      "likely_ruling": "ADVERSE",
+      "adverse_probability": 0.628,
+      "expected_turnaround_days": 21,
+      "known_tendencies": [
+        "Consistently rules against father in custody matters",
+        "Grants ex-parte orders without required MCL 722.27a(3) findings",
+        "Defers to PPO existence regardless of underlying fraud",
+        "Limits pro se filings (\"Do not file anymore\")"
+      ],
+      "mitigation": "Filing in higher court bypasses McNeill entirely"
+    },
+    "response_timing": "Within 56 days",
+    "success_probability": 0.75,
+    "risks": []
+  },
+  "F7": {
+    "filing_id": "F7",
+    "filing_name": "Custody Modification",
+    "court": "14th Circuit Family",
+    "respondent": "Emily Watson",
+    "response_deadline_days": 14,
+    "historical_responses": 9176,
+    "likely_defenses": [
+      {
+        "defense": "qualified_immunity",
+        "description": "McNeill claims judicial immunity",
+        "probability": 0.95,
+        "counter_strategy": "Dennis v Sparks: immunity pierced by conspiracy; Mireles v Waco exceptions"
+      },
+      {
+        "defense": "abstention_argument",
+        "description": "Argue federal court should abstain (Younger/Rooker-Feldman)",
+        "probability": 0.9,
+        "counter_strategy": "Sprint v Jacobs narrows Younger; fraud exception to Rooker-Feldman"
+      },
+      {
+        "defense": "victim_narrative",
+        "description": "Present Emily as victim, Andrew as aggressor",
+        "probability": 0.85,
+        "counter_strategy": "Document pattern of false allegations + retracted claims"
+      },
+      {
+        "defense": "domestic_relations_exception",
+        "description": "Argue domestic relations exception bars federal claims",
+        "probability": 0.85,
+        "counter_strategy": "Catz v Chalker: \u00a71983 claims NOT barred; Ankenbrandt limits exception"
+      },
+      {
+        "defense": "ppo_shield",
+        "description": "Use PPO as basis to restrict contact/parenting",
+        "probability": 0.8,
+        "counter_strategy": "Challenge PPO foundation (fraud) + move to terminate"
+      },
+      {
+        "defense": "fabricated_safety",
+        "description": "Allege safety concerns to maintain restrictions",
+        "probability": 0.8,
+        "counter_strategy": "No police reports, no CPS findings, contradicted by own evidence"
+      }
+    ],
+    "response_timing": "Within 14 days",
+    "success_probability": 0.6,
+    "risks": [
+      "Emily may file counter-motions or emergency PPO modifications"
+    ]
+  },
+  "F8": {
+    "filing_id": "F8",
+    "filing_name": "PPO Termination",
+    "court": "14th Circuit",
+    "respondent": "Emily Watson",
+    "response_deadline_days": 14,
+    "historical_responses": 9176,
+    "likely_defenses": [
+      {
+        "defense": "qualified_immunity",
+        "description": "McNeill claims judicial immunity",
+        "probability": 0.95,
+        "counter_strategy": "Dennis v Sparks: immunity pierced by conspiracy; Mireles v Waco exceptions"
+      },
+      {
+        "defense": "abstention_argument",
+        "description": "Argue federal court should abstain (Younger/Rooker-Feldman)",
+        "probability": 0.9,
+        "counter_strategy": "Sprint v Jacobs narrows Younger; fraud exception to Rooker-Feldman"
+      },
+      {
+        "defense": "victim_narrative",
+        "description": "Present Emily as victim, Andrew as aggressor",
+        "probability": 0.85,
+        "counter_strategy": "Document pattern of false allegations + retracted claims"
+      },
+      {
+        "defense": "domestic_relations_exception",
+        "description": "Argue domestic relations exception bars federal claims",
+        "probability": 0.85,
+        "counter_strategy": "Catz v Chalker: \u00a71983 claims NOT barred; Ankenbrandt limits exception"
+      },
+      {
+        "defense": "ppo_shield",
+        "description": "Use PPO as basis to restrict contact/parenting",
+        "probability": 0.8,
+        "counter_strategy": "Challenge PPO foundation (fraud) + move to terminate"
+      },
+      {
+        "defense": "fabricated_safety",
+        "description": "Allege safety concerns to maintain restrictions",
+        "probability": 0.8,
+        "counter_strategy": "No police reports, no CPS findings, contradicted by own evidence"
+      }
+    ],
+    "judge_prediction": {
+      "likely_ruling": "ADVERSE",
+      "adverse_probability": 0.628,
+      "expected_turnaround_days": 21,
+      "known_tendencies": [
+        "Consistently rules against father in custody matters",
+        "Grants ex-parte orders without required MCL 722.27a(3) findings",
+        "Defers to PPO existence regardless of underlying fraud",
+        "Limits pro se filings (\"Do not file anymore\")"
+      ],
+      "mitigation": "Filing in higher court bypasses McNeill entirely"
+    },
+    "response_timing": "Within 14 days",
+    "success_probability": 0.5,
+    "risks": [
+      "McNeill may rule adversely (62.8% historical rate)",
+      "Emily may file counter-motions or emergency PPO modifications"
+    ]
+  },
+  "F9": {
+    "filing_id": "F9",
+    "filing_name": "COA Appeal Brief",
+    "court": "Court of Appeals",
+    "respondent": "Emily Watson",
+    "response_deadline_days": 28,
+    "historical_responses": 9176,
+    "likely_defenses": [
+      {
+        "defense": "qualified_immunity",
+        "description": "McNeill claims judicial immunity",
+        "probability": 0.95,
+        "counter_strategy": "Dennis v Sparks: immunity pierced by conspiracy; Mireles v Waco exceptions"
+      },
+      {
+        "defense": "abstention_argument",
+        "description": "Argue federal court should abstain (Younger/Rooker-Feldman)",
+        "probability": 0.9,
+        "counter_strategy": "Sprint v Jacobs narrows Younger; fraud exception to Rooker-Feldman"
+      },
+      {
+        "defense": "victim_narrative",
+        "description": "Present Emily as victim, Andrew as aggressor",
+        "probability": 0.85,
+        "counter_strategy": "Document pattern of false allegations + retracted claims"
+      },
+      {
+        "defense": "domestic_relations_exception",
+        "description": "Argue domestic relations exception bars federal claims",
+        "probability": 0.85,
+        "counter_strategy": "Catz v Chalker: \u00a71983 claims NOT barred; Ankenbrandt limits exception"
+      },
+      {
+        "defense": "delay_tactics",
+        "description": "Request continuances/extensions to delay proceedings",
+        "probability": 0.78,
+        "counter_strategy": "Oppose + cite child best interest in timely resolution"
+      },
+      {
+        "defense": "best_interest_claim",
+        "description": "Claim current arrangement serves child best interest",
+        "probability": 0.75,
+        "counter_strategy": "MCL 722.23 factors analysis shows arrangement harms child"
+      }
+    ],
+    "judge_prediction": {
+      "likely_ruling": "NEUTRAL_PANEL",
+      "adverse_probability": 0.5,
+      "note": "COA reversal rate ~20% but abuse of discretion standard favors appellant here"
+    },
+    "response_timing": "Within 28 days",
+    "success_probability": 0.6,
+    "risks": [
+      "Emily may file counter-motions or emergency PPO modifications"
+    ]
+  },
+  "F10": {
+    "filing_id": "F10",
+    "filing_name": "COA Emergency Motion",
+    "court": "Court of Appeals",
+    "respondent": "Emily Watson",
+    "response_deadline_days": 7,
+    "historical_responses": 9176,
+    "likely_defenses": [
+      {
+        "defense": "qualified_immunity",
+        "description": "McNeill claims judicial immunity",
+        "probability": 0.95,
+        "counter_strategy": "Dennis v Sparks: immunity pierced by conspiracy; Mireles v Waco exceptions"
+      },
+      {
+        "defense": "abstention_argument",
+        "description": "Argue federal court should abstain (Younger/Rooker-Feldman)",
+        "probability": 0.9,
+        "counter_strategy": "Sprint v Jacobs narrows Younger; fraud exception to Rooker-Feldman"
+      },
+      {
+        "defense": "victim_narrative",
+        "description": "Present Emily as victim, Andrew as aggressor",
+        "probability": 0.85,
+        "counter_strategy": "Document pattern of false allegations + retracted claims"
+      },
+      {
+        "defense": "domestic_relations_exception",
+        "description": "Argue domestic relations exception bars federal claims",
+        "probability": 0.85,
+        "counter_strategy": "Catz v Chalker: \u00a71983 claims NOT barred; Ankenbrandt limits exception"
+      },
+      {
+        "defense": "ppo_shield",
+        "description": "Use PPO as basis to restrict contact/parenting",
+        "probability": 0.8,
+        "counter_strategy": "Challenge PPO foundation (fraud) + move to terminate"
+      },
+      {
+        "defense": "fabricated_safety",
+        "description": "Allege safety concerns to maintain restrictions",
+        "probability": 0.8,
+        "counter_strategy": "No police reports, no CPS findings, contradicted by own evidence"
+      }
+    ],
+    "judge_prediction": {
+      "likely_ruling": "NEUTRAL_PANEL",
+      "adverse_probability": 0.5,
+      "note": "COA reversal rate ~20% but abuse of discretion standard favors appellant here"
+    },
+    "response_timing": "EXPEDITED (48-72 hours)",
+    "success_probability": 0.55,
+    "risks": [
+      "Emily may file counter-motions or emergency PPO modifications"
+    ]
+  }
+}

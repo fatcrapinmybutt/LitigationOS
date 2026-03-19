@@ -1,0 +1,197 @@
+{
+  "Lane_A_Custody": {
+    "lane": "Lane_A_Custody",
+    "name": "Custody / Parental Rights",
+    "case_number": "2024-001507-DC",
+    "components": {
+      "lost_parenting_time": {
+        "description": "Value of lost parenting time",
+        "low": 22450,
+        "mid": 44900,
+        "high": 67350,
+        "notes": "Troxel v Granville 530 US 57: fundamental right"
+      },
+      "emotional_distress": {
+        "description": "Emotional distress from child separation",
+        "low": 54000,
+        "mid": 108000,
+        "high": 216000,
+        "notes": "Michigan allows emotional distress in custody interference"
+      },
+      "child_relationship_damage": {
+        "description": "Damage to parent-child bond",
+        "low": 25000,
+        "mid": 87500,
+        "high": 150000,
+        "notes": "Stanley v Illinois 405 US 645: parental bond is liberty interest"
+      },
+      "counseling_costs": {
+        "description": "Therapy/counseling for parent and child",
+        "low": 7500,
+        "mid": 15000,
+        "high": 30000,
+        "notes": ""
+      }
+    },
+    "low_total": 108950,
+    "mid_total": 255400,
+    "high_total": 463350
+  },
+  "Lane_B_Housing": {
+    "lane": "Lane_B_Housing",
+    "name": "Housing Rights",
+    "case_number": "2025-002760-CZ",
+    "components": {
+      "habitability_damages": {
+        "description": "Rent abatement for uninhabitable conditions",
+        "low": 1440,
+        "mid": 2880,
+        "high": 5760,
+        "notes": ""
+      },
+      "security_deposit": {
+        "description": "Wrongfully withheld security deposit",
+        "low": 800,
+        "mid": 1600,
+        "high": 1600,
+        "notes": "MCL 554.613: double damages for bad faith retention"
+      },
+      "moving_costs": {
+        "description": "Forced relocation expenses",
+        "low": 2500,
+        "mid": 5000,
+        "high": 10000,
+        "notes": ""
+      },
+      "emotional_distress_housing": {
+        "description": "Distress from housing instability",
+        "low": 5000,
+        "mid": 10000,
+        "high": 20000,
+        "notes": ""
+      }
+    },
+    "low_total": 9740,
+    "mid_total": 19480,
+    "high_total": 37360
+  },
+  "Lane_D_PPO": {
+    "lane": "Lane_D_PPO",
+    "name": "False PPO / Malicious Prosecution",
+    "case_number": "2023-5907-PP",
+    "components": {
+      "malicious_prosecution": {
+        "description": "Filing false PPO with knowledge of falsity",
+        "low": 25000,
+        "mid": 112500,
+        "high": 200000,
+        "notes": "Friedman v Dozorc 412 Mich 1: elements met when PPO based on fabrications"
+      },
+      "abuse_of_process": {
+        "description": "Using PPO to gain custody advantage",
+        "low": 15000,
+        "mid": 57500,
+        "high": 100000,
+        "notes": "Bonner v Chicago Title 194 Mich App 462"
+      },
+      "stigma_damages": {
+        "description": "Reputational harm from false DV/stalking allegations",
+        "low": 15000,
+        "mid": 30000,
+        "high": 60000,
+        "notes": "Defamation per se: false accusation of crime"
+      },
+      "lost_employment": {
+        "description": "Employment impact of false allegations",
+        "low": 10000,
+        "mid": 20000,
+        "high": 40000,
+        "notes": ""
+      }
+    },
+    "low_total": 65000,
+    "mid_total": 220000,
+    "high_total": 400000
+  },
+  "Lane_E_Misconduct": {
+    "lane": "Lane_E_Misconduct",
+    "name": "Judicial Misconduct (\u00a71983)",
+    "case_number": "2024-001507-DC",
+    "components": {
+      "constitutional_violation": {
+        "description": "14th Amendment due process violation",
+        "low": 125000,
+        "mid": 500000,
+        "high": 1000000,
+        "notes": "42 USC \u00a71983: each violation is independent cause of action"
+      },
+      "conspiracy_damages": {
+        "description": "42 USC \u00a71985(3) conspiracy",
+        "low": 50000,
+        "mid": 275000,
+        "high": 500000,
+        "notes": "Dennis v Sparks: private actors lose immunity when conspiring with judge"
+      },
+      "punitive_damages": {
+        "description": "Punitive damages for willful misconduct",
+        "low": 775000,
+        "mid": 2325000,
+        "high": 4650000,
+        "notes": "Smith v Wade 461 US 30: punitive available under \u00a71983"
+      }
+    },
+    "low_total": 950000,
+    "mid_total": 3100000,
+    "high_total": 6150000
+  },
+  "Lane_F_Appellate": {
+    "lane": "Lane_F_Appellate",
+    "name": "Appellate Costs",
+    "case_number": "COA 366810",
+    "components": {
+      "filing_fees": {
+        "description": "Court filing fees across all courts",
+        "low": 1250,
+        "mid": 2500,
+        "high": 5000,
+        "notes": ""
+      },
+      "pro_se_time": {
+        "description": "Compensable pro se litigation time",
+        "low": 151275,
+        "mid": 302550,
+        "high": 453825,
+        "notes": "Kay v Ehrler 499 US 432 limits pro se fee recovery, but Michigan MCR 2.403 allows"
+      },
+      "transcript_costs": {
+        "description": "Court reporter / transcript costs",
+        "low": 1500,
+        "mid": 3000,
+        "high": 6000,
+        "notes": ""
+      }
+    },
+    "low_total": 154025,
+    "mid_total": 308050,
+    "high_total": 464825
+  },
+  "convergence": {
+    "low": 128771,
+    "mid": 585439,
+    "high": 1503107
+  },
+  "grand_total": {
+    "low": 1416486,
+    "mid": 4488369,
+    "high": 9018642,
+    "recommended_demand": 6732553
+  },
+  "case_parameters": {
+    "days_separated": 899,
+    "lost_parenting_days": 449,
+    "pro_se_hours": 2017,
+    "violations": 1127,
+    "contradictions": 1061,
+    "perjury_items": 5821
+  }
+}
