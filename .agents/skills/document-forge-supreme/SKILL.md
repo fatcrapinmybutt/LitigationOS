@@ -1,6 +1,25 @@
 ---
 name: document-forge-supreme
-description: "ELITE document generation — fusion of 14 document/writing skills. Covers PDF, DOCX, PPTX, XLSX generation, professional writing, prose, copy editing, documentation architecture, templates, technical blogging, README, and API documentation."
+description: "Use when generating any document — PDF, DOCX, PPTX, XLSX, court filings, reports, professional writing, copy editing, documentation architecture, templates, technical writing, README, and API documentation."
+category: discipline
+version: "2.0.0"
+triggers:
+  - document
+  - pdf
+  - docx
+  - template
+  - report
+  - filing-format
+lanes:
+  - "A: Watson/Custody (2024-001507-DC)"
+  - "B: Shady Oaks/Housing (2025-002760-CZ)"
+  - "C: Federal §1983 (USDC WDMI)"
+  - "D: PPO (2023-5907-PP)"
+  - "E: Judicial Misconduct/JTC"
+  - "F: Appellate (COA 366810)"
+court: "14th Judicial Circuit, Muskegon County"
+case: "Pigors v Watson"
+dependencies: []
 metadata:
   model: opus
   forged_from: 14
@@ -24,6 +43,84 @@ Activate this skill for ANY work related to:
 - **Documentation Architecture**: information architecture, navigation, versioning
 - **Technical Writing**: tutorials, how-tos, reference docs, API documentation
 - **README & Project Docs**: README templates, changelogs, contributing guides
+
+---
+
+## Decision Tree
+
+```
+ENTRY: Document generation task received
+│
+├─ Q1: What type of document?
+│   ├─ Court filing (motion, brief, petition) → BRANCH A
+│   ├─ PDF report (non-court) → BRANCH B
+│   ├─ DOCX document → BRANCH C
+│   ├─ Spreadsheet (XLSX) → BRANCH D
+│   ├─ Presentation (PPTX) → BRANCH E
+│   └─ Technical documentation → BRANCH F
+│
+├─ BRANCH A: Court Filing
+│   ├─ Step 1: Identify lane (A-F) and case number
+│   ├─ Step 2: Select SCAO form template (query court_forms.db)
+│   ├─ Step 3: Resolve ALL variables from litigation_context.db (DB-first!)
+│   ├─ Step 4: Apply MCR formatting (caption, margins, spacing, font)
+│   ├─ Step 5: Add certificate of service + pro se signature block
+│   ├─ Step 6: Run pre-filing-qa agent for GO/NO-GO
+│   └─ OUTPUT: Filing-ready court document (PDF)
+│   ⚠️  NOTE: For complex filings, prefer OMEGA-LITIGATION-SUPREME M4
+│
+├─ BRANCH B: PDF Report
+│   ├─ Step 1: Choose engine (reportlab, fpdf2, or weasyprint)
+│   ├─ Step 2: Define layout (headers, footers, page numbers)
+│   ├─ Step 3: Populate with data (DB queries, not placeholders)
+│   ├─ Step 4: Add charts/tables if needed
+│   └─ OUTPUT: Professional PDF report
+│
+├─ BRANCH C: DOCX Document
+│   ├─ Step 1: Use python-docx with template
+│   ├─ Step 2: Apply styles (headings, body, tables)
+│   ├─ Step 3: Add headers/footers
+│   └─ OUTPUT: Formatted Word document
+│
+├─ BRANCH D: Spreadsheet
+│   ├─ Step 1: Use openpyxl
+│   ├─ Step 2: Use FORMULAS, not hardcoded values (critical!)
+│   ├─ Step 3: Add conditional formatting and charts
+│   ├─ Step 4: Run recalc.py to verify formulas
+│   └─ OUTPUT: Dynamic Excel spreadsheet
+│
+├─ BRANCH E: Presentation
+│   ├─ Step 1: Use python-pptx with slide layouts
+│   ├─ Step 2: Keep text concise, use visuals
+│   └─ OUTPUT: Professional PowerPoint deck
+│
+└─ BRANCH F: Technical Documentation
+    ├─ Step 1: Discovery (analyze codebase structure)
+    ├─ Step 2: Structure (chapter hierarchy, progressive disclosure)
+    ├─ Step 3: Write (overview → details, include rationale)
+    └─ OUTPUT: Structured technical documentation
+```
+
+## Output Contract
+
+```yaml
+output:
+  type: enum [document, code, config]
+  format: pdf_docx_xlsx_pptx_or_markdown
+  required_fields:
+    - summary: string            # What document was generated
+    - document_type: string      # PDF, DOCX, XLSX, PPTX, or Markdown
+    - files_changed: list[str]   # All files created or modified
+    - quality_score: float       # 0.0-1.0 self-assessment
+  quality_gates:
+    - no_hallucinated_names: boolean     # All party names from Verified Identity table
+    - no_unresolved_placeholders: boolean # DB queried before any placeholder
+    - mcr_formatting_compliant: boolean  # Michigan Court Rules followed (if court doc)
+    - lane_verified: boolean             # Correct case lane and number
+    - certificate_of_service: boolean    # Present with correct addresses (if filing)
+    - signature_block: boolean           # Pro se block present (if filing)
+    - statistics_traceable: boolean      # Every number tied to a DB query
+```
 
 ---
 

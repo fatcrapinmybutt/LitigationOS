@@ -116,27 +116,64 @@ Task received →
 
 ---
 
-## Legacy Agent Activation Map (Specialized — Use When OMEGA Doesn't Cover)
+## Active Agent Fleet (28 OMEGA v2.0 Agents)
+
+> **All legacy agents (54) were consolidated into 28 active agents in `.agents/agents/`.**
+> Do NOT reference archived agents — they no longer exist as active definitions.
 
 ### Filing & Court Operations
-| Agent | Trigger | Use When |
-|-------|---------|----------|
-| **michigan-litigation-orchestrator** | Filing packages, COA dockets, record organization | Multi-step filing workflows requiring compliance proofs |
-| **court-form-finder** | Form identification | Need Michigan court form numbers (MC, DC, CC, COA forms) |
-| **pre-filing-qa** | Quality assurance | Before any court filing — generates GO/NO-GO report |
-| **filing-countdown** | Deadline monitoring | Display urgency levels for all active deadlines |
-| **exhibit-formatter** | Bates stamps, tabs, indexes | Formatting exhibits for court submission |
-| **service-tracker** | Proof of service | Track service status across all cases/courts |
+| Agent | Replaces | Trigger | Use When |
+|-------|----------|---------|----------|
+| **filing-forge-master** | pre-filing-qa, filing-countdown, exhibit-formatter, service-tracker | Filing packages, QA, Bates stamps, service tracking | Any filing workflow — assembly, validation, service proof |
+| **omega-litigation-commander** | michigan-litigation-orchestrator | COA dockets, record organization, multi-step filings | Complex multi-step filing workflows requiring compliance proofs |
+| **court-form-finder** | (original — still active) | Form identification | Need Michigan court form numbers (MC, DC, CC, COA forms) |
+| **appellate-record-builder** | (new) | COA/MSC record assembly | Building appendices, lower court record compilation |
+| **contempt-prosecutor** | (new) | Contempt motions, show cause | Enforcing court order violations |
+| **garnishment-specialist** | (new) | Garnishment, wage orders | Post-judgment enforcement via garnishment |
+| **post-judgment-enforcer** | (new) | Post-judgment motions | Enforcing judgments, collections, compliance |
 
 ### Legal Research & Analysis
-| Agent | Trigger | Use When |
-|-------|---------|----------|
-| **legal-research-deep** | Authority research, case law | Multi-source legal research with relevance ranking |
-| **transcript-analyzer** | Hearing transcripts | Extract testimony, rulings, objections from transcripts |
-| **order-compliance-monitor** | Court order compliance | Track compliance with existing orders by all parties |
-| **cost-tracker** | Litigation costs | Filing fees, service costs, copies, mileage |
+| Agent | Replaces | Trigger | Use When |
+|-------|----------|---------|----------|
+| **timeline-forensics** | transcript-analyzer, (new) | Hearing transcripts, chronology | Extract testimony, rulings, objections; build timelines |
+| **court-order-tracker** | order-compliance-monitor | Court order compliance | Track compliance with existing orders by all parties |
+| **damages-calculator** | cost-tracker | Damages, litigation costs | Calculate damages, filing fees, service costs, mileage |
+| **case-strategy-architect** | (new) | Case strategy, war planning | High-level litigation strategy and prioritization |
+| **settlement-analyzer** | (new) | Settlement evaluation | Analyze settlement offers, counter-proposals |
+| **summary-judgment** | (new) | MSJ/SJ motions | Summary judgment analysis, no-genuine-issue arguments |
 
-### Code & Architecture
+### Evidence & Investigation
+| Agent | Replaces | Trigger | Use When |
+|-------|----------|---------|----------|
+| **evidence-warfare-commander** | (3 old evidence agents) | Evidence strategy, gaps, impeachment | Evidence triage, gap analysis, impeachment prep |
+| **evidence-vehicle-scanner** | (new) | PDF scanning, lane routing | Scan PDFs, match evidence to case lanes A-F via MEEK |
+| **evidence-authentication** | (new) | Chain of custody, authentication | Proving evidence admissibility and authenticity |
+| **parental-alienation-detector** | (new) | Alienation patterns | Detect and document parental alienation indicators |
+| **expert-witness-manager** | (new) | Expert witnesses | Manage expert witness selection, reports, Daubert prep |
+| **subpoena-engine** | (new) | Subpoenas | Draft and track subpoenas for witnesses/documents |
+
+### Judicial Accountability
+| Agent | Replaces | Trigger | Use When |
+|-------|----------|---------|----------|
+| **judicial-accountability-engine** | (new) | JTC complaints, misconduct | Document judicial misconduct, prepare JTC complaints |
+| **judicial-recusal-engine** | (new) | Disqualification, recusal | MCR 2.003 disqualification motions, bias documentation |
+
+### Family Law Specialized
+| Agent | Replaces | Trigger | Use When |
+|-------|----------|---------|----------|
+| **family-law-guardian** | (new) | Custody, parenting time, GAL | Family-law-specific motions, custody analysis |
+| **affidavit-chronology-builder** | (new) | Affidavits, chronology | Mine affidavits/exports, build master chronological narrative |
+| **motion-practice** | (new) | General motions | Draft, review, and strengthen any motion type |
+| **trial-preparation** | (new) | Trial prep | Witness lists, exhibit lists, trial briefs, voir dire |
+
+### System & Fleet Management
+| Agent | Replaces | Trigger | Use When |
+|-------|----------|---------|----------|
+| **omega-dedup** | (new) | Deduplication | Content-based dedup across drives (NO hashing — peek inside) |
+| **self-evolving-fleet-manager** | (new) | Fleet optimization | Monitor, upgrade, and evolve the agent fleet |
+| **compliance-auditor** | redaction-agent, (new) | PII, compliance, redaction | Redact PII, audit filing compliance, pre-submission checks |
+
+### Code & Architecture (Built-in Copilot Agents — Always Available)
 | Agent | Trigger | Use When |
 |-------|---------|----------|
 | **context-architect** | Multi-file changes | Planning changes that span multiple files |
@@ -146,12 +183,6 @@ Task received →
 | **planner** | Implementation plans | Feature planning, refactoring strategies |
 | **critical-thinking** | Challenge assumptions | Stress-test ideas, find flaws and edge cases |
 | **devils-advocate** | Risk assessment | Counter-arguments, worst-case analysis |
-
-### Document Processing
-| Agent | Trigger | Use When |
-|-------|---------|----------|
-| **redaction-agent** | PII removal | Auto-redact sensitive information before e-filing |
-| **legal-phase-indexer** | Complex workflows | Structure, parse, organize litigation phases |
 
 ## OMEGA Skill Activation Triggers (Replaces Legacy Skill Map)
 
@@ -177,14 +208,14 @@ Task received →
 
 When processing evidence or filings, route to the correct lane:
 
-| Lane | Case | OMEGA Agent | Legacy Specialists |
+| Lane | Case | OMEGA Agent | Active Specialist |
 |------|------|-------------|-------------------|
-| **A** (Custody) | 2024-001507-DC | OMEGA-LITIGATOR | filing-countdown |
-| **B** (Housing) | 2025-002760-CZ | OMEGA-LITIGATOR | cost-tracker |
-| **D** (PPO) | 2023-5907-PP | OMEGA-LITIGATOR | service-tracker |
-| **E** (Misconduct) | Judge McNeill | OMEGA-LITIGATOR + OMEGA-RESEARCH | transcript-analyzer |
-| **F** (Appellate) | COA 366810 | OMEGA-LITIGATOR + OMEGA-RESEARCH | exhibit-formatter |
-| **C** (Convergence) | Multi-lane | OMEGA-ARCHITECT | legal-phase-indexer |
+| **A** (Custody) | 2024-001507-DC | OMEGA-LITIGATOR | filing-forge-master |
+| **B** (Housing) | 2025-002760-CZ | OMEGA-LITIGATOR | damages-calculator |
+| **D** (PPO) | 2023-5907-PP | OMEGA-LITIGATOR | compliance-auditor |
+| **E** (Misconduct) | Judge McNeill | OMEGA-LITIGATOR + OMEGA-RESEARCH | judicial-accountability-engine |
+| **F** (Appellate) | COA 366810 | OMEGA-LITIGATOR + OMEGA-RESEARCH | appellate-record-builder |
+| **C** (Convergence) | Multi-lane | OMEGA-ARCHITECT | omega-litigation-commander |
 
 ## Session Budget Rules (v2.0 — EXPANDED, aligned with eagain-prevention.instructions.md v2.0)
 

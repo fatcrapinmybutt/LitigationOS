@@ -73,6 +73,8 @@ ________________________________/
 
 9. This Court has personal jurisdiction over the foreign LLC Defendants because they own real property in Michigan (MCL 600.701), transact business in Michigan (MCL 600.715), and committed tortious acts within Michigan (MCL 600.705(2)).
 
+10. **Administrative Exhaustion.** Plaintiff's claims sound primarily in tort (conversion, fraud, negligence, breach of contract, MCPA, IIED, unjust enrichment) and are properly before this Court without first exhausting administrative remedies through LARA. The Michigan Mobile Home Commission Act provides for *concurrent* civil remedies and does not require exhaustion of administrative proceedings as a prerequisite to civil suit. *See Saginaw County v John Sexton Corp of New Jersey*, 232 Mich App 202, 211 (1998) (exhaustion not required where complaint seeks tort damages rather than administrative relief); MCL 600.2918 (statutory action for recovery of possession — civil remedy independent of LARA). To the extent Plaintiff's Count V (MHCA violations) implicates regulatory enforcement, Plaintiff requests referral to LARA as a complementary remedy, not as a substitute for civil damages. [ANDREW: Consider filing a parallel LARA complaint regarding License #1201891 — this strengthens the civil case and creates an independent enforcement record.]
+
 ---
 
 ## III. GENERAL ALLEGATIONS OF FACT
@@ -554,7 +556,7 @@ ________________________________/
 
 1. **Count I (MCPA)**: Actual damages **trebled** under MCL 445.911(2), including but not limited to: loss of Plaintiff's mobile home ($15,000–$45,000); loss of personal property; excess rent payments from coerced increases; loss of sale proceeds from blocked transactions ($60,000–$105,000); relocation costs; and all other actual damages proved at trial — multiplied by three;
 
-2. **Count II (Habitability)**: Full rent abatement from the commencement of uninhabitable conditions through the termination of tenancy, estimated at **$10,000–$50,000** based on the severity and duration of sewage contamination, water shutoff, and EGLE-documented violations (DB damages_calculations: Habitability — Shady Oaks, $10K–$50K range); costs of temporary remediation; consequential damages from exposure to sewage contamination; and all damages arising from the breach;
+2. **Count II (Habitability)**: Full rent abatement from the commencement of uninhabitable conditions through the termination of tenancy, estimated at **$10,000–$50,000** based on the severity and duration of sewage contamination, water shutoff, and EGLE-documented violations; costs of temporary remediation; consequential damages from exposure to sewage contamination; and all damages arising from the breach;
 
 3. **Count III (Conversion)**: **Treble damages** under MCL 600.2919a and MCL 600.2918, including: fair market value of Plaintiff's titled mobile home; fair market value of all destroyed personal property and household contents; loss of blocked sale proceeds ($60,000–$105,000); and all consequential damages — multiplied by three;
 
@@ -566,7 +568,7 @@ ________________________________/
 
 7. **Count VII (Negligence)**: All actual and consequential damages caused by Defendants' negligence in the ownership, operation, and maintenance of Shady Oaks Mobile Home Community;
 
-8. **Count VIII (Breach of Contract)**: All actual and consequential damages for breach of contract, including restitution of rent overpayments, return of omitted payments ($6,085.99), unauthorized charges, and total rent recovery estimated at **$5,000–$24,000** representing rent paid for premises that materially failed to comply with applicable health and safety laws throughout the tenancy period (DB damages_calculations: Rent recovery, $5K–$24K range);
+8. **Count VIII (Breach of Contract)**: All actual and consequential damages for breach of contract, including restitution of rent overpayments, return of omitted payments ($6,085.99), unauthorized charges, and total rent recovery estimated at **$5,000–$24,000** representing rent paid for premises that materially failed to comply with applicable health and safety laws throughout the tenancy period;
 
 9. **Count IX (Civil Conspiracy)**: All actual and consequential damages caused by the civil conspiracy, plus exemplary damages;
 
@@ -592,7 +594,7 @@ ________________________________/
 
 18. Reasonable costs and fees incurred by Plaintiff as a pro se litigant, where authorized by statute;
 
-19. **Treble Damages Summary (MTTPA / MCPA / Conversion)**: In total, Plaintiff's actual damages — including habitability damages of $10,000–$50,000 (DB damages_calculations: Habitability), rent recovery of $5,000–$24,000 (DB damages_calculations: Rent recovery), and all other actual damages proved at trial — are subject to statutory trebling under MCL 445.911(2) (MCPA), MCL 600.2919a (conversion), and MCL 600.2918 (forcible entry and detainer), yielding an aggregate treble damages exposure estimated at **$150,000–$1,000,000** (DB damages_calculations: Housing discrimination treble, $150K–$1M range);
+19. **Treble Damages Summary (MTTPA / MCPA / Conversion)**: In total, Plaintiff's actual damages — including habitability damages of $10,000–$50,000, rent recovery of $5,000–$24,000, and all other actual damages proved at trial — are subject to statutory trebling under MCL 445.911(2) (MCPA), MCL 600.2919a (conversion), and MCL 600.2918 (forcible entry and detainer), yielding an aggregate treble damages exposure estimated at **$150,000–$1,000,000**;
 
 20. Such other and further relief as this Court deems just and equitable.
 

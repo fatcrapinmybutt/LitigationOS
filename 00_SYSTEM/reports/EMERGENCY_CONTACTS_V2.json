@@ -1,0 +1,119 @@
+{
+  "tool_id": "204v2",
+  "name": "Emergency Contact Quick Card v2",
+  "generated": "2026-03-19T07:52:07.295733",
+  "contacts": {
+    "courts": [
+      {
+        "name": "14th Circuit Court — Family Division",
+        "phone": "(231) 724-6241",
+        "case": "2024-001507-DC",
+        "priority": "HIGH"
+      },
+      {
+        "name": "Michigan Court of Appeals",
+        "phone": "(517) 373-0786",
+        "case": "366810",
+        "priority": "HIGH"
+      },
+      {
+        "name": "Michigan Supreme Court",
+        "phone": "(517) 373-0120",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "U.S. District Court — WDMI (Grand Rapids)",
+        "phone": "(616) 456-2381",
+        "priority": "MEDIUM"
+      }
+    ],
+    "agencies": [
+      {
+        "name": "FOC — Pamela Rusco",
+        "phone": "(231) 724-6200",
+        "address": "990 Terrace St, Muskegon",
+        "priority": "HIGH"
+      },
+      {
+        "name": "Judicial Tenure Commission",
+        "phone": "(313) 875-5110",
+        "email": "jtc@michigan.gov",
+        "priority": "HIGH"
+      },
+      {
+        "name": "Attorney Grievance Commission",
+        "phone": "(313) 961-6585",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "MI State Bar — UPL Unit",
+        "phone": "(517) 346-6300",
+        "priority": "MEDIUM"
+      }
+    ],
+    "legal_aid": [
+      {
+        "name": "Legal Aid of Western Michigan",
+        "phone": "(231) 726-4831",
+        "priority": "HIGH"
+      },
+      {
+        "name": "MI State Bar Lawyer Referral",
+        "phone": "(800) 968-0738",
+        "note": "$50/30min",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "Michigan Legal Help",
+        "url": "michiganlegalhelp.org",
+        "priority": "MEDIUM"
+      }
+    ],
+    "emergency": [
+      {
+        "name": "CPS Hotline (24/7)",
+        "phone": "(855) 444-3911",
+        "priority": "CRITICAL"
+      },
+      {
+        "name": "Muskegon DHHS",
+        "phone": "(231) 733-3700",
+        "priority": "HIGH"
+      },
+      {
+        "name": "DV Hotline (24/7)",
+        "phone": "(800) 799-7233",
+        "priority": "CRITICAL"
+      }
+    ],
+    "notary": [
+      {
+        "name": "UPS Store (Muskegon)",
+        "phone": "(231) 798-4850",
+        "note": "$5-10/sig",
+        "priority": "HIGH"
+      },
+      {
+        "name": "Muskegon Public Library",
+        "phone": "(231) 724-6248",
+        "note": "Free w/ card",
+        "priority": "HIGH"
+      }
+    ],
+    "efiling": [
+      {
+        "name": "MiFILE",
+        "url": "mifile.courts.michigan.gov",
+        "phone": "(517) 373-0130",
+        "priority": "CRITICAL"
+      },
+      {
+        "name": "PACER / CM-ECF",
+        "url": "pacer.uscourts.gov",
+        "phone": "(800) 676-6856",
+        "priority": "HIGH"
+      }
+    ]
+  },
+  "total_contacts": 18
+}

@@ -326,7 +326,9 @@ An order entered without the procedural prerequisites mandated by due process an
 
 **iv. Suppression of filings.** Petitioner's filings were suppressed from the official record. A court that refuses to docket a party's filings denies that party the most basic element of due process — the right to be heard.
 
-**v. Contempt without counsel.** When civil contempt results in actual incarceration, due process requires, at minimum, "substitute procedural safeguards" including notice of the charges, an opportunity to respond, and a judicial finding that the contemnor has the ability to comply. *Turner v Rogers*, 564 US 431, 448 (2011). Petitioner was jailed for 59 days without court-appointed counsel and without adequate procedural protections.
+**v. Contempt without counsel.** When civil contempt results in actual incarceration, due process requires, at minimum, "substitute procedural safeguards" including notice of the charges, an opportunity to respond, and a judicial finding that the contemnor has the ability to comply. *Turner v Rogers*, 564 US 431, 448 (2011). Petitioner was jailed for 59 days without court-appointed counsel and without adequate procedural protections. The attorney nominally assigned to Petitioner for Show Cause #5 — Mandi Martini — sat silently, raised no objections, and prior to the hearing threatened Petitioner with additional jail for speaking in his own defense.
+
+**vi. Judicial silencing during hearing.** During the Show Cause #5 hearing, conducted remotely, Judge McNeill ordered the stenographer to mute Petitioner's microphone three times while Petitioner attempted to present relevant evidence — specifically, a police report documenting his son's poor physical condition. A hearing in which the respondent is physically prevented from speaking is not a "hearing" in any constitutionally meaningful sense.
 
 The cumulative effect of these violations is a proceeding that bears no resemblance to the "fair hearing" that due process demands. Individual appellate review of individual orders cannot cure the systemic nature of the problem. Superintending control is necessary.
 
@@ -411,6 +413,22 @@ In *Mead v Batchlor*, 435 Mich 480, 498 (1990), this Court held that the right t
 
 *Turner v Rogers*, 564 US 431, 448 (2011), held that even in civil contempt proceedings that result in incarceration, due process requires at minimum "substitute procedural safeguards" — including notice, opportunity to respond, and a judicial finding that the contemnor has the present ability to comply. Petitioner was not afforded these protections. No ability-to-pay hearing was conducted before incarceration was imposed.
 
+#### C-1. The Show Cause #5 Hearing: Suppression of Defense in a Proceeding Resulting in Incarceration
+
+The Show Cause #5 hearing — which resulted in Petitioner's first period of incarceration (14 days) — reveals the contempt abuse in its most stark form:
+
+**i. Judicial silencing during a remote hearing.** Show Cause #5 was conducted as a remote hearing. During the proceeding, Judge McNeill ordered the stenographer to **mute Petitioner's microphone three (3) separate times**. Petitioner was attempting to inform the court that he had filed a police report documenting his son's poor physical condition at a parenting time exchange — evidence directly relevant to the show cause allegations and to the defense. The court's deliberate suppression of Petitioner's testimony during a proceeding that culminated in 14 days' incarceration constitutes a denial of the right to be heard at its most fundamental level.
+
+**ii. Ineffective assistance of counsel.** Petitioner's appointed attorney, Mandi Martini, sat silently throughout the hearing and raised no objections — not to the muting of her client, not to the exclusion of the police report, not to the denial of Petitioner's right to present a defense. Prior to the hearing, Martini emailed Petitioner: *"you will not interrupt . . . Judge McNeil is not in a good mood . . . you do not want to spend the next week in jail on a contempt charge for speaking out in court."* Petitioner's own counsel thus threatened him with additional incarceration for exercising his right to speak in his own defense — and then failed to speak on his behalf.
+
+**iii. The prosecution's own admission.** The prosecutor handling Show Cause #5 privately admitted to Martini that there was **"nothing substantive in the motion."** The state's own representative acknowledged the meritless nature of the proceeding — yet Petitioner was incarcerated for 14 days nonetheless.
+
+**iv. Blank affidavit page — fatal procedural defect.** The affidavit supporting Show Cause #5 contained a **blank page (page 27)**. MCR 3.708(B) requires that contempt proceedings be supported by factual allegations. A filing with a blank evidentiary page fails this threshold requirement. The court proceeded to incarcerate Petitioner on the basis of a facially defective filing.
+
+**v. Misattribution of accusation to law enforcement — fraud on the court.** Watson's ex parte filings attributed to Officer Ella Randall (Norton Shores PD, Incident #NS2505044) the statement that Petitioner's behavior appeared to be the result of "meth use." However, upon investigation, **Officer Randall confirmed that the "meth use" characterization originated from Emily Watson herself** — not from any independent police observation or professional assessment. Watson's filings **falsely presented her own accusation as the professional opinion of a law enforcement officer** — laundering a party's unverified allegation through a police report to give it the appearance of independent corroboration. When Petitioner raised this misattribution before Judge McNeill, the court stated: **"quit nitpicking"** — declining to address a material misrepresentation in a sworn filing that formed the evidentiary foundation for the ex parte suspension of Petitioner's parental rights.
+
+**vi. Cover-up of child's removal from the country.** Show Cause #5 was filed contemporaneously with Watson's removal of L.D.W. from the country (October 20 through November 15, 2025) — with the court's permission. The timing suggests that the show cause filing served as a tactical cover for the child's international removal, which itself was accomplished without Petitioner's consent or any finding that removal from the country served L.D.W.'s best interests.
+
 #### D. Asymmetry: The Most Telling Evidence of Abuse
 
 The most revealing evidence of contempt abuse is the stark asymmetry in enforcement:
@@ -419,8 +437,13 @@ The most revealing evidence of contempt abuse is the stark asymmetry in enforcem
 |-------|----------------------|-------------|
 | **Petitioner** (Father) | Alleged violations | **59 days jail** |
 | **Watson** (Mother) | Documented parenting time violations | **Zero enforcement actions** |
+| **Watson family** (PPO violations) | Cody Watson threats (Police Report MCSD-2024-02101); Albert Watson forcibly removing child; Tamara Snider third-party stalking | **Zero enforcement actions** |
 
-This asymmetry is inexplicable as even-handed justice. It is consistent only with punitive targeting of one party. When a court jails one parent for 59 days while imposing zero consequences on the other parent for documented violations of the same court orders, the coercive rationale for civil contempt collapses. What remains is punishment — and punishment without criminal procedural protections violates due process.
+This asymmetry is inexplicable as even-handed justice. It is consistent only with punitive targeting of one party. The PPO case (2023-5907-PP) provides the starkest illustration: Watson's brother Cody violated the PPO — documented in Police Report MCSD-2024-02101 (Officer Brian Hintz) — yet Watson's family faced zero consequences. Meanwhile, Petitioner was jailed for 59 days. Watson herself committed at least three documented PPO violations through third-party proxies, yet the court took no enforcement action against her while simultaneously weaponizing the same PPO to restrict Petitioner's parental rights.
+
+The PPO was filed and granted on the **same day** — December 4, 2023 — on an ex parte basis, without notice to Petitioner. Six show cause motions followed, strategically timed around holidays and custody exchanges. The court explicitly ordered "no communication, no texts, no anything" between the parties — Watson agreed on the record — yet her family members continued to attend exchanges and violate the order with impunity. This selective enforcement — holding Petitioner to the letter of the PPO while excusing Watson's family's violations — confirms that the contempt power was wielded as a weapon, not a remedy.
+
+When a court jails one parent for 59 days while imposing zero consequences on the other parent for documented violations of the same court orders, the coercive rationale for civil contempt collapses. What remains is punishment — and punishment without criminal procedural protections violates due process.
 
 #### E. Collateral Consequences Confirm Punitive Character
 

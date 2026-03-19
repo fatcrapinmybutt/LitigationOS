@@ -1,6 +1,32 @@
 ---
 name: litigation-supreme-commander
-description: "ELITE litigation command — the ultimate fusion of 22 litigation filing/drafting/strategy skills. Covers complaint drafting, brief writing, motion practice, Michigan litigation writing, filing architecture, pro se guidance, service, sanctions, analysis, convergence orchestration, pipeline command, lawsuit forging, record building, LitigationOS core, skill auditing, court order tracking, mandatory disclosure, fee petitions, default judgment, summary judgment, contempt, and FOC challenges. Michigan family law focused (Pigors v. Watson)."
+description: "Use when drafting motions, briefs, complaints, or any court filing. Covers complaint drafting, brief writing, motion practice, Michigan litigation writing, filing architecture, pro se guidance, service, sanctions, analysis, convergence orchestration, pipeline command, lawsuit forging, record building, LitigationOS core, skill auditing, court order tracking, mandatory disclosure, fee petitions, default judgment, summary judgment, contempt, and FOC challenges. Michigan family law focused (Pigors v. Watson)."
+category: discipline
+version: "2.0.0"
+triggers:
+  - motion
+  - brief
+  - complaint
+  - filing
+  - drafting
+  - service
+  - sanctions
+  - contempt
+  - summary judgment
+  - default judgment
+  - FOC challenge
+  - fee petition
+  - mandatory disclosure
+lanes:
+  - "A: Watson/Custody (2024-001507-DC)"
+  - "B: Shady Oaks/Housing (2025-002760-CZ)"
+  - "C: Federal §1983 (USDC WDMI)"
+  - "D: PPO (2023-5907-PP)"
+  - "E: Judicial Misconduct/JTC"
+  - "F: Appellate (COA 366810)"
+court: "14th Judicial Circuit, Muskegon County; Michigan COA; Michigan Supreme Court"
+case: Pigors v Watson
+dependencies: []
 metadata:
   model: opus
   forged_from: 22
@@ -1521,4 +1547,85 @@ After each use of this skill:
 3. Update lane-specific intelligence if new orders/events occurred
 4. Cross-reference findings with contradiction_map for consistency
 5. Feed results to litigation-red-team for adversarial validation
+```
+
+---
+
+## Decision Tree
+
+```
+ENTRY: Filing/drafting task received
+│
+├─ Q1: What type of document?
+│   ├─ Motion → BRANCH A: Motion Practice
+│   ├─ Brief (trial level) → BRANCH B: Brief Writing
+│   ├─ Complaint / Petition → BRANCH C: Complaint Drafting
+│   ├─ Discovery document → BRANCH D: Discovery & Disclosure
+│   └─ Enforcement / Contempt → BRANCH E: Sanctions & Enforcement
+│
+├─ BRANCH A: Motion Practice
+│   ├─ Step 1: Identify motion type and applicable MCR rule
+│   ├─ Step 2: Check motion-practice-checklist for required components
+│   ├─ Step 3: Query DB for supporting facts and evidence
+│   ├─ Step 4: Draft motion body with IRAC or CREAC structure
+│   ├─ Step 5: Prepare proposed order, certificate of service, verification
+│   ├─ Step 6: Verify service address (Barnes WITHDREW → serve Emily directly)
+│   └─ OUTPUT: Complete motion package (motion + brief + proposed order + COS)
+│
+├─ BRANCH B: Brief Writing
+│   ├─ Step 1: Identify legal issues and applicable standards
+│   ├─ Step 2: Select argument structure (IRAC for simple, CREAC for complex)
+│   ├─ Step 3: Validate all citations via authority_chains table
+│   ├─ Step 4: Draft within page limits (20 pages MCR 2.119(A)(2))
+│   ├─ Step 5: Include table of contents and table of authorities if >10 pages
+│   └─ OUTPUT: Brief in support with verified citations
+│
+├─ BRANCH C: Complaint Drafting
+│   ├─ Step 1: Identify cause(s) of action and required elements
+│   ├─ Step 2: Map evidence to each element from litigation_context.db
+│   ├─ Step 3: Draft numbered paragraphs with factual allegations
+│   ├─ Step 4: Include prayer for relief with specific remedies
+│   ├─ Step 5: Prepare summons, civil case cover sheet
+│   └─ OUTPUT: Complaint package ready for filing
+│
+├─ BRANCH D: Discovery & Disclosure
+│   ├─ Step 1: Determine discovery type (interrogatories, RFP, RFA, subpoena)
+│   ├─ Step 2: Check mandatory disclosure requirements (MCR 2.302(A))
+│   ├─ Step 3: Draft discovery requests targeting specific evidence gaps
+│   └─ OUTPUT: Discovery package with certificate of service
+│
+└─ BRANCH E: Sanctions & Enforcement
+    ├─ Step 1: Identify which order was violated and specific violations
+    ├─ Step 2: Gather evidence of noncompliance from DB
+    ├─ Step 3: Draft contempt motion or sanctions motion per MCR 3.606
+    ├─ Step 4: Attach certified copy of violated order
+    └─ OUTPUT: Enforcement motion with supporting documentation
+```
+
+---
+
+## Output Contract
+
+```yaml
+output:
+  type: enum [motion, brief, complaint, discovery, enforcement, order, certificate]
+  format: markdown
+  required_fields:
+    - summary: string
+    - citations: list[string]  # verified only
+    - confidence: float  # 0.0-1.0
+    - lane: enum [A, B, C, D, E, F]
+    - case_number: string
+    - court: string  # which court this filing targets
+    - components: list[string]  # all document components included
+    - service_list: list[object]  # who must be served and how
+  quality_gates:
+    - all_citations_verified: boolean
+    - no_hallucinated_names: boolean
+    - db_first_confirmed: boolean
+    - traceable_statistics: boolean
+    - page_limits_respected: boolean
+    - certificate_of_service_included: boolean
+    - proposed_order_included: boolean
+    - correct_court_rules_applied: boolean
 ```

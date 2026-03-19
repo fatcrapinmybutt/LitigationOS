@@ -1,24 +1,45 @@
 ---
 name: OMEGA-LITIGATION-SUPREME
 description: >-
-  ULTIMATE litigation intelligence system — fusion of 67 specialized skills into one
-  supreme combat system. Complete pipeline: raw files (TXT/PDF/MD) from 6 local drives +
-  12 GB database → evidence extraction → contradiction detection → impeachment assembly →
-  authority validation → court-ready filing sets. Michigan-specific. All 6 case lanes (A-F).
-  Pigors v Watson. ZERO hallucination tolerance. DB-first. Traceable statistics only.
+  Use when performing ANY litigation task — evidence analysis, filing generation,
+  impeachment assembly, contradiction detection, authority validation, strategic planning,
+  or court-ready document production. Complete pipeline from raw files across 6 local drives
+  and 12 GB database through extraction, classification, and QA gates to court-ready filings.
+  Michigan-specific. All 6 case lanes (A-F). ZERO hallucination tolerance. DB-first always.
+category: discipline
+version: "2.0.0"
+triggers:
+  - litigation
+  - evidence
+  - filing
+  - impeachment
+  - contradiction
+  - authority
+  - strategy
+  - motion
+  - brief
+  - appeal
+  - custody
+  - PPO
+  - judicial misconduct
+  - damages
+  - §1983
+lanes:
+  - "A: Watson/Custody (2024-001507-DC)"
+  - "B: Shady Oaks/Housing (2025-002760-CZ)"
+  - "C: Federal §1983 (USDC WDMI)"
+  - "D: PPO (2023-5907-PP)"
+  - "E: Judicial Misconduct/JTC"
+  - "F: Appellate (COA 366810)"
+court: "14th Judicial Circuit, Muskegon County; Michigan COA; Michigan Supreme Court"
+case: Pigors v Watson
+dependencies: []
 metadata:
-  category: elite-omega
   tier: 0 (Supreme)
-  version: "2.0.0"
   fused_skills: 67
   author: andrew-pigors + copilot-omega
-  case: Pigors v Watson
   jurisdiction: Michigan
   courts: [14th Circuit, Michigan COA, Michigan Supreme Court, USDC WDMI, JTC]
-  triggers: >-
-    ANY litigation task — evidence, filing, strategy, impeachment, discovery,
-    appeal, MSC, COA, JTC, PPO, custody, housing, federal §1983, contempt,
-    summary judgment, damages, trial prep, convergence, pipeline, analysis
 ---
 
 # ⚡ OMEGA-LITIGATION-SUPREME ⚡
@@ -813,3 +834,86 @@ system_status()
 **Tier 6 — Domain Specialists (27):** litigation-custody-specialist, litigation-ppo-specialist, litigation-protective-order-specialist, litigation-appellate-strategist, litigation-appeal-brief-engine, litigation-appellate-record-specialist, litigation-appellate-supreme, litigation-supreme-court-architect, litigation-judicial-analyst, litigation-judicial-recusal-engine, litigation-family-law-master, litigation-foc-challenge-engine, litigation-child-support-analyzer, litigation-guardian-ad-litem-specialist, litigation-case-evaluation-specialist, litigation-trial-preparation-specialist, litigation-void-judgment-engine, litigation-venue-transfer-specialist, litigation-voir-dire-specialist, litigation-witness-preparation, litigation-jury-instruction-engine, litigation-garnishment-specialist, litigation-post-judgment-specialist, litigation-mandatory-disclosure-specialist, litigation-interrogatory-specialist, litigation-subpoena-engine, litigation-expert-witness-manager, litigation-asset-discovery-engine
 
 **Tier 7 — Meta (6):** litigation-os, litigation-pipeline-commander, litigation-skill-auditor, litigation-supreme-commander, litigation-family-law-master (composite), litigation-warfare-engine (composite)
+
+---
+
+## Decision Tree
+
+```
+ENTRY: Litigation task received
+│
+├─ Q1: What category of work?
+│   ├─ Evidence Processing → BRANCH A: Evidence Pipeline
+│   ├─ Legal Research / Citations → BRANCH B: Authority & Research
+│   ├─ Filing / Document Drafting → BRANCH C: Filing Factory
+│   ├─ Strategic Planning → BRANCH D: Strategic Command
+│   └─ Full Pipeline (files → filings) → BRANCH E: End-to-End
+│
+├─ BRANCH A: Evidence Pipeline
+│   ├─ Step 1: M7 DB Intelligence — init connection, verify schema
+│   ├─ Step 2: M1 Evidence Pipeline — extract, classify, lane-tag
+│   ├─ Step 3: M2 Contradiction Engine — detect inconsistencies
+│   ├─ Step 4: M12 Self-Evolution — log results
+│   └─ OUTPUT: Structured evidence records with lane tags and contradiction flags
+│
+├─ BRANCH B: Authority & Research
+│   ├─ Step 1: M7 DB Intelligence — query authority_chains table
+│   ├─ Step 2: M3 Authority Validator — verify citations, check currency
+│   ├─ Step 3: M6 Domain Specialists — lane-specific legal standards
+│   └─ OUTPUT: Validated authority chains with overruled/superseded flags
+│
+├─ BRANCH C: Filing Factory
+│   ├─ Step 1: M7 DB Intelligence — pull case data, docket events
+│   ├─ Step 2: M6 Domain Specialists — identify applicable standards
+│   ├─ Step 3: M3 Authority Validator — verify all citations
+│   ├─ Step 4: M4 Filing Factory — assemble document in MCR format
+│   ├─ Step 5: M8 QA Gates — anti-hallucination, DB-first, citation, lane, stats, format
+│   ├─ Step 6: M9 Court-Ready — finalize for filing
+│   └─ OUTPUT: Court-ready filing with certificate of service
+│
+├─ BRANCH D: Strategic Command
+│   ├─ Step 1: M7 DB Intelligence — current case state
+│   ├─ Step 2: M10 Adversary Intelligence — opposing party patterns
+│   ├─ Step 3: M5 Strategic Command — prioritize claims, sequence filings
+│   └─ OUTPUT: Strategic recommendation with priority scores
+│
+└─ BRANCH E: End-to-End Pipeline
+    ├─ Step 1: M11 Smart Router — classify task, select module chain
+    ├─ Step 2: M7 → M1 → M2 → M3 (evidence + authority)
+    ├─ Step 3: M5 → M10 (strategy + adversary intel)
+    ├─ Step 4: M6 → M4 (domain expertise + filing assembly)
+    ├─ Step 5: M8 → M9 (QA + finalization)
+    ├─ Step 6: M12 Self-Evolution — log everything
+    └─ OUTPUT: Complete filing package ready for court submission
+```
+
+---
+
+## Output Contract
+
+```yaml
+output:
+  type: enum [analysis, filing, evidence_report, strategy, audit, impeachment, brief]
+  format: markdown
+  required_fields:
+    - summary: string
+    - citations: list[string]  # verified only — no unvalidated citations
+    - confidence: float  # 0.0-1.0
+    - lane: enum [A, B, C, D, E, F]
+    - case_number: string
+    - module_chain: list[string]  # which modules produced this output
+    - qa_gate_results: object  # pass/fail for each gate
+  quality_gates:
+    - all_citations_verified: boolean
+    - no_hallucinated_names: boolean
+    - db_first_confirmed: boolean
+    - traceable_statistics: boolean
+    - lane_integrity_confirmed: boolean
+    - format_compliant: boolean
+  prohibited:
+    - fabricated_party_names
+    - untraced_statistics
+    - pseudo_scientific_scores
+    - cross_lane_contamination
+    - placeholders_without_db_search
+```

@@ -346,7 +346,7 @@ Address on file with the Court
 
 46. **Systemic Concerns.** The Real Party in Interest's employment within the Michigan court system raises concerns about structural bias that transcend this individual case. This Court has an institutional interest in ensuring that the courts under its superintending control operate free from even the appearance of favoritism.
 
-47. **Child Welfare.** L.D.W. is being deprived of a meaningful relationship with her father during the most critical developmental period. Developmental science establishes that prolonged parent-child separation during early childhood causes lasting psychological harm.
+47. **Child Welfare.** L.D.W. is being deprived of a meaningful relationship with his father during the most critical developmental period. Developmental science establishes that prolonged parent-child separation during early childhood causes lasting psychological harm.
 
 48. **Public Interest.** This case raises issues of significant public interest regarding the procedural protections owed to parents in custody proceedings, the limits of judicial discretion, and the accountability of trial courts operating under this Court's superintending authority.
 

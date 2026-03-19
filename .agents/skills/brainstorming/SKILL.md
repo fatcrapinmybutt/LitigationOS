@@ -1,10 +1,23 @@
 ---
 name: brainstorming
-description: >
-  Use this skill before any creative or constructive work
-  (features, components, architecture, behavior changes, or functionality).
-  This skill transforms vague ideas into validated designs through
-  disciplined, incremental reasoning and collaboration.
+description: "Use when transforming vague ideas into validated designs through structured ideation, constraint analysis, and incremental reasoning before any implementation begins. Covers features, architecture, filing strategy, and behavior changes."
+version: "2.0.0"
+category: discipline
+triggers:
+  - brainstorm
+  - ideation
+  - design exploration
+  - strategy planning
+lanes:
+  - "A: Watson/Custody (2024-001507-DC)"
+  - "B: Shady Oaks/Housing (2025-002760-CZ)"
+  - "C: Federal §1983 (USDC WDMI)"
+  - "D: PPO (2023-5907-PP)"
+  - "E: Judicial Misconduct/JTC"
+  - "F: Appellate (COA 366810)"
+court: "14th Judicial Circuit, Muskegon County"
+case: "Pigors v Watson"
+dependencies: []
 ---
 
 # Brainstorming Ideas Into Designs
@@ -228,3 +241,66 @@ If any criterion is unmet:
 
 ---
 If the design is high-impact, high-risk, or requires elevated confidence, you MUST hand off the finalized design and Decision Log to the `multi-agent-brainstorming` skill before implementation.
+
+---
+
+## Decision Tree
+
+```
+ENTRY: Brainstorming request received
+│
+├─ Q1: What is being brainstormed?
+│   ├─ FILING STRATEGY → BRANCH A (Litigation Strategy)
+│   ├─ SYSTEM DESIGN → BRANCH B (Architecture/Code)
+│   └─ PROCESS IMPROVEMENT → BRANCH C (Workflow/Operations)
+│
+├─ BRANCH A: Litigation Strategy
+│   ├─ Step 1: Identify case lane (A-F) — NEVER cross-contaminate
+│   ├─ Step 2: Query litigation_context.db for current evidence/claims
+│   ├─ Step 3: Check MCR rules and deadlines for procedural constraints
+│   ├─ Step 4: Apply structured ideation (SCAMPER, Six Hats, or Reverse)
+│   ├─ Step 5: Evaluate with Feasibility-Impact Matrix + Evidence Sufficiency Gate
+│   ├─ Step 6: Understanding Lock → user confirms before design proceeds
+│   └─ OUTPUT: Validated strategy with Decision Log, evidence citations, MCR compliance
+│
+├─ BRANCH B: Architecture/Code Design
+│   ├─ Step 1: Review current project state (files, docs, prior decisions)
+│   ├─ Step 2: Clarify purpose, constraints, non-functional requirements
+│   ├─ Step 3: Propose 2-3 approaches with trade-off analysis
+│   ├─ Step 4: Understanding Lock → user confirms
+│   ├─ Step 5: Present design incrementally (200-300 word sections)
+│   └─ OUTPUT: Design document with assumptions, Decision Log, implementation plan
+│
+└─ BRANCH C: Workflow/Operations
+    ├─ Step 1: Document current state and pain points
+    ├─ Step 2: Identify constraints (EAGAIN limits, DB connections, session budget)
+    ├─ Step 3: Generate improvement options with Constraint-First method
+    ├─ Step 4: Evaluate feasibility against LitigationOS architecture
+    └─ OUTPUT: Improvement proposal with risk assessment and rollback plan
+│
+├─ GATE: Is this high-impact or high-risk?
+│   ├─ YES → Hand off to multi-agent-brainstorming skill
+│   └─ NO → Proceed to implementation handoff
+```
+
+---
+
+## Output Contract
+
+```yaml
+output:
+  type: enum [strategy, design, process_improvement]
+  format: markdown
+  required_fields:
+    - understanding_summary: string
+    - assumptions: list[string]
+    - decision_log: list[{decision, alternatives, rationale}]
+    - recommended_approach: string
+    - non_goals: list[string]
+  quality_gates:
+    - understanding_lock_confirmed: boolean
+    - constraints_validated: boolean
+    - feasibility_checked: boolean
+    - alternatives_explored: boolean
+    - decision_log_complete: boolean
+```

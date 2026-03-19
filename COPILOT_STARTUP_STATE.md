@@ -1,5 +1,5 @@
-# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v10.0
-## Generated: 2026-03-15 | 29+ sessions, 782-table DB (11.5 GB), 308,704 evidence quotes, 1,127 judicial violations, 7 CLERK-READY filings (converged + affidavit), 6 generated exhibits, Master Exhibit Index, 6 MSC proposed orders, COA Brief 366810 (conditional GO)
+# COPILOT STARTUP STATE — LitigationOS GOLDEN MASTER v11.0
+## Generated: 2026-03-15 | 30+ sessions, 782-table DB (11.5 GB), 308,704 evidence quotes, 1,127 judicial violations, 7 CLERK-READY filings (converged + affidavit), 6 generated exhibits, Master Exhibit Index, 6 MSC proposed orders, COA Brief 366810 (conditional GO), EAGAIN v2.0 (3 agents + 2 shells = 5 concurrent)
 
 > **This file is the SINGLE SOURCE OF TRUTH for new Copilot sessions.**
 > Read it top to bottom. It replaces all older startup/enhanced instruction files.
@@ -1364,3 +1364,75 @@ python war_room.py --section strategy
 - Appendix: `COA_APPENDIX_INDEX_366810.md` (13 KB, 26 tabs A-Z)
 - Table of Authorities: `03_TABLE_OF_AUTHORITIES.md` (4.1 KB)
 - Proof/Certificate of Service, Cover Page, README — all ready
+
+---
+
+## 34. EAGAIN PREVENTION v2.0 — EXPANDED CONCURRENCY (2026-03-14)
+
+> **Master doc:** `.github/instructions/eagain-prevention.instructions.md` v2.0
+
+### Core Engineering Insight
+Task agents use **ISOLATED pipes** (separate child processes). Agent pipe overflow kills only that agent — the main session is unaffected. Only PowerShell shells use **SHARED pipes** that cause cascade EAGAIN failures. This means expanding agents is **free** from an EAGAIN risk perspective.
+
+### Concurrency Limits (v2.0)
+
+| Resource | v1.0 | **v2.0** | Pipe Type | Risk |
+|----------|------|----------|-----------|------|
+| Async PowerShell shells | 2 | **2** | SHARED | ⚠️ CRITICAL — cascade EAGAIN |
+| Background task agents | 2 | **3** | ISOLATED | ✅ Safe — overflow kills only that agent |
+| Combined total | 4 | **5** | Mixed | 6 shared pipes (same as v1.0) |
+| Agent spawn cooldown | 2s | **1s** | — | Isolated pipes drain independently |
+| Shell spawn cooldown | 2s | **2s** | — | Shared pipes need buffer drain time |
+| Parallel agent dispatch | 1 | **2 per tool call** | — | Agents don't share pipe buffers |
+| Shell + agent same turn | NEVER | **OK** | — | Different pipe pools |
+
+### Dynamic Throttle Protocol (NEW — auto-scales on pressure)
+
+| Level | Name | Shells | Agents | Trigger | Cooldown |
+|-------|------|--------|--------|---------|----------|
+| **L0** | HEALTHY | 2 | 3 | No symptoms | 1s agents / 2s shells |
+| **L1** | ELEVATED | 1 | 3 | 1 shell timeout | 2s all |
+| **L2** | WARNING | 1 | 2 | Agent pipe error or 2+ shell issues | 3s all |
+| **L3** | CRITICAL | 0 | 1 | write EAGAIN detected | 5s |
+| **L4** | DEAD | 0 | 0 | Multiple EAGAIN + invalid shells | AUTONOMOS only |
+
+Auto-escalation: Each symptom bumps +1 level. 5 min stable at a level → de-escalate -1.
+
+### Three Pipe Categories
+
+| Category | Tools | EAGAIN Risk | Budget |
+|----------|-------|-------------|--------|
+| **Zero-pipe** | `view`, `edit`, `create`, `grep`, `glob`, `sql` | ZERO | Unlimited |
+| **Isolated-pipe** | `task(explore)`, `task(task)`, `task(general-purpose)` | CONTAINED | 3 concurrent |
+| **Shared-pipe** | `powershell` | CRITICAL | 2 concurrent |
+
+### Pre-Spawn Checklist (v2.0 — TWO separate budgets)
+```
+SHELL BUDGET: list_powershell → active < 2? → OK to spawn shell
+AGENT BUDGET: list_agents → running < 3? → OK to spawn agent
+Can spawn 2 agents in parallel (same tool call)
+Can spawn 1 shell + 1 agent together (different pipe pools)
+```
+
+### Recovery Protocol
+```
+STEP 1: FULL STOP — spawn nothing new
+STEP 2: list_powershell → stop ALL shells
+STEP 3: list_agents → wait for all to complete
+STEP 4: Wait 5 seconds
+STEP 5: Test ONE shell → resume at L2 (conservative) for 5 min
+STEP 6: If shells dead → agents only (L3). If agents dead → AUTONOMOS (L4)
+```
+
+### DB Integration
+- `eagain_config` table in session DB: 14 rows covering all limits + throttle levels
+- DB connections unchanged at 3 max (agents share the same `managed_db()` pool)
+- Agent expansion does NOT increase DB connection pressure
+
+### Files Updated (commit 8a28af8)
+- `.github/instructions/eagain-prevention.instructions.md` — v1.0 → v2.0
+- `.github/instructions/shell-management.instructions.md` — v4.0 → v5.0
+- `.github/instructions/agent-activation.instructions.md` — expanded budget
+- `.github/instructions/sqlite-memory.instructions.md` — updated cross-ref
+- `copilot-instructions.md` — v14.0 → v15.0
+- `COPILOT_STARTUP_STATE.md` — this section + updated patterns/mistakes

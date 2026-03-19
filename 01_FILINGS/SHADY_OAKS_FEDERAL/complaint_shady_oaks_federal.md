@@ -475,7 +475,7 @@ Date: ______________________
 
 ## APPENDIX: EVIDENCE INDEX
 
-The following evidence from the LitigationOS MEEK1 Shady Oaks evidence corpus supports the claims herein:
+The following evidence from Andrew Pigors' Shady Oaks evidence collection supports the claims herein:
 
 | Claim ID | Claim Name | Evidence Signals | Sample Fact ID | Proof Status |
 |----------|-----------|-----------------|----------------|-------------|

@@ -1,6 +1,32 @@
 ---
 name: evidence-intelligence-nexus
-description: "ELITE evidence mastery — fusion of 12 evidence/claims/authority skills. Covers evidence harvesting, authentication, context injection, timeline forensics, drive forensic scanning, drive organization, harm quantification, damages calculation, claim research, cause of action library, authority validation, and local legal search."
+description: "Use when processing, authenticating, or analyzing evidence — harvesting from drives, chain of custody, authentication under MRE 901-903, timeline forensics, deduplication, harm quantification, damages calculation, cause of action research, authority validation, and local legal search. Michigan evidence law focused (Pigors v Watson)."
+category: discipline
+version: "2.0.0"
+triggers:
+  - evidence
+  - authentication
+  - chain of custody
+  - deduplication
+  - damages
+  - harm quantification
+  - timeline
+  - drive scan
+  - exhibit
+  - Bates
+  - MRE 901
+  - cause of action
+  - authority validation
+lanes:
+  - "A: Watson/Custody (2024-001507-DC)"
+  - "B: Shady Oaks/Housing (2025-002760-CZ)"
+  - "C: Federal §1983 (USDC WDMI)"
+  - "D: PPO (2023-5907-PP)"
+  - "E: Judicial Misconduct/JTC"
+  - "F: Appellate (COA 366810)"
+court: "14th Judicial Circuit, Muskegon County; Michigan COA; Michigan Supreme Court"
+case: Pigors v Watson
+dependencies: []
 metadata:
   model: opus
   forged_from: 12
@@ -1096,4 +1122,86 @@ After each use of this skill:
 3. Update lane-specific intelligence if new orders/events occurred
 4. Cross-reference findings with contradiction_map for consistency
 5. Feed results to litigation-red-team for adversarial validation
+```
+
+---
+
+## Decision Tree
+
+```
+ENTRY: Evidence task received
+│
+├─ Q1: What phase of evidence work?
+│   ├─ Collection / Harvesting → BRANCH A: Evidence Collection
+│   ├─ Processing / Dedup → BRANCH B: Evidence Processing
+│   ├─ Authentication / Foundation → BRANCH C: Authentication
+│   ├─ Analysis / Timeline → BRANCH D: Forensic Analysis
+│   └─ Damages / Quantification → BRANCH E: Damages Calculation
+│
+├─ BRANCH A: Evidence Collection
+│   ├─ Step 1: Identify target drives and directories (C:\, D:\, F:\, G:\, H:\, I:\)
+│   ├─ Step 2: Scan with drive forensic scanner — catalog all files
+│   ├─ Step 3: Compute SHA-256 hash for each file (for provenance, NOT dedup)
+│   ├─ Step 4: Assign lane tag via MEEK signal detection (E→D→F→C→A→B priority)
+│   ├─ Step 5: Record chain of custody entry for each file
+│   └─ OUTPUT: Evidence inventory with hashes, lane tags, and custody records
+│
+├─ BRANCH B: Evidence Processing
+│   ├─ Step 1: Content-based dedup — OPEN files and compare text (NOT hash-only)
+│   ├─ Step 2: Move confirmed duplicates to I:\ drive dedup folder (NEVER delete)
+│   ├─ Step 3: Extract text/metadata from PDFs, DOCX, images (OCR if needed)
+│   ├─ Step 4: Index into litigation_context.db with proper lane tagging
+│   ├─ Step 5: Verify counts with DISTINCT queries to prevent inflation
+│   └─ OUTPUT: Deduplicated, indexed evidence with traceable counts
+│
+├─ BRANCH C: Authentication
+│   ├─ Step 1: Identify evidence type (text, email, photo, document, recording)
+│   ├─ Step 2: Determine applicable MRE rule (901(b)(1), 901(b)(4), 901(b)(9), 902)
+│   ├─ Step 3: Identify foundation witness who can authenticate
+│   ├─ Step 4: Draft foundation questions for each exhibit
+│   ├─ Step 5: Check for hearsay issues and identify exceptions (MRE 803/804)
+│   └─ OUTPUT: Authentication worksheet per exhibit with MRE citations
+│
+├─ BRANCH D: Forensic Analysis
+│   ├─ Step 1: Build chronological timeline from all evidence sources
+│   ├─ Step 2: Detect gaps in timeline — flag periods with no evidence
+│   ├─ Step 3: Cross-reference evidence across lanes for contradictions
+│   ├─ Step 4: Generate temporal analysis with event clustering
+│   └─ OUTPUT: Evidence timeline with gap analysis and contradiction flags
+│
+└─ BRANCH E: Damages Calculation
+    ├─ Step 1: Classify damage type (economic, non-economic, statutory, punitive)
+    ├─ Step 2: Identify legal basis (MCL, USC, common law) for each claim
+    ├─ Step 3: Document actual losses with supporting evidence references
+    ├─ Step 4: Apply multiplier if treble damages apply (document statutory basis)
+    ├─ Step 5: Map each damage to specific evidence in DB
+    └─ OUTPUT: Damages calculation with methodology, evidence links, and totals
+```
+
+---
+
+## Output Contract
+
+```yaml
+output:
+  type: enum [evidence_report, authentication_worksheet, timeline, damages_calculation, inventory, dedup_report]
+  format: markdown
+  required_fields:
+    - summary: string
+    - citations: list[string]  # verified MRE/MCL citations only
+    - confidence: float  # 0.0-1.0
+    - lane: enum [A, B, C, D, E, F]
+    - case_number: string
+    - evidence_count: integer  # must use COUNT(DISTINCT ...)
+    - dedup_method: string  # "content-based" (NEVER "hash-only")
+    - chain_of_custody: boolean  # documented for all digital evidence
+  quality_gates:
+    - all_citations_verified: boolean
+    - no_hallucinated_names: boolean
+    - db_first_confirmed: boolean
+    - traceable_statistics: boolean
+    - content_based_dedup: boolean  # hash-only is forbidden
+    - authentication_documented: boolean
+    - chain_of_custody_complete: boolean
+    - no_duplicate_counting: boolean
 ```

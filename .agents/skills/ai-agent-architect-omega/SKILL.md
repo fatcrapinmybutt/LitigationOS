@@ -1,6 +1,25 @@
 ---
 name: ai-agent-architect-omega
-description: "ELITE AI agent architecture — fusion of 20 agent/AI skills. Covers agent design, multi-agent orchestration, agent evaluation, memory systems, tool building, autonomous patterns, parallel dispatch, CrewAI, LangGraph, and AI engineering. Use for ALL agent architecture and orchestration work."
+description: "Use when designing, building, or optimizing AI agents — covers agent architecture, multi-agent orchestration, evaluation, memory systems, tool building, autonomous patterns, parallel dispatch, CrewAI, LangGraph, and AI engineering."
+category: discipline
+version: "2.0.0"
+triggers:
+  - agent
+  - orchestration
+  - multi-agent
+  - fleet
+  - agent-design
+  - tool-building
+lanes:
+  - "A: Watson/Custody (2024-001507-DC)"
+  - "B: Shady Oaks/Housing (2025-002760-CZ)"
+  - "C: Federal §1983 (USDC WDMI)"
+  - "D: PPO (2023-5907-PP)"
+  - "E: Judicial Misconduct/JTC"
+  - "F: Appellate (COA 366810)"
+court: "14th Judicial Circuit, Muskegon County"
+case: "Pigors v Watson"
+dependencies: []
 metadata:
   model: opus
   forged_from: 20
@@ -25,6 +44,79 @@ Activate this skill for ANY work related to:
 - **Agent Optimization**: prompt engineering, cost reduction, latency, reliability improvement
 - **CrewAI & LangGraph**: framework-specific patterns, agents, tasks, workflows
 - **AI Engineering**: RAG, embeddings, LLM integration, production AI patterns
+
+---
+
+## Decision Tree
+
+```
+ENTRY: Agent architecture task received
+│
+├─ Q1: What type of agent work?
+│   ├─ Design new agent → BRANCH A
+│   ├─ Optimize existing agent → BRANCH B
+│   ├─ Multi-agent orchestration → BRANCH C
+│   ├─ Agent evaluation/testing → BRANCH D
+│   └─ Memory system design → BRANCH E
+│
+├─ BRANCH A: New Agent Design
+│   ├─ Step 1: Define agent purpose and tier (I/O, Intelligence, Convergence)
+│   ├─ Step 2: Inherit Agent9999 base class
+│   ├─ Step 3: Implement run() → AgentResult contract
+│   ├─ Step 4: Add 7-layer error protocol
+│   ├─ Step 5: Register in master_index.db
+│   ├─ Step 6: Test with orchestrator --dry-run
+│   └─ OUTPUT: Fleet-integrated agent with full error handling
+│
+├─ BRANCH B: Agent Optimization
+│   ├─ Step 1: Profile current agent (duration, error rate, resource use)
+│   ├─ Step 2: Identify bottleneck (prompt, tool use, memory, I/O)
+│   ├─ Step 3: Apply targeted optimization (prompt engineering, caching, batching)
+│   ├─ Step 4: Benchmark before/after
+│   └─ OUTPUT: Optimized agent with measured improvement
+│
+├─ BRANCH C: Multi-Agent Orchestration
+│   ├─ Step 1: Map task dependency graph (no cycles allowed)
+│   ├─ Step 2: Assign agent types (explore=read, task=execute, general=reason)
+│   ├─ Step 3: Enforce EAGAIN limits (max 3 concurrent agents)
+│   ├─ Step 4: Add checkpoints every 3 agent completions
+│   ├─ Step 5: Cache results in session SQL immediately on completion
+│   └─ OUTPUT: Orchestration plan with dependency graph and budget
+│
+├─ BRANCH D: Agent Evaluation
+│   ├─ Step 1: Define behavioral test cases
+│   ├─ Step 2: Run agent against test suite
+│   ├─ Step 3: Score on 4 dimensions (completeness, accuracy, timeliness, efficiency)
+│   ├─ Step 4: Identify failure modes and add to gotchas
+│   └─ OUTPUT: Evaluation report with scores and recommendations
+│
+└─ BRANCH E: Memory System
+    ├─ Step 1: Choose memory type (short-term, long-term, episodic, semantic)
+    ├─ Step 2: Select storage (context window, SQLite, vector store)
+    ├─ Step 3: Design retrieval strategy (keyword, embedding, hybrid)
+    ├─ Step 4: Implement with persistence across sessions
+    └─ OUTPUT: Memory system with retrieval benchmarks
+```
+
+## Output Contract
+
+```yaml
+output:
+  type: enum [agent_design, code, config, analysis]
+  format: markdown_or_code
+  required_fields:
+    - summary: string               # What was designed/built/optimized
+    - agent_type: string            # Agent tier and ID (e.g., "J05 - Intelligence Tier J")
+    - files_changed: list[str]      # All files created or modified
+    - quality_score: float          # 0.0-1.0 self-assessment
+  quality_gates:
+    - inherits_agent9999: boolean        # Base class contract satisfied
+    - seven_layer_error_protocol: boolean # All 7 error layers implemented
+    - eagain_compliant: boolean          # Max 3 agents, max 2 shells respected
+    - checkpoints_present: boolean       # Progress saved every 10min or 3 completions
+    - agent_results_cached: boolean      # Results stored in SQL, not just context
+    - no_hallucinated_capabilities: boolean  # Agent type matches available tools
+```
 
 ---
 

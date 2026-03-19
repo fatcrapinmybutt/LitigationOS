@@ -135,7 +135,7 @@ Email: andrewjpigors@gmail.com
 
 This Brief is submitted in support of Petitioner's Petition for Superintending Control (MCR 7.304; Const. 1963, art. 6, Sec. 4) filed in this Court as an original action.
 
-Petitioner Andrew J. Pigors is the father of a young child, L.D.W., born November 9, 2022. For over 700 consecutive days, Petitioner has been completely separated from his daughter — not because any court has found that contact with her father would endanger her, but because the trial court eliminated all parenting time without conducting the analysis required by Michigan law, without holding an evidentiary hearing, and without providing Petitioner the procedural protections guaranteed by the Michigan and United States Constitutions.
+Petitioner Andrew J. Pigors is the father of a young child, L.D.W., born November 9, 2022. For over 700 consecutive days, Petitioner has been completely separated from his son — not because any court has found that contact with his father would endanger him, but because the trial court eliminated all parenting time without conducting the analysis required by Michigan law, without holding an evidentiary hearing, and without providing Petitioner the procedural protections guaranteed by the Michigan and United States Constitutions.
 
 This is not a case where a trial court exercised discretion within the bounds of law and Petitioner merely disagrees with the result. This is a case where the trial court **failed to perform mandatory legal duties**, **exceeded its jurisdiction**, and created a **shadow record** of evidence that Petitioner was never permitted to see or challenge. The trial court directed evaluations to be submitted to the "judge's secretary, not to be filed with clerk" — thereby ensuring that the evidence upon which it relied would never appear in the official record and could never be reviewed on appeal.
 
@@ -231,7 +231,7 @@ The trial court's practice of routing evidence outside the official record means
 
 #### 3. Over 700 Days Without a Remedy
 
-Petitioner has now gone over 700 days without meaningful access to his child. He has filed motions in the trial court. He has appealed. He has preserved every issue. And yet he remains completely separated from his daughter, with no end in sight through normal channels.
+Petitioner has now gone over 700 days without meaningful access to his child. He has filed motions in the trial court. He has appealed. He has preserved every issue. And yet he remains completely separated from his son, with no end in sight through normal channels.
 
 #### 4. The Scale of Misconduct Exceeds Appellate Capacity
 
@@ -496,7 +496,7 @@ Petitioner respectfully requests that this Court:
 
 ## CONCLUSION
 
-For over 700 days, Andrew Pigors has been separated from his daughter. Not because any court found he was a danger to her. Not because any evaluation concluded contact would harm her. But because a trial court stripped away his fundamental rights without following the law — without conducting the required analysis, without holding the required hearings, without affording the required due process protections — and then channeled its evidence into the shadows where no one could review it.
+For over 700 days, Andrew Pigors has been separated from his son. Not because any court found he was a danger to him. Not because any evaluation concluded contact would harm him. But because a trial court stripped away his fundamental rights without following the law — without conducting the required analysis, without holding the required hearings, without affording the required due process protections — and then channeled its evidence into the shadows where no one could review it.
 
 **The evidence is no longer a matter of he-said, she-said.** Systematic analysis of the complete evidentiary record documents **76,329 adverse findings** spanning 9 independent sources. **15,928 findings** are specifically relevant to this Court's superintending authority. **44,974 evidentiary rows** across the JTC Conduct Pattern Table reveal 6 distinct categories of judicial misconduct. **18 CRITICAL-severity** and **13,182 HIGH-severity** findings confirm that this is not a case of isolated error but of systematic judicial abuse.
 

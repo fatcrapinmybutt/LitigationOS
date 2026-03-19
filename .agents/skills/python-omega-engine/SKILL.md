@@ -1,6 +1,25 @@
 ---
 name: python-omega-engine
-description: "ELITE Python mastery — the ultimate fusion of 20 Python skills. Covers Python 3.12+, async/await, performance optimization, testing, error handling, design patterns, type safety, resilience, Pydantic v2, FastAPI, packaging, observability, background jobs, resource management, configuration, and anti-patterns. Use PROACTIVELY for ALL Python development."
+description: "Use when writing, reviewing, or refactoring any Python code in LitigationOS — covers Python 3.12+, async/await, performance optimization, testing, error handling, design patterns, type safety, resilience, Pydantic v2, FastAPI, packaging, observability, background jobs, resource management, configuration, and anti-patterns."
+category: discipline
+version: "2.0.0"
+triggers:
+  - python
+  - script
+  - pip
+  - pytest
+  - fastapi
+  - pydantic
+lanes:
+  - "A: Watson/Custody (2024-001507-DC)"
+  - "B: Shady Oaks/Housing (2025-002760-CZ)"
+  - "C: Federal §1983 (USDC WDMI)"
+  - "D: PPO (2023-5907-PP)"
+  - "E: Judicial Misconduct/JTC"
+  - "F: Appellate (COA 366810)"
+court: "14th Judicial Circuit, Muskegon County"
+case: "Pigors v Watson"
+dependencies: []
 metadata:
   model: opus
   forged_from: 20
@@ -22,6 +41,76 @@ Activate this skill for ANY Python work:
 - Configuring projects, packaging for distribution, or setting up CI/CD
 - Performance profiling, memory optimization, or algorithmic tuning
 - Working with FastAPI, Pydantic, SQLAlchemy, Celery, or the modern Python ecosystem
+
+---
+
+## Decision Tree
+
+```
+ENTRY: Python task received
+│
+├─ Q1: What type of Python work?
+│   ├─ New code / feature → BRANCH A
+│   ├─ Bug fix / debug → BRANCH B
+│   ├─ Performance optimization → BRANCH C
+│   ├─ Testing → BRANCH D
+│   └─ Packaging / CI/CD → BRANCH E
+│
+├─ BRANCH A: New Code
+│   ├─ Step 1: Verify CWD is NOT repo root (shadow modules!)
+│   ├─ Step 2: Set UTF-8 encoding (sys.stdout + file I/O)
+│   ├─ Step 3: Use Python 3.12+ features (match, type, union syntax)
+│   ├─ Step 4: Add type hints (pyright/mypy compatible)
+│   ├─ Step 5: Implement error handling (7-layer protocol if agent code)
+│   ├─ Step 6: Write tests (pytest, fixtures, parametrize)
+│   └─ OUTPUT: Type-safe, tested Python module
+│
+├─ BRANCH B: Bug Fix
+│   ├─ Step 1: Check for shadow module interference first
+│   ├─ Step 2: Verify encoding (cp1252 vs UTF-8 on Windows)
+│   ├─ Step 3: Check DB connection PRAGMAs (busy_timeout, WAL)
+│   ├─ Step 4: Reproduce, fix, add regression test
+│   └─ OUTPUT: Fix with regression test
+│
+├─ BRANCH C: Performance
+│   ├─ Step 1: Profile with cProfile or line_profiler
+│   ├─ Step 2: Check DB queries (SELECT *, missing indexes, LIKE vs FTS5)
+│   ├─ Step 3: Check for executemany vs execute-in-loop
+│   ├─ Step 4: Optimize and benchmark
+│   └─ OUTPUT: Optimized code with before/after metrics
+│
+├─ BRANCH D: Testing
+│   ├─ Step 1: Use pytest (not unittest)
+│   ├─ Step 2: Fixtures for DB setup/teardown
+│   ├─ Step 3: Parametrize for edge cases
+│   ├─ Step 4: Coverage target: 80%+
+│   └─ OUTPUT: Test suite with coverage report
+│
+└─ BRANCH E: Packaging
+    ├─ Step 1: pyproject.toml (not setup.py)
+    ├─ Step 2: Use uv for dependency management
+    ├─ Step 3: Ruff for lint + format
+    └─ OUTPUT: Pip-installable package
+```
+
+## Output Contract
+
+```yaml
+output:
+  type: enum [code, config, analysis]
+  format: python_code_or_markdown
+  required_fields:
+    - summary: string           # What was implemented/fixed
+    - files_changed: list[str]  # All files created or modified
+    - quality_score: float      # 0.0-1.0 self-assessment
+  quality_gates:
+    - syntax_valid: boolean          # AST parses without error
+    - no_shadow_imports: boolean     # CWD not repo root, no shadow conflicts
+    - type_hints_present: boolean    # All public functions have type annotations
+    - encoding_safe: boolean         # UTF-8 explicit on all file I/O
+    - tests_pass: boolean            # pytest returns 0 exit code
+    - db_pragmas_set: boolean        # WAL + busy_timeout on all DB connections
+```
 
 ---
 

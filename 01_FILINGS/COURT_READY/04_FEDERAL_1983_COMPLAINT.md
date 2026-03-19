@@ -19,16 +19,22 @@
 | | |
 | **RONALD BERRY,** | |
 | | |
+| **ALBERT WATSON,** | |
+| | |
+| **CODY WATSON,** | |
+| | |
+| **LORI WATSON,** | |
+| | |
 | &emsp;&emsp;&emsp;&emsp;Defendants. | |
 | _______________________________________/ | |
 
 ---
 
-# COMPLAINT FOR DEPRIVATION OF CIVIL RIGHTS UNDER 42 U.S.C. §§ 1983, 1985, 1988
+# COMPLAINT FOR DEPRIVATION OF CIVIL RIGHTS UNDER 42 U.S.C. §§ 1983, 1985, 1988 AND SUPPLEMENTAL STATE TORT CLAIMS
 
 ---
 
-Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant to 28 U.S.C. § 1915, respectfully submits this Complaint pursuant to 42 U.S.C. § 1983, 42 U.S.C. § 1985(3), and 42 U.S.C. § 1988, for the deprivation of rights secured by the First and Fourteenth Amendments to the United States Constitution, and states as follows:
+Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant to 28 U.S.C. § 1915, respectfully submits this Complaint pursuant to 42 U.S.C. § 1983, 42 U.S.C. § 1985(3), 42 U.S.C. § 1988, and supplemental state tort claims under 28 U.S.C. § 1367, for the deprivation of rights secured by the First, Fourth, Sixth, and Fourteenth Amendments to the United States Constitution, and for state-law torts arising from the same nucleus of operative facts, and states as follows:
 
 ---
 
@@ -38,7 +44,7 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 2\. Over a period exceeding two years, Defendant Hon. Jenny L. McNeill, a judge of the 14th Circuit Court, Muskegon County, Michigan, issued **24 of 55 orders (43.6%) on an ex parte basis** — all without notice to Plaintiff, all without an opportunity for Plaintiff to be heard, and all to Plaintiff's detriment. She incarcerated Plaintiff for a combined **59 days** — including 45 days for the act of sending birthday messages to his child — muted him during hearings, refused to review exculpatory evidence, imposed a $250 bond to block his access to the courts, and told Plaintiff: **"Do not file anymore, I will not look at it."**
 
-3\. As a direct result, Plaintiff has been **completely separated from his child, L.D.W., for more than 230 consecutive days** — with zero contact, zero visitation, and zero parenting time — constituting a de facto termination of the parent-child relationship without any of the constitutional protections the Due Process Clause demands. This prolonged separation occurred despite objectively exculpatory evidence: Plaintiff's drug screen returned **negative**, his initial HealthWest psychological evaluation returned **all zeros** (no clinical findings), and **nine (9) separate police investigations** into allegations made by the Watson family resulted in **zero findings** against Plaintiff.
+3\. As a direct result, Plaintiff has been **completely separated from his child, L.D.W., for more than 230 consecutive days** — with zero contact, zero visitation, and zero parenting time — constituting a de facto termination of the parent-child relationship without any of the constitutional protections the Due Process Clause demands. This prolonged separation occurred despite objectively exculpatory evidence: Plaintiff's drug screen returned **negative**, his initial HealthWest psychological evaluation returned **all zeros** (no clinical findings), and **multiple police investigations** into allegations made by the Watson family resulted in **zero substantiated findings** against Plaintiff.
 
 4\. Plaintiff lost **two jobs** and **two homes** as a direct result of the 59 days of incarceration imposed without constitutionally adequate process.
 
@@ -55,6 +61,8 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 8\. Venue is proper in the **Southern Division of the Western District of Michigan** pursuant to **28 U.S.C. § 1391(b)** because a substantial part of the events giving rise to Plaintiff's claims occurred in Muskegon County, Michigan, which lies within this Division, and all Defendants reside and/or conduct business within this District.
 
 9\. This Court is authorized to award compensatory damages, punitive damages, declaratory relief, injunctive relief, and reasonable costs pursuant to **42 U.S.C. § 1988**, **Fed. R. Civ. P. 54(d)**, and **28 U.S.C. § 1920**.
+
+9a\. This Court has **supplemental jurisdiction** over Plaintiff's state-law tort claims (Counts IX through XVI) pursuant to **28 U.S.C. § 1367(a)** because they arise from the same case or controversy — the identical nucleus of operative facts — as Plaintiff's federal claims. The state tort claims derive from the same coordinated campaign of deprivation, conspiracy, and abuse that underlies the federal civil rights claims. Exercising supplemental jurisdiction serves judicial economy, convenience, and fairness, as the state claims share common witnesses, evidence, and the same core factual narrative.
 
 10\. Plaintiff proceeds in forma pauperis pursuant to **28 U.S.C. § 1915**. [ANDREW: FILE IFP APPLICATION SEPARATELY]
 
@@ -76,7 +84,13 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 14\. **Ronald Berry** is a natural person residing in or around Muskegon County, Michigan. Berry is the boyfriend and domestic partner of Defendant Watson. **Berry is not an attorney.** Berry is a private party who participated in the conspiracy to deprive Plaintiff of his constitutional rights by drafting legal filings on Watson's behalf — constituting the unauthorized practice of law — which were then filed and acted upon by the court. Berry's direct involvement in ex parte contacts with the court, including documented voicemail communications (Item #6, ex parte objection table), constitutes overt acts in furtherance of the conspiracy. *Dennis v. Sparks*, 449 U.S. 24 (1980).
 
-15\. At all relevant times, Defendant McNeill acted under color of state law within the meaning of 42 U.S.C. § 1983. Defendants Watson and Berry, by conspiring with Defendant McNeill, likewise acted under color of state law. *Dennis v. Sparks*, 449 U.S. 24 (1980); *Adickes v. S.H. Kress & Co.*, 398 U.S. 144 (1970).
+14a\. **Albert Watson** is a natural person and resident of Muskegon County, Michigan. Albert Watson is the father of Defendant Emily A. Watson. On or about **October 20, 2024**, Albert Watson forcibly removed the minor child L.D.W. from Plaintiff's arms during a parenting time exchange, threw Personal Protection Order papers through the window of Plaintiff's vehicle stating "Haha, now you're served," and thereby physically assaulted Plaintiff while facilitating Defendant Watson's withholding of L.D.W. from October 20, 2024 through November 15, 2024 — a period of 26 days encompassing L.D.W.'s birthday and Halloween. In **November 2023**, Albert Watson physically assaulted Plaintiff in an incident captured on video. Albert Watson conspired with Defendants Watson and Berry to deprive Plaintiff of his constitutional rights and is independently liable under 42 U.S.C. § 1985(3) and state tort law. *Griffin v. Breckenridge*, 403 U.S. 88, 102–03 (1971).
+
+14b\. **Cody Watson** is a natural person and resident of Muskegon County, Michigan. Cody Watson is the brother of Defendant Emily A. Watson. Cody Watson is a named third-party violator of the Personal Protection Order, having sent threatening text messages to Plaintiff as a proxy for Defendant Watson — documented in Police Report MCSD-2024-02101 (Officer Hintz). Cody Watson pays Defendant Watson's rent — a fact admitted by Watson at the custody trial — constituting undisclosed income relevant to the child support proceedings and demonstrating financial coordination in the conspiracy. Cody Watson directed Tamara Snider to stalk Plaintiff's business on Nextdoor. Cody Watson conspired with Defendants to deprive Plaintiff of his constitutional rights.
+
+14c\. **Lori Watson** is a natural person and resident of Muskegon County, Michigan. Lori Watson is the mother of Defendant Emily A. Watson. On or about **March 26, 2024**, Lori Watson participated in the forcible withholding of L.D.W. from Plaintiff during the first withholding period, issuing ultimatums and facilitating Defendant Watson's unilateral denial of Plaintiff's parenting time. Lori Watson participated in the October 2024 PPO service ambush alongside Albert Watson. Lori Watson conspired with Defendants to deprive Plaintiff of his constitutional rights.
+
+15\. At all relevant times, Defendant McNeill acted under color of state law within the meaning of 42 U.S.C. § 1983. Defendants Watson, Berry, Albert Watson, Cody Watson, and Lori Watson, by conspiring with Defendant McNeill and among themselves, likewise acted under color of state law with respect to the § 1983 and § 1985(3) claims, and are independently liable under state tort law. *Dennis v. Sparks*, 449 U.S. 24 (1980); *Adickes v. S.H. Kress & Co.*, 398 U.S. 144 (1970).
 
 ---
 
@@ -296,7 +310,7 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 53\. Defendants' actions — entering ex parte orders suspending ALL parenting time without sworn evidence of imminent danger, maintaining a total separation for 230+ consecutive days, and blocking access to the courts through a $250 bond and a retaliatory directive — constitute a **total deprivation** of Plaintiff's fundamental liberty interest in his parental relationship with L.D.W.
 
-54\. No compelling government interest justifies this prolonged, complete deprivation. No evidence of imminent danger was presented. No best-interest-factor hearing was conducted under MCL 722.23. No clear and convincing evidence was offered. To the contrary, the objective evidence affirmatively disproves any danger: Plaintiff's court-ordered drug screen returned **negative**; his initial HealthWest psychological evaluation returned **"all zeros"** (no clinical diagnoses, no findings of concern); and **nine (9) separate police investigations** into allegations made by the Watson family produced **zero findings** against Plaintiff. The deprivation was arbitrary, conscience-shocking, and without rational justification.
+54\. No compelling government interest justifies this prolonged, complete deprivation. No evidence of imminent danger was presented. No best-interest-factor hearing was conducted under MCL 722.23. No clear and convincing evidence was offered. To the contrary, the objective evidence affirmatively disproves any danger: Plaintiff's court-ordered drug screen returned **negative**; his initial HealthWest psychological evaluation returned **"all zeros"** (no clinical diagnoses, no findings of concern); and **multiple police investigations** into allegations made by the Watson family produced **zero substantiated findings** against Plaintiff. The deprivation was arbitrary, conscience-shocking, and without rational justification.
 
 55\. The Sixth Circuit recognizes substantive due process protection for parent-child relationships. *Doe v. Claiborne County*, 103 F.3d 495, 506 (6th Cir. 1996). State actions that "shock the conscience" or are "arbitrary in the constitutional sense" violate substantive due process. *County of Sacramento v. Lewis*, 523 U.S. 833, 846 (1998). *See also Kovacic v. Cuyahoga Cty. Dept of Children & Family Servs.*, 606 F.3d 301, 310 (6th Cir. 2010) (holding that removal of a child from parental custody without procedurally adequate due process violates substantive due process); *Bartell v. Lohiser*, 215 F.3d 550, 557 (6th Cir. 2000) (holding that parental right to custody is fundamental and removal without meeting strict scrutiny is unconstitutional).
 
@@ -338,9 +352,11 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 &emsp;(g) **Sending a biasing letter to the HealthWest evaluator** after the first evaluation returned "all zeros" (no clinical findings), resulting in a materially different second evaluation — thereby corrupting the evidentiary record and depriving Plaintiff of a fair evaluation by a neutral expert. *See Ward v. Village of Monroeville*, 409 U.S. 57 (1972); *In re Murchison*, 349 U.S. 133 (1955) (fair trial requires a fair tribunal);
 
-&emsp;(h) **Basing the August 8, 2025 ex parte suspension of all parenting time on an illegally obtained recording** made by Lori Watson in violation of MCL 750.539c (felony eavesdropping), thereby relying on evidence that is constitutionally inadmissible under *Mapp v. Ohio*, 367 U.S. 643 (1961).
+&emsp;(h) **Basing the August 8, 2025 ex parte suspension of all parenting time on an illegally obtained recording** made by Lori Watson in violation of MCL 750.539c (felony eavesdropping), thereby relying on evidence that is constitutionally inadmissible under *Mapp v. Ohio*, 367 U.S. 643 (1961);
 
-62\. The systematic denial of notice and hearing before depriving Plaintiff of his fundamental liberty interest constitutes a per se violation of procedural due process.
+&emsp;(i) **Reviewing evidence in chambers without the parties present.** A USB drive containing recordings was reviewed in chambers — off the record, without either party present, and without affording Plaintiff any opportunity to examine, challenge, or respond to the evidence. The fundamental right to confront and cross-examine evidence used against a party is a core component of due process. *Crawford v. Washington*, 541 U.S. 36, 61 (2004) (holding that the right to confront adverse evidence is procedurally indispensable); *Goldberg v. Kelly*, 397 U.S. 254, 270 (1970) (due process requires "the opportunity to confront and cross-examine adverse witnesses"). The off-record handling of this evidence — which then formed the basis for suspending Plaintiff's parenting time — rendered the resulting orders fundamentally unfair.
+
+62\. The systematic denial of notice and hearing before depriving Plaintiff of his fundamental liberty interest constitutes a per se violation of procedural due process. The Supreme Court in *Santosky v. Kramer*, 455 U.S. 745, 747–48 (1982), held that even when a State provides a hearing, the Due Process Clause demands a heightened standard of proof — clear and convincing evidence — before parental rights may be terminated. Here, the State did not merely apply the wrong standard of proof; it provided **no hearing at all** for the 24 ex parte orders that collectively effected a de facto termination of Plaintiff's parental relationship. If clear and convincing evidence is the constitutional floor for terminating parental rights *with* process, then terminating those same rights *without any process whatsoever* is a fortiori unconstitutional.
 
 63\. As a direct and proximate result, Plaintiff has suffered 59 days of incarceration, 230+ days of separation from his child, loss of two jobs, loss of two homes, and severe emotional distress.
 
@@ -370,7 +386,7 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 70\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set forth herein.
 
-71\. The First Amendment guarantees "the right of the people . . . to petition the Government for a redress of grievances." This right is incorporated against the states through the Fourteenth Amendment. The First Amendment also protects the right of a parent to communicate with his child. *Troxel v. Granville*, 530 U.S. 57 (2000).
+71\. The First Amendment guarantees "the right of the people . . . to petition the Government for a redress of grievances." This right is incorporated against the states through the Fourteenth Amendment. The First Amendment also protects the right of a parent to communicate with his child. *Troxel v. Granville*, 530 U.S. 57 (2000). The intimate association between parent and child is among the relationships protected by the First Amendment's freedom of association. *Roberts v. U.S. Jaycees*, 468 U.S. 609, 617–18 (1984) (recognizing that "choices to enter into and maintain certain intimate human relationships must be secured against undue intrusion by the State" as a fundamental element of personal liberty); *see also M.L.B. v. S.L.J.*, 519 U.S. 102, 116 (1996).
 
 72\. A state actor engages in unlawful First Amendment retaliation when: (1) the plaintiff engaged in constitutionally protected conduct; (2) the state actor took an adverse action that would deter a person of ordinary firmness from continuing to engage in that conduct; and (3) the adverse action was motivated at least in part by the plaintiff's protected conduct. *Thaddeus-X v. Blatter*, 175 F.3d 378, 394 (6th Cir. 1999) (en banc).
 
@@ -434,7 +450,348 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 ---
 
-## XII. PREEMPTIVE DOCTRINAL DEFENSES
+## XII. COUNT VIII: DENIAL OF ACCESS TO COURTS
+### (42 U.S.C. § 1983 — First Amendment and Due Process Clause)
+### Against Defendant McNeill
+### (42 U.S.C. § 1983 — First and Fourteenth Amendments)
+### Against Defendant McNeill
+
+95\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set forth herein.
+
+96\. Access to the courts is a fundamental constitutional right. *Boddie v. Connecticut*, 401 U.S. 371, 383 (1971) (a State may not pre-empt the right to access the judicial process without affording all citizens access to the means it has prescribed for doing so); *Bounds v. Smith*, 430 U.S. 817, 821 (1977) (meaningful access to courts is a constitutional right). Where official acts frustrate a plaintiff's ability to seek relief in court, a freestanding access-to-courts claim exists under § 1983. *Christopher v. Harbury*, 536 U.S. 403, 413–15 (2002) (recognizing "backward-looking" access-to-courts claims where official action has caused the loss or inadequate settlement of a meritorious case, and "forward-looking" claims where official action prevents a plaintiff from preparing or filing suit).
+
+97\. Defendant McNeill engaged in a systematic course of conduct that denied Plaintiff access to the courts:
+
+&emsp;(a) **$250 Filing Bond (May 16, 2025).** Judge McNeill imposed a $250 filing deposit as a precondition to Plaintiff filing any future motions. This bond was imposed on a pro se litigant who had already lost two jobs and two homes as a direct result of the Court's own orders, rendering him unable to pay. When fundamental rights are at stake and the courts are the exclusive forum for their vindication, conditioning access on the payment of fees an indigent litigant cannot afford violates due process. *Boddie v. Connecticut*, 401 U.S. 371 (1971);
+
+&emsp;(b) **"Do Not File Anymore" Directive.** Judge McNeill stated on the record, in substance: "Do not file anymore, I will not look at it." This is not a case management order or a vexatious-litigant sanction issued pursuant to proper procedures. It is a categorical, on-the-record refusal by a sitting judge to consider any future filings from a party. A judicial directive refusing to consider any pleading from a specific party — without procedural safeguards, without findings, and without a right to appeal — is a de facto ban on court access;
+
+&emsp;(c) **Muting During Hearings.** Plaintiff's microphone was muted three (3) separate times during the November 15, 2025 remote hearing — the very hearing at which the Court imposed 14 days of incarceration. A "hearing" at which a party is physically prevented from speaking is no hearing at all. The right to be heard is the most basic component of access to courts;
+
+&emsp;(d) **Self-Ruling on Disqualification.** When Plaintiff sought to remove the source of the access barriers by filing a motion for disqualification, Judge McNeill ruled on her own disqualification — denying Plaintiff even the procedural remedy the court rules prescribe for this precise situation.
+
+98\. The combined effect of these four actions was a **complete denial of court access**: Plaintiff could not file (the bond), his filings would not be read (the directive), he could not speak (the muting), and he could not remove the judge who was blocking his access (the self-ruling). This is not a partial or incidental restriction on access — it is a total exclusion from the judicial process.
+
+99\. In *Christopher v. Harbury*, 536 U.S. 403, 415 (2002), the Supreme Court held that a plaintiff must identify a nonfrivolous underlying claim that was lost or impeded as a result of the denial of access. Plaintiff's underlying claims — enforcement of parenting time under MCL 722.27a(3), make-up parenting time under MCL 552.511b, modification of custody and support under MCL 722.27, and reconsideration of ex parte orders — are all nonfrivolous claims that were directly impeded by Judge McNeill's systematic denial of access.
+
+100\. As a direct and proximate result of Defendant McNeill's denial of access to courts, Plaintiff has been unable to vindicate his fundamental parental rights, unable to challenge the ex parte orders that stripped him of all parenting time, and unable to seek relief from the very conditions causing his ongoing injury.
+
+---
+
+## SUPPLEMENTAL STATE TORT CLAIMS
+### (28 U.S.C. § 1367 — Same Nucleus of Operative Facts)
+
+---
+
+## XIII-A. COUNT IX: INTENTIONAL INFLICTION OF EMOTIONAL DISTRESS (IIED)
+### (Michigan Common Law)
+### Against All Defendants
+
+101\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set forth herein.
+
+102\. Under Michigan law, the elements of intentional infliction of emotional distress are: (1) extreme and outrageous conduct; (2) intent or recklessness; (3) causation; and (4) severe emotional distress. *Roberts v. Auto-Owners Ins. Co.*, 422 Mich. 594, 602 (1985).
+
+103\. The following conduct by Defendants, individually and in concert, was **extreme and outrageous** — conduct "so outrageous in character, and so extreme in degree, as to go beyond all possible bounds of decency." *Restatement (Second) of Torts § 46 cmt. d*:
+
+&emsp;(a) **Defendant McNeill:** Issued 24 ex parte orders stripping a father of all contact with his child; muted Plaintiff three times during hearings, physically preventing him from speaking in his own defense; incarcerated Plaintiff for 45 days for sending birthday messages to his three-year-old son; told Plaintiff "do not file anymore, I will not look at it"; dismissed Plaintiff's ADHD disability as "it's all in my head"; rejected a favorable psychological evaluation; refused to examine exculpatory police reports; imposed a $250 bond to block court access; directed her secretary Pamela Rusco to initiate ex parte warrant requests; and maintained a total parent-child separation now exceeding 230 consecutive days — effectively terminating the relationship without statutory process.
+
+&emsp;(b) **Defendant Watson:** Filed false poisoning allegations (self-injected weight-loss substance, blamed Plaintiff); falsely attributed meth use to Plaintiff (Police Report NS2505044 confirms Watson was the source); accessed Plaintiff's medical records without authorization through Corewell Health portal (February 8 through March 15, 2024 — HIPAA violation); weaponized the PPO to prevent all parent-child contact; withheld L.D.W. for 40+ days without court authority; coached L.D.W. to make statements against Plaintiff; concealed income from brother Cody Watson and child support from another child's father; called police for a false suicide welfare check (October-December 2023); and coordinated with her family to execute a campaign of systematic destruction of Plaintiff's parental relationship.
+
+&emsp;(c) **Defendant Berry:** Drafted legal filings for Watson (unauthorized practice of law); made ex parte voicemail contacts with the court; served as Watson's proxy in court communications.
+
+&emsp;(d) **Defendant Albert Watson:** Physically assaulted Plaintiff in November 2023 (video captured); forcibly ripped L.D.W. from Plaintiff's arms on October 20, 2024; threw PPO papers through Plaintiff's car window stating "Haha, now you're served"; facilitated 26-day withholding through L.D.W.'s birthday.
+
+&emsp;(e) **Defendant Cody Watson:** Sent threatening text messages to Plaintiff as proxy for Emily Watson (Police Report MCSD-2024-02101); violated the PPO through third-party contact; directed Tamara Snider to stalk Plaintiff's business on Nextdoor; financially supports Watson's litigation campaign through rent payments.
+
+&emsp;(f) **Defendant Lori Watson:** Issued withholding ultimatums during the March 2024 deprivation; participated in the October 2024 PPO service ambush; facilitated the coordinated family campaign to destroy Plaintiff's parental relationship.
+
+103A\. The outrageousness of Defendants' conduct is further demonstrated by the following escalating pattern:
+
+&emsp;(g) **The 22-Day Total Destruction:** On July 17, 2025, Judge McNeill entered an ex parte order converting a 438-day successful 50/50 custody arrangement into 100% maternal custody — and by August 8, 2025, just 22 days later, entered five additional ex parte orders reducing Plaintiff's parenting time from 50% to **absolute zero** — all without a single hearing, all without a single finding of imminent danger, and all without Plaintiff's knowledge. The speed and totality of this destruction — from a functioning shared custody arrangement to complete termination in 22 days — is itself extreme and outrageous;
+
+&emsp;(h) **Silencing a Father, Then Jailing Him:** At the November 15, 2024 hearing, Judge McNeill ordered Plaintiff's microphone muted three separate times — including during the moments Plaintiff attempted to present exculpatory evidence (Police Report NS2505044). She then incarcerated him for 14 days based on a "hearing" at which he was physically prevented from speaking. Silencing a litigant's defense and then imposing incarceration exceeds all possible bounds of decency;
+
+&emsp;(i) **45 Days for Birthday Wishes:** The imposition of 45 days' incarceration — more than three times the sentence for the prior contempt — because a father sent birthday messages to his three-year-old child through a court-approved communication platform is conduct that would cause an average member of the community to exclaim "Outrageous!" The disproportionality itself evidences malice;
+
+&emsp;(j) **The Rigged Evaluation:** When the first HealthWest psychological evaluation returned "all zeros" — results inconsistent with Watson's narrative — Judge McNeill sent an ex parte biasing letter to the evaluator containing information and framing not part of the original referral. The evaluator then produced a materially different second evaluation with a "Rule Out" notation that did not exist in the first evaluation. A judge who interferes with a purportedly neutral evaluation to support a predetermined outcome engages in conduct that shocks the conscience;
+
+&emsp;(k) **Weaponizing a Secretary for Ex Parte Warrants:** On March 3, 2025, Pamela Rusco — Judge McNeill's secretary — sent an ex parte email to prosecutor Jamie Hooker requesting a warrant against Plaintiff. A judge who deploys court staff to initiate criminal proceedings against a litigant outside the adversarial process engages in conduct beyond the bounds of the judicial function.
+
+104\. Each Defendant acted intentionally or with reckless disregard for the probability that his or her conduct would cause severe emotional distress to Plaintiff.
+
+105\. As a direct and proximate result, Plaintiff has suffered and continues to suffer **severe emotional distress**, including but not limited to: anxiety, depression, insomnia, loss of appetite, difficulty concentrating, hypervigilance, persistent grief over the loss of daily contact with his child, humiliation from wrongful incarceration, financial devastation, loss of two jobs, loss of two homes, and the ongoing anguish of knowing his three-year-old son is being raised without any contact with his father during the most critical developmental period of the child's life.
+
+106\. Plaintiff seeks compensatory damages in an amount to be determined at trial, estimated at **$100,000–$500,000**, plus exemplary damages.
+
+---
+
+## XIII-B. COUNT X: ABUSE OF PROCESS
+### (Michigan Common Law)
+### Against Defendants Watson, Berry, and McNeill
+
+107\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set forth herein.
+
+108\. Under Michigan law, the elements of abuse of process are: (1) an ulterior purpose; and (2) an act in the use of process that is improper in the regular prosecution of the proceeding. *Friedman v. Dozorc*, 412 Mich. 1, 30–31 (1981).
+
+109\. Defendant Watson filed a Personal Protection Order on December 3, 2023, which was granted the same day on an ex parte basis. The **ulterior purpose** of the PPO was not to protect Watson from genuine domestic violence, but to:
+
+&emsp;(a) Establish a **legal weapon** to prevent Plaintiff from exercising parenting time;
+
+&emsp;(b) Create a mechanism for **serial show cause proceedings** (7 filed, resulting in 59 days of incarceration);
+
+&emsp;(c) Engineer **criminal exposure** (CC 382a guilty plea) to be used in custody proceedings;
+
+&emsp;(d) **Block all communication** between father and child — including birthday messages;
+
+&emsp;(e) **Coerce Plaintiff into submission** through the threat of escalating incarceration.
+
+110\. The improper acts in the use of the PPO process include:
+
+&emsp;(a) Filing 7 show cause motions for de minimis or constitutionally protected conduct (birthday messages);
+
+&emsp;(b) Amending the PPO three times (all ex parte) to expand its scope each time;
+
+&emsp;(c) Extending the PPO for a full additional year (December 4, 2024 to December 4, 2025) based on "circumstances continue" — without any new allegation of violence;
+
+&emsp;(d) Using the PPO as a basis for stripping custody and parenting time — a purpose for which the PPO statute (MCL 600.2950) was never intended;
+
+&emsp;(e) Coordinating with Albert Watson and Cody Watson to manufacture PPO violations through third-party contacts and confrontational exchanges.
+
+111\. Defendant McNeill participated in the abuse of process by: (i) granting the PPO same-day without hearing; (ii) granting all three amendments ex parte; (iii) extending the PPO for a full year without new evidence of violence; (iv) incarcerating Plaintiff for birthday messages; and (v) using the PPO proceedings as a basis to strip all parenting time — beyond the scope of MCL 600.2950.
+
+111A\. The weaponization pattern is further demonstrated by the following escalation:
+
+&emsp;(f) **Five Show Cause Motions for De Minimis Contact:** Watson filed five separate show cause motions, each predicated on incidental or constitutionally protected contact — including AppClose messages, birthday wishes, and third-party communications initiated by Watson's own family members. Each show cause proceeding carried the threat of incarceration, creating a ratchet effect: any contact, no matter how trivial, became grounds for jail;
+
+&emsp;(g) **Birthday Messages = 45 Days' Incarceration:** The apex of the weaponization occurred when Plaintiff sent birthday messages to L.D.W. through the court-approved AppClose platform and was sentenced to 45 days' incarceration — a sentence three times longer than the prior 14-day contempt finding. The PPO was never designed to punish a father for wishing his child a happy birthday. This use of the PPO process bears no relationship to its protective purpose under MCL 600.2950;
+
+&emsp;(h) **PPO as Custody Weapon:** Watson and McNeill used the PPO — a protective order statute — as a de facto custody modification tool. The PPO was invoked to justify suspending all parenting time, to justify same-day rulings without notice, and to convert protected parental speech into criminal conduct. This is a textbook case of process used for a purpose other than that for which it was designed. *Friedman v. Dozorc*, 412 Mich. 1, 30–31 (1981);
+
+&emsp;(i) **Three Ex Parte Amendments to Expand Scope:** Each PPO amendment expanded the prohibited conduct — first to include electronic communications, then to include third-party contact, then to encompass all contact of any kind. Each amendment was entered ex parte, without notice to Plaintiff and without any hearing. The progressive expansion ensured that increasingly ordinary parental conduct could be reclassified as criminal.
+
+112\. Plaintiff seeks compensatory damages estimated at **$50,000–$250,000** plus exemplary damages.
+
+---
+
+## XIII-C. COUNT XI: CIVIL CONSPIRACY
+### (Michigan Common Law)
+### Against All Defendants
+
+113\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set forth herein.
+
+114\. Under Michigan law, a civil conspiracy is "a combination of two or more persons, by some concerted action, to accomplish a criminal or unlawful purpose, or to accomplish a lawful purpose by criminal or unlawful means." *Admiral Ins. Co. v. Columbia Casualty Ins. Co.*, 194 Mich. App. 300, 313 (1992).
+
+115\. Defendants Watson, Berry, Albert Watson, Cody Watson, and Lori Watson formed a **civil conspiracy** — and Defendant McNeill acted in concert with this conspiracy — with the common purpose of: (i) destroying Plaintiff's parental relationship with L.D.W.; (ii) incarcerating Plaintiff; (iii) financially ruining Plaintiff; and (iv) obtaining sole custody of L.D.W. without regard for the child's best interests.
+
+116\. The following **overt acts** were committed in furtherance of the conspiracy:
+
+&emsp;(a) **December 3, 2023:** Watson files PPO; McNeill grants same-day without hearing;
+
+&emsp;(b) **March 26, 2024:** Watson and Lori Watson withhold L.D.W. for 40 days with ultimatums;
+
+&emsp;(c) **October 20, 2024:** Albert Watson assaults Plaintiff and forcibly takes L.D.W., initiating 26-day withholding through child's birthday;
+
+&emsp;(d) **2024 (multiple dates):** Cody Watson sends threatening texts (MCSD-2024-02101), violates PPO as Emily's proxy;
+
+&emsp;(e) **February 8–March 15, 2024:** Watson accesses Plaintiff's Corewell Health medical records without authorization;
+
+&emsp;(f) **2024–2025:** Berry drafts legal filings for Watson and makes ex parte court contacts;
+
+&emsp;(g) **February 28, 2025:** McNeill's secretary conveys "don't speak" instruction through appointed attorney Martini;
+
+&emsp;(h) **March 3, 2025:** Rusco (at McNeill's direction) sends ex parte warrant request to prosecutor Jamie Hooker;
+
+&emsp;(i) **August 8, 2025:** McNeill issues 5 same-day ex parte orders stripping all parenting time;
+
+&emsp;(j) **November 26, 2025:** McNeill sentences Plaintiff to 45 days for birthday messages.
+
+116A\. The following **coordinated Watson family acts** further evidence the conspiracy:
+
+&emsp;(k) **Albert Watson's Physical Assault and Child Seizure:** On October 20, 2024, Albert Watson (Emily's father) forcibly removed L.D.W. from Plaintiff's arms during a court-ordered parenting time exchange and threw PPO papers through Plaintiff's car window, taunting "Haha, now you're served." This violent interference — committed in coordination with Emily Watson's PPO filing — initiated a 26-day withholding of L.D.W. that encompassed the child's birthday and Halloween. Albert Watson had also physically assaulted Plaintiff in November 2023, an incident captured on video;
+
+&emsp;(l) **Cody Watson's Proxy Harassment Campaign:** Cody Watson (Emily's brother) sent threatening text messages to Plaintiff as a proxy for Emily Watson, documented in Police Report MCSD-2024-02101 (Officer Hintz). Cody Watson is a named third-party PPO violator. Cody Watson also directed Tamara Snider to stalk Plaintiff's business on Nextdoor, extending the harassment beyond direct contact. Cody Watson's monthly rent payments to Emily Watson — admitted at the custody trial — demonstrate both financial coordination and concealed income relevant to child support calculations;
+
+&emsp;(m) **Lori Watson's Felony Eavesdropping:** Lori Watson (Emily's mother) recorded Plaintiff without his knowledge or consent in violation of MCL 750.539c — Michigan's felony eavesdropping statute requiring all-party consent. This illegally obtained recording was then submitted to Judge McNeill and formed a substantial basis for the August 8, 2025 ex parte order suspending all parenting time. Lori Watson also participated in the March 2024 withholding by issuing ultimatums and in the October 2024 PPO service ambush alongside Albert Watson;
+
+&emsp;(n) **Berry's Unauthorized Legal Practice:** Ronald Berry, who is not an attorney, drafted substantive legal filings on Watson's behalf, which were filed with and acted upon by the court. Berry also made ex parte voicemail contacts with the court (Item #6, ex parte objection table). Berry's legal drafting — coupled with Watson's 9-year Kent County Prosecutor's Office experience — created a litigation capability that effectively functioned as unacknowledged legal representation while Plaintiff was unrepresented.
+
+117\. Each overt act caused independent injury. The cumulative effect has been the complete destruction of Plaintiff's parental relationship, 59 days of incarceration, loss of 2 jobs, loss of 2 homes, and ongoing emotional devastation.
+
+118\. Plaintiff seeks compensatory damages estimated at **$100,000–$500,000** jointly and severally against all Defendants, plus exemplary damages.
+
+---
+
+## XIII-D. COUNT XII: DEFAMATION PER SE
+### (Michigan Common Law — MCL 600.2911)
+### Against Defendant Watson
+
+119\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set forth herein.
+
+120\. Under Michigan law, defamation per se is established when a false statement imputes (a) a criminal offense; (b) a loathsome disease; (c) lack of fitness in business or profession; or (d) serious sexual misconduct. *Burden v. Elias Bros. Big Boy Restaurants*, 240 Mich. App. 723, 728 (2000). Defamation per se requires no proof of special damages. *Smith v. Anonymous Joint Enterprise*, 487 Mich. 102, 113 (2010)*.
+
+121\. Defendant Watson made the following false statements, which constitute defamation per se:
+
+&emsp;(a) **False attribution of methamphetamine use:** Watson told police (and/or caused to be stated in sworn filings) that Plaintiff uses methamphetamine. Norton Shores Police Report NS2505044 (Officer Ella Randall, Badge #47437) confirms that the reference to "meth use" **originated from Watson herself**, not from any police investigation or finding against Plaintiff. Attributing illicit drug use to another person imputes a criminal offense — defamation per se. Plaintiff's drug screening results were **negative**.
+
+&emsp;(b) **False poisoning allegation:** Watson claimed Plaintiff "poisoned" her. The facts show Watson injected herself with a substance from the refrigerator "to lose weight," developed crescent-shaped rashes, and falsely blamed Plaintiff. This false allegation imputes a criminal offense (assault/poisoning) — defamation per se.
+
+&emsp;(c) **False suicide allegation:** Watson called police for a false suicide welfare check on Plaintiff (October–December 2023). Plaintiff immediately called dispatch back stating "I'm not suicidal." This false report imputes a mental health condition — defamation per se.
+
+&emsp;(d) **False webcam monitoring claim:** Watson accused Plaintiff of monitoring her through a webcam. The device was a baby camera for L.D.W. This false statement imputes stalking behavior — defamation per se.
+
+122\. Watson published these false statements to police officers, court personnel, attorneys, the Friend of the Court, HealthWest clinicians, and potentially others.
+
+122A\. The defamatory statements were not isolated incidents but elements of a **coordinated narrative campaign** designed to destroy Plaintiff's credibility and parental fitness in the eyes of the court, law enforcement, and clinical evaluators:
+
+&emsp;(e) **False methamphetamine allegation to police:** Watson told Norton Shores Police (Report NS2505044, Officer Ella Randall, Badge #47437) that Plaintiff uses methamphetamine. Officer Randall's report confirms the "meth use" reference **originated from Watson**, not from any independent investigation. Plaintiff's court-ordered drug screen returned **negative**. Attributing illegal drug use to another person imputes commission of a felony and constitutes defamation per se under Michigan law;
+
+&emsp;(f) **False suicide report to police:** Watson called police to conduct a suicide welfare check on Plaintiff during October–December 2023. Plaintiff immediately called dispatch back stating "I'm not suicidal." A false suicide report to law enforcement, published to responding officers and documented in police records, imputes mental instability and unfitness — defamation per se;
+
+&emsp;(g) **False poisoning accusation in sworn filings:** Watson alleged in sworn court filings that Plaintiff "poisoned" her. The facts show Watson injected herself with a substance from the refrigerator "to lose weight," developed crescent-shaped rashes, and falsely attributed the reaction to Plaintiff. This allegation, published in sworn filings accessible to the court, opposing counsel, the Friend of the Court, and clinical evaluators, imputes a criminal offense (assault/poisoning);
+
+&emsp;(h) **Cumulative publication to professional evaluators:** Watson's false allegations were transmitted — through court filings, FOC reports, and Judge McNeill's biasing letter — to the HealthWest clinical evaluator, who relied upon them in formulating the second evaluation. Publication to clinical professionals charged with evaluating Plaintiff's fitness as a parent amplified the reputational harm and directly impacted Plaintiff's custody rights.
+
+123\. As a direct and proximate result, Plaintiff's reputation has been damaged, he has been subjected to criminal investigation, his parenting fitness has been falsely questioned, and his relationship with L.D.W. has been destroyed.
+
+124\. Plaintiff seeks compensatory and presumed damages in an amount estimated at **$50,000–$250,000** plus exemplary damages.
+
+---
+
+## XIII-E. COUNT XIII: FRAUD AND MISREPRESENTATION
+### (Michigan Common Law)
+### Against Defendant Watson
+
+125\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set forth herein.
+
+126\. Under Michigan law, the elements of fraud are: (1) a material representation; (2) that is false; (3) that the defendant knew was false or made recklessly without knowledge of its truth; (4) made with the intent that the plaintiff act upon it; (5) that the plaintiff did act upon it; and (6) resulting injury. *Hi-Way Motor Co. v. International Harvester Co.*, 398 Mich. 330, 336 (1976).
+
+127\. Defendant Watson made the following fraudulent representations to the court and/or to Plaintiff:
+
+&emsp;(a) **Concealed income:** Watson failed to disclose to the Friend of the Court that her brother, Cody Watson, pays her rent — a fact she admitted under cross-examination at the custody trial. This concealment artificially inflated her apparent need for child support and deflated her imputed income;
+
+&emsp;(b) **Inflated insurance costs:** Watson represented that she pays health insurance premiums, when in fact Kent County pays approximately 80–85% of her insurance costs through her employment at the Kent County Prosecutor's Office;
+
+&emsp;(c) **Concealed child support from another father:** Watson receives child support from another child's father, which was not disclosed in the support calculations;
+
+&emsp;(d) **False emergency allegations:** Watson represented to the court that emergency circumstances required ex parte orders, when no genuine emergency existed during the 438 days of successful 50/50 custody;
+
+&emsp;(e) **Fabricated evidence basis:** Watson's sworn filings contained allegations that were either demonstrably false (meth use, poisoning) or materially misleading;
+
+&emsp;(f) **Omission of 438-Day Successful Custody:** Watson's ex parte emergency motions seeking suspension of Plaintiff's parenting time omitted the material fact that the parties had operated under a 50/50 shared custody arrangement for **438 consecutive days** (May 5, 2024 through July 17, 2025) without incident, without emergency, and without any documented harm to L.D.W. This omission was material because the existence of a lengthy, successful shared custody arrangement directly contradicts any claim of imminent danger justifying ex parte relief. A reasonable court, had it been informed of the 438-day track record, could not have found the "imminent danger" required by MCR 3.207(C)(2);
+
+&emsp;(g) **Income Concealment to Inflate Support:** Watson represented her financial circumstances in a manner designed to maximize the child support obligation imposed on Plaintiff. In addition to concealing Cody Watson's rent payments and the second father's child support, Watson failed to disclose her full Kent County employment benefits and the true scope of her household income, resulting in a child support calculation based on materially false financial representations.
+
+128\. The court relied on Watson's misrepresentations in issuing ex parte orders, setting child support, extending the PPO, and imposing incarceration on Plaintiff.
+
+129\. Plaintiff seeks compensatory damages estimated at **$50,000–$250,000**, including overpaid child support, lost income, and consequential damages.
+
+---
+
+## XIII-F. COUNT XIV: SILENT FRAUD (FRAUDULENT CONCEALMENT)
+### (Michigan Common Law — MCL 552.605)
+### Against Defendant Watson
+
+130\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set forth herein.
+
+131\. Under Michigan law, silent fraud — also known as fraudulent concealment — occurs when a party "suppresses a material fact" that the party has a "legal or equitable duty to communicate." *Hord v. Environmental Research Inst. of Michigan*, 463 Mich. 399, 412 (2000).
+
+132\. Under **MCL 552.605**, a party to a child support proceeding has an affirmative legal obligation to accurately and fully disclose all sources of income to the Friend of the Court.
+
+133\. Defendant Watson concealed the following material facts:
+
+&emsp;(a) Cody Watson's monthly rent payments on Watson's behalf (admitted at trial);
+
+&emsp;(b) Child support payments received from another child's father;
+
+&emsp;(c) The true extent of Kent County's contribution to her health insurance premiums;
+
+&emsp;(d) Her employment at the Kent County Prosecutor's Office, Family Court Division — giving her insider knowledge of court processes, FOC procedures, and family law strategy that created a material informational asymmetry;
+
+&emsp;(e) **Unauthorized Access to Plaintiff's Medical Records (HIPAA Violation):** From approximately **February 8, 2024 through March 15, 2024**, Watson accessed Plaintiff's protected health information through the Corewell Health patient portal without Plaintiff's authorization, knowledge, or consent. Watson concealed this unauthorized access from the court, from Plaintiff, and from the Friend of the Court. Watson's access to Plaintiff's medical records — including mental health treatment information, medications, and clinical notes — provided her with confidential information that she then weaponized in subsequent court filings by crafting allegations of mental health concerns and substance abuse issues designed to mirror information gleaned from the unauthorized access. This unauthorized access constitutes a violation of the Health Insurance Portability and Accountability Act (HIPAA), 42 U.S.C. § 1320d-6, and Michigan's Medical Records Access Act, MCL 333.26269. Watson's concealment of this access is itself an independent act of silent fraud — she had a duty to disclose the source of information used in sworn filings and failed to do so;
+
+&emsp;(f) **Concealment of the Basis for Emergency Claims:** Watson concealed from the court the fact that her ex parte emergency motions were not based on any new emergency but rather on a strategic decision to weaponize the PPO process to obtain a custody advantage. The 438 days of successful 50/50 custody preceding the emergency motions were omitted from Watson's representations to the court.
+
+134\. Watson had an affirmative legal duty under MCL 552.605 to disclose these financial facts. Her silence was intentional and designed to maximize child support extracted from Plaintiff while concealing her true financial position.
+
+135\. Plaintiff seeks compensatory damages including all overpaid support, adjustment of support arrears, and consequential damages, estimated at **$25,000–$100,000**.
+
+---
+
+## XIII-G. COUNT XV: TORTIOUS INTERFERENCE WITH PARENTAL RELATIONSHIP
+### (Michigan Common Law)
+### Against Defendants Watson, Albert Watson, Cody Watson, and Lori Watson
+
+136\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set forth herein.
+
+137\. Michigan recognizes the tort of intentional interference with the parent-child relationship. *See Brocklehurst v. PPG Industries, Inc.*, 123 Mich. App. 1, 15 (1983). The elements are: (1) a parent-child relationship existed; (2) the defendant intentionally interfered with that relationship; (3) the interference was improper or wrongful; and (4) the plaintiff suffered damages.
+
+138\. Plaintiff had an established, functioning parent-child relationship with L.D.W. under the 50/50 custody arrangement that operated successfully for 438 consecutive days.
+
+139\. Each Watson family Defendant intentionally interfered with this relationship through the following wrongful conduct:
+
+&emsp;(a) **Emily Watson:** Unilaterally withheld L.D.W. for 40+ days (March–May 2024); coordinated the ex parte destruction of the 50/50 arrangement; withheld L.D.W. for 230+ consecutive days (ongoing); coached L.D.W. against Plaintiff; used the PPO to block all communication; filed serial show cause motions for de minimis contact;
+
+&emsp;(b) **Albert Watson:** Forcibly removed L.D.W. from Plaintiff's arms on October 20, 2024; physically assaulted Plaintiff; facilitated 26-day withholding through L.D.W.'s birthday and Halloween;
+
+&emsp;(c) **Cody Watson:** Sent threatening messages as Emily's proxy; violated PPO through third-party contact; financially supported Emily's litigation campaign; directed harassment of Plaintiff's business;
+
+&emsp;(d) **Lori Watson:** Participated in March 2024 withholding with ultimatums; participated in October 2024 PPO service ambush; facilitated family coordination against Plaintiff.
+
+139A\. The interference was accomplished through the following specific mechanisms:
+
+&emsp;(e) **PPO as Parenting Time Blockade:** The PPO — originally obtained under the pretext of personal protection — was systematically expanded through three ex parte amendments to encompass all contact between Plaintiff and L.D.W., including electronic communications through the court-approved AppClose platform. The PPO was then used as the basis for five show cause proceedings, each designed to further restrict Plaintiff's contact with his child. The effect was to convert a protective order into a permanent custody modification tool — bypassing the best-interest analysis required by MCL 722.23;
+
+&emsp;(f) **Third-Party Harassment Campaign:** The Watson family coordinated a campaign of third-party harassment designed to isolate Plaintiff socially and economically. Cody Watson directed Tamara Snider to stalk Plaintiff's business on Nextdoor. Albert Watson conducted confrontational exchanges at parenting time locations. Lori Watson issued ultimatums during custody exchanges. The cumulative effect was to create an environment of intimidation surrounding every interaction between Plaintiff and his child;
+
+&emsp;(g) **Birthday and Holiday Deprivation:** The Watson family Defendants deliberately timed their most aggressive interference to coincide with significant dates — L.D.W.'s birthday, Halloween 2024, and the holiday season — maximizing the emotional harm to both Plaintiff and L.D.W. and depriving them of irreplaceable shared experiences during the child's formative years;
+
+&emsp;(h) **Proxy Contact to Manufacture Violations:** Cody Watson and other Watson family members initiated contact with Plaintiff — including threatening text messages documented in Police Report MCSD-2024-02101 — and then characterized Plaintiff's responses as PPO violations. This manufactured-violation strategy was designed to create a paper trail of "violations" to support show cause proceedings and incarceration.
+
+140\. The interference was improper, unlawful, and motivated by animus toward Plaintiff rather than any legitimate concern for L.D.W.'s welfare. The 438 days of successful 50/50 custody demonstrates that L.D.W. thrived in Plaintiff's care.
+
+141\. Plaintiff has suffered extraordinary damages: 230+ consecutive days of total separation from his child during the most critical developmental years (ages 2–3), loss of bonding opportunities, loss of first experiences, and the ongoing psychological trauma of forced separation.
+
+142\. Plaintiff seeks compensatory damages estimated at **$100,000–$500,000** jointly and severally against all Watson family Defendants, plus exemplary damages.
+
+---
+
+## XIII-H. COUNT XVI: MONELL LIABILITY — PATTERN AND PRACTICE
+### (42 U.S.C. § 1983 — Monell v. Dep't of Social Services, 436 U.S. 658 (1978))
+### Against Muskegon County (14th Circuit Court)
+
+143\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set forth herein.
+
+144\. Under *Monell v. Department of Social Services*, 436 U.S. 658 (1978), a local government entity may be held liable under § 1983 when the execution of a government's **policy or custom** inflicts the constitutional injury. *Owen v. City of Independence*, 445 U.S. 622 (1980), further held that municipalities do not enjoy qualified immunity.
+
+145\. The 14th Circuit Court, Family Division, through its officers, employees, and judicial officers, has maintained a **pattern, practice, and custom** of:
+
+&emsp;(a) Issuing ex parte orders in family law proceedings without compliance with the mandatory prerequisites of MCR 3.207(C)(2), including the absence of sworn facts demonstrating imminent danger;
+
+&emsp;(b) Permitting judicial officers to self-rule on their own disqualification motions in violation of MCR 2.003(D);
+
+&emsp;(c) Permitting ex parte communications between judicial staff (Pamela Rusco) and prosecutors, opposing parties, and clinical evaluators — in violation of Canon 3 of the Michigan Code of Judicial Conduct;
+
+&emsp;(d) Failing to implement safeguards to prevent the weaponization of protective orders in custody disputes;
+
+&emsp;(e) Incarcerating pro se litigants without appointment of counsel in violation of *Mead v. Batchlor*, 435 Mich. 480 (1990).
+
+145A\. The following additional evidence demonstrates that the constitutional violations were caused by **county policy, custom, or deliberate indifference** rather than isolated conduct by a single officer — the distinction required by *Monell*, 436 U.S. at 694:
+
+&emsp;(f) **Rusco Warrant Email (March 3, 2025):** Pamela Rusco, Judge McNeill's secretary, sent an ex parte email to prosecutor Jamie Hooker requesting initiation of criminal proceedings against Plaintiff. This communication — initiated by a court employee at the direction of a judge, outside the adversarial process and without notice to Plaintiff — demonstrates an institutional custom of using court staff to facilitate ex parte prosecutorial action against disfavored litigants. That this communication occurred through official court email channels, using county resources, evidences a county custom rather than a rogue individual act;
+
+&emsp;(g) **FOC Chart Memo and Institutional Compliance:** The Friend of the Court's handling of this case — including acceptance of Watson's undisclosed income, failure to independently verify financial representations, and institutional deference to Judge McNeill's ex parte orders without independent review — demonstrates a custom of institutional acquiescence to judicial overreach. The FOC possesses independent statutory authority under MCL 552.503 to investigate and report, yet failed to exercise that authority when confronted with a pattern of 24 ex parte orders and 59 days of incarceration imposed on a pro se litigant;
+
+&emsp;(h) **Systematic Failure to Provide Counsel:** The 14th Circuit Court's repeated incarceration of Plaintiff for civil contempt without appointment of counsel — across multiple proceedings on November 15, 2024 and November 26, 2025 — demonstrates a policy or custom of incarcerating pro se litigants without the procedural safeguards required by *Turner v. Rogers*, 564 U.S. 431 (2011), and *Mead v. Batchlor*, 435 Mich. 480 (1990). A single incident might be attributable to individual error; repeated incarceration without counsel across multiple proceedings evidences institutional policy;
+
+&emsp;(i) **No Internal Review of Ex Parte Rate:** Despite 24 of 55 orders (43.6%) being entered ex parte — all adverse to a single party — no internal review, audit, or supervisory intervention was triggered within the 14th Circuit Court. The absence of any mechanism to flag or review a 43.6% ex parte rate in a single case demonstrates deliberate indifference to the risk of constitutional deprivation. *See City of Canton v. Harris*, 489 U.S. 378, 388 (1989) (deliberate indifference to a known or obvious risk of constitutional violation may satisfy the *Monell* policy requirement).
+
+146\. These patterns and practices were the moving force behind the constitutional violations alleged in Counts I through VIII.
+
+147\. Plaintiff seeks declaratory relief, injunctive reform, and compensatory damages against Muskegon County in an amount to be determined at trial, estimated at **$100,000–$500,000**.
+
+---
+
+## XIV. PREEMPTIVE DOCTRINAL DEFENSES
 
 Plaintiff anticipates that Defendants will raise five doctrinal defenses in a motion to dismiss. Each is addressed and rebutted below.
 
@@ -508,7 +865,7 @@ Plaintiff anticipates that Defendants will raise five doctrinal defenses in a mo
 
 103\. Under *Harlow v. Fitzgerald*, 457 U.S. 800, 818 (1982), government officials are entitled to qualified immunity unless their conduct violates "clearly established statutory or constitutional rights of which a reasonable person would have known."
 
-104\. The two-prong analysis requires: (1) whether the facts alleged show the defendant violated a constitutional right; and (2) whether the right was "clearly established" at the time. *Pearson v. Callahan*, 555 U.S. 223, 236 (2009).
+104\. The two-prong analysis requires: (1) whether the facts alleged show the defendant violated a constitutional right; and (2) whether the right was "clearly established" at the time. *Pearson v. Callahan*, 555 U.S. 223, 236 (2009). Under *Saucier v. Katz*, 533 U.S. 194, 201 (2001), the inquiry is whether "it would be clear to a reasonable officer that his conduct was unlawful in the situation he confronted."
 
 105\. **Prong One — Constitutional Violations:** As set forth in Counts I through IV, Defendants violated Plaintiff's substantive due process, procedural due process, equal protection, and First Amendment rights.
 
@@ -529,9 +886,49 @@ Plaintiff anticipates that Defendants will raise five doctrinal defenses in a mo
 
 109\. Qualified immunity therefore does not shield any Defendant.
 
+### G. Plaintiff Has Article III Standing
+
+110A\. Article III standing requires: (1) an injury in fact that is concrete and particularized; (2) a causal connection between the injury and the conduct complained of; and (3) a likelihood that the injury will be redressed by a favorable decision. *Lujan v. Defenders of Wildlife*, 504 U.S. 555, 560–61 (1992).
+
+110B\. Plaintiff's injuries are concrete, particularized, and severe:
+
+&emsp;(a) **59 days of incarceration** — a physical deprivation of liberty that is the most concrete injury cognizable at law;
+
+&emsp;(b) **Loss of two jobs** — IndiGrow LLC terminated Plaintiff on June 2, 2024, and Plaintiff lost his USPS weekend carrier position — as a direct, documented consequence of the incarceration imposed by Defendants;
+
+&emsp;(c) **Loss of two homes** — Plaintiff lost housing as a direct result of the incarceration and resulting inability to pay rent;
+
+&emsp;(d) **230+ consecutive days of total separation** from his child L.D.W. — the destruction of a fundamental liberty interest during the child's most critical developmental period (ages 2–4);
+
+&emsp;(e) **$250 filing bond** — a concrete financial barrier to court access, paid or unpayable.
+
+110C\. Each injury is directly traceable to Defendants' conduct — the ex parte orders, the contempt findings, the $250 bond, and the coordinated conspiracy. A favorable decision — declaratory relief, injunctive relief requiring reassignment and restoration of parenting time, and compensatory damages — would directly redress these injuries.
+
+110D\. Nominal damages alone confer Article III standing. *Uzuegbunam v. Preczewski*, 592 U.S. 279 (2021). Plaintiff's injuries extend far beyond the nominal — but even the constitutional violations standing alone satisfy Article III. No standing challenge is viable.
+
+### H. The Statute of Limitations Does Not Bar Any Claim — Continuing Violation Doctrine
+
+110E\. Section 1983 actions in Michigan are governed by Michigan's three-year statute of limitations for personal injury. *Owens v. Okure*, 488 U.S. 235, 249–50 (1989); MCL 600.5805(2). Federal law governs the accrual date. *Wallace v. Kato*, 549 U.S. 384, 388 (2007).
+
+110F\. All claims are timely under the **continuing violation doctrine**. The Sixth Circuit recognizes that where a defendant's conduct constitutes a "continuing violation" — a series of related acts, at least one of which falls within the limitations period — the entire course of conduct is actionable. *Tolbert v. Ohio Dep't of Transportation*, 172 F.3d 934, 940 (6th Cir. 1999); *Sharpe v. Cureton*, 319 F.3d 259, 267 (6th Cir. 2003).
+
+110G\. The constitutional violations alleged here are not discrete, completed acts but an **ongoing, continuous deprivation** that persists to this day:
+
+&emsp;(a) The total separation of Plaintiff from L.D.W. — now exceeding 230 consecutive days — is a **continuing deprivation** of Plaintiff's fundamental liberty interest. Each additional day of enforced separation is a new injury. The deprivation has not ceased;
+
+&emsp;(b) The $250 filing bond remains in effect, constituting a **continuing denial of access** to the courts. Each day the bond blocks Plaintiff from filing constitutes a new violation;
+
+&emsp;(c) The "Do not file anymore" directive has not been rescinded. Its chilling effect on Plaintiff's First Amendment rights is **ongoing**;
+
+&emsp;(d) The ex parte orders suspending all parenting time remain in force. Their effects are **continuing** — not historical;
+
+&emsp;(e) The conspiracy among Defendants is **ongoing**. Watson continues to benefit from the ex parte orders. McNeill continues to preside. Berry continues to assist Watson. The conspiracy has not terminated.
+
+110H\. Even absent the continuing violation doctrine, the most significant constitutional deprivations occurred well within the three-year limitations period: the five ex parte orders of August 8, 2025; the 45-day incarceration of November 26, 2025; the $250 bond of May 2025; and the ongoing total separation beginning July 29, 2025. No statute of limitations defense is viable as to any count.
+
 ---
 
-## XIII. PRAYER FOR RELIEF
+## XV. PRAYER FOR RELIEF
 
 WHEREFORE, Plaintiff Andrew James Pigors respectfully prays that this Court grant the following relief:
 
@@ -551,7 +948,9 @@ WHEREFORE, Plaintiff Andrew James Pigors respectfully prays that this Court gran
 
 &emsp;(f) Defendant McNeill violated Plaintiff's Fourth Amendment right to be free from unreasonable seizure by ordering Plaintiff incarcerated without adequate purge conditions and without a finding of willful noncompliance;
 
-&emsp;(g) Defendant McNeill violated Plaintiff's Sixth Amendment right to counsel (as applicable through Due Process in civil contempt) by incarcerating Plaintiff without providing appointed counsel or the substitute procedural safeguards required by *Turner v. Rogers*, 564 U.S. 431 (2011).
+&emsp;(g) Defendant McNeill violated Plaintiff's Sixth Amendment right to counsel (as applicable through Due Process in civil contempt) by incarcerating Plaintiff without providing appointed counsel or the substitute procedural safeguards required by *Turner v. Rogers*, 564 U.S. 431 (2011);
+
+&emsp;(h) Defendant McNeill violated Plaintiff's fundamental right of access to courts by imposing a $250 filing bond, issuing a categorical directive refusing to consider Plaintiff's filings, muting Plaintiff during hearings, and self-ruling on her own disqualification — constituting a systematic denial of access in violation of *Boddie v. Connecticut*, 401 U.S. 371 (1971), and *Christopher v. Harbury*, 536 U.S. 403 (2002).
 
 ### B. Injunctive Relief
 
@@ -581,27 +980,27 @@ WHEREFORE, Plaintiff Andrew James Pigors respectfully prays that this Court gran
 
 &emsp;(f) Legal costs and litigation expenses;
 
-in an amount to be determined by the jury but believed to be within the range of **$100,000–$1,000,000** (DB damages_calculations: Section 1983 compensatory, $100K–$1M range), including but not limited to the following verified damages:
+in an amount to be determined by the jury but believed to be within the range of **$100,000–$1,000,000**, including but not limited to the following verified damages:
 
-&emsp;(g) Parent-child separation (569+ consecutive days as of filing): **$100,000–$500,000** (DB damages_calculations: Parent-child separation);
+&emsp;(g) Parent-child separation (569+ consecutive days as of filing): **$100,000–$500,000**;
 
-&emsp;(h) Child psychological harm (attachment disruption during critical developmental period): **$50,000–$250,000** (DB damages_calculations: Child psychological harm);
+&emsp;(h) Child psychological harm (attachment disruption during critical developmental period): **$50,000–$250,000**;
 
-&emsp;(i) Lost income from 14-day incarceration: **$2,000–$8,000** (DB damages_calculations: Lost Income — 14-day incarceration);
+&emsp;(i) Lost income from 14-day incarceration: **$2,000–$8,000**;
 
-&emsp;(j) Lost income from 45-day incarceration: **$5,000–$20,000** (DB damages_calculations: Lost Income — 45-day incarceration);
+&emsp;(j) Lost income from 45-day incarceration: **$5,000–$20,000**;
 
-&emsp;(k) Lost employment — IndiGrow LLC terminated Plaintiff on June 2, 2024, and Plaintiff lost his USPS weekend carrier position due to scheduling conflicts created by the litigation (DB cycle6_financial_evidence: employment records);
+&emsp;(k) Lost employment — IndiGrow LLC terminated Plaintiff on June 2, 2024, and Plaintiff lost his USPS weekend carrier position due to scheduling conflicts created by the litigation;
 
-&emsp;(l) Bond costs: **$250** (DB damages_calculations: Bond costs);
+&emsp;(l) Bond costs: **$250**;
 
-&emsp;(m) Watson conspiracy damages: **$25,000–$250,000** (DB damages_calculations: Watson conspiracy damages).
+&emsp;(m) Watson conspiracy damages: **$25,000–$250,000**.
 
 113\. Emotional distress damages are recoverable under § 1983 without physical injury. *Memphis Community School Dist. v. Stachura*, 477 U.S. 299, 307 (1986); *Carey v. Piphus*, 435 U.S. 247, 264 (1978).
 
 ### D. Punitive Damages
 
-114\. Punitive damages against each Defendant in their individual capacity, estimated at **$50,000–$500,000** per Defendant (DB damages_calculations: Punitive Damages — McNeill due process, $50K–$500K range), in an amount sufficient to punish Defendants' willful, malicious, and reckless disregard for Plaintiff's constitutional rights and to deter similar conduct. Defendant McNeill issued 24 ex parte orders without notice or hearing, incarcerated Plaintiff for 45 days for sending birthday messages to his child, and maintained a total parent-child separation now exceeding 569 days — conduct that is, upon information and belief, motivated by evil motive or intent, or at minimum involves reckless and callous indifference to Plaintiff's federally protected rights. Punitive damages are available under § 1983 when the defendant's conduct is "motivated by evil motive or intent, or when it involves reckless or callous indifference to the federally protected rights of others." *Smith v. Wade*, 461 U.S. 30, 56 (1983).
+114\. Punitive damages against each Defendant in their individual capacity, estimated at **$50,000–$500,000** per Defendant, in an amount sufficient to punish Defendants' willful, malicious, and reckless disregard for Plaintiff's constitutional rights and to deter similar conduct. Defendant McNeill issued 24 ex parte orders without notice or hearing, incarcerated Plaintiff for 45 days for sending birthday messages to his child, and maintained a total parent-child separation now exceeding **270 days** (40 days first withholding + 230+ consecutive days ongoing) — conduct that is, upon information and belief, motivated by evil motive or intent, or at minimum involves reckless and callous indifference to Plaintiff's federally protected rights. Punitive damages are available under § 1983 when the defendant's conduct is "motivated by evil motive or intent, or when it involves reckless or callous indifference to the federally protected rights of others." *Smith v. Wade*, 461 U.S. 30, 56 (1983).
 
 ### E. Nominal Damages
 
@@ -613,25 +1012,49 @@ in an amount to be determined by the jury but believed to be within the range of
 
 ### F-1. Attorney Fees Under 42 U.S.C. § 1988
 
-116a\. Reasonable attorney fees (or, for *pro se* litigants, reasonable litigation expenses and costs to the extent permitted under § 1988) estimated at **$10,000–$100,000** (DB damages_calculations: Section 1983 Attorney Fees — §1988, $10K–$100K range). Section 1988 provides that "the court, in its discretion, may allow the prevailing party . . . a reasonable attorney's fee as part of the costs." 42 U.S.C. § 1988(b). Although *pro se* litigants generally may not recover attorney fees under § 1988, *Kay v. Ehrler*, 499 U.S. 432 (1991), Plaintiff reserves the right to retain counsel at any stage of these proceedings, at which point § 1988 fees shall accrue from the date of filing. Plaintiff further seeks all non-fee litigation costs recoverable under § 1988 and § 1920, including expert witness fees, deposition costs, and document production expenses.
+116a\. Reasonable attorney fees (or, for *pro se* litigants, reasonable litigation expenses and costs to the extent permitted under § 1988) estimated at **$10,000–$100,000**. Section 1988 provides that "the court, in its discretion, may allow the prevailing party . . . a reasonable attorney's fee as part of the costs." 42 U.S.C. § 1988(b). Although *pro se* litigants generally may not recover attorney fees under § 1988, *Kay v. Ehrler*, 499 U.S. 432 (1991), Plaintiff reserves the right to retain counsel at any stage of these proceedings, at which point § 1988 fees shall accrue from the date of filing. Plaintiff further seeks all non-fee litigation costs recoverable under § 1988 and § 1920, including expert witness fees, deposition costs, and document production expenses.
 
-### G. Continuing Accrual
+### G-1. State Tort Damages (Counts IX–XVI)
+
+117a\. In addition to the foregoing federal damages, Plaintiff seeks the following damages on the supplemental state tort claims:
+
+&emsp;(a) **Count IX (IIED):** Compensatory damages of **$100,000–$500,000** for severe emotional distress caused by Defendants' extreme and outrageous conduct, plus exemplary damages;
+
+&emsp;(b) **Count X (Abuse of Process):** Compensatory damages of **$50,000–$250,000** for the weaponization of the PPO process, plus exemplary damages;
+
+&emsp;(c) **Count XI (Civil Conspiracy):** Compensatory damages of **$100,000–$500,000** jointly and severally against all Defendants for the coordinated campaign of destruction, plus exemplary damages;
+
+&emsp;(d) **Count XII (Defamation Per Se):** Compensatory and presumed damages of **$50,000–$250,000** against Defendant Watson for false meth attribution, false poisoning allegation, and false suicide report, plus exemplary damages;
+
+&emsp;(e) **Count XIII (Fraud):** Compensatory damages of **$50,000–$250,000** against Defendant Watson for fraudulent misrepresentations to the court, including overpaid support;
+
+&emsp;(f) **Count XIV (Silent Fraud):** Compensatory damages of **$25,000–$100,000** against Defendant Watson for concealed income and financial fraud on the court;
+
+&emsp;(g) **Count XV (Tortious Interference):** Compensatory damages of **$100,000–$500,000** jointly and severally against all Watson family Defendants for intentional destruction of the parent-child relationship, plus exemplary damages;
+
+&emsp;(h) **Count XVI (Monell):** Compensatory damages of **$100,000–$500,000** against Muskegon County for pattern-and-practice constitutional violations, plus injunctive reform.
+
+### G-2. Aggregate Damages Summary
+
+117b\. The aggregate damages sought across all sixteen counts, subject to proof at trial and jury determination, are estimated in the range of **$500,000 to $3,000,000**, exclusive of punitive/exemplary damages, attorney fees, costs, and continuing accrual.
+
+### H. Continuing Accrual
 
 117\. Damages continue to accrue daily. Each additional day of separation strengthens this action and increases Plaintiff's compensatory and punitive damages.
 
-### H. Further Relief
+### I. Further Relief
 
 118\. Such other and further relief as this Court deems just and equitable.
 
 ---
 
-## XIV. JURY DEMAND
+## XVI. JURY DEMAND
 
 119\. Plaintiff demands trial by jury on all issues so triable pursuant to the Seventh Amendment to the United States Constitution and Rule 38 of the Federal Rules of Civil Procedure.
 
 ---
 
-## XV. VERIFICATION
+## XVII. VERIFICATION
 
 I, Andrew James Pigors, declare under penalty of perjury pursuant to **28 U.S.C. § 1746** that the foregoing is true and correct to the best of my knowledge, information, and belief. The factual allegations set forth in this Complaint are based upon my personal knowledge, documents in my possession, and the official records of the 14th Circuit Court, Muskegon County, Michigan.
 
@@ -662,7 +1085,7 @@ Date: ____________________
 
 ---
 
-## XVI. CERTIFICATE OF SERVICE
+## XVIII. CERTIFICATE OF SERVICE
 
 I, Andrew James Pigors, hereby certify that on _________________, I caused a true and correct copy of the foregoing COMPLAINT FOR DEPRIVATION OF CIVIL RIGHTS UNDER 42 U.S.C. §§ 1983, 1985, 1988 to be served upon the following parties:
 
@@ -680,6 +1103,24 @@ Norton Shores, Michigan 49441
 **Ronald Berry**
 (Via U.S. Marshal Service pursuant to Fed. R. Civ. P. 4(c)(3) and 28 U.S.C. § 1915(d))
 [Address to be determined through discovery or U.S. Marshal diligent search — Berry is Defendant Watson's domestic partner and believed to reside at or near 2160 Garland Drive, Norton Shores, MI 49441]
+
+**Albert Watson**
+(Via U.S. Marshal Service pursuant to Fed. R. Civ. P. 4(c)(3) and 28 U.S.C. § 1915(d))
+[ANDREW: INSERT ADDRESS — believed to reside in Muskegon County, Michigan]
+
+**Cody Watson**
+(Via U.S. Marshal Service pursuant to Fed. R. Civ. P. 4(c)(3) and 28 U.S.C. § 1915(d))
+[ANDREW: INSERT ADDRESS — believed to reside in Muskegon County, Michigan]
+
+**Lori Watson**
+(Via U.S. Marshal Service pursuant to Fed. R. Civ. P. 4(c)(3) and 28 U.S.C. § 1915(d))
+[ANDREW: INSERT ADDRESS — believed to reside in Muskegon County, Michigan]
+
+**Muskegon County (14th Circuit Court)**
+(Via certified mail pursuant to Fed. R. Civ. P. 4(j)(2))
+Muskegon County Clerk
+990 Terrace Street
+Muskegon, Michigan 49442
 
 Service to be effectuated by the United States Marshal pursuant to 28 U.S.C. § 1915(d) (IFP — Marshal service).
 
@@ -733,6 +1174,10 @@ Service to be effectuated by the United States Marshal pursuant to 28 U.S.C. § 
 | *Patsy v. Board of Regents*, 457 U.S. 496 (1982) | No exhaustion required for § 1983 |
 | *Mead v. Batchlor*, 435 Mich. 480 (1990) | Right to counsel before incarceration for contempt |
 | *Crawford-El v. Britton*, 523 U.S. 574 (1998) | Retaliatory motive evidence |
+| *Roberts v. U.S. Jaycees*, 468 U.S. 609 (1984) | Freedom of intimate association — parent-child relationship |
+| *Crawford v. Washington*, 541 U.S. 36 (2004) | Right to confront adverse evidence — procedural due process |
+| *Christopher v. Harbury*, 536 U.S. 403 (2002) | Access-to-courts claim — official acts frustrating court access |
+| *M.L.B. v. S.L.J.*, 519 U.S. 102 (1996) | Access to courts in parental rights proceedings |
 | 42 U.S.C. § 1983 | Deprivation of rights under color of law |
 | 42 U.S.C. § 1985(3) | Conspiracy to deprive civil rights |
 | 42 U.S.C. § 1988 | Costs and fees for prevailing party |
@@ -766,3 +1211,21 @@ Service to be effectuated by the United States Marshal pursuant to 28 U.S.C. § 
 | *Middlesex County Ethics Comm. v. Garden State Bar*, 457 U.S. 423 (1982) | Adequate state forum requirement for Younger |
 | *Halberstam v. Welch*, 705 F.2d 472 (D.C. Cir. 1983) | Circumstantial evidence sufficient for conspiracy |
 | MCL 750.539c | Michigan felony eavesdropping — all-party consent required |
+| *Saucier v. Katz*, 533 U.S. 194 (2001) | Qualified immunity — reasonable officer standard |
+| *Lujan v. Defenders of Wildlife*, 504 U.S. 555 (1992) | Article III standing — injury in fact, causation, redressability |
+| *Owens v. Okure*, 488 U.S. 235 (1989) | § 1983 uses state personal injury statute of limitations |
+| *Wallace v. Kato*, 549 U.S. 384 (2007) | Federal law governs § 1983 accrual date |
+| *Tolbert v. Ohio Dep't of Transportation*, 172 F.3d 934 (6th Cir. 1999) | Continuing violation doctrine in 6th Circuit |
+| *Sharpe v. Cureton*, 319 F.3d 259 (6th Cir. 2003) | Continuing violation — series of related acts |
+| *City of Canton v. Harris*, 489 U.S. 378 (1989) | Monell — deliberate indifference to known risk |
+| *Owen v. City of Independence*, 445 U.S. 622 (1980) | Municipalities do not enjoy qualified immunity |
+| *Friedman v. Dozorc*, 412 Mich. 1 (1981) | Michigan abuse of process elements |
+| MCR 2.313(A)(5) | Discovery sanctions for failure to comply with discovery order |
+| MCR 3.207(C)(2) | Ex parte orders require sworn facts of imminent danger |
+| MCR 2.003(C)–(D) | Disqualification procedure — Chief Judge decides if challenged judge does not recuse |
+| MCL 552.503 | Friend of the Court statutory investigative authority |
+| MCL 552.605 | Affirmative duty to disclose income in support proceedings |
+| MCL 333.26269 | Michigan Medical Records Access Act |
+| 42 U.S.C. § 1320d-6 | HIPAA criminal penalties for unauthorized medical records access |
+| *Hayley v. Dep't of Corrections*, 468 Mich. 600 (2003) | IIED — "outrageous" conduct standard in Michigan |
+| MCL 600.2950 | Personal Protection Order statute — scope and purpose |

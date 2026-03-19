@@ -61,6 +61,12 @@ _______________________________________/
 
 10\. The United States Constitution, Fourteenth Amendment, protects Father's fundamental liberty interest in the care, custody, and management of his child. *Troxel v. Granville*, 530 U.S. 57, 65 (2000) ("The liberty interest ... of parents in the care, custody, and control of their children — is perhaps the oldest of the fundamental liberty interests recognized by this Court."). This fundamental right may not be terminated or substantially restricted absent heightened procedural protections. *Santosky v. Kramer*, 455 U.S. 745, 753 (1982) (requiring clear and convincing evidence before state may sever parental rights); *In re Sanders*, 495 Mich 394, 409 (2014) (due process requires meaningful opportunity to be heard before deprivation of parental rights).
 
+10a\. **MCR 2.605 — Declaratory Judgment to Establish Custodial Environment**: Pursuant to MCR 2.605 (updated January 1, 2026), Father is entitled to a declaratory judgment establishing that the 438-day 50/50 parenting arrangement constituted an established custodial environment with **both** parents under MCL 722.27(1)(c). MCR 2.605(A) provides that "[i]n a case of actual controversy within its jurisdiction, a Michigan court of record may declare the rights and other legal relations of an interested party seeking such a declaration." The existence and character of the established custodial environment is a threshold legal determination that controls the applicable burden of proof (*Harvey v. Harvey*, 470 Mich 186, 193 (2004)) and is therefore a proper subject for declaratory relief.
+
+10b\. **MCR 3.222(D) — Collaborative Law Provisions** (effective January 1, 2026): Father notes that MCR 3.222(D), implementing MCL 691.1345 and MCL 552.9f, now provides a framework for collaborative law processes in family division proceedings. Father has consistently demonstrated willingness to cooperate with all court processes and remains willing to participate in collaborative resolution if Mother will engage in good faith. Mother's refusal to facilitate any contact with L.D.W. for 230+ days demonstrates that she is not a candidate for collaborative resolution absent court intervention.
+
+10c\. **MCR 3.210(A)(4)** (updated October 1, 2025): The court may allow the use of videoconferencing technology for custody and parenting time proceedings. Father requests that, at minimum, temporary parenting time be established via videoconferencing while this motion is pending, to begin restoring the parent-child bond that has been severed for 230+ days.
+
 ---
 
 ## III. PROPER CAUSE AND CHANGE OF CIRCUMSTANCES
@@ -101,23 +107,57 @@ _______________________________________/
 
 19\. The Michigan Legislature has recognized that "it is in the best interest of a child to have a strong relationship with both of his or her parents." MCL 722.27a(1). A child's complete severance from a parent for over seven months is antithetical to this legislative directive and to the constitutionally protected right of parental association. *Troxel v. Granville*, 530 U.S. 57, 66 (2000) ("[T]he Due Process Clause of the Fourteenth Amendment protects the fundamental right of parents to make decisions concerning the care, custody, and control of their children."); *In re Sanders*, 495 Mich 394, 422 (2014) (recognizing that deprivation of parental rights implicates the most fundamental of liberty interests).
 
-### C. Favorable HealthWest Evaluation Rejected
+### B-1. Developmental Harm to L.D.W. — Attachment Theory and Critical Period
 
-20\. On or about September 5, 2025, Father underwent a court-ordered HealthWest evaluation (Evaluation Reference H0002). The evaluation was **favorable to Father** and did not identify any basis for the continued suspension of parenting time.
+19a\. L.D.W. was born on November 9, 2022. At the time parenting time was suspended (August 8, 2025), L.D.W. was two years and nine months old. As of the date of this filing, L.D.W. is approximately three years and four months old and has been deprived of his father for more than **230 of the last 260 days** — representing nearly **90%** of L.D.W.'s life since the ex parte reversal.
+
+19b\. The developmental psychology literature is unequivocal that the period from ages two to four represents a **critical window** for attachment formation and consolidation. During this period, children form internal working models of relationships that persist into adulthood. *See* John Bowlby, *Attachment and Loss, Vol. 1: Attachment* (1969/1982); Mary D. Salter Ainsworth et al., *Patterns of Attachment: A Psychological Study of the Strange Situation* (1978). The abrupt, unexplained removal of a primary attachment figure during this critical window causes **disorganized attachment** — the most harmful attachment classification — which is associated with later emotional dysregulation, difficulty forming relationships, anxiety disorders, and behavioral problems. *See* Mary Main & Erik Hesse, *Parents' Unresolved Traumatic Experiences Are Related to Infant Disorganized Attachment Status*, in *Attachment in the Preschool Years* (Greenberg et al., eds., 1990).
+
+19c\. L.D.W. had an established, secure attachment to Father developed over 438 days of consistent, predictable 50/50 caregiving. The abrupt termination of this attachment relationship — with no transitional period, no explanation the child could understand, and no continued contact of any kind — constitutes the precise scenario that attachment researchers identify as most damaging to young children. At L.D.W.'s age, the child cannot understand why his father has disappeared. The child experiences this as abandonment — regardless of the legal reasons — and the resulting developmental harm compounds with every passing day.
+
+19d\. Every day of continued separation inflicts incremental, potentially irreversible harm to L.D.W.'s emotional development and attachment security. This ongoing developmental harm to a child in the critical attachment window constitutes an independent change of circumstances of the highest magnitude, warranting immediate judicial intervention to begin restoring the father-child bond.
+
+### C. Favorable HealthWest Evaluation Rejected — First Evaluation Establishes Clean Baseline
+
+20\. On **September 4, 2025**, Father underwent a court-ordered HealthWest evaluation conducted by **Michelle R. Mitchell** (BS, QIDP, QMHP) and **Melissa DeAugustine** (LBSW). The evaluation included an Environmental Risk Assessment and Brief Screen Workflow. The evaluation was **favorable to Father**: the clinicians found a clean baseline, no major concerns, a safe environment, and a controlled stress response. Father stated during the evaluation: "I don't feel unsafe, or threatened." The evaluation did not identify any basis for the continued suspension of parenting time.
 
 21\. Despite the favorable evaluation, Judge McNeill rejected or disregarded the HealthWest findings. Father possesses six (6) HealthWest scanned documents across two evaluation categories (first and second evaluations) that confirm the favorable results.
 
 22\. The rejection of a favorable professional evaluation by the very entity the Court ordered to conduct it constitutes a change of circumstances warranting reevaluation by an unbiased judicial officer.
 
-### C-1. Unauthenticated "Second Evaluation" — Evidentiary Foundation Failure
+### C-1. The "Second Evaluation" — Clinically Implausible, Procedurally Defective, and Evidentiary Failure
 
-22a\. Upon information and belief, the court relied upon a purported "second evaluation" document in making its custody and parenting time determinations. **Father never completed a second evaluation.** Father completed one (1) HealthWest evaluation (H0002, approximately September 5, 2025), which was favorable to Father. Any document purporting to be a "second evaluation" of Father is unauthenticated, of unknown origin, and was never subjected to adversarial testing.
+22a\. On **September 11, 2025** — just **seven (7) days** after the first evaluation established a clean baseline — a second HealthWest evaluation was conducted by **Kassandra M. Gansen** (LMSW) and **Melissa DeAugustine** (LBSW). This second evaluation produced a finding of "Rule-out Delusional Disorder." The seven-day interval between a clean baseline and a "rule-out" finding for a serious psychiatric condition is **clinically implausible**. Delusional Disorder does not manifest in seven days following a clean baseline assessment. The radical divergence between the two evaluations — conducted by the same agency within one week — demands scrutiny.
 
-22b\. Under MRE 901(a), the proponent of evidence must produce "evidence sufficient to support a finding that the matter in question is what its proponent claims." No such authentication was provided for any purported second evaluation. No witness testified to the document's authenticity. No chain of custody was established. No certification or business records foundation was laid under MRE 803(6). The document — if it exists — was never shown to Father, never subjected to cross-examination, and never authenticated by its purported author.
+22b\. Critically, the second evaluator herself acknowledged the diagnostic uncertainty, admitting in the report: **"It is difficult to definitively assert whether concerns are factual or delusional."** This admission is fatal to any reliance on this evaluation. A "rule-out" designation is, by clinical definition, an expression of **diagnostic uncertainty** — it is not a confirmed diagnosis. It signifies that the condition has not been ruled in or out and requires further investigation. To treat a "rule-out" notation as a confirmed finding of delusional disorder is a misapplication of clinical terminology that no competent expert would endorse.
 
-22c\. To the extent the court relied upon this unauthenticated document as a basis for restricting or suspending Father's parenting time, such reliance constitutes reversible error. MRE 702 requires that expert testimony — including written expert reports — must be based on sufficient facts or data, be the product of reliable principles and methods, and reflect a reliable application of those principles to the facts. A document of unknown provenance, never authenticated, never tested through cross-examination, and never shown to the opposing party cannot satisfy these foundational requirements. *See Daubert v. Merrell Dow Pharmaceuticals, Inc.*, 509 U.S. 579, 589 (1993); *Gilbert v. DaimlerChrysler Corp.*, 470 Mich 749, 780 (2004).
+22c\. The second evaluation pathologized Father's statements about the legal proceedings — including his statements that "this whole thing is illegal" and "the last assessor didn't see anything wrong with me" — as evidence of delusional thinking. However, given the documented procedural irregularities in this case (ex parte orders without notice, rejection of the favorable first evaluation, suspension of parenting time without clear and convincing evidence findings), Father's concerns about the legality of the proceedings appear **factual, not delusional**. Characterizing legitimate legal criticism as psychiatric pathology constitutes circular reasoning: the court's irregular conduct generates the complaints, and the complaints are then used to justify further restrictions on the complaining parent. This reasoning would pathologize any litigant who objects to procedural irregularities.
 
-22d\. The reliance on an unauthenticated evaluation to deprive a parent of all contact with his child — while simultaneously rejecting the authenticated, favorable evaluation — represents a fundamental failure of evidentiary procedure. This evidentiary void independently constitutes a change of circumstances warranting de novo review by an impartial judicial officer, as the factual basis for the prior orders cannot be sustained.
+22d\. Under MRE 901(a), the proponent of evidence must produce "evidence sufficient to support a finding that the matter in question is what its proponent claims." No proper authentication was provided for the second evaluation. No witness testified to the document's authenticity in open court. No chain of custody was established. No certification or business records foundation was laid under MRE 803(6). The document was never shown to Father in a hearing setting, never subjected to cross-examination, and never authenticated by its purported author through testimony.
+
+22e\. Under MRE 702 and the *Daubert* framework, expert testimony — including written expert reports — must be based on sufficient facts or data, be the product of reliable principles and methods, and reflect a reliable application of those principles to the facts. *See Daubert v. Merrell Dow Pharmaceuticals, Inc.*, 509 U.S. 579, 589 (1993); *Gilbert v. DaimlerChrysler Corp.*, 470 Mich 749, 780 (2004). The second evaluation fails every prong of *Daubert*: (a) it contradicts the same agency's findings from seven days earlier without explaining why; (b) the evaluator's own admission that she cannot determine whether Father's concerns are factual or delusional demonstrates insufficient methodology; (c) a "rule-out" designation is not a reliable conclusion but an open question; and (d) pathologizing legitimate legal complaints is not a reliable application of psychiatric principles.
+
+22e-1\. **No Standardized Psychological Instruments Were Administered.** Under MRE 703, the facts or data upon which an expert bases an opinion must be "of a type reasonably relied upon by experts in the field." The Delusional Disorder diagnosis in the DSM-5-TR requires structured clinical assessment using validated instruments — such as the MMPI-2, SCID-5, or PAI — to differentiate between delusional beliefs and factually grounded concerns. No such standardized psychological instruments were administered during either the first or the second evaluation. The second evaluator, Kassandra M. Gansen (LMSW), is a Licensed Master Social Worker — not a licensed psychologist or psychiatrist — and did not employ any validated psychometric testing before rendering a "Rule-out Delusional Disorder" notation. The absence of standardized testing is a foundational failure under both MRE 702 and MRE 703 and renders the second evaluation unreliable as a matter of law.
+
+22e-2\. **The Seven-Day Reversal Is Scientifically Implausible.** The DSM-5-TR (American Psychiatric Association, 2022) characterizes Delusional Disorder as a condition with "a typical duration of months to years." The condition does not emerge, onset, or become clinically detectable within seven days following a clean baseline assessment. The first evaluation (September 4, 2025) — conducted by Michelle R. Mitchell (BS, QIDP, QMHP) and Melissa DeAugustine (LBSW) — documented no delusional ideation, no psychotic features, no disordered thinking, and a controlled stress response. For a "Rule-out Delusional Disorder" to appear seven days later in a subject who presented with a clean baseline requires either (a) a catastrophic acute psychotic episode — for which there is no documentation — or (b) a diagnostic conclusion driven by factors other than clinical observation. The record supports the latter. Father's statements that "this whole thing is illegal" and "the last assessor didn't see anything wrong with me" are factually accurate descriptions of documented procedural irregularities, not symptoms of delusional thinking.
+
+22f\. The reliance on a clinically implausible, procedurally defective, and diagnostically uncertain "rule-out" notation — to deprive a parent of all contact with his child, while simultaneously rejecting the authenticated, favorable first evaluation from seven days earlier — represents a fundamental failure of evidentiary procedure. This evidentiary void independently constitutes a change of circumstances warranting de novo review by an impartial judicial officer.
+
+### C-2. Off-Record Handling of the Second Evaluation — Canon 3 and MCR 8.119 Violations
+
+22g\. The second evaluation was not formally entered into the court record through proper channels. Instead, upon information and belief, the evaluation was **directed to the chambers of Judge McNeill via email** — bypassing the clerk's office and the formal docketing system required by MCR 8.119.
+
+22h\. A Chart Memo dated **October 29, 2025** reflects that **Pamela Rusco** (judicial secretary to Judge McNeill) **called HealthWest clinicians to request testimony** and arranged subpoenas **via email**, rather than through clerk-filed subpoena processes. This off-record coordination between the judge's chambers and the evaluating agency — outside the formal court record and without notice to Father — constitutes an ex parte communication in violation of **Canon 3(A)(4)** of the Michigan Code of Judicial Conduct, which provides that "[a] judge should not initiate, permit, or consider ex parte communications, or consider other communications made to the judge outside the presence of the parties concerning a pending or impending proceeding."
+
+22i\. The off-record handling of the second evaluation means that a document never formally entered into the court record — transmitted privately to chambers, arranged through informal email communications — was used as a basis to deprive Father of all parenting time. Father was denied the opportunity to challenge, cross-examine, or even review this evidence through the formal adversarial process. This procedural irregularity independently warrants vacatur of orders relying on the second evaluation.
+
+### C-3. 90-Day Delay — Irreparable Harm to Parent-Child Bond
+
+22j\. Father's parenting time was suspended at the "ambush" hearing on **August 8, 2025**, at which Father received same-day notice and had no opportunity to prepare. The next evidentiary hearing did not occur until **October 29, 2025** — a delay of **82 days** from the suspension date, and **90 days** from the entry of the initial ex parte order on **August 6, 2025**.
+
+22k\. MCR 3.207(B)(6) provides that when an ex parte order affects custody or parenting time, the court "shall schedule a hearing ... as soon as possible" and that "the hearing must be held within **21 days** after the order is entered." The 90-day delay from order to evidentiary hearing represents **4.3 times** the maximum period contemplated by MCR 3.207(B)(6). During these 90 days, L.D.W. — a child who was only two years old at the time — was completely deprived of his father's presence during a critical developmental period.
+
+22l\. The psychological literature is unequivocal that prolonged separation from an attachment figure during toddlerhood causes lasting harm to attachment security and emotional development. Every day of the 90-day delay inflicted irreparable harm on the father-child bond — harm that was compounded by the court's failure to comply with its own scheduling rules. The 90-day delay is itself a change of circumstances warranting restoration of parenting time.
 
 ### D. Pending Judicial Disqualification — Filing #3
 
@@ -130,6 +170,18 @@ _______________________________________/
 25\. Despite the prior 50/50 arrangement that functioned for 438 days, Mother has made **no effort whatsoever** to facilitate any contact between Father and L.D.W. since July 17, 2025. Mother has not offered make-up parenting time, has not facilitated phone or video calls, and has not communicated any willingness to restore Father's relationship with the child.
 
 26\. MCL 722.23(j) requires the Court to consider each parent's "willingness and ability ... to facilitate and encourage a close and continuing parent-child relationship between the child and the other parent." Mother's conduct since July 17, 2025 demonstrates a complete unwillingness to facilitate this relationship.
+
+### E-1. Watson Family Pattern of Coordinated Interference
+
+26a\. The obstruction of Father's parental relationship is not limited to Mother alone. The record establishes a coordinated pattern of interference by multiple members of the Watson family, acting in concert with Mother to alienate Father from L.D.W.:
+
+26b\. **Albert Watson — Forcible Removal of Child (October 20, 2024)**: During a lawful parenting exchange on or about October 20, 2024, Albert Watson (Mother's father) physically took L.D.W. from Father's arms and threw PPO papers through Father's car window. This act of physical aggression — directed at Father in the presence of the minor child — precipitated a 26-day withholding period (October 20 through November 15, 2024) during which Mother denied Father all access to L.D.W. in direct violation of the existing 50/50 parenting time order. Albert Watson's conduct constitutes interference with the parent-child relationship and exposed L.D.W. to witnessing an aggressive confrontation directed at his father — conduct directly relevant to MCL 722.23(j) and Factor (k) (domestic violence, perpetrated by Mother's family in Mother's presence or at her direction).
+
+26c\. **Lori Watson — Illegal Recording and Ex Parte Foundation**: Lori Watson (Mother's mother, Kent County employee, Employee ID 1190) secretly recorded a telephone conversation between Father and Albert Watson on or about August 7, 2025. This recording was obtained in apparent violation of MCL 750.539c (felony eavesdropping). The recording was then used as the primary evidentiary foundation for Mother's emergency ex parte motion filed August 8, 2025, which resulted in the complete suspension of Father's parenting time. Lori Watson's participation in obtaining the recording and providing it for use in court proceedings constitutes active participation in the alienation of Father from L.D.W. The recording characterized Father as "paranoid" and "mentally ill" based on his description of being followed and under legal pressure — characterizations that were later echoed in the second HealthWest evaluation's "Rule-out Delusional Disorder" finding.
+
+26d\. **Cody Watson — Financial Facilitation and Proxy Harassment**: Mother's brother, Cody Watson, pays Mother's monthly rent — a fact admitted during cross-examination at the custody trial. This financial arrangement subsidizes Mother's ability to sustain litigation against Father while concealing Mother's true financial capacity from the Court and the Friend of the Court. Upon information and belief, Cody Watson has also engaged in aggressive conduct directed at Father during parenting exchanges, contributing to a pattern of familial intimidation designed to discourage Father from exercising his parental rights.
+
+26e\. **Coordinated Civil Conspiracy Pattern**: The combined conduct of Emily Watson, Albert Watson, Lori Watson, and Cody Watson establishes a coordinated pattern of interference: Lori Watson provides surveillance and recordings; Albert Watson physically intervenes at exchanges; Cody Watson provides financial support for litigation; and Emily Watson deploys the resulting evidence through emergency motions and PPO violation allegations. This pattern is consistent with the elements of civil conspiracy under Michigan common law: an agreement (express or implied) between two or more persons to accomplish an unlawful objective or accomplish a lawful objective through unlawful means. *See Admiral Ins Co v Columbia Cas Ins Co*, 194 Mich App 300, 311 (1992); *Early Detection Ctr, PC v New York Life Ins Co*, 157 Mich App 618, 631 (1986). The Court should consider this coordinated interference pattern in evaluating Factor (j) and in determining whether Mother's household provides a safe and stable environment for L.D.W.
 
 ### F. Father's Stable Housing and Cooperation
 
@@ -209,13 +261,13 @@ _______________________________________/
 
 45\. Father has been transparent about his ADHD diagnosis. This condition does not affect Father's parenting ability and was addressed during proceedings before Judge McNeill, who improperly characterized it as a parenting concern.
 
-46\. The court-ordered HealthWest evaluation (H0002, approximately September 5, 2025) was **favorable to Father** and did not identify any mental health concerns that would warrant restriction of parenting time. Father possesses six (6) HealthWest scanned documents confirming this favorable outcome.
+46\. The court-ordered HealthWest first evaluation (**September 4, 2025**), conducted by Michelle R. Mitchell (BS, QIDP, QMHP) and Melissa DeAugustine (LBSW), was **favorable to Father** — finding a clean baseline, no major concerns, a safe environment, and a controlled stress response. The second evaluation (**September 11, 2025**), conducted by Kassandra M. Gansen (LMSW) and DeAugustine (LBSW) just seven days later, produced only a "Rule-out Delusional Disorder" notation — a diagnostic uncertainty, not a confirmed diagnosis. The second evaluator herself admitted: "It is difficult to definitively assert whether concerns are factual or delusional." The radical contradiction between a clean baseline and a "rule-out" finding within one week is clinically implausible and fails the *Daubert* reliability standard. Father possesses six (6) HealthWest scanned documents confirming these results.
 
 47\. Father is physically healthy and fully capable of caring for L.D.W. **This factor favors Father.**
 
 ### Factor (h): Home, School, and Community Record of the Child
 
-48\. L.D.W. (DOB: November 9, 2022) is approximately three years old. During the 50/50 custody period, L.D.W.'s home life was stable and her developmental progress was age-appropriate in both parents' homes.
+48\. L.D.W. (DOB: November 9, 2022) is approximately three years old. During the 50/50 custody period, L.D.W.'s home life was stable and his developmental progress was age-appropriate in both parents' homes.
 
 49\. Father resides in North Muskegon, Michigan, a stable community with appropriate resources and proximity to services. **This factor is neutral or slightly favors Father.**
 
@@ -339,7 +391,7 @@ _______________________________________/
 
 68\. On **July 17, 2025**, an ex parte order was entered by Judge McNeill that reversed the 50/50 arrangement and awarded Mother sole physical custody. **Father received no notice and was afforded no hearing** before the order was entered.
 
-69\. On **August 8, 2025**, a hearing was held at which Father's parenting time was completely suspended. Father received notice of this hearing on the same day — insufficient time to prepare a defense or retain counsel. This same-day notice violated Father's right to adequate time to prepare under MCR 2.108.
+69\. On **August 6, 2025**, an ex parte order was entered with no notice to Father and no specific facts as required by MCR 3.207(B)(1). On **August 8, 2025**, a hearing was held at which Father's parenting time was completely suspended. Father received notice of this hearing on the same day — insufficient time to prepare a defense or retain counsel. This same-day notice violated Father's right to adequate time to prepare under MCR 2.108. The next evidentiary hearing did not occur until **October 29, 2025** — a delay of **90 days** from the ex parte order and **82 days** from the suspension, representing **4.3 times** the 21-day maximum contemplated by MCR 3.207(B)(6).
 
 70\. On or about **September 5, 2025**, Father underwent a court-ordered HealthWest evaluation (H0002). The evaluation was favorable to Father.
 
@@ -385,35 +437,95 @@ _______________________________________/
 
 ---
 
-## VII. RELIEF REQUESTED
+## VII. REBUTTAL OF DEFENDANT'S FACTUAL ASSERTIONS
 
-WHEREFORE, Plaintiff ANDREW JAMES PIGORS respectfully requests that this Honorable Court enter an Order providing the following relief:
+Father rebuts the following factual assertions made by Defendant and relied upon by the prior court in entering the ex parte orders and suspending Father's parenting time. These rebuttals are supported by documentary evidence in Father's possession (671 identified rebuttal pairs, each cross-referenced to source documents in the court record).
 
-80\. **Restore 50/50 Parenting Time**: Restore the 50/50 parenting time arrangement that constituted the established custodial environment from May 5, 2024 through July 17, 2025, or enter a parenting time order that provides Father with substantially equal parenting time, effective immediately;
+### Rebuttal 1: The Ex Parte Motion Relied on an Illegally Obtained Recording
 
-81\. **Modify Custody Order**: Enter an order modifying custody to reflect Father as a proper custodian with joint legal and joint physical custody of L.D.W.;
+80\. Defendant's emergency ex parte motion of August 8, 2025 relied primarily upon a recording of a telephone conversation between Father and Albert Watson (Defendant's father) on August 7, 2025. This recording was secretly made by Lori Watson (Defendant's mother). Michigan's eavesdropping statute, MCL 750.539c, is a **felony prohibition** making it a crime to "willfully use any device to eavesdrop upon the conversation of any other person without the consent of all parties." Father did not consent to the recording. The use of feloniously obtained evidence as the foundation for an ex parte custody reversal violates fundamental fairness and the exclusionary principle. *See People v. Beavers*, 393 Mich 554 (1975); *Mapp v. Ohio*, 367 U.S. 643 (1961). The entire evidentiary foundation for the August 8, 2025 suspension order is thereby tainted.
 
-82\. **Vacate Ex Parte Orders**: Vacate the ex parte orders of July 17, 2025 and August 8, 2025, which were entered without proper notice and hearing in violation of Father's constitutional due process rights;
+### Rebuttal 2: The "Meth Use" Characterization Was Baseless Speculation
 
-83\. **Award Make-Up Parenting Time**: Award Father make-up parenting time to compensate for the more than 230 days of total deprivation of the parent-child relationship, pursuant to MCL 722.27a(7), which provides that the Court may "make up parenting time for parenting time that was wrongly denied or unreasonably not exercised";
+81\. Defendant's ex parte motion represented to this Court that a Norton Shores police officer (Incident No. NS2505044, August 7, 2025, 8:02 PM, 1143 E Norton Avenue) "indicated that she believed this was a result of meth use." This characterization was not based on any drug test, blood draw, urinalysis, field sobriety test, or medical examination. It was an officer's lay speculation — not expert testimony — and was never subjected to cross-examination or *Daubert* scrutiny. No drug test has **ever** returned positive results for Father in these proceedings. The Court relied on this unsworn, untested, speculative characterization to strip Father of all parenting time — a result unsupported by the evidence and inconsistent with the clear and convincing standard required by MCL 722.27a(3).
 
-84\. **Appoint Guardian Ad Litem**: Appoint a guardian ad litem for L.D.W. pursuant to MCL 722.24 and MCR 3.211 to independently investigate the child's best interests, including L.D.W.'s reported statements regarding conditions in Mother's home;
+### Rebuttal 3: Defendant's Motion Omitted 438 Days of Successful Co-Parenting
 
-85\. **Honor HealthWest Evaluation**: Order that the HealthWest evaluation (H0002, approximately September 5, 2025), which was favorable to Father, be given appropriate weight in determining custody and parenting time;
+82\. Defendant's emergency ex parte motion presented a narrative of imminent danger to L.D.W., yet failed to disclose to the Court that Father had successfully co-parented L.D.W. under a 50/50 arrangement for **438 consecutive days** (May 5, 2024 through July 17, 2025) without a single substantiated incident of harm. This omission is material. A candid disclosure of the full co-parenting history would have demonstrated to the Court that Father had an established, successful track record of safe parenting — facts that are directly relevant to, and inconsistent with, any claim that L.D.W. faced imminent danger in Father's care. The suppression of this favorable history from the ex parte presentation constitutes a violation of the duty of candor owed to the tribunal. *See* MRPC 3.3(a)(1) (obligation not to make false statements of material fact); MCR 3.207(B)(1) (requiring specific facts justifying ex parte relief).
 
-86\. **Costs and Fees**: Award Father such costs, fees, and other relief as the Court deems just and equitable;
+### Rebuttal 4: The Arsenic Poisoning Allegation Was Fabricated
 
-87\. **Such Other Relief**: Grant such other and further relief as the Court deems just, proper, and equitable;
+83\. Defendant alleged that Father poisoned her with arsenic. This allegation was central to the original PPO issuance and has been used to characterize Father as dangerous throughout these proceedings. However, **no hospital records, no toxicology reports, and no medical evidence of any kind** support this claim. Upon information and belief, Defendant admitted to injecting herself with a substance "to lose weight." The poisoning narrative — unsupported by any medical evidence and contradicted by Defendant's own statements — was used to obtain the PPO that now forms the basis for Defendant's continued exclusion of Father from L.D.W.'s life. The entire chain of proceedings flowing from this fabricated allegation is fundamentally unreliable.
 
-87a\. **Vacate $250 Filing Bond**: Vacate any order requiring Father to post a cash bond as a precondition to filing motions in this custody proceeding, as such requirement violates Father's right of access to the courts under *Boddie v. Connecticut*, 401 U.S. 371 (1971);
+### Rebuttal 5: The HealthWest Evaluation Was Favorable — Then Contradicted Without Explanation
 
-87b\. **Order MCL 722.27a(8) Alienation Finding**: Make findings regarding Mother's documented pattern of parental alienation as required by MCL 722.27a(8), and order appropriate sanctions and remedial measures;
+84\. The Court ordered Father to undergo a HealthWest evaluation. Father complied. On September 4, 2025, evaluators Michelle R. Mitchell (BS, QIDP, QMHP) and Melissa DeAugustine (LBSW) conducted the first evaluation, which returned **favorable results**: clean baseline, no major concerns, safe environment, controlled stress response. Seven days later, on September 11, 2025, a different evaluator — Kassandra M. Gansen (LMSW) — produced a "Rule-out Delusional Disorder" finding. The first evaluation was never formally refuted. No explanation was provided for why the same agency reached contradictory conclusions within one week. The prior court rejected the favorable evaluation and relied on the unfavorable one — an outcome that impeaches the integrity of the evaluation process and demonstrates that the results were preordained rather than clinically determined.
 
-87c\. **Order Sanctions for Documented Withholding**: Enter sanctions against Mother for the documented withholding periods (39 days in March-May 2024 and 26 days in October-November 2024) for which no sanctions have been imposed, and award Father make-up parenting time for each withholding episode pursuant to MCL 722.27a(7).
+### Rebuttal 6: Father's PPO Violations Were Birthday Messages — Not Violence
+
+85\. Defendant has characterized Father as a domestic violence perpetrator warranting exclusion from L.D.W.'s life. The facts are these: Father's PPO violations (guilty plea, October 18, 2025, CC 382a) consisted **exclusively** of messages sent to L.D.W. through AppClose — a court-approved co-parent communication application. The messages included birthday greetings and parenting communications to his child. **No physical violence, no threats, no stalking, no harassment directed at Defendant was ever alleged or proven.** Father served 59 days in jail for sending birthday messages to his son. The characterization of this conduct as "domestic violence" warranting permanent parental exclusion distorts the record and conflates parental communication with physical danger.
+
+### Rebuttal 7: Defendant Filed a False Suicide Welfare Check
+
+86\. Defendant initiated a suicide welfare check regarding Father. This resulted in law enforcement contact with Father. Father was not suicidal. No hospitalization, involuntary commitment, or mental health crisis was identified by responding officers. The false welfare check was deployed as a litigation weapon — creating a record of "mental health concerns" that could be cited in subsequent proceedings. This tactic is recognized in the parental alienation literature as a hallmark of litigation abuse: manufacturing official records through bad-faith reports to support a false narrative of instability.
+
+### Rebuttal 8: Defendant's Pattern Reveals Litigation Abuse — Not Genuine Safety Concerns
+
+87\. When the Court examines the totality of Defendant's allegations, a pattern emerges that is inconsistent with genuine safety concerns and consistent with systematic litigation abuse designed to exclude Father from L.D.W.'s life:
+
+   a. **Arsenic poisoning** → No medical evidence. Fabricated.
+
+   b. **Surveillance allegation (baby camera)** → A standard baby monitor in Father's own home. No criminal conduct.
+
+   c. **"Meth use" characterization** → Officer speculation. No drug test. No positive results ever.
+
+   d. **False suicide welfare check** → Father not suicidal. No hospitalization.
+
+   e. **PPO violations** → Birthday messages to a toddler through a court-approved app.
+
+   f. **"Delusional Disorder" finding** → Seven days after a clean evaluation. Evaluator admitted uncertainty. No standardized instruments.
+
+   g. **Three withholding episodes** → 39 days + 26 days + 230+ days = 295+ days of total parental deprivation. Zero sanctions against Defendant.
+
+   Each allegation, examined individually, collapses under scrutiny. Examined collectively, they reveal a deliberate strategy: manufacture allegations → obtain ex parte orders → exclude Father → use the resulting separation as evidence that Father is not part of L.D.W.'s life. This is textbook parental alienation as contemplated by MCL 722.27a(8), which mandates: "The court shall consider evidence of parental alienation and take appropriate action."
 
 ---
 
-## VIII. AFFIDAVIT OF ANDREW JAMES PIGORS
+## VIII. RELIEF REQUESTED
+
+WHEREFORE, Plaintiff ANDREW JAMES PIGORS respectfully requests that this Honorable Court enter an Order providing the following relief:
+
+88\. **Restore 50/50 Parenting Time**: Restore the 50/50 parenting time arrangement that constituted the established custodial environment from May 5, 2024 through July 17, 2025, or enter a parenting time order that provides Father with substantially equal parenting time, effective immediately;
+
+89\. **Modify Custody Order**: Enter an order modifying custody to reflect Father as a proper custodian with joint legal and joint physical custody of L.D.W.;
+
+90\. **Vacate Ex Parte Orders**: Vacate the ex parte orders of July 17, 2025 and August 8, 2025, which were entered without proper notice and hearing in violation of Father's constitutional due process rights;
+
+91\. **Award Make-Up Parenting Time**: Award Father make-up parenting time to compensate for the more than 230 days of total deprivation of the parent-child relationship, pursuant to MCL 722.27a(7), which provides that the Court may "make up parenting time for parenting time that was wrongly denied or unreasonably not exercised";
+
+92\. **Appoint Guardian Ad Litem**: Appoint a guardian ad litem for L.D.W. pursuant to MCL 722.24 and MCR 3.211 to independently investigate the child's best interests, including L.D.W.'s reported statements regarding conditions in Mother's home;
+
+93\. **Honor HealthWest Evaluation**: Order that the HealthWest evaluation (H0002, approximately September 5, 2025), which was favorable to Father, be given appropriate weight in determining custody and parenting time;
+
+93a\. **Declaratory Judgment — Established Custodial Environment**: Pursuant to MCR 2.605, enter a declaratory judgment establishing that the 438-day 50/50 parenting arrangement constituted an established custodial environment with **both** parents under MCL 722.27(1)(c), and that the ex parte orders of July 17 and August 8, 2025 disrupted — rather than created — the established custodial environment, such that the applicable standard for restoring the 50/50 arrangement is preponderance of the evidence, not clear and convincing evidence;
+
+93b\. **Exclude or Strike Second HealthWest Evaluation**: Pursuant to MRE 702, MRE 703, and the *Daubert* framework, exclude or strike the second HealthWest evaluation (September 11, 2025 — Gansen/DeAugustine) as unreliable, unauthenticated, procedurally defective, and lacking foundation. No standardized psychological instruments were administered, the "Rule-out" designation is a diagnostic uncertainty rather than a confirmed diagnosis, and the seven-day reversal from a clean baseline is clinically implausible;
+
+93c\. **Order Immediate Interim Parenting Time**: Pending full hearing on this motion, order immediate interim parenting time — including videoconferencing contact pursuant to MCR 3.210(A)(4) — to begin restoring the parent-child bond and prevent further irreversible developmental harm to L.D.W. during the critical attachment window (ages 2-4);
+
+94\. **Costs and Fees**: Award Father such costs, fees, and other relief as the Court deems just and equitable;
+
+95\. **Such Other Relief**: Grant such other and further relief as the Court deems just, proper, and equitable;
+
+95a\. **Vacate $250 Filing Bond**: Vacate any order requiring Father to post a cash bond as a precondition to filing motions in this custody proceeding, as such requirement violates Father's right of access to the courts under *Boddie v. Connecticut*, 401 U.S. 371 (1971);
+
+95b\. **Order MCL 722.27a(8) Alienation Finding**: Make findings regarding Mother's documented pattern of parental alienation as required by MCL 722.27a(8), and order appropriate sanctions and remedial measures;
+
+95c\. **Order Sanctions for Documented Withholding**: Enter sanctions against Mother for the documented withholding periods (39 days in March-May 2024 and 26 days in October-November 2024) for which no sanctions have been imposed, and award Father make-up parenting time for each withholding episode pursuant to MCL 722.27a(7).
+
+---
+
+## IX. AFFIDAVIT OF ANDREW JAMES PIGORS
 
 ```
 STATE OF MICHIGAN   )
@@ -444,7 +556,7 @@ I, ANDREW JAMES PIGORS, being first duly sworn, depose and state as follows:
 
 96\. Since August 8, 2025, I have had no contact of any kind with L.D.W. — no visits, no phone calls, no video calls, no communication whatsoever. As of the date of this affidavit, I have been separated from my child for more than 230 consecutive days.
 
-97\. On or about September 5, 2025, I completed a HealthWest evaluation (H0002) as ordered by the Court. The evaluation was favorable to me. I possess six (6) scanned HealthWest documents confirming the favorable results, across two evaluation categories.
+97\. On **September 4, 2025**, I completed the first HealthWest evaluation as ordered by the Court. The evaluators were Michelle R. Mitchell (BS, QIDP, QMHP) and Melissa DeAugustine (LBSW). The evaluation was favorable to me — finding a clean baseline, no major concerns, and a safe environment. I stated during the evaluation: "I don't feel unsafe, or threatened." Seven days later, on **September 11, 2025**, a second evaluation was conducted by Kassandra M. Gansen (LMSW) and DeAugustine (LBSW). This second evaluation produced a "Rule-out Delusional Disorder" notation — which is a diagnostic uncertainty, not a confirmed diagnosis. The second evaluator herself admitted it was "difficult to definitively assert whether concerns are factual or delusional." My statements about the legal proceedings being "illegal" were characterized as delusional, despite the documented procedural irregularities I was describing. I possess six (6) scanned HealthWest documents confirming these results across both evaluations.
 
 98\. Despite the favorable evaluation, the Court did not restore any parenting time.
 
@@ -462,9 +574,9 @@ I, ANDREW JAMES PIGORS, being first duly sworn, depose and state as follows:
 
 100a\. Specifically, Emily A. Watson withheld L.D.W. from me for 39 consecutive days from March 28 through May 5, 2024, and again for 26 consecutive days from October 20 through November 15, 2024. She received no sanctions for either withholding episode. I served 59 days in jail for sending messages to my child through a court-approved application.
 
-100b\. I never completed a "second evaluation." I completed one (1) HealthWest evaluation (H0002, approximately September 5, 2025), which was favorable to me. I was never contacted about, scheduled for, or informed of any second evaluation. Any document purporting to be a second evaluation of me is unknown to me, was never shown to me, and I was never given an opportunity to review or respond to it.
+100b\. I did complete two HealthWest evaluations. The first evaluation (September 4, 2025), conducted by Michelle R. Mitchell (BS, QIDP, QMHP) and Melissa DeAugustine (LBSW), was favorable to me and found a clean baseline. The second evaluation (September 11, 2025), conducted by Kassandra M. Gansen (LMSW) and DeAugustine, produced a "Rule-out Delusional Disorder" notation just seven days after the clean baseline — a clinically implausible timeline. The second evaluator admitted she could not determine whether my concerns were factual or delusional. My statements criticizing the legal proceedings were characterized as delusional, yet the procedural irregularities I described are documented in the court record. I was never given the opportunity to review or respond to the second evaluation in a formal hearing. Upon information and belief, the second evaluation was directed to chambers via email rather than formally entered into the court record.
 
-101\. During a parenting exchange, Albert Watson (Emily's family member) threw PPO papers through my car window and physically took L.D.W. from my arms.
+101\. During a parenting exchange on or about October 20, 2024, Albert Watson (Emily's father) threw PPO papers through my car window and physically took L.D.W. from my arms. Emily was present or aware of this conduct. This incident precipitated a 26-day withholding period during which Emily denied me all access to L.D.W. in violation of the existing 50/50 order. Albert Watson has been a persistent source of intimidation and interference throughout these proceedings. Additionally, Lori Watson (Emily's mother, Kent County employee) secretly recorded a phone call between me and Albert Watson on August 7, 2025, which was used as the foundation for the emergency ex parte motion that resulted in the suspension of my parenting time. I did not consent to this recording.
 
 102\. As a consequence of these proceedings, I spent 59 days in jail for PPO violations (guilty plea, October 18, 2025) and lost two jobs.
 
@@ -493,7 +605,7 @@ My commission expires: ______________
 
 ---
 
-## IX. PROPOSED ORDER
+## X. PROPOSED ORDER
 
 ```
 STATE OF MICHIGAN
@@ -552,7 +664,7 @@ Date: _______________________
 
 ---
 
-## X. CERTIFICATE OF SERVICE
+## XI. CERTIFICATE OF SERVICE
 
 I, ANDREW JAMES PIGORS, hereby certify that on the _____ day of ______________, 2026, I served a true and correct copy of the foregoing **Motion to Modify Custody and Parenting Time**, together with all supporting documents, upon the following:
 
@@ -593,7 +705,7 @@ Pro Per Plaintiff
 
 ---
 
-## XI. VERIFICATION
+## XII. VERIFICATION
 
 ```
 STATE OF MICHIGAN   )
@@ -616,7 +728,7 @@ Date: ______________________
 
 ---
 
-## XII. EXHIBIT LIST
+## XIII. EXHIBIT LIST
 
 The following exhibits are referenced in this Motion and will be filed with the Court:
 
@@ -625,17 +737,26 @@ The following exhibits are referenced in this Motion and will be filed with the 
 | **Exhibit A** | 50/50 Parenting Time Order (entered on or about May 5, 2024) |
 | **Exhibit B** | Ex Parte Order of July 17, 2025 (reversing custody without hearing) |
 | **Exhibit C** | Order of August 8, 2025 (suspending all parenting time) |
-| **Exhibit D** | HealthWest Evaluation Documents — First Evaluation (scanned, 3 documents) |
-| **Exhibit E** | HealthWest Evaluation Documents — Second Evaluation (scanned, 3 documents) |
+| **Exhibit D** | HealthWest First Evaluation Documents (September 4, 2025 — Mitchell/DeAugustine) (scanned, 3 documents) |
+| **Exhibit E** | HealthWest Second Evaluation Documents (September 11, 2025 — Gansen/DeAugustine) (scanned, 3 documents) |
 | **Exhibit F** | Calendar/Timeline showing 438 days of successful 50/50 custody |
 | **Exhibit G** | Calendar/Timeline showing 230+ days of zero contact |
-| **Exhibit H** | Documentation of Albert Watson incident at parenting exchange |
+| **Exhibit H** | Documentation of Albert Watson incident at parenting exchange (October 20, 2024 — forcible removal of L.D.W., PPO papers thrown through car window) |
 | **Exhibit I** | Father's stable housing documentation — 1977 Whitehall Road, Lot 17 |
 | **Exhibit J** | Filing #3 — Motion to Disqualify Judge McNeill (cross-reference) |
 | **Exhibit K** | Documentation of 39-day withholding period (March 28 – May 5, 2024) |
 | **Exhibit L** | Documentation of 26-day withholding period (October 20 – November 15, 2024) |
 | **Exhibit M** | Court order imposing $250 filing bond (access to courts violation) |
 | **Exhibit N** | August 8, 2025 Order — absence of clear and convincing evidence findings |
+| **Exhibit O** | Ex Parte Order of August 6, 2025 — no MCR 3.207(B)(1) specific facts |
+| **Exhibit P** | HealthWest Chart Memo (October 29, 2025) — Pamela Rusco contact with clinicians |
+| **Exhibit Q** | Timeline: 90-day delay from ex parte order (Aug 6) to evidentiary hearing (Oct 29) |
+| **Exhibit R** | Norton Shores Police Incident Report (NS2505044, August 7, 2025) — officer speculation re: "meth use" without drug testing |
+| **Exhibit S** | Lori Watson recording — obtained in apparent violation of MCL 750.539c (felony eavesdropping) |
+| **Exhibit T** | AppClose communication logs — birthday messages constituting PPO violations |
+| **Exhibit U** | Defendant's emergency ex parte motion (August 8, 2025) — omission of 438-day co-parenting history |
+| **Exhibit V** | Cross-examination testimony transcript — Cody Watson rent payments to Defendant |
+| **Exhibit W** | Watson family coordinated interference timeline and evidence compilation |
 
 ---
 
@@ -668,8 +789,8 @@ andrewjpigors@gmail.com
 | Defendant | Emily A. Watson |
 | Child | L.D.W. (DOB: Nov 9, 2022) |
 | Judge | [REPLACEMENT JUDGE — per pending Disqualification Motion, Filing #3] |
-| Statutes | MCL 722.23, MCL 722.24, MCL 722.27, MCL 722.27a |
-| Court Rules | MCR 2.003, MCR 2.108, MCR 3.210, MCR 3.211, MCR 8.119(H) |
-| Case Law | Vodvarka v Grasmeyer, 259 Mich App 499 (2003); Harvey v Harvey, 470 Mich 186 (2004); Pierron v Pierron, 486 Mich 81 (2010); Shade v Wright, 291 Mich App 17 (2010); Troxel v Granville, 530 US 57 (2000) |
+| Statutes | MCL 722.23, MCL 722.24, MCL 722.27, MCL 722.27a, MCL 750.539c, MCL 552.9f, MCL 691.1345 |
+| Court Rules | MCR 2.003, MCR 2.108, MCR 2.605, MCR 3.210, MCR 3.210(A)(4), MCR 3.211, MCR 3.222(D), MCR 8.119(H) |
+| Case Law | Vodvarka v Grasmeyer, 259 Mich App 499 (2003); Harvey v Harvey, 470 Mich 186 (2004); Pierron v Pierron, 486 Mich 81 (2010); Shade v Wright, 291 Mich App 17 (2010); Troxel v Granville, 530 US 57 (2000); Admiral Ins Co v Columbia Cas Ins Co, 194 Mich App 300 (1992); Early Detection Ctr v New York Life, 157 Mich App 618 (1986); People v Beavers, 393 Mich 554 (1975) |
 | Dependencies | Filing #3 (Disqualification) must be filed first |
 | Status | COURT-READY — requires signature, notarization, and exhibit assembly |

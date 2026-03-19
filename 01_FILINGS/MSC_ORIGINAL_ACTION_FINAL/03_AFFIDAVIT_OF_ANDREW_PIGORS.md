@@ -100,6 +100,24 @@ I, Andrew J. Pigors, being first duly sworn, depose and state as follows:
     - The court did not conduct an ability-to-pay hearing before imposing financial purge conditions, as required by *Turner v. Rogers*, 564 U.S. 431 (2011);
     - The contempt was punitive in nature, not coercive — the purge conditions were beyond my ability to meet, and the court was aware of this.
 
+13a. The Show Cause #5 hearing, which resulted in my first incarceration (14 days commencing November 15, 2025), was conducted as a **remote hearing**. During this hearing:
+
+    a. Judge McNeill ordered the stenographer to **mute my microphone three (3) separate times** while I was attempting to speak in my own defense;
+
+    b. I attempted to inform the court that I had filed a **police report** documenting my son L.D.W.'s **poor physical condition** at a parenting time exchange — evidence directly relevant to the show cause allegations and to my defense. Judge McNeill ordered my microphone muted each time I tried to present this information;
+
+    c. My appointed attorney, **Mandi Martini**, sat silently throughout the entire hearing. She did not object to the muting of my microphone. She did not object to the exclusion of the police report. She did not speak on my behalf at any point;
+
+    d. Prior to the hearing, Martini sent me a communication stating: *"you will not interrupt . . . Judge McNeil is not in a good mood . . . you do not want to spend the next week in jail on a contempt charge for speaking out in court."* My own attorney threatened me with additional incarceration for exercising my right to speak in my own defense;
+
+    e. The prosecutor handling Show Cause #5 privately admitted to Martini that there was **"nothing substantive in the motion"** — yet the court proceeded to jail me for 14 days;
+
+    f. The affidavit supporting Show Cause #5 contained a **blank page (page 27)** — the filing lacked complete factual allegations, yet the court incarcerated me on its basis;
+
+    g. Watson filed Show Cause #5 contemporaneously with removing L.D.W. from the country (October 20–November 15, 2025, with the court's permission), suggesting the show cause served as a tactical cover for the international removal of my son without my consent.
+
+13b. Separately, Watson's ex parte filings attributed to **Officer Ella Randall** (Norton Shores PD, Incident #NS2505044) the claim that my behavior appeared to be the result of "meth use." I filed a complaint with the police department, and **Officer Randall confirmed that the "meth use" statement originated from Emily Watson herself** — not from any independent police observation. Watson's filings falsely presented her own accusation as the professional opinion of a law enforcement officer. When I raised this misattribution before Judge McNeill, the court stated: **"quit nitpicking"** — refusing to address a material misrepresentation in a sworn filing that formed the basis for suspending my parental rights.
+
 14. The contrast in how the court has exercised its contempt power is stark: I was jailed for 59 days, while Watson's documented parenting time violations have resulted in zero consequences whatsoever.
 
 ---
@@ -124,10 +142,11 @@ I, Andrew J. Pigors, being first duly sworn, depose and state as follows:
 17. Based on my review of the court docket, a substantial number of proceedings in my case were conducted ex parte — without providing me notice or an opportunity to participate. Orders were entered affecting my parenting time, financial obligations, and custody rights without affording me any opportunity to be heard.
 
 18. The following specific ex parte proceedings occurred without proper notice to me:
-    - [ANDREW_REQUIRED: Date and description of ex parte proceeding 1]
-    - [ANDREW_REQUIRED: Date and description of ex parte proceeding 2]
-    - [ANDREW_REQUIRED: Date and description of ex parte proceeding 3]
-    - [ANDREW_REQUIRED: Additional ex parte proceedings as applicable]
+    - December 4, 2023: Personal Protection Order (Case No. 2023-5907-PP) filed and granted on the same day, ex parte, without notice to me and without an evidentiary hearing;
+    - July 17, 2025: Ex parte order overturning my established 50/50 custody arrangement (after 438 days of successful shared custody), granting Watson 100% custody without evidentiary hearing;
+    - July 29, 2025: Ex parte suspension of all parenting time based on Watson's false and exaggerated allegations, without hearing or notice;
+    - October 20, 2025: Court granted Watson permission to remove L.D.W. from the country without my knowledge or consent;
+    - Multiple additional orders modifying child support, parenting time, and custody terms were entered without providing me notice or an opportunity to respond.
 
 ---
 

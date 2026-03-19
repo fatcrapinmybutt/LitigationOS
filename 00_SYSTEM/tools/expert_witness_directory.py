@@ -1,0 +1,286 @@
+#!/usr/bin/env python3
+"""
+Tool #202: Expert Witness Directory
+=====================================
+Types of experts relevant to Pigors v. Watson across all 6 lanes.
+Covers custody evaluators, forensic psychologists, digital forensics,
+constitutional law professors, and child development specialists.
+
+NOVEL INNOVATION: Maps each expert type to specific filing needs,
+estimated costs, and whether IFP covers them.
+"""
+import json, os, sys
+from datetime import datetime
+
+sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace')
+
+REPORT_DIR = os.path.join(os.path.dirname(__file__), '..', 'reports')
+os.makedirs(REPORT_DIR, exist_ok=True)
+
+def build_expert_directory():
+    """Comprehensive expert witness directory mapped to case needs."""
+    
+    directory = {
+        "tool_id": 202,
+        "name": "Expert Witness Directory",
+        "generated": datetime.now().isoformat(),
+        "experts": [
+            {
+                "type": "Custody Evaluator (Best Interest)",
+                "relevance": "Lane A — Custody (2024-001507-DC)",
+                "purpose": "Evaluate parenting capacity, child attachment, home environment",
+                "qualifications": "Licensed psychologist, AFCC-certified, MI family law experience",
+                "what_they_assess": [
+                    "Parent-child bonding (both parents)",
+                    "Home environment safety and stability",
+                    "Each parent's willingness to foster relationship with other parent",
+                    "Child's adjustment to home, school, community",
+                    "Mental and physical health of all parties",
+                    "History of domestic violence or substance abuse"
+                ],
+                "filing_use": ["F1 Emergency Parenting Time", "F7 Custody Modification"],
+                "estimated_cost": "$3,000 - $10,000",
+                "ifp_coverage": "Court may appoint at county expense under MCL 552.505(1)(e)",
+                "how_to_retain": "Motion for Court-Appointed Custody Evaluator (MCR 3.210(C))",
+                "priority": "HIGH"
+            },
+            {
+                "type": "Child Psychologist / Therapist",
+                "relevance": "Lane A — Impact on L.D.W.",
+                "purpose": "Document psychological impact of parental alienation on child",
+                "qualifications": "Licensed child psychologist, attachment theory expertise",
+                "what_they_assess": [
+                    "Child's emotional state and attachment patterns",
+                    "Signs of parental alienation or coaching",
+                    "Developmental milestones (L.D.W. age 3 — critical period)",
+                    "Impact of separation from father on child wellbeing",
+                    "Recommendations for reunification timeline"
+                ],
+                "filing_use": ["F1 Emergency Parenting Time", "F7 Custody Modification", "F4 Federal §1983"],
+                "estimated_cost": "$150-300/session, evaluation $2,000-5,000",
+                "ifp_coverage": "May be covered under child's insurance or court order",
+                "how_to_retain": "Direct referral or court appointment",
+                "priority": "HIGH"
+            },
+            {
+                "type": "Forensic Psychologist (Alienation)",
+                "relevance": "Lane A — Documenting alienation pattern",
+                "purpose": "Expert testimony on parental alienation dynamics",
+                "qualifications": "PhD/PsyD with forensic specialization, alienation research",
+                "what_they_assess": [
+                    "8 symptoms of parental alienation (Gardner/Warshak criteria)",
+                    "Alienating parent behaviors (Emily's documented pattern)",
+                    "Gatekeeper parent identification",
+                    "Child's resistance to relationship with targeted parent",
+                    "Recommendations for court intervention"
+                ],
+                "filing_use": ["F1 Emergency", "F4 Federal §1983", "F7 Custody Modification"],
+                "estimated_cost": "$5,000 - $15,000 (evaluation + testimony)",
+                "ifp_coverage": "Court appointment possible — argue constitutional right to present defense",
+                "how_to_retain": "Specialized referral — Michigan PA organizations",
+                "priority": "MEDIUM"
+            },
+            {
+                "type": "Digital Forensics Expert",
+                "relevance": "Lane A/E — Communication evidence authentication",
+                "purpose": "Authenticate text messages, emails, social media evidence",
+                "qualifications": "Certified digital forensic examiner (EnCase, FTK certified)",
+                "what_they_assess": [
+                    "Metadata integrity of electronic communications",
+                    "Text message extraction and chain of custody",
+                    "Social media post authentication",
+                    "Email header analysis (verify sender)",
+                    "Screenshot vs. original data verification"
+                ],
+                "filing_use": ["F2 Fraud Motion", "F4 Federal §1983", "Any evidence authentication challenge"],
+                "estimated_cost": "$2,000 - $8,000",
+                "ifp_coverage": "Unlikely covered — but critical for evidence authentication",
+                "how_to_retain": "Michigan Association of Digital Forensics professionals",
+                "priority": "MEDIUM"
+            },
+            {
+                "type": "Constitutional Law Professor",
+                "relevance": "Lane A/E/F — Due process, §1983, judicial misconduct",
+                "purpose": "Expert testimony on constitutional violations in family court",
+                "qualifications": "Law professor, constitutional law specialty, published on family law due process",
+                "what_they_assess": [
+                    "14th Amendment due process violations in custody proceedings",
+                    "First Amendment right to petition (access to courts)",
+                    "Equal protection violations (pro se vs. represented litigant)",
+                    "§1983 liability framework for judicial actors",
+                    "Patterns of systematic due process denial"
+                ],
+                "filing_use": ["F3 Disqualification", "F4 Federal §1983", "F8 COA Leave", "F5 MSC Application"],
+                "estimated_cost": "$300-500/hour consultation, may testify pro bono for significant case",
+                "ifp_coverage": "Some may consult pro bono for impactful constitutional cases",
+                "how_to_retain": "WMU Cooley, U of M, MSU Law — constitutional law faculty",
+                "priority": "HIGH"
+            },
+            {
+                "type": "Family Law Attorney (Consulting)",
+                "relevance": "All Lanes — Strategic guidance",
+                "purpose": "Limited-scope representation or consulting on pro se filings",
+                "qualifications": "Michigan licensed, family law specialist, pro se assistance experience",
+                "what_they_assess": [
+                    "Filing compliance review (MCR formatting, content)",
+                    "Strategic filing sequence guidance",
+                    "Discovery strategy for pro se litigant",
+                    "Court appearance preparation",
+                    "Settlement negotiation parameters"
+                ],
+                "filing_use": ["ALL filings — review before submission"],
+                "estimated_cost": "$200-400/hour, many offer unbundled services",
+                "ifp_coverage": "Legal aid organizations may provide free limited consultation",
+                "how_to_retain": "Michigan State Bar Lawyer Referral Service, Legal Aid of Western Michigan",
+                "priority": "HIGH"
+            },
+            {
+                "type": "Guardian ad Litem (GAL)",
+                "relevance": "Lane A — Child's independent representation",
+                "purpose": "Represent L.D.W.'s independent interests in custody proceedings",
+                "qualifications": "Michigan licensed attorney, GAL training per MCR 3.917(A)",
+                "what_they_assess": [
+                    "Independent investigation of child's circumstances",
+                    "Both homes, both parents, relevant third parties",
+                    "Child's stated preferences (age-appropriate)",
+                    "Recommendations to court on custody/parenting time",
+                    "Monitoring compliance with court orders"
+                ],
+                "filing_use": ["F1 Emergency", "F7 Custody Modification"],
+                "estimated_cost": "Court-appointed — county pays or split between parties",
+                "ifp_coverage": "YES — court appoints and covers cost",
+                "how_to_retain": "Motion to Appoint Guardian ad Litem (MCL 722.24)",
+                "priority": "CRITICAL"
+            },
+            {
+                "type": "Housing Inspector / Code Enforcement",
+                "relevance": "Lane B — Shady Oaks Housing (2025-002760-CZ)",
+                "purpose": "Document housing code violations at defendant's residence",
+                "qualifications": "Certified housing inspector, familiar with MI building codes",
+                "what_they_assess": [
+                    "Building code compliance",
+                    "Safety hazards (electrical, structural, environmental)",
+                    "Habitability standards for children",
+                    "Lead paint / mold / asbestos testing",
+                    "ADA compliance issues"
+                ],
+                "filing_use": ["F7 Custody Modification (home environment)", "Lane B housing case"],
+                "estimated_cost": "$300-800 per inspection",
+                "ifp_coverage": "City/county inspection may be free — file complaint with code enforcement",
+                "how_to_retain": "Contact Norton Shores Building Dept or hire private inspector",
+                "priority": "LOW"
+            },
+            {
+                "type": "Judicial Conduct Expert",
+                "relevance": "Lane E — JTC Complaint against McNeill",
+                "purpose": "Expert analysis of judicial conduct violations",
+                "qualifications": "Retired judge, judicial ethics professor, or former JTC staff",
+                "what_they_assess": [
+                    "Canon violations (Michigan Code of Judicial Conduct)",
+                    "Pattern of bias in rulings and orders",
+                    "Ex parte communication violations",
+                    "Due process deprivation by judicial officer",
+                    "Comparison to JTC precedent complaints"
+                ],
+                "filing_use": ["F6 JTC Complaint", "F3 Disqualification Motion"],
+                "estimated_cost": "$200-500/hour, may consult on significant misconduct cases",
+                "ifp_coverage": "JTC complaint is FREE — no expert technically required",
+                "how_to_retain": "Michigan Judicial Institute contacts, retired judges",
+                "priority": "MEDIUM"
+            },
+            {
+                "type": "Domestic Violence / Coercive Control Expert",
+                "relevance": "Lane D — PPO considerations",
+                "purpose": "Assess patterns of coercive control in co-parenting dynamic",
+                "qualifications": "Licensed social worker or psychologist with DV specialization",
+                "what_they_assess": [
+                    "Coercive control tactics (financial, emotional, legal)",
+                    "Weaponization of court system against targeted parent",
+                    "Impact of false allegations on accused parent",
+                    "Berry's role in facilitating control patterns",
+                    "Safety planning recommendations"
+                ],
+                "filing_use": ["F4 Federal §1983", "F7 Custody Modification"],
+                "estimated_cost": "$1,500 - $5,000 evaluation",
+                "ifp_coverage": "DV organizations may provide free assessments",
+                "how_to_retain": "Every Woman's Place (Muskegon), MI Coalition Against DV",
+                "priority": "MEDIUM"
+            }
+        ],
+        "free_resources": [
+            {"name": "Legal Aid of Western Michigan", "phone": "(231) 726-4831", "service": "Free family law consultation for qualifying income"},
+            {"name": "Michigan State Bar Lawyer Referral", "phone": "(800) 968-0738", "service": "30-minute consultation for $50"},
+            {"name": "WMU Cooley Law School Clinic", "phone": "(517) 371-5140", "service": "Free legal assistance from supervised law students"},
+            {"name": "Michigan Legal Help", "url": "michiganlegalhelp.org", "service": "Free self-help resources and document assembly"},
+            {"name": "Muskegon County FOC", "phone": "(231) 724-6200", "service": "Free mediation and parenting time enforcement"},
+        ],
+        "retention_strategy": {
+            "phase_1": "Consult family law attorney for filing review ($200-400)",
+            "phase_2": "Motion for GAL appointment (FREE — court appoints)",
+            "phase_3": "Motion for custody evaluation (may be court-funded under IFP)",
+            "phase_4": "Constitutional law professor consultation (may be pro bono for significant case)",
+            "priority_order": "GAL → Custody Evaluator → Family Law Consultant → Constitutional Expert"
+        }
+    }
+    
+    directory['total_expert_types'] = len(directory['experts'])
+    directory['total_free_resources'] = len(directory['free_resources'])
+    high_priority = sum(1 for e in directory['experts'] if e['priority'] in ('HIGH', 'CRITICAL'))
+    directory['high_priority_count'] = high_priority
+    
+    return directory
+
+def main():
+    print("=" * 60)
+    print("TOOL #202: EXPERT WITNESS DIRECTORY")
+    print("=" * 60)
+    
+    directory = build_expert_directory()
+    
+    json_path = os.path.join(REPORT_DIR, 'EXPERT_WITNESS_DIRECTORY.json')
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(directory, f, indent=2, ensure_ascii=False)
+    
+    md_path = os.path.join(REPORT_DIR, 'EXPERT_WITNESS_DIRECTORY.md')
+    with open(md_path, 'w', encoding='utf-8') as f:
+        f.write("# 🎓 Expert Witness Directory (Tool #202)\n\n")
+        f.write(f"Generated: {directory['generated']}\n\n")
+        f.write(f"**{directory['total_expert_types']} Expert Types** | ")
+        f.write(f"**{directory['high_priority_count']} High/Critical Priority** | ")
+        f.write(f"**{directory['total_free_resources']} Free Resources**\n\n")
+        
+        for expert in directory['experts']:
+            priority_emoji = {"CRITICAL": "🔴", "HIGH": "🟠", "MEDIUM": "🟡", "LOW": "🟢"}.get(expert['priority'], "⚪")
+            f.write(f"## {priority_emoji} {expert['type']}\n\n")
+            f.write(f"**Relevance**: {expert['relevance']}\n")
+            f.write(f"**Purpose**: {expert['purpose']}\n")
+            f.write(f"**Cost**: {expert['estimated_cost']}\n")
+            f.write(f"**IFP**: {expert['ifp_coverage']}\n")
+            f.write(f"**How to Retain**: {expert['how_to_retain']}\n\n")
+            f.write("**What They Assess:**\n")
+            for item in expert['what_they_assess']:
+                f.write(f"- {item}\n")
+            f.write(f"\n**Filing Use**: {', '.join(expert['filing_use'])}\n\n---\n\n")
+        
+        f.write("## 🆓 Free Resources\n\n")
+        for res in directory['free_resources']:
+            f.write(f"- **{res['name']}**")
+            if 'phone' in res:
+                f.write(f" — {res['phone']}")
+            if 'url' in res:
+                f.write(f" — {res['url']}")
+            f.write(f" — {res['service']}\n")
+        
+        f.write(f"\n## 📋 Retention Strategy\n\n")
+        for phase, desc in directory['retention_strategy'].items():
+            f.write(f"- **{phase.replace('_', ' ').title()}**: {desc}\n")
+    
+    print(f"\n✅ Expert Witness Directory generated")
+    print(f"   Expert types: {directory['total_expert_types']}")
+    print(f"   High priority: {directory['high_priority_count']}")
+    print(f"   Free resources: {directory['total_free_resources']}")
+    print(f"   Reports: {md_path}")
+    return directory
+
+if __name__ == '__main__':
+    main()

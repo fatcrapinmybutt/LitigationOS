@@ -1,11 +1,23 @@
 ---
 name: multi-agent-brainstorming
-description: >
-  Use this skill when a design or idea requires higher confidence,
-  risk reduction, or formal review. This skill orchestrates a
-  structured, sequential multi-agent design review where each agent
-  has a strict, non-overlapping role. It prevents blind spots,
-  false confidence, and premature convergence.
+description: "Use when a design requires multi-perspective validation through structured, sequential multi-agent review with enforced roles. Orchestrates Designer, Skeptic, Constraint Guardian, User Advocate, and Integrator agents to prevent blind spots, false confidence, and premature convergence."
+version: "2.0.0"
+category: discipline
+triggers:
+  - multi-agent review
+  - design validation
+  - peer review orchestration
+  - high-stakes design
+lanes:
+  - "A: Watson/Custody (2024-001507-DC)"
+  - "B: Shady Oaks/Housing (2025-002760-CZ)"
+  - "C: Federal §1983 (USDC WDMI)"
+  - "D: PPO (2023-5907-PP)"
+  - "E: Judicial Misconduct/JTC"
+  - "F: Appellate (COA 366810)"
+court: "14th Judicial Circuit, Muskegon County"
+case: "Pigors v Watson"
+dependencies: []
 ---
 
 # Multi-Agent Brainstorming (Structured Design Review)
@@ -253,4 +265,65 @@ This skill exists to answer one question with confidence:
 > “If this design fails, did we do everything reasonable to catch it early?”
 
 If the answer is unclear, **do not exit this skill**.
+
+---
+
+## Decision Tree
+
+```
+ENTRY: Multi-agent review requested
+│
+├─ Q1: Is there a completed design from the brainstorming skill?
+│   ├─ NO → REJECT: Return to brainstorming skill first
+│   └─ YES → Proceed to Phase 1
+│
+├─ PHASE 1: Single-Agent Design Validation
+│   ├─ Step 1: Verify Understanding Lock was completed
+│   ├─ Step 2: Verify Decision Log exists
+│   ├─ Step 3: Confirm design document is complete
+│   └─ GATE: All 3 verified? → Proceed to Phase 2
+│
+├─ PHASE 2: Structured Review Loop
+│   ├─ Pre-flight: list_agents → running count < 2 (leave budget for reviewers)
+│   ├─ Step 1: Spawn Skeptic agent → read_agent → cache to SQL
+│   ├─ Step 2: Spawn Guardian agent (with Skeptic findings) → read → cache
+│   ├─ Step 3: Spawn Advocate agent (with all prior findings) → read → cache
+│   └─ GATE: All 3 reviewers completed? → Proceed to Phase 3
+│
+├─ PHASE 3: Integration & Arbitration
+│   ├─ Step 1: Compile consolidated feedback from all reviewers
+│   ├─ Step 2: Spawn Integrator with design + ALL feedback
+│   ├─ Step 3: Integrator resolves conflicts and declares disposition
+│   └─ GATE: Disposition declared? → Output
+│
+└─ OUTPUT: Final disposition (APPROVED / REVISE / REJECT)
+    ├─ APPROVED → Proceed to implementation
+    ├─ REVISE → Return design to Designer with specific revision requirements
+    └─ REJECT → Return to brainstorming skill with rejection rationale
+```
+
+---
+
+## Output Contract
+
+```yaml
+output:
+  type: enum [review_disposition]
+  format: markdown
+  required_fields:
+    - disposition: enum [APPROVED, REVISE, REJECT]
+    - rationale: string
+    - decision_log: list[{decision, alternatives, objections, resolution}]
+    - reviewer_findings:
+        skeptic: list[string]
+        guardian: list[string]
+        advocate: list[string]
+    - integrator_resolutions: list[{objection, accepted_or_rejected, rationale}]
+  quality_gates:
+    - all_reviewers_invoked: boolean
+    - all_objections_resolved: boolean
+    - decision_log_complete: boolean
+    - arbiter_declared: boolean
+    - results_checkpointed: boolean
+```
 

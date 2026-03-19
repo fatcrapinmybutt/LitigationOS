@@ -330,7 +330,13 @@ Barnes Law Firm PLLC, 880 Jefferson St, Ste B, Muskegon, MI 49440
    - **(a)** Petitioner was jailed for **59 days** on civil contempt — a duration far exceeding what is necessary or permissible for coercive purposes;
    - **(b)** Petitioner was not provided counsel at contempt proceedings despite the threat of incarceration, in violation of the right to counsel recognized in *Mead v Batchlor*, 435 Mich 480, 490 (1990), and *Turner v Rogers*, 564 US 431, 442–43 (2011);
    - **(c)** Purge conditions included financial requirements that Petitioner, an indigent pro se litigant, could not satisfy;
-   - **(d)** The contempt was used punitively rather than coercively, in violation of the fundamental distinction between civil and criminal contempt. *In re Contempt of Dougherty*, 429 Mich 81, 96–97 (1987); *In re Contempt of Henry*, 282 Mich App 656, 668 (2009).
+   - **(d)** The contempt was used punitively rather than coercively, in violation of the fundamental distinction between civil and criminal contempt. *In re Contempt of Dougherty*, 429 Mich 81, 96–97 (1987); *In re Contempt of Henry*, 282 Mich App 656, 668 (2009);
+   - **(e)** During Show Cause #5 — conducted as a **remote hearing** — Judge McNeill ordered the stenographer to **mute Petitioner's microphone three (3) separate times**, preventing Petitioner from presenting his defense. Petitioner attempted to inform the court that he had filed a police report documenting his son's poor physical condition at a parenting time exchange — evidence directly relevant to the show cause allegations — but was silenced each time. The court's deliberate suppression of Petitioner's testimony during a proceeding that resulted in 14 days' incarceration constitutes a denial of the fundamental right to be heard;
+   - **(f)** Petitioner's appointed attorney, Mandi Martini, **sat silently throughout the Show Cause #5 hearing and raised no objections** — not to the muting, not to the exclusion of the police report, not to the denial of Petitioner's right to present a defense. A communication from Martini to Petitioner prior to the hearing stated: *"you will not interrupt . . . Judge McNeil is not in a good mood . . . you do not want to spend the next week in jail on a contempt charge for speaking out in court"* — revealing that Petitioner's own counsel threatened him with additional incarceration for exercising his right to be heard;
+   - **(g)** The prosecutor handling Show Cause #5 privately admitted to Martini that there was **"nothing substantive in the motion"** — meaning the state's own representative acknowledged the meritless nature of the proceeding that resulted in Petitioner's incarceration;
+   - **(h)** Watson's ex parte filings attributed to **Officer Ella Randall** (Norton Shores PD, Incident #NS2505044) the statement that Petitioner's behavior appeared to be the result of "meth use." However, when Petitioner filed a complaint with the police department, **Officer Randall confirmed that the "meth use" characterization originated from Emily Watson herself** — not from any independent police observation. Watson's filings **falsely presented her own accusation as the professional opinion of a law enforcement officer**. When Petitioner raised this misattribution before Judge McNeill, the court dismissed it, stating: **"quit nitpicking."** The court thus declined to address a material misrepresentation in a sworn filing — a misrepresentation that formed the evidentiary basis for the ex parte suspension of Petitioner's parental rights;
+
+   - **(i)** The affidavit supporting Show Cause #5 contained a **blank page (page 27)** — a fatal procedural defect under MCR 3.708(B), which requires that contempt proceedings be supported by factual allegations. A filing with a blank evidentiary page fails this threshold requirement, yet the court proceeded to incarcerate Petitioner nonetheless.
 
 24. As a direct result of incarceration, Petitioner lost **two (2) jobs** (including a USPS position), lost **two homes**, and suffered economic damages estimated to exceed **$82,250**. See Exhibit B (Contempt Damages Calculation).
 
@@ -402,7 +408,31 @@ Barnes Law Firm PLLC, 880 Jefferson St, Ste B, Muskegon, MI 49440
 
 38. Critically, **law enforcement itself has recognized this weaponization pattern.** In Police Report MU2422249, the responding officer assessed Watson's reports as having **"little credibility"** and noted that the reports **"appear weaponized"** — i.e., filed not for genuine safety concerns but as litigation tools. (See Appendix F-1.) Despite this law enforcement assessment directly undercutting the credibility of Watson's allegations, the trial court continued to credit Watson's narrative and restrict Petitioner's parenting time based on the very reports that police deemed incredible.
 
-38. The **308,704 total evidence quotes** in Petitioner's evidence database include **545 evidence quotes** specifically relating to parenting time — documenting the scope and persistence of Petitioner's efforts to maintain his relationship with his son, and Watson's documented interference with those efforts.
+38a. The **308,704 total evidence quotes** in Petitioner's evidence database include **545 evidence quotes** specifically relating to parenting time — documenting the scope and persistence of Petitioner's efforts to maintain his relationship with his son, and Watson's documented interference with those efforts.
+
+---
+
+#### PPO Weaponization as a Custody Tool
+
+38b. The Personal Protection Order (Case No. 2023-5907-PP) has been systematically weaponized as a custody tool. The documented pattern includes:
+
+   - **(a)** The PPO was **filed and granted on the same day** — December 4, 2023 — on an ex parte basis, without notice to Petitioner and without an evidentiary hearing. This same-day issuance denied Petitioner any opportunity to contest the allegations before the order took effect;
+
+   - **(b)** Watson and her family members filed **six (6) show cause motions** strategically timed around holidays, custody exchanges, and Petitioner's exercise of parental rights — a pattern consistent with tactical litigation abuse rather than genuine safety concerns;
+
+   - **(c)** Watson's brother, **Cody Watson**, violated the PPO himself — as documented in **Police Report MCSD-2024-02101** (Officer Brian Hintz, reporting) — yet the court took **no enforcement action** against the Watson family for their PPO violations while simultaneously jailing Petitioner;
+
+   - **(d)** Watson's father, **Albert Watson**, forcibly removed L.D.W. from Petitioner's care and improperly served PPO documents — conduct documented in police records and witness statements;
+
+   - **(e)** A court transcript reveals that Judge McNeill explicitly ordered **"no communication, no texts, no anything"** between the parties and their families regarding the PPO. Watson agreed on the record — *"fine with me"* — yet Albert Watson continued to attend exchanges and Cody Watson continued to violate the order without consequence;
+
+   - **(f)** Watson accessed Petitioner's **medical records seven (7) times** through the Corewell Health patient portal between February and March 2024 — an invasion of medical privacy that the court has never addressed;
+
+   - **(g)** Watson committed at least **three (3) documented PPO violations through third-party proxies**: (1) Cody Watson's threats documented in Police Report MCSD-2024-02101; (2) Cody Watson's continued presence at exchanges in defiance of the court's "no contact" order; and (3) Tamara Snider's stalking of Petitioner on the Nextdoor social media platform as a third-party proxy for Watson;
+
+   - **(h)** Petitioner's **parenting time was reduced from 182.5 days per year** (50/50 custody) **to 78 days per year** through the combined weaponization of the PPO and show cause proceedings — a 57% reduction accomplished without any best interest analysis under MCL 722.23;
+
+   - **(i)** Watson's **unreported income** — including rental payments from Cody Watson and child support payments from Austin Muratori for another child — was never disclosed to the court or factored into the child support calculation, despite Watson's obligation to report all income sources. Watson's employer, Shape Corp, made **nine (9) insurance payments of $95 each ($855 total)** for health, dental, and vision coverage that were not credited against Petitioner's support obligation.
 
 ---
 

@@ -1,6 +1,24 @@
 ---
 name: context-memory-omega
-description: "ELITE context & memory management — fusion of 15 context/memory skills. Covers context window optimization, compression, degradation, fundamentals, session memory, agent memory, persistent memory, retrieval, and conversation continuity."
+description: "Use when managing context windows, memory systems, session recall, checkpointing, or cross-session knowledge persistence. ELITE context & memory management — fusion of 15 context/memory skills covering context optimization, compression, degradation, session memory, agent memory, persistent memory, retrieval, and conversation continuity."
+version: "2.0.0"
+category: discipline
+triggers:
+  - context window
+  - memory management
+  - session recall
+  - checkpointing
+  - cross-session persistence
+lanes:
+  - "A: Watson/Custody (2024-001507-DC)"
+  - "B: Shady Oaks/Housing (2025-002760-CZ)"
+  - "C: Federal §1983 (USDC WDMI)"
+  - "D: PPO (2023-5907-PP)"
+  - "E: Judicial Misconduct/JTC"
+  - "F: Appellate (COA 366810)"
+court: "14th Judicial Circuit, Muskegon County"
+case: "Pigors v Watson"
+dependencies: []
 metadata:
   model: opus
   forged_from: 15
@@ -235,3 +253,65 @@ Solution: Keep artifacts focused on decisions that affect AI behavior and team a
 ## §8. Context-Driven Development
 
 > using context effectively for code generation/review
+
+---
+
+## Decision Tree
+
+```
+ENTRY: Context/Memory task received
+│
+├─ Q1: What type of memory operation?
+│   ├─ STORE → BRANCH A (Persistence)
+│   ├─ RETRIEVE → BRANCH B (Recall)
+│   ├─ OPTIMIZE → BRANCH C (Window Management)
+│   └─ DIAGNOSE → BRANCH D (Staleness/Drift)
+│
+├─ BRANCH A: Persistence
+│   ├─ Step 1: Is the fact session-specific or permanent?
+│   │   ├─ Session-specific → Use session SQL (todos, custom tables)
+│   │   └─ Permanent → Use store_memory (cross-session)
+│   ├─ Step 2: Verify fact meets storage criteria (actionable, stable, non-obvious)
+│   ├─ Step 3: Check for existing duplicate memories on same topic
+│   └─ OUTPUT: Stored fact with citation, or skip if duplicate/low-value
+│
+├─ BRANCH B: Recall
+│   ├─ Step 1: Check live source first (DB query, file read)
+│   ├─ Step 2: Check session SQL for cached results
+│   ├─ Step 3: Check store_memory for cross-session facts
+│   ├─ Step 4: Check session_store for historical patterns
+│   └─ OUTPUT: Verified data with source attribution
+│
+├─ BRANCH C: Window Management
+│   ├─ Step 1: Assess current context utilization
+│   ├─ Step 2: Identify compressible content (completed tasks, old tool outputs)
+│   ├─ Step 3: Move large data to session SQL or temp files
+│   ├─ Step 4: Summarize completed sub-tasks to 1-2 sentences
+│   └─ OUTPUT: Freed context window capacity
+│
+└─ BRANCH D: Staleness Detection
+    ├─ Step 1: Identify memories with time-sensitive content (DB stats, file paths)
+    ├─ Step 2: Verify each against live source
+    ├─ Step 3: Flag stale memories (cannot delete, store superseding fact)
+    └─ OUTPUT: Staleness report with recommended superseding actions
+```
+
+---
+
+## Output Contract
+
+```yaml
+output:
+  type: enum [memory_operation, context_report, optimization_action, staleness_audit]
+  format: markdown
+  required_fields:
+    - summary: string
+    - memory_system_used: enum [session_sql, store_memory, agent_memory_mcp, session_store]
+    - action_taken: string
+    - verification_status: enum [verified, unverified, stale]
+  quality_gates:
+    - no_stale_data: boolean
+    - sources_cited: boolean
+    - live_source_checked: boolean
+    - context_budget_respected: boolean
+```

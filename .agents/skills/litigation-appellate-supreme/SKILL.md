@@ -1,6 +1,31 @@
 ---
 name: litigation-appellate-supreme
-description: "ELITE appellate mastery — fusion of 10 appellate/judicial skills. Covers appellate strategy, record preparation, appeal briefs, supreme court architecture, void judgments, judicial analysis, recusal engines, trial preparation, venue transfer, and jury instructions. Michigan COA/MSC focused."
+description: "Use when handling appellate matters — appeal briefs, standards of review, record preparation, claim of appeal, MSC applications, void judgments, judicial recusal, trial preparation for appeal preservation, venue transfer, and jury instructions. Michigan COA/MSC focused (Pigors v Watson, COA 366810)."
+category: discipline
+version: "2.0.0"
+triggers:
+  - appeal
+  - appellate
+  - COA
+  - MSC
+  - standard of review
+  - claim of appeal
+  - brief
+  - void judgment
+  - recusal
+  - disqualification
+  - MCR 7.200
+  - MCR 7.300
+lanes:
+  - "A: Watson/Custody (2024-001507-DC)"
+  - "B: Shady Oaks/Housing (2025-002760-CZ)"
+  - "C: Federal §1983 (USDC WDMI)"
+  - "D: PPO (2023-5907-PP)"
+  - "E: Judicial Misconduct/JTC"
+  - "F: Appellate (COA 366810)"
+court: "14th Judicial Circuit, Muskegon County; Michigan COA; Michigan Supreme Court"
+case: Pigors v Watson
+dependencies: []
 metadata:
   model: opus
   forged_from: 10
@@ -1342,4 +1367,85 @@ After each use of this skill:
 3. Update lane-specific intelligence if new orders/events occurred
 4. Cross-reference findings with contradiction_map for consistency
 5. Feed results to litigation-red-team for adversarial validation
+```
+
+---
+
+## Decision Tree
+
+```
+ENTRY: Appellate task received
+│
+├─ Q1: What stage of appellate process?
+│   ├─ Pre-appeal (trial level) → BRANCH A: Issue Preservation & Trial Prep
+│   ├─ Filing the appeal → BRANCH B: Claim of Appeal / Leave Application
+│   ├─ Briefing → BRANCH C: Appellate Brief Writing
+│   ├─ Judicial challenge → BRANCH D: Recusal / Disqualification
+│   └─ Post-decision → BRANCH E: MSC Application / Rehearing
+│
+├─ BRANCH A: Issue Preservation & Trial Prep
+│   ├─ Step 1: Identify all issues to preserve for appeal
+│   ├─ Step 2: Ensure contemporaneous objection on the record for each issue
+│   ├─ Step 3: Request specific findings from trial court on contested issues
+│   ├─ Step 4: Document transcript page/line for each preservation point
+│   └─ OUTPUT: Preservation checklist with record citations
+│
+├─ BRANCH B: Claim of Appeal / Leave Application
+│   ├─ Step 1: Determine appeal type — right (MCR 7.203) vs leave (MCR 7.205)
+│   ├─ Step 2: Calculate jurisdictional deadline (21 days — NO EXTENSIONS)
+│   ├─ Step 3: Order transcripts within 14 days (MCR 7.210(B)(1))
+│   ├─ Step 4: Prepare claim of appeal / application with required components
+│   ├─ Step 5: File via TrueFiling with proper fee or fee waiver
+│   └─ OUTPUT: Filed claim of appeal with transcript order and docket statement
+│
+├─ BRANCH C: Appellate Brief Writing
+│   ├─ Step 1: Identify standard of review for each issue (use standards matrix)
+│   ├─ Step 2: Select 3-5 strongest issues — do NOT raise every possible issue
+│   ├─ Step 3: Draft required sections per MCR 7.212(D) in order
+│   ├─ Step 4: Verify all citations and address adverse authority
+│   ├─ Step 5: Prepare appendix per MCR 7.212(C) — relevant portions only
+│   ├─ Step 6: Check page limits (50 pages brief, appendix separate)
+│   └─ OUTPUT: Complete appellate brief with appendix, ready for TrueFiling
+│
+├─ BRANCH D: Recusal / Disqualification
+│   ├─ Step 1: Identify grounds under MCR 2.003(C)
+│   ├─ Step 2: Gather evidence of bias from DB (judicial_violations table)
+│   ├─ Step 3: File motion for disqualification within 14 days of discovery
+│   ├─ Step 4: If denied — mandamus to COA (MCR 3.302)
+│   └─ OUTPUT: Disqualification motion or mandamus petition
+│
+└─ BRANCH E: MSC Application / Rehearing
+    ├─ Step 1: Calculate 42-day deadline from COA decision (MCR 7.305(C)(2))
+    ├─ Step 2: Identify grounds for MSC review (conflict, public interest, clarity)
+    ├─ Step 3: Draft application within 50-page limit
+    ├─ Step 4: Include COA opinion and trial court order in appendix
+    └─ OUTPUT: Application for leave to appeal to MSC
+```
+
+---
+
+## Output Contract
+
+```yaml
+output:
+  type: enum [brief, claim_of_appeal, leave_application, motion, preservation_checklist, analysis]
+  format: markdown
+  required_fields:
+    - summary: string
+    - citations: list[string]  # verified only
+    - confidence: float  # 0.0-1.0
+    - lane: enum [A, B, C, D, E, F]
+    - case_number: string
+    - standard_of_review: string  # must be stated for each issue
+    - preservation_status: enum [preserved, unpreserved_plain_error, structural_error]
+    - deadline: string  # jurisdictional deadline with date
+  quality_gates:
+    - all_citations_verified: boolean
+    - no_hallucinated_names: boolean
+    - db_first_confirmed: boolean
+    - traceable_statistics: boolean
+    - correct_standard_of_review: boolean
+    - issues_preserved_below: boolean
+    - page_limits_respected: boolean
+    - appendix_complete: boolean
 ```

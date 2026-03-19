@@ -1,6 +1,24 @@
 ---
 name: ELITE_SKILLSET
-description: "OMEGA-class fusion of 27 elite skills — agent architecture, litigation intelligence, evidence engineering, performance optimization, prompt mastery, and autonomous execution. The most powerful skill in this repository. Invoke for ANY complex task requiring multi-domain expertise."
+description: "Use when a task spans 3+ domains simultaneously — agent architecture, litigation intelligence, evidence engineering, performance optimization, prompt mastery, and autonomous execution. OMEGA-class fusion of 27 elite skills. The most powerful skill in this repository."
+category: discipline
+version: "2.0.0"
+triggers:
+  - cross-domain
+  - multi-skill
+  - elite
+  - complex-task
+  - full-stack-litigation
+lanes:
+  - "A: Watson/Custody (2024-001507-DC)"
+  - "B: Shady Oaks/Housing (2025-002760-CZ)"
+  - "C: Federal §1983 (USDC WDMI)"
+  - "D: PPO (2023-5907-PP)"
+  - "E: Judicial Misconduct/JTC"
+  - "F: Appellate (COA 366810)"
+court: "14th Judicial Circuit, Muskegon County"
+case: "Pigors v Watson"
+dependencies: []
 ---
 
 # ELITE_SKILLSET — Ω-Class Unified Intelligence
@@ -18,6 +36,64 @@ Use this skill when:
 - Optimizing database queries, prompts, or system performance
 - Executing complex multi-step tasks requiring planning + execution + validation
 - Any task that would normally require invoking 3+ individual skills
+
+## Decision Tree
+
+```
+ENTRY: Complex task received
+│
+├─ Q1: How many domains does this task span?
+│   ├─ 1 domain → Route to specific OMEGA skill (see selection matrix)
+│   ├─ 2 domains → Check if one OMEGA skill covers both; if not, ELITE
+│   └─ 3+ domains → ELITE_SKILLSET (this skill) ✓
+│
+├─ Q2: Is this primarily a litigation/filing task?
+│   ├─ YES → Route to OMEGA-LITIGATION-SUPREME instead
+│   └─ NO → Continue with ELITE_SKILLSET
+│
+├─ BRANCH A: Agent + Code + Data (cross-cutting engineering)
+│   ├─ Step 1: Design agent architecture (Domain 1)
+│   ├─ Step 2: Implement in Python (Domain 9 + Domain 1)
+│   ├─ Step 3: Optimize DB queries (Domain 4)
+│   └─ OUTPUT: Working agent with optimized data access
+│
+├─ BRANCH B: Evidence + Legal + Strategy (litigation intelligence)
+│   ├─ Step 1: Harvest and deduplicate evidence (Domain 5)
+│   ├─ Step 2: Analyze legal implications (Domain 6 + 7)
+│   ├─ Step 3: Generate strategy memo (Domain 7)
+│   └─ OUTPUT: Evidence-backed legal strategy document
+│
+├─ BRANCH C: Prompt + AI + Performance (optimization)
+│   ├─ Step 1: Profile current performance (Domain 4)
+│   ├─ Step 2: Optimize prompts/queries (Domain 3)
+│   ├─ Step 3: Validate improvements (Domain 2)
+│   └─ OUTPUT: Optimized system with measured improvements
+│
+└─ BRANCH D: Full pipeline (all domains)
+    ├─ Step 1: Plan and decompose (Domain 9)
+    ├─ Step 2: Execute per-domain work (Domains 1-8)
+    ├─ Step 3: Validate and converge (Domain 9)
+    └─ OUTPUT: Complete deliverable spanning all required domains
+```
+
+## Output Contract
+
+```yaml
+output:
+  type: enum [code, config, document, analysis, agent_design, strategy]
+  format: markdown_or_code
+  required_fields:
+    - summary: string           # What was accomplished
+    - domains_used: list[str]   # Which of the 9 domains were activated
+    - files_changed: list[str]  # All files created or modified
+    - quality_score: float      # 0.0-1.0 self-assessment
+  quality_gates:
+    - no_hallucinated_names: boolean    # Verified Party Identity table checked
+    - no_fabricated_stats: boolean      # All numbers traceable to DB queries
+    - eagain_compliant: boolean         # Max 2 shells + 3 agents respected
+    - db_first_before_placeholders: boolean  # DB queried before any placeholder
+    - lane_assignment_verified: boolean # Correct case lane (A-F) used
+```
 
 ## ═══════════════════════════════════════════
 ## FUSED SKILL MANIFEST (27 Skills → 9 Domains)

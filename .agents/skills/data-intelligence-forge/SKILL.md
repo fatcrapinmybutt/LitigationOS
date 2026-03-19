@@ -1,6 +1,24 @@
 ---
 name: data-intelligence-forge
-description: "ELITE data intelligence — fusion of 22 data/DB/search skills. Covers data engineering, data science, visualization, quality, pipelines, database architecture, SQL optimization, embeddings, vector search, RAG, hybrid search, and similarity patterns."
+description: "Use when querying databases, optimizing SQL, building data pipelines, designing schemas, working with embeddings/vector search, or analyzing data quality. ELITE data intelligence — fusion of 22 data/DB/search skills covering data engineering, science, visualization, quality, pipelines, database architecture, SQL optimization, embeddings, vector search, RAG, hybrid search, and similarity patterns."
+version: "2.0.0"
+category: discipline
+triggers:
+  - SQL optimization
+  - database query
+  - data pipeline
+  - schema design
+  - vector search
+lanes:
+  - "A: Watson/Custody (2024-001507-DC)"
+  - "B: Shady Oaks/Housing (2025-002760-CZ)"
+  - "C: Federal §1983 (USDC WDMI)"
+  - "D: PPO (2023-5907-PP)"
+  - "E: Judicial Misconduct/JTC"
+  - "F: Appellate (COA 366810)"
+court: "14th Judicial Circuit, Muskegon County"
+case: "Pigors v Watson"
+dependencies: []
 metadata:
   model: opus
   forged_from: 22
@@ -412,3 +430,68 @@ splitter = MarkdownHeaderTextSplitter(
 
 ### MCR
 - MCR 2.003
+
+---
+
+## Decision Tree
+
+```
+ENTRY: Data/DB task received
+│
+├─ Q1: What type of data work?
+│   ├─ QUERY → BRANCH A (SQL/DB Operations)
+│   ├─ PIPELINE → BRANCH B (Data Pipeline)
+│   ├─ SEARCH → BRANCH C (Text/Vector Search)
+│   └─ DESIGN → BRANCH D (Schema/Architecture)
+│
+├─ BRANCH A: SQL/DB Operations
+│   ├─ Step 1: Verify schema (PRAGMA table_info + schema_reference)
+│   ├─ Step 2: Set connection PRAGMAs (WAL, busy_timeout, cache_size)
+│   ├─ Step 3: Use managed_db() for connection lifecycle
+│   ├─ Step 4: Write query with explicit columns (no SELECT *)
+│   ├─ Step 5: Add LIMIT for exploratory queries
+│   └─ OUTPUT: Query results with traceable SQL
+│
+├─ BRANCH B: Data Pipeline
+│   ├─ Step 1: Identify target phase(s) in the 16-phase pipeline
+│   ├─ Step 2: Verify input dependencies from prior phases
+│   ├─ Step 3: Execute phase with checkpoint-resume enabled
+│   ├─ Step 4: Validate output against PASS gate criteria
+│   └─ OUTPUT: Phase completion report with output table counts
+│
+├─ BRANCH C: Text/Vector Search
+│   ├─ Step 1: Check if FTS5 index exists for target table
+│   │   ├─ FTS5 exists → Use MATCH syntax with query expansion
+│   │   └─ No FTS5 → Use adaptive_query_rewriter (rewrites LIKE → optimized)
+│   ├─ Step 2: Expand query keywords (synonyms, related terms)
+│   ├─ Step 3: Apply result limit and relevance ranking
+│   └─ OUTPUT: Ranked search results with match scores
+│
+└─ BRANCH D: Schema/Architecture
+    ├─ Step 1: Survey existing tables (sqlite_master)
+    ├─ Step 2: Identify normalization opportunities
+    ├─ Step 3: Design composite indexes for hot query patterns
+    ├─ Step 4: Validate against 3-tier connection strategy
+    └─ OUTPUT: Schema design document with DDL statements
+```
+
+---
+
+## Output Contract
+
+```yaml
+output:
+  type: enum [query_result, pipeline_report, search_result, schema_design]
+  format: markdown
+  required_fields:
+    - summary: string
+    - sql_queries_used: list[string]
+    - tables_accessed: list[string]
+    - row_counts: dict[string, int]
+  quality_gates:
+    - schema_verified: boolean
+    - pragmas_set: boolean
+    - no_select_star: boolean
+    - results_bounded: boolean
+    - sources_cited: boolean
+```

@@ -1,0 +1,115 @@
+{
+  "tool_id": 201,
+  "name": "Mediation Preparation Kit",
+  "generated": "2026-03-19T07:52:06.530124",
+  "pre_mediation_checklist": {
+    "documents_to_bring": [
+      "All filed motions and court orders",
+      "Parenting time denial log (230+ days documented)",
+      "Child's developmental timeline (L.D.W. born Nov 9, 2022)",
+      "Financial affidavit (income, expenses, child support)",
+      "Communication log with opposing party",
+      "School/medical records (if available)",
+      "Proposed parenting plan with calendar",
+      "Evidence binder — TOP 20 exhibits (curated, not 36K)"
+    ],
+    "preparation_steps": [
+      "Review ALL court orders currently in effect",
+      "Identify non-negotiable items (safety, child welfare)",
+      "Calculate parenting time owed (230 days denied = 18.8% of life)",
+      "Prepare 3-minute opening statement (facts, not emotion)",
+      "Identify mediator preferences (request family law specialist)",
+      "Prepare BATNA (Best Alternative To Negotiated Agreement)",
+      "Set emotional boundaries — bring support person if allowed",
+      "Review Michigan mediation confidentiality rules (MCR 2.412)"
+    ]
+  },
+  "negotiation_zones": {
+    "custody": {
+      "ideal": "50/50 joint legal and physical custody",
+      "acceptable": "Joint legal, primary physical with liberal parenting time",
+      "walk_away": "Less than standard parenting time (every other weekend)",
+      "leverage": "1127 documented judicial violations strengthen position"
+    },
+    "parenting_time": {
+      "ideal": "Equal time — 2-2-3 or week-on/week-off schedule",
+      "acceptable": "Extended weekends + midweek dinner + alternating holidays",
+      "walk_away": "Supervised-only or less than 4 overnights/month",
+      "leverage": "230 days denied — court MUST address systematic denial"
+    },
+    "communication": {
+      "ideal": "OurFamilyWizard or TalkingParents (documented platform)",
+      "acceptable": "Email-only with 24-hour response requirement",
+      "walk_away": "Phone-only (no documentation trail)"
+    },
+    "decision_making": {
+      "ideal": "Joint legal custody — both decide medical, education, religion",
+      "acceptable": "Joint with tie-breaker mechanism (mediator/arbitrator)",
+      "walk_away": "Sole legal custody to opposing party"
+    }
+  },
+  "batna_analysis": {
+    "definition": "Best Alternative To Negotiated Agreement — what happens if mediation fails",
+    "litigation_strength": {
+      "evidence_base": "36891 documented evidence quotes",
+      "judicial_misconduct": "1127 violations = strong disqualification case",
+      "federal_option": "§1983 federal complaint viable (5 counts, 4 defendants)",
+      "appellate_option": "COA appeal pending (Case 366810)",
+      "overall_assessment": "STRONG BATNA — litigation alternatives are viable"
+    },
+    "mediation_failure_triggers": [
+      "Opposing party refuses any unsupervised time",
+      "Opposing party demands sole legal custody",
+      "Mediator shows bias or pre-judgment",
+      "Safety concerns raised without substantiation",
+      "Opposing party brings unauthorized persons (Berry is NOT attorney)",
+      "Mediation used as fishing expedition for information"
+    ],
+    "post_failure_actions": [
+      "File Motion for Parenting Time (F1) immediately",
+      "File Disqualification Motion (F3) if judge involved",
+      "Escalate to FOC complaint if parenting time continues denied",
+      "Document mediation failure for appellate record",
+      "Consider filing federal §1983 if pattern continues"
+    ]
+  },
+  "michigan_mediation_rules": {
+    "governing_rule": "MCR 2.411 (Case Evaluation) / MCR 2.412 (Mediation)",
+    "confidentiality": "MCR 2.412(D) — mediation communications are confidential",
+    "exceptions_to_confidentiality": [
+      "Child abuse or neglect (mandatory reporting)",
+      "Threat of bodily harm",
+      "Court-ordered exceptions",
+      "Written agreement to disclose"
+    ],
+    "mediator_qualifications": "MCR 2.412(B) — must meet requirements of ADR plan",
+    "cost": "Court-connected mediation may be free or low-cost with IFP",
+    "duration": "Typically 2-4 hours, can extend to full day",
+    "binding": "NOT binding unless both parties sign agreement"
+  },
+  "opening_statement_template": {
+    "duration": "3 minutes maximum",
+    "structure": [
+      "1. Introduce yourself as L.D.W.'s father",
+      "2. State your goal: healthy relationship with your child",
+      "3. Briefly describe denial pattern (230 days, 18.8% of life)",
+      "4. Express willingness to co-parent cooperatively",
+      "5. Identify specific requests: schedule, communication, decision-making",
+      "6. Close with focus on child's best interest"
+    ],
+    "tone": "Calm, factual, child-focused. Never attack opposing party.",
+    "avoid": [
+      "Personal attacks on Emily or Berry",
+      "Legal arguments (save for court)",
+      "Emotional outbursts (they undermine credibility)",
+      "Threats of litigation (counter-productive in mediation)",
+      "Discussing judge or judicial misconduct"
+    ]
+  },
+  "db_stats": {
+    "evidence_quotes": 36891,
+    "judicial_violations": 1127,
+    "claims": []
+  },
+  "total_items": 31
+}
