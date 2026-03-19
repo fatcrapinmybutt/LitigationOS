@@ -1,0 +1,63 @@
+
+SHADY OAKS LITIGATION CORE: FULL DEPLOYMENT STACK (.TCT FORMAT)
+
+ENTITY IDENTIFICATION
+----------------------
+Entity 1: Shady Oaks Park MHP LLC
+- LARA ID: 802157324
+- Formed: 02/15/2019
+- Dissolved: 02/15/2023 (Administrative)
+- Status: Inactive
+- Role: Plaintiff in eviction (2024-24058913-LT) — INVALID POST-DISSOLUTION FILINGS
+
+Entity 2: Shady Oaks MHP LLC
+- LARA ID: 802821638
+- Formed: 04/25/2022
+- Status: Active
+- Role: Likely successor shell; not a named filer
+
+PROCEDURAL POSTURE
+-------------------
+- Case filed in 14th Circuit Court
+- This stack = Amended Complaint & Ex Parte filings
+- Motions rely on MCR 2.118 (Amendment), MCR 3.310(B)(1), MCR 2.119(E)
+
+COUNTS + STRATEGIC CLAIMS
+--------------------------
+Count I: Operating While Dissolved (MCL 450.1832)
+Count II: Lease Under Duress (Restatement 2d §175, MCL 554.139)
+Count III: Retaliation (MCL 600.5775)
+Count IV: Habitability Breach (MCL 554.139)
+Count V: Billing Fraud (MCL 445.252)
+Count VI: Civil Conspiracy (MCL 600.2957)
+Count VII: MCPA Violations (MCL 445.903)
+Count VIII: FHA Retaliation (42 USC §3617)
+Count IX: §1983 Parental Harm / Due Process
+Count X: Agent/Entity Misrepresentation
+
+TOTAL DAMAGES + HARM
+---------------------
+- Legal labor: $292,500 (1170 hours @ $250/hr)
+- Custody Harm: Documented via 7/17/2024 Order
+- Emotional Distress: Documented via Services of Hope
+- Economic Harm: Eviction, job loss, forced lease
+
+EXHIBIT FLAGS
+--------------
+Exhibit A: LARA Dissolution Certificate (Shady Oaks Park MHP LLC)
+Exhibit B: Eviction Court Docs (Post-Dissolution Filings)
+Exhibit C: Lease Under Duress (3/26/24 at Cricklewood)
+Exhibit D–E: EGLE Sewage Report, Photo Proof
+Exhibit F: Rent/Utility Billing
+Exhibit G: Agent mismatch (CT Corp false listing)
+Exhibit H: MHAction Flyer Drop
+Exhibit I: July 1 Rent Receipts
+Exhibit J: Custody Trial Outcome (7/17/24)
+
+FILE STRUCTURE + TASKS
+-----------------------
+- Generate full amended complaint .docx
+- Generate ex parte motion stack
+- Embed exhibits into bundle
+- Prepare certificate of service
+- Auto-deploy to F:/Litigation/Complaints/ShadyOaks/

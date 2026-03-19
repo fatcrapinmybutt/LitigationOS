@@ -1,0 +1,12 @@
+flowchart TD
+  A[DELTA6 Shell] --> B[Cycle 1 Expansion]
+  B --> B1[Add timeline/orders/readiness schemas]
+  B1 --> C[Cycle 2 Improvement]
+  C --> C1[Wire adapters + panel renderers]
+  C1 --> D[Cycle 3 Refinement]
+  D --> D1[Deterministic cycle IDs + replay schema]
+  D1 --> E[DELTA7+ Convergence Tranche]
+  E --> F{DELTA8 targets satisfied?}
+  F -- No --> G[Append next delta patch]
+  G --> E
+  F -- Yes --> H[Promote to DELTA8]

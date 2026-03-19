@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "authoritysnapshot_id": {
+      "description": "Primary key.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "coverage_json": {
+      "description": "Which MCR/MCL/MRE etc included.",
+      "type": "object"
+    },
+    "created_for_run_id": {
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "index_artifact_id": {
+      "description": "auth_snapshot_index.json",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "is_locked": {
+      "type": "boolean"
+    },
+    "snap_created_by_agent_id": {
+      "description": "Agent/worker that created the record.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "snap_created_utc": {
+      "description": "Created timestamp (UTC).",
+      "format": "date-time",
+      "type": "string"
+    },
+    "snap_id": {
+      "description": "Primary identifier (ULID recommended).",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "snap_integrity_key": {
+      "description": "IntegrityKey(BundleUID+EntryPath+CRC32+bytes+mtime) per your spec.",
+      "type": "string"
+    },
+    "snap_notes": {
+      "description": "Human notes.",
+      "type": "string"
+    },
+    "snap_source_ref": {
+      "description": "Canonical source pointer (Vault CID / path / locator).",
+      "type": "string"
+    },
+    "snap_status": {
+      "description": "ENUM (values defined by policy/registry). Lifecycle status (e.g., ACTIVE, CLOSED, DEPRECATED, etc.).",
+      "type": "string"
+    },
+    "snap_tags_json": {
+      "description": "Freeform tags / labels.",
+      "type": "object"
+    },
+    "snap_updated_by_agent_id": {
+      "description": "Agent/worker that last updated the record.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "snap_updated_utc": {
+      "description": "Last updated timestamp (UTC).",
+      "format": "date-time",
+      "type": "string"
+    },
+    "snapshot_label": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "authoritysnapshot_id",
+    "snap_created_utc",
+    "snap_id",
+    "snapshot_label",
+    "workspace_id"
+  ],
+  "title": "AuthoritySnapshot",
+  "type": "object",
+  "x_litigationos": {
+    "entity": "AuthoritySnapshot",
+    "generated_utc": "2026-01-20T05:12:07Z",
+    "primary_key": "authoritysnapshot_id",
+    "version": "v2026-01-19.3"
+  }
+}

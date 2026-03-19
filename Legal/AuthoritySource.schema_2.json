@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "authority_kind": {
+      "description": "ENUM (values defined by policy/registry).",
+      "type": "string"
+    },
+    "authoritysource_id": {
+      "description": "Primary key.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "authsrc_created_by_agent_id": {
+      "description": "Agent/worker that created the record.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "authsrc_created_utc": {
+      "description": "Created timestamp (UTC).",
+      "format": "date-time",
+      "type": "string"
+    },
+    "authsrc_id": {
+      "description": "Primary identifier (ULID recommended).",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "authsrc_integrity_key": {
+      "description": "IntegrityKey(BundleUID+EntryPath+CRC32+bytes+mtime) per your spec.",
+      "type": "string"
+    },
+    "authsrc_notes": {
+      "description": "Human notes.",
+      "type": "string"
+    },
+    "authsrc_source_ref": {
+      "description": "Canonical source pointer (Vault CID / path / locator).",
+      "type": "string"
+    },
+    "authsrc_status": {
+      "description": "ENUM (values defined by policy/registry). Lifecycle status (e.g., ACTIVE, CLOSED, DEPRECATED, etc.).",
+      "type": "string"
+    },
+    "authsrc_tags_json": {
+      "description": "Freeform tags / labels.",
+      "type": "object"
+    },
+    "authsrc_updated_by_agent_id": {
+      "description": "Agent/worker that last updated the record.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "authsrc_updated_utc": {
+      "description": "Last updated timestamp (UTC).",
+      "format": "date-time",
+      "type": "string"
+    },
+    "citation_style": {
+      "type": "string"
+    },
+    "effective_date": {
+      "format": "date",
+      "type": "string"
+    },
+    "extracted_text_artifact_id": {
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "source_artifact_id": {
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "version_label": {
+      "type": "string"
+    },
+    "workspace_id": {
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "authority_kind",
+    "authoritysource_id",
+    "authsrc_created_utc",
+    "authsrc_id",
+    "title",
+    "workspace_id"
+  ],
+  "title": "AuthoritySource",
+  "type": "object",
+  "x_litigationos": {
+    "entity": "AuthoritySource",
+    "generated_utc": "2026-01-20T05:12:07Z",
+    "primary_key": "authoritysource_id",
+    "version": "v2026-01-19.3"
+  }
+}

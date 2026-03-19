@@ -1,0 +1,35 @@
+flowchart TD
+    A0["EVENTHORIZON_CMDCTR_HYPERPIN_v2_2026-02-22"] --> A1["Governance Anchors Plane"]
+    A0 --> A2["Capability Orchestration Plane"]
+    A0 --> A3["Intake + Ledger Plane"]
+    A0 --> A4["Judicial Analysis Planes"]
+    A0 --> A5["GUI Build Plane"]
+    A0 --> A6["Validation + Adversarial Improvement Plane"]
+    A0 --> A7["Convergence + Emergence Engine"]
+    A0 --> A8["Continuation Checkpoint Plane"]
+
+    subgraph G1["Governance Anchors Plane"]
+      G1a["Jurisdiction Compass (Michigan-first)"]
+      G1b["Authority Compass"]
+      G1c["Truth Anchor"]
+      G1d["Creative Continuity"]
+      G1e["Append-Only Continuity"]
+      G1f["Safety Compass"]
+    end
+
+    subgraph G4["Judicial Analysis Planes"]
+      G4a["Timeline Plane"]
+      G4b["Docket / Procedural Posture Plane"]
+      G4c["Authority Triples Plane"]
+      G4d["Vehicle Router + SBNA"]
+      G4e["Evidence / Exhibit Matrix Plane"]
+      G4f["Contradiction Map Plane"]
+      G4g["Deadlines Plane"]
+      G4h["Orders / OperatingOrderPins Plane"]
+      G4i["Service / Proof Coverage Plane"]
+    end
+
+    G1 --> A2 --> A3 --> G4 --> A5 --> A6 --> A7
+    A7 -->|Continuation target not yet reached| G4
+    A6 -->|Platform boundary checkpoint| A8
+    A8 -->|Resume from latest append-only state| G4

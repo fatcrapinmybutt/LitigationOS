@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Filing Detail</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0F172A; --slate: #334155; --steel: #64748B;
+    --court-blue: #0369A1; --court-hover: #075985;
+    --success: #059669; --success-bg: #ECFDF5;
+    --warning: #D97706; --warning-bg: #FFFBEB;
+    --danger: #DC2626; --danger-bg: #FEF2F2;
+    --info: #2563EB; --info-bg: #EFF6FF;
+    --surface: #FFFFFF; --surface2: #F8FAFC; --surface3: #F1F5F9;
+    --border: #E2E8F0; --border-strong: #CBD5E1;
+    --lane-a: #4F46E5; --lane-a-bg: #EEF2FF;
+    --lane-e: #D97706; --lane-e-bg: #FFFBEB;
+    --sidebar-w: 240px;
+  }
+  body { font-family: 'Lato', sans-serif; font-size: 14px; color: var(--navy); background: var(--surface2); display: flex; min-height: 100vh; }
+  h1, h2, h3, h4, h5 { font-family: 'EB Garamond', serif; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+
+  .sidebar { width: var(--sidebar-w); min-height: 100vh; background: var(--surface2); border-right: 1px solid var(--border); display: flex; flex-direction: column; position: fixed; top: 0; left: 0; z-index: 100; }
+  .sidebar-brand { padding: 16px 20px; border-bottom: 1px solid var(--border); }
+  .sidebar-brand h2 { font-size: 20px; font-weight: 700; color: var(--navy); }
+  .sidebar-brand span { font-size: 12px; color: var(--steel); }
+  .sidebar-nav { flex: 1; padding: 8px 0; overflow-y: auto; }
+  .nav-section { padding: 8px 20px 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); }
+  .nav-item { display: flex; align-items: center; gap: 10px; padding: 9px 20px; font-size: 14px; color: var(--slate); cursor: pointer; text-decoration: none; transition: all 0.15s; }
+  .nav-item:hover { background: var(--surface3); color: var(--navy); }
+  .nav-item.active { background: var(--info-bg); color: var(--court-blue); font-weight: 700; border-right: 3px solid var(--court-blue); }
+  .nav-icon { width: 18px; text-align: center; font-size: 15px; }
+  .sidebar-footer { padding: 12px 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--steel); }
+
+  .topbar { height: 56px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; position: fixed; top: 0; left: var(--sidebar-w); right: 0; z-index: 90; }
+  .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--steel); }
+  .breadcrumb a { color: var(--court-blue); text-decoration: none; }
+  .breadcrumb .sep { color: var(--border-strong); }
+  .topbar-actions { display: flex; align-items: center; gap: 16px; }
+  .search-box { padding: 7px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; width: 260px; background: var(--surface2); }
+  .notif-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; position: relative; }
+  .notif-dot { width: 8px; height: 8px; background: var(--danger); border-radius: 50%; position: absolute; top: 6px; right: 6px; }
+
+  .main { margin-left: var(--sidebar-w); margin-top: 56px; padding: 24px; flex: 1; max-width: 1440px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .btn { padding: 9px 18px; border-radius: 6px; font-size: 14px; font-family: 'Lato', sans-serif; cursor: pointer; border: none; transition: all 0.15s; }
+  .btn-primary { background: var(--court-blue); color: white; }
+  .btn-primary:hover { background: var(--court-hover); }
+  .btn-secondary { background: var(--surface); color: var(--slate); border: 1px solid var(--border); }
+  .btn-success { background: var(--success); color: white; }
+  .btn-sm { padding: 6px 14px; font-size: 13px; }
+
+  /* Filing header */
+  .filing-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+  .filing-title h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+  .filing-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .lane-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 700; }
+  .lane-e { background: var(--lane-e-bg); color: var(--lane-e); }
+  .filing-actions { display: flex; gap: 8px; }
+
+  /* Gauge */
+  .gauge-wrap { text-align: center; margin-bottom: 24px; }
+  .gauge { width: 140px; height: 140px; border-radius: 50%; background: conic-gradient(var(--success) 0% 98%, var(--surface3) 98% 100%); display: flex; align-items: center; justify-content: center; margin: 0 auto; position: relative; }
+  .gauge-inner { width: 110px; height: 110px; border-radius: 50%; background: var(--surface); display: flex; align-items: center; justify-content: center; flex-direction: column; }
+  .gauge-score { font-family: 'JetBrains Mono', monospace; font-size: 32px; font-weight: 700; color: var(--success); }
+  .gauge-label { font-size: 11px; color: var(--steel); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* Content grid */
+  .detail-grid { display: grid; grid-template-columns: 1fr 360px; gap: 24px; }
+
+  /* Dimension bars */
+  .dim-bar { margin-bottom: 12px; }
+  .dim-bar-header { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px; }
+  .dim-bar-header .label { color: var(--slate); }
+  .dim-bar-header .score { font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+  .dim-track { height: 8px; background: var(--surface3); border-radius: 4px; overflow: hidden; }
+  .dim-fill { height: 100%; border-radius: 4px; }
+
+  /* Accordion */
+  .accordion { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-top: 24px; }
+  .acc-item { border-bottom: 1px solid var(--border); }
+  .acc-item:last-child { border-bottom: none; }
+  .acc-header { padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; font-size: 14px; font-weight: 700; color: var(--navy); background: var(--surface); }
+  .acc-header:hover { background: var(--surface2); }
+  .acc-chevron { font-size: 12px; color: var(--steel); }
+  .acc-body { padding: 16px; background: var(--surface2); font-size: 14px; line-height: 1.6; color: var(--slate); display: none; }
+  .acc-item.open .acc-body { display: block; }
+
+  /* Metadata */
+  .meta-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--surface3); font-size: 13px; }
+  .meta-row:last-child { border-bottom: none; }
+  .meta-row .label { color: var(--steel); }
+  .meta-row .value { color: var(--navy); font-weight: 700; }
+
+  /* QA results */
+  .qa-item { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--surface3); font-size: 13px; }
+  .qa-icon { font-size: 14px; }
+
+  /* Exhibit chips */
+  .chip-wrap { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; background: var(--surface3); border-radius: 16px; font-size: 12px; font-family: 'JetBrains Mono', monospace; color: var(--slate); }
+  .chip-dot { width: 6px; height: 6px; border-radius: 50%; }
+
+  /* GO badge */
+  .badge-go { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 700; background: var(--success-bg); color: var(--success); }
+</style>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-brand"><h2>LitigationOS</h2><span>Pigors v. Watson</span></div>
+    <div class="sidebar-nav">
+      <div class="nav-section">Main</div>
+      <a class="nav-item" href="01_dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+      <a class="nav-item" href="02_cases.html"><span class="nav-icon">📁</span> Cases</a>
+      <a class="nav-item" href="03_filings.html"><span class="nav-icon">📄</span> Filings</a>
+      <a class="nav-item" href="04_evidence.html"><span class="nav-icon">🔍</span> Evidence</a>
+      <a class="nav-item" href="05_timeline.html"><span class="nav-icon">📅</span> Timeline</a>
+      <a class="nav-item" href="06_calendar.html"><span class="nav-icon">🗓️</span> Calendar</a>
+      <a class="nav-item" href="07_deadlines.html"><span class="nav-icon">⏰</span> Deadlines</a>
+      <div class="nav-section">Tools</div>
+      <a class="nav-item" href="08_settings.html"><span class="nav-icon">⚙️</span> Settings</a>
+      <a class="nav-item" href="09_wizard.html"><span class="nav-icon">✨</span> Wizard</a>
+      <a class="nav-item active" href="10_filing_detail.html"><span class="nav-icon">📋</span> Filing Detail</a>
+      <a class="nav-item" href="11_evidence_detail.html"><span class="nav-icon">🔎</span> Evidence Detail</a>
+      <a class="nav-item" href="12_search.html"><span class="nav-icon">🔍</span> Search</a>
+      <a class="nav-item" href="13_reports.html"><span class="nav-icon">📈</span> Reports</a>
+      <a class="nav-item" href="14_agent_fleet.html"><span class="nav-icon">🤖</span> Agent Fleet</a>
+    </div>
+    <div class="sidebar-footer">v9.0 MANBEARPIG · Local AI</div>
+  </nav>
+
+  <header class="topbar">
+    <div class="breadcrumb">
+      <a href="01_dashboard.html">Home</a><span class="sep">›</span>
+      <a href="03_filings.html">Filings</a><span class="sep">›</span>
+      <span>JTC Formal Complaint</span>
+    </div>
+    <div class="topbar-actions">
+      <input class="search-box" type="text" placeholder="Search… (⌘K)">
+      <button class="notif-btn">🔔<span class="notif-dot"></span></button>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Filing Header -->
+    <div class="filing-header">
+      <div class="filing-title">
+        <h1>JTC Formal Complaint v. Hon. Jenny L. McNeill</h1>
+        <div class="filing-meta">
+          <span class="lane-badge lane-e">Lane E — Misconduct</span>
+          <span class="mono" style="color:var(--steel);">Case 2024-001507-DC</span>
+          <span class="badge-go">GO — Ready to File</span>
+        </div>
+      </div>
+      <div class="filing-actions">
+        <button class="btn btn-secondary">✏️ Edit</button>
+        <button class="btn btn-secondary">🔍 Run QA</button>
+        <button class="btn btn-primary">📄 Generate PDF</button>
+        <button class="btn btn-secondary">⬇️ Export</button>
+      </div>
+    </div>
+
+    <div class="detail-grid">
+      <!-- Left Column -->
+      <div>
+        <!-- Readiness Gauge + Bars -->
+        <div class="card" style="margin-bottom:24px;">
+          <h3 style="font-size:20px;font-weight:600;margin-bottom:20px;">Filing Readiness</h3>
+          <div style="display:flex;gap:32px;align-items:flex-start;">
+            <div class="gauge-wrap">
+              <div class="gauge">
+                <div class="gauge-inner">
+                  <div class="gauge-score">98</div>
+                  <div class="gauge-label">/ 100</div>
+                </div>
+              </div>
+            </div>
+            <div style="flex:1;">
+              <div class="dim-bar">
+                <div class="dim-bar-header"><span class="label">Legal Authority</span><span class="score" style="color:var(--success);">100%</span></div>
+                <div class="dim-track"><div class="dim-fill" style="width:100%;background:var(--success);"></div></div>
+              </div>
+              <div class="dim-bar">
+                <div class="dim-bar-header"><span class="label">Evidence Support</span><span class="score" style="color:var(--success);">95%</span></div>
+                <div class="dim-track"><div class="dim-fill" style="width:95%;background:var(--success);"></div></div>
+              </div>
+              <div class="dim-bar">
+                <div class="dim-bar-header"><span class="label">Citation Coverage</span><span class="score" style="color:var(--success);">100%</span></div>
+                <div class="dim-track"><div class="dim-fill" style="width:100%;background:var(--success);"></div></div>
+              </div>
+              <div class="dim-bar">
+                <div class="dim-bar-header"><span class="label">Procedural Compliance</span><span class="score" style="color:var(--success);">100%</span></div>
+                <div class="dim-track"><div class="dim-fill" style="width:100%;background:var(--success);"></div></div>
+              </div>
+              <div class="dim-bar">
+                <div class="dim-bar-header"><span class="label">Party Verification</span><span class="score" style="color:var(--success);">100%</span></div>
+                <div class="dim-track"><div class="dim-fill" style="width:100%;background:var(--success);"></div></div>
+              </div>
+              <div class="dim-bar">
+                <div class="dim-bar-header"><span class="label">Service Plan</span><span class="score" style="color:var(--success);">100%</span></div>
+                <div class="dim-track"><div class="dim-fill" style="width:100%;background:var(--success);"></div></div>
+              </div>
+              <div class="dim-bar">
+                <div class="dim-bar-header"><span class="label">Signature Block</span><span class="score" style="color:var(--success);">100%</span></div>
+                <div class="dim-track"><div class="dim-fill" style="width:100%;background:var(--success);"></div></div>
+              </div>
+              <div class="dim-bar">
+                <div class="dim-bar-header"><span class="label">Formatting</span><span class="score" style="color:var(--success);">100%</span></div>
+                <div class="dim-track"><div class="dim-fill" style="width:100%;background:var(--success);"></div></div>
+              </div>
+              <div class="dim-bar">
+                <div class="dim-bar-header"><span class="label">Exhibit Index</span><span class="score" style="color:var(--warning);">90%</span></div>
+                <div class="dim-track"><div class="dim-fill" style="width:90%;background:var(--warning);"></div></div>
+              </div>
+              <div class="dim-bar">
+                <div class="dim-bar-header"><span class="label">Completeness</span><span class="score" style="color:var(--warning);">95%</span></div>
+                <div class="dim-track"><div class="dim-fill" style="width:95%;background:var(--warning);"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Document Sections -->
+        <div class="card">
+          <h3 style="font-size:20px;font-weight:600;margin-bottom:16px;">Document Sections</h3>
+          <div class="accordion">
+            <div class="acc-item open">
+              <div class="acc-header">I. Introduction <span class="acc-chevron">▼</span></div>
+              <div class="acc-body">This formal complaint is filed pursuant to MCR 9.104 and MCR 9.116 against the Honorable Jenny L. McNeill, 17th Circuit Court, Kent County, Michigan. The complaint details a pattern of judicial misconduct including ex parte communications, due process violations, and demonstrated bias…</div>
+            </div>
+            <div class="acc-item">
+              <div class="acc-header">II. Factual Background <span class="acc-chevron">▶</span></div>
+              <div class="acc-body" style="display:none;"></div>
+            </div>
+            <div class="acc-item">
+              <div class="acc-header">III. Violation I — Ex Parte Communications <span class="acc-chevron">▶</span></div>
+              <div class="acc-body" style="display:none;"></div>
+            </div>
+            <div class="acc-item">
+              <div class="acc-header">IV. Violation II — Due Process Denial <span class="acc-chevron">▶</span></div>
+              <div class="acc-body" style="display:none;"></div>
+            </div>
+            <div class="acc-item">
+              <div class="acc-header">V. Violation III — Procedural Irregularities <span class="acc-chevron">▶</span></div>
+              <div class="acc-body" style="display:none;"></div>
+            </div>
+            <div class="acc-item">
+              <div class="acc-header">VI. Violation IV — Bias and Prejudgment <span class="acc-chevron">▶</span></div>
+              <div class="acc-body" style="display:none;"></div>
+            </div>
+            <div class="acc-item">
+              <div class="acc-header">VII. Violations V–VIII <span class="acc-chevron">▶</span></div>
+              <div class="acc-body" style="display:none;"></div>
+            </div>
+            <div class="acc-item">
+              <div class="acc-header">VIII. Prayer for Relief <span class="acc-chevron">▶</span></div>
+              <div class="acc-body" style="display:none;"></div>
+            </div>
+          </div>
+
+          <!-- Evidence chips -->
+          <h4 style="font-size:16px;font-weight:600;margin-top:24px;margin-bottom:8px;font-family:'EB Garamond',serif;">Linked Exhibits (12)</h4>
+          <div class="chip-wrap">
+            <span class="chip"><span class="chip-dot" style="background:var(--lane-e);"></span>PIGORS-0447</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--lane-e);"></span>PIGORS-0448</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--lane-e);"></span>PIGORS-0452</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--lane-e);"></span>PIGORS-0460</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--lane-e);"></span>PIGORS-0461</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--lane-e);"></span>PIGORS-0475</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--lane-e);"></span>PIGORS-0488</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--lane-e);"></span>PIGORS-0501</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--lane-e);"></span>PIGORS-0515</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--lane-e);"></span>PIGORS-0522</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--lane-e);"></span>PIGORS-0530</span>
+            <span class="chip"><span class="chip-dot" style="background:var(--lane-e);"></span>PIGORS-0541</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel -->
+      <div>
+        <!-- QA Results -->
+        <div class="card" style="margin-bottom:16px;">
+          <h3 style="font-size:18px;font-weight:600;margin-bottom:16px;">QA Results</h3>
+          <div style="font-size:12px;color:var(--steel);margin-bottom:12px;">Last run: Jan 28, 2026 — 14:32</div>
+          <div class="qa-item"><span class="qa-icon">✅</span> Citation format valid</div>
+          <div class="qa-item"><span class="qa-icon">✅</span> No placeholder text found</div>
+          <div class="qa-item"><span class="qa-icon">✅</span> Signature block present</div>
+          <div class="qa-item"><span class="qa-icon">✅</span> Service list complete</div>
+          <div class="qa-item"><span class="qa-icon">✅</span> Page numbers sequential</div>
+          <div class="qa-item"><span class="qa-icon">⚠️</span> Exhibit index: 1 stub reference</div>
+          <div class="qa-item"><span class="qa-icon">✅</span> Court rule compliance</div>
+          <div class="qa-item"><span class="qa-icon">✅</span> Word count under limit</div>
+        </div>
+
+        <!-- Metadata -->
+        <div class="card" style="margin-bottom:16px;">
+          <h3 style="font-size:18px;font-weight:600;margin-bottom:16px;">Metadata</h3>
+          <div class="meta-row"><span class="label">Created</span><span class="value">Dec 15, 2025</span></div>
+          <div class="meta-row"><span class="label">Last Modified</span><span class="value">Jan 28, 2026</span></div>
+          <div class="meta-row"><span class="label">Word Count</span><span class="value mono">12,847</span></div>
+          <div class="meta-row"><span class="label">Citations</span><span class="value mono">38</span></div>
+          <div class="meta-row"><span class="label">Page Estimate</span><span class="value mono">42 pp</span></div>
+          <div class="meta-row"><span class="label">Version</span><span class="value mono">v3.2</span></div>
+          <div class="meta-row"><span class="label">SHA-256</span><span class="value mono" style="font-size:11px;">a7f3c9e2…4b81</span></div>
+        </div>
+
+        <!-- Actions -->
+        <div class="card">
+          <h3 style="font-size:18px;font-weight:600;margin-bottom:16px;">Actions</h3>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <button class="btn btn-primary" style="width:100%;">📄 Generate PDF</button>
+            <button class="btn btn-success" style="width:100%;">✅ Run Pre-Filing QA</button>
+            <button class="btn btn-secondary" style="width:100%;">📋 Copy to Clipboard</button>
+            <button class="btn btn-secondary" style="width:100%;">📦 Export Filing Package</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

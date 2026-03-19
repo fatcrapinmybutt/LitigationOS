@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "authority_source_id": {
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "authoritypinpoint_id": {
+      "description": "Primary key.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "excerpt_text": {
+      "description": "Only if QuoteLock verified.",
+      "type": "string"
+    },
+    "excerpt_verified": {
+      "type": "boolean"
+    },
+    "line_end": {
+      "type": "integer"
+    },
+    "line_start": {
+      "type": "integer"
+    },
+    "page": {
+      "type": "integer"
+    },
+    "pin_created_by_agent_id": {
+      "description": "Agent/worker that created the record.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "pin_created_utc": {
+      "description": "Created timestamp (UTC).",
+      "format": "date-time",
+      "type": "string"
+    },
+    "pin_id": {
+      "description": "Primary identifier (ULID recommended).",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "pin_integrity_key": {
+      "description": "IntegrityKey(BundleUID+EntryPath+CRC32+bytes+mtime) per your spec.",
+      "type": "string"
+    },
+    "pin_label": {
+      "description": "e.g., MCR 2.003(C)(1) or p.12 l.3-10",
+      "type": "string"
+    },
+    "pin_notes": {
+      "description": "Human notes.",
+      "type": "string"
+    },
+    "pin_path": {
+      "description": "machine path",
+      "type": "string"
+    },
+    "pin_source_ref": {
+      "description": "Canonical source pointer (Vault CID / path / locator).",
+      "type": "string"
+    },
+    "pin_status": {
+      "description": "ENUM (values defined by policy/registry). Lifecycle status (e.g., ACTIVE, CLOSED, DEPRECATED, etc.).",
+      "type": "string"
+    },
+    "pin_tags_json": {
+      "description": "Freeform tags / labels.",
+      "type": "object"
+    },
+    "pin_type": {
+      "description": "ENUM (values defined by policy/registry). section|page_line|para|holding|rule_part",
+      "type": "string"
+    },
+    "pin_updated_by_agent_id": {
+      "description": "Agent/worker that last updated the record.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "pin_updated_utc": {
+      "description": "Last updated timestamp (UTC).",
+      "format": "date-time",
+      "type": "string"
+    },
+    "verification_artifact_id": {
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "workspace_id": {
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "authority_source_id",
+    "authoritypinpoint_id",
+    "pin_created_utc",
+    "pin_id",
+    "pin_label",
+    "pin_type",
+    "workspace_id"
+  ],
+  "title": "AuthorityPinpoint",
+  "type": "object",
+  "x_litigationos": {
+    "entity": "AuthorityPinpoint",
+    "generated_utc": "2026-01-20T05:12:07Z",
+    "primary_key": "authoritypinpoint_id",
+    "version": "v2026-01-19.3"
+  }
+}

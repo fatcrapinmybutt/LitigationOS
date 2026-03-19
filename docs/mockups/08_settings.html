@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Settings &amp; Configuration</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0F172A; --slate: #334155; --steel: #64748B;
+    --court-blue: #0369A1; --court-hover: #075985;
+    --success: #059669; --success-bg: #ECFDF5;
+    --warning: #D97706; --warning-bg: #FFFBEB;
+    --danger: #DC2626; --danger-bg: #FEF2F2;
+    --info: #2563EB; --info-bg: #EFF6FF;
+    --surface: #FFFFFF; --surface2: #F8FAFC; --surface3: #F1F5F9;
+    --border: #E2E8F0; --border-strong: #CBD5E1;
+    --lane-a: #4F46E5; --lane-a-bg: #EEF2FF;
+    --lane-b: #059669; --lane-b-bg: #ECFDF5;
+    --lane-c: #7C3AED; --lane-c-bg: #F5F3FF;
+    --lane-d: #E11D48; --lane-d-bg: #FFF1F2;
+    --lane-e: #D97706; --lane-e-bg: #FFFBEB;
+    --lane-f: #0284C7; --lane-f-bg: #F0F9FF;
+    --sidebar-w: 240px;
+  }
+  body { font-family: 'Lato', sans-serif; font-size: 14px; color: var(--navy); background: var(--surface2); display: flex; min-height: 100vh; }
+  h1, h2, h3, h4, h5 { font-family: 'EB Garamond', serif; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+
+  /* Sidebar */
+  .sidebar { width: var(--sidebar-w); min-height: 100vh; background: var(--surface2); border-right: 1px solid var(--border); display: flex; flex-direction: column; position: fixed; top: 0; left: 0; z-index: 100; }
+  .sidebar-brand { padding: 16px 20px; border-bottom: 1px solid var(--border); }
+  .sidebar-brand h2 { font-size: 20px; font-weight: 700; color: var(--navy); }
+  .sidebar-brand span { font-size: 12px; color: var(--steel); }
+  .sidebar-nav { flex: 1; padding: 8px 0; overflow-y: auto; }
+  .nav-section { padding: 8px 20px 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); }
+  .nav-item { display: flex; align-items: center; gap: 10px; padding: 9px 20px; font-size: 14px; color: var(--slate); cursor: pointer; text-decoration: none; transition: all 0.15s; }
+  .nav-item:hover { background: var(--surface3); color: var(--navy); }
+  .nav-item.active { background: var(--info-bg); color: var(--court-blue); font-weight: 700; border-right: 3px solid var(--court-blue); }
+  .nav-icon { width: 18px; text-align: center; font-size: 15px; }
+  .sidebar-footer { padding: 12px 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--steel); }
+
+  /* Top Bar */
+  .topbar { height: 56px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; position: fixed; top: 0; left: var(--sidebar-w); right: 0; z-index: 90; }
+  .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--steel); }
+  .breadcrumb a { color: var(--court-blue); text-decoration: none; }
+  .breadcrumb .sep { color: var(--border-strong); }
+  .topbar-actions { display: flex; align-items: center; gap: 16px; }
+  .search-box { padding: 7px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; width: 260px; background: var(--surface2); }
+  .search-box:focus { outline: none; border-color: var(--court-blue); background: var(--surface); }
+  .notif-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; position: relative; }
+  .notif-dot { width: 8px; height: 8px; background: var(--danger); border-radius: 50%; position: absolute; top: 6px; right: 6px; }
+
+  /* Main */
+  .main { margin-left: var(--sidebar-w); margin-top: 56px; padding: 24px; flex: 1; max-width: 1440px; }
+
+  /* Cards */
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+
+  /* Tabs */
+  .tabs { display: flex; gap: 0; border-bottom: 2px solid var(--border); margin-bottom: 24px; }
+  .tab { padding: 10px 20px; font-size: 14px; color: var(--steel); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.15s; }
+  .tab:hover { color: var(--navy); }
+  .tab.active { color: var(--court-blue); border-bottom-color: var(--court-blue); font-weight: 700; }
+
+  /* Form groups */
+  .form-section { margin-bottom: 32px; }
+  .form-section h3 { font-size: 20px; font-weight: 600; color: var(--navy); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  .form-row { display: flex; gap: 24px; margin-bottom: 16px; flex-wrap: wrap; }
+  .form-group { flex: 1; min-width: 200px; }
+  .form-group label { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); margin-bottom: 6px; }
+  .form-group input, .form-group select { width: 100%; padding: 9px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px; font-family: 'Lato', sans-serif; background: var(--surface); }
+  .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--court-blue); box-shadow: 0 0 0 3px rgba(3,105,161,0.1); }
+
+  /* Toggle */
+  .toggle-row { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--surface3); }
+  .toggle-row:last-child { border-bottom: none; }
+  .toggle-label { font-size: 14px; color: var(--navy); }
+  .toggle-label small { display: block; font-size: 12px; color: var(--steel); margin-top: 2px; }
+  .toggle { width: 44px; height: 24px; background: var(--border-strong); border-radius: 12px; position: relative; cursor: pointer; transition: 0.2s; }
+  .toggle.on { background: var(--court-blue); }
+  .toggle::after { content: ''; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; background: white; border-radius: 50%; transition: 0.2s; }
+  .toggle.on::after { left: 23px; }
+
+  /* Drive bars */
+  .drive-row { display: flex; align-items: center; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--surface3); }
+  .drive-letter { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; color: var(--navy); width: 40px; }
+  .drive-path { font-size: 13px; color: var(--steel); width: 180px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .drive-bar-wrap { flex: 1; height: 8px; background: var(--surface3); border-radius: 4px; overflow: hidden; }
+  .drive-bar { height: 100%; border-radius: 4px; transition: width 0.3s; }
+  .drive-size { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--steel); width: 100px; text-align: right; }
+
+  /* Theme toggle buttons */
+  .theme-group { display: flex; gap: 0; }
+  .theme-btn { padding: 8px 20px; border: 1px solid var(--border); font-size: 13px; cursor: pointer; background: var(--surface); color: var(--slate); }
+  .theme-btn:first-child { border-radius: 6px 0 0 6px; }
+  .theme-btn:last-child { border-radius: 0 6px 6px 0; }
+  .theme-btn.active { background: var(--court-blue); color: white; border-color: var(--court-blue); }
+
+  /* DB preview */
+  .db-preview { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 16px; }
+  .db-stat { text-align: center; padding: 16px; background: var(--surface2); border-radius: 8px; }
+  .db-stat .value { font-family: 'JetBrains Mono', monospace; font-size: 24px; font-weight: 700; color: var(--court-blue); }
+  .db-stat .label { font-size: 12px; color: var(--steel); margin-top: 4px; }
+
+  /* Profile card */
+  .profile-card { display: flex; align-items: center; gap: 20px; padding: 20px; background: var(--surface2); border-radius: 8px; margin-bottom: 24px; }
+  .avatar { width: 64px; height: 64px; border-radius: 50%; background: var(--court-blue); display: flex; align-items: center; justify-content: center; font-size: 24px; color: white; font-family: 'EB Garamond', serif; font-weight: 700; }
+  .profile-info h4 { font-size: 18px; font-weight: 700; color: var(--navy); }
+  .profile-info p { font-size: 13px; color: var(--steel); margin-top: 2px; }
+  .profile-info .mono { font-size: 12px; color: var(--court-blue); }
+
+  /* Buttons */
+  .btn { padding: 9px 18px; border-radius: 6px; font-size: 14px; font-family: 'Lato', sans-serif; cursor: pointer; border: none; transition: all 0.15s; }
+  .btn-primary { background: var(--court-blue); color: white; }
+  .btn-primary:hover { background: var(--court-hover); }
+  .btn-secondary { background: var(--surface); color: var(--slate); border: 1px solid var(--border); }
+  .btn-secondary:hover { background: var(--surface3); }
+</style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="sidebar-brand">
+      <h2>LitigationOS</h2>
+      <span>Pigors v. Watson</span>
+    </div>
+    <div class="sidebar-nav">
+      <div class="nav-section">Main</div>
+      <a class="nav-item" href="01_dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+      <a class="nav-item" href="02_cases.html"><span class="nav-icon">📁</span> Cases</a>
+      <a class="nav-item" href="03_filings.html"><span class="nav-icon">📄</span> Filings</a>
+      <a class="nav-item" href="04_evidence.html"><span class="nav-icon">🔍</span> Evidence</a>
+      <a class="nav-item" href="05_timeline.html"><span class="nav-icon">📅</span> Timeline</a>
+      <a class="nav-item" href="06_calendar.html"><span class="nav-icon">🗓️</span> Calendar</a>
+      <a class="nav-item" href="07_deadlines.html"><span class="nav-icon">⏰</span> Deadlines</a>
+      <div class="nav-section">Tools</div>
+      <a class="nav-item active" href="08_settings.html"><span class="nav-icon">⚙️</span> Settings</a>
+      <a class="nav-item" href="09_wizard.html"><span class="nav-icon">✨</span> Wizard</a>
+      <a class="nav-item" href="10_filing_detail.html"><span class="nav-icon">📋</span> Filing Detail</a>
+      <a class="nav-item" href="11_evidence_detail.html"><span class="nav-icon">🔎</span> Evidence Detail</a>
+      <a class="nav-item" href="12_search.html"><span class="nav-icon">🔍</span> Search</a>
+      <a class="nav-item" href="13_reports.html"><span class="nav-icon">📈</span> Reports</a>
+      <a class="nav-item" href="14_agent_fleet.html"><span class="nav-icon">🤖</span> Agent Fleet</a>
+    </div>
+    <div class="sidebar-footer">v9.0 MANBEARPIG · Local AI</div>
+  </nav>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="breadcrumb">
+      <a href="01_dashboard.html">Home</a>
+      <span class="sep">›</span>
+      <span>Settings &amp; Configuration</span>
+    </div>
+    <div class="topbar-actions">
+      <input class="search-box" type="text" placeholder="Search settings… (⌘K)">
+      <button class="notif-btn">🔔<span class="notif-dot"></span></button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <h1 style="font-size:24px;font-weight:700;margin-bottom:20px;">Settings &amp; Configuration</h1>
+
+    <div class="card">
+      <!-- Tabs -->
+      <div class="tabs">
+        <div class="tab active">General</div>
+        <div class="tab">Database</div>
+        <div class="tab">Pipeline</div>
+        <div class="tab">AI Models</div>
+        <div class="tab">Backup</div>
+        <div class="tab">About</div>
+      </div>
+
+      <!-- Profile -->
+      <div class="profile-card">
+        <div class="avatar">AP</div>
+        <div class="profile-info">
+          <h4>Andrew J. Pigors</h4>
+          <p>Pro Se Litigant</p>
+          <span class="mono">Pigors v. Watson · 6 Lanes Active</span>
+        </div>
+      </div>
+
+      <!-- Case Configuration -->
+      <div class="form-section">
+        <h3>Case Configuration</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Primary Case</label>
+            <select>
+              <option>2024-001507-DC — Pigors v. Watson (Custody)</option>
+              <option>2025-002760-CZ — Shady Oaks Housing</option>
+              <option>2023-5907-PP — PPO Proceedings</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Default Lane</label>
+            <select>
+              <option>Lane A — Custody</option>
+              <option>Lane B — Housing</option>
+              <option>Lane C — Convergence</option>
+              <option>Lane D — PPO</option>
+              <option>Lane E — Misconduct</option>
+              <option>Lane F — Appellate</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Court Preference</label>
+            <select>
+              <option>Kent County Circuit Court — Family Division</option>
+              <option>Michigan Court of Appeals</option>
+              <option>Judicial Tenure Commission</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Jurisdiction</label>
+            <input type="text" value="Michigan" readonly style="background:var(--surface3);">
+          </div>
+        </div>
+      </div>
+
+      <!-- Notifications -->
+      <div class="form-section">
+        <h3>Notifications</h3>
+        <div class="toggle-row">
+          <div class="toggle-label">
+            Deadline Alerts
+            <small>Receive alerts 7, 3, and 1 day before deadlines</small>
+          </div>
+          <div class="toggle on"></div>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-label">
+            QA Sweep Alerts
+            <small>Notify when pre-filing QA detects issues</small>
+          </div>
+          <div class="toggle on"></div>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-label">
+            Pipeline Status
+            <small>Alert when pipeline phases complete or fail</small>
+          </div>
+          <div class="toggle"></div>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-label">
+            Agent Fleet Errors
+            <small>Notify on agent crashes and FATAL status</small>
+          </div>
+          <div class="toggle on"></div>
+        </div>
+      </div>
+
+      <!-- Theme -->
+      <div class="form-section">
+        <h3>Theme</h3>
+        <div class="theme-group">
+          <button class="theme-btn active">☀️ Light</button>
+          <button class="theme-btn">🌙 Dark</button>
+          <button class="theme-btn">🖥️ System</button>
+        </div>
+      </div>
+
+      <!-- Data Paths -->
+      <div class="form-section">
+        <h3>Data Paths</h3>
+        <div class="drive-row">
+          <span class="drive-letter">C:\</span>
+          <span class="drive-path">LitigationOS (System)</span>
+          <div class="drive-bar-wrap"><div class="drive-bar" style="width:72%;background:var(--warning);"></div></div>
+          <span class="drive-size">342 / 476 GB</span>
+        </div>
+        <div class="drive-row">
+          <span class="drive-letter">D:\</span>
+          <span class="drive-path">Database &amp; Index</span>
+          <div class="drive-bar-wrap"><div class="drive-bar" style="width:45%;background:var(--court-blue);"></div></div>
+          <span class="drive-size">214 / 476 GB</span>
+        </div>
+        <div class="drive-row">
+          <span class="drive-letter">F:\</span>
+          <span class="drive-path">Evidence Archive</span>
+          <div class="drive-bar-wrap"><div class="drive-bar" style="width:88%;background:var(--danger);"></div></div>
+          <span class="drive-size">845 / 960 GB</span>
+        </div>
+        <div class="drive-row">
+          <span class="drive-letter">G:\</span>
+          <span class="drive-path">Backup Primary</span>
+          <div class="drive-bar-wrap"><div class="drive-bar" style="width:34%;background:var(--success);"></div></div>
+          <span class="drive-size">326 / 960 GB</span>
+        </div>
+        <div class="drive-row">
+          <span class="drive-letter">H:\</span>
+          <span class="drive-path">Backup Secondary</span>
+          <div class="drive-bar-wrap"><div class="drive-bar" style="width:22%;background:var(--success);"></div></div>
+          <span class="drive-size">211 / 960 GB</span>
+        </div>
+        <div class="drive-row">
+          <span class="drive-letter">I:\</span>
+          <span class="drive-path">Dedup &amp; Overflow</span>
+          <div class="drive-bar-wrap"><div class="drive-bar" style="width:15%;background:var(--success);"></div></div>
+          <span class="drive-size">144 / 960 GB</span>
+        </div>
+      </div>
+
+      <!-- Database Preview -->
+      <div class="form-section">
+        <h3>Database Overview</h3>
+        <div class="db-preview">
+          <div class="db-stat">
+            <div class="value">694</div>
+            <div class="label">Tables</div>
+          </div>
+          <div class="db-stat">
+            <div class="value">18.3M</div>
+            <div class="label">Total Rows</div>
+          </div>
+          <div class="db-stat">
+            <div class="value">10.2 GB</div>
+            <div class="label">Database Size</div>
+          </div>
+          <div class="db-stat">
+            <div class="value" style="color:var(--success);">WAL</div>
+            <div class="label">Journal Mode</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:12px;justify-content:flex-end;padding-top:16px;border-top:1px solid var(--border);">
+        <button class="btn btn-secondary">Reset to Defaults</button>
+        <button class="btn btn-primary">Save Changes</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

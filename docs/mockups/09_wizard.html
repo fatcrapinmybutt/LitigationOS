@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — New Filing Wizard</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0F172A; --slate: #334155; --steel: #64748B;
+    --court-blue: #0369A1; --court-hover: #075985;
+    --success: #059669; --success-bg: #ECFDF5;
+    --warning: #D97706; --warning-bg: #FFFBEB;
+    --danger: #DC2626; --danger-bg: #FEF2F2;
+    --info: #2563EB; --info-bg: #EFF6FF;
+    --surface: #FFFFFF; --surface2: #F8FAFC; --surface3: #F1F5F9;
+    --border: #E2E8F0; --border-strong: #CBD5E1;
+    --lane-a: #4F46E5; --lane-a-bg: #EEF2FF;
+    --lane-b: #059669; --lane-b-bg: #ECFDF5;
+    --lane-c: #7C3AED; --lane-c-bg: #F5F3FF;
+    --lane-d: #E11D48; --lane-d-bg: #FFF1F2;
+    --lane-e: #D97706; --lane-e-bg: #FFFBEB;
+    --lane-f: #0284C7; --lane-f-bg: #F0F9FF;
+    --sidebar-w: 240px;
+  }
+  body { font-family: 'Lato', sans-serif; font-size: 14px; color: var(--navy); background: var(--surface2); display: flex; min-height: 100vh; }
+  h1, h2, h3, h4, h5 { font-family: 'EB Garamond', serif; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+
+  /* Sidebar */
+  .sidebar { width: var(--sidebar-w); min-height: 100vh; background: var(--surface2); border-right: 1px solid var(--border); display: flex; flex-direction: column; position: fixed; top: 0; left: 0; z-index: 100; }
+  .sidebar-brand { padding: 16px 20px; border-bottom: 1px solid var(--border); }
+  .sidebar-brand h2 { font-size: 20px; font-weight: 700; color: var(--navy); }
+  .sidebar-brand span { font-size: 12px; color: var(--steel); }
+  .sidebar-nav { flex: 1; padding: 8px 0; overflow-y: auto; }
+  .nav-section { padding: 8px 20px 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); }
+  .nav-item { display: flex; align-items: center; gap: 10px; padding: 9px 20px; font-size: 14px; color: var(--slate); cursor: pointer; text-decoration: none; transition: all 0.15s; }
+  .nav-item:hover { background: var(--surface3); color: var(--navy); }
+  .nav-item.active { background: var(--info-bg); color: var(--court-blue); font-weight: 700; border-right: 3px solid var(--court-blue); }
+  .nav-icon { width: 18px; text-align: center; font-size: 15px; }
+  .sidebar-footer { padding: 12px 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--steel); }
+
+  /* Top Bar */
+  .topbar { height: 56px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; position: fixed; top: 0; left: var(--sidebar-w); right: 0; z-index: 90; }
+  .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--steel); }
+  .breadcrumb a { color: var(--court-blue); text-decoration: none; }
+  .breadcrumb .sep { color: var(--border-strong); }
+  .topbar-actions { display: flex; align-items: center; gap: 16px; }
+  .search-box { padding: 7px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; width: 260px; background: var(--surface2); }
+  .notif-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; position: relative; }
+  .notif-dot { width: 8px; height: 8px; background: var(--danger); border-radius: 50%; position: absolute; top: 6px; right: 6px; }
+
+  /* Main */
+  .main { margin-left: var(--sidebar-w); margin-top: 56px; padding: 24px; flex: 1; max-width: 1440px; }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .btn { padding: 9px 18px; border-radius: 6px; font-size: 14px; font-family: 'Lato', sans-serif; cursor: pointer; border: none; transition: all 0.15s; }
+  .btn-primary { background: var(--court-blue); color: white; }
+  .btn-primary:hover { background: var(--court-hover); }
+  .btn-secondary { background: var(--surface); color: var(--slate); border: 1px solid var(--border); }
+  .btn-secondary:hover { background: var(--surface3); }
+  .btn-sm { padding: 6px 14px; font-size: 13px; }
+  .btn-danger { background: var(--danger); color: white; }
+
+  /* Progress bar */
+  .progress-wrap { margin-bottom: 24px; }
+  .progress-bar-outer { height: 8px; background: var(--surface3); border-radius: 4px; overflow: hidden; margin-top: 8px; }
+  .progress-bar-inner { height: 100%; background: var(--court-blue); border-radius: 4px; transition: width 0.3s; }
+  .progress-label { font-size: 13px; color: var(--steel); display: flex; justify-content: space-between; }
+
+  /* Steps */
+  .steps { display: flex; align-items: center; gap: 0; margin-bottom: 32px; }
+  .step { display: flex; align-items: center; gap: 8px; position: relative; }
+  .step-number { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; border: 2px solid var(--border-strong); color: var(--steel); background: var(--surface); }
+  .step.completed .step-number { background: var(--success); border-color: var(--success); color: white; }
+  .step.active .step-number { background: var(--court-blue); border-color: var(--court-blue); color: white; }
+  .step-text { font-size: 13px; color: var(--steel); white-space: nowrap; }
+  .step.active .step-text { color: var(--navy); font-weight: 700; }
+  .step.completed .step-text { color: var(--success); }
+  .step-line { width: 40px; height: 2px; background: var(--border); margin: 0 8px; }
+  .step-line.done { background: var(--success); }
+
+  /* Content grid */
+  .wizard-grid { display: grid; grid-template-columns: 1fr 320px; gap: 24px; }
+
+  /* Party table */
+  .party-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+  .party-table th { background: var(--surface3); padding: 10px 12px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); font-family: 'Lato', sans-serif; }
+  .party-table td { padding: 12px; border-bottom: 1px solid var(--border); font-size: 14px; }
+  .party-table tr:hover { background: var(--surface2); }
+  .role-badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 700; }
+  .role-plaintiff { background: var(--info-bg); color: var(--info); }
+  .role-defendant { background: var(--danger-bg); color: var(--danger); }
+  .role-codef { background: var(--warning-bg); color: var(--warning); }
+
+  /* Form */
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); margin-bottom: 6px; }
+  .form-group input, .form-group select { width: 100%; padding: 9px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px; font-family: 'Lato', sans-serif; background: var(--surface); }
+  .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--court-blue); box-shadow: 0 0 0 3px rgba(3,105,161,0.1); }
+
+  /* Side summary */
+  .summary-card { background: var(--surface2); border-radius: 8px; padding: 20px; border: 1px solid var(--border); }
+  .summary-card h4 { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 16px; }
+  .summary-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--surface3); font-size: 13px; }
+  .summary-item:last-child { border-bottom: none; }
+  .summary-item .label { color: var(--steel); }
+  .summary-item .value { color: var(--navy); font-weight: 700; }
+
+  .checklist { list-style: none; padding: 0; margin-top: 16px; }
+  .checklist li { padding: 6px 0; font-size: 13px; display: flex; align-items: center; gap: 8px; }
+  .check-done { color: var(--success); }
+  .check-pending { color: var(--border-strong); }
+  .check-active { color: var(--court-blue); font-weight: 700; }
+
+  /* Nav buttons */
+  .wizard-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="sidebar-brand"><h2>LitigationOS</h2><span>Pigors v. Watson</span></div>
+    <div class="sidebar-nav">
+      <div class="nav-section">Main</div>
+      <a class="nav-item" href="01_dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+      <a class="nav-item" href="02_cases.html"><span class="nav-icon">📁</span> Cases</a>
+      <a class="nav-item" href="03_filings.html"><span class="nav-icon">📄</span> Filings</a>
+      <a class="nav-item" href="04_evidence.html"><span class="nav-icon">🔍</span> Evidence</a>
+      <a class="nav-item" href="05_timeline.html"><span class="nav-icon">📅</span> Timeline</a>
+      <a class="nav-item" href="06_calendar.html"><span class="nav-icon">🗓️</span> Calendar</a>
+      <a class="nav-item" href="07_deadlines.html"><span class="nav-icon">⏰</span> Deadlines</a>
+      <div class="nav-section">Tools</div>
+      <a class="nav-item" href="08_settings.html"><span class="nav-icon">⚙️</span> Settings</a>
+      <a class="nav-item active" href="09_wizard.html"><span class="nav-icon">✨</span> Wizard</a>
+      <a class="nav-item" href="10_filing_detail.html"><span class="nav-icon">📋</span> Filing Detail</a>
+      <a class="nav-item" href="11_evidence_detail.html"><span class="nav-icon">🔎</span> Evidence Detail</a>
+      <a class="nav-item" href="12_search.html"><span class="nav-icon">🔍</span> Search</a>
+      <a class="nav-item" href="13_reports.html"><span class="nav-icon">📈</span> Reports</a>
+      <a class="nav-item" href="14_agent_fleet.html"><span class="nav-icon">🤖</span> Agent Fleet</a>
+    </div>
+    <div class="sidebar-footer">v9.0 MANBEARPIG · Local AI</div>
+  </nav>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="breadcrumb">
+      <a href="01_dashboard.html">Home</a><span class="sep">›</span>
+      <a href="03_filings.html">Filings</a><span class="sep">›</span>
+      <span>New Filing Wizard</span>
+    </div>
+    <div class="topbar-actions">
+      <input class="search-box" type="text" placeholder="Search… (⌘K)">
+      <button class="notif-btn">🔔<span class="notif-dot"></span></button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <h1 style="font-size:24px;font-weight:700;margin-bottom:16px;">New Filing Wizard</h1>
+
+    <!-- Progress -->
+    <div class="progress-wrap">
+      <div class="progress-label">
+        <span>Step 3 of 6 — Add Parties</span>
+        <span style="font-weight:700;">40%</span>
+      </div>
+      <div class="progress-bar-outer">
+        <div class="progress-bar-inner" style="width:40%;"></div>
+      </div>
+    </div>
+
+    <!-- Steps -->
+    <div class="steps">
+      <div class="step completed">
+        <div class="step-number">✓</div>
+        <span class="step-text">Select Type</span>
+      </div>
+      <div class="step-line done"></div>
+      <div class="step completed">
+        <div class="step-number">✓</div>
+        <span class="step-text">Choose Court</span>
+      </div>
+      <div class="step-line done"></div>
+      <div class="step active">
+        <div class="step-number">3</div>
+        <span class="step-text">Add Parties</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <span class="step-text">Attach Evidence</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-number">5</div>
+        <span class="step-text">Review</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-number">6</div>
+        <span class="step-text">Generate</span>
+      </div>
+    </div>
+
+    <!-- Wizard Content -->
+    <div class="wizard-grid">
+      <div>
+        <div class="card">
+          <h3 style="font-size:20px;font-weight:600;margin-bottom:20px;">Parties</h3>
+
+          <table class="party-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Contact</th>
+                <th style="width:80px;">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Andrew J. Pigors</strong></td>
+                <td><span class="role-badge role-plaintiff">Plaintiff</span></td>
+                <td style="font-size:13px;color:var(--steel);">Pro Se — Kent County, MI</td>
+                <td><button class="btn btn-secondary btn-sm">Edit</button></td>
+              </tr>
+              <tr>
+                <td><strong>Emily A. Watson</strong></td>
+                <td><span class="role-badge role-defendant">Defendant</span></td>
+                <td style="font-size:13px;color:var(--steel);">Represented — Atty. Smith</td>
+                <td><button class="btn btn-secondary btn-sm">Edit</button></td>
+              </tr>
+              <tr>
+                <td><strong>Lane A. Watson</strong></td>
+                <td><span class="role-badge role-codef">Co-Defendant</span></td>
+                <td style="font-size:13px;color:var(--steel);">Not yet served</td>
+                <td><button class="btn btn-secondary btn-sm">Edit</button></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4 style="font-size:16px;font-weight:600;margin-bottom:16px;margin-top:24px;font-family:'EB Garamond',serif;">Add New Party</h4>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="e.g. John Q. Public">
+            </div>
+            <div class="form-group">
+              <label>Role</label>
+              <select>
+                <option value="">Select role…</option>
+                <option>Plaintiff</option>
+                <option>Defendant</option>
+                <option>Co-Defendant</option>
+                <option>Intervenor</option>
+                <option>Guardian ad Litem</option>
+                <option>Attorney</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Address</label>
+              <input type="text" placeholder="Street address">
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="text" placeholder="(XXX) XXX-XXXX">
+            </div>
+            <div class="form-group" style="grid-column:1/-1;">
+              <label>Email</label>
+              <input type="email" placeholder="email@example.com">
+            </div>
+          </div>
+          <div style="margin-top:12px;">
+            <button class="btn btn-primary btn-sm">+ Add Party</button>
+          </div>
+        </div>
+
+        <!-- Nav -->
+        <div class="wizard-nav">
+          <button class="btn btn-secondary">← Back</button>
+          <button class="btn btn-secondary">Save Draft</button>
+          <button class="btn btn-primary">Next: Attach Evidence →</button>
+        </div>
+      </div>
+
+      <!-- Side Panel -->
+      <div>
+        <div class="summary-card" style="margin-bottom:16px;">
+          <h4>Filing Summary</h4>
+          <div class="summary-item">
+            <span class="label">Filing Type</span>
+            <span class="value">Motion</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Sub-Type</span>
+            <span class="value">Disqualification</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Court</span>
+            <span class="value">Kent County CC</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Case No.</span>
+            <span class="value mono" style="font-size:12px;">2024-001507-DC</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Lane</span>
+            <span class="value" style="color:var(--lane-a);">A — Custody</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Parties</span>
+            <span class="value">3 added</span>
+          </div>
+        </div>
+
+        <div class="summary-card">
+          <h4>Requirements Checklist</h4>
+          <ul class="checklist">
+            <li class="check-done">✅ Filing type selected</li>
+            <li class="check-done">✅ Court assigned</li>
+            <li class="check-active">🔵 Parties (min 2 required)</li>
+            <li class="check-pending">⬜ Evidence attached</li>
+            <li class="check-pending">⬜ Review &amp; sign</li>
+            <li class="check-pending">⬜ Generate document</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

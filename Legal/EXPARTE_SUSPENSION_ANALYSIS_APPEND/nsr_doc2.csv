@@ -1,0 +1,7 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+NoReply_20260105_131630_0002.pdf,2,2,factors in MCL 722.23 and the factors listed in the parenting time,best_interest_reference,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0002.pdf,2,3,"statute, MCL 722.27a(7),",parenting_time_statute_reference,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0002.pdf,2,8,"NW2d 480 (20'l O)- ""Custody decisions require findings under all of the best interest",best_interest_reference,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0002.pdf,2,41,in a domestic violence shelter shall not be construed as,restriction_prohibition,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0002.pdf,2,46,factors. MCL 722.27a(7).,parenting_time_statute_reference,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0002.pdf,2,74,722.27a(9).,parenting_time_statute_reference,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.

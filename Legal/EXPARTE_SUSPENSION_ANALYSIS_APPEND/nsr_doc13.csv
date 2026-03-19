@@ -1,0 +1,6 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+NoReply_20260105_131859_0005.pdf,13,2,Ex parte,ex_parte_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0005.pdf,13,23,ex parte,ex_parte_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0005.pdf,13,100,violates,contempt_or_violation,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0005.pdf,13,126,on ex parte,ex_parte_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0005.pdf,13,143,ex parte,ex_parte_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.

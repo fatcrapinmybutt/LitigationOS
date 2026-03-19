@@ -1,0 +1,97 @@
+# Filing Router rules (v0.1)
+# This is NOT a legal authority snapshot. It is a heuristic routing config.
+# The goal is to convert evidence signals into candidate vehicles + forums + gates.
+
+deadline_defaults:
+  coa_general_days: 21
+
+issue_keywords:
+  ex_parte: ["ex parte", "ex-parte"]
+  parenting_time_suspended: ["suspend parenting time", "parenting time suspended", "suspends parenting time", "no parenting time"]
+  drug_screen: ["drug screen", "drug test", "ua", "urinalysis"]
+  mental_health_eval: ["mental health evaluation", "psychological evaluation", "assessment"]
+  show_cause: ["show cause", "order to show cause"]
+  contempt: ["contempt", "criminal contempt", "civil contempt"]
+  ppo: ["personal protection order", "ppo", "stalking", "no contact"]
+
+vehicles:
+  - id: trial_motion_pt_restore
+    forum: TRIAL_COURT
+    vehicle_type: MOTION
+    title: "Motion to Restore Parenting Time / Set Hearing Promptly"
+    triggers_any: ["parenting_time_suspended", "ex_parte"]
+    weight: 1.0
+    outline:
+      - "I. Introduction"
+      - "II. Procedural Posture and Operating Order"
+      - "III. Facts Supported by Exhibits"
+      - "IV. Legal Standards (Michigan-only snapshot)"
+      - "V. Argument"
+      - "VI. Relief Requested"
+      - "Proposed Order"
+
+  - id: trial_motion_enforce_pt
+    forum: TRIAL_COURT
+    vehicle_type: MOTION
+    title: "Motion to Enforce Parenting Time / Make-Up Time"
+    triggers_any: ["parenting_time_suspended", "show_cause"]
+    weight: 0.8
+    outline:
+      - "I. Introduction"
+      - "II. Operating Order"
+      - "III. Violations / Withholding Windows"
+      - "IV. Relief Requested"
+      - "Proposed Order"
+
+  - id: coa_app_leave
+    forum: COA
+    vehicle_type: APP_LEAVE
+    title: "Application for Leave to Appeal (interlocutory / post-judgment)"
+    triggers_any: ["parenting_time_suspended", "contempt", "ppo"]
+    weight: 0.6
+    outline:
+      - "I. Statement of Jurisdiction"
+      - "II. Questions Presented"
+      - "III. Statement of Facts"
+      - "IV. Argument"
+      - "V. Relief Requested"
+      - "Appendix"
+
+  - id: coa_claim_appeal
+    forum: COA
+    vehicle_type: CLAIM_OF_APPEAL
+    title: "Claim of Appeal (final order)"
+    triggers_any: ["contempt", "ppo"]
+    weight: 0.55
+    outline:
+      - "I. Jurisdictional Statement"
+      - "II. Issues"
+      - "III. Facts"
+      - "IV. Relief Requested"
+      - "Appendix"
+
+  - id: superintending_control
+    forum: COA
+    vehicle_type: SUP_CTRL
+    title: "Complaint for Superintending Control (extraordinary)"
+    triggers_any: ["ex_parte", "parenting_time_suspended"]
+    weight: 0.35
+    outline:
+      - "I. Jurisdiction and Standard (extraordinary)"
+      - "II. Statement of Facts"
+      - "III. Why No Adequate Remedy Exists"
+      - "IV. Relief Requested"
+      - "Appendix"
+
+  - id: jtc_grievance
+    forum: JTC
+    vehicle_type: JTC_GRIEVANCE
+    title: "Judicial Tenure Commission Complaint Packet"
+    triggers_any: ["ex_parte", "contempt"]
+    weight: 0.25
+    outline:
+      - "I. Judge and Case Identification"
+      - "II. Chronology of Conduct"
+      - "III. Alleged Misconduct Categories"
+      - "IV. Evidence Index"
+      - "V. Requested Review"

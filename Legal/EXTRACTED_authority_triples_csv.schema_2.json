@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "authority_id": {
+      "description": "From: cyclepacks/authority/data/authority_triples.csv | From: cyclepacks/authority_merge/data/authority_triples.csv",
+      "type": "string"
+    },
+    "authority_type": {
+      "description": "From: cyclepacks/authority/data/authority_triples.csv | From: cyclepacks/authority_merge/data/authority_triples.csv",
+      "type": "string"
+    },
+    "citation": {
+      "description": "From: cyclepacks/authority/data/authority_triples.csv | From: cyclepacks/authority_merge/data/authority_triples.csv",
+      "type": "string"
+    },
+    "extracted_authority_triples_csv_id": {
+      "description": "Primary key.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "pinpoint": {
+      "description": "From: cyclepacks/authority/data/authority_triples.csv | From: cyclepacks/authority_merge/data/authority_triples.csv",
+      "type": "string"
+    },
+    "proposition": {
+      "description": "From: cyclepacks/authority/data/authority_triples.csv | From: cyclepacks/authority_merge/data/authority_triples.csv",
+      "type": "string"
+    },
+    "prov_activity": {
+      "description": "From: cyclepacks/authority/data/authority_triples.csv | From: cyclepacks/authority_merge/data/authority_triples.csv",
+      "type": "string"
+    },
+    "source_row_id": {
+      "description": "From: cyclepacks/authority/data/authority_triples.csv | From: cyclepacks/authority_merge/data/authority_triples.csv",
+      "type": "string"
+    },
+    "supporting_shard_id": {
+      "description": "From: cyclepacks/authority/data/authority_triples.csv | From: cyclepacks/authority_merge/data/authority_triples.csv",
+      "type": "string"
+    },
+    "triple_id": {
+      "description": "From: cyclepacks/authority/data/authority_triples.csv | From: cyclepacks/authority_merge/data/authority_triples.csv",
+      "type": "string"
+    }
+  },
+  "required": [
+    "extracted_authority_triples_csv_id"
+  ],
+  "title": "EXTRACTED_authority_triples_csv",
+  "type": "object",
+  "x_litigationos": {
+    "entity": "EXTRACTED_authority_triples_csv",
+    "generated_utc": "2026-01-20T05:12:07Z",
+    "primary_key": "extracted_authority_triples_csv_id",
+    "version": "v2026-01-19.3"
+  }
+}

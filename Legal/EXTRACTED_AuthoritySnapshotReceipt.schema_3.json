@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "extracted_authoritysnapshotreceipt_id": {
+      "description": "Primary key.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "generated_utc": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_snapshot_receipt.schema.json",
+      "type": "string"
+    },
+    "inputs_sha256": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_snapshot_receipt.schema.json",
+      "type": "string"
+    },
+    "outputs": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_snapshot_receipt.schema.json",
+      "type": "object"
+    },
+    "pack_manifest_path": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_snapshot_receipt.schema.json",
+      "type": "string"
+    },
+    "snapshot_id": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_snapshot_receipt.schema.json",
+      "type": "string"
+    },
+    "tool": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_snapshot_receipt.schema.json",
+      "type": "string"
+    },
+    "tool_version": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_snapshot_receipt.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_snapshot_receipt.schema.json",
+      "type": "string"
+    }
+  },
+  "required": [
+    "extracted_authoritysnapshotreceipt_id"
+  ],
+  "title": "EXTRACTED_AuthoritySnapshotReceipt",
+  "type": "object",
+  "x_litigationos": {
+    "entity": "EXTRACTED_AuthoritySnapshotReceipt",
+    "generated_utc": "2026-01-20T05:12:07Z",
+    "primary_key": "extracted_authoritysnapshotreceipt_id",
+    "version": "v2026-01-19.3"
+  }
+}

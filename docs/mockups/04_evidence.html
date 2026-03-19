@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Evidence</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+:root {
+  --navy:#0F172A;--slate:#334155;--steel:#64748B;--court-blue:#0369A1;--court-blue-hover:#075985;
+  --success:#059669;--success-bg:#ECFDF5;--warning:#D97706;--warning-bg:#FFFBEB;
+  --danger:#DC2626;--danger-bg:#FEF2F2;--info:#2563EB;--info-bg:#EFF6FF;
+  --surface:#FFFFFF;--surface-2:#F8FAFC;--surface-3:#F1F5F9;
+  --border:#E2E8F0;--border-strong:#CBD5E1;
+  --lane-a:#4F46E5;--lane-a-bg:#EEF2FF;--lane-b:#059669;--lane-b-bg:#ECFDF5;
+  --lane-c:#7C3AED;--lane-c-bg:#F5F3FF;--lane-d:#E11D48;--lane-d-bg:#FFF1F2;
+  --lane-e:#D97706;--lane-e-bg:#FFFBEB;--lane-f:#0284C7;--lane-f-bg:#F0F9FF;
+  --radius:8px;--radius-sm:6px;--shadow:0 1px 3px rgba(0,0,0,0.1);
+  --sidebar-w:240px;--topbar-h:56px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:14px}
+body{font-family:"Lato",sans-serif;color:var(--navy);background:var(--surface-2);line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"EB Garamond",serif}
+.mono{font-family:"JetBrains Mono",monospace;font-size:13px}
+a{color:var(--court-blue);text-decoration:none}a:hover{color:var(--court-blue-hover)}
+.app{display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--surface-2);border-right:1px solid var(--border);display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:100}
+.sidebar-brand{height:var(--topbar-h);display:flex;align-items:center;gap:10px;padding:0 20px;border-bottom:1px solid var(--border);font-family:"EB Garamond",serif;font-size:20px;font-weight:700;color:var(--navy)}
+.sidebar-brand .brand-dot{width:10px;height:10px;background:var(--court-blue);border-radius:50%}
+.sidebar-nav{flex:1;padding:12px 8px;overflow-y:auto}
+.nav-section{margin-bottom:16px}.nav-section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--steel);padding:4px 12px 6px}
+.nav-item{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:var(--radius-sm);color:var(--slate);font-size:13px;cursor:pointer;transition:background .15s,color .15s}
+.nav-item:hover{background:var(--surface-3)}.nav-item.active{background:var(--info-bg);color:var(--court-blue);font-weight:700}
+.nav-item i{width:18px;height:18px;flex-shrink:0}
+.nav-badge{margin-left:auto;font-size:11px;font-weight:700;padding:1px 7px;border-radius:10px;background:var(--danger-bg);color:var(--danger)}
+.main{flex:1;margin-left:var(--sidebar-w);display:flex;flex-direction:column}
+.topbar{height:var(--topbar-h);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 24px;gap:16px;position:sticky;top:0;z-index:50}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--steel)}.breadcrumb span{color:var(--navy);font-weight:700}
+.topbar-search{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--surface-3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:6px 12px;width:280px}
+.topbar-search input{border:none;background:transparent;outline:none;font-family:"Lato",sans-serif;font-size:13px;color:var(--navy);width:100%}.topbar-search input::placeholder{color:var(--steel)}
+.topbar-actions{display:flex;align-items:center;gap:12px}
+.topbar-icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--steel);position:relative}
+.topbar-icon:hover{background:var(--surface-3);color:var(--navy)}
+.notif-dot{position:absolute;top:6px;right:6px;width:8px;height:8px;background:var(--danger);border-radius:50%;border:2px solid var(--surface)}
+.content{padding:24px;max-width:1440px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.card-title{font-family:"EB Garamond",serif;font-size:20px;font-weight:600;color:var(--navy)}
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700}
+.badge-go{background:var(--success-bg);color:var(--success)}.badge-nogo{background:var(--danger-bg);color:var(--danger)}.badge-conditional{background:var(--warning-bg);color:var(--warning)}
+.badge-info{background:var(--info-bg);color:var(--info)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:var(--radius-sm);font-family:"Lato",sans-serif;font-size:13px;font-weight:700;cursor:pointer;border:none;transition:background .15s}
+.btn-primary{background:var(--court-blue);color:#fff}.btn-primary:hover{background:var(--court-blue-hover)}
+.btn-secondary{background:transparent;border:1px solid var(--border-strong);color:var(--slate)}.btn-secondary:hover{background:var(--surface-3)}
+.lane-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
+
+/* PAGE */
+.page-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.page-title{font-family:"EB Garamond",serif;font-size:32px;font-weight:700;color:var(--navy)}
+.stats-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:24px}
+.stat-pill{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);text-align:center}
+.stat-pill .sp-value{font-family:"EB Garamond",serif;font-size:24px;font-weight:700;color:var(--navy)}
+.stat-pill .sp-label{font-size:11px;color:var(--steel);text-transform:uppercase;letter-spacing:.04em}
+
+.evidence-layout{display:grid;grid-template-columns:200px 1fr;gap:16px}
+.filter-panel{display:flex;flex-direction:column;gap:16px}
+.filter-group{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
+.filter-group-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--steel);margin-bottom:8px}
+.filter-option{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:13px;color:var(--slate);cursor:pointer}
+.filter-option:hover{color:var(--court-blue)}
+.filter-option.active{color:var(--court-blue);font-weight:700}
+.filter-count{margin-left:auto;font-size:11px;color:var(--steel)}
+
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{background:var(--surface-3);padding:10px 12px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--steel);border-bottom:1px solid var(--border);white-space:nowrap}
+tbody td{padding:10px 12px;border-bottom:1px solid var(--border);white-space:nowrap}
+tbody tr:nth-child(even){background:var(--surface-2)}
+tbody tr:hover{background:var(--info-bg)}
+.strength-bar{display:inline-flex;gap:2px}
+.strength-bar .sb{width:6px;height:16px;border-radius:2px;background:var(--surface-3)}
+.strength-bar .sb.filled{background:var(--success)}
+.strength-bar .sb.med{background:var(--warning)}
+.strength-bar .sb.low{background:var(--danger)}
+
+/* DAG */
+.dag-section{margin-top:24px}
+.dag-visual{display:flex;align-items:center;gap:0;padding:24px;background:var(--surface-3);border-radius:var(--radius);overflow-x:auto}
+.dag-node{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:100px}
+.dag-circle{width:48px;height:48px;border-radius:50%;border:2px solid var(--border-strong);display:flex;align-items:center;justify-content:center;background:var(--surface)}
+.dag-circle.active{border-color:var(--court-blue);background:var(--info-bg)}
+.dag-label{font-size:11px;color:var(--steel);text-align:center}
+.dag-arrow{width:40px;height:2px;background:var(--border-strong);position:relative;flex-shrink:0}
+.dag-arrow::after{content:'';position:absolute;right:-1px;top:-4px;border:5px solid transparent;border-left:6px solid var(--border-strong)}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar-brand"><span class="brand-dot"></span> LitigationOS</div>
+    <nav class="sidebar-nav">
+      <div class="nav-section"><div class="nav-section-label">Overview</div>
+        <a class="nav-item" href="01_dashboard.html"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+        <a class="nav-item" href="02_cases.html"><i data-lucide="briefcase"></i> Cases <span class="nav-badge">6</span></a>
+        <a class="nav-item" href="05_timeline.html"><i data-lucide="git-branch"></i> Timeline</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">Filings</div>
+        <a class="nav-item" href="03_filings.html"><i data-lucide="file-text"></i> Filings <span class="nav-badge">3</span></a>
+        <a class="nav-item active" href="04_evidence.html"><i data-lucide="archive"></i> Evidence</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">Deadlines</div>
+        <a class="nav-item" href="06_calendar.html"><i data-lucide="calendar"></i> Calendar</a>
+        <a class="nav-item" href="07_deadlines.html"><i data-lucide="alarm-clock"></i> Deadlines <span class="nav-badge">3</span></a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">System</div>
+        <a class="nav-item"><i data-lucide="cpu"></i> Agents</a>
+        <a class="nav-item"><i data-lucide="database"></i> Database</a>
+        <a class="nav-item"><i data-lucide="settings"></i> Settings</a>
+      </div>
+    </nav>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="breadcrumb"><i data-lucide="home" style="width:14px;height:14px"></i> / <span>Evidence</span></div>
+      <div class="topbar-search"><i data-lucide="search" style="width:14px;height:14px;color:var(--steel)"></i><input type="text" placeholder="Search evidence by ID, Bates#, or keyword…"></div>
+      <div class="topbar-actions">
+        <div class="topbar-icon"><i data-lucide="bell" style="width:18px;height:18px"></i><span class="notif-dot"></span></div>
+        <div class="topbar-icon"><i data-lucide="user" style="width:18px;height:18px"></i></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="page-header">
+        <div class="page-title">Evidence Manager</div>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-secondary"><i data-lucide="upload" style="width:16px;height:16px"></i> Ingest</button>
+          <button class="btn btn-primary"><i data-lucide="download" style="width:16px;height:16px"></i> Export Index</button>
+        </div>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat-pill"><div class="sp-value">308,247</div><div class="sp-label">Total Items</div></div>
+        <div class="stat-pill"><div class="sp-value">142,891</div><div class="sp-label">Documents</div></div>
+        <div class="stat-pill"><div class="sp-value">87,432</div><div class="sp-label">Messages</div></div>
+        <div class="stat-pill"><div class="sp-value">41,206</div><div class="sp-label">Financial</div></div>
+        <div class="stat-pill"><div class="sp-value">94.2%</div><div class="sp-label">Coverage</div></div>
+      </div>
+
+      <div class="evidence-layout">
+        <div class="filter-panel">
+          <div class="filter-group">
+            <div class="filter-group-title">Lane</div>
+            <div class="filter-option active"><span class="lane-dot" style="background:var(--lane-a)"></span>A Custody<span class="filter-count">142K</span></div>
+            <div class="filter-option"><span class="lane-dot" style="background:var(--lane-b)"></span>B Housing<span class="filter-count">38K</span></div>
+            <div class="filter-option"><span class="lane-dot" style="background:var(--lane-d)"></span>D PPO<span class="filter-count">54K</span></div>
+            <div class="filter-option"><span class="lane-dot" style="background:var(--lane-e)"></span>E Misconduct<span class="filter-count">28K</span></div>
+            <div class="filter-option"><span class="lane-dot" style="background:var(--lane-f)"></span>F Appellate<span class="filter-count">46K</span></div>
+          </div>
+          <div class="filter-group">
+            <div class="filter-group-title">Type</div>
+            <div class="filter-option">📄 Documents<span class="filter-count">142K</span></div>
+            <div class="filter-option">📷 Photos<span class="filter-count">36K</span></div>
+            <div class="filter-option">💬 Messages<span class="filter-count">87K</span></div>
+            <div class="filter-option">💰 Financial<span class="filter-count">41K</span></div>
+            <div class="filter-option">🎙️ Audio<span class="filter-count">1.7K</span></div>
+          </div>
+          <div class="filter-group">
+            <div class="filter-group-title">Strength</div>
+            <div class="filter-option">★★★★★ Critical<span class="filter-count">8K</span></div>
+            <div class="filter-option">★★★★ Strong<span class="filter-count">42K</span></div>
+            <div class="filter-option">★★★ Moderate<span class="filter-count">118K</span></div>
+            <div class="filter-option">★★ Weak<span class="filter-count">94K</span></div>
+            <div class="filter-option">★ Minimal<span class="filter-count">46K</span></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card" style="padding:0">
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>ID</th><th>Type</th><th>Description</th><th>Lane</th><th>Bates #</th><th>Strength</th><th>Claims</th></tr></thead>
+                <tbody>
+                  <tr><td class="mono">EVD-00142</td><td>📄 PDF</td><td>CPS Investigation Report — Initial Visit</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">PIGORS-00142</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span></div></td><td><span class="badge badge-info">4</span></td></tr>
+                  <tr><td class="mono">EVD-00856</td><td>💬 Text</td><td>Watson text messages re: custody exchange 12/2023</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">PIGORS-00856</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb"></span></div></td><td><span class="badge badge-info">3</span></td></tr>
+                  <tr><td class="mono">EVD-01203</td><td>📷 Photo</td><td>Housing conditions — mold in bathroom Unit 7B</td><td><span class="lane-dot" style="background:var(--lane-b)"></span>B</td><td class="mono">PIGORS-01203</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span></div></td><td><span class="badge badge-info">2</span></td></tr>
+                  <tr><td class="mono">EVD-01897</td><td>💰 Stmt</td><td>Bank statement showing unauthorized withdrawals</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">PIGORS-01897</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb"></span><span class="sb"></span></div></td><td><span class="badge badge-info">1</span></td></tr>
+                  <tr><td class="mono">EVD-02104</td><td>📄 PDF</td><td>Judge McNeill ex parte communication log</td><td><span class="lane-dot" style="background:var(--lane-e)"></span>E</td><td class="mono">PIGORS-02104</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span></div></td><td><span class="badge badge-info">5</span></td></tr>
+                  <tr><td class="mono">EVD-02567</td><td>📄 Order</td><td>PPO Temporary Order — 10/2023</td><td><span class="lane-dot" style="background:var(--lane-d)"></span>D</td><td class="mono">PIGORS-02567</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb"></span></div></td><td><span class="badge badge-info">2</span></td></tr>
+                  <tr><td class="mono">EVD-03201</td><td>🎙️ Audio</td><td>Hearing recording — custody 01/15/2024</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">PIGORS-03201</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb"></span><span class="sb"></span></div></td><td><span class="badge badge-info">3</span></td></tr>
+                  <tr><td class="mono">EVD-03789</td><td>💬 Email</td><td>Shady Oaks management maintenance denial chain</td><td><span class="lane-dot" style="background:var(--lane-b)"></span>B</td><td class="mono">PIGORS-03789</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb"></span></div></td><td><span class="badge badge-info">2</span></td></tr>
+                  <tr><td class="mono">EVD-04102</td><td>📄 Brief</td><td>COA Docket Statement — final draft</td><td><span class="lane-dot" style="background:var(--lane-f)"></span>F</td><td class="mono">PIGORS-04102</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span></div></td><td><span class="badge badge-info">6</span></td></tr>
+                  <tr><td class="mono">EVD-04456</td><td>📷 Photo</td><td>Child injury documentation — 03/2024</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">PIGORS-04456</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span></div></td><td><span class="badge badge-info">4</span></td></tr>
+                  <tr><td class="mono">EVD-05012</td><td>💰 Ledger</td><td>Attorney fee calculation spreadsheet</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">PIGORS-05012</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb"></span><span class="sb"></span><span class="sb"></span></div></td><td><span class="badge badge-info">1</span></td></tr>
+                  <tr><td class="mono">EVD-05678</td><td>📄 Report</td><td>GAL Report — custody recommendation</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">PIGORS-05678</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb"></span></div></td><td><span class="badge badge-info">5</span></td></tr>
+                  <tr><td class="mono">EVD-06234</td><td>💬 Text</td><td>Threatening messages from Watson — 07/2024</td><td><span class="lane-dot" style="background:var(--lane-d)"></span>D</td><td class="mono">PIGORS-06234</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span></div></td><td><span class="badge badge-info">3</span></td></tr>
+                  <tr><td class="mono">EVD-06890</td><td>📄 Transcript</td><td>Deposition transcript — CPS Investigator #1</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">PIGORS-06890</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb"></span><span class="sb"></span></div></td><td><span class="badge badge-info">2</span></td></tr>
+                  <tr><td class="mono">EVD-07345</td><td>📄 Motion</td><td>Disqualification motion — Judge McNeill</td><td><span class="lane-dot" style="background:var(--lane-e)"></span>E</td><td class="mono">PIGORS-07345</td><td><div class="strength-bar"><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb filled"></span><span class="sb"></span></div></td><td><span class="badge badge-info">4</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="dag-section">
+            <div class="card">
+              <div class="card-header"><div class="card-title">Evidence Processing Chain</div></div>
+              <div class="dag-visual">
+                <div class="dag-node"><div class="dag-circle active"><i data-lucide="hard-drive" style="width:20px;height:20px;color:var(--court-blue)"></i></div><div class="dag-label">Raw Files<br><span class="mono" style="font-size:10px">125K+</span></div></div>
+                <div class="dag-arrow"></div>
+                <div class="dag-node"><div class="dag-circle active"><i data-lucide="scan" style="width:20px;height:20px;color:var(--court-blue)"></i></div><div class="dag-label">Extracted<br><span class="mono" style="font-size:10px">308K</span></div></div>
+                <div class="dag-arrow"></div>
+                <div class="dag-node"><div class="dag-circle active"><i data-lucide="tags" style="width:20px;height:20px;color:var(--court-blue)"></i></div><div class="dag-label">Classified<br><span class="mono" style="font-size:10px">296K</span></div></div>
+                <div class="dag-arrow"></div>
+                <div class="dag-node"><div class="dag-circle active"><i data-lucide="link" style="width:20px;height:20px;color:var(--court-blue)"></i></div><div class="dag-label">Linked<br><span class="mono" style="font-size:10px">284K</span></div></div>
+                <div class="dag-arrow"></div>
+                <div class="dag-node"><div class="dag-circle"><i data-lucide="shield-check" style="width:20px;height:20px;color:var(--steel)"></i></div><div class="dag-label">Court-Ready<br><span class="mono" style="font-size:10px">272K</span></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>

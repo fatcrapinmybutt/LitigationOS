@@ -1,0 +1,46 @@
+// LITIGATIONOS MI APPELLATE DOCFORGE V8
+{
+  "version": "V8_MI_APPELLATE_DOCFORGE",
+  "jurisdiction": "Michigan",
+  "authority_priority": ["MCR", "MCL", "MRE", "MJI_BENCHBOOKS", "SCAO_FORMS", "VERIFIED_LOCAL_RULES"],
+  "runtime_invariants": {
+    "originals_immutable": true,
+    "derived_append_only": true,
+    "no_sha256_default": true,
+    "fail_soft_unknowns": true,
+    "no_placeholders": true
+  },
+  "integrity": {
+    "mode": "IdentityKeyV1",
+    "identity_fields": ["source_path_norm", "bytes_size", "mtime_utc", "ctime_utc", "file_id", "volume_serial"],
+    "optional_fastsig_mode": {
+      "enabled": false,
+      "algo": "xxh3_sampled",
+      "first_kb": 64,
+      "last_kb": 64,
+      "activate_only_when": ["dedupe", "dispute"]
+    }
+  },
+  "workspace": {
+    "roots": ["F:/", "H:/LitigationOS", "gdrive:/EDS-USB", "gdrive:/Litigation_OS$", "gdrive:/LITIGATION_INTAKE/"],
+    "derived_root": "F:/LitigationOS_DERIVED_V8",
+    "mirror_mode": "pointers_only"
+  },
+  "modes": {
+    "extraction": { "pdf": "auto", "docx": "on", "txt_md": "on", "ocr": "on_demand", "asr": "on_demand" },
+    "index": { "sqlite_fts5": true, "embeddings_optional": true, "embed_model_hint": "nomic-embed-text-v1.5" },
+    "synthesis": { "strategy": "PackRouter->Claude/Copilot", "never_send_entire_corpus": true }
+  },
+  "lanes": {
+    "MEEK1": ["Housing", "Shady Oaks", "LT", "Utilities", "EGLE", "MHP"],
+    "MEEK2": ["Custody", "FOC", "Parenting Time", "14th Circuit", "Ex Parte", "MCL 722"],
+    "MEEK3": ["PPO", "Contempt", "Show Cause", "Harassment", "Stalking narrative"],
+    "MEEK4": ["Canon", "JTC", "Judicial bias", "COA", "MSC", "Recusal"]
+  },
+  "artifact_families": [
+    "CASE_STATE","VehicleMap","ContextPack","SoRLedgerDelta","ExhibitMatrix","BiTemporalTimeline",
+    "AuthorityTriples","ContradictionMap","Deadlines","ValidationRedTeam","SBNA",
+    "DraftBlocks","ProposedOrder","ServiceChecklist","CourtPackManifest"
+  ],
+  "unknown_token": "UNKNOWN_REQUIRED::<field>::ACQUIRE_FROM::<source>"
+}

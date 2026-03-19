@@ -1,0 +1,3 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+NoReply_20260105_131630_0007.pdf,7,9,Judge:,record_fact_judge_identification,court_notice,NO (factual/procedural/meta),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0007.pdf,7,46,PTY NTF,procedural_fact_party_notification,court_notice,NO (factual/procedural/meta),Classifier v6 + doc-role v11.

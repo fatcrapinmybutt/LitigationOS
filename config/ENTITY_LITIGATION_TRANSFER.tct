@@ -1,0 +1,59 @@
+{
+    "entity_verified_dissolution": {
+        "entity_name": "SHADY OAKS PARK MHP LLC",
+        "lara_id": "802157324",
+        "status": "Dissolved",
+        "dissolution_date": "2023-02-15",
+        "legal_basis": "MCL 450.1832(1)(b)",
+        "used_in_eviction": true
+    },
+    "conflicting_entity": {
+        "entity_name": "SHADY OAKS MHP LLC",
+        "lara_id": "802821638",
+        "status": "Active",
+        "formation_date": "2022-04-25",
+        "agent": "Non-CT Corporation",
+        "not_used_in_filings": true
+    },
+    "filings_by_dissolved_entity": [
+        "Eviction case in 60th District Court",
+        "Rent collections",
+        "Lease agreement"
+    ],
+    "legal_remedies": {
+        "motions": [
+            "Motion to Void Judgment and Strike Filings by Dissolved Entity",
+            "Motion for Sanctions and Judicial Notice of Entity Dissolution",
+            "Verified Complaint for Damages, Emotional Distress, and Civil Fraud"
+        ],
+        "supporting_laws": [
+            "MCL 450.1832(1)(b)",
+            "MCR 2.612(C)(1)(a), (f)",
+            "MCR 2.114(C), (D)(2)",
+            "MCL 600.2591"
+        ]
+    },
+    "pro_se_equivalent_value": {
+        "hourly_rate": 250,
+        "hours_per_week": 15,
+        "weeks": 74,
+        "total_hours": 1110,
+        "value": 277500
+    },
+    "custody_harm": {
+        "decline_date": "2024-07-17",
+        "estimated_lost_days": 36,
+        "cause": "Housing instability from landlord's conduct",
+        "legal_canon": [
+            "Troxel v. Granville, 530 U.S. 57 (2000)",
+            "Santosky v. Kramer, 455 U.S. 745 (1982)"
+        ]
+    },
+    "exhibits": {
+        "A": "LARA Summary for SHADY OAKS PARK MHP LLC",
+        "B": "SOS Title docs showing SHADY OAKS MHP LLC",
+        "C": "Eviction filings naming SHADY OAKS PARK MHP LLC",
+        "D": "EGLE Sewage Violation Report",
+        "E": "HUD/MHAction flyer"
+    }
+}

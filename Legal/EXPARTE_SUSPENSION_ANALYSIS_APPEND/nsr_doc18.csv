@@ -1,0 +1,10 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+NoReply_20260105_131859_0010.pdf,18,11,"record and ex parte, contraiy",ex_parte_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0010.pdf,18,13,on ex parte,ex_parte_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0010.pdf,18,33,evaluation.,mental_health_assessment,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0010.pdf,18,36,"9, 2025, Judge McNeill",record_fact_judge_identification,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0010.pdf,18,49,evaluation.,mental_health_assessment,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0010.pdf,18,59,that I posed a danger to Lincoln,anger_characterization,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0010.pdf,18,60,or that unsupervised,parenting_time_restriction,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0010.pdf,18,67,evaluation.,mental_health_assessment,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0010.pdf,18,109,"time was denied, and I had no contact",parenting_time_restriction,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.

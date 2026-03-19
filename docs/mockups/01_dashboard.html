@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+/* ========== DESIGN TOKENS ========== */
+:root {
+  --navy: #0F172A;
+  --slate: #334155;
+  --steel: #64748B;
+  --court-blue: #0369A1;
+  --court-blue-hover: #075985;
+  --success: #059669; --success-bg: #ECFDF5;
+  --warning: #D97706; --warning-bg: #FFFBEB;
+  --danger: #DC2626;  --danger-bg: #FEF2F2;
+  --info: #2563EB;    --info-bg: #EFF6FF;
+  --surface: #FFFFFF; --surface-2: #F8FAFC; --surface-3: #F1F5F9;
+  --border: #E2E8F0;  --border-strong: #CBD5E1;
+  --lane-a: #4F46E5; --lane-a-bg: #EEF2FF;
+  --lane-b: #059669; --lane-b-bg: #ECFDF5;
+  --lane-c: #7C3AED; --lane-c-bg: #F5F3FF;
+  --lane-d: #E11D48; --lane-d-bg: #FFF1F2;
+  --lane-e: #D97706; --lane-e-bg: #FFFBEB;
+  --lane-f: #0284C7; --lane-f-bg: #F0F9FF;
+  --radius: 8px;
+  --radius-sm: 6px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.1);
+  --sidebar-w: 240px;
+  --topbar-h: 56px;
+}
+
+/* ========== RESET ========== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 14px; }
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--navy);
+  background: var(--surface-2);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: "EB Garamond", serif; }
+.mono { font-family: "JetBrains Mono", monospace; font-size: 13px; }
+a { color: var(--court-blue); text-decoration: none; }
+a:hover { color: var(--court-blue-hover); }
+
+/* ========== LAYOUT ========== */
+.app { display: flex; min-height: 100vh; }
+.sidebar {
+  width: var(--sidebar-w); min-width: var(--sidebar-w);
+  background: var(--surface-2); border-right: 1px solid var(--border);
+  display: flex; flex-direction: column; position: fixed; top: 0; left: 0; bottom: 0; z-index: 100;
+}
+.sidebar-brand {
+  height: var(--topbar-h); display: flex; align-items: center; gap: 10px;
+  padding: 0 20px; border-bottom: 1px solid var(--border);
+  font-family: "EB Garamond", serif; font-size: 20px; font-weight: 700; color: var(--navy);
+}
+.sidebar-brand .brand-dot { width: 10px; height: 10px; background: var(--court-blue); border-radius: 50%; }
+.sidebar-nav { flex: 1; padding: 12px 8px; overflow-y: auto; }
+.nav-section { margin-bottom: 16px; }
+.nav-section-label {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+  color: var(--steel); padding: 4px 12px 6px; user-select: none;
+}
+.nav-item {
+  display: flex; align-items: center; gap: 10px; padding: 8px 12px;
+  border-radius: var(--radius-sm); color: var(--slate); font-size: 13px; font-weight: 400;
+  cursor: pointer; transition: background 0.15s, color 0.15s;
+}
+.nav-item:hover { background: var(--surface-3); }
+.nav-item.active { background: var(--info-bg); color: var(--court-blue); font-weight: 700; }
+.nav-item i { width: 18px; height: 18px; flex-shrink: 0; }
+.nav-badge {
+  margin-left: auto; font-size: 11px; font-weight: 700; padding: 1px 7px;
+  border-radius: 10px; background: var(--danger-bg); color: var(--danger);
+}
+
+.main { flex: 1; margin-left: var(--sidebar-w); display: flex; flex-direction: column; }
+.topbar {
+  height: var(--topbar-h); background: var(--surface); border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; padding: 0 24px; gap: 16px; position: sticky; top: 0; z-index: 50;
+}
+.breadcrumb { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--steel); }
+.breadcrumb span { color: var(--navy); font-weight: 700; }
+.topbar-search {
+  margin-left: auto; display: flex; align-items: center; gap: 8px;
+  background: var(--surface-3); border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 6px 12px; width: 280px;
+}
+.topbar-search input {
+  border: none; background: transparent; outline: none; font-family: "Lato", sans-serif;
+  font-size: 13px; color: var(--navy); width: 100%;
+}
+.topbar-search input::placeholder { color: var(--steel); }
+.topbar-actions { display: flex; align-items: center; gap: 12px; }
+.topbar-icon {
+  width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: var(--steel); position: relative;
+}
+.topbar-icon:hover { background: var(--surface-3); color: var(--navy); }
+.notif-dot {
+  position: absolute; top: 6px; right: 6px; width: 8px; height: 8px;
+  background: var(--danger); border-radius: 50%; border: 2px solid var(--surface);
+}
+
+.content { padding: 24px; max-width: 1440px; }
+
+/* ========== CARDS ========== */
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 24px; box-shadow: var(--shadow);
+}
+.card-header {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;
+}
+.card-title { font-family: "EB Garamond", serif; font-size: 20px; font-weight: 600; color: var(--navy); }
+
+/* ========== STAT CARDS ========== */
+.stats-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; margin-bottom: 24px; }
+.stat-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 20px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 4px;
+}
+.stat-card .stat-icon {
+  width: 40px; height: 40px; border-radius: var(--radius-sm); display: flex; align-items: center;
+  justify-content: center; margin-bottom: 8px;
+}
+.stat-card .stat-value { font-family: "EB Garamond", serif; font-size: 28px; font-weight: 700; color: var(--navy); }
+.stat-card .stat-label { font-size: 12px; color: var(--steel); text-transform: uppercase; letter-spacing: 0.05em; }
+.stat-card .stat-change { font-size: 12px; font-weight: 700; }
+.stat-change.up { color: var(--success); }
+.stat-change.down { color: var(--danger); }
+
+/* ========== LANES ========== */
+.lanes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+.lane-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 20px; box-shadow: var(--shadow); border-top: 3px solid var(--border);
+}
+.lane-card .lane-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.lane-badge {
+  width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center;
+  justify-content: center; font-family: "EB Garamond", serif; font-weight: 700; font-size: 16px; color: #fff;
+}
+.lane-card .lane-title { font-family: "EB Garamond", serif; font-size: 18px; font-weight: 600; }
+.lane-card .lane-case { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--steel); }
+.lane-stats { display: flex; gap: 16px; margin: 12px 0; }
+.lane-stat { display: flex; flex-direction: column; }
+.lane-stat .ls-value { font-weight: 700; font-size: 18px; color: var(--navy); }
+.lane-stat .ls-label { font-size: 11px; color: var(--steel); text-transform: uppercase; letter-spacing: 0.04em; }
+.lane-deadline { font-size: 12px; color: var(--steel); display: flex; align-items: center; gap: 4px; margin-top: 8px; }
+.lane-deadline .dl-urgent { color: var(--danger); font-weight: 700; }
+.lane-deadline .dl-normal { color: var(--warning); font-weight: 700; }
+
+/* ========== ACTIVITY + URGENCY ========== */
+.bottom-grid { display: grid; grid-template-columns: 1fr 380px; gap: 16px; margin-bottom: 24px; }
+.activity-list { display: flex; flex-direction: column; }
+.activity-item {
+  display: flex; align-items: flex-start; gap: 12px; padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.activity-item:last-child { border-bottom: none; }
+.activity-dot {
+  width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; flex-shrink: 0;
+}
+.activity-text { font-size: 13px; color: var(--slate); }
+.activity-text strong { color: var(--navy); }
+.activity-time { font-size: 11px; color: var(--steel); margin-top: 2px; }
+
+.urgency-item {
+  display: flex; align-items: center; gap: 12px; padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.urgency-item:last-child { border-bottom: none; }
+.urgency-days {
+  min-width: 48px; height: 32px; border-radius: var(--radius-sm); display: flex;
+  align-items: center; justify-content: center; font-weight: 700; font-size: 13px;
+}
+.urgency-days.critical { background: var(--danger-bg); color: var(--danger); }
+.urgency-days.warn { background: var(--warning-bg); color: var(--warning); }
+.urgency-days.ok { background: var(--success-bg); color: var(--success); }
+.urgency-label { font-size: 13px; color: var(--navy); }
+.urgency-court { font-size: 11px; color: var(--steel); }
+
+/* ========== QUICK ACTIONS ========== */
+.quick-actions { display: flex; gap: 12px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px;
+  border-radius: var(--radius-sm); font-family: "Lato", sans-serif; font-size: 13px;
+  font-weight: 700; cursor: pointer; border: none; transition: background 0.15s, box-shadow 0.15s;
+}
+.btn-primary { background: var(--court-blue); color: #fff; }
+.btn-primary:hover { background: var(--court-blue-hover); }
+.btn-secondary { background: transparent; border: 1px solid var(--border-strong); color: var(--slate); }
+.btn-secondary:hover { background: var(--surface-3); }
+.btn-danger { background: var(--danger); color: #fff; }
+.btn-danger:hover { background: #B91C1C; }
+
+/* ========== BADGE ========== */
+.badge {
+  display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 10px;
+  font-size: 11px; font-weight: 700;
+}
+.badge-go { background: var(--success-bg); color: var(--success); }
+.badge-nogo { background: var(--danger-bg); color: var(--danger); }
+.badge-conditional { background: var(--warning-bg); color: var(--warning); }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-brand"><span class="brand-dot"></span> LitigationOS</div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-section-label">Overview</div>
+        <a class="nav-item active" href="01_dashboard.html"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+        <a class="nav-item" href="02_cases.html"><i data-lucide="briefcase"></i> Cases <span class="nav-badge">6</span></a>
+        <a class="nav-item" href="05_timeline.html"><i data-lucide="git-branch"></i> Timeline</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-label">Filings</div>
+        <a class="nav-item" href="03_filings.html"><i data-lucide="file-text"></i> Filings <span class="nav-badge">3</span></a>
+        <a class="nav-item" href="04_evidence.html"><i data-lucide="archive"></i> Evidence</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-label">Deadlines</div>
+        <a class="nav-item" href="06_calendar.html"><i data-lucide="calendar"></i> Calendar</a>
+        <a class="nav-item" href="07_deadlines.html"><i data-lucide="alarm-clock"></i> Deadlines <span class="nav-badge">3</span></a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-label">System</div>
+        <a class="nav-item"><i data-lucide="cpu"></i> Agents</a>
+        <a class="nav-item"><i data-lucide="database"></i> Database</a>
+        <a class="nav-item"><i data-lucide="settings"></i> Settings</a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main">
+    <header class="topbar">
+      <div class="breadcrumb"><i data-lucide="home" style="width:14px;height:14px"></i> / <span>Dashboard</span></div>
+      <div class="topbar-search"><i data-lucide="search" style="width:14px;height:14px;color:var(--steel)"></i><input type="text" placeholder="Search filings, evidence, deadlines…"></div>
+      <div class="topbar-actions">
+        <div class="topbar-icon"><i data-lucide="bell" style="width:18px;height:18px"></i><span class="notif-dot"></span></div>
+        <div class="topbar-icon"><i data-lucide="user" style="width:18px;height:18px"></i></div>
+      </div>
+    </header>
+
+    <div class="content">
+      <!-- STAT CARDS -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-icon" style="background:var(--info-bg);color:var(--info)"><i data-lucide="file-text" style="width:20px;height:20px"></i></div>
+          <div class="stat-value">26</div>
+          <div class="stat-label">Filing Packages</div>
+          <div class="stat-change up">↑ 4 this week</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="background:var(--success-bg);color:var(--success)"><i data-lucide="quote" style="width:20px;height:20px"></i></div>
+          <div class="stat-value">308K+</div>
+          <div class="stat-label">Evidence Quotes</div>
+          <div class="stat-change up">↑ 12K ingested</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="background:var(--danger-bg);color:var(--danger)"><i data-lucide="alarm-clock" style="width:20px;height:20px"></i></div>
+          <div class="stat-value">3</div>
+          <div class="stat-label">Urgent Deadlines</div>
+          <div class="stat-change down">2 critical</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="background:var(--lane-a-bg);color:var(--lane-a)"><i data-lucide="scale" style="width:20px;height:20px"></i></div>
+          <div class="stat-value">6</div>
+          <div class="stat-label">Case Lanes</div>
+          <div class="stat-change up">All active</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="background:var(--lane-c-bg);color:var(--lane-c)"><i data-lucide="cpu" style="width:20px;height:20px"></i></div>
+          <div class="stat-value">155+</div>
+          <div class="stat-label">Agents</div>
+          <div class="stat-change up">Fleet nominal</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon" style="background:var(--surface-3);color:var(--slate)"><i data-lucide="database" style="width:20px;height:20px"></i></div>
+          <div class="stat-value">694</div>
+          <div class="stat-label">DB Tables</div>
+          <div class="stat-change up">10.22 GB</div>
+        </div>
+      </div>
+
+      <!-- LANE OVERVIEW -->
+      <div class="card-header"><div class="card-title">Case Lanes</div></div>
+      <div class="lanes-grid">
+        <div class="lane-card" style="border-top-color:var(--lane-a)">
+          <div class="lane-header">
+            <div class="lane-badge" style="background:var(--lane-a)">A</div>
+            <div><div class="lane-title">Watson Custody</div><div class="lane-case">2024-001507-DC</div></div>
+          </div>
+          <div class="lane-stats">
+            <div class="lane-stat"><div class="ls-value">8</div><div class="ls-label">Filings</div></div>
+            <div class="lane-stat"><div class="ls-value">142K</div><div class="ls-label">Evidence</div></div>
+            <div class="lane-stat"><div class="ls-value">85%</div><div class="ls-label">Ready</div></div>
+          </div>
+          <div class="lane-deadline"><i data-lucide="clock" style="width:12px;height:12px"></i> Next: <span class="dl-urgent">COA Record — 5 days</span></div>
+        </div>
+        <div class="lane-card" style="border-top-color:var(--lane-b)">
+          <div class="lane-header">
+            <div class="lane-badge" style="background:var(--lane-b)">B</div>
+            <div><div class="lane-title">Shady Oaks Housing</div><div class="lane-case">2025-002760-CZ</div></div>
+          </div>
+          <div class="lane-stats">
+            <div class="lane-stat"><div class="ls-value">4</div><div class="ls-label">Filings</div></div>
+            <div class="lane-stat"><div class="ls-value">38K</div><div class="ls-label">Evidence</div></div>
+            <div class="lane-stat"><div class="ls-value">72%</div><div class="ls-label">Ready</div></div>
+          </div>
+          <div class="lane-deadline"><i data-lucide="clock" style="width:12px;height:12px"></i> Next: <span class="dl-normal">Discovery — 18 days</span></div>
+        </div>
+        <div class="lane-card" style="border-top-color:var(--lane-c)">
+          <div class="lane-header">
+            <div class="lane-badge" style="background:var(--lane-c)">C</div>
+            <div><div class="lane-title">Convergence</div><div class="lane-case">Multi-lane</div></div>
+          </div>
+          <div class="lane-stats">
+            <div class="lane-stat"><div class="ls-value">3</div><div class="ls-label">Filings</div></div>
+            <div class="lane-stat"><div class="ls-value">308K</div><div class="ls-label">Evidence</div></div>
+            <div class="lane-stat"><div class="ls-value">68%</div><div class="ls-label">Ready</div></div>
+          </div>
+          <div class="lane-deadline"><i data-lucide="clock" style="width:12px;height:12px"></i> Next: <span class="dl-normal">Sync — 22 days</span></div>
+        </div>
+        <div class="lane-card" style="border-top-color:var(--lane-d)">
+          <div class="lane-header">
+            <div class="lane-badge" style="background:var(--lane-d)">D</div>
+            <div><div class="lane-title">PPO / Protection</div><div class="lane-case">2023-5907-PP</div></div>
+          </div>
+          <div class="lane-stats">
+            <div class="lane-stat"><div class="ls-value">5</div><div class="ls-label">Filings</div></div>
+            <div class="lane-stat"><div class="ls-value">54K</div><div class="ls-label">Evidence</div></div>
+            <div class="lane-stat"><div class="ls-value">91%</div><div class="ls-label">Ready</div></div>
+          </div>
+          <div class="lane-deadline"><i data-lucide="clock" style="width:12px;height:12px"></i> Next: <span class="dl-urgent">Hearing — 3 days</span></div>
+        </div>
+        <div class="lane-card" style="border-top-color:var(--lane-e)">
+          <div class="lane-header">
+            <div class="lane-badge" style="background:var(--lane-e)">E</div>
+            <div><div class="lane-title">Judicial Misconduct</div><div class="lane-case">2024-001507-DC</div></div>
+          </div>
+          <div class="lane-stats">
+            <div class="lane-stat"><div class="ls-value">3</div><div class="ls-label">Filings</div></div>
+            <div class="lane-stat"><div class="ls-value">28K</div><div class="ls-label">Evidence</div></div>
+            <div class="lane-stat"><div class="ls-value">64%</div><div class="ls-label">Ready</div></div>
+          </div>
+          <div class="lane-deadline"><i data-lucide="clock" style="width:12px;height:12px"></i> Next: <span class="dl-normal">JTC Filing — 14 days</span></div>
+        </div>
+        <div class="lane-card" style="border-top-color:var(--lane-f)">
+          <div class="lane-header">
+            <div class="lane-badge" style="background:var(--lane-f)">F</div>
+            <div><div class="lane-title">Appellate (COA)</div><div class="lane-case">COA 366810</div></div>
+          </div>
+          <div class="lane-stats">
+            <div class="lane-stat"><div class="ls-value">3</div><div class="ls-label">Filings</div></div>
+            <div class="lane-stat"><div class="ls-value">46K</div><div class="ls-label">Evidence</div></div>
+            <div class="lane-stat"><div class="ls-value">78%</div><div class="ls-label">Ready</div></div>
+          </div>
+          <div class="lane-deadline"><i data-lucide="clock" style="width:12px;height:12px"></i> Next: <span class="dl-urgent">Brief Due — 8 days</span></div>
+        </div>
+      </div>
+
+      <!-- ACTIVITY + URGENCY -->
+      <div class="bottom-grid">
+        <div class="card">
+          <div class="card-header"><div class="card-title">Recent Activity</div><a href="#" style="font-size:13px">View all →</a></div>
+          <div class="activity-list">
+            <div class="activity-item">
+              <div class="activity-dot" style="background:var(--success)"></div>
+              <div><div class="activity-text"><strong>COA Docket Statement</strong> — QA passed, ready for filing</div><div class="activity-time">12 min ago · Lane F</div></div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-dot" style="background:var(--court-blue)"></div>
+              <div><div class="activity-text"><strong>12,847 evidence quotes</strong> ingested from G:\ drive scan</div><div class="activity-time">38 min ago · All Lanes</div></div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-dot" style="background:var(--danger)"></div>
+              <div><div class="activity-text"><strong>Disqualification Motion</strong> — deadline approaching in 5 days</div><div class="activity-time">1 hr ago · Lane E</div></div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-dot" style="background:var(--lane-a)"></div>
+              <div><div class="activity-text"><strong>Custody Brief v3</strong> — draft updated with new exhibits</div><div class="activity-time">2 hr ago · Lane A</div></div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-dot" style="background:var(--warning)"></div>
+              <div><div class="activity-text"><strong>Pipeline Phase 4a</strong> — PDF extraction completed (2,341 docs)</div><div class="activity-time">3 hr ago · System</div></div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-dot" style="background:var(--lane-b)"></div>
+              <div><div class="activity-text"><strong>Housing Complaint</strong> — moved to REVIEW stage</div><div class="activity-time">4 hr ago · Lane B</div></div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-dot" style="background:var(--lane-d)"></div>
+              <div><div class="activity-text"><strong>PPO Exhibit Pack</strong> — Bates stamping complete (143 pages)</div><div class="activity-time">5 hr ago · Lane D</div></div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-dot" style="background:var(--success)"></div>
+              <div><div class="activity-text"><strong>Agent fleet health check</strong> — 155/155 agents nominal</div><div class="activity-time">6 hr ago · System</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header"><div class="card-title">Urgent Deadlines</div></div>
+          <div>
+            <div class="urgency-item">
+              <div class="urgency-days critical">3d</div>
+              <div><div class="urgency-label">PPO Hearing Response</div><div class="urgency-court">Ottawa County · Lane D</div></div>
+            </div>
+            <div class="urgency-item">
+              <div class="urgency-days critical">5d</div>
+              <div><div class="urgency-label">COA Record Submission</div><div class="urgency-court">MI Court of Appeals · Lane F</div></div>
+            </div>
+            <div class="urgency-item">
+              <div class="urgency-days warn">8d</div>
+              <div><div class="urgency-label">Appellate Brief Due</div><div class="urgency-court">MI Court of Appeals · Lane F</div></div>
+            </div>
+            <div class="urgency-item">
+              <div class="urgency-days warn">14d</div>
+              <div><div class="urgency-label">JTC Formal Complaint</div><div class="urgency-court">Jud. Tenure Commission · Lane E</div></div>
+            </div>
+            <div class="urgency-item">
+              <div class="urgency-days ok">22d</div>
+              <div><div class="urgency-label">Discovery Responses</div><div class="urgency-court">Ottawa County · Lane B</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK ACTIONS -->
+      <div class="card">
+        <div class="card-header"><div class="card-title">Quick Actions</div></div>
+        <div class="quick-actions">
+          <button class="btn btn-primary"><i data-lucide="plus" style="width:16px;height:16px"></i> New Filing</button>
+          <button class="btn btn-secondary"><i data-lucide="shield-check" style="width:16px;height:16px"></i> Run QA Sweep</button>
+          <button class="btn btn-secondary"><i data-lucide="file-down" style="width:16px;height:16px"></i> Generate PDF</button>
+          <button class="btn btn-secondary"><i data-lucide="git-branch" style="width:16px;height:16px"></i> View Timeline</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>

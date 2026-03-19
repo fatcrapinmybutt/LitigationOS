@@ -1,0 +1,18 @@
+flowchart LR
+  A[Orders JSON] --> B[Order+Service Graph Builder]
+  S[ServiceProofs JSON] --> B
+  B --> G[order_supersession_service_graph.json]
+  EM[ExhibitMatrix] --> EC[Evidence Coverage Builder]
+  EA[EvidenceAtoms] --> EC
+  EC --> E[evidence_coverage.json]
+  E --> VR[vehicle_readiness evidence rail score]
+  LM[Lineage Map] --> LP[Lineage Provenance Index Builder]
+  RP[Replay Provenance Links] --> LP
+  DI[Desktop Inventory] --> LP
+  LP --> LI[lineage_provenance_index.json]
+  G --> UI[Command Center UI]
+  E --> UI
+  LI --> UI
+  UI --> O1[Orders Supersession + Service Panel]
+  UI --> O2[Evidence Coverage Rail Panel]
+  UI --> O3[Interactive Lineage + Provenance Panel]

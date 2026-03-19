@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    ":LABEL": {
+      "description": "From: cyclepacks/authority/sources/original/nodes_authorities.csv | From: cyclepacks/authority_merge/sources/original/nodes_authorities.csv",
+      "type": "string"
+    },
+    "extracted_nodes:authorities_id": {
+      "description": "Primary key.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "group": {
+      "description": "From: cyclepacks/authority/sources/original/nodes_authorities.csv | From: cyclepacks/authority_merge/sources/original/nodes_authorities.csv",
+      "type": "string"
+    },
+    "id:ID": {
+      "description": "From: cyclepacks/authority/sources/original/nodes_authorities.csv | From: cyclepacks/authority_merge/sources/original/nodes_authorities.csv",
+      "type": "string"
+    },
+    "label": {
+      "description": "From: cyclepacks/authority/sources/original/nodes_authorities.csv | From: cyclepacks/authority_merge/sources/original/nodes_authorities.csv",
+      "type": "string"
+    },
+    "tokens": {
+      "description": "From: cyclepacks/authority/sources/original/nodes_authorities.csv | From: cyclepacks/authority_merge/sources/original/nodes_authorities.csv",
+      "type": "string"
+    }
+  },
+  "required": [
+    "extracted_nodes:authorities_id"
+  ],
+  "title": "EXTRACTED_nodes:authorities",
+  "type": "object",
+  "x_litigationos": {
+    "entity": "EXTRACTED_nodes:authorities",
+    "generated_utc": "2026-01-20T05:12:07Z",
+    "primary_key": "extracted_nodes:authorities_id",
+    "version": "v2026-01-19.3"
+  }
+}

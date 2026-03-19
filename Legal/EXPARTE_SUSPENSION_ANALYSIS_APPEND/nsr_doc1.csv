@@ -1,0 +1,14 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+,,13,TO EX PARTE ORDER,ex_parte_reference,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+,,15,HEARING 11/26/2025,record_fact_hearing_date,court_notice,NO (factual anchor; challenge via findings/evidence),Classifier v6 + doc-role v11.
+,,18,"Defendant requested, and the Court signed an ex parte order suspending the Plaintiffs",parenting_time_restriction,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+,,21,obtain a mental health assessment. The parties appeared on 10/29/25.,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+,,22,"The Plaintiff objected to the Court reviewing a 2nd assessment from Health West, stating (under",mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+,,23,oath) that he did not obtain a second assessment. The Court adjourned the hearing and,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+,,25,"the two health west staff for the next hearing, which occurred on 41/26/25.",mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+,,31,granted in accordance with the best interests of the child. It is presumed to be in the best,best_interest_reference,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+,,33,MCL 722.27a(1). A child has a right to parenting time with a parent unless it is shown on the,parenting_time_statute_reference,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+,,34,"record by clear and convincing evidence that it would endanger the child's physical, mental, or",anger_characterization,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+,,38,722.27a(3).,parenting_time_statute_reference,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+,,48,in MCL 722.27a(7). The court may also impose any reasonable terms or conditions that,parenting_time_statute_reference,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+,,49,facilitate the orderly and meaningful exercise of parenting time by a parent. MCL 722.27a(9).,parenting_time_statute_reference,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.

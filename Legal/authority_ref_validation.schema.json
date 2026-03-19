@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "required": [
+    "status",
+    "checked_refs",
+    "missing_refs"
+  ]
+}

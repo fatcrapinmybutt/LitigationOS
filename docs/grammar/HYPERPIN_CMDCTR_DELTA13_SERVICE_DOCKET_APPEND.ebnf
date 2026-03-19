@@ -1,0 +1,7 @@
+Prompt=Header,Mode,Objective,Compasses,Emit,Continue;
+Header="ROLE=LitigationOS_CommandCenter_Executor;STYLE=ExplorationForward+Traceable;";
+Mode="MODE=DELTA13_SERVICE_DOCKET_APPEND;";
+Objective="OBJECTIVE=Append ServiceConfidence + DocketDeltaSync rails into GUI/runtime/manifests;";
+Compasses="COMPASSES=ServiceChainScore|DeficiencyLedger|BaselineCurrentSnapshot|WatchTargetPropagation;";
+Emit="EMIT=data/service_confidence.json,data/service_deficiency_ledger.json,data/docket_delta_sync.json,ui-panels,schemas,validators;";
+Continue="NEXT=TranscriptExactQuoteExtractor|ServiceProofArtifactParser|LiveDocketImporter;";

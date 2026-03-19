@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Timeline</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+:root {
+  --navy:#0F172A;--slate:#334155;--steel:#64748B;--court-blue:#0369A1;--court-blue-hover:#075985;
+  --success:#059669;--success-bg:#ECFDF5;--warning:#D97706;--warning-bg:#FFFBEB;
+  --danger:#DC2626;--danger-bg:#FEF2F2;--info:#2563EB;--info-bg:#EFF6FF;
+  --surface:#FFFFFF;--surface-2:#F8FAFC;--surface-3:#F1F5F9;
+  --border:#E2E8F0;--border-strong:#CBD5E1;
+  --lane-a:#4F46E5;--lane-a-bg:#EEF2FF;--lane-b:#059669;--lane-b-bg:#ECFDF5;
+  --lane-c:#7C3AED;--lane-c-bg:#F5F3FF;--lane-d:#E11D48;--lane-d-bg:#FFF1F2;
+  --lane-e:#D97706;--lane-e-bg:#FFFBEB;--lane-f:#0284C7;--lane-f-bg:#F0F9FF;
+  --radius:8px;--radius-sm:6px;--shadow:0 1px 3px rgba(0,0,0,0.1);
+  --sidebar-w:240px;--topbar-h:56px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:14px}
+body{font-family:"Lato",sans-serif;color:var(--navy);background:var(--surface-2);line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"EB Garamond",serif}
+.mono{font-family:"JetBrains Mono",monospace;font-size:13px}
+a{color:var(--court-blue);text-decoration:none}a:hover{color:var(--court-blue-hover)}
+.app{display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--surface-2);border-right:1px solid var(--border);display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:100}
+.sidebar-brand{height:var(--topbar-h);display:flex;align-items:center;gap:10px;padding:0 20px;border-bottom:1px solid var(--border);font-family:"EB Garamond",serif;font-size:20px;font-weight:700;color:var(--navy)}
+.sidebar-brand .brand-dot{width:10px;height:10px;background:var(--court-blue);border-radius:50%}
+.sidebar-nav{flex:1;padding:12px 8px;overflow-y:auto}
+.nav-section{margin-bottom:16px}.nav-section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--steel);padding:4px 12px 6px}
+.nav-item{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:var(--radius-sm);color:var(--slate);font-size:13px;cursor:pointer;transition:background .15s,color .15s}
+.nav-item:hover{background:var(--surface-3)}.nav-item.active{background:var(--info-bg);color:var(--court-blue);font-weight:700}
+.nav-item i{width:18px;height:18px;flex-shrink:0}
+.nav-badge{margin-left:auto;font-size:11px;font-weight:700;padding:1px 7px;border-radius:10px;background:var(--danger-bg);color:var(--danger)}
+.main{flex:1;margin-left:var(--sidebar-w);display:flex;flex-direction:column}
+.topbar{height:var(--topbar-h);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 24px;gap:16px;position:sticky;top:0;z-index:50}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--steel)}.breadcrumb span{color:var(--navy);font-weight:700}
+.topbar-search{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--surface-3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:6px 12px;width:280px}
+.topbar-search input{border:none;background:transparent;outline:none;font-family:"Lato",sans-serif;font-size:13px;color:var(--navy);width:100%}.topbar-search input::placeholder{color:var(--steel)}
+.topbar-actions{display:flex;align-items:center;gap:12px}
+.topbar-icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--steel);position:relative}
+.topbar-icon:hover{background:var(--surface-3);color:var(--navy)}
+.notif-dot{position:absolute;top:6px;right:6px;width:8px;height:8px;background:var(--danger);border-radius:50%;border:2px solid var(--surface)}
+.content{padding:24px;max-width:1440px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:var(--radius-sm);font-family:"Lato",sans-serif;font-size:13px;font-weight:700;cursor:pointer;border:none;transition:background .15s}
+.btn-primary{background:var(--court-blue);color:#fff}.btn-primary:hover{background:var(--court-blue-hover)}
+.btn-secondary{background:transparent;border:1px solid var(--border-strong);color:var(--slate)}.btn-secondary:hover{background:var(--surface-3)}
+.btn-sm{padding:6px 12px;font-size:12px}
+.lane-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
+
+/* PAGE */
+.page-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.page-title{font-family:"EB Garamond",serif;font-size:32px;font-weight:700;color:var(--navy)}
+.toolbar{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
+.filter-chip{display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;border:1px solid var(--border);font-size:12px;cursor:pointer;background:var(--surface);color:var(--slate)}
+.filter-chip:hover{border-color:var(--court-blue);color:var(--court-blue)}
+.filter-chip.active{background:var(--info-bg);border-color:var(--court-blue);color:var(--court-blue);font-weight:700}
+.zoom-controls{display:flex;gap:4px;margin-left:auto}
+.zoom-btn{padding:6px 14px;border-radius:var(--radius-sm);border:1px solid var(--border);font-size:12px;cursor:pointer;background:var(--surface);color:var(--slate);font-family:"Lato",sans-serif}
+.zoom-btn.active{background:var(--court-blue);color:#fff;border-color:var(--court-blue)}
+
+/* TIMELINE */
+.timeline-container{position:relative;padding:40px 0 60px;overflow-x:auto}
+.timeline-axis{position:relative;height:4px;background:var(--border-strong);border-radius:2px;margin:0 40px}
+.year-markers{display:flex;justify-content:space-between;position:relative;margin:0 40px;padding-top:12px}
+.year-marker{font-size:12px;font-weight:700;color:var(--steel);text-align:center;position:relative}
+.year-marker::before{content:'';position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:2px;height:8px;background:var(--border-strong)}
+
+.events-layer{position:relative;margin:0 40px;min-height:300px}
+.tl-event{position:absolute;display:flex;flex-direction:column;align-items:center;cursor:pointer;z-index:10;transition:transform .15s}
+.tl-event:hover{transform:translateY(-3px)}
+.tl-event:hover .tl-card{opacity:1;visibility:visible;transform:translateY(0)}
+.tl-dot{width:14px;height:14px;border-radius:50%;border:3px solid var(--surface);box-shadow:0 0 0 2px var(--border-strong);z-index:2}
+.tl-stem{width:2px;background:var(--border);z-index:1}
+.tl-label{font-size:11px;font-weight:700;color:var(--navy);white-space:nowrap;padding:4px 8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);box-shadow:var(--shadow)}
+.tl-date{font-size:10px;color:var(--steel);margin-top:2px;font-family:"JetBrains Mono",monospace}
+.tl-card{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(4px);background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:12px 16px;box-shadow:0 4px 12px rgba(0,0,0,0.12);min-width:220px;opacity:0;visibility:hidden;transition:all .2s;z-index:20;pointer-events:none}
+.tl-card .tc-title{font-weight:700;font-size:13px;margin-bottom:4px}
+.tl-card .tc-desc{font-size:12px;color:var(--slate);margin-bottom:6px}
+.tl-card .tc-meta{display:flex;gap:8px;font-size:11px;color:var(--steel)}
+
+/* Vertical timeline (alternative view inside card) */
+.vtl{position:relative;padding-left:28px}
+.vtl::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--border)}
+.vtl-item{position:relative;padding:12px 0 12px 16px;border-bottom:1px solid var(--surface-3)}
+.vtl-item:last-child{border-bottom:none}
+.vtl-dot{position:absolute;left:-24px;top:16px;width:12px;height:12px;border-radius:50%;border:2px solid var(--surface);z-index:2}
+.vtl-date{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--steel);margin-bottom:2px}
+.vtl-title{font-weight:700;font-size:13px}
+.vtl-desc{font-size:12px;color:var(--slate);margin-top:2px}
+.vtl-badges{display:flex;gap:6px;margin-top:4px}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar-brand"><span class="brand-dot"></span> LitigationOS</div>
+    <nav class="sidebar-nav">
+      <div class="nav-section"><div class="nav-section-label">Overview</div>
+        <a class="nav-item" href="01_dashboard.html"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+        <a class="nav-item" href="02_cases.html"><i data-lucide="briefcase"></i> Cases <span class="nav-badge">6</span></a>
+        <a class="nav-item active" href="05_timeline.html"><i data-lucide="git-branch"></i> Timeline</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">Filings</div>
+        <a class="nav-item" href="03_filings.html"><i data-lucide="file-text"></i> Filings <span class="nav-badge">3</span></a>
+        <a class="nav-item" href="04_evidence.html"><i data-lucide="archive"></i> Evidence</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">Deadlines</div>
+        <a class="nav-item" href="06_calendar.html"><i data-lucide="calendar"></i> Calendar</a>
+        <a class="nav-item" href="07_deadlines.html"><i data-lucide="alarm-clock"></i> Deadlines <span class="nav-badge">3</span></a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">System</div>
+        <a class="nav-item"><i data-lucide="cpu"></i> Agents</a>
+        <a class="nav-item"><i data-lucide="database"></i> Database</a>
+        <a class="nav-item"><i data-lucide="settings"></i> Settings</a>
+      </div>
+    </nav>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="breadcrumb"><i data-lucide="home" style="width:14px;height:14px"></i> / <span>Timeline</span></div>
+      <div class="topbar-search"><i data-lucide="search" style="width:14px;height:14px;color:var(--steel)"></i><input type="text" placeholder="Search timeline events…"></div>
+      <div class="topbar-actions">
+        <div class="topbar-icon"><i data-lucide="bell" style="width:18px;height:18px"></i><span class="notif-dot"></span></div>
+        <div class="topbar-icon"><i data-lucide="user" style="width:18px;height:18px"></i></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="page-header">
+        <div class="page-title">Litigation Timeline</div>
+      </div>
+      <div class="toolbar">
+        <div class="filter-chip active">All Lanes</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-a)"></span>A</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-b)"></span>B</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-d)"></span>D</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-e)"></span>E</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-f)"></span>F</div>
+        <span style="color:var(--border-strong);margin:0 8px">|</span>
+        <div class="filter-chip">Court Events</div>
+        <div class="filter-chip">Filings</div>
+        <div class="filter-chip">Evidence</div>
+        <div class="zoom-controls">
+          <button class="zoom-btn active">Year</button>
+          <button class="zoom-btn">Month</button>
+          <button class="zoom-btn">Week</button>
+        </div>
+      </div>
+
+      <!-- HORIZONTAL TIMELINE (visual) -->
+      <div class="card" style="margin-bottom:24px;padding:32px 24px;overflow-x:auto">
+        <div style="min-width:1100px;position:relative">
+          <!-- Axis -->
+          <div style="position:relative;height:4px;background:var(--border-strong);border-radius:2px;margin:140px 0 24px"></div>
+          <!-- Year labels -->
+          <div style="display:flex;justify-content:space-between;margin-top:-8px;padding:0 20px">
+            <span style="font-size:12px;font-weight:700;color:var(--steel)">2022</span>
+            <span style="font-size:12px;font-weight:700;color:var(--steel)">2023</span>
+            <span style="font-size:12px;font-weight:700;color:var(--steel)">2024</span>
+            <span style="font-size:12px;font-weight:700;color:var(--steel)">2025</span>
+            <span style="font-size:12px;font-weight:700;color:var(--steel)">2026</span>
+          </div>
+
+          <!-- Events positioned absolutely -->
+          <div style="position:absolute;top:0;left:0;right:0;height:180px">
+            <!-- Child Born -->
+            <div style="position:absolute;left:8%;display:flex;flex-direction:column;align-items:center">
+              <div class="tl-label" style="border-left:3px solid var(--lane-a)">Child Born</div>
+              <div class="tl-date">11/09/2022</div>
+              <div style="width:2px;height:40px;background:var(--lane-a)"></div>
+              <div style="width:14px;height:14px;border-radius:50%;background:var(--lane-a);border:3px solid white;box-shadow:0 0 0 2px var(--lane-a)"></div>
+            </div>
+            <!-- PPO Filed -->
+            <div style="position:absolute;left:25%;display:flex;flex-direction:column;align-items:center">
+              <div class="tl-label" style="border-left:3px solid var(--lane-d)">PPO Filed</div>
+              <div class="tl-date">10/2023</div>
+              <div style="width:2px;height:60px;background:var(--lane-d)"></div>
+              <div style="width:14px;height:14px;border-radius:50%;background:var(--lane-d);border:3px solid white;box-shadow:0 0 0 2px var(--lane-d)"></div>
+            </div>
+            <!-- Custody Filed -->
+            <div style="position:absolute;left:38%;display:flex;flex-direction:column;align-items:center">
+              <div class="tl-label" style="border-left:3px solid var(--lane-a)">Custody Filed</div>
+              <div class="tl-date">01/2024</div>
+              <div style="width:2px;height:40px;background:var(--lane-a)"></div>
+              <div style="width:14px;height:14px;border-radius:50%;background:var(--lane-a);border:3px solid white;box-shadow:0 0 0 2px var(--lane-a)"></div>
+            </div>
+            <!-- Ex Parte Comms Discovered -->
+            <div style="position:absolute;left:50%;display:flex;flex-direction:column;align-items:center">
+              <div class="tl-label" style="border-left:3px solid var(--lane-e)">Ex Parte Discovered</div>
+              <div class="tl-date">06/2024</div>
+              <div style="width:2px;height:60px;background:var(--lane-e)"></div>
+              <div style="width:14px;height:14px;border-radius:50%;background:var(--lane-e);border:3px solid white;box-shadow:0 0 0 2px var(--lane-e)"></div>
+            </div>
+            <!-- Housing Issues -->
+            <div style="position:absolute;left:62%;display:flex;flex-direction:column;align-items:center">
+              <div class="tl-label" style="border-left:3px solid var(--lane-b)">Housing Issues</div>
+              <div class="tl-date">10/2024</div>
+              <div style="width:2px;height:40px;background:var(--lane-b)"></div>
+              <div style="width:14px;height:14px;border-radius:50%;background:var(--lane-b);border:3px solid white;box-shadow:0 0 0 2px var(--lane-b)"></div>
+            </div>
+            <!-- COA Appeal Filed -->
+            <div style="position:absolute;left:73%;display:flex;flex-direction:column;align-items:center">
+              <div class="tl-label" style="border-left:3px solid var(--lane-f)">COA Appeal Filed</div>
+              <div class="tl-date">01/2025</div>
+              <div style="width:2px;height:60px;background:var(--lane-f)"></div>
+              <div style="width:14px;height:14px;border-radius:50%;background:var(--lane-f);border:3px solid white;box-shadow:0 0 0 2px var(--lane-f)"></div>
+            </div>
+            <!-- Housing Complaint Filed -->
+            <div style="position:absolute;left:78%;display:flex;flex-direction:column;align-items:center">
+              <div class="tl-label" style="border-left:3px solid var(--lane-b)">Housing Suit Filed</div>
+              <div class="tl-date">03/2025</div>
+              <div style="width:2px;height:40px;background:var(--lane-b)"></div>
+              <div style="width:14px;height:14px;border-radius:50%;background:var(--lane-b);border:3px solid white;box-shadow:0 0 0 2px var(--lane-b)"></div>
+            </div>
+            <!-- Disqualification Motion -->
+            <div style="position:absolute;left:88%;display:flex;flex-direction:column;align-items:center">
+              <div class="tl-label" style="border-left:3px solid var(--lane-e);background:var(--warning-bg)">Disqualification</div>
+              <div class="tl-date">03/2026</div>
+              <div style="width:2px;height:60px;background:var(--lane-e)"></div>
+              <div style="width:14px;height:14px;border-radius:50%;background:var(--lane-e);border:3px solid white;box-shadow:0 0 0 2px var(--lane-e)"></div>
+            </div>
+            <!-- COA Brief Due -->
+            <div style="position:absolute;left:93%;display:flex;flex-direction:column;align-items:center">
+              <div class="tl-label" style="border-left:3px solid var(--lane-f);background:var(--danger-bg)">COA Brief Due</div>
+              <div class="tl-date">03/2026</div>
+              <div style="width:2px;height:40px;background:var(--lane-f)"></div>
+              <div style="width:14px;height:14px;border-radius:50%;background:var(--lane-f);border:3px solid white;box-shadow:0 0 0 2px var(--lane-f)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event Detail List -->
+      <div class="card">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+          <div style="font-family:'EB Garamond',serif;font-size:20px;font-weight:600">Key Events</div>
+          <span style="font-size:12px;color:var(--steel)">9 events shown · 2022–2026</span>
+        </div>
+        <div class="vtl">
+          <div class="vtl-item">
+            <div class="vtl-dot" style="background:var(--lane-a)"></div>
+            <div class="vtl-date">November 9, 2022</div>
+            <div class="vtl-title">Child Born — Pigors/Watson</div>
+            <div class="vtl-desc">Birth of child, establishing parental rights. Foundation event for Lane A custody proceedings.</div>
+            <div class="vtl-badges"><span class="badge" style="background:var(--lane-a-bg);color:var(--lane-a)">Lane A</span><span class="badge" style="background:var(--surface-3);color:var(--steel)">12 evidence items</span></div>
+          </div>
+          <div class="vtl-item">
+            <div class="vtl-dot" style="background:var(--lane-d)"></div>
+            <div class="vtl-date">October 2023</div>
+            <div class="vtl-title">PPO Petition Filed</div>
+            <div class="vtl-desc">Personal Protection Order petition filed in Ottawa County. Case No. 2023-5907-PP.</div>
+            <div class="vtl-badges"><span class="badge" style="background:var(--lane-d-bg);color:var(--lane-d)">Lane D</span><span class="badge" style="background:var(--surface-3);color:var(--steel)">34 evidence items</span></div>
+          </div>
+          <div class="vtl-item">
+            <div class="vtl-dot" style="background:var(--lane-a)"></div>
+            <div class="vtl-date">January 2024</div>
+            <div class="vtl-title">Custody Action Filed</div>
+            <div class="vtl-desc">Pigors v. Watson custody case filed. Case No. 2024-001507-DC. Ottawa County Circuit Court.</div>
+            <div class="vtl-badges"><span class="badge" style="background:var(--lane-a-bg);color:var(--lane-a)">Lane A</span><span class="badge" style="background:var(--surface-3);color:var(--steel)">87 evidence items</span></div>
+          </div>
+          <div class="vtl-item">
+            <div class="vtl-dot" style="background:var(--lane-e)"></div>
+            <div class="vtl-date">June 2024</div>
+            <div class="vtl-title">Ex Parte Communications Discovered</div>
+            <div class="vtl-desc">Evidence of ex parte communications between Judge McNeill and opposing counsel discovered. Triggers Lane E investigation.</div>
+            <div class="vtl-badges"><span class="badge" style="background:var(--lane-e-bg);color:var(--lane-e)">Lane E</span><span class="badge" style="background:var(--surface-3);color:var(--steel)">28 evidence items</span></div>
+          </div>
+          <div class="vtl-item">
+            <div class="vtl-dot" style="background:var(--lane-b)"></div>
+            <div class="vtl-date">October 2024</div>
+            <div class="vtl-title">Housing Code Violations Documented</div>
+            <div class="vtl-desc">Mold, structural damage, and habitability issues at Shady Oaks documented. Creates Lane B housing action.</div>
+            <div class="vtl-badges"><span class="badge" style="background:var(--lane-b-bg);color:var(--lane-b)">Lane B</span><span class="badge" style="background:var(--surface-3);color:var(--steel)">156 evidence items</span></div>
+          </div>
+          <div class="vtl-item">
+            <div class="vtl-dot" style="background:var(--lane-f)"></div>
+            <div class="vtl-date">January 2025</div>
+            <div class="vtl-title">COA Appeal Filed</div>
+            <div class="vtl-desc">Application for leave to appeal filed with Michigan Court of Appeals. COA No. 366810.</div>
+            <div class="vtl-badges"><span class="badge" style="background:var(--lane-f-bg);color:var(--lane-f)">Lane F</span><span class="badge" style="background:var(--surface-3);color:var(--steel)">46 evidence items</span></div>
+          </div>
+          <div class="vtl-item">
+            <div class="vtl-dot" style="background:var(--lane-b)"></div>
+            <div class="vtl-date">March 2025</div>
+            <div class="vtl-title">Housing Complaint Filed</div>
+            <div class="vtl-desc">Civil complaint against Shady Oaks Management filed. Case No. 2025-002760-CZ.</div>
+            <div class="vtl-badges"><span class="badge" style="background:var(--lane-b-bg);color:var(--lane-b)">Lane B</span><span class="badge" style="background:var(--surface-3);color:var(--steel)">38 evidence items</span></div>
+          </div>
+          <div class="vtl-item">
+            <div class="vtl-dot" style="background:var(--lane-e)"></div>
+            <div class="vtl-date">March 2026</div>
+            <div class="vtl-title">Disqualification Motion</div>
+            <div class="vtl-desc">Motion to disqualify Judge McNeill under MCR 2.003. Supported by ex parte evidence chain.</div>
+            <div class="vtl-badges"><span class="badge" style="background:var(--lane-e-bg);color:var(--lane-e)">Lane E</span><span class="badge" style="background:var(--danger-bg);color:var(--danger)">UPCOMING</span></div>
+          </div>
+          <div class="vtl-item">
+            <div class="vtl-dot" style="background:var(--lane-f)"></div>
+            <div class="vtl-date">March 2026</div>
+            <div class="vtl-title">COA Brief Due</div>
+            <div class="vtl-desc">Appellant's brief due to Michigan Court of Appeals. Record submission required first.</div>
+            <div class="vtl-badges"><span class="badge" style="background:var(--lane-f-bg);color:var(--lane-f)">Lane F</span><span class="badge" style="background:var(--danger-bg);color:var(--danger)">8 DAYS</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>

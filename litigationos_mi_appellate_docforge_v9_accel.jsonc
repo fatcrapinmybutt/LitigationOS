@@ -1,0 +1,79 @@
+{
+  // LITIGATIONOS MI Appellate DocForge V9 Accelerator
+  "version": "V9_ACCEL",
+  "generated_at_utc": "2026-02-22T19:37:06Z",
+  "workspace_root": "H:\\LitigationOS\\_WORKSPACE_V9_ACCEL",
+  "roots": [
+    "H:\\LitigationOS",
+    "F:\\",
+    "D:\\",
+    "/storage/emulated/0/Download"
+  ],
+  "modes": {
+    "read_only": true,
+    "mirror_mode": "pointers_only",
+    "dedupe_mode": "off",
+    "integrity_mode": "IdentityKeyV1",
+    "allow_fastsig_on": ["duplicate_candidates", "dispute"],
+    "extraction": {
+      "pdf": "auto",
+      "docx": "on",
+      "txt": "on",
+      "json": "on",
+      "images": "ocr_on_demand",
+      "audio_video": "asr_on_demand"
+    }
+  },
+  "authority_compass": {
+    "jurisdiction": "Michigan",
+    "priority": [
+      "MI_Const_1963",
+      "MCR",
+      "MCL",
+      "MRE",
+      "MSC_Admin_Orders",
+      "Michigan_Supreme_Court_Caselaw",
+      "Michigan_Court_of_Appeals_Published_Caselaw",
+      "MJI_Benchbooks",
+      "SCAO_MC_FOC_Forms",
+      "Verified_Local_Admin_Orders"
+    ],
+    "canonical_sources": ["courts.michigan.gov"]
+  },
+  "lanes": {
+    "MEEK1": ["*shady*oaks*", "*housing*", "*mhp*", "*60th*district*"],
+    "MEEK2": ["*custody*", "*parenting*", "*foc*", "*001507*dc*", "*dc*"],
+    "MEEK3": ["*ppo*", "*contempt*", "*show*cause*", "*005907*pp*", "*pp*"],
+    "MEEK4": ["*jtc*", "*canon*", "*judicial*conduct*", "*coa*", "*msc*"]
+  },
+  "case_rules": [
+    { "case_id": "2024-001507-DC", "match": ["*2024-001507-dc*", "*001507*dc*", "*custody*"] },
+    { "case_id": "2023-0000005907-PP", "match": ["*2023-0000005907-pp*", "*5907*pp*", "*ppo*"] }
+  ],
+  "doc_kind_map": {
+    ".pdf": "pdf", ".docx": "docx", ".txt": "txt", ".md": "txt", ".json": "txt", ".jsonc": "txt",
+    ".eml": "email", ".msg": "email",
+    ".png": "image", ".jpg": "image", ".jpeg": "image", ".tif": "image", ".tiff": "image", ".webp": "image",
+    ".wav": "audio", ".mp3": "audio", ".m4a": "audio",
+    ".mp4": "video", ".mov": "video"
+  },
+  "pack_recipes": {
+    "timeline": { "max_quotes": 160, "must_include_dates": true, "sort": "event_date_then_source" },
+    "rebuttal_map": { "max_quotes": 220, "boost_negative_language": true, "sort": "relevance" },
+    "contradiction_map": { "max_quotes": 260, "pair_polarity": true, "sort": "entity_then_time" },
+    "motion_draft": { "max_quotes": 180, "vehicle_router": "mi_procedural_dfa_v1", "sort": "relevance" },
+    "affidavit_draft": { "max_quotes": 160, "sort": "chronological" },
+    "coa_packet": { "max_quotes": 220, "vehicle_router": "mi_coa_dfa_v1", "sort": "relevance" },
+    "msc_packet": { "max_quotes": 160, "vehicle_router": "mi_msc_dfa_v1", "sort": "relevance" },
+    "jtc_packet": { "max_quotes": 200, "vehicle_router": "mi_jtc_lane_v1", "sort": "relevance" }
+  },
+  "output_contract": {
+    "required_artifacts": [
+      "CASE_STATE","VehicleMap","ContextPack","SoRLedgerDelta","ExhibitMatrix",
+      "BiTemporalTimeline","AuthorityTriples","ContradictionMap","Deadlines","ValidationRedTeam","SBNA"
+    ],
+    "include_llm_autoplan": true,
+    "include_manifest": true,
+    "include_cycle_ledger": true
+  }
+}

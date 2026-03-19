@@ -1,0 +1,26 @@
+profile:
+  name: "Litigation OS — v5"
+  jurisdiction_primary: "Michigan"
+  timezone: "America/Detroit"
+  date_style: "YYYY-MM-DD"
+
+invariants:
+  no_async_promises: true
+  explicit_dates_only: true
+  zero_placeholders: true
+  forms_first_gate: true
+
+paths:
+  ingest_roots:
+    - "F:/"
+    - "D:/"
+
+modules:
+  ingest: true
+  rules_watch: true
+  graph: true
+  actions: true
+  forms_gate: true
+  binder: true
+  canon: true
+  entities: true

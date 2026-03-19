@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Evidence Detail</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0F172A; --slate: #334155; --steel: #64748B;
+    --court-blue: #0369A1; --court-hover: #075985;
+    --success: #059669; --success-bg: #ECFDF5;
+    --warning: #D97706; --warning-bg: #FFFBEB;
+    --danger: #DC2626; --danger-bg: #FEF2F2;
+    --info: #2563EB; --info-bg: #EFF6FF;
+    --surface: #FFFFFF; --surface2: #F8FAFC; --surface3: #F1F5F9;
+    --border: #E2E8F0; --border-strong: #CBD5E1;
+    --lane-e: #D97706; --lane-e-bg: #FFFBEB;
+    --sidebar-w: 240px;
+  }
+  body { font-family: 'Lato', sans-serif; font-size: 14px; color: var(--navy); background: var(--surface2); display: flex; min-height: 100vh; }
+  h1, h2, h3, h4, h5 { font-family: 'EB Garamond', serif; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+
+  .sidebar { width: var(--sidebar-w); min-height: 100vh; background: var(--surface2); border-right: 1px solid var(--border); display: flex; flex-direction: column; position: fixed; top: 0; left: 0; z-index: 100; }
+  .sidebar-brand { padding: 16px 20px; border-bottom: 1px solid var(--border); }
+  .sidebar-brand h2 { font-size: 20px; font-weight: 700; color: var(--navy); }
+  .sidebar-brand span { font-size: 12px; color: var(--steel); }
+  .sidebar-nav { flex: 1; padding: 8px 0; overflow-y: auto; }
+  .nav-section { padding: 8px 20px 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); }
+  .nav-item { display: flex; align-items: center; gap: 10px; padding: 9px 20px; font-size: 14px; color: var(--slate); cursor: pointer; text-decoration: none; transition: all 0.15s; }
+  .nav-item:hover { background: var(--surface3); color: var(--navy); }
+  .nav-item.active { background: var(--info-bg); color: var(--court-blue); font-weight: 700; border-right: 3px solid var(--court-blue); }
+  .nav-icon { width: 18px; text-align: center; font-size: 15px; }
+  .sidebar-footer { padding: 12px 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--steel); }
+
+  .topbar { height: 56px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; position: fixed; top: 0; left: var(--sidebar-w); right: 0; z-index: 90; }
+  .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--steel); }
+  .breadcrumb a { color: var(--court-blue); text-decoration: none; }
+  .breadcrumb .sep { color: var(--border-strong); }
+  .topbar-actions { display: flex; align-items: center; gap: 16px; }
+  .search-box { padding: 7px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; width: 260px; background: var(--surface2); }
+  .notif-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; position: relative; }
+  .notif-dot { width: 8px; height: 8px; background: var(--danger); border-radius: 50%; position: absolute; top: 6px; right: 6px; }
+
+  .main { margin-left: var(--sidebar-w); margin-top: 56px; padding: 24px; flex: 1; max-width: 1440px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .btn { padding: 9px 18px; border-radius: 6px; font-size: 14px; font-family: 'Lato', sans-serif; cursor: pointer; border: none; transition: all 0.15s; }
+  .btn-primary { background: var(--court-blue); color: white; }
+  .btn-primary:hover { background: var(--court-hover); }
+  .btn-secondary { background: var(--surface); color: var(--slate); border: 1px solid var(--border); }
+  .btn-sm { padding: 6px 14px; font-size: 13px; }
+
+  /* Evidence header */
+  .ev-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 24px; }
+  .ev-header h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+  .ev-badges { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 700; }
+  .badge-type { background: var(--info-bg); color: var(--info); }
+  .badge-lane { background: var(--lane-e-bg); color: var(--lane-e); }
+  .badge-strength { background: var(--success-bg); color: var(--success); }
+  .bates { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--navy); font-weight: 500; }
+
+  /* Grid */
+  .ev-grid { display: grid; grid-template-columns: 1fr 360px; gap: 24px; }
+
+  /* Image preview */
+  .img-preview { width: 100%; height: 340px; background: var(--surface3); border-radius: 8px; border: 1px dashed var(--border-strong); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px; color: var(--steel); margin-bottom: 24px; }
+  .img-preview .icon { font-size: 48px; opacity: 0.4; }
+  .img-preview span { font-size: 13px; }
+
+  /* Meta panel */
+  .meta-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--surface3); font-size: 13px; }
+  .meta-row:last-child { border-bottom: none; }
+  .meta-row .label { color: var(--steel); }
+  .meta-row .value { color: var(--navy); font-weight: 700; }
+
+  /* Claims table */
+  .claims-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  .claims-table th { background: var(--surface3); padding: 10px 12px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); font-family: 'Lato', sans-serif; }
+  .claims-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .claims-table tr:nth-child(even) { background: var(--surface2); }
+  .strength-high { color: var(--success); font-weight: 700; }
+  .strength-med { color: var(--warning); font-weight: 700; }
+
+  /* Chain of custody */
+  .chain { position: relative; padding-left: 28px; margin-top: 12px; }
+  .chain-item { position: relative; padding-bottom: 20px; padding-left: 16px; }
+  .chain-item:last-child { padding-bottom: 0; }
+  .chain-item::before { content: ''; position: absolute; left: -22px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: var(--success); border: 2px solid white; box-shadow: 0 0 0 2px var(--success); }
+  .chain-item::after { content: ''; position: absolute; left: -16px; top: 24px; width: 2px; height: calc(100% - 18px); background: var(--border); }
+  .chain-item:last-child::after { display: none; }
+  .chain-item .stage { font-size: 14px; font-weight: 700; color: var(--navy); }
+  .chain-item .timestamp { font-size: 12px; color: var(--steel); margin-top: 2px; }
+
+  /* Related cards */
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 12px; }
+  .related-card { padding: 14px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; transition: 0.15s; }
+  .related-card:hover { border-color: var(--court-blue); }
+  .related-card .title { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+  .related-card .sub { font-size: 12px; color: var(--steel); }
+  .related-card .bates-sm { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--court-blue); }
+</style>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-brand"><h2>LitigationOS</h2><span>Pigors v. Watson</span></div>
+    <div class="sidebar-nav">
+      <div class="nav-section">Main</div>
+      <a class="nav-item" href="01_dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+      <a class="nav-item" href="02_cases.html"><span class="nav-icon">📁</span> Cases</a>
+      <a class="nav-item" href="03_filings.html"><span class="nav-icon">📄</span> Filings</a>
+      <a class="nav-item" href="04_evidence.html"><span class="nav-icon">🔍</span> Evidence</a>
+      <a class="nav-item" href="05_timeline.html"><span class="nav-icon">📅</span> Timeline</a>
+      <a class="nav-item" href="06_calendar.html"><span class="nav-icon">🗓️</span> Calendar</a>
+      <a class="nav-item" href="07_deadlines.html"><span class="nav-icon">⏰</span> Deadlines</a>
+      <div class="nav-section">Tools</div>
+      <a class="nav-item" href="08_settings.html"><span class="nav-icon">⚙️</span> Settings</a>
+      <a class="nav-item" href="09_wizard.html"><span class="nav-icon">✨</span> Wizard</a>
+      <a class="nav-item" href="10_filing_detail.html"><span class="nav-icon">📋</span> Filing Detail</a>
+      <a class="nav-item active" href="11_evidence_detail.html"><span class="nav-icon">🔎</span> Evidence Detail</a>
+      <a class="nav-item" href="12_search.html"><span class="nav-icon">🔍</span> Search</a>
+      <a class="nav-item" href="13_reports.html"><span class="nav-icon">📈</span> Reports</a>
+      <a class="nav-item" href="14_agent_fleet.html"><span class="nav-icon">🤖</span> Agent Fleet</a>
+    </div>
+    <div class="sidebar-footer">v9.0 MANBEARPIG · Local AI</div>
+  </nav>
+
+  <header class="topbar">
+    <div class="breadcrumb">
+      <a href="01_dashboard.html">Home</a><span class="sep">›</span>
+      <a href="04_evidence.html">Evidence</a><span class="sep">›</span>
+      <span>PIGORS-0447</span>
+    </div>
+    <div class="topbar-actions">
+      <input class="search-box" type="text" placeholder="Search… (⌘K)">
+      <button class="notif-btn">🔔<span class="notif-dot"></span></button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="ev-header">
+      <div>
+        <h1>Screenshot — Ex Parte Communication 2024-08-15</h1>
+        <div class="ev-badges">
+          <span class="badge badge-type">Screenshot</span>
+          <span class="badge badge-lane">Lane E — Misconduct</span>
+          <span class="badge badge-strength">HIGH Strength</span>
+          <span class="bates">Bates# PIGORS-0447</span>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button class="btn btn-primary">📎 Link to Filing</button>
+        <button class="btn btn-secondary">⬇️ Download</button>
+      </div>
+    </div>
+
+    <div class="ev-grid">
+      <!-- Left -->
+      <div>
+        <!-- Image preview -->
+        <div class="img-preview">
+          <div class="icon">🖼️</div>
+          <span>ex_parte_comm_20240815_screenshot.png</span>
+          <span style="font-size:12px;">1920 × 1080 · PNG · 2.4 MB</span>
+        </div>
+
+        <!-- Linked Claims -->
+        <div class="card" style="margin-bottom:24px;">
+          <h3 style="font-size:20px;font-weight:600;margin-bottom:12px;">Linked Claims (4)</h3>
+          <table class="claims-table">
+            <thead>
+              <tr><th>Claim</th><th>Type</th><th>Lane</th><th>Strength</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Due Process Violation — Denied Hearing</td>
+                <td>Constitutional</td>
+                <td style="color:var(--lane-e);">E</td>
+                <td class="strength-high">HIGH</td>
+              </tr>
+              <tr>
+                <td>Ex Parte Communication Pattern</td>
+                <td>Judicial Conduct</td>
+                <td style="color:var(--lane-e);">E</td>
+                <td class="strength-high">HIGH</td>
+              </tr>
+              <tr>
+                <td>Demonstrated Judicial Bias</td>
+                <td>Judicial Conduct</td>
+                <td style="color:var(--lane-e);">E</td>
+                <td class="strength-med">MEDIUM</td>
+              </tr>
+              <tr>
+                <td>Judicial Misconduct — MCR 9.104</td>
+                <td>Court Rule</td>
+                <td style="color:var(--lane-e);">E</td>
+                <td class="strength-high">HIGH</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Related Evidence -->
+        <div class="card">
+          <h3 style="font-size:20px;font-weight:600;margin-bottom:8px;">Related Evidence</h3>
+          <div class="related-grid">
+            <div class="related-card">
+              <div class="title">Email — Court Staff Communication</div>
+              <div class="sub">Screenshot · Aug 14, 2024</div>
+              <div class="bates-sm">PIGORS-0448</div>
+            </div>
+            <div class="related-card">
+              <div class="title">Hearing Transcript Excerpt</div>
+              <div class="sub">Transcript · Aug 20, 2024</div>
+              <div class="bates-sm">PIGORS-0452</div>
+            </div>
+            <div class="related-card">
+              <div class="title">Docket Entry — Order w/o Hearing</div>
+              <div class="sub">Court Record · Aug 22, 2024</div>
+              <div class="bates-sm">PIGORS-0460</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div>
+        <!-- Metadata -->
+        <div class="card" style="margin-bottom:16px;">
+          <h3 style="font-size:18px;font-weight:600;margin-bottom:16px;">Metadata</h3>
+          <div class="meta-row"><span class="label">Filename</span><span class="value" style="font-size:12px;">ex_parte_comm_20240815_screenshot.png</span></div>
+          <div class="meta-row"><span class="label">SHA-256</span><span class="value mono" style="font-size:11px;">b3a7f1d9…c8e2</span></div>
+          <div class="meta-row"><span class="label">Date Captured</span><span class="value">Aug 15, 2024</span></div>
+          <div class="meta-row"><span class="label">Source</span><span class="value">Browser Screenshot</span></div>
+          <div class="meta-row"><span class="label">File Size</span><span class="value mono">2.4 MB</span></div>
+          <div class="meta-row"><span class="label">Dimensions</span><span class="value mono">1920 × 1080</span></div>
+          <div class="meta-row"><span class="label">MIME Type</span><span class="value mono">image/png</span></div>
+          <div class="meta-row"><span class="label">OCR Status</span><span class="value" style="color:var(--success);">Extracted</span></div>
+        </div>
+
+        <!-- Chain of Custody -->
+        <div class="card" style="margin-bottom:16px;">
+          <h3 style="font-size:18px;font-weight:600;margin-bottom:16px;">Chain of Custody</h3>
+          <div class="chain">
+            <div class="chain-item">
+              <div class="stage">📥 Raw Capture</div>
+              <div class="timestamp">Aug 15, 2024 · 10:32 AM</div>
+            </div>
+            <div class="chain-item">
+              <div class="stage">🔄 Extracted (OCR)</div>
+              <div class="timestamp">Dec 2, 2025 · Phase 4a</div>
+            </div>
+            <div class="chain-item">
+              <div class="stage">🏷️ Classified</div>
+              <div class="timestamp">Dec 2, 2025 · Phase 3</div>
+            </div>
+            <div class="chain-item">
+              <div class="stage">🔗 Linked to Claims</div>
+              <div class="timestamp">Dec 8, 2025 · Agent J04</div>
+            </div>
+            <div class="chain-item">
+              <div class="stage">📄 Filed — JTC Complaint</div>
+              <div class="timestamp">Jan 28, 2026 · Exhibit E-7</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="card">
+          <h3 style="font-size:18px;font-weight:600;margin-bottom:16px;">Actions</h3>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <button class="btn btn-primary" style="width:100%;">🏷️ Assign Bates Stamp</button>
+            <button class="btn btn-secondary" style="width:100%;">📎 Link to Filing</button>
+            <button class="btn btn-secondary" style="width:100%;">⬇️ Download Original</button>
+            <button class="btn btn-secondary" style="width:100%;">👁️ View Full Size</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

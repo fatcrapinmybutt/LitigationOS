@@ -1,0 +1,29 @@
+{
+  "version": "v0.1",
+  "rules": [
+    {
+      "rule_id": "VAL.PACKET.CAPTION_PRESENT",
+      "scope": "packet",
+      "description": "Caption must be present in top document",
+      "severity": "BLOCKER",
+      "check_operator": "OP.VALIDATE.PACKET_COMPLETENESS_CHECK",
+      "remediation_template": "Add/repair caption block using caption registry and rerun packet assembly."
+    },
+    {
+      "rule_id": "VAL.PACKET.EXHIBIT_INDEX_PRESENT",
+      "scope": "packet",
+      "description": "Exhibit index required when exhibits are attached",
+      "severity": "MAJOR",
+      "check_operator": "OP.VALIDATE.PACKET_COMPLETENESS_CHECK",
+      "remediation_template": "Generate ExhibitMatrix and include Exhibit Index in packet sequence."
+    },
+    {
+      "rule_id": "VAL.PACKET.SERVICE_DOC_PRESENT",
+      "scope": "packet",
+      "description": "Proof of service/service section must be present",
+      "severity": "BLOCKER",
+      "check_operator": "OP.VALIDATE.PACKET_COMPLETENESS_CHECK",
+      "remediation_template": "Generate service block and attach proof of service."
+    }
+  ]
+}

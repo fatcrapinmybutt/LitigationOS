@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Filings</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+:root {
+  --navy:#0F172A;--slate:#334155;--steel:#64748B;--court-blue:#0369A1;--court-blue-hover:#075985;
+  --success:#059669;--success-bg:#ECFDF5;--warning:#D97706;--warning-bg:#FFFBEB;
+  --danger:#DC2626;--danger-bg:#FEF2F2;--info:#2563EB;--info-bg:#EFF6FF;
+  --surface:#FFFFFF;--surface-2:#F8FAFC;--surface-3:#F1F5F9;
+  --border:#E2E8F0;--border-strong:#CBD5E1;
+  --lane-a:#4F46E5;--lane-a-bg:#EEF2FF;--lane-b:#059669;--lane-b-bg:#ECFDF5;
+  --lane-c:#7C3AED;--lane-c-bg:#F5F3FF;--lane-d:#E11D48;--lane-d-bg:#FFF1F2;
+  --lane-e:#D97706;--lane-e-bg:#FFFBEB;--lane-f:#0284C7;--lane-f-bg:#F0F9FF;
+  --radius:8px;--radius-sm:6px;--shadow:0 1px 3px rgba(0,0,0,0.1);
+  --sidebar-w:240px;--topbar-h:56px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:14px}
+body{font-family:"Lato",sans-serif;color:var(--navy);background:var(--surface-2);line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"EB Garamond",serif}
+.mono{font-family:"JetBrains Mono",monospace;font-size:13px}
+a{color:var(--court-blue);text-decoration:none}a:hover{color:var(--court-blue-hover)}
+.app{display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--surface-2);border-right:1px solid var(--border);display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:100}
+.sidebar-brand{height:var(--topbar-h);display:flex;align-items:center;gap:10px;padding:0 20px;border-bottom:1px solid var(--border);font-family:"EB Garamond",serif;font-size:20px;font-weight:700;color:var(--navy)}
+.sidebar-brand .brand-dot{width:10px;height:10px;background:var(--court-blue);border-radius:50%}
+.sidebar-nav{flex:1;padding:12px 8px;overflow-y:auto}
+.nav-section{margin-bottom:16px}.nav-section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--steel);padding:4px 12px 6px}
+.nav-item{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:var(--radius-sm);color:var(--slate);font-size:13px;cursor:pointer;transition:background .15s,color .15s}
+.nav-item:hover{background:var(--surface-3)}.nav-item.active{background:var(--info-bg);color:var(--court-blue);font-weight:700}
+.nav-item i{width:18px;height:18px;flex-shrink:0}
+.nav-badge{margin-left:auto;font-size:11px;font-weight:700;padding:1px 7px;border-radius:10px;background:var(--danger-bg);color:var(--danger)}
+.main{flex:1;margin-left:var(--sidebar-w);display:flex;flex-direction:column}
+.topbar{height:var(--topbar-h);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 24px;gap:16px;position:sticky;top:0;z-index:50}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--steel)}.breadcrumb span{color:var(--navy);font-weight:700}
+.topbar-search{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--surface-3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:6px 12px;width:280px}
+.topbar-search input{border:none;background:transparent;outline:none;font-family:"Lato",sans-serif;font-size:13px;color:var(--navy);width:100%}.topbar-search input::placeholder{color:var(--steel)}
+.topbar-actions{display:flex;align-items:center;gap:12px}
+.topbar-icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--steel);position:relative}
+.topbar-icon:hover{background:var(--surface-3);color:var(--navy)}
+.notif-dot{position:absolute;top:6px;right:6px;width:8px;height:8px;background:var(--danger);border-radius:50%;border:2px solid var(--surface)}
+.content{padding:24px;max-width:1440px}
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700}
+.badge-go{background:var(--success-bg);color:var(--success)}.badge-nogo{background:var(--danger-bg);color:var(--danger)}.badge-conditional{background:var(--warning-bg);color:var(--warning)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:var(--radius-sm);font-family:"Lato",sans-serif;font-size:13px;font-weight:700;cursor:pointer;border:none;transition:background .15s}
+.btn-primary{background:var(--court-blue);color:#fff}.btn-primary:hover{background:var(--court-blue-hover)}
+.btn-secondary{background:transparent;border:1px solid var(--border-strong);color:var(--slate)}.btn-secondary:hover{background:var(--surface-3)}
+.btn-sm{padding:6px 12px;font-size:12px}
+.lane-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
+
+/* PAGE-SPECIFIC: KANBAN */
+.page-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.page-title{font-family:"EB Garamond",serif;font-size:32px;font-weight:700;color:var(--navy)}
+.toolbar{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
+.filter-chip{display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;border:1px solid var(--border);font-size:12px;cursor:pointer;background:var(--surface);color:var(--slate)}
+.filter-chip:hover{border-color:var(--court-blue);color:var(--court-blue)}
+.filter-chip.active{background:var(--info-bg);border-color:var(--court-blue);color:var(--court-blue);font-weight:700}
+.kanban-layout{display:grid;grid-template-columns:360px 1fr;gap:0;min-height:calc(100vh - 180px)}
+.kanban-board{display:flex;gap:12px;overflow-x:auto;padding-bottom:16px}
+.kanban-col{min-width:200px;flex:1}
+.kanban-col-header{padding:10px 12px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--steel);display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--border-strong);margin-bottom:8px}
+.kanban-col-header .col-count{background:var(--surface-3);padding:2px 8px;border-radius:10px;font-size:11px}
+.kanban-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);margin-bottom:8px;cursor:pointer;transition:box-shadow .15s,border-color .15s}
+.kanban-card:hover{box-shadow:0 4px 12px rgba(0,0,0,0.1);border-color:var(--court-blue)}
+.kanban-card.selected{border-color:var(--court-blue);box-shadow:0 0 0 2px rgba(3,105,161,0.2)}
+.kc-title{font-weight:700;font-size:13px;margin-bottom:4px}
+.kc-court{font-size:11px;color:var(--steel);margin-bottom:8px}
+.kc-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.kc-score{font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:700}
+
+/* RIGHT PANEL */
+.detail-panel{border-left:1px solid var(--border);background:var(--surface);padding:24px;min-width:360px;max-width:360px}
+.dp-header{margin-bottom:20px}
+.dp-title{font-family:"EB Garamond",serif;font-size:20px;font-weight:600;margin-bottom:4px}
+.dp-sub{font-size:12px;color:var(--steel)}
+.dp-section{margin-bottom:20px}
+.dp-section-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--steel);margin-bottom:8px}
+.readiness-bar{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:12px}
+.readiness-bar .rb-label{width:120px;color:var(--slate)}
+.readiness-bar .rb-track{flex:1;height:6px;background:var(--surface-3);border-radius:3px;overflow:hidden}
+.readiness-bar .rb-fill{height:100%;border-radius:3px}
+.readiness-bar .rb-value{width:32px;text-align:right;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:11px}
+.qa-result{padding:12px;border-radius:var(--radius-sm);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.qa-result.pass{background:var(--success-bg);border:1px solid #A7F3D0}
+.qa-result.fail{background:var(--danger-bg);border:1px solid #FECACA}
+.dp-actions{display:flex;flex-direction:column;gap:8px}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar-brand"><span class="brand-dot"></span> LitigationOS</div>
+    <nav class="sidebar-nav">
+      <div class="nav-section"><div class="nav-section-label">Overview</div>
+        <a class="nav-item" href="01_dashboard.html"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+        <a class="nav-item" href="02_cases.html"><i data-lucide="briefcase"></i> Cases <span class="nav-badge">6</span></a>
+        <a class="nav-item" href="05_timeline.html"><i data-lucide="git-branch"></i> Timeline</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">Filings</div>
+        <a class="nav-item active" href="03_filings.html"><i data-lucide="file-text"></i> Filings <span class="nav-badge">3</span></a>
+        <a class="nav-item" href="04_evidence.html"><i data-lucide="archive"></i> Evidence</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">Deadlines</div>
+        <a class="nav-item" href="06_calendar.html"><i data-lucide="calendar"></i> Calendar</a>
+        <a class="nav-item" href="07_deadlines.html"><i data-lucide="alarm-clock"></i> Deadlines <span class="nav-badge">3</span></a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">System</div>
+        <a class="nav-item"><i data-lucide="cpu"></i> Agents</a>
+        <a class="nav-item"><i data-lucide="database"></i> Database</a>
+        <a class="nav-item"><i data-lucide="settings"></i> Settings</a>
+      </div>
+    </nav>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="breadcrumb"><i data-lucide="home" style="width:14px;height:14px"></i> / <span>Filings</span></div>
+      <div class="topbar-search"><i data-lucide="search" style="width:14px;height:14px;color:var(--steel)"></i><input type="text" placeholder="Search filings…"></div>
+      <div class="topbar-actions">
+        <div class="topbar-icon"><i data-lucide="bell" style="width:18px;height:18px"></i><span class="notif-dot"></span></div>
+        <div class="topbar-icon"><i data-lucide="user" style="width:18px;height:18px"></i></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="page-header">
+        <div class="page-title">Filing Management</div>
+        <button class="btn btn-primary"><i data-lucide="plus" style="width:16px;height:16px"></i> New Filing</button>
+      </div>
+      <div class="toolbar">
+        <div class="filter-chip active">All Lanes</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-a)"></span>A</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-b)"></span>B</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-d)"></span>D</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-e)"></span>E</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-f)"></span>F</div>
+        <span style="color:var(--border-strong);margin:0 4px">|</span>
+        <div class="filter-chip">Ottawa Circuit</div>
+        <div class="filter-chip">COA</div>
+        <div class="filter-chip">JTC</div>
+      </div>
+
+      <div class="kanban-layout">
+        <div class="kanban-board" style="flex:1">
+          <!-- DRAFT -->
+          <div class="kanban-col">
+            <div class="kanban-col-header">Draft <span class="col-count">3</span></div>
+            <div class="kanban-card">
+              <div class="kc-title">JTC Formal Complaint</div>
+              <div class="kc-court">Judicial Tenure Comm.</div>
+              <div class="kc-meta"><span class="lane-dot" style="background:var(--lane-e)"></span><span class="kc-score" style="color:var(--warning)">64%</span><span class="badge badge-conditional">DRAFT</span></div>
+            </div>
+            <div class="kanban-card">
+              <div class="kc-title">MSC Application</div>
+              <div class="kc-court">MI Supreme Court</div>
+              <div class="kc-meta"><span class="lane-dot" style="background:var(--lane-f)"></span><span class="kc-score" style="color:var(--warning)">52%</span><span class="badge badge-conditional">DRAFT</span></div>
+            </div>
+            <div class="kanban-card">
+              <div class="kc-title">§1983 Federal Complaint</div>
+              <div class="kc-court">W.D. Michigan</div>
+              <div class="kc-meta"><span class="lane-dot" style="background:var(--lane-c)"></span><span class="kc-score" style="color:var(--danger)">38%</span><span class="badge badge-nogo">EARLY</span></div>
+            </div>
+          </div>
+          <!-- REVIEW -->
+          <div class="kanban-col">
+            <div class="kanban-col-header">Review <span class="col-count">2</span></div>
+            <div class="kanban-card">
+              <div class="kc-title">Housing Complaint</div>
+              <div class="kc-court">Ottawa County Circuit</div>
+              <div class="kc-meta"><span class="lane-dot" style="background:var(--lane-b)"></span><span class="kc-score" style="color:var(--success)">72%</span><span class="badge badge-conditional">REVIEW</span></div>
+            </div>
+            <div class="kanban-card">
+              <div class="kc-title">Disqualification Motion</div>
+              <div class="kc-court">Ottawa County Circuit</div>
+              <div class="kc-meta"><span class="lane-dot" style="background:var(--lane-e)"></span><span class="kc-score" style="color:var(--success)">78%</span><span class="badge badge-conditional">REVIEW</span></div>
+            </div>
+          </div>
+          <!-- QA -->
+          <div class="kanban-col">
+            <div class="kanban-col-header">QA <span class="col-count">1</span></div>
+            <div class="kanban-card selected">
+              <div class="kc-title">COA Docket Statement</div>
+              <div class="kc-court">MI Court of Appeals</div>
+              <div class="kc-meta"><span class="lane-dot" style="background:var(--lane-f)"></span><span class="kc-score" style="color:var(--success)">88%</span><span class="badge badge-go">QA PASS</span></div>
+            </div>
+          </div>
+          <!-- APPROVED -->
+          <div class="kanban-col">
+            <div class="kanban-col-header">Approved <span class="col-count">1</span></div>
+            <div class="kanban-card">
+              <div class="kc-title">Custody Brief v3</div>
+              <div class="kc-court">Ottawa County Circuit</div>
+              <div class="kc-meta"><span class="lane-dot" style="background:var(--lane-a)"></span><span class="kc-score" style="color:var(--success)">92%</span><span class="badge badge-go">APPROVED</span></div>
+            </div>
+          </div>
+          <!-- FORMATTED -->
+          <div class="kanban-col">
+            <div class="kanban-col-header">Formatted <span class="col-count">1</span></div>
+            <div class="kanban-card">
+              <div class="kc-title">PPO Response Brief</div>
+              <div class="kc-court">Ottawa County Circuit</div>
+              <div class="kc-meta"><span class="lane-dot" style="background:var(--lane-d)"></span><span class="kc-score" style="color:var(--success)">95%</span><span class="badge badge-go">FORMATTED</span></div>
+            </div>
+          </div>
+          <!-- FILED -->
+          <div class="kanban-col">
+            <div class="kanban-col-header">Filed <span class="col-count">1</span></div>
+            <div class="kanban-card">
+              <div class="kc-title">PPO Petition</div>
+              <div class="kc-court">Ottawa County Circuit</div>
+              <div class="kc-meta"><span class="lane-dot" style="background:var(--lane-d)"></span><span class="kc-score" style="color:var(--success)">100%</span><span class="badge badge-go">FILED</span></div>
+            </div>
+          </div>
+          <!-- SERVED -->
+          <div class="kanban-col">
+            <div class="kanban-col-header">Served <span class="col-count">1</span></div>
+            <div class="kanban-card">
+              <div class="kc-title">Initial Custody Motion</div>
+              <div class="kc-court">Ottawa County Circuit</div>
+              <div class="kc-meta"><span class="lane-dot" style="background:var(--lane-a)"></span><span class="kc-score" style="color:var(--success)">100%</span><span class="badge badge-go">SERVED</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DETAIL PANEL -->
+        <div class="detail-panel">
+          <div class="dp-header">
+            <div class="dp-title">COA Docket Statement</div>
+            <div class="dp-sub">MI Court of Appeals · Lane F · <span class="mono">COA 366810</span></div>
+          </div>
+          <div class="dp-section">
+            <div class="dp-section-title">Readiness Breakdown</div>
+            <div class="readiness-bar"><span class="rb-label">Authorities</span><div class="rb-track"><div class="rb-fill" style="width:95%;background:var(--success)"></div></div><span class="rb-value" style="color:var(--success)">95%</span></div>
+            <div class="readiness-bar"><span class="rb-label">Evidence</span><div class="rb-track"><div class="rb-fill" style="width:90%;background:var(--success)"></div></div><span class="rb-value" style="color:var(--success)">90%</span></div>
+            <div class="readiness-bar"><span class="rb-label">Brief Format</span><div class="rb-track"><div class="rb-fill" style="width:100%;background:var(--success)"></div></div><span class="rb-value" style="color:var(--success)">100</span></div>
+            <div class="readiness-bar"><span class="rb-label">Cert of Service</span><div class="rb-track"><div class="rb-fill" style="width:100%;background:var(--success)"></div></div><span class="rb-value" style="color:var(--success)">100</span></div>
+            <div class="readiness-bar"><span class="rb-label">Exhibits</span><div class="rb-track"><div class="rb-fill" style="width:85%;background:var(--success)"></div></div><span class="rb-value" style="color:var(--success)">85%</span></div>
+            <div class="readiness-bar"><span class="rb-label">Page Limits</span><div class="rb-track"><div class="rb-fill" style="width:100%;background:var(--success)"></div></div><span class="rb-value" style="color:var(--success)">100</span></div>
+            <div class="readiness-bar"><span class="rb-label">Signature</span><div class="rb-track"><div class="rb-fill" style="width:100%;background:var(--success)"></div></div><span class="rb-value" style="color:var(--success)">100</span></div>
+            <div class="readiness-bar"><span class="rb-label">Placeholders</span><div class="rb-track"><div class="rb-fill" style="width:70%;background:var(--warning)"></div></div><span class="rb-value" style="color:var(--warning)">70%</span></div>
+            <div class="readiness-bar"><span class="rb-label">MCR Compliance</span><div class="rb-track"><div class="rb-fill" style="width:88%;background:var(--success)"></div></div><span class="rb-value" style="color:var(--success)">88%</span></div>
+            <div class="readiness-bar"><span class="rb-label">E-Filing Ready</span><div class="rb-track"><div class="rb-fill" style="width:75%;background:var(--warning)"></div></div><span class="rb-value" style="color:var(--warning)">75%</span></div>
+          </div>
+          <div class="dp-section">
+            <div class="dp-section-title">Last QA Result</div>
+            <div class="qa-result pass">
+              <i data-lucide="check-circle" style="width:18px;height:18px;color:var(--success)"></i>
+              <div><div style="font-weight:700;font-size:13px;color:var(--success)">QA PASSED</div><div style="font-size:11px;color:var(--steel)">12 min ago · 9/10 checks pass</div></div>
+            </div>
+            <div class="qa-result fail">
+              <i data-lucide="alert-circle" style="width:18px;height:18px;color:var(--danger)"></i>
+              <div><div style="font-weight:700;font-size:13px;color:var(--danger)">1 Issue: Placeholder [EXHIBIT_C]</div><div style="font-size:11px;color:var(--steel)">Unresolved placeholder in Section III</div></div>
+            </div>
+          </div>
+          <div class="dp-section">
+            <div class="dp-section-title">Actions</div>
+            <div class="dp-actions">
+              <button class="btn btn-primary btn-sm"><i data-lucide="shield-check" style="width:14px;height:14px"></i> Run QA Sweep</button>
+              <button class="btn btn-secondary btn-sm"><i data-lucide="file-down" style="width:14px;height:14px"></i> Export PDF</button>
+              <button class="btn btn-secondary btn-sm"><i data-lucide="send" style="width:14px;height:14px"></i> Move to Approved</button>
+              <button class="btn btn-secondary btn-sm"><i data-lucide="edit-3" style="width:14px;height:14px"></i> Edit Filing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>

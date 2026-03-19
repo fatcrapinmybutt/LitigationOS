@@ -1,0 +1,9 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+NoReply_20260105_131859_0009.pdf,17,20,the ex parte suspension.,ex_parte_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0009.pdf,17,28,Judge McNeill,record_fact_judge_identification,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0009.pdf,17,51,D. Off-Record Handling of Health West Evaluatiotx (Ex Parte Communications),mental_health_assessment,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0009.pdf,17,56,"evaluation,",mental_health_assessment,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0009.pdf,17,61,"After the August 28 hearing, Judge McNeill",record_fact_judge_identification,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0009.pdf,17,64,assessment from HealtliWest.,mental_health_assessment,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0009.pdf,17,70,evaluation,mental_health_assessment,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0009.pdf,17,85,evaluation,mental_health_assessment,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.

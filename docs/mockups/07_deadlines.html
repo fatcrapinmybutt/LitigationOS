@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Deadlines</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+:root {
+  --navy:#0F172A;--slate:#334155;--steel:#64748B;--court-blue:#0369A1;--court-blue-hover:#075985;
+  --success:#059669;--success-bg:#ECFDF5;--warning:#D97706;--warning-bg:#FFFBEB;
+  --danger:#DC2626;--danger-bg:#FEF2F2;--info:#2563EB;--info-bg:#EFF6FF;
+  --surface:#FFFFFF;--surface-2:#F8FAFC;--surface-3:#F1F5F9;
+  --border:#E2E8F0;--border-strong:#CBD5E1;
+  --lane-a:#4F46E5;--lane-a-bg:#EEF2FF;--lane-b:#059669;--lane-b-bg:#ECFDF5;
+  --lane-c:#7C3AED;--lane-c-bg:#F5F3FF;--lane-d:#E11D48;--lane-d-bg:#FFF1F2;
+  --lane-e:#D97706;--lane-e-bg:#FFFBEB;--lane-f:#0284C7;--lane-f-bg:#F0F9FF;
+  --radius:8px;--radius-sm:6px;--shadow:0 1px 3px rgba(0,0,0,0.1);
+  --sidebar-w:240px;--topbar-h:56px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:14px}
+body{font-family:"Lato",sans-serif;color:var(--navy);background:var(--surface-2);line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"EB Garamond",serif}
+.mono{font-family:"JetBrains Mono",monospace;font-size:13px}
+a{color:var(--court-blue);text-decoration:none}a:hover{color:var(--court-blue-hover)}
+.app{display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--surface-2);border-right:1px solid var(--border);display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:100}
+.sidebar-brand{height:var(--topbar-h);display:flex;align-items:center;gap:10px;padding:0 20px;border-bottom:1px solid var(--border);font-family:"EB Garamond",serif;font-size:20px;font-weight:700;color:var(--navy)}
+.sidebar-brand .brand-dot{width:10px;height:10px;background:var(--court-blue);border-radius:50%}
+.sidebar-nav{flex:1;padding:12px 8px;overflow-y:auto}
+.nav-section{margin-bottom:16px}.nav-section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--steel);padding:4px 12px 6px}
+.nav-item{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:var(--radius-sm);color:var(--slate);font-size:13px;cursor:pointer;transition:background .15s,color .15s}
+.nav-item:hover{background:var(--surface-3)}.nav-item.active{background:var(--info-bg);color:var(--court-blue);font-weight:700}
+.nav-item i{width:18px;height:18px;flex-shrink:0}
+.nav-badge{margin-left:auto;font-size:11px;font-weight:700;padding:1px 7px;border-radius:10px;background:var(--danger-bg);color:var(--danger)}
+.main{flex:1;margin-left:var(--sidebar-w);display:flex;flex-direction:column}
+.topbar{height:var(--topbar-h);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 24px;gap:16px;position:sticky;top:0;z-index:50}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--steel)}.breadcrumb span{color:var(--navy);font-weight:700}
+.topbar-search{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--surface-3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:6px 12px;width:280px}
+.topbar-search input{border:none;background:transparent;outline:none;font-family:"Lato",sans-serif;font-size:13px;color:var(--navy);width:100%}.topbar-search input::placeholder{color:var(--steel)}
+.topbar-actions{display:flex;align-items:center;gap:12px}
+.topbar-icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--steel);position:relative}
+.topbar-icon:hover{background:var(--surface-3);color:var(--navy)}
+.notif-dot{position:absolute;top:6px;right:6px;width:8px;height:8px;background:var(--danger);border-radius:50%;border:2px solid var(--surface)}
+.content{padding:24px;max-width:1440px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.card-title{font-family:"EB Garamond",serif;font-size:20px;font-weight:600;color:var(--navy)}
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700}
+.badge-go{background:var(--success-bg);color:var(--success)}.badge-nogo{background:var(--danger-bg);color:var(--danger)}.badge-conditional{background:var(--warning-bg);color:var(--warning)}
+.badge-info{background:var(--info-bg);color:var(--info)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:var(--radius-sm);font-family:"Lato",sans-serif;font-size:13px;font-weight:700;cursor:pointer;border:none;transition:background .15s}
+.btn-primary{background:var(--court-blue);color:#fff}.btn-primary:hover{background:var(--court-blue-hover)}
+.btn-secondary{background:transparent;border:1px solid var(--border-strong);color:var(--slate)}.btn-secondary:hover{background:var(--surface-3)}
+.lane-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
+
+/* PAGE */
+.page-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.page-title{font-family:"EB Garamond",serif;font-size:32px;font-weight:700;color:var(--navy)}
+
+/* URGENCY GAUGE */
+.urgency-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+.urgency-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);text-align:center;border-left:4px solid transparent}
+.urgency-card .uc-value{font-family:"EB Garamond",serif;font-size:36px;font-weight:700}
+.urgency-card .uc-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
+
+/* TABLE */
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{background:var(--surface-3);padding:10px 12px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--steel);border-bottom:1px solid var(--border);white-space:nowrap}
+tbody td{padding:10px 12px;border-bottom:1px solid var(--border);white-space:nowrap}
+tbody tr:nth-child(even){background:var(--surface-2)}
+tbody tr:hover{background:var(--info-bg)}
+.days-cell{font-family:"JetBrains Mono",monospace;font-weight:700}
+.urgency-dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+
+/* MCR RULES */
+.rules-layout{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.rule-item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--surface-3)}
+.rule-item:last-child{border-bottom:none}
+.rule-id{font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:700;color:var(--court-blue);min-width:80px}
+.rule-desc{font-size:12px;color:var(--slate);flex:1}
+.rule-days{font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:700;color:var(--navy);min-width:60px;text-align:right}
+
+/* CLUSTER TIMELINE */
+.cluster-section{margin-top:24px}
+.cluster-track{position:relative;height:80px;background:var(--surface-3);border-radius:var(--radius);overflow:hidden;margin-top:12px}
+.cluster-bar{position:absolute;top:8px;height:24px;border-radius:4px;display:flex;align-items:center;padding:0 8px;font-size:10px;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden}
+.cluster-marker{position:absolute;bottom:0;font-size:10px;color:var(--steel);transform:translateX(-50%)}
+.cluster-now{position:absolute;top:0;bottom:0;width:2px;background:var(--danger);z-index:5}
+.cluster-now-label{position:absolute;top:-16px;left:-10px;font-size:9px;font-weight:700;color:var(--danger)}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar-brand"><span class="brand-dot"></span> LitigationOS</div>
+    <nav class="sidebar-nav">
+      <div class="nav-section"><div class="nav-section-label">Overview</div>
+        <a class="nav-item" href="01_dashboard.html"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+        <a class="nav-item" href="02_cases.html"><i data-lucide="briefcase"></i> Cases <span class="nav-badge">6</span></a>
+        <a class="nav-item" href="05_timeline.html"><i data-lucide="git-branch"></i> Timeline</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">Filings</div>
+        <a class="nav-item" href="03_filings.html"><i data-lucide="file-text"></i> Filings <span class="nav-badge">3</span></a>
+        <a class="nav-item" href="04_evidence.html"><i data-lucide="archive"></i> Evidence</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">Deadlines</div>
+        <a class="nav-item" href="06_calendar.html"><i data-lucide="calendar"></i> Calendar</a>
+        <a class="nav-item active" href="07_deadlines.html"><i data-lucide="alarm-clock"></i> Deadlines <span class="nav-badge">3</span></a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">System</div>
+        <a class="nav-item"><i data-lucide="cpu"></i> Agents</a>
+        <a class="nav-item"><i data-lucide="database"></i> Database</a>
+        <a class="nav-item"><i data-lucide="settings"></i> Settings</a>
+      </div>
+    </nav>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="breadcrumb"><i data-lucide="home" style="width:14px;height:14px"></i> / <span>Deadlines</span></div>
+      <div class="topbar-search"><i data-lucide="search" style="width:14px;height:14px;color:var(--steel)"></i><input type="text" placeholder="Search deadlines…"></div>
+      <div class="topbar-actions">
+        <div class="topbar-icon"><i data-lucide="bell" style="width:18px;height:18px"></i><span class="notif-dot"></span></div>
+        <div class="topbar-icon"><i data-lucide="user" style="width:18px;height:18px"></i></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="page-header">
+        <div class="page-title">Deadline Intelligence</div>
+        <button class="btn btn-primary"><i data-lucide="plus" style="width:16px;height:16px"></i> Add Deadline</button>
+      </div>
+
+      <!-- URGENCY GAUGE -->
+      <div class="urgency-row">
+        <div class="urgency-card" style="border-left-color:var(--danger)">
+          <div class="uc-value" style="color:var(--danger)">3</div>
+          <div class="uc-label" style="color:var(--danger)">Critical (&lt;7 days)</div>
+        </div>
+        <div class="urgency-card" style="border-left-color:var(--warning)">
+          <div class="uc-value" style="color:var(--warning)">5</div>
+          <div class="uc-label" style="color:var(--warning)">Urgent (7–21 days)</div>
+        </div>
+        <div class="urgency-card" style="border-left-color:var(--success)">
+          <div class="uc-value" style="color:var(--success)">8</div>
+          <div class="uc-label" style="color:var(--success)">Normal (21–60 days)</div>
+        </div>
+        <div class="urgency-card" style="border-left-color:var(--info)">
+          <div class="uc-value" style="color:var(--info)">3</div>
+          <div class="uc-label" style="color:var(--info)">Future (&gt;60 days)</div>
+        </div>
+      </div>
+
+      <!-- DEADLINE TABLE -->
+      <div class="card" style="margin-bottom:24px">
+        <div class="card-header"><div class="card-title">All Deadlines</div><span style="font-size:12px;color:var(--steel)">19 deadlines across 6 lanes</span></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Filing</th><th>Court</th><th>Due Date</th><th>Days Left</th><th>Urgency</th><th>Status</th><th>Dependencies</th></tr></thead>
+            <tbody>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-d)"></span>PPO Hearing Response</strong></td><td>Ottawa County Circuit</td><td class="mono">2026-03-03</td><td class="days-cell" style="color:var(--danger)">3</td><td><span class="urgency-dot" style="background:var(--danger)"></span> Critical</td><td><span class="badge badge-conditional">IN PROGRESS</span></td><td class="mono">—</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-d)"></span>PPO Exhibit Pack</strong></td><td>Ottawa County Circuit</td><td class="mono">2026-03-03</td><td class="days-cell" style="color:var(--danger)">3</td><td><span class="urgency-dot" style="background:var(--danger)"></span> Critical</td><td><span class="badge badge-go">READY</span></td><td class="mono">PPO Hearing</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-f)"></span>COA Record Submission</strong></td><td>MI Court of Appeals</td><td class="mono">2026-03-10</td><td class="days-cell" style="color:var(--danger)">5</td><td><span class="urgency-dot" style="background:var(--danger)"></span> Critical</td><td><span class="badge badge-conditional">IN PROGRESS</span></td><td class="mono">Docket Stmt</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-e)"></span>Disqualification Motion</strong></td><td>Ottawa County Circuit</td><td class="mono">2026-03-15</td><td class="days-cell" style="color:var(--warning)">14</td><td><span class="urgency-dot" style="background:var(--warning)"></span> Urgent</td><td><span class="badge badge-conditional">REVIEW</span></td><td class="mono">Ex parte evidence</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-f)"></span>Appellate Brief</strong></td><td>MI Court of Appeals</td><td class="mono">2026-03-17</td><td class="days-cell" style="color:var(--warning)">8</td><td><span class="urgency-dot" style="background:var(--warning)"></span> Urgent</td><td><span class="badge badge-conditional">DRAFT</span></td><td class="mono">COA Record</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-a)"></span>Custody Motion to Modify</strong></td><td>Ottawa County Circuit</td><td class="mono">2026-03-18</td><td class="days-cell" style="color:var(--warning)">17</td><td><span class="urgency-dot" style="background:var(--warning)"></span> Urgent</td><td><span class="badge badge-conditional">DRAFT</span></td><td class="mono">Brief v3</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-b)"></span>Discovery Responses</strong></td><td>Ottawa County Circuit</td><td class="mono">2026-03-22</td><td class="days-cell" style="color:var(--warning)">22</td><td><span class="urgency-dot" style="background:var(--warning)"></span> Urgent</td><td><span class="badge badge-conditional">IN PROGRESS</span></td><td class="mono">—</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-e)"></span>JTC Formal Complaint</strong></td><td>Judicial Tenure Comm.</td><td class="mono">2026-03-25</td><td class="days-cell" style="color:var(--success)">24</td><td><span class="urgency-dot" style="background:var(--success)"></span> Normal</td><td><span class="badge badge-conditional">DRAFT</span></td><td class="mono">Disqualification</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-a)"></span>Custody Status Conference</strong></td><td>Ottawa County Circuit</td><td class="mono">2026-03-28</td><td class="days-cell" style="color:var(--success)">27</td><td><span class="urgency-dot" style="background:var(--success)"></span> Normal</td><td><span class="badge badge-go">PREPARED</span></td><td class="mono">—</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-f)"></span>MSC Writ Application</strong></td><td>MI Supreme Court</td><td class="mono">2026-03-31</td><td class="days-cell" style="color:var(--success)">30</td><td><span class="urgency-dot" style="background:var(--success)"></span> Normal</td><td><span class="badge badge-nogo">NOT STARTED</span></td><td class="mono">COA Brief</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-b)"></span>Housing Inspection Report</strong></td><td>Ottawa County Circuit</td><td class="mono">2026-04-05</td><td class="days-cell" style="color:var(--success)">35</td><td><span class="urgency-dot" style="background:var(--success)"></span> Normal</td><td><span class="badge badge-conditional">PENDING</span></td><td class="mono">Discovery</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-a)"></span>FOC Objection Response</strong></td><td>Ottawa County Circuit</td><td class="mono">2026-04-10</td><td class="days-cell" style="color:var(--success)">40</td><td><span class="urgency-dot" style="background:var(--success)"></span> Normal</td><td><span class="badge badge-nogo">NOT STARTED</span></td><td class="mono">FOC Report</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-d)"></span>PPO Extension Hearing</strong></td><td>Ottawa County Circuit</td><td class="mono">2026-04-15</td><td class="days-cell" style="color:var(--success)">45</td><td><span class="urgency-dot" style="background:var(--success)"></span> Normal</td><td><span class="badge badge-conditional">PENDING</span></td><td class="mono">PPO Hearing</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-e)"></span>JTC Investigation Follow-up</strong></td><td>Judicial Tenure Comm.</td><td class="mono">2026-04-20</td><td class="days-cell" style="color:var(--success)">50</td><td><span class="urgency-dot" style="background:var(--success)"></span> Normal</td><td><span class="badge badge-nogo">NOT STARTED</span></td><td class="mono">JTC Complaint</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-a)"></span>Custody Mediation Session</strong></td><td>Ottawa County Circuit</td><td class="mono">2026-04-25</td><td class="days-cell" style="color:var(--success)">55</td><td><span class="urgency-dot" style="background:var(--success)"></span> Normal</td><td><span class="badge badge-conditional">PENDING</span></td><td class="mono">Status Conf.</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-c)"></span>§1983 Federal Complaint</strong></td><td>W.D. Michigan</td><td class="mono">2026-05-15</td><td class="days-cell" style="color:var(--info)">75</td><td><span class="urgency-dot" style="background:var(--info)"></span> Future</td><td><span class="badge badge-nogo">EARLY DRAFT</span></td><td class="mono">All lanes</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-b)"></span>Housing Trial Prep</strong></td><td>Ottawa County Circuit</td><td class="mono">2026-06-01</td><td class="days-cell" style="color:var(--info)">92</td><td><span class="urgency-dot" style="background:var(--info)"></span> Future</td><td><span class="badge badge-nogo">NOT STARTED</span></td><td class="mono">Inspection</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-a)"></span>Custody Trial</strong></td><td>Ottawa County Circuit</td><td class="mono">2026-06-15</td><td class="days-cell" style="color:var(--info)">106</td><td><span class="urgency-dot" style="background:var(--info)"></span> Future</td><td><span class="badge badge-nogo">NOT STARTED</span></td><td class="mono">Mediation</td></tr>
+              <tr><td><strong><span class="lane-dot" style="background:var(--lane-f)"></span>COA Oral Argument</strong></td><td>MI Court of Appeals</td><td class="mono">2026-07-01</td><td class="days-cell" style="color:var(--info)">122</td><td><span class="urgency-dot" style="background:var(--info)"></span> Future</td><td><span class="badge badge-nogo">NOT STARTED</span></td><td class="mono">MSC Writ</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- MCR RULES REFERENCE -->
+      <div class="rules-layout">
+        <div class="card">
+          <div class="card-header"><div class="card-title">MCR Deadline Rules</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 2.108</div><div class="rule-desc">Service of process — personal</div><div class="rule-days">91 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 2.116</div><div class="rule-desc">Summary disposition — response</div><div class="rule-days">21 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 2.119</div><div class="rule-desc">Motion — response brief</div><div class="rule-days">21 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 2.119</div><div class="rule-desc">Motion — reply brief</div><div class="rule-days">7 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 2.003</div><div class="rule-desc">Disqualification of judge</div><div class="rule-days">14 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 2.302</div><div class="rule-desc">Discovery — interrogatories response</div><div class="rule-days">28 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 2.305</div><div class="rule-desc">Discovery — document production</div><div class="rule-days">28 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 2.310</div><div class="rule-desc">Discovery — request for admissions</div><div class="rule-days">28 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 2.401</div><div class="rule-desc">Pretrial scheduling order</div><div class="rule-days">varies</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 3.206</div><div class="rule-desc">Domestic relations — verified statement</div><div class="rule-days">14 days</div></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><div class="card-title">Appellate & Special Rules</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 7.205</div><div class="rule-desc">Application for leave — filing</div><div class="rule-days">42 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 7.205</div><div class="rule-desc">Application — answer</div><div class="rule-days">21 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 7.212</div><div class="rule-desc">Appellant's brief</div><div class="rule-days">56 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 7.212</div><div class="rule-desc">Appellee's brief</div><div class="rule-days">35 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 7.212</div><div class="rule-desc">Reply brief</div><div class="rule-days">21 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 7.215</div><div class="rule-desc">Motion for reconsideration</div><div class="rule-days">21 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 7.302</div><div class="rule-desc">Application to MSC</div><div class="rule-days">56 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 7.305</div><div class="rule-desc">MSC — response to application</div><div class="rule-days">28 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 7.211</div><div class="rule-desc">Record on appeal — transmit</div><div class="rule-days">21 days</div></div>
+          <div class="rule-item"><div class="rule-id">MCR 3.602</div><div class="rule-desc">PPO — hearing request</div><div class="rule-days">14 days</div></div>
+        </div>
+      </div>
+
+      <!-- DEADLINE CLUSTER TIMELINE -->
+      <div class="card cluster-section" style="margin-top:24px">
+        <div class="card-header"><div class="card-title">Deadline Clustering (Next 90 Days)</div></div>
+        <div style="position:relative;padding:24px 0 40px">
+          <div class="cluster-track">
+            <!-- NOW marker -->
+            <div class="cluster-now" style="left:3%"><div class="cluster-now-label">NOW</div></div>
+            <!-- Clusters -->
+            <div class="cluster-bar" style="left:3%;width:8%;background:var(--danger);top:8px">Mar 3–10</div>
+            <div class="cluster-bar" style="left:14%;width:8%;background:var(--warning);top:8px">Mar 15–18</div>
+            <div class="cluster-bar" style="left:24%;width:5%;background:var(--warning);top:8px">Mar 22–25</div>
+            <div class="cluster-bar" style="left:33%;width:4%;background:var(--success);top:8px">Mar 28–31</div>
+            <div class="cluster-bar" style="left:40%;width:8%;background:var(--success);top:8px">Apr 5–15</div>
+            <div class="cluster-bar" style="left:52%;width:5%;background:var(--success);top:8px">Apr 20–25</div>
+            <div class="cluster-bar" style="left:68%;width:3%;background:var(--info);top:8px">May 15</div>
+            <div class="cluster-bar" style="left:82%;width:6%;background:var(--info);top:8px">Jun 1–15</div>
+            <!-- Row 2 -->
+            <div class="cluster-bar" style="left:3%;width:2%;background:var(--lane-d);top:38px;font-size:9px">PPO</div>
+            <div class="cluster-bar" style="left:7%;width:3%;background:var(--lane-f);top:38px;font-size:9px">COA Rec</div>
+            <div class="cluster-bar" style="left:14%;width:3%;background:var(--lane-e);top:38px;font-size:9px">Disqual</div>
+            <div class="cluster-bar" style="left:18%;width:2%;background:var(--lane-f);top:38px;font-size:9px">Brief</div>
+            <div class="cluster-bar" style="left:24%;width:2%;background:var(--lane-b);top:38px;font-size:9px">Disc.</div>
+            <div class="cluster-bar" style="left:28%;width:2%;background:var(--lane-e);top:38px;font-size:9px">JTC</div>
+          </div>
+          <!-- Bottom labels -->
+          <div style="display:flex;justify-content:space-between;padding:8px 0 0;font-size:10px;color:var(--steel)">
+            <span>Mar 1</span><span>Mar 15</span><span>Apr 1</span><span>Apr 15</span><span>May 1</span><span>May 15</span><span>Jun 1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+digraph ERD_CARDS {
+  graph [rankdir=LR, splines=true, overlap=false, fontname="Helvetica", fontsize=10];
+  node [shape=record, fontsize=8, fontname="Helvetica"];
+  edge [fontsize=7, fontname="Helvetica"];
+
+  subgraph "cluster_Authority" {
+    label="Authority";
+    "AuthorityPinpoint" [label="{AuthorityPinpoint|PK: authoritypinpoint_id\lauthoritypinpoint_id: ulid\lpin_id: ulid\lpin_created_utc: datetime_rfc3339\lpin_updated_utc: datetime_rfc3339\lpin_created_by_agent_id: ulid\lpin_updated_by_agent_id: ulid\lpin_status: enum\lpin_tags_json: json\lpin_notes: text\lpin_integrity_key: text\lpin_source_ref: text\lworkspace_id: ulid\lauthority_source_id: ulid\lpin_type: enum\lpin_label: text\lpin_path: text\lpage: int\lline_start: int\lline_end: int\lexcerpt_verified: bool\lexcerpt_text: text\lverification_artifact_id: ulid\l}"];
+    "AuthoritySnapshot" [label="{AuthoritySnapshot|PK: authoritysnapshot_id\lauthoritysnapshot_id: ulid\lsnap_id: ulid\lsnap_created_utc: datetime_rfc3339\lsnap_updated_utc: datetime_rfc3339\lsnap_created_by_agent_id: ulid\lsnap_updated_by_agent_id: ulid\lsnap_status: enum\lsnap_tags_json: json\lsnap_notes: text\lsnap_integrity_key: text\lsnap_source_ref: text\lworkspace_id: ulid\lsnapshot_label: text\lcreated_for_run_id: ulid\lcoverage_json: json\lindex_artifact_id: ulid\lis_locked: bool\l}"];
+    "AuthoritySource" [label="{AuthoritySource|PK: authoritysource_id\lauthoritysource_id: ulid\lauthsrc_id: ulid\lauthsrc_created_utc: datetime_rfc3339\lauthsrc_updated_utc: datetime_rfc3339\lauthsrc_created_by_agent_id: ulid\lauthsrc_updated_by_agent_id: ulid\lauthsrc_status: enum\lauthsrc_tags_json: json\lauthsrc_notes: text\lauthsrc_integrity_key: text\lauthsrc_source_ref: text\lworkspace_id: ulid\lauthority_kind: enum\ltitle: text\lpublisher: text\leffective_date: date\lversion_label: text\lsource_artifact_id: ulid\lextracted_text_artifact_id: ulid\lcitation_style: text\l}"];
+    "Proposition" [label="{Proposition|PK: proposition_id\lproposition_id: ulid\lprop_id: ulid\lprop_created_utc: datetime_rfc3339\lprop_updated_utc: datetime_rfc3339\lprop_created_by_agent_id: ulid\lprop_updated_by_agent_id: ulid\lprop_status: enum\lprop_tags_json: json\lprop_notes: text\lprop_integrity_key: text\lprop_source_ref: text\lworkspace_id: ulid\lcase_id: ulid\lproposition_text: text\ldomain: enum\lauthority_snapshot_id: ulid\lconfidence: float\lstatus_gate: enum\l}"];
+    "Vehicle" [label="{Vehicle|PK: vehicle_id\lvehicle_id: ulid\lveh_id: ulid\lveh_created_utc: datetime_rfc3339\lveh_updated_utc: datetime_rfc3339\lveh_created_by_agent_id: ulid\lveh_updated_by_agent_id: ulid\lveh_status: enum\lveh_tags_json: json\lveh_notes: text\lveh_integrity_key: text\lveh_source_ref: text\lworkspace_id: ulid\lvehicle_name: text\lvehicle_type: enum\lscao_form_id: ulid\ltrigger_conditions_json: json\lelements_grid_artifact_id: ulid\ldefault_deadlines_json: json\l}"];
+    "VehiclePropositionLink" [label="{VehiclePropositionLink|PK: vehiclepropositionlink_id\lvehiclepropositionlink_id: ulid\lvehiclepropositionlink_created_utc: datetime_rfc3339\lvehiclepropositionlink_updated_utc: datetime_rfc3339\lvehiclepropositionlink_created_by_agent_id: ulid\lvehiclepropositionlink_updated_by_agent_id: ulid\lvehiclepropositionlink_status: enum\lvehiclepropositionlink_tags_json: json\lvehiclepropositionlink_notes: text\lvehiclepropositionlink_integrity_key: text\lvehiclepropositionlink_source_ref: text\lvehicle_id: ulid\lprop_id: ulid\luse_type: enum\l}"];
+  }
+
+  "AuthorityPinpoint" -> "AuthoritySource" [label="PINPOINT_IN_SOURCE (N:1)"];
+  "Proposition" -> "AuthoritySnapshot" [label="PROP_IN_SNAPSHOT (N:1)"];
+  "VehiclePropositionLink" -> "Vehicle" [label="VEHICLEPROPOSITIONLINK_VEHICLE (N:1)"];
+  "VehiclePropositionLink" -> "Proposition" [label="VEHICLEPROPOSITIONLINK_PROPOSITION (N:1)"];
+  "AuthoritySource" -> "AuthoritySource" [label="FK_AuthoritySource_authsrc_id_TO_AuthoritySource (N:1)"];
+  "AuthoritySource" -> "AuthoritySource" [label="HAS_AuthoritySource_BY_authsrc_id (1:N)"];
+  "AuthorityPinpoint" -> "AuthorityPinpoint" [label="FK_AuthorityPinpoint_pin_id_TO_AuthorityPinpoint (N:1)"];
+  "AuthorityPinpoint" -> "AuthorityPinpoint" [label="HAS_AuthorityPinpoint_BY_pin_id (1:N)"];
+  "AuthorityPinpoint" -> "AuthoritySource" [label="FK_AuthorityPinpoint_authority_source_id_TO_AuthoritySource (N:1)"];
+  "AuthoritySource" -> "AuthorityPinpoint" [label="HAS_AuthorityPinpoint_BY_authority_source_id (1:N)"];
+  "Proposition" -> "Proposition" [label="FK_Proposition_prop_id_TO_Proposition (N:1)"];
+  "Proposition" -> "Proposition" [label="HAS_Proposition_BY_prop_id (1:N)"];
+  "Proposition" -> "AuthoritySnapshot" [label="FK_Proposition_authority_snapshot_id_TO_AuthoritySnapshot (N:1)"];
+  "AuthoritySnapshot" -> "Proposition" [label="HAS_Proposition_BY_authority_snapshot_id (1:N)"];
+  "AuthoritySnapshot" -> "AuthoritySnapshot" [label="FK_AuthoritySnapshot_snap_id_TO_AuthoritySnapshot (N:1)"];
+  "AuthoritySnapshot" -> "AuthoritySnapshot" [label="HAS_AuthoritySnapshot_BY_snap_id (1:N)"];
+  "Vehicle" -> "Vehicle" [label="FK_Vehicle_veh_id_TO_Vehicle (N:1)"];
+  "Vehicle" -> "Vehicle" [label="HAS_Vehicle_BY_veh_id (1:N)"];
+  "VehiclePropositionLink" -> "Vehicle" [label="FK_VehiclePropositionLink_vehicle_id_TO_Vehicle (N:1)"];
+  "Vehicle" -> "VehiclePropositionLink" [label="HAS_VehiclePropositionLink_BY_vehicle_id (1:N)"];
+  "VehiclePropositionLink" -> "Proposition" [label="FK_VehiclePropositionLink_prop_id_TO_Proposition (N:1)"];
+  "Proposition" -> "VehiclePropositionLink" [label="HAS_VehiclePropositionLink_BY_prop_id (1:N)"];
+  "AuthorityPinpoint" -> "AuthoritySource" [label="ASSOC_AuthorityPinpoint_AuthorityPinpoint_AuthoritySource (M:N)"];
+  "Proposition" -> "AuthoritySnapshot" [label="ASSOC_Proposition_Proposition_AuthoritySnapshot (M:N)"];
+  "Vehicle" -> "AuthoritySnapshot" [label="ASSOC_ProofObligation_Vehicle_AuthoritySnapshot (M:N)"];
+  "Proposition" -> "AuthorityPinpoint" [label="ASSOC_PropositionPinLink_Proposition_AuthorityPinpoint (M:N)"];
+  "Vehicle" -> "Proposition" [label="ASSOC_VehiclePropositionLink_Vehicle_Proposition (M:N)"];
+  "Vehicle" -> "Vehicle" [label="ASSOC_EXTRACTED_vehicle_row_Vehicle_Vehicle (M:N)"];
+}

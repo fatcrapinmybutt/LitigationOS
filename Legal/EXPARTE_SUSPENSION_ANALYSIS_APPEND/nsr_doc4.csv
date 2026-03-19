@@ -1,0 +1,15 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+NoReply_20260105_131630_0004.pdf,4,25,he again violated the PPO by contacting,contempt_or_violation,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,28,provided the assessment,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,31,The Court received the 2nd Assessment,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,32,on 9/12/25. A hearing was set for 10/29/25.,record_fact_hearing_date,court_notice,NO (factual anchor; challenge via findings/evidence),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,35,the second assessment.,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,37,to the Court reviewing a 2nd assessment,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,38,"from Health West, stating (under oath) that he did",mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,39,not obtain a second assessment.,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,43,"heath west staff for the next hearing, which occurred on I 1/26/25. At that hearing, the two",record_fact_hearing_date,court_notice,NO (factual anchor; challenge via findings/evidence),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,64,Court found him in contempt and sentenced,contempt_or_violation,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,65,him to jail.,contempt_or_violation,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,66,"On 12/5/25, a hearing on the Father's 7'h",record_fact_hearing_date,court_notice,NO (factual anchor; challenge via findings/evidence),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,67,PPO violation occurred. He pled guilty and,contempt_or_violation,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0004.pdf,4,68,received 45 days in jail.,contempt_or_violation,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.

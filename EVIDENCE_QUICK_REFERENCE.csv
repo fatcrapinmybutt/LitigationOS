@@ -1,0 +1,21 @@
+Item#,Evidence Name,Type,Primary Location,Size,Total Locations,Status,Notes
+1,massiveeee.zip,ZIP,I:\12_ARCHIVES\cluster_0\,164.19 MB,1,✓ Verified,Likely extracted
+2,scanned_300.zip,ZIP,C:\LitigationOS\12_ARCHIVES\DISTILLED\cluster_0\,144.92 MB,2,✓ Verified,Also on I:\
+3,000000006.zip,ZIP,I:\12_ARCHIVES\cluster_0\,295.97 MB,1,✓ Verified,LARGEST FILE
+4,nspd police reports.zip,ZIP,C:\LitigationOS\03_EVIDENCE\AudioVideo\,16.50 MB,2,✓ Verified,Both on C:\
+5,McNeill ORDER BULLSHIT 9102025.zip,ZIP,C:\LitigationOS\12_ARCHIVES\DISTILLED\cluster_0\00000004\McNeill ORDER BULLSHIT 9102025\ [FOLDER],100+ files,1,✓ EXTRACTED,Original .zip deleted; contains 3 nested zips
+6,ppo#7_0017.zip,ZIP,C:\LitigationOS\12_ARCHIVES\DISTILLED\cluster_0\,3.04 MB,3,✓ Verified,2 copies on F:\ staging
+7,SCANNEDemilys filings,FOLDER,F:\LitOS_Unpack_Staging\SCANNEDemilys filings scanned_0014,Folder,2,✓ ACTIVE,+ 1 backup copy
+8,SCANNEDexpartescannedandmine,FOLDER,F:\LitOS_Unpack_Staging\SCANNEDexpartescannedandmine_0008,Folder,2,✓ ACTIVE,+ 1 backup copy
+9,DISQ_Filing_Order_Booklet_v5_2025-09-25*.pdf,PDF,C:\LitigationOS\07_PDF\,3.59 MB,4,✓ Verified,1 shortcut (0B); 3 full copies
+10,McneillOrdertomyobjection.docx,DOC,C:\LitigationOS\01_FILINGS\TRIAL_14TH\,8.46 KB,4,✓ Verified,2 on C:\; 2 on I:\
+11,healthwest08052025.pdf,PDF,C:\LitigationOS\12_ARCHIVES\DISTILLED\cluster_0\00000004\McNeill ORDER BULLSHIT 9102025\,3.01 MB,5,✓ ORIGINAL,⭐ CRITICAL: Original in McNeill folder; 1 shortcut (0B); 2 backups on I:\
+12,Canon_Violation_Brief_Pigors_v_Watson.docx,DOC,C:\LitigationOS\08_TEXT\word\,36.23 KB,5,✓ Verified,Across C:\ F:\ I:\ drives
+13,MOTION_PPO_TerminateVacateSanctions_SHORT.docx,DOC,C:\LitigationOS\08_TEXT\,36.96 KB,3,✓ Verified,On C:\ F:\ I:\
+14,disqualify judge.docx,DOC,C:\LitigationOS\01_FILINGS\TRIAL_14TH\,25.19 KB,4,✓ Verified,2 on C:\; 2 on I:\
+15,Response to show cause .docx,DOC,C:\LitigationOS\08_TEXT\,13.02 KB,2,✓ Verified,C:\ and I:\
+16,all filings contempt.pdf,PDF,C:\LitigationOS\01_FILINGS\EMERGENCY\,2.93 MB,4,✓ Verified,2 on C:\; 2 on I:\
+17,NoReply_20250830_101947.pdf,PDF,C:\LitigationOS\07_PDF\,5.14 MB,3,✓ Verified,1 on C:\; 2 on I:\
+18,NoReply_20250830_105139.pdf,PDF,C:\LitigationOS\07_PDF\,2.94 MB,2,✓ Verified,C:\ and I:\
+19,NoReply_20250830_110810.pdf,PDF,C:\LitigationOS\07_PDF\,2.95 MB,2,✓ Verified,C:\ and I:\
+20,NoReply_20250830_111200.pdf,PDF,C:\LitigationOS\07_PDF\,3.33 MB,3,✓ Verified,1 on C:\; 2 on I:\

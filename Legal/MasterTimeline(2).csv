@@ -1,0 +1,4 @@
+EventID,Date,Type,Summary,ExhibitIDs,RuleIDs
+E2024-04-01,2024-04-01,ParentingTimeDenied,Exchange denied at 6:02 PM,ExA,MCR_3.207
+E2024-04-05,2024-04-05,PoliceReport,Police incident re missed exchange,ExB,MCR_3.207
+E2024-04-09,2024-04-09,ContemptHearing,Transcript excerpt shows pattern,ExC,Canon_2A;FRCP_56

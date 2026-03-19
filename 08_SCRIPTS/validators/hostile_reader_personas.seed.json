@@ -1,0 +1,70 @@
+{
+  "version": "v0.1",
+  "personas": [
+    {
+      "persona_id": "HOSTILE_CLERK",
+      "focus_areas": [
+        "caption",
+        "signature",
+        "attachments",
+        "service docs",
+        "packet ordering"
+      ],
+      "failure_biases": [
+        "reject incomplete packets",
+        "reject wrong sequence"
+      ],
+      "review_operator_seq": [
+        "OP.VALIDATE.PACKET_COMPLETENESS_CHECK"
+      ]
+    },
+    {
+      "persona_id": "HOSTILE_TRIAL_JUDGE",
+      "focus_areas": [
+        "factual support",
+        "relief fit",
+        "procedure posture",
+        "exhibits"
+      ],
+      "failure_biases": [
+        "thin factual support",
+        "wrong vehicle"
+      ],
+      "review_operator_seq": [
+        "OP.REDTEAM.HOSTILE_JUDGE_REVIEW"
+      ]
+    },
+    {
+      "persona_id": "HOSTILE_APPELLATE_PANEL",
+      "focus_areas": [
+        "preservation",
+        "standard of review",
+        "record pins",
+        "issue framing"
+      ],
+      "failure_biases": [
+        "unpreserved issue",
+        "record insufficiency"
+      ],
+      "review_operator_seq": [
+        "OP.REDTEAM.HOSTILE_APPEAL_REVIEW"
+      ]
+    },
+    {
+      "persona_id": "HOSTILE_JTC_REVIEWER",
+      "focus_areas": [
+        "neutral chronology",
+        "conduct category",
+        "record support",
+        "tone"
+      ],
+      "failure_biases": [
+        "speculative accusation",
+        "missing record support"
+      ],
+      "review_operator_seq": [
+        "OP.REDTEAM.HOSTILE_JUDGE_REVIEW"
+      ]
+    }
+  ]
+}

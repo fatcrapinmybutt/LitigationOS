@@ -1,0 +1,638 @@
+{
+  "generated_at": "2026-01-13T17:44:03.556453Z",
+  "files": {
+    "authorities_index.jsonl": {
+      "bytes": 64311,
+      "sha256": "0e4a30c06f71dde6"
+    },
+    "nodes_authorities.csv": {
+      "bytes": 1432258,
+      "sha256": "3da1f63fa89d25fa"
+    },
+    "authorities_edges.csv": {
+      "bytes": 30519134,
+      "sha256": "53d00ab2e583c803"
+    },
+    "edges_authorities_xref.csv": {
+      "bytes": 13833173,
+      "sha256": "926cdbd264519f0b"
+    },
+    "litigation_wheel_graph_authorities_forms_indices_ext__wheel_graphs_all_extracted.html": {
+      "bytes": 637995,
+      "sha256": "d9a72562e7a76bfd"
+    },
+    "rules_authority_shards.jsonl": {
+      "bytes": 1222631,
+      "sha256": "7c27be0fa00a0e10"
+    },
+    "ppo docket_0001 (1).pdf": {
+      "bytes": 53646,
+      "sha256": "9fa4359a8bfe54ab"
+    },
+    "ppo docket_0002.pdf": {
+      "bytes": 64192,
+      "sha256": "2d9bba18d35843f4"
+    },
+    "ppo docket_0003.pdf": {
+      "bytes": 62156,
+      "sha256": "d15c470cbe48c1ca"
+    },
+    "ppo docket_0004.pdf": {
+      "bytes": 61938,
+      "sha256": "db9a085673842c7d"
+    },
+    "ppo docket_0005.pdf": {
+      "bytes": 69055,
+      "sha256": "3c86b1094c266a15"
+    },
+    "ppo docket_0006.pdf": {
+      "bytes": 72653,
+      "sha256": "af1f9565886b1f8d"
+    },
+    "ppo docket_0007.pdf": {
+      "bytes": 46568,
+      "sha256": "88478e6217e92131"
+    },
+    "60th 14th Court Docket.txt": {
+      "bytes": 13818,
+      "sha256": "89f239a2cb6be63b"
+    },
+    "circuit court docket mcneill custody.txt": {
+      "bytes": 12064,
+      "sha256": "968201520c72c329"
+    },
+    "custody docket .": {
+      "missing_or_empty": true
+    },
+    "Exhibit_F_PPO_Docket_Pages (1).txt": {
+      "bytes": 41409,
+      "sha256": "fcbebc4ad591955a"
+    },
+    "custody docket .txt": {
+      "bytes": 16679,
+      "sha256": "624f98c170f22df5"
+    },
+    "DOCKETSPPO.zip": {
+      "bytes": 17304289,
+      "sha256": "99774cf590ae4d90"
+    }
+  },
+  "zip": {
+    "DOCKETSPPO.zip_ok": false,
+    "error": "BadZipFile: File is not a zip file",
+    "first_bad_member": null,
+    "entries": null
+  },
+  "ppo_roa": {
+    "ppo docket_0001 (1).pdf": {
+      "events": 15,
+      "normalized_text": "intake/normalized/ppo docket_0001 (1).txt"
+    },
+    "ppo docket_0002.pdf": {
+      "events": 19,
+      "normalized_text": "intake/normalized/ppo docket_0002.txt"
+    },
+    "ppo docket_0003.pdf": {
+      "events": 16,
+      "normalized_text": "intake/normalized/ppo docket_0003.txt"
+    },
+    "ppo docket_0004.pdf": {
+      "events": 16,
+      "normalized_text": "intake/normalized/ppo docket_0004.txt"
+    },
+    "ppo docket_0005.pdf": {
+      "events": 17,
+      "normalized_text": "intake/normalized/ppo docket_0005.txt"
+    },
+    "ppo docket_0006.pdf": {
+      "events": 18,
+      "normalized_text": "intake/normalized/ppo docket_0006.txt"
+    },
+    "ppo docket_0007.pdf": {
+      "events": 10,
+      "normalized_text": "intake/normalized/ppo docket_0007.txt"
+    },
+    "total_events": 111
+  },
+  "text_dockets": {
+    "60th 14th Court Docket.txt": {
+      "events": 31
+    },
+    "circuit court docket mcneill custody.txt": {
+      "events": 44
+    },
+    "Exhibit_F_PPO_Docket_Pages (1).txt": {
+      "events": 0
+    },
+    "custody docket .txt": {
+      "events": 0
+    }
+  },
+  "rules_shards": {
+    "path": "/mnt/data/rules_authority_shards.jsonl",
+    "bytes": 1222631,
+    "scanned_lines": 1771,
+    "truncated": false,
+    "json_bad_lines": 0,
+    "keys_sample": [
+      "authority_id",
+      "authority_type",
+      "chapter",
+      "citation",
+      "context_excerpt",
+      "pinpoint",
+      "source_doc",
+      "source_extraction"
+    ],
+    "mcr_hits_top": [
+      [
+        "MCR2.107",
+        185
+      ],
+      [
+        "MCR1.109(D)(3)",
+        129
+      ],
+      [
+        "MCR1.109(G)(6)(A)",
+        117
+      ],
+      [
+        "MCR7.212(B)",
+        115
+      ],
+      [
+        "MCR2.105",
+        105
+      ],
+      [
+        "MCR2.407",
+        84
+      ],
+      [
+        "MCR2.302(C)",
+        83
+      ],
+      [
+        "MCR2.119",
+        71
+      ],
+      [
+        "MCR1.109(D)",
+        58
+      ],
+      [
+        "MCR2.002",
+        57
+      ],
+      [
+        "MCR2.116",
+        56
+      ],
+      [
+        "MCR2.107(C)(4)",
+        53
+      ],
+      [
+        "MCR2.402",
+        50
+      ],
+      [
+        "MCR3.002(6)",
+        50
+      ],
+      [
+        "MCR2.302(A)",
+        49
+      ],
+      [
+        "MCR2.310",
+        48
+      ],
+      [
+        "MCR1.109",
+        46
+      ],
+      [
+        "MCR3.604",
+        46
+      ],
+      [
+        "MCR7.101",
+        45
+      ],
+      [
+        "MCR3.907",
+        43
+      ],
+      [
+        "MCR3.203",
+        41
+      ],
+      [
+        "MCR2.107(C)(1)",
+        40
+      ],
+      [
+        "MCR2.302(B)",
+        40
+      ],
+      [
+        "MCR3.971",
+        40
+      ],
+      [
+        "MCR3.920",
+        39
+      ],
+      [
+        "MCR2.603",
+        38
+      ],
+      [
+        "MCR3.216",
+        38
+      ],
+      [
+        "MCR3.965",
+        38
+      ],
+      [
+        "MCR1.109(E)",
+        36
+      ],
+      [
+        "MCR3.921",
+        36
+      ],
+      [
+        "MCR2.403",
+        34
+      ],
+      [
+        "MCR3.206(C)",
+        33
+      ],
+      [
+        "MCR8.119(I)",
+        33
+      ],
+      [
+        "MCR9.121",
+        33
+      ],
+      [
+        "MCR2.118",
+        32
+      ],
+      [
+        "MCR3.967",
+        32
+      ],
+      [
+        "MCR7.206",
+        31
+      ],
+      [
+        "MCR2.412",
+        30
+      ],
+      [
+        "MCR6.201(A)",
+        30
+      ],
+      [
+        "MCR2.401",
+        29
+      ],
+      [
+        "MCR2.508",
+        29
+      ],
+      [
+        "MCR2.612",
+        29
+      ],
+      [
+        "MCR3.975",
+        29
+      ],
+      [
+        "MCR8.110(D)(2)",
+        29
+      ],
+      [
+        "MCR3.972",
+        28
+      ],
+      [
+        "MCR7.204",
+        28
+      ],
+      [
+        "MCR8.119",
+        28
+      ],
+      [
+        "MCR2.105(J)",
+        27
+      ],
+      [
+        "MCR2.209",
+        27
+      ],
+      [
+        "MCR2.411",
+        27
+      ],
+      [
+        "MCR9.118",
+        27
+      ],
+      [
+        "MCR2.113",
+        26
+      ],
+      [
+        "MCR2.117(B)(2)(C)",
+        26
+      ],
+      [
+        "MCR2.003",
+        25
+      ],
+      [
+        "MCR2.102(A)",
+        25
+      ],
+      [
+        "MCR2.410",
+        25
+      ],
+      [
+        "MCR3.002",
+        25
+      ],
+      [
+        "MCR1.109(G)",
+        24
+      ],
+      [
+        "MCR2.602(B)(3)",
+        24
+      ],
+      [
+        "MCR5.125(A)(8)",
+        24
+      ]
+    ],
+    "mcl_hits_top": [
+      [
+        "MCL712A",
+        24
+      ],
+      [
+        "MCL691.1345",
+        5
+      ],
+      [
+        "MCL712B",
+        5
+      ],
+      [
+        "MCL780.751",
+        5
+      ],
+      [
+        "MCL257.323(1)",
+        4
+      ],
+      [
+        "MCL15.231",
+        3
+      ],
+      [
+        "MCL28.425D",
+        3
+      ],
+      [
+        "MCL600.2301",
+        3
+      ],
+      [
+        "MCL700.3952",
+        3
+      ],
+      [
+        "MCL722.821",
+        3
+      ],
+      [
+        "MCL24.201",
+        2
+      ],
+      [
+        "MCL600.1701",
+        2
+      ],
+      [
+        "MCL600.1711",
+        2
+      ],
+      [
+        "MCL600.2529(4)",
+        2
+      ],
+      [
+        "MCL600.2605",
+        2
+      ],
+      [
+        "MCL600.2912C",
+        2
+      ],
+      [
+        "MCL600.8371(6)",
+        2
+      ],
+      [
+        "MCL600.8411",
+        2
+      ],
+      [
+        "MCL691.1801",
+        2
+      ],
+      [
+        "MCL710.29",
+        2
+      ],
+      [
+        "MCL710.51(6)",
+        2
+      ],
+      [
+        "MCL722.622(G)",
+        2
+      ],
+      [
+        "MCL791.236",
+        2
+      ],
+      [
+        "MCL125.3606",
+        1
+      ],
+      [
+        "MCL168.47",
+        1
+      ],
+      [
+        "MCL24.303(1)",
+        1
+      ],
+      [
+        "MCL257.32",
+        1
+      ],
+      [
+        "MCL257.323(2)",
+        1
+      ],
+      [
+        "MCL257.323(4)",
+        1
+      ],
+      [
+        "MCL257.625F",
+        1
+      ],
+      [
+        "MCL28.243",
+        1
+      ],
+      [
+        "MCL28.247",
+        1
+      ],
+      [
+        "MCL333.2864",
+        1
+      ],
+      [
+        "MCL400.203",
+        1
+      ],
+      [
+        "MCL421.1",
+        1
+      ],
+      [
+        "MCL445.870",
+        1
+      ],
+      [
+        "MCL552.605",
+        1
+      ],
+      [
+        "MCL552.9F",
+        1
+      ],
+      [
+        "MCL6",
+        1
+      ],
+      [
+        "MCL600",
+        1
+      ],
+      [
+        "MCL600.1986(1)(A)",
+        1
+      ],
+      [
+        "MCL600.2591",
+        1
+      ],
+      [
+        "MCL600.2912D",
+        1
+      ],
+      [
+        "MCL600.2950(22)",
+        1
+      ],
+      [
+        "MCL600.4012",
+        1
+      ],
+      [
+        "MCL600.5714(1)(B)",
+        1
+      ],
+      [
+        "MCL600.5735",
+        1
+      ],
+      [
+        "MCL600.5735(2)",
+        1
+      ],
+      [
+        "MCL600.6119",
+        1
+      ],
+      [
+        "MCL600.867",
+        1
+      ],
+      [
+        "MCL600.8717(4)",
+        1
+      ],
+      [
+        "MCL691.13",
+        1
+      ],
+      [
+        "MCL691.1335(4)(B)(I)",
+        1
+      ],
+      [
+        "MCL691.1339",
+        1
+      ],
+      [
+        "MCL691.1803",
+        1
+      ],
+      [
+        "MCL691.1815",
+        1
+      ],
+      [
+        "MCL700.2515",
+        1
+      ],
+      [
+        "MCL700.3306(2)",
+        1
+      ],
+      [
+        "MCL700.3705",
+        1
+      ],
+      [
+        "MCL700.3951(3)",
+        1
+      ]
+    ],
+    "mre_hits_top": [
+      [
+        "MRE615",
+        1
+      ]
+    ]
+  }
+}

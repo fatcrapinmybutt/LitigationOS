@@ -1,0 +1,6 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+NoReply_20260105_131630_0006.pdf,6,1,"the Mother spoke, he lost control. The Father's anger is concerning.",anger_characterization,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0006.pdf,6,7,"Based on all of the above, the Father's objection to the ex parte order suspending his",parenting_time_restriction,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0006.pdf,6,8,parenting time is denied. The Court also notes that it offered supervised,parenting_time_restriction,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0006.pdf,6,12,a motion for supervised,parenting_time_restriction,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0006.pdf,6,13,"parenting time once the Father has engaged in therapy for at least 60 days, provided copies",conditional_gate_therapy,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.

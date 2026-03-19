@@ -1,0 +1,13 @@
+flowchart TD
+  A[Δ0 Scan Read-Only] --> B[Δ1 Atomize IdentityKeyV1]
+  B --> C[Δ2 Classify lane/case]
+  C --> D[Δ3 Extract TextBank]
+  D --> E[Δ4 Quoteize Page-Aware + Eventize]
+  E --> F[Δ5 Index FTS5]
+  F --> G[Δ6 Build Packs purpose-aware]
+  G --> H[Δ7 VehicleRouter_MI + AuthorityCompass]
+  H --> I[Δ8 CourtPack Compiler]
+  I --> J[Δ9 QA Validate + RedTeam]
+  J -->|gaps| K[Ω Gap/Acquisition Tasks]
+  K --> G
+  J -->|all lanes| L[Ω2 Autopilot-All MEEK1..4]

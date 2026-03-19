@@ -1,0 +1,2 @@
+event_id,rule_id,event_kind,event_date,deadline_date,service_method,authority_anchor_token,service_method_anchor_token,status,source_pinpoint,notes
+ROA-00001,DEMO-ANSWER-DUE,service,2026-01-01,2026-01-24,mail,MCR 2.108,MCR 2.107,CANDIDATE_DEADLINE_NO_LEGAL_ASSERTION,F:/Docket/ROA.csv:row2,DEMO ONLY: offset provided by user; not asserted as law.

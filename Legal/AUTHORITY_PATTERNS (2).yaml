@@ -1,0 +1,15 @@
+# AUTHORITY_PATTERNS.yaml — Heuristic regexes (extend freely)
+michigan_court_rules:
+  - "\\bMCR\\s+\\d+(?:\\.\\d+)*(?:\\([a-zA-Z0-9]+\\))*"
+michigan_compiled_laws:
+  - "\\bMCL\\s+\\d+(?:\\.\\d+)*(?:[a-zA-Z0-9()\\-])*"
+federal_rules:
+  - "\\b(?:FRCP|Fed\\.\\s*R\\.\\s*Civ\\.\\s*P\\.)\\s*\\d+(?:\\.\\d+)*"
+us_code:
+  - "\\b\\d+\\s*U\\.S\\.C\\.\\s*§+\\s*\\d+[a-zA-Z0-9()\\-]*"
+constitution:
+  - "\\bU\\.S\\.\\s*Const\\.|United\\s*States\\s*Constitution|Michigan\\s*Constitution|Const\\.\\s*Art\\."
+benchbook:
+  - "\\bBenchbook\\b.*?(?:Chapter|Ch\\.|§)?\\s*\\d+[\\w.\\-]*"
+cases:
+  - "\\b[A-Z][a-zA-Z]+\\s+v\\.\\s+[A-Z][a-zA-Z][^,\\n]{1,80}"

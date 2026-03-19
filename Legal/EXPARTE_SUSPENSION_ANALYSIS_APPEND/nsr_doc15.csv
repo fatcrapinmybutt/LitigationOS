@@ -1,0 +1,12 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+NoReply_20260105_131859_0007.pdf,15,17,after the same PPO/custody,ppo_allegations,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0007.pdf,15,35,Judge McNeill,record_fact_judge_identification,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0007.pdf,15,55,to preside over both the PPO and custody,ppo_allegations,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0007.pdf,15,66,my view-violates,contempt_or_violation,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0007.pdf,15,71,"of ex parte communications,",ex_parte_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0007.pdf,15,94,"of PPO,",ppo_allegations,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0007.pdf,15,103,"from the PPO docket, custody",ppo_allegations,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0007.pdf,15,115,A. Eackground: Origin and Use of t1ie PPO,ppo_allegations,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0007.pdf,15,118,PPO obtained,ppo_allegations,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0007.pdf,15,126,a PPO against me in Case No. 2023-,ppo_allegations,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0007.pdf,15,143,"danger,",anger_characterization,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.

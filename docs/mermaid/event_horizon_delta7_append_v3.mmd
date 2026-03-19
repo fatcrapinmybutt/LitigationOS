@@ -1,0 +1,26 @@
+flowchart LR
+  subgraph Compass["Exploration-Forward Compass"]
+    A[Truth + Provenance Rigor]
+    B[Michigan Authority Priority]
+    C[Creative Discovery Targets]
+    D[Resolution Targets]
+  end
+
+  subgraph Cycles["Chained Convergence Cycles"]
+    E[Expand] --> F[Improve] --> G[Refine] --> H[Upgrade] --> I[Stress-Test] --> J[Harmonize]
+    J --> K{Convergence/Emergence >= 0.90?}
+    K -- No --> E
+    K -- Yes --> L[Promote Delta]
+  end
+
+  subgraph Runtime["Command Center Runtime"]
+    M[State Bootstrap]
+    N[Deterministic Cycle ID]
+    O[Replay Log]
+    P[Schema Validation]
+    Q[HTML GUI Panels]
+    M --> N --> O --> Q
+    P --> Q
+  end
+
+  Compass --> Cycles --> Runtime

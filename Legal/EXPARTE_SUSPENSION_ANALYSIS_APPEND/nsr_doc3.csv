@@ -1,0 +1,13 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+NoReply_20260105_131630_0003.pdf,3,2,"On 8/8/25, the Mother filed an ex parte motion to suspend the Father's parenting time.",parenting_time_restriction,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0003.pdf,3,11,set the matter for hearing on 8/22/25.,record_fact_hearing_date,court_notice,NO (factual anchor; challenge via findings/evidence),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0003.pdf,3,12,"On 9/22/2025, the Court asked the Plaintiff to undergo an assessment",mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0003.pdf,3,13,at Health West.,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0003.pdf,3,14,"The matter was then set for an evidentiary hearing on 9/4/25. At the evidentiary hearing, the",record_fact_hearing_date,court_notice,NO (factual anchor; challenge via findings/evidence),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0003.pdf,3,29,Court considered supervised parenting,parenting_time_restriction,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0003.pdf,3,34,exercise supervised parenting time.,parenting_time_restriction,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0003.pdf,3,37,assessment,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0003.pdf,3,44,this assessment,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0003.pdf,3,45,at Health West.,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0003.pdf,3,46,The Court notes that the Plaintiff did email a HW assessment,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0003.pdf,3,50,The assessment,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.

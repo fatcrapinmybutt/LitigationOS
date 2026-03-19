@@ -1,0 +1,131 @@
+{
+  "generated_at": "2026-01-13T11:33:35.847966Z",
+  "files": {
+    "authorities_index.jsonl": {
+      "bytes": 64311,
+      "sha256": "0e4a30c06f71dde6"
+    },
+    "nodes_authorities.csv": {
+      "bytes": 1432258,
+      "sha256": "3da1f63fa89d25fa"
+    },
+    "authorities_edges.csv": {
+      "bytes": 130196,
+      "sha256": "e9d47a17d29f481d"
+    },
+    "edges_authorities_xref.csv": {
+      "bytes": 128199,
+      "sha256": "9546898e2c34efe7"
+    },
+    "litigation_wheel_graph_authorities_forms_indices_ext__wheel_graphs_all_extracted.html": {
+      "bytes": 637995,
+      "sha256": "d9a72562e7a76bfd"
+    },
+    "rules_authority_shards.jsonl": {
+      "bytes": 1222631,
+      "sha256": "7c27be0fa00a0e10"
+    },
+    "ppo docket_0001 (1).pdf": {
+      "bytes": 53646,
+      "sha256": "9fa4359a8bfe54ab"
+    },
+    "ppo docket_0002.pdf": {
+      "bytes": 64192,
+      "sha256": "2d9bba18d35843f4"
+    },
+    "ppo docket_0003.pdf": {
+      "bytes": 62156,
+      "sha256": "d15c470cbe48c1ca"
+    },
+    "ppo docket_0004.pdf": {
+      "bytes": 61938,
+      "sha256": "db9a085673842c7d"
+    },
+    "ppo docket_0005.pdf": {
+      "bytes": 69055,
+      "sha256": "3c86b1094c266a15"
+    },
+    "ppo docket_0006.pdf": {
+      "bytes": 72653,
+      "sha256": "af1f9565886b1f8d"
+    },
+    "ppo docket_0007.pdf": {
+      "bytes": 46568,
+      "sha256": "88478e6217e92131"
+    },
+    "60th 14th Court Docket.txt": {
+      "bytes": 13818,
+      "sha256": "89f239a2cb6be63b"
+    },
+    "circuit court docket mcneill custody.txt": {
+      "bytes": 12064,
+      "sha256": "968201520c72c329"
+    },
+    "custody docket .": {
+      "missing_or_empty": true
+    },
+    "Exhibit_F_PPO_Docket_Pages (1).txt": {
+      "bytes": 41409,
+      "sha256": "fcbebc4ad591955a"
+    },
+    "custody docket .txt": {
+      "bytes": 16679,
+      "sha256": "624f98c170f22df5"
+    },
+    "DOCKETSPPO.zip": {
+      "bytes": 17304289,
+      "sha256": "99774cf590ae4d90"
+    }
+  },
+  "zip": {
+    "DOCKETSPPO.zip_ok": false,
+    "error": "BadZipFile: File is not a zip file",
+    "first_bad_member": null,
+    "entries": null
+  },
+  "ppo_roa": {
+    "ppo docket_0001 (1).pdf": {
+      "events": 15,
+      "normalized_text": "intake/normalized/ppo docket_0001 (1).txt"
+    },
+    "ppo docket_0002.pdf": {
+      "events": 19,
+      "normalized_text": "intake/normalized/ppo docket_0002.txt"
+    },
+    "ppo docket_0003.pdf": {
+      "events": 16,
+      "normalized_text": "intake/normalized/ppo docket_0003.txt"
+    },
+    "ppo docket_0004.pdf": {
+      "events": 16,
+      "normalized_text": "intake/normalized/ppo docket_0004.txt"
+    },
+    "ppo docket_0005.pdf": {
+      "events": 17,
+      "normalized_text": "intake/normalized/ppo docket_0005.txt"
+    },
+    "ppo docket_0006.pdf": {
+      "events": 18,
+      "normalized_text": "intake/normalized/ppo docket_0006.txt"
+    },
+    "ppo docket_0007.pdf": {
+      "events": 10,
+      "normalized_text": "intake/normalized/ppo docket_0007.txt"
+    },
+    "total_events": 111
+  },
+  "text_dockets": {
+    "60th 14th Court Docket.txt": {
+      "events": 31
+    },
+    "circuit court docket mcneill custody.txt": {
+      "events": 44
+    },
+    "Exhibit_F_PPO_Docket_Pages (1).txt": {
+      "events": 0
+    },
+    "custody docket .txt": {
+      "events": 0
+    }
+  }
+}

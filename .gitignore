@@ -1,0 +1,97 @@
+.copilot-assistant/
+
+# Copilot Orchestrator temporary files
+.orchestrator/
+.worktrees/
+
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+
+# Database files (too large for git)
+*.db
+*.db-wal
+*.db-shm
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# OS files
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/settings.json
+*.code-workspace
+
+# Temp files
+temp/
+tmp/
+*.tmp
+*.bak
+
+# PII and sensitive litigation data
+*.ssn
+*_REDACTED_ORIGINAL*
+SAFETY_SNAPSHOT/
+00_SYSTEM/backups/*.zip
+
+# Large extracted data directories (too big for git)
+txt/
+pip_cache/
+.cache/
+.chocolatey/
+.wakatime/
+.vscode-server/
+.rest-client/
+.arc/
+.eide/
+.cline/
+.gemini/
+.superpower-copilot/
+.learnings/
+objects/
+hooks/
+info/
+net/
+http-v2/
+bin/
+backend/
+frontend/
+data/
+09_DATA/
+10_IMAGES/
+12_EXTERNAL/
+compiler_runtime/
+
+# Git internals accidentally in working tree
+FETCH_HEAD
+COMMIT_EDITMSG
+HEAD
+index
+description
+gitattributes
+
+# Lock files
+.~lock.*
+*.lock
+
+# Large binary/media files
+*.wav
+*.mp3
+*.mp4
+*.avi
+*.enc
+*.pyd
+*.exe
+*.dll
+*.so
+naschedulingorder.doc

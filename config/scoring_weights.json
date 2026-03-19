@@ -1,0 +1,21 @@
+{
+  "version": "20260209_2342",
+  "weights": {
+    "new_files_processed": 1.0,
+    "new_high_value_docs": 3.0,
+    "new_atoms": 0.2,
+    "new_quotes": 0.5,
+    "timeline_new_events": 0.8,
+    "timeline_corrected_dates": 1.5,
+    "proceeding_links_added": 2.0,
+    "operating_orders_pinned": 5.0,
+    "vehicle_unlocks": 4.0,
+    "unknowns_reduced": 2.0,
+    "lint_failures_reduced": 2.5
+  },
+  "thresholds": {
+    "convergence_weighted_delta": 1.0,
+    "consecutive_cycles_for_convergence": 3,
+    "provenance_coverage_target": 0.85
+  }
+}

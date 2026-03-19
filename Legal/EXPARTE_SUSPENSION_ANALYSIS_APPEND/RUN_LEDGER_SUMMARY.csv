@@ -1,0 +1,12 @@
+seq,inventory_order,filename,processed_at,method,text_len,line_count,flags_count,note
+1,,NoReply_20260105_131630_0001.pdf,,unknown,,,3,reconstructed_from_structured_json
+2,,NoReply_20260105_131630_0002.pdf,,pdfminer_or_fallback,3469,,2,reconstructed_from_structured_json
+3,,NoReply_20260105_131630_0003.pdf,,pdfminer_or_fallback,3093,,2,reconstructed_from_structured_json
+4,,NoReply_20260105_131630_0004.pdf,,pymupdf_rawdict_lines,2433,,1,reconstructed_from_structured_json
+5,,NoReply_20260105_131630_0005.pdf,,pymupdf_rawdict_lines,2325,,0,reconstructed_from_structured_json
+6,6,NoReply_20260105_131630_0006.pdf,2026-01-06 01:30:52,pymupdf_rawdict,810,21,0,
+7,7,NoReply_20260105_131630_0007.pdf,2026-01-06 22:25:17,pymupdf_rawdict,404,48,0,
+8,8,NoReply_20260105_131630_0008.pdf,2026-01-06 22:32:04,ocr_zoom_2.0,4,1,1,
+9,9,NoReply_20260105_131859_0001.pdf,2026-01-06 22:44:11,pymupdf_rawdict,2016,97,0,
+10,10,NoReply_20260105_131859_0002.pdf,2026-01-06 22:53:44,pymupdf_rawdict,1816,126,0,
+11,11,NoReply_20260105_131859_0003.pdf,2026-01-06 22:59:47,pymupdf_rawdict,961,74,0,

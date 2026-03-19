@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Calendar</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+:root {
+  --navy:#0F172A;--slate:#334155;--steel:#64748B;--court-blue:#0369A1;--court-blue-hover:#075985;
+  --success:#059669;--success-bg:#ECFDF5;--warning:#D97706;--warning-bg:#FFFBEB;
+  --danger:#DC2626;--danger-bg:#FEF2F2;--info:#2563EB;--info-bg:#EFF6FF;
+  --surface:#FFFFFF;--surface-2:#F8FAFC;--surface-3:#F1F5F9;
+  --border:#E2E8F0;--border-strong:#CBD5E1;
+  --lane-a:#4F46E5;--lane-a-bg:#EEF2FF;--lane-b:#059669;--lane-b-bg:#ECFDF5;
+  --lane-c:#7C3AED;--lane-c-bg:#F5F3FF;--lane-d:#E11D48;--lane-d-bg:#FFF1F2;
+  --lane-e:#D97706;--lane-e-bg:#FFFBEB;--lane-f:#0284C7;--lane-f-bg:#F0F9FF;
+  --radius:8px;--radius-sm:6px;--shadow:0 1px 3px rgba(0,0,0,0.1);
+  --sidebar-w:240px;--topbar-h:56px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:14px}
+body{font-family:"Lato",sans-serif;color:var(--navy);background:var(--surface-2);line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"EB Garamond",serif}
+.mono{font-family:"JetBrains Mono",monospace;font-size:13px}
+a{color:var(--court-blue);text-decoration:none}a:hover{color:var(--court-blue-hover)}
+.app{display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--surface-2);border-right:1px solid var(--border);display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:100}
+.sidebar-brand{height:var(--topbar-h);display:flex;align-items:center;gap:10px;padding:0 20px;border-bottom:1px solid var(--border);font-family:"EB Garamond",serif;font-size:20px;font-weight:700;color:var(--navy)}
+.sidebar-brand .brand-dot{width:10px;height:10px;background:var(--court-blue);border-radius:50%}
+.sidebar-nav{flex:1;padding:12px 8px;overflow-y:auto}
+.nav-section{margin-bottom:16px}.nav-section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--steel);padding:4px 12px 6px}
+.nav-item{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:var(--radius-sm);color:var(--slate);font-size:13px;cursor:pointer;transition:background .15s,color .15s}
+.nav-item:hover{background:var(--surface-3)}.nav-item.active{background:var(--info-bg);color:var(--court-blue);font-weight:700}
+.nav-item i{width:18px;height:18px;flex-shrink:0}
+.nav-badge{margin-left:auto;font-size:11px;font-weight:700;padding:1px 7px;border-radius:10px;background:var(--danger-bg);color:var(--danger)}
+.main{flex:1;margin-left:var(--sidebar-w);display:flex;flex-direction:column}
+.topbar{height:var(--topbar-h);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 24px;gap:16px;position:sticky;top:0;z-index:50}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--steel)}.breadcrumb span{color:var(--navy);font-weight:700}
+.topbar-search{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--surface-3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:6px 12px;width:280px}
+.topbar-search input{border:none;background:transparent;outline:none;font-family:"Lato",sans-serif;font-size:13px;color:var(--navy);width:100%}.topbar-search input::placeholder{color:var(--steel)}
+.topbar-actions{display:flex;align-items:center;gap:12px}
+.topbar-icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--steel);position:relative}
+.topbar-icon:hover{background:var(--surface-3);color:var(--navy)}
+.notif-dot{position:absolute;top:6px;right:6px;width:8px;height:8px;background:var(--danger);border-radius:50%;border:2px solid var(--surface)}
+.content{padding:24px;max-width:1440px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card-title{font-family:"EB Garamond",serif;font-size:20px;font-weight:600;color:var(--navy)}
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700}
+.badge-go{background:var(--success-bg);color:var(--success)}.badge-nogo{background:var(--danger-bg);color:var(--danger)}.badge-conditional{background:var(--warning-bg);color:var(--warning)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:var(--radius-sm);font-family:"Lato",sans-serif;font-size:13px;font-weight:700;cursor:pointer;border:none;transition:background .15s}
+.btn-primary{background:var(--court-blue);color:#fff}.btn-primary:hover{background:var(--court-blue-hover)}
+.btn-secondary{background:transparent;border:1px solid var(--border-strong);color:var(--slate)}.btn-secondary:hover{background:var(--surface-3)}
+.lane-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
+
+/* PAGE */
+.page-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.page-title{font-family:"EB Garamond",serif;font-size:32px;font-weight:700;color:var(--navy)}
+.cal-layout{display:grid;grid-template-columns:1fr 340px;gap:16px;margin-bottom:24px}
+
+/* CALENDAR GRID */
+.cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.cal-month{font-family:"EB Garamond",serif;font-size:24px;font-weight:700}
+.cal-nav{display:flex;gap:4px}
+.cal-nav-btn{width:32px;height:32px;border-radius:var(--radius-sm);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;background:var(--surface);color:var(--slate)}
+.cal-nav-btn:hover{background:var(--surface-3)}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--border)}
+.cal-day-header{background:var(--surface-3);padding:8px;text-align:center;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--steel)}
+.cal-day{background:var(--surface);padding:8px;min-height:80px;font-size:12px;position:relative;cursor:pointer}
+.cal-day:hover{background:var(--surface-2)}
+.cal-day.outside{color:var(--border-strong);background:var(--surface-2)}
+.cal-day.today{background:var(--info-bg)}
+.cal-day .day-num{font-weight:700;margin-bottom:4px}
+.cal-dot-row{display:flex;gap:3px;flex-wrap:wrap;margin-top:2px}
+.cal-event-dot{width:7px;height:7px;border-radius:50%}
+.cal-event-label{font-size:10px;padding:1px 4px;border-radius:3px;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;font-weight:600}
+
+/* DEADLINE LIST */
+.dl-item{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)}
+.dl-item:last-child{border-bottom:none}
+.dl-days{min-width:44px;height:28px;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px}
+.dl-days.critical{background:var(--danger-bg);color:var(--danger)}
+.dl-days.warn{background:var(--warning-bg);color:var(--warning)}
+.dl-days.ok{background:var(--success-bg);color:var(--success)}
+.dl-info{flex:1;min-width:0}
+.dl-title{font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dl-court{font-size:11px;color:var(--steel)}
+
+/* SOL TRACKER */
+.sol-section{margin-top:24px}
+.sol-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.sol-stats{display:flex;gap:16px}
+.sol-stat{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700}
+.sol-bar-row{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid var(--surface-3)}
+.sol-bar-row:last-child{border-bottom:none}
+.sol-bar-label{width:200px;font-size:12px;color:var(--slate);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sol-bar-track{flex:1;height:8px;background:var(--surface-3);border-radius:4px;overflow:hidden}
+.sol-bar-fill{height:100%;border-radius:4px}
+.sol-bar-value{width:80px;text-align:right;font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:700;color:var(--steel)}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar-brand"><span class="brand-dot"></span> LitigationOS</div>
+    <nav class="sidebar-nav">
+      <div class="nav-section"><div class="nav-section-label">Overview</div>
+        <a class="nav-item" href="01_dashboard.html"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+        <a class="nav-item" href="02_cases.html"><i data-lucide="briefcase"></i> Cases <span class="nav-badge">6</span></a>
+        <a class="nav-item" href="05_timeline.html"><i data-lucide="git-branch"></i> Timeline</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">Filings</div>
+        <a class="nav-item" href="03_filings.html"><i data-lucide="file-text"></i> Filings <span class="nav-badge">3</span></a>
+        <a class="nav-item" href="04_evidence.html"><i data-lucide="archive"></i> Evidence</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">Deadlines</div>
+        <a class="nav-item active" href="06_calendar.html"><i data-lucide="calendar"></i> Calendar</a>
+        <a class="nav-item" href="07_deadlines.html"><i data-lucide="alarm-clock"></i> Deadlines <span class="nav-badge">3</span></a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">System</div>
+        <a class="nav-item"><i data-lucide="cpu"></i> Agents</a>
+        <a class="nav-item"><i data-lucide="database"></i> Database</a>
+        <a class="nav-item"><i data-lucide="settings"></i> Settings</a>
+      </div>
+    </nav>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="breadcrumb"><i data-lucide="home" style="width:14px;height:14px"></i> / <span>Calendar</span></div>
+      <div class="topbar-search"><i data-lucide="search" style="width:14px;height:14px;color:var(--steel)"></i><input type="text" placeholder="Search deadlines…"></div>
+      <div class="topbar-actions">
+        <div class="topbar-icon"><i data-lucide="bell" style="width:18px;height:18px"></i><span class="notif-dot"></span></div>
+        <div class="topbar-icon"><i data-lucide="user" style="width:18px;height:18px"></i></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="page-header">
+        <div class="page-title">Deadline Calendar</div>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-secondary"><i data-lucide="download" style="width:16px;height:16px"></i> Export ICS</button>
+          <button class="btn btn-primary"><i data-lucide="plus" style="width:16px;height:16px"></i> Add Deadline</button>
+        </div>
+      </div>
+
+      <div class="cal-layout">
+        <!-- CALENDAR -->
+        <div class="card">
+          <div class="cal-header">
+            <div class="cal-month">March 2026</div>
+            <div class="cal-nav">
+              <div class="cal-nav-btn"><i data-lucide="chevron-left" style="width:16px;height:16px"></i></div>
+              <div class="cal-nav-btn"><i data-lucide="chevron-right" style="width:16px;height:16px"></i></div>
+            </div>
+          </div>
+          <div class="cal-grid">
+            <div class="cal-day-header">Sun</div><div class="cal-day-header">Mon</div><div class="cal-day-header">Tue</div><div class="cal-day-header">Wed</div><div class="cal-day-header">Thu</div><div class="cal-day-header">Fri</div><div class="cal-day-header">Sat</div>
+            <!-- Week 1 -->
+            <div class="cal-day today"><div class="day-num">1</div></div>
+            <div class="cal-day"><div class="day-num">2</div></div>
+            <div class="cal-day"><div class="day-num">3</div><div class="cal-event-label" style="background:var(--lane-d-bg);color:var(--lane-d)">PPO Hearing</div></div>
+            <div class="cal-day"><div class="day-num">4</div></div>
+            <div class="cal-day"><div class="day-num">5</div></div>
+            <div class="cal-day"><div class="day-num">6</div></div>
+            <div class="cal-day"><div class="day-num">7</div></div>
+            <!-- Week 2 -->
+            <div class="cal-day"><div class="day-num">8</div></div>
+            <div class="cal-day"><div class="day-num">9</div></div>
+            <div class="cal-day"><div class="day-num">10</div><div class="cal-event-label" style="background:var(--danger-bg);color:var(--danger)">COA Record</div></div>
+            <div class="cal-day"><div class="day-num">11</div></div>
+            <div class="cal-day"><div class="day-num">12</div></div>
+            <div class="cal-day"><div class="day-num">13</div></div>
+            <div class="cal-day"><div class="day-num">14</div></div>
+            <!-- Week 3 -->
+            <div class="cal-day"><div class="day-num">15</div><div class="cal-event-label" style="background:var(--lane-e-bg);color:var(--lane-e)">Disqualify</div></div>
+            <div class="cal-day"><div class="day-num">16</div></div>
+            <div class="cal-day"><div class="day-num">17</div><div class="cal-event-label" style="background:var(--lane-f-bg);color:var(--lane-f)">COA Brief</div></div>
+            <div class="cal-day"><div class="day-num">18</div></div>
+            <div class="cal-day"><div class="day-num">19</div></div>
+            <div class="cal-day"><div class="day-num">20</div></div>
+            <div class="cal-day"><div class="day-num">21</div></div>
+            <!-- Week 4 -->
+            <div class="cal-day"><div class="day-num">22</div><div class="cal-event-label" style="background:var(--lane-b-bg);color:var(--lane-b)">Discovery</div></div>
+            <div class="cal-day"><div class="day-num">23</div></div>
+            <div class="cal-day"><div class="day-num">24</div></div>
+            <div class="cal-day"><div class="day-num">25</div><div class="cal-event-label" style="background:var(--lane-e-bg);color:var(--lane-e)">JTC Filing</div></div>
+            <div class="cal-day"><div class="day-num">26</div></div>
+            <div class="cal-day"><div class="day-num">27</div></div>
+            <div class="cal-day"><div class="day-num">28</div></div>
+            <!-- Week 5 -->
+            <div class="cal-day"><div class="day-num">29</div></div>
+            <div class="cal-day"><div class="day-num">30</div></div>
+            <div class="cal-day"><div class="day-num">31</div></div>
+            <div class="cal-day outside"><div class="day-num">1</div></div>
+            <div class="cal-day outside"><div class="day-num">2</div></div>
+            <div class="cal-day outside"><div class="day-num">3</div></div>
+            <div class="cal-day outside"><div class="day-num">4</div></div>
+          </div>
+        </div>
+
+        <!-- UPCOMING DEADLINES -->
+        <div class="card">
+          <div style="font-family:'EB Garamond',serif;font-size:20px;font-weight:600;margin-bottom:16px">Upcoming (30 days)</div>
+          <div class="dl-item">
+            <div class="dl-days critical">3d</div>
+            <div class="dl-info"><div class="dl-title"><span class="lane-dot" style="background:var(--lane-d)"></span>PPO Hearing Response</div><div class="dl-court">Ottawa County · Mar 3</div></div>
+          </div>
+          <div class="dl-item">
+            <div class="dl-days critical">5d</div>
+            <div class="dl-info"><div class="dl-title"><span class="lane-dot" style="background:var(--lane-f)"></span>COA Record Submission</div><div class="dl-court">MI Court of Appeals · Mar 10</div></div>
+          </div>
+          <div class="dl-item">
+            <div class="dl-days warn">8d</div>
+            <div class="dl-info"><div class="dl-title"><span class="lane-dot" style="background:var(--lane-f)"></span>Appellate Brief Due</div><div class="dl-court">MI Court of Appeals · Mar 17</div></div>
+          </div>
+          <div class="dl-item">
+            <div class="dl-days warn">14d</div>
+            <div class="dl-info"><div class="dl-title"><span class="lane-dot" style="background:var(--lane-e)"></span>Disqualification Motion</div><div class="dl-court">Ottawa County · Mar 15</div></div>
+          </div>
+          <div class="dl-item">
+            <div class="dl-days ok">22d</div>
+            <div class="dl-info"><div class="dl-title"><span class="lane-dot" style="background:var(--lane-b)"></span>Discovery Responses</div><div class="dl-court">Ottawa County · Mar 22</div></div>
+          </div>
+          <div class="dl-item">
+            <div class="dl-days ok">24d</div>
+            <div class="dl-info"><div class="dl-title"><span class="lane-dot" style="background:var(--lane-e)"></span>JTC Formal Complaint</div><div class="dl-court">Judicial Tenure Comm. · Mar 25</div></div>
+          </div>
+          <div class="dl-item">
+            <div class="dl-days ok">28d</div>
+            <div class="dl-info"><div class="dl-title"><span class="lane-dot" style="background:var(--lane-a)"></span>Custody Status Conf.</div><div class="dl-court">Ottawa County · Mar 28</div></div>
+          </div>
+          <div class="dl-item">
+            <div class="dl-days ok">30d</div>
+            <div class="dl-info"><div class="dl-title"><span class="lane-dot" style="background:var(--lane-f)"></span>MSC Writ Application</div><div class="dl-court">MI Supreme Court · Mar 31</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SOL TRACKER -->
+      <div class="card">
+        <div class="sol-header">
+          <div class="card-title">Statute of Limitations Tracker</div>
+          <div class="sol-stats">
+            <div class="sol-stat"><span style="width:12px;height:12px;border-radius:50%;background:var(--success);display:inline-block"></span> 27 GREEN</div>
+            <div class="sol-stat"><span style="width:12px;height:12px;border-radius:50%;background:var(--warning);display:inline-block"></span> 1 YELLOW</div>
+            <div class="sol-stat"><span style="width:12px;height:12px;border-radius:50%;background:var(--danger);display:inline-block"></span> 0 RED</div>
+          </div>
+        </div>
+        <div class="sol-bar-row">
+          <div class="sol-bar-label">Custody (MCL 722.27) — 6yr</div>
+          <div class="sol-bar-track"><div class="sol-bar-fill" style="width:88%;background:var(--success)"></div></div>
+          <div class="sol-bar-value" style="color:var(--success)">1,891 days</div>
+        </div>
+        <div class="sol-bar-row">
+          <div class="sol-bar-label">PPO (MCL 600.2950) — 3yr</div>
+          <div class="sol-bar-track"><div class="sol-bar-fill" style="width:72%;background:var(--success)"></div></div>
+          <div class="sol-bar-value" style="color:var(--success)">796 days</div>
+        </div>
+        <div class="sol-bar-row">
+          <div class="sol-bar-label">Housing (MCL 554.139) — 3yr</div>
+          <div class="sol-bar-track"><div class="sol-bar-fill" style="width:65%;background:var(--success)"></div></div>
+          <div class="sol-bar-value" style="color:var(--success)">612 days</div>
+        </div>
+        <div class="sol-bar-row">
+          <div class="sol-bar-label">§1983 Federal (28 USC 1658) — 3yr</div>
+          <div class="sol-bar-track"><div class="sol-bar-fill" style="width:60%;background:var(--success)"></div></div>
+          <div class="sol-bar-value" style="color:var(--success)">548 days</div>
+        </div>
+        <div class="sol-bar-row">
+          <div class="sol-bar-label">JTC Complaint — 2yr</div>
+          <div class="sol-bar-track"><div class="sol-bar-fill" style="width:35%;background:var(--warning)"></div></div>
+          <div class="sol-bar-value" style="color:var(--warning)">182 days</div>
+        </div>
+        <div class="sol-bar-row">
+          <div class="sol-bar-label">Appellate (MCR 7.205) — 42 days</div>
+          <div class="sol-bar-track"><div class="sol-bar-fill" style="width:82%;background:var(--success)"></div></div>
+          <div class="sol-bar-value" style="color:var(--success)">FILED ✓</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>

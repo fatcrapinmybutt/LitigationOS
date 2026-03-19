@@ -1,0 +1,5 @@
+deadline_id,deadline_date,deadline_type,trigger_id,source_pinpoint,notes
+DL-00001,2026-02-02,RESPONSE_DUE,TR-00001,ROA:1,offset_days=21 trigger_type=SERVICE_MAIL
+DL-00002,2026-02-02,RESPONSE_DUE,TR-00002,ROA:2,offset_days=21 trigger_type=SERVICE_MAIL
+DL-00003,2026-02-02,RESPONSE_DUE,TR-00003,ROA:3,offset_days=21 trigger_type=SERVICE_MAIL
+DL-00004,2026-03-03,RESPONSE_DUE,TR-00004,RECEIPT:1,offset_days=21 trigger_type=SERVICE_MAIL

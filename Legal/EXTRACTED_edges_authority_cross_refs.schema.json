@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    ":END_ID(Authority)": {
+      "description": "From: cyclepacks/authority/neo4j/edges_authority_cross_refs.csv | From: cyclepacks/authority_merge/neo4j/edges_authority_cross_refs.csv",
+      "type": "string"
+    },
+    ":START_ID(Authority)": {
+      "description": "From: cyclepacks/authority/neo4j/edges_authority_cross_refs.csv | From: cyclepacks/authority_merge/neo4j/edges_authority_cross_refs.csv",
+      "type": "string"
+    },
+    ":TYPE": {
+      "description": "From: cyclepacks/authority/neo4j/edges_authority_cross_refs.csv | From: cyclepacks/authority_merge/neo4j/edges_authority_cross_refs.csv",
+      "type": "string"
+    },
+    "extracted_edges:authority_cross_refs_id": {
+      "description": "Primary key.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "relation": {
+      "description": "From: cyclepacks/authority/neo4j/edges_authority_cross_refs.csv | From: cyclepacks/authority_merge/neo4j/edges_authority_cross_refs.csv",
+      "type": "string"
+    }
+  },
+  "required": [
+    "extracted_edges:authority_cross_refs_id"
+  ],
+  "title": "EXTRACTED_edges:authority_cross_refs",
+  "type": "object",
+  "x_litigationos": {
+    "entity": "EXTRACTED_edges:authority_cross_refs",
+    "generated_utc": "2026-01-20T05:12:07Z",
+    "primary_key": "extracted_edges:authority_cross_refs_id",
+    "version": "v2026-01-19.3"
+  }
+}

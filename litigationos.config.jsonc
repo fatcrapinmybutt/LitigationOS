@@ -1,0 +1,45 @@
+{
+  // V11 HyperAccel
+  "version": "V11_HYPERACCEL",
+  "workspace_root": "H:\\LitigationOS\\_WORKSPACE_V11",
+  "roots": [
+    "H:\\LitigationOS",
+    "F:\\",
+    "C:\\Users\\andre\\Documents"
+  ],
+  "read_only": true,
+  "append_only": true,
+  "no_sha256_default": true,
+  "integrity": {
+    "identity_key": "IdentityKeyV1",
+    "fastsig_optional": "FastSigV1_xxh3_sampled_only_for_dedupe_or_dispute"
+  },
+  "dedupe_mode": "off",
+  "lanes": {
+    "MEEK1": ["*Shady*", "*Housing*", "*MEEK1*"],
+    "MEEK2": ["*Custody*", "*FOC*", "*MEEK2*", "*2024-001507-DC*", "*24-01507-DC*"],
+    "MEEK3": ["*PPO*", "*Contempt*", "*MEEK3*", "*2023-005907-PP*", "*5907-PP*"],
+    "MEEK4": ["*JTC*", "*Canon*", "*COA*", "*MSC*", "*MEEK4*"]
+  },
+  "case_rules": [
+    { "case_id": "2024-001507-DC", "match": ["*2024-001507-DC*", "*24-01507-DC*"] },
+    { "case_id": "2023-005907-PP", "match": ["*2023-005907-PP*", "*5907-PP*"] }
+  ],
+  "pack_recipes": {
+    "timeline": { "max_quotes": 120 },
+    "rebuttal_map": { "max_quotes": 180, "prefer_negative": true },
+    "contradiction_map": { "max_quotes": 220, "pairwise": true },
+    "motion_draft": { "max_quotes": 160 },
+    "affidavit_draft": { "max_quotes": 140 },
+    "exhibit_matrix": { "max_quotes": 999 }
+  },
+  "autopilot": {
+    "default_queries": {
+      "MEEK1": "Shady Oaks utilities lease overbilling sewage notice judgment",
+      "MEEK2": "custody parenting time child support Lincoln McNeill FOC",
+      "MEEK3": "PPO contempt show cause no contact parenting time jail McNeill",
+      "MEEK4": "judicial bias canon JTC recusal supervisory order McNeill"
+    },
+    "purposes": ["timeline", "rebuttal_map", "contradiction_map", "motion_draft"]
+  }
+}

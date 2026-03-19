@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Agent Fleet Operations</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0F172A; --slate: #334155; --steel: #64748B;
+    --court-blue: #0369A1; --court-hover: #075985;
+    --success: #059669; --success-bg: #ECFDF5;
+    --warning: #D97706; --warning-bg: #FFFBEB;
+    --danger: #DC2626; --danger-bg: #FEF2F2;
+    --info: #2563EB; --info-bg: #EFF6FF;
+    --surface: #FFFFFF; --surface2: #F8FAFC; --surface3: #F1F5F9;
+    --border: #E2E8F0; --border-strong: #CBD5E1;
+    --lane-a: #4F46E5; --lane-a-bg: #EEF2FF;
+    --lane-c: #7C3AED; --lane-c-bg: #F5F3FF;
+    --sidebar-w: 240px;
+  }
+  body { font-family: 'Lato', sans-serif; font-size: 14px; color: var(--navy); background: var(--surface2); display: flex; min-height: 100vh; }
+  h1, h2, h3, h4, h5 { font-family: 'EB Garamond', serif; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+
+  .sidebar { width: var(--sidebar-w); min-height: 100vh; background: var(--surface2); border-right: 1px solid var(--border); display: flex; flex-direction: column; position: fixed; top: 0; left: 0; z-index: 100; }
+  .sidebar-brand { padding: 16px 20px; border-bottom: 1px solid var(--border); }
+  .sidebar-brand h2 { font-size: 20px; font-weight: 700; color: var(--navy); }
+  .sidebar-brand span { font-size: 12px; color: var(--steel); }
+  .sidebar-nav { flex: 1; padding: 8px 0; overflow-y: auto; }
+  .nav-section { padding: 8px 20px 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); }
+  .nav-item { display: flex; align-items: center; gap: 10px; padding: 9px 20px; font-size: 14px; color: var(--slate); cursor: pointer; text-decoration: none; transition: all 0.15s; }
+  .nav-item:hover { background: var(--surface3); color: var(--navy); }
+  .nav-item.active { background: var(--info-bg); color: var(--court-blue); font-weight: 700; border-right: 3px solid var(--court-blue); }
+  .nav-icon { width: 18px; text-align: center; font-size: 15px; }
+  .sidebar-footer { padding: 12px 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--steel); }
+
+  .topbar { height: 56px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; position: fixed; top: 0; left: var(--sidebar-w); right: 0; z-index: 90; }
+  .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--steel); }
+  .breadcrumb a { color: var(--court-blue); text-decoration: none; }
+  .breadcrumb .sep { color: var(--border-strong); }
+  .topbar-actions { display: flex; align-items: center; gap: 16px; }
+  .search-box { padding: 7px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; width: 260px; background: var(--surface2); }
+  .notif-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; position: relative; }
+  .notif-dot { width: 8px; height: 8px; background: var(--danger); border-radius: 50%; position: absolute; top: 6px; right: 6px; }
+
+  .main { margin-left: var(--sidebar-w); margin-top: 56px; padding: 24px; flex: 1; max-width: 1440px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .btn { padding: 9px 18px; border-radius: 6px; font-size: 14px; font-family: 'Lato', sans-serif; cursor: pointer; border: none; transition: all 0.15s; }
+  .btn-primary { background: var(--court-blue); color: white; }
+  .btn-primary:hover { background: var(--court-hover); }
+  .btn-secondary { background: var(--surface); color: var(--slate); border: 1px solid var(--border); }
+  .btn-sm { padding: 6px 14px; font-size: 13px; }
+
+  /* Fleet summary */
+  .fleet-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 24px; }
+  .fleet-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-top: 3px solid var(--court-blue); }
+  .fleet-card h4 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 4px; font-family: 'Lato', sans-serif; }
+  .fleet-count { font-family: 'JetBrains Mono', monospace; font-size: 28px; font-weight: 700; color: var(--court-blue); }
+  .fleet-stat { display: flex; justify-content: space-between; font-size: 12px; color: var(--steel); margin-top: 8px; }
+  .fleet-stat .value { font-weight: 700; color: var(--navy); }
+  .fleet-card:nth-child(1) { border-top-color: var(--court-blue); }
+  .fleet-card:nth-child(1) .fleet-count { color: var(--court-blue); }
+  .fleet-card:nth-child(2) { border-top-color: var(--lane-a); }
+  .fleet-card:nth-child(2) .fleet-count { color: var(--lane-a); }
+  .fleet-card:nth-child(3) { border-top-color: var(--success); }
+  .fleet-card:nth-child(3) .fleet-count { color: var(--success); }
+  .fleet-card:nth-child(4) { border-top-color: var(--lane-c); }
+  .fleet-card:nth-child(4) .fleet-count { color: var(--lane-c); }
+  .fleet-card:nth-child(5) { border-top-color: var(--warning); }
+  .fleet-card:nth-child(5) .fleet-count { color: var(--warning); }
+
+  /* Content grid */
+  .content-grid { display: grid; grid-template-columns: 1fr 340px; gap: 24px; }
+
+  /* Agent table */
+  .agent-table { width: 100%; border-collapse: collapse; }
+  .agent-table th { background: var(--surface3); padding: 10px 12px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); font-family: 'Lato', sans-serif; position: sticky; top: 0; }
+  .agent-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .agent-table tr:nth-child(even) { background: var(--surface2); }
+  .agent-table tr:hover { background: var(--info-bg); }
+  .status-badge { display: inline-block; padding: 3px 10px; border-radius: 10px; font-size: 11px; font-weight: 700; }
+  .status-running { background: var(--info-bg); color: var(--info); }
+  .status-idle { background: var(--surface3); color: var(--steel); }
+  .status-error { background: var(--danger-bg); color: var(--danger); }
+  .status-success { background: var(--success-bg); color: var(--success); }
+  .fleet-badge { font-size: 11px; padding: 2px 8px; border-radius: 8px; font-weight: 700; }
+  .fleet-d9 { background: var(--info-bg); color: var(--court-blue); }
+  .fleet-d999 { background: var(--lane-a-bg); color: var(--lane-a); }
+  .fleet-cop { background: var(--success-bg); color: var(--success); }
+  .fleet-sup { background: var(--lane-c-bg); color: var(--lane-c); }
+  .fleet-conv { background: var(--warning-bg); color: var(--warning); }
+
+  /* Pipeline phases */
+  .phases { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 24px; }
+  .phase-block { width: 56px; height: 36px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: white; }
+  .phase-done { background: var(--success); }
+  .phase-running { background: var(--warning); animation: pulse 1.5s infinite; }
+  .phase-pending { background: var(--surface3); color: var(--steel); }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+
+  /* Log */
+  .log-entry { display: flex; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--surface3); font-size: 12px; }
+  .log-entry:last-child { border-bottom: none; }
+  .log-time { font-family: 'JetBrains Mono', monospace; color: var(--steel); white-space: nowrap; min-width: 70px; }
+  .log-agent { font-weight: 700; color: var(--court-blue); min-width: 50px; }
+  .log-msg { color: var(--slate); }
+  .log-status { font-weight: 700; }
+  .log-ok { color: var(--success); }
+  .log-warn { color: var(--warning); }
+  .log-err { color: var(--danger); }
+
+  /* System health */
+  .health-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .health-label { font-size: 13px; color: var(--slate); width: 80px; }
+  .health-bar-outer { flex: 1; height: 10px; background: var(--surface3); border-radius: 5px; overflow: hidden; }
+  .health-bar-inner { height: 100%; border-radius: 5px; }
+  .health-value { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--navy); width: 50px; text-align: right; font-weight: 700; }
+  .pool-indicator { display: flex; gap: 4px; align-items: center; margin-top: 8px; }
+  .pool-dot { width: 10px; height: 10px; border-radius: 50%; }
+  .pool-active { background: var(--success); }
+  .pool-idle { background: var(--surface3); border: 1px solid var(--border-strong); }
+</style>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-brand"><h2>LitigationOS</h2><span>Pigors v. Watson</span></div>
+    <div class="sidebar-nav">
+      <div class="nav-section">Main</div>
+      <a class="nav-item" href="01_dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+      <a class="nav-item" href="02_cases.html"><span class="nav-icon">📁</span> Cases</a>
+      <a class="nav-item" href="03_filings.html"><span class="nav-icon">📄</span> Filings</a>
+      <a class="nav-item" href="04_evidence.html"><span class="nav-icon">🔍</span> Evidence</a>
+      <a class="nav-item" href="05_timeline.html"><span class="nav-icon">📅</span> Timeline</a>
+      <a class="nav-item" href="06_calendar.html"><span class="nav-icon">🗓️</span> Calendar</a>
+      <a class="nav-item" href="07_deadlines.html"><span class="nav-icon">⏰</span> Deadlines</a>
+      <div class="nav-section">Tools</div>
+      <a class="nav-item" href="08_settings.html"><span class="nav-icon">⚙️</span> Settings</a>
+      <a class="nav-item" href="09_wizard.html"><span class="nav-icon">✨</span> Wizard</a>
+      <a class="nav-item" href="10_filing_detail.html"><span class="nav-icon">📋</span> Filing Detail</a>
+      <a class="nav-item" href="11_evidence_detail.html"><span class="nav-icon">🔎</span> Evidence Detail</a>
+      <a class="nav-item" href="12_search.html"><span class="nav-icon">🔍</span> Search</a>
+      <a class="nav-item" href="13_reports.html"><span class="nav-icon">📈</span> Reports</a>
+      <a class="nav-item active" href="14_agent_fleet.html"><span class="nav-icon">🤖</span> Agent Fleet</a>
+    </div>
+    <div class="sidebar-footer">v9.0 MANBEARPIG · Local AI</div>
+  </nav>
+
+  <header class="topbar">
+    <div class="breadcrumb">
+      <a href="01_dashboard.html">Home</a><span class="sep">›</span>
+      <span>Agent Fleet Operations</span>
+    </div>
+    <div class="topbar-actions">
+      <input class="search-box" type="text" placeholder="Search agents… (⌘K)">
+      <button class="notif-btn">🔔<span class="notif-dot"></span></button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+      <h1 style="font-size:24px;font-weight:700;">Agent Fleet Operations</h1>
+      <div style="display:flex;gap:8px;">
+        <button class="btn btn-secondary btn-sm">⏸️ Pause All</button>
+        <button class="btn btn-primary btn-sm">▶️ Run Fleet</button>
+      </div>
+    </div>
+
+    <!-- Fleet Summary -->
+    <div class="fleet-grid">
+      <div class="fleet-card">
+        <h4>Delta9</h4>
+        <div class="fleet-count">56</div>
+        <div class="fleet-stat"><span>Success Rate</span><span class="value">97.3%</span></div>
+        <div class="fleet-stat"><span>Avg Run</span><span class="value">4.2s</span></div>
+        <div class="fleet-stat"><span>Last Run</span><span class="value">14:28</span></div>
+      </div>
+      <div class="fleet-card">
+        <h4>Delta999</h4>
+        <div class="fleet-count">12</div>
+        <div class="fleet-stat"><span>Success Rate</span><span class="value">94.8%</span></div>
+        <div class="fleet-stat"><span>Avg Run</span><span class="value">12.7s</span></div>
+        <div class="fleet-stat"><span>Last Run</span><span class="value">14:25</span></div>
+      </div>
+      <div class="fleet-card">
+        <h4>Copilot</h4>
+        <div class="fleet-count">64</div>
+        <div class="fleet-stat"><span>Success Rate</span><span class="value">99.1%</span></div>
+        <div class="fleet-stat"><span>Avg Run</span><span class="value">2.8s</span></div>
+        <div class="fleet-stat"><span>Last Run</span><span class="value">14:32</span></div>
+      </div>
+      <div class="fleet-card">
+        <h4>Superpower</h4>
+        <div class="fleet-count">13</div>
+        <div class="fleet-stat"><span>Success Rate</span><span class="value">96.2%</span></div>
+        <div class="fleet-stat"><span>Avg Run</span><span class="value">8.4s</span></div>
+        <div class="fleet-stat"><span>Last Run</span><span class="value">14:10</span></div>
+      </div>
+      <div class="fleet-card">
+        <h4>Convergence</h4>
+        <div class="fleet-count">10</div>
+        <div class="fleet-stat"><span>Success Rate</span><span class="value">92.0%</span></div>
+        <div class="fleet-stat"><span>Avg Run</span><span class="value">15.3s</span></div>
+        <div class="fleet-stat"><span>Last Run</span><span class="value">14:18</span></div>
+      </div>
+    </div>
+
+    <!-- Pipeline Phases -->
+    <div class="card" style="margin-bottom:24px;">
+      <h3 style="font-size:20px;font-weight:600;margin-bottom:16px;">Pipeline Phase Status</h3>
+      <div class="phases">
+        <div class="phase-block phase-done" title="Phase 0: Safety Snapshot">0</div>
+        <div class="phase-block phase-done" title="Phase 1: Inventory">1</div>
+        <div class="phase-block phase-done" title="Phase 2: Dedup">2</div>
+        <div class="phase-block phase-done" title="Phase 3: Classify">3</div>
+        <div class="phase-block phase-done" title="Phase 4a: Extract PDF">4a</div>
+        <div class="phase-block phase-done" title="Phase 4b: Extract DOCX">4b</div>
+        <div class="phase-block phase-done" title="Phase 4c: Structured">4c</div>
+        <div class="phase-block phase-done" title="Phase 4d: Atomize">4d</div>
+        <div class="phase-block phase-done" title="Phase 4e: Archive">4e</div>
+        <div class="phase-block phase-done" title="Phase 5: LEXOS Brain Feed">5</div>
+        <div class="phase-block phase-done" title="Phase 6: Gap Analysis">6</div>
+        <div class="phase-block phase-running" title="Phase 7a: Graph Delta">7a</div>
+        <div class="phase-block phase-running" title="Phase 7b: Synthesis Merge">7b</div>
+        <div class="phase-block phase-pending" title="Phase 7c: Knowledge Merge">7c</div>
+        <div class="phase-block phase-pending" title="Phase 8: Litigation Refresh">8</div>
+        <div class="phase-block phase-pending" title="Phase 9: MCP Ingest">9</div>
+      </div>
+      <div style="display:flex;gap:16px;font-size:12px;color:var(--steel);">
+        <span>🟢 Complete: 11</span>
+        <span>🟡 Running: 2</span>
+        <span>⬜ Pending: 3</span>
+      </div>
+    </div>
+
+    <!-- Content Grid -->
+    <div class="content-grid">
+      <!-- Agent Table -->
+      <div class="card" style="padding:0;overflow:hidden;">
+        <div style="padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;">
+          <h3 style="font-size:18px;font-weight:600;">Agent Registry</h3>
+          <span style="font-size:12px;color:var(--steel);">155 agents · 20 shown</span>
+        </div>
+        <div style="max-height:600px;overflow-y:auto;">
+          <table class="agent-table">
+            <thead>
+              <tr><th>ID</th><th>Name</th><th>Fleet</th><th>Tier</th><th>Status</th><th>Last Run</th><th>Success</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="mono">A01</td><td>File Indexer</td><td><span class="fleet-badge fleet-d9">Delta9</span></td><td>1</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:28</td><td class="mono">99.2%</td></tr>
+              <tr><td class="mono">A02</td><td>Dedup Engine</td><td><span class="fleet-badge fleet-d9">Delta9</span></td><td>1</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:26</td><td class="mono">98.5%</td></tr>
+              <tr><td class="mono">A03</td><td>Classifier</td><td><span class="fleet-badge fleet-d9">Delta9</span></td><td>1</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:25</td><td class="mono">97.1%</td></tr>
+              <tr><td class="mono">A04</td><td>PDF Extractor</td><td><span class="fleet-badge fleet-d9">Delta9</span></td><td>2</td><td><span class="status-badge status-running">Running</span></td><td class="mono">14:32</td><td class="mono">96.8%</td></tr>
+              <tr><td class="mono">A05</td><td>DOCX Extractor</td><td><span class="fleet-badge fleet-d9">Delta9</span></td><td>2</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:20</td><td class="mono">99.0%</td></tr>
+              <tr><td class="mono">A06</td><td>Structured Parser</td><td><span class="fleet-badge fleet-d9">Delta9</span></td><td>2</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:18</td><td class="mono">95.4%</td></tr>
+              <tr><td class="mono">A07</td><td>Atomizer</td><td><span class="fleet-badge fleet-d9">Delta9</span></td><td>2</td><td><span class="status-badge status-running">Running</span></td><td class="mono">14:31</td><td class="mono">97.6%</td></tr>
+              <tr><td class="mono">A08</td><td>Archive Scanner</td><td><span class="fleet-badge fleet-d9">Delta9</span></td><td>2</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:15</td><td class="mono">98.9%</td></tr>
+              <tr><td class="mono">J01</td><td>Judicial Profiler</td><td><span class="fleet-badge fleet-d9">Delta9</span></td><td>J</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:22</td><td class="mono">96.3%</td></tr>
+              <tr><td class="mono">J02</td><td>Bias Detector</td><td><span class="fleet-badge fleet-d9">Delta9</span></td><td>J</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:20</td><td class="mono">94.7%</td></tr>
+              <tr><td class="mono">K01</td><td>Case Intel Analyst</td><td><span class="fleet-badge fleet-d9">Delta9</span></td><td>K</td><td><span class="status-badge status-running">Running</span></td><td class="mono">14:30</td><td class="mono">95.8%</td></tr>
+              <tr><td class="mono">L01</td><td>Legal Researcher</td><td><span class="fleet-badge fleet-d9">Delta9</span></td><td>L</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:19</td><td class="mono">97.2%</td></tr>
+              <tr><td class="mono">D01</td><td>Classifier v2</td><td><span class="fleet-badge fleet-d999">Delta999</span></td><td>—</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:25</td><td class="mono">96.1%</td></tr>
+              <tr><td class="mono">D02</td><td>Validator</td><td><span class="fleet-badge fleet-d999">Delta999</span></td><td>—</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:22</td><td class="mono">93.4%</td></tr>
+              <tr><td class="mono">D03</td><td>Brief Generator</td><td><span class="fleet-badge fleet-d999">Delta999</span></td><td>—</td><td><span class="status-badge status-error">Error</span></td><td class="mono">14:10</td><td class="mono">88.2%</td></tr>
+              <tr><td class="mono">D04</td><td>DB Lock Manager</td><td><span class="fleet-badge fleet-d999">Delta999</span></td><td>—</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:28</td><td class="mono">99.9%</td></tr>
+              <tr><td class="mono">F01</td><td>Filing Assembler</td><td><span class="fleet-badge fleet-conv">Conv</span></td><td>F</td><td><span class="status-badge status-running">Running</span></td><td class="mono">14:31</td><td class="mono">91.5%</td></tr>
+              <tr><td class="mono">F02</td><td>Brain Feeder</td><td><span class="fleet-badge fleet-conv">Conv</span></td><td>F</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:18</td><td class="mono">94.0%</td></tr>
+              <tr><td class="mono">S01</td><td>Orchestrator</td><td><span class="fleet-badge fleet-sup">Super</span></td><td>S</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:28</td><td class="mono">97.8%</td></tr>
+              <tr><td class="mono">C01</td><td>Pre-Filing QA</td><td><span class="fleet-badge fleet-cop">Copilot</span></td><td>—</td><td><span class="status-badge status-idle">Idle</span></td><td class="mono">14:32</td><td class="mono">99.5%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Right Panel -->
+      <div>
+        <!-- Live Log -->
+        <div class="card" style="margin-bottom:16px;">
+          <h3 style="font-size:18px;font-weight:600;margin-bottom:16px;">Live Agent Log</h3>
+          <div class="log-entry">
+            <span class="log-time">14:32:18</span>
+            <span class="log-agent">A04</span>
+            <span class="log-msg">Processing batch 47/52 — <span class="log-status log-ok">OK</span></span>
+          </div>
+          <div class="log-entry">
+            <span class="log-time">14:31:55</span>
+            <span class="log-agent">F01</span>
+            <span class="log-msg">Assembling JTC complaint — <span class="log-status log-ok">OK</span></span>
+          </div>
+          <div class="log-entry">
+            <span class="log-time">14:31:42</span>
+            <span class="log-agent">A07</span>
+            <span class="log-msg">Atomizing 128 paragraphs — <span class="log-status log-ok">OK</span></span>
+          </div>
+          <div class="log-entry">
+            <span class="log-time">14:30:58</span>
+            <span class="log-agent">K01</span>
+            <span class="log-msg">Scoring authority chains — <span class="log-status log-ok">OK</span></span>
+          </div>
+          <div class="log-entry">
+            <span class="log-time">14:28:33</span>
+            <span class="log-agent">D04</span>
+            <span class="log-msg">WAL checkpoint — 342 pages flushed — <span class="log-status log-ok">OK</span></span>
+          </div>
+          <div class="log-entry">
+            <span class="log-time">14:25:11</span>
+            <span class="log-agent">D03</span>
+            <span class="log-msg">Brief gen failed: template missing — <span class="log-status log-err">FATAL</span></span>
+          </div>
+          <div class="log-entry">
+            <span class="log-time">14:22:07</span>
+            <span class="log-agent">J02</span>
+            <span class="log-msg">Bias scan complete: 12 findings — <span class="log-status log-warn">WARN</span></span>
+          </div>
+          <div class="log-entry">
+            <span class="log-time">14:18:44</span>
+            <span class="log-agent">F02</span>
+            <span class="log-msg">Brain feed: 50 micro-brains updated — <span class="log-status log-ok">OK</span></span>
+          </div>
+        </div>
+
+        <!-- System Health -->
+        <div class="card">
+          <h3 style="font-size:18px;font-weight:600;margin-bottom:16px;">System Health</h3>
+          <div class="health-row">
+            <span class="health-label">CPU</span>
+            <div class="health-bar-outer"><div class="health-bar-inner" style="width:34%;background:var(--success);"></div></div>
+            <span class="health-value">34%</span>
+          </div>
+          <div class="health-row">
+            <span class="health-label">RAM</span>
+            <div class="health-bar-outer"><div class="health-bar-inner" style="width:68%;background:var(--warning);"></div></div>
+            <span class="health-value">68%</span>
+          </div>
+          <div class="health-row">
+            <span class="health-label">Disk I/O</span>
+            <div class="health-bar-outer"><div class="health-bar-inner" style="width:22%;background:var(--success);"></div></div>
+            <span class="health-value">22%</span>
+          </div>
+          <div class="health-row">
+            <span class="health-label">DB Size</span>
+            <div class="health-bar-outer"><div class="health-bar-inner" style="width:85%;background:var(--danger);"></div></div>
+            <span class="health-value">10.2G</span>
+          </div>
+
+          <h4 style="font-size:14px;font-weight:700;margin:16px 0 8px;color:var(--slate);font-family:'Lato',sans-serif;">DB Connection Pool</h4>
+          <div class="pool-indicator">
+            <span class="pool-dot pool-active" title="Active"></span>
+            <span class="pool-dot pool-active" title="Active"></span>
+            <span class="pool-dot pool-idle" title="Idle"></span>
+            <span class="pool-dot pool-idle" title="Idle"></span>
+            <span class="pool-dot pool-idle" title="Idle"></span>
+            <span style="font-size:12px;color:var(--steel);margin-left:8px;">2/5 active · WAL mode</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

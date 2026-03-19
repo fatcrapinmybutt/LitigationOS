@@ -1,0 +1,18 @@
+{
+  "litigationos_home": "D:/LitigationOS",
+  "default_out_root": "F:/LitigationOS/HarvestOut",
+  "scan_roots": [
+    "F:/",
+    "D:/",
+    "E:/",
+    "Q:/",
+    "Z:/",
+    "X:/"
+  ],
+  "paths_file": "D:/LitigationOS/drivesANDpaths.txt",
+  "rclone_roots": [
+    "gdrive:/EDS-USB",
+    "gdrive:/Litigation_OS$",
+    "gdrive:/LITIGATION_INTAKE"
+  ]
+}

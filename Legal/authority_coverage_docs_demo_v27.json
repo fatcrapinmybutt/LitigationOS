@@ -1,0 +1,129 @@
+{
+  "docs": [
+    {
+      "doc_id": "acbcb9f28e7dcad0",
+      "total_pages": 874,
+      "referenced_pages": 557,
+      "unreferenced_pages": 317
+    },
+    {
+      "doc_id": "3a7dd4a09cceb207",
+      "total_pages": 525,
+      "referenced_pages": 0,
+      "unreferenced_pages": 525
+    },
+    {
+      "doc_id": "DOC_0b1e5d7c5ebf",
+      "total_pages": 36,
+      "referenced_pages": 0,
+      "unreferenced_pages": 36
+    },
+    {
+      "doc_id": "DOC_10323615e0b3",
+      "total_pages": 24,
+      "referenced_pages": 0,
+      "unreferenced_pages": 24
+    },
+    {
+      "doc_id": "DOC_2b4b07dbfbcb",
+      "total_pages": 60,
+      "referenced_pages": 0,
+      "unreferenced_pages": 60
+    },
+    {
+      "doc_id": "DOC_59e6f5e1da38",
+      "total_pages": 224,
+      "referenced_pages": 0,
+      "unreferenced_pages": 224
+    },
+    {
+      "doc_id": "DOC_5bc804652375",
+      "total_pages": 61,
+      "referenced_pages": 0,
+      "unreferenced_pages": 61
+    },
+    {
+      "doc_id": "DOC_5d5ccdd982fb",
+      "total_pages": 48,
+      "referenced_pages": 0,
+      "unreferenced_pages": 48
+    },
+    {
+      "doc_id": "DOC_66b02fd60d14",
+      "total_pages": 182,
+      "referenced_pages": 0,
+      "unreferenced_pages": 182
+    },
+    {
+      "doc_id": "DOC_7d1785bb1811",
+      "total_pages": 216,
+      "referenced_pages": 0,
+      "unreferenced_pages": 216
+    },
+    {
+      "doc_id": "DOC_8117fb068ab4",
+      "total_pages": 18,
+      "referenced_pages": 0,
+      "unreferenced_pages": 18
+    },
+    {
+      "doc_id": "DOC_8d70805a9186",
+      "total_pages": 196,
+      "referenced_pages": 0,
+      "unreferenced_pages": 196
+    },
+    {
+      "doc_id": "DOC_8fcca8c1c824",
+      "total_pages": 372,
+      "referenced_pages": 0,
+      "unreferenced_pages": 372
+    },
+    {
+      "doc_id": "DOC_90b3ce511fd9",
+      "total_pages": 53,
+      "referenced_pages": 0,
+      "unreferenced_pages": 53
+    },
+    {
+      "doc_id": "DOC_9778de384080",
+      "total_pages": 46,
+      "referenced_pages": 0,
+      "unreferenced_pages": 46
+    },
+    {
+      "doc_id": "DOC_aaa3f49bf55c",
+      "total_pages": 13,
+      "referenced_pages": 0,
+      "unreferenced_pages": 13
+    },
+    {
+      "doc_id": "DOC_c18b05335f0d",
+      "total_pages": 22,
+      "referenced_pages": 0,
+      "unreferenced_pages": 22
+    },
+    {
+      "doc_id": "DOC_cebc46393af4",
+      "total_pages": 548,
+      "referenced_pages": 0,
+      "unreferenced_pages": 548
+    },
+    {
+      "doc_id": "DOC_d9b470c66472",
+      "total_pages": 178,
+      "referenced_pages": 0,
+      "unreferenced_pages": 178
+    },
+    {
+      "doc_id": "d932b22d074c69b6",
+      "total_pages": 659,
+      "referenced_pages": 0,
+      "unreferenced_pages": 659
+    }
+  ],
+  "totals": {
+    "doc_count": 20,
+    "total_pages": 4355,
+    "referenced_pages": 557
+  }
+}

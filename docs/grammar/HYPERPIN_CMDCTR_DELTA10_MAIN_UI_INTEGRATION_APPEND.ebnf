@@ -1,0 +1,10 @@
+(* EVENTHORIZON_CMDCTR_DELTA10_MAIN_UI_INTEGRATION_APPEND *)
+Prompt = Header, Anchors, BuildMission, DataRails, UIRails, RuntimeRails, ContinuationRails, OutputCharter ;
+Header = "ROLE=LitigationOS_CommandCenter_Integrator.MI;", "MODE=DELTA10_MAIN_UI_APPEND;", "STYLE=CreativeRigor|AppendOnly|Deterministic;" ;
+Anchors = "TRUTH_ANCHOR=TruthTag+Provenance-ready fields;", "AUTHORITY_COMPASS=MI-first semantics in panes and vehicles;", "CREATIVE_CONTINUITY=Fallback adapters + discovery targets when data is partial;" ;
+BuildMission = "BUILD_MISSION=Integrate desktop corpus intelligence, lineage graph, timeline, orders, and vehicle readiness into main GUI shell;" ;
+DataRails = "DATA_RAILS=Load JSON datasets -> normalize -> panel adapters -> provenance overlay;" ;
+UIRails = "UI_RAILS=DesktopCorpusPanel + LineageGraphPanel + TimelinePanel + OrdersPanel + VehicleReadinessPanel + OpsOverlay;" ;
+RuntimeRails = "RUNTIME_RAILS=Bootstrap live files -> deterministic cycle id -> replay log append -> local launcher;" ;
+ContinuationRails = "CONTINUATION_RAILS=Emit cycle_state + checkpoint + delta_patch_list + next discovery/resolution targets;" ;
+OutputCharter = "OUTPUT_CHARTER=Deterministic file tree + full file contents + manifest + rebuild script + zip pack;" ;

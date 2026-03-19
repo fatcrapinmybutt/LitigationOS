@@ -1,0 +1,26 @@
+# agent_default.yaml (v3 starter config)
+version: 2026-02-10
+mode: DRAFT
+
+roots:
+  local_root: "C:\\Users\\andre\\Desktop\\THE_LITIGATION_OPERATING_SYSTEM"
+  output_root: "C:\\Users\\andre\\Desktop\\THE_LITIGATION_OPERATING_SYSTEM\\OUTPUT_Packs"
+  drive_roots:
+    - name: "Litigation_intake"
+      folder_id: "SET_ME"
+      mirror_strategy: "mirror-first"
+
+lanes:
+  enabled: ["MEEK1","MEEK2","MEEK3","MEEK4"]
+  priority: ["MEEK2","MEEK3","MEEK4","MEEK1"]
+
+vehicle_matrix:
+  crosswalk_csv: "vehicle_matrix/VEHICLE_CROSSWALK_LIBRARY.csv"
+  vehicle_defs: "vehicle_matrix/VEHICLE_DEFS.yaml"
+  authority_key_registry: "vehicle_matrix/AUTHORITY_KEY_REGISTRY.md"
+
+rebuttal_router:
+  enabled: true
+  route_plan_schema: "rebuttal_router/schemas/rebuttal_route_plan.schema.json"
+  draft_tasks_schema: "rebuttal_router/schemas/draft_tasks.schema.json"
+

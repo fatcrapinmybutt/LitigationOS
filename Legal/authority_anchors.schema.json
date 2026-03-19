@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "required": [
+    "authority_ref",
+    "anchor_kind",
+    "anchor_token",
+    "status"
+  ],
+  "properties": {
+    "authority_ref": {
+      "type": "string"
+    },
+    "anchor_kind": {
+      "type": "string"
+    },
+    "anchor_token": {
+      "type": "string"
+    },
+    "context_snippet": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

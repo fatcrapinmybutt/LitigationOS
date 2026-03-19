@@ -1,0 +1,5 @@
+case_id,deadline_date,deadline_type,source_pinpoint,notes
+DEMO-CASE,2026-01-10,CANDIDATE_FROM_ROA_EXPLICIT_DATE,ROA:1,01/10/2026 | Notice of Hearing | Hearing date 02/05/2026 9:00 AM
+DEMO-CASE,2026-01-11,CANDIDATE_FROM_ROA_EXPLICIT_DATE,ROA:2,01/11/2026 | Response Due | Response due date: 01/31/2026
+DEMO-CASE,2026-01-12,CANDIDATE_FROM_ROA_EXPLICIT_DATE,ROA:3,01/12/2026 | Misc | No explicit deadline here
+DEMO-CASE,2026-02-10,CANDIDATE_FROM_RECEIPT_EXPLICIT_DATE,RECEIPT:1,"{""type"": ""MiFileReceipt"", ""text"": ""Deadline 02/10/2026 for answer""}"

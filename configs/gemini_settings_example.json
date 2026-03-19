@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "litigationos-webhooks": {
+      "command": "node",
+      "args": [
+        "C:\\\\PATH\\\\TO\\\\LITIGATIONOS_MCP_WEBHOOKS_v1.0\\\\mcp\\\\server.mjs"
+      ],
+      "env": {
+        "WEBHOOK_PORT": "8787",
+        "WEBHOOK_INBOX_DIR": "C:\\\\PATH\\\\TO\\\\LITIGATIONOS_MCP_WEBHOOKS_v1.0\\\\data\\\\inbox",
+        "WEBHOOK_PROCESSED_DIR": "C:\\\\PATH\\\\TO\\\\LITIGATIONOS_MCP_WEBHOOKS_v1.0\\\\data\\\\processed",
+        "WEBHOOK_REGISTRY_FILE": "C:\\\\PATH\\\\TO\\\\LITIGATIONOS_MCP_WEBHOOKS_v1.0\\\\data\\\\registry\\\\hooks.json"
+      }
+    }
+  }
+}

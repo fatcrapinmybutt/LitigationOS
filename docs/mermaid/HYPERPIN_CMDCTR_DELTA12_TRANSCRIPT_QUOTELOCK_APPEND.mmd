@@ -1,0 +1,9 @@
+flowchart LR
+  EA[EvidenceAtoms] --> Q[Transcript Quotes Payload]
+  T[Hearing Discovery Targets] --> Q
+  O[Orders] --> L[QuoteLock Links]
+  S[ServiceProofs] --> L
+  X[ExhibitMatrix] --> L
+  Q --> L
+  L --> UI[Transcript Quote-Lock Panel]
+  UI --> Next[Exact Quote Extractor Rail]

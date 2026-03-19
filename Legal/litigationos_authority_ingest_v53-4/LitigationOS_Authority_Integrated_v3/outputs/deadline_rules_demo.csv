@@ -1,0 +1,2 @@
+rule_id,event_kind,offset_days,offset_business_days,notes,authority_anchor_token
+DEMO-ANSWER-DUE,service,0,14,DEMO ONLY: offset provided by user; not asserted as law.,MCR 2.108

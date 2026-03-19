@@ -1,0 +1,7 @@
+{
+  "q": "MCL 600.1701",
+  "q_sanitized": "MCL 600.1701",
+  "topk": 20,
+  "error": "fts5: syntax error near \".\"",
+  "results": []
+}

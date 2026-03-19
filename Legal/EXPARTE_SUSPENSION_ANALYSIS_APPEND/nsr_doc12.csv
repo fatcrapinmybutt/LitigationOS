@@ -1,0 +1,5 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+NoReply_20260105_131859_0004.pdf,12,41,PPO: 2023-5907-PP,record_fact_related_case_ppo_number,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0004.pdf,12,57,conduct by Judge McNeill,record_fact_judge_identification,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0004.pdf,12,80,focuses on how Judge Jenny L. McNeill,record_fact_judge_identification,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0004.pdf,12,83,in my PPO,record_fact_related_case_ppo_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.

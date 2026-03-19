@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "authority_ref_id": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_ref.schema.json",
+      "type": "string"
+    },
+    "citation_key": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_ref.schema.json",
+      "type": "string"
+    },
+    "effective_end": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_ref.schema.json"
+    },
+    "effective_start": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_ref.schema.json"
+    },
+    "extracted_authorityref_id": {
+      "description": "Primary key.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "kind": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_ref.schema.json",
+      "type": "string"
+    },
+    "meta": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_ref.schema.json",
+      "type": "object"
+    },
+    "pin_ids": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_ref.schema.json",
+      "type": "array"
+    },
+    "section_path": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_ref.schema.json"
+    },
+    "source_id": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_ref.schema.json",
+      "type": "string"
+    },
+    "source_path": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_ref.schema.json"
+    },
+    "text_pointer": {
+      "description": "From: master/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/SCHEMA/authority/authority_ref.schema.json | From: master_full/LITIGATIONOS__MASTERv1.0/VERSIONS/v0008/SCHEMA/authority/authority_ref.schema.json",
+      "type": "string"
+    }
+  },
+  "required": [
+    "extracted_authorityref_id"
+  ],
+  "title": "EXTRACTED_AuthorityRef",
+  "type": "object",
+  "x_litigationos": {
+    "entity": "EXTRACTED_AuthorityRef",
+    "generated_utc": "2026-01-20T05:12:07Z",
+    "primary_key": "extracted_authorityref_id",
+    "version": "v2026-01-19.3"
+  }
+}

@@ -1,0 +1,1 @@
+# Placeholder for DARS_GENERATOR.py – logic converts doctrine → motion

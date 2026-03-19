@@ -1,0 +1,5 @@
+GRAPH.graphml", "NUCLEUS_APEX_SUPERGRAPH.graphml"]}
+{"source": "violation::4e59d154aaaf", "target": "remedy::d5301e3e6d", "rel": "seeks", "label": "seeks", "props": {"props": "{}", "key": "e54640", "attr_json": "{\"type\": \"seeks\", \"props\": \"{}\"}"}, "sources": ["APEX_GRAPH.graphml", "NUCLEUS_APEX_SUPERGRAPH.graphml", "upgrade_pack:master_edges"]}
+{"source": "violation::4e59d154aaaf", "target": "remedy::9ca93831c6", "rel": "seeks", "label": "seeks", "props": {"props": "{}"}, "sources": ["APEX_GRAPH.graphml", "NUCLEUS_APEX_SUPERGRAPH.graphml"]}
+{"source": "violation::4e59d154aaaf", "target": "hub::violation", "rel": "categorized_as", "label": "categorized_as", "props": {"props": "{}", "key": "e74842", "attr_json": "{\"type\": \"categorized_as\", \"props\": \"{}\"}"}, "sources": ["APEX_GRAPH.graphml", "NUCLEUS_APEX_SUPERGRAPH.graphml", "upgrade_pack:master_edges"]}
+{"source"

@@ -1,0 +1,5 @@
+trigger_id,trigger_date,trigger_type,source_pinpoint,notes
+TR-00001,2026-01-10,SERVICE_MAIL,ROA:1,01/10/2026 | Notice of Hearing | Hearing date 02/05/2026 9:00 AM
+TR-00002,2026-01-11,SERVICE_MAIL,ROA:2,01/11/2026 | Response Due | Response due date: 01/31/2026
+TR-00003,2026-01-12,SERVICE_MAIL,ROA:3,01/12/2026 | Misc | No explicit deadline here
+TR-00004,2026-02-10,SERVICE_MAIL,RECEIPT:1,"{""type"": ""MiFileReceipt"", ""text"": ""Deadline 02/10/2026 for answer""}"

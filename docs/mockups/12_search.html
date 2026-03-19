@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Global Search</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0F172A; --slate: #334155; --steel: #64748B;
+    --court-blue: #0369A1; --court-hover: #075985;
+    --success: #059669; --success-bg: #ECFDF5;
+    --warning: #D97706; --warning-bg: #FFFBEB;
+    --danger: #DC2626; --danger-bg: #FEF2F2;
+    --info: #2563EB; --info-bg: #EFF6FF;
+    --surface: #FFFFFF; --surface2: #F8FAFC; --surface3: #F1F5F9;
+    --border: #E2E8F0; --border-strong: #CBD5E1;
+    --lane-a: #4F46E5; --lane-a-bg: #EEF2FF;
+    --lane-e: #D97706; --lane-e-bg: #FFFBEB;
+    --lane-f: #0284C7; --lane-f-bg: #F0F9FF;
+    --sidebar-w: 240px;
+  }
+  body { font-family: 'Lato', sans-serif; font-size: 14px; color: var(--navy); background: var(--surface2); display: flex; min-height: 100vh; }
+  h1, h2, h3, h4, h5 { font-family: 'EB Garamond', serif; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+
+  .sidebar { width: var(--sidebar-w); min-height: 100vh; background: var(--surface2); border-right: 1px solid var(--border); display: flex; flex-direction: column; position: fixed; top: 0; left: 0; z-index: 100; }
+  .sidebar-brand { padding: 16px 20px; border-bottom: 1px solid var(--border); }
+  .sidebar-brand h2 { font-size: 20px; font-weight: 700; color: var(--navy); }
+  .sidebar-brand span { font-size: 12px; color: var(--steel); }
+  .sidebar-nav { flex: 1; padding: 8px 0; overflow-y: auto; }
+  .nav-section { padding: 8px 20px 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); }
+  .nav-item { display: flex; align-items: center; gap: 10px; padding: 9px 20px; font-size: 14px; color: var(--slate); cursor: pointer; text-decoration: none; transition: all 0.15s; }
+  .nav-item:hover { background: var(--surface3); color: var(--navy); }
+  .nav-item.active { background: var(--info-bg); color: var(--court-blue); font-weight: 700; border-right: 3px solid var(--court-blue); }
+  .nav-icon { width: 18px; text-align: center; font-size: 15px; }
+  .sidebar-footer { padding: 12px 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--steel); }
+
+  .topbar { height: 56px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; position: fixed; top: 0; left: var(--sidebar-w); right: 0; z-index: 90; }
+  .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--steel); }
+  .breadcrumb a { color: var(--court-blue); text-decoration: none; }
+  .breadcrumb .sep { color: var(--border-strong); }
+  .topbar-actions { display: flex; align-items: center; gap: 16px; }
+  .notif-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; position: relative; }
+  .notif-dot { width: 8px; height: 8px; background: var(--danger); border-radius: 50%; position: absolute; top: 6px; right: 6px; }
+
+  .main { margin-left: var(--sidebar-w); margin-top: 56px; padding: 24px; flex: 1; max-width: 1440px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .btn { padding: 9px 18px; border-radius: 6px; font-size: 14px; font-family: 'Lato', sans-serif; cursor: pointer; border: none; transition: all 0.15s; }
+  .btn-primary { background: var(--court-blue); color: white; }
+  .btn-secondary { background: var(--surface); color: var(--slate); border: 1px solid var(--border); }
+  .btn-sm { padding: 6px 14px; font-size: 13px; }
+
+  /* Search hero */
+  .search-hero { text-align: center; margin-bottom: 24px; }
+  .search-hero h1 { font-size: 32px; font-weight: 700; margin-bottom: 16px; }
+  .search-input-wrap { position: relative; max-width: 720px; margin: 0 auto; }
+  .search-input { width: 100%; padding: 14px 20px 14px 48px; border: 2px solid var(--border); border-radius: 12px; font-size: 16px; font-family: 'Lato', sans-serif; background: var(--surface); transition: all 0.15s; }
+  .search-input:focus { outline: none; border-color: var(--court-blue); box-shadow: 0 0 0 4px rgba(3,105,161,0.1); }
+  .search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); font-size: 20px; color: var(--steel); }
+  .search-shortcut { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); font-size: 12px; color: var(--steel); background: var(--surface3); padding: 3px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; }
+
+  /* Recent searches */
+  .recent { display: flex; gap: 10px; justify-content: center; margin-top: 12px; flex-wrap: wrap; }
+  .recent-chip { padding: 5px 14px; background: var(--surface3); border-radius: 16px; font-size: 12px; color: var(--steel); cursor: pointer; transition: 0.15s; }
+  .recent-chip:hover { background: var(--border); color: var(--navy); }
+
+  /* Search layout */
+  .search-layout { display: grid; grid-template-columns: 220px 1fr; gap: 24px; }
+
+  /* Facets */
+  .facet-group { margin-bottom: 20px; }
+  .facet-group h4 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); margin-bottom: 10px; font-family: 'Lato', sans-serif; }
+  .facet-item { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; font-size: 13px; cursor: pointer; color: var(--slate); }
+  .facet-item:hover { color: var(--court-blue); }
+  .facet-item.active { color: var(--court-blue); font-weight: 700; }
+  .facet-count { font-size: 12px; background: var(--surface3); padding: 2px 8px; border-radius: 10px; color: var(--steel); }
+  .facet-item.active .facet-count { background: var(--info-bg); color: var(--court-blue); }
+
+  /* Advanced toggle */
+  .adv-toggle { font-size: 13px; color: var(--court-blue); cursor: pointer; margin-top: 12px; }
+
+  /* Results */
+  .results-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  .results-header h3 { font-size: 20px; font-weight: 600; }
+  .results-count { font-size: 13px; color: var(--steel); }
+
+  .result-group { margin-bottom: 24px; }
+  .result-group-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; }
+  .result-group-count { background: var(--surface3); padding: 2px 8px; border-radius: 10px; font-size: 11px; }
+
+  .result-item { padding: 16px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; cursor: pointer; transition: 0.15s; }
+  .result-item:hover { border-color: var(--court-blue); box-shadow: 0 2px 8px rgba(3,105,161,0.08); }
+  .result-title { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+  .result-title a { color: var(--court-blue); text-decoration: none; }
+  .result-excerpt { font-size: 13px; color: var(--slate); line-height: 1.5; margin-bottom: 8px; }
+  .result-excerpt mark { background: #FEF08A; color: var(--navy); padding: 1px 2px; border-radius: 2px; }
+  .result-meta { display: flex; gap: 12px; align-items: center; }
+  .result-badge { display: inline-block; padding: 3px 10px; border-radius: 10px; font-size: 11px; font-weight: 700; }
+  .result-score { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--steel); }
+  .badge-filing { background: var(--info-bg); color: var(--info); }
+  .badge-evidence { background: var(--success-bg); color: var(--success); }
+  .badge-rule { background: var(--warning-bg); color: var(--warning); }
+  .badge-caselaw { background: #F5F3FF; color: #7C3AED; }
+  .badge-event { background: var(--lane-f-bg); color: var(--lane-f); }
+  .badge-lane-a { background: var(--lane-a-bg); color: var(--lane-a); font-size: 11px; padding: 2px 8px; border-radius: 8px; }
+  .badge-lane-e { background: var(--lane-e-bg); color: var(--lane-e); font-size: 11px; padding: 2px 8px; border-radius: 8px; }
+  .badge-lane-f { background: var(--lane-f-bg); color: var(--lane-f); font-size: 11px; padding: 2px 8px; border-radius: 8px; }
+</style>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-brand"><h2>LitigationOS</h2><span>Pigors v. Watson</span></div>
+    <div class="sidebar-nav">
+      <div class="nav-section">Main</div>
+      <a class="nav-item" href="01_dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+      <a class="nav-item" href="02_cases.html"><span class="nav-icon">📁</span> Cases</a>
+      <a class="nav-item" href="03_filings.html"><span class="nav-icon">📄</span> Filings</a>
+      <a class="nav-item" href="04_evidence.html"><span class="nav-icon">🔍</span> Evidence</a>
+      <a class="nav-item" href="05_timeline.html"><span class="nav-icon">📅</span> Timeline</a>
+      <a class="nav-item" href="06_calendar.html"><span class="nav-icon">🗓️</span> Calendar</a>
+      <a class="nav-item" href="07_deadlines.html"><span class="nav-icon">⏰</span> Deadlines</a>
+      <div class="nav-section">Tools</div>
+      <a class="nav-item" href="08_settings.html"><span class="nav-icon">⚙️</span> Settings</a>
+      <a class="nav-item" href="09_wizard.html"><span class="nav-icon">✨</span> Wizard</a>
+      <a class="nav-item" href="10_filing_detail.html"><span class="nav-icon">📋</span> Filing Detail</a>
+      <a class="nav-item" href="11_evidence_detail.html"><span class="nav-icon">🔎</span> Evidence Detail</a>
+      <a class="nav-item active" href="12_search.html"><span class="nav-icon">🔍</span> Search</a>
+      <a class="nav-item" href="13_reports.html"><span class="nav-icon">📈</span> Reports</a>
+      <a class="nav-item" href="14_agent_fleet.html"><span class="nav-icon">🤖</span> Agent Fleet</a>
+    </div>
+    <div class="sidebar-footer">v9.0 MANBEARPIG · Local AI</div>
+  </nav>
+
+  <header class="topbar">
+    <div class="breadcrumb">
+      <a href="01_dashboard.html">Home</a><span class="sep">›</span>
+      <span>Global Search</span>
+    </div>
+    <div class="topbar-actions">
+      <button class="notif-btn">🔔<span class="notif-dot"></span></button>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Search Hero -->
+    <div class="search-hero">
+      <h1>Search LitigationOS</h1>
+      <div class="search-input-wrap">
+        <span class="search-icon">🔍</span>
+        <input class="search-input" type="text" value="disqualification MCR 2.003" autofocus>
+        <span class="search-shortcut">⌘K</span>
+      </div>
+      <div class="recent">
+        <span class="recent-chip">ex parte communication</span>
+        <span class="recent-chip">custody best interest</span>
+        <span class="recent-chip">PPO hearing</span>
+        <span class="recent-chip">Judge McNeill bias</span>
+        <span class="recent-chip">Shady Oaks lease</span>
+      </div>
+    </div>
+
+    <!-- Advanced Search -->
+    <div style="text-align:center;margin-bottom:24px;">
+      <span class="adv-toggle">▸ Advanced Search: Full-text · Semantic · Date Range · Table Filter</span>
+    </div>
+
+    <!-- Search Layout -->
+    <div class="search-layout">
+      <!-- Facets -->
+      <div>
+        <div class="card" style="padding:20px;">
+          <div class="facet-group">
+            <h4>Type</h4>
+            <div class="facet-item"><span>All Results</span><span class="facet-count">16</span></div>
+            <div class="facet-item active"><span>Filings</span><span class="facet-count">3</span></div>
+            <div class="facet-item"><span>Evidence</span><span class="facet-count">5</span></div>
+            <div class="facet-item"><span>Rules</span><span class="facet-count">2</span></div>
+            <div class="facet-item"><span>Case Law</span><span class="facet-count">4</span></div>
+            <div class="facet-item"><span>Events</span><span class="facet-count">2</span></div>
+          </div>
+          <div class="facet-group">
+            <h4>Lane</h4>
+            <div class="facet-item"><span>A — Custody</span><span class="facet-count">4</span></div>
+            <div class="facet-item active"><span>E — Misconduct</span><span class="facet-count">8</span></div>
+            <div class="facet-item"><span>F — Appellate</span><span class="facet-count">3</span></div>
+            <div class="facet-item"><span>D — PPO</span><span class="facet-count">1</span></div>
+          </div>
+          <div class="facet-group">
+            <h4>Date Range</h4>
+            <div class="facet-item active"><span>All Time</span></div>
+            <div class="facet-item"><span>Last 30 days</span></div>
+            <div class="facet-item"><span>Last 90 days</span></div>
+            <div class="facet-item"><span>Last year</span></div>
+          </div>
+          <div class="facet-group">
+            <h4>Status</h4>
+            <div class="facet-item"><span>Draft</span><span class="facet-count">2</span></div>
+            <div class="facet-item"><span>Ready</span><span class="facet-count">6</span></div>
+            <div class="facet-item"><span>Filed</span><span class="facet-count">8</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div>
+        <div class="results-header">
+          <h3>Results for "disqualification MCR 2.003"</h3>
+          <span class="results-count">16 results · 0.12s</span>
+        </div>
+
+        <!-- Filings -->
+        <div class="result-group">
+          <div class="result-group-title">📄 Filings <span class="result-group-count">3</span></div>
+          <div class="result-item">
+            <div class="result-title"><a href="10_filing_detail.html">Motion for Disqualification — MCR 2.003(D)</a></div>
+            <div class="result-excerpt">Pursuant to <mark>MCR 2.003</mark>(D), Plaintiff moves for <mark>disqualification</mark> of the Honorable Jenny L. McNeill based on demonstrated bias, ex parte communications, and procedural irregularities…</div>
+            <div class="result-meta">
+              <span class="result-badge badge-filing">Filing</span>
+              <span class="badge-lane-e">Lane E</span>
+              <span class="result-score">Relevance: 98%</span>
+            </div>
+          </div>
+          <div class="result-item">
+            <div class="result-title"><a href="#">Brief in Support of Disqualification</a></div>
+            <div class="result-excerpt">This brief supports the pending motion under <mark>MCR 2.003</mark> by presenting eight categories of <mark>disqualification</mark>-worthy conduct by the assigned judge…</div>
+            <div class="result-meta">
+              <span class="result-badge badge-filing">Filing</span>
+              <span class="badge-lane-e">Lane E</span>
+              <span class="result-score">Relevance: 95%</span>
+            </div>
+          </div>
+          <div class="result-item">
+            <div class="result-title"><a href="#">COA Application — Interlocutory Appeal (Disqualification Denial)</a></div>
+            <div class="result-excerpt">Application for leave to appeal under <mark>MCR</mark> 7.205 from the trial court's denial of <mark>disqualification</mark> pursuant to <mark>MCR 2.003</mark>…</div>
+            <div class="result-meta">
+              <span class="result-badge badge-filing">Filing</span>
+              <span class="badge-lane-f">Lane F</span>
+              <span class="result-score">Relevance: 91%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evidence -->
+        <div class="result-group">
+          <div class="result-group-title">🔍 Evidence <span class="result-group-count">5</span></div>
+          <div class="result-item">
+            <div class="result-title"><a href="11_evidence_detail.html">Ex Parte Communication Screenshot — Aug 15, 2024</a></div>
+            <div class="result-excerpt">Screenshot showing undisclosed communication between court staff and opposing counsel, supporting <mark>disqualification</mark> grounds under Canon 3(B)(7)…</div>
+            <div class="result-meta">
+              <span class="result-badge badge-evidence">Evidence</span>
+              <span class="badge-lane-e">Lane E</span>
+              <span class="result-score">Relevance: 88%</span>
+            </div>
+          </div>
+          <div class="result-item">
+            <div class="result-title"><a href="#">Hearing Transcript — Oct 3, 2024 (Bias Pattern)</a></div>
+            <div class="result-excerpt">Transcript excerpt where court denied opportunity to present evidence, relevant to <mark>MCR 2.003</mark>(C)(1) actual bias standard for judicial <mark>disqualification</mark>…</div>
+            <div class="result-meta">
+              <span class="result-badge badge-evidence">Evidence</span>
+              <span class="badge-lane-e">Lane E</span>
+              <span class="result-score">Relevance: 85%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rules -->
+        <div class="result-group">
+          <div class="result-group-title">⚖️ Rules <span class="result-group-count">2</span></div>
+          <div class="result-item">
+            <div class="result-title"><a href="#"><span class="mono">MCR 2.003</span> — Disqualification of Judge</a></div>
+            <div class="result-excerpt">Michigan Court Rule <mark>2.003</mark>: Grounds and procedure for <mark>disqualification</mark> of a judge. Sections (C)(1) actual bias, (D) procedure for filing motion…</div>
+            <div class="result-meta">
+              <span class="result-badge badge-rule">Rule</span>
+              <span class="result-score">Relevance: 100%</span>
+            </div>
+          </div>
+          <div class="result-item">
+            <div class="result-title"><a href="#"><span class="mono">MCR 2.003(D)</span> — Procedure</a></div>
+            <div class="result-excerpt">Motion for <mark>disqualification</mark> must be filed within 14 days of discovering the grounds. The challenged judge must decide the motion…</div>
+            <div class="result-meta">
+              <span class="result-badge badge-rule">Rule</span>
+              <span class="result-score">Relevance: 97%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Law -->
+        <div class="result-group">
+          <div class="result-group-title">📚 Case Law <span class="result-group-count">4</span></div>
+          <div class="result-item">
+            <div class="result-title"><a href="#">Cain v. Dep't of Corr., 451 Mich 470 (1996)</a></div>
+            <div class="result-excerpt">Established the standard for judicial <mark>disqualification</mark> under <mark>MCR 2.003</mark>(C)(1): actual bias or prejudice requires more than mere allegations…</div>
+            <div class="result-meta">
+              <span class="result-badge badge-caselaw">Case Law</span>
+              <span class="result-score">Relevance: 92%</span>
+            </div>
+          </div>
+          <div class="result-item">
+            <div class="result-title"><a href="#">Armstrong v. Ypsilanti Charter Twp., 248 Mich App 573 (2001)</a></div>
+            <div class="result-excerpt">Court of Appeals reversed denial of <mark>disqualification</mark> motion where trial judge engaged in ex parte contacts, applying <mark>MCR 2.003</mark>…</div>
+            <div class="result-meta">
+              <span class="result-badge badge-caselaw">Case Law</span>
+              <span class="result-score">Relevance: 89%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

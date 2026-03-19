@@ -1,0 +1,11 @@
+flowchart TD
+  A[Δ0 Scan READONLY] --> B[Δ1 Atomize FileAtoms IdentityKeyV1]
+  B --> C[Δ2 Classify lane/case/kind]
+  C --> D[Δ3 Extract TextBank]
+  D --> E[Δ4 Quoteize + Eventize]
+  E --> F[Δ5 SQLite FTS5 Index]
+  F --> G[Δ6 PackRouter purpose/query]
+  G --> H[Δ7 LLM Synthesis using Pack only]
+  H --> I[Δ8 CourtPack Compile Trial/COA/MSC/JTC]
+  I --> J[Ω Validate + GapHunt + ContradictionHunt]
+  J --> G

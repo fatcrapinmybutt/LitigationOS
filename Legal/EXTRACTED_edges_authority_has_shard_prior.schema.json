@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    ":END_ID(AuthorityShard)": {
+      "description": "From: cyclepacks/authority/neo4j/edges_authority_has_shard_prior.csv | From: cyclepacks/authority_merge/neo4j/edges_authority_has_shard_prior.csv",
+      "type": "string"
+    },
+    ":START_ID(Authority)": {
+      "description": "From: cyclepacks/authority/neo4j/edges_authority_has_shard_prior.csv | From: cyclepacks/authority_merge/neo4j/edges_authority_has_shard_prior.csv",
+      "type": "string"
+    },
+    ":TYPE": {
+      "description": "From: cyclepacks/authority/neo4j/edges_authority_has_shard_prior.csv | From: cyclepacks/authority_merge/neo4j/edges_authority_has_shard_prior.csv",
+      "type": "string"
+    },
+    "extracted_edges:authority_has_shard_prior_id": {
+      "description": "Primary key.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "extracted_edges:authority_has_shard_prior_id"
+  ],
+  "title": "EXTRACTED_edges:authority_has_shard_prior",
+  "type": "object",
+  "x_litigationos": {
+    "entity": "EXTRACTED_edges:authority_has_shard_prior",
+    "generated_utc": "2026-01-20T05:12:07Z",
+    "primary_key": "extracted_edges:authority_has_shard_prior_id",
+    "version": "v2026-01-19.3"
+  }
+}

@@ -1,0 +1,14 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+NoReply_20260105_131630_0005.pdf,5,3,"Pierron, as the Father's actions in contacting her family, his erratic behavior and general",erratic_behavior,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0005.pdf,5,6,The Court must look at the best interest factors and may consider the parenting time,best_interest_reference,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0005.pdf,5,7,factors under MCL 722.27a(7). The Court finds that the following fadors are applicable:,record_fact_court_finds,court_notice,NO (factual anchor; challenge via findings/evidence),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0005.pdf,5,13,"In fact, at one PPO violation hearing he was given a suspended sentence",contempt_or_violation,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0005.pdf,5,19,The moral fitness of the parties involved: The Father was not honest with Health West,dishonesty_credibility,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0005.pdf,5,20,about his issues. Then he was not honest with the Court about the 2nd assessment. He,dishonesty_credibility,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0005.pdf,5,21,testified that he did not obtain a 2nd assessment. The HW staff testified that he did,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0005.pdf,5,22,obtain a second assessment.,mental_health_assessment,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0005.pdf,5,25,witnessed by the child: The Father has a PPO against him. He has repeatedly,ppo_allegations,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0005.pdf,5,26,"viofated the PPO, as this was his 7th violation.",contempt_or_violation,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0005.pdf,5,31,increasing erratic behavior is concerning to the Court. He describes being around,erratic_behavior,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0005.pdf,5,32,"random men who beat him up and threaten him, being followed and other dangerous",anger_characterization,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.
+NoReply_20260105_131630_0005.pdf,5,33,activities. These situations are harmful to the child and place him at risk.,risk_characterization,court_text,YES (adverse characterization),Classifier v6 + doc-role v11.

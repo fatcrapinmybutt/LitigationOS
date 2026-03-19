@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "authority_id": {
+      "description": "From: cyclepacks/authority/neo4j/nodes_authority_shard.csv | From: cyclepacks/authority_merge/neo4j/nodes_authority_shard.csv | From: cyclepacks/statement_fact/LITIGATIONOS_STATEMENT_FACT_PROV_AUTH_CYCLE_20260107_181048/neo4j/nodes_authority_shard.csv",
+      "type": "string"
+    },
+    "citation": {
+      "description": "From: cyclepacks/authority/neo4j/nodes_authority_shard.csv | From: cyclepacks/authority_merge/neo4j/nodes_authority_shard.csv",
+      "type": "string"
+    },
+    "extracted_nodes:authority_shard_id": {
+      "description": "Primary key.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$",
+      "type": "string"
+    },
+    "pinpoint": {
+      "description": "From: cyclepacks/authority/neo4j/nodes_authority_shard.csv | From: cyclepacks/authority_merge/neo4j/nodes_authority_shard.csv | From: cyclepacks/statement_fact/LITIGATIONOS_STATEMENT_FACT_PROV_AUTH_CYCLE_20260107_181048/neo4j/nodes_authority_shard.csv",
+      "type": "string"
+    },
+    "row_id": {
+      "description": "From: cyclepacks/authority/neo4j/nodes_authority_shard.csv | From: cyclepacks/authority_merge/neo4j/nodes_authority_shard.csv",
+      "type": "string"
+    },
+    "shard_id:ID(AuthorityShard)": {
+      "description": "From: cyclepacks/authority/neo4j/nodes_authority_shard.csv | From: cyclepacks/authority_merge/neo4j/nodes_authority_shard.csv | From: cyclepacks/statement_fact/LITIGATIONOS_STATEMENT_FACT_PROV_AUTH_CYCLE_20260107_181048/neo4j/nodes_authority_shard.csv",
+      "type": "string"
+    },
+    "source": {
+      "description": "From: cyclepacks/authority/neo4j/nodes_authority_shard.csv | From: cyclepacks/authority_merge/neo4j/nodes_authority_shard.csv | From: cyclepacks/statement_fact/LITIGATIONOS_STATEMENT_FACT_PROV_AUTH_CYCLE_20260107_181048/neo4j/nodes_authority_shard.csv",
+      "type": "string"
+    },
+    "status": {
+      "description": "From: cyclepacks/authority/neo4j/nodes_authority_shard.csv | From: cyclepacks/authority_merge/neo4j/nodes_authority_shard.csv",
+      "type": "string"
+    },
+    "text": {
+      "description": "From: cyclepacks/authority/neo4j/nodes_authority_shard.csv | From: cyclepacks/authority_merge/neo4j/nodes_authority_shard.csv | From: cyclepacks/statement_fact/LITIGATIONOS_STATEMENT_FACT_PROV_AUTH_CYCLE_20260107_181048/neo4j/nodes_authority_shard.csv",
+      "type": "string"
+    }
+  },
+  "required": [
+    "extracted_nodes:authority_shard_id"
+  ],
+  "title": "EXTRACTED_nodes:authority_shard",
+  "type": "object",
+  "x_litigationos": {
+    "entity": "EXTRACTED_nodes:authority_shard",
+    "generated_utc": "2026-01-20T05:12:07Z",
+    "primary_key": "extracted_nodes:authority_shard_id",
+    "version": "v2026-01-19.3"
+  }
+}

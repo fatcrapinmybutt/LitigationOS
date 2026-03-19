@@ -1,0 +1,12 @@
+flowchart LR
+  A[Orders + ServiceProofs + QuoteLockLinks] --> B[Service Confidence Builder]
+  B --> C[service_confidence.json]
+  B --> D[service_deficiency_ledger.json]
+  C --> E[Vehicle Readiness Lane Overlay]
+  F[Orders + Service + Deadlines] --> G[Docket Delta Sync Builder]
+  G --> H[docket_snapshot_baseline/current]
+  G --> I[docket_delta_sync.json]
+  C --> J[GUI Service Confidence Panel]
+  D --> J
+  I --> K[GUI Docket Delta Panel]
+  H --> K

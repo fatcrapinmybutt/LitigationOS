@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Reports &amp; Analytics</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0F172A; --slate: #334155; --steel: #64748B;
+    --court-blue: #0369A1; --court-hover: #075985;
+    --success: #059669; --success-bg: #ECFDF5;
+    --warning: #D97706; --warning-bg: #FFFBEB;
+    --danger: #DC2626; --danger-bg: #FEF2F2;
+    --info: #2563EB; --info-bg: #EFF6FF;
+    --surface: #FFFFFF; --surface2: #F8FAFC; --surface3: #F1F5F9;
+    --border: #E2E8F0; --border-strong: #CBD5E1;
+    --lane-a: #4F46E5; --lane-a-bg: #EEF2FF;
+    --lane-b: #059669; --lane-b-bg: #ECFDF5;
+    --lane-c: #7C3AED; --lane-c-bg: #F5F3FF;
+    --lane-d: #E11D48; --lane-d-bg: #FFF1F2;
+    --lane-e: #D97706; --lane-e-bg: #FFFBEB;
+    --lane-f: #0284C7; --lane-f-bg: #F0F9FF;
+    --sidebar-w: 240px;
+  }
+  body { font-family: 'Lato', sans-serif; font-size: 14px; color: var(--navy); background: var(--surface2); display: flex; min-height: 100vh; }
+  h1, h2, h3, h4, h5 { font-family: 'EB Garamond', serif; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+
+  .sidebar { width: var(--sidebar-w); min-height: 100vh; background: var(--surface2); border-right: 1px solid var(--border); display: flex; flex-direction: column; position: fixed; top: 0; left: 0; z-index: 100; }
+  .sidebar-brand { padding: 16px 20px; border-bottom: 1px solid var(--border); }
+  .sidebar-brand h2 { font-size: 20px; font-weight: 700; color: var(--navy); }
+  .sidebar-brand span { font-size: 12px; color: var(--steel); }
+  .sidebar-nav { flex: 1; padding: 8px 0; overflow-y: auto; }
+  .nav-section { padding: 8px 20px 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); }
+  .nav-item { display: flex; align-items: center; gap: 10px; padding: 9px 20px; font-size: 14px; color: var(--slate); cursor: pointer; text-decoration: none; transition: all 0.15s; }
+  .nav-item:hover { background: var(--surface3); color: var(--navy); }
+  .nav-item.active { background: var(--info-bg); color: var(--court-blue); font-weight: 700; border-right: 3px solid var(--court-blue); }
+  .nav-icon { width: 18px; text-align: center; font-size: 15px; }
+  .sidebar-footer { padding: 12px 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--steel); }
+
+  .topbar { height: 56px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; position: fixed; top: 0; left: var(--sidebar-w); right: 0; z-index: 90; }
+  .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--steel); }
+  .breadcrumb a { color: var(--court-blue); text-decoration: none; }
+  .breadcrumb .sep { color: var(--border-strong); }
+  .topbar-actions { display: flex; align-items: center; gap: 16px; }
+  .search-box { padding: 7px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; width: 260px; background: var(--surface2); }
+  .notif-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; position: relative; }
+  .notif-dot { width: 8px; height: 8px; background: var(--danger); border-radius: 50%; position: absolute; top: 6px; right: 6px; }
+
+  .main { margin-left: var(--sidebar-w); margin-top: 56px; padding: 24px; flex: 1; max-width: 1440px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .btn { padding: 9px 18px; border-radius: 6px; font-size: 14px; font-family: 'Lato', sans-serif; cursor: pointer; border: none; transition: all 0.15s; }
+  .btn-primary { background: var(--court-blue); color: white; }
+  .btn-primary:hover { background: var(--court-hover); }
+  .btn-secondary { background: var(--surface); color: var(--slate); border: 1px solid var(--border); }
+  .btn-sm { padding: 6px 14px; font-size: 13px; }
+
+  /* Top controls */
+  .controls { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+  .controls select, .controls input { padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; font-family: 'Lato', sans-serif; background: var(--surface); }
+
+  /* Featured chart */
+  .featured { margin-bottom: 24px; }
+  .mini-chart { display: flex; align-items: flex-end; gap: 12px; height: 120px; padding: 16px 0; }
+  .chart-bar-group { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: 1; }
+  .chart-bar { width: 36px; border-radius: 4px 4px 0 0; transition: 0.3s; }
+  .chart-label { font-size: 11px; color: var(--steel); font-weight: 700; }
+  .chart-value { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; }
+
+  /* Report gallery */
+  .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  @media (max-width: 1200px) { .gallery { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+
+  .report-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; flex-direction: column; transition: 0.15s; }
+  .report-card:hover { border-color: var(--court-blue); box-shadow: 0 4px 12px rgba(3,105,161,0.1); transform: translateY(-2px); }
+  .report-icon { font-size: 32px; margin-bottom: 12px; }
+  .report-card h4 { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+  .report-card p { font-size: 13px; color: var(--steel); line-height: 1.5; flex: 1; margin-bottom: 12px; }
+  .report-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid var(--surface3); }
+  .report-footer .date { font-size: 11px; color: var(--steel); }
+</style>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-brand"><h2>LitigationOS</h2><span>Pigors v. Watson</span></div>
+    <div class="sidebar-nav">
+      <div class="nav-section">Main</div>
+      <a class="nav-item" href="01_dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+      <a class="nav-item" href="02_cases.html"><span class="nav-icon">📁</span> Cases</a>
+      <a class="nav-item" href="03_filings.html"><span class="nav-icon">📄</span> Filings</a>
+      <a class="nav-item" href="04_evidence.html"><span class="nav-icon">🔍</span> Evidence</a>
+      <a class="nav-item" href="05_timeline.html"><span class="nav-icon">📅</span> Timeline</a>
+      <a class="nav-item" href="06_calendar.html"><span class="nav-icon">🗓️</span> Calendar</a>
+      <a class="nav-item" href="07_deadlines.html"><span class="nav-icon">⏰</span> Deadlines</a>
+      <div class="nav-section">Tools</div>
+      <a class="nav-item" href="08_settings.html"><span class="nav-icon">⚙️</span> Settings</a>
+      <a class="nav-item" href="09_wizard.html"><span class="nav-icon">✨</span> Wizard</a>
+      <a class="nav-item" href="10_filing_detail.html"><span class="nav-icon">📋</span> Filing Detail</a>
+      <a class="nav-item" href="11_evidence_detail.html"><span class="nav-icon">🔎</span> Evidence Detail</a>
+      <a class="nav-item" href="12_search.html"><span class="nav-icon">🔍</span> Search</a>
+      <a class="nav-item active" href="13_reports.html"><span class="nav-icon">📈</span> Reports</a>
+      <a class="nav-item" href="14_agent_fleet.html"><span class="nav-icon">🤖</span> Agent Fleet</a>
+    </div>
+    <div class="sidebar-footer">v9.0 MANBEARPIG · Local AI</div>
+  </nav>
+
+  <header class="topbar">
+    <div class="breadcrumb">
+      <a href="01_dashboard.html">Home</a><span class="sep">›</span>
+      <span>Reports &amp; Analytics</span>
+    </div>
+    <div class="topbar-actions">
+      <input class="search-box" type="text" placeholder="Search reports… (⌘K)">
+      <button class="notif-btn">🔔<span class="notif-dot"></span></button>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 style="font-size:24px;font-weight:700;margin-bottom:20px;">Reports &amp; Analytics</h1>
+
+    <!-- Controls -->
+    <div class="controls">
+      <select>
+        <option>All Lanes</option>
+        <option>Lane A — Custody</option>
+        <option>Lane B — Housing</option>
+        <option>Lane C — Convergence</option>
+        <option>Lane D — PPO</option>
+        <option>Lane E — Misconduct</option>
+        <option>Lane F — Appellate</option>
+      </select>
+      <input type="date" value="2025-01-01">
+      <span style="color:var(--steel);">to</span>
+      <input type="date" value="2026-01-31">
+      <select>
+        <option>Export: PDF</option>
+        <option>Export: Excel</option>
+        <option>Export: HTML</option>
+      </select>
+    </div>
+
+    <!-- Featured Chart -->
+    <div class="card featured">
+      <h3 style="font-size:20px;font-weight:600;margin-bottom:4px;">Filing Readiness by Lane</h3>
+      <p style="font-size:13px;color:var(--steel);margin-bottom:16px;">Current readiness scores across all 6 case lanes</p>
+      <div class="mini-chart">
+        <div class="chart-bar-group">
+          <div class="chart-value" style="color:var(--lane-a);">92</div>
+          <div class="chart-bar" style="height:92%;background:var(--lane-a);"></div>
+          <div class="chart-label">A</div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-value" style="color:var(--lane-b);">78</div>
+          <div class="chart-bar" style="height:78%;background:var(--lane-b);"></div>
+          <div class="chart-label">B</div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-value" style="color:var(--lane-c);">65</div>
+          <div class="chart-bar" style="height:65%;background:var(--lane-c);"></div>
+          <div class="chart-label">C</div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-value" style="color:var(--lane-d);">88</div>
+          <div class="chart-bar" style="height:88%;background:var(--lane-d);"></div>
+          <div class="chart-label">D</div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-value" style="color:var(--lane-e);">98</div>
+          <div class="chart-bar" style="height:98%;background:var(--lane-e);"></div>
+          <div class="chart-label">E</div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-value" style="color:var(--lane-f);">71</div>
+          <div class="chart-bar" style="height:71%;background:var(--lane-f);"></div>
+          <div class="chart-label">F</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <div class="report-card">
+        <div class="report-icon">📊</div>
+        <h4>Evidence Gap Analysis</h4>
+        <p>Identify missing evidence per claim, lane, and filing. EGCP scoring highlights critical gaps.</p>
+        <div class="report-footer">
+          <span class="date">Last run: Jan 26</span>
+          <button class="btn btn-primary btn-sm">Generate</button>
+        </div>
+      </div>
+      <div class="report-card">
+        <div class="report-icon">✅</div>
+        <h4>Filing Readiness Dashboard</h4>
+        <p>10-dimension readiness scores for all active filings with GO/NO-GO status and drill-down.</p>
+        <div class="report-footer">
+          <span class="date">Last run: Jan 28</span>
+          <button class="btn btn-primary btn-sm">Generate</button>
+        </div>
+      </div>
+      <div class="report-card">
+        <div class="report-icon">💰</div>
+        <h4>Damages Calculator</h4>
+        <p>Calculate economic and non-economic damages across custody, housing, and misconduct lanes.</p>
+        <div class="report-footer">
+          <span class="date">Last run: Jan 15</span>
+          <button class="btn btn-primary btn-sm">Generate</button>
+        </div>
+      </div>
+      <div class="report-card">
+        <div class="report-icon">⏰</div>
+        <h4>Deadline Intelligence</h4>
+        <p>Urgency-weighted deadline analysis with risk scoring and cascade impact projections.</p>
+        <div class="report-footer">
+          <span class="date">Last run: Jan 28</span>
+          <button class="btn btn-primary btn-sm">Generate</button>
+        </div>
+      </div>
+      <div class="report-card">
+        <div class="report-icon">👨‍👩‍👧</div>
+        <h4>Best Interest Factors</h4>
+        <p>MCL 722.23 factor-by-factor analysis with evidence mapping and comparative scoring.</p>
+        <div class="report-footer">
+          <span class="date">Last run: Jan 20</span>
+          <button class="btn btn-primary btn-sm">Generate</button>
+        </div>
+      </div>
+      <div class="report-card">
+        <div class="report-icon">⚖️</div>
+        <h4>Bias Quantification</h4>
+        <p>Statistical analysis of judicial rulings, objection patterns, and outcome disparities.</p>
+        <div class="report-footer">
+          <span class="date">Last run: Jan 22</span>
+          <button class="btn btn-primary btn-sm">Generate</button>
+        </div>
+      </div>
+      <div class="report-card">
+        <div class="report-icon">📚</div>
+        <h4>Authority Coverage</h4>
+        <p>Map cited authorities to claims. Track citation strength, recency, and jurisdiction match.</p>
+        <div class="report-footer">
+          <span class="date">Last run: Jan 25</span>
+          <button class="btn btn-primary btn-sm">Generate</button>
+        </div>
+      </div>
+      <div class="report-card">
+        <div class="report-icon">🕸️</div>
+        <h4>Citation Network</h4>
+        <p>Visualize citation relationships between authorities, filings, and claims as an interactive graph.</p>
+        <div class="report-footer">
+          <span class="date">Last run: Jan 18</span>
+          <button class="btn btn-primary btn-sm">Generate</button>
+        </div>
+      </div>
+      <div class="report-card">
+        <div class="report-icon">🎯</div>
+        <h4>Impeachment Index</h4>
+        <p>Credibility analysis of opposing witnesses with contradiction tracking and deposition mapping.</p>
+        <div class="report-footer">
+          <span class="date">Last run: Jan 12</span>
+          <button class="btn btn-primary btn-sm">Generate</button>
+        </div>
+      </div>
+      <div class="report-card">
+        <div class="report-icon">🔧</div>
+        <h4>Pipeline Health</h4>
+        <p>16-phase pipeline status, throughput, error rates, and bottleneck identification.</p>
+        <div class="report-footer">
+          <span class="date">Last run: Jan 28</span>
+          <button class="btn btn-primary btn-sm">Generate</button>
+        </div>
+      </div>
+      <div class="report-card">
+        <div class="report-icon">🤖</div>
+        <h4>Agent Performance</h4>
+        <p>155+ agent fleet metrics: success rates, run times, error patterns, and tier performance.</p>
+        <div class="report-footer">
+          <span class="date">Last run: Jan 27</span>
+          <button class="btn btn-primary btn-sm">Generate</button>
+        </div>
+      </div>
+      <div class="report-card">
+        <div class="report-icon">🛡️</div>
+        <h4>System Audit</h4>
+        <p>Security audit: file integrity, hash verification, access logs, and backup validation.</p>
+        <div class="report-footer">
+          <span class="date">Last run: Jan 24</span>
+          <button class="btn btn-primary btn-sm">Generate</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

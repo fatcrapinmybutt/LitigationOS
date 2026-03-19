@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "convert_backend": {
+      "type": "string",
+      "description": "Extraction backend used (pdftotext|unstructured|docling)"
+    },
+    "header_lines": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Directly extracted header lines"
+    },
+    "anchors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Lexical anchors (rule/section tokens)"
+    }
+  }
+}

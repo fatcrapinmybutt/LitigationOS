@@ -1,0 +1,21 @@
+flowchart TD
+    A0["EVENTHORIZON_CMDCTR_EXECUTOR_v2_2026-02-22"] --> A1["Governance Anchors Plane"]
+    A0 --> A2["File Tree Planning Plane"]
+    A0 --> A3["Build Planes"]
+    A0 --> A4["Validation + Adversarial Improvement Plane"]
+    A0 --> A5["Convergence + Emergence Engine"]
+    A0 --> A6["Continuation Checkpoint Plane"]
+
+    subgraph G3["Build Planes"]
+      G3a["UI Plane"]
+      G3b["Schema Plane"]
+      G3c["State Plane"]
+      G3d["Runtime Plane"]
+      G3e["Launcher Plane"]
+      G3f["Ops Plane"]
+    end
+
+    G3a --> G3b --> G3c --> G3d --> G3e --> G3f
+    A1 --> A2 --> A3 --> A4 --> A5
+    A5 -->|Continuation target not yet reached| A3
+    A4 -->|Platform boundary checkpoint| A6

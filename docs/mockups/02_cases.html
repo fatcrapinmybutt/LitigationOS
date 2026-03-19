@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LitigationOS — Cases</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+:root {
+  --navy:#0F172A;--slate:#334155;--steel:#64748B;--court-blue:#0369A1;--court-blue-hover:#075985;
+  --success:#059669;--success-bg:#ECFDF5;--warning:#D97706;--warning-bg:#FFFBEB;
+  --danger:#DC2626;--danger-bg:#FEF2F2;--info:#2563EB;--info-bg:#EFF6FF;
+  --surface:#FFFFFF;--surface-2:#F8FAFC;--surface-3:#F1F5F9;
+  --border:#E2E8F0;--border-strong:#CBD5E1;
+  --lane-a:#4F46E5;--lane-a-bg:#EEF2FF;--lane-b:#059669;--lane-b-bg:#ECFDF5;
+  --lane-c:#7C3AED;--lane-c-bg:#F5F3FF;--lane-d:#E11D48;--lane-d-bg:#FFF1F2;
+  --lane-e:#D97706;--lane-e-bg:#FFFBEB;--lane-f:#0284C7;--lane-f-bg:#F0F9FF;
+  --radius:8px;--radius-sm:6px;--shadow:0 1px 3px rgba(0,0,0,0.1);
+  --sidebar-w:240px;--topbar-h:56px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:14px}
+body{font-family:"Lato",sans-serif;color:var(--navy);background:var(--surface-2);line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"EB Garamond",serif}
+.mono{font-family:"JetBrains Mono",monospace;font-size:13px}
+a{color:var(--court-blue);text-decoration:none}a:hover{color:var(--court-blue-hover)}
+.app{display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--surface-2);border-right:1px solid var(--border);display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:100}
+.sidebar-brand{height:var(--topbar-h);display:flex;align-items:center;gap:10px;padding:0 20px;border-bottom:1px solid var(--border);font-family:"EB Garamond",serif;font-size:20px;font-weight:700;color:var(--navy)}
+.sidebar-brand .brand-dot{width:10px;height:10px;background:var(--court-blue);border-radius:50%}
+.sidebar-nav{flex:1;padding:12px 8px;overflow-y:auto}
+.nav-section{margin-bottom:16px}
+.nav-section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--steel);padding:4px 12px 6px}
+.nav-item{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:var(--radius-sm);color:var(--slate);font-size:13px;cursor:pointer;transition:background .15s,color .15s}
+.nav-item:hover{background:var(--surface-3)}.nav-item.active{background:var(--info-bg);color:var(--court-blue);font-weight:700}
+.nav-item i{width:18px;height:18px;flex-shrink:0}
+.nav-badge{margin-left:auto;font-size:11px;font-weight:700;padding:1px 7px;border-radius:10px;background:var(--danger-bg);color:var(--danger)}
+.main{flex:1;margin-left:var(--sidebar-w);display:flex;flex-direction:column}
+.topbar{height:var(--topbar-h);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 24px;gap:16px;position:sticky;top:0;z-index:50}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--steel)}
+.breadcrumb span{color:var(--navy);font-weight:700}
+.topbar-search{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--surface-3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:6px 12px;width:280px}
+.topbar-search input{border:none;background:transparent;outline:none;font-family:"Lato",sans-serif;font-size:13px;color:var(--navy);width:100%}
+.topbar-search input::placeholder{color:var(--steel)}
+.topbar-actions{display:flex;align-items:center;gap:12px}
+.topbar-icon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--steel);position:relative}
+.topbar-icon:hover{background:var(--surface-3);color:var(--navy)}
+.notif-dot{position:absolute;top:6px;right:6px;width:8px;height:8px;background:var(--danger);border-radius:50%;border:2px solid var(--surface)}
+.content{padding:24px;max-width:1440px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.card-title{font-family:"EB Garamond",serif;font-size:20px;font-weight:600;color:var(--navy)}
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700}
+.badge-go{background:var(--success-bg);color:var(--success)}
+.badge-nogo{background:var(--danger-bg);color:var(--danger)}
+.badge-conditional{background:var(--warning-bg);color:var(--warning)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:var(--radius-sm);font-family:"Lato",sans-serif;font-size:13px;font-weight:700;cursor:pointer;border:none;transition:background .15s}
+.btn-primary{background:var(--court-blue);color:#fff}.btn-primary:hover{background:var(--court-blue-hover)}
+.btn-secondary{background:transparent;border:1px solid var(--border-strong);color:var(--slate)}.btn-secondary:hover{background:var(--surface-3)}
+
+/* PAGE-SPECIFIC */
+.page-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.page-title{font-family:"EB Garamond",serif;font-size:32px;font-weight:700;color:var(--navy)}
+.filter-bar{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.filter-chip{display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;border:1px solid var(--border);font-size:12px;cursor:pointer;background:var(--surface);color:var(--slate);transition:all .15s}
+.filter-chip:hover{border-color:var(--court-blue);color:var(--court-blue)}
+.filter-chip.active{background:var(--info-bg);border-color:var(--court-blue);color:var(--court-blue);font-weight:700}
+.lanes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px}
+.lane-card-big{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);border-top:3px solid var(--border);position:relative}
+.lane-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.lane-badge{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:"EB Garamond",serif;font-weight:700;font-size:20px;color:#fff}
+.lane-title{font-family:"EB Garamond",serif;font-size:20px;font-weight:600}
+.lane-case{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--steel)}
+.lane-status{position:absolute;top:16px;right:16px}
+.lane-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.metric{text-align:center;padding:10px;background:var(--surface-2);border-radius:var(--radius-sm)}
+.metric .m-value{font-size:20px;font-weight:700;color:var(--navy)}
+.metric .m-label{font-size:11px;color:var(--steel);text-transform:uppercase;letter-spacing:.04em}
+.gauge-container{display:flex;align-items:center;gap:14px;margin:16px 0;padding:12px;background:var(--surface-2);border-radius:var(--radius-sm)}
+.gauge{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:"EB Garamond",serif;font-weight:700;font-size:16px;border:4px solid var(--border-strong);position:relative}
+.gauge-label{font-size:12px;color:var(--steel)}
+.gauge-desc{font-size:13px;color:var(--slate)}
+.lane-deadline{font-size:12px;color:var(--steel);display:flex;align-items:center;gap:6px;margin-top:8px;padding-top:12px;border-top:1px solid var(--border)}
+
+/* ADVERSARY TABLE */
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{background:var(--surface-3);padding:10px 12px;text-align:left;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--steel);border-bottom:1px solid var(--border)}
+tbody td{padding:10px 12px;border-bottom:1px solid var(--border)}
+tbody tr:nth-child(even){background:var(--surface-2)}
+tbody tr:hover{background:var(--info-bg)}
+.lane-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar-brand"><span class="brand-dot"></span> LitigationOS</div>
+    <nav class="sidebar-nav">
+      <div class="nav-section"><div class="nav-section-label">Overview</div>
+        <a class="nav-item" href="01_dashboard.html"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+        <a class="nav-item active" href="02_cases.html"><i data-lucide="briefcase"></i> Cases <span class="nav-badge">6</span></a>
+        <a class="nav-item" href="05_timeline.html"><i data-lucide="git-branch"></i> Timeline</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">Filings</div>
+        <a class="nav-item" href="03_filings.html"><i data-lucide="file-text"></i> Filings <span class="nav-badge">3</span></a>
+        <a class="nav-item" href="04_evidence.html"><i data-lucide="archive"></i> Evidence</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">Deadlines</div>
+        <a class="nav-item" href="06_calendar.html"><i data-lucide="calendar"></i> Calendar</a>
+        <a class="nav-item" href="07_deadlines.html"><i data-lucide="alarm-clock"></i> Deadlines <span class="nav-badge">3</span></a>
+      </div>
+      <div class="nav-section"><div class="nav-section-label">System</div>
+        <a class="nav-item"><i data-lucide="cpu"></i> Agents</a>
+        <a class="nav-item"><i data-lucide="database"></i> Database</a>
+        <a class="nav-item"><i data-lucide="settings"></i> Settings</a>
+      </div>
+    </nav>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="breadcrumb"><i data-lucide="home" style="width:14px;height:14px"></i> / <span>Cases</span></div>
+      <div class="topbar-search"><i data-lucide="search" style="width:14px;height:14px;color:var(--steel)"></i><input type="text" placeholder="Search cases…"></div>
+      <div class="topbar-actions">
+        <div class="topbar-icon"><i data-lucide="bell" style="width:18px;height:18px"></i><span class="notif-dot"></span></div>
+        <div class="topbar-icon"><i data-lucide="user" style="width:18px;height:18px"></i></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="page-header">
+        <div class="page-title">Case Lanes</div>
+        <button class="btn btn-primary"><i data-lucide="plus" style="width:16px;height:16px"></i> New Case</button>
+      </div>
+      <div class="filter-bar">
+        <div class="filter-chip active">All Lanes</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-a)"></span> A Custody</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-b)"></span> B Housing</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-c)"></span> C Convergence</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-d)"></span> D PPO</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-e)"></span> E Misconduct</div>
+        <div class="filter-chip"><span class="lane-dot" style="background:var(--lane-f)"></span> F Appellate</div>
+        <div class="filter-chip">Active Only</div>
+        <div class="filter-chip">Urgent</div>
+      </div>
+
+      <div class="lanes-grid">
+        <!-- Lane A -->
+        <div class="lane-card-big" style="border-top-color:var(--lane-a)">
+          <div class="lane-status"><span class="badge badge-go">ACTIVE</span></div>
+          <div class="lane-header">
+            <div class="lane-badge" style="background:var(--lane-a)">A</div>
+            <div><div class="lane-title">Watson Custody</div><div class="lane-case">2024-001507-DC</div></div>
+          </div>
+          <div class="lane-metrics">
+            <div class="metric"><div class="m-value">5</div><div class="m-label">Adversaries</div></div>
+            <div class="metric"><div class="m-value">8</div><div class="m-label">Filings</div></div>
+            <div class="metric"><div class="m-value">142K</div><div class="m-label">Evidence</div></div>
+          </div>
+          <div class="gauge-container">
+            <div class="gauge" style="border-color:var(--lane-a);color:var(--lane-a)">85%</div>
+            <div><div class="gauge-desc">Filing Readiness</div><div class="gauge-label">10/12 dimensions pass</div></div>
+          </div>
+          <div class="lane-deadline"><i data-lucide="clock" style="width:14px;height:14px"></i> COA Record — <strong style="color:var(--danger)">5 days</strong></div>
+        </div>
+        <!-- Lane B -->
+        <div class="lane-card-big" style="border-top-color:var(--lane-b)">
+          <div class="lane-status"><span class="badge badge-go">ACTIVE</span></div>
+          <div class="lane-header">
+            <div class="lane-badge" style="background:var(--lane-b)">B</div>
+            <div><div class="lane-title">Shady Oaks Housing</div><div class="lane-case">2025-002760-CZ</div></div>
+          </div>
+          <div class="lane-metrics">
+            <div class="metric"><div class="m-value">3</div><div class="m-label">Adversaries</div></div>
+            <div class="metric"><div class="m-value">4</div><div class="m-label">Filings</div></div>
+            <div class="metric"><div class="m-value">38K</div><div class="m-label">Evidence</div></div>
+          </div>
+          <div class="gauge-container">
+            <div class="gauge" style="border-color:var(--lane-b);color:var(--lane-b)">72%</div>
+            <div><div class="gauge-desc">Filing Readiness</div><div class="gauge-label">8/12 dimensions pass</div></div>
+          </div>
+          <div class="lane-deadline"><i data-lucide="clock" style="width:14px;height:14px"></i> Discovery — <strong style="color:var(--warning)">18 days</strong></div>
+        </div>
+        <!-- Lane C -->
+        <div class="lane-card-big" style="border-top-color:var(--lane-c)">
+          <div class="lane-status"><span class="badge badge-conditional">PENDING</span></div>
+          <div class="lane-header">
+            <div class="lane-badge" style="background:var(--lane-c)">C</div>
+            <div><div class="lane-title">Convergence</div><div class="lane-case">Multi-lane</div></div>
+          </div>
+          <div class="lane-metrics">
+            <div class="metric"><div class="m-value">—</div><div class="m-label">Adversaries</div></div>
+            <div class="metric"><div class="m-value">3</div><div class="m-label">Filings</div></div>
+            <div class="metric"><div class="m-value">308K</div><div class="m-label">Evidence</div></div>
+          </div>
+          <div class="gauge-container">
+            <div class="gauge" style="border-color:var(--lane-c);color:var(--lane-c)">68%</div>
+            <div><div class="gauge-desc">Filing Readiness</div><div class="gauge-label">7/12 dimensions pass</div></div>
+          </div>
+          <div class="lane-deadline"><i data-lucide="clock" style="width:14px;height:14px"></i> Lane Sync — <strong style="color:var(--success)">22 days</strong></div>
+        </div>
+        <!-- Lane D -->
+        <div class="lane-card-big" style="border-top-color:var(--lane-d)">
+          <div class="lane-status"><span class="badge badge-go">ACTIVE</span></div>
+          <div class="lane-header">
+            <div class="lane-badge" style="background:var(--lane-d)">D</div>
+            <div><div class="lane-title">PPO / Protection</div><div class="lane-case">2023-5907-PP</div></div>
+          </div>
+          <div class="lane-metrics">
+            <div class="metric"><div class="m-value">2</div><div class="m-label">Adversaries</div></div>
+            <div class="metric"><div class="m-value">5</div><div class="m-label">Filings</div></div>
+            <div class="metric"><div class="m-value">54K</div><div class="m-label">Evidence</div></div>
+          </div>
+          <div class="gauge-container">
+            <div class="gauge" style="border-color:var(--lane-d);color:var(--lane-d)">91%</div>
+            <div><div class="gauge-desc">Filing Readiness</div><div class="gauge-label">11/12 dimensions pass</div></div>
+          </div>
+          <div class="lane-deadline"><i data-lucide="clock" style="width:14px;height:14px"></i> Hearing — <strong style="color:var(--danger)">3 days</strong></div>
+        </div>
+        <!-- Lane E -->
+        <div class="lane-card-big" style="border-top-color:var(--lane-e)">
+          <div class="lane-status"><span class="badge badge-conditional">PENDING</span></div>
+          <div class="lane-header">
+            <div class="lane-badge" style="background:var(--lane-e)">E</div>
+            <div><div class="lane-title">Judicial Misconduct</div><div class="lane-case">2024-001507-DC</div></div>
+          </div>
+          <div class="lane-metrics">
+            <div class="metric"><div class="m-value">4</div><div class="m-label">Adversaries</div></div>
+            <div class="metric"><div class="m-value">3</div><div class="m-label">Filings</div></div>
+            <div class="metric"><div class="m-value">28K</div><div class="m-label">Evidence</div></div>
+          </div>
+          <div class="gauge-container">
+            <div class="gauge" style="border-color:var(--lane-e);color:var(--lane-e)">64%</div>
+            <div><div class="gauge-desc">Filing Readiness</div><div class="gauge-label">7/12 dimensions pass</div></div>
+          </div>
+          <div class="lane-deadline"><i data-lucide="clock" style="width:14px;height:14px"></i> JTC Filing — <strong style="color:var(--warning)">14 days</strong></div>
+        </div>
+        <!-- Lane F -->
+        <div class="lane-card-big" style="border-top-color:var(--lane-f)">
+          <div class="lane-status"><span class="badge badge-go">ACTIVE</span></div>
+          <div class="lane-header">
+            <div class="lane-badge" style="background:var(--lane-f)">F</div>
+            <div><div class="lane-title">Appellate (COA)</div><div class="lane-case">COA 366810</div></div>
+          </div>
+          <div class="lane-metrics">
+            <div class="metric"><div class="m-value">5</div><div class="m-label">Adversaries</div></div>
+            <div class="metric"><div class="m-value">3</div><div class="m-label">Filings</div></div>
+            <div class="metric"><div class="m-value">46K</div><div class="m-label">Evidence</div></div>
+          </div>
+          <div class="gauge-container">
+            <div class="gauge" style="border-color:var(--lane-f);color:var(--lane-f)">78%</div>
+            <div><div class="gauge-desc">Filing Readiness</div><div class="gauge-label">9/12 dimensions pass</div></div>
+          </div>
+          <div class="lane-deadline"><i data-lucide="clock" style="width:14px;height:14px"></i> Brief Due — <strong style="color:var(--danger)">8 days</strong></div>
+        </div>
+      </div>
+
+      <!-- ADVERSARY TABLE -->
+      <div class="card">
+        <div class="card-header"><div class="card-title">Master Adversary Table</div><span style="font-size:12px;color:var(--steel)">19 adversaries across 6 lanes</span></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Name</th><th>Role</th><th>Lane(s)</th><th>Damages Range</th><th>Filing Status</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Amanda Watson</strong></td><td>Respondent</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A <span class="lane-dot" style="background:var(--lane-d)"></span>D</td><td class="mono">$50K–$150K</td><td><span class="badge badge-go">FILED</span></td></tr>
+              <tr><td><strong>Judge McNeill</strong></td><td>Judicial Officer</td><td><span class="lane-dot" style="background:var(--lane-e)"></span>E</td><td class="mono">—</td><td><span class="badge badge-conditional">PENDING</span></td></tr>
+              <tr><td><strong>Shady Oaks Mgmt</strong></td><td>Defendant</td><td><span class="lane-dot" style="background:var(--lane-b)"></span>B</td><td class="mono">$25K–$75K</td><td><span class="badge badge-go">ACTIVE</span></td></tr>
+              <tr><td><strong>DHHS (CPS)</strong></td><td>Agency</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">$100K–$500K</td><td><span class="badge badge-conditional">PENDING</span></td></tr>
+              <tr><td><strong>Watson Attorney</strong></td><td>Opposing Counsel</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A <span class="lane-dot" style="background:var(--lane-d)"></span>D</td><td class="mono">—</td><td><span class="badge badge-go">ACTIVE</span></td></tr>
+              <tr><td><strong>FOC (Ottawa)</strong></td><td>Agency</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">—</td><td><span class="badge badge-nogo">NOT FILED</span></td></tr>
+              <tr><td><strong>Guardian ad Litem</strong></td><td>Court Appointee</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">—</td><td><span class="badge badge-go">ACTIVE</span></td></tr>
+              <tr><td><strong>Property Manager</strong></td><td>Individual</td><td><span class="lane-dot" style="background:var(--lane-b)"></span>B</td><td class="mono">$15K–$40K</td><td><span class="badge badge-go">FILED</span></td></tr>
+              <tr><td><strong>Court Clerk (Ottawa)</strong></td><td>Administrative</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A <span class="lane-dot" style="background:var(--lane-d)"></span>D</td><td class="mono">—</td><td><span class="badge badge-conditional">PENDING</span></td></tr>
+              <tr><td><strong>MI Court of Appeals</strong></td><td>Appellate Court</td><td><span class="lane-dot" style="background:var(--lane-f)"></span>F</td><td class="mono">—</td><td><span class="badge badge-go">ACTIVE</span></td></tr>
+              <tr><td><strong>Judicial Tenure Comm.</strong></td><td>Oversight Body</td><td><span class="lane-dot" style="background:var(--lane-e)"></span>E</td><td class="mono">—</td><td><span class="badge badge-conditional">PENDING</span></td></tr>
+              <tr><td><strong>Watson (Mother)</strong></td><td>Family</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">—</td><td><span class="badge badge-nogo">NOT FILED</span></td></tr>
+              <tr><td><strong>CPS Investigator #1</strong></td><td>Individual</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">$25K–$100K</td><td><span class="badge badge-conditional">PENDING</span></td></tr>
+              <tr><td><strong>CPS Investigator #2</strong></td><td>Individual</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">$25K–$100K</td><td><span class="badge badge-conditional">PENDING</span></td></tr>
+              <tr><td><strong>Maintenance Contractor</strong></td><td>Individual</td><td><span class="lane-dot" style="background:var(--lane-b)"></span>B</td><td class="mono">$5K–$20K</td><td><span class="badge badge-nogo">NOT FILED</span></td></tr>
+              <tr><td><strong>School District</strong></td><td>Entity</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">—</td><td><span class="badge badge-nogo">NOT FILED</span></td></tr>
+              <tr><td><strong>Therapist (Court-ordered)</strong></td><td>Professional</td><td><span class="lane-dot" style="background:var(--lane-a)"></span>A</td><td class="mono">—</td><td><span class="badge badge-go">ACTIVE</span></td></tr>
+              <tr><td><strong>Insurance Provider</strong></td><td>Entity</td><td><span class="lane-dot" style="background:var(--lane-b)"></span>B</td><td class="mono">$10K–$50K</td><td><span class="badge badge-conditional">PENDING</span></td></tr>
+              <tr><td><strong>Prosecutor (Ottawa)</strong></td><td>Government</td><td><span class="lane-dot" style="background:var(--lane-d)"></span>D</td><td class="mono">—</td><td><span class="badge badge-go">ACTIVE</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>

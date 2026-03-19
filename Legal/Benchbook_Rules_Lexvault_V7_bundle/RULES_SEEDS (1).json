@@ -1,0 +1,17 @@
+{
+  "RULE_TAGS": [
+    ["\\\\bmcr\\\\s*1\\.109\\\\b", "MCR 1.109 Signature/filing"],
+    ["\\\\bmcr\\\\s*2\\.116\\\\s*\\\\(c\\\\)\\\\s*\\\\(?8\\\\)?", "MCR 2.116(C)(8)"],
+    ["\\\\bmcr\\\\s*2\\\\.116\\\\s*\\\\(c\\\\)\\\\s*\\\\(?10\\\\)?", "MCR 2.116(C)(10)"],
+    ["\\\\bmcr\\\\s*2\\\\.119\\\\b", "MCR 2.119 Motion practice"],
+    ["\\\\bmcr\\\\s*2\\\\.602\\\\b", "MCR 2.602 Judgments/orders"],
+    ["\\\\bmcr\\\\s*3\\\\.207\\\\b", "MCR 3.207 Family motions"],
+    ["\\\\bmcr\\\\s*3\\\\.210\\\\b", "MCR 3.210 Domestic relations actions"],
+    ["\\\\bmcr\\\\s*7\\\\.205\\\\b", "MCR 7.205 COA appeals by leave"],
+    ["\\\\bmcr\\\\s*7\\\\.206\\\\b", "MCR 7.206 Extraordinary relief"],
+    ["\\\\bmcl\\\\s*722\\\\.27a\\\\b", "MCL 722.27a Parenting time"],
+    ["\\\\bmcl\\\\s*600\\\\.2918\\\\b", "MCL 600.2918 Unlawful interference w/ possession"],
+    ["\\\\bmcl\\\\s*600\\\\.2919a\\\\b", "MCL 600.2919a Conversion"],
+    ["\\\\bmcl\\\\s*600\\\\.1701\\\\b", "MCL 600.1701 Contempt"]
+  ]
+}

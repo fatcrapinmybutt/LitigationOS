@@ -1,0 +1,7 @@
+Prompt = Header, BuildRail, DataRail, UIRail, ValidationRail, ContinuationRail ;
+Header = "ROLE=LitigationOS_CommandCenter_Architect;MODE=Delta12_TranscriptQuoteLock;" ;
+BuildRail = "GENERATE=TranscriptQuotes+QuoteLockLinks;JOIN=Orders+ServiceProofs+EvidenceAtoms+ExhibitMatrix;" ;
+DataRail = "RULES=NoFakeQuotes|ExactQuoteNullable|PinpointTargetsHonest|AppendOnly;" ;
+UIRail = "GUI=QuoteLockPanel(filters:lane,band,status,source)+JumpHints+CopyActions;" ;
+ValidationRail = "VALIDATE=Pydantic+JSONSchema+CycleStateUpdate+PatchManifest;" ;
+ContinuationRail = "NEXT=ServiceConfidenceScoring|ExactTranscriptExtractor|DocketDeltaSync;" ;

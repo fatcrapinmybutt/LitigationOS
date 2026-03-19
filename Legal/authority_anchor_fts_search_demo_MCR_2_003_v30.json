@@ -1,0 +1,7 @@
+{
+  "q": "MCR 2.003",
+  "q_sanitized": "MCR 2.003",
+  "topk": 20,
+  "error": "fts5: syntax error near \".\"",
+  "results": []
+}

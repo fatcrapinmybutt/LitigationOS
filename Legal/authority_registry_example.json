@@ -1,0 +1,64 @@
+{
+  "AUTHKEY_TRIAL_RECONSIDERATION_RULE": {
+    "authority_id": "MCR_2_119_F",
+    "pinpoint": "(pinpoint-required)",
+    "deadline_days": 21
+  },
+  "AUTHKEY_CONTEMPT_PROCEDURE": {
+    "authority_id": "MCR_3_606",
+    "pinpoint": "(pinpoint-required)",
+    "deadline_window": {
+      "days": 14
+    }
+  },
+  "AUTHKEY_CRIMINAL_CONTEMPT_PROTECTIONS": {
+    "authority_id": "BENCHBOOK_CONTEMPT",
+    "pinpoint": "(pinpoint-required)",
+    "guidance": "(guidance text)"
+  },
+  "AUTHKEY_PPO_MODIFY_TERMINATE_PROCEDURE": {
+    "authority_id": "MCL_600_2950",
+    "pinpoint": "(pinpoint-required)",
+    "guidance": "(guidance text)"
+  },
+  "AUTHKEY_PARENTING_TIME_ENFORCEMENT": {
+    "authority_id": "MCL_722_27A",
+    "pinpoint": "(pinpoint-required)",
+    "guidance": "(guidance text)"
+  },
+  "AUTHKEY_JTC_RULES": {
+    "authority_id": "MCR_9_200",
+    "pinpoint": "(pinpoint-required)",
+    "guidance": "(guidance text)"
+  },
+  "AUTHKEY_MI_CONST_JTC": {
+    "authority_id": "MI_CONST_ART_6",
+    "pinpoint": "(pinpoint-required)",
+    "guidance": "(guidance text)"
+  },
+  "AUTHKEY_MICHIGAN_CODE_OF_JUDICIAL_CONDUCT": {
+    "authority_id": "MCJC",
+    "pinpoint": "(pinpoint-required)",
+    "guidance": "(guidance text)"
+  },
+  "AUTHKEY_CLAIM_OF_APPEAL_PROCEDURE": {
+    "authority_id": "MCR_7_204",
+    "pinpoint": "(pinpoint-required)",
+    "deadline_days": 21
+  },
+  "AUTHKEY_COA_JURISDICTION": {
+    "authority_id": "MCR_7_203",
+    "pinpoint": "(pinpoint-required)",
+    "guidance": "(guidance text)"
+  },
+  "AUTHKEY_CUSTODY_MODIFICATION_STANDARDS": {
+    "authority_id": "MCL_722_27",
+    "pinpoint": "(pinpoint-required)",
+    "guidance": "(guidance text)"
+  },
+  "AUTHKEY_PARENTING_TIME_STANDARDS": {
+    "authority_id": "MCL_722_27A",
+    "pinpoint": "(pinpoint-required)",
+    "guidance": "(guidance text)"
+  }
+}

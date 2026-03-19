@@ -1,0 +1,17 @@
+doc,page_guess,line_no,excerpt,classification,actor,refute_required,note
+NoReply_20260105_131859_0008.pdf,16,2,"danger, the PPO became the foundation",anger_characterization,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,3,for later contempt,contempt_or_violation,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,13,the PPO case.,record_fact_related_case_ppo_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,17,of the PPO involved,ppo_allegations,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,30,PPO as leverage,ppo_allegations,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,35,"Over time, the PPO became a tool to escalate benign",ppo_allegations,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,38,"alleged ""violations,""",contempt_or_violation,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,43,"jail time, which",contempt_or_violation,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,49,B. Ex Parte Paretxting-Time Suspension and Lack of Notice (August 2025),ex_parte_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,52,"6, 2025 - Ex parte",ex_parte_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,54,suspending,parenting_time_restriction,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,59,"6, 2025, Judge McNeill",record_fact_judge_identification,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,60,signed an ex parte,ex_parte_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,62,order suspending,parenting_time_restriction,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,105,I was not served with the ex parte motion,ex_parte_reference,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.
+NoReply_20260105_131859_0008.pdf,16,123,time had been suspended.,parenting_time_restriction,non_court_narrative,"N/A (support, not refute; non-court narrative)",Classifier v6 + doc-role v11.

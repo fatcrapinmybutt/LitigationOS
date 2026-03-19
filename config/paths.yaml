@@ -1,0 +1,18 @@
+paths:
+  canonical_root_windows: "C:\\Users\\andre\\LitigationOS"
+  canonical_root_f_drive: "F:\\"
+  android_download_root: "/storage/emulated/0/Download"
+  artifacts_root_rel: "Artifacts"
+  evidence_root_rel: "Evidence"
+  authority_root_rel: "Authority"
+  chronodb_root_rel: "ChronoDB"
+rclone:
+  enabled: true
+  remotes:
+    - "gdrive:EDS-USB"
+    - "gdrive:Litigation_OS$"
+    - "gdrive:LITIGATION_INTAKE"
+neo4j:
+  uri: "bolt://localhost:7687"
+  user: "neo4j"
+  database: "neo4j"

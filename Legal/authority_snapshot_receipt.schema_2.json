@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "generated_utc": {
+      "type": "string"
+    },
+    "inputs_sha256": {
+      "type": "string"
+    },
+    "outputs": {
+      "additionalProperties": false,
+      "properties": {
+        "authority_index_jsonl": {
+          "type": "string"
+        },
+        "authority_pin_map_jsonl": {
+          "type": "string"
+        },
+        "errors_jsonl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stats_json": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "authority_index_jsonl",
+        "authority_pin_map_jsonl"
+      ],
+      "type": "object"
+    },
+    "pack_manifest_path": {
+      "type": "string"
+    },
+    "snapshot_id": {
+      "minLength": 3,
+      "type": "string"
+    },
+    "tool": {
+      "type": "string"
+    },
+    "tool_version": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "snapshot_id",
+    "generated_utc",
+    "pack_manifest_path",
+    "tool",
+    "inputs_sha256",
+    "outputs"
+  ],
+  "title": "AuthoritySnapshotReceipt",
+  "type": "object"
+}

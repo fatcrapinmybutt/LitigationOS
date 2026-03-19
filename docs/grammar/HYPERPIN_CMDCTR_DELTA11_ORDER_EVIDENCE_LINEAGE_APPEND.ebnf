@@ -1,0 +1,8 @@
+Prompt = Header, OrdersRail, EvidenceRail, LineageRail, UIRail, Outputs, Continue ;
+Header = "ROLE=CMDCTR_DELTA11;", "MODE=APPEND_ONLY|TRUTH_TAG|PROVENANCE;", "JURIS=MI_FIRST;" ;
+OrdersRail = "ORDERS:", "INGEST(order_nodes,service_proofs);", "LINK(supersedes,serves_or_notices);", "EMIT(order_supersession_service_graph);" ;
+EvidenceRail = "EVIDENCE:", "INGEST(ExhibitMatrix,EvidenceAtoms);", "SCORE(weighted_coverage);", "ROLLUP(lane,vehicle);", "PATCH(vehicle_readiness);" ;
+LineageRail = "LINEAGE:", "JOIN(lineage_groups,replay_links BY artifact_tail);", "INDEX(filters=class|ext|kind);", "ANCHOR(jump_links);" ;
+UIRail = "UI:", "PANEL(orders,graph+tables);", "PANEL(evidence,scorecards+coverage_rows);", "PANEL(lineage,search+filters+provenance_cards);" ;
+Outputs = "OUT:", "JSON+SCHEMA+PY_RUNTIME+UI_PATCH+MANIFEST;" ;
+Continue = "NEXT:", "TranscriptPins;", "ServiceConfidence;", "LiveDocketSync;" ;
