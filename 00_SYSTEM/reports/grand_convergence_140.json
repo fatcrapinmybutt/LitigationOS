@@ -1,0 +1,19 @@
+{
+  "generated": "2026-03-19T00:31:06.605273",
+  "tool": "GRAND CONVERGENCE REPORT (#140) \u2014 ULTIMATE CAPSTONE",
+  "tools": 171,
+  "reports": 277,
+  "db_size_gb": 11.9,
+  "tables": 804,
+  "total_evidence": 44900,
+  "evidence_breakdown": {
+    "evidence_quotes": 36891,
+    "judicial_violations": 1127,
+    "detected_contradictions": 1061,
+    "watson_perjury_compilation": 5821,
+    "chatgpt_evidence": 0
+  },
+  "filings": 10,
+  "courts": 6,
+  "status": "CONVERGENCE ACHIEVED"
+}
