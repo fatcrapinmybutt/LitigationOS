@@ -1,0 +1,15 @@
+:START_ID,:END_ID,:TYPE,score:int
+jtc-formal-complaint,JTC,FILED_IN,93
+msc-emergency-app,MSC,FILED_IN,84
+msc-superintending,MSC,FILED_IN,81
+msc-habeas,MSC,FILED_IN,81
+usdc-1983-5count,USDC,FILED_IN,81
+14th-vacate-exparte,14TH,FILED_IN,79
+usdc-1983-injunction,USDC,FILED_IN,75
+msc-mandamus,MSC,FILED_IN,74
+14th-disqualification,14TH,FILED_IN,73
+coa-appeal-366810,COA,FILED_IN,72
+14th-emergency-restore,14TH,FILED_IN,72
+bar-berry,BAR,FILED_IN,72
+bar-barnes,BAR,FILED_IN,71
+bar-martini,BAR,FILED_IN,66

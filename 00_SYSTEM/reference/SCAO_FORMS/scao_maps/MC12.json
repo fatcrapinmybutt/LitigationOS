@@ -1,0 +1,19 @@
+{
+  "form_id": "MC12",
+  "required_fields": [
+    "plaintiff_name",
+    "defendant_name",
+    "court_name",
+    "case_number",
+    "service_method",
+    "date"
+  ],
+  "field_map": {
+    "PLAINTIFF_NAME": "{plaintiff_name}",
+    "DEFENDANT_NAME": "{defendant_name}",
+    "COURT_NAME": "{court_name}",
+    "CASE_NUMBER": "{case_number}",
+    "SERVICE_METHOD": "{service_method}",
+    "DATE": "{date}"
+  }
+}

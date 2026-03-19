@@ -1,0 +1,8 @@
+{
+  "generated_utc": "2026-01-24T01:51:15Z",
+  "checks": {
+    "py_compile_ok": true,
+    "ai_modules_present": true,
+    "qt_ai_tab_present": true
+  }
+}

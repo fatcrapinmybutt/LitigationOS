@@ -1,0 +1,393 @@
+dataset,source_name,primary_lane,rows,top_signal,avg_signal
+pack_new_mixed_all,20260223_2303_MEEK234_QUOTELOCK_PACK.zip,MEEK2,3292,192.4,84.3229070473876
+pack_new_mixed_all,20260223_2303_MEEK234_QUOTELOCK_PACK.zip,MEEK3,2413,142.8,79.67925404061334
+pack_new_mixed_all,20260223_2303_MEEK234_QUOTELOCK_PACK.zip,MEEK4,1321,91.4,57.504118092354275
+pack_new_primary_all,96035745-eafb-42f8-81cf-4493f946e853.pdf,MEEK2,635,85.19,40.159795275590554
+pack_new_primary_all,a0da751d-4b19-46f9-8e48-0272150ab69d.pdf,MEEK2,635,85.19,40.159795275590554
+pack_new_primary_all,9991a107-bd89-4799-806a-312d492482b3.zip,MEEK2,571,124.6,36.141260945709284
+pack_old_all,96035745-eafb-42f8-81cf-4493f946e853.pdf,MEEK2,356,38.6,20.32578651685393
+pack_old_all,a0da751d-4b19-46f9-8e48-0272150ab69d.pdf,MEEK2,356,38.6,20.32578651685393
+legacy_negative_all_724,,UNASSIGNED,201,1.0,1.0
+pack_new_primary_all,9991a107-bd89-4799-806a-312d492482b3.zip,MEEK3,161,70.24,39.749378881987575
+pack_new_primary_all,e63b9c48-5954-4dbc-b8e8-5b1bdc2a2005.zip,MEEK2,136,77.62,44.945073529411765
+pack_old_all,96035745-eafb-42f8-81cf-4493f946e853.pdf,MEEK3,115,36.61,23.702
+pack_old_all,a0da751d-4b19-46f9-8e48-0272150ab69d.pdf,MEEK3,115,36.61,23.702
+pack_new_primary_all,96035745-eafb-42f8-81cf-4493f946e853.pdf,MEEK4,110,74.41,47.00236363636364
+pack_new_primary_all,a0da751d-4b19-46f9-8e48-0272150ab69d.pdf,MEEK4,110,74.41,47.00236363636364
+pack_new_primary_all,7a619538-45e5-4488-9eb4-e0d1894a06cc.md,MEEK2,89,88.0,49.781235955056175
+pack_new_primary_all,9991a107-bd89-4799-806a-312d492482b3.zip,MEEK4,79,61.79,42.44886075949367
+pack_new_primary_all,70c49062-1ea0-4e73-a649-32d0a9986474.zip,MEEK3,75,69.56,47.5924
+pack_new_primary_all,96035745-eafb-42f8-81cf-4493f946e853.pdf,MEEK3,67,69.82,43.685970149253734
+pack_new_primary_all,a0da751d-4b19-46f9-8e48-0272150ab69d.pdf,MEEK3,67,69.82,43.685970149253734
+pack_old_all,7a619538-45e5-4488-9eb4-e0d1894a06cc.md,MEEK2,65,51.0,26.63230769230769
+pack_new_primary_all,92f01e67-69c6-4d2d-84ad-1a1e4f1fc06d.zip,MEEK2,56,55.39,38.12678571428571
+pack_old_meek4_emailthread,Gmail - Healthwest Exam_1_RUSCO (5).pdf,MEEK4,50,44.29,36.9366
+pack_old_meek4_emailthread,Gmail - Healthwest Exam_1_RUSCO (8).pdf,MEEK4,50,44.29,36.9366
+pack_old_meek4_emailthread,Gmail - Healthwest Exam_1_RUSCO (9).pdf,MEEK4,50,44.29,36.9366
+pack_old_meek4_emailthread,Gmail - Healthwest Exam_2_RUSCO (6).pdf,MEEK4,50,44.29,36.9366
+pack_old_meek4_emailthread,Gmail - Healthwest Exam_3_RUSCO (7).pdf,MEEK4,50,44.29,36.9366
+pack_new_primary_all,8e5460ad-ca1d-4cac-b802-1ec6e07997fb.md,MEEK3,49,81.55,45.76326530612245
+pack_new_primary_all,ef06d6b4-d097-4144-b7f6-d65fb44efe6d.md,MEEK2,47,93.21,55.85361702127659
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0010.pdf,MEEK4,42,43.7,32.461190476190474
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0001.pdf,MEEK4,42,43.69,32.435
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0006.pdf,MEEK4,39,38.29,30.964358974358973
+pack_new_primary_all,cd4d925c-fcd2-41a7-915a-102a20b92b40.pdf,MEEK2,38,81.96,41.305263157894736
+pack_old_all,ef06d6b4-d097-4144-b7f6-d65fb44efe6d.md,MEEK2,37,39.41,28.7027027027027
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0022.pdf,MEEK4,36,37.83,31.665833333333335
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0021.pdf,MEEK4,36,37.81,31.663333333333338
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0013.pdf,MEEK4,35,38.22,31.571714285714286
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0015.pdf,MEEK4,35,37.75,31.583714285714287
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0020.pdf,MEEK4,34,37.44,31.652058823529416
+pack_old_all,bf5f0364-c042-4e93-91cc-d633ca70fdc4.md,MEEK2,32,47.0,28.480625
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0004.pdf,MEEK4,31,36.05,31.37
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0019.pdf,MEEK4,30,44.02,31.88533333333333
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0017.pdf,MEEK4,30,41.68,31.983333333333334
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0024.pdf,MEEK4,30,41.68,31.784333333333333
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0008.pdf,MEEK4,27,42.6,31.95888888888889
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0025.pdf,MEEK4,27,42.59,32.07037037037037
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0026.pdf,MEEK4,27,36.77,29.92
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0009.pdf,MEEK4,27,36.76,29.918518518518518
+pack_old_all,8e5460ad-ca1d-4cac-b802-1ec6e07997fb.md,MEEK3,23,32.58,24.32782608695652
+pack_new_primary_all,dba73432-3966-4a47-9ff7-90bbf1f2f1f2.zip,MEEK2,22,67.9,46.62863636363636
+pack_new_primary_all,d8c1df2c-f070-4111-8b75-8064f1a6a996.md,MEEK2,22,64.52,47.303636363636365
+pack_new_primary_all,3055edeb-0469-492a-9865-021bb87dcc03.md,MEEK2,22,60.98,48.39863636363636
+pack_old_all,d8c1df2c-f070-4111-8b75-8064f1a6a996.md,MEEK2,22,40.33,28.19272727272727
+pack_new_primary_all,bf5f0364-c042-4e93-91cc-d633ca70fdc4.md,MEEK2,21,159.4,65.13333333333333
+pack_new_primary_all,d936b8f2-5418-460d-a0aa-81acac8d6acd.zip,MEEK4,21,46.18,43.15428571428571
+pack_old_all,8e5460ad-ca1d-4cac-b802-1ec6e07997fb.md,MEEK2,21,36.52,24.758571428571425
+pack_new_primary_all,ef06d6b4-d097-4144-b7f6-d65fb44efe6d.md,MEEK3,19,76.44,56.414736842105256
+pack_new_primary_all,92f01e67-69c6-4d2d-84ad-1a1e4f1fc06d.zip,MEEK4,19,61.79,45.16473684210526
+pack_old_all,ef06d6b4-d097-4144-b7f6-d65fb44efe6d.md,MEEK3,19,50.29,34.55947368421052
+pack_new_primary_all,8e5460ad-ca1d-4cac-b802-1ec6e07997fb.md,MEEK2,18,67.49,45.22388888888889
+pack_old_all,healthwest2ndscanned_0024.pdf,MEEK2,18,39.86,29.64611111111111
+pack_old_all,healthwest2ndscanned_0008.pdf,MEEK2,18,39.84,28.514444444444443
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0012.pdf,MEEK4,18,37.16,30.608333333333334
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0003.pdf,MEEK4,17,36.05,31.59470588235294
+pack_old_all,cd4d925c-fcd2-41a7-915a-102a20b92b40.pdf,MEEK2,17,32.59,23.47470588235294
+pack_new_primary_all,dba73432-3966-4a47-9ff7-90bbf1f2f1f2.zip,MEEK3,16,69.43,48.226875
+pack_new_primary_all,bf5f0364-c042-4e93-91cc-d633ca70fdc4.md,MEEK4,16,64.47,48.845625
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0014.pdf,MEEK4,16,36.05,31.55375
+pack_old_all,3055edeb-0469-492a-9865-021bb87dcc03.md,MEEK2,14,38.04,27.63642857142857
+pack_old_all,2sided_judge_orders_scanned_0015.pdf.txt,MEEK2,14,29.79,22.632857142857144
+pack_old_all,healthwest2ndscanned_0023.pdf,MEEK2,13,39.84,24.84307692307692
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0002.pdf,MEEK4,13,37.58,32.09076923076923
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0007.pdf,MEEK4,13,35.29,31.10076923076923
+pack_new_primary_all,6683a8d8-d1aa-4b3f-8b3a-24d8e423201b.pdf,MEEK3,12,59.0,39.284166666666664
+pack_new_primary_all,d936b8f2-5418-460d-a0aa-81acac8d6acd.zip,MEEK2,12,53.42,39.89083333333333
+pack_old_all,healthwest2ndscanned_0007.pdf,MEEK2,12,39.84,25.008333333333336
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0011.pdf,MEEK4,12,37.7,30.878333333333334
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0027.pdf,MEEK4,12,37.69,30.877499999999998
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0028.pdf,MEEK4,12,37.68,30.876666666666665
+pack_old_all,2sided_judge_orders_scanned_0027.pdf.txt,MEEK2,12,24.78,21.435000000000002
+pack_new_primary_all,92f01e67-69c6-4d2d-84ad-1a1e4f1fc06d.zip,MEEK3,11,70.24,50.26909090909091
+pack_new_primary_all,70c49062-1ea0-4e73-a649-32d0a9986474.zip,MEEK4,11,50.37,44.337272727272726
+pack_old_all,96035745-eafb-42f8-81cf-4493f946e853.pdf,MEEK4,10,36.62,30.708
+pack_old_all,a0da751d-4b19-46f9-8e48-0272150ab69d.pdf,MEEK4,10,36.62,30.708
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0005.pdf,MEEK4,10,35.49,31.217000000000002
+pack_old_all,2sided_judge_orders_scanned_0004.pdf.txt,MEEK4,10,30.65,28.268
+pack_old_all,2sided_judge_orders_scanned_0019.pdf.txt,MEEK2,10,20.86,20.662
+pack_new_primary_all,d8c1df2c-f070-4111-8b75-8064f1a6a996.md,MEEK3,9,102.19,58.80888888888889
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0023.pdf,MEEK4,9,37.77,31.92555555555556
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0018.pdf,MEEK4,9,37.76,31.919999999999998
+pack_new_primary_all,cd4d925c-fcd2-41a7-915a-102a20b92b40.pdf,MEEK4,8,62.59,49.1025
+pack_new_primary_all,bf5f0364-c042-4e93-91cc-d633ca70fdc4.md,MEEK3,8,58.06,43.332499999999996
+pack_old_all,d8c1df2c-f070-4111-8b75-8064f1a6a996.md,MEEK3,8,43.39,29.0575
+pack_old_all,healthwest2ndscanned_0009.pdf,MEEK2,8,39.84,31.8925
+pack_old_meek4_emailthread,ruscomartiniemailsscannd_0016.pdf,MEEK4,8,36.6,31.4325
+pack_old_all,custody_scanned_0060.pdf.txt,MEEK2,8,33.8,24.10625
+pack_old_all,2sided_judge_orders_scanned_0028.pdf.txt,MEEK2,8,25.8,22.415
+pack_new_primary_all,cd4d925c-fcd2-41a7-915a-102a20b92b40.pdf,MEEK3,7,80.34,61.18571428571429
+pack_new_primary_all,ef06d6b4-d097-4144-b7f6-d65fb44efe6d.md,MEEK4,7,51.82,41.589999999999996
+pack_old_all,healthwest2ndscanned_0018.pdf,MEEK2,7,33.84,27.64428571428571
+pack_old_all,healthwest2ndscanned_0003.pdf,MEEK2,7,33.81,29.665714285714284
+pack_old_all,dockets notices proofs scanned_0005.pdf,MEEK3,7,31.36,27.62857142857143
+pack_old_all,custody_scanned2_0007.pdf.txt,MEEK2,7,28.31,20.330000000000002
+pack_new_primary_all,d936b8f2-5418-460d-a0aa-81acac8d6acd.zip,MEEK3,6,53.56,52.156666666666666
+pack_old_all,healthwest2ndscanned_0017.pdf,MEEK2,6,32.84,27.69333333333333
+pack_old_all,2sided_judge_orders_scanned_0003.pdf.txt,MEEK3,6,27.18,23.243333333333336
+pack_old_all,2sided_judge_orders_scanned_0005.pdf.txt,MEEK4,6,26.32,21.706666666666667
+pack_old_all,SCANNEDMergeddocketsnotices_20260205_2200.pdf.txt,MEEK3,6,25.09,25.09
+pack_old_all,SCANNEDMergeddocketsnotices_20260205_2200_1_.pdf.txt,MEEK3,6,25.09,25.09
+pack_old_all,SCANNEDMergeddocketsnotices_20260205_2200_2_.pdf.txt,MEEK3,6,25.09,25.09
+pack_old_all,custody_scanned_0017.pdf.txt,MEEK2,6,24.72,22.061666666666667
+pack_new_primary_all,Gmail - Healthwest Exam_1_RUSCO (5).pdf,MEEK2,5,77.97,54.348
+pack_new_primary_all,Gmail - Healthwest Exam_1_RUSCO (8).pdf,MEEK2,5,77.97,54.348
+pack_new_primary_all,Gmail - Healthwest Exam_1_RUSCO (9).pdf,MEEK2,5,77.97,54.348
+pack_new_primary_all,Gmail - Healthwest Exam_2_RUSCO (6).pdf,MEEK2,5,77.97,54.348
+pack_new_primary_all,Gmail - Healthwest Exam_3_RUSCO (7).pdf,MEEK2,5,77.97,54.348
+pack_new_primary_all,7a619538-45e5-4488-9eb4-e0d1894a06cc.md,MEEK3,5,59.41,40.71
+pack_new_mixed_all,7a619538-45e5-4488-9eb4-e0d1894a06cc.md,MEEK2,5,55.97,49.572
+pack_new_primary_all,7a619538-45e5-4488-9eb4-e0d1894a06cc.md,MEEK4,5,51.41,42.368
+pack_old_all,healthwest2ndscanned_0025.pdf,MEEK2,5,39.81,31.01
+pack_old_all,Gmail - Healthwest Exam_1_RUSCO (5).pdf,MEEK2,5,37.98,32.55
+pack_old_all,Gmail - Healthwest Exam_1_RUSCO (8).pdf,MEEK2,5,37.98,32.55
+pack_old_all,Gmail - Healthwest Exam_1_RUSCO (9).pdf,MEEK2,5,37.98,32.55
+pack_old_all,Gmail - Healthwest Exam_2_RUSCO (6).pdf,MEEK2,5,37.98,32.55
+pack_old_all,Gmail - Healthwest Exam_3_RUSCO (7).pdf,MEEK2,5,37.98,32.55
+pack_old_all,court_docs_ppo_cust_scanned_0014.pdf.txt,MEEK2,5,33.84,23.3
+pack_old_all,jtc_scanned_0011.pdf.txt,MEEK3,5,32.25,27.988
+pack_old_all,dockets notices proofs scanned_0003.pdf,MEEK3,5,31.38,27.51
+pack_old_all,dockets notices proofs scanned_0002.pdf,MEEK3,5,30.44,29.434000000000005
+pack_old_all,custody_scanned_0014.pdf.txt,MEEK2,5,29.39,24.96
+pack_old_all,cd4d925c-fcd2-41a7-915a-102a20b92b40.pdf,MEEK3,5,29.35,25.860000000000003
+pack_old_all,custody_scanned2_0003.pdf.txt,MEEK2,5,26.48,18.892
+pack_old_all,custody_scanned2_0010.pdf.txt,MEEK2,5,26.38,21.503999999999998
+pack_old_all,7a619538-45e5-4488-9eb4-e0d1894a06cc.md,MEEK3,5,25.82,24.068
+pack_old_all,custody_scanned_0067.pdf.txt,MEEK2,5,24.79,21.572
+pack_old_all,custody_scanned_0022.pdf.txt,MEEK2,5,24.72,22.322
+pack_old_all,custody_scanned2_0022.pdf.txt,MEEK2,5,24.37,21.080000000000002
+pack_old_all,6683a8d8-d1aa-4b3f-8b3a-24d8e423201b.pdf,MEEK3,5,23.32,21.756
+pack_old_all,custody_scanned2_0051.pdf.txt,MEEK2,5,18.47,16.736
+pack_new_primary_all,d8c1df2c-f070-4111-8b75-8064f1a6a996.md,MEEK4,4,55.05,43.265
+pack_old_all,3055edeb-0469-492a-9865-021bb87dcc03.md,MEEK4,4,38.48,30.735
+pack_old_all,court_docs_ppo_cust_scanned_0017.pdf.txt,MEEK2,4,33.84,25.1325
+pack_old_all,healthwest2ndscanned_0004.pdf,MEEK2,4,32.81,27.1
+pack_old_all,healthwest2ndscanned_0019.pdf,MEEK2,4,32.14,28.642500000000002
+pack_old_all,dockets notices proofs scanned_0023.pdf,MEEK3,4,31.82,29.6225
+pack_old_all,custody_scanned2_0020.pdf.txt,MEEK2,4,28.65,22.4
+pack_old_all,court_docs_ppo_cust_scanned_0008.pdf.txt,MEEK2,4,27.82,19.53
+pack_old_all,dockets_notices_proofs_scanned_0023.pdf.txt,MEEK3,4,27.74,27.305
+pack_old_all,custody_scanned2_0073.pdf.txt,MEEK2,4,27.49,22.3825
+pack_old_all,2sided_judge_orders_scanned_0005.pdf.txt,MEEK3,4,27.44,25.380000000000003
+pack_old_all,court_docs_ppo_cust_scanned_0020.pdf.txt,MEEK2,4,26.57,21.7625
+pack_old_all,custody_scanned2_0009.pdf.txt,MEEK2,4,26.32,23.0975
+pack_old_all,custody_scanned2_0021.pdf.txt,MEEK2,4,26.32,24.1125
+pack_old_all,custody_scanned_0055.pdf.txt,MEEK2,4,25.75,22.4025
+pack_old_all,custody_scanned_0021.pdf.txt,MEEK2,4,25.74,22.9325
+pack_old_all,custody_scanned_0016.pdf.txt,MEEK2,4,25.72,22.3875
+pack_old_all,custody_scanned2_0008.pdf.txt,MEEK2,4,24.73,22.9175
+pack_old_all,2sided_judge_orders_scanned_0017.pdf.txt,MEEK2,4,24.72,22.595
+pack_old_all,custody_scanned_0046.pdf.txt,MEEK2,4,24.46,20.9775
+pack_old_all,custody_scanned2_0004.pdf.txt,MEEK2,4,24.4,18.3075
+pack_old_all,custody_scanned2_0016.pdf.txt,MEEK2,4,24.4,18.3075
+pack_old_all,custody_scanned2_0043.pdf.txt,MEEK2,4,22.56,20.195
+pack_old_all,custody_scanned_0007.pdf.txt,MEEK2,4,22.56,20.195
+pack_old_all,custody_scanned_0051.pdf.txt,MEEK2,4,22.56,20.195
+pack_old_all,SCANNEDMergeddocketsnotices_20260205_2200.pdf.txt,MEEK2,4,22.06,22.057499999999997
+pack_old_all,SCANNEDMergeddocketsnotices_20260205_2200_1_.pdf.txt,MEEK2,4,22.06,22.057499999999997
+pack_old_all,SCANNEDMergeddocketsnotices_20260205_2200_2_.pdf.txt,MEEK2,4,22.06,22.057499999999997
+pack_old_all,2sided_judge_orders_scanned_0010.pdf.txt,MEEK4,4,21.49,20.354999999999997
+pack_old_all,2sided_judge_orders_scanned_0008.pdf.txt,MEEK4,4,19.44,19.365000000000002
+pack_old_all,custody_scanned_0071.pdf.txt,MEEK2,4,18.47,16.925
+pack_old_all,custody_scanned2_0015.pdf.txt,MEEK2,4,18.25,17.0075
+pack_new_primary_all,dba73432-3966-4a47-9ff7-90bbf1f2f1f2.zip,MEEK4,3,64.49,46.29666666666666
+pack_new_primary_all,3055edeb-0469-492a-9865-021bb87dcc03.md,MEEK4,3,47.14,42.473333333333336
+pack_new_primary_all,8e5460ad-ca1d-4cac-b802-1ec6e07997fb.md,MEEK4,3,47.08,42.406666666666666
+pack_new_primary_all,70c49062-1ea0-4e73-a649-32d0a9986474.zip,MEEK2,3,40.43,36.48
+pack_old_all,ruscomartiniemailsscannd_0010.pdf,MEEK2,3,37.7,33.45333333333333
+pack_old_all,ruscomartiniemailsscannd_0001.pdf,MEEK2,3,37.69,33.45666666666667
+pack_old_all,jtc_scanned_0016.pdf.txt,MEEK2,3,36.22,36.13666666666666
+pack_old_all,jtc_scanned_0006.pdf.txt,MEEK2,3,36.09,30.813333333333333
+pack_old_all,jtc_scanned_0009.pdf.txt,MEEK2,3,36.09,36.07333333333333
+pack_old_all,dockets_notices_proofs_scanned_0026.pdf.txt,MEEK3,3,33.72,29.689999999999998
+pack_old_all,dockets notices proofs scanned_0027.pdf,MEEK3,3,31.82,30.436666666666667
+pack_old_all,dockets notices proofs scanned_0025.pdf,MEEK3,3,31.75,28.896666666666665
+pack_old_all,custody_scanned2_0023.pdf.txt,MEEK2,3,31.71,22.89
+pack_old_all,dockets notices proofs scanned_0026.pdf,MEEK3,3,31.71,29.073333333333334
+pack_old_all,healthwest2ndscanned_0002.pdf,MEEK2,3,31.06,27.97
+pack_old_all,healthwest2ndscanned_0027.pdf,MEEK2,3,31.06,27.81
+pack_old_all,dockets notices proofs scanned_0001.pdf,MEEK3,3,30.44,28.72666666666667
+pack_old_all,dockets notices proofs scanned_0004.pdf,MEEK3,3,30.44,26.95
+pack_old_all,jtc_scanned_0016.pdf.txt,MEEK3,3,30.15,29.586666666666662
+pack_old_all,dockets notices proofs scanned_0021.pdf,MEEK3,3,28.36,26.650000000000002
+pack_old_all,dockets notices proofs scanned_0011.pdf,MEEK3,3,27.88,26.169999999999998
+pack_old_all,dockets notices proofs scanned_0017.pdf,MEEK3,3,27.88,26.099999999999998
+pack_new_primary_all,6683a8d8-d1aa-4b3f-8b3a-24d8e423201b.pdf,MEEK2,3,27.6,27.593333333333334
+pack_old_all,custody_scanned_0032.pdf.txt,MEEK2,3,27.42,21.346666666666668
+pack_old_all,dockets_notices_proofs_scanned_0025.pdf.txt,MEEK3,3,27.29,27.19333333333333
+pack_old_all,dockets_notices_proofs_scanned_0027.pdf.txt,MEEK3,3,27.29,27.22666666666667
+pack_old_all,dockets_notices_proofs_scanned_0011.pdf.txt,MEEK3,3,27.09,25.76
+pack_old_all,dockets_notices_proofs_scanned_0017.pdf.txt,MEEK3,3,27.09,25.763333333333332
+pack_old_all,3055edeb-0469-492a-9865-021bb87dcc03.md,MEEK3,3,26.41,25.933333333333334
+pack_old_all,jtc_scanned_0012.pdf.txt,MEEK4,3,26.24,26.176666666666666
+pack_old_all,dockets notices proofs scanned_0006.pdf,MEEK3,3,25.34,25.27333333333333
+pack_old_all,dockets_notices_proofs_scanned_0006.pdf.txt,MEEK3,3,25.09,25.09
+pack_old_all,custody_scanned_0003.pdf.txt,MEEK2,3,24.61,23.733333333333334
+pack_old_all,custody_scanned_0010.pdf.txt,MEEK2,3,24.56,21.876666666666665
+pack_old_all,custody_scanned2_0014.pdf.txt,MEEK2,3,24.3,23.166666666666668
+pack_old_all,custody_scanned2_0019.pdf.txt,MEEK2,3,24.21,21.486666666666668
+pack_old_all,custody_scanned_0066.pdf.txt,MEEK2,3,22.77,21.14
+pack_old_all,custody_scanned_0043.pdf.txt,MEEK2,3,16.36,16.2
+pack_new_primary_all,3055edeb-0469-492a-9865-021bb87dcc03.md,MEEK3,2,58.21,45.345
+pack_new_mixed_all,dba73432-3966-4a47-9ff7-90bbf1f2f1f2.zip,MEEK3,2,54.6,54.595
+pack_new_mixed_all,96035745-eafb-42f8-81cf-4493f946e853.pdf,MEEK2,2,54.22,46.32
+pack_new_mixed_all,a0da751d-4b19-46f9-8e48-0272150ab69d.pdf,MEEK2,2,54.22,46.32
+pack_old_all,jtc_scanned_0010.pdf.txt,MEEK2,2,36.2,29.21
+pack_old_all,court_docs_ppo_cust_scanned_0027.pdf.txt,MEEK2,2,33.85,28.825000000000003
+pack_old_all,custody_scanned2_0072.pdf.txt,MEEK2,2,33.69,27.07
+pack_old_all,dockets notices proofs scanned_0028.pdf,MEEK3,2,31.73,29.72
+pack_old_all,ruscomartiniemailsscannd_0002.pdf,MEEK2,2,31.58,31.38
+pack_old_all,dockets_notices_proofs_scanned_0028.pdf.txt,MEEK3,2,31.56,29.59
+pack_old_all,healthwest2ndscanned_0001.pdf,MEEK2,2,31.06,31.06
+pack_old_all,healthwest2ndscanned_0010.pdf,MEEK2,2,31.06,31.06
+pack_old_all,healthwest2ndscanned_0011.pdf,MEEK2,2,31.06,31.06
+pack_old_all,healthwest2ndscanned_0013.pdf,MEEK2,2,31.06,31.06
+pack_old_all,healthwest2ndscanned_0014.pdf,MEEK2,2,31.06,31.06
+pack_old_all,healthwest2ndscanned_0015.pdf,MEEK2,2,31.06,31.06
+pack_old_all,healthwest2ndscanned_0030.pdf,MEEK2,2,31.06,31.06
+pack_old_all,ruscomartiniemailsscannd_0013.pdf,MEEK3,2,29.22,25.31
+pack_old_all,ruscomartiniemailsscannd_0017.pdf,MEEK3,2,28.74,27.59
+pack_old_all,ruscomartiniemailsscannd_0024.pdf,MEEK3,2,28.74,27.59
+pack_old_all,jtc_scanned_0008.pdf.txt,MEEK3,2,28.13,27.2
+pack_old_all,dockets notices proofs scanned_0020.pdf,MEEK3,2,27.85,26.520000000000003
+pack_old_all,court_docs_ppo_cust_scanned_0007.pdf.txt,MEEK2,2,27.82,21.634999999999998
+pack_old_all,emilys filings scanned_0012.pdf,MEEK3,2,27.76,25.475
+pack_old_all,emilys filings scanned_0004.pdf,MEEK3,2,27.75,25.47
+pack_old_all,custody_scanned2_0011.pdf.txt,MEEK2,2,27.53,21.855
+pack_old_all,dockets_notices_proofs_scanned_0020.pdf.txt,MEEK3,2,27.44,26.265
+pack_old_all,2sided_judge_orders_scanned_0015.pdf.txt,MEEK4,2,26.75,26.75
+pack_old_all,bf5f0364-c042-4e93-91cc-d633ca70fdc4.md,MEEK3,2,25.96,23.725
+pack_old_all,ruscomartiniemailsscannd_0022.pdf,MEEK3,2,25.83,23.86
+pack_old_all,dockets notices proofs scanned_0007.pdf,MEEK3,2,25.16,25.15
+pack_old_all,dockets_notices_proofs_scanned_0005.pdf.txt,MEEK3,2,25.09,25.09
+pack_old_all,dockets_notices_proofs_scanned_0007.pdf.txt,MEEK3,2,25.09,25.09
+pack_old_all,custody_scanned_0064.pdf.txt,MEEK2,2,24.71,22.740000000000002
+pack_old_all,dockets notices proofs scanned_0002.pdf,MEEK2,2,24.46,23.47
+pack_old_all,custody_scanned2_0002.pdf.txt,MEEK2,2,24.3,23.495
+pack_old_all,emilys filings scanned_0009.pdf,MEEK3,2,23.77,23.48
+pack_old_all,emilys_filings_scanned_0004.pdf.txt,MEEK3,2,23.48,23.325000000000003
+pack_old_all,emilys_filings_scanned_0012.pdf.txt,MEEK3,2,23.48,23.28
+pack_old_all,emilys_filings_scanned_0009.pdf.txt,MEEK3,2,23.18,23.13
+pack_old_all,2sided_judge_orders_scanned_0029.pdf.txt,MEEK3,2,23.12,23.12
+pack_old_all,court docs ppo cust scanned_0031.pdf,MEEK2,2,22.84,21.475
+pack_old_all,2sided_judge_orders_scanned_0004.pdf.txt,MEEK2,2,22.59,22.59
+pack_old_all,2sided_judge_orders_scanned_0001.pdf.txt,MEEK2,2,22.34,22.34
+pack_old_all,custody_scanned2_0050.pdf.txt,MEEK2,2,22.2,20.27
+pack_old_all,custody_scanned_0002.pdf.txt,MEEK2,2,22.18,19.23
+pack_old_all,court_docs_ppo_cust_scanned_0015.pdf.txt,MEEK2,2,22.13,22.095
+pack_old_all,court_docs_ppo_cust_scanned_0018.pdf.txt,MEEK2,2,22.12,19.115000000000002
+pack_old_all,dockets_notices_proofs_scanned_0003.pdf.txt,MEEK2,2,22.06,22.06
+pack_old_all,2sided_judge_orders_scanned_0029.pdf.txt,MEEK4,2,21.07,21.07
+pack_old_all,custody_scanned2_0026.pdf.txt,MEEK2,2,20.71,19.384999999999998
+pack_old_all,custody_scanned_0035.pdf.txt,MEEK2,2,20.68,20.68
+pack_old_all,custody_scanned_0044.pdf.txt,MEEK2,2,20.66,20.59
+pack_old_all,custody_scanned_0001.pdf.txt,MEEK2,2,20.65,20.63
+pack_old_all,custody_scanned_0031.pdf.txt,MEEK2,2,20.58,20.46
+pack_old_all,2sided_judge_orders_scanned_0018.pdf.txt,MEEK2,2,20.51,20.51
+pack_old_all,2sided_judge_orders_scanned_0024.pdf.txt,MEEK2,2,20.48,20.48
+pack_old_all,custody_scanned_0004.pdf.txt,MEEK2,2,20.3,19.845
+pack_old_all,2sided_judge_orders_scanned_0017.pdf.txt,MEEK4,2,19.85,19.85
+pack_old_all,2sided_judge_orders_scanned_0003.pdf.txt,MEEK4,2,19.23,19.23
+pack_old_all,court_docs_ppo_cust_scanned_0026.pdf.txt,MEEK2,2,18.35,17.23
+pack_old_all,2sided_judge_orders_scanned_0009.pdf.txt,MEEK2,2,18.14,18.14
+pack_old_all,custody_scanned2_0028.pdf.txt,MEEK2,2,18.12,17.22
+pack_old_all,custody_scanned2_0024.pdf.txt,MEEK2,2,18.11,18.095
+pack_old_all,court_docs_ppo_cust_scanned_0025.pdf.txt,MEEK2,2,16.7,16.405
+pack_old_all,custody_scanned2_0054.pdf.txt,MEEK2,2,16.56,16.35
+pack_old_all,custody_scanned_0073.pdf.txt,MEEK2,2,16.56,16.35
+pack_old_all,custody_scanned2_0049.pdf.txt,MEEK2,2,16.36,16.225
+pack_old_all,6683a8d8-d1aa-4b3f-8b3a-24d8e423201b.pdf,MEEK2,2,16.32,16.314999999999998
+pack_old_all,custody_scanned2_0055.pdf.txt,MEEK2,2,16.31,16.31
+pack_new_mixed_all,e63b9c48-5954-4dbc-b8e8-5b1bdc2a2005.zip,MEEK2,1,58.65,58.65
+pack_old_all,SCANNEDMergeddocketsnotices_20260205_2200__TEXTSNAPSHOT.txt,MEEK2,1,55.0,55.0
+pack_old_all,ruscomartiniemailsscannd_0019.pdf,MEEK3,1,38.02,38.02
+pack_old_all,jtc_scanned_0017.pdf.txt,MEEK2,1,36.1,36.1
+pack_new_mixed_all,96035745-eafb-42f8-81cf-4493f946e853.pdf,MEEK3,1,34.41,34.41
+pack_new_mixed_all,a0da751d-4b19-46f9-8e48-0272150ab69d.pdf,MEEK3,1,34.41,34.41
+pack_old_all,jtc_scanned_0006.pdf.txt,MEEK4,1,32.17,32.17
+pack_old_all,jtc_scanned_0008.pdf.txt,MEEK4,1,32.17,32.17
+pack_old_all,healthwest2ndscanned_0005.pdf,MEEK2,1,31.84,31.84
+pack_old_all,healthwest2ndscanned_0021.pdf,MEEK2,1,31.84,31.84
+pack_old_all,ruscomartiniemailsscannd_0011.pdf,MEEK2,1,31.7,31.7
+pack_old_all,ruscomartiniemailsscannd_0027.pdf,MEEK2,1,31.69,31.69
+pack_old_all,ruscomartiniemailsscannd_0028.pdf,MEEK2,1,31.68,31.68
+pack_old_all,jtc_scanned_0010.pdf.txt,MEEK3,1,30.27,30.27
+pack_old_all,jtc_scanned_0015.pdf.txt,MEEK3,1,30.11,30.11
+pack_old_all,emilys filings scanned_0016.pdf,MEEK2,1,28.57,28.57
+pack_old_all,jtc_scanned_0013.pdf.txt,MEEK2,1,28.11,28.11
+pack_old_all,dockets notices proofs scanned_0029.pdf,MEEK3,1,27.92,27.92
+pack_old_all,dockets notices proofs scanned_0009.pdf,MEEK3,1,27.88,27.88
+pack_old_all,dockets notices proofs scanned_0018.pdf,MEEK3,1,27.88,27.88
+pack_old_all,dockets notices proofs scanned_0019.pdf,MEEK3,1,27.88,27.88
+pack_old_all,dockets notices proofs scanned_0010.pdf,MEEK3,1,27.86,27.86
+pack_old_all,dockets notices proofs scanned_0014.pdf,MEEK3,1,27.86,27.86
+pack_old_all,court_docs_ppo_cust_scanned_0001.pdf.txt,MEEK2,1,27.83,27.83
+pack_old_all,dockets notices proofs scanned_0024.pdf,MEEK3,1,27.79,27.79
+pack_old_all,emilys filings scanned_0003.pdf,MEEK3,1,27.76,27.76
+pack_old_all,emilys filings scanned_0007.pdf,MEEK3,1,27.76,27.76
+pack_old_all,emilys filings scanned_0002.pdf,MEEK3,1,27.74,27.74
+pack_old_all,emilys_filings_scanned_0002.pdf.txt,MEEK3,1,27.66,27.66
+pack_old_all,dockets_notices_proofs_scanned_0024.pdf.txt,MEEK3,1,27.48,27.48
+pack_old_all,dockets_notices_proofs_scanned_0014.pdf.txt,MEEK3,1,27.42,27.42
+pack_old_all,dockets_notices_proofs_scanned_0021.pdf.txt,MEEK3,1,27.22,27.22
+pack_old_all,dockets_notices_proofs_scanned_0029.pdf.txt,MEEK3,1,27.22,27.22
+pack_old_all,dockets_notices_proofs_scanned_0009.pdf.txt,MEEK3,1,27.09,27.09
+pack_old_all,dockets_notices_proofs_scanned_0010.pdf.txt,MEEK3,1,27.09,27.09
+pack_old_all,dockets_notices_proofs_scanned_0018.pdf.txt,MEEK3,1,27.09,27.09
+pack_old_all,dockets_notices_proofs_scanned_0019.pdf.txt,MEEK3,1,27.09,27.09
+pack_old_all,emilys filings scanned_0001.pdf,MEEK3,1,26.65,26.65
+pack_old_all,custody_scanned_0054.pdf.txt,MEEK2,1,26.48,26.48
+pack_old_all,ruscomartiniemailsscannd_0021.pdf,MEEK3,1,25.81,25.81
+pack_old_all,ruscomartiniemailsscannd_0023.pdf,MEEK3,1,25.77,25.77
+pack_old_all,ruscomartiniemailsscannd_0018.pdf,MEEK3,1,25.76,25.76
+pack_old_all,ruscomartiniemailsscannd_0015.pdf,MEEK3,1,25.75,25.75
+pack_old_all,dockets notices proofs scanned_0022.pdf,MEEK3,1,25.68,25.68
+pack_old_all,jtc_scanned_0007.pdf.txt,MEEK3,1,25.35,25.35
+pack_old_all,jtc_scanned_0007.pdf.txt,MEEK2,1,25.19,25.19
+pack_old_all,dockets_notices_proofs_scanned_0003.pdf.txt,MEEK3,1,25.09,25.09
+pack_old_all,healthwest2ndscanned_0022.pdf,MEEK2,1,24.9,24.9
+pack_old_all,healthwest2ndscanned_0006.pdf,MEEK2,1,24.89,24.89
+pack_old_all,ruscomartiniemailsscannd_0020.pdf,MEEK2,1,24.71,24.71
+pack_old_all,ruscomartiniemailsscannd_0021.pdf,MEEK2,1,24.71,24.71
+pack_old_all,ruscomartiniemailsscannd_0022.pdf,MEEK2,1,24.71,24.71
+pack_old_all,ruscomartiniemailsscannd_0013.pdf,MEEK2,1,24.69,24.69
+pack_old_all,ruscomartiniemailsscannd_0015.pdf,MEEK2,1,24.67,24.67
+pack_old_all,custody_scanned2_0060.pdf.txt,MEEK2,1,24.53,24.53
+pack_old_all,custody_scanned2_0068.pdf.txt,MEEK2,1,24.52,24.52
+pack_old_all,custody_scanned_0045.pdf.txt,MEEK2,1,24.49,24.49
+pack_old_all,emilys_filings_scanned_0016.pdf.txt,MEEK2,1,24.23,24.23
+pack_old_all,jtc_scanned_0014.pdf.txt,MEEK4,1,24.21,24.21
+pack_old_all,jtc_scanned_0016.pdf.txt,MEEK4,1,24.12,24.12
+pack_old_all,emilys_filings_scanned_0003.pdf.txt,MEEK3,1,23.48,23.48
+pack_old_all,emilys filings scanned_0005.pdf,MEEK3,1,23.19,23.19
+pack_old_all,emilys_filings_scanned_0006.pdf.txt,MEEK3,1,23.19,23.19
+pack_old_all,emilys filings scanned_0006.pdf,MEEK3,1,23.18,23.18
+pack_old_all,emilys_filings_scanned_0005.pdf.txt,MEEK3,1,23.16,23.16
+pack_old_all,emilys_filings_scanned_0007.pdf.txt,MEEK3,1,23.07,23.07
+pack_old_all,court_docs_ppo_cust_scanned_0031.pdf.txt,MEEK2,1,22.79,22.79
+pack_old_all,court_docs_ppo_cust_scanned_0031_1_.pdf.txt,MEEK2,1,22.79,22.79
+pack_old_all,custody_scanned_0019.pdf.txt,MEEK2,1,22.67,22.67
+pack_old_all,court_docs_ppo_cust_scanned_0013.pdf.txt,MEEK2,1,22.32,22.32
+pack_old_all,court_docs_ppo_cust_scanned_0030.pdf.txt,MEEK2,1,22.13,22.13
+pack_old_all,court_docs_ppo_cust_scanned_0023.pdf.txt,MEEK2,1,22.12,22.12
+pack_old_all,dockets notices proofs scanned_0003.pdf,MEEK2,1,22.11,22.11
+pack_old_all,custody_scanned2_0053.pdf.txt,MEEK2,1,22.09,22.09
+pack_old_all,dockets_notices_proofs_scanned_0002.pdf.txt,MEEK2,1,22.06,22.06
+pack_old_all,dockets_notices_proofs_scanned_0005.pdf.txt,MEEK2,1,22.05,22.05
+pack_old_all,ruscomartiniemailsscannd_0020.pdf,MEEK3,1,21.39,21.39
+pack_old_all,healthwest2ndscanned_0026.pdf,MEEK2,1,21.31,21.31
+pack_old_all,SCANNEDMergedEMILYSFILING_20260205_2201.pdf.txt,MEEK3,1,21.19,21.19
+pack_old_all,SCANNEDMergedEMILYSFILING_20260205_2201_1_.pdf.txt,MEEK3,1,21.19,21.19
+pack_old_all,SCANNEDMergedEMILYSFILING_20260205_2201_2_.pdf.txt,MEEK3,1,21.19,21.19
+pack_old_all,emilys_filings_scanned_0001.pdf.txt,MEEK3,1,21.19,21.19
+pack_old_all,emilys filings scanned_0003.pdf,MEEK2,1,20.88,20.88
+pack_old_all,emilys_filings_scanned_0003.pdf.txt,MEEK2,1,20.88,20.88
+pack_old_all,custody_scanned_0034.pdf.txt,MEEK2,1,20.67,20.67
+pack_old_all,custody_scanned_0028.pdf.txt,MEEK2,1,20.56,20.56
+pack_old_all,custody_scanned_0042.pdf.txt,MEEK2,1,20.52,20.52
+pack_old_all,custody_scanned2_0037.pdf.txt,MEEK2,1,20.39,20.39
+pack_old_all,custody_scanned2_0047.pdf.txt,MEEK2,1,20.26,20.26
+pack_old_all,custody_scanned2_0046.pdf.txt,MEEK2,1,20.09,20.09
+pack_old_all,custody_scanned_0053.pdf.txt,MEEK2,1,20.09,20.09
+pack_old_all,custody_scanned_0070.pdf.txt,MEEK2,1,18.46,18.46
+pack_old_all,emilys filings scanned_0002.pdf,MEEK2,1,18.46,18.46
+pack_old_all,emilys filings scanned_0009.pdf,MEEK2,1,18.46,18.46
+pack_old_all,emilys_filings_scanned_0015.pdf.txt,MEEK2,1,18.44,18.44
+pack_old_all,emilys_filings_scanned_0004.pdf.txt,MEEK2,1,18.43,18.43
+pack_old_all,emilys filings scanned_0012.pdf,MEEK2,1,18.42,18.42
+pack_old_all,emilys filings scanned_0015.pdf,MEEK2,1,18.42,18.42
+pack_old_all,emilys filings scanned_0004.pdf,MEEK2,1,18.41,18.41
+pack_old_all,emilys_filings_scanned_0005.pdf.txt,MEEK2,1,18.41,18.41
+pack_old_all,emilys filings scanned_0005.pdf,MEEK2,1,18.4,18.4
+pack_old_all,emilys filings scanned_0008.pdf,MEEK2,1,18.4,18.4
+pack_old_all,emilys_filings_scanned_0008.pdf.txt,MEEK2,1,18.4,18.4
+pack_old_all,custody_scanned2_0013.pdf.txt,MEEK2,1,18.14,18.14
+pack_old_all,custody_scanned2_0012.pdf.txt,MEEK2,1,18.08,18.08
+pack_old_all,custody_scanned2_0001.pdf.txt,MEEK2,1,17.62,17.62
+pack_old_all,custody_scanned2_0061.pdf.txt,MEEK2,1,16.5,16.5
+pack_old_all,custody_scanned_0074.pdf.txt,MEEK2,1,16.41,16.41
+pack_old_all,custody_scanned_0009.pdf.txt,MEEK2,1,16.32,16.32
+pack_old_all,court_docs_ppo_cust_scanned_0006.pdf.txt,MEEK2,1,16.11,16.11
+pack_old_all,court_docs_ppo_cust_scanned_0011.pdf.txt,MEEK2,1,16.11,16.11
+pack_old_all,court_docs_ppo_cust_scanned_0016.pdf.txt,MEEK2,1,16.11,16.11
+pack_old_all,court_docs_ppo_cust_scanned_0019.pdf.txt,MEEK2,1,16.11,16.11

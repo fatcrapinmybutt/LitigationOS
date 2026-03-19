@@ -1,0 +1,17 @@
+{
+  "form_id": "FOC65",
+  "required_fields": [
+    "party_name",
+    "case_number",
+    "court_name",
+    "requested_relief",
+    "date"
+  ],
+  "field_map": {
+    "PARTY_NAME": "{party_name}",
+    "CASE_NUMBER": "{case_number}",
+    "COURT_NAME": "{court_name}",
+    "REQUESTED_RELIEF": "{requested_relief}",
+    "DATE": "{date}"
+  }
+}

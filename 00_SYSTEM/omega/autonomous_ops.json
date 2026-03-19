@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0.0",
+  "description": "LitigationOS Phase 10 CONVERGE — Autonomous Operation Configuration",
+  "updated_at": "2025-01-01T00:00:00Z",
+
+  "cycles": {
+    "daily": {
+      "schedule": "0 6 * * *",
+      "description": "Daily maintenance cycle — runs every morning at 06:00",
+      "steps": [
+        {
+          "order": 1,
+          "name": "ingest",
+          "action": "Run document ingestion pipeline",
+          "script": "00_SYSTEM/pipeline/ingest_pipeline.py",
+          "timeout_seconds": 600,
+          "on_failure": "log_and_continue"
+        },
+        {
+          "order": 2,
+          "name": "re_score",
+          "action": "Re-run OMEGA scoring engine on all active cases",
+          "script": "00_SYSTEM/omega/omega_score_engine.py",
+          "timeout_seconds": 300,
+          "on_failure": "log_and_continue"
+        },
+        {
+          "order": 3,
+          "name": "check_deadlines",
+          "action": "Scan court deadlines within 30-day window",
+          "script": "00_SYSTEM/omega/filing_executor.py",
+          "timeout_seconds": 120,
+          "on_failure": "alert_and_continue"
+        },
+        {
+          "order": 4,
+          "name": "revenue_check",
+          "action": "Update MRR/ARR from payment provider webhooks",
+          "script": "00_SYSTEM/engines/revenue_sync.py",
+          "timeout_seconds": 120,
+          "on_failure": "log_and_continue"
+        },
+        {
+          "order": 5,
+          "name": "health_check",
+          "action": "Run system health: DB, disk, agents, anomaly detection",
+          "script": "00_SYSTEM/omega/self_evolution.py",
+          "timeout_seconds": 180,
+          "on_failure": "alert_and_escalate"
+        },
+        {
+          "order": 6,
+          "name": "checkpoint",
+          "action": "Save daily snapshot to omega_evolution_config",
+          "script": "00_SYSTEM/omega/observability.py",
+          "timeout_seconds": 120,
+          "on_failure": "log_and_continue"
+        }
+      ]
+    },
+
+    "weekly": {
+      "schedule": "0 5 * * 1",
+      "description": "Weekly deep cycle — runs Monday at 05:00",
+      "steps": [
+        {
+          "order": 1,
+          "name": "full_pipeline",
+          "action": "Run complete pipeline (all phases)",
+          "script": "00_SYSTEM/omega/self_evolution.py",
+          "args": ["--full-pipeline"],
+          "timeout_seconds": 1800,
+          "on_failure": "alert_and_escalate"
+        },
+        {
+          "order": 2,
+          "name": "distillation_report",
+          "action": "Generate weekly distillation report across all evidence",
+          "script": "00_SYSTEM/distill/distill_weekly.py",
+          "timeout_seconds": 600,
+          "on_failure": "log_and_continue"
+        },
+        {
+          "order": 3,
+          "name": "revenue_report",
+          "action": "Generate weekly revenue summary and trend analysis",
+          "script": "00_SYSTEM/engines/revenue_report.py",
+          "timeout_seconds": 300,
+          "on_failure": "log_and_continue"
+        },
+        {
+          "order": 4,
+          "name": "filings_review",
+          "action": "Review all pending filings across forums, update statuses",
+          "script": "00_SYSTEM/omega/filing_executor.py",
+          "args": ["--review-all"],
+          "timeout_seconds": 300,
+          "on_failure": "alert_and_continue"
+        },
+        {
+          "order": 5,
+          "name": "agent_review",
+          "action": "Audit agent fleet: uptime, error rates, restart history",
+          "script": "00_SYSTEM/agents/agent_audit.py",
+          "timeout_seconds": 300,
+          "on_failure": "log_and_continue"
+        }
+      ]
+    },
+
+    "monthly": {
+      "schedule": "0 4 1 * *",
+      "description": "Monthly strategic cycle — runs 1st of month at 04:00",
+      "steps": [
+        {
+          "order": 1,
+          "name": "full_audit",
+          "action": "Complete system audit: data integrity, table schemas, orphan records",
+          "script": "00_SYSTEM/tools/full_audit.py",
+          "timeout_seconds": 3600,
+          "on_failure": "alert_and_escalate"
+        },
+        {
+          "order": 2,
+          "name": "recalibration",
+          "action": "Recalibrate OMEGA weights based on 30-day filing outcomes",
+          "script": "00_SYSTEM/omega/self_evolution.py",
+          "args": ["--recalibrate"],
+          "timeout_seconds": 600,
+          "on_failure": "alert_and_escalate"
+        },
+        {
+          "order": 3,
+          "name": "forecast",
+          "action": "Generate 90-day revenue and case outcome forecast",
+          "script": "00_SYSTEM/engines/forecast_engine.py",
+          "timeout_seconds": 600,
+          "on_failure": "log_and_continue"
+        },
+        {
+          "order": 4,
+          "name": "strategic_review",
+          "action": "Compile monthly strategic brief: wins, losses, adjustments needed",
+          "script": "00_SYSTEM/distill/strategic_review.py",
+          "timeout_seconds": 600,
+          "on_failure": "log_and_continue"
+        }
+      ]
+    }
+  },
+
+  "alert_escalation": {
+    "description": "Escalation rules for alerts generated during autonomous cycles",
+    "levels": [
+      {
+        "level": 1,
+        "name": "log_and_continue",
+        "action": "Write to omega_evolution_log, continue next step",
+        "notify": false,
+        "retry": false
+      },
+      {
+        "level": 2,
+        "name": "alert_and_continue",
+        "action": "Write alert to omega_alerts, fire webhook, continue",
+        "notify": true,
+        "notify_channel": "omega_alerts_table",
+        "retry": false
+      },
+      {
+        "level": 3,
+        "name": "alert_and_escalate",
+        "action": "Write alert, fire webhook, halt cycle, await manual review",
+        "notify": true,
+        "notify_channel": "omega_alerts_table",
+        "retry": true,
+        "max_retries": 2,
+        "retry_delay_seconds": 60
+      },
+      {
+        "level": 4,
+        "name": "emergency_halt",
+        "action": "Stop all autonomous operations, trigger emergency protocol",
+        "notify": true,
+        "notify_channel": "omega_alerts_table",
+        "trigger_script": "00_SYSTEM/omega/emergency_protocol.py",
+        "retry": false
+      }
+    ],
+    "severity_to_level": {
+      "LOW": 1,
+      "MEDIUM": 2,
+      "HIGH": 3,
+      "CRITICAL": 4
+    }
+  },
+
+  "global_settings": {
+    "max_concurrent_steps": 1,
+    "log_retention_days": 90,
+    "checkpoint_retention_days": 365,
+    "auto_restart_on_boot": true,
+    "maintenance_window": {
+      "start": "03:00",
+      "end": "07:00",
+      "timezone": "America/New_York"
+    }
+  }
+}

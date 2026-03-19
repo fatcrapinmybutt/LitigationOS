@@ -1,0 +1,19 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/checkout/route": "app/api/checkout/route.js",
+  "/api/v1/cases/route": "app/api/v1/cases/route.js",
+  "/api/v1/claims/route": "app/api/v1/claims/route.js",
+  "/api/v1/dashboard/route": "app/api/v1/dashboard/route.js",
+  "/api/v1/evidence/route": "app/api/v1/evidence/route.js",
+  "/api/v1/health/route": "app/api/v1/health/route.js",
+  "/api/v1/omega/route": "app/api/v1/omega/route.js",
+  "/api/v1/stats/route": "app/api/v1/stats/route.js",
+  "/api/webhook/route": "app/api/webhook/route.js",
+  "/auth/login/page": "app/auth/login/page.js",
+  "/auth/signup/page": "app/auth/signup/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/filings/page": "app/filings/page.js",
+  "/page": "app/page.js",
+  "/pricing/page": "app/pricing/page.js"
+}

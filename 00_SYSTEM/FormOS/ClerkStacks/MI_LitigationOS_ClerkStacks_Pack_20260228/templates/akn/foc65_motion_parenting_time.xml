@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <motion name="motion">
+    <meta>
+      <identification source="#litigationos">
+        <FRBRWork>
+          <FRBRthis value="urn:akn:us-mi:case:{caseNumber}!motion.parenting_time"/>
+          <FRBRuri value="urn:akn:us-mi:case:{caseNumber}"/>
+          <FRBRdate date="2026-02-28" name="Generation"/>
+          <FRBRauthor href="#movingParty"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="urn:akn:us-mi:case:{caseNumber}!motion.parenting_time@en"/>
+          <FRBRuri value="urn:akn:us-mi:case:{caseNumber}!motion.parenting_time"/>
+          <FRBRdate date="2026-02-28" name="Generation"/>
+          <FRBRauthor href="#movingParty"/>
+          <FRBRlanguage language="en"/>
+        </FRBRExpression>
+      </identification>
+      <references source="#litigationos">
+        <TLCOrganization eId="court" href="urn:akn:us-mi:court:trial" showAs="{courtName}"/>
+        <TLCPerson eId="movingParty" href="urn:akn:us-mi:person:{movingPartyId}" showAs="{movingPartyName}"/>
+        <TLCPerson eId="respondingParty" href="urn:akn:us-mi:person:{respondingPartyId}" showAs="{respondingPartyName}"/>
+        <TLCDocument eId="authority_foc_65" href="urn:akn:us-mi:form:foc.65" showAs="FOC 65"/>
+        <TLCDocument eId="authority_mcr_2_119" href="urn:akn:us-mi:rule:mcr.2.119" showAs="MCR 2.119"/>
+      </references>
+    </meta>
+
+    <mainBody>
+      <p eId="p1">NOW COMES the Moving Party and moves this Court for an order regarding parenting time consistent with applicable Michigan law and SCAO Form FOC 65.</p>
+
+      <p eId="facts_hdr">FACTS</p>
+      <p eId="facts_1">[Insert concise chronological incidents: date → order → denial/interference → impact; cite attachments by attachment number and file name.]</p>
+
+      <p eId="law_hdr">LEGAL STANDARD</p>
+      <p eId="law_1">Motion practice requirements, including briefing and service timing defaults, are governed by MCR 2.119 unless a different schedule is set by rule or court order.</p>
+
+      <p eId="arg_hdr">ARGUMENT</p>
+      <p eId="arg_1">[Apply each incident/pattern to the specific relief requested; tether remedies to best interests and compliance needs.]</p>
+
+      <p eId="relief_hdr">RELIEF REQUESTED</p>
+      <p eId="relief_1">[Enforcement, make-up parenting time, clarification, and any other just relief.]</p>
+
+      <p eId="sig_hdr">SIGNATURE</p>
+      <p eId="sig_1">/s/ {movingPartyName}</p>
+
+      <p eId="cos_hdr">CERTIFICATE/PROOF OF SERVICE</p>
+      <p eId="cos_1">[Insert date, method (mail/delivery/e-service), and recipients. Confirm addresses per last-known address rules as applicable.]</p>
+
+      <p eId="idx_hdr">INDEX TO ATTACHMENTS</p>
+      <p eId="idx_1">Attachment 1 — Incident Narrative — Attachment_1_Incident_Narrative_for_FOC65.pdf</p>
+      <p eId="idx_2">Attachment 2 — [Title] — Attachment_2_[FileName].pdf</p>
+    </mainBody>
+  </motion>
+</akomaNtoso>

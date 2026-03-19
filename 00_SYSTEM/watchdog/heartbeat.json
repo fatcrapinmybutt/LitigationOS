@@ -1,0 +1,16 @@
+{
+  "status": "HEALTHY",
+  "timestamp": "2026-02-28T15:28:47.057386",
+  "memory_mb": 18.0,
+  "errors_1h": 4,
+  "errors_5m": 2,
+  "error_rate_by_class": {
+    "git_unknown_option": 2,
+    "rg_bad_flag": 2
+  },
+  "sessions_created": 0,
+  "sessions_destroyed": 0,
+  "warnings": [],
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.14.3"
+}

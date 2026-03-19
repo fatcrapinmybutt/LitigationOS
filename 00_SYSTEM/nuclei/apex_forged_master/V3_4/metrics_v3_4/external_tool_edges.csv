@@ -1,0 +1,3 @@
+source,target,type,props_json
+schema_root,HFSPACE:Agents-MCP-Hackathon/KGB-mcp,EXTENDS_WITH,"{""ts"": ""20260208_2132"", ""note"": ""External tooling registry node""}"
+schema_root,HFSPACE:dippatel1994/paperbanana,EXTENDS_WITH,"{""ts"": ""20260208_2132"", ""note"": ""External tooling registry node""}"

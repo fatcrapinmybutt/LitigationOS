@@ -1,0 +1,143 @@
+{
+  "version": "1.0.0",
+  "description": "LitigationOS Data Retention Policies",
+  "last_reviewed": "2025-01-01",
+  "policies": {
+    "evidence": {
+      "retention": "forever",
+      "retention_days": null,
+      "description": "All evidence, exhibits, and supporting materials are retained indefinitely",
+      "justification": "Legal hold requirements — evidence must never be automatically deleted",
+      "auto_delete": false,
+      "applies_to": [
+        "evidence files",
+        "evidence metadata",
+        "chain of custody records",
+        "evidence categorization",
+        "OMEGA scores for evidence"
+      ],
+      "exceptions": "None — evidence deletion requires explicit manual authorization with audit trail"
+    },
+    "case_data": {
+      "retention": "forever",
+      "retention_days": null,
+      "description": "Case records, filings, and legal documents retained indefinitely",
+      "justification": "Case materials may be needed for appeals, related cases, or reference",
+      "auto_delete": false,
+      "applies_to": [
+        "case records",
+        "court filings",
+        "legal documents",
+        "authority citations",
+        "timeline events"
+      ]
+    },
+    "knowledge_graph": {
+      "retention": "forever",
+      "retention_days": null,
+      "description": "Entity relationships and graph data retained indefinitely",
+      "justification": "Graph connections may reveal cross-case patterns over time",
+      "auto_delete": false,
+      "applies_to": [
+        "Neo4j nodes and relationships",
+        "entity metadata",
+        "authority relationships"
+      ]
+    },
+    "omega_scores": {
+      "retention": "forever",
+      "retention_days": null,
+      "description": "All OMEGA score calculations and history retained indefinitely",
+      "justification": "Score history provides audit trail of evidence evaluation over time",
+      "auto_delete": false,
+      "applies_to": [
+        "current scores",
+        "score history",
+        "score dimensions",
+        "recalculation logs"
+      ]
+    },
+    "application_logs": {
+      "retention": "90_days",
+      "retention_days": 90,
+      "description": "Application logs retained for 90 days",
+      "justification": "Sufficient for debugging and incident investigation",
+      "auto_delete": true,
+      "delete_method": "scheduled_cleanup",
+      "cleanup_schedule": "0 4 * * 0",
+      "applies_to": [
+        "application server logs",
+        "API request logs",
+        "error logs",
+        "performance logs"
+      ]
+    },
+    "audit_logs": {
+      "retention": "forever",
+      "retention_days": null,
+      "description": "Security and audit logs retained indefinitely",
+      "justification": "Required for compliance, security review, and legal accountability",
+      "auto_delete": false,
+      "applies_to": [
+        "authentication events",
+        "authorization changes",
+        "data access logs",
+        "agent action logs",
+        "evidence modification logs"
+      ]
+    },
+    "backup_files": {
+      "daily": {
+        "retention": "14_days",
+        "retention_days": 14,
+        "description": "Daily incremental backups retained for 14 days",
+        "auto_delete": true
+      },
+      "weekly": {
+        "retention": "90_days",
+        "retention_days": 90,
+        "description": "Weekly full backups retained for 90 days",
+        "auto_delete": true
+      }
+    },
+    "temporary_files": {
+      "retention": "7_days",
+      "retention_days": 7,
+      "description": "Temporary processing files deleted after 7 days",
+      "justification": "Intermediate processing artifacts have no long-term value",
+      "auto_delete": true,
+      "delete_method": "scheduled_cleanup",
+      "cleanup_schedule": "0 5 * * *",
+      "applies_to": [
+        "upload staging files",
+        "PDF extraction intermediates",
+        "OCR temporary outputs",
+        "AI analysis cache",
+        "search index rebuild artifacts"
+      ]
+    },
+    "session_data": {
+      "retention": "30_days",
+      "retention_days": 30,
+      "description": "User session data retained for 30 days after last activity",
+      "auto_delete": true,
+      "applies_to": [
+        "user sessions",
+        "authentication tokens",
+        "temporary preferences",
+        "search history"
+      ]
+    }
+  },
+  "legal_hold_override": {
+    "description": "When a legal hold is active, ALL data retention policies are suspended — nothing is deleted",
+    "applies_to": "all_policies",
+    "activation": "manual",
+    "requires_authorization": true
+  },
+  "deletion_audit": {
+    "enabled": true,
+    "description": "All automated deletions are logged with timestamp, data category, and count",
+    "log_retention": "forever"
+  }
+}

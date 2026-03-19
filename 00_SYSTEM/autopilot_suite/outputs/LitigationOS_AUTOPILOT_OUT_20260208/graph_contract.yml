@@ -1,0 +1,125 @@
+contract_id: LitigationOS_Autopilot_GraphContract
+contract_version: 1.0.0
+created_at: '2026-02-08T21:54:01Z'
+import_files:
+  nodes_core_csv: neo4j_nodes_core.csv
+  edges_core_csv: neo4j_edges_core.csv
+  node_props_jsonl_gz: node_props.jsonl.gz
+  edge_props_jsonl_gz: edge_props.jsonl.gz
+  graphml: graph_core.graphml
+  constraints: neo4j_constraints.cypher
+id_policy:
+  node_id_property: uid
+  edge_id_property: uid
+  determinism: stable_sha1_short
+  notes: All nodes carry :Entity and uid. Edges carry uid and are stable-hash derived.
+node_types_top:
+- node_type: Node
+  count: 71031
+- node_type: GlossaryTerm
+  count: 48960
+- node_type: File
+  count: 38387
+- node_type: Authority
+  count: 37334
+- node_type: Violation
+  count: 2945
+- node_type: ContentHash
+  count: 2364
+- node_type: AuthorityCiteStub
+  count: 1163
+- node_type: QuoteAtom
+  count: 874
+- node_type: Fact
+  count: 528
+- node_type: Module
+  count: 500
+- node_type: AuthorityCandidate
+  count: 141
+- node_type: CaselawCandidate
+  count: 141
+- node_type: ContradictionItem
+  count: 141
+- node_type: HarmCandidate
+  count: 141
+- node_type: NextAction
+  count: 141
+- node_type: RemedyCandidate
+  count: 141
+- node_type: VehicleCandidate
+  count: 141
+- node_type: PropertyDef
+  count: 137
+- node_type: CatalogItem
+  count: 104
+- node_type: EdgeTypeDef
+  count: 88
+- node_type: Remedy
+  count: 77
+- node_type: NodeTypeDef
+  count: 67
+- node_type: URL
+  count: 67
+- node_type: AuthorityHub
+  count: 50
+- node_type: Case
+  count: 39
+- node_type: Directory
+  count: 31
+- node_type: Extension
+  count: 29
+- node_type: EnumDef
+  count: 17
+- node_type: AttachmentRecord
+  count: 7
+- node_type: SourceRef
+  count: 7
+- node_type: Corpus
+  count: 1
+- node_type: CorpusExcerpt
+  count: 1
+rel_types_top:
+- rel_type: RELATED_TO
+  count: 175512
+- rel_type: CITES_AUTHORITY_UNRESOLVED
+  count: 2340
+- rel_type: QUOTE_FROM_SOURCE
+  count: 866
+- rel_type: CITES_AUTHORITY_RESOLVED_EXACT
+  count: 238
+- rel_type: TERM_CHILD_OF
+  count: 204
+- rel_type: AUTHORITY_SUPPORTED_BY_CASELAW_CANDIDATE
+  count: 141
+- rel_type: CASELAW_SUPPORTS_ACTION
+  count: 141
+- rel_type: CONTRADICTION_FROM_SOURCE
+  count: 141
+- rel_type: GAP_IMPLICATES_HARM_CANDIDATE
+  count: 141
+- rel_type: REMEDY_FOR_GAP
+  count: 141
+- rel_type: REMEDY_IMPLIES_VEHICLE_CANDIDATE
+  count: 141
+- rel_type: VEHICLE_REQUIRES_AUTHORITY_CANDIDATE
+  count: 141
+- rel_type: HAS_EXCERPT
+  count: 1
+chain_contract:
+  goal: violation/gap -> harm -> remedy -> vehicle -> authority -> caselaw -> action
+  nodes:
+    gap: ContradictionItem
+    harm: HarmCandidate
+    remedy: RemedyCandidate
+    vehicle: VehicleCandidate
+    authority: AuthorityCandidate
+    caselaw: CaselawCandidate
+    action: NextAction
+  edges:
+  - GAP_IMPLICATES_HARM_CANDIDATE
+  - REMEDY_FOR_GAP
+  - REMEDY_IMPLIES_VEHICLE_CANDIDATE
+  - VEHICLE_REQUIRES_AUTHORITY_CANDIDATE
+  - AUTHORITY_SUPPORTED_BY_CASELAW_CANDIDATE
+  - CASELAW_SUPPORTS_ACTION
+  status: fail_soft_candidates

@@ -1,0 +1,410 @@
+{
+  "generated_utc": "2026-01-24T01:51:15Z",
+  "files": [
+    {
+      "path": "AI/README.md",
+      "bytes": 333,
+      "sha256": "2cdc496af58ece90db3fe26a6556f2a5a8ded59481d1778674deafb838eca5e8"
+    },
+    {
+      "path": "AI/__init__.py",
+      "bytes": 39,
+      "sha256": "2e1d857307200ae50d4d1e1ce39114d18fd4a573726c3338ebdef34270985039"
+    },
+    {
+      "path": "AI/__pycache__/__init__.cpython-311.pyc",
+      "bytes": 199,
+      "sha256": "9894569bf26ebefeb0a0e5ebd48ba7f0f7f4ae84e69e93716c1adde5ba56e890"
+    },
+    {
+      "path": "AI/__pycache__/ai_semantic.cpython-311.pyc",
+      "bytes": 3064,
+      "sha256": "63360709fe6f2fb213a51470e053d86987b628106c98188e90a66d744834abe4"
+    },
+    {
+      "path": "AI/__pycache__/category_suggester.cpython-311.pyc",
+      "bytes": 2562,
+      "sha256": "cb20bfac3b869d027b04b1a28436a633cb98fb9a37e1cfc57f5f8ef9768cb446"
+    },
+    {
+      "path": "AI/__pycache__/embedding_engine.cpython-311.pyc",
+      "bytes": 4294,
+      "sha256": "bffd9fb0b248fabeb1b94e8e9a0a54759fc7a5ec43d860c1b0bb413f12774ad8"
+    },
+    {
+      "path": "AI/__pycache__/model_manager.cpython-311.pyc",
+      "bytes": 2816,
+      "sha256": "8a246e8b8b5a6de44904c9b68cc8c177ac7ffd9831cac1c04b02a10ea010a540"
+    },
+    {
+      "path": "AI/ai_semantic.py",
+      "bytes": 1268,
+      "sha256": "c74f2fe5513be1b95d327a6b1b54f24cc4480ff89f3562077ff0f57d6c51520a"
+    },
+    {
+      "path": "AI/category_suggester.py",
+      "bytes": 960,
+      "sha256": "366a08b834c360f3cf4ec50692fbdcbbe1883bb2b4019cbfc42ee2b90569a96e"
+    },
+    {
+      "path": "AI/embedding_engine.py",
+      "bytes": 1808,
+      "sha256": "9cacb32d995dd66070c868e62aff034070c03b18d16d174ab06e500bbd79c0f3"
+    },
+    {
+      "path": "AI/model_manager.py",
+      "bytes": 1455,
+      "sha256": "4e278346ec6201181e73159cef5e543e126fe5bf94cf978dfa70732275ddec5e"
+    },
+    {
+      "path": "AI/model_registry.json",
+      "bytes": 442,
+      "sha256": "647ef7c016fefa989b9406bc07be9bb70bea432fd9db53863e02ac692cf27542"
+    },
+    {
+      "path": "BUILD_EXE.cmd",
+      "bytes": 910,
+      "sha256": "4e44c16ecbd2010c731777ff17e0b7a37d2b3da53c089ab26d97318122a0a5c3"
+    },
+    {
+      "path": "BUILD_EXE_QT.cmd",
+      "bytes": 930,
+      "sha256": "d5057837048f51770f041c6103884b2daab0ba01e35f54b21114192dcd72cfda"
+    },
+    {
+      "path": "GDRIVE/00_SETUP.cmd",
+      "bytes": 583,
+      "sha256": "71dd370a63196da90dd1f05a2d7c4836c577b41fefbb6904de0e3b15327a0629"
+    },
+    {
+      "path": "GDRIVE/10_PLAN.cmd",
+      "bytes": 224,
+      "sha256": "b11d1cedd9d94148d2e3bc3b13fc556748324984b1af51d3e900beb493ee8752"
+    },
+    {
+      "path": "GDRIVE/15_VALIDATE.cmd",
+      "bytes": 183,
+      "sha256": "c734716967c26234bd977f2f4cf4e568b5708a6e5f575dfe4e71fe3e210e1a82"
+    },
+    {
+      "path": "GDRIVE/20_APPLY.cmd",
+      "bytes": 325,
+      "sha256": "996f5487e85d3071d1c3ff021c7a541ecb59a09f7391f53409c74a3b135d13ef"
+    },
+    {
+      "path": "GDRIVE/30_SELF_TEST.cmd",
+      "bytes": 309,
+      "sha256": "a69fa3f0b2ac94fcf76ff21b25d5ee6a5e03663ef0e2ed72e5528fc40ac8efbd"
+    },
+    {
+      "path": "GDRIVE/40_UNDO.cmd",
+      "bytes": 349,
+      "sha256": "931ab6aadbc767139a94f7be21002e9e1b3d971faa9c56a550572df9ae5b9014"
+    },
+    {
+      "path": "GDRIVE/README.md",
+      "bytes": 690,
+      "sha256": "ff524063308355f0d7354e58d70fbbc6e493e4f1128510fe830799d0312332ea"
+    },
+    {
+      "path": "GDRIVE/_MOCK_RUN/ledger.jsonl",
+      "bytes": 905,
+      "sha256": "3fd0d2d8ebb232c53af680fb79fe9b743a942fb455c542008823da525c19e360"
+    },
+    {
+      "path": "GDRIVE/_MOCK_RUN/undo.json",
+      "bytes": 461,
+      "sha256": "ff4f40d2ff32043eae892597cb245e6ac0db70dce0f6ad65408e08c624e8da1d"
+    },
+    {
+      "path": "GDRIVE/__pycache__/gdrive_scoped_organizer.cpython-311.pyc",
+      "bytes": 41579,
+      "sha256": "7b158a58cc09b72f68f2795ff1e7bef0d644bda67fc094a91454e53aa19ad470"
+    },
+    {
+      "path": "GDRIVE/__pycache__/rename_test.cpython-311.pyc",
+      "bytes": 5592,
+      "sha256": "919f45405230bf3a919f0b082f4cf611cb748de0a2b6bcdfa62a5ed4b3821190"
+    },
+    {
+      "path": "GDRIVE/__pycache__/self_test.cpython-311.pyc",
+      "bytes": 1663,
+      "sha256": "42637e1d0f3b1672afd4ac2691af3c0dea8c84833b39a0aa0167484161afd82b"
+    },
+    {
+      "path": "GDRIVE/buckets.json",
+      "bytes": 819,
+      "sha256": "2e3ce8c60bbe4832d6481fe5999b465f69fb78d2dbe1451522ffb9ee6896cc80"
+    },
+    {
+      "path": "GDRIVE/config.yaml",
+      "bytes": 999,
+      "sha256": "f059c33c95b7b9fdd6218b726d6fd2cff9de3c70911c79df06279483d31838bb"
+    },
+    {
+      "path": "GDRIVE/gdrive_scoped_organizer.py",
+      "bytes": 25383,
+      "sha256": "e341bcd5851fcfdde17bf9827d288d91e1d0d2c6808d8bbc5cf309f6658172d7"
+    },
+    {
+      "path": "GDRIVE/rename_test.py",
+      "bytes": 2809,
+      "sha256": "5b8ebf8bf4be6dc7fd0087f258d507cfc0c5424e4a942807d36aae8307eb6072"
+    },
+    {
+      "path": "GDRIVE/requirements.txt",
+      "bytes": 122,
+      "sha256": "8a82a4cf39a920d3afc76487693b690f91b6c1504b4960dbd3bf38d4850a36f1"
+    },
+    {
+      "path": "GDRIVE/self_test.py",
+      "bytes": 698,
+      "sha256": "0a19fe8487e9d105598b4e5d4725aa47647ddd7bcdb995519adaf15fc0430fd1"
+    },
+    {
+      "path": "LAUNCH_ME_FIRST.cmd",
+      "bytes": 672,
+      "sha256": "08fe8cc78c61df7f65d98ea6c8c88d67e57f84e6c30c5e1df5d0525e453a1ec6"
+    },
+    {
+      "path": "LAUNCH_STUDIO.cmd",
+      "bytes": 548,
+      "sha256": "08e68f44558c8ef6f9b933a608e99ac51e30068d5ac54340b7d4ad1e93efe529"
+    },
+    {
+      "path": "LAUNCH_STUDIO_QT.cmd",
+      "bytes": 544,
+      "sha256": "a43bf342b5b95e5aefba0301349dcf8f57046b55888e22c3af5cea665d60fcdf"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1049,
+      "sha256": "e0f57040306dad0d9dcceb0778ebc879aa15ba190532ce145b7804e38429f313"
+    },
+    {
+      "path": "LOCAL/00_SETUP.cmd",
+      "bytes": 561,
+      "sha256": "431e8e381181d38009faa2787bde4ceb7b6fbfeaf59066394850e2b18564a0fe"
+    },
+    {
+      "path": "LOCAL/10_PLAN.cmd",
+      "bytes": 127,
+      "sha256": "647db9352614a0e5d14b44c0e2ee395038f983a9d34e39d9247c9dc3c897274c"
+    },
+    {
+      "path": "LOCAL/10_RUN_PLAN.cmd",
+      "bytes": 127,
+      "sha256": "647db9352614a0e5d14b44c0e2ee395038f983a9d34e39d9247c9dc3c897274c"
+    },
+    {
+      "path": "LOCAL/15_VALIDATE.cmd",
+      "bytes": 513,
+      "sha256": "c3cfc467662dfc3e26da325a65f18f432775f12eada07a13df9d67803f652b33"
+    },
+    {
+      "path": "LOCAL/15_VALIDATE_PLAN.cmd",
+      "bytes": 513,
+      "sha256": "c3cfc467662dfc3e26da325a65f18f432775f12eada07a13df9d67803f652b33"
+    },
+    {
+      "path": "LOCAL/20_APPLY.cmd",
+      "bytes": 739,
+      "sha256": "5454ceab5257d4f11ba1edbcff032e7fb404c57ec7f2707d412ed19bd331c7bc"
+    },
+    {
+      "path": "LOCAL/20_RUN_APPLY.cmd",
+      "bytes": 739,
+      "sha256": "5454ceab5257d4f11ba1edbcff032e7fb404c57ec7f2707d412ed19bd331c7bc"
+    },
+    {
+      "path": "LOCAL/30_SELF_TEST.cmd",
+      "bytes": 194,
+      "sha256": "f067b1559ab5e354d93f9297313d3f39474be6b198f72b1f08fe649b3130bb55"
+    },
+    {
+      "path": "LOCAL/40_UNDO.cmd",
+      "bytes": 685,
+      "sha256": "1944747f254b950a05ca1f8ad455fb59757b8eebf791b6906aaf7edf2f75cd04"
+    },
+    {
+      "path": "LOCAL/40_UNDO_LAST.cmd",
+      "bytes": 685,
+      "sha256": "1944747f254b950a05ca1f8ad455fb59757b8eebf791b6906aaf7edf2f75cd04"
+    },
+    {
+      "path": "LOCAL/LICENSE.txt",
+      "bytes": 1073,
+      "sha256": "f404e97ae7cdc709c37fa437139f646e16bdb08716b20e8ca19465f5100ed90a"
+    },
+    {
+      "path": "LOCAL/MANIFEST.json",
+      "bytes": 586,
+      "sha256": "bc48677eef43f1a4691503f64e3b7ce7477ad8a6d210fb23d0e4ae82998cd81f"
+    },
+    {
+      "path": "LOCAL/README.md",
+      "bytes": 1070,
+      "sha256": "298c1ddac54f214ac41420a71d2da56e88b97cd83d6f9a8e7aca59c344828b72"
+    },
+    {
+      "path": "LOCAL/SANDBOX_PROOF.json",
+      "bytes": 1101,
+      "sha256": "3b335dc0b25dbfe3f030cd1e0d66bb77334755a8edf325f08b9404922b15aa95"
+    },
+    {
+      "path": "LOCAL/__pycache__/ai_organizer_stack.cpython-311.pyc",
+      "bytes": 41098,
+      "sha256": "ac55f856f60616fe9dea0a3692582745d6fa7d19ed42c14109fb98b37e2f7575"
+    },
+    {
+      "path": "LOCAL/__pycache__/download_models.cpython-311.pyc",
+      "bytes": 2745,
+      "sha256": "68e04be4dbbb6d474eff5ae701391bdf5f2d4b71d3968a280f8ce05d18a23267"
+    },
+    {
+      "path": "LOCAL/__pycache__/mbp_worldfirst_builder.cpython-311.pyc",
+      "bytes": 4238,
+      "sha256": "6bf0862c07717e00dbdf495016ee2770aca925ae8d705e0ea384a8c378f900bc"
+    },
+    {
+      "path": "LOCAL/__pycache__/plan_validator.cpython-311.pyc",
+      "bytes": 4273,
+      "sha256": "897646622bd4dea0d510704304a635be3d0bfe2d7287eda7a40c1919b18fbd55"
+    },
+    {
+      "path": "LOCAL/__pycache__/self_test.cpython-311.pyc",
+      "bytes": 5719,
+      "sha256": "80bb8d109367bbc6148acd3cd06feac599a27027a4b58335d6778cd70eb0f932"
+    },
+    {
+      "path": "LOCAL/__pycache__/undo_last.cpython-311.pyc",
+      "bytes": 3899,
+      "sha256": "371637d9f1dc3c161fbdea112b86dbdfa3f5b49e9b1d7c066a81b4dd7e8ab976"
+    },
+    {
+      "path": "LOCAL/ai_organizer_stack.py",
+      "bytes": 22537,
+      "sha256": "36762732ed6fd21a89355c9ca99f7464f713480354d21ffe0cedc7d156c50f02"
+    },
+    {
+      "path": "LOCAL/config.yaml",
+      "bytes": 1637,
+      "sha256": "7f2c96adc126b62b37e5a58075f513b3080bfe211c53d8a202c56b3aa71513de"
+    },
+    {
+      "path": "LOCAL/download_models.py",
+      "bytes": 1629,
+      "sha256": "8e1b4cc0f6a002225a2bbdb0936f29c6ae8d9d6758e1ca7d67a1e4da902b568f"
+    },
+    {
+      "path": "LOCAL/mbp_worldfirst_builder.py",
+      "bytes": 1629,
+      "sha256": "18e9b423cdf6fc687c5c383b4f43502c7c063cce4e6940330b51654de8ca5c2d"
+    },
+    {
+      "path": "LOCAL/models.json",
+      "bytes": 495,
+      "sha256": "c7aad012a3bbb138e723064e98c24e13d1c9e095859b4a56b56af7cc1d69a9d2"
+    },
+    {
+      "path": "LOCAL/plan_validator.py",
+      "bytes": 2135,
+      "sha256": "1b971283155dfead7a83159c65655d35338ffaea80635b76022254583f01f66c"
+    },
+    {
+      "path": "LOCAL/requirements.txt",
+      "bytes": 186,
+      "sha256": "4e284d463154c55bc937b803ea82ccc43e735951f483e17c8647943b434c67a6"
+    },
+    {
+      "path": "LOCAL/self_test.py",
+      "bytes": 2968,
+      "sha256": "51ab0b8799b288a29adb6a84bddf4036421d7572b21fc7c3b78cfcf7cd1a535c"
+    },
+    {
+      "path": "LOCAL/undo_last.py",
+      "bytes": 1949,
+      "sha256": "b2b12e673c58852c9c622ae48a37a6061b4b52839f1f6ae6325ed74d42c462cb"
+    },
+    {
+      "path": "MAKE_ICON.py",
+      "bytes": 801,
+      "sha256": "e16629d1c481b058555f2a18e43870f2d24cfb84ff3d4800cd48bc3b68846274"
+    },
+    {
+      "path": "MAKE_PORTABLE_RELEASE.cmd",
+      "bytes": 458,
+      "sha256": "93aabb1b03fd4e7ac95c80e5b59ec1eedf5f36749d31af5324f7fa23bae3e63d"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 11377,
+      "sha256": "d7b79231eb48dbbb0c8c8cdbd42ff31f24e26b2fe7e070d3c3290def5a4033b6"
+    },
+    {
+      "path": "OrganizerStudio.spec",
+      "bytes": 905,
+      "sha256": "6ef8c4dafec18280801a41ed2cfda8208b7bf732421d0616dfbb7f3184d21a72"
+    },
+    {
+      "path": "OrganizerStudio_GUI.py",
+      "bytes": 15331,
+      "sha256": "7611200b192d6f75acf8449557bf5cda5cbe9aa817a3639ca2d98271fe316b99"
+    },
+    {
+      "path": "OrganizerStudio_Qt.py",
+      "bytes": 20837,
+      "sha256": "2c280c9cddf7c6d60d946bafbecc4e9d7acc780519c65d8a8be1d7b407c713f9"
+    },
+    {
+      "path": "OrganizerStudio_Qt.spec",
+      "bytes": 1097,
+      "sha256": "3b333e99782dc7e37d9a2b3ec8c242d6c5515c0137f4b3241f82f9f2b57c2e2f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1825,
+      "sha256": "5947efbe5a6c92c5eb9aafb6de02d2c880e7944f2ce8fbae3bf36625e48c8475"
+    },
+    {
+      "path": "SANDBOX_PROOF.json",
+      "bytes": 206,
+      "sha256": "33fa4ac681d974c3e24134ea13fa741fad5b832b107857af23e266a2e0b4f735"
+    },
+    {
+      "path": "__pycache__/MAKE_ICON.cpython-311.pyc",
+      "bytes": 1755,
+      "sha256": "1fdb0d631d85ef3b0db38fccd2fd2332dd0687d922986deabbd8003158fb0d36"
+    },
+    {
+      "path": "__pycache__/OrganizerStudio_GUI.cpython-311.pyc",
+      "bytes": 33279,
+      "sha256": "9984921b343d2caaa6cf72ee19ce72423edcfb450e81a1cb0bbbbf7c4999774d"
+    },
+    {
+      "path": "__pycache__/OrganizerStudio_Qt.cpython-311.pyc",
+      "bytes": 42689,
+      "sha256": "d26efefe451cbb00e9c83aee8533eeb5e495639785aaa787cfc2d8a3dd71bb6b"
+    },
+    {
+      "path": "assets/OrganizerStudio.ico",
+      "bytes": 204,
+      "sha256": "53f4bca6b4003212ed2e83f90513667f76a465f1e090da0ef411dd8af07606f8"
+    },
+    {
+      "path": "requirements_ai.txt",
+      "bytes": 66,
+      "sha256": "0a552d459189598ff6e8d7c919269c0423f6684e5c37d79519d5a9a5047dce53"
+    },
+    {
+      "path": "requirements_min.txt",
+      "bytes": 150,
+      "sha256": "d696acde518e514c8669d9236a37afb7fec984651bbba2c0755a9d2af220e0e0"
+    },
+    {
+      "path": "requirements_studio.txt",
+      "bytes": 188,
+      "sha256": "85cf2c57d6bdef0aba6e4d7e540993b0c1f9a5eb55325a1791c72593c3b99a35"
+    }
+  ]
+}

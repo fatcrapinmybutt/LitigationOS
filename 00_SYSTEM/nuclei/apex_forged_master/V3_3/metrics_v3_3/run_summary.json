@@ -1,0 +1,28 @@
+{
+  "ts": "20260208_2124",
+  "inputs": {
+    "graphml": "NUCLEUS_APEX_SUPERGRAPH_20250908_030140.graphml.xml",
+    "bloom_html": "ETERNAL_BLOOM_MAX_(2) (1).html",
+    "nodes_normalized": "nodes_normalized.csv",
+    "neo4j_nodes": "neo4j_nodes.csv",
+    "des": "des.csv",
+    "contradiction_map": "CONTRADICTION_MAP.csv",
+    "emily_zip": "Emily_ExParte_Attachments.zip",
+    "meek2_zip": "MEEK2_CUSTODY_LITIGATION_PACK.zip"
+  },
+  "counts": {
+    "graphml_nodes": 40143,
+    "graphml_edges": 214090,
+    "graphml_kinds": 65,
+    "graphml_edge_types": 61,
+    "bloom_headings": 4119,
+    "transcript_pages": 8,
+    "exparte_images": 2,
+    "crosswalk_rows": 85
+  },
+  "artifacts": {
+    "poster_pdf": "NUCLEUS_APEX_POSTER_BLUEPRINT_V3_3_20260208_2124.pdf",
+    "cypher": "neo4j_import_snippets.cypher",
+    "builder": "mbp_worldfirst_builder_poster_v3_3_20260208_2124.py"
+  }
+}

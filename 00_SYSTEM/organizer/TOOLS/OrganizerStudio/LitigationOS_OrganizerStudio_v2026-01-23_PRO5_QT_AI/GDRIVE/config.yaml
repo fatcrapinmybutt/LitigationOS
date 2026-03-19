@@ -1,0 +1,31 @@
+# OrganizerStudio GDRIVE lane configuration
+# Scope to a folder subtree. Root is refused by the program.
+
+runs_root: "F:/LitigationOS/_OrganizeAI/GDRIVE"
+
+drive:
+  root_id: ""                         # set in GUI, or pass --root-id in CLI
+  credentials_json: "credentials.json" # OAuth client secrets file
+  token_json: "token.json"             # stored user token
+  page_size: 1000
+
+rename:
+  enabled: true
+  max_len: 140
+  mode: "safe_slug"
+
+denest:
+  enabled: true
+  max_chain: 6
+
+buckets:
+  enabled: true
+  mapping:
+    PDFS: [".pdf"]
+    DOCS: [".doc", ".docx", ".rtf", ".odt", ".txt", ".md"]
+    IMAGES: [".jpg", ".jpeg", ".png", ".gif", ".tif", ".tiff", ".webp"]
+    AUDIO: [".mp3", ".wav", ".m4a", ".aac", ".flac", ".ogg"]
+    VIDEO: [".mp4", ".mov", ".mkv", ".avi", ".webm"]
+    ARCHIVES: [".zip", ".7z", ".rar", ".tar", ".gz"]
+    DATA: [".csv", ".json", ".xml", ".yml", ".yaml", ".xlsx"]
+    CODE: [".py", ".js", ".ts", ".java", ".cs", ".go", ".rs", ".cpp", ".c", ".ps1", ".bat", ".cmd"]

@@ -1,0 +1,77 @@
+version: 1.2.0
+contract: LitigationOS_GraphContract
+purpose: >
+  Deterministic compiler contract for Neo4j + Bloom + Gephi emissions.
+  DRAFT mode is fail-soft; gates emit structured nodes/edges but do not block compilation.
+
+nodes:
+  - type: Authority
+    key: uid
+    required_props: [name]
+    optional_props: [citation, pinpoint, authority_class, source, props_json]
+  - type: Vehicle
+    key: uid
+    required_props: [name]
+    optional_props: [vehicle_class, lane, court_hint, source, props_json]
+  - type: Court
+    key: uid
+    required_props: [name]
+    optional_props: [court_level]
+  - type: ContradictionItem
+    key: uid
+    required_props: [cm_id]
+    optional_props: [type, description, status, pin, src_id, notes]
+  - type: SourceRef
+    key: uid
+    required_props: [src_id]
+    optional_props: [bundle_uid, entry_path, locator, method, integrity_key]
+  - type: QuoteAtom
+    key: uid
+    required_props: [text]
+    optional_props: [provenance, created_at]
+  - type: AuthorityCiteStub
+    key: uid
+    required_props: [citation]
+  - type: OperatingOrderPin
+    key: uid
+    required_props: [order_id]
+    optional_props: [entry_date, roa_entry, served_date, effective_status, superseded_by, stayed_by, notes]
+  - type: GateResult
+    key: uid
+    required_props: [gate_name, status]
+    optional_props: [details]
+
+edges:
+  - type: CITES_AUTHORITY
+    from: QuoteAtom|Corpus|Node
+    to: Authority
+    props: [citation, mode]
+  - type: CITES_AUTHORITY_CANDIDATE
+    from: QuoteAtom|Corpus|Node
+    to: Authority
+    props: [citation, mode, score]
+  - type: CITES_AUTHORITY_UNRESOLVED
+    from: QuoteAtom|Corpus|Node
+    to: AuthorityCiteStub
+    props: [citation, mode]
+  - type: AUTHORITY_SUPPORTS_VEHICLE
+    from: Authority
+    to: Vehicle
+    props: [basis, confidence]
+  - type: VEHICLE_IN_COURT
+    from: Vehicle
+    to: Court
+    props: [basis]
+  - type: VEHICLE_REQUIRES_OPERATING_ORDER
+    from: Vehicle
+    to: GateResult
+    props: [gate_name]
+  - type: GATE_FOR_VEHICLE
+    from: GateResult
+    to: Vehicle
+    props: [gate_name]
+
+validators:
+  - id: gate.operating_order_pin
+    description: Vehicle requires at least one OperatingOrderPin with required fields for FILE_READY/PCG.
+    required_fields: [order_id, entry_date, roa_entry, effective_status]

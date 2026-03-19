@@ -1,0 +1,117 @@
+{
+  "version": "1.0.0",
+  "description": "LitigationOS Backup Configuration",
+  "schedules": {
+    "incremental": {
+      "enabled": true,
+      "frequency": "daily",
+      "cron": "0 2 * * *",
+      "description": "Daily incremental backup at 2:00 AM",
+      "method": "sqlite_backup_api",
+      "targets": [
+        {
+          "name": "litigationos_primary",
+          "source": "09_DATA/databases/litigationos.db",
+          "destination": "backups/daily/",
+          "filename_pattern": "litigationos_{timestamp}.db"
+        },
+        {
+          "name": "litigation_context",
+          "source": "litigation_context.db",
+          "destination": "backups/daily/",
+          "filename_pattern": "context_{timestamp}.db"
+        }
+      ],
+      "retention": {
+        "count": 14,
+        "unit": "days",
+        "auto_prune": true
+      }
+    },
+    "full": {
+      "enabled": true,
+      "frequency": "weekly",
+      "cron": "0 3 * * 0",
+      "day": "sunday",
+      "description": "Weekly full backup at 3:00 AM Sunday",
+      "method": "full_copy",
+      "targets": [
+        {
+          "name": "all_databases",
+          "source": "09_DATA/databases/",
+          "destination": "backups/weekly/",
+          "include_pattern": "*.db",
+          "compress": true,
+          "compression_format": "gzip"
+        },
+        {
+          "name": "system_databases",
+          "source": "00_SYSTEM/",
+          "destination": "backups/weekly/",
+          "include_pattern": "*.db",
+          "compress": true,
+          "compression_format": "gzip"
+        },
+        {
+          "name": "neo4j_dump",
+          "method": "neo4j_dump",
+          "destination": "backups/weekly/",
+          "filename_pattern": "neo4j_dump_{timestamp}.dump",
+          "compress": true
+        }
+      ],
+      "retention": {
+        "count": 90,
+        "unit": "days",
+        "auto_prune": true
+      }
+    }
+  },
+  "pre_backup_hooks": [
+    {
+      "name": "wal_checkpoint",
+      "command": "sqlite3 {source} 'PRAGMA wal_checkpoint(TRUNCATE)'",
+      "description": "Flush WAL to main database before backup",
+      "required": true
+    }
+  ],
+  "post_backup_hooks": [
+    {
+      "name": "verify_integrity",
+      "command": "sqlite3 {destination} 'PRAGMA integrity_check'",
+      "description": "Verify backup database integrity",
+      "required": true
+    },
+    {
+      "name": "log_completion",
+      "command": "echo 'Backup completed: {destination} at {timestamp}'",
+      "description": "Log successful backup",
+      "required": false
+    }
+  ],
+  "notifications": {
+    "on_success": false,
+    "on_failure": true,
+    "channels": ["log", "email"],
+    "email": {
+      "enabled": false,
+      "recipients": [],
+      "subject_prefix": "[LitigationOS Backup]"
+    }
+  },
+  "storage": {
+    "local": {
+      "enabled": true,
+      "base_path": "backups/",
+      "max_size_gb": 50
+    },
+    "remote": {
+      "enabled": false,
+      "provider": "s3",
+      "bucket": "",
+      "region": "",
+      "encrypt": true,
+      "encryption_algorithm": "AES-256"
+    }
+  }
+}

@@ -1,0 +1,201 @@
+node_id,degree_total,degree_in,degree_out,kind,group,name,labels
+hub_MCR_Wheel,28493,27591,902,AUTHORITY,authority_hub,MCR Wheel,Authority;MCR Wheel;Node
+hub::authority,23841,22937,904,,hub,hub::authority,Authority;Node
+d6b206585b93da356fd144c0,11086,11085,1,AUTHORITY,Family,MCR,Authority;AuthorityHub;Node
+hub_MCL_Wheel,9779,8877,902,AUTHORITY,authority_hub,MCL Wheel,Authority;MCL Wheel;Node
+hub::violation,4093,4089,4,VIOLATION,hub,hub::violation,Node;Violation
+hub_MCL_Other,3912,3910,2,AUTHORITY,authority_hub,MCL Other,Authority;MCL Other;Node
+hub_MCL_600_Revised_Judicature_Act_Courts_Procedure_,3679,3672,7,AUTHORITY,authority_hub,MCL 600 — Revised Judicature Act (Courts & Procedure),Authority;MCL 600 — Revised Judicature Act (Courts & Procedure);Node
+72020838baebb67d794ece08,3559,3558,1,AUTHORITY,Family,MCL,Authority;AuthorityHub;Node
+hub_MCR_2_x_Civil_Procedure,3252,3245,7,AUTHORITY,authority_hub,MCR 2.x — Civil Procedure,Authority;MCR 2.x — Civil Procedure;Node
+mcr::2.119,3230,2328,902,AUTHORITY|MCR,authority,mcr::2.119,Authority;AuthorityHub;MCR 2.119;Node
+remedy::d5301e3e6d,3187,2286,901,,remedy,remedy::d5301e3e6d,Node;sanctions
+mcl::722.27a(9),3185,2283,902,AUTHORITY|MCL,authority,mcl::722.27a(9),Authority;AuthorityHub;MCL 722.27a(9);Node
+mcr::3.207(B),3184,2282,902,AUTHORITY|MCR,authority,mcr::3.207(B),Authority;AuthorityHub;MCR 3.207(B);Node
+hub_MCR_7_x_Appellate_Rules,3102,3095,7,AUTHORITY,authority_hub,MCR 7.x — Appellate Rules,Authority;MCR 7.x — Appellate Rules;Node
+hub_MCR_3_x_Special_Proceedings,3097,3090,7,AUTHORITY,authority_hub,MCR 3.x — Special Proceedings,Authority;MCR 3.x — Special Proceedings;Node
+hub_MCR_1_x_General_Provisions,3042,3035,7,AUTHORITY,authority_hub,MCR 1.x — General Provisions,Authority;MCR 1.x — General Provisions;Node
+hub_MCR_5_x_Criminal_Procedure,3007,3000,7,AUTHORITY,authority_hub,MCR 5.x — Criminal Procedure,Authority;MCR 5.x — Criminal Procedure;Node
+hub_MCR_6_x_Trials,3007,3000,7,AUTHORITY,authority_hub,MCR 6.x — Trials,Authority;MCR 6.x — Trials;Node
+hub_MCR_8_x_Miscellaneous,3007,3000,7,AUTHORITY,authority_hub,MCR 8.x — Miscellaneous,Authority;MCR 8.x — Miscellaneous;Node
+hub_MCR_9_x_Professional_Discipline,3007,3000,7,AUTHORITY,authority_hub,MCR 9.x — Professional Discipline,Authority;MCR 9.x — Professional Discipline;Node
+hub:violations,2506,1,2505,,hub,hub:violations,Node;Violations
+hub:authorities,2501,1,2500,,hub,hub:authorities,Authorities;Node
+venue::Circuit Court – Family Division,2486,1660,826,ACTOR,venue,venue::Circuit Court – Family Division,ActorHub;Circuit Court – Family Division;Node
+43933b0f5edbb8aca916346a,2141,2140,1,AUTHORITY,Family,MRE,Authority;AuthorityHub;Node
+mcl::600.2950a,1642,1640,2,AUTHORITY|MCL,authority,mcl::600.2950a,Authority;AuthorityHub;MCL 600.2950a;Node
+procedure::35aff90572,1642,1641,1,CATEGORY,procedure,procedure::35aff90572,CategoryHub;Motion to Terminate/Modify PPO;Node
+mcr::3.705,1641,1639,2,AUTHORITY|MCR,authority,mcr::3.705,Authority;AuthorityHub;MCR 3.705;Node
+remedy::9ca93831c6,1641,1640,1,,remedy,remedy::9ca93831c6,Node;fees
+mcl::600.2918,1372,1370,2,AUTHORITY|MCL,authority,mcl::600.2918,Authority;AuthorityHub;MCL 600.2918;Node
+procedure::Verified Complaint for Illegal Eviction/Conversion,1349,1347,2,CATEGORY,procedure,procedure::Verified Complaint for Illegal Eviction/Conversion,CategoryHub;Node;Verified Complaint for Illegal Eviction/Conversion
+remedy::Return of possession,1348,1347,1,,remedy,remedy::Return of possession,Node;Return of possession
+venue::District Court (LT) or Circuit Court (damages),1348,1347,1,ACTOR,venue,venue::District Court (LT) or Circuit Court (damages),ActorHub;District Court (LT) or Circuit Court (damages);Node
+mcl::600.5731,1347,1345,2,AUTHORITY|MCL,authority,mcl::600.5731,Authority;AuthorityHub;MCL 600.5731;Node
+remedy::Injunction,1347,1346,1,,remedy,remedy::Injunction,Injunction;Node
+remedy::Treble damages,1347,1346,1,,remedy,remedy::Treble damages,Node;Treble damages
+relief::Damages + costs,1347,1346,1,,remedy,relief::Damages + costs,Damages + costs;Node
+relief::Immediate TRO restoring access,1347,1346,1,,remedy,relief::Immediate TRO restoring access,Immediate TRO restoring access;Node
+procedure::Emergency TRO (MCR 3.310),1347,1346,1,,procedure,procedure::Emergency TRO (MCR 3.310),Emergency TRO (MCR 3.310);Node
+hub:Eviction,1207,1,1206,CATEGORY,hub,hub:Eviction,CategoryHub;Eviction;Node
+mcr::2.003(C)(1),1110,1108,2,AUTHORITY|MCR,authority,mcr::2.003(C)(1),Authority;AuthorityHub;MCR 2.003(C)(1);Node
+canon::3(B)(2),1109,1106,3,AUTHORITY|CANON|CATEGORY,authority,canon::3(B)(2),Authority;AuthorityHub;Canon 3(B)(2);CategoryHub;Node
+remedy::Disqualification,1109,1107,2,,remedy,remedy::Disqualification,Disqualification;Node
+relief::Order removing judge from case,1109,1108,1,ACTOR,remedy,relief::Order removing judge from case,ActorHub;Node;Order removing judge from case
+relief::Referral to JTC,1108,1106,2,,remedy,relief::Referral to JTC,Node;Referral to JTC
+procedure::JTC Complaint,1108,1106,2,,procedure,procedure::JTC Complaint,JTC Complaint;Node
+procedure::Motion to Disqualify,1108,1106,2,,procedure,procedure::Motion to Disqualify,Motion to Disqualify;Node
+remedy::Admonishment,1107,1106,1,,remedy,remedy::Admonishment,Admonishment;Node
+remedy::Reassignment,1107,1106,1,,remedy,remedy::Reassignment,Node;Reassignment
+venue::Assigned trial court,1107,1107,0,ACTOR,venue,venue::Assigned trial court,ActorHub;Assigned trial court;Node
+venue::Judicial Tenure Commission,1106,1105,1,CATEGORY,venue,venue::Judicial Tenure Commission,CategoryHub;Judicial Tenure Commission;Node
+hub:Custody,1095,1,1094,CATEGORY,hub,hub:Custody,CategoryHub;Custody;Node
+relief::Set aside prior PPO-based sanctions,1048,1046,2,CATEGORY,remedy,relief::Set aside prior PPO-based sanctions,CategoryHub;Node;Set aside prior PPO-based sanctions
+remedy::Terminate PPO,1047,1045,2,CATEGORY,remedy,remedy::Terminate PPO,CategoryHub;Node;Terminate PPO
+procedure::Motion to Terminate/Modify PPO,1047,1045,2,CATEGORY,procedure,procedure::Motion to Terminate/Modify PPO,CategoryHub;Motion to Terminate/Modify PPO;Node
+remedy::Expunge related contempt,1046,1045,1,,remedy,remedy::Expunge related contempt,Expunge related contempt;Node
+procedure::Sanctions for misuse,1046,1045,1,,procedure,procedure::Sanctions for misuse,Node;Sanctions for misuse
+mcr::3.707,1045,1043,2,AUTHORITY|MCR,authority,mcr::3.707,Authority;AuthorityHub;MCR 3.707;Node
+remedy::Modify terms,1045,1044,1,,remedy,remedy::Modify terms,Modify terms;Node
+relief::Immediate stay of enforcement,1045,1044,1,,remedy,relief::Immediate stay of enforcement,Immediate stay of enforcement;Node
+procedure::Evidentiary hearing request,1045,1044,1,,procedure,procedure::Evidentiary hearing request,Evidentiary hearing request;Node
+hub:Judicial,960,1,959,CATEGORY,hub,hub:Judicial,CategoryHub;Judicial;Node
+hub:PPO,944,1,943,CATEGORY,hub,hub:PPO,CategoryHub;Node;PPO
+hub:courts,929,1,928,,hub,hub:courts,Courts;Node
+remedy::fb7f4a26a2,742,741,1,,remedy,remedy::fb7f4a26a2,Node;make-up parenting time
+procedure::1043c6cc09,740,739,1,,procedure,procedure::1043c6cc09,Motion to Dissolve Ex Parte Order;Node
+mcl::722.23,689,687,2,AUTHORITY|MCL,authority,mcl::722.23,Authority;AuthorityHub;MCL 722.23;Node
+mcl::722.27a,687,685,2,AUTHORITY|MCL,authority,mcl::722.27a,Authority;AuthorityHub;MCL 722.27a;Node
+remedy::Make-up parenting time,687,685,2,,remedy,remedy::Make-up parenting time,Make-up parenting time;Node
+relief::Enforce parenting time,687,685,2,,remedy,relief::Enforce parenting time,Enforce parenting time;Node
+procedure::Motion Regarding Parenting Time (FOC 65),687,685,2,,procedure,procedure::Motion Regarding Parenting Time (FOC 65),Motion Regarding Parenting Time (FOC 65);Node
+relief::Sanctions for denial,685,684,1,,remedy,relief::Sanctions for denial,Node;Sanctions for denial
+procedure::Order to Show Cause (MC 230),685,684,1,AUTHORITY|SCAO,procedure,procedure::Order to Show Cause (MC 230),Authority;AuthorityHub;Node;Order to Show Cause (MC 230)
+mcr::3.221,684,682,2,AUTHORITY|MCR,authority,mcr::3.221,Authority;AuthorityHub;MCR 3.221;Node
+remedy::Modification of schedule,684,683,1,,remedy,remedy::Modification of schedule,Modification of schedule;Node
+12a0b3a4c2ab447a003b71b4,673,673,0,,keyword,treble damages,Node
+f43f7b2f829e036827ac1187,673,673,0,,keyword,Injunction,Node
+1c44ae36af7f86713571255f,672,672,0,REMEDY,Remedy,Return of possession,Remedy;Node
+d65f50241568404ea9be9c6c,672,672,0,REMEDY,Remedy,Damages + costs,Remedy;Node
+defccf0074323754d82211d7,672,672,0,REMEDY,Remedy,Immediate TRO restoring access,Remedy;Node
+cat_3,601,601,0,CATEGORY,category,Custody,CategoryHub;Custody;Node
+cat_2,601,601,0,CATEGORY,category,PPO,CategoryHub;Node;PPO
+cat_0,601,601,0,CATEGORY,category,Eviction,CategoryHub;Eviction;Node
+cat_1,600,600,0,CATEGORY,category,Judicial,CategoryHub;Judicial;Node
+5592925824dcbc66a2b37f06,548,547,1,REMEDY,Remedy,Disqualification,Remedy;Node
+4073d4ea94c4352f32cf43de,548,547,1,REMEDY,Remedy,Referral to JTC,Remedy;Node
+hub_MCL_125_Housing_Manufactured_Housing,547,540,7,AUTHORITY|CATEGORY,authority_hub,MCL 125 — Housing/Manufactured Housing,Authority;CategoryHub;MCL 125 — Housing/Manufactured Housing;Node
+20e31c6703d0f1f2cbde2709,547,547,0,REMEDY,Remedy,Admonishment,Remedy;Node
+876d6991e5874dc48b6e5bf3,547,547,0,REMEDY,Remedy,Reassignment,Remedy;Node
+a8951bfe033d2f5e27ae687a,547,547,0,REMEDY,Remedy,Order removing judge from case,Remedy;Node
+39a6a8c8e31b9c9845972336,521,520,1,REMEDY,Remedy,Terminate PPO,Remedy;Node
+9b26b66c598994ac0acadcc4,521,520,1,REMEDY,Remedy,Set aside prior PPO-based sanctions,Remedy;Node
+f21cf8fb857e086364a1210d,520,520,0,REMEDY,Remedy,Expunge related contempt,Remedy;Node
+5aab595fa023f7abf7d67427,520,520,0,REMEDY,Remedy,Modify terms,Remedy;Node
+f4340e10906d3236789e6c0c,520,520,0,REMEDY,Remedy,Immediate stay of enforcement,Remedy;Node
+hub_MCL_691_Torts_Governmental_Immunity,517,510,7,AUTHORITY,authority_hub,MCL 691 — Torts/Governmental Immunity,Authority;MCL 691 — Torts/Governmental Immunity;Node
+hub_FRCP,435,430,5,,authority_hub,FRCP,FRCP;Node
+hub::fact,355,351,4,,hub,hub::fact,Fact;Node
+afb1b64d19e49db917e7d8a2,341,340,1,REMEDY,Remedy,Make-up parenting time,Remedy;Node
+ed6c6b8e5b4a83eb0a4dd668,341,340,1,REMEDY,Remedy,Enforce parenting time,Remedy;Node
+ad8b41c5876fabd7c99cee57,340,340,0,REMEDY,Remedy,Modification of schedule,Remedy;Node
+b7093bca34373ba50952be9c,340,340,0,REMEDY,Remedy,Sanctions for denial,Remedy;Node
+hub_facts,319,0,319,,hub,hub_facts,Facts;Node
+hub:Service,304,1,303,,hub,hub:Service,Node;Service
+hub_General_Civil,288,288,0,,authority_hub,General Civil,General Civil;Node
+hub_FRAP,250,240,10,,authority_hub,FRAP,FRAP;Node
+489576319a6fce5d8d293774,229,228,1,CATEGORY,category,Custody,Category;Node
+mcr::2.105,228,226,2,AUTHORITY|MCR,authority,mcr::2.105,Authority;AuthorityHub;MCR 2.105;Node
+hub_Professional_Conduct,225,220,5,,authority_hub,Professional Conduct,Node;Professional Conduct
+plan::tree2,218,0,218,,plan,plan::tree2,Node;Tree 2: MEEK1 + MEEK2
+plan::tree3,216,0,216,,plan,plan::tree3,Node;Tree 3: ManBearPig + Wizards + Governors
+plan::tree7,214,0,214,,plan,plan::tree7,Node;Tree 7: Damages & Remedies
+hub:Contempt,211,1,210,,hub,hub:Contempt,Contempt;Node
+hub_441a24f9,207,0,207,,other,hub_441a24f9,Node;hub_441a24f9
+plan::tree9,204,0,204,,plan,plan::tree9,Node;Tree 9: Federal Overlay
+plan::tree5,202,0,202,,plan,plan::tree5,Node;Tree 5: Integration Codex
+procedure::c922b760a5,164,163,1,,procedure,procedure::c922b760a5,Node;Proof of Service
+procedure::6c81a03028,164,163,1,,procedure,procedure::6c81a03028,Motion to Quash Service;Node
+remedy::bb6790eabc,163,162,1,,remedy,remedy::bb6790eabc,Node;dismissal without prejudice
+hub_Forms,150,140,10,,authority_hub,Forms,Forms;Node
+98261d19586f0c3b3a6074bc,148,147,1,CATEGORY,category,Judicial,Category;Node
+cat_5,137,136,1,,category,Contempt,Contempt;Node
+cat_4,131,131,0,,category,Service,Node;Service
+bench_MJI_Civil_Motions,126,121,5,AUTHORITY|BENCHBOOK,benchbook_section,MJI Civil Proceedings — Motions & Case Management,Authority;MJI Civil Proceedings — Motions & Case Management;Node
+hub_cases,123,0,123,,hub,hub_cases,Cases;Node
+hub_Canon,122,116,6,AUTHORITY|CANON|CATEGORY,authority_hub,Canon,Authority;Canon;Node
+2a4c645c26510b029408efc4,105,104,1,AUTHORITY,Family,CONSTITUTION/USC,Authority;AuthorityHub;Node
+violation::94a7e4e92fc7,102,8,94,ACTOR|VIOLATION,violation,violation::94a7e4e92fc7,"ActorHub;Node;Violation;el When friend of the court becomes aware that the payer's condition meets the definition of incapacitation  as defined in the current or subsequent  Michigan Child Support Formula, monthly support charges shall abate and be temporarily reduced to zero effective the date that the friend of the court office provides notice of the abatement  to the parties and to the court. Support charges shall be reinstated  gffective 60 days after the incapacitation  ends. The office shall provide notice of reinstatement  to the parties and to the court that specifies the date charges will be effective."
+violation::17284787eca1,101,7,94,ACTOR|VIOLATION,violation,violation::17284787eca1,"4. Qualified  Medical  Support  Order. This order is a qualified  medical support order with immediate  effect pursuant  to29 USC 1169. To qualify this order, the friend of the court shall issue a notice to enroll pursuant  to MCL 552.626b.  Aparent may contest the notice by requesting  a review or hearing concerning  availability  of health care at a reasonablecost.;ActorHub;Node;Violation"
+hub_Rights_US_,100,100,0,CATEGORY,authority_hub,Rights (US),Node;Rights (US)
+7b204a1577620ac68c5dfe26,99,98,1,CATEGORY,category,Eviction,Category;Node
+hub::remedy,98,94,4,,hub,hub::remedy,Node;Remedy
+violation::f516b4c3fdb6,98,5,93,CATEGORY|VIOLATION,violation,violation::f516b4c3fdb6,"Both parties appeared  for a Trial regarding  Custody,  Parenting  Time and Child Support;Node;Violation"
+violation::72c8535717ff,98,5,93,CATEGORY|VIOLATION,violation,violation::72c8535717ff,"Custody,  Parenting  Time, and Child Support Following  Facilitative  Information;Node;Violation"
+violation::8948a528794b,98,5,93,CATEGORY|VIOLATION,violation,violation::8948a528794b,"Child Support is the initial Order regarding  custody and parenting  time, issued by this;Node;Violation"
+violation::ec50c1514283,98,5,93,CATEGORY|VIOLATION,violation,violation::ec50c1514283,"CUSTODY,  PARENTING  TIME, AND CHILD SUPPORT;Node;Violation"
+violation::10a4e4ece1d5,98,5,93,CATEGORY|VIOLATION,violation,violation::10a4e4ece1d5,"A Non-Jury  Trial Regarding  Custody,  Parenting  Time, and Child Support was;CategoryHub;Node;Violation"
+violation::973ac6452357,98,5,93,CATEGORY|VIOLATION,violation,violation::973ac6452357,"Node;OF CUSTODY,  PARENTING  TIME, AND CHILD SUPPORT,;Violation"
+violation::20cf86fd01b4,98,5,93,CATEGORY|VIOLATION,violation,violation::20cf86fd01b4,"Uniform  Child Support;CategoryHub;Judgment  of Custody,  Parenting  Time, and Child Support;Node;Violation"
+violation::61a3a4cb7f07,98,5,93,CATEGORY|VIOLATION,violation,violation::61a3a4cb7f07,"Custody,  Parenting  Time, and Child Support Following  Facilitative  Information;Node;Violation"
+violation::6322bec7e45d,98,5,93,CATEGORY|VIOLATION,violation,violation::6322bec7e45d,"Chi!d Support is the initial Order regarding  custody and parenting  time, issued by this;Node;Violation"
+violation::65221e8c9c0e,98,5,93,CATEGORY|VIOLATION,violation,violation::65221e8c9c0e,"Custody,  Parenting  Time, and Child Support Following  Facilitative  Information;Node;Violation"
+violation::c32c26446a53,98,5,93,CATEGORY|VIOLATION,violation,violation::c32c26446a53,"CUSTODY,  PARENTING  TIME, AND CHILD SUPPORT;Node;Violation"
+violation::e91d22369c9f,98,5,93,CATEGORY|VIOLATION,violation,violation::e91d22369c9f,"A Non-Jury  Trial Regarding  Custody,  Parenting  Time, and Child Support was;Node;Violation"
+violation::3c58e4a90e96,98,5,93,CATEGORY|VIOLATION,violation,violation::3c58e4a90e96,"Custody,  Parenting  Time, and Child Support Following  Facilitative  Information;Node;Violation"
+violation::c5a9c134a229,98,5,93,CATEGORY|VIOLATION,violation,violation::c5a9c134a229,"Child Support is the initial Order regarding  custody and parenting  time, issued by this;Node;Violation"
+violation::4bd1ba9d0ee1,98,5,93,CATEGORY|VIOLATION,violation,violation::4bd1ba9d0ee1,"Node;OF CUSTODY,  PARENTING  TIME, AND CHILD SUPPORT,;Violation"
+violation::bb2a76dcda12,98,5,93,CATEGORY|VIOLATION,violation,violation::bb2a76dcda12,"Uniform  Child Support;Judgment  of Custody,  Parenting  Time, and Child Support;Node;Violation"
+violation::0e5574d0c973,98,5,93,CATEGORY|VIOLATION,violation,violation::0e5574d0c973,"A Non-Jury  Trial Regarding  Custody,  Parenting  Time, and Child Support was;CategoryHub;Node;Violation"
+violation::1e0c667290f5,98,5,93,CATEGORY|VIOLATION,violation,violation::1e0c667290f5,"CategoryHub;Custody,  Parenting  Time, and Child Support Following  Facilitative  Information;Node;Violation"
+violation::fc86936ba3f7,98,5,93,CATEGORY|VIOLATION,violation,violation::fc86936ba3f7,"Child Support is the initial Order regarding  custody and parenting  time, issued by this;Node;Violation"
+violation::f5ea0cc5b179,98,5,93,CATEGORY|VIOLATION,violation,violation::f5ea0cc5b179,"Custody,  Parenting  Time, and Child Support Following  Facilitative  Information;Node;Violation"
+mcr::2.107,97,95,2,AUTHORITY|MCR,authority,mcr::2.107,Authority;AuthorityHub;MCR 2.107;Node
+remedy::Invalidation of defective service,97,96,1,,remedy,remedy::Invalidation of defective service,Invalidation of defective service;Node
+relief::Vacate orders entered without proper service,97,96,1,,remedy,relief::Vacate orders entered without proper service,Node;Vacate orders entered without proper service
+procedure::Motion to Quash Service,97,96,1,,procedure,procedure::Motion to Quash Service,Motion to Quash Service;Node
+violation::45e091670c6e,97,6,91,ACTOR|VIOLATION,violation,violation::45e091670c6e,"ActorHub;Either party may object to the abatement  or reinstatement  by fiting a written objection with the court within 21 daysfollowing  when the notice was filed, or by filing a motion. If a timely objection is received, the friend of the court shall either set the objection for hearing or complete  a support review with an effective date no earlier than the date of filing of that notice.;Node;Violation"
+remedy::Reset deadlines,96,95,1,,remedy,remedy::Reset deadlines,Node;Reset deadlines
+procedure::Motion to Set Aside Default,96,95,1,,procedure,procedure::Motion to Set Aside Default,Motion to Set Aside Default;Node
+venue::Trial court of record,96,96,0,ACTOR,venue,venue::Trial court of record,ActorHub;Node;Trial court of record
+violation::13a827fd076e,96,5,91,ACTOR|CATEGORY|VIOLATION,violation,violation::13a827fd076e,"ActorHub;Node;Violation;recent Hearing,  this Court instructed  that if Plaintiff violates the PPO again, he"
+violation::0b99767ec1d3,96,5,91,ACTOR|VIOLATION,violation,violation::0b99767ec1d3,ActorHub;Node;Violation;friend of the court is not required to act on more than one request received from a party each 36 months. A party may also file a motion to modify this support order.
+violation::117e826b7797,96,5,91,ACTOR|CATEGORY|VIOLATION,violation,violation::117e826b7797,"ActorHub;Node;Violation;recent Hearing,  this Court instructed  that if Plaintiff violates the PPO again, he"
+violation::430dff0c2861,94,5,89,CATEGORY|VIOLATION,violation,violation::430dff0c2861,"Custody, P- arenting Time, aria: Otiiild Support Following Faeili'tative  i'nf'ormatiori;Node;Violation"
+violation::c0d184166f4e,93,5,88,ACTOR|VIOLATION,violation,violation::c0d184166f4e,"Motion for Protective;ActorHub;Node;Violation;before trial, identified  as: Motion  for Parenting  Time and Contempt  of Court"
+violation::748a827d2509,93,5,88,ACTOR|VIOLATION,violation,violation::748a827d2509,ActorHub;Court;Node;Violation;as: Motion for Parenting  Time and Contempt  of
+kw_MCL_600_2918,92,66,26,AUTHORITY,authority,MCL 600.2918,Authority;MCL 600.2918;Node
+hub_Case_Law_Federal_,85,75,10,,authority_hub,Case Law (Federal),Case Law (Federal);Node
+hub_MCR,82,80,2,AUTHORITY,authority_hub,MCR,Authority;MCR;Node
+violation::ebc06972d4fd,82,5,77,ACTOR|VIOLATION,violation,violation::ebc06972d4fd,ActorHub;Node;The Court finds that Plaintiff/Father  is currently  self-employed  and was recently;Violation
+violation::b7a70def5ae2,82,5,77,ACTOR|VIOLATION,violation,violation::b7a70def5ae2,ActorHub;Node;The Court finds that Plaintiff/Father  is currently  self-employed  and was recently;Violation
+violation::635eda96c2ea,82,5,77,ACTOR|VIOLATION,violation,violation::635eda96c2ea,ActorHub;Node;The Court finds that Plaintiff/Father  is currently self-employed  and was recently;Violation
+violation::065203f069ac,82,5,77,ACTOR|VIOLATION,violation,violation::065203f069ac,ActorHub;Node;The Court finds that Plaintiff/Father  is currently  self-employed  and was recently;Violation
+violation::f2d28b51e78d,82,5,77,ACTOR|CATEGORY|VIOLATION,violation,violation::f2d28b51e78d,(ii) sole legal custody is granted to only one of the parents (iii) the court;ActorHub;Node;Violation;to the change
+violation::8cd2a35ae701,82,5,77,ACTOR|CATEGORY|VIOLATION,violation,violation::8cd2a35ae701,(!i) sale legal custody is granted to only one ofthe parents; (iii) the-court;ActorHub;Node;Violation;to the 6hange
+violation::3429264c4393,81,4,77,ACTOR|VIOLATION,violation,violation::3429264c4393,"2. YOU HAVE 21 DAYS after receiving  this summons  and a copy of the complaint  to file a written answer with the court and serve a copy on the other party or take other lawful actlon with the court (28 c 4y,s.Jfy5,ujwlere  served by mail or you;ActorHub;Node;Violation"
+hub_U_S_Code,80,75,5,,authority_hub,U.S. Code,Node;U.S. Code
+violation::9066fa498287,80,7,73,ACTOR|VIOLATION,violation,violation::9066fa498287,ActorHub;Node;Violation;payer's child support may be suspended  effective the date the Friend of the Court provides notice of
+violation::265e11cd7715,79,2,77,ACTOR|CATEGORY|VIOLATION,violation,violation::265e11cd7715,Emily on the PPO and eviction process. I stood-by  until Emily completed  packing and then I cleared the scene with;Node;Violation
+violation::b9a802f98b83,79,2,77,ACTOR|CATEGORY|VIOLATION,violation,violation::b9a802f98b83,Emily on the PPO and eviction process.  I stood-by  until Emily completed  packing and then I cleared the scene with;Node;Violation
+violation::4f0613ed0669,78,5,73,ACTOR|VIOLATION,violation,violation::4f0613ed0669,"ActorHub;Each parent shall complete  the SMILE Program. Muskegon  County Family Court Services may deny requestsfor parenting  time assistance  from a party who has not completed  this program. In order to get credit forcompleting  the SMILE Program,  at the end of the program, please enter your name and indicate you would likeMuskegon  County Friend of the Court to be notified that you have completed  the program. The web aadress fortiie SMn,E Program is https://micase.state.n'ff.us/micaseapp/public/partnerTools.html (This link only works withGoogle, Google Chrome, or Microsoft  Edge. It does not work with Internet Explorer.)  Computer  access isavailable  during the Court's regular business hours in the legal self-help centers, which are located on the 3""dand 6Ih floors of the Hall of Justice, 990 Terrace st., Muskegon,  MI 49442.;Node;Violation"
+violation::f390e76d7fd5,76,5,71,VIOLATION,violation,violation::f390e76d7fd5,"Node;Parenting  Time, and Child Support  Following  Facilitative  Information  Gathering;Violation"
+violation::2f1d9202a593,76,5,71,VIOLATION,violation,violation::2f1d9202a593,"Complalntfor  CuStOd}, Parenting  Tlmei and Child Support (1/21) Case N0. 2024-001507-DC;Node;Violation"
+violation::0048952026b4,76,5,71,VIOLATION,violation,violation::0048952026b4,"Node;Parenting  Time, and Child Support  Following  Facilitative  Information  Gathering;Violation"
+violation::5c6754e76f04,76,5,71,VIOLATION,violation,violation::5c6754e76f04,"CUSTOD\,  PARENTING  TIME, AND CHILD SUPPORT;Node;Violation"
+violation::763facbec9d7,75,6,69,ACTOR|VIOLATION,violation,violation::763facbec9d7,Node;Violation;a The friend of the court recommends  child support be ordered as follows.
+violation::70de278160a6,75,6,69,ACTOR|VIOLATION,violation,violation::70de278160a6,Node;Violation;that a formal child support obligation  payable through the Friend of the Court has been
+violation::519f4d6b909d,75,6,69,ACTOR|VIOLATION,violation,violation::519f4d6b909d,Court will provide the payee with notice and an opportunity  to object within 21 days to the suspension;Node;Violation
+violation::981d1976736a,75,6,69,ACTOR|VIOLATION,violation,violation::981d1976736a,Friend of the Court will initiate a review of the child support order within 90 days of the reinstatement;Node;Violation
+violation::baf8713744e3,75,6,69,ACTOR|VIOLATION,violation,violation::baf8713744e3,Node;Violation;[X] Child Support Agency (CSA) [X] Court [ ] Attorney  [ ] Private Individual/Entity  (Check One)
+violation::7465015bf25e,75,6,69,ACTOR|VIOLATION,violation,violation::7465015bf25e,Node;Violation;[X] Child Support  Agency  (CSA) [X] Court [ ] Attorney [ ] Private Individual/Entity  (Check One)
+violation::03efc1e4b556,75,6,69,ACTOR|VIOLATION,violation,violation::03efc1e4b556,ActorHub;Node;Violation;[J The friend of the court recommends  child support be ordered  as follows.
+violation::d44cfb59ca45,75,6,69,ACTOR|VIOLATION,violation,violation::d44cfb59ca45,Node;Violation;€ lt Michigan  Child Support Formula Deviation.  The support provisions  ordered do not follow the Michigan Child Support Formula. The attached deviation addendum  (FOC 10d) provides the basis for deviation and the requiredfindings  by the court.
+violation::446bb2546d2e,75,6,69,ACTOR|VIOLATION,violation,violation::446bb2546d2e,"Node;Thisorderisentered  [aafterhearing.  €afterstatutoryreview.  €onstipulation/consentoftheparties.€ The friend of the court recommends  child support  be ordered  as follows.€ !f you disagree with this recommendation,  you must file a written objection with nn or before21 days from the date this order is mailed. If you do not object, this proposed  order will be presented  to the court for entry.;Violation"
+violation::26c42c5f667d,75,6,69,ACTOR|VIOLATION,violation,violation::26c42c5f667d,Node;Violation;€ The friend of the court recommends  child support be ordered as follows.
+violation::2e46ecf39cd6,75,6,69,ACTOR|VIOLATION,violation,violation::2e46ecf39cd6,Node;Violation;[' The friend of the court recommends  child support be ordered as follows.
+violation::7dc5bdedf4be,74,5,69,ACTOR|VIOLATION,violation,violation::7dc5bdedf4be,Node;Violation;to the court. Support charges shall be reinstated  effective 60 days after the incapacitation  ends. The office shall
+violation::58cf00c68e76,74,5,69,ACTOR|VIOLATION,violation,violation::58cf00c68e76,10. Review. Each party to a support order may submit a written request to have the friend of the court review the order. The;Node;Violation
+violation::cec172322f06,74,5,69,ACTOR|VIOLATION,violation,violation::cec172322f06,Node;Violation;to the court. Support charges shall be reinstated  effective  60 days after the incapacitation  ends. The office shall
+violation::2fed0942c449,74,5,69,ACTOR|VIOLATION,violation,violation::2fed0942c449,I O. Review.  Each party to a support order may submit a written request to have the friend of the court review the order. The;Node;Violation
+violation::dfb54fa0c458,74,5,69,ACTOR|VIOLATION,violation,violation::dfb54fa0c458,Node;Violation;€ The friend of the court remmmends  diild support be ordered as follows.

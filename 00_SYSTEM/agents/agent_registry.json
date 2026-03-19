@@ -1,0 +1,436 @@
+{
+  "registry_version": "2.0.0",
+  "total_agents": 43,
+  "last_updated": "2025-01-01T00:00:00Z",
+  "communication_protocol": {
+    "transport": "async_message_bus",
+    "format": "JSON-RPC 2.0",
+    "heartbeat_interval_sec": 30,
+    "retry_policy": {
+      "max_retries": 3,
+      "backoff_strategy": "exponential",
+      "base_delay_ms": 500
+    },
+    "routing": {
+      "method": "lane_affinity",
+      "fallback": "round_robin",
+      "priority_levels": ["critical", "high", "normal", "low"]
+    },
+    "message_schema": {
+      "id": "uuid",
+      "source_agent": "string",
+      "target_agent": "string|broadcast",
+      "lane": "A|B|C|D|E|F",
+      "priority": "critical|high|normal|low",
+      "payload": "object",
+      "timestamp": "ISO8601",
+      "ttl_sec": 300,
+      "require_ack": true
+    }
+  },
+  "lanes": {
+    "A": "Case Intake & Triage",
+    "B": "Discovery & Evidence",
+    "C": "OMEGA Scoring & Analysis",
+    "D": "Filing & Court Preparation",
+    "E": "Monitoring & Compliance",
+    "F": "Revenue & Operations"
+  },
+  "agents": [
+    {
+      "id": "agent-001",
+      "name": "case-intake",
+      "type": "core",
+      "capabilities": ["case_creation", "party_identification", "jurisdiction_detection"],
+      "status": "active",
+      "lane_coverage": ["A"],
+      "health": "green"
+    },
+    {
+      "id": "agent-002",
+      "name": "document-parser",
+      "type": "core",
+      "capabilities": ["pdf_extraction", "ocr", "metadata_tagging"],
+      "status": "active",
+      "lane_coverage": ["A", "B"],
+      "health": "green"
+    },
+    {
+      "id": "agent-003",
+      "name": "evidence-classifier",
+      "type": "core",
+      "capabilities": ["evidence_categorization", "relevance_scoring", "chain_of_custody"],
+      "status": "active",
+      "lane_coverage": ["B"],
+      "health": "green"
+    },
+    {
+      "id": "agent-004",
+      "name": "omega-scorer",
+      "type": "core",
+      "capabilities": ["composite_scoring", "factor_weighting", "trend_analysis"],
+      "status": "active",
+      "lane_coverage": ["C"],
+      "health": "green"
+    },
+    {
+      "id": "agent-005",
+      "name": "timeline-builder",
+      "type": "core",
+      "capabilities": ["event_sequencing", "gap_detection", "conflict_identification"],
+      "status": "active",
+      "lane_coverage": ["B", "C"],
+      "health": "green"
+    },
+    {
+      "id": "agent-006",
+      "name": "motion-drafter",
+      "type": "core",
+      "capabilities": ["motion_generation", "legal_citation", "argument_structuring"],
+      "status": "active",
+      "lane_coverage": ["D"],
+      "health": "green"
+    },
+    {
+      "id": "agent-007",
+      "name": "deadline-tracker",
+      "type": "core",
+      "capabilities": ["deadline_calculation", "reminder_scheduling", "rule_compliance"],
+      "status": "active",
+      "lane_coverage": ["D", "E"],
+      "health": "green"
+    },
+    {
+      "id": "agent-008",
+      "name": "judge-profiler",
+      "type": "core",
+      "capabilities": ["ruling_pattern_analysis", "bias_detection", "preference_mapping"],
+      "status": "active",
+      "lane_coverage": ["C"],
+      "health": "green"
+    },
+    {
+      "id": "agent-009",
+      "name": "opposing-counsel-analyzer",
+      "type": "core",
+      "capabilities": ["strategy_prediction", "weakness_identification", "history_tracking"],
+      "status": "active",
+      "lane_coverage": ["C"],
+      "health": "green"
+    },
+    {
+      "id": "agent-010",
+      "name": "citation-finder",
+      "type": "core",
+      "capabilities": ["case_law_search", "statute_lookup", "precedent_ranking"],
+      "status": "active",
+      "lane_coverage": ["B", "D"],
+      "health": "green"
+    },
+    {
+      "id": "agent-011",
+      "name": "risk-assessor",
+      "type": "core",
+      "capabilities": ["outcome_prediction", "risk_quantification", "scenario_modeling"],
+      "status": "active",
+      "lane_coverage": ["C"],
+      "health": "green"
+    },
+    {
+      "id": "agent-012",
+      "name": "compliance-monitor",
+      "type": "core",
+      "capabilities": ["rule_checking", "filing_validation", "ethics_screening"],
+      "status": "active",
+      "lane_coverage": ["E"],
+      "health": "green"
+    },
+    {
+      "id": "agent-013",
+      "name": "client-communicator",
+      "type": "core",
+      "capabilities": ["status_reporting", "plain_language_translation", "update_scheduling"],
+      "status": "active",
+      "lane_coverage": ["A", "F"],
+      "health": "green"
+    },
+    {
+      "id": "agent-014",
+      "name": "deposition-analyzer",
+      "type": "core",
+      "capabilities": ["transcript_analysis", "inconsistency_detection", "key_admission_flagging"],
+      "status": "active",
+      "lane_coverage": ["B"],
+      "health": "green"
+    },
+    {
+      "id": "agent-015",
+      "name": "settlement-calculator",
+      "type": "core",
+      "capabilities": ["damage_estimation", "settlement_range_modeling", "leverage_assessment"],
+      "status": "active",
+      "lane_coverage": ["C", "F"],
+      "health": "green"
+    },
+    {
+      "id": "agent-016",
+      "name": "discovery-planner",
+      "type": "core",
+      "capabilities": ["interrogatory_drafting", "rfa_generation", "document_request_planning"],
+      "status": "active",
+      "lane_coverage": ["B"],
+      "health": "green"
+    },
+    {
+      "id": "agent-017",
+      "name": "witness-profiler",
+      "type": "core",
+      "capabilities": ["credibility_scoring", "testimony_prediction", "impeachment_preparation"],
+      "status": "active",
+      "lane_coverage": ["B", "C"],
+      "health": "green"
+    },
+    {
+      "id": "agent-018",
+      "name": "exhibit-manager",
+      "type": "core",
+      "capabilities": ["exhibit_organization", "authentication_tracking", "presentation_ordering"],
+      "status": "active",
+      "lane_coverage": ["B", "D"],
+      "health": "green"
+    },
+    {
+      "id": "agent-019",
+      "name": "brief-writer",
+      "type": "core",
+      "capabilities": ["argument_synthesis", "legal_writing", "counterargument_anticipation"],
+      "status": "active",
+      "lane_coverage": ["D"],
+      "health": "green"
+    },
+    {
+      "id": "agent-020",
+      "name": "calendar-coordinator",
+      "type": "core",
+      "capabilities": ["hearing_scheduling", "conflict_detection", "court_calendar_sync"],
+      "status": "active",
+      "lane_coverage": ["D", "E"],
+      "health": "green"
+    },
+    {
+      "id": "agent-021",
+      "name": "financial-auditor",
+      "type": "core",
+      "capabilities": ["billing_analysis", "cost_tracking", "fee_petition_preparation"],
+      "status": "active",
+      "lane_coverage": ["F"],
+      "health": "green"
+    },
+    {
+      "id": "agent-022",
+      "name": "notification-dispatcher",
+      "type": "core",
+      "capabilities": ["alert_routing", "escalation_management", "digest_compilation"],
+      "status": "active",
+      "lane_coverage": ["E"],
+      "health": "green"
+    },
+    {
+      "id": "agent-023",
+      "name": "pattern-detector",
+      "type": "core",
+      "capabilities": ["behavioral_pattern_recognition", "anomaly_detection", "trend_forecasting"],
+      "status": "active",
+      "lane_coverage": ["C"],
+      "health": "green"
+    },
+    {
+      "id": "agent-024",
+      "name": "redaction-engine",
+      "type": "core",
+      "capabilities": ["pii_detection", "privilege_screening", "selective_redaction"],
+      "status": "active",
+      "lane_coverage": ["B", "D"],
+      "health": "green"
+    },
+    {
+      "id": "agent-025",
+      "name": "appeal-strategist",
+      "type": "core",
+      "capabilities": ["error_identification", "standard_of_review_analysis", "appellate_brief_planning"],
+      "status": "active",
+      "lane_coverage": ["C", "D"],
+      "health": "green"
+    },
+    {
+      "id": "agent-026",
+      "name": "mediation-advisor",
+      "type": "core",
+      "capabilities": ["negotiation_strategy", "batna_analysis", "mediation_preparation"],
+      "status": "active",
+      "lane_coverage": ["C"],
+      "health": "green"
+    },
+    {
+      "id": "agent-027",
+      "name": "statute-tracker",
+      "type": "core",
+      "capabilities": ["limitation_monitoring", "legislative_change_alerts", "jurisdiction_rules"],
+      "status": "active",
+      "lane_coverage": ["E"],
+      "health": "green"
+    },
+    {
+      "id": "agent-028",
+      "name": "conflict-checker",
+      "type": "core",
+      "capabilities": ["party_conflict_screening", "related_case_detection", "ethical_wall_enforcement"],
+      "status": "active",
+      "lane_coverage": ["A", "E"],
+      "health": "green"
+    },
+    {
+      "id": "agent-029",
+      "name": "template-engine",
+      "type": "core",
+      "capabilities": ["document_templating", "variable_substitution", "format_compliance"],
+      "status": "active",
+      "lane_coverage": ["D"],
+      "health": "green"
+    },
+    {
+      "id": "agent-030",
+      "name": "data-migrator",
+      "type": "core",
+      "capabilities": ["legacy_import", "format_conversion", "validation_reconciliation"],
+      "status": "active",
+      "lane_coverage": ["A"],
+      "health": "green"
+    },
+    {
+      "id": "agent-031",
+      "name": "sentiment-analyzer",
+      "type": "core",
+      "capabilities": ["tone_detection", "emotional_weight_scoring", "communication_impact_analysis"],
+      "status": "active",
+      "lane_coverage": ["B", "C"],
+      "health": "green"
+    },
+    {
+      "id": "agent-032",
+      "name": "jurisdiction-mapper",
+      "type": "core",
+      "capabilities": ["venue_analysis", "forum_selection", "cross_jurisdiction_rules"],
+      "status": "active",
+      "lane_coverage": ["A", "C"],
+      "health": "green"
+    },
+    {
+      "id": "agent-033",
+      "name": "privilege-reviewer",
+      "type": "core",
+      "capabilities": ["attorney_client_detection", "work_product_screening", "privilege_log_generation"],
+      "status": "active",
+      "lane_coverage": ["B"],
+      "health": "green"
+    },
+    {
+      "id": "agent-034",
+      "name": "cost-optimizer",
+      "type": "core",
+      "capabilities": ["resource_allocation", "budget_forecasting", "efficiency_recommendations"],
+      "status": "active",
+      "lane_coverage": ["F"],
+      "health": "green"
+    },
+    {
+      "id": "agent-035",
+      "name": "report-generator",
+      "type": "core",
+      "capabilities": ["case_summary_generation", "analytics_dashboard", "export_formatting"],
+      "status": "active",
+      "lane_coverage": ["E", "F"],
+      "health": "green"
+    },
+    {
+      "id": "agent-036",
+      "name": "distiller",
+      "type": "enhancement",
+      "capabilities": ["data_distillation", "noise_reduction", "signal_extraction", "key_fact_condensation"],
+      "status": "active",
+      "lane_coverage": ["B", "C"],
+      "health": "green",
+      "description": "Distills large evidence sets and case data into concise actionable summaries"
+    },
+    {
+      "id": "agent-037",
+      "name": "harvester",
+      "type": "enhancement",
+      "capabilities": ["public_record_scraping", "court_docket_monitoring", "data_aggregation", "source_validation"],
+      "status": "active",
+      "lane_coverage": ["A", "B"],
+      "health": "green",
+      "description": "Harvests public records, court filings, and external data sources for case enrichment"
+    },
+    {
+      "id": "agent-038",
+      "name": "space-manager",
+      "type": "enhancement",
+      "capabilities": ["storage_optimization", "archive_management", "retention_policy_enforcement", "deduplication"],
+      "status": "active",
+      "lane_coverage": ["E", "F"],
+      "health": "green",
+      "description": "Manages document storage, archival policies, and storage optimization across all cases"
+    },
+    {
+      "id": "agent-039",
+      "name": "pipe-guardian",
+      "type": "enhancement",
+      "capabilities": ["pipeline_monitoring", "data_flow_validation", "bottleneck_detection", "throughput_optimization"],
+      "status": "active",
+      "lane_coverage": ["E"],
+      "health": "green",
+      "description": "Guards data pipelines ensuring integrity, flow, and performance across all agent communications"
+    },
+    {
+      "id": "agent-040",
+      "name": "checkpoint-sentinel",
+      "type": "enhancement",
+      "capabilities": ["state_snapshotting", "rollback_management", "consistency_verification", "audit_trail_generation"],
+      "status": "active",
+      "lane_coverage": ["E"],
+      "health": "green",
+      "description": "Creates and manages system checkpoints for rollback capability and audit compliance"
+    },
+    {
+      "id": "agent-041",
+      "name": "quality-auditor",
+      "type": "enhancement",
+      "capabilities": ["output_quality_scoring", "accuracy_validation", "consistency_checking", "regression_detection"],
+      "status": "active",
+      "lane_coverage": ["C", "D", "E"],
+      "health": "green",
+      "description": "Audits all agent outputs for quality, accuracy, and consistency before delivery"
+    },
+    {
+      "id": "agent-042",
+      "name": "revenue-tracker",
+      "type": "enhancement",
+      "capabilities": ["billing_integration", "revenue_forecasting", "payment_tracking", "roi_analysis"],
+      "status": "active",
+      "lane_coverage": ["F"],
+      "health": "green",
+      "description": "Tracks revenue streams, billing cycles, and financial performance per case and overall"
+    },
+    {
+      "id": "agent-043",
+      "name": "filing-assembler",
+      "type": "enhancement",
+      "capabilities": ["document_assembly", "court_format_compliance", "e_filing_preparation", "signature_coordination"],
+      "status": "active",
+      "lane_coverage": ["D"],
+      "health": "green",
+      "description": "Assembles complete court filings from components ensuring format compliance and e-filing readiness"
+    }
+  ]
+}

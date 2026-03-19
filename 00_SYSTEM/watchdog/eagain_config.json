@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "pipe_buffer_limit_bytes": 65536,
+  "max_concurrent_agents": 2,
+  "throttle": {
+    "on_eagain": {
+      "reduce_to": 1,
+      "ramp_back_minutes": 10,
+      "ramp_step": 1
+    }
+  },
+  "output_redirect": {
+    "threshold_bytes": 10240,
+    "redirect_to_file": true,
+    "summary_only_on_pipe": true
+  },
+  "heartbeat": {
+    "interval_seconds": 30,
+    "missed_threshold": 3,
+    "action": "auto-reap"
+  },
+  "circuit_breaker": {
+    "failure_threshold": 3,
+    "cooldown_seconds": 60,
+    "max_backoff_seconds": 300,
+    "backoff_multiplier": 2
+  },
+  "error_patterns": [
+    "EAGAIN",
+    "ECONNRESET",
+    "ETIMEDOUT",
+    "ENOMEM",
+    "ENOSPC",
+    "EPIPE"
+  ],
+  "state_persistence": {
+    "interval_seconds": 60,
+    "save_to": "sql"
+  },
+  "graceful_degradation": {
+    "enospc_halt_threshold_gb": 1,
+    "memory_warn_threshold_mb": 512,
+    "cpu_throttle_threshold_pct": 90
+  },
+  "encoding": {
+    "force_utf8": true,
+    "python_reconfigure": "sys.stdout.reconfigure(encoding='utf-8', errors='replace')",
+    "powershell_no_triple_quotes": true
+  },
+  "logging": {
+    "log_table": "agent_log",
+    "operation_table": "operation_log",
+    "retention_days": 90
+  }
+}

@@ -1,0 +1,8 @@
+id,for,attr_name,attr_type
+d0,node,label,string
+d1,node,name,string
+d2,node,tags,string
+d3,node,kind,string
+d4,node,props,string
+e0,edge,type,string
+e1,edge,props,string

@@ -1,0 +1,71 @@
+{
+  "$defs": {
+    "Severity": {
+      "enum": [
+        "critical",
+        "urgent",
+        "high",
+        "warning",
+        "info"
+      ],
+      "title": "Severity",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Missing element tracked during pipeline processing.",
+  "properties": {
+    "ticket_id": {
+      "title": "Ticket Id",
+      "type": "string"
+    },
+    "filing_name": {
+      "title": "Filing Name",
+      "type": "string"
+    },
+    "gap_type": {
+      "title": "Gap Type",
+      "type": "string"
+    },
+    "description": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Description"
+    },
+    "severity": {
+      "$ref": "#/$defs/Severity",
+      "default": "warning"
+    },
+    "resolution_status": {
+      "default": "open",
+      "title": "Resolution Status",
+      "type": "string"
+    },
+    "resolution_notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Resolution Notes"
+    }
+  },
+  "required": [
+    "ticket_id",
+    "filing_name",
+    "gap_type"
+  ],
+  "title": "GapTicket",
+  "type": "object"
+}

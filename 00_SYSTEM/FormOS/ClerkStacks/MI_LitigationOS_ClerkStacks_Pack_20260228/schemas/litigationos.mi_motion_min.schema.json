@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:litigationos:mi:motion_min:schema:v1",
+  "title": "LitigationOS Minimal Michigan Motion Schema (CI lint)",
+  "type": "object",
+  "required": [
+    "caption",
+    "title",
+    "facts",
+    "legalStandard",
+    "argument",
+    "reliefRequested",
+    "signature",
+    "certificateOfService"
+  ],
+  "properties": {
+    "caption": {
+      "type": "object",
+      "required": [
+        "courtName",
+        "caseNumber",
+        "caseTitle"
+      ],
+      "properties": {
+        "courtName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "caseNumber": {
+          "type": "string",
+          "minLength": 1
+        },
+        "caseTitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "judgeOrReferee": {
+          "type": "string"
+        }
+      }
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "facts": {
+      "type": "string",
+      "minLength": 1
+    },
+    "legalStandard": {
+      "type": "string",
+      "minLength": 1
+    },
+    "argument": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reliefRequested": {
+      "type": "string",
+      "minLength": 1
+    },
+    "signature": {
+      "type": "object",
+      "required": [
+        "signedName",
+        "signatureFormat",
+        "dateSigned"
+      ],
+      "properties": {
+        "signedName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "signatureFormat": {
+          "type": "string",
+          "enum": [
+            "/s/",
+            "wet",
+            "digital"
+          ]
+        },
+        "dateSigned": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "certificateOfService": {
+      "type": "object",
+      "required": [
+        "serviceDate",
+        "method",
+        "servedOn",
+        "statement",
+        "signedName"
+      ],
+      "properties": {
+        "serviceDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "servedOn": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "signedName": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "attachmentIndex": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "attachmentNumber",
+          "title",
+          "fileName"
+        ],
+        "properties": {
+          "attachmentNumber": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fileName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "partInfo": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

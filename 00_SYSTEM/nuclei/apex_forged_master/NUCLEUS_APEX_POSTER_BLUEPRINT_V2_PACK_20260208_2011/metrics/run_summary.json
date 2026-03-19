@@ -1,0 +1,119 @@
+{
+  "ts": "20260208_2009",
+  "graphml": "NUCLEUS_APEX_SUPERGRAPH_20250908_030140.graphml.xml",
+  "node_total": 40143,
+  "edge_total": 214090,
+  "top_kind": [
+    {
+      "kind": "AUTHORITY",
+      "count": 15695,
+      "share": 0.3909772563086964
+    },
+    {
+      "kind": "CATEGORY",
+      "count": 2896,
+      "share": 0.07214209202102484
+    },
+    {
+      "kind": "VIOLATION",
+      "count": 1582,
+      "share": 0.039409112423087464
+    },
+    {
+      "kind": "AUTHORITY|CATEGORY",
+      "count": 1077,
+      "share": 0.026829086017487482
+    },
+    {
+      "kind": "CATEGORY|VIOLATION",
+      "count": 750,
+      "share": 0.018683207533069277
+    },
+    {
+      "kind": "ACTOR|VIOLATION",
+      "count": 646,
+      "share": 0.016092469421817003
+    },
+    {
+      "kind": "ACTOR",
+      "count": 241,
+      "share": 0.006003537353959594
+    },
+    {
+      "kind": "ACTOR|CATEGORY|VIOLATION",
+      "count": 192,
+      "share": 0.004782901128465735
+    },
+    {
+      "kind": "AUTHORITY|CANON|CATEGORY|VIOLATION",
+      "count": 127,
+      "share": 0.003163689808933064
+    },
+    {
+      "kind": "AUTHORITY|CANON|CATEGORY",
+      "count": 116,
+      "share": 0.0028896694317813816
+    }
+  ],
+  "top_edge_type": [
+    {
+      "edge_type": "part_of",
+      "count": 36355,
+      "share": 0.16981176140875331
+    },
+    {
+      "edge_type": "member_of",
+      "count": 33206,
+      "share": 0.15510299406791536
+    },
+    {
+      "edge_type": "categorized_as",
+      "count": 27541,
+      "share": 0.12864215983931993
+    },
+    {
+      "edge_type": "seeks",
+      "count": 25696,
+      "share": 0.12002428885048344
+    },
+    {
+      "edge_type": "cites",
+      "count": 18870,
+      "share": 0.08814050165818114
+    },
+    {
+      "edge_type": "BELONGS_TO",
+      "count": 16887,
+      "share": 0.07887804194497641
+    },
+    {
+      "edge_type": "through",
+      "count": 12472,
+      "share": 0.05825587369797749
+    },
+    {
+      "edge_type": "categorizes",
+      "count": 10758,
+      "share": 0.050249894904012334
+    },
+    {
+      "edge_type": "REMEDIED_BY",
+      "count": 10343,
+      "share": 0.048311457798122286
+    },
+    {
+      "edge_type": "spoke_link",
+      "count": 7126,
+      "share": 0.033285067027885466
+    }
+  ],
+  "inputs": {
+    "harvest_zip": "ATTACHMENT_HARVEST_20260208.zip",
+    "rebuild_zip": "MEEK234_FULLSTACK_REBUILD_PACK_v20260208.zip",
+    "poster_v1": "NUCLEUS_APEX_POSTER_BLUEPRINT_20260208_2001.pdf"
+  },
+  "outputs": [
+    "NUCLEUS_APEX_POSTER_BLUEPRINT_V2_20260208_2009.pdf",
+    "NUCLEUS_APEX_POSTER_BLUEPRINT_V2_PACK_20260208_2009.zip"
+  ]
+}

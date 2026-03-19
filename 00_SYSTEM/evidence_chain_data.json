@@ -1,0 +1,358 @@
+{
+  "evidence_count": 28683,
+  "claims_count": 1980,
+  "file_count": 0,
+  "gaps": [
+    {
+      "claim_id": "Cc6b2dfa14b4b",
+      "claim_name": "Cc6b2dfa14b4b",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cfd5aba895223",
+      "claim_name": "Cfd5aba895223",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cb263ee65e3fe",
+      "claim_name": "Cb263ee65e3fe",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Ccdcff41df021",
+      "claim_name": "Ccdcff41df021",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C639ed2dc37a5",
+      "claim_name": "C639ed2dc37a5",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C2a1b0c7ea9ef",
+      "claim_name": "C2a1b0c7ea9ef",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Ce6cd9532a283",
+      "claim_name": "Ce6cd9532a283",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C12235db2f1c6",
+      "claim_name": "C12235db2f1c6",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Ccd7c68c170ee",
+      "claim_name": "Ccd7c68c170ee",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C0663900a329c",
+      "claim_name": "C0663900a329c",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C1cce8c1314c5",
+      "claim_name": "C1cce8c1314c5",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cd5683caba36e",
+      "claim_name": "Cd5683caba36e",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C8ff5c67a8dcd",
+      "claim_name": "C8ff5c67a8dcd",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C5b777be991e2",
+      "claim_name": "C5b777be991e2",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C8722eddc18da",
+      "claim_name": "C8722eddc18da",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C515f3e68b4ba",
+      "claim_name": "C515f3e68b4ba",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cb97be8ad65fa",
+      "claim_name": "Cb97be8ad65fa",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cd91a08243c16",
+      "claim_name": "Cd91a08243c16",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C1d6a496779a2",
+      "claim_name": "C1d6a496779a2",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C20f6c6b062fc",
+      "claim_name": "C20f6c6b062fc",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C6f35d780fecc",
+      "claim_name": "C6f35d780fecc",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C8fc17501ba04",
+      "claim_name": "C8fc17501ba04",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C838c9ea780ad",
+      "claim_name": "C838c9ea780ad",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cebe523d6760b",
+      "claim_name": "Cebe523d6760b",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C6ed988348cbd",
+      "claim_name": "C6ed988348cbd",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cf40cba3f9b24",
+      "claim_name": "Cf40cba3f9b24",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C28744be476d6",
+      "claim_name": "C28744be476d6",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C1480c4c14bfa",
+      "claim_name": "C1480c4c14bfa",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C6a370b0e8948",
+      "claim_name": "C6a370b0e8948",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C4c94d30ed374",
+      "claim_name": "C4c94d30ed374",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cfd10218e0d94",
+      "claim_name": "Cfd10218e0d94",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cfd1de4cbe89e",
+      "claim_name": "Cfd1de4cbe89e",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C437d0527efe0",
+      "claim_name": "C437d0527efe0",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cdd598a2f0727",
+      "claim_name": "Cdd598a2f0727",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Ccf3c31c390a9",
+      "claim_name": "Ccf3c31c390a9",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C6f94eb2e050c",
+      "claim_name": "C6f94eb2e050c",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C0a9a3eeeb3fe",
+      "claim_name": "C0a9a3eeeb3fe",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cd80e9bede30d",
+      "claim_name": "Cd80e9bede30d",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C57f889b04431",
+      "claim_name": "C57f889b04431",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cbd878398cd03",
+      "claim_name": "Cbd878398cd03",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cc4911660be0d",
+      "claim_name": "Cc4911660be0d",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cbe4c73751301",
+      "claim_name": "Cbe4c73751301",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cd97529380c1e",
+      "claim_name": "Cd97529380c1e",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C5e21752d56c2",
+      "claim_name": "C5e21752d56c2",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cddd4c08bce21",
+      "claim_name": "Cddd4c08bce21",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C52c53b8685ac",
+      "claim_name": "C52c53b8685ac",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Ceb386aa1a8ac",
+      "claim_name": "Ceb386aa1a8ac",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cb8ae4059a4d3",
+      "claim_name": "Cb8ae4059a4d3",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "C55c2b9935d8a",
+      "claim_name": "C55c2b9935d8a",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    },
+    {
+      "claim_id": "Cfc0e63305362",
+      "claim_name": "Cfc0e63305362",
+      "evidence_count": 1,
+      "severity": "MEDIUM",
+      "recommendation": "Consider additional corroborating evidence"
+    }
+  ],
+  "file_types": {}
+}

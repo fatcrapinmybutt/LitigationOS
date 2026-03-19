@@ -1,0 +1,44 @@
+# MiFILE / e-filing deterministic lint rules (Michigan Courts)
+# Sources: Michigan Courts "Preparing Electronic Documents for Filing" (Policies & Standards No. 2) and MiFILE Quick Reference Guide.
+version: mifile_lint.v1
+rules:
+  - id: mifile.signature.required
+    severity: ERROR
+    check: "document_has_signature"
+    fix: "Add /s/ Name signature block or wet signature as required."
+  - id: mifile.page_size.8.5x11
+    severity: ERROR
+    check: "pdf_page_size == '8.5x11_view'"
+    fix: "Export as 8.5x11 view; must print without manipulation."
+  - id: mifile.font.body_12_13
+    severity: ERROR
+    check: "body_font_size in [12,13]"
+    fix: "Use 12 or 13 point body font; footnotes >= 10."
+  - id: mifile.margins.standard
+    severity: ERROR
+    check: "margins_top_bottom >= 1.0 and margins_left_right >= 0.5"
+    fix: "Set top/bottom to 1 inch; sides to 0.5 inch."
+  - id: mifile.no_text_in_margin
+    severity: ERROR
+    check: "no_text_in_margin == true"
+    fix: "Move all text/images out of margins; leave margins for court stamps."
+  - id: mifile.ocr_required
+    severity: ERROR
+    check: "pdf_is_searchable == true"
+    fix: "Convert directly to PDF from source; do not scan unless required."
+  - id: mifile.file_size.25mb
+    severity: ERROR
+    check: "file_size_bytes <= 26214400"
+    fix: "Split into parts (Part 1 of N) and label consistently."
+  - id: mifile.attachments.index_required
+    severity: ERROR
+    check: "lead_doc_last_page_contains_index_to_attachments == true"
+    fix: "Add 'Index to Attachments' as last page of the lead document."
+  - id: mifile.attachments.separately_connected
+    severity: ERROR
+    check: "each_attachment_uploaded_separately == true"
+    fix: "Upload each attachment as a separate connected filing."
+  - id: mifile.self_contained
+    severity: ERROR
+    check: "all_hyperlinks_internal == true and no_embedded_audio_video == true"
+    fix: "Remove external hyperlinks; remove embedded audio/video."

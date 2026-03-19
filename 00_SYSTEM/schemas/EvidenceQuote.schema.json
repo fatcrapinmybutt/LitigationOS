@@ -1,0 +1,82 @@
+{
+  "$defs": {
+    "PostureTag": {
+      "description": "Evidence atom posture \u2014 every quote gets one.",
+      "enum": [
+        "RECORD_FACT",
+        "EVIDENCE_FACT",
+        "SWORN_FACT",
+        "ALLEGATION",
+        "INFERENCE"
+      ],
+      "title": "PostureTag",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A single evidence quote with provenance.",
+  "properties": {
+    "quote_text": {
+      "minLength": 1,
+      "title": "Quote Text",
+      "type": "string"
+    },
+    "speaker": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Speaker"
+    },
+    "legal_significance": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Legal Significance"
+    },
+    "evidence_category": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Evidence Category"
+    },
+    "posture": {
+      "$ref": "#/$defs/PostureTag",
+      "default": "EVIDENCE_FACT"
+    },
+    "source": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source"
+    }
+  },
+  "required": [
+    "quote_text"
+  ],
+  "title": "EvidenceQuote",
+  "type": "object"
+}

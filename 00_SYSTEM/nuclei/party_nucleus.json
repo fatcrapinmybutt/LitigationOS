@@ -1,0 +1,3281 @@
+{
+  "nucleus_id": "party",
+  "name": "Party Relationship Nucleus",
+  "description": "All party relationships, person profiles, connections",
+  "created": "2026-02-24T21:23:51.778243",
+  "source_brains": [
+    "09_andrew",
+    "10_emily",
+    "11_albert",
+    "12_lori",
+    "13_cody",
+    "14_mcneill",
+    "15_rusco",
+    "16_child",
+    "17_persons"
+  ],
+  "nodes": [
+    {
+      "id": "e0001",
+      "text": "[MCL 722.23] ...: Jenny McNeill    Plaintiff: Andrew Pigors   1977 Whitehall Rd \",\"MCL  722.27; MCL 722.23; MCR  2.505; MCR 2.505\",Clarify PPO scope; reinstate PT ex parte,2023_5907_pp T...",
+      "score": 18.4275,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/01_MCL_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0002",
+      "text": "> mplainant:** Andrew J. Pigors   **Defendant:** Emily A. Watson   **Jurisdiction:** Muskegon County Prosecutor's Office   **Crimes Alleged:** Perjury (MCL 750.422, MCL 750.423), Fraud (MCL 750.218), Filing False Reports (MCL 750.411)  ---  ## EXECUTIVE SUMMARY FOR PROSECUTOR  This complaint presents",
+      "score": 18.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0003",
+      "text": "> Andrew J. Pigors   **Defendant:** Emily A. Watson   **Jurisdiction:** Muskegon County Prosecutor's Office   **Crimes Alleged:** Perjury (MCL 750.422, MCL 750.423), Fraud (MCL 750.218), Filing False Reports (MCL 750.411)  ---  ## EXECUTIVE SUMMARY FOR PROSECUTOR  This complaint presents a clear case",
+      "score": 18.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0004",
+      "text": "> _______________________________________________/              VERIFIED MOTION TO STRIKE DEFENSE FILINGS     [Filed Under: MCR 2.115(B); MCR 2.114(E); MCL 600.5815; MCL 600.2907] NOW COMES Plaintiff, ANDREW J. PIGORS, in propria persona, and respectfully moves this Honorable Court pursuant to MCR 2.1",
+      "score": 18.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0005",
+      "text": "> rs.\\\\u201d / Irrelevant, prejudicial, editorial framing. Violates MCR 2.119(A)(1). / MCR 2.119(A)(1); MCL 600.5701 / \\\\u2014 /\\\\n/ 2     / \\\\u201cMr. Pigors initiated a small claims suit\\\\u2026\\\\u201d / Valid action arising from fraud. Still unresolved. Retaliatory conduct persists. / MCL 600.5701;",
+      "score": 18.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0006",
+      "text": "> SON  **Complainant:** Andrew J. Pigors   **Defendant:** Emily A. Watson   **Jurisdiction:** Muskegon County Prosecutor's Office   **Crimes Alleged:** Perjury (MCL 750.422, MCL 750.423), Fraud (MCL 750.218), Filing False Reports (MCL 750.411)  ---  ## EXECUTIVE SUMMARY FOR PROSECUTOR  This complaint",
+      "score": 18.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/23_FRAUD/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0007",
+      "text": "> ing Andrew's parenting time for lack of MCL 722.27a(3) endangerment findings.\"  **Legal Basis:** - MCR 7.216(A)(7): COA may reverse, remand, modify - Abuse of discretion standard - Clear error in MCL 722.27a(3) application  **Likelihood:** 85% (clear statutory violation)  **Timeline:** 12-18 months",
+      "score": 18.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/25_VIOLATIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0008",
+      "text": "> s suspending Andrew's parenting time for lack of MCL 722.27a(3) endangerment findings.\"  **Legal Basis:** - MCR 7.216(A)(7): COA may reverse, remand, modify - Abuse of discretion standard - Clear error in MCL 722.27a(3) application  **Likelihood:** 85% (clear statutory violation)  **Timeline:** 12-1",
+      "score": 18.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/43_REMEDIES/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0009",
+      "text": "> # CRIMINAL COMPLAINT ## STATE OF MICHIGAN v. EMILY A. WATSON  **Complainant:** Andrew J. Pigors   **Defendant:** Emily A. Watson   **Jurisdiction:** Muskegon County Prosecutor's Office   **Crimes Alleged:** Perjury (MCL 750.422, MCL 750.423), Fraud (MCL 750.218), Filing False Reports (MCL 750.411)",
+      "score": 18.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/50_CASE_NO/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0010",
+      "text": "> s PPO against Andrew Pigors | | 2024-04-01 | Custody action filed (2024-001507-DC) | Father seeks custody/parenting time | | 2024-04-11 | Order After Hearing PPO | Modify/Extend/Terminate hearing | | 2024-07-10 | Email re: Court Staff Exhibits | Service/procedural issues | | 2024-10-30 | PPO Hearing",
+      "score": 17.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/26_HEARINGS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0011",
+      "text": "[MCR 2.505] ...tiff: Andrew Pigors   1977 Whitehall Rd \",\"MCL  722.27; MCL 722.23; MCR  2.505; MCR 2.505\",Clarify PPO scope; reinstate PT ex parte,2023_5907_pp The whole story_TEXT (1)...",
+      "score": 16.83,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0012",
+      "text": "> . Pigors   **Defendant:** Emily A. Watson   **Jurisdiction:** Muskegon County Prosecutor's Office   **Crimes Alleged:** Perjury (MCL 750.423), Fraud (MCL 750.218), Filing False Reports (MCL 750.411)  ---  ## I. STATEMENT OF FACTS  Emily A. Watson has committed multiple counts of perjury by making fa",
+      "score": 16.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0013",
+      "text": "> urt should reverse the trial court's orders suspending Andrew's parenting time for lack of MCL 722.27a(3) endangerment findings.\"  **Legal Basis:** - MCR 7.216(A)(7): COA may reverse, remand, modify - Abuse of discretion standard - Clear error in MCL 722.27a(3) application  **Likelihood:** 85% (clea",
+      "score": 16.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0014",
+      "text": "> ndrew J. Pigors   **Defendant:** Emily A. Watson   **Jurisdiction:** Muskegon County Prosecutor's Office   **Crimes Alleged:** Perjury (MCL 750.423), Fraud (MCL 750.218), Filing False Reports (MCL 750.411)  ---  ## I. STATEMENT OF FACTS  Emily A. Watson has committed multiple counts of perjury by ma",
+      "score": 16.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/23_FRAUD/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0015",
+      "text": "> **Violation:** MCR 3.207 requires hearing within 21 days of ex parte order - **Instance:** Hearing delayed beyond 21 days; parenting time suspension continued - **Impact:** Andrew's parenting time remained suspended without timely hearing - **Bias Indicator:** Judge allowed suspension to continue de",
+      "score": 16.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/26_HEARINGS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0016",
+      "text": "> d attorney fees** if Andrew obtains counsel 6. **Remand with instructions**: Best interest hearing required before any parenting time modification  **Standard of Review**: - *De novo*: Constitutional violations, MCR interpretations - *Abuse of discretion*: Parenting time decisions (here, abuse shown",
+      "score": 16.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/44_REVIEW/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0017",
+      "text": "[MCL 722.23] ...2025; April 18, 2025; April 28, 2025; April 6, 2025; May 2, 2025; May 5, 2024\",MCL 722.23; MCL 722.27a; MCR 3.207(B); MCR 3.215(E)(4),\"E COUNTY OF MUSKEGON ANDREW J. PIG...",
+      "score": 16.45,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/31_BEST_INT/31_BEST_INT_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0018",
+      "text": "> ng;health west;ppo;order) | DOC_d0cceb74b0a1 | 000000001.zip/McneillOrdertomyobjection.docx | | 2025-09-04 | 2026-02-08 22:56:55 -0500 | DOC_POINTER | RUSCOGmail - Request Hearing Date — FOC 61 Objection to Ex Parte Order — 2024-001507-DC (Pigors v.PDF.pdf (hits:ex parte;objection;hearing;order;foc)",
+      "score": 16.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/15_RUSCO/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0019",
+      "text": "[Andrew Pigors] ...(PPO) & 2024-001507-DC (Custody)  Honorable Judge: Jenny McNeill    Plaintiff: Andrew Pigors   1977 Whitehall Rd \",\"MCL  722.27; MCL 722.23; MCR  2.505; MCR 2.505\",Clarify...",
+      "score": 15.9225,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/09_ANDREW_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0020",
+      "text": "> : WATSON  V   PIGORS CLOSE Pub 54 55 56 57 59 61 62 66 67 ORDER 01 / 07 / 2025   D  001 RNU ORDER ORDER  ON  MOTION TO  MODIFY, EXTEND, OR  TERMINATE PERSONAL PROTECTION ORDER 01/07/2025 RNU ORDER ORDER  AFTER   HEARING   ON  VIOLATION OF  VALID PERSONAL PROTECTION  FOREIGN PROTECTION  ORDER 01 /07/",
+      "score": 15.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/20_PPO/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0021",
+      "text": "> Pigors | | 2024-04-01 | Custody action filed (2024-001507-DC) | Father seeks custody/parenting time | | 2024-04-11 | Order After Hearing PPO | Modify/Extend/Terminate hearing | | 2024-07-10 | Email re: Court Staff Exhibits | Service/procedural issues | | 2024-10-30 | PPO Hearing Transcript | Key evi",
+      "score": 15.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/30_EVIDENCE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0022",
+      "text": "> E|evidentiary,hearing,order,bias,ppo,misconduct,parenting time|Interim Hearing and Evidence Disparity: An interim post-suspension hearing was held on August 28, 2025 to decide whether to continue the no-visitation order[28]. According to Mr. Pigors, at that hearing Judge McNeill refused to even look",
+      "score": 15.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0023",
+      "text": "> 7-PP|EA_c3c2020bcc2b|DOC_9b504593e758|TEXT_SAMPLES_001.txt|LINE|ex parte,hearing,order,ppo,misconduct,parenting time,custody,muskegon|Overview: Since October 1, 2023, Plaintiff Andrew J. Pigors (“Father”) has experienced numerous procedural and legal violations in the Muskegon County custody case Pi",
+      "score": 15.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0024",
+      "text": "> Andrew Pigors | | 2024-04-01 | Custody action filed (2024-001507-DC) | Father seeks custody/parenting time | | 2024-04-11 | Order After Hearing PPO | Modify/Extend/Terminate hearing | | 2024-07-10 | Email re: Court Staff Exhibits | Service/procedural issues | | 2024-10-30 | PPO Hearing Transcript |",
+      "score": 15.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/43_REMEDIES/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0025",
+      "text": "722.27] ...norable Judge: Jenny McNeill    Plaintiff: Andrew Pigors   1977 Whitehall Rd \",\"MCL  722.27; MCL 722.23; MCR  2.505; MCR 2.505\",Clarify PPO scope; reinstate PT ex parte,20...",
+      "score": 15.2625,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/01_MCL_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0026",
+      "text": "2.505] ...ill    Plaintiff: Andrew Pigors   1977 Whitehall Rd \",\"MCL  722.27; MCL 722.23; MCR  2.505; MCR 2.505\",Clarify PPO scope; reinstate PT ex parte,2023_5907_pp The whole sto...",
+      "score": 15.0975,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0027",
+      "text": "The father, Andrew Pigors, has raised concerns about improper modifications to the parenting time arrangement without a hearing. MCL 722.23(a-l) outlines the best interest factors that a court must consider when making custody and parenting time determinations. The evidence suggests that these factors have not been adequately addressed in the August ex parte order, which did not simply adjust one element of the parenting time schedule but appears to have significantly altered the arrangement (se",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/00_FLEET_DASHBOARD/MASTER_LLM_STRATEGY.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0028",
+      "text": "> added upon legal review)**  ---  ## I. JURISDICTION AND VENUE  This Court has jurisdiction under MCL 600.605 (general circuit court jurisdiction) and MCL 600.8301 (venue proper in Muskegon County where events occurred and parties reside).  ---  ## II. PARTIES  **Plaintiff Andrew Pigors** is an indiv",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person"
+      ]
+    },
+    {
+      "id": "e0029",
+      "text": "> mplainant:** Andrew J. Pigors   **Defendant:** Emily A. Watson   **Jurisdiction:** Muskegon County Prosecutor's Office   **Crimes Alleged:** Perjury (MCL 750.423), Fraud (MCL 750.218), Filing False Reports (MCL 750.411)  ---  ## I. STATEMENT OF FACTS  Emily A. Watson has committed multiple counts of",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0030",
+      "text": "> and findings of MCR violations, Andrew requests modification of custody to grant him sole legal and physical custody of Lincoln.\"  **Legal Basis:** - MCL 722.27: Custody modification - Change in circumstances (Emily's false allegations, judge's violations) - Best interest factors (MCL 722.23)  **Lik",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0031",
+      "text": "In the context of Pigors v Watson, these precedents are particularly relevant given the father's claims of parental alienation, judicial misconduct, and prolonged separation without a hearing. The father may argue that the mother's actions have alienated him from his child, that the judge has acted improperly, and that the prolonged separation without a hearing violates his due process rights and constitutes an abuse of discretion. He may also argue that the mother has violated discovery rules b",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/03_CASELAW/LLM_CASELAW_ANALYSIS.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0032",
+      "text": "[ANDREW J. PIGORS] ...a; MCR 2.119(B); MCR 3.207(B); MCR 3.215; MCR 3.215(E)(4),\"E COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff, In Pro Per v. EMILY A. WATSON, Defendant. Case No.: 2024-001507-DC...",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/09_ANDREW_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0033",
+      "text": "> rn | | | 2023 | PPO Case 2023-5907-PP filed | Emily Watson obtains PPO against Andrew Pigors | | 2024-04-01 | Custody action filed (2024-001507-DC) | Father seeks custody/parenting time | | 2024-04-11 | Order After Hearing PPO | Modify/Extend/Terminate hearing | | 2024-07-10 | Email re: Court Staff",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0034",
+      "text": "> SON  **Complainant:** Andrew J. Pigors   **Defendant:** Emily A. Watson   **Jurisdiction:** Muskegon County Prosecutor's Office   **Crimes Alleged:** Perjury (MCL 750.423), Fraud (MCL 750.218), Filing False Reports (MCL 750.411)  ---  ## I. STATEMENT OF FACTS  Emily A. Watson has committed multiple",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/23_FRAUD/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0035",
+      "text": "> Hon. Kenneth S. Hoopes SHADY OAKS MHP LLC, et al.,     Defendants. __________________________________________________________/        VERIFIED MOTION TO DECLARE PRIOR DEFENSE FILINGS VOID  [Filed Under: MCR 2.114(C)–(E); MCR 2.115(B); MCL 600.2907; MCR 7.216(A)(7)] NOW COMES Plaintiff, ANDREW J. PIG",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0036",
+      "text": "> Hon. Kenneth S. Hoopes SHADY OAKS MHP LLC, et al.,     Defendants. __________________________________________________________/              VERIFIED MOTION TO STRIKE DEFENSE FILINGS     [Filed Under: MCR 2.115(B); MCR 2.114(E); MCL 600.5815; MCL 600.2907] NOW COMES Plaintiff, ANDREW J. PIGORS, in pr",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0037",
+      "text": "> **Harm Caused**: - Andrew investigated for child abuse - Parenting time suspended during investigation - Permanent record of abuse allegation despite exoneration  ---  ## PART III: PROCEDURAL VIOLATIONS BY JUDGE MCNEILL  ### A. **MCR 3.207/3.310 - Ex Parte Order Requirements**  **From Canon_MCR_Viol",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/30_EVIDENCE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0038",
+      "text": "> ainant:** Andrew Pigors, 1977 Whitehall Rd, Laketon Township, MI 49445   **Case Numbers:** 2023-5907-PP (PPO); 2024-001507-DC (Custody/Parenting Time/Child Support)    ---  ## I. JURISDICTION AND PURPOSE  The Judicial Tenure Commission has authority under Const 1963, art 6, § 30 and MCL 600.1401 et",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/32_FINANCIAL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person"
+      ]
+    },
+    {
+      "id": "e0039",
+      "text": "> __________________________/        VERIFIED MOTION TO DECLARE PRIOR DEFENSE FILINGS VOID  [Filed Under: MCR 2.114(C)–(E); MCR 2.115(B); MCL 600.2907; MCR 7.216(A)(7)] NOW COMES Plaintiff, ANDREW J. PIGORS, in propria persona, and respectfully moves this Honorable Court to declare all prior filings s",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/41_APPELLATE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0040",
+      "text": "> # CRIMINAL COMPLAINT ## STATE OF MICHIGAN v. EMILY A. WATSON  **Complainant:** Andrew J. Pigors   **Defendant:** Emily A. Watson   **Jurisdiction:** Muskegon County Prosecutor's Office   **Crimes Alleged:** Perjury (MCL 750.423), Fraud (MCL 750.218), Filing False Reports (MCL 750.411)  ---  ## I. ST",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/50_CASE_NO/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0041",
+      "text": "> es:** Emily Watson (Petitioner) v. Andrew Pigors (Respondent) - **Judge:** Jenny L. McNeill - **Description:** Emily Watson files custody petition in 14th Judicial Circuit - **Violation Grounds:** Ground 5 (Statutory Requirements) - **Legal Violations:**   - MCL 722.27a - Custody law   - MCR 3.210 -",
+      "score": 15.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/50_CASE_NO/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0042",
+      "text": "PIGORS] ...$122.67 53% -$58.00 53% $20.00 $0.00 $0.00 $0.00 53% $163.00 $6,259.07 $454.00 ANDREW PIGORS $3,480.00 S545.47 $2,934.53 46.88% $545.00 182.5 $0.00 $0.00 o o o $0.00 $0.00...",
+      "score": 14.8,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/09_ANDREW_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "financial",
+        "person"
+      ]
+    },
+    {
+      "id": "e0043",
+      "text": "[parenting time] ...uired=11 TOP_TERMS ppo:11495 violation:9623 order:9319 motion:5345 custody:3572 parenting time:3043 hearing:2917 service:2768 pigors:2651 ex parte:2636 contempt:2413 watson:1...",
+      "score": 14.775,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/17_PERSONS/17_PERSONS_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0044",
+      "text": "[MCR 3.207] ...porting Andrew  **Pattern Element #3: Procedural Violations**  - **Violation:** MCR 3.207 requires hearing within 21 days of ex parte order - **Instance:** Hearing delay...",
+      "score": 14.025,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0045",
+      "text": "[MCR 3.207] ...idence supporting Andrew Pattern Element #3: Procedural Violations • Violation: MCR 3.207 requires hearing within 21 days of ex parte order • Instance: Hearing delayed b...",
+      "score": 14.025,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0046",
+      "text": "> al Misconduct in Pigors v. Watson-1.pdf` | 172.13 KB | 01/16/2026 | Master evidence compilation (90% complete per document). Documents: custody bias, protective order (PPO) abuse, perjury evidence, and judge bias. Includes HealthWest evaluation analysis and parenting time timeline. |  ### Appellate",
+      "score": 14.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/20_PPO/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0047",
+      "text": "> al Misconduct in Pigors v. Watson-1.pdf` | 172.13 KB | 01/16/2026 | Master evidence compilation (90% complete per document). Documents: custody bias, protective order (PPO) abuse, perjury evidence, and judge bias. Includes HealthWest evaluation analysis and parenting time timeline. | - `staging/SESS",
+      "score": 14.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/20_PPO/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0048",
+      "text": "> atson obtains PPO against Andrew Pigors | | 2024-04-01 | Custody action filed (2024-001507-DC) | Father seeks custody/parenting time | | 2024-04-11 | Order After Hearing PPO | Modify/Extend/Terminate hearing | | 2024-07-10 | Email re: Court Staff Exhibits | Service/procedural issues | | 2024-10-30 |",
+      "score": 14.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/27_ORDERS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0049",
+      "text": "> ct in Pigors v. Watson-1.pdf` | 172.13 KB | 01/16/2026 | Master evidence compilation (90% complete per document). Documents: custody bias, protective order (PPO) abuse, perjury evidence, and judge bias. Includes HealthWest evaluation analysis and parenting time timeline. |  ### Appellate & Motion Do",
+      "score": 14.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/27_ORDERS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0050",
+      "text": "> 2 3 61   Jur: MCNEILL 0000005907 PP Ref  : WATSON  V   PIGORS CLOSE Pub 54 55 56 57 59 61 62 66 67 ORDER 01 / 07 / 2025   D  001 RNU ORDER ORDER  ON  MOTION TO  MODIFY, EXTEND, OR  TERMINATE PERSONAL PROTECTION ORDER 01/07/2025 RNU ORDER ORDER  AFTER   HEARING   ON  VIOLATION OF  VALID PERSONAL PROT",
+      "score": 14.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0051",
+      "text": "> `C:\\Users\\andre\\Desktop\\CAPSTONE\\Comprehensive Evidence Analysis_ Custody, PPO Misuse & Judicial Misconduct in Pigors v. Watson-1.pdf` | 172.13 KB | 01/16/2026 | Master evidence compilation (90% complete per document). Documents: custody bias, protective order (PPO) abuse, perjury evidence, and judg",
+      "score": 14.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0052",
+      "text": "[Custody] ...e: __________________________  Andrew Pigors, Plaintiff    IV. Motion to Modify Custody, Terminate PPO, and Prohibi\",MCL 722.23; MCL 722.27,Bar PPO interference; reins...",
+      "score": 13.725,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/19_CUSTODY_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person"
+      ]
+    },
+    {
+      "id": "e0053",
+      "text": "[hearing] ...po:11495 violation:9623 order:9319 motion:5345 custody:3572 parenting time:3043 hearing:2917 service:2768 pigors:2651 ex parte:2636 contempt:2413 watson:1889 foc:1875...",
+      "score": 13.65,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/26_HEARINGS/26_HEARINGS_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0054",
+      "text": "[Motion] ..._______  Signature: __________________________  Andrew Pigors, Plaintiff    IV. Motion to Modify Custody, Terminate PPO, and Prohibi\",MCL 722.23; MCL 722.27,Bar PPO i...",
+      "score": 13.575,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/28_MOTIONS_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person"
+      ]
+    },
+    {
+      "id": "e0055",
+      "text": "> ng time (August 2025) 4. Prevent modification of custody (ongoing)  **Legal Consequences:** Each false statement under oath constitutes perjury under MCL 750.423  ---  ## PART 3: JUDGE McNEILL'S JUDICIAL MISCONDUCT  ### 3.1 Pattern of Bias Against Andrew  **Pattern Element #1: Ex Parte Orders Withou",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0056",
+      "text": "> -known addressesasdefined in MCR2.107(C)(3). Date Movingparty cc 385 (3/08) ORDER ON MOTION TO MODIFY, EXTEND, OR TERMINATE PERSONAL PROTECTION ORDER MCR 3.707  --- PAGE 46 ---  GRAND SUMMARY EXPARTE PARENTING TIME VIOLATIONS.txt Verified Chronology of Procedural Violations (Pigors v. Watson, 2023–2",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0057",
+      "text": "> ive the court (obtain PPO) - Judge relied on false statements (issued PPO) - Andrew and child were harmed (separation, alienation)  **Legal Remedy:** MCR 2.612 allows setting aside judgments obtained through fraud on the court  ---  ## PART 5: PARENTAL ALIENATION  ### 5.1 Definition and Elements  **",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0058",
+      "text": "[Pigors] ...& 2024-001507-DC (Custody)  Honorable Judge: Jenny McNeill    Plaintiff: Andrew Pigors   1977 Whitehall Rd \",\"MCL  722.27; MCL 722.23; MCR  2.505; MCR 2.505\",Clarify...",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/09_ANDREW_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0059",
+      "text": "> nned2_0039.pdf|PDF_SEG|order,parenting time,custody|Defendant objects to the finding that \"the parties agree to physical custody and parenting time.\" Pigors v Watson Page 1 of 5 Obj Ex Part Order Custody, PT, CS 2024-001507-DC UNDATE|MEEK2||EA_6470f1091936|DOC_99252c918af0|expartescannedandmine_0011",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0060",
+      "text": "> ORDER\\tP1\\t\\t\\tCSJ\\r\\n08/12/2025\\tMOTION HEARING\\tPlaintiff's Motion for Preliminary Injunction and Defendant's Motion for Security & Sanctions. Mr. Pigors Appearing in Person. Aty Brown Appearing via ZOOM. DISMISSED. Plaintiff to have No Cost/Atty Fees. Court to Refer falsified Court Order to Prose",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0061",
+      "text": "> Judicial Misconduct in Pigors v. Watson.docx  [PPO, custody, Watson]  (53281 bytes) - EMILY WATSON FINAL LAWSUIT!!!!! (2024_11_18 06_39_35 UTC).pdf  [Watson, Emily]  (178144 bytes) - Comprehensive Legal Filings to Counter PPO Fraud, Custody Interference, and Judicial Bias.pdf  [PPO, custody]  (10088",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/10_EMILY/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0062",
+      "text": "> ent modification of custody (ongoing)  **Legal Consequences:** Each false statement under oath constitutes perjury under MCL 750.423  ---  ## PART 3: JUDGE McNEILL'S JUDICIAL MISCONDUCT  ### 3.1 Pattern of Bias Against Andrew  **Pattern Element #1: Ex Parte Orders Without Procedural Safeguards**  -",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/14_MCNEILL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0063",
+      "text": "> ive Synthesis of Constitutional Violations, Judicial Misconduct, and Parental Rights Deprivation  **Petitioner:** Andrew J. Pigors   **Respondents:** Hon. Jenny L. McNeill (in official capacity); State of Michigan; Muskegon County   **Jurisdiction:** 42 USC § 1983; 28 USC § 1331 (federal question);",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/14_MCNEILL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0064",
+      "text": "> AUGUST 8, 2025 EX PARTE SUSPENSION (THE CRITICAL VIOLATION)  Approximately thirteen months after the July 17, 2024 custody order, on August 8, 2025, Judge Jenny L. McNeill issued an ex parte order suspending Andrew J. Pigors's parenting time. This order was issued without:  - An affidavit or verifie",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/14_MCNEILL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0065",
+      "text": "> tended to deceive the court (obtain PPO) - Judge relied on false statements (issued PPO) - Andrew and child were harmed (separation, alienation)  **Legal Remedy:** MCR 2.612 allows setting aside judgments obtained through fraud on the court  ---  ## PART 5: PARENTAL ALIENATION  ### 5.1 Definition an",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/17_PERSONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0066",
+      "text": "> y Oaks, Homes of America, Alden, Coercive rent/utility scheme)\\n- \\ud83d\\udc68\\u200d\\ud83d\\udc66 **Meek2** (Custody: Pigors v. Watson, parenting time obstruction, PPO retaliation)\\n- \\ud83d\\udee1\\ufe0f **Meek3** (PPO: false filings, abusive pattern, contempt jailing, evidentiary suppression)\\n- \\u26",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/18_ALIENATION/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0067",
+      "text": "> ase 2023-5907-PP filed | Emily Watson obtains PPO against Andrew Pigors | | 2024-04-01 | Custody action filed (2024-001507-DC) | Father seeks custody/parenting time | | 2024-04-11 | Order After Hearing PPO | Modify/Extend/Terminate hearing | | 2024-07-10 | Email re: Court Staff Exhibits | Service/pr",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0068",
+      "text": "> LegalDocument (e.g. Parenting Time Denial RESOLVED_BY CourtOrder that enforced makeup parenting time). MEEK3: PPO Track (Personal Protection Order & False Allegations) Node Types: Person, CourtCase, LegalDocument, Event, Allegation, Issue/Violation Person: Emily (PPO petitioner), Andrew (respondent)",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/23_FRAUD/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0069",
+      "text": "> rds  **Pattern Element #5: Denial of Opportunity to Be Heard**  - **Violation:** 14th Amendment due process guarantee - **Instance:** Ex parte orders without hearing; hearing delayed; evidence ignored - **Impact:** Andrew unable to present defense or evidence - **Bias Indicator:** Judge systematical",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/25_VIOLATIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0070",
+      "text": "> everse the trial court's orders suspending Andrew's parenting time for lack of MCL 722.27a(3) endangerment findings;  3. Declare that the trial court violated MCR 3.207(C)(2) by issuing 156+ ex parte orders without verified affidavits;  4. Remand with instructions to restore Andrew's parenting time,",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/25_VIOLATIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0071",
+      "text": "> ATSON, - Defendant. - AFFIDAVIT OF ANDREW J. PIGORS - Expanded Specific Instances from Chat/Evidence Harvest - 21. [ExParte] DEFENDANT'S OBJECTION TO EX PARTE ORDER FOR CUSTODY. PARENTING TIME, AND CHILD SUPPORT - FOLLOWING FACILITATIVE INFORMATION GATHERING CONFERENCE  (Legal: MCR 3.207(B)(2))  (So",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/25_VIOLATIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0072",
+      "text": "> rication begins | | 2023-11-17 | **Emily obtains ex parte PPO** alleging poisoning/assault (FALSE) | **PPO 2023-5907-PP issued** | | 2024-01-05 | PPO hearing - Judge ignores Andrew's evidence | PPO maintained despite fraud | | 2025-07-29 | **Last parenting time with son** | 192+ days separation begi",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/26_HEARINGS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0073",
+      "text": "> dge relied on false statements (issued PPO) - Andrew and child were harmed (separation, alienation)  **Legal Remedy:** MCR 2.612 allows setting aside judgments obtained through fraud on the court  ---  ## PART 5: PARENTAL ALIENATION  ### 5.1 Definition and Elements  **Parental Alienation:** Systemat",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/27_ORDERS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0074",
+      "text": "> Defendant. - AFFIDAVIT OF ANDREW J. PIGORS - Expanded Specific Instances from Chat/Evidence Harvest - 21. [ExParte] DEFENDANT'S OBJECTION TO EX PARTE ORDER FOR CUSTODY. PARENTING TIME, AND CHILD SUPPORT - FOLLOWING FACILITATIVE INFORMATION GATHERING CONFERENCE  (Legal: MCR 3.207(B)(2))  (Source: - C",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/27_ORDERS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0075",
+      "text": "> Supporting Evidence:** All five bias patterns documented above - **Filing Deadline:** ASAP - current judge is biased against Andrew  **Action 3: File Motion to Set Aside PPO**  - **What:** Motion to set aside PPO 2023-5907-PP under MCR 2.612 - **Basis:** Fraud on court; false statements; concealed e",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0076",
+      "text": "> led | Emily Watson obtains PPO against Andrew Pigors | | 2024-04-01 | Custody action filed (2024-001507-DC) | Father seeks custody/parenting time | | 2024-04-11 | Order After Hearing PPO | Modify/Extend/Terminate hearing | | 2024-07-10 | Email re: Court Staff Exhibits | Service/procedural issues | |",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0077",
+      "text": "> 4 Pigors Files Objection + Exhibits\\\\n59. **08/22/2025** \\u2014 Ex Parte Hearing Held\\\\n60. **09/04/2025** \\u2014 Objection Hearing Scheduled\\\\n61. **09/09/2025** \\u2014 Order Issued re Plaintiff\\u2019s Objection to Ex Parte\\\\n\\\\n---\\\\n\\\\nThis timeline now reflects **PPO + Custody + Objection** flow",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0078",
+      "text": "> e) | Evidence fabrication begins | | 2023-11-17 | **Emily obtains ex parte PPO** alleging poisoning/assault (FALSE) | **PPO 2023-5907-PP issued** | | 2024-01-05 | PPO hearing - Judge ignores Andrew's evidence | PPO maintained despite fraud | | 2025-07-29 | **Last parenting time with son** | 192+ day",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0079",
+      "text": "> oning/assault (FALSE) | **PPO 2023-5907-PP issued** | | 2024-01-05 | PPO hearing - Judge ignores Andrew's evidence | PPO maintained despite fraud | | 2025-07-29 | **Last parenting time with son** | 192+ days separation begins | | 2025-08-08 | **Ex parte parenting time suspension** without affidavit",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0080",
+      "text": "> ed to deceive the court (obtain PPO) - Judge relied on false statements (issued PPO) - Andrew and child were harmed (separation, alienation)  **Legal Remedy:** MCR 2.612 allows setting aside judgments obtained through fraud on the court  ---  ## PART 5: PARENTAL ALIENATION  ### 5.1 Definition and El",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/43_REMEDIES/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0081",
+      "text": "> scheme)\\n- \\ud83d\\udc68\\u200d\\ud83d\\udc66 **Meek2** (Custody: Pigors v. Watson, parenting time obstruction, PPO retaliation)\\n- \\ud83d\\udee1\\ufe0f **Meek3** (PPO: false filings, abusive pattern, contempt jailing, evidentiary suppression)\\n- \\u2696\\ufe0f **Meek4** (Canon Violations: Judge McNeill, Ju",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/49_MEEK/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0082",
+      "text": "PIGORS] ...08.49 $0.00 $0.00 $680.93 $122.67 $122.67 $2,047.71 $3,324.54 53. 12% $6,259.07 ANDREW  PIGORS Employer  Wages $3,480.00 $0.00 $0.00 $3,480.00 Head  of Household 2 $266.22 $1...",
+      "score": 13.16,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/09_ANDREW_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "financial",
+        "person"
+      ]
+    },
+    {
+      "id": "e0083",
+      "text": "[JURISDICTION] ....304; MCR 7.316)  Petitioner, Andrew J. Pigors, in propria persona, states:  I. JURISDICTION AND AUTHORITY  This is an original petition under MCR 7.304(A) and MCR 7.316(A)...",
+      "score": 13.0275,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/45_PROCEDURAL/45_PROCEDURAL_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0084",
+      "text": "> Significance | |------|-------|-------------| | 2019 | Child L.D.W. born | | | 2023 | PPO Case 2023-5907-PP filed | Emily Watson obtains PPO against Andrew Pigors | | 2024-04-01 | Custody action filed (2024-001507-DC) | Father seeks custody/parenting time | | 2024-04-11 | Order After Hearing PPO | M",
+      "score": 13.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0085",
+      "text": "> EX PARTE SUSPENSION (THE CRITICAL VIOLATION)  Approximately thirteen months after the July 17, 2024 custody order, on August 8, 2025, Judge Jenny L. McNeill issued an ex parte order suspending Andrew J. Pigors's parenting time. This order was issued without:  - An affidavit or verified pleading from",
+      "score": 13.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/14_MCNEILL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0086",
+      "text": "> Parenting Time/Child Support)  ### 2025 - Ex Parte Order Pattern (CRITICAL)  **August 2025 - Mass Ex Parte Orders:** - **August 7, 2025** - Emergency Ex Parte Motion filed (multiple versions) - **August 8, 2025** - **FIVE separate ex parte orders** entered suspending Andrew's parenting time without",
+      "score": 13.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0087",
+      "text": "> -----|-------|-------------| | 2019 | Child L.D.W. born | | | 2023 | PPO Case 2023-5907-PP filed | Emily Watson obtains PPO against Andrew Pigors | | 2024-04-01 | Custody action filed (2024-001507-DC) | Father seeks custody/parenting time | | 2024-04-11 | Order After Hearing PPO | Modify/Extend/Term",
+      "score": 13.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0088",
+      "text": "> b74b0a1 | 000000001.zip/McneillOrdertomyobjection.docx | | 2025-09-04 | 2026-02-08 22:56:55 -0500 | DOC_POINTER | RUSCOGmail - Request Hearing Date — FOC 61 Objection to Ex Parte Order — 2024-001507-DC (Pigors v.PDF.pdf (hits:ex parte;objection;hearing;order;foc) | DOC_089549ba6d71 | 000000002.zip/R",
+      "score": 13.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/46_FOC/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0089",
+      "text": "[MCL 722.27] ...ere lacking, the court violated Andrew’s due process rights under MCR 3.207 and MCL 722.27a(1) (which mandates a finding of danger before parenting time can be restricted...",
+      "score": 12.7575,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/01_MCL_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0090",
+      "text": "[MCL 722.27] ...re lacking, the court violated Andrew’s due process rights under MCR 3.207 and  MCL 722.27a(1) (which mandates a finding of danger before parenting time can be restricted...",
+      "score": 12.7575,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/01_MCL_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0091",
+      "text": "[MISCONDUCT] ...constitutes perjury under MCL 750.423  ---  ## PART 3: JUDGE McNEILL'S JUDICIAL MISCONDUCT  ### 3.1 Pattern of Bias Against Andrew  **Pattern Element #1: Ex Parte Orders...",
+      "score": 12.69,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/22_MISCONDUCT/22_MISCONDUCT_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0092",
+      "text": "[MISCONDUCT] ...er oath constitutes perjury under MCL  750.423 PART 3: JUDGE McNEILL'S JUDICIAL MISCONDUCT 3.1 Pattern of Bias Against Andrew Pattern Element #1: Ex Parte Orders Without...",
+      "score": 12.69,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/22_MISCONDUCT/22_MISCONDUCT_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0093",
+      "text": "[MCR 7.211] ...TION FOR IMMEDIATE CONSIDERATION AND FOR STAY / INTERIM RELIEF PENDING APPEAL  (MCR 7.211(C)(6); MCR 7.209)  Appellant–Plaintiff, Andrew J. Pigors, in propria persona, m...",
+      "score": 12.6225,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0094",
+      "text": "[MCR 7.209] ...E CONSIDERATION AND FOR STAY / INTERIM RELIEF PENDING APPEAL  (MCR 7.211(C)(6); MCR 7.209)  Appellant–Plaintiff, Andrew J. Pigors, in propria persona, moves for immediat...",
+      "score": 12.6225,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0095",
+      "text": "[MCR 3.207] ...t such facts were lacking, the court violated Andrew’s due process rights under MCR 3.207 and MCL 722.27a(1) (which mandates a finding of danger before parenting time ca...",
+      "score": 12.6225,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0096",
+      "text": "> ural Violations (Pigors v. Watson, 2023–2025).pdf    - Evidence ID: EA_0b4f3bc8ecf4    - Lane: MEEK2    - Case(s): nan 15. **2023-10-01**: Violated:  MCR   3.207(B)(5)   and   (B)(6)   require   that   an   ex   parte   custody/parenting   time   order   must    - Source: Verified Chronology of Proc",
+      "score": 12.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0097",
+      "text": "> JUDICIAL MISCONDUCT  ### 3.1 Pattern of Bias Against Andrew  **Pattern Element #1: Ex Parte Orders Without Procedural Safeguards**  - **Violation:** MCR 3.206(A) requires affidavits for emergency parenting time orders - **Instance:** August 8, 2025 ex parte suspension ordered without affidavit - **I",
+      "score": 12.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0098",
+      "text": "> MEEK2    - Case(s): nan 99. **2025-09-04**: Request Hearing Date — FOC 61 Objection to Ex Parte Order — 2024-001507-DC (Pigors v. Watson)    - Source: RUSCOGmail - Request Hearing Date — FOC 61 Objection to Ex Parte Order — 2024-001507-DC (Pigors v.PDF.pdf    - Evidence ID: EA_08404d50f5df    - Lane",
+      "score": 12.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/15_RUSCO/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0099",
+      "text": "> parte order entered 08/08/2025 without notice to Andrew Pigors\" → PPO PDF #7, pages 1-2  **Crosswire** - System connecting everything: - Evidence → Legal Authority → Harm → Remedy → Vehicle → Form → Proposed Order - Example: Ex parte order (evidence) → MCR 3.207 violation (authority) → Loss of 10 da",
+      "score": 12.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/17_PERSONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0100",
+      "text": "> ded for a new hearing before a different judge.  Respectfully submitted,  **Andrew James Pigors**   Pro Se   February 11, 2026  ---  ## APPENDIX A: LEGAL CITATIONS  **Michigan Statutes:** - MCL 722.27a - Custody law - MCL 750.539 - Wiretapping law  **Michigan Court Rules:** - MCR 2.003 - Disqualific",
+      "score": 12.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/17_PERSONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0101",
+      "text": "> 8ecf4    - Lane: MEEK2    - Case(s): nan 15. **2023-10-01**: Violated:  MCR   3.207(B)(5)   and   (B)(6)   require   that   an   ex   parte   custody/parenting   time   order   must    - Source: Verified Chronology of Procedural Violations (Pigors v. Watson, 2023–2025).pdf    - Evidence ID: EA_8b8d8",
+      "score": 12.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0102",
+      "text": "> y of Procedural Violations (Pigors v. Watson, 2023–2025).pdf    - Evidence ID: EA_0b4f3bc8ecf4    - Lane: MEEK2    - Case(s): nan 15. **2023-10-01**: Violated:  MCR   3.207(B)(5)   and   (B)(6)   require   that   an   ex   parte   custody/parenting   time   order   must    - Source: Verified Chronol",
+      "score": 12.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/25_VIOLATIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0103",
+      "text": "> idence ID: EA_0b4f3bc8ecf4    - Lane: MEEK2    - Case(s): nan 15. **2023-10-01**: Violated:  MCR   3.207(B)(5)   and   (B)(6)   require   that   an   ex   parte   custody/parenting   time   order   must    - Source: Verified Chronology of Procedural Violations (Pigors v. Watson, 2023–2025).pdf    -",
+      "score": 12.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/25_VIOLATIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0104",
+      "text": "> $250 bond, contempt threat, parenting time suspended | ``` **Context (±1 line):** ```text   L00256: | **PPO Violations** | 47 phone calls to Andrew (violated no-contact) | 0 | > L00257: | **Sanctions Imposed** | **ZERO** | $250 bond, contempt threat, parenting time suspended |   L00258: | **Days Par",
+      "score": 12.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/25_VIOLATIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "financial",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0105",
+      "text": "> SON_20260209.md:L45` — This Court has jurisdiction pursuant to MCR 7.205(A) and MCL 600.308. This Application for Leave to Appeal challenges multiple final orders issued by the trial court suspending Plaintiff-Appellant Andrew Pigors' parenting time with his mino - 2024-04-11 — `staging/LITIGATION_O",
+      "score": 12.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/27_ORDERS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0106",
+      "text": "> 25** \\u2014 Emergency Ex Parte Motion to Suspend Parenting Time Filed by Watson\\\\n58. **08/21/2025** \\u2014 Pigors Files Objection + Exhibits\\\\n59. **08/22/2025** \\u2014 Ex Parte Hearing Held\\\\n60. **09/04/2025** \\u2014 Objection Hearing Scheduled\\\\n61. **09/09/2025** \\u2014 Order Issued re Plaintif",
+      "score": 12.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0107",
+      "text": "> Imposed** | **ZERO** | $250 bond, contempt threat, parenting time suspended | ``` **Context (±1 line):** ```text   L00256: | **PPO Violations** | 47 phone calls to Andrew (violated no-contact) | 0 | > L00257: | **Sanctions Imposed** | **ZERO** | $250 bond, contempt threat, parenting time suspended |",
+      "score": 12.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/37_COMMS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "financial",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0108",
+      "text": "[CONTEMPT] ...H PREJUDICE  (MCR 3.708; LOGISTICAL APPCLOSE MESSAGES ARE NOT PPO VIOLATIONS OR CONTEMPT)  Respondent, ANDREW J. PIGORS, in pro p\" massiveeee.zip,expartescannedandmine_...",
+      "score": 12.4875,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/24_CONTEMPT/24_CONTEMPT_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0109",
+      "text": "[custody] ...21369|ocr_required=11 TOP_TERMS ppo:11495 violation:9623 order:9319 motion:5345 custody:3572 parenting time:3043 hearing:2917 service:2768 pigors:2651 ex parte:2636 co...",
+      "score": 12.3525,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/19_CUSTODY_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0110",
+      "text": "[motion] ...3 NOW COMES Plaintiff, ANDREW J. PIGORS, and, following denial of his MCR 2.003 motion on ____________, requests **de novo** review by the Chief Judge under MCR 2.003...",
+      "score": 12.2175,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/28_MOTIONS_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0111",
+      "text": "[RELIEF] ...residing  APPELLANT’S MOTION FOR IMMEDIATE CONSIDERATION AND FOR STAY / INTERIM RELIEF PENDING APPEAL  (MCR 7.211(C)(6); MCR 7.209)  Appellant–Plaintiff, Andrew J. Pi...",
+      "score": 12.2175,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/43_REMEDIES/43_REMEDIES_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0112",
+      "text": "1. Obstructing Father's Parenting Time (MCL 722.23 Factor g): The evidence suggests that Emily Watson has made false allegations with the intent to obstruct Father Andrew Pigors' parenting time (ADVANCED_LITIGATION_STRATEGIES.md, COMPREHENSIVE_LEGAL_ANALYSIS_Pigors_v_Watson.md). This behavior interferes with the child's relationship with the father, which is against MCL 722.23 Factor g.",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/00_FLEET_DASHBOARD/LLM_ALIENATION_DOSSIER.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0113",
+      "text": "> --------/------------------/\\\\n/ 1     / \\\\u201cDefendant is no stranger to Mr. Pigors.\\\\u201d / Irrelevant, prejudicial, editorial framing. Violates MCR 2.119(A)(1). / MCR 2.119(A)(1); MCL 600.5701 / \\\\u2014 /\\\\n/ 2     / \\\\u201cMr. Pigors initiated a small claims suit\\\\u2026\\\\u201d / Valid action",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0114",
+      "text": "In the context of Pigors v Watson, these cases suggest that the prolonged separation without a hearing may constitute an abuse of discretion, a potential violation of due process, and a possible violation of discovery rules. The father's claims of parental alienation and judicial misconduct also raise additional concerns about the fairness of the proceedings.",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/03_CASELAW/LLM_CASELAW_ANALYSIS.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0115",
+      "text": "[ANDREW J. PIGORS] ...ENTING TIME AND TEMPORARY MODIFICATION OF PHYSICAL CUSTODY NOW COMES Plaintiff, ANDREW J. PIGORS, in pro per, and pursuant to MCL 722.27(1)(c), MCR 3.207(A), and MCL 722.27a(9)...",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/09_ANDREW_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0116",
+      "text": "[ANDREW J. PIGORS] ...UEST FOR DE NOVO REVIEW (MCR 2.003(D)(3)(A)(I)) — FINAL V3 NOW COMES Plaintiff, ANDREW J. PIGORS, and, following denial of his MCR 2.003 motion on ____________, requests **de n...",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/09_ANDREW_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0117",
+      "text": "[ANDREW J. PIGORS] ...R DE NOVO REVIEW (MCR 2.003(D)(3)(A)(I)) \\u2014 FINAL V3 | NOW COMES Plaintiff, ANDREW J. PIGORS, and, following denial of his MCR 2.003 motion on\"     },     {       \"score\":...",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/09_ANDREW_JOURNAL.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0118",
+      "text": "> on County, Michigan)   - **Original Circuit No:** 2023-5907-PP - **Judge:** Jenny L. McNeil (Bias & misconduct allegations documented) - **Parties:** Andrew J. Pigors (Plaintiff/Appellant) vs. Emily A. Watson (Defendant/Respondent) - **Case Type:** Domestic Relations (Custody, Parenting Time, Child",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0119",
+      "text": "> # CRIMINAL COMPLAINT ## STATE OF MICHIGAN v. EMILY A. WATSON  **Complainant:** Andrew J. Pigors   **Defendant:** Emily A. Watson   **Jurisdiction:** Muskegon County Prosecutor's Office   **Crimes Alleged:** Perjury (MCL 750.423), Fraud (MCL 750.",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/09_ANDREW/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0120",
+      "text": "> MRE 901, MCL 750.539, MCR 2.003, and due process. The violations are not isolated errors but demonstrate a pattern of intentional misconduct.  Judge McNeill is unfit to serve as a judge and should be disciplined, suspended, or removed from office.  ---  ## VERIFICATION  I, Andrew James Pigors, decla",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/14_MCNEILL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0121",
+      "text": "> continueorder.txt === STATE OF M CHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER REGARDING PLAINTIFF'S OBJECTION TO EX PARTE ORDER EMILY A. WATSON, Defendant Defendant requested, and the Court signed an ex parte o",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/14_MCNEILL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0122",
+      "text": "> IGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON Plaintiff: ANDREW JAMES PIGORS Defendant: EMILY WATSON Case No. 2024-0000001507-DC Hon. Jenny L. McNeill ORDER DENYING AND STRIKING DEFENDANT'S EMERGENCY EX PARTE MOTION TO SUSPEND PARENTING TIME AND SETTING SHOW CAUSE HEARING At a session of said",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/14_MCNEILL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0123",
+      "text": "> dertomyobjection.docx STATE OF MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER REGARDING PLAINTIFF'S OBJECTION TO EX PARTE ORDER EMILY A. WATSON, Defendant Defendant requested, and the Court signed an ex parte o",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/14_MCNEILL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0124",
+      "text": "> Child Support) **Judge:** Hon. Jenny L. McNeill **Petitioner:** Andrew Pigors, 1977 Whitehall Rd, Laketon Township, MI 49445 **Respondent:** Emily Watson, 2160 Garland Dr, Norton Shores, MI 49441  ---  ## I. JURISDICTION AND VEHICLE  This Court has original jurisdiction under Const 1963, art 6, § 4",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/16_CHILD/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0125",
+      "text": "> skegon County   **Complainant:** Andrew Pigors, 1977 Whitehall Rd, Laketon Township, MI 49445   **Case Numbers:** 2023-5907-PP (PPO); 2024-001507-DC (Custody/Parenting Time/Child Support)    ---  ## I. JURISDICTION AND PURPOSE  The Judicial Tenure Commission has authority under Const 1963, art 6, §",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0126",
+      "text": "> ounty   **Complainant:** Andrew Pigors, 1977 Whitehall Rd, Laketon Township, MI 49445   **Case Numbers:** 2023-5907-PP (PPO); 2024-001507-DC (Custody/Parenting Time/Child Support)    ---  ## I. JURISDICTION AND PURPOSE  The Judicial Tenure Commission has authority under Const 1963, art 6, § 30 and M",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0127",
+      "text": "> - AFFIDAVIT OF ANDREW J. PIGORS - Expanded Specific Instances from Chat/Evidence Harvest - 21. [ExParte] DEFENDANT'S OBJECTION TO EX PARTE ORDER FOR CUSTODY. PARENTING TIME, AND CHILD SUPPORT - FOLLOWING FACILITATIVE INFORMATION GATHERING CONFERENCE  (Legal: MCR 3.207(B)(2))  (Source: - CHATGPT/32ob",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0128",
+      "text": "> VIT OF ANDREW J. PIGORS - Expanded Specific Instances from Chat/Evidence Harvest - 21. [ExParte] DEFENDANT'S OBJECTION TO EX PARTE ORDER FOR CUSTODY. PARENTING TIME, AND CHILD SUPPORT - FOLLOWING FACILITATIVE INFORMATION GATHERING CONFERENCE  (Legal: MCR 3.207(B)(2))  (Source: - CHATGPT/32objections",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0129",
+      "text": "> threat, $250 bond | MCR 3.706(A)(2) | - `staging/LITIGATION_OSvariousparts/EXHIBIT_COVER_SHEETS_MRE_CERTIFIED_20260209.md:L20` — This exhibit is the Personal Protection Order (PPO) petition filed by Emily A. Watson (Respondent/Appellee) on December 4, 2023, alleging that Andrew J. Pigors (Petitioner",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/20_PPO/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "financial",
+        "legal",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0130",
+      "text": "> CONTEMPT SANCTIONS AGAINST EMILY **Request:** \"Andrew requests Emily be held in contempt for: (1) Withholding parenting time 12+ times (2) Violating PPO terms (47 calls in June 2024) (3) Filing false police reports (4) Making false statements to court\"  **Legal Basis:** - MCR 3.606: Contempt in dome",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/20_PPO/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0131",
+      "text": "> Judge ignored Andrew's tax returns and employment records  **Pattern Element #5: Denial of Opportunity to Be Heard**  - **Violation:** 14th Amendment due process guarantee - **Instance:** Ex parte orders without hearing; hearing delayed; evidence ignored - **Impact:** Andrew unable to present defens",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/21_DUE_PROCESS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0132",
+      "text": "> acts Documented ``` Case: Watson v. Andrew J Number: 2024-001507-DC Court: 14th Circuit, Muskegon, Michigan Judge: Jenny L. McNeil (bias documented)  Violations Documented: ✓ Judicial bias (pattern) ✓ Perjury accommodation ✓ Contempt of court ✓ Civil conspiracy ✓ Due process denial ✓ Parental aliena",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/25_VIOLATIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0133",
+      "text": "> provides a solid factual foundation for the PIGORS v WATSON litigation, with **strong support for judge disqualification (MCR 2.003) and due process violation claims**, combined with **moderate support for contempt, PPO violations, and discovery issues**, and **identified support for custody best-in",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/25_VIOLATIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0134",
+      "text": "> ISDICTIONAL STATEMENT  This Court has jurisdiction pursuant to MCR 7.205(A) and MCL 600.308. This Application for Leave to Appeal challenges multiple final orders issued by the trial court suspending Plaintiff-Appellant Andrew Pigors' parenting time with his minor child, Lincoln (DOB redacted). The",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/27_ORDERS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0135",
+      "text": "> SON_20260209.md:L45` — This Court has jurisdiction pursuant to MCR 7.205(A) and MCL 600.308. This Application for Leave to Appeal challenges multiple final orders issued by the trial court suspending Plaintiff-Appellant Andrew Pigors' parenting time with his minor child, Lincoln (DOB redacted). The",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/27_ORDERS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0136",
+      "text": "> Case No. 2023-5907-PP     Petitioner,                                   Hon. Jenny L. McNeill v. ANDREW J. PIGORS,     Respondent. OBJECTION AND MOTION TO DISMISS ORDER TO SHOW CAUSE #7, FOR LACK OF EVIDENTIARY BASIS, UNFAIR PREJUDICE, AND ABUSE OF PROCESS; REQUEST FOR SANCTIONS UNDER MCR 1.109(E)(6",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0137",
+      "text": "> t was intentional (Watson knew of police reports)  **Element #3: Fraudulent Purpose**  - PPO was obtained to gain custody advantage - PPO was used to exclude Andrew from child's life - PPO was used to justify parenting time suspension - PPO was used to facilitate parental alienation  **Element #4: R",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/30_EVIDENCE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0138",
+      "text": "> 24) - **Exhibit J:** Objection Denial Without Hearing - **Exhibit K:** MCL 722.27a Violation Analysis - **Exhibit L:** MCR 3.207 Compliance Audit - **Exhibit M:** Canon Violation Report (Judge McNeill) - **Exhibit N:** Lincoln's School/Medical Records - **Exhibit O:** Andrew's Employment Loss Docume",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/30_EVIDENCE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0139",
+      "text": "> 024-01507-DC - Plaintiff,                                   Hon. Jenny L. McNeill - v. - EMILY WATSON, - Defendant. - AFFIDAVIT OF ANDREW J. PIGORS - Expanded Specific Instances from Chat/Evidence Harvest - 21. [ExParte] DEFENDANT'S OBJECTION TO EX PARTE ORDER FOR CUSTODY. PARENTING TIME, AND CHILD",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/30_EVIDENCE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0140",
+      "text": "> - Domestic Violence/Abuse:** - Housing retaliation constitutes economic abuse - Demonstrates Appellee's pattern of controlling behavior - Relevant to best interest factors  **MCL 722.27(1)(b) - Capacity to Provide Necessities:** - Appellee's coordination with landlord undermined Mr. Pigors' capacity",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/31_BEST_INT/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0141",
+      "text": "> YPE 1: CUSTODY & PARENTING TIME (2024-1507-DC)  ### Case Identification - **Case Number**: 2024-0000001507-DC - **Case Type**: Custody/Parenting Time/Child Support - **Parties**: Andrew J. Pigors (Appellant-Plaintiff) v. Emily Watson (Appellee-Defendant) - **Court**: 14th Judicial Circuit Court, Fam",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/32_FINANCIAL/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person"
+      ]
+    },
+    {
+      "id": "e0142",
+      "text": "> - Judge ignores Andrew's evidence | PPO maintained despite fraud | | 2025-07-29 | **Last parenting time with son** | 192+ days separation begins | | 2025-08-08 | **Ex parte parenting time suspension** without affidavit | Immediate loss of custody | | 2025-08-22 | Hearing on suspension - Judge orders",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "dated",
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0143",
+      "text": "> tentional (Watson knew of police reports)  **Element #3: Fraudulent Purpose**  - PPO was obtained to gain custody advantage - PPO was used to exclude Andrew from child's life - PPO was used to justify parenting time suspension - PPO was used to facilitate parental alienation  **Element #4: Reliance",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/34_NARRATIVE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0144",
+      "text": "> essional, state-of-the-art legal case management website** for Andrew J's defense against Watson family and biased court system. The site will: 1. Present chronological timeline of all case events/violations 2. Display evidence of judicial bias, perjury, contempt, parental alienation 3. Organize cas",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/37_COMMS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0145",
+      "text": "> 17+ days deprivation = substantive due process violation  2. **\"Why didn't Andrew preserve these issues at trial?\"**    - **Answer:** Andrew objected repeatedly; trial court suppressed objections without hearing (MCR 3.310 violation)  3. **\"What about Lincoln's safety? Shouldn't we defer to trial co",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/39_PATTERNS/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0146",
+      "text": "> ON_LEAVE_BRIEF_PIGORS_v_WATSON_20260209.md:L45` — This Court has jurisdiction pursuant to MCR 7.205(A) and MCL 600.308. This Application for Leave to Appeal challenges multiple final orders issued by the trial court suspending Plaintiff-Appellant Andrew Pigors' parenting time with his mino - 2024-04",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/41_APPELLATE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0147",
+      "text": "> ON_LEAVE_BRIEF_PIGORS_v_WATSON_20260209.md:L45` — This Court has jurisdiction pursuant to MCR 7.205(A) and MCL 600.308. This Application for Leave to Appeal challenges multiple final orders issued by the trial court suspending Plaintiff-Appellant Andrew Pigors' parenting time with his minor child, L",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/41_APPELLATE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0148",
+      "text": "> AL RECORD Petitioner Andrew J. Pigors states: I.   NATURE OF THE ACTION 1.  This is an original action for superintending control under MCR 3.302 and MCR 7.203(C)     dire === SAMPLE FROM: D:\\NARRATIVE CUSTODY PPO EMILY MCNEILL.txt === july 17th was the custody trial where i was not allowed to prese",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/41_APPELLATE/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0149",
+      "text": "> ** for lack of proper foundation 4. **Sanction Emily** for false allegations (MCR 2.114(E)) 5. **Award attorney fees** if Andrew obtains counsel 6. **Remand with instructions**: Best interest hearing required before any parenting time modification  **Standard of Review**: - *De novo*: Constitutional",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/43_REMEDIES/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "mcr",
+        "person"
+      ]
+    },
+    {
+      "id": "e0150",
+      "text": "> gors (plaintiff in the custody case, father of minor child L.D.W.) and Emily A. Watson (defendant in the custody case, mother)[1]. In the PPO matter (Case No. 2023-5907-PP), Emily is the petitioner (plaintiff) and Andrew the respondent[2]. The minor child, Lincoln David Watson (L.D.W.), is their son",
+      "score": 12.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/50_CASE_NO/journal_md.md",
+      "brain": "09_andrew",
+      "tags": [
+        "legal",
+        "person"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "e0001",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL  722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0001",
+      "to": "MCR  2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0001",
+      "to": "MCR 2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 750.422",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 750.218",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 750.411",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0003",
+      "to": "MCL 750.422",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0003",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0003",
+      "to": "MCL 750.218",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0003",
+      "to": "MCL 750.411",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0004",
+      "to": "MCL 600.5815",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0004",
+      "to": "MCL 600.2907",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0004",
+      "to": "MCR 2.115",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0004",
+      "to": "MCR 2.114",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0004",
+      "to": "MCR 2.1",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0005",
+      "to": "MCL 600.5701",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0005",
+      "to": "MCL 600.5701",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0005",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0005",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0006",
+      "to": "MCL 750.422",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0006",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0006",
+      "to": "MCL 750.218",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0006",
+      "to": "MCL 750.411",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0007",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0007",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0007",
+      "to": "MCR 7.216",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0008",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0008",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0008",
+      "to": "MCR 7.216",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0009",
+      "to": "MCL 750.422",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0009",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0009",
+      "to": "MCL 750.218",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0009",
+      "to": "MCL 750.411",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0011",
+      "to": "MCL  722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0011",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0011",
+      "to": "MCR 2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0011",
+      "to": "MCR  2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0011",
+      "to": "MCR 2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0012",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0012",
+      "to": "MCL 750.218",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0012",
+      "to": "MCL 750.411",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0013",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0013",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0013",
+      "to": "MCR 7.216",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0014",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0014",
+      "to": "MCL 750.218",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0014",
+      "to": "MCL 750.411",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0015",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0017",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0017",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0017",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0017",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0017",
+      "to": "MCR 3.215",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0019",
+      "to": "MCL  722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0019",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0019",
+      "to": "MCR  2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0019",
+      "to": "MCR 2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0025",
+      "to": "MCL  722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0025",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0025",
+      "to": "MCR  2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0025",
+      "to": "MCR 2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0026",
+      "to": "MCL  722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0026",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0026",
+      "to": "MCR  2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0026",
+      "to": "MCR 2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0027",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0028",
+      "to": "MCL 600.605",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0028",
+      "to": "MCL 600.8301",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0029",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0029",
+      "to": "MCL 750.218",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0029",
+      "to": "MCL 750.411",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0030",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0030",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0032",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0032",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0032",
+      "to": "MCR 3.215",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0032",
+      "to": "MCR 3.215",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0034",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0034",
+      "to": "MCL 750.218",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0034",
+      "to": "MCL 750.411",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0035",
+      "to": "MCL 600.2907",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0035",
+      "to": "MCR 2.114",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0035",
+      "to": "MCR 2.115",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0035",
+      "to": "MCR 7.216",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0036",
+      "to": "MCL 600.5815",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0036",
+      "to": "MCL 600.2907",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0036",
+      "to": "MCR 2.115",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0036",
+      "to": "MCR 2.114",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0037",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0037",
+      "to": "ART III",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0038",
+      "to": "MCL 600.1401",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0038",
+      "to": "Const 1963",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0038",
+      "to": "art 6",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0039",
+      "to": "MCL 600.2907",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0039",
+      "to": "MCR 2.114",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0039",
+      "to": "MCR 2.115",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0039",
+      "to": "MCR 7.216",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0040",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0040",
+      "to": "MCL 750.218",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0040",
+      "to": "MCL 750.411",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0041",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0041",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0044",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0044",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0045",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0045",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0052",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0052",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0054",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0054",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0055",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0055",
+      "to": "ART 3",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0056",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0057",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0057",
+      "to": "ART 5",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0058",
+      "to": "MCL  722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0058",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0058",
+      "to": "MCR  2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0058",
+      "to": "MCR 2.505",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0062",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0062",
+      "to": "ART 3",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0063",
+      "to": "42 USC § 1983",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0063",
+      "to": "28 USC § 1331",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0065",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0065",
+      "to": "ART 5",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0069",
+      "to": "Amendment d",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0070",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0070",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0071",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0073",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0073",
+      "to": "ART 5",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0074",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0075",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0080",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0080",
+      "to": "ART 5",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0083",
+      "to": "MCR 7.316",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0083",
+      "to": "MCR 7.304",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0083",
+      "to": "MCR 7.316",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0089",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0089",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0089",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0090",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0090",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0090",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0091",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0091",
+      "to": "ART 3",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0092",
+      "to": "MCL  750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0092",
+      "to": "ART 3",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0093",
+      "to": "MCR 7.211",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0093",
+      "to": "MCR 7.211",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0093",
+      "to": "MCR 7.209",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0094",
+      "to": "MCR 7.209",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0094",
+      "to": "MCR 7.211",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0094",
+      "to": "MCR 7.209",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0095",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0095",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0095",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0096",
+      "to": "MCR   3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0097",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0099",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0100",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0100",
+      "to": "MCL 750.539",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0100",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0101",
+      "to": "MCR   3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0102",
+      "to": "MCR   3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0103",
+      "to": "MCR   3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0105",
+      "to": "MCL 600.308.",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0105",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0108",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0110",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0110",
+      "to": "MCR 2.003...",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0111",
+      "to": "MCR 7.211",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0111",
+      "to": "MCR 7.209",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0112",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0112",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0113",
+      "to": "MCL 600.5701",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0113",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0113",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0115",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0115",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0115",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0116",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0116",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0117",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0117",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0119",
+      "to": "MCL 750.423",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0119",
+      "to": "MCL 750.",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0120",
+      "to": "MCL 750.539",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0120",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0124",
+      "to": "Const 1963",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0124",
+      "to": "art 6",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0125",
+      "to": "Const 1963",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0125",
+      "to": "art 6",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0126",
+      "to": "Const 1963",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0126",
+      "to": "art 6",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0127",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0128",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0129",
+      "to": "MCR 3.706",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0130",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0131",
+      "to": "Amendment d",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0133",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0134",
+      "to": "MCL 600.308.",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0134",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0135",
+      "to": "MCL 600.308.",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0135",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0136",
+      "to": "MCR 1.109",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0138",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0138",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0140",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0144",
+      "to": "art l",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0145",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0146",
+      "to": "MCL 600.308.",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0146",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0147",
+      "to": "MCL 600.308.",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0147",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0148",
+      "to": "MCR 3.302",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0148",
+      "to": "MCR 7.203",
+      "type": "CITES",
+      "brain": "09_andrew"
+    },
+    {
+      "from": "e0149",
+      "to": "MCR 2.114",
+      "type": "CITES",
+      "brain": "09_andrew"
+    }
+  ],
+  "metadata": {
+    "node_count": 150,
+    "edge_count": 221,
+    "brain_count": 9,
+    "domains": [
+      "person",
+      "persons_combined"
+    ],
+    "parties": {
+      "plaintiff": "Andrew Pigors",
+      "defendant": "Tiffany Watson",
+      "child": "L.D.W.",
+      "judge": "Hon. Jenny L. McNeill",
+      "opposing_counsel": "Rusco",
+      "watson_family": [
+        "Emily Watson",
+        "Albert Watson",
+        "Lori Watson",
+        "Cody Watson"
+      ]
+    }
+  }
+}

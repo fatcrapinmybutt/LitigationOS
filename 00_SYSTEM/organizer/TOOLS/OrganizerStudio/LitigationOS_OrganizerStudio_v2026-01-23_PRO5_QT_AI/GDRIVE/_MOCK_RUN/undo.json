@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "ts": "2026-01-23T21:19:10Z",
+    "root_id": "2"
+  },
+  "undo": [
+    {
+      "op": "move_rename_back",
+      "file_id": "6",
+      "old_parent": "3",
+      "old_name": "notes.txt",
+      "new_parent": "8",
+      "new_name": "notes.txt"
+    },
+    {
+      "op": "move_rename_back",
+      "file_id": "5",
+      "old_parent": "4",
+      "old_name": "Report  2026  .pdf",
+      "new_parent": "7",
+      "new_name": "Report 2026 .pdf"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "rar_path": "MEEK.rar",
+  "integrity_key": "IK:MEEK.rar:11267248:1770588169:a27e89c7",
+  "can_list": true,
+  "extract_blocker": "RAR extraction requires external unrar/bsdtar/7z tool not available in this environment.",
+  "exception": null
+}

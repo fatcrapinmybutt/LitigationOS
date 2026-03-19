@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <doc name="brief" eId="coa_brief_appellant">
+    <meta>
+      <identification source="#litigationos">
+        <FRBRWork>
+          <FRBRthis value="urn:akn:us-mi:court:coa:2026-02-28!brief.appellant"/>
+          <FRBRuri value="urn:akn:us-mi:court:coa"/>
+          <FRBRdate date="2026-02-28" name="Generation"/>
+          <FRBRauthor href="#appellant"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="urn:akn:us-mi:court:coa:2026-02-28!brief.appellant@en"/>
+          <FRBRuri value="urn:akn:us-mi:court:coa:2026-02-28!brief.appellant"/>
+          <FRBRdate date="2026-02-28" name="Generation"/>
+          <FRBRauthor href="#appellant"/>
+          <FRBRlanguage language="en"/>
+        </FRBRExpression>
+      </identification>
+      <references source="#litigationos">
+        <TLCDocument eId="authority_mcr_7_212" href="urn:akn:us-mi:rule:mcr.7.212" showAs="MCR 7.212"/>
+        <TLCDocument eId="authority_mifile_std" href="urn:akn:us-mi:policy:mifile.edoc.std.2" showAs="MiFILE Electronic Document Standards"/>
+      </references>
+    </meta>
+
+    <mainBody>
+      <heading eId="cap_hdr">[CAPTION IN ALL CAPS WHERE REQUIRED]</heading>
+      <p eId="cap_case">Court of Appeals No.: [FIELD:coa_no] — Lower Court No.: [FIELD:lower_no]</p>
+      <heading eId="issues_hdr">STATEMENT OF QUESTIONS PRESENTED</heading>
+      <p eId="q1">1. [FIELD:question_1]</p>
+      <heading eId="facts_hdr">STATEMENT OF FACTS</heading>
+      <p eId="facts">[FIELD:record_cited_facts]</p>
+      <heading eId="arg_hdr">ARGUMENT</heading>
+      <p eId="arg1_hdr">I. [FIELD:arg_heading_1]</p>
+      <p eId="arg1">[FIELD:arg_text_1]</p>
+      <heading eId="relief_hdr">RELIEF REQUESTED</heading>
+      <p eId="relief">[FIELD:relief_requested]</p>
+      <heading eId="sig_hdr">SIGNATURE</heading>
+      <p eId="sig">/s/ [FIELD:appellant_name]</p>
+      <heading eId="cert_compliance_hdr">CERTIFICATE OF COMPLIANCE</heading>
+      <p eId="cert_compliance">[FIELD:compliance_block]</p>
+      <heading eId="cert_service_hdr">CERTIFICATE OF SERVICE</heading>
+      <p eId="cert_service">[FIELD:service_block]</p>
+    </mainBody>
+  </doc>
+</akomaNtoso>

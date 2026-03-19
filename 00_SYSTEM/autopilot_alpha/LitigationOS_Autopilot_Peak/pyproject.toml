@@ -1,0 +1,9 @@
+[project]
+name = "litigationos-autopilot-peak"
+version = "0.2.0"
+description = "Local-first drive scout + unpack/OCR/convert/chunk pipeline for LitigationOS"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+litigationos-autopilot = "autopilot.__main__:main"

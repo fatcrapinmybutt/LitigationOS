@@ -1,0 +1,79 @@
+[
+  {
+    "name": "McNeill Disqualification Motion",
+    "date": "2026-03-15",
+    "court": "14th Circuit Court",
+    "case": "2024-001507-DC",
+    "stack": "DISQUALIFY_PACKAGE",
+    "priority": "CRITICAL",
+    "urgency": "URGENT",
+    "days_remaining": 11,
+    "icon": "\ud83d\udfe1"
+  },
+  {
+    "name": "MSC Original Action Filing",
+    "date": "2026-04-01",
+    "court": "Michigan Supreme Court",
+    "case": "MSC-NEW",
+    "stack": "04_MSC_ORIGINAL_ACTION",
+    "priority": "CRITICAL",
+    "urgency": "APPROACHING",
+    "days_remaining": 28,
+    "icon": "\ud83d\udfe2"
+  },
+  {
+    "name": "COA Brief 366810",
+    "date": "2026-04-15",
+    "court": "Michigan Court of Appeals",
+    "case": "366810",
+    "stack": "01_COA_366810",
+    "priority": "CRITICAL",
+    "urgency": "SCHEDULED",
+    "days_remaining": 42,
+    "icon": "\u26aa"
+  },
+  {
+    "name": "Watson Tort Complaint",
+    "date": "2026-04-30",
+    "court": "14th Circuit Court",
+    "case": "NEW",
+    "stack": "WATSON_TORT",
+    "priority": "HIGH",
+    "urgency": "SCHEDULED",
+    "days_remaining": 57,
+    "icon": "\u26aa"
+  },
+  {
+    "name": "Shady Oaks Complaint",
+    "date": "2026-04-30",
+    "court": "14th Circuit Court",
+    "case": "NEW",
+    "stack": "SHADY_OAKS",
+    "priority": "HIGH",
+    "urgency": "SCHEDULED",
+    "days_remaining": 57,
+    "icon": "\u26aa"
+  },
+  {
+    "name": "HUD/LARA Complaint",
+    "date": "2026-07-17",
+    "court": "Federal/Agency",
+    "case": "HUD-NEW",
+    "stack": "06_EMERGENCY",
+    "priority": "MEDIUM",
+    "urgency": "SCHEDULED",
+    "days_remaining": 135,
+    "icon": "\u26aa"
+  },
+  {
+    "name": "Federal 1983 Action",
+    "date": "2029-12-31",
+    "court": "WDMI Federal Court",
+    "case": "NEW",
+    "stack": "03_FEDERAL_1983",
+    "priority": "LOW",
+    "urgency": "SCHEDULED",
+    "days_remaining": 1398,
+    "icon": "\u26aa"
+  }
+]

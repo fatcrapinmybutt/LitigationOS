@@ -1,0 +1,1515 @@
+{
+  "brain_id": "05_cfr",
+  "name": "Federal Regulations",
+  "domain": "federal_regs",
+  "created": "2026-02-20T01:43:34.938997+00:00",
+  "entry_count": 29,
+  "nucleus_size_kb": 10.9,
+  "entries": [
+    {
+      "id": "e0001",
+      "text": "[45 CFR 303] ...MCL 552.526,,526;552;mcl ,,,,,,,,,,,,MCL 552,MCL,552,\"MCL 552.511, MCL 552.631, 45 CFR 303.6(c). MCR 3.208(B)(1)\",,Circuit Court Form List.txt,MCL 552.511;MCL 552.631;MCR...",
+      "score": 19.845,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/05_CFR_JOURNAL.md",
+      "citations": [
+        "MCL 552.526",
+        "MCL 552",
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0002",
+      "text": "[MCR 3.208] ...Approved, SCAO Form FOC 2, Rev. 6/24 MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1) Page 1 of 2 Distribute form to:  Court  Plaintiff  Defendant  Friend of t...",
+      "score": 15.4275,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "citations": [
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0003",
+      "text": "[MCR 3.208] ...Approved, SCAO Form FOC 2, Rev. 6/24MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1)Page 1 of 2Distribute form to: Court Plaintiff Defendant Friend of the cou...",
+      "score": 15.345,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "citations": [
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0004",
+      "text": "[MCL 552.631] ...rt address Court telephone no. Approved, SCAO Form FOC 2, Rev. 6/24MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1)Page 1 of 2Distribute form to: Court Plaintiff...",
+      "score": 14.325,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/01_MCL_JOURNAL.md",
+      "citations": [
+        "MCL 552.631",
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0005",
+      "text": "[45 CFR 303] ...;626a;mcl;552;631;mcr;208 ,,,,,,,,,,,,MCL 552,MCL,552,\"MCL 552.631, MC 552.633, 45 CFR 303.6(c), MCR 3.208(B)\",,Circuit Court Form List.txt,MCL 552.631;MCR 3.208,,mcl;552...",
+      "score": 14.175,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/05_CFR_JOURNAL.md",
+      "citations": [
+        "MCL 552",
+        "MCL 552.631",
+        "MCL 552.631",
+        "MCR 3.208",
+        "MCR 3.208",
+        "45 CFR 303",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0006",
+      "text": "> ION - CHILD WELFARE EMERGENCY\" - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L7` — Form FOC 2, Rev. 6/24MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1)Page 1 of 2Distribute form to: Court Plaintiff Defendant Friend of the courtPlaintiff’s name",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "citations": [
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0007",
+      "text": "> ELFARE EMERGENCY\" - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L7` — Form FOC 2, Rev. 6/24MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1)Page 1 of 2Distribute form to: Court Plaintiff Defendant Friend of the courtPlaintiff’s name, address, an",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "citations": [
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0008",
+      "text": "> LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L7` — Form FOC 2, Rev. 6/24MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1)Page 1 of 2Distribute form to: Court Plaintiff Defendant Friend of the courtPlaintiff’s name, address, and telephone no. - `staging/!LE",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "citations": [
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0009",
+      "text": "> NCY\" - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L7` — Form FOC 2, Rev. 6/24MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1)Page 1 of 2Distribute form to: Court Plaintiff Defendant Friend of the courtPlaintiff’s name, address, and telephone n",
+      "score": 13.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/journal_md.md",
+      "citations": [
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0010",
+      "text": "[MCL 552.631] ...t address Court telephone no. Approved, SCAO Form FOC 2, Rev. 6/24 MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1) Page 1 of 2 Distribute form to:  Court  Plain...",
+      "score": 12.8925,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/01_MCL_JOURNAL.md",
+      "citations": [
+        "MCL 552.631",
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0011",
+      "text": "[MCL 552.511] ...and JUDGE Court address Court telephone no. Approved, SCAO Form FOC 2, Rev. 6/24MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1)Page 1 of 2Distribute form to: Co...",
+      "score": 12.8925,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/01_MCL_JOURNAL.md",
+      "citations": [
+        "MCL 552.511",
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0012",
+      "text": "[MCL 552.511] ...nd JUDGE Court address Court telephone no. Approved, SCAO Form FOC 2, Rev. 6/24 MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1) Page 1 of 2 Distribute form to:...",
+      "score": 12.825,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/01_MCL_JOURNAL.md",
+      "citations": [
+        "MCL 552.511",
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0013",
+      "text": "[45 CFR 303] ...urt telephone no. Approved, SCAO Form FOC 2, Rev. 6/24MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1)Page 1 of 2Distribute form to: Court Plaintiff Defendant F...",
+      "score": 12.7575,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/05_CFR_JOURNAL.md",
+      "citations": [
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0014",
+      "text": "[45 CFR 303] ...rt telephone no. Approved, SCAO Form FOC 2, Rev. 6/24 MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1) Page 1 of 2 Distribute form to:  Court  Plaintiff  Defend...",
+      "score": 11.34,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/05_CFR_JOURNAL.md",
+      "citations": [
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0015",
+      "text": "[FOC] ...UPPORT)CASE NO. and JUDGE Court address Court telephone no. Approved, SCAO Form FOC 2, Rev. 6/24MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1)Page 1 of...",
+      "score": 10.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/46_FOC/46_FOC_JOURNAL.md",
+      "citations": [
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0016",
+      "text": "[FOC] ...PPORT) CASE NO. and JUDGE Court address Court telephone no. Approved, SCAO Form FOC 2, Rev. 6/24 MCL 552.511, MCL 552.631, 45 CFR 303.6(c), MCR 3.208(B)(1) Page 1...",
+      "score": 10.44,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/46_FOC/46_FOC_JOURNAL.md",
+      "citations": [
+        "MCL 552.511",
+        "MCL 552.631",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0017",
+      "text": "[45 CFR 302] ...Form List.txt,MCL 780.811;MCL 780.816,,mcl;780;811;mcl;780;816 CFR 302,CFR,302,45 CFR 302.33,,Circuit Court Form List.txt,,,45;cfr;302;33 FOC 23,FOC,23,This is a DHHS fo...",
+      "score": 9.87,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/05_CFR_JOURNAL.md",
+      "citations": [
+        "MCL 780.811",
+        "MCL 780.816",
+        "45 CFR 302",
+        "816 CFR 302",
+        "45 CFR 302"
+      ],
+      "tags": [
+        "legal",
+        "mcl"
+      ]
+    },
+    {
+      "id": "e0018",
+      "text": "[45 CFR  303] ...ubject  to civil and criminal  penalties,  including  fines  and imprisonment.  45 CFR  303.21   (f); 26 USC 7213   26  USC  7213A   26  USC  7431.   If you  are  not  the...",
+      "score": 8.595,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/05_CFR_JOURNAL.md",
+      "citations": [
+        "26 USC 7213",
+        "26  USC  7213",
+        "26  USC  7431",
+        "45 CFR  303",
+        "45 CFR  303"
+      ],
+      "tags": []
+    },
+    {
+      "id": "e0019",
+      "text": "CFR 302] ....816\",,Circuit Court Form List.txt,MCL 780.811;MCL 780.816,,mcl;780;811;mcl;780;816 CFR 302,CFR,302,45 CFR 302.33,,Circuit Court Form List.txt,,,45;cfr;302;33 FOC 23,FOC,2...",
+      "score": 8.37,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/05_CFR_JOURNAL.md",
+      "citations": [
+        "MCL 780.811",
+        "MCL 780.816",
+        "816 CFR 302",
+        "45 CFR 302"
+      ],
+      "tags": [
+        "legal",
+        "mcl"
+      ]
+    },
+    {
+      "id": "e0020",
+      "text": "7213] ...ties,  including  fines  and imprisonment.  45 CFR  303.21   (f); 26 USC 7213   26  USC  7213A   26  USC  7431.   If you  are  not  the  intended   recipient   of this  repo...",
+      "score": 8.325,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/04_USC/04_USC_JOURNAL.md",
+      "citations": [
+        "26 USC 7213",
+        "26  USC  7213",
+        "26  USC  7431",
+        "45 CFR  303"
+      ],
+      "tags": []
+    },
+    {
+      "id": "e0021",
+      "text": "7431] ...fines  and imprisonment.  45 CFR  303.21   (f); 26 USC 7213   26  USC  7213A   26  USC  7431.   If you  are  not  the  intended   recipient   of this  report,   please   co...",
+      "score": 8.28,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/04_USC/04_USC_JOURNAL.md",
+      "citations": [
+        "26 USC 7213",
+        "26  USC  7213",
+        "26  USC  7431",
+        "45 CFR  303"
+      ],
+      "tags": []
+    },
+    {
+      "id": "e0022",
+      "text": "7213] ...riminal  penalties,  including  fines  and imprisonment.  45 CFR  303.21   (f); 26 USC 7213   26  USC  7213A   26  USC  7431.   If you  are  not  the  intended   recipient...",
+      "score": 8.235,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/04_USC/04_USC_JOURNAL.md",
+      "citations": [
+        "26 USC 7213",
+        "26  USC  7213",
+        "26  USC  7431",
+        "45 CFR  303"
+      ],
+      "tags": []
+    },
+    {
+      "id": "e0023",
+      "text": "[45 CFR 302] ...(D),,Circuit Court Form List.txt,MCR 4.303,,303;mcr ,,,,,,,,,,,,CFR 302,CFR,302,45 CFR 302.33,,Circuit Court Form List.txt,,,45;cfr;302;33 ,,,,,,,,,,,,FOC 23,FOC,23,This...",
+      "score": 5.64,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/05_CFR_JOURNAL.md",
+      "citations": [
+        "MCR 4.303",
+        "45 CFR 302",
+        "45 CFR 302"
+      ],
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0024",
+      "text": "1. **45 CFR 303** -> MCL 552.631, MCR 3.208(B)(1), MCL 552.511",
+      "score": 2.79,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/EVIDENCE_CHAINS.md",
+      "citations": [
+        "MCL 552.631",
+        "MCL 552.511",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0025",
+      "text": "2. **45 CFR 303** -> MCL 552.631, MCR 3.208(B)(1), MCL 552.511",
+      "score": 2.79,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/EVIDENCE_CHAINS.md",
+      "citations": [
+        "MCL 552.631",
+        "MCL 552.511",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0026",
+      "text": "3. **45 CFR 303** -> MCL 552.631, MCR 3.208(B)(1), MCL 552.511",
+      "score": 2.79,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/EVIDENCE_CHAINS.md",
+      "citations": [
+        "MCL 552.631",
+        "MCL 552.511",
+        "MCR 3.208",
+        "45 CFR 303"
+      ],
+      "tags": [
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0027",
+      "text": "400] ...--------------- (iii) The child is an unaccompanied refugee minor as defined in 45 CFR  400.111.  (iv) There are international legal obligations or compelling foreign poli...",
+      "score": 0.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/05_CFR_JOURNAL.md",
+      "citations": [
+        "45 CFR  400"
+      ],
+      "tags": []
+    },
+    {
+      "id": "e0028",
+      "text": "[45 CFR  303] ...ect  to civil and criminal  penalties,\\n including\\n fines  and imprisonment.\\n 45 CFR  303.21  \\n(f); 26 USC\\n7213  \\n26 \\nUSC \\n7213A  \\n26 \\nUSC \\n7431.  \\nIf you \\nare...",
+      "score": 0.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/05_CFR_JOURNAL.md",
+      "citations": [
+        "45 CFR  303",
+        "45 CFR  303"
+      ],
+      "tags": []
+    },
+    {
+      "id": "e0029",
+      "text": "| 2 | 45 cfr 303 | 3 |",
+      "score": 0.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/05_CFR/SUMMARY.md",
+      "citations": [
+        "45 cfr 303"
+      ],
+      "tags": []
+    }
+  ],
+  "index": {
+    "552": [
+      0,
+      4
+    ],
+    "3.208": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      23,
+      24,
+      25
+    ],
+    "court": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      22
+    ],
+    "circuit": [
+      0,
+      4,
+      16,
+      18,
+      22
+    ],
+    "c": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "552.526": [
+      0
+    ],
+    "cfr": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "1": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      23,
+      24,
+      25
+    ],
+    "b": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      23,
+      24,
+      25
+    ],
+    "form": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      22
+    ],
+    "mcl": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      23,
+      24,
+      25
+    ],
+    "303": [
+      0,
+      4,
+      12,
+      13,
+      17,
+      22,
+      23,
+      24,
+      25,
+      27,
+      28
+    ],
+    "552.631": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      23,
+      24,
+      25
+    ],
+    "303.6": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "526": [
+      0
+    ],
+    "list.txt": [
+      0,
+      4,
+      16,
+      18,
+      22
+    ],
+    "mcr": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      22,
+      23,
+      24,
+      25
+    ],
+    "552.511": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      23,
+      24,
+      25
+    ],
+    "45": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "2": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      18,
+      24,
+      28
+    ],
+    "rev": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "distribute": [
+      1,
+      9,
+      11,
+      13
+    ],
+    "scao": [
+      1,
+      2,
+      3,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "to": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      17,
+      27
+    ],
+    "6": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "friend": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      8
+    ],
+    "page": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "approved": [
+      1,
+      2,
+      3,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "t": [
+      1,
+      9
+    ],
+    "plaintiff": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      12,
+      13
+    ],
+    "defendant": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      8,
+      12
+    ],
+    "of": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      19,
+      20
+    ],
+    "foc": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      22
+    ],
+    "24": [
+      1,
+      9,
+      11,
+      13,
+      15
+    ],
+    "the": [
+      2,
+      5,
+      6,
+      7,
+      8,
+      17,
+      19,
+      20,
+      21,
+      26
+    ],
+    "cou": [
+      2
+    ],
+    "2distribute": [
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      10,
+      12
+    ],
+    "24mcl": [
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      10,
+      12,
+      14
+    ],
+    "telephone": [
+      3,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "address": [
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      14,
+      15
+    ],
+    "no": [
+      3,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "rt": [
+      3,
+      13
+    ],
+    "626a": [
+      4
+    ],
+    "631": [
+      4
+    ],
+    "mc": [
+      4
+    ],
+    "208": [
+      4
+    ],
+    "552.633": [
+      4
+    ],
+    "custody": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "legal": [
+      5,
+      6,
+      7,
+      8,
+      26
+    ],
+    "output": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "foc2.pdf": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "l7": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "ion": [
+      5
+    ],
+    "name": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "04": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "forms": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "analysis": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "staging": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "emergency": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "s": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "child": [
+      5,
+      26
+    ],
+    "welfare": [
+      5
+    ],
+    "courtplaintiff": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "an": [
+      6,
+      26
+    ],
+    "elfare": [
+      6
+    ],
+    "and": [
+      7,
+      8,
+      10,
+      14,
+      15,
+      17,
+      19,
+      20,
+      21,
+      27
+    ],
+    "le": [
+      7
+    ],
+    "n": [
+      8,
+      27
+    ],
+    "ncy": [
+      8
+    ],
+    "plain": [
+      9
+    ],
+    "co": [
+      10,
+      20
+    ],
+    "judge": [
+      10,
+      11,
+      14,
+      15
+    ],
+    "nd": [
+      11
+    ],
+    "urt": [
+      12
+    ],
+    "f": [
+      12,
+      17,
+      19,
+      20,
+      21,
+      27
+    ],
+    "defend": [
+      13
+    ],
+    "upport": [
+      14
+    ],
+    "case": [
+      14,
+      15
+    ],
+    "pport": [
+      15
+    ],
+    "780": [
+      16,
+      18
+    ],
+    "fo": [
+      16
+    ],
+    "302.33": [
+      16,
+      18,
+      22
+    ],
+    "23": [
+      16,
+      18,
+      22
+    ],
+    "780.816": [
+      16,
+      18
+    ],
+    "a": [
+      16
+    ],
+    "811": [
+      16,
+      18
+    ],
+    "302": [
+      16,
+      18,
+      22
+    ],
+    "780.811": [
+      16,
+      18
+    ],
+    "dhhs": [
+      16
+    ],
+    "33": [
+      16,
+      18,
+      22
+    ],
+    "is": [
+      16,
+      26
+    ],
+    "816": [
+      16,
+      18
+    ],
+    "this": [
+      16,
+      19,
+      20,
+      22
+    ],
+    "including": [
+      17,
+      19,
+      21,
+      27
+    ],
+    "are": [
+      17,
+      19,
+      20,
+      21,
+      26
+    ],
+    "fines": [
+      17,
+      19,
+      20,
+      21,
+      27
+    ],
+    "7431": [
+      17,
+      19,
+      20,
+      21
+    ],
+    "26": [
+      17,
+      19,
+      20,
+      21,
+      27
+    ],
+    "imprisonment": [
+      17,
+      19,
+      20,
+      21,
+      27
+    ],
+    "if": [
+      17,
+      19,
+      20,
+      21
+    ],
+    "criminal": [
+      17,
+      27
+    ],
+    "303.21": [
+      17,
+      19,
+      20,
+      21,
+      27
+    ],
+    "7213a": [
+      17,
+      19,
+      20,
+      21
+    ],
+    "civil": [
+      17,
+      27
+    ],
+    "ubject": [
+      17
+    ],
+    "penalties": [
+      17,
+      21,
+      27
+    ],
+    "7213": [
+      17,
+      19,
+      20,
+      21
+    ],
+    "not": [
+      17,
+      19,
+      20,
+      21
+    ],
+    "usc": [
+      17,
+      19,
+      20,
+      21,
+      27
+    ],
+    "you": [
+      17,
+      19,
+      20,
+      21,
+      27
+    ],
+    "repo": [
+      19
+    ],
+    "recipient": [
+      19,
+      20,
+      21
+    ],
+    "intended": [
+      19,
+      20,
+      21
+    ],
+    "ties": [
+      19
+    ],
+    "report": [
+      20
+    ],
+    "please": [
+      20
+    ],
+    "riminal": [
+      21
+    ],
+    "d": [
+      22
+    ],
+    "4.303": [
+      22
+    ],
+    "3": [
+      25,
+      28
+    ],
+    "compelling": [
+      26
+    ],
+    "iii": [
+      26
+    ],
+    "in": [
+      26
+    ],
+    "400": [
+      26
+    ],
+    "foreign": [
+      26
+    ],
+    "unaccompanied": [
+      26
+    ],
+    "as": [
+      26
+    ],
+    "international": [
+      26
+    ],
+    "there": [
+      26
+    ],
+    "or": [
+      26
+    ],
+    "refugee": [
+      26
+    ],
+    "iv": [
+      26
+    ],
+    "400.111": [
+      26
+    ],
+    "obligations": [
+      26
+    ],
+    "minor": [
+      26
+    ],
+    "defined": [
+      26
+    ],
+    "poli": [
+      26
+    ],
+    "n7213": [
+      27
+    ],
+    "nusc": [
+      27
+    ],
+    "n7213a": [
+      27
+    ],
+    "nare": [
+      27
+    ],
+    "n7431": [
+      27
+    ],
+    "ect": [
+      27
+    ],
+    "n26": [
+      27
+    ],
+    "nif": [
+      27
+    ]
+  },
+  "stats": {
+    "total_chars": 11135,
+    "unique_citations": 17,
+    "unique_persons": 0,
+    "top_score": 19.845,
+    "source_files_matched": 10
+  }
+}

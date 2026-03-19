@@ -1,0 +1,17 @@
+{
+  "generated_utc": "2026-01-24T01:51:15Z",
+  "embedding_models": [
+    {
+      "id": "nomic-ai/nomic-embed-text-v1.5",
+      "license": "apache-2.0",
+      "notes": "General-purpose embeddings"
+    },
+    {
+      "id": "BAAI/bge-small-en-v1.5",
+      "license": "mit",
+      "notes": "Fast English embeddings"
+    }
+  ],
+  "default_embedding_model": "nomic-ai/nomic-embed-text-v1.5",
+  "hf_cache_dir_default": "F:/LitigationOS/_HF_CACHE"
+}

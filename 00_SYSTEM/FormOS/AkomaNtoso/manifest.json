@@ -1,0 +1,46 @@
+{
+  "pack": "MI_AkomaNtoso_FormFactory_DeepResearch_Pack_20260228",
+  "generated": "2026-02-28",
+  "files": [
+    {
+      "path": "MI_COMPOSITION_REQUIREMENTS_RULEBANK.md",
+      "bytes": 1948,
+      "sha256": "fe60cdadbcd61107626dd3775114a8a6b286bcf6fae5c08b5903838dc6e4274e"
+    },
+    {
+      "path": "MI_COMPOSITION_REQUIREMENTS_RULEBANK.yaml",
+      "bytes": 2514,
+      "sha256": "71a2cf2606146455b14548bd99571765328103efd3d431e4813a7830cc67a1b9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1893,
+      "sha256": "2af922852c8b9b388839bd4f711dbbd555866d759c8605e2009e6be40518d935"
+    },
+    {
+      "path": "SUPERPIN_AKN_MI_ALL_FORMS.md",
+      "bytes": 6339,
+      "sha256": "8d0df4801aef1d009a5769ef00423ac4e0aa603afd929be77809d7602def8716"
+    },
+    {
+      "path": "schemas/form_profile.schema.json",
+      "bytes": 1503,
+      "sha256": "cd5a0caf7e647c39cac6b970415bbaacf34ad1502de1b33127cb3b68fb26523f"
+    },
+    {
+      "path": "seeds/akn_templates/COA_appellant_brief_seed.xml",
+      "bytes": 2301,
+      "sha256": "2ea6185b047dde2a0d83bb611285aede545ab55aef07128edf4b401cd04cfe22"
+    },
+    {
+      "path": "seeds/akn_templates/FOC65_motion_parenting_time_seed.xml",
+      "bytes": 3239,
+      "sha256": "38b65f77fd505b593f2b1ddb5395604ff9d35b96416ee41d3c98aa596dd0a809"
+    },
+    {
+      "path": "seeds/form_profiles_seed.jsonl",
+      "bytes": 5664,
+      "sha256": "dd177c0d287bf771c0c4817b67578c0679dd4fa33ee9e72fb513c5e6f232bfc2"
+    }
+  ]
+}

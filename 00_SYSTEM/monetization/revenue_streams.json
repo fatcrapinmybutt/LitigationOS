@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "project": "LitigationOS",
+    "version": "1.0.0",
+    "last_updated": "2025-01-01",
+    "total_streams": 10,
+    "target_m12_mrr": 15000
+  },
+  "revenue_streams": [
+    {
+      "id": "rs-001",
+      "name": "SaaS Subscriptions",
+      "description": "Core recurring revenue from tiered subscription plans. Basic ($29/mo), Pro ($49/mo), and Enterprise ($199/mo) plans with increasing feature access, document limits, and AI query allowances.",
+      "pricing": {
+        "basic": { "monthly": 29, "annual": 290 },
+        "pro": { "monthly": 49, "annual": 490 },
+        "enterprise": { "monthly": 199, "annual": 1990 }
+      },
+      "priority": 1,
+      "estimated_mrr_m6": 3500,
+      "estimated_mrr_m12": 8500,
+      "status": "active",
+      "category": "recurring",
+      "margin": "85%",
+      "notes": "Primary revenue driver. Focus on Pro tier as sweet spot for pro se litigants."
+    },
+    {
+      "id": "rs-002",
+      "name": "API Access",
+      "description": "RESTful API for legal document generation, case law research, and filing automation. Sold to legal tech companies, law firms, and legal aid organizations on usage-based pricing.",
+      "pricing": {
+        "starter": { "monthly": 99, "requests_included": 1000 },
+        "growth": { "monthly": 299, "requests_included": 5000 },
+        "scale": { "monthly": 799, "requests_included": 25000 },
+        "overage_per_request": 0.05
+      },
+      "priority": 3,
+      "estimated_mrr_m6": 500,
+      "estimated_mrr_m12": 2500,
+      "status": "planned",
+      "category": "recurring",
+      "margin": "90%",
+      "notes": "High-margin, scalable. Requires robust API infrastructure and documentation."
+    },
+    {
+      "id": "rs-003",
+      "name": "Filing Template Marketplace",
+      "description": "Premium court-ready document templates for specific jurisdictions and case types. Templates include motions, responses, discovery requests, and trial prep documents. One-time purchase or subscription bundle.",
+      "pricing": {
+        "individual_template": { "one_time": 9.99 },
+        "jurisdiction_bundle": { "one_time": 49.99 },
+        "all_access_pass": { "monthly": 19.99 }
+      },
+      "priority": 2,
+      "estimated_mrr_m6": 1200,
+      "estimated_mrr_m12": 3000,
+      "status": "active",
+      "category": "hybrid",
+      "margin": "95%",
+      "notes": "Low cost to produce, high perceived value. Jurisdiction-specific templates are the moat."
+    },
+    {
+      "id": "rs-004",
+      "name": "Legal Strategy Consulting",
+      "description": "One-on-one video consultations with legal strategists (not legal advice) for case review, document review, and strategy sessions. Positioned as 'legal coaching' to stay within regulatory bounds.",
+      "pricing": {
+        "30_min_session": 75,
+        "60_min_session": 125,
+        "case_review_package": 299,
+        "monthly_retainer": 499
+      },
+      "priority": 5,
+      "estimated_mrr_m6": 300,
+      "estimated_mrr_m12": 1500,
+      "status": "planned",
+      "category": "services",
+      "margin": "60%",
+      "notes": "Requires vetted consultants. Start with founder-led sessions, scale with contractors."
+    },
+    {
+      "id": "rs-005",
+      "name": "White-Label Platform",
+      "description": "Licensed version of LitigationOS for legal aid organizations, law school clinics, and court self-help centers. Custom branding, jurisdiction-specific configuration, and bulk user management.",
+      "pricing": {
+        "small_org": { "monthly": 499, "users_included": 50 },
+        "medium_org": { "monthly": 999, "users_included": 200 },
+        "large_org": { "monthly": 2499, "users_included": 1000 },
+        "setup_fee": 2500
+      },
+      "priority": 4,
+      "estimated_mrr_m6": 0,
+      "estimated_mrr_m12": 2000,
+      "status": "roadmap",
+      "category": "recurring",
+      "margin": "75%",
+      "notes": "Long sales cycle but high contract value. Target legal aid orgs with grant funding."
+    },
+    {
+      "id": "rs-006",
+      "name": "AI Document Review Credits",
+      "description": "Pay-per-use AI analysis of legal documents. Upload opposing counsel filings, contracts, or court orders for AI-powered analysis, weakness identification, and response suggestions.",
+      "pricing": {
+        "single_document": 4.99,
+        "10_credit_pack": 39.99,
+        "50_credit_pack": 149.99,
+        "unlimited_monthly": 29.99
+      },
+      "priority": 2,
+      "estimated_mrr_m6": 800,
+      "estimated_mrr_m12": 2200,
+      "status": "active",
+      "category": "usage-based",
+      "margin": "70%",
+      "notes": "Strong upsell from free tier. AI costs per doc ~$0.15, high margin at scale."
+    },
+    {
+      "id": "rs-007",
+      "name": "Court Calendar & Deadline SaaS",
+      "description": "Standalone deadline tracking and court calendar management tool. Integrates with state court systems, calculates response deadlines, and sends multi-channel reminders (email, SMS, push).",
+      "pricing": {
+        "monthly": 14.99,
+        "annual": 149.99,
+        "sms_addon": 4.99
+      },
+      "priority": 6,
+      "estimated_mrr_m6": 200,
+      "estimated_mrr_m12": 800,
+      "status": "planned",
+      "category": "recurring",
+      "margin": "80%",
+      "notes": "Entry-level product to capture users early in their case. Gateway to full platform."
+    },
+    {
+      "id": "rs-008",
+      "name": "Educational Course Content",
+      "description": "Self-paced video courses on pro se litigation, family court procedures, legal writing, and case strategy. Sold individually or bundled with platform subscriptions.",
+      "pricing": {
+        "individual_course": 29.99,
+        "course_bundle": 99.99,
+        "platform_addon": 9.99
+      },
+      "priority": 7,
+      "estimated_mrr_m6": 150,
+      "estimated_mrr_m12": 600,
+      "status": "roadmap",
+      "category": "hybrid",
+      "margin": "90%",
+      "notes": "Content creation upfront cost, then pure margin. Builds authority and trust."
+    },
+    {
+      "id": "rs-009",
+      "name": "Affiliate & Referral Revenue",
+      "description": "Commission revenue from referring users to complementary services: process servers, court reporters, mediators, notary services, legal insurance, and background check providers.",
+      "pricing": {
+        "referral_commission_range": "10-25%",
+        "avg_commission_per_referral": 35,
+        "partner_listing_fee_monthly": 99
+      },
+      "priority": 8,
+      "estimated_mrr_m6": 100,
+      "estimated_mrr_m12": 500,
+      "status": "roadmap",
+      "category": "commission",
+      "margin": "100%",
+      "notes": "Pure margin revenue. Requires user volume to be attractive to partners."
+    },
+    {
+      "id": "rs-010",
+      "name": "Data & Analytics Licensing",
+      "description": "Anonymized, aggregated legal data insights sold to legal researchers, policy organizations, and academic institutions. Court outcome predictions, filing trend analysis, and jurisdiction benchmarking.",
+      "pricing": {
+        "research_license_annual": 2500,
+        "api_data_feed_monthly": 499,
+        "custom_report": 1500
+      },
+      "priority": 10,
+      "estimated_mrr_m6": 0,
+      "estimated_mrr_m12": 400,
+      "status": "future",
+      "category": "licensing",
+      "margin": "85%",
+      "notes": "Requires significant data volume. Privacy-first approach mandatory. GDPR/CCPA compliant."
+    }
+  ],
+  "summary": {
+    "total_estimated_mrr_m6": 6750,
+    "total_estimated_mrr_m12": 22000,
+    "total_estimated_arr_m12": 264000,
+    "primary_drivers": ["SaaS Subscriptions", "Filing Template Marketplace", "AI Document Review Credits"],
+    "growth_strategy": "Land with free tier and templates, expand with AI credits and Pro subscriptions, enterprise with white-label"
+  }
+}

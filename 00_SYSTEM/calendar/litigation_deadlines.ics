@@ -1,0 +1,911 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//LitigationOS//Agent-142//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:LitigationOS Deadlines
+X-WR-TIMEZONE:America/Detroit
+BEGIN:VEVENT
+UID:DL-COA-EMERGENCY@litigationos
+DTSTART;VALUE=DATE:20260228
+SUMMARY:[OVERDUE] COA Emergency Motion / Fee Waiver
+DESCRIPTION:Case: COA 366810\\nCourt: Michigan Court of Appeals\\nAuthority: MCR 7.211(C)(6)\\nUrgency: OVERDUE\\nWave: 0\\nPrep: 0 days\\nDeps: None - already filed\\nNotes: FILED 2026-02-28.
+LOCATION:Michigan Court of Appeals
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [OVERDUE] COA Emergency Motion / Fee Waiver
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [OVERDUE] COA Emergency Motion / Fee Waiver
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [OVERDUE] COA Emergency Motion / Fee Waiver
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-EMERGENCY-PT@litigationos
+DTSTART;VALUE=DATE:20260305
+SUMMARY:[EMERGENCY] Emergency Motion to Restore Parenting Time
+DESCRIPTION:Case: Pigors v Pigors - 14th Circuit\\nCourt: 14th Circuit Court\\nAuthority: MCR 2.119(B)\; MCL 722.27a\\nUrgency: EMERGENCY\\nWave: 0\\nPrep: 0 days\\nDeps: None - already filed\\nNotes: FILED. 220+ days since last contact with child.
+LOCATION:14th Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [EMERGENCY] Emergency Motion to Restore Parenting Time
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [EMERGENCY] Emergency Motion to Restore Parenting Time
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [EMERGENCY] Emergency Motion to Restore Parenting Time
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-EMERGENCY-CUSTODY@litigationos
+DTSTART;VALUE=DATE:20260305
+SUMMARY:[EMERGENCY] Emergency Motion re Custody Protection
+DESCRIPTION:Case: Pigors v Pigors - 14th Circuit\\nCourt: 14th Circuit Court\\nAuthority: MCR 2.119(B)\; MCL 722.27\\nUrgency: EMERGENCY\\nWave: 0\\nPrep: 0 days\\nDeps: None - already filed\\nNotes: FILED. Emergency custody protection.
+LOCATION:14th Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [EMERGENCY] Emergency Motion re Custody Protection
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [EMERGENCY] Emergency Motion re Custody Protection
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [EMERGENCY] Emergency Motion re Custody Protection
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-SPOLIATION@litigationos
+DTSTART;VALUE=DATE:20260310
+SUMMARY:[EMERGENCY] Notice of Spoliation / Evidence Preservation
+DESCRIPTION:Case: Pigors v Pigors - 14th Circuit\\nCourt: 14th Circuit Court\\nAuthority: MCR 2.302\; Common law spoliation doctrine\\nUrgency: EMERGENCY\\nWave: 0\\nPrep: 2 days\\nDeps: Draft complete (PKG11)\\nNotes: Puts all parties on notice. Protects AppClose\, recordings\, communications.
+LOCATION:14th Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [EMERGENCY] Notice of Spoliation / Evidence Preservation
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [EMERGENCY] Notice of Spoliation / Evidence Preservation
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [EMERGENCY] Notice of Spoliation / Evidence Preservation
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-RECORD-APPENDIX@litigationos
+DTSTART;VALUE=DATE:20260310
+SUMMARY:[EMERGENCY] Record Appendix Assembly (COA)
+DESCRIPTION:Case: COA 366810\\nCourt: Michigan Court of Appeals\\nAuthority: MCR 7.210(B)\\nUrgency: EMERGENCY\\nWave: 1\\nPrep: 5 days\\nDeps: Court record obtained\\nNotes: Prerequisite for COA brief drafting.
+LOCATION:Michigan Court of Appeals
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [EMERGENCY] Record Appendix Assembly (COA)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [EMERGENCY] Record Appendix Assembly (COA)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [EMERGENCY] Record Appendix Assembly (COA)
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-DISQUALIFY-MCNEILL@litigationos
+DTSTART;VALUE=DATE:20260315
+SUMMARY:[CRITICAL] Motion to Disqualify Judge McNeill
+DESCRIPTION:Case: Pigors v Pigors - 14th Circuit\\nCourt: 14th Circuit Court\\nAuthority: MCR 2.003(C)(1)\; MCL 600.151\\nUrgency: CRITICAL\\nWave: 1\\nPrep: 5 days\\nDeps: Emergency motions filed first\\nNotes: CRITICAL path item. Statistical impossibility of impartial pattern.
+LOCATION:14th Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [CRITICAL] Motion to Disqualify Judge McNeill
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [CRITICAL] Motion to Disqualify Judge McNeill
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [CRITICAL] Motion to Disqualify Judge McNeill
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-BRIEF-RESEARCH@litigationos
+DTSTART;VALUE=DATE:20260317
+SUMMARY:[CRITICAL] COA Brief Research & Outline Complete
+DESCRIPTION:Case: COA 366810\\nCourt: Michigan Court of Appeals\\nAuthority: MCR 7.212(A)(1)\\nUrgency: CRITICAL\\nWave: 2\\nPrep: 7 days\\nDeps: Record appendix assembled\\nNotes: Internal deadline for brief preparation pipeline.
+LOCATION:Michigan Court of Appeals
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [CRITICAL] COA Brief Research & Outline Complete
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [CRITICAL] COA Brief Research & Outline Complete
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [CRITICAL] COA Brief Research & Outline Complete
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-MSC-ORIGINAL@litigationos
+DTSTART;VALUE=DATE:20260401
+SUMMARY:[HIGH] MSC Original Action - Superintending Control
+DESCRIPTION:Case: MSC Original Action\\nCourt: Michigan Supreme Court\\nAuthority: MCR 3.302\; Const 1963 Art 6 Sec 4\\nUrgency: HIGH\\nWave: 2\\nPrep: 14 days\\nDeps: Disqualification motion filed (creates record)\\nNotes: MSC original jurisdiction. Extraordinary remedy for extraordinary abuse.
+LOCATION:Michigan Supreme Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [HIGH] MSC Original Action - Superintending Control
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [HIGH] MSC Original Action - Superintending Control
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [HIGH] MSC Original Action - Superintending Control
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-BRIEF-DRAFT@litigationos
+DTSTART;VALUE=DATE:20260401
+SUMMARY:[HIGH] COA Brief Draft Complete (internal)
+DESCRIPTION:Case: COA 366810\\nCourt: Michigan Court of Appeals\\nAuthority: MCR 7.212(A)(1)\\nUrgency: HIGH\\nWave: 3\\nPrep: 14 days\\nDeps: Research & outline complete\\nNotes: Internal milestone for brief pipeline.
+LOCATION:Michigan Court of Appeals
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [HIGH] COA Brief Draft Complete (internal)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [HIGH] COA Brief Draft Complete (internal)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [HIGH] COA Brief Draft Complete (internal)
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-BRIEF-REVIEW@litigationos
+DTSTART;VALUE=DATE:20260408
+SUMMARY:[MEDIUM] COA Brief Final Review (internal)
+DESCRIPTION:Case: COA 366810\\nCourt: Michigan Court of Appeals\\nAuthority: MCR 7.212(A)(1)\\nUrgency: MEDIUM\\nWave: 3\\nPrep: 7 days\\nDeps: Draft complete\\nNotes: Last chance for corrections before filing.
+LOCATION:Michigan Court of Appeals
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] COA Brief Final Review (internal)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] COA Brief Final Review (internal)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] COA Brief Final Review (internal)
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-COA-BRIEF@litigationos
+DTSTART;VALUE=DATE:20260415
+SUMMARY:[MEDIUM] Appellant's Brief - COA 366810
+DESCRIPTION:Case: COA 366810 - Pigors v Pigors\\nCourt: Michigan Court of Appeals\\nAuthority: MCR 7.212(A)(1)(a)(iii)\\nUrgency: MEDIUM\\nWave: 3\\nPrep: 21 days\\nDeps: Research\, outline\, draft\, review complete\\nNotes: APEX FILING. If COA reverses\, everything cascades. 14\,227 words finalized.
+LOCATION:Michigan Court of Appeals
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] Appellant's Brief - COA 366810
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] Appellant's Brief - COA 366810
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] Appellant's Brief - COA 366810
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-COA-APPENDIX@litigationos
+DTSTART;VALUE=DATE:20260415
+SUMMARY:[MEDIUM] Appendix to Brief - COA 366810
+DESCRIPTION:Case: COA 366810 - Pigors v Pigors\\nCourt: Michigan Court of Appeals\\nAuthority: MCR 7.212(C)(8)\; MCR 7.210\\nUrgency: MEDIUM\\nWave: 3\\nPrep: 7 days\\nDeps: Brief finalized\\nNotes: Relevant orders\, findings\, register of actions\, record portions.
+LOCATION:Michigan Court of Appeals
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] Appendix to Brief - COA 366810
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] Appendix to Brief - COA 366810
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] Appendix to Brief - COA 366810
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-COA-PROOF-SERVICE@litigationos
+DTSTART;VALUE=DATE:20260415
+SUMMARY:[MEDIUM] Proof of Service (COA Brief)
+DESCRIPTION:Case: COA 366810 - Pigors v Pigors\\nCourt: Michigan Court of Appeals\\nAuthority: MCR 7.212(A)(1)(b)\\nUrgency: MEDIUM\\nWave: 3\\nPrep: 1 days\\nDeps: Brief filed\\nNotes: File with brief.
+LOCATION:Michigan Court of Appeals
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] Proof of Service (COA Brief)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] Proof of Service (COA Brief)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] Proof of Service (COA Brief)
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-JTC-COMPLAINT@litigationos
+DTSTART;VALUE=DATE:20260422
+SUMMARY:[MEDIUM] JTC Complaint - Judge McNeill
+DESCRIPTION:Case: JTC Complaint\\nCourt: Judicial Tenure Commission\\nAuthority: MCR 9.200 et seq.\\nUrgency: MEDIUM\\nWave: 4\\nPrep: 7 days\\nDeps: COA brief filed (protective sequencing)\\nNotes: No SOL. Strategic timing after COA brief on file. 52 ex parte orders documented.
+LOCATION:Judicial Tenure Commission
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] JTC Complaint - Judge McNeill
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] JTC Complaint - Judge McNeill
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] JTC Complaint - Judge McNeill
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-VOID-EX-PARTE@litigationos
+DTSTART;VALUE=DATE:20260425
+SUMMARY:[MEDIUM] Motion to Void Ex Parte Orders
+DESCRIPTION:Case: Pigors v Pigors - 14th Circuit\\nCourt: 14th Circuit Court\\nAuthority: MCR 2.119\; Due Process\\nUrgency: MEDIUM\\nWave: 4\\nPrep: 5 days\\nDeps: Disqualification motion filed\\nNotes: Bundles with disqualification. New judge reviews all 52 orders.
+LOCATION:14th Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] Motion to Void Ex Parte Orders
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] Motion to Void Ex Parte Orders
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] Motion to Void Ex Parte Orders
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-VACATE-PPO@litigationos
+DTSTART;VALUE=DATE:20260429
+SUMMARY:[MEDIUM] Motion to Vacate PPO
+DESCRIPTION:Case: Pigors v Pigors - 14th Circuit\\nCourt: 14th Circuit Court\\nAuthority: MCR 3.707\; MCL 750.539c\\nUrgency: MEDIUM\\nWave: 4\\nPrep: 5 days\\nDeps: Void ex parte orders motion filed\\nNotes: Watson MCL 750.539c recording = fruit of felony.
+LOCATION:14th Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] Motion to Vacate PPO
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] Motion to Vacate PPO
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] Motion to Vacate PPO
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-WATSON-TORT@litigationos
+DTSTART;VALUE=DATE:20260430
+SUMMARY:[MEDIUM] Watson Tort Claims (Civil Conspiracy)
+DESCRIPTION:Case: Civil Conspiracy - Watson + Kent County\\nCourt: Kent County Circuit Court\\nAuthority: MCL 600.2911\; MCL 600.5805\\nUrgency: MEDIUM\\nWave: 4\\nPrep: 14 days\\nDeps: Evidence compilation\, COA brief filed\\nNotes: Names Watson + Kent County actors. Civil conspiracy + tortious interference.
+LOCATION:Kent County Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] Watson Tort Claims (Civil Conspiracy)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] Watson Tort Claims (Civil Conspiracy)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] Watson Tort Claims (Civil Conspiracy)
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-SHADY-OAKS@litigationos
+DTSTART;VALUE=DATE:20260430
+SUMMARY:[MEDIUM] Shady Oaks Housing Complaint
+DESCRIPTION:Case: Shady Oaks Housing Violations\\nCourt: Kent County Circuit Court / MDCR\\nAuthority: MCL 37.2101 (Elliott-Larsen)\; Fair Housing Act\\nUrgency: MEDIUM\\nWave: 4\\nPrep: 10 days\\nDeps: Housing evidence compiled\\nNotes: Separate track from custody. Housing loss from judicial abuse.
+LOCATION:Kent County Circuit Court / MDCR
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] Shady Oaks Housing Complaint
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] Shady Oaks Housing Complaint
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] Shady Oaks Housing Complaint
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-CONTEMPT-MOTION@litigationos
+DTSTART;VALUE=DATE:20260506
+SUMMARY:[MEDIUM] Motion for Contempt / Enforcement
+DESCRIPTION:Case: Pigors v Pigors - 14th Circuit\\nCourt: 14th Circuit Court\\nAuthority: MCL 600.1701\; MCR 3.208\\nUrgency: MEDIUM\\nWave: 5\\nPrep: 7 days\\nDeps: Disqualification motion resolved\\nNotes: Record of ongoing non-compliance by opposing party.
+LOCATION:14th Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] Motion for Contempt / Enforcement
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] Motion for Contempt / Enforcement
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] Motion for Contempt / Enforcement
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-1983-FEDERAL@litigationos
+DTSTART;VALUE=DATE:20260515
+SUMMARY:[MEDIUM] 42 USC 1983 Federal Civil Rights Complaint
+DESCRIPTION:Case: Federal 1983 - Due Process / Equal Protection\\nCourt: U.S. District Court\, W.D. Michigan\\nAuthority: 42 USC 1983\; 28 USC 1343\\nUrgency: MEDIUM\\nWave: 5\\nPrep: 21 days\\nDeps: COA brief filed\, state remedies documented\\nNotes: PLAN B if COA denies. Names McNeill individually. $259K-$516K+ damages. SOL ~2029.
+LOCATION:U.S. District Court\, W.D. Michigan
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] 42 USC 1983 Federal Civil Rights Complaint
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] 42 USC 1983 Federal Civil Rights Complaint
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] 42 USC 1983 Federal Civil Rights Complaint
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-1985-CONSPIRACY@litigationos
+DTSTART;VALUE=DATE:20260515
+SUMMARY:[MEDIUM] 42 USC 1985 Civil Rights Conspiracy
+DESCRIPTION:Case: Federal 1985 - Civil Rights Conspiracy\\nCourt: U.S. District Court\, W.D. Michigan\\nAuthority: 42 USC 1985(3)\\nUrgency: MEDIUM\\nWave: 5\\nPrep: 21 days\\nDeps: Filed with 1983 complaint\\nNotes: Companion to 1983 claim. Conspiracy between judge\, attorney\, FOC.
+LOCATION:U.S. District Court\, W.D. Michigan
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] 42 USC 1985 Civil Rights Conspiracy
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] 42 USC 1985 Civil Rights Conspiracy
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] 42 USC 1985 Civil Rights Conspiracy
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-FOC-OBJECTION@litigationos
+DTSTART;VALUE=DATE:20260515
+SUMMARY:[MEDIUM] Objection to FOC Recommendation
+DESCRIPTION:Case: Pigors v Pigors - 14th Circuit\\nCourt: 14th Circuit Court\\nAuthority: MCL 552.507\\nUrgency: MEDIUM\\nWave: 5\\nPrep: 7 days\\nDeps: FOC recommendation issued (conditional)\\nNotes: Preserves rights. Filed if/when FOC acts.
+LOCATION:14th Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] Objection to FOC Recommendation
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] Objection to FOC Recommendation
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] Objection to FOC Recommendation
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-HOUSING-MDCR-HUD@litigationos
+DTSTART;VALUE=DATE:20260530
+SUMMARY:[MEDIUM] Housing Discrimination Complaint (MDCR/HUD)
+DESCRIPTION:Case: Shady Oaks Housing - MDCR/HUD\\nCourt: Michigan Dept of Civil Rights / HUD\\nAuthority: 42 USC 3610\; MCL 37.2101\\nUrgency: MEDIUM\\nWave: 5\\nPrep: 14 days\\nDeps: Housing evidence compiled\\nNotes: Independent investigation track. Supports damages.
+LOCATION:Michigan Dept of Civil Rights / HUD
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] Housing Discrimination Complaint (MDCR/HUD)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] Housing Discrimination Complaint (MDCR/HUD)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] Housing Discrimination Complaint (MDCR/HUD)
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-PPO-RENEWAL@litigationos
+DTSTART;VALUE=DATE:20260601
+SUMMARY:[MEDIUM] PPO Renewal Hearing
+DESCRIPTION:Case: PPO - 2023-5907-PP\\nCourt: 14th Circuit Court\\nAuthority: MCL 600.2950\\nUrgency: MEDIUM\\nWave: 5\\nPrep: 14 days\\nDeps: PPO vacatur motion outcome\\nNotes: If PPO not vacated\, challenge at renewal.
+LOCATION:14th Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [MEDIUM] PPO Renewal Hearing
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [MEDIUM] PPO Renewal Hearing
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [MEDIUM] PPO Renewal Hearing
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-LARA-COMPLAINT@litigationos
+DTSTART;VALUE=DATE:20260701
+SUMMARY:[LOW] LARA Regulatory Complaint
+DESCRIPTION:Case: LARA - Professional Licensing\\nCourt: MI LARA - Licensing Division\\nAuthority: MCL 339.101 et seq.\\nUrgency: LOW\\nWave: 5\\nPrep: 10 days\\nDeps: Evidence of professional misconduct compiled\\nNotes: Targets licensed professionals involved in misconduct.
+LOCATION:MI LARA - Licensing Division
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] LARA Regulatory Complaint
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] LARA Regulatory Complaint
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] LARA Regulatory Complaint
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-MSC-LEAVE-APPEAL@litigationos
+DTSTART;VALUE=DATE:20260714
+SUMMARY:[LOW] MSC Application for Leave to Appeal (if COA denies)
+DESCRIPTION:Case: MSC Leave to Appeal\\nCourt: Michigan Supreme Court\\nAuthority: MCR 7.305(C)(2)\\nUrgency: LOW\\nWave: 6\\nPrep: 21 days\\nDeps: COA decision received (if denied)\\nNotes: CONDITIONAL: Only if COA denies. 42-day window from COA decision.
+LOCATION:Michigan Supreme Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] MSC Application for Leave to Appeal (if COA denies)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] MSC Application for Leave to Appeal (if COA denies)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] MSC Application for Leave to Appeal (if COA denies)
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-HUD-COMPLAINT@litigationos
+DTSTART;VALUE=DATE:20260717
+SUMMARY:[LOW] HUD Federal Housing Complaint
+DESCRIPTION:Case: HUD Complaint - Shady Oaks\\nCourt: U.S. Dept of Housing and Urban Development\\nAuthority: 42 USC 3610(a)(1)(A)(i)\\nUrgency: LOW\\nWave: 5\\nPrep: 14 days\\nDeps: Housing evidence package complete\\nNotes: Federal housing discrimination. 1-year filing window.
+LOCATION:U.S. Dept of Housing and Urban Development
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] HUD Federal Housing Complaint
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] HUD Federal Housing Complaint
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] HUD Federal Housing Complaint
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-MDHHS-COMPLAINT@litigationos
+DTSTART;VALUE=DATE:20260801
+SUMMARY:[LOW] MDHHS Complaint (Child Welfare)
+DESCRIPTION:Case: MDHHS - Child Welfare Complaint\\nCourt: MI Dept of Health and Human Services\\nAuthority: MCL 722.621 et seq.\\nUrgency: LOW\\nWave: 6\\nPrep: 10 days\\nDeps: Child welfare evidence compiled\\nNotes: No strict SOL. File when evidence supports concerns.
+LOCATION:MI Dept of Health and Human Services
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] MDHHS Complaint (Child Welfare)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] MDHHS Complaint (Child Welfare)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] MDHHS Complaint (Child Welfare)
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-MDCR-180@litigationos
+DTSTART;VALUE=DATE:20260901
+SUMMARY:[LOW] MDCR Discrimination Complaint (180-day window)
+DESCRIPTION:Case: MDCR Civil Rights Complaint\\nCourt: Michigan Dept of Civil Rights\\nAuthority: MCL 37.2101\; Elliott-Larsen Civil Rights Act\\nUrgency: LOW\\nWave: 6\\nPrep: 14 days\\nDeps: Discrimination evidence compiled\\nNotes: 180-day window. Must file within window of last act. Strategic timing.
+LOCATION:Michigan Dept of Civil Rights
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] MDCR Discrimination Complaint (180-day window)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] MDCR Discrimination Complaint (180-day window)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] MDCR Discrimination Complaint (180-day window)
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-JTC-SUPPLEMENT@litigationos
+DTSTART;VALUE=DATE:20260901
+SUMMARY:[LOW] JTC Complaint Supplement / Follow-up
+DESCRIPTION:Case: JTC Complaint - McNeill\\nCourt: Judicial Tenure Commission\\nAuthority: MCR 9.200 et seq.\\nUrgency: LOW\\nWave: 6\\nPrep: 7 days\\nDeps: Initial JTC complaint filed\, new evidence gathered\\nNotes: No SOL. Supplement with new evidence as it develops.
+LOCATION:Judicial Tenure Commission
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] JTC Complaint Supplement / Follow-up
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] JTC Complaint Supplement / Follow-up
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] JTC Complaint Supplement / Follow-up
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-HIPAA-COMPLAINT@litigationos
+DTSTART;VALUE=DATE:20260901
+SUMMARY:[LOW] HIPAA Violation Complaint (180-day window)
+DESCRIPTION:Case: HIPAA - Medical Privacy Violations\\nCourt: HHS Office for Civil Rights\\nAuthority: 45 CFR 160.306\; HIPAA Privacy Rule\\nUrgency: LOW\\nWave: 6\\nPrep: 10 days\\nDeps: Medical records violations documented\\nNotes: 180-day window from knowledge of violation. Federal complaint to HHS OCR.
+LOCATION:HHS Office for Civil Rights
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] HIPAA Violation Complaint (180-day window)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] HIPAA Violation Complaint (180-day window)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] HIPAA Violation Complaint (180-day window)
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-BAR-GRIEVANCE@litigationos
+DTSTART;VALUE=DATE:20260901
+SUMMARY:[LOW] Bar Grievance - Attorney Barnes
+DESCRIPTION:Case: Attorney Grievance - Barnes\\nCourt: Attorney Grievance Commission\\nAuthority: MCR 9.100 et seq.\\nUrgency: LOW\\nWave: 6\\nPrep: 10 days\\nDeps: Attorney misconduct evidence compiled\\nNotes: No SOL for grievance complaints. File supplemental as available.
+LOCATION:Attorney Grievance Commission
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] Bar Grievance - Attorney Barnes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] Bar Grievance - Attorney Barnes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] Bar Grievance - Attorney Barnes
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-PROSECUTOR-REFERRAL@litigationos
+DTSTART;VALUE=DATE:20260901
+SUMMARY:[LOW] Prosecutor Referral - Watson Felonies
+DESCRIPTION:Case: Criminal Referral - Watson\\nCourt: Kent County Prosecutor\\nAuthority: MCL 750.539c\; MCL 767.1\\nUrgency: LOW\\nWave: 6\\nPrep: 14 days\\nDeps: Criminal evidence package complete\\nNotes: Referral for felony eavesdropping + false pretenses. 6-year SOL for felonies.
+LOCATION:Kent County Prosecutor
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] Prosecutor Referral - Watson Felonies
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] Prosecutor Referral - Watson Felonies
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] Prosecutor Referral - Watson Felonies
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-AG-COMPLAINT@litigationos
+DTSTART;VALUE=DATE:20260915
+SUMMARY:[LOW] Attorney General Complaint
+DESCRIPTION:Case: AG Complaint - Government Misconduct\\nCourt: Michigan Attorney General\\nAuthority: MCL 14.28\; AG authority\\nUrgency: LOW\\nWave: 6\\nPrep: 14 days\\nDeps: Pattern of government misconduct documented\\nNotes: No SOL. AG has discretion. File when pattern is undeniable.
+LOCATION:Michigan Attorney General
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] Attorney General Complaint
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] Attorney General Complaint
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] Attorney General Complaint
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-WATSON-DEFAMATION@litigationos
+DTSTART;VALUE=DATE:20270201
+SUMMARY:[LOW] Watson Defamation Claims
+DESCRIPTION:Case: Watson - Defamation\\nCourt: Kent County Circuit Court\\nAuthority: MCL 600.5805(2)\; MCL 600.2911\\nUrgency: LOW\\nWave: 6\\nPrep: 14 days\\nDeps: Defamatory statements documented with dates\\nNotes: SOL ~Feb 2027. 1-year from each defamatory publication.
+LOCATION:Kent County Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] Watson Defamation Claims
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] Watson Defamation Claims
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] Watson Defamation Claims
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-WATSON-IIED@litigationos
+DTSTART;VALUE=DATE:20270601
+SUMMARY:[LOW] Watson IIED Claim
+DESCRIPTION:Case: Watson - Intentional Infliction of Emotional Distress\\nCourt: Kent County Circuit Court\\nAuthority: MCL 600.5805(2)\\nUrgency: LOW\\nWave: 6\\nPrep: 14 days\\nDeps: Emotional distress evidence\, psych records\\nNotes: 3-year SOL. Pattern of outrageous conduct documented.
+LOCATION:Kent County Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] Watson IIED Claim
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] Watson IIED Claim
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] Watson IIED Claim
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-WATSON-ABUSE-PROCESS@litigationos
+DTSTART;VALUE=DATE:20270601
+SUMMARY:[LOW] Watson Abuse of Process
+DESCRIPTION:Case: Watson - Abuse of Process\\nCourt: Kent County Circuit Court\\nAuthority: MCL 600.5805\; Friedman v Dozorc\\nUrgency: LOW\\nWave: 6\\nPrep: 14 days\\nDeps: Process abuse evidence compiled\\nNotes: Misuse of legal process for improper purposes.
+LOCATION:Kent County Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] Watson Abuse of Process
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] Watson Abuse of Process
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] Watson Abuse of Process
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-SHADY-SECURITY-DEP@litigationos
+DTSTART;VALUE=DATE:20280601
+SUMMARY:[LOW] Shady Oaks Security Deposit Act Claim
+DESCRIPTION:Case: Shady Oaks - Security Deposit\\nCourt: Kent County District Court\\nAuthority: MCL 554.601-616\\nUrgency: LOW\\nWave: 6\\nPrep: 7 days\\nDeps: Lease records\, deposit documentation\\nNotes: Long SOL. Can recover up to 2x deposit + costs.
+LOCATION:Kent County District Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] Shady Oaks Security Deposit Act Claim
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] Shady Oaks Security Deposit Act Claim
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] Shady Oaks Security Deposit Act Claim
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-SHADY-RICO@litigationos
+DTSTART;VALUE=DATE:20290101
+SUMMARY:[LOW] Shady Oaks Michigan RICO
+DESCRIPTION:Case: Shady Oaks - RICO\\nCourt: Kent County Circuit Court\\nAuthority: MCL 750.159i\\nUrgency: LOW\\nWave: 6\\nPrep: 30 days\\nDeps: Pattern evidence\, predicate acts documented\\nNotes: Long SOL. Requires proof of pattern (2+ predicate acts).
+LOCATION:Kent County Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] Shady Oaks Michigan RICO
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] Shady Oaks Michigan RICO
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] Shady Oaks Michigan RICO
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-FEDERAL-1983-SOL@litigationos
+DTSTART;VALUE=DATE:20290305
+SUMMARY:[LOW] Federal 1983 Final SOL Marker
+DESCRIPTION:Case: Federal 1983 SOL Window\\nCourt: U.S. District Court\, W.D. Michigan\\nAuthority: 42 USC 1983\; MCL 600.5805(2)\\nUrgency: LOW\\nWave: 6\\nPrep: 0 days\\nDeps: N/A - SOL tracking marker\\nNotes: OUTER LIMIT for federal civil rights claims. Each violation has own 3-year window.
+LOCATION:U.S. District Court\, W.D. Michigan
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] Federal 1983 Final SOL Marker
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] Federal 1983 Final SOL Marker
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] Federal 1983 Final SOL Marker
+END:VALARM
+END:VEVENTBEGIN:VEVENT
+UID:DL-WATSON-FRAUD@litigationos
+DTSTART;VALUE=DATE:20300101
+SUMMARY:[LOW] Watson Fraud Claims
+DESCRIPTION:Case: Watson - Fraud\\nCourt: Kent County Circuit Court\\nAuthority: MCL 600.5813\; MCL 600.5855\\nUrgency: LOW\\nWave: 6\\nPrep: 14 days\\nDeps: Fraud evidence compiled\\nNotes: Longest SOL. 6 years from discovery of fraud.
+LOCATION:Kent County Circuit Court
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:7-day warning: [LOW] Watson Fraud Claims
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:3-day warning: [LOW] Watson Fraud Claims
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:1-day warning: [LOW] Watson Fraud Claims
+END:VALARM
+END:VEVENT
+END:VCALENDAR

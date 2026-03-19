@@ -1,0 +1,17 @@
+{
+  "host": "127.0.0.1",
+  "port": 7777,
+  "brains_dir": "brains",
+  "journals_dir": "C:/Users/andre/Desktop/AGENT_JOURNALS",
+  "max_brain_size_kb": 500,
+  "query_timeout_sec": 30,
+  "health_check_interval_sec": 60,
+  "llm_backend": "local",
+  "llm_fallback": "local",
+  "convergence_threshold": 0.01,
+  "top_k_default": 5,
+  "confidence_threshold": 0.3,
+  "max_chain_depth": 10,
+  "log_queries": true,
+  "self_repair_on_load": true
+}

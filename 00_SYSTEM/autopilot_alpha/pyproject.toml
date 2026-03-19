@@ -1,0 +1,9 @@
+[project]
+name = "litigationos-autopilot-alpha"
+version = "0.1.0"
+description = "Local-first drive scout + manifest builder for LitigationOS"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+litigationos-autopilot = "autopilot.__main__:main"

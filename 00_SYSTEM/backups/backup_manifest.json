@@ -1,0 +1,4820 @@
+{
+  "backups": [
+    {
+      "timestamp": "20260304_212018",
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\backups\\backup_20260304_212018",
+      "items": [
+        "00_SYSTEM/engines (429 files)",
+        "00_SYSTEM/calendar (3 files)",
+        ".github (20 files)",
+        ".copilot/agents (54 files)",
+        ".github/copilot-instructions.md",
+        "00_SYSTEM/FILING_READINESS_AUDIT.md",
+        "00_SYSTEM/PLACEHOLDER_MASTER_REPORT.md"
+      ],
+      "size_mb": 61.04
+    }
+  ],
+  "file_versions": {
+    "01_COA_366810\\BRIEF_COMPLIANCE_CHECK.md": {
+      "hash": "6366d1ea24e533a5",
+      "first_seen": "2026-03-04T21:20:20.858865",
+      "last_modified": "2026-03-04T21:20:20.858865",
+      "versions": 1
+    },
+    "01_COA_366810\\COA_BRIEF_366810_FINAL.md": {
+      "hash": "09839dd27737999d",
+      "first_seen": "2026-03-04T21:20:20.859862",
+      "last_modified": "2026-03-04T21:20:20.859862",
+      "versions": 1
+    },
+    "01_COA_366810\\APPENDIX\\appendix_cover.md": {
+      "hash": "4ba37249f72840d3",
+      "first_seen": "2026-03-04T21:20:20.859862",
+      "last_modified": "2026-03-04T21:20:20.859862",
+      "versions": 1
+    },
+    "01_COA_366810\\APPENDIX\\appendix_index.md": {
+      "hash": "10c1d879d67308db",
+      "first_seen": "2026-03-04T21:20:20.860863",
+      "last_modified": "2026-03-04T21:20:20.860863",
+      "versions": 1
+    },
+    "01_COA_366810\\COA_DRAFT_STACK\\00_README_START.md": {
+      "hash": "77bcd2354e59f6c5",
+      "first_seen": "2026-03-04T21:20:20.860863",
+      "last_modified": "2026-03-04T21:20:20.860863",
+      "versions": 1
+    },
+    "01_COA_366810\\COA_DRAFT_STACK\\01_COA_Complaint_Superintending_Control.md": {
+      "hash": "3c4460489c2999df",
+      "first_seen": "2026-03-04T21:20:20.860863",
+      "last_modified": "2026-03-04T21:20:20.860863",
+      "versions": 1
+    },
+    "01_COA_366810\\COA_DRAFT_STACK\\02_COA_Emergency_Motion_Stay_Interim_Relief.md": {
+      "hash": "8b236161a7bff95b",
+      "first_seen": "2026-03-04T21:20:20.861864",
+      "last_modified": "2026-03-04T21:20:20.861864",
+      "versions": 1
+    },
+    "01_COA_366810\\COA_DRAFT_STACK\\03_Verified_Statement_and_Exhibit_List.md": {
+      "hash": "ce577104e76704f9",
+      "first_seen": "2026-03-04T21:20:20.861864",
+      "last_modified": "2026-03-04T21:20:20.861864",
+      "versions": 1
+    },
+    "01_COA_366810\\COA_DRAFT_STACK\\04_Record_Acquisition_and_Pinpoint_Map.md": {
+      "hash": "2344756c9938aa40",
+      "first_seen": "2026-03-04T21:20:20.861864",
+      "last_modified": "2026-03-04T21:20:20.861864",
+      "versions": 1
+    },
+    "01_COA_366810\\COA_DRAFT_STACK\\05_JTC_Complaint_Structure.md": {
+      "hash": "6aee4d1c717467b1",
+      "first_seen": "2026-03-04T21:20:20.862866",
+      "last_modified": "2026-03-04T21:20:20.862866",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\00_MASTER_BRIEF.md": {
+      "hash": "eb74eeb381c48509",
+      "first_seen": "2026-03-04T21:20:20.862866",
+      "last_modified": "2026-03-04T21:20:20.862866",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\03_BUNDLE_SPECIFICATIONS.md": {
+      "hash": "5f1c6d4002929d7f",
+      "first_seen": "2026-03-04T21:20:20.862866",
+      "last_modified": "2026-03-04T21:20:20.862866",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\05_READINESS_ASSESSMENT.md": {
+      "hash": "907e27b575d6b95b",
+      "first_seen": "2026-03-04T21:20:20.863863",
+      "last_modified": "2026-03-04T21:20:20.863863",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\06_COMPLIANCE_MATRIX.md": {
+      "hash": "85758e654cdef206",
+      "first_seen": "2026-03-04T21:20:20.863863",
+      "last_modified": "2026-03-04T21:20:20.863863",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\08_CONSTITUTIONAL_SECTIONS.md": {
+      "hash": "7c19e1ceaf324fe8",
+      "first_seen": "2026-03-04T21:20:20.863863",
+      "last_modified": "2026-03-04T21:20:20.863863",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\09_REPLY_TEMPLATES.md": {
+      "hash": "44c6df8064f6a332",
+      "first_seen": "2026-03-04T21:20:20.863863",
+      "last_modified": "2026-03-04T21:20:20.863863",
+      "versions": 1
+    },
+    "01_COA_366810\\COURT_PACKETS_v3\\02_COA_APPLICATION_LEAVE_APPEAL_v3.md": {
+      "hash": "aa5e7deff3404850",
+      "first_seen": "2026-03-04T21:20:20.864863",
+      "last_modified": "2026-03-04T21:20:20.864863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\19_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md": {
+      "hash": "e40200009a0ba7fb",
+      "first_seen": "2026-03-04T21:20:20.865863",
+      "last_modified": "2026-03-04T21:20:20.865863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\20_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md": {
+      "hash": "e40200009a0ba7fb",
+      "first_seen": "2026-03-04T21:20:20.865863",
+      "last_modified": "2026-03-04T21:20:20.865863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\21_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md": {
+      "hash": "e40200009a0ba7fb",
+      "first_seen": "2026-03-04T21:20:20.866863",
+      "last_modified": "2026-03-04T21:20:20.866863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\32b96621-7b62-4848-8873-28ac6217155f__checkpoints__004-complete-appellate-filing-pack.md": {
+      "hash": "5236383d716322e6",
+      "first_seen": "2026-03-04T21:20:20.866863",
+      "last_modified": "2026-03-04T21:20:20.866863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\32b96621-7b62-4848-8873-28ac6217155f__checkpoints__005-appellate-document-audit-initi.md": {
+      "hash": "271e9725e80dbad2",
+      "first_seen": "2026-03-04T21:20:20.866863",
+      "last_modified": "2026-03-04T21:20:20.866863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\34_APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md": {
+      "hash": "d09d337912022adb",
+      "first_seen": "2026-03-04T21:20:20.866863",
+      "last_modified": "2026-03-04T21:20:20.866863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\35_APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md": {
+      "hash": "d09d337912022adb",
+      "first_seen": "2026-03-04T21:20:20.867863",
+      "last_modified": "2026-03-04T21:20:20.867863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\36_APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md": {
+      "hash": "d09d337912022adb",
+      "first_seen": "2026-03-04T21:20:20.867863",
+      "last_modified": "2026-03-04T21:20:20.867863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\41_APPELLATE_JOURNAL.md": {
+      "hash": "76e0e0037f9e5d05",
+      "first_seen": "2026-03-04T21:20:20.870863",
+      "last_modified": "2026-03-04T21:20:20.870863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\41_APPELLATE_LLM_APPELLATE_STRATEGY.md": {
+      "hash": "952493f9c8be9f03",
+      "first_seen": "2026-03-04T21:20:20.871863",
+      "last_modified": "2026-03-04T21:20:20.871863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\AFFIDAVIT_PIGORS_COA.md": {
+      "hash": "bf8dfeeacb83b8e4",
+      "first_seen": "2026-03-04T21:20:20.871863",
+      "last_modified": "2026-03-04T21:20:20.871863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\APPELLANT_BRIEF_COA_366810.md": {
+      "hash": "1c46112da8b6b805",
+      "first_seen": "2026-03-04T21:20:20.871863",
+      "last_modified": "2026-03-04T21:20:20.871863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\APPELLANT_BRIEF_COA_366810_1.md": {
+      "hash": "5d8183faa7086752",
+      "first_seen": "2026-03-04T21:20:20.871863",
+      "last_modified": "2026-03-04T21:20:20.871863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\APPELLANT_BRIEF_COA_366810_2.md": {
+      "hash": "1af7312b47cdb695",
+      "first_seen": "2026-03-04T21:20:20.872863",
+      "last_modified": "2026-03-04T21:20:20.872863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\APPELLATE_BRIEF_DOCUMENTED_VIOLATIONS(1).md": {
+      "hash": "fa02c9942fac831c",
+      "first_seen": "2026-03-04T21:20:20.872863",
+      "last_modified": "2026-03-04T21:20:20.872863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\APPELLATE_BRIEF_DOCUMENTED_VIOLATIONS.md": {
+      "hash": "fa02c9942fac831c",
+      "first_seen": "2026-03-04T21:20:20.873863",
+      "last_modified": "2026-03-04T21:20:20.873863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md": {
+      "hash": "d09d337912022adb",
+      "first_seen": "2026-03-04T21:20:20.873863",
+      "last_modified": "2026-03-04T21:20:20.873863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209_2.md": {
+      "hash": "d09d337912022adb",
+      "first_seen": "2026-03-04T21:20:20.873863",
+      "last_modified": "2026-03-04T21:20:20.873863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209_3.md": {
+      "hash": "d09d337912022adb",
+      "first_seen": "2026-03-04T21:20:20.873863",
+      "last_modified": "2026-03-04T21:20:20.873863",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209_4.md": {
+      "hash": "d09d337912022adb",
+      "first_seen": "2026-03-04T21:20:20.874864",
+      "last_modified": "2026-03-04T21:20:20.875866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\BRIEF_IN_SUPPORT_EMERGENCY_MOTION_COA.md": {
+      "hash": "8a2ded8c26f0d581",
+      "first_seen": "2026-03-04T21:20:20.875866",
+      "last_modified": "2026-03-04T21:20:20.875866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_366810_APPELLANTS_BRIEF.md": {
+      "hash": "613bb2621d9e2f3c",
+      "first_seen": "2026-03-04T21:20:20.875866",
+      "last_modified": "2026-03-04T21:20:20.875866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_366810_APPELLANTS_BRIEF_1.md": {
+      "hash": "c23eca916edfb205",
+      "first_seen": "2026-03-04T21:20:20.876866",
+      "last_modified": "2026-03-04T21:20:20.876866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_366810_APPELLANTS_BRIEF_CONVERGED.md": {
+      "hash": "613bb2621d9e2f3c",
+      "first_seen": "2026-03-04T21:20:20.876866",
+      "last_modified": "2026-03-04T21:20:20.876866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_366810_APPELLANTS_BRIEF_PACKAGE.md": {
+      "hash": "21445de22fecf334",
+      "first_seen": "2026-03-04T21:20:20.876866",
+      "last_modified": "2026-03-04T21:20:20.876866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_366810_APPELLANTS_BRIEF_PACKAGE_1.md": {
+      "hash": "d0d458d7086924f3",
+      "first_seen": "2026-03-04T21:20:20.877866",
+      "last_modified": "2026-03-04T21:20:20.877866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_366810_APPELLATE_TIMELINE.md": {
+      "hash": "5e6994f5add051da",
+      "first_seen": "2026-03-04T21:20:20.877866",
+      "last_modified": "2026-03-04T21:20:20.877866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_APPELLANT_BRIEF.md": {
+      "hash": "a6600842a0ef978e",
+      "first_seen": "2026-03-04T21:20:20.877866",
+      "last_modified": "2026-03-04T21:20:20.877866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_APPELLANT_BRIEF_366810.md": {
+      "hash": "21acc96529283b5c",
+      "first_seen": "2026-03-04T21:20:20.878866",
+      "last_modified": "2026-03-04T21:20:20.878866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_APPELLANT_BRIEF_366810_v2.md": {
+      "hash": "889c0d6f463cc69e",
+      "first_seen": "2026-03-04T21:20:20.878866",
+      "last_modified": "2026-03-04T21:20:20.878866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_APPENDIX_INDEX_366810.md": {
+      "hash": "43b9ef5748bf5efe",
+      "first_seen": "2026-03-04T21:20:20.878866",
+      "last_modified": "2026-03-04T21:20:20.878866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_BRIEF_APPENDIX.md": {
+      "hash": "35f866a45b07b755",
+      "first_seen": "2026-03-04T21:20:20.878866",
+      "last_modified": "2026-03-04T21:20:20.878866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_BRIEF_DRAFT.md": {
+      "hash": "ed7fef02e188acdd",
+      "first_seen": "2026-03-04T21:20:20.878866",
+      "last_modified": "2026-03-04T21:20:20.878866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\coa_brief_factory.md": {
+      "hash": "7dd802e1b33164ba",
+      "first_seen": "2026-03-04T21:20:20.879867",
+      "last_modified": "2026-03-04T21:20:20.879867",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_BRIEF_FINAL.md": {
+      "hash": "1cf9995a438e4974",
+      "first_seen": "2026-03-04T21:20:20.879867",
+      "last_modified": "2026-03-04T21:20:20.879867",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COA_EMERGENCY_APPLICATION_366810_v2.md": {
+      "hash": "c59c64b8bdbdfe8d",
+      "first_seen": "2026-03-04T21:20:20.879867",
+      "last_modified": "2026-03-04T21:20:20.879867",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md": {
+      "hash": "e40200009a0ba7fb",
+      "first_seen": "2026-03-04T21:20:20.879867",
+      "last_modified": "2026-03-04T21:20:20.879867",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209_2.md": {
+      "hash": "e40200009a0ba7fb",
+      "first_seen": "2026-03-04T21:20:20.880868",
+      "last_modified": "2026-03-04T21:20:20.880868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209_3.md": {
+      "hash": "e40200009a0ba7fb",
+      "first_seen": "2026-03-04T21:20:20.880868",
+      "last_modified": "2026-03-04T21:20:20.880868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209_4.md": {
+      "hash": "e40200009a0ba7fb",
+      "first_seen": "2026-03-04T21:20:20.880868",
+      "last_modified": "2026-03-04T21:20:20.880868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\data__19_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md": {
+      "hash": "e40200009a0ba7fb",
+      "first_seen": "2026-03-04T21:20:20.880868",
+      "last_modified": "2026-03-04T21:20:20.880868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\data__20_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md": {
+      "hash": "e40200009a0ba7fb",
+      "first_seen": "2026-03-04T21:20:20.881868",
+      "last_modified": "2026-03-04T21:20:20.881868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\data__21_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md": {
+      "hash": "e40200009a0ba7fb",
+      "first_seen": "2026-03-04T21:20:20.881868",
+      "last_modified": "2026-03-04T21:20:20.881868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\data__34_APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md": {
+      "hash": "d09d337912022adb",
+      "first_seen": "2026-03-04T21:20:20.881868",
+      "last_modified": "2026-03-04T21:20:20.881868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\data__35_APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md": {
+      "hash": "d09d337912022adb",
+      "first_seen": "2026-03-04T21:20:20.882868",
+      "last_modified": "2026-03-04T21:20:20.882868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\data__36_APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md": {
+      "hash": "d09d337912022adb",
+      "first_seen": "2026-03-04T21:20:20.882868",
+      "last_modified": "2026-03-04T21:20:20.882868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\data__APPELLATE_BRIEF_DOCUMENTED_VIOLATIONS.md": {
+      "hash": "fa02c9942fac831c",
+      "first_seen": "2026-03-04T21:20:20.882868",
+      "last_modified": "2026-03-04T21:20:20.882868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\data__APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md": {
+      "hash": "d09d337912022adb",
+      "first_seen": "2026-03-04T21:20:20.882868",
+      "last_modified": "2026-03-04T21:20:20.882868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\data__COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md": {
+      "hash": "e40200009a0ba7fb",
+      "first_seen": "2026-03-04T21:20:20.883867",
+      "last_modified": "2026-03-04T21:20:20.883867",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\data__FEDERAL_CONSTITUTIONAL_APPELLATE_BRIEF.md": {
+      "hash": "47a86faf9c565648",
+      "first_seen": "2026-03-04T21:20:20.883867",
+      "last_modified": "2026-03-04T21:20:20.883867",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\data__FEDERAL_CONSTITUTIONAL_APPELLATE_BRIEF1.md": {
+      "hash": "47a86faf9c565648",
+      "first_seen": "2026-03-04T21:20:20.883867",
+      "last_modified": "2026-03-04T21:20:20.883867",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\EVIDENCE_CHAINS.md": {
+      "hash": "0b1c2022f7c9a16d",
+      "first_seen": "2026-03-04T21:20:20.883867",
+      "last_modified": "2026-03-04T21:20:20.883867",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\FEDERAL_CONSTITUTIONAL_APPELLATE_BRIEF.md": {
+      "hash": "47a86faf9c565648",
+      "first_seen": "2026-03-04T21:20:20.884866",
+      "last_modified": "2026-03-04T21:20:20.884866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\FEDERAL_CONSTITUTIONAL_APPELLATE_BRIEF1.md": {
+      "hash": "47a86faf9c565648",
+      "first_seen": "2026-03-04T21:20:20.884866",
+      "last_modified": "2026-03-04T21:20:20.884866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\journal_md.md": {
+      "hash": "5613521040f6833e",
+      "first_seen": "2026-03-04T21:20:20.885865",
+      "last_modified": "2026-03-04T21:20:20.885865",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\LANE_F_APPELLATE_APPELLANT_BRIEF_COA_366810.md": {
+      "hash": "5d8183faa7086752",
+      "first_seen": "2026-03-04T21:20:20.886865",
+      "last_modified": "2026-03-04T21:20:20.886865",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\LANE_F_APPELLATE_COA_366810_APPELLANTS_BRIEF.md": {
+      "hash": "613bb2621d9e2f3c",
+      "first_seen": "2026-03-04T21:20:20.887867",
+      "last_modified": "2026-03-04T21:20:20.887867",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\LLM_APPELLATE_STRATEGY.md": {
+      "hash": "952493f9c8be9f03",
+      "first_seen": "2026-03-04T21:20:20.888868",
+      "last_modified": "2026-03-04T21:20:20.888868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\MOTION_IMMEDIATE_CONSIDERATION_COA.md": {
+      "hash": "445b2b93c0522e77",
+      "first_seen": "2026-03-04T21:20:20.888868",
+      "last_modified": "2026-03-04T21:20:20.888868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody__11_Appeals__Appellate_Brief__Federal_Constitutional_Brief.md": {
+      "hash": "47a86faf9c565648",
+      "first_seen": "2026-03-04T21:20:20.888868",
+      "last_modified": "2026-03-04T21:20:20.888868",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\PKG05_COA_APPELLANT_BRIEF_FINALIZED.md": {
+      "hash": "45a866d4be9f9e74",
+      "first_seen": "2026-03-04T21:20:20.889866",
+      "last_modified": "2026-03-04T21:20:20.889866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\SIGNAL_SCORES.md": {
+      "hash": "7be9fb0e6580fa13",
+      "first_seen": "2026-03-04T21:20:20.889866",
+      "last_modified": "2026-03-04T21:20:20.889866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\SUMMARY.md": {
+      "hash": "cd0eeea808a4cab3",
+      "first_seen": "2026-03-04T21:20:20.889866",
+      "last_modified": "2026-03-04T21:20:20.889866",
+      "versions": 1
+    },
+    "01_COA_366810\\drafts\\VERBATIM_QUOTES.md": {
+      "hash": "6071a5fbde6d7005",
+      "first_seen": "2026-03-04T21:20:20.890868",
+      "last_modified": "2026-03-04T21:20:20.890868",
+      "versions": 1
+    },
+    "01_COA_366810\\FINAL_BRIEF_STACK\\01_APPELLANTS_BRIEF_ON_APPEAL.md": {
+      "hash": "8af8fc2123cfcf9c",
+      "first_seen": "2026-03-04T21:20:20.890868",
+      "last_modified": "2026-03-04T21:20:20.890868",
+      "versions": 1
+    },
+    "01_COA_366810\\FINAL_BRIEF_STACK\\02_TABLE_OF_CONTENTS.md": {
+      "hash": "6ca855a0dded0ad6",
+      "first_seen": "2026-03-04T21:20:20.891867",
+      "last_modified": "2026-03-04T21:20:20.891867",
+      "versions": 1
+    },
+    "01_COA_366810\\FINAL_BRIEF_STACK\\03_LEGAL_ARGUMENTS.md": {
+      "hash": "e474c567162e3cc6",
+      "first_seen": "2026-03-04T21:20:20.891867",
+      "last_modified": "2026-03-04T21:20:20.891867",
+      "versions": 1
+    },
+    "01_COA_366810\\FINAL_BRIEF_STACK\\03_TABLE_OF_AUTHORITIES.md": {
+      "hash": "2dff766f3fe5ee26",
+      "first_seen": "2026-03-04T21:20:20.891867",
+      "last_modified": "2026-03-04T21:20:20.891867",
+      "versions": 1
+    },
+    "01_COA_366810\\FINAL_BRIEF_STACK\\04_STATEMENT_OF_FACTS_EXPANDED.md": {
+      "hash": "c3dfab1662a7d8ea",
+      "first_seen": "2026-03-04T21:20:20.891867",
+      "last_modified": "2026-03-04T21:20:20.891867",
+      "versions": 1
+    },
+    "01_COA_366810\\FINAL_BRIEF_STACK\\05_APPENDIX_INDEX.md": {
+      "hash": "ac989be2482daa2b",
+      "first_seen": "2026-03-04T21:20:20.892866",
+      "last_modified": "2026-03-04T21:20:20.892866",
+      "versions": 1
+    },
+    "01_COA_366810\\FINAL_BRIEF_STACK\\06_CERTIFICATE_OF_SERVICE.md": {
+      "hash": "c1b0157f245c4657",
+      "first_seen": "2026-03-04T21:20:20.892866",
+      "last_modified": "2026-03-04T21:20:20.892866",
+      "versions": 1
+    },
+    "01_COA_366810\\FINAL_BRIEF_STACK\\07_PROOF_OF_FILING.md": {
+      "hash": "92a56d326563f902",
+      "first_seen": "2026-03-04T21:20:20.892866",
+      "last_modified": "2026-03-04T21:20:20.892866",
+      "versions": 1
+    },
+    "01_COA_366810\\FINAL_BRIEF_STACK\\08_FILING_INSTRUCTIONS_COA.md": {
+      "hash": "964e7492bf62b774",
+      "first_seen": "2026-03-04T21:20:20.892866",
+      "last_modified": "2026-03-04T21:20:20.892866",
+      "versions": 1
+    },
+    "01_COA_366810\\FINAL_BRIEF_STACK\\09_READINESS_SCORE.md": {
+      "hash": "6160842293faf0e5",
+      "first_seen": "2026-03-04T21:20:20.902885",
+      "last_modified": "2026-03-04T21:20:20.902885",
+      "versions": 1
+    },
+    "01_COA_366810\\FINAL_BRIEF_STACK\\VALIDATION_REPORT.md": {
+      "hash": "fef46f2d6ab2881f",
+      "first_seen": "2026-03-04T21:20:20.902885",
+      "last_modified": "2026-03-04T21:20:20.902885",
+      "versions": 1
+    },
+    "01_COA_366810\\FROM_THIS_IS_THE_ONE\\AFFIDAVIT_PIGORS_COA.md": {
+      "hash": "d1cf0edffe885b49",
+      "first_seen": "2026-03-04T21:20:20.902885",
+      "last_modified": "2026-03-04T21:20:20.902885",
+      "versions": 1
+    },
+    "01_COA_366810\\FROM_THIS_IS_THE_ONE\\APPLICATION_LEAVE_TO_APPEAL.md": {
+      "hash": "b0f9b6a2acde904f",
+      "first_seen": "2026-03-04T21:20:20.903882",
+      "last_modified": "2026-03-04T21:20:20.903882",
+      "versions": 1
+    },
+    "01_COA_366810\\FROM_THIS_IS_THE_ONE\\FILING_BUNDLE_CHECKLIST.md": {
+      "hash": "d007fe1b727a632f",
+      "first_seen": "2026-03-04T21:20:20.903882",
+      "last_modified": "2026-03-04T21:20:20.903882",
+      "versions": 1
+    },
+    "01_COA_366810\\FROM_THIS_IS_THE_ONE\\MOTION_IMMEDIATE_CONSIDERATION.md": {
+      "hash": "35c5439989343e11",
+      "first_seen": "2026-03-04T21:20:20.903882",
+      "last_modified": "2026-03-04T21:20:20.903882",
+      "versions": 1
+    },
+    "01_COA_366810\\FROM_THIS_IS_THE_ONE\\TABLE_OF_AUTHORITIES.md": {
+      "hash": "8dccc9ce1fc9ee61",
+      "first_seen": "2026-03-04T21:20:20.903882",
+      "last_modified": "2026-03-04T21:20:20.903882",
+      "versions": 1
+    },
+    "01_COA_366810\\MSC_MATERIALS\\AFFIDAVIT_PIGORS_MSC.md": {
+      "hash": "d861bd7068baffb2",
+      "first_seen": "2026-03-04T21:20:20.904882",
+      "last_modified": "2026-03-04T21:20:20.904882",
+      "versions": 1
+    },
+    "01_COA_366810\\MSC_MATERIALS\\FILING_BUNDLE_CHECKLIST.md": {
+      "hash": "0be17d1c043e4207",
+      "first_seen": "2026-03-04T21:20:20.904882",
+      "last_modified": "2026-03-04T21:20:20.904882",
+      "versions": 1
+    },
+    "01_COA_366810\\MSC_MATERIALS\\PETITION_SUPERINTENDING_CONTROL.md": {
+      "hash": "7d0cf9662a2b7514",
+      "first_seen": "2026-03-04T21:20:20.904882",
+      "last_modified": "2026-03-04T21:20:20.904882",
+      "versions": 1
+    },
+    "01_COA_366810\\MSC_MATERIALS\\TABLE_OF_AUTHORITIES.md": {
+      "hash": "e921bc657e962545",
+      "first_seen": "2026-03-04T21:20:20.905883",
+      "last_modified": "2026-03-04T21:20:20.905883",
+      "versions": 1
+    },
+    "01_COA_366810\\MSC_STACK\\01_APPLICATION_LEAVE_TO_APPEAL.md": {
+      "hash": "6fe4693be709ef32",
+      "first_seen": "2026-03-04T21:20:20.905883",
+      "last_modified": "2026-03-04T21:20:20.905883",
+      "versions": 1
+    },
+    "01_COA_366810\\MSC_STACK\\02_BRIEF_IN_SUPPORT.md": {
+      "hash": "71b2e5ec3eb0e4a0",
+      "first_seen": "2026-03-04T21:20:20.906882",
+      "last_modified": "2026-03-04T21:20:20.906882",
+      "versions": 1
+    },
+    "01_COA_366810\\MSC_STACK\\03_APPENDIX_INDEX.md": {
+      "hash": "7c8a8eeed84f8db6",
+      "first_seen": "2026-03-04T21:20:20.906882",
+      "last_modified": "2026-03-04T21:20:20.906882",
+      "versions": 1
+    },
+    "01_COA_366810\\MSC_STACK\\04_ORIGINAL_ACTION_SUPERINTENDING.md": {
+      "hash": "28d38756b98f326b",
+      "first_seen": "2026-03-04T21:20:20.906882",
+      "last_modified": "2026-03-04T21:20:20.906882",
+      "versions": 1
+    },
+    "01_COA_366810\\MSC_STACK\\05_FILING_INSTRUCTIONS.md": {
+      "hash": "668be2f7cd9c3c14",
+      "first_seen": "2026-03-04T21:20:20.907883",
+      "last_modified": "2026-03-04T21:20:20.907883",
+      "versions": 1
+    },
+    "01_COA_366810\\MSC_STACK\\06_FILING_READINESS_SCORE.md": {
+      "hash": "389dbe27093bb5b9",
+      "first_seen": "2026-03-04T21:20:20.908042",
+      "last_modified": "2026-03-04T21:20:20.908042",
+      "versions": 1
+    },
+    "01_COA_366810\\SCOTUS_FRAMEWORK\\01_CERT_PETITION_FRAMEWORK.md": {
+      "hash": "bedd94d616618432",
+      "first_seen": "2026-03-04T21:20:20.908554",
+      "last_modified": "2026-03-04T21:20:20.908554",
+      "versions": 1
+    },
+    "01_COA_366810\\SCOTUS_FRAMEWORK\\02_SCOTUS_QUESTIONS_PRESENTED.md": {
+      "hash": "87447e6675e32429",
+      "first_seen": "2026-03-04T21:20:20.908554",
+      "last_modified": "2026-03-04T21:20:20.908554",
+      "versions": 1
+    },
+    "01_COA_366810\\SCOTUS_FRAMEWORK\\03_FILING_INSTRUCTIONS.md": {
+      "hash": "217a7290de3f0079",
+      "first_seen": "2026-03-04T21:20:20.908554",
+      "last_modified": "2026-03-04T21:20:20.908554",
+      "versions": 1
+    },
+    "01_COA_366810\\SCOTUS_FRAMEWORK\\04_READINESS_SCORE.md": {
+      "hash": "d242f7f191009b99",
+      "first_seen": "2026-03-04T21:20:20.908554",
+      "last_modified": "2026-03-04T21:20:20.908554",
+      "versions": 1
+    },
+    "01_COA_366810\\SERVICE_PACKET\\filing_instructions_coa.md": {
+      "hash": "ce8d3d00e7f4e35f",
+      "first_seen": "2026-03-04T21:20:20.909545",
+      "last_modified": "2026-03-04T21:20:20.909545",
+      "versions": 1
+    },
+    "01_COA_366810\\SERVICE_PACKET\\proof_of_service_coa.md": {
+      "hash": "3f668fb840bd8d2c",
+      "first_seen": "2026-03-04T21:20:20.909545",
+      "last_modified": "2026-03-04T21:20:20.909545",
+      "versions": 1
+    },
+    "01_COA_366810\\SERVICE_PACKETS\\COVER_LETTER_APPELLEE.md": {
+      "hash": "514f60bf98838c59",
+      "first_seen": "2026-03-04T21:20:20.909545",
+      "last_modified": "2026-03-04T21:20:20.909545",
+      "versions": 1
+    },
+    "01_COA_366810\\SERVICE_PACKETS\\COVER_LETTER_TRIAL_COURT.md": {
+      "hash": "6d2f374eea358b73",
+      "first_seen": "2026-03-04T21:20:20.909545",
+      "last_modified": "2026-03-04T21:20:20.909545",
+      "versions": 1
+    },
+    "01_COA_366810\\SERVICE_PACKETS\\PROOF_OF_SERVICE.md": {
+      "hash": "d36243765a5a3884",
+      "first_seen": "2026-03-04T21:20:20.909545",
+      "last_modified": "2026-03-04T21:20:20.909545",
+      "versions": 1
+    },
+    "01_COA_366810\\SERVICE_PACKETS\\SERVICE_CHECKLIST.md": {
+      "hash": "ead6dfbf4107c4bc",
+      "first_seen": "2026-03-04T21:20:20.910545",
+      "last_modified": "2026-03-04T21:20:20.910545",
+      "versions": 1
+    },
+    "01_COA_366810\\SERVICE_PACKETS\\SERVICE_LOG.md": {
+      "hash": "96b15f6946452e19",
+      "first_seen": "2026-03-04T21:20:20.910545",
+      "last_modified": "2026-03-04T21:20:20.910545",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\APPELLANT_BRIEF.md": {
+      "hash": "40df29eddeb40b31",
+      "first_seen": "2026-03-04T21:20:20.913547",
+      "last_modified": "2026-03-04T21:20:20.913547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\APPENDIX.md": {
+      "hash": "c6ac52c77ea64b77",
+      "first_seen": "2026-03-04T21:20:20.913547",
+      "last_modified": "2026-03-04T21:20:20.913547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\APPLICATION_LEAVE_TO_APPEAL.md": {
+      "hash": "999127909100f0e2",
+      "first_seen": "2026-03-04T21:20:20.913547",
+      "last_modified": "2026-03-04T21:20:20.913547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\COA_7.212_COMPLIANCE_GRID.md": {
+      "hash": "9f76b7caa1101136",
+      "first_seen": "2026-03-04T21:20:20.914547",
+      "last_modified": "2026-03-04T21:20:20.914547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\COA_CERTIFICATE_OF_SERVICE.md": {
+      "hash": "6fb8b34876872a3d",
+      "first_seen": "2026-03-04T21:20:20.914547",
+      "last_modified": "2026-03-04T21:20:20.914547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\COA_PROOF_OF_SERVICE.md": {
+      "hash": "56e94733f1536580",
+      "first_seen": "2026-03-04T21:20:20.914547",
+      "last_modified": "2026-03-04T21:20:20.914547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\COMPLAINT_SUPERINTENDING_CONTROL.md": {
+      "hash": "2692a6619a78cf3f",
+      "first_seen": "2026-03-04T21:20:20.914547",
+      "last_modified": "2026-03-04T21:20:20.914547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\COVER_PAGE.md": {
+      "hash": "374a9e2c34bc545d",
+      "first_seen": "2026-03-04T21:20:20.915548",
+      "last_modified": "2026-03-04T21:20:20.915548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\COVER_PAGE_BLUE.md": {
+      "hash": "d737f6a73b30662b",
+      "first_seen": "2026-03-04T21:20:20.915548",
+      "last_modified": "2026-03-04T21:20:20.915548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\EMERGENCY_APPLICATION.md": {
+      "hash": "05e8986fa1a8bac1",
+      "first_seen": "2026-03-04T21:20:20.915548",
+      "last_modified": "2026-03-04T21:20:20.915548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\EXHIBIT_STACK.md": {
+      "hash": "b33655013fe4c091",
+      "first_seen": "2026-03-04T21:20:20.915548",
+      "last_modified": "2026-03-04T21:20:20.915548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MC_20_FEE_WAIVER.md": {
+      "hash": "0d39c6f800c89c65",
+      "first_seen": "2026-03-04T21:20:20.915548",
+      "last_modified": "2026-03-04T21:20:20.915548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MSC_7.305_STRUCTURE.md": {
+      "hash": "3b0546c739698fe9",
+      "first_seen": "2026-03-04T21:20:20.916548",
+      "last_modified": "2026-03-04T21:20:20.916548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MSC_CERTIFICATE_OF_SERVICE.md": {
+      "hash": "c1dd280b1051c670",
+      "first_seen": "2026-03-04T21:20:20.916548",
+      "last_modified": "2026-03-04T21:20:20.916548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MSC_COMPLIANCE_CERTIFICATE.md": {
+      "hash": "085d30213ad1b26e",
+      "first_seen": "2026-03-04T21:20:20.916548",
+      "last_modified": "2026-03-04T21:20:20.916548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\PROOFREAD_REPORT.md": {
+      "hash": "15ca8d4a3657cd35",
+      "first_seen": "2026-03-04T21:20:20.916548",
+      "last_modified": "2026-03-04T21:20:20.916548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\REPRODUCED_MATERIALS_ADDENDUM.md": {
+      "hash": "41cf53f9bc1a7d54",
+      "first_seen": "2026-03-04T21:20:20.916548",
+      "last_modified": "2026-03-04T21:20:20.916548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\TRANSCRIPT_SUBSTITUTE_CONTINGENCY.md": {
+      "hash": "f2192a31fd66567b",
+      "first_seen": "2026-03-04T21:20:20.917548",
+      "last_modified": "2026-03-04T21:20:20.917548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\AFFIDAVIT_PIGORS_COA.md": {
+      "hash": "d1cf0edffe885b49",
+      "first_seen": "2026-03-04T21:20:20.917548",
+      "last_modified": "2026-03-04T21:20:20.917548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\APPLICATION_LEAVE_TO_APPEAL.md": {
+      "hash": "b0f9b6a2acde904f",
+      "first_seen": "2026-03-04T21:20:20.917548",
+      "last_modified": "2026-03-04T21:20:20.917548",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\DEADLINE_TRACKER.md": {
+      "hash": "e6a93080037da755",
+      "first_seen": "2026-03-04T21:20:20.918549",
+      "last_modified": "2026-03-04T21:20:20.918549",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\EXHIBIT_AUTHENTICATION_TEMPLATES.md": {
+      "hash": "0c08be47115687f9",
+      "first_seen": "2026-03-04T21:20:20.918549",
+      "last_modified": "2026-03-04T21:20:20.918549",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\FILING_BUNDLE_CHECKLIST.md": {
+      "hash": "d007fe1b727a632f",
+      "first_seen": "2026-03-04T21:20:20.918549",
+      "last_modified": "2026-03-04T21:20:20.918549",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\FINAL_FILING_INSTRUCTIONS.md": {
+      "hash": "f79603f174d8f622",
+      "first_seen": "2026-03-04T21:20:20.918549",
+      "last_modified": "2026-03-04T21:20:20.918549",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\IN_FORMA_PAUPERIS_AFFIDAVIT.md": {
+      "hash": "fa078f9695c9d3e1",
+      "first_seen": "2026-03-04T21:20:20.919547",
+      "last_modified": "2026-03-04T21:20:20.919547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\LITIGATION_STRATEGY_MEMO.md": {
+      "hash": "8368f764f2b15679",
+      "first_seen": "2026-03-04T21:20:20.919547",
+      "last_modified": "2026-03-04T21:20:20.919547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MASTER_EXHIBIT_INDEX.md": {
+      "hash": "2f72aa26b11045c1",
+      "first_seen": "2026-03-04T21:20:20.919547",
+      "last_modified": "2026-03-04T21:20:20.919547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MASTER_FILING_SEQUENCE.md": {
+      "hash": "369e98ac3d2a61b2",
+      "first_seen": "2026-03-04T21:20:20.919547",
+      "last_modified": "2026-03-04T21:20:20.919547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_IMMEDIATE_CONSIDERATION.md": {
+      "hash": "7aff5de4b08286d6",
+      "first_seen": "2026-03-04T21:20:20.920547",
+      "last_modified": "2026-03-04T21:20:20.920547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\PROOF_OF_SERVICE_TEMPLATE.md": {
+      "hash": "9926b4560e52b943",
+      "first_seen": "2026-03-04T21:20:20.920547",
+      "last_modified": "2026-03-04T21:20:20.920547",
+      "versions": 1
+    },
+    "01_COA_366810\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\TABLE_OF_AUTHORITIES.md": {
+      "hash": "8dccc9ce1fc9ee61",
+      "first_seen": "2026-03-04T21:20:20.920547",
+      "last_modified": "2026-03-04T21:20:20.920547",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\00_MASTER_BRIEF.md": {
+      "hash": "4a9cb86065a3cac9",
+      "first_seen": "2026-03-04T21:20:20.944393",
+      "last_modified": "2026-03-04T21:20:20.944393",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\02_EXHIBIT_GRAFT_PARAGRAPHS.md": {
+      "hash": "c815c7ec4af64f84",
+      "first_seen": "2026-03-04T21:20:20.951395",
+      "last_modified": "2026-03-04T21:20:20.951395",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\03_BUNDLE_SPECIFICATIONS.md": {
+      "hash": "91c6c38721a3ae8c",
+      "first_seen": "2026-03-04T21:20:20.951395",
+      "last_modified": "2026-03-04T21:20:20.951395",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\06_COMPLIANCE_MATRIX.md": {
+      "hash": "10f9ca5683edfc34",
+      "first_seen": "2026-03-04T21:20:20.952395",
+      "last_modified": "2026-03-04T21:20:20.952395",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\08_CONSTITUTIONAL_SECTIONS.md": {
+      "hash": "13cafb2c54a73d59",
+      "first_seen": "2026-03-04T21:20:20.952395",
+      "last_modified": "2026-03-04T21:20:20.952395",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\09_REPLY_TEMPLATES.md": {
+      "hash": "5f09fb460879eb08",
+      "first_seen": "2026-03-04T21:20:20.952395",
+      "last_modified": "2026-03-04T21:20:20.952395",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\COURT_PACKETS_v3\\04_MOTION_DISQUALIFICATION_v3.md": {
+      "hash": "d5303b57488af11a",
+      "first_seen": "2026-03-04T21:20:20.952395",
+      "last_modified": "2026-03-04T21:20:20.952395",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\COURT_PACKETS_v3\\08_MOTION_CONTEMPT_SHOW_CAUSE_v3.md": {
+      "hash": "3cdc3d91cc435918",
+      "first_seen": "2026-03-04T21:20:20.953394",
+      "last_modified": "2026-03-04T21:20:20.953394",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\DISCOVERY_STACK\\discovery_deposition_notices.md": {
+      "hash": "19752123898396d6",
+      "first_seen": "2026-03-04T21:20:20.954394",
+      "last_modified": "2026-03-04T21:20:20.954394",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\DISCOVERY_STACK\\discovery_document_requests.md": {
+      "hash": "3d6b81a4214eb0b2",
+      "first_seen": "2026-03-04T21:20:20.954394",
+      "last_modified": "2026-03-04T21:20:20.954394",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\DISCOVERY_STACK\\discovery_instructions.md": {
+      "hash": "6c77683d54c95fe4",
+      "first_seen": "2026-03-04T21:20:20.954394",
+      "last_modified": "2026-03-04T21:20:20.954394",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\DISCOVERY_STACK\\discovery_interrogatories.md": {
+      "hash": "4b72883e7c3dc9a3",
+      "first_seen": "2026-03-04T21:20:20.955394",
+      "last_modified": "2026-03-04T21:20:20.955394",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\DISCOVERY_STACK\\discovery_requests_for_admission.md": {
+      "hash": "80b3701bcb8a9da4",
+      "first_seen": "2026-03-04T21:20:20.955394",
+      "last_modified": "2026-03-04T21:20:20.955394",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\DISCOVERY_STACK\\discovery_subpoena_list.md": {
+      "hash": "f2e3bae2451d3c6f",
+      "first_seen": "2026-03-04T21:20:20.955394",
+      "last_modified": "2026-03-04T21:20:20.955394",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\00_FILING_CHECKLIST.md": {
+      "hash": "cb0899797ea15984",
+      "first_seen": "2026-03-04T21:20:20.976920",
+      "last_modified": "2026-03-04T21:20:20.976920",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\00_FILING_CHECKLIST_1.md": {
+      "hash": "4ad05859e8e71e48",
+      "first_seen": "2026-03-04T21:20:20.976920",
+      "last_modified": "2026-03-04T21:20:20.976920",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\00_FILING_CHECKLIST_2.md": {
+      "hash": "ad864acbc658c8b9",
+      "first_seen": "2026-03-04T21:20:20.977920",
+      "last_modified": "2026-03-04T21:20:20.977920",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__AFFIDAVIT_PIGORS_14TH_CIRCUIT.md": {
+      "hash": "01441c376a81d751",
+      "first_seen": "2026-03-04T21:20:20.977920",
+      "last_modified": "2026-03-04T21:20:20.977920",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__BAR_COMPLAINT_JENNIFER_BARNES.md": {
+      "hash": "441d3bf1b5757454",
+      "first_seen": "2026-03-04T21:20:20.978920",
+      "last_modified": "2026-03-04T21:20:20.978920",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__CIVIL_COMPLAINT_WATSON_FAMILY.md": {
+      "hash": "d5525c07953a668f",
+      "first_seen": "2026-03-04T21:20:20.978920",
+      "last_modified": "2026-03-04T21:20:20.978920",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__CRIMINAL_REFERRAL_PACKET.md": {
+      "hash": "121955c2a0c2313f",
+      "first_seen": "2026-03-04T21:20:20.978920",
+      "last_modified": "2026-03-04T21:20:20.978920",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md": {
+      "hash": "8efef756037355f4",
+      "first_seen": "2026-03-04T21:20:20.979921",
+      "last_modified": "2026-03-04T21:20:20.979921",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__ENHANCED_ALIENATION_BRIEF.md": {
+      "hash": "798651af5cfb8b9e",
+      "first_seen": "2026-03-04T21:20:20.979921",
+      "last_modified": "2026-03-04T21:20:20.979921",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__EXHIBIT_FABRICATION_TIMELINE.md": {
+      "hash": "0a3aae32b740929e",
+      "first_seen": "2026-03-04T21:20:20.979921",
+      "last_modified": "2026-03-04T21:20:20.979921",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__EXHIBIT_PARENTAL_ALIENATION_ANALYSIS.md": {
+      "hash": "d30512fdcceae6a3",
+      "first_seen": "2026-03-04T21:20:20.980921",
+      "last_modified": "2026-03-04T21:20:20.980921",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__FILING_BUNDLE_CHECKLIST.md": {
+      "hash": "e5d6f7e6c1692647",
+      "first_seen": "2026-03-04T21:20:20.980921",
+      "last_modified": "2026-03-04T21:20:20.980921",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__FOC_GRIEVANCE_PAMELA_RUSCO.md": {
+      "hash": "884b19c71b1cd1f7",
+      "first_seen": "2026-03-04T21:20:20.980921",
+      "last_modified": "2026-03-04T21:20:20.980921",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__FOIA_REQUEST_PACKET.md": {
+      "hash": "5d5da7e97c0a1be3",
+      "first_seen": "2026-03-04T21:20:20.980921",
+      "last_modified": "2026-03-04T21:20:20.980921",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MASTER_CHRONOLOGICAL_TIMELINE.md": {
+      "hash": "27a3932fc43f0333",
+      "first_seen": "2026-03-04T21:20:20.981922",
+      "last_modified": "2026-03-04T21:20:20.981922",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_APPOINT_GAL.md": {
+      "hash": "216b92da92c12faa",
+      "first_seen": "2026-03-04T21:20:20.981922",
+      "last_modified": "2026-03-04T21:20:20.981922",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_CHANGE_OF_VENUE.md": {
+      "hash": "f4028b895b7de53d",
+      "first_seen": "2026-03-04T21:20:20.983923",
+      "last_modified": "2026-03-04T21:20:20.983923",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_CHILD_SUPPORT_MODIFICATION.md": {
+      "hash": "29df22ed5a4d822e",
+      "first_seen": "2026-03-04T21:20:20.984920",
+      "last_modified": "2026-03-04T21:20:20.984920",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_COMPEL_DISCOVERY.md": {
+      "hash": "9f3a3ddba86f49fe",
+      "first_seen": "2026-03-04T21:20:20.984920",
+      "last_modified": "2026-03-04T21:20:20.984920",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_CONTEMPT_SHOW_CAUSE.md": {
+      "hash": "ff1f1706e05e869f",
+      "first_seen": "2026-03-04T21:20:20.984920",
+      "last_modified": "2026-03-04T21:20:20.984920",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_DISQUALIFY_JUDGE_MCNEILL.md": {
+      "hash": "30e5873522ed6861",
+      "first_seen": "2026-03-04T21:20:20.985921",
+      "last_modified": "2026-03-04T21:20:20.985921",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_EMERGENCY_CUSTODY.md": {
+      "hash": "0952d9c1bbde3ec8",
+      "first_seen": "2026-03-04T21:20:20.985921",
+      "last_modified": "2026-03-04T21:20:20.985921",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_FOR_SANCTIONS.md": {
+      "hash": "eb31bb231867e1c5",
+      "first_seen": "2026-03-04T21:20:20.985921",
+      "last_modified": "2026-03-04T21:20:20.985921",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_RECONSIDERATION.md": {
+      "hash": "041565d753ea512c",
+      "first_seen": "2026-03-04T21:20:20.986789",
+      "last_modified": "2026-03-04T21:20:20.986789",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_SET_ASIDE_DEFAULT.md": {
+      "hash": "d1114c65361416b3",
+      "first_seen": "2026-03-04T21:20:20.987005",
+      "last_modified": "2026-03-04T21:20:20.987005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_SUPERVISED_EXCHANGE.md": {
+      "hash": "9c2598f01b93910a",
+      "first_seen": "2026-03-04T21:20:20.987521",
+      "last_modified": "2026-03-04T21:20:20.987521",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_TERMINATE_PPO.md": {
+      "hash": "f49e24eb457a0070",
+      "first_seen": "2026-03-04T21:20:20.987521",
+      "last_modified": "2026-03-04T21:20:20.987521",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_TO_CONSOLIDATE.md": {
+      "hash": "ddf7cf5079f8ae60",
+      "first_seen": "2026-03-04T21:20:20.987521",
+      "last_modified": "2026-03-04T21:20:20.987521",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_UCCJEA_EMERGENCY_JURISDICTION.md": {
+      "hash": "a1e8e789d7de5315",
+      "first_seen": "2026-03-04T21:20:20.988512",
+      "last_modified": "2026-03-04T21:20:20.988512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__MOTION_WRIT_MANDAMUS.md": {
+      "hash": "89ddaa37e3d071b0",
+      "first_seen": "2026-03-04T21:20:20.988512",
+      "last_modified": "2026-03-04T21:20:20.988512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__PROPOSED_ORDERS_BUNDLE.md": {
+      "hash": "62f6ebee6b9d8964",
+      "first_seen": "2026-03-04T21:20:20.988512",
+      "last_modified": "2026-03-04T21:20:20.988512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_14TH_CIRCUIT__RESPONSE_SHOW_CAUSE_7.md": {
+      "hash": "f3813ce354c0c754",
+      "first_seen": "2026-03-04T21:20:20.988512",
+      "last_modified": "2026-03-04T21:20:20.988512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_EMERGENCY_MOTION_RESTORE_PT_v3.md": {
+      "hash": "fb2753a051760397",
+      "first_seen": "2026-03-04T21:20:20.989512",
+      "last_modified": "2026-03-04T21:20:20.989512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_MAIN_EMERGENCY_MOTION_RESTORE_PARENTING_TIME_V4.md": {
+      "hash": "12e7ab60625703b7",
+      "first_seen": "2026-03-04T21:20:20.989512",
+      "last_modified": "2026-03-04T21:20:20.989512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_MAIN_MOTION_DISQUALIFY_JUDGE_MCNEILL_V4.md": {
+      "hash": "34e02b080cc8fe69",
+      "first_seen": "2026-03-04T21:20:20.989512",
+      "last_modified": "2026-03-04T21:20:20.989512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\01_MAIN_MOTION_MODIFY_CUSTODY_V4.md": {
+      "hash": "f855c48d11809a97",
+      "first_seen": "2026-03-04T21:20:20.989512",
+      "last_modified": "2026-03-04T21:20:20.990512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\02_COA_Emergency_Motion_Stay_Interim_Relief.md": {
+      "hash": "8b236161a7bff95b",
+      "first_seen": "2026-03-04T21:20:20.990512",
+      "last_modified": "2026-03-04T21:20:20.990512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\02_EXHIBIT_INDEX.md": {
+      "hash": "79d1f6cfb0186a7d",
+      "first_seen": "2026-03-04T21:20:20.990512",
+      "last_modified": "2026-03-04T21:20:20.990512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\02_EXHIBIT_INDEX_1.md": {
+      "hash": "2237046686daccdf",
+      "first_seen": "2026-03-04T21:20:20.990512",
+      "last_modified": "2026-03-04T21:20:20.990512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\02_EXHIBIT_INDEX_2.md": {
+      "hash": "fd1d6f6c4ca9bfb6",
+      "first_seen": "2026-03-04T21:20:20.990512",
+      "last_modified": "2026-03-04T21:20:20.990512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\03_EXHIBIT_FOUNDATION.md": {
+      "hash": "1cd2171c7dc8d2b6",
+      "first_seen": "2026-03-04T21:20:20.991512",
+      "last_modified": "2026-03-04T21:20:20.991512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\03_EXHIBIT_FOUNDATION_1.md": {
+      "hash": "bc72f7e4fe93d01c",
+      "first_seen": "2026-03-04T21:20:20.991512",
+      "last_modified": "2026-03-04T21:20:20.991512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\03_JTC_COMPLAINT_MCNEILL_v3.md": {
+      "hash": "d9e9df643826cfea",
+      "first_seen": "2026-03-04T21:20:20.991512",
+      "last_modified": "2026-03-04T21:20:20.991512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\03_JTC__FORMAL_COMPLAINT_JUDGE_MCNEILL.md": {
+      "hash": "75687d3f0e710078",
+      "first_seen": "2026-03-04T21:20:20.992512",
+      "last_modified": "2026-03-04T21:20:20.992512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\04_CERTIFICATE_OF_SERVICE.md": {
+      "hash": "3fa70e9df1e88600",
+      "first_seen": "2026-03-04T21:20:20.992512",
+      "last_modified": "2026-03-04T21:20:20.992512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\04_CERTIFICATE_OF_SERVICE_1.md": {
+      "hash": "797f36e8587f7074",
+      "first_seen": "2026-03-04T21:20:20.992512",
+      "last_modified": "2026-03-04T21:20:20.992512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\04_CERTIFICATE_OF_SERVICE_2.md": {
+      "hash": "c86cc06067af7eeb",
+      "first_seen": "2026-03-04T21:20:20.992512",
+      "last_modified": "2026-03-04T21:20:20.992512",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\04_MOTION_DISQUALIFICATION_v3.md": {
+      "hash": "c191dcc2245551e7",
+      "first_seen": "2026-03-04T21:20:20.993513",
+      "last_modified": "2026-03-04T21:20:20.993513",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\05_DRAFTS__TRIAL__MOTION_DISQUALIFY_FINAL_2026-02-16.md": {
+      "hash": "6edc5a8dd7eeda30",
+      "first_seen": "2026-03-04T21:20:20.993513",
+      "last_modified": "2026-03-04T21:20:20.993513",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\07_EXTRACTIONS__TIER2_EVIDENCE__MCNEILLEXPARTE__JUDICIAL_MISCONDUCT_EVIDENCE.md": {
+      "hash": "e2967a41699e825e",
+      "first_seen": "2026-03-04T21:20:20.993513",
+      "last_modified": "2026-03-04T21:20:20.993513",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\14_MCNEILL_JOURNAL.md": {
+      "hash": "742c0add5408ea2f",
+      "first_seen": "2026-03-04T21:20:21.020911",
+      "last_modified": "2026-03-04T21:20:21.020911",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\19_CUSTODY_JOURNAL.md": {
+      "hash": "1c7c09fe1cad5bd3",
+      "first_seen": "2026-03-04T21:20:21.026912",
+      "last_modified": "2026-03-04T21:20:21.026912",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\19_CUSTODY_LLM_CUSTODY_ANALYSIS.md": {
+      "hash": "5c726c80ac83cc95",
+      "first_seen": "2026-03-04T21:20:21.026912",
+      "last_modified": "2026-03-04T21:20:21.026912",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\2023-5907-PP__filings__FILING_B2_MOTION_MODIFY_TERMINATE_PPO.md": {
+      "hash": "4aad3fdcd6f84884",
+      "first_seen": "2026-03-04T21:20:21.026912",
+      "last_modified": "2026-03-04T21:20:21.026912",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\A1_EMERGENCY_MOTION_TO_RESTORE_PARENTING_TIME.md": {
+      "hash": "d842734ead852362",
+      "first_seen": "2026-03-04T21:20:21.027913",
+      "last_modified": "2026-03-04T21:20:21.027913",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\A3_MOTION_FOR_DISQUALIFICATION_OF_JUDGE.md": {
+      "hash": "a06b575ed89bd60a",
+      "first_seen": "2026-03-04T21:20:21.027913",
+      "last_modified": "2026-03-04T21:20:21.027913",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\AFFIDAVIT_ANDREW_PIGORS.md": {
+      "hash": "9ce3667111caac23",
+      "first_seen": "2026-03-04T21:20:21.029912",
+      "last_modified": "2026-03-04T21:20:21.029912",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\AFFIDAVIT_ANDREW_PIGORS_1.md": {
+      "hash": "92d2d975008c71f7",
+      "first_seen": "2026-03-04T21:20:21.029912",
+      "last_modified": "2026-03-04T21:20:21.029912",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\AFFIDAVIT_PIGORS_14TH_CIRCUIT.md": {
+      "hash": "8e20b4e65ec0a2fe",
+      "first_seen": "2026-03-04T21:20:21.030912",
+      "last_modified": "2026-03-04T21:20:21.030912",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\AFFIDAVIT_PIGORS_14TH_CIRCUIT_1.md": {
+      "hash": "a483ffc4b71dfc0d",
+      "first_seen": "2026-03-04T21:20:21.030912",
+      "last_modified": "2026-03-04T21:20:21.030912",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\AFFIDAVIT_PIGORS_EMERGENCY.md": {
+      "hash": "907723de9cad6cac",
+      "first_seen": "2026-03-04T21:20:21.030912",
+      "last_modified": "2026-03-04T21:20:21.030912",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\BAR_COMPLAINT_JENNIFER_BARNES.md": {
+      "hash": "4fef5c1973e6e8f8",
+      "first_seen": "2026-03-04T21:20:21.031911",
+      "last_modified": "2026-03-04T21:20:21.031911",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\BAR_COMPLAINT_JENNIFER_BARNES_1.md": {
+      "hash": "dd30c1c4dfa629ab",
+      "first_seen": "2026-03-04T21:20:21.031911",
+      "last_modified": "2026-03-04T21:20:21.031911",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\BRIEF_SUPPORTING_DISQUALIFICATION.md": {
+      "hash": "dda6d3fb93166ed1",
+      "first_seen": "2026-03-04T21:20:21.031911",
+      "last_modified": "2026-03-04T21:20:21.031911",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\BRIEF_SUPPORTING_DISQUALIFICATION_1.md": {
+      "hash": "891933a0a9809a2f",
+      "first_seen": "2026-03-04T21:20:21.031911",
+      "last_modified": "2026-03-04T21:20:21.031911",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\CERTIFICATE_OF_SERVICE.md": {
+      "hash": "62295c4cea902a56",
+      "first_seen": "2026-03-04T21:20:21.032912",
+      "last_modified": "2026-03-04T21:20:21.032912",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\CIVIL_COMPLAINT_WATSON.md": {
+      "hash": "f4a9166de30a2725",
+      "first_seen": "2026-03-04T21:20:21.034956",
+      "last_modified": "2026-03-04T21:20:21.034956",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\CIVIL_COMPLAINT_WATSON_1.md": {
+      "hash": "c66b08bfca4327c5",
+      "first_seen": "2026-03-04T21:20:21.035464",
+      "last_modified": "2026-03-04T21:20:21.035464",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\CIVIL_COMPLAINT_WATSON_FAMILY.md": {
+      "hash": "657bd0f1ff217858",
+      "first_seen": "2026-03-04T21:20:21.036466",
+      "last_modified": "2026-03-04T21:20:21.036466",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\CIVIL_COMPLAINT_WATSON_FAMILY_1.md": {
+      "hash": "4964cc89c361f40f",
+      "first_seen": "2026-03-04T21:20:21.036466",
+      "last_modified": "2026-03-04T21:20:21.036466",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\CRIMINAL_REFERRAL_PACKET.md": {
+      "hash": "8d270e7782ee40fa",
+      "first_seen": "2026-03-04T21:20:21.036466",
+      "last_modified": "2026-03-04T21:20:21.036466",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\CUSTODYBREAKDOWN.md": {
+      "hash": "6d145f8794f0f844",
+      "first_seen": "2026-03-04T21:20:21.037466",
+      "last_modified": "2026-03-04T21:20:21.037466",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\CUSTODY_CASE_TIMELINE.md": {
+      "hash": "ba18b7e358d266fb",
+      "first_seen": "2026-03-04T21:20:21.037957",
+      "last_modified": "2026-03-04T21:20:21.037957",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Custody_PT_Preliminary_Legal_Issue_Map.md": {
+      "hash": "9af93c3afc5b1398",
+      "first_seen": "2026-03-04T21:20:21.038465",
+      "last_modified": "2026-03-04T21:20:21.038465",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\data__EMERGENCY MOTION TO RESTORE PARENTING TIME PENDING EVIDENTIARY HEARING.md": {
+      "hash": "accfef4550fa2042",
+      "first_seen": "2026-03-04T21:20:21.038465",
+      "last_modified": "2026-03-04T21:20:21.038465",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\data__Motion_for_Disqualification_Judge_McNeill.md": {
+      "hash": "4127c207ed79dea0",
+      "first_seen": "2026-03-04T21:20:21.064006",
+      "last_modified": "2026-03-04T21:20:21.064006",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\DISCOVERY_REQUESTS_V4.md": {
+      "hash": "37a2c78d93d9e2c2",
+      "first_seen": "2026-03-04T21:20:21.065005",
+      "last_modified": "2026-03-04T21:20:21.065005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\DISCOVERY_REQUESTS_V4_1.md": {
+      "hash": "b85b067d70f102db",
+      "first_seen": "2026-03-04T21:20:21.065005",
+      "last_modified": "2026-03-04T21:20:21.065005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\DISQUALIFICATION_EXHIBIT_LIST.md": {
+      "hash": "06d5cf9fc56cba82",
+      "first_seen": "2026-03-04T21:20:21.065005",
+      "last_modified": "2026-03-04T21:20:21.065005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\DISQUALIFICATION_EXHIBIT_LIST_1.md": {
+      "hash": "3742c50007cd2a21",
+      "first_seen": "2026-03-04T21:20:21.066004",
+      "last_modified": "2026-03-04T21:20:21.066004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\disqualification__FILING_B3_MOTION_JUDICIAL_DISQUALIFICATION.md": {
+      "hash": "79a2fa7c7822b08a",
+      "first_seen": "2026-03-04T21:20:21.066004",
+      "last_modified": "2026-03-04T21:20:21.066004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\DUE_PROCESS_CUSTODY_CASELAW.md": {
+      "hash": "9847d977179a73b3",
+      "first_seen": "2026-03-04T21:20:21.066004",
+      "last_modified": "2026-03-04T21:20:21.066004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY MOTION TO RESTORE PARENTING TIME PENDING EVIDENTIARY HEARING(1).md": {
+      "hash": "accfef4550fa2042",
+      "first_seen": "2026-03-04T21:20:21.067004",
+      "last_modified": "2026-03-04T21:20:21.067004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY MOTION TO RESTORE PARENTING TIME PENDING EVIDENTIARY HEARING(2).md": {
+      "hash": "accfef4550fa2042",
+      "first_seen": "2026-03-04T21:20:21.067004",
+      "last_modified": "2026-03-04T21:20:21.067004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY MOTION TO RESTORE PARENTING TIME PENDING EVIDENTIARY HEARING(3).md": {
+      "hash": "accfef4550fa2042",
+      "first_seen": "2026-03-04T21:20:21.067004",
+      "last_modified": "2026-03-04T21:20:21.067004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY MOTION TO RESTORE PARENTING TIME PENDING EVIDENTIARY HEARING(4).md": {
+      "hash": "accfef4550fa2042",
+      "first_seen": "2026-03-04T21:20:21.067004",
+      "last_modified": "2026-03-04T21:20:21.067004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY MOTION TO RESTORE PARENTING TIME PENDING EVIDENTIARY HEARING(5).md": {
+      "hash": "accfef4550fa2042",
+      "first_seen": "2026-03-04T21:20:21.067004",
+      "last_modified": "2026-03-04T21:20:21.067004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY MOTION TO RESTORE PARENTING TIME PENDING EVIDENTIARY HEARING.md": {
+      "hash": "accfef4550fa2042",
+      "first_seen": "2026-03-04T21:20:21.068004",
+      "last_modified": "2026-03-04T21:20:21.068004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTIONS_FILING_GUIDE.md": {
+      "hash": "aef1bbf4af9bb4e4",
+      "first_seen": "2026-03-04T21:20:21.068004",
+      "last_modified": "2026-03-04T21:20:21.068004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTIONS_MASTER.md": {
+      "hash": "c8e43299f14187fb",
+      "first_seen": "2026-03-04T21:20:21.068004",
+      "last_modified": "2026-03-04T21:20:21.068004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_PARENTING_TIME.md": {
+      "hash": "886098e1030068cf",
+      "first_seen": "2026-03-04T21:20:21.068004",
+      "last_modified": "2026-03-04T21:20:21.068004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_PARENTING_TIME_1.md": {
+      "hash": "4b455b42b419b1df",
+      "first_seen": "2026-03-04T21:20:21.069004",
+      "last_modified": "2026-03-04T21:20:21.069004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_READINESS.md": {
+      "hash": "3c1aded44ffae5c1",
+      "first_seen": "2026-03-04T21:20:21.069004",
+      "last_modified": "2026-03-04T21:20:21.069004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md": {
+      "hash": "d2b2845615ab3a2e",
+      "first_seen": "2026-03-04T21:20:21.069004",
+      "last_modified": "2026-03-04T21:20:21.069004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME_1.md": {
+      "hash": "2eb7999453f74799",
+      "first_seen": "2026-03-04T21:20:21.069004",
+      "last_modified": "2026-03-04T21:20:21.069004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME_2.md": {
+      "hash": "f0c666acef86a30f",
+      "first_seen": "2026-03-04T21:20:21.070004",
+      "last_modified": "2026-03-04T21:20:21.070004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME_3.md": {
+      "hash": "845e57814205807f",
+      "first_seen": "2026-03-04T21:20:21.070004",
+      "last_modified": "2026-03-04T21:20:21.070004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME_4.md": {
+      "hash": "29e36333f0030d3e",
+      "first_seen": "2026-03-04T21:20:21.070004",
+      "last_modified": "2026-03-04T21:20:21.070004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME_5.md": {
+      "hash": "e75761fc12c65c82",
+      "first_seen": "2026-03-04T21:20:21.070004",
+      "last_modified": "2026-03-04T21:20:21.070004",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME_Andrew_Pigors_v_Emily_Watson.md": {
+      "hash": "59aa72187489977a",
+      "first_seen": "2026-03-04T21:20:21.071005",
+      "last_modified": "2026-03-04T21:20:21.071005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME_v2.md": {
+      "hash": "c2420f0fbe37cf55",
+      "first_seen": "2026-03-04T21:20:21.071005",
+      "last_modified": "2026-03-04T21:20:21.071005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME_V4.md": {
+      "hash": "12e7ab60625703b7",
+      "first_seen": "2026-03-04T21:20:21.071005",
+      "last_modified": "2026-03-04T21:20:21.071005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME_V4_1.md": {
+      "hash": "86fa5cc26d0e0f76",
+      "first_seen": "2026-03-04T21:20:21.071005",
+      "last_modified": "2026-03-04T21:20:21.071005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME_V4_2.md": {
+      "hash": "486d74255e95a682",
+      "first_seen": "2026-03-04T21:20:21.072005",
+      "last_modified": "2026-03-04T21:20:21.072005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\ENHANCED_ALIENATION_BRIEF.md": {
+      "hash": "333d7a509c68b652",
+      "first_seen": "2026-03-04T21:20:21.072005",
+      "last_modified": "2026-03-04T21:20:21.072005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\ENHANCED_ALIENATION_BRIEF_1.md": {
+      "hash": "a3ff6496cb7da60b",
+      "first_seen": "2026-03-04T21:20:21.072005",
+      "last_modified": "2026-03-04T21:20:21.072005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EVIDENCE_CHAINS.md": {
+      "hash": "0bd08afc4440b4e9",
+      "first_seen": "2026-03-04T21:20:21.072005",
+      "last_modified": "2026-03-04T21:20:21.072005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EVIDENCE_CHAINS_1.md": {
+      "hash": "3a3924a840f6e898",
+      "first_seen": "2026-03-04T21:20:21.073005",
+      "last_modified": "2026-03-04T21:20:21.073005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EXHIBIT_FABRICATION_TIMELINE.md": {
+      "hash": "0a3aae32b740929e",
+      "first_seen": "2026-03-04T21:20:21.073005",
+      "last_modified": "2026-03-04T21:20:21.073005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\EXHIBIT_PARENTAL_ALIENATION_ANALYSIS.md": {
+      "hash": "6cc91b8498f7414e",
+      "first_seen": "2026-03-04T21:20:21.073005",
+      "last_modified": "2026-03-04T21:20:21.073005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\FILING_B1_EMERGENCY_MOTION_RESTORE_PT.md": {
+      "hash": "3fe9a5e896238c09",
+      "first_seen": "2026-03-04T21:20:21.073005",
+      "last_modified": "2026-03-04T21:20:21.073005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\FILING_B1_EMERGENCY_MOTION_RESTORE_PT_1.md": {
+      "hash": "70f19634b41ae39f",
+      "first_seen": "2026-03-04T21:20:21.073005",
+      "last_modified": "2026-03-04T21:20:21.073005",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\FILING_B3_MOTION_JUDICIAL_DISQUALIFICATION.md": {
+      "hash": "79a2fa7c7822b08a",
+      "first_seen": "2026-03-04T21:20:21.074006",
+      "last_modified": "2026-03-04T21:20:21.074006",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\FILING_INSTRUCTIONS_DISQUALIFICATION.md": {
+      "hash": "dedbb07c2624b75c",
+      "first_seen": "2026-03-04T21:20:21.120099",
+      "last_modified": "2026-03-04T21:20:21.120099",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\FILING_PACKAGE_A_EMERGENCY_MOTION_FOR_IMMEDIATE_PARENTING_TIME_AND_MAKEUP_TIME.md": {
+      "hash": "cd306121bbdc95a7",
+      "first_seen": "2026-03-04T21:20:21.121100",
+      "last_modified": "2026-03-04T21:20:21.121100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\FILING_PACKAGE_A_EMERGENCY_MOTION_FOR_IMMEDIATE_PARENTING_TIME_AND_MAKEUP_TIME_1.md": {
+      "hash": "56ba76868db20dbf",
+      "first_seen": "2026-03-04T21:20:21.121100",
+      "last_modified": "2026-03-04T21:20:21.121100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\FOC_GRIEVANCE_PAMELA_RUSCO.md": {
+      "hash": "884b19c71b1cd1f7",
+      "first_seen": "2026-03-04T21:20:21.121100",
+      "last_modified": "2026-03-04T21:20:21.121100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\FOC_GRIEVANCE_PAMELA_RUSCO_1.md": {
+      "hash": "c116a657516307c9",
+      "first_seen": "2026-03-04T21:20:21.122100",
+      "last_modified": "2026-03-04T21:20:21.122100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\FOIA_REQUEST_PACKET.md": {
+      "hash": "8b8d6689c1bfbe2d",
+      "first_seen": "2026-03-04T21:20:21.122100",
+      "last_modified": "2026-03-04T21:20:21.122100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\FORMAL_COMPLAINT_JUDGE_MCNEILL.md": {
+      "hash": "b54731e525c344cd",
+      "first_seen": "2026-03-04T21:20:21.122100",
+      "last_modified": "2026-03-04T21:20:21.122100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\FORMAL_COMPLAINT_JUDGE_MCNEILL_1.md": {
+      "hash": "2d9be9f1ebabcb07",
+      "first_seen": "2026-03-04T21:20:21.122100",
+      "last_modified": "2026-03-04T21:20:21.122100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\journal_md.md": {
+      "hash": "850eb200b79382e2",
+      "first_seen": "2026-03-04T21:20:21.123100",
+      "last_modified": "2026-03-04T21:20:21.123100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\journal_md_1.md": {
+      "hash": "36c98624c8c22a5f",
+      "first_seen": "2026-03-04T21:20:21.124100",
+      "last_modified": "2026-03-04T21:20:21.124100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\JTC_Complaint_McNeill.md": {
+      "hash": "df9ebb3ef1f090b9",
+      "first_seen": "2026-03-04T21:20:21.125100",
+      "last_modified": "2026-03-04T21:20:21.125100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\jtc_complaint__FILING_B5_JTC_COMPLAINT.md": {
+      "hash": "734fef1870e040b7",
+      "first_seen": "2026-03-04T21:20:21.125100",
+      "last_modified": "2026-03-04T21:20:21.125100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\JTC_MSC_BINDER_EXTRACTED.md": {
+      "hash": "64c1486a7c176d0a",
+      "first_seen": "2026-03-04T21:20:21.126100",
+      "last_modified": "2026-03-04T21:20:21.126100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Judge_McNeill_Impeachment_Brief.md": {
+      "hash": "83f8ed4b6aa72414",
+      "first_seen": "2026-03-04T21:20:21.127100",
+      "last_modified": "2026-03-04T21:20:21.127100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Judicial Bias Pattern Analysis_ Judge Jenny L. McNeill(1).md": {
+      "hash": "8cdcd9d1bad9b2de",
+      "first_seen": "2026-03-04T21:20:21.127100",
+      "last_modified": "2026-03-04T21:20:21.127100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Judicial Bias Pattern Analysis_ Judge Jenny L. McNeill(2).md": {
+      "hash": "8cdcd9d1bad9b2de",
+      "first_seen": "2026-03-04T21:20:21.127100",
+      "last_modified": "2026-03-04T21:20:21.127100",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Judicial Bias Pattern Analysis_ Judge Jenny L. McNeill(3).md": {
+      "hash": "8cdcd9d1bad9b2de",
+      "first_seen": "2026-03-04T21:20:21.128103",
+      "last_modified": "2026-03-04T21:20:21.128103",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Judicial Bias Pattern Analysis_ Judge Jenny L. McNeill(4).md": {
+      "hash": "8cdcd9d1bad9b2de",
+      "first_seen": "2026-03-04T21:20:21.128103",
+      "last_modified": "2026-03-04T21:20:21.128103",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Judicial Bias Pattern Analysis_ Judge Jenny L. McNeill(5).md": {
+      "hash": "8cdcd9d1bad9b2de",
+      "first_seen": "2026-03-04T21:20:21.130826",
+      "last_modified": "2026-03-04T21:20:21.130826",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Judicial Bias Pattern Analysis_ Judge Jenny L. McNeill(6).md": {
+      "hash": "8cdcd9d1bad9b2de",
+      "first_seen": "2026-03-04T21:20:21.131829",
+      "last_modified": "2026-03-04T21:20:21.131829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Judicial Bias Pattern Analysis_ Judge Jenny L. McNeill.md": {
+      "hash": "8cdcd9d1bad9b2de",
+      "first_seen": "2026-03-04T21:20:21.131829",
+      "last_modified": "2026-03-04T21:20:21.131829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\judicial_analysis__SCANS_JUDICIAL_ANALYSIS.md": {
+      "hash": "18ac55af9e9e2c9d",
+      "first_seen": "2026-03-04T21:20:21.131829",
+      "last_modified": "2026-03-04T21:20:21.131829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\JUDICIAL_DISQUALIFICATION_CASELAW.md": {
+      "hash": "4928f30363e37828",
+      "first_seen": "2026-03-04T21:20:21.132829",
+      "last_modified": "2026-03-04T21:20:21.132829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_AFFIDAVIT_ANDREW_PIGORS.md": {
+      "hash": "70199fc6c86f053c",
+      "first_seen": "2026-03-04T21:20:21.132829",
+      "last_modified": "2026-03-04T21:20:21.132829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_CIVIL_COMPLAINT_WATSON.md": {
+      "hash": "b34acdedd1256573",
+      "first_seen": "2026-03-04T21:20:21.133832",
+      "last_modified": "2026-03-04T21:20:21.133832",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_DISCOVERY_REQUESTS_V4.md": {
+      "hash": "9ec29f82790755e9",
+      "first_seen": "2026-03-04T21:20:21.133832",
+      "last_modified": "2026-03-04T21:20:21.133832",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_EMERGENCY_MOTION_PARENTING_TIME.md": {
+      "hash": "cd554819fc41abda",
+      "first_seen": "2026-03-04T21:20:21.134831",
+      "last_modified": "2026-03-04T21:20:21.134831",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_EMERGENCY_MOTION_RESTORE_PARENTING_TIME_V4.md": {
+      "hash": "4a5efa39d08e1026",
+      "first_seen": "2026-03-04T21:20:21.134911",
+      "last_modified": "2026-03-04T21:20:21.134911",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_MOTION_CHANGE_OF_VENUE.md": {
+      "hash": "3b450e87780c2fe5",
+      "first_seen": "2026-03-04T21:20:21.134911",
+      "last_modified": "2026-03-04T21:20:21.134911",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_MOTION_CONTEMPT_SHOW_CAUSE_V4.md": {
+      "hash": "430190b9cf60c0ac",
+      "first_seen": "2026-03-04T21:20:21.134911",
+      "last_modified": "2026-03-04T21:20:21.134911",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_MOTION_DISQUALIFY_JUDGE_MCNEILL_V4.md": {
+      "hash": "a9552a39df1a1135",
+      "first_seen": "2026-03-04T21:20:21.135828",
+      "last_modified": "2026-03-04T21:20:21.135828",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_MOTION_FOR_CONTEMPT.md": {
+      "hash": "9719c68e23402659",
+      "first_seen": "2026-03-04T21:20:21.135828",
+      "last_modified": "2026-03-04T21:20:21.135828",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_MOTION_MODIFY_CUSTODY_V4.md": {
+      "hash": "3c4af9545e1732bc",
+      "first_seen": "2026-03-04T21:20:21.135828",
+      "last_modified": "2026-03-04T21:20:21.135828",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_MOTION_TO_COMPEL_DISCOVERY.md": {
+      "hash": "d3e0a0915ddb872a",
+      "first_seen": "2026-03-04T21:20:21.136829",
+      "last_modified": "2026-03-04T21:20:21.136829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_PROPOSED_ORDERS_BUNDLE_V4.md": {
+      "hash": "668c2ab2f23470a4",
+      "first_seen": "2026-03-04T21:20:21.136829",
+      "last_modified": "2026-03-04T21:20:21.136829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LANE_A_CUSTODY_TORT_COMPLAINT_WATSON_FAMILY.md": {
+      "hash": "0213e0b1fd62c398",
+      "first_seen": "2026-03-04T21:20:21.136829",
+      "last_modified": "2026-03-04T21:20:21.136829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\LLM_CUSTODY_ANALYSIS.md": {
+      "hash": "5c726c80ac83cc95",
+      "first_seen": "2026-03-04T21:20:21.136829",
+      "last_modified": "2026-03-04T21:20:21.136829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MASTER_AFFIDAVIT_14TH_CIRCUIT.md": {
+      "hash": "becab3962e5e6e2c",
+      "first_seen": "2026-03-04T21:20:21.137829",
+      "last_modified": "2026-03-04T21:20:21.137829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MASTER_CHRONOLOGICAL_TIMELINE.md": {
+      "hash": "beb79ac084ea233f",
+      "first_seen": "2026-03-04T21:20:21.137829",
+      "last_modified": "2026-03-04T21:20:21.137829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MASTER_CHRONOLOGICAL_TIMELINE_1.md": {
+      "hash": "3a1d8b77b126a452",
+      "first_seen": "2026-03-04T21:20:21.137829",
+      "last_modified": "2026-03-04T21:20:21.137829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MCL_CUSTODY_GUIDE.md": {
+      "hash": "51f1a3cf987ba72c",
+      "first_seen": "2026-03-04T21:20:21.137829",
+      "last_modified": "2026-03-04T21:20:21.137829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MCNEILLDOCKETCOPYPASTE.md": {
+      "hash": "a5ae62ec3fde57a5",
+      "first_seen": "2026-03-04T21:20:21.138829",
+      "last_modified": "2026-03-04T21:20:21.138829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MCNEILL_BENCHBOOK_DEVIATION_REPORT.md": {
+      "hash": "3925149e38a071e3",
+      "first_seen": "2026-03-04T21:20:21.138829",
+      "last_modified": "2026-03-04T21:20:21.138829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MCNEILL_CANONS_VIOLATION_MATRIX.md": {
+      "hash": "6954bafc752d82e3",
+      "first_seen": "2026-03-04T21:20:21.138829",
+      "last_modified": "2026-03-04T21:20:21.138829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MCNEILL_DOSSIER.md": {
+      "hash": "10594f2d0d785348",
+      "first_seen": "2026-03-04T21:20:21.139827",
+      "last_modified": "2026-03-04T21:20:21.139827",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MCNEILL_EXTRACTION_SUMMARY.md": {
+      "hash": "67c5a335a4b86bda",
+      "first_seen": "2026-03-04T21:20:21.139827",
+      "last_modified": "2026-03-04T21:20:21.139827",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MCNEILL_JUDICIAL_DOSSIER.md": {
+      "hash": "33bd6aa4b85d9cdc",
+      "first_seen": "2026-03-04T21:20:21.139827",
+      "last_modified": "2026-03-04T21:20:21.139827",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\mcneill_order_audit.md": {
+      "hash": "cb90da505b396600",
+      "first_seen": "2026-03-04T21:20:21.140828",
+      "last_modified": "2026-03-04T21:20:21.140828",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MEEK2_Custody_ParentingTime_ChildSupport_EXHIBIT_GRADE_GRAFT_PARAGRAPHS.md": {
+      "hash": "03cc9ef332f7b35b",
+      "first_seen": "2026-03-04T21:20:21.145827",
+      "last_modified": "2026-03-04T21:20:21.145827",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MEEK2_CUSTODY_PT.md": {
+      "hash": "83283d2ab180bc4b",
+      "first_seen": "2026-03-04T21:20:21.146829",
+      "last_modified": "2026-03-04T21:20:21.146829",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MEEK2_CUSTODY_PT_CLEAN.md": {
+      "hash": "53369708b630791f",
+      "first_seen": "2026-03-04T21:20:21.147830",
+      "last_modified": "2026-03-04T21:20:21.147830",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MEEK2_CUSTODY_PT_CLEAN_DELTA2.md": {
+      "hash": "e55be9cfc2778871",
+      "first_seen": "2026-03-04T21:20:21.147830",
+      "last_modified": "2026-03-04T21:20:21.147830",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MEEK2_CUSTODY_PT_DELTA2_RECORD_AWARE.md": {
+      "hash": "63a78f41341f0ed4",
+      "first_seen": "2026-03-04T21:20:21.178433",
+      "last_modified": "2026-03-04T21:20:21.178433",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MEEK2_CUSTODY_PT_DELTA2_RECORD_FIRST.md": {
+      "hash": "7fb0d441c22303e1",
+      "first_seen": "2026-03-04T21:20:21.212608",
+      "last_modified": "2026-03-04T21:20:21.212608",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MISSION_COMPLETE_EMERGENCY_MOTIONS.md": {
+      "hash": "c8a5068017078a63",
+      "first_seen": "2026-03-04T21:20:21.212608",
+      "last_modified": "2026-03-04T21:20:21.212608",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_APPOINT_GAL.md": {
+      "hash": "e4026f3e42f93f3e",
+      "first_seen": "2026-03-04T21:20:21.213611",
+      "last_modified": "2026-03-04T21:20:21.213611",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_APPOINT_GAL_1.md": {
+      "hash": "eafad1743fff1f44",
+      "first_seen": "2026-03-04T21:20:21.213998",
+      "last_modified": "2026-03-04T21:20:21.213998",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_CHANGE_OF_VENUE.md": {
+      "hash": "06e8803dd76399b5",
+      "first_seen": "2026-03-04T21:20:21.213998",
+      "last_modified": "2026-03-04T21:20:21.213998",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_CHANGE_OF_VENUE_1.md": {
+      "hash": "3b450e87780c2fe5",
+      "first_seen": "2026-03-04T21:20:21.214518",
+      "last_modified": "2026-03-04T21:20:21.214518",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_CHANGE_OF_VENUE_2.md": {
+      "hash": "92ff307224679da9",
+      "first_seen": "2026-03-04T21:20:21.214518",
+      "last_modified": "2026-03-04T21:20:21.214518",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_CHANGE_OF_VENUE_3.md": {
+      "hash": "064b12d68aa41900",
+      "first_seen": "2026-03-04T21:20:21.214518",
+      "last_modified": "2026-03-04T21:20:21.214518",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_CHILD_SUPPORT_MODIFICATION.md": {
+      "hash": "bf34bfd0a2dd6e0a",
+      "first_seen": "2026-03-04T21:20:21.215510",
+      "last_modified": "2026-03-04T21:20:21.215510",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_CHILD_SUPPORT_MODIFICATION_1.md": {
+      "hash": "e463c708505b3e26",
+      "first_seen": "2026-03-04T21:20:21.215510",
+      "last_modified": "2026-03-04T21:20:21.215510",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_COMPEL_DISCOVERY.md": {
+      "hash": "7f6b4b8dea7173cb",
+      "first_seen": "2026-03-04T21:20:21.215510",
+      "last_modified": "2026-03-04T21:20:21.215510",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_COMPEL_DISCOVERY_1.md": {
+      "hash": "5c7bb3cf0d187410",
+      "first_seen": "2026-03-04T21:20:21.215510",
+      "last_modified": "2026-03-04T21:20:21.215510",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_CONTEMPT_SHOW_CAUSE.md": {
+      "hash": "1436197ce3e4a3a9",
+      "first_seen": "2026-03-04T21:20:21.216509",
+      "last_modified": "2026-03-04T21:20:21.216509",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_CONTEMPT_SHOW_CAUSE_1.md": {
+      "hash": "e2d31df0ac38ffc1",
+      "first_seen": "2026-03-04T21:20:21.216509",
+      "last_modified": "2026-03-04T21:20:21.216509",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_CONTEMPT_SHOW_CAUSE_V4.md": {
+      "hash": "3a63851cdd44a929",
+      "first_seen": "2026-03-04T21:20:21.216509",
+      "last_modified": "2026-03-04T21:20:21.216509",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_CONTEMPT_SHOW_CAUSE_V4_1.md": {
+      "hash": "15aa704a954ef26a",
+      "first_seen": "2026-03-04T21:20:21.216509",
+      "last_modified": "2026-03-04T21:20:21.216509",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_CONTEMPT_SHOW_CAUSE_V4_2.md": {
+      "hash": "22c4e74f217dccf8",
+      "first_seen": "2026-03-04T21:20:21.217509",
+      "last_modified": "2026-03-04T21:20:21.217509",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_DISQUALIFICATION_MCNEILL.md": {
+      "hash": "785793b8a058ea83",
+      "first_seen": "2026-03-04T21:20:21.217509",
+      "last_modified": "2026-03-04T21:20:21.217509",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_DISQUALIFY_JUDGE_MCNEILL.md": {
+      "hash": "b6c6a6d84a3cd4a9",
+      "first_seen": "2026-03-04T21:20:21.217509",
+      "last_modified": "2026-03-04T21:20:21.217509",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_DISQUALIFY_JUDGE_MCNEILL_1.md": {
+      "hash": "63048944aaa8328f",
+      "first_seen": "2026-03-04T21:20:21.222796",
+      "last_modified": "2026-03-04T21:20:21.222796",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_DISQUALIFY_JUDGE_MCNEILL_2.md": {
+      "hash": "d0b3df154e000907",
+      "first_seen": "2026-03-04T21:20:21.223316",
+      "last_modified": "2026-03-04T21:20:21.223316",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_DISQUALIFY_JUDGE_MCNEILL_3.md": {
+      "hash": "b9a29432485375b3",
+      "first_seen": "2026-03-04T21:20:21.223316",
+      "last_modified": "2026-03-04T21:20:21.223316",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_DISQUALIFY_JUDGE_MCNEILL_V4.md": {
+      "hash": "34e02b080cc8fe69",
+      "first_seen": "2026-03-04T21:20:21.223316",
+      "last_modified": "2026-03-04T21:20:21.223316",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_DISQUALIFY_JUDGE_MCNEILL_V4_1.md": {
+      "hash": "899364995b607e87",
+      "first_seen": "2026-03-04T21:20:21.224310",
+      "last_modified": "2026-03-04T21:20:21.224310",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_DISQUALIFY_McNeill_Andrew_Pigors.md": {
+      "hash": "675224bd5048d1a7",
+      "first_seen": "2026-03-04T21:20:21.224310",
+      "last_modified": "2026-03-04T21:20:21.224310",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_EMERGENCY_CUSTODY.md": {
+      "hash": "a0bd0372e443b10e",
+      "first_seen": "2026-03-04T21:20:21.224310",
+      "last_modified": "2026-03-04T21:20:21.224310",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_EMERGENCY_CUSTODY_1.md": {
+      "hash": "3cee0ffa5cef90b8",
+      "first_seen": "2026-03-04T21:20:21.224310",
+      "last_modified": "2026-03-04T21:20:21.224310",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_FOR_CONTEMPT.md": {
+      "hash": "794a9285ef74725b",
+      "first_seen": "2026-03-04T21:20:21.225309",
+      "last_modified": "2026-03-04T21:20:21.225309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_FOR_CONTEMPT_1.md": {
+      "hash": "fb4e2913afcdcdea",
+      "first_seen": "2026-03-04T21:20:21.225309",
+      "last_modified": "2026-03-04T21:20:21.225309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Motion_for_Disqualification_Judge_McNeill(1).md": {
+      "hash": "fad1a9f91719db46",
+      "first_seen": "2026-03-04T21:20:21.225309",
+      "last_modified": "2026-03-04T21:20:21.225309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Motion_for_Disqualification_Judge_McNeill(2).md": {
+      "hash": "fad1a9f91719db46",
+      "first_seen": "2026-03-04T21:20:21.225309",
+      "last_modified": "2026-03-04T21:20:21.225309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Motion_for_Disqualification_Judge_McNeill(3).md": {
+      "hash": "fad1a9f91719db46",
+      "first_seen": "2026-03-04T21:20:21.226307",
+      "last_modified": "2026-03-04T21:20:21.226307",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Motion_for_Disqualification_Judge_McNeill(4).md": {
+      "hash": "fad1a9f91719db46",
+      "first_seen": "2026-03-04T21:20:21.226307",
+      "last_modified": "2026-03-04T21:20:21.226307",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Motion_for_Disqualification_Judge_McNeill(5).md": {
+      "hash": "fad1a9f91719db46",
+      "first_seen": "2026-03-04T21:20:21.226307",
+      "last_modified": "2026-03-04T21:20:21.226307",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Motion_for_Disqualification_Judge_McNeill(6).md": {
+      "hash": "fad1a9f91719db46",
+      "first_seen": "2026-03-04T21:20:21.226307",
+      "last_modified": "2026-03-04T21:20:21.226307",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Motion_for_Disqualification_Judge_McNeill.md": {
+      "hash": "fad1a9f91719db46",
+      "first_seen": "2026-03-04T21:20:21.227307",
+      "last_modified": "2026-03-04T21:20:21.227307",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Motion_for_Disqualification_Judge_McNeill_1.md": {
+      "hash": "4127c207ed79dea0",
+      "first_seen": "2026-03-04T21:20:21.227307",
+      "last_modified": "2026-03-04T21:20:21.227307",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_FOR_DISQUALIFICATION_v2.md": {
+      "hash": "bffa25ffdc306844",
+      "first_seen": "2026-03-04T21:20:21.227307",
+      "last_modified": "2026-03-04T21:20:21.227307",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_FOR_SANCTIONS.md": {
+      "hash": "1f88606dfa5a428b",
+      "first_seen": "2026-03-04T21:20:21.227307",
+      "last_modified": "2026-03-04T21:20:21.227307",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_FOR_SANCTIONS_1.md": {
+      "hash": "64a0258fc0e99c0b",
+      "first_seen": "2026-03-04T21:20:21.227307",
+      "last_modified": "2026-03-04T21:20:21.228307",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_JUDICIAL_DISQUALIFICATION_MCNEILL.md": {
+      "hash": "7a6ba298cea2d128",
+      "first_seen": "2026-03-04T21:20:21.228307",
+      "last_modified": "2026-03-04T21:20:21.228307",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_MODIFY_CUSTODY_V4.md": {
+      "hash": "f855c48d11809a97",
+      "first_seen": "2026-03-04T21:20:21.229309",
+      "last_modified": "2026-03-04T21:20:21.229309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_MODIFY_CUSTODY_V4_1.md": {
+      "hash": "740e6b5480eb3a83",
+      "first_seen": "2026-03-04T21:20:21.229309",
+      "last_modified": "2026-03-04T21:20:21.229309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_RECONSIDERATION.md": {
+      "hash": "d32b32665efdeaa5",
+      "first_seen": "2026-03-04T21:20:21.230310",
+      "last_modified": "2026-03-04T21:20:21.230310",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_RECONSIDERATION_1.md": {
+      "hash": "92cfd88e802b4818",
+      "first_seen": "2026-03-04T21:20:21.230310",
+      "last_modified": "2026-03-04T21:20:21.230310",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_SET_ASIDE_DEFAULT.md": {
+      "hash": "efdc1f2f3a58396b",
+      "first_seen": "2026-03-04T21:20:21.230310",
+      "last_modified": "2026-03-04T21:20:21.230310",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_SET_ASIDE_DEFAULT_1.md": {
+      "hash": "0d0ba88fb03faacf",
+      "first_seen": "2026-03-04T21:20:21.230310",
+      "last_modified": "2026-03-04T21:20:21.230310",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_SUPERVISED_EXCHANGE.md": {
+      "hash": "907eba66c6b8af10",
+      "first_seen": "2026-03-04T21:20:21.231309",
+      "last_modified": "2026-03-04T21:20:21.231309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_SUPERVISED_EXCHANGE_1.md": {
+      "hash": "991fc2860e3bf992",
+      "first_seen": "2026-03-04T21:20:21.231309",
+      "last_modified": "2026-03-04T21:20:21.231309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_TERMINATE_PPO.md": {
+      "hash": "c9deb200ebf8513d",
+      "first_seen": "2026-03-04T21:20:21.231309",
+      "last_modified": "2026-03-04T21:20:21.231309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_TERMINATE_PPO_1.md": {
+      "hash": "0b4101492986cb71",
+      "first_seen": "2026-03-04T21:20:21.232310",
+      "last_modified": "2026-03-04T21:20:21.232310",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_TO_COMPEL_DISCOVERY.md": {
+      "hash": "4c2c54bcbbfcfb8b",
+      "first_seen": "2026-03-04T21:20:21.232310",
+      "last_modified": "2026-03-04T21:20:21.232310",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_TO_COMPEL_DISCOVERY_1.md": {
+      "hash": "6ea959c3da040f8a",
+      "first_seen": "2026-03-04T21:20:21.232310",
+      "last_modified": "2026-03-04T21:20:21.232310",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_TO_CONSOLIDATE.md": {
+      "hash": "e9fcd682a89a2873",
+      "first_seen": "2026-03-04T21:20:21.232310",
+      "last_modified": "2026-03-04T21:20:21.232310",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_TO_CONSOLIDATE_1.md": {
+      "hash": "0f6f963f74515d0d",
+      "first_seen": "2026-03-04T21:20:21.233309",
+      "last_modified": "2026-03-04T21:20:21.233309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_TO_RESTORE_PARENTING_TIME.md": {
+      "hash": "0798492cef97a677",
+      "first_seen": "2026-03-04T21:20:21.233309",
+      "last_modified": "2026-03-04T21:20:21.233309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_UCCJEA_EMERGENCY_JURISDICTION.md": {
+      "hash": "63ae24d6696214e7",
+      "first_seen": "2026-03-04T21:20:21.233309",
+      "last_modified": "2026-03-04T21:20:21.233309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_WRIT_MANDAMUS.md": {
+      "hash": "38c5592891816fcf",
+      "first_seen": "2026-03-04T21:20:21.233309",
+      "last_modified": "2026-03-04T21:20:21.233309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\MOTION_WRIT_MANDAMUS_1.md": {
+      "hash": "73e5fafc7f833368",
+      "first_seen": "2026-03-04T21:20:21.234309",
+      "last_modified": "2026-03-04T21:20:21.234309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Original_Court_Order_2024-001507-DC.md": {
+      "hash": "54647cf588f38a5d",
+      "first_seen": "2026-03-04T21:20:21.234309",
+      "last_modified": "2026-03-04T21:20:21.234309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PACKET_01_EMERGENCY_MOTION_RESTORE_PT.md": {
+      "hash": "025957f8e406b4f5",
+      "first_seen": "2026-03-04T21:20:21.234309",
+      "last_modified": "2026-03-04T21:20:21.234309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PACKET_01_EMERGENCY_MOTION_RESTORE_PT_1.md": {
+      "hash": "bed79ed1bace44c1",
+      "first_seen": "2026-03-04T21:20:21.234309",
+      "last_modified": "2026-03-04T21:20:21.234309",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PACKET_03_JUDICIAL_DISQUALIFICATION.md": {
+      "hash": "4e4d3d0cc5382ba1",
+      "first_seen": "2026-03-04T21:20:21.235308",
+      "last_modified": "2026-03-04T21:20:21.235308",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PHASE1_EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md": {
+      "hash": "33c374319a20d398",
+      "first_seen": "2026-03-04T21:20:21.271602",
+      "last_modified": "2026-03-04T21:20:21.271602",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PIGORS_CASE_DOCS__EMERGENCY_MOTION_RESTORE_PARENTING_TIME_Andrew_Pigors_v_Emily_Watson.md": {
+      "hash": "59aa72187489977a",
+      "first_seen": "2026-03-04T21:20:21.272119",
+      "last_modified": "2026-03-04T21:20:21.272119",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PIGORS_CASE_DOCS__MOTION_DISQUALIFY_McNeill_Andrew_Pigors.md": {
+      "hash": "675224bd5048d1a7",
+      "first_seen": "2026-03-04T21:20:21.272119",
+      "last_modified": "2026-03-04T21:20:21.272119",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody__02_Evidence__Documentary__EX_PARTE_HEARING_VIOLATIONS_DETAILED.md": {
+      "hash": "c42a5be2fd8fc878",
+      "first_seen": "2026-03-04T21:20:21.272119",
+      "last_modified": "2026-03-04T21:20:21.272119",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody__02_Evidence__Documentary__FORMAL_COMPLAINT_JUDICIAL_TENURE_COMMISSION.md": {
+      "hash": "2dcba16664fc6f7e",
+      "first_seen": "2026-03-04T21:20:21.273114",
+      "last_modified": "2026-03-04T21:20:21.273114",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody__02_Evidence__Documentary__JUDICIAL_MISCONDUCT_TIMELINE.md": {
+      "hash": "bb73a2d287481e78",
+      "first_seen": "2026-03-04T21:20:21.273114",
+      "last_modified": "2026-03-04T21:20:21.273114",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody__02_Evidence__Documentary__Motion_for_Disqualification_Judge_McNeill.md": {
+      "hash": "553770b77c9442fb",
+      "first_seen": "2026-03-04T21:20:21.273114",
+      "last_modified": "2026-03-04T21:20:21.273114",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody__02_Evidence__Documentary__SUPPLEMENTAL_JTC_COMPLAINT_EX_PARTE_VIOLATIONS.md": {
+      "hash": "79f9e2bf38a10ac6",
+      "first_seen": "2026-03-04T21:20:21.274113",
+      "last_modified": "2026-03-04T21:20:21.274113",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody__03_Motions__Drafted__EXHIBITS__Exhibit_E_Systematic_Violations.md": {
+      "hash": "3be464b8ca9f439c",
+      "first_seen": "2026-03-04T21:20:21.274113",
+      "last_modified": "2026-03-04T21:20:21.274113",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody__03_Motions__Drafted__URGENT_FILING_DEADLINE_FEB17.md": {
+      "hash": "90c43f9b67ffd5fa",
+      "first_seen": "2026-03-04T21:20:21.274113",
+      "last_modified": "2026-03-04T21:20:21.274113",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody__07_Strategy__ADVANCED_LITIGATION_STRATEGIES.md": {
+      "hash": "6f4e4c3aea646de0",
+      "first_seen": "2026-03-04T21:20:21.275113",
+      "last_modified": "2026-03-04T21:20:21.275113",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody__07_Strategy__COMPREHENSIVE_LEGAL_ANALYSIS_Pigors_v_Watson.md": {
+      "hash": "1b94c58cc100d9a1",
+      "first_seen": "2026-03-04T21:20:21.275113",
+      "last_modified": "2026-03-04T21:20:21.275113",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody__07_Strategy__COMPREHENSIVE_LEGAL_STRATEGY_ACTION_PLAN.md": {
+      "hash": "7845e05616f4ba1e",
+      "first_seen": "2026-03-04T21:20:21.275113",
+      "last_modified": "2026-03-04T21:20:21.275113",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody__07_Strategy__LEGAL_ACTION_PLAN_Pigors_v_Watson.md": {
+      "hash": "cfc176d42ef4c3b8",
+      "first_seen": "2026-03-04T21:20:21.275113",
+      "last_modified": "2026-03-04T21:20:21.275113",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\Pigors_v_Watson_2024-001507-DC_Custody___DASHBOARD.md": {
+      "hash": "1c2c96a79fdd8d41",
+      "first_seen": "2026-03-04T21:20:21.276113",
+      "last_modified": "2026-03-04T21:20:21.276113",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PKG01_EMERGENCY_PARENTING_TIME_FINALIZED.md": {
+      "hash": "f7345a71e0805134",
+      "first_seen": "2026-03-04T21:20:21.276113",
+      "last_modified": "2026-03-04T21:20:21.276113",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PKG02_VACATE_PPO_FINALIZED.md": {
+      "hash": "e5099ed270e6e911",
+      "first_seen": "2026-03-04T21:20:21.277112",
+      "last_modified": "2026-03-04T21:20:21.277112",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PKG03_DISQUALIFY_MCNEILL_FINALIZED.md": {
+      "hash": "a0ce2f217e80b3ab",
+      "first_seen": "2026-03-04T21:20:21.277112",
+      "last_modified": "2026-03-04T21:20:21.277112",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PKG04_VOID_EX_PARTE_ORDERS_FINALIZED.md": {
+      "hash": "9ca9c41f4cee6e85",
+      "first_seen": "2026-03-04T21:20:21.277112",
+      "last_modified": "2026-03-04T21:20:21.277112",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PKG06_JTC_COMPLAINT_FINALIZED.md": {
+      "hash": "b48611d3eb814806",
+      "first_seen": "2026-03-04T21:20:21.278113",
+      "last_modified": "2026-03-04T21:20:21.278113",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PKG07_MSC_APPLICATION_FINALIZED.md": {
+      "hash": "887ca4a3effac9b1",
+      "first_seen": "2026-03-04T21:20:21.324054",
+      "last_modified": "2026-03-04T21:20:21.324054",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PPO_CUSTODY_CORRELATION.md": {
+      "hash": "e1816a9740409132",
+      "first_seen": "2026-03-04T21:20:21.324054",
+      "last_modified": "2026-03-04T21:20:21.324054",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PPO_CUSTODY_CORRELATION_CHART.md": {
+      "hash": "7c5bf8a30662bca8",
+      "first_seen": "2026-03-04T21:20:21.325054",
+      "last_modified": "2026-03-04T21:20:21.325054",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PROPOSED_ORDER.md": {
+      "hash": "c7863e8c0e3462b1",
+      "first_seen": "2026-03-04T21:20:21.325054",
+      "last_modified": "2026-03-04T21:20:21.325054",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PROPOSED_ORDERS_BUNDLE.md": {
+      "hash": "62f6ebee6b9d8964",
+      "first_seen": "2026-03-04T21:20:21.325054",
+      "last_modified": "2026-03-04T21:20:21.325054",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PROPOSED_ORDERS_BUNDLE_1.md": {
+      "hash": "facf793e1800a8b1",
+      "first_seen": "2026-03-04T21:20:21.325054",
+      "last_modified": "2026-03-04T21:20:21.325054",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PROPOSED_ORDERS_BUNDLE_V4.md": {
+      "hash": "cf5026aaf03c8e06",
+      "first_seen": "2026-03-04T21:20:21.326055",
+      "last_modified": "2026-03-04T21:20:21.326055",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PROPOSED_ORDERS_BUNDLE_V4_1.md": {
+      "hash": "4dd339d44fabc14a",
+      "first_seen": "2026-03-04T21:20:21.326055",
+      "last_modified": "2026-03-04T21:20:21.326055",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PROPOSED_ORDERS_BUNDLE_V4_2.md": {
+      "hash": "5cf7bafd91fad017",
+      "first_seen": "2026-03-04T21:20:21.326055",
+      "last_modified": "2026-03-04T21:20:21.326055",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PROPOSED_ORDER_DISQUALIFICATION.md": {
+      "hash": "c32e69b603369c03",
+      "first_seen": "2026-03-04T21:20:21.327054",
+      "last_modified": "2026-03-04T21:20:21.327054",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PROPOSED_ORDER_DISQUALIFICATION_1.md": {
+      "hash": "48667ecd8cface9f",
+      "first_seen": "2026-03-04T21:20:21.328056",
+      "last_modified": "2026-03-04T21:20:21.328056",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PROPOSED_ORDER_DISQUALIFICATION_2.md": {
+      "hash": "6b5551f74f48caa6",
+      "first_seen": "2026-03-04T21:20:21.328056",
+      "last_modified": "2026-03-04T21:20:21.328056",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PROPOSED_ORDER_DISQUALIFICATION_3.md": {
+      "hash": "1ab82b3d23823c42",
+      "first_seen": "2026-03-04T21:20:21.329053",
+      "last_modified": "2026-03-04T21:20:21.329053",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\PROPOSED_ORDER_EMERGENCY_RESTORE_PARENTING_TIME.md": {
+      "hash": "1e4f102f10d14d70",
+      "first_seen": "2026-03-04T21:20:21.330055",
+      "last_modified": "2026-03-04T21:20:21.330055",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\QA_CHECKLIST_DISQUALIFICATION.md": {
+      "hash": "3d62d2695f67a8a3",
+      "first_seen": "2026-03-04T21:20:21.330055",
+      "last_modified": "2026-03-04T21:20:21.330055",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\QA_CHECKLIST_DISQUALIFICATION_1.md": {
+      "hash": "946d8f510d14c7ef",
+      "first_seen": "2026-03-04T21:20:21.331056",
+      "last_modified": "2026-03-04T21:20:21.331056",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\QC_REPORT_A_EMERGENCY_MOTION_FOR_IMMEDIATE_PARENTING_TIME_AND_MAKEUP_TIME.md": {
+      "hash": "ae358b290639f341",
+      "first_seen": "2026-03-04T21:20:21.331056",
+      "last_modified": "2026-03-04T21:20:21.331056",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\QUICK_REFERENCE_EMERGENCY_MOTIONS.md": {
+      "hash": "3628ab5bf61142e8",
+      "first_seen": "2026-03-04T21:20:21.331056",
+      "last_modified": "2026-03-04T21:20:21.331056",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\README_DISQUALIFICATION.md": {
+      "hash": "9d6d88985d3a6590",
+      "first_seen": "2026-03-04T21:20:21.332055",
+      "last_modified": "2026-03-04T21:20:21.332055",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\README_DISQUALIFICATION_1.md": {
+      "hash": "98d366c9af695e67",
+      "first_seen": "2026-03-04T21:20:21.332055",
+      "last_modified": "2026-03-04T21:20:21.332055",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\README_EMERGENCY_MOTIONS.md": {
+      "hash": "03f2a009dd1af721",
+      "first_seen": "2026-03-04T21:20:21.332055",
+      "last_modified": "2026-03-04T21:20:21.332055",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\RESPONSE_SHOW_CAUSE_7.md": {
+      "hash": "f3813ce354c0c754",
+      "first_seen": "2026-03-04T21:20:21.333053",
+      "last_modified": "2026-03-04T21:20:21.333053",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\ROAcustody.md": {
+      "hash": "2a3912239d01577c",
+      "first_seen": "2026-03-04T21:20:21.333053",
+      "last_modified": "2026-03-04T21:20:21.333053",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT_DELTA2_RECORD_AWARE.md": {
+      "hash": "63a78f41341f0ed4",
+      "first_seen": "2026-03-04T21:20:21.371685",
+      "last_modified": "2026-03-04T21:20:21.371685",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT_DELTA2_RECORD_FIRST.md": {
+      "hash": "7fb0d441c22303e1",
+      "first_seen": "2026-03-04T21:20:21.393624",
+      "last_modified": "2026-03-04T21:20:21.393624",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\runs__run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT.md": {
+      "hash": "83283d2ab180bc4b",
+      "first_seen": "2026-03-04T21:20:21.394625",
+      "last_modified": "2026-03-04T21:20:21.394625",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\runs__run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT_DELTA2_RECORD_AWARE.md": {
+      "hash": "63a78f41341f0ed4",
+      "first_seen": "2026-03-04T21:20:21.418493",
+      "last_modified": "2026-03-04T21:20:21.418493",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\runs__run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT_DELTA2_RECORD_FIRST.md": {
+      "hash": "7fb0d441c22303e1",
+      "first_seen": "2026-03-04T21:20:21.444488",
+      "last_modified": "2026-03-04T21:20:21.444488",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT_DELTA2_RECORD_AWARE.md": {
+      "hash": "63a78f41341f0ed4",
+      "first_seen": "2026-03-04T21:20:21.459374",
+      "last_modified": "2026-03-04T21:20:21.459374",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT_DELTA2_RECORD_FIRST.md": {
+      "hash": "7fb0d441c22303e1",
+      "first_seen": "2026-03-04T21:20:21.483378",
+      "last_modified": "2026-03-04T21:20:21.483378",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\SCANNED_0030_PARENTING_TIME_EXTRACT.md": {
+      "hash": "fc33818c68d067cf",
+      "first_seen": "2026-03-04T21:20:21.484375",
+      "last_modified": "2026-03-04T21:20:21.484375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\SIGNAL_SCORES.md": {
+      "hash": "b66f3e00ae543b85",
+      "first_seen": "2026-03-04T21:20:21.484375",
+      "last_modified": "2026-03-04T21:20:21.484375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\SIGNAL_SCORES_1.md": {
+      "hash": "ec278ec93b0a6237",
+      "first_seen": "2026-03-04T21:20:21.484375",
+      "last_modified": "2026-03-04T21:20:21.484375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\SUMMARY.md": {
+      "hash": "342c50195011e93b",
+      "first_seen": "2026-03-04T21:20:21.484375",
+      "last_modified": "2026-03-04T21:20:21.484375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\SUMMARY_1.md": {
+      "hash": "d064b2da74e178ee",
+      "first_seen": "2026-03-04T21:20:21.485375",
+      "last_modified": "2026-03-04T21:20:21.485375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\TORT_COMPLAINT_WATSON_FAMILY.md": {
+      "hash": "0213e0b1fd62c398",
+      "first_seen": "2026-03-04T21:20:21.485375",
+      "last_modified": "2026-03-04T21:20:21.485375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\TORT_COMPLAINT_WATSON_FAMILY_1.md": {
+      "hash": "9ac3486081e4165a",
+      "first_seen": "2026-03-04T21:20:21.486375",
+      "last_modified": "2026-03-04T21:20:21.486375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\VERBATIM_QUOTES.md": {
+      "hash": "3c96311d212af83a",
+      "first_seen": "2026-03-04T21:20:21.486375",
+      "last_modified": "2026-03-04T21:20:21.486375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\drafts\\VERBATIM_QUOTES_1.md": {
+      "hash": "7f1cd8bb1546e325",
+      "first_seen": "2026-03-04T21:20:21.486375",
+      "last_modified": "2026-03-04T21:20:21.486375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\AFFIDAVIT_PIGORS_14TH_CIRCUIT.md": {
+      "hash": "327d6f701028d076",
+      "first_seen": "2026-03-04T21:20:21.490372",
+      "last_modified": "2026-03-04T21:20:21.490372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\BAR_COMPLAINT_JENNIFER_BARNES.md": {
+      "hash": "7cabbb4db6b58cda",
+      "first_seen": "2026-03-04T21:20:21.490372",
+      "last_modified": "2026-03-04T21:20:21.490372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\CIVIL_COMPLAINT_WATSON_FAMILY.md": {
+      "hash": "0aa2acaf61224e70",
+      "first_seen": "2026-03-04T21:20:21.490372",
+      "last_modified": "2026-03-04T21:20:21.490372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\CRIMINAL_REFERRAL_PACKET.md": {
+      "hash": "2d816a573134da0a",
+      "first_seen": "2026-03-04T21:20:21.491372",
+      "last_modified": "2026-03-04T21:20:21.491372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md": {
+      "hash": "ba4cda638402ac7b",
+      "first_seen": "2026-03-04T21:20:21.491372",
+      "last_modified": "2026-03-04T21:20:21.491372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\EXHIBIT_PARENTAL_ALIENATION_ANALYSIS.md": {
+      "hash": "7eaa734008235e57",
+      "first_seen": "2026-03-04T21:20:21.491372",
+      "last_modified": "2026-03-04T21:20:21.491372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\FILING_BUNDLE_CHECKLIST.md": {
+      "hash": "03856ffc37f3da93",
+      "first_seen": "2026-03-04T21:20:21.491372",
+      "last_modified": "2026-03-04T21:20:21.491372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\FOIA_REQUEST_PACKET.md": {
+      "hash": "5cace759c590ef99",
+      "first_seen": "2026-03-04T21:20:21.492372",
+      "last_modified": "2026-03-04T21:20:21.492372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MASTER_CHRONOLOGICAL_TIMELINE.md": {
+      "hash": "96d7dc98a15eec12",
+      "first_seen": "2026-03-04T21:20:21.492372",
+      "last_modified": "2026-03-04T21:20:21.492372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_APPOINT_GAL.md": {
+      "hash": "9284a30b2a620f0d",
+      "first_seen": "2026-03-04T21:20:21.492372",
+      "last_modified": "2026-03-04T21:20:21.492372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_CHANGE_OF_VENUE.md": {
+      "hash": "de9ec908f8b0b8f4",
+      "first_seen": "2026-03-04T21:20:21.492372",
+      "last_modified": "2026-03-04T21:20:21.492372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_CHILD_SUPPORT_MODIFICATION.md": {
+      "hash": "6d7114f3b53ef4b4",
+      "first_seen": "2026-03-04T21:20:21.493372",
+      "last_modified": "2026-03-04T21:20:21.493372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_COMPEL_DISCOVERY.md": {
+      "hash": "89726719088f5648",
+      "first_seen": "2026-03-04T21:20:21.493372",
+      "last_modified": "2026-03-04T21:20:21.493372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_CONTEMPT_SHOW_CAUSE.md": {
+      "hash": "2d99f1c654b00288",
+      "first_seen": "2026-03-04T21:20:21.493372",
+      "last_modified": "2026-03-04T21:20:21.493372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_DISQUALIFY_JUDGE_MCNEILL.md": {
+      "hash": "24cee379ee55c62e",
+      "first_seen": "2026-03-04T21:20:21.493372",
+      "last_modified": "2026-03-04T21:20:21.493372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_EMERGENCY_CUSTODY.md": {
+      "hash": "3313f61a4d747ec1",
+      "first_seen": "2026-03-04T21:20:21.494372",
+      "last_modified": "2026-03-04T21:20:21.494372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_FOR_SANCTIONS.md": {
+      "hash": "79589a07900d2e88",
+      "first_seen": "2026-03-04T21:20:21.494372",
+      "last_modified": "2026-03-04T21:20:21.494372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_RECONSIDERATION.md": {
+      "hash": "424ab0c50cff321f",
+      "first_seen": "2026-03-04T21:20:21.494372",
+      "last_modified": "2026-03-04T21:20:21.494372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_SET_ASIDE_DEFAULT.md": {
+      "hash": "dbe287636b27b5c7",
+      "first_seen": "2026-03-04T21:20:21.494372",
+      "last_modified": "2026-03-04T21:20:21.495372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_SUPERVISED_EXCHANGE.md": {
+      "hash": "89daa572e9b6730d",
+      "first_seen": "2026-03-04T21:20:21.495372",
+      "last_modified": "2026-03-04T21:20:21.495372",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_TERMINATE_PPO.md": {
+      "hash": "1d2ef9bf0ed9da60",
+      "first_seen": "2026-03-04T21:20:21.496375",
+      "last_modified": "2026-03-04T21:20:21.496375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_TO_CONSOLIDATE.md": {
+      "hash": "7f0bcfc615bb0908",
+      "first_seen": "2026-03-04T21:20:21.497374",
+      "last_modified": "2026-03-04T21:20:21.497374",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_UCCJEA_EMERGENCY_JURISDICTION.md": {
+      "hash": "038961381d4f6ee2",
+      "first_seen": "2026-03-04T21:20:21.497374",
+      "last_modified": "2026-03-04T21:20:21.497374",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\MOTION_WRIT_MANDAMUS.md": {
+      "hash": "9dd22fb41ce602ef",
+      "first_seen": "2026-03-04T21:20:21.497374",
+      "last_modified": "2026-03-04T21:20:21.497374",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FROM_THIS_IS_THE_ONE\\RESPONSE_SHOW_CAUSE_7.md": {
+      "hash": "203855644216ec0f",
+      "first_seen": "2026-03-04T21:20:21.498375",
+      "last_modified": "2026-03-04T21:20:21.498375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\emergency_motion_packet.md": {
+      "hash": "92be8b521b2c37db",
+      "first_seen": "2026-03-04T21:20:21.498375",
+      "last_modified": "2026-03-04T21:20:21.498375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\filing_instructions_14th.md": {
+      "hash": "abac49f543433680",
+      "first_seen": "2026-03-04T21:20:21.499376",
+      "last_modified": "2026-03-04T21:20:21.499376",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\motion_contempt.md": {
+      "hash": "890b482a549c06a8",
+      "first_seen": "2026-03-04T21:20:21.499376",
+      "last_modified": "2026-03-04T21:20:21.499376",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\motion_disqualify_mcneill.md": {
+      "hash": "c521db8cb5fd3ca5",
+      "first_seen": "2026-03-04T21:20:21.499376",
+      "last_modified": "2026-03-04T21:20:21.499376",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\motion_modify_child_support.md": {
+      "hash": "597f16406b4e241f",
+      "first_seen": "2026-03-04T21:20:21.500375",
+      "last_modified": "2026-03-04T21:20:21.500375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\motion_modify_custody.md": {
+      "hash": "a9abd0a990fd7b07",
+      "first_seen": "2026-03-04T21:20:21.500375",
+      "last_modified": "2026-03-04T21:20:21.500375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\motion_restore_parenting_time.md": {
+      "hash": "e5c9605d4a930f3f",
+      "first_seen": "2026-03-04T21:20:21.500375",
+      "last_modified": "2026-03-04T21:20:21.500375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\motion_set_aside_orders.md": {
+      "hash": "da76f7998eb8410f",
+      "first_seen": "2026-03-04T21:20:21.500375",
+      "last_modified": "2026-03-04T21:20:21.500375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\JUDICIAL_PACKET\\README_START_HERE.md": {
+      "hash": "b40c4f101ff0d2fb",
+      "first_seen": "2026-03-04T21:20:21.501375",
+      "last_modified": "2026-03-04T21:20:21.501375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\JUDICIAL_PACKET_R2\\README_NEXT_STEPS.md": {
+      "hash": "2225c020e53d5f4c",
+      "first_seen": "2026-03-04T21:20:21.501375",
+      "last_modified": "2026-03-04T21:20:21.501375",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\PROBATE_STACK\\01_PROBATE_VIABILITY_ASSESSMENT.md": {
+      "hash": "877c71bf2b9d2390",
+      "first_seen": "2026-03-04T21:20:21.502376",
+      "last_modified": "2026-03-04T21:20:21.502376",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\corporate_disclosure.md": {
+      "hash": "9789b91639456c2b",
+      "first_seen": "2026-03-04T21:20:21.503104",
+      "last_modified": "2026-03-04T21:20:21.503104",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\EVIDENCE_CATALOG.md": {
+      "hash": "2458554ece642167",
+      "first_seen": "2026-03-04T21:20:21.503104",
+      "last_modified": "2026-03-04T21:20:21.503104",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\exhibit_list.md": {
+      "hash": "e4d0f340d1c81d60",
+      "first_seen": "2026-03-04T21:20:21.503104",
+      "last_modified": "2026-03-04T21:20:21.503104",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\fee_waiver_motion.md": {
+      "hash": "0ebc4e1bb4f9ca41",
+      "first_seen": "2026-03-04T21:20:21.503104",
+      "last_modified": "2026-03-04T21:20:21.503104",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\proof_of_service.md": {
+      "hash": "bfc9c429de434fe4",
+      "first_seen": "2026-03-04T21:20:21.510244",
+      "last_modified": "2026-03-04T21:20:21.510244",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\shady_oaks_damages_schedule.md": {
+      "hash": "c1d6096cce787003",
+      "first_seen": "2026-03-04T21:20:21.525785",
+      "last_modified": "2026-03-04T21:20:21.525785",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\shady_oaks_evidence_map.md": {
+      "hash": "2919e3e0cce226ba",
+      "first_seen": "2026-03-04T21:20:21.525785",
+      "last_modified": "2026-03-04T21:20:21.525785",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\shady_oaks_filing_instructions.md": {
+      "hash": "1a4e2a7a0e832b14",
+      "first_seen": "2026-03-04T21:20:21.551991",
+      "last_modified": "2026-03-04T21:20:21.551991",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\shady_oaks_mega_complaint.md": {
+      "hash": "2e933cb50ba421b2",
+      "first_seen": "2026-03-04T21:20:21.551991",
+      "last_modified": "2026-03-04T21:20:21.551991",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\summons_aaron_cox.md": {
+      "hash": "739b48bcab788177",
+      "first_seen": "2026-03-04T21:20:21.552994",
+      "last_modified": "2026-03-04T21:20:21.552994",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\summons_alden_global.md": {
+      "hash": "e1147d2b290442b1",
+      "first_seen": "2026-03-04T21:20:21.552994",
+      "last_modified": "2026-03-04T21:20:21.552994",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\summons_doe_park_managers.md": {
+      "hash": "efb06145e65a3e78",
+      "first_seen": "2026-03-04T21:20:21.552994",
+      "last_modified": "2026-03-04T21:20:21.552994",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\summons_henry_brandel.md": {
+      "hash": "e2b0eaaf9464424d",
+      "first_seen": "2026-03-04T21:20:21.553992",
+      "last_modified": "2026-03-04T21:20:21.553992",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\summons_homes_of_america.md": {
+      "hash": "93d5d86bc7ef9ae0",
+      "first_seen": "2026-03-04T21:20:21.553992",
+      "last_modified": "2026-03-04T21:20:21.553992",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\summons_jeremy_brown.md": {
+      "hash": "006f410ded2c6452",
+      "first_seen": "2026-03-04T21:20:21.553992",
+      "last_modified": "2026-03-04T21:20:21.553992",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\summons_partridge_equity.md": {
+      "hash": "15025c8ac334fa1b",
+      "first_seen": "2026-03-04T21:20:21.553992",
+      "last_modified": "2026-03-04T21:20:21.553992",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\summons_shady_oaks_mhp.md": {
+      "hash": "b728e8dd611ed666",
+      "first_seen": "2026-03-04T21:20:21.554991",
+      "last_modified": "2026-03-04T21:20:21.554991",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\summons_shady_oaks_park.md": {
+      "hash": "9ccd7edca74c20b5",
+      "first_seen": "2026-03-04T21:20:21.554991",
+      "last_modified": "2026-03-04T21:20:21.554991",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\verification.md": {
+      "hash": "ea62e1ad7d06a6f7",
+      "first_seen": "2026-03-04T21:20:21.554991",
+      "last_modified": "2026-03-04T21:20:21.554991",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS_EXPANDED_STACK\\01_COMPLAINT_EXPANDED.md": {
+      "hash": "136ff6abc38e23a4",
+      "first_seen": "2026-03-04T21:20:21.554991",
+      "last_modified": "2026-03-04T21:20:21.554991",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS_EXPANDED_STACK\\02_STATEMENT_OF_FACTS.md": {
+      "hash": "d36908f29b39654a",
+      "first_seen": "2026-03-04T21:20:21.556019",
+      "last_modified": "2026-03-04T21:20:21.556019",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS_EXPANDED_STACK\\03_LEGAL_THEORIES_AUTHORITY.md": {
+      "hash": "1e368747d8ac28e1",
+      "first_seen": "2026-03-04T21:20:21.556019",
+      "last_modified": "2026-03-04T21:20:21.556019",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS_EXPANDED_STACK\\04_EVIDENCE_INVENTORY.md": {
+      "hash": "9f31db8c856a9e24",
+      "first_seen": "2026-03-04T21:20:21.556528",
+      "last_modified": "2026-03-04T21:20:21.556528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS_EXPANDED_STACK\\05_DAMAGES_CALCULATION.md": {
+      "hash": "1ed1cd0035fc6fd0",
+      "first_seen": "2026-03-04T21:20:21.556528",
+      "last_modified": "2026-03-04T21:20:21.556528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS_EXPANDED_STACK\\06_ADVERSARY_REBUTTAL_FRAMEWORK.md": {
+      "hash": "e5bede3c6573e1eb",
+      "first_seen": "2026-03-04T21:20:21.556528",
+      "last_modified": "2026-03-04T21:20:21.556528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS_EXPANDED_STACK\\07_DISCOVERY_PLAN.md": {
+      "hash": "2f5b231bcb782a4d",
+      "first_seen": "2026-03-04T21:20:21.557530",
+      "last_modified": "2026-03-04T21:20:21.557530",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS_EXPANDED_STACK\\08_FILING_INSTRUCTIONS.md": {
+      "hash": "28f40f04cc6c956a",
+      "first_seen": "2026-03-04T21:20:21.557530",
+      "last_modified": "2026-03-04T21:20:21.557530",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS_EXPANDED_STACK\\09_FILING_READINESS_SCORE.md": {
+      "hash": "220b7632e4ef9082",
+      "first_seen": "2026-03-04T21:20:21.557530",
+      "last_modified": "2026-03-04T21:20:21.557530",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT\\exhibit_list.md": {
+      "hash": "42af134f4a26d79d",
+      "first_seen": "2026-03-04T21:20:21.557530",
+      "last_modified": "2026-03-04T21:20:21.557530",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT\\fee_waiver_motion.md": {
+      "hash": "753e0d809e753bbf",
+      "first_seen": "2026-03-04T21:20:21.558530",
+      "last_modified": "2026-03-04T21:20:21.558530",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT\\proof_of_service.md": {
+      "hash": "2ce77b0d3e346053",
+      "first_seen": "2026-03-04T21:20:21.558530",
+      "last_modified": "2026-03-04T21:20:21.558530",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT\\STRENGTHENING_REPORT.md": {
+      "hash": "56636cdf85c34a8b",
+      "first_seen": "2026-03-04T21:20:21.558530",
+      "last_modified": "2026-03-04T21:20:21.558530",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT\\summons.md": {
+      "hash": "df42060de8717c86",
+      "first_seen": "2026-03-04T21:20:21.558530",
+      "last_modified": "2026-03-04T21:20:21.558530",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT\\verification.md": {
+      "hash": "88ca4f50cfe88785",
+      "first_seen": "2026-03-04T21:20:21.559533",
+      "last_modified": "2026-03-04T21:20:21.559533",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT\\watson_damages_schedule.md": {
+      "hash": "6ae438eec1071b83",
+      "first_seen": "2026-03-04T21:20:21.559533",
+      "last_modified": "2026-03-04T21:20:21.559533",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT\\watson_expanded_complaint.md": {
+      "hash": "8ccd3fa4a80168e4",
+      "first_seen": "2026-03-04T21:20:21.559533",
+      "last_modified": "2026-03-04T21:20:21.559533",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT\\watson_strengthened_counts.md": {
+      "hash": "9eff3aa7ca734188",
+      "first_seen": "2026-03-04T21:20:21.560531",
+      "last_modified": "2026-03-04T21:20:21.560531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT_STACK\\01_CIVIL_TORT_COMPLAINT_WATSON.md": {
+      "hash": "30c592ed7eccdc58",
+      "first_seen": "2026-03-04T21:20:21.560878",
+      "last_modified": "2026-03-04T21:20:21.560878",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT_STACK\\02_STATEMENT_OF_FACTS.md": {
+      "hash": "956bc0608c5dd591",
+      "first_seen": "2026-03-04T21:20:21.561530",
+      "last_modified": "2026-03-04T21:20:21.561530",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT_STACK\\03_LEGAL_THEORIES_AUTHORITY.md": {
+      "hash": "baf7e8adcd63419b",
+      "first_seen": "2026-03-04T21:20:21.561530",
+      "last_modified": "2026-03-04T21:20:21.561530",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT_STACK\\04_EVIDENCE_INVENTORY.md": {
+      "hash": "42dc25b954f28bad",
+      "first_seen": "2026-03-04T21:20:21.562531",
+      "last_modified": "2026-03-04T21:20:21.562531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT_STACK\\05_DAMAGES_CALCULATION.md": {
+      "hash": "23cfff6fee52dfd8",
+      "first_seen": "2026-03-04T21:20:21.562531",
+      "last_modified": "2026-03-04T21:20:21.562531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT_STACK\\06_ADVERSARY_REBUTTAL_FRAMEWORK.md": {
+      "hash": "f584779cf256c07b",
+      "first_seen": "2026-03-04T21:20:21.563531",
+      "last_modified": "2026-03-04T21:20:21.563531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT_STACK\\07_DISCOVERY_PLAN.md": {
+      "hash": "28033390430cc315",
+      "first_seen": "2026-03-04T21:20:21.563531",
+      "last_modified": "2026-03-04T21:20:21.563531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT_STACK\\08_FILING_INSTRUCTIONS.md": {
+      "hash": "66e8c5bfe971fae8",
+      "first_seen": "2026-03-04T21:20:21.564530",
+      "last_modified": "2026-03-04T21:20:21.564530",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\WATSON_TORT_STACK\\09_FILING_READINESS_SCORE.md": {
+      "hash": "0dcaf8049962ac6a",
+      "first_seen": "2026-03-04T21:20:21.564530",
+      "last_modified": "2026-03-04T21:20:21.565531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\AFFIDAVIT_ANDREW_PIGORS.md": {
+      "hash": "9e4df36d6c2e49f6",
+      "first_seen": "2026-03-04T21:20:21.568529",
+      "last_modified": "2026-03-04T21:20:21.568529",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\BRIEF_IN_SUPPORT.md": {
+      "hash": "8a9e4c2f08aeaa2c",
+      "first_seen": "2026-03-04T21:20:21.569531",
+      "last_modified": "2026-03-04T21:20:21.569531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\CC_379_MOTION_MODIFY_TERMINATE_PPO.md": {
+      "hash": "420f2084b0cbcaeb",
+      "first_seen": "2026-03-04T21:20:21.569531",
+      "last_modified": "2026-03-04T21:20:21.569531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\CC_381_NOTICE_HEARING.md": {
+      "hash": "a18340cd261b09e0",
+      "first_seen": "2026-03-04T21:20:21.569531",
+      "last_modified": "2026-03-04T21:20:21.569531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\CERTIFICATE_OF_SERVICE.md": {
+      "hash": "86e1db675324a9a8",
+      "first_seen": "2026-03-04T21:20:21.569531",
+      "last_modified": "2026-03-04T21:20:21.569531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\CERTIFICATE_OF_SERVICE_MCR2107.md": {
+      "hash": "2f127cc3841d92f1",
+      "first_seen": "2026-03-04T21:20:21.570529",
+      "last_modified": "2026-03-04T21:20:21.570529",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\CONFIDENTIALITY_ROUTING.md": {
+      "hash": "a40b7e4a2e1b06ee",
+      "first_seen": "2026-03-04T21:20:21.570529",
+      "last_modified": "2026-03-04T21:20:21.570529",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\COVER_PAGE.md": {
+      "hash": "e67e32e1bf129929",
+      "first_seen": "2026-03-04T21:20:21.570529",
+      "last_modified": "2026-03-04T21:20:21.570529",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\DISQUAL_PROCEDURE_SPINE.md": {
+      "hash": "08d39a99a3d831c8",
+      "first_seen": "2026-03-04T21:20:21.570529",
+      "last_modified": "2026-03-04T21:20:21.570529",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\EMERGENCY_FACTS_ONLY.md": {
+      "hash": "6b1d4b817d40fdc0",
+      "first_seen": "2026-03-04T21:20:21.571528",
+      "last_modified": "2026-03-04T21:20:21.571528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\EXHIBIT_INDEX_BATES.md": {
+      "hash": "70028711b2cba89a",
+      "first_seen": "2026-03-04T21:20:21.571528",
+      "last_modified": "2026-03-04T21:20:21.571528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\EXHIBIT_STACK.md": {
+      "hash": "91ed4c73cb70bf1a",
+      "first_seen": "2026-03-04T21:20:21.571528",
+      "last_modified": "2026-03-04T21:20:21.571528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\FOC_65_VERIFIED_STATEMENT.md": {
+      "hash": "35ce9859c2488745",
+      "first_seen": "2026-03-04T21:20:21.571528",
+      "last_modified": "2026-03-04T21:20:21.571528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\FOC_89_OBJECTION.md": {
+      "hash": "5e1aa815e3697149",
+      "first_seen": "2026-03-04T21:20:21.571528",
+      "last_modified": "2026-03-04T21:20:21.571528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\FOC_ACT_AUTHORITY_REFERENCE.md": {
+      "hash": "a184f3022adfabd6",
+      "first_seen": "2026-03-04T21:20:21.572528",
+      "last_modified": "2026-03-04T21:20:21.572528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\JURISDICTION_DUE_PROCESS_DEFECT_MEMO.md": {
+      "hash": "fd36a3e376f5d176",
+      "first_seen": "2026-03-04T21:20:21.572528",
+      "last_modified": "2026-03-04T21:20:21.572528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MC_20_FEE_WAIVER.md": {
+      "hash": "9da2831f33edfa2f",
+      "first_seen": "2026-03-04T21:20:21.572528",
+      "last_modified": "2026-03-04T21:20:21.572528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MC_21_PROOF_OF_SERVICE.md": {
+      "hash": "f1e4de0d46c09608",
+      "first_seen": "2026-03-04T21:20:21.572528",
+      "last_modified": "2026-03-04T21:20:21.572528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MDHHS_CPS_FRAMEWORK.md": {
+      "hash": "ceaee77bba552ddd",
+      "first_seen": "2026-03-04T21:20:21.572528",
+      "last_modified": "2026-03-04T21:20:21.572528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MOTION_DISQUALIFICATION.md": {
+      "hash": "43eb1bf206f844b9",
+      "first_seen": "2026-03-04T21:20:21.573528",
+      "last_modified": "2026-03-04T21:20:21.573528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MOTION_FOR_CONTEMPT.md": {
+      "hash": "6a39c4625104a1ef",
+      "first_seen": "2026-03-04T21:20:21.573528",
+      "last_modified": "2026-03-04T21:20:21.573528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MOTION_SET_ASIDE_VOID_ORDERS.md": {
+      "hash": "5d0db49db9dd9bf8",
+      "first_seen": "2026-03-04T21:20:21.573528",
+      "last_modified": "2026-03-04T21:20:21.573528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MOTION_TERMINATE_PPO.md": {
+      "hash": "b37fab4205e7df41",
+      "first_seen": "2026-03-04T21:20:21.573528",
+      "last_modified": "2026-03-04T21:20:21.573528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\PPO_TIMELINE_BLOCK.md": {
+      "hash": "563ffeead4a31e2b",
+      "first_seen": "2026-03-04T21:20:21.574528",
+      "last_modified": "2026-03-04T21:20:21.574528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\PROOFREAD_REPORT.md": {
+      "hash": "68ed3ecbb1e0559e",
+      "first_seen": "2026-03-04T21:20:21.574528",
+      "last_modified": "2026-03-04T21:20:21.574528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\PROPOSED_ALTERNATIVE_ORDER.md": {
+      "hash": "4a67ce5abd4b8026",
+      "first_seen": "2026-03-04T21:20:21.574528",
+      "last_modified": "2026-03-04T21:20:21.574528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\PROPOSED_ORDER.md": {
+      "hash": "37ef13fce2e662a5",
+      "first_seen": "2026-03-04T21:20:21.574528",
+      "last_modified": "2026-03-04T21:20:21.574528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\PROPOSED_ORDER_NEW_JUDGE.md": {
+      "hash": "c0fa282a50396cfb",
+      "first_seen": "2026-03-04T21:20:21.574528",
+      "last_modified": "2026-03-04T21:20:21.574528",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\PROPOSED_ORDER_VACATE_PPO.md": {
+      "hash": "2e0a41388f14c708",
+      "first_seen": "2026-03-04T21:20:21.575529",
+      "last_modified": "2026-03-04T21:20:21.575529",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\REQUEST_FOR_EXPEDITED_HEARING.md": {
+      "hash": "ce8b734ccf27ef9e",
+      "first_seen": "2026-03-04T21:20:21.575529",
+      "last_modified": "2026-03-04T21:20:21.575529",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\AFFIDAVIT_PIGORS_14TH_CIRCUIT.md": {
+      "hash": "327d6f701028d076",
+      "first_seen": "2026-03-04T21:20:21.576532",
+      "last_modified": "2026-03-04T21:20:21.576532",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\BAR_COMPLAINT_JENNIFER_BARNES.md": {
+      "hash": "7cabbb4db6b58cda",
+      "first_seen": "2026-03-04T21:20:21.576532",
+      "last_modified": "2026-03-04T21:20:21.576532",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\CIVIL_COMPLAINT_WATSON_FAMILY.md": {
+      "hash": "0aa2acaf61224e70",
+      "first_seen": "2026-03-04T21:20:21.576532",
+      "last_modified": "2026-03-04T21:20:21.576532",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\CRIMINAL_REFERRAL_PACKET.md": {
+      "hash": "2d816a573134da0a",
+      "first_seen": "2026-03-04T21:20:21.576532",
+      "last_modified": "2026-03-04T21:20:21.576532",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\DEADLINE_TRACKER.md": {
+      "hash": "e6a93080037da755",
+      "first_seen": "2026-03-04T21:20:21.577533",
+      "last_modified": "2026-03-04T21:20:21.577533",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md": {
+      "hash": "ba4cda638402ac7b",
+      "first_seen": "2026-03-04T21:20:21.577533",
+      "last_modified": "2026-03-04T21:20:21.577533",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\EXHIBIT_AUTHENTICATION_TEMPLATES.md": {
+      "hash": "db46356c4940f922",
+      "first_seen": "2026-03-04T21:20:21.577533",
+      "last_modified": "2026-03-04T21:20:21.577533",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\EXHIBIT_PARENTAL_ALIENATION_ANALYSIS.md": {
+      "hash": "7eaa734008235e57",
+      "first_seen": "2026-03-04T21:20:21.577533",
+      "last_modified": "2026-03-04T21:20:21.577533",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\FILING_BUNDLE_CHECKLIST.md": {
+      "hash": "03856ffc37f3da93",
+      "first_seen": "2026-03-04T21:20:21.578533",
+      "last_modified": "2026-03-04T21:20:21.578533",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\FINAL_FILING_INSTRUCTIONS.md": {
+      "hash": "f79603f174d8f622",
+      "first_seen": "2026-03-04T21:20:21.578533",
+      "last_modified": "2026-03-04T21:20:21.578533",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\FOIA_REQUEST_PACKET.md": {
+      "hash": "830778176d08b396",
+      "first_seen": "2026-03-04T21:20:21.578533",
+      "last_modified": "2026-03-04T21:20:21.578533",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\IN_FORMA_PAUPERIS_AFFIDAVIT.md": {
+      "hash": "fa078f9695c9d3e1",
+      "first_seen": "2026-03-04T21:20:21.579532",
+      "last_modified": "2026-03-04T21:20:21.579532",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\LITIGATION_STRATEGY_MEMO.md": {
+      "hash": "8368f764f2b15679",
+      "first_seen": "2026-03-04T21:20:21.580531",
+      "last_modified": "2026-03-04T21:20:21.580531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MASTER_CHRONOLOGICAL_TIMELINE.md": {
+      "hash": "96d7dc98a15eec12",
+      "first_seen": "2026-03-04T21:20:21.580531",
+      "last_modified": "2026-03-04T21:20:21.580531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MASTER_EXHIBIT_INDEX.md": {
+      "hash": "2f72aa26b11045c1",
+      "first_seen": "2026-03-04T21:20:21.581531",
+      "last_modified": "2026-03-04T21:20:21.581531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MASTER_FILING_SEQUENCE.md": {
+      "hash": "369e98ac3d2a61b2",
+      "first_seen": "2026-03-04T21:20:21.581531",
+      "last_modified": "2026-03-04T21:20:21.581531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_APPOINT_GAL.md": {
+      "hash": "1288d7c42fb05a76",
+      "first_seen": "2026-03-04T21:20:21.581531",
+      "last_modified": "2026-03-04T21:20:21.581531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_CHANGE_OF_VENUE.md": {
+      "hash": "de9ec908f8b0b8f4",
+      "first_seen": "2026-03-04T21:20:21.581531",
+      "last_modified": "2026-03-04T21:20:21.581531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_CHILD_SUPPORT_MODIFICATION.md": {
+      "hash": "6d7114f3b53ef4b4",
+      "first_seen": "2026-03-04T21:20:21.582531",
+      "last_modified": "2026-03-04T21:20:21.582531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_COMPEL_DISCOVERY.md": {
+      "hash": "89726719088f5648",
+      "first_seen": "2026-03-04T21:20:21.582531",
+      "last_modified": "2026-03-04T21:20:21.582531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_CONTEMPT_SHOW_CAUSE.md": {
+      "hash": "2d99f1c654b00288",
+      "first_seen": "2026-03-04T21:20:21.582531",
+      "last_modified": "2026-03-04T21:20:21.582531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_DISQUALIFY_JUDGE_MCNEILL.md": {
+      "hash": "24cee379ee55c62e",
+      "first_seen": "2026-03-04T21:20:21.582531",
+      "last_modified": "2026-03-04T21:20:21.582531",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_EMERGENCY_CUSTODY.md": {
+      "hash": "d7ccf6988bcb2b4a",
+      "first_seen": "2026-03-04T21:20:21.585072",
+      "last_modified": "2026-03-04T21:20:21.585072",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_FOR_SANCTIONS.md": {
+      "hash": "79589a07900d2e88",
+      "first_seen": "2026-03-04T21:20:21.585072",
+      "last_modified": "2026-03-04T21:20:21.585072",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_RECONSIDERATION.md": {
+      "hash": "a01a744b423cbb59",
+      "first_seen": "2026-03-04T21:20:21.585072",
+      "last_modified": "2026-03-04T21:20:21.585072",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_SET_ASIDE_DEFAULT.md": {
+      "hash": "ee7c236df5bc1776",
+      "first_seen": "2026-03-04T21:20:21.586072",
+      "last_modified": "2026-03-04T21:20:21.586072",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_SUPERVISED_EXCHANGE.md": {
+      "hash": "066b414fdeb938d8",
+      "first_seen": "2026-03-04T21:20:21.586072",
+      "last_modified": "2026-03-04T21:20:21.586072",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_TERMINATE_PPO.md": {
+      "hash": "dcba5c48da940c1b",
+      "first_seen": "2026-03-04T21:20:21.586072",
+      "last_modified": "2026-03-04T21:20:21.586072",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_TO_CONSOLIDATE.md": {
+      "hash": "7f0bcfc615bb0908",
+      "first_seen": "2026-03-04T21:20:21.587070",
+      "last_modified": "2026-03-04T21:20:21.587070",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_UCCJEA_EMERGENCY_JURISDICTION.md": {
+      "hash": "038961381d4f6ee2",
+      "first_seen": "2026-03-04T21:20:21.587070",
+      "last_modified": "2026-03-04T21:20:21.587070",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MOTION_WRIT_MANDAMUS.md": {
+      "hash": "d984142560340ff1",
+      "first_seen": "2026-03-04T21:20:21.587070",
+      "last_modified": "2026-03-04T21:20:21.587070",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\PROOF_OF_SERVICE_TEMPLATE.md": {
+      "hash": "84fe6fede52e8561",
+      "first_seen": "2026-03-04T21:20:21.587070",
+      "last_modified": "2026-03-04T21:20:21.587070",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\RESPONSE_SHOW_CAUSE_7.md": {
+      "hash": "f19a9fb50b2aceb6",
+      "first_seen": "2026-03-04T21:20:21.588069",
+      "last_modified": "2026-03-04T21:20:21.588069",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\DISQUALIFY_PACKAGE\\BRIEF_IN_SUPPORT.md": {
+      "hash": "d6850078f61b8ccc",
+      "first_seen": "2026-03-04T21:20:21.595070",
+      "last_modified": "2026-03-04T21:20:21.596069",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\DISQUALIFY_PACKAGE\\CERTIFICATE_OF_SERVICE.md": {
+      "hash": "f3de0b9975483cda",
+      "first_seen": "2026-03-04T21:20:21.596069",
+      "last_modified": "2026-03-04T21:20:21.596069",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\DISQUALIFY_PACKAGE\\EXHIBIT_LIST.md": {
+      "hash": "516372accb8c1816",
+      "first_seen": "2026-03-04T21:20:21.597070",
+      "last_modified": "2026-03-04T21:20:21.597070",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\DISQUALIFY_PACKAGE\\FILING_CHECKLIST.md": {
+      "hash": "a7ec04dcba15c0b8",
+      "first_seen": "2026-03-04T21:20:21.597070",
+      "last_modified": "2026-03-04T21:20:21.597070",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\DISQUALIFY_PACKAGE\\MOTION_TO_DISQUALIFY_FINAL.md": {
+      "hash": "fb2428d809cf8ae0",
+      "first_seen": "2026-03-04T21:20:21.597070",
+      "last_modified": "2026-03-04T21:20:21.597070",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\DISQUALIFY_PACKAGE\\PROPOSED_ORDER.md": {
+      "hash": "dc1fae944300fbce",
+      "first_seen": "2026-03-04T21:20:21.597070",
+      "last_modified": "2026-03-04T21:20:21.597070",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\FULL_14TH_STACK\\DISQUALIFY_PACKAGE\\SERVICE_PACKET\\filing_instructions.md": {
+      "hash": "3dad34e653420b81",
+      "first_seen": "2026-03-04T21:20:21.598070",
+      "last_modified": "2026-03-04T21:20:21.598070",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\exhibits\\EX_B-1_Pigors_v_Watson_2024-001507-DC_Custody__02_Evidence__Documentary__SUPPLEMENTAL_JTC_COMPLAINT_EX_PARTE_VIOLATIONS.md": {
+      "hash": "79f9e2bf38a10ac6",
+      "first_seen": "2026-03-04T21:20:21.603071",
+      "last_modified": "2026-03-04T21:20:21.603071",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\exhibits\\EX_B-2_Pigors_v_Watson_2024-001507-DC_Custody__02_Evidence__Documentary__FORMAL_COMPLAINT_JUDICIAL_TENURE_COMMISSION.md": {
+      "hash": "2dcba16664fc6f7e",
+      "first_seen": "2026-03-04T21:20:21.604070",
+      "last_modified": "2026-03-04T21:20:21.604070",
+      "versions": 1
+    },
+    "02_TRIAL_14TH\\SHADY_OAKS\\exhibits\\EX_C_RedFlag_Ledger_Pigors_v_Watson_v2026-02-18.md": {
+      "hash": "6d65711c3958ed81",
+      "first_seen": "2026-03-04T21:20:21.604070",
+      "last_modified": "2026-03-04T21:20:21.604070",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\00_MASTER_BRIEF.md": {
+      "hash": "54f87dc184800389",
+      "first_seen": "2026-03-04T21:20:21.610070",
+      "last_modified": "2026-03-04T21:20:21.610070",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\05_READINESS_ASSESSMENT.md": {
+      "hash": "e46e17abf6921f46",
+      "first_seen": "2026-03-04T21:20:21.611070",
+      "last_modified": "2026-03-04T21:20:21.611070",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\06_COMPLIANCE_MATRIX.md": {
+      "hash": "0fd416619126cd1c",
+      "first_seen": "2026-03-04T21:20:21.611070",
+      "last_modified": "2026-03-04T21:20:21.611070",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\08_CONSTITUTIONAL_SECTIONS.md": {
+      "hash": "504b524c275aecfb",
+      "first_seen": "2026-03-04T21:20:21.611070",
+      "last_modified": "2026-03-04T21:20:21.611070",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\09_REPLY_TEMPLATES.md": {
+      "hash": "00316997f9410a9d",
+      "first_seen": "2026-03-04T21:20:21.611070",
+      "last_modified": "2026-03-04T21:20:21.611070",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\drafts\\05_USDC__FEDERAL_1983_COMPLAINT.md": {
+      "hash": "325d1244e31be8a8",
+      "first_seen": "2026-03-04T21:20:21.612071",
+      "last_modified": "2026-03-04T21:20:21.612071",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\drafts\\42usc1983__FILING_B4_42USC1983_FEDERAL_COMPLAINT.md": {
+      "hash": "9331f71afabe0ea9",
+      "first_seen": "2026-03-04T21:20:21.613071",
+      "last_modified": "2026-03-04T21:20:21.613071",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\drafts\\FEDERAL_1983_COMPLAINT.md": {
+      "hash": "dc12dbd9db1e75ff",
+      "first_seen": "2026-03-04T21:20:21.613071",
+      "last_modified": "2026-03-04T21:20:21.613071",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\drafts\\FEDERAL_1983_COMPLAINT_1.md": {
+      "hash": "3eab1733e45b58c4",
+      "first_seen": "2026-03-04T21:20:21.614071",
+      "last_modified": "2026-03-04T21:20:21.614071",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\drafts\\FEDERAL_1983_COMPLAINT_2.md": {
+      "hash": "9e85d7ff482cf5f9",
+      "first_seen": "2026-03-04T21:20:21.614071",
+      "last_modified": "2026-03-04T21:20:21.614071",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\drafts\\FEDERAL_1983_COMPLAINT_FINAL.md": {
+      "hash": "7931be6db9b30949",
+      "first_seen": "2026-03-04T21:20:21.614071",
+      "last_modified": "2026-03-04T21:20:21.614071",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\drafts\\FILING_B4_42USC1983_FEDERAL_COMPLAINT.md": {
+      "hash": "9331f71afabe0ea9",
+      "first_seen": "2026-03-04T21:20:21.615070",
+      "last_modified": "2026-03-04T21:20:21.615070",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\drafts\\PACKET_05_FEDERAL_1983_COMPLAINT.md": {
+      "hash": "68c98daf2692d5c0",
+      "first_seen": "2026-03-04T21:20:21.615070",
+      "last_modified": "2026-03-04T21:20:21.615070",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\drafts\\PKG08_CONTEMPT_MOTION_FINALIZED.md": {
+      "hash": "4e8922e8d224e774",
+      "first_seen": "2026-03-04T21:20:21.615070",
+      "last_modified": "2026-03-04T21:20:21.615070",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\EDMI_STACK\\01_EDMI_VENUE_ANALYSIS.md": {
+      "hash": "611276c206910a9d",
+      "first_seen": "2026-03-04T21:20:21.616554",
+      "last_modified": "2026-03-04T21:20:21.616554",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FAIR_HOUSING_STACK\\01_HUD_COMPLAINT.md": {
+      "hash": "b86e5646cb96c5b9",
+      "first_seen": "2026-03-04T21:20:21.616554",
+      "last_modified": "2026-03-04T21:20:21.616554",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FAIR_HOUSING_STACK\\02_FHA_CIVIL_ACTION.md": {
+      "hash": "08990bafd7e2b59a",
+      "first_seen": "2026-03-04T21:20:21.617557",
+      "last_modified": "2026-03-04T21:20:21.617557",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md": {
+      "hash": "6f24cf1de0161846",
+      "first_seen": "2026-03-04T21:20:21.636815",
+      "last_modified": "2026-03-04T21:20:21.636815",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FAIR_HOUSING_STACK\\04_FILING_INSTRUCTIONS.md": {
+      "hash": "2c8402d679e4e75b",
+      "first_seen": "2026-03-04T21:20:21.637818",
+      "last_modified": "2026-03-04T21:20:21.637818",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FAIR_HOUSING_STACK\\05_FILING_READINESS_SCORE.md": {
+      "hash": "2a9c9ff1e36176fa",
+      "first_seen": "2026-03-04T21:20:21.638818",
+      "last_modified": "2026-03-04T21:20:21.638818",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FINAL_1983_STACK\\01_SECTION_1983_COMPLAINT_FRAMEWORK.md": {
+      "hash": "3690135e79b7ea21",
+      "first_seen": "2026-03-04T21:20:21.638818",
+      "last_modified": "2026-03-04T21:20:21.638818",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FINAL_1983_STACK\\02_IMMUNITY_ANALYSIS.md": {
+      "hash": "0134b384858a0df3",
+      "first_seen": "2026-03-04T21:20:21.639818",
+      "last_modified": "2026-03-04T21:20:21.639818",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FINAL_1983_STACK\\03_EVIDENCE_COMPILATION.md": {
+      "hash": "91ddcdf1a6fe3435",
+      "first_seen": "2026-03-04T21:20:21.639818",
+      "last_modified": "2026-03-04T21:20:21.639818",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FINAL_1983_STACK\\04_FILING_INSTRUCTIONS.md": {
+      "hash": "6e6abf49e2a0d681",
+      "first_seen": "2026-03-04T21:20:21.639818",
+      "last_modified": "2026-03-04T21:20:21.639818",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FINAL_1983_STACK\\05_FILING_READINESS_SCORE.md": {
+      "hash": "83c7d6abc3e4aa19",
+      "first_seen": "2026-03-04T21:20:21.640820",
+      "last_modified": "2026-03-04T21:20:21.640820",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FROM_THIS_IS_THE_ONE\\AFFIDAVIT_PIGORS_USDC.md": {
+      "hash": "1eaf4ebc8ba258cf",
+      "first_seen": "2026-03-04T21:20:21.640820",
+      "last_modified": "2026-03-04T21:20:21.640820",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FROM_THIS_IS_THE_ONE\\FEDERAL_1983_COMPLAINT.md": {
+      "hash": "7308c2173fccb2a8",
+      "first_seen": "2026-03-04T21:20:21.641819",
+      "last_modified": "2026-03-04T21:20:21.641819",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\FROM_THIS_IS_THE_ONE\\FILING_BUNDLE_CHECKLIST.md": {
+      "hash": "de54101cafd9758d",
+      "first_seen": "2026-03-04T21:20:21.641819",
+      "last_modified": "2026-03-04T21:20:21.641819",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\SIXTH_CIRCUIT_STACK\\01_SIXTH_CIRCUIT_APPEAL_FRAMEWORK.md": {
+      "hash": "e0117d8ed6ef5be9",
+      "first_seen": "2026-03-04T21:20:21.641819",
+      "last_modified": "2026-03-04T21:20:21.641819",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\SIXTH_CIRCUIT_STACK\\02_SIXTH_CIRCUIT_INSTRUCTIONS.md": {
+      "hash": "48da4875be06508a",
+      "first_seen": "2026-03-04T21:20:21.642818",
+      "last_modified": "2026-03-04T21:20:21.642818",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\01_COMPLAINT_1983.md": {
+      "hash": "8dce5aaa9239a115",
+      "first_seen": "2026-03-04T21:20:21.642818",
+      "last_modified": "2026-03-04T21:20:21.642818",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\02_IMMUNITY_DEFENSE_MATRIX.md": {
+      "hash": "4437a888a3d8a38d",
+      "first_seen": "2026-03-04T21:20:21.663694",
+      "last_modified": "2026-03-04T21:20:21.663694",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\03_IFP_APPLICATION.md": {
+      "hash": "92ffa975c9fced00",
+      "first_seen": "2026-03-04T21:20:21.663694",
+      "last_modified": "2026-03-04T21:20:21.664696",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\04_EVIDENCE_COMPILATION.md": {
+      "hash": "1ab2587c2f6eb335",
+      "first_seen": "2026-03-04T21:20:21.664696",
+      "last_modified": "2026-03-04T21:20:21.664696",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\05_DISCOVERY_PLAN.md": {
+      "hash": "dd56ebe560396ae2",
+      "first_seen": "2026-03-04T21:20:21.682374",
+      "last_modified": "2026-03-04T21:20:21.682374",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\06_SERVICE_PLAN.md": {
+      "hash": "7e79fb61ee4ae3ec",
+      "first_seen": "2026-03-04T21:20:21.701593",
+      "last_modified": "2026-03-04T21:20:21.701593",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\07_FILING_INSTRUCTIONS.md": {
+      "hash": "de108e23af75a6bb",
+      "first_seen": "2026-03-04T21:20:21.701593",
+      "last_modified": "2026-03-04T21:20:21.701593",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\08_FILING_READINESS_SCORE.md": {
+      "hash": "10a3596c0d5d1c57",
+      "first_seen": "2026-03-04T21:20:21.701593",
+      "last_modified": "2026-03-04T21:20:21.701593",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\exhibit_list.md": {
+      "hash": "4f145903d0419486",
+      "first_seen": "2026-03-04T21:20:21.734156",
+      "last_modified": "2026-03-04T21:20:21.734156",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\ifp_application.md": {
+      "hash": "7b7eed722a7c56dc",
+      "first_seen": "2026-03-04T21:20:21.734664",
+      "last_modified": "2026-03-04T21:20:21.734664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\IFP_APPLICATION_FINAL.md": {
+      "hash": "7d739ec1199c52c4",
+      "first_seen": "2026-03-04T21:20:21.734664",
+      "last_modified": "2026-03-04T21:20:21.734664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\js44_civil_cover_sheet.md": {
+      "hash": "0e063eeff7c839a7",
+      "first_seen": "2026-03-04T21:20:21.734664",
+      "last_modified": "2026-03-04T21:20:21.734664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\summons_ao440.md": {
+      "hash": "bacde944d9b66b6c",
+      "first_seen": "2026-03-04T21:20:21.734664",
+      "last_modified": "2026-03-04T21:20:21.734664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\usm285_marshal_service.md": {
+      "hash": "44e2b5d7e51910c5",
+      "first_seen": "2026-03-04T21:20:21.735666",
+      "last_modified": "2026-03-04T21:20:21.735666",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\WDMI_FULL_STACK\\WDMI_FILING_CHECKLIST.md": {
+      "hash": "977c4ea2c3296959",
+      "first_seen": "2026-03-04T21:20:21.735666",
+      "last_modified": "2026-03-04T21:20:21.735666",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\AO_240_IFP_APPLICATION.md": {
+      "hash": "ca7d0d5a579b87a5",
+      "first_seen": "2026-03-04T21:20:21.736665",
+      "last_modified": "2026-03-04T21:20:21.736665",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\AO_42_COMPLAINT.md": {
+      "hash": "177d312a7adc5d8a",
+      "first_seen": "2026-03-04T21:20:21.736665",
+      "last_modified": "2026-03-04T21:20:21.736665",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\BRIEF_IN_SUPPORT_IFP.md": {
+      "hash": "1595bd133cdae830",
+      "first_seen": "2026-03-04T21:20:21.736665",
+      "last_modified": "2026-03-04T21:20:21.736665",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\COVER_PAGE.md": {
+      "hash": "9456547ecdbfd2bc",
+      "first_seen": "2026-03-04T21:20:21.736665",
+      "last_modified": "2026-03-04T21:20:21.736665",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\DOCTRINE_DEFENSE_MATRIX.md": {
+      "hash": "b5e1537f50aa6fd8",
+      "first_seen": "2026-03-04T21:20:21.737664",
+      "last_modified": "2026-03-04T21:20:21.737664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\EXHIBIT_INDEX_BATES.md": {
+      "hash": "12a7d64ba99252ce",
+      "first_seen": "2026-03-04T21:20:21.737939",
+      "last_modified": "2026-03-04T21:20:21.737939",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\EXHIBIT_STACK.md": {
+      "hash": "8b1ca4a844f4ff93",
+      "first_seen": "2026-03-04T21:20:21.737939",
+      "last_modified": "2026-03-04T21:20:21.737939",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\IMMUNITY_ABSTENTION_SCREENING.md": {
+      "hash": "9ad2674a91a0a483",
+      "first_seen": "2026-03-04T21:20:21.737939",
+      "last_modified": "2026-03-04T21:20:21.737939",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\IMMUNITY_SCREENING_MEMO.md": {
+      "hash": "9315542bbdbe52a9",
+      "first_seen": "2026-03-04T21:20:21.738664",
+      "last_modified": "2026-03-04T21:20:21.738664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\JS_44_CIVIL_COVER_SHEET.md": {
+      "hash": "ad769cf09e08ae60",
+      "first_seen": "2026-03-04T21:20:21.738664",
+      "last_modified": "2026-03-04T21:20:21.738664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\PROOFREAD_REPORT.md": {
+      "hash": "3d6661a19a668f09",
+      "first_seen": "2026-03-04T21:20:21.738664",
+      "last_modified": "2026-03-04T21:20:21.738664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\SUMMONS.md": {
+      "hash": "0b5c6e92839cceef",
+      "first_seen": "2026-03-04T21:20:21.738664",
+      "last_modified": "2026-03-04T21:20:21.738664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\AFFIDAVIT_PIGORS_USDC.md": {
+      "hash": "1eaf4ebc8ba258cf",
+      "first_seen": "2026-03-04T21:20:21.739664",
+      "last_modified": "2026-03-04T21:20:21.739664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\DEADLINE_TRACKER.md": {
+      "hash": "e6a93080037da755",
+      "first_seen": "2026-03-04T21:20:21.739664",
+      "last_modified": "2026-03-04T21:20:21.739664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\EXHIBIT_AUTHENTICATION_TEMPLATES.md": {
+      "hash": "db46356c4940f922",
+      "first_seen": "2026-03-04T21:20:21.739664",
+      "last_modified": "2026-03-04T21:20:21.739664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\FEDERAL_1983_COMPLAINT.md": {
+      "hash": "7308c2173fccb2a8",
+      "first_seen": "2026-03-04T21:20:21.739664",
+      "last_modified": "2026-03-04T21:20:21.739664",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\FILING_BUNDLE_CHECKLIST.md": {
+      "hash": "de54101cafd9758d",
+      "first_seen": "2026-03-04T21:20:21.740666",
+      "last_modified": "2026-03-04T21:20:21.740666",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\FINAL_FILING_INSTRUCTIONS.md": {
+      "hash": "f79603f174d8f622",
+      "first_seen": "2026-03-04T21:20:21.740666",
+      "last_modified": "2026-03-04T21:20:21.740666",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\IN_FORMA_PAUPERIS_AFFIDAVIT.md": {
+      "hash": "fa078f9695c9d3e1",
+      "first_seen": "2026-03-04T21:20:21.740666",
+      "last_modified": "2026-03-04T21:20:21.740666",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\LITIGATION_STRATEGY_MEMO.md": {
+      "hash": "8368f764f2b15679",
+      "first_seen": "2026-03-04T21:20:21.741667",
+      "last_modified": "2026-03-04T21:20:21.741667",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MASTER_EXHIBIT_INDEX.md": {
+      "hash": "2f72aa26b11045c1",
+      "first_seen": "2026-03-04T21:20:21.741667",
+      "last_modified": "2026-03-04T21:20:21.741667",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MASTER_FILING_SEQUENCE.md": {
+      "hash": "369e98ac3d2a61b2",
+      "first_seen": "2026-03-04T21:20:21.741667",
+      "last_modified": "2026-03-04T21:20:21.741667",
+      "versions": 1
+    },
+    "03_FEDERAL_1983\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\PROOF_OF_SERVICE_TEMPLATE.md": {
+      "hash": "84fe6fede52e8561",
+      "first_seen": "2026-03-04T21:20:21.741667",
+      "last_modified": "2026-03-04T21:20:21.741667",
+      "versions": 1
+    },
+    "04_MSC_ORIGINAL_ACTION\\A_msc_complaint_superintending_control.md": {
+      "hash": "8a5a6d709ae01c99",
+      "first_seen": "2026-03-04T21:20:21.744666",
+      "last_modified": "2026-03-04T21:20:21.744666",
+      "versions": 1
+    },
+    "04_MSC_ORIGINAL_ACTION\\B_msc_brief_in_support.md": {
+      "hash": "7ec31ba1b8619b75",
+      "first_seen": "2026-03-04T21:20:21.744666",
+      "last_modified": "2026-03-04T21:20:21.744666",
+      "versions": 1
+    },
+    "04_MSC_ORIGINAL_ACTION\\C_msc_appendix.md": {
+      "hash": "da8b719b423c1f23",
+      "first_seen": "2026-03-04T21:20:21.744666",
+      "last_modified": "2026-03-04T21:20:21.744666",
+      "versions": 1
+    },
+    "04_MSC_ORIGINAL_ACTION\\D_proof_of_service.md": {
+      "hash": "07f1d8ef811a48ae",
+      "first_seen": "2026-03-04T21:20:21.745666",
+      "last_modified": "2026-03-04T21:20:21.745666",
+      "versions": 1
+    },
+    "04_MSC_ORIGINAL_ACTION\\E_verification.md": {
+      "hash": "20cecdd0a0dcbd59",
+      "first_seen": "2026-03-04T21:20:21.745666",
+      "last_modified": "2026-03-04T21:20:21.745666",
+      "versions": 1
+    },
+    "04_MSC_ORIGINAL_ACTION\\F_fee_waiver_motion.md": {
+      "hash": "05de5830191a37c3",
+      "first_seen": "2026-03-04T21:20:21.746665",
+      "last_modified": "2026-03-04T21:20:21.746665",
+      "versions": 1
+    },
+    "04_MSC_ORIGINAL_ACTION\\G_cover_letter.md": {
+      "hash": "473dc9f789b788cf",
+      "first_seen": "2026-03-04T21:20:21.746665",
+      "last_modified": "2026-03-04T21:20:21.746665",
+      "versions": 1
+    },
+    "06_EMERGENCY\\ADMIN_COMPLAINTS\\01_MDHHS_CPS_COMPLAINT.md": {
+      "hash": "d0f1fe3d9074e76e",
+      "first_seen": "2026-03-04T21:20:21.747665",
+      "last_modified": "2026-03-04T21:20:21.747665",
+      "versions": 1
+    },
+    "06_EMERGENCY\\ADMIN_COMPLAINTS\\02_MDHHS_EVIDENCE.md": {
+      "hash": "710bdef3d23ca49c",
+      "first_seen": "2026-03-04T21:20:21.747665",
+      "last_modified": "2026-03-04T21:20:21.747665",
+      "versions": 1
+    },
+    "06_EMERGENCY\\ADMIN_COMPLAINTS\\03_LARA_HOUSING_COMPLAINT.md": {
+      "hash": "eea25f32afe94d24",
+      "first_seen": "2026-03-04T21:20:21.747665",
+      "last_modified": "2026-03-04T21:20:21.747665",
+      "versions": 1
+    },
+    "06_EMERGENCY\\ADMIN_COMPLAINTS\\04_LARA_EVIDENCE.md": {
+      "hash": "e7f966c2b4c5c768",
+      "first_seen": "2026-03-04T21:20:21.747665",
+      "last_modified": "2026-03-04T21:20:21.747665",
+      "versions": 1
+    },
+    "06_EMERGENCY\\ADMIN_COMPLAINTS\\05_HUD_ADMIN_COMPLAINT.md": {
+      "hash": "4a6831176cda36a5",
+      "first_seen": "2026-03-04T21:20:21.748665",
+      "last_modified": "2026-03-04T21:20:21.748665",
+      "versions": 1
+    },
+    "06_EMERGENCY\\ADMIN_COMPLAINTS\\06_ADMIN_FILING_INSTRUCTIONS.md": {
+      "hash": "dbaf3f72ae9f3a77",
+      "first_seen": "2026-03-04T21:20:21.748665",
+      "last_modified": "2026-03-04T21:20:21.748665",
+      "versions": 1
+    },
+    "06_EMERGENCY\\ADMIN_COMPLAINTS\\07_ADMIN_READINESS_SCORES.md": {
+      "hash": "228157cb45fb5417",
+      "first_seen": "2026-03-04T21:20:21.748665",
+      "last_modified": "2026-03-04T21:20:21.748665",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\00_MASTER_BRIEF.md": {
+      "hash": "45f1d2febe9c9f58",
+      "first_seen": "2026-03-04T21:20:21.749665",
+      "last_modified": "2026-03-04T21:20:21.749665",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\02_EXHIBIT_GRAFT_PARAGRAPHS.md": {
+      "hash": "13fa238b9a1f2bea",
+      "first_seen": "2026-03-04T21:20:21.753664",
+      "last_modified": "2026-03-04T21:20:21.753664",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\03_BUNDLE_SPECIFICATIONS.md": {
+      "hash": "94a39b155c992804",
+      "first_seen": "2026-03-04T21:20:21.753664",
+      "last_modified": "2026-03-04T21:20:21.753664",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\05_READINESS_ASSESSMENT.md": {
+      "hash": "b88b27f266138c8d",
+      "first_seen": "2026-03-04T21:20:21.753664",
+      "last_modified": "2026-03-04T21:20:21.753664",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\06_COMPLIANCE_MATRIX.md": {
+      "hash": "71569ad330abea8e",
+      "first_seen": "2026-03-04T21:20:21.753664",
+      "last_modified": "2026-03-04T21:20:21.753664",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\08_CONSTITUTIONAL_SECTIONS.md": {
+      "hash": "ce1ccb8173a02707",
+      "first_seen": "2026-03-04T21:20:21.754665",
+      "last_modified": "2026-03-04T21:20:21.754665",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\09_REPLY_TEMPLATES.md": {
+      "hash": "ddb56916d6b4a727",
+      "first_seen": "2026-03-04T21:20:21.754665",
+      "last_modified": "2026-03-04T21:20:21.754665",
+      "versions": 1
+    },
+    "06_EMERGENCY\\COURT_PACKETS_v3\\05_MOTION_TERMINATE_PPO_v3.md": {
+      "hash": "6afb49d44ffc3c4e",
+      "first_seen": "2026-03-04T21:20:21.754665",
+      "last_modified": "2026-03-04T21:20:21.754665",
+      "versions": 1
+    },
+    "06_EMERGENCY\\COURT_PACKETS_v3\\07_EMERGENCY_STAY_v3.md": {
+      "hash": "2a9dbf24835b1e2f",
+      "first_seen": "2026-03-04T21:20:21.755667",
+      "last_modified": "2026-03-04T21:20:21.755667",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\00_FILING_CHECKLIST.md": {
+      "hash": "4c9cfbea5bbdc7f5",
+      "first_seen": "2026-03-04T21:20:21.756666",
+      "last_modified": "2026-03-04T21:20:21.756666",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\01_MAIN_MOTION_CONTEMPT_SHOW_CAUSE_V4.md": {
+      "hash": "15aa704a954ef26a",
+      "first_seen": "2026-03-04T21:20:21.756666",
+      "last_modified": "2026-03-04T21:20:21.756666",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\02_EXHIBIT_INDEX.md": {
+      "hash": "59a8d2c1e31a2fa8",
+      "first_seen": "2026-03-04T21:20:21.756666",
+      "last_modified": "2026-03-04T21:20:21.756666",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\03_EXHIBIT_FOUNDATION.md": {
+      "hash": "fee6aeb3fef2f019",
+      "first_seen": "2026-03-04T21:20:21.756666",
+      "last_modified": "2026-03-04T21:20:21.756666",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\04_CERTIFICATE_OF_SERVICE.md": {
+      "hash": "e864506619791ad9",
+      "first_seen": "2026-03-04T21:20:21.757666",
+      "last_modified": "2026-03-04T21:20:21.757666",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\05_EMERGENCY_APPLICATION_EVIDENCE.md": {
+      "hash": "f610b707b8509ac0",
+      "first_seen": "2026-03-04T21:20:21.757666",
+      "last_modified": "2026-03-04T21:20:21.757666",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\07_EMERGENCY_STAY_v3.md": {
+      "hash": "834d44af0a042090",
+      "first_seen": "2026-03-04T21:20:21.757666",
+      "last_modified": "2026-03-04T21:20:21.757666",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\08_MOTION_CONTEMPT_SHOW_CAUSE_v3.md": {
+      "hash": "c0a84a5bc194d1e5",
+      "first_seen": "2026-03-04T21:20:21.757666",
+      "last_modified": "2026-03-04T21:20:21.757666",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\24_CONTEMPT_JOURNAL.md": {
+      "hash": "37747f75224f79fa",
+      "first_seen": "2026-03-04T21:20:21.785594",
+      "last_modified": "2026-03-04T21:20:21.785594",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\24_CONTEMPT_LLM_CONTEMPT_ANALYSIS.md": {
+      "hash": "393389bf00126ca7",
+      "first_seen": "2026-03-04T21:20:21.785594",
+      "last_modified": "2026-03-04T21:20:21.785594",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\42_EMERGENCY_JOURNAL.md": {
+      "hash": "6e1807b6a538e2a0",
+      "first_seen": "2026-03-04T21:20:21.828023",
+      "last_modified": "2026-03-04T21:20:21.828023",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\42_EMERGENCY_LLM_EMERGENCY_BRIEF.md": {
+      "hash": "8b8a5f55f82a2426",
+      "first_seen": "2026-03-04T21:20:21.828023",
+      "last_modified": "2026-03-04T21:20:21.828023",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\CONTEMPT_REVERSAL_CASELAW.md": {
+      "hash": "7b2b24a4d3d41744",
+      "first_seen": "2026-03-04T21:20:21.829023",
+      "last_modified": "2026-03-04T21:20:21.829023",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\EMERGENCY_THRESHOLD_ANALYSIS.md": {
+      "hash": "23c873d79c662500",
+      "first_seen": "2026-03-04T21:20:21.830026",
+      "last_modified": "2026-03-04T21:20:21.830026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\EVIDENCE_CHAINS.md": {
+      "hash": "e6af59645c6ca2d7",
+      "first_seen": "2026-03-04T21:20:21.830026",
+      "last_modified": "2026-03-04T21:20:21.830026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\EVIDENCE_CHAINS_1.md": {
+      "hash": "39b061a20c1abf42",
+      "first_seen": "2026-03-04T21:20:21.830026",
+      "last_modified": "2026-03-04T21:20:21.830026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\FILING_PACKAGE_A_MOTION_FOR_ORDER_TO_SHOW_CAUSE_AND_CONTEMPT.md": {
+      "hash": "0bd87f871cce0d41",
+      "first_seen": "2026-03-04T21:20:21.831026",
+      "last_modified": "2026-03-04T21:20:21.831026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\FILING_PACKAGE_A_MOTION_FOR_ORDER_TO_SHOW_CAUSE_AND_CONTEMPT_1.md": {
+      "hash": "d4afb0e1357cc0ab",
+      "first_seen": "2026-03-04T21:20:21.831026",
+      "last_modified": "2026-03-04T21:20:21.831026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\journal_md.md": {
+      "hash": "a2d6e58ec9684eec",
+      "first_seen": "2026-03-04T21:20:21.832023",
+      "last_modified": "2026-03-04T21:20:21.832023",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\journal_md_1.md": {
+      "hash": "aa1fe0753ceff7ed",
+      "first_seen": "2026-03-04T21:20:21.833023",
+      "last_modified": "2026-03-04T21:20:21.833023",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\LLM_CONTEMPT_ANALYSIS.md": {
+      "hash": "393389bf00126ca7",
+      "first_seen": "2026-03-04T21:20:21.833023",
+      "last_modified": "2026-03-04T21:20:21.833023",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\LLM_EMERGENCY_BRIEF.md": {
+      "hash": "8b8a5f55f82a2426",
+      "first_seen": "2026-03-04T21:20:21.833023",
+      "last_modified": "2026-03-04T21:20:21.833023",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\MEEK3_PPO_CONTEMPT.md": {
+      "hash": "8e3ca58c37ac71c2",
+      "first_seen": "2026-03-04T21:20:21.834023",
+      "last_modified": "2026-03-04T21:20:21.834023",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\MEEK3_PPO_CONTEMPT_CLEAN.md": {
+      "hash": "65f11a80d9159a16",
+      "first_seen": "2026-03-04T21:20:21.834023",
+      "last_modified": "2026-03-04T21:20:21.834023",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\MEEK3_PPO_CONTEMPT_CLEAN_DELTA2.md": {
+      "hash": "f783a70acb5a4452",
+      "first_seen": "2026-03-04T21:20:21.834023",
+      "last_modified": "2026-03-04T21:20:21.834023",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\MEEK3_PPO_CONTEMPT_DELTA2_RECORD_AWARE.md": {
+      "hash": "7692ad8d474dcd0f",
+      "first_seen": "2026-03-04T21:20:21.835023",
+      "last_modified": "2026-03-04T21:20:21.835023",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\MEEK3_PPO_CONTEMPT_DELTA2_RECORD_FIRST.md": {
+      "hash": "90b19fff6aa10c56",
+      "first_seen": "2026-03-04T21:20:21.835023",
+      "last_modified": "2026-03-04T21:20:21.835023",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\MEEK3_PPO_Jailing_Contempt_EXHIBIT_GRADE_GRAFT_PARAGRAPHS.md": {
+      "hash": "2d46b32715a5610a",
+      "first_seen": "2026-03-04T21:20:21.839024",
+      "last_modified": "2026-03-04T21:20:21.839024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\MSC_EMERGENCY_APPLICATION_FINAL.md": {
+      "hash": "80ade68150c529fd",
+      "first_seen": "2026-03-04T21:20:21.839024",
+      "last_modified": "2026-03-04T21:20:21.839024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\PACKET_09_EMERGENCY_STAY_PENDING_APPEAL.md": {
+      "hash": "3a8721a59cf81fcc",
+      "first_seen": "2026-03-04T21:20:21.839024",
+      "last_modified": "2026-03-04T21:20:21.839024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\PKG11_SPOLIATION_NOTICE_FINALIZED.md": {
+      "hash": "30c3909daf580018",
+      "first_seen": "2026-03-04T21:20:21.840024",
+      "last_modified": "2026-03-04T21:20:21.840024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\PKG12_FOC_OBJECTION_FINALIZED.md": {
+      "hash": "17c1b616aa40806f",
+      "first_seen": "2026-03-04T21:20:21.840024",
+      "last_modified": "2026-03-04T21:20:21.840024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\QC_REPORT_A_MOTION_FOR_ORDER_TO_SHOW_CAUSE_AND_CONTEMPT.md": {
+      "hash": "bd841704908178c1",
+      "first_seen": "2026-03-04T21:20:21.840024",
+      "last_modified": "2026-03-04T21:20:21.840024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT.md": {
+      "hash": "8e3ca58c37ac71c2",
+      "first_seen": "2026-03-04T21:20:21.840024",
+      "last_modified": "2026-03-04T21:20:21.840024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_CLEAN.md": {
+      "hash": "65f11a80d9159a16",
+      "first_seen": "2026-03-04T21:20:21.841024",
+      "last_modified": "2026-03-04T21:20:21.841024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_CLEAN_DELTA2.md": {
+      "hash": "f783a70acb5a4452",
+      "first_seen": "2026-03-04T21:20:21.841024",
+      "last_modified": "2026-03-04T21:20:21.841024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_DELTA2_RECORD_AWARE.md": {
+      "hash": "7692ad8d474dcd0f",
+      "first_seen": "2026-03-04T21:20:21.842026",
+      "last_modified": "2026-03-04T21:20:21.842026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_DELTA2_RECORD_FIRST.md": {
+      "hash": "90b19fff6aa10c56",
+      "first_seen": "2026-03-04T21:20:21.842026",
+      "last_modified": "2026-03-04T21:20:21.842026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT.md": {
+      "hash": "8e3ca58c37ac71c2",
+      "first_seen": "2026-03-04T21:20:21.842026",
+      "last_modified": "2026-03-04T21:20:21.842026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_CLEAN.md": {
+      "hash": "65f11a80d9159a16",
+      "first_seen": "2026-03-04T21:20:21.843024",
+      "last_modified": "2026-03-04T21:20:21.843024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_CLEAN_DELTA2.md": {
+      "hash": "f783a70acb5a4452",
+      "first_seen": "2026-03-04T21:20:21.843024",
+      "last_modified": "2026-03-04T21:20:21.843024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_DELTA2_RECORD_AWARE.md": {
+      "hash": "7692ad8d474dcd0f",
+      "first_seen": "2026-03-04T21:20:21.843024",
+      "last_modified": "2026-03-04T21:20:21.844024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_DELTA2_RECORD_FIRST.md": {
+      "hash": "90b19fff6aa10c56",
+      "first_seen": "2026-03-04T21:20:21.844024",
+      "last_modified": "2026-03-04T21:20:21.844024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT.md": {
+      "hash": "8e3ca58c37ac71c2",
+      "first_seen": "2026-03-04T21:20:21.844024",
+      "last_modified": "2026-03-04T21:20:21.844024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_CLEAN.md": {
+      "hash": "65f11a80d9159a16",
+      "first_seen": "2026-03-04T21:20:21.845024",
+      "last_modified": "2026-03-04T21:20:21.845024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_CLEAN_DELTA2.md": {
+      "hash": "f783a70acb5a4452",
+      "first_seen": "2026-03-04T21:20:21.845024",
+      "last_modified": "2026-03-04T21:20:21.845024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_DELTA2_RECORD_AWARE.md": {
+      "hash": "7692ad8d474dcd0f",
+      "first_seen": "2026-03-04T21:20:21.845024",
+      "last_modified": "2026-03-04T21:20:21.845024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_DELTA2_RECORD_FIRST.md": {
+      "hash": "90b19fff6aa10c56",
+      "first_seen": "2026-03-04T21:20:21.846024",
+      "last_modified": "2026-03-04T21:20:21.846024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\SIGNAL_SCORES.md": {
+      "hash": "4cb642dbe4cf0a23",
+      "first_seen": "2026-03-04T21:20:21.846024",
+      "last_modified": "2026-03-04T21:20:21.846024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\SIGNAL_SCORES_1.md": {
+      "hash": "d78efea63f789c9b",
+      "first_seen": "2026-03-04T21:20:21.847026",
+      "last_modified": "2026-03-04T21:20:21.847026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\SUMMARY.md": {
+      "hash": "d01f6a85f6780481",
+      "first_seen": "2026-03-04T21:20:21.847026",
+      "last_modified": "2026-03-04T21:20:21.847026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\SUMMARY_1.md": {
+      "hash": "6ec07f08001d0a60",
+      "first_seen": "2026-03-04T21:20:21.847026",
+      "last_modified": "2026-03-04T21:20:21.847026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\VERBATIM_QUOTES.md": {
+      "hash": "23049ca1d97e8f38",
+      "first_seen": "2026-03-04T21:20:21.847026",
+      "last_modified": "2026-03-04T21:20:21.847026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\drafts\\VERBATIM_QUOTES_1.md": {
+      "hash": "6c1004bd2b7e2ccc",
+      "first_seen": "2026-03-04T21:20:21.847026",
+      "last_modified": "2026-03-04T21:20:21.847026",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_PACKAGE\\A_EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md": {
+      "hash": "e3edf4fff36aa176",
+      "first_seen": "2026-03-04T21:20:21.848024",
+      "last_modified": "2026-03-04T21:20:21.848024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_PACKAGE\\B_VERIFIED_AFFIDAVIT.md": {
+      "hash": "c0985023ea59e552",
+      "first_seen": "2026-03-04T21:20:21.848024",
+      "last_modified": "2026-03-04T21:20:21.848024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_PACKAGE\\C_BRIEF_IN_SUPPORT.md": {
+      "hash": "62db1979c2fbae37",
+      "first_seen": "2026-03-04T21:20:21.849024",
+      "last_modified": "2026-03-04T21:20:21.849024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_PACKAGE\\D_PROPOSED_ORDER.md": {
+      "hash": "b0b384bc567b0d5a",
+      "first_seen": "2026-03-04T21:20:21.849024",
+      "last_modified": "2026-03-04T21:20:21.849024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_PACKAGE\\E_CERTIFICATE_OF_SERVICE.md": {
+      "hash": "c3b886dd3f41d9f4",
+      "first_seen": "2026-03-04T21:20:21.849024",
+      "last_modified": "2026-03-04T21:20:21.849024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_PACKAGE\\F_FEE_WAIVER_MC20.md": {
+      "hash": "3be260b254415904",
+      "first_seen": "2026-03-04T21:20:21.849024",
+      "last_modified": "2026-03-04T21:20:21.849024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_PACKAGE\\G_MIFLE_FILING_CHECKLIST.md": {
+      "hash": "823816e96f529fff",
+      "first_seen": "2026-03-04T21:20:21.850024",
+      "last_modified": "2026-03-04T21:20:21.850024",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_STACK\\01_EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md": {
+      "hash": "be302442cb9f4eae",
+      "first_seen": "2026-03-04T21:20:21.850560",
+      "last_modified": "2026-03-04T21:20:21.850560",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_STACK\\02_MOTION_TERMINATE_PPO.md": {
+      "hash": "06b7b036158233f8",
+      "first_seen": "2026-03-04T21:20:21.850560",
+      "last_modified": "2026-03-04T21:20:21.850560",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_STACK\\03_MOTION_CONTEMPT_SHOW_CAUSE.md": {
+      "hash": "2beae2a2598ca687",
+      "first_seen": "2026-03-04T21:20:21.851065",
+      "last_modified": "2026-03-04T21:20:21.851065",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_STACK\\04_MOTION_DISQUALIFY_JUDGE.md": {
+      "hash": "d26a73fae3f178f0",
+      "first_seen": "2026-03-04T21:20:21.851065",
+      "last_modified": "2026-03-04T21:20:21.851065",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_STACK\\05_MOTION_VACATE_EX_PARTE_ORDERS.md": {
+      "hash": "3e64f142ffd95657",
+      "first_seen": "2026-03-04T21:20:21.851065",
+      "last_modified": "2026-03-04T21:20:21.851065",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_STACK\\06_MOTION_CHANGE_OF_VENUE.md": {
+      "hash": "09d84d64ce7ba979",
+      "first_seen": "2026-03-04T21:20:21.851065",
+      "last_modified": "2026-03-04T21:20:21.851065",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_STACK\\07_AFFIDAVIT_ANDREW_PIGORS.md": {
+      "hash": "a78499d3a43d6f95",
+      "first_seen": "2026-03-04T21:20:21.851065",
+      "last_modified": "2026-03-04T21:20:21.851065",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_STACK\\08_PROPOSED_ORDERS.md": {
+      "hash": "c59255ba59ba9aa8",
+      "first_seen": "2026-03-04T21:20:21.852062",
+      "last_modified": "2026-03-04T21:20:21.852062",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_STACK\\09_FILING_INSTRUCTIONS.md": {
+      "hash": "e8140fa5a26169f4",
+      "first_seen": "2026-03-04T21:20:21.852062",
+      "last_modified": "2026-03-04T21:20:21.852062",
+      "versions": 1
+    },
+    "06_EMERGENCY\\FINAL_EMERGENCY_STACK\\10_READINESS_SCORES.md": {
+      "hash": "9fe84f0530f1e61b",
+      "first_seen": "2026-03-04T21:20:21.852062",
+      "last_modified": "2026-03-04T21:20:21.852062",
+      "versions": 1
+    },
+    "06_EMERGENCY\\HUD_COMPLAINT\\DEADLINE_ANALYSIS.md": {
+      "hash": "6f05e5abde343256",
+      "first_seen": "2026-03-04T21:20:21.872068",
+      "last_modified": "2026-03-04T21:20:21.872068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\HUD_COMPLAINT\\EVIDENCE_INDEX.md": {
+      "hash": "15819f4479bb6fca",
+      "first_seen": "2026-03-04T21:20:21.872068",
+      "last_modified": "2026-03-04T21:20:21.872068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\HUD_COMPLAINT\\FILING_INSTRUCTIONS.md": {
+      "hash": "ddbe3c325b57b04d",
+      "first_seen": "2026-03-04T21:20:21.872068",
+      "last_modified": "2026-03-04T21:20:21.872068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\HUD_COMPLAINT\\HUD_COMPLAINT_FORM.md": {
+      "hash": "cc450188e11ead03",
+      "first_seen": "2026-03-04T21:20:21.873068",
+      "last_modified": "2026-03-04T21:20:21.873068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\HUD_COMPLAINT\\SUPPORTING_STATEMENT.md": {
+      "hash": "c9df9cd0841def21",
+      "first_seen": "2026-03-04T21:20:21.873068",
+      "last_modified": "2026-03-04T21:20:21.873068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\LARA_COMPLAINT\\EVIDENCE_INDEX.md": {
+      "hash": "a7daa94f55e77315",
+      "first_seen": "2026-03-04T21:20:21.873068",
+      "last_modified": "2026-03-04T21:20:21.873068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\LARA_COMPLAINT\\FILING_INSTRUCTIONS.md": {
+      "hash": "5311bbbbab1ff9b3",
+      "first_seen": "2026-03-04T21:20:21.873068",
+      "last_modified": "2026-03-04T21:20:21.873068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\LARA_COMPLAINT\\LARA_COMPLAINT.md": {
+      "hash": "4ca813f5c65bab84",
+      "first_seen": "2026-03-04T21:20:21.874067",
+      "last_modified": "2026-03-04T21:20:21.874067",
+      "versions": 1
+    },
+    "06_EMERGENCY\\LARA_COMPLAINT\\VIOLATION_SCHEDULE.md": {
+      "hash": "d79bc43710b7b281",
+      "first_seen": "2026-03-04T21:20:21.874067",
+      "last_modified": "2026-03-04T21:20:21.874067",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\CERTIFICATE_OF_SERVICE.md": {
+      "hash": "e023d4d6bfb208a7",
+      "first_seen": "2026-03-04T21:20:21.875068",
+      "last_modified": "2026-03-04T21:20:21.875068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\CERTIFICATE_OF_SERVICE_MCR2107.md": {
+      "hash": "f86c31810b0d84e2",
+      "first_seen": "2026-03-04T21:20:21.875068",
+      "last_modified": "2026-03-04T21:20:21.875068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\CIVIL_COMPLAINT.md": {
+      "hash": "b1322506ae8a5a46",
+      "first_seen": "2026-03-04T21:20:21.876066",
+      "last_modified": "2026-03-04T21:20:21.876066",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\COVER_PAGE.md": {
+      "hash": "68152aca17d00252",
+      "first_seen": "2026-03-04T21:20:21.876066",
+      "last_modified": "2026-03-04T21:20:21.876066",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\EXHIBIT_INDEX_BATES.md": {
+      "hash": "e10239707e0ba0d1",
+      "first_seen": "2026-03-04T21:20:21.876066",
+      "last_modified": "2026-03-04T21:20:21.876066",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\EXHIBIT_STACK.md": {
+      "hash": "e8c5f75427980faf",
+      "first_seen": "2026-03-04T21:20:21.876066",
+      "last_modified": "2026-03-04T21:20:21.876066",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\HOUSING_LAW_AUTHORITY.md": {
+      "hash": "95ab276cdb36eb01",
+      "first_seen": "2026-03-04T21:20:21.877067",
+      "last_modified": "2026-03-04T21:20:21.877067",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MC_01_FIRST_FILING.md": {
+      "hash": "461d96ce38bee208",
+      "first_seen": "2026-03-04T21:20:21.877067",
+      "last_modified": "2026-03-04T21:20:21.877067",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MC_20_FEE_WAIVER.md": {
+      "hash": "b3d2ae4aa2fe2bad",
+      "first_seen": "2026-03-04T21:20:21.877067",
+      "last_modified": "2026-03-04T21:20:21.877067",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\MOTION_PRESERVE_EVIDENCE.md": {
+      "hash": "49f154084a844c1b",
+      "first_seen": "2026-03-04T21:20:21.877067",
+      "last_modified": "2026-03-04T21:20:21.877067",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\PROOFREAD_REPORT.md": {
+      "hash": "3a30fdb7a89d28f9",
+      "first_seen": "2026-03-04T21:20:21.877067",
+      "last_modified": "2026-03-04T21:20:21.877067",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\PROOF_OF_SERVICE.md": {
+      "hash": "3b8dd3e3c213b547",
+      "first_seen": "2026-03-04T21:20:21.878067",
+      "last_modified": "2026-03-04T21:20:21.878067",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\PROPOSED_ORDER.md": {
+      "hash": "42c72d5216e1b9ba",
+      "first_seen": "2026-03-04T21:20:21.878067",
+      "last_modified": "2026-03-04T21:20:21.878067",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\SPOLIATION_NOTICE_WATSON.md": {
+      "hash": "c4889e00fa30b781",
+      "first_seen": "2026-03-04T21:20:21.878067",
+      "last_modified": "2026-03-04T21:20:21.878067",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\01_DELTA99_PACKAGE\\SUMMONS.md": {
+      "hash": "44c16401ef3289c4",
+      "first_seen": "2026-03-04T21:20:21.878067",
+      "last_modified": "2026-03-04T21:20:21.878067",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\DEADLINE_TRACKER.md": {
+      "hash": "e6a93080037da755",
+      "first_seen": "2026-03-04T21:20:21.879069",
+      "last_modified": "2026-03-04T21:20:21.879069",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\EXHIBIT_AUTHENTICATION_TEMPLATES.md": {
+      "hash": "db46356c4940f922",
+      "first_seen": "2026-03-04T21:20:21.879069",
+      "last_modified": "2026-03-04T21:20:21.879069",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\FINAL_FILING_INSTRUCTIONS.md": {
+      "hash": "f79603f174d8f622",
+      "first_seen": "2026-03-04T21:20:21.879069",
+      "last_modified": "2026-03-04T21:20:21.879069",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\IN_FORMA_PAUPERIS_AFFIDAVIT.md": {
+      "hash": "fa078f9695c9d3e1",
+      "first_seen": "2026-03-04T21:20:21.880068",
+      "last_modified": "2026-03-04T21:20:21.880068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\LITIGATION_STRATEGY_MEMO.md": {
+      "hash": "8368f764f2b15679",
+      "first_seen": "2026-03-04T21:20:21.880068",
+      "last_modified": "2026-03-04T21:20:21.880068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MASTER_EXHIBIT_INDEX.md": {
+      "hash": "2f72aa26b11045c1",
+      "first_seen": "2026-03-04T21:20:21.880068",
+      "last_modified": "2026-03-04T21:20:21.880068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\MASTER_FILING_SEQUENCE.md": {
+      "hash": "369e98ac3d2a61b2",
+      "first_seen": "2026-03-04T21:20:21.880068",
+      "last_modified": "2026-03-04T21:20:21.880068",
+      "versions": 1
+    },
+    "06_EMERGENCY\\CONVERGED_FILING_STACK\\04_GOLDEN_REFERENCES\\PROOF_OF_SERVICE_TEMPLATE.md": {
+      "hash": "84fe6fede52e8561",
+      "first_seen": "2026-03-04T21:20:21.881066",
+      "last_modified": "2026-03-04T21:20:21.881066",
+      "versions": 1
+    }
+  }
+}

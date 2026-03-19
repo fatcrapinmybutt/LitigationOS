@@ -1,0 +1,1149 @@
+{
+  "report_metadata": {
+    "generated": "2026-03-05 09:10:02",
+    "agent": "Agent-157",
+    "total_stacks": 45,
+    "go_count": 24,
+    "conditional_count": 21,
+    "nogo_count": 0,
+    "average_score": 80.6,
+    "previous_go_count": 8,
+    "previous_nogo_count": 3,
+    "previous_average": 75.0
+  },
+  "stacks": {
+    "01_COA/APEX_FILING_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\APEX_FILING_STACK",
+      "exists": true,
+      "file_count": 8,
+      "md_files": 0,
+      "txt_files": 8,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 100,
+        "citations": 98,
+        "placeholders": 10,
+        "compliance": 100,
+        "evidence": 90,
+        "service": 70,
+        "overall": 77.2
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Found 48 incomplete/broken citations out of 2597 total",
+        "67 unresolved placeholders found (samples: [TBD], [TBD], [TBD], [PLACEHOLDERS], [Entered November 4, 1981;\n    effective January 1, 1982; rescinded by order en\n    Source: master_timeline | Ref: evidence_quotes\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  1981-12\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n  [4], [Entered December 4, 1981;\n    effective February 1, 1982; superseded by AO 201\n    Source: master_timeline | Ref: evidence_quotes\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  1984-03\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n  [5], [Entered March 15, 1989; superseded\n    by AO 2017-3, entered November 15, 20\n    Source: master_timeline | Ref: evidence_quotes\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  1990-11\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n  [10], [DATE \u2014 PLACEHOLDER], [DATE], [NAME\n    \u2014 PLACEHOLDER])",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "FIX: Resolve 48 broken citations (missing page numbers, placeholder text)",
+        "CRITICAL: Resolve all 67 placeholders -- document not ready for filing",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "01_COA/COA_DRAFT_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\COA_DRAFT_STACK",
+      "exists": true,
+      "file_count": 11,
+      "md_files": 6,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 71,
+        "citations": 85,
+        "placeholders": 100,
+        "compliance": 70,
+        "evidence": 80,
+        "service": 90,
+        "overall": 82.0
+      },
+      "verdict": "GO",
+      "issues": [
+        "Missing components: filing_instructions, readiness_score"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add filing_instructions document to this stack",
+        "ADD: Create/add readiness_score document to this stack"
+      ]
+    },
+    "01_COA/CONVERGED_FILING_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\CONVERGED_FILING_STACK",
+      "exists": true,
+      "file_count": 45,
+      "md_files": 37,
+      "txt_files": 8,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 100,
+        "citations": 98,
+        "placeholders": 10,
+        "compliance": 100,
+        "evidence": 90,
+        "service": 70,
+        "overall": 77.2
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Found 61 incomplete/broken citations out of 3880 total",
+        "141 unresolved placeholders found (samples: [TBD], [TBD], [TBD], [PLACEHOLDERS], [Entered November 4, 1981;\n    effective January 1, 1982; rescinded by order en\n    Source: master_timeline | Ref: evidence_quotes\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  1981-12\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n  [4], [Entered December 4, 1981;\n    effective February 1, 1982; superseded by AO 201\n    Source: master_timeline | Ref: evidence_quotes\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  1984-03\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n  [5], [Entered March 15, 1989; superseded\n    by AO 2017-3, entered November 15, 20\n    Source: master_timeline | Ref: evidence_quotes\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  1990-11\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n  [10], [DATE], [DATE], [DATE])",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "FIX: Resolve 61 broken citations (missing page numbers, placeholder text)",
+        "CRITICAL: Resolve all 141 placeholders -- document not ready for filing",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "01_COA/COURT_READY": {
+      "path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\COURT_READY",
+      "exists": true,
+      "file_count": 8,
+      "md_files": 0,
+      "txt_files": 0,
+      "pdf_files": 7,
+      "scores": {
+        "completeness": 57,
+        "citations": 50,
+        "placeholders": 100,
+        "compliance": 50,
+        "evidence": 90,
+        "service": 90,
+        "overall": 71.8
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Missing components: verification/affidavit, filing_instructions, readiness_score",
+        "Low compliance -- few court rule references found"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add verification/affidavit document to this stack",
+        "ADD: Create/add filing_instructions document to this stack",
+        "ADD: Create/add readiness_score document to this stack",
+        "ADD: Ensure MCR/FRCP rule references are included for procedural compliance"
+      ]
+    },
+    "01_COA/FINAL_BRIEF_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\FINAL_BRIEF_STACK",
+      "exists": true,
+      "file_count": 13,
+      "md_files": 11,
+      "txt_files": 0,
+      "pdf_files": 2,
+      "scores": {
+        "completeness": 100,
+        "citations": 95,
+        "placeholders": 85,
+        "compliance": 85,
+        "evidence": 90,
+        "service": 90,
+        "overall": 91.5
+      },
+      "verdict": "GO",
+      "issues": [
+        "1 unresolved placeholder(s): [NAME, ADDRESS]"
+      ],
+      "fix_instructions": [
+        "FIX: Resolve 1 remaining placeholder(s)"
+      ]
+    },
+    "01_COA/MSC_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\MSC_STACK",
+      "exists": true,
+      "file_count": 6,
+      "md_files": 6,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 100,
+        "citations": 95,
+        "placeholders": 10,
+        "compliance": 85,
+        "evidence": 80,
+        "service": 90,
+        "overall": 75.0
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "12 unresolved placeholders found (samples: [DATE], [DATE], [DATE])"
+      ],
+      "fix_instructions": [
+        "CRITICAL: Resolve all 12 placeholders -- document not ready for filing"
+      ]
+    },
+    "01_COA/SCOTUS_FRAMEWORK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\SCOTUS_FRAMEWORK",
+      "exists": true,
+      "file_count": 4,
+      "md_files": 4,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 71,
+        "citations": 80,
+        "placeholders": 100,
+        "compliance": 60,
+        "evidence": 40,
+        "service": 90,
+        "overall": 73.8
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Missing components: verification/affidavit, exhibits/evidence",
+        "Found 2 incomplete/broken citations out of 8 total",
+        "No exhibit references or evidence files found"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add verification/affidavit document to this stack",
+        "ADD: Create/add exhibits/evidence document to this stack",
+        "FIX: Resolve 2 broken citations (missing page numbers, placeholder text)",
+        "ADD: Create exhibit list and attach supporting evidence"
+      ]
+    },
+    "01_COA/SERVICE_PACKET": {
+      "path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\SERVICE_PACKET",
+      "exists": true,
+      "file_count": 2,
+      "md_files": 2,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 95,
+        "placeholders": 100,
+        "compliance": 80,
+        "evidence": 65,
+        "service": 95,
+        "overall": 86.7
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "02_TRIAL/APEX_FILING_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\APEX_FILING_STACK",
+      "exists": true,
+      "file_count": 8,
+      "md_files": 0,
+      "txt_files": 8,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 100,
+        "citations": 93,
+        "placeholders": 10,
+        "compliance": 100,
+        "evidence": 90,
+        "service": 70,
+        "overall": 76.5
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Found 350 incomplete/broken citations out of 4294 total",
+        "48 unresolved placeholders found (samples: [XXX], [TBD], [TBD], [TBD], [Insert Email Address], [Insert Phone Number], [PLACEHOLDERS], [Entered April 19, 1988; rescinded\n    February 23, 2006.], [Entered September 9, 1994;\n    effective September 16, 1994.], [Entered December 21, 1994.])",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "FIX: Resolve 350 broken citations (missing page numbers, placeholder text)",
+        "CRITICAL: Resolve all 48 placeholders -- document not ready for filing",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "02_TRIAL/CONVERGED_FILING_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\CONVERGED_FILING_STACK",
+      "exists": true,
+      "file_count": 77,
+      "md_files": 69,
+      "txt_files": 8,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 100,
+        "citations": 88,
+        "placeholders": 10,
+        "compliance": 100,
+        "evidence": 90,
+        "service": 70,
+        "overall": 75.7
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Found 2334 incomplete/broken citations out of 16655 total",
+        "187 unresolved placeholders found (samples: [XXXX], [XXX], [TBD], [TBD], [TBD], [insert exemption cited], [Insert specific grounds for appeal, such as:\n   - The records are not exempt because they concern matters of public record\n   - The claimed exemption does not apply to the specific records requested\n   - The public interest in disclosure outweighs any privacy interest\n   - The agency failed to adequately segregate exempt from non-exempt material as required by MCL 15.244(1)], [Insert Email Address], [PLACEHOLDERS], [Entered April 19, 1988; rescinded\n    February 23, 2006.])",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "FIX: Resolve 2334 broken citations (missing page numbers, placeholder text)",
+        "CRITICAL: Resolve all 187 placeholders -- document not ready for filing",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "02_TRIAL/DISCOVERY_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\DISCOVERY_STACK",
+      "exists": true,
+      "file_count": 12,
+      "md_files": 6,
+      "txt_files": 0,
+      "pdf_files": 6,
+      "scores": {
+        "completeness": 85,
+        "citations": 95,
+        "placeholders": 65,
+        "compliance": 85,
+        "evidence": 75,
+        "service": 90,
+        "overall": 81.5
+      },
+      "verdict": "GO",
+      "issues": [
+        "Missing components: readiness_score",
+        "4 unresolved placeholders found: [DATE], [DATE], [DATE]"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add readiness_score document to this stack",
+        "FIX: Resolve all 4 placeholders before filing"
+      ]
+    },
+    "02_TRIAL/DISQUALIFY_PACKAGE": {
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\FULL_14TH_STACK\\DISQUALIFY_PACKAGE",
+      "exists": true,
+      "file_count": 57,
+      "md_files": 10,
+      "txt_files": 0,
+      "pdf_files": 42,
+      "scores": {
+        "completeness": 85,
+        "citations": 99,
+        "placeholders": 100,
+        "compliance": 80,
+        "evidence": 100,
+        "service": 90,
+        "overall": 92.1
+      },
+      "verdict": "GO",
+      "issues": [
+        "Missing components: readiness_score",
+        "Found 1 incomplete/broken citations out of 129 total"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add readiness_score document to this stack",
+        "FIX: Resolve 1 broken citations (missing page numbers, placeholder text)"
+      ]
+    },
+    "02_TRIAL/FULL_14TH_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\FULL_14TH_STACK",
+      "exists": true,
+      "file_count": 73,
+      "md_files": 18,
+      "txt_files": 0,
+      "pdf_files": 50,
+      "scores": {
+        "completeness": 85,
+        "citations": 99,
+        "placeholders": 10,
+        "compliance": 80,
+        "evidence": 100,
+        "service": 70,
+        "overall": 72.1
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Missing components: readiness_score",
+        "Found 1 incomplete/broken citations out of 269 total",
+        "13 unresolved placeholders found (samples: [Address on file], [Address], [Address on file])",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add readiness_score document to this stack",
+        "FIX: Resolve 1 broken citations (missing page numbers, placeholder text)",
+        "CRITICAL: Resolve all 13 placeholders -- document not ready for filing",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "02_TRIAL/JUDICIAL_PACKET": {
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\JUDICIAL_PACKET",
+      "exists": true,
+      "file_count": 32,
+      "md_files": 1,
+      "txt_files": 2,
+      "pdf_files": 9,
+      "scores": {
+        "completeness": 71,
+        "citations": 70,
+        "placeholders": 100,
+        "compliance": 70,
+        "evidence": 90,
+        "service": 90,
+        "overall": 81.2
+      },
+      "verdict": "GO",
+      "issues": [
+        "Missing components: verification/affidavit, readiness_score"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add verification/affidavit document to this stack",
+        "ADD: Create/add readiness_score document to this stack"
+      ]
+    },
+    "02_TRIAL/JUDICIAL_PACKET_R2": {
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\JUDICIAL_PACKET_R2",
+      "exists": true,
+      "file_count": 14,
+      "md_files": 1,
+      "txt_files": 0,
+      "pdf_files": 2,
+      "scores": {
+        "completeness": 42,
+        "citations": 70,
+        "placeholders": 85,
+        "compliance": 65,
+        "evidence": 75,
+        "service": 20,
+        "overall": 61.0
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Missing components: verification/affidavit, service/certificate, filing_instructions, readiness_score",
+        "1 unresolved placeholder(s): [address / phone / email]",
+        "No proof of service document found"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add verification/affidavit document to this stack",
+        "ADD: Create/add service/certificate document to this stack",
+        "ADD: Create/add filing_instructions document to this stack",
+        "ADD: Create/add readiness_score document to this stack",
+        "FIX: Resolve 1 remaining placeholder(s)",
+        "ADD: Create proof of service / certificate of service document"
+      ]
+    },
+    "02_TRIAL/PROBATE_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\PROBATE_STACK",
+      "exists": true,
+      "file_count": 1,
+      "md_files": 1,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 95,
+        "citations": 95,
+        "placeholders": 100,
+        "compliance": 95,
+        "evidence": 90,
+        "service": 95,
+        "overall": 95.0
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "02_TRIAL/SHADY_OAKS": {
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\SHADY_OAKS",
+      "exists": true,
+      "file_count": 446,
+      "md_files": 22,
+      "txt_files": 218,
+      "pdf_files": 93,
+      "scores": {
+        "completeness": 85,
+        "citations": 98,
+        "placeholders": 10,
+        "compliance": 80,
+        "evidence": 100,
+        "service": 70,
+        "overall": 72.0
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Missing components: readiness_score",
+        "Found 12 incomplete/broken citations out of 849 total",
+        "16 unresolved placeholders found (samples: [TBD -- Discovery], [TBD -- Discovery], [TBD -- Discovery], [Insert date], [Insert date], [date], [DATE], [date], [Address, Phone, Email], [Address])",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add readiness_score document to this stack",
+        "FIX: Resolve 12 broken citations (missing page numbers, placeholder text)",
+        "CRITICAL: Resolve all 16 placeholders -- document not ready for filing",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "02_TRIAL/SHADY_OAKS_EXPANDED_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\SHADY_OAKS_EXPANDED_STACK",
+      "exists": true,
+      "file_count": 13,
+      "md_files": 9,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 94,
+        "placeholders": 85,
+        "compliance": 80,
+        "evidence": 80,
+        "service": 70,
+        "overall": 83.3
+      },
+      "verdict": "GO",
+      "issues": [
+        "Missing components: verification/affidavit",
+        "Found 3 incomplete/broken citations out of 45 total",
+        "1 unresolved placeholder(s): [Address]",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add verification/affidavit document to this stack",
+        "FIX: Resolve 3 broken citations (missing page numbers, placeholder text)",
+        "FIX: Resolve 1 remaining placeholder(s)",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "02_TRIAL/WATSON_TORT": {
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\WATSON_TORT",
+      "exists": true,
+      "file_count": 18,
+      "md_files": 9,
+      "txt_files": 0,
+      "pdf_files": 9,
+      "scores": {
+        "completeness": 71,
+        "citations": 99,
+        "placeholders": 44,
+        "compliance": 85,
+        "evidence": 100,
+        "service": 70,
+        "overall": 76.2
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Missing components: filing_instructions, readiness_score",
+        "Found 2 incomplete/broken citations out of 281 total",
+        "7 unresolved placeholders found (samples: [Address on file with Court], [Address on file with Court], [address])",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add filing_instructions document to this stack",
+        "ADD: Create/add readiness_score document to this stack",
+        "FIX: Resolve 2 broken citations (missing page numbers, placeholder text)",
+        "CRITICAL: Resolve all 7 placeholders -- document not ready for filing",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "02_TRIAL/WATSON_TORT_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\WATSON_TORT_STACK",
+      "exists": true,
+      "file_count": 11,
+      "md_files": 9,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 100,
+        "citations": 98,
+        "placeholders": 85,
+        "compliance": 80,
+        "evidence": 80,
+        "service": 70,
+        "overall": 87.7
+      },
+      "verdict": "GO",
+      "issues": [
+        "Found 2 incomplete/broken citations out of 84 total",
+        "1 unresolved placeholder(s): [ADDRESS]",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "FIX: Resolve 2 broken citations (missing page numbers, placeholder text)",
+        "FIX: Resolve 1 remaining placeholder(s)",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "03_FED/APEX_FILING_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\APEX_FILING_STACK",
+      "exists": true,
+      "file_count": 7,
+      "md_files": 0,
+      "txt_files": 7,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 100,
+        "citations": 95,
+        "placeholders": 10,
+        "compliance": 100,
+        "evidence": 90,
+        "service": 70,
+        "overall": 76.8
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Found 39 incomplete/broken citations out of 779 total",
+        "22 unresolved placeholders found (samples: [Entered March 2, 1983.], [Entered March 28, 1983; rescinded\n    February 6, 2007.], [Entered October 7, 1983.], [date], [DATE], [NAME], [ADDRESS TO BE PROVIDED UPON FILING], [ADDRESS PLACEHOLDER], [ADDRESS PLACEHOLDER], <<<  and  Denying  Post-Judgment Relief *   The  May  16, 2025  order\n    imposing  a filing  >>)",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "FIX: Resolve 39 broken citations (missing page numbers, placeholder text)",
+        "CRITICAL: Resolve all 22 placeholders -- document not ready for filing",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "03_FED/CONVERGED_FILING_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\CONVERGED_FILING_STACK",
+      "exists": true,
+      "file_count": 35,
+      "md_files": 28,
+      "txt_files": 7,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 100,
+        "citations": 97,
+        "placeholders": 10,
+        "compliance": 100,
+        "evidence": 90,
+        "service": 70,
+        "overall": 77.0
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Found 41 incomplete/broken citations out of 1423 total",
+        "135 unresolved placeholders found (samples: [Entered March 2, 1983.], [Entered March 28, 1983; rescinded\n    February 6, 2007.], [Entered October 7, 1983.], [DATE \u2014 to be specified], [DATE], [DATE], [NAME], [NAME], [NAME], [Address to be served via Summons])",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "FIX: Resolve 41 broken citations (missing page numbers, placeholder text)",
+        "CRITICAL: Resolve all 135 placeholders -- document not ready for filing",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "03_FED/EDMI_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\EDMI_STACK",
+      "exists": true,
+      "file_count": 1,
+      "md_files": 1,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 100,
+        "citations": 95,
+        "placeholders": 85,
+        "compliance": 90,
+        "evidence": 70,
+        "service": 85,
+        "overall": 87.5
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "03_FED/FAIR_HOUSING_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK",
+      "exists": true,
+      "file_count": 5,
+      "md_files": 5,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 95,
+        "placeholders": 85,
+        "compliance": 80,
+        "evidence": 90,
+        "service": 70,
+        "overall": 85.0
+      },
+      "verdict": "GO",
+      "issues": [
+        "Missing components: verification/affidavit",
+        "1 unresolved placeholder(s): [Address]",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add verification/affidavit document to this stack",
+        "FIX: Resolve 1 remaining placeholder(s)",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "03_FED/FINAL_1983_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FINAL_1983_STACK",
+      "exists": true,
+      "file_count": 5,
+      "md_files": 5,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 95,
+        "placeholders": 100,
+        "compliance": 85,
+        "evidence": 85,
+        "service": 85,
+        "overall": 89.2
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "03_FED/SIXTH_CIRCUIT_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\SIXTH_CIRCUIT_STACK",
+      "exists": true,
+      "file_count": 2,
+      "md_files": 2,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 57,
+        "citations": 95,
+        "placeholders": 100,
+        "compliance": 75,
+        "evidence": 40,
+        "service": 90,
+        "overall": 74.8
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Missing components: verification/affidavit, exhibits/evidence, readiness_score",
+        "No exhibit references or evidence files found"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add verification/affidavit document to this stack",
+        "ADD: Create/add exhibits/evidence document to this stack",
+        "ADD: Create/add readiness_score document to this stack",
+        "ADD: Create exhibit list and attach supporting evidence"
+      ]
+    },
+    "03_FED/WDMI_FULL_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\WDMI_FULL_STACK",
+      "exists": true,
+      "file_count": 32,
+      "md_files": 15,
+      "txt_files": 0,
+      "pdf_files": 16,
+      "scores": {
+        "completeness": 100,
+        "citations": 95,
+        "placeholders": 50,
+        "compliance": 95,
+        "evidence": 100,
+        "service": 90,
+        "overall": 88.3
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "04_MSC/ORIGINAL_ACTION": {
+      "path": "C:\\Users\\andre\\LitigationOS\\04_MSC_ORIGINAL_ACTION",
+      "exists": true,
+      "file_count": 7,
+      "md_files": 7,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 99,
+        "placeholders": 70,
+        "compliance": 90,
+        "evidence": 90,
+        "service": 90,
+        "overall": 87.3
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "06_CS/AG_CIVIL_RIGHTS": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\COMPLAINT_STACKS\\AG_CIVIL_RIGHTS",
+      "exists": true,
+      "file_count": 1,
+      "md_files": 1,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 85,
+        "placeholders": 100,
+        "compliance": 85,
+        "evidence": 75,
+        "service": 90,
+        "overall": 86.7
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "06_CS/BAR_GRIEVANCE": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\COMPLAINT_STACKS\\BAR_GRIEVANCE",
+      "exists": true,
+      "file_count": 1,
+      "md_files": 1,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 90,
+        "placeholders": 100,
+        "compliance": 80,
+        "evidence": 75,
+        "service": 90,
+        "overall": 86.7
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "06_CS/COA_EMERGENCY": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\COMPLAINT_STACKS\\COA_EMERGENCY",
+      "exists": true,
+      "file_count": 1,
+      "md_files": 1,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 95,
+        "placeholders": 100,
+        "compliance": 85,
+        "evidence": 75,
+        "service": 90,
+        "overall": 88.3
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "06_CS/COURT_MOTIONS": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\COMPLAINT_STACKS\\COURT_MOTIONS",
+      "exists": true,
+      "file_count": 3,
+      "md_files": 3,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 42,
+        "citations": 95,
+        "placeholders": 100,
+        "compliance": 80,
+        "evidence": 40,
+        "service": 90,
+        "overall": 71.8
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Missing components: verification/affidavit, exhibits/evidence, filing_instructions, readiness_score",
+        "No exhibit references or evidence files found"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add verification/affidavit document to this stack",
+        "ADD: Create/add exhibits/evidence document to this stack",
+        "ADD: Create/add filing_instructions document to this stack",
+        "ADD: Create/add readiness_score document to this stack",
+        "ADD: Create exhibit list and attach supporting evidence"
+      ]
+    },
+    "06_CS/HHS_OCR_HIPAA": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\COMPLAINT_STACKS\\HHS_OCR_HIPAA",
+      "exists": true,
+      "file_count": 1,
+      "md_files": 1,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 90,
+        "placeholders": 100,
+        "compliance": 80,
+        "evidence": 75,
+        "service": 90,
+        "overall": 86.7
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "06_CS/JTC_COMPLAINT": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\COMPLAINT_STACKS\\JTC_COMPLAINT",
+      "exists": true,
+      "file_count": 1,
+      "md_files": 1,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 75,
+        "placeholders": 100,
+        "compliance": 85,
+        "evidence": 80,
+        "service": 90,
+        "overall": 85.8
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "06_CS/MDCR_COMPLAINT": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\COMPLAINT_STACKS\\MDCR_COMPLAINT",
+      "exists": true,
+      "file_count": 1,
+      "md_files": 1,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 85,
+        "placeholders": 100,
+        "compliance": 80,
+        "evidence": 75,
+        "service": 90,
+        "overall": 85.8
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "06_CS/MDHHS_RECIPIENT_RIGHTS": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\COMPLAINT_STACKS\\MDHHS_RECIPIENT_RIGHTS",
+      "exists": true,
+      "file_count": 1,
+      "md_files": 1,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 90,
+        "placeholders": 100,
+        "compliance": 80,
+        "evidence": 75,
+        "service": 90,
+        "overall": 86.7
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "06_CS/PROSECUTOR_ETHICS": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\COMPLAINT_STACKS\\PROSECUTOR_ETHICS",
+      "exists": true,
+      "file_count": 1,
+      "md_files": 1,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 95,
+        "placeholders": 100,
+        "compliance": 75,
+        "evidence": 75,
+        "service": 90,
+        "overall": 86.7
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "06_EMER/ADMIN_COMPLAINTS": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\ADMIN_COMPLAINTS",
+      "exists": true,
+      "file_count": 7,
+      "md_files": 7,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 71,
+        "citations": 95,
+        "placeholders": 10,
+        "compliance": 75,
+        "evidence": 90,
+        "service": 20,
+        "overall": 60.8
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Missing components: verification/affidavit, service/certificate",
+        "28 unresolved placeholders found (samples: [DATE], [DATE], [DATE], [Address], [Address \u2014 verify registered agent], [Address \u2014 NYC-based])",
+        "No proof of service document found"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add verification/affidavit document to this stack",
+        "ADD: Create/add service/certificate document to this stack",
+        "CRITICAL: Resolve all 28 placeholders -- document not ready for filing",
+        "ADD: Create proof of service / certificate of service document"
+      ]
+    },
+    "06_EMER/APEX_FILING_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\APEX_FILING_STACK",
+      "exists": true,
+      "file_count": 7,
+      "md_files": 0,
+      "txt_files": 7,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 100,
+        "citations": 93,
+        "placeholders": 10,
+        "compliance": 100,
+        "evidence": 90,
+        "service": 70,
+        "overall": 76.5
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Found 256 incomplete/broken citations out of 3068 total",
+        "60 unresolved placeholders found (samples: [XXX], [TBD], [TBD], [TBD], [Insert contents of Exhibit A\n    here as filed or at\n    Source: master_timeline | Ref: evidence_quotes\n\n  [3500], [Entered October 7, 1983.], [Entered March 15, 1989; superseded\n    by AO 2017-3, entered November 15, 20\n    Source: master_timeline | Ref: evidence_quotes\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  1989-07\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n  [45], [Entered October 10, 1995.], [DATE], [Date:\n    September 19, 2024])",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "FIX: Resolve 256 broken citations (missing page numbers, placeholder text)",
+        "CRITICAL: Resolve all 60 placeholders -- document not ready for filing",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "06_EMER/CONVERGED_FILING_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\CONVERGED_FILING_STACK",
+      "exists": true,
+      "file_count": 37,
+      "md_files": 30,
+      "txt_files": 7,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 100,
+        "citations": 87,
+        "placeholders": 10,
+        "compliance": 100,
+        "evidence": 90,
+        "service": 70,
+        "overall": 75.5
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Found 1819 incomplete/broken citations out of 11394 total",
+        "147 unresolved placeholders found (samples: [XXX], [TBD], [TBD], [TBD], [Insert contents of Exhibit A\n    here as filed or at\n    Source: master_timeline | Ref: evidence_quotes\n\n  [3500], [Entered October 7, 1983.], [Entered March 15, 1989; superseded\n    by AO 2017-3, entered November 15, 20\n    Source: master_timeline | Ref: evidence_quotes\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  1989-07\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n  [45], [Entered October 10, 1995.], [DATE], [DATE])",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "FIX: Resolve 1819 broken citations (missing page numbers, placeholder text)",
+        "CRITICAL: Resolve all 147 placeholders -- document not ready for filing",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "06_EMER/FINAL_EMERGENCY_PACKAGE": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\FINAL_EMERGENCY_PACKAGE",
+      "exists": true,
+      "file_count": 9,
+      "md_files": 7,
+      "txt_files": 0,
+      "pdf_files": 1,
+      "scores": {
+        "completeness": 71,
+        "citations": 95,
+        "placeholders": 36,
+        "compliance": 85,
+        "evidence": 60,
+        "service": 70,
+        "overall": 68.0
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Missing components: exhibits/evidence, readiness_score",
+        "8 unresolved placeholders found (samples: [XXXX], [Date of Filing], [Date], [Date], [Address on file with the Court], [Address])",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add exhibits/evidence document to this stack",
+        "ADD: Create/add readiness_score document to this stack",
+        "CRITICAL: Resolve all 8 placeholders -- document not ready for filing",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "06_EMER/FINAL_EMERGENCY_STACK": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\FINAL_EMERGENCY_STACK",
+      "exists": true,
+      "file_count": 11,
+      "md_files": 10,
+      "txt_files": 0,
+      "pdf_files": 0,
+      "scores": {
+        "completeness": 85,
+        "citations": 99,
+        "placeholders": 52,
+        "compliance": 80,
+        "evidence": 40,
+        "service": 70,
+        "overall": 71.5
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Missing components: exhibits/evidence",
+        "Found 1 incomplete/broken citations out of 110 total",
+        "6 unresolved placeholders found (samples: [Address], [Address], [Address])",
+        "No exhibit references or evidence files found",
+        "Service template has unfilled fields"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add exhibits/evidence document to this stack",
+        "FIX: Resolve 1 broken citations (missing page numbers, placeholder text)",
+        "CRITICAL: Resolve all 6 placeholders -- document not ready for filing",
+        "ADD: Create exhibit list and attach supporting evidence",
+        "FIX: Fill in all party names and addresses in proof of service"
+      ]
+    },
+    "06_EMER/HEALTHWEST_INVESTIGATION": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\HEALTHWEST_INVESTIGATION",
+      "exists": true,
+      "file_count": 98,
+      "md_files": 0,
+      "txt_files": 0,
+      "pdf_files": 8,
+      "scores": {
+        "completeness": 85,
+        "citations": 95,
+        "placeholders": 100,
+        "compliance": 80,
+        "evidence": 70,
+        "service": 85,
+        "overall": 85.8
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    },
+    "06_EMER/HUD_COMPLAINT": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\HUD_COMPLAINT",
+      "exists": true,
+      "file_count": 11,
+      "md_files": 5,
+      "txt_files": 0,
+      "pdf_files": 6,
+      "scores": {
+        "completeness": 71,
+        "citations": 95,
+        "placeholders": 100,
+        "compliance": 60,
+        "evidence": 90,
+        "service": 20,
+        "overall": 76.5
+      },
+      "verdict": "CONDITIONAL",
+      "issues": [
+        "Missing components: service/certificate, readiness_score",
+        "No proof of service document found"
+      ],
+      "fix_instructions": [
+        "ADD: Create/add service/certificate document to this stack",
+        "ADD: Create/add readiness_score document to this stack",
+        "ADD: Create proof of service / certificate of service document"
+      ]
+    },
+    "06_EMER/LARA_COMPLAINT": {
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\LARA_COMPLAINT",
+      "exists": true,
+      "file_count": 9,
+      "md_files": 4,
+      "txt_files": 0,
+      "pdf_files": 5,
+      "scores": {
+        "completeness": 85,
+        "citations": 98,
+        "placeholders": 100,
+        "compliance": 75,
+        "evidence": 100,
+        "service": 85,
+        "overall": 90.5
+      },
+      "verdict": "GO",
+      "issues": [],
+      "fix_instructions": []
+    }
+  }
+}

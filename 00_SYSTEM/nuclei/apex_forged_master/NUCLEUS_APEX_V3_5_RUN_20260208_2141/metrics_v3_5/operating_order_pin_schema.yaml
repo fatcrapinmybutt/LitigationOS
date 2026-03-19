@@ -1,0 +1,22 @@
+# OperatingOrderPin schema (LitigationOS nucleus pillar)
+OperatingOrderPin:
+  order_id: string            # stable ID (ROA entry id or synthetic if unknown)
+  court: enum[TRIAL,COA,MSC,JTC,OTHER]
+  case_id: string
+  title: string               # order label
+  signed_date: date
+  entered_date: date
+  roa_entry: string           # register of actions / docket entry identifier
+  service_method: string
+  service_date: date
+  effective_date: date
+  status: enum[EFFECTIVE,STAYED,SUPERSEDED,UNKNOWN]
+  superseded_by: string       # order_id
+  stayed_by: string           # order_id or higher-court stay ref
+  file_ref: string            # EvidenceAtom pointer (integrity_key + relpath)
+  notes: string
+
+Rules:
+  - Vehicle validity requires pinned OperatingOrderPin for the controlling order in scope.
+  - If any field is unknown, record UNKNOWN explicitly; do not infer.
+  - Promotion to FILE_READY/PCG requires QUOTELOCK-verified extracts for any quoted order text.

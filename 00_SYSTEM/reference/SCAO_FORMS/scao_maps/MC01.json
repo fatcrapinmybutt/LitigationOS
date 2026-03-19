@@ -1,0 +1,19 @@
+{
+  "form_id": "MC01",
+  "required_fields": [
+    "plaintiff_name",
+    "defendant_name",
+    "court_name",
+    "case_number",
+    "venue_county",
+    "date"
+  ],
+  "field_map": {
+    "PLAINTIFF_NAME": "{plaintiff_name}",
+    "DEFENDANT_NAME": "{defendant_name}",
+    "COURT_NAME": "{court_name}",
+    "CASE_NUMBER": "{case_number}",
+    "VENUE_COUNTY": "{venue_county}",
+    "DATE": "{date}"
+  }
+}

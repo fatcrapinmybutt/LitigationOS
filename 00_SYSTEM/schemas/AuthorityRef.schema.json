@@ -1,0 +1,55 @@
+{
+  "additionalProperties": false,
+  "description": "A legal authority citation with text excerpt.",
+  "properties": {
+    "authority": {
+      "description": "Rule number (MCR/MCL/MRE)",
+      "minLength": 1,
+      "title": "Authority",
+      "type": "string"
+    },
+    "title": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Title"
+    },
+    "text": {
+      "anyOf": [
+        {
+          "maxLength": 1000,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "First ~800 chars",
+      "title": "Text"
+    },
+    "source": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source"
+    }
+  },
+  "required": [
+    "authority"
+  ],
+  "title": "AuthorityRef",
+  "type": "object"
+}

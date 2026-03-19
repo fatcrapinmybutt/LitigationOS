@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <motion name="motion">
+    <meta>
+      <identification source="#litigationos">
+        <FRBRWork>
+          <FRBRthis value="urn:akn:us-mi:case:{caseNumber}!motion.disqualify_judge"/>
+          <FRBRuri value="urn:akn:us-mi:case:{caseNumber}"/>
+          <FRBRdate date="2026-02-28" name="Generation"/>
+          <FRBRauthor href="#movingParty"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+      </identification>
+      <references source="#litigationos">
+        <TLCDocument eId="authority_mcr_2_003" href="urn:akn:us-mi:rule:mcr.2.003" showAs="MCR 2.003"/>
+        <TLCDocument eId="authority_cain" href="urn:akn:us-mi:case:cain.v.mdoc.1996" showAs="Cain v Dep't of Corrections (1996)"/>
+        <TLCDocument eId="authority_crampton" href="urn:akn:us-mi:case:crampton.v.sos.1975" showAs="Crampton v Dep't of State (1975)"/>
+      </references>
+    </meta>
+
+    <mainBody>
+      <p eId="p1">NOW COMES the Moving Party and moves for disqualification of the assigned judge under MCR 2.003.</p>
+
+      <p eId="grounds_hdr">GROUNDS</p>
+      <p eId="grounds_1">[Select prong(s): (a) actual bias/prejudice; (b)(i) serious risk of actual bias; (b)(ii) appearance of impropriety (Canon 2).]</p>
+
+      <p eId="facts_hdr">FACTS SUPPORTING DISQUALIFICATION</p>
+      <p eId="facts_1">[Transcript-anchored quotations + orders + objective facts. Tie each fact to the prong asserted.]</p>
+
+      <p eId="law_hdr">LEGAL STANDARD</p>
+      <p eId="law_1">[Presumption of impartiality; burden on moving party; due process disqualification reserved for extreme cases.]</p>
+
+      <p eId="relief_hdr">RELIEF REQUESTED</p>
+      <p eId="relief_1">[Order disqualifying and reassigning per procedure.]</p>
+
+      <p eId="sig_hdr">SIGNATURE</p>
+      <p eId="sig_1">/s/ {movingPartyName}</p>
+
+      <p eId="cos_hdr">CERTIFICATE/PROOF OF SERVICE</p>
+      <p eId="cos_1">[Insert date, method, recipients.]</p>
+
+      <p eId="idx_hdr">INDEX TO ATTACHMENTS</p>
+      <p eId="idx_1">Attachment 1 — Transcript Excerpt(s) — Attachment_1_Transcript_Excerpts.pdf</p>
+      <p eId="idx_2">Attachment 2 — Order(s) — Attachment_2_Orders.pdf</p>
+    </mainBody>
+  </motion>
+</akomaNtoso>

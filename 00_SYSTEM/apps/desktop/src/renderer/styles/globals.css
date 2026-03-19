@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-omega-bg text-omega-text font-sans antialiased;
+    -webkit-app-region: no-drag;
+  }
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-omega-bg;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-omega-border rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-omega-accent;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-omega-card border border-omega-border rounded-xl p-6 
+           shadow-lg shadow-black/20 backdrop-blur-sm;
+  }
+  .card-hover {
+    @apply card transition-all duration-200 hover:border-omega-accent 
+           hover:shadow-omega-accent/10;
+  }
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-critical {
+    @apply badge bg-omega-critical/20 text-omega-critical border border-omega-critical/30;
+  }
+  .badge-high {
+    @apply badge bg-omega-high/20 text-omega-high border border-omega-high/30;
+  }
+  .badge-standard {
+    @apply badge bg-omega-standard/20 text-omega-standard border border-omega-standard/30;
+  }
+  .badge-success {
+    @apply badge bg-omega-success/20 text-omega-success border border-omega-success/30;
+  }
+  .stat-value {
+    @apply text-4xl font-bold tracking-tight;
+  }
+  .stat-label {
+    @apply text-sm text-omega-muted uppercase tracking-wider mt-1;
+  }
+}

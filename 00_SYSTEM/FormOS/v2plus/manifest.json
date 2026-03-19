@@ -1,0 +1,66 @@
+{
+  "pack": "LitigationOS_FormOS_Upgrade_v2plus_20260228",
+  "generated": "2026-02-28",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2749,
+      "sha256": "3a3d45c74a157f3aa2b2c7f9f907e27324994a0554da9529dcdced3bcd7ca8a0"
+    },
+    {
+      "path": "config/formos_config.example.json",
+      "bytes": 511,
+      "sha256": "f99c317c38bc19148bb2420856ffadfd3d7b1bf6c81a556125a0f5977d947fed"
+    },
+    {
+      "path": "docs/AUDIT_NOTES.md",
+      "bytes": 1060,
+      "sha256": "e8c26ef6e20117e7df11f17a68e7f19ea7a35cf3f34e901ffc2dd543dc36f21e"
+    },
+    {
+      "path": "docs/FOLDER_PLANES_v2.md",
+      "bytes": 985,
+      "sha256": "20f71d7512e1b5a3985634de2bf8024e04fc002acc3cf15229d588a44dac43e0"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1194,
+      "sha256": "d681b620e0423a86cf77294439a34c147a9ac005ee4eba75ac9a8e5dc323a1b7"
+    },
+    {
+      "path": "rules/mi_rulebank.yaml",
+      "bytes": 1420,
+      "sha256": "10ecae215eb0816b390200eaa54ebe0dc96521cd1bf5ed5aeaaeec2c9e4b298e"
+    },
+    {
+      "path": "tooling/build_cyclepack.py",
+      "bytes": 2100,
+      "sha256": "bfe70cbbc0f0e2bfd04072825a20739681b616905926d8d5a55c01c77c90a335"
+    },
+    {
+      "path": "tooling/export_neo4j_from_formos_db.py",
+      "bytes": 2981,
+      "sha256": "df8d0bdb55d2bbf32d4a795613dad507c19cc3031d4fae682d93b408b8e61bd0"
+    },
+    {
+      "path": "tooling/formos_cli.py",
+      "bytes": 31604,
+      "sha256": "3cddd1eb98df96fab2f666a8da5951f5e497dbd32f01b9290e601816f49cbcc8"
+    },
+    {
+      "path": "tooling/mifile_lint.py",
+      "bytes": 4620,
+      "sha256": "7dbae4460d53e0dfcaed44a12fabed05b64bd319f6cdc952a33bd2933a4c54db"
+    },
+    {
+      "path": "tooling/pdf_fieldmap_extract.py",
+      "bytes": 2605,
+      "sha256": "c36498c4a1cccf0d77470c8a52a42049acc2f4dfb3d4321e0936bb1a1ddb1327"
+    },
+    {
+      "path": "tooling/schema_v2.sql",
+      "bytes": 3059,
+      "sha256": "2b45ec871a5c151c1ba2a903370b2f8567c672b5191cccd500ac2f212c459921"
+    }
+  ]
+}

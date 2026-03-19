@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <motion name="motion" eId="motion_foc65">
+    <meta>
+      <identification source="#litigationos">
+        <FRBRWork>
+          <FRBRthis value="urn:akn:us-mi:form:FOC65:2026-02-28!motion.parenting_time"/>
+          <FRBRuri value="urn:akn:us-mi:form:FOC65"/>
+          <FRBRdate date="2026-02-28" name="Generation"/>
+          <FRBRauthor href="#movingParty"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="urn:akn:us-mi:form:FOC65:2026-02-28!motion.parenting_time@en"/>
+          <FRBRuri value="urn:akn:us-mi:form:FOC65:2026-02-28!motion.parenting_time"/>
+          <FRBRdate date="2026-02-28" name="Generation"/>
+          <FRBRauthor href="#movingParty"/>
+          <FRBRlanguage language="en"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="urn:akn:us-mi:form:FOC65:2026-02-28!motion.parenting_time@en.xml"/>
+          <FRBRuri value="urn:akn:us-mi:form:FOC65:2026-02-28!motion.parenting_time@en"/>
+          <FRBRdate date="2026-02-28" name="Generation"/>
+          <FRBRauthor href="#litigationos"/>
+        </FRBRManifestation>
+      </identification>
+
+      <references source="#litigationos">
+        <TLCOrganization eId="court" href="urn:akn:us-mi:court:trial" showAs="[FIELD:court_name]"/>
+        <TLCPerson eId="movingParty" href="urn:akn:us-mi:person:moving" showAs="[FIELD:moving_party_name]"/>
+        <TLCPerson eId="otherParty" href="urn:akn:us-mi:person:other" showAs="[FIELD:other_party_name]"/>
+        <TLCDocument eId="authority_foc65" href="urn:akn:us-mi:form:foc.65" showAs="FOC 65"/>
+        <TLCDocument eId="authority_mcr_2_119" href="urn:akn:us-mi:rule:mcr.2.119" showAs="MCR 2.119"/>
+        <TLCDocument eId="authority_mcr_3_203" href="urn:akn:us-mi:rule:mcr.3.203" showAs="MCR 3.203"/>
+      </references>
+      <publication showAs="MiFILE bundle" name="MiFILE"/>
+    </meta>
+
+    <mainBody>
+      <block eId="caption">
+        <p eId="cap_court">[FIELD:court_name]</p>
+        <p eId="cap_case">Case No.: [FIELD:case_no] — Judge/Referee: [FIELD:judge_referee]</p>
+        <p eId="cap_parties">[FIELD:plaintiff_name] v [FIELD:defendant_name]</p>
+      </block>
+
+      <p eId="intro">NOW COMES the Moving Party and moves this Court for an order regarding parenting time.</p>
+
+      <heading eId="facts_hdr">FACTS</heading>
+      <p eId="facts_required">[FIELD:pt_incidents_narrative]</p>
+
+      <heading eId="law_hdr">GOVERNING STANDARDS</heading>
+      <p eId="law_1">Motion practice is governed by MCR 2.119. Service references appear in the form certificate (MCR 3.203).</p>
+
+      <heading eId="relief_hdr">RELIEF REQUESTED</heading>
+      <p eId="relief_1">[FIELD:relief_requested]</p>
+
+      <heading eId="sig_hdr">SIGNATURE</heading>
+      <p eId="sig_1">/s/ [FIELD:moving_party_name]</p>
+
+      <heading eId="cos_hdr">CERTIFICATE/PROOF OF SERVICE</heading>
+      <p eId="cos_1">[FIELD:service_block]</p>
+
+      <heading eId="attachments_index_hdr">INDEX TO ATTACHMENTS</heading>
+      <p eId="attachments_index">[FIELD:index_to_attachments]</p>
+    </mainBody>
+  </motion>
+</akomaNtoso>

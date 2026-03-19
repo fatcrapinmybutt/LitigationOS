@@ -1,0 +1,316 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:litigationos:mi:manifest:schema:v1",
+  "title": "LitigationOS Michigan Clerk Stack Manifest",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "jurisdiction",
+    "package",
+    "case",
+    "documents"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "enum": [
+        "litigationos.mi_manifest.v1.1"
+      ]
+    },
+    "jurisdiction": {
+      "type": "object",
+      "required": [
+        "state",
+        "efilingSystem"
+      ],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": [
+            "MI"
+          ]
+        },
+        "courtSystem": {
+          "type": "string"
+        },
+        "efilingSystem": {
+          "type": "string",
+          "enum": [
+            "MiFILE"
+          ]
+        },
+        "authoritySnapshots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "source",
+              "retrievedDate"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "retrievedDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "case": {
+      "type": "object",
+      "required": [
+        "caption",
+        "caseNumber",
+        "courtName",
+        "county",
+        "caseType",
+        "parties"
+      ],
+      "properties": {
+        "caseId": {
+          "type": "string"
+        },
+        "caption": {
+          "type": "string",
+          "minLength": 1
+        },
+        "caseNumber": {
+          "type": "string",
+          "minLength": 1
+        },
+        "courtName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "county": {
+          "type": "string",
+          "minLength": 1
+        },
+        "judgeOrReferee": {
+          "type": "string"
+        },
+        "caseType": {
+          "type": "string",
+          "enum": [
+            "domestic_relations",
+            "general_civil",
+            "ppo",
+            "landlord_tenant",
+            "other"
+          ]
+        },
+        "parties": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "role",
+              "name",
+              "type"
+            ],
+            "properties": {
+              "role": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "person",
+                  "entity",
+                  "government"
+                ]
+              },
+              "address": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "package": {
+      "type": "object",
+      "required": [
+        "packageId",
+        "rank",
+        "plane",
+        "title",
+        "goal",
+        "controllingAuthorities"
+      ],
+      "properties": {
+        "packageId": {
+          "type": "string"
+        },
+        "rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "plane": {
+          "type": "string",
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "goal": {
+          "type": "string"
+        },
+        "controllingAuthorities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "preconditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "evidencePointers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidId",
+          "source",
+          "title",
+          "pointer"
+        ],
+        "properties": {
+          "evidId": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "pointer": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "hashSha256": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "documents": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "docId",
+          "docType",
+          "title",
+          "filingOrder",
+          "required",
+          "formatChecks"
+        ],
+        "properties": {
+          "docId": {
+            "type": "string"
+          },
+          "docType": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "filingOrder": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "filename": {
+            "type": "string"
+          },
+          "formatChecks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "dependsOn": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "validationProfile": {
+      "type": "object",
+      "properties": {
+        "mifile": {
+          "type": "boolean"
+        },
+        "mcrTiming": {
+          "type": "boolean"
+        },
+        "pageLimit": {
+          "type": "boolean"
+        },
+        "piiRedaction": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

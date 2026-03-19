@@ -1,0 +1,20 @@
+# Michigan timing defaults for motion practice
+# Key: these are defaults; some motion types have overrides (e.g., summary disposition under MCR 2.116(G)).
+version: mcr_timing.v1
+defaults:
+  mcr_2_119_C:
+    motion_service:
+      mail_days_before_hearing: 9
+      delivery_or_eservice_days_before_hearing: 7
+    response_service:
+      mail_days_before_hearing: 5
+      delivery_or_eservice_days_before_hearing: 3
+    court_may_set_different_times: true
+overrides:
+  mcr_2_116_G_summary_disposition:
+    motion_service_days_before_hearing: 21
+    response_service_days_before_hearing: 7
+    reply_brief_days_before_hearing: 4
+    reply_brief_page_limit: 5
+notes:
+  - "Service completeness rules (mail/e-service) live in MCR 2.107 / MCR 1.109; compute deadlines from service method."

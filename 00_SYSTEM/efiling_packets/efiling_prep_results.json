@@ -1,0 +1,142 @@
+[
+  {
+    "filing": "COA Brief 366810",
+    "system": "TrueFiling",
+    "url": "https://www.truefiling.com",
+    "packet_dir": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\efiling_packets\\COA_Brief_366810",
+    "documents": [
+      {
+        "type": "brief",
+        "name": "Appellant's Brief",
+        "source": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\COA_BRIEF_366810_FINAL.pdf",
+        "size_mb": 0.13,
+        "format": ".pdf"
+      },
+      {
+        "type": "appendix",
+        "name": "Appendix",
+        "source": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\COURT_READY\\05_APPENDIX_INDEX.pdf",
+        "size_mb": 0.13,
+        "format": ".pdf"
+      },
+      {
+        "type": "service",
+        "name": "Proof of Service",
+        "source": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\COURT_READY\\06_CERTIFICATE_OF_SERVICE.pdf",
+        "size_mb": 0.13,
+        "format": ".pdf"
+      }
+    ],
+    "issues": [],
+    "ready": true
+  },
+  {
+    "filing": "McNeill Disqualification",
+    "system": "MiFILE",
+    "url": "https://mifile.courts.michigan.gov",
+    "packet_dir": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\efiling_packets\\McNeill_Disqualification",
+    "documents": [
+      {
+        "type": "motion",
+        "name": "Motion to Disqualify",
+        "source": null,
+        "missing": true
+      },
+      {
+        "type": "brief",
+        "name": "Brief in Support",
+        "source": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\FULL_14TH_STACK\\DISQUALIFY_PACKAGE\\BRIEF_IN_SUPPORT.pdf",
+        "size_mb": 0.02,
+        "format": ".pdf"
+      },
+      {
+        "type": "exhibits",
+        "name": "Exhibits",
+        "source": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\FULL_14TH_STACK\\DISQUALIFY_PACKAGE\\EXHIBIT_LIST.pdf",
+        "size_mb": 0.01,
+        "format": ".pdf"
+      },
+      {
+        "type": "order",
+        "name": "Proposed Order",
+        "source": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\FULL_14TH_STACK\\DISQUALIFY_PACKAGE\\PROPOSED_ORDER.pdf",
+        "size_mb": 0.0,
+        "format": ".pdf"
+      },
+      {
+        "type": "service",
+        "name": "Certificate of Service",
+        "source": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\FULL_14TH_STACK\\DISQUALIFY_PACKAGE\\CERTIFICATE_OF_SERVICE.pdf",
+        "size_mb": 0.0,
+        "format": ".pdf"
+      }
+    ],
+    "issues": [
+      "MISSING: Motion to Disqualify"
+    ],
+    "ready": false
+  },
+  {
+    "filing": "MSC Original Action",
+    "system": "TrueFiling",
+    "url": "https://www.truefiling.com",
+    "packet_dir": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\efiling_packets\\MSC_Original_Action",
+    "documents": [
+      {
+        "type": "complaint",
+        "name": "Complaint for Superintending Control",
+        "source": "C:\\Users\\andre\\LitigationOS\\04_MSC_ORIGINAL_ACTION\\A_msc_complaint_superintending_control.md",
+        "size_mb": 0.02,
+        "format": ".md",
+        "needs_conversion": true
+      },
+      {
+        "type": "brief",
+        "name": "Brief in Support",
+        "source": "C:\\Users\\andre\\LitigationOS\\04_MSC_ORIGINAL_ACTION\\B_msc_brief_in_support.md",
+        "size_mb": 0.02,
+        "format": ".md",
+        "needs_conversion": true
+      },
+      {
+        "type": "appendix",
+        "name": "Appendix",
+        "source": "C:\\Users\\andre\\LitigationOS\\04_MSC_ORIGINAL_ACTION\\C_msc_appendix.md",
+        "size_mb": 0.01,
+        "format": ".md",
+        "needs_conversion": true
+      },
+      {
+        "type": "service",
+        "name": "Proof of Service",
+        "source": "C:\\Users\\andre\\LitigationOS\\04_MSC_ORIGINAL_ACTION\\D_proof_of_service.md",
+        "size_mb": 0.0,
+        "format": ".md",
+        "needs_conversion": true
+      },
+      {
+        "type": "verification",
+        "name": "Verification",
+        "source": "C:\\Users\\andre\\LitigationOS\\04_MSC_ORIGINAL_ACTION\\E_verification.md",
+        "size_mb": 0.0,
+        "format": ".md",
+        "needs_conversion": true
+      },
+      {
+        "type": "fee_waiver",
+        "name": "Fee Waiver",
+        "source": null,
+        "missing": true
+      }
+    ],
+    "issues": [
+      "Complaint for Superintending Control: .md format -- needs conversion to ['.pdf']",
+      "Brief in Support: .md format -- needs conversion to ['.pdf']",
+      "Appendix: .md format -- needs conversion to ['.pdf']",
+      "Proof of Service: .md format -- needs conversion to ['.pdf']",
+      "Verification: .md format -- needs conversion to ['.pdf']",
+      "MISSING: Fee Waiver"
+    ],
+    "ready": false
+  }
+]

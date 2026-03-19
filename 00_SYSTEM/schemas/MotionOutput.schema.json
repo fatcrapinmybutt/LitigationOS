@@ -1,0 +1,119 @@
+{
+  "$defs": {
+    "CitationAudit": {
+      "additionalProperties": false,
+      "description": "Result of citation verification against auth_rules + rules_text.",
+      "properties": {
+        "verified": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Verified",
+          "type": "array"
+        },
+        "unverified": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unverified",
+          "type": "array"
+        },
+        "total": {
+          "default": 0,
+          "title": "Total",
+          "type": "integer"
+        }
+      },
+      "title": "CitationAudit",
+      "type": "object"
+    },
+    "IracCheck": {
+      "additionalProperties": false,
+      "description": "IRAC completeness check \u2014 mandatory for every legal document.",
+      "properties": {
+        "complete": {
+          "default": false,
+          "title": "Complete",
+          "type": "boolean"
+        },
+        "present": {
+          "items": {
+            "$ref": "#/$defs/IracSection"
+          },
+          "title": "Present",
+          "type": "array"
+        },
+        "missing": {
+          "items": {
+            "$ref": "#/$defs/IracSection"
+          },
+          "title": "Missing",
+          "type": "array"
+        }
+      },
+      "title": "IracCheck",
+      "type": "object"
+    },
+    "IracSection": {
+      "enum": [
+        "ISSUE",
+        "RULE",
+        "APPLICATION",
+        "CONCLUSION"
+      ],
+      "title": "IracSection",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Structured output from motion generation.",
+  "properties": {
+    "text": {
+      "description": "Full court-ready motion text",
+      "minLength": 50,
+      "title": "Text",
+      "type": "string"
+    },
+    "motion_type": {
+      "title": "Motion Type",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "authority_count": {
+      "minimum": 0,
+      "title": "Authority Count",
+      "type": "integer"
+    },
+    "evidence_count": {
+      "minimum": 0,
+      "title": "Evidence Count",
+      "type": "integer"
+    },
+    "word_count": {
+      "minimum": 0,
+      "title": "Word Count",
+      "type": "integer"
+    },
+    "citation_validation": {
+      "$ref": "#/$defs/CitationAudit"
+    },
+    "irac_check": {
+      "$ref": "#/$defs/IracCheck"
+    }
+  },
+  "required": [
+    "text",
+    "motion_type",
+    "title",
+    "authority_count",
+    "evidence_count",
+    "word_count",
+    "citation_validation",
+    "irac_check"
+  ],
+  "title": "MotionOutput",
+  "type": "object"
+}

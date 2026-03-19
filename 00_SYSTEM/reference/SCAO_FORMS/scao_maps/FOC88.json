@@ -1,0 +1,17 @@
+{
+  "form_id": "FOC88",
+  "required_fields": [
+    "party_name",
+    "case_number",
+    "court_name",
+    "order_terms",
+    "date"
+  ],
+  "field_map": {
+    "PARTY_NAME": "{party_name}",
+    "CASE_NUMBER": "{case_number}",
+    "COURT_NAME": "{court_name}",
+    "ORDER_TERMS": "{order_terms}",
+    "DATE": "{date}"
+  }
+}

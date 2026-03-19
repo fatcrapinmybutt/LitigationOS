@@ -1,0 +1,105 @@
+{
+  "$defs": {
+    "ServiceEntry": {
+      "additionalProperties": false,
+      "description": "One person/entity served.",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "address": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Address"
+        },
+        "method": {
+          "description": "first-class mail | personal | e-filing | email",
+          "title": "Method",
+          "type": "string"
+        },
+        "date_served": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date Served"
+        }
+      },
+      "required": [
+        "name",
+        "method"
+      ],
+      "title": "ServiceEntry",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "MCR 2.107 compliant Certificate of Service.",
+  "properties": {
+    "document_title": {
+      "title": "Document Title",
+      "type": "string"
+    },
+    "case_number": {
+      "title": "Case Number",
+      "type": "string"
+    },
+    "served_parties": {
+      "items": {
+        "$ref": "#/$defs/ServiceEntry"
+      },
+      "minItems": 1,
+      "title": "Served Parties",
+      "type": "array"
+    },
+    "server_name": {
+      "default": "Andrew J. Pigors",
+      "title": "Server Name",
+      "type": "string"
+    },
+    "server_address": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Server Address"
+    },
+    "date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Date"
+    }
+  },
+  "required": [
+    "document_title",
+    "case_number",
+    "served_parties"
+  ],
+  "title": "CertificateOfService",
+  "type": "object"
+}

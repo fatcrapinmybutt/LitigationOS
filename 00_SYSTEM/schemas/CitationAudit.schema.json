@@ -1,0 +1,27 @@
+{
+  "additionalProperties": false,
+  "description": "Result of citation verification against auth_rules + rules_text.",
+  "properties": {
+    "verified": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Verified",
+      "type": "array"
+    },
+    "unverified": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unverified",
+      "type": "array"
+    },
+    "total": {
+      "default": 0,
+      "title": "Total",
+      "type": "integer"
+    }
+  },
+  "title": "CitationAudit",
+  "type": "object"
+}

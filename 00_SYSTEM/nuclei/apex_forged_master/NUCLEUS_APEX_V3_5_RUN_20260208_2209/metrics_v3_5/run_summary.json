@@ -1,0 +1,19 @@
+{
+  "ts": "20260208_2209",
+  "counts": {
+    "graphml_nodes": 40143,
+    "graphml_edges": 214090,
+    "neo4j_nodes_rows": 62027,
+    "nodes_normalized_rows": 73914,
+    "bloom_headings": 4119,
+    "contradictions": 141,
+    "transcript_pages": 8,
+    "exparte_images": 2,
+    "rar_entries": 11,
+    "external_tools": 2
+  },
+  "artifacts": {
+    "poster_pdf": "NUCLEUS_APEX_POSTER_BLUEPRINT_V3_5_20260208_2209.pdf",
+    "metrics_dir": "metrics_v3_5/"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "20260305_212739",
+  "folder": "00_SYSTEM\\backups\\evidence_checkpoints",
+  "dry_run": true,
+  "total_files": 5,
+  "fingerprinted": 5,
+  "duplicate_groups": 1,
+  "duplicates_found": 3,
+  "files_moved": 0,
+  "bytes_saved": 87138,
+  "mb_saved": 0.08,
+  "archive_dir": null,
+  "errors": [],
+  "skipped": [],
+  "details": [
+    {
+      "original": "00_SYSTEM\\backups\\evidence_checkpoints\\evidence_20260305_212344.json",
+      "duplicate": "00_SYSTEM\\backups\\evidence_checkpoints\\evidence_20260305_212411.json",
+      "size": 29046,
+      "sha256": "ef5fc6c5ac3ac9a38452dfba13280d1a69524ca9afdd9f46a1b07012b253442a",
+      "confidence": 0.99,
+      "method": "sha256+content_verified"
+    },
+    {
+      "original": "00_SYSTEM\\backups\\evidence_checkpoints\\evidence_20260305_212344.json",
+      "duplicate": "00_SYSTEM\\backups\\evidence_checkpoints\\evidence_20260305_212725.json",
+      "size": 29046,
+      "sha256": "ef5fc6c5ac3ac9a38452dfba13280d1a69524ca9afdd9f46a1b07012b253442a",
+      "confidence": 0.99,
+      "method": "sha256+content_verified"
+    },
+    {
+      "original": "00_SYSTEM\\backups\\evidence_checkpoints\\evidence_20260305_212344.json",
+      "duplicate": "00_SYSTEM\\backups\\evidence_checkpoints\\evidence_20260305_212732.json",
+      "size": 29046,
+      "sha256": "ef5fc6c5ac3ac9a38452dfba13280d1a69524ca9afdd9f46a1b07012b253442a",
+      "confidence": 0.99,
+      "method": "sha256+content_verified"
+    }
+  ]
+}

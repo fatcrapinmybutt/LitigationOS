@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OMEGA Operation Dashboard</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --bg:#0d0d1a;--card:#1a1a2e;--card-border:#2a2a4a;--text:#e0e0f0;--text-dim:#8888aa;
+    --accent1:#00d4ff;--accent2:#7b2ff7;--accent3:#ff6b6b;--accent4:#ffd93d;--accent5:#6bff6b;
+    --bar-recycle:#ff6b6b;--bar-prune:#ffd93d;--bar-flatten:#00d4ff;--bar-flatten-types:#7b2ff7;--bar-consolidate:#6bff6b;
+  }
+  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:0}
+  a{color:var(--accent1)}
+
+  /* Header */
+  .header{background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);padding:32px 40px;border-bottom:2px solid var(--accent1);position:relative;overflow:hidden}
+  .header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 50%,rgba(0,212,255,.06) 0%,transparent 50%);pointer-events:none}
+  .header h1{font-size:2.2em;font-weight:800;letter-spacing:4px;background:linear-gradient(90deg,var(--accent1),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-shadow:none;margin-bottom:6px}
+  .header .subtitle{color:var(--text-dim);font-size:.95em;letter-spacing:1px}
+  .header .badge{display:inline-block;background:var(--accent1);color:#0d0d1a;font-weight:700;font-size:.7em;padding:3px 10px;border-radius:20px;letter-spacing:1px;margin-left:12px;vertical-align:middle}
+
+  /* Layout */
+  .dashboard{padding:24px 32px;display:grid;gap:24px}
+  .row{display:grid;gap:24px}
+  .row-3{grid-template-columns:repeat(3,1fr)}
+  .row-2{grid-template-columns:1fr 1fr}
+  .row-1{grid-template-columns:1fr}
+
+  /* Cards */
+  .card{background:var(--card);border:1px solid var(--card-border);border-radius:12px;padding:24px;position:relative;overflow:hidden;transition:border-color .3s}
+  .card:hover{border-color:var(--accent1)}
+  .card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent1),var(--accent2));border-radius:12px 12px 0 0}
+  .card h2{font-size:1.1em;font-weight:700;letter-spacing:2px;color:var(--accent1);margin-bottom:16px;text-transform:uppercase}
+  .card h3{font-size:.9em;color:var(--text-dim);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px}
+
+  /* KPI boxes */
+  .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .kpi{text-align:center;padding:20px 12px;background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.12);border-radius:10px}
+  .kpi .value{font-size:2em;font-weight:800;color:var(--accent1);line-height:1.2}
+  .kpi .label{font-size:.75em;color:var(--text-dim);margin-top:4px;text-transform:uppercase;letter-spacing:1px}
+  .kpi.orange .value{color:var(--accent4)}
+  .kpi.orange{border-color:rgba(255,217,61,.15);background:rgba(255,217,61,.04)}
+  .kpi.red .value{color:var(--accent3)}
+  .kpi.red{border-color:rgba(255,107,107,.15);background:rgba(255,107,107,.04)}
+  .kpi.green .value{color:var(--accent5)}
+  .kpi.green{border-color:rgba(107,255,107,.15);background:rgba(107,255,107,.04)}
+  .kpi.purple .value{color:var(--accent2)}
+  .kpi.purple{border-color:rgba(123,47,247,.15);background:rgba(123,47,247,.04)}
+
+  /* Bar charts */
+  .bar-chart{display:flex;flex-direction:column;gap:10px}
+  .bar-row{display:grid;grid-template-columns:140px 1fr 100px;align-items:center;gap:12px}
+  .bar-row .label{font-size:.85em;color:var(--text-dim);text-align:right;text-transform:uppercase;letter-spacing:.5px}
+  .bar-row .track{height:28px;background:rgba(255,255,255,.04);border-radius:6px;overflow:hidden;position:relative}
+  .bar-row .fill{height:100%;border-radius:6px;transition:width .8s ease;position:relative;min-width:2px}
+  .bar-row .fill::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(180deg,rgba(255,255,255,.15) 0%,transparent 60%);border-radius:6px}
+  .bar-row .val{font-size:.85em;font-weight:600;color:var(--text);text-align:right;font-variant-numeric:tabular-nums}
+
+  /* Stacked bar for disk */
+  .disk-bar-row{display:grid;grid-template-columns:50px 1fr 160px;align-items:center;gap:12px;margin-bottom:8px}
+  .disk-bar-row .drive-letter{font-size:1.1em;font-weight:700;color:var(--accent1);text-align:center}
+  .disk-bar-row .track{height:32px;background:rgba(255,255,255,.04);border-radius:6px;overflow:hidden;display:flex}
+  .disk-bar-row .used{height:100%;transition:width .8s ease}
+  .disk-bar-row .free{height:100%;background:rgba(255,255,255,.06)}
+  .disk-bar-row .info{font-size:.78em;color:var(--text-dim);line-height:1.4}
+  .disk-bar-row .info strong{color:var(--text)}
+
+  /* Directory table */
+  .dir-table{width:100%;border-collapse:separate;border-spacing:0}
+  .dir-table th{text-align:left;padding:8px 12px;font-size:.75em;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid var(--card-border)}
+  .dir-table th:nth-child(2),.dir-table th:nth-child(3){text-align:right}
+  .dir-table td{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.03);font-size:.88em}
+  .dir-table td:nth-child(2),.dir-table td:nth-child(3){text-align:right;font-variant-numeric:tabular-nums}
+  .dir-table tr:hover td{background:rgba(0,212,255,.03)}
+  .dir-table .dir-icon{display:inline-block;width:18px;text-align:center;margin-right:6px}
+  .dir-table .dir-bar{display:inline-block;height:6px;border-radius:3px;background:var(--accent1);vertical-align:middle;margin-left:8px;opacity:.5}
+
+  /* Cluster table */
+  .cluster-table{width:100%;border-collapse:separate;border-spacing:0}
+  .cluster-table th{text-align:left;padding:6px 10px;font-size:.72em;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid var(--card-border)}
+  .cluster-table th:nth-child(2){text-align:right}
+  .cluster-table td{padding:6px 10px;border-bottom:1px solid rgba(255,255,255,.03);font-size:.85em}
+  .cluster-table td:nth-child(2){text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+  .cluster-table tr:hover td{background:rgba(123,47,247,.05)}
+  .cluster-table .rank{color:var(--text-dim);font-size:.8em;margin-right:4px}
+  .cluster-pill{display:inline-block;background:rgba(123,47,247,.15);color:var(--accent2);padding:2px 8px;border-radius:10px;font-size:.82em;font-weight:600}
+
+  /* File type mini chart */
+  .type-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+  .type-chip{text-align:center;padding:10px 4px;background:rgba(255,255,255,.03);border-radius:8px;border:1px solid rgba(255,255,255,.05)}
+  .type-chip .ext{font-size:.85em;font-weight:700;color:var(--accent1)}
+  .type-chip .cnt{font-size:1.3em;font-weight:800;color:var(--text)}
+  .type-chip .sz{font-size:.7em;color:var(--text-dim)}
+
+  /* Status pills */
+  .status-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .status-pill{padding:6px 14px;border-radius:20px;font-size:.8em;font-weight:600;letter-spacing:.5px}
+  .status-pill.completed{background:rgba(107,255,107,.12);color:#6bff6b;border:1px solid rgba(107,255,107,.2)}
+  .status-pill.done{background:rgba(0,212,255,.12);color:#00d4ff;border:1px solid rgba(0,212,255,.2)}
+  .status-pill.dry-run{background:rgba(255,217,61,.12);color:#ffd93d;border:1px solid rgba(255,217,61,.2)}
+  .status-pill.recycled{background:rgba(255,107,107,.12);color:#ff6b6b;border:1px solid rgba(255,107,107,.2)}
+  .status-pill.other{background:rgba(123,47,247,.12);color:#7b2ff7;border:1px solid rgba(123,47,247,.2)}
+
+  /* Footer */
+  .footer{text-align:center;padding:24px;color:var(--text-dim);font-size:.8em;letter-spacing:1px;border-top:1px solid var(--card-border);margin-top:8px}
+
+  /* Responsive */
+  @media(max-width:1100px){.row-3{grid-template-columns:1fr 1fr}.kpi-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:768px){.row-3,.row-2{grid-template-columns:1fr}.kpi-grid{grid-template-columns:1fr 1fr}.type-grid{grid-template-columns:repeat(3,1fr)}.header{padding:20px}}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<div class="header">
+  <h1>OMEGA OPERATION DASHBOARD <span class="badge">COMPLETE</span></h1>
+  <div class="subtitle">LitigationOS File Intelligence &amp; Deduplication Report &mdash; Generated <span id="timestamp"></span></div>
+</div>
+
+<div class="dashboard">
+
+<!-- ═══════════════ SECTION 1: OPERATION SUMMARY ═══════════════ -->
+<div class="row row-1">
+  <div class="card">
+    <h2>&#9889; Operation Summary</h2>
+    <div class="kpi-grid">
+      <div class="kpi">
+        <div class="value">385,846</div>
+        <div class="label">Total Files Cataloged</div>
+      </div>
+      <div class="kpi orange">
+        <div class="value">341,194</div>
+        <div class="label">Total Moves Executed</div>
+      </div>
+      <div class="kpi red">
+        <div class="value">97.96 GB</div>
+        <div class="label">Total Data Processed</div>
+      </div>
+      <div class="kpi green">
+        <div class="value">85.03 GB</div>
+        <div class="label">Manifest Total Size</div>
+      </div>
+    </div>
+    <div style="margin-top:16px">
+      <h3>Move Status Breakdown</h3>
+      <div class="status-grid">
+        <div class="status-pill completed">&#10003; COMPLETED &mdash; 127,288</div>
+        <div class="status-pill recycled">&#9851; RECYCLED &mdash; 127,294</div>
+        <div class="status-pill dry-run">&#9881; DRY-RUN &mdash; 38,121</div>
+        <div class="status-pill done">&#10004; DONE &mdash; 10,366</div>
+        <div class="status-pill done">&#10004; OK &mdash; 38,121</div>
+        <div class="status-pill other">&#9998; FIXED-MANUAL &mdash; 4</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ SECTION 2: OPERATION BREAKDOWN ═══════════════ -->
+<div class="row row-2">
+  <div class="card">
+    <h2>&#128202; Operation Breakdown &mdash; File Count</h2>
+    <div class="bar-chart">
+      <div class="bar-row">
+        <div class="label">Recycle</div>
+        <div class="track"><div class="fill" style="width:100%;background:var(--bar-recycle)"></div></div>
+        <div class="val">127,294</div>
+      </div>
+      <div class="bar-row">
+        <div class="label">Prune</div>
+        <div class="track"><div class="fill" style="width:96.3%;background:var(--bar-prune)"></div></div>
+        <div class="val">122,638</div>
+      </div>
+      <div class="bar-row">
+        <div class="label">Flatten Types</div>
+        <div class="track"><div class="fill" style="width:59.9%;background:var(--bar-flatten-types)"></div></div>
+        <div class="val">76,246</div>
+      </div>
+      <div class="bar-row">
+        <div class="label">Consolidate</div>
+        <div class="track"><div class="fill" style="width:8.14%;background:var(--bar-consolidate)"></div></div>
+        <div class="val">10,366</div>
+      </div>
+      <div class="bar-row">
+        <div class="label">Flatten</div>
+        <div class="track"><div class="fill" style="width:3.65%;background:var(--bar-flatten)"></div></div>
+        <div class="val">4,650</div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>&#128202; Operation Breakdown &mdash; Data Volume</h2>
+    <div class="bar-chart">
+      <div class="bar-row">
+        <div class="label">Flatten Types</div>
+        <div class="track"><div class="fill" style="width:100%;background:var(--bar-flatten-types)"></div></div>
+        <div class="val">75.14 GB</div>
+      </div>
+      <div class="bar-row">
+        <div class="label">Recycle</div>
+        <div class="track"><div class="fill" style="width:12.33%;background:var(--bar-recycle)"></div></div>
+        <div class="val">9.27 GB</div>
+      </div>
+      <div class="bar-row">
+        <div class="label">Consolidate</div>
+        <div class="track"><div class="fill" style="width:12.33%;background:var(--bar-consolidate)"></div></div>
+        <div class="val">9.27 GB</div>
+      </div>
+      <div class="bar-row">
+        <div class="label">Prune</div>
+        <div class="track"><div class="fill" style="width:4.63%;background:var(--bar-prune)"></div></div>
+        <div class="val">3.48 GB</div>
+      </div>
+      <div class="bar-row">
+        <div class="label">Flatten</div>
+        <div class="track"><div class="fill" style="width:1.06%;background:var(--bar-flatten)"></div></div>
+        <div class="val">0.81 GB</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ SECTION 3: DIRECTORY STRUCTURE ═══════════════ -->
+<div class="row row-1">
+  <div class="card">
+    <h2>&#128193; Current Directory Structure &mdash; C:\Users\andre\LitigationOS</h2>
+    <table class="dir-table">
+      <thead><tr><th>Directory</th><th>Files</th><th>Size</th></tr></thead>
+      <tbody>
+        <tr><td><span class="dir-icon">&#128451;</span>_RECYCLE<span class="dir-bar" style="width:80px"></span></td><td>123,520</td><td>3.50 GB</td></tr>
+        <tr><td><span class="dir-icon">&#9881;</span>00_SYSTEM<span class="dir-bar" style="width:26px"></span></td><td>39,607</td><td>16.13 GB</td></tr>
+        <tr><td><span class="dir-icon">&#128295;</span>13_TOOLS<span class="dir-bar" style="width:36px"></span></td><td>56,469</td><td>3.78 GB</td></tr>
+        <tr><td><span class="dir-icon">&#128200;</span>09_DATA<span class="dir-bar" style="width:8px"></span></td><td>13,252</td><td>25.97 GB</td></tr>
+        <tr><td><span class="dir-icon">&#128247;</span>10_IMAGES<span class="dir-bar" style="width:7px"></span></td><td>11,076</td><td>6.18 GB</td></tr>
+        <tr><td><span class="dir-icon">&#128196;</span>08_TEXT<span class="dir-bar" style="width:7px"></span></td><td>11,363</td><td>3.32 GB</td></tr>
+        <tr><td><span class="dir-icon">&#128230;</span>12_ARCHIVES<span class="dir-bar" style="width:6px"></span></td><td>9,490</td><td>9.26 GB</td></tr>
+        <tr><td><span class="dir-icon">&#128187;</span>11_CODE<span class="dir-bar" style="width:6px"></span></td><td>10,115</td><td>0.19 GB</td></tr>
+        <tr><td><span class="dir-icon">&#128220;</span>07_PDF<span class="dir-bar" style="width:2px"></span></td><td>2,432</td><td>2.11 GB</td></tr>
+        <tr><td><span class="dir-icon">&#128221;</span>01_FILINGS<span class="dir-bar" style="width:3px"></span></td><td>4,650</td><td>0.80 GB</td></tr>
+        <tr><td><span class="dir-icon">&#129302;</span>.agents<span class="dir-bar" style="width:2px"></span></td><td>3,119</td><td>0.04 GB</td></tr>
+        <tr><td><span class="dir-icon">&#128736;</span>.copilot<span class="dir-bar" style="width:2px"></span></td><td>2,401</td><td>2.38 GB</td></tr>
+        <tr><td><span class="dir-icon">&#128195;</span>.github<span class="dir-bar" style="width:0px"></span></td><td>20</td><td>0.00 GB</td></tr>
+        <tr><td><span class="dir-icon">&#128295;</span>.vscode<span class="dir-bar" style="width:0px"></span></td><td>4</td><td>0.00 GB</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:12px;font-size:.8em;color:var(--text-dim)">&#128196; Root-level files: 11 &nbsp;|&nbsp; Total cataloged across all directories: 287,518 files &nbsp;|&nbsp; 73.65 GB on disk</div>
+  </div>
+</div>
+
+<!-- ═══════════════ SECTION 4: DISK SPACE OVERVIEW ═══════════════ -->
+<div class="row row-1">
+  <div class="card">
+    <h2>&#128190; Disk Space Overview</h2>
+    <div style="display:flex;flex-direction:column;gap:4px">
+
+      <div class="disk-bar-row">
+        <div class="drive-letter">C:</div>
+        <div class="track">
+          <div class="used" style="width:93%;background:linear-gradient(90deg,#ff6b6b,#ff4444)"></div>
+          <div class="free"></div>
+        </div>
+        <div class="info"><strong>221.06 GB</strong> used / 237.69 GB<br>16.63 GB free (7.0%)</div>
+      </div>
+
+      <div class="disk-bar-row">
+        <div class="drive-letter">D:</div>
+        <div class="track">
+          <div class="used" style="width:50.6%;background:linear-gradient(90deg,#ffd93d,#ffb800)"></div>
+          <div class="free"></div>
+        </div>
+        <div class="info"><strong>16.19 GB</strong> used / 31.99 GB<br>15.80 GB free (49.4%)</div>
+      </div>
+
+      <div class="disk-bar-row">
+        <div class="drive-letter">F:</div>
+        <div class="track">
+          <div class="used" style="width:37.2%;background:linear-gradient(90deg,#00d4ff,#0099cc)"></div>
+          <div class="free"></div>
+        </div>
+        <div class="info"><strong>11.91 GB</strong> used / 31.99 GB<br>20.08 GB free (62.8%)</div>
+      </div>
+
+      <div class="disk-bar-row">
+        <div class="drive-letter">G:</div>
+        <div class="track">
+          <div class="used" style="width:19.2%;background:linear-gradient(90deg,#6bff6b,#00cc44)"></div>
+          <div class="free"></div>
+        </div>
+        <div class="info"><strong>4.94 GB</strong> used / 25.75 GB<br>20.80 GB free (80.8%)</div>
+      </div>
+
+      <div class="disk-bar-row">
+        <div class="drive-letter">H:</div>
+        <div class="track">
+          <div class="used" style="width:64.1%;background:linear-gradient(90deg,#ffd93d,#ff9900)"></div>
+          <div class="free"></div>
+        </div>
+        <div class="info"><strong>19.13 GB</strong> used / 29.82 GB<br>10.70 GB free (35.9%)</div>
+      </div>
+
+      <div class="disk-bar-row">
+        <div class="drive-letter">I:</div>
+        <div class="track">
+          <div class="used" style="width:99%;background:linear-gradient(90deg,#ff4444,#cc0000)"></div>
+          <div class="free"></div>
+        </div>
+        <div class="info"><strong>461.21 GB</strong> used / 465.74 GB<br>4.53 GB free (1.0%)</div>
+      </div>
+
+    </div>
+    <div style="margin-top:14px;padding:10px 14px;background:rgba(255,68,68,.08);border:1px solid rgba(255,68,68,.2);border-radius:8px;font-size:.85em">
+      &#9888;&#65039; <strong style="color:#ff6b6b">Critical:</strong> Drive C: (7.0% free) and Drive I: (1.0% free) are running low on space.
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ SECTION 5: DEDUP INTELLIGENCE ═══════════════ -->
+<div class="row row-2">
+  <div class="card">
+    <h2>&#128270; Dedup Intelligence</h2>
+    <div class="kpi-grid" style="grid-template-columns:repeat(2,1fr);margin-bottom:20px">
+      <div class="kpi purple">
+        <div class="value">64,386</div>
+        <div class="label">Unique Clusters</div>
+      </div>
+      <div class="kpi red">
+        <div class="value">127,302</div>
+        <div class="label">Duplicate Files Found</div>
+      </div>
+      <div class="kpi orange">
+        <div class="value">66.4%</div>
+        <div class="label">Duplicate Rate</div>
+      </div>
+      <div class="kpi green">
+        <div class="value">9.30 GB</div>
+        <div class="label">Duplicate Data Volume</div>
+      </div>
+    </div>
+    <h3>How It Works</h3>
+    <div style="font-size:.85em;color:var(--text-dim);line-height:1.6;margin-top:4px">
+      The OMEGA dedup engine uses <strong style="color:var(--text)">multi-tier hashing</strong> (partial hash &#8594; full hash &#8594; content analysis) to identify exact duplicates.
+      Each cluster groups identical files; one is marked <strong style="color:var(--accent5)">canonical</strong> (kept), the rest are flagged as duplicates for removal.
+      Of <strong style="color:var(--text)">191,688</strong> total cluster members, <strong style="color:var(--accent5)">64,386</strong> are canonical originals and <strong style="color:var(--accent3)">127,302</strong> are confirmed duplicates.
+    </div>
+  </div>
+  <div class="card">
+    <h2>&#127942; Top Dedup Clusters</h2>
+    <table class="cluster-table">
+      <thead><tr><th>Cluster ID</th><th>Members</th></tr></thead>
+      <tbody>
+        <tr><td><span class="rank">#1</span> <span class="cluster-pill">exact-1801</span></td><td>672</td></tr>
+        <tr><td><span class="rank">#2</span> <span class="cluster-pill">exact-14347</span></td><td>347</td></tr>
+        <tr><td><span class="rank">#3</span> <span class="cluster-pill">exact-43259</span></td><td>268</td></tr>
+        <tr><td><span class="rank">#4</span> <span class="cluster-pill">exact-18327</span></td><td>241</td></tr>
+        <tr><td><span class="rank">#5</span> <span class="cluster-pill">exact-2820</span></td><td>186</td></tr>
+        <tr><td><span class="rank">#6</span> <span class="cluster-pill">exact-2810</span></td><td>185</td></tr>
+        <tr><td><span class="rank">#7</span> <span class="cluster-pill">exact-17883</span></td><td>182</td></tr>
+        <tr><td><span class="rank">#8</span> <span class="cluster-pill">exact-30727</span></td><td>172</td></tr>
+        <tr><td><span class="rank">#9</span> <span class="cluster-pill">exact-3188</span></td><td>157</td></tr>
+        <tr><td><span class="rank">#10</span> <span class="cluster-pill">exact-3478</span></td><td>149</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:14px;padding:10px 14px;background:rgba(123,47,247,.06);border:1px solid rgba(123,47,247,.15);border-radius:8px;font-size:.82em;color:var(--text-dim)">
+      &#128161; Cluster <strong style="color:var(--accent2)">exact-1801</strong> alone contains <strong style="color:var(--text)">672 identical copies</strong> of the same file &mdash; the single largest duplication cluster detected.
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ SECTION 6: FILE TYPE BREAKDOWN ═══════════════ -->
+<div class="row row-1">
+  <div class="card">
+    <h2>&#128196; File Type Breakdown &mdash; Top 15</h2>
+    <div class="type-grid">
+      <div class="type-chip"><div class="ext">.js</div><div class="cnt">78,461</div><div class="sz">1.31 GB</div></div>
+      <div class="type-chip"><div class="ext">.java</div><div class="cnt">53,035</div><div class="sz">0.53 GB</div></div>
+      <div class="type-chip"><div class="ext">.py</div><div class="cnt">32,999</div><div class="sz">0.38 GB</div></div>
+      <div class="type-chip"><div class="ext">.ts</div><div class="cnt">29,121</div><div class="sz">0.30 GB</div></div>
+      <div class="type-chip"><div class="ext">.txt</div><div class="cnt">22,976</div><div class="sz">4.08 GB</div></div>
+      <div class="type-chip"><div class="ext">.json</div><div class="cnt">18,857</div><div class="sz">5.81 GB</div></div>
+      <div class="type-chip"><div class="ext">.class</div><div class="cnt">16,688</div><div class="sz">0.05 GB</div></div>
+      <div class="type-chip"><div class="ext">.md</div><div class="cnt">16,596</div><div class="sz">0.63 GB</div></div>
+      <div class="type-chip"><div class="ext">.map</div><div class="cnt">15,439</div><div class="sz">0.34 GB</div></div>
+      <div class="type-chip"><div class="ext">.csv</div><div class="cnt">10,399</div><div class="sz">8.46 GB</div></div>
+      <div class="type-chip"><div class="ext">(none)</div><div class="cnt">7,463</div><div class="sz">2.22 GB</div></div>
+      <div class="type-chip"><div class="ext">.pyi</div><div class="cnt">7,309</div><div class="sz">0.02 GB</div></div>
+      <div class="type-chip"><div class="ext">.jpg</div><div class="cnt">6,935</div><div class="sz">5.48 GB</div></div>
+      <div class="type-chip"><div class="ext">.pdf</div><div class="cnt">6,464</div><div class="sz">4.47 GB</div></div>
+      <div class="type-chip"><div class="ext">.png</div><div class="cnt">6,450</div><div class="sz">1.19 GB</div></div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end dashboard -->
+
+<div class="footer">
+  OMEGA OPERATION DASHBOARD &mdash; LitigationOS Intelligence Platform &mdash; All data sourced from omega_dedup.db<br>
+  <span style="opacity:.5">Auto-generated report. Data reflects completed OMEGA scan, dedup, and reorganization operations.</span>
+</div>
+
+<script>
+document.getElementById('timestamp').textContent = new Date().toLocaleString('en-US', {
+  weekday:'long', year:'numeric', month:'long', day:'numeric',
+  hour:'2-digit', minute:'2-digit', second:'2-digit'
+});
+</script>
+</body>
+</html>

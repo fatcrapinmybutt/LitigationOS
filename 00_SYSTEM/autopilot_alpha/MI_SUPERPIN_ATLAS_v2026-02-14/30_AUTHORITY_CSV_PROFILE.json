@@ -1,0 +1,59 @@
+{
+  "generated": "2026-02-14 15:22:17",
+  "files": [
+    {
+      "file": "AUTHORITY_BY_DOC.csv",
+      "rows": 309,
+      "cols": 5,
+      "authority_col_guess": "file"
+    },
+    {
+      "file": "authority_index.csv",
+      "rows": 19770,
+      "cols": 6,
+      "authority_col_guess": "name"
+    },
+    {
+      "file": "authority_impact.csv",
+      "rows": 14840,
+      "cols": 4,
+      "authority_col_guess": "authority_id"
+    },
+    {
+      "file": "authority_catalog.csv",
+      "rows": 14840,
+      "cols": 8,
+      "authority_col_guess": "id"
+    },
+    {
+      "file": "authorities_gaps.csv",
+      "rows": 14815,
+      "cols": 4,
+      "authority_col_guess": "id"
+    },
+    {
+      "file": "EC_AUTHORITY_MAP_CONSOLIDATED__codex_json_csv_extracted.csv",
+      "rows": 459,
+      "cols": 5,
+      "authority_col_guess": "source_dir"
+    },
+    {
+      "file": "EC_AUTHORITY_MAP__codex_json_csv_extracted.csv",
+      "rows": 309,
+      "cols": 5,
+      "authority_col_guess": "cite"
+    },
+    {
+      "file": "rules_authority_index.csv",
+      "rows": 873,
+      "cols": 5,
+      "authority_col_guess": "rule"
+    },
+    {
+      "file": "authority_extracts_fullscan.csv",
+      "rows": 2507,
+      "cols": 3,
+      "authority_col_guess": "citation"
+    }
+  ]
+}

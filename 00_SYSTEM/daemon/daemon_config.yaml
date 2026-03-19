@@ -1,0 +1,68 @@
+version: 1.0.0
+db_path: C:\Users\andre\LitigationOS\00_SYSTEM\daemon\daemon.db
+litigation_db_path: C:\Users\andre\LitigationOS\litigation_context.db
+brain_dir: C:\Users\andre\LitigationOS\00_SYSTEM\brains
+max_concurrent_tasks: 3
+task_timeout_sec: 300
+drives:
+- path: 'C:'
+  role: primary
+  max_file_size_mb: 100
+  alert_free_gb: 10.0
+  pause_ingest_free_gb: 2.0
+- path: 'I:'
+  role: heavy
+  max_file_size_mb: 10000
+  alert_free_gb: 5.0
+  pause_ingest_free_gb: 2.0
+- path: 'D:'
+  role: lite
+  max_file_size_mb: 50
+  alert_free_gb: 2.0
+  pause_ingest_free_gb: 2.0
+- path: 'F:'
+  role: lite
+  max_file_size_mb: 50
+  alert_free_gb: 2.0
+  pause_ingest_free_gb: 2.0
+- path: 'G:'
+  role: lite
+  max_file_size_mb: 50
+  alert_free_gb: 2.0
+  pause_ingest_free_gb: 2.0
+- path: 'H:'
+  role: lite
+  max_file_size_mb: 50
+  alert_free_gb: 2.0
+  pause_ingest_free_gb: 2.0
+watchdog:
+  watch_dirs:
+  - C:\Users\andre\LitigationOS
+  poll_interval_sec: 1.0
+  exclude_patterns:
+  - __pycache__
+  - .git
+  - node_modules
+  - '*.pyc'
+  - temp
+  - build
+  - .vscode
+  - '*.tmp'
+  - '*.swp'
+  auto_classify: true
+  auto_lane_route: true
+  auto_ingest: false
+scheduler:
+  brain_evolution_hours: 1
+  drive_scan_hours: 24
+  deadline_check_hours: 6
+  citation_verify_hours: 168
+  health_check_minutes: 30
+satellites: []
+logging:
+  level: INFO
+  log_dir: C:\Users\andre\LitigationOS\00_SYSTEM\daemon\logs
+  max_file_size_mb: 10
+  backup_count: 5
+  log_to_db: true
+  structured_json: true

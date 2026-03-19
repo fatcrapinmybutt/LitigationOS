@@ -1,0 +1,242 @@
+{
+  "EvidenceAtom": {
+    "type": "object",
+    "required": [
+      "atom_id",
+      "case_tag",
+      "source",
+      "dates",
+      "quote",
+      "issue_tags"
+    ],
+    "properties": {
+      "atom_id": {
+        "type": "string"
+      },
+      "case_tag": {
+        "type": "string"
+      },
+      "court_tag": {
+        "type": "string"
+      },
+      "case_no": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "doc_role": {
+        "type": "string"
+      },
+      "source": {
+        "type": "object",
+        "required": [
+          "path",
+          "extraction"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "extraction": {
+            "type": "string"
+          },
+          "page": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "line_start": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "line_end": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "timecode_start": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "timecode_end": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      },
+      "dates": {
+        "type": "object",
+        "properties": {
+          "event_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "event_time": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "transaction_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "transaction_time": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "date_basis": {
+            "type": "string"
+          }
+        }
+      },
+      "actors": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "quote": {
+        "type": "string"
+      },
+      "summary": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "tone": {
+        "type": "string"
+      },
+      "issue_tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "authority_links": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "cite": {
+              "type": "string"
+            },
+            "proposition": {
+              "type": "string"
+            },
+            "pinpoint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "confidence": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      "rebuttal_seed": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "requires": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "notes": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    }
+  },
+  "VehicleMapEntry": {
+    "type": "object",
+    "required": [
+      "issue_id",
+      "vehicles",
+      "court_level_targets",
+      "required_record_items"
+    ],
+    "properties": {
+      "issue_id": {
+        "type": "string"
+      },
+      "issue_title": {
+        "type": "string"
+      },
+      "court_level_targets": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "vehicles": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "authority_triplets": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "proposition": {
+              "type": "string"
+            },
+            "authority": {
+              "type": "string"
+            },
+            "pinpoint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      },
+      "required_record_items": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "deadlines_needed": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "confidence": {
+        "type": "number"
+      }
+    }
+  }
+}

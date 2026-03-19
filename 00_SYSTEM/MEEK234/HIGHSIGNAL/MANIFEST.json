@@ -1,0 +1,67 @@
+{
+  "build": "20260224_MEEK234_HIGHSIGNAL_DB_CATALOGUE_DELTA9999_PLUS",
+  "summary": {
+    "raw_records": 30730,
+    "dedup_records": 13422,
+    "meek2_rows": 7095,
+    "meek3_rows": 3416,
+    "meek4_rows": 2710,
+    "focus_rows_mcneill_rusco_martini_usb_healthwest": 9067,
+    "top_signal_max": 192.4,
+    "distinct_sources": 271
+  },
+  "inputs": {
+    "packs": [
+      "20260224_MEEK234_QUOTELOCK_REBUTTAL_OBJECTION_GRAFT_DELTA9999_CONTINUATION.zip",
+      "20260223_2303_MEEK234_QUOTELOCK_PACK.zip"
+    ],
+    "legacy_csvs": [
+      "NEGATIVE_LINES_MATRIX_ALL_724.csv",
+      "NEGATIVE_LINES_MATRIX_CASESPECIFIC_108.csv"
+    ],
+    "root_md_files": [
+      "3055edeb-0469-492a-9865-021bb87dcc03.md",
+      "7a619538-45e5-4488-9eb4-e0d1894a06cc.md",
+      "8e5460ad-ca1d-4cac-b802-1ec6e07997fb.md",
+      "NEGATIVE_REBUTTAL_MATRIX_SAMPLE_35.md",
+      "bf5f0364-c042-4e93-91cc-d633ca70fdc4.md",
+      "d8c1df2c-f070-4111-8b75-8064f1a6a996.md",
+      "ef06d6b4-d097-4144-b7f6-d65fb44efe6d.md"
+    ]
+  },
+  "outputs": [
+    "AUTHORITY_CATALOGUE_OFFICIAL_LINKS.csv",
+    "CHRONO_HEATMAP_MONTH_LANE.csv",
+    "HIGHSIGNAL_QUOTES_TOP500.csv",
+    "HIGHSIGNAL_QUOTES_UNIFIED_DEDUP.csv",
+    "HIGHSIGNAL_QUOTES_UNIFIED_RAW.csv",
+    "HYPERPIN_PROMPT_MEEK234_DB_CATALOGUE_DELTA9999.txt",
+    "LANE_TOPIC_COUNTS.csv",
+    "MCNEILL_RUSCO_MARTINI_USB_HEALTHWEST_FOCUSED_TOP300.csv",
+    "MEEK234_HIGHSIGNAL_DATABASE_CATALOGUE.md",
+    "MEEK234_HIGHSIGNAL_DB.sqlite",
+    "MEEK2_HIGHSIGNAL_TOP500.csv",
+    "MEEK3_HIGHSIGNAL_TOP500.csv",
+    "MEEK4_HIGHSIGNAL_TOP500.csv",
+    "MEMO_ANCHOR_INDEX_MCNEILL_USB_RUSCO_MARTINI.csv",
+    "SOURCE_HEATMAP_COUNTS.csv",
+    "SOURCE_INVENTORY_EXTRACTION_STATUS.csv",
+    "TOPIC_CATALOGUE_INDEX.csv"
+  ],
+  "topic_patterns": {
+    "MCNEILL": "\\bmcneill\\b|jenny\\s+l\\.?\\s*mcneill|judge\\s+mcneill",
+    "RUSCO_EMAILS": "\\brusco\\b|\\bruscopa\\b|secretary",
+    "MARTINI_EMAILS": "\\bmandi\\b|\\bmartini\\b",
+    "EXPARTE_USB_AUDIO": "ex[\\s-]?parte|usb|record(?:ing|ed)?|audio|clerk",
+    "HEALTHWEST_EVAL": "healthwest|mental\\s+health|assessment|evaluation|counselor",
+    "MEDICATION_CONDITION": "prescription|medication|meds?",
+    "HACKLEY_LIBRARY_INCIDENT": "hackley|library|accost|three men",
+    "PARENTING_TIME": "parenting\\s*time|visitation|supervised visit",
+    "PPO": "\\bppo\\b|personal protection order",
+    "CONTEMPT_JAIL": "contempt|jail|incarcerat|mittimus",
+    "SERVICE_NOTICE": "service|served|notice|proof of service|non-service",
+    "FOC_SUPPORT": "\\bfoc\\b|friend of the court|child support|support formula",
+    "DUE_PROCESS_FINDINGS": "due process|hearing|findings|notice and opportunity|evidentiary|evidence",
+    "BIAS_RECUSAL_JTC": "bias|disqualif|recus|judicial tenure|jtc|canon"
+  }
+}

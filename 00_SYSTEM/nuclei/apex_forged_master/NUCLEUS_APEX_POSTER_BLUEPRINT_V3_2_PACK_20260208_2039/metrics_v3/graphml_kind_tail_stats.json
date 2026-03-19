@@ -1,0 +1,89 @@
+{
+  "total_items": 40143,
+  "distinct": 65,
+  "coverage": {
+    "top_1": 0.372343870662382,
+    "top_2": 0.6116882146326882,
+    "top_3": 0.7932142590239892,
+    "top_5": 0.9268365593005007,
+    "top_10": 0.9658720075729268,
+    "top_20": 0.9840320852950701,
+    "top_30": 0.9945943252870986,
+    "top_40": 0.9978576588695414,
+    "top_50": 0.9991530279251676,
+    "top_75": 1.0,
+    "top_100": 1.0
+  },
+  "buckets": [
+    {
+      "range": "1-1",
+      "kinds": 2,
+      "share_kinds": 0.03076923076923077,
+      "items_total": 2,
+      "share_items": 4.982188675485141e-05
+    },
+    {
+      "range": "2-2",
+      "kinds": 8,
+      "share_kinds": 0.12307692307692308,
+      "items_total": 16,
+      "share_items": 0.00039857509403881127
+    },
+    {
+      "range": "3-5",
+      "kinds": 11,
+      "share_kinds": 0.16923076923076924,
+      "items_total": 43,
+      "share_items": 0.0010711705652293052
+    },
+    {
+      "range": "6-10",
+      "kinds": 7,
+      "share_kinds": 0.1076923076923077,
+      "items_total": 55,
+      "share_items": 0.0013701018857584138
+    },
+    {
+      "range": "11-50",
+      "kinds": 12,
+      "share_kinds": 0.18461538461538463,
+      "items_total": 257,
+      "share_items": 0.0064021124479984055
+    },
+    {
+      "range": "51-100",
+      "kinds": 13,
+      "share_kinds": 0.2,
+      "items_total": 788,
+      "share_items": 0.019629823381411456
+    },
+    {
+      "range": "101-500",
+      "kinds": 7,
+      "share_kinds": 0.1076923076923077,
+      "items_total": 1776,
+      "share_items": 0.04424183543830805
+    },
+    {
+      "range": "501-1000",
+      "kinds": 0,
+      "share_kinds": 0.0,
+      "items_total": 0,
+      "share_items": 0.0
+    },
+    {
+      "range": "1001-10000",
+      "kinds": 4,
+      "share_kinds": 0.06153846153846154,
+      "items_total": 22259,
+      "share_items": 0.5544926886381187
+    },
+    {
+      "range": "10001+",
+      "kinds": 1,
+      "share_kinds": 0.015384615384615385,
+      "items_total": 14947,
+      "share_items": 0.372343870662382
+    }
+  ]
+}

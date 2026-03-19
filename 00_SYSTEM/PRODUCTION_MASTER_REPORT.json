@@ -1,0 +1,142 @@
+{
+  "generated": "2026-03-04T22:41:47.920522",
+  "summary": {
+    "total": 8,
+    "go": 7,
+    "nogo": 1,
+    "error": 0,
+    "total_documents": 6867,
+    "total_evidence": 0,
+    "elapsed_seconds": 79.32
+  },
+  "results": [
+    {
+      "stack": "01_COA_366810",
+      "path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810",
+      "court": {
+        "court": "Michigan Court of Appeals",
+        "rules": "MCR 7.212",
+        "efiling": "truefiling"
+      },
+      "go_nogo": "GO",
+      "steps_passed": 9,
+      "steps_total": 11,
+      "documents": 261,
+      "evidence_files": 0,
+      "output_dir": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\PRODUCTION_OUTPUT",
+      "elapsed": 5.232323
+    },
+    {
+      "stack": "02_TRIAL_14TH",
+      "path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH",
+      "court": {
+        "court": "14th Circuit Court",
+        "rules": "MCR 2.119",
+        "efiling": "mifile"
+      },
+      "go_nogo": "NO-GO",
+      "steps_passed": 8,
+      "steps_total": 11,
+      "documents": 3116,
+      "evidence_files": 0,
+      "output_dir": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\PRODUCTION_OUTPUT",
+      "elapsed": 33.140454
+    },
+    {
+      "stack": "03_FEDERAL_1983",
+      "path": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983",
+      "court": {
+        "court": "WDMI Federal Court",
+        "rules": "FRCP",
+        "efiling": "pacer"
+      },
+      "go_nogo": "GO",
+      "steps_passed": 10,
+      "steps_total": 11,
+      "documents": 117,
+      "evidence_files": 0,
+      "output_dir": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\PRODUCTION_OUTPUT",
+      "elapsed": 2.675023
+    },
+    {
+      "stack": "04_JTC_MCNEILL",
+      "path": "C:\\Users\\andre\\LitigationOS\\04_JTC_MCNEILL",
+      "court": {
+        "court": "Judicial Tenure Commission",
+        "rules": "MCR 9.200",
+        "efiling": "truefiling"
+      },
+      "go_nogo": "GO",
+      "steps_passed": 10,
+      "steps_total": 11,
+      "documents": 2966,
+      "evidence_files": 0,
+      "output_dir": "C:\\Users\\andre\\LitigationOS\\04_JTC_MCNEILL\\PRODUCTION_OUTPUT",
+      "elapsed": 20.969352
+    },
+    {
+      "stack": "04_MSC_ORIGINAL_ACTION",
+      "path": "C:\\Users\\andre\\LitigationOS\\04_MSC_ORIGINAL_ACTION",
+      "court": {
+        "court": "Michigan Supreme Court",
+        "rules": "MCR 7.306",
+        "efiling": "truefiling"
+      },
+      "go_nogo": "GO",
+      "steps_passed": 10,
+      "steps_total": 11,
+      "documents": 11,
+      "evidence_files": 0,
+      "output_dir": "C:\\Users\\andre\\LitigationOS\\04_MSC_ORIGINAL_ACTION\\PRODUCTION_OUTPUT",
+      "elapsed": 0.786266
+    },
+    {
+      "stack": "05_BAR_BARNES",
+      "path": "C:\\Users\\andre\\LitigationOS\\05_BAR_BARNES",
+      "court": {
+        "court": "Attorney Grievance Commission",
+        "rules": "MCR 9.100",
+        "efiling": "mifile"
+      },
+      "go_nogo": "GO",
+      "steps_passed": 10,
+      "steps_total": 11,
+      "documents": 35,
+      "evidence_files": 0,
+      "output_dir": "C:\\Users\\andre\\LitigationOS\\05_BAR_BARNES\\PRODUCTION_OUTPUT",
+      "elapsed": 1.328127
+    },
+    {
+      "stack": "06_EMERGENCY",
+      "path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY",
+      "court": {
+        "court": "Emergency Filing",
+        "rules": "MCR 3.207",
+        "efiling": "mifile"
+      },
+      "go_nogo": "GO",
+      "steps_passed": 9,
+      "steps_total": 11,
+      "documents": 335,
+      "evidence_files": 0,
+      "output_dir": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\PRODUCTION_OUTPUT",
+      "elapsed": 14.220397
+    },
+    {
+      "stack": "06_FILINGS",
+      "path": "C:\\Users\\andre\\LitigationOS\\06_FILINGS",
+      "court": {
+        "court": "General Filings",
+        "rules": "MCR 2.119",
+        "efiling": "mifile"
+      },
+      "go_nogo": "GO",
+      "steps_passed": 10,
+      "steps_total": 11,
+      "documents": 26,
+      "evidence_files": 0,
+      "output_dir": "C:\\Users\\andre\\LitigationOS\\06_FILINGS\\PRODUCTION_OUTPUT",
+      "elapsed": 0.969666
+    }
+  ]
+}

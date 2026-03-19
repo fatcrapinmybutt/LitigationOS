@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "litigationos.mi_manifest.v1.1",
+  "jurisdiction": {
+    "state": "MI",
+    "courtSystem": "Michigan Trial Courts",
+    "efilingSystem": "MiFILE",
+    "authoritySnapshots": [
+      {
+        "id": "AUTH-MIFILE-EDOC-STD-2019-2020",
+        "title": "Preparing Electronic Documents for Filing (Policies and Standards No. 2; Revised 7/17/2020)",
+        "source": "courts.michigan.gov",
+        "retrievedDate": "2026-02-28"
+      },
+      {
+        "id": "AUTH-MCR-2-119",
+        "title": "MCR 2.119 Motion Practice (current)",
+        "source": "courts.michigan.gov",
+        "retrievedDate": "2026-02-28"
+      }
+    ]
+  },
+  "case": {
+    "caseId": "NEED:case-id",
+    "caption": "NEED:full-caption",
+    "caseNumber": "NEED:case-number",
+    "courtName": "NEED:trial-court-name",
+    "county": "NEED:county",
+    "judgeOrReferee": "NEED:judge",
+    "caseType": "domestic_relations",
+    "parties": [
+      {
+        "role": "moving_party",
+        "name": "NEED:moving-party-name",
+        "type": "person"
+      },
+      {
+        "role": "responding_party",
+        "name": "NEED:responding-party-name",
+        "type": "person"
+      }
+    ]
+  },
+  "package": {
+    "packageId": "PKG-FOC65-PARENTING-TIME",
+    "rank": 1,
+    "plane": "A",
+    "title": "FOC 65 Motion Regarding Parenting Time",
+    "goal": "Enforce/make-up/clarify/change parenting time and build a clean record of denial/interference",
+    "controllingAuthorities": [
+      "FOC 65",
+      "MCR 2.119",
+      "MiFILE Electronic Document Standards"
+    ],
+    "preconditions": [
+      "Current parenting-time order OR allegation there is no order (FOC 65 checkboxes)",
+      "Incident list with dates and specifics (separate sheet)",
+      "Exhibit set is OCR'd and indexed"
+    ]
+  },
+  "evidencePointers": [
+    {
+      "evidId": "EVID-INCIDENT-LOG",
+      "source": "NEED",
+      "title": "Parenting-time incident log (chronological)",
+      "pointer": "NEED:path-or-vault-cid",
+      "confidence": "medium",
+      "notes": "Should include date, ordered time, denial details, and impacts."
+    }
+  ],
+  "documents": [
+    {
+      "docId": "DOC-FOC65",
+      "docType": "form_motion",
+      "title": "Motion Regarding Parenting Time (FOC 65)",
+      "filingOrder": 1,
+      "required": true,
+      "filename": "FOC65_Motion_ParentingTime.pdf",
+      "formatChecks": [
+        "signature_or_s_signature",
+        "ocr_pdf",
+        "margins_font",
+        "page_size_8.5x11",
+        "file_size<=25mb"
+      ]
+    },
+    {
+      "docId": "DOC-FOC65-FACTSHEET",
+      "docType": "attachment",
+      "title": "Incident narrative (separate sheet per FOC 65 instructions)",
+      "filingOrder": 2,
+      "required": true,
+      "filename": "Attachment_1_Incident_Narrative_for_FOC65.pdf",
+      "formatChecks": [
+        "ocr_pdf",
+        "page_size_8.5x11",
+        "attachment_indexed"
+      ]
+    },
+    {
+      "docId": "DOC-INDEX-TO-ATTACHMENTS",
+      "docType": "attachment_index",
+      "title": "Index to Attachments (must be last page of lead doc)",
+      "filingOrder": 3,
+      "required": true,
+      "filename": "Index_to_Attachments.pdf",
+      "formatChecks": [
+        "present_last_page_lead_doc"
+      ]
+    },
+    {
+      "docId": "DOC-PROOF-OF-SERVICE",
+      "docType": "service",
+      "title": "Certificate / Proof of Service",
+      "filingOrder": 4,
+      "required": true,
+      "filename": "Proof_of_Service.pdf",
+      "formatChecks": [
+        "method_declared",
+        "dates_consistent",
+        "recipients_listed"
+      ]
+    }
+  ],
+  "validationProfile": {
+    "mifile": true,
+    "mcrTiming": true,
+    "pageLimit": true,
+    "piiRedaction": true
+  }
+}

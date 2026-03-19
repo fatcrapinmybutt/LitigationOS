@@ -1,0 +1,30 @@
+schemaVersion: "formos.rulebank.v1"
+jurisdiction: "MI"
+sources:
+  - name: "MiFILE Electronic Document Standards (Policies & Standards No. 2, rev. 7/17/2020)"
+    kind: "policy"
+    url: "https://www.courts.michigan.gov/4aa06a/siteassets/mifile/electronicdocument_stds.pdf"
+  - name: "Michigan Court Rules"
+    kind: "rules"
+    url: "https://www.courts.michigan.gov/rules-and-administrative-orders/court-rules/"
+rules:
+  - id: "MI.MIFILE.OCR_PDF"
+    severity: "ERROR"
+    applies_to: ["all"]
+    requirement: "PDF must be text-searchable; convert directly to PDF when filer controls document creation."
+  - id: "MI.MIFILE.MARGINS"
+    severity: "ERROR"
+    applies_to: ["all"]
+    requirement: "Margins: 1 inch top/bottom; 0.5 inch left/right; no content in margins except stamps."
+  - id: "MI.MIFILE.FILE_SIZE"
+    severity: "ERROR"
+    applies_to: ["all"]
+    requirement: "Each PDF <= 25MB; split into Part 1 of N if needed."
+  - id: "MI.MIFILE.INDEX_ATTACHMENTS"
+    severity: "ERROR"
+    applies_to: ["motion","brief","petition","application","notice","order","affidavit","complaint"]
+    requirement: "Lead document includes Index to Attachments on last page when attachments are filed; attachments are separate connected filings (LT/SP exception)."
+  - id: "MI.MCR.SIGNATURE"
+    severity: "ERROR"
+    applies_to: ["all"]
+    requirement: "Document must be signed; /s/ Name acceptable for electronic signature."

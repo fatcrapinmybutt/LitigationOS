@@ -1,0 +1,17 @@
+relpath,bytes,mtime,crc32
+metrics_v3_6/authority_node_counts.csv,76,1770587151,70252c7e
+metrics_v3_6/authority_nodes_sample.csv,875,1770587151,d878a92c
+metrics_v3_6/contradiction_join_stats.json,113,1770587152,81ba481e
+metrics_v3_6/contradiction_src_edges.csv,1,1770587152,32d70693
+metrics_v3_6/contradiction_status_counts.csv,22,1770587152,b96c1376
+metrics_v3_6/des_attributes_propertykey_freq_sample.csv,816,1770587151,7ba7c9c1
+metrics_v3_6/des_attributes_propertykey_freq_sample_meta.json,39,1770587151,3c8df648
+metrics_v3_6/des_has_date_counts.csv,42,1770587151,46867609
+metrics_v3_6/des_label_counts.csv,926584,1770587151,b8acf9e3
+metrics_v3_6/des_neo_id_intersection_stats.json,167,1770587151,2de3eaa1
+metrics_v3_6/des_orbit_counts.csv,65,1770587151,503ec128
+metrics_v3_6/des_source_pdf_counts.csv,58,1770587151,0f33b976
+metrics_v3_6/des_type_counts.csv,669,1770587151,f2d7ae92
+metrics_v3_6/neo4j_degree_stats.json,104,1770587151,064e22d1
+metrics_v3_6/neo4j_label_counts.csv,674,1770587151,eb645eb1
+metrics_v3_6/run_summary.json,350,1770587152,684749a8

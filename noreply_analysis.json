@@ -1,0 +1,414 @@
+{
+  "total_files": 775,
+  "total_size": 222652343,
+  "total_pages": 1642,
+  "files_2026": 118,
+  "specific_files_found": {
+    "NoReply_20250830_101947.pdf": "C:\\Users\\andre\\LitigationOS\\07_PDF\\NoReply_20250830_101947.pdf",
+    "NoReply_20250830_105139.pdf": "C:\\Users\\andre\\LitigationOS\\07_PDF\\NoReply_20250830_105139.pdf",
+    "NoReply_20250830_110810.pdf": "C:\\Users\\andre\\LitigationOS\\07_PDF\\NoReply_20250830_110810.pdf",
+    "NoReply_20250830_111200.pdf": "C:\\Users\\andre\\LitigationOS\\07_PDF\\NoReply_20250830_111200.pdf"
+  },
+  "summary": [
+    {
+      "filename": "NoReply_20241026_111059.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20241026_111059.pdf",
+      "size": 3300599,
+      "pages": 62,
+      "type": "Unknown",
+      "modified": "2026-03-06T11:47:02.844827"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0002.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0002.pdf",
+      "size": 57206,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T12:10:54"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0008.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0008.pdf",
+      "size": 102244,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:52:26"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0013.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0013.pdf",
+      "size": 37867,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:54:34"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0014.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0014.pdf",
+      "size": 20116,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:55:00"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0017.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0017.pdf",
+      "size": 26518,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:56:24"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0020.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0020.pdf",
+      "size": 32628,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:57:08"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0021.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0021.pdf",
+      "size": 76149,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:57:32"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0025.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0025.pdf",
+      "size": 22445,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:58:02"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0029.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0029.pdf",
+      "size": 100623,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:58:54"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0043.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0043.pdf",
+      "size": 72127,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T12:01:00"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0045.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0045.pdf",
+      "size": 33400,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T12:01:52"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0046.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0046.pdf",
+      "size": 30834,
+      "pages": 1,
+      "type": "Unknown",
+      "modified": "2025-07-22T12:02:42"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0051.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0051.pdf",
+      "size": 37776,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T12:03:22"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0052.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0052.pdf",
+      "size": 44131,
+      "pages": 1,
+      "type": "Unknown",
+      "modified": "2025-07-22T12:04:04"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0053.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0053.pdf",
+      "size": 27301,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T12:04:30"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0058.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0058.pdf",
+      "size": 93458,
+      "pages": 1,
+      "type": "Unknown",
+      "modified": "2025-07-22T12:05:16"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0060.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0060.pdf",
+      "size": 71108,
+      "pages": 1,
+      "type": "Judgment",
+      "modified": "2025-07-22T12:05:50"
+    },
+    {
+      "filename": "NoReply_20250703_115143_0061.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_115143_0061.pdf",
+      "size": 48018,
+      "pages": 1,
+      "type": "Judgment",
+      "modified": "2025-07-22T12:06:14"
+    },
+    {
+      "filename": "NoReply_20250703_121903_0001.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_121903_0001.pdf",
+      "size": 37872,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:49:26"
+    },
+    {
+      "filename": "NoReply_20250703_121903_0002.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_121903_0002.pdf",
+      "size": 37483,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:49:28"
+    },
+    {
+      "filename": "NoReply_20250703_121903_0003.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250703_121903_0003.pdf",
+      "size": 36770,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:49:30"
+    },
+    {
+      "filename": "NoReply_20250708_172834_0001.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250708_172834_0001.pdf",
+      "size": 19969,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:48:22"
+    },
+    {
+      "filename": "NoReply_20250721_125049_0001.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250721_125049_0001.pdf",
+      "size": 45151,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-07-22T11:42:08"
+    },
+    {
+      "filename": "NoReply_20250721_125049_0002.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250721_125049_0002.pdf",
+      "size": 30311,
+      "pages": 1,
+      "type": "Unknown",
+      "modified": "2025-07-22T11:42:06"
+    },
+    {
+      "filename": "NoReply_20250819_183318_0001.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250819_183318_0001.pdf",
+      "size": 35295,
+      "pages": 1,
+      "type": "Ex Parte/Temporary",
+      "modified": "2025-08-28T14:53:42"
+    },
+    {
+      "filename": "NoReply_20250819_183318_0002.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250819_183318_0002.pdf",
+      "size": 49901,
+      "pages": 1,
+      "type": "Unknown",
+      "modified": "2025-08-28T14:53:42"
+    },
+    {
+      "filename": "NoReply_20250819_183318_0003.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250819_183318_0003.pdf",
+      "size": 572958,
+      "pages": 1,
+      "type": "Unknown",
+      "modified": "2025-08-28T14:53:42"
+    },
+    {
+      "filename": "NoReply_20250819_183318_0004.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250819_183318_0004.pdf",
+      "size": 34340,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-08-28T14:53:42"
+    },
+    {
+      "filename": "NoReply_20250819_183318_0005.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250819_183318_0005.pdf",
+      "size": 145920,
+      "pages": 1,
+      "type": "Judgment",
+      "modified": "2025-08-28T14:53:42"
+    },
+    {
+      "filename": "NoReply_20250819_183318_0006.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250819_183318_0006.pdf",
+      "size": 33507,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-08-28T14:53:42"
+    },
+    {
+      "filename": "NoReply_20250819_183318_0007.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250819_183318_0007.pdf",
+      "size": 23448,
+      "pages": 1,
+      "type": "Court Order",
+      "modified": "2025-08-28T14:53:42"
+    },
+    {
+      "filename": "NoReply_20250820_154304_0001.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250820_154304_0001.pdf",
+      "size": 87054,
+      "pages": 1,
+      "type": "Judgment",
+      "modified": "2025-08-28T14:53:06"
+    },
+    {
+      "filename": "NoReply_20250820_154304_0002.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250820_154304_0002.pdf",
+      "size": 88020,
+      "pages": 1,
+      "type": "Judgment",
+      "modified": "2025-08-28T14:53:06"
+    },
+    {
+      "filename": "NoReply_20250820_154304_0003.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250820_154304_0003.pdf",
+      "size": 103440,
+      "pages": 1,
+      "type": "Judgment",
+      "modified": "2025-08-28T14:53:06"
+    },
+    {
+      "filename": "NoReply_20250820_154304_0004.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250820_154304_0004.pdf",
+      "size": 65564,
+      "pages": 1,
+      "type": "Judgment",
+      "modified": "2025-08-28T14:53:06"
+    },
+    {
+      "filename": "NoReply_20250820_154304_0005.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250820_154304_0005.pdf",
+      "size": 33069,
+      "pages": 1,
+      "type": "Summons",
+      "modified": "2025-08-28T14:53:06"
+    },
+    {
+      "filename": "NoReply_20250820_154304_0006.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250820_154304_0006.pdf",
+      "size": 73698,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-08-28T14:53:06"
+    },
+    {
+      "filename": "NoReply_20250820_154304_0007.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250820_154304_0007.pdf",
+      "size": 33653,
+      "pages": 1,
+      "type": "Summons",
+      "modified": "2025-08-28T14:53:08"
+    },
+    {
+      "filename": "NoReply_20250822_092609_0001.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250822_092609_0001.pdf",
+      "size": 66105,
+      "pages": 1,
+      "type": "Unknown",
+      "modified": "2025-08-28T14:52:24"
+    },
+    {
+      "filename": "NoReply_20250822_092609_0002.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250822_092609_0002.pdf",
+      "size": 31202,
+      "pages": 1,
+      "type": "Unknown",
+      "modified": "2025-08-28T14:52:24"
+    },
+    {
+      "filename": "NoReply_20250822_092609_0003.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250822_092609_0003.pdf",
+      "size": 56086,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-08-28T14:52:24"
+    },
+    {
+      "filename": "NoReply_20250822_092609_0004.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250822_092609_0004.pdf",
+      "size": 52784,
+      "pages": 1,
+      "type": "Ex Parte/Temporary",
+      "modified": "2025-08-28T14:52:24"
+    },
+    {
+      "filename": "NoReply_20250822_092609_0005.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250822_092609_0005.pdf",
+      "size": 43370,
+      "pages": 1,
+      "type": "Ex Parte/Temporary",
+      "modified": "2025-08-28T14:52:24"
+    },
+    {
+      "filename": "NoReply_20250822_092609_0006.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250822_092609_0006.pdf",
+      "size": 60340,
+      "pages": 1,
+      "type": "Court Order",
+      "modified": "2025-08-28T14:52:24"
+    },
+    {
+      "filename": "NoReply_20250822_092609_0007.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250822_092609_0007.pdf",
+      "size": 71235,
+      "pages": 1,
+      "type": "Unknown",
+      "modified": "2025-08-28T14:52:24"
+    },
+    {
+      "filename": "NoReply_20250822_092609_0008.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250822_092609_0008.pdf",
+      "size": 59404,
+      "pages": 1,
+      "type": "Ex Parte/Temporary",
+      "modified": "2025-08-28T14:52:24"
+    },
+    {
+      "filename": "NoReply_20250822_092609_0009.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250822_092609_0009.pdf",
+      "size": 34807,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-08-28T14:52:24"
+    },
+    {
+      "filename": "NoReply_20250822_092609_0010.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250822_092609_0010.pdf",
+      "size": 32946,
+      "pages": 1,
+      "type": "Unknown",
+      "modified": "2025-08-28T14:52:24"
+    },
+    {
+      "filename": "NoReply_20250822_092609_0011.pdf",
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\NoReply_20250822_092609_0011.pdf",
+      "size": 51138,
+      "pages": 1,
+      "type": "Complaint",
+      "modified": "2025-08-28T14:52:24"
+    }
+  ]
+}

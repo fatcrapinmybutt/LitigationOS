@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <motion name="motion">
+    <meta>
+      <identification source="#litigationos">
+        <FRBRWork>
+          <FRBRthis value="urn:akn:us-mi:case:{caseNumber}!motion.custody"/>
+          <FRBRuri value="urn:akn:us-mi:case:{caseNumber}"/>
+          <FRBRdate date="2026-02-28" name="Generation"/>
+          <FRBRauthor href="#movingParty"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+      </identification>
+      <references source="#litigationos">
+        <TLCDocument eId="authority_foc_87" href="urn:akn:us-mi:form:foc.87" showAs="FOC 87"/>
+        <TLCDocument eId="authority_pierron" href="urn:akn:us-mi:case:pierron.v.pierron.2010" showAs="Pierron v Pierron (2010)"/>
+        <TLCDocument eId="authority_fletcher" href="urn:akn:us-mi:case:fletcher.v.fletcher.1994" showAs="Fletcher v Fletcher (1994)"/>
+      </references>
+    </meta>
+
+    <mainBody>
+      <p eId="p1">NOW COMES the Moving Party and moves this Court for an order regarding custody pursuant to SCAO Form FOC 87 and applicable Michigan law.</p>
+
+      <p eId="facts_hdr">FACTS</p>
+      <p eId="facts_1">[Proper cause/change-of-circumstances narrative with dates + exhibit cross-references.]</p>
+
+      <p eId="ece_hdr">ESTABLISHED CUSTODIAL ENVIRONMENT</p>
+      <p eId="ece_1">[Identify ECE and whether requested change would modify it; cite supporting record.]</p>
+
+      <p eId="best_hdr">BEST-INTEREST FACTORS</p>
+      <p eId="best_1">[Factor-by-factor analysis as applicable; cite evidence; make explicit findings requests.]</p>
+
+      <p eId="relief_hdr">RELIEF REQUESTED</p>
+      <p eId="relief_1">[Requested custody arrangement + related relief.]</p>
+
+      <p eId="sig_hdr">SIGNATURE</p>
+      <p eId="sig_1">/s/ {movingPartyName}</p>
+
+      <p eId="cos_hdr">CERTIFICATE/PROOF OF SERVICE</p>
+      <p eId="cos_1">[Insert date, method, recipients.]</p>
+
+      <p eId="idx_hdr">INDEX TO ATTACHMENTS</p>
+      <p eId="idx_1">Attachment 1 — Proper Cause / Change of Circumstances Narrative — Attachment_1_ProperCause.pdf</p>
+      <p eId="idx_2">Attachment 2 — [Title] — Attachment_2_[FileName].pdf</p>
+    </mainBody>
+  </motion>
+</akomaNtoso>

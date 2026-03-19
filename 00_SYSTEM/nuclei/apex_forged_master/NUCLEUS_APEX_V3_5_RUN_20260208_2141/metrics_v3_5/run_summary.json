@@ -1,0 +1,21 @@
+{
+  "ts": "20260208_2141",
+  "inputs": {
+    "ATTACHMENT_HARVEST_20260208.zip": true,
+    "MEEK234_FULLSTACK_REBUILD_PACK_v20260208.zip": true,
+    "Emily_ExParte_Attachments.zip": true,
+    "MEEK2_CUSTODY_LITIGATION_PACK.zip": true
+  },
+  "counts": {
+    "unpacked_files": 17,
+    "text_scanned_files": 10,
+    "keyword_hit_files": 10,
+    "date_candidates": 239,
+    "timeline_candidates_norm": 239
+  },
+  "artifacts": {
+    "poster_pdf": "NUCLEUS_APEX_POSTER_BLUEPRINT_V3_5_20260208_2141.pdf",
+    "builder_script": "mbp_worldfirst_builder_poster_v3_5_20260208_2141.py",
+    "metrics_dir": "metrics_v3_5"
+  }
+}

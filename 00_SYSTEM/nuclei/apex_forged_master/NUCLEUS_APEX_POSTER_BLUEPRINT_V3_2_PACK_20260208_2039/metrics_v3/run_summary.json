@@ -1,0 +1,58 @@
+{
+  "build_ts": "20260208_2039",
+  "inputs": {
+    "graphml": "NUCLEUS_APEX_SUPERGRAPH_20250908_030140.graphml.xml",
+    "bloom_html": "ETERNAL_BLOOM_MAX_(2) (1).html",
+    "nodes_normalized": "nodes_normalized.csv",
+    "neo4j_nodes": "neo4j_nodes.csv",
+    "des_csv": "des.csv",
+    "contradiction_map": "CONTRADICTION_MAP.csv",
+    "zip_emily": "Emily_ExParte_Attachments.zip",
+    "zip_meek2": "MEEK2_CUSTODY_LITIGATION_PACK.zip"
+  },
+  "graphml": {
+    "node_count": 40143,
+    "edge_count": 214090,
+    "kinds": 65,
+    "edge_types": 61,
+    "tag_tokens_distinct": 11,
+    "node_fields": {
+      "label": 1.0,
+      "name": 1.0,
+      "tags": 0.5967665595496101,
+      "kind": 1.0,
+      "props": 1.0
+    },
+    "edge_fields": {
+      "type": 1.0,
+      "props": 1.0
+    }
+  },
+  "nodes_normalized": {
+    "rows": 73914,
+    "unique_ids": 73913,
+    "types_distinct": 56
+  },
+  "neo4j_nodes": {
+    "rows": 62027,
+    "labels_distinct": 56
+  },
+  "bloom": {
+    "headings_rows": 4119,
+    "levels": {
+      "1": 1937,
+      "2": 644,
+      "3": 1289,
+      "4": 248,
+      "10": 1
+    }
+  },
+  "packs": {
+    "emily_images": [
+      "20250812_215509.jpg",
+      "20250812_215733.jpg"
+    ],
+    "transcript_pdf": "Pigors_Transcript.pdf",
+    "transcript_pages": 8
+  }
+}

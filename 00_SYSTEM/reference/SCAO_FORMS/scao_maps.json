@@ -1,0 +1,35 @@
+{
+  "MC20": {
+    "CAPTION_CASE": "caption_case",
+    "CAPTION_NO": "caption_number",
+    "COURT_NAME": "court_name",
+    "COUNTY": "county",
+    "JUDGE": "judge",
+    "PLAINTIFF": "plaintiff",
+    "DEFENDANT": "defendant",
+    "APPLICANT_NAME": "applicant_name",
+    "ADDRESS": "address",
+    "CITY": "city",
+    "STATE": "state",
+    "ZIP": "zip",
+    "PHONE": "phone",
+    "GROUNDS": "grounds_text",
+    "DATE": "date",
+    "SIGNATURE_NAME": "sign_name"
+  },
+  "MC230": {
+    "CAPTION_CASE": "caption_case",
+    "CAPTION_NO": "caption_number",
+    "AFFIANT_NAME": "affiant_name",
+    "STATEMENT": "statement_text",
+    "DATE": "date",
+    "SIGNATURE_NAME": "sign_name"
+  },
+  "FOC50": {
+    "CAPTION_CASE": "caption_case",
+    "CAPTION_NO": "caption_number",
+    "OBLIGOR": "obligor",
+    "OBLIGEE": "obligee",
+    "EFFECTIVE_DATE": "effective_date"
+  }
+}

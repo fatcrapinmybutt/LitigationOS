@@ -1,0 +1,507 @@
+{
+  "$defs": {
+    "AuthorityRef": {
+      "additionalProperties": false,
+      "description": "A legal authority citation with text excerpt.",
+      "properties": {
+        "authority": {
+          "description": "Rule number (MCR/MCL/MRE)",
+          "minLength": 1,
+          "title": "Authority",
+          "type": "string"
+        },
+        "title": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Title"
+        },
+        "text": {
+          "anyOf": [
+            {
+              "maxLength": 1000,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "First ~800 chars",
+          "title": "Text"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        }
+      },
+      "required": [
+        "authority"
+      ],
+      "title": "AuthorityRef",
+      "type": "object"
+    },
+    "BriefArgument": {
+      "additionalProperties": false,
+      "properties": {
+        "standard_of_review": {
+          "$ref": "#/$defs/StandardOfReview"
+        },
+        "section": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Section"
+        },
+        "mcr_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mcr Ref"
+        },
+        "issue": {
+          "title": "Issue",
+          "type": "string"
+        },
+        "irac": {
+          "$ref": "#/$defs/IracBlock"
+        },
+        "supporting_citations": {
+          "items": {
+            "$ref": "#/$defs/AuthorityRef"
+          },
+          "title": "Supporting Citations",
+          "type": "array"
+        }
+      },
+      "required": [
+        "standard_of_review",
+        "issue",
+        "irac"
+      ],
+      "title": "BriefArgument",
+      "type": "object"
+    },
+    "BriefCaption": {
+      "additionalProperties": false,
+      "properties": {
+        "court": {
+          "default": "STATE OF MICHIGAN COURT OF APPEALS",
+          "title": "Court",
+          "type": "string"
+        },
+        "docket": {
+          "title": "Docket",
+          "type": "string"
+        },
+        "lower_court": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Court"
+        },
+        "lower_case": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Case"
+        },
+        "appellant": {
+          "default": "ANDREW J. PIGORS",
+          "title": "Appellant",
+          "type": "string"
+        },
+        "appellee": {
+          "default": "EMILY A. WATSON",
+          "title": "Appellee",
+          "type": "string"
+        }
+      },
+      "required": [
+        "docket"
+      ],
+      "title": "BriefCaption",
+      "type": "object"
+    },
+    "EvidenceQuote": {
+      "additionalProperties": false,
+      "description": "A single evidence quote with provenance.",
+      "properties": {
+        "quote_text": {
+          "minLength": 1,
+          "title": "Quote Text",
+          "type": "string"
+        },
+        "speaker": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Speaker"
+        },
+        "legal_significance": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Legal Significance"
+        },
+        "evidence_category": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Evidence Category"
+        },
+        "posture": {
+          "$ref": "#/$defs/PostureTag",
+          "default": "EVIDENCE_FACT"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        }
+      },
+      "required": [
+        "quote_text"
+      ],
+      "title": "EvidenceQuote",
+      "type": "object"
+    },
+    "IracBlock": {
+      "additionalProperties": false,
+      "description": "IRAC-structured argument block.",
+      "properties": {
+        "issue": {
+          "title": "Issue",
+          "type": "string"
+        },
+        "rule": {
+          "items": {
+            "$ref": "#/$defs/AuthorityRef"
+          },
+          "minItems": 1,
+          "title": "Rule",
+          "type": "array"
+        },
+        "application": {
+          "items": {
+            "$ref": "#/$defs/EvidenceQuote"
+          },
+          "minItems": 1,
+          "title": "Application",
+          "type": "array"
+        },
+        "conclusion": {
+          "title": "Conclusion",
+          "type": "string"
+        }
+      },
+      "required": [
+        "issue",
+        "rule",
+        "application",
+        "conclusion"
+      ],
+      "title": "IracBlock",
+      "type": "object"
+    },
+    "IssuePresented": {
+      "additionalProperties": false,
+      "properties": {
+        "number": {
+          "minimum": 1,
+          "title": "Number",
+          "type": "integer"
+        },
+        "issue": {
+          "minLength": 10,
+          "title": "Issue",
+          "type": "string"
+        },
+        "answer_below": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Answer Below"
+        },
+        "appellant_answer": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Appellant Answer"
+        }
+      },
+      "required": [
+        "number",
+        "issue"
+      ],
+      "title": "IssuePresented",
+      "type": "object"
+    },
+    "PostureTag": {
+      "description": "Evidence atom posture \u2014 every quote gets one.",
+      "enum": [
+        "RECORD_FACT",
+        "EVIDENCE_FACT",
+        "SWORN_FACT",
+        "ALLEGATION",
+        "INFERENCE"
+      ],
+      "title": "PostureTag",
+      "type": "string"
+    },
+    "ReliefItem": {
+      "additionalProperties": false,
+      "properties": {
+        "number": {
+          "minimum": 1,
+          "title": "Number",
+          "type": "integer"
+        },
+        "request": {
+          "minLength": 5,
+          "title": "Request",
+          "type": "string"
+        }
+      },
+      "required": [
+        "number",
+        "request"
+      ],
+      "title": "ReliefItem",
+      "type": "object"
+    },
+    "StandardOfReview": {
+      "additionalProperties": false,
+      "properties": {
+        "issue": {
+          "title": "Issue",
+          "type": "string"
+        },
+        "standard_of_review": {
+          "description": "Abuse of Discretion | De Novo | Clear Error",
+          "title": "Standard Of Review",
+          "type": "string"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "issue",
+        "standard_of_review",
+        "explanation"
+      ],
+      "title": "StandardOfReview",
+      "type": "object"
+    },
+    "StatementOfFacts": {
+      "additionalProperties": false,
+      "properties": {
+        "section": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Section"
+        },
+        "mcr_ref": {
+          "default": "MCR 7.212(C)(6)",
+          "title": "Mcr Ref",
+          "type": "string"
+        },
+        "timeline_events": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Timeline Events",
+          "type": "integer"
+        },
+        "evidence_items": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Evidence Items",
+          "type": "integer"
+        },
+        "docket_events": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Docket Events",
+          "type": "integer"
+        }
+      },
+      "title": "StatementOfFacts",
+      "type": "object"
+    },
+    "WordCountCheck": {
+      "additionalProperties": false,
+      "description": "MCR 7.212(B) word limit compliance.",
+      "properties": {
+        "word_count": {
+          "title": "Word Count",
+          "type": "integer"
+        },
+        "limit": {
+          "default": 16000,
+          "title": "Limit",
+          "type": "integer"
+        },
+        "within_limit": {
+          "title": "Within Limit",
+          "type": "boolean"
+        },
+        "remaining": {
+          "minimum": 0,
+          "title": "Remaining",
+          "type": "integer"
+        },
+        "over_by": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Over By",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "word_count",
+        "within_limit",
+        "remaining"
+      ],
+      "title": "WordCountCheck",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "MCR 7.212-compliant appellate brief structure.",
+  "properties": {
+    "caption": {
+      "$ref": "#/$defs/BriefCaption"
+    },
+    "issues_presented": {
+      "items": {
+        "$ref": "#/$defs/IssuePresented"
+      },
+      "minItems": 1,
+      "title": "Issues Presented",
+      "type": "array"
+    },
+    "statement_of_facts": {
+      "$ref": "#/$defs/StatementOfFacts"
+    },
+    "arguments": {
+      "items": {
+        "$ref": "#/$defs/BriefArgument"
+      },
+      "minItems": 1,
+      "title": "Arguments",
+      "type": "array"
+    },
+    "relief_requested": {
+      "items": {
+        "$ref": "#/$defs/ReliefItem"
+      },
+      "minItems": 1,
+      "title": "Relief Requested",
+      "type": "array"
+    },
+    "mcr_compliance": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/WordCountCheck"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "caption",
+    "issues_presented",
+    "statement_of_facts",
+    "arguments",
+    "relief_requested"
+  ],
+  "title": "AppellateBrief",
+  "type": "object"
+}

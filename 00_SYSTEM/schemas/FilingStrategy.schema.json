@@ -1,0 +1,219 @@
+{
+  "$defs": {
+    "ActionTier": {
+      "enum": [
+        "CRITICAL",
+        "HIGH",
+        "STANDARD"
+      ],
+      "title": "ActionTier",
+      "type": "string"
+    },
+    "CaseLane": {
+      "description": "Six case lanes \u2014 IRON LAW: never cross-contaminate.",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "title": "CaseLane",
+      "type": "string"
+    },
+    "Court": {
+      "description": "Michigan courts and federal.",
+      "enum": [
+        "14TH",
+        "COA",
+        "MSC",
+        "JTC",
+        "USDC",
+        "FOC"
+      ],
+      "title": "Court",
+      "type": "string"
+    },
+    "RuleCompliance": {
+      "additionalProperties": false,
+      "description": "Procedural compliance checklist for a filing.",
+      "properties": {
+        "action_name": {
+          "title": "Action Name",
+          "type": "string"
+        },
+        "rule_citation": {
+          "title": "Rule Citation",
+          "type": "string"
+        },
+        "procedures": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Procedures",
+          "type": "array"
+        },
+        "service": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Service"
+        },
+        "timing": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Timing"
+        },
+        "fees": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fees"
+        }
+      },
+      "required": [
+        "action_name",
+        "rule_citation"
+      ],
+      "title": "RuleCompliance",
+      "type": "object"
+    },
+    "ScoredAction": {
+      "additionalProperties": false,
+      "description": "A scored legal action from OMEGA.",
+      "properties": {
+        "action_id": {
+          "title": "Action Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "forum": {
+          "$ref": "#/$defs/Court"
+        },
+        "lane": {
+          "$ref": "#/$defs/CaseLane"
+        },
+        "score": {
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Score",
+          "type": "number"
+        },
+        "tier": {
+          "$ref": "#/$defs/ActionTier"
+        },
+        "tier_action": {
+          "description": "FILE IMMEDIATELY | SCHEDULE | HOLD",
+          "title": "Tier Action",
+          "type": "string"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "readiness_pct": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Readiness Pct"
+        },
+        "risk_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Risk Score"
+        }
+      },
+      "required": [
+        "action_id",
+        "name",
+        "forum",
+        "lane",
+        "score",
+        "tier",
+        "tier_action"
+      ],
+      "title": "ScoredAction",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "OMEGA filing strategy output \u2014 tiered action plan.",
+  "properties": {
+    "critical_actions": {
+      "items": {
+        "$ref": "#/$defs/ScoredAction"
+      },
+      "title": "Critical Actions",
+      "type": "array"
+    },
+    "high_actions": {
+      "items": {
+        "$ref": "#/$defs/ScoredAction"
+      },
+      "title": "High Actions",
+      "type": "array"
+    },
+    "standard_actions": {
+      "items": {
+        "$ref": "#/$defs/ScoredAction"
+      },
+      "title": "Standard Actions",
+      "type": "array"
+    },
+    "rule_map": {
+      "additionalProperties": {
+        "$ref": "#/$defs/RuleCompliance"
+      },
+      "title": "Rule Map",
+      "type": "object"
+    }
+  },
+  "title": "FilingStrategy",
+  "type": "object"
+}

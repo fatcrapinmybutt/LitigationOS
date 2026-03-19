@@ -1,0 +1,330 @@
+{
+  "generated": "2026-03-04T22:17:06.582049",
+  "agent": "Agent-148",
+  "case": "Pigors v. Watson, 2024-001507-DC",
+  "total_primary_exhibits": 21,
+  "total_source_documents": 0,
+  "exhibits": [
+    {
+      "exhibit_number": "Exhibit A",
+      "title": "AppClose Communication Record \u2014 Complete",
+      "bates_start": "PIGORS-0001",
+      "bates_end": null,
+      "description": "650 co-parenting messages (May 2024\u2013Aug 2025) demonstrating Father cooperative pattern and Mother gatekeeping pattern",
+      "filing_target": "COA Brief; Civil Tort; All Courts",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "02_TRIAL_14TH",
+        "03_FEDERAL_1983",
+        "04_JTC_MCNEILL",
+        "04_MSC_ORIGINAL_ACTION",
+        "05_BAR_BARNES",
+        "06_EMERGENCY"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit B",
+      "title": "AppClose Psychological Analysis",
+      "bates_start": "PIGORS-0002",
+      "bates_end": null,
+      "description": "146KB line-by-line analysis of all messages with pattern detection, tort mapping, and rebuttal points",
+      "filing_target": "COA Brief; Civil Tort",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "02_TRIAL_14TH"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit C",
+      "title": "Drug Screen Results \u2014 NEGATIVE",
+      "bates_start": "PIGORS-0003",
+      "bates_end": null,
+      "description": "Court-ordered drug screen returning completely negative results \u2014 destroys substance abuse narrative",
+      "filing_target": "COA Brief; USDC \u00a71983",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "03_FEDERAL_1983"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit D",
+      "title": "HealthWest Evaluation #1 \u2014 ALL ZEROS",
+      "bates_start": "PIGORS-0004",
+      "bates_end": null,
+      "description": "First independent psychological evaluation with zero clinical findings",
+      "filing_target": "COA Brief; USDC \u00a71983",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "03_FEDERAL_1983"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit E",
+      "title": "HealthWest Evaluation #2 \u2014 \"Rule Out\" After Judge Letter",
+      "bates_start": "PIGORS-0005",
+      "bates_end": null,
+      "description": "Second evaluation changed after judicial interference \u2014 comparison with Eval #1",
+      "filing_target": "COA Brief; JTC; USDC \u00a71983",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "03_FEDERAL_1983",
+        "04_JTC_MCNEILL"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit F",
+      "title": "Judge McNeill Communication to HealthWest Evaluator",
+      "bates_start": "PIGORS-0006",
+      "bates_end": null,
+      "description": "Ex parte communication from judge to evaluator that preceded changed evaluation findings",
+      "filing_target": "JTC; COA Brief; USDC \u00a71983",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "03_FEDERAL_1983",
+        "04_JTC_MCNEILL"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit G",
+      "title": "Albert Watson Premeditation Statement",
+      "bates_start": "PIGORS-0007",
+      "bates_end": null,
+      "description": "\"they want this documented so Emily can go tomorrow to get an Ex Parte order\" \u2014 Aug 7, 2025",
+      "filing_target": "COA Brief; Civil Tort; USDC \u00a71983",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "03_FEDERAL_1983",
+        "02_TRIAL_14TH"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit H",
+      "title": "Lori Watson Illegal Recording \u2014 MCL 750.539c",
+      "bates_start": "PIGORS-0008",
+      "bates_end": null,
+      "description": "Recording made in violation of Michigan eavesdropping felony statute \u2014 basis for ex parte order",
+      "filing_target": "COA Brief; Criminal Referral",
+      "stacks_referenced": [
+        "01_COA_366810"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit I",
+      "title": "Police Investigation Reports (9) \u2014 Zero Findings",
+      "bates_start": "PIGORS-0009",
+      "bates_end": null,
+      "description": "Nine separate police investigations yielding zero violations, arrests, or charges",
+      "filing_target": "COA Brief; USDC \u00a71983; Civil Tort",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "03_FEDERAL_1983",
+        "02_TRIAL_14TH"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit J",
+      "title": "Ex Parte Order Statistical Analysis",
+      "bates_start": "PIGORS-0010",
+      "bates_end": null,
+      "description": "52 orders, 44% rate, 100% favoring Mother \u2014 statistical proof of bias",
+      "filing_target": "COA Brief; JTC; MSC Petition",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "04_JTC_MCNEILL",
+        "04_MSC_ORIGINAL_ACTION"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit K",
+      "title": "Incarceration Records \u2014 59+ Days",
+      "bates_start": "PIGORS-0011",
+      "bates_end": null,
+      "description": "Jail records documenting 59+ cumulative days of incarceration",
+      "filing_target": "USDC \u00a71983; Civil Tort; COA Brief",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "03_FEDERAL_1983",
+        "02_TRIAL_14TH"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit L",
+      "title": "Employment Termination Records \u2014 3 Job Losses",
+      "bates_start": "PIGORS-0012",
+      "bates_end": null,
+      "description": "Documentation of three employment terminations caused by incarceration and court disruption",
+      "filing_target": "Civil Tort; USDC \u00a71983",
+      "stacks_referenced": [
+        "03_FEDERAL_1983",
+        "02_TRIAL_14TH"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit M",
+      "title": "Housing Loss Documentation",
+      "bates_start": "PIGORS-0013",
+      "bates_end": null,
+      "description": "Records of two housing losses resulting from economic destabilization",
+      "filing_target": "Civil Tort; USDC \u00a71983",
+      "stacks_referenced": [
+        "03_FEDERAL_1983",
+        "02_TRIAL_14TH"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit N",
+      "title": "Damages Itemization Schedule",
+      "bates_start": "PIGORS-0014",
+      "bates_end": null,
+      "description": "Complete itemized damages calculation with evidence citations \u2014 $259,100\u2013$516,450+",
+      "filing_target": "All Courts",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "02_TRIAL_14TH",
+        "03_FEDERAL_1983",
+        "04_JTC_MCNEILL",
+        "04_MSC_ORIGINAL_ACTION",
+        "05_BAR_BARNES",
+        "06_EMERGENCY"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit O",
+      "title": "Constitutional Violation Map",
+      "bates_start": "PIGORS-0015",
+      "bates_end": null,
+      "description": "11 mapped constitutional violations with controlling caselaw and Michigan authority",
+      "filing_target": "USDC \u00a71983; COA Brief",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "03_FEDERAL_1983"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit P",
+      "title": "Judicial Canon Violation Matrix",
+      "bates_start": "PIGORS-0016",
+      "bates_end": null,
+      "description": "1,127 documented MCJC canon violations by Judge McNeill",
+      "filing_target": "JTC; MSC Petition; COA Brief",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "04_JTC_MCNEILL",
+        "04_MSC_ORIGINAL_ACTION"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit Q",
+      "title": "Rebuttal Matrix \u2014 Adversary Assertions",
+      "bates_start": "PIGORS-0017",
+      "bates_end": null,
+      "description": "553 adversary assertions with mapped rebuttals, tort causes, and filing targets",
+      "filing_target": "All Courts",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "02_TRIAL_14TH",
+        "03_FEDERAL_1983",
+        "04_JTC_MCNEILL",
+        "04_MSC_ORIGINAL_ACTION",
+        "05_BAR_BARNES",
+        "06_EMERGENCY"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit R",
+      "title": "Master Prosecution Timeline",
+      "bates_start": "PIGORS-0018",
+      "bates_end": null,
+      "description": "1,899 chronological events from all DB sources \u2014 complete case history",
+      "filing_target": "All Courts",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "02_TRIAL_14TH",
+        "03_FEDERAL_1983",
+        "04_JTC_MCNEILL",
+        "04_MSC_ORIGINAL_ACTION",
+        "05_BAR_BARNES",
+        "06_EMERGENCY"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit S",
+      "title": "AppClose Violation Record \u2014 44 Incidents",
+      "bates_start": "PIGORS-0019",
+      "bates_end": null,
+      "description": "Documented custody/communication violations with dates, content, and legal basis",
+      "filing_target": "COA Brief; 14th Circuit",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "02_TRIAL_14TH"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit T",
+      "title": "Emily Watson Employment \u2014 Kent County Prosecutor",
+      "bates_start": "PIGORS-0020",
+      "bates_end": null,
+      "description": "Documentation of Mother 9-year employment at Kent County Prosecutor Office Family Court Division",
+      "filing_target": "COA Brief; Civil Tort",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "02_TRIAL_14TH"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    },
+    {
+      "exhibit_number": "Exhibit U",
+      "title": "Parental Alienation Assessment",
+      "bates_start": "PIGORS-0021",
+      "bates_end": null,
+      "description": "Scored alienation analysis using accepted frameworks with evidence mapping",
+      "filing_target": "COA Brief; Civil Tort",
+      "stacks_referenced": [
+        "01_COA_366810",
+        "02_TRIAL_14TH"
+      ],
+      "authentication_status": "PENDING_AUTHENTICATION",
+      "source_table": "exhibit_registry"
+    }
+  ],
+  "source_document_categories": {}
+}

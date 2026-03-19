@@ -1,0 +1,62 @@
+{
+  "created_at": "2026-02-08T21:54:41Z",
+  "edge_count": 180148,
+  "missing_from": {
+    "count": 0,
+    "sample": []
+  },
+  "missing_to": {
+    "count": 0,
+    "sample": []
+  },
+  "node_count": 205795,
+  "node_type_counts": {
+    "AttachmentRecord": 7,
+    "Authority": 37334,
+    "AuthorityCandidate": 141,
+    "AuthorityCiteStub": 1163,
+    "AuthorityHub": 50,
+    "Case": 39,
+    "CaselawCandidate": 141,
+    "CatalogItem": 104,
+    "ContentHash": 2364,
+    "ContradictionItem": 141,
+    "Corpus": 1,
+    "CorpusExcerpt": 1,
+    "Directory": 31,
+    "EdgeTypeDef": 88,
+    "EnumDef": 17,
+    "Extension": 29,
+    "Fact": 528,
+    "File": 38387,
+    "GlossaryTerm": 48960,
+    "HarmCandidate": 141,
+    "Module": 500,
+    "NextAction": 141,
+    "Node": 71031,
+    "NodeTypeDef": 67,
+    "PropertyDef": 137,
+    "QuoteAtom": 874,
+    "Remedy": 77,
+    "RemedyCandidate": 141,
+    "SourceRef": 7,
+    "URL": 67,
+    "VehicleCandidate": 141,
+    "Violation": 2945
+  },
+  "rel_type_counts": {
+    "AUTHORITY_SUPPORTED_BY_CASELAW_CANDIDATE": 141,
+    "CASELAW_SUPPORTS_ACTION": 141,
+    "CITES_AUTHORITY_RESOLVED_EXACT": 238,
+    "CITES_AUTHORITY_UNRESOLVED": 2340,
+    "CONTRADICTION_FROM_SOURCE": 141,
+    "GAP_IMPLICATES_HARM_CANDIDATE": 141,
+    "HAS_EXCERPT": 1,
+    "QUOTE_FROM_SOURCE": 866,
+    "RELATED_TO": 175512,
+    "REMEDY_FOR_GAP": 141,
+    "REMEDY_IMPLIES_VEHICLE_CANDIDATE": 141,
+    "TERM_CHILD_OF": 204,
+    "VEHICLE_REQUIRES_AUTHORITY_CANDIDATE": 141
+  }
+}

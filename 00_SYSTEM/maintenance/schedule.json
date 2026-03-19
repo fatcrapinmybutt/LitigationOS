@@ -1,0 +1,83 @@
+{
+  "version": "1.0.0",
+  "description": "LitigationOS Automated Maintenance Schedule",
+  "daily": {
+    "tasks": [
+      {
+        "name": "temp_cleanup",
+        "description": "Clean temporary files from staging areas",
+        "paths": ["F:\\DISTILL_STAGING\\", "C:\\Users\\andre\\AppData\\Local\\Temp\\"],
+        "max_age_days": 7
+      },
+      {
+        "name": "disk_space_check",
+        "description": "Check free space on all drives, alert if < 2GB",
+        "drives": ["C", "D", "F", "G", "H", "I"],
+        "alert_threshold_gb": 2
+      },
+      {
+        "name": "agent_health_check",
+        "description": "Verify all agents are responsive",
+        "timeout_seconds": 30
+      },
+      {
+        "name": "db_integrity_check",
+        "description": "Run PRAGMA integrity_check on litigation_context.db",
+        "db_path": "C:\\Users\\andre\\LitigationOS\\litigation_context.db"
+      }
+    ],
+    "run_at": "00:00"
+  },
+  "weekly": {
+    "tasks": [
+      {
+        "name": "incremental_db_backup",
+        "description": "Compress and backup DB changes",
+        "target": "H:\\SAFETY_SNAPSHOT\\"
+      },
+      {
+        "name": "log_rotation",
+        "description": "Archive logs older than 30 days",
+        "log_dirs": ["C:\\Users\\andre\\LitigationOS\\14_LOGS\\"],
+        "max_age_days": 30
+      },
+      {
+        "name": "cache_purge",
+        "description": "Clean npm, pip, VS Code caches",
+        "paths": [
+          "C:\\Users\\andre\\AppData\\Local\\npm-cache\\",
+          "C:\\Users\\andre\\AppData\\Local\\pip\\Cache\\"
+        ]
+      }
+    ],
+    "run_on": "Sunday",
+    "run_at": "02:00"
+  },
+  "monthly": {
+    "tasks": [
+      {
+        "name": "full_sha256_audit",
+        "description": "Re-verify SHA-256 of all critical files and backups",
+        "verify_paths": [
+          "C:\\Users\\andre\\SAFETY_SNAPSHOT_DB\\",
+          "H:\\SAFETY_SNAPSHOT\\"
+        ]
+      },
+      {
+        "name": "skill_quality_review",
+        "description": "Review skill registry, update quality scores",
+        "registry_path": "C:\\Users\\andre\\skills\\meta\\skill_registry.json"
+      },
+      {
+        "name": "agent_performance_review",
+        "description": "Analyze agent error rates, response times, coverage"
+      }
+    ],
+    "run_on": 1,
+    "run_at": "03:00"
+  },
+  "logging": {
+    "log_table": "maintenance_log",
+    "retention_days": 90
+  }
+}

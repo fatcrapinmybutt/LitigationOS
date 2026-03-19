@@ -1,0 +1,53 @@
+{
+  "additionalProperties": false,
+  "description": "Court filing compliance check result.",
+  "properties": {
+    "score": {
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Score",
+      "type": "integer"
+    },
+    "court": {
+      "title": "Court",
+      "type": "string"
+    },
+    "word_count": {
+      "minimum": 0,
+      "title": "Word Count",
+      "type": "integer"
+    },
+    "citation_count": {
+      "minimum": 0,
+      "title": "Citation Count",
+      "type": "integer"
+    },
+    "issues": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Issues",
+      "type": "array"
+    },
+    "suggestions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Suggestions",
+      "type": "array"
+    },
+    "compliant": {
+      "default": false,
+      "title": "Compliant",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "score",
+    "court",
+    "word_count",
+    "citation_count"
+  ],
+  "title": "ComplianceResult",
+  "type": "object"
+}

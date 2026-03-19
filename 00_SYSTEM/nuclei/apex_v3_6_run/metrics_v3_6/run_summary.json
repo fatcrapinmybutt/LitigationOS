@@ -1,0 +1,15 @@
+{
+  "ts": "20260208_2145",
+  "counts": {
+    "des_rows": 62027,
+    "neo_rows": 62027,
+    "des_neo_intersection": 62027,
+    "contradiction_rows": 141,
+    "contradiction_src_matches": 0,
+    "authority_nodes": 18
+  },
+  "artifacts": {
+    "poster_pdf": "NUCLEUS_APEX_POSTER_BLUEPRINT_V3_6_20260208_2145.pdf",
+    "metrics_dir": "metrics_v3_6"
+  }
+}

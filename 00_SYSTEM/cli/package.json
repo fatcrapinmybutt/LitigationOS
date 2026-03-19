@@ -1,0 +1,27 @@
+{
+  "name": "litigos",
+  "version": "1.0.0",
+  "description": "LitigationOS CLI — Command-line interface for litigation management",
+  "main": "index.js",
+  "bin": {
+    "litigos": "./index.js"
+  },
+  "keywords": [
+    "litigation",
+    "legal",
+    "cli",
+    "omega",
+    "evidence"
+  ],
+  "author": "LitigationOS",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

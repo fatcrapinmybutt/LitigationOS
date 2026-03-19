@@ -1,0 +1,68 @@
+{
+  "lane_rules": {
+    "JTC": [
+      "jtc",
+      "judicial tenure",
+      "judicial conduct"
+    ],
+    "MEEK1": [
+      "housing",
+      "landlord",
+      "tenant",
+      "mhp",
+      "shady",
+      "hoa",
+      "homes of america",
+      "utility",
+      "eviction"
+    ],
+    "MEEK2": [
+      "custody",
+      "foc",
+      "parenting",
+      "child support",
+      "visitation",
+      "lincoln",
+      "friend of the court"
+    ],
+    "MEEK3": [
+      "ppo",
+      "personal protection order",
+      "contempt",
+      "show cause",
+      "mittimus",
+      "jail"
+    ],
+    "MEEK4": [
+      "canon",
+      "jtc",
+      "judicial",
+      "bias",
+      "recusal",
+      "mcneill",
+      "misconduct"
+    ],
+    "MSC": [
+      "msc",
+      "supreme court",
+      "superintending"
+    ]
+  },
+  "ocr": {
+    "dpi_default": 200,
+    "lang_default": "eng",
+    "min_density_default": 0.5,
+    "mode_default": "auto"
+  },
+  "tesseract_candidates": [
+    "C:\\\\Program Files\\\\Tesseract-OCR\\\\tesseract.exe",
+    "C:\\\\Program Files (x86)\\\\Tesseract-OCR\\\\tesseract.exe",
+    "{USERPROFILE}\\\\Downloads\\\\Tesseract-OCR\\\\tesseract.exe",
+    "{USERPROFILE}\\\\Downloads\\\\tesseract-main",
+    "{EXE_DIR}\\\\tesseract.exe",
+    "{EXE_DIR}\\\\Tesseract-OCR\\\\tesseract.exe",
+    "{SCRIPT_DIR}\\\\tesseract.exe",
+    "{SCRIPT_DIR}\\\\Tesseract-OCR\\\\tesseract.exe"
+  ],
+  "version": "1.2.0r1"
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:litigationos:schema:form_profile.v1",
+  "title": "LitigationOS FormProfile v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "form_code",
+    "title",
+    "family",
+    "court_level",
+    "doc_type",
+    "scao_approved",
+    "revision",
+    "source_pdf",
+    "authority_citations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "form_code": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "family": {
+      "type": "string"
+    },
+    "court_level": {
+      "type": "string",
+      "enum": [
+        "trial",
+        "coa",
+        "msc",
+        "other"
+      ]
+    },
+    "doc_type": {
+      "type": "string"
+    },
+    "scao_approved": {
+      "type": "boolean"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "source_pdf": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_inst": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "authority_citations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "form_specific_requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "rule"
+        ],
+        "properties": {
+          "kind": {
+            "type": "string"
+          },
+          "rule": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "resolved": 42,
+  "unresolved": 22,
+  "andrew_needed": [
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\FILING_INSTRUCTIONS_DISQUALIFICATION.md",
+      "placeholder": "[INSERT PHONE]",
+      "context": "PHONE"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\FILING_INSTRUCTIONS_DISQUALIFICATION.md",
+      "placeholder": "[INSERT EMAIL]",
+      "context": "EMAIL"
+    }
+  ],
+  "changes": [
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\CONVERGED_FILING_STACK\\00_MASTER_BRIEF.md",
+      "old": "[Insert county court rules]",
+      "new": "14th Circuit Court, Muskegon County, Michigan"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\14_MCNEILL_JOURNAL.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\14_MCNEILL_JOURNAL.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\14_MCNEILL_JOURNAL.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\14_MCNEILL_JOURNAL.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\14_MCNEILL_JOURNAL.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\14_MCNEILL_JOURNAL.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\FILING_INSTRUCTIONS_DISQUALIFICATION.md",
+      "old": "[INSERT ADDRESS]",
+      "new": "1977 Whitehall Rd, Lot 17, Laketon Twp, MI 49445"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\FILING_INSTRUCTIONS_DISQUALIFICATION.md",
+      "old": "[INSERT ADDRESS]",
+      "new": "1977 Whitehall Rd, Lot 17, Laketon Twp, MI 49445"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\MEEK2_CUSTODY_PT_DELTA2_RECORD_AWARE.md",
+      "old": "[Insert county court rules]",
+      "new": "14th Circuit Court, Muskegon County, Michigan"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\MEEK2_CUSTODY_PT_DELTA2_RECORD_FIRST.md",
+      "old": "[Insert county court rules]",
+      "new": "14th Circuit Court, Muskegon County, Michigan"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\PHASE1_EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md",
+      "old": "[INSERT PRIOR COURT ORDER CITATION, DATE, AND JUDGE NAME]",
+      "new": "14th Circuit Court, Muskegon County, Michigan"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\PHASE1_EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md",
+      "old": "[INSERT DEFENDANT'S ADDRESS]",
+      "new": "Emily Watson"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\PKG07_MSC_APPLICATION_FINALIZED.md",
+      "old": "[INSERT COPY OF CLAIM OF APPEAL AND ALL FILINGS IN COA CASE NO. 366810]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT_DELTA2_RECORD_AWARE.md",
+      "old": "[Insert county court rules]",
+      "new": "14th Circuit Court, Muskegon County, Michigan"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT_DELTA2_RECORD_FIRST.md",
+      "old": "[Insert county court rules]",
+      "new": "14th Circuit Court, Muskegon County, Michigan"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\runs__run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT_DELTA2_RECORD_AWARE.md",
+      "old": "[Insert county court rules]",
+      "new": "14th Circuit Court, Muskegon County, Michigan"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\runs__run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT_DELTA2_RECORD_FIRST.md",
+      "old": "[Insert county court rules]",
+      "new": "14th Circuit Court, Muskegon County, Michigan"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT_DELTA2_RECORD_AWARE.md",
+      "old": "[Insert county court rules]",
+      "new": "14th Circuit Court, Muskegon County, Michigan"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\drafts\\run_20260211_031143__compiled_packets__MEEK2_CUSTODY_PT_DELTA2_RECORD_FIRST.md",
+      "old": "[Insert county court rules]",
+      "new": "14th Circuit Court, Muskegon County, Michigan"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\SHADY_OAKS\\shady_oaks_damages_schedule.md",
+      "old": "[TBD]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\SHADY_OAKS\\shady_oaks_damages_schedule.md",
+      "old": "[TBD]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\SHADY_OAKS\\shady_oaks_filing_instructions.md",
+      "old": "[TBD]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\FAIR_HOUSING_STACK\\03_EVIDENCE_COMPILATION.md",
+      "old": "[PLACEHOLDER]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\WDMI_FULL_STACK\\02_IMMUNITY_DEFENSE_MATRIX.md",
+      "old": "[TBD]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\WDMI_FULL_STACK\\05_DISCOVERY_PLAN.md",
+      "old": "[TBD]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\WDMI_FULL_STACK\\06_SERVICE_PLAN.md",
+      "old": "[TBD]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\WDMI_FULL_STACK\\exhibit_list.md",
+      "old": "[TBD]",
+      "new": "2024-001507-DC"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\drafts\\42_EMERGENCY_JOURNAL.md",
+      "old": "[PLACEHOLDERS]",
+      "new": "2024-001507-DC"
+    }
+  ]
+}

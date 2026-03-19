@@ -1,0 +1,25 @@
+{
+  "created": "2026-02-24T22:21:48",
+  "db_path": "C:\\Users\\andre\\litigation_context.db",
+  "total_examples": 77900,
+  "train_count": 70110,
+  "test_count": 7790,
+  "split_ratio": 0.9,
+  "source_counts": {
+    "auth_rules": 2091,
+    "master_citations": 17138,
+    "evidence_quotes": 469,
+    "md_sections": 79452
+  },
+  "category_distribution": {
+    "GENERAL": 67282,
+    "MCR": 9843,
+    "MCL": 323,
+    "CASE": 210,
+    "MRE": 239,
+    "EVIDENCE": 3
+  },
+  "train_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\training_data\\train.jsonl",
+  "test_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\training_data\\test.jsonl",
+  "seed": 42
+}

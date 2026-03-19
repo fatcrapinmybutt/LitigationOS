@@ -1,0 +1,41 @@
+{
+  "pack": "LitigationOS_FormOS_Harvest_and_StackFactory_SUPERPIN_20260228",
+  "generated": "2026-02-28",
+  "files": [
+    {
+      "path": "COPILOT_SUPERPIN_FORM_OS.md",
+      "bytes": 3622,
+      "sha256": "60383fa00068af2497b425690029951effa67a0f67d0a04ef4a33d896a2b2e2b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1139,
+      "sha256": "2925059dd98e0cea78b1f84bd05b99695150ad5bbdc5cf71f7be0bc629b82b86"
+    },
+    {
+      "path": "config/form_os_config.example.json",
+      "bytes": 353,
+      "sha256": "0eaedd1c62ce666149cc953d6803df1880ac0d5d8d8509e2e2c1c70fc490d788"
+    },
+    {
+      "path": "docs/FOLDER_PLANES.md",
+      "bytes": 892,
+      "sha256": "ef6ce0a983ce860ce49a1ea72d63a558a80d6a1aa56d09a35c75d0f2fa50d658"
+    },
+    {
+      "path": "docs/LEGAL_NOTE.md",
+      "bytes": 338,
+      "sha256": "f80e09b1bd1d8bcb9f88e9178363237ab992f3815ee210c6d02098f0ef374ec0"
+    },
+    {
+      "path": "tooling/form_os_orchestrator.py",
+      "bytes": 13389,
+      "sha256": "fb226953d80175953c03b812553ea9e0caab9455cdcd573a28a41fd4c57cc7ce"
+    },
+    {
+      "path": "tooling/schema.sql",
+      "bytes": 2487,
+      "sha256": "75ef2c5d0ee48017e9679dcbee24b548357c7a7a0e37ccc1467b1e93de5765e5"
+    }
+  ]
+}

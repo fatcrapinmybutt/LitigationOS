@@ -1,0 +1,121 @@
+# ==============================================================================
+# LitigationOS — Full Stack Docker Compose
+# Services: web (Next.js), neo4j (graph DB), backup (scheduled)
+# ==============================================================================
+
+version: "3.9"
+
+services:
+  # --- LitigationOS Web Application ---
+  web:
+    build:
+      context: ../..
+      dockerfile: 00_SYSTEM/deploy/Dockerfile
+    container_name: litigos-web
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=/app/data/litigationos.db
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USER=${NEO4J_USER:-neo4j}
+      - NEO4J_PASSWORD=${NEO4J_PASSWORD:?NEO4J_PASSWORD is required}
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET:?NEXTAUTH_SECRET is required}
+      - NEXTAUTH_URL=${NEXTAUTH_URL:-http://localhost:3000}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    volumes:
+      - litigos-data:/app/data
+      - litigos-backups:/app/backups
+    depends_on:
+      neo4j:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    networks:
+      - litigos-net
+
+  # --- Neo4j Graph Database ---
+  neo4j:
+    image: neo4j:5-community
+    container_name: litigos-neo4j
+    restart: unless-stopped
+    ports:
+      - "${NEO4J_HTTP_PORT:-7474}:7474"
+      - "${NEO4J_BOLT_PORT:-7687}:7687"
+    environment:
+      - NEO4J_AUTH=${NEO4J_USER:-neo4j}/${NEO4J_PASSWORD:?NEO4J_PASSWORD is required}
+      - NEO4J_PLUGINS=["apoc"]
+      - NEO4J_server_memory_heap_initial__size=256m
+      - NEO4J_server_memory_heap_max__size=512m
+      - NEO4J_server_memory_pagecache_size=256m
+    volumes:
+      - neo4j-data:/data
+      - neo4j-logs:/logs
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:7474 || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    networks:
+      - litigos-net
+
+  # --- Scheduled Backup Service ---
+  backup:
+    image: alpine:3.19
+    container_name: litigos-backup
+    restart: unless-stopped
+    entrypoint: /bin/sh
+    command: >
+      -c "
+      apk add --no-cache sqlite curl && \
+      echo '--- LitigationOS Backup Service Started ---' && \
+      while true; do
+        TIMESTAMP=$$(date +%Y%m%d_%H%M%S)
+        DAY_OF_WEEK=$$(date +%u)
+
+        echo \"[$$TIMESTAMP] Running backup...\"
+
+        # Daily incremental: copy SQLite with WAL checkpoint
+        sqlite3 /data/litigationos.db '.backup /backups/daily/litigationos_$$TIMESTAMP.db'
+
+        # Weekly full backup on Sunday (day 7)
+        if [ \"$$DAY_OF_WEEK\" = \"7\" ]; then
+          echo \"[$$TIMESTAMP] Running weekly full backup...\"
+          cp /data/litigationos.db /backups/weekly/litigationos_full_$$TIMESTAMP.db
+        fi
+
+        # Prune daily backups older than 14 days
+        find /backups/daily -name '*.db' -mtime +14 -delete 2>/dev/null
+
+        # Prune weekly backups older than 90 days
+        find /backups/weekly -name '*.db' -mtime +90 -delete 2>/dev/null
+
+        echo \"[$$TIMESTAMP] Backup complete.\"
+        sleep 86400
+      done
+      "
+    volumes:
+      - litigos-data:/data:ro
+      - litigos-backups:/backups
+    networks:
+      - litigos-net
+
+volumes:
+  litigos-data:
+    driver: local
+  litigos-backups:
+    driver: local
+  neo4j-data:
+    driver: local
+  neo4j-logs:
+    driver: local
+
+networks:
+  litigos-net:
+    driver: bridge

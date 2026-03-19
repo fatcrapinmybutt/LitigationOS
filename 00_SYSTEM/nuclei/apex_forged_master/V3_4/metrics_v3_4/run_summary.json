@@ -1,0 +1,19 @@
+{
+  "ts": "20260208_2132",
+  "counts": {
+    "graphml_nodes": 40143,
+    "graphml_edges": 214090,
+    "bloom_headings": 4119,
+    "transcript_pages": 8,
+    "exparte_images": 2,
+    "external_tools": 2
+  },
+  "artifacts": {
+    "poster_pdf": "NUCLEUS_APEX_POSTER_BLUEPRINT_V3_4_20260208_2132.pdf",
+    "external_registry_json": "external_tools_registry.json",
+    "external_nodes_csv": "external_tool_nodes.csv",
+    "external_edges_csv": "external_tool_edges.csv",
+    "mcp_blueprint_md": "mcp_integration_blueprint.md",
+    "diagram_blueprint_md": "diagram_generation_blueprint.md"
+  }
+}

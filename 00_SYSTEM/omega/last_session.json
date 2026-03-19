@@ -1,0 +1,14 @@
+{
+  "run_at": "2026-03-04T19:03:18.572208",
+  "pipelines_found": 46,
+  "weights": {
+    "evidence_strength": 0.25,
+    "legal_precedent": 0.2,
+    "procedural_compliance": 0.15,
+    "judicial_profile": 0.15,
+    "timeline_urgency": 0.1,
+    "financial_impact": 0.1,
+    "anomaly_factor": 0.05
+  },
+  "saved_at": "2026-03-04T19:03:18.582283"
+}

@@ -1,0 +1,6 @@
+MANUS_SPEC=v2026-02-09.1|ROLE=CaseCatalogEncyclopediaBuilder|MODE=append_only|STOP=delta_only
+INPUTS=reports/DOC_INDEX.csv;reports/EVIDENCE_ATOMS.csv;reports/TIMELINE_EVENTS.csv;reports/TERM_INDEX.csv;drafts/ENCYCLOPEDIA_MASTER.md;texts/*
+OUTPUTS=glossary/GLOSSARY_BLUEPRINT.pdf;glossary/GLOSSARY_BLUEPRINT_EDGE.pdf;glossary/GLOSSARY_INDEX.md;glossary/GLOSSARY_INDEX.txt;drafts/STACK_VIEWER.html;drafts/CASE_CATALOG_MASTER.md;drafts/CASE_CATALOG_MASTER.txt;reports/RUN_LEDGER.jsonl;reports/MANIFEST.csv
+LOCKS=TruthLock(no invented facts);QuoteLock(verbatim only);AuthLock(MI rules/benchbooks pinned);FormsFirst(only if mandated)
+VEHICLES=trial(MEEK2);PPO(MEEK3);disqualification(MCR2.003);superintending(MCR3.302);COA-original(MCR7.206);MSC-original(MCR7.306);JTC(request/investigation)
+CYCLE=ingest->extract_quotes(EA)->timeline->cluster(packs)->vehicle_evidence_grids(fact->ea_id only)->emit_bundle->delta_check

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "manifest_files record",
+  "type": "object",
+  "required": [
+    "file_id",
+    "root",
+    "relpath",
+    "abspath",
+    "ext",
+    "kind",
+    "size_bytes",
+    "mtime_utc"
+  ],
+  "properties": {
+    "file_id": {
+      "type": "string"
+    },
+    "root": {
+      "type": "string"
+    },
+    "relpath": {
+      "type": "string"
+    },
+    "abspath": {
+      "type": "string"
+    },
+    "ext": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "size_bytes": {
+      "type": "integer"
+    },
+    "mtime_utc": {
+      "type": "string"
+    },
+    "sha256": {
+      "type": "string"
+    }
+  }
+}

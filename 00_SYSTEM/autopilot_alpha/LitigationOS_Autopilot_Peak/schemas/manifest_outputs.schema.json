@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "manifest_outputs record",
+  "type": "object",
+  "required": [
+    "output_id",
+    "source_file_id",
+    "stage",
+    "abspath",
+    "kind",
+    "size_bytes",
+    "mtime_utc"
+  ],
+  "properties": {
+    "output_id": {
+      "type": "string"
+    },
+    "source_file_id": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "abspath": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "object"
+    },
+    "size_bytes": {
+      "type": "integer"
+    },
+    "mtime_utc": {
+      "type": "string"
+    }
+  }
+}

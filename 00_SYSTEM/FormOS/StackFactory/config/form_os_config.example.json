@@ -1,0 +1,15 @@
+{
+  "roots": [
+    "D:/LitigationOS",
+    "F:/Litigation_OS",
+    "/storage/emulated/0/Download"
+  ],
+  "vault_root": "D:/LitigationOS_Vault",
+  "sqlite_db": "D:/LitigationOS_Vault/formos.db",
+  "explode_zips": true,
+  "max_zip_depth": 6,
+  "extract_pdf_text": true,
+  "pdf_text_min_chars_per_page": 50,
+  "enable_ocr": false,
+  "ocr_tool": "ocrmypdf"
+}

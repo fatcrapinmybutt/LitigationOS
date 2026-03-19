@@ -1,0 +1,2181 @@
+{
+  "generated": "2026-03-04T22:30:26.928767",
+  "agent": "Agent-151",
+  "total_files": 543,
+  "total_size_bytes": 11060898683,
+  "total_size_mb": 10548.49,
+  "files": {
+    "engines\\adversary_reader.py": {
+      "sha256": "709a83110381673adbe8e05a3b4bd2c6c9521aac452d7bdcd0a8ea1326d82aa7",
+      "size": 7555
+    },
+    "engines\\ai_dispatch.py": {
+      "sha256": "dc529877ed31ea40aa25905916ac6490718d0ccf2582f5e16746289ad21b6b50",
+      "size": 51751
+    },
+    "engines\\alienation_quantifier.py": {
+      "sha256": "5e262a8ea840baf1b35e362337c1ed09f89d5176e611af2b61da77f0826e3d17",
+      "size": 12295
+    },
+    "engines\\apex_convergence_engine.py": {
+      "sha256": "69b58aa5c879ce114631fdcd06c305accf7d78bc2b52429ac41284a9393b8869",
+      "size": 34268
+    },
+    "engines\\apex_judicial_engine.py": {
+      "sha256": "9ece7f67d5c1fc653408967f82f43c4e7f0960ff76ab719704bd1c4f373aeb2e",
+      "size": 43428
+    },
+    "engines\\authority_index_engine.py": {
+      "sha256": "6e1206bc2c903cc6d2bd28c7323a774118b5ac0a93bdcfeaa99ce3da21b5ec32",
+      "size": 8094
+    },
+    "engines\\backup_version_engine.py": {
+      "sha256": "4f37e85a0da3c0328e594a03a0429736865f70a3f5616b6c2d80e1b113d1862b",
+      "size": 7456
+    },
+    "engines\\brief_compliance_engine.py": {
+      "sha256": "8739ab219fe528b5f1edf8c0c9803bec560be080becf99ef195595bdb7780a63",
+      "size": 14061
+    },
+    "engines\\brief_quality_engine.py": {
+      "sha256": "7e86fe00910ed4868bd4e75159f519ebb3ee7e229b1744f8006a24b43aa7f52c",
+      "size": 22678
+    },
+    "engines\\citation_validator.py": {
+      "sha256": "ac9b84123c7b2b48eeae98b0e8d63eee4d6d7cbf5eb4ca0c8a7ffdf7ba63a72d",
+      "size": 8013
+    },
+    "engines\\coa_brief_engine.py": {
+      "sha256": "e2f5c280c072c4734931673a6c790f225b8bba2bae329a37d0e633855ec782f4",
+      "size": 25917
+    },
+    "engines\\coa_brief_polisher.py": {
+      "sha256": "c18df677d2382e50372bbb022ca16f2ab0769efd48dec65e9e176abaf7ad2463",
+      "size": 10710
+    },
+    "engines\\compliance_checker.py": {
+      "sha256": "7b65cdbd2619e2ebd6c06758316b6f56415c8da8dea1335beb7bd9b4fa7b9376",
+      "size": 10090
+    },
+    "engines\\constitutional_mapper.py": {
+      "sha256": "e506f961885a99c6bdc884efb2f94bad3c36cfc5626981a1660e7c2ec5ad8ca3",
+      "size": 12650
+    },
+    "engines\\convergence_report.py": {
+      "sha256": "cc9a5da56e3c4ec77e1b53ec4a368c22bf3a04ac454ca04902d00dee74ea2c1d",
+      "size": 8243
+    },
+    "engines\\court_calendar_engine.py": {
+      "sha256": "8f4017df2869410e806593baaadcf0244cae92f845996c3a6618ab92b7f5b0b3",
+      "size": 8598
+    },
+    "engines\\court_timeline_final.py": {
+      "sha256": "188848335b7989d219a8b93dc5168c6ef1fe92c03732af22c6414247f7efc308",
+      "size": 6892
+    },
+    "engines\\damages_engine.py": {
+      "sha256": "22a7b8a713d7e38f50a871b7f678e12d18661d1d7b4c6dcf3605807b37b23846",
+      "size": 11132
+    },
+    "engines\\db_backup_engine.py": {
+      "sha256": "1d8c1183393349b54c59a3b4a931f7192206eb300f64342bae073b9d5fa81158",
+      "size": 7062
+    },
+    "engines\\db_intelligence_update.py": {
+      "sha256": "4c90bef1f39407a340556a698446bca54e1a5146f992f432dff3004d3bb52f45",
+      "size": 11214
+    },
+    "engines\\db_lock_manager.py": {
+      "sha256": "abc30f678602552f0557a5b3477b167f7f49f996a2c4d4da81b028743e2cd8bd",
+      "size": 17156
+    },
+    "engines\\db_rag_bridge.py": {
+      "sha256": "2484177ffef53d88d824d6820a9252af604bc72aeeb16a536ddd96d61b0ff18a",
+      "size": 19034
+    },
+    "engines\\deadline_alert_engine.py": {
+      "sha256": "299f5bb45483826b19842fc292803b90e3c4e5550c0f28f721f405798247d922",
+      "size": 16601
+    },
+    "engines\\doc_assembly_engine.py": {
+      "sha256": "ab4af10d8837cb684891d0f9fe9e279ef580fe52a6232c583963847bf45e2e23",
+      "size": 37700
+    },
+    "engines\\efiling_prep_engine.py": {
+      "sha256": "239ca4bda029ea2d24ec41ca848cf3fd924eb083cb30449eea800682dc73c9ea",
+      "size": 8782
+    },
+    "engines\\engine_harness.py": {
+      "sha256": "7aa4d40f8426552884f822722a55ec7c213e30df9d6bac08c95830d5e8b7025c",
+      "size": 14724
+    },
+    "engines\\evidence_chain_engine.py": {
+      "sha256": "a6cc647cf1cbfbc51cdfb5a93e8972e9752c8f71c7f97c10b1f7538e49ca86fd",
+      "size": 7972
+    },
+    "engines\\exhibit_compiler.py": {
+      "sha256": "45e172cdac6c16eee14bdd058ce43d7876dda8f222244accf592e8826aaf5846",
+      "size": 9398
+    },
+    "engines\\filing_assembly_pipeline.py": {
+      "sha256": "28fd94a6ba52b9f811472258543c3e0f23ce8943b6412b2d0ef04ee2842eaf37",
+      "size": 32328
+    },
+    "engines\\filing_finalizer.py": {
+      "sha256": "bf332ec4ade22ebf1be66bba6ac5c1d8413cfebfc82911f6ca94f923b51265a4",
+      "size": 11028
+    },
+    "engines\\filing_sequencer.py": {
+      "sha256": "f9958c24291119721b50a891d1e81287bc3c1f22276c9851f2b9b7fdb6604a7f",
+      "size": 12047
+    },
+    "engines\\filing_validator_engine.py": {
+      "sha256": "16f77dba595f821f5d4b67bd1cd971fc19024df7b6d8528aaca1ce7caa81cb0f",
+      "size": 19626
+    },
+    "engines\\fleet_v3.py": {
+      "sha256": "63dfa6800c38f62da8db6216e3bd1c76be8b82917cd92ce38f8978cf62b8983f",
+      "size": 41926
+    },
+    "engines\\folder_reorganizer.py": {
+      "sha256": "e35c81003cc043b72c4c9dd47e2115c8070ccec7a33f8442b850913278c8bbc4",
+      "size": 9758
+    },
+    "engines\\frankenstein_engine.py": {
+      "sha256": "91db76e89942960092dabca29b6f9bf7c28b05a114bab8ec38d44a40e5ea38b8",
+      "size": 35604
+    },
+    "engines\\health_check.py": {
+      "sha256": "7d759e3e967e56adad01738587366548c1031465e2f5489f3b62387190ecc931",
+      "size": 11941
+    },
+    "engines\\impeachment_index.py": {
+      "sha256": "70b629df928bdca0aab4be9ad8c7dc41d3aacbbf78d6573b0f0b78c86701aac0",
+      "size": 11005
+    },
+    "engines\\ingest_superpin_atlas.py": {
+      "sha256": "f734d44902291135731c62fbbd40c46fd9024410897a7713a83bcb178da34c54",
+      "size": 10339
+    },
+    "engines\\journal_synthesizer.py": {
+      "sha256": "bc270521922f484d649737c55049d5ee99bb081b20f86f52e4bf8549c1041339",
+      "size": 32752
+    },
+    "engines\\litigationos_rebuild.py": {
+      "sha256": "e1ccb59dae55aba3418b6af896e56e18f063c93f21b7edfc8be9cfb271a84529",
+      "size": 15153
+    },
+    "engines\\litigation_rag_engine.py": {
+      "sha256": "b292f9f450f3cb94596c6481844ebe042629086403d27d79eba3263c6f5abc8c",
+      "size": 19476
+    },
+    "engines\\llm_bridge.py": {
+      "sha256": "7dc27361791010a8aa71bb59d25c234c4a6d07a60e3eb083fb71cabd498cd87c",
+      "size": 16157
+    },
+    "engines\\llm_classifier_engine.py": {
+      "sha256": "1eed001d7bb9b0439a49b6ad7714fa1f1d53670bf9495ba090362ff086cf0e1f",
+      "size": 13667
+    },
+    "engines\\master_timeline_builder.py": {
+      "sha256": "0ed43ec368864950e2a1add1ce709b7743d74c9f6b08eb5d434b556a23cb06bf",
+      "size": 24390
+    },
+    "engines\\omega_flatten_p1.py": {
+      "sha256": "e37c01ef0eb3eb46af3ade070f358250721d2ab70f012c0b1c65996e8b42c951",
+      "size": 15438
+    },
+    "engines\\omega_flatten_p1_5.py": {
+      "sha256": "d0c412745933eedd735c08788085b21156963f0dd13f41e98e3616385e77d011",
+      "size": 9385
+    },
+    "engines\\omega_flatten_p2.py": {
+      "sha256": "15950b11fdd7bf63d0d47aabc26c2842fc3ced6b6e4dcdc037d33f9d2a10957a",
+      "size": 22220
+    },
+    "engines\\omega_flatten_p3.py": {
+      "sha256": "828b964bbc8c105d99eec1a3b4c8820330b619b595eb189302aeeb1a11c90de0",
+      "size": 11364
+    },
+    "engines\\omega_flatten_p5.py": {
+      "sha256": "e8a1b974b22f3ae72c6f04bf437a973386a96f5c2e96844f53bf52d94cfe3033",
+      "size": 16077
+    },
+    "engines\\opposing_analysis_engine.py": {
+      "sha256": "9ed7710863847b235ee8d9cff68875022ef1f44b267cdf4a0483077a74d4d176",
+      "size": 21095
+    },
+    "engines\\phase0b_ingest_engine.py": {
+      "sha256": "b662851145853b8ff108a1e0cfb221c1c5ae73f093689756d9ae68133292f7fc",
+      "size": 25802
+    },
+    "engines\\phase0b_ingest_remaining.py": {
+      "sha256": "daee0ebe51678595cf9715665eb791be9b63cbe9a6d8ef55b6a0e57b8a087f06",
+      "size": 16572
+    },
+    "engines\\placeholder_resolver_v2.py": {
+      "sha256": "4c65b0a9ba67defa4d037fdde063506fa723f1d28687d8beb8f1b8a25a094c7d",
+      "size": 10768
+    },
+    "engines\\placeholder_scanner.py": {
+      "sha256": "8a7436a554f9c6b40c4e9b5d691c372c4d73ee90116363fb865f9f46065ffe9e",
+      "size": 5332
+    },
+    "engines\\prefiling_qa_engine.py": {
+      "sha256": "d0f5c76df46666c1a44b6a02d921c11219e680e360260e16924071d422efc128",
+      "size": 9671
+    },
+    "engines\\query_adversary.py": {
+      "sha256": "f28c2f68f1dd0953afde0c854b1959c0cdf4f6815674f80083d3a003f17ae46e",
+      "size": 2604
+    },
+    "engines\\rag_indexer.py": {
+      "sha256": "240cdea1895d3230e54fabf56c01abb99e3bf83af18b421482aedbe1ed503bed",
+      "size": 20659
+    },
+    "engines\\rebuttal_matrix_engine.py": {
+      "sha256": "ec80d21071e27768ce6b72207ef631648bc716bd22c2702f9812f7722b79f7c4",
+      "size": 10957
+    },
+    "engines\\settlement_engine.py": {
+      "sha256": "d3822c7c9a17be727790c80af75168c8649645200452c7bc805c0ae2a431264c",
+      "size": 25575
+    },
+    "engines\\skill_authority_validator.py": {
+      "sha256": "557b08550f9932c8123e166568fe6f9ca7ba3d809b75473083046fdf7db88579",
+      "size": 8644
+    },
+    "engines\\skill_best_interest.py": {
+      "sha256": "8976677e73941c1ecb52ef8f865ce1ab026be086747a9489ed762093c6365486",
+      "size": 16040
+    },
+    "engines\\skill_bias_quantifier.py": {
+      "sha256": "92de73198c64ebd05d18e247fdaaa3081ca2c837a1dbbf5cef435d9c31e6297b",
+      "size": 8129
+    },
+    "engines\\skill_convergence_engine.py": {
+      "sha256": "857b9097eccf1b6c25d6bf317cc5890f36dc05918ef5fbf167c15e3560a30e19",
+      "size": 3979
+    },
+    "engines\\skill_deadline_sentinel.py": {
+      "sha256": "06bf223968d2e2988eb5acc9314d740f0feaeb79d7792c202102dcd647ffc45a",
+      "size": 16953
+    },
+    "engines\\skill_filing_tracker.py": {
+      "sha256": "baad44c5ab087eb47ab368af0e3965fcd965e369f019fdb5c535582203ae4476",
+      "size": 9492
+    },
+    "engines\\skill_landlord_tenant.py": {
+      "sha256": "5507ee0124865d2c8549f2ad9cccf69704b37d619911740bf4b0c44a81a3544a",
+      "size": 4888
+    },
+    "engines\\skill_mcl_library.py": {
+      "sha256": "a9537e2bb877bed95392affc234935f626e4cf94b297e35cea152df8cb464f55",
+      "size": 12030
+    },
+    "engines\\skill_mcr_encyclopedia.py": {
+      "sha256": "15b31f8cc0ee65d428ee9658fb29e4dde25902692d327f369603ad9c1e4a5965",
+      "size": 15396
+    },
+    "engines\\skill_michigan_tort_lawsuit.py": {
+      "sha256": "91f84d5c9448c67bca191bdc81d8c5bf6ff26e7210a35a15d2628069a0f52115",
+      "size": 5523
+    },
+    "engines\\skill_ppo_detector.py": {
+      "sha256": "986859e4c27393d2c388fb0c00458292503406263645e449e9bd03d3664f287d",
+      "size": 6952
+    },
+    "engines\\skill_scao_forms.py": {
+      "sha256": "71992e9ea467e537c8a37a7b10bcc215c02628e3a6c507b5bb51207805bd5e51",
+      "size": 13703
+    },
+    "engines\\skill_timeline_builder.py": {
+      "sha256": "ca80d64ebb039a525823d990b8b4940d8fc463d559a79220cc73528643806a27",
+      "size": 5376
+    },
+    "engines\\skill_torts_claims.py": {
+      "sha256": "ecc08ab8e25f35ea6c59f714969068d5f9236ad8faa71d6a79df087681f7e285",
+      "size": 5285
+    },
+    "engines\\timeline_consolidator.py": {
+      "sha256": "7b137037f03a6dcda576659aaf2369c60e989c801918af544018445c6a55b770",
+      "size": 11504
+    },
+    "engines\\timeline_engine.py": {
+      "sha256": "9aa47bb717e4fe885e49f79c22aaa510e1987a1f31a7aa16d4da188be33d3bcf",
+      "size": 16288
+    },
+    "engines\\_check_db.py": {
+      "sha256": "3e3f450f40ea98218d9ed9967acaf289c471c5eca989a36a91e40821a8c8c223",
+      "size": 610
+    },
+    "engines\\_db_survey.py": {
+      "sha256": "a262b6cfc797996dacde1829d879a5db0e06741b366bacac21cad702609bb07d",
+      "size": 611
+    },
+    "engines\\_deep_scan.py": {
+      "sha256": "022781ac891f5f19d8c444ced3148ddcd11deba282267b0c295484b588716255",
+      "size": 2757
+    },
+    "engines\\_gen_timeline_report.py": {
+      "sha256": "c0237be6cb69928488bf8b9463bcb0ba271c423d1b5d95f37ffc26ca8dc6a7e8",
+      "size": 4461
+    },
+    "engines\\_strategic_audit.py": {
+      "sha256": "728552fa8bb282f3733042dc079088cef711e974ee8e82326dc4400d36a9ad7c",
+      "size": 1551
+    },
+    "engines\\_timeline_stats.py": {
+      "sha256": "3763a09aafec809ea06d29dd0f65fabb8462614b4061d1ea30c9605c712c9783",
+      "size": 1651
+    },
+    "engines\\agents\\agent_base.py": {
+      "sha256": "e9b4102dbd029ef675de98c7301ae361c510a3e39cb4340ad71f37d050e854be",
+      "size": 2112
+    },
+    "engines\\agents\\authority_agent.py": {
+      "sha256": "811769a42c0d73061a6e7ea3982fb334deec103f57a6b0fc7cd653f00bb2efff",
+      "size": 1137
+    },
+    "engines\\agents\\chronology_agent.py": {
+      "sha256": "3f0323ce246659dd66756d3ccdc8bb1af57037f64b41a125d82991f60f8278bd",
+      "size": 2123
+    },
+    "engines\\agents\\delta999_citation_agent.py": {
+      "sha256": "c21fa00e7a66e496ca9b6c1cbda8d6da047fb2f4d1e2d4ab1763afd0d70da856",
+      "size": 13060
+    },
+    "engines\\agents\\delta999_coa_agent.py": {
+      "sha256": "9fe2c717b48f08b25d664754a4510d7d5d3c6dda809e430d09d41b265e68b550",
+      "size": 12250
+    },
+    "engines\\agents\\delta999_compliance_agent.py": {
+      "sha256": "323600077a78b88c3ba70e49928c85bdfc46d53ccd285ba4c57e58dfab57b2a5",
+      "size": 14416
+    },
+    "engines\\agents\\delta999_damages_agent.py": {
+      "sha256": "ab966d55103cb097d2d235cb333274a453c75da05b51ce9724bb0d02fe5a6700",
+      "size": 13188
+    },
+    "engines\\agents\\delta999_discovery_agent.py": {
+      "sha256": "44f16dfd7e977aa2c292ccf478669b603f4620b11c5bb33c2210382e25f9c266",
+      "size": 16276
+    },
+    "engines\\agents\\delta999_evidence_chain_agent.py": {
+      "sha256": "e1443abd88bb59568186b35e1b2d00f999f9ca24033afce680a804122fd86a69",
+      "size": 14695
+    },
+    "engines\\agents\\delta999_orchestrator.py": {
+      "sha256": "7ee20d0352b3bce3bbe988a1c00c1be22895b603af92df81bf5838d2b9f6f14d",
+      "size": 8038
+    },
+    "engines\\agents\\delta999_rebuttal_agent.py": {
+      "sha256": "600a9fcd30548b15b2845fde8533518c68400d0d92bd3aeb83f7c61f801cdcb2",
+      "size": 14992
+    },
+    "engines\\agents\\delta999_redteam_agent.py": {
+      "sha256": "4dd753c88de2192f2c2fd586b250a91c50b72487f9e403cf98bf3486b504e149",
+      "size": 18555
+    },
+    "engines\\agents\\delta999_service_agent.py": {
+      "sha256": "60ff483b63ceb4b9d5cc101ef29ec0dccd2444b0c9fe27b3cae220e888505805",
+      "size": 13292
+    },
+    "engines\\agents\\delta999_timeline_agent.py": {
+      "sha256": "f19b0923ad63e903739da75e3ed3d2890da058324bd4fe3d0d12bff05f236ed8",
+      "size": 15834
+    },
+    "engines\\agents\\delta999_trial_agent.py": {
+      "sha256": "f86c528783ce7c15002f6be6b9518f2457ec773f1b5b1b6d1d4e6adabf543ee0",
+      "size": 15765
+    },
+    "engines\\agents\\evidence_agent.py": {
+      "sha256": "0f007b2587ae474726c07dc1971f4c812985d614d3238591b8cd0e25acc1666a",
+      "size": 2327
+    },
+    "engines\\agents\\feedback_agent.py": {
+      "sha256": "7a3d566c7fa6250a415b0ea57552383ac62fc5d3c34587839a92b20427e02a1d",
+      "size": 1171
+    },
+    "engines\\agents\\filing_agent.py": {
+      "sha256": "f74f122d2dc62a28a779d39a2ea0646fcb2dd1936b5638aa0967a9a45b6939cd",
+      "size": 1877
+    },
+    "engines\\agents\\orchestrator.py": {
+      "sha256": "e9ff5402737e88273790db4123573e785908209159df51c93e94eda733d7b871",
+      "size": 2780
+    },
+    "engines\\agents\\__init__.py": {
+      "sha256": "79e1c3b6db2267ae0b86a43fc511571bc86bfd72a30d67f3fb0068e858196f51",
+      "size": 913
+    },
+    "engines\\agents\\__pycache__\\delta999_citation_agent.cpython-312.pyc": {
+      "sha256": "6cca5c5435167de8409bddfe50b5650c8a5c3a6c4b2dcf03aacd91378f6379b5",
+      "size": 16074
+    },
+    "engines\\agents\\__pycache__\\delta999_coa_agent.cpython-312.pyc": {
+      "sha256": "c00925d40c4bfe11038ebc38c5cf340da5ae4aeb2789a8bb5d7539eccee55c53",
+      "size": 14395
+    },
+    "engines\\agents\\__pycache__\\delta999_compliance_agent.cpython-312.pyc": {
+      "sha256": "ebc852cd0ecdcbe55c7ae31c89fdb5aee018bbc74dab14c6cde0b3506f6f4747",
+      "size": 16411
+    },
+    "engines\\agents\\__pycache__\\delta999_damages_agent.cpython-312.pyc": {
+      "sha256": "0e40f5258286dce0c9627aaeddc01f1e6f12413c1433c11c5e7f633801fb86d0",
+      "size": 13944
+    },
+    "engines\\agents\\__pycache__\\delta999_discovery_agent.cpython-312.pyc": {
+      "sha256": "a385b6732f2d10bb8e85bf76ac82a74a6b13314151e32d8d8671eef02052df26",
+      "size": 17205
+    },
+    "engines\\agents\\__pycache__\\delta999_evidence_chain_agent.cpython-312.pyc": {
+      "sha256": "91e7d85e542fe9b7ef529216e08f6d23b49bcb9f3ab531fce4b71147efb150ec",
+      "size": 16448
+    },
+    "engines\\agents\\__pycache__\\delta999_orchestrator.cpython-312.pyc": {
+      "sha256": "4ae7c88f9774bf41311e3070a348a0909eabe05afb1aef0f7ec4ce9819f23185",
+      "size": 8820
+    },
+    "engines\\agents\\__pycache__\\delta999_rebuttal_agent.cpython-312.pyc": {
+      "sha256": "fc3f713c26a1d98295eb965d18dd2bdc2c14467fad470c732a63d57b8b75e918",
+      "size": 16607
+    },
+    "engines\\agents\\__pycache__\\delta999_redteam_agent.cpython-312.pyc": {
+      "sha256": "5f3c20adcea36835c9110a75e3de6cfd0fb723ddd3c1f39ca97c115fbe1e447b",
+      "size": 19679
+    },
+    "engines\\agents\\__pycache__\\delta999_service_agent.cpython-312.pyc": {
+      "sha256": "0372505803a2d64883f93de1d6ab820a6e07de6d413337e2bb7625c5bcbf9cd3",
+      "size": 13900
+    },
+    "engines\\agents\\__pycache__\\delta999_timeline_agent.cpython-312.pyc": {
+      "sha256": "2ef631223f5d502af6deddf3082e44ad0e7197cf7167364a32a1b3f0b8214d2b",
+      "size": 20220
+    },
+    "engines\\agents\\__pycache__\\delta999_trial_agent.cpython-312.pyc": {
+      "sha256": "be59f5b7620e107d0b3345392d6c01f7b1702845f3cb26251e12e8a52991f569",
+      "size": 16537
+    },
+    "engines\\docforge_v18\\BLOCKERS_ACQUISITION_PLAN.md": {
+      "sha256": "ea1cd1669e94ae373cdb15de4bdc903738b37ec46decfc89da529175516913c1",
+      "size": 314
+    },
+    "engines\\docforge_v18\\CYCLE_LEDGER.md": {
+      "sha256": "ad961e99f77f8af12ac53e73e0de684296613365dfaa7e7253561a349a6d765b",
+      "size": 293
+    },
+    "engines\\docforge_v18\\INSTRUCTIONS_STEP_BY_STEP.txt": {
+      "sha256": "ac446b8959882d5ffe494b1a49d75d56c8d5ce64dfdc4998633593a8c2820653",
+      "size": 449
+    },
+    "engines\\docforge_v18\\LLM_AUTO_PLAN.md": {
+      "sha256": "2b448a8e8546a3101816b29e367ee1bf0980e11e981067ef081a7477ad6bdaac",
+      "size": 389
+    },
+    "engines\\docforge_v18\\README.md": {
+      "sha256": "ce2bfd850ae13b6c64875b0e30091e7c660ae73d1bd1e1bc947629159f5967cb",
+      "size": 532
+    },
+    "engines\\docforge_v18\\core\\docforge_v18.py": {
+      "sha256": "78431c89994ed6b71dbaa2cb0aa9d4710c48e0ff1bfa68de3c169cf9ac552aca",
+      "size": 26042
+    },
+    "engines\\docforge_v18\\manifests\\manifest.json": {
+      "sha256": "605cacb77edfc5022ceffecc0f9fd29f8fb91fbee158b0fec717abb494288ebe",
+      "size": 13315
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\AuthorityTriples.json": {
+      "sha256": "58f37e284d9f429f10ac8cb77219507ed1b13f6d40f9f9ad601eea53ad8f55de",
+      "size": 3950
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\AuthorityTriples.md": {
+      "sha256": "e356c797917bcc9873ce6874ff2b94e7d0feed75919cb747dffcd1e211679e70",
+      "size": 1245
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\CASE_STATE.md": {
+      "sha256": "9ad4b0d86dcbaed2fba0d46b7ca612a62cca47cf908314a049bc9bf8dc958880",
+      "size": 169
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\ContextPack.md": {
+      "sha256": "e856e9a986d91b9947cd5943fbadce8f5eac3dd07440a76317d89841d9a05514",
+      "size": 205
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\ContradictionMap.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\ContradictionMap.md": {
+      "sha256": "639d728c9b31e863cb688713ca9a2e40d1c168fb87ff19f0cbaf6e62f831f22e",
+      "size": 18
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\Deadlines.md": {
+      "sha256": "99027bedfdb39b28560c08b5bd03fafbc072993694eb5ff636ef5ec11f64887c",
+      "size": 643
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\DRAFT_BLOCKS_DROPIN.md": {
+      "sha256": "a09664212fdff10eb81180641f581744a6ddfccde8018aba61f9d5d2c775ecd7",
+      "size": 450
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\PACK_MANIFEST.json": {
+      "sha256": "af416bb989e138ec54f88a8f4e93ccef55ad72b67e1278fe025aba32540fdaa8",
+      "size": 686
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\SBNA.md": {
+      "sha256": "d4efd873fb9be17cbe57af569f5bf491682457740dc74c351f59e4b3abd00643",
+      "size": 316
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\ServiceChecklist.md": {
+      "sha256": "551f19d4177adbb4911a265e0d0a01b526d67c864637ccb32e40ffff29090e08",
+      "size": 203
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\Transcript_StatementOfFacts_Pins.md": {
+      "sha256": "01ae85808fe1b8e6938442bee703ee1e66c5353c7297c33efb40658c2836e7fe",
+      "size": 34
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\Validation_RedTeam.md": {
+      "sha256": "6ec1f777843f03b35cbddf4a6d717174820a17a192e448c612e5b546aa11f97d",
+      "size": 141
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18\\20260223T021841Z\\VehicleMap.md": {
+      "sha256": "22d4aa196b78f07c86d43a217ada5e63c4761672be79838c55a81182dd9198a5",
+      "size": 305
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\AuthorityTriples.json": {
+      "sha256": "58f37e284d9f429f10ac8cb77219507ed1b13f6d40f9f9ad601eea53ad8f55de",
+      "size": 3950
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\AuthorityTriples.md": {
+      "sha256": "e356c797917bcc9873ce6874ff2b94e7d0feed75919cb747dffcd1e211679e70",
+      "size": 1245
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\CASE_STATE.md": {
+      "sha256": "9ad4b0d86dcbaed2fba0d46b7ca612a62cca47cf908314a049bc9bf8dc958880",
+      "size": 169
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContextPack.md": {
+      "sha256": "e856e9a986d91b9947cd5943fbadce8f5eac3dd07440a76317d89841d9a05514",
+      "size": 205
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContradictionMap.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContradictionMap.md": {
+      "sha256": "639d728c9b31e863cb688713ca9a2e40d1c168fb87ff19f0cbaf6e62f831f22e",
+      "size": 18
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Deadlines.md": {
+      "sha256": "99027bedfdb39b28560c08b5bd03fafbc072993694eb5ff636ef5ec11f64887c",
+      "size": 643
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\DRAFT_BLOCKS_DROPIN.md": {
+      "sha256": "a09664212fdff10eb81180641f581744a6ddfccde8018aba61f9d5d2c775ecd7",
+      "size": 450
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\PACK_MANIFEST.json": {
+      "sha256": "df73ecac16cc886bae32514b9921766338c5a09f99f086f0ae8bfb85d0a44e2b",
+      "size": 722
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\SBNA.md": {
+      "sha256": "d4efd873fb9be17cbe57af569f5bf491682457740dc74c351f59e4b3abd00643",
+      "size": 316
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ServiceChecklist.md": {
+      "sha256": "551f19d4177adbb4911a265e0d0a01b526d67c864637ccb32e40ffff29090e08",
+      "size": 203
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Transcript_StatementOfFacts_Pins.md": {
+      "sha256": "01ae85808fe1b8e6938442bee703ee1e66c5353c7297c33efb40658c2836e7fe",
+      "size": 34
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Validation_RedTeam.md": {
+      "sha256": "6ec1f777843f03b35cbddf4a6d717174820a17a192e448c612e5b546aa11f97d",
+      "size": 141
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\ALL\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\VehicleMap.md": {
+      "sha256": "22d4aa196b78f07c86d43a217ada5e63c4761672be79838c55a81182dd9198a5",
+      "size": 305
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\AuthorityTriples.json": {
+      "sha256": "25e90af3a62ac8ffdc958d3d4e094071e65ef18d8383fa09034a7ab1a7ddbd5d",
+      "size": 513
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\AuthorityTriples.md": {
+      "sha256": "a6435871034b92473ae0fe56f9ce5ff215c5e24b80af9223959597672e2d2306",
+      "size": 264
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\CASE_STATE.md": {
+      "sha256": "6720d86e913cc9a1639fc18911421aea131fcf9f27981017a540b6e5bd481c32",
+      "size": 171
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\ContextPack.md": {
+      "sha256": "693210aec79aee474df614cbe3bb0d368ff4670f9d06a0dc26685ed8bea76f41",
+      "size": 207
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\ContradictionMap.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\ContradictionMap.md": {
+      "sha256": "639d728c9b31e863cb688713ca9a2e40d1c168fb87ff19f0cbaf6e62f831f22e",
+      "size": 18
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\Deadlines.md": {
+      "sha256": "329448201d2c4c7044f92fd062c5959d18ca63f4f9eb78f13f543a3586490bfe",
+      "size": 282
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\DRAFT_BLOCKS_DROPIN.md": {
+      "sha256": "a09664212fdff10eb81180641f581744a6ddfccde8018aba61f9d5d2c775ecd7",
+      "size": 450
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\PACK_MANIFEST.json": {
+      "sha256": "dcb9b01c4f24004f958c329ad5b5a39cfd103ea8ae0174404463d75953cad856",
+      "size": 688
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\SBNA.md": {
+      "sha256": "d4efd873fb9be17cbe57af569f5bf491682457740dc74c351f59e4b3abd00643",
+      "size": 316
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\ServiceChecklist.md": {
+      "sha256": "551f19d4177adbb4911a265e0d0a01b526d67c864637ccb32e40ffff29090e08",
+      "size": 203
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\Transcript_StatementOfFacts_Pins.md": {
+      "sha256": "01ae85808fe1b8e6938442bee703ee1e66c5353c7297c33efb40658c2836e7fe",
+      "size": 34
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\Validation_RedTeam.md": {
+      "sha256": "45224a6f7a4a041176fa8b40ca12af7fd1fe07f53e22c941c94438a5c7c59361",
+      "size": 195
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18\\20260223T021841Z\\VehicleMap.md": {
+      "sha256": "720880a9459894a6543e0f0134052615eacbc4d53191f42763bc78036c8fc9ea",
+      "size": 307
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\AuthorityTriples.json": {
+      "sha256": "25e90af3a62ac8ffdc958d3d4e094071e65ef18d8383fa09034a7ab1a7ddbd5d",
+      "size": 513
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\AuthorityTriples.md": {
+      "sha256": "a6435871034b92473ae0fe56f9ce5ff215c5e24b80af9223959597672e2d2306",
+      "size": 264
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\CASE_STATE.md": {
+      "sha256": "6720d86e913cc9a1639fc18911421aea131fcf9f27981017a540b6e5bd481c32",
+      "size": 171
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContextPack.md": {
+      "sha256": "693210aec79aee474df614cbe3bb0d368ff4670f9d06a0dc26685ed8bea76f41",
+      "size": 207
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContradictionMap.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContradictionMap.md": {
+      "sha256": "639d728c9b31e863cb688713ca9a2e40d1c168fb87ff19f0cbaf6e62f831f22e",
+      "size": 18
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Deadlines.md": {
+      "sha256": "329448201d2c4c7044f92fd062c5959d18ca63f4f9eb78f13f543a3586490bfe",
+      "size": 282
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\DRAFT_BLOCKS_DROPIN.md": {
+      "sha256": "a09664212fdff10eb81180641f581744a6ddfccde8018aba61f9d5d2c775ecd7",
+      "size": 450
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\PACK_MANIFEST.json": {
+      "sha256": "4037434dbe04c6e9ce733b69beb4f259994d4d0b1598a0585e0d7bf78bd5def6",
+      "size": 724
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\SBNA.md": {
+      "sha256": "d4efd873fb9be17cbe57af569f5bf491682457740dc74c351f59e4b3abd00643",
+      "size": 316
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ServiceChecklist.md": {
+      "sha256": "551f19d4177adbb4911a265e0d0a01b526d67c864637ccb32e40ffff29090e08",
+      "size": 203
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Transcript_StatementOfFacts_Pins.md": {
+      "sha256": "01ae85808fe1b8e6938442bee703ee1e66c5353c7297c33efb40658c2836e7fe",
+      "size": 34
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Validation_RedTeam.md": {
+      "sha256": "45224a6f7a4a041176fa8b40ca12af7fd1fe07f53e22c941c94438a5c7c59361",
+      "size": 195
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK1\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\VehicleMap.md": {
+      "sha256": "720880a9459894a6543e0f0134052615eacbc4d53191f42763bc78036c8fc9ea",
+      "size": 307
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\AuthorityTriples.json": {
+      "sha256": "c722bcbb968c10155a3812e44c5d502075a9c02e533dbb41b8acd1c3f705fda3",
+      "size": 1293
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\AuthorityTriples.md": {
+      "sha256": "a725fb6c63c9d62e61eae9dfa7d43afe078d5906c6f9a56f832dace5079cf4fc",
+      "size": 482
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\CASE_STATE.md": {
+      "sha256": "06075596742ff35a5f5147ea8679a77285379a872d0dec7e208d4b99993a29f4",
+      "size": 171
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\ContextPack.md": {
+      "sha256": "4671dd60a9df1923232ddd4658d45617c26981af7c8df00e536c115c6e677b34",
+      "size": 207
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\ContradictionMap.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\ContradictionMap.md": {
+      "sha256": "639d728c9b31e863cb688713ca9a2e40d1c168fb87ff19f0cbaf6e62f831f22e",
+      "size": 18
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\Deadlines.md": {
+      "sha256": "6c6c50093fbc509066110bcd5b4f344fdd72bd713709a7a2b7c2f56a724cc37f",
+      "size": 288
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\DRAFT_BLOCKS_DROPIN.md": {
+      "sha256": "a09664212fdff10eb81180641f581744a6ddfccde8018aba61f9d5d2c775ecd7",
+      "size": 450
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\PACK_MANIFEST.json": {
+      "sha256": "ab42d885c4f75663b10c8c9ceedadbbe2e8c96c8b4cde3b7a0e975f884fb61b9",
+      "size": 688
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\SBNA.md": {
+      "sha256": "d4efd873fb9be17cbe57af569f5bf491682457740dc74c351f59e4b3abd00643",
+      "size": 316
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\ServiceChecklist.md": {
+      "sha256": "551f19d4177adbb4911a265e0d0a01b526d67c864637ccb32e40ffff29090e08",
+      "size": 203
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\Transcript_StatementOfFacts_Pins.md": {
+      "sha256": "01ae85808fe1b8e6938442bee703ee1e66c5353c7297c33efb40658c2836e7fe",
+      "size": 34
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\Validation_RedTeam.md": {
+      "sha256": "6ec1f777843f03b35cbddf4a6d717174820a17a192e448c612e5b546aa11f97d",
+      "size": 141
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18\\20260223T021841Z\\VehicleMap.md": {
+      "sha256": "2aea24bd95472dfad041eb4139fbf052b4dd5af1d0f96819df658ad8ed8e9b72",
+      "size": 307
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\AuthorityTriples.json": {
+      "sha256": "c722bcbb968c10155a3812e44c5d502075a9c02e533dbb41b8acd1c3f705fda3",
+      "size": 1293
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\AuthorityTriples.md": {
+      "sha256": "a725fb6c63c9d62e61eae9dfa7d43afe078d5906c6f9a56f832dace5079cf4fc",
+      "size": 482
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\CASE_STATE.md": {
+      "sha256": "06075596742ff35a5f5147ea8679a77285379a872d0dec7e208d4b99993a29f4",
+      "size": 171
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContextPack.md": {
+      "sha256": "4671dd60a9df1923232ddd4658d45617c26981af7c8df00e536c115c6e677b34",
+      "size": 207
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContradictionMap.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContradictionMap.md": {
+      "sha256": "639d728c9b31e863cb688713ca9a2e40d1c168fb87ff19f0cbaf6e62f831f22e",
+      "size": 18
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Deadlines.md": {
+      "sha256": "6c6c50093fbc509066110bcd5b4f344fdd72bd713709a7a2b7c2f56a724cc37f",
+      "size": 288
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\DRAFT_BLOCKS_DROPIN.md": {
+      "sha256": "a09664212fdff10eb81180641f581744a6ddfccde8018aba61f9d5d2c775ecd7",
+      "size": 450
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\PACK_MANIFEST.json": {
+      "sha256": "aba25c39c399be3dc3b1e3a371a6fc271b129fb5b65fc002684de56f7aef130d",
+      "size": 724
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\SBNA.md": {
+      "sha256": "d4efd873fb9be17cbe57af569f5bf491682457740dc74c351f59e4b3abd00643",
+      "size": 316
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ServiceChecklist.md": {
+      "sha256": "551f19d4177adbb4911a265e0d0a01b526d67c864637ccb32e40ffff29090e08",
+      "size": 203
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Transcript_StatementOfFacts_Pins.md": {
+      "sha256": "01ae85808fe1b8e6938442bee703ee1e66c5353c7297c33efb40658c2836e7fe",
+      "size": 34
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Validation_RedTeam.md": {
+      "sha256": "6ec1f777843f03b35cbddf4a6d717174820a17a192e448c612e5b546aa11f97d",
+      "size": 141
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK2\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\VehicleMap.md": {
+      "sha256": "2aea24bd95472dfad041eb4139fbf052b4dd5af1d0f96819df658ad8ed8e9b72",
+      "size": 307
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\AuthorityTriples.json": {
+      "sha256": "76bfa66efefbe817fbbe7700dcd076564de92c25772c08ae7d44dc5c3003b683",
+      "size": 502
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\AuthorityTriples.md": {
+      "sha256": "c1f005526db702465d772a997772057ecf40708864f47cfe2a295eb0ffcebcb5",
+      "size": 252
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\CASE_STATE.md": {
+      "sha256": "d360544f7921612dfc1044e35782458587b8d67a6f492bb1238513f5fd957e3c",
+      "size": 171
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\ContextPack.md": {
+      "sha256": "f2af1b2d945278ea42621b46ad6af1c5e5454f89881edc4308ae3a1e0b394fff",
+      "size": 207
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\ContradictionMap.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\ContradictionMap.md": {
+      "sha256": "639d728c9b31e863cb688713ca9a2e40d1c168fb87ff19f0cbaf6e62f831f22e",
+      "size": 18
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\Deadlines.md": {
+      "sha256": "ce99aa41bcc7e4fa2092736d150130047ffcecbcf10251fbcb13bec4f6af9516",
+      "size": 150
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\DRAFT_BLOCKS_DROPIN.md": {
+      "sha256": "a09664212fdff10eb81180641f581744a6ddfccde8018aba61f9d5d2c775ecd7",
+      "size": 450
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\PACK_MANIFEST.json": {
+      "sha256": "3e4a98ff0d1a92503ff364a641ca9d44f53ac17e6d9ab6c85fe13872a4463f87",
+      "size": 688
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\SBNA.md": {
+      "sha256": "d4efd873fb9be17cbe57af569f5bf491682457740dc74c351f59e4b3abd00643",
+      "size": 316
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\ServiceChecklist.md": {
+      "sha256": "551f19d4177adbb4911a265e0d0a01b526d67c864637ccb32e40ffff29090e08",
+      "size": 203
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\Transcript_StatementOfFacts_Pins.md": {
+      "sha256": "01ae85808fe1b8e6938442bee703ee1e66c5353c7297c33efb40658c2836e7fe",
+      "size": 34
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\Validation_RedTeam.md": {
+      "sha256": "56ffb62fe2aa85dfef30f6889043a3f53d2835ab3ef0a05f1fa8daf22eb8a476",
+      "size": 126
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18\\20260223T021841Z\\VehicleMap.md": {
+      "sha256": "2f4c832ac29dafe455581eba5b1fd44025c0f02622e08db0fbff9307964da549",
+      "size": 307
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\AuthorityTriples.json": {
+      "sha256": "76bfa66efefbe817fbbe7700dcd076564de92c25772c08ae7d44dc5c3003b683",
+      "size": 502
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\AuthorityTriples.md": {
+      "sha256": "c1f005526db702465d772a997772057ecf40708864f47cfe2a295eb0ffcebcb5",
+      "size": 252
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\CASE_STATE.md": {
+      "sha256": "d360544f7921612dfc1044e35782458587b8d67a6f492bb1238513f5fd957e3c",
+      "size": 171
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContextPack.md": {
+      "sha256": "f2af1b2d945278ea42621b46ad6af1c5e5454f89881edc4308ae3a1e0b394fff",
+      "size": 207
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContradictionMap.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContradictionMap.md": {
+      "sha256": "639d728c9b31e863cb688713ca9a2e40d1c168fb87ff19f0cbaf6e62f831f22e",
+      "size": 18
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Deadlines.md": {
+      "sha256": "ce99aa41bcc7e4fa2092736d150130047ffcecbcf10251fbcb13bec4f6af9516",
+      "size": 150
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\DRAFT_BLOCKS_DROPIN.md": {
+      "sha256": "a09664212fdff10eb81180641f581744a6ddfccde8018aba61f9d5d2c775ecd7",
+      "size": 450
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\PACK_MANIFEST.json": {
+      "sha256": "a8dc7222333cd0500523de5a5f50a617a355d5a8a70fcc08f81978495efc0b69",
+      "size": 724
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\SBNA.md": {
+      "sha256": "d4efd873fb9be17cbe57af569f5bf491682457740dc74c351f59e4b3abd00643",
+      "size": 316
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ServiceChecklist.md": {
+      "sha256": "551f19d4177adbb4911a265e0d0a01b526d67c864637ccb32e40ffff29090e08",
+      "size": 203
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Transcript_StatementOfFacts_Pins.md": {
+      "sha256": "01ae85808fe1b8e6938442bee703ee1e66c5353c7297c33efb40658c2836e7fe",
+      "size": 34
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Validation_RedTeam.md": {
+      "sha256": "56ffb62fe2aa85dfef30f6889043a3f53d2835ab3ef0a05f1fa8daf22eb8a476",
+      "size": 126
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK3\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\VehicleMap.md": {
+      "sha256": "2f4c832ac29dafe455581eba5b1fd44025c0f02622e08db0fbff9307964da549",
+      "size": 307
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\AuthorityTriples.json": {
+      "sha256": "5b182e45c9640369a4e804e5169df2f55440e0787494ba65c78487c40bc1694f",
+      "size": 1648
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\AuthorityTriples.md": {
+      "sha256": "1531e4b98c17df2bf68a8bc6019f5e87f75b03e85873dec01e3e82e89512828a",
+      "size": 538
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\CASE_STATE.md": {
+      "sha256": "f36c9b0a4114e89f332f3a7a1bfc97fcd148b814a0f2da8dbeec7136fe93ec34",
+      "size": 171
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\ContextPack.md": {
+      "sha256": "e1209e8b956cc6a7f09542d907cb1cfa8cc1401846410687843a84f92e4e74d4",
+      "size": 207
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\ContradictionMap.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\ContradictionMap.md": {
+      "sha256": "639d728c9b31e863cb688713ca9a2e40d1c168fb87ff19f0cbaf6e62f831f22e",
+      "size": 18
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\Deadlines.md": {
+      "sha256": "fbb2e4b2cd9acc5487535d2b4720e0ae8cda795bb171fafb7af7717c4819d16f",
+      "size": 373
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\DRAFT_BLOCKS_DROPIN.md": {
+      "sha256": "a09664212fdff10eb81180641f581744a6ddfccde8018aba61f9d5d2c775ecd7",
+      "size": 450
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\PACK_MANIFEST.json": {
+      "sha256": "f35126083e86b3c445d756e815f0086a1c17cd744a45433aee6aa68c0d49e560",
+      "size": 688
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\SBNA.md": {
+      "sha256": "d4efd873fb9be17cbe57af569f5bf491682457740dc74c351f59e4b3abd00643",
+      "size": 316
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\ServiceChecklist.md": {
+      "sha256": "551f19d4177adbb4911a265e0d0a01b526d67c864637ccb32e40ffff29090e08",
+      "size": 203
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\Transcript_StatementOfFacts_Pins.md": {
+      "sha256": "01ae85808fe1b8e6938442bee703ee1e66c5353c7297c33efb40658c2836e7fe",
+      "size": 34
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\Validation_RedTeam.md": {
+      "sha256": "6ec1f777843f03b35cbddf4a6d717174820a17a192e448c612e5b546aa11f97d",
+      "size": 141
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18\\20260223T021841Z\\VehicleMap.md": {
+      "sha256": "1e81011d68ad7129559dae26aee095e8c3a5b951ecd6779106aea042e43390ce",
+      "size": 307
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\AuthorityTriples.json": {
+      "sha256": "5b182e45c9640369a4e804e5169df2f55440e0787494ba65c78487c40bc1694f",
+      "size": 1648
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\AuthorityTriples.md": {
+      "sha256": "1531e4b98c17df2bf68a8bc6019f5e87f75b03e85873dec01e3e82e89512828a",
+      "size": 538
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\CASE_STATE.md": {
+      "sha256": "f36c9b0a4114e89f332f3a7a1bfc97fcd148b814a0f2da8dbeec7136fe93ec34",
+      "size": 171
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContextPack.md": {
+      "sha256": "e1209e8b956cc6a7f09542d907cb1cfa8cc1401846410687843a84f92e4e74d4",
+      "size": 207
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContradictionMap.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ContradictionMap.md": {
+      "sha256": "639d728c9b31e863cb688713ca9a2e40d1c168fb87ff19f0cbaf6e62f831f22e",
+      "size": 18
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Deadlines.md": {
+      "sha256": "fbb2e4b2cd9acc5487535d2b4720e0ae8cda795bb171fafb7af7717c4819d16f",
+      "size": 373
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\DRAFT_BLOCKS_DROPIN.md": {
+      "sha256": "a09664212fdff10eb81180641f581744a6ddfccde8018aba61f9d5d2c775ecd7",
+      "size": 450
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\PACK_MANIFEST.json": {
+      "sha256": "2eef8d373a0bf06c538d076fbad31c3821ae4e98e8ccb21a7b86082accbe12b2",
+      "size": 724
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\SBNA.md": {
+      "sha256": "d4efd873fb9be17cbe57af569f5bf491682457740dc74c351f59e4b3abd00643",
+      "size": 316
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\ServiceChecklist.md": {
+      "sha256": "551f19d4177adbb4911a265e0d0a01b526d67c864637ccb32e40ffff29090e08",
+      "size": 203
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Transcript_StatementOfFacts_Pins.md": {
+      "sha256": "01ae85808fe1b8e6938442bee703ee1e66c5353c7297c33efb40658c2836e7fe",
+      "size": 34
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\Validation_RedTeam.md": {
+      "sha256": "6ec1f777843f03b35cbddf4a6d717174820a17a192e448c612e5b546aa11f97d",
+      "size": 141
+    },
+    "engines\\docforge_v18\\output\\CourtPacks\\MEEK4\\MI_DOCFORGE_V18_AUTOPILOT\\20260223T021841Z\\VehicleMap.md": {
+      "sha256": "1e81011d68ad7129559dae26aee095e8c3a5b951ecd6779106aea042e43390ce",
+      "size": 307
+    },
+    "engines\\docforge_v18\\runtime\\docforge_v18.sqlite3": {
+      "sha256": "1292aeb7780ff1684c1887537eb209f014c665fc0a36a0a1335ea55100fa1c18",
+      "size": 65536
+    },
+    "engines\\docforge_v18\\sample_inputs\\deadline_events.csv": {
+      "sha256": "212042709346e0aa6bed14c3d09b2fde78704e8bce1c985ee75b47e2a51dc0db",
+      "size": 616
+    },
+    "engines\\docforge_v18\\sample_inputs\\official_text_grafts.jsonl": {
+      "sha256": "a5c7954b1cef9b31e11d826528d3dc37314acfd9b69864e76de4d2e2a439e294",
+      "size": 1994
+    },
+    "engines\\docforge_v18\\sample_inputs\\order_findings.csv": {
+      "sha256": "ae618440218f0b8a389868c5507c3949d9dbd67c66cdf9ef00bfd39868bc796c",
+      "size": 458
+    },
+    "engines\\docforge_v18\\sample_inputs\\transcript_lines.csv": {
+      "sha256": "78b110f78c5ef00087b438bd263aeb22e40f873c7809fd32b0891ae522cd8027",
+      "size": 889
+    },
+    "engines\\docforge_v18\\templates\\MEEK1\\COA_SET.md": {
+      "sha256": "9193af3f9a9e94365a53da99df92f7136fcbdf449861fe01033150d80e0be130",
+      "size": 79
+    },
+    "engines\\docforge_v18\\templates\\MEEK1\\JTC_SET.md": {
+      "sha256": "c0eae5be8c4ba02f6a7b606462f2a3abb5b120414d92c02ad3be741507c59c61",
+      "size": 49
+    },
+    "engines\\docforge_v18\\templates\\MEEK1\\MSC_SET.md": {
+      "sha256": "ba39d3d37bb1f07857dff65e2a295339be4ab16a4daab685551105ee12c0a7dd",
+      "size": 69
+    },
+    "engines\\docforge_v18\\templates\\MEEK1\\TRIAL_SET.md": {
+      "sha256": "34151762c7b549c795844bfa567b3b97ad4c7348092c3d73eff779364a490685",
+      "size": 48
+    },
+    "engines\\docforge_v18\\templates\\MEEK2\\COA_SET.md": {
+      "sha256": "e83ea790de5ef67bfbc3daea943e86cf761b2d384b743d17e54df237ea9ddf0e",
+      "size": 79
+    },
+    "engines\\docforge_v18\\templates\\MEEK2\\JTC_SET.md": {
+      "sha256": "46640f64ce5a43345dbd99a69aa597abd30e6e932678f0c3913155bb0bb3ff1e",
+      "size": 49
+    },
+    "engines\\docforge_v18\\templates\\MEEK2\\MSC_SET.md": {
+      "sha256": "ec23dbf9783f68d97cc0a038f122be12fe2197fd214603b81ec5337049169c21",
+      "size": 69
+    },
+    "engines\\docforge_v18\\templates\\MEEK2\\TRIAL_SET.md": {
+      "sha256": "4d7c5e8de6ef8a637ba0e67ff26a2e1993a69715621335c96370cbd624b3090a",
+      "size": 48
+    },
+    "engines\\docforge_v18\\templates\\MEEK3\\COA_SET.md": {
+      "sha256": "6d825f0010f108ab80b485c563307144cf59047ed52085c0b9cbb21a38e876cb",
+      "size": 79
+    },
+    "engines\\docforge_v18\\templates\\MEEK3\\JTC_SET.md": {
+      "sha256": "d93d4f9dcd69269de1b96ba21602b682a6206b666d70f5dfee058223ec1784ff",
+      "size": 49
+    },
+    "engines\\docforge_v18\\templates\\MEEK3\\MSC_SET.md": {
+      "sha256": "f949719ee368201ab4eafb905ed4f528d116d5136f2a446ca0df07960faaa30e",
+      "size": 69
+    },
+    "engines\\docforge_v18\\templates\\MEEK3\\TRIAL_SET.md": {
+      "sha256": "67a39e78b8cae2febcfd600e728c12a3120a723a81baec7379ef1f2c8b25bf4a",
+      "size": 48
+    },
+    "engines\\docforge_v18\\templates\\MEEK4\\COA_SET.md": {
+      "sha256": "ae2b922cb877b2f0504e9bb2b595e2d7f012f314c6f57882d42293a55a0abf37",
+      "size": 79
+    },
+    "engines\\docforge_v18\\templates\\MEEK4\\JTC_SET.md": {
+      "sha256": "f97d56d25edfc5722cb886d135e319a62134cf5e76fe8d91fbd134c756a35bb3",
+      "size": 49
+    },
+    "engines\\docforge_v18\\templates\\MEEK4\\MSC_SET.md": {
+      "sha256": "eb8da3d9bb3aac74409a4d2c1506b40bc28043d3ce154596563247a24b9739db",
+      "size": 69
+    },
+    "engines\\docforge_v18\\templates\\MEEK4\\TRIAL_SET.md": {
+      "sha256": "dbef6cb6cb24aae410806741c820917a98db688e8e4529b0890570fdf4761571",
+      "size": 48
+    },
+    "engines\\docforge_v19\\ALL_TEXT_BUNDLE.txt": {
+      "sha256": "95cd75e2b468b4d84e3c8fe3ce733615b36cb4ae5f38d31d189c01672e81868d",
+      "size": 56824
+    },
+    "engines\\docforge_v19\\INSTRUCTIONS_STEP_BY_STEP.txt": {
+      "sha256": "5145615955fe14827c64873a0b0f1db080075d91d26fd2c553fa2401c48735d9",
+      "size": 1013
+    },
+    "engines\\docforge_v19\\README.md": {
+      "sha256": "40eef6589b841e16422d4e5b06c1e800cb91fffc0a527b6332638cfcb6922dce",
+      "size": 3000
+    },
+    "engines\\docforge_v19\\config\\deadline_registry_template.csv": {
+      "sha256": "9f89765c8803c612dc3f9d1e4e89a6a85ff6217121a79a1844c3535a40387013",
+      "size": 916
+    },
+    "engines\\docforge_v19\\config\\linker_weights.default.json": {
+      "sha256": "744e038a02fb11861015570db78dbba768a0bbedca5613f4f6a2efb1076b9997",
+      "size": 234
+    },
+    "engines\\docforge_v19\\core\\docforge_v19.py": {
+      "sha256": "15b695973d020c5b059165c3462136029d5200480a00b8553443e56be79e9779",
+      "size": 50607
+    },
+    "engines\\docforge_v19\\docs\\V19_CASCADING_PLANES.mmd": {
+      "sha256": "060afa97919aa13bc6cf71c2b10625b40cd2e8328fda0db7a27f78d621e9dc2b",
+      "size": 799
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\AuthorityTriples.json": {
+      "sha256": "46c4ecacf96bcf5afd10938c12ef80f301303f6dd09a2fc1392473673790dd63",
+      "size": 2234
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\AuthorityTriples.md": {
+      "sha256": "9047cae0143eca9953eec1ce43cba4e6914c3ee68a36cc719bf24de11501c85a",
+      "size": 528
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\CASE_STATE.json": {
+      "sha256": "ecf86eca1f8373a50e01f034a955916013d23c1312e7206d75a70a42997f1b55",
+      "size": 263
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\CASE_STATE.md": {
+      "sha256": "7c6be76f3fb43abbe6d8e4cac1508b491f6779cdee4e5a71b1d00e660d7652ab",
+      "size": 180
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\ContextPack.md": {
+      "sha256": "2916ab1672b0bef28f63bfbbd1c49d13a4da3de5ad6bd3b0e386a844ff96acf8",
+      "size": 256
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\ContradictionMap.json": {
+      "sha256": "17d4157050887207613b22db7f4180e469eb4f1d58cc191e72203991fda12b54",
+      "size": 633
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\ContradictionMap.md": {
+      "sha256": "538adb971c9c129bc14e57f87a240267f03629cf49714742ce3c22488981c931",
+      "size": 444
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\CourtPack_Summary-1.png": {
+      "sha256": "c4b527943061bfdaac575b81056484141b26eca455c3ddf3582d91133e605d5f",
+      "size": 297988
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\CourtPack_Summary-2.png": {
+      "sha256": "31a204beb00ea2fd42585be993db52d1d6ca9b0edf03d69dbef78bc77805d50f",
+      "size": 300297
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\CourtPack_Summary.docx": {
+      "sha256": "7380792bdd791a93a972066dfed3ace86d41ed9e1502764393df67226a95250f",
+      "size": 38130
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\CourtPack_Summary.pdf": {
+      "sha256": "6c87ec93226db8a89d9ea30a86fe7cb3a30d11b40724295cc4f639fa5d5603d6",
+      "size": 4899
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\Deadlines.md": {
+      "sha256": "50fc704601cf8952426755b212d662a46091934bc84e2d041e39bfc988c3e38c",
+      "size": 561
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\DRAFT_BLOCKS_DROPIN.md": {
+      "sha256": "cce0669a379e834f478984400d07768651cc89e7484a49d6916b7a86dcd2f8bd",
+      "size": 617
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\PACK_MANIFEST.json": {
+      "sha256": "9325f28914373f8e749cdcd5c1caa4fc9c382f1d999bccfa9be569f8b73e65c2",
+      "size": 499
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\ProposedOrder.md": {
+      "sha256": "23f44762c0b15f6ab8520041b9022af20ec203fed749fe89decac80c2d2aac31",
+      "size": 81
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\SBNA.md": {
+      "sha256": "363f25fb9960e496308808b3ef81c25d43aaec6b63caafe1e8ad708103699c6b",
+      "size": 311
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\ServiceChecklist.md": {
+      "sha256": "e02e8476a260186ac98014edca2fdf3e7ed1d1c08ffb833c0ade3bb6c0cc15f9",
+      "size": 96
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\Transcript_StatementOfFacts_Pins.md": {
+      "sha256": "557a524ec418ab420fbf092d8b2276d6c477a8c744b0fbf3b0932f97a84e2060",
+      "size": 2382
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\Validation_RedTeam.md": {
+      "sha256": "34a61ce42fd10ec8a0caf446b11e96baa35e684aec1aa3fcbfac79c4d74e1361",
+      "size": 521
+    },
+    "engines\\docforge_v19\\runtime\\outputs\\CourtPacks\\MEEK2_20260223T023620Z\\VehicleMap.md": {
+      "sha256": "7ed833eff358d7b6cf43867550bb394517ac6b93cfedc0fc18847602691f3302",
+      "size": 313
+    },
+    "engines\\docforge_v19\\runtime\\reports\\autopilot_report.json": {
+      "sha256": "60a1ec33b1b261980a78b40021e3ca85f859f40c83d7ede533ec67817da66711",
+      "size": 1164
+    },
+    "engines\\docforge_v19\\runtime\\reports\\last_autopilot.json": {
+      "sha256": "47558630c48e1f27781393ca0453229fe4cb30c080421cdae6f1f7c5443d5e6d",
+      "size": 1464
+    },
+    "engines\\docforge_v19\\runtime\\runtime\\docforge_v19.sqlite3": {
+      "sha256": "4041b9bb87fc4f6a99a159e481fbdd674a28d83e52be751ca7b15ba302f85e82",
+      "size": 151552
+    },
+    "engines\\docforge_v19\\sample_inputs\\authority_requests.jsonl": {
+      "sha256": "dd6fa2d891749f3511aaa2b6c2b872dc1223f1faecc20f126e44c5afd692d96d",
+      "size": 448
+    },
+    "engines\\docforge_v19\\sample_inputs\\deadline_events.csv": {
+      "sha256": "16dfe629b839922f6c0d86cd5a7b81f5f4e2d31aabc54bd6f1dfece7fabc2b93",
+      "size": 450
+    },
+    "engines\\docforge_v19\\sample_inputs\\official_text_grafts.jsonl": {
+      "sha256": "2d81e6e9ce2fda581da1020c6944fb21eb253e944003d288fa2e52f3978e5782",
+      "size": 772
+    },
+    "engines\\docforge_v19\\sample_inputs\\order_findings.csv": {
+      "sha256": "76a9c4d2ae7b041de6c67f190b56a21e645f6ddf2e91353761ea8359a479228e",
+      "size": 380
+    },
+    "engines\\docforge_v19\\sample_inputs\\transcript_link_gold.csv": {
+      "sha256": "b9447910d058b22add75850bed04617d02767ec16592795b27b087ab545a5e96",
+      "size": 157
+    },
+    "engines\\docforge_v19\\sample_inputs\\transcript_rows.csv": {
+      "sha256": "9588e8613f590fcf18185c120dbed2d049f115f9ec84bcb9f8ab7544d70d403a",
+      "size": 678
+    },
+    "engines\\docforge_v19\\schemas\\models_v19.py": {
+      "sha256": "cfeaec48eb276932afc6600092b8e652ed75f8ab4289e7d1de2505e23a98f615",
+      "size": 1692
+    },
+    "engines\\docforge_v19\\templates\\MEEK1\\dropin_motion_shell.md": {
+      "sha256": "e4ae31ac35ee1028c177de692a610589e0806633702dec8b01dab932217991c5",
+      "size": 166
+    },
+    "engines\\docforge_v19\\templates\\MEEK2\\dropin_motion_shell.md": {
+      "sha256": "4640b992f9dc1aa0f0b1979b54f21a6af2532452d53e3d72f68ae89573ea22a8",
+      "size": 166
+    },
+    "engines\\docforge_v19\\templates\\MEEK3\\dropin_motion_shell.md": {
+      "sha256": "f496a00753fb81b615fa5d6d5ad64760eec2f9b5109d54e70e9054fa2c0b7df0",
+      "size": 166
+    },
+    "engines\\docforge_v19\\templates\\MEEK4\\dropin_motion_shell.md": {
+      "sha256": "71488356e4154a742ef84c77e15680a2cc47219fe1174c073fd34d94c3f2f39e",
+      "size": 166
+    },
+    "engines\\meek234_fullstack\\ATTACHMENTS_DIGEST.md": {
+      "sha256": "6e18c30d78d49b23803a3bd0e19e43533644be22144d639fac622e0aa20f0f2e",
+      "size": 1935
+    },
+    "engines\\meek234_fullstack\\ATTACHMENTS_DIGEST.txt": {
+      "sha256": "c7e498c42b6cd7891b41aaa248b2d576a02f5c7bc8a6d09d08ee5f31eae34884",
+      "size": 852
+    },
+    "engines\\meek234_fullstack\\KNOWLEDGE_ALL (2).jsonl": {
+      "sha256": "fcc7eed103b5d561638b0ca33c55adf47ff3fe36398f44bb9479b1328c27b4df",
+      "size": 30245123
+    },
+    "engines\\meek234_fullstack\\KNOWLEDGE_ALL (2).md": {
+      "sha256": "6a616b13682347feb7363afc1c72a715d95c83840fca0f230669702906b56fcc",
+      "size": 9454978
+    },
+    "engines\\meek234_fullstack\\KNOWLEDGE_ALL.jsonl": {
+      "sha256": "4e07c1e95690bd703826f808ed0410cf0bda973c266b7fb56c2ccead7484ce3f",
+      "size": 238647
+    },
+    "engines\\meek234_fullstack\\KNOWLEDGE_ALL.md": {
+      "sha256": "fbf949fd53fb6edf1f1d86e6d70307b51287d1e7590441da0dfc8401c47a3dad",
+      "size": 152342
+    },
+    "engines\\meek234_fullstack\\MANIFEST (2).json": {
+      "sha256": "fc4b8fd42b798353da31032c4d623fa921f0f15d666fa96e9d32a36ed94987aa",
+      "size": 3518
+    },
+    "engines\\meek234_fullstack\\MANIFEST (3).json": {
+      "sha256": "4dcdc1e38299c782e48b92685a5a30f148b3241a83c965cb49000d86bae83cca",
+      "size": 6206
+    },
+    "engines\\meek234_fullstack\\MANIFEST.json": {
+      "sha256": "c8201705ace858611749c3ccaa22b1a8dd74be1fc8d67f95a0ba85b39d8337a5",
+      "size": 1791
+    },
+    "engines\\meek234_fullstack\\MEEK234_FULLSTACK_REBUILD_v20260208.py": {
+      "sha256": "73d705415ba969d35e9b87be109601ad0a295da354b3b065b7a36b21dbe8e5e6",
+      "size": 43661
+    },
+    "engines\\meek234_fullstack\\MEEK234_FULLSTACK_REBUILD_v20260208_2.py": {
+      "sha256": "791d62db436ccdec8ff17c96aed6a84dc6d01e7fb88362b24c5d9f5f881d7278",
+      "size": 49200
+    },
+    "engines\\meek234_fullstack\\MEEK234_FULLSTACK_REBUILD_v20260208_3 (2).py": {
+      "sha256": "0f3f96302fd7043e07a5039f009052ca9e87b61348d43631971409b3b302db8a",
+      "size": 18721
+    },
+    "engines\\meek234_fullstack\\MEEK234_FULLSTACK_REBUILD_v20260208_3 (3).py": {
+      "sha256": "0f3f96302fd7043e07a5039f009052ca9e87b61348d43631971409b3b302db8a",
+      "size": 18721
+    },
+    "engines\\meek234_fullstack\\MEEK234_FULLSTACK_REBUILD_v20260208_3.py": {
+      "sha256": "0f3f96302fd7043e07a5039f009052ca9e87b61348d43631971409b3b302db8a",
+      "size": 18721
+    },
+    "engines\\meek234_fullstack\\MEEK234_REBUILD_SPEC_v20260208.md": {
+      "sha256": "3c28cc8a1c8e50b114cc44bfbb06de0a1faaaf9b1c08b6ad049961f3f3ecf80c",
+      "size": 3403
+    },
+    "engines\\meek234_fullstack\\MEEK234_REBUILD_SPEC_v20260208_2.md": {
+      "sha256": "1af0cc9e4861a1645f1848e7c5aac7a5a107d5081a7bc74c40c07ad16c93c77b",
+      "size": 2071
+    },
+    "engines\\meek234_fullstack\\MEEK234_REBUILD_SPEC_v20260208_3 (2).md": {
+      "sha256": "8738bbfb49c440be7b3d0a4a2adcc712923fe0406446586a823d7bbd1e300cbc",
+      "size": 1211
+    },
+    "engines\\meek234_fullstack\\MEEK234_REBUILD_SPEC_v20260208_3 (3).md": {
+      "sha256": "8738bbfb49c440be7b3d0a4a2adcc712923fe0406446586a823d7bbd1e300cbc",
+      "size": 1211
+    },
+    "engines\\meek234_fullstack\\MEEK234_REBUILD_SPEC_v20260208_3.md": {
+      "sha256": "8738bbfb49c440be7b3d0a4a2adcc712923fe0406446586a823d7bbd1e300cbc",
+      "size": 1211
+    },
+    "engines\\meek234_fullstack\\RUN_LEDGER.jsonl": {
+      "sha256": "ab52e72313988b48fb846c5ba0b42a5585f84f08c14f8a806b6d366ae8d86953",
+      "size": 924
+    },
+    "engines\\meek234_fullstack\\catalogs\\clock_types (2).json": {
+      "sha256": "de0f0a54d48f9bd94167229c3ee8666bf8e6f3b595cc5350b907fd2e52613885",
+      "size": 3175
+    },
+    "engines\\meek234_fullstack\\catalogs\\clock_types.json": {
+      "sha256": "de0f0a54d48f9bd94167229c3ee8666bf8e6f3b595cc5350b907fd2e52613885",
+      "size": 3175
+    },
+    "engines\\meek234_fullstack\\catalogs\\denial_grounds (2).json": {
+      "sha256": "fddb4cf88d9b27f4d5b7d56eff4b99a5117a426e144ad7a9e4535e2d2a54286e",
+      "size": 5661
+    },
+    "engines\\meek234_fullstack\\catalogs\\denial_grounds.json": {
+      "sha256": "fddb4cf88d9b27f4d5b7d56eff4b99a5117a426e144ad7a9e4535e2d2a54286e",
+      "size": 5661
+    },
+    "engines\\meek234_fullstack\\catalogs\\forum_gate_profiles (2).json": {
+      "sha256": "766da786cc659bfc2500f8f2b7571b0329dafdfa04b68bb09c08ffb04a0dda12",
+      "size": 5018
+    },
+    "engines\\meek234_fullstack\\catalogs\\forum_gate_profiles (3).json": {
+      "sha256": "766da786cc659bfc2500f8f2b7571b0329dafdfa04b68bb09c08ffb04a0dda12",
+      "size": 5018
+    },
+    "engines\\meek234_fullstack\\catalogs\\forum_gate_profiles.json": {
+      "sha256": "235a14902d60be558b16d284113766cd1827338fd92b323a9a86630e46fefe74",
+      "size": 1936
+    },
+    "engines\\meek234_fullstack\\catalogs\\glossary_terms_core (2).jsonl": {
+      "sha256": "e23d6bd4a42fa01453f3edef4dc57315e4bf8bd6b0b7c333dc10c5f44ff4c4a3",
+      "size": 127002
+    },
+    "engines\\meek234_fullstack\\catalogs\\glossary_terms_core (3).jsonl": {
+      "sha256": "f1dd9bbaaac9850a0e4bf90047a560da1fdb22ff68dba8f5f42f7747bc6fa322",
+      "size": 18697975
+    },
+    "engines\\meek234_fullstack\\catalogs\\glossary_terms_core.jsonl": {
+      "sha256": "748e272c38700d9b689a4a8401a1752b6b6aad48e1451d19daeb92c122ec174d",
+      "size": 50863
+    },
+    "engines\\meek234_fullstack\\catalogs\\record_packet_templates (2).json": {
+      "sha256": "4882eee3f5705a717809a1839d7c534553b289306ad4dfdb7382c69ba132b51e",
+      "size": 2136
+    },
+    "engines\\meek234_fullstack\\catalogs\\record_packet_templates.json": {
+      "sha256": "4882eee3f5705a717809a1839d7c534553b289306ad4dfdb7382c69ba132b51e",
+      "size": 2136
+    },
+    "engines\\meek234_fullstack\\catalogs\\risk_event_types (2).json": {
+      "sha256": "207a976840152145185ac665b857c3db39cd68306bf761c1b0ed03040ad9aadd",
+      "size": 10276
+    },
+    "engines\\meek234_fullstack\\catalogs\\risk_event_types (3).json": {
+      "sha256": "e22083427b4e6a896aaa78354620dd3f72d49a48af191dd4264771eaf120ff49",
+      "size": 15372
+    },
+    "engines\\meek234_fullstack\\catalogs\\risk_event_types (4).json": {
+      "sha256": "e22083427b4e6a896aaa78354620dd3f72d49a48af191dd4264771eaf120ff49",
+      "size": 15372
+    },
+    "engines\\meek234_fullstack\\catalogs\\risk_event_types.json": {
+      "sha256": "52e1606a87ca81de27ddddfd4354f8b856c0000bef71e1bb4a3098d8af0d3d22",
+      "size": 6491
+    },
+    "engines\\meek234_fullstack\\catalogs\\vehicle_types (2).json": {
+      "sha256": "90fa9db2d7cb14dd1805ba92d05d3b36fa18d75128b32acb09d64d326f564b31",
+      "size": 6229
+    },
+    "engines\\meek234_fullstack\\catalogs\\vehicle_types (3).json": {
+      "sha256": "3d6886766030620c1b8d6576e4098e579f1d1418206fbc835a09d68e8295c274",
+      "size": 23220
+    },
+    "engines\\meek234_fullstack\\catalogs\\vehicle_types (4).json": {
+      "sha256": "3d6886766030620c1b8d6576e4098e579f1d1418206fbc835a09d68e8295c274",
+      "size": 23220
+    },
+    "engines\\meek234_fullstack\\catalogs\\vehicle_types.json": {
+      "sha256": "b3e66ca6695a6a46a93288ae3f39675eb6434e465249274075afa74066668fb2",
+      "size": 3113
+    },
+    "engines\\meek234_fullstack\\parsed\\graphml_summary.json": {
+      "sha256": "2ec46f4db43c8920b582fad0890402e820f66fe2edf8889f0334257ad3109fba",
+      "size": 994
+    },
+    "engines\\meek234_fullstack\\parsed\\neo4j_nodes__columns.json": {
+      "sha256": "b48015460b3143da3242fb57b75d340bd4c4cc4c1217dafd803f9bd58f317f89",
+      "size": 864
+    },
+    "engines\\meek234_fullstack\\parsed\\nodes_normalized__columns.json": {
+      "sha256": "60bfd272e64bc607e3811bd8bc6367a5dc5ff2c38627443532a8b930748e6ae1",
+      "size": 131
+    },
+    "engines\\meek234_fullstack\\parsed\\NUCLEUS_APEX_SUPERGRAPH_20250908_030140_nodes__columns.json": {
+      "sha256": "3d72f188746c7009dbf59aaaac2d66201c8b10818e4010e99ae712260d30590a",
+      "size": 165
+    },
+    "engines\\meek234_fullstack\\parsed\\s__columns.json": {
+      "sha256": "3b514f71cd90283858efe5710ece687dbb790cedb73e1df3444ccc855402a2f4",
+      "size": 854
+    },
+    "engines\\meek234_fullstack\\schema\\edge_types (2).csv": {
+      "sha256": "fa915e87328238b79d1dad47c339b6a67685842c54dd6c8b76d67c776de8aa3c",
+      "size": 1828
+    },
+    "engines\\meek234_fullstack\\schema\\edge_types (3).csv": {
+      "sha256": "df29b917e155d433cffebe7b845ab7fb56661b55c81bba3b65f969a1fee44e1c",
+      "size": 6051
+    },
+    "engines\\meek234_fullstack\\schema\\edge_types (4).csv": {
+      "sha256": "df29b917e155d433cffebe7b845ab7fb56661b55c81bba3b65f969a1fee44e1c",
+      "size": 6051
+    },
+    "engines\\meek234_fullstack\\schema\\edge_types.csv": {
+      "sha256": "df9ee8f100b9689cea402545a2c177b9db5b25618dfa050529cd42ffd348367a",
+      "size": 1525
+    },
+    "engines\\meek234_fullstack\\schema\\enum_specs (2).csv": {
+      "sha256": "4732a5729eef6532ccc22423fb421cd5b60e0c92f0180305eb0281ade84455c7",
+      "size": 542
+    },
+    "engines\\meek234_fullstack\\schema\\enum_specs (3).csv": {
+      "sha256": "e5412d822dbbb13797731e3fa85ff716f3943b93468ed1421b2b56aa61631438",
+      "size": 1629
+    },
+    "engines\\meek234_fullstack\\schema\\enum_specs (4).csv": {
+      "sha256": "e5412d822dbbb13797731e3fa85ff716f3943b93468ed1421b2b56aa61631438",
+      "size": 1629
+    },
+    "engines\\meek234_fullstack\\schema\\enum_specs.csv": {
+      "sha256": "846930311973002bc89e430ea101fb6dc8cf73daddeb954192e07cd82fbc4c37",
+      "size": 345
+    },
+    "engines\\meek234_fullstack\\schema\\node_types (2).csv": {
+      "sha256": "9b1a14f278cd332ce594c34d7145feb4282ad8610585989c70a58fe896b3dd38",
+      "size": 1573
+    },
+    "engines\\meek234_fullstack\\schema\\node_types (3).csv": {
+      "sha256": "3e04206b26cb90b96068bffc479ac385e5831592bea8ed2de9d0aebb8d71fb0e",
+      "size": 4340
+    },
+    "engines\\meek234_fullstack\\schema\\node_types (4).csv": {
+      "sha256": "3e04206b26cb90b96068bffc479ac385e5831592bea8ed2de9d0aebb8d71fb0e",
+      "size": 4340
+    },
+    "engines\\meek234_fullstack\\schema\\node_types.csv": {
+      "sha256": "ee5081e58b3e644bdea9a87b7d16b0752a5cd5451c5e261192a8010fe9b26604",
+      "size": 1004
+    },
+    "engines\\meek234_fullstack\\schema\\property_specs (2).csv": {
+      "sha256": "19af355f5e89b78a0783f4cb10b35ea3e4ac24316e79cc14f8687491d7149c5a",
+      "size": 2187
+    },
+    "engines\\meek234_fullstack\\schema\\property_specs (3).csv": {
+      "sha256": "ab324cc20ac1a5c01c8f8245a2af95308835960148b3b5916e4df40bac37a916",
+      "size": 8068
+    },
+    "engines\\meek234_fullstack\\schema\\property_specs (4).csv": {
+      "sha256": "ab324cc20ac1a5c01c8f8245a2af95308835960148b3b5916e4df40bac37a916",
+      "size": 8068
+    },
+    "engines\\meek234_fullstack\\schema\\property_specs.csv": {
+      "sha256": "f7cf7fc8b52064c20a2459a9be1a04ad5a486fd862b9d1118859218d5ec64ecb",
+      "size": 795
+    },
+    "engines\\meek234_fullstack\\tests\\smoke_test_windows.bat": {
+      "sha256": "bbf5269a28032cdcb99f6d1827fb8291c0c51938618437b4b91ca185c9064b00",
+      "size": 290
+    },
+    "engines\\meek234_fullstack\\_smoke_intake\\sample1.txt": {
+      "sha256": "0f70ab04d946198df9dc2325aa01f43460cb80d81260018e61cddd85c697e493",
+      "size": 100
+    },
+    "engines\\meek234_fullstack\\_smoke_intake\\sample2.txt": {
+      "sha256": "46ee591e0f1920624a2b912d35dda8ddf1cceb7ce2be152b77013ee9223ab5d5",
+      "size": 80
+    },
+    "engines\\mi_warchest_v2\\README.txt": {
+      "sha256": "3bc207b3ac9d9084add08960a398ae6c94fe123b4dd358bb370e006c2dbb9efd",
+      "size": 1947
+    },
+    "engines\\mi_warchest_v2\\topics.yaml": {
+      "sha256": "9e80c682d586da5395ff700e580faa37d53f5b625288d4e1d79e0dd72c6f1ef8",
+      "size": 1315
+    },
+    "engines\\mi_warchest_v2\\docs\\Authority_Acquisition_Plan.md": {
+      "sha256": "318ecd9e7195cd3d1c809c865bb4bba3eea75bfe3d08a3432e824f8be2c96ae1",
+      "size": 2077
+    },
+    "engines\\mi_warchest_v2\\schemas\\authority_span.schema.json": {
+      "sha256": "190a3134c4f3c838496caee08bc04aa13a959ada3367270ebf19d2c653429799",
+      "size": 830
+    },
+    "engines\\mi_warchest_v2\\schemas\\record_atom.schema.json": {
+      "sha256": "0aee209b0a6646d6ae63986fb8113848e50f947528737c1fc44e3ba0c1cbbd4e",
+      "size": 718
+    },
+    "engines\\mi_warchest_v2\\tools\\mi_warchest_builder_v2.py": {
+      "sha256": "41cc0921a0f9e0a32df2b3821322e81a8b2404abdc97ceeae77f634f3a9781ec",
+      "size": 13496
+    },
+    "engines\\mi_warchest_v2\\tools\\record_matcher_v2.py": {
+      "sha256": "5218d8984ba8d5bc87e73b8e88d14e0d303439572e9dda3e8f4fa8850889f062",
+      "size": 9338
+    },
+    "engines\\mi_warchest_v2\\tools\\run_build_warchest.cmd": {
+      "sha256": "e627d5092db5fe15d9fe31e2f4ed59ec73a74938d3001d607b9f1be0ee0764e7",
+      "size": 97
+    },
+    "engines\\mi_warchest_v2\\tools\\run_match_records.cmd": {
+      "sha256": "30e4a4fbd646f5e1baa07250d274b016328a913ad3affd521c165f14902cc881",
+      "size": 103
+    },
+    "engines\\ocr_embed_v2\\.geminiignore": {
+      "sha256": "271a55d258288822dec6269b2b24cf9f2bf489d07330ab907741d1faeb9b3806",
+      "size": 278
+    },
+    "engines\\ocr_embed_v2\\GEMINI.md": {
+      "sha256": "0639c62c79cdf20a2e9373f9033d370de52f194e7382db01f68178a006db1266",
+      "size": 1077
+    },
+    "engines\\ocr_embed_v2\\MANIFEST.pack.json": {
+      "sha256": "f6d3924a97fe1699dd4db72404f8970702111c5e404c281c86abc007fb7dda19",
+      "size": 7330
+    },
+    "engines\\ocr_embed_v2\\pyproject.toml": {
+      "sha256": "e7f71cd9a7b4b3f6fd1223f85136e10b48d3a0c587ad62b48e1fdd699564ada8",
+      "size": 410
+    },
+    "engines\\ocr_embed_v2\\README.md": {
+      "sha256": "442e92c8968c325b0eccd343650de3d5bfecfe49e0b6d677f962792606be4b51",
+      "size": 1825
+    },
+    "engines\\ocr_embed_v2\\README.rtf": {
+      "sha256": "6628bb3a34e9a6e9b7fbc2065228db130d893a03d9d799c9cca9c8b68df4101c",
+      "size": 515
+    },
+    "engines\\ocr_embed_v2\\requirements.txt": {
+      "sha256": "62ff258770c1b6f763fa7222e34403489459e6b5de437751ebb662d70c549de1",
+      "size": 463
+    },
+    "engines\\ocr_embed_v2\\RUN.cmd": {
+      "sha256": "94791f919e73fa2ff0ed444a3a732aed39817f28d3b3abeb9bae472486f597a9",
+      "size": 456
+    },
+    "engines\\ocr_embed_v2\\.gemini\\settings.json": {
+      "sha256": "f2f5ca7c63223088fa5f0f588edb006e852e6565d8e24ec2da3f74e2905a823a",
+      "size": 149
+    },
+    "engines\\ocr_embed_v2\\config\\harvest_config.json": {
+      "sha256": "101a7b918fa51c42103d9112bb9be1b973b32f83d6d753d96b208080db4f7ee4",
+      "size": 2982
+    },
+    "engines\\ocr_embed_v2\\docs\\UNIFIED_AutoHarvest_Runbook_v1.2.md": {
+      "sha256": "41aa263d78c1c63cccc871d74142e7678dc93869f84cbe442b55ceb2d50ce98b",
+      "size": 4463
+    },
+    "engines\\ocr_embed_v2\\docs\\UNIFIED_AutoHarvest_Runbook_v2.0.md": {
+      "sha256": "bd4f47894357626c1e648f434affcb1c0d0b24059dc00250a2658f177fd08bfe",
+      "size": 900
+    },
+    "engines\\ocr_embed_v2\\licenses\\THIRD_PARTY.md": {
+      "sha256": "4e5c807b2e4f7878cf7a0fa125519823bca013b9d6e22e19fb8c6f24104e8b15",
+      "size": 577
+    },
+    "engines\\ocr_embed_v2\\prompts\\00_BOOTSTRAP.md": {
+      "sha256": "8119db2b797aab1d3c074c88cbe93e4d0eb83e85f6de4b6a2bb5a7d8aa924b2f",
+      "size": 629
+    },
+    "engines\\ocr_embed_v2\\scripts\\CYCLE.ps1": {
+      "sha256": "e6b0fdb4adc364acc6a5799440ecf2543aa853e7c6ed27bf2288baeebfa25a54",
+      "size": 1130
+    },
+    "engines\\ocr_embed_v2\\scripts\\harvest_runner_legacy.py": {
+      "sha256": "f47c17d715f945dff5760914b2dd80e046fb2b4b5ef3457b0a6347832d861db9",
+      "size": 31146
+    },
+    "engines\\ocr_embed_v2\\scripts\\INSTALL_DEPS.ps1": {
+      "sha256": "d93eb1893b8e2033c04ef3ae1edd8b4de6b0bdd18a1b0f3c59a0bb900ae9fe32",
+      "size": 571
+    },
+    "engines\\ocr_embed_v2\\scripts\\INSTALL_TESSERACT.ps1": {
+      "sha256": "1278493c5cadae499cda6f7a94f4fd8bd39f8b29fc7945550077766cffda609a",
+      "size": 469
+    },
+    "engines\\ocr_embed_v2\\scripts\\MAKE_MANIFEST.py": {
+      "sha256": "2bb896e5b4a0262346f6e9cc56d9fe17ee8cc3166e9250b805ffef765c79f602",
+      "size": 830
+    },
+    "engines\\ocr_embed_v2\\scripts\\QUERY.ps1": {
+      "sha256": "34f60c3f59b855da668d2c520180c36d000ad080687b73869de5317986dc15a2",
+      "size": 563
+    },
+    "engines\\ocr_embed_v2\\scripts\\REPACK.cmd": {
+      "sha256": "48a1774327a44a75ad8d9a1566b06e737cfa045c64ba984094930d82598c2e00",
+      "size": 248
+    },
+    "engines\\ocr_embed_v2\\scripts\\REPACK.ps1": {
+      "sha256": "8f68102b02e6f7457389b636d043d680bfbd79b227dcd9e61fdb7f9f5c1eac74",
+      "size": 313
+    },
+    "engines\\ocr_embed_v2\\scripts\\REPACK.py": {
+      "sha256": "9dac4476f2e22f211e0cfc4ae64aaa8ff901d7f1a8c158a6f8e2d3bcabdcae0b",
+      "size": 1114
+    },
+    "engines\\ocr_embed_v2\\scripts\\RUN.ps1": {
+      "sha256": "20aa2f23871bfe89fba511f3471dc2f6d9bc09084e498e5b5dbd3a66afbd50e3",
+      "size": 2980
+    },
+    "engines\\ocr_embed_v2\\scripts\\SELF_TEST.ps1": {
+      "sha256": "9377f72fb2b5948dca3bb1d07a956b1e6a3af9e442575331ea1df2677498e7bc",
+      "size": 891
+    },
+    "engines\\ocr_embed_v2\\scripts\\START_QDRANT.ps1": {
+      "sha256": "40783dc30688088fbd137eb4556a62f36f01da94e090d108dcfaf5e44d75890b",
+      "size": 1024
+    },
+    "engines\\ocr_embed_v2\\scripts\\STOP_QDRANT.ps1": {
+      "sha256": "2d8a9fa351421475fd1f7a77687f6b96e03c4785845638d02b5fe3e1910bee9f",
+      "size": 434
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\chunking.py": {
+      "sha256": "b7793d731d6f380a26ce70ad98ba7ae63e956307007312867cf590ca91e771b4",
+      "size": 773
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\embeddings.py": {
+      "sha256": "5e47d079d29349dddd6ad5de245d041d3053a5b3f1c9f660999e3f8c97918c9e",
+      "size": 1612
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\main.py": {
+      "sha256": "2c717fce80b5ef2ada7a2519eb2d656dee1430d6f6f0ec1f47e31c21bb2a96b2",
+      "size": 1040
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\query.py": {
+      "sha256": "28ef65bc87cfa5523c2f7f888e3290423920b5752d96a7e1980361170e80501b",
+      "size": 721
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\run_ledger.py": {
+      "sha256": "b9fbd353b3a2b4dcf8420e7b13fb352a4cae31c64744e8083e92fff032fd4601",
+      "size": 1022
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\scanner.py": {
+      "sha256": "8675570b38c7899afab0531bc8d4a416f17dc3e2419b48a64e3477ab26db23ff",
+      "size": 1793
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\utils.py": {
+      "sha256": "4fdd4cd40cc9f91a3ad64faf81ffe749252807d595b92b76bf731f599bff5ae5",
+      "size": 1084
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\__init__.py": {
+      "sha256": "75ad4f4c2943325f88064ad2beae890b59674be2bf0404b30afc5584dc4de4bb",
+      "size": 13
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\__main__.py": {
+      "sha256": "4ac953d9d43e4ef3a1f1a054d0ceb385a87076d105a99db4166d79426a737ca4",
+      "size": 60
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\extractors\\archives.py": {
+      "sha256": "fe7a51e77457f5ef65b3572457bf909fe12fc1f922af3b4f9a5431f3e85a4551",
+      "size": 775
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\extractors\\base.py": {
+      "sha256": "cffc8d77ac4a5ee7dfc7f47436dee86ebb29998a711b984d33ffba4a1eedbcc9",
+      "size": 458
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\extractors\\csvs.py": {
+      "sha256": "fffbab68d921df48177caab39573012e1577c47ad251f65ff46dc1d6d24fb5f5",
+      "size": 930
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\extractors\\docx.py": {
+      "sha256": "a3b01e14cb2ecc704eaf521aa3104cbb254ea4a91f3c0c34b0a7fefdf80933df",
+      "size": 654
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\extractors\\images.py": {
+      "sha256": "3b8bd2b5ebe5edc8ce8739f8ff6357d282b0117be875608fc5a9c141f0c2cccd",
+      "size": 1053
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\extractors\\pdfs.py": {
+      "sha256": "bf82d051faa276ca9267ae06a981c7c8f3f394dbe690a8abc6c0ee414d8be367",
+      "size": 3197
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\extractors\\texts.py": {
+      "sha256": "bbf7f5c98df2bc87ed9095c51d6bf5ffb95ae97a346a068f5c53ca1928cdd685",
+      "size": 634
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\index\\fts_sqlite.py": {
+      "sha256": "4ebc01f30bb784fceec97e1fb3632db0a8ac100df4ee3b4df3a26831c13c6abc",
+      "size": 1549
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\index\\qdrant_index.py": {
+      "sha256": "0431840cf5b436c58492d44bd60564b6783704dcff0d5c452c5f7902099a0195",
+      "size": 876
+    },
+    "engines\\ocr_embed_v2\\src\\litos_harvest\\pipeline\\harvest.py": {
+      "sha256": "60053d448154e69238d83455cc8de7acd7e5dee89e6768ec1061048d1881ecc3",
+      "size": 11144
+    },
+    "engines\\templates\\litigos_cli.py": {
+      "sha256": "c550a884ef037699ade0b8eaf4a54813650b7615dabafb38829a27ba7a7d7796",
+      "size": 15611
+    },
+    "engines\\__pycache__\\brief_quality_engine.cpython-312.pyc": {
+      "sha256": "b35d26f6d03e066f66f09eb38c2429cf562c5760e5a3944f45d2dc3deef71570",
+      "size": 27597
+    },
+    "engines\\__pycache__\\db_lock_manager.cpython-312.pyc": {
+      "sha256": "acedfb680c62660c77b739fcaaa2cdefe110c2086e9589e91d0f5c9881f13777",
+      "size": 22566
+    },
+    "engines\\__pycache__\\filing_validator_engine.cpython-312.pyc": {
+      "sha256": "522fbc8c5ca12a224b9f958fcb9fd3065cd06810f25c264b62e76fc8ca3e8db4",
+      "size": 24424
+    },
+    "engines\\__pycache__\\llm_bridge.cpython-312.pyc": {
+      "sha256": "01a97328446d1c138217ce209a1c314f18ed1e999e491ad5aba2b11873a30f46",
+      "size": 18860
+    },
+    "engines\\__pycache__\\llm_classifier_engine.cpython-312.pyc": {
+      "sha256": "154c934ae08e90595a0785002854731f9260ba659963c7b6689ebffb3641f63f",
+      "size": 19149
+    },
+    "engines\\__pycache__\\opposing_analysis_engine.cpython-312.pyc": {
+      "sha256": "ced8b750b113feec858edf304a4c011f9706967508b0d45a8d1c4363834782b1",
+      "size": 24352
+    },
+    "engines\\__pycache__\\settlement_engine.cpython-312.pyc": {
+      "sha256": "228bf471bc009937e795c55b3c103267878adc7e33a0d44be2aad8d62555f396",
+      "size": 30062
+    },
+    "engines\\__pycache__\\skill_authority_validator.cpython-312.pyc": {
+      "sha256": "8e6a9390713980d27940d51a0678660b4c1d9e39c995ce76c8fbf39ee31fdb05",
+      "size": 10218
+    },
+    "engines\\__pycache__\\skill_bias_quantifier.cpython-312.pyc": {
+      "sha256": "3d5005de815b166c14793a62f5b8a7660671fbd09c98f623ff079cbe1bb9f47f",
+      "size": 8999
+    },
+    "engines\\__pycache__\\skill_filing_tracker.cpython-312.pyc": {
+      "sha256": "bbc26ff63f101303bfdbf879b256ccf623cfd8d3e3e39742c7fdd271c599684a",
+      "size": 11985
+    },
+    "engines\\__pycache__\\skill_ppo_detector.cpython-312.pyc": {
+      "sha256": "1fc3dba682383507d6fdccd489f3738f49b6c93fbf123f500549999012907e5e",
+      "size": 7908
+    },
+    "calendar\\deadlines.json": {
+      "sha256": "d75c1abcebe50ffd81db96f312883a816046e26127d86ac96d843c5da58e591c",
+      "size": 27436
+    },
+    "calendar\\DEADLINE_DASHBOARD.txt": {
+      "sha256": "ed61586274d9eafe95b6428493b7752db0954979456b6eed4cd7af2638a94372",
+      "size": 15617
+    },
+    "calendar\\FILING_WAVE_PLAN.md": {
+      "sha256": "a24ba75187a73f3fdeeb7ddb4aedad3c016132ec6a8fcdc7b5a16c1bd36d7d04",
+      "size": 13190
+    },
+    "calendar\\litigation_deadlines.ics": {
+      "sha256": "f77ab87731d75590ddc3203fb3e7673aa984e7c48a812fcacd1306c161921c60",
+      "size": 34540
+    },
+    "authority_index\\authorities_db.json": {
+      "sha256": "1d7ecddba7bda7f0d40c71dab29ab1ec8041473d67d274333fe4bbf464138b65",
+      "size": 395991
+    },
+    "authority_index\\AUTHORITY_INDEX.txt": {
+      "sha256": "86ba34073a529a682c0759e3e6c0c0d0fc89bf1c49e3cf9dd7036c7f41da6352",
+      "size": 4599
+    },
+    "authority_index\\citations.json": {
+      "sha256": "b15a8faa57e1675c35a0bdb83413ef067850c6f314fb82864a2b5979773acef6",
+      "size": 609589
+    },
+    "authority_index\\citation_graph.json": {
+      "sha256": "864282e82f749216820e027a2c39f7c833ea39fd4b1f1fe64168eb2c56a61d5f",
+      "size": 65282057
+    },
+    "efiling_packets\\efiling_prep_results.json": {
+      "sha256": "0fe44bb988d271d4c056e75a55a21ca13550b1410028beb29c83b70f6c1f211d",
+      "size": 4718
+    },
+    "efiling_packets\\COA_Brief_366810\\appendix_05_APPENDIX_INDEX.pdf": {
+      "sha256": "cbe1e4d9faa80fe81e5b79b853cc2f67c29626607f431c454c1e1251da185f7a",
+      "size": 135031
+    },
+    "efiling_packets\\COA_Brief_366810\\brief_COA_BRIEF_366810_FINAL.pdf": {
+      "sha256": "e1849fef87a82c16f7dc3488b8da5274c1b1134b87e0805b242402aa68b7c3b6",
+      "size": 133981
+    },
+    "efiling_packets\\COA_Brief_366810\\EFILING_CHECKLIST.md": {
+      "sha256": "eab78a6b89001f9e08317e46ec411f93b951d883a1658c8a8866c93436fcf55a",
+      "size": 611
+    },
+    "efiling_packets\\COA_Brief_366810\\service_06_CERTIFICATE_OF_SERVICE.pdf": {
+      "sha256": "3d32e2d2e60acb520419955ada7717fd3c1e0975222ccec5c59572e14efe5b2a",
+      "size": 132630
+    },
+    "efiling_packets\\McNeill_Disqualification\\brief_BRIEF_IN_SUPPORT.pdf": {
+      "sha256": "b8111df94b3f07a5b83989367dbe7bcc1a4b91db5e01e60edacfedcc6dfa2edf",
+      "size": 17158
+    },
+    "efiling_packets\\McNeill_Disqualification\\EFILING_CHECKLIST.md": {
+      "sha256": "553645a95f42fe744a04cfbb585c3abe310907d70e05f17acf6f851c19bb0705",
+      "size": 710
+    },
+    "efiling_packets\\McNeill_Disqualification\\exhibits_EXHIBIT_LIST.pdf": {
+      "sha256": "6121e2abaed02c7fdbeecb98b8ee269a41bb4bd2e0ac5bb8daa67fae7c970a65",
+      "size": 13563
+    },
+    "efiling_packets\\McNeill_Disqualification\\order_PROPOSED_ORDER.pdf": {
+      "sha256": "29b90d0f476eadc2090099ed62c410a8cdd493c2a9031cdcb24943a58a068aca",
+      "size": 4308
+    },
+    "efiling_packets\\McNeill_Disqualification\\service_CERTIFICATE_OF_SERVICE.pdf": {
+      "sha256": "950787a7d31a34ef59cb5d7741b890068385aafb44e1477cc221b98b027f3ee6",
+      "size": 3345
+    },
+    "efiling_packets\\MSC_Original_Action\\appendix_C_msc_appendix.md": {
+      "sha256": "da8b719b423c1f2375e29e43cde1e6ae074cf0dddcfd4ae8e055ca46550cd438",
+      "size": 8393
+    },
+    "efiling_packets\\MSC_Original_Action\\brief_B_msc_brief_in_support.md": {
+      "sha256": "7ec31ba1b8619b75c49d094d7eec32e3d118d2a4b83fa2bc87c7c5f1ac458fc5",
+      "size": 19401
+    },
+    "efiling_packets\\MSC_Original_Action\\complaint_A_msc_complaint_superintending_control.md": {
+      "sha256": "8a5a6d709ae01c990cb92dd7b9832fda36da64d44239e568bcd7ed0bb59e65c7",
+      "size": 21178
+    },
+    "efiling_packets\\MSC_Original_Action\\EFILING_CHECKLIST.md": {
+      "sha256": "0384ecf117895bfc3d08a24dafed6906c377a479e73a85990b4978849e4bd9ee",
+      "size": 721
+    },
+    "efiling_packets\\MSC_Original_Action\\service_D_proof_of_service.md": {
+      "sha256": "07f1d8ef811a48ae49dab3e752fc82416015a43a4d49ee5a8dc7ad9f54619f4c",
+      "size": 3817
+    },
+    "efiling_packets\\MSC_Original_Action\\verification_E_verification.md": {
+      "sha256": "20cecdd0a0dcbd59e6b5a971ffc3ea9afa1ad3af39a61c64ded9048ce0b32bdd",
+      "size": 3129
+    },
+    "agents\\adversary-war-room.agent.md": {
+      "sha256": "8bb77f2b75185c758e52414b1970d0d9309a4cc5e6694328ea3d6d5bf632025e",
+      "size": 4433
+    },
+    "agents\\appellate-strategy.agent.md": {
+      "sha256": "151043f1885251c2b36a00098eaeca1ac2ecb3cbcdbca5640921fd00f540da17",
+      "size": 15147
+    },
+    "agents\\brief-quality-scorer.agent.md": {
+      "sha256": "4a8a00f79d2ddc50d11bac295db36d1dfd4965677544124dfa7a98471974dec6",
+      "size": 11419
+    },
+    "agents\\brief-writer.agent.md": {
+      "sha256": "07352dd52fde5c3768485c9d55949cc14d917568dd22d7fdd9586db92e3fb3d4",
+      "size": 1869
+    },
+    "agents\\citation-researcher.agent.md": {
+      "sha256": "b47803b783fd60578466faa9a38ca3c1cfad235682213e5b70fca0cb5e54b30b",
+      "size": 1605
+    },
+    "agents\\context-architect.agent.md": {
+      "sha256": "5ff5c3ff4dd523520307db11d44a98eb15da80bd837b393757d0e6c350004604",
+      "size": 1844
+    },
+    "agents\\convergence-coordinator.agent.md": {
+      "sha256": "8fa806f0db21e4856c61edbc43a34ddced5ec0c9a397077f2725417d1c092cef",
+      "size": 5103
+    },
+    "agents\\cost-tracker.agent.md": {
+      "sha256": "07916ad3c3dfed8b79e73e787b5e6d4c44dd31689e8b58549b1ccd2d893a4af6",
+      "size": 831
+    },
+    "agents\\court-form-finder.agent.md": {
+      "sha256": "81753fd2ef2583a4b5ff5906bee6f14d784c99754e6223bc02021ec56417ddd0",
+      "size": 1369
+    },
+    "agents\\critical-thinking.agent.md": {
+      "sha256": "b3826697e4da8097beaa8d45b9e3f351dc16691dd48d73bd6f86040e255b2852",
+      "size": 2153
+    },
+    "agents\\deadline-sentinel.agent.md": {
+      "sha256": "d212297708c5ed3363427419e4381b3dacca34007a9914312433ceaa9f1bf057",
+      "size": 4375
+    },
+    "agents\\debug.agent.md": {
+      "sha256": "8cb336e824d11755d85958a9ac276e309f8f3bb9392071c870f63986f2fd344b",
+      "size": 3562
+    },
+    "agents\\deposition-prep.agent.md": {
+      "sha256": "4b35a7db0c58b872a033bbb1b5c67cfa28657dcdc3aa50adac6b9f390788c2ba",
+      "size": 1653
+    },
+    "agents\\devils-advocate.agent.md": {
+      "sha256": "55737a37944b61f08ba13b5a7345f5b5c2cde91c7c77fd7510960d0a1937041a",
+      "size": 2126
+    },
+    "agents\\discovery-manager.agent.md": {
+      "sha256": "d6d3ff3624d2d9e3c04f1319b7b2e592f564de0d7e44bb58479306f7138ab8ac",
+      "size": 1527
+    },
+    "agents\\document-classifier.agent.md": {
+      "sha256": "ecc94b3e488eb3aad31d466b04ac18cc4d819f1011666ffab22facfcadb41ca4",
+      "size": 2260
+    },
+    "agents\\evidence-authenticator.agent.md": {
+      "sha256": "b818325019a0810d6e21a067e35129680c2a2347a99556f3dd662d8ce17844cc",
+      "size": 11385
+    },
+    "agents\\evidence-harvester.agent.md": {
+      "sha256": "367c64e9f7ec6aeb58a8575d5933d0af8d42a0e06dc7d1d1ef9372c88eecb9a4",
+      "size": 6037
+    },
+    "agents\\exhibit-curator.agent.md": {
+      "sha256": "33e6692295b2d7216e69805f036adbfbcdf2a75ec3e034e6931cedeb29bbe0a6",
+      "size": 1668
+    },
+    "agents\\exhibit-formatter.agent.md": {
+      "sha256": "91904a68615780cc43f14f5c74abf4c09b1233ac37fd22dd9c0fcc6799ef668c",
+      "size": 1073
+    },
+    "agents\\federal-1983-specialist.agent.md": {
+      "sha256": "20c13d77cb1c439fa2d0e40e8530ec37b6d1b061a06993417c031b634c35959e",
+      "size": 5359
+    },
+    "agents\\filing-assembler.agent.md": {
+      "sha256": "c9288d05d696d4a6605b5bbbcc7b24a25b513e3dab71a1972b79a7bb44f62bde",
+      "size": 3731
+    },
+    "agents\\filing-countdown.agent.md": {
+      "sha256": "f148167323f40e7f2761f56cbac834923067015b153923c155a59f34a55b498b",
+      "size": 1698
+    },
+    "agents\\filing-router.agent.md": {
+      "sha256": "7e646a11e44a79680b34c36d19f7ae6ad47ce6aafba26065cf79ce54ac996876",
+      "size": 9737
+    },
+    "agents\\financial-analyst.agent.md": {
+      "sha256": "2358b4913a392e028e28b7640f34cd4b3440b0bacf1566dfc12dbe055624ad0d",
+      "size": 1630
+    },
+    "agents\\gdrive-watcher.agent.md": {
+      "sha256": "8769731743f31e463b69fb7631f9f40df15bef3a1ca7f0a938d71be134597cf9",
+      "size": 1644
+    },
+    "agents\\harm-tracker.agent.md": {
+      "sha256": "37a6fdeaa265721959b3b8a56e3b2f37096ca81c260f54f74e6dfb1291c01aea",
+      "size": 1865
+    },
+    "agents\\impeachment-commander.agent.md": {
+      "sha256": "546133274db8e2873b320e6121e65465264eedbf2ccc5d72102747b8b5778d06",
+      "size": 6338
+    },
+    "agents\\janitor.agent.md": {
+      "sha256": "f63fe58de1b37f70ebef95da750e7d318db2fb44d3285cb9eeac91c1ec56a020",
+      "size": 3281
+    },
+    "agents\\judicial-bias-detector.agent.md": {
+      "sha256": "3a69c9431d340dd4c194d1369a1d9bfc2659324ee99cb30fa1232e968f33df22",
+      "size": 15786
+    },
+    "agents\\legal-phase-indexer.agent.md": {
+      "sha256": "41b219927cd181a36c9ae5bbe826b7a7196be78a7c7935eb6c7a31f0c11ddbfc",
+      "size": 19193
+    },
+    "agents\\legal-research-deep.agent.md": {
+      "sha256": "682a21f22a7e52512a091c7337e8f6eb8eccdcc54566b85ec80dc02b8663c03d",
+      "size": 1307
+    },
+    "agents\\mcr-compliance-validator.agent.md": {
+      "sha256": "68fa32709e9f682596f3b460e1b28f15a4313efd6766d5a59f79cda375808c8c",
+      "size": 9400
+    },
+    "agents\\michigan-litigation-orchestrator.agent.md": {
+      "sha256": "05646d54af62ef6274f8700053b9a3e2f43c4af471bc55c7d299e4680efbaf73",
+      "size": 22086
+    },
+    "agents\\motion-drafter.agent.md": {
+      "sha256": "98674ba7a3a56b81addeca869c498b1294733cbfab226aa2b5d7bca95ad4fbb3",
+      "size": 2165
+    },
+    "agents\\ms-sql-dba.agent.md": {
+      "sha256": "d0018fcc6d4f47460b6eda7428fd67f40d91a556104e4586ada86776ed27dc08",
+      "size": 2227
+    },
+    "agents\\msc-fleet-commander.agent.md": {
+      "sha256": "639310a54b3d45a7be3e7f34aa173148eae6921e141012a0371779c060d187ab",
+      "size": 4908
+    },
+    "agents\\opposing-counsel-analyzer.agent.md": {
+      "sha256": "c8a3b53f2279b20981587987e1be38703b6f1dc6d6c37d80b10b19bb139ed212",
+      "size": 10450
+    },
+    "agents\\order-compliance-monitor.agent.md": {
+      "sha256": "ddcc96eb352ac71eff4b83849104aec12de9ba728b5f73a1ab82a15f431f482e",
+      "size": 933
+    },
+    "agents\\plan.agent.md": {
+      "sha256": "33f6a596d04356e35c7b8b706abb3bd326d5415a2e218b078415d8a560310c97",
+      "size": 6774
+    },
+    "agents\\planner.agent.md": {
+      "sha256": "58109e974ea551e1e6cfa0c2047d6d525cde6d0475d93a5d7665f04273060dfe",
+      "size": 877
+    },
+    "agents\\pre-filing-qa.agent.md": {
+      "sha256": "60826748727872f09c3a73a2d9e9de2d20b78b1f2aa53347977e9e0a7944fef1",
+      "size": 2557
+    },
+    "agents\\principal-software-engineer.agent.md": {
+      "sha256": "b7805376197e096339852d63f1f21eb0857ad61a0dcbea275cfe3dd5c77f139e",
+      "size": 2747
+    },
+    "agents\\pro-se-compliance.agent.md": {
+      "sha256": "e9b49706c9c35ea9dad494cff2b35113575a8145b6fa93a8bcd64430f1c829e0",
+      "size": 14142
+    },
+    "agents\\redaction-agent.agent.md": {
+      "sha256": "dd36101c10be12def7e0aa1da9224d7260e495de38c5af39435159723cf7b971",
+      "size": 1068
+    },
+    "agents\\repo-architect.agent.md": {
+      "sha256": "d20f4e7bdeffa5d325cffc829287423d8d62b654fde45827111bcae788ad0ee2",
+      "size": 12548
+    },
+    "agents\\research-technical-spike.agent.md": {
+      "sha256": "d094ae33f4e3b42e249491a82530485b0be7949df7ff41c7a9e48cf7a2773740",
+      "size": 9715
+    },
+    "agents\\se-security-reviewer.agent.md": {
+      "sha256": "3b5fec1f93bf21e20b865493ceca30708738642887d00c68e0bd0051f2d0e1fc",
+      "size": 3962
+    },
+    "agents\\se-technical-writer.agent.md": {
+      "sha256": "e2b7fe3959fee4701084022bdfb6bae9c24b2890d44305f17d779d0055ec9506",
+      "size": 10767
+    },
+    "agents\\service-tracker.agent.md": {
+      "sha256": "5a30a6a7f5bd2156d5b78e6443eb551c4452e7bbf7ee584cec8d94775c770e0b",
+      "size": 1134
+    },
+    "agents\\settlement-calculator.agent.md": {
+      "sha256": "915ba06166a47c1525de1e51bbb8745f8aec67c05418adbe6874f52d79e0f024",
+      "size": 11541
+    },
+    "agents\\timeline-builder.agent.md": {
+      "sha256": "c97278dbff3db1d61104924a0f36b19b53c467b8fa247ef1d4ded7a3896f001d",
+      "size": 1703
+    },
+    "agents\\transcript-analyzer.agent.md": {
+      "sha256": "de8b992cb75fe7ff05d2d74a589b6da3cf3f9170e150968f9c6806720a49c05a",
+      "size": 1105
+    },
+    "agents\\witness-profiler.agent.md": {
+      "sha256": "9acdd3b2df46a1a8f27748c02292cbbeac8cae22b1ef297bb2988cffd00a4726",
+      "size": 1771
+    },
+    "reports\\CONVERGENCE_QA_REPORT.md": {
+      "sha256": "f4f5ade7d0bba234c2f0b5f947e36a6b5de2ad521758b2713f93c1d16a839be0",
+      "size": 45447
+    },
+    "reports\\CONVERGENCE_QA_SCORES.json": {
+      "sha256": "d6ec10b0373025c6e4d9cfecb52917a337cfaaef55653ebeb55634144d390d49",
+      "size": 53936
+    },
+    "reports\\CONVERGENCE_EVIDENCE_REPORT.md": {
+      "sha256": "c6149a10ba765f1bbcab0f0d7d73f8e2635986a5ea3cf13c64c3fdd06585ff41",
+      "size": 11331
+    },
+    "reports\\CONVERGENCE_AUTHORITY_REPORT.md": {
+      "sha256": "c9cd4f3edc3c02ef4e979825efdfeb0107148a8ff4838971c914f63393a5e0bd",
+      "size": 5768
+    },
+    "reports\\CONVERGENCE_PLACEHOLDER_REPORT.md": {
+      "sha256": "ebcd3f736a9d24331c6f2df3f4da4aaa868862399151c3b951211856fb65982a",
+      "size": 10439
+    },
+    "reports\\PLACEHOLDER_MASTER_REPORT.json": {
+      "sha256": "6528f59d3702fc54f8448b91fca7826aec451431f855d4f1ddc0ff299da4a1bd",
+      "size": 3126943
+    },
+    "reports\\CROSS_REFERENCE_MATRIX.md": {
+      "sha256": "3b4c61db130413c0b0659533324a3708c851fef50b97f8ac72da1f7ab163f421",
+      "size": 18782
+    },
+    "reports\\MASTER_EXHIBIT_INDEX.md": {
+      "sha256": "520efe10e7f9f83adca1b5092de63456e9cc3085598472e63b6febebba3ee2e1",
+      "size": 18342
+    },
+    "reports\\FILING_STACK_SCORES.md": {
+      "sha256": "a96e8c9f8a244122d1385fb331343e191c256ff5d055df843cef556b983e1dd4",
+      "size": 10233
+    },
+    "reports\\FILING_PRIORITY_MATRIX.md": {
+      "sha256": "29bf7a370945f5573b0f69240ea722d6a49e35b7505184f5dba32d70e8393f32",
+      "size": 5733
+    },
+    "reports\\MASTER_FILING_INDEX.md": {
+      "sha256": "85fc8e64a93160d74c9e1214d8b7bf140fa83c7475bf54598369aef282091149",
+      "size": 11882
+    },
+    "litigation_context.db": {
+      "sha256": "af0e419ec72ce22d316a7f4b6fecd934ea46554cd2a5e672bcbfd9fab8ab6d1f",
+      "size": 10928103424
+    }
+  }
+}

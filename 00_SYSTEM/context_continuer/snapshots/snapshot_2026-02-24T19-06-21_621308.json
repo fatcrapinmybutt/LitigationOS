@@ -1,0 +1,318 @@
+{
+  "timestamp": "2026-02-24T19:06:21.621308",
+  "session_id": null,
+  "identity": {
+    "case": "Pigors v. Watson",
+    "plaintiff": "Andrew Pigors (pro se)",
+    "defendant": "Tiffany Watson (fka Pigors)",
+    "judge": "Hon. Jenny L. McNeill",
+    "court": "14th Circuit Court, Muskegon County",
+    "separation_days": 329,
+    "lanes": {
+      "A": "Watson Custody \u2014 2024-001507-DC",
+      "B": "Shady Oaks Housing",
+      "C": "Convergence \u2014 Multi-lane",
+      "D": "PPO \u2014 2023-5907-PP",
+      "E": "Judicial Misconduct \u2014 JTC/MSC",
+      "F": "Appellate \u2014 COA 366810"
+    },
+    "config_loaded": true
+  },
+  "platform_status": {
+    "desktop": {
+      "frontend_built": true,
+      "location": "08_APPS/desktop/",
+      "tech": "Electron + React 18/Vite + IPC + SQLite"
+    },
+    "web": {
+      "built": true,
+      "location": "08_APPS/web/",
+      "tech": "Next.js 14 + TypeScript + Tailwind + Three.js"
+    },
+    "mobile": {
+      "exists": true,
+      "location": "08_APPS/mobile/",
+      "tech": "Expo + React Native 0.73 + TypeScript"
+    },
+    "mllm": {
+      "trained": true,
+      "location": "00_SYSTEM/local_model/",
+      "tech": "TF-IDF + Naive Bayes (177K docs, 50K features)"
+    },
+    "database": {
+      "exists": true,
+      "size_mb": 1476.0,
+      "location": "C:\\Users\\andre\\litigation_context.db"
+    }
+  },
+  "db_stats": {
+    "auth_rules": 5633,
+    "evidence_quotes": 405,
+    "master_citations": 160030,
+    "impeachment_items": 14174,
+    "contradiction_map": 10558,
+    "deadlines": 0,
+    "docket_events": 0,
+    "vehicles": 0,
+    "judicial_violations": 0,
+    "adversary_models": 10,
+    "mllm_improvement_cycles": 8
+  },
+  "active_todos": [],
+  "decisions_log": [],
+  "files_changed": [
+    {
+      "path": "00_SYSTEM\\context_continuer\\context_continuer.py",
+      "modified": "2026-02-24T19:06:14.191331",
+      "size": 19972
+    },
+    {
+      "path": "08_APPS\\desktop\\frontend\\src\\services\\authService.js",
+      "modified": "2026-02-24T19:04:10.792888",
+      "size": 1442
+    },
+    {
+      "path": "08_APPS\\desktop\\frontend\\src\\services\\analysisService.js",
+      "modified": "2026-02-24T19:03:28.388618",
+      "size": 5017
+    },
+    {
+      "path": "08_APPS\\desktop\\frontend\\src\\services\\motionService.js",
+      "modified": "2026-02-24T19:02:53.987886",
+      "size": 2711
+    },
+    {
+      "path": "08_APPS\\desktop\\frontend\\src\\services\\citationService.js",
+      "modified": "2026-02-24T19:02:13.784394",
+      "size": 1766
+    },
+    {
+      "path": "08_APPS\\desktop\\electron-app\\package.json",
+      "modified": "2026-02-24T19:01:57.511426",
+      "size": 2328
+    },
+    {
+      "path": "08_APPS\\desktop\\frontend\\src\\pages\\Analytics.jsx",
+      "modified": "2026-02-24T19:01:57.366587",
+      "size": 8490
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\package.json",
+      "modified": "2026-02-24T19:01:57.366587",
+      "size": 2749
+    },
+    {
+      "path": "08_APPS\\desktop\\frontend\\src\\pages\\Cases.jsx",
+      "modified": "2026-02-24T19:01:57.365588",
+      "size": 8986
+    },
+    {
+      "path": "08_APPS\\desktop\\main\\electron-main.js",
+      "modified": "2026-02-24T18:58:18.986766",
+      "size": 36372
+    },
+    {
+      "path": "08_APPS\\desktop\\frontend\\package-lock.json",
+      "modified": "2026-02-24T18:36:44.568365",
+      "size": 535111
+    },
+    {
+      "path": "08_APPS\\desktop\\frontend\\package.json",
+      "modified": "2026-02-24T18:36:43.871363",
+      "size": 2489
+    },
+    {
+      "path": "08_APPS\\desktop\\frontend\\src\\pages\\Evidence.jsx",
+      "modified": "2026-02-24T18:36:00.345537",
+      "size": 18662
+    },
+    {
+      "path": "08_APPS\\desktop\\package-lock.json",
+      "modified": "2026-02-24T18:35:46.226441",
+      "size": 209751
+    },
+    {
+      "path": ".vscode\\launch.json",
+      "modified": "2026-02-24T17:56:20.989108",
+      "size": 236
+    },
+    {
+      "path": ".vscode\\gemini-mcp\\status.json",
+      "modified": "2026-02-24T17:53:09.634686",
+      "size": 284
+    },
+    {
+      "path": "_audit3.py",
+      "modified": "2026-02-24T17:38:50.409631",
+      "size": 1185
+    },
+    {
+      "path": "_audit1.py",
+      "modified": "2026-02-24T17:38:05.654332",
+      "size": 1846
+    },
+    {
+      "path": "_audit2.py",
+      "modified": "2026-02-24T17:38:04.578252",
+      "size": 1429
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\server-enhanced.js",
+      "modified": "2026-02-24T17:25:12.328926",
+      "size": 88
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\server.js",
+      "modified": "2026-02-24T17:25:12.328926",
+      "size": 88
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\__tests__\\auth.test.js",
+      "modified": "2026-02-24T17:25:01.525412",
+      "size": 145
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\graphql\\schema\\typeDefs.js",
+      "modified": "2026-02-24T17:25:01.525412",
+      "size": 99
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\utils\\cypherQueryBuilder.js",
+      "modified": "2026-02-24T17:24:37.970564",
+      "size": 91
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\middleware\\validation.js",
+      "modified": "2026-02-24T17:24:37.944680",
+      "size": 110
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\services\\websocketService.js",
+      "modified": "2026-02-24T17:24:37.936183",
+      "size": 97
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\webhooks.js",
+      "modified": "2026-02-24T17:24:37.911390",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\users.js",
+      "modified": "2026-02-24T17:24:37.898086",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\tenants.js",
+      "modified": "2026-02-24T17:24:37.896771",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\subscription.js",
+      "modified": "2026-02-24T17:24:37.895770",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\motions.js",
+      "modified": "2026-02-24T17:24:37.893774",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\litigation-data.js",
+      "modified": "2026-02-24T17:24:37.892841",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\cases.example.js",
+      "modified": "2026-02-24T17:24:37.877221",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\cases.js",
+      "modified": "2026-02-24T17:24:37.877221",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\chat.js",
+      "modified": "2026-02-24T17:24:37.877221",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\citations.js",
+      "modified": "2026-02-24T17:24:37.877221",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\documents.js",
+      "modified": "2026-02-24T17:24:37.877221",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\evidence.js",
+      "modified": "2026-02-24T17:24:37.877221",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\export.js",
+      "modified": "2026-02-24T17:24:37.877221",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\graph.js",
+      "modified": "2026-02-24T17:24:37.877221",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\admin.js",
+      "modified": "2026-02-24T17:24:37.865402",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\ai.js",
+      "modified": "2026-02-24T17:24:37.865402",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\analysis.js",
+      "modified": "2026-02-24T17:24:37.865402",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\auth.js",
+      "modified": "2026-02-24T17:24:37.865402",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\api\\index.js",
+      "modified": "2026-02-24T17:24:37.865402",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\api\\v1\\ai.js",
+      "modified": "2026-02-24T17:24:37.865402",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\api\\v1\\analytics.js",
+      "modified": "2026-02-24T17:24:37.865402",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\api\\v1\\cases.js",
+      "modified": "2026-02-24T17:24:37.865402",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\api\\v1\\evidence.js",
+      "modified": "2026-02-24T17:24:37.865402",
+      "size": 135
+    },
+    {
+      "path": "08_APPS\\desktop\\backend\\src\\routes\\api\\v1\\index.js",
+      "modified": "2026-02-24T17:24:37.865402",
+      "size": 135
+    }
+  ],
+  "knowledge_gained": [],
+  "next_actions": [],
+  "critical_warnings": []
+}

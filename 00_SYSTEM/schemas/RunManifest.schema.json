@@ -1,0 +1,148 @@
+{
+  "$defs": {
+    "CaseLane": {
+      "description": "Six case lanes \u2014 IRON LAW: never cross-contaminate.",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "title": "CaseLane",
+      "type": "string"
+    },
+    "ManifestInput": {
+      "additionalProperties": false,
+      "properties": {
+        "file_path": {
+          "title": "File Path",
+          "type": "string"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sha256"
+        },
+        "lane": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CaseLane"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "default": "local",
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "file_path"
+      ],
+      "title": "ManifestInput",
+      "type": "object"
+    },
+    "ManifestOutput": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "title": "Type",
+          "type": "string"
+        },
+        "vehicle": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Vehicle"
+        },
+        "file_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "File Path"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "title": "ManifestOutput",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Pipeline run manifest \u2014 full audit trail.",
+  "properties": {
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "timestamp": {
+      "title": "Timestamp",
+      "type": "string"
+    },
+    "inputs": {
+      "items": {
+        "$ref": "#/$defs/ManifestInput"
+      },
+      "title": "Inputs",
+      "type": "array"
+    },
+    "outputs": {
+      "items": {
+        "$ref": "#/$defs/ManifestOutput"
+      },
+      "title": "Outputs",
+      "type": "array"
+    },
+    "errors": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Errors",
+      "type": "array"
+    },
+    "gaps_opened": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Gaps Opened",
+      "type": "array"
+    },
+    "metrics": {
+      "additionalProperties": true,
+      "title": "Metrics",
+      "type": "object"
+    }
+  },
+  "required": [
+    "run_id",
+    "timestamp"
+  ],
+  "title": "RunManifest",
+  "type": "object"
+}

@@ -1,0 +1,272 @@
+{
+  "generated_at": "2026-02-24T06:28:30.465554",
+  "source_manifest": [
+    {
+      "name": "20260223_2303_MEEK234_QUOTELOCK_PACK.zip",
+      "size_bytes": 411199,
+      "mtime_iso": "2026-02-24T06:23:21.060174",
+      "sha256": "9cb85bc517ba6c8a3b87302cbb643bf64e7b732f0278491136434de917ac24af",
+      "type": ".zip"
+    },
+    {
+      "name": "3055edeb-0469-492a-9865-021bb87dcc03.md",
+      "size_bytes": 8613,
+      "mtime_iso": "2026-02-24T06:23:21.761331",
+      "sha256": "59fda1f6bda75cb81e13c6268dccc4e21eaeaeaa604bb89145b15c78650abb6b",
+      "type": ".md"
+    },
+    {
+      "name": "6683a8d8-d1aa-4b3f-8b3a-24d8e423201b.pdf",
+      "size_bytes": 371379,
+      "mtime_iso": "2026-02-24T06:23:19.754661",
+      "sha256": "87b742123b5be04ae9cb2f0451edd2239c835e46d4bda4fa0c5dc7a56c39f358",
+      "type": ".pdf"
+    },
+    {
+      "name": "70c49062-1ea0-4e73-a649-32d0a9986474.zip",
+      "size_bytes": 2998335,
+      "mtime_iso": "2026-02-24T06:23:21.559495",
+      "sha256": "c7c8d158c06b74d9394f112883f9e32b55abfad84b7ac7e639b124133a9c3c54",
+      "type": ".zip"
+    },
+    {
+      "name": "7a619538-45e5-4488-9eb4-e0d1894a06cc.md",
+      "size_bytes": 40029,
+      "mtime_iso": "2026-02-24T06:23:21.761392",
+      "sha256": "d2b2845615ab3a2e9f4c2cdd0c326bc8971de2a2fce1659dce4bcf3709728c4f",
+      "type": ".md"
+    },
+    {
+      "name": "7b74e89d-e9fd-4ebc-8e01-b370b992c6ca.zip",
+      "size_bytes": 19479196,
+      "mtime_iso": "2026-02-24T06:23:22.285525",
+      "sha256": "c1b7ad03cb0572fbf0a303519662acdddb03a8ec99937a88c0a123f39f07c235",
+      "type": ".zip"
+    },
+    {
+      "name": "8e5460ad-ca1d-4cac-b802-1ec6e07997fb.md",
+      "size_bytes": 12304,
+      "mtime_iso": "2026-02-24T06:23:21.758416",
+      "sha256": "f5d7d10f6452433d4bf4533ff054173d7c6af3d61b574f4d6ef716e7aaa52716",
+      "type": ".md"
+    },
+    {
+      "name": "92f01e67-69c6-4d2d-84ad-1a1e4f1fc06d.zip",
+      "size_bytes": 36456,
+      "mtime_iso": "2026-02-24T06:23:22.274542",
+      "sha256": "a7e76f1bfa9fa3961005edb6100e6a46f0042185f90763bc5af6f624762c84ac",
+      "type": ".zip"
+    },
+    {
+      "name": "96035745-eafb-42f8-81cf-4493f946e853.pdf",
+      "size_bytes": 8275269,
+      "mtime_iso": "2026-02-24T06:23:21.964894",
+      "sha256": "7d1785bb1811b3376444679aa535a6bca69d9a6e7544453821a9e590e4bfbd6b",
+      "type": ".pdf"
+    },
+    {
+      "name": "9991a107-bd89-4799-806a-312d492482b3.zip",
+      "size_bytes": 334443,
+      "mtime_iso": "2026-02-24T06:23:22.259030",
+      "sha256": "acb0922463a30bba8aeadff7e03235a81d380e3cf26b43702c1d010c3ce9779a",
+      "type": ".zip"
+    },
+    {
+      "name": "a0da751d-4b19-46f9-8e48-0272150ab69d.pdf",
+      "size_bytes": 3926917,
+      "mtime_iso": "2026-02-24T06:23:21.558430",
+      "sha256": "8d70805a9186372af986cd78b2214cb06b0c3fe2d39a6cda48b6268bf79dfd87",
+      "type": ".pdf"
+    },
+    {
+      "name": "bf5f0364-c042-4e93-91cc-d633ca70fdc4.md",
+      "size_bytes": 22084,
+      "mtime_iso": "2026-02-24T06:23:20.560058",
+      "sha256": "6d145f8794f0f84405bccb1f09f5ac85e70d92a19d4cfc0708d203504682493c",
+      "type": ".md"
+    },
+    {
+      "name": "cd4d925c-fcd2-41a7-915a-102a20b92b40.pdf",
+      "size_bytes": 515413,
+      "mtime_iso": "2026-02-24T06:23:21.060881",
+      "sha256": "ecc5b28cf4a24ff4d26a11dc85e29d0cc3c2b9fc06c4d2f89d896f417660e456",
+      "type": ".pdf"
+    },
+    {
+      "name": "d8c1df2c-f070-4111-8b75-8064f1a6a996.md",
+      "size_bytes": 17083,
+      "mtime_iso": "2026-02-24T06:23:21.760210",
+      "sha256": "38eb7c5be1111aa70ba05363bad74fdd0f092294516e9354be369d999d778e42",
+      "type": ".md"
+    },
+    {
+      "name": "d936b8f2-5418-460d-a0aa-81acac8d6acd.zip",
+      "size_bytes": 5366201,
+      "mtime_iso": "2026-02-24T06:23:21.959239",
+      "sha256": "4952942895f879cd6377e003ded61038c076e8a4d37ac0286a16278e509f6548",
+      "type": ".zip"
+    },
+    {
+      "name": "dba73432-3966-4a47-9ff7-90bbf1f2f1f2.zip",
+      "size_bytes": 1747731,
+      "mtime_iso": "2026-02-24T06:23:21.562300",
+      "sha256": "6247a2bd48f88e9391b0060d59ef42cdcd4dda8f496f485c01eba662c6163185",
+      "type": ".zip"
+    },
+    {
+      "name": "e63b9c48-5954-4dbc-b8e8-5b1bdc2a2005.zip",
+      "size_bytes": 4478546,
+      "mtime_iso": "2026-02-24T06:23:21.561931",
+      "sha256": "5c7d1d6962e7da4450290069c7e0234b92cc1cfc2d8ba7e9f94624fadd1baf2c",
+      "type": ".zip"
+    },
+    {
+      "name": "ef06d6b4-d097-4144-b7f6-d65fb44efe6d.md",
+      "size_bytes": 29011,
+      "mtime_iso": "2026-02-24T06:23:20.493498",
+      "sha256": "6e9a26d500bf76fb5ddd74c9a6f586b1776ac6002134ea0b157e164bc5fe23d9",
+      "type": ".md"
+    },
+    {
+      "name": "Gmail - Healthwest Exam_1_RUSCO (5).pdf",
+      "size_bytes": 218951,
+      "mtime_iso": "2026-02-24T06:23:21.060215",
+      "sha256": "096570554fe5c10142243b2842bb66ecc044ca33589c0e4a5144b958293e7c9a",
+      "type": ".pdf"
+    },
+    {
+      "name": "Gmail - Healthwest Exam_1_RUSCO (8).pdf",
+      "size_bytes": 218951,
+      "mtime_iso": "2026-02-24T06:23:20.358342",
+      "sha256": "096570554fe5c10142243b2842bb66ecc044ca33589c0e4a5144b958293e7c9a",
+      "type": ".pdf"
+    },
+    {
+      "name": "Gmail - Healthwest Exam_1_RUSCO (9).pdf",
+      "size_bytes": 218951,
+      "mtime_iso": "2026-02-24T06:23:21.559437",
+      "sha256": "096570554fe5c10142243b2842bb66ecc044ca33589c0e4a5144b958293e7c9a",
+      "type": ".pdf"
+    },
+    {
+      "name": "Gmail - Healthwest Exam_2_RUSCO (6).pdf",
+      "size_bytes": 218951,
+      "mtime_iso": "2026-02-24T06:23:20.517290",
+      "sha256": "096570554fe5c10142243b2842bb66ecc044ca33589c0e4a5144b958293e7c9a",
+      "type": ".pdf"
+    },
+    {
+      "name": "Gmail - Healthwest Exam_3_RUSCO (7).pdf",
+      "size_bytes": 218951,
+      "mtime_iso": "2026-02-24T06:23:20.661059",
+      "sha256": "096570554fe5c10142243b2842bb66ecc044ca33589c0e4a5144b958293e7c9a",
+      "type": ".pdf"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "AUTHORITY_WEB_CITATION_GRAFT.md",
+      "size_bytes": 1088,
+      "sha256": "da84d94921ceaf51ed6c25689faeb0218b52f85e18d0f64382bbf66cd05ace20"
+    },
+    {
+      "name": "CHRONO_NEGATIVE_LINES_INDEX.csv",
+      "size_bytes": 8014768,
+      "sha256": "31268a91556a3faab6725d1db9953e7530ab8888bb4a30f2c25c5bc4bfeac5f4"
+    },
+    {
+      "name": "MANIFEST.json",
+      "size_bytes": 9309,
+      "sha256": "1a41f3b936f3fc6477566869fff2b6a28b65a549c63485b2a9f6f8d5f82cee07"
+    },
+    {
+      "name": "MEEK234_FILING_GRAFT_SHELLS_QUOTELOCK.md",
+      "size_bytes": 1960,
+      "sha256": "82a3ea4163358f75af1ed2a72e56a8e0bac6a5a1f19b7b5fb9fe64512d1dfd04"
+    },
+    {
+      "name": "MEEK2_FINAL_EXHIBIT_GRADE_DROPINS.md",
+      "size_bytes": 232905,
+      "sha256": "d2f9bf24e0521f4c496ee40189a47d50ca6c8b04aff30a308e4d0a0b60a05cf7"
+    },
+    {
+      "name": "MEEK2_PRIMARY_SOURCE_DROPINS.md",
+      "size_bytes": 142534,
+      "sha256": "bf5ab931f9ebbb5647d81fd47a81b8a957b15f877255a33d1c37841a5cb59a39"
+    },
+    {
+      "name": "MEEK3_FINAL_EXHIBIT_GRADE_DROPINS.md",
+      "size_bytes": 225940,
+      "sha256": "5a675e9e58819e76df0330a1054c563eae252cf40be8c1c982ff291256a12768"
+    },
+    {
+      "name": "MEEK3_PRIMARY_SOURCE_DROPINS.md",
+      "size_bytes": 145366,
+      "sha256": "645a0570a3230bd30b4ca607f3f9c82c62edcff04b09273a486389ad0ae2477b"
+    },
+    {
+      "name": "MEEK4_FINAL_EXHIBIT_GRADE_DROPINS.md",
+      "size_bytes": 322706,
+      "sha256": "9294df65c8fb165135cc02f6de741da18a22936fdfdbbce3ce4b5e43e51f36e2"
+    },
+    {
+      "name": "MEEK4_PRIMARY_SOURCE_DROPINS.md",
+      "size_bytes": 218751,
+      "sha256": "f21b77c987a1c996f8d78dc6ae2ae3326b12e2f7b7a09d6cac173e38ceba4f49"
+    },
+    {
+      "name": "MEEK4_RUSCO_MARTINI_USB_MCNEILL_QUOTELOCK_CURATED.md",
+      "size_bytes": 426432,
+      "sha256": "49ffc57869e2f765f2e829a4a96bc19929e9a9e4ff7b5244e7eba06c23da30e8"
+    },
+    {
+      "name": "PRIMARY_ONLY_MEEK234_ALL_CASESPECIFIC_FULLQUOTE_GRAFT.md",
+      "size_bytes": 2988550,
+      "sha256": "208e6aa0714d8df8e129744c6b28184fcf645bfbc03cd4c73565acc6f3a23d5b"
+    },
+    {
+      "name": "PRIMARY_ONLY_MEEK4_CURATED_MCNEILL_RUSCO_MARTINI_USB.md",
+      "size_bytes": 339447,
+      "sha256": "15b394149ac125d465fdf503b2e369c862ca92a1f60d031559504d7dcfcdc6c5"
+    },
+    {
+      "name": "PRIMARY_ONLY_QUOTELOCK_MATRIX_ALL.csv",
+      "size_bytes": 4479976,
+      "sha256": "5e9509703ffa155243def56e9d8c2bb18acfadf09f2733936b14a73aba871330"
+    },
+    {
+      "name": "PRIMARY_ONLY_QUOTELOCK_MATRIX_CASESPECIFIC.csv",
+      "size_bytes": 3440830,
+      "sha256": "92d8e7cb28b9b9e3ff770faa3374ac53f9a3ff7c8f36306df856551cf2c40bb9"
+    },
+    {
+      "name": "QUOTELOCK_REBUTTAL_OBJECTION_MATRIX_ALL.csv",
+      "size_bytes": 25781596,
+      "sha256": "6f62bb04b67dd50dafc499bacc4086064fb63d02b9447b13f0e580126c69b3d3"
+    },
+    {
+      "name": "QUOTELOCK_REBUTTAL_OBJECTION_MATRIX_CASESPECIFIC.csv",
+      "size_bytes": 24674477,
+      "sha256": "6e882dc7b5bd62b9795eef29ae182483ce6a04a9ee4febd09c0718bc44f84f12"
+    },
+    {
+      "name": "RUNLOG.txt",
+      "size_bytes": 6338,
+      "sha256": "10c2afe7632c512719c76d91c869cb5373afaf180c90aebb61bddc3acb1d4237"
+    }
+  ],
+  "stats": {
+    "source_files_scanned": 23,
+    "all_records": 10308,
+    "case_records": 9466,
+    "special_records": 3049,
+    "errors_count": 48,
+    "skipped_count": 12,
+    "primary_source_files_scanned": 22,
+    "primary_all_records": 3282,
+    "primary_case_records": 2483,
+    "primary_special_records": 543,
+    "primary_errors_count": 48,
+    "primary_skipped_count": 11
+  }
+}

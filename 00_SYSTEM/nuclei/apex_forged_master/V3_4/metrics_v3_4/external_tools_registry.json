@@ -1,0 +1,43 @@
+{
+  "ts": "20260208_2132",
+  "tools": [
+    {
+      "tool_id": "HFSPACE:Agents-MCP-Hackathon/KGB-mcp",
+      "name": "KGB-mcp",
+      "author": "Agents-MCP-Hackathon",
+      "sdk": "gradio",
+      "likes": 17,
+      "updated": "2025-06-05",
+      "tags": [
+        "gradio",
+        "mcp-server-track",
+        "agent-demo-track",
+        "knowledge-graph",
+        "entity-extraction",
+        "nlp",
+        "visualization",
+        "semantic-analysis",
+        "clustering",
+        "embeddings",
+        "mcp-server",
+        "region:us"
+      ],
+      "url": "https://hf.co/spaces/Agents-MCP-Hackathon/KGB-mcp",
+      "source": "hf_hub_repo_details"
+    },
+    {
+      "tool_id": "HFSPACE:dippatel1994/paperbanana",
+      "name": "paperbanana",
+      "author": "dippatel1994",
+      "sdk": "gradio",
+      "likes": 3,
+      "updated": "2026-02-05",
+      "tags": [
+        "gradio",
+        "region:us"
+      ],
+      "url": "https://hf.co/spaces/dippatel1994/paperbanana",
+      "source": "hf_hub_repo_details"
+    }
+  ]
+}

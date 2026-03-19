@@ -1,0 +1,6960 @@
+{
+  "nucleus_id": "filing",
+  "name": "Filing Nucleus",
+  "description": "All filings, motions, discovery, appellate briefs, status, dependencies",
+  "created": "2026-02-24T21:23:51.778243",
+  "source_brains": [
+    "28_motions",
+    "29_discovery",
+    "41_appellate",
+    "42_emergency",
+    "43_remedies",
+    "44_review",
+    "45_procedural",
+    "46_foc",
+    "49_meek"
+  ],
+  "nodes": [
+    {
+      "id": "e0001",
+      "text": "> L 552 - MCL 552. - MCL 552.603. - MCL 552.605D - MCL 552.626B. - MCL 552.644(9). - MCL 600.1344 - MCL 600.5805** - MCL 722.23(J) - MCL 722.23)[45], - MCL 722.27A(12),(13) - MCL 722.27A(3) - MCL 722.27A,\"USTODIAL - MCL 750.122**  - MCR 2.003(C)(1) - Disqualification of judge - MCR 2.119 - Motion prac",
+      "score": 46.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0002",
+      "text": "> MCL 552.644(9). - MCL 600.1344 - MCL 600.5805** - MCL 722.23(J) - MCL 722.23)[45], - MCL 722.27A(12),(13) - MCL 722.27A(3) - MCL 722.27A,\"USTODIAL - MCL 750.122**  - MCR 2.003(C)(1) - Disqualification of judge - MCR 2.119 - Motion practice and notice requirements - MCR 3.206 - Parenting time and cus",
+      "score": 39.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0003",
+      "text": "> - MCL 600.1344 - MCL 600.5805** - MCL 722.23(J) - MCL 722.23)[45], - MCL 722.27A(12),(13) - MCL 722.27A(3) - MCL 722.27A,\"USTODIAL - MCL 750.122**  - MCR 2.003(C)(1) - Disqualification of judge - MCR 2.119 - Motion practice and notice requirements - MCR 3.206 - Parenting time and custody procedures",
+      "score": 37.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0004",
+      "text": "> t, Family Division):** - Motion (MCR 2.119) - general motions practice - Emergency Motion (MCR 3.207) - ex parte relief - Motion to Disqualify Judge (MCR 2.003) - Motion Regarding Parenting Time (MCR 3.206) - Motion for Contempt (MCR 3.606) - Motion to Set Aside PPO (MCR 3.707)  **Michigan Court of",
+      "score": 33.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0005",
+      "text": "> full report]  **Court Rules & Statutes (15):** - MCR 7.204 (appellate brief requirements) - MCR 7.203 (jurisdiction) - MCR 2.003 (disqualification) - MCR 2.302 (discovery) - MCR 2.313 (sanctions) - MCR 2.107 (service) - MCL 722.23 (custody factors) - Const 1963, art 1, § 17 - U.S. Const amend XIV  -",
+      "score": 33.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0006",
+      "text": "> les & Statutes (15):** - MCR 7.204 (appellate brief requirements) - MCR 7.203 (jurisdiction) - MCR 2.003 (disqualification) - MCR 2.302 (discovery) - MCR 2.313 (sanctions) - MCR 2.107 (service) - MCL 722.23 (custody factors) - Const 1963, art 1, § 17 - U.S. Const amend XIV  ---  ## NEXT STEPS FOR FI",
+      "score": 33.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0007",
+      "text": "> MCR 7.204 (appellate brief requirements) - MCR 7.203 (jurisdiction) - MCR 2.003 (disqualification) - MCR 2.302 (discovery) - MCR 2.313 (sanctions) - MCR 2.107 (service) - MCL 722.23 (custody factors) - Const 1963, art 1, § 17 - U.S. Const amend XIV  ---  ## NEXT STEPS FOR FILING  ### Immediate Actio",
+      "score": 33.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0008",
+      "text": "> ) - MCL 722.23)[45], - MCL 722.27A(12),(13) - MCL 722.27A(3) - MCL 722.27A,\"USTODIAL - MCL 750.122**  - MCR 2.003(C)(1) - Disqualification of judge - MCR 2.119 - Motion practice and notice requirements - MCR 3.206 - Parenting time and custody procedures - MCR 3.708 - Ex parte orders in domestic rela",
+      "score": 33.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0009",
+      "text": "> ---------/\\\\n/ \\\\u2705 **Motion to Modify Parenting Time** / MCL 722.27a(1)(c), MCR 3.210(C) / Ready to File /\\\\n/ \\\\u2705 **Motion to Terminate PPO (MCL 600.2950)** / MCL 600.2950(13), MCL 764.15c / Ready to File /\\\\n/ \\\\u2705 **Motion to Vacate Contempt Order** / MCR 3.606(A), MCL 600.1701(a) / Re",
+      "score": 31.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0010",
+      "text": "> odify Parenting Time** / MCL 722.27a(1)(c), MCR 3.210(C) / Ready to File /\\\\n/ \\\\u2705 **Motion to Terminate PPO (MCL 600.2950)** / MCL 600.2950(13), MCL 764.15c / Ready to File /\\\\n/ \\\\u2705 **Motion to Vacate Contempt Order** / MCR 3.606(A), MCL 600.1701(a) / Ready to File /\\\\n/ \\\\u2705 **Motion t",
+      "score": 31.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0011",
+      "text": "> cy Motion (MCR 3.207) - ex parte relief - Motion to Disqualify Judge (MCR 2.003) - Motion Regarding Parenting Time (MCR 3.206) - Motion for Contempt (MCR 3.606) - Motion to Set Aside PPO (MCR 3.707)  **Michigan Court of Appeals:** - Complaint for Superintending Control (MCR 7.304) - Application for",
+      "score": 31.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0012",
+      "text": "> :** - MCR 7.204 (appellate brief requirements) - MCR 2.003 (disqualification) - MCR 2.302 (discovery obligations) - MCR 2.313 (discovery sanctions) - MCR 2.107 (service) - MCL 722.23 (child custody factors) - Const 1963, art 1, § 17 (due process) - U.S. Const amend XIV (federal due process)  ### Cit",
+      "score": 31.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0013",
+      "text": "> \\u2705 **Motion to Terminate PPO (MCL 600.2950)** / MCL 600.2950(13), MCL 764.15c / Ready to File /\\\\n/ \\\\u2705 **Motion to Vacate Contempt Order** / MCR 3.606(A), MCL 600.1701(a) / Ready to File /\\\\n/ \\\\u2705 **Motion to Enforce Parenting Time** / MCL 722.27a(9), MCL 552.14 / Ready to File /\\\\n/ \\\\",
+      "score": 31.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0014",
+      "text": "> on - **MCR 2.221** — Motion for Change of Venue - **MCR 2.222** — Change of Venue; Venue Proper - **MCR 2.223** — Change of Venue; Venue Improper - **MCR 2.224** — Change of Venue in Tort Actions - **MCR 2.225** — Joinder of Party to Control Venue - **MCR 2.226** — Change of Venue; Transfer of Juris",
+      "score": 31.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0015",
+      "text": "> etition for PPO** — MCR 3.700 et seq.; MCL 600.2950 / 600.2950a - **Motion to Modify/Terminate** — MCR 3.707 - **Motion for Contempt / Show Cause** — MCR 3.708  ## 29) CONTEMPT (GENERAL) - **OSC / Show Cause** — MCR 3.606 - **Relief from Order/Judgment** — MCR 2.612 - **Reconsideration** — MCR 2.119",
+      "score": 31.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0016",
+      "text": "> - Emergency Motion (MCR 3.207) - ex parte relief - Motion to Disqualify Judge (MCR 2.003) - Motion Regarding Parenting Time (MCR 3.206) - Motion for Contempt (MCR 3.606) - Motion to Set Aside PPO (MCR 3.707)  **Michigan Court of Appeals:** - Complaint for Superintending Control (MCR 7.304) - Applica",
+      "score": 31.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/24_CONTEMPT/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0017",
+      "text": "> ns practice - Emergency Motion (MCR 3.207) - ex parte relief - Motion to Disqualify Judge (MCR 2.003) - Motion Regarding Parenting Time (MCR 3.206) - Motion for Contempt (MCR 3.606) - Motion to Set Aside PPO (MCR 3.707)  **Michigan Court of Appeals:** - Complaint for Superintending Control (MCR 7.30",
+      "score": 31.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0018",
+      "text": "> MCR 3.210(C) / Ready to File /\\\\n/ \\\\u2705 **Motion to Terminate PPO (MCL 600.2950)** / MCL 600.2950(13), MCL 764.15c / Ready to File /\\\\n/ \\\\u2705 **Motion to Vacate Contempt Order** / MCR 3.606(A), MCL 600.1701(a) / Ready to File /\\\\n/ \\\\u2705 **Motion to Enforce Parenting Time** / MCL 722.27a(9),",
+      "score": 31.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0019",
+      "text": "> --------------/---------/\\\\n/ \\\\u2705 **Motion to Modify Parenting Time** / MCL 722.27a(1)(c), MCR 3.210(C) / Ready to File /\\\\n/ \\\\u2705 **Motion to Terminate PPO (MCL 600.2950)** / MCL 600.2950(13), MCL 764.15c / Ready to File /\\\\n/ \\\\u2705 **Motion to Vacate Contempt Order** / MCR 3.606(A), MCL 6",
+      "score": 31.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/43_REMEDIES/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0020",
+      "text": "> C) / Ready to File /\\\\n/ \\\\u2705 **Motion to Terminate PPO (MCL 600.2950)** / MCL 600.2950(13), MCL 764.15c / Ready to File /\\\\n/ \\\\u2705 **Motion to Vacate Contempt Order** / MCR 3.606(A), MCL 600.1701(a) / Ready to File /\\\\n/ \\\\u2705 **Motion to Enforce Parenting Time** / MCL 722.27a(9), MCL 552.1",
+      "score": 31.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/43_REMEDIES/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0021",
+      "text": "> f - Motion to Disqualify Judge (MCR 2.003) - Motion Regarding Parenting Time (MCR 3.206) - Motion for Contempt (MCR 3.606) - Motion to Set Aside PPO (MCR 3.707)  **Michigan Court of Appeals:** - Complaint for Superintending Control (MCR 7.304) - Application for Leave to Appeal (MCR 7.205) - Motion f",
+      "score": 30.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0022",
+      "text": "> [Additional COA precedents in full report]  **Court Rules & Statutes (15):** - MCR 7.204 (appellate brief requirements) - MCR 7.203 (jurisdiction) - MCR 2.003 (disqualification) - MCR 2.302 (discovery) - MCR 2.313 (sanctions) - MCR 2.107 (service) - MCL 722.23 (custody factors) - Const 1963, art 1,",
+      "score": 30.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0023",
+      "text": "> of Parties - **MCR 2.206** — Permissive Joinder of Parties - **MCR 2.207** — Misjoinder and Nonjoinder of Parties - **MCR 2.209** — Intervention - **MCR 2.221** — Motion for Change of Venue - **MCR 2.222** — Change of Venue; Venue Proper - **MCR 2.223** — Change of Venue; Venue Improper - **MCR 2.22",
+      "score": 30.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0024",
+      "text": "> Nonjoinder of Parties - **MCR 2.209** — Intervention - **MCR 2.221** — Motion for Change of Venue - **MCR 2.222** — Change of Venue; Venue Proper - **MCR 2.223** — Change of Venue; Venue Improper - **MCR 2.224** — Change of Venue in Tort Actions - **MCR 2.225** — Joinder of Party to Control Venue -",
+      "score": 30.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0025",
+      "text": "> **MCR 2.206** — Permissive Joinder of Parties - **MCR 2.207** — Misjoinder and Nonjoinder of Parties - **MCR 2.209** — Intervention - **MCR 2.221** — Motion for Change of Venue - **MCR 2.222** — Change of Venue; Venue Proper - **MCR 2.223** — Change of Venue; Venue Improper - **MCR 2.224** — Change",
+      "score": 30.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0026",
+      "text": "> ION ORDERS (PPO) — CORE FILINGS - **Petition for PPO** — MCR 3.700 et seq.; MCL 600.2950 / 600.2950a - **Motion to Modify/Terminate** — MCR 3.707 - **Motion for Contempt / Show Cause** — MCR 3.708  ## 29) CONTEMPT (GENERAL) - **OSC / Show Cause** — MCR 3.606 - **Relief from Order/Judgment** — MCR 2.",
+      "score": 30.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0027",
+      "text": "> 19 (Motion Practice) - MCR 3.204 (Temporary Orders) - MCR 3.205 (Jurisdiction) - MCR 3.206 (Pleadings) - MCR 3.209 (Custody Proceedings) - MCR 3.210 (Friend of Court)  **Michigan Statutes to Review:** - MCL 722.1201 et seq. (UCCJEA - full act) - MCL 722.21 et seq. (Child Custody Act) - MCL 722.27 (B",
+      "score": 30.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/46_FOC/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0028",
+      "text": "> general motions practice - Emergency Motion (MCR 3.207) - ex parte relief - Motion to Disqualify Judge (MCR 2.003) - Motion Regarding Parenting Time (MCR 3.206) - Motion for Contempt (MCR 3.606) - Motion to Set Aside PPO (MCR 3.707)  **Michigan Court of Appeals:** - Complaint for Superintending Cont",
+      "score": 28.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0029",
+      "text": "> 2.119 - Motion Practice 31. MCR 2.302 - General Rules Governing Discovery 32. MCR 2.313 - Discovery Sanctions 33. MCR 2.401 - Pretrial Procedures 34. MCR 2.403 - Case Evaluation 35. MCR 2.613 - Limitations on Corrections of Error 36. MCR 3.206 - Pleading 37. MCR 3.211 - Preliminary Hearing 38. MCR 5",
+      "score": 28.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0030",
+      "text": "> der of Parties - **MCR 2.207** — Misjoinder and Nonjoinder of Parties - **MCR 2.209** — Intervention - **MCR 2.221** — Motion for Change of Venue - **MCR 2.222** — Change of Venue; Venue Proper - **MCR 2.223** — Change of Venue; Venue Improper - **MCR 2.224** — Change of Venue in Tort Actions - **MC",
+      "score": 28.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0031",
+      "text": "> Judgments - **MCR 2.610** — Motion for Judgment Notwithstanding the Verdict - **MCR 2.611** — New Trials; Amendment of Judgments - **MCR 2.612** — Relief From Judgment or Order - **MCR 2.613** — Limitations on Corrections of Error - **MCR 2.614** — Stay of Proceedings to Enforce Judgment - **MCR 2.6",
+      "score": 28.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/23_FRAUD/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0032",
+      "text": "> -------/----------------/---------/\\\\n/ \\\\u2705 **Motion to Modify Parenting Time** / MCL 722.27a(1)(c), MCR 3.210(C) / Ready to File /\\\\n/ \\\\u2705 **Motion to Terminate PPO (MCL 600.2950)** / MCL 600.2950(13), MCL 764.15c / Ready to File /\\\\n/ \\\\u2705 **Motion to Vacate Contempt Order** / MCR 3.606",
+      "score": 28.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0033",
+      "text": "> 50(13), MCL 764.15c / Ready to File /\\\\n/ \\\\u2705 **Motion to Vacate Contempt Order** / MCR 3.606(A), MCL 600.1701(a) / Ready to File /\\\\n/ \\\\u2705 **Motion to Enforce Parenting Time** / MCL 722.27a(9), MCL 552.14 / Ready to File /\\\\n/ \\\\u2705 **Proposed Order for Show Cause Reversal** / MCR 3.606(B",
+      "score": 28.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0034",
+      "text": "> videntiary hearing | | 2024-11-19 | Order Extending PPO | Filed 2024-11-27 | | 2025-01-07 | Order and Certificate PPO | | | 2025-02-24 | Motion/Order Show Cause PPO Violation | | | 2025-02-28 | Order After Hearing PPO Violation | | | 2025-05-20 | Order Requiring $250 Bond Per Motion | KEY VIOLATION",
+      "score": 28.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/24_CONTEMPT/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "financial",
+        "legal",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0035",
+      "text": "> PPO | | | 2025-02-24 | Motion/Order Show Cause PPO Violation | | | 2025-02-28 | Order After Hearing PPO Violation | | | 2025-05-20 | Order Requiring $250 Bond Per Motion | KEY VIOLATION — Chilling effect on access to courts | | 2025-06-12 | Order After Hearing PPO Violation | | | 2025-08-08 | Ex Par",
+      "score": 27.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/32_FINANCIAL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "financial",
+        "legal",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0036",
+      "text": "> ergency motion denied without hearing | 2024-1507-DC | Ground 2, 4 | MCR 2.119, MCL 722.27a | Denial without hearing | Deprivation of due process | | 2025-08-08 | **MAJOR INCIDENT: Ex parte suspension order issued** | 2024-1507-DC | Ground 1, 2, 3, 5, 6, 7 | MCR 3.207, MCL 722.27a(3), MCR 3.210(D) |",
+      "score": 27.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0037",
+      "text": "> y Router (Michigan-only; Pinpoints Pending)  9. Attach **AuthorityCandidate** nodes sufficient for routing (NOT filing):    - custody/parenting time: MCL 722.27a; MCL 722.23; MCL 722.27    - PPO: MCL 600.2950; MCR 3.310    - ex parte / family-division orders: MCR 3.207    - disqualification: MCR 2.0",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0038",
+      "text": "> higan-only; Pinpoints Pending)  9. Attach **AuthorityCandidate** nodes sufficient for routing (NOT filing):    - custody/parenting time: MCL 722.27a; MCL 722.23; MCL 722.27    - PPO: MCL 600.2950; MCR 3.310    - ex parte / family-division orders: MCR 3.207    - disqualification: MCR 2.003    - origi",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0039",
+      "text": "> Pinpoints Pending)  9. Attach **AuthorityCandidate** nodes sufficient for routing (NOT filing):    - custody/parenting time: MCL 722.27a; MCL 722.23; MCL 722.27    - PPO: MCL 600.2950; MCR 3.310    - ex parte / family-division orders: MCR 3.207    - disqualification: MCR 2.003    - original actions",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0040",
+      "text": "> . Attach **AuthorityCandidate** nodes sufficient for routing (NOT filing):    - custody/parenting time: MCL 722.27a; MCL 722.23; MCL 722.27    - PPO: MCL 600.2950; MCR 3.310    - ex parte / family-division orders: MCR 3.207    - disqualification: MCR 2.003    - original actions / superintending cont",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0041",
+      "text": "> ts.  ### **Your Case Can Use:**  **Trial Court (14th Circuit, Family Division):** - Motion (MCR 2.119) - general motions practice - Emergency Motion (MCR 3.207) - ex parte relief - Motion to Disqualify Judge (MCR 2.003) - Motion Regarding Parenting Time (MCR 3.206) - Motion for Contempt (MCR 3.606)",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0042",
+      "text": "> illiams, 286 Mich App 253 - [Additional COA precedents in full report]  **Court Rules & Statutes (15):** - MCR 7.204 (appellate brief requirements) - MCR 7.203 (jurisdiction) - MCR 2.003 (disqualification) - MCR 2.302 (discovery) - MCR 2.313 (sanctions) - MCR 2.107 (service) - MCL 722.23 (custody fa",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "caselaw",
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0043",
+      "text": "> tive custody)  **Tier 3 - Court Rules & Statutes (Mandatory Authority):** - MCR 7.204 (appellate brief requirements) - MCR 2.003 (disqualification) - MCR 2.302 (discovery obligations) - MCR 2.313 (discovery sanctions) - MCR 2.107 (service) - MCL 722.23 (child custody factors) - Const 1963, art 1, §",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0044",
+      "text": "> s & Statutes (Mandatory Authority):** - MCR 7.204 (appellate brief requirements) - MCR 2.003 (disqualification) - MCR 2.302 (discovery obligations) - MCR 2.313 (discovery sanctions) - MCR 2.107 (service) - MCL 722.23 (child custody factors) - Const 1963, art 1, § 17 (due process) - U.S. Const amend",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0045",
+      "text": "> 2.116 - Summary Disposition 30. MCR 2.119 - Motion Practice 31. MCR 2.302 - General Rules Governing Discovery 32. MCR 2.313 - Discovery Sanctions 33. MCR 2.401 - Pretrial Procedures 34. MCR 2.403 - Case Evaluation 35. MCR 2.613 - Limitations on Corrections of Error 36. MCR 3.206 - Pleading 37. MCR 3",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0046",
+      "text": "> MCR 2.205** — Necessary Joinder of Parties - **MCR 2.206** — Permissive Joinder of Parties - **MCR 2.207** — Misjoinder and Nonjoinder of Parties - **MCR 2.209** — Intervention - **MCR 2.221** — Motion for Change of Venue - **MCR 2.222** — Change of Venue; Venue Proper - **MCR 2.223** — Change of Ve",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0047",
+      "text": "> — MCR 2.310 - **Requests for Admission** — MCR 2.312 - **Depositions** — MCR 2.306; MCR 2.305 - **Protective Order / Motion to Compel / Sanctions** — MCR 2.302(C)  ## 25) APPEALS — CORE FILINGS (COA / MSC) - **COA Appeal of Right** — MCR 7.204 + briefing MCR 7.212 - **COA Leave to Appeal** — MCR 7.2",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0048",
+      "text": "> MCR 7.215)   | MSC ALOA (42d after COA decision; MCR 7.305)   | COA superintending control (MCR 7.206)   | PPO hearing request after service/notice (MCR 3.707(A)(3))   | PPO extend motion lead time (MCR 3.707(B)(1))   | Time computation (MCR 1.108)   | COA delayed ALOA (6mo; MCR 7.205(A)(4)(a))   |",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0049",
+      "text": "> horityCandidate** nodes sufficient for routing (NOT filing):    - custody/parenting time: MCL 722.27a; MCL 722.23; MCL 722.27    - PPO: MCL 600.2950; MCR 3.310    - ex parte / family-division orders: MCR 3.207    - disqualification: MCR 2.003    - original actions / superintending control: MCR Chapt",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0050",
+      "text": "> T filing):    - custody/parenting time: MCL 722.27a; MCL 722.23; MCL 722.27    - PPO: MCL 600.2950; MCR 3.310    - ex parte / family-division orders: MCR 3.207    - disqualification: MCR 2.003    - original actions / superintending control: MCR Chapter 7 + COA guide  Outputs: - `01_EXTRACTS/AUTHORIT",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0051",
+      "text": "> e J.G., 875 NW2d 150 (Mich 2016)  **Protective Orders:** - MCL 722.27 (Parenting time restrictions) - MCR 3.211 (Temporary orders) - Custody of J.L., 512 Mich 1 (2013)  **Discovery Violations:** - MCR 2.313(A) (Motion to compel) - MCR 2.313(B) (Sanctions) - MCR 2.303(A) (Expedited discovery) - Dean",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/03_CASELAW/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "caselaw",
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0052",
+      "text": "> RULES 29. MCR 2.116 - Summary Disposition 30. MCR 2.119 - Motion Practice 31. MCR 2.302 - General Rules Governing Discovery 32. MCR 2.313 - Discovery Sanctions 33. MCR 2.401 - Pretrial Procedures 34. MCR 2.403 - Case Evaluation 35. MCR 2.613 - Limitations on Corrections of Error 36. MCR 3.206 - Plea",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/24_CONTEMPT/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0053",
+      "text": "> ** nodes sufficient for routing (NOT filing):    - custody/parenting time: MCL 722.27a; MCL 722.23; MCL 722.27    - PPO: MCL 600.2950; MCR 3.310    - ex parte / family-division orders: MCR 3.207    - disqualification: MCR 2.003    - original actions / superintending control: MCR Chapter 7 + COA guid",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/25_VIOLATIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0054",
+      "text": "> Disposition 30. MCR 2.119 - Motion Practice 31. MCR 2.302 - General Rules Governing Discovery 32. MCR 2.313 - Discovery Sanctions 33. MCR 2.401 - Pretrial Procedures 34. MCR 2.403 - Case Evaluation 35. MCR 2.613 - Limitations on Corrections of Error 36. MCR 3.206 - Pleading 37. MCR 3.211 - Prelimina",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/26_HEARINGS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0055",
+      "text": "> R 3.207) - ex parte relief - Motion to Disqualify Judge (MCR 2.003) - Motion Regarding Parenting Time (MCR 3.206) - Motion for Contempt (MCR 3.606) - Motion to Set Aside PPO (MCR 3.707)  **Michigan Court of Appeals:** - Complaint for Superintending Control (MCR 7.304) - Application for Leave to Appe",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0056",
+      "text": "> 01-07 | Order and Certificate PPO | | | 2025-02-24 | Motion/Order Show Cause PPO Violation | | | 2025-02-28 | Order After Hearing PPO Violation | | | 2025-05-20 | Order Requiring $250 Bond Per Motion | KEY VIOLATION — Chilling effect on access to courts | | 2025-06-12 | Order After Hearing PPO Viola",
+      "score": 27.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "financial",
+        "legal",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0057",
+      "text": "> ing | | 2024-11-19 | Order Extending PPO | Filed 2024-11-27 | | 2025-01-07 | Order and Certificate PPO | | | 2025-02-24 | Motion/Order Show Cause PPO Violation | | | 2025-02-28 | Order After Hearing PPO Violation | | | 2025-05-20 | Order Requiring $250 Bond Per Motion | KEY VIOLATION — Chilling effe",
+      "score": 26.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/25_VIOLATIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "financial",
+        "legal",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0058",
+      "text": "> Hearing Transcript | Key evidentiary hearing | | 2024-11-19 | Order Extending PPO | Filed 2024-11-27 | | 2025-01-07 | Order and Certificate PPO | | | 2025-02-24 | Motion/Order Show Cause PPO Violation | | | 2025-02-28 | Order After Hearing PPO Violation | | | 2025-05-20 | Order Requiring $250 Bond P",
+      "score": 26.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "financial",
+        "legal",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0059",
+      "text": "> 19 | Order Extending PPO | Filed 2024-11-27 | | 2025-01-07 | Order and Certificate PPO | | | 2025-02-24 | Motion/Order Show Cause PPO Violation | | | 2025-02-28 | Order After Hearing PPO Violation | | | 2025-05-20 | Order Requiring $250 Bond Per Motion | KEY VIOLATION — Chilling effect on access to",
+      "score": 26.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "financial",
+        "legal",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0060",
+      "text": "> 01 | Father files motion for stay pending appeal | 2024-1507-DC | Ground 4 | MCR 2.119, MCR 7.101 | Motion filed | Attempt to preserve status quo | | 2026-01-10 | Stay motion denied without hearing | 2024-1507-DC | Ground 2, 4 | MCR 2.119, MCL 722.27a | Denial without hearing | Deprivation continues",
+      "score": 26.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0061",
+      "text": "[MCL 722.27] ...for routing (NOT filing):    - custody/parenting time: MCL 722.27a; MCL 722.23; MCL 722.27    - PPO: MCL 600.2950; MCR 3.310    - ex parte / family-division orders: MCR 3...",
+      "score": 25.515,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/01_MCL_JOURNAL.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0062",
+      "text": "> to Compel / Protective Order** (MCR 2.313; MCR 2.302(C)) - **Discovery Sanctions** (MCR 2.313)  ---  ## 25) CONTEMPT / SHOW CAUSE FILINGS (GENERAL) — MCR 3.606 + STATUTORY CONTEMPT POWER  - **Motion / Petition to Show Cause re: Contempt** (MCR 3.606)     - Identify violated order(s)     - Requested",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0063",
+      "text": "> to Compel / Protective Order** (MCR 2.313; MCR 2.302(C)) - **Discovery Sanctions** (MCR 2.313)  ---  ## 25) CONTEMPT / SHOW CAUSE FILINGS (GENERAL) — MCR 3.606 + STATUTORY CONTEMPT POWER  - **Motion / Petition to Show Cause re: Contempt** (MCR 3.606)   - Identify violated order(s)   - Requested sanc",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0064",
+      "text": "> ble (MCR 2.119(A)(3))  #### Hearing Procedure Violations - ❌ No timely hearing after ex parte order (MCR 2.119(C)(4)) - ❌ No opportunity for hearing (MCR 2.119(C)(5))  #### Service Failures - ❌ Improper service (MCR 2.603 violations) - ❌ No proof of service (MCR 2.119(C)(6))  **RECOMMENDED FILING:**",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0065",
+      "text": "> t or to Strike Pleadings - **MCR 2.116** — Summary Disposition - **MCR 2.117** — Appearances - **MCR 2.118** — Amended and Supplemental Pleadings - **MCR 2.119** — Motion Practice - **MCR 2.201** — Parties Plaintiff and Defendant; Capacity - **MCR 2.202** — Substitution of Parties - **MCR 2.203** —",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0066",
+      "text": "> MCR 2.305 - **Protective Order / Motion to Compel / Sanctions** — MCR 2.302(C)  ## 25) APPEALS — CORE FILINGS (COA / MSC) - **COA Appeal of Right** — MCR 7.204 + briefing MCR 7.212 - **COA Leave to Appeal** — MCR 7.205 - **Stay Pending Appeal** — MCR 7.209 - **MSC Leave to Appeal** — MCR 7.305 - **R",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0067",
+      "text": "> lment** — MCR 3.201; motions MCR 3.206 - **Custody / Parenting Time Motion** — MCR 3.206; MCL 722.21 et seq. - **Show Cause / Contempt (domestic)** — MCR 3.606 - **Support / Arrearage / Income Withholding** — MCR 3.206 + support statutes  ## 28) PERSONAL PROTECTION ORDERS (PPO) — CORE FILINGS - **Pe",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0068",
+      "text": "> RSONAL PROTECTION ORDERS (PPO) — CORE FILINGS - **Petition for PPO** — MCR 3.700 et seq.; MCL 600.2950 / 600.2950a - **Motion to Modify/Terminate** — MCR 3.707 - **Motion for Contempt / Show Cause** — MCR 3.708  ## 29) CONTEMPT (GENERAL) - **OSC / Show Cause** — MCR 3.606 - **Relief from Order/Judgm",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0069",
+      "text": "> dures; forms: FOC)* - **PPO** — Petition for PPO / motion to modify/terminate/extend *(anchor: MCR 3 (PPO rules); forms: CC / MC)* - **PPO/Family** — Show cause / contempt for alleged PPO violation (civil contempt procedure where applicable) *(anchor: MCR 3 + MCR 6 (if criminal contempt); forms: MC",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/24_CONTEMPT/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0070",
+      "text": "> | MCR 2.119 | — | 77 | 137 | Motion practice | | MCR 3.210 | — | 65 | 100 | Custody/parenting time | | MCR 3.708 | — | — | 133 | Personal protection orders | | MCR 8.119 | — | — | 206 | Court records | | MCR 2.302 | — | — | 111 | Discovery | | MCR 2.107 | — | — | 122 | Service of process | | MCR 7.2",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/27_ORDERS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0071",
+      "text": "> l) - Motion to Set Aside Ex Parte Order (MCR 2.612) - Motion to Restore Parenting Time (MCR 3.207) - Motion to Disqualify Judge McNeill (MCR 2.003) - Motion to Vacate Bond Requirement - Motion for Contempt against Mother (MCR 3.208)  ### Forum 2: Michigan Court of Appeals - Application for Leave to",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0072",
+      "text": "> tion to Restore PT | MCL 722.27(1)(c), MCR 3.207 | EMERGENCY | Draft ready | | Motion to Set Aside PPO | MCR 2.612 (fraud) | Week 1 | Draft ready | | Motion to Compel Discovery | MCR 2.313 | Week 2 | 383 violations documented | | Civil Contempt Motion | MCL 600.1711 | Week 2 | Evidence compiled |  #",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0073",
+      "text": "> T | MCL 722.27(1)(c), MCR 3.207 | EMERGENCY | Draft ready | | Motion to Set Aside PPO | MCR 2.612 (fraud) | Week 1 | Draft ready | | Motion to Compel Discovery | MCR 2.313 | Week 2 | 383 violations documented | | Civil Contempt Motion | MCL 600.1711 | Week 2 | Evidence compiled |  ### B. Michigan Co",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/29_DISCOVERY/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0074",
+      "text": "> ction to FOC recommendation; hearing request *(anchor: MCR 3 + FOC procedures; forms: FOC)* - **PPO** — Petition for PPO / motion to modify/terminate/extend *(anchor: MCR 3 (PPO rules); forms: CC / MC)* - **PPO/Family** — Show cause / contempt for alleged PPO violation (civil contempt procedure wher",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/30_EVIDENCE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0075",
+      "text": "> rvice/procedural issues | | 2024-10-30 | PPO Hearing Transcript | Key evidentiary hearing | | 2024-11-19 | Order Extending PPO | Filed 2024-11-27 | | 2025-01-07 | Order and Certificate PPO | | | 2025-02-24 | Motion/Order Show Cause PPO Violation | | | 2025-02-28 | Order After Hearing PPO Violation |",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "legal",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0076",
+      "text": "> ry Judgments - **MCR 2.610** — Motion for Judgment Notwithstanding the Verdict - **MCR 2.611** — New Trials; Amendment of Judgments - **MCR 2.612** — Relief From Judgment or Order - **MCR 2.613** — Limitations on Corrections of Error - **MCR 2.614** — Stay of Proceedings to Enforce Judgment - **MCR",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/43_REMEDIES/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0077",
+      "text": "> t** — Objection to FOC recommendation; hearing request *(anchor: MCR 3 + FOC procedures; forms: FOC)* - **PPO** — Petition for PPO / motion to modify/terminate/extend *(anchor: MCR 3 (PPO rules); forms: CC / MC)* - **PPO/Family** — Show cause / contempt for alleged PPO violation (civil contempt proc",
+      "score": 25.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/43_REMEDIES/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0078",
+      "text": "[MCR 6.106] ...Rev. 9/22 MCL 600.1711(2), MCL 764.3(4), MCL 764.9e, MCR 3.606, MCR 6.103(A),  MCR 6.106(I), MCR 6.615(B) Page 1 of 2 Distribute form to: Police Court Plaintiff Motion,...",
+      "score": 25.11,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0079",
+      "text": "> | Order After Hearing PPO Violation | | | 2025-05-20 | Order Requiring $250 Bond Per Motion | KEY VIOLATION — Chilling effect on access to courts | | 2025-06-12 | Order After Hearing PPO Violation | | | 2025-08-08 | Ex Parte Motion Suspend Parenting Time | CRITICAL — No notice, no hearing | | 2025-0",
+      "score": 25.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "financial",
+        "legal",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0080",
+      "text": "> | 2025-11-15 | Father files motion to reconsider contempt order | 2024-1507-DC | Ground 4 | MCR 2.119 | Motion filed | Attempt to challenge order | | 2025-11-20 | Reconsideration motion denied without hearing | 2024-1507-DC | Ground 2, 4 | MCR 2.119, MCL 722.27a | Denial without hearing | Deprivatio",
+      "score": 25.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0081",
+      "text": "> ied without hearing | 2024-1507-DC | Ground 2, 4 | MCR 2.119, MCL 722.27a | Denial without hearing | Deprivation continues | | 2026-01 | Father files motion for stay pending appeal | 2024-1507-DC | Ground 4 | MCR 2.119, MCR 7.101 | Motion filed | Attempt to preserve status quo | | 2026-01-10 | Stay",
+      "score": 24.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0082",
+      "text": "> otion to Vacate Contempt Order** / MCR 3.606(A), MCL 600.1701(a) / Ready to File /\\\\n/ \\\\u2705 **Motion to Enforce Parenting Time** / MCL 722.27a(9), MCL 552.14 / Ready to File /\\\\n/ \\\\u2705 **Proposed Order for Show Cause Reversal** / MCR 3.606(B) / Generated /\\\\n/ \\\\u2705 **Affidavit of Procedural",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0083",
+      "text": "> ON) — CORE FILINGS - **Divorce / Separate Maintenance / Annulment** — MCR 3.201; motions MCR 3.206 - **Custody / Parenting Time Motion** — MCR 3.206; MCL 722.21 et seq. - **Show Cause / Contempt (domestic)** — MCR 3.606 - **Support / Arrearage / Income Withholding** — MCR 3.206 + support statutes  #",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0084",
+      "text": "> come Withholding** — MCR 3.206 + support statutes  ## 28) PERSONAL PROTECTION ORDERS (PPO) — CORE FILINGS - **Petition for PPO** — MCR 3.700 et seq.; MCL 600.2950 / 600.2950a - **Motion to Modify/Terminate** — MCR 3.707 - **Motion for Contempt / Show Cause** — MCR 3.708  ## 29) CONTEMPT (GENERAL) -",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0085",
+      "text": "> * (MCR 2.306–2.308)   - Notice of deposition   - Subpoena for deposition (MCR 2.305 / 2.506 as applicable) - **Motion to Compel / Protective Order** (MCR 2.313; MCR 2.302(C)) - **Discovery Sanctions** (MCR 2.313)  ---  ## 25) CONTEMPT / SHOW CAUSE FILINGS (GENERAL) — MCR 3.606 + STATUTORY CONTEMPT P",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0086",
+      "text": "> #### MICHIGAN COURT RULES 29. MCR 2.116 - Summary Disposition 30. MCR 2.119 - Motion Practice 31. MCR 2.302 - General Rules Governing Discovery 32. MCR 2.313 - Discovery Sanctions 33. MCR 2.401 - Pretrial Procedures 34. MCR 2.403 - Case Evaluation 35. MCR 2.613 - Limitations on Corrections of Error",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0087",
+      "text": "> 27A(3) - MCL 722.27A,\"USTODIAL - MCL 750.122**  - MCR 2.003(C)(1) - Disqualification of judge - MCR 2.119 - Motion practice and notice requirements - MCR 3.206 - Parenting time and custody procedures - MCR 3.708 - Ex parte orders in domestic relations  ---  ## II. STATEMENT OF VERIFIED FACTS  The fo",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0088",
+      "text": "> fying of Documents - **MCR 2.115** — Motion to Correct or to Strike Pleadings - **MCR 2.116** — Summary Disposition - **MCR 2.117** — Appearances - **MCR 2.118** — Amended and Supplemental Pleadings - **MCR 2.119** — Motion Practice - **MCR 2.201** — Parties Plaintiff and Defendant; Capacity - **MCR",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0089",
+      "text": "> ross-Claims - **MCR 2.204** — Third-Party Practice - **MCR 2.205** — Necessary Joinder of Parties - **MCR 2.206** — Permissive Joinder of Parties - **MCR 2.207** — Misjoinder and Nonjoinder of Parties - **MCR 2.209** — Intervention - **MCR 2.221** — Motion for Change of Venue - **MCR 2.222** — Chang",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0090",
+      "text": "> R 3.305 - **Quo Warranto** — MCR 3.306  ## 27) DOMESTIC RELATIONS (FAMILY DIVISION) — CORE FILINGS - **Divorce / Separate Maintenance / Annulment** — MCR 3.201; motions MCR 3.206 - **Custody / Parenting Time Motion** — MCR 3.206; MCL 722.21 et seq. - **Show Cause / Contempt (domestic)** — MCR 3.606",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0091",
+      "text": "> ranto** — MCR 3.306  ## 27) DOMESTIC RELATIONS (FAMILY DIVISION) — CORE FILINGS - **Divorce / Separate Maintenance / Annulment** — MCR 3.201; motions MCR 3.206 - **Custody / Parenting Time Motion** — MCR 3.206; MCL 722.21 et seq. - **Show Cause / Contempt (domestic)** — MCR 3.606 - **Support / Arrea",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0092",
+      "text": "> ---| | MCL 600.1521 | Judge disqualification statute | | MCR 2.003 | Judicial disqualification rule | | MCR 3.203 | Modification motion procedure | | MCR 3.206 | Parenting time order procedure | | MCL 722.27 | Child custody act | | 14th Amendment | Due process guarantee | | *Boddie v. Connecticut*,",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0093",
+      "text": "> on; MCR 7.215)   | COA rehearing (21d after COA decision; MCR 7.215)   | MSC ALOA (42d after COA decision; MCR 7.305)   | COA superintending control (MCR 7.206)   | PPO hearing request after service/notice (MCR 3.707(A)(3))   | PPO extend motion lead time (MCR 3.707(B)(1))   | Time computation (MCR",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0094",
+      "text": "> MCR 7.305)   | COA superintending control (MCR 7.206)   | PPO hearing request after service/notice (MCR 3.707(A)(3))   | PPO extend motion lead time (MCR 3.707(B)(1))   | Time computation (MCR 1.108)   | COA delayed ALOA (6mo; MCR 7.205(A)(4)(a))   | COA delayed ALOA after dismissal of claim (21d; M",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0095",
+      "text": "> ol (MCR 7.206)   | PPO hearing request after service/notice (MCR 3.707(A)(3))   | PPO extend motion lead time (MCR 3.707(B)(1))   | Time computation (MCR 1.108)   | COA delayed ALOA (6mo; MCR 7.205(A)(4)(a))   | COA delayed ALOA after dismissal of claim (21d; MCR 7.205(A)(4)(b))   | Postjudgment-mot",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0096",
+      "text": "> .L., 512 Mich 1 (2013)  **Discovery Violations:** - MCR 2.313(A) (Motion to compel) - MCR 2.313(B) (Sanctions) - MCR 2.303(A) (Expedited discovery) - Dean v Tucker, 182 Mich App 27 (1990) - Vicencio v Ramirez, 211 Mich App 501 (1995) - Barnard Mfg v Kelso, 285 Mich App 362 (2009)  ### A.4 Contact In",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/03_CASELAW/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "caselaw",
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0097",
+      "text": "> sv`  ---  ## D) Authority Router (Michigan-only; Pinpoints Pending)  9. Attach **AuthorityCandidate** nodes sufficient for routing (NOT filing):    - custody/parenting time: MCL 722.27a; MCL 722.23; MCL 722.27    - PPO: MCL 600.2950; MCR 3.310    - ex parte / family-division orders: MCR 3.207    - d",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0098",
+      "text": "> ## D) Authority Router (Michigan-only; Pinpoints Pending)  9. Attach **AuthorityCandidate** nodes sufficient for routing (NOT filing):    - custody/parenting time: MCL 722.27a; MCL 722.23; MCL 722.27    - PPO: MCL 600.2950; MCR 3.310    - ex parte / family-division orders: MCR 3.207    - disqualific",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0099",
+      "text": "> | COA rehearing (21d after COA decision; MCR 7.215)   | MSC ALOA (42d after COA decision; MCR 7.305)   | COA superintending control (MCR 7.206)   | PPO hearing request after service/notice (MCR 3.707(A)(3))   | PPO extend motion lead time (MCR 3.707(B)(1))   | Time computation (MCR 1.108)   | COA de",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/20_PPO/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0100",
+      "text": "> es Motion | | FOC 64 | Motion for Reconsideration | | FOC 65 | Motion - Attorney Fees |  #### Final Orders | Form | Name | |------|------| | FOC 43 | Stipulated Judgment | | FOC 44 | Judgment | | FOC 45 | Default Order | | FOC 46 | Default Judgment | | FOC 47 | Proposed Friend of Court Order | | FOC",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/27_ORDERS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal"
+      ]
+    },
+    {
+      "id": "e0101",
+      "text": "> der (MCR 2.612) - Motion to Restore Parenting Time (MCR 3.207) - Motion to Disqualify Judge McNeill (MCR 2.003) - Motion to Vacate Bond Requirement - Motion for Contempt against Mother (MCR 3.208)  ### Forum 2: Michigan Court of Appeals - Application for Leave to Appeal (MCR 7.205) - Complaint for S",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0102",
+      "text": "> Disqualify Judge | MCR 2.003 | EMERGENCY | Draft ready | | Emergency Motion to Restore PT | MCL 722.27(1)(c), MCR 3.207 | EMERGENCY | Draft ready | | Motion to Set Aside PPO | MCR 2.612 (fraud) | Week 1 | Draft ready | | Motion to Compel Discovery | MCR 2.313 | Week 2 | 383 violations documented | |",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0103",
+      "text": "> pecial Verdicts - **MCR 2.516** — Motion for Directed Verdict - **MCR 2.517** — Findings by Court - **MCR 2.518** — Receipt and Return or Disposal of Exhibits - **MCR 2.601** — Judgments - **MCR 2.602** — Entry of Judgments and Orders - **MCR 2.603** — Default and Default Judgment - **MCR 2.604** —",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/30_EVIDENCE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0104",
+      "text": "> (42d after COA decision; MCR 7.305)   | COA superintending control (MCR 7.206)   | PPO hearing request after service/notice (MCR 3.707(A)(3))   | PPO extend motion lead time (MCR 3.707(B)(1))   | Time computation (MCR 1.108)   | COA delayed ALOA (6mo; MCR 7.205(A)(4)(a))   | COA delayed ALOA after d",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/30_EVIDENCE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0105",
+      "text": "> ge McNeill (MCR 2.003) - Motion to Vacate Bond Requirement - Motion for Contempt against Mother (MCR 3.208)  ### Forum 2: Michigan Court of Appeals - Application for Leave to Appeal (MCR 7.205) - Complaint for Superintending Control (MCR 7.206) - Emergency Motion for Stay (MCR 7.209) - Motion for Im",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/41_APPELLATE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0106",
+      "text": "> decision; MCR 7.215)   | COA rehearing (21d after COA decision; MCR 7.215)   | MSC ALOA (42d after COA decision; MCR 7.305)   | COA superintending control (MCR 7.206)   | PPO hearing request after service/notice (MCR 3.707(A)(3))   | PPO extend motion lead time (MCR 3.707(B)(1))   | Time computation",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/42_EMERGENCY/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0107",
+      "text": "> n to Set Aside Ex Parte Order (MCR 2.612) - Motion to Restore Parenting Time (MCR 3.207) - Motion to Disqualify Judge McNeill (MCR 2.003) - Motion to Vacate Bond Requirement - Motion for Contempt against Mother (MCR 3.208)  ### Forum 2: Michigan Court of Appeals - Application for Leave to Appeal (MC",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/43_REMEDIES/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0108",
+      "text": "> - **MCR 2.603** — Default and Default Judgment - **MCR 2.604** — Judgment in Actions Involving Multiple Claims or Multiple Parties - **MCR 2.605** — Declaratory Judgments - **MCR 2.610** — Motion for Judgment Notwithstanding the Verdict - **MCR 2.611** — New Trials; Amendment of Judgments - **MCR 2.",
+      "score": 24.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/43_REMEDIES/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0109",
+      "text": "[MCR 3.206] ...ief - Motion to Disqualify Judge (MCR 2.003) - Motion Regarding Parenting Time (MCR 3.206) - Motion for Contempt (MCR 3.606) - Motion to Set Aside PPO (MCR 3.707)  **Mic...",
+      "score": 23.8425,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0110",
+      "text": "[MCR 6.106] ..., Rev. 9/22MCL 600.1711(2), MCL 764.3(4), MCL 764.9e, MCR 3.606, MCR 6.103(A),  MCR 6.106(I), MCR 6.615(B)Page 1 of 2Distribute form to:PoliceCourtPlaintiff Motion, Affi...",
+      "score": 23.8425,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0111",
+      "text": "[MCR 2.003] ...- Emergency Motion (MCR 3.207) - ex parte relief - Motion to Disqualify Judge (MCR 2.003) - Motion Regarding Parenting Time (MCR 3.206) - Motion for Contempt (MCR 3.606...",
+      "score": 23.715,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0112",
+      "text": "[MCR 1.109] ...- PPO framework: MCL 600.2950 / 600.2950a; MCR 3.705–3.708. - Motion practice: MCR 1.109, 2.114, 2.119; service MCR 2.107; recusal MCR 2.003; contempt MCR 3.606; appeal...",
+      "score": 23.715,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/02_MCR_JOURNAL.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0113",
+      "text": "> ring $250 Bond Per Motion | KEY VIOLATION — Chilling effect on access to courts | | 2025-06-12 | Order After Hearing PPO Violation | | | 2025-08-08 | Ex Parte Motion Suspend Parenting Time | CRITICAL — No notice, no hearing | | 2025-08-08 | Ex Parte Order Suspending Parenting Time | 50/50 custody to",
+      "score": 23.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/25_VIOLATIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "financial",
+        "legal",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0114",
+      "text": "> | Order Requiring $250 Bond Per Motion | KEY VIOLATION — Chilling effect on access to courts | | 2025-06-12 | Order After Hearing PPO Violation | | | 2025-08-08 | Ex Parte Motion Suspend Parenting Time | CRITICAL — No notice, no hearing | | 2025-08-08 | Ex Parte Order Suspending Parenting Time | 50/",
+      "score": 23.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "financial",
+        "legal",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0115",
+      "text": "> ion granted without hearing | 2024-1507-DC | Ground 2, 4 | MCR 2.119, MCL 722.27a | Denial of opportunity to respond | Deprivation of due process | | 2025-11-15 | Father files motion to reconsider contempt order | 2024-1507-DC | Ground 4 | MCR 2.119 | Motion filed | Attempt to challenge order | | 20",
+      "score": 23.0,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/33_TIMELINE/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "dated",
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0116",
+      "text": "[MCL 722.21] ...MCR 3.201; motions MCR 3.206 - **Custody / Parenting Time Motion** — MCR 3.206; MCL 722.21 et seq. - **Show Cause / Contempt (domestic)** — MCR 3.606 - **Support / Arrear...",
+      "score": 22.68,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/01_MCL_JOURNAL.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0117",
+      "text": "[MCL 722.27] ...idate** nodes sufficient for routing (NOT filing):    - custody/parenting time: MCL 722.27a; MCL 722.23; MCL 722.27    - PPO: MCL 600.2950; MCR 3.310    - ex parte / fami...",
+      "score": 22.68,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/01_MCL_JOURNAL.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0118",
+      "text": "[MCL 722.23] ...sufficient for routing (NOT filing):    - custody/parenting time: MCL 722.27a; MCL 722.23; MCL 722.27    - PPO: MCL 600.2950; MCR 3.310    - ex parte / family-division o...",
+      "score": 22.56,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/01_MCL_JOURNAL.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0119",
+      "text": "> ce module (MCR 1.109 + MC 97 family) - PPO procedure module (MCR 3.701+ subchapter 3.700; MCL 600.2950) - Custody/PT modification/enforcement module (MCL 722.27, 722.27a + relevant MCR chapters) - Judge disqualification/recusal module (MCR 2.003) - Motion practice module (MCR 2.119) - Orders/judgmen",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0120",
+      "text": "> ION TO SUSPEND PLAINTIFF'S PARENTING TIME,ex parte reference lacks date/context,\\\"MCR 3.207(B) (ex parte domestic orders; notice; 14-day objection) | MCL 722.27a(12),(13) (objection/motion to modify ex parte parenting-time order) | MCR 2.003(C) (disqualification where due process risk or bias patter",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/01_MCL/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0121",
+      "text": "> .206) - Motion for Contempt (MCR 3.606) - Motion to Set Aside PPO (MCR 3.707)  **Michigan Court of Appeals:** - Complaint for Superintending Control (MCR 7.304) - Application for Leave to Appeal (MCR 7.205) - Motion for Immediate Consideration (MCR 7.211)  **Michigan Supreme Court:** - Application f",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0122",
+      "text": "> .114 | — | — | 284 | Signatures/verification | | MCR 2.119 | — | 77 | 137 | Motion practice | | MCR 3.210 | — | 65 | 100 | Custody/parenting time | | MCR 3.708 | — | — | 133 | Personal protection orders | | MCR 8.119 | — | — | 206 | Court records | | MCR 2.302 | — | — | 111 | Discovery | | MCR 2.107",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0123",
+      "text": "> 9 | — | 77 | 137 | Motion practice | | MCR 3.210 | — | 65 | 100 | Custody/parenting time | | MCR 3.708 | — | — | 133 | Personal protection orders | | MCR 8.119 | — | — | 206 | Court records | | MCR 2.302 | — | — | 111 | Discovery | | MCR 2.107 | — | — | 122 | Service of process | | MCR 7.206 | — | —",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0124",
+      "text": "> 68 (2009)  ### Michigan Court Rules - MCR 2.116 - Summary Disposition - MCR 2.119 - Motion Practice - MCR 2.302 - General Rules Governing Discovery - MCR 2.313 - Failure to Serve Disclosure or to Cooperate in Discovery - MCR 2.401 - Pretrial Procedures - MCR 2.403 - Case Evaluation - MCR 2.613 - Lim",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0125",
+      "text": "> o timely hearing after ex parte order (MCR 2.119(C)(4)) - ❌ No opportunity for hearing (MCR 2.119(C)(5))  #### Service Failures - ❌ Improper service (MCR 2.603 violations) - ❌ No proof of service (MCR 2.119(C)(6))  **RECOMMENDED FILING:** Motion to Set Aside Ex Parte Orders **TIMELINE:** Draft withi",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0126",
+      "text": "> 27(1)(c), MCR 3.207 | EMERGENCY | Draft ready | | Motion to Set Aside PPO | MCR 2.612 (fraud) | Week 1 | Draft ready | | Motion to Compel Discovery | MCR 2.313 | Week 2 | 383 violations documented | | Civil Contempt Motion | MCL 600.1711 | Week 2 | Evidence compiled |  ### B. Michigan Court of Appea",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0127",
+      "text": "> *MCL 600.2950a** (nondomestic PPO) — see benchbook for procedure, service, motions, hearing deadlines.  ### C3) PPO court rules (Family Division) - **MCR 3.705** (ex parte PPO procedure / duration / service mechanics) - **MCR 3.706** (service) - **MCR 3.707** (motion to modify/rescind; hearing timin",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0128",
+      "text": "> e, motions, hearing deadlines.  ### C3) PPO court rules (Family Division) - **MCR 3.705** (ex parte PPO procedure / duration / service mechanics) - **MCR 3.706** (service) - **MCR 3.707** (motion to modify/rescind; hearing timing) - **MCR 3.708** (enforcement / show cause / contempt procedures in PP",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0129",
+      "text": "> nes.  ### C3) PPO court rules (Family Division) - **MCR 3.705** (ex parte PPO procedure / duration / service mechanics) - **MCR 3.706** (service) - **MCR 3.707** (motion to modify/rescind; hearing timing) - **MCR 3.708** (enforcement / show cause / contempt procedures in PPO context) - **Benchbook p",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0130",
+      "text": "> her Documents - **MCR 2.108** — Time - **MCR 2.109** — Security for Costs - **MCR 2.110** — Pleadings - **MCR 2.111** — General Rules of Pleading - **MCR 2.112** — Pleading Special Matters - **MCR 2.113** — Form, Captioning, Signing, and Verifying of Documents - **MCR 2.115** — Motion to Correct or",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0131",
+      "text": "> Captioning, Signing, and Verifying of Documents - **MCR 2.115** — Motion to Correct or to Strike Pleadings - **MCR 2.116** — Summary Disposition - **MCR 2.117** — Appearances - **MCR 2.118** — Amended and Supplemental Pleadings - **MCR 2.119** — Motion Practice - **MCR 2.201** — Parties Plaintiff an",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0132",
+      "text": "> .116** — Summary Disposition - **MCR 2.117** — Appearances - **MCR 2.118** — Amended and Supplemental Pleadings - **MCR 2.119** — Motion Practice - **MCR 2.201** — Parties Plaintiff and Defendant; Capacity - **MCR 2.202** — Substitution of Parties - **MCR 2.203** — Joinder of Claims, Counterclaims,",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0133",
+      "text": "> **MCR 2.118** — Amended and Supplemental Pleadings - **MCR 2.119** — Motion Practice - **MCR 2.201** — Parties Plaintiff and Defendant; Capacity - **MCR 2.202** — Substitution of Parties - **MCR 2.203** — Joinder of Claims, Counterclaims, and Cross-Claims - **MCR 2.204** — Third-Party Practice - **M",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0134",
+      "text": "> Pleadings - **MCR 2.119** — Motion Practice - **MCR 2.201** — Parties Plaintiff and Defendant; Capacity - **MCR 2.202** — Substitution of Parties - **MCR 2.203** — Joinder of Claims, Counterclaims, and Cross-Claims - **MCR 2.204** — Third-Party Practice - **MCR 2.205** — Necessary Joinder of Parties",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0135",
+      "text": "> ive Order / Motion to Compel / Sanctions** — MCR 2.302(C)  ## 25) APPEALS — CORE FILINGS (COA / MSC) - **COA Appeal of Right** — MCR 7.204 + briefing MCR 7.212 - **COA Leave to Appeal** — MCR 7.205 - **Stay Pending Appeal** — MCR 7.209 - **MSC Leave to Appeal** — MCR 7.305 - **Reconsideration (COA/M",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0136",
+      "text": "> rt / Arrearage / Income Withholding** — MCR 3.206 + support statutes  ## 28) PERSONAL PROTECTION ORDERS (PPO) — CORE FILINGS - **Petition for PPO** — MCR 3.700 et seq.; MCL 600.2950 / 600.2950a - **Motion to Modify/Terminate** — MCR 3.707 - **Motion for Contempt / Show Cause** — MCR 3.708  ## 29) CO",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0137",
+      "text": "> after service/notice (MCR 3.707(A)(3))   | PPO extend motion lead time (MCR 3.707(B)(1))   | Time computation (MCR 1.108)   | COA delayed ALOA (6mo; MCR 7.205(A)(4)(a))   | COA delayed ALOA after dismissal of claim (21d; MCR 7.205(A)(4)(b))   | Postjudgment-motion tolling gate (MCR 7.204(A)(1)(d) /",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0138",
+      "text": "> ected; MCR 7.211(B)(2) & (C)(6)) | MSC motion submission (>=14d after filed; MCR 7.311(B)) | MSC motion answer timing (any time before order entered; MCR 7.311(C)) | MSC rehearing motion deadline (21d after opinion filed; MCR 7.311(F)(1)) | MSC rehearing answer deadline (14d after served; MCR 7.311(",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/02_MCR/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0139",
+      "text": "> 3 (disqualification) - MCR 2.302 (discovery) - MCR 2.313 (sanctions) - MCR 2.107 (service) - MCL 722.23 (custody factors) - Const 1963, art 1, § 17 - U.S. Const amend XIV  ---  ## NEXT STEPS FOR FILING  ### Immediate Actions (1-2 days)  1. **Attorney Review**    - Review enhanced document for accura",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/06_CONSTITUTION/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcl",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0140",
+      "text": "> electronic filing | | MCR 2.114 | — | — | 284 | Signatures/verification | | MCR 2.119 | — | 77 | 137 | Motion practice | | MCR 3.210 | — | 65 | 100 | Custody/parenting time | | MCR 3.708 | — | — | 133 | Personal protection orders | | MCR 8.119 | — | — | 206 | Court records | | MCR 2.302 | — | — | 11",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0141",
+      "text": "> ic filing | | MCR 2.114 | — | — | 284 | Signatures/verification | | MCR 2.119 | — | 77 | 137 | Motion practice | | MCR 3.210 | — | 65 | 100 | Custody/parenting time | | MCR 3.708 | — | — | 133 | Personal protection orders | | MCR 8.119 | — | — | 206 | Court records | | MCR 2.302 | — | — | 111 | Disc",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0142",
+      "text": "> -------| | FOC 2 | Motion Cover Page | Initial motion filing | | FOC 4 | Motion to Appear Telephonically | Remote appearance | | FOC 6 | Motion About Parenting Time | Parenting time changes | | FOC 10 | Counterclaim Cover Page | Counter-motion | | FOC 12 | Motion to Stay | Pause proceedings | | FOC",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/19_CUSTODY/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal"
+      ]
+    },
+    {
+      "id": "e0143",
+      "text": "> tures/verification | | MCR 2.119 | — | 77 | 137 | Motion practice | | MCR 3.210 | — | 65 | 100 | Custody/parenting time | | MCR 3.708 | — | — | 133 | Personal protection orders | | MCR 8.119 | — | — | 206 | Court records | | MCR 2.302 | — | — | 111 | Discovery | | MCR 2.107 | — | — | 122 | Service o",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/20_PPO/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0144",
+      "text": "> **MCR 6.505** — Right to Legal Assistance - **MCR 6.506** — Response by Prosecutor - **MCR 6.507** — Expansion of Record - **MCR 6.508** — Procedure; Evidentiary Hearing; Determination - **MCR 6.509** — Appeal - **MCR 6.610** — Criminal Procedure Generally - **MCR 6.615** — Misdemeanor Cases - **MCR",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/26_HEARINGS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0145",
+      "text": "> | FOC 64 | Motion for Reconsideration | | FOC 65 | Motion - Attorney Fees |  #### Final Orders | Form | Name | |------|------| | FOC 43 | Stipulated Judgment | | FOC 44 | Judgment | | FOC 45 | Default Order | | FOC 46 | Default Judgment | | FOC 47 | Proposed Friend of Court Order | | FOC 48 | Friend",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/27_ORDERS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal"
+      ]
+    },
+    {
+      "id": "e0146",
+      "text": "> Commission - **MCR 9.242** — Extension of Time - **MCR 9.243** — Hearing Additional Evidence - **MCR 9.244** — Commission Decision - **MCR 9.245** — Consent Agreements - **MCR 9.250** — Filing and Service of Documents after Commission’s Decision - **MCR 9.251** — Review by Supreme Court - **MCR 9.25",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/27_ORDERS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr"
+      ]
+    },
+    {
+      "id": "e0147",
+      "text": "> ed PPO Order Form submitted with petition in e-filing courts * Ex Parte PPO Request (where authorized) * Motion to Modify / Rescind / Terminate PPO * Motion for Hearing on PPO (respondent hearing request) * Motion to Enforce PPO / Show Cause / Contempt (where authorized by rule/statute) * Proof of S",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0148",
+      "text": "> ed PPO Order Form submitted with petition in e‑filing courts - Ex Parte PPO Request (where authorized) - Motion to Modify / Rescind / Terminate PPO - Motion for Hearing on PPO (respondent hearing request) - Motion to Enforce PPO / Show Cause / Contempt (where authorized by rule/statute) - Proof of S",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0149",
+      "text": "> ---  ## 10. MULTI-COURT FILING STRATEGY (5 Forums)  ### Forum 1: 14th Circuit Court (Trial Level) - Motion to Set Aside Ex Parte Order (MCR 2.612) - Motion to Restore Parenting Time (MCR 3.207) - Motion to Disqualify Judge McNeill (MCR 2.003) - Motion to Vacate Bond Requirement - Motion for Contempt",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "person",
+        "violation"
+      ]
+    },
+    {
+      "id": "e0150",
+      "text": "> PPO court rules (Family Division) - **MCR 3.705** (ex parte PPO procedure / duration / service mechanics) - **MCR 3.706** (service) - **MCR 3.707** (motion to modify/rescind; hearing timing) - **MCR 3.708** (enforcement / show cause / contempt procedures in PPO context) - **Benchbook procedure guide",
+      "score": 22.5,
+      "source": "C:/Users/andre/Desktop/AGENT_JOURNALS/28_MOTIONS/journal_md.md",
+      "brain": "28_motions",
+      "tags": [
+        "legal",
+        "mcr",
+        "violation"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "e0001",
+      "to": "MCL 552.",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 552.603.",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 552.605",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 552.626",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 552.644",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 600.1344",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 600.5805",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCL 750.122",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0001",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 552.644",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 600.1344",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 600.5805",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0002",
+      "to": "MCL 750.122",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0002",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0002",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0002",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0003",
+      "to": "MCL 600.1344",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0003",
+      "to": "MCL 600.5805",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0003",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0003",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0003",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0003",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0003",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0003",
+      "to": "MCL 750.122",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0003",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0003",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0003",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0004",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0004",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0004",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0004",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0004",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0004",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0005",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0005",
+      "to": "MCR 7.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0005",
+      "to": "MCR 7.203",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0005",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0005",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0005",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0005",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0005",
+      "to": "Const 1963",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0005",
+      "to": "art 1",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0005",
+      "to": "amend XIV",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0006",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0006",
+      "to": "MCR 7.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0006",
+      "to": "MCR 7.203",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0006",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0006",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0006",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0006",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0006",
+      "to": "Const 1963",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0006",
+      "to": "art 1",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0006",
+      "to": "amend XIV",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0007",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0007",
+      "to": "MCR 7.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0007",
+      "to": "MCR 7.203",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0007",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0007",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0007",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0007",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0007",
+      "to": "Const 1963",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0007",
+      "to": "art 1",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0007",
+      "to": "amend XIV",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0008",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0008",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0008",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0008",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0008",
+      "to": "MCL 750.122",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0008",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0008",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0008",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0008",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0009",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0009",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0009",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0009",
+      "to": "MCL 764.15",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0009",
+      "to": "MCL 600.1701",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0009",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0009",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0010",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0010",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0010",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0010",
+      "to": "MCL 764.15",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0010",
+      "to": "MCL 600.1701",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0010",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0010",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0011",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0011",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0011",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0011",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0011",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0011",
+      "to": "MCR 7.304",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0012",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0012",
+      "to": "MCR 7.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0012",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0012",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0012",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0012",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0012",
+      "to": "Const 1963",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0012",
+      "to": "art 1",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0012",
+      "to": "amend XIV",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0013",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0013",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0013",
+      "to": "MCL 764.15",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0013",
+      "to": "MCL 600.1701",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0013",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0013",
+      "to": "MCL 552.14",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0013",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0014",
+      "to": "MCR 2.221",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0014",
+      "to": "MCR 2.222",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0014",
+      "to": "MCR 2.223",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0014",
+      "to": "MCR 2.224",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0014",
+      "to": "MCR 2.225",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0014",
+      "to": "MCR 2.226",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0015",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0015",
+      "to": "MCR 3.700",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0015",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0015",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0015",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0015",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0015",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0016",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0016",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0016",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0016",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0016",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0016",
+      "to": "MCR 7.304",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0017",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0017",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0017",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0017",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0017",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0017",
+      "to": "MCR 7.30",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0018",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0018",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0018",
+      "to": "MCL 764.15",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0018",
+      "to": "MCL 600.1701",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0018",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0018",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0018",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0019",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0019",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0019",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0019",
+      "to": "MCL 764.15",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0019",
+      "to": "MCL 6",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0019",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0019",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0020",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0020",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0020",
+      "to": "MCL 764.15",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0020",
+      "to": "MCL 600.1701",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0020",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0020",
+      "to": "MCL 552.1",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0020",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0021",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0021",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0021",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0021",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0021",
+      "to": "MCR 7.304",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0021",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0022",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0022",
+      "to": "MCR 7.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0022",
+      "to": "MCR 7.203",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0022",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0022",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0022",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0022",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0022",
+      "to": "Const 1963",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0022",
+      "to": "art 1",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0023",
+      "to": "MCR 2.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0023",
+      "to": "MCR 2.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0023",
+      "to": "MCR 2.209",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0023",
+      "to": "MCR 2.221",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0023",
+      "to": "MCR 2.222",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0023",
+      "to": "MCR 2.223",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0023",
+      "to": "MCR 2.22",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0024",
+      "to": "MCR 2.209",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0024",
+      "to": "MCR 2.221",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0024",
+      "to": "MCR 2.222",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0024",
+      "to": "MCR 2.223",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0024",
+      "to": "MCR 2.224",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0024",
+      "to": "MCR 2.225",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0025",
+      "to": "MCR 2.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0025",
+      "to": "MCR 2.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0025",
+      "to": "MCR 2.209",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0025",
+      "to": "MCR 2.221",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0025",
+      "to": "MCR 2.222",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0025",
+      "to": "MCR 2.223",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0025",
+      "to": "MCR 2.224",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0026",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0026",
+      "to": "MCR 3.700",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0026",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0026",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0026",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0026",
+      "to": "MCR 2.",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0027",
+      "to": "MCL 722.1201",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0027",
+      "to": "MCL 722.21",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0027",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0027",
+      "to": "MCR 3.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0027",
+      "to": "MCR 3.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0027",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0027",
+      "to": "MCR 3.209",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0027",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0028",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0028",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0028",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0028",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0028",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0029",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0029",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0029",
+      "to": "MCR 2.401",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0029",
+      "to": "MCR 2.403",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0029",
+      "to": "MCR 2.613",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0029",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0029",
+      "to": "MCR 3.211",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0029",
+      "to": "MCR 5",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0030",
+      "to": "MCR 2.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0030",
+      "to": "MCR 2.209",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0030",
+      "to": "MCR 2.221",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0030",
+      "to": "MCR 2.222",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0030",
+      "to": "MCR 2.223",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0030",
+      "to": "MCR 2.224",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0031",
+      "to": "MCR 2.610",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0031",
+      "to": "MCR 2.611",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0031",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0031",
+      "to": "MCR 2.613",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0031",
+      "to": "MCR 2.614",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0031",
+      "to": "MCR 2.6",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0032",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0032",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0032",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0032",
+      "to": "MCL 764.15",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0032",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0032",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0033",
+      "to": "MCL 764.15",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0033",
+      "to": "MCL 600.1701",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0033",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0033",
+      "to": "MCL 552.14",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0033",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0033",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0036",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0036",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0036",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0036",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0036",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0037",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0037",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0037",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0037",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0037",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0037",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0037",
+      "to": "MCR 2.0",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0038",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0038",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0038",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0038",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0038",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0038",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0038",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0039",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0039",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0039",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0039",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0039",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0039",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0039",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0040",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0040",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0040",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0040",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0040",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0040",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0040",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0041",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0041",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0041",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0041",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0041",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0042",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0042",
+      "to": "MCR 7.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0042",
+      "to": "MCR 7.203",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0042",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0042",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0042",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0042",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0042",
+      "to": "286 Mich App 253",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0043",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0043",
+      "to": "MCR 7.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0043",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0043",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0043",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0043",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0043",
+      "to": "Const 1963",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0043",
+      "to": "art 1",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0044",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0044",
+      "to": "MCR 7.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0044",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0044",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0044",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0044",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0044",
+      "to": "Const 1963",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0044",
+      "to": "art 1",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0045",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0045",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0045",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0045",
+      "to": "MCR 2.401",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0045",
+      "to": "MCR 2.403",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0045",
+      "to": "MCR 2.613",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0045",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0045",
+      "to": "MCR 3",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0046",
+      "to": "MCR 2.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0046",
+      "to": "MCR 2.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0046",
+      "to": "MCR 2.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0046",
+      "to": "MCR 2.209",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0046",
+      "to": "MCR 2.221",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0046",
+      "to": "MCR 2.222",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0046",
+      "to": "MCR 2.223",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0047",
+      "to": "MCR 2.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0047",
+      "to": "MCR 2.312",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0047",
+      "to": "MCR 2.306",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0047",
+      "to": "MCR 2.305",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0047",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0047",
+      "to": "MCR 7.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0047",
+      "to": "MCR 7.212",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0047",
+      "to": "MCR 7.2",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0048",
+      "to": "MCR 7.215",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0048",
+      "to": "MCR 7.305",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0048",
+      "to": "MCR 7.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0048",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0048",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0048",
+      "to": "MCR 1.108",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0048",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0049",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0049",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0049",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0049",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0049",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0049",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0049",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0050",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0050",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0050",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0050",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0050",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0050",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0050",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0051",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0051",
+      "to": "MCR 3.211",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0051",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0051",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0051",
+      "to": "MCR 2.303",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0051",
+      "to": "875 NW2d 150",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0051",
+      "to": "512 Mich 1",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0052",
+      "to": "MCR 2.116",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0052",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0052",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0052",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0052",
+      "to": "MCR 2.401",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0052",
+      "to": "MCR 2.403",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0052",
+      "to": "MCR 2.613",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0052",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0053",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0053",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0053",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0053",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0053",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0053",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0053",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0054",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0054",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0054",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0054",
+      "to": "MCR 2.401",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0054",
+      "to": "MCR 2.403",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0054",
+      "to": "MCR 2.613",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0054",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0054",
+      "to": "MCR 3.211",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0055",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0055",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0055",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0055",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0055",
+      "to": "MCR 7.304",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0060",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0060",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0060",
+      "to": "MCR 7.101",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0060",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0061",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0061",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0061",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0061",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0061",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0061",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0061",
+      "to": "MCR 3...",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0062",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0062",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0062",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0062",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0062",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0063",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0063",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0063",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0063",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0063",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0064",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0064",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0064",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0064",
+      "to": "MCR 2.603",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0064",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0065",
+      "to": "MCR 2.116",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0065",
+      "to": "MCR 2.117",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0065",
+      "to": "MCR 2.118",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0065",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0065",
+      "to": "MCR 2.201",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0065",
+      "to": "MCR 2.202",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0065",
+      "to": "MCR 2.203",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0066",
+      "to": "MCR 2.305",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0066",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0066",
+      "to": "MCR 7.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0066",
+      "to": "MCR 7.212",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0066",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0066",
+      "to": "MCR 7.209",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0066",
+      "to": "MCR 7.305",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0067",
+      "to": "MCL 722.21",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0067",
+      "to": "MCR 3.201",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0067",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0067",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0067",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0067",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0068",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0068",
+      "to": "MCR 3.700",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0068",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0068",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0068",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0069",
+      "to": "MCR 3",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0069",
+      "to": "MCR 3",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0069",
+      "to": "MCR 6",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0070",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0070",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0070",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0070",
+      "to": "MCR 8.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0070",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0070",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0070",
+      "to": "MCR 7.2",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0071",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0071",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0071",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0071",
+      "to": "MCR 3.208",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0072",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0072",
+      "to": "MCL 600.1711",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0072",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0072",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0072",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0073",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0073",
+      "to": "MCL 600.1711",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0073",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0073",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0073",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0074",
+      "to": "MCR 3",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0074",
+      "to": "MCR 3",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0076",
+      "to": "MCR 2.610",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0076",
+      "to": "MCR 2.611",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0076",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0076",
+      "to": "MCR 2.613",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0076",
+      "to": "MCR 2.614",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0077",
+      "to": "MCR 3",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0077",
+      "to": "MCR 3",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0078",
+      "to": "MCL 600.1711",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0078",
+      "to": "MCL 764.3",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0078",
+      "to": "MCL 764.9",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0078",
+      "to": "MCR 6.106",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0078",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0078",
+      "to": "MCR 6.103",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0078",
+      "to": "MCR 6.106",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0078",
+      "to": "MCR 6.615",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0080",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0080",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0080",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0081",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0081",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0081",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0081",
+      "to": "MCR 7.101",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0082",
+      "to": "MCL 600.1701",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0082",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0082",
+      "to": "MCL 552.14",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0082",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0082",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0083",
+      "to": "MCL 722.21",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0083",
+      "to": "MCR 3.201",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0083",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0083",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0083",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0083",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0084",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0084",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0084",
+      "to": "MCR 3.700",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0084",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0084",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0085",
+      "to": "MCR 2.306",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0085",
+      "to": "MCR 2.305",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0085",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0085",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0085",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0085",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0086",
+      "to": "MCR 2.116",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0086",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0086",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0086",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0086",
+      "to": "MCR 2.401",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0086",
+      "to": "MCR 2.403",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0086",
+      "to": "MCR 2.613",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0087",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0087",
+      "to": "MCL 750.122",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0087",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0087",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0087",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0087",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0088",
+      "to": "MCR 2.115",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0088",
+      "to": "MCR 2.116",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0088",
+      "to": "MCR 2.117",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0088",
+      "to": "MCR 2.118",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0088",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0088",
+      "to": "MCR 2.201",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0089",
+      "to": "MCR 2.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0089",
+      "to": "MCR 2.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0089",
+      "to": "MCR 2.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0089",
+      "to": "MCR 2.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0089",
+      "to": "MCR 2.209",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0089",
+      "to": "MCR 2.221",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0089",
+      "to": "MCR 2.222",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0090",
+      "to": "MCL 722.21",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0090",
+      "to": "MCR 3.306",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0090",
+      "to": "MCR 3.201",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0090",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0090",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0090",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0091",
+      "to": "MCL 722.21",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0091",
+      "to": "MCR 3.306",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0091",
+      "to": "MCR 3.201",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0091",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0091",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0091",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0092",
+      "to": "MCL 600.1521",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0092",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0092",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0092",
+      "to": "MCR 3.203",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0092",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0093",
+      "to": "MCR 7.215",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0093",
+      "to": "MCR 7.215",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0093",
+      "to": "MCR 7.305",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0093",
+      "to": "MCR 7.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0093",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0093",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0094",
+      "to": "MCR 7.305",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0094",
+      "to": "MCR 7.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0094",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0094",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0094",
+      "to": "MCR 1.108",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0094",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0095",
+      "to": "MCR 7.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0095",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0095",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0095",
+      "to": "MCR 1.108",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0095",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0095",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0096",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0096",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0096",
+      "to": "MCR 2.303",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0096",
+      "to": "512 Mich 1",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0096",
+      "to": "182 Mich App 27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0096",
+      "to": "211 Mich App 501",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0096",
+      "to": "285 Mich App 362",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0097",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0097",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0097",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0097",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0097",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0097",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0098",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0098",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0098",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0098",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0098",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0098",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0099",
+      "to": "MCR 7.215",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0099",
+      "to": "MCR 7.305",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0099",
+      "to": "MCR 7.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0099",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0099",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0099",
+      "to": "MCR 1.108",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0101",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0101",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0101",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0101",
+      "to": "MCR 3.208",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0101",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0102",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0102",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0102",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0102",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0102",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0103",
+      "to": "MCR 2.516",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0103",
+      "to": "MCR 2.517",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0103",
+      "to": "MCR 2.518",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0103",
+      "to": "MCR 2.601",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0103",
+      "to": "MCR 2.602",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0103",
+      "to": "MCR 2.603",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0103",
+      "to": "MCR 2.604",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0104",
+      "to": "MCR 7.305",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0104",
+      "to": "MCR 7.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0104",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0104",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0104",
+      "to": "MCR 1.108",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0104",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0105",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0105",
+      "to": "MCR 3.208",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0105",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0105",
+      "to": "MCR 7.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0105",
+      "to": "MCR 7.209",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0106",
+      "to": "MCR 7.215",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0106",
+      "to": "MCR 7.215",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0106",
+      "to": "MCR 7.305",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0106",
+      "to": "MCR 7.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0106",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0106",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0107",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0107",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0107",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0107",
+      "to": "MCR 3.208",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0108",
+      "to": "MCR 2.603",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0108",
+      "to": "MCR 2.604",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0108",
+      "to": "MCR 2.605",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0108",
+      "to": "MCR 2.610",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0108",
+      "to": "MCR 2.611",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0108",
+      "to": "MCR 2.",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0109",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0109",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0109",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0109",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0109",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0110",
+      "to": "MCL 600.1711",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0110",
+      "to": "MCL 764.3",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0110",
+      "to": "MCL 764.9",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0110",
+      "to": "MCR 6.106",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0110",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0110",
+      "to": "MCR 6.103",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0110",
+      "to": "MCR 6.106",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0110",
+      "to": "MCR 6.615",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0111",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0111",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0111",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0111",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0111",
+      "to": "MCR 3.606...",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0112",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0112",
+      "to": "MCR 1.109",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0112",
+      "to": "MCR 3.705",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0112",
+      "to": "MCR 1.109",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0112",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0112",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0112",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0115",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0115",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0115",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0116",
+      "to": "MCL 722.21",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0116",
+      "to": "MCL 722.21",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0116",
+      "to": "MCR 3.201",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0116",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0116",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0116",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0117",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0117",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0117",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0117",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0117",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0117",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0118",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0118",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0118",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0118",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0118",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0118",
+      "to": "MCR 3.310",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0119",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0119",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0119",
+      "to": "MCR 1.109",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0119",
+      "to": "MCR 3.701",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0119",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0119",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0120",
+      "to": "MCL 722.27",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0120",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0120",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0121",
+      "to": "MCR 3.606",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0121",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0121",
+      "to": "MCR 7.304",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0121",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0121",
+      "to": "MCR 7.211",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0122",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0122",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0122",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0122",
+      "to": "MCR 8.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0122",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0122",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0123",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0123",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0123",
+      "to": "MCR 8.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0123",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0123",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0123",
+      "to": "MCR 7.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0124",
+      "to": "MCR 2.116",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0124",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0124",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0124",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0124",
+      "to": "MCR 2.401",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0124",
+      "to": "MCR 2.403",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0124",
+      "to": "MCR 2.613",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0125",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0125",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0125",
+      "to": "MCR 2.603",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0125",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0126",
+      "to": "MCL 600.1711",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0126",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0126",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0126",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0127",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0127",
+      "to": "MCR 3.705",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0127",
+      "to": "MCR 3.706",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0127",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0128",
+      "to": "MCR 3.705",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0128",
+      "to": "MCR 3.706",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0128",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0128",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0129",
+      "to": "MCR 3.705",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0129",
+      "to": "MCR 3.706",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0129",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0129",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0130",
+      "to": "MCR 2.108",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0130",
+      "to": "MCR 2.109",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0130",
+      "to": "MCR 2.110",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0130",
+      "to": "MCR 2.111",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0130",
+      "to": "MCR 2.112",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0130",
+      "to": "MCR 2.113",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0130",
+      "to": "MCR 2.115",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0131",
+      "to": "MCR 2.115",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0131",
+      "to": "MCR 2.116",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0131",
+      "to": "MCR 2.117",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0131",
+      "to": "MCR 2.118",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0131",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0131",
+      "to": "MCR 2.201",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0132",
+      "to": "MCR 2.117",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0132",
+      "to": "MCR 2.118",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0132",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0132",
+      "to": "MCR 2.201",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0132",
+      "to": "MCR 2.202",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0132",
+      "to": "MCR 2.203",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0133",
+      "to": "MCR 2.118",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0133",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0133",
+      "to": "MCR 2.201",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0133",
+      "to": "MCR 2.202",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0133",
+      "to": "MCR 2.203",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0133",
+      "to": "MCR 2.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0134",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0134",
+      "to": "MCR 2.201",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0134",
+      "to": "MCR 2.202",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0134",
+      "to": "MCR 2.203",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0134",
+      "to": "MCR 2.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0134",
+      "to": "MCR 2.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0135",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0135",
+      "to": "MCR 7.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0135",
+      "to": "MCR 7.212",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0135",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0135",
+      "to": "MCR 7.209",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0135",
+      "to": "MCR 7.305",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0136",
+      "to": "MCL 600.2950",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0136",
+      "to": "MCR 3.206",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0136",
+      "to": "MCR 3.700",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0136",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0136",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0137",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0137",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0137",
+      "to": "MCR 1.108",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0137",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0137",
+      "to": "MCR 7.205",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0137",
+      "to": "MCR 7.204",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0138",
+      "to": "MCR 7.211",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0138",
+      "to": "MCR 7.311",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0138",
+      "to": "MCR 7.311",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0138",
+      "to": "MCR 7.311",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0138",
+      "to": "MCR 7.311",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0139",
+      "to": "MCL 722.23",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0139",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0139",
+      "to": "MCR 2.313",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0139",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0139",
+      "to": "Const 1963",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0139",
+      "to": "art 1",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0139",
+      "to": "amend XIV",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0140",
+      "to": "MCR 2.114",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0140",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0140",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0140",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0140",
+      "to": "MCR 8.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0140",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0141",
+      "to": "MCR 2.114",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0141",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0141",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0141",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0141",
+      "to": "MCR 8.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0141",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0143",
+      "to": "MCR 2.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0143",
+      "to": "MCR 3.210",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0143",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0143",
+      "to": "MCR 8.119",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0143",
+      "to": "MCR 2.302",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0143",
+      "to": "MCR 2.107",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0144",
+      "to": "MCR 6.505",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0144",
+      "to": "MCR 6.506",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0144",
+      "to": "MCR 6.507",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0144",
+      "to": "MCR 6.508",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0144",
+      "to": "MCR 6.509",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0144",
+      "to": "MCR 6.610",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0144",
+      "to": "MCR 6.615",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0146",
+      "to": "MCR 9.242",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0146",
+      "to": "MCR 9.243",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0146",
+      "to": "MCR 9.244",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0146",
+      "to": "MCR 9.245",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0146",
+      "to": "MCR 9.250",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0146",
+      "to": "MCR 9.251",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0146",
+      "to": "MCR 9.25",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0149",
+      "to": "MCR 2.612",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0149",
+      "to": "MCR 3.207",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0149",
+      "to": "MCR 2.003",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0150",
+      "to": "MCR 3.705",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0150",
+      "to": "MCR 3.706",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0150",
+      "to": "MCR 3.707",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "e0150",
+      "to": "MCR 3.708",
+      "type": "CITES",
+      "brain": "28_motions"
+    },
+    {
+      "from": "lane_a_custody",
+      "to": "lane_f_coa_366810",
+      "type": "APPEAL_OF_RIGHT"
+    },
+    {
+      "from": "lane_d_ppo",
+      "to": "lane_f_coa_366810",
+      "type": "PRESERVES_ISSUES"
+    },
+    {
+      "from": "lane_e_misconduct",
+      "to": "lane_f_coa_366810",
+      "type": "SUPPORTS"
+    },
+    {
+      "from": "lane_f_coa_366810",
+      "to": "lane_g_msc",
+      "type": "APPLICATION_FOR_LEAVE"
+    },
+    {
+      "from": "motion_to_compel",
+      "to": "custody_modification",
+      "type": "PREREQUISITE"
+    },
+    {
+      "from": "best_interest_brief",
+      "to": "custody_modification",
+      "type": "SUPPORTS"
+    },
+    {
+      "from": "disqualification_motion",
+      "to": "jtc_complaint",
+      "type": "SUPPORTS"
+    },
+    {
+      "from": "claim_of_appeal",
+      "to": "appellant_brief",
+      "type": "PREREQUISITE"
+    },
+    {
+      "from": "appellant_brief",
+      "to": "reply_brief",
+      "type": "PREREQUISITE"
+    }
+  ],
+  "metadata": {
+    "node_count": 150,
+    "edge_count": 850,
+    "brain_count": 9,
+    "domains": [
+      "motions",
+      "discovery",
+      "appellate",
+      "emergency",
+      "remedies",
+      "review_standards",
+      "procedural_compliance",
+      "foc",
+      "pro_se"
+    ],
+    "lanes": {
+      "A": "Custody 2024-001507-DC",
+      "B": "Shady Oaks Housing",
+      "C": "Convergence",
+      "D": "PPO 2023-5907-PP",
+      "E": "Judicial Misconduct",
+      "F": "COA 366810",
+      "G": "MSC"
+    }
+  }
+}

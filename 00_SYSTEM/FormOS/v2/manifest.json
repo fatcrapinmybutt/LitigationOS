@@ -1,0 +1,41 @@
+{
+  "pack": "LitigationOS_FormOS_Upgrade_v2_20260228",
+  "generated": "2026-02-28",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2485,
+      "sha256": "0e235fd2f25bccef17f992b65b3269cf6a288e1829ce9afe3708a23ea312c9c8"
+    },
+    {
+      "path": "config/formos_config.example.json",
+      "bytes": 511,
+      "sha256": "f99c317c38bc19148bb2420856ffadfd3d7b1bf6c81a556125a0f5977d947fed"
+    },
+    {
+      "path": "docs/AUDIT_NOTES.md",
+      "bytes": 1060,
+      "sha256": "e8c26ef6e20117e7df11f17a68e7f19ea7a35cf3f34e901ffc2dd543dc36f21e"
+    },
+    {
+      "path": "docs/FOLDER_PLANES_v2.md",
+      "bytes": 985,
+      "sha256": "20f71d7512e1b5a3985634de2bf8024e04fc002acc3cf15229d588a44dac43e0"
+    },
+    {
+      "path": "rules/mi_rulebank.yaml",
+      "bytes": 1420,
+      "sha256": "10ecae215eb0816b390200eaa54ebe0dc96521cd1bf5ed5aeaaeec2c9e4b298e"
+    },
+    {
+      "path": "tooling/formos_cli.py",
+      "bytes": 31604,
+      "sha256": "3cddd1eb98df96fab2f666a8da5951f5e497dbd32f01b9290e601816f49cbcc8"
+    },
+    {
+      "path": "tooling/schema_v2.sql",
+      "bytes": 3059,
+      "sha256": "2b45ec871a5c151c1ba2a903370b2f8567c672b5191cccd500ac2f212c459921"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "query": "master_citations COUNT",
+    "baseline_ms": 3810.43,
+    "mmap_ms": 352.74,
+    "speedup": 10.8,
+    "rows": 1
+  },
+  {
+    "query": "evidence_quotes COUNT",
+    "baseline_ms": 169.95,
+    "mmap_ms": 8.96,
+    "speedup": 19.0,
+    "rows": 1
+  },
+  {
+    "query": "omega_filesystem COUNT",
+    "baseline_ms": 543.21,
+    "mmap_ms": 28.46,
+    "speedup": 19.1,
+    "rows": 1
+  },
+  {
+    "query": "auth_rules LIKE",
+    "baseline_ms": 57.86,
+    "mmap_ms": 7.87,
+    "speedup": 7.3,
+    "rows": 20
+  },
+  {
+    "query": "evidence_fts MATCH",
+    "baseline_ms": 29.82,
+    "mmap_ms": 0.9,
+    "speedup": 33.0,
+    "rows": 30
+  },
+  {
+    "query": "filing_readiness",
+    "baseline_ms": 26.78,
+    "mmap_ms": 0.15,
+    "speedup": 184.2,
+    "rows": 24
+  }
+]

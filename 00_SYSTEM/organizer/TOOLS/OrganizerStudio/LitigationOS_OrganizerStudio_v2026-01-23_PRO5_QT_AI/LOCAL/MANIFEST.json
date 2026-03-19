@@ -1,0 +1,26 @@
+{
+  "pack_name": "LitigationOS_OrganizerStack_HF_v2026-01-22_ULT3",
+  "built_utc": "2026-01-23T04:59:04Z",
+  "files": [
+    "00_SETUP.cmd",
+    "10_RUN_PLAN.cmd",
+    "15_VALIDATE_PLAN.cmd",
+    "20_RUN_APPLY.cmd",
+    "30_SELF_TEST.cmd",
+    "40_UNDO_LAST.cmd",
+    "LICENSE.txt",
+    "MANIFEST.json",
+    "README.md",
+    "ai_organizer_stack.py",
+    "config.yaml",
+    "download_models.py",
+    "mbp_worldfirst_builder.py",
+    "models.json",
+    "plan_validator.py",
+    "requirements.txt",
+    "self_test.py",
+    "undo_last.py",
+    "MANIFEST.json",
+    "SANDBOX_PROOF.json"
+  ]
+}

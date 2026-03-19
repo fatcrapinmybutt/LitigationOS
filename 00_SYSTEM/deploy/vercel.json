@@ -1,0 +1,58 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "name": "litigationos",
+  "version": 2,
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "installCommand": "npm ci",
+  "regions": ["iad1"],
+  "env": {
+    "DATABASE_URL": "@database-url",
+    "NEXTAUTH_SECRET": "@nextauth-secret",
+    "NEXTAUTH_URL": "@nextauth-url",
+    "OPENAI_API_KEY": "@openai-api-key",
+    "NEO4J_URI": "@neo4j-uri",
+    "NEO4J_USER": "@neo4j-user",
+    "NEO4J_PASSWORD": "@neo4j-password",
+    "STRIPE_SECRET_KEY": "@stripe-secret-key",
+    "STRIPE_PUBLISHABLE_KEY": "@stripe-publishable-key",
+    "STRIPE_WEBHOOK_SECRET": "@stripe-webhook-secret"
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, must-revalidate" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/dashboard", "destination": "/app/dashboard" },
+    { "source": "/evidence/:path*", "destination": "/app/evidence/:path*" },
+    { "source": "/timeline/:path*", "destination": "/app/timeline/:path*" },
+    { "source": "/omega/:path*", "destination": "/app/omega/:path*" },
+    { "source": "/api/health", "destination": "/api/health" }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/backup",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cron/omega-recalc",
+      "schedule": "0 */6 * * *"
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "$defs": {
+    "AuthorityRef": {
+      "additionalProperties": false,
+      "description": "A legal authority citation with text excerpt.",
+      "properties": {
+        "authority": {
+          "description": "Rule number (MCR/MCL/MRE)",
+          "minLength": 1,
+          "title": "Authority",
+          "type": "string"
+        },
+        "title": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Title"
+        },
+        "text": {
+          "anyOf": [
+            {
+              "maxLength": 1000,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "First ~800 chars",
+          "title": "Text"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        }
+      },
+      "required": [
+        "authority"
+      ],
+      "title": "AuthorityRef",
+      "type": "object"
+    },
+    "CaseLane": {
+      "description": "Six case lanes \u2014 IRON LAW: never cross-contaminate.",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "title": "CaseLane",
+      "type": "string"
+    },
+    "CertificateOfService": {
+      "additionalProperties": false,
+      "description": "MCR 2.107 compliant Certificate of Service.",
+      "properties": {
+        "document_title": {
+          "title": "Document Title",
+          "type": "string"
+        },
+        "case_number": {
+          "title": "Case Number",
+          "type": "string"
+        },
+        "served_parties": {
+          "items": {
+            "$ref": "#/$defs/ServiceEntry"
+          },
+          "minItems": 1,
+          "title": "Served Parties",
+          "type": "array"
+        },
+        "server_name": {
+          "default": "Andrew J. Pigors",
+          "title": "Server Name",
+          "type": "string"
+        },
+        "server_address": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Server Address"
+        },
+        "date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date"
+        }
+      },
+      "required": [
+        "document_title",
+        "case_number",
+        "served_parties"
+      ],
+      "title": "CertificateOfService",
+      "type": "object"
+    },
+    "ComplianceResult": {
+      "additionalProperties": false,
+      "description": "Court filing compliance check result.",
+      "properties": {
+        "score": {
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Score",
+          "type": "integer"
+        },
+        "court": {
+          "title": "Court",
+          "type": "string"
+        },
+        "word_count": {
+          "minimum": 0,
+          "title": "Word Count",
+          "type": "integer"
+        },
+        "citation_count": {
+          "minimum": 0,
+          "title": "Citation Count",
+          "type": "integer"
+        },
+        "issues": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Issues",
+          "type": "array"
+        },
+        "suggestions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Suggestions",
+          "type": "array"
+        },
+        "compliant": {
+          "default": false,
+          "title": "Compliant",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "score",
+        "court",
+        "word_count",
+        "citation_count"
+      ],
+      "title": "ComplianceResult",
+      "type": "object"
+    },
+    "Court": {
+      "description": "Michigan courts and federal.",
+      "enum": [
+        "14TH",
+        "COA",
+        "MSC",
+        "JTC",
+        "USDC",
+        "FOC"
+      ],
+      "title": "Court",
+      "type": "string"
+    },
+    "EvidenceQuote": {
+      "additionalProperties": false,
+      "description": "A single evidence quote with provenance.",
+      "properties": {
+        "quote_text": {
+          "minLength": 1,
+          "title": "Quote Text",
+          "type": "string"
+        },
+        "speaker": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Speaker"
+        },
+        "legal_significance": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Legal Significance"
+        },
+        "evidence_category": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Evidence Category"
+        },
+        "posture": {
+          "$ref": "#/$defs/PostureTag",
+          "default": "EVIDENCE_FACT"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source"
+        }
+      },
+      "required": [
+        "quote_text"
+      ],
+      "title": "EvidenceQuote",
+      "type": "object"
+    },
+    "FilingCaption": {
+      "additionalProperties": false,
+      "description": "Court filing caption per MCR 2.113 formatting requirements.",
+      "properties": {
+        "state": {
+          "default": "STATE OF MICHIGAN",
+          "title": "State",
+          "type": "string"
+        },
+        "court": {
+          "description": "Full court name",
+          "title": "Court",
+          "type": "string"
+        },
+        "county": {
+          "default": "MUSKEGON",
+          "title": "County",
+          "type": "string"
+        },
+        "plaintiff": {
+          "default": "ANDREW J. PIGORS",
+          "title": "Plaintiff",
+          "type": "string"
+        },
+        "plaintiff_label": {
+          "default": "Plaintiff",
+          "title": "Plaintiff Label",
+          "type": "string"
+        },
+        "defendant": {
+          "default": "EMILY A. WATSON",
+          "title": "Defendant",
+          "type": "string"
+        },
+        "defendant_label": {
+          "default": "Defendant",
+          "title": "Defendant Label",
+          "type": "string"
+        },
+        "case_number": {
+          "title": "Case Number",
+          "type": "string"
+        },
+        "judge": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Judge"
+        },
+        "document_title": {
+          "minLength": 1,
+          "title": "Document Title",
+          "type": "string"
+        },
+        "forum": {
+          "$ref": "#/$defs/Court",
+          "default": "14TH"
+        }
+      },
+      "required": [
+        "court",
+        "case_number",
+        "document_title"
+      ],
+      "title": "FilingCaption",
+      "type": "object"
+    },
+    "FilingDocument": {
+      "additionalProperties": false,
+      "description": "A single document within a filing package.",
+      "properties": {
+        "doc_type": {
+          "description": "motion | brief | proposed_order | cos | exhibit_index",
+          "title": "Doc Type",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "content": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Content"
+        },
+        "file_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "File Path"
+        },
+        "word_count": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Word Count",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "doc_type",
+        "title"
+      ],
+      "title": "FilingDocument",
+      "type": "object"
+    },
+    "PostureTag": {
+      "description": "Evidence atom posture \u2014 every quote gets one.",
+      "enum": [
+        "RECORD_FACT",
+        "EVIDENCE_FACT",
+        "SWORN_FACT",
+        "ALLEGATION",
+        "INFERENCE"
+      ],
+      "title": "PostureTag",
+      "type": "string"
+    },
+    "ServiceEntry": {
+      "additionalProperties": false,
+      "description": "One person/entity served.",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "address": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Address"
+        },
+        "method": {
+          "description": "first-class mail | personal | e-filing | email",
+          "title": "Method",
+          "type": "string"
+        },
+        "date_served": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date Served"
+        }
+      },
+      "required": [
+        "name",
+        "method"
+      ],
+      "title": "ServiceEntry",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Complete filing stack \u2014 motion + brief + order + CoS + exhibits.",
+  "properties": {
+    "package_type": {
+      "title": "Package Type",
+      "type": "string"
+    },
+    "court": {
+      "title": "Court",
+      "type": "string"
+    },
+    "case_number": {
+      "title": "Case Number",
+      "type": "string"
+    },
+    "lane": {
+      "$ref": "#/$defs/CaseLane"
+    },
+    "generated": {
+      "description": "ISO 8601 timestamp",
+      "title": "Generated",
+      "type": "string"
+    },
+    "documents": {
+      "additionalProperties": {
+        "$ref": "#/$defs/FilingDocument"
+      },
+      "minProperties": 1,
+      "title": "Documents",
+      "type": "object"
+    },
+    "authority_cited": {
+      "items": {
+        "$ref": "#/$defs/AuthorityRef"
+      },
+      "title": "Authority Cited",
+      "type": "array"
+    },
+    "supporting_evidence": {
+      "items": {
+        "$ref": "#/$defs/EvidenceQuote"
+      },
+      "title": "Supporting Evidence",
+      "type": "array"
+    },
+    "document_count": {
+      "minimum": 1,
+      "title": "Document Count",
+      "type": "integer"
+    },
+    "validation": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ComplianceResult"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "caption": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/FilingCaption"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "certificate_of_service": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/CertificateOfService"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "package_type",
+    "court",
+    "case_number",
+    "lane",
+    "generated",
+    "documents",
+    "document_count"
+  ],
+  "title": "FilingPackage",
+  "type": "object"
+}

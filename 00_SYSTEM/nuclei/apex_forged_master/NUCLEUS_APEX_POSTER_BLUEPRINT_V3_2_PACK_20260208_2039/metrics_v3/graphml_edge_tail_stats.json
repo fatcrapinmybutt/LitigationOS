@@ -1,0 +1,89 @@
+{
+  "total_items": 214090,
+  "distinct": 61,
+  "coverage": {
+    "top_1": 0.16981176140875331,
+    "top_2": 0.3249147554766687,
+    "top_3": 0.45355691531598863,
+    "top_5": 0.6617217058246532,
+    "top_10": 0.9307020411976271,
+    "top_20": 0.9906160960343781,
+    "top_30": 0.9956186650474099,
+    "top_40": 0.9982250455415946,
+    "top_50": 0.9994675136624784,
+    "top_75": 1.0,
+    "top_100": 1.0
+  },
+  "buckets": [
+    {
+      "range": "1-1",
+      "kinds": 0,
+      "share_kinds": 0.0,
+      "items_total": 0,
+      "share_items": 0.0
+    },
+    {
+      "range": "2-2",
+      "kinds": 0,
+      "share_kinds": 0.0,
+      "items_total": 0,
+      "share_items": 0.0
+    },
+    {
+      "range": "3-5",
+      "kinds": 3,
+      "share_kinds": 0.04918032786885246,
+      "items_total": 15,
+      "share_items": 7.00639917791583e-05
+    },
+    {
+      "range": "6-10",
+      "kinds": 1,
+      "share_kinds": 0.01639344262295082,
+      "items_total": 9,
+      "share_items": 4.203839506749498e-05
+    },
+    {
+      "range": "11-50",
+      "kinds": 20,
+      "share_kinds": 0.32786885245901637,
+      "items_total": 486,
+      "share_items": 0.0022700733336447287
+    },
+    {
+      "range": "51-100",
+      "kinds": 13,
+      "share_kinds": 0.21311475409836064,
+      "items_total": 954,
+      "share_items": 0.004456069877154468
+    },
+    {
+      "range": "101-500",
+      "kinds": 8,
+      "share_kinds": 0.13114754098360656,
+      "items_total": 1461,
+      "share_items": 0.006824232799290018
+    },
+    {
+      "range": "501-1000",
+      "kinds": 3,
+      "share_kinds": 0.04918032786885246,
+      "items_total": 2156,
+      "share_items": 0.010070531085057685
+    },
+    {
+      "range": "1001-10000",
+      "kinds": 4,
+      "share_kinds": 0.06557377049180328,
+      "items_total": 16881,
+      "share_items": 0.07885001634826475
+    },
+    {
+      "range": "10001+",
+      "kinds": 9,
+      "share_kinds": 0.14754098360655737,
+      "items_total": 192128,
+      "share_items": 0.8974169741697416
+    }
+  ]
+}

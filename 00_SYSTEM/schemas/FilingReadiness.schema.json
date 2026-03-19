@@ -1,0 +1,74 @@
+{
+  "additionalProperties": false,
+  "description": "Vehicle readiness evaluation \u2014 5-factor scoring model.",
+  "properties": {
+    "vehicle_name": {
+      "title": "Vehicle Name",
+      "type": "string"
+    },
+    "authority_score": {
+      "default": 0,
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Authority Score",
+      "type": "number"
+    },
+    "evidence_score": {
+      "default": 0,
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Evidence Score",
+      "type": "number"
+    },
+    "compliance_score": {
+      "default": 0,
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Compliance Score",
+      "type": "number"
+    },
+    "impeachment_score": {
+      "default": 0,
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Impeachment Score",
+      "type": "number"
+    },
+    "total_score": {
+      "default": 0,
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Total Score",
+      "type": "number"
+    },
+    "gaps": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Gaps"
+    },
+    "strengths": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Strengths"
+    }
+  },
+  "required": [
+    "vehicle_name"
+  ],
+  "title": "FilingReadiness",
+  "type": "object"
+}

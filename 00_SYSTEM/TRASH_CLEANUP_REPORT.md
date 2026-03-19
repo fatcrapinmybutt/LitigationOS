@@ -1,0 +1,831 @@
+# G:\_Trash Cleanup Report
+
+**Date:** 2026-03-04 15:00:38
+**Duration:** 136.6s
+
+## Summary
+
+| Metric | Value |
+|--------|-------|
+| Files scanned in trash | 3600 |
+| Files indexed (search roots) | 340624 |
+| **Duplicates deleted** | **298** |
+| **Space reclaimed** | **1.0 MB** |
+| Files moved to _REVIEW | 3302 |
+| Empty dirs removed | 0 |
+| Errors | 0 |
+
+## Deleted Files (confirmed duplicates)
+
+<details><summary>Show all 298 deletions</summary>
+
+- `G:\_Trash\desktop.ini` (69 bytes) → matched `G:\\Archives\CAPSTONE_PORTFOLIO_STACK_v2026-01-23.6_20260124T025038Z\desktop.ini`
+- `G:\_Trash\input.css` (59 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\css\input.css`
+- `G:\_Trash\__init__.cpython-313(1).pyc` (80,318 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init__.cpython-313(1).pyc`
+- `G:\_Trash\__init__.cpython-313.opt-1.pyc` (4,367 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init__.cpython-313.opt-1.pyc`
+- `G:\_Trash\__init__.cpython-313.opt-2.pyc` (3,749 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init__.cpython-313.opt-2.pyc`
+- `G:\_Trash\__init__.cpython-313.pyc` (4,367 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init__.cpython-313.pyc`
+- `G:\_Trash\_diffcommand.cpython-313.pyc` (3,865 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\_diffcommand.cpython-313.pyc`
+- `G:\_Trash\_difflib.cpython-313.pyc` (73,635 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\_difflib.cpython-313.pyc`
+- `G:\_Trash\_html5builder.cpython-313.pyc` (5,943 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\_html5builder.cpython-313.pyc`
+- `G:\_Trash\_setmixin.cpython-313.pyc` (2,526 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\_setmixin.cpython-313.pyc`
+- `G:\_Trash\build_case_pack.cpython-311 (1).pyc` (4,330 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\build_case_pack.cpython-311 (1).pyc`
+- `G:\_Trash\build_case_pack.cpython-311.pyc` (4,330 bytes) → matched `G:\\Archives\LITIGATION_OS_SUPERGRAPH_BUNDLE_v3_20260104T2215Z\TOOLS\__pycache__\build_case_pack.cpython-311.pyc`
+- `G:\_Trash\build_lenses.cpython-311 (1).pyc` (7,077 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\build_lenses.cpython-311 (1).pyc`
+- `G:\_Trash\build_lenses.cpython-311.pyc` (7,077 bytes) → matched `G:\\Archives\LITIGATION_OS_SUPERGRAPH_BUNDLE_v3_20260104T2215Z\TOOLS\__pycache__\build_lenses.cpython-311.pyc`
+- `G:\_Trash\build_sqlite_cache.cpython-311 (1).pyc` (15,922 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\build_sqlite_cache.cpython-311 (1).pyc`
+- `G:\_Trash\build_sqlite_cache.cpython-311.pyc` (15,922 bytes) → matched `G:\\Archives\LITIGATION_OS_SUPERGRAPH_BUNDLE_v3_20260104T2215Z\APP\__pycache__\build_sqlite_cache.cpython-311.pyc`
+- `G:\_Trash\doctor.cpython-311 (1).pyc` (5,920 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\doctor.cpython-311 (1).pyc`
+- `G:\_Trash\doctor.cpython-311.pyc` (5,920 bytes) → matched `G:\\Archives\LITIGATION_OS_SUPERGRAPH_BUNDLE_v3_20260104T2215Z\APP\__pycache__\doctor.cpython-311.pyc`
+- `G:\_Trash\export_casepack_json.cpython-311 (1).pyc` (9,152 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\export_casepack_json.cpython-311 (1).pyc`
+- `G:\_Trash\export_casepack_json.cpython-311.pyc` (9,152 bytes) → matched `G:\\Archives\LITIGATION_OS_SUPERGRAPH_BUNDLE_v3_20260104T2215Z\TOOLS\__pycache__\export_casepack_json.cpython-311.pyc`
+- `G:\_Trash\ingest_filesystem_to_graph.cpython-311 (1).pyc` (27,976 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\ingest_filesystem_to_graph.cpython-311 (1).pyc`
+- `G:\_Trash\ingest_filesystem_to_graph.cpython-311.pyc` (27,976 bytes) → matched `G:\\Archives\LITIGATION_OS_SUPERGRAPH_BUNDLE_v3_20260104T2215Z\TOOLS\__pycache__\ingest_filesystem_to_graph.cpython-311.pyc`
+- `G:\_Trash\mindeye2_master.cpython-311 (1).pyc` (92,853 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\mindeye2_master.cpython-311 (1).pyc`
+- `G:\_Trash\mindeye2_master.cpython-311.pyc` (92,853 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\mindeye2_master.cpython-311.pyc`
+- `G:\_Trash\parser.cpython-313.opt-1.pyc` (19,860 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\parser.cpython-313.opt-1.pyc`
+- `G:\_Trash\parser.cpython-313.opt-2.pyc` (18,611 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\parser.cpython-313.opt-2.pyc`
+- `G:\_Trash\parser.cpython-313.pyc` (20,651 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\parser.cpython-313.pyc`
+- `G:\_Trash\preload_all.cpython-311 (1).pyc` (6,727 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\preload_all.cpython-311 (1).pyc`
+- `G:\_Trash\preload_all.cpython-311.pyc` (6,727 bytes) → matched `G:\\Archives\LITIGATION_OS_SUPERGRAPH_BUNDLE_v3_20260104T2215Z\APP\__pycache__\preload_all.cpython-311.pyc`
+- `G:\_Trash\server.cpython-311 (1).pyc` (20,350 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\server.cpython-311 (1).pyc`
+- `G:\_Trash\server.cpython-311.pyc` (20,350 bytes) → matched `G:\\Archives\LITIGATION_OS_SUPERGRAPH_BUNDLE_v3_20260104T2215Z\APP\__pycache__\server.cpython-311.pyc`
+- `G:\_Trash\soupparser.cpython-313.pyc` (11,795 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\soupparser.cpython-313.pyc`
+- `G:\_Trash\usedoctest.cpython-313.pyc` (452 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\usedoctest.cpython-313.pyc`
+- `G:\_Trash\.~lock.Enhanced_Statement_of_Separation_Unemployment_e1bf9f4e.docx#` (85 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\docx#\.~lock.Enhanced_Statement_of_Separation_Unemployment_e1bf9f4e.docx#`
+- `G:\_Trash\.~lock.RECOMPILED_MASTER_Defense_Brief_PPO_5_6_CorrectedLabels_37a4bfe6.docx#` (85 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\docx#\.~lock.RECOMPILED_MASTER_Defense_Brief_PPO_5_6_CorrectedLabels_37a4bfe6.docx#`
+- `G:\_Trash\.eslintrc_06940501` (43 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\other\.eslintrc_06940501`
+- `G:\_Trash\CNAME` (20 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\other\CNAME`
+- `G:\_Trash\.flowconfig_edfab7b4` (59 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\other\.flowconfig_edfab7b4`
+- `G:\_Trash\.npmignore_d5cc148e` (7 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\other\.npmignore_d5cc148e`
+- `G:\_Trash\.npmignore_e4f25935` (24 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\other\.npmignore_e4f25935`
+- `G:\_Trash\__init___14.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___14.py`
+- `G:\_Trash\__init___15.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___15.py`
+- `G:\_Trash\__init___18.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___18.py`
+- `G:\_Trash\__init___19.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___19.py`
+- `G:\_Trash\__init___20.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___20.py`
+- `G:\_Trash\__init___21.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___21.py`
+- `G:\_Trash\py_3.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_3.typed`
+- `G:\_Trash\py_4.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_4.typed`
+- `G:\_Trash\py_5.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_5.typed`
+- `G:\_Trash\py_6.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_6.typed`
+- `G:\_Trash\py_7.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_7.typed`
+- `G:\_Trash\py_8.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_8.typed`
+- `G:\_Trash\py_9.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_9.typed`
+- `G:\_Trash\py_10.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_10.typed`
+- `G:\_Trash\py_11.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_11.typed`
+- `G:\_Trash\py_14.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_14.typed`
+- `G:\_Trash\__init___51.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___51.py`
+- `G:\_Trash\__init___52.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___52.py`
+- `G:\_Trash\__init___53.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___53.py`
+- `G:\_Trash\__init___54.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___54.py`
+- `G:\_Trash\WHEEL` (82 bytes) → matched `G:\\Archives\CAPSTONE_PORTFOLIO_STACK_v2026-01-23.6_20260124T025038Z\.venv\Lib\site-packages\click-8.3.1.dist-info\WHEEL`
+- `G:\_Trash\INSTALLER` (4 bytes) → matched `G:\\Archives\CAPSTONE_PORTFOLIO_STACK_v2026-01-23.6_20260124T025038Z\.venv\Lib\site-packages\annotated_types-0.7.0.dist-info\INSTALLER`
+- `G:\_Trash\REQUESTED` (0 bytes) → matched `G:\\Archives\CAPSTONE_PORTFOLIO_STACK_v2026-01-23.6_20260124T025038Z\.venv\Lib\site-packages\fastapi-0.115.5.dist-info\REQUESTED`
+- `G:\_Trash\py_17.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_17.typed`
+- `G:\_Trash\__init___61.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___61.py`
+- `G:\_Trash\py_18.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_18.typed`
+- `G:\_Trash\__init__.cpython-312_60.pyc` (168 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init__.cpython-312_60.pyc`
+- `G:\_Trash\py_19.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_19.typed`
+- `G:\_Trash\py_20.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_20.typed`
+- `G:\_Trash\py_21.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_21.typed`
+- `G:\_Trash\__init___65.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___65.py`
+- `G:\_Trash\__init___66.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___66.py`
+- `G:\_Trash\__init___70.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___70.py`
+- `G:\_Trash\__init___71.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___71.py`
+- `G:\_Trash\__init___72.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___72.py`
+- `G:\_Trash\__init___73.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___73.py`
+- `G:\_Trash\__init___74.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___74.py`
+- `G:\_Trash\__init___75.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___75.py`
+- `G:\_Trash\REQUESTED_2` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\REQUESTED_2`
+- `G:\_Trash\py_23.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_23.typed`
+- `G:\_Trash\py_24.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_24.typed`
+- `G:\_Trash\__init___80.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___80.py`
+- `G:\_Trash\__init___81.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___81.py`
+- `G:\_Trash\py_25.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_25.typed`
+- `G:\_Trash\REQUESTED_3` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\REQUESTED_3`
+- `G:\_Trash\py_26.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_26.typed`
+- `G:\_Trash\__init___86.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___86.py`
+- `G:\_Trash\__init___88.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___88.py`
+- `G:\_Trash\__init___102.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___102.py`
+- `G:\_Trash\__init___103.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___103.py`
+- `G:\_Trash\__init___106.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___106.py`
+- `G:\_Trash\__init___107.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___107.py`
+- `G:\_Trash\__init___108.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___108.py`
+- `G:\_Trash\__init___109.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___109.py`
+- `G:\_Trash\py_28.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_28.typed`
+- `G:\_Trash\py_29.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_29.typed`
+- `G:\_Trash\py_30.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_30.typed`
+- `G:\_Trash\py_31.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_31.typed`
+- `G:\_Trash\py_32.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_32.typed`
+- `G:\_Trash\py_33.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_33.typed`
+- `G:\_Trash\py_35.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_35.typed`
+- `G:\_Trash\py_36.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_36.typed`
+- `G:\_Trash\py_37.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_37.typed`
+- `G:\_Trash\py_40.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_40.typed`
+- `G:\_Trash\__init___139.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___139.py`
+- `G:\_Trash\__init___140.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___140.py`
+- `G:\_Trash\__init___141.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___141.py`
+- `G:\_Trash\__init___142.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___142.py`
+- `G:\_Trash\REQUESTED_4` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\REQUESTED_4`
+- `G:\_Trash\py_41.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_41.typed`
+- `G:\_Trash\__init___149.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___149.py`
+- `G:\_Trash\py_44.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_44.typed`
+- `G:\_Trash\py_45.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_45.typed`
+- `G:\_Trash\py_46.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_46.typed`
+- `G:\_Trash\py_47.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_47.typed`
+- `G:\_Trash\__init___153.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___153.py`
+- `G:\_Trash\__init___154.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___154.py`
+- `G:\_Trash\__init___156.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___156.py`
+- `G:\_Trash\__init___158.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___158.py`
+- `G:\_Trash\__init___159.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___159.py`
+- `G:\_Trash\__init___160.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___160.py`
+- `G:\_Trash\__init___161.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___161.py`
+- `G:\_Trash\__init___162.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___162.py`
+- `G:\_Trash\__init___163.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___163.py`
+- `G:\_Trash\REQUESTED_5` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\REQUESTED_5`
+- `G:\_Trash\py_49.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_49.typed`
+- `G:\_Trash\py_50.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_50.typed`
+- `G:\_Trash\__init___168.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___168.py`
+- `G:\_Trash\__init___169.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___169.py`
+- `G:\_Trash\py_51.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_51.typed`
+- `G:\_Trash\REQUESTED_6` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\REQUESTED_6`
+- `G:\_Trash\py_52.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_52.typed`
+- `G:\_Trash\__init___174.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___174.py`
+- `G:\_Trash\__init___176.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___176.py`
+- `G:\_Trash\__init___190.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___190.py`
+- `G:\_Trash\__init___191.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___191.py`
+- `G:\_Trash\__init___194.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___194.py`
+- `G:\_Trash\__init___195.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___195.py`
+- `G:\_Trash\__init___196.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___196.py`
+- `G:\_Trash\__init___197.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___197.py`
+- `G:\_Trash\py_54.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_54.typed`
+- `G:\_Trash\py_55.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_55.typed`
+- `G:\_Trash\py_56.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_56.typed`
+- `G:\_Trash\py_57.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_57.typed`
+- `G:\_Trash\py_58.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_58.typed`
+- `G:\_Trash\py_59.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_59.typed`
+- `G:\_Trash\py_60.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_60.typed`
+- `G:\_Trash\py_61.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_61.typed`
+- `G:\_Trash\py_62.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_62.typed`
+- `G:\_Trash\py_63.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_63.typed`
+- `G:\_Trash\py_64.typed` (26 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_64.typed`
+- `G:\_Trash\__init___227.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___227.py`
+- `G:\_Trash\__init___228.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___228.py`
+- `G:\_Trash\__init___229.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___229.py`
+- `G:\_Trash\__init___230.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___230.py`
+- `G:\_Trash\REQUESTED_7` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\REQUESTED_7`
+- `G:\_Trash\py_67.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_67.typed`
+- `G:\_Trash\py_69.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_69.typed`
+- `G:\_Trash\__init___237.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___237.py`
+- `G:\_Trash\py_70.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_70.typed`
+- `G:\_Trash\py_71.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_71.typed`
+- `G:\_Trash\py_72.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_72.typed`
+- `G:\_Trash\py_73.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_73.typed`
+- `G:\_Trash\__init___241.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___241.py`
+- `G:\_Trash\__init___242.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___242.py`
+- `G:\_Trash\__init___244.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___244.py`
+- `G:\_Trash\__init___246.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___246.py`
+- `G:\_Trash\__init___247.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___247.py`
+- `G:\_Trash\__init___248.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___248.py`
+- `G:\_Trash\__init___249.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___249.py`
+- `G:\_Trash\__init___250.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___250.py`
+- `G:\_Trash\__init___251.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___251.py`
+- `G:\_Trash\REQUESTED_8` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\REQUESTED_8`
+- `G:\_Trash\py_75.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_75.typed`
+- `G:\_Trash\py_76.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_76.typed`
+- `G:\_Trash\__init___256.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___256.py`
+- `G:\_Trash\__init___257.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___257.py`
+- `G:\_Trash\py_77.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_77.typed`
+- `G:\_Trash\REQUESTED_9` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\REQUESTED_9`
+- `G:\_Trash\py_78.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_78.typed`
+- `G:\_Trash\__init___262.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___262.py`
+- `G:\_Trash\__init___264.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___264.py`
+- `G:\_Trash\__init___277.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___277.py`
+- `G:\_Trash\__init___278.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___278.py`
+- `G:\_Trash\__init___281.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___281.py`
+- `G:\_Trash\__init___282.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___282.py`
+- `G:\_Trash\__init___283.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___283.py`
+- `G:\_Trash\__init___284.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___284.py`
+- `G:\_Trash\py_80.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_80.typed`
+- `G:\_Trash\py_81.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_81.typed`
+- `G:\_Trash\py_82.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_82.typed`
+- `G:\_Trash\py_83.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_83.typed`
+- `G:\_Trash\py_84.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_84.typed`
+- `G:\_Trash\py_85.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_85.typed`
+- `G:\_Trash\py_86.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_86.typed`
+- `G:\_Trash\py_87.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_87.typed`
+- `G:\_Trash\__init___307.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___307.py`
+- `G:\_Trash\py_88.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_88.typed`
+- `G:\_Trash\py_90.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_90.typed`
+- `G:\_Trash\__init___312.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___312.py`
+- `G:\_Trash\__init___313.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___313.py`
+- `G:\_Trash\__init___314.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___314.py`
+- `G:\_Trash\__init___315.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\11_CODE\python\__init___315.py`
+- `G:\_Trash\REQUESTED_10` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\REQUESTED_10`
+- `G:\_Trash\__init___328.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___328.py`
+- `G:\_Trash\__init___334.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___334.py`
+- `G:\_Trash\__init___335.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___335.py`
+- `G:\_Trash\py_92.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_92.typed`
+- `G:\_Trash\py_93.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_93.typed`
+- `G:\_Trash\py_94.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_94.typed`
+- `G:\_Trash\py_95.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_95.typed`
+- `G:\_Trash\py_96.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_96.typed`
+- `G:\_Trash\py_97.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_97.typed`
+- `G:\_Trash\py_98.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_98.typed`
+- `G:\_Trash\py_99.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_99.typed`
+- `G:\_Trash\py_100.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_100.typed`
+- `G:\_Trash\py_102.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_102.typed`
+- `G:\_Trash\REQUESTED_11` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\REQUESTED_11`
+- `G:\_Trash\courtlistener_harvest_v4.cpython-311.pyc` (14,723 bytes) → matched `G:\\Archives\CAPSTONE_BRIDGE_PACK_v2026-01-23.1\CAPSTONE_BRIDGE_PACK_v2026-01-23.1\bridge\__pycache__\courtlistener_harvest_v4.cpython-311.pyc`
+- `G:\_Trash\citation_verify_v3.cpython-311.pyc` (4,210 bytes) → matched `G:\\Archives\CAPSTONE_BRIDGE_PACK_v2026-01-23.1\CAPSTONE_BRIDGE_PACK_v2026-01-23.1\bridge\__pycache__\citation_verify_v3.cpython-311.pyc`
+- `G:\_Trash\manifest_v0005.log` (75 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\logs\manifest_v0005.log`
+- `G:\_Trash\manifest_v0006.log` (46 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\logs\manifest_v0006.log`
+- `G:\_Trash\manifest_v0007.log` (46 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\logs\manifest_v0007.log`
+- `G:\_Trash\zip_v0005.log` (0 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\logs\zip_v0005.log`
+- `G:\_Trash\zip_v0006.log` (44 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\logs\zip_v0006.log`
+- `G:\_Trash\zip_v0007.log` (44 bytes) → matched `C:\Users\andre\LitigationOS\08_TEXT\logs\zip_v0007.log`
+- `G:\_Trash\litos_forms_catalog_builder.cpython-311.pyc` (10,468 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\litos_forms_catalog_builder.cpython-311.pyc`
+- `G:\_Trash\litos_pdf_extract.cpython-311.pyc` (5,555 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\litos_pdf_extract.cpython-311.pyc`
+- `G:\_Trash\litos_jobqueue.cpython-311.pyc` (17,404 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\litos_jobqueue.cpython-311.pyc`
+- `G:\_Trash\litos_eventlog.cpython-311.pyc` (15,814 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\litos_eventlog.cpython-311.pyc`
+- `G:\_Trash\litos_governor_autonomous.cpython-311.pyc` (15,990 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\litos_governor_autonomous.cpython-311.pyc`
+- `G:\_Trash\errors_2.jsonl` (0 bytes) → matched `C:\Users\andre\LitigationOS\09_DATA\json\errors_2.jsonl`
+- `G:\_Trash\errors_3.jsonl` (0 bytes) → matched `C:\Users\andre\LitigationOS\09_DATA\json\errors_3.jsonl`
+- `G:\_Trash\errors_4.jsonl` (0 bytes) → matched `C:\Users\andre\LitigationOS\09_DATA\json\errors_4.jsonl`
+- `G:\_Trash\errors_5.jsonl` (0 bytes) → matched `C:\Users\andre\LitigationOS\09_DATA\json\errors_5.jsonl`
+- `G:\_Trash\errors_6.jsonl` (0 bytes) → matched `C:\Users\andre\LitigationOS\09_DATA\json\errors_6.jsonl`
+- `G:\_Trash\errors_7.jsonl` (0 bytes) → matched `C:\Users\andre\LitigationOS\09_DATA\json\errors_7.jsonl`
+- `G:\_Trash\jobqueue.sqlite-wal` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\jobqueue.sqlite-wal`
+- `G:\_Trash\chrono_events.jsonl` (0 bytes) → matched `G:\\Archives\CYCLEPACK_SMOKE_NESTED\runs\RUN_SMOKE_NESTED__00001__outer\outputs\chrono_db\chrono_events.jsonl`
+- `G:\_Trash\contempt_intake.jsonl` (0 bytes) → matched `G:\\Archives\CYCLEPACK_SMOKE_NESTED\runs\RUN_SMOKE_NESTED__00001__outer\outputs\contempt\contempt_intake.jsonl`
+- `G:\_Trash\ex_parte_event_log.jsonl` (0 bytes) → matched `G:\\Archives\CYCLEPACK_SMOKE_NESTED\runs\RUN_SMOKE_NESTED__00001__outer\outputs\ex_parte\ex_parte_event_log.jsonl`
+- `G:\_Trash\allegation_units.jsonl` (0 bytes) → matched `G:\\Archives\CYCLEPACK_SMOKE_NESTED\runs\RUN_SMOKE_NESTED__00001__outer\outputs\jtc\allegation_units.jsonl`
+- `G:\_Trash\pii_scan_findings.jsonl` (0 bytes) → matched `G:\\Archives\CYCLEPACK_SMOKE_NESTED\runs\RUN_SMOKE_NESTED__00001__outer\outputs\pii\pii_scan_findings.jsonl`
+- `G:\_Trash\controlling_order_candidates.jsonl` (0 bytes) → matched `G:\\Archives\CYCLEPACK_SMOKE_NESTED\runs\RUN_SMOKE_NESTED__00001__outer\outputs\record_spine\controlling_order_candidates.jsonl`
+- `G:\_Trash\service_chain.jsonl` (0 bytes) → matched `G:\\Archives\CYCLEPACK_SMOKE_NESTED\runs\RUN_SMOKE_NESTED__00001__outer\outputs\service_chain\service_chain.jsonl`
+- `G:\_Trash\issue_critical_hearings.jsonl` (0 bytes) → matched `G:\\Archives\CYCLEPACK_SMOKE_NESTED\runs\RUN_SMOKE_NESTED__00001__outer\outputs\transcripts\issue_critical_hearings.jsonl`
+- `G:\_Trash\rename_test.cpython-311.pyc` (5,592 bytes) → matched `C:\Users\andre\LitigationOS\00_SYSTEM\organizer\TOOLS\OrganizerStudio\LitigationOS_OrganizerStudio_v2026-01-23_PRO5_QT_AI\GDRIVE\__pycache__\rename_test.cpython-311.pyc`
+- `G:\_Trash\MAKE_ICON.cpython-311.pyc` (1,755 bytes) → matched `C:\Users\andre\LitigationOS\00_SYSTEM\organizer\TOOLS\OrganizerStudio\LitigationOS_OrganizerStudio_v2026-01-23_PRO5_QT_AI\__pycache__\MAKE_ICON.cpython-311.pyc`
+- `G:\_Trash\ai_semantic.cpython-311.pyc` (3,064 bytes) → matched `C:\Users\andre\LitigationOS\00_SYSTEM\organizer\TOOLS\OrganizerStudio\LitigationOS_OrganizerStudio_v2026-01-23_PRO5_QT_AI\AI\__pycache__\ai_semantic.cpython-311.pyc`
+- `G:\_Trash\__init__.cpython-311.pyc` (199 bytes) → matched `C:\Users\andre\LitigationOS\00_SYSTEM\organizer\TOOLS\OrganizerStudio\LitigationOS_OrganizerStudio_v2026-01-23_PRO5_QT_AI\AI\__pycache__\__init__.cpython-311.pyc`
+- `G:\_Trash\category_suggester.cpython-311.pyc` (2,562 bytes) → matched `C:\Users\andre\LitigationOS\00_SYSTEM\organizer\TOOLS\OrganizerStudio\LitigationOS_OrganizerStudio_v2026-01-23_PRO5_QT_AI\AI\__pycache__\category_suggester.cpython-311.pyc`
+- `G:\_Trash\embedding_engine.cpython-311.pyc` (4,294 bytes) → matched `C:\Users\andre\LitigationOS\00_SYSTEM\organizer\TOOLS\OrganizerStudio\LitigationOS_OrganizerStudio_v2026-01-23_PRO5_QT_AI\AI\__pycache__\embedding_engine.cpython-311.pyc`
+- `G:\_Trash\model_manager.cpython-311.pyc` (2,816 bytes) → matched `C:\Users\andre\LitigationOS\00_SYSTEM\organizer\TOOLS\OrganizerStudio\LitigationOS_OrganizerStudio_v2026-01-23_PRO5_QT_AI\AI\__pycache__\model_manager.cpython-311.pyc`
+- `G:\_Trash\.hintrc` (91 bytes) → matched `C:\Users\andre\LitigationOS\09_DATA\other\.hintrc`
+- `G:\_Trash\.gitkeep` (0 bytes) → matched `G:\\Legal\eternal_bloom_case_analysis\.gitkeep`
+- `G:\_Trash\.gitkeep_2` (0 bytes) → matched `C:\Users\andre\LitigationOS\09_DATA\other\.gitkeep_2`
+- `G:\_Trash\__init___377.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___377.py`
+- `G:\_Trash\__init___380.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___380.py`
+- `G:\_Trash\__init___382.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___382.py`
+- `G:\_Trash\__init___384.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___384.py`
+- `G:\_Trash\__init___385.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___385.py`
+- `G:\_Trash\__init___386.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___386.py`
+- `G:\_Trash\__init___388.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___388.py`
+- `G:\_Trash\README` (39 bytes) → matched `G:\\Archives\fredprime-legal-system-main\fredprime-legal-system-main\src\README`
+- `G:\_Trash\__init___389.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___389.py`
+- `G:\_Trash\__init___390.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___390.py`
+- `G:\_Trash\__init___393.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___393.py`
+- `G:\_Trash\__init___394.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___394.py`
+- `G:\_Trash\authority_triples_candidates_v33.jsonl` (0 bytes) → matched `G:\\Legal\litigationos_authority_ingest_v53-4\LitigationOS_Authority_Integrated_v3\outputs\authority_triples_candidates_v33.jsonl`
+- `G:\_Trash\claim_packets_demo.jsonl` (0 bytes) → matched `G:\\Legal\litigationos_authority_ingest_v53-4\LitigationOS_Authority_Integrated_v3\outputs\claim_packets_demo.jsonl`
+- `G:\_Trash\neo4j.env.example` (93 bytes) → matched `G:\\Archives\LitigationOS_BLOOMPACK_APPENDONLY_PART_01\v2026.01.17_DELTA2_GRAPH_INGEST\CANONICAL_KERNEL_v2026_01_17\config\neo4j.env.example`
+- `G:\_Trash\LITIGATIONOS_ROOT.marker` (74 bytes) → matched `G:\\Archives\LitigationOS_GovernorPillar_EvidenceRAG_GDrive_v6_bundle\LitigationOS\LITIGATIONOS_ROOT.marker`
+- `G:\_Trash\__init___396.py` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\__init___396.py`
+- `G:\_Trash\base_dir.cpython-311.pyc` (2,872 bytes) → matched `G:\\Archives\LitigationOS_GovernorPillar_EvidenceRAG_GDrive_v6_bundle\LitigationOS\code\common\__pycache__\base_dir.cpython-311.pyc`
+- `G:\_Trash\logging_utils.cpython-311.pyc` (1,678 bytes) → matched `G:\\Archives\LitigationOS_GovernorPillar_EvidenceRAG_GDrive_v6_bundle\LitigationOS\code\common\__pycache__\logging_utils.cpython-311.pyc`
+- `G:\_Trash\paths_utils.cpython-311.pyc` (1,160 bytes) → matched `G:\\Archives\LitigationOS_GovernorPillar_EvidenceRAG_GDrive_v6_bundle\LitigationOS\code\common\__pycache__\paths_utils.cpython-311.pyc`
+- `G:\_Trash\.gitkeep_3` (0 bytes) → matched `C:\Users\andre\LitigationOS\09_DATA\other\.gitkeep_3`
+- `G:\_Trash\cache.sqlite-wal` (0 bytes) → matched `G:\\Archives\LITIGATION_OS_SUPERGRAPH_BUNDLE_v3_20260104T2215Z\CACHE\cache.sqlite-wal`
+- `G:\_Trash\cli.cpython-311.pyc` (9,477 bytes) → matched `G:\\Archives\MBP_LitigationOS_WorldFirst_Pack_v2026_01_14_v4\MBP_LitigationOS_WorldFirst\mbp\__pycache__\cli.cpython-311.pyc`
+- `G:\_Trash\state.cpython-311.pyc` (3,404 bytes) → matched `G:\\Archives\MBP_LitigationOS_WorldFirst_Pack_v2026_01_14_v4\MBP_LitigationOS_WorldFirst\mbp\__pycache__\state.cpython-311.pyc`
+- `G:\_Trash\util_fs.cpython-311.pyc` (2,311 bytes) → matched `G:\\Archives\MBP_LitigationOS_WorldFirst_Pack_v2026_01_14_v4\MBP_LitigationOS_WorldFirst\mbp\__pycache__\util_fs.cpython-311.pyc`
+- `G:\_Trash\log.cpython-311.pyc` (3,057 bytes) → matched `G:\\Archives\MBP_LitigationOS_WorldFirst_Pack_v2026_01_14_v4\MBP_LitigationOS_WorldFirst\mbp\__pycache__\log.cpython-311.pyc`
+- `G:\_Trash\harvest.cpython-311.pyc` (11,070 bytes) → matched `G:\\Archives\MBP_LitigationOS_WorldFirst_Pack_v2026_01_14_v4\MBP_LitigationOS_WorldFirst\mbp\__pycache__\harvest.cpython-311.pyc`
+- `G:\_Trash\zip_harvest.cpython-311.pyc` (6,866 bytes) → matched `G:\\Archives\MBP_LitigationOS_WorldFirst_Pack_v2026_01_14_v4\MBP_LitigationOS_WorldFirst\mbp\__pycache__\zip_harvest.cpython-311.pyc`
+- `G:\_Trash\pdf_extract.cpython-311.pyc` (8,223 bytes) → matched `G:\\Archives\MBP_LitigationOS_WorldFirst_Pack_v2026_01_14_v4\MBP_LitigationOS_WorldFirst\mbp\__pycache__\pdf_extract.cpython-311.pyc`
+- `G:\_Trash\graph.cpython-311.pyc` (7,629 bytes) → matched `G:\\Archives\MBP_LitigationOS_WorldFirst_Pack_v2026_01_14_v4\MBP_LitigationOS_WorldFirst\mbp\__pycache__\graph.cpython-311.pyc`
+- `G:\_Trash\gates.cpython-311.pyc` (6,735 bytes) → matched `G:\\Archives\MBP_LitigationOS_WorldFirst_Pack_v2026_01_14_v4\MBP_LitigationOS_WorldFirst\mbp\__pycache__\gates.cpython-311.pyc`
+- `G:\_Trash\contextpack.cpython-311.pyc` (7,325 bytes) → matched `G:\\Archives\MBP_LitigationOS_WorldFirst_Pack_v2026_01_14_v4\MBP_LitigationOS_WorldFirst\mbp\__pycache__\contextpack.cpython-311.pyc`
+- `G:\_Trash\docgen.cpython-311.pyc` (4,604 bytes) → matched `G:\\Archives\MBP_LitigationOS_WorldFirst_Pack_v2026_01_14_v4\MBP_LitigationOS_WorldFirst\mbp\__pycache__\docgen.cpython-311.pyc`
+- `G:\_Trash\neo4j.cpython-311.pyc` (10,202 bytes) → matched `G:\\Archives\MBP_LitigationOS_WorldFirst_Pack_v2026_01_14_v4\MBP_LitigationOS_WorldFirst\mbp\__pycache__\neo4j.cpython-311.pyc`
+- `G:\_Trash\cycle_orchestrator.cpython-311.pyc` (50,788 bytes) → matched `G:\\Archives\MBP_PORTAL_PERMANENT_BRIDGE_INSTALLER_v6_NEXUS_DELTA_2026-01-11\addons\mbp_nexus_addon_v1\plugins\cycle_orchestrator\__pycache__\cycle_orchestrator.cpython-311.pyc`
+- `G:\_Trash\gather_mindeye2_artifacts.cpython-311.pyc` (8,958 bytes) → matched `G:\\Archives\MBP_PORTAL_PERMANENT_BRIDGE_INSTALLER_v6_NEXUS_DELTA_2026-01-11\addons\mbp_nexus_addon_v1\plugins\mindseye2\__pycache__\gather_mindeye2_artifacts.cpython-311.pyc`
+- `G:\_Trash\mindeye2_termux_allinone_v2_0.cpython-311.pyc` (123,370 bytes) → matched `G:\\Archives\MBP_PORTAL_PERMANENT_BRIDGE_INSTALLER_v6_NEXUS_DELTA_2026-01-11\addons\mbp_nexus_addon_v1\plugins\mindseye2\__pycache__\mindeye2_termux_allinone_v2_0.cpython-311.pyc`
+- `G:\_Trash\mbp_nexus_orchestrator.cpython-311.pyc` (51,942 bytes) → matched `G:\\Archives\MBP_PORTAL_PERMANENT_BRIDGE_INSTALLER_v6_NEXUS_DELTA_2026-01-11\addons\mbp_nexus_addon_v1\src\__pycache__\mbp_nexus_orchestrator.cpython-311.pyc`
+- `G:\_Trash\mbp_harvest_stub.cpython-311.pyc` (1,512 bytes) → matched `G:\\Archives\MBP_PORTAL_PERMANENT_BRIDGE_INSTALLER_v6_NEXUS_DELTA_2026-01-11\pipelines\__pycache__\mbp_harvest_stub.cpython-311.pyc`
+- `G:\_Trash\mbp_portal.cpython-311.pyc` (35,103 bytes) → matched `G:\\Archives\MBP_PORTAL_PERMANENT_BRIDGE_INSTALLER_v6_NEXUS_DELTA_2026-01-11\src\__pycache__\mbp_portal.cpython-311.pyc`
+- `G:\_Trash\.gitkeep_4` (0 bytes) → matched `C:\Users\andre\LitigationOS\09_DATA\other\.gitkeep_4`
+- `G:\_Trash\py_103.typed` (0 bytes) → matched `C:\Users\andre\LitigationOS\13_TOOLS\py_103.typed`
+
+</details>
+
+## Files Moved to _REVIEW (no match found)
+
+<details><summary>Show all 3302 files</summary>
+
+- `.~lock.HOA SHADY OAKS NEIGHBOR DOCUMENTS Copy.odg#` (96 bytes)
+- `cfgparser_198e4881(0).1` (67 bytes)
+- `cfgparser_198e4881.1` (67 bytes)
+- `_pydoc_7b8cc50c(0).css` (96 bytes)
+- `_pydoc_7b8cc50c.css` (96 bytes)
+- `default(0).css` (28 bytes)
+- `default.css` (28 bytes)
+- `index_3f0bc246.css` (67 bytes)
+- `style_5f368bb4.css` (79 bytes)
+- `style_b5843988.css` (80 bytes)
+- `__init__.cpython-313(0).pyc` (4,367 bytes)
+- `__init__.cpython-313(1)(0).pyc` (80,318 bytes)
+- `__init__.cpython-313.opt-1(0).pyc` (4,367 bytes)
+- `__init__.cpython-313.opt-2(0).pyc` (3,749 bytes)
+- `_diffcommand.cpython-313(0).pyc` (3,865 bytes)
+- `_difflib.cpython-313(0).pyc` (73,635 bytes)
+- `_html5builder.cpython-313(0).pyc` (5,943 bytes)
+- `_setmixin.cpython-313(0).pyc` (2,526 bytes)
+- `build_sqlite_cache.cpython-311(1).pyc` (15,922 bytes)
+- `builder.cpython-313(0).pyc` (7,322 bytes)
+- `builder.cpython-313.pyc` (7,322 bytes)
+- `clean.cpython-313(0).pyc` (578 bytes)
+- `clean.cpython-313.pyc` (578 bytes)
+- `defs.cpython-313(0).pyc` (3,311 bytes)
+- `defs.cpython-313.pyc` (3,311 bytes)
+- `diff.cpython-313(0).pyc` (35,265 bytes)
+- `diff.cpython-313.pyc` (35,265 bytes)
+- `ElementSoup.cpython-313(0).pyc` (564 bytes)
+- `ElementSoup.cpython-313.pyc` (564 bytes)
+- `entities.cpython-313(0).pyc` (97,657 bytes)
+- `entities.cpython-313.opt-1(0).pyc` (97,657 bytes)
+- `entities.cpython-313.opt-1.pyc` (97,657 bytes)
+- `entities.cpython-313.opt-2(0).pyc` (97,607 bytes)
+- `entities.cpython-313.opt-2.pyc` (97,607 bytes)
+- `entities.cpython-313.pyc` (97,657 bytes)
+- `export_casepack_json.cpython-311(1).pyc` (9,152 bytes)
+- `formfill.cpython-313(0).pyc` (12,536 bytes)
+- `formfill.cpython-313.pyc` (12,536 bytes)
+- `html5parser.cpython-313(0).pyc` (9,284 bytes)
+- `html5parser.cpython-313.pyc` (9,284 bytes)
+- `ingest_filesystem_to_graph.cpython-311(1).pyc` (27,976 bytes)
+- `ingest_filesystem_to_graph.cpython-311(2).pyc` (27,976 bytes)
+- `mindeye2_master.cpython-311(1).pyc` (92,853 bytes)
+- `parser.cpython-313(0).pyc` (20,651 bytes)
+- `parser.cpython-313.opt-1(0).pyc` (19,860 bytes)
+- `parser.cpython-313.opt-2(0).pyc` (18,611 bytes)
+- `soupparser.cpython-313(0).pyc` (11,795 bytes)
+- `usedoctest.cpython-313(0).pyc` (452 bytes)
+- `qt(0).conf` (55 bytes)
+- `qt.conf` (55 bytes)
+- `SystemIndex.2_b3d510ef(0).crwl` (2 bytes)
+- `SystemIndex.2_b3d510ef.crwl` (2 bytes)
+- `SystemIndex.3_b3d510ef(0).crwl` (2 bytes)
+- `SystemIndex.3_b3d510ef.crwl` (2 bytes)
+- `SystemIndex.5_b3d510ef(0).crwl` (2 bytes)
+- `SystemIndex.5_b3d510ef.crwl` (2 bytes)
+- `SystemIndex.7_b3d510ef(0).crwl` (2 bytes)
+- `SystemIndex.7_b3d510ef.crwl` (2 bytes)
+- `SystemIndex.8_b3d510ef(0).crwl` (2 bytes)
+- `SystemIndex.8_b3d510ef.crwl` (2 bytes)
+- `SystemIndex.11_b3d510ef.crwl` (2 bytes)
+- `SystemIndex.12_b3d510ef(0).crwl` (2 bytes)
+- `SystemIndex.12_b3d510ef.crwl` (2 bytes)
+- `SystemIndex.14_b3d510ef(0).crwl` (2 bytes)
+- `SystemIndex.14_b3d510ef.crwl` (2 bytes)
+- `SystemIndex.15_b3d510ef(0).crwl` (2 bytes)
+- `SystemIndex.15_b3d510ef.crwl` (2 bytes)
+- `SystemIndex.16_b3d510ef(0).crwl` (2 bytes)
+- `SystemIndex.16_b3d510ef.crwl` (2 bytes)
+- `SystemIndex.20_b3d510ef(0).crwl` (2 bytes)
+- `SystemIndex.20_b3d510ef.crwl` (2 bytes)
+- `SystemIndex.21.Crwl` (2 bytes)
+- `SystemIndex.21_b3d510ef(0).crwl` (2 bytes)
+- `SystemIndex.21_b3d510ef.crwl` (2 bytes)
+- `WPSettings_0cfcd398.dat` (12 bytes)
+- `database_uuid (1)` (36 bytes)
+- `example_noext_526edff5` (68 bytes)
+- `example_noext_526edff5(0)` (68 bytes)
+- `fetch_macholib_a9f6faac` (84 bytes)
+- `fetch_macholib_a9f6faac(0)` (84 bytes)
+- `version_f8c6fa12` (6 bytes)
+- `index.js_1220a0cc.flow` (60 bytes)
+- `types.js_ab730f2f.map` (89 bytes)
+- `mocha_e071fd13.opts` (27 bytes)
+- `example_stub_5546cf75(0).pyi` (87 bytes)
+- `example_stub_5546cf75.pyi` (87 bytes)
+- `changelog_50f4abfa(0).rst` (75 bytes)
+- `changelog_50f4abfa.rst` (75 bytes)
+- `includetest_1a766cca(0).rst` (25 bytes)
+- `includetest_1a766cca.rst` (25 bytes)
+- `FRED_FSYNC_v1.spec` (45 bytes)
+- `GUI_V6.spec` (35 bytes)
+- `.~lock.HOA SHADY OAKS NEIGHBOR DOCUMENTS Copy_2.odg#` (96 bytes)
+- `__init__.cpython-312.pyc` (168 bytes)
+- `app.cpython-312.pyc` (3,502 bytes)
+- `runner.cpython-312.pyc` (4,644 bytes)
+- `__init__.cpython-312_2.pyc` (253 bytes)
+- `autocompletion.cpython-312.pyc` (9,075 bytes)
+- `base_command.cpython-312.pyc` (10,559 bytes)
+- `cmdoptions.cpython-312.pyc` (30,301 bytes)
+- `command_context.cpython-312.pyc` (1,791 bytes)
+- `index_command.cpython-312.pyc` (7,175 bytes)
+- `main.cpython-312.pyc` (2,237 bytes)
+- `main_parser.cpython-312.pyc` (4,812 bytes)
+- `parser.cpython-312.pyc` (14,784 bytes)
+- `progress_bars.cpython-312.pyc` (6,045 bytes)
+- `req_command.cpython-312.pyc` (13,795 bytes)
+- `spinners.cpython-312.pyc` (11,226 bytes)
+- `status_codes.cpython-312.pyc` (353 bytes)
+- `__init__.cpython-312_3.pyc` (4,095 bytes)
+- `cache.cpython-312.pyc` (10,140 bytes)
+- `check.cpython-312.pyc` (2,534 bytes)
+- `completion.cpython-312.pyc` (5,404 bytes)
+- `configuration.cpython-312.pyc` (13,305 bytes)
+- `debug.cpython-312.pyc` (9,939 bytes)
+- `download.cpython-312.pyc` (7,234 bytes)
+- `freeze.cpython-312.pyc` (4,263 bytes)
+- `hash.cpython-312.pyc` (2,911 bytes)
+- `help.cpython-312.pyc` (1,616 bytes)
+- `index.cpython-312.pyc` (7,233 bytes)
+- `inspect.cpython-312.pyc` (3,927 bytes)
+- `install.cpython-312.pyc` (29,723 bytes)
+- `list.cpython-312.pyc` (16,994 bytes)
+- `lock.cpython-312.pyc` (7,870 bytes)
+- `search.cpython-312.pyc` (7,584 bytes)
+- `show.cpython-312.pyc` (11,166 bytes)
+- `uninstall.cpython-312.pyc` (4,652 bytes)
+- `wheel.cpython-312.pyc` (8,325 bytes)
+- `__init__.cpython-312_4.pyc` (919 bytes)
+- `base.cpython-312.pyc` (2,897 bytes)
+- `installed.cpython-312.pyc` (1,747 bytes)
+- `sdist.cpython-312.pyc` (8,300 bytes)
+- `wheel.cpython-312_2.pyc` (2,296 bytes)
+- `__init__.cpython-312_5.pyc` (207 bytes)
+- `collector.cpython-312.pyc` (21,196 bytes)
+- `package_finder.cpython-312.pyc` (42,083 bytes)
+- `sources.cpython-312.pyc` (12,285 bytes)
+- `__init__.cpython-312_6.pyc` (15,289 bytes)
+- `_distutils.cpython-312.pyc` (6,748 bytes)
+- `_sysconfig.cpython-312.pyc` (7,898 bytes)
+- `base.cpython-312_2.pyc` (3,686 bytes)
+- `__init__.cpython-312_7.pyc` (336 bytes)
+- `_compat.cpython-312.pyc` (4,215 bytes)
+- `_dists.cpython-312.pyc` (12,787 bytes)
+- `_envs.cpython-312.pyc` (7,985 bytes)
+- `__init__.cpython-312_8.pyc` (6,739 bytes)
+- `_json.cpython-312.pyc` (2,851 bytes)
+- `base.cpython-312_3.pyc` (34,413 bytes)
+- `pkg_resources.cpython-312.pyc` (15,762 bytes)
+- `__init__.cpython-312_9.pyc` (241 bytes)
+- `candidate.cpython-312.pyc` (1,582 bytes)
+- `direct_url.cpython-312.pyc` (10,481 bytes)
+- `format_control.cpython-312.pyc` (4,102 bytes)
+- `index.cpython-312_2.pyc` (1,672 bytes)
+- `installation_report.cpython-312.pyc` (2,268 bytes)
+- `link.cpython-312.pyc` (26,634 bytes)
+- `pylock.cpython-312.pyc` (7,839 bytes)
+- `scheme.cpython-312.pyc` (1,001 bytes)
+- `search_scope.cpython-312.pyc` (4,930 bytes)
+- `selection_prefs.cpython-312.pyc` (1,856 bytes)
+- `target_python.cpython-312.pyc` (4,832 bytes)
+- `wheel.cpython-312_3.pyc` (4,647 bytes)
+- `__init__.cpython-312_10.pyc` (229 bytes)
+- `auth.cpython-312.pyc` (21,441 bytes)
+- `cache.cpython-312_2.pyc` (7,909 bytes)
+- `download.cpython-312_2.pyc` (16,034 bytes)
+- `lazy_wheel.cpython-312.pyc` (11,540 bytes)
+- `session.cpython-312.pyc` (19,176 bytes)
+- `utils.cpython-312.pyc` (2,230 bytes)
+- `xmlrpc.cpython-312.pyc` (2,908 bytes)
+- `__init__.cpython-312_11.pyc` (181 bytes)
+- `build_tracker.cpython-312.pyc` (7,556 bytes)
+- `metadata.cpython-312.pyc` (1,830 bytes)
+- `metadata_editable.cpython-312.pyc` (1,884 bytes)
+- `wheel.cpython-312_4.pyc` (1,696 bytes)
+- `wheel_editable.cpython-312.pyc` (2,035 bytes)
+- `__init__.cpython-312_12.pyc` (241 bytes)
+- `wheel.cpython-312_5.pyc` (34,050 bytes)
+- `__init__.cpython-312_13.pyc` (175 bytes)
+- `check.cpython-312_2.pyc` (7,135 bytes)
+- `freeze.cpython-312_2.pyc` (10,173 bytes)
+- `prepare.cpython-312.pyc` (26,541 bytes)
+- `__init__.cpython-312_14.pyc` (3,966 bytes)
+- `constructors.cpython-312.pyc` (21,641 bytes)
+- `req_dependency_group.cpython-312.pyc` (3,976 bytes)
+- `req_file.cpython-312.pyc` (23,725 bytes)
+- `req_install.cpython-312.pyc` (34,579 bytes)
+- `req_set.cpython-312.pyc` (5,410 bytes)
+- `req_uninstall.cpython-312.pyc` (31,580 bytes)
+- `__init__.cpython-312_15.pyc` (182 bytes)
+- `resolver.cpython-312.pyc` (22,492 bytes)
+- `__init__.cpython-312_16.pyc` (186 bytes)
+- `base.cpython-312_4.pyc` (7,961 bytes)
+- `candidates.cpython-312.pyc` (29,410 bytes)
+- `factory.cpython-312.pyc` (33,762 bytes)
+- `found_candidates.cpython-312.pyc` (6,709 bytes)
+- `provider.cpython-312.pyc` (11,606 bytes)
+- `reporter.cpython-312.pyc` (5,778 bytes)
+- `requirements.cpython-312.pyc` (14,736 bytes)
+- `resolver.cpython-312_2.pyc` (12,341 bytes)
+- `__init__.cpython-312_17.pyc` (175 bytes)
+- `base.cpython-312_5.pyc` (1,146 bytes)
+- `__init__.cpython-312_18.pyc` (170 bytes)
+- `_jaraco_text.cpython-312.pyc` (4,505 bytes)
+- `_log.cpython-312.pyc` (1,841 bytes)
+- `appdirs.cpython-312.pyc` (2,430 bytes)
+- `compat.cpython-312.pyc` (2,997 bytes)
+- `compatibility_tags.cpython-312.pyc` (6,622 bytes)
+- `datetime.cpython-312.pyc` (654 bytes)
+- `deprecation.cpython-312.pyc` (4,184 bytes)
+- `direct_url_helpers.cpython-312.pyc` (3,514 bytes)
+- `egg_link.cpython-312.pyc` (3,119 bytes)
+- `entrypoints.cpython-312.pyc` (4,030 bytes)
+- `filesystem.cpython-312.pyc` (7,941 bytes)
+- `filetypes.cpython-312.pyc` (1,104 bytes)
+- `glibc.cpython-312.pyc` (2,325 bytes)
+- `hashes.cpython-312.pyc` (7,397 bytes)
+- `logging.cpython-312.pyc` (13,839 bytes)
+- `misc.cpython-312.pyc` (32,667 bytes)
+- `packaging.cpython-312.pyc` (1,860 bytes)
+- `retry.cpython-312.pyc` (1,947 bytes)
+- `subprocess.cpython-312.pyc` (8,482 bytes)
+- `temp_dir.cpython-312.pyc` (11,884 bytes)
+- `unpacking.cpython-312.pyc` (14,286 bytes)
+- `urls.cpython-312.pyc` (2,056 bytes)
+- `virtualenv.cpython-312.pyc` (4,355 bytes)
+- `wheel.cpython-312_6.pyc` (5,841 bytes)
+- `__init__.cpython-312_19.pyc` (509 bytes)
+- `bazaar.cpython-312.pyc` (5,128 bytes)
+- `git.cpython-312.pyc` (19,886 bytes)
+- `mercurial.cpython-312.pyc` (7,735 bytes)
+- `subversion.cpython-312.pyc` (12,315 bytes)
+- `versioncontrol.cpython-312.pyc` (28,705 bytes)
+- `__init__.cpython-312_20.pyc` (729 bytes)
+- `build_env.cpython-312.pyc` (18,151 bytes)
+- `cache.cpython-312_3.pyc` (12,346 bytes)
+- `configuration.cpython-312_2.pyc` (18,216 bytes)
+- `exceptions.cpython-312.pyc` (40,549 bytes)
+- `main.cpython-312_2.pyc` (612 bytes)
+- `pyproject.cpython-312.pyc` (4,064 bytes)
+- `self_outdated_check.cpython-312.pyc` (10,231 bytes)
+- `wheel_builder.cpython-312.pyc` (10,665 bytes)
+- `py_2.typed` (0 bytes)
+- `__init__.cpython-312_21.pyc` (414 bytes)
+- `file_cache.cpython-312.pyc` (7,013 bytes)
+- `redis_cache.cpython-312.pyc` (2,712 bytes)
+- `__init__.cpython-312_22.pyc` (881 bytes)
+- `_cmd.cpython-312.pyc` (2,625 bytes)
+- `adapter.cpython-312.pyc` (6,690 bytes)
+- `cache.cpython-312_4.pyc` (3,766 bytes)
+- `controller.cpython-312.pyc` (16,432 bytes)
+- `filewrapper.cpython-312.pyc` (4,326 bytes)
+- `heuristics.cpython-312.pyc` (6,676 bytes)
+- `serialize.cpython-312.pyc` (5,240 bytes)
+- `wrapper.cpython-312.pyc` (1,653 bytes)
+- `__init__.cpython-312_23.pyc` (297 bytes)
+- `__main__.cpython-312.pyc` (624 bytes)
+- `core.cpython-312.pyc` (2,061 bytes)
+- `__init__.cpython-312_24.pyc` (356 bytes)
+- `__main__.cpython-312_2.pyc` (2,662 bytes)
+- `_implementation.cpython-312.pyc` (9,604 bytes)
+- `_lint_dependency_groups.cpython-312.pyc` (2,826 bytes)
+- `_pip_wrapper.cpython-312.pyc` (3,396 bytes)
+- `_toml_compat.cpython-312.pyc` (457 bytes)
+- `__init__.cpython-312_25.pyc` (1,248 bytes)
+- `compat.cpython-312_2.pyc` (45,505 bytes)
+- `resources.cpython-312.pyc` (17,291 bytes)
+- `scripts.cpython-312.pyc` (19,736 bytes)
+- `util.cpython-312.pyc` (88,014 bytes)
+- `__init__.cpython-312_26.pyc` (939 bytes)
+- `__main__.cpython-312_3.pyc` (271 bytes)
+- `distro.cpython-312.pyc` (53,771 bytes)
+- `__init__.cpython-312_27.pyc` (865 bytes)
+- `codec.cpython-312.pyc` (4,955 bytes)
+- `compat.cpython-312_3.pyc` (869 bytes)
+- `core.cpython-312_2.pyc` (16,100 bytes)
+- `idnadata.cpython-312.pyc` (99,455 bytes)
+- `intranges.cpython-312.pyc` (2,612 bytes)
+- `package_data.cpython-312.pyc` (196 bytes)
+- `uts46data.cpython-312.pyc` (158,825 bytes)
+- `__init__.cpython-312_28.pyc` (1,718 bytes)
+- `exceptions.cpython-312_2.pyc` (2,004 bytes)
+- `ext.cpython-312.pyc` (8,272 bytes)
+- `fallback.cpython-312.pyc` (41,469 bytes)
+- `__init__.cpython-312_29.pyc` (4,099 bytes)
+- `_spdx.cpython-312.pyc` (47,343 bytes)
+- `__init__.cpython-312_30.pyc` (537 bytes)
+- `_elffile.cpython-312.pyc` (4,995 bytes)
+- `_manylinux.cpython-312.pyc` (9,685 bytes)
+- `_musllinux.cpython-312.pyc` (4,533 bytes)
+- `_parser.cpython-312.pyc` (13,962 bytes)
+- `_structures.cpython-312.pyc` (3,220 bytes)
+- `_tokenizer.cpython-312.pyc` (7,931 bytes)
+- `markers.cpython-312.pyc` (12,745 bytes)
+- `metadata.cpython-312_2.pyc` (27,187 bytes)
+- `requirements.cpython-312_2.pyc` (4,389 bytes)
+- `specifiers.cpython-312.pyc` (39,018 bytes)
+- `tags.cpython-312.pyc` (24,652 bytes)
+- `utils.cpython-312_2.pyc` (6,614 bytes)
+- `version.cpython-312.pyc` (20,465 bytes)
+- `__init__.cpython-312_31.pyc` (161,228 bytes)
+- `__init__.cpython-312_32.pyc` (19,826 bytes)
+- `__main__.cpython-312_4.pyc` (1,927 bytes)
+- `android.cpython-312.pyc` (10,664 bytes)
+- `api.cpython-312.pyc` (13,319 bytes)
+- `macos.cpython-312.pyc` (8,982 bytes)
+- `unix.cpython-312.pyc` (14,730 bytes)
+- `version.cpython-312_2.pyc` (782 bytes)
+- `windows.cpython-312.pyc` (13,653 bytes)
+- `__init__.cpython-312_33.pyc` (37,891 bytes)
+- `__init__.cpython-312_34.pyc` (6,882 bytes)
+- `_mapping.cpython-312.pyc` (4,195 bytes)
+- `__init__.cpython-312_35.pyc` (14,601 bytes)
+- `_mapping.cpython-312_2.pyc` (69,824 bytes)
+- `python.cpython-312.pyc` (42,952 bytes)
+- `__init__.cpython-312_36.pyc` (2,644 bytes)
+- `_mapping.cpython-312_3.pyc` (3,628 bytes)
+- `__init__.cpython-312_37.pyc` (3,468 bytes)
+- `__main__.cpython-312_5.pyc` (714 bytes)
+- `console.cpython-312.pyc` (2,608 bytes)
+- `filter.cpython-312.pyc` (3,201 bytes)
+- `formatter.cpython-312.pyc` (4,700 bytes)
+- `lexer.cpython-312.pyc` (38,341 bytes)
+- `modeline.cpython-312.pyc` (1,539 bytes)
+- `plugin.cpython-312.pyc` (2,588 bytes)
+- `regexopt.cpython-312.pyc` (4,057 bytes)
+- `scanner.cpython-312.pyc` (4,736 bytes)
+- `sphinxext.cpython-312.pyc` (12,078 bytes)
+- `style.cpython-312.pyc` (6,673 bytes)
+- `token.cpython-312.pyc` (8,169 bytes)
+- `unistring.cpython-312.pyc` (32,952 bytes)
+- `util.cpython-312_2.pyc` (14,049 bytes)
+- `__init__.cpython-312_38.pyc` (1,056 bytes)
+- `_in_process.cpython-312.pyc` (15,294 bytes)
+- `__init__.cpython-312_39.pyc` (727 bytes)
+- `_impl.cpython-312.pyc` (18,026 bytes)
+- `__init__.cpython-312_40.pyc` (5,233 bytes)
+- `__version__.cpython-312.pyc` (564 bytes)
+- `_internal_utils.cpython-312.pyc` (2,004 bytes)
+- `adapters.cpython-312.pyc` (27,846 bytes)
+- `api.cpython-312_2.pyc` (7,171 bytes)
+- `auth.cpython-312_2.pyc` (13,901 bytes)
+- `certs.cpython-312.pyc` (658 bytes)
+- `compat.cpython-312_4.pyc` (1,965 bytes)
+- `cookies.cpython-312.pyc` (25,178 bytes)
+- `exceptions.cpython-312_3.pyc` (7,578 bytes)
+- `help.cpython-312_2.pyc` (4,208 bytes)
+- `hooks.cpython-312.pyc` (1,031 bytes)
+- `models.cpython-312.pyc` (35,503 bytes)
+- `packages.cpython-312.pyc` (1,246 bytes)
+- `sessions.cpython-312.pyc` (27,834 bytes)
+- `status_codes.cpython-312_2.pyc` (6,003 bytes)
+- `structures.cpython-312.pyc` (5,603 bytes)
+- `utils.cpython-312_3.pyc` (36,094 bytes)
+- `__init__.cpython-312_41.pyc` (719 bytes)
+- `abstract.cpython-312.pyc` (2,425 bytes)
+- `criterion.cpython-312.pyc` (3,256 bytes)
+- `exceptions.cpython-312_4.pyc` (4,063 bytes)
+- `resolution.cpython-312.pyc` (25,125 bytes)
+- `__init__.cpython-312_42.pyc` (614 bytes)
+- `providers.cpython-312.pyc` (10,105 bytes)
+- `reporters.cpython-312.pyc` (3,269 bytes)
+- `structs.cpython-312.pyc` (12,424 bytes)
+- `__init__.cpython-312_43.pyc` (6,995 bytes)
+- `__main__.cpython-312_6.pyc` (9,518 bytes)
+- `_cell_widths.cpython-312.pyc` (7,852 bytes)
+- `_emoji_codes.cpython-312.pyc` (205,956 bytes)
+- `_emoji_replace.cpython-312.pyc` (1,709 bytes)
+- `_export_format.cpython-312.pyc` (2,329 bytes)
+- `_extension.cpython-312.pyc` (517 bytes)
+- `_fileno.cpython-312.pyc` (835 bytes)
+- `_inspect.cpython-312.pyc` (12,003 bytes)
+- `_log_render.cpython-312.pyc` (4,127 bytes)
+- `_loop.cpython-312.pyc` (1,850 bytes)
+- `_null_file.cpython-312.pyc` (3,609 bytes)
+- `_palettes.cpython-312.pyc` (5,140 bytes)
+- `_pick.cpython-312.pyc` (701 bytes)
+- `_ratio.cpython-312.pyc` (6,403 bytes)
+- `_spinners.cpython-312.pyc` (13,159 bytes)
+- `_stack.cpython-312.pyc` (945 bytes)
+- `_timer.cpython-312.pyc` (845 bytes)
+- `_win32_console.cpython-312.pyc` (28,791 bytes)
+- `_windows.cpython-312.pyc` (2,470 bytes)
+- `_windows_renderer.cpython-312.pyc` (3,543 bytes)
+- `_wrap.cpython-312.pyc` (3,306 bytes)
+- `abc.cpython-312.pyc` (1,588 bytes)
+- `align.cpython-312.pyc` (12,224 bytes)
+- `ansi.cpython-312.pyc` (9,061 bytes)
+- `bar.cpython-312.pyc` (4,252 bytes)
+- `box.cpython-312.pyc` (11,671 bytes)
+- `cells.cpython-312.pyc` (5,540 bytes)
+- `color.cpython-312.pyc` (26,532 bytes)
+- `color_triplet.cpython-312.pyc` (1,681 bytes)
+- `columns.cpython-312.pyc` (8,564 bytes)
+- `console.cpython-312_2.pyc` (115,022 bytes)
+- `constrain.cpython-312.pyc` (2,238 bytes)
+- `containers.cpython-312.pyc` (9,190 bytes)
+- `control.cpython-312.pyc` (10,776 bytes)
+- `default_styles.cpython-312.pyc` (10,501 bytes)
+- `diagnose.cpython-312.pyc` (1,501 bytes)
+- `emoji.cpython-312.pyc` (4,061 bytes)
+- `errors.cpython-312.pyc` (1,825 bytes)
+- `file_proxy.cpython-312.pyc` (3,551 bytes)
+- `filesize.cpython-312.pyc` (3,027 bytes)
+- `highlighter.cpython-312.pyc` (9,868 bytes)
+- `json.cpython-312.pyc` (6,015 bytes)
+- `jupyter.cpython-312.pyc` (5,188 bytes)
+- `layout.cpython-312.pyc` (20,138 bytes)
+- `live.cpython-312.pyc` (19,973 bytes)
+- `live_render.cpython-312.pyc` (4,725 bytes)
+- `logging.cpython-312_2.pyc` (14,054 bytes)
+- `markup.cpython-312.pyc` (9,547 bytes)
+- `measure.cpython-312.pyc` (6,358 bytes)
+- `padding.cpython-312.pyc` (6,913 bytes)
+- `pager.cpython-312.pyc` (1,791 bytes)
+- `palette.cpython-312.pyc` (5,277 bytes)
+- `panel.cpython-312.pyc` (12,704 bytes)
+- `pretty.cpython-312.pyc` (40,591 bytes)
+- `progress.cpython-312.pyc` (74,919 bytes)
+- `progress_bar.cpython-312.pyc` (10,357 bytes)
+- `prompt.cpython-312.pyc` (15,985 bytes)
+- `protocol.cpython-312.pyc` (1,772 bytes)
+- `region.cpython-312.pyc` (547 bytes)
+- `repr.cpython-312.pyc` (6,593 bytes)
+- `rule.cpython-312.pyc` (6,548 bytes)
+- `scope.cpython-312.pyc` (3,805 bytes)
+- `screen.cpython-312.pyc` (2,459 bytes)
+- `segment.cpython-312.pyc` (28,517 bytes)
+- `spinner.cpython-312.pyc` (5,903 bytes)
+- `status.cpython-312.pyc` (6,041 bytes)
+- `style.cpython-312_2.pyc` (33,397 bytes)
+- `styled.cpython-312.pyc` (2,119 bytes)
+- `syntax.cpython-312.pyc` (40,943 bytes)
+- `table.cpython-312.pyc` (43,817 bytes)
+- `terminal_theme.cpython-312.pyc` (3,328 bytes)
+- `text.cpython-312.pyc` (61,190 bytes)
+- `theme.cpython-312.pyc` (6,307 bytes)
+- `themes.cpython-312.pyc` (294 bytes)
+- `traceback.cpython-312.pyc` (36,153 bytes)
+- `tree.cpython-312.pyc` (11,773 bytes)
+- `py_12.typed` (26 bytes)
+- `__init__.cpython-312_44.pyc` (318 bytes)
+- `_parser.cpython-312_2.pyc` (29,393 bytes)
+- `_re.cpython-312.pyc` (4,056 bytes)
+- `_types.cpython-312.pyc` (346 bytes)
+- `py_13.typed` (26 bytes)
+- `__init__.cpython-312_45.pyc` (307 bytes)
+- `_writer.cpython-312.pyc` (10,329 bytes)
+- `__init__.cpython-312_46.pyc` (1,432 bytes)
+- `_api.cpython-312.pyc` (17,512 bytes)
+- `_macos.cpython-312.pyc` (18,967 bytes)
+- `_openssl.cpython-312.pyc` (2,236 bytes)
+- `_ssl_constants.cpython-312.pyc` (1,079 bytes)
+- `_windows.cpython-312_2.pyc` (15,745 bytes)
+- `__init__.cpython-312_47.pyc` (195 bytes)
+- `bindings.cpython-312.pyc` (17,407 bytes)
+- `low_level.cpython-312.pyc` (14,743 bytes)
+- `__init__.cpython-312_48.pyc` (178 bytes)
+- `_appengine_environ.cpython-312.pyc` (1,828 bytes)
+- `appengine.cpython-312.pyc` (11,544 bytes)
+- `ntlmpool.cpython-312.pyc` (5,694 bytes)
+- `pyopenssl.cpython-312.pyc` (24,428 bytes)
+- `securetransport.cpython-312.pyc` (35,481 bytes)
+- `socks.cpython-312.pyc` (7,491 bytes)
+- `__init__.cpython-312_49.pyc` (189 bytes)
+- `makefile.cpython-312.pyc` (1,805 bytes)
+- `weakref_finalize.cpython-312.pyc` (7,316 bytes)
+- `__init__.cpython-312_50.pyc` (179 bytes)
+- `six.cpython-312.pyc` (41,235 bytes)
+- `__init__.cpython-312_51.pyc` (1,126 bytes)
+- `connection.cpython-312.pyc` (4,727 bytes)
+- `proxy.cpython-312.pyc` (1,532 bytes)
+- `queue.cpython-312.pyc` (1,332 bytes)
+- `request.cpython-312.pyc` (4,163 bytes)
+- `response.cpython-312.pyc` (2,972 bytes)
+- `retry.cpython-312_2.pyc` (21,702 bytes)
+- `ssl_.cpython-312.pyc` (15,344 bytes)
+- `ssl_match_hostname.cpython-312.pyc` (5,031 bytes)
+- `ssltransport.cpython-312.pyc` (10,733 bytes)
+- `timeout.cpython-312.pyc` (11,119 bytes)
+- `url.cpython-312.pyc` (15,765 bytes)
+- `wait.cpython-312.pyc` (4,383 bytes)
+- `__init__.cpython-312_52.pyc` (3,385 bytes)
+- `_collections.cpython-312.pyc` (16,344 bytes)
+- `_version.cpython-312.pyc` (198 bytes)
+- `connection.cpython-312_2.pyc` (20,383 bytes)
+- `connectionpool.cpython-312.pyc` (36,518 bytes)
+- `exceptions.cpython-312_5.pyc` (13,473 bytes)
+- `fields.cpython-312.pyc` (10,382 bytes)
+- `filepost.cpython-312.pyc` (3,992 bytes)
+- `poolmanager.cpython-312.pyc` (20,409 bytes)
+- `request.cpython-312_2.pyc` (7,274 bytes)
+- `response.cpython-312_2.pyc` (33,923 bytes)
+- `__init__.cpython-312_53.pyc` (4,572 bytes)
+- `__init__.cpython-312_54.pyc` (627 bytes)
+- `__main__.cpython-312_7.pyc` (819 bytes)
+- `__pip-runner__.cpython-312.pyc` (2,183 bytes)
+- `WHEEL_2` (82 bytes)
+- `INSTALLER_2` (4 bytes)
+- `typing_extensions.cpython-312.pyc` (163,617 bytes)
+
+... and 2802 more
+
+</details>
+

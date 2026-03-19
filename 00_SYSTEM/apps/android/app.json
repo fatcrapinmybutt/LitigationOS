@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "LitigationOS",
+    "slug": "litigation-os",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0a0e27"
+    },
+    "android": {
+      "package": "com.litigationos.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0e27"
+      },
+      "permissions": ["NOTIFICATIONS", "VIBRATE"]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-notifications"
+    ],
+    "scheme": "litigationos",
+    "extra": {
+      "eas": {
+        "projectId": "placeholder"
+      }
+    }
+  }
+}

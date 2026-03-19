@@ -1,0 +1,28 @@
+{
+  "ts": "20260208_2209",
+  "neo4j_nodes": {
+    "rows": 62027,
+    "unique_ids": 62026
+  },
+  "nodes_normalized": {
+    "rows": 73914,
+    "unique_ids": 73914
+  },
+  "overlap": {
+    "intersection": 62026,
+    "only_neo": 0,
+    "only_nodes_normalized": 11888
+  },
+  "graphml_membership": [
+    {
+      "set": "neo4j_nodes",
+      "present_in_graphml": 28256,
+      "set_size": 62027
+    },
+    {
+      "set": "nodes_normalized",
+      "present_in_graphml": 40143,
+      "set_size": 73914
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+relpath,ext,hit_total,top_keywords,bytes,pdf_pages,pdf_snippet
+ATTACHMENT_HARVEST_20260208/ATTACHMENT_HARVEST_20260208/nodes_merged_label_counts.csv,.csv,1134,ppo:262|order:214|custody:137|motion:129|parenting time:83|sanction:49|service:43|contempt:27|hearing:27|objection:26,1047470,,
+ATTACHMENT_HARVEST_20260208/ATTACHMENT_HARVEST_20260208/contradiction_map_normalized.csv,.csv,698,order:143|ppo:87|service:68|hearing:68|motion:63|mcneill:36|filed:36|docket:23|email:21|show cause:18,36449309,,
+ATTACHMENT_HARVEST_20260208/ATTACHMENT_HARVEST_20260208/nodes_neo4j_admin_label_counts.csv,.csv,674,ppo:229|order:135|custody:80|motion:41|contempt:35|objection:23|served:21|sanction:18|service:17|judge:16,668002,,
+ATTACHMENT_HARVEST_20260208/ATTACHMENT_HARVEST_20260208/tail_preview.txt,.txt,305,order:63|custody:38|ppo:31|motion:24|parenting time:22|judge:18|service:18|roa:17|personal protection:16|ex parte:14,138413479,,
+ATTACHMENT_HARVEST_20260208/ATTACHMENT_HARVEST_20260208/ATTACHMENT_HARVEST_REPORT.md,.md,35,order:9|custody:5|watson:4|mcneill:4|judge:3|ppo:3|email:2|service:2|emails:1|hearing:1,9325,,
+MEEK234_FULLSTACK_REBUILD_PACK_v20260208/MEEK234_REBUILD_SPEC_v20260208.md,.md,24,order:11|ppo:4|roa:2|service:2|contempt:1|hearing:1|parenting time:1|custody:1|motion:1,3403,,
+ATTACHMENT_HARVEST_20260208/ATTACHMENT_HARVEST_20260208/JTC_PrintOrder_keypages_p498.txt,.txt,11,watson:2|ppo:2|hearing:2|ex parte:2|mcneill:1|custody:1|submitted:1,1757,,
+ATTACHMENT_HARVEST_20260208/ATTACHMENT_HARVEST_20260208/supplement_docx_extracted.txt,.txt,10,email:2|emails:2|hearing:2|judge:1|ppo:1|order:1|healthwest:1,765,,
+ATTACHMENT_HARVEST_20260208/ATTACHMENT_HARVEST_20260208/JTC_PrintOrder_keypages_p2.txt,.txt,4,watson:2|mcneill:1|ex parte:1,1096,,
+MEEK2_CUSTODY_LITIGATION_PACK/Pigors_Transcript.pdf,.pdf,0,,334799,8.0,"STATE OF MICHIGAN 14TH CIRCUIT COURT FOR THE COUNTY OF MUSKEGON EMILY A. WATSON, Plaintiff/Petitioner, File No. 2023-5907-PP v ANDREW J. PIGORS, Defendant/Respondent. _______________________________/ SHOW CAUSE HEARING O"

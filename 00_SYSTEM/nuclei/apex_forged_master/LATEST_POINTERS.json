@@ -1,0 +1,12 @@
+{
+  "ts": "20260208_2144",
+  "canonical_poster_pdf": "NUCLEUS_APEX_POSTER_BLUEPRINT_V3_4_20260208_2132.pdf",
+  "history": {
+    "v3_3_poster_pdf": "NUCLEUS_APEX_POSTER_BLUEPRINT_V3_3_20260208_2124.pdf",
+    "v3_4_poster_pdf": "NUCLEUS_APEX_POSTER_BLUEPRINT_V3_4_20260208_2132.pdf"
+  },
+  "metrics": {
+    "v3_3": "V3_3/metrics_v3_3/",
+    "v3_4": "V3_4/metrics_v3_4/"
+  }
+}

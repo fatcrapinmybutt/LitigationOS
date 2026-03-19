@@ -1,0 +1,15 @@
+actionId:ID,name,forum,lane,omegaScore:int,tier,evidenceStrength:int,legalAuthority:int,strategicImpact:int,urgency:int,feasibility:int,:LABEL
+jtc-formal-complaint,JTC Formal Complaint (9-Count),JTC,D,93,CRITICAL,10,9,10,9,8,Action
+msc-emergency-app,MSC Emergency Application,MSC,A,84,HIGH,9,8,10,10,7,Action
+msc-superintending,MSC Superintending Control,MSC,A,81,HIGH,8,9,9,8,7,Action
+msc-habeas,MSC Habeas Corpus,MSC,A,81,HIGH,9,9,9,10,6,Action
+usdc-1983-5count,USDC §1983 (5 Counts),USDC,E,81,HIGH,8,9,9,8,6,Action
+14th-vacate-exparte,Vacate Ex Parte Orders (24),14TH,C,79,HIGH,9,8,8,9,8,Action
+usdc-1983-injunction,USDC §1983 Injunctive Relief,USDC,E,75,HIGH,8,8,8,9,6,Action
+msc-mandamus,MSC Writ of Mandamus,MSC,A,74,HIGH,8,8,8,8,6,Action
+14th-disqualification,Disqualification (MCR 2.003),14TH,C,73,HIGH,9,8,8,7,7,Action
+coa-appeal-366810,COA Appeal 366810 Brief,COA,B,72,HIGH,8,8,7,7,8,Action
+14th-emergency-restore,Emergency Restore Parenting Time,14TH,C,72,HIGH,8,7,9,10,8,Action
+bar-berry,State Bar Complaint — Berry,BAR,F,72,HIGH,8,7,7,6,9,Action
+bar-barnes,State Bar Complaint — Barnes,BAR,F,71,HIGH,8,7,7,6,9,Action
+bar-martini,State Bar Complaint — Martini,BAR,F,66,MEDIUM,7,7,6,6,9,Action

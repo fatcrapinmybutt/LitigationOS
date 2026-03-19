@@ -1,0 +1,124 @@
+[
+  {
+    "name": "McNeill Disqualification",
+    "verdict": "NO-GO",
+    "issues": [
+      "MISSING DOCUMENTS: verification"
+    ],
+    "warnings": [
+      "UNRESOLVED PLACEHOLDERS: 8 in 5 files",
+      "  BRIEF_IN_SUPPORT.md: 1 placeholders",
+      "  CERTIFICATE_OF_SERVICE.md: 2 placeholders",
+      "  EXHIBIT_LIST.md: 2 placeholders",
+      "  MOTION_TO_DISQUALIFY_FINAL.md: 2 placeholders",
+      "  filing_instructions.md: 1 placeholders"
+    ],
+    "checks": {
+      "document_completeness": false,
+      "no_placeholders": false,
+      "signature_present": true,
+      "service_packet": true,
+      "deadline_days": 11
+    }
+  },
+  {
+    "name": "MSC Original Action",
+    "verdict": "GO",
+    "issues": [],
+    "warnings": [
+      "UNRESOLVED PLACEHOLDERS: 19 in 5 files",
+      "  C_msc_appendix.md: 13 placeholders",
+      "  D_proof_of_service.md: 2 placeholders",
+      "  E_verification.md: 1 placeholders",
+      "  F_fee_waiver_motion.md: 2 placeholders",
+      "  G_cover_letter.md: 1 placeholders"
+    ],
+    "checks": {
+      "document_completeness": true,
+      "no_placeholders": false,
+      "signature_present": true,
+      "service_packet": true,
+      "deadline_days": 28
+    }
+  },
+  {
+    "name": "COA Brief 366810",
+    "verdict": "GO",
+    "issues": [],
+    "warnings": [
+      "UNRESOLVED PLACEHOLDERS: 340 in 32 files",
+      "  BRIEF_COMPLIANCE_CHECK.md: 7 placeholders",
+      "  COA_BRIEF_366810_FINAL.md: 14 placeholders",
+      "  appendix_cover.md: 24 placeholders",
+      "  appendix_index.md: 24 placeholders",
+      "  19_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md: 18 placeholders"
+    ],
+    "checks": {
+      "document_completeness": true,
+      "no_placeholders": false,
+      "signature_present": true,
+      "service_packet": true,
+      "deadline_days": 42
+    }
+  },
+  {
+    "name": "Watson Tort",
+    "verdict": "GO",
+    "issues": [],
+    "warnings": [
+      "UNRESOLVED PLACEHOLDERS: 46 in 5 files",
+      "  exhibit_list.md: 1 placeholders",
+      "  fee_waiver_motion.md: 9 placeholders",
+      "  proof_of_service.md: 26 placeholders",
+      "  summons.md: 9 placeholders",
+      "  verification.md: 1 placeholders"
+    ],
+    "checks": {
+      "document_completeness": true,
+      "no_placeholders": false,
+      "signature_present": true,
+      "service_packet": true,
+      "deadline_days": 57
+    }
+  },
+  {
+    "name": "Shady Oaks",
+    "verdict": "GO",
+    "issues": [],
+    "warnings": [
+      "UNRESOLVED PLACEHOLDERS: 115 in 16 files",
+      "  corporate_disclosure.md: 7 placeholders",
+      "  exhibit_list.md: 21 placeholders",
+      "  fee_waiver_motion.md: 19 placeholders",
+      "  proof_of_service.md: 43 placeholders",
+      "  shady_oaks_damages_schedule.md: 5 placeholders"
+    ],
+    "checks": {
+      "document_completeness": true,
+      "no_placeholders": false,
+      "signature_present": true,
+      "service_packet": true,
+      "deadline_days": 57
+    }
+  },
+  {
+    "name": "Federal 1983",
+    "verdict": "GO",
+    "issues": [],
+    "warnings": [
+      "UNRESOLVED PLACEHOLDERS: 94 in 9 files",
+      "  01_COMPLAINT_1983.md: 1 placeholders",
+      "  02_IMMUNITY_DEFENSE_MATRIX.md: 1 placeholders",
+      "  05_DISCOVERY_PLAN.md: 1 placeholders",
+      "  06_SERVICE_PLAN.md: 1 placeholders",
+      "  exhibit_list.md: 29 placeholders"
+    ],
+    "checks": {
+      "document_completeness": true,
+      "no_placeholders": false,
+      "signature_present": true,
+      "service_packet": true,
+      "deadline_days": 1398
+    }
+  }
+]

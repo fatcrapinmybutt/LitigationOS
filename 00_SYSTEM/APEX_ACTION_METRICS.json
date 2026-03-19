@@ -1,0 +1,74 @@
+{
+  "COA_366810": {
+    "name": "Michigan Court of Appeals \u2014 Case No. 366810",
+    "case_number": "366810",
+    "court": "Michigan Court of Appeals",
+    "timeline_count": 2388,
+    "authority_count": 300,
+    "evidence_count": 429,
+    "violation_count": 1127,
+    "rebuttal_count": 200,
+    "claim_count": 500,
+    "perjury_count": 1000
+  },
+  "TRIAL_14TH": {
+    "name": "14th Judicial Circuit \u2014 Case No. 2024-001507-DC",
+    "case_number": "2024-001507-DC",
+    "court": "14th Judicial Circuit, Muskegon County",
+    "timeline_count": 11619,
+    "authority_count": 300,
+    "evidence_count": 500,
+    "violation_count": 1127,
+    "rebuttal_count": 200,
+    "claim_count": 500,
+    "perjury_count": 1000
+  },
+  "FEDERAL_1983": {
+    "name": "Federal Court \u2014 42 USC \u00a71983 Civil Rights",
+    "case_number": "TBD",
+    "court": "U.S. District Court, Western District of Michigan",
+    "timeline_count": 793,
+    "authority_count": 117,
+    "evidence_count": 45,
+    "violation_count": 1127,
+    "rebuttal_count": 200,
+    "claim_count": 500,
+    "perjury_count": 1000
+  },
+  "JTC_MCNEILL": {
+    "name": "Judicial Tenure Commission \u2014 vs Hon. Jenny L. McNeill",
+    "case_number": "JTC-TBD",
+    "court": "Michigan Judicial Tenure Commission",
+    "timeline_count": 5879,
+    "authority_count": 100,
+    "evidence_count": 214,
+    "violation_count": 1127,
+    "rebuttal_count": 200,
+    "claim_count": 500,
+    "perjury_count": 1000
+  },
+  "BAR_BARNES": {
+    "name": "Attorney Grievance Commission \u2014 vs Jennifer L. Barnes (P55406)",
+    "case_number": "AGC-TBD",
+    "court": "Michigan Attorney Grievance Commission",
+    "timeline_count": 335,
+    "authority_count": 100,
+    "evidence_count": 145,
+    "violation_count": 1127,
+    "rebuttal_count": 200,
+    "claim_count": 500,
+    "perjury_count": 1000
+  },
+  "EMERGENCY": {
+    "name": "Emergency Motions \u2014 PPO/TRO/Ex Parte",
+    "case_number": "2024-001507-DC",
+    "court": "14th Judicial Circuit / COA",
+    "timeline_count": 14408,
+    "authority_count": 200,
+    "evidence_count": 500,
+    "violation_count": 1127,
+    "rebuttal_count": 200,
+    "claim_count": 500,
+    "perjury_count": 1000
+  }
+}

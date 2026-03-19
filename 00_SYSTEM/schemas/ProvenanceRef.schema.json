@@ -1,0 +1,49 @@
+{
+  "additionalProperties": false,
+  "description": "Formal pointer tying a fact to its DB source \u2014 QuoteLock compliant.",
+  "properties": {
+    "atom_id": {
+      "title": "Atom Id",
+      "type": "string"
+    },
+    "source_table": {
+      "title": "Source Table",
+      "type": "string"
+    },
+    "source_id": {
+      "title": "Source Id",
+      "type": "string"
+    },
+    "match_type": {
+      "default": "EXACT",
+      "title": "Match Type",
+      "type": "string"
+    },
+    "confidence": {
+      "default": 1.0,
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "run_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Run Id"
+    }
+  },
+  "required": [
+    "atom_id",
+    "source_table",
+    "source_id"
+  ],
+  "title": "ProvenanceRef",
+  "type": "object"
+}

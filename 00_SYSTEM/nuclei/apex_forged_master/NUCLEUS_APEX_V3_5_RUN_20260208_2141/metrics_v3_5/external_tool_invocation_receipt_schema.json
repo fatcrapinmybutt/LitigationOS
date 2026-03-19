@@ -1,0 +1,23 @@
+{
+  "MCPInvocationReceipt": {
+    "inv_id": "string",
+    "ts": "datetime",
+    "tool_id": "string",
+    "args_json": "string",
+    "status": "OK|FAIL|SKIPPED",
+    "output_relpath": "string",
+    "output_integrity_key": "string",
+    "notes": "string"
+  },
+  "DiagramRenderReceipt": {
+    "render_id": "string",
+    "ts": "datetime",
+    "source_relpaths": [
+      "string"
+    ],
+    "output_relpath": "string",
+    "output_integrity_key": "string",
+    "status": "OK|FAIL|SKIPPED",
+    "notes": "string"
+  }
+}

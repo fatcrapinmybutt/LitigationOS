@@ -1,0 +1,109 @@
+{
+  "$defs": {
+    "CaseLane": {
+      "description": "Six case lanes \u2014 IRON LAW: never cross-contaminate.",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "title": "CaseLane",
+      "type": "string"
+    },
+    "Severity": {
+      "enum": [
+        "critical",
+        "urgent",
+        "high",
+        "warning",
+        "info"
+      ],
+      "title": "Severity",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A litigation deadline with urgency.",
+  "properties": {
+    "id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Id"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "due_date_iso": {
+      "title": "Due Date Iso",
+      "type": "string"
+    },
+    "days_remaining": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Days Remaining"
+    },
+    "severity": {
+      "$ref": "#/$defs/Severity",
+      "default": "info"
+    },
+    "lane": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/CaseLane"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "filing_vehicle": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Filing Vehicle"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "title",
+    "due_date_iso"
+  ],
+  "title": "DeadlineItem",
+  "type": "object"
+}

@@ -1,0 +1,7 @@
+{
+  "py_compile": "PASS",
+  "self_test_returncode": 0,
+  "self_test_ok": true,
+  "self_test_stdout_tail": "[OK] py_compile passed\n>> /opt/pyvenv/bin/python /tmp/tmproygs4t7/ai_organizer_stack.py --config /tmp/tmproygs4t7/_SELFTEST_WORK/config.yaml --mode plan\nPLAN COMPLETE: /tmp/tmproygs4t7/_SELFTEST_WORK/RUNS/RUN_20260123_045905/plan.csv\nLAST_RUN: /tmp/tmproygs4t7/_SELFTEST_WORK/RUNS/LAST_RUN.txt\n\n[OK] plan.csv generated: 6 rows\n>> /opt/pyvenv/bin/python /tmp/tmproygs4t7/plan_validator.py --plan /tmp/tmproygs4t7/_SELFTEST_WORK/RUNS/RUN_20260123_045905/plan.csv\nPLAN: /tmp/tmproygs4t7/_SELFTEST_WORK/RUNS/RUN_20260123_045905/plan.csv\nROWS: 6\nOK: True\n\n>> /opt/pyvenv/bin/python /tmp/tmproygs4t7/ai_organizer_stack.py --config /tmp/tmproygs4t7/_SELFTEST_WORK/config.yaml --mode apply --run_dir /tmp/tmproygs4t7/_SELFTEST_WORK/RUNS/RUN_20260123_045905\nAPPLY COMPLETE: /tmp/tmproygs4t7/_SELFTEST_WORK/RUNS/RUN_20260123_045905\nUNDO FILE: /tmp/tmproygs4t7/_SELFTEST_WORK/RUNS/RUN_20260123_045905/undo.csv\n\n[OK] apply created target\n\nSELF TEST PASSED",
+  "self_test_stderr_tail": ""
+}

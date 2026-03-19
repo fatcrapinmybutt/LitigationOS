@@ -1,0 +1,88 @@
+{
+  "$defs": {
+    "Court": {
+      "description": "Michigan courts and federal.",
+      "enum": [
+        "14TH",
+        "COA",
+        "MSC",
+        "JTC",
+        "USDC",
+        "FOC"
+      ],
+      "title": "Court",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Court filing caption per MCR 2.113 formatting requirements.",
+  "properties": {
+    "state": {
+      "default": "STATE OF MICHIGAN",
+      "title": "State",
+      "type": "string"
+    },
+    "court": {
+      "description": "Full court name",
+      "title": "Court",
+      "type": "string"
+    },
+    "county": {
+      "default": "MUSKEGON",
+      "title": "County",
+      "type": "string"
+    },
+    "plaintiff": {
+      "default": "ANDREW J. PIGORS",
+      "title": "Plaintiff",
+      "type": "string"
+    },
+    "plaintiff_label": {
+      "default": "Plaintiff",
+      "title": "Plaintiff Label",
+      "type": "string"
+    },
+    "defendant": {
+      "default": "EMILY A. WATSON",
+      "title": "Defendant",
+      "type": "string"
+    },
+    "defendant_label": {
+      "default": "Defendant",
+      "title": "Defendant Label",
+      "type": "string"
+    },
+    "case_number": {
+      "title": "Case Number",
+      "type": "string"
+    },
+    "judge": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Judge"
+    },
+    "document_title": {
+      "minLength": 1,
+      "title": "Document Title",
+      "type": "string"
+    },
+    "forum": {
+      "$ref": "#/$defs/Court",
+      "default": "14TH"
+    }
+  },
+  "required": [
+    "court",
+    "case_number",
+    "document_title"
+  ],
+  "title": "FilingCaption",
+  "type": "object"
+}

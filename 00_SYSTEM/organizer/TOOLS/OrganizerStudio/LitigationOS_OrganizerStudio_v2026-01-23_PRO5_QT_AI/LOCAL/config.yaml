@@ -1,0 +1,66 @@
+# OrganizerStudio LOCAL lane configuration
+# All outputs go to F: by default. Adjust roots to scope your run.
+
+run_root: "F:/LitigationOS/_OrganizeAI/LOCAL"
+
+# One or more scan roots. You can pass --root repeatedly in CLI; GUI uses this list.
+roots:
+  - "F:/Litigation_OS$"
+  - "F:/LITIGATION_INTAKE"
+  - "F:/EDS-USB"
+
+# Optional include and exclude globs
+include_globs:
+  - "**/*"
+
+exclude_globs:
+  - "**/.git/**"
+  - "**/.venv/**"
+  - "**/node_modules/**"
+  - "**/$RECYCLE.BIN/**"
+  - "**/System Volume Information/**"
+
+exclude_dir_names:
+  - ".git"
+  - ".venv"
+  - "node_modules"
+  - "__pycache__"
+
+follow_symlinks: false
+cleanup_empty_dirs: false
+
+# Limits
+limits:
+  max_files: 0
+  max_file_size_mb: 0
+  sample_text_bytes: 65536
+
+# Behavior
+target_mode: "copy"          # copy or move
+move_mode: "atomic"          # atomic or best_effort
+denest:
+  enabled: true
+  max_chain: 6
+
+rename:
+  enabled: true
+  max_len: 140
+  mode: "safe_slug"          # safe_slug or preserve
+
+buckets:
+  enabled: true
+  # mapping bucket name to extensions; case-insensitive
+  mapping:
+    PDFS: [".pdf"]
+    DOCS: [".doc", ".docx", ".rtf", ".odt", ".txt", ".md"]
+    IMAGES: [".jpg", ".jpeg", ".png", ".gif", ".tif", ".tiff", ".webp"]
+    AUDIO: [".mp3", ".wav", ".m4a", ".aac", ".flac", ".ogg"]
+    VIDEO: [".mp4", ".mov", ".mkv", ".avi", ".webm"]
+    ARCHIVES: [".zip", ".7z", ".rar", ".tar", ".gz"]
+    DATA: [".csv", ".json", ".xml", ".yml", ".yaml", ".xlsx"]
+    CODE: [".py", ".js", ".ts", ".java", ".cs", ".go", ".rs", ".cpp", ".c", ".ps1", ".bat", ".cmd"]
+
+nlp:
+  enabled: false
+  model_id: "intfloat/e5-small-v2"
+  cluster_cosine_threshold: 0.78
