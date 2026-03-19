@@ -1,0 +1,747 @@
+{
+  "generated": "2026-03-18T21:09:56.992996",
+  "docket_history": [
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "proceeding"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "parenting_time"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "parenting_time"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "motion"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "filing"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "order"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "hearing"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "hearing"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "hearing"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "order_grant"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "filing"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "hearing"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "hearing"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "ppo"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "motion"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "service"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "service"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "filing"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "order"
+    },
+    {
+      "date": "2026-02-26 23:17:22",
+      "description": "order"
+    }
+  ],
+  "predictions": {
+    "F3": {
+      "name": "MCR 2.003 Disqualification",
+      "predicted_events": [
+        {
+          "day_offset": 0,
+          "event": "Motion filed",
+          "probability": 1.0,
+          "actor": "Plaintiff",
+          "projected_date": "2026-03-18"
+        },
+        {
+          "day_offset": 7,
+          "event": "McNeill issues order on disqualification",
+          "probability": 0.85,
+          "actor": "Court",
+          "likely_outcome": "Denied \u2014 judges rarely recuse themselves",
+          "response": "File immediate application for leave to appeal (MCR 7.203(B)) + emergency mandamus",
+          "projected_date": "2026-03-25"
+        },
+        {
+          "day_offset": 14,
+          "event": "Watson files response opposing disqualification",
+          "probability": 0.6,
+          "actor": "Defendant",
+          "response": "Reply brief within 7 days per MCR 2.119(F)(1)",
+          "projected_date": "2026-04-01"
+        },
+        {
+          "day_offset": 21,
+          "event": "Chief Judge assigns to new judge (if granted)",
+          "probability": 0.15,
+          "actor": "Court",
+          "response": "File all pending motions with new judge immediately",
+          "projected_date": "2026-04-08"
+        },
+        {
+          "day_offset": 28,
+          "event": "COA emergency application (if denied)",
+          "probability": 0.8,
+          "actor": "Plaintiff",
+          "response": "Pre-draft COA application; have it ready to file same day as denial",
+          "projected_date": "2026-04-15"
+        }
+      ]
+    },
+    "F4": {
+      "name": "42 USC \u00a71983 Federal Complaint",
+      "predicted_events": [
+        {
+          "day_offset": 0,
+          "event": "Complaint filed in USDC WD MI",
+          "probability": 1.0,
+          "actor": "Plaintiff",
+          "projected_date": "2026-03-18"
+        },
+        {
+          "day_offset": 1,
+          "event": "Case assigned to federal judge",
+          "probability": 0.95,
+          "actor": "Court",
+          "projected_date": "2026-03-19"
+        },
+        {
+          "day_offset": 7,
+          "event": "Summons issued",
+          "probability": 0.9,
+          "actor": "Court",
+          "projected_date": "2026-03-25"
+        },
+        {
+          "day_offset": 21,
+          "event": "McNeill files motion to dismiss (judicial immunity)",
+          "probability": 0.85,
+          "actor": "Defendant-McNeill",
+          "response": "Opposition: Dennis v Sparks \u2014 conspiracy pierces immunity. Pre-draft ready.",
+          "projected_date": "2026-04-08"
+        },
+        {
+          "day_offset": 21,
+          "event": "Watson files motion to dismiss (domestic relations exception)",
+          "probability": 0.7,
+          "actor": "Defendant-Watson",
+          "response": "Opposition: Catz v Chalker \u2014 exception is narrow. \u00a71983 claims are NOT domestic relations.",
+          "projected_date": "2026-04-08"
+        },
+        {
+          "day_offset": 30,
+          "event": "Watson files motion for Younger abstention",
+          "probability": 0.65,
+          "actor": "Defendant-Watson",
+          "response": "Opposition: Sprint v Jacobs \u2014 only 3 categories. Bad faith exception applies.",
+          "projected_date": "2026-04-17"
+        },
+        {
+          "day_offset": 60,
+          "event": "Initial scheduling conference",
+          "probability": 0.8,
+          "actor": "Court",
+          "projected_date": "2026-05-17"
+        },
+        {
+          "day_offset": 90,
+          "event": "Discovery deadline set",
+          "probability": 0.75,
+          "actor": "Court",
+          "projected_date": "2026-06-16"
+        }
+      ]
+    },
+    "F5": {
+      "name": "Emergency Parenting Time",
+      "predicted_events": [
+        {
+          "day_offset": 0,
+          "event": "Emergency motion filed",
+          "probability": 1.0,
+          "actor": "Plaintiff",
+          "projected_date": "2026-03-18"
+        },
+        {
+          "day_offset": 1,
+          "event": "Court schedules emergency hearing",
+          "probability": 0.6,
+          "actor": "Court",
+          "response": "Prepare all exhibits, have testimony outline ready",
+          "projected_date": "2026-03-19"
+        },
+        {
+          "day_offset": 3,
+          "event": "McNeill denies without hearing (if biased)",
+          "probability": 0.35,
+          "actor": "Court",
+          "response": "Immediate COA emergency application \u2014 denial without hearing = due process violation",
+          "projected_date": "2026-03-21"
+        },
+        {
+          "day_offset": 7,
+          "event": "Watson files response opposing",
+          "probability": 0.8,
+          "actor": "Defendant",
+          "response": "Reply with evidence of Watson's parenting time interference pattern",
+          "projected_date": "2026-03-25"
+        },
+        {
+          "day_offset": 14,
+          "event": "Hearing held",
+          "probability": 0.55,
+          "actor": "Court",
+          "projected_date": "2026-04-01"
+        },
+        {
+          "day_offset": 21,
+          "event": "Order entered (grant or deny)",
+          "probability": 0.7,
+          "actor": "Court",
+          "projected_date": "2026-04-08"
+        }
+      ]
+    },
+    "F6": {
+      "name": "JTC Complaint",
+      "predicted_events": [
+        {
+          "day_offset": 0,
+          "event": "Complaint submitted to JTC",
+          "probability": 1.0,
+          "actor": "Plaintiff",
+          "projected_date": "2026-03-18"
+        },
+        {
+          "day_offset": 30,
+          "event": "JTC acknowledges receipt",
+          "probability": 0.8,
+          "actor": "JTC",
+          "projected_date": "2026-04-17"
+        },
+        {
+          "day_offset": 60,
+          "event": "JTC begins preliminary investigation",
+          "probability": 0.5,
+          "actor": "JTC",
+          "projected_date": "2026-05-17"
+        },
+        {
+          "day_offset": 90,
+          "event": "JTC requests additional information",
+          "probability": 0.4,
+          "actor": "JTC",
+          "response": "Provide comprehensive evidence package with DB-sourced violation timeline",
+          "projected_date": "2026-06-16"
+        },
+        {
+          "day_offset": 180,
+          "event": "JTC determines whether to file formal complaint",
+          "probability": 0.3,
+          "actor": "JTC",
+          "projected_date": "2026-09-14"
+        }
+      ]
+    },
+    "F7": {
+      "name": "Fraud on Court / Void Orders",
+      "predicted_events": [
+        {
+          "day_offset": 0,
+          "event": "Motion filed under MCR 2.612(C)",
+          "probability": 1.0,
+          "actor": "Plaintiff",
+          "projected_date": "2026-03-18"
+        },
+        {
+          "day_offset": 14,
+          "event": "Watson files response",
+          "probability": 0.85,
+          "actor": "Defendant",
+          "response": "Reply with specific evidence of fraud (perjury compilation)",
+          "projected_date": "2026-04-01"
+        },
+        {
+          "day_offset": 21,
+          "event": "Court schedules hearing",
+          "probability": 0.65,
+          "actor": "Court",
+          "projected_date": "2026-04-08"
+        },
+        {
+          "day_offset": 28,
+          "event": "McNeill denies (conflict of interest)",
+          "probability": 0.5,
+          "actor": "Court",
+          "response": "Appeal \u2014 McNeill has conflict because F7 challenges HER orders. Should have recused.",
+          "projected_date": "2026-04-15"
+        },
+        {
+          "day_offset": 35,
+          "event": "Court grants evidentiary hearing",
+          "probability": 0.35,
+          "actor": "Court",
+          "response": "Prepare subpoenas for Emily, Berry. Have all perjury evidence organized.",
+          "projected_date": "2026-04-22"
+        }
+      ]
+    },
+    "F9": {
+      "name": "COA Appeal Brief",
+      "predicted_events": [
+        {
+          "day_offset": 0,
+          "event": "Brief filed",
+          "probability": 1.0,
+          "actor": "Plaintiff",
+          "projected_date": "2026-03-18"
+        },
+        {
+          "day_offset": 28,
+          "event": "Watson/appellee brief due",
+          "probability": 0.8,
+          "actor": "Defendant",
+          "response": "Review carefully for new arguments; prepare reply brief",
+          "projected_date": "2026-04-15"
+        },
+        {
+          "day_offset": 49,
+          "event": "Reply brief due (21 days after appellee)",
+          "probability": 0.9,
+          "actor": "Plaintiff",
+          "projected_date": "2026-05-06"
+        },
+        {
+          "day_offset": 90,
+          "event": "Case submitted on briefs (no oral argument)",
+          "probability": 0.6,
+          "actor": "Court",
+          "projected_date": "2026-06-16"
+        },
+        {
+          "day_offset": 120,
+          "event": "Oral argument scheduled (if granted)",
+          "probability": 0.4,
+          "actor": "Court",
+          "projected_date": "2026-07-16"
+        },
+        {
+          "day_offset": 180,
+          "event": "Opinion issued",
+          "probability": 0.7,
+          "actor": "Court",
+          "projected_date": "2026-09-14"
+        }
+      ]
+    }
+  },
+  "calendar_90_day": [
+    {
+      "date": "2026-03-18",
+      "day_offset": 0,
+      "filing": "F3",
+      "event": "Motion filed",
+      "probability": 1.0,
+      "actor": "Plaintiff",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-03-18",
+      "day_offset": 0,
+      "filing": "F4",
+      "event": "Complaint filed in USDC WD MI",
+      "probability": 1.0,
+      "actor": "Plaintiff",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-03-18",
+      "day_offset": 0,
+      "filing": "F5",
+      "event": "Emergency motion filed",
+      "probability": 1.0,
+      "actor": "Plaintiff",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-03-18",
+      "day_offset": 0,
+      "filing": "F6",
+      "event": "Complaint submitted to JTC",
+      "probability": 1.0,
+      "actor": "Plaintiff",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-03-18",
+      "day_offset": 0,
+      "filing": "F7",
+      "event": "Motion filed under MCR 2.612(C)",
+      "probability": 1.0,
+      "actor": "Plaintiff",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-03-18",
+      "day_offset": 0,
+      "filing": "F9",
+      "event": "Brief filed",
+      "probability": 1.0,
+      "actor": "Plaintiff",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-03-19",
+      "day_offset": 1,
+      "filing": "F4",
+      "event": "Case assigned to federal judge",
+      "probability": 0.95,
+      "actor": "Court",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-03-19",
+      "day_offset": 1,
+      "filing": "F5",
+      "event": "Court schedules emergency hearing",
+      "probability": 0.6,
+      "actor": "Court",
+      "response": "Prepare all exhibits, have testimony outline ready",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-03-21",
+      "day_offset": 3,
+      "filing": "F5",
+      "event": "McNeill denies without hearing (if biased)",
+      "probability": 0.35,
+      "actor": "Court",
+      "response": "Immediate COA emergency application \u2014 denial without hearing = due process violation",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-03-25",
+      "day_offset": 7,
+      "filing": "F3",
+      "event": "McNeill issues order on disqualification",
+      "probability": 0.85,
+      "actor": "Court",
+      "response": "File immediate application for leave to appeal (MCR 7.203(B)) + emergency mandamus",
+      "likely_outcome": "Denied \u2014 judges rarely recuse themselves"
+    },
+    {
+      "date": "2026-03-25",
+      "day_offset": 7,
+      "filing": "F4",
+      "event": "Summons issued",
+      "probability": 0.9,
+      "actor": "Court",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-03-25",
+      "day_offset": 7,
+      "filing": "F5",
+      "event": "Watson files response opposing",
+      "probability": 0.8,
+      "actor": "Defendant",
+      "response": "Reply with evidence of Watson's parenting time interference pattern",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-01",
+      "day_offset": 14,
+      "filing": "F3",
+      "event": "Watson files response opposing disqualification",
+      "probability": 0.6,
+      "actor": "Defendant",
+      "response": "Reply brief within 7 days per MCR 2.119(F)(1)",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-01",
+      "day_offset": 14,
+      "filing": "F5",
+      "event": "Hearing held",
+      "probability": 0.55,
+      "actor": "Court",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-01",
+      "day_offset": 14,
+      "filing": "F7",
+      "event": "Watson files response",
+      "probability": 0.85,
+      "actor": "Defendant",
+      "response": "Reply with specific evidence of fraud (perjury compilation)",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-08",
+      "day_offset": 21,
+      "filing": "F3",
+      "event": "Chief Judge assigns to new judge (if granted)",
+      "probability": 0.15,
+      "actor": "Court",
+      "response": "File all pending motions with new judge immediately",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-08",
+      "day_offset": 21,
+      "filing": "F4",
+      "event": "McNeill files motion to dismiss (judicial immunity)",
+      "probability": 0.85,
+      "actor": "Defendant-McNeill",
+      "response": "Opposition: Dennis v Sparks \u2014 conspiracy pierces immunity. Pre-draft ready.",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-08",
+      "day_offset": 21,
+      "filing": "F4",
+      "event": "Watson files motion to dismiss (domestic relations exception)",
+      "probability": 0.7,
+      "actor": "Defendant-Watson",
+      "response": "Opposition: Catz v Chalker \u2014 exception is narrow. \u00a71983 claims are NOT domestic relations.",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-08",
+      "day_offset": 21,
+      "filing": "F5",
+      "event": "Order entered (grant or deny)",
+      "probability": 0.7,
+      "actor": "Court",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-08",
+      "day_offset": 21,
+      "filing": "F7",
+      "event": "Court schedules hearing",
+      "probability": 0.65,
+      "actor": "Court",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-15",
+      "day_offset": 28,
+      "filing": "F3",
+      "event": "COA emergency application (if denied)",
+      "probability": 0.8,
+      "actor": "Plaintiff",
+      "response": "Pre-draft COA application; have it ready to file same day as denial",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-15",
+      "day_offset": 28,
+      "filing": "F7",
+      "event": "McNeill denies (conflict of interest)",
+      "probability": 0.5,
+      "actor": "Court",
+      "response": "Appeal \u2014 McNeill has conflict because F7 challenges HER orders. Should have recused.",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-15",
+      "day_offset": 28,
+      "filing": "F9",
+      "event": "Watson/appellee brief due",
+      "probability": 0.8,
+      "actor": "Defendant",
+      "response": "Review carefully for new arguments; prepare reply brief",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-17",
+      "day_offset": 30,
+      "filing": "F4",
+      "event": "Watson files motion for Younger abstention",
+      "probability": 0.65,
+      "actor": "Defendant-Watson",
+      "response": "Opposition: Sprint v Jacobs \u2014 only 3 categories. Bad faith exception applies.",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-17",
+      "day_offset": 30,
+      "filing": "F6",
+      "event": "JTC acknowledges receipt",
+      "probability": 0.8,
+      "actor": "JTC",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-04-22",
+      "day_offset": 35,
+      "filing": "F7",
+      "event": "Court grants evidentiary hearing",
+      "probability": 0.35,
+      "actor": "Court",
+      "response": "Prepare subpoenas for Emily, Berry. Have all perjury evidence organized.",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-05-06",
+      "day_offset": 49,
+      "filing": "F9",
+      "event": "Reply brief due (21 days after appellee)",
+      "probability": 0.9,
+      "actor": "Plaintiff",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-05-17",
+      "day_offset": 60,
+      "filing": "F4",
+      "event": "Initial scheduling conference",
+      "probability": 0.8,
+      "actor": "Court",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-05-17",
+      "day_offset": 60,
+      "filing": "F6",
+      "event": "JTC begins preliminary investigation",
+      "probability": 0.5,
+      "actor": "JTC",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-06-16",
+      "day_offset": 90,
+      "filing": "F4",
+      "event": "Discovery deadline set",
+      "probability": 0.75,
+      "actor": "Court",
+      "response": "",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-06-16",
+      "day_offset": 90,
+      "filing": "F6",
+      "event": "JTC requests additional information",
+      "probability": 0.4,
+      "actor": "JTC",
+      "response": "Provide comprehensive evidence package with DB-sourced violation timeline",
+      "likely_outcome": ""
+    },
+    {
+      "date": "2026-06-16",
+      "day_offset": 90,
+      "filing": "F9",
+      "event": "Case submitted on briefs (no oral argument)",
+      "probability": 0.6,
+      "actor": "Court",
+      "response": "",
+      "likely_outcome": ""
+    }
+  ],
+  "summary": {
+    "total_predicted": 35,
+    "high_probability": 20,
+    "filings_analyzed": 6,
+    "critical_deadlines": [
+      {
+        "date": "2026-03-19",
+        "day_offset": 1,
+        "filing": "F4",
+        "event": "Case assigned to federal judge",
+        "probability": 0.95,
+        "actor": "Court",
+        "response": "",
+        "likely_outcome": ""
+      },
+      {
+        "date": "2026-03-25",
+        "day_offset": 7,
+        "filing": "F3",
+        "event": "McNeill issues order on disqualification",
+        "probability": 0.85,
+        "actor": "Court",
+        "response": "File immediate application for leave to appeal (MCR 7.203(B)) + emergency mandamus",
+        "likely_outcome": "Denied \u2014 judges rarely recuse themselves"
+      },
+      {
+        "date": "2026-03-25",
+        "day_offset": 7,
+        "filing": "F4",
+        "event": "Summons issued",
+        "probability": 0.9,
+        "actor": "Court",
+        "response": "",
+        "likely_outcome": ""
+      },
+      {
+        "date": "2026-05-17",
+        "day_offset": 60,
+        "filing": "F4",
+        "event": "Initial scheduling conference",
+        "probability": 0.8,
+        "actor": "Court",
+        "response": "",
+        "likely_outcome": ""
+      }
+    ]
+  }
+}

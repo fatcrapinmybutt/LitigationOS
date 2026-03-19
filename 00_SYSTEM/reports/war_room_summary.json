@@ -1,0 +1,16 @@
+{
+  "generated": "2026-03-18T21:09:57.825171",
+  "reports_loaded": 12,
+  "db_stats": {
+    "evidence_quotes": 36891,
+    "judicial_violations": 1127,
+    "actor_violations": 8348,
+    "detected_contradictions": 1061,
+    "watson_perjury": 5821,
+    "adversary_assertions": 16372,
+    "contradiction_map": 10672,
+    "claims": 653
+  },
+  "tools_count": 40,
+  "total_db_records": 80945
+}
