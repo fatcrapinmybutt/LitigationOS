@@ -1,0 +1,79 @@
+{
+  "generated": "2026-03-18T22:47:34.746140",
+  "tool": "Strategic Filing Trimmer (#44)",
+  "all_compliant": false,
+  "filings": {
+    "F2": {
+      "filing_id": "F2",
+      "strategy": "condense",
+      "original_words": 6881,
+      "original_pages": 22.9,
+      "limit_pages": 20,
+      "changes": [],
+      "files_created": [],
+      "words_saved": 0,
+      "final_words": 6881,
+      "final_pages": 22.9,
+      "status": "CONDENSED"
+    },
+    "F3": {
+      "filing_id": "F3",
+      "strategy": "split",
+      "original_words": 8660,
+      "original_pages": 28.9,
+      "limit_pages": 20,
+      "changes": [
+        "Split into Motion (14.6p) + Brief (10.0p)"
+      ],
+      "files_created": [
+        "01_MAIN_FILING.md (motion only)",
+        "01B_BRIEF_IN_SUPPORT.md",
+        "01C_SUPPORTING_DOCUMENTS.md"
+      ],
+      "motion_words": 4391,
+      "motion_pages": 14.6,
+      "brief_words": 3007,
+      "brief_pages": 10.0,
+      "final_words": 4391,
+      "final_pages": 14.6,
+      "brief_final_pages": 10.0,
+      "status": "SPLIT"
+    },
+    "F5": {
+      "filing_id": "F5",
+      "strategy": "split",
+      "original_words": 15829,
+      "original_pages": 52.8,
+      "limit_pages": 50,
+      "changes": [
+        "Split into Motion (21.9p) + Brief (19.9p)"
+      ],
+      "files_created": [
+        "01_MAIN_FILING.md (motion only)",
+        "01B_BRIEF_IN_SUPPORT.md",
+        "01C_SUPPORTING_DOCUMENTS.md"
+      ],
+      "motion_words": 6567,
+      "motion_pages": 21.9,
+      "brief_words": 5978,
+      "brief_pages": 19.9,
+      "final_words": 6567,
+      "final_pages": 21.9,
+      "brief_final_pages": 19.9,
+      "status": "SPLIT"
+    },
+    "F7": {
+      "filing_id": "F7",
+      "strategy": "condense",
+      "original_words": 7393,
+      "original_pages": 24.6,
+      "limit_pages": 20,
+      "changes": [],
+      "files_created": [],
+      "words_saved": 0,
+      "final_words": 7393,
+      "final_pages": 24.6,
+      "status": "CONDENSED"
+    }
+  }
+}

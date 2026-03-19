@@ -1,0 +1,80 @@
+{
+  "generated": "2026-03-18T22:45:49.042753",
+  "tool": "Affidavit Rebuilder (#43)",
+  "summary": {
+    "rebuilt": 10,
+    "skipped": 0
+  },
+  "filings": {
+    "F1": {
+      "status": "REBUILT",
+      "old_words": 230,
+      "new_words": 377,
+      "was_stub": true,
+      "facts_count": 8
+    },
+    "F2": {
+      "status": "REBUILT",
+      "old_words": 231,
+      "new_words": 396,
+      "was_stub": true,
+      "facts_count": 9
+    },
+    "F3": {
+      "status": "REBUILT",
+      "old_words": 231,
+      "new_words": 417,
+      "was_stub": true,
+      "facts_count": 10
+    },
+    "F4": {
+      "status": "REBUILT",
+      "old_words": 227,
+      "new_words": 424,
+      "was_stub": true,
+      "facts_count": 10
+    },
+    "F5": {
+      "status": "REBUILT",
+      "old_words": 251,
+      "new_words": 388,
+      "was_stub": true,
+      "facts_count": 9
+    },
+    "F6": {
+      "status": "REBUILT",
+      "old_words": 226,
+      "new_words": 381,
+      "was_stub": true,
+      "facts_count": 9
+    },
+    "F7": {
+      "status": "REBUILT",
+      "old_words": 319,
+      "new_words": 433,
+      "was_stub": true,
+      "facts_count": 11
+    },
+    "F8": {
+      "status": "REBUILT",
+      "old_words": 230,
+      "new_words": 387,
+      "was_stub": true,
+      "facts_count": 9
+    },
+    "F9": {
+      "status": "REBUILT",
+      "old_words": 231,
+      "new_words": 367,
+      "was_stub": true,
+      "facts_count": 8
+    },
+    "F10": {
+      "status": "REBUILT",
+      "old_words": 235,
+      "new_words": 382,
+      "was_stub": true,
+      "facts_count": 9
+    }
+  }
+}

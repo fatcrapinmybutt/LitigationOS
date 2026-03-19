@@ -1,0 +1,6909 @@
+{
+  "generated": "2026-03-18T22:44:12.769584",
+  "tool": "Quality Audit Verifier (#42)",
+  "db_counts": {
+    "evidence_quotes": 36891,
+    "judicial_violations": 1127,
+    "actor_violations": 8348,
+    "mcneill_violations": 5242,
+    "detected_contradictions": 1061,
+    "contradiction_map": 10672,
+    "watson_perjury": 5821,
+    "adversary_assertions": 16372,
+    "claims": 653,
+    "docket_events": 221
+  },
+  "summary": {
+    "total_claims": 614,
+    "verified": 0,
+    "fabricated": 0,
+    "inflated": 0,
+    "go_nogo": "\ud83d\udfe2 GO"
+  },
+  "filings": {
+    "F1": {
+      "filing_id": "F1",
+      "status": "AUDITED",
+      "total_claims": 32,
+      "fabricated": 0,
+      "inflated": 0,
+      "verified": 0,
+      "unverified": 32,
+      "claims": [
+        {
+          "claim": {
+            "value": 60,
+            "raw": "60 days",
+            "category": "day_count",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 750,
+            "raw": "$750",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 7633.13,
+            "raw": "$7,633.13",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1400000,
+            "raw": "$1,400,000,",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1400000,
+            "raw": "$1,400,000",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1300.26,
+            "raw": "$1,300.26",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 395,
+            "raw": "$395",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 395,
+            "raw": "$395",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 695,
+            "raw": "$695",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 720,
+            "raw": "$720",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 395,
+            "raw": "$395",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 695,
+            "raw": "$695",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 720,
+            "raw": "$720",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 61.64,
+            "raw": "$61.64",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2180.18,
+            "raw": "$2,180.18",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 15000,
+            "raw": "$15,000",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 8640,
+            "raw": "$8,640",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 720,
+            "raw": "$720",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 3000,
+            "raw": "$3,000",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 15000,
+            "raw": "$15,000",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1,
+            "raw": "$1",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 750,
+            "raw": "$750",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 7633.13,
+            "raw": "$7,633.13",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 395,
+            "raw": "$395",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 395,
+            "raw": "$395",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 695,
+            "raw": "$695",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 61.64,
+            "raw": "$61.64",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2180.18,
+            "raw": "$2,180.18",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 7633.13,
+            "raw": "$7,633.13",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 750,
+            "raw": "$750,",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1400000,
+            "raw": "$1,400,000",
+            "category": "dollar_amount",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 121,
+            "raw": "121%",
+            "category": "percentage",
+            "filing_id": "F1"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        }
+      ],
+      "fabricated_details": [],
+      "inflated_details": []
+    },
+    "F2": {
+      "filing_id": "F2",
+      "status": "AUDITED",
+      "total_claims": 101,
+      "fabricated": 0,
+      "inflated": 0,
+      "verified": 0,
+      "unverified": 101,
+      "claims": [
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 Violation",
+            "category": "incident_count",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 17235,
+            "raw": "017235 document",
+            "category": "document_count",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1400000,
+            "raw": "$1,400,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1300.26,
+            "raw": "$1,300.26",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 25000,
+            "raw": "$25,000,",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 325,
+            "raw": "$325",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 395,
+            "raw": "$395",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 325,
+            "raw": "$325",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 395,
+            "raw": "$395",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 695,
+            "raw": "$695",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 720,
+            "raw": "$720",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 325,
+            "raw": "$325",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 720,
+            "raw": "$720",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 61.64,
+            "raw": "$61.64",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2180.18,
+            "raw": "$2,180.18",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2241.82,
+            "raw": "$2,241.82",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 6085.99,
+            "raw": "$6,085.99",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1962.45,
+            "raw": "$1,962.45",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 768.48,
+            "raw": "$768.48",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2054.8,
+            "raw": "$2,054.80",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1300.26,
+            "raw": "$1,300.26",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 6085.99,
+            "raw": "$6,085.99",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 3805.44,
+            "raw": "$3,805.44",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2280.55,
+            "raw": "$2,280.55",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 35.0,
+            "raw": "$35.00",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 178.0,
+            "raw": "$178.00",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 53.0,
+            "raw": "$53.00",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 87,
+            "raw": "$87",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1928.17,
+            "raw": "$1,928.17",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 3984.31,
+            "raw": "$3,984.31",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 3638.65,
+            "raw": "$3,638.65",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 9551.13,
+            "raw": "$9,551.13",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 7633.13,
+            "raw": "$7,633.13",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 750,
+            "raw": "$750",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 750,
+            "raw": "$750",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 60000,
+            "raw": "$60,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 105000,
+            "raw": "$105,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1300.26,
+            "raw": "$1,300.26",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 181900,
+            "raw": "$181,900",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1400000,
+            "raw": "$1,400,000,",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 0,
+            "raw": "$0,",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 750,
+            "raw": "$750",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 15000,
+            "raw": "$15,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45000,
+            "raw": "$45,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 60000,
+            "raw": "$60,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 105000,
+            "raw": "$105,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 60000,
+            "raw": "$60,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 105000,
+            "raw": "$105,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 15000,
+            "raw": "$15,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45000,
+            "raw": "$45,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 60000,
+            "raw": "$60,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 105000,
+            "raw": "$105,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 61.64,
+            "raw": "$61.64",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2180.18,
+            "raw": "$2,180.18",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2241.82,
+            "raw": "$2,241.82",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 6085.99,
+            "raw": "$6,085.99",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 7633.13,
+            "raw": "$7,633.13",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 9551.13,
+            "raw": "$9,551.13",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 60000,
+            "raw": "$60,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 105000,
+            "raw": "$105,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 7633.13,
+            "raw": "$7,633.13",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 395,
+            "raw": "$395",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 695,
+            "raw": "$695",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 695,
+            "raw": "$695",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 720,
+            "raw": "$720",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 7633.13,
+            "raw": "$7,633.13",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 750,
+            "raw": "$750",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 6085.99,
+            "raw": "$6,085.99",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 35.0,
+            "raw": "$35.00",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 178.0,
+            "raw": "$178.00",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 53.0,
+            "raw": "$53.00",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 750,
+            "raw": "$750",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 750,
+            "raw": "$750",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 325,
+            "raw": "$325",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 720,
+            "raw": "$720",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 6085.99,
+            "raw": "$6,085.99",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1300.26,
+            "raw": "$1,300.26",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 7633.13,
+            "raw": "$7,633.13",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 15000,
+            "raw": "$15,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45000,
+            "raw": "$45,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 60000,
+            "raw": "$60,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 105000,
+            "raw": "$105,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 10000,
+            "raw": "$10,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 50000,
+            "raw": "$50,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 60000,
+            "raw": "$60,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 105000,
+            "raw": "$105,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 9551.13,
+            "raw": "$9,551.13",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 6085.99,
+            "raw": "$6,085.99",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 5000,
+            "raw": "$5,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 24000,
+            "raw": "$24,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 9551.13,
+            "raw": "$9,551.13",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 750,
+            "raw": "$750",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 10000,
+            "raw": "$10,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 50000,
+            "raw": "$50,000,",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 5000,
+            "raw": "$5,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 24000,
+            "raw": "$24,000,",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 150000,
+            "raw": "$150,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1000000,
+            "raw": "$1,000,000",
+            "category": "dollar_amount",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 121,
+            "raw": "121%",
+            "category": "percentage",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 121,
+            "raw": "121%",
+            "category": "percentage",
+            "filing_id": "F2"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        }
+      ],
+      "fabricated_details": [],
+      "inflated_details": []
+    },
+    "F3": {
+      "filing_id": "F3",
+      "status": "AUDITED",
+      "total_claims": 78,
+      "fabricated": 0,
+      "inflated": 0,
+      "verified": 0,
+      "unverified": 78,
+      "claims": [
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 Days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 21,
+            "raw": "21 days",
+            "category": "day_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 Filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 order",
+            "category": "order_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1056.6,
+            "raw": "$1,056.60",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1056.6,
+            "raw": "$1,056.60",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1056.6,
+            "raw": "$1,056.60",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1056.6,
+            "raw": "$1,056.60",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1056.6,
+            "raw": "$1,056.60",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F3"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        }
+      ],
+      "fabricated_details": [],
+      "inflated_details": []
+    },
+    "F4": {
+      "filing_id": "F4",
+      "status": "AUDITED",
+      "total_claims": 84,
+      "fabricated": 0,
+      "inflated": 0,
+      "verified": 0,
+      "unverified": 84,
+      "claims": [
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 consecutive days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 consecutive days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 Days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 Days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 days",
+            "category": "day_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 Filing",
+            "category": "document_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 6,
+            "raw": "6, ex parte",
+            "category": "order_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 6,
+            "raw": "6, ex parte",
+            "category": "order_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100000,
+            "raw": "$100,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1000000,
+            "raw": "$1,000,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100000,
+            "raw": "$100,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 500000,
+            "raw": "$500,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 50000,
+            "raw": "$50,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250000,
+            "raw": "$250,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2000,
+            "raw": "$2,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 8000,
+            "raw": "$8,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 5000,
+            "raw": "$5,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 20000,
+            "raw": "$20,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 25000,
+            "raw": "$25,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250000,
+            "raw": "$250,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 50000,
+            "raw": "$50,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 500000,
+            "raw": "$500,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1.0,
+            "raw": "$1.00",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 10000,
+            "raw": "$10,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100000,
+            "raw": "$100,000",
+            "category": "dollar_amount",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 0,
+            "raw": "0%",
+            "category": "percentage",
+            "filing_id": "F4"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        }
+      ],
+      "fabricated_details": [],
+      "inflated_details": []
+    },
+    "F5": {
+      "filing_id": "F5",
+      "status": "AUDITED",
+      "total_claims": 144,
+      "fabricated": 0,
+      "inflated": 0,
+      "verified": 0,
+      "unverified": 144,
+      "claims": [
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 Days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 269,
+            "raw": "269 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 Days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 78,
+            "raw": "78 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 269,
+            "raw": "269 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 269,
+            "raw": "269 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 269,
+            "raw": "269 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 Days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 Days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 269,
+            "raw": "269 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 269,
+            "raw": "269 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 269,
+            "raw": "269 days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 DAYS",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 229,
+            "raw": "229 consecutive days",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 30,
+            "raw": "30 DAYS",
+            "category": "day_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 15,
+            "raw": "15 document",
+            "category": "document_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 15,
+            "raw": "15 document",
+            "category": "document_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 60,
+            "raw": "60 filing",
+            "category": "document_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 order",
+            "category": "order_count",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 82250,
+            "raw": "$82,250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 95,
+            "raw": "$95",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 855,
+            "raw": "$855",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 60,
+            "raw": "$60",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 82250,
+            "raw": "$82,250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1056.6,
+            "raw": "$1,056.60",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 57,
+            "raw": "57%",
+            "category": "percentage",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F5"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        }
+      ],
+      "fabricated_details": [],
+      "inflated_details": []
+    },
+    "F6": {
+      "filing_id": "F6",
+      "status": "AUDITED",
+      "total_claims": 36,
+      "fabricated": 0,
+      "inflated": 0,
+      "verified": 0,
+      "unverified": 36,
+      "claims": [
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 Days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 Filing",
+            "category": "document_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 order",
+            "category": "order_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 order",
+            "category": "order_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 orders",
+            "category": "order_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 order",
+            "category": "order_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 order",
+            "category": "order_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2024,
+            "raw": "2024 order",
+            "category": "order_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 order",
+            "category": "order_count",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 0.0,
+            "raw": "$0.00",
+            "category": "dollar_amount",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 0.0,
+            "raw": "$0.00",
+            "category": "dollar_amount",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F6"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        }
+      ],
+      "fabricated_details": [],
+      "inflated_details": []
+    },
+    "F7": {
+      "filing_id": "F7",
+      "status": "AUDITED",
+      "total_claims": 65,
+      "fabricated": 0,
+      "inflated": 0,
+      "verified": 0,
+      "unverified": 65,
+      "claims": [
+        {
+          "claim": {
+            "value": 119,
+            "raw": "119 Violations",
+            "category": "incident_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 consecutive days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 consecutive days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 consecutive days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 82,
+            "raw": "82 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 90,
+            "raw": "90 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 21,
+            "raw": "21 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 90,
+            "raw": "90 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 39,
+            "raw": "39 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 26,
+            "raw": "26 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 consecutive days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 90,
+            "raw": "90 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 82,
+            "raw": "82 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 consecutive days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 39,
+            "raw": "39 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 26,
+            "raw": "26 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 consecutive days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 39,
+            "raw": "39 consecutive days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 26,
+            "raw": "26 consecutive days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 Filing",
+            "category": "document_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 Order",
+            "category": "order_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 order",
+            "category": "order_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 order",
+            "category": "order_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 order",
+            "category": "order_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 Order",
+            "category": "order_count",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 3480.0,
+            "raw": "$3,480.00",
+            "category": "dollar_amount",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 1056.6,
+            "raw": "$1,056.60",
+            "category": "dollar_amount",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 5372.25,
+            "raw": "$5,372.25",
+            "category": "dollar_amount",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 30,
+            "raw": "30%",
+            "category": "percentage",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 80,
+            "raw": "80%",
+            "category": "percentage",
+            "filing_id": "F7"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        }
+      ],
+      "fabricated_details": [],
+      "inflated_details": []
+    },
+    "F8": {
+      "filing_id": "F8",
+      "status": "AUDITED",
+      "total_claims": 34,
+      "fabricated": 0,
+      "inflated": 0,
+      "verified": 0,
+      "unverified": 34,
+      "claims": [
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 consecutive days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 Days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 Days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 consecutive days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 consecutive days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 90,
+            "raw": "90 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230 consecutive days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 230,
+            "raw": "230\n   consecutive days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 21,
+            "raw": "21 days",
+            "category": "day_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 Filing",
+            "category": "document_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "250 filing",
+            "category": "document_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 250,
+            "raw": "$250",
+            "category": "dollar_amount",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 report",
+            "category": "investigation_count",
+            "filing_id": "F8"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        }
+      ],
+      "fabricated_details": [],
+      "inflated_details": []
+    },
+    "F9": {
+      "filing_id": "F9",
+      "status": "AUDITED",
+      "total_claims": 29,
+      "fabricated": 0,
+      "inflated": 0,
+      "verified": 0,
+      "unverified": 29,
+      "claims": [
+        {
+          "claim": {
+            "value": 90,
+            "raw": "90 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 90,
+            "raw": "90 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 90,
+            "raw": "90 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 90,
+            "raw": "90 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 21,
+            "raw": "21 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 21,
+            "raw": "21 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 90,
+            "raw": "90 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 40,
+            "raw": "40 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 45,
+            "raw": "45 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 21,
+            "raw": "21 days",
+            "category": "day_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 order",
+            "category": "order_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 100,
+            "raw": "100%",
+            "category": "percentage",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 report",
+            "category": "investigation_count",
+            "filing_id": "F9"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        }
+      ],
+      "fabricated_details": [],
+      "inflated_details": []
+    },
+    "F10": {
+      "filing_id": "F10",
+      "status": "AUDITED",
+      "total_claims": 11,
+      "fabricated": 0,
+      "inflated": 0,
+      "verified": 0,
+      "unverified": 11,
+      "claims": [
+        {
+          "claim": {
+            "value": 232,
+            "raw": "232 days",
+            "category": "day_count",
+            "filing_id": "F10"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 90,
+            "raw": "90 days",
+            "category": "day_count",
+            "filing_id": "F10"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 59,
+            "raw": "59 days",
+            "category": "day_count",
+            "filing_id": "F10"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 consecutive days",
+            "category": "day_count",
+            "filing_id": "F10"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 438,
+            "raw": "438 days",
+            "category": "day_count",
+            "filing_id": "F10"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 14,
+            "raw": "14 days",
+            "category": "day_count",
+            "filing_id": "F10"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 30,
+            "raw": "30 days",
+            "category": "day_count",
+            "filing_id": "F10"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F10"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F10"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F10"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        },
+        {
+          "claim": {
+            "value": 2025,
+            "raw": "2025 ex parte",
+            "category": "order_count",
+            "filing_id": "F10"
+          },
+          "status": "UNVERIFIED",
+          "confidence": "LOW",
+          "note": ""
+        }
+      ],
+      "fabricated_details": [],
+      "inflated_details": []
+    }
+  }
+}
