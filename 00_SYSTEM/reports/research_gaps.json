@@ -1,0 +1,747 @@
+{
+  "F1": {
+    "total_required": 7,
+    "total_found": 3,
+    "total_missing": 4,
+    "coverage_pct": 42.9,
+    "categories": {
+      "TRO standard": {
+        "found": [
+          "MCR 3.310"
+        ],
+        "missing": [
+          "MCL 600.2950a"
+        ],
+        "complete": false
+      },
+      "Housing rights": {
+        "found": [
+          "MCL 554.139",
+          "Truth in Renting Act"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Irreparable harm": {
+        "found": [],
+        "missing": [
+          "Any case showing immediate housing threat"
+        ],
+        "complete": false
+      },
+      "Habitability": {
+        "found": [],
+        "missing": [
+          "MCL 125.534",
+          "Rome v Walker"
+        ],
+        "complete": false
+      }
+    },
+    "all_citations_found": [
+      "MCR 3.310(B)(2)",
+      "MCL 554.139",
+      "MCL 600.5701",
+      "MCL 600.6301",
+      "MCL 125.2312f",
+      "MCR 3.310(B)",
+      "MCL 600.605",
+      "MCL 600.2918.",
+      "MCL 600.1541",
+      "MCL 450.4802",
+      "MCL 600.2918",
+      "MCL 600.1701",
+      "MCR 3.310(B)(1)",
+      "MCL 600.1629",
+      "MCL 600.5714",
+      "MCL 554.631",
+      "MCL 125.2301",
+      "MCL 125.2330i",
+      "MCR 3.310",
+      "MCL 445.903",
+      "MCL 554.632"
+    ],
+    "filing_name": "Emergency TRO (Housing)"
+  },
+  "F2": {
+    "total_required": 7,
+    "total_found": 2,
+    "total_missing": 5,
+    "coverage_pct": 28.6,
+    "categories": {
+      "Habitability": {
+        "found": [
+          "MCL 554.139"
+        ],
+        "missing": [
+          "MCL 125.534"
+        ],
+        "complete": false
+      },
+      "Security deposit": {
+        "found": [],
+        "missing": [
+          "MCL 554.602",
+          "MCL 554.613"
+        ],
+        "complete": false
+      },
+      "Tenant rights": {
+        "found": [],
+        "missing": [
+          "MCL 554.601a",
+          "Trentadue v Buckler Automatic"
+        ],
+        "complete": false
+      },
+      "Damages": {
+        "found": [
+          "MCL 600.2919"
+        ],
+        "missing": [],
+        "complete": true
+      }
+    },
+    "all_citations_found": [
+      "MCL 554.139",
+      "MCL 125.1305.",
+      "MCR 2.111",
+      "MCR 2.508",
+      "MCL 440.2302",
+      "MCL 600.701",
+      "MCR 2.113",
+      "MCL 324.3101",
+      "MCL 600.705",
+      "MCL 450.4802.",
+      "MCL 600.2919a",
+      "MCL 600.605",
+      "MCL 450.4802",
+      "MCL 600.2918",
+      "MCL 445.902",
+      "MCL 125.2312",
+      "MCR 2.110",
+      "MCL 600.601",
+      "MCL 600.1629",
+      "MCL 125.2328",
+      "MCL 600.715",
+      "MCL 125.2301",
+      "MCL 445.911",
+      "MCL 125.2330i",
+      "MCL 445.903",
+      "MCL 125.1305",
+      "MCL 125.2307",
+      "MCL 600.1535"
+    ],
+    "filing_name": "Housing Rights Complaint"
+  },
+  "F3": {
+    "total_required": 11,
+    "total_found": 9,
+    "total_missing": 2,
+    "coverage_pct": 81.8,
+    "categories": {
+      "Disqualification standard": {
+        "found": [
+          "MCR 2.003(C)(1)",
+          "MCR 2.003(C)(1)(b)"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Bias test": {
+        "found": [
+          "Crampton v Dept of State 395 Mich 347",
+          "Armstrong v Ypsilanti Charter Twp 248 Mich App 573"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Due process": {
+        "found": [
+          "Caperton v AT Massey Coal 556 US 868"
+        ],
+        "missing": [
+          "In re Murchison 349 US 133"
+        ],
+        "complete": false
+      },
+      "Structural error": {
+        "found": [
+          "Tumey v Ohio 273 US 510"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Canon violations": {
+        "found": [
+          "Canon 3"
+        ],
+        "missing": [
+          "Michigan Code of Judicial Conduct Canon 2"
+        ],
+        "complete": false
+      },
+      "Remedy": {
+        "found": [
+          "MCR 2.003(D)",
+          "In re Contempt of Dougherty 429 Mich 81"
+        ],
+        "missing": [],
+        "complete": true
+      }
+    },
+    "all_citations_found": [
+      "MCR 8.119",
+      "MCL 750.423",
+      "MCR 2.003(C)(1)(a)",
+      "MCR 2.003(C)(1)(b)(i)",
+      "MCL 722.23",
+      "MCR 2.003",
+      "MCR 2.506",
+      "MCR 2.003(C)(1)",
+      "14th Amendment",
+      "MCL 600.225.",
+      "Canon 2",
+      "MCR 2.003(C)(1)(b)",
+      "Canon 3",
+      "MCL 552.511b",
+      "MCR 2.003(D)",
+      "MCR 2.119(B)(1)",
+      "MCR 2.107.",
+      "MCR 2.003(D)(3)",
+      "MCL 722.27a",
+      "MCR 8.119(H)",
+      "MCL 600.225",
+      "MCR 2.003(C)(1)(b)(ii)",
+      "MCL 750.423.",
+      "MCR 2.003(D)(1)",
+      "MCR 3.207(B)"
+    ],
+    "filing_name": "Judicial Disqualification"
+  },
+  "F4": {
+    "total_required": 15,
+    "total_found": 15,
+    "total_missing": 0,
+    "coverage_pct": 100.0,
+    "categories": {
+      "Section 1983": {
+        "found": [
+          "42 USC \u00a71983",
+          "Monroe v Pape 365 US 167"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Judicial immunity exception": {
+        "found": [
+          "Dennis v Sparks 449 US 24",
+          "Mireles v Waco 502 US 9"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Conspiracy": {
+        "found": [
+          "42 USC \u00a71985(3)",
+          "Dennis v Sparks"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Parental rights": {
+        "found": [
+          "Troxel v Granville 530 US 57",
+          "Stanley v Illinois 405 US 645",
+          "Santosky v Kramer 455 US 745"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Domestic relations exception": {
+        "found": [
+          "Ankenbrandt v Richards 504 US 689",
+          "Catz v Chalker 142 F3d 279"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Younger abstention": {
+        "found": [
+          "Sprint Communications v Jacobs 571 US 69",
+          "Younger v Harris 401 US 37"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Rooker-Feldman": {
+        "found": [
+          "Exxon Mobil v Saudi Basic 544 US 280"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Procedural due process": {
+        "found": [
+          "Mathews v Eldridge 424 US 319"
+        ],
+        "missing": [],
+        "complete": true
+      }
+    },
+    "all_citations_found": [
+      "MCL 600.916",
+      "MCL 722.27.",
+      "MCR 2.612(C)(3)",
+      "MCR 2.612(C)(1)(a)",
+      "MCL 750.539c",
+      "MCL 750.423",
+      "MCL 722.23",
+      "MCL 722.27a",
+      "Canon 3",
+      "MCR 3.207(C)(2)",
+      "MCR 2.003",
+      "MCR 2.612(C)(1)(d)",
+      "MCR 2.003(D)",
+      "MCL 552.511b",
+      "MCL 722.27",
+      "MCR 2.003(C)",
+      "MCR 2.612(C)(1)(c)",
+      "MCL 722.23."
+    ],
+    "filing_name": "Federal \u00a71983 Civil Rights"
+  },
+  "F5": {
+    "total_required": 8,
+    "total_found": 8,
+    "total_missing": 0,
+    "coverage_pct": 100.0,
+    "categories": {
+      "MSC jurisdiction": {
+        "found": [
+          "Const 1963 Art 6 \u00a74",
+          "MCR 7.306"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Superintending control": {
+        "found": [
+          "Const 1963 Art 6 \u00a74",
+          "In re Hague 412 Mich 532"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Extraordinary circumstances": {
+        "found": [
+          "Const 1963 Art 6 \u00a74"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Void judgment": {
+        "found": [
+          "MCR 2.612(C)(1)(d)"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Fraud on court": {
+        "found": [
+          "MCR 2.612(C)(3)",
+          "Hazel Park v Highland Park 1996"
+        ],
+        "missing": [],
+        "complete": true
+      }
+    },
+    "all_citations_found": [
+      "MCL 750.423",
+      "MCL 722.23",
+      "MCR 2.003",
+      "MCR 7.306",
+      "MCR 7.306(D)",
+      "MCR 3.708(B)",
+      "MCL 722.27",
+      "MCR 7.306(A)",
+      "MCR 2.612(C)(3)",
+      "Canon 2",
+      "MCR 3.207",
+      "MCR 2.003(C)(1)(b)",
+      "MCR 2.114(D)",
+      "MCR 2.107",
+      "MCL 552.644.",
+      "MCR 2.119(B)",
+      "MCR 7.316(A)(1)",
+      "MCR 7.306.",
+      "MCL 600.1701",
+      "MCL 722.27a",
+      "MCR 7.304",
+      "MCR 8.119(H)",
+      "MCR 2.612(C)(1)",
+      "MCR 7.312(A)",
+      "MCR 3.210(C)",
+      "MCR 3.206",
+      "MCR 7.304.",
+      "MCL 722.23.",
+      "MCL 750.423.",
+      "MCR 7.304(A)",
+      "MCR 2.119",
+      "MCR 2.612(C)(1)(d)",
+      "MCR 3.207(B)",
+      "MCR 2.003.",
+      "MCL 552.644"
+    ],
+    "filing_name": "MSC Superintending Control"
+  },
+  "F6": {
+    "total_required": 9,
+    "total_found": 6,
+    "total_missing": 3,
+    "coverage_pct": 66.7,
+    "categories": {
+      "JTC jurisdiction": {
+        "found": [
+          "Const 1963 Art 6 \u00a730",
+          "MCR 9.200 et seq"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Judicial misconduct": {
+        "found": [],
+        "missing": [
+          "MCR 9.205"
+        ],
+        "complete": false
+      },
+      "Canon violations": {
+        "found": [
+          "Canon 2",
+          "Canon 3"
+        ],
+        "missing": [
+          "MCJC Canon 1"
+        ],
+        "complete": false
+      },
+      "Pattern of conduct": {
+        "found": [],
+        "missing": [
+          "In re Justin 809 NW2d 126"
+        ],
+        "complete": false
+      },
+      "Due process denial": {
+        "found": [
+          "14th Amendment",
+          "Const 1963 Art 1 \u00a717"
+        ],
+        "missing": [],
+        "complete": true
+      }
+    },
+    "all_citations_found": [
+      "MCR 8.119",
+      "MCL 722.23",
+      "MCR 3.207(C)(5)",
+      "MCR 2.003",
+      "MCR 2.506.",
+      "MCL 750.539",
+      "Canon 2",
+      "MCR 2.003(C)(1)(b)",
+      "Canon 3",
+      "MCR 9.200",
+      "MCL 722.27a",
+      "MCR 8.119(H)",
+      "MCR 8.119.",
+      "MCL 600.2591.",
+      "MCL 750.539c",
+      "MCR 2.003(D)(1)",
+      "Canon 1",
+      "MCR 2.119",
+      "MCR 2.003.",
+      "MCL 600.1401",
+      "MCL 600.2591"
+    ],
+    "filing_name": "JTC Complaint"
+  },
+  "F7": {
+    "total_required": 10,
+    "total_found": 7,
+    "total_missing": 3,
+    "coverage_pct": 70.0,
+    "categories": {
+      "Proper cause/change": {
+        "found": [
+          "MCL 722.27(1)(c)",
+          "Vodvarka v Grasmeyer 259 Mich App 499"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Best interest factors": {
+        "found": [
+          "MCL 722.23"
+        ],
+        "missing": [
+          "MCL 722.23a-23f"
+        ],
+        "complete": false
+      },
+      "Established custodial environment": {
+        "found": [
+          "MCL 722.27(1)(c)",
+          "Pierron v Pierron 486 Mich 81"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Burden of proof": {
+        "found": [
+          "MCL 722.27(1)(c)"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Parenting time": {
+        "found": [
+          "MCL 722.27a"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Fraud basis": {
+        "found": [],
+        "missing": [
+          "MCR 2.612(C)(1)(c)",
+          "MCR 2.612(C)(3)"
+        ],
+        "complete": false
+      }
+    },
+    "all_citations_found": [
+      "MCR 8.119",
+      "MCL 722.23",
+      "MCR 2.108",
+      "MCL 722.26",
+      "MCR 2.003",
+      "MCL 722.27",
+      "MCR 3.207(A)",
+      "MCL 722.27.",
+      "Canon 3",
+      "MCR 2.108.",
+      "MCL 722.1101",
+      "MCL 722.27a",
+      "MCR 8.119(H)",
+      "MCR 3.207(B)(1)",
+      "MCR 3.211.",
+      "MCR 3.207(B)(6)",
+      "MCL 722.23.",
+      "MCR 8.119.",
+      "MCL 750.539c",
+      "MCL 722.24",
+      "MCR 3.210",
+      "MCR 3.211"
+    ],
+    "filing_name": "Custody Modification"
+  },
+  "F8": {
+    "total_required": 6,
+    "total_found": 2,
+    "total_missing": 4,
+    "coverage_pct": 33.3,
+    "categories": {
+      "PPO modification/termination": {
+        "found": [
+          "MCL 600.2950a"
+        ],
+        "missing": [
+          "MCL 600.2950(12)"
+        ],
+        "complete": false
+      },
+      "Changed circumstances": {
+        "found": [],
+        "missing": [
+          "MCL 600.2950(12)"
+        ],
+        "complete": false
+      },
+      "Due process in PPO": {
+        "found": [],
+        "missing": [
+          "MCR 3.310(B)(5)"
+        ],
+        "complete": false
+      },
+      "Fraud basis": {
+        "found": [
+          "MCR 2.612(C)(1)(c)"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Void PPO": {
+        "found": [],
+        "missing": [
+          "MCR 2.612(C)(1)(d) if void ab initio"
+        ],
+        "complete": false
+      }
+    },
+    "all_citations_found": [
+      "MCR 2.203(A)",
+      "MCR 3.708",
+      "MCL 722.23",
+      "MCR 2.114(D)",
+      "MCR 3.207(B)(1)",
+      "MCL 600.2950a",
+      "MCR 3.707",
+      "MCL 600.2950",
+      "MCL 722.27",
+      "MCL 600.2954",
+      "MCR 3.708(B)",
+      "MCR 3.707(B)",
+      "MCR 2.612(C)(1)(c)",
+      "MCR 3.207(B)(6)",
+      "MCL 600.2950."
+    ],
+    "filing_name": "PPO Termination"
+  },
+  "F9": {
+    "total_required": 7,
+    "total_found": 2,
+    "total_missing": 5,
+    "coverage_pct": 28.6,
+    "categories": {
+      "Standard of review": {
+        "found": [
+          "Sands Appliance v Saratoga 507 US 619"
+        ],
+        "missing": [
+          "MCR 7.216(A)(7)"
+        ],
+        "complete": false
+      },
+      "Abuse of discretion": {
+        "found": [],
+        "missing": [
+          "Maldonado v Ford Motor 476 Mich 372"
+        ],
+        "complete": false
+      },
+      "Preservation": {
+        "found": [],
+        "missing": [
+          "MCR 2.517(A)(7)"
+        ],
+        "complete": false
+      },
+      "Constitutional issues": {
+        "found": [],
+        "missing": [
+          "de novo review standard"
+        ],
+        "complete": false
+      },
+      "Child custody review": {
+        "found": [
+          "MCL 722.28"
+        ],
+        "missing": [
+          "Berger v Berger"
+        ],
+        "complete": false
+      }
+    },
+    "all_citations_found": [
+      "MCR 7.212.",
+      "MCR 3.708",
+      "MCR 7.212(B)(5)",
+      "MCL 722.23",
+      "MCR 7.205(B)(1)",
+      "MCR 2.003(C)(1)",
+      "MCL 722.27",
+      "MCR 7.210(B)(2)",
+      "MCR 7.212(G)",
+      "MCR 7.203(B)",
+      "MCR 3.207",
+      "Canon 3",
+      "MCR 2.517",
+      "MCR 7.203(B)(1)",
+      "MCL 722.28",
+      "MCR 3.210(D)",
+      "MCL 722.27a",
+      "MCR 3.207(B)(1)(a)",
+      "MCR 8.119(H)",
+      "MCR 7.205",
+      "MCL 600.2950",
+      "MCR 3.210(C)",
+      "MCR 3.207(B)(1)",
+      "MCR 3.210(C)(1)",
+      "MCR 3.210.",
+      "MCR 3.207(B)(6)",
+      "MCR 7.212(B)",
+      "MCL 722.23.",
+      "MCR 7.212",
+      "MCR 7.205.",
+      "MCR 3.210",
+      "MCR 2.002",
+      "MCR 3.207(B)",
+      "MCR 2.003(C)"
+    ],
+    "filing_name": "COA Appeal Brief"
+  },
+  "F10": {
+    "total_required": 4,
+    "total_found": 1,
+    "total_missing": 3,
+    "coverage_pct": 25.0,
+    "categories": {
+      "Emergency motion standard": {
+        "found": [],
+        "missing": [
+          "MCR 7.211(C)(6)"
+        ],
+        "complete": false
+      },
+      "Stay pending appeal": {
+        "found": [
+          "MCR 7.209"
+        ],
+        "missing": [],
+        "complete": true
+      },
+      "Irreparable harm": {
+        "found": [],
+        "missing": [
+          "Mich Coalition of State Empl Unions v Civil Svc Commn"
+        ],
+        "complete": false
+      },
+      "Likelihood of success": {
+        "found": [],
+        "missing": [
+          "Standard appellate stay factors"
+        ],
+        "complete": false
+      }
+    },
+    "all_citations_found": [
+      "MCR 7.205(F)",
+      "MCR 3.207",
+      "MCR 3.708",
+      "MCR 3.210",
+      "Canon 3",
+      "MCR 3.207(B)",
+      "MCR 2.003(C)",
+      "MCR 3.207(B)(1)",
+      "MCR 3.207(B)(6)",
+      "MCR 7.205(F)(2)",
+      "MCR 7.209"
+    ],
+    "filing_name": "COA Emergency Motion"
+  }
+}

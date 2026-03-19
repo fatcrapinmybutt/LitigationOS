@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitigationOS — Case Strategy Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; padding: 20px; }
+        h1 { font-size: 1.8em; color: #38bdf8; margin-bottom: 5px; }
+        h2 { font-size: 1.3em; color: #94a3b8; margin: 20px 0 10px; border-bottom: 1px solid #334155; padding-bottom: 5px; }
+        .subtitle { color: #64748b; font-size: 0.9em; margin-bottom: 20px; }
+        
+        .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
+        .kpi { background: #1e293b; border-radius: 8px; padding: 16px; text-align: center; }
+        .kpi .number { font-size: 2em; font-weight: bold; color: #38bdf8; }
+        .kpi .label { font-size: 0.8em; color: #94a3b8; margin-top: 4px; }
+        .kpi.green .number { color: #22c55e; }
+        .kpi.red .number { color: #ef4444; }
+        .kpi.yellow .number { color: #eab308; }
+        .kpi.purple .number { color: #a855f7; }
+        
+        .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+        .card { background: #1e293b; border-radius: 8px; padding: 14px; }
+        .card-header { display: flex; justify-content: space-between; align-items: center; }
+        .filing-id { font-weight: bold; font-size: 1.1em; }
+        .score { font-size: 1.8em; font-weight: bold; }
+        .card-name { font-size: 0.85em; color: #94a3b8; margin: 4px 0; }
+        .card-court { font-size: 0.75em; color: #64748b; margin-bottom: 8px; }
+        .card-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+        .metric { text-align: center; }
+        .metric .label { font-size: 0.7em; color: #64748b; display: block; }
+        .metric .value { font-size: 0.9em; font-weight: bold; }
+        
+        table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        th { background: #1e293b; color: #94a3b8; padding: 8px 12px; text-align: left; font-size: 0.85em; }
+        td { padding: 8px 12px; border-bottom: 1px solid #1e293b; font-size: 0.9em; }
+        tr:hover { background: #1e293b; }
+        
+        .bar-bg { background: #334155; border-radius: 4px; height: 12px; width: 100px; }
+        .bar { height: 12px; border-radius: 4px; }
+        
+        .settlement { background: linear-gradient(135deg, #1e293b, #0f172a); border: 1px solid #334155; border-radius: 12px; padding: 20px; margin: 10px 0; }
+        .settlement-range { display: flex; justify-content: space-around; text-align: center; }
+        .settlement-range .amount { font-size: 1.5em; font-weight: bold; }
+        .settlement-range .type { font-size: 0.8em; color: #64748b; }
+        
+        .footer { text-align: center; color: #475569; font-size: 0.8em; margin-top: 30px; padding-top: 15px; border-top: 1px solid #1e293b; }
+    </style>
+</head>
+<body>
+    <h1>⚖️ LitigationOS — Case Strategy Dashboard</h1>
+    <div class="subtitle">Pigors v. Watson | Generated: 2026-03-18 20:27 | 899 days since separation</div>
+    
+    <div class="kpi-grid">
+        <div class="kpi red">
+            <div class="number">0/10</div>
+            <div class="label">Filings Ready</div>
+        </div>
+        <div class="kpi yellow">
+            <div class="number">0</div>
+            <div class="label">Avg Score</div>
+        </div>
+        <div class="kpi red">
+            <div class="number">1,127</div>
+            <div class="label">Violations</div>
+        </div>
+        <div class="kpi">
+            <div class="number">1,061</div>
+            <div class="label">Contradictions</div>
+        </div>
+        <div class="kpi green">
+            <div class="number">10,766</div>
+            <div class="label">Evidence Items</div>
+        </div>
+        <div class="kpi purple">
+            <div class="number">899</div>
+            <div class="label">Days Separated</div>
+        </div>
+    </div>
+    
+    <div class="settlement">
+        <h2 style="border:none; margin:0 0 15px 0">💰 Settlement Valuation</h2>
+        <div class="settlement-range">
+            <div><div class="amount" style="color:#eab308">$1,416,486</div><div class="type">Conservative</div></div>
+            <div><div class="amount" style="color:#22c55e">$4,488,369</div><div class="type">Midpoint</div></div>
+            <div><div class="amount" style="color:#38bdf8">$9,018,642</div><div class="type">Aggressive</div></div>
+            <div><div class="amount" style="color:#a855f7">$6,732,553</div><div class="type">Recommended Demand</div></div>
+        </div>
+    </div>
+    
+    <h2>📋 Filing Status</h2>
+    <div class="cards-grid">
+        
+        <div class="card" style="border-left: 4px solid #ef4444">
+            <div class="card-header">
+                <span class="filing-id">F1</span>
+                <span class="score" style="color:#ef4444">0</span>
+            </div>
+            <div class="card-name">Emergency TRO (Housing)</div>
+            <div class="card-court">14th Circuit</div>
+            <div class="card-metrics">
+                <div class="metric">
+                    <span class="label">Grade</span>
+                    <span class="value">N/A</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Pages</span>
+                    <span class="value" style="color:#22c55e">17/20</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Success</span>
+                    <span class="value" style="color:#eab308">45%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Ready</span>
+                    <span class="value">❌</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #ef4444">
+            <div class="card-header">
+                <span class="filing-id">F2</span>
+                <span class="score" style="color:#ef4444">0</span>
+            </div>
+            <div class="card-name">Housing Rights Complaint</div>
+            <div class="card-court">14th Circuit Civil</div>
+            <div class="card-metrics">
+                <div class="metric">
+                    <span class="label">Grade</span>
+                    <span class="value">N/A</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Pages</span>
+                    <span class="value" style="color:#ef4444">29/20</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Success</span>
+                    <span class="value" style="color:#22c55e">60%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Ready</span>
+                    <span class="value">❌</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #ef4444">
+            <div class="card-header">
+                <span class="filing-id">F3</span>
+                <span class="score" style="color:#ef4444">0</span>
+            </div>
+            <div class="card-name">Judicial Disqualification (MCR 2.003)</div>
+            <div class="card-court">14th Circuit</div>
+            <div class="card-metrics">
+                <div class="metric">
+                    <span class="label">Grade</span>
+                    <span class="value">N/A</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Pages</span>
+                    <span class="value" style="color:#ef4444">48/20</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Success</span>
+                    <span class="value" style="color:#eab308">50%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Ready</span>
+                    <span class="value">❌</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #ef4444">
+            <div class="card-header">
+                <span class="filing-id">F4</span>
+                <span class="score" style="color:#ef4444">0</span>
+            </div>
+            <div class="card-name">Federal §1983 Civil Rights</div>
+            <div class="card-court">USDC Western District MI</div>
+            <div class="card-metrics">
+                <div class="metric">
+                    <span class="label">Grade</span>
+                    <span class="value">N/A</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Pages</span>
+                    <span class="value" style="color:#ef4444">50/20</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Success</span>
+                    <span class="value" style="color:#22c55e">65%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Ready</span>
+                    <span class="value">❌</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #ef4444">
+            <div class="card-header">
+                <span class="filing-id">F5</span>
+                <span class="score" style="color:#ef4444">0</span>
+            </div>
+            <div class="card-name">MSC Superintending Control</div>
+            <div class="card-court">Michigan Supreme Court</div>
+            <div class="card-metrics">
+                <div class="metric">
+                    <span class="label">Grade</span>
+                    <span class="value">N/A</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Pages</span>
+                    <span class="value" style="color:#ef4444">80/50</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Success</span>
+                    <span class="value" style="color:#22c55e">60%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Ready</span>
+                    <span class="value">❌</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #ef4444">
+            <div class="card-header">
+                <span class="filing-id">F6</span>
+                <span class="score" style="color:#ef4444">0</span>
+            </div>
+            <div class="card-name">JTC Complaint</div>
+            <div class="card-court">Judicial Tenure Commission</div>
+            <div class="card-metrics">
+                <div class="metric">
+                    <span class="label">Grade</span>
+                    <span class="value">N/A</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Pages</span>
+                    <span class="value" style="color:#ef4444">25/20</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Success</span>
+                    <span class="value" style="color:#22c55e">75%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Ready</span>
+                    <span class="value">❌</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #ef4444">
+            <div class="card-header">
+                <span class="filing-id">F7</span>
+                <span class="score" style="color:#ef4444">0</span>
+            </div>
+            <div class="card-name">Custody Modification</div>
+            <div class="card-court">14th Circuit Family</div>
+            <div class="card-metrics">
+                <div class="metric">
+                    <span class="label">Grade</span>
+                    <span class="value">N/A</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Pages</span>
+                    <span class="value" style="color:#ef4444">31/20</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Success</span>
+                    <span class="value" style="color:#22c55e">60%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Ready</span>
+                    <span class="value">❌</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #ef4444">
+            <div class="card-header">
+                <span class="filing-id">F8</span>
+                <span class="score" style="color:#ef4444">0</span>
+            </div>
+            <div class="card-name">PPO Termination</div>
+            <div class="card-court">14th Circuit</div>
+            <div class="card-metrics">
+                <div class="metric">
+                    <span class="label">Grade</span>
+                    <span class="value">N/A</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Pages</span>
+                    <span class="value" style="color:#ef4444">27/20</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Success</span>
+                    <span class="value" style="color:#eab308">50%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Ready</span>
+                    <span class="value">❌</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #ef4444">
+            <div class="card-header">
+                <span class="filing-id">F9</span>
+                <span class="score" style="color:#ef4444">0</span>
+            </div>
+            <div class="card-name">COA Appeal Brief</div>
+            <div class="card-court">Court of Appeals</div>
+            <div class="card-metrics">
+                <div class="metric">
+                    <span class="label">Grade</span>
+                    <span class="value">N/A</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Pages</span>
+                    <span class="value" style="color:#22c55e">25/50</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Success</span>
+                    <span class="value" style="color:#22c55e">60%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Ready</span>
+                    <span class="value">❌</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #ef4444">
+            <div class="card-header">
+                <span class="filing-id">F10</span>
+                <span class="score" style="color:#ef4444">0</span>
+            </div>
+            <div class="card-name">COA Emergency Motion</div>
+            <div class="card-court">Court of Appeals</div>
+            <div class="card-metrics">
+                <div class="metric">
+                    <span class="label">Grade</span>
+                    <span class="value">N/A</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Pages</span>
+                    <span class="value" style="color:#22c55e">7/20</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Success</span>
+                    <span class="value" style="color:#eab308">55%</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Ready</span>
+                    <span class="value">❌</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <h2>👤 Witness Credibility</h2>
+    <table>
+        <tr><th>Witness</th><th>Role</th><th>Score</th><th>Bar</th><th>Grade</th><th>Strategies</th></tr>
+        
+        <tr>
+            <td>Emily Watson</td>
+            <td>Defendant/Opposing Party</td>
+            <td style="color:#ef4444; font-weight:bold">31.4</td>
+            <td>
+                <div class="bar-bg"><div class="bar" style="width:31%; background:#ef4444"></div></div>
+            </td>
+            <td>F (Not Credible)</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>Hon. Jenny McNeill</td>
+            <td>Judge — 14th Circuit</td>
+            <td style="color:#f97316; font-weight:bold">44.2</td>
+            <td>
+                <div class="bar-bg"><div class="bar" style="width:44%; background:#f97316"></div></div>
+            </td>
+            <td>D (Low Credibility)</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td>Ronald Berry</td>
+            <td>Non-Party Witness / Emily's Partner</td>
+            <td style="color:#eab308; font-weight:bold">55.0</td>
+            <td>
+                <div class="bar-bg"><div class="bar" style="width:55%; background:#eab308"></div></div>
+            </td>
+            <td>C (Questionable)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>Jennifer Barnes</td>
+            <td>Former Attorney (WITHDREW)</td>
+            <td style="color:#eab308; font-weight:bold">55.0</td>
+            <td>
+                <div class="bar-bg"><div class="bar" style="width:55%; background:#eab308"></div></div>
+            </td>
+            <td>C (Questionable)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>Pamela Rusco</td>
+            <td>Judicial Secretary</td>
+            <td style="color:#eab308; font-weight:bold">60.0</td>
+            <td>
+                <div class="bar-bg"><div class="bar" style="width:60%; background:#eab308"></div></div>
+            </td>
+            <td>C (Questionable)</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>Lori Watson</td>
+            <td>Non-Party Witness</td>
+            <td style="color:#eab308; font-weight:bold">61.4</td>
+            <td>
+                <div class="bar-bg"><div class="bar" style="width:61%; background:#eab308"></div></div>
+            </td>
+            <td>C (Questionable)</td>
+            <td>2</td>
+        </tr>
+    </table>
+    
+    <div class="footer">
+        LitigationOS v∞ — 25 Novel Tools — Built Autonomously by Copilot Agent Fleet<br>
+        NOT legal advice. All statistics traceable to litigation_context.db queries.
+    </div>
+</body>
+</html>
