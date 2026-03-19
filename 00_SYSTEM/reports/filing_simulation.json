@@ -1,0 +1,681 @@
+{
+  "scenarios": {
+    "bypass_muskegon": {
+      "scenario": "Bypass Muskegon Strategy",
+      "description": "File disqualification first, then escalate to COA/MSC/Federal",
+      "rationale": "Remove McNeill \u2192 appeal to COA \u2192 federal backup \u2192 MSC oversight",
+      "filings": [
+        {
+          "filing_id": "F3",
+          "name": "Disqualification",
+          "court": "14th Circuit",
+          "filing_date": "2026-03-18",
+          "decision_date": "2026-04-01",
+          "probability": 0.565,
+          "cumulative_probability": 0.565,
+          "on_time": true,
+          "days_margin": 14,
+          "ready": true
+        },
+        {
+          "filing_id": "F1",
+          "name": "Emergency TRO",
+          "court": "14th Circuit",
+          "filing_date": "2026-03-19",
+          "decision_date": "2026-03-22",
+          "probability": 0.53,
+          "cumulative_probability": 0.2994,
+          "on_time": true,
+          "days_margin": 27,
+          "ready": true
+        },
+        {
+          "filing_id": "F9",
+          "name": "COA Brief",
+          "court": "COA",
+          "filing_date": "2026-03-23",
+          "decision_date": "2026-05-18",
+          "probability": 0.645,
+          "cumulative_probability": 0.1931,
+          "on_time": true,
+          "days_margin": 23,
+          "ready": false
+        },
+        {
+          "filing_id": "F10",
+          "name": "COA Emergency",
+          "court": "COA",
+          "filing_date": "2026-04-01",
+          "decision_date": "2026-04-08",
+          "probability": 0.458,
+          "cumulative_probability": 0.0885,
+          "on_time": true,
+          "days_margin": 0,
+          "ready": false
+        },
+        {
+          "filing_id": "F4",
+          "name": "Federal \u00a71983",
+          "court": "USDC WDMI",
+          "filing_date": "2026-04-08",
+          "decision_date": "2026-05-08",
+          "probability": 0.59,
+          "cumulative_probability": 0.0522,
+          "on_time": true,
+          "days_margin": 54,
+          "ready": false
+        },
+        {
+          "filing_id": "F5",
+          "name": "MSC Original Action",
+          "court": "MSC",
+          "filing_date": "2026-04-14",
+          "decision_date": "2026-06-13",
+          "probability": 0.525,
+          "cumulative_probability": 0.0274,
+          "on_time": true,
+          "days_margin": 31,
+          "ready": false
+        },
+        {
+          "filing_id": "F6",
+          "name": "JTC Complaint",
+          "court": "JTC",
+          "filing_date": "2026-04-22",
+          "decision_date": "2026-07-21",
+          "probability": 0.505,
+          "cumulative_probability": 0.0138,
+          "on_time": true,
+          "days_margin": 69,
+          "ready": false
+        },
+        {
+          "filing_id": "F7",
+          "name": "Custody Modification",
+          "court": "14th Circuit",
+          "filing_date": "2026-04-29",
+          "decision_date": "2026-05-27",
+          "probability": 0.422,
+          "cumulative_probability": 0.0058,
+          "on_time": true,
+          "days_margin": 2,
+          "ready": false
+        },
+        {
+          "filing_id": "F8",
+          "name": "PPO Termination",
+          "court": "14th Circuit",
+          "filing_date": "2026-05-05",
+          "decision_date": "2026-05-26",
+          "probability": 0.457,
+          "cumulative_probability": 0.0027,
+          "on_time": true,
+          "days_margin": 10,
+          "ready": false
+        },
+        {
+          "filing_id": "F2",
+          "name": "Amended Complaint",
+          "court": "14th Circuit",
+          "filing_date": "2026-05-06",
+          "decision_date": "2026-05-27",
+          "probability": 0.545,
+          "cumulative_probability": 0.0015,
+          "on_time": false,
+          "days_margin": -5,
+          "ready": true
+        }
+      ],
+      "total_days": 70,
+      "cumulative_probability": 0.0015,
+      "risk_assessment": [
+        "\ud83d\udfe1 F10 tight margin: only 0d before deadline",
+        "\ud83d\udfe1 F7 tight margin: only 2d before deadline",
+        "\u26a0 F2 MISSED DEADLINE: filing 2026-05-06 > deadline 2026-05-01 (5d late)"
+      ],
+      "overall_success_pct": 0.1
+    },
+    "federal_first": {
+      "scenario": "Federal Offensive First",
+      "description": "File \u00a71983 in federal court before state actions",
+      "rationale": "Establish federal jurisdiction \u2192 state courts follow",
+      "filings": [
+        {
+          "filing_id": "F4",
+          "name": "Federal \u00a71983",
+          "court": "USDC WDMI",
+          "filing_date": "2026-03-24",
+          "decision_date": "2026-04-23",
+          "probability": 0.59,
+          "cumulative_probability": 0.59,
+          "on_time": true,
+          "days_margin": 69,
+          "ready": false
+        },
+        {
+          "filing_id": "F3",
+          "name": "Disqualification",
+          "court": "14th Circuit",
+          "filing_date": "2026-03-25",
+          "decision_date": "2026-04-08",
+          "probability": 0.615,
+          "cumulative_probability": 0.3628,
+          "on_time": true,
+          "days_margin": 7,
+          "ready": true
+        },
+        {
+          "filing_id": "F1",
+          "name": "Emergency TRO",
+          "court": "14th Circuit",
+          "filing_date": "2026-03-26",
+          "decision_date": "2026-03-29",
+          "probability": 0.73,
+          "cumulative_probability": 0.2649,
+          "on_time": true,
+          "days_margin": 20,
+          "ready": true
+        },
+        {
+          "filing_id": "F9",
+          "name": "COA Brief",
+          "court": "COA",
+          "filing_date": "2026-03-30",
+          "decision_date": "2026-05-25",
+          "probability": 0.695,
+          "cumulative_probability": 0.1841,
+          "on_time": true,
+          "days_margin": 16,
+          "ready": false
+        },
+        {
+          "filing_id": "F10",
+          "name": "COA Emergency",
+          "court": "COA",
+          "filing_date": "2026-04-08",
+          "decision_date": "2026-04-15",
+          "probability": 0.508,
+          "cumulative_probability": 0.0935,
+          "on_time": false,
+          "days_margin": -7,
+          "ready": false
+        },
+        {
+          "filing_id": "F5",
+          "name": "MSC Original Action",
+          "court": "MSC",
+          "filing_date": "2026-04-14",
+          "decision_date": "2026-06-13",
+          "probability": 0.525,
+          "cumulative_probability": 0.0491,
+          "on_time": true,
+          "days_margin": 31,
+          "ready": false
+        },
+        {
+          "filing_id": "F6",
+          "name": "JTC Complaint",
+          "court": "JTC",
+          "filing_date": "2026-04-22",
+          "decision_date": "2026-07-21",
+          "probability": 0.505,
+          "cumulative_probability": 0.0248,
+          "on_time": true,
+          "days_margin": 69,
+          "ready": false
+        },
+        {
+          "filing_id": "F7",
+          "name": "Custody Modification",
+          "court": "14th Circuit",
+          "filing_date": "2026-04-29",
+          "decision_date": "2026-05-27",
+          "probability": 0.573,
+          "cumulative_probability": 0.0142,
+          "on_time": true,
+          "days_margin": 2,
+          "ready": false
+        },
+        {
+          "filing_id": "F8",
+          "name": "PPO Termination",
+          "court": "14th Circuit",
+          "filing_date": "2026-05-05",
+          "decision_date": "2026-05-26",
+          "probability": 0.608,
+          "cumulative_probability": 0.0086,
+          "on_time": true,
+          "days_margin": 10,
+          "ready": false
+        },
+        {
+          "filing_id": "F2",
+          "name": "Amended Complaint",
+          "court": "14th Circuit",
+          "filing_date": "2026-05-06",
+          "decision_date": "2026-05-27",
+          "probability": 0.695,
+          "cumulative_probability": 0.006,
+          "on_time": false,
+          "days_margin": -5,
+          "ready": true
+        }
+      ],
+      "total_days": 70,
+      "cumulative_probability": 0.006,
+      "risk_assessment": [
+        "\ud83d\udfe1 F3 tight margin: only 7d before deadline",
+        "\u26a0 F10 MISSED DEADLINE: filing 2026-04-08 > deadline 2026-04-01 (7d late)",
+        "\ud83d\udfe1 F7 tight margin: only 2d before deadline",
+        "\u26a0 F2 MISSED DEADLINE: filing 2026-05-06 > deadline 2026-05-01 (5d late)"
+      ],
+      "overall_success_pct": 0.6
+    },
+    "emergency_first": {
+      "scenario": "Emergency Actions First",
+      "description": "File all emergency motions immediately",
+      "rationale": "Protect housing + child access first \u2192 strategic filings follow",
+      "filings": [
+        {
+          "filing_id": "F1",
+          "name": "Emergency TRO",
+          "court": "14th Circuit",
+          "filing_date": "2026-03-18",
+          "decision_date": "2026-03-21",
+          "probability": 0.53,
+          "cumulative_probability": 0.53,
+          "on_time": true,
+          "days_margin": 28,
+          "ready": true
+        },
+        {
+          "filing_id": "F10",
+          "name": "COA Emergency",
+          "court": "COA",
+          "filing_date": "2026-03-27",
+          "decision_date": "2026-04-03",
+          "probability": 0.458,
+          "cumulative_probability": 0.2428,
+          "on_time": true,
+          "days_margin": 5,
+          "ready": false
+        },
+        {
+          "filing_id": "F3",
+          "name": "Disqualification",
+          "court": "14th Circuit",
+          "filing_date": "2026-03-28",
+          "decision_date": "2026-04-11",
+          "probability": 0.565,
+          "cumulative_probability": 0.1372,
+          "on_time": true,
+          "days_margin": 4,
+          "ready": true
+        },
+        {
+          "filing_id": "F9",
+          "name": "COA Brief",
+          "court": "COA",
+          "filing_date": "2026-04-01",
+          "decision_date": "2026-05-27",
+          "probability": 0.645,
+          "cumulative_probability": 0.0885,
+          "on_time": true,
+          "days_margin": 14,
+          "ready": false
+        },
+        {
+          "filing_id": "F4",
+          "name": "Federal \u00a71983",
+          "court": "USDC WDMI",
+          "filing_date": "2026-04-08",
+          "decision_date": "2026-05-08",
+          "probability": 0.59,
+          "cumulative_probability": 0.0522,
+          "on_time": true,
+          "days_margin": 54,
+          "ready": false
+        },
+        {
+          "filing_id": "F7",
+          "name": "Custody Modification",
+          "court": "14th Circuit",
+          "filing_date": "2026-04-15",
+          "decision_date": "2026-05-13",
+          "probability": 0.422,
+          "cumulative_probability": 0.0221,
+          "on_time": true,
+          "days_margin": 16,
+          "ready": false
+        },
+        {
+          "filing_id": "F5",
+          "name": "MSC Original Action",
+          "court": "MSC",
+          "filing_date": "2026-04-21",
+          "decision_date": "2026-06-20",
+          "probability": 0.525,
+          "cumulative_probability": 0.0116,
+          "on_time": true,
+          "days_margin": 24,
+          "ready": false
+        },
+        {
+          "filing_id": "F8",
+          "name": "PPO Termination",
+          "court": "14th Circuit",
+          "filing_date": "2026-04-27",
+          "decision_date": "2026-05-18",
+          "probability": 0.457,
+          "cumulative_probability": 0.0053,
+          "on_time": true,
+          "days_margin": 18,
+          "ready": false
+        },
+        {
+          "filing_id": "F6",
+          "name": "JTC Complaint",
+          "court": "JTC",
+          "filing_date": "2026-05-05",
+          "decision_date": "2026-08-03",
+          "probability": 0.505,
+          "cumulative_probability": 0.0027,
+          "on_time": true,
+          "days_margin": 56,
+          "ready": false
+        },
+        {
+          "filing_id": "F2",
+          "name": "Amended Complaint",
+          "court": "14th Circuit",
+          "filing_date": "2026-05-06",
+          "decision_date": "2026-05-27",
+          "probability": 0.545,
+          "cumulative_probability": 0.0015,
+          "on_time": false,
+          "days_margin": -5,
+          "ready": true
+        }
+      ],
+      "total_days": 70,
+      "cumulative_probability": 0.0015,
+      "risk_assessment": [
+        "\ud83d\udfe1 F10 tight margin: only 5d before deadline",
+        "\ud83d\udfe1 F3 tight margin: only 4d before deadline",
+        "\u26a0 F2 MISSED DEADLINE: filing 2026-05-06 > deadline 2026-05-01 (5d late)"
+      ],
+      "overall_success_pct": 0.1
+    },
+    "appellate_track": {
+      "scenario": "Appellate Priority",
+      "description": "COA brief first to preserve appeal rights",
+      "rationale": "Apr 15 deadline for F9 is hard \u2192 file brief \u2192 emergency \u2192 disqualification",
+      "filings": [
+        {
+          "filing_id": "F9",
+          "name": "COA Brief",
+          "court": "COA",
+          "filing_date": "2026-03-21",
+          "decision_date": "2026-05-16",
+          "probability": 0.645,
+          "cumulative_probability": 0.645,
+          "on_time": true,
+          "days_margin": 25,
+          "ready": false
+        },
+        {
+          "filing_id": "F10",
+          "name": "COA Emergency",
+          "court": "COA",
+          "filing_date": "2026-03-30",
+          "decision_date": "2026-04-06",
+          "probability": 0.458,
+          "cumulative_probability": 0.2955,
+          "on_time": true,
+          "days_margin": 2,
+          "ready": false
+        },
+        {
+          "filing_id": "F3",
+          "name": "Disqualification",
+          "court": "14th Circuit",
+          "filing_date": "2026-03-31",
+          "decision_date": "2026-04-14",
+          "probability": 0.565,
+          "cumulative_probability": 0.1669,
+          "on_time": true,
+          "days_margin": 1,
+          "ready": true
+        },
+        {
+          "filing_id": "F1",
+          "name": "Emergency TRO",
+          "court": "14th Circuit",
+          "filing_date": "2026-04-01",
+          "decision_date": "2026-04-04",
+          "probability": 0.53,
+          "cumulative_probability": 0.0885,
+          "on_time": true,
+          "days_margin": 14,
+          "ready": true
+        },
+        {
+          "filing_id": "F4",
+          "name": "Federal \u00a71983",
+          "court": "USDC WDMI",
+          "filing_date": "2026-04-08",
+          "decision_date": "2026-05-08",
+          "probability": 0.59,
+          "cumulative_probability": 0.0522,
+          "on_time": true,
+          "days_margin": 54,
+          "ready": false
+        },
+        {
+          "filing_id": "F5",
+          "name": "MSC Original Action",
+          "court": "MSC",
+          "filing_date": "2026-04-14",
+          "decision_date": "2026-06-13",
+          "probability": 0.525,
+          "cumulative_probability": 0.0274,
+          "on_time": true,
+          "days_margin": 31,
+          "ready": false
+        },
+        {
+          "filing_id": "F7",
+          "name": "Custody Modification",
+          "court": "14th Circuit",
+          "filing_date": "2026-04-21",
+          "decision_date": "2026-05-19",
+          "probability": 0.422,
+          "cumulative_probability": 0.0116,
+          "on_time": true,
+          "days_margin": 10,
+          "ready": false
+        },
+        {
+          "filing_id": "F8",
+          "name": "PPO Termination",
+          "court": "14th Circuit",
+          "filing_date": "2026-04-27",
+          "decision_date": "2026-05-18",
+          "probability": 0.457,
+          "cumulative_probability": 0.0053,
+          "on_time": true,
+          "days_margin": 18,
+          "ready": false
+        },
+        {
+          "filing_id": "F6",
+          "name": "JTC Complaint",
+          "court": "JTC",
+          "filing_date": "2026-05-05",
+          "decision_date": "2026-08-03",
+          "probability": 0.505,
+          "cumulative_probability": 0.0027,
+          "on_time": true,
+          "days_margin": 56,
+          "ready": false
+        },
+        {
+          "filing_id": "F2",
+          "name": "Amended Complaint",
+          "court": "14th Circuit",
+          "filing_date": "2026-05-06",
+          "decision_date": "2026-05-27",
+          "probability": 0.545,
+          "cumulative_probability": 0.0015,
+          "on_time": false,
+          "days_margin": -5,
+          "ready": true
+        }
+      ],
+      "total_days": 70,
+      "cumulative_probability": 0.0015,
+      "risk_assessment": [
+        "\ud83d\udfe1 F10 tight margin: only 2d before deadline",
+        "\ud83d\udfe1 F3 tight margin: only 1d before deadline",
+        "\u26a0 F2 MISSED DEADLINE: filing 2026-05-06 > deadline 2026-05-01 (5d late)"
+      ],
+      "overall_success_pct": 0.1
+    },
+    "full_siege": {
+      "scenario": "Full Siege (Simultaneous)",
+      "description": "File in all courts simultaneously for maximum pressure",
+      "rationale": "Overwhelm adversary with simultaneous multi-court actions",
+      "filings": [
+        {
+          "filing_id": "F3",
+          "name": "Disqualification",
+          "court": "14th Circuit",
+          "filing_date": "2026-03-18",
+          "decision_date": "2026-04-01",
+          "probability": 0.565,
+          "cumulative_probability": 0.565,
+          "on_time": true,
+          "days_margin": 14,
+          "ready": true
+        },
+        {
+          "filing_id": "F9",
+          "name": "COA Brief",
+          "court": "COA",
+          "filing_date": "2026-03-22",
+          "decision_date": "2026-05-17",
+          "probability": 0.645,
+          "cumulative_probability": 0.3644,
+          "on_time": true,
+          "days_margin": 24,
+          "ready": false
+        },
+        {
+          "filing_id": "F10",
+          "name": "COA Emergency",
+          "court": "COA",
+          "filing_date": "2026-03-31",
+          "decision_date": "2026-04-07",
+          "probability": 0.458,
+          "cumulative_probability": 0.1669,
+          "on_time": true,
+          "days_margin": 1,
+          "ready": false
+        },
+        {
+          "filing_id": "F1",
+          "name": "Emergency TRO",
+          "court": "14th Circuit",
+          "filing_date": "2026-04-01",
+          "decision_date": "2026-04-04",
+          "probability": 0.53,
+          "cumulative_probability": 0.0885,
+          "on_time": true,
+          "days_margin": 14,
+          "ready": true
+        },
+        {
+          "filing_id": "F4",
+          "name": "Federal \u00a71983",
+          "court": "USDC WDMI",
+          "filing_date": "2026-04-08",
+          "decision_date": "2026-05-08",
+          "probability": 0.59,
+          "cumulative_probability": 0.0522,
+          "on_time": true,
+          "days_margin": 54,
+          "ready": false
+        },
+        {
+          "filing_id": "F5",
+          "name": "MSC Original Action",
+          "court": "MSC",
+          "filing_date": "2026-04-14",
+          "decision_date": "2026-06-13",
+          "probability": 0.525,
+          "cumulative_probability": 0.0274,
+          "on_time": true,
+          "days_margin": 31,
+          "ready": false
+        },
+        {
+          "filing_id": "F6",
+          "name": "JTC Complaint",
+          "court": "JTC",
+          "filing_date": "2026-04-22",
+          "decision_date": "2026-07-21",
+          "probability": 0.505,
+          "cumulative_probability": 0.0138,
+          "on_time": true,
+          "days_margin": 69,
+          "ready": false
+        },
+        {
+          "filing_id": "F7",
+          "name": "Custody Modification",
+          "court": "14th Circuit",
+          "filing_date": "2026-04-29",
+          "decision_date": "2026-05-27",
+          "probability": 0.422,
+          "cumulative_probability": 0.0058,
+          "on_time": true,
+          "days_margin": 2,
+          "ready": false
+        },
+        {
+          "filing_id": "F8",
+          "name": "PPO Termination",
+          "court": "14th Circuit",
+          "filing_date": "2026-05-05",
+          "decision_date": "2026-05-26",
+          "probability": 0.457,
+          "cumulative_probability": 0.0027,
+          "on_time": true,
+          "days_margin": 10,
+          "ready": false
+        },
+        {
+          "filing_id": "F2",
+          "name": "Amended Complaint",
+          "court": "14th Circuit",
+          "filing_date": "2026-05-06",
+          "decision_date": "2026-05-27",
+          "probability": 0.545,
+          "cumulative_probability": 0.0015,
+          "on_time": false,
+          "days_margin": -5,
+          "ready": true
+        }
+      ],
+      "total_days": 70,
+      "cumulative_probability": 0.0015,
+      "risk_assessment": [
+        "\ud83d\udfe1 F10 tight margin: only 1d before deadline",
+        "\ud83d\udfe1 F7 tight margin: only 2d before deadline",
+        "\u26a0 F2 MISSED DEADLINE: filing 2026-05-06 > deadline 2026-05-01 (5d late)"
+      ],
+      "overall_success_pct": 0.1
+    }
+  },
+  "generated": "2026-03-18T19:55:48.644626"
+}

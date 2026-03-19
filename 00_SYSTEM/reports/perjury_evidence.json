@@ -1,0 +1,85 @@
+{
+  "results": {
+    "emily": {
+      "name": "Emily A. Watson",
+      "total_items": 0,
+      "by_type": {},
+      "all_elements_met": false,
+      "prosecution_ready": 0,
+      "element_coverage": {
+        "oath": true,
+        "judicial_proceeding": true,
+        "false_statement": false,
+        "false_statement_count": 0,
+        "knowledge": false,
+        "knowledge_count": 0,
+        "materiality": true
+      }
+    },
+    "berry": {
+      "name": "Ronald T. Berry",
+      "total_items": 0,
+      "by_type": {},
+      "all_elements_met": false,
+      "prosecution_ready": 0,
+      "element_coverage": {
+        "oath": true,
+        "judicial_proceeding": true,
+        "false_statement": false,
+        "false_statement_count": 0,
+        "knowledge": false,
+        "knowledge_count": 0,
+        "materiality": true
+      }
+    },
+    "barnes": {
+      "name": "Jennifer Barnes (P55406)",
+      "total_items": 0,
+      "by_type": {},
+      "all_elements_met": false,
+      "prosecution_ready": 0,
+      "element_coverage": {
+        "oath": true,
+        "judicial_proceeding": true,
+        "false_statement": false,
+        "false_statement_count": 0,
+        "knowledge": false,
+        "knowledge_count": 0,
+        "materiality": true
+      }
+    },
+    "mcneill": {
+      "name": "Hon. Jenny L. McNeill",
+      "total_items": 0,
+      "by_type": {},
+      "all_elements_met": false,
+      "prosecution_ready": 0,
+      "element_coverage": {
+        "oath": true,
+        "judicial_proceeding": true,
+        "false_statement": false,
+        "false_statement_count": 0,
+        "knowledge": false,
+        "knowledge_count": 0,
+        "materiality": true
+      }
+    },
+    "lori_watson": {
+      "name": "Lori Watson",
+      "total_items": 0,
+      "by_type": {},
+      "all_elements_met": false,
+      "prosecution_ready": 0,
+      "element_coverage": {
+        "oath": true,
+        "judicial_proceeding": true,
+        "false_statement": false,
+        "false_statement_count": 0,
+        "knowledge": false,
+        "knowledge_count": 0,
+        "materiality": true
+      }
+    }
+  },
+  "generated": "2026-03-18T19:55:48.477664"
+}

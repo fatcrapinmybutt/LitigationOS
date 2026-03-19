@@ -135,15 +135,20 @@ def mine_contradictions(conn, target_key, target_info):
         for pat in patterns:
             try:
                 rows = conn.execute(
-                    "SELECT * FROM watson_perjury_compilation WHERE "
-                    "LOWER(COALESCE(actor,'') || ' ' || COALESCE(category,'') || ' ' || COALESCE(description,'')) LIKE ? LIMIT 100",
+                    "SELECT id, watson_member, statement_text, contradicting_evidence, "
+                    "perjury_type, severity_score, admissible, mcr_mre_authority "
+                    "FROM watson_perjury_compilation WHERE "
+                    "LOWER(COALESCE(watson_member,'') || ' ' || COALESCE(statement_text,'')) LIKE ? LIMIT 100",
                     (f'%{pat}%',)
                 ).fetchall()
                 for row in rows:
                     results.append({
                         'source_table': 'watson_perjury_compilation',
-                        'category': dict(row).get('category', ''),
-                        'description': dict(row).get('description', '')[:500],
+                        'category': row[4] or '',  # perjury_type
+                        'description': (row[2] or '')[:500],  # statement_text
+                        'contradicting_evidence': (row[3] or '')[:300],
+                        'severity': row[5],  # severity_score
+                        'authority': row[7] or '',  # mcr_mre_authority
                         'evidence_type': 'direct_perjury',
                     })
             except Exception:
@@ -154,17 +159,20 @@ def mine_contradictions(conn, target_key, target_info):
         for pat in patterns:
             try:
                 rows = conn.execute(
-                    "SELECT * FROM detected_contradictions WHERE "
-                    "LOWER(COALESCE(entity,'') || ' ' || COALESCE(statement_a,'') || ' ' || COALESCE(statement_b,'')) LIKE ? LIMIT 100",
+                    "SELECT id, speaker, statement_1, source_1, statement_2, source_2, "
+                    "contradiction_type, severity, impeachment_value "
+                    "FROM detected_contradictions WHERE "
+                    "LOWER(COALESCE(speaker,'') || ' ' || COALESCE(statement_1,'') || ' ' || COALESCE(statement_2,'')) LIKE ? LIMIT 100",
                     (f'%{pat}%',)
                 ).fetchall()
                 for row in rows:
-                    d = dict(row)
                     results.append({
                         'source_table': 'detected_contradictions',
-                        'statement_a': d.get('statement_a', '')[:300],
-                        'statement_b': d.get('statement_b', '')[:300],
-                        'contradiction_type': d.get('contradiction_type', ''),
+                        'statement_a': (row[2] or '')[:300],  # statement_1
+                        'statement_b': (row[4] or '')[:300],  # statement_2
+                        'contradiction_type': row[6] or '',
+                        'severity': row[7] or '',
+                        'impeachment_value': row[8],
                         'evidence_type': 'contradiction',
                     })
             except Exception:
@@ -175,16 +183,19 @@ def mine_contradictions(conn, target_key, target_info):
         for pat in patterns:
             try:
                 rows = conn.execute(
-                    "SELECT * FROM contradiction_map WHERE "
-                    "LOWER(COALESCE(actor,'') || ' ' || COALESCE(claim_text,'') || ' ' || COALESCE(contradiction_text,'')) LIKE ? LIMIT 100",
+                    "SELECT id, source_a_type, source_a_text, source_b_type, source_b_text, "
+                    "contradiction_type, severity, legal_impact "
+                    "FROM contradiction_map WHERE "
+                    "LOWER(COALESCE(source_a_text,'') || ' ' || COALESCE(source_b_text,'') || ' ' || COALESCE(legal_impact,'')) LIKE ? LIMIT 100",
                     (f'%{pat}%',)
                 ).fetchall()
                 for row in rows:
-                    d = dict(row)
                     results.append({
                         'source_table': 'contradiction_map',
-                        'claim': d.get('claim_text', '')[:300],
-                        'contradiction': d.get('contradiction_text', '')[:300],
+                        'claim': (row[2] or '')[:300],  # source_a_text
+                        'contradiction': (row[4] or '')[:300],  # source_b_text
+                        'types': f"{row[1] or ''} vs {row[3] or ''}",
+                        'severity': row[6] or '',
                         'evidence_type': 'mapped_contradiction',
                     })
             except Exception:
@@ -195,16 +206,21 @@ def mine_contradictions(conn, target_key, target_info):
         for pat in patterns:
             try:
                 rows = conn.execute(
-                    "SELECT * FROM adversary_assertions WHERE "
-                    "LOWER(COALESCE(actor,'') || ' ' || COALESCE(assertion_text,'')) LIKE ? LIMIT 50",
+                    "SELECT id, file_name, assertion_text, assertion_type, speaker, "
+                    "is_false, rebuttal_evidence, severity "
+                    "FROM adversary_assertions WHERE "
+                    "LOWER(COALESCE(speaker,'') || ' ' || COALESCE(assertion_text,'') || ' ' || COALESCE(assertion_type,'')) LIKE ? LIMIT 100",
                     (f'%{pat}%',)
                 ).fetchall()
                 for row in rows:
-                    d = dict(row)
                     results.append({
                         'source_table': 'adversary_assertions',
-                        'assertion': d.get('assertion_text', '')[:300],
-                        'evidence_type': 'adversary_assertion',
+                        'assertion': (row[2] or '')[:300],  # assertion_text
+                        'speaker': row[4] or '',
+                        'assertion_type': row[3] or '',
+                        'severity': row[7] or '',
+                        'is_false': row[5],
+                        'evidence_type': 'false_assertion',
                     })
             except Exception:
                 pass

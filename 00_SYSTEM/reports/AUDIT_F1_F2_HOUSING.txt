@@ -1,0 +1,600 @@
+Agent is still running after waiting 60s. agent_id: audit-housing-f1f2, agent_type: general-purpose, status: running, description: audit-housing-f1f2, elapsed: 454s, total_turns: 1, (timed out waiting for completion) You will be automatically notified when this agent completes — no need to poll.
+
+Completed turns:
+[Turn 0]
+Here is the complete audit report:
+
+---
+
+# 🔍 LEGAL FILING AUDIT REPORT — PKG_F1 (TRO) & PKG_F2 (Complaint)
+
+## FILE 1: PKG_F1_EMERGENCY_TRO/01_MAIN_FILING.md
+
+---
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Placeholder
+LINE/SECTION: Lines 16, 338
+ISSUE: "[ASSIGNED JUDGE]" placeholder appears twice (caption + proposed order).
+       This is a CZ case — it will NOT be assigned to Judge McNeill (Family Division).
+       Must be filled with the actual assigned civil judge before filing.
+FIX: Determine assigned judge from clerk's office or leave blank for clerk assignment.
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Legal / Citation
+LINE/SECTION: Line 138 (¶31)
+ISSUE: Cites "MCL 554.632" for "60 days' advance written notice" for rent increases.
+       TWO ERRORS: (1) MCL 554.632 governs void lease clauses, NOT notice periods.
+       (2) The correct notice period for mobile home rent increases is 30 DAYS
+       under MCL 125.2328(1)(c), not 60 days. F2 correctly cites the 30-day
+       requirement at MCL 125.2328(1)(c).
+FIX: Change to: "without the minimum 30 days' advance written notice required by
+     MCL 125.2328(1)(c)"
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Consistency / Statistic
+LINE/SECTION: Lines 180-181 (¶40a(i))
+ISSUE: States trailer value is "approximately $4,200." F2 (¶49) states mobile home
+       value as "$15,000–$45,000" and blocked sale equity as "$60,000–$105,000."
+       These are wildly inconsistent. Filing $4,200 in the TRO undermines the
+       much larger damage claims in the complaint. A 1970 Marlette at $4,200
+       vs. $45,000+ destroys credibility.
+FIX: Reconcile valuations across both filings. If $4,200 is the NADA/market value,
+     use that consistently. The $60K-$105K "equity" figure in F2 needs documentation
+     or it will appear fabricated.
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Citation / Legal
+LINE/SECTION: Line 274 (Verification section)
+ISSUE: Cites "MCL 600.1541" for perjury declaration. The F1 affidavit (line 24)
+       cites "MCL 600.1561." F2 main filing (line 615) cites "MCL 600.1535."
+       THREE DIFFERENT STATUTES for the same purpose across four documents.
+       Only one can be correct. MCL 600.1561 relates to oaths; MCL 600.1535
+       relates to verification of pleadings.
+FIX: Use MCL 600.1561 (oaths/affirmations) for the affidavit verifications.
+     Use MCL 600.1535 (verified complaints) for the complaint verification.
+     Be consistent throughout.
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Consistency / Date
+LINE/SECTION: Line 310 (Notary block)
+ISSUE: Notary block says "20__" (open year) but line 310 "2025". The affidavit
+       (02_AFFIDAVIT.md line 28) says "2026." If 231 days from July 29, 2025 =
+       ~March 16, 2026, the filing is in 2026, NOT 2025. The "2025" in the
+       notary/verification is wrong.
+FIX: Change "2025" to "2026" in the verification/notary section (line 310).
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Consistency
+LINE/SECTION: Line 138 (¶31)
+ISSUE: States rent reached $720 "By February 2025." F2 (line 102, ¶14d) says
+       the $720 increase occurred in "April 2025." These are different dates
+       for the same increase — a cross-filing inconsistency a defense attorney
+       will exploit.
+FIX: Determine the actual date of the $720 increase and use it consistently in
+     both filings.
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Consistency
+LINE/SECTION: Line 138 (¶31)
+ISSUE: States "121% increase in approximately 14 months." F2 (line 104, ¶14)
+       says "121% in approximately 16 months." Cannot be both.
+FIX: Calculate actual timeframe from first rent ($325) to $720, use consistently.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Placeholder
+LINE/SECTION: Lines 439, 457
+ISSUE: Two "[TO BE DETERMINED BY ANDREW]" placeholders in Certificate of Service:
+       (1) Email for Shady Oaks Park MHP LLC
+       (2) NJ registered agent address
+       These MUST be filled before filing.
+FIX: Look up NJ registered agent via NJ Division of Revenue. Use known email
+     shadyoaks@ourhomesofamerica.com.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Legal
+LINE/SECTION: Line 122 (¶24 table)
+ISSUE: Lists Partridge payment year as "(2004)" — should be "(2024)."
+       F2 (line 128) correctly says "August 14, 2024." This is a typo that
+       could undermine credibility of the timeline.
+FIX: Change "(2004)" to "(2024)".
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Legal / Party
+LINE/SECTION: Defendant list (lines 18-33)
+ISSUE: F1 does NOT name Cricklewood MHP LLC as a defendant, but discusses
+       Cricklewood extensively (¶30, ¶10). F2 DOES name Cricklewood as a
+       defendant. If you're seeking a TRO against entities that include
+       Cricklewood's coerced lease, Cricklewood should be named.
+FIX: Add Cricklewood MHP LLC as a named defendant in the TRO, or explain
+     its omission.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Formatting
+LINE/SECTION: Lines 178-188 (¶40a, ¶40b)
+ISSUE: Non-standard paragraph numbering. Using "40a" and "40b" after ¶40 is
+       unusual in Michigan practice. Standard would be ¶41, ¶42, etc.
+FIX: Renumber as sequential paragraphs (41, 42...) and adjust all subsequent
+     paragraph references.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Citation
+LINE/SECTION: Line 274
+ISSUE: "28 U.S.C. § 1746" — federal verification statute is unnecessary for
+       a state circuit court filing. Michigan has its own verification statutes.
+       Including federal citation is harmless but suggests copy-paste from a
+       federal template.
+FIX: Optional — remove federal citation or keep as belt-and-suspenders.
+```
+
+```
+SEVERITY: MEDIUM
+CATEGORY: Citation format
+LINE/SECTION: F1 Affidavit line 25
+ISSUE: "28 USC § 1746" — inconsistent abbreviation. Main filing uses
+       "28 U.S.C. § 1746" (with periods). Should be consistent.
+FIX: Use "28 U.S.C. § 1746" consistently.
+```
+
+```
+SEVERITY: MEDIUM
+CATEGORY: Legal
+LINE/SECTION: Line 93 (¶15)
+ISSUE: Cites "MCL 125.2301 et seq." as the Mobile Home Commission Act.
+       This is correct (2016 PA 479). However, F2 also cites "MCL 125.1305"
+       which is from the OLD repealed Mobile Home Commission Act (1987 PA 96).
+       F1 correctly avoids the old citation.
+FIX: No fix needed for F1 — this is a flag for F2.
+```
+
+```
+SEVERITY: LOW
+CATEGORY: Formatting
+LINE/SECTION: Line 43 (¶1)
+ISSUE: The introductory paragraph cites "MCL 125.2330i (Mobile Home Commission
+       Act — Personal Property Designation)" — the parenthetical is helpful but
+       unusual for a motion body. Parenthetical descriptions are more common
+       in briefs than in motion papers.
+FIX: Optional — remove parenthetical descriptor.
+```
+
+---
+
+## FILE 2: PKG_F2_SHADY_OAKS_COMPLAINT/01_MAIN_FILING.md
+
+---
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Placeholder
+LINE/SECTION: Line 76 (¶10)
+ISSUE: Contains an EDITORIAL NOTE inside a sworn court filing:
+       "[ANDREW: Consider filing a parallel LARA complaint regarding License
+       #1201891 — this strengthens the civil case and creates an independent
+       enforcement record.]"
+       This is attorney-client-style advice embedded in the body of the
+       complaint. If filed as-is, the court and opposing counsel see it.
+       This is a SHOW-STOPPER.
+FIX: DELETE the entire bracketed note. Move advice to a separate memo.
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Formatting / Legal
+LINE/SECTION: Lines 76 and 84
+ISSUE: DUPLICATE PARAGRAPH NUMBER. ¶10 appears twice:
+       - Line 76: ¶10 (Administrative Exhaustion)
+       - Line 84: ¶10 (Plaintiff's Tenancy)
+       This breaks sequential numbering for the entire complaint. All
+       subsequent paragraph numbers are off by one.
+FIX: Renumber line 84 as ¶11 and adjust all subsequent paragraphs throughout
+     the entire document (+1 to every paragraph after line 84).
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Citation / Legal
+LINE/SECTION: Lines 54, 86, 295
+ISSUE: Cites "MCL 125.1305" three times. This is from the REPEALED 1987
+       Mobile Home Commission Act (1987 PA 96, repealed 2016). The current
+       statute is MCL 125.2301 et seq. (2016 PA 479). Citing a repealed
+       statute in a new complaint is a substantive legal error. A judge may
+       question whether you've researched current law.
+FIX: Remove "MCL 125.1305" or replace with the corresponding section of
+     the current act (MCL 125.2330i already covers personal property).
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Placeholder
+LINE/SECTION: Lines 16, 632, 640, 644
+ISSUE: Four placeholders remain:
+       (1) Line 16: "[ASSIGNED JUDGE]"
+       (2) Line 632: "[TO BE DETERMINED BY ANDREW — personal service / certified
+           mail / other]"
+       (3) Line 640: "[TO BE DETERMINED BY ANDREW — obtain current or last
+           registered agent address from LARA records]"
+       (4) Line 644: "[TO BE DETERMINED BY ANDREW — obtain registered agent
+           address from LARA or Secretary of State records]"
+FIX: Fill all before filing. Look up LARA records for registered agents.
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Legal / Citation
+LINE/SECTION: Line 615
+ISSUE: Cites "MCL 600.1535" for perjury verification. The F1 main filing
+       uses "MCL 600.1541." The affidavits use "MCL 600.1561." Three
+       different statutes — pick one correct one per document type.
+FIX: For a verified complaint, MCL 600.1535 may be appropriate but verify
+     it hasn't been repealed/renumbered. Ensure consistency with the affidavit.
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Consistency / Statistic
+LINE/SECTION: Lines 241, 249, 317-318, 557, 561
+ISSUE: Mobile home value is stated as:
+       - ¶49 (line 241): "$15,000–$45,000"
+       - ¶64 (line 317-318): blocked sale proceeds "$60,000–$105,000"
+       - ¶68 (line 325): "$15,000–$45,000" again
+       - F1 ¶40a(i): "$4,200"
+       The same trailer is valued at $4,200 in one filing and $15,000-$45,000
+       in the other. Opposing counsel will use F1's $4,200 to impeach every
+       damage number in F2. The $60K-$105K "blocked sale equity" is especially
+       suspect for a 1970 Marlette.
+FIX: Use a single defensible appraisal. If $4,200 is the comparable market
+     value, that should be the number. If the $60K-$105K represents what
+     buyers offered for the home + lot interest, explain that clearly. Otherwise
+     this looks like inflated damages.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Legal
+LINE/SECTION: Lines 458, 482, 492, 496, 583
+ISSUE: Cites MCL 440.2302 (UCC Article 2 — Sales of Goods) for lease
+       unconscionability. UCC Article 2 applies to the SALE of goods, not
+       leases. For lease unconscionability, the correct statute is either
+       MCL 440.2802 (UCC Article 2A — Leases) or common law. A judge
+       familiar with the UCC will notice this.
+FIX: Replace "MCL 440.2302" with common law unconscionability principles
+     or MCL 440.2802 if the lease qualifies under Article 2A.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Legal / Formatting
+LINE/SECTION: Line 42-44
+ISSUE: Title says "FIRST AMENDED COMPLAINT AND JURY DEMAND" and
+       "(Filed pursuant to MCR 2.110, MCR 2.111, MCR 2.113)." If this is
+       being filed as the INITIAL complaint (no prior complaint exists),
+       the title is wrong. An amended complaint requires a prior original.
+       If no prior complaint was filed, this should be "COMPLAINT AND JURY
+       DEMAND."
+FIX: Confirm whether a prior complaint was filed. If not, change title to
+     "COMPLAINT AND JURY DEMAND" and remove "First Amended."
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Consistency / Date
+LINE/SECTION: Lines 617, 655
+ISSUE: Both the verification (line 617) and certificate of service (line 655)
+       say "2025." The F2 affidavit says "2026" (line 28). If the filing
+       date is March 2026, the year must be 2026 throughout.
+FIX: Change all "2025" date references to "2026."
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Citation
+LINE/SECTION: Line 76 (¶10)
+ISSUE: *Saginaw County v John Sexton Corp of New Jersey*, 232 Mich App 202,
+       211 (1998) — citation format is correct (volume, reporter, page, year).
+       However, the proposition cited (exhaustion not required for tort damages)
+       should be verified against the actual opinion. The page pin-cite "211"
+       needs confirmation.
+FIX: Pull the actual opinion and verify the page 211 citation supports the
+     stated proposition.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Legal
+LINE/SECTION: Line 104 (¶14)
+ISSUE: Cites "MCL 125.2328(1)(c)" for 30-day notice requirement. Verify this
+       subsection exists in the current (2016) MHCA. The old act had different
+       numbering. If the MHCA was renumbered, this section may not match.
+FIX: Pull current MCL 125.2328 and verify subsection (1)(c) addresses rent
+     increase notice.
+```
+
+```
+SEVERITY: MEDIUM
+CATEGORY: Grammar / Legal
+LINE/SECTION: Line 12
+ISSUE: Uses "In Propria Persona" while F1 uses "Pro Se." Both are correct
+       but should be consistent across a filing package.
+FIX: Pick one term and use it in all filings.
+```
+
+```
+SEVERITY: MEDIUM
+CATEGORY: Legal
+LINE/SECTION: Line 70 (¶7)
+ISSUE: Cites "MCL 600.601" for subject-matter jurisdiction. F1 (line 79)
+       cites "MCL 600.605." Both are jurisdiction statutes but they're
+       different sections. MCL 600.605 is the general jurisdiction grant;
+       MCL 600.601 is more about court organization. Using different sections
+       for the same point across companion filings looks sloppy.
+FIX: Use MCL 600.605 consistently in both filings for general circuit court
+     jurisdiction.
+```
+
+```
+SEVERITY: LOW
+CATEGORY: Formatting
+LINE/SECTION: Lines 96-103 (¶14)
+ISSUE: Sub-paragraphs use lettered list (a, b, c, d) but formatting uses
+       indented paragraphs with periods — inconsistent with the (a), (b)
+       format used elsewhere in the same document.
+FIX: Standardize sub-paragraph formatting throughout.
+```
+
+---
+
+## FILE 3: PKG_F1_EMERGENCY_TRO/02_AFFIDAVIT.md
+
+---
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Legal / Content
+LINE/SECTION: Entire document (lines 1-48)
+ISSUE: The affidavit contains only 5 substantive paragraphs. ALL five
+       discuss custody separation from L.D.W. (231 days, July 29, 2025).
+       NONE discuss the actual housing emergency: property destruction,
+       lock-drilling, "FREE" sign, threat of further seizure, water shutoff,
+       or any facts supporting the TRO. This affidavit DOES NOT SUPPORT
+       the motion it purports to accompany. An affidavit "In Support of
+       Emergency TRO" that never mentions the emergency is fatally deficient
+       under MCR 3.310(B)(1).
+FIX: REWRITE ENTIRELY. The affidavit must include sworn statements about:
+     - July 17, 2025 forced entry and property removal
+     - "FREE" sign posted on titled property
+     - July 3, 2025 attempted break-in
+     - May 20, 2025 water shutoff with child present
+     - Ongoing threat of further property seizure
+     - Plaintiff's ownership of the mobile home (title, VIN)
+     - The imminent irreparable harm justifying ex parte relief
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Party Name / Legal
+LINE/SECTION: Line 11 (¶1)
+ISSUE: States case is "pending before Hon. Jenny L. McNeill in the 14th
+       Circuit Civil." McNeill is a FAMILY DIVISION judge. Case
+       2025-002760-CZ is a CIVIL case. McNeill would NOT preside over a CZ
+       case. This statement is factually wrong and could confuse the court.
+FIX: Remove the judge name entirely ("pending in the 14th Circuit Court,
+     Civil Division") or insert the correct civil judge's name.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Content / Relevance
+LINE/SECTION: Lines 15-17 (¶3-4)
+ISSUE: ¶3 discusses L.D.W.'s birth date. ¶4 discusses 231-day custody
+       separation. Neither fact is relevant to a housing TRO. Including
+       custody facts in a housing affidavit conflates the two cases and
+       may prejudice the housing judge.
+FIX: Replace with housing-relevant facts. L.D.W. can be referenced as
+     "Plaintiff's minor child who resided at the property" without custody
+     details.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Citation
+LINE/SECTION: Line 24
+ISSUE: Cites "MCL 600.1561" — different from F1 main filing's "MCL 600.1541"
+       and F2 main's "MCL 600.1535."
+FIX: Use consistent citation across all documents.
+```
+
+```
+SEVERITY: MEDIUM
+CATEGORY: Date
+LINE/SECTION: Line 17 (¶4)
+ISSUE: "231 consecutive days since July 29, 2025" — this is a dynamic number
+       that will be wrong by the time of filing unless the date is calculated
+       at signing.
+FIX: Use "approximately ___ consecutive days" or calculate at signing.
+```
+
+```
+SEVERITY: MEDIUM
+CATEGORY: Formatting
+LINE/SECTION: Line 28
+ISSUE: "Dated: ________________, 2026" — year is 2026, which is correct.
+       But F1 main filing's verification says "2025" (line 310). Inconsistent.
+FIX: Make all date years consistent.
+```
+
+---
+
+## FILE 4: PKG_F2_SHADY_OAKS_COMPLAINT/02_AFFIDAVIT.md
+
+---
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Legal / Content
+LINE/SECTION: Entire document (lines 1-48)
+ISSUE: IDENTICAL to the F1 affidavit except line 3 ("In Support of Shady Oaks
+       Complaint" vs "In Support of Emergency TRO"). All substantive content
+       is about custody separation — not about housing conditions, property
+       destruction, sewage, or any facts alleged in the complaint.
+       This affidavit DOES NOT SUPPORT the complaint it accompanies.
+FIX: REWRITE ENTIRELY. The affidavit in support of a complaint should verify
+     the key factual allegations: tenancy, ownership of mobile home, rent
+     escalation, ledger fraud, sewage conditions, property destruction,
+     entity fraud, and damages. It should be a comprehensive verification
+     of the complaint's factual claims.
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Party Name / Legal
+LINE/SECTION: Line 11 (¶1)
+ISSUE: Same as F1 affidavit — incorrectly states case is before "Hon. Jenny L.
+       McNeill in the 14th Circuit Civil." McNeill is Family Division.
+FIX: Remove judge name or insert correct civil judge.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Citation
+LINE/SECTION: Line 24
+ISSUE: Same MCL inconsistency — uses "MCL 600.1561" while the complaint's
+       verification (line 615) uses "MCL 600.1535."
+FIX: Align with the main filing's citation.
+```
+
+```
+SEVERITY: MEDIUM
+CATEGORY: Content
+LINE/SECTION: Lines 15-17 (¶3-4)
+ISSUE: Custody separation facts (L.D.W. birth date, 231-day separation)
+       are irrelevant to a housing complaint. Same issue as F1 affidavit.
+FIX: Replace with housing-relevant verification facts.
+```
+
+---
+
+## CROSS-FILING CONSISTENCY ISSUES
+
+---
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Consistency
+ISSUE: MOBILE HOME VALUATION — F1 says ~$4,200; F2 says $15,000–$45,000 (and
+       $60,000–$105,000 in blocked equity). These cannot both be true and will
+       be used to impeach the entire damages case.
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Consistency
+ISSUE: RENT INCREASE DATE — F1 says $720 reached "By February 2025"; F2 says
+       "April 2025." Two months apart for the same increase.
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Consistency
+ISSUE: RENT INCREASE TIMEFRAME — F1 says "approximately 14 months"; F2 says
+       "approximately 16 months." Two-month difference.
+```
+
+```
+SEVERITY: CRITICAL
+CATEGORY: Consistency
+ISSUE: NOTICE PERIOD — F1 cites "60 days' advance written notice" (MCL 554.632);
+       F2 cites "30-day written notice" (MCL 125.2328(1)(c)). Different statutes,
+       different notice periods for the same claim.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Consistency
+ISSUE: LEGAL TERMINOLOGY — F1 uses "Pro Se"; F2 uses "In Propria Persona."
+       Should be uniform across a filing package.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Consistency
+ISSUE: YEAR IN VERIFICATION — F1 main says "2025"; F1 affidavit says "2026";
+       F2 main says "2025"; F2 affidavit says "2026." The year must be
+       consistent and correct.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Consistency
+ISSUE: DEFENDANT LISTS DIFFER — F1 names Shady Oaks + HOA + Does 1-10.
+       F2 names Shady Oaks + HOA + Cricklewood + Does 1-10. The TRO should
+       cover Cricklewood if the complaint includes Cricklewood.
+```
+
+```
+SEVERITY: HIGH
+CATEGORY: Consistency
+ISSUE: JURISDICTION STATUTE — F1 cites MCL 600.605; F2 cites MCL 600.601
+       AND MCL 600.605 together. Should use the same citation.
+```
+
+```
+SEVERITY: MEDIUM
+CATEGORY: Consistency
+ISSUE: PARTRIDGE PAYMENT YEAR — F1 (line 122) says "(2004)"; F2 (line 128)
+       says "August 14, 2024." The "(2004)" in F1 is clearly a typo.
+```
+
+---
+
+## ITEMS VERIFIED CLEAN ✅
+
+- **No hallucinated party names**: Zero instances of "Jane Berry," "Patricia Berry," "Amy McNeill," "Emily Ann" (only in wave_evidence_extract.txt, not in the four reviewed files), "Tiffany," or "Ronald Berry Esq."
+- **No inflated statistics**: Zero instances of "24 ex parte," "91% alienation," "308,704 evidence quotes," "1,435 documents"
+- **No MCL § format errors**: All MCL citations use "MCL NNN.NNN" format, not "MCL §"
+- **Case number correct**: 2025-002760-CZ used consistently in all four files
+- **Child referenced by initials only**: L.D.W. used throughout, no full name exposure
+- **Core case citations appear properly formatted**: *Thermatool Corp v Borzym*, 227 Mich App 366; *Trentadue v Gorton*, 479 Mich 378 — both have volume, reporter, page, court/year
+
+---
+
+## 📊 SUMMARY
+
+| Severity | F1 Main | F2 Main | F1 Affidavit | F2 Affidavit | Cross-Filing | **TOTAL** |
+|----------|---------|---------|--------------|--------------|--------------|-----------|
+| **CRITICAL** | 7 | 6 | 2 | 2 | 4 | **21** |
+| **HIGH** | 5 | 5 | 2 | 1 | 4 | **17** |
+| **MEDIUM** | 2 | 2 | 2 | 1 | 1 | **8** |
+| **LOW** | 1 | 1 | 0 | 0 | 0 | **2** |
+| **TOTAL** | **15** | **14** | **6** | **4** | **9** | **48** |
+
+### 🚨 TOP 5 SHOW-STOPPERS (fix before filing):
+
+1. **Both affidavits are about custody, not housing** — they don't support their respective motions at all. Complete rewrites needed.
+2. **Editorial note `[ANDREW: Consider filing...]` embedded in F2 complaint body** — opposing counsel sees this.
+3. **Mobile home valued at $4,200 in F1 vs $15,000–$45,000 in F2** — self-impeaching inconsistency.
+4. **Wrong statute + wrong notice period** in F1 (MCL 554.632 / 60 days vs MCL 125.2328(1)(c) / 30 days).
+5. **Judge McNeill named in affidavits** — she's Family Division, not Civil. Wrong judge for a CZ case.

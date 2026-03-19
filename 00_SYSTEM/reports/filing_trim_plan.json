@@ -1,0 +1,2918 @@
+{
+  "F1": {
+    "filing_id": "F1",
+    "current_words": 4887,
+    "current_pages": 17,
+    "page_limit": 20,
+    "target_words": 6000,
+    "words_to_cut": 0,
+    "over_limit": false,
+    "verbose_phrases": [],
+    "redundant_paragraphs": [],
+    "citation_clusters": [],
+    "repeated_arguments": [],
+    "total_potential_savings": 0,
+    "status": "WITHIN_LIMIT"
+  },
+  "F2": {
+    "filing_id": "F2",
+    "current_words": 8466,
+    "current_pages": 29,
+    "page_limit": 20,
+    "target_words": 6000,
+    "words_to_cut": 2466,
+    "over_limit": true,
+    "verbose_phrases": [
+      {
+        "original": "Prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 17252
+      },
+      {
+        "original": "prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 36992
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 955
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 5028
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 57934
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 58333
+      },
+      {
+        "original": "as a result of",
+        "replacement": "from",
+        "word_savings": 3,
+        "position": 30164
+      }
+    ],
+    "redundant_paragraphs": [
+      {
+        "para_a_idx": 0,
+        "para_b_idx": 253,
+        "similarity": 0.72,
+        "para_a_preview": "**ANDREW JAMES PIGORS,**\n1977 Whitehall Road, Lot 17\nNorth Muskegon, MI 49445\nPhone: (231) 903-5690\n...",
+        "para_b_preview": "________________________________________\nANDREW JAMES PIGORS\n1977 Whitehall Road, Lot 17\nNorth Muske...",
+        "word_savings": 21
+      },
+      {
+        "para_a_idx": 73,
+        "para_b_idx": 89,
+        "similarity": 0.889,
+        "para_a_preview": "44. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "52. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 73,
+        "para_b_idx": 105,
+        "similarity": 0.889,
+        "para_a_preview": "44. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "58. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 73,
+        "para_b_idx": 126,
+        "similarity": 0.889,
+        "para_a_preview": "44. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "69. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 73,
+        "para_b_idx": 142,
+        "similarity": 0.889,
+        "para_a_preview": "44. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "76. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 73,
+        "para_b_idx": 156,
+        "similarity": 0.889,
+        "para_a_preview": "44. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "82. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 73,
+        "para_b_idx": 169,
+        "similarity": 0.889,
+        "para_a_preview": "44. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "87. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 73,
+        "para_b_idx": 182,
+        "similarity": 0.889,
+        "para_a_preview": "44. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "92. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 73,
+        "para_b_idx": 201,
+        "similarity": 0.889,
+        "para_a_preview": "44. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "100. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set fort...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 87,
+        "para_b_idx": 124,
+        "similarity": 0.727,
+        "para_a_preview": "**WHEREFORE**, Plaintiff demands judgment against Defendants, jointly and severally, for actual dama...",
+        "para_b_preview": "**WHEREFORE**, Plaintiff demands judgment against Defendants, jointly and severally, for **treble da...",
+        "word_savings": 30
+      },
+      {
+        "para_a_idx": 87,
+        "para_b_idx": 180,
+        "similarity": 0.618,
+        "para_a_preview": "**WHEREFORE**, Plaintiff demands judgment against Defendants, jointly and severally, for actual dama...",
+        "para_b_preview": "**WHEREFORE**, Plaintiff demands judgment against Defendants, jointly and severally, for all actual ...",
+        "word_savings": 30
+      },
+      {
+        "para_a_idx": 89,
+        "para_b_idx": 105,
+        "similarity": 0.889,
+        "para_a_preview": "52. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "58. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 89,
+        "para_b_idx": 126,
+        "similarity": 0.889,
+        "para_a_preview": "52. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "69. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 89,
+        "para_b_idx": 142,
+        "similarity": 0.889,
+        "para_a_preview": "52. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "76. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 89,
+        "para_b_idx": 156,
+        "similarity": 0.889,
+        "para_a_preview": "52. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "82. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 89,
+        "para_b_idx": 169,
+        "similarity": 0.889,
+        "para_a_preview": "52. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "87. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 89,
+        "para_b_idx": 182,
+        "similarity": 0.889,
+        "para_a_preview": "52. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "92. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 89,
+        "para_b_idx": 201,
+        "similarity": 0.889,
+        "para_a_preview": "52. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "100. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set fort...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 105,
+        "para_b_idx": 126,
+        "similarity": 0.889,
+        "para_a_preview": "58. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "69. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 105,
+        "para_b_idx": 142,
+        "similarity": 0.889,
+        "para_a_preview": "58. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "76. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 105,
+        "para_b_idx": 156,
+        "similarity": 0.889,
+        "para_a_preview": "58. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "82. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 105,
+        "para_b_idx": 169,
+        "similarity": 0.889,
+        "para_a_preview": "58. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "87. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 105,
+        "para_b_idx": 182,
+        "similarity": 0.889,
+        "para_a_preview": "58. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "92. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 105,
+        "para_b_idx": 201,
+        "similarity": 0.889,
+        "para_a_preview": "58. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "100. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set fort...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 126,
+        "para_b_idx": 142,
+        "similarity": 0.889,
+        "para_a_preview": "69. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "76. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 126,
+        "para_b_idx": 156,
+        "similarity": 0.889,
+        "para_a_preview": "69. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "82. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 126,
+        "para_b_idx": 169,
+        "similarity": 0.889,
+        "para_a_preview": "69. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "87. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 126,
+        "para_b_idx": 182,
+        "similarity": 0.889,
+        "para_a_preview": "69. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "92. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 126,
+        "para_b_idx": 201,
+        "similarity": 0.889,
+        "para_a_preview": "69. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "100. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set fort...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 140,
+        "para_b_idx": 168,
+        "similarity": 0.707,
+        "para_a_preview": "**WHEREFORE**, Plaintiff demands judgment against Defendants, jointly and severally, for all actual ...",
+        "para_b_preview": "**WHEREFORE**, Plaintiff demands judgment against Defendants, jointly and severally, for compensator...",
+        "word_savings": 37
+      },
+      {
+        "para_a_idx": 140,
+        "para_b_idx": 180,
+        "similarity": 0.658,
+        "para_a_preview": "**WHEREFORE**, Plaintiff demands judgment against Defendants, jointly and severally, for all actual ...",
+        "para_b_preview": "**WHEREFORE**, Plaintiff demands judgment against Defendants, jointly and severally, for all actual ...",
+        "word_savings": 30
+      },
+      {
+        "para_a_idx": 140,
+        "para_b_idx": 223,
+        "similarity": 0.762,
+        "para_a_preview": "**WHEREFORE**, Plaintiff demands judgment against Defendants, jointly and severally, for all actual ...",
+        "para_b_preview": "**WHEREFORE**, Plaintiff demands judgment against all Defendants and co-conspirators, jointly and se...",
+        "word_savings": 40
+      },
+      {
+        "para_a_idx": 142,
+        "para_b_idx": 156,
+        "similarity": 0.889,
+        "para_a_preview": "76. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "82. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 142,
+        "para_b_idx": 169,
+        "similarity": 0.889,
+        "para_a_preview": "76. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "87. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 142,
+        "para_b_idx": 182,
+        "similarity": 0.889,
+        "para_a_preview": "76. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "92. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 142,
+        "para_b_idx": 201,
+        "similarity": 0.889,
+        "para_a_preview": "76. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "100. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set fort...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 156,
+        "para_b_idx": 169,
+        "similarity": 0.889,
+        "para_a_preview": "82. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "87. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 156,
+        "para_b_idx": 182,
+        "similarity": 0.889,
+        "para_a_preview": "82. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "92. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 156,
+        "para_b_idx": 201,
+        "similarity": 0.889,
+        "para_a_preview": "82. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "100. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set fort...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 168,
+        "para_b_idx": 223,
+        "similarity": 0.636,
+        "para_a_preview": "**WHEREFORE**, Plaintiff demands judgment against Defendants, jointly and severally, for compensator...",
+        "para_b_preview": "**WHEREFORE**, Plaintiff demands judgment against all Defendants and co-conspirators, jointly and se...",
+        "word_savings": 37
+      },
+      {
+        "para_a_idx": 169,
+        "para_b_idx": 182,
+        "similarity": 0.889,
+        "para_a_preview": "87. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "92. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 169,
+        "para_b_idx": 201,
+        "similarity": 0.889,
+        "para_a_preview": "87. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "100. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set fort...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 182,
+        "para_b_idx": 201,
+        "similarity": 0.889,
+        "para_a_preview": "92. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth...",
+        "para_b_preview": "100. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set fort...",
+        "word_savings": 17
+      },
+      {
+        "para_a_idx": 248,
+        "para_b_idx": 253,
+        "similarity": 0.625,
+        "para_a_preview": "________________________________________\nANDREW JAMES PIGORS, Plaintiff\n1977 Whitehall Road, Lot 17\n...",
+        "para_b_preview": "________________________________________\nANDREW JAMES PIGORS\n1977 Whitehall Road, Lot 17\nNorth Muske...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 251,
+        "para_b_idx": 252,
+        "similarity": 0.68,
+        "para_a_preview": "**Homes of America, LLC**\nc/o Registered Agent\n[TO BE DETERMINED BY ANDREW \u2014 obtain current or last ...",
+        "para_b_preview": "**Cricklewood MHP LLC**\nc/o Registered Agent\n[TO BE DETERMINED BY ANDREW \u2014 obtain registered agent a...",
+        "word_savings": 23
+      }
+    ],
+    "citation_clusters": [],
+    "repeated_arguments": [
+      {
+        "phrase": "court deems just",
+        "appears_in_sections": 10,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "jointly and severally,",
+        "appears_in_sections": 10,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "this court deems",
+        "appears_in_sections": 10,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "and equitable. ---",
+        "appears_in_sections": 10,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "just and equitable.",
+        "appears_in_sections": 10,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "demands judgment against",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "and severally, for",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "and incorporates by",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "**wherefore**, plaintiff demands",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "set forth herein.",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "proximate result of",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "by reference paragraphs",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "direct and proximate",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "plaintiff re-alleges and",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "defendants, jointly and",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "such other relief",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "incorporates by reference",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "and proximate result",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "paragraphs 1 through",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "re-alleges and incorporates",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      }
+    ],
+    "total_potential_savings": 885,
+    "savings_breakdown": {
+      "verbose_phrase_savings": 9,
+      "redundant_paragraph_savings": 876,
+      "citation_cluster_savings": 0
+    },
+    "status": "NEEDS_MAJOR_REWRITE",
+    "confidence": "LOW",
+    "recommendation": "Need to cut 2466 words but auto-trim can only save ~885. Consider splitting into main brief + appendix."
+  },
+  "F3": {
+    "filing_id": "F3",
+    "current_words": 14163,
+    "current_pages": 48,
+    "page_limit": 20,
+    "target_words": 6000,
+    "words_to_cut": 8163,
+    "over_limit": true,
+    "verbose_phrases": [
+      {
+        "original": "PURSUANT TO",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 1103
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 3126
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 4810
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 21534
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 37411
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 37591
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 90647
+      },
+      {
+        "original": "Pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 92520
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 92825
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 94216
+      },
+      {
+        "original": "Pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 95215
+      },
+      {
+        "original": "Pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 96731
+      },
+      {
+        "original": "as a result of",
+        "replacement": "from",
+        "word_savings": 3,
+        "position": 85007
+      },
+      {
+        "original": "true and correct",
+        "replacement": "true",
+        "word_savings": 2,
+        "position": 90823
+      },
+      {
+        "original": "true and correct",
+        "replacement": "true",
+        "word_savings": 2,
+        "position": 95108
+      }
+    ],
+    "redundant_paragraphs": [
+      {
+        "para_a_idx": 0,
+        "para_b_idx": 219,
+        "similarity": 1.0,
+        "para_a_preview": "**STATE OF MICHIGAN**\n**IN THE 14TH JUDICIAL CIRCUIT COURT**\n**FOR THE COUNTY OF MUSKEGON**\n**FAMILY...",
+        "para_b_preview": "**STATE OF MICHIGAN**\n**IN THE 14TH JUDICIAL CIRCUIT COURT**\n**FOR THE COUNTY OF MUSKEGON**\n**FAMILY...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 2,
+        "para_b_idx": 221,
+        "similarity": 1.0,
+        "para_a_preview": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defendant/Respondent....",
+        "para_b_preview": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defendant/Respondent....",
+        "word_savings": 1
+      },
+      {
+        "para_a_idx": 3,
+        "para_b_idx": 222,
+        "similarity": 1.0,
+        "para_a_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_/...",
+        "para_b_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_/...",
+        "word_savings": 1
+      },
+      {
+        "para_a_idx": 11,
+        "para_b_idx": 125,
+        "similarity": 0.614,
+        "para_a_preview": "> **(a)** The judge is biased or prejudiced for or against a party or attorney; or\n>\n> **(b)** The j...",
+        "para_b_preview": "\u00b6 61. MCR 2.003(C)(1)(b) provides for disqualification when \"the judge, based on objective and reaso...",
+        "word_savings": 58
+      },
+      {
+        "para_a_idx": 15,
+        "para_b_idx": 113,
+        "similarity": 0.8,
+        "para_a_preview": "### A. Personal Bias or Prejudice \u2014 MCR 2.003(C)(1)(a)...",
+        "para_b_preview": "### I. MCR 2.003(C)(1)(a) \u2014 Personal Bias or Prejudice...",
+        "word_savings": 0
+      },
+      {
+        "para_a_idx": 30,
+        "para_b_idx": 124,
+        "similarity": 0.778,
+        "para_a_preview": "### B. Impartiality Reasonably Questioned \u2014 MCR 2.003(C)(1)(b)...",
+        "para_b_preview": "### II. MCR 2.003(C)(1)(b) \u2014 Impartiality Reasonably Questioned...",
+        "word_savings": 0
+      },
+      {
+        "para_a_idx": 111,
+        "para_b_idx": 230,
+        "similarity": 0.615,
+        "para_a_preview": "\u00b6 50-2. **ISSUE V:** Whether the structural judicial conflicts within the 14th Circuit \u2014 including J...",
+        "para_b_preview": "4. Structural judicial conflicts within the 14th Judicial Circuit \u2014 including Judge McNeill's former...",
+        "word_savings": 59
+      },
+      {
+        "para_a_idx": 177,
+        "para_b_idx": 246,
+        "similarity": 1.0,
+        "para_a_preview": "**STATE OF MICHIGAN** &nbsp;)\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs...",
+        "para_b_preview": "**STATE OF MICHIGAN** &nbsp;)\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs...",
+        "word_savings": 10
+      },
+      {
+        "para_a_idx": 217,
+        "para_b_idx": 249,
+        "similarity": 1.0,
+        "para_a_preview": "Subscribed and sworn to before me this \\_\\_\\_\\_\\_ day of \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_, 20\\_\\_\\_....",
+        "para_b_preview": "Subscribed and sworn to before me this \\_\\_\\_\\_\\_ day of \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_, 20\\_\\_\\_....",
+        "word_savings": 12
+      },
+      {
+        "para_a_idx": 218,
+        "para_b_idx": 250,
+        "similarity": 1.0,
+        "para_a_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nNotar...",
+        "para_b_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nNotar...",
+        "word_savings": 13
+      },
+      {
+        "para_a_idx": 241,
+        "para_b_idx": 243,
+        "similarity": 1.0,
+        "para_a_preview": "by: [ &nbsp;] First-class U.S. Mail, postage prepaid\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ &nbsp;] Persona...",
+        "para_b_preview": "by: [ &nbsp;] First-class U.S. Mail, postage prepaid\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ &nbsp;] Persona...",
+        "word_savings": 16
+      }
+    ],
+    "citation_clusters": [],
+    "repeated_arguments": [
+      {
+        "phrase": "not file anymore,",
+        "appears_in_sections": 11,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "the 14th judicial",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "motion for disqualification",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "jenny l. mcneill",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "$250 filing deposit",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "appearance of impropriety",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "andrew james pigors",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "the 14th circuit",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "without notice or",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "maria ladas hoopes",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "both kenneth hoopes",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "with both kenneth",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "14th judicial circuit",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "for disqualification of",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "disqualification of judge",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "conflicts within the",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "structural judicial conflicts",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "judicial conflicts within",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "november 15, 2025",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "refusal to consider",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      }
+    ],
+    "total_potential_savings": 205,
+    "savings_breakdown": {
+      "verbose_phrase_savings": 19,
+      "redundant_paragraph_savings": 186,
+      "citation_cluster_savings": 0
+    },
+    "status": "NEEDS_MAJOR_REWRITE",
+    "confidence": "LOW",
+    "recommendation": "Need to cut 8163 words but auto-trim can only save ~205. Consider splitting into main brief + appendix."
+  },
+  "F4": {
+    "filing_id": "F4",
+    "current_words": 14704,
+    "current_pages": 50,
+    "page_limit": 20,
+    "target_words": 6000,
+    "words_to_cut": 8704,
+    "over_limit": true,
+    "verbose_phrases": [
+      {
+        "original": "for the purpose of",
+        "replacement": "to",
+        "word_savings": 3,
+        "position": 53985
+      },
+      {
+        "original": "the fact that",
+        "replacement": "that",
+        "word_savings": 2,
+        "position": 48974
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 640
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 706
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 3284
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 3548
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 3893
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 4287
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 4417
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 67746
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 83612
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 89580
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 90860
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 91066
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 92293
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 92481
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 92635
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 92954
+      },
+      {
+        "original": "as a result of",
+        "replacement": "from",
+        "word_savings": 3,
+        "position": 65669
+      },
+      {
+        "original": "as a result of",
+        "replacement": "from",
+        "word_savings": 3,
+        "position": 69329
+      },
+      {
+        "original": "has the ability to",
+        "replacement": "can",
+        "word_savings": 3,
+        "position": 63498
+      },
+      {
+        "original": "each and every",
+        "replacement": "every",
+        "word_savings": 2,
+        "position": 61122
+      },
+      {
+        "original": "each and every",
+        "replacement": "every",
+        "word_savings": 2,
+        "position": 62810
+      },
+      {
+        "original": "true and correct",
+        "replacement": "true",
+        "word_savings": 2,
+        "position": 91121
+      },
+      {
+        "original": "true and correct",
+        "replacement": "true",
+        "word_savings": 2,
+        "position": 92082
+      }
+    ],
+    "redundant_paragraphs": [
+      {
+        "para_a_idx": 132,
+        "para_b_idx": 141,
+        "similarity": 0.739,
+        "para_a_preview": "## V. COUNT I: DEPRIVATION OF SUBSTANTIVE DUE PROCESS\n### (42 U.S.C. \u00a7 1983 \u2014 Fourteenth Amendment)\n...",
+        "para_b_preview": "## VI. COUNT II: DEPRIVATION OF PROCEDURAL DUE PROCESS\n### (42 U.S.C. \u00a7 1983 \u2014 Fourteenth Amendment)...",
+        "word_savings": 0
+      },
+      {
+        "para_a_idx": 133,
+        "para_b_idx": 142,
+        "similarity": 0.882,
+        "para_a_preview": "51\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "59\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 133,
+        "para_b_idx": 161,
+        "similarity": 0.882,
+        "para_a_preview": "51\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "65\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 133,
+        "para_b_idx": 168,
+        "similarity": 0.882,
+        "para_a_preview": "51\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "71\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 133,
+        "para_b_idx": 177,
+        "similarity": 0.882,
+        "para_a_preview": "51\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "79\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 133,
+        "para_b_idx": 203,
+        "similarity": 0.882,
+        "para_a_preview": "51\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "96\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 142,
+        "para_b_idx": 161,
+        "similarity": 0.882,
+        "para_a_preview": "59\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "65\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 142,
+        "para_b_idx": 168,
+        "similarity": 0.882,
+        "para_a_preview": "59\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "71\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 142,
+        "para_b_idx": 177,
+        "similarity": 0.882,
+        "para_a_preview": "59\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "79\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 142,
+        "para_b_idx": 203,
+        "similarity": 0.882,
+        "para_a_preview": "59\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "96\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 161,
+        "para_b_idx": 168,
+        "similarity": 0.882,
+        "para_a_preview": "65\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "71\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 161,
+        "para_b_idx": 177,
+        "similarity": 0.882,
+        "para_a_preview": "65\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "79\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 161,
+        "para_b_idx": 203,
+        "similarity": 0.882,
+        "para_a_preview": "65\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "96\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 168,
+        "para_b_idx": 177,
+        "similarity": 0.882,
+        "para_a_preview": "71\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "79\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 168,
+        "para_b_idx": 203,
+        "similarity": 0.882,
+        "para_a_preview": "71\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "96\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 177,
+        "para_b_idx": 203,
+        "similarity": 0.882,
+        "para_a_preview": "79\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "para_b_preview": "96\\. Plaintiff repeats and incorporates by reference all preceding paragraphs as though fully set fo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 191,
+        "para_b_idx": 197,
+        "similarity": 0.895,
+        "para_a_preview": "87\\. Plaintiff repeats and re-alleges each and every allegation set forth in the preceding paragraph...",
+        "para_b_preview": "92\\. Plaintiff repeats and re-alleges each and every allegation set forth in the preceding paragraph...",
+        "word_savings": 21
+      },
+      {
+        "para_a_idx": 290,
+        "para_b_idx": 299,
+        "similarity": 1.0,
+        "para_a_preview": "&emsp;&emsp;&emsp;&emsp;\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_...",
+        "para_b_preview": "&emsp;&emsp;&emsp;&emsp;\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_...",
+        "word_savings": 1
+      },
+      {
+        "para_a_idx": 291,
+        "para_b_idx": 300,
+        "similarity": 1.0,
+        "para_a_preview": "&emsp;&emsp;&emsp;&emsp;Andrew James Pigors, Plaintiff Pro Se...",
+        "para_b_preview": "&emsp;&emsp;&emsp;&emsp;Andrew James Pigors, Plaintiff Pro Se...",
+        "word_savings": 6
+      }
+    ],
+    "citation_clusters": [],
+    "repeated_arguments": [
+      {
+        "phrase": "direct and proximate",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "set forth herein.",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "paragraphs as though",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "though fully set",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "plaintiff repeats and",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "preceding paragraphs as",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "inc., usps, shape",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "welding, indigrow inc.,",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "indigrow inc., usps,",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "adequate notice or",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "arc welding, indigrow",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "all parenting time",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "(metal arc welding,",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "*troxel v. granville*,",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "v. granville*, 530",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "granville*, 530 u.s.",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "suspending all parenting",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "the supreme court",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "14th circuit court,",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "numerous orders without",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      }
+    ],
+    "total_potential_savings": 306,
+    "savings_breakdown": {
+      "verbose_phrase_savings": 38,
+      "redundant_paragraph_savings": 268,
+      "citation_cluster_savings": 0
+    },
+    "status": "NEEDS_MAJOR_REWRITE",
+    "confidence": "LOW",
+    "recommendation": "Need to cut 8704 words but auto-trim can only save ~306. Consider splitting into main brief + appendix."
+  },
+  "F5": {
+    "filing_id": "F5",
+    "current_words": 23959,
+    "current_pages": 80,
+    "page_limit": 50,
+    "target_words": 15000,
+    "words_to_cut": 8959,
+    "over_limit": true,
+    "verbose_phrases": [
+      {
+        "original": "prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 13344
+      },
+      {
+        "original": "prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 22671
+      },
+      {
+        "original": "prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 74992
+      },
+      {
+        "original": "Prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 84847
+      },
+      {
+        "original": "Prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 136873
+      },
+      {
+        "original": "The fact that",
+        "replacement": "that",
+        "word_savings": 2,
+        "position": 134545
+      },
+      {
+        "original": "the fact that",
+        "replacement": "that",
+        "word_savings": 2,
+        "position": 135510
+      },
+      {
+        "original": "despite the fact that",
+        "replacement": "although",
+        "word_savings": 3,
+        "position": 135502
+      },
+      {
+        "original": "on the basis of",
+        "replacement": "based on",
+        "word_savings": 2,
+        "position": 85883
+      },
+      {
+        "original": "on the basis of",
+        "replacement": "based on",
+        "word_savings": 2,
+        "position": 146314
+      },
+      {
+        "original": "in accordance with",
+        "replacement": "under",
+        "word_savings": 2,
+        "position": 78769
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 51989
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 52349
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 58069
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 126006
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 126650
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 127010
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 148326
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 156091
+      },
+      {
+        "original": "has the ability to",
+        "replacement": "can",
+        "word_savings": 3,
+        "position": 74689
+      },
+      {
+        "original": "true and correct",
+        "replacement": "true",
+        "word_savings": 2,
+        "position": 128590
+      },
+      {
+        "original": "true and correct",
+        "replacement": "true",
+        "word_savings": 2,
+        "position": 145565
+      },
+      {
+        "original": "true and correct",
+        "replacement": "true",
+        "word_savings": 2,
+        "position": 160315
+      }
+    ],
+    "redundant_paragraphs": [
+      {
+        "para_a_idx": 5,
+        "para_b_idx": 376,
+        "similarity": 0.708,
+        "para_a_preview": "**PETITIONER (Pro Se):**\nAndrew James Pigors\n1977 Whitehall Road, Lot 17\nNorth Muskegon, MI 49445\nTe...",
+        "para_b_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nAndrew James Pigors, Petition...",
+        "word_savings": 20
+      },
+      {
+        "para_a_idx": 5,
+        "para_b_idx": 437,
+        "similarity": 0.696,
+        "para_a_preview": "**PETITIONER (Pro Se):**\nAndrew James Pigors\n1977 Whitehall Road, Lot 17\nNorth Muskegon, MI 49445\nTe...",
+        "para_b_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nAndrew James Pigors, Affiant\n...",
+        "word_savings": 19
+      },
+      {
+        "para_a_idx": 5,
+        "para_b_idx": 498,
+        "similarity": 0.708,
+        "para_a_preview": "**PETITIONER (Pro Se):**\nAndrew James Pigors\n1977 Whitehall Road, Lot 17\nNorth Muskegon, MI 49445\nTe...",
+        "para_b_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nAndrew James Pigors, Petition...",
+        "word_savings": 20
+      },
+      {
+        "para_a_idx": 8,
+        "para_b_idx": 13,
+        "similarity": 1.0,
+        "para_a_preview": "*Page references to be updated in final PDF formatting.*...",
+        "para_b_preview": "*Page references to be updated in final PDF formatting.*...",
+        "word_savings": 9
+      },
+      {
+        "para_a_idx": 9,
+        "para_b_idx": 21,
+        "similarity": 0.75,
+        "para_a_preview": "### PART I \u2014 PETITION FOR ORDER OF SUPERINTENDING CONTROL...",
+        "para_b_preview": "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n# PART I \u2014 PETITION FOR ORDER OF SUP...",
+        "word_savings": 0
+      },
+      {
+        "para_a_idx": 21,
+        "para_b_idx": 148,
+        "similarity": 0.667,
+        "para_a_preview": "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n# PART I \u2014 PETITION FOR ORDER OF SUP...",
+        "para_b_preview": "\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\n# PART II \u2014 BRIEF IN SUPPORT OF PETI...",
+        "word_savings": 2
+      },
+      {
+        "para_a_idx": 32,
+        "para_b_idx": 34,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 32,
+        "para_b_idx": 36,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 32,
+        "para_b_idx": 38,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 32,
+        "para_b_idx": 40,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 32,
+        "para_b_idx": 42,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 32,
+        "para_b_idx": 44,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 32,
+        "para_b_idx": 46,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 34,
+        "para_b_idx": 36,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 34,
+        "para_b_idx": 38,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 34,
+        "para_b_idx": 40,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 34,
+        "para_b_idx": 42,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 34,
+        "para_b_idx": 44,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 34,
+        "para_b_idx": 46,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 36,
+        "para_b_idx": 38,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 36,
+        "para_b_idx": 40,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 36,
+        "para_b_idx": 42,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 36,
+        "para_b_idx": 44,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 36,
+        "para_b_idx": 46,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 38,
+        "para_b_idx": 40,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 38,
+        "para_b_idx": 42,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 38,
+        "para_b_idx": 44,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 38,
+        "para_b_idx": 46,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 40,
+        "para_b_idx": 42,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 40,
+        "para_b_idx": 44,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 40,
+        "para_b_idx": 46,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 42,
+        "para_b_idx": 44,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 42,
+        "para_b_idx": 46,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 44,
+        "para_b_idx": 46,
+        "similarity": 1.0,
+        "para_a_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "para_b_preview": "*The trial court answers: No.*\n   *Petitioner answers: Yes.*...",
+        "word_savings": 8
+      },
+      {
+        "para_a_idx": 54,
+        "para_b_idx": 393,
+        "similarity": 0.857,
+        "para_a_preview": "15. The following is the accurate timeline of custody and separation in this case:...",
+        "para_b_preview": "9. The following is the accurate timeline of custody and separation in this case:...",
+        "word_savings": 14
+      },
+      {
+        "para_a_idx": 55,
+        "para_b_idx": 394,
+        "similarity": 0.875,
+        "para_a_preview": "a. On or about December 3, 2023, a Personal Protection Order was initiated against Petitioner....",
+        "para_b_preview": "a. On or about December 3, 2023, a Personal Protection Order was initiated against me....",
+        "word_savings": 15
+      },
+      {
+        "para_a_idx": 56,
+        "para_b_idx": 395,
+        "similarity": 0.913,
+        "para_a_preview": "b. From approximately March 26 through May 5, 2024 (40 days), Watson withheld L.D.W. from Petitioner...",
+        "para_b_preview": "b. From approximately March 26 through May 5, 2024 (40 days), Watson withheld L.D.W. from me \u2014 the f...",
+        "word_savings": 23
+      },
+      {
+        "para_a_idx": 57,
+        "para_b_idx": 396,
+        "similarity": 0.82,
+        "para_a_preview": "c. On May 5, 2024, Petitioner obtained an ex parte temporary custody order establishing **50/50 equa...",
+        "para_b_preview": "c. On May 5, 2024, I obtained an ex parte temporary custody order establishing **50/50 equal parenti...",
+        "word_savings": 62
+      },
+      {
+        "para_a_idx": 58,
+        "para_b_idx": 397,
+        "similarity": 1.0,
+        "para_a_preview": "d. On July 17, 2025, Watson's objection to the temporary order was granted. The ex parte order was o...",
+        "para_b_preview": "d. On July 17, 2025, Watson's objection to the temporary order was granted. The ex parte order was o...",
+        "word_savings": 40
+      },
+      {
+        "para_a_idx": 59,
+        "para_b_idx": 398,
+        "similarity": 0.706,
+        "para_a_preview": "e. Since July 29, 2025, Watson has again withheld L.D.W. from Petitioner entirely, under a false and...",
+        "para_b_preview": "e. Since July 29, 2025, Watson has again withheld L.D.W. from me entirely, under a false and exagger...",
+        "word_savings": 43
+      },
+      {
+        "para_a_idx": 60,
+        "para_b_idx": 293,
+        "similarity": 0.767,
+        "para_a_preview": "f. During this current withholding period, Watson removed L.D.W. from the country entirely from Octo...",
+        "para_b_preview": "During the current withholding period, Watson removed L.D.W. from the country entirely from October ...",
+        "word_savings": 52
+      },
+      {
+        "para_a_idx": 60,
+        "para_b_idx": 399,
+        "similarity": 0.958,
+        "para_a_preview": "f. During this current withholding period, Watson removed L.D.W. from the country entirely from Octo...",
+        "para_b_preview": "f. During this current withholding period, Watson removed L.D.W. from the country entirely from Octo...",
+        "word_savings": 52
+      },
+      {
+        "para_a_idx": 61,
+        "para_b_idx": 400,
+        "similarity": 0.838,
+        "para_a_preview": "g. In total, Petitioner has been denied contact with his son for **269 days** across two separate wi...",
+        "para_b_preview": "g. In total, I have been denied contact with my son for **269 days** across two separate withholding...",
+        "word_savings": 35
+      },
+      {
+        "para_a_idx": 66,
+        "para_b_idx": 217,
+        "similarity": 0.648,
+        "para_a_preview": "19. The trial court in this case has **never** conducted the MCL 722.23 analysis. It suspended all p...",
+        "para_b_preview": "The trial court has never conducted the MCL 722.23 analysis. It suspended all parenting time \u2014 the f...",
+        "word_savings": 51
+      },
+      {
+        "para_a_idx": 72,
+        "para_b_idx": 239,
+        "similarity": 0.632,
+        "para_a_preview": "- **(i)** The affidavit supporting Show Cause #5 contained a **blank page (page 27)** \u2014 a fatal proc...",
+        "para_b_preview": "**iv. Blank affidavit page \u2014 fatal procedural defect.** The affidavit supporting Show Cause #5 conta...",
+        "word_savings": 51
+      },
+      {
+        "para_a_idx": 116,
+        "para_b_idx": 344,
+        "similarity": 0.615,
+        "para_a_preview": "### D-2. Housing and Custody Convergence \u2014 A Single Conspiracy...",
+        "para_b_preview": "### XI. THE HOUSING AND CUSTODY CONVERGENCE REVEALS A SINGLE CONSPIRACY...",
+        "word_savings": 0
+      },
+      {
+        "para_a_idx": 121,
+        "para_b_idx": 351,
+        "similarity": 0.644,
+        "para_a_preview": "38n. **Judicial Overlap Compounds the Problem.** Chief Judge Hoopes of the 14th Circuit and Judge La...",
+        "para_b_preview": "The 14th Circuit Court \u2014 the same court presiding over Petitioner's custody case \u2014 also has jurisdic...",
+        "word_savings": 85
+      },
+      {
+        "para_a_idx": 129,
+        "para_b_idx": 176,
+        "similarity": 0.63,
+        "para_a_preview": "43. **First**, the party seeking relief must demonstrate that the lower court has failed to perform ...",
+        "para_b_preview": "**First**, the party must demonstrate that the lower court has failed to perform a clear legal duty ...",
+        "word_savings": 37
+      },
+      {
+        "para_a_idx": 130,
+        "para_b_idx": 177,
+        "similarity": 0.852,
+        "para_a_preview": "44. **Second**, the party must show there is no other adequate legal remedy. *Lapeer County Clerk v ...",
+        "para_b_preview": "**Second**, the party must show there is no other adequate legal remedy available. *Lapeer County Cl...",
+        "word_savings": 25
+      },
+      {
+        "para_a_idx": 140,
+        "para_b_idx": 362,
+        "similarity": 0.6,
+        "para_a_preview": "**A.** Order the **immediate disqualification and reassignment** of Hon. Jenny L. McNeill from all p...",
+        "para_b_preview": "**A.** Order the **immediate disqualification and reassignment** of Hon. Jenny L. McNeill, including...",
+        "word_savings": 13
+      },
+      {
+        "para_a_idx": 141,
+        "para_b_idx": 363,
+        "similarity": 0.662,
+        "para_a_preview": "1. **Transfer** of Case Nos. 2024-001507-DC and 2023-5907-PP to a different judge in a different div...",
+        "para_b_preview": "1. **Disqualification** of Hon. Jenny L. McNeill pursuant to MCR 2.003(C)(1)(b);\n   2. **Transfer** ...",
+        "word_savings": 71
+      },
+      {
+        "para_a_idx": 142,
+        "para_b_idx": 364,
+        "similarity": 1.0,
+        "para_a_preview": "**B.** **Declare void ab initio** all orders procured by fraud upon the court, including:...",
+        "para_b_preview": "**B.** **Declare void ab initio** all orders procured by fraud upon the court, including:...",
+        "word_savings": 14
+      },
+      {
+        "para_a_idx": 143,
+        "para_b_idx": 365,
+        "similarity": 1.0,
+        "para_a_preview": "1. **Vacatur of the ex parte PPO** (Case No. 2023-5907-PP) obtained through Watson's false sworn sta...",
+        "para_b_preview": "1. **Vacatur of the ex parte PPO** (Case No. 2023-5907-PP) obtained through Watson's false sworn sta...",
+        "word_savings": 90
+      },
+      {
+        "para_a_idx": 144,
+        "para_b_idx": 366,
+        "similarity": 1.0,
+        "para_a_preview": "**C.** Direct the newly assigned judge to **hold a prompt evidentiary hearing** on custody and paren...",
+        "para_b_preview": "**C.** Direct the newly assigned judge to **hold a prompt evidentiary hearing** on custody and paren...",
+        "word_savings": 18
+      },
+      {
+        "para_a_idx": 147,
+        "para_b_idx": 370,
+        "similarity": 0.8,
+        "para_a_preview": "**E.** Grant such **other and further relief** as this Court deems just, proper, and equitable....",
+        "para_b_preview": "**E.** Grant such **other and further relief** as this Court deems just and equitable....",
+        "word_savings": 14
+      },
+      {
+        "para_a_idx": 173,
+        "para_b_idx": 256,
+        "similarity": 0.611,
+        "para_a_preview": "10. The trial court imposed a $250 bond requirement on Petitioner's motion for judicial disqualifica...",
+        "para_b_preview": "The trial court imposed a $250 bond requirement on Petitioner's motion for judicial disqualification...",
+        "word_savings": 28
+      },
+      {
+        "para_a_idx": 293,
+        "para_b_idx": 399,
+        "similarity": 0.738,
+        "para_a_preview": "During the current withholding period, Watson removed L.D.W. from the country entirely from October ...",
+        "para_b_preview": "f. During this current withholding period, Watson removed L.D.W. from the country entirely from Octo...",
+        "word_savings": 52
+      },
+      {
+        "para_a_idx": 372,
+        "para_b_idx": 507,
+        "similarity": 1.0,
+        "para_a_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nAndrew James Pigors, Petition...",
+        "para_b_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nAndrew James Pigors, Petition...",
+        "word_savings": 7
+      },
+      {
+        "para_a_idx": 376,
+        "para_b_idx": 437,
+        "similarity": 0.818,
+        "para_a_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nAndrew James Pigors, Petition...",
+        "para_b_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nAndrew James Pigors, Affiant\n...",
+        "word_savings": 19
+      },
+      {
+        "para_a_idx": 376,
+        "para_b_idx": 498,
+        "similarity": 1.0,
+        "para_a_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nAndrew James Pigors, Petition...",
+        "para_b_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nAndrew James Pigors, Petition...",
+        "word_savings": 21
+      },
+      {
+        "para_a_idx": 377,
+        "para_b_idx": 505,
+        "similarity": 0.621,
+        "para_a_preview": "This Brief complies with the formatting requirements of MCR 7.306. The body of this Brief contains a...",
+        "para_b_preview": "The body of this filing contains approximately 16,000 words, exclusive of tables, caption, table of ...",
+        "word_savings": 25
+      },
+      {
+        "para_a_idx": 378,
+        "para_b_idx": 511,
+        "similarity": 0.6,
+        "para_a_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nAndrew James Pigors...",
+        "para_b_preview": "________________________________\nAndrew James Pigors...",
+        "word_savings": 3
+      },
+      {
+        "para_a_idx": 380,
+        "para_b_idx": 441,
+        "similarity": 1.0,
+        "para_a_preview": "**MSC Case No. _________________ (To Be Assigned)**...",
+        "para_b_preview": "**MSC Case No. _________________ (To Be Assigned)**...",
+        "word_savings": 6
+      },
+      {
+        "para_a_idx": 380,
+        "para_b_idx": 481,
+        "similarity": 1.0,
+        "para_a_preview": "**MSC Case No. _________________ (To Be Assigned)**...",
+        "para_b_preview": "**MSC Case No. _________________ (To Be Assigned)**...",
+        "word_savings": 6
+      },
+      {
+        "para_a_idx": 381,
+        "para_b_idx": 442,
+        "similarity": 1.0,
+        "para_a_preview": "**Lower Court Case Nos.:**\n**14th Judicial Circuit Court: 2024-001507-DC; 2023-5907-PP**\n**Court of ...",
+        "para_b_preview": "**Lower Court Case Nos.:**\n**14th Judicial Circuit Court: 2024-001507-DC; 2023-5907-PP**\n**Court of ...",
+        "word_savings": 15
+      },
+      {
+        "para_a_idx": 381,
+        "para_b_idx": 482,
+        "similarity": 1.0,
+        "para_a_preview": "**Lower Court Case Nos.:**\n**14th Judicial Circuit Court: 2024-001507-DC; 2023-5907-PP**\n**Court of ...",
+        "para_b_preview": "**Lower Court Case Nos.:**\n**14th Judicial Circuit Court: 2024-001507-DC; 2023-5907-PP**\n**Court of ...",
+        "word_savings": 15
+      },
+      {
+        "para_a_idx": 382,
+        "para_b_idx": 443,
+        "similarity": 1.0,
+        "para_a_preview": "**THE 14TH JUDICIAL CIRCUIT COURT,**\n**FAMILY DIVISION, MUSKEGON COUNTY**\n**(HON. JENNY L. McNEILL, ...",
+        "para_b_preview": "**THE 14TH JUDICIAL CIRCUIT COURT,**\n**FAMILY DIVISION, MUSKEGON COUNTY**\n**(HON. JENNY L. McNEILL, ...",
+        "word_savings": 15
+      },
+      {
+        "para_a_idx": 382,
+        "para_b_idx": 483,
+        "similarity": 1.0,
+        "para_a_preview": "**THE 14TH JUDICIAL CIRCUIT COURT,**\n**FAMILY DIVISION, MUSKEGON COUNTY**\n**(HON. JENNY L. McNEILL, ...",
+        "para_b_preview": "**THE 14TH JUDICIAL CIRCUIT COURT,**\n**FAMILY DIVISION, MUSKEGON COUNTY**\n**(HON. JENNY L. McNEILL, ...",
+        "word_savings": 15
+      },
+      {
+        "para_a_idx": 383,
+        "para_b_idx": 508,
+        "similarity": 1.0,
+        "para_a_preview": "STATE OF MICHIGAN  )\n                   ) ss.\nCOUNTY OF MUSKEGON )...",
+        "para_b_preview": "STATE OF MICHIGAN )\n                  ) ss.\nCOUNTY OF MUSKEGON )...",
+        "word_savings": 10
+      },
+      {
+        "para_a_idx": 437,
+        "para_b_idx": 498,
+        "similarity": 0.818,
+        "para_a_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nAndrew James Pigors, Affiant\n...",
+        "para_b_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nAndrew James Pigors, Petition...",
+        "word_savings": 19
+      },
+      {
+        "para_a_idx": 441,
+        "para_b_idx": 481,
+        "similarity": 1.0,
+        "para_a_preview": "**MSC Case No. _________________ (To Be Assigned)**...",
+        "para_b_preview": "**MSC Case No. _________________ (To Be Assigned)**...",
+        "word_savings": 6
+      },
+      {
+        "para_a_idx": 442,
+        "para_b_idx": 482,
+        "similarity": 1.0,
+        "para_a_preview": "**Lower Court Case Nos.:**\n**14th Judicial Circuit Court: 2024-001507-DC; 2023-5907-PP**\n**Court of ...",
+        "para_b_preview": "**Lower Court Case Nos.:**\n**14th Judicial Circuit Court: 2024-001507-DC; 2023-5907-PP**\n**Court of ...",
+        "word_savings": 15
+      },
+      {
+        "para_a_idx": 443,
+        "para_b_idx": 483,
+        "similarity": 1.0,
+        "para_a_preview": "**THE 14TH JUDICIAL CIRCUIT COURT,**\n**FAMILY DIVISION, MUSKEGON COUNTY**\n**(HON. JENNY L. McNEILL, ...",
+        "para_b_preview": "**THE 14TH JUDICIAL CIRCUIT COURT,**\n**FAMILY DIVISION, MUSKEGON COUNTY**\n**(HON. JENNY L. McNEILL, ...",
+        "word_savings": 15
+      },
+      {
+        "para_a_idx": 478,
+        "para_b_idx": 479,
+        "similarity": 0.667,
+        "para_a_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nJustice, Michigan Supreme Cou...",
+        "para_b_preview": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\nClerk, Michigan Supreme Court...",
+        "word_savings": 5
+      },
+      {
+        "para_a_idx": 487,
+        "para_b_idx": 491,
+        "similarity": 0.623,
+        "para_a_preview": "| Field | Detail |\n|-------|--------|\n| **Name** | Hon. Jenny L. McNeill |\n| **Title** | Judge, 14th...",
+        "para_b_preview": "| Field | Detail |\n|-------|--------|\n| **Name** | Pamela Rusco, Judicial Secretary to Hon. Jenny L....",
+        "word_savings": 66
+      },
+      {
+        "para_a_idx": 491,
+        "para_b_idx": 496,
+        "similarity": 0.638,
+        "para_a_preview": "| Field | Detail |\n|-------|--------|\n| **Name** | Pamela Rusco, Judicial Secretary to Hon. Jenny L....",
+        "para_b_preview": "| Field | Detail |\n|-------|--------|\n| **Court** | 14th Judicial Circuit Court, Muskegon County |\n|...",
+        "word_savings": 63
+      }
+    ],
+    "citation_clusters": [],
+    "repeated_arguments": [
+      {
+        "phrase": "14th judicial circuit",
+        "appears_in_sections": 15,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "the lower court's",
+        "appears_in_sections": 14,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "229 consecutive days",
+        "appears_in_sections": 13,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "order of superintending",
+        "appears_in_sections": 12,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "of superintending control",
+        "appears_in_sections": 12,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "court of appeals",
+        "appears_in_sections": 11,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "all parenting time",
+        "appears_in_sections": 11,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "andrew james pigors,",
+        "appears_in_sections": 11,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "andrew james pigors",
+        "appears_in_sections": 10,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "the trial court's",
+        "appears_in_sections": 10,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "including the ex",
+        "appears_in_sections": 10,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "the newly assigned",
+        "appears_in_sections": 10,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "michigan court of",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "the michigan court",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "the 14th circuit",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "a parenting time",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "nos. 2024-001507-dc and",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "case nos. 2024-001507-dc",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "superintending control is",
+        "appears_in_sections": 9,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "jennifer barnes (p55406)",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      }
+    ],
+    "total_potential_savings": 1560,
+    "savings_breakdown": {
+      "verbose_phrase_savings": 35,
+      "redundant_paragraph_savings": 1525,
+      "citation_cluster_savings": 0
+    },
+    "status": "NEEDS_MAJOR_REWRITE",
+    "confidence": "LOW",
+    "recommendation": "Need to cut 8959 words but auto-trim can only save ~1560. Consider splitting into main brief + appendix."
+  },
+  "F6": {
+    "filing_id": "F6",
+    "current_words": 7314,
+    "current_pages": 25,
+    "page_limit": 20,
+    "target_words": 6000,
+    "words_to_cut": 1314,
+    "over_limit": true,
+    "verbose_phrases": [
+      {
+        "original": "Prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 1412
+      },
+      {
+        "original": "Prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 13232
+      },
+      {
+        "original": "prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 48069
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 1526
+      },
+      {
+        "original": "true and correct",
+        "replacement": "true",
+        "word_savings": 2,
+        "position": 49056
+      }
+    ],
+    "redundant_paragraphs": [],
+    "citation_clusters": [],
+    "repeated_arguments": [
+      {
+        "phrase": "- **witnesses:** father;",
+        "appears_in_sections": 14,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "no. 2024-001507-dc -",
+        "appears_in_sections": 11,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "2024-001507-dc - **description:**",
+        "appears_in_sections": 11,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "**case:** no. 2024-001507-dc",
+        "appears_in_sections": 11,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "2025 - **case:**",
+        "appears_in_sections": 10,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "attorney mandi martini",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "2023-5907-pp - **description:**",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "| |----------|-------------| |",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "description | |----------|-------------|",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "document | description",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "**witnesses:** father; court",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "- **effect:** father",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "ex parte communication",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "through the clerk",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "- **description:** mcneill",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "february 28, 2025",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "jenny l. mcneill",
+        "appears_in_sections": 4,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "judicial tenure commission",
+        "appears_in_sections": 4,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "sure judge mcneil",
+        "appears_in_sections": 4,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "pretty sure judge",
+        "appears_in_sections": 4,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      }
+    ],
+    "total_potential_savings": 6,
+    "savings_breakdown": {
+      "verbose_phrase_savings": 6,
+      "redundant_paragraph_savings": 0,
+      "citation_cluster_savings": 0
+    },
+    "status": "NEEDS_MAJOR_REWRITE",
+    "confidence": "LOW",
+    "recommendation": "Need to cut 1314 words but auto-trim can only save ~6. Consider splitting into main brief + appendix."
+  },
+  "F7": {
+    "filing_id": "F7",
+    "current_words": 9011,
+    "current_pages": 31,
+    "page_limit": 20,
+    "target_words": 6000,
+    "words_to_cut": 3011,
+    "over_limit": true,
+    "verbose_phrases": [
+      {
+        "original": "Prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 41517
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 799
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 2653
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 20139
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 48144
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 48381
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 49787
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 57729
+      },
+      {
+        "original": "true and correct",
+        "replacement": "true",
+        "word_savings": 2,
+        "position": 58350
+      }
+    ],
+    "redundant_paragraphs": [
+      {
+        "para_a_idx": 1,
+        "para_b_idx": 213,
+        "similarity": 1.0,
+        "para_a_preview": "```\nSTATE OF MICHIGAN\nIN THE 14TH JUDICIAL CIRCUIT COURT\nFOR THE COUNTY OF MUSKEGON\nFAMILY DIVISION...",
+        "para_b_preview": "```\nSTATE OF MICHIGAN\nIN THE 14TH JUDICIAL CIRCUIT COURT\nFOR THE COUNTY OF MUSKEGON\nFAMILY DIVISION...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 3,
+        "para_b_idx": 215,
+        "similarity": 1.0,
+        "para_a_preview": "EMILY A. WATSON,\n        Defendant.\n_______________________________________/...",
+        "para_b_preview": "EMILY A. WATSON,\n        Defendant.\n_______________________________________/...",
+        "word_savings": 5
+      },
+      {
+        "para_a_idx": 119,
+        "para_b_idx": 141,
+        "similarity": 0.667,
+        "para_a_preview": "55\\. **This factor overwhelmingly favors Father and modification.**...",
+        "para_b_preview": "61\\. **This factor favors Father and modification.**...",
+        "word_savings": 7
+      },
+      {
+        "para_a_idx": 182,
+        "para_b_idx": 234,
+        "similarity": 1.0,
+        "para_a_preview": "```\nSTATE OF MICHIGAN   )\n                    ) ss.\nCOUNTY OF MUSKEGON  )...",
+        "para_b_preview": "```\nSTATE OF MICHIGAN   )\n                    ) ss.\nCOUNTY OF MUSKEGON  )...",
+        "word_savings": 10
+      },
+      {
+        "para_a_idx": 229,
+        "para_b_idx": 231,
+        "similarity": 0.833,
+        "para_a_preview": "\u2610 By first-class U.S. Mail, postage prepaid\n\u2610 By personal service\n\u2610 By electronic service (email)...",
+        "para_b_preview": "\u2610 By first-class U.S. Mail, postage prepaid\n\u2610 By personal delivery\n\u2610 By electronic service...",
+        "word_savings": 15
+      },
+      {
+        "para_a_idx": 233,
+        "para_b_idx": 239,
+        "similarity": 1.0,
+        "para_a_preview": "```\n_______________________________________\nANDREW JAMES PIGORS\n1977 Whitehall Road, Lot 17\nNorth Mu...",
+        "para_b_preview": "```\n_______________________________________\nANDREW JAMES PIGORS\nPro Per Plaintiff\n1977 Whitehall Roa...",
+        "word_savings": 18
+      }
+    ],
+    "citation_clusters": [
+      {
+        "preview": "MCL 722.27; MCL 722.27a; MCR 3.210; MCR 3.211...",
+        "citation_count": 4,
+        "excess": 1,
+        "word_savings": 10,
+        "position": 615,
+        "recommendation": "Keep 3 strongest citations, move rest to footnotes"
+      },
+      {
+        "preview": "IndiGrow LLC, terminated June 2, 2024; USPS weekend carrier, lost due to scheduling conflicts with court obligations; Metal Arc, lost due to incarcera...",
+        "citation_count": 4,
+        "excess": 1,
+        "word_savings": 10,
+        "position": 43992,
+        "recommendation": "Keep 3 strongest citations, move rest to footnotes"
+      }
+    ],
+    "repeated_arguments": [
+      {
+        "phrase": "custody and parenting",
+        "appears_in_sections": 10,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "and parenting time",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "**this factor favors",
+        "appears_in_sections": 8,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "modify custody and",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "to modify custody",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "andrew james pigors",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "50/50 parenting time",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "motion to modify",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "andrew james pigors,",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "2024 through july",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "parenting time was",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "through july 17,",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "and convincing evidence",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "clear and convincing",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "change of circumstances",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "1977 whitehall road,",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "whitehall road, lot",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "north muskegon, mi",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "the healthwest evaluation",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "favors father and",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      }
+    ],
+    "total_potential_savings": 101,
+    "savings_breakdown": {
+      "verbose_phrase_savings": 10,
+      "redundant_paragraph_savings": 71,
+      "citation_cluster_savings": 20
+    },
+    "status": "NEEDS_MAJOR_REWRITE",
+    "confidence": "LOW",
+    "recommendation": "Need to cut 3011 words but auto-trim can only save ~101. Consider splitting into main brief + appendix."
+  },
+  "F8": {
+    "filing_id": "F8",
+    "current_words": 7921,
+    "current_pages": 27,
+    "page_limit": 20,
+    "target_words": 6000,
+    "words_to_cut": 1921,
+    "over_limit": true,
+    "verbose_phrases": [
+      {
+        "original": "prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 9400
+      },
+      {
+        "original": "prior to",
+        "replacement": "before",
+        "word_savings": 1,
+        "position": 34888
+      },
+      {
+        "original": "for the purpose of",
+        "replacement": "to",
+        "word_savings": 3,
+        "position": 40995
+      },
+      {
+        "original": "The fact that",
+        "replacement": "that",
+        "word_savings": 2,
+        "position": 21328
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 1628
+      },
+      {
+        "original": "pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 3272
+      },
+      {
+        "original": "Pursuant to",
+        "replacement": "under",
+        "word_savings": 1,
+        "position": 32844
+      },
+      {
+        "original": "true and correct",
+        "replacement": "true",
+        "word_savings": 2,
+        "position": 49923
+      },
+      {
+        "original": "true and correct",
+        "replacement": "true",
+        "word_savings": 2,
+        "position": 52539
+      },
+      {
+        "original": "true and correct",
+        "replacement": "true",
+        "word_savings": 2,
+        "position": 53913
+      }
+    ],
+    "redundant_paragraphs": [
+      {
+        "para_a_idx": 1,
+        "para_b_idx": 183,
+        "similarity": 1.0,
+        "para_a_preview": "```\nSTATE OF MICHIGAN\nIN THE 14TH JUDICIAL CIRCUIT COURT\nFOR THE COUNTY OF MUSKEGON\nFAMILY DIVISION...",
+        "para_b_preview": "```\nSTATE OF MICHIGAN\nIN THE 14TH JUDICIAL CIRCUIT COURT\nFOR THE COUNTY OF MUSKEGON\nFAMILY DIVISION...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 2,
+        "para_b_idx": 184,
+        "similarity": 1.0,
+        "para_a_preview": "EMILY A. WATSON,\n        Petitioner,                          Case No. 2023-5907-PP...",
+        "para_b_preview": "EMILY A. WATSON,\n        Petitioner,                          Case No. 2023-5907-PP...",
+        "word_savings": 7
+      },
+      {
+        "para_a_idx": 4,
+        "para_b_idx": 185,
+        "similarity": 1.0,
+        "para_a_preview": "ANDREW JAMES PIGORS,\n        Respondent.\n_______________________________________/...",
+        "para_b_preview": "ANDREW JAMES PIGORS,\n        Respondent.\n_______________________________________/...",
+        "word_savings": 5
+      },
+      {
+        "para_a_idx": 115,
+        "para_b_idx": 126,
+        "similarity": 1.0,
+        "para_a_preview": "**WHEREFORE**, Respondent demands judgment against Petitioner for compensatory damages, exemplary da...",
+        "para_b_preview": "**WHEREFORE**, Respondent demands judgment against Petitioner for compensatory damages, exemplary da...",
+        "word_savings": 23
+      },
+      {
+        "para_a_idx": 115,
+        "para_b_idx": 139,
+        "similarity": 0.769,
+        "para_a_preview": "**WHEREFORE**, Respondent demands judgment against Petitioner for compensatory damages, exemplary da...",
+        "para_b_preview": "**WHEREFORE**, Respondent demands judgment against all named Defendants jointly and severally for co...",
+        "word_savings": 23
+      },
+      {
+        "para_a_idx": 115,
+        "para_b_idx": 159,
+        "similarity": 0.769,
+        "para_a_preview": "**WHEREFORE**, Respondent demands judgment against Petitioner for compensatory damages, exemplary da...",
+        "para_b_preview": "**WHEREFORE**, Respondent demands judgment against all named Defendants jointly and severally for co...",
+        "word_savings": 23
+      },
+      {
+        "para_a_idx": 117,
+        "para_b_idx": 129,
+        "similarity": 0.714,
+        "para_a_preview": "7. Respondent incorporates by reference the allegations in paragraphs 1 through 6....",
+        "para_b_preview": "16. Respondent incorporates by reference the allegations in paragraphs 1 through 15....",
+        "word_savings": 12
+      },
+      {
+        "para_a_idx": 117,
+        "para_b_idx": 140,
+        "similarity": 0.714,
+        "para_a_preview": "7. Respondent incorporates by reference the allegations in paragraphs 1 through 6....",
+        "para_b_preview": "21. Respondent incorporates by reference the allegations in paragraphs 1 through 20....",
+        "word_savings": 12
+      },
+      {
+        "para_a_idx": 117,
+        "para_b_idx": 153,
+        "similarity": 0.714,
+        "para_a_preview": "7. Respondent incorporates by reference the allegations in paragraphs 1 through 6....",
+        "para_b_preview": "27. Respondent incorporates by reference the allegations in paragraphs 1 through 26....",
+        "word_savings": 12
+      },
+      {
+        "para_a_idx": 126,
+        "para_b_idx": 139,
+        "similarity": 0.769,
+        "para_a_preview": "**WHEREFORE**, Respondent demands judgment against Petitioner for compensatory damages, exemplary da...",
+        "para_b_preview": "**WHEREFORE**, Respondent demands judgment against all named Defendants jointly and severally for co...",
+        "word_savings": 23
+      },
+      {
+        "para_a_idx": 126,
+        "para_b_idx": 159,
+        "similarity": 0.769,
+        "para_a_preview": "**WHEREFORE**, Respondent demands judgment against Petitioner for compensatory damages, exemplary da...",
+        "para_b_preview": "**WHEREFORE**, Respondent demands judgment against all named Defendants jointly and severally for co...",
+        "word_savings": 23
+      },
+      {
+        "para_a_idx": 128,
+        "para_b_idx": 152,
+        "similarity": 1.0,
+        "para_a_preview": "**Against: Emily A. Watson, Albert Watson, Lori Watson, and Cody Watson**...",
+        "para_b_preview": "**Against: Emily A. Watson, Albert Watson, Lori Watson, and Cody Watson**...",
+        "word_savings": 11
+      },
+      {
+        "para_a_idx": 129,
+        "para_b_idx": 140,
+        "similarity": 0.714,
+        "para_a_preview": "16. Respondent incorporates by reference the allegations in paragraphs 1 through 15....",
+        "para_b_preview": "21. Respondent incorporates by reference the allegations in paragraphs 1 through 20....",
+        "word_savings": 12
+      },
+      {
+        "para_a_idx": 129,
+        "para_b_idx": 153,
+        "similarity": 0.714,
+        "para_a_preview": "16. Respondent incorporates by reference the allegations in paragraphs 1 through 15....",
+        "para_b_preview": "27. Respondent incorporates by reference the allegations in paragraphs 1 through 26....",
+        "word_savings": 12
+      },
+      {
+        "para_a_idx": 139,
+        "para_b_idx": 159,
+        "similarity": 1.0,
+        "para_a_preview": "**WHEREFORE**, Respondent demands judgment against all named Defendants jointly and severally for co...",
+        "para_b_preview": "**WHEREFORE**, Respondent demands judgment against all named Defendants jointly and severally for co...",
+        "word_savings": 28
+      },
+      {
+        "para_a_idx": 140,
+        "para_b_idx": 153,
+        "similarity": 0.714,
+        "para_a_preview": "21. Respondent incorporates by reference the allegations in paragraphs 1 through 20....",
+        "para_b_preview": "27. Respondent incorporates by reference the allegations in paragraphs 1 through 26....",
+        "word_savings": 12
+      },
+      {
+        "para_a_idx": 160,
+        "para_b_idx": 202,
+        "similarity": 0.875,
+        "para_a_preview": "```\nSTATE OF MICHIGAN    )\n                     ) ss.\nCOUNTY OF MUSKEGON   )...",
+        "para_b_preview": "STATE OF MICHIGAN    )\n                     ) ss.\nCOUNTY OF MUSKEGON   )...",
+        "word_savings": 10
+      },
+      {
+        "para_a_idx": 201,
+        "para_b_idx": 209,
+        "similarity": 0.762,
+        "para_a_preview": "______________________________     _______________\nANDREW JAMES PIGORS                Date\n1977 Whit...",
+        "para_b_preview": "______________________________\nANDREW JAMES PIGORS\nRespondent, Pro Se\n1977 Whitehall Road, Lot 17\nNo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 201,
+        "para_b_idx": 215,
+        "similarity": 0.818,
+        "para_a_preview": "______________________________     _______________\nANDREW JAMES PIGORS                Date\n1977 Whit...",
+        "para_b_preview": "```\n______________________________     _______________\nANDREW JAMES PIGORS                Date\nRespo...",
+        "word_savings": 16
+      },
+      {
+        "para_a_idx": 209,
+        "para_b_idx": 215,
+        "similarity": 0.864,
+        "para_a_preview": "______________________________\nANDREW JAMES PIGORS\nRespondent, Pro Se\n1977 Whitehall Road, Lot 17\nNo...",
+        "para_b_preview": "```\n______________________________     _______________\nANDREW JAMES PIGORS                Date\nRespo...",
+        "word_savings": 18
+      }
+    ],
+    "citation_clusters": [],
+    "repeated_arguments": [
+      {
+        "phrase": "show cause motions",
+        "appears_in_sections": 7,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "andrew james pigors,",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "to terminate personal",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "motion to terminate",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "terminate personal protection",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "personal protection order",
+        "appears_in_sections": 6,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "counter-claims for abuse",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "was obtained through",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "december 3, 2023,",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "whitehall road, lot",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "1977 whitehall road,",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "**wherefore**, respondent demands",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "such other relief",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "**against: emily a.",
+        "appears_in_sections": 5,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "personal protection order,",
+        "appears_in_sections": 4,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "expunge record, and",
+        "appears_in_sections": 4,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "14th judicial circuit",
+        "appears_in_sections": 4,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "state of michigan",
+        "appears_in_sections": 4,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "abuse of process",
+        "appears_in_sections": 4,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      },
+      {
+        "phrase": "emily a. watson,",
+        "appears_in_sections": 4,
+        "recommendation": "Consolidate into single occurrence with cross-references"
+      }
+    ],
+    "total_potential_savings": 330,
+    "savings_breakdown": {
+      "verbose_phrase_savings": 16,
+      "redundant_paragraph_savings": 314,
+      "citation_cluster_savings": 0
+    },
+    "status": "NEEDS_MAJOR_REWRITE",
+    "confidence": "LOW",
+    "recommendation": "Need to cut 1921 words but auto-trim can only save ~330. Consider splitting into main brief + appendix."
+  },
+  "F9": {
+    "filing_id": "F9",
+    "current_words": 7350,
+    "current_pages": 25,
+    "page_limit": 50,
+    "target_words": 15000,
+    "words_to_cut": 0,
+    "over_limit": false,
+    "verbose_phrases": [],
+    "redundant_paragraphs": [],
+    "citation_clusters": [],
+    "repeated_arguments": [],
+    "total_potential_savings": 0,
+    "status": "WITHIN_LIMIT"
+  },
+  "F10": {
+    "filing_id": "F10",
+    "current_words": 2021,
+    "current_pages": 7,
+    "page_limit": 20,
+    "target_words": 6000,
+    "words_to_cut": 0,
+    "over_limit": false,
+    "verbose_phrases": [],
+    "redundant_paragraphs": [],
+    "citation_clusters": [],
+    "repeated_arguments": [],
+    "total_potential_savings": 0,
+    "status": "WITHIN_LIMIT"
+  }
+}
