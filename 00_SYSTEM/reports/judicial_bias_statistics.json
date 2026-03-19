@@ -1,0 +1,50 @@
+{
+  "actor_violations": {
+    "total": 8348,
+    "mcneill_count": 5242,
+    "mcneill_percentage": 62.8,
+    "top_actors": {
+      "McNeill": 5242,
+      "Watson": 1547,
+      "Watson Family": 666,
+      "Albert Watson": 244,
+      "Lori Watson": 219
+    }
+  },
+  "mcneill_violation_types": {
+    "child_welfare": 1747,
+    "ex_parte": 1015,
+    "mcr_reference": 483,
+    "judicial_bias": 395,
+    "financial": 342,
+    "conspiracy": 337,
+    "canon_violation": 325,
+    "due_process": 300,
+    "constitutional": 153,
+    "aug_8_catastrophe": 145
+  },
+  "judicial_violations": {
+    "total_violations": 1127,
+    "severity_distribution": {
+      "medium": 484,
+      "critical": 377,
+      "high": 243,
+      "low": 23
+    }
+  },
+  "decision_asymmetry": {
+    "docket_events_count": 221,
+    "docket_events_columns": [
+      "event_id",
+      "case_id",
+      "event_date_iso",
+      "record_date_iso",
+      "title",
+      "event_type",
+      "summary",
+      "truth_tag",
+      "created_at"
+    ]
+  },
+  "canon_analysis": {}
+}
