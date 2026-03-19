@@ -1,0 +1,8 @@
+{
+  "generated": "2026-03-19T00:41:48.238468",
+  "tool": "Settlement Negotiation Framework (#155)",
+  "non_negotiable": 4,
+  "negotiable": 4,
+  "walk_away_triggers": 6,
+  "leverage_points": 6
+}
