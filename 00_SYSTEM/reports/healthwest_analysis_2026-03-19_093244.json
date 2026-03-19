@@ -1,0 +1,352 @@
+{
+  "report_type": "healthwest_evaluation_analysis",
+  "generated_at": "2026-03-19T09:32:44.672205",
+  "case": "Pigors v. Watson — 14th Circuit Court, Case No. 2024-001507-DC",
+  "summary": {
+    "healthwest_quotes": 29,
+    "delusional_quotes": 1,
+    "evaluation_quotes": 12,
+    "rusco_foc_quotes": 108,
+    "ex_parte_quotes": 199,
+    "healthwest_documents": 0,
+    "evaluation_events": 1,
+    "docket_eval_events": 13
+  },
+  "evaluations": {
+    "first_eval": {
+      "date": "2025-09-04",
+      "result": "CLEAN — No safety issues, ADHD controlled",
+      "delusional_features": "NONE"
+    },
+    "second_eval": {
+      "date": "2025-09-11",
+      "result": "Rule-out \"delusional disorder\"",
+      "days_between": 7,
+      "new_clinical_data": "NONE — only FOC ex parte contact"
+    }
+  },
+  "bias_indicators": [
+    {
+      "indicator": "RAPID DIAGNOSTIC REVERSAL",
+      "severity": "CRITICAL",
+      "description": "First evaluation (9/4/2025): CLEAN result — no safety issues found, ADHD controlled with medication. Second evaluation (9/11/2025): Rule-out \"delusional disorder\" — only 7 calendar days later with NO new clinical evidence. This 180-degree reversal without new data strongly suggests external influence.",
+      "evidence_count": 29,
+      "legal_significance": "APA Ethics Code 9.01(a) requires sufficient data for opinions"
+    },
+    {
+      "indicator": "FOC EX PARTE COMMUNICATION",
+      "severity": "CRITICAL",
+      "description": "Pamela Rusco (FOC) directly called the HealthWest clinician AND emailed a subpoena between the two evaluations. This constitutes ex parte communication with the evaluator. Found 108 evidence quotes referencing Rusco.",
+      "evidence_count": 108,
+      "legal_significance": "MCR 2.410; MRPC 3.5 — prohibited ex parte contact with experts"
+    },
+    {
+      "indicator": "PATHOLOGIZING LEGAL CRITICISM",
+      "severity": "HIGH",
+      "description": "The \"delusional disorder\" rule-out appears based on Andrew's assertion that \"this whole thing is illegal\" — which is a protected legal opinion, not a psychiatric symptom. Treating legal advocacy as psychopathology is a well-documented form of institutional abuse.",
+      "evidence_count": 1,
+      "legal_significance": "1st Amendment — protected speech; Petition Clause — right to seek redress; APA Ethics 2.04 — opinions must be based on scientific evidence"
+    },
+    {
+      "indicator": "NO NEW CLINICAL DATA",
+      "severity": "HIGH",
+      "description": "Between 9/4 and 9/11, no new psychological testing was administered, no new collateral contacts were documented, and no behavioral observations changed. The only new variable was the FOC's ex parte contact with the clinician.",
+      "evidence_count": 12,
+      "legal_significance": "Daubert/FRE 702 — expert opinions require reliable methodology"
+    },
+    {
+      "indicator": "EVALUATOR CAPTURE PATTERN",
+      "severity": "HIGH",
+      "description": "Pattern consistent with \"evaluator capture\" where a court-aligned party (FOC Rusco) influences the nominally independent evaluator through selective information sharing, creating a feedback loop that confirms the court's predetermined narrative.",
+      "evidence_count": 5,
+      "legal_significance": "MCL 722.27b — evaluation must be independent; Daubert v. Merrell Dow — reliability standard"
+    }
+  ],
+  "ex_parte_chain": [
+    {
+      "step": 1,
+      "date": "2025-09-04",
+      "event": "First HealthWest Evaluation — CLEAN",
+      "actors": [
+        "Andrew Pigors",
+        "HealthWest Clinician"
+      ],
+      "outcome": "No safety issues. ADHD controlled. No delusional features.",
+      "evidence": "29 quotes reference HealthWest"
+    },
+    {
+      "step": 2,
+      "date": "2025-09-04 to 2025-09-11",
+      "event": "FOC Rusco contacts HealthWest clinician",
+      "actors": [
+        "Pamela Rusco (FOC)",
+        "HealthWest Clinician"
+      ],
+      "outcome": "Rusco directly called clinician and emailed subpoena. This contact occurred WITHOUT notice to Andrew (ex parte).",
+      "evidence": "108 quotes reference Rusco communications"
+    },
+    {
+      "step": 3,
+      "date": "2025-09-11",
+      "event": "Second HealthWest Evaluation — DELUSIONAL RULE-OUT",
+      "actors": [
+        "Andrew Pigors",
+        "HealthWest Clinician"
+      ],
+      "outcome": "Rule-out \"delusional disorder\" diagnosis. Basis: Andrew's statement \"this whole thing is illegal.\" 180-degree reversal from 7 days prior with no new clinical data.",
+      "evidence": "0 quotes reference delusional/rule-out"
+    },
+    {
+      "step": 4,
+      "date": "Post 2025-09-11",
+      "event": "Court uses evaluation to restrict parenting time",
+      "actors": [
+        "Hon. Jenny L. McNeill",
+        "Emily A. Watson"
+      ],
+      "outcome": "The tainted evaluation becomes the basis for continued restriction of Andrew's parenting time — converting an ex parte-influenced evaluation into a custody weapon.",
+      "evidence": "199 quotes reference ex parte proceedings"
+    }
+  ],
+  "healthwest_evidence_quotes": [
+    {
+      "id": 2,
+      "text": "hearing  was\nadjourned\n for  Plaintiff  to obtain  a mental  health  assessment.\n The  parties  appeared\n on 1 0/29/25.\nThePlaintiff\n \nWest,stating(under\noath)  that he did not obtain  a second  assessment.",
+      "source_type": "PDF_COURT_DOC",
+      "category": "TRANSCRIPT",
+      "speaker": null,
+      "page": 1
+    },
+    {
+      "id": 7,
+      "text": "hearing  and  subpoenaed\n the  two\nhealth  west  staff  for  the next  hearing,  which  occurred  on 1 1/26/25.  At that  hearing,  the  two\nworkstestified,\n \nwas\nDespite  numerous\n warnings,  the Father  co",
+      "source_type": "PDF_COURT_DOC",
+      "category": "TRANSCRIPT",
+      "speaker": null,
+      "page": 1
+    },
+    {
+      "id": 10,
+      "text": "hearing  on 8/22/25.\nOn 9/22/2025,\n the  Court  asked  the Plaintiff  to undergo  an assessment\n at Health  West.\nThe  matter  was  then  set for an evidentiary\n hearing  on 9/4/25.  At the evidentiary\n hear",
+      "source_type": "PDF_COURT_DOC",
+      "category": "TRANSCRIPT",
+      "speaker": "COURT",
+      "page": 1
+    },
+    {
+      "id": 38,
+      "text": "hearing  was\nadjourned  for Piaintiffto\n obtain  a mental  health  assessment.  The  parties  appeared  on 10/29/25.\nThe Plaintiff objected to the Court reviewing  a 2nd assessment from  Health  West, statin",
+      "source_type": "PDF_COURT_DOC",
+      "category": "CUSTODY_ORDER",
+      "speaker": "COURT",
+      "page": 1
+    },
+    {
+      "id": 39,
+      "text": "hearing  and\nsubpoenaed\n the two health  west  staff  for the next hearing,  which  occurred  on 41/26/25.\nIf a parenting time modification  does not change  the child's  estabfished  \ncustodial\nenvironment,",
+      "source_type": "PDF_COURT_DOC",
+      "category": "CUSTODY_ORDER",
+      "speaker": null,
+      "page": 1
+    },
+    {
+      "id": 43,
+      "text": "hearing  on 8/22/25.\nOn 9/22/2025,  the Court  asked  the Plaintiff  to undergo  an assessment  at Health  West.\nThe matter  was  then set for an evidentiary  hearing  on 9/4/25.  At the evidentiary  hearing",
+      "source_type": "PDF_COURT_DOC",
+      "category": "TRANSCRIPT",
+      "speaker": "COURT",
+      "page": 1
+    },
+    {
+      "id": 66,
+      "text": "hearing,  Judge  McNeill\n ordered  me to obtain  a\npsychological\n assessment  from  HealtliWest.\no  \nThe  judge's\n secretary  then  emailed  me, instructing\n that  the completed\nHealthWest\n evaluation\n shoul",
+      "source_type": "PDF_COURT_DOC",
+      "category": "TRANSCRIPT",
+      "speaker": "COURT",
+      "page": 1
+    },
+    {
+      "id": 83,
+      "text": "Hearing\n*  \nTranscripts\n from  the  PPO  contempt\n hearing\n in  which\n I was  jailed\n (Show  Cause\n#4).\nAppendix\n H  -  HealthWest\n Evaluation\n and  Chambers\n Communications\nThe  HealthWest\n mental-health\n e",
+      "source_type": "PDF_COURT_DOC",
+      "category": "TRANSCRIPT",
+      "speaker": null,
+      "page": 1
+    },
+    {
+      "id": 257,
+      "text": "hearing,\n Judge  McNeill\n ordered\n me  to obtain  a\npsychological\n assessment\n from  HealtliWest.\no  \nThe  judge's\n secretary\n then  emailed\n me,  instructing\n that  the  completed\nHealthWest\n evaluation\n sh",
+      "source_type": "PDF_COURT_DOC",
+      "category": "TRANSCRIPT",
+      "speaker": "COURT",
+      "page": 1
+    },
+    {
+      "id": 268,
+      "text": "Hearing\n*  \nTranscripts\n from  the PPO  contempt\n hearing  in which  I was  jailed  (Show  Cause\n#4).\nAppendix\n H -  HealthWest\n Evaluation\n and  Chambers\n Communications\nThe  HealthWest\n mental-health\n eval",
+      "source_type": "PDF_COURT_DOC",
+      "category": "TRANSCRIPT",
+      "speaker": null,
+      "page": 1
+    },
+    {
+      "id": 387,
+      "text": "Ex Parte Communications)\n7. \nOrder\n to obtain\n HealthWest\n evaluation,\n followed\n by  chambers-only\ninstructions.\no  \nAfter  the August  28 hearing,  Judge  McNeill\n ordered  me to obtain  a\npsychological\n as",
+      "source_type": "PDF_COURT_DOC",
+      "category": "EX_PARTE_ORDER",
+      "speaker": "COURT",
+      "page": 1
+    },
+    {
+      "id": 405,
+      "text": "ex parte  parenting-time\n suspensions;\no  \nHer  ex parte  handling\n of  critical\n evidence,\n including\n the  HealthWest\nevaluation\n and  USB  recording;\no  \nHer  differential\n treatment\n of  my  evidence\n ver",
+      "source_type": "PDF_COURT_DOC",
+      "category": "EX_PARTE_ORDER",
+      "speaker": null,
+      "page": 1
+    },
+    {
+      "id": 3633,
+      "text": "-ou\n were working at HealthWest as a clinician on September 4, 2025, when you saw men.,\nt6rrect?'f\nTarget answer: ffl",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 1
+    },
+    {
+      "id": 3979,
+      "text": "nal contempt|jail\nMEEK4=bias|recusal|disqual|bond/$250|sanction|JTC|HealthWest eval reliance\nMEEK1=housi",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 1
+    },
+    {
+      "id": 4352,
+      "text": "the suspension\n (around  September\n 9, 2025  and\nOctober  8, 2025),  including\n any  references  to the HealthWest",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 1
+    },
+    {
+      "id": 7420,
+      "text": "ess\nIncident 26: HealthWest Evaluation Completed (September 15, 2025)\n• Date: September 15, 2025\n• Case: 2024-1507-DC",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 20
+    },
+    {
+      "id": 7422,
+      "text": "Incident 27: Court Ignores HealthWest Evaluation (September 20, 2025)\n• Date: September 20, 2025\n• Case: 2024-1507-DC",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 21
+    },
+    {
+      "id": 7800,
+      "text": "picture of HealthWest mental-health evaluation on September 5, 2025 | EA_013b0a313d | mass\niveeee.zip/Response to sho",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 3
+    },
+    {
+      "id": 7827,
+      "text": "ictu\nre of HealthWest mental-health evaluation on September 5, 2025 | EA_013b0a313d | massiveeee.zip/Response to show",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 3
+    },
+    {
+      "id": 7868,
+      "text": "picture of HealthWest mental-health evaluation on September 5, 2025 | EA_013b0a313d |\nmassiveeee.zip/Response to show",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 4
+    },
+    {
+      "id": 7881,
+      "text": "squalify\",\"recuse\",\"MCR 2.003\",\"bond\",\"sanction\",\"$250\",\"ex parte\",\"suspend parenting\ntime\",\"HealthWest\"",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 27
+    },
+    {
+      "id": 7935,
+      "text": "picture of HealthWest mental-health evaluation on September 5, 2025 | EA_013b0a313d | massiveeee.zip/Response to \nsho",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 3
+    },
+    {
+      "id": 7948,
+      "text": "squalify\",\"recuse\",\"MCR 2.003\",\"bond\",\"sanction\",\"$250\",\"ex parte\",\"suspend parenting \ntime\",\"HealthWest",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 23
+    },
+    {
+      "id": 9144,
+      "text": "the  suspension\n (around\n September\n 9, 2025  and\nOctober\n 8, 2025),  including\n any  references\n to the  HealthWest",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 1
+    },
+    {
+      "id": 11640,
+      "text": "QUALIFY|EX_PARTE|HEALTHWEST|dates=DATE_MONTH_DY_Y:August\n 28, 2025|snip=28, 2025 - Interim hearing; refusal to view",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 11
+    },
+    {
+      "id": 11643,
+      "text": "E|HEALTHWEST|PARENTING_TIME|dates=DATE_MONTH_DY_Y:October\n 29, 2025|snip=o In early August 2025, Judge McNeill signed",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 12
+    },
+    {
+      "id": 11644,
+      "text": "E|HEALTHWEST|PARENTING_TIME|dates=DATE_MONTH_DY_Y:September\n 9, 2025|snip=o The opposing party and the priblic could n",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 12
+    },
+    {
+      "id": 11672,
+      "text": "|HEALTHWEST|PARENTING_TIME|dates=DATE_MO\nNTH_DY_Y:August 22, 2025|snip=runs afoul of due process (14th Amendment) a",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 22
+    },
+    {
+      "id": 11673,
+      "text": "C|HEALTHWEST|PARENTING_TIME|dates=DATE_MONTH_DY_Y:August 22, 2025|snip=r\nuns afoul of due process (14th Amendment)",
+      "source_type": "PDF_COURT_DOC",
+      "category": "discovery",
+      "speaker": null,
+      "page": 22
+    }
+  ],
+  "delusional_evidence_quotes": [
+    {
+      "id": 360,
+      "text": "ex parte  order.  These  go directly  to whetuer my  safety  concerns  were  grounded  inreal,'\naocumented  events  rather  than  delusion,  and whether  my  relationship\n with  my  three-year-old\n son is saf",
+      "source_type": "PDF_COURT_DOC"
+    }
+  ]
+}

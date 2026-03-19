@@ -1,0 +1,118 @@
+{
+  "tool": 239,
+  "name": "Case Strength Dashboard",
+  "generated": "2026-03-19T09:25:37.811237",
+  "evidence_counts": {
+    "evidence_quotes": 36891,
+    "judicial_violations": 1127,
+    "claims": 653,
+    "docket_events": 221,
+    "authority_chains": 28,
+    "deadlines": 23,
+    "d_rebuttal_pack": 672,
+    "d_cip": 500,
+    "d_coe": 1011,
+    "d_events": 223,
+    "d_documents": 2,
+    "d_evidence_atoms": 192
+  },
+  "grand_total": 41543,
+  "table_count": 810,
+  "filings": {
+    "F1": {
+      "name": "Motion to Set Aside Void Orders",
+      "lane": "A/D",
+      "court": "14th Circuit",
+      "fee": "$0 (IFP)",
+      "strength": 9,
+      "ready": "GO"
+    },
+    "F2": {
+      "name": "Motion for Disqualification",
+      "lane": "E",
+      "court": "14th Circuit",
+      "fee": "$0",
+      "strength": 8,
+      "ready": "GO"
+    },
+    "F3": {
+      "name": "42 USC \u00a71983 Federal Complaint",
+      "lane": "A/D/E",
+      "court": "USDC WDMI",
+      "fee": "$402 (IFP avail)",
+      "strength": 9,
+      "ready": "CONDITIONAL"
+    },
+    "F4": {
+      "name": "Emergency Custody Motion",
+      "lane": "A",
+      "court": "14th Circuit",
+      "fee": "$175",
+      "strength": 8,
+      "ready": "CONDITIONAL"
+    },
+    "F5": {
+      "name": "Motion to Modify Parenting Time",
+      "lane": "A",
+      "court": "14th Circuit",
+      "fee": "$0",
+      "strength": 7,
+      "ready": "CONDITIONAL"
+    },
+    "F6": {
+      "name": "JTC Complaint",
+      "lane": "E",
+      "court": "JTC Detroit",
+      "fee": "$0",
+      "strength": 9,
+      "ready": "GO"
+    },
+    "F7": {
+      "name": "Motion to Compel Discovery",
+      "lane": "A/B",
+      "court": "14th Circuit",
+      "fee": "$0",
+      "strength": 7,
+      "ready": "CONDITIONAL"
+    },
+    "F8": {
+      "name": "Shady Oaks Housing Fraud",
+      "lane": "B",
+      "court": "14th Circuit",
+      "fee": "$375",
+      "strength": 6,
+      "ready": "CONDITIONAL"
+    },
+    "F9": {
+      "name": "COA Appeal (366810)",
+      "lane": "F",
+      "court": "MI COA",
+      "fee": "$375 (IFP avail)",
+      "strength": 9,
+      "ready": "GO"
+    },
+    "F10": {
+      "name": "MSC Application",
+      "lane": "F",
+      "court": "MI Supreme Court",
+      "fee": "$405",
+      "strength": 7,
+      "ready": "CONDITIONAL"
+    }
+  },
+  "damages": {
+    "conservative": 379950,
+    "moderate": 1176350,
+    "aggressive": 2591700
+  },
+  "smoking_guns": [
+    "Albert Watson NS2505044: Premeditated ex parte admission",
+    "HealthWest flip: Clean \u2192 'delusional' in 7 days",
+    "37-day custody withholding without court order",
+    "Fabricated cocaine straw allegation (Oct 2023)",
+    "Emily Watson credibility: 0.0/10 \u2014 806 contradictions",
+    "4,660 MCR violations, 51 chapters, 2,252 critical",
+    "Fraud chain score: 100/100 \u2014 complete poisonous tree"
+  ],
+  "go_filings": 4
+}

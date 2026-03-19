@@ -1,0 +1,1127 @@
+{
+  "tool": "#237 — Emergency Motion Generator (F4)",
+  "generated": "2026-03-19T09:34:34.025378",
+  "case": "Pigors v. Watson (2024-001507-DC)",
+  "court": "14th Circuit Court, Family Division, Muskegon County",
+  "judge": "Hon. Jenny L. McNeill",
+  "summary": {
+    "aggression_events_raw": 12,
+    "aggression_events_unique": 10,
+    "medical_events_raw": 37,
+    "medical_events_unique": 25,
+    "interference_events_raw": 51,
+    "interference_events_unique": 38,
+    "albert_watson_events": 15,
+    "healthwest_evidence": 23,
+    "police_narratives": 2,
+    "related_claims": 179,
+    "fact_section_categories": 5,
+    "affidavit_paragraphs": 21
+  },
+  "mcl_722_27a_mapping": {
+    "immediate_danger": {
+      "statute": "MCL 722.27a(3)(a)",
+      "text": "The child has a reasonable likelihood of being exposed to or affected by domestic violence, substance abuse, or has been removed from the parent having custody.",
+      "evidence_count": 49,
+      "sample_evidence": [
+        ", during a parenting exchange, Emily’s father, Albert Watson, forcibly removed LDW from my arms and acted aggressively, creating a hostile environment.",
+        "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leading to emotional distress. Exposure to such incident...",
+        ", her father, Albert Watson, forcibly removed LDW from my arms during a parenting exchange, creating a hostile and emotionally distressing environment for LDW.",
+        ", during a parenting exchange, Emily allowed her father, Albert Watson, to forcibly remove LDW from my arms in a hostile manner. This aggressive behavior in LDW’s presence created a traumatic experien...",
+        ", her father, Albert Watson, forcibly removed LDW from my arms during a parenting exchange, creating a hostile and emotionally distressing environment for LDW."
+      ]
+    },
+    "change_circumstances": {
+      "statute": "MCL 722.27a(3)(b)",
+      "text": "The child's present environment is likely to cause the child physical, mental, or emotional harm.",
+      "evidence_count": 100,
+      "sample_evidence": [
+        ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests.",
+        "Emily refused a weekly video call schedule, citing discomfort without proposing alternatives.",
+        ", and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn’t want to talk.\" These refusals create a gap in our relationship and prevent LDW from maintain...",
+        ", and September 12, 2024, Emily refused to allow scheduled video calls, claiming LDW “doesn’t want to talk.” These actions disrupt LDW’s sense of connection and emotional stability.",
+        ", and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn’t want to talk.\" These refusals create a gap in our relationship and prevent LDW from maintain..."
+      ]
+    },
+    "best_interest": {
+      "statute": "MCL 722.23 (Best Interest Factors)",
+      "text": "The best interest factors must be considered: factor (j) willingness to facilitate relationship with other parent is particularly relevant.",
+      "evidence_count": 51,
+      "sample_evidence": [
+        ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests.",
+        "Emily refused a weekly video call schedule, citing discomfort without proposing alternatives.",
+        ", and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn’t want to talk.\" These refusals create a gap in our relationship and prevent LDW from maintain...",
+        ", and September 12, 2024, Emily refused to allow scheduled video calls, claiming LDW “doesn’t want to talk.” These actions disrupt LDW’s sense of connection and emotional stability.",
+        ", and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn’t want to talk.\" These refusals create a gap in our relationship and prevent LDW from maintain..."
+      ]
+    }
+  },
+  "fact_section": [
+    {
+      "category": "PHYSICAL AGGRESSION — Albert Watson",
+      "count": 15,
+      "key_facts": [
+        {
+          "date": "October 20, 2024",
+          "fact": ", during a parenting exchange, Emily’s father, Albert Watson, forcibly removed LDW from my arms and acted aggressively, creating a hostile environment.",
+          "db_source": "d_drive_events.id=7"
+        },
+        {
+          "date": "October 20, 2024",
+          "fact": "Albert Watson served a PPO violation during an exchange, mocking me and creating unnecessary tension. This misuse of legal processes is designed to intimidate and alienate.",
+          "db_source": "d_drive_events.id=24"
+        },
+        {
+          "date": "October 20, 2024",
+          "fact": "Albert forcibly removed LDW from my arms during an exchange, throwing a PPO violation into my vehicle and mocking me.",
+          "db_source": "d_drive_events.id=25"
+        },
+        {
+          "date": "October 20, 2024",
+          "fact": "Albert Watson accosts Andrew during a parenting exchange, taking Lincoln from his arms.",
+          "db_source": "d_drive_events.id=36"
+        },
+        {
+          "date": "October 20, 2024",
+          "fact": ", her father, Albert Watson, forcibly removed LDW from my arms during a parenting exchange, creating a hostile and emotionally distressing environment for LDW.",
+          "db_source": "d_drive_events.id=124"
+        },
+        {
+          "date": "October 20, 2024",
+          "fact": ", LDW witnessed Albert Watson forcibly remove him from my arms during a parenting exchange while yelling and creating a hostile environment. This traumatic incident not only destabilized LDW but also created a lasting impression of conflict during what should be peaceful transitions.",
+          "db_source": "d_drive_events.id=126"
+        },
+        {
+          "date": "October 20, 2024",
+          "fact": ", during a parenting exchange, Emily allowed her father, Albert Watson, to forcibly remove LDW from my arms in a hostile manner. This aggressive behavior in LDW’s presence created a traumatic experience for him.",
+          "db_source": "d_drive_events.id=132"
+        },
+        {
+          "date": "October 20, 2024",
+          "fact": ", Albert Watson forcibly removed LDW from my arms during an exchange, shouting and throwing a PPO violation into my vehicle. This hostile behavior exposed LDW to unnecessary emotional trauma.",
+          "db_source": "d_drive_events.id=135"
+        }
+      ]
+    },
+    {
+      "category": "MEDICAL HARM / NEGLECT",
+      "count": 25,
+      "key_facts": [
+        {
+          "date": "June 15, 2024",
+          "fact": "Andrew reports Lincoln’s rash worsening, but Emily dismisses medical concerns again.",
+          "db_source": "d_drive_events.id=56"
+        },
+        {
+          "date": "June 15, 2024",
+          "fact": ", LDW returned to me with severe rashes that Emily had failed to address, leaving me to manage his medical care and comfort.",
+          "db_source": "d_drive_events.id=118"
+        },
+        {
+          "date": "June 15, 2024",
+          "fact": ": LDW returned from Emily’s care with severe rashes on his body. Despite Andrew’s suggestion for medical attention, Emily dismissed the concern and failed to seek proper treatment.",
+          "db_source": "d_drive_events.id=206"
+        },
+        {
+          "date": "May 15, 2024",
+          "fact": "Without consulting me, Emily made unilateral decisions regarding LDW’s vaccinations, only informing me afterward.",
+          "db_source": "d_drive_events.id=3"
+        },
+        {
+          "date": "May 15, 2024",
+          "fact": "Emily vaccinates Lincoln without consulting Andrew.",
+          "db_source": "d_drive_events.id=64"
+        },
+        {
+          "date": "May 15, 2024",
+          "fact": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demonstrates her disregard for collaborative decision-making regarding LDW’s health.",
+          "db_source": "d_drive_events.id=131"
+        },
+        {
+          "date": "May 19, 2024",
+          "fact": ": Andrew noticed a rash on LDW and suggested testing for a peanut allergy. Emily dismissed this suggestion, attributing the rash to vaccinations without seeking medical advice or further investigation.",
+          "db_source": "d_drive_events.id=207"
+        },
+        {
+          "date": "May 28, 2024",
+          "fact": "Emily provided only partial medical records despite a court order requiring full disclosure. Her failure to cooperate hindered my ability to make informed decisions about LDW’s health, violating MCL 722.23(c), which requires both parents to demonstrate the capacity to provide for the child’s medical",
+          "db_source": "d_drive_events.id=13"
+        }
+      ]
+    },
+    {
+      "category": "PARENTING TIME INTERFERENCE / WITHHOLDING",
+      "count": 38,
+      "key_facts": [
+        {
+          "date": "July 9, 2024",
+          "fact": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests.",
+          "db_source": "d_drive_events.id=184"
+        },
+        {
+          "date": "June 1, 2024",
+          "fact": "Emily refused a weekly video call schedule, citing discomfort without proposing alternatives.",
+          "db_source": "d_drive_events.id=8"
+        },
+        {
+          "date": "June 1, 2024",
+          "fact": ", and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn’t want to talk.\" These refusals create a gap in our relationship and prevent LDW from maintaining the continuity of our bond during her parenting weeks.",
+          "db_source": "d_drive_events.id=127"
+        },
+        {
+          "date": "June 1, 2024",
+          "fact": ", and September 12, 2024, Emily refused to allow scheduled video calls, claiming LDW “doesn’t want to talk.” These actions disrupt LDW’s sense of connection and emotional stability.",
+          "db_source": "d_drive_events.id=133"
+        },
+        {
+          "date": "June 1, 2024",
+          "fact": ", I requested a weekly video chat during off-weeks to maintain LDW’s sense of connection and security. Emily refused without offering an alternative.",
+          "db_source": "d_drive_events.id=187"
+        },
+        {
+          "date": "June 1, 2024",
+          "fact": ", Emily denied a scheduled video call, citing that LDW “didn’t want to talk.” However, LDW later expressed excitement when he saw me in person, contradicting Emily’s claim and highlighting her alienating behavior.",
+          "db_source": "d_drive_events.id=199"
+        },
+        {
+          "date": "June 15, 2024",
+          "fact": ", LDW returned from Emily’s care with severe rashes on his face and body. Despite my repeated inquiries, Emily dismissed the condition as \"minor\" and refused to seek medical advice.",
+          "db_source": "d_drive_events.id=129"
+        },
+        {
+          "date": "March 26, 2024",
+          "fact": "- May 2, 2024: Emily withholds Lincoln for 37 days, citing unfounded claims about safety.",
+          "db_source": "d_drive_events.id=69"
+        }
+      ]
+    },
+    {
+      "category": "HEALTHWEST EVALUATION WEAPONIZATION",
+      "count": 23,
+      "key_facts": [
+        {
+          "date": null,
+          "fact": "hearing,  Judge  McNeill  ordered  me to obtain  a psychological  assessment  from  HealtliWest. o   The  judge's  secretary  then  emailed  me, instructing  that  the completed HealthWest  evaluation  shoul",
+          "db_source": "evidence_quotes.id=66"
+        },
+        {
+          "date": null,
+          "fact": "Hearing *   Transcripts  from  the  PPO  contempt  hearing  in  which  I was  jailed  (Show  Cause #4). Appendix  H  -  HealthWest  Evaluation  and  Chambers  Communications The  HealthWest  mental-health  e",
+          "db_source": "evidence_quotes.id=83"
+        },
+        {
+          "date": null,
+          "fact": "hearing,  Judge  McNeill  ordered  me  to obtain  a psychological  assessment  from  HealtliWest. o   The  judge's  secretary  then  emailed  me,  instructing  that  the  completed HealthWest  evaluation  sh",
+          "db_source": "evidence_quotes.id=257"
+        },
+        {
+          "date": null,
+          "fact": "Hearing *   Transcripts  from  the PPO  contempt  hearing  in which  I was  jailed  (Show  Cause #4). Appendix  H -  HealthWest  Evaluation  and  Chambers  Communications The  HealthWest  mental-health  eval",
+          "db_source": "evidence_quotes.id=268"
+        },
+        {
+          "date": null,
+          "fact": "Ex Parte Communications) 7.  Order  to obtain  HealthWest  evaluation,  followed  by  chambers-only instructions. o   After  the August  28 hearing,  Judge  McNeill  ordered  me to obtain  a psychological  as",
+          "db_source": "evidence_quotes.id=387"
+        }
+      ]
+    },
+    {
+      "category": "POLICE REPORT EVIDENCE (NS2505044)",
+      "count": 2,
+      "key_facts": [
+        {
+          "date": "N/A",
+          "fact": "EXHIBIT C – VERBATIM NARRATIVES FROM NORTON SHORES POLICE DEPARTMENT  Andrew J. Pigors v. Emily Watson | 14th Circuit Court Case No. 24-01507-DC  EXHIBIT C — NS2505044 Verbatim Police Narrative  Date of Report: August 7, 2025  Officer: Ella Randall (#47437)  Agency: Norton Shores Police Department  Location: 1143 E Norton Ave, Norton Shores, MI  ---------------------------------------------------------------------------  I was dispatched to the listed location in reference to a harassment report...",
+          "db_source": "d_drive_documents.id=2"
+        },
+        {
+          "date": "N/A",
+          "fact": "Case NS2505044 Printed on October 23, 2025 Status Approved Report Type Patrol Primary Office",
+          "db_source": "d_drive_documents.id=EQ-2065"
+        }
+      ]
+    }
+  ],
+  "affidavit_outline": {
+    "caption": {
+      "court": "14th Circuit Court, Family Division, Muskegon County",
+      "case_no": "2024-001507-DC",
+      "judge": "Hon. Jenny L. McNeill",
+      "plaintiff": "Andrew James Pigors",
+      "defendant": "Emily A. Watson"
+    },
+    "affiant": "Andrew James Pigors",
+    "affiant_address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+    "sections": [
+      {
+        "number": 1,
+        "text": "I, Andrew James Pigors, am the Plaintiff in the above-captioned matter and the biological father of L.D.W.. I reside at 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445."
+      },
+      {
+        "number": 2,
+        "text": "I bring this emergency motion because L.D.W. faces immediate risk of harm. The record contains 12 aggression incidents, 37 medical events, and 51 interference incidents documented in the evidence below."
+      },
+      {
+        "number": 3,
+        "text": "On or about October 20, 2024, , during a parenting exchange, Emily’s father, Albert Watson, forcibly removed LDW from my arms and acted aggressively, creating a hostile environment. (Source: d_drive_events.id=7)"
+      },
+      {
+        "number": 4,
+        "text": "On or about October 20, 2024, Albert Watson served a PPO violation during an exchange, mocking me and creating unnecessary tension. This misuse of legal processes is designed to intimidate and alienate. (Source: d_drive_events.id=24)"
+      },
+      {
+        "number": 5,
+        "text": "On or about October 20, 2024, Albert forcibly removed LDW from my arms during an exchange, throwing a PPO violation into my vehicle and mocking me. (Source: d_drive_events.id=25)"
+      },
+      {
+        "number": 6,
+        "text": "On or about October 20, 2024, Albert Watson accosts Andrew during a parenting exchange, taking Lincoln from his arms. (Source: d_drive_events.id=36)"
+      },
+      {
+        "number": 7,
+        "text": "On or about June 15, 2024, Andrew reports Lincoln’s rash worsening, but Emily dismisses medical concerns again. (Source: d_drive_events.id=56)"
+      },
+      {
+        "number": 8,
+        "text": "On or about June 15, 2024, , LDW returned to me with severe rashes that Emily had failed to address, leaving me to manage his medical care and comfort. (Source: d_drive_events.id=118)"
+      },
+      {
+        "number": 9,
+        "text": "On or about June 15, 2024, : LDW returned from Emily’s care with severe rashes on his body. Despite Andrew’s suggestion for medical attention, Emily dismissed the concern and failed to seek proper treatment. (Source: d_drive_events.id=206)"
+      },
+      {
+        "number": 10,
+        "text": "On or about May 15, 2024, Without consulting me, Emily made unilateral decisions regarding LDW’s vaccinations, only informing me afterward. (Source: d_drive_events.id=3)"
+      },
+      {
+        "number": 11,
+        "text": "On or about July 9, 2024, , Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests. (Source: d_drive_events.id=184)"
+      },
+      {
+        "number": 12,
+        "text": "On or about June 1, 2024, Emily refused a weekly video call schedule, citing discomfort without proposing alternatives. (Source: d_drive_events.id=8)"
+      },
+      {
+        "number": 13,
+        "text": "On or about June 1, 2024, , and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn’t want to talk.\" These refusals create a gap in our relationship and prevent LDW from maintaining the continuity of our bond during her parenting weeks. (Source: d_drive_events.id=127)"
+      },
+      {
+        "number": 14,
+        "text": "On or about June 1, 2024, , and September 12, 2024, Emily refused to allow scheduled video calls, claiming LDW “doesn’t want to talk.” These actions disrupt LDW’s sense of connection and emotional stability. (Source: d_drive_events.id=133)"
+      },
+      {
+        "number": 15,
+        "text": "On or about None, hearing,  Judge  McNeill  ordered  me to obtain  a psychological  assessment  from  HealtliWest. o   The  judge's  secretary  then  emailed  me, instructing  that  the completed HealthWest  evaluation  shoul (Source: evidence_quotes.id=66)"
+      },
+      {
+        "number": 16,
+        "text": "On or about None, Hearing *   Transcripts  from  the  PPO  contempt  hearing  in  which  I was  jailed  (Show  Cause #4). Appendix  H  -  HealthWest  Evaluation  and  Chambers  Communications The  HealthWest  mental-health  e (Source: evidence_quotes.id=83)"
+      },
+      {
+        "number": 17,
+        "text": "On or about None, hearing,  Judge  McNeill  ordered  me  to obtain  a psychological  assessment  from  HealtliWest. o   The  judge's  secretary  then  emailed  me,  instructing  that  the  completed HealthWest  evaluation  sh (Source: evidence_quotes.id=257)"
+      },
+      {
+        "number": 18,
+        "text": "On or about None, Hearing *   Transcripts  from  the PPO  contempt  hearing  in which  I was  jailed  (Show  Cause #4). Appendix  H -  HealthWest  Evaluation  and  Chambers  Communications The  HealthWest  mental-health  eval (Source: evidence_quotes.id=268)"
+      },
+      {
+        "number": 19,
+        "text": "On or about N/A, EXHIBIT C – VERBATIM NARRATIVES FROM NORTON SHORES POLICE DEPARTMENT  Andrew J. Pigors v. Emily Watson | 14th Circuit Court Case No. 24-01507-DC  EXHIBIT C — NS2505044 Verbatim Police Narrative  Date of Report: August 7, 2025  Officer: Ella Randall (#47437)  Agency: Norton Shores Police Department   (Source: d_drive_documents.id=2)"
+      },
+      {
+        "number": 20,
+        "text": "On or about N/A, Case NS2505044 Printed on October 23, 2025 Status Approved Report Type Patrol Primary Office (Source: d_drive_documents.id=EQ-2065)"
+      },
+      {
+        "number": 21,
+        "text": "Based on the foregoing facts, L.D.W.'s present environment poses an immediate risk of physical, mental, or emotional harm. Emergency relief is necessary to protect L.D.W.'s welfare."
+      }
+    ]
+  },
+  "albert_watson_evidence": [
+    {
+      "id": 7,
+      "date": "October 20, 2024",
+      "description": ", during a parenting exchange, Emily’s father, Albert Watson, forcibly removed LDW from my arms and acted aggressively, creating a hostile environment.",
+      "actors": "Emily Watson,Albert Watson",
+      "category": "AGGRESSION",
+      "severity": 3
+    },
+    {
+      "id": 24,
+      "date": "October 20, 2024",
+      "description": "Albert Watson served a PPO violation during an exchange, mocking me and creating unnecessary tension. This misuse of legal processes is designed to intimidate and alienate.",
+      "actors": "Albert Watson",
+      "category": "PPO_ABUSE",
+      "severity": 3
+    },
+    {
+      "id": 25,
+      "date": "October 20, 2024",
+      "description": "Albert forcibly removed LDW from my arms during an exchange, throwing a PPO violation into my vehicle and mocking me.",
+      "actors": "Albert Watson",
+      "category": "PPO_ABUSE",
+      "severity": 3
+    },
+    {
+      "id": 36,
+      "date": "October 20, 2024",
+      "description": "Albert Watson accosts Andrew during a parenting exchange, taking Lincoln from his arms.",
+      "actors": "Albert Watson",
+      "category": "GENERAL",
+      "severity": 3
+    },
+    {
+      "id": 124,
+      "date": "October 20, 2024",
+      "description": ", her father, Albert Watson, forcibly removed LDW from my arms during a parenting exchange, creating a hostile and emotionally distressing environment for LDW.",
+      "actors": "Albert Watson",
+      "category": "AGGRESSION",
+      "severity": 3
+    },
+    {
+      "id": 126,
+      "date": "October 20, 2024",
+      "description": ", LDW witnessed Albert Watson forcibly remove him from my arms during a parenting exchange while yelling and creating a hostile environment. This traumatic incident not only destabilized LDW but also created a lasting impression of conflict during what should be peaceful transitions.",
+      "actors": "Albert Watson",
+      "category": "GENERAL",
+      "severity": 3
+    },
+    {
+      "id": 132,
+      "date": "October 20, 2024",
+      "description": ", during a parenting exchange, Emily allowed her father, Albert Watson, to forcibly remove LDW from my arms in a hostile manner. This aggressive behavior in LDW’s presence created a traumatic experience for him.",
+      "actors": "Emily Watson,Albert Watson",
+      "category": "AGGRESSION",
+      "severity": 3
+    },
+    {
+      "id": 135,
+      "date": "October 20, 2024",
+      "description": ", Albert Watson forcibly removed LDW from my arms during an exchange, shouting and throwing a PPO violation into my vehicle. This hostile behavior exposed LDW to unnecessary emotional trauma.",
+      "actors": "Albert Watson",
+      "category": "PPO_ABUSE",
+      "severity": 3
+    },
+    {
+      "id": 146,
+      "date": "October 20, 2024",
+      "description": ", where her father, Albert Watson, served a PPO violation during a parenting exchange in an aggressive and mocking manner.",
+      "actors": "Albert Watson",
+      "category": "PPO_ABUSE",
+      "severity": 3
+    },
+    {
+      "id": 180,
+      "date": "October 20, 2024",
+      "description": ", Albert forcibly removed LDW from my arms during a parenting exchange, throwing a PPO violation into my car and mocking me in front of LDW.",
+      "actors": "Albert Watson",
+      "category": "PPO_ABUSE",
+      "severity": 3
+    },
+    {
+      "id": 186,
+      "date": "October 20, 2024",
+      "description": ", Albert Watson served a PPO violation during an exchange, an action clearly intended to intimidate me rather than protect LDW.",
+      "actors": "Albert Watson",
+      "category": "PPO_ABUSE",
+      "severity": 3
+    },
+    {
+      "id": 189,
+      "date": "October 20, 2024",
+      "description": ", during a parenting exchange, LDW clung to me tightly, crying and visibly upset as Emily and her father, Albert Watson, created a hostile and aggressive atmosphere. This behavior demonstrates LDW’s fear and discomfort during these exchanges, which are supposed to be neutral and calm.",
+      "actors": "Emily Watson,Albert Watson",
+      "category": "PPO_ABUSE",
+      "severity": 3
+    },
+    {
+      "id": 191,
+      "date": "October 20, 2024",
+      "description": ", Albert forcibly removed LDW from my arms, an incident that visibly distressed LDW, who cried uncontrollably during the encounter. Exposure to such aggression contributes to emotional instability and fear.",
+      "actors": "Albert Watson",
+      "category": "AGGRESSION",
+      "severity": 3
+    },
+    {
+      "id": 201,
+      "date": "October 20, 2024",
+      "description": ", Albert Watson forcibly removed LDW from my arms, yelling and mocking me in front of him. LDW cried uncontrollably during the incident, visibly distressed by the hostility.",
+      "actors": "Albert Watson",
+      "category": "AGGRESSION",
+      "severity": 3
+    },
+    {
+      "id": 212,
+      "date": "October 20, 2024",
+      "description": ": Albert Watson forcibly removed LDW from Andrew’s arms during an exchange, exposing LDW to aggressive and hostile behavior. Emily failed to intervene or protect LDW from this confrontation.",
+      "actors": "Emily Watson,Albert Watson",
+      "category": "AGGRESSION",
+      "severity": 3
+    }
+  ],
+  "healthwest_evidence": [
+    {
+      "id": 66,
+      "text": "hearing,  Judge  McNeill  ordered  me to obtain  a psychological  assessment  from  HealtliWest. o   The  judge's  secretary  then  emailed  me, instructing  that  the completed HealthWest  evaluation  shoul",
+      "speaker": "COURT",
+      "date": null,
+      "significance": null,
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 83,
+      "text": "Hearing *   Transcripts  from  the  PPO  contempt  hearing  in  which  I was  jailed  (Show  Cause #4). Appendix  H  -  HealthWest  Evaluation  and  Chambers  Communications The  HealthWest  mental-health  e",
+      "speaker": null,
+      "date": null,
+      "significance": null,
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 257,
+      "text": "hearing,  Judge  McNeill  ordered  me  to obtain  a psychological  assessment  from  HealtliWest. o   The  judge's  secretary  then  emailed  me,  instructing  that  the  completed HealthWest  evaluation  sh",
+      "speaker": "COURT",
+      "date": null,
+      "significance": null,
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 268,
+      "text": "Hearing *   Transcripts  from  the PPO  contempt  hearing  in which  I was  jailed  (Show  Cause #4). Appendix  H -  HealthWest  Evaluation  and  Chambers  Communications The  HealthWest  mental-health  eval",
+      "speaker": null,
+      "date": null,
+      "significance": null,
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 387,
+      "text": "Ex Parte Communications) 7.  Order  to obtain  HealthWest  evaluation,  followed  by  chambers-only instructions. o   After  the August  28 hearing,  Judge  McNeill  ordered  me to obtain  a psychological  as",
+      "speaker": "COURT",
+      "date": null,
+      "significance": "DUE_PROCESS_VIOLATION",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 405,
+      "text": "ex parte  parenting-time  suspensions; o   Her  ex parte  handling  of  critical  evidence,  including  the  HealthWest evaluation  and  USB  recording; o   Her  differential  treatment  of  my  evidence  ver",
+      "speaker": null,
+      "date": null,
+      "significance": "DUE_PROCESS_VIOLATION",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 3633,
+      "text": "-ou  were working at HealthWest as a clinician on September 4, 2025, when you saw men., t6rrect?'f Target answer: ffl",
+      "speaker": null,
+      "date": "September 4, 2025",
+      "significance": "Extracted DATE: September 4, 2025",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 3979,
+      "text": "nal contempt|jail MEEK4=bias|recusal|disqual|bond/$250|sanction|JTC|HealthWest eval reliance MEEK1=housi",
+      "speaker": null,
+      "date": null,
+      "significance": "Extracted AMOUNT: $250",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 4352,
+      "text": "the suspension  (around  September  9, 2025  and October  8, 2025),  including  any  references  to the HealthWest",
+      "speaker": null,
+      "date": "October  8, 2025",
+      "significance": "Extracted DATE: October  8, 2025",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 7420,
+      "text": "ess Incident 26: HealthWest Evaluation Completed (September 15, 2025) • Date: September 15, 2025 • Case: 2024-1507-DC",
+      "speaker": null,
+      "date": "September 15, 2025",
+      "significance": "Extracted DATE: September 15, 2025",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 7422,
+      "text": "Incident 27: Court Ignores HealthWest Evaluation (September 20, 2025) • Date: September 20, 2025 • Case: 2024-1507-DC",
+      "speaker": null,
+      "date": "September 20, 2025",
+      "significance": "Extracted DATE: September 20, 2025",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 7800,
+      "text": "picture of HealthWest mental-health evaluation on September 5, 2025 | EA_013b0a313d | mass iveeee.zip/Response to sho",
+      "speaker": null,
+      "date": "September 5, 2025",
+      "significance": "Extracted DATE: September 5, 2025",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 7827,
+      "text": "ictu re of HealthWest mental-health evaluation on September 5, 2025 | EA_013b0a313d | massiveeee.zip/Response to show",
+      "speaker": null,
+      "date": "September 5, 2025",
+      "significance": "Extracted DATE: September 5, 2025",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 7868,
+      "text": "picture of HealthWest mental-health evaluation on September 5, 2025 | EA_013b0a313d | massiveeee.zip/Response to show",
+      "speaker": null,
+      "date": "September 5, 2025",
+      "significance": "Extracted DATE: September 5, 2025",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 7881,
+      "text": "squalify\",\"recuse\",\"MCR 2.003\",\"bond\",\"sanction\",\"$250\",\"ex parte\",\"suspend parenting time\",\"HealthWest\"",
+      "speaker": null,
+      "date": null,
+      "significance": "Extracted AMOUNT: $250",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 7935,
+      "text": "picture of HealthWest mental-health evaluation on September 5, 2025 | EA_013b0a313d | massiveeee.zip/Response to  sho",
+      "speaker": null,
+      "date": "September 5, 2025",
+      "significance": "Extracted DATE: September 5, 2025",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 7948,
+      "text": "squalify\",\"recuse\",\"MCR 2.003\",\"bond\",\"sanction\",\"$250\",\"ex parte\",\"suspend parenting  time\",\"HealthWest",
+      "speaker": null,
+      "date": null,
+      "significance": "Extracted AMOUNT: $250",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 9144,
+      "text": "the  suspension  (around  September  9, 2025  and October  8, 2025),  including  any  references  to the  HealthWest",
+      "speaker": null,
+      "date": "October\n 8, 2025",
+      "significance": "Extracted DATE: October\n 8, 2025",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 11640,
+      "text": "QUALIFY|EX_PARTE|HEALTHWEST|dates=DATE_MONTH_DY_Y:August  28, 2025|snip=28, 2025 - Interim hearing; refusal to view",
+      "speaker": null,
+      "date": "August\n 28, 2025",
+      "significance": "Extracted DATE: August\n 28, 2025",
+      "source_type": "PDF_COURT_DOC"
+    },
+    {
+      "id": 11643,
+      "text": "E|HEALTHWEST|PARENTING_TIME|dates=DATE_MONTH_DY_Y:October  29, 2025|snip=o In early August 2025, Judge McNeill signed",
+      "speaker": null,
+      "date": "October\n 29, 2025",
+      "significance": "Extracted DATE: October\n 29, 2025",
+      "source_type": "PDF_COURT_DOC"
+    }
+  ],
+  "medical_evidence": [
+    {
+      "id": 56,
+      "date": "June 15, 2024",
+      "description": "Andrew reports Lincoln’s rash worsening, but Emily dismisses medical concerns again.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 118,
+      "date": "June 15, 2024",
+      "description": ", LDW returned to me with severe rashes that Emily had failed to address, leaving me to manage his medical care and comfort.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 206,
+      "date": "June 15, 2024",
+      "description": ": LDW returned from Emily’s care with severe rashes on his body. Despite Andrew’s suggestion for medical attention, Emily dismissed the concern and failed to seek proper treatment.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 3,
+      "date": "May 15, 2024",
+      "description": "Without consulting me, Emily made unilateral decisions regarding LDW’s vaccinations, only informing me afterward.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 64,
+      "date": "May 15, 2024",
+      "description": "Emily vaccinates Lincoln without consulting Andrew.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 131,
+      "date": "May 15, 2024",
+      "description": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demonstrates her disregard for collaborative decision-making regarding LDW’s health.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 207,
+      "date": "May 19, 2024",
+      "description": ": Andrew noticed a rash on LDW and suggested testing for a peanut allergy. Emily dismissed this suggestion, attributing the rash to vaccinations without seeking medical advice or further investigation.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 13,
+      "date": "May 28, 2024",
+      "description": "Emily provided only partial medical records despite a court order requiring full disclosure. Her failure to cooperate hindered my ability to make informed decisions about LDW’s health, violating MCL 722.23(c), which requires both parents to demonstrate the capacity to provide for the child’s medical",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 60,
+      "date": "May 30, 2024",
+      "description": "Emily responds minimally to Andrew's inquiries about Lincoln's health updates.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 21,
+      "date": "November 19, 2024",
+      "description": ", LDW received multiple vaccinations without my prior knowledge or consultation, violating my parental rights and undermining the principles of co-parenting.",
+      "actors": "",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 119,
+      "date": "November 19, 2024",
+      "description": ", she vaccinated LDW without consulting me or informing me beforehand, violating the principles of co-parenting and my parental rights.",
+      "actors": "",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 200,
+      "date": "November 19, 2024",
+      "description": ", I discovered that LDW had received multiple vaccinations without my prior knowledge. This exclusion from decision-making not only undermines my role as a parent but also impacts LDW’s sense of emotional security.",
+      "actors": "",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 208,
+      "date": "November 19, 2024",
+      "description": ": Emily vaccinated LDW without informing Andrew beforehand or consulting him, violating his parental rights and disregarding co-parenting responsibilities.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 215,
+      "date": "November 19, 2024",
+      "description": ", Emily failed to inform Andrew about LDW’s vaccinations in advance, excluding him from important medical decisions.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 116,
+      "date": "October 3, 2024",
+      "description": ", Emily failed to notify me about LDW’s illness (hand, foot, and mouth disease) until just hours before the exchange, leaving me unprepared to manage his care properly. This negligence compromised LDW’s well-being and placed unnecessary stress on me to scramble for medical solutions.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 6,
+      "date": "October 4, 2024",
+      "description": ", LDW arrived at my care with hand, foot, and mouth disease, and Emily delayed informing me, providing no details about prior medical consultations.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 22,
+      "date": "October 4, 2024",
+      "description": "LDW arrived with a large, unexplained bruise on his leg. Emily dismissed concerns without providing a credible explanation.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 44,
+      "date": "October 4, 2024",
+      "description": "Emily refuses medical follow-up for Lincoln’s illness despite Andrew’s insistence.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 117,
+      "date": "October 4, 2024",
+      "description": ", LDW arrived at an exchange with a large unexplained bruise on his leg. When I raised concerns, Emily dismissed them without providing any credible explanation. This pattern of ignoring injuries raises serious questions about her supervision and attentiveness.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    },
+    {
+      "id": 130,
+      "date": "October 4, 2024",
+      "description": ", LDW arrived with a large, unexplained bruise on his leg. When asked for an explanation, Emily gave vague responses, refusing to acknowledge the need for follow-up care.",
+      "actors": "Emily Watson",
+      "category": "MEDICAL",
+      "severity": 3
+    }
+  ],
+  "interference_evidence": [
+    {
+      "id": 184,
+      "date": "July 9, 2024",
+      "description": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 8,
+      "date": "June 1, 2024",
+      "description": "Emily refused a weekly video call schedule, citing discomfort without proposing alternatives.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 127,
+      "date": "June 1, 2024",
+      "description": ", and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn’t want to talk.\" These refusals create a gap in our relationship and prevent LDW from maintaining the continuity of our bond during her parenting weeks.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 133,
+      "date": "June 1, 2024",
+      "description": ", and September 12, 2024, Emily refused to allow scheduled video calls, claiming LDW “doesn’t want to talk.” These actions disrupt LDW’s sense of connection and emotional stability.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 187,
+      "date": "June 1, 2024",
+      "description": ", I requested a weekly video chat during off-weeks to maintain LDW’s sense of connection and security. Emily refused without offering an alternative.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 199,
+      "date": "June 1, 2024",
+      "description": ", Emily denied a scheduled video call, citing that LDW “didn’t want to talk.” However, LDW later expressed excitement when he saw me in person, contradicting Emily’s claim and highlighting her alienating behavior.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 129,
+      "date": "June 15, 2024",
+      "description": ", LDW returned from Emily’s care with severe rashes on his face and body. Despite my repeated inquiries, Emily dismissed the condition as \"minor\" and refused to seek medical advice.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 69,
+      "date": "March 26, 2024",
+      "description": "- May 2, 2024: Emily withholds Lincoln for 37 days, citing unfounded claims about safety.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 4,
+      "date": "May 2, 2024",
+      "description": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Spring Break.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 19,
+      "date": "May 2, 2024",
+      "description": "Emily withheld LDW for 37 consecutive days without justification, depriving me of meaningful interaction and disrupting our bond.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 68,
+      "date": "May 2, 2024",
+      "description": "Court orders Emily to return Lincoln to Andrew after a month-long withholding.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 121,
+      "date": "May 2, 2024",
+      "description": ", she withheld LDW for 37 consecutive days, depriving me of essential bonding time and causing emotional harm to LDW.",
+      "actors": "",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 137,
+      "date": "May 2, 2024",
+      "description": ", Emily withheld LDW for 37 consecutive days, disrupting our bond and creating emotional distress for LDW.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 177,
+      "date": "May 2, 2024",
+      "description": ", Emily withheld LDW for 37 consecutive days, ignoring the court-ordered parenting schedule.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 61,
+      "date": "May 28, 2024",
+      "description": "Emily withholds full pediatric records after Andrew requests them per the court order.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 5,
+      "date": "November 12, 2024",
+      "description": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 20,
+      "date": "November 12, 2024",
+      "description": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 178,
+      "date": "November 12, 2024",
+      "description": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 196,
+      "date": "November 12, 2024",
+      "description": ", Emily withheld LDW without providing updates, causing unnecessary confusion and anxiety for him. Upon his return, LDW appeared disoriented and took several days to readjust to his normal routine.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    },
+    {
+      "id": 29,
+      "date": "November 15, 2024",
+      "description": "Emily’s withholding of Lincoln ends after 25 consecutive days.",
+      "actors": "Emily Watson",
+      "category": "INTERFERENCE",
+      "severity": 3
+    }
+  ],
+  "police_narratives": [
+    {
+      "id": 2,
+      "file_name": "AFFIDAVIT_APPENDIX_EXHIBIT_C_VERBATIM_POLICE_NARRATIVES_v2(1).docx",
+      "content": "EXHIBIT C – VERBATIM NARRATIVES FROM NORTON SHORES POLICE DEPARTMENT  Andrew J. Pigors v. Emily Watson | 14th Circuit Court Case No. 24-01507-DC  EXHIBIT C — NS2505044 Verbatim Police Narrative  Date of Report: August 7, 2025  Officer: Ella Randall (#47437)  Agency: Norton Shores Police Department  Location: 1143 E Norton Ave, Norton Shores, MI  ---------------------------------------------------------------------------  I was dispatched to the listed location in reference to a harassment report...",
+      "doc_type": "POLICE_NARRATIVES"
+    },
+    {
+      "id": "EQ-2065",
+      "file_name": "evidence_quotes",
+      "content": "Case NS2505044 Printed on October 23, 2025 Status Approved Report Type Patrol Primary Office",
+      "doc_type": "PDF_COURT_DOC"
+    }
+  ],
+  "related_claims": [
+    {
+      "claim_id": "Cbbce0bf1071c",
+      "issue_id": "ISSUE_PARENTING_TIME",
+      "classification": "parenting_time_evidence",
+      "proposition": "ing Parenting Time: Withheld LDW from March 26 to May 2, 2024, for 37 consecutive days without legal justificat",
+      "evidence_targets": "[\"evidence_quotes\", \"id:148497\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C16f855b9f7b7",
+      "issue_id": "ISSUE_PARENTING_TIME",
+      "classification": "parenting_time_evidence",
+      "proposition": "s to maintain emotional continuity for LDW (e.g., June 1, 2024). Maximizing Parenting Time: Made every effort to",
+      "evidence_targets": "[\"evidence_quotes\", \"id:211465\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C7a7da9935c26",
+      "issue_id": "ISSUE_PARENTING_TIME",
+      "classification": "parenting_time_evidence",
+      "proposition": ", Parenting Time, and Support + Request to  Waive $250 Fee`\\n\\n**Output Stack:**\\n- \\ud83e\\udde0 Trigger",
+      "evidence_targets": "[\"evidence_quotes\", \"id:64118\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "Cebe9a76a0b0a",
+      "issue_id": "ISSUE_PARENTING_TIME",
+      "classification": "parenting_time_evidence",
+      "proposition": "urt-ordered parenting time, including: March 26 – May 2, 2024 (37 consecutive days) October 20 – November 12, 2",
+      "evidence_targets": "[\"evidence_quotes\", \"id:211376\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C786cf816e677",
+      "issue_id": "ISSUE_PARENTING_TIME",
+      "classification": "parenting_time_evidence",
+      "proposition": "g LDW During Parenting Time Misbehavior: March 26–May 2, 2024: Emily withheld LDW for over 37 days without a co",
+      "evidence_targets": "[\"evidence_quotes\", \"id:70026\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C18c195e17431",
+      "issue_id": "ISSUE_CUSTODY",
+      "classification": "custody_evidence",
+      "proposition": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu",
+      "evidence_targets": "[\"evidence_quotes\", \"id:121265\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "Cf57de72b1e96",
+      "issue_id": "ISSUE_CUSTODY",
+      "classification": "custody_evidence",
+      "proposition": "n| 4 | **Suppressed evidence at custody trial** | July 17, 2024 | MCR 2.401, MCR 2.507(G),  Canon 3(B)(7) | Tier",
+      "evidence_targets": "[\"evidence_quotes\", \"id:4164\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "Cfe21d80b84b3",
+      "issue_id": "ISSUE_PARENTING_TIME",
+      "classification": "parenting_time_evidence",
+      "proposition": "verlapping Halloween and Andrew’s parenting time. October 15, 2024: Andrew raises concerns about Lincoln arriving wi",
+      "evidence_targets": "[\"evidence_quotes\", \"id:111766\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "Ce9d02afdb971",
+      "issue_id": "ISSUE_CUSTODY",
+      "classification": "custody_evidence",
+      "proposition": "ct that either the September 9, 2020 order or the October 5, 2020 order  is a “custody order” as contemplated in MC",
+      "evidence_targets": "[\"evidence_quotes\", \"id:293981\", \"unclassified\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C080509ef055b",
+      "issue_id": "ISSUE_PARENTING_TIME",
+      "classification": "parenting_time_evidence",
+      "proposition": "with LDW and disrupt parenting time. Example: On October 20, 2024, Albert Watson served a PPO violation during an e",
+      "evidence_targets": "[\"evidence_quotes\", \"id:131216\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C0837e36215b1",
+      "issue_id": "ISSUE_PARENTING_TIME",
+      "classification": "parenting_time_evidence",
+      "proposition": "acknowledged parenting time suspended by order on October 3, 2025 | EA_4fe3a6a54b | massiveeee. zip/Response to sho",
+      "evidence_targets": "[\"evidence_quotes\", \"id:104897\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C4b9802ff3293",
+      "issue_id": "ISSUE_PARENTING_TIME",
+      "classification": "parenting_time_evidence",
+      "proposition": "LDW’s doctor’s appointment or his vaccinations on November 19, 2024. 3. Withholding Parenting Time Emily’s pattern of",
+      "evidence_targets": "[\"evidence_quotes\", \"id:88130\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C861e9021947c",
+      "issue_id": "ISSUE_PARENTING_TIME",
+      "classification": "parenting_time_evidence",
+      "proposition": "f shall next exercise parenting time from Friday, August 9, 2024, at 5:30 p.m.  until Tuesday, August 13, 2024, at",
+      "evidence_targets": "[\"evidence_quotes\", \"id:83894\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C918041dd2727",
+      "issue_id": "ISSUE_CUSTODY",
+      "classification": "custody_evidence",
+      "proposition": "was Denied.   Ordcr  entered  on April  12, 2024. April  11, 2024: Plaintiff  filed  a Motion  regarding  Custody.",
+      "evidence_targets": "[\"evidence_quotes\", \"id:234647\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C765d1efa7345",
+      "issue_id": "ISSUE_CUSTODY",
+      "classification": "custody_evidence",
+      "proposition": "Legal  Custody. Order  after  FIG  was prepared. April  29, 2024: Ex Parte  Order  following  Facilitative  Inform",
+      "evidence_targets": "[\"evidence_quotes\", \"id:107215\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "Cff8784bd4abc",
+      "issue_id": "ISSUE_PARENTING_TIME",
+      "classification": "parenting_time_evidence",
+      "proposition": "’s parenting time without arranging make-up days. September 3, 2024: Emily informs Andrew of vacation plans without p",
+      "evidence_targets": "[\"evidence_quotes\", \"id:266690\", \"evidence\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "Cb7157d6af7fd",
+      "issue_id": "ISSUE_EX_PARTE",
+      "classification": "ex_parte_evidence",
+      "proposition": "the ex parte  suspension  has functioned  since  August  8, 2025. 1. Chronological  withholding  pattern First,  t",
+      "evidence_targets": "[\"evidence_quotes\", \"id:234321\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "C0948f9db9100",
+      "issue_id": "ISSUE_EX_PARTE",
+      "classification": "ex_parte_evidence",
+      "proposition": "tify  ending  my  relationship  with  him. 7. On  August  7, 2025,  an ex parte  motion  was filed.  On  or about",
+      "evidence_targets": "[\"evidence_quotes\", \"id:109069\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "Cc4d7dcd69a57",
+      "issue_id": "ISSUE_CUSTODY",
+      "classification": "custody_evidence",
+      "proposition": "001507-DC Recommendation  dated  3/26/25 PAGE  12 August  23,  2024: Final  Order  entered  regarding  Custody  &  Pa",
+      "evidence_targets": "[\"evidence_quotes\", \"id:106994\", \"discovery\"]",
+      "status": "supported"
+    },
+    {
+      "claim_id": "Cc81d883dc16c",
+      "issue_id": "ISSUE_PARENTING_TIME",
+      "classification": "parenting_time_evidence",
+      "proposition": "isregarded\\n  - Parenting time denied Mar 26\\u2013May  5, 2024 (evidenced)\\n  - $250 filing barrier after 16-pag",
+      "evidence_targets": "[\"evidence_quotes\", \"id:165734\", \"discovery\"]",
+      "status": "supported"
+    }
+  ]
+}

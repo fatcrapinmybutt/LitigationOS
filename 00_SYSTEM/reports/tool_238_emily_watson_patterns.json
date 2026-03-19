@@ -1,0 +1,48 @@
+{
+  "tool": 238,
+  "name": "Emily Watson Pattern Analyzer",
+  "generated": "2026-03-19T09:24:39.970924",
+  "total_evidence": 315,
+  "pattern_counts": {
+    "interference": 51,
+    "medical": 37,
+    "ppo_abuse": 23,
+    "fraud": 3,
+    "evidence_quotes": 110,
+    "professional_abuse": 48,
+    "credibility": 13,
+    "alienation": 30
+  },
+  "categories": {
+    "factor_a_love_affection": {
+      "description": "Love, affection, emotional ties \u2014 Emily blocks all emotional connection",
+      "evidence_count": 30,
+      "pattern": "Denied video calls, refused updates, blocked holiday contact"
+    },
+    "factor_c_moral_fitness": {
+      "description": "Moral fitness \u2014 perjury, fabrication, conspiracy",
+      "evidence_count": 16,
+      "pattern": "Fabricated cocaine straw, false PPO allegations, perjured testimony"
+    },
+    "factor_d_mental_health": {
+      "description": "Mental/physical health \u2014 weaponized evaluations against Andrew",
+      "evidence_count": 37,
+      "pattern": "Withheld medical info, unilateral vaccinations, weaponized HealthWest"
+    },
+    "factor_j_facilitate_relationship": {
+      "description": "Willingness to facilitate relationship \u2014 Emily scores ZERO",
+      "evidence_count": 51,
+      "pattern": "37-day withholding, 23-day withholding, blocked exchanges, alienation"
+    },
+    "factor_k_domestic_violence": {
+      "description": "Domestic violence \u2014 false allegations, Albert Watson aggression",
+      "evidence_count": 23,
+      "pattern": "Fabricated PPO, manufactured police reports, Albert physical aggression"
+    },
+    "professional_misconduct": {
+      "description": "Misuse of Kent County caseworker position",
+      "evidence_count": 48,
+      "pattern": "Used insider knowledge to manipulate court system, access private records"
+    }
+  }
+}

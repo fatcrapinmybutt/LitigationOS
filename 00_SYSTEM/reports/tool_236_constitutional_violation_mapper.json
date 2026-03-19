@@ -1,0 +1,1987 @@
+{
+  "tool": "#236 — Constitutional Violation Mapper",
+  "generated": "2026-03-19T09:34:31.428728",
+  "case": "Pigors v. Watson (2024-001507-DC)",
+  "summary": {
+    "constitutional_violations_table": 11,
+    "rights_tracker_entries": 6,
+    "brief_sections": 6,
+    "judicial_violations_constitutional": 378,
+    "constitutional_claims": 81,
+    "authority_chains": 28,
+    "evidence_quotes_constitutional": 100
+  },
+  "per_amendment_analysis": {
+    "1st_Amendment": {
+      "name": "First Amendment — Right to Petition / Retaliation",
+      "test": "Thaddeus-X v. Blatter, 175 F.3d 378 (6th Cir. 1999) — three-part test: (1) protected conduct, (2) adverse action, (3) causal connection",
+      "total_count": 6906,
+      "max_severity": 4,
+      "direct_violations_count": 2,
+      "judicial_violations_count": 35,
+      "claims_count": 4,
+      "evidence_quotes_count": 26,
+      "direct_violations": [
+        {
+          "id": 20,
+          "amendment": "1st Amendment",
+          "clause": "Freedom of Speech / Petition",
+          "violation_type": "RETALIATION_FOR_FILINGS",
+          "description": "Escalating sanctions and adverse orders in apparent retaliation for filing complaints (JTC, bar complaint, appellate filings) — chilling effect on right to petition",
+          "incident_date": "2025-10-01",
+          "actors": "Judge McNeill",
+          "evidence_ref": "Timing analysis: adverse orders following complaint filings",
+          "caselaw": "BE&K Construction Co. v. NLRB, 536 U.S. 516 (2002) — First Amendment protects litigation activity; Borough of Duryea v. Guarnieri, 564 U.S. 379 (2011) — Petition Clause",
+          "michigan_authority": "Const 1963, art 1, §§ 3, 5 — Michigan free speech and petition rights",
+          "damages": "PUNITIVE",
+          "filing_target": "USDC §1983; COA Brief",
+          "severity": "HIGH"
+        },
+        {
+          "id": 21,
+          "amendment": "4th Amendment",
+          "clause": "Unreasonable Search/Seizure",
+          "violation_type": "WARRANTLESS_SEIZURE_OF_PERSON",
+          "description": "59+ days incarceration constitutes seizure of person without probable cause for criminal conduct — civil contempt used as criminal punishment",
+          "incident_date": "2025-01-01",
+          "actors": "Judge McNeill; Muskegon County",
+          "evidence_ref": "Jail records; contempt orders; absence of criminal charges",
+          "caselaw": "Albright v. Oliver, 510 U.S. 266 (1994) — Fourth Amendment seizure; County of Sacramento v. Lewis, 523 U.S. 833 (1998)",
+          "michigan_authority": "Const 1963, art 1, § 11 — Michigan protection against unreasonable seizure",
+          "damages": "WRONGFUL_INCARCERATION",
+          "filing_target": "USDC §1983",
+          "severity": "HIGH"
+        }
+      ],
+      "judicial_violations": [
+        {
+          "violation_id": "JV-23b5f18a7fbb",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[COMPLETE_COMMAND_CENTER.md] **1. JTC COMPLAINT** ($0 fee) | 85-90% success: **Location:** `C:\\users\\andre\\LITIGATIONOS_MASTER\\OMNI_HARVEST_20260216_0357\\05_DRAFTS\\JTC\\` - JTC_COMPLAINT_JUDICIAL_GRADE.md ✅ - JTC_VERIFICATION_PAGE.md ⚠️ **NEEDS NOTARY** - JTC_CERTIFICATE_OF_SERVICE.md ✅ - **What it does:** Triggers JTC investigation of Judge McNeill...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-3671d499767e",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[COMPLETE_LITIGATION_COMMAND_CENTER.md] 4.1 Pleadings / Case-Initiating Documents: * Complaint * Verified Complaint (where required or chosen) * Petition (special proceedings) * Application (where the rule/statute uses \"application\") * Ex Parte Petition / Ex Parte Motion (where authorized) * Notice of Hearing / Notice of Presentment (where required...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-edcbc5903ede",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[COMPLETE_LITIGATION_COMMAND_CENTER.md] 7) Personal Protection Orders (PPO) — Special Proceedings: * Petition for Personal Protection Order (PPO) (independent action; petition is not a motion) * Partially-Completed PPO Order Form submitted with petition in e-filing courts * Ex Parte PPO Request (where authorized) * Motion to Modify / Rescind / Term...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-3a7f0e129651",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[JTC_COMPLAINT_EXPANSION_SUMMARY.md] 1. **Chronological Pattern Analysis (Section IV.B)** - ~600 words: - Five-phase timeline of escalating misconduct (Oct 2023 - Feb 2026) - 16-month documented pattern showing:   - Phase 1: Initial Ex Parte Bias   - Phase 2: Consolidation and Due Process Denial   - Phase 3: Retaliation and Sanctions   - Phase 4: E...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-80f27ee44379",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[JTC_COMPLETION_REPORT.md] JTC_COMPLAINT_FINAL.md Structure: ``` I.    Identification of Parties II.   Jurisdiction and Authority III.  Statement of Complaint IV.   Factual Background (7 subsections)       A. Case History       B. Pattern of Ex Parte Orders       C. Denial of Right to Be Heard       D. One-Sided Application of Court Rules       E. ...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-38bc450bd868",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[JTC_EXHIBIT_INDEX.md] A-1: Ex Parte Suspension of Parenting Time (2023-11-12): - **Document:** Ex parte order suspending all Father's parenting time - **Pages:** 3 pages - **Source:** Case 2023-5907-PP, court file - **Relevance:** First ex parte order based solely on unverified petition allegations - **Key Language:** \"Father's parenting time is s...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "14th_Equal_Protection",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-db536680629a",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[JTC_EXHIBIT_INDEX.md] A-2: Ex Parte Custody Schedule Modification (2024-01-08): - **Document:** Ex parte order modifying custody schedule - **Pages:** 2 pages - **Source:** Case 2024-001507-DC, court file - **Relevance:** Custody modified without Father's knowledge or input - **Key Language:** \"The Court modifies the parenting time schedule as fol...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "14th_Equal_Protection"
+          ]
+        },
+        {
+          "violation_id": "JV-959f4c03b92b",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[JTC_EXHIBIT_INDEX.md] A-3: Ex Parte Denial of Parenting Time Motion (2024-04-15): - **Document:** Ex parte order denying Father's motion for parenting time modification - **Pages:** 1 page - **Source:** Case 2024-001507-DC, court file - **Relevance:** Motion denied without hearing Father's position - **Key Language:** \"Motion DENIED\" - **Cited in ...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "14th_Equal_Protection"
+          ]
+        },
+        {
+          "violation_id": "JV-2b5c6899bfbb",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[JTC_EXHIBIT_INDEX.md] I-3: All Orders and Judgments - PPO Case: - **Document:** All court orders issued in PPO case - **Pages:** 47 pages - **Number of Orders:** 23 orders - **Relevance:** Documents pattern of ex parte and one-sided orders - **Already partially described:** See Category A exhibits - **Cited in Complaint:** Throughout",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-c37228762859",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[JTC_EXHIBIT_INDEX.md] I-4: All Orders and Judgments - Custody Case: - **Document:** All court orders issued in custody case - **Pages:** 89 pages - **Number of Orders:** 32 orders - **Relevance:** Documents pattern of ex parte and one-sided orders - **Already partially described:** See Category A exhibits - **Cited in Complaint:** Throughout",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "C9fe856cc9675",
+          "issue_id": "ISSUE_HOUSING_RETALIATION",
+          "classification": "housing_retaliation",
+          "actor": "Andrew Pigors",
+          "proposition": "Retaliatory eviction/action after filing complaints per MCL 600.5720 — eviction followed housing complaints",
+          "evidence_targets": "[\"MCL 600.5720\", \"Complaint records\", \"Eviction timeline\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "C57863264f105",
+          "issue_id": "ISSUE_EVIDENCE_RECORD",
+          "classification": "evidence_factual",
+          "actor": "record",
+          "proposition": "nes  Retaliatory Rent Increase ❌ Jump from $395 → $695 after resisting HOA Potential  violation of MCL 6",
+          "evidence_targets": "[\"evidence_quotes\", \"document_id:12002\", \"discovery\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "Ce44a16d4f1d4",
+          "issue_id": "ISSUE_IMPEACHMENT_EX_PARTE_COMMUNICATION",
+          "classification": "ex_parte_violation",
+          "actor": "opposing_party",
+          "proposition": "T] 3. Petitioner requested an ex parte order, which should  be entered  without  notice  because  irreparable  injury, loss,  or darnage w",
+          "evidence_targets": "[\"MCR 2.003(C)(1)\", \"Contradicting documents\", \"Transcript records\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "C13cc91d742a6",
+          "issue_id": "ISSUE_VIOLATION",
+          "classification": "violation_evidence",
+          "actor": "record",
+          "proposition": "doctrines  Retaliatory Rent Increase ❌ Jump from $395 → $695 after resisting HOA Potential  violation o",
+          "evidence_targets": "[\"evidence_quotes\", \"id:34671\", \"discovery\"]",
+          "status": "active"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "id": 151,
+          "text": "hearing'  4/22/2025 ,ludge'  JENY  !-  MCNEILL P-58235 Bar no 1. Order  entered  after  show-cause  hearing  requested  by petitioner  pursuant  to MCR  3.708(B) THE  COURT  FINDS advised  of his/her  rights",
+          "speaker": "COURT",
+          "date_ref": "4/22/2025",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "id": 2057,
+          "text": "ties • No rational basis for disparity • Damages: $25,000-50,000 Count 4: First Amendment Violation (Freedo",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment"
+          ]
+        },
+        {
+          "id": 3672,
+          "text": "s 1st Amendment right to petition for redress by: $250 \"Sanction Fee\": The trial court imposed a $250 fe",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "id": 7446,
+          "text": "3. 1st Amendment Right to Petition for Redress • $250 fee imposed for filing motions Phase 7: Post- Sus",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "id": 7523,
+          "text": "allow an amendment of the complaint. 15Amended on June 24, 2020, October 22, 2020, December 29, 2020, March 22, 2",
+          "speaker": null,
+          "date_ref": "June 24, 2020",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment"
+          ]
+        },
+        {
+          "id": 33814,
+          "text": "doctrines  Retaliatory Rent Increase ❌ Jump from $395 → $695 after resisting HOA Potential  violation o",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment"
+          ]
+        },
+        {
+          "id": 33815,
+          "text": "nes  Retaliatory Rent Increase ❌ Jump from $395 → $695 after resisting HOA Potential  violation of MCL 6",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment"
+          ]
+        },
+        {
+          "id": 33841,
+          "text": "tly  knows.) Retaliation and Eviction Events: “On January 21, 2025, I was served with a  Notice to Quit for nonpayme",
+          "speaker": null,
+          "date_ref": "January 21, 2025",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment"
+          ]
+        },
+        {
+          "id": 33888,
+          "text": "hs lost access due to PPO/retaliation 180  days × $250/day (loss of ECE) x1 $45,000 7. Filing Suppressio",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment"
+          ]
+        },
+        {
+          "id": 33889,
+          "text": "retaliation 180  days × $250/day (loss of ECE) x1 $45,000 7. Filing Suppression Harm $250 fee block + cost",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment"
+          ]
+        }
+      ]
+    },
+    "4th_Amendment": {
+      "name": "Fourth Amendment — Unreasonable Seizure of Child",
+      "test": "Kovacic v. Cuyahoga County, 724 F.3d 687 (6th Cir. 2013) — removal of child from parent constitutes seizure under 4th Amendment",
+      "total_count": 19013,
+      "max_severity": 5,
+      "direct_violations_count": 8,
+      "judicial_violations_count": 2,
+      "claims_count": 0,
+      "evidence_quotes_count": 8,
+      "direct_violations": [
+        {
+          "id": 12,
+          "amendment": "14th Amendment",
+          "clause": "Due Process — Procedural",
+          "violation_type": "EX_PARTE_WITHOUT_NOTICE",
+          "description": "Parenting time suspended via ex parte order without notice or hearing — 52 ex parte orders total with 44% rate, 100% favoring Emily Watson",
+          "incident_date": "2025-08-08",
+          "actors": "Judge McNeill; Emily Watson; Jennifer Barnes",
+          "evidence_ref": "Ex parte orders; court docket; statistical analysis",
+          "caselaw": "Mathews v. Eldridge, 424 U.S. 319 (1976) — three-factor balancing test for procedural due process; Fuentes v. Shevin, 407 U.S. 67 (1972) — prior notice and hearing required before deprivation",
+          "michigan_authority": "MCR 3.207(A) — requirements for ex parte orders in domestic relations; In re Rood, 483 Mich 73 (2009) — due process in family proceedings",
+          "damages": "WRONGFUL_INCARCERATION; EMOTIONAL_DISTRESS",
+          "filing_target": "USDC §1983; COA Brief",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": 13,
+          "amendment": "14th Amendment",
+          "clause": "Due Process — Procedural",
+          "violation_type": "BIASED_EVALUATION_INTERFERENCE",
+          "description": "Judge McNeill sent biasing letter to HealthWest evaluator after first eval returned ALL ZEROS, resulting in changed \"Rule Out\" finding",
+          "incident_date": "2025-09-01",
+          "actors": "Judge McNeill; HealthWest evaluator",
+          "evidence_ref": "HealthWest eval #1 (all zeros); eval #2 (rule out); judge letter to evaluator",
+          "caselaw": "Ward v. Village of Monroeville, 409 U.S. 57 (1972) — judicial bias violates due process; Caperton v. A.T. Massey Coal Co., 556 U.S. 868 (2009)",
+          "michigan_authority": "MCR 2.003(C)(1) — disqualification for bias; MCJC Canon 2 — appearance of impropriety",
+          "damages": "EMOTIONAL_DISTRESS",
+          "filing_target": "USDC §1983; JTC; COA Brief",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": 14,
+          "amendment": "14th Amendment",
+          "clause": "Due Process — Procedural",
+          "violation_type": "ILLEGALLY_OBTAINED_EVIDENCE",
+          "description": "Ex parte order based on recording made in violation of MCL 750.539c (felony eavesdropping) by Lori Watson — fruit of the poisonous tree",
+          "incident_date": "2025-08-08",
+          "actors": "Lori Watson; Judge McNeill; Emily Watson",
+          "evidence_ref": "Illegal recording; MCL 750.539c; ex parte motion",
+          "caselaw": "Mapp v. Ohio, 367 U.S. 643 (1961) — exclusionary rule; Wong Sun v. United States, 371 U.S. 471 (1963) — fruit of the poisonous tree",
+          "michigan_authority": "People v. Beavers, 393 Mich 554 (1975) — Michigan eavesdropping; MCL 750.539c — felony, up to 2 years",
+          "damages": "WRONGFUL_INCARCERATION",
+          "filing_target": "USDC §1983; COA Brief; Criminal Referral",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": 15,
+          "amendment": "14th Amendment",
+          "clause": "Due Process — Procedural",
+          "violation_type": "DENIAL_OF_MEANINGFUL_HEARING",
+          "description": "Repeated denial of opportunity to present evidence and cross-examine witnesses at critical hearings affecting parental rights",
+          "incident_date": "2025-08-08",
+          "actors": "Judge McNeill",
+          "evidence_ref": "Hearing transcripts; court records",
+          "caselaw": "Goldberg v. Kelly, 397 U.S. 254 (1970) — right to hearing before deprivation; Cleveland Board of Education v. Loudermill, 470 U.S. 532 (1985)",
+          "michigan_authority": "In re Rood, 483 Mich 73 (2009); MCR 3.210 — hearing requirements",
+          "damages": "EMOTIONAL_DISTRESS",
+          "filing_target": "COA Brief; USDC §1983",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": 16,
+          "amendment": "14th Amendment",
+          "clause": "Due Process — Substantive",
+          "violation_type": "PARENTAL_RIGHTS_DEPRIVATION",
+          "description": "Fundamental liberty interest in parenting severed for 217+ days without compelling state interest — NEGATIVE drug screen, ALL ZEROS eval, 9 police investigations with ZERO findings",
+          "incident_date": "2025-08-08",
+          "actors": "Judge McNeill",
+          "evidence_ref": "Drug screen (negative); HealthWest eval #1 (zeros); 9 police reports (zero findings)",
+          "caselaw": "Troxel v. Granville, 530 U.S. 57 (2000) — parental rights as fundamental liberty interest; Santosky v. Kramer, 455 U.S. 745 (1982) — clear and convincing evidence standard",
+          "michigan_authority": "In re Sanders, 495 Mich 394 (2014) — parental rights in Michigan; MCL 722.23 — best interest factors",
+          "damages": "EMOTIONAL_DISTRESS; CHILD_HARM",
+          "filing_target": "USDC §1983; COA Brief",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": 17,
+          "amendment": "14th Amendment",
+          "clause": "Due Process — Substantive",
+          "violation_type": "EXCESSIVE_INCARCERATION",
+          "description": "59+ days incarceration for civil contempt without adequate purge conditions or proportionality review",
+          "incident_date": "2025-01-01",
+          "actors": "Judge McNeill",
+          "evidence_ref": "Jail records; contempt orders; purge conditions",
+          "caselaw": "Turner v. Rogers, 564 U.S. 431 (2011) — procedural safeguards for civil contempt incarceration; Bearden v. Georgia, 461 U.S. 660 (1983)",
+          "michigan_authority": "In re Contempt of Dougherty, 429 Mich 81 (1987) — Michigan contempt standards",
+          "damages": "WRONGFUL_INCARCERATION",
+          "filing_target": "USDC §1983; COA Brief",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": 18,
+          "amendment": "14th Amendment",
+          "clause": "Equal Protection",
+          "violation_type": "GENDER_DISCRIMINATION_PATTERN",
+          "description": "52 ex parte orders with 100% granted to mother (Emily) and 0% to father (Andrew) — statistical impossibility absent discrimination. 44% ex parte rate far exceeds Michigan average.",
+          "incident_date": "2024-01-01",
+          "actors": "Judge McNeill",
+          "evidence_ref": "Court docket analysis; statistical comparison to state averages",
+          "caselaw": "Craig v. Boren, 429 U.S. 190 (1976) — intermediate scrutiny for gender; United States v. Virginia, 518 U.S. 515 (1996) — exceedingly persuasive justification required",
+          "michigan_authority": "MCL 722.23 — best interest factors make no gender distinction; MCR 2.003 — disqualification for bias",
+          "damages": "EMOTIONAL_DISTRESS",
+          "filing_target": "USDC §1983; COA Brief; JTC",
+          "severity": "CRITICAL"
+        },
+        {
+          "id": 19,
+          "amendment": "14th Amendment",
+          "clause": "Equal Protection",
+          "violation_type": "PRO_SE_DISCRIMINATION",
+          "description": "Pattern of adverse rulings against pro se father while accommodating represented mother — disparate treatment based on representation status",
+          "incident_date": "2024-01-01",
+          "actors": "Judge McNeill; Jennifer Barnes",
+          "evidence_ref": "Docket analysis; ruling pattern; MCR 2.002 compliance",
+          "caselaw": "Bounds v. Smith, 430 U.S. 817 (1977) — meaningful access to courts; Turner v. Rogers, 564 U.S. 431 (2011)",
+          "michigan_authority": "MCR 2.002 — pro se litigant rights; MCJC Canon 3(B)(8) — patience with pro se",
+          "damages": "LEGAL_COSTS",
+          "filing_target": "USDC §1983; COA Brief",
+          "severity": "HIGH"
+        }
+      ],
+      "judicial_violations": [
+        {
+          "violation_id": "JV-76189751e678",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[COMPLETE_LITIGATION_COMMAND_CENTER.md] **What Makes Your Case Strong:**: 1. **44% Ex Parte Rate = Statistical Anomaly**    - 24 of 55 PPO orders entered without notice    - ALL 24 presided by same judge (McNeill)    - August 8, 2025: 5 ex parte orders same day    - **This pattern is objectively unreasonable**  2. **Due Process Violations = Constit...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "4th_Amendment",
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-77ecc366b5c3",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[PIGGYPIGGY_FINAL.md] 7. CIVIL CLAIMS IDENTIFIED (8 Counts): 1. **42 USC § 1983 — Deprivation of constitutional rights** under color of law 2. **Due process violations** — 14th Amendment (substantive and procedural) 3. **First Amendment retaliation** —  bond as punishment for filing 4. **Abuse of process** — PPO weaponized for custody advantage 5. ...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "4th_Amendment",
+            "14th_Due_Process"
+          ]
+        }
+      ],
+      "claims": [],
+      "evidence_quotes": [
+        {
+          "id": 11671,
+          "text": "ry Stack (Machine Grammar) page 22 ATE_MONTH_DY_Y:August 22, 2025|snip=runs afoul of due process (14th Amendment) a",
+          "speaker": null,
+          "date_ref": "August 22, 2025",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "4th_Amendment",
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "id": 11672,
+          "text": "|HEALTHWEST|PARENTING_TIME|dates=DATE_MO NTH_DY_Y:August 22, 2025|snip=runs afoul of due process (14th Amendment) a",
+          "speaker": null,
+          "date_ref": "August 22, 2025",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "4th_Amendment",
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "id": 11673,
+          "text": "C|HEALTHWEST|PARENTING_TIME|dates=DATE_MONTH_DY_Y:August 22, 2025|snip=r uns afoul of due process (14th Amendment)",
+          "speaker": null,
+          "date_ref": "August 22, 2025",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "4th_Amendment",
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "id": 27795,
+          "text": "e under an order for the seizure of property or   $26.00  construction lien posted in a public place in th",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "4th_Amendment"
+          ]
+        },
+        {
+          "id": 33799,
+          "text": "nal distress Severe trauma, child present $50,000–$100,000 §1983 civil rights violation Unlawful seizure, of",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "4th_Amendment"
+          ]
+        },
+        {
+          "id": 33800,
+          "text": "rights violation Unlawful seizure, officer abuse $75,000– $200,000 IIED claim Malicious acts + targeting $",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "4th_Amendment"
+          ]
+        },
+        {
+          "id": 33801,
+          "text": "iolation Unlawful seizure, officer abuse $75,000– $200,000 IIED claim Malicious acts + targeting $25,000–$50",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "4th_Amendment"
+          ]
+        },
+        {
+          "id": 34490,
+          "text": "Rent Increases: Lot rent raised from $395 to $695–$720, often under  threat of eviction or home seizure.",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "4th_Amendment"
+          ]
+        }
+      ]
+    },
+    "14th_Due_Process": {
+      "name": "Fourteenth Amendment — Due Process (Parental Liberty)",
+      "test": "Troxel v. Granville, 530 U.S. 57 (2000) — fundamental right to parent; Mathews v. Eldridge, 424 U.S. 319 (1976) — procedural due process balancing",
+      "total_count": 30657,
+      "max_severity": 4,
+      "direct_violations_count": 1,
+      "judicial_violations_count": 370,
+      "claims_count": 74,
+      "evidence_quotes_count": 17,
+      "direct_violations": [
+        {
+          "id": 22,
+          "amendment": "6th Amendment",
+          "clause": "Right to Counsel",
+          "violation_type": "CONTEMPT_WITHOUT_COUNSEL",
+          "description": "Incarcerated for civil contempt exceeding 6 months cumulative without appointed counsel — when liberty is at stake, right to counsel attaches",
+          "incident_date": "2025-01-01",
+          "actors": "Judge McNeill",
+          "evidence_ref": "Jail records; hearing transcripts; no counsel appointed",
+          "caselaw": "Turner v. Rogers, 564 U.S. 431 (2011) — alternative procedural safeguards; Argersinger v. Hamlin, 407 U.S. 25 (1972) — right to counsel when imprisonment imposed",
+          "michigan_authority": "MCR 3.606 — contempt proceedings; Const 1963, art 1, § 20",
+          "damages": "WRONGFUL_INCARCERATION",
+          "filing_target": "USDC §1983; COA Brief",
+          "severity": "HIGH"
+        }
+      ],
+      "judicial_violations": [
+        {
+          "violation_id": "JV-c22d274f6e3b",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR 2.003 (Disqualification)",
+          "description": ",  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parenting  time.  An evidentiary  hearing  was held on Septemb",
+          "evidence_refs": "MCR 2.003(C)(1)",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-0d7c8cae71df",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR 2.003 (Disqualification)",
+          "description": ",  Judge  McNeill  signed  an ex parte  \"emergency\" order  suspending  all of  my  parenting  time  with  my  three-year-old  son, Lincoln",
+          "evidence_refs": "MCR 2.003(C)(1)",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-79de3d694f86",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR 2.003 (Disqualification)",
+          "description": "suspended. 3.  Off-record,  ex parte  handling  of  evidence  (USB  recording  and  mental-health evaluation). o   A USB  recording  sub",
+          "evidence_refs": "MCR 2.003(C)(1)",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-73f3c8b967ed",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR 2.003 (Disqualification)",
+          "description": "to continue  or modify  the ex parte  suspension. o   I attempted  to present  photographs  from  the July  29 exchange  showing Lincoln",
+          "evidence_refs": "MCR 2.003(C)(1)",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-ef7bf41f552d",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR 2.003 (Disqualification)",
+          "description": "e,  the  combination  of  (a) ex parte  submissions,  (b)  refusal  to review my  exculpatory  photos,  (c)  willingness  to rely  on hear",
+          "evidence_refs": "MCR 2.003(C)(1)",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-5b0215a24097",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR 2.003 (Disqualification)",
+          "description": "and diligently,  and  bars  ex parte  communications  on the  merits  of  pending matters  except  under  narrow  circumstances. o   Dir",
+          "evidence_refs": "MCR 2.003(C)(1)",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-5cc475cb95ed",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR 2.003 (Disqualification)",
+          "description": "(1)  and  (B)(5)-(6)  govern  ex parte  custody  and  parenting- time  orders  and  require: Specific  facts  in a verified  pleading  or",
+          "evidence_refs": "MCR 2.003(C)(1)",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-cfe589a19bfe",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR 2.003 (Disqualification)",
+          "description": "ction  order. gl  request  an ex parte  order  because  immediate  and irreparable  injury,loss,  or damage  will occur  between  now and",
+          "evidence_refs": "MCR 2.003(C)(1)",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-918a034638c2",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR 3.206(A)",
+          "description": "e  matter  before  the court  without  the assistance  of counsel,  the  friend  of the  court  must  provide  you  with  the form  pleadings  and  written  instructions  and  must  schedule  a hearing  with  the  court. 3.  The  ex parte  order  will automatically  become  a temporary  order  if you  do not  file a written objection  or motion  to...",
+          "evidence_refs": "MCR 3.206(A)",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "violation_id": "JV-347a02996301",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR 2.003 (Disqualification)",
+          "description": "g  with  the  court. 3.  The  ex parte  order  will automatically  become  a temporary  order  if you  do not  file a written objection  o",
+          "evidence_refs": "MCR 2.003(C)(1)",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "Cb7157d6af7fd",
+          "issue_id": "ISSUE_EX_PARTE",
+          "classification": "ex_parte_evidence",
+          "actor": "record",
+          "proposition": "the ex parte  suspension  has functioned  since  August  8, 2025. 1. Chronological  withholding  pattern First,  t",
+          "evidence_targets": "[\"evidence_quotes\", \"id:234321\", \"discovery\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "C0948f9db9100",
+          "issue_id": "ISSUE_EX_PARTE",
+          "classification": "ex_parte_evidence",
+          "actor": "record",
+          "proposition": "tify  ending  my  relationship  with  him. 7. On  August  7, 2025,  an ex parte  motion  was filed.  On  or about",
+          "evidence_targets": "[\"evidence_quotes\", \"id:109069\", \"discovery\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "C081b039d7d99",
+          "issue_id": "ISSUE_DP_LIBERTY",
+          "classification": "liberty_interest",
+          "actor": "Andrew Pigors",
+          "proposition": "Liberty interest in parent-child relationship is fundamental — protected by both substantive and procedural due process",
+          "evidence_targets": "[\"Troxel v Granville\", \"Santosky v Kramer\", \"Stanley v Illinois\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "Cbd583b40926b",
+          "issue_id": "ISSUE_DP_SUBSTANTIVE",
+          "classification": "substantive_due_process",
+          "actor": "Andrew Pigors",
+          "proposition": "Substantive due process violated: fundamental right to parent arbitrarily restricted without compelling justification",
+          "evidence_targets": "[\"US Const Amend XIV\", \"Troxel v Granville\", \"Washington v Glucksberg\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "Ce40f9c100c76",
+          "issue_id": "ISSUE_DP_PROCEDURAL",
+          "classification": "procedural_due_process",
+          "actor": "Andrew Pigors",
+          "proposition": "Procedural due process violated: custody modified and parenting time terminated without adequate notice or hearing",
+          "evidence_targets": "[\"US Const Amend XIV\", \"Mathews v Eldridge\", \"MCR 2.119\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "C5ee09a8c1cc1",
+          "issue_id": "ISSUE_PPO_DUE_PROCESS",
+          "classification": "ppo_due_process",
+          "actor": "Andrew Pigors",
+          "proposition": "Ex parte PPO denied due process — issued without notice or hearing before depriving fundamental parental rights",
+          "evidence_targets": "[\"US Const Amend XIV\", \"MCL 600.2950\", \"Ex parte order\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "Cf1fd3736d479",
+          "issue_id": "ISSUE_PROCEDURAL_HISTORY",
+          "classification": "procedural_event",
+          "actor": "court",
+          "proposition": "1. Ex Parte Order Pattern ⚠️ CRITICAL: **Discovery:** - **24 of 55 orders** (44%) entered ex parte - **All 24 presided by Judge Jenny L. McNeill** - **August 8, 2025:** 5 separate ex parte orders same day - **Notice failures:** Orders entered before ...",
+          "evidence_targets": "[\"docket_events\", \"2023-5907-PP\", \"2025-08-08\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "Cf160e56ac54a",
+          "issue_id": "ISSUE_IMPEACHMENT_EX_PARTE_COMMUNICATION",
+          "classification": "ex_parte_violation",
+          "actor": "opposing_party",
+          "proposition": "entry  of  the August  2025  ex parte  suspension order,  subsequent  continuation  orders,  and the scheduling  of  the October  29, 202",
+          "evidence_targets": "[\"MCR 2.003(C)(1)\", \"Contradicting documents\", \"Transcript records\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "Ce703547056e3",
+          "issue_id": "ISSUE_IMPEACHMENT_EX_PARTE_COMMUNICATION",
+          "classification": "ex_parte_violation",
+          "actor": "opposing_party",
+          "proposition": "ated  authorities  governing  ex parte  orders  and  hearings. (Michigan  Courts) o   MCR  3.207(B)(1)  and  (B)(5)-(6)  govern  ex parte",
+          "evidence_targets": "[\"MCR 2.003(C)(1)\", \"Contradicting documents\", \"Transcript records\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "C051e5a95dd2a",
+          "issue_id": "ISSUE_IMPEACHMENT_EX_PARTE_COMMUNICATION",
+          "classification": "ex_parte_violation",
+          "actor": "opposing_party",
+          "proposition": "y presence,  are fori'ns  of  ex parte  evidence  liandling  inconsistent  with  Canon 3 and  with  the  requirement  that  decisions  be",
+          "evidence_targets": "[\"MCR 2.003(C)(1)\", \"Contradicting documents\", \"Transcript records\"]",
+          "status": "supported"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "id": 238,
+          "text": "due process. Authority:  MCR  3.207(B);  MCR  2.11 9; MCR  2.116(C)(8)-(10);  U.S. Const.  amend.  XIV. Relief:  Motion  must  be vacated  in full. II.  PROCEDURAL  ABUSE  AND  RULE  VIOLATION  OBJECTION The  fi",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "id": 239,
+          "text": "notice, present rebuttal, or obtain timely  relM.   ;3'i This  defect  is not  clerical-it  is a systematic  abuse  of  the judicial  process  to deny  access  to the forum  and obstruct  due process. Autho",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "id": 355,
+          "text": "due process);  Canon/JTC  narrative  on pattern  of  treatment.",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "id": 2055,
+          "text": "Granville standard • Irreparable harm • Damages: $50,000-100,000 Count 2: Due Process Violation (Right to",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "id": 11664,
+          "text": "NG_TIME|dates=DATE_M DY:10/8/2025|DATE_MONTH_DY_Y:June 13, 2025|snip=, due process \\n**Source:** 0719T04:30, moti",
+          "speaker": null,
+          "date_ref": "June 13, 2025",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "id": 11671,
+          "text": "ry Stack (Machine Grammar) page 22 ATE_MONTH_DY_Y:August 22, 2025|snip=runs afoul of due process (14th Amendment) a",
+          "speaker": null,
+          "date_ref": "August 22, 2025",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "4th_Amendment",
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "id": 11672,
+          "text": "|HEALTHWEST|PARENTING_TIME|dates=DATE_MO NTH_DY_Y:August 22, 2025|snip=runs afoul of due process (14th Amendment) a",
+          "speaker": null,
+          "date_ref": "August 22, 2025",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "4th_Amendment",
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "id": 11673,
+          "text": "C|HEALTHWEST|PARENTING_TIME|dates=DATE_MONTH_DY_Y:August 22, 2025|snip=r uns afoul of due process (14th Amendment)",
+          "speaker": null,
+          "date_ref": "August 22, 2025",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "4th_Amendment",
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "id": 29596,
+          "text": "the outcome was preordained without due process. September 19, 2025 – Five Parenting-Time Periods Missed (Ongoing Har",
+          "speaker": null,
+          "date_ref": "September 19, 2025",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        },
+        {
+          "id": 30035,
+          "text": "actions, Plaintiff would not have been evicted on July 10, 2025. Had due process been afforded, one of two outcom",
+          "speaker": null,
+          "date_ref": "July\n10, 2025",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "14th_Due_Process"
+          ]
+        }
+      ]
+    },
+    "14th_Equal_Protection": {
+      "name": "Fourteenth Amendment — Equal Protection (Gender Bias)",
+      "test": "Craig v. Boren, 429 U.S. 190 (1976) — intermediate scrutiny for gender; Mississippi Univ. for Women v. Hogan, 458 U.S. 718 (1982)",
+      "total_count": 6676,
+      "max_severity": 0,
+      "direct_violations_count": 0,
+      "judicial_violations_count": 28,
+      "claims_count": 3,
+      "evidence_quotes_count": 1,
+      "direct_violations": [],
+      "judicial_violations": [
+        {
+          "violation_id": "JV-95ff028338e1",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MRE 613(b) — Prior inconsistent statement [ex_parte]",
+          "description": "ex parte order suspending  his parenting  time  is denied.  The  Court  also  notes  that  it offered  supervised  parenting  time  to the Father  and he categorically  rejected  that.  The  Court  will consi",
+          "evidence_refs": "MRE 613(b) — Prior inconsistent statement [ex_parte]",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process",
+            "14th_Equal_Protection"
+          ]
+        },
+        {
+          "violation_id": "JV-974fb9ef1a82",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "ex parte  order  or to restore  parenting  time.  When  you combine  that financial  barrier  with  the ex parte shutdown,  it leaves  my  son without  his father  and leaves me with  no realistic  written  v",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process",
+            "14th_Equal_Protection"
+          ]
+        },
+        {
+          "violation_id": "JV-a0ea3b3dd77f",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "ex parte  motion  to suspend  the Father's  parenting  time. She alleged  that  she was concerned  regarding  on going  drug use/mental  health  iSsues  due to his phone  calls  to herfatherwhere  he stated",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process",
+            "14th_Equal_Protection"
+          ]
+        },
+        {
+          "violation_id": "JV-21a368fc0c17",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "ex parte  suspension  and  the court's  decisions  to continue  it without  timely  hearing: *   My  three-year-old  son  has been  deprived  of  regular,  loving  contact  with  his  father for  months  at a",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process",
+            "14th_Equal_Protection"
+          ]
+        },
+        {
+          "violation_id": "JV-d832a505b5f2",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[EMERGENCY_MOTIONS_MASTER.md] For Hearing - Organize by Motion: **Motion 1 Evidence**: - [ ] Copy of August 8, 2025 ex parte orders - [ ] HealthWest evaluation (full report) - [ ] Timeline showing no notice/hearing - [ ] Statistical data on ex parte orders (if available) - [ ] Research on due process requirements - [ ] Photos showing healthy father...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process",
+            "14th_Equal_Protection"
+          ]
+        },
+        {
+          "violation_id": "JV-d7ccff8e8654",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[ENCYCLOPEDIA_MASTER.md] Core Dispute: Father seeks restoration of parenting time, modification of custody arrangements, and accountability for due process violations including pattern of ex parte orders entered without notice.  ---",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process",
+            "14th_Equal_Protection"
+          ]
+        },
+        {
+          "violation_id": "JV-c94aeba9c5c7",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[ENCYCLOPEDIA_MASTER.md] Minor Child: Lincoln Pigors: - **DOB:** November 9, 2022 (Age: 3 years, 3 months) - **Current Custody:** Mother (sole physical custody) - **Father's Parenting Time:** Suspended multiple times via ex parte orders",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process",
+            "14th_Equal_Protection"
+          ]
+        },
+        {
+          "violation_id": "JV-1e9348d7c3c1",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[JTC_COMPLETION_REPORT.md] Pattern Evidence: 1. **Ex Parte Orders:** 24 of 55 orders (44%) to Mother; 0 to Father (0%) 2. **Motion Success Rates:** Father 11% (3 of 27); Mother 86% (19 of 22) 3. **Evidence Admission:** Father 35% (12 of 34); Mother 95% (18 of 19) 4. **Parenting Time Lost:** 192+ days of complete deprivation 5. **Hearing Conduc",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "14th_Due_Process",
+            "14th_Equal_Protection"
+          ]
+        },
+        {
+          "violation_id": "JV-38bc450bd868",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[JTC_EXHIBIT_INDEX.md] A-1: Ex Parte Suspension of Parenting Time (2023-11-12): - **Document:** Ex parte order suspending all Father's parenting time - **Pages:** 3 pages - **Source:** Case 2023-5907-PP, court file - **Relevance:** First ex parte order based solely on unverified petition allegations - **Key Language:** \"Father's parenting time is s...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "14th_Equal_Protection",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-db536680629a",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[JTC_EXHIBIT_INDEX.md] A-2: Ex Parte Custody Schedule Modification (2024-01-08): - **Document:** Ex parte order modifying custody schedule - **Pages:** 2 pages - **Source:** Case 2024-001507-DC, court file - **Relevance:** Custody modified without Father's knowledge or input - **Key Language:** \"The Court modifies the parenting time schedule as fol...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "14th_Equal_Protection"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "C8602fcccc4f2",
+          "issue_id": "ISSUE_IMPEACHMENT_EX_PARTE_COMMUNICATION",
+          "classification": "ex_parte_violation",
+          "actor": "opposing_party",
+          "proposition": "8/8/25,  the Mother  filed an ex parte  motion  to suspend  the Father's  parenting  time. She alleged  that  she was concerned  regarding",
+          "evidence_targets": "[\"MCR 2.003(C)(1)\", \"Contradicting documents\", \"Transcript records\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "Cab8636c3071a",
+          "issue_id": "ISSUE_IMPEACHMENT_EX_PARTE_COMMUNICATION",
+          "classification": "ex_parte_violation",
+          "actor": "opposing_party",
+          "proposition": "/8/25,  the Mother  filed  an ex parte  motion  to suspend  the Father's  parenting  time. She  alleged  that  she  was  concerned  regard",
+          "evidence_targets": "[\"MCR 2.003(C)(1)\", \"Contradicting documents\", \"Transcript records\"]",
+          "status": "supported"
+        },
+        {
+          "claim_id": "C6e92ea14de42",
+          "issue_id": "ISSUE_DP_EQUAL_PROTECTION",
+          "classification": "equal_protection",
+          "actor": "Andrew Pigors",
+          "proposition": "Equal protection violated: father treated differently than similarly situated mothers in Muskegon County custody proceedings",
+          "evidence_targets": "[\"US Const Amend XIV\", \"Craig v Boren\", \"Statistical evidence\"]",
+          "status": "active"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "id": 2056,
+          "text": "of meaningful opportunity to be heard • Damages: $25,000-50,000 Count 3: Equal Protection Violation • Uneq",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "14th_Equal_Protection"
+          ]
+        }
+      ]
+    },
+    "MI_Art1_Sec17": {
+      "name": "Michigan Constitution Art 1 §17 — Right to Petition",
+      "test": "Self-executing provision — broader than federal 1st Amendment. Includes right to file court motions without judicial retaliation.",
+      "total_count": 19094,
+      "max_severity": 0,
+      "direct_violations_count": 0,
+      "judicial_violations_count": 14,
+      "claims_count": 1,
+      "evidence_quotes_count": 3,
+      "direct_violations": [],
+      "judicial_violations": [
+        {
+          "violation_id": "JV-3671d499767e",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[COMPLETE_LITIGATION_COMMAND_CENTER.md] 4.1 Pleadings / Case-Initiating Documents: * Complaint * Verified Complaint (where required or chosen) * Petition (special proceedings) * Application (where the rule/statute uses \"application\") * Ex Parte Petition / Ex Parte Motion (where authorized) * Notice of Hearing / Notice of Presentment (where required...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-edcbc5903ede",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[COMPLETE_LITIGATION_COMMAND_CENTER.md] 7) Personal Protection Orders (PPO) — Special Proceedings: * Petition for Personal Protection Order (PPO) (independent action; petition is not a motion) * Partially-Completed PPO Order Form submitted with petition in e-filing courts * Ex Parte PPO Request (where authorized) * Motion to Modify / Rescind / Term...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-38bc450bd868",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[JTC_EXHIBIT_INDEX.md] A-1: Ex Parte Suspension of Parenting Time (2023-11-12): - **Document:** Ex parte order suspending all Father's parenting time - **Pages:** 3 pages - **Source:** Case 2023-5907-PP, court file - **Relevance:** First ex parte order based solely on unverified petition allegations - **Key Language:** \"Father's parenting time is s...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "14th_Equal_Protection",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-1786baa0cc98",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[MI_COURT_FILINGS_MASTER_LIST_APPENDONLY_20260216_v2 (1).md] 4.1 Pleadings / Case‑Initiating Documents: - Complaint - Verified Complaint (where required or chosen) - Petition (special proceedings) citeturn17search5 - Application (where the rule/statute uses “application”) - Ex Parte Petition / Ex Parte Motion (where authorized) - Notice of Heari...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-ea5f1324e95d",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[MI_COURT_FILINGS_MASTER_LIST_APPENDONLY_20260216_v2 (1).md] 7) Personal Protection Orders (PPO) — Special Proceedings: - Petition for Personal Protection Order (PPO) (independent action; petition is not a motion) citeturn17search5 - Partially‑Completed PPO Order Form submitted with petition in e‑filing courts citeturn17search5 - Ex Parte PPO...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-30b70154c993",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[MI_COURT_FILINGS_MASTER_LIST_APPENDONLY_20260216_v2 (1).md] 27) PERSONAL PROTECTION ORDER (PPO) FILINGS — MCR 3.700 SERIES: - **Petition for Personal Protection Order (PPO)** (domestic / nondomestic categories per statute/rule) - **Ex Parte PPO Petition** (where permitted) - **Motion to Modify PPO** - **Motion to Terminate PPO** - **Motion to Exte...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-3c053dc42cf1",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[MI_COURT_FILINGS_MASTER_LIST_APPENDONLY_20260216_v4_MAXOVERDRIVE.md] 4.1 Pleadings / Case‑Initiating Documents: - Complaint - Verified Complaint (where required or chosen) - Petition (special proceedings) - Application (where the rule/statute uses “application”) - Ex Parte Petition / Ex Parte Motion (where authorized) - Notice of Hearing / Notice ...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-005881fd6f6f",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[MI_COURT_FILINGS_MASTER_LIST_APPENDONLY_20260216_v4_MAXOVERDRIVE.md] 7) Personal Protection Orders (PPO) — Special Proceedings: - Petition for Personal Protection Order (PPO) (independent action; petition is not a motion) - Partially‑Completed PPO Order Form submitted with petition in e‑filing courts - Ex Parte PPO Request (where authorized) - Mot...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-6cbe19ae30a3",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[MI_COURT_FILINGS_MASTER_LIST_APPENDONLY_20260216_v4_MAXOVERDRIVE.md] 27) PERSONAL PROTECTION ORDER (PPO) FILINGS — MCR 3.700 SERIES: - **Petition for Personal Protection Order (PPO)** (domestic / nondomestic categories per statute/rule) - **Ex Parte PPO Petition** (where permitted) - **Motion to Modify PPO** - **Motion to Terminate PPO** - **Motio...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "violation_id": "JV-b965abb626e2",
+          "judge": "Hon. Jenny L. McNeill",
+          "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+          "description": "[SCANNEDMergeddocketsnotices_20260205_2200__TEXTSNAPSHOT.txt] SCANNEDMergeddocketsnotices_20260205_2200.pdf (fetched text snapshot) Key ROA excerpt (as received): Case 2023-0000005907-PP WATSON v PIGORS; Court C14; Jurist MCNEILL; file 12/04/2023; disposed 12/04/2023 granted; close 12/05/2023; petitioner Emily Watson; respondent Andrew Pigors; entr...",
+          "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+          "severity": "critical",
+          "amendment_classification": [
+            "1st_Amendment",
+            "14th_Due_Process",
+            "MI_Art1_Sec17"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "Ce44a16d4f1d4",
+          "issue_id": "ISSUE_IMPEACHMENT_EX_PARTE_COMMUNICATION",
+          "classification": "ex_parte_violation",
+          "actor": "opposing_party",
+          "proposition": "T] 3. Petitioner requested an ex parte order, which should  be entered  without  notice  because  irreparable  injury, loss,  or darnage w",
+          "evidence_targets": "[\"MCR 2.003(C)(1)\", \"Contradicting documents\", \"Transcript records\"]",
+          "status": "supported"
+        }
+      ],
+      "evidence_quotes": [
+        {
+          "id": 151,
+          "text": "hearing'  4/22/2025 ,ludge'  JENY  !-  MCNEILL P-58235 Bar no 1. Order  entered  after  show-cause  hearing  requested  by petitioner  pursuant  to MCR  3.708(B) THE  COURT  FINDS advised  of his/her  rights",
+          "speaker": "COURT",
+          "date_ref": "4/22/2025",
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "id": 3672,
+          "text": "s 1st Amendment right to petition for redress by: $250 \"Sanction Fee\": The trial court imposed a $250 fe",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment",
+            "MI_Art1_Sec17"
+          ]
+        },
+        {
+          "id": 7446,
+          "text": "3. 1st Amendment Right to Petition for Redress • $250 fee imposed for filing motions Phase 7: Post- Sus",
+          "speaker": null,
+          "date_ref": null,
+          "source_type": "PDF_COURT_DOC",
+          "amendment_classification": [
+            "1st_Amendment",
+            "MI_Art1_Sec17"
+          ]
+        }
+      ]
+    }
+  },
+  "caselaw_mapping": {
+    "controlling_federal": [
+      {
+        "source": "CV-12",
+        "amendment": "14th Amendment",
+        "caselaw": "Mathews v. Eldridge, 424 U.S. 319 (1976) — three-factor balancing test for procedural due process; Fuentes v. Shevin, 407 U.S. 67 (1972) — prior notice and hearing required before deprivation"
+      },
+      {
+        "source": "CV-13",
+        "amendment": "14th Amendment",
+        "caselaw": "Ward v. Village of Monroeville, 409 U.S. 57 (1972) — judicial bias violates due process; Caperton v. A.T. Massey Coal Co., 556 U.S. 868 (2009)"
+      },
+      {
+        "source": "CV-14",
+        "amendment": "14th Amendment",
+        "caselaw": "Mapp v. Ohio, 367 U.S. 643 (1961) — exclusionary rule; Wong Sun v. United States, 371 U.S. 471 (1963) — fruit of the poisonous tree"
+      },
+      {
+        "source": "CV-15",
+        "amendment": "14th Amendment",
+        "caselaw": "Goldberg v. Kelly, 397 U.S. 254 (1970) — right to hearing before deprivation; Cleveland Board of Education v. Loudermill, 470 U.S. 532 (1985)"
+      },
+      {
+        "source": "CV-16",
+        "amendment": "14th Amendment",
+        "caselaw": "Troxel v. Granville, 530 U.S. 57 (2000) — parental rights as fundamental liberty interest; Santosky v. Kramer, 455 U.S. 745 (1982) — clear and convincing evidence standard"
+      },
+      {
+        "source": "CV-17",
+        "amendment": "14th Amendment",
+        "caselaw": "Turner v. Rogers, 564 U.S. 431 (2011) — procedural safeguards for civil contempt incarceration; Bearden v. Georgia, 461 U.S. 660 (1983)"
+      },
+      {
+        "source": "CV-18",
+        "amendment": "14th Amendment",
+        "caselaw": "Craig v. Boren, 429 U.S. 190 (1976) — intermediate scrutiny for gender; United States v. Virginia, 518 U.S. 515 (1996) — exceedingly persuasive justification required"
+      },
+      {
+        "source": "CV-19",
+        "amendment": "14th Amendment",
+        "caselaw": "Bounds v. Smith, 430 U.S. 817 (1977) — meaningful access to courts; Turner v. Rogers, 564 U.S. 431 (2011)"
+      },
+      {
+        "source": "CV-20",
+        "amendment": "1st Amendment",
+        "caselaw": "BE&K Construction Co. v. NLRB, 536 U.S. 516 (2002) — First Amendment protects litigation activity; Borough of Duryea v. Guarnieri, 564 U.S. 379 (2011) — Petition Clause"
+      },
+      {
+        "source": "CV-21",
+        "amendment": "4th Amendment",
+        "caselaw": "Albright v. Oliver, 510 U.S. 266 (1994) — Fourth Amendment seizure; County of Sacramento v. Lewis, 523 U.S. 833 (1998)"
+      },
+      {
+        "source": "CV-22",
+        "amendment": "6th Amendment",
+        "caselaw": "Turner v. Rogers, 564 U.S. 431 (2011) — alternative procedural safeguards; Argersinger v. Hamlin, 407 U.S. 25 (1972) — right to counsel when imprisonment imposed"
+      },
+      {
+        "source": "Brief-1",
+        "right": "Due Process — Procedural (14th Amendment)",
+        "caselaw": "U.S. Const. amend. XIV § 1; Mathews v. Eldridge, 424 U.S. 319 (1976); Troxel v. Granville, 530 U.S. 57 (2000); MCR 3.207(C)(2); Boddie v. Connecticut, 401 U.S. 371 (1971)"
+      },
+      {
+        "source": "Brief-2",
+        "right": "Due Process — Substantive (14th Amendment)",
+        "caselaw": "Troxel v. Granville, 530 U.S. 57 (2000); Santosky v. Kramer, 455 U.S. 745 (1982); Washington v. Glucksberg, 521 U.S. 702 (1997); Vodvarka v. Grasmeyer, 259 Mich. App. 499 (2003); MCL 722.23(a)-(l); MCL 722.27(1)(c)"
+      },
+      {
+        "source": "Brief-3",
+        "right": "Equal Protection (14th Amendment)",
+        "caselaw": "U.S. Const. amend. XIV § 1; City of Cleburne v. Cleburne Living Ctr., 473 U.S. 432 (1985); Craig v. Boren, 429 U.S. 190 (1976); MI Canon 2A; MI Canon 3(A)(4)"
+      },
+      {
+        "source": "Brief-4",
+        "right": "First Amendment — Right to Petition / Access to Courts",
+        "caselaw": "U.S. Const. amend. I; Boddie v. Connecticut, 401 U.S. 371 (1971); California Motor Transport Co. v. Trucking Unlimited, 404 U.S. 508 (1972); MCR 2.003; BE & K Construction Co. v. NLRB, 536 U.S. 516 (2002)"
+      },
+      {
+        "source": "Brief-5",
+        "right": "Right to Family Integrity (14th Amendment / 9th Amendment)",
+        "caselaw": "Moore v. City of East Cleveland, 431 U.S. 494 (1977); Meyer v. Nebraska, 262 U.S. 390 (1923); Pierce v. Society of Sisters, 268 U.S. 510 (1925); MCL 722.27a(1); MCL 722.27a(3)"
+      },
+      {
+        "source": "Brief-6",
+        "right": "Right to Fair and Impartial Tribunal (14th Amendment)",
+        "caselaw": "In re Murchison, 349 U.S. 133 (1955); Caperton v. A.T. Massey Coal Co., 556 U.S. 868 (2009); MCR 2.003(C)(1); MCR 2.003(D); MI Canon 2A; MI Canon 3(C)(1)"
+      }
+    ],
+    "controlling_michigan": [
+      {
+        "source": "CV-12",
+        "amendment": "14th Amendment",
+        "authority": "MCR 3.207(A) — requirements for ex parte orders in domestic relations; In re Rood, 483 Mich 73 (2009) — due process in family proceedings"
+      },
+      {
+        "source": "CV-13",
+        "amendment": "14th Amendment",
+        "authority": "MCR 2.003(C)(1) — disqualification for bias; MCJC Canon 2 — appearance of impropriety"
+      },
+      {
+        "source": "CV-14",
+        "amendment": "14th Amendment",
+        "authority": "People v. Beavers, 393 Mich 554 (1975) — Michigan eavesdropping; MCL 750.539c — felony, up to 2 years"
+      },
+      {
+        "source": "CV-15",
+        "amendment": "14th Amendment",
+        "authority": "In re Rood, 483 Mich 73 (2009); MCR 3.210 — hearing requirements"
+      },
+      {
+        "source": "CV-16",
+        "amendment": "14th Amendment",
+        "authority": "In re Sanders, 495 Mich 394 (2014) — parental rights in Michigan; MCL 722.23 — best interest factors"
+      },
+      {
+        "source": "CV-17",
+        "amendment": "14th Amendment",
+        "authority": "In re Contempt of Dougherty, 429 Mich 81 (1987) — Michigan contempt standards"
+      },
+      {
+        "source": "CV-18",
+        "amendment": "14th Amendment",
+        "authority": "MCL 722.23 — best interest factors make no gender distinction; MCR 2.003 — disqualification for bias"
+      },
+      {
+        "source": "CV-19",
+        "amendment": "14th Amendment",
+        "authority": "MCR 2.002 — pro se litigant rights; MCJC Canon 3(B)(8) — patience with pro se"
+      },
+      {
+        "source": "CV-20",
+        "amendment": "1st Amendment",
+        "authority": "Const 1963, art 1, §§ 3, 5 — Michigan free speech and petition rights"
+      },
+      {
+        "source": "CV-21",
+        "amendment": "4th Amendment",
+        "authority": "Const 1963, art 1, § 11 — Michigan protection against unreasonable seizure"
+      },
+      {
+        "source": "CV-22",
+        "amendment": "6th Amendment",
+        "authority": "MCR 3.606 — contempt proceedings; Const 1963, art 1, § 20"
+      }
+    ],
+    "authority_chain_coverage": [
+      {
+        "vehicle": "42 USC 1983",
+        "claim": "Deprivation of rights under color of law",
+        "cite": "42 USC § 1983; Flagg Bros. v. Brooks, 436 US 149 (1978); Monroe v. Pape, 365 US 167 (1961)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "42 USC 1983",
+        "claim": "Deprivation under color of law",
+        "cite": "42 USC 1983; Monroe v. Pape, 365 US 167 (1961)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "42USC1983_FEDERAL",
+        "claim": "state actor",
+        "cite": "42 USC 1983",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "42USC1983_FEDERAL",
+        "claim": "deprivation of rights",
+        "cite": "42 USC 1983",
+        "complete": true,
+        "gap": "No evidence found for element: deprivation of rights"
+      },
+      {
+        "vehicle": "42USC1983_FEDERAL",
+        "claim": "under color of law",
+        "cite": "42 USC 1983",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "42USC1983_FEDERAL",
+        "claim": "14th Amendment due process",
+        "cite": "42 USC 1983",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "EMERGENCY_MOTION_RESTORE_PT",
+        "claim": "existing order",
+        "cite": "MCR 3.206(A)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "EMERGENCY_MOTION_RESTORE_PT",
+        "claim": "changed circumstances",
+        "cite": "MCR 3.206(A)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "EMERGENCY_MOTION_RESTORE_PT",
+        "claim": "best interest of child",
+        "cite": "MCR 3.206(A)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "EMERGENCY_MOTION_RESTORE_PT",
+        "claim": "established custodial environment",
+        "cite": "MCR 3.206(A)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "JTC Complaint",
+        "claim": "Persistent failure of judicial duties",
+        "cite": "MCR 9.104(1)-(4); MCR 9.205; In re Brown, 461 Mich 1291 (2000)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "JTC Complaint",
+        "claim": "Prejudice to administration of justice",
+        "cite": "MCR 2.003(C)(1); Cain v. Dept of Corrections, 451 Mich 470 (1996)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "JTC Complaint",
+        "claim": "Persistent judicial failure",
+        "cite": "MCR 9.104(1)-(4); In re Brown, 461 Mich 1291 (2000)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "JTC Complaint",
+        "claim": "Prejudice to substantial rights",
+        "cite": "MCR 2.003(C)(1); Cain v. Dept of Corrections, 451 Mich 470 (1996)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "JTC_COMPLAINT",
+        "claim": "judicial misconduct",
+        "cite": "MCR 9.104-9.121",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "JTC_COMPLAINT",
+        "claim": "persistent failure",
+        "cite": "MCR 9.104-9.121",
+        "complete": true,
+        "gap": "No evidence found for element: persistent failure"
+      },
+      {
+        "vehicle": "JTC_COMPLAINT",
+        "claim": "prejudice",
+        "cite": "MCR 9.104-9.121",
+        "complete": true,
+        "gap": "No evidence found for element: prejudice"
+      },
+      {
+        "vehicle": "JTC_COMPLAINT",
+        "claim": "ex parte contact",
+        "cite": "MCR 9.104-9.121",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "JUDICIAL_DISQUALIFICATION",
+        "claim": "personal bias/prejudice",
+        "cite": "MCR 2.003(C)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "JUDICIAL_DISQUALIFICATION",
+        "claim": "ex parte communication",
+        "cite": "MCR 2.003(C)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "JUDICIAL_DISQUALIFICATION",
+        "claim": "personal knowledge of disputed facts",
+        "cite": "MCR 2.003(C)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "JUDICIAL_DISQUALIFICATION",
+        "claim": "appearance of impropriety",
+        "cite": "MCR 2.003(C)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "MODIFY_TERMINATE_PPO",
+        "claim": "PPO issued without proper basis",
+        "cite": "MCL 600.2950",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "MODIFY_TERMINATE_PPO",
+        "claim": "due process violation",
+        "cite": "MCL 600.2950",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "MODIFY_TERMINATE_PPO",
+        "claim": "changed circumstances",
+        "cite": "MCL 600.2950",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "MSC_HABEAS_CORPUS",
+        "claim": "567-day denial of parenting time constitutes constructive restraint",
+        "cite": "In re Dettmer, 260 Mich App 356 (2004)",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "MSC_HABEAS_CORPUS",
+        "claim": "Habeas corpus statute encompasses constructive restraint of parental liberty",
+        "cite": "MCL 600.4301",
+        "complete": true,
+        "gap": null
+      },
+      {
+        "vehicle": "MSC_HABEAS_CORPUS",
+        "claim": "Suspension of all parenting time without evidentiary hearing violates substantive due process",
+        "cite": "Troxel v Granville, 530 US 57 (2000)",
+        "complete": true,
+        "gap": null
+      }
+    ]
+  },
+  "brief_sections_detail": [
+    {
+      "id": 1,
+      "right_name": "Due Process — Procedural (14th Amendment)",
+      "issue": "Whether Judge McNeill violated Father's procedural due process rights by entering 24 ex parte orders, suspending parenting time without notice or hearing, and denying Father the opportunity to be heard.",
+      "rule": "The Fourteenth Amendment provides: \"nor shall any State deprive any person of life, liberty, or property, without due process of law.\" U.S. Const. amend. XIV, § 1. Procedural due process requires notice and an opportunity to be heard before deprivation of a protected interest. Mathews v. Eldridge, 4...",
+      "application": "In the instant case, the record demonstrates systematic violation of Father's Due Process — Procedural (14th Amendment):  The cumulative effect of these violations demonstrates a pattern of constitutional deprivation that cannot be attributed to isolated error.   **Database-Verified Evidence (45 ite...",
+      "conclusion": "This Court should find that Father's Due Process — Procedural (14th Amendment) has been violated and order: (1) vacatur of all 24 ex parte orders; (2) immediate hearing with full notice; (3) restoration of parenting time pending hearing.",
+      "citations": "U.S. Const. amend. XIV § 1; Mathews v. Eldridge, 424 U.S. 319 (1976); Troxel v. Granville, 530 U.S. 57 (2000); MCR 3.207(C)(2); Boddie v. Connecticut, 401 U.S. 371 (1971)"
+    },
+    {
+      "id": 2,
+      "right_name": "Due Process — Substantive (14th Amendment)",
+      "issue": "Whether the 567+ day separation of Father from his child, without a best-interest-factor hearing or change-of-circumstances finding, violates substantive due process.",
+      "rule": "Substantive due process protects fundamental rights from government interference regardless of procedural protections. Washington v. Glucksberg, 521 U.S. 702, 720 (1997). The parent-child relationship is \"perhaps the oldest of the fundamental liberty interests.\" Troxel, 530 U.S. at 65. Any state act...",
+      "application": "In the instant case, the record demonstrates systematic violation of Father's Due Process — Substantive (14th Amendment):  The cumulative effect of these violations demonstrates a pattern of constitutional deprivation that cannot be attributed to isolated error.   **Database-Verified Evidence (32 it...",
+      "conclusion": "This Court should find that Father's Due Process — Substantive (14th Amendment) has been violated and order: (1) immediate restoration of parenting time; (2) best-interest-factor hearing under MCL 722.23; (3) compensatory parenting time for 567+ days of separation.",
+      "citations": "Troxel v. Granville, 530 U.S. 57 (2000); Santosky v. Kramer, 455 U.S. 745 (1982); Washington v. Glucksberg, 521 U.S. 702 (1997); Vodvarka v. Grasmeyer, 259 Mich. App. 499 (2003); MCL 722.23(a)-(l); MCL 722.27(1)(c)"
+    },
+    {
+      "id": 3,
+      "right_name": "Equal Protection (14th Amendment)",
+      "issue": "Whether Judge McNeill's disparate treatment of Father versus Mother — imposing sanctions, filing bonds, and restrictions on Father while imposing zero consequences on Mother for documented violations — constitutes an equal protection violation.",
+      "rule": "The Equal Protection Clause requires that all persons similarly situated be treated alike. City of Cleburne v. Cleburne Living Ctr., 473 U.S. 432, 439 (1985). Gender-based classifications in family court are subject to intermediate scrutiny. Craig v. Boren, 429 U.S. 190 (1976). A pattern of judicial...",
+      "application": "In the instant case, the record demonstrates systematic violation of Father's Equal Protection (14th Amendment):  The cumulative effect of these violations demonstrates a pattern of constitutional deprivation that cannot be attributed to isolated error.   **Database-Verified Evidence (18 items from ...",
+      "conclusion": "This Court should find that Father's Equal Protection (14th Amendment) has been violated and order: (1) equal enforcement of court orders against both parties; (2) removal of disparate sanctions; (3) vacatur of $250 bond requirement.",
+      "citations": "U.S. Const. amend. XIV § 1; City of Cleburne v. Cleburne Living Ctr., 473 U.S. 432 (1985); Craig v. Boren, 429 U.S. 190 (1976); MI Canon 2A; MI Canon 3(A)(4)"
+    },
+    {
+      "id": 4,
+      "right_name": "First Amendment — Right to Petition / Access to Courts",
+      "issue": "Whether the $250 filing bond requirement and pattern of sanctions for filing motions violates Father's First Amendment right to petition the government for redress of grievances and access the courts.",
+      "rule": "The First Amendment guarantees the right \"to petition the Government for a redress of grievances.\" U.S. Const. amend. I. Access to courts is a fundamental right. Boddie v. Connecticut, 401 U.S. 371, 374-75 (1971). Financial barriers that effectively deny court access to indigent litigants are uncons...",
+      "application": "In the instant case, the record demonstrates systematic violation of Father's First Amendment — Right to Petition / Access to Courts:  The cumulative effect of these violations demonstrates a pattern of constitutional deprivation that cannot be attributed to isolated error.   **Database-Verified Evi...",
+      "conclusion": "This Court should find that Father's First Amendment — Right to Petition / Access to Courts has been violated and order: (1) vacatur of $250 filing bond as unconstitutional; (2) prohibition on sanctions for good-faith filings; (3) declaration that Father has unrestricted access to courts.",
+      "citations": "U.S. Const. amend. I; Boddie v. Connecticut, 401 U.S. 371 (1971); California Motor Transport Co. v. Trucking Unlimited, 404 U.S. 508 (1972); MCR 2.003; BE & K Construction Co. v. NLRB, 536 U.S. 516 (2002)"
+    },
+    {
+      "id": 5,
+      "right_name": "Right to Family Integrity (14th Amendment / 9th Amendment)",
+      "issue": "Whether the systematic destruction of the father-child relationship through 567+ days of enforced separation, without adequate legal justification, violates the constitutional right to family integrity.",
+      "rule": "The Constitution protects the sanctity of the family. Moore v. City of East Cleveland, 431 U.S. 494, 503-04 (1977). Parents have a fundamental right to \"establish a home and bring up children.\" Meyer v. Nebraska, 262 U.S. 390, 399 (1923). The right to family integrity encompasses both the parent's r...",
+      "application": "In the instant case, the record demonstrates systematic violation of Father's Right to Family Integrity (14th Amendment / 9th Amendment):  The cumulative effect of these violations demonstrates a pattern of constitutional deprivation that cannot be attributed to isolated error.   **Database-Verified...",
+      "conclusion": "This Court should find that Father's Right to Family Integrity (14th Amendment / 9th Amendment) has been violated and order: (1) immediate restoration of parent-child contact; (2) therapeutic reunification plan; (3) compensatory parenting time; (4) prohibition on further separation absent exigent ci...",
+      "citations": "Moore v. City of East Cleveland, 431 U.S. 494 (1977); Meyer v. Nebraska, 262 U.S. 390 (1923); Pierce v. Society of Sisters, 268 U.S. 510 (1925); MCL 722.27a(1); MCL 722.27a(3)"
+    },
+    {
+      "id": 6,
+      "right_name": "Right to Fair and Impartial Tribunal (14th Amendment)",
+      "issue": "Whether Judge McNeill's refusal to recuse herself after documented bias, self-ruling on her own disqualification motion in violation of MCR 2.003(D), and coordination with opposing counsel denies Father the constitutional right to a fair tribunal.",
+      "rule": "Due process requires a fair trial in a fair tribunal. In re Murchison, 349 U.S. 133, 136 (1955). A judge must recuse when their \"impartiality might reasonably be questioned.\" MCR 2.003(C)(1). When a party files a motion to disqualify, the Chief Judge — not the challenged judge — must decide the moti...",
+      "application": "In the instant case, the record demonstrates systematic violation of Father's Right to Fair and Impartial Tribunal (14th Amendment):  The cumulative effect of these violations demonstrates a pattern of constitutional deprivation that cannot be attributed to isolated error.   **Database-Verified Evid...",
+      "conclusion": "This Court should find that Father's Right to Fair and Impartial Tribunal (14th Amendment) has been violated and order: (1) disqualification of Judge McNeill; (2) reassignment to a judge outside the 14th Circuit; (3) de novo review of all orders entered by Judge McNeill.",
+      "citations": "In re Murchison, 349 U.S. 133 (1955); Caperton v. A.T. Massey Coal Co., 556 U.S. 868 (2009); MCR 2.003(C)(1); MCR 2.003(D); MI Canon 2A; MI Canon 3(C)(1)"
+    }
+  ],
+  "authority_chains_detail": [
+    {
+      "id": 20,
+      "vehicle": "42 USC 1983",
+      "claim": "Deprivation of rights under color of law",
+      "cite": "42 USC § 1983; Flagg Bros. v. Brooks, 436 US 149 (1978); Monroe v. Pape, 365 US 167 (1961)",
+      "type": "FEDERAL_STATUTE",
+      "elements": "state action + deprivation of constitutional right + under color of law",
+      "evidence": "101 CRITICAL impeachment items: 66 ex parte + 35 no-hearing = systematic deprivation",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 23,
+      "vehicle": "42 USC 1983",
+      "claim": "Deprivation under color of law",
+      "cite": "42 USC 1983; Monroe v. Pape, 365 US 167 (1961)",
+      "type": "FEDERAL",
+      "elements": "state action + deprivation + color of law",
+      "evidence": "101 CRITICAL impeachment items = systematic deprivation",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 12,
+      "vehicle": "42USC1983_FEDERAL",
+      "claim": "state actor",
+      "cite": "42 USC 1983",
+      "type": "Michigan",
+      "elements": "Standard: Preponderance of evidence",
+      "evidence": "hearing,  the  Plaintiff  stated  that  he was  accosted  at the  library;  these  same  men  were  following him; he could  not say  what  their  names  were;  and stated  that  they  were  arrested.",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 13,
+      "vehicle": "42USC1983_FEDERAL",
+      "claim": "deprivation of rights",
+      "cite": "42 USC 1983",
+      "type": "Michigan",
+      "elements": "Standard: Preponderance of evidence",
+      "evidence": "See 101 CRITICAL impeachment items + 20 contradictions in litigation_context.db",
+      "complete": true,
+      "gap": "No evidence found for element: deprivation of rights"
+    },
+    {
+      "id": 14,
+      "vehicle": "42USC1983_FEDERAL",
+      "claim": "under color of law",
+      "cite": "42 USC 1983",
+      "type": "Michigan",
+      "elements": "Standard: Preponderance of evidence",
+      "evidence": "hearing  was adjourned  for  Plaintiff  to obtain  a mental  health  assessment.  The  parties  appeared  on 1 0/29/25. ThePlaintiff   West,stating(under oath)  that he did not obtain  a second  asses",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 15,
+      "vehicle": "42USC1983_FEDERAL",
+      "claim": "14th Amendment due process",
+      "cite": "42 USC 1983",
+      "type": "Michigan",
+      "elements": "Standard: Preponderance of evidence",
+      "evidence": "28/21)25 l MU Police  Report  No. FILED  2/28/2025 14th   CTRCUIT  COURT MUSKEGON  COUNTY Court address 990 Terrace  St Muskegon  MI  49442 Court telephone  no. 231-724-6251 IAReNspDoRndEeWnt'sPnIGamO",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 5,
+      "vehicle": "EMERGENCY_MOTION_RESTORE_PT",
+      "claim": "existing order",
+      "cite": "MCR 3.206(A)",
+      "type": "Michigan",
+      "elements": "Standard: Clear and convincing evidence",
+      "evidence": "Best Interest Factors  and  finds  the  following: a.  The love, affection,  and other  emotional  ties existing  bemeen  the parties  mvolved  and  the child. The Court finds that both parents have a",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 6,
+      "vehicle": "EMERGENCY_MOTION_RESTORE_PT",
+      "claim": "changed circumstances",
+      "cite": "MCR 3.206(A)",
+      "type": "Michigan",
+      "elements": "Standard: Clear and convincing evidence",
+      "evidence": "hearing. EVen !f an ObjeCt!On !S f!!ed, Fle eX parte OrCier !V!11 rema!n In effeCk and mLlSi 5e Obeied unless  changed  by a later  court  order.",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 7,
+      "vehicle": "EMERGENCY_MOTION_RESTORE_PT",
+      "claim": "best interest of child",
+      "cite": "MCR 3.206(A)",
+      "type": "Michigan",
+      "elements": "Standard: Clear and convincing evidence",
+      "evidence": "best interests  of  the child  standard  under  MCL  722.23.   This  request  is based  on significant  changes  in circumstances,  including  parental  alienation,  legal  manipulations,  financial f",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 8,
+      "vehicle": "EMERGENCY_MOTION_RESTORE_PT",
+      "claim": "established custodial environment",
+      "cite": "MCR 3.206(A)",
+      "type": "Michigan",
+      "elements": "Standard: Clear and convincing evidence",
+      "evidence": "hearing  and subpoenaed  the   which  occurred  on 1 1/26/25. Law If a  parenting   time  modification   does  not change  the  child's   established   custodial environment,  the parenting  time  mod",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 21,
+      "vehicle": "JTC Complaint",
+      "claim": "Persistent failure of judicial duties",
+      "cite": "MCR 9.104(1)-(4); MCR 9.205; In re Brown, 461 Mich 1291 (2000)",
+      "type": "MCR",
+      "elements": "persistent failure + prejudice to administration of justice + pattern",
+      "evidence": "20 contradictions: transcript-vs-order = persistent pattern per MCR 9.104(2)",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 22,
+      "vehicle": "JTC Complaint",
+      "claim": "Prejudice to administration of justice",
+      "cite": "MCR 2.003(C)(1); Cain v. Dept of Corrections, 451 Mich 470 (1996)",
+      "type": "MCR",
+      "elements": "actual prejudice + appearance of impropriety + substantial rights",
+      "evidence": "62 binding determinations + 54 due process violations in QuoteDB",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 24,
+      "vehicle": "JTC Complaint",
+      "claim": "Persistent judicial failure",
+      "cite": "MCR 9.104(1)-(4); In re Brown, 461 Mich 1291 (2000)",
+      "type": "MCR",
+      "elements": "persistent failure + prejudice to justice",
+      "evidence": "20 contradictions = persistent pattern per MCR 9.104(2)",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 25,
+      "vehicle": "JTC Complaint",
+      "claim": "Prejudice to substantial rights",
+      "cite": "MCR 2.003(C)(1); Cain v. Dept of Corrections, 451 Mich 470 (1996)",
+      "type": "MCR",
+      "elements": "actual prejudice + appearance of impropriety",
+      "evidence": "62 binding determinations + 54 due process violations",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 16,
+      "vehicle": "JTC_COMPLAINT",
+      "claim": "judicial misconduct",
+      "cite": "MCR 9.104-9.121",
+      "type": "Michigan",
+      "elements": "Standard: Preponderance of evidence",
+      "evidence": "Court Rules. This marks at least the fourth  instance of  evasion de6gned : suppress Plaintiffs  ability  to receive notice, present rebuttal, or obtain timely  relM.   ;3'i This  defect  is not  cler",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 17,
+      "vehicle": "JTC_COMPLAINT",
+      "claim": "persistent failure",
+      "cite": "MCR 9.104-9.121",
+      "type": "Michigan",
+      "elements": "Standard: Preponderance of evidence",
+      "evidence": "See 101 CRITICAL impeachment items + 20 contradictions in litigation_context.db",
+      "complete": true,
+      "gap": "No evidence found for element: persistent failure"
+    },
+    {
+      "id": 18,
+      "vehicle": "JTC_COMPLAINT",
+      "claim": "prejudice",
+      "cite": "MCR 9.104-9.121",
+      "type": "Michigan",
+      "elements": "Standard: Preponderance of evidence",
+      "evidence": "See 101 CRITICAL impeachment items + 20 contradictions in litigation_context.db",
+      "complete": true,
+      "gap": "No evidence found for element: prejudice"
+    },
+    {
+      "id": 19,
+      "vehicle": "JTC_COMPLAINT",
+      "claim": "ex parte contact",
+      "cite": "MCR 9.104-9.121",
+      "type": "Michigan",
+      "elements": "Standard: Preponderance of evidence",
+      "evidence": "HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parenting  time.  An evidentiary  hearing  was held on S",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 1,
+      "vehicle": "JUDICIAL_DISQUALIFICATION",
+      "claim": "personal bias/prejudice",
+      "cite": "MCR 2.003(C)",
+      "type": "Michigan",
+      "elements": "Standard: Whether a reasonable person would perceive bias",
+      "evidence": "HEARING ON SHOW  CAUSE   2023005907PP FOR  VIOLATING  VALID PERSONALf FOREIGN  PROTECTION ORDER Coud telephone no. Court address HALL  OF JtJSTICE  990 TERRACE, MUSKEGON  MI 49442 231-724-6251 Petitio",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 2,
+      "vehicle": "JUDICIAL_DISQUALIFICATION",
+      "claim": "ex parte communication",
+      "cite": "MCR 2.003(C)",
+      "type": "Michigan",
+      "elements": "Standard: Whether a reasonable person would perceive bias",
+      "evidence": "HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parenting  time.  An evidentiary  hearing  was held on S",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 3,
+      "vehicle": "JUDICIAL_DISQUALIFICATION",
+      "claim": "personal knowledge of disputed facts",
+      "cite": "MCR 2.003(C)",
+      "type": "Michigan",
+      "elements": "Standard: Whether a reasonable person would perceive bias",
+      "evidence": "HEARING ON SHOW  CAUSE   2023005907PP FOR  VIOLATING  VALID PERSONALf FOREIGN  PROTECTION ORDER Coud telephone no. Court address HALL  OF JtJSTICE  990 TERRACE, MUSKEGON  MI 49442 231-724-6251 Petitio",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 4,
+      "vehicle": "JUDICIAL_DISQUALIFICATION",
+      "claim": "appearance of impropriety",
+      "cite": "MCR 2.003(C)",
+      "type": "Michigan",
+      "elements": "Standard: Whether a reasonable person would perceive bias",
+      "evidence": "the court. 2.  Canon  2(A)  and  2(B)  -  Avoiding  impropriety  and  the  appearance  of impropriety;  equal  treatment.  () o   Canon  2(A)  reqriires  judges  to avoid  both  impropriety  and  the",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 9,
+      "vehicle": "MODIFY_TERMINATE_PPO",
+      "claim": "PPO issued without proper basis",
+      "cite": "MCL 600.2950",
+      "type": "Michigan",
+      "elements": "Standard: Preponderance of evidence",
+      "evidence": "hearing  on the Father's  7'h  PPO  violation  occurred.  He pled  guilty and received  45 days  in jail. Page  4 Pigors  v Watson   2024-001507-DC",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 10,
+      "vehicle": "MODIFY_TERMINATE_PPO",
+      "claim": "due process violation",
+      "cite": "MCL 600.2950",
+      "type": "Michigan",
+      "elements": "Standard: Preponderance of evidence",
+      "evidence": "hearing  mnceming  avaiiability  of health care at a reasonable cost. 5.  Retroadive  Modifiztion,  Surcharge  for  Past-Due  Support,  and  Llens  for  Unpam  Support.  Except  as pmvided by MCL 552.",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 11,
+      "vehicle": "MODIFY_TERMINATE_PPO",
+      "claim": "changed circumstances",
+      "cite": "MCL 600.2950",
+      "type": "Michigan",
+      "elements": "Standard: Preponderance of evidence",
+      "evidence": "hearing. EVen !f an ObjeCt!On !S f!!ed, Fle eX parte OrCier !V!11 rema!n In effeCk and mLlSi 5e Obeied unless  changed  by a later  court  order.",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 26,
+      "vehicle": "MSC_HABEAS_CORPUS",
+      "claim": "567-day denial of parenting time constitutes constructive restraint",
+      "cite": "In re Dettmer, 260 Mich App 356 (2004)",
+      "type": "CASE_LAW",
+      "elements": "MCL 600.4301 habeas corpus; constructive restraint; parental liberty interest; void ex parte orders",
+      "evidence": "Father denied ALL parenting time for 567+ consecutive days via ex parte orders lacking MCR 3.207(C) compliance",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 27,
+      "vehicle": "MSC_HABEAS_CORPUS",
+      "claim": "Habeas corpus statute encompasses constructive restraint of parental liberty",
+      "cite": "MCL 600.4301",
+      "type": "STATUTE",
+      "elements": "\"Every person imprisoned or otherwise restrained of his liberty, under any pretense whatever\" — includes parental separation",
+      "evidence": "Court order severing parent-child contact for 567+ days under void ex parte orders = restraint under any pretense",
+      "complete": true,
+      "gap": null
+    },
+    {
+      "id": 28,
+      "vehicle": "MSC_HABEAS_CORPUS",
+      "claim": "Suspension of all parenting time without evidentiary hearing violates substantive due process",
+      "cite": "Troxel v Granville, 530 US 57 (2000)",
+      "type": "CASE_LAW",
+      "elements": "Fundamental liberty interest; oldest recognized right; strict scrutiny for state interference; evidentiary hearing required",
+      "evidence": "The Supreme Court in Troxel v Granville, 530 US 57 (2000) recognized that the liberty interest of parents in the care, custody, and control of their children is perhaps the oldest of the fundamental l...",
+      "complete": true,
+      "gap": null
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "tool": 240,
+  "name": "Parenting Time Loss Calculator",
+  "generated": "2026-03-19T09:28:47.377227",
+  "total_days_lost": 268,
+  "periods": [
+    {
+      "start": "2024-03-26",
+      "end": "2024-05-02",
+      "days": 37,
+      "description": "Emily withheld LDW for 37 consecutive days without court order",
+      "authority_violated": "MCL 722.27a \u2014 no court order authorized withholding",
+      "holidays_missed": [],
+      "evidence": "Master Timeline (EVERY LAST DETAIL), d_drive_events"
+    },
+    {
+      "start": "2024-10-20",
+      "end": "2024-11-12",
+      "days": 23,
+      "description": "Emily withheld LDW including Halloween and birthday",
+      "authority_violated": "MCL 722.27a + existing parenting time order",
+      "holidays_missed": [
+        "Halloween (Oct 31)",
+        "LDW's Birthday (Nov 9)"
+      ],
+      "evidence": "Master Timeline, police report (Albert Watson physical removal Oct 20)"
+    },
+    {
+      "start": "2025-08-08",
+      "end": "2026-03-01",
+      "days": 205,
+      "description": "Emily's ex parte order suspended ALL parenting time (based on manufactured NS2505044)",
+      "authority_violated": "MCL 722.27a(3) \u2014 no required findings for emergency; based on fraudulent police report",
+      "holidays_missed": [
+        "LDW's Birthday (Nov 9, 2025)",
+        "Thanksgiving 2025",
+        "Christmas 2025",
+        "New Year's 2026",
+        "Valentine's Day 2026",
+        "Father's Day TBD"
+      ],
+      "evidence": "Docket, NS2505044 police report, Albert Watson admission"
+    }
+  ],
+  "shorter_events": [
+    {
+      "date": "2024-06-01",
+      "days": 1,
+      "description": "Refused weekly video call schedule"
+    },
+    {
+      "date": "2024-10-08",
+      "days": 1,
+      "description": "Ignored Halloween planning requests"
+    },
+    {
+      "date": "2024-10-27",
+      "days": 1,
+      "description": "Cody Watson hostile at exchange, refused cooperation"
+    }
+  ],
+  "holidays_missed": [
+    "Halloween (Oct 31)",
+    "LDW's Birthday (Nov 9)",
+    "LDW's Birthday (Nov 9, 2025)",
+    "Thanksgiving 2025",
+    "Christmas 2025",
+    "New Year's 2026",
+    "Valentine's Day 2026",
+    "Father's Day TBD"
+  ],
+  "damages": {
+    "compensatory": {
+      "emotional_distress_per_day": 150,
+      "lost_relationship_per_day": 100,
+      "total_compensatory": 67000
+    },
+    "statutory": {
+      "mcl_722_27a_violation": 5000,
+      "number_of_violations": 3,
+      "total_statutory": 15000
+    },
+    "section_1983": {
+      "parental_liberty_per_day": 200,
+      "punitive_multiplier": 3,
+      "compensatory": 53600,
+      "punitive": 160800,
+      "total_1983": 214400
+    },
+    "grand_total": {
+      "conservative": 82000,
+      "moderate": 135600,
+      "aggressive": 296400
+    }
+  },
+  "supporting_evidence": {
+    "interference_events": 51,
+    "evidence_quotes": 176
+  }
+}

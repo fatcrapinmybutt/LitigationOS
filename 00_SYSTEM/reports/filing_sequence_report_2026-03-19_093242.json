@@ -1,0 +1,843 @@
+{
+  "report_type": "filing_sequence_engine",
+  "generated_at": "2026-03-19T09:32:43.421470",
+  "case": "Pigors v. Watson (14th Circuit, COA 366810)",
+  "summary": {
+    "total_filings": 12,
+    "total_dependencies": 15,
+    "total_deadlines": 23,
+    "readiness_assessments": 24,
+    "evidence_quote_counts": {
+      "EMERGENCY_MOTION": 444,
+      "COA_BRIEF": 972,
+      "JTC_COMPLAINT": 397,
+      "DISQUALIFY": 90,
+      "VOID_EX_PARTE": 245,
+      "PPO": 1000,
+      "FEDERAL_1983": 110,
+      "CONTEMPT": 545,
+      "HOUSING": 277,
+      "FOC_OBJECTION": 128
+    },
+    "claims_by_issue": {
+      "ISSUE_JUDICIAL_MISCONDUCT_MRE_613(b)_—_Prior_inconsisten": {
+        "total": 126,
+        "supported": 18
+      },
+      "ISSUE_EVIDENCE_RECORD": {
+        "total": 99,
+        "supported": 55
+      },
+      "ISSUE_PROCEDURAL_HISTORY": {
+        "total": 76,
+        "supported": 71
+      },
+      "ISSUE_IMPEACHMENT_EX_PARTE_COMMUNICATION": {
+        "total": 62,
+        "supported": 55
+      },
+      "ISSUE_IMPEACHMENT_NO_HEARING": {
+        "total": 34,
+        "supported": 31
+      },
+      "ISSUE_BENCHBOOK_VIOLATION": {
+        "total": 23,
+        "supported": 23
+      },
+      "ISSUE_CONTRADICTION_INCONSISTENT_STATEMENTS": {
+        "total": 20,
+        "supported": 19
+      },
+      "ISSUE_MENTAL_HEALTH": {
+        "total": 19,
+        "supported": 19
+      },
+      "ISSUE_JUDICIAL_MISCONDUCT_MCR_2.003_(Disqualification)": {
+        "total": 17,
+        "supported": 7
+      },
+      "ISSUE_PARENTING_TIME": {
+        "total": 15,
+        "supported": 15
+      },
+      "ISSUE_PARENTING_TIME_RESTRICTION": {
+        "total": 15,
+        "supported": 11
+      },
+      "ISSUE_VIOLATION": {
+        "total": 14,
+        "supported": 7
+      },
+      "ISSUE_CUSTODY": {
+        "total": 9,
+        "supported": 7
+      },
+      "ISSUE_DENIAL": {
+        "total": 9,
+        "supported": 8
+      },
+      "ISSUE_CONTEMPT_JAIL": {
+        "total": 7,
+        "supported": 7
+      },
+      "ISSUE_BEST_INTEREST_FINDINGS": {
+        "total": 4,
+        "supported": 4
+      },
+      "ISSUE_ANGER_CHARACTERIZATION": {
+        "total": 3,
+        "supported": 2
+      },
+      "ISSUE_EX_PARTE": {
+        "total": 3,
+        "supported": 2
+      },
+      "ISSUE_CREDIBILITY_DISHONESTY": {
+        "total": 2,
+        "supported": 2
+      },
+      "ISSUE_ERRATIC_BEHAVIOR": {
+        "total": 2,
+        "supported": 2
+      },
+      "ISSUE_IMPEACHMENT_PRIOR_INCONSISTENT_STATEMENT": {
+        "total": 2,
+        "supported": 2
+      },
+      "ISSUE_JUDICIAL_MISCONDUCT_MCR_/_Canon_—_EX_PARTE_VIOLATI": {
+        "total": 2,
+        "supported": 1
+      },
+      "ISSUE_JUDICIAL_MISCONDUCT_MCR_3.206(A)": {
+        "total": 2,
+        "supported": 1
+      },
+      "ISSUE_ALIENATION_329": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_ALIENATION_FOC": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_ALIENATION_PATTERN": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_APP_ABUSE_DISCRETION": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_APP_DUE_PROCESS": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_APP_EXPEDITE": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_APP_LEGAL_STANDARD": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_APP_PLAIN_ERROR": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_APP_PRESERVATION": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_APP_REMEDY": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_APP_RIGHT_TO_BE_HEARD": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_APP_STAY": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_APP_WEIGHT_EVIDENCE": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_BEST_INTEREST_A": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_BEST_INTEREST_B": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_BEST_INTEREST_C": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_BEST_INTEREST_D": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_BEST_INTEREST_E": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_BEST_INTEREST_F": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_BEST_INTEREST_G": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_BEST_INTEREST_H": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_BEST_INTEREST_I": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_BEST_INTEREST_J": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_BEST_INTEREST_K": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_BEST_INTEREST_L": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_CHILD_RISK": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_COC_VODVARKA": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_CONDITIONS_PREREQUISITES": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_CONTEMPT_CIVIL": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_CONTEMPT_PT_DENIAL": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_DISCOVERY_COMPEL": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_DISCOVERY_SANCTIONS": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_DP_ACCESS_COURTS": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_DP_EQUAL_PROTECTION": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_DP_LIBERTY": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_DP_MATHEWS": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_DP_MEANINGFUL_HEARING": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_DP_NOTICE": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_DP_PROCEDURAL": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_DP_SUBSTANTIVE": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_ECE_DEFINITION": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_ECE_MODIFICATION": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_EX_PARTE_PROCEDURE": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_FOC_INVESTIGATION": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_FOC_OBJECTION": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_HOUSING_CORPORATE": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_HOUSING_CUSTODY_NEXUS": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_HOUSING_HABITABILITY": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_HOUSING_REPAIRS": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_HOUSING_RETALIATION": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_JM_1127": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_JM_BIAS": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_JM_CANON1": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_JM_CANON2": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_JM_CANON3": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_JM_CANON3B4": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_JM_CANON3B5": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_JM_DISQUALIFICATION": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_JM_EX_PARTE": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_JM_FINDINGS": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_JM_PRO_SE": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_JM_SANCTION": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_JUDICIAL_MISCONDUCT_MRE_608(b)_—_Specific_instance": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_JUDICIAL_MISCONDUCT_MRE_613/803(6)_—_Testimony_con": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_JUDICIAL_MISCONDUCT_MRE_616_—_Bias_of_witness": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_MCR2517_FINDINGS": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_MSC_CONFLICT": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_MSC_EXTRAORDINARY": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_MSC_PUBLIC_INTEREST": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_MSC_SIGNIFICANCE": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_MSC_SUPERINTENDING": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_PPO_ALLEGATIONS": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_PPO_DUE_PROCESS": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_PPO_EVIDENCE": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_PPO_HEARING": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_PPO_MODIFICATION": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_PPO_OVERBROAD": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_PPO_PARENTAL_RIGHTS": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_PPO_SUBJECTIVE": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_PPO_WEAPON": {
+        "total": 1,
+        "supported": 0
+      },
+      "ISSUE_PT_CONSECUTIVE": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_PT_MAKEUP": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_PT_NO_HEARING": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_PT_PRESUMPTION": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_RECUSAL_MOTION": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_SERVICE_DEFECT": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_SERVICE_NOTICE": {
+        "total": 1,
+        "supported": 1
+      },
+      "ISSUE_SUMMARY_DISP": {
+        "total": 1,
+        "supported": 1
+      }
+    }
+  },
+  "recommended_sequence": [
+    {
+      "package_id": "PKG05_COA_APPELLANT_BRIEF",
+      "filing_title": "Appellant's Brief — Michigan Court of Appeals",
+      "target_court": "Michigan Court of Appeals",
+      "target_date": "2026-04-15",
+      "tier": 1,
+      "priority_original": 1,
+      "composite_score": 128,
+      "scoring_factors": [
+        "Tier 1 priority: +40",
+        "Due in 26 days (HIGH): +30",
+        "Evidence readiness (84/100): +28",
+        "No dependencies (can file immediately): +15",
+        "Evidence quotes (972): +15"
+      ],
+      "depends_on": null,
+      "strategic_purpose": "APEX FILING. Hard deadline. Sets the constitutional framework. If COA reverses, everything cascades — custody restored, contempt vacated, damages proven. This is the ONE filing that changes everything.",
+      "status": "QUEUED",
+      "recommended_order": 1
+    },
+    {
+      "package_id": "PKG01_EMERGENCY_PARENTING_TIME",
+      "filing_title": "Emergency Motion to Restore Parenting Time",
+      "target_court": "14th Circuit Court",
+      "target_date": "2026-04-08",
+      "tier": 1,
+      "priority_original": 2,
+      "composite_score": 123,
+      "scoring_factors": [
+        "Tier 1 priority: +40",
+        "Due in 19 days (HIGH): +30",
+        "Evidence readiness (100/100): +30",
+        "No dependencies (can file immediately): +15",
+        "Evidence quotes (444): +8"
+      ],
+      "depends_on": null,
+      "strategic_purpose": "Filed BEFORE COA brief. Creates urgency at trial court level. If denied, provides additional abuse-of-discretion evidence for COA. If granted, partially moots appeal but establishes pattern. 207+ days no contact with child — emergency standard met.",
+      "status": "QUEUED",
+      "recommended_order": 2
+    },
+    {
+      "package_id": "PKG06_JTC_COMPLAINT",
+      "filing_title": "Formal Complaint Against Hon. Jenny L. McNeill",
+      "target_court": "Judicial Tenure Commission",
+      "target_date": "2026-04-22",
+      "tier": 2,
+      "priority_original": 3,
+      "composite_score": 87,
+      "scoring_factors": [
+        "Tier 2 priority: +30",
+        "Due in 33 days (MEDIUM): +20",
+        "Evidence readiness (98/100): +30",
+        "Blocked by: PKG05",
+        "Evidence quotes (397): +7"
+      ],
+      "depends_on": "PKG05",
+      "strategic_purpose": "Filed AFTER COA brief is on file. McNeill cannot retaliate once COA has jurisdiction. JTC complaint creates independent investigation track. 52 ex parte orders, 44% rate, 100% one-sided — statistical impossibility absent bias.",
+      "status": "QUEUED",
+      "recommended_order": 3
+    },
+    {
+      "package_id": "PKG09_HOUSING_COMPLAINT",
+      "filing_title": "Housing Discrimination Complaint",
+      "target_court": "Michigan Department of Civil Rights / HUD",
+      "target_date": "2026-05-30",
+      "tier": 4,
+      "priority_original": 12,
+      "composite_score": 72,
+      "scoring_factors": [
+        "Tier 4 priority: +10",
+        "Due in 71 days (LOW): +10",
+        "Evidence readiness (98/100): +30",
+        "No dependencies (can file immediately): +15",
+        "Evidence quotes (397): +7"
+      ],
+      "depends_on": null,
+      "strategic_purpose": "Separate track. Housing loss documented as direct consequence of judicial abuse. Files with MDCR or HUD — independent investigation. Supports damages calculation.",
+      "status": "QUEUED",
+      "recommended_order": 4
+    },
+    {
+      "package_id": "PKG08_CONTEMPT_MOTION",
+      "filing_title": "Motion for Contempt / Enforcement",
+      "target_court": "14th Circuit Court",
+      "target_date": "2026-05-06",
+      "tier": 4,
+      "priority_original": 9,
+      "composite_score": 68,
+      "scoring_factors": [
+        "Tier 4 priority: +10",
+        "Due in 47 days (MEDIUM): +20",
+        "Evidence readiness (97/100): +30",
+        "Blocked by: PKG03",
+        "Evidence quotes (444): +8"
+      ],
+      "depends_on": "PKG03",
+      "strategic_purpose": "Filed after disqualification motion. Seeks enforcement of any existing parenting time orders violated by Defendant. Creates record of ongoing non-compliance.",
+      "status": "QUEUED",
+      "recommended_order": 5
+    },
+    {
+      "package_id": "PKG11_SPOLIATION_NOTICE",
+      "filing_title": "Notice of Spoliation / Evidence Preservation",
+      "target_court": "14th Circuit Court",
+      "target_date": "2026-04-01",
+      "tier": 4,
+      "priority_original": 10,
+      "composite_score": 65,
+      "scoring_factors": [
+        "Tier 4 priority: +10",
+        "Due in 12 days (CRITICAL): +40",
+        "No dependencies (can file immediately): +15"
+      ],
+      "depends_on": null,
+      "strategic_purpose": "Filed BEFORE COA brief. Preserves all evidence — puts adversaries on notice that destruction of evidence creates adverse inference. Protects AppClose messages, court recordings, communications.",
+      "status": "QUEUED",
+      "recommended_order": 6
+    },
+    {
+      "package_id": "PKG10_FEDERAL_1983",
+      "filing_title": "42 U.S.C. § 1983 Civil Rights Complaint",
+      "target_court": "U.S. District Court, Western District of Michigan",
+      "target_date": "2026-06-14",
+      "tier": 3,
+      "priority_original": 7,
+      "composite_score": 62,
+      "scoring_factors": [
+        "Tier 3 priority: +20",
+        "Due in 86 days (LOW): +10",
+        "Evidence readiness (90/100): +30",
+        "Blocked by: PKG05",
+        "Evidence quotes (110): +2"
+      ],
+      "depends_on": "PKG05",
+      "strategic_purpose": "PLAN B if COA denies. Federal claim under color of state law — 14th Amendment due process, 1st Amendment retaliation, 4th Amendment seizure. Names McNeill individually (no judicial immunity for non-judicial acts). $259K-$516K+ damages. Also viable even if COA grants — federal damages separate from state custody remedy.",
+      "status": "QUEUED",
+      "recommended_order": 7
+    },
+    {
+      "package_id": "PKG04_VOID_EX_PARTE_ORDERS",
+      "filing_title": "Motion to Void Ex Parte Orders",
+      "target_court": "14th Circuit Court",
+      "target_date": "2026-04-25",
+      "tier": 2,
+      "priority_original": 5,
+      "composite_score": 54,
+      "scoring_factors": [
+        "Tier 2 priority: +30",
+        "Due in 36 days (MEDIUM): +20",
+        "Blocked by: PKG03",
+        "Evidence quotes (245): +4"
+      ],
+      "depends_on": "PKG03",
+      "strategic_purpose": "Bundles with disqualification. If McNeill is disqualified, new judge reviews all 52 ex parte orders under fresh eyes. If not disqualified, denial provides additional COA/MSC ammunition.",
+      "status": "QUEUED",
+      "recommended_order": 8
+    },
+    {
+      "package_id": "PKG07_MSC_APPLICATION",
+      "filing_title": "Application for Leave to Appeal",
+      "target_court": "Michigan Supreme Court",
+      "target_date": "2026-07-14",
+      "tier": 3,
+      "priority_original": 8,
+      "composite_score": 54,
+      "scoring_factors": [
+        "Tier 3 priority: +20",
+        "Due in 116 days (LOW): +10",
+        "Evidence readiness (72/100): +24",
+        "Blocked by: PKG05"
+      ],
+      "depends_on": "PKG05",
+      "strategic_purpose": "Filed only if COA denies. MSC takes cases of significant public interest — systematic judicial abuse in family court qualifies. Application must show COA erred on question of law.",
+      "status": "QUEUED",
+      "recommended_order": 9
+    },
+    {
+      "package_id": "PKG03_DISQUALIFY_MCNEILL",
+      "filing_title": "Motion to Disqualify Hon. Jenny L. McNeill",
+      "target_court": "14th Circuit Court",
+      "target_date": "2026-04-22",
+      "tier": 2,
+      "priority_original": 4,
+      "composite_score": 51,
+      "scoring_factors": [
+        "Tier 2 priority: +30",
+        "Due in 33 days (MEDIUM): +20",
+        "Blocked by: PKG06",
+        "Evidence quotes (90): +1"
+      ],
+      "depends_on": "PKG06",
+      "strategic_purpose": "PINCER MOVEMENT with JTC complaint. Filed same week. McNeill faces simultaneous JTC investigation and disqualification motion. MCR 2.003(C)(1) — actual bias proven by statistical pattern.",
+      "status": "QUEUED",
+      "recommended_order": 10
+    },
+    {
+      "package_id": "PKG02_VACATE_PPO",
+      "filing_title": "Motion to Vacate Personal Protection Order",
+      "target_court": "14th Circuit Court",
+      "target_date": "2026-04-29",
+      "tier": 2,
+      "priority_original": 6,
+      "composite_score": 50,
+      "scoring_factors": [
+        "Tier 2 priority: +30",
+        "Due in 40 days (MEDIUM): +20",
+        "Blocked by: PKG04"
+      ],
+      "depends_on": "PKG04",
+      "strategic_purpose": "PPO vacatur flows from voided ex parte orders. Based on illegally obtained evidence (Lori Watson MCL 750.539c recording). Fruit of felony cannot sustain PPO.",
+      "status": "QUEUED",
+      "recommended_order": 11
+    },
+    {
+      "package_id": "PKG12_FOC_OBJECTION",
+      "filing_title": "Objection to Friend of the Court Recommendation",
+      "target_court": "14th Circuit Court",
+      "target_date": "2026-05-15",
+      "tier": 4,
+      "priority_original": 11,
+      "composite_score": 47,
+      "scoring_factors": [
+        "Tier 4 priority: +10",
+        "Due in 56 days (MEDIUM): +20",
+        "No dependencies (can file immediately): +15",
+        "Evidence quotes (128): +2"
+      ],
+      "depends_on": null,
+      "strategic_purpose": "Filed if/when FOC issues new recommendation. Standing objection preserves rights. MCL 552.507.",
+      "status": "QUEUED",
+      "recommended_order": 12
+    }
+  ],
+  "critical_path_order": [
+    "PKG01_EMERGENCY_PARENTING_TIME",
+    "PKG03",
+    "PKG04",
+    "PKG02_VACATE_PPO",
+    "PKG04_VOID_EX_PARTE_ORDERS",
+    "PKG05",
+    "PKG05_COA_APPELLANT_BRIEF",
+    "PKG06",
+    "PKG03_DISQUALIFY_MCNEILL",
+    "PKG06_JTC_COMPLAINT",
+    "PKG07_MSC_APPLICATION",
+    "PKG08_CONTEMPT_MOTION",
+    "PKG09_HOUSING_COMPLAINT",
+    "PKG10_FEDERAL_1983",
+    "PKG11_SPOLIATION_NOTICE",
+    "PKG12_FOC_OBJECTION"
+  ],
+  "dependency_relationships": [
+    {
+      "id": 1,
+      "source_filing": "F3",
+      "target_filing": "F5",
+      "relationship": "enables",
+      "strength": "critical",
+      "description": "Disqualification denial enables MSC superintending control"
+    },
+    {
+      "id": 2,
+      "source_filing": "F3",
+      "target_filing": "F6",
+      "relationship": "supports",
+      "strength": "strong",
+      "description": "Bias evidence in F3 feeds JTC complaint"
+    },
+    {
+      "id": 3,
+      "source_filing": "F3",
+      "target_filing": "F9",
+      "relationship": "preserves",
+      "strength": "critical",
+      "description": "Disqualification denial = primary COA appeal issue"
+    },
+    {
+      "id": 4,
+      "source_filing": "F4",
+      "target_filing": "F5",
+      "relationship": "parallel_track",
+      "strength": "strong",
+      "description": "Federal §1983 and MSC run simultaneously for pressure"
+    },
+    {
+      "id": 5,
+      "source_filing": "F4",
+      "target_filing": "F7",
+      "relationship": "supports",
+      "strength": "medium",
+      "description": "Federal discovery exposes evidence useful in custody"
+    },
+    {
+      "id": 6,
+      "source_filing": "F5",
+      "target_filing": "F3",
+      "relationship": "escalates",
+      "strength": "critical",
+      "description": "MSC can order disqualification if circuit court won't"
+    },
+    {
+      "id": 7,
+      "source_filing": "F6",
+      "target_filing": "F3",
+      "relationship": "supports",
+      "strength": "strong",
+      "description": "JTC investigation supports judicial bias claims"
+    },
+    {
+      "id": 8,
+      "source_filing": "F6",
+      "target_filing": "F5",
+      "relationship": "supports",
+      "strength": "strong",
+      "description": "JTC findings support MSC superintending control"
+    },
+    {
+      "id": 9,
+      "source_filing": "F7",
+      "target_filing": "F8",
+      "relationship": "linked",
+      "strength": "strong",
+      "description": "Custody modification and PPO termination share evidence"
+    },
+    {
+      "id": 10,
+      "source_filing": "F7",
+      "target_filing": "F4",
+      "relationship": "feeds",
+      "strength": "medium",
+      "description": "Custody denial generates more §1983 evidence"
+    },
+    {
+      "id": 11,
+      "source_filing": "F8",
+      "target_filing": "F7",
+      "relationship": "enables",
+      "strength": "strong",
+      "description": "PPO termination removes barrier to custody modification"
+    },
+    {
+      "id": 12,
+      "source_filing": "F9",
+      "target_filing": "F3",
+      "relationship": "appeals",
+      "strength": "critical",
+      "description": "COA reviews disqualification denial"
+    },
+    {
+      "id": 13,
+      "source_filing": "F9",
+      "target_filing": "F10",
+      "relationship": "paired",
+      "strength": "critical",
+      "description": "Brief and emergency motion filed together"
+    },
+    {
+      "id": 14,
+      "source_filing": "F1",
+      "target_filing": "F2",
+      "relationship": "precedes",
+      "strength": "critical",
+      "description": "TRO preserves status quo before complaint"
+    },
+    {
+      "id": 15,
+      "source_filing": "F2",
+      "target_filing": "F4",
+      "relationship": "feeds",
+      "strength": "medium",
+      "description": "Housing violations feed federal due process claims"
+    }
+  ]
+}

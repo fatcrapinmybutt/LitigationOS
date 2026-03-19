@@ -1,0 +1,1916 @@
+{
+  "tool": "#235 — Rusco Ex Parte Communication Tracker",
+  "generated": "2026-03-19T09:34:33.931626",
+  "case": "Pigors v. Watson (2024-001507-DC)",
+  "summary": {
+    "evidence_quotes_count": 108,
+    "actor_violations_count": 100,
+    "judicial_violations_count": 18,
+    "foc_authority_count": 50,
+    "d_drive_events_count": 0,
+    "docket_events_count": 4,
+    "timeline_entries": 66,
+    "communication_types": {
+      "GENERAL_FOC_REFERENCE": 103,
+      "IMPROPER_SERVICE": 3,
+      "EXCLUDED_PARTY_COMMUNICATION": 1,
+      "HEALTHWEST_CONTACT": 1
+    },
+    "actor_violation_types": {
+      "ex_parte": 43,
+      "constitutional": 1,
+      "conspiracy": 13,
+      "aug_8_catastrophe": 1,
+      "attorney_misconduct": 228,
+      "intimidation": 5,
+      "mcr_reference": 1,
+      "financial": 1,
+      "ppo_weaponization": 2
+    },
+    "actor_violation_severity": {
+      "critical": 58,
+      "high": 237
+    }
+  },
+  "authority_map": {
+    "MCR_2.003": {
+      "cite": "MCR 2.003 (Disqualification of Judge)",
+      "text": "A judge is disqualified when the judge cannot impartially hear a case, including when there have been ex parte communications.",
+      "relevance": "Rusco's ex parte contacts with HealthWest and Emily's side taint the entire proceeding — grounds for disqualification."
+    },
+    "CANON_2_RULE_2.9": {
+      "cite": "MCJC Canon 2, Rule 2.9 (Ex Parte Communications)",
+      "text": "A judge shall not initiate, permit, or consider ex parte communications. Court staff acting on judge's behalf are subject to same restrictions.",
+      "relevance": "Rusco, as FOC acting under court authority, is bound by Canon 2 restrictions on ex parte contacts."
+    },
+    "MCL_552.507": {
+      "cite": "MCL 552.507 (FOC Duties and Limitations)",
+      "text": "FOC shall investigate and make recommendations regarding custody, parenting time, and support. FOC must serve copies of recommendations on all parties.",
+      "relevance": "Rusco failed to include Andrew in communications and bypassed proper service requirements."
+    },
+    "MCL_552.501": {
+      "cite": "MCL 552.501 (Friend of Court Act)",
+      "text": "Establishes FOC duties including investigation of custody matters. FOC must act impartially.",
+      "relevance": "Rusco's one-sided communications demonstrate bias in FOC role."
+    },
+    "MCR_3.208": {
+      "cite": "MCR 3.208 (Friend of the Court)",
+      "text": "FOC has duty to investigate and report to the court. Parties must receive copies of all FOC communications with the court.",
+      "relevance": "Emailing subpoena to judge rather than serving through clerk violates MCR service requirements."
+    }
+  },
+  "authority_mappings": [
+    {
+      "evidence_id": 245,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "hearing That  if  the Court  believes  any  restriction  on parenting  time  remains  necessary,  the Court  schedule  a focused evidentiary  hearing  where  both  sides  can present  evidence  and cr",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 367,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "notice  was filed, or by fiting a motion. If a timely objection  is received,  the friend of the court shall either  set the objection  for hearing  or complete  a support  review  with an effective  ",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 2016,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "P55406 Name  (type  or prtnt) FOC Approval:  ,,rg$4 CERTIFICATE  OF MAILING I served a copy of this u",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 13034,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "n law requires the FOC to charge support payers a $3.50 per month fee.    Surcharge on Overdue Support (A",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 13036,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "for License Reinstatement from the FOC  and pay a $45.00 fee to the clerk of court.    Who do I contact fo",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 52992,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "the hearings should be held separately.   43 The $100.00 fine must be placed in the FOC 215 Fund. The fine",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 61802,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "orders the parent to pay a fine of not more than $100, which must be deposited in the FOC fund created u",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 269068,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "(if  senUsUpulation) at!ome-y FOC Approval: ii/,'Q$4 Date Date NOTE: Whsn deviating. this form must be",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 284304,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "urs for a dispositional review and only get  paid $120.”   Focus groups echoed the survey responses.  In",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 288327,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "e met.     2.4.2 Non-IV-D Case, Arrears Less Than $500, and No Payments in Six  Months37    FOC workers w",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 290209,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "a month is assessed on payers of support orders, $2.25 of which is used to reimburse the county for FOC",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 290213,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "must pay a service fee to the FOC or the MiSDU of $3.50 a month for every month or portion of a month tha",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 290304,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "ior law. The statutory Friend of the Court fee of $3.50 per month for support orders applies to paternity",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 298225,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "00-0003-14 TWIN LAKE, MI 49457 3639 E ROSEMARY LN $6.09 0.022862 3.0000 3.0328 KOWALSKI ROSEMARY/RUSCO RO",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 300828,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "support, with significant arrearages of at least $10,000. The division focuses on parents who have the abi",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 300831,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "statement from the Friend of the Court, and pay a $45. 00 clearance fee to the Clerk of the Court. Ques",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 303172,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "n law requires the FOC to charge support payers a $3. 50 per month fee.   Surcharge on Overdue Support",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 303173,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "yment and have significant arrearages of at least $10,000.   The division focuses on those parents who have",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 303174,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "statement from the Friend of the Court, and pay a $45. 00 fee to the Clerk of the Court. Who do I conta",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 304568,
+      "date": null,
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "Ig[DIFfi gti6at+y Prepafed by: J:$ndifer'L. Balii6$,„:p5£406 RiBEMmriB$ FOC Approval: /M the '0hi8rrn.",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 7893,
+      "date": "April 1,\n2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "0 FOC10d FOC10 (4).pdf|cases=2024-001507-DC|dates=April 1, 2024;April 29, 2024;July 17, 2024;July 16, 2024|tags=k",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 7962,
+      "date": "April 1,\n2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "FOC10d FOC10  (4).pdf|cases=2024-001507-DC|dates=April 1, 2024;April 29, 2024;July 17, 2024;July 16, 2024|tags=k",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 290658,
+      "date": "April 13, 2020",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "jury trials in all courts will be adjourned until April 13, 2020.  All non-custody Friend of the Court show cause",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 305716,
+      "date": "April 26, 2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "Table of Contents: Court Rules v  Updated  April 26, 2024  Rule 3.208 Friend of the Court .................",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 305984,
+      "date": "April 26, 2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "pecial Proceedings and Actions Page 223   Updated April 26, 2024  (G) Notice to Friend of the Court. Except where",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 306029,
+      "date": "April 26, 2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "pecial Proceedings and Actions Page 267   Updated April 26, 2024  (F) Friend of the Court Facilitative and Informa",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 7852,
+      "date": "April 29,\n2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "of Custody, PT CS and FOC1 ... 07-DC|dates=A 2024;April 29, 2024;July 17, 2024;July 16, 2024|tags=kw_hit,case_id_h",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 285273,
+      "date": "April 5, 2017",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "In re LFOC Docket No. 334870. Submitted April 5, 2017, at Detroit. Decided May 4, 2017, at 9:00 a.m. AE",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 11653,
+      "date": "August 7, 2025",
+      "communication_type": "IMPROPER_SERVICE",
+      "text_excerpt": "ODY|FOC|MSC|PARENTING_TIME|dates=DATE _MONTH_DY_Y:August 7, 2025|snip=or emails to the judge (or FOC) outside of f",
+      "authorities": [
+        "MCR 3.208 (Friend of the Court)",
+        "MCL 552.507 (FOC Duties and Limitations)"
+      ],
+      "authority_keys": [
+        "MCR_3.208",
+        "MCL_552.507"
+      ]
+    },
+    {
+      "evidence_id": 11654,
+      "date": "August 7, 2025",
+      "communication_type": "IMPROPER_SERVICE",
+      "text_excerpt": "ODY|FOC|MSC|PARENTING_TIME|dates=DATE_MONTH _DY_Y:August 7, 2025|snip=or emails to the judge (or FOC) outside of f",
+      "authorities": [
+        "MCR 3.208 (Friend of the Court)",
+        "MCL 552.507 (FOC Duties and Limitations)"
+      ],
+      "authority_keys": [
+        "MCR_3.208",
+        "MCL_552.507"
+      ]
+    },
+    {
+      "evidence_id": 11655,
+      "date": "August 7, 2025",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "TODY|FOC|MSC|PARENTING_TIME|dates=DATE_MONTH_DY_Y:August 7, 2025|snip=or em ails to the judge (or FOC) outside of",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 11648,
+      "date": "August 8,\n 2025",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "ARTE|FOC|PARENTING_TIME|PPO|dates=DATE_MONTH_DY_Y:August 8,  2025|snip=spirit of PPO laws (which are meant to preve",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 52960,
+      "date": "August 8, 2023",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "n D. Capps         Director  MEMORANDUM    DATE:  August 8, 2023    TO:    Friend of the Court Directors and Refer",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 11645,
+      "date": "August 8, 2025",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "RTE|FOC|PARENTING_TIME|PPO|dates=DATE _MONTH_DY_Y:August 8, 2025|snip=spirit of PPO laws (which are meant to preve",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 11646,
+      "date": "August 8, 2025",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "RTE|FOC|PARENTING_TIM E|PPO|dates=DATE_MONTH_DY_Y:August 8, 2025|snip=spirit of PPO laws (which are meant to preve",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 11647,
+      "date": "August 8, 2025",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "RTE|FOC|PARENTING_TIME|PPO| dates=DATE_MONTH_DY_Y:August 8, 2025|snip=spirit of PPO laws (which are meant to preve",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 283329,
+      "date": "December 27, 2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "Table of Contents: Court Rules v  Updated  December 27, 2024  Rule 3.208 Friend of the Court .................",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 283597,
+      "date": "December 27, 2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "pecial Proceedings and Actions Page 223   Updated December 27, 2024  (G) Notice to Friend of the Court. Except where",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 283642,
+      "date": "December 27, 2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "pecial Proceedings and Actions Page 267   Updated December 27, 2024  (F) Friend of the Court Facilitative and Informa",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 12229,
+      "date": "January 1, 2021",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "Formula  Manual                        Effective: January 1, 2021    Friend of the Court Bureau  State Court Admini",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 59772,
+      "date": "January 1, 2025",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "Formula  Manual                        Effective: January 1, 2025    Friend of the Court Bureau  State Court Admini",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 280898,
+      "date": "January 1, 2025",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "igan Child Support Formula Manual 2025 Effective: January 1, 2025 Friend of the Court Bureau State Court Administra",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 286522,
+      "date": "January 13, 2022",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "l Institute/  Friend of the Court Bureau Webinar  January 13, 2022      Sticky Situations:  Tax Basics, Undocumented",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 61074,
+      "date": "January 28, 2026",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "pecial Proceedings and Actions Page 228   Updated January 28, 2026  (D) Exceptions to Friend of the Court Enforcemen",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 7853,
+      "date": "July\n17,\n2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "CS and FOC1 ... 07-DC|dates=A 2024;April 29, 2024;July 17, 2024;July 16, 2024|tags=kw_hit,case_id_hit,date_hit|sn",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 9196,
+      "date": "July  10,  2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "rew P <andrewjpigors@gmail.com> Sent: Wednesday,  July  10,  20241  :44  PM To: Rusco, Pamela <RuscoPa@co.muskegon.",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 9205,
+      "date": "July  10,  2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "w P <andrewjpigors@ginail.com> Sent:  Wednesday,  July  10,  2024  1:44  PM To: Rusco, Pamela <RuscoPa@co.mhiskegon",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 3640,
+      "date": "July  10, 2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "ew P <andrewjpigors@gmail com> Sent:  Wednesday,  July  10, 2024  1:44  PM To: Rusco, Pamela <RuscoPa@co muskegon.",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 9211,
+      "date": "July 10, 2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "ew  P <andrewjpigors@gmail.com> Sent: Wednesday,  July 10, 2024 1:44 PM To: Rusco, Pamela <RuscoPa@co.muskegon.mi",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    },
+    {
+      "evidence_id": 12497,
+      "date": "July 17, \n2024",
+      "communication_type": "GENERAL_FOC_REFERENCE",
+      "text_excerpt": "Children's names   78   Overnights   Effective July 17,  2024   Approved, SCAO   Form FOC 10/52, Rev. 7/21   th",
+      "authorities": [
+        "MCL 552.501 (Friend of Court Act)"
+      ],
+      "authority_keys": [
+        "MCL_552.501"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2024-07-10",
+      "source": "docket_events",
+      "type": "hearing",
+      "description": "%Grriail Andrew P <andrewjpigors@gmail.com> RE: 24-001507-DC 1 message Rusco, Pamela <RuscoPa@co.muskegon.mi.us> To: Andrew P <andrewjpigors@gmail.com: %Grriail Andrew P <andrewjpigors@gmail.com> RE: 24-001507-DC 1 message Rusco, Pamela <RuscoPa@co.muskegon.mi.us> To: Andrew P <andrewjpigors@gmail.com",
+      "severity": "MEDIUM"
+    },
+    {
+      "date": "2025-03-01",
+      "source": "docket_events",
+      "type": "recommendation",
+      "description": "FOC Recommendation: Friend of Court issues custody and parenting time recommendation",
+      "severity": "MEDIUM"
+    },
+    {
+      "date": "2025-03-01",
+      "source": "docket_events",
+      "type": "recommendation",
+      "description": "FOC Recommendation Issued: Friend of Court issues custody and parenting time recommendation in Case 2024-001507-DC",
+      "severity": "MEDIUM"
+    },
+    {
+      "date": "2025-03-03",
+      "source": "docket_events",
+      "type": "hearing",
+      "description": "M Fw: Andrew Pigors I message Vartini, Mandi <MartiniMa@co.muskegon.mi.us> ro: andrewjpigors@gmail.com <andrewjpigors@gmail.com> Mon, Mar 3, 2025 at 9: M Fw: Andrew Pigors I message Vartini, Mandi <MartiniMa@co.muskegon.mi.us> ro: andrewjpigors@gmail.com <andrewjpigors@gmail.com> Mon, Mar 3, 2025 at 9",
+      "severity": "MEDIUM"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "| Rusco ex parte communication with HealthWest | **Father** | ★★★★ |",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": ", 1:48–2:00 PM; Rusco called HealthWest to arrange clinician testimony for 11/26/2025; **prohibited ex parte contact** | 10/29/2025 | HealthWest records | MRE 902(11), 803(6) | Certified business reco",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "¶25C. **Ex Parte Contact — Rusco/HealthWest Call.** Before my second evaluation on September 11, 2025, Judge McNeill's secretary Pamela Rusco made a **12-minute phone call to HealthWest** (documented ",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "### XII-E. RUSCO EX PARTE CONTACT WITH HEALTHWEST",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "d for November 26, 2025. *(Source: healthwest2ndscanned_0001.pdf.txt.)* This constitutes prohibited ex parte communication between court staff and a prospective witness under MCR 2.003(C)(1)(a). This ",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "| 10 | Pamela Rusco | Judicial Secretary | Made 10/29/2025 ex parte call to HealthWest; gatekeeper against Father's filings |",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "conspiracy",
+      "description": "137. I complied with the Court's directive on the same day as the evaluation. On September 5, 2025, at 12:56 PM, I scanned the HealthWest evaluation at the Hackley Public Library, and at 1:36 PM, I em",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "b. **Rusco-HealthWest Ex Parte Contact (October 29, 2025, 1:48PM–2:00PM):** Court staff Pamela Rusco called HealthWest clinician Kassandra M. Gansen to arrange testimony for the November 26, 2025 hear",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "**October 29, 2025:** Continued hearing — second assessment referenced; FOC staff Pamela Rusco made ex parte contact with HealthWest; HealthWest staff subpoenaed for next hearing. *(Source: NoReply_20",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "onduct of FOC staff. Complainant alleges that FOC Case Manager Pamela Rusco engaged in **prohibited ex parte communications** and **unauthorized witness coordination** that violated Michigan Judicial ",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "7. Pamela Rusco's ex parte call to HealthWest on October 29, 2025 — to arrange testimony from the clinician who produced the second, tainted evaluation — compounded the evidentiary contamination. The ",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "1. **Tainted Evidence:** The HealthWest testimony arranged by Rusco's ex parte call was based on a second evaluation that was itself the product of court-influenced bias. This created a false evidenti",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "1. **Investigate** the October 29, 2025 ex parte telephone call and all communications between Pamela Rusco and HealthWest staff;",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "2. **Investigate** any additional ex parte communications by Rusco regarding this case;",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "| 6 | Pamela Rusco's phone logs, emails, and case notes for Case 2024-001507-DC | All dates | Ex parte contact verification |",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "0-29 | DC | **Continued hearing:** Court referenced second assessment; FOC staff Pamela Rusco had **ex parte contact** with HealthWest; HealthWest staff subpoenaed for next hearing | [PROVEN] | NoRepl",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "| Rusco calling HealthWest to arrange testimony (10/29/2025) | Prohibited ex parte witness coordination |",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "c. Court staff (Pamela Rusco) made **prohibited ex parte contact** with HealthWest on October 29, 2025",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "e Use=0, \"Neither SMI nor SED,\" LOCUS=12. Six days later, after FOC staff Pamela Rusco's prohibited ex parte contact with HealthWest, a second evaluation (09/11/2025) inexplicably elevated to Psychosi",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "| **EC-7** | Evidence of Rusco's ex parte call to HealthWest (10/29/2025) |",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "| 10 | FOC staff made prohibited ex parte contact with prospective witness | Pamela Rusco called HealthWest clinician Kassandra Gansen on 10/29/2025 at 1:48PM to arrange testimony | MCR 2.003(C)(1)(a)",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "d. **Pamela Rusco's Prohibited Ex Parte Contact:** On **October 29, 2025**, judicial secretary Pamela Rusco called HealthWest (1:48PM–2:00PM) to arrange clinician testimony for the November 26, 2025 h",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "b. **Prohibited Ex Parte Communications by Court Staff:** Pamela Rusco's October 29, 2025 phone call to HealthWest to arrange clinician testimony constitutes prohibited ex parte communication under MC",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "15. On **October 29, 2025**, court staff member Pamela Rusco made **prohibited ex parte contact** with HealthWest clinician Kassandra Gansen at 1:48 PM to arrange testimony — a violation of MCR 2.003(",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "d. Directing court staff (Pamela Rusco) to make prohibited ex parte contact with HealthWest clinicians on October 29, 2025",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "| 8 | **MCR 2.003(C)(1)(a)** | No ex parte communications by court staff | Rusco called HealthWest 10/29/2025 to arrange testimony | 10/29/2025 |",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "| **WM-6** | Evidence of Rusco's ex parte contact with HealthWest (10/29/2025) |",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "conspiracy",
+      "description": "| 10/29/2025 | Hearing — Rusco calls HealthWest same day to arrange clinician testimony | Day 82 | MCR 2.003(C)(1)(a): Prohibited ex parte contact |",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "### C. Procedural Violation: Rusco's Prohibited Ex Parte Contact",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "conspiracy",
+      "description": "fully complied with the court's directive on the same day of the evaluation. I scanned the HealthWest evaluation at the Hackley Public Library at 12:56 PM and emailed it to Pamela Rusco (Judge McNeill",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "Furthermore, court staff (Pamela Rusco, FOC Case Manager) placed a **prohibited ex parte telephone call to HealthWest on October 29, 2025** — the day before a scheduled hearing — to arrange testimony ",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "#### Canon 3(A)(4) Violation: Rusco's Prohibited Ex Parte Contact with HealthWest",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "rdinator); Officer Ella Randall, Badge #47437 (\"meth use\" opinion without drug test); Pamela Rusco (ex parte call to HealthWest, refusal to assist Father); and the Affiant's therapist at Services of H",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "conspiracy",
+      "description": "only); Todd Gilcrest (HealthWest Law Enforcement Coordinator); Officer Ella Randall, Badge #47437 (\"meth use\" opinion without drug test); Pamela Rusco (ex parte call to HealthWest, refusal to assist F",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "munication outside judicial proceedings as documented in attorney correspondence (Rusco emails) and ex parte submission routing.",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "conspiracy",
+      "description": "Evidence of improper coordination or communication outside judicial proceedings as documented in attorney correspondence (Rusco emails) and ex parte submission routing.",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "6C. **The most damning ex parte contact is documented in HealthWest's own records.** A Chart Memo dated **October 29, 2025**, signed by clinician Melissa DeAugustine, LBSW, states: *\"Pamela Rusco, Jud",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "- **October 29, 2025:** Continued hearing — second assessment referenced; Pamela Rusco made ex parte contact with HealthWest; HealthWest staff subpoenaed",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "s without correction demonstrates that the misconduct is ongoing, not historical. Moreover, Rusco's ex parte call to HealthWest on October 29, 2025 — the most recent documented act — shows continued p",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "aug_8_catastrophe",
+      "description": "Ex Parte Order Log — 24 of 55 Orders); Exhibit Q (August 8, 2025 — 5 Same-Day Ex Parte Orders); Exhibit R (Transcript — \"Staff listen to it\" Admission); Exhibit S (2024_11_29 Secretary Emails — PPO/Ja",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "49B. **On October 29, 2025**, Pamela Rusco (FOC Case Manager) placed a **prohibited ex parte telephone call to HealthWest** to arrange testimony from the clinician — the day before a scheduled hearing",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "26. On October 29, 2025, FOC staff member Pamela Rusco made prohibited ex parte contact with HealthWest regarding my evaluation, violating MCR 2.003 and the separation of judicial and clinical functio",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "- Pamela Rusco's ex parte telephone call to HealthWest on October 29, 2025 to arrange testimony — an administrative act directed or ratified by the court; and",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "Files Read This Cycle:** 52+ files across HealthWest evaluations (1st & 2nd), Rusco/Martini emails, ex parte documents, Emily's filings, collusion evidence, analysis briefs",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "| Ex parte coordination | MCR 2.003 violation | Pamela Rusco |",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "Pigors v. Watson; USB evidence chain of custody; Rusco's phone/email logs re: HealthWest | Document ex parte evidence review and court-clinician coordination |",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "* | Rusco called HealthWest 10/29/2025 to arrange clinician testimony for 11/26/2025 | **Prohibited ex parte communication** between court staff and prospective witness. MCR 2.003(C)(1)(a) violation. ",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "Combined with the Watson family's **documented pre-planning** of the ex parte filing (Albert Watson's police report admission), Rusco's **prohibited ex parte contact** with HealthWest clinicians, and ",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "ex_parte",
+      "description": "ng HealthWest pages (11–52 of 1st eval, 9–30 of 2nd eval), remaining Rusco emails (8–28), remaining ex parte docs (6–26), custody scan pages, police reports, PPO orders, docket notices, and transcript",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "conspiracy",
+      "description": "| **9** | Andrew emailed HealthWest eval to Rusco same day (09/05/2025) per judge's instructions | **Proves full compliance with court orders.** Court then issued adverse order 4 days later anyway. | ",
+      "severity": "CRITICAL"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "attorney_misconduct",
+      "description": "porting facts; alternative jurisdictional basis | FOC 416 affidavit, NIBRS records, alienation evidence, HealthWest |",
+      "severity": "HIGH"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "attorney_misconduct",
+      "description": "- HealthWest phone logs documenting Rusco contact (Exhibit E-5)",
+      "severity": "HIGH"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "attorney_misconduct",
+      "description": "| **E-3** | PIGORS-0139 – 0145 | Rusco/Martini Emails (7 pages) — includes: Rusco rejecting email filings (07/10/2024); Rusco refusing procedural guidance (\"that is legal advice\") (10/09/2024); Andrew",
+      "severity": "HIGH"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "attorney_misconduct",
+      "description": "| **E-5** | PIGORS-0149 – 0151 | HealthWest-to-Rusco Phone Call Log — 10/29/2025, 1:48–2:00 PM; Rusco called HealthWest to arrange clinician testimony for 11/26/2025; **prohibited ex parte contact** |",
+      "severity": "HIGH"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "attorney_misconduct",
+      "description": "rary, and at 1:36 PM, I emailed the evaluation to Pamela Rusco (Judge McNeill's secretary) per the judge's specific instructions: \"I was instructed by Judge McNeill to go to healthwest, and have an ex",
+      "severity": "HIGH"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "attorney_misconduct",
+      "description": "On October 29, 2025, between 1:48 PM and 2:00 PM, Pamela Rusco (Judge McNeill's judicial secretary) placed a phone call directly to HealthWest to arrange for clinician testimony at a hearing scheduled",
+      "severity": "HIGH"
+    },
+    {
+      "date": null,
+      "source": "actor_violations",
+      "type": "attorney_misconduct",
+      "description": "advantaged in this proceeding. While court staff (Pamela Rusco) told me that explaining how to submit evidence was \"legal advice\" she could not provide, the same court staff actively coordinated on be",
+      "severity": "HIGH"
+    },
+    {
+      "date": "August 7, 2025",
+      "source": "evidence_quotes",
+      "type": "IMPROPER_SERVICE",
+      "description": "ODY|FOC|MSC|PARENTING_TIME|dates=DATE _MONTH_DY_Y:August 7, 2025|snip=or emails to the judge (or FOC) outside of f",
+      "severity": "MEDIUM"
+    },
+    {
+      "date": "August 7, 2025",
+      "source": "evidence_quotes",
+      "type": "IMPROPER_SERVICE",
+      "description": "ODY|FOC|MSC|PARENTING_TIME|dates=DATE_MONTH _DY_Y:August 7, 2025|snip=or emails to the judge (or FOC) outside of f",
+      "severity": "MEDIUM"
+    },
+    {
+      "date": "March 25, 2024",
+      "source": "evidence_quotes",
+      "type": "EXCLUDED_PARTY_COMMUNICATION",
+      "description": "Close app, focusing on Lincoln’s well-being. o On March 25, 2024, Emily took LDW from Lori Watson’s home without n",
+      "severity": "MEDIUM"
+    },
+    {
+      "date": "September 1, 2025",
+      "source": "evidence_quotes",
+      "type": "IMPROPER_SERVICE",
+      "description": "ather than filing it with the clerk). On or about September 1, 2025, the judge’s secretary  (Pamela  Rusco)  emailed",
+      "severity": "MEDIUM"
+    },
+    {
+      "date": "September 5, 2025",
+      "source": "evidence_quotes",
+      "type": "HEALTHWEST_CONTACT",
+      "description": "t via email to the judge . Mr. Pigors complied on September 5, 2025, emailing the completed assessment to Ms. Rusco a",
+      "severity": "HIGH"
+    }
+  ],
+  "filing_recommendations": [
+    {
+      "filing": "Motion for Disqualification (MCR 2.003)",
+      "basis": "Rusco's ex parte communications with HealthWest and one-sided contacts with Emily's side constitute grounds for judicial disqualification.",
+      "authority": "MCR 2.003(C)(1)(b) — personal bias or prejudice; Canon 2 Rule 2.9 — ex parte communications",
+      "priority": "HIGH",
+      "evidence_count": 108
+    },
+    {
+      "filing": "Motion to Strike FOC Recommendation",
+      "basis": "FOC recommendations tainted by ex parte communications and failure to include all parties in investigation.",
+      "authority": "MCL 552.507 — FOC recommendation procedures; MCR 3.208 — FOC duties",
+      "priority": "HIGH",
+      "evidence_count": 100
+    },
+    {
+      "filing": "Complaint to FOC Ombudsman / Grievance",
+      "basis": "Pattern of one-sided communications and procedural violations by Pamela Rusco in her FOC capacity.",
+      "authority": "MCL 552.501 et seq. — Friend of Court Act",
+      "priority": "MEDIUM",
+      "evidence_count": 208
+    },
+    {
+      "filing": "JTC Complaint Supplement — FOC Collusion",
+      "basis": "Judge McNeill's coordination with Rusco on ex parte communications amplifies judicial misconduct pattern.",
+      "authority": "Mich Const Art 6 §30; MCJC Canon 2 Rule 2.9",
+      "priority": "MEDIUM",
+      "evidence_count": 18
+    },
+    {
+      "filing": "Motion to Suppress HealthWest Evaluation",
+      "basis": "HealthWest evaluation tainted by 1 documented ex parte contacts from Rusco. Fruit of poisoned tree.",
+      "authority": "MRE 403 — prejudicial effect; Due Process Clause",
+      "priority": "CRITICAL",
+      "evidence_count": 1
+    }
+  ],
+  "evidence_quotes_sample": [
+    {
+      "id": 245,
+      "document_id": 143,
+      "page": 1,
+      "category": "TRANSCRIPT",
+      "text": "hearing That  if  the Court  believes  any  restriction  on parenting  time  remains  necessary,  the Court  schedule  a focused evidentiary  hearing  where  both  sides  can present  evidence  and cross-exa",
+      "speaker": "COURT",
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 367,
+      "document_id": 542,
+      "page": 1,
+      "category": "JUDGE_ORDER",
+      "text": "notice  was filed, or by fiting a motion. If a timely objection  is received,  the friend of the court shall either  set the objection  for hearing  or complete  a support  review  with an effective  date n",
+      "speaker": "COURT",
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 2016,
+      "document_id": 689,
+      "page": 1,
+      "category": "discovery",
+      "text": "P55406 Name  (type  or prtnt) FOC Approval:  ,,rg$4 CERTIFICATE  OF MAILING I served a copy of this u",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 13034,
+      "document_id": 3895,
+      "page": 16,
+      "category": "discovery",
+      "text": "n law requires the FOC to charge support payers a $3.50 per month fee.    Surcharge on Overdue Support (A",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 13036,
+      "document_id": 3895,
+      "page": 19,
+      "category": "discovery",
+      "text": "for License Reinstatement from the FOC  and pay a $45.00 fee to the clerk of court.    Who do I contact fo",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 52992,
+      "document_id": 4962,
+      "page": 16,
+      "category": "discovery",
+      "text": "the hearings should be held separately.   43 The $100.00 fine must be placed in the FOC 215 Fund. The fine",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 61802,
+      "document_id": 5232,
+      "page": 4,
+      "category": "discovery",
+      "text": "orders the parent to pay a fine of not more than $100, which must be deposited in the FOC fund created u",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 269068,
+      "document_id": 17794,
+      "page": 13,
+      "category": "custody",
+      "text": "(if  senUsUpulation) at!ome-y FOC Approval: ii/,'Q$4 Date Date NOTE: Whsn deviating. this form must be",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 284304,
+      "document_id": 19092,
+      "page": 50,
+      "category": "report",
+      "text": "urs for a dispositional review and only get  paid $120.”   Focus groups echoed the survey responses.  In",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 288327,
+      "document_id": 19444,
+      "page": 11,
+      "category": "ppo",
+      "text": "e met.     2.4.2 Non-IV-D Case, Arrears Less Than $500, and No Payments in Six  Months37    FOC workers w",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 290209,
+      "document_id": 19597,
+      "page": 396,
+      "category": "general_court_doc",
+      "text": "a month is assessed on payers of support orders, $2.25 of which is used to reimburse the county for FOC",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 290213,
+      "document_id": 19597,
+      "page": 406,
+      "category": "general_court_doc",
+      "text": "must pay a service fee to the FOC or the MiSDU of $3.50 a month for every month or portion of a month tha",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 290304,
+      "document_id": 19597,
+      "page": 533,
+      "category": "general_court_doc",
+      "text": "ior law. The statutory Friend of the Court fee of $3.50 per month for support orders applies to paternity",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 298225,
+      "document_id": 20003,
+      "page": 175,
+      "category": "general_court_doc",
+      "text": "00-0003-14 TWIN LAKE, MI 49457 3639 E ROSEMARY LN $6.09 0.022862 3.0000 3.0328 KOWALSKI ROSEMARY/RUSCO RO",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 300828,
+      "document_id": 20036,
+      "page": 19,
+      "category": "general_court_doc",
+      "text": "support, with significant arrearages of at least $10,000. The division focuses on parents who have the abi",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 300831,
+      "document_id": 20036,
+      "page": 22,
+      "category": "general_court_doc",
+      "text": "statement from the Friend of the Court, and pay a $45. 00 clearance fee to the Clerk of the Court. Ques",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 303172,
+      "document_id": 20251,
+      "page": 18,
+      "category": "ppo",
+      "text": "n law requires the FOC to charge support payers a $3. 50 per month fee.   Surcharge on Overdue Support",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 303173,
+      "document_id": 20251,
+      "page": 18,
+      "category": "ppo",
+      "text": "yment and have significant arrearages of at least $10,000.   The division focuses on those parents who have",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 303174,
+      "document_id": 20251,
+      "page": 20,
+      "category": "ppo",
+      "text": "statement from the Friend of the Court, and pay a $45. 00 fee to the Clerk of the Court. Who do I conta",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    },
+    {
+      "id": 304568,
+      "document_id": 20492,
+      "page": 1,
+      "category": "general_court_doc",
+      "text": "Ig[DIFfi gti6at+y Prepafed by: J:$ndifer'L. Balii6$,„:p5£406 RiBEMmriB$ FOC Approval: /M the '0hi8rrn.",
+      "speaker": null,
+      "date_ref": null,
+      "source_type": "PDF_COURT_DOC",
+      "communication_type": "GENERAL_FOC_REFERENCE"
+    }
+  ],
+  "actor_violations_sample": [
+    {
+      "id": 589,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "| Rusco ex parte communication with HealthWest | **Father** | ★★★★ |",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 734,
+      "actor": "McNeill",
+      "type": "constitutional",
+      "description": "), Pamela Rusco, Jennifer Barnes (if acting under color of state law)",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 756,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": ", 1:48–2:00 PM; Rusco called HealthWest to arrange clinician testimony for 11/26/2025; **prohibited ex parte contact** | 10/29/2025 | HealthWest records | MRE 902(11), 803(6) | Certified business record documenting ex parte communication |",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 1077,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "¶25C. **Ex Parte Contact — Rusco/HealthWest Call.** Before my second evaluation on September 11, 2025, Judge McNeill's secretary Pamela Rusco made a **12-minute phone call to HealthWest** (documented in HealthWest Chart Memo dated **10/29/2025**, signed by clinician Melissa DeAugustine, LBSW). The C",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 1103,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "### XII-E. RUSCO EX PARTE CONTACT WITH HEALTHWEST",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 1104,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "d for November 26, 2025. *(Source: healthwest2ndscanned_0001.pdf.txt.)* This constitutes prohibited ex parte communication between court staff and a prospective witness under MCR 2.003(C)(1)(a). This is the same Rusco who refused to assist me with basic procedural guidance, telling me: \"As to how to",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 1117,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "| 10 | Pamela Rusco | Judicial Secretary | Made 10/29/2025 ex parte call to HealthWest; gatekeeper against Father's filings |",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 1406,
+      "actor": "McNeill",
+      "type": "conspiracy",
+      "description": "137. I complied with the Court's directive on the same day as the evaluation. On September 5, 2025, at 12:56 PM, I scanned the HealthWest evaluation at the Hackley Public Library, and at 1:36 PM, I emailed the evaluation to Pamela Rusco (Judge McNeill's secretary) per the judge's specific instructio",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 1664,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "b. **Rusco-HealthWest Ex Parte Contact (October 29, 2025, 1:48PM–2:00PM):** Court staff Pamela Rusco called HealthWest clinician Kassandra M. Gansen to arrange testimony for the November 26, 2025 hearing. This constitutes prohibited ex parte communication between court staff and a prospective witnes",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 2314,
+      "actor": "McNeill",
+      "type": "conspiracy",
+      "description": "core 12, Level One). I received these results the same day and immediately emailed them to court staff Pamela Rusco as instructed.",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 2405,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "**October 29, 2025:** Continued hearing — second assessment referenced; FOC staff Pamela Rusco made ex parte contact with HealthWest; HealthWest staff subpoenaed for next hearing. *(Source: NoReply_20260105_131630_0001.pdf, NoReply_20260105_131630_0004.pdf — PROVEN.)*",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 3342,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "onduct of FOC staff. Complainant alleges that FOC Case Manager Pamela Rusco engaged in **prohibited ex parte communications** and **unauthorized witness coordination** that violated Michigan Judicial Ethics Standards, denied Complainant due process, and tainted the evidentiary record in the above-ca",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 3345,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "7. Pamela Rusco's ex parte call to HealthWest on October 29, 2025 — to arrange testimony from the clinician who produced the second, tainted evaluation — compounded the evidentiary contamination. The clinician was prepared to testify based on an evaluation that was itself the product of improper cou",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 3350,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "1. **Tainted Evidence:** The HealthWest testimony arranged by Rusco's ex parte call was based on a second evaluation that was itself the product of court-influenced bias. This created a false evidentiary record that was used to justify continued suspension of Complainant's parenting time.",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 3351,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "1. **Investigate** the October 29, 2025 ex parte telephone call and all communications between Pamela Rusco and HealthWest staff;",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 3352,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "2. **Investigate** any additional ex parte communications by Rusco regarding this case;",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 3398,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "| 6 | Pamela Rusco's phone logs, emails, and case notes for Case 2024-001507-DC | All dates | Ex parte contact verification |",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 3499,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "0-29 | DC | **Continued hearing:** Court referenced second assessment; FOC staff Pamela Rusco had **ex parte contact** with HealthWest; HealthWest staff subpoenaed for next hearing | [PROVEN] | NoReply_20260105_131630_0001, 0004 |",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 4398,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "| Rusco calling HealthWest to arrange testimony (10/29/2025) | Prohibited ex parte witness coordination |",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    },
+    {
+      "id": 4814,
+      "actor": "McNeill",
+      "type": "ex_parte",
+      "description": "c. Court staff (Pamela Rusco) made **prohibited ex parte contact** with HealthWest on October 29, 2025",
+      "date": null,
+      "severity": "critical",
+      "linked_actors": null
+    }
+  ],
+  "judicial_violations_detail": [
+    {
+      "violation_id": "JV-d5252a76fd2c",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MRE 613(b) — Prior inconsistent statement [communication, ex_parte, ppo]",
+      "description": "ex parte communications,  fair  opportunity  to be heard).  (Michigan  Courts) II.  SUMMARY  OF  MISCONDUCT Drawing  on my  compiled  narrative,  timeline,  and  my  record,  the core  patteriis  I have deriv",
+      "evidence_refs": "MRE 613(b) — Prior inconsistent statement [communication, ex_parte, ppo]",
+      "severity": "critical"
+    },
+    {
+      "violation_id": "JV-fa40f4b09851",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MRE 613(b) — Prior inconsistent statement [child_welfare, ex_parte]",
+      "description": "ex parte  communications,  and  a fair opportunity  to be heard,  especially  given  that  Ms.Watson  is an employee  of  the  Kent County  Prosecutors  office,  Family  Court  Division  as a caseworker. III.",
+      "evidence_refs": "MRE 613(b) — Prior inconsistent statement [child_welfare, ex_parte]",
+      "severity": "critical"
+    },
+    {
+      "violation_id": "JV-c185836cc84a",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MRE 613(b) — Prior inconsistent statement [communication, ex_parte]",
+      "description": "Ex Parte Communications) 7.  Order  to obtain  HealthWest  evaluation,  followed  by  chambers-only instructions. o   After  the August  28 hearing,  Judge  McNeill  ordered  me to obtain  a psychological  as",
+      "evidence_refs": "MRE 613(b) — Prior inconsistent statement [communication, ex_parte]",
+      "severity": "critical"
+    },
+    {
+      "violation_id": "JV-b069e5676cfa",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+      "description": "[COA_EXPANSION_SUMMARY.md] A. Immediate Emergency Relief (3 items): 1. Temporary parenting time with detailed proposed schedule 2. Stay of all ex parte orders 3. Prohibit further ex parte communications",
+      "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+      "severity": "critical"
+    },
+    {
+      "violation_id": "JV-6ec2313eae16",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MRE 613(b) — Prior inconsistent statement [ex_parte]",
+      "description": "ex parte  communications,  and  a sustained  pattern  of  favoring  one  party  over  anotlier  in  family  cases undermine  public  confidence  in  the  neutrality  of  the court. 2.  Canon  2(A)  and  2(B)",
+      "evidence_refs": "MRE 613(b) — Prior inconsistent statement [ex_parte]",
+      "severity": "high"
+    },
+    {
+      "violation_id": "JV-4ac91027b22c",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MRE 613(b) — Prior inconsistent statement [ex_parte]",
+      "description": "ex parte communications.  (Michizan  Courts) o   Canon  3 requires  that  a judge  perfon'n  judicial  duties  impartially  and diligently,  and  bars  ex parte  communications  on the  merits  of  pending ma",
+      "evidence_refs": "MRE 613(b) — Prior inconsistent statement [ex_parte]",
+      "severity": "high"
+    },
+    {
+      "violation_id": "JV-095ee4cf80d8",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+      "description": "ex parte,  contraiy  to the  prohibition  on ex parte communications  about  pending  matters  in Canon  3(A)(5)  and  the requirement  that  judicial  decisions  be based  on evidence  properly  in  the reco",
+      "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+      "severity": "high"
+    },
+    {
+      "violation_id": "JV-9f3d96d7db25",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MCR / Canon — EX_PARTE_VIOLATION",
+      "description": "[PIGGYPIGGY_FINAL.md] Documented Procedural Violations (26+ identified): 1. **Ex parte suspension of parenting time** without notice or hearing (MCR 3.207(C)) 2. **Bond requirement (/motion)** — punitive barrier to access (Boddie v. Connecticut) 3. **Failure to hold timely evidentiary hearing** post-objection (MCR 3.207(C)(5)) 4. **Ex parte communi...",
+      "evidence_refs": "MCR / Canon — EX_PARTE_VIOLATION",
+      "severity": "high"
+    },
+    {
+      "violation_id": "JV-ee113f042722",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "FOC",
+      "description": "⚖️ Motion Generators (MC, FOC, §1983, Strike, Show Cause, Canon Complaint)",
+      "evidence_refs": "FOC",
+      "severity": "high"
+    },
+    {
+      "violation_id": "JV-0175787d881a",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "FOC; MCR 3.215",
+      "description": "MCR 3.215 – Domestic Relations Referee This rule applies if your case involves a Friend of the Court (FOC) referee, which is common in cases involving child custody and support modifications. It includes how to object to or appeal a referee",
+      "evidence_refs": "FOC; MCR 3.215",
+      "severity": "high"
+    },
+    {
+      "violation_id": "JV-1215d0921f43",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MCL 722.23",
+      "description": "Argue the Harm to Child's Best Interests: Emphasize how the PPO and the resulting limitations on your parenting time are detrimental to the child's well-being and contrary to the best interest factors outlined in MCL 722.23. Focus on the ch",
+      "evidence_refs": "MCL 722.23",
+      "severity": "high"
+    },
+    {
+      "violation_id": "JV-8aaaaa9ee65b",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MRE 613(b) — Prior inconsistent statement [hearing]",
+      "description": "hearing That  if  the Court  believes  any  restriction  on parenting  time  remains  necessary,  the Court  schedule  a focused evidentiary  hearing  where  both  sides  can present  evidence  and cross-exa",
+      "evidence_refs": "MRE 613(b) — Prior inconsistent statement [hearing]",
+      "severity": "medium"
+    },
+    {
+      "violation_id": "JV-c9b4f20ed7db",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MCR 2.107; MCR 2.612(C)",
+      "description": "Auto-focus on high-impact chains (e.g., Show Cause #4–6)",
+      "evidence_refs": "MCR 2.107; MCR 2.612(C)",
+      "severity": "medium"
+    },
+    {
+      "violation_id": "JV-cdab0383ed0d",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MCL 600.2950/2950a; MCR 3.207(B)",
+      "description": "While courts are supposed to be gender-neutral, some fathers feel that the system can lean in favor of the mother. Be prepared to counter this by focusing on facts and evidence rather than emotional appeals.",
+      "evidence_refs": "MCL 600.2950/2950a; MCR 3.207(B)",
+      "severity": "medium"
+    },
+    {
+      "violation_id": "JV-39e968969182",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MCL 600.2950/2950a; MCR 3.207(B)",
+      "description": "Order any additional relief the Court deems appropriate to ensure fairness in the child support arrangement and protect Lincoln’s well-being by allowing me more time and financial flexibility to focus on my son.",
+      "evidence_refs": "MCL 600.2950/2950a; MCR 3.207(B)",
+      "severity": "medium"
+    },
+    {
+      "violation_id": "JV-489c6d1eea15",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)",
+      "description": "Litigation and the Judicial Process  1 LITIGATION AND THE JUDICIAL PROCESS Traditionally, the law school courses most relevant to someone contemplating a career as a litigator have been the courses focusing on the \"law\" applied by courts in",
+      "evidence_refs": "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)",
+      "severity": "medium"
+    },
+    {
+      "violation_id": "JV-2c4ca3c89cf0",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "FOC",
+      "description": "Ensure that you request a Friend of the Court (FOC) review of your case, particularly if Emily’s PPO or financial situation affected parenting time.",
+      "evidence_refs": "FOC",
+      "severity": "low"
+    },
+    {
+      "violation_id": "JV-3c29dc71f68e",
+      "judge": "Hon. Jenny L. McNeill",
+      "canon": "FOC",
+      "description": "FOC Child Support Review: Request a FOC review of child support calculations to ensure that errors are identified and corrected, particularly in light of your proposed 50/50 arrangement.",
+      "evidence_refs": "FOC",
+      "severity": "low"
+    }
+  ],
+  "foc_authority_entries": [
+    {
+      "id": "ac09-KEY-011",
+      "type": "CASE LAW",
+      "citation": "Vodvarka v Grasmeyer, 259 Mich App 499 (2003)",
+      "text": "Change of circumstances must be established by proper evidence before modifying custody. FOC recommendations must be grounded in evidence.",
+      "relevance": "FOC accepted change-of-circumstances arguments without evidentiary support.",
+      "filing": "Lane A: Custody; Lane F: COA"
+    },
+    {
+      "id": "ac09-KEY-009",
+      "type": "CONSTITUTIONAL",
+      "citation": "Const 1963, art 6, § 26",
+      "text": "Circuit court judges have general superintending control over FOC. FOC is arm of the court, accountable to judiciary.",
+      "relevance": "McNeill's failure to supervise FOC = additional judicial misconduct ground.",
+      "filing": "Lane E: Judicial Misconduct; Lane G: MSC"
+    },
+    {
+      "id": "ac09-KEY-003",
+      "type": "COURT RULE",
+      "citation": "MCR 3.208",
+      "text": "Friend of Court — Sets forth procedures for FOC recommendations, reports, and referee hearings. FOC must follow established procedures.",
+      "relevance": "FOC procedural requirements Barnes violated — failure to follow MCR 3.208 investigation standards.",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-KEY-014",
+      "type": "COURT RULE",
+      "citation": "MCR 3.210",
+      "text": "Hearing Procedures — Court shall hold evidentiary hearing on contested custody/parenting matters. FOC recommendations are not dispositive.",
+      "relevance": "McNeill relied on FOC recommendations without holding proper evidentiary hearings.",
+      "filing": "Lane A: Custody; Lane F: COA"
+    },
+    {
+      "id": "ac09-KEY-010",
+      "type": "DUE PROCESS",
+      "citation": "US Const amend XIV; Const 1963, art 1, § 17",
+      "text": "Due process requires fair procedures. FOC recommendations that deny parenting time without adequate investigation violate procedural due process.",
+      "relevance": "567+ days separation based partly on FOC failure to investigate = due process violation.",
+      "filing": "Lane A: Custody; Lane F: COA; Lane G: MSC; Federal §1983"
+    },
+    {
+      "id": "ac09-ev-0011",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #343",
+      "text": "Ex Parte Use); §4.6 (Best-Interest  Evidence) III.  LINE-BY-LINE  OBJECTION Statement l \"Sole  custody\" 2 Drug/mental  health claims Officer  Randall 3 flash  drive 4 \"Anonymous friend\"  quote 5 Drive-byfhonk",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0015",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #594",
+      "text": "lculate child support for my minor son, LDW (born November 9, 2022). Since May 2024, the Friend of the Court (FOC) r",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0016",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #856",
+      "text": "lculate child support for my minor son, LDW (born November 9, 2022). Since May 2024, the Friend of the Court (FOC) r",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0017",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #1118",
+      "text": "lculate child support for my minor son, LDW (born November 9, 2022). Since May 2024, the Friend of the Court (FOC) r",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0018",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #1380",
+      "text": "lculate child support for my minor son, LDW (born November 9, 2022). Since May 2024, the Friend of the Court (FOC) r",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0019",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #1642",
+      "text": "lculate child support for my minor son, LDW (born November 9, 2022). Since May 2024, the Friend of the Court (FOC) r",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0020",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #1904",
+      "text": "lculate child support for my minor son, LDW (born November 9, 2022). Since May 2024, the Friend of the Court (FOC) r",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0021",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #2016",
+      "text": "P55406 Name  (type  or prtnt) FOC Approval:  ,,rg$4 CERTIFICATE  OF MAILING I served a copy of this u",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0032",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #4527",
+      "text": "lculate child support for my minor son, LDW (born November 9, 2022). Since May 2024, the Friend of the Court (FOC) r",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0033",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #4789",
+      "text": "lculate child support for my minor son, LDW (born November 9, 2022). Since May 2024, the Friend of the Court (FOC) r",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0034",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #5051",
+      "text": "lculate child support for my minor son, LDW (born November 9, 2022). Since May 2024, the Friend of the Court (FOC) r",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0035",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #5313",
+      "text": "lculate child support for my minor son, LDW (born November 9, 2022). Since May 2024, the Friend of the Court (FOC) r",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0082",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #11388",
+      "text": "P55406 Name  (type  or prtnt) FOC Approval:  ,,rg$4 CERTIFICATE  OF MAILING I served a copy of this u",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0083",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #11506",
+      "text": "P55406 Name  (type  or prtnt) FOC Approval:  ,,rg$4 CERTIFICATE  OF MAILING I served a copy of this u",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    },
+    {
+      "id": "ac09-ev-0084",
+      "type": "EVIDENCE",
+      "citation": "evidence_quotes #11645",
+      "text": "RTE|FOC|PARENTING_TIME|PPO|dates=DATE _MONTH_DY_Y:August 8, 2025|snip=spirit of PPO laws (which are meant to preve",
+      "relevance": "FOC conduct evidence — supports accountability claims",
+      "filing": "Lane A: Custody; Lane F: COA 366810"
+    }
+  ],
+  "d_drive_events_detail": [],
+  "docket_events_detail": [
+    {
+      "event_id": "DE-0188",
+      "case_id": "2024-001507-DC",
+      "date": "2024-07-10",
+      "title": "%Grriail Andrew P <andrewjpigors@gmail.com> RE: 24-001507-DC 1 message Rusco, Pamela <RuscoPa@co.muskegon.mi.us> To: Andrew P <andrewjpigors@gmail.com",
+      "type": "hearing",
+      "summary": "%Grriail Andrew P <andrewjpigors@gmail.com> RE: 24-001507-DC 1 message Rusco, Pamela <RuscoPa@co.muskegon.mi.us> To: Andrew P <andrewjpigors@gmail.com> Wed, Jul 10, 2024 at 1 :50 PM Andrew, I do not accept filings via e-mail. Any exhibits you want to..."
+    },
+    {
+      "event_id": "DE-005",
+      "case_id": "2024-001507-DC",
+      "date": "2025-03-01",
+      "title": "FOC Recommendation",
+      "type": "recommendation",
+      "summary": "Friend of Court issues custody and parenting time recommendation"
+    },
+    {
+      "event_id": "DE-0287",
+      "case_id": "2024-001507-DC",
+      "date": "2025-03-01",
+      "title": "FOC Recommendation Issued",
+      "type": "recommendation",
+      "summary": "Friend of Court issues custody and parenting time recommendation in Case 2024-001507-DC"
+    },
+    {
+      "event_id": "DE-0289",
+      "case_id": "2023-5907-PP",
+      "date": "2025-03-03",
+      "title": "M Fw: Andrew Pigors I message Vartini, Mandi <MartiniMa@co.muskegon.mi.us> ro: andrewjpigors@gmail.com <andrewjpigors@gmail.com> Mon, Mar 3, 2025 at 9",
+      "type": "hearing",
+      "summary": "M Fw: Andrew Pigors I message Vartini, Mandi <MartiniMa@co.muskegon.mi.us> ro: andrewjpigors@gmail.com <andrewjpigors@gmail.com> Mon, Mar 3, 2025 at 9:18 A Mandi Martini Assistant Public Defender Family Division-Muskegon Public Defender (231)798-541 ..."
+    }
+  ]
+}
