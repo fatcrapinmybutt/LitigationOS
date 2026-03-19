@@ -1,0 +1,12 @@
+{
+  "id": "mem-021",
+  "projectId": "litigationos",
+  "key": "entity-emily-watson",
+  "type": "feature",
+  "content": "# Entity: Emily A. Watson\n\n**Role:** Primary tortfeasor, mother of L.D.W.\n**Legal Name:** Emily A. Watson (NOT Ann, NOT M., NOT Tiffany)\n**Lanes:** A (Custody), D (PPO)\n**Cases:** 2024-001507-DC, 2023-5907-PP\n**Damages Range:** $125K–$750K\n**Counts Against:** 13 tort counts (conspiracy, IIED, tortious interference, defamation, malicious prosecution, abuse of process, fraud on court, conversion, unjust enrichment, NIED, loss of companionship)\n**Key Evidence:** 305 documented interference incidents, false CPS reports, ex parte applications, parenting time denial (569+ days)\n**Discovery:** 25 interrogatories, 25 RFPs, 30 RFAs served",
+  "tags": ["entity", "defendant", "watson", "custody", "ppo", "lane-a", "lane-d"],
+  "relationships": { "dependsOn": ["entity-watson-family"], "implements": [] },
+  "metadata": { "accessCount": 0, "createdBy": "copilot-session" },
+  "createdAt": 1741478400000,
+  "updatedAt": 1741478400000
+}

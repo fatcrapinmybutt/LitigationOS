@@ -1,0 +1,12 @@
+{
+  "id": "mem-022",
+  "projectId": "litigationos",
+  "key": "entity-judge-mcneill",
+  "type": "feature",
+  "content": "# Entity: Hon. Jenny L. McNeill\n\n**Role:** 14th Circuit Judge — judicial misconduct target\n**Lanes:** E (Misconduct), F (Appellate)\n**Cases:** 2024-001507-DC, COA 366810\n**Damages Range:** $150K–$1.5M\n**Filings Against:** JTC complaint (98/100), MSC Superintending Control (90/100), MSC Mandamus (90/100), Federal §1983, Disqualification motion (88/100)\n**Key Statistics:** 24 ex parte orders, 18.26% ex parte rate, 131 total orders, 1,127 documented violations\n**Canons Violated:** 1, 2, 2A, 3(A)(4-5), 3(B)(2,5,7), 4\n**Bias Evidence:** Ex parte rate 3.65x normal, 569+ days PT denied, 59 days jailed, $1,056.60/mo child support burden",
+  "tags": ["entity", "judge", "mcneill", "misconduct", "jtc", "msc", "lane-e", "lane-f"],
+  "relationships": { "dependsOn": [], "implements": [] },
+  "metadata": { "accessCount": 0, "createdBy": "copilot-session" },
+  "createdAt": 1741478400000,
+  "updatedAt": 1741478400000
+}

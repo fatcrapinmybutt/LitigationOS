@@ -1,0 +1,12 @@
+{
+  "id": "mem-003",
+  "projectId": "litigationos",
+  "key": "pipeline-architecture",
+  "type": "architecture",
+  "content": "16-phase pipeline: Phase 0 Safety → Phases 1-3 Inventory/Dedup/Classify → 4a-4e Extract → 5 LEXOS Brain → 6 Gap Analysis → 7a-7c Graph/Synthesis/Knowledge → 8 Lit Refresh → 9 MCP Ingest → 10-12 Judicial/Legal/Rule → 13-16 Refine/Final/Validate/Desktop. Run: python 00_SYSTEM/pipeline/run_omega_pipeline.py",
+  "tags": ["pipeline", "phases", "execution"],
+  "relationships": { "dependsOn": ["mem-001"], "implements": [] },
+  "metadata": { "accessCount": 0, "createdBy": "copilot-session" },
+  "createdAt": 1741478400000,
+  "updatedAt": 1741478400000
+}

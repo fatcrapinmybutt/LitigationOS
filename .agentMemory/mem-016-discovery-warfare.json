@@ -1,0 +1,12 @@
+{
+  "id": "mem-016",
+  "projectId": "litigationos",
+  "key": "discovery-warfare",
+  "type": "feature",
+  "content": "Discovery documents created: Lane A (custody): 25 interrogatories, 25 RFP categories, 30 RFAs (MCR 2.312 deemed-admitted weapon). Lane B (housing): 25 interrogatories to 8 defendants, 32 RFP categories. Pending: subpoenas duces tecum (MC 326), Rule 30(b)(6) deposition notices, FRCP 26(a)(1) federal initial disclosures.",
+  "tags": ["discovery", "interrogatories", "rfp", "rfa"],
+  "relationships": { "dependsOn": ["mem-002"], "implements": [] },
+  "metadata": { "accessCount": 0, "createdBy": "copilot-session" },
+  "createdAt": 1741478400000,
+  "updatedAt": 1741478400000
+}

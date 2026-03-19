@@ -1,0 +1,12 @@
+{
+  "id": "mem-015",
+  "projectId": "litigationos",
+  "key": "filing-packages-status",
+  "type": "feature",
+  "content": "26 filing packages tracked: 6 GO (JTC 98/100, Emergency PT 92, Housing Mega 90, MSC Emergency/Super/Habeas/Mandamus 90, Disqualification 88), 12 CONDITIONAL, 0 REMEDIATE. 983 [ANDREW_REQUIRED] placeholders. Total damages: $3.4M-$22.9M across 8 jurisdictions, 19 defendants.",
+  "tags": ["filings", "packages", "status", "readiness"],
+  "relationships": { "dependsOn": ["mem-008"], "implements": [] },
+  "metadata": { "accessCount": 0, "createdBy": "copilot-session" },
+  "createdAt": 1741478400000,
+  "updatedAt": 1741478400000
+}

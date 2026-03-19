@@ -1,0 +1,12 @@
+{
+  "id": "mem-009",
+  "projectId": "litigationos",
+  "key": "python-execution-safety",
+  "type": "pattern",
+  "content": "NEVER run inline Python via PowerShell python -c. ALWAYS write to temp .py file. Every script MUST set UTF-8: sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace'). Use safe_shell.py: check|run|env-check|shadow-audit. For inline: spy 'print(1+1)' after dot-sourcing agent_profile.ps1.",
+  "tags": ["python", "safety", "execution", "encoding"],
+  "relationships": { "dependsOn": ["mem-007"], "implements": [] },
+  "metadata": { "accessCount": 0, "createdBy": "copilot-session" },
+  "createdAt": 1741478400000,
+  "updatedAt": 1741478400000
+}

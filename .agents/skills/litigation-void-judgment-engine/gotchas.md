@@ -1,0 +1,22 @@
+# Gotchas — Void Judgment Engine
+
+## Anti-Rationalization Matrix
+
+| Trap | What It Looks Like | Why It's Wrong | Correct Approach |
+|------|-------------------|----------------|------------------|
+| Confusing void and voidable judgments | Treating all improper judgments as "void" when most are merely "voidable" | A void judgment is one entered without jurisdiction — it is a legal nullity. A voidable judgment has defects but is valid until set aside. The distinction controls the available remedy and timeline | Analyze whether the defect is jurisdictional (void — no time limit to attack) or procedural/substantive (voidable — must be challenged within MCR 2.612 timeframes) |
+| Missing the void judgment criteria | Claiming a judgment is void based on legal error rather than jurisdictional defect | Only three things make a judgment truly void: (1) lack of subject matter jurisdiction, (2) lack of personal jurisdiction, and (3) action taken in excess of jurisdiction. Legal errors make judgments voidable, not void | Identify the specific jurisdictional defect: Was service proper? Did the court have authority over this type of case? Was the judgment entered beyond the court's power? |
+| Relying on void judgment attack as a substitute for timely appeal | Waiting years to challenge a judgment and calling it "void" to avoid the appeal deadline | Courts scrutinize late void-judgment challenges closely; if the challenge is really about legal error rather than jurisdiction, the court will deny it as an untimely appeal | If you have a viable appeal, file the appeal within 21 days (MCR 7.204). Only rely on void judgment theory when a genuine jurisdictional defect exists |
+| Ignoring the independent action option | Only filing under MCR 2.612 when an independent action for relief may be stronger | MCR 2.612(C)(3) preserves the right to bring an independent action to relieve from judgment; this is a separate equitable remedy with potentially broader relief | Evaluate whether an independent action (separate lawsuit to vacate) is more appropriate than a motion in the existing case; consult MCR 2.612(C)(3) |
+| Failing to establish the jurisdictional defect with evidence | Making bare allegations that service was improper or jurisdiction was lacking | Courts presume jurisdiction once judgment is entered; the challenging party bears the burden of proving the jurisdictional defect | Gather documentary evidence: defective summons, proof of service deficiencies, evidence that the defendant was not properly before the court |
+
+## Failure Modes
+1. **Reclassification as Voidable**: Court determines the judgment is voidable, not void, and applies time limits. Recovery: If within 1 year, proceed under MCR 2.612(C)(1)(a)-(c); if beyond 1 year, argue MCR 2.612(C)(1)(f) "other reason justifying relief" — but success rate is low.
+2. **Laches Defense**: Challenging party waited too long even though the judgment is technically void. Recovery: Void judgments are theoretically immune from laches, but courts may consider unreasonable delay; explain why the challenge was not filed sooner.
+3. **Collateral Consequences Ignored**: Judgment vacated but downstream orders (property transfers, support payments, custody changes) already executed. Recovery: File motion addressing all collateral consequences; request status quo ante or equitable adjustment.
+4. **Due Process Challenge Failure**: Court finds that due process was satisfied despite alleged defects. Recovery: Develop the factual record more fully; obtain affidavits; appeal if the court applied the wrong legal standard.
+
+## Integration Gotchas
+- When combining with **litigation-post-judgment-specialist**, distinguish clearly between void judgment attacks (no time limit, MCR 2.612(C)(1)(d)) and post-judgment modification (requires changed circumstances, MCL 722.27). They are completely different legal vehicles.
+- Data flow from **litigation-motion-practice** requires that void judgment motions comply with MCR 2.119 procedural requirements even though the substantive relief has no time limit — you still need proper notice, a brief, and a proposed order.
+- Michigan-specific pitfall: In the 14th Circuit, judges are reluctant to vacate judgments that have been in effect for extended periods, even on void judgment grounds. Build the strongest possible evidentiary record for the jurisdictional defect and be prepared for skepticism from the bench.
