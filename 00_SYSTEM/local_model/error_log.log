@@ -1,0 +1,31 @@
+2026-02-27 00:12:30 | ERROR    | [smoke_test.test_method] NoneType: None
+2026-02-27 00:12:30 | ERROR    | Traceback:
+NoneType: None
+
+2026-02-27 00:15:30 | ERROR    | [smoke_test.test_method] NoneType: None
+2026-02-27 00:15:30 | ERROR    | Traceback:
+NoneType: None
+
+2026-02-27 00:21:16 | ERROR    | [smoke_test.test_method] NoneType: None
+2026-02-27 00:21:16 | ERROR    | Traceback:
+NoneType: None
+
+2026-02-27 00:41:56 | WARNING  | [test_integration.test_error_logger_telemetry] INTEGRATION_TEST_1772170916
+2026-02-27 00:43:02 | WARNING  | [test.check] TEST_CHECK_12345
+2026-02-27 00:43:30 | WARNING  | [test_integ.test] DIRECT_TEST_99999
+2026-02-27 00:55:36 | ERROR    | [smoke_test.test_method] NoneType: None
+2026-02-27 00:55:36 | ERROR    | Traceback:
+NoneType: None
+
+2026-02-27 00:57:01 | ERROR    | [smoke_test.test_method] NoneType: None
+2026-02-27 00:57:01 | ERROR    | Traceback:
+NoneType: None
+
+2026-02-27 07:56:17 | ERROR    | [smoke_test.test_method] NoneType: None
+2026-02-27 07:56:17 | ERROR    | Traceback:
+NoneType: None
+
+2026-02-27 19:35:34 | ERROR    | [smoke_test.test_method] NoneType: None
+2026-02-27 19:35:34 | ERROR    | Traceback:
+NoneType: None
+

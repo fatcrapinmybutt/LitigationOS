@@ -1,0 +1,4 @@
+event_id,lane,case_anchor,vehicle_code,forum,trigger_event,entered_date,signed_date,served_date,recorded_date,notes
+DE1,MEEK2,24-01507-DC,COA_APPEAL_OF_RIGHT,COA,claim_of_appeal,2026-02-20,2026-02-19,2026-02-21,,Template demo event
+DE2,MEEK2,24-01507-DC,COA_APPEAL_OF_RIGHT,COA,transcript_order,2026-02-20,,2026-02-21,,Template transcript event
+DE3,MEEK4,24-01507-DC,JTC_COMPLAINT,JTC,misconduct_packet,,,,2026-02-22,No fixed clock template demo

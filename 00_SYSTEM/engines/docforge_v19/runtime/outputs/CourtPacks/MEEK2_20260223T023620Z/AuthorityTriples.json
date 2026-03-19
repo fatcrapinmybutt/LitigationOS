@@ -1,0 +1,62 @@
+[
+  {
+    "authority_id": "AUTH::MCR 2.003",
+    "lane": "MEEK4",
+    "citation": "MCR 2.003",
+    "normalized_citation": "MCR 2.003",
+    "proposition": "Judicial disqualification / recusal preservation route.",
+    "source_url": "https://www.courts.michigan.gov/",
+    "source_url_status": "PARTIAL_ROOT",
+    "official_text_exact": null,
+    "pinpoint": null,
+    "pinpoint_status": "PARTIAL",
+    "graft_status": "PARTIAL",
+    "graft_notes": "Imported graft row but not verified exact+pinpoint",
+    "updated_at": "2026-02-23T02:36:20Z"
+  },
+  {
+    "authority_id": "AUTH::MCR 3.207(B)(1)",
+    "lane": "MEEK2",
+    "citation": "MCR 3.207(B)(1)",
+    "normalized_citation": "MCR 3.207(B)(1)",
+    "proposition": "Ex parte temporary order standard asserted in custody/PT emergency context.",
+    "source_url": "https://www.courts.michigan.gov/",
+    "source_url_status": "PARTIAL_ROOT",
+    "official_text_exact": null,
+    "pinpoint": null,
+    "pinpoint_status": "PARTIAL",
+    "graft_status": "PARTIAL",
+    "graft_notes": "Imported graft row but not verified exact+pinpoint",
+    "updated_at": "2026-02-23T02:36:20Z"
+  },
+  {
+    "authority_id": "AUTH::MCR 3.708",
+    "lane": "MEEK3",
+    "citation": "MCR 3.708",
+    "normalized_citation": "MCR 3.708",
+    "proposition": "PPO enforcement procedural framework.",
+    "source_url": "https://www.courts.michigan.gov/",
+    "source_url_status": "PARTIAL_ROOT",
+    "official_text_exact": null,
+    "pinpoint": null,
+    "pinpoint_status": "PARTIAL",
+    "graft_status": "PARTIAL",
+    "graft_notes": null,
+    "updated_at": "2026-02-23T02:36:20Z"
+  },
+  {
+    "authority_id": "AUTH::TEST-RULE-1",
+    "lane": "TEST",
+    "citation": "TEST-RULE-1",
+    "normalized_citation": "TEST-RULE-1",
+    "proposition": "Smoke-test promotion lane.",
+    "source_url": "https://example.local/test",
+    "source_url_status": "RESOLVED_VERIFIED",
+    "official_text_exact": "Synthetic verified text for smoke test; replace with real authority rows in production.",
+    "pinpoint": "TEST-RULE-1(a)",
+    "pinpoint_status": "RESOLVED_VERIFIED",
+    "graft_status": "RESOLVED_VERIFIED",
+    "graft_notes": "Bulk promoted via ingest-official-text",
+    "updated_at": "2026-02-23T02:36:20Z"
+  }
+]

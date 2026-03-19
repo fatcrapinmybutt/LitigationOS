@@ -1,0 +1,2580 @@
+{
+  "agent_id": "E04",
+  "name": "Filing Hardener",
+  "generated": "2026-03-19T07:53:30.151014",
+  "results": {
+    "F3": {
+      "filing_id": "F3",
+      "name": "Disqualification Motion (MCR 2.003)",
+      "court": "14th Circuit Court — Family Division",
+      "case_number": "2024-001507-DC",
+      "filing_fee": "$0",
+      "directory": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003",
+      "exists": true,
+      "files": [
+        {
+          "filename": "01B_BRIEF_IN_SUPPORT.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": false,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 3007,
+          "issue_count": 0
+        },
+        {
+          "filename": "01C_SUPPORTING_DOCUMENTS.md",
+          "issues": [
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: SIGN AND DATE]",
+              "line": 94,
+              "context": "[ANDREW: SIGN AND DATE]"
+            },
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: NOTARIZE BEFORE FILING]",
+              "line": 105,
+              "context": "[ANDREW: NOTARIZE BEFORE FILING]"
+            },
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: SIGN AND DATE]",
+              "line": 182,
+              "context": "[ANDREW: SIGN AND DATE]"
+            },
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: SIGN AND DATE]",
+              "line": 193,
+              "context": "[ANDREW: SIGN AND DATE]"
+            },
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: NOTARIZE BEFORE FILING]",
+              "line": 195,
+              "context": "[ANDREW: NOTARIZE BEFORE FILING]"
+            },
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: SIGN AND DATE]",
+              "line": 209,
+              "context": "[ANDREW: SIGN AND DATE]"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": true,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": true,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 1262,
+          "issue_count": 6
+        },
+        {
+          "filename": "01_MAIN_FILING.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": true,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 4391,
+          "issue_count": 0
+        },
+        {
+          "filename": "02_AFFIDAVIT.md",
+          "issues": [
+            {
+              "type": "BLANK_LINE",
+              "match": "___________________________",
+              "line": 64,
+              "context": "___________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "_________________",
+              "line": 66,
+              "context": "Dated: _________________, 2026"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "__________",
+              "line": 77,
+              "context": "Subscribed and sworn to before me this ____ day of __________, 2026,"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "___________________________",
+              "line": 81,
+              "context": "___________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "__________",
+              "line": 84,
+              "context": "My Commission Expires: __________"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": true,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 417,
+          "issue_count": 5
+        },
+        {
+          "filename": "03_EXHIBIT_INDEX.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": false,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": false,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 18,
+          "issue_count": 0
+        },
+        {
+          "filename": "04_CERTIFICATE_OF_SERVICE.md",
+          "issues": [
+            {
+              "type": "BLANK_LINE",
+              "match": "_________________",
+              "line": 4,
+              "context": "I hereby certify that on _________________, 2026, I served a true copy of the"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "_________________________________",
+              "line": 12,
+              "context": "_________________________________"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": false,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": false,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 49,
+          "issue_count": 2
+        },
+        {
+          "filename": "05_COURT_FORMS_CHECKLIST.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": false,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": false,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 142,
+          "issue_count": 0
+        },
+        {
+          "filename": "06_CAPTION.md",
+          "issues": [
+            {
+              "type": "BLANK_LINE",
+              "match": "__________________________________________",
+              "line": 12,
+              "context": "__________________________________________/"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 28,
+          "issue_count": 1
+        },
+        {
+          "filename": "07_FORM_FILL_GUIDE.md",
+          "issues": [
+            {
+              "type": "DATE_NEEDED",
+              "match": "[DATE OF FILING]",
+              "line": 18,
+              "context": "| Filing date | [DATE OF FILING] |"
+            },
+            {
+              "type": "DATE_NEEDED",
+              "match": "[DATE OF FILING]",
+              "line": 37,
+              "context": "| Filing date | [DATE OF FILING] |"
+            },
+            {
+              "type": "DATE_NEEDED",
+              "match": "[DATE OF SERVICE]",
+              "line": 42,
+              "context": "| Date of service | [DATE OF SERVICE] |"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 339,
+          "issue_count": 3
+        },
+        {
+          "filename": "08_HEARING_PREP_KIT.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 712,
+          "issue_count": 0
+        },
+        {
+          "filename": "11_COURTROOM_PROTOCOL.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": false,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 1242,
+          "issue_count": 0
+        },
+        {
+          "filename": "ASSEMBLED_FILING.md",
+          "issues": [
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: SIGN AND DATE]",
+              "line": 905,
+              "context": "[ANDREW: SIGN AND DATE]"
+            },
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: NOTARIZE BEFORE FILING]",
+              "line": 916,
+              "context": "[ANDREW: NOTARIZE BEFORE FILING]"
+            },
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: SIGN AND DATE]",
+              "line": 1015,
+              "context": "[ANDREW: SIGN AND DATE]"
+            },
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: SIGN AND DATE]",
+              "line": 1032,
+              "context": "[ANDREW: SIGN AND DATE]"
+            },
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: NOTARIZE BEFORE FILING]",
+              "line": 1041,
+              "context": "[ANDREW: NOTARIZE BEFORE FILING]"
+            },
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: SIGN AND DATE]",
+              "line": 1055,
+              "context": "[ANDREW: SIGN AND DATE]"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "__________________________________________________",
+              "line": 14,
+              "context": "__________________________________________________/"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 1067,
+              "context": "____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________",
+              "line": 1074,
+              "context": "Date: ______________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "_________",
+              "line": 1076,
+              "context": "Subscribed and sworn to before me this ___ day of _________, 20___"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 1078,
+              "context": "____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________",
+              "line": 1081,
+              "context": "My commission expires: ______________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________",
+              "line": 1087,
+              "context": "I hereby certify that on ______________, 20___, I served a copy"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 1103,
+              "context": "____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________",
+              "line": 1110,
+              "context": "Date: ______________"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": true,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": true,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 15714,
+          "issue_count": 15
+        },
+        {
+          "filename": "PACKAGE_MANIFEST.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": false,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 212,
+          "issue_count": 0
+        }
+      ],
+      "total_issues": 32,
+      "blocker_count": 12,
+      "total_words": 27533,
+      "quality_score": 56,
+      "hardening_tasks": [
+        {
+          "priority": "BLOCKER",
+          "file": "01C_SUPPORTING_DOCUMENTS.md",
+          "line": 94,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: SIGN AND DATE]",
+          "action": "Fix ANDREW_ACTION in 01C_SUPPORTING_DOCUMENTS.md at line 94"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "01C_SUPPORTING_DOCUMENTS.md",
+          "line": 105,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: NOTARIZE BEFORE FILING]",
+          "action": "Fix ANDREW_ACTION in 01C_SUPPORTING_DOCUMENTS.md at line 105"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "01C_SUPPORTING_DOCUMENTS.md",
+          "line": 182,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: SIGN AND DATE]",
+          "action": "Fix ANDREW_ACTION in 01C_SUPPORTING_DOCUMENTS.md at line 182"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "01C_SUPPORTING_DOCUMENTS.md",
+          "line": 193,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: SIGN AND DATE]",
+          "action": "Fix ANDREW_ACTION in 01C_SUPPORTING_DOCUMENTS.md at line 193"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "01C_SUPPORTING_DOCUMENTS.md",
+          "line": 195,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: NOTARIZE BEFORE FILING]",
+          "action": "Fix ANDREW_ACTION in 01C_SUPPORTING_DOCUMENTS.md at line 195"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "01C_SUPPORTING_DOCUMENTS.md",
+          "line": 209,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: SIGN AND DATE]",
+          "action": "Fix ANDREW_ACTION in 01C_SUPPORTING_DOCUMENTS.md at line 209"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 64,
+          "type": "BLANK_LINE",
+          "match": "___________________________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 64"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 66,
+          "type": "BLANK_LINE",
+          "match": "_________________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 66"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 77,
+          "type": "BLANK_LINE",
+          "match": "__________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 77"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 81,
+          "type": "BLANK_LINE",
+          "match": "___________________________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 81"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 84,
+          "type": "BLANK_LINE",
+          "match": "__________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 84"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "04_CERTIFICATE_OF_SERVICE.md",
+          "line": 4,
+          "type": "BLANK_LINE",
+          "match": "_________________",
+          "action": "Fix BLANK_LINE in 04_CERTIFICATE_OF_SERVICE.md at line 4"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "04_CERTIFICATE_OF_SERVICE.md",
+          "line": 12,
+          "type": "BLANK_LINE",
+          "match": "_________________________________",
+          "action": "Fix BLANK_LINE in 04_CERTIFICATE_OF_SERVICE.md at line 12"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "06_CAPTION.md",
+          "line": 12,
+          "type": "BLANK_LINE",
+          "match": "__________________________________________",
+          "action": "Fix BLANK_LINE in 06_CAPTION.md at line 12"
+        },
+        {
+          "priority": "HIGH",
+          "file": "07_FORM_FILL_GUIDE.md",
+          "line": 18,
+          "type": "DATE_NEEDED",
+          "match": "[DATE OF FILING]",
+          "action": "Fix DATE_NEEDED in 07_FORM_FILL_GUIDE.md at line 18"
+        },
+        {
+          "priority": "HIGH",
+          "file": "07_FORM_FILL_GUIDE.md",
+          "line": 37,
+          "type": "DATE_NEEDED",
+          "match": "[DATE OF FILING]",
+          "action": "Fix DATE_NEEDED in 07_FORM_FILL_GUIDE.md at line 37"
+        },
+        {
+          "priority": "HIGH",
+          "file": "07_FORM_FILL_GUIDE.md",
+          "line": 42,
+          "type": "DATE_NEEDED",
+          "match": "[DATE OF SERVICE]",
+          "action": "Fix DATE_NEEDED in 07_FORM_FILL_GUIDE.md at line 42"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 905,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: SIGN AND DATE]",
+          "action": "Fix ANDREW_ACTION in ASSEMBLED_FILING.md at line 905"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 916,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: NOTARIZE BEFORE FILING]",
+          "action": "Fix ANDREW_ACTION in ASSEMBLED_FILING.md at line 916"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 1015,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: SIGN AND DATE]",
+          "action": "Fix ANDREW_ACTION in ASSEMBLED_FILING.md at line 1015"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 1032,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: SIGN AND DATE]",
+          "action": "Fix ANDREW_ACTION in ASSEMBLED_FILING.md at line 1032"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 1041,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: NOTARIZE BEFORE FILING]",
+          "action": "Fix ANDREW_ACTION in ASSEMBLED_FILING.md at line 1041"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 1055,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: SIGN AND DATE]",
+          "action": "Fix ANDREW_ACTION in ASSEMBLED_FILING.md at line 1055"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 14,
+          "type": "BLANK_LINE",
+          "match": "__________________________________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 14"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 1067,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 1067"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 1074,
+          "type": "BLANK_LINE",
+          "match": "______________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 1074"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 1076,
+          "type": "BLANK_LINE",
+          "match": "_________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 1076"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 1078,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 1078"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 1081,
+          "type": "BLANK_LINE",
+          "match": "______________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 1081"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 1087,
+          "type": "BLANK_LINE",
+          "match": "______________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 1087"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 1103,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 1103"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 1110,
+          "type": "BLANK_LINE",
+          "match": "______________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 1110"
+        }
+      ]
+    },
+    "F6": {
+      "filing_id": "F6",
+      "name": "JTC Complaint",
+      "court": "Judicial Tenure Commission",
+      "case_number": "JTC-TBD",
+      "filing_fee": "$0",
+      "directory": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT",
+      "exists": true,
+      "files": [
+        {
+          "filename": "01_MAIN_FILING.md",
+          "issues": [
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: SIGN AND DATE]",
+              "line": 529,
+              "context": "[ANDREW: SIGN AND DATE]"
+            },
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: SIGN AND DATE]",
+              "line": 569,
+              "context": "[ANDREW: SIGN AND DATE]"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________",
+              "line": 12,
+              "context": "**Date of Filing:** ____________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________",
+              "line": 525,
+              "context": "**Date:** ____________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 527,
+              "context": "**Signature:** ____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________",
+              "line": 544,
+              "context": "**COUNTY OF ____________________**"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______",
+              "line": 546,
+              "context": "Subscribed and sworn to (or affirmed) before me on this ______ day of __________________, 20____, by **Andrew James Pigo"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "__________________",
+              "line": 546,
+              "context": "Subscribed and sworn to (or affirmed) before me on this ______ day of __________________, 20____, by **Andrew James Pigo"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 548,
+              "context": "**Signature:** ____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________",
+              "line": 550,
+              "context": "County of ____________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________",
+              "line": 552,
+              "context": "**My Commission Expires:** ____________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________",
+              "line": 554,
+              "context": "**Acting in the County of:** ____________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 562,
+              "context": "____________________________"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": true,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": true,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 7717,
+          "issue_count": 13
+        },
+        {
+          "filename": "02_AFFIDAVIT.md",
+          "issues": [
+            {
+              "type": "BLANK_LINE",
+              "match": "___________________________",
+              "line": 60,
+              "context": "___________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "_________________",
+              "line": 62,
+              "context": "Dated: _________________, 2026"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "__________",
+              "line": 73,
+              "context": "Subscribed and sworn to before me this ____ day of __________, 2026,"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "___________________________",
+              "line": 77,
+              "context": "___________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "__________",
+              "line": 80,
+              "context": "My Commission Expires: __________"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": true,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 381,
+          "issue_count": 5
+        },
+        {
+          "filename": "03_EXHIBIT_INDEX.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": false,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": false,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 17,
+          "issue_count": 0
+        },
+        {
+          "filename": "04_CERTIFICATE_OF_SERVICE.md",
+          "issues": [
+            {
+              "type": "BLANK_LINE",
+              "match": "_________________",
+              "line": 4,
+              "context": "I hereby certify that on _________________, 2026, I served a true copy of the"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "_________________________________",
+              "line": 12,
+              "context": "_________________________________"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": false,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": false,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 49,
+          "issue_count": 2
+        },
+        {
+          "filename": "05_COURT_FORMS_CHECKLIST.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": false,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": false,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 75,
+          "issue_count": 0
+        },
+        {
+          "filename": "06_CAPTION.md",
+          "issues": [
+            {
+              "type": "BLANK_LINE",
+              "match": "__________________________________________",
+              "line": 12,
+              "context": "__________________________________________/"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 26,
+          "issue_count": 1
+        },
+        {
+          "filename": "ASSEMBLED_FILING.md",
+          "issues": [
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: SIGN AND DATE]",
+              "line": 631,
+              "context": "[ANDREW: SIGN AND DATE]"
+            },
+            {
+              "type": "ANDREW_ACTION",
+              "match": "[ANDREW: SIGN AND DATE]",
+              "line": 671,
+              "context": "[ANDREW: SIGN AND DATE]"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "__________________________________________________",
+              "line": 11,
+              "context": "__________________________________________________/"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________",
+              "line": 114,
+              "context": "**Date of Filing:** ____________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________",
+              "line": 627,
+              "context": "**Date:** ____________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 629,
+              "context": "**Signature:** ____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________",
+              "line": 646,
+              "context": "**COUNTY OF ____________________**"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______",
+              "line": 648,
+              "context": "Subscribed and sworn to (or affirmed) before me on this ______ day of __________________, 20____, by **Andrew James Pigo"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "__________________",
+              "line": 648,
+              "context": "Subscribed and sworn to (or affirmed) before me on this ______ day of __________________, 20____, by **Andrew James Pigo"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 650,
+              "context": "**Signature:** ____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________",
+              "line": 652,
+              "context": "County of ____________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________",
+              "line": 654,
+              "context": "**My Commission Expires:** ____________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________",
+              "line": 656,
+              "context": "**Acting in the County of:** ____________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 664,
+              "context": "____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 704,
+              "context": "____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________",
+              "line": 711,
+              "context": "Date: ______________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "_________",
+              "line": 713,
+              "context": "Subscribed and sworn to before me this ___ day of _________, 20___"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 715,
+              "context": "____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________",
+              "line": 718,
+              "context": "My commission expires: ______________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________",
+              "line": 724,
+              "context": "I hereby certify that on ______________, 20___, I served a copy"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 736,
+              "context": "____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________",
+              "line": 743,
+              "context": "Date: ______________"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": true,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": true,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 8395,
+          "issue_count": 22
+        },
+        {
+          "filename": "PACKAGE_MANIFEST.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": false,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 166,
+          "issue_count": 0
+        }
+      ],
+      "total_issues": 43,
+      "blocker_count": 4,
+      "total_words": 16826,
+      "quality_score": 52,
+      "hardening_tasks": [
+        {
+          "priority": "BLOCKER",
+          "file": "01_MAIN_FILING.md",
+          "line": 529,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: SIGN AND DATE]",
+          "action": "Fix ANDREW_ACTION in 01_MAIN_FILING.md at line 529"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "01_MAIN_FILING.md",
+          "line": 569,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: SIGN AND DATE]",
+          "action": "Fix ANDREW_ACTION in 01_MAIN_FILING.md at line 569"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 12,
+          "type": "BLANK_LINE",
+          "match": "____________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 12"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 525,
+          "type": "BLANK_LINE",
+          "match": "____________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 525"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 527,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 527"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 544,
+          "type": "BLANK_LINE",
+          "match": "____________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 544"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 546,
+          "type": "BLANK_LINE",
+          "match": "______",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 546"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 546,
+          "type": "BLANK_LINE",
+          "match": "__________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 546"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 548,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 548"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 550,
+          "type": "BLANK_LINE",
+          "match": "____________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 550"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 552,
+          "type": "BLANK_LINE",
+          "match": "____________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 552"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 554,
+          "type": "BLANK_LINE",
+          "match": "____________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 554"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 562,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 562"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 60,
+          "type": "BLANK_LINE",
+          "match": "___________________________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 60"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 62,
+          "type": "BLANK_LINE",
+          "match": "_________________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 62"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 73,
+          "type": "BLANK_LINE",
+          "match": "__________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 73"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 77,
+          "type": "BLANK_LINE",
+          "match": "___________________________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 77"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 80,
+          "type": "BLANK_LINE",
+          "match": "__________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 80"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "04_CERTIFICATE_OF_SERVICE.md",
+          "line": 4,
+          "type": "BLANK_LINE",
+          "match": "_________________",
+          "action": "Fix BLANK_LINE in 04_CERTIFICATE_OF_SERVICE.md at line 4"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "04_CERTIFICATE_OF_SERVICE.md",
+          "line": 12,
+          "type": "BLANK_LINE",
+          "match": "_________________________________",
+          "action": "Fix BLANK_LINE in 04_CERTIFICATE_OF_SERVICE.md at line 12"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "06_CAPTION.md",
+          "line": 12,
+          "type": "BLANK_LINE",
+          "match": "__________________________________________",
+          "action": "Fix BLANK_LINE in 06_CAPTION.md at line 12"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 631,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: SIGN AND DATE]",
+          "action": "Fix ANDREW_ACTION in ASSEMBLED_FILING.md at line 631"
+        },
+        {
+          "priority": "BLOCKER",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 671,
+          "type": "ANDREW_ACTION",
+          "match": "[ANDREW: SIGN AND DATE]",
+          "action": "Fix ANDREW_ACTION in ASSEMBLED_FILING.md at line 671"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 11,
+          "type": "BLANK_LINE",
+          "match": "__________________________________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 11"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 114,
+          "type": "BLANK_LINE",
+          "match": "____________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 114"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 627,
+          "type": "BLANK_LINE",
+          "match": "____________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 627"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 629,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 629"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 646,
+          "type": "BLANK_LINE",
+          "match": "____________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 646"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 648,
+          "type": "BLANK_LINE",
+          "match": "______",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 648"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 648,
+          "type": "BLANK_LINE",
+          "match": "__________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 648"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 650,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 650"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 652,
+          "type": "BLANK_LINE",
+          "match": "____________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 652"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 654,
+          "type": "BLANK_LINE",
+          "match": "____________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 654"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 656,
+          "type": "BLANK_LINE",
+          "match": "____________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 656"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 664,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 664"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 704,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 704"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 711,
+          "type": "BLANK_LINE",
+          "match": "______________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 711"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 713,
+          "type": "BLANK_LINE",
+          "match": "_________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 713"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 715,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 715"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 718,
+          "type": "BLANK_LINE",
+          "match": "______________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 718"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 724,
+          "type": "BLANK_LINE",
+          "match": "______________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 724"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 736,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 736"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 743,
+          "type": "BLANK_LINE",
+          "match": "______________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 743"
+        }
+      ]
+    },
+    "F10": {
+      "filing_id": "F10",
+      "name": "COA Emergency Motion",
+      "court": "Michigan Court of Appeals",
+      "case_number": "COA 366810",
+      "filing_fee": "$0 (IFP)",
+      "directory": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION",
+      "exists": true,
+      "files": [
+        {
+          "filename": "01_MAIN_FILING.md",
+          "issues": [
+            {
+              "type": "BLANK_LINE",
+              "match": "___________________",
+              "line": 176,
+              "context": "Dated: ___________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________________________",
+              "line": 178,
+              "context": "______________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "___________________",
+              "line": 192,
+              "context": "Dated: ___________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________________________",
+              "line": 194,
+              "context": "______________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "_________________",
+              "line": 201,
+              "context": "I, Andrew James Pigors, certify that on _________________, 2026, I served a true copy of this Emergency Motion for Immed"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________________________",
+              "line": 217,
+              "context": "______________________________"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": true,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": true,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 2131,
+          "issue_count": 6
+        },
+        {
+          "filename": "02_AFFIDAVIT.md",
+          "issues": [
+            {
+              "type": "BLANK_LINE",
+              "match": "___________________________",
+              "line": 60,
+              "context": "___________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "_________________",
+              "line": 62,
+              "context": "Dated: _________________, 2026"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "__________",
+              "line": 73,
+              "context": "Subscribed and sworn to before me this ____ day of __________, 2026,"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "___________________________",
+              "line": 77,
+              "context": "___________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "__________",
+              "line": 80,
+              "context": "My Commission Expires: __________"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": true,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 382,
+          "issue_count": 5
+        },
+        {
+          "filename": "03_EXHIBIT_INDEX.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": false,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": false,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 19,
+          "issue_count": 0
+        },
+        {
+          "filename": "04_CERTIFICATE_OF_SERVICE.md",
+          "issues": [
+            {
+              "type": "BLANK_LINE",
+              "match": "_________________",
+              "line": 4,
+              "context": "I hereby certify that on _________________, 2026, I served a true copy of the"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "_________________________________",
+              "line": 12,
+              "context": "_________________________________"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": false,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": false,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 49,
+          "issue_count": 2
+        },
+        {
+          "filename": "05_COURT_FORMS_CHECKLIST.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": false,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": false,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 75,
+          "issue_count": 0
+        },
+        {
+          "filename": "06_CAPTION.md",
+          "issues": [
+            {
+              "type": "BLANK_LINE",
+              "match": "__________________________________________",
+              "line": 12,
+              "context": "__________________________________________/"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": false,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 30,
+          "issue_count": 1
+        },
+        {
+          "filename": "ASSEMBLED_FILING.md",
+          "issues": [
+            {
+              "type": "BLANK_LINE",
+              "match": "__________________________________________________",
+              "line": 11,
+              "context": "__________________________________________________/"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "___________________",
+              "line": 234,
+              "context": "Dated: ___________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________________________",
+              "line": 236,
+              "context": "______________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "___________________",
+              "line": 250,
+              "context": "Dated: ___________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________________________",
+              "line": 252,
+              "context": "______________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "_________________",
+              "line": 259,
+              "context": "I, Andrew James Pigors, certify that on _________________, 2026, I served a true copy of this Emergency Motion for Immed"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________________________",
+              "line": 275,
+              "context": "______________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 293,
+              "context": "____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________",
+              "line": 300,
+              "context": "Date: ______________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "_________",
+              "line": 302,
+              "context": "Subscribed and sworn to before me this ___ day of _________, 20___"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 304,
+              "context": "____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________",
+              "line": 307,
+              "context": "My commission expires: ______________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________",
+              "line": 313,
+              "context": "I hereby certify that on ______________, 20___, I served a copy"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "____________________________",
+              "line": 325,
+              "context": "____________________________"
+            },
+            {
+              "type": "BLANK_LINE",
+              "match": "______________",
+              "line": 332,
+              "context": "Date: ______________"
+            }
+          ],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": true,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": true,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": true,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 2488,
+          "issue_count": 15
+        },
+        {
+          "filename": "PACKAGE_MANIFEST.md",
+          "issues": [],
+          "quality": {
+            "has_caption": {
+              "present": true,
+              "description": "Caption present"
+            },
+            "has_case_number": {
+              "present": true,
+              "description": "Case number present"
+            },
+            "has_signature_block": {
+              "present": true,
+              "description": "Signature block present"
+            },
+            "has_cert_service": {
+              "present": true,
+              "description": "Certificate of service reference"
+            },
+            "has_verification": {
+              "present": false,
+              "description": "Verification/oath language"
+            },
+            "cites_authority": {
+              "present": false,
+              "description": "Legal authority citations"
+            },
+            "child_privacy": {
+              "present": false,
+              "description": "Child referred to by initials"
+            }
+          },
+          "word_count": 170,
+          "issue_count": 0
+        }
+      ],
+      "total_issues": 29,
+      "blocker_count": 0,
+      "total_words": 5344,
+      "quality_score": 55,
+      "hardening_tasks": [
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 176,
+          "type": "BLANK_LINE",
+          "match": "___________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 176"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 178,
+          "type": "BLANK_LINE",
+          "match": "______________________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 178"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 192,
+          "type": "BLANK_LINE",
+          "match": "___________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 192"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 194,
+          "type": "BLANK_LINE",
+          "match": "______________________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 194"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 201,
+          "type": "BLANK_LINE",
+          "match": "_________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 201"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "01_MAIN_FILING.md",
+          "line": 217,
+          "type": "BLANK_LINE",
+          "match": "______________________________",
+          "action": "Fix BLANK_LINE in 01_MAIN_FILING.md at line 217"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 60,
+          "type": "BLANK_LINE",
+          "match": "___________________________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 60"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 62,
+          "type": "BLANK_LINE",
+          "match": "_________________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 62"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 73,
+          "type": "BLANK_LINE",
+          "match": "__________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 73"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 77,
+          "type": "BLANK_LINE",
+          "match": "___________________________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 77"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "02_AFFIDAVIT.md",
+          "line": 80,
+          "type": "BLANK_LINE",
+          "match": "__________",
+          "action": "Fix BLANK_LINE in 02_AFFIDAVIT.md at line 80"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "04_CERTIFICATE_OF_SERVICE.md",
+          "line": 4,
+          "type": "BLANK_LINE",
+          "match": "_________________",
+          "action": "Fix BLANK_LINE in 04_CERTIFICATE_OF_SERVICE.md at line 4"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "04_CERTIFICATE_OF_SERVICE.md",
+          "line": 12,
+          "type": "BLANK_LINE",
+          "match": "_________________________________",
+          "action": "Fix BLANK_LINE in 04_CERTIFICATE_OF_SERVICE.md at line 12"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "06_CAPTION.md",
+          "line": 12,
+          "type": "BLANK_LINE",
+          "match": "__________________________________________",
+          "action": "Fix BLANK_LINE in 06_CAPTION.md at line 12"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 11,
+          "type": "BLANK_LINE",
+          "match": "__________________________________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 11"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 234,
+          "type": "BLANK_LINE",
+          "match": "___________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 234"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 236,
+          "type": "BLANK_LINE",
+          "match": "______________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 236"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 250,
+          "type": "BLANK_LINE",
+          "match": "___________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 250"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 252,
+          "type": "BLANK_LINE",
+          "match": "______________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 252"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 259,
+          "type": "BLANK_LINE",
+          "match": "_________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 259"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 275,
+          "type": "BLANK_LINE",
+          "match": "______________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 275"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 293,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 293"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 300,
+          "type": "BLANK_LINE",
+          "match": "______________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 300"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 302,
+          "type": "BLANK_LINE",
+          "match": "_________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 302"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 304,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 304"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 307,
+          "type": "BLANK_LINE",
+          "match": "______________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 307"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 313,
+          "type": "BLANK_LINE",
+          "match": "______________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 313"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 325,
+          "type": "BLANK_LINE",
+          "match": "____________________________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 325"
+        },
+        {
+          "priority": "MEDIUM",
+          "file": "ASSEMBLED_FILING.md",
+          "line": 332,
+          "type": "BLANK_LINE",
+          "match": "______________",
+          "action": "Fix BLANK_LINE in ASSEMBLED_FILING.md at line 332"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_filings": 3,
+    "total_blockers": 16,
+    "total_issues": 104,
+    "court_ready": 1
+  }
+}

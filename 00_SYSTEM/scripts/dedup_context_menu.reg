@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; File context menu - Find Duplicates
+[HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\LitOSDedup]
+@="Find Duplicates (LitigationOS)"
+"Icon"="shell32.dll,14"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\LitOSDedup\command]
+@="powershell.exe -ExecutionPolicy Bypass -NoProfile -File \"C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\scripts\\dedup_context_menu.ps1\" -Target \"%1\""
+
+; Directory context menu - Find Duplicates
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\LitOSDedup]
+@="Find Duplicates (LitigationOS)"
+"Icon"="shell32.dll,14"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\LitOSDedup\command]
+@="powershell.exe -ExecutionPolicy Bypass -NoProfile -File \"C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\scripts\\dedup_context_menu.ps1\" -Target \"%V\""

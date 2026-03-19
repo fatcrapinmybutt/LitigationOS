@@ -1,0 +1,184 @@
+{
+  "version": "4.0.0",
+  "module": "tools_v4",
+  "description": "LitigationOS MCP v4 — Convergence & Combat Intelligence Layer (7 tools)",
+  "created": "2026-03-12",
+  "categories": {
+    "convergence": {
+      "description": "Convergence cycle quality scoring, gap tracking, and emergence detection",
+      "tools": [
+        "litigation_convergence_status",
+        "litigation_egcp_score",
+        "litigation_gap_tracker",
+        "litigation_emergence_scan"
+      ]
+    },
+    "combat": {
+      "description": "Filing priority, impeachment packages, and adversarial vulnerability analysis",
+      "tools": [
+        "litigation_filing_priority",
+        "litigation_impeachment_lookup",
+        "litigation_red_team_findings"
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "litigation_convergence_status",
+      "description": "Get current convergence quality score (0-100), lane readiness, gap counts (BLOCKER/DNEW/NEXT_PATCH), emergence event count, and cycle mode. Returns COURTROOM_READY, NEAR_READY, IN_PROGRESS, or CRITICAL status.",
+      "category": "convergence",
+      "parameters": {},
+      "returns": "object",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_egcp_score",
+      "description": "Get EGCP (Evidence/Grounds/Citations/Presentation) scores per case lane. Each component 0-25, total 0-100. Scores ≥65 indicate filing readiness. Returns component breakdown and lane status.",
+      "category": "convergence",
+      "parameters": {
+        "lane": {
+          "type": "string",
+          "default": null,
+          "description": "Case lane: 'A_CUSTODY', 'B_HOUSING', 'C_FEDERAL', 'D_PPO', 'E_MISCONDUCT', or 'F_APPELLATE'. Omit for all."
+        }
+      },
+      "returns": "object",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_gap_tracker",
+      "description": "Query convergence gaps — BLOCKERs preventing filing, DNEW discoveries, and deferred NEXT_PATCH items. Prioritized by severity. Filter by type, lane, severity, or resolution status.",
+      "category": "convergence",
+      "parameters": {
+        "gap_type": {
+          "type": "string",
+          "default": null,
+          "description": "Gap classification: 'BLOCKER', 'DNEW', or 'NEXT_PATCH'. Omit for all."
+        },
+        "lane": {
+          "type": "string",
+          "default": null,
+          "description": "Case lane filter. Omit for all lanes."
+        },
+        "severity": {
+          "type": "string",
+          "default": null,
+          "description": "'CRITICAL', 'HIGH', 'MEDIUM', or 'LOW'. Omit for all."
+        },
+        "status": {
+          "type": "string",
+          "default": null,
+          "description": "'OPEN', 'MITIGATED', 'ACKNOWLEDGED', 'RESOLVED'. Omit for all."
+        },
+        "limit": {
+          "type": "integer",
+          "default": 50,
+          "description": "Maximum gaps to return (1-200)."
+        }
+      },
+      "returns": "object",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_emergence_scan",
+      "description": "Detect cross-lane emergence patterns: entity overlap (CROSS_GRAPH), authority completion (CHAIN_COMPLETE), contradictions (CONTRADICTION), novel strategies (NOVEL_STRATEGY), witness overlap (WITNESS_OVERLAP). Novelty 7+ requires attorney review.",
+      "category": "convergence",
+      "parameters": {
+        "signal_type": {
+          "type": "string",
+          "default": null,
+          "description": "Signal type filter. Omit for all types."
+        },
+        "min_novelty": {
+          "type": "integer",
+          "default": 1,
+          "description": "Minimum novelty score 1-10. Use 7+ for high-significance only."
+        },
+        "limit": {
+          "type": "integer",
+          "default": 30,
+          "description": "Maximum events to return (1-100)."
+        }
+      },
+      "returns": "object",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_filing_priority",
+      "description": "Ranked filing priority matrix combining EGCP scores, urgency, impeachment support, and red team vulnerabilities. Returns composite priority score per filing with READY/DEVELOPING status.",
+      "category": "combat",
+      "parameters": {
+        "lane": {
+          "type": "string",
+          "default": null,
+          "description": "Filter to specific lane. Omit for full matrix."
+        },
+        "limit": {
+          "type": "integer",
+          "default": 20,
+          "description": "Maximum filings to return (1-50)."
+        }
+      },
+      "returns": "object",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_impeachment_lookup",
+      "description": "Query impeachment packages — prior inconsistent statements, contradictions, and MRE-mapped evidence for cross-examination. Filter by target name, lane, or severity.",
+      "category": "combat",
+      "parameters": {
+        "target": {
+          "type": "string",
+          "default": null,
+          "description": "Target name (partial match, e.g., 'Watson'). Omit for all."
+        },
+        "lane": {
+          "type": "string",
+          "default": null,
+          "description": "Case lane filter. Omit for all lanes."
+        },
+        "severity": {
+          "type": "string",
+          "default": null,
+          "description": "'critical', 'high', or 'medium'. Omit for all."
+        },
+        "limit": {
+          "type": "integer",
+          "default": 50,
+          "description": "Maximum packages to return (1-200)."
+        }
+      },
+      "returns": "object",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_red_team_findings",
+      "description": "Adversarial red team findings — vulnerabilities opposing counsel would exploit. Includes attack vector, severity, affected lane, and recommended mitigation. CRITICAL findings must be resolved before filing.",
+      "category": "combat",
+      "parameters": {
+        "severity": {
+          "type": "string",
+          "default": null,
+          "description": "'CRITICAL', 'HIGH', or 'MEDIUM'. Omit for all."
+        },
+        "lane": {
+          "type": "string",
+          "default": null,
+          "description": "Affected lane filter. Omit for all."
+        },
+        "category": {
+          "type": "string",
+          "default": null,
+          "description": "Attack category (e.g., 'Judicial Immunity', 'Hearsay'). Omit for all."
+        },
+        "limit": {
+          "type": "integer",
+          "default": 30,
+          "description": "Maximum findings to return (1-100)."
+        }
+      },
+      "returns": "object",
+      "readOnly": true
+    }
+  ]
+}

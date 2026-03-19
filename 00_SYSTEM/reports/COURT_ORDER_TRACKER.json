@@ -1,0 +1,3755 @@
+{
+  "tool": "#214 \u2014 Court Order Tracker",
+  "generated": "2026-03-19T08:09:12.209677",
+  "case_numbers": [
+    "2024-001507-DC",
+    "2023-5907-PP"
+  ],
+  "court": "14th Circuit Court, Family Division, Muskegon County",
+  "judge": "Hon. Jenny L. McNeill",
+  "total_orders": 1179,
+  "confirmed_ex_parte": [
+    {
+      "description": "Andrew's Ex Parte Order \u2014 May 2024",
+      "approximate_date": "2024-05",
+      "party_affected": "Andrew James Pigors",
+      "type": "Ex Parte",
+      "case_number": "2024-001507-DC",
+      "notes": "Confirmed ex-parte order affecting Plaintiff's rights",
+      "mcr_2612_flags": [
+        "ex parte",
+        "without notice"
+      ]
+    },
+    {
+      "description": "Emily's Ex Parte Order \u2014 August 2025",
+      "approximate_date": "2025-08",
+      "party_affected": "Emily A. Watson",
+      "type": "Ex Parte",
+      "case_number": "2024-001507-DC",
+      "notes": "Confirmed ex-parte order obtained by Defendant",
+      "mcr_2612_flags": [
+        "ex parte",
+        "without notice"
+      ]
+    }
+  ],
+  "db_stats": {
+    "tables_scanned": 600,
+    "orders_found": 1177
+  },
+  "category_counts": {
+    "Unclassified": 450,
+    "Custody": 156,
+    "Ex Parte": 169,
+    "PPO": 325,
+    "Contempt": 68,
+    "Parenting Time": 109,
+    "Support": 27,
+    "Procedural": 7,
+    "Attorney": 3
+  },
+  "mcr_2612_candidates_count": 181,
+  "mcr_2612_candidates": [
+    {
+      "description": "Andrew's Ex Parte Order \u2014 May 2024",
+      "approximate_date": "2024-05",
+      "party_affected": "Andrew James Pigors",
+      "type": "Ex Parte",
+      "case_number": "2024-001507-DC",
+      "notes": "Confirmed ex-parte order affecting Plaintiff's rights",
+      "mcr_2612_flags": [
+        "ex parte",
+        "without notice"
+      ]
+    },
+    {
+      "description": "Emily's Ex Parte Order \u2014 August 2025",
+      "approximate_date": "2025-08",
+      "party_affected": "Emily A. Watson",
+      "type": "Ex Parte",
+      "case_number": "2024-001507-DC",
+      "notes": "Confirmed ex-parte order obtained by Defendant",
+      "mcr_2612_flags": [
+        "ex parte",
+        "without notice"
+      ]
+    },
+    {
+      "date": "2024-07-01",
+      "description": "Ex Parte Custody Order Entered",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2024-04-11",
+      "description": "PPO Amended \u2014 Ex Parte Order",
+      "source": "docket_events",
+      "categories": [
+        "PPO",
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2024-04-29",
+      "description": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 6/5/24 PAGE 2 5. On April 29, 2024 an Ex Parte Order for Custody, Parenting Time and Child ",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2024-04-29",
+      "description": "IT IS FURTHER ORDERED that parties participated in a Facilitative Information Gathering Conference which resulted in a temporary Order titled Ex Parte",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2024-10-25",
+      "description": "Lincoln during Andrew\u2019s scheduled parenting time. October 25, 2024: Emily avoids mediation, forcing custody disputes",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "void"
+      ]
+    },
+    {
+      "date": "2025-08-06",
+      "description": "hearing. Appendix E - Ex Parte and Post-Ex Parte Orders in August-October 2025 The ex parte order suspending all parenting time (ente",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-06",
+      "description": "Ex Parte Paretxting-Time Suspension and Lack of Notice (August 2025) 4. August 6, 2025 - Ex parte order suspending all parenting time. o",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-06",
+      "description": "ex parte order suspending all parenting time (entered 011 or about August 6, 2025). Subsequent orders continuing the suspension (around",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-07",
+      "description": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "ex parte suspension has functioned since August 8, 2025. 1. Chronological withholding pattern First, the timeline of withheld parenting ti",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "ex parte motion was filed. On or about August 8, 2025, the ex parte order took effect, and my parenting time has been functionally sus",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "Ex parte suspension since -08/08/2025  i Ongoing suspension of all parenting time (months-long shutdown) i MCL 722.27a(3); MCR 3.207; MCR 3.310(B);",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "ex parte motion or order before an August 8, 2025 exchange. I arrived expecting my regular parenting time, and only discovered after t",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "fficient Basis for Ex Parte) \u2013 Instance: The same August 8, 2025 ex parte motion fails to allege that delaying for",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "1. Ex Parte Order Pattern \u26a0\ufe0f CRITICAL",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "Ex Parte Motion Filed by Mother to Suspend Parenting Time",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "Ambush at Parenting Time Exchange \u2014 No Notice of Ex Parte",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-22",
+      "description": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-22",
+      "description": "Interim Hearing on Ex Parte Order",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "description": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-09-04",
+      "description": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-09-22",
+      "description": "Facts On 8/8/25, the Mother filed an ex parte motion to suspend the Father's parenting time. She alleged that she was concerned regarding on going dru",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-10-29",
+      "description": "ex parte suspension and far beyond the 21-day hearing expectation reflected in discussions of MCR 3.207(B)(6) in Michigan appellate practi",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-10-29",
+      "description": "ex parte suspension order, subsequent continuation orders, and the scheduling of the October 29, 2025 evidentiary hearing. Appendix E -",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Procedural"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-11-26",
+      "description": "HEARING 11/26/2025 EMILY A. WATSON, Defendant Defendant requested, and the Court signed an ex parte order suspending the Plaintiff's parent",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-11-26",
+      "description": "EX PARTE ORDER CONTINUED HEARING 11/26/2025 EMILY A. WATSON, Defendant Defendant requested, and the Court signed an ex parte order suspendin",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-11-26",
+      "description": "Continued Hearing on Plaintiff Objection to Ex Parte Order",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "11/26/2025",
+      "description": "HEARING\n 11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant\n requested,\n and  the Court  signed  an ex parte  order  suspending\n the  Plaintiff's\nparenting  time.  An evidentiary\n hearing  was held on Septembe",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "11/26/2025",
+      "description": "HEARING  11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant  requested,  and the Court  signed  an ex parte  order  suspending  the Plaintiffs\nparenting  time. An evidentiary  hearing  was held on September  4",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "ex parte order suspending  his\nparenting  time  is denied.  The  Court  also  notes  that  it offered  supervised\n parenting  time  to the\nFather  and he categorically\n rejected  that.  The  Court  will consi",
+      "source": "evidence_quotes",
+      "evidence_category": "EX_PARTE_ORDER",
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "October\n 29, 2025",
+      "description": "hearing\n on October\n 29, 2025.\n2.  \nLack\n of  notice\n and  ambush\n at a scheduled\n parenting-time\n exchange.\no  \nI was  not  served  with  the  ex parte  motion\n or order  before  an August\n 8,\n2025  exchang",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearings\n and\njail  time,  which\n in  him  caused  job  loss  and  housing\n instability\n that  were\nlater  used  against  me  in custody\n decisions.\nB. Ex Parte Paretxting-Time  Suspension and Lack of  Notic",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Custody",
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "notice\n of\nSuSpenSlOn.\no  \nI was  not  served  with  the  ex parte  motion\n or order  before  the  August\n 8\nscheduled\n exchange.\no  \nI arrived\n expecting\n my  regular\n parenting\n time.  Emily\n did  not  br",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearings.\n(Micl'iigan\n Courts)\no  \nMCR  3.207(B)(1)\n and  (B)(5)-(6)\n govern\n ex parte  custody\n and  parenting-\ntime  orders  and  require:\nSpecific\n facts  in a verified\n pleading\n or affidavit\n sliowing",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Custody",
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "August\n 6,\n2025",
+      "description": "hearing.\nAppendix\n E -  Ex  Parte  and  Post-Ex\n Parte  Orders\n in  August-October\n 2025\nThe  ex parte  order  suspending\n all  parenting\n time  (entered\n 011 or about  August\n 6,\n2025).\nSubsequent\n orders",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing or if more than 14 days have passed since  the ex parte  order  was served.\noFo%at'::J21)25\n \nau'&A4oug{;J\"t\"\"\"\nApproved,  SCAO\nForm  CC 379, Rev. 3/23\nMCL  600.2950,  MCL  600.2950a,  MCR 3.707\nPage",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "EX PARTE  MOTION  TO  SUSPEND\n PLAINTIFF'S\nPARENTING\n TIME\nAt a session  of said  Court,  held  in the\nCourthouse  in the Counjy  of Muskegon,  State of Michigan\nPresent  Hon. JENNY  L MCNEILL\nWHEREAS,\n this",
+      "source": "evidence_quotes",
+      "evidence_category": "EX_PARTE_ORDER",
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing  with  the  court.\n3. \nThe  ex parte  order  will automatically\n become  a temporary\n order  if you  do not  file a written\nobjection\n or motion  to modify  or rescind  the  ex parte  order  and  a r",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing.\nEVen !f an ObjeCt!On !S f!!ed, Fle eX parte OrCier !V!11 rema!n In effeCk and mLlSi 5e Obeied\nunless  changed\n by a later  court  order.",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "Ex Parte Motion iuccor4a<<e\nwith Michigan  Court Rules. This marks at least the fourth  instance of  evasion de6gned :\nsuppress Plaintiffs  ability  to receive notice, present rebuttal, or obtain timely  relM",
+      "source": "evidence_quotes",
+      "evidence_category": "EX_PARTE_ORDER",
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing.\nThe August  ex parte  order  did not simply  adjust  one exchange;  it completely\n stopped  my  parenting  time  and erased\nupcoming  holiday  and special-event\n time,  including  Labor  Day  2025 a",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing;  require  specific\n danger\nfindings.\n9 i Lincoln's 3rd birthday in 2025 (under suspension)i 3rd birthday missed during ongoing ex parte-based\nshutdown \ni MCL 722.27a(3); birthday/special-event guide",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "October\n 29, 2025",
+      "description": "hearing\n on October\n 29, 2025.\n2. \nLack  of  notice\n and  ambush\n at a scheduled\n parenting-time\n exchange.\no  \nI was  not  served  with  the  ex parte  motion\n or order  before  an August\n 8,\n2025  exchange",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearings\n and\njail  time,  which\n in  turn  caused  job  loss  and  housing\n instability\n that  were\nlater  used  against  me  in custody\n decisions.\nE. Ex Parte Paretxting-Time  Suspeiision and Lack of  Not",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Custody",
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearings.\n(Michigan\n Courts)\no  \nMCR  3.207(B)(1)\n and  (B)(5)-(6)\n govern\n ex parte  custody\n and  parenting-\ntime  orders  and  require:\nSpecific\n facts  in a verified\n pleading\n or affidavit\n showing\n tha",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Custody",
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "EX PARTE MOTION  TO SUSPEND  PLAINTIFF'S\n PARENTING  TIME\nNOW  COMES  Defendant,\n EmilyWatson,\n files  the  Emergency\n Ex Parte  Motion  to Suspend\nParenting\n Time,  station  as follows:\nq, \nTheDefendant,Emil",
+      "source": "evidence_quotes",
+      "evidence_category": "EX_PARTE_ORDER",
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "ex parte  order  will automatically\n become  a temporary\n order  if you  do not  file a written\nobjection\n or motion  to modify  or rescind  the  ex parte  order  and  a request  for  a hearing.\nEVen !f an Ob",
+      "source": "evidence_quotes",
+      "evidence_category": "EX_PARTE_ORDER",
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    }
+  ],
+  "dated_orders": [
+    {
+      "date": "01/04/2024",
+      "description": "HEARING\nBOTH \nPARTIES  \nAPPEARED  \nMOT \nTO \nDISMISS  \nDENIED/  \nOSC \nDISMISSED7CC382a7385\n01/04/2024\n \nSS\nORDER\nORDER\n \n**DENIED**\n \nON  MOTION\n TO  TERMINATE\n \nPERSONAL\n \nPROTECTION\n ORDER\n01/04/2024\n \nD \n0",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "01/07/2025",
+      "description": "HEARING\n \nON \nVIOLATION\n \nOF \nVALID\n \nPERSONAL\n \nPROTECTION\n FOREIGN\nPROTECTION\n ORDER\n11 /27/2024\n \nZTJ\nMOTION\n TO  \nSHOW  \nCAUSE\nMOTION\n TO  \nSHOW  \nCAUSE\nSET \nNEXT \nDATE:  \nHRG \n01/07/2025\n \n11:30\n \nAM \nM",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "01/07/2025",
+      "description": "Hearing.\n01/07/2025\n \nD \n001  \nMSC\nSHOW  CAUSE\n \nHEARING\nNG  \nPLEA\n DEF  \nREQUESTED\n ATTORNEY\n01/07/2025\n \nP \n001  \nRNU\nORDER\nORDER\n ON  MOTION\n TO  MODIFY,\n \nEXTEND,\n \nOR  TERMINATE\n \nPERSONAL\n \nPROTECTION",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "02/04/2025",
+      "description": "Hearing.\n02/04/2025\n \nRNU\nMOTION\n \nFILED\nMOTION\n TO  MODIFY,\n \nEXTEND,\n \nOR  TERMINATE\n \nPPO  \n(DENIED)\n02/05/2025\n \nRNU\nORDER\nORDER  \nON \nMOTION\n \nTO \nMODIFY,\n \nEXTEND,\n \nOR  TERMINATE\n \nPERSONAL\n \nPROTECTI",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "02/28/2025",
+      "description": "HEARING\n \n4TH\n \nFLOOR\n ROOM  G\n02/28/2025\n \nD \n001  \nMSC\nPPO  \nVIOLATION\n HEARING\nDUGUID/MARTINI\n FOUND \nGUILTY  \nAFTER  \nHEARING  \nSENTENED\n TO 14  \nDAYS  \nMCJ\n02/28/2025\n \nD \n001  \nMSC\nPPO  VIOLATION\n SENT",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "03/04/2025",
+      "description": "HEARING\n ON  VIOLATION\n OF  VALID\n \nPERSONAL\n \nPROTECTION\n \nFOREIGN\n66\nPROTECTION\n ORDER\n03/04/2025\nBENCH\n WARRANT\n \nISSUED\nBENCH\n WARRANT\n \nISSUED\n03/10/2025\nCORRES\n PONDENCE\nCORRES\n PONDENCE\n03 /25  /2025",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "03/25/2024",
+      "description": "HEARING\n ON \nVIOLATION\n OF  VALID\n \nPERSONAL\n \nPROTECTION\n \nFOREIGN\nPROTECTION\n ORDER\n03/25/2024\n \nRNU\nPETITION\n \n& ORDER\n TO  \nSHOW  \nCAUSE\nMOTION\n \nAND  \nORDER\n TO  \nSHOW  \nCAUSE\n \nFOR  VIOLATING\n VALID",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "04/11/2024",
+      "description": "HEARING\n \nINFORMATION**\nSET \nNEXT \nDATE:  \nPPOH \n04/11/2024\n \n10:00\n AM \nMCNEILL  \nCOURTROOM:\n \nCCG\nIN  PERSON\n ROOM  G\n03/29/2024\n \nD \n001  \nRNU\nPROOF\n OF  \nSERVICE\nPROOF\n \nOF  \nSERVICE\n03 /29/2024\n \nD \n001",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "04/11/2024",
+      "description": "HEARING\n GRANTED\nSET  \nNEXT  \nDATE:\n \nPPOH \n04/11/2024\n \n10:00\n \nAM \nMCNEILL  \nCOURTROOM:\n \nCCG\nIN  \nPERSON\n COURTROOM\n G,  \n4TH\n \nFLOOR\n04/09/2024\n \nP \n001  \nRNU\nPROOF\n OF  \nSERVICE\nPROOF\n OF  \nSERVICE\n04/1",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "04/11/2024",
+      "description": "NOTICE\n \nTO  APPEAR\nNOTICE\n \nTO  APPEAR\n04/11/2024\n \nD \n001  \nRNU\nNOTICE\n \nTO  APPEAR\nNOTICE\n \nTO  APPEAR\n04/11/2024\n \nRNU\nEX  \nPARTE\n \nORDER\nPERSONAL\n \nPROTECTION\n ORDER\n \n(DOMESTIC)\n \nAMENDED\n04/11/2024",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "04/22/2025",
+      "description": "HEARING\nBOTH\n \nPARTIES\n APPEARED\n04/22/2025\nORDER\nORDER\n AFTER\nPROTECTION\n04/22/2025\nPROOF\n OF  SERVICE\nPROOF\n OF  \nSERVICE\n04 /29/2025\nPROOF\n \nOF  \nSERVICE\nPROOF\n OF  \nSERVICE\n05 /16  /2025\nSET  \nCASE\n ON",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "04/23/2024",
+      "description": "HEARING\n ON \nVIOLATION\n \nOF \nVALID\n \nPERSONAL\n \nPROTECTION\n \nFOREIGN\nPROTECTION\n ORDER\nSET  \nNEXT  \nDATE:\n \nPPOH\n \n04/23/2024\n \n10:00\n \nAM \nMCNEILL  \nCOURTROOM:  \nCCG\nIN  \nPERSON\n04/11/2024\n \nD \n001  \nRNU\nOR",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "04/23/2024",
+      "description": "HEARING\nGILMORE/MARTINI\n \nBOTH \nPARTIES  \nAPPEARED/  \n15  DAYS  IN \nABEYANCE  CC384\n04/23/2024\n \nRNU\nORDER\nORDER  \nAFTER\n HEARING\n \nON \nVIOLATION\n \nOF  VALID\n \nPERSONAL\n \nPROTECTION\n FOREIGN\nPROTECTION\n ORDE",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "05/16/2025",
+      "description": "HEARING\nSWEARS/DELACRUZ  \nVIOLATION\n05 /16/2025\nPERSONAL\n \nPROTECTION\n ORDER\nSWEARS/DELACRUZ  \nMOTION  \nTO\n05/16/2025\nNOTICE\n \nTO  APPEAR\nNOTICE\n \nTO  APPEAR\n05/16/2025\nHEARING\n ON  VIOLATION\n OF  VALID\n \nPE",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "05/16/2025",
+      "description": "NOTICE\n TO  APPEAR\nNOTICE\n TO  APPEAR\n05/16/2025\nPROOF\n OF  \nSERVICE\nPROOF\n OF  \nSERVICE\n05/16/2025\nORDER\nD\n001\nMLK\nMLK\n85\n90\n86\n87\n88\n89\n91\n92\nORDER  \nAFTER\n HEARING\n ON  VIOLATION\n OF \nVALID\n \nPERSONAL",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "06/12/2025",
+      "description": "HEARING\nSWEARS/MARTINI\n GUILTY  \nPLEA \nON \nBOTH \nVIOLATIONS\n06/12/2025\n \nD \n001  \nMSC\nPPO  VIOLATION\n SENTENCING\nSWEARS/MARTINI\n SENTENCE  \n45  DAYS  FOR \nEACH \nVIOL  \n,9ioo.oo\n \nFINE  \nDUE60  \nDAYS\n06/12/20",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "08/08/2025",
+      "description": "Ex parte suspension since -08/08/2025  \ni Ongoing suspension of all parenting time (months-long\nshutdown) \ni MCL 722.27a(3); MCR 3.207; MCR 3.310(B); Benchbook ex parte cautions \nTrial:\nVacate/modify\n ex part",
+      "source": "evidence_quotes",
+      "evidence_category": "EX_PARTE_ORDER",
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "1/7/2025",
+      "description": "hearing'  1/7/2025\nL]PACCCodeMCL600.2950a\n \n[]pqcccooeucteoo.zgsom\ni)uBge'JE!JhJYL.MCNEILL\n \nP-58235\nBar  no\ni  Order  entered  after  show-cause\n hearing  requested\n by petitioner pursuant to MCR 3.708(B).",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "10/18/2025",
+      "description": "hearing:  10/18/2025\n.ludge.' JENNY L. MCNEILL\nP-58235\nBar  no.\n1. Order  entered  after  show-cause\n hearing  requested\n by petitioner\n pursuant\n to MCR  3.708(B).\nTHE  COURT  FINDS:\nFi2. The respondent\n wa",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "10/30/2024",
+      "description": "hearing'  10/30/2024\n.ludge.' JENNY L. MCNEILL\nP-58235\nBar nO.\n1. Order  entered  after  show-cause\n hearing  requested\n by petitioner\n pursuant  to MCR  3.708(B).\nTHE  COURT  FINDS:\n\u20ac  2. The  respondent\n w",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "10/30/2024",
+      "description": "HEARING\nppo \nVIO \nDISMISSED/\n \nPPO \nAMENDED/  \nccasza/ccags/pos\n10/30/2024\n \nD \n001  \nZTJ\nPROOF\n OF  \nSERVICE\nPROOF\n OF  \nSERVICE\n10/30/2024\n \nZTJ\nEX  \nPARTE\n ORDER\nPERSONAL\n \nPROTECTION\n ORDER\n \n(DOMESTIC)",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "11/18/2025",
+      "description": "IT IS ORDERED:\nZl.  The  respondent\n is ordered\n to appear  before  this  court  on  11/18/2025\n a' 11:30 AM\nDate and time\n'Q the  court  address\n above\nRf\ncou,lr00mnum5P,\n G-4THFLOOR-INPERSON\nL-i\nto show  cause  why  the respondent\n should  not be'held  in contempt\n for  violating\n a valid  personal/foreign\n prot",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Contempt"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "11/26/2025",
+      "description": "HEARING\n 11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant\n requested,\n and  the Court  signed  an ex parte  order  suspending\n the  Plaintiff's\nparenting  time.  An evidentiary\n hearing  was held on Septembe",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "11/26/2025",
+      "description": "HEARING  11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant  requested,  and the Court  signed  an ex parte  order  suspending  the Plaintiffs\nparenting  time. An evidentiary  hearing  was held on September  4",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "11/26/2025",
+      "description": "EX PARTE  ORDER\nCONTINUED\n HEARING  11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant  requested,  and the Court  signed  an ex parte  order  suspending  the Plaintiffs\nparenting  time. An evidentiary  hearing",
+      "source": "evidence_quotes",
+      "evidence_category": "EX_PARTE_ORDER",
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "11/26/25",
+      "description": "Judge:\n \nJENNY\n L-  \nMCNEILL\n(231  ) 724-6251\nDate:  \nFRDAY\n DECEMBER\n 12,\n \n2025\nTO:\nANDREW\n JAMES\n \nPIGORS\n1977\n \nWHITEHALL\n RD\nLOT  \n17\nNORTH\n MUSKEGON\n \nMI  \n49445\nAPlaNnD'RffEIPWe\":JoAMnerES\n PIGORS\nV\nEDeMfelnLdaYrlt/AReNsNponWdeAnTt\n SON\nOrder\n \nFollowing\n Hearing\n 11/26/25\nThis  notice\n has  also  bee",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": "IMPEACHMENT_MATERIAL",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "11/26/25",
+      "description": "Judge:\n \nJENNY\n L.  \nMCNEILL\n(231  ) 724-6251\nDate:  \nFRIDAY\n \nDECEME3ER\n 12,\n \n2025\nTO:\nANDREW\n JAMES\n \nPIGORS\n1977\n \nWHITEHALL\n RD\nLOT  \n1 7\nNORTH\n MUSKEGON\n \nMI  \n49445\nAPaN\"D'RffE/PWe\":JoAM\"\"rES\n PIGORS\nV\nDEeMfeInLdaYnt/AReNsNponWdeAnTt\n SoN\nOrder\n Following\n \nHearing\n 11/26/25\nThis  notice\n has  also  b",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": "IMPEACHMENT_MATERIAL",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "12/4/2023",
+      "description": "Judge:  JENNY L MCNEILL\n58235\nBar  no.\n[a1. Thisorderisenteredafterhearing.\nTHE  COURT  FINDS:\n2. A motion  was  filed  to\nE]a.  modifythepersonalprotectionorderdated\n 12/4/2023\n@b.  extendtheexpirationdateofthepersonalprotectionorderdated\n\u20ac\nc. terminatethepersona)protectionorderdated\n3. \u20ac\na. Circumstancesc",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": "IMPEACHMENT_MATERIAL",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "12/4/2023",
+      "description": "hearing.\nTHE  COURT  FINDS:\n2. A motion  was  filed  to\nE]a.  modifythepersonalprotectionorderdated\n 12/4/2023\n@b.  extendtheexpirationdateofthepersonalprotectionorderdated\n\u20ac\nc. terminatethepersona)protectio",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "12/4/2024",
+      "description": "Judge:  JENNY L MCNEILL\n\u20ac 1. Thisorderisenteredafterhearing.\nTHE  COURT  FINDS:\n2. A motion  was  filed  to\n[]a.  modifythepersonalprotectionorderdated\n\u20ac\nb. extendtheexpirationdateofthepersonalprotectionorderdated\nBc.  terminatethepersonalprotectionorderdated\n 12/4/2024\n58235\nBar  no.\n3. Da.  Circumstancesc",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": "IMPEACHMENT_MATERIAL",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2/28/2025",
+      "description": "hearing'  2/28/2025\n.1,,,.lge. Jenny L McNeill\nt OrderenteredafterviolationhearingpursuanttoMCR3.708(H),heldasaresultof\njPa.\n show-cause\n hearing  pursuantto\n MCR  3.708(B).\n\u20ac\nb. arraignmentforarrestpursuant",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2/28/2025",
+      "description": "hearing'  2/28/2025\n\u20ac \nPACC  Code  MCL  600.2950a\n.ludge'  Jenny L McNeill\n\u20ac \nPACC  Code  MCL  600.2950m\nP-58235\nBar no.\n1. OrderenteredafterviolationhearingpursuanttoMCR3.708(H),heldasaresultof\n2Fa. show-ca",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2/28/25",
+      "description": "HEARING\nHEARING  \nADJOURNED  \nUNTIL  \n2/28/25\n \n@ \n2:00PM\n02/04/2025\n \nPMR\nSET  \nCASE\n \nON  \nCALENDAR\nPPO  \nHearing\n Adjourned\n \nfor\n \nPD  \noffice\n \nto\n \nreview\n evidence\nSET \nNEXT \nDATE:  \nPPOV  \n02/28/2025",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2023-10-15",
+      "description": "PPO Petition Filed",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2023-11-01",
+      "description": "PPO Issued \u2014 Domestic",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2023-11-01",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2023-12-04",
+      "description": "Judge: JENNY L MCNEILL 58235 Bar no. [a1. Thisorderisenteredafterhearing. THE COURT FINDS: 2. A motion was filed to E]a. modifythepersonalprot",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2023-12-04",
+      "description": "order_grant",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-01-07",
+      "description": "PPO Violation Hearing \u2014 Show Cause",
+      "source": "docket_events",
+      "categories": [
+        "PPO",
+        "Contempt"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-03-12",
+      "description": "citing unfounded claims about safety. March 2024 March 12, 2024: Emily files a PPO against Andrew, using staged e",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-03-12",
+      "description": "ppo",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-03-22",
+      "description": "Motion for Hearing on PPO Granted",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-01",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-01",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-05",
+      "description": "IT IS ORDERED that Plaintiff filed a Complaint for Custody, Parenting Time and Child ori April 5, 2024. Pigors v ll'atsnn Page l of 14 Judgment",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-05",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-11",
+      "description": "HEARING  INFORMATION** SET NEXT DATE:  PPOH 04/11/2024  10:00 AM MCNEILL  COURTROOM:  CCG IN PERSON ROOM G 03/29/2024  D 001  RNU PROO",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-11",
+      "description": "HEARING GRANTED SET  NEXT  DATE:  PPOH 04/11/2024  10:00  AM MCNEILL  COURTROOM:  CCG IN  PERSON COURTROOM G,  4TH  FLOOR 04/09/2024",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-11",
+      "description": "EX  PARTE  ORDER PERSONAL  PROTECTION ORDER  (DOMESTIC)  AMENDED",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-11",
+      "description": "ORDER ORDER AFTER HEARING ON VIOLATION  OF VALID  PERSONAL  PROTECTION  FOREIGN PROTECTION ORDER SET  NEXT  DATE",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-11",
+      "description": "Custody Complaint Filed by Watson",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-11",
+      "description": "PPO Amended \u2014 Ex Parte Order",
+      "source": "docket_events",
+      "categories": [
+        "PPO",
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2024-04-11",
+      "description": "Return of Service of Amended PPO",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-11",
+      "description": "Order After Hearing on PPO Violation",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-11",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-11",
+      "description": "ex_parte_order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-11",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-12",
+      "description": "Denied.  Ordcr entered on April 12, 2024. April 11, 2024: Plaintiff filed a Motion regarding Custody. Plaintiff addressed the Best Interes",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-12",
+      "description": "Denied.  Order entered on April 12, 2024. April 11, 2024: Plaintiff filed a Motion regarding Custody. Plaintiff addresscd the Best Intere",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-12",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-23",
+      "description": "HEARING ON VIOLATION  OF VALID  PERSONAL  PROTECTION  FOREIGN PROTECTION ORDER SET  NEXT  DATE:  PPOH  04/23/2024  10:00  AM MCNEILL",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-23",
+      "description": "PPO Hearing Scheduled",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-29",
+      "description": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 6/5/24 PAGE 2 5. On April 29, 2024 an Ex Parte Order for Custody, Parenting Time and Child ",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2024-04-29",
+      "description": "IT IS FURTHER ORDERED that parties participated in a Facilitative Information Gathering Conference which resulted in a temporary Order titled Ex Parte",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2024-04-29",
+      "description": "ex_parte_order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-04-29",
+      "description": "ex_parte_order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-05-02",
+      "description": "urt-ordered parenting time, including: March 26 \u2013 May 2, 2024 (37 consecutive days) October 20 \u2013 November 12, 2",
+      "source": "docket_events",
+      "categories": [
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-05-02",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-05-23",
+      "description": "Dismissed. ORDER RF,GARDING PARENTING TIME IT IS HEREBY aII'HE RECOMA/IENDATION AND ORDER that the Plaintiff Father, ANDREW PIGORS's Motio",
+      "source": "docket_events",
+      "categories": [
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-05-23",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-06-01",
+      "description": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew\u2019s off-we",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-06-01",
+      "description": "y supported and secure in both homes. Example: On June 1, 2024, and September 12, 2024, Emily denied my requests",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-06-01",
+      "description": "want to talk,\u201d with no supporting evidence (e.g., June 1, 2024, and September 12, 2024). Failed to share critica",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-06-01",
+      "description": "h no supporting evidence (e.g., June 1, 2024, and September 12, 2024). Failed to share critical updates about LDW\u2019s he",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-06-01",
+      "description": "ppo",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-06-01",
+      "description": "ppo",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-06-01",
+      "description": "ppo",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-06-15",
+      "description": "Custody Complaint Filed",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-06-15",
+      "description": "PPO Violation Hearing \u2014 Guilty Plea, 45 Days Jail",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-06-15",
+      "description": "Custody Hearing",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-06-27",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-07-01",
+      "description": "Ex Parte Custody Order Entered",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2024-07-01",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-07-09",
+      "description": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew\u2019s custody resolu",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-07-09",
+      "description": "custody",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-07-16",
+      "description": "Dismissed. *Tliis Judgment is tlie initial Order regarding the issues of Custody and Parenting Time. *PlaintiFs six (6) Motions filed on",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-07-16",
+      "description": "Dismissed. *This Judgment is the initial Order regarding the issues of Custody and Parenting Time. *Plainti'ff's six (6) Motions filed on",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-07-16",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-07-16",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-07-16",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-07-16",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-07-30",
+      "description": "Granted.  Child Support to be recalculated. July 30, 2024: Plaintiff filed Objection to prepared/proposed Judgment. Plaiiitiff objected to t",
+      "source": "docket_events",
+      "categories": [
+        "PPO",
+        "Support"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-08-23",
+      "description": "PIGORS v WATSON FILE # 2024-001507-DC PAGE 2 2. A Final Judgment entered on August 23, 2024 granting Sole Legal and Sole Physical Custody to Defendant",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-08-23",
+      "description": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 3/26/25 PAGE 2 was titled as follows: \"AFFnDAVIT IN SUPPORT OF MOTION TO MODIFY CUSTODY AND",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-08-23",
+      "description": "PIGORS v WATSON FILE # 2024-001507-DC Recommendation dated 3/26/25 PAGE 12 August 23, 2024: Final Order entered regarding Custody & Parenting Time & C",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-08-23",
+      "description": "Final Judgment \u2014 Sole Custody to Watson",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-08-23",
+      "description": "Uniform Child Support Order Entered",
+      "source": "docket_events",
+      "categories": [
+        "PPO",
+        "Support"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-08-23",
+      "description": "order_grant",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-08-23",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-08-23",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-09-03",
+      "description": "oration on custody and child support adjustments. September 3, 2024: Emily plans a vacation during Andrew\u2019s parenting",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "PPO",
+        "Support"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-09-03",
+      "description": "ppo",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-09-05",
+      "description": "ncoln\u2019s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-09-05",
+      "description": "custody",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-09-15",
+      "description": "PPO Issued Against Andrew Pigors",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-09-15",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-09-20",
+      "description": "hreatening behavior, including road harassment on September 20, 2024, violating the PPO and endangering LDW. III. APPL",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-09-20",
+      "description": "ppo",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-02",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-15",
+      "description": "ck of evidence to support her claims. Example: On October 15, 2024, Emily alleged that LDW returned from my care wit",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-15",
+      "description": "ppo",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-20",
+      "description": "ction Orders (PPOs) to restrict my access to LDW: October 20, 2024: Albert Watson served a PPO violation during an e",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-20",
+      "description": "rcing custody disputes into prolonged litigation. October 20, 2024: Albert Watson accosts Andrew during a parenting",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-20",
+      "description": "the PPO, endangering LDW during the incident. On October 20, 2024, her father, Albert Watson, forcibly removed LDW",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-20",
+      "description": "strict my access to LDW, including an incident on October 20, 2024, where her father, Albert Watson, served a PPO vi",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-20",
+      "description": "with LDW and disrupt parenting time. Example: On October 20, 2024, Albert Watson served a PPO violation during an e",
+      "source": "docket_events",
+      "categories": [
+        "PPO",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-20",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-20",
+      "description": "custody",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-20",
+      "description": "ppo",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-20",
+      "description": "ppo",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-20",
+      "description": "ppo_violation",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-20",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-25",
+      "description": "Lincoln during Andrew\u2019s scheduled parenting time. October 25, 2024: Emily avoids mediation, forcing custody disputes",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "void"
+      ]
+    },
+    {
+      "date": "2024-10-25",
+      "description": "custody",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-30",
+      "description": "hearing' 10/30/2024 .ludge.' JENNY L. MCNEILL P-58235 Bar nO. 1. Order entered after show-cause hearing requested by petitioner pursuant to M",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-30",
+      "description": "HEARING ppo VIO DISMISSED/  PPO AMENDED/  ccasza/ccags/pos 10/30/2024  D 001  ZTJ PROOF OF  SERVICE PROOF OF  SERVICE 10/30/2024  ZTJ EX",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-10-30",
+      "description": "Respondent. SHOW CAUSE HEARING  ON  PERSONAL  PROTECTION ORDER (EXCERPT 1  AND  2 0F PROCEEDINGS  ONLY) BEFORE THE HONORABLE  JENNY MCN",
+      "source": "docket_events",
+      "categories": [
+        "PPO",
+        "Contempt"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-11-19",
+      "description": "LDW\u2019s doctor\u2019s appointment or his vaccinations on November 19, 2024. 3. Withholding Parenting Time Emily\u2019s pattern of",
+      "source": "docket_events",
+      "categories": [
+        "PPO",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-11-19",
+      "description": "to inform me about LDW\u2019s medical appointments on November 19, 2024, directly violates co-parenting agreements. Inter",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-11-19",
+      "description": "participate fully in his upbringing. Example: On November 19, 2024, I was not informed about LDW\u2019s doctor\u2019s appointm",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-11-19",
+      "description": "iding the emotional support he needs. Example: On November 19, 2024, I discovered that LDW had received multiple vacc",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-11-19",
+      "description": "ppo",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-11-19",
+      "description": "ppo",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-11-19",
+      "description": "ppo",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-11-27",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2024-12-04",
+      "description": "Judge: JENNY L MCNEILL \u20ac 1. Thisorderisenteredafterhearing. THE COURT FINDS: 2. A motion was filed to []a. modifythepersonalprotectionorderdate",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-01-07",
+      "description": "hearing' 1/7/2025 L]PACCCodeMCL600.2950a  []pqcccooeucteoo.zgsom i)uBge'JE!JhJYL.MCNEILL  P-58235 Bar no i Order entered after show-cause hea",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-01-07",
+      "description": "Order Regarding Parenting Time",
+      "source": "docket_events",
+      "categories": [
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-01-07",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-04",
+      "description": "HEARING HEARING  ADJOURNED  UNTIL  2/28/25  @ 2:00PM 02/04/2025  PMR SET  CASE  ON  CALENDAR PPO  Hearing Adjourned  for  PD  office  t",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-04",
+      "description": "Hearing. 02/04/2025  RNU MOTION  FILED MOTION TO MODIFY,  EXTEND,  OR TERMINATE  PPO  (DENIED) 02/05/2025  RNU ORDER ORDER  ON MOTION  TO",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-14",
+      "description": "IT IS ORDERED that the Plaintiff's Motion regarding Parenting Tinie filed on February 14, 2025 is dismissed for the reasons stated above.",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-14",
+      "description": "Denied. February 14, 2025: Plaintiff filed Motion re: Parenting Time requesting Joint Custody and equal parenting time (50/50) be resto",
+      "source": "docket_events",
+      "categories": [
+        "Custody",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-14",
+      "description": "ST ATE  OF MICHIG AN IN THE CIRCUIT COtJRT FOR THE COUNTY OF MUSKEGON ANDREW PIGORS FILE N0. 2024-001507-DC Plaintiff, ORDER REGARDING PARENTING TIME ",
+      "source": "docket_events",
+      "categories": [
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-14",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-14",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-28",
+      "description": "hearing (Counts #5 and #6). At the February 28, 2025 PPO violation hearing, the record reflects side-channel communication minimizing the",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-28",
+      "description": "hearing where I was jailed and the February 28, 2025 hearing on Counts 5 and 6. Appendix D - Custody/Parenting-Time Docket and Register",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-28",
+      "description": "hearing' 2/28/2025 .1,,,.lge. Jenny L McNeill t OrderenteredafterviolationhearingpursuanttoMCR3.708(H),heldasaresultof jPa. show-cause hearing pur",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-28",
+      "description": "hearing' 2/28/2025 \u20ac PACC Code MCL 600.2950a .ludge' Jenny L McNeill \u20ac PACC Code MCL 600.2950m P-58235 Bar no. 1. Orderenteredafterviolation",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-28",
+      "description": "HEARING  4TH  FLOOR ROOM G 02/28/2025  D 001  MSC PPO  VIOLATION HEARING DUGUID/MARTINI FOUND GUILTY  AFTER  HEARING  SENTENED TO 14",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-02-28",
+      "description": "PPO Violation Hearing (Counts 5 & 6)",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-04-22",
+      "description": "hearing' 4/22/2025 ,ludge' JENY !- MCNEILL P-58235 Bar no 1. Order entered after show-cause hearing requested by petitioner pursuant to MC",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-04-25",
+      "description": "ex_parte_order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-05-16",
+      "description": "5. Punitive structural barriers to access the court. o A May 16, 2025 order imposed a $250.00 filing bond in the custody case, that has functioned as ",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-05-16",
+      "description": "Order Imposing Filing Bond Requirement",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-05-16",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-05-20",
+      "description": "Order Denying Motion Regarding Custody Filed",
+      "source": "docket_events",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-05-20",
+      "description": "order_denial",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-05-20",
+      "description": "order_denial",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-05-22",
+      "description": "Order Denying Post-Judgment Relief",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-05-22",
+      "description": "order_denial",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-06-12",
+      "description": "hearing' 6/12/2025 .liidge' JENNY L MCNEILL P58235 Bar no. hL\"\",;4:ymz-r' 1.Order entered after violation hearing pursuant to MCR 3.708(H),",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-06-12",
+      "description": "HEARING SWEARS/MARTINI GUILTY  PLEA ON BOTH VIOLATIONS 06/12/2025  D 001  MSC PPO VIOLATION SENTENCING SWEARS/MARTINI SENTENCE  45 DAYS",
+      "source": "docket_events",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-08-06",
+      "description": "hearing. Appendix E - Ex Parte and Post-Ex Parte Orders in August-October 2025 The ex parte order suspending all parenting time (ente",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-06",
+      "description": "Ex Parte Paretxting-Time Suspension and Lack of Notice (August 2025) 4. August 6, 2025 - Ex parte order suspending all parenting time. o",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-06",
+      "description": "ex parte order suspending all parenting time (entered 011 or about August 6, 2025). Subsequent orders continuing the suspension (around",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-06",
+      "description": "ex_parte_order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-08-06",
+      "description": "ex_parte_order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-08-07",
+      "description": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "ex parte suspension has functioned since August 8, 2025. 1. Chronological withholding pattern First, the timeline of withheld parenting ti",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "ex parte motion was filed. On or about August 8, 2025, the ex parte order took effect, and my parenting time has been functionally sus",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "Ex parte suspension since -08/08/2025  i Ongoing suspension of all parenting time (months-long shutdown) i MCL 722.27a(3); MCR 3.207; MCR 3.310(B);",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "ex parte motion or order before an August 8, 2025 exchange. I arrived expecting my regular parenting time, and only discovered after t",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "fficient Basis for Ex Parte) \u2013 Instance: The same August 8, 2025 ex parte motion fails to allege that delaying for",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "parenting time due to the suspension order (from August 8, 2025 through present, amounting to at least 15 missed",
+      "source": "docket_events",
+      "categories": [
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-08-08",
+      "description": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "1. Ex Parte Order Pattern \u26a0\ufe0f CRITICAL",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "Ex Parte Motion Filed by Mother to Suspend Parenting Time",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "Ambush at Parenting Time Exchange \u2014 No Notice of Ex Parte",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "description": "ex_parte_order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-08-08",
+      "description": "ex_parte_order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-08-08",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-08-08",
+      "description": "ex_parte_order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-08-08",
+      "description": "ex_parte_order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-08-22",
+      "description": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-22",
+      "description": "Interim Hearing on Ex Parte Order",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "description": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-09-04",
+      "description": "STATE  OF  M CHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER RE",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-09-04",
+      "description": "STATE  OF  MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER RE",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-09-04",
+      "description": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-09-04",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-09-22",
+      "description": "Facts On 8/8/25, the Mother filed an ex parte motion to suspend the Father's parenting time. She alleged that she was concerned regarding on going dru",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Parenting Time"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-09-22",
+      "description": "Court Orders HealthWest Assessment",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-09-22",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-10-18",
+      "description": "hearing: 10/18/2025 .ludge.' JENNY L. MCNEILL P-58235 Bar no. 1. Order entered after show-cause hearing requested by petitioner pursuant to",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-10-29",
+      "description": "ex parte suspension and far beyond the 21-day hearing expectation reflected in discussions of MCR 3.207(B)(6) in Michigan appellate practi",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-10-29",
+      "description": "ex parte suspension order, subsequent continuation orders, and the scheduling of the October 29, 2025 evidentiary hearing. Appendix E -",
+      "source": "docket_events",
+      "categories": [
+        "Ex Parte",
+        "Procedural"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": "2025-10-29",
+      "description": "ex_parte_order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": "2025-10-29",
+      "description": "order",
+      "source": "docket_events",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    }
+  ],
+  "undated_orders": [
+    {
+      "description": "Andrew's Ex Parte Order \u2014 May 2024",
+      "approximate_date": "2024-05",
+      "party_affected": "Andrew James Pigors",
+      "type": "Ex Parte",
+      "case_number": "2024-001507-DC",
+      "notes": "Confirmed ex-parte order affecting Plaintiff's rights",
+      "mcr_2612_flags": [
+        "ex parte",
+        "without notice"
+      ]
+    },
+    {
+      "description": "Emily's Ex Parte Order \u2014 August 2025",
+      "approximate_date": "2025-08",
+      "party_affected": "Emily A. Watson",
+      "type": "Ex Parte",
+      "case_number": "2024-001507-DC",
+      "notes": "Confirmed ex-parte order obtained by Defendant",
+      "mcr_2612_flags": [
+        "ex parte",
+        "without notice"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing  on the Father's  7'h \nPPO  violation  occurred.  He pled  guilty and\nreceived  45 days  in jail.\nPage  4\nPigors  v Watson  \n2024-001507-DC",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing.\nIt is further  ordered that the Plaintiff  must pay a bond of $250 (for each motion) before he\nmay  file another  motion  in this matter.  The  Court  will  then  review  the  motion.  If the  Court",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "the court.  Support  charges  shall  be reinstated  effective  60 days  affer  the incapacitation\n ends.  The  office  shall\nprovide  notice  of reinstatement\n to the parties  and to the court  that  specifies  the date  charges  will be effective.\nEither  party  may  object  to the abatement\n or reinstatement",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": "IMPEACHMENT_MATERIAL",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "notice  of the abatement\n to the parties  and\nto the court.  Support  charges  shall  be reinstated  effective  60 days  affer  the incapacitation\n ends.  The  office  shall\nprovide  notice  of reinstatemen",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "notice  was  filed,  or by filing  a motion.  If a timely  objection  is received,  the friend  of the court  shall\neither  set the objection  for hearing  or complete  a support  review  with an effective",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT IS ORDERED,\n unless  otherwise  ordered  in item 11 or 12:\n\u20ac\nStandard  provisions  have  been  modified  (see  item  1l or '12).\n4 : Tho  eihils'ran\n who\n are  gunoortad\n undar\n this\n order  and  the  aavor  and  eaves\n are:\nPayer \n' -'- \n-\nAaarew  James Pigors\nPay-as\"\n \n- \n-\nEmily\n Ann  Watson\nChildren's  names",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing.  \n\u20ac  after  statutory  review.  \n\u20ac  on stipulation/consent\n of the parties.\n\u20ac  The friend  of the court  remmmends\n child  support  be ordered  as follows.\n\u20ac \nIf you disagree  with this recommendati",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "plaintiff.  \n[1] up to a maximum  of $ \n for defendant.\nEl not to exceed  6% of the plaintiffs/defendant's\n gross  income.\n3. Income  Withholding.\n Income  withholding  takes immediate  efflecl. Payments  shall be made  through  the Michigan  State\nDisbursement  Unlt unless  otherwise  ordered  in item 12.\n4. Qu",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "defendant.Uninsuredexpensesexoeedingtheannual\nenfo  rmby\"firaae\n blamoundonftThfoer\n oo\"euyrLaaTrhe\"eaynnau'aa:\n ord'o\"ia\"nary\"mediam'a'oatpaindtmth.,in5248fOdTarchol.\nObligation\n Ends.  Except  for child care, or as otherwise  ordered,  support  obligations  for each child end on the last day\nof the month  t",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "defendant.\nEl not to exceed  6% of the plaintiffs/defendant's\n gross  income.\n3. Income  Withholding.\n Income  withholding  takes immediate  efflecl. Payments  shall be made  through  the Michigan  State\nDisbursement  Unlt unless  otherwise  ordered  in item 12.\n4. Qualffled  Medlcal  Support  Order.  This ord",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  mnceming\n avaiiability  of health care at a reasonable\ncost.\n5. \nRetroadive\n Modifiztion,\n Surcharge\n for  Past-Due  Support,  and  Llens  for  Unpam  Support.  Except  as pmvided\nby MCL 552.603,  s",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING\nEMILY\n WATSON,\nDefendant.\nAndrew\n Pigors\nSelf-Represented\n Litigant\nJennifer\n Batnes  (P55406)\nAttorney\n for  Defendant\nBoth  parties  appeared\n for  a Trial  regarding\n Custody,\n Parenting  Time  an",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing\n was  held;  and  the  Court  rendered\n an oral  opinion.\n The  Defendant  submitted  an order\nunder  the 7 day  rule,  using  parts  of  the  rulings\n the  Court  made  regarding\n the  best interest",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "best interest  factors;  the\nPlaintiff\n filed  an objection,\n but  failed\n to follow\n the  Court  rules,  in  stating  with  specificity\n what  parts of\nthe  order  he objected\n to and  did  not  provide\n an order",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  on the Father's  7'h \nPPO  violation  occurred.  He pled  guilty and\nreceived  45 days  in jail.\nPage  4\nPigors  v Watson\n \n2024-001507-DC",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "ex parte order suspending  his\nparenting  time  is denied.  The  Court  also  notes  that  it offered  supervised\n parenting  time  to the\nFather  and he categorically\n rejected  that.  The  Court  will consi",
+      "source": "evidence_quotes",
+      "evidence_category": "EX_PARTE_ORDER",
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing\n dates.  Below\n is a\nnarrative\n summary\n of  key  episodes,\n with  emphasis\n on the  judge's\n conduct.\nA. Eackground:  Origin and Use of  t1ie PPO\n1. \nInitial\n PPO  obtained\n in  2023  based  on extr",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearings\n and\njail  time,  which\n in  him  caused  job  loss  and  housing\n instability\n that  were\nlater  used  against  me  in custody\n decisions.\nB. Ex Parte Paretxting-Time  Suspension and Lack of  Notic",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Custody",
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "notice\n of\nSuSpenSlOn.\no  \nI was  not  served  with  the  ex parte  motion\n or order  before  the  August\n 8\nscheduled\n exchange.\no  \nI arrived\n expecting\n my  regular\n parenting\n time.  Emily\n did  not  br",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing,  Judge  McNeill\n ordered  me to obtain  a\npsychological\n assessment  from  HealtliWest.\no  \nThe  judge's\n secretary  then  emailed  me, instructing\n that  the completed\nHealthWest\n evaluation\n shoul",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing\n -  Jailing,\n job  loss,  and  housing\n loss.\nAt  a prior  PPO show-cause\n hearing  (coini'nonly\n referred  to as Show  Cause  #4),  I\nwas  jailed  for  alleged  PPO  contempt\n under  contested  circ",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO",
+        "Contempt"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearings.\n(Micl'iigan\n Courts)\no  \nMCR  3.207(B)(1)\n and  (B)(5)-(6)\n govern\n ex parte  custody\n and  parenting-\ntime  orders  and  require:\nSpecific\n facts  in a verified\n pleading\n or affidavit\n sliowing",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Custody",
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "Hearing\n*  \nTranscripts\n from  the  PPO  contempt\n hearing\n in  which\n I was  jailed\n (Show  Cause\n#4).\nAppendix\n H  -  HealthWest\n Evaluation\n and  Chambers\n Communications\nThe  HealthWest\n mental-health\n e",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO",
+        "Contempt"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT IS ORDERED:\nsName 74rU'k \n'P'WS \nisprohibitedfrom\nU\ngc.\n assaulting,  attacking,  beating,  molesting,  orwounding\n \ne)')l-['t\nName \nJ\n\u20ac  d. removing  minor  children  from petitioner  who has legal  custody,  except  as allowed  by custody or parenting-time\norder  provided  removal  of the children  does not v",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Custody"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "notice  because  irreparable  injury, loss, or\ndamage  will result  from  the delay  required  to give notice  or notice  itself  will precipitate  adverse  action  before  the order\ncan be issued\nresiding",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT IS ORDERED:\n.  \nANDREW\n PIGORS\nName\n[ZI a. entering  onto property  where  petitioner  lives.\nEl b. entering  onto  property  at\n2160 GARLAND  DRIVE  NORTON  SHORES MI 49441\nis prohibited  from:\n[2) c. assaulting,  attacking,  beating,  molesting,  or wounding  EMILY\n WATSoN\nName\n\u20ac  d. removing  minor  children",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "notice  because  irreparable  injury, loss, or\ndamage  will result  from  the delay  required  to give notice  or notice  itself  will precipitate  adverse  action  before  the order\ncan be issued.\n\"  [Z] 4",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT IS ORDERED:\n,\n ANDREW  PIGORS\nName\n[21 a. entering  onto  property  where  petitioner  lives.\n(, ,  entering  onto  prope  -  at 2160\n GARLAND\n DRIVE NORTON\n SHORES\n Ml 49441\nis prohibited  from:\n[2] c. assaulting,  attacking,  beating,  molesting,  or wounding  EMILY WATSoN\nName\n\u20ac  d. removing  minor  children",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "notice  because  irreparable  injury, loss, or\ndamage  will result  from  the delay  required  to give notice  or notice  itself  will precipitate  adverse  action  before  the order\ncan be issued\n4. Respon",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "granted.  T tie court  cierR  snaii  compiete\n anci fiie ti-ie Removai  or\nEntry  rrom  LEIN  (form  MC  239)  with  the law  enforcement\n agency  named  in the  last  order.\nI \n(IEREBY  C,[-.Pi'i-IFY \nH'us )o",
+      "source": "evidence_quotes",
+      "evidence_category": "PPO",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING ON SHOW\n CAUSE\n \n2023005907PP\nFOR  VIOLATING  VALID PERSONALf\nFOREIGN\n PROTECTION ORDER\nCoud telephone no.\nCourt address\nHALL  OF JtJSTICE  990 TERRACE, MUSKEGON\n MI 49442\n231-724-6251\nPetitioner's",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  on violation of a valid personal/foreign protection order and was\nadvised  of his/her  rights.\n[1] 3. The  respondent\n pled guilty  to the violations\n in the motion  to show  cause  (complete itein",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing on the \nLJ bench warrant  \nL2Jlaow cause\n\u20ac  8. The  order  to show  cause  is dismissed.\nis adjourned\n to\nhla-4hb\n \n.3,,>,,\n\u20ac  9. A hearing  on the  violation  is scheduled\n For\nat\nLocation\n\u20ac  10. \nT",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING\n ON SHOW\n CAUSE\n FOR\n VIOLATING\n VALID PERSONAL/FOREIGN\n PROTECT'\nORDER\nMCL 769 1f. MCL 769 16a, MCR 3 708",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT IS ORDERED:\n6\"L.(c\"sntuaelkdi)ngasdefinedunderMCL750.411handMCL750.411ithatincludesbutisn\nlfollowing\n petitioner Or appearing within his/her sight. \n9appearing  at petitioner's workplace Or residence.\ngsending  mail  or other communications\n to petitioner.\n \n'E/contacting  petitioner\n by telephone.\ngapproaching",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "notice  of the  order.  Forms  and instructions\n are  available\n from  the\nclerk  of court.\n12. A motion  to extend  the order  must  be filed  3 days  before  the expiration\n date  in item 9 or a new  peti",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT IS ORDERED:\n6. (continued)\n\"  [ZI e. stalking  as defined  under  MCL 750.411h  and MCL  750.411i  that includes  but is not limited  to:\nIID following  petitioner or appearing  within  his/her  sight.  \nD appearing  at petitioner's  workplace  or residence.\n[Z] sending  mail or other  communications\n to petiti",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "notice  of the order. Forms  and instructions  are available  from  the\nclerk  of court.\n12, A motion  to extend  the order  must  be filed 3 days  before  the expiration  date in item 9 or a new petition",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearingonviolationofavalidpersonal/foreignprotectionorderandwasadvisedofthe\nright  to present\n evidence\n and  to examine\n and  cross-examine\n witnesses\n3. Specific\n findings\n of  fact  are  stated  on the  r",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARINGONVIOLATIONOFVALIDPERSONAL/FOREIGNPROTECTIONORDER",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing\n on violation\n of a valid personal/foreign\n protection\n order and was\nadvised  of his/her  rights.\n[I] 3. The  respondent\n pled guilty  to the violations\n in the motion  to show  cause  (complete\n it",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing\n On the\n \n]  bencAh\n warrant\n \ncausle \nis 9, djourned\n to\n\u20ac  8. The  order  to show  cause  is dismissed.\nLocation\n[110.  The  respondent\n shall  be committed\n tri  \nrlays  in the  county  jai\nTime\ni",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING\n ON SHOW CALISE FOR VIOLATING VALID PERSONAL/FOREIGN PROTECTION\nORDER\nMCL  769.1f,  MCL  769.16a,  MCR  3.708(D).  (F)",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT IS ORDERED:\n6. (continued)\n\"*@e.stalking\n aS defined\n under\n MCL yso.oiih\n and MCL ';'so.<aiii\n that includes\n but is not limited\n to:\nBollowing  petitioner Or appearing  within his/her  sight.  \nrappearing  at petitioner's  workplace  Or residence.\ning mail Or other  communications\n to petitioner.  \n[ontacting",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "notice  of the order. Forms  and instructions  are available  from  the\nclerk  of court.\n12. A motion  to extend  the order  must  be filed 3 days before  the expiration  date in item 9 or a new petition  m",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "THE COURT:\nUnless  item 8 is checked,  you are required  to send  this  order  to the Michigan  State  Police  pursuant\n to MCL  769.  1 6a, along  with\nanyfingerprintcardprovidedbythelawenforcementagency.lfaTCNnumberhasnotbeenissuedandnofingerprintcardhasbeen\nprovided,  the taking  of  fingerprints\n must  be",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": "IMPEACHMENT_MATERIAL",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing\n on violation\n of a valid\n personal/\n foreign\n protection\n order\n and\n was\n advised\n of the\nright  to present  evidence  and to examine  and cross-examine\n witnesses\n3. Specific  findings  of Fact ar",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  on violation  of a valid  personal/foreign\n protection\n order  and  was\nadvised  of his/her  rights.\n\u20ac  3. The  respondent\n pled guilty  to the violations\n in the motion  to show  CauSe (complete it",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  on the  \n\u20ac  bench  warrant\n \n[1]show\n cause  \nis adjourned\n to\nReason:\n\u20ac  8. The  order  to show  cause  is dismissed.\n\u20ac 9. A hearing  on the violation  is scheduled\n for\nDate\nTime\nat\nin ;.'iccordan",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING\n ON SHOW  CAUSE  FOR  VIOLATING\n VALID  PERSONAL/FOREIGN\n PROTECTION\nORDER\n \nMCL 769.1f, MCL 769.16a, MCR 3.708(D), (F)",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING\n ON\nVIOLATION\n OF VALID  PERSONAL/\nFOREIGN\n PROTECTION\n \nORDER\nOriginal  - Court\n1 st copy  - Petitioner\n2nd copy - Respondent (if applicable)\n3rd copy - Michigan State Police CJIC\nI \nCASE  NO.\ni 202",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearingonviolationofavalidpersonal/foreignprotectionorderandwasadvisedofthe\nright  to present  evidence\n and  to examine  and cross-exainine\n witnesses.\n3. Specific  findings  of fact  are stated  on the rec",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "Judge:\nJENNY  L. MCNEILL\nP-58235\nBar  no.\n\u20ac  1. Thisorderisenteredafterhearing.\nTHECOURTFINDS:\n2. A T':i;;t!On  %'ifaS 'nibu  !(J\n[I]a. mod$thepersonalprotectionordpirrlqtpd\nIZ]b. extendtheexpirationdateofthepersonalprotectionorderdated\n\u20ac c. terminatethepersonalprotectionordp+rripifpri\n3. [I]a. Circumstanc",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": "IMPEACHMENT_MATERIAL",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing.\nTHECOURTFINDS:\n2. A T':i;;t!On  %'ifaS 'nibu  !(J\n[I]a. mod$thepersonalprotectionordpirrlqtpd\nIZ]b. extendtheexpirationdateofthepersonalprotectionorderdated\n\u20ac c. terminatethepersonalprotectionordp+r",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "Judge:\nRespondent's name, address, and telephone no.\nANDREW\n PIGORS\n1977  WmTEHALL\n RD TRLR  17\nMUSKEGON\n MI  49445\nJENNY\n L. MCNEILL\nP-58235\nBar  no.\n2. A motion  was  filed  to\n[]a.\n modifythepersonalprotectionorderdated\nElb. extendtheexpirationdateofthepersonalprotectionorderdated\n\u20ac\nc. terminatetheperso",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": "IMPEACHMENT_MATERIAL",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing\n on violation\n of a valid\n personal/\n foreign\n protection\n order\n and\n was\n advised\n of the\nright  to present\n evidence\n and  to examine\n and cross-examine\n witnesses.\n3. Specific\n findings\n of fact",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing.\nTHE  COURT  FINDS:\n2. A motion  was  filed  to\n[]a.  modifythepersonalprotectionorderdated\n\u20ac\nb. extendtheexpirationdateofthepersonalprotectionorderdated\nBc.  terminatethepersonalprotectionorderdated",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT iS ORDERED:\n6. (continued)\n\u20ac f. \ninterferingwithpetitioner'seffortstoremovehis/herchildren/personalpropert5rfrompremisessolelyowned/leased'\nby respondent.\naap.threateningtobiiiorphysicaiiyin3ursNam\"E)!'eilJ\n IU\nfflS. having\n acwss to infomiation\n in records\n concemlng\n a minor child of petitioner\n and responden",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "notice of the order. Forms  and Instructions  are available  from the\ncterk of court.\n12. A motion  to extend  the order  must  be filed 3 days beTore the expiration  date in item 9 or a new petition  must",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  or because  notice  itself  will cause  irreparable  injury, loss, or damage  be4ore the order  can be\nentered.\n(E)\u20ac 7. I have a next friend\n petitioning\n for me. t certiTy\n that the next friend\n is",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT IS ORDERED\n\u20ac  6. A bench  warrant  shall  issue  for  the resporident's\n arrest.\nThe hearing on the \na bench warrant \n[I\\;how cause\nReason\nJ8.\n The  order  to show  cause  is dismissed\nio / \ni \n/\nisadlournedto\n \n4i'?\"3i';2'ta\n1/ C)\"C'D O-\n\u20ac  9. A hearing  on the violation  is scheduled\n for\nDate\nat\nLocation\n\u20ac",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing:  4/1 1/2024 \n,ludge'  JENNY L. MCNEILL  \nP-58235\nBar no\n1. Order  entered  after  show-cause\n hearing  requested\n by petitioner\n pursuant\n to MCR  3.708(B).\n!THcrOheUrReTspFo'n:Desntwaspresentatthes",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing on the \na bench warrant \n[I\\;how cause\nReason\nJ8.\n The  order  to show  cause  is dismissed\nio / \ni \n/\nisadlournedto\n \n4i'?\"3i';2'ta\n1/ C)\"C'D O-\n\u20ac  9. A hearing  on the violation  is scheduled\n for",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING\n ON SHOW  CAUSE  FOR  VIOLATING\n VALID  PERSONAUFOREIGN\n PROTECTION\nORDER\n \nMCL 769.1f. MCL 769 16a. MCR 3 708(D), (F)",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT IS ORDERED:\n[2 6. A bench  warrant\n shall  issue  for  the  respondent's\n arrest.\n\u20ac  7. The  hearing  on the  \nZ  bench  warrant\n \nfflshow  cause\n \nis adjourned\n to\nReason'\n\u20ac  8. The  order  to show  cause  is dismissed.\nA hearing  on the  violation\n is scheduled\n for\nLocation\n\u20ac  10. \nThe  respondent\n shall  be",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  on the  \nZ  bench  warrant\n \nfflshow  cause\n \nis adjourned\n to\nReason'\n\u20ac  8. The  order  to show  cause  is dismissed.\nA hearing  on the  violation\n is scheduled\n for\nLocation\n\u20ac  10. \nThe  responden",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING\n ON  SHOW\n CAUSE\n FOR  VIOLATING\n VALID\n PERSONAL/FOREIGN\n PROTECTION\nORDER\n \nMCL 769 lf, MCL 769.16a. MCR 3.708(D), (F)",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING\n ON  VIOLATION\n OF  VALID\n \nPERSONAL\n \nPROTECTION\n \nFOREIGN\nPROTECTION\n ORDER\n11 /04/2024\n \nZTJ\nORDER\nORDER\n ON  MOTION\n \nTO  MODIFY,\n \nEXTEND,\n \nOR  TERMINATE\n \nPERSONAL\n \nPROTECTION\nORDER\n \n**DENIE",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING\n \nON \nVIOLATION\n \nOF \nVALID\n \nPERSONAL\n \nPROTECTION\n \nFOREIGN\nPROTECTION\n ORDER\n01 /07/2025\n \nRNU\nREQUEST\n \nFOR  \nCOURT\n APPOINTED\n ATTORNEY\n AND  \nORDER\nREQUEST\n \nFOR  \nAPPOINTMENT\n OF \nATTORNEY\n \nA",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "Hearing.\n \nHearing\nAPPOINTED\n ATTORNEY\nD \n001\nAPPOINTED\n ATTORNEY\n AND  \nORDER\nCOURT\n APPOINTED\n ATTORNEY\nTO  \nSHOW  \nCAUSE\nTO  \nSHOW  \nCAUSE\n \nFOR \nVIOLATING\n \nVALID\n \nPERSONAL\n \nFOREIGN\nD\nSERVICE\nSERVICE\nP",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "Hearing.\n \nSet\n \nfor\nMLK\n3 :30\n \nPM  \nMCNEILL\n \nCOURTROOM\n : \nCCG\n001\nRNU\nRNU\nD\n001\nRNU\nRNU\nPMR\nD\n001\nMSC\nD\n001\nRNU\nD\n001\nMLK\nPMR\nD \n001\nMSC\nHEAR  \nADJOURNED\n \nPPO \nAMENDED\n \n#3\nD  \n001\nHEARING\nDISMISS\n \nSTR",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING\n ON  VIOLATION\n OF  VALID\n \nPERSONAL\n \nPROTECTION\n \nFOREIGN\nPROTECTION\n ORDER\n****\n \nEND  \nOF  \nSUMMARY\n \n****\n* * *  \nEND  OF  REPORT\n \n* * *",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING\nDate:\n \nFRIDAY\n \nMAY  \n24,\n \n2024\nTime:\n \n11 :30\n AM\nJurist:\n \nJENNY\n L.  \nMCNEILL\nComments:\n \nRE:  \nDEFENDANT'S\n OBJECTION\n \nTO \nEXPARTE\nAND  CHILD\n \nSUPPORT\n FOLLOWING\n FIG,\n \nVIA\n(231  ) 724-6251",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "HEARING\nDate:\n \nFRIDAY\n DECEMBER\n 05,\n \n2025\nTime:\n \n11 :OO  AM\nJurist:\n \nJENNY\n L.  \nMCNEILL\nComments:\n \nAll\n \nparties\n \nto\n \nappear\n \nin\n person\n \nfor\n PPO  Violation.\nComments:\nIf you  require  special\n a",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  may  result  in a bench  warrant  being  issued  for  the  respondent's\narrest.  The  petitioner\n shall  serve  this  motion  and order  on the  respondent\n at least  7 days  before  the  hearing  d",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT IS ORDERED:\nDate and lime\n[% thq coiii't  address\n above\n!'K courttoorri\n nurribpr\n G\" - 4'h Flo(ir\nn\n,'it\nto shcw  c='iuse why  the  resporic{ent s)iould  not be t'ielcl iri contempt\n for  vicilating  a valid  per:griat/foreign\n protection\nuiiier,l'ai,14H:4i,'i4)icai.r<,,:iii'iio;.aiicayii'i;Xrisaiii'igrha'3tr",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Contempt"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  may  result  in a bench  warrant  being  issued  for  the  respondent's\narrest.  The  petitioner\n shafl  serve  this  motion  and  order  on the  respondent\n at jeast  7 days  before  the  hearing",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing may result in a bench wanant  being isaued\n for  the respondent'a\narrest. The petitioner  shell serve this motion and order on the respondent  at kaast 7 days before\n the hearing\n date,\n\u20ac  2. Abench",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT IS ORDERED:\nXJ 3. The  respondent\n is ordered  to appear  before  this  court  on  \n4111/2024\n af lo am\nDate  and time\nat\n[XI the court  address  above\n[Z courtroom\n number  G\nn\nto show  cause  why  the  respondent\n should  not be held in contempt\n for  violating  a valid  personal/foreign\n protection\norder.  F",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Contempt"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  may  result  in a berch  warrant\n being  issued  for  the respondent's,\narrest.  The  petitioner\n shall  serve  this  motion  and order  on the respondent\n at least  7 days  before  the hearing  dat",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "IT IS ORDERED:\n[XI.  The resporident  is ordered to appear before tl'ris\n[Xlthe\n court  address\n above\nto s!'iow  cause\n why  the respondent should ngt be held in contempt for violatlng a valid personal/foreign\n protection\norder,  Failure\n to appear ror this contempt hearing may result in a bench warrant being iss",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": "BINDING_DETERMINATION",
+      "categories": [
+        "Contempt"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing may result in a bench warrant being issued for the respondent's\narrest.\n The  petitioner  shall serve this motion end order \n' the \nat least 7 days before the hearing\n date.\n('] 2. Abench warrantshal",
+      "source": "evidence_quotes",
+      "evidence_category": "JUDGE_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  date,\nU.1 2. Aberic!at  warrant  shall  'oe.iasueid  ;or  ffle  respciicierit's\n rirrest  tu Ein:'ivC':- El contempt\n chargs  F:r vie!;sa;irig a vai:o' personal/\nforbigri  protecticri  crder.\nl \n..7",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Contempt"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "respondent. I ask the courtto conduct a hearing  to \n\u20ac  modify  \n[1]terminate  \nthe order.\n\u20ac b. I am the petitioner. I ask the courtto  conduct  a hearing to modify  the order.\n'c.lamthepetitioner.laskthecourtto\n \n!aextend  \n\u20ac terminate  \ntheorder.\nExplain why you want the order modified, extended, or terminate",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  to \n\u20ac  modify  \n[1]terminate  \nthe order.\n\u20ac b. I am the petitioner. I ask the courtto  conduct  a hearing to modify  the order.\n'c.lamthepetitioner.laskthecourtto\n \n!aextend  \n\u20ac terminate  \ntheorder",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing or if more than 14 days have passed since  the ex parte  order  was served.\noFo%at'::J21)25\n \nau'&A4oug{;J\"t\"\"\"\nApproved,  SCAO\nForm  CC 379, Rev. 3/23\nMCL  600.2950,  MCL  600.2950a,  MCR 3.707\nPage",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "notice,  or that  notice  itself  will  precipitate\n adverse\n action\nbefore  an order  can  be issued.\nWHEREFORE,\n Defendant,  respectfully\n requests\n the  following\nrelieffrom\n this  Honorable\n Court:\nA. S",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "EX PARTE  MOTION  TO  SUSPEND\n PLAINTIFF'S\nPARENTING\n TIME\nAt a session  of said  Court,  held  in the\nCourthouse  in the Counjy  of Muskegon,  State of Michigan\nPresent  Hon. JENNY  L MCNEILL\nWHEREAS,\n this",
+      "source": "evidence_quotes",
+      "evidence_category": "EX_PARTE_ORDER",
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing\n before\n this  Court  as follows:\nIT IS 90  0RDERED.\ny L McNeill\n3==3=b-p M\nNotice:\n1. \nYou  may  file a written  objection\n to this  order  or a motion  to modify  or rescind  this order.  You\nmust",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing  with  the  court.\n3. \nThe  ex parte  order  will automatically\n become  a temporary\n order  if you  do not  file a written\nobjection\n or motion  to modify  or rescind  the  ex parte  order  and  a r",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing.\nEVen !f an ObjeCt!On !S f!!ed, Fle eX parte OrCier !V!11 rema!n In effeCk and mLlSi 5e Obeied\nunless  changed\n by a later  court  order.",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "Ex Parte Motion iuccor4a<<e\nwith Michigan  Court Rules. This marks at least the fourth  instance of  evasion de6gned :\nsuppress Plaintiffs  ability  to receive notice, present rebuttal, or obtain timely  relM",
+      "source": "evidence_quotes",
+      "evidence_category": "EX_PARTE_ORDER",
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "Hearing\nSanctions,\nRestriction\n Order\nZ",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearing.\nThe August  ex parte  order  did not simply  adjust  one exchange;  it completely\n stopped  my  parenting  time  and erased\nupcoming  holiday  and special-event\n time,  including  Labor  Day  2025 a",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing;  require  specific\n danger\nfindings.\n9 i Lincoln's 3rd birthday in 2025 (under suspension)i 3rd birthday missed during ongoing ex parte-based\nshutdown \ni MCL 722.27a(3); birthday/special-event guide",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing  dates. Below  is a\nnarrative  summary\n of  key  episodes,  with  emphasis  on the  judge's\n conduct.\nA. Eackground:  Origin arid Use of  the PPO\n1. \nInitial\n PPO  obtained\n in 2023  based  on extrem",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "PPO"
+      ],
+      "mcr_2612_flags": []
+    },
+    {
+      "date": null,
+      "description": "hearings\n and\njail  time,  which\n in  turn  caused  job  loss  and  housing\n instability\n that  were\nlater  used  against  me  in custody\n decisions.\nE. Ex Parte Paretxting-Time  Suspeiision and Lack of  Not",
+      "source": "evidence_quotes",
+      "evidence_category": "CUSTODY_ORDER",
+      "legal_significance": null,
+      "categories": [
+        "Custody",
+        "Ex Parte"
+      ],
+      "mcr_2612_flags": [
+        "ex parte"
+      ]
+    },
+    {
+      "date": null,
+      "description": "hearing,\n Judge  McNeill\n ordered\n me  to obtain  a\npsychological\n assessment\n from  HealtliWest.\no  \nThe  judge's\n secretary\n then  emailed\n me,  instructing\n that  the  completed\nHealthWest\n evaluation\n sh",
+      "source": "evidence_quotes",
+      "evidence_category": "TRANSCRIPT",
+      "legal_significance": null,
+      "categories": [
+        "Unclassified"
+      ],
+      "mcr_2612_flags": []
+    }
+  ]
+}

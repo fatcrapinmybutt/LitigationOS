@@ -1,0 +1,167 @@
+{
+  "legal_patterns": {
+    "mcr": "\\bMCR\\s+(\\d+\\.\\d+(?:\\([A-Za-z0-9]+\\))?(?:\\([A-Za-z0-9]+\\))?)",
+    "mcl": "\\bMCL\\s+(\\d{3}\\.\\d+[a-z]?(?:\\(\\d+\\))?)",
+    "mre": "\\bMRE\\s+(\\d{3}(?:\\.\\d+)?)",
+    "case_cite": "(\\d+)\\s+(Mich(?:\\s+App)?|N\\.?W\\.?2d|F\\.?\\s*(?:Supp\\.?\\s*)?(?:2d|3d)?|U\\.?S\\.?)\\s+(\\d+)",
+    "case_name": "([A-Z][a-z]+(?:\\s+[A-Z][a-z]+)*)\\s+v\\.?\\s+([A-Z][a-z]+(?:\\s+[A-Z][a-z]+)*)",
+    "date": "\\b(\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}|\\w+\\s+\\d{1,2},?\\s+\\d{4})\\b",
+    "case_number": "\\b(\\d{4}[-\u2013]\\d{4,6}[-\u2013]?[A-Z]{0,3})\\b",
+    "section": "\u00a7\\s*(\\d+(?:\\.\\d+)?)",
+    "usc": "\\b(\\d+)\\s+U\\.?S\\.?C\\.?\\s+\u00a7?\\s*(\\d+[a-z]?(?:-\\d+[a-z]?)?)",
+    "const": "\\b(?:Const(?:itution)?\\s+(?:1963\\s+)?art(?:icle)?\\s+\\d+\\s*\u00a7\\s*\\d+|US\\s+Const\\s+Amend\\s+[IVXLCDM]+)",
+    "canon": "\\bCanon\\s+(\\d+)\\([A-Z]\\)\\(\\d+\\)"
+  },
+  "entity_patterns": [
+    {
+      "name": "Andrew Pigors",
+      "aliases": ["Andrew", "Pigors", "Mr. Pigors", "Andrew Pigors", "Plaintiff", "Appellant", "Father", "Dad", "Pro Se Plaintiff", "Pro Se Litigant"],
+      "role": "plaintiff_appellant_father",
+      "patterns": ["\\bAndrew\\s+Pigors\\b", "\\bMr\\.?\\s*Pigors\\b", "\\bPigors,\\s*Andrew\\b", "\\b(?:Plaintiff|Appellant)(?:\\s*[-/]\\s*(?:Appellant|Plaintiff))?\\b"]
+    },
+    {
+      "name": "Tiffany Watson",
+      "aliases": ["Tiffany", "Watson", "Tiffany Watson", "Tiffany Pigors", "Ms. Watson", "Defendant", "Appellee", "Mother", "Mom", "fka Pigors"],
+      "role": "defendant_appellee_mother",
+      "patterns": ["\\bTiffany\\s+(?:Watson|Pigors)\\b", "\\bMs\\.?\\s*Watson\\b", "\\bWatson,\\s*Tiffany\\b", "\\b(?:Defendant|Appellee)(?:\\s*[-/]\\s*(?:Appellee|Defendant))?\\b"]
+    },
+    {
+      "name": "Lincoln",
+      "aliases": ["Lincoln", "the child", "the minor", "the minor child", "minor child"],
+      "role": "minor_child",
+      "patterns": ["\\bLincoln\\b", "\\b(?:the\\s+)?minor\\s+child\\b", "\\b(?:the\\s+)?child\\b"]
+    },
+    {
+      "name": "Judge Jenny L. McNeill",
+      "aliases": ["McNeill", "Judge McNeill", "Hon. McNeill", "Hon. Jenny L. McNeill", "Jenny McNeill", "the Court", "trial court"],
+      "role": "judge_circuit_court",
+      "patterns": ["\\bMcNeill\\b", "\\bJudge\\s+McNeill\\b", "\\bHon\\.?\\s*(?:Jenny\\s+L\\.?\\s+)?McNeill\\b", "\\bthe\\s+(?:trial\\s+)?[Cc]ourt\\b"]
+    },
+    {
+      "name": "Cavan Berry",
+      "aliases": ["Cavan Berry", "Berry", "Cavan", "FOC referee", "Friend of the Court"],
+      "role": "foc_referee",
+      "patterns": ["\\bCavan\\s+Berry\\b", "\\bFOC\\s+(?:referee|investigator|worker)\\b", "\\bFriend\\s+of\\s+the\\s+Court\\b"]
+    },
+    {
+      "name": "Ronald Berry",
+      "aliases": ["Ronald Berry", "Ron Berry", "Ronald"],
+      "role": "related_party",
+      "patterns": ["\\bRonald\\s+Berry\\b", "\\bRon\\s+Berry\\b"]
+    },
+    {
+      "name": "Emily Watson",
+      "aliases": ["Emily", "Emily Watson"],
+      "role": "child_family_member",
+      "patterns": ["\\bEmily\\s+Watson\\b", "\\bEmily\\b"]
+    },
+    {
+      "name": "Albert Watson",
+      "aliases": ["Albert Watson", "Albert", "Al Watson"],
+      "role": "family_member_defendant_side",
+      "patterns": ["\\bAlbert\\s+Watson\\b", "\\bAl\\s+Watson\\b"]
+    },
+    {
+      "name": "Lori Watson",
+      "aliases": ["Lori Watson", "Lori"],
+      "role": "family_member_defendant_side",
+      "patterns": ["\\bLori\\s+Watson\\b"]
+    },
+    {
+      "name": "Cody Watson",
+      "aliases": ["Cody Watson", "Cody"],
+      "role": "family_member_defendant_side",
+      "patterns": ["\\bCody\\s+Watson\\b"]
+    },
+    {
+      "name": "Shady Oaks",
+      "aliases": ["Shady Oaks", "Shady Oaks Trailer Park", "Shady Oaks MHP", "the trailer park", "the park"],
+      "role": "housing_location",
+      "patterns": ["\\bShady\\s+Oaks\\b", "\\bShady\\s+Oaks\\s+(?:Trailer\\s+Park|MHP|Mobile\\s+Home)\\b"]
+    },
+    {
+      "name": "Alden Global Capital",
+      "aliases": ["Alden Global", "Alden", "Alden Global Capital"],
+      "role": "corporate_entity",
+      "patterns": ["\\bAlden\\s+Global(?:\\s+Capital)?\\b"]
+    },
+    {
+      "name": "Partridge Equities",
+      "aliases": ["Partridge", "Partridge Equities"],
+      "role": "corporate_entity",
+      "patterns": ["\\bPartridge\\s+Equities\\b", "\\bPartridge\\b"]
+    },
+    {
+      "name": "14th Circuit Court",
+      "aliases": ["14th Circuit", "14th Circuit Court", "Muskegon County Circuit Court", "circuit court"],
+      "role": "court",
+      "patterns": ["\\b14th\\s+Circuit\\s+Court\\b", "\\bMuskegon\\s+County\\s+Circuit\\b"]
+    },
+    {
+      "name": "Michigan Court of Appeals",
+      "aliases": ["COA", "Court of Appeals", "Michigan COA", "MCOA"],
+      "role": "court_appellate",
+      "patterns": ["\\bCourt\\s+of\\s+Appeals\\b", "\\bCOA\\b", "\\bMichigan\\s+(?:Court\\s+of\\s+Appeals|COA)\\b"]
+    },
+    {
+      "name": "Michigan Supreme Court",
+      "aliases": ["MSC", "Supreme Court", "Michigan Supreme Court"],
+      "role": "court_supreme",
+      "patterns": ["\\bMichigan\\s+Supreme\\s+Court\\b", "\\bMSC\\b", "\\bSupreme\\s+Court\\b"]
+    },
+    {
+      "name": "Judicial Tenure Commission",
+      "aliases": ["JTC", "Judicial Tenure Commission"],
+      "role": "oversight_body",
+      "patterns": ["\\bJudicial\\s+Tenure\\s+Commission\\b", "\\bJTC\\b"]
+    },
+    {
+      "name": "USDC Western District",
+      "aliases": ["USDC", "Western District", "WDMI", "W.D. Mich."],
+      "role": "court_federal",
+      "patterns": ["\\bU\\.?S\\.?D\\.?C\\.?\\s+(?:Western\\s+District|W\\.?D\\.?\\s*Mich)\\b", "\\bWDMI\\b", "\\bW\\.D\\.\\s*Mich\\b"]
+    },
+    {
+      "name": "SCAO",
+      "aliases": ["SCAO", "State Court Administrative Office"],
+      "role": "court_admin",
+      "patterns": ["\\bSCAO\\b", "\\bState\\s+Court\\s+Administrative\\s+Office\\b"]
+    },
+    {
+      "name": "DHHS",
+      "aliases": ["DHHS", "CPS", "Child Protective Services", "Department of Health and Human Services"],
+      "role": "government_agency",
+      "patterns": ["\\bDHHS\\b", "\\bCPS\\b", "\\bChild\\s+Protective\\s+Services\\b"]
+    },
+    {
+      "name": "Case 2024-001507-DC",
+      "aliases": ["2024-001507-DC", "custody case", "Watson custody"],
+      "role": "case_lane_a",
+      "patterns": ["\\b2024[-\u2013]001507[-\u2013]DC\\b"]
+    },
+    {
+      "name": "Case 2023-5907-PP",
+      "aliases": ["2023-5907-PP", "PPO case"],
+      "role": "case_lane_d",
+      "patterns": ["\\b2023[-\u2013]5907[-\u2013]PP\\b"]
+    },
+    {
+      "name": "COA 366810",
+      "aliases": ["366810", "COA Docket 366810", "appeal docket"],
+      "role": "case_lane_f",
+      "patterns": ["\\b366810\\b"]
+    },
+    {
+      "name": "Pigors v Watson",
+      "aliases": ["Pigors v Watson", "Pigors v. Watson", "this case"],
+      "role": "case_caption",
+      "patterns": ["\\bPigors\\s+v\\.?\\s+Watson\\b"]
+    },
+    {
+      "name": "Watson v Pigors",
+      "aliases": ["Watson v Pigors", "Watson v. Pigors"],
+      "role": "case_caption_reverse",
+      "patterns": ["\\bWatson\\s+v\\.?\\s+Pigors\\b"]
+    }
+  ]
+}

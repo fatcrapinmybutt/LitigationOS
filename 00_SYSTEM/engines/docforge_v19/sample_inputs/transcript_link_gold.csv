@@ -1,0 +1,6 @@
+finding_id,transcript_row_id,is_match
+F1,TR::TRX1::12:3-9,1
+F1,TR::TRX1::12:10-17,0
+F2,TR::TRX1::14:1-8,1
+F2,TR::TRX1::20:2-11,0
+F3,TR::TRX2::7:4-12,1

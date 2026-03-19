@@ -1,0 +1,52 @@
+[
+  {
+    "profile_id": "trial_default",
+    "forum": "trial",
+    "presentation_gate": "moderate",
+    "clerk_notice_behavior": "typically sets hearing/return instructions; local practice varies",
+    "common_fail_modes": [
+      "missing required findings in orders",
+      "service/proof gaps",
+      "no transcript/record for appellate review"
+    ],
+    "cure_style": "motion + proposed order + proof packet"
+  },
+  {
+    "profile_id": "coa_default",
+    "forum": "coa",
+    "presentation_gate": "strict-but-curable",
+    "clerk_notice_behavior": "deficiency letter with cure deadline; possible dismissal if not cured",
+    "common_fail_modes": [
+      "untimely claim/application",
+      "missing docketing statement",
+      "transcript/record not ordered/settled",
+      "briefing defects or missed deadlines"
+    ],
+    "cure_style": "cure packet + motion to reinstate/extend as allowed"
+  },
+  {
+    "profile_id": "msc_default",
+    "forum": "msc",
+    "presentation_gate": "very-strict",
+    "clerk_notice_behavior": "return-without-docketing / nonconforming filings can miss jurisdictional time limits",
+    "common_fail_modes": [
+      "late ALA/appeal filing",
+      "nonconforming filing returned (time limit not satisfied if not corrected)",
+      "missing required attachments/copies"
+    ],
+    "cure_style": "immediate cure + motion if allowed; prioritize zero-defect filing"
+  },
+  {
+    "profile_id": "jtc_default",
+    "forum": "jtc",
+    "presentation_gate": "process-milestone-accurate",
+    "clerk_notice_behavior": "screening/investigation notices; 28-day letter; confidentiality constraints",
+    "common_fail_modes": [
+      "unverified/unstructured request",
+      "missing chronology/evidence pinpoints",
+      "failure to respond to 28-day letter or notices",
+      "attempt to force public disclosure prematurely"
+    ],
+    "cure_style": "structured request + evidence packet + milestone responses"
+  }
+]

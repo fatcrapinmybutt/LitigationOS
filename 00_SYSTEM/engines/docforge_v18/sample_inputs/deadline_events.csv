@@ -1,0 +1,5 @@
+vehicle,event_id,lane,rule_citation,rule_label,anchor_entered,anchor_signed,anchor_served,anchor_recorded,offset_days_entered,offset_days_signed,offset_days_served,offset_days_recorded
+COA_CLAIM_APPEAL,D1,MEEK2,MCR 7.204,Claim of Appeal Clock,2026-02-01,2026-01-31,2026-02-05,2026-02-05,21,,21,
+MSC_APP_LEAVE,D2,MEEK4,MCR 7.305,MSC App for Leave,2026-02-10,2026-02-09,,2026-02-10,42,,42,
+JTC_COMPLAINT,D3,MEEK4,,JTC intake (internal planning),,,2026-02-15,2026-02-15,,,14,7
+HOUSING_POSTJUDGMENT,D4,MEEK1,MCR 2.612,Relief from Judgment (check exact subrule),2026-01-20,2026-01-20,2026-01-22,2026-01-22,28,28,28,

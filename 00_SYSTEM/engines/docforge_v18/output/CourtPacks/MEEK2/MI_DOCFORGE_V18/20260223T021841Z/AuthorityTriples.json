@@ -1,0 +1,28 @@
+[
+  {
+    "id": 3,
+    "authority_family": "MCL",
+    "citation": "MCL 722.27a",
+    "proposition": "Parenting time orders and modifications are governed by Michigan statute; child's best interests and parenting-time framework apply.",
+    "source_url": "https://www.legislature.mi.gov/doc.aspx?mcl-722.27A",
+    "pinpoint": null,
+    "official_text_exact": null,
+    "graft_status": "PARTIAL",
+    "resolver_recipe": "Resolve exact text + pinpoint from official MI source for MCL 722.27a",
+    "lane": "MEEK2",
+    "created_at": "2026-02-23T02:18:41Z"
+  },
+  {
+    "id": 1,
+    "authority_family": "MCR",
+    "citation": "MCR 3.207(B)(1)",
+    "proposition": "Ex parte relief requires irreparable injury or loss before notice can be given/hearing held.",
+    "source_url": "https://www.courts.michigan.gov/",
+    "pinpoint": "(B)(1)",
+    "official_text_exact": "An ex parte order may be entered if it clearly appears from specific facts shown by verified complaint, affidavit, or other proof that irreparable injury, loss, or damage will result from delay required to give notice.",
+    "graft_status": "RESOLVED_VERIFIED",
+    "resolver_recipe": "Resolve exact text + pinpoint from official MI source for MCR 3.207(B)(1)",
+    "lane": "MEEK2",
+    "created_at": "2026-02-23T02:18:41Z"
+  }
+]

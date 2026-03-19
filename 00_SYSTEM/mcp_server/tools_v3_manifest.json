@@ -1,0 +1,150 @@
+{
+  "version": "3.0.0",
+  "module": "tools_v3",
+  "description": "LitigationOS MCP v3 Enhancement Layer — 9 new tools across 5 categories",
+  "created": "2025-07-16",
+  "categories": {
+    "dashboard": {
+      "description": "Case-level health, threat, and pipeline views",
+      "tools": [
+        "litigation_case_health",
+        "litigation_adversary_threats",
+        "litigation_filing_pipeline"
+      ]
+    },
+    "dedup": {
+      "description": "Content deduplication registry queries",
+      "tools": [
+        "litigation_dedup_status",
+        "litigation_dedup_duplicates"
+      ]
+    },
+    "drive_org": {
+      "description": "Drive organization and file distribution",
+      "tools": [
+        "litigation_drive_summary",
+        "litigation_drive_org_log"
+      ]
+    },
+    "performance": {
+      "description": "Query and system performance benchmarks",
+      "tools": [
+        "litigation_query_benchmarks"
+      ]
+    },
+    "fleet": {
+      "description": "Agent and skill fleet inventory",
+      "tools": [
+        "litigation_agent_inventory"
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "litigation_case_health",
+      "description": "Get case health dashboard from v_case_health view — counts of quotes, harms, impeachment points, contradictions, claims, and deadline status.",
+      "category": "dashboard",
+      "parameters": {},
+      "returns": "object",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_adversary_threats",
+      "description": "Get adversary threat matrix ranked by harm count with critical counts and category spread.",
+      "category": "dashboard",
+      "parameters": {
+        "limit": {
+          "type": "integer",
+          "default": 20,
+          "description": "Maximum number of adversaries to return."
+        }
+      },
+      "returns": "array",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_filing_pipeline",
+      "description": "Get filing pipeline status — every filing action with phase, readiness %, risk score, tier, gaps filled/remaining, and sequencing.",
+      "category": "dashboard",
+      "parameters": {},
+      "returns": "array",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_dedup_status",
+      "description": "Get aggregate deduplication statistics — total files, unique hashes, exact/near duplicates, pending review, drives scanned.",
+      "category": "dedup",
+      "parameters": {},
+      "returns": "object",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_dedup_duplicates",
+      "description": "List identified duplicate files with path, size, SHA-256, canonical reference, and action status.",
+      "category": "dedup",
+      "parameters": {
+        "drive": {
+          "type": "string",
+          "default": null,
+          "description": "Filter by drive letter (e.g., 'C'). Omit for all drives."
+        },
+        "limit": {
+          "type": "integer",
+          "default": 50,
+          "description": "Maximum number of duplicates to return."
+        }
+      },
+      "returns": "array",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_drive_summary",
+      "description": "Get per-drive file summary — file count, total bytes, unique names, duplicates found, files moved, files pending.",
+      "category": "drive_org",
+      "parameters": {},
+      "returns": "array",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_drive_org_log",
+      "description": "Get drive organization action log — file-move and reorganization actions with status filtering.",
+      "category": "drive_org",
+      "parameters": {
+        "status": {
+          "type": "string",
+          "default": null,
+          "description": "Filter by action status (e.g., 'completed', 'pending'). Omit for all."
+        },
+        "limit": {
+          "type": "integer",
+          "default": 50,
+          "description": "Maximum log entries to return."
+        }
+      },
+      "returns": "array",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_query_benchmarks",
+      "description": "Get recent query performance benchmarks — query name, execution time (ms), row count, timestamp.",
+      "category": "performance",
+      "parameters": {
+        "limit": {
+          "type": "integer",
+          "default": 20,
+          "description": "Maximum benchmark entries to return."
+        }
+      },
+      "returns": "array",
+      "readOnly": true
+    },
+    {
+      "name": "litigation_agent_inventory",
+      "description": "List all Copilot agents and skills — counts and sorted inventory from .copilot/agents and .copilot/skills directories.",
+      "category": "fleet",
+      "parameters": {},
+      "returns": "object",
+      "readOnly": true
+    }
+  ]
+}

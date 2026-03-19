@@ -1,0 +1,13 @@
+{
+  "metrics": {},
+  "weights": {
+    "coverage": 0.3,
+    "gaps": 0.15,
+    "lane_balance": 0.15,
+    "filing_readiness": 0.25,
+    "overall": 0.15
+  },
+  "overall_score": 0.0,
+  "verdict": "BLOCKED-BY",
+  "blockers": []
+}

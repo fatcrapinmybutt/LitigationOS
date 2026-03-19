@@ -1,0 +1,91 @@
+[
+  {
+    "packet_id": "PACK_trial_motion_core",
+    "forum": "trial",
+    "title": "Trial court motion packet (core)",
+    "required_items": [
+      "Caption/notice of hearing (if set)",
+      "Motion",
+      "Affidavit(s)",
+      "Exhibit list",
+      "Proposed order",
+      "Proof of service"
+    ],
+    "notes": ""
+  },
+  {
+    "packet_id": "PACK_trial_show_cause_response",
+    "forum": "trial",
+    "title": "Show-cause response packet",
+    "required_items": [
+      "Show-cause notice/order",
+      "Response/brief",
+      "Exhibit list",
+      "Exhibits",
+      "Witness list/subpoenas",
+      "Proposed findings/order",
+      "Proof of service"
+    ],
+    "notes": ""
+  },
+  {
+    "packet_id": "PACK_coa_claim_of_appeal",
+    "forum": "coa",
+    "title": "COA claim of appeal packet",
+    "required_items": [
+      "Claim of appeal",
+      "Register of Actions excerpt showing entry date",
+      "Appealed order/judgment",
+      "Fee/IFP",
+      "Proof of service",
+      "Docketing statement (when due)"
+    ],
+    "notes": ""
+  },
+  {
+    "packet_id": "PACK_coa_leave_application",
+    "forum": "coa",
+    "title": "COA application for leave packet",
+    "required_items": [
+      "Application for leave",
+      "Questions presented",
+      "Statement of facts",
+      "Argument",
+      "Appendix (key orders, transcripts excerpts, ROA)",
+      "Fee/IFP",
+      "Proof of service"
+    ],
+    "notes": ""
+  },
+  {
+    "packet_id": "PACK_msc_leave_application",
+    "forum": "msc",
+    "title": "MSC application for leave packet",
+    "required_items": [
+      "COA opinion/order",
+      "MSC application",
+      "Questions presented",
+      "Reasons for review",
+      "Argument",
+      "Appendix",
+      "Fee/IFP",
+      "Proof of service"
+    ],
+    "notes": ""
+  },
+  {
+    "packet_id": "PACK_jtc_complaint",
+    "forum": "jtc",
+    "title": "JTC complaint packet",
+    "required_items": [
+      "Complaint narrative",
+      "MisconductAllegation list",
+      "CanonRule mapping",
+      "Timeline",
+      "Evidence attachment index",
+      "Key evidence excerpts/quotes",
+      "Contact info"
+    ],
+    "notes": ""
+  }
+]

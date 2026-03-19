@@ -1,0 +1,378 @@
+{
+  "stats": {
+    "total_scanned": 8413,
+    "new_indexed": 4765,
+    "duplicates": 3568,
+    "errors": 80,
+    "drives_scanned": 6,
+    "categories": {
+      "uncategorized": 1860,
+      "court_filing": 1588,
+      "evidence": 749,
+      "court_form": 168,
+      "correspondence": 111,
+      "legal_reference": 102,
+      "medical": 88,
+      "transcript": 42,
+      "report": 30,
+      "financial": 17,
+      "personal": 10
+    },
+    "started": "2026-03-19T07:53:02.428787",
+    "total_in_index": 4765,
+    "finished": "2026-03-19T07:55:42.985445",
+    "status": "SUCCESS"
+  },
+  "sample_new": [
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\TONIGHT_FILING_CHECKLIST.pdf",
+      "name": "TONIGHT_FILING_CHECKLIST.pdf",
+      "size": 9341,
+      "category": "court_filing",
+      "fingerprint": "5180a0f7b93cd57b"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\BLUEPRINTS\\LitigationOS_Legal_Judicial_Blueprint_v1.pdf",
+      "name": "LitigationOS_Legal_Judicial_Blueprint_v1.pdf",
+      "size": 38199,
+      "category": "court_filing",
+      "fingerprint": "539244c2351987ff"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\BLUEPRINTS\\LitigationOS_System_Architecture_Blueprint_v1.pdf",
+      "name": "LitigationOS_System_Architecture_Blueprint_v1.pdf",
+      "size": 35852,
+      "category": "court_filing",
+      "fingerprint": "2f579245beda6939"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\00_MASTER_INDEX.pdf",
+      "name": "00_MASTER_INDEX.pdf",
+      "size": 99193,
+      "category": "court_filing",
+      "fingerprint": "a63e3c7aecea7f21"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\DAMAGES_QUANTIFICATION_COMPLETE.pdf",
+      "name": "DAMAGES_QUANTIFICATION_COMPLETE.pdf",
+      "size": 99587,
+      "category": "court_filing",
+      "fingerprint": "3c785d0faed4fab5"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\DEPOSITION_NOTICES.pdf",
+      "name": "DEPOSITION_NOTICES.pdf",
+      "size": 122127,
+      "category": "court_filing",
+      "fingerprint": "f6ce5984942af4e5"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\DRIVE_ORGANIZATION_MASTER_PLAN.pdf",
+      "name": "DRIVE_ORGANIZATION_MASTER_PLAN.pdf",
+      "size": 93942,
+      "category": "court_filing",
+      "fingerprint": "3f7dec41d6554305"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\EVIDENCE_CLAIM_MATRIX.pdf",
+      "name": "EVIDENCE_CLAIM_MATRIX.pdf",
+      "size": 98163,
+      "category": "court_filing",
+      "fingerprint": "c16901225825cdc2"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\EXHIBIT_BINDER_INDEX.pdf",
+      "name": "EXHIBIT_BINDER_INDEX.pdf",
+      "size": 97221,
+      "category": "court_filing",
+      "fingerprint": "4d93d1180396ce14"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\FEDERAL_INITIAL_DISCLOSURES.pdf",
+      "name": "FEDERAL_INITIAL_DISCLOSURES.pdf",
+      "size": 113218,
+      "category": "court_filing",
+      "fingerprint": "68afe077f2900f19"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\FEE_WAIVER_APPLICATIONS.pdf",
+      "name": "FEE_WAIVER_APPLICATIONS.pdf",
+      "size": 108279,
+      "category": "court_filing",
+      "fingerprint": "a7ea921360334713"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\IMPEACHMENT_PLAYBOOK.pdf",
+      "name": "IMPEACHMENT_PLAYBOOK.pdf",
+      "size": 95432,
+      "category": "court_filing",
+      "fingerprint": "0f3bed99dae1f14d"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\MASTER_CHRONOLOGICAL_TIMELINE.pdf",
+      "name": "MASTER_CHRONOLOGICAL_TIMELINE.pdf",
+      "size": 96441,
+      "category": "court_filing",
+      "fingerprint": "693ebf7f5e35204a"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\MASTER_FILING_CALENDAR.pdf",
+      "name": "MASTER_FILING_CALENDAR.pdf",
+      "size": 123368,
+      "category": "court_filing",
+      "fingerprint": "6a0a8df3eb2c289d"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\MOTIONS_IN_LIMINE_ALL_CASES.pdf",
+      "name": "MOTIONS_IN_LIMINE_ALL_CASES.pdf",
+      "size": 91411,
+      "category": "court_filing",
+      "fingerprint": "bfa20dcbe6cd6ceb"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\POST_JUDGMENT_ENFORCEMENT_STRATEGY.pdf",
+      "name": "POST_JUDGMENT_ENFORCEMENT_STRATEGY.pdf",
+      "size": 91069,
+      "category": "court_filing",
+      "fingerprint": "227628f550aecb7f"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\PRETRIAL_STATEMENT_TEMPLATE.pdf",
+      "name": "PRETRIAL_STATEMENT_TEMPLATE.pdf",
+      "size": 86111,
+      "category": "court_filing",
+      "fingerprint": "d4f3fa963a5e62e5"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\PROPOSED_JURY_INSTRUCTIONS.pdf",
+      "name": "PROPOSED_JURY_INSTRUCTIONS.pdf",
+      "size": 91554,
+      "category": "court_filing",
+      "fingerprint": "a3331316e4947615"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\SERVICE_CALCULATOR_EFILING_GUIDE.pdf",
+      "name": "SERVICE_CALCULATOR_EFILING_GUIDE.pdf",
+      "size": 98516,
+      "category": "court_filing",
+      "fingerprint": "91aa9814670c23fc"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\SESSION_SUMMARY_REPORT.pdf",
+      "name": "SESSION_SUMMARY_REPORT.pdf",
+      "size": 104516,
+      "category": "court_filing",
+      "fingerprint": "1a193b8aea2ae7fa"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\SETTLEMENT_DEMAND_ANALYSIS.pdf",
+      "name": "SETTLEMENT_DEMAND_ANALYSIS.pdf",
+      "size": 100857,
+      "category": "court_filing",
+      "fingerprint": "b535ee15957fee02"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\SUBPOENA_TEMPLATES.pdf",
+      "name": "SUBPOENA_TEMPLATES.pdf",
+      "size": 128551,
+      "category": "court_filing",
+      "fingerprint": "65f5b35455def84f"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\TRIAL_BRIEF_CUSTODY.pdf",
+      "name": "TRIAL_BRIEF_CUSTODY.pdf",
+      "size": 93060,
+      "category": "court_filing",
+      "fingerprint": "500af6ecbe2803fa"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\TRIAL_BRIEF_HOUSING.pdf",
+      "name": "TRIAL_BRIEF_HOUSING.pdf",
+      "size": 94004,
+      "category": "court_filing",
+      "fingerprint": "2c9c920488755b77"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\WITNESS_LISTS_ALL_CASES.pdf",
+      "name": "WITNESS_LISTS_ALL_CASES.pdf",
+      "size": 171042,
+      "category": "court_filing",
+      "fingerprint": "1cb2ff54c49beeb4"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\01_DISQUALIFICATION_MCR2003\\A_MAIN_FILING\\MOTION_FOR_DISQUALIFICATION.pdf",
+      "name": "MOTION_FOR_DISQUALIFICATION.pdf",
+      "size": 75308,
+      "category": "court_filing",
+      "fingerprint": "7cd4d91fafc9346c"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\01_DISQUALIFICATION_MCR2003\\B_BRIEF_IN_SUPPORT\\BRIEF_IN_SUPPORT_DISQUALIFICATION.pdf",
+      "name": "BRIEF_IN_SUPPORT_DISQUALIFICATION.pdf",
+      "size": 87321,
+      "category": "court_filing",
+      "fingerprint": "36f45dd4c54166e0"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\01_DISQUALIFICATION_MCR2003\\C_EXHIBITS\\EXHIBIT_A_CHRONOLOGICAL_LOG_EXPARTE_ORDERS.pdf",
+      "name": "EXHIBIT_A_CHRONOLOGICAL_LOG_EXPARTE_ORDERS.pdf",
+      "size": 66238,
+      "category": "court_filing",
+      "fingerprint": "47c925e52339f725"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\01_DISQUALIFICATION_MCR2003\\C_EXHIBITS\\EXHIBIT_B_STATISTICAL_ANALYSIS.pdf",
+      "name": "EXHIBIT_B_STATISTICAL_ANALYSIS.pdf",
+      "size": 65807,
+      "category": "court_filing",
+      "fingerprint": "e8f258b09f6edd4e"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\01_DISQUALIFICATION_MCR2003\\C_EXHIBITS\\EXHIBIT_C_OFF_RECORD_EVIDENCE_HANDLING.pdf",
+      "name": "EXHIBIT_C_OFF_RECORD_EVIDENCE_HANDLING.pdf",
+      "size": 64977,
+      "category": "court_filing",
+      "fingerprint": "bb2d8052a77452b0"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\01_DISQUALIFICATION_MCR2003\\C_EXHIBITS\\EXHIBIT_D_SAME_DAY_FILING_PATTERN.pdf",
+      "name": "EXHIBIT_D_SAME_DAY_FILING_PATTERN.pdf",
+      "size": 62422,
+      "category": "court_filing",
+      "fingerprint": "1d715995691b8c37"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\01_DISQUALIFICATION_MCR2003\\C_EXHIBITS\\EXHIBIT_E_MCR3207B_COMPLIANCE_AUDIT.pdf",
+      "name": "EXHIBIT_E_MCR3207B_COMPLIANCE_AUDIT.pdf",
+      "size": 67286,
+      "category": "court_filing",
+      "fingerprint": "85b009daefa8c557"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\01_DISQUALIFICATION_MCR2003\\C_EXHIBITS\\EXHIBIT_F_CANON_VIOLATION_SUMMARY.pdf",
+      "name": "EXHIBIT_F_CANON_VIOLATION_SUMMARY.pdf",
+      "size": 67778,
+      "category": "court_filing",
+      "fingerprint": "1d3854bdccfbc29a"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\01_DISQUALIFICATION_MCR2003\\C_EXHIBITS\\EXHIBIT_INDEX.pdf",
+      "name": "EXHIBIT_INDEX.pdf",
+      "size": 62715,
+      "category": "court_filing",
+      "fingerprint": "4a889a2157708eeb"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\01_DISQUALIFICATION_MCR2003\\D_PROPOSED_ORDER\\PROPOSED_ORDER_DISQUALIFICATION.pdf",
+      "name": "PROPOSED_ORDER_DISQUALIFICATION.pdf",
+      "size": 61800,
+      "category": "court_filing",
+      "fingerprint": "5d4d2e2225c27b7e"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\01_DISQUALIFICATION_MCR2003\\E_CERTIFICATE_OF_SERVICE\\CERTIFICATE_OF_SERVICE.pdf",
+      "name": "CERTIFICATE_OF_SERVICE.pdf",
+      "size": 63507,
+      "category": "court_filing",
+      "fingerprint": "c7ba3ec82d9c28e8"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\01_DISQUALIFICATION_MCR2003\\G_FILING_INSTRUCTIONS\\FILING_INSTRUCTIONS.pdf",
+      "name": "FILING_INSTRUCTIONS.pdf",
+      "size": 70658,
+      "category": "court_filing",
+      "fingerprint": "cbf26228c54ac9c1"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\02_CONTEMPT_PARENTING_TIME\\A_MAIN_FILING\\MOTION_FOR_CONTEMPT.pdf",
+      "name": "MOTION_FOR_CONTEMPT.pdf",
+      "size": 101474,
+      "category": "court_filing",
+      "fingerprint": "5299ae9d224f9c89"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\02_CONTEMPT_PARENTING_TIME\\B_BRIEF_IN_SUPPORT\\BRIEF_IN_SUPPORT_CONTEMPT.pdf",
+      "name": "BRIEF_IN_SUPPORT_CONTEMPT.pdf",
+      "size": 116114,
+      "category": "court_filing",
+      "fingerprint": "ae6ce985c0cf1941"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\02_CONTEMPT_PARENTING_TIME\\C_EXHIBITS\\EXHIBIT_A_COURT_ORDERS.pdf",
+      "name": "EXHIBIT_A_COURT_ORDERS.pdf",
+      "size": 83184,
+      "category": "court_filing",
+      "fingerprint": "859ff9a9977c82ac"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\02_CONTEMPT_PARENTING_TIME\\C_EXHIBITS\\EXHIBIT_B_PARENTING_TIME_LOG.pdf",
+      "name": "EXHIBIT_B_PARENTING_TIME_LOG.pdf",
+      "size": 89472,
+      "category": "court_filing",
+      "fingerprint": "d23909b05ca0e564"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\02_CONTEMPT_PARENTING_TIME\\C_EXHIBITS\\EXHIBIT_C_COMMUNICATIONS.pdf",
+      "name": "EXHIBIT_C_COMMUNICATIONS.pdf",
+      "size": 87231,
+      "category": "court_filing",
+      "fingerprint": "6486c4905917080a"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\02_CONTEMPT_PARENTING_TIME\\C_EXHIBITS\\EXHIBIT_D_FOC_DOCUMENTATION.pdf",
+      "name": "EXHIBIT_D_FOC_DOCUMENTATION.pdf",
+      "size": 85926,
+      "category": "court_filing",
+      "fingerprint": "844f076a22ba5be8"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\02_CONTEMPT_PARENTING_TIME\\C_EXHIBITS\\EXHIBIT_E_IMPACT_STATEMENT.pdf",
+      "name": "EXHIBIT_E_IMPACT_STATEMENT.pdf",
+      "size": 93970,
+      "category": "court_filing",
+      "fingerprint": "837da787d8998898"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\02_CONTEMPT_PARENTING_TIME\\C_EXHIBITS\\EXHIBIT_INDEX.pdf",
+      "name": "EXHIBIT_INDEX.pdf",
+      "size": 88645,
+      "category": "court_filing",
+      "fingerprint": "37648eaf9d8c9207"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\02_CONTEMPT_PARENTING_TIME\\D_PROPOSED_ORDER\\PROPOSED_ORDER_CONTEMPT.pdf",
+      "name": "PROPOSED_ORDER_CONTEMPT.pdf",
+      "size": 82396,
+      "category": "court_filing",
+      "fingerprint": "c385f8a97e0a1d7e"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\02_CONTEMPT_PARENTING_TIME\\E_CERTIFICATE_OF_SERVICE\\CERTIFICATE_OF_SERVICE.pdf",
+      "name": "CERTIFICATE_OF_SERVICE.pdf",
+      "size": 77468,
+      "category": "court_filing",
+      "fingerprint": "e6d54f09c4edc931"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\02_CONTEMPT_PARENTING_TIME\\G_FILING_INSTRUCTIONS\\FILING_INSTRUCTIONS.pdf",
+      "name": "FILING_INSTRUCTIONS.pdf",
+      "size": 94248,
+      "category": "court_filing",
+      "fingerprint": "27231f0fb2f773ae"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\03_RESTORE_PARENTING_TIME\\A_MAIN_FILING\\EMERGENCY_MOTION_RESTORE_PARENTING_TIME.pdf",
+      "name": "EMERGENCY_MOTION_RESTORE_PARENTING_TIME.pdf",
+      "size": 92580,
+      "category": "court_filing",
+      "fingerprint": "3d2b5fde10c5a652"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF_OUTPUT\\03_RESTORE_PARENTING_TIME\\B_BRIEF_IN_SUPPORT\\BRIEF_IN_SUPPORT_RESTORE_PT.pdf",
+      "name": "BRIEF_IN_SUPPORT_RESTORE_PT.pdf",
+      "size": 126962,
+      "category": "court_filing",
+      "fingerprint": "c1c2d63fad7b668e"
+    }
+  ]
+}

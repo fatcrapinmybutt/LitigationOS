@@ -1,0 +1,10 @@
+{
+  "file": "nodes_normalized.csv",
+  "columns": [
+    "id",
+    "label",
+    "type",
+    "properties_json",
+    "source_tag"
+  ]
+}

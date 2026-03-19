@@ -1,0 +1,7 @@
+# Deadlines
+|Vehicle|Event|Rule|Entered|Due(Entered)|Signed|Due(Signed)|Served|Due(Served)|Status|Notes|
+|---|---|---|---|---|---|---|---|---|---|---|
+|COA_CLAIM_APPEAL|D1|MCR 7.204|2026-02-01|2026-02-22|2026-01-31||2026-02-05|2026-02-26|PARTIAL|RULE_MISSING:signed;RULE_MISSING:recorded|
+|HOUSING_POSTJUDGMENT|D4|MCR 2.612|2026-01-20|2026-02-17|2026-01-20|2026-02-17|2026-01-22|2026-02-19|PARTIAL|RULE_MISSING:recorded|
+|JTC_COMPLAINT|D3|JTC intake (internal planning)|||||2026-02-15|2026-03-01|LOCKED|OK|
+|MSC_APP_LEAVE|D2|MCR 7.305|2026-02-10|2026-03-24|2026-02-09||||PARTIAL|RULE_MISSING:signed;MISSING_ANCHOR:served;RULE_MISSING:recorded|

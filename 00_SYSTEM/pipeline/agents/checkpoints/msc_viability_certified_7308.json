@@ -1,0 +1,16 @@
+{
+  "path_type": "certified_7308",
+  "viability_score": 60.0,
+  "evidence_score": 40.0,
+  "signal_score": 0.0,
+  "lane_c_bonus": 20.0,
+  "total_evidence": 27970,
+  "signal_hits": 0,
+  "lane_scores": {
+    "A": 6375,
+    "B": 18976,
+    "C": 2619
+  },
+  "blockers": [],
+  "viable": true
+}

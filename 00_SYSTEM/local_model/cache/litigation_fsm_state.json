@@ -1,0 +1,55 @@
+{
+  "current_states": {
+    "A": "hearing",
+    "B": "hearing",
+    "C": "monitoring",
+    "D": "hearing",
+    "E": "filing",
+    "F": "claim_filed"
+  },
+  "transition_log": [
+    {
+      "lane": "A",
+      "from": "hearing",
+      "action": "attend_hearing",
+      "to": "hearing",
+      "timestamp": "2026-02-26T19:43:27"
+    },
+    {
+      "lane": "B",
+      "from": "hearing",
+      "action": "attend_hearing",
+      "to": "hearing",
+      "timestamp": "2026-02-26T19:43:27"
+    },
+    {
+      "lane": "C",
+      "from": "monitoring",
+      "action": "scan_lanes",
+      "to": "monitoring",
+      "timestamp": "2026-02-26T19:43:27"
+    },
+    {
+      "lane": "D",
+      "from": "hearing",
+      "action": "attend_hearing",
+      "to": "hearing",
+      "timestamp": "2026-02-26T19:43:27"
+    },
+    {
+      "lane": "E",
+      "from": "filing",
+      "action": "file_with_jtc",
+      "to": "filing",
+      "timestamp": "2026-02-26T19:43:27"
+    },
+    {
+      "lane": "F",
+      "from": "claim_filed",
+      "action": "verify_jurisdiction",
+      "to": "claim_filed",
+      "timestamp": "2026-02-26T19:43:27"
+    }
+  ],
+  "saved_at": "2026-02-26T19:43:27"
+}

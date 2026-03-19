@@ -1,0 +1,12 @@
+{
+  "lane": "MEEK2",
+  "case_anchor": "24-01507-DC",
+  "counts": {
+    "authority_triples": 4,
+    "transcript_order_links": 9,
+    "deadline_locks": 3,
+    "contradiction_pairs": 1
+  },
+  "generated_at": "2026-02-23T02:36:20Z",
+  "status": "DRAFT_DROPIN_READY"
+}

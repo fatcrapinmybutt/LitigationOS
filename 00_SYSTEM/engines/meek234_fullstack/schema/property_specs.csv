@@ -1,0 +1,18 @@
+node_type,property,type,description
+Case,case_id,string,Case identifier if known.
+Event,date,date,ISO date if parsed.
+Event,kind,enum:event_kind,Event kind.
+Event,title,string,Short title.
+Event,details,string,Details text.
+Order,signed_date,date,If parsed.
+Order,entered_date,date,If parsed.
+Order,served_date,date,If parsed.
+Order,effective_date,date,If parsed.
+OperatingOrderPin,status,enum:order_status,Effective/stayed/superseded/unknown.
+EvidenceAtom,rel_path,string,Relative path in intake.
+EvidenceAtom,span_start,int,Start offset.
+EvidenceAtom,span_end,int,End offset.
+RiskEvent,risk_class,enum:risk_class,Risk class.
+RiskEvent,severity,int,1-100.
+VehicleCandidate,vehicle_type,string,Vehicle type.
+VehicleCandidate,operating_order_pin,string,Order pin id or MISSING.

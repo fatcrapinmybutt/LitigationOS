@@ -1,0 +1,28 @@
+{
+  "app": "LITIGATIONOS_MI_APPELLATE_DOCFORGE_MEEK1234_V18_BULKGRAFT_LINKLOCK",
+  "generated_at_utc": "2026-02-23T02:18:41Z",
+  "lane": "MEEK1",
+  "vehicle": "MI_DOCFORGE_V18",
+  "run_id": "20260223T021841Z",
+  "counts": {
+    "authority_rows": 1,
+    "transcript_links": 0,
+    "deadline_events": 1,
+    "contradictions": 0
+  },
+  "files": [
+    "AuthorityTriples.json",
+    "AuthorityTriples.md",
+    "CASE_STATE.md",
+    "ContextPack.md",
+    "ContradictionMap.json",
+    "ContradictionMap.md",
+    "DRAFT_BLOCKS_DROPIN.md",
+    "Deadlines.md",
+    "SBNA.md",
+    "ServiceChecklist.md",
+    "Transcript_StatementOfFacts_Pins.md",
+    "Validation_RedTeam.md",
+    "VehicleMap.md"
+  ]
+}

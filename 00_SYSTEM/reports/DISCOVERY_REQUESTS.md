@@ -1,140 +1,151 @@
-# 🔍 DISCOVERY REQUEST GENERATOR
-*Generated: 2026-03-19 00:01 | Tool #107*
-*MCR 2.309 (Interrogatories) · MCR 2.310 (Production) · MCR 2.312 (Admissions)*
+# DISCOVERY REQUESTS — Pigors v. Watson
+
+**Generated:** 2026-03-19 08:07
+**Case Numbers:** 2024-001507-DC, 2023-5907-PP
+**Court:** 14th Circuit Court, Family Division, Muskegon County
+**Judge:** Hon. Jenny L. McNeill
+**Plaintiff:** Andrew James Pigors
+**Defendant:** Emily A. Watson
 
 ---
 
-## Summary: 15 Interrogatories + 14 Doc Requests + 10 Admissions
+## I. INTERROGATORIES — MCR 2.309
 
-## 📝 INTERROGATORIES (MCR 2.309)
+### To: Emily A. Watson
 
-*Note: Michigan limits to 20 interrogatories per party (including subparts). Prioritize accordingly.*
+**Interrogatory No. 1** (Perjury — Straw Incident)
+> Describe in detail the incident you reported involving a straw, including the exact date, time, location, all persons present, and whether any photographs or video recordings were taken at the time of the alleged incident.
 
-### To: Emily Watson
+**Interrogatory No. 2** (Staged Photographs)
+> Identify all photographs you have submitted or intend to submit as evidence in this case. For each photograph, state: (a) the date taken, (b) the device used, (c) who took the photograph, (d) whether the photograph was edited or altered in any way, and (e) the circumstances depicted.
 
-**Interrogatory No. 1** [Parenting Time]
-> State each and every reason you opposed Andrew Pigors' parenting time with L.D.W. from January 2024 to present, including the factual basis for each reason.
+**Interrogatory No. 3** (False Allegations)
+> List every allegation you have made against Plaintiff Andrew James Pigors to any court, law enforcement agency, CPS, or other governmental body. For each allegation, state: (a) the date made, (b) the agency or court to which it was made, (c) the substance of the allegation, and (d) the outcome or disposition.
 
-**Interrogatory No. 2** [Straw Incident]
-> Describe in detail the "straw incident" of approximately October 2023, including: (a) the exact date, (b) the exact location, (c) all persons present, (d) exactly what occurred, (e) any medical treatment sought for L.D.W.
+**Interrogatory No. 4** (Ronald Berry's Role)
+> Describe the nature of your relationship with Ronald Berry, including: (a) when the relationship began, (b) whether he resides at your address, (c) what role, if any, he plays in the care of the minor child L.D.W., and (d) whether he has provided you legal advice or assisted in preparing any court filings.
 
-**Interrogatory No. 3** [PPO Basis]
-> State the specific facts you relied upon when filing for a Personal Protection Order in case 2023-5907-PP, and identify all documents that support each fact.
+**Interrogatory No. 5** (Communications Regarding Litigation)
+> Identify all communications between you and Ronald Berry regarding this litigation, including text messages, emails, letters, and verbal conversations where litigation strategy was discussed. State the date, medium, and substance of each.
 
-**Interrogatory No. 4** [Ronald Berry]
-> Describe your relationship with Ronald T. Berry, including: (a) when the relationship began, (b) whether he resides at your home, (c) his involvement in decisions regarding L.D.W., (d) whether he advised you on legal matters in this case.
+**Interrogatory No. 6** (Attorney Barnes Withdrawal)
+> Describe the circumstances surrounding the withdrawal of your attorney Jennifer Barnes (P55406). State: (a) who initiated the withdrawal, (b) the reasons given, (c) whether any disagreement over litigation strategy preceded the withdrawal, and (d) whether Ronald Berry assumed any advisory role after the withdrawal.
 
-**Interrogatory No. 5** [Communication Blocking]
-> Identify every phone number, email address, and social media account you blocked or restricted Andrew Pigors from contacting, and the date of each action.
+**Interrogatory No. 7** (Financial Disclosures)
+> State your current income from all sources, including employment, government assistance, and financial support from Ronald Berry or any other person. Identify all bank accounts in your name or to which you have access.
 
-**Interrogatory No. 6** [Financial Support]
-> State all sources of financial support you have received since January 2024, including amounts from Ronald Berry, family members, or public assistance.
-
-**Interrogatory No. 7** [Ex Parte Motion]
-> Regarding your August 2025 ex parte motion to suspend all parenting time: (a) state the emergency requiring ex parte relief, (b) explain why regular notice could not be given, (c) identify who assisted you in preparing the motion.
-
-**Interrogatory No. 8** [Child's Wellbeing]
-> Describe L.D.W.'s current: (a) daycare/school enrollment, (b) medical providers, (c) daily routine, (d) sleeping arrangements, (e) who provides primary care during your work hours.
-
-**Interrogatory No. 9** [Prior Statements]
-> Identify all written or recorded statements you have made about Andrew Pigors to: (a) courts, (b) police, (c) CPS, (d) medical providers, (e) school officials, (f) any other person or agency.
-
-**Interrogatory No. 10** [ChatGPT Usage]
-> State whether you have used ChatGPT or any AI tool to: (a) draft court documents, (b) plan legal strategy, (c) discuss Andrew Pigors or L.D.W., and if so, produce all such records.
-
+**Interrogatory No. 8** (Parenting Time Interference)
+> For each instance in which Plaintiff's scheduled parenting time did not occur as ordered, state: (a) the date, (b) the reason parenting time did not occur, (c) who made the decision, and (d) whether the court was notified.
 
 ### To: Ronald Berry
 
-**Interrogatory No. 11** [Legal Advice]
-> Have you at any time provided legal advice to Emily Watson regarding the cases of Pigors v. Watson? If so, describe each instance.
+**Interrogatory No. 1** (Unauthorized Practice of Law)
+> State whether you have ever: (a) drafted or assisted in drafting any court filing in this case, (b) provided legal advice to Emily A. Watson regarding this case, (c) appeared at the courthouse on behalf of Emily A. Watson, or (d) communicated with any attorney regarding litigation strategy for this case.
 
-**Interrogatory No. 12** [Court Involvement]
-> Have you at any time accompanied Emily Watson to court proceedings, assisted in preparing court documents, or communicated with her attorney Jennifer Barnes about this case?
+**Interrogatory No. 2** (Courthouse Appearances)
+> List every date on which you appeared at the Muskegon County courthouse in connection with any case involving Emily A. Watson. For each appearance, state your purpose and what actions you took.
 
-**Interrogatory No. 13** [Bar Membership]
-> Are you a member of the State Bar of Michigan or any other state bar? If so, provide your bar number. If not, explain the basis for any legal advice given to Emily Watson.
+**Interrogatory No. 3** (Document Preparation)
+> Identify every legal document you have prepared, edited, reviewed, or assisted in preparing for filing in any court case involving Emily A. Watson. Include motions, responses, affidavits, and any other filings.
 
-**Interrogatory No. 14** [Unauthorized Practice]
-> Have you drafted, edited, or reviewed any court filings, motions, or legal documents for Emily Watson in any case involving Andrew Pigors?
-
-**Interrogatory No. 15** [Child Contact]
-> Describe all contact you have had with L.D.W., including frequency, duration, and nature of the contact.
-
-
-## 📂 REQUESTS FOR PRODUCTION (MCR 2.310)
-
-### To: Emily Watson
-
-**Request No. 1:** All text messages, emails, and electronic communications between you and Andrew Pigors from October 2023 to present.
-
-**Request No. 2:** All text messages, emails, and electronic communications between you and Ronald Berry discussing Andrew Pigors, L.D.W., or this litigation.
-
-**Request No. 3:** All text messages, emails, and electronic communications between you and Jennifer Barnes (P55406).
-
-**Request No. 4:** All photographs, videos, or recordings you claim depict the "straw incident" of October 2023.
-
-**Request No. 5:** All medical records for L.D.W. from October 2023 to present.
-
-**Request No. 6:** All documents submitted to any court in connection with the PPO (2023-5907-PP).
-
-**Request No. 7:** All ChatGPT or AI chat export data from your accounts.
-
-**Request No. 8:** All documents relating to your August 2025 ex parte motion, including drafts.
-
-**Request No. 9:** Your complete phone records (call logs and text logs) for October 2023 through present.
-
-**Request No. 10:** All social media posts referencing Andrew Pigors or L.D.W.
-
-
-### To: Ronald Berry
-
-**Request No. 11:** All communications with Emily Watson regarding Andrew Pigors or L.D.W.
-
-**Request No. 12:** All communications with Jennifer Barnes (P55406) regarding Pigors v. Watson.
-
-**Request No. 13:** Any legal research, drafts, or documents prepared for or on behalf of Emily Watson.
-
-**Request No. 14:** Your current resume or CV showing educational background and professional credentials.
-
-
-## ✅ REQUESTS FOR ADMISSION (MCR 2.312)
-
-*If not answered within 28 days, deemed ADMITTED (MCR 2.312(B)(1))*
-
-### To: Emily Watson
-
-**Request No. 1:** Admit that Andrew Pigors has never been convicted of domestic violence.
-
-**Request No. 2:** Admit that no medical professional has ever diagnosed L.D.W. with injuries caused by Andrew Pigors.
-
-**Request No. 3:** Admit that no CPS investigation has ever substantiated abuse or neglect by Andrew Pigors.
-
-**Request No. 4:** Admit that Ronald Berry is not a licensed attorney in the State of Michigan.
-
-**Request No. 5:** Admit that Ronald Berry has drafted or edited court documents filed in this case.
-
-**Request No. 6:** Admit that the "straw incident" of October 2023 did not result in any medical treatment for L.D.W.
-
-**Request No. 7:** Admit that you did not provide notice to Andrew Pigors before filing your August 2025 ex parte motion.
-
-**Request No. 8:** Admit that Andrew Pigors has requested parenting time on at least [X] occasions that you denied or failed to respond to.
-
-**Request No. 9:** Admit that you have used ChatGPT or AI tools to draft communications or documents related to this case.
-
-**Request No. 10:** Admit that Jennifer Barnes (P55406) withdrew from representing you in this matter.
+**Interrogatory No. 4** (Legal Coaching)
+> Describe any instance in which you advised Emily A. Watson on how to respond to interrogatories, what testimony to give, or how to present evidence in court proceedings.
 
 ---
-## ⚠️ FILING NOTES
 
-1. **MCR 2.309(A)(2)**: Max 20 interrogatories (subparts count separately)
-2. **MCR 2.310(B)**: 28 days to respond (can request extension)
-3. **MCR 2.312(B)(1)**: Admissions deemed admitted if no response in 28 days — POWERFUL tool
-4. **Timing**: File discovery AFTER custody case is active (not during PPO)
-5. **Service**: Must serve on opposing party (certified mail if pro se)
+## II. REQUESTS FOR PRODUCTION — MCR 2.310
 
-## 🎯 STRATEGIC PRIORITY
+### To: Emily A. Watson
 
-File Requests for Admission FIRST — if Emily fails to respond in 28 days,
-all statements are deemed admitted, creating devastating evidence for trial.
+**Request No. 1**
+> All text messages, emails, and electronic communications between you and Ronald Berry from January 1, 2023 to the present, including messages on any platform (SMS, iMessage, Facebook Messenger, WhatsApp, etc.).
 
-*Discovery Request Generator — Tool #107 — 39 total discovery items*
+**Request No. 2**
+> All photographs submitted or intended to be submitted as evidence, together with the original digital files including EXIF metadata.
+
+**Request No. 3**
+> All communications with Jennifer Barnes (P55406) regarding her withdrawal as your attorney, including engagement letters, billing statements, and correspondence.
+
+**Request No. 4**
+> All documents, notes, or records created by or with the assistance of Ronald Berry relating to this litigation.
+
+**Request No. 5**
+> All CPS reports, complaints, or referrals made by you or on your behalf concerning Andrew James Pigors, including the agency response or outcome for each.
+
+**Request No. 6**
+> All records from HealthWest or any mental health provider relating to evaluations or treatment of L.D.W., to the extent not protected by privilege.
+
+**Request No. 7**
+> All financial records, including bank statements, pay stubs, tax returns, and records of support received from Ronald Berry, for the period January 1, 2023 to the present.
+
+### To: Ronald Berry
+
+**Request No. 1**
+> All documents you have drafted, edited, or assisted in preparing for filing in any case involving Emily A. Watson, including drafts, notes, and final versions.
+
+**Request No. 2**
+> All electronic communications between you and Emily A. Watson discussing litigation strategy, court filings, or legal proceedings, from January 1, 2023 to the present.
+
+**Request No. 3**
+> Any legal research materials, templates, or form documents you obtained or used in connection with this litigation.
+
+### To: Jennifer Barnes P55406
+
+**Request No. 1**
+> The complete client file for Emily A. Watson, to the extent disclosure is permitted, including all communications, work product, and billing records.
+
+**Request No. 2**
+> All documents relating to your withdrawal as counsel, including any motion to withdraw, correspondence with the court, and internal memoranda regarding the decision.
+
+**Request No. 3**
+> Any communications between you and Ronald Berry regarding this case.
+
+---
+
+## III. REQUESTS FOR ADMISSION — MCR 2.312
+
+### To: Emily A. Watson
+
+**Admission No. 1**
+> Admit that Ronald Berry has assisted you in preparing court filings in this case.
+
+**Admission No. 2**
+> Admit that Ronald Berry is not a licensed attorney in the State of Michigan.
+
+**Admission No. 3**
+> Admit that Ronald Berry has accompanied you to the Muskegon County courthouse in connection with this case.
+
+**Admission No. 4**
+> Admit that you communicated with Ronald Berry about litigation strategy in this case.
+
+**Admission No. 5**
+> Admit that photographs you submitted as evidence were taken at your direction or request.
+
+**Admission No. 6**
+> Admit that Jennifer Barnes (P55406) withdrew as your attorney prior to the conclusion of this case.
+
+**Admission No. 7**
+> Admit that you have made reports to CPS regarding Andrew James Pigors.
+
+**Admission No. 8**
+> Admit that there were occasions when Plaintiff's court-ordered parenting time did not occur.
+
+**Admission No. 9**
+> Admit that Ronald Berry has provided you with legal advice regarding this case.
+
+**Admission No. 10**
+> Admit that you have communicated with Ronald Berry by text message about this case.
+
+---
+
+## IV. DATABASE EVIDENCE SUPPORTING DISCOVERY
+
+- Watson-related evidence items: **399**
+- Berry-related evidence items: **1**
+- Barnes-related evidence items: **33**
+- Communications evidence: **33**
+- General evidence items: **600**
+
+---
+
+*Tool #211 — Discovery Request Generator — 2026-03-19T08:07:36.503473*

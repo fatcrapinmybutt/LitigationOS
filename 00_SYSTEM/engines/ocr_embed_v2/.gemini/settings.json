@@ -1,0 +1,12 @@
+{
+  "tools": {
+    "shell": {
+      "enableInteractiveShell": false
+    }
+  },
+  "security": {
+    "folderTrust": {
+      "enabled": true
+    }
+  }
+}

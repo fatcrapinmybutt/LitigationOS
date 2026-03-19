@@ -1,0 +1,63 @@
+{
+  "cmd": "autopilot",
+  "workspace": "/mnt/data/LITIGATIONOS_MI_APPELLATE_DOCFORGE_MEEK1234_V19_PROMOTE_TUNE_DEADLINES_DOCXPDF/runtime",
+  "utc": "2026-02-23T02:36:20Z",
+  "result": {
+    "authority_requests_ingested": 4,
+    "official_promotion": {
+      "imported": 3,
+      "promoted": 1
+    },
+    "transcripts_ingested": 5,
+    "order_findings_ingested": 3,
+    "tuning": {
+      "weights": {
+        "jacc": 0.8,
+        "overlap": 0.04,
+        "issue": 0.4,
+        "speaker": 0.2,
+        "phrase": 0.2
+      },
+      "threshold": 0.7,
+      "recall": 1.0,
+      "precision": 1.0,
+      "f1": 1.0
+    },
+    "links": {
+      "links": 9,
+      "accepted": 3
+    },
+    "deadline_events_ingested": 3,
+    "deadline_locks": {
+      "locks": 3,
+      "missing_anchor": 0,
+      "pending_verify": 3
+    },
+    "contradictions": 1,
+    "courtpack_manifest": {
+      "pack_id": "PACK::MEEK2::20260223T023620Z",
+      "lane": "MEEK2",
+      "case_anchor": "24-01507-DC",
+      "generated_at": "2026-02-23T02:36:20Z",
+      "counts": {
+        "authority_triples": 4,
+        "transcript_order_links": 9,
+        "deadline_locks": 3,
+        "contradiction_pairs": 1
+      },
+      "doc_emit": {
+        "docx": {
+          "ok": true,
+          "msg": "ok"
+        },
+        "pdf": {
+          "ok": true,
+          "msg": "ok"
+        }
+      },
+      "no_sha256_default": true,
+      "originals_immutable": true,
+      "derived_append_only": true
+    }
+  }
+}

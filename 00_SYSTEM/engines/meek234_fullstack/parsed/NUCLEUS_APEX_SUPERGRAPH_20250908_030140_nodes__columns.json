@@ -1,0 +1,11 @@
+{
+  "file": "NUCLEUS_APEX_SUPERGRAPH_20250908_030140_nodes.csv",
+  "columns": [
+    "id:ID",
+    "label:LABEL",
+    "name",
+    "tags",
+    "kind",
+    "props"
+  ]
+}

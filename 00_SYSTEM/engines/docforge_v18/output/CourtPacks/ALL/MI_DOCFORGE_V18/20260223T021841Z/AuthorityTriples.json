@@ -1,0 +1,93 @@
+[
+  {
+    "id": 7,
+    "authority_family": "MCL",
+    "citation": "MCL 554.139",
+    "proposition": "Landlord duties concerning fitness and repair in leaseholds can support housing claims.",
+    "source_url": "https://www.legislature.mi.gov/doc.aspx?mcl-554.139",
+    "pinpoint": null,
+    "official_text_exact": null,
+    "graft_status": "PARTIAL",
+    "resolver_recipe": "Resolve exact text + pinpoint from official MI source for MCL 554.139",
+    "lane": "MEEK1",
+    "created_at": "2026-02-23T02:18:41Z"
+  },
+  {
+    "id": 4,
+    "authority_family": "MCL",
+    "citation": "MCL 600.2950",
+    "proposition": "PPO issuance, modification, and enforcement framework resides in statute.",
+    "source_url": "https://www.legislature.mi.gov/doc.aspx?mcl-600.2950",
+    "pinpoint": null,
+    "official_text_exact": null,
+    "graft_status": "PARTIAL",
+    "resolver_recipe": "Resolve exact text + pinpoint from official MI source for MCL 600.2950",
+    "lane": "MEEK3",
+    "created_at": "2026-02-23T02:18:41Z"
+  },
+  {
+    "id": 3,
+    "authority_family": "MCL",
+    "citation": "MCL 722.27a",
+    "proposition": "Parenting time orders and modifications are governed by Michigan statute; child's best interests and parenting-time framework apply.",
+    "source_url": "https://www.legislature.mi.gov/doc.aspx?mcl-722.27A",
+    "pinpoint": null,
+    "official_text_exact": null,
+    "graft_status": "PARTIAL",
+    "resolver_recipe": "Resolve exact text + pinpoint from official MI source for MCL 722.27a",
+    "lane": "MEEK2",
+    "created_at": "2026-02-23T02:18:41Z"
+  },
+  {
+    "id": 6,
+    "authority_family": "MCR",
+    "citation": "MCR 2.107",
+    "proposition": "Service of papers and proof-of-service timing affect deadline anchors.",
+    "source_url": "https://www.courts.michigan.gov/",
+    "pinpoint": null,
+    "official_text_exact": null,
+    "graft_status": "PARTIAL",
+    "resolver_recipe": "Resolve exact text + pinpoint from official MI source for MCR 2.107",
+    "lane": "MEEK4",
+    "created_at": "2026-02-23T02:18:41Z"
+  },
+  {
+    "id": 1,
+    "authority_family": "MCR",
+    "citation": "MCR 3.207(B)(1)",
+    "proposition": "Ex parte relief requires irreparable injury or loss before notice can be given/hearing held.",
+    "source_url": "https://www.courts.michigan.gov/",
+    "pinpoint": "(B)(1)",
+    "official_text_exact": "An ex parte order may be entered if it clearly appears from specific facts shown by verified complaint, affidavit, or other proof that irreparable injury, loss, or damage will result from delay required to give notice.",
+    "graft_status": "RESOLVED_VERIFIED",
+    "resolver_recipe": "Resolve exact text + pinpoint from official MI source for MCR 3.207(B)(1)",
+    "lane": "MEEK2",
+    "created_at": "2026-02-23T02:18:41Z"
+  },
+  {
+    "id": 2,
+    "authority_family": "MCR",
+    "citation": "MCR 7.204",
+    "proposition": "COA claim of appeal timeliness and filing requirements apply to appealable orders.",
+    "source_url": "https://www.courts.michigan.gov/",
+    "pinpoint": null,
+    "official_text_exact": null,
+    "graft_status": "PARTIAL",
+    "resolver_recipe": "Verify exact subrule and timeline from official Michigan court rules source.",
+    "lane": "MEEK4",
+    "created_at": "2026-02-23T02:18:41Z"
+  },
+  {
+    "id": 5,
+    "authority_family": "MRE",
+    "citation": "MRE 401",
+    "proposition": "Relevant evidence is evidence having any tendency to make a consequential fact more or less probable.",
+    "source_url": "https://www.courts.michigan.gov/",
+    "pinpoint": "401",
+    "official_text_exact": "Evidence is relevant if it has any tendency to make a fact more or less probable than it would be without the evidence and the fact is of consequence in determining the action.",
+    "graft_status": "RESOLVED_VERIFIED",
+    "resolver_recipe": "Resolve exact text + pinpoint from official MI source for MRE 401",
+    "lane": "MEEK4",
+    "created_at": "2026-02-23T02:18:41Z"
+  }
+]

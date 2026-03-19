@@ -1,0 +1,177 @@
+[
+  {
+    "denial_id": "DG_missing_jurisdictional_deadline",
+    "forum": "coa",
+    "title": "Untimely filing (jurisdictional)",
+    "when": "Claim/application filed after time limit.",
+    "cure": "File proper vehicle timely if possible; seek relief only if rule permits; preserve record."
+  },
+  {
+    "denial_id": "DG_nonconforming_packet",
+    "forum": "msc",
+    "title": "Nonconforming packet returned",
+    "when": "Packet noncompliant with filing requirements.",
+    "cure": "Cure defects and refile within time; ensure compliance."
+  },
+  {
+    "denial_id": "DG_record_missing_order",
+    "forum": "all",
+    "title": "Operative order not provided/pinned",
+    "when": "Request relies on an order but order not included or unclear.",
+    "cure": "Pin/attach operative order + ROA entry + dates."
+  },
+  {
+    "denial_id": "DG_record_missing_service",
+    "forum": "all",
+    "title": "Service/proof missing",
+    "when": "Required service not shown.",
+    "cure": "Re-serve and file proof."
+  },
+  {
+    "denial_id": "DG_no_factual_support",
+    "forum": "all",
+    "title": "Insufficient factual support",
+    "when": "No affidavit/evidence supporting requested relief.",
+    "cure": "Add affidavit + exhibits; authenticate."
+  },
+  {
+    "denial_id": "DG_no_legal_standard",
+    "forum": "all",
+    "title": "No legal standard / authority cited",
+    "when": "Motion/brief does not state applicable rule/standard.",
+    "cure": "Add authority + standard + apply facts."
+  },
+  {
+    "denial_id": "DG_relief_not_available",
+    "forum": "all",
+    "title": "Relief not available via chosen vehicle",
+    "when": "Vehicle cannot grant requested relief in this posture.",
+    "cure": "Select correct vehicle/form; refile."
+  },
+  {
+    "denial_id": "DG_mootness",
+    "forum": "coa",
+    "title": "Mootness",
+    "when": "Issue becomes moot by subsequent events.",
+    "cure": "Address exceptions; seek expedited relief."
+  },
+  {
+    "denial_id": "DG_preservation_failure",
+    "forum": "coa",
+    "title": "Issue not preserved",
+    "when": "Issue not preserved below; no plain-error basis shown.",
+    "cure": "Develop preservation record or argue plain error."
+  },
+  {
+    "denial_id": "DG_appendix_defective",
+    "forum": "coa",
+    "title": "Appendix incomplete",
+    "when": "Required documents missing from appendix.",
+    "cure": "Supplement/cure per clerk notice."
+  },
+  {
+    "denial_id": "DG_generic_01",
+    "forum": "all",
+    "title": "Formatting noncompliance",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_02",
+    "forum": "all",
+    "title": "Missing fee/IFP",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_03",
+    "forum": "all",
+    "title": "Missing certificate of compliance",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_04",
+    "forum": "all",
+    "title": "Improper caption/case number",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_05",
+    "forum": "all",
+    "title": "Improper service address",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_06",
+    "forum": "all",
+    "title": "Confidentiality violation",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_07",
+    "forum": "all",
+    "title": "Exhibit labeling defective",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_08",
+    "forum": "all",
+    "title": "Witness list untimely",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_09",
+    "forum": "all",
+    "title": "Subpoena defect",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_10",
+    "forum": "all",
+    "title": "Hearsay/authentication gaps",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_11",
+    "forum": "all",
+    "title": "Order lacks required findings",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_12",
+    "forum": "all",
+    "title": "Standard of review not stated",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_13",
+    "forum": "all",
+    "title": "Incomplete ROA / missing entry date",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_14",
+    "forum": "all",
+    "title": "Missing transcript certification",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  },
+  {
+    "denial_id": "DG_generic_15",
+    "forum": "all",
+    "title": "Late reconsideration motion",
+    "when": "Detected by presentation gate profile.",
+    "cure": "Cure via gate checklist; refile/supplement."
+  }
+]

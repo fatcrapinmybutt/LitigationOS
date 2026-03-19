@@ -1,0 +1,39 @@
+{
+  "trained_at": "2026-02-26T22:01:36.754707",
+  "source_rows": 308703,
+  "metrics": {
+    "accuracy": 0.7135,
+    "precision": 0.6998,
+    "recall": 0.7135,
+    "f1": 0.6874,
+    "samples_used": 149575,
+    "classes": [
+      "administrative",
+      "brief",
+      "correspondence",
+      "court_order",
+      "custody",
+      "discovery",
+      "evidence",
+      "financial",
+      "medical",
+      "motion",
+      "ppo",
+      "transcript"
+    ]
+  },
+  "class_distribution": {
+    "transcript": 2248,
+    "custody": 613,
+    "court_order": 34137,
+    "ppo": 859,
+    "discovery": 78425,
+    "evidence": 30847,
+    "motion": 1191,
+    "administrative": 1000,
+    "brief": 67,
+    "financial": 9,
+    "correspondence": 33,
+    "medical": 146
+  }
+}

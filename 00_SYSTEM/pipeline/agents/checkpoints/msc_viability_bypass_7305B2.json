@@ -1,0 +1,16 @@
+{
+  "path_type": "bypass_7305B2",
+  "viability_score": 76.0,
+  "evidence_score": 40.0,
+  "signal_score": 16.0,
+  "lane_c_bonus": 20.0,
+  "total_evidence": 27970,
+  "signal_hits": 2,
+  "lane_scores": {
+    "A": 6375,
+    "B": 18976,
+    "C": 2619
+  },
+  "blockers": [],
+  "viable": true
+}

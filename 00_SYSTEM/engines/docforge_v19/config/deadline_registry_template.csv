@@ -1,0 +1,6 @@
+lane,vehicle_code,forum,anchor_type,trigger_event,due_days,business_days_only,tolling_notes,authority_citation,rule_status
+MEEK2,COA_APPEAL_OF_RIGHT,COA,served,claim_of_appeal,21,0,Template rail. Verify exact MCR subrule and tolling before filing.,MCR 7.204,UNVERIFIED_TEMPLATE
+MEEK2,COA_APPEAL_OF_RIGHT,COA,entered,transcript_order,7,0,Template rail. Verify exact transcript designation/order subrule.,MCR 7.210,UNVERIFIED_TEMPLATE
+MEEK3,COA_APPLICATION_LEAVE,COA,entered,application_leave,21,0,Template only; verify exact subrule and tolling.,MCR 7.205,UNVERIFIED_TEMPLATE
+MEEK2,MSC_APP_LEAVE,MSC,entered,application_leave_msc,56,0,Template only; verify exact clock from COA event and reconsideration impact.,MCR 7.305,UNVERIFIED_TEMPLATE
+MEEK4,JTC_COMPLAINT,JTC,recorded,misconduct_packet,,0,No fixed statewide clock in template; file promptly after record stabilization.,JTC_CANON/PROC,UNVERIFIED_TEMPLATE

@@ -1,0 +1,32 @@
+%% Cascading planes for V19 integration
+flowchart TD
+  A[Intake Exports] --> B[Authority Requests JSONL]
+  A --> C[Official Text Grafts JSONL]
+  A --> D[Transcript Rows CSV]
+  A --> E[Order Findings CSV]
+  A --> F[Deadline Events CSV]
+
+  B --> G[(SQLite Runtime)]
+  C --> G
+  D --> G
+  E --> G
+  F --> G
+
+  G --> H[Official-Text Promotion Lane]
+  H --> H1[PARTIAL -> RESOLVED_VERIFIED]
+  G --> I[Transcript Linker]
+  I --> I1[Tuning Grid Search]
+  I1 --> I2[Accepted p/l pins]
+  G --> J[Deadline Engine]
+  J --> J1[entered/signed/served/recorded split]
+  J1 --> J2[LOCKED/PENDING_VERIFY]
+  G --> K[Contradiction Consolidator]
+  K --> K1[Cross-lane contradiction pairs]
+
+  H1 --> L[CourtPack Compiler]
+  I2 --> L
+  J2 --> L
+  K1 --> L
+  L --> M[MD artifacts]
+  L --> N[DOCX emit]
+  L --> O[PDF emit]

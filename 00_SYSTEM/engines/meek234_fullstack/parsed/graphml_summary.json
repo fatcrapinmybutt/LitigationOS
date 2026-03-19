@@ -1,0 +1,51 @@
+{
+  "file": "inputs/NUCLEUS_APEX_SUPERGRAPH_20250908_030140.graphml.xml",
+  "kind": "graphml",
+  "sha256": "968b8b0d185877c23607f58665ac8c16a99256ea98df295b4530183c45c5805f",
+  "node_count": 40143,
+  "edge_count": 214090,
+  "key_defs": [
+    {
+      "id": "d0",
+      "for": "node",
+      "attr.name": "label",
+      "attr.type": "string"
+    },
+    {
+      "id": "d1",
+      "for": "node",
+      "attr.name": "name",
+      "attr.type": "string"
+    },
+    {
+      "id": "d2",
+      "for": "node",
+      "attr.name": "tags",
+      "attr.type": "string"
+    },
+    {
+      "id": "d3",
+      "for": "node",
+      "attr.name": "kind",
+      "attr.type": "string"
+    },
+    {
+      "id": "d4",
+      "for": "node",
+      "attr.name": "props",
+      "attr.type": "string"
+    },
+    {
+      "id": "e0",
+      "for": "edge",
+      "attr.name": "type",
+      "attr.type": "string"
+    },
+    {
+      "id": "e1",
+      "for": "edge",
+      "attr.name": "props",
+      "attr.type": "string"
+    }
+  ]
+}

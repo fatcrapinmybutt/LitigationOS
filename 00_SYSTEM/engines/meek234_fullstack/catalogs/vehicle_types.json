@@ -1,0 +1,117 @@
+[
+  {
+    "vehicle_type_id": "MEEK2_MOTION_MODIFY_PARENTING_TIME",
+    "vehicle_type": "Motion to Modify Parenting Time",
+    "purpose": "Restore/adjust parenting time; address change of circumstances/best interests where required.",
+    "required_record_items": [
+      "Current operative parenting-time order",
+      "Proposed parenting-time schedule",
+      "Affidavit/verification",
+      "Service proof"
+    ],
+    "denial_grounds": [
+      "No operative order pinned",
+      "Insufficient factual basis",
+      "Notice/service defects"
+    ],
+    "tracks": [
+      "MEEK2"
+    ],
+    "authority_refs": [
+      "(authority depends on posture; align with MCL 722.27a and MCR family rules)"
+    ]
+  },
+  {
+    "vehicle_type_id": "MEEK3_MOTION_TO_TERMINATE_OR_MODIFY_PPO",
+    "vehicle_type": "Motion to Modify/Terminate PPO",
+    "purpose": "Rescind/modify PPO; challenge basis; narrow communications/parenting-time carveouts.",
+    "required_record_items": [
+      "PPO order + petition",
+      "Service proof",
+      "Evidence supporting modification/termination",
+      "Proposed order"
+    ],
+    "denial_grounds": [
+      "No operative PPO order pinned",
+      "Service/notice defects",
+      "Record insufficient"
+    ],
+    "tracks": [
+      "MEEK3"
+    ],
+    "authority_refs": [
+      "MCR 3.705(B)",
+      "MCR 3.706(D)"
+    ]
+  },
+  {
+    "vehicle_type_id": "MEEK3_APPEAL_OF_RIGHT_PPO",
+    "vehicle_type": "Claim of Appeal (PPO appeal of right where applicable)",
+    "purpose": "Invoke COA jurisdiction for appealable PPO orders.",
+    "required_record_items": [
+      "Appealed order",
+      "ROA entry proof of 'entry'",
+      "Claim of appeal + fee/waiver",
+      "Docketing statement",
+      "Transcript certificate/statement"
+    ],
+    "denial_grounds": [
+      "Untimely claim of appeal",
+      "Missing docketing statement",
+      "Missing transcript certificate"
+    ],
+    "tracks": [
+      "MEEK3"
+    ],
+    "authority_refs": [
+      "MCR 3.709(B)",
+      "MCR 7.204(A)(1)",
+      "MCR 7.212(H)",
+      "MCR 7.210(B)(3)"
+    ]
+  },
+  {
+    "vehicle_type_id": "MEEK4_MOTION_TO_DISQUALIFY",
+    "vehicle_type": "Motion to Disqualify Judge",
+    "purpose": "Seek disqualification/reassignment based on grounds in rule.",
+    "required_record_items": [
+      "Motion",
+      "Affidavit",
+      "Grounds evidence",
+      "Proof of filing/service"
+    ],
+    "denial_grounds": [
+      "Untimely",
+      "Insufficient affidavit",
+      "Does not meet grounds"
+    ],
+    "tracks": [
+      "MEEK4"
+    ],
+    "authority_refs": [
+      "MCR 2.003"
+    ]
+  },
+  {
+    "vehicle_type_id": "MEEK4_JTC_REQUEST_FOR_INVESTIGATION",
+    "vehicle_type": "JTC Request for Investigation",
+    "purpose": "Initiate Judicial Tenure Commission intake.",
+    "required_record_items": [
+      "Verified request",
+      "Misconduct description with time/place",
+      "Exhibits",
+      "Proof of submission"
+    ],
+    "denial_grounds": [
+      "Not verified",
+      "Insufficient detail"
+    ],
+    "tracks": [
+      "MEEK4"
+    ],
+    "authority_refs": [
+      "MCR 9.220(A)",
+      "MCR 9.112(B)"
+    ]
+  }
+]

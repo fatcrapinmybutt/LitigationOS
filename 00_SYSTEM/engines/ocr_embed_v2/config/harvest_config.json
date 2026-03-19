@@ -1,0 +1,131 @@
+{
+  "version": "2.0",
+  "run": {
+    "max_file_mb": 200,
+    "max_archive_mb": 800,
+    "max_files": 250000,
+    "timezone": "America/Detroit"
+  },
+  "targets": [
+    {
+      "path": "C:\\Users\\andre\\LITIGATION_OS",
+      "label": "C:\\Users\\andre\\LITIGATION_OS"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS_Build_Offload",
+      "label": "C:\\Users\\andre\\LitigationOS_Build_Offload"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS_Consolidated",
+      "label": "C:\\Users\\andre\\LitigationOS_Consolidated"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS_preservation_bagit",
+      "label": "C:\\Users\\andre\\LitigationOS_preservation_bagit"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS-Commercial-Website",
+      "label": "C:\\Users\\andre\\LitigationOS-Commercial-Website"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS-Desktop",
+      "label": "C:\\Users\\andre\\LitigationOS-Desktop"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS-Mobile",
+      "label": "C:\\Users\\andre\\LitigationOS-Mobile"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS-Watson-FINAL-PACKAGE",
+      "label": "C:\\Users\\andre\\LitigationOS-Watson-FINAL-PACKAGE"
+    }
+  ],
+  "hub": {
+    "enabled": true,
+    "relative_path": ".work/HARVEST_ROOT",
+    "junction_labels": true
+  },
+  "include_extensions": [
+    ".pdf",
+    ".docx",
+    ".txt",
+    ".csv",
+    ".md",
+    ".rtf",
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".tif",
+    ".tiff",
+    ".bmp",
+    ".wav",
+    ".mp3",
+    ".m4a"
+  ],
+  "ignore_globs": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/node_modules/**",
+    "**/.venv/**",
+    "**/venv/**",
+    "**/__pycache__/**",
+    "**/.cache/**",
+    "**/AppData/**",
+    "**/Windows/**",
+    "**/.vscode/**",
+    "**/.idea/**",
+    "**/.azure/**",
+    "**/.docker/**",
+    "**/.ollama/**",
+    "**/.gemini/**",
+    "**/.copilot/**",
+    "**/.cline/**",
+    "**/.claude/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.next/**",
+    "**/.out/**",
+    "**/.tmp/**",
+    "**/tmp/**",
+    "**/*.iso",
+    "**/*.img",
+    "**/*.vhd",
+    "**/*.vhdx",
+    "**/*.dll",
+    "**/*.sys",
+    "**/*.exe"
+  ],
+  "archives": {
+    "include_zip": true,
+    "include_7z": false,
+    "include_rar": false
+  },
+  "pdf": {
+    "extract_text_first": true,
+    "render_for_ocr_if_no_text": true,
+    "max_pages_for_ocr": 200,
+    "render_dpi": 200
+  },
+  "ocr": {
+    "enabled": true,
+    "engine": "tesseract",
+    "lang": "eng",
+    "min_chars_to_accept_text_layer": 50
+  },
+  "index": {
+    "fts_sqlite": true,
+    "qdrant": true,
+    "qdrant_collection": "litigationos_chunks",
+    "embedding_backend": "sentence_transformers",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "ollama_embed_model": "embeddinggemma",
+    "chunk_size": 900,
+    "chunk_overlap": 150
+  },
+  "outputs": {
+    "relative_path": ".out",
+    "write_dashboard": true,
+    "write_next_prompt": true
+  }
+}

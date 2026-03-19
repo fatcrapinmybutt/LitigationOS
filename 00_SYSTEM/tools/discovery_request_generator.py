@@ -1,469 +1,408 @@
 #!/usr/bin/env python3
 """
-NOVEL TOOL #33: Discovery Request Generator
-==============================================
-Auto-generates targeted discovery requests (interrogatories,
-requests for production, requests for admission) based on:
-- Known contradictions in opponent's statements
-- Evidence gaps identified by other tools
-- Perjury evidence requiring sworn responses
-- Judicial misconduct requiring court records
-
-Michigan-specific:
-- MCR 2.309 (Interrogatories)
-- MCR 2.310 (Requests for Production)
-- MCR 2.312 (Requests for Admission)
-- 35-interrogatory limit per MCR 2.309(A)(2)
-
-This automates what takes attorneys 10+ hours of manual work.
+Tool #211 — Discovery Request Generator
+Generates targeted discovery requests (interrogatories, production requests,
+admissions) against Emily A. Watson, Ronald Berry, and Jennifer Barnes P55406.
+Cites MCR 2.309, MCR 2.310, MCR 2.312.
+Output: DISCOVERY_REQUESTS.md + DISCOVERY_REQUESTS.json
 """
-
-import sys
-import os
-import json
-import sqlite3
-from pathlib import Path
+import sys, os, json, sqlite3, re
 from datetime import datetime
+from pathlib import Path
+from collections import defaultdict
 
 sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace')
 
-DB_PATH = Path(r"C:\Users\andre\LitigationOS\litigation_context.db")
-REPORTS_DIR = Path(r"C:\Users\andre\LitigationOS\00_SYSTEM\reports")
+TOOLS_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
+REPO = TOOLS_DIR.parent.parent
+DB_PATH = REPO / "litigation_context.db"
+REPORTS_DIR = TOOLS_DIR.parent / "reports"
+REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
-PLAINTIFF = {
-    "name": "ANDREW JAMES PIGORS",
-    "address": "1977 Whitehall Road, Lot 17\nNorth Muskegon, MI 49445",
-    "phone": "(231) 903-5690",
-    "email": "andrewjpigors@gmail.com"
+# === Verified Party Identity (NEVER fabricate) ===
+PARTIES = {
+    "plaintiff": {"name": "Andrew James Pigors", "role": "Plaintiff/Father"},
+    "defendant": {"name": "Emily A. Watson", "role": "Defendant/Mother",
+                  "address": "2160 Garland Drive, Norton Shores, MI 49441"},
+    "berry": {"name": "Ronald Berry", "role": "Non-Attorney / Emily's domestic partner"},
+    "barnes": {"name": "Jennifer Barnes", "bar": "P55406", "role": "Former Attorney (WITHDREW)",
+               "firm": "Barnes Law Firm PLLC, 880 Jefferson St Ste B, Muskegon, MI 49440"},
+    "child": {"name": "L.D.W.", "note": "Initials only per MCR 8.119(H)"},
+    "judge": {"name": "Hon. Jenny L. McNeill", "court": "14th Circuit Court, Family Division"},
+    "foc": {"name": "Pamela Rusco", "address": "990 Terrace St, Muskegon, MI 49442"},
 }
 
-DEFENDANT = {
-    "name": "EMILY A. WATSON",
-    "address": "2160 Garland Drive\nNorton Shores, MI 49441"
-}
+CASE_NUMBERS = ["2024-001507-DC", "2023-5907-PP"]
 
 
 def get_db_connection():
+    if not DB_PATH.exists():
+        return None
     conn = sqlite3.connect(str(DB_PATH), timeout=60)
     conn.execute("PRAGMA busy_timeout=60000")
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute("PRAGMA cache_size=-32000")
+    conn.execute("PRAGMA temp_store=MEMORY")
+    conn.execute("PRAGMA synchronous=NORMAL")
     conn.row_factory = sqlite3.Row
     return conn
 
 
-def get_contradictions(conn, limit=20):
-    """Get high-severity contradictions for targeted discovery."""
-    try:
+def get_tables(conn):
+    rows = conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE '%_fts_%'").fetchall()
+    return [r[0] for r in rows]
+
+
+def mine_evidence_for_discovery(conn, tables):
+    """Mine DB for evidence supporting discovery requests."""
+    evidence = {"watson": [], "berry": [], "barnes": [], "communications": [], "general": []}
+
+    # Mine evidence_quotes for relevant testimony/evidence
+    if "evidence_quotes" in tables:
+        cols = [r[1] for r in conn.execute("PRAGMA table_info(evidence_quotes)").fetchall()]
         rows = conn.execute("""
-            SELECT speaker, statement_1, source_1, statement_2, source_2,
-                   contradiction_type, severity
-            FROM detected_contradictions
-            WHERE severity >= 7
-            ORDER BY severity DESC
-            LIMIT ?
-        """, (limit,)).fetchall()
-        return [dict(r) for r in rows]
-    except Exception:
-        return []
+            SELECT quote_text, evidence_category, speaker, date_ref, legal_significance
+            FROM evidence_quotes
+            WHERE quote_text IS NOT NULL
+            LIMIT 2000
+        """).fetchall()
+        for r in rows:
+            text = (r[0] or "").lower()
+            cat = r[1] or ""
+            speaker = r[2] or ""
+            sig = r[4] or ""
+            entry = {"text": r[0][:200], "category": cat, "speaker": speaker,
+                     "date": r[3], "significance": sig}
+            if any(w in text for w in ["watson", "emily", "mother", "defendant"]):
+                evidence["watson"].append(entry)
+            if any(w in text for w in ["berry", "ronald", "boyfriend"]):
+                evidence["berry"].append(entry)
+            if any(w in text for w in ["barnes", "attorney", "withdrawal", "withdrew"]):
+                evidence["barnes"].append(entry)
+            if any(w in text for w in ["communication", "text message", "email", "conspir"]):
+                evidence["communications"].append(entry)
+
+    # Mine impeachment_items
+    if "impeachment_items" in tables:
+        cols = [r[1] for r in conn.execute("PRAGMA table_info(impeachment_items)").fetchall()]
+        rows = conn.execute("SELECT * FROM impeachment_items LIMIT 500").fetchall()
+        for r in rows:
+            d = dict(r)
+            text_fields = " ".join(str(v) for v in d.values() if v).lower()
+            entry = {"source": "impeachment_items", "data": {k: str(v)[:150] for k, v in d.items() if v}}
+            if any(w in text_fields for w in ["watson", "emily", "perjury", "false"]):
+                evidence["watson"].append(entry)
+            if any(w in text_fields for w in ["berry", "upl", "unauthorized"]):
+                evidence["berry"].append(entry)
+
+    # Mine contradiction_map
+    if "contradiction_map" in tables:
+        rows = conn.execute("SELECT * FROM contradiction_map LIMIT 500").fetchall()
+        for r in rows:
+            d = dict(r)
+            evidence["general"].append({"source": "contradiction_map",
+                                        "data": {k: str(v)[:150] for k, v in d.items() if v}})
+
+    # Mine adversary_models
+    if "adversary_models" in tables:
+        rows = conn.execute("SELECT * FROM adversary_models LIMIT 100").fetchall()
+        for r in rows:
+            d = dict(r)
+            evidence["general"].append({"source": "adversary_models",
+                                        "data": {k: str(v)[:150] for k, v in d.items() if v}})
+
+    return evidence
 
 
-def get_perjury_evidence(conn, limit=20):
-    """Get prosecution-ready perjury for admission requests."""
-    try:
-        rows = conn.execute("""
-            SELECT watson_member, statement_text, contradicting_evidence,
-                   source_doc, perjury_type, severity_score
-            FROM watson_perjury_compilation
-            WHERE severity_score >= 8 AND admissible = 1
-            ORDER BY severity_score DESC
-            LIMIT ?
-        """, (limit,)).fetchall()
-        return [dict(r) for r in rows]
-    except Exception:
-        return []
+def build_interrogatories():
+    """MCR 2.309 — Interrogatories to parties."""
+    return {
+        "rule": "MCR 2.309",
+        "title": "Interrogatories to Parties",
+        "targets": {
+            "Emily A. Watson": [
+                {
+                    "number": 1,
+                    "topic": "Perjury — Straw Incident",
+                    "text": "Describe in detail the incident you reported involving a straw, including the exact date, time, location, all persons present, and whether any photographs or video recordings were taken at the time of the alleged incident.",
+                },
+                {
+                    "number": 2,
+                    "topic": "Staged Photographs",
+                    "text": "Identify all photographs you have submitted or intend to submit as evidence in this case. For each photograph, state: (a) the date taken, (b) the device used, (c) who took the photograph, (d) whether the photograph was edited or altered in any way, and (e) the circumstances depicted.",
+                },
+                {
+                    "number": 3,
+                    "topic": "False Allegations",
+                    "text": "List every allegation you have made against Plaintiff Andrew James Pigors to any court, law enforcement agency, CPS, or other governmental body. For each allegation, state: (a) the date made, (b) the agency or court to which it was made, (c) the substance of the allegation, and (d) the outcome or disposition.",
+                },
+                {
+                    "number": 4,
+                    "topic": "Ronald Berry's Role",
+                    "text": "Describe the nature of your relationship with Ronald Berry, including: (a) when the relationship began, (b) whether he resides at your address, (c) what role, if any, he plays in the care of the minor child L.D.W., and (d) whether he has provided you legal advice or assisted in preparing any court filings.",
+                },
+                {
+                    "number": 5,
+                    "topic": "Communications Regarding Litigation",
+                    "text": "Identify all communications between you and Ronald Berry regarding this litigation, including text messages, emails, letters, and verbal conversations where litigation strategy was discussed. State the date, medium, and substance of each.",
+                },
+                {
+                    "number": 6,
+                    "topic": "Attorney Barnes Withdrawal",
+                    "text": "Describe the circumstances surrounding the withdrawal of your attorney Jennifer Barnes (P55406). State: (a) who initiated the withdrawal, (b) the reasons given, (c) whether any disagreement over litigation strategy preceded the withdrawal, and (d) whether Ronald Berry assumed any advisory role after the withdrawal.",
+                },
+                {
+                    "number": 7,
+                    "topic": "Financial Disclosures",
+                    "text": "State your current income from all sources, including employment, government assistance, and financial support from Ronald Berry or any other person. Identify all bank accounts in your name or to which you have access.",
+                },
+                {
+                    "number": 8,
+                    "topic": "Parenting Time Interference",
+                    "text": "For each instance in which Plaintiff's scheduled parenting time did not occur as ordered, state: (a) the date, (b) the reason parenting time did not occur, (c) who made the decision, and (d) whether the court was notified.",
+                },
+            ],
+            "Ronald Berry": [
+                {
+                    "number": 1,
+                    "topic": "Unauthorized Practice of Law",
+                    "text": "State whether you have ever: (a) drafted or assisted in drafting any court filing in this case, (b) provided legal advice to Emily A. Watson regarding this case, (c) appeared at the courthouse on behalf of Emily A. Watson, or (d) communicated with any attorney regarding litigation strategy for this case.",
+                },
+                {
+                    "number": 2,
+                    "topic": "Courthouse Appearances",
+                    "text": "List every date on which you appeared at the Muskegon County courthouse in connection with any case involving Emily A. Watson. For each appearance, state your purpose and what actions you took.",
+                },
+                {
+                    "number": 3,
+                    "topic": "Document Preparation",
+                    "text": "Identify every legal document you have prepared, edited, reviewed, or assisted in preparing for filing in any court case involving Emily A. Watson. Include motions, responses, affidavits, and any other filings.",
+                },
+                {
+                    "number": 4,
+                    "topic": "Legal Coaching",
+                    "text": "Describe any instance in which you advised Emily A. Watson on how to respond to interrogatories, what testimony to give, or how to present evidence in court proceedings.",
+                },
+            ],
+        },
+    }
 
 
-def get_adversary_assertions(conn, limit=20):
-    """Get false assertions for targeted discovery."""
-    try:
-        rows = conn.execute("""
-            SELECT speaker, assertion_text, assertion_type, rebuttal_evidence, severity
-            FROM adversary_assertions
-            WHERE is_false = 1 AND severity >= 7
-            ORDER BY severity DESC
-            LIMIT ?
-        """, (limit,)).fetchall()
-        return [dict(r) for r in rows]
-    except Exception:
-        return []
+def build_production_requests():
+    """MCR 2.310 — Requests for Production of Documents."""
+    return {
+        "rule": "MCR 2.310",
+        "title": "Requests for Production of Documents and Things",
+        "targets": {
+            "Emily A. Watson": [
+                {
+                    "number": 1,
+                    "text": "All text messages, emails, and electronic communications between you and Ronald Berry from January 1, 2023 to the present, including messages on any platform (SMS, iMessage, Facebook Messenger, WhatsApp, etc.).",
+                },
+                {
+                    "number": 2,
+                    "text": "All photographs submitted or intended to be submitted as evidence, together with the original digital files including EXIF metadata.",
+                },
+                {
+                    "number": 3,
+                    "text": "All communications with Jennifer Barnes (P55406) regarding her withdrawal as your attorney, including engagement letters, billing statements, and correspondence.",
+                },
+                {
+                    "number": 4,
+                    "text": "All documents, notes, or records created by or with the assistance of Ronald Berry relating to this litigation.",
+                },
+                {
+                    "number": 5,
+                    "text": "All CPS reports, complaints, or referrals made by you or on your behalf concerning Andrew James Pigors, including the agency response or outcome for each.",
+                },
+                {
+                    "number": 6,
+                    "text": "All records from HealthWest or any mental health provider relating to evaluations or treatment of L.D.W., to the extent not protected by privilege.",
+                },
+                {
+                    "number": 7,
+                    "text": "All financial records, including bank statements, pay stubs, tax returns, and records of support received from Ronald Berry, for the period January 1, 2023 to the present.",
+                },
+            ],
+            "Ronald Berry": [
+                {
+                    "number": 1,
+                    "text": "All documents you have drafted, edited, or assisted in preparing for filing in any case involving Emily A. Watson, including drafts, notes, and final versions.",
+                },
+                {
+                    "number": 2,
+                    "text": "All electronic communications between you and Emily A. Watson discussing litigation strategy, court filings, or legal proceedings, from January 1, 2023 to the present.",
+                },
+                {
+                    "number": 3,
+                    "text": "Any legal research materials, templates, or form documents you obtained or used in connection with this litigation.",
+                },
+            ],
+            "Jennifer Barnes P55406": [
+                {
+                    "number": 1,
+                    "text": "The complete client file for Emily A. Watson, to the extent disclosure is permitted, including all communications, work product, and billing records.",
+                },
+                {
+                    "number": 2,
+                    "text": "All documents relating to your withdrawal as counsel, including any motion to withdraw, correspondence with the court, and internal memoranda regarding the decision.",
+                },
+                {
+                    "number": 3,
+                    "text": "Any communications between you and Ronald Berry regarding this case.",
+                },
+            ],
+        },
+    }
 
 
-def generate_interrogatories(contradictions, perjury, assertions):
-    """Generate interrogatories (max 35 per MCR 2.309(A)(2))."""
-    interrogatories = []
-    used = 0
-
-    # From contradictions — demand explanation
-    for c in contradictions[:10]:
-        if used >= 35:
-            break
-        used += 1
-        speaker = c.get("speaker", "you")
-        stmt1 = (c.get("statement_1") or "")[:150]
-        stmt2 = (c.get("statement_2") or "")[:150]
-        interrogatories.append({
-            "number": used,
-            "category": "Contradiction",
-            "severity": c.get("severity", 5),
-            "text": (
-                f"In {c.get('source_1', 'a prior statement')}, {speaker} stated: "
-                f"\"{stmt1}\". However, in {c.get('source_2', 'another statement')}, "
-                f"{speaker} stated: \"{stmt2}\". "
-                f"Please explain the discrepancy between these two statements, "
-                f"identify which statement is accurate, and state all facts "
-                f"supporting the accurate statement."
-            ),
-            "source": "detected_contradictions"
-        })
-
-    # From perjury — demand facts
-    for p in perjury[:10]:
-        if used >= 35:
-            break
-        used += 1
-        stmt = (p.get("statement_text") or "")[:200]
-        interrogatories.append({
-            "number": used,
-            "category": "Perjury Investigation",
-            "severity": p.get("severity_score", 5),
-            "text": (
-                f"Regarding your statement: \"{stmt}\", "
-                f"please identify: (a) the date you made this statement; "
-                f"(b) all persons present when you made this statement; "
-                f"(c) all documents supporting this statement; "
-                f"(d) whether you were under oath; and "
-                f"(e) whether you still maintain this statement is true."
-            ),
-            "source": "watson_perjury_compilation"
-        })
-
-    # From assertions — demand proof
-    for a in assertions[:10]:
-        if used >= 35:
-            break
-        used += 1
-        stmt = (a.get("assertion_text") or "")[:200]
-        interrogatories.append({
-            "number": used,
-            "category": "False Assertion",
-            "severity": a.get("severity", 5),
-            "text": (
-                f"You have asserted: \"{stmt}\". "
-                f"Please identify: (a) all evidence supporting this assertion; "
-                f"(b) all witnesses who can corroborate this assertion; "
-                f"(c) all documents relating to this assertion; and "
-                f"(d) whether you have any reason to believe this assertion "
-                f"may be inaccurate or incomplete."
-            ),
-            "source": "adversary_assertions"
-        })
-
-    # Standard custody interrogatories
-    standard = [
-        "State your current residential address, all persons residing with you, and the relationship of each person to L.D.W.",
-        "Identify all persons who have provided childcare for L.D.W. in the past 12 months, including dates and duration.",
-        "State all communications you have had with Ronald T. Berry regarding this litigation, including dates, methods, and substance.",
-        "Identify all income sources, employment, and financial support you have received in the past 24 months.",
-        "State whether you have ever been investigated by Child Protective Services, and if so, provide dates, case numbers, and outcomes."
-    ]
-
-    for s in standard:
-        if used >= 35:
-            break
-        used += 1
-        interrogatories.append({
-            "number": used,
-            "category": "Standard Custody",
-            "severity": 5,
-            "text": s,
-            "source": "standard"
-        })
-
-    return interrogatories
-
-
-def generate_production_requests(contradictions, perjury):
-    """Generate requests for production of documents."""
-    requests = []
-
-    requests.append({
-        "number": 1,
-        "text": "All text messages, emails, and electronic communications between you and Ronald T. Berry from January 1, 2023 to present.",
-        "category": "Communications"
-    })
-    requests.append({
-        "number": 2,
-        "text": "All text messages, emails, and electronic communications between you and Jennifer Barnes (P55406) from January 1, 2023 to present.",
-        "category": "Attorney Communications"
-    })
-    requests.append({
-        "number": 3,
-        "text": "All photographs, videos, and recordings relating to L.D.W., Andrew Pigors, or any incident described in your pleadings, from January 1, 2023 to present.",
-        "category": "Media Evidence"
-    })
-    requests.append({
-        "number": 4,
-        "text": "All medical records for L.D.W. from January 1, 2023 to present, including but not limited to pediatric visits, ER visits, therapy records, and medication records.",
-        "category": "Medical"
-    })
-    requests.append({
-        "number": 5,
-        "text": "All school records for L.D.W., including attendance records, report cards, disciplinary records, and communications with teachers or administrators.",
-        "category": "Educational"
-    })
-    requests.append({
-        "number": 6,
-        "text": "All documents relating to any police report, CPS investigation, or protective order involving Andrew Pigors, L.D.W., or yourself from January 1, 2022 to present.",
-        "category": "Law Enforcement"
-    })
-    requests.append({
-        "number": 7,
-        "text": "All financial records including bank statements, pay stubs, tax returns, and evidence of income from January 1, 2023 to present.",
-        "category": "Financial"
-    })
-    requests.append({
-        "number": 8,
-        "text": "All documents, communications, or records relating to the Personal Protection Order (Case No. 2023-5907-PP), including the original petition and all supporting evidence.",
-        "category": "PPO Records"
-    })
-    requests.append({
-        "number": 9,
-        "text": "All communications with Judge McNeill's chambers, judicial secretary Pamela Rusco, or any court staff outside of normal court proceedings.",
-        "category": "Ex Parte Communications"
-    })
-    requests.append({
-        "number": 10,
-        "text": "All documents, notes, calendars, or records reflecting dates and times you permitted or denied Andrew Pigors parenting time with L.D.W.",
-        "category": "Parenting Time"
-    })
-
-    # Add contradiction-specific requests
-    for i, c in enumerate(contradictions[:5], 11):
-        source = c.get("source_1", "the referenced document")
-        requests.append({
-            "number": i,
-            "text": f"All documents referenced in or relating to {source}, including but not limited to drafts, notes, and communications about the preparation of said document.",
-            "category": "Contradiction Source"
-        })
-
-    return requests
-
-
-def generate_admission_requests(perjury, assertions):
-    """Generate requests for admission targeting known false statements."""
-    admissions = []
-
-    for i, p in enumerate(perjury[:15], 1):
-        stmt = (p.get("statement_text") or "")[:200]
-        contra = (p.get("contradicting_evidence") or "")[:200]
-        admissions.append({
-            "number": i,
-            "text": f"Admit that you stated: \"{stmt}\"",
-            "follow_up": f"Admit that this statement is contradicted by: {contra}",
-            "category": "Perjury Admission",
-            "severity": p.get("severity_score", 5)
-        })
-
-    for i, a in enumerate(assertions[:10], len(admissions) + 1):
-        stmt = (a.get("assertion_text") or "")[:200]
-        admissions.append({
-            "number": i,
-            "text": f"Admit that the following assertion is false: \"{stmt}\"",
-            "follow_up": f"Admit that you cannot produce evidence supporting this assertion.",
-            "category": "False Assertion Admission",
-            "severity": a.get("severity", 5)
-        })
-
-    # Standard admissions
-    standard_admissions = [
-        "Admit that Ronald T. Berry is not a licensed attorney in the State of Michigan.",
-        "Admit that Ronald T. Berry has participated in the preparation of legal documents filed in this case.",
-        "Admit that you have communicated with Judge McNeill's chambers outside of scheduled court proceedings.",
-        "Admit that you have denied Andrew Pigors parenting time with L.D.W. on dates not authorized by court order.",
-        "Admit that L.D.W. has expressed a desire to spend time with Andrew Pigors."
-    ]
-
-    for s in standard_admissions:
-        admissions.append({
-            "number": len(admissions) + 1,
-            "text": s,
-            "follow_up": "",
-            "category": "Standard Admission",
-            "severity": 6
-        })
-
-    return admissions
-
-
-def format_discovery_document(interrogatories, production_requests, admissions):
-    """Format into court-ready discovery document."""
-    lines = []
-
-    # Header
-    lines.append("STATE OF MICHIGAN")
-    lines.append("14TH JUDICIAL CIRCUIT COURT — FAMILY DIVISION")
-    lines.append("MUSKEGON COUNTY")
-    lines.append("")
-    lines.append(f"{PLAINTIFF['name']},")
-    lines.append("    Plaintiff,                    Case No. 2024-001507-DC")
-    lines.append("                                  Hon. Jenny L. McNeill")
-    lines.append("v.")
-    lines.append("")
-    lines.append(f"{DEFENDANT['name']},")
-    lines.append("    Defendant.")
-    lines.append("_" * 50)
-    lines.append("")
-
-    # Part 1: Interrogatories
-    lines.append("=" * 60)
-    lines.append("PLAINTIFF'S FIRST SET OF INTERROGATORIES")
-    lines.append("Pursuant to MCR 2.309")
-    lines.append("=" * 60)
-    lines.append("")
-    lines.append(f"TO: {DEFENDANT['name']}")
-    lines.append("")
-    lines.append("You are hereby requested to answer the following interrogatories")
-    lines.append("under oath within twenty-eight (28) days of service pursuant to")
-    lines.append("MCR 2.309(B).")
-    lines.append("")
-
-    for interrog in interrogatories:
-        lines.append(f"\nINTERROGATORY NO. {interrog['number']}:")
-        lines.append(f"[{interrog['category']}]")
-        lines.append(interrog["text"])
-
-    lines.append(f"\n\nTotal Interrogatories: {len(interrogatories)} of 35 maximum (MCR 2.309(A)(2))")
-
-    # Part 2: Requests for Production
-    lines.append("\n\n" + "=" * 60)
-    lines.append("PLAINTIFF'S FIRST REQUEST FOR PRODUCTION OF DOCUMENTS")
-    lines.append("Pursuant to MCR 2.310")
-    lines.append("=" * 60)
-    lines.append("")
-    lines.append(f"TO: {DEFENDANT['name']}")
-    lines.append("")
-    lines.append("You are hereby requested to produce the following documents")
-    lines.append("within twenty-eight (28) days of service pursuant to MCR 2.310(B).")
-    lines.append("")
-
-    for req in production_requests:
-        lines.append(f"\nREQUEST NO. {req['number']}:")
-        lines.append(f"[{req['category']}]")
-        lines.append(req["text"])
-
-    # Part 3: Requests for Admission
-    lines.append("\n\n" + "=" * 60)
-    lines.append("PLAINTIFF'S FIRST REQUEST FOR ADMISSIONS")
-    lines.append("Pursuant to MCR 2.312")
-    lines.append("=" * 60)
-    lines.append("")
-    lines.append(f"TO: {DEFENDANT['name']}")
-    lines.append("")
-    lines.append("You are hereby requested to admit or deny the following")
-    lines.append("within twenty-eight (28) days of service pursuant to MCR 2.312(B).")
-    lines.append("Failure to respond within 28 days results in automatic admission.")
-    lines.append("")
-
-    for adm in admissions:
-        lines.append(f"\nADMISSION NO. {adm['number']}:")
-        lines.append(f"[{adm['category']}]")
-        lines.append(adm["text"])
-        if adm.get("follow_up"):
-            lines.append(f"\nADMISSION NO. {adm['number']}A:")
-            lines.append(adm["follow_up"])
-
-    # Signature
-    lines.append("\n\n" + "_" * 50)
-    lines.append("Respectfully submitted,")
-    lines.append("")
-    lines.append("____________________________")
-    lines.append(f"{PLAINTIFF['name']}, Pro Se")
-    lines.append(PLAINTIFF["address"])
-    lines.append(PLAINTIFF["phone"])
-    lines.append(PLAINTIFF["email"])
-    lines.append(f"\nDate: _______________")
-
-    return "\n".join(lines)
+def build_admissions():
+    """MCR 2.312 — Requests for Admission."""
+    return {
+        "rule": "MCR 2.312",
+        "title": "Requests for Admission",
+        "target": "Emily A. Watson",
+        "requests": [
+            {"number": 1, "text": "Admit that Ronald Berry has assisted you in preparing court filings in this case."},
+            {"number": 2, "text": "Admit that Ronald Berry is not a licensed attorney in the State of Michigan."},
+            {"number": 3, "text": "Admit that Ronald Berry has accompanied you to the Muskegon County courthouse in connection with this case."},
+            {"number": 4, "text": "Admit that you communicated with Ronald Berry about litigation strategy in this case."},
+            {"number": 5, "text": "Admit that photographs you submitted as evidence were taken at your direction or request."},
+            {"number": 6, "text": "Admit that Jennifer Barnes (P55406) withdrew as your attorney prior to the conclusion of this case."},
+            {"number": 7, "text": "Admit that you have made reports to CPS regarding Andrew James Pigors."},
+            {"number": 8, "text": "Admit that there were occasions when Plaintiff's court-ordered parenting time did not occur."},
+            {"number": 9, "text": "Admit that Ronald Berry has provided you with legal advice regarding this case."},
+            {"number": 10, "text": "Admit that you have communicated with Ronald Berry by text message about this case."},
+        ],
+    }
 
 
 def main():
-    print("=" * 60)
-    print("DISCOVERY REQUEST GENERATOR v1.0")
-    print("Auto-generating targeted discovery from evidence DB")
-    print("=" * 60)
+    print("=" * 70)
+    print("TOOL #211 — Discovery Request Generator")
+    print(f"Generated: {datetime.now().isoformat()}")
+    print("=" * 70)
 
+    # Connect to DB
     conn = get_db_connection()
-
-    # Extract data for targeted discovery
-    print("\n📊 Loading evidence for targeted discovery...")
-    contradictions = get_contradictions(conn)
-    perjury = get_perjury_evidence(conn)
-    assertions = get_adversary_assertions(conn)
-    print(f"  Contradictions (sev≥7): {len(contradictions)}")
-    print(f"  Perjury (sev≥8, admissible): {len(perjury)}")
-    print(f"  False assertions (sev≥7): {len(assertions)}")
-
-    conn.close()
-
-    # Generate discovery
-    print("\n📝 Generating interrogatories...")
-    interrogatories = generate_interrogatories(contradictions, perjury, assertions)
-    print(f"  Generated: {len(interrogatories)} of 35 maximum")
-
-    print("\n📝 Generating production requests...")
-    production = generate_production_requests(contradictions, perjury)
-    print(f"  Generated: {len(production)} requests")
-
-    print("\n📝 Generating admission requests...")
-    admissions = generate_admission_requests(perjury, assertions)
-    print(f"  Generated: {len(admissions)} admissions")
-
-    # Format document
-    document = format_discovery_document(interrogatories, production, admissions)
-
-    # Save
-    md_path = REPORTS_DIR / "DISCOVERY_REQUESTS.md"
-    with open(md_path, "w", encoding="utf-8") as f:
-        f.write(document)
-
-    # Save JSON
-    output = {
-        "generated": datetime.now().isoformat(),
-        "interrogatories": {"count": len(interrogatories), "max": 35, "items": interrogatories},
-        "production_requests": {"count": len(production), "items": production},
-        "admissions": {"count": len(admissions), "items": admissions},
-        "data_sources": {
-            "contradictions": len(contradictions),
-            "perjury": len(perjury),
-            "assertions": len(assertions)
+    db_evidence = {}
+    db_stats = {}
+    if conn:
+        tables = get_tables(conn)
+        db_evidence = mine_evidence_for_discovery(conn, tables)
+        db_stats = {
+            "tables_available": len(tables),
+            "watson_evidence_count": len(db_evidence.get("watson", [])),
+            "berry_evidence_count": len(db_evidence.get("berry", [])),
+            "barnes_evidence_count": len(db_evidence.get("barnes", [])),
+            "communications_count": len(db_evidence.get("communications", [])),
+            "general_evidence_count": len(db_evidence.get("general", [])),
         }
+        conn.close()
+        print(f"[DB] Connected. {db_stats['tables_available']} tables found.")
+        print(f"[DB] Watson evidence items: {db_stats['watson_evidence_count']}")
+        print(f"[DB] Berry evidence items: {db_stats['berry_evidence_count']}")
+        print(f"[DB] Barnes evidence items: {db_stats['barnes_evidence_count']}")
+        print(f"[DB] Communications items: {db_stats['communications_count']}")
+    else:
+        print("[WARN] DB not found — generating template requests without DB evidence.")
+
+    interrogatories = build_interrogatories()
+    production = build_production_requests()
+    admissions = build_admissions()
+
+    # Build JSON report
+    report = {
+        "tool": "#211 — Discovery Request Generator",
+        "generated": datetime.now().isoformat(),
+        "case_numbers": CASE_NUMBERS,
+        "court": "14th Circuit Court, Family Division, Muskegon County",
+        "judge": PARTIES["judge"]["name"],
+        "parties": PARTIES,
+        "db_stats": db_stats,
+        "interrogatories": interrogatories,
+        "production_requests": production,
+        "admissions": admissions,
+        "db_evidence_summary": {k: len(v) for k, v in db_evidence.items()},
     }
 
-    json_path = REPORTS_DIR / "discovery_requests.json"
-    with open(json_path, "w", encoding="utf-8") as f:
-        json.dump(output, f, indent=2, default=str)
+    json_path = REPORTS_DIR / "DISCOVERY_REQUESTS.json"
+    json_path.write_text(json.dumps(report, indent=2, default=str), encoding="utf-8")
+    print(f"[OK] JSON report: {json_path}")
 
-    print(f"\n{'='*60}")
-    print(f"DISCOVERY REQUEST GENERATOR — COMPLETE")
-    print(f"{'='*60}")
-    print(f"Interrogatories:      {len(interrogatories)}/35")
-    print(f"Production requests:  {len(production)}")
-    print(f"Admission requests:   {len(admissions)}")
-    print(f"\n📄 Document: {md_path}")
-    print(f"📊 JSON: {json_path}")
+    # Build MD report
+    md = []
+    md.append("# DISCOVERY REQUESTS — Pigors v. Watson")
+    md.append(f"\n**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    md.append(f"**Case Numbers:** {', '.join(CASE_NUMBERS)}")
+    md.append(f"**Court:** 14th Circuit Court, Family Division, Muskegon County")
+    md.append(f"**Judge:** {PARTIES['judge']['name']}")
+    md.append(f"**Plaintiff:** {PARTIES['plaintiff']['name']}")
+    md.append(f"**Defendant:** {PARTIES['defendant']['name']}")
+    md.append("")
 
-    return output
+    # Interrogatories
+    md.append("---")
+    md.append(f"\n## I. INTERROGATORIES — {interrogatories['rule']}")
+    md.append("")
+    for target, questions in interrogatories["targets"].items():
+        md.append(f"### To: {target}")
+        md.append("")
+        for q in questions:
+            md.append(f"**Interrogatory No. {q['number']}** ({q['topic']})")
+            md.append(f"> {q['text']}")
+            md.append("")
+
+    # Production Requests
+    md.append("---")
+    md.append(f"\n## II. REQUESTS FOR PRODUCTION — {production['rule']}")
+    md.append("")
+    for target, reqs in production["targets"].items():
+        md.append(f"### To: {target}")
+        md.append("")
+        for r in reqs:
+            md.append(f"**Request No. {r['number']}**")
+            md.append(f"> {r['text']}")
+            md.append("")
+
+    # Admissions
+    md.append("---")
+    md.append(f"\n## III. REQUESTS FOR ADMISSION — {admissions['rule']}")
+    md.append(f"\n### To: {admissions['target']}")
+    md.append("")
+    for r in admissions["requests"]:
+        md.append(f"**Admission No. {r['number']}**")
+        md.append(f"> {r['text']}")
+        md.append("")
+
+    # DB Evidence Summary
+    if db_stats:
+        md.append("---")
+        md.append("\n## IV. DATABASE EVIDENCE SUPPORTING DISCOVERY")
+        md.append(f"\n- Watson-related evidence items: **{db_stats.get('watson_evidence_count', 0)}**")
+        md.append(f"- Berry-related evidence items: **{db_stats.get('berry_evidence_count', 0)}**")
+        md.append(f"- Barnes-related evidence items: **{db_stats.get('barnes_evidence_count', 0)}**")
+        md.append(f"- Communications evidence: **{db_stats.get('communications_count', 0)}**")
+        md.append(f"- General evidence items: **{db_stats.get('general_evidence_count', 0)}**")
+        md.append("")
+
+    md.append("---")
+    md.append(f"\n*Tool #211 — Discovery Request Generator — {datetime.now().isoformat()}*")
+
+    md_path = REPORTS_DIR / "DISCOVERY_REQUESTS.md"
+    md_path.write_text("\n".join(md), encoding="utf-8")
+    print(f"[OK] MD report:   {md_path}")
+
+    total_requests = (
+        sum(len(v) for v in interrogatories["targets"].values())
+        + sum(len(v) for v in production["targets"].values())
+        + len(admissions["requests"])
+    )
+    print(f"\n[SUMMARY] {total_requests} total discovery requests generated:")
+    print(f"  Interrogatories: {sum(len(v) for v in interrogatories['targets'].values())}")
+    print(f"  Production Requests: {sum(len(v) for v in production['targets'].values())}")
+    print(f"  Admissions: {len(admissions['requests'])}")
+    print("[DONE] Tool #211 complete.")
 
 
 if __name__ == "__main__":

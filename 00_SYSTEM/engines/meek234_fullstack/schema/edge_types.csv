@@ -1,0 +1,24 @@
+edge_type,from_type,to_type,description
+CASE_IN_COURT,Case,Court,Case filed/heard in Court.
+CASE_HAS_PARTY,Case,Party,Party involved in Case.
+CASE_HAS_DOCKET,Case,Docket,Docket container for Case.
+DOCKET_HAS_ROA,Docket,ROAEntry,ROA entry belongs to Docket.
+ROA_MENTIONS_EVENT,ROAEntry,Event,ROA entry references Event.
+EVENT_DERIVED_FROM,Event,EvidenceAtom,Event derived from Evidence.
+ORDER_IS_EVENT,Order,Event,Order specialized from Event.
+SERVICE_IS_EVENT,Service,Event,Service specialized from Event.
+HEARING_IS_EVENT,Hearing,Event,Hearing specialized from Event.
+MOTION_IS_EVENT,Motion,Event,Motion specialized from Event.
+COMM_IS_EVENT,Communication,Event,Communication specialized from Event.
+ORDER_SERVED_BY,Order,Service,Service that served Order.
+HEARING_HAS_TRANSCRIPT,Hearing,Transcript,Transcript linked to Hearing.
+HEARING_HAS_RECORDING,Hearing,Recording,Recording linked to Hearing.
+CLOCK_TRIGGERED_BY,DeadlineClock,Event,Clock triggered by Event.
+RISK_RAISED_BY,RiskEvent,Event,Risk raised by Event.
+VEHICLE_HAS_RISK,VehicleCandidate,RiskEvent,Vehicle is impacted by Risk.
+VEHICLE_REQUIRES_ORDER_PIN,VehicleCandidate,OperatingOrderPin,Vehicle requires pinned operative order.
+RISK_CURE_PACKET,RiskEvent,Pack,Minimum packet to cure risk.
+RISK_AUTHORITY,RiskEvent,AuthorityRef,Authority supporting rule/defect.
+VEHICLE_AUTHORITY,VehicleCandidate,AuthorityRef,Authority supporting vehicle.
+TRACK_TAGS,Track,Event,Track tags event.
+TRACK_TAGS_EVID,Track,EvidenceAtom,Track tags evidence.

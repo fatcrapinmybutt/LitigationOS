@@ -1,0 +1,316 @@
+# LitigationOS Schema Contract
+# Generated: 2026-03-05T14:44:18.887050
+# This is the SINGLE SOURCE OF TRUTH for table schemas.
+# All pipeline modules MUST match these column names.
+# Re-generate: python guardrails.py contract
+
+tables:
+  adversary_models:
+    columns:
+      id: INTEGER PK
+      filing_vehicle: TEXT NOT NULL
+      attack_type: TEXT
+      attack_description: TEXT
+      weakness_exploited: TEXT
+      our_evidence_strength: TEXT
+      rebuttal_strategy: TEXT
+      rebuttal_authority: TEXT
+      rebuttal_evidence: TEXT
+      risk_level: TEXT DEFAULT 'MEDIUM'
+      created_at: TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  authority_chains:
+    columns:
+      id: INTEGER PK
+      filing_vehicle: TEXT
+      fact_claim: TEXT
+      authority_cite: TEXT
+      authority_type: TEXT
+      elements: TEXT
+      evidence_doc_id: INTEGER
+      evidence_quote: TEXT
+      chain_complete: INTEGER DEFAULT 0
+      gap_description: TEXT
+      created_at: TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  claims:
+    columns:
+      claim_id: TEXT
+      issue_id: TEXT
+      doc: TEXT
+      line_no: INTEGER
+      classification: TEXT
+      actor: TEXT
+      proposition: TEXT
+      affirmative_counter_proposition: TEXT
+      evidence_targets: TEXT
+      status: TEXT
+      generated_at: TEXT
+      classifier_version: TEXT
+  contradiction_map:
+    columns:
+      id: INTEGER PK
+      source_a_type: TEXT
+      source_a_doc_id: INTEGER
+      source_a_text: TEXT
+      source_b_type: TEXT
+      source_b_doc_id: INTEGER
+      source_b_text: TEXT
+      contradiction_type: TEXT
+      severity: TEXT
+      legal_impact: TEXT
+      created_at: TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  deadlines:
+    columns:
+      deadline_id: TEXT PK
+      case_id: TEXT NOT NULL
+      title: TEXT NOT NULL
+      due_date_iso: TEXT NOT NULL
+      basis: TEXT
+      basis_authority: TEXT
+      risk_if_missed: TEXT
+      status: TEXT DEFAULT 'upcoming'
+      created_at: TEXT DEFAULT datetime('now')
+      updated_at: TEXT DEFAULT datetime('now')
+  docket_events:
+    columns:
+      event_id: TEXT PK
+      case_id: TEXT NOT NULL
+      event_date_iso: TEXT NOT NULL
+      record_date_iso: TEXT
+      title: TEXT NOT NULL
+      event_type: TEXT
+      summary: TEXT
+      truth_tag: TEXT
+      created_at: TEXT DEFAULT datetime('now')
+  documents:
+    columns:
+      id: INTEGER PK
+      file_path: TEXT NOT NULL
+      file_name: TEXT NOT NULL
+      file_size_bytes: INTEGER
+      modified_date: TEXT
+      page_count: INTEGER DEFAULT 0
+      sha256_hash: TEXT
+      ingested_at: TEXT NOT NULL
+      evidence_category: TEXT
+  drive_files:
+    columns:
+      id: INTEGER PK
+      file_path: TEXT NOT NULL
+      file_name: TEXT NOT NULL
+      extension: TEXT
+      size_bytes: INTEGER
+      sha256: TEXT NOT NULL
+      modified_time: TEXT
+      drive_letter: TEXT
+      lane: TEXT
+      meek_signal: TEXT
+      status: TEXT DEFAULT 'pending'
+      page_count: INTEGER DEFAULT 0
+      extracted_text_length: INTEGER DEFAULT 0
+      atom_count: INTEGER DEFAULT 0
+      run_id: TEXT
+      created_at: TEXT
+      updated_at: TEXT
+  evidence_quotes:
+    columns:
+      id: INTEGER PK
+      document_id: INTEGER
+      page_number: INTEGER
+      evidence_category: TEXT
+      quote_text: TEXT NOT NULL
+      quote_hash: TEXT
+      quote_type: TEXT
+      speaker: TEXT
+      date_ref: TEXT
+      legal_significance: TEXT
+      created_at: TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      source_type: TEXT DEFAULT 'unknown'
+  extracted_harms:
+    columns:
+      id: INTEGER PK
+      category: TEXT NOT NULL
+      subcategory: TEXT
+      adversary: TEXT NOT NULL
+      date_ref: TEXT
+      description: TEXT NOT NULL
+      andrew_quote: TEXT
+      conversation_title: TEXT
+      severity: INTEGER DEFAULT 5
+      constitutional_violation: TEXT
+      mcr_violation: TEXT
+      filing_stacks: TEXT
+      created_at: TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      is_bot_artifact: INTEGER DEFAULT 0
+  file_atoms:
+    columns:
+      id: INTEGER PK
+      atom_id: TEXT NOT NULL
+      file_id: INTEGER NOT NULL
+      atom_type: TEXT NOT NULL
+      content: TEXT NOT NULL
+      page_num: INTEGER
+      char_offset: INTEGER
+      lane: TEXT
+      provenance_hash: TEXT
+      run_id: TEXT
+      created_at: TEXT
+  filing_readiness:
+    columns:
+      id: INTEGER PK
+      vehicle_name: TEXT NOT NULL
+      best_source: TEXT
+      best_source_path: TEXT
+      authority_score: INTEGER DEFAULT 0
+      evidence_score: INTEGER DEFAULT 0
+      compliance_score: INTEGER DEFAULT 0
+      impeachment_score: INTEGER DEFAULT 0
+      total_score: INTEGER DEFAULT 0
+      gaps: TEXT
+      strengths: TEXT
+      attack_vectors: INTEGER DEFAULT 0
+      rebuttals_ready: INTEGER DEFAULT 0
+      status: TEXT DEFAULT 'DRAFT'
+      created_at: TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  forensic_findings:
+    columns:
+      id: TEXT PK
+      source: TEXT
+      finding_type: TEXT
+      severity: TEXT
+      actor: TEXT
+      description: TEXT
+      evidence_text: TEXT
+      legal_hook: TEXT
+      event_date: TEXT
+      created_at: TEXT DEFAULT datetime('now')
+  gap_tickets:
+    columns:
+      ticket_id: TEXT PK
+      filing_name: TEXT NOT NULL
+      gap_type: TEXT NOT NULL
+      description: TEXT
+      severity: TEXT
+      resolution_status: TEXT DEFAULT 'open'
+      resolution_notes: TEXT
+      created_at: TEXT DEFAULT datetime('now')
+      resolved_at: TEXT
+  impeachment_items:
+    columns:
+      id: INTEGER PK
+      item_type: TEXT NOT NULL
+      speaker: TEXT
+      transcript_doc_id: INTEGER
+      transcript_page: INTEGER
+      statement: TEXT NOT NULL
+      contradicting_source: TEXT
+      contradicting_doc_id: INTEGER
+      contradicting_text: TEXT
+      legal_hook: TEXT
+      severity: TEXT DEFAULT 'MEDIUM'
+      created_at: TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  ingest_logs:
+    columns:
+      id: INTEGER PK
+      run_id: TEXT NOT NULL
+      phase: TEXT NOT NULL DEFAULT 'convergence'
+      status: TEXT NOT NULL DEFAULT 'started'
+      started_at: TEXT NOT NULL
+      ended_at: TEXT
+      delta_json: TEXT
+      metrics_json: TEXT
+      step: TEXT
+      files_processed: INTEGER DEFAULT 0
+      atoms_created: INTEGER DEFAULT 0
+      quotes_added: INTEGER DEFAULT 0
+      gaps_opened: INTEGER DEFAULT 0
+      errors: INTEGER DEFAULT 0
+      error_detail: TEXT
+      duration_seconds: REAL
+      metadata: TEXT
+      created_at: TEXT
+      files_scanned: INTEGER DEFAULT 0
+      files_new: INTEGER DEFAULT 0
+      files_deduped: INTEGER DEFAULT 0
+      files_classified: INTEGER DEFAULT 0
+      files_extracted: INTEGER DEFAULT 0
+      atoms_linked: INTEGER DEFAULT 0
+      gaps_created: INTEGER DEFAULT 0
+      elapsed_seconds: REAL DEFAULT 0.0
+      detail: TEXT
+  judicial_violations:
+    columns:
+      violation_id: TEXT PK
+      judge_name: TEXT NOT NULL
+      canon_number: TEXT
+      canon_text: TEXT
+      violation_description: TEXT NOT NULL
+      evidence_refs: TEXT
+      severity: TEXT
+      jtc_exhibit_id: TEXT
+      created_at: TEXT DEFAULT datetime('now')
+  legal_action_scores:
+    columns:
+      id: INTEGER PK
+      action_name: TEXT NOT NULL
+      lane: TEXT NOT NULL
+      evidence_score: REAL DEFAULT 0.0
+      authority_score: REAL DEFAULT 0.0
+      compliance_score: REAL DEFAULT 0.0
+      overall_score: REAL DEFAULT 0.0
+      gaps: TEXT
+      supporting_atoms: TEXT
+      updated_at: TEXT DEFAULT datetime('now')
+  master_citations:
+    columns:
+      source_file: TEXT
+      directory: TEXT
+      cite_type: TEXT
+      citation: TEXT
+      line_number: TEXT
+      context: TEXT
+  pages:
+    columns:
+      id: INTEGER PK
+      document_id: INTEGER NOT NULL
+      page_number: INTEGER NOT NULL
+      text_content: TEXT NOT NULL
+  provenance_refs:
+    columns:
+      id: INTEGER PK
+      atom_id: TEXT NOT NULL
+      source_table: TEXT NOT NULL
+      source_id: TEXT
+      match_type: TEXT
+      confidence: REAL DEFAULT 0.0
+      run_id: TEXT
+      created_at: TEXT
+  scan_inventory:
+    columns:
+      id: INTEGER PK
+      file_path: TEXT NOT NULL
+      file_name: TEXT NOT NULL
+      file_ext: TEXT
+      file_size: INTEGER
+      parent_dir: TEXT
+      ingested: INTEGER DEFAULT 0
+      ingested_at: TEXT
+      content_hash: TEXT
+      doc_type: TEXT
+      error: TEXT
+      created_at: TEXT DEFAULT datetime('now')
+  vehicles:
+    columns:
+      vehicle_id: TEXT PK
+      case_lane: TEXT
+      title: TEXT NOT NULL
+      forum: TEXT
+      vehicle_type: TEXT
+      objective: TEXT
+      legal_basis: TEXT
+      prerequisites: TEXT DEFAULT '[]'
+      proof_obligations: TEXT DEFAULT '{}'
+      resolution_targets: TEXT DEFAULT '[]'
+      sbna_score: REAL DEFAULT 0.0
+      status: TEXT DEFAULT 'candidate'
+      created_at: TEXT DEFAULT datetime('now')
+      updated_at: TEXT DEFAULT datetime('now')

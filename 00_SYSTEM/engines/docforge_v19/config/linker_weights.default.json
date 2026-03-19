@@ -1,0 +1,9 @@
+{
+  "jacc": 1.1,
+  "overlap": 0.06,
+  "issue": 0.8,
+  "speaker": 0.4,
+  "phrase": 0.6,
+  "threshold": 0.95,
+  "notes": "Default pre-tuning weights; tune-linker will override with recall-priority weights if gold labels are supplied."
+}

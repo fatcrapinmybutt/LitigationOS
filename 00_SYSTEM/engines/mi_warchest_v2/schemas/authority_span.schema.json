@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AuthoritySpan",
+  "type": "object",
+  "required": [
+    "span_id",
+    "source_id",
+    "cite_type",
+    "cite_key",
+    "text",
+    "method"
+  ],
+  "properties": {
+    "span_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "cite_type": {
+      "type": "string",
+      "enum": [
+        "MCL",
+        "MCR",
+        "MRE",
+        "MI_CONST",
+        "US_CONST",
+        "CASE"
+      ]
+    },
+    "cite_key": {
+      "type": "string"
+    },
+    "pinpoint": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string",
+      "enum": [
+        "embedded",
+        "ocr",
+        "unknown"
+      ]
+    },
+    "virtual_path": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,732 @@
+{
+  "run_id": "RUN_20260305_141016",
+  "timestamp": "2026-03-05T14:16:22.077550",
+  "system": "LitigationOS Drive Ingestion Pipeline v1.0",
+  "inputs": [
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\APEX_ACTION_METRICS.json",
+      "sha256": "f586567bc3493ec19474a86e7ca5e8410e4f1e9b99f678667dd5424b73062b2b",
+      "lane": "",
+      "source": "C",
+      "file_size": 2264
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\APEX_CONVERGENCE_LOG.txt",
+      "sha256": "b8fff37e077724021bf06da0ba8803a36b65b6e11f18fcd74b82e8cb124c4344",
+      "lane": "",
+      "source": "C",
+      "file_size": 5389
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\APEX_CONVERGENCE_SUMMARY.md",
+      "sha256": "aa8712a568b44ad650d8955ba3de357cd15b6342fa377aef3440f522dc7162c5",
+      "lane": "",
+      "source": "C",
+      "file_size": 6263
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\APEX_MASTER_SUMMARY.txt",
+      "sha256": "ea65a74e8cf75843dbb1783a4b7cda8b078cd208fe5b11e0cc195dd238de4108",
+      "lane": "",
+      "source": "C",
+      "file_size": 2890
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\BEST_INTEREST_SCORES.json",
+      "sha256": "d4f90720974a2d2534c80278f839112ffd17479040b5d584b7ca1917c6344f09",
+      "lane": "",
+      "source": "C",
+      "file_size": 25564
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\BRAIN_INVENTORY.md",
+      "sha256": "b70bb5d929180c78af4ad779f2d39da53301a6ef5613fc3389cc683aa7319d05",
+      "lane": "",
+      "source": "C",
+      "file_size": 9746
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\BRIEF_COMPLIANCE_REPORT.json",
+      "sha256": "602943ea3aa5979712876d86c1f8464919f61d4a88c69f399ca46f961339d991",
+      "lane": "",
+      "source": "C",
+      "file_size": 1428407
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\COA_BRIEF_FILING_STATUS.md",
+      "sha256": "f26059b5ca8b54dac9ce351f83bd93131a211851172ef866c46a9883295f02c7",
+      "lane": "",
+      "source": "C",
+      "file_size": 11012
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\COA_CITATION_VERIFICATION.md",
+      "sha256": "7308bbe01da2c0c1040f4e2272eae51aa98eda843ab220dcee7e96d7acd7538c",
+      "lane": "",
+      "source": "C",
+      "file_size": 88946
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\COA_PLACEHOLDER_REPORT.md",
+      "sha256": "6cb15806f8379e63ed82f086a9bacfbf46feed2bfe8b8cf107c27fbdbea545e0",
+      "lane": "",
+      "source": "C",
+      "file_size": 6519
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\COMMAND_CENTER_DASHBOARD.html",
+      "sha256": "8fe7789bb6d231c2010774e64ddfa1f174b863d51edbf56e996c5720964b5d59",
+      "lane": "",
+      "source": "C",
+      "file_size": 21524
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\CONSOLIDATION_REPORT.md",
+      "sha256": "cb2dd887464a0da6e0a5b662354d72f7220bedf1d236dfedc637865cf5406f79",
+      "lane": "",
+      "source": "C",
+      "file_size": 2814
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\CONVERGENCE_AUTHORITY_REPORT.md",
+      "sha256": "c9cd4f3edc3c02ef4e979825efdfeb0107148a8ff4838971c914f63393a5e0bd",
+      "lane": "",
+      "source": "C",
+      "file_size": 5768
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\CONVERGENCE_EVIDENCE_REPORT.md",
+      "sha256": "c6149a10ba765f1bbcab0f0d7d73f8e2635986a5ea3cf13c64c3fdd06585ff41",
+      "lane": "",
+      "source": "C",
+      "file_size": 11331
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\CONVERGENCE_PLACEHOLDER_REPORT.md",
+      "sha256": "ebcd3f736a9d24331c6f2df3f4da4aaa868862399151c3b951211856fb65982a",
+      "lane": "",
+      "source": "C",
+      "file_size": 10439
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\CONVERGENCE_QA_REPORT.md",
+      "sha256": "f4f5ade7d0bba234c2f0b5f947e36a6b5de2ad521758b2713f93c1d16a839be0",
+      "lane": "",
+      "source": "C",
+      "file_size": 45447
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\CONVERGENCE_QA_SCORES.json",
+      "sha256": "d6ec10b0373025c6e4d9cfecb52917a337cfaaef55653ebeb55634144d390d49",
+      "lane": "",
+      "source": "C",
+      "file_size": 53936
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\CONVERGENCE_QA_SCORES_V2.json",
+      "sha256": "be19ec4f9bac22c1c3945d391ab4f1503a0a56ce6ccb277f74089e422e2860a1",
+      "lane": "",
+      "source": "C",
+      "file_size": 46396
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\CONVERGENCE_QA_SCORES_V3.json",
+      "sha256": "e522ada6d8d741eb0a20558b8e17cf1093d64ba433c620486d66f34d399374f0",
+      "lane": "",
+      "source": "C",
+      "file_size": 46226
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\CONVERGENCE_STATUS_REPORT.md",
+      "sha256": "a0d5542cbc00f26237f61a4ca8928340045f4bae705b2bd2cf399b712c771e8c",
+      "lane": "",
+      "source": "C",
+      "file_size": 18662
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\COPILOT_INSTRUCTIONS_ENHANCED.md",
+      "sha256": "889301b1ad8bd86023312274520af593408d21337777e163155cab2a29682648",
+      "lane": "",
+      "source": "C",
+      "file_size": 33227
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\COPILOT_STARTUP_STATE.md",
+      "sha256": "31c85301e5a792713f1b5796e572a5ce91ea70ee24a643f04b587da58166f18a",
+      "lane": "",
+      "source": "C",
+      "file_size": 11304
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\CORRUPT_PDF_REPORT.md",
+      "sha256": "4058b63c9f1cd59a7ea2de4b8be45b9590e85537c546062ca4080a98835c8721",
+      "lane": "",
+      "source": "C",
+      "file_size": 2995
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\CROSS_REFERENCE_MATRIX.md",
+      "sha256": "3b4c61db130413c0b0659533324a3708c851fef50b97f8ac72da1f7ab163f421",
+      "lane": "",
+      "source": "C",
+      "file_size": 18782
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\DEDUP_CLEANUP_REPORT.md",
+      "sha256": "68d85769c24347cb29d5c35b0d2a1a8c7e746d95cc558a4bad502c4670c197ef",
+      "lane": "",
+      "source": "C",
+      "file_size": 1071372
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\DEDUP_REPORT.md",
+      "sha256": "d73d7b0df0c51ef52810bb3724cff53353007e30239eb3b5cb694686d18bcabe",
+      "lane": "",
+      "source": "C",
+      "file_size": 342472
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\DELTA999_FINAL_METRICS.md",
+      "sha256": "9f555ebb2031c3bd96189283d20cff9598975b136a9945566e951a433f8fbdcd",
+      "lane": "",
+      "source": "C",
+      "file_size": 3825
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\DELTA999_VALIDATION_REPORT.md",
+      "sha256": "8716fc4e546c82d2ae4f7dc256f6d0826a4db574b1b0ca8b359320ee6394e895",
+      "lane": "",
+      "source": "C",
+      "file_size": 8701
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\DISK_CLEANUP_LOG.md",
+      "sha256": "198e6cd0a730d8c32230a20a1a838667ea360e1903a7e7be8d0e85fede07f5aa",
+      "lane": "",
+      "source": "C",
+      "file_size": 2154
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\DISK_CLEANUP_REPORT.md",
+      "sha256": "a95173f3f50d0606ced83cd48594215a721d8cbad662e48a83aa9bca5951e682",
+      "lane": "",
+      "source": "C",
+      "file_size": 4324
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\EVIDENCE_CHAIN_REPORT.txt",
+      "sha256": "52ef249665db08ad80cbb6306c0ac0f760e6038b629307bced8be4aff3bf98cc",
+      "lane": "",
+      "source": "C",
+      "file_size": 1291
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\EVIDENCE_GAP_ANALYSIS.md",
+      "sha256": "76b7828076d1246a8bb7d187cebf0be1445413e7ff4ae551a2c5eea2ce3c1ff9",
+      "lane": "",
+      "source": "C",
+      "file_size": 25599
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\FILING_CHECKLISTS.md",
+      "sha256": "3b10f8bc2d3c4b44618d4f65b926482ae9d5940e7335921bc45766515ef5cf79",
+      "lane": "",
+      "source": "C",
+      "file_size": 5894
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\FILING_PRIORITY_MATRIX.md",
+      "sha256": "29bf7a370945f5573b0f69240ea722d6a49e35b7505184f5dba32d70e8393f32",
+      "lane": "",
+      "source": "C",
+      "file_size": 5733
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\FILING_READINESS_AUDIT.md",
+      "sha256": "1ebb3a7e0cbd6060b95e3c46348756c5bad41517a2b142d0d7092f4ae41a6bef",
+      "lane": "",
+      "source": "C",
+      "file_size": 21811
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\FILING_STACK_SCORES.md",
+      "sha256": "a96e8c9f8a244122d1385fb331343e191c256ff5d055df843cef556b983e1dd4",
+      "lane": "",
+      "source": "C",
+      "file_size": 10233
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\FINAL_CONVERGENCE_AUDIT.md",
+      "sha256": "201e61af78afc28225cb05e9b51ab5053acc6b7c43b8888381391f0f7b091cfa",
+      "lane": "",
+      "source": "C",
+      "file_size": 19194
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\FLEET_SYNTHESIS_REPORT.md",
+      "sha256": "be39f5a4a49eb4e44fdc5d4f68e243fbdcd2551bff65756b2c43aadcf6919f30",
+      "lane": "",
+      "source": "C",
+      "file_size": 12022
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\F_VS_I_DEDUP_REPORT.md",
+      "sha256": "c0c465a3f69c1f7feb33fb6c9d75a84900897487bf204dfaa8cec8057f4d9fdb",
+      "lane": "",
+      "source": "C",
+      "file_size": 10264
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\I_DRIVE_ARCHIVE_REPORT.md",
+      "sha256": "578a783e97ecd1ddd43aab27581acd4eb0361a3d24cae176120c96c7bd26646c",
+      "lane": "",
+      "source": "C",
+      "file_size": 5181
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\I_RECYCLE_BIN_MANIFEST.json",
+      "sha256": "600307d49d1f4b55921736b4c3d9cf75ab29f59b82fa95286a7f4b1af4ca8ec3",
+      "lane": "",
+      "source": "C",
+      "file_size": 1427437
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\MANBEARPIG_SESSION_STATE.md",
+      "sha256": "45032f47619d424cdb9a423ad26e63adab1efda12cf4fc4f4d3c9a27cab4dc41",
+      "lane": "",
+      "source": "C",
+      "file_size": 9737
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\MASTER_EXHIBIT_INDEX.md",
+      "sha256": "520efe10e7f9f83adca1b5092de63456e9cc3085598472e63b6febebba3ee2e1",
+      "lane": "",
+      "source": "C",
+      "file_size": 18342
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\MASTER_FILING_INDEX.md",
+      "sha256": "85fc8e64a93160d74c9e1214d8b7bf140fa83c7475bf54598369aef282091149",
+      "lane": "",
+      "source": "C",
+      "file_size": 11882
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\MASTER_FILING_PACKAGE.pdf",
+      "sha256": "fb8b969ecf41f73d2095a3f42a41aef5c14189b26a1aee859fb1cfc9781576d1",
+      "lane": "",
+      "source": "C",
+      "file_size": 124042
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\MASTER_PLAN.md",
+      "sha256": "26e44aaa7e78101cf506e1b5a63a1344f16b3791592e0599aec77bfebc779f23",
+      "lane": "",
+      "source": "C",
+      "file_size": 14665
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\MASTER_SYSTEM_ARCHITECTURE.md",
+      "sha256": "9745e38f381b7417495d878025d42fd09730c3e7d22683ee82763f1317efd9d4",
+      "lane": "",
+      "source": "C",
+      "file_size": 13688
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\MASTER_TIMELINE_EXHIBIT.html",
+      "sha256": "e2e454a1a8b9ee41b660134769b3126eaf573e73fb651216b1262e3a6293330a",
+      "lane": "",
+      "source": "C",
+      "file_size": 2804712
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\MASTER_TIMELINE_EXHIBIT.md",
+      "sha256": "b498c7f7bd2b36bc4e4693483903db9c60a63feafe2a764b2fcbe07010391dc1",
+      "lane": "",
+      "source": "C",
+      "file_size": 561088
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\MCNEILL_FILING_STATUS.md",
+      "sha256": "622811a40a70c063e8b2153430f0eb5df067cfe6845282b17172553f7753a1f6",
+      "lane": "",
+      "source": "C",
+      "file_size": 6328
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\MCNEILL_PLACEHOLDER_REPORT.md",
+      "sha256": "c5e6a1495ac9a091bc6a82f5d0fb4e06be87fae64629d2dd218ec043230e5074",
+      "lane": "",
+      "source": "C",
+      "file_size": 5035
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\MSC_FILING_STATUS.md",
+      "sha256": "f09fa2d43911c19e4ca383e88263c0605bda957b7e52b6978f14946e4e25a924",
+      "lane": "",
+      "source": "C",
+      "file_size": 6946
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\NEW_FILINGS_PACKAGE.pdf",
+      "sha256": "49e2180aa485cd9a0e466ffc34ddcb48f4ce8da15fd69321fd0aacf67ea65077",
+      "lane": "",
+      "source": "C",
+      "file_size": 660117
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\OMEGA_FLATTEN_P1_LOG.txt",
+      "sha256": "460bf250572e307c863194f7847ed6df7ddc1a53e515676b2f80d830ba6ad662",
+      "lane": "",
+      "source": "C",
+      "file_size": 3823
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\OMEGA_FLATTEN_P2_LOG.txt",
+      "sha256": "01dded27caab229f0c0f0811e8ed2d8dc8055d3b30dd94acee09bc7944e84f30",
+      "lane": "",
+      "source": "C",
+      "file_size": 11920
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\OMEGA_FLATTEN_P3_LOG.txt",
+      "sha256": "3a8ba44688d193cb8c3e6e9ba5e0d98f077dbe0f2f3c155a6ab5f1edf7b8eaa4",
+      "lane": "",
+      "source": "C",
+      "file_size": 7425
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\PLACEHOLDER_MASTER_REPORT.json",
+      "sha256": "6528f59d3702fc54f8448b91fca7826aec451431f855d4f1ddc0ff299da4a1bd",
+      "lane": "",
+      "source": "C",
+      "file_size": 3126943
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\PLACEHOLDER_MASTER_REPORT.md",
+      "sha256": "dfd388c075ba7d1f31b4969500ee8ca953c2b3a187d0fa9facbc1ebf3fba1193",
+      "lane": "",
+      "source": "C",
+      "file_size": 1685813
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\PLACEHOLDER_RESOLUTION_REPORT.md",
+      "sha256": "d02e88ba310fa1915ad5878df346b7a832eb8c036dc1439322f12323c047b5f2",
+      "lane": "",
+      "source": "C",
+      "file_size": 367333
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\PLACEHOLDER_RESOLUTION_V2.txt",
+      "sha256": "ef3e87150c81c5e786d123165bba6f179234199d75e43fb5234df1d2ee3f631d",
+      "lane": "",
+      "source": "C",
+      "file_size": 2921
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\PREFILING_QA_REPORT.json",
+      "sha256": "9eb29d570f713df1edfbeb4447982dee42f559af3db4c973806db71b38faf9dc",
+      "lane": "",
+      "source": "C",
+      "file_size": 3656
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\PRODUCTION_MASTER_REPORT.json",
+      "sha256": "e2913fe1d3ef271bf3705768625216ef9d11cd87d517f5f89b2bb989bf6b7b7d",
+      "lane": "",
+      "source": "C",
+      "file_size": 4187
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\PRODUCTION_MASTER_REPORT.md",
+      "sha256": "4695c5fb3c2f98efc54e933eebfbc21eed10be5fb37a672607ab6e9cb1632412",
+      "lane": "",
+      "source": "C",
+      "file_size": 3704
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\REDTEAM_ANALYSIS_WAVE2.md",
+      "sha256": "c2efa5b2fea1416785fea4a5847a6b527b70fea5f38527de0c12ce7b6356d11c",
+      "lane": "",
+      "source": "C",
+      "file_size": 20012
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\REORG_LOG.txt",
+      "sha256": "503c0bb3e33ff863d24a81ff2c234e60c23b7cd2b01a9983bccda33383da8bed",
+      "lane": "",
+      "source": "C",
+      "file_size": 6226
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\SCAO_FORMS_INVENTORY.md",
+      "sha256": "7548f26220e21b953167ac5f298adbcd783488b1ac4c975f3ba3031fc696b9f7",
+      "lane": "",
+      "source": "C",
+      "file_size": 8487
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\SOL_AUDIT.md",
+      "sha256": "c56dbbe9bd618a9ff51b2a4ce028cae4401aef32285b251a62430077b3a17456",
+      "lane": "",
+      "source": "C",
+      "file_size": 32035
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\STACK_BOOST_REPORT.md",
+      "sha256": "1ac9f796e1da4b61f1751e8b9c5ec58b87f09362adb4c96ddd1ded49d98c009e",
+      "lane": "",
+      "source": "C",
+      "file_size": 8415
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\STACK_IMPROVEMENT_REPORT.md",
+      "sha256": "6afd253175a61767a3387179073455118d7e4b62013b7f4060ce3ef0f266bdcc",
+      "lane": "",
+      "source": "C",
+      "file_size": 5841
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\STARTUP_REPORT.md",
+      "sha256": "a0657f0894a053e7ec7b93050b20156e18a8bda42bc8976a4ef9dd45e5bacbed",
+      "lane": "",
+      "source": "C",
+      "file_size": 3956
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\SYSTEM_AUDIT_REPORT.md",
+      "sha256": "2f0f57c767abf2f1aa867ddda6ec086f71e20660475b7b682559928dbeab35b4",
+      "lane": "",
+      "source": "C",
+      "file_size": 15540
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\TIMELINE_SUMMARY.json",
+      "sha256": "32eae6d03dd84efa1feef6f0c956768f65632edde1dcf3cf34e2eea77b7ee26e",
+      "lane": "",
+      "source": "C",
+      "file_size": 3288485
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\TRASH_CLEANUP_REPORT.md",
+      "sha256": "72889b4a982015b371ddf9b78d6e99a469915f4333fad89ab2cd9187dc492eab",
+      "lane": "",
+      "source": "C",
+      "file_size": 61206
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\UNPROCESSED_DOCS_INVENTORY.md",
+      "sha256": "2c2b1e1cdf8be713f889df9cc6b1d71703bfe94d4c3949ce0ab56900c6915655",
+      "lane": "",
+      "source": "C",
+      "file_size": 4627
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\best_interest_analysis.md",
+      "sha256": "d887b86a1cc5b723ed496badcf0144ab7b344e6669961ff587bca2b6ee48cc77",
+      "lane": "",
+      "source": "C",
+      "file_size": 26043
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\chat_evidence_summary.md",
+      "sha256": "cd7eb8cb2fde04ca27754949c6e0a09594600c3b86fec012dc6b3c1d7abcb75c",
+      "lane": "",
+      "source": "C",
+      "file_size": 5213
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\chatgpt_intel_summary.md",
+      "sha256": "880cbdf9a0d95cbca4f1fcedd4d4935f764101a6c66db8b0c7633b40195633c4",
+      "lane": "",
+      "source": "C",
+      "file_size": 3250
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\convergence_evidence.json",
+      "sha256": "5152f8f897bb8ede6b37b31d1c1c6592becf8c79185a872289cb78e65e3f2d90",
+      "lane": "",
+      "source": "C",
+      "file_size": 707294
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\convergence_preflight.md",
+      "sha256": "3f17eed4e88f0ee77118a56ea801c2c886a035124ac7c487aecd87504d97f923",
+      "lane": "",
+      "source": "C",
+      "file_size": 2227
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\convergence_results.md",
+      "sha256": "55a1337d28ebb22384a1679ec34637019673ecc5cb130ee415cadf9ea5dbf172",
+      "lane": "",
+      "source": "C",
+      "file_size": 5982
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\court_pdf_summary.md",
+      "sha256": "c148ec5ea64dd78aefd95b1026fcc19924c5369dd44295b8aa149189c81515b5",
+      "lane": "",
+      "source": "C",
+      "file_size": 2013
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\deadline_dashboard.md",
+      "sha256": "87ac42e7d7f259304b0ca7134f76d228325595e802c9eadbf764f9e96467d115",
+      "lane": "",
+      "source": "C",
+      "file_size": 8313
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\evidence_chain_data.json",
+      "sha256": "d8d6e519bc00fe5081d07f0e05b78cf1bc6d76d3d1ef62de1f03514ba1ebb770",
+      "lane": "",
+      "source": "C",
+      "file_size": 10915
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\health_report.json",
+      "sha256": "d6702bb7acb4e06cab5fafda0f22c4bc824fde0a4cfcec689431aa7efc3129ad",
+      "lane": "",
+      "source": "C",
+      "file_size": 23512
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\master_exhibit_index.json",
+      "sha256": "26fbafe173130ad012c764fa29f7bdd6c14578c561709d5593a5f310df33b97e",
+      "lane": "",
+      "source": "C",
+      "file_size": 12165
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\mcl_authority_report.md",
+      "sha256": "7837e5aea51164a769cb00f89a3ab86093676b80ca00cb59b0beffa5c4a794b5",
+      "lane": "",
+      "source": "C",
+      "file_size": 63333
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\new_files_from_zips.json",
+      "sha256": "8b9545c25b8487ff15a0c000fc056513c9ebcb19f90f5fc1abe8f1053138bd8c",
+      "lane": "",
+      "source": "C",
+      "file_size": 2820418
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\placeholder_resolution_v2.json",
+      "sha256": "8990b9d5b626a890b9013605668cf1cdcb8901f63dc49c58d694026f5111d6ba",
+      "lane": "",
+      "source": "C",
+      "file_size": 9174
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\rag_index_report.md",
+      "sha256": "25f5567686e366638dbc85e7c23193e7c7be624f995a2b50ca0511138b7aae02",
+      "lane": "",
+      "source": "C",
+      "file_size": 9601
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\rag_test_results.md",
+      "sha256": "0dde16860dc6959faf41813765051f47637f47a2a8e45e2efd5faa7f343ffe55",
+      "lane": "",
+      "source": "C",
+      "file_size": 10927
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\reorg_move_log.jsonl",
+      "sha256": "d8e33ba7d638f667137e529f352a68fbea26095b6372be07520ba834a882dd68",
+      "lane": "",
+      "source": "C",
+      "file_size": 74116
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\skills_upgrade_report.md",
+      "sha256": "786ae8dc7aeb2f41c7bd5c4f5a9364a80c7c3bea95963f17ef1107a1d449deac",
+      "lane": "",
+      "source": "C",
+      "file_size": 6258
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\state_snapshot.json",
+      "sha256": "e6e1f69416c35ab4b6c4c5dd3c20337d2af6ad3231afb94afb032f7fb7653f34",
+      "lane": "",
+      "source": "C",
+      "file_size": 18681
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\test_doc_output.docx",
+      "sha256": "a25ea00eff818b8ac1d9d540fcc381f907b12ee615b427646a414d559c46c8a1",
+      "lane": "",
+      "source": "C",
+      "file_size": 38969
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\test_doc_output.pdf",
+      "sha256": "b4499883a5938cfd717929b9ab0d7f1d3218b4e0cf27f58882f0d513abdc8e0d",
+      "lane": "",
+      "source": "C",
+      "file_size": 54323
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\CHANGELOG.md",
+      "sha256": "3c3e865aa259c055238354231ad0016ae412d4fa4c20b041ed83a1e2f6045b81",
+      "lane": "",
+      "source": "C",
+      "file_size": 2956
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\CODE_OF_CONDUCT.md",
+      "sha256": "dd4f50498dd38326ce47df6b8fb8f9091f0da475f181fbb805d23a87cf67ff63",
+      "lane": "",
+      "source": "C",
+      "file_size": 2350
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\CONTRIBUTING.md",
+      "sha256": "0f1efe8ea5364c1d6f644b5b5897cad9bdcc1c58f551073f6152c0a7e784d04b",
+      "lane": "",
+      "source": "C",
+      "file_size": 2709
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\README.md",
+      "sha256": "9c3cbb2b93ba22d5c82b36d9266842f72c4f1e9e5d313a55494df141a3cb8eb7",
+      "lane": "",
+      "source": "C",
+      "file_size": 5975
+    },
+    {
+      "path": "\\\\?\\C:\\Users\\andre\\LitigationOS\\schema_output.txt",
+      "sha256": "5e164d3773b2150b099f165ede1616b0e82b02a20f2424a12aec0ca82b3c50cf",
+      "lane": "",
+      "source": "C",
+      "file_size": 1022
+    }
+  ],
+  "outputs": {
+    "files_ingested": 100,
+    "atoms_created": 115029,
+    "quotes_linked": 0,
+    "citations_found": 0
+  },
+  "metrics": {
+    "files_processed": 0,
+    "atoms_created": 0,
+    "quotes_added": 0,
+    "gaps_opened": 0,
+    "duration_seconds": 0.0,
+    "errors": 0
+  },
+  "phases": [],
+  "errors": [],
+  "gaps_opened": [],
+  "convergence": {
+    "previous_run": "RUN_20260305_140508",
+    "delta_quotes": 0,
+    "delta_atoms": 0,
+    "instruction_changed": false,
+    "converged": true
+  },
+  "sha256_manifest": "bd6e0c7bd03a02a1b5a14a0c651edb17d1ddc984e6993487147b8f37d2a55e34"
+}

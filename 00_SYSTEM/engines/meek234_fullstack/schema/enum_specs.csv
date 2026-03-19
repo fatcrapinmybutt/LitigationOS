@@ -1,0 +1,5 @@
+enum_name,values_pipe_delimited
+risk_class,jurisdictional_fatal|admin_return_without_docketing|curable_defect|dismissal_risk|record_incomplete|discretionary_sanction_risk
+track,MEEK2|MEEK3|MEEK4
+event_kind,OrderEvent|ServiceEvent|HearingEvent|FilingEvent|CommunicationEvent|ClerkNoticeEvent
+order_status,effective|stayed|superseded|unknown

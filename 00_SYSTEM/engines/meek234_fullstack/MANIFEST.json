@@ -1,0 +1,62 @@
+[
+  {
+    "path": "MEEK234_FULLSTACK_REBUILD_v20260208_3.py",
+    "bytes": 18721,
+    "sha256": "0f3f96302fd7043e07a5039f009052ca9e87b61348d43631971409b3b302db8a",
+    "crc32": "f1239687"
+  },
+  {
+    "path": "MEEK234_REBUILD_SPEC_v20260208_3.md",
+    "bytes": 1211,
+    "sha256": "8738bbfb49c440be7b3d0a4a2adcc712923fe0406446586a823d7bbd1e300cbc",
+    "crc32": "f54d2abb"
+  },
+  {
+    "path": "catalogs/forum_gate_profiles.json",
+    "bytes": 1936,
+    "sha256": "235a14902d60be558b16d284113766cd1827338fd92b323a9a86630e46fefe74",
+    "crc32": "7eba5224"
+  },
+  {
+    "path": "catalogs/glossary_terms_core.jsonl",
+    "bytes": 50863,
+    "sha256": "748e272c38700d9b689a4a8401a1752b6b6aad48e1451d19daeb92c122ec174d",
+    "crc32": "30deb525"
+  },
+  {
+    "path": "catalogs/risk_event_types.json",
+    "bytes": 10276,
+    "sha256": "207a976840152145185ac665b857c3db39cd68306bf761c1b0ed03040ad9aadd",
+    "crc32": "45295de6"
+  },
+  {
+    "path": "catalogs/vehicle_types.json",
+    "bytes": 6229,
+    "sha256": "90fa9db2d7cb14dd1805ba92d05d3b36fa18d75128b32acb09d64d326f564b31",
+    "crc32": "1fa1275f"
+  },
+  {
+    "path": "schema/edge_types.csv",
+    "bytes": 1828,
+    "sha256": "fa915e87328238b79d1dad47c339b6a67685842c54dd6c8b76d67c776de8aa3c",
+    "crc32": "c898720e"
+  },
+  {
+    "path": "schema/enum_specs.csv",
+    "bytes": 542,
+    "sha256": "4732a5729eef6532ccc22423fb421cd5b60e0c92f0180305eb0281ade84455c7",
+    "crc32": "90dd0011"
+  },
+  {
+    "path": "schema/node_types.csv",
+    "bytes": 1573,
+    "sha256": "9b1a14f278cd332ce594c34d7145feb4282ad8610585989c70a58fe896b3dd38",
+    "crc32": "a4809312"
+  },
+  {
+    "path": "schema/property_specs.csv",
+    "bytes": 2187,
+    "sha256": "19af355f5e89b78a0783f4cb10b35ea3e4ac24316e79cc14f8687491d7149c5a",
+    "crc32": "ef307c66"
+  }
+]

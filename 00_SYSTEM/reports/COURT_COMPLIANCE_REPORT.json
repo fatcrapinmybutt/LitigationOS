@@ -1,0 +1,2423 @@
+{
+  "tool": "#216 Court Filing Compliance Validator",
+  "generated": "2026-03-19T08:11:52.800877",
+  "packages_scanned": 10,
+  "average_score": 75,
+  "summary": [
+    {
+      "package": "PKG_F10_COA_EMERGENCY_MOTION",
+      "type": "F10",
+      "label": "COA Emergency Motion",
+      "score": 80,
+      "verdict": "⚠️ CONDITIONAL GO — Address warnings before filing"
+    },
+    {
+      "package": "PKG_F1_EMERGENCY_TRO",
+      "type": "F1",
+      "label": "Emergency TRO",
+      "score": 86,
+      "verdict": "⚠️ CONDITIONAL GO — Address warnings before filing"
+    },
+    {
+      "package": "PKG_F2_SHADY_OAKS_COMPLAINT",
+      "type": "F2",
+      "label": "Shady Oaks Complaint",
+      "score": 86,
+      "verdict": "⚠️ CONDITIONAL GO — Address warnings before filing"
+    },
+    {
+      "package": "PKG_F3_DISQUALIFICATION_MCR_2003",
+      "type": "F3",
+      "label": "MCR 2.003 Disqualification",
+      "score": 50,
+      "verdict": "🔶 NO-GO (FIXABLE) — Multiple issues need attention"
+    },
+    {
+      "package": "PKG_F4_FEDERAL_S1983_COMPLAINT",
+      "type": "F4",
+      "label": "Federal §1983 Complaint",
+      "score": 50,
+      "verdict": "🔶 NO-GO (FIXABLE) — Multiple issues need attention"
+    },
+    {
+      "package": "PKG_F5_MSC_ORIGINAL_ACTION",
+      "type": "F5",
+      "label": "MSC Original Action",
+      "score": 50,
+      "verdict": "🔶 NO-GO (FIXABLE) — Multiple issues need attention"
+    },
+    {
+      "package": "PKG_F6_JTC_COMPLAINT",
+      "type": "F6",
+      "label": "JTC Complaint",
+      "score": 87,
+      "verdict": "⚠️ CONDITIONAL GO — Address warnings before filing"
+    },
+    {
+      "package": "PKG_F7_CUSTODY_MODIFICATION",
+      "type": "F7",
+      "label": "Custody Modification",
+      "score": 88,
+      "verdict": "⚠️ CONDITIONAL GO — Address warnings before filing"
+    },
+    {
+      "package": "PKG_F8_PPO_TERMINATION",
+      "type": "F8",
+      "label": "PPO Termination",
+      "score": 83,
+      "verdict": "⚠️ CONDITIONAL GO — Address warnings before filing"
+    },
+    {
+      "package": "PKG_F9_COA_BRIEF_ON_APPEAL",
+      "type": "F9",
+      "label": "COA Brief on Appeal",
+      "score": 91,
+      "verdict": "✅ GO — Ready for filing (minor warnings may remain)"
+    }
+  ],
+  "detailed_results": [
+    {
+      "package": "PKG_F10_COA_EMERGENCY_MOTION",
+      "filing_type": "F10",
+      "filing_label": "COA Emergency Motion",
+      "court": "Court of Appeals",
+      "score": 80,
+      "verdict": "⚠️ CONDITIONAL GO — Address warnings before filing",
+      "timestamp": "2026-03-19T08:11:52.314490",
+      "categories": {
+        "Universal Formatting": {
+          "passed": 12,
+          "total": 17,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "UF-01: Caption includes court name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-02: Caption includes case number",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-03: Caption includes party names",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-04: Document title present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-05: Signature block includes name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-06: Signature block includes address",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-07: Signature block includes phone",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-08: Date present in signature block or filing",
+              "detail": "FIX: Add date in signature block (e.g., 'Dated: Month DD, YYYY')"
+            },
+            {
+              "pass": true,
+              "rule": "UF-09: Certificate of service present",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-10: Certificate of service includes date served",
+              "detail": "FIX: Certificate of service must state date of service"
+            },
+            {
+              "pass": false,
+              "rule": "UF-11: Certificate of service includes method of service",
+              "detail": "FIX: State method of service (e.g., 'first-class mail', 'MiFILE e-service', 'hand delivery')"
+            },
+            {
+              "pass": true,
+              "rule": "UF-12: Certificate of service lists opposing party",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-13: No placeholder text remaining",
+              "detail": "FIX: Remove 3 placeholder(s): ___________________, ______________________________, ___________________"
+            },
+            {
+              "pass": true,
+              "rule": "UF-14: Pages appear consecutively numbered",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-15: Pro se status identified",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-16: Electronic signature format (/s/ Name) present",
+              "detail": "FIX: For e-filing, use '/s/ Andrew James Pigors' as electronic signature"
+            },
+            {
+              "pass": true,
+              "rule": "UF-17: Child referred to by initials only (MCR 8.119(H))",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Anti-Hallucination Guard": {
+          "passed": 8,
+          "total": 8,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "AH-01: No fabricated 'Jane Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-02: No fabricated 'Patricia Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-03: No wrong judge name 'Amy McNeill'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-04: Ronald Berry not listed as attorney (he is not one)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-05: Correct defendant name (Emily A. Watson, not Ann/M.)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-06: No fabricated '91% alienation score'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-07: No fabricated '9 CPS investigations'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-08: No wrong name 'Tiffany' for defendant",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Common Rejection Screening": {
+          "passed": 5,
+          "total": 5,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "CR-01: Case number present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-02: Document appears legible (no binary garbage)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-03: All files have substantive content",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-04: No bundled unrelated documents",
+              "detail": "WARN: Verify each file contains only ONE document type when converting to PDF"
+            },
+            {
+              "pass": true,
+              "rule": "CR-05: Required signature(s) present",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "F10: COA Emergency Motion": {
+          "passed": 6,
+          "total": 8,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "F10-01: 'EMERGENCY' label prominent on first page",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "F10-02: References MCR 7.211(C)(6) for immediate consideration",
+              "detail": "FIX: Cite MCR 7.211(C)(6) — standard for emergency/immediate consideration"
+            },
+            {
+              "pass": false,
+              "rule": "F10-03: Peremptory reversal: MCR 7.211(C)(4) + 'manifest error'",
+              "detail": "FIX: For peremptory reversal, cite MCR 7.211(C)(4) and demonstrate 'manifest error' standard"
+            },
+            {
+              "pass": true,
+              "rule": "F10-04: Brief portion within limits (max 50 pages / 14,000 words)",
+              "detail": "PASS (5,542 words)"
+            },
+            {
+              "pass": true,
+              "rule": "F10-05: $375 filing fee referenced OR IFP application attached",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F10-06: Filed within 21 days of final order (or delay explained)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F10-07: Served on ALL parties (Watson, FOC, lower court)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F10-08: Caption includes COA Case No. 366810",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "MiFILE E-Filing": {
+          "passed": 5,
+          "total": 7,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "EF-01: Each document is a separate file (not bundled)",
+              "detail": "PASS (8 separate .md files)"
+            },
+            {
+              "pass": false,
+              "rule": "EF-02: Electronic signature format: /s/ Andrew James Pigors",
+              "detail": "FIX: Add '/s/ Andrew James Pigors' as electronic signature for e-filing"
+            },
+            {
+              "pass": false,
+              "rule": "EF-03: PDF format noted (recommended for MiFILE)",
+              "detail": "WARN: Ensure documents are converted to PDF before uploading to MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-04: Descriptive file names with case number",
+              "detail": "WARN: Consider adding case number to file names for MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-05: File size under 25 MB each",
+              "detail": "WARN: Verify each PDF is under 25 MB (conservative: under 10 MB) before e-filing"
+            },
+            {
+              "pass": true,
+              "rule": "EF-06: Scanned documents at 300 dpi B&W/grayscale",
+              "detail": "WARN: If any scanned exhibits, ensure 300 dpi B&W or grayscale for legibility"
+            },
+            {
+              "pass": true,
+              "rule": "EF-07: No password-protected or restricted PDFs",
+              "detail": "WARN: Ensure no PDFs are password-protected before uploading to MiFILE"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package": "PKG_F1_EMERGENCY_TRO",
+      "filing_type": "F1",
+      "filing_label": "Emergency TRO",
+      "court": "14th Circuit",
+      "score": 86,
+      "verdict": "⚠️ CONDITIONAL GO — Address warnings before filing",
+      "timestamp": "2026-03-19T08:11:52.364691",
+      "categories": {
+        "Universal Formatting": {
+          "passed": 14,
+          "total": 17,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "UF-01: Caption includes court name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-02: Caption includes case number",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-03: Caption includes party names",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-04: Document title present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-05: Signature block includes name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-06: Signature block includes address",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-07: Signature block includes phone",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-08: Date present in signature block or filing",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-09: Certificate of service present",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-10: Certificate of service includes date served",
+              "detail": "FIX: Certificate of service must state date of service"
+            },
+            {
+              "pass": true,
+              "rule": "UF-11: Certificate of service includes method of service",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-12: Certificate of service lists opposing party",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-13: No placeholder text remaining",
+              "detail": "FIX: Remove 6 placeholder(s): [DATE OF FILING], [DATE OF FILING], [DATE OF SERVICE], ___________________________, _________________"
+            },
+            {
+              "pass": true,
+              "rule": "UF-14: Pages appear consecutively numbered",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-15: Pro se status identified",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-16: Electronic signature format (/s/ Name) present",
+              "detail": "FIX: For e-filing, use '/s/ Andrew James Pigors' as electronic signature"
+            },
+            {
+              "pass": true,
+              "rule": "UF-17: Child referred to by initials only (MCR 8.119(H))",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Anti-Hallucination Guard": {
+          "passed": 8,
+          "total": 8,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "AH-01: No fabricated 'Jane Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-02: No fabricated 'Patricia Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-03: No wrong judge name 'Amy McNeill'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-04: Ronald Berry not listed as attorney (he is not one)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-05: Correct defendant name (Emily A. Watson, not Ann/M.)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-06: No fabricated '91% alienation score'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-07: No fabricated '9 CPS investigations'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-08: No wrong name 'Tiffany' for defendant",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Common Rejection Screening": {
+          "passed": 5,
+          "total": 5,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "CR-01: Case number present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-02: Document appears legible (no binary garbage)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-03: All files have substantive content",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-04: No bundled unrelated documents",
+              "detail": "WARN: Verify each file contains only ONE document type when converting to PDF"
+            },
+            {
+              "pass": true,
+              "rule": "CR-05: Required signature(s) present",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "MiFILE E-Filing": {
+          "passed": 5,
+          "total": 7,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "EF-01: Each document is a separate file (not bundled)",
+              "detail": "PASS (12 separate .md files)"
+            },
+            {
+              "pass": false,
+              "rule": "EF-02: Electronic signature format: /s/ Andrew James Pigors",
+              "detail": "FIX: Add '/s/ Andrew James Pigors' as electronic signature for e-filing"
+            },
+            {
+              "pass": false,
+              "rule": "EF-03: PDF format noted (recommended for MiFILE)",
+              "detail": "WARN: Ensure documents are converted to PDF before uploading to MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-04: Descriptive file names with case number",
+              "detail": "WARN: Consider adding case number to file names for MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-05: File size under 25 MB each",
+              "detail": "WARN: Verify each PDF is under 25 MB (conservative: under 10 MB) before e-filing"
+            },
+            {
+              "pass": true,
+              "rule": "EF-06: Scanned documents at 300 dpi B&W/grayscale",
+              "detail": "WARN: If any scanned exhibits, ensure 300 dpi B&W or grayscale for legibility"
+            },
+            {
+              "pass": true,
+              "rule": "EF-07: No password-protected or restricted PDFs",
+              "detail": "WARN: Ensure no PDFs are password-protected before uploading to MiFILE"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package": "PKG_F2_SHADY_OAKS_COMPLAINT",
+      "filing_type": "F2",
+      "filing_label": "Shady Oaks Complaint",
+      "court": "14th Circuit",
+      "score": 86,
+      "verdict": "⚠️ CONDITIONAL GO — Address warnings before filing",
+      "timestamp": "2026-03-19T08:11:52.415356",
+      "categories": {
+        "Universal Formatting": {
+          "passed": 14,
+          "total": 17,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "UF-01: Caption includes court name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-02: Caption includes case number",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-03: Caption includes party names",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-04: Document title present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-05: Signature block includes name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-06: Signature block includes address",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-07: Signature block includes phone",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-08: Date present in signature block or filing",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-09: Certificate of service present",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-10: Certificate of service includes date served",
+              "detail": "FIX: Certificate of service must state date of service"
+            },
+            {
+              "pass": true,
+              "rule": "UF-11: Certificate of service includes method of service",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-12: Certificate of service lists opposing party",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-13: No placeholder text remaining",
+              "detail": "FIX: Remove 8 placeholder(s): [ANDREW: Consider filing a parallel LARA complaint regarding License #1201891 — this strengthens the civil case and creates an independent enforcement record.], [ANDREW: Consider filing a parallel LARA complaint regarding License #1201891 — this strengthens the civil case and creates an independent enforcement record.], [DATE OF FILING], [DATE OF FILING], [DATE OF FILING]"
+            },
+            {
+              "pass": true,
+              "rule": "UF-14: Pages appear consecutively numbered",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-15: Pro se status identified",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-16: Electronic signature format (/s/ Name) present",
+              "detail": "FIX: For e-filing, use '/s/ Andrew James Pigors' as electronic signature"
+            },
+            {
+              "pass": true,
+              "rule": "UF-17: Child referred to by initials only (MCR 8.119(H))",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Anti-Hallucination Guard": {
+          "passed": 8,
+          "total": 8,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "AH-01: No fabricated 'Jane Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-02: No fabricated 'Patricia Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-03: No wrong judge name 'Amy McNeill'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-04: Ronald Berry not listed as attorney (he is not one)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-05: Correct defendant name (Emily A. Watson, not Ann/M.)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-06: No fabricated '91% alienation score'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-07: No fabricated '9 CPS investigations'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-08: No wrong name 'Tiffany' for defendant",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Common Rejection Screening": {
+          "passed": 5,
+          "total": 5,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "CR-01: Case number present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-02: Document appears legible (no binary garbage)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-03: All files have substantive content",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-04: No bundled unrelated documents",
+              "detail": "WARN: Verify each file contains only ONE document type when converting to PDF"
+            },
+            {
+              "pass": true,
+              "rule": "CR-05: Required signature(s) present",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "MiFILE E-Filing": {
+          "passed": 5,
+          "total": 7,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "EF-01: Each document is a separate file (not bundled)",
+              "detail": "PASS (9 separate .md files)"
+            },
+            {
+              "pass": false,
+              "rule": "EF-02: Electronic signature format: /s/ Andrew James Pigors",
+              "detail": "FIX: Add '/s/ Andrew James Pigors' as electronic signature for e-filing"
+            },
+            {
+              "pass": false,
+              "rule": "EF-03: PDF format noted (recommended for MiFILE)",
+              "detail": "WARN: Ensure documents are converted to PDF before uploading to MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-04: Descriptive file names with case number",
+              "detail": "WARN: Consider adding case number to file names for MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-05: File size under 25 MB each",
+              "detail": "WARN: Verify each PDF is under 25 MB (conservative: under 10 MB) before e-filing"
+            },
+            {
+              "pass": true,
+              "rule": "EF-06: Scanned documents at 300 dpi B&W/grayscale",
+              "detail": "WARN: If any scanned exhibits, ensure 300 dpi B&W or grayscale for legibility"
+            },
+            {
+              "pass": true,
+              "rule": "EF-07: No password-protected or restricted PDFs",
+              "detail": "WARN: Ensure no PDFs are password-protected before uploading to MiFILE"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package": "PKG_F3_DISQUALIFICATION_MCR_2003",
+      "filing_type": "F3",
+      "filing_label": "MCR 2.003 Disqualification",
+      "court": "14th Circuit",
+      "score": 50,
+      "verdict": "🔶 NO-GO (FIXABLE) — Multiple issues need attention",
+      "timestamp": "2026-03-19T08:11:52.478369",
+      "categories": {
+        "Universal Formatting": {
+          "passed": 14,
+          "total": 17,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "UF-01: Caption includes court name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-02: Caption includes case number",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-03: Caption includes party names",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-04: Document title present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-05: Signature block includes name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-06: Signature block includes address",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-07: Signature block includes phone",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-08: Date present in signature block or filing",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-09: Certificate of service present",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-10: Certificate of service includes date served",
+              "detail": "FIX: Certificate of service must state date of service"
+            },
+            {
+              "pass": true,
+              "rule": "UF-11: Certificate of service includes method of service",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-12: Certificate of service lists opposing party",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-13: No placeholder text remaining",
+              "detail": "FIX: Remove 9 placeholder(s): [ANDREW: SIGN AND DATE], [ANDREW: NOTARIZE BEFORE FILING], [ANDREW: SIGN AND DATE], [DATE OF FILING], [DATE OF FILING]"
+            },
+            {
+              "pass": true,
+              "rule": "UF-14: Pages appear consecutively numbered",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-15: Pro se status identified",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-16: Electronic signature format (/s/ Name) present",
+              "detail": "FIX: For e-filing, use '/s/ Andrew James Pigors' as electronic signature"
+            },
+            {
+              "pass": true,
+              "rule": "UF-17: Child referred to by initials only (MCR 8.119(H))",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Anti-Hallucination Guard": {
+          "passed": 7,
+          "total": 8,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "AH-01: No fabricated 'Jane Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-02: No fabricated 'Patricia Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-03: No wrong judge name 'Amy McNeill'",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "AH-04: Ronald Berry not listed as attorney (he is not one)",
+              "detail": "CRITICAL: Ronald Berry is NOT an attorney. No bar number. No 'Esq.' Remove."
+            },
+            {
+              "pass": true,
+              "rule": "AH-05: Correct defendant name (Emily A. Watson, not Ann/M.)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-06: No fabricated '91% alienation score'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-07: No fabricated '9 CPS investigations'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-08: No wrong name 'Tiffany' for defendant",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Common Rejection Screening": {
+          "passed": 5,
+          "total": 5,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "CR-01: Case number present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-02: Document appears legible (no binary garbage)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-03: All files have substantive content",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-04: No bundled unrelated documents",
+              "detail": "WARN: Verify each file contains only ONE document type when converting to PDF"
+            },
+            {
+              "pass": true,
+              "rule": "CR-05: Required signature(s) present",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "F3: MCR 2.003 Disqualification": {
+          "passed": 9,
+          "total": 9,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "F3-01: Caption includes Case No. 2024-001507-DC",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F3-02: References MCR 2.003(C) grounds",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F3-03: States specific grounds (bias/prejudice, Caperton, Canon 2)",
+              "detail": "PASS (3/3 ground types cited)"
+            },
+            {
+              "pass": true,
+              "rule": "F3-04: Affidavit attached with factual grounds",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F3-05: Filed within 14 days of discovery (or good cause shown)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F3-06: MC 264 form referenced or attached",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F3-07: Certificate of service includes Watson + FOC + Court Clerk",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F3-08: Exhibit index present (exhibits must be separate)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F3-09: Correct judge name (Hon. Jenny L. McNeill)",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "MiFILE E-Filing": {
+          "passed": 5,
+          "total": 7,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "EF-01: Each document is a separate file (not bundled)",
+              "detail": "PASS (13 separate .md files)"
+            },
+            {
+              "pass": false,
+              "rule": "EF-02: Electronic signature format: /s/ Andrew James Pigors",
+              "detail": "FIX: Add '/s/ Andrew James Pigors' as electronic signature for e-filing"
+            },
+            {
+              "pass": false,
+              "rule": "EF-03: PDF format noted (recommended for MiFILE)",
+              "detail": "WARN: Ensure documents are converted to PDF before uploading to MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-04: Descriptive file names with case number",
+              "detail": "WARN: Consider adding case number to file names for MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-05: File size under 25 MB each",
+              "detail": "WARN: Verify each PDF is under 25 MB (conservative: under 10 MB) before e-filing"
+            },
+            {
+              "pass": true,
+              "rule": "EF-06: Scanned documents at 300 dpi B&W/grayscale",
+              "detail": "WARN: If any scanned exhibits, ensure 300 dpi B&W or grayscale for legibility"
+            },
+            {
+              "pass": true,
+              "rule": "EF-07: No password-protected or restricted PDFs",
+              "detail": "WARN: Ensure no PDFs are password-protected before uploading to MiFILE"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package": "PKG_F4_FEDERAL_S1983_COMPLAINT",
+      "filing_type": "F4",
+      "filing_label": "Federal §1983 Complaint",
+      "court": "WDMI Federal",
+      "score": 50,
+      "verdict": "🔶 NO-GO (FIXABLE) — Multiple issues need attention",
+      "timestamp": "2026-03-19T08:11:52.553590",
+      "categories": {
+        "Universal Formatting": {
+          "passed": 13,
+          "total": 17,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "UF-01: Caption includes court name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-02: Caption includes case number",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-03: Caption includes party names",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-04: Document title present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-05: Signature block includes name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-06: Signature block includes address",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-07: Signature block includes phone",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-08: Date present in signature block or filing",
+              "detail": "FIX: Add date in signature block (e.g., 'Dated: Month DD, YYYY')"
+            },
+            {
+              "pass": true,
+              "rule": "UF-09: Certificate of service present",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-10: Certificate of service includes date served",
+              "detail": "FIX: Certificate of service must state date of service"
+            },
+            {
+              "pass": true,
+              "rule": "UF-11: Certificate of service includes method of service",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-12: Certificate of service lists opposing party",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-13: No placeholder text remaining",
+              "detail": "FIX: Remove 6 placeholder(s): [ANDREW: FILE IFP APPLICATION SEPARATELY], [ANDREW: SIGN AND DATE], [ANDREW: SIGN AND DATE], _______________, _______________________________________"
+            },
+            {
+              "pass": true,
+              "rule": "UF-14: Pages appear consecutively numbered",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-15: Pro se status identified",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-16: Electronic signature format (/s/ Name) present",
+              "detail": "FIX: For e-filing, use '/s/ Andrew James Pigors' as electronic signature"
+            },
+            {
+              "pass": true,
+              "rule": "UF-17: Child referred to by initials only (MCR 8.119(H))",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Anti-Hallucination Guard": {
+          "passed": 7,
+          "total": 8,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "AH-01: No fabricated 'Jane Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-02: No fabricated 'Patricia Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-03: No wrong judge name 'Amy McNeill'",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "AH-04: Ronald Berry not listed as attorney (he is not one)",
+              "detail": "CRITICAL: Ronald Berry is NOT an attorney. No bar number. No 'Esq.' Remove."
+            },
+            {
+              "pass": true,
+              "rule": "AH-05: Correct defendant name (Emily A. Watson, not Ann/M.)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-06: No fabricated '91% alienation score'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-07: No fabricated '9 CPS investigations'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-08: No wrong name 'Tiffany' for defendant",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Common Rejection Screening": {
+          "passed": 5,
+          "total": 5,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "CR-01: Case number present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-02: Document appears legible (no binary garbage)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-03: All files have substantive content",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-04: No bundled unrelated documents",
+              "detail": "WARN: Verify each file contains only ONE document type when converting to PDF"
+            },
+            {
+              "pass": true,
+              "rule": "CR-05: Required signature(s) present",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "F4: Federal §1983 Complaint": {
+          "passed": 6,
+          "total": 7,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "F4-01: $402 filing fee OR IFP affidavit",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F4-02: 'Under color of state law' alleged + §1983 cited",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "F4-03: 3-year statute of limitations addressed",
+              "detail": "FIX: Address the 3-year statute of limitations for §1983 claims"
+            },
+            {
+              "pass": true,
+              "rule": "F4-04: Each defendant specifically named with role",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F4-05: Numbered paragraphs",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F4-06: Jurisdiction + venue stated",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F4-07: Pro Se format per WDMI Pro Se Handbook",
+              "detail": "PASS"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package": "PKG_F5_MSC_ORIGINAL_ACTION",
+      "filing_type": "F5",
+      "filing_label": "MSC Original Action",
+      "court": "Michigan Supreme Court",
+      "score": 50,
+      "verdict": "🔶 NO-GO (FIXABLE) — Multiple issues need attention",
+      "timestamp": "2026-03-19T08:11:52.619295",
+      "categories": {
+        "Universal Formatting": {
+          "passed": 13,
+          "total": 17,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "UF-01: Caption includes court name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-02: Caption includes case number",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-03: Caption includes party names",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-04: Document title present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-05: Signature block includes name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-06: Signature block includes address",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-07: Signature block includes phone",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-08: Date present in signature block or filing",
+              "detail": "FIX: Add date in signature block (e.g., 'Dated: Month DD, YYYY')"
+            },
+            {
+              "pass": true,
+              "rule": "UF-09: Certificate of service present",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-10: Certificate of service includes date served",
+              "detail": "FIX: Certificate of service must state date of service"
+            },
+            {
+              "pass": true,
+              "rule": "UF-11: Certificate of service includes method of service",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-12: Certificate of service lists opposing party",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-13: No placeholder text remaining",
+              "detail": "FIX: Remove 6 placeholder(s): [ANDREW: SIGN AND DATE the Oath and Signature block above], [ANDREW: NOTARIZE BEFORE FILING — take this document and valid photo ID to a notary public], [ANDREW: SIGN AND DATE after completing service on all parties], _________________, _______________"
+            },
+            {
+              "pass": true,
+              "rule": "UF-14: Pages appear consecutively numbered",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-15: Pro se status identified",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-16: Electronic signature format (/s/ Name) present",
+              "detail": "FIX: For e-filing, use '/s/ Andrew James Pigors' as electronic signature"
+            },
+            {
+              "pass": true,
+              "rule": "UF-17: Child referred to by initials only (MCR 8.119(H))",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Anti-Hallucination Guard": {
+          "passed": 7,
+          "total": 8,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "AH-01: No fabricated 'Jane Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-02: No fabricated 'Patricia Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-03: No wrong judge name 'Amy McNeill'",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "AH-04: Ronald Berry not listed as attorney (he is not one)",
+              "detail": "CRITICAL: Ronald Berry is NOT an attorney. No bar number. No 'Esq.' Remove."
+            },
+            {
+              "pass": true,
+              "rule": "AH-05: Correct defendant name (Emily A. Watson, not Ann/M.)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-06: No fabricated '91% alienation score'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-07: No fabricated '9 CPS investigations'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-08: No wrong name 'Tiffany' for defendant",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Common Rejection Screening": {
+          "passed": 5,
+          "total": 5,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "CR-01: Case number present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-02: Document appears legible (no binary garbage)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-03: All files have substantive content",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-04: No bundled unrelated documents",
+              "detail": "WARN: Verify each file contains only ONE document type when converting to PDF"
+            },
+            {
+              "pass": true,
+              "rule": "CR-05: Required signature(s) present",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "MiFILE E-Filing": {
+          "passed": 6,
+          "total": 7,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "EF-01: Each document is a separate file (not bundled)",
+              "detail": "PASS (11 separate .md files)"
+            },
+            {
+              "pass": false,
+              "rule": "EF-02: Electronic signature format: /s/ Andrew James Pigors",
+              "detail": "FIX: Add '/s/ Andrew James Pigors' as electronic signature for e-filing"
+            },
+            {
+              "pass": true,
+              "rule": "EF-03: PDF format noted (recommended for MiFILE)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "EF-04: Descriptive file names with case number",
+              "detail": "WARN: Consider adding case number to file names for MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-05: File size under 25 MB each",
+              "detail": "WARN: Verify each PDF is under 25 MB (conservative: under 10 MB) before e-filing"
+            },
+            {
+              "pass": true,
+              "rule": "EF-06: Scanned documents at 300 dpi B&W/grayscale",
+              "detail": "WARN: If any scanned exhibits, ensure 300 dpi B&W or grayscale for legibility"
+            },
+            {
+              "pass": true,
+              "rule": "EF-07: No password-protected or restricted PDFs",
+              "detail": "WARN: Ensure no PDFs are password-protected before uploading to MiFILE"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package": "PKG_F6_JTC_COMPLAINT",
+      "filing_type": "F6",
+      "filing_label": "JTC Complaint",
+      "court": "JTC (Mail Only)",
+      "score": 87,
+      "verdict": "⚠️ CONDITIONAL GO — Address warnings before filing",
+      "timestamp": "2026-03-19T08:11:52.663475",
+      "categories": {
+        "Universal Formatting": {
+          "passed": 14,
+          "total": 17,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "UF-01: Caption includes court name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-02: Caption includes case number",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-03: Caption includes party names",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-04: Document title present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-05: Signature block includes name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-06: Signature block includes address",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-07: Signature block includes phone",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-08: Date present in signature block or filing",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-09: Certificate of service present",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-10: Certificate of service includes date served",
+              "detail": "FIX: Certificate of service must state date of service"
+            },
+            {
+              "pass": true,
+              "rule": "UF-11: Certificate of service includes method of service",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-12: Certificate of service lists opposing party",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-13: No placeholder text remaining",
+              "detail": "FIX: Remove 6 placeholder(s): [ANDREW: SIGN AND DATE], [ANDREW: SIGN AND DATE], [ANDREW: SIGN AND DATE], ____________________, ____________________"
+            },
+            {
+              "pass": true,
+              "rule": "UF-14: Pages appear consecutively numbered",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-15: Pro se status identified",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-16: Electronic signature format (/s/ Name) present",
+              "detail": "FIX: For e-filing, use '/s/ Andrew James Pigors' as electronic signature"
+            },
+            {
+              "pass": true,
+              "rule": "UF-17: Child referred to by initials only (MCR 8.119(H))",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Anti-Hallucination Guard": {
+          "passed": 8,
+          "total": 8,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "AH-01: No fabricated 'Jane Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-02: No fabricated 'Patricia Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-03: No wrong judge name 'Amy McNeill'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-04: Ronald Berry not listed as attorney (he is not one)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-05: Correct defendant name (Emily A. Watson, not Ann/M.)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-06: No fabricated '91% alienation score'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-07: No fabricated '9 CPS investigations'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-08: No wrong name 'Tiffany' for defendant",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Common Rejection Screening": {
+          "passed": 5,
+          "total": 5,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "CR-01: Case number present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-02: Document appears legible (no binary garbage)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-03: All files have substantive content",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-04: No bundled unrelated documents",
+              "detail": "WARN: Verify each file contains only ONE document type when converting to PDF"
+            },
+            {
+              "pass": true,
+              "rule": "CR-05: Required signature(s) present",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "F6: JTC Complaint": {
+          "passed": 7,
+          "total": 9,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "F6-01: ⚠️ Marked as MAIL-ONLY (cannot be e-filed)",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "F6-02: Correct JTC address (3034 W. Grand Blvd., Suite 8-350, Detroit, MI 48202)",
+              "detail": "FIX: JTC address is 3034 W. Grand Blvd., Suite 8-350, Detroit, MI 48202 (NOT Suite 8-450!)"
+            },
+            {
+              "pass": true,
+              "rule": "F6-03: Uses 'Request for Investigation' form/format",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F6-04: Notarization noted (complaint must be notarized)",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "F6-05: Attaches COPIES of evidence (not originals)",
+              "detail": "FIX: Note that COPIES (not originals) of evidence are attached"
+            },
+            {
+              "pass": true,
+              "rule": "F6-06: Focuses on CONDUCT violations (JTC cannot reverse rulings)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F6-07: Detailed factual description of misconduct",
+              "detail": "PASS (17100 words)"
+            },
+            {
+              "pass": true,
+              "rule": "F6-08: JTC phone (313) 875-5110 referenced",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F6-09: Names correct judge (Hon. Jenny L. McNeill)",
+              "detail": "PASS"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package": "PKG_F7_CUSTODY_MODIFICATION",
+      "filing_type": "F7",
+      "filing_label": "Custody Modification",
+      "court": "14th Circuit",
+      "score": 88,
+      "verdict": "⚠️ CONDITIONAL GO — Address warnings before filing",
+      "timestamp": "2026-03-19T08:11:52.713040",
+      "categories": {
+        "Universal Formatting": {
+          "passed": 14,
+          "total": 17,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "UF-01: Caption includes court name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-02: Caption includes case number",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-03: Caption includes party names",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-04: Document title present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-05: Signature block includes name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-06: Signature block includes address",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-07: Signature block includes phone",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-08: Date present in signature block or filing",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-09: Certificate of service present",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-10: Certificate of service includes date served",
+              "detail": "FIX: Certificate of service must state date of service"
+            },
+            {
+              "pass": true,
+              "rule": "UF-11: Certificate of service includes method of service",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-12: Certificate of service lists opposing party",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-13: No placeholder text remaining",
+              "detail": "FIX: Remove 9 placeholder(s): [ANDREW: SIGN AND DATE], [ANDREW: SIGN AND DATE], [ANDREW: SIGN AND DATE], [DATE OF FILING], [DATE OF FILING]"
+            },
+            {
+              "pass": true,
+              "rule": "UF-14: Pages appear consecutively numbered",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-15: Pro se status identified",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-16: Electronic signature format (/s/ Name) present",
+              "detail": "FIX: For e-filing, use '/s/ Andrew James Pigors' as electronic signature"
+            },
+            {
+              "pass": true,
+              "rule": "UF-17: Child referred to by initials only (MCR 8.119(H))",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Anti-Hallucination Guard": {
+          "passed": 8,
+          "total": 8,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "AH-01: No fabricated 'Jane Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-02: No fabricated 'Patricia Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-03: No wrong judge name 'Amy McNeill'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-04: Ronald Berry not listed as attorney (he is not one)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-05: Correct defendant name (Emily A. Watson, not Ann/M.)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-06: No fabricated '91% alienation score'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-07: No fabricated '9 CPS investigations'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-08: No wrong name 'Tiffany' for defendant",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Common Rejection Screening": {
+          "passed": 5,
+          "total": 5,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "CR-01: Case number present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-02: Document appears legible (no binary garbage)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-03: All files have substantive content",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-04: No bundled unrelated documents",
+              "detail": "WARN: Verify each file contains only ONE document type when converting to PDF"
+            },
+            {
+              "pass": true,
+              "rule": "CR-05: Required signature(s) present",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "F7: Custody Modification": {
+          "passed": 6,
+          "total": 6,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "F7-01: Case No. 2024-001507-DC in caption",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F7-02: Presumption of parenting time with BOTH parents cited",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F7-03: 'Clear and convincing evidence' standard cited for denial",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F7-04: 'Proper cause' or 'change of circumstances' threshold met",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F7-05: Best interest factors (MCL 722.23) addressed",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "F7-06: Child referred to as L.D.W. (initials only)",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "MiFILE E-Filing": {
+          "passed": 5,
+          "total": 7,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "EF-01: Each document is a separate file (not bundled)",
+              "detail": "PASS (13 separate .md files)"
+            },
+            {
+              "pass": false,
+              "rule": "EF-02: Electronic signature format: /s/ Andrew James Pigors",
+              "detail": "FIX: Add '/s/ Andrew James Pigors' as electronic signature for e-filing"
+            },
+            {
+              "pass": false,
+              "rule": "EF-03: PDF format noted (recommended for MiFILE)",
+              "detail": "WARN: Ensure documents are converted to PDF before uploading to MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-04: Descriptive file names with case number",
+              "detail": "WARN: Consider adding case number to file names for MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-05: File size under 25 MB each",
+              "detail": "WARN: Verify each PDF is under 25 MB (conservative: under 10 MB) before e-filing"
+            },
+            {
+              "pass": true,
+              "rule": "EF-06: Scanned documents at 300 dpi B&W/grayscale",
+              "detail": "WARN: If any scanned exhibits, ensure 300 dpi B&W or grayscale for legibility"
+            },
+            {
+              "pass": true,
+              "rule": "EF-07: No password-protected or restricted PDFs",
+              "detail": "WARN: Ensure no PDFs are password-protected before uploading to MiFILE"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package": "PKG_F8_PPO_TERMINATION",
+      "filing_type": "F8",
+      "filing_label": "PPO Termination",
+      "court": "14th Circuit",
+      "score": 83,
+      "verdict": "⚠️ CONDITIONAL GO — Address warnings before filing",
+      "timestamp": "2026-03-19T08:11:52.752511",
+      "categories": {
+        "Universal Formatting": {
+          "passed": 13,
+          "total": 17,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "UF-01: Caption includes court name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-02: Caption includes case number",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-03: Caption includes party names",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-04: Document title present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-05: Signature block includes name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-06: Signature block includes address",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-07: Signature block includes phone",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-08: Date present in signature block or filing",
+              "detail": "FIX: Add date in signature block (e.g., 'Dated: Month DD, YYYY')"
+            },
+            {
+              "pass": true,
+              "rule": "UF-09: Certificate of service present",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-10: Certificate of service includes date served",
+              "detail": "FIX: Certificate of service must state date of service"
+            },
+            {
+              "pass": true,
+              "rule": "UF-11: Certificate of service includes method of service",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-12: Certificate of service lists opposing party",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-13: No placeholder text remaining",
+              "detail": "FIX: Remove 6 placeholder(s): [ANDREW: SIGN AND DATE], [ANDREW: SIGN AND DATE], [ANDREW: SIGN AND DATE], _______________________________________, ______________________________"
+            },
+            {
+              "pass": true,
+              "rule": "UF-14: Pages appear consecutively numbered",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-15: Pro se status identified",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-16: Electronic signature format (/s/ Name) present",
+              "detail": "FIX: For e-filing, use '/s/ Andrew James Pigors' as electronic signature"
+            },
+            {
+              "pass": true,
+              "rule": "UF-17: Child referred to by initials only (MCR 8.119(H))",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Anti-Hallucination Guard": {
+          "passed": 8,
+          "total": 8,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "AH-01: No fabricated 'Jane Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-02: No fabricated 'Patricia Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-03: No wrong judge name 'Amy McNeill'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-04: Ronald Berry not listed as attorney (he is not one)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-05: Correct defendant name (Emily A. Watson, not Ann/M.)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-06: No fabricated '91% alienation score'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-07: No fabricated '9 CPS investigations'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-08: No wrong name 'Tiffany' for defendant",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Common Rejection Screening": {
+          "passed": 5,
+          "total": 5,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "CR-01: Case number present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-02: Document appears legible (no binary garbage)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-03: All files have substantive content",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-04: No bundled unrelated documents",
+              "detail": "WARN: Verify each file contains only ONE document type when converting to PDF"
+            },
+            {
+              "pass": true,
+              "rule": "CR-05: Required signature(s) present",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "MiFILE E-Filing": {
+          "passed": 5,
+          "total": 7,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "EF-01: Each document is a separate file (not bundled)",
+              "detail": "PASS (9 separate .md files)"
+            },
+            {
+              "pass": false,
+              "rule": "EF-02: Electronic signature format: /s/ Andrew James Pigors",
+              "detail": "FIX: Add '/s/ Andrew James Pigors' as electronic signature for e-filing"
+            },
+            {
+              "pass": false,
+              "rule": "EF-03: PDF format noted (recommended for MiFILE)",
+              "detail": "WARN: Ensure documents are converted to PDF before uploading to MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-04: Descriptive file names with case number",
+              "detail": "WARN: Consider adding case number to file names for MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-05: File size under 25 MB each",
+              "detail": "WARN: Verify each PDF is under 25 MB (conservative: under 10 MB) before e-filing"
+            },
+            {
+              "pass": true,
+              "rule": "EF-06: Scanned documents at 300 dpi B&W/grayscale",
+              "detail": "WARN: If any scanned exhibits, ensure 300 dpi B&W or grayscale for legibility"
+            },
+            {
+              "pass": true,
+              "rule": "EF-07: No password-protected or restricted PDFs",
+              "detail": "WARN: Ensure no PDFs are password-protected before uploading to MiFILE"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package": "PKG_F9_COA_BRIEF_ON_APPEAL",
+      "filing_type": "F9",
+      "filing_label": "COA Brief on Appeal",
+      "court": "Court of Appeals",
+      "score": 91,
+      "verdict": "✅ GO — Ready for filing (minor warnings may remain)",
+      "timestamp": "2026-03-19T08:11:52.789862",
+      "categories": {
+        "Universal Formatting": {
+          "passed": 14,
+          "total": 17,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "UF-01: Caption includes court name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-02: Caption includes case number",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-03: Caption includes party names",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-04: Document title present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-05: Signature block includes name",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-06: Signature block includes address",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-07: Signature block includes phone",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-08: Date present in signature block or filing",
+              "detail": "FIX: Add date in signature block (e.g., 'Dated: Month DD, YYYY')"
+            },
+            {
+              "pass": true,
+              "rule": "UF-09: Certificate of service present",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-10: Certificate of service includes date served",
+              "detail": "FIX: Certificate of service must state date of service"
+            },
+            {
+              "pass": true,
+              "rule": "UF-11: Certificate of service includes method of service",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-12: Certificate of service lists opposing party",
+              "detail": "PASS"
+            },
+            {
+              "pass": false,
+              "rule": "UF-13: No placeholder text remaining",
+              "detail": "FIX: Remove 5 placeholder(s): [ANDREW_REQUIRED: Review and supplement with specific hearing dates,\nmotions filed, and orders entered from your court records], [ANDREW_REQUIRED: Review and supplement with specific hearing dates,\nmotions filed, and orders entered from your court records], ___________________, ______________________________, _________________"
+            },
+            {
+              "pass": true,
+              "rule": "UF-14: Pages appear consecutively numbered",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-15: Pro se status identified",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-16: Electronic signature format (/s/ Name) present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "UF-17: Child referred to by initials only (MCR 8.119(H))",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Anti-Hallucination Guard": {
+          "passed": 8,
+          "total": 8,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "AH-01: No fabricated 'Jane Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-02: No fabricated 'Patricia Berry' (hallucination)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-03: No wrong judge name 'Amy McNeill'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-04: Ronald Berry not listed as attorney (he is not one)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-05: Correct defendant name (Emily A. Watson, not Ann/M.)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-06: No fabricated '91% alienation score'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-07: No fabricated '9 CPS investigations'",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "AH-08: No wrong name 'Tiffany' for defendant",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "Common Rejection Screening": {
+          "passed": 5,
+          "total": 5,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "CR-01: Case number present",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-02: Document appears legible (no binary garbage)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-03: All files have substantive content",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "CR-04: No bundled unrelated documents",
+              "detail": "WARN: Verify each file contains only ONE document type when converting to PDF"
+            },
+            {
+              "pass": true,
+              "rule": "CR-05: Required signature(s) present",
+              "detail": "PASS"
+            }
+          ]
+        },
+        "MiFILE E-Filing": {
+          "passed": 7,
+          "total": 7,
+          "checks": [
+            {
+              "pass": true,
+              "rule": "EF-01: Each document is a separate file (not bundled)",
+              "detail": "PASS (11 separate .md files)"
+            },
+            {
+              "pass": true,
+              "rule": "EF-02: Electronic signature format: /s/ Andrew James Pigors",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "EF-03: PDF format noted (recommended for MiFILE)",
+              "detail": "PASS"
+            },
+            {
+              "pass": true,
+              "rule": "EF-04: Descriptive file names with case number",
+              "detail": "WARN: Consider adding case number to file names for MiFILE"
+            },
+            {
+              "pass": true,
+              "rule": "EF-05: File size under 25 MB each",
+              "detail": "WARN: Verify each PDF is under 25 MB (conservative: under 10 MB) before e-filing"
+            },
+            {
+              "pass": true,
+              "rule": "EF-06: Scanned documents at 300 dpi B&W/grayscale",
+              "detail": "WARN: If any scanned exhibits, ensure 300 dpi B&W or grayscale for legibility"
+            },
+            {
+              "pass": true,
+              "rule": "EF-07: No password-protected or restricted PDFs",
+              "detail": "WARN: Ensure no PDFs are password-protected before uploading to MiFILE"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

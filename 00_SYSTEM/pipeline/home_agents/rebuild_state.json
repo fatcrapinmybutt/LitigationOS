@@ -1,0 +1,194 @@
+{
+  "steps_completed": [
+    "verify_environment",
+    "analyze",
+    "generate_csvs",
+    "build_graph",
+    "generate_filings",
+    "quality_check",
+    "package"
+  ],
+  "started": "2026-02-19T20:14:00.506557",
+  "errors": [],
+  "verify_environment_result": {
+    "python": "3.14.3",
+    "packages_ok": true,
+    "packages_missing": [],
+    "c_free_gb": 23.4,
+    "d_free_gb": 16.4,
+    "disk_ok": true,
+    "tool_pandoc": true,
+    "tool_rclone": true,
+    "tool_frankenstein": true,
+    "tool_fleet_v3": true,
+    "tool_ai_dispatch": true,
+    "tool_synthesizer": true,
+    "gemini": "NOT FOUND",
+    "ollama": "OK"
+  },
+  "verify_environment_elapsed": 21.0,
+  "analyze_result": {
+    "mcl_count": 1161,
+    "mcr_count": 1986,
+    "case_count": 200,
+    "persons": 13,
+    "dates": 751
+  },
+  "analyze_elapsed": 0.0,
+  "generate_csvs_result": {
+    "csvs": [
+      {
+        "name": "MASTER_CITATIONS.csv",
+        "size_kb": 32847.3
+      },
+      {
+        "name": "MASTER_VIOLATIONS.csv",
+        "size_kb": 26290.4
+      },
+      {
+        "name": "MASTER_TIMELINE.csv",
+        "size_kb": 21056.2
+      },
+      {
+        "name": "MASTER_PERSONS.csv",
+        "size_kb": 609.8
+      },
+      {
+        "name": "MASTER_EVIDENCE_INDEX.csv",
+        "size_kb": 2245.2
+      }
+    ]
+  },
+  "generate_csvs_elapsed": 0.0,
+  "build_graph_result": {
+    "artifacts": [
+      "neo4j_nodes.csv",
+      "neo4j_edges.csv",
+      "neo4j_constraints.cypher",
+      "bloom_perspective.json"
+    ]
+  },
+  "build_graph_elapsed": 0.0,
+  "generate_filings_result": {
+    "filings": [
+      {
+        "name": "02_COA_APPLICATION_LEAVE_APPEAL_v3.md",
+        "size_kb": 91.1
+      },
+      {
+        "name": "04_MOTION_DISQUALIFICATION_v3.md",
+        "size_kb": 56.0
+      },
+      {
+        "name": "05_MOTION_TERMINATE_PPO_v3.md",
+        "size_kb": 38.1
+      },
+      {
+        "name": "07_EMERGENCY_STAY_v3.md",
+        "size_kb": 35.8
+      },
+      {
+        "name": "08_MOTION_CONTEMPT_SHOW_CAUSE_v3.md",
+        "size_kb": 52.9
+      }
+    ],
+    "total_kb": 273.9
+  },
+  "generate_filings_elapsed": 0.0,
+  "quality_check_result": {
+    "results": [
+      {
+        "file": "02_COA_APPLICATION_LEAVE_APPEAL_v3.md",
+        "score": 90,
+        "grade": "A",
+        "checks": {
+          "caption": true,
+          "case_number": true,
+          "mcl_citations": 88,
+          "mcr_citations": 85,
+          "case_citations": 61,
+          "prayer_relief": true,
+          "verification": true,
+          "exhibits": 0,
+          "size_kb": 89.8,
+          "verify_tags": 164
+        }
+      },
+      {
+        "file": "04_MOTION_DISQUALIFICATION_v3.md",
+        "score": 86,
+        "grade": "A",
+        "checks": {
+          "caption": true,
+          "case_number": true,
+          "mcl_citations": 43,
+          "mcr_citations": 45,
+          "case_citations": 26,
+          "prayer_relief": true,
+          "verification": true,
+          "exhibits": 0,
+          "size_kb": 55.1,
+          "verify_tags": 89
+        }
+      },
+      {
+        "file": "05_MOTION_TERMINATE_PPO_v3.md",
+        "score": 82,
+        "grade": "A",
+        "checks": {
+          "caption": true,
+          "case_number": true,
+          "mcl_citations": 54,
+          "mcr_citations": 14,
+          "case_citations": 14,
+          "prayer_relief": true,
+          "verification": true,
+          "exhibits": 0,
+          "size_kb": 37.5,
+          "verify_tags": 91
+        }
+      },
+      {
+        "file": "07_EMERGENCY_STAY_v3.md",
+        "score": 91,
+        "grade": "A",
+        "checks": {
+          "caption": true,
+          "case_number": true,
+          "mcl_citations": 19,
+          "mcr_citations": 19,
+          "case_citations": 12,
+          "prayer_relief": true,
+          "verification": true,
+          "exhibits": 9,
+          "size_kb": 35.2,
+          "verify_tags": 106
+        }
+      },
+      {
+        "file": "08_MOTION_CONTEMPT_SHOW_CAUSE_v3.md",
+        "score": 85,
+        "grade": "A",
+        "checks": {
+          "caption": true,
+          "case_number": true,
+          "mcl_citations": 37,
+          "mcr_citations": 21,
+          "case_citations": 13,
+          "prayer_relief": true,
+          "verification": true,
+          "exhibits": 0,
+          "size_kb": 51.7,
+          "verify_tags": 222
+        }
+      }
+    ],
+    "average_score": 86.8
+  },
+  "quality_check_elapsed": 0.0,
+  "package_result": {
+    "zip_path": "D:/TEMP\\LitigationOS_Package_20260219_201423.zip",
+    "size_mb": 0.2
+  },
+  "package_elapsed": 0.9
+}

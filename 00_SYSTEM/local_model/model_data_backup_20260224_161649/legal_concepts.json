@@ -1,0 +1,115 @@
+{
+  "best_interest_factors": {
+    "title": "Best Interest of the Child Factors",
+    "authority": "MCL 722.23",
+    "factors": [
+      "(a) Love, affection, and emotional ties",
+      "(b) Capacity to provide love, affection, and guidance",
+      "(c) Capacity to provide food, clothing, medical care",
+      "(d) Length of time in stable, satisfactory environment",
+      "(e) Permanence of the family unit",
+      "(f) Moral fitness of the parties",
+      "(g) Mental and physical health of the parties",
+      "(h) Home, school, and community record of the child",
+      "(i) Reasonable preference of the child",
+      "(j) Willingness to facilitate close relationship with other parent",
+      "(k) Domestic violence",
+      "(l) Any other relevant factor"
+    ]
+  },
+  "established_custodial_environment": {
+    "title": "Established Custodial Environment",
+    "authority": "MCL 722.27(1)(c)",
+    "description": "An established custodial environment exists if over an appreciable time the child naturally looks to the custodian for guidance, discipline, necessities, and parental comfort. Clear and convincing evidence required to change."
+  },
+  "parental_alienation": {
+    "title": "Parental Alienation",
+    "authority": "MCL 722.23(j), Lombardo v Lombardo",
+    "description": "Factor (j) \u2014 willingness to facilitate a close relationship with the other parent. Alienating behavior can include: limiting contact, disparaging the other parent, interfering with parenting time, coaching the child, making false allegations."
+  },
+  "change_of_circumstances": {
+    "title": "Change of Circumstances / Proper Cause",
+    "authority": "MCL 722.27(1)(c), Vodvarka v Grasber",
+    "description": "Before modifying custody, court must find proper cause or change of circumstances. Vodvarka factors: (1) significant change since last order, (2) affects child welfare, (3) not foreseeable at time of last order."
+  },
+  "friend_of_court": {
+    "title": "Friend of the Court",
+    "authority": "MCL 552.501 et seq.",
+    "description": "FOC investigates custody and parenting time, makes recommendations, enforces support orders. Parties may object to FOC recommendations. Objection hearing is de novo."
+  },
+  "summary_disposition": {
+    "title": "Summary Disposition",
+    "authority": "MCR 2.116(C)(8), (C)(10)",
+    "description": "Motion to dismiss: (C)(8) failure to state a claim, (C)(10) no genuine issue of material fact. Moving party has burden of supporting its motion. Court reviews all evidence in light most favorable to nonmoving party."
+  },
+  "disqualification": {
+    "title": "Judicial Disqualification",
+    "authority": "MCR 2.003(C)",
+    "description": "Judge must disqualify when: (1) biased or prejudiced, (2) personal knowledge of disputed facts, (3) prior involvement, (4) financial interest, (5) appearance of impropriety. Motion must be filed timely."
+  },
+  "ppo": {
+    "title": "Personal Protection Order",
+    "authority": "MCL 600.2950, MCL 600.2950a",
+    "description": "Domestic PPO (2950): stalking, harassment, assault. Non-domestic (2950a): stalking. Ex parte PPO can be issued without hearing. Respondent has right to hearing to modify/terminate. Violation is contempt."
+  },
+  "appeal_of_right": {
+    "title": "Appeal of Right to COA",
+    "authority": "MCR 7.204, MCR 7.205",
+    "description": "Appeal of right: 21 days from final order to file claim of appeal. Leave to appeal: 21 days from interlocutory order. Requires: claim of appeal, docketing statement, transcript order, brief within 56 days."
+  },
+  "superintending_control": {
+    "title": "Superintending Control",
+    "authority": "MCR 3.302, MCL 600.1701",
+    "description": "Complaint for superintending control: extraordinary remedy when no other adequate legal remedy. Filed in circuit court over lower court, or COA over circuit court. Must show clear legal right to relief."
+  },
+  "motion_to_compel": {
+    "title": "Motion to Compel Discovery",
+    "authority": "MCR 2.313(A)",
+    "description": "When a party fails to answer interrogatories, produce documents, or comply with discovery requests, the requesting party may file a motion to compel discovery under MCR 2.313(A). The motion must certify that the movant in good faith conferred or attempted to confer with the non-responding party. If granted, the court shall require the losing party to pay reasonable expenses including attorney fees, unless substantially justified. Sanctions under MCR 2.313(B) for failure to comply with a court order compelling discovery."
+  },
+  "service_of_process": {
+    "title": "Service of Process",
+    "authority": "MCR 2.105",
+    "description": "Service of process must comply with MCR 2.105. Methods include: (A) personal service on individual, (B) service at usual residence, (C) registered mail with acknowledgment, (D) service on agent. MCR 2.104 governs who may serve process. MCR 2.107 governs service of pleadings and other papers after initial service. Proof of service must be filed with the court per MCR 2.104(A)(3)."
+  },
+  "parenting_time": {
+    "title": "Parenting Time",
+    "authority": "MCL 722.27a",
+    "description": "Under MCL 722.27a, parenting time shall be granted in accordance with the best interests of the child. There is a presumption that it is in the child's best interest to have a strong relationship with both parents. Parenting time may only be denied or restricted if it would endanger the child's physical, mental, or emotional health. MCL 722.27a(7) lists specific parenting time factors."
+  },
+  "contempt_of_court": {
+    "title": "Contempt of Court",
+    "authority": "MCR 3.606, MCL 600.1701",
+    "description": "Civil contempt: failure to comply with a court order. Purpose is coercive \u2014 to compel compliance. The contemnor 'carries the keys to the jail.' Criminal contempt: punitive for past disobedience. Requires proof beyond reasonable doubt. Due process requires notice and opportunity to be heard. In custody context, often used to enforce parenting time orders."
+  },
+  "due_process_custody": {
+    "title": "Due Process in Custody Proceedings",
+    "authority": "US Const Amend XIV, MI Const Art I \u00a717",
+    "description": "Parents have a fundamental liberty interest in the care, custody, and control of their children (Troxel v Granville, 530 US 57). Due process requires: (1) adequate notice, (2) opportunity to be heard, (3) impartial decision-maker. Mathews v Eldridge balancing test applies. Termination or severe restriction of parental rights requires heightened procedural protections. Stanley v Illinois, 405 US 645 (1972)."
+  },
+  "guardian_ad_litem": {
+    "title": "Guardian ad Litem",
+    "authority": "MCR 3.915, MCL 722.24",
+    "description": "A guardian ad litem (GAL) may be appointed in custody cases under MCL 722.24. The GAL represents the child's best interests, not the child's wishes. MCR 3.915 governs GAL duties in juvenile proceedings. GAL has access to all relevant information and must file a written report. Parties may cross-examine the GAL."
+  },
+  "hearsay_exceptions": {
+    "title": "Hearsay Exceptions",
+    "authority": "MRE 803, MRE 804",
+    "description": "MRE 803 lists exceptions regardless of declarant availability: (1) present sense impression, (2) excited utterance, (3) state of mind, (4) medical diagnosis, (5) recorded recollection, (6) business records, (8) public records. MRE 804 exceptions require declarant unavailability: (1) former testimony, (2) dying declaration, (3) statement against interest, (4) forfeiture by wrongdoing. MRE 803A covers tender-years exceptions for child abuse cases."
+  },
+  "interrogatories_discovery": {
+    "title": "Interrogatories & Discovery Requests",
+    "authority": "MCR 2.309, MCR 2.302",
+    "description": "MCR 2.309 governs interrogatories: written questions served on a party requiring written answers under oath. Responses due within 28 days of service. Objections must be stated with specificity. MCR 2.302 defines scope of discovery — any nonprivileged matter relevant to issues in the action. MCR 2.310 governs requests for production of documents. MCR 2.313(A) provides motion to compel when discovery is refused."
+  },
+  "foc_objections": {
+    "title": "FOC Recommendation Objections",
+    "authority": "MCL 552.507, MCR 3.218",
+    "description": "A party may object to a Friend of the Court recommendation within 21 days of receiving it (MCL 552.507). The objection triggers a de novo hearing before the judge. The FOC recommendation is not binding — the court makes an independent determination. MCR 3.218 governs referee hearings. The objecting party bears the burden at the de novo hearing."
+  },
+  "appeal_deadline": {
+    "title": "Appeal Filing Deadlines",
+    "authority": "MCR 7.204(A)(1), MCR 7.205",
+    "description": "Appeal of right: claim of appeal must be filed within 21 days of entry of the final order (MCR 7.204(A)(1)). This deadline is jurisdictional and cannot be extended. Application for leave to appeal: within 21 days of entry of order for interlocutory orders (MCR 7.205). Late applications may be considered for 6 months after entry of order. Docketing statement required within 14 days of filing claim of appeal."
+  }
+}

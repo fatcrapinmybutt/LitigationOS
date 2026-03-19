@@ -1,0 +1,15 @@
+[
+  {
+    "pair_id": "CP::F1::TR::TRX1::12:3-9",
+    "lane_scope": "PT",
+    "proposition_key": "effect|finds|incident|library|parenting|remains|suspension|temporary",
+    "left_source": "ORDER_FINDING",
+    "left_ref": "F1",
+    "left_text": "The court finds temporary suspension of parenting time remains in effect after the library incident.",
+    "right_source": "TRANSCRIPT",
+    "right_ref": "TR::TRX1::12:3-9",
+    "right_text": "The court is addressing parenting time and the temporary suspension. The child was not present during the library incident.",
+    "confidence": 0.65,
+    "created_at": "2026-02-23T02:36:20Z"
+  }
+]

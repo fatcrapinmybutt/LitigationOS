@@ -1,0 +1,243 @@
+[
+  {
+    "risk_type_id": "MEEK3_PPO_EXPARTE_NO_SPECIFIC_REASONS",
+    "risk_class": "curable_defect",
+    "severity": 70,
+    "title": "PPO ex parte order lacks specific reasons / record of nonwritten support",
+    "trigger": {
+      "event_kind": "OrderEvent",
+      "must_contain_any": [
+        "ex parte",
+        "personal protection order",
+        "ppo"
+      ],
+      "must_not_contain_any": [
+        "specific reasons"
+      ]
+    },
+    "fastest_cure": "Motion to modify/terminate or request hearing; demand written reasons and record memorialization",
+    "cure_cost": "medium",
+    "cure_deadline_clock": null,
+    "cure_minimum_packet": [
+      "Copy of PPO petition/order",
+      "Transcript/record memo issue",
+      "Proposed order / motion"
+    ],
+    "tracks": [
+      "MEEK3"
+    ],
+    "authority_refs": [
+      "MCR 3.705(A)(2)"
+    ]
+  },
+  {
+    "risk_type_id": "MEEK3_PPO_DENIAL_NO_HEARING_REQUEST",
+    "risk_class": "dismissal_risk",
+    "severity": 55,
+    "title": "PPO petition denied; hearing request not made within 21 days",
+    "trigger": {
+      "event_kind": "OrderEvent",
+      "must_contain_any": [
+        "denying",
+        "refuses to grant",
+        "ppo"
+      ],
+      "must_contain_any_2": [
+        "21 days"
+      ]
+    },
+    "fastest_cure": "File hearing request within 21 days of denial order entry",
+    "cure_cost": "low",
+    "cure_deadline_clock": "PPO_HEARING_REQUEST_21D",
+    "cure_minimum_packet": [
+      "Denial order",
+      "Hearing request"
+    ],
+    "tracks": [
+      "MEEK3"
+    ],
+    "authority_refs": [
+      "MCR 3.705(A)(5)"
+    ]
+  },
+  {
+    "risk_type_id": "MEEK3_APPEAL_RIGHT_FROM_PPO_AFTER_HEARING",
+    "risk_class": "jurisdictional_fatal",
+    "severity": 85,
+    "title": "Appeal-of-right timing risk for PPO orders appealable under PPO appeal rule",
+    "trigger": {
+      "event_kind": "OrderEvent",
+      "must_contain_any": [
+        "ppo",
+        "personal protection order"
+      ],
+      "may_contain_any": [
+        "after a hearing",
+        "granting",
+        "denying",
+        "resc...modify"
+      ]
+    },
+    "fastest_cure": "File claim of appeal timely; compute from 'entry' per MCR 7.204 definitions",
+    "cure_cost": "medium",
+    "cure_deadline_clock": "COA_CLAIM_OF_APPEAL_21D",
+    "cure_minimum_packet": [
+      "Appealed order",
+      "Proof of entry date/ROA",
+      "Claim of appeal + fee/waiver"
+    ],
+    "tracks": [
+      "MEEK3"
+    ],
+    "authority_refs": [
+      "MCR 3.709(B)",
+      "MCR 7.204(A)(1)"
+    ]
+  },
+  {
+    "risk_type_id": "MEEK4_DISQUAL_MOTION_TIMELINESS",
+    "risk_class": "curable_defect",
+    "severity": 65,
+    "title": "Judicial disqualification motion may be untimely",
+    "trigger": {
+      "event_kind": "FilingEvent",
+      "must_contain_any": [
+        "disqual",
+        "recus"
+      ],
+      "date_window_days": 14
+    },
+    "fastest_cure": "File within 14 days of discovering grounds (or forthwith if within 14 days of hearing/trial)",
+    "cure_cost": "low",
+    "cure_deadline_clock": "DISQUAL_14D",
+    "cure_minimum_packet": [
+      "Motion",
+      "Affidavit",
+      "Grounds facts + exhibits"
+    ],
+    "tracks": [
+      "MEEK4"
+    ],
+    "authority_refs": [
+      "MCR 2.003(D)(1)(a)"
+    ]
+  },
+  {
+    "risk_type_id": "COA_DOCKETING_STATEMENT_MISSING",
+    "risk_class": "dismissal_risk",
+    "severity": 80,
+    "title": "COA docketing statement missing/late",
+    "trigger": {
+      "event_kind": "FilingEvent",
+      "must_contain_any": [
+        "claim of appeal"
+      ],
+      "missing_followup": "docketing statement"
+    },
+    "fastest_cure": "File docketing statement; ensure service on opposing parties",
+    "cure_cost": "low",
+    "cure_deadline_clock": "COA_DOCKETING_STATEMENT_28D",
+    "cure_minimum_packet": [
+      "Docketing statement form",
+      "Proof of service"
+    ],
+    "tracks": [
+      "MEEK4"
+    ],
+    "authority_refs": [
+      "MCR 7.212(H)"
+    ]
+  },
+  {
+    "risk_type_id": "COA_TRANSCRIPT_CERTIFICATE_MISSING",
+    "risk_class": "record_incomplete",
+    "severity": 75,
+    "title": "Transcript certificate/statement not filed; transcript ordering status unclear",
+    "trigger": {
+      "event_kind": "FilingEvent",
+      "must_contain_any": [
+        "claim of appeal",
+        "application for leave"
+      ],
+      "missing_followup": "court reporter certificate"
+    },
+    "fastest_cure": "File court reporter/recorder certificate or transcript-order statement; follow with certificate within 7 days of ordering",
+    "cure_cost": "low",
+    "cure_deadline_clock": "TRANSCRIPT_CERT_7D_AFTER_ORDER",
+    "cure_minimum_packet": [
+      "Transcript order confirmation",
+      "Certificate or statement",
+      "Proof of payment/security"
+    ],
+    "tracks": [
+      "MEEK4"
+    ],
+    "authority_refs": [
+      "MCR 7.210(B)(3)(a)",
+      "MCR 7.210(B)(3)(a)-(b)"
+    ]
+  },
+  {
+    "risk_type_id": "MEEK3_RECONSIDERATION_LATE",
+    "risk_class": "admin_return_without_docketing",
+    "severity": 70,
+    "title": "Motion for reconsideration filed late; clerk rejection risk",
+    "trigger": {
+      "event_kind": "FilingEvent",
+      "must_contain_any": [
+        "reconsideration"
+      ],
+      "date_window_days": 21
+    },
+    "fastest_cure": "File within 21 days after entry of order deciding the motion",
+    "cure_cost": "low",
+    "cure_deadline_clock": "RECONSIDERATION_21D",
+    "cure_minimum_packet": [
+      "Motion for reconsideration",
+      "Copy of order/opinion",
+      "Authorities + facts"
+    ],
+    "tracks": [
+      "MEEK2",
+      "MEEK3",
+      "MEEK4"
+    ],
+    "authority_refs": [
+      "MCR 2.119(F)(1)"
+    ]
+  },
+  {
+    "risk_type_id": "JTC_REQUEST_NOT_VERIFIED",
+    "risk_class": "curable_defect",
+    "severity": 60,
+    "title": "JTC request for investigation not verified on oath",
+    "trigger": {
+      "event_kind": "FilingEvent",
+      "must_contain_any": [
+        "judicial tenure commission",
+        "jtc",
+        "request for investigation"
+      ],
+      "must_not_contain_any": [
+        "verified",
+        "oath",
+        "sworn"
+      ]
+    },
+    "fastest_cure": "Submit verified request describing misconduct time/place; sign; file with administrator",
+    "cure_cost": "low",
+    "cure_deadline_clock": null,
+    "cure_minimum_packet": [
+      "Verified request",
+      "Exhibits index",
+      "Timeline summary"
+    ],
+    "tracks": [
+      "MEEK4"
+    ],
+    "authority_refs": [
+      "MCR 9.220(A)",
+      "MCR 9.112(B)"
+    ]
+  }
+]

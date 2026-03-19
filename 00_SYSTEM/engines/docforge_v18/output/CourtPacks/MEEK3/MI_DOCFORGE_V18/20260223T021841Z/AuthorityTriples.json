@@ -1,0 +1,15 @@
+[
+  {
+    "id": 4,
+    "authority_family": "MCL",
+    "citation": "MCL 600.2950",
+    "proposition": "PPO issuance, modification, and enforcement framework resides in statute.",
+    "source_url": "https://www.legislature.mi.gov/doc.aspx?mcl-600.2950",
+    "pinpoint": null,
+    "official_text_exact": null,
+    "graft_status": "PARTIAL",
+    "resolver_recipe": "Resolve exact text + pinpoint from official MI source for MCL 600.2950",
+    "lane": "MEEK3",
+    "created_at": "2026-02-23T02:18:41Z"
+  }
+]

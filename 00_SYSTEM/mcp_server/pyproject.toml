@@ -1,0 +1,17 @@
+[project]
+name = "litigation-context-mcp"
+version = "1.0.0"
+description = "MCP server that permanently stores litigation context extracted from PDF files"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "pymupdf>=1.24.0",
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+litigation-context-mcp = "litigation_context_mcp.server:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"

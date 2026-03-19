@@ -1,0 +1,25 @@
+# MI_WARCHEST topic ontology (edit freely)
+scope_guard:
+  exclude_keywords:
+    - "shady oaks"
+    - "housing"
+    - "landlord"
+    - "lot rent"
+    - "mobile home park"
+topics:
+  MEEK2_CUSTODY_PARENTING_TIME:
+    synonyms: ["custody", "parenting time", "parenting-time", "FOC", "referee", "best interests", "modification", "suspension"]
+  MEEK3_PPO_CONTEMPT:
+    synonyms: ["ppo", "personal protection order", "no contact", "show cause", "show-cause", "contempt", "violation", "jail", "sentence"]
+  MEEK4_JUDICIAL_CONDUCT_JTC:
+    synonyms: ["jtc", "judicial misconduct", "canon", "disqualify", "disqualification", "recusal", "bias", "prejudice", "superintending control"]
+  MENTAL_HEALTH_RIGHTS:
+    synonyms: ["mental health", "evaluation", "psych", "therapy", "records", "confidential", "hipaa", "diagnosis"]
+  CONSTITUTIONAL_RIGHTS:
+    synonyms: ["due process", "equal protection", "constitution", "bill of rights", "fundamental right", "parental rights"]
+  EVIDENCE_MRE:
+    synonyms: ["mre", "hearsay", "authenticate", "authentication", "best evidence", "relevance", "foundation", "business record"]
+  PROCEDURE_MCR:
+    synonyms: ["mcr", "motion", "service", "notice", "hearing", "order", "filing", "appeal", "leave"]
+  STATUTES_MCL:
+    synonyms: ["mcl", "statute", "compiled laws", "chapter", "section"]

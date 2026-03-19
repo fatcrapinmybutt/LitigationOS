@@ -1,196 +1,101 @@
 {
-  "generated": "2026-03-18T23:20:16.648639",
-  "tool": "Witness List Compiler (#69)",
-  "known_witnesses": 8,
-  "db_mined": 8,
+  "tool": "#213 \u2014 Witness List Compiler",
+  "generated": "2026-03-19T08:09:03.336029",
+  "case_numbers": [
+    "2024-001507-DC",
+    "2023-5907-PP"
+  ],
+  "court": "14th Circuit Court, Family Division, Muskegon County",
+  "total_witnesses": 6,
+  "known_witnesses": 6,
+  "db_discovered_witnesses": 0,
+  "db_stats": {
+    "tables": 600,
+    "distinct_speakers": 4,
+    "discovered_witnesses": 2
+  },
   "witnesses": [
     {
       "name": "Andrew James Pigors",
       "role": "Plaintiff / Father",
-      "type": "Fact Witness / Party",
-      "contact": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 \u00b7 (231) 903-5690",
-      "anticipated_testimony": [
-        "Parental fitness and relationship with L.D.W.",
-        "Emily Watson fabricated allegations",
-        "Ex-parte orders issued without notice or hearing",
-        "Judge McNeill bias and denial of due process",
-        "Financial hardship from litigation",
-        "Housing discrimination by Shady Oaks"
-      ],
-      "relevant_filings": [
-        "F1",
-        "F2",
-        "F3",
-        "F4",
-        "F5",
-        "F6",
-        "F7",
-        "F8",
-        "F9",
-        "F10"
+      "designation": "Friendly",
+      "contact": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 | (231) 903-5690",
+      "subpoena_required": false,
+      "expected_testimony": [
+        "Parenting history and relationship with L.D.W.",
+        "Interference with parenting time by Defendant",
+        "False allegations made against him",
+        "Impact of ex parte orders on parent-child relationship",
+        "Evidence of Defendant's perjury (straw incident, staged photos)",
+        "Ronald Berry's unauthorized practice of law activities"
       ]
     },
     {
       "name": "Emily A. Watson",
       "role": "Defendant / Mother",
-      "type": "Adverse Witness / Party",
+      "designation": "Hostile",
       "contact": "2160 Garland Drive, Norton Shores, MI 49441",
-      "anticipated_testimony": [
-        "Basis for PPO allegations (cross-examine for inconsistencies)",
-        "Relationship with Ronald Berry (timeline, cohabitation)",
-        "Contact denial \u2014 45+ days to respond to birthday messages",
-        "Knowledge of fraud in filings"
-      ],
-      "relevant_filings": [
-        "F1",
-        "F2",
-        "F4",
-        "F7"
+      "subpoena_required": false,
+      "expected_testimony": [
+        "Basis for allegations against Plaintiff",
+        "Circumstances of straw incident and photograph evidence",
+        "Relationship with Ronald Berry and his involvement in litigation",
+        "Communications with Jennifer Barnes regarding withdrawal",
+        "Compliance with court-ordered parenting time",
+        "Financial circumstances and support arrangements"
       ]
     },
     {
-      "name": "Ronald T. Berry",
-      "role": "Emily's Partner / Co-Defendant (F4)",
-      "type": "Adverse Witness",
-      "contact": "Believed at 2160 Garland Drive, Norton Shores, MI 49441 \u2014 VERIFY",
-      "anticipated_testimony": [
-        "Role in coaching Emily's filings",
-        "Unauthorized practice of law (if applicable)",
-        "Interference with parental relationship",
-        "Text messages and communications with Andrew"
-      ],
-      "relevant_filings": [
-        "F2",
-        "F4",
-        "F10"
-      ]
-    },
-    {
-      "name": "Jennifer Barnes (P55406)",
-      "role": "Emily's Former Attorney (WITHDREW)",
-      "type": "Fact Witness",
-      "contact": "Barnes Law Firm PLLC, 880 Jefferson St Ste B, Muskegon, MI 49440",
-      "anticipated_testimony": [
-        "Knowledge of false statements in filings",
-        "Reason for withdrawal",
-        "Communications with Emily re: custody strategy",
-        "Role in ex-parte proceedings"
-      ],
-      "relevant_filings": [
-        "F2",
-        "F4",
-        "F10"
+      "name": "Ronald Berry",
+      "role": "Emily's boyfriend / domestic partner (NON-ATTORNEY)",
+      "designation": "Hostile",
+      "contact": "[VERIFY \u2014 believed to reside with Emily Watson at Garland Drive address]",
+      "subpoena_required": true,
+      "expected_testimony": [
+        "Involvement in preparing court filings (UPL evidence)",
+        "Legal coaching and advice given to Emily Watson",
+        "Courthouse appearances on behalf of Emily Watson",
+        "Communications with Emily Watson about litigation strategy",
+        "Role in the household and relationship with L.D.W."
       ]
     },
     {
       "name": "Pamela Rusco",
-      "role": "Judicial Secretary to Judge McNeill",
-      "type": "Fact Witness",
-      "contact": "14th Circuit Court, 990 Terrace St, Muskegon, MI 49442",
-      "anticipated_testimony": [
-        "Communication of ex-parte information to Judge McNeill",
-        "Processing of emergency motions and orders",
-        "Handling of warrant-related correspondence",
-        "Office procedures for parenting time cases"
-      ],
-      "relevant_filings": [
-        "F3",
-        "F4",
-        "F6"
+      "role": "Friend of the Court (FOC)",
+      "designation": "Neutral / Potentially Hostile",
+      "contact": "990 Terrace St, Muskegon, MI 49442",
+      "subpoena_required": true,
+      "expected_testimony": [
+        "FOC recommendations regarding custody and parenting time",
+        "Warrant email and enforcement actions",
+        "Investigation findings and reports",
+        "Basis for any recommendations adverse to Plaintiff"
       ]
     },
     {
-      "name": "Hon. Jenny L. McNeill",
-      "role": "Respondent Judge",
-      "type": "Respondent (not a traditional witness)",
-      "contact": "14th Circuit Court, Family Division, 990 Terrace St, Muskegon, MI 49442",
-      "anticipated_testimony": [
-        "Named respondent in F3, F5, F6",
-        "Basis for ex-parte orders without hearing",
-        "Relationship with FOC and Pamela Rusco",
-        "Pattern of rulings against father"
-      ],
-      "relevant_filings": [
-        "F3",
-        "F4",
-        "F5",
-        "F6"
+      "name": "Jennifer Barnes (P55406)",
+      "role": "Former Attorney for Defendant (WITHDREW)",
+      "designation": "Neutral",
+      "contact": "Barnes Law Firm PLLC, 880 Jefferson St Ste B, Muskegon, MI 49440",
+      "subpoena_required": true,
+      "expected_testimony": [
+        "Circumstances of withdrawal from representation",
+        "Knowledge of Ronald Berry's involvement in case",
+        "Awareness of false allegations or perjury by client",
+        "Communications regarding litigation strategy (to extent not privileged)"
       ]
     },
     {
-      "name": "Albert Watson",
-      "role": "Emily's Relative",
-      "type": "Fact Witness (favorable to Andrew)",
-      "contact": "[UNKNOWN \u2014 VERIFY with Andrew]",
-      "anticipated_testimony": [
-        "Key statement contradicting Emily's allegations",
-        "Family knowledge of Emily's fabrications",
-        "Direct observations of Andrew's parenting"
-      ],
-      "relevant_filings": [
-        "F1",
-        "F2",
-        "F7"
-      ],
-      "notes": "SMOKING GUN witness \u2014 his statement contradicts Emily's narrative"
-    },
-    {
-      "name": "Shady Oaks Management / Cricklewood Property Management",
-      "role": "Corporate Defendant (F2)",
-      "type": "Corporate Witness (30(b)(6))",
-      "contact": "Check LARA: lara.michigan.gov/colaentitysearch",
-      "anticipated_testimony": [
-        "Basis for eviction / lease non-renewal",
-        "Knowledge of PPO when making housing decisions",
-        "FHA compliance policies",
-        "Communications with Emily Watson about Andrew"
-      ],
-      "relevant_filings": [
-        "F2",
-        "F4"
+      "name": "HealthWest Caseworker(s)",
+      "role": "Mental health evaluator(s)",
+      "designation": "Neutral",
+      "contact": "[VERIFY \u2014 HealthWest, Muskegon County]",
+      "subpoena_required": true,
+      "expected_testimony": [
+        "Mental health evaluations of parties and/or L.D.W.",
+        "Clinical observations and recommendations",
+        "Compliance with treatment recommendations"
       ]
-    }
-  ],
-  "db_witnesses": [
-    {
-      "name": "COURT",
-      "source": "evidence_quotes",
-      "mentions": 160
-    },
-    {
-      "name": "WATSON",
-      "source": "evidence_quotes",
-      "mentions": 21
-    },
-    {
-      "name": "PIGORS",
-      "source": "evidence_quotes",
-      "mentions": 15
-    },
-    {
-      "name": "Emily Watson",
-      "source": "detected_contradictions",
-      "mentions": 660
-    },
-    {
-      "name": "Judge McNeill",
-      "source": "detected_contradictions",
-      "mentions": 253
-    },
-    {
-      "name": "Tiffany Watson",
-      "source": "detected_contradictions",
-      "mentions": 144
-    },
-    {
-      "name": "Andrew Pigors",
-      "source": "detected_contradictions",
-      "mentions": 2
-    },
-    {
-      "name": "Lori Watson",
-      "source": "detected_contradictions",
-      "mentions": 2
     }
   ]
 }

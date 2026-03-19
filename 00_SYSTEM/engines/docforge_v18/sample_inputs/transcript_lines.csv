@@ -1,0 +1,9 @@
+transcript_id,page,line_start,line_end,speaker,lane,text
+T1,12,3,9,COURT,MEEK2,The court is continuing the parenting time suspension pending assessment.
+T1,13,1,6,PETITIONER,MEEK2,I object to continuing parenting time suspension without hearing my evidence.
+T1,15,4,12,COURT,MEEK3,A show cause on PPO contact allegations remains set and contempt sanctions are possible.
+T1,16,2,8,PETITIONER,MEEK3,I deny harassment and deny stalking; I requested only parenting time contact.
+T2,5,5,14,COURT,MEEK4,The judge notes the assessment and recusal request issues in the record.
+T2,6,1,9,PETITIONER,MEEK4,I raised bias and canon concerns and asked the court to review my exhibits.
+T3,7,2,11,MANAGER,MEEK1,Rent and utility charges were discussed at the housing office concerning the lease.
+T3,8,3,10,PETITIONER,MEEK1,I deny owing the added utility and sewage charges under the lease terms.

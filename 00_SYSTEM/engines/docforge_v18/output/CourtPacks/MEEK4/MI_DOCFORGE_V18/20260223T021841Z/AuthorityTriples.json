@@ -1,0 +1,41 @@
+[
+  {
+    "id": 6,
+    "authority_family": "MCR",
+    "citation": "MCR 2.107",
+    "proposition": "Service of papers and proof-of-service timing affect deadline anchors.",
+    "source_url": "https://www.courts.michigan.gov/",
+    "pinpoint": null,
+    "official_text_exact": null,
+    "graft_status": "PARTIAL",
+    "resolver_recipe": "Resolve exact text + pinpoint from official MI source for MCR 2.107",
+    "lane": "MEEK4",
+    "created_at": "2026-02-23T02:18:41Z"
+  },
+  {
+    "id": 2,
+    "authority_family": "MCR",
+    "citation": "MCR 7.204",
+    "proposition": "COA claim of appeal timeliness and filing requirements apply to appealable orders.",
+    "source_url": "https://www.courts.michigan.gov/",
+    "pinpoint": null,
+    "official_text_exact": null,
+    "graft_status": "PARTIAL",
+    "resolver_recipe": "Verify exact subrule and timeline from official Michigan court rules source.",
+    "lane": "MEEK4",
+    "created_at": "2026-02-23T02:18:41Z"
+  },
+  {
+    "id": 5,
+    "authority_family": "MRE",
+    "citation": "MRE 401",
+    "proposition": "Relevant evidence is evidence having any tendency to make a consequential fact more or less probable.",
+    "source_url": "https://www.courts.michigan.gov/",
+    "pinpoint": "401",
+    "official_text_exact": "Evidence is relevant if it has any tendency to make a fact more or less probable than it would be without the evidence and the fact is of consequence in determining the action.",
+    "graft_status": "RESOLVED_VERIFIED",
+    "resolver_recipe": "Resolve exact text + pinpoint from official MI source for MRE 401",
+    "lane": "MEEK4",
+    "created_at": "2026-02-23T02:18:41Z"
+  }
+]

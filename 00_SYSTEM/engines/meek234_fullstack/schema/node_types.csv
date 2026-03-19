@@ -1,0 +1,22 @@
+node_type,description
+Case,Case-level container (custody/PPO/JTC).
+Court,"Court / tribunal (e.g., 14th Circuit, 60th District, COA, MSC, JTC)."
+Party,Person/organization (bi-temporal).
+Docket,Docket container for a case.
+ROAEntry,Register of Actions entry.
+Event,Generic event (Order/Service/Hearing/Filing/Communication/ClerkNotice).
+Order,Order object (signed/entered/served/effective).
+Service,Service event/proof.
+Hearing,Hearing/session.
+Motion,Motion/filing.
+Communication,Communication artifact (app/email/text/call).
+EvidenceAtom,Provenance slice from a document.
+Transcript,Transcript artifact.
+Recording,Audio/video recording artifact.
+DeadlineClock,Computed deadline clock.
+RiskEvent,Typed risk raised by gaps/defects.
+VehicleCandidate,Candidate legal vehicle (motion/appeal/JTC request).
+OperatingOrderPin,Pinned controlling operative order for a vehicle.
+AuthorityRef,Authority reference (MCR/MCL/Benchbook).
+Pack,Packaging unit (packet list).
+Track,MEEK2/MEEK3/MEEK4.

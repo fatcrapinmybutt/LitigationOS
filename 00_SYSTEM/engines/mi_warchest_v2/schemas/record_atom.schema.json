@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RecordAtom",
+  "type": "object",
+  "required": [
+    "atom_id",
+    "source_id",
+    "atom_type",
+    "text"
+  ],
+  "properties": {
+    "atom_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "atom_type": {
+      "type": "string",
+      "enum": [
+        "ORDER_DIRECTIVE",
+        "ACCUSATION",
+        "PROCEDURAL_EVENT",
+        "QUOTE_BLOCK"
+      ]
+    },
+    "text": {
+      "type": "string"
+    },
+    "pointer": {
+      "type": "string"
+    },
+    "date_hint": {
+      "type": "string"
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

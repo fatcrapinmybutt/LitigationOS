@@ -1,12 +1,239 @@
 {
-  "generated": "2026-03-19T00:01:45.778237",
-  "tool": "Discovery Request Generator (#107)",
-  "interrogatories": 15,
-  "document_requests": 14,
-  "admissions": 10,
-  "total": 39,
-  "targets": [
-    "Emily Watson",
-    "Ronald Berry"
-  ]
+  "tool": "#211 \u2014 Discovery Request Generator",
+  "generated": "2026-03-19T08:07:36.503473",
+  "case_numbers": [
+    "2024-001507-DC",
+    "2023-5907-PP"
+  ],
+  "court": "14th Circuit Court, Family Division, Muskegon County",
+  "judge": "Hon. Jenny L. McNeill",
+  "parties": {
+    "plaintiff": {
+      "name": "Andrew James Pigors",
+      "role": "Plaintiff/Father"
+    },
+    "defendant": {
+      "name": "Emily A. Watson",
+      "role": "Defendant/Mother",
+      "address": "2160 Garland Drive, Norton Shores, MI 49441"
+    },
+    "berry": {
+      "name": "Ronald Berry",
+      "role": "Non-Attorney / Emily's domestic partner"
+    },
+    "barnes": {
+      "name": "Jennifer Barnes",
+      "bar": "P55406",
+      "role": "Former Attorney (WITHDREW)",
+      "firm": "Barnes Law Firm PLLC, 880 Jefferson St Ste B, Muskegon, MI 49440"
+    },
+    "child": {
+      "name": "L.D.W.",
+      "note": "Initials only per MCR 8.119(H)"
+    },
+    "judge": {
+      "name": "Hon. Jenny L. McNeill",
+      "court": "14th Circuit Court, Family Division"
+    },
+    "foc": {
+      "name": "Pamela Rusco",
+      "address": "990 Terrace St, Muskegon, MI 49442"
+    }
+  },
+  "db_stats": {
+    "tables_available": 600,
+    "watson_evidence_count": 399,
+    "berry_evidence_count": 1,
+    "barnes_evidence_count": 33,
+    "communications_count": 33,
+    "general_evidence_count": 600
+  },
+  "interrogatories": {
+    "rule": "MCR 2.309",
+    "title": "Interrogatories to Parties",
+    "targets": {
+      "Emily A. Watson": [
+        {
+          "number": 1,
+          "topic": "Perjury \u2014 Straw Incident",
+          "text": "Describe in detail the incident you reported involving a straw, including the exact date, time, location, all persons present, and whether any photographs or video recordings were taken at the time of the alleged incident."
+        },
+        {
+          "number": 2,
+          "topic": "Staged Photographs",
+          "text": "Identify all photographs you have submitted or intend to submit as evidence in this case. For each photograph, state: (a) the date taken, (b) the device used, (c) who took the photograph, (d) whether the photograph was edited or altered in any way, and (e) the circumstances depicted."
+        },
+        {
+          "number": 3,
+          "topic": "False Allegations",
+          "text": "List every allegation you have made against Plaintiff Andrew James Pigors to any court, law enforcement agency, CPS, or other governmental body. For each allegation, state: (a) the date made, (b) the agency or court to which it was made, (c) the substance of the allegation, and (d) the outcome or disposition."
+        },
+        {
+          "number": 4,
+          "topic": "Ronald Berry's Role",
+          "text": "Describe the nature of your relationship with Ronald Berry, including: (a) when the relationship began, (b) whether he resides at your address, (c) what role, if any, he plays in the care of the minor child L.D.W., and (d) whether he has provided you legal advice or assisted in preparing any court filings."
+        },
+        {
+          "number": 5,
+          "topic": "Communications Regarding Litigation",
+          "text": "Identify all communications between you and Ronald Berry regarding this litigation, including text messages, emails, letters, and verbal conversations where litigation strategy was discussed. State the date, medium, and substance of each."
+        },
+        {
+          "number": 6,
+          "topic": "Attorney Barnes Withdrawal",
+          "text": "Describe the circumstances surrounding the withdrawal of your attorney Jennifer Barnes (P55406). State: (a) who initiated the withdrawal, (b) the reasons given, (c) whether any disagreement over litigation strategy preceded the withdrawal, and (d) whether Ronald Berry assumed any advisory role after the withdrawal."
+        },
+        {
+          "number": 7,
+          "topic": "Financial Disclosures",
+          "text": "State your current income from all sources, including employment, government assistance, and financial support from Ronald Berry or any other person. Identify all bank accounts in your name or to which you have access."
+        },
+        {
+          "number": 8,
+          "topic": "Parenting Time Interference",
+          "text": "For each instance in which Plaintiff's scheduled parenting time did not occur as ordered, state: (a) the date, (b) the reason parenting time did not occur, (c) who made the decision, and (d) whether the court was notified."
+        }
+      ],
+      "Ronald Berry": [
+        {
+          "number": 1,
+          "topic": "Unauthorized Practice of Law",
+          "text": "State whether you have ever: (a) drafted or assisted in drafting any court filing in this case, (b) provided legal advice to Emily A. Watson regarding this case, (c) appeared at the courthouse on behalf of Emily A. Watson, or (d) communicated with any attorney regarding litigation strategy for this case."
+        },
+        {
+          "number": 2,
+          "topic": "Courthouse Appearances",
+          "text": "List every date on which you appeared at the Muskegon County courthouse in connection with any case involving Emily A. Watson. For each appearance, state your purpose and what actions you took."
+        },
+        {
+          "number": 3,
+          "topic": "Document Preparation",
+          "text": "Identify every legal document you have prepared, edited, reviewed, or assisted in preparing for filing in any court case involving Emily A. Watson. Include motions, responses, affidavits, and any other filings."
+        },
+        {
+          "number": 4,
+          "topic": "Legal Coaching",
+          "text": "Describe any instance in which you advised Emily A. Watson on how to respond to interrogatories, what testimony to give, or how to present evidence in court proceedings."
+        }
+      ]
+    }
+  },
+  "production_requests": {
+    "rule": "MCR 2.310",
+    "title": "Requests for Production of Documents and Things",
+    "targets": {
+      "Emily A. Watson": [
+        {
+          "number": 1,
+          "text": "All text messages, emails, and electronic communications between you and Ronald Berry from January 1, 2023 to the present, including messages on any platform (SMS, iMessage, Facebook Messenger, WhatsApp, etc.)."
+        },
+        {
+          "number": 2,
+          "text": "All photographs submitted or intended to be submitted as evidence, together with the original digital files including EXIF metadata."
+        },
+        {
+          "number": 3,
+          "text": "All communications with Jennifer Barnes (P55406) regarding her withdrawal as your attorney, including engagement letters, billing statements, and correspondence."
+        },
+        {
+          "number": 4,
+          "text": "All documents, notes, or records created by or with the assistance of Ronald Berry relating to this litigation."
+        },
+        {
+          "number": 5,
+          "text": "All CPS reports, complaints, or referrals made by you or on your behalf concerning Andrew James Pigors, including the agency response or outcome for each."
+        },
+        {
+          "number": 6,
+          "text": "All records from HealthWest or any mental health provider relating to evaluations or treatment of L.D.W., to the extent not protected by privilege."
+        },
+        {
+          "number": 7,
+          "text": "All financial records, including bank statements, pay stubs, tax returns, and records of support received from Ronald Berry, for the period January 1, 2023 to the present."
+        }
+      ],
+      "Ronald Berry": [
+        {
+          "number": 1,
+          "text": "All documents you have drafted, edited, or assisted in preparing for filing in any case involving Emily A. Watson, including drafts, notes, and final versions."
+        },
+        {
+          "number": 2,
+          "text": "All electronic communications between you and Emily A. Watson discussing litigation strategy, court filings, or legal proceedings, from January 1, 2023 to the present."
+        },
+        {
+          "number": 3,
+          "text": "Any legal research materials, templates, or form documents you obtained or used in connection with this litigation."
+        }
+      ],
+      "Jennifer Barnes P55406": [
+        {
+          "number": 1,
+          "text": "The complete client file for Emily A. Watson, to the extent disclosure is permitted, including all communications, work product, and billing records."
+        },
+        {
+          "number": 2,
+          "text": "All documents relating to your withdrawal as counsel, including any motion to withdraw, correspondence with the court, and internal memoranda regarding the decision."
+        },
+        {
+          "number": 3,
+          "text": "Any communications between you and Ronald Berry regarding this case."
+        }
+      ]
+    }
+  },
+  "admissions": {
+    "rule": "MCR 2.312",
+    "title": "Requests for Admission",
+    "target": "Emily A. Watson",
+    "requests": [
+      {
+        "number": 1,
+        "text": "Admit that Ronald Berry has assisted you in preparing court filings in this case."
+      },
+      {
+        "number": 2,
+        "text": "Admit that Ronald Berry is not a licensed attorney in the State of Michigan."
+      },
+      {
+        "number": 3,
+        "text": "Admit that Ronald Berry has accompanied you to the Muskegon County courthouse in connection with this case."
+      },
+      {
+        "number": 4,
+        "text": "Admit that you communicated with Ronald Berry about litigation strategy in this case."
+      },
+      {
+        "number": 5,
+        "text": "Admit that photographs you submitted as evidence were taken at your direction or request."
+      },
+      {
+        "number": 6,
+        "text": "Admit that Jennifer Barnes (P55406) withdrew as your attorney prior to the conclusion of this case."
+      },
+      {
+        "number": 7,
+        "text": "Admit that you have made reports to CPS regarding Andrew James Pigors."
+      },
+      {
+        "number": 8,
+        "text": "Admit that there were occasions when Plaintiff's court-ordered parenting time did not occur."
+      },
+      {
+        "number": 9,
+        "text": "Admit that Ronald Berry has provided you with legal advice regarding this case."
+      },
+      {
+        "number": 10,
+        "text": "Admit that you have communicated with Ronald Berry by text message about this case."
+      }
+    ]
+  },
+  "db_evidence_summary": {
+    "watson": 399,
+    "berry": 1,
+    "barnes": 33,
+    "communications": 33,
+    "general": 600
+  }
 }

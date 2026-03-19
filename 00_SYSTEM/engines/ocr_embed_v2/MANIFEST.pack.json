@@ -1,0 +1,234 @@
+{
+  "files": [
+    {
+      "path": ".gemini/settings.json",
+      "sha256": "f2f5ca7c63223088fa5f0f588edb006e852e6565d8e24ec2da3f74e2905a823a",
+      "size": 149
+    },
+    {
+      "path": ".geminiignore",
+      "sha256": "271a55d258288822dec6269b2b24cf9f2bf489d07330ab907741d1faeb9b3806",
+      "size": 278
+    },
+    {
+      "path": "GEMINI.md",
+      "sha256": "0639c62c79cdf20a2e9373f9033d370de52f194e7382db01f68178a006db1266",
+      "size": 1077
+    },
+    {
+      "path": "MANIFEST.pack.json",
+      "sha256": "56d26f4223050adaa24bcb3899bec450dbeed4ba32b287a1d0d7a5d050e3180c",
+      "size": 6551
+    },
+    {
+      "path": "README.md",
+      "sha256": "442e92c8968c325b0eccd343650de3d5bfecfe49e0b6d677f962792606be4b51",
+      "size": 1825
+    },
+    {
+      "path": "README.rtf",
+      "sha256": "6628bb3a34e9a6e9b7fbc2065228db130d893a03d9d799c9cca9c8b68df4101c",
+      "size": 515
+    },
+    {
+      "path": "RUN.cmd",
+      "sha256": "94791f919e73fa2ff0ed444a3a732aed39817f28d3b3abeb9bae472486f597a9",
+      "size": 456
+    },
+    {
+      "path": "config/harvest_config.json",
+      "sha256": "101a7b918fa51c42103d9112bb9be1b973b32f83d6d753d96b208080db4f7ee4",
+      "size": 2982
+    },
+    {
+      "path": "docs/UNIFIED_AutoHarvest_Runbook_v1.2.md",
+      "sha256": "41aa263d78c1c63cccc871d74142e7678dc93869f84cbe442b55ceb2d50ce98b",
+      "size": 4463
+    },
+    {
+      "path": "docs/UNIFIED_AutoHarvest_Runbook_v2.0.md",
+      "sha256": "bd4f47894357626c1e648f434affcb1c0d0b24059dc00250a2658f177fd08bfe",
+      "size": 900
+    },
+    {
+      "path": "licenses/THIRD_PARTY.md",
+      "sha256": "4e5c807b2e4f7878cf7a0fa125519823bca013b9d6e22e19fb8c6f24104e8b15",
+      "size": 577
+    },
+    {
+      "path": "prompts/00_BOOTSTRAP.md",
+      "sha256": "8119db2b797aab1d3c074c88cbe93e4d0eb83e85f6de4b6a2bb5a7d8aa924b2f",
+      "size": 629
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "e7f71cd9a7b4b3f6fd1223f85136e10b48d3a0c587ad62b48e1fdd699564ada8",
+      "size": 410
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "62ff258770c1b6f763fa7222e34403489459e6b5de437751ebb662d70c549de1",
+      "size": 463
+    },
+    {
+      "path": "scripts/CYCLE.ps1",
+      "sha256": "e6b0fdb4adc364acc6a5799440ecf2543aa853e7c6ed27bf2288baeebfa25a54",
+      "size": 1130
+    },
+    {
+      "path": "scripts/INSTALL_DEPS.ps1",
+      "sha256": "d93eb1893b8e2033c04ef3ae1edd8b4de6b0bdd18a1b0f3c59a0bb900ae9fe32",
+      "size": 571
+    },
+    {
+      "path": "scripts/INSTALL_TESSERACT.ps1",
+      "sha256": "1278493c5cadae499cda6f7a94f4fd8bd39f8b29fc7945550077766cffda609a",
+      "size": 469
+    },
+    {
+      "path": "scripts/MAKE_MANIFEST.py",
+      "sha256": "2bb896e5b4a0262346f6e9cc56d9fe17ee8cc3166e9250b805ffef765c79f602",
+      "size": 830
+    },
+    {
+      "path": "scripts/QUERY.ps1",
+      "sha256": "34f60c3f59b855da668d2c520180c36d000ad080687b73869de5317986dc15a2",
+      "size": 563
+    },
+    {
+      "path": "scripts/REPACK.cmd",
+      "sha256": "48a1774327a44a75ad8d9a1566b06e737cfa045c64ba984094930d82598c2e00",
+      "size": 248
+    },
+    {
+      "path": "scripts/REPACK.ps1",
+      "sha256": "8f68102b02e6f7457389b636d043d680bfbd79b227dcd9e61fdb7f9f5c1eac74",
+      "size": 313
+    },
+    {
+      "path": "scripts/REPACK.py",
+      "sha256": "9dac4476f2e22f211e0cfc4ae64aaa8ff901d7f1a8c158a6f8e2d3bcabdcae0b",
+      "size": 1114
+    },
+    {
+      "path": "scripts/RUN.ps1",
+      "sha256": "20aa2f23871bfe89fba511f3471dc2f6d9bc09084e498e5b5dbd3a66afbd50e3",
+      "size": 2980
+    },
+    {
+      "path": "scripts/SELF_TEST.ps1",
+      "sha256": "9377f72fb2b5948dca3bb1d07a956b1e6a3af9e442575331ea1df2677498e7bc",
+      "size": 891
+    },
+    {
+      "path": "scripts/START_QDRANT.ps1",
+      "sha256": "40783dc30688088fbd137eb4556a62f36f01da94e090d108dcfaf5e44d75890b",
+      "size": 1024
+    },
+    {
+      "path": "scripts/STOP_QDRANT.ps1",
+      "sha256": "2d8a9fa351421475fd1f7a77687f6b96e03c4785845638d02b5fe3e1910bee9f",
+      "size": 434
+    },
+    {
+      "path": "scripts/harvest_runner_legacy.py",
+      "sha256": "f47c17d715f945dff5760914b2dd80e046fb2b4b5ef3457b0a6347832d861db9",
+      "size": 31146
+    },
+    {
+      "path": "src/litos_harvest/__init__.py",
+      "sha256": "75ad4f4c2943325f88064ad2beae890b59674be2bf0404b30afc5584dc4de4bb",
+      "size": 13
+    },
+    {
+      "path": "src/litos_harvest/__main__.py",
+      "sha256": "4ac953d9d43e4ef3a1f1a054d0ceb385a87076d105a99db4166d79426a737ca4",
+      "size": 60
+    },
+    {
+      "path": "src/litos_harvest/chunking.py",
+      "sha256": "b7793d731d6f380a26ce70ad98ba7ae63e956307007312867cf590ca91e771b4",
+      "size": 773
+    },
+    {
+      "path": "src/litos_harvest/embeddings.py",
+      "sha256": "5e47d079d29349dddd6ad5de245d041d3053a5b3f1c9f660999e3f8c97918c9e",
+      "size": 1612
+    },
+    {
+      "path": "src/litos_harvest/extractors/archives.py",
+      "sha256": "fe7a51e77457f5ef65b3572457bf909fe12fc1f922af3b4f9a5431f3e85a4551",
+      "size": 775
+    },
+    {
+      "path": "src/litos_harvest/extractors/base.py",
+      "sha256": "cffc8d77ac4a5ee7dfc7f47436dee86ebb29998a711b984d33ffba4a1eedbcc9",
+      "size": 458
+    },
+    {
+      "path": "src/litos_harvest/extractors/csvs.py",
+      "sha256": "fffbab68d921df48177caab39573012e1577c47ad251f65ff46dc1d6d24fb5f5",
+      "size": 930
+    },
+    {
+      "path": "src/litos_harvest/extractors/docx.py",
+      "sha256": "a3b01e14cb2ecc704eaf521aa3104cbb254ea4a91f3c0c34b0a7fefdf80933df",
+      "size": 654
+    },
+    {
+      "path": "src/litos_harvest/extractors/images.py",
+      "sha256": "3b8bd2b5ebe5edc8ce8739f8ff6357d282b0117be875608fc5a9c141f0c2cccd",
+      "size": 1053
+    },
+    {
+      "path": "src/litos_harvest/extractors/pdfs.py",
+      "sha256": "bf82d051faa276ca9267ae06a981c7c8f3f394dbe690a8abc6c0ee414d8be367",
+      "size": 3197
+    },
+    {
+      "path": "src/litos_harvest/extractors/texts.py",
+      "sha256": "bbf7f5c98df2bc87ed9095c51d6bf5ffb95ae97a346a068f5c53ca1928cdd685",
+      "size": 634
+    },
+    {
+      "path": "src/litos_harvest/index/fts_sqlite.py",
+      "sha256": "4ebc01f30bb784fceec97e1fb3632db0a8ac100df4ee3b4df3a26831c13c6abc",
+      "size": 1549
+    },
+    {
+      "path": "src/litos_harvest/index/qdrant_index.py",
+      "sha256": "0431840cf5b436c58492d44bd60564b6783704dcff0d5c452c5f7902099a0195",
+      "size": 876
+    },
+    {
+      "path": "src/litos_harvest/main.py",
+      "sha256": "2c717fce80b5ef2ada7a2519eb2d656dee1430d6f6f0ec1f47e31c21bb2a96b2",
+      "size": 1040
+    },
+    {
+      "path": "src/litos_harvest/pipeline/harvest.py",
+      "sha256": "60053d448154e69238d83455cc8de7acd7e5dee89e6768ec1061048d1881ecc3",
+      "size": 11144
+    },
+    {
+      "path": "src/litos_harvest/query.py",
+      "sha256": "28ef65bc87cfa5523c2f7f888e3290423920b5752d96a7e1980361170e80501b",
+      "size": 721
+    },
+    {
+      "path": "src/litos_harvest/run_ledger.py",
+      "sha256": "b9fbd353b3a2b4dcf8420e7b13fb352a4cae31c64744e8083e92fff032fd4601",
+      "size": 1022
+    },
+    {
+      "path": "src/litos_harvest/scanner.py",
+      "sha256": "8675570b38c7899afab0531bc8d4a416f17dc3e2419b48a64e3477ab26db23ff",
+      "size": 1793
+    },
+    {
+      "path": "src/litos_harvest/utils.py",
+      "sha256": "4fdd4cd40cc9f91a3ad64faf81ffe749252807d595b92b76bf731f599bff5ae5",
+      "size": 1084
+    }
+  ]
+}

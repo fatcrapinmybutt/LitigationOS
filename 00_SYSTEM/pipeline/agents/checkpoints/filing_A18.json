@@ -1,0 +1,220 @@
+{
+  "action_id": "A18",
+  "composite_score": 55.0,
+  "motion": {
+    "evidence_count": 3270,
+    "citation_count": 0
+  },
+  "brief": {
+    "supporting_atoms": 3270,
+    "authorities_cited": 0
+  },
+  "exhibits": [
+    {
+      "atom_id": "9fa7df8273096e18",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "79967affbe66e750",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "aaa000a11b6c4e33",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "980d66b5465e66c6",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "b93f8321bc2bbad4",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "4ef37cd77302a4b3",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "bfd70a17facf0d92",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "7f322d02d70befa4",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "3b1672af17fc9e8d",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "186fb2c49229339b",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "1036d70681d8e30b",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "6ca82bc059416b5c",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "6d90ed21d564357d",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "0f03e4e1c6d2fddb",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "c120c501730800df",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "f4f5e00a12deb311",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "3bd738cfbd7ef1e7",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "f4167e83b7d5f6e4",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "8993d9f78df0da29",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "e4de0be754182af5",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "4c9a3d2b4558f88a",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "1b538aad98ffa909",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "0be9aba1d1122cc6",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "a0991ebd2c5957f5",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "d06fe9a06c955e3d",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "0eaeb04a48a664a5",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "e2f421bc561b8837",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "a6ca94888daa95bd",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "9f4ad7ec5a3dec46",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "1463993e09a3277f",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "bde23a135fe2ffc6",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "8925378651e2d489",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "35ff28d4a8a71290",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "0ad4e785418a1c1d",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "ea98179df7048754",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "fa1b62fc331cbb54",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "8ff17011f84de15a",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "7c774ea96314947e",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "18c2116d052a99ff",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "17e5f25d8e8f69dd",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "2d45f47dfc129b54",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "3a41b98e8dac395d",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "7466bfd36f72b46b",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "7494d896e15aa64e",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "2f2358a6b09a0cb7",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "0ee545981287c293",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "e71c3578f461d1a5",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "35f7ff77b1be6520",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "bda5e6e56b5e18ec",
+      "type": "evidence"
+    },
+    {
+      "atom_id": "93983728b3690d62",
+      "type": "evidence"
+    }
+  ],
+  "proposed_order": {
+    "relief_requested": true,
+    "based_on_actions": "A18"
+  },
+  "exhibit_count": 50,
+  "readiness_score": 0.55
+}

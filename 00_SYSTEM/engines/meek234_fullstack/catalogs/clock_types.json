@@ -1,0 +1,104 @@
+[
+  {
+    "clock_id": "MCR_7_204_21_day_clock",
+    "forum": "coa",
+    "title": "Claim of appeal due",
+    "start_event": "Order entered (entry date per ROA)",
+    "duration_days": 21,
+    "notes": "Civil claim of appeal generally due within 21 days after entry of order/judgment, unless otherwise provided.",
+    "authority_refs": [
+      {
+        "source": "MCR",
+        "ref": "7.204(A)(1)",
+        "note": "Time for filing claim of appeal; 21 days after entry."
+      }
+    ]
+  },
+  {
+    "clock_id": "MCR_7_205_21_day_clock",
+    "forum": "coa",
+    "title": "Application for leave due",
+    "start_event": "Order entered (entry date per ROA)",
+    "duration_days": 21,
+    "notes": "Application for leave generally due within 21 days after entry; tolling may apply for certain postjudgment motions per rule.",
+    "authority_refs": [
+      {
+        "source": "MCR",
+        "ref": "7.205(A)(1)",
+        "note": "Time for filing application for leave; tolling details in rule."
+      }
+    ]
+  },
+  {
+    "clock_id": "MCR_7_205_granted_leave_docketing_statement_clock",
+    "forum": "coa",
+    "title": "Docketing statement due after leave granted",
+    "start_event": "Order granting leave is certified",
+    "duration_days": 28,
+    "authority_refs": [
+      {
+        "source": "MCR",
+        "ref": "7.205(C)(3)",
+        "note": "Docketing statement due 28 days after certification of order granting leave."
+      }
+    ]
+  },
+  {
+    "clock_id": "MCR_7_205_granted_leave_transcript_clock",
+    "forum": "coa",
+    "title": "Transcript order due after leave granted",
+    "start_event": "Order granting leave is certified",
+    "duration_days": 14,
+    "authority_refs": [
+      {
+        "source": "MCR",
+        "ref": "7.205(C)(3)",
+        "note": "Transcript order within 14 days after certification of order granting leave."
+      }
+    ]
+  },
+  {
+    "clock_id": "DQ_14_day_discovery",
+    "forum": "trial",
+    "title": "Disqualification motion due",
+    "start_event": "Grounds discovered",
+    "duration_days": 14,
+    "authority_refs": [
+      {
+        "source": "MCR",
+        "ref": "2.003(D)(1)(a)",
+        "note": "Motion within 14 days after discovery of grounds."
+      }
+    ]
+  },
+  {
+    "clock_id": "MCR_9_222_28_day_clock",
+    "forum": "jtc",
+    "title": "Respond to JTC 28-day letter",
+    "start_event": "JTC notice letter sent",
+    "duration_days": 28,
+    "authority_refs": [
+      {
+        "source": "MCR",
+        "ref": "9.222(A)",
+        "note": "Respondent judge has 28 days to respond after notice letter."
+      }
+    ]
+  },
+  {
+    "clock_id": "service_due_now",
+    "forum": "all",
+    "title": "Service due / proof needed",
+    "start_event": "Filing served/required",
+    "duration_rule": "depends_on_filing_and_rule",
+    "notes": "Service rules vary by court and document; compute via rule profile."
+  },
+  {
+    "clock_id": "transcript_order_clock",
+    "forum": "coa",
+    "title": "Order transcript / certify no transcript",
+    "start_event": "Notice of appeal or leave granted",
+    "duration_rule": "varies",
+    "notes": "Record/transcript clocks depend on MCR 7.210/7.212 and orders/certifications."
+  }
+]
