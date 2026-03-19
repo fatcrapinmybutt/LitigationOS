@@ -1,7 +1,7 @@
 {
-  "generated": "2026-03-18T23:01:14.928186",
+  "generated": "2026-03-18T23:04:52.499343",
   "tool": "Sanctions Risk Analyzer (#50)",
-  "overall_score": 372,
+  "overall_score": 360,
   "overall_level": "\u26d4 CRITICAL",
   "per_filing": {
     "F10": {
@@ -12,7 +12,7 @@
     "F1": {
       "critical": 0,
       "high": 1,
-      "medium": 1
+      "medium": 0
     },
     "F2": {
       "critical": 1,
@@ -27,7 +27,7 @@
     "F4": {
       "critical": 1,
       "high": 14,
-      "medium": 6
+      "medium": 2
     },
     "F5": {
       "critical": 2,
@@ -52,7 +52,7 @@
     "F9": {
       "critical": 1,
       "high": 8,
-      "medium": 1
+      "medium": 0
     }
   },
   "systemic_risks": [
@@ -69,7 +69,7 @@
       "mitigation": "Consider consolidating F1, F2, F3, F7 or filing sequentially"
     }
   ],
-  "total_findings": 69,
+  "total_findings": 63,
   "critical_count": 7,
   "high_count": 54
 }

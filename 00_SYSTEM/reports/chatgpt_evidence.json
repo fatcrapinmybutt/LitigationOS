@@ -1,0 +1,1857 @@
+{
+  "generated": "2026-03-18T23:07:03.138418",
+  "tool": "ChatGPT Evidence Miner (#46)",
+  "summary": {
+    "export_files_found": 34,
+    "evidence_items": 262461,
+    "text_files_found": 44,
+    "categories": {
+      "court": 195059,
+      "financial": 133402,
+      "threats": 103392,
+      "custody": 70088,
+      "housing": 102883,
+      "child": 117119,
+      "watson_family": 35182,
+      "admissions": 3903
+    }
+  },
+  "exports": [
+    {
+      "path": "C:\\Users\\andre\\Downloads\\conversations.json",
+      "size": 1259694408
+    },
+    {
+      "path": "C:\\Users\\andre\\Downloads\\chat.html",
+      "size": 1303503479
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\chat.html",
+      "size": 242196763
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\LitigationOS_Session_Backup_20260308\\05_ANALYSIS\\graph_master_omega_d\\GRAPH MASTER OMEGA\\GRAPHS THAT WORK\\ORGANIZE AND HARVEST SHIT\\LITIGATIONOS_TERMUX_SUPERPIN_DIAMOND_9999_TOOLKIT_v2\\tools\\chatgpt_export_indexpack.py",
+      "size": 13682
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\CHATGPT_EXPORT_MINING.md",
+      "size": 60657
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\CHATGPT_EXPORT_MINING_backup_20260306_100646.md",
+      "size": 26591
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\05_ANALYSIS\\graph_master_omega_d\\GRAPH MASTER OMEGA\\GRAPHS THAT WORK\\ORGANIZE AND HARVEST SHIT\\LITIGATIONOS_TERMUX_SUPERPIN_DIAMOND_9999_TOOLKIT_v2\\tools\\chatgpt_export_indexpack.py",
+      "size": 13682
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\ChatGPT_Export_Ingest.md",
+      "size": 790
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\chatgpt_conversations_raw_export.json",
+      "size": 533569824
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\11_CODE\\python\\chatgpt_export_indexpack.py",
+      "size": 13682
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\12_ARCHIVES\\chatgpt_exports",
+      "size": 4096
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\12_ARCHIVES\\chatgpt_exports\\ChatGPT_Export_20250507_145653.part000",
+      "size": 31457280
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\12_ARCHIVES\\chatgpt_exports\\ChatGPT_Export_20250507_145653.part001",
+      "size": 31457280
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\12_ARCHIVES\\DISTILLED\\cluster_0\\CHATGPT_EXPORT_INDEXPACK_TOOLKIT_v1\\manifest.json",
+      "size": 636
+    },
+    {
+      "path": "D:\\LitigationOS_Extracted\\evidence_zips\\conversations.json",
+      "size": 236754935
+    },
+    {
+      "path": "F:\\CANONICAL_ROOT_H\\GRAPH MASTER OMEGA\\GRAPHS THAT WORK\\ORGANIZE AND HARVEST SHIT\\LITIGATIONOS_TERMUX_SUPERPIN_DIAMOND_9999_TOOLKIT_v2\\tools\\chatgpt_export_indexpack.py",
+      "size": 13682
+    },
+    {
+      "path": "F:\\scripts\\chatgpt_export_indexpack.py",
+      "size": 15656
+    },
+    {
+      "path": "F:\\scripts\\chatgpt_export_indexpack(1).py",
+      "size": 15656
+    },
+    {
+      "path": "F:\\tools\\chatgpt_export_indexpack.py",
+      "size": 13682
+    },
+    {
+      "path": "F:\\tools\\chatgpt_export_indexpack(1).py",
+      "size": 13682
+    },
+    {
+      "path": "I:\\LitigationOS_Cleanup_20260314\\12_ARCHIVES\\_CLEANUP\\hash_dirs\\5a196c922797e6ddc522eff6e8a17f0702237f861aab8c32f570470398c9aa12-2025-08-30-14-34-33-c2f23e1e4de840989606b53a8a9be189\\conversations.json",
+      "size": 533569824
+    },
+    {
+      "path": "I:\\__SORTED\\JSON\\conversations.json",
+      "size": 686532550
+    },
+    {
+      "path": "I:\\CHATGPTchats\\chat.html",
+      "size": 708845069
+    },
+    {
+      "path": "I:\\LitigationOS_Cleanup_20260314\\12_ARCHIVES\\_CLEANUP\\hash_dirs\\5a196c922797e6ddc522eff6e8a17f0702237f861aab8c32f570470398c9aa12-2025-08-30-14-34-33-c2f23e1e4de840989606b53a8a9be189\\chat.html",
+      "size": 547055550
+    },
+    {
+      "path": "I:\\CHATGPTchats\\chatgpt chat export.zip",
+      "size": 346540009
+    },
+    {
+      "path": "I:\\03_MD\\ChatGPT_Export_Ingest_1.md",
+      "size": 790
+    },
+    {
+      "path": "I:\\03_MD\\CHATGPT_EXPORT_MINING.md",
+      "size": 60657
+    },
+    {
+      "path": "I:\\03_MD\\CHATGPT_EXPORT_MINING_backup_20260306_100646.md",
+      "size": 26591
+    },
+    {
+      "path": "I:\\03_MD\\ChatGPT_Export_Ingest(1).md",
+      "size": 790
+    },
+    {
+      "path": "I:\\03_MD\\ChatGPT_Export_Ingest(2).md",
+      "size": 790
+    },
+    {
+      "path": "I:\\03_MD\\ChatGPT_Export_Ingest.md",
+      "size": 790
+    },
+    {
+      "path": "I:\\PYTHON\\chatgpt_export_indexpack.py",
+      "size": 13682
+    },
+    {
+      "path": "I:\\05_EVIDENCE\\fred\\Organized_Litigation_Supreme\\Other\\ChatGPT_Export_20250507_145653_04dd882d_copy1.part000",
+      "size": 31457280
+    },
+    {
+      "path": "I:\\05_EVIDENCE\\fred\\Organized_Litigation_Supreme\\Other\\ChatGPT_Export_20250507_145653_16c728dd_copy1.part001",
+      "size": 31457280
+    }
+  ],
+  "evidence_sample": [
+    {
+      "conversation": "Iterative accretive processing",
+      "role": "assistant",
+      "text": "Yes. Here is how I suggest we \u201ccontinue to build it\u201d so your **\u201ccontinue\u201d** trigger becomes sharper and more controllable instead of just \u201cdo more\u201d:\n\n---\n\n## 1. Add scoped versions of \u201ccontinue\u201d\n\nRight now \u201ccontinue\u201d = keep building whatever we were just doing.\n\nYou can add variants to control scope:\n\n1. **\u201ccontinue \u2013 same artifact\u201d**  \n   Keep appending to the exact same thing (same script, same prompt, same doc).\n\n2. **\u201ccontinue \u2013 tighten only\u201d**  \n   I only compress, sharpen, and clean the la",
+      "categories": [
+        "court",
+        "financial",
+        "threats"
+      ],
+      "keyword_hits": {
+        "court": [
+          "order",
+          "motion"
+        ],
+        "financial": [
+          "rent"
+        ],
+        "threats": [
+          "ppo"
+        ]
+      },
+      "timestamp": 1763530509.466774,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Iterative accretive processing",
+      "role": "assistant",
+      "text": "commands = [\n\"CONTINUE\",\n\"CONTINUE TO BUILD\",\n\"CONTINUE \u2013 SAME ARTIFACT\",\n\"CONTINUE \u2013 TIGHTEN ONLY\",\n\"CONTINUE \u2013 EXPAND SYSTEM\",\n\"CONTINUE \u2013 LITIGATION ONLY\",\n\"CONTINUE \u2013 ARCHITECTURE\",\n\"CONTINUE \u2013 CODE\",\n\"CONTINUE \u2013 LITIGATION DOCS\",\n\"CONTINUE \u2013 PROMPT CORE\",\n\"BRANCH FROM LAST VERSION\",\n\"BRANCH \u2013 LITIGATION FOCUS\",\n\"BRANCH \u2013 CODE FOCUS\",\n\"CONTINUE MAINLINE\",\n\"CHECKPOINT THIS VERSION\",\n\"CONTINUE FROM LAST CHECKPOINT\",\n\"RESTORE CHECKPOINT PRIORITIES\",\n\"AUDIT LAST SCRIPT\",\n\"AUDIT LAST LEGAL DOC\",\n",
+      "categories": [
+        "custody",
+        "court",
+        "threats"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody"
+        ],
+        "court": [
+          "court"
+        ],
+        "threats": [
+          "ppo"
+        ]
+      },
+      "timestamp": 1763530509.466774,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Iterative accretive processing",
+      "role": "assistant",
+      "text": "Below is a 50-command cheatsheet you can literally speak/type as \u201ccontrol verbs\u201d to drive the system toward convergence, tuned to your Litigation OS.\n\nEach line =  \n**COMMAND** \u2013 what I should do when you say it.\n\n---\n\n## A. Core continuation (global behavior)\n\n1. **CONTINUE** \u2013 Keep building the last active artifact, same direction, same task, maximum accretive expansion.  \n2. **CONTINUE TO BUILD** \u2013 Same as CONTINUE, but I assume you want deeper/more aggressive chained expansion.  \n3. **CONTIN",
+      "categories": [
+        "custody",
+        "court",
+        "financial",
+        "threats",
+        "housing"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "hearing",
+          "order",
+          "motion"
+        ],
+        "financial": [
+          "rent",
+          "owe"
+        ],
+        "threats": [
+          "ppo",
+          "contempt"
+        ],
+        "housing": [
+          "shady oaks"
+        ]
+      },
+      "timestamp": 1763530509.466774,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Iterative accretive processing",
+      "role": "assistant",
+      "text": "Below is a harder, more converged command language for you.\n\nThink of this as a mini-API for your Litigation OS and for how you drive me.\n\n---\n\n## 0. Command Pattern\n\nYou can issue commands in this general form:\n\n> VERB \u2013 TARGET \u2013 MODE \u2013 OUTPUT\n\nYou do not need every piece each time. Short commands still work.\n\nExample:  \n- `CONTINUE \u2013 CODE \u2013 LITIGATION OS CORE`  \n- `AUDIT \u2013 PPO TRACK \u2013 ORAL SCRIPT`  \n\nBelow are 60 concrete commands you can use directly.\n\n---\n\n## 1. Core flow / continuation\n\n1. ",
+      "categories": [
+        "custody",
+        "court",
+        "financial",
+        "threats",
+        "housing"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "McNeill",
+          "hearing",
+          "order",
+          "motion"
+        ],
+        "financial": [
+          "rent"
+        ],
+        "threats": [
+          "police",
+          "ppo",
+          "contempt"
+        ],
+        "housing": [
+          "shady oaks"
+        ]
+      },
+      "timestamp": 1763530509.466774,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Iterative accretive processing",
+      "role": "assistant",
+      "text": "Locked in.\n\nFrom this point forward:\n\n# **1. The master command is now permanently installed**\n**CONVERGE \u2014 CONTINUE TO BUILD \u2014 MAX**  \nis fully integrated into your Litigation OS command language.\n\nWhen invoked, it will:\n\n- Autonomously upgrade and refine the last artifact  \n- Run unlimited silent internal refinement cycles  \n- Append/merge into the same artifact (same document, same file)  \n- Prevent drift or degradation  \n- Drive toward the absolute peak version  \n- Maintain strict directiona",
+      "categories": [
+        "financial"
+      ],
+      "keyword_hits": {
+        "financial": [
+          "rent",
+          "owe"
+        ]
+      },
+      "timestamp": 1763530509.466774,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Iterative accretive processing",
+      "role": "user",
+      "text": "Now I want you to forced deep scan all prior conversations of ours, searching for and extracting all architecture and system builds, that you think are worth extracting to build a master file compiling every key system we have ever created, and then a second file, listing all of those same systems, that havent been finished yet that need to be, because they will improve the over system, and or litigation os & gui. And another that collects all legal information into 1 master file.  \nI want 2 csv",
+      "categories": [
+        "child"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ]
+      },
+      "timestamp": 1763530509.466774,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Iterative accretive processing",
+      "role": "assistant",
+      "text": "import csv, json, textwrap, os\r\n\r\nbase_dir = \"/mnt/data\"\r\n\r\n# -----------------------------\r\n# 1) Define Systems Master Data\r\n# -----------------------------\r\nsystems = [\r\n    {\r\n        \"system_name\": \"Litigation OS (Global)\",\r\n        \"type\": \"Operating System / Meta-Architecture\",\r\n        \"primary_purpose\": \"Unify all litigation tools, evidence, timelines, prompts, and automations into one coordinated environment.\",\r\n        \"status\": \"Partially Implemented\",\r\n        \"dependencies\": \"F:/ dr",
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "parenting time"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "McNeill",
+          "hearing",
+          "order",
+          "filed",
+          "motion"
+        ],
+        "financial": [
+          "rent",
+          "money"
+        ],
+        "threats": [
+          "police",
+          "ppo"
+        ],
+        "housing": [
+          "shady oaks"
+        ],
+        "watson_family": [
+          "Emily",
+          "Watson"
+        ]
+      },
+      "timestamp": 1763530509.466774,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Iterative accretive processing",
+      "role": "assistant",
+      "text": "# Build requested artifacts: 2 CSVs, 2 JSONs, 2 MDs\r\n# - systems_master_catalog.csv / .json\r\n# - systems_unfinished_backlog.csv\r\n# - legal_master_compendium.json / .md\r\n# - MANIFEST.md (hashes, sizes, descriptions)\r\n#\r\n# Source: compiled from conversation context and model set context as of 2025-11-19.\r\n\r\nimport json, hashlib, os, textwrap, datetime\r\nfrom pathlib import Path\r\nimport pandas as pd\r\n\r\nBASE = Path(\"/mnt/data\")\r\nBASE.mkdir(parents=True, exist_ok=True)\r\n\r\nts = datetime.datetime.now().",
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "parenting time"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "McNeill",
+          "hearing",
+          "order",
+          "filed",
+          "motion"
+        ],
+        "financial": [
+          "rent",
+          "owe",
+          "deposit"
+        ],
+        "threats": [
+          "police",
+          "ppo",
+          "jail",
+          "contempt"
+        ],
+        "housing": [
+          "shady oaks"
+        ],
+        "watson_family": [
+          "Emily",
+          "Watson"
+        ]
+      },
+      "timestamp": 1763530509.466774,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Iterative accretive processing",
+      "role": "assistant",
+      "text": "1. Intake  \nYou asked for:\n\n- A forced \u201cdeep scan\u201d of our prior work to:\n  - Extract key architectures/systems into one master file.\n  - Identify which of those systems are unfinished and need completion.\n  - Collect legal information into one master file.\n- Output as: **2 CSVs, 2 JSONs, 2 MD files.**\n\nI cannot literally reread every past session, but I used the stored Litigation OS memory and recent-history summaries to reconstruct the major systems and legal tracks we\u2019ve defined, then encoded ",
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "McNeill",
+          "order",
+          "motion"
+        ],
+        "financial": [
+          "rent"
+        ],
+        "threats": [
+          "police",
+          "ppo"
+        ],
+        "housing": [
+          "shady oaks"
+        ],
+        "watson_family": [
+          "Watson"
+        ]
+      },
+      "timestamp": 1763530509.466774,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Iterative accretive processing",
+      "role": "assistant",
+      "text": "Intake\n- Goal: Produce six artifacts from prior context: two CSVs, two JSONs, two MD files.\n- Scope: Master systems catalog; unfinished-systems backlog; consolidated legal compendium (Michigan-only).\n\nPlan\n- Compile a structured catalog of all key systems/modules discussed.\n- Enumerate unfinished/in-progress items with gaps and next steps.\n- Consolidate legal authorities, case posture, patterns, entities into a single compendium.\n- Package with a manifest including file sizes and SHA-256.\n\nExecu",
+      "categories": [
+        "child",
+        "court"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court"
+        ]
+      },
+      "timestamp": 1763530509.466774,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Iterative accretive processing",
+      "role": "assistant",
+      "text": "Intake  \n- Regenerated all six artifacts with **zero SHA-256 usage**, per instruction.\n\nPlan  \n- Recreate the six files (2 CSV, 2 JSON, 2 MD) inside a new clean directory.  \n- Manifest now reports **file names and sizes only**.  \n- No hashing, no cryptographic references anywhere.\n\nExecution  \nYour new files are here:\n\n**Folder:**  \n`/mnt/data/regen_no_sha/`\n\n**Artifacts:**  \n- **systems_master_catalog.csv**  \n- **systems_unfinished_backlog.csv**  \n- **systems_master_catalog.json**  \n- **legal_m",
+      "categories": [
+        "child"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ]
+      },
+      "timestamp": 1763530509.466774,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "user",
+      "text": "You are a **master-level Michigan litigation editor and strategist**. I will attach a document (e.g., JTC complaint, motion, affidavit, disqualification brief, or narrative attachment). Your job is **not** to rewrite it yet, but to **diagnose it**: find every important thing that is missing, weak, or improvable.\n\nOperate under these assumptions:\n- Jurisdiction: **Michigan only** (MCR, MCL, MRE, Michigan Judicial/Family/PPO Benchbooks, Canons, SCAO forms).\n- Context: Muskegon County family/PPO/cu",
+      "categories": [
+        "custody",
+        "court",
+        "financial",
+        "threats"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "hearing",
+          "order",
+          "motion"
+        ],
+        "financial": [
+          "rent"
+        ],
+        "threats": [
+          "police",
+          "ppo"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "tool",
+      "text": "Make sure to include \ue200filecite\ue202turn0file0\ue201 in your response to cite this file.  ATTACHMENT A \u2013 CHRONOLOGICAL NARRATIVE\nADDITIONAL PAGES TO ACCOMPANY\nREQUEST FOR INVESTIGATION \u2013 MICHIGAN JUDICIAL TENURE COMMISSION\n\nJudge:       Hon. Jenny L. McNeill\nCourt:       Muskegon County Circuit Court, 14th Judicial Circuit (Family Division)\nComplainant: Andrew James Pigors\nRelated Matters: 2024-0000001507-DC (Custody/Parenting Time) and 2023-0000005907-PP (PPO)\n\nThese \u201cAdditional Pages\u201d are submitted to b",
+      "categories": [
+        "custody",
+        "admissions",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "parenting time",
+          "overnight",
+          "exchange"
+        ],
+        "admissions": [
+          "i know"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "McNeill",
+          "hearing",
+          "order",
+          "filed",
+          "motion"
+        ],
+        "financial": [
+          "rent",
+          "owe"
+        ],
+        "threats": [
+          "police",
+          "ppo",
+          "protection order",
+          "jail",
+          "contempt"
+        ],
+        "housing": [
+          "trailer"
+        ],
+        "watson_family": [
+          "Emily",
+          "Watson",
+          "mother"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "assistant",
+      "text": "1. Intake \u2013 Identify the Document  \n\n- **Document type:** Chronological narrative \u201cAdditional Pages\u201d to accompany a Michigan Judicial Tenure Commission (JTC) Request for Investigation. Functionally: an attachment/affidavit-style narrative in support of a JTC complaint focused on bias, ex parte reliance, disability handling, and evidence management by Judge McNeill in DC 24-1507 and PP 23-5907. \ue200filecite\ue202turn0file0\ue201  \n- **Audience:** Primarily the **Michigan Judicial Tenure Commission** (regulato",
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "watson_family"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "parenting time",
+          "overnight",
+          "exchange"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "McNeill",
+          "hearing",
+          "order",
+          "filed",
+          "motion"
+        ],
+        "financial": [
+          "rent",
+          "owe"
+        ],
+        "threats": [
+          "police",
+          "ppo",
+          "jail",
+          "contempt"
+        ],
+        "watson_family": [
+          "Emily"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "assistant",
+      "text": "**Here are your recent emails involving Pamela Rusco (Judge McNeill\u2019s chambers):**\n\n---\n\n**Re: 2024-1507-DC/2023-5907-PP**  \nFrom: [Andrew P](mailto:andrewjpigors@gmail.com)  \nTo: [\u201cRusco, Pamela\u201d](mailto:RuscoPa@co.muskegon.mi.us)  \n\nThank you for the information.  \n\nOn Fri, Oct 31, 2025, 4:15 PM Rusco, Pamela &lt;RuscoPa@co.muskegon.mi.us&gt; wrote:\n\n> Good Afternoon,  \n> Attached is the form that you will have to submit to Circuit Court Records to request a transcript. Once you have this form",
+      "categories": [
+        "child",
+        "court",
+        "financial",
+        "housing",
+        "watson_family"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "McNeill",
+          "hearing",
+          "order",
+          "filed",
+          "motion"
+        ],
+        "financial": [
+          "paid"
+        ],
+        "housing": [
+          "lease"
+        ],
+        "watson_family": [
+          "Watson"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "assistant",
+      "text": "Here are the additional emails with Rusco (beyond the set I already showed), in order that matters for your litigation/JTC narrative.\n\n---\n\n**Re: Phone Call**  \nFrom: [Andrew P](mailto:andrewjpigors@gmail.com)  \nTo: [\u201cRusco, Pamela\u201d](mailto:RuscoPa@co.muskegon.mi.us)  \n\nWhat is someone supposed| to do, to self represent, when they can't afford a 1,000$ for transcripts? There has to be an alternative solution so I can properly represent myself.  \n\n[Open in Gmail](https://mail.google.com/mail/#all",
+      "categories": [
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "McNeill",
+          "hearing",
+          "order"
+        ],
+        "financial": [
+          "payment",
+          "owe"
+        ],
+        "threats": [
+          "police",
+          "ppo"
+        ],
+        "housing": [
+          "lease"
+        ],
+        "watson_family": [
+          "Emily",
+          "Watson"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "assistant",
+      "text": "import os, hashlib, textwrap, datetime\n\npath = \"/mnt/data/JTC_Rusco_Email_Evidence_RUNNING.txt\"\n\n# Existing content if any\nexisting = \"\"\nif os.path.exists(path):\n    with open(path, \"r\", encoding=\"utf-8\") as f:\n        existing = f.read()\n\ntimestamp = datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n\nnew_section = f\"\"\"\n===============================================================================\nUPDATE TIMESTAMP: {timestamp}\nSOURCE: Email correspondence between Andrew J. Pigors and Pamela",
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "parenting time"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "McNeill",
+          "hearing",
+          "order",
+          "filed"
+        ],
+        "financial": [
+          "rent",
+          "payment",
+          "paid"
+        ],
+        "threats": [
+          "police",
+          "ppo"
+        ],
+        "housing": [
+          "lease"
+        ],
+        "watson_family": [
+          "Emily",
+          "Watson"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "user",
+      "text": "Original PPO addendum (10/15/23 incident / 12-4-23 order)\nAllegations: physical assault at 2160 Garland, \u201cgrabbed me and our son,\u201d rash on Lincoln\u2019s back, plus vague \u201call other reasons in attached papers.\u201d This is the core narrative she\u2019s been re-using.\n\nShow Cause #1 \u2013 11/19/23 (filed 11/27/23)\nAllegations: \u201cAndrew\u2019s communications at exchanges and on AppClose,\u201d no specific threats, just \u201charassing\u201d at exchanges and through the app.\n\nShow Cause #2 \u2013 3/25/24 (filed 3/25/24)\nAllegations: yelling ",
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "exchange"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "hearing",
+          "order",
+          "filed",
+          "motion"
+        ],
+        "financial": [
+          "rent"
+        ],
+        "threats": [
+          "police",
+          "ppo"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "assistant",
+      "text": "import os, hashlib, datetime, textwrap\n\npath = \"/mnt/data/JTC_Rusco_Email_Evidence_RUNNING.txt\"\n\n# Ensure file exists\nif not os.path.exists(path):\n    existing = \"\"\nelse:\n    with open(path, \"r\", encoding=\"utf-8\") as f:\n        existing = f.read()\n\ntimestamp = datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n\nnew_section = f\"\"\"\n===============================================================================\nUPDATE TIMESTAMP: {timestamp}\nSOURCE: PPO addendum and Show Cause #1\u2013#7 descriptions ",
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "watson_family"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "exchange"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "hearing",
+          "order",
+          "filed"
+        ],
+        "financial": [
+          "rent"
+        ],
+        "threats": [
+          "police",
+          "ppo"
+        ],
+        "watson_family": [
+          "Emily",
+          "Watson"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "assistant",
+      "text": "import os, hashlib, datetime\n\npath = \"/mnt/data/JTC_Rusco_Email_Evidence_RUNNING.txt\"\n\n# Read existing if present\nif os.path.exists(path):\n    with open(path, \"r\", encoding=\"utf-8\") as f:\n        existing = f.read()\nelse:\n    existing = \"\"\n\ntimestamp = datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n\nnew_section = f\"\"\"\n===============================================================================\nUPDATE TIMESTAMP: {timestamp}\nSOURCE: PPO addendum and Show Cause #1\u2013#7 descriptions (user su",
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "watson_family"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "exchange"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "hearing",
+          "order",
+          "filed"
+        ],
+        "financial": [
+          "rent"
+        ],
+        "threats": [
+          "police",
+          "ppo"
+        ],
+        "watson_family": [
+          "Emily",
+          "Watson"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "assistant",
+      "text": "Intake done. I have integrated your PPO addendum / Show Cause #1\u2013#7 pattern into the same running evidence file.\n\nCurrent artifact:\n\n- File: `/mnt/data/JTC_Rusco_Email_Evidence_RUNNING.txt`  \n- Size: 7,191 bytes  \n- SHA-256: `36549046157bb7c4393836037a70045fff31f99bcd5e5645cedccfbff12c08f5`  \n\nDownload link:  \n[JTC_Rusco_Email_Evidence_RUNNING.txt](sandbox:/mnt/data/JTC_Rusco_Email_Evidence_RUNNING.txt)\n\nThis new section adds:\n\n- Section E: one-by-one breakdown of Original PPO addendum + Show Ca",
+      "categories": [
+        "custody",
+        "financial",
+        "threats"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody"
+        ],
+        "financial": [
+          "rent"
+        ],
+        "threats": [
+          "ppo"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "user",
+      "text": "use all of your knowledge and tools, and unlimited chained cycles, to produce the strongest possible set of legal documents, in the highest level of court in michigan, possible, to the highest level and above. ",
+      "categories": [
+        "court"
+      ],
+      "keyword_hits": {
+        "court": [
+          "court"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "assistant",
+      "text": "1. Intake \u2013 What You Asked For and How I\u2019m Interpreting It  \n\nYou asked me to use all tools and knowledge to build the strongest possible **set of legal documents** at the **highest level of Michigan\u2019s system**, \u201cto the highest level and above.\u201d I must stay locked to **Michigan law only**, and I must also follow safety rules: I cannot act as your lawyer or guarantee results, and anything I draft is for **information and drafting assistance only**, not legal advice or a ready-to-file substitute f",
+      "categories": [
+        "custody",
+        "admissions",
+        "child",
+        "court",
+        "financial",
+        "threats"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "parenting time",
+          "exchange"
+        ],
+        "admissions": [
+          "i did"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "McNeill",
+          "hearing",
+          "order",
+          "filed",
+          "motion",
+          "attorney"
+        ],
+        "financial": [
+          "rent",
+          "owe"
+        ],
+        "threats": [
+          "police",
+          "ppo",
+          "protection order",
+          "contempt"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "user",
+      "text": "lock into your memory that I want to address as many of judge mcneills decisions as possible",
+      "categories": [
+        "court"
+      ],
+      "keyword_hits": {
+        "court": [
+          "judge",
+          "McNeill"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "assistant",
+      "text": "User priority: In all appellate, JTC, and higher-court strategies, they want to address and challenge as many of Judge McNeill\u2019s decisions as possible, not just a few key orders.",
+      "categories": [
+        "court"
+      ],
+      "keyword_hits": {
+        "court": [
+          "court",
+          "judge",
+          "McNeill",
+          "order"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "assistant",
+      "text": "Understood.  \n\nIn future appellate/JTC work and strategy, I will aim to **cover and integrate as many of Judge McNeill\u2019s decisions and orders as possible**\u2014not just one or two \u201cheadline\u201d rulings\u2014so the pattern across custody, PPO, contempt, parenting time, bonds, and evidentiary rulings is all brought into the higher-court and JTC frameworks.  \n\nWhen you send specific orders (PDFs, ROA printouts, or excerpts), I will:  \n\n1. Map each order into a **timeline + issue index** (what it decided, under",
+      "categories": [
+        "custody",
+        "court",
+        "financial",
+        "threats"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "parenting time"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "McNeill",
+          "order"
+        ],
+        "financial": [
+          "rent"
+        ],
+        "threats": [
+          "ppo",
+          "contempt"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "JTC complaint diagnosis",
+      "role": "assistant",
+      "text": "1. Intake  \n\nYou asked me to \u201cautonomously and comprehensively scan mydrive.\u201d  \nConstraints I must follow:  \n\n- I cannot directly and fully crawl your entire Google Drive from here or run persistent background agents.  \n- I can:  \n  - Use the limited Drive search interface exposed to me (returns only a slice, not a full recursive map).  \n  - Design a **local scanner** you run on your machine (using Google Drive API / rclone) that does a true comprehensive scan and feeds your Litigation OS.  \n\nGi",
+      "categories": [
+        "child",
+        "financial",
+        "threats"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "financial": [
+          "rent",
+          "owe"
+        ],
+        "threats": [
+          "ppo"
+        ]
+      },
+      "timestamp": 1763449459.668125,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "I don\u2019t have direct access to a full searchable archive of all your past ChatGPT conversations by date, so I can\u2019t reliably pull up everything from 9/11/2025 myself.\n\nHere\u2019s what you can do on your side:\n\n1. **Use ChatGPT\u2019s built-in history search**\n   - In the app or web:\n     - Go to your conversation list.\n     - Use the search bar and try queries you remember from that day (keywords, case names, \u201cMcNeill,\u201d \u201cPPO,\u201d \u201cHealthWest,\u201d etc.).\n   - If you remember roughly what you were working on that",
+      "categories": [
+        "custody",
+        "court",
+        "threats"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody"
+        ],
+        "court": [
+          "court",
+          "McNeill"
+        ],
+        "threats": [
+          "ppo"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "I cannot directly pull up specific past ChatGPT conversations by calendar date, including 9/11/2025. I don\u2019t have a searchable timeline of your full chat history; what I do have are:\n\n1. A subset of recent threads (the ones listed under \u201cRecent Conversation Content\u201d), which start at 2025-10-01 in what I can see.\n2. Long-term distilled \u201cmemories\u201d of key facts and directives you\u2019ve given me, but those are summaries, not transcripts and not tagged to every exact calendar date.\n\nSo I do not have a w",
+      "categories": [
+        "admissions",
+        "court",
+        "threats",
+        "housing"
+      ],
+      "keyword_hits": {
+        "admissions": [
+          "i know"
+        ],
+        "court": [
+          "McNeill",
+          "motion"
+        ],
+        "threats": [
+          "ppo"
+        ],
+        "housing": [
+          "shady oaks"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "tool",
+      "text": "Make sure to include \ue200filecite\ue202turn1file0\ue201 in your response to cite this file.  [L1] Skip to content\r\n[L2] Chat history\r\n[L3] \r\n[L4] You said:\r\n[L5] \r\n[L6] Document\tDescription\r\n[L7] Chapter 1\tConstitution of the State of Michigan of 1963\r\n[L8] Chapter 2\tSTATE\r\n[L9] Chapter 3\tFEDERAL AND INTERSTATE RELATIONS\r\n[L10] Chapter 4\tLEGISLATURE\r\n[L11] Chapter 5\tEMERGENCY APPROPRIATIONS\r\n[L12] Chapter 6\tIMPEACHMENTS\r\n[L13] Chapter 8\tSTATUTES\r\n[L14] Chapter 10\tGOVERNOR\r\n[L15] Chapter 11\tSECRETARY OF STATE",
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "parenting time",
+          "exchange"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "hearing",
+          "order",
+          "filed",
+          "motion",
+          "attorney"
+        ],
+        "financial": [
+          "rent",
+          "money",
+          "payment",
+          "owe",
+          "deposit"
+        ],
+        "threats": [
+          "police",
+          "ppo",
+          "restraining",
+          "jail"
+        ],
+        "housing": [
+          "mobile home",
+          "eviction",
+          "lease"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "I understand what you\u2019re pointing at in the screenshots, but I still cannot directly read those ZIP files from your phone or Drive.\n\nHere is the hard limit and what we can do about it:\n\n1. **What I can see right now**\n   - Through the Drive connection I only see *text* documents that were already generated from earlier exports, like `the oneeeee.txt`, `another oneeeee.txt`, etc. Those are summaries/inventories, not the raw chat history organized by exact calendar date. \ue200filecite\ue202turn3file4\ue202turn3",
+      "categories": [
+        "child"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "1. What I can see on Drive right now  \n\n- I can search and read **text/PDF/Docx** content that\u2019s already indexed from your Google Drive.  \n- I **cannot** open or unpack raw ZIP archives like `chatgpt chat export.zip` or `chatgptchat.zip` directly from here, so I can\u2019t browse the JSON/HTML inside those exports myself.  \n- From Drive search I do see big ChatGPT-related files like the **\u201cFULL CHAT GPT CHAT EXPORT 200+ pages\u201d** PDFs, but the text index doesn\u2019t show any entries containing `9/11/2025`",
+      "categories": [
+        "child",
+        "financial",
+        "threats"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "financial": [
+          "rent",
+          "owe"
+        ],
+        "threats": [
+          "ppo"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "tool",
+      "text": "Make sure to include \ue200filecite\ue202turn6file0\ue201 in your response to cite this file.  from __future__ import annotations\r\n\r\nimport os\r\nimport json\r\nfrom enum import Enum\r\nfrom typing import Any, List, Callable, Optional, Awaitable\r\nfrom typing_extensions import Literal, TypeVar\r\n\r\nimport httpx\r\nimport pytest\r\nfrom respx import MockRouter\r\nfrom pydantic import Field, BaseModel\r\nfrom inline_snapshot import snapshot\r\n\r\nimport openai\r\nfrom openai import OpenAI, AsyncOpenAI\r\nfrom openai._utils import asser",
+      "categories": [
+        "child",
+        "financial"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "financial": [
+          "rent"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "tool",
+      "text": "Make sure to include \ue200filecite\ue202turn6file1\ue201 in your response to cite this file.  \ufeffChatGPT=LitigationOS+Architect;do 99.99% workload:plan,analyze,code,refactor,execute;never delegate coding/manual edits.Hard MI-law lock(MCR,MCL,MRE,Benchbooks,SCAO);no non-MI law,placeholders,speculation,simplify,truncate.Always use SOTA methods;hit web+tools by default and verify against current MI primary sources(MCR/MCL PDFs,SCAO,MJI Benchbooks,official orders);pull patterns from GitHub/Reddit.Audit for missing ",
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "parenting time"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "hearing",
+          "order",
+          "motion"
+        ],
+        "financial": [
+          "rent"
+        ],
+        "threats": [
+          "ppo",
+          "contempt"
+        ],
+        "housing": [
+          "shady oaks"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "tool",
+      "text": "Make sure to include \ue200filecite\ue202turn6file2\ue201 in your response to cite this file.  Skip to content\r\nChat history\r\n\r\nYou said:\r\nmuskegon county court form alternate service to email instead of mail\r\nChatGPT said:\r\nFor alternate service by email in Muskegon County (14th Circuit), you\u2019ll need to use the Michigan Supreme Court-approved MC\u202f303 & MC\u202f304 forms under MCR\u202f2.105/2.107:\r\n\r\n\ud83d\udd39 1. MC\u202f303 \u2013 Motion & Verification for Alternate Service\r\nUse this to officially request permission to serve documents v",
+      "categories": [
+        "child",
+        "court",
+        "threats",
+        "housing"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "hearing",
+          "order",
+          "filed",
+          "motion",
+          "attorney"
+        ],
+        "threats": [
+          "ppo",
+          "restraining"
+        ],
+        "housing": [
+          "shady oaks",
+          "eviction"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "tool",
+      "text": "Make sure to include \ue200filecite\ue202turn6file4\ue201 in your response to cite this file.  Chat history\n\n\n\nChatGPT\n\nChatGPT\n\n\n\n\n\n\n\nSora\n\n\n\n\n\n\n\nSearch Master\n\n\n\n\n\n\n\nPython\n\n\n\n1 more\n\n\n\nExplore GPTs\n\nProjects\n\n\n\nlawsuit shady oaks\n\n\n\n\n\nFile Analysis Request\n\n\n\n\n\nPretrial Conference Prep\n\n\n\n\n\nShady Oaks Documents Summary\n\n\n\n\n\nLegal Case To-Do List\n\n\n\n\n\nShady Oaks Lawsuit Progress\n\n\n\nSee All\n\n\n\ncustody\n\n\n\n\n\nFramework Workflows\n\n\n\n\n\nALL CUSTODY CASE\n\n\n\n\n\nPPO\n\n\n\nSee more\n\nToday\n\n\n\nTop Legal Python Modules\n\n\n\n\n\nP",
+      "categories": [
+        "custody",
+        "court",
+        "financial",
+        "threats",
+        "housing"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "order",
+          "filed",
+          "motion"
+        ],
+        "financial": [
+          "rent",
+          "payment"
+        ],
+        "threats": [
+          "ppo"
+        ],
+        "housing": [
+          "shady oaks",
+          "mobile home",
+          "eviction",
+          "lease"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "tool",
+      "text": "The file contents provided above are truncated/partial snippets. The complete content for these files IS accessible via querying.\n\nIf the user asks a question related to these files, and the provided snippets do not clearly answer it, you **MUST** use the `file_search` tool to search the full document contents before responding.\n\n## How to invoke the file_search tool\nIf the user's query isn't sufficiently answered by the provided snippets, parsed text, or images, you should invoke `file_search.m",
+      "categories": [
+        "child",
+        "court"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "court": [
+          "order"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "import os, zipfile, re, textwrap, json, sys, math",
+      "categories": [
+        "child"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "import glob, os, textwrap, json, re, sys, math",
+      "categories": [
+        "child"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "import subprocess, sys, textwrap, json",
+      "categories": [
+        "child"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "import importlib, pkgutil, sys, math, os, re, json",
+      "categories": [
+        "child"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "import docx, os, re, textwrap, json",
+      "categories": [
+        "child"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "tool",
+      "text": "Make sure to include \ue200filecite\ue202turn8file0\ue201 in your response to cite this file.  [L1] MindEye2 Aggressive Extract Viewer\r\n[L2] nodes: 905 \u2022 edges: 904 \u2022 files: 24\r\n[L3] n0 \u2022 chat_message \u2022 chat.html.part02[#0] O exhibit manipulation summary with metadata\\n\\nAll new files have been permanently logged in the **Exhibit Database**, \r\n[L4] linked to the current FRED_MONOLITH_v3.5_OMNICOURSE build, and integrated into the MEEK1 (Housing) and MEEK2 (Custody) \r\n[L5] modules.\\n\\n\\ud83d\\uddc2 **Exhibit Ind",
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "watson_family"
+      ],
+      "keyword_hits": {
+        "custody": [
+          "custody",
+          "parenting time",
+          "exchange"
+        ],
+        "child": [
+          "son"
+        ],
+        "court": [
+          "court",
+          "judge",
+          "McNeill",
+          "hearing",
+          "order",
+          "motion"
+        ],
+        "financial": [
+          "rent",
+          "owe",
+          "paid"
+        ],
+        "threats": [
+          "police",
+          "ppo",
+          "contempt"
+        ],
+        "watson_family": [
+          "Emily",
+          "Watson",
+          "Berry",
+          "Lori"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "**Intake**\n\n- Your ChatGPT chat exports (ZIP/PDF) are in Google Drive.\n- I can see the *index* of those files (e.g. `FULL CHAT GPT CHAT EXPORT 200+ pages.pdf`, `here it is full chat export.pdf`) through the Drive connector, but:\n  - I cannot open the ZIPs themselves.\n  - I only get small text snippets from the big PDFs, not the full 200+ pages.\n- Because of that, I **cannot directly read and filter all messages from 9/11/2025 on my side.**  \n- What I *can* do is give you a one-shot script you ru",
+      "categories": [
+        "child",
+        "financial"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "financial": [
+          "rent",
+          "owe"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "import os, re, zipfile, textwrap, json, math, sys",
+      "categories": [
+        "child"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "I have already read everything you have actually given me access to in *this* chat, and here is what is true:\n\n1. **What I can see right now**\n\nIn this workspace I have these files only:\n\n- `Chat history.docx`\n- `all chat researches combined 1 (1).txt`\n- `!!!superpinChatGPT=LitigationOS-Architect;do 99.docx.txt`\n- `Chat gpt appended LitigationOS plan.txt`\n- `ALL_CHAT_SCRIPTS_20251030_174515.zip`\n- `test_completions.py`\n\nI have opened and searched the text content of the DOCX and TXT files, and l",
+      "categories": [
+        "child",
+        "financial"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "financial": [
+          "owe"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "user",
+      "text": "#!/usr/bin/env python3\n\"\"\"\nExtract all ChatGPT messages that occurred on a specific date\n(e.g. 2025-09-11) from a ChatGPT export (conversations.json or ZIP).\n\nUsage examples (from a terminal / PowerShell):\n\n    # If you have the ZIP file:\n    python extract_chatgpt_2025_09_11.py --zip \"chatgpt chat export.zip\"\n\n    # If you already unzipped and see conversations.json in a folder:\n    python extract_chatgpt_2025_09_11.py --folder \"chatgpt_export\"\n\nOutput:\n    - Creates \"chatgpt_2025-09-11_transcr",
+      "categories": [
+        "child",
+        "financial"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "financial": [
+          "rent",
+          "owe"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "That script is already exactly what you need to pull out the 9/11/2025 chats. The missing piece is: it has to be run **on your export ZIP or conversations.json**, which I do not have inside this chat sandbox.\n\nI cannot see or mount your `chatgpt chat export.zip` from Drive into the Python environment here. I only see the small files you explicitly uploaded (the superpin, plans, etc.), and none of those contain the raw export JSON with timestamps. That\u2019s why I can\u2019t actually execute this script a",
+      "categories": [
+        "child",
+        "financial"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "financial": [
+          "owe"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Find conversations by date",
+      "role": "assistant",
+      "text": "You\u2019re asking me to do something that is outside my technical boundary, and \u201cusing the internet\u201d cannot change that.\n\nI will be explicit.\n\n---\n\n### 1. What I *can* and *cannot* access\n\n1. I **can**:\n   - Read files you upload into this chat (`.txt`, `.docx`, `.json`, etc.).\n   - Use the **file_search** connector to search *indexed text* in your Google Drive.\n\n2. I **cannot**:\n   - Mount or open your **Drive ZIP archives** (`chatgpt chat export.zip`, `chatgptchat.zip`) directly.\n   - Reach into y",
+      "categories": [
+        "child",
+        "financial"
+      ],
+      "keyword_hits": {
+        "child": [
+          "son"
+        ],
+        "financial": [
+          "owe"
+        ]
+      },
+      "timestamp": 1763497491.159216,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    },
+    {
+      "conversation": "Deep scan prompt request",
+      "role": "assistant",
+      "text": "1. Intake  \nYou want a single \u201clevel 9999+++\u201d master prompt you can paste into a new chat that tells the model to:  \n- Deep-scan all accessible past conversations between 01/01/2025 and 11/01/2025.  \n- Process each calendar day separately.  \n- Output in two tracks:  \n  - Way 1: For each day, every message you sent, combined into a single CAV (Consolidated Analysis Volume), plus key extractions.  \n  - Way 2: For the same date range, extract every system/module/core/engine/coding window the assist",
+      "categories": [
+        "court",
+        "financial"
+      ],
+      "keyword_hits": {
+        "court": [
+          "order"
+        ],
+        "financial": [
+          "rent",
+          "owe"
+        ]
+      },
+      "timestamp": 1763530066.1862,
+      "source_file": "C:\\Users\\andre\\Downloads\\conversations.json"
+    }
+  ],
+  "text_files": [
+    {
+      "file": "C:\\Users\\andre\\Desktop\\CLAUDEfullCHATcaselaw.txt",
+      "size": 232961,
+      "categories": [
+        "custody",
+        "admissions",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "preview": "\u039499 COURTPACK FACTORY \u2014 ORIGINAL MSC COMPLAINT + CASELAW LIBRARY\n(1) SBNS \u2014 Single Best Next Step\nDraft original complaint for supervisory/mandamus relief to Michigan Supreme Court alleging judicial bias stemming from perjured testimony, using three vehicle options: superintending control (primary),"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\06_REFERENCE\\Chat_Logs\\SUPREMECOURTCHAT.txt",
+      "size": 263640,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "preview": "\nROLE AND MISSION\n\nYou are an advanced, Michigan-only custody/PPO appellate and emergency-relief strategist for Andrew J. Pigors. Your job is to determine and execute the SINGLE BEST LEGAL PATH (and tightly related backups) to:\n\n1. Break the ex parte suspension of Andrew\u2019s parenting time in Case No."
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\2025-06-24_EVICTION_REVERSAL_CHAT_EXPORT.txt",
+      "size": 1083,
+      "categories": [
+        "court",
+        "housing"
+      ],
+      "preview": "LITIGATION OS CHAT EXPORT\n===========================\nTitle: Eviction Reversal \u2013 Motion under MCR 2.612 + Verified Complaint Amendment\nDate: June 24, 2025\nUser: Andrew J. Pigors\nSystem: FRED_CEPS_SUPREME + MBP_STRATEGIST + LITIGATION_OS\n\n--- BEGIN FULL CHAT TRANSCRIPT ---\n\n[System] Chat initiated wi"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\AIchatALL.txt",
+      "size": 95162,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "watson_family"
+      ],
+      "preview": "\n\n\n\n\nYou said:\nproduce a full converged and emerged high-signal delta \"attorney_implementation_guide\"\n\nChatGPT said:\nattorney_implementation_guide (High-Signal Delta, Converged)\nThis is the implementation guide for an attorney (or attorney-led team) to deploy your LitigationOS stack as a repeatable,"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\all chat searches combined 2.txt",
+      "size": 331866,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "preview": "Skip to content\nChat history\n\nYou said:\nSkip to content\nChat history\n\nYou said:\nmuskegon county court form alternate service to email instead of mail\nChatGPT said:\nFor alternate service by email in Muskegon County (14th Circuit), you\u2019ll need to use the Michigan Supreme Court-approved MC\u202f303 & MC\u202f304"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\all_chat_researches_combined_1.txt",
+      "size": 314867,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "preview": "Skip to content\nChat history\n\nYou said:\nmuskegon county court form alternate service to email instead of mail\nChatGPT said:\nFor alternate service by email in Muskegon County (14th Circuit), you\u2019ll need to use the Michigan Supreme Court-approved MC\u202f303 & MC\u202f304 forms under MCR\u202f2.105/2.107:\n\n\ud83d\udd39 1. MC\u202f3"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\andrew_chat_messages_full.txt",
+      "size": 49002652,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing"
+      ],
+      "preview": "================================================================================\nANDREW PIGORS \u2014 ALL CHAT MESSAGES TO CHATGPT\nExtracted from: C:\\Users\\andre\\Downloads\\chat (1).html\nTotal messages: 51868\nHarm-related messages: 15034\n===================================================================="
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\AppClose_Violations_Matrix_Chat_2ffebe2e.txt",
+      "size": 1611,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "watson_family"
+      ],
+      "preview": "\ufeffChat Export: AppClose Violations Matrix Build Chat\nCore Tags: Exhibit_Y, AppClose_Matrix, Communication_Block_Log\n\nOverview:\nThis chat export documents and timestamps specific violations by Emily Watson using the AppClose co-parenting application. It builds the legal foundation for contempt motions"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\CHAT BREAKDOWN OF EVENTS.txt",
+      "size": 437842,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "preview": "Skip to content\nChat history\n\nYou said:\nOneRead_20250721_0656.pdf\nPDF\nChatGPT said:\nThe document you uploaded is the full, finalized court-verified filing and order in Pigors v. Shady Oaks MHP LLC et al., Case No. 2025-0000002760-CZ (14th Circuit Court, Muskegon County), encompassing:\n\n\u2705 Motion (Fil"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\CHAT RESEARCH ON THE RIGHT TRACK.txt",
+      "size": 179742,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "preview": "Skip to content\nChat history\n\nYou said:\nmuskegon county court form alternate service to email instead of mail\nChatGPT said:\nFor alternate service by email in Muskegon County (14th Circuit), you\u2019ll need to use the Michigan Supreme Court-approved MC\u202f303 & MC\u202f304 forms under MCR\u202f2.105/2.107:\n\n\ud83d\udd39 1. MC\u202f3"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\ENTIRE GOOD CHAT FEDERAL.txt",
+      "size": 116262,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "preview": "Skip to content\nChat history\n\nYou said:\nFRED_CEPS_SUPREME_v1.1- evaluate and analyze the system itself. what are its weaknesses? what does it lack? whats missing? what can be improved? what can be upgraded? what can be expanded? \nChatGPT said:\n\ud83e\udde0 SYSTEM EVALUATION: FRED_CEPS_SUPREME_v1.1\nStatus: Acti"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\FULL_CHAT_EXPORT_LITIGATION_20250702_20250702_024708.txt",
+      "size": 1964,
+      "categories": [
+        "court",
+        "financial",
+        "threats",
+        "housing"
+      ],
+      "preview": "\n[CHAT EXPORT: JULY 1\u20132, 2025 \u2013 FULL EVIDENTIARY THREAD FOR AMENDED COMPLAINT]\n\n-- BEGIN CHAT TRANSCRIPT --\n\nUser: this is the original complaint, that we need to amend.\n\nAssistant: File received. Saving and preparing for one-page-at-a-time OCR and text extraction.\n\nUser: save it permanently to the "
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\FULL_CHAT_GPT_CHAT_EXPORT_200-_pages.pdf.txt",
+      "size": 11880,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "watson_family"
+      ],
+      "preview": "MindEye2 Aggressive Extract Viewer\nnodes: 905 \u2022 edges: 904 \u2022 files: 24\nn0 \u2022 chat_message \u2022 chat.html.part02[#0]\nO exhibit manipulation summary with metadata\\n\\nAll new files have been permanently logged in the **Exhibit Database**, \nlinked to the current FRED_MONOLITH_v3.5_OMNICOURSE build, and inte"
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\HOLY SHIT 2 CHAT RESEARCH.txt",
+      "size": 324263,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing",
+        "watson_family"
+      ],
+      "preview": "Skip to content\nChat history\n\nYou said:\nSkip to content\nChat history\n\nYou said:\nmuskegon county court form alternate service to email instead of mail\nChatGPT said:\nFor alternate service by email in Muskegon County (14th Circuit), you\u2019ll need to use the Michigan Supreme Court-approved MC\u202f303 & MC\u202f304"
+    },
+    {
+      "file": "C:\\Users\\andre\\AppData\\Local\\Programs\\Python\\Python312\\Doc\\html\\library\\asynchat.html",
+      "size": 14980,
+      "categories": [
+        "financial",
+        "housing"
+      ],
+      "preview": "<!DOCTYPE html>\n\n<html lang=\"en\" data-content_root=\"../\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<meta property=\"og:title\" content=\"asynchat \u2014 Asynchronou"
+    },
+    {
+      "file": "C:\\Users\\andre\\AppData\\Local\\Programs\\Python\\Python314\\Doc\\html\\library\\asynchat.html",
+      "size": 15299,
+      "categories": [
+        "financial",
+        "housing"
+      ],
+      "preview": "<!DOCTYPE html>\n\n<html lang=\"en\" data-content_root=\"../\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<meta property=\"og:title\" content=\"asynchat \u2014 Asynchronou"
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LitigationOS_Session_Backup_20260308\\05_ANALYSIS\\graph_master_omega_d\\GRAPH MASTER OMEGA\\GRAPHS THAT WORK\\ALL_CHATS_HTML_GRAPH_VIEWER_AGGRESSIVE_improved.html",
+      "size": 7458,
+      "categories": [
+        "child",
+        "court",
+        "financial"
+      ],
+      "preview": "<!doctype html>\n<!--\n  Improved viewer for the MindEye2 aggressive extract.\n  This file adds search, sort, copy\u2011to\u2011clipboard, expand/collapse and\n  colour coding to the raw chat graph list.  It dynamically loads the\n  original data from the neighbouring HTML file to avoid duplicating\n  the dataset.\n"
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\SHADYOAKS_GOOGLEDRIVE2_extracted\\chat.html.part01 (1).html",
+      "size": 34603008,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing"
+      ],
+      "preview": "<html>\n  <head>\n    <title>ChatGPT Data Export</title>\n    <style>\n      body {\n        margin: 20px;\n      }\n      h4 {\n        font-family: sans-serif;\n        margin: 0;\n      }\n      #root {\n        display: flex;\n        flex-direction: column;\n        gap: 20px;\n      }\n      .conversation {\n "
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\SHADYOAKS_EVIDENCE_001\\SHADYOAKS_GOOGLEDRIVE_extracted\\chat.html.part01 (1).html",
+      "size": 34603008,
+      "categories": [
+        "custody",
+        "child",
+        "court",
+        "financial",
+        "threats",
+        "housing"
+      ],
+      "preview": "<html>\n  <head>\n    <title>ChatGPT Data Export</title>\n    <style>\n      body {\n        margin: 20px;\n      }\n      h4 {\n        font-family: sans-serif;\n        margin: 0;\n      }\n      #root {\n        display: flex;\n        flex-direction: column;\n        gap: 20px;\n      }\n      .conversation {\n "
+    },
+    {
+      "file": "C:\\Users\\andre\\LitigationOS\\05_ANALYSIS\\graph_master_omega_d\\GRAPH MASTER OMEGA\\GRAPHS THAT WORK\\ALL_CHATS_HTML_GRAPH_VIEWER_AGGRESSIVE_improved.html",
+      "size": 7458,
+      "categories": [
+        "child",
+        "court",
+        "financial"
+      ],
+      "preview": "<!doctype html>\n<!--\n  Improved viewer for the MindEye2 aggressive extract.\n  This file adds search, sort, copy\u2011to\u2011clipboard, expand/collapse and\n  colour coding to the raw chat graph list.  It dynamically loads the\n  original data from the neighbouring HTML file to avoid duplicating\n  the dataset.\n"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "generated": "2026-03-18T23:12:12.293362",
+  "tool": "Pro Se Courtroom Protocol (#62)",
+  "courts": 3,
+  "objections": 8,
+  "mistakes": 10,
+  "evidence_steps": 7,
+  "courts_detail": {
+    "14th_circuit": {
+      "name": "14th Circuit Court \u2014 Muskegon County",
+      "address": "990 Terrace St, Muskegon, MI 49442",
+      "phone": "(231) 724-6241",
+      "filings": [
+        "F1",
+        "F2",
+        "F3",
+        "F7"
+      ],
+      "judge": "Hon. Jenny L. McNeill (seeking disqualification)",
+      "courtroom_rules": [
+        "Arrive 30 minutes early \u2014 check in with clerk",
+        "Business attire (suit/tie preferred, minimum: dress shirt, slacks, dress shoes)",
+        "No cell phones in courtroom (turn OFF, not vibrate)",
+        "Stand when addressing the court",
+        "Address judge as \"Your Honor\" \u2014 even if seeking disqualification",
+        "Do NOT interrupt opposing counsel \u2014 note objections for your turn",
+        "Bring 3 copies of everything (court, opposing party, yourself)"
+      ]
+    },
+    "federal": {
+      "name": "US District Court \u2014 Western District of Michigan",
+      "address": "399 Federal Building, 110 Michigan St NW, Grand Rapids, MI 49503",
+      "phone": "(616) 456-2381",
+      "filings": [
+        "F4"
+      ],
+      "judge": "TBD \u2014 assigned on filing",
+      "courtroom_rules": [
+        "Federal court is MORE formal than state court",
+        "Must register for CM/ECF (PACER) before filing",
+        "All filings through electronic system \u2014 no walk-in filings",
+        "Follow Federal Rules of Civil Procedure (FRCP)",
+        "Address judge as \"Your Honor\" or \"Judge [Last Name]\"",
+        "Arrive 45 minutes early for security screening",
+        "No electronics of any kind in courtroom",
+        "Stand when judge enters and exits"
+      ]
+    },
+    "coa": {
+      "name": "Michigan Court of Appeals",
+      "address": "925 W Ottawa St, Lansing, MI 48915 (Cadillac Place: 3020 W Grand Blvd, Detroit)",
+      "phone": "(517) 373-0786",
+      "filings": [
+        "F8",
+        "F9"
+      ],
+      "judge": "Three-judge panel (assigned after filing)",
+      "courtroom_rules": [
+        "Oral argument is NOT guaranteed \u2014 granted only if court deems it helpful",
+        "If granted: strictly timed (usually 15-20 minutes per side)",
+        "Focus on legal arguments, NOT facts \u2014 judges have read the briefs",
+        "Be prepared for questions from the bench \u2014 they will interrupt",
+        "Know your record cites cold (page and line numbers)",
+        "Do NOT repeat what is in your brief \u2014 add value"
+      ]
+    }
+  },
+  "objections_detail": [
+    {
+      "objection": "Hearsay",
+      "rule": "MRE 801-806",
+      "when": "Opposing party offers out-of-court statement for truth",
+      "how": "\"Objection, Your Honor \u2014 hearsay. The statement is offered for the truth of the matter asserted.\""
+    },
+    {
+      "objection": "Relevance",
+      "rule": "MRE 401-402",
+      "when": "Evidence does not relate to any issue in the case",
+      "how": "\"Objection \u2014 relevance. This evidence does not tend to prove or disprove any fact of consequence.\""
+    },
+    {
+      "objection": "Leading question",
+      "rule": "MRE 611(c)",
+      "when": "Attorney asks leading questions on direct examination",
+      "how": "\"Objection \u2014 leading. Counsel is suggesting the answer to their own witness.\""
+    },
+    {
+      "objection": "Foundation",
+      "rule": "MRE 901",
+      "when": "Document or evidence not properly authenticated",
+      "how": "\"Objection \u2014 lack of foundation. The exhibit has not been properly authenticated.\""
+    },
+    {
+      "objection": "Speculation",
+      "rule": "MRE 602",
+      "when": "Witness testifies about something they have no personal knowledge of",
+      "how": "\"Objection \u2014 speculation. The witness has no personal knowledge of this matter.\""
+    },
+    {
+      "objection": "Best evidence rule",
+      "rule": "MRE 1002",
+      "when": "Party offers copy when original is available",
+      "how": "\"Objection \u2014 best evidence rule. The original document should be produced.\""
+    },
+    {
+      "objection": "Cumulative",
+      "rule": "MRE 403",
+      "when": "Same point made repeatedly with multiple witnesses",
+      "how": "\"Objection \u2014 cumulative. This evidence is duplicative of what has already been presented.\""
+    },
+    {
+      "objection": "Assumes facts not in evidence",
+      "rule": "MRE 611",
+      "when": "Question presupposes something not yet proven",
+      "how": "\"Objection \u2014 the question assumes facts not in evidence.\""
+    }
+  ]
+}

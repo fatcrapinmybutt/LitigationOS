@@ -1,0 +1,205 @@
+{
+  "generated": "2026-03-18T23:08:47.932302",
+  "tool": "Response Anticipator (#59)",
+  "total_responses": 19,
+  "risk_summary": {
+    "high": 0,
+    "medium": 7,
+    "low": 1
+  },
+  "anticipations": {
+    "F1": {
+      "title": "Emergency Parenting Time Motion",
+      "court": "14th Circuit Court",
+      "likely_responses": [
+        {
+          "response": "Motion to Dismiss \u2014 No Emergency Exists",
+          "argument": "Defendant will argue current parenting arrangement is stable and no emergency justifies modifying it.",
+          "rebuttal": "Child has been denied ALL parenting time with father since [date]. Complete denial of parenting time IS the emergency per MCL 722.27a(7). The status quo is the emergency.",
+          "authority": "MCL 722.27a(7); Shade v Wright 291 Mich App 17 (2010)",
+          "risk": "Medium"
+        },
+        {
+          "response": "Claim of Safety Concerns",
+          "argument": "Defendant will assert child safety justifies zero parenting time, referencing PPO history.",
+          "rebuttal": "PPO was obtained through fraud (documented false allegations). No evidence of actual harm. PPO has expired. Father has no criminal history of violence. Best interest factors favor contact per MCL 722.23.",
+          "authority": "MCL 722.23; Vodvarka v Grasmeyer 259 Mich App 499 (2003)",
+          "risk": "High \u2014 judge may defer to prior PPO narrative"
+        },
+        {
+          "response": "Request for GAL/Psychological Evaluation",
+          "argument": "Defendant may ask court to appoint guardian ad litem or order psychological evaluation before changing custody.",
+          "rebuttal": "While evaluation is appropriate for custody modification, it should not delay emergency restoration of parenting time. Court can order evaluation concurrent with supervised parenting time.",
+          "authority": "MCL 722.24; MCR 3.904",
+          "risk": "Low \u2014 actually benefits father if evaluation is fair"
+        }
+      ]
+    },
+    "F2": {
+      "title": "Fraud Upon the Court Complaint",
+      "court": "14th Circuit Court",
+      "likely_responses": [
+        {
+          "response": "Motion to Dismiss \u2014 Res Judicata / Collateral Estoppel",
+          "argument": "These issues were already litigated in the custody case.",
+          "rebuttal": "Fraud upon the court is NEVER barred by res judicata. MCR 2.612(C)(3) provides independent action for fraud with NO time limit. Hazel Park v Highland Park 350 Mich 286.",
+          "authority": "MCR 2.612(C)(3); Hazel Park v Highland Park 350 Mich 286",
+          "risk": "Medium"
+        },
+        {
+          "response": "Deny All Allegations of Fraud",
+          "argument": "General denial \u2014 no fraud occurred, filings were truthful.",
+          "rebuttal": "Documented contradictions between defendant's sworn statements and objective evidence (text messages, third-party witnesses, photos with metadata). Contradictions speak for themselves.",
+          "authority": "MRE 801(d)(2) \u2014 Opposing party statements",
+          "risk": "Low \u2014 evidence is strong"
+        },
+        {
+          "response": "Anti-SLAPP / Vexatious Litigant Motion",
+          "argument": "Plaintiff is filing frivolous claims to harass defendant.",
+          "rebuttal": "Michigan does not have an anti-SLAPP statute. Claims are supported by evidence. Pro se litigants entitled to liberal construction. Diehl v Danuloff 242 Mich App 120.",
+          "authority": "Diehl v Danuloff 242 Mich App 120; MCR 2.114",
+          "risk": "Low"
+        }
+      ]
+    },
+    "F3": {
+      "title": "Judicial Disqualification Motion",
+      "court": "14th Circuit Court",
+      "likely_responses": [
+        {
+          "response": "Judge Refuses Recusal \u2014 No Bias Shown",
+          "argument": "Prior rulings alone do not establish bias. Judge will claim impartiality.",
+          "rebuttal": "Pattern of 1,127 documented violations goes far beyond routine rulings. Ex parte communications, denial of due process, failure to follow mandatory statutes. Armstrong v Ypsilanti 248 Mich App 573.",
+          "authority": "MCR 2.003(C)(1); Armstrong v Ypsilanti 248 Mich App 573",
+          "risk": "High \u2014 judges rarely recuse themselves"
+        },
+        {
+          "response": "Claim Waiver \u2014 Should Have Raised Earlier",
+          "argument": "Failure to timely move for disqualification waives the right.",
+          "rebuttal": "MCR 2.003(D)(1) requires motion within 14 days of discovering bias. New violations continue. Pattern only became clear through comprehensive analysis. Continuing violations doctrine applies.",
+          "authority": "MCR 2.003(D)(1); In re Contempt of Dougherty 429 Mich 81",
+          "risk": "Medium"
+        }
+      ]
+    },
+    "F4": {
+      "title": "42 USC \u00a71983 Federal Civil Rights",
+      "court": "USDC Western District Michigan",
+      "likely_responses": [
+        {
+          "response": "Younger Abstention",
+          "argument": "Federal court should abstain from interfering with state family court proceedings.",
+          "rebuttal": "Sprint Communications v Jacobs 571 US 69 \u2014 Younger is limited to 3 narrow categories. Bad faith prosecution / patently unconstitutional statutes exceptions apply when due process is denied.",
+          "authority": "Sprint v Jacobs 571 US 69; Middlesex County Ethics v Garden State Bar 457 US 423",
+          "risk": "High \u2014 most common federal defense in family law cases"
+        },
+        {
+          "response": "Domestic Relations Exception",
+          "argument": "Federal courts lack jurisdiction over custody disputes.",
+          "rebuttal": "Ankenbrandt v Richards 504 US 689 \u2014 exception is NARROW (divorce, alimony, custody decrees). \u00a71983 constitutional claims are NOT custody disputes. Catz v Chalker 142 F.3d 279 (6th Cir).",
+          "authority": "Ankenbrandt v Richards 504 US 689; Catz v Chalker 142 F.3d 279",
+          "risk": "High \u2014 must distinguish clearly"
+        },
+        {
+          "response": "Judicial Immunity",
+          "argument": "Judge McNeill has absolute judicial immunity from \u00a71983 damages.",
+          "rebuttal": "Dennis v Sparks 449 US 24 \u2014 conspiracy with private parties pierces immunity. Also seeking injunctive relief (Pulliam v Allen 466 US 522) which is not barred by immunity.",
+          "authority": "Dennis v Sparks 449 US 24; Pulliam v Allen 466 US 522",
+          "risk": "Medium \u2014 conspiracy allegation must be well-pled"
+        },
+        {
+          "response": "Rooker-Feldman Doctrine",
+          "argument": "Cannot use federal court as appeals court for state court decisions.",
+          "rebuttal": "Exxon Mobil v Saudi Basic Industries 544 US 280 \u2014 R-F is narrow, only bars \"state-court losers\" from appealing. Independent \u00a71983 claims for constitutional violations are not appeals of state rulings.",
+          "authority": "Exxon Mobil v Saudi Basic 544 US 280; Lance v Dennis 546 US 459",
+          "risk": "Medium"
+        }
+      ]
+    },
+    "F5": {
+      "title": "MSC Complaint for Superintending Control",
+      "court": "Michigan Supreme Court",
+      "likely_responses": [
+        {
+          "response": "Deny Leave \u2014 Not Extraordinary Circumstances",
+          "argument": "MSC original jurisdiction requires extraordinary circumstances. Normal appellate process is adequate.",
+          "rebuttal": "Void orders, systematic denial of due process, and judicial misconduct ARE extraordinary. COA process is inadequate when the entire lower court system is compromised.",
+          "authority": "Const 1963 Art 6 \u00a74; In re Hague 412 Mich 532",
+          "risk": "High \u2014 MSC grants original jurisdiction rarely"
+        }
+      ]
+    },
+    "F6": {
+      "title": "JTC Complaint \u2014 Judicial Misconduct",
+      "court": "Judicial Tenure Commission",
+      "likely_responses": [
+        {
+          "response": "Dismiss \u2014 Insufficient Evidence of Misconduct",
+          "argument": "Rulings adverse to complainant do not constitute misconduct.",
+          "rebuttal": "1,127 documented violations, pattern of ex parte communications, denial of statutory rights. This goes far beyond adverse rulings \u2014 it is systematic misconduct.",
+          "authority": "Const 1963 Art 6 \u00a730; MCR 9.200 et seq.",
+          "risk": "Medium \u2014 JTC has wide discretion"
+        }
+      ]
+    },
+    "F7": {
+      "title": "Custody Modification Motion",
+      "court": "14th Circuit Court",
+      "likely_responses": [
+        {
+          "response": "No Proper Cause / Change of Circumstances",
+          "argument": "Under Vodvarka, plaintiff must show proper cause or change of circumstances to modify custody.",
+          "rebuttal": "Complete denial of ALL parenting time is a drastic change. Discovery of fraud in original proceedings is proper cause. Vodvarka v Grasmeyer 259 Mich App 499.",
+          "authority": "Vodvarka v Grasmeyer 259 Mich App 499; MCL 722.27(1)(c)",
+          "risk": "Medium"
+        },
+        {
+          "response": "Best Interest \u2014 Status Quo Preferred",
+          "argument": "Child is established in current environment. Disruption not in best interest.",
+          "rebuttal": "MCL 722.23 factor (j) \u2014 willingness to facilitate close relationship with other parent. Mother has completely eliminated father-child contact. Status quo IS the harm.",
+          "authority": "MCL 722.23(j); MCL 722.27a",
+          "risk": "Medium"
+        }
+      ]
+    },
+    "F8": {
+      "title": "COA Application for Leave",
+      "court": "Michigan Court of Appeals",
+      "likely_responses": [
+        {
+          "response": "Deny Leave \u2014 No Manifest Injustice",
+          "argument": "Standard denial without opinion.",
+          "rebuttal": "Application must demonstrate clear legal errors, not just disagreement with outcome. Focus on void orders (MCR 2.612) and constitutional violations.",
+          "authority": "MCR 7.205; MCR 7.216(A)(7)",
+          "risk": "High \u2014 COA denies most applications"
+        }
+      ]
+    },
+    "F9": {
+      "title": "COA Appeal Brief (366810)",
+      "court": "Michigan Court of Appeals",
+      "likely_responses": [
+        {
+          "response": "Appellee Brief \u2014 Affirm Lower Court",
+          "argument": "Trial court did not abuse discretion. Findings supported by evidence.",
+          "rebuttal": "Abuse of discretion standard met when court ignores mandatory statutory factors, denies due process, and relies on fraudulent evidence. Not a close call.",
+          "authority": "MCL 722.28; Berger v Berger 277 Mich App 700",
+          "risk": "Medium"
+        }
+      ]
+    },
+    "F10": {
+      "title": "AGC Grievance \u2014 Attorney Misconduct",
+      "court": "Attorney Grievance Commission",
+      "likely_responses": [
+        {
+          "response": "Dismiss \u2014 Insufficient Evidence of Rule Violation",
+          "argument": "Attorney exercised professional judgment. Withdrawal was proper.",
+          "rebuttal": "MRPC 3.3 duty of candor requires attorney to correct false evidence presented to tribunal. Failure to correct known perjury is independent misconduct.",
+          "authority": "MRPC 3.3; MRPC 8.4(c)",
+          "risk": "Medium \u2014 AGC investigates if pattern shown"
+        }
+      ]
+    }
+  }
+}

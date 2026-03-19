@@ -1,0 +1,170 @@
+{
+  "generated": "2026-03-18T23:09:57.928956",
+  "tool": "IFP Application Generator (#60)",
+  "total_fees": 1330.0,
+  "applications": {
+    "federal": {
+      "title": "Application to Proceed In Forma Pauperis (28 USC \u00a71915)",
+      "court": "United States District Court, Western District of Michigan",
+      "case": "Pigors v. Watson et al.",
+      "form": "AO 240 (Application to Proceed in District Court Without Prepaying Fees)",
+      "filing": "F4 \u2014 42 USC \u00a71983 Civil Rights Complaint",
+      "fee": "$405.00 (filing fee)",
+      "sections": [
+        {
+          "heading": "INSTRUCTIONS",
+          "content": [
+            "Complete AO 240 form from uscourts.gov",
+            "Attach to F4 \u00a71983 complaint",
+            "File via CM/ECF (PACER) or in person at USDC Grand Rapids",
+            "Court address: 399 Federal Building, 110 Michigan St NW, Grand Rapids, MI 49503"
+          ]
+        },
+        {
+          "heading": "REQUIRED INFORMATION (Andrew to Complete)",
+          "content": [
+            "[  ] Current monthly income from all sources",
+            "[  ] Current monthly expenses (rent, utilities, food, medical, transportation)",
+            "[  ] List of dependents (including L.D.W.)",
+            "[  ] Bank account balances",
+            "[  ] Vehicle value and loan balance",
+            "[  ] Any other assets or debts",
+            "[  ] Employment status and employer information",
+            "[  ] Any government assistance received (SNAP, Medicaid, SSI, etc.)"
+          ]
+        },
+        {
+          "heading": "LEGAL STANDARD",
+          "content": [
+            "28 USC \u00a71915(a)(1): Court may authorize proceeding without prepayment \"if the person is unable to pay such fees or give security therefor.\"",
+            "Standard: Not destitution, but inability to pay fees without depriving self or dependents of necessities.",
+            "Adkins v E.I. DuPont de Nemours & Co., 335 US 331 (1948)"
+          ]
+        }
+      ]
+    },
+    "michigan_circuit": {
+      "title": "Application to Waive Fees \u2014 MC 20",
+      "court": "14th Circuit Court, Muskegon County",
+      "case": "Pigors v. Watson, 2024-001507-DC",
+      "form": "MC 20 (Fee Waiver Application)",
+      "filing": "F1, F2, F3, F7 \u2014 Circuit Court filings",
+      "fee": "$175.00 per filing (circuit court)",
+      "sections": [
+        {
+          "heading": "INSTRUCTIONS",
+          "content": [
+            "Download MC 20 from courts.michigan.gov/scao-forms",
+            "One MC 20 covers ALL filings in same case number",
+            "File with first circuit court filing (F1 recommended)",
+            "If approved, covers F2, F3, F7 in same case"
+          ]
+        },
+        {
+          "heading": "AUTO-FILLED FIELDS",
+          "content": [
+            "Plaintiff: Andrew James Pigors",
+            "Address: 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Phone: (231) 903-5690",
+            "Case No: 2024-001507-DC",
+            "Court: 14th Circuit Court, Muskegon County",
+            "Judge: Hon. Jenny L. McNeill"
+          ]
+        },
+        {
+          "heading": "REQUIRED INFORMATION (Andrew to Complete)",
+          "content": [
+            "[  ] Monthly income",
+            "[  ] Monthly expenses",
+            "[  ] Dependents",
+            "[  ] Whether receiving public assistance (MCL 600.2963)",
+            "[  ] Bank balances",
+            "[  ] Sign and date under oath"
+          ]
+        }
+      ]
+    },
+    "michigan_coa": {
+      "title": "Application to Waive Fees \u2014 Court of Appeals",
+      "court": "Michigan Court of Appeals",
+      "case": "COA 366810",
+      "form": "MC 20 (same form, filed with COA)",
+      "filing": "F8, F9 \u2014 COA filings",
+      "fee": "$375.00 (COA filing fee)",
+      "sections": [
+        {
+          "heading": "INSTRUCTIONS",
+          "content": [
+            "Use MC 20 form, mark Court of Appeals",
+            "File with application for leave (F8) or opening brief (F9)",
+            "COA 366810 already filed \u2014 check if fee was paid or waived",
+            "If fee already paid for 366810, may need separate MC 20 for F8 (new application)"
+          ]
+        }
+      ]
+    },
+    "michigan_msc": {
+      "title": "Application to Waive Fees \u2014 Michigan Supreme Court",
+      "court": "Michigan Supreme Court",
+      "case": "New case number assigned on filing",
+      "form": "MC 20 (same form, filed with MSC)",
+      "filing": "F5 \u2014 MSC Complaint for Superintending Control",
+      "fee": "$375.00 (MSC filing fee)",
+      "sections": [
+        {
+          "heading": "INSTRUCTIONS",
+          "content": [
+            "Use MC 20 form, mark Supreme Court",
+            "File with F5 complaint for superintending control",
+            "MSC Clerk: PO Box 30052, Lansing, MI 48909",
+            "E-file via TrueFiling (trufiling.com/michigan-supreme-court)"
+          ]
+        }
+      ]
+    },
+    "jtc": {
+      "title": "JTC Complaint \u2014 No Filing Fee",
+      "court": "Judicial Tenure Commission",
+      "case": "New complaint",
+      "form": "JTC Complaint Form (free)",
+      "filing": "F6 \u2014 JTC Misconduct Complaint",
+      "fee": "$0 (no fee for JTC complaints)",
+      "sections": [
+        {
+          "heading": "NOTE",
+          "content": [
+            "JTC complaints are FREE \u2014 no filing fee required",
+            "Mail to: 3034 W Grand Blvd, Ste 8-450, Detroit, MI 48202",
+            "Or email: jtc@jtc.courts.mi.gov"
+          ]
+        }
+      ]
+    },
+    "agc": {
+      "title": "AGC Grievance \u2014 No Filing Fee",
+      "court": "Attorney Grievance Commission",
+      "case": "New grievance against Jennifer Barnes P55406",
+      "form": "AGC Request for Investigation Form (free)",
+      "filing": "F10 \u2014 AGC Attorney Misconduct Complaint",
+      "fee": "$0 (no fee for AGC grievances)",
+      "sections": [
+        {
+          "heading": "NOTE",
+          "content": [
+            "AGC grievances are FREE \u2014 no filing fee required",
+            "File online: agcmi.com",
+            "Or mail: 535 Griswold, Ste 1700, Detroit, MI 48226"
+          ]
+        }
+      ]
+    }
+  },
+  "plaintiff": {
+    "name": "Andrew James Pigors",
+    "address": "1977 Whitehall Road, Lot 17",
+    "city_state_zip": "North Muskegon, MI 49445",
+    "phone": "(231) 903-5690",
+    "email": "andrewjpigors@gmail.com",
+    "status": "Pro Se Plaintiff"
+  }
+}

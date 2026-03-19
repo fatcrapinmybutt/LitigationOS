@@ -1,0 +1,249 @@
+{
+  "generated": "2026-03-18T23:15:25.659410",
+  "tool": "Service of Process Calculator (#65)",
+  "total_service_items": 24,
+  "parties": {
+    "Emily A. Watson": {
+      "role": "Defendant",
+      "address": "2160 Garland Drive, Norton Shores, MI 49441",
+      "service_method": "Personal service (MCR 2.105) or certified mail",
+      "notes": "Primary opposing party. Serve ALL filings."
+    },
+    "Jennifer Barnes P55406": {
+      "role": "Former Attorney (Withdrew)",
+      "address": "880 Jefferson St Ste B, Muskegon, MI 49440",
+      "service_method": "First class mail or personal delivery to office",
+      "notes": "Serve F2 (fraud), F4 (\u00a71983 if named defendant), F10 (AGC). Withdrew but may still accept service for Barnes Law Firm PLLC."
+    },
+    "Ronald T. Berry": {
+      "role": "Co-conspirator",
+      "address": "[ANDREW MUST PROVIDE \u2014 possibly same as Emily Watson]",
+      "service_method": "Personal service or certified mail",
+      "notes": "Serve F4 (\u00a71983 if named defendant). Need confirmed address."
+    },
+    "Hon. Jenny L. McNeill": {
+      "role": "Judge / Respondent",
+      "address": "990 Terrace St, Muskegon, MI 49442 (via court clerk)",
+      "service_method": "Service via court clerk (MCR 2.107(C)(1)) \u2014 NOT personal",
+      "notes": "Serve F3 (disqualification \u2014 via clerk), F4 (\u00a71983 \u2014 via MI AG for state officials), F5 (MSC \u2014 via clerk)."
+    },
+    "Muskegon County Clerk": {
+      "role": "Court Clerk",
+      "address": "990 Terrace St, Muskegon, MI 49442",
+      "service_method": "File with clerk directly",
+      "notes": "All 14th Circuit filings go through clerk. E-file via MiFILE."
+    },
+    "Michigan Attorney General": {
+      "role": "Required party for \u00a71983 against state official",
+      "address": "PO Box 30212, Lansing, MI 48909",
+      "service_method": "Certified mail",
+      "notes": "Must be served for F4 (\u00a71983) per 28 USC \u00a71983 and MCR 2.209."
+    }
+  },
+  "service_matrix": {
+    "F1": {
+      "title": "Emergency Parenting Time Motion",
+      "court": "14th Circuit Court",
+      "serve": [
+        {
+          "party": "Emily A. Watson",
+          "method": "Personal or certified mail",
+          "deadline": "Before hearing (MCR 2.119(C) \u2014 9 days before hearing, or court may shorten for emergency)",
+          "documents": "Motion + Affidavit + Notice of Hearing"
+        },
+        {
+          "party": "Muskegon County Clerk",
+          "method": "E-file via MiFILE",
+          "deadline": "Day of filing",
+          "documents": "All documents + proof of service"
+        }
+      ]
+    },
+    "F2": {
+      "title": "Fraud Upon the Court",
+      "court": "14th Circuit Court",
+      "serve": [
+        {
+          "party": "Emily A. Watson",
+          "method": "Personal service (MCR 2.105) \u2014 summons required",
+          "deadline": "91 days from filing (MCR 2.102(D))",
+          "documents": "Complaint + Summons"
+        },
+        {
+          "party": "Jennifer Barnes P55406",
+          "method": "Certified mail to office",
+          "deadline": "91 days",
+          "documents": "Complaint + Summons (if named)"
+        },
+        {
+          "party": "Muskegon County Clerk",
+          "method": "E-file via MiFILE",
+          "deadline": "Day of filing",
+          "documents": "All documents"
+        }
+      ]
+    },
+    "F3": {
+      "title": "Judicial Disqualification",
+      "court": "14th Circuit Court",
+      "serve": [
+        {
+          "party": "Emily A. Watson",
+          "method": "First class mail or e-service",
+          "deadline": "7 days (MCR 2.107)",
+          "documents": "Motion + Brief + Affidavit"
+        },
+        {
+          "party": "Hon. Jenny L. McNeill",
+          "method": "Via court clerk (file copy for judge)",
+          "deadline": "Day of filing",
+          "documents": "Motion + Brief"
+        },
+        {
+          "party": "Chief Judge (14th Circuit)",
+          "method": "Via court clerk",
+          "deadline": "Day of filing",
+          "documents": "Copy of motion (MCR 2.003 \u2014 chief judge reviews if recusal denied)"
+        }
+      ]
+    },
+    "F4": {
+      "title": "42 USC \u00a71983 Federal",
+      "court": "USDC Western District MI",
+      "serve": [
+        {
+          "party": "Emily A. Watson",
+          "method": "Personal service (FRCP 4(e))",
+          "deadline": "90 days from filing (FRCP 4(m))",
+          "documents": "Complaint + Summons (issued by federal clerk)"
+        },
+        {
+          "party": "Hon. Jenny L. McNeill",
+          "method": "Via Michigan Attorney General (FRCP 4(j))",
+          "deadline": "90 days",
+          "documents": "Complaint + Summons"
+        },
+        {
+          "party": "Michigan Attorney General",
+          "method": "Certified mail to Lansing",
+          "deadline": "90 days",
+          "documents": "Complaint + Summons + Notice"
+        },
+        {
+          "party": "Ronald T. Berry",
+          "method": "Personal service",
+          "deadline": "90 days",
+          "documents": "Complaint + Summons (if named)"
+        },
+        {
+          "party": "Jennifer Barnes P55406",
+          "method": "Personal service or certified mail",
+          "deadline": "90 days",
+          "documents": "Complaint + Summons (if named)"
+        }
+      ]
+    },
+    "F5": {
+      "title": "MSC Superintending Control",
+      "court": "Michigan Supreme Court",
+      "serve": [
+        {
+          "party": "Emily A. Watson",
+          "method": "Certified mail",
+          "deadline": "Per MSC order",
+          "documents": "Complaint + all supporting documents"
+        },
+        {
+          "party": "Hon. Jenny L. McNeill",
+          "method": "Via court clerk",
+          "deadline": "Per MSC order",
+          "documents": "Complaint"
+        },
+        {
+          "party": "MSC Clerk",
+          "method": "TrueFiling or mail to Lansing",
+          "deadline": "Day of filing",
+          "documents": "All documents"
+        }
+      ]
+    },
+    "F6": {
+      "title": "JTC Complaint",
+      "court": "Judicial Tenure Commission",
+      "serve": [
+        {
+          "party": "JTC",
+          "method": "Mail or email (jtc@jtc.courts.mi.gov)",
+          "deadline": "No statutory deadline",
+          "documents": "Complaint + supporting evidence"
+        }
+      ]
+    },
+    "F7": {
+      "title": "Custody Modification",
+      "court": "14th Circuit Court",
+      "serve": [
+        {
+          "party": "Emily A. Watson",
+          "method": "Personal or certified mail",
+          "deadline": "9 days before hearing (MCR 2.119(C))",
+          "documents": "Motion + Brief + Affidavit + Notice of Hearing"
+        },
+        {
+          "party": "Muskegon County Clerk",
+          "method": "E-file via MiFILE",
+          "deadline": "Day of filing",
+          "documents": "All documents"
+        }
+      ]
+    },
+    "F8": {
+      "title": "COA Application for Leave",
+      "court": "Michigan Court of Appeals",
+      "serve": [
+        {
+          "party": "Emily A. Watson",
+          "method": "First class mail",
+          "deadline": "Same day as filing (MCR 7.205(D))",
+          "documents": "Application + supporting brief"
+        },
+        {
+          "party": "COA Clerk",
+          "method": "TrueFiling",
+          "deadline": "Day of filing",
+          "documents": "All documents"
+        }
+      ]
+    },
+    "F9": {
+      "title": "COA Appeal Brief (366810)",
+      "court": "Michigan Court of Appeals",
+      "serve": [
+        {
+          "party": "Emily A. Watson",
+          "method": "First class mail",
+          "deadline": "Same day as filing",
+          "documents": "Brief + appendix"
+        },
+        {
+          "party": "COA Clerk",
+          "method": "TrueFiling",
+          "deadline": "Per briefing schedule",
+          "documents": "Brief + appendix + proof of service"
+        }
+      ]
+    },
+    "F10": {
+      "title": "AGC Grievance",
+      "court": "Attorney Grievance Commission",
+      "serve": [
+        {
+          "party": "AGC",
+          "method": "Online (agcmi.com) or mail to Detroit",
+          "deadline": "No statutory deadline",
+          "documents": "Request for Investigation form + supporting docs"
+        }
+      ]
+    }
+  }
+}

@@ -1,7 +1,7 @@
 # SANCTIONS RISK ANALYSIS REPORT
-*Generated: 2026-03-18 23:01*
+*Generated: 2026-03-18 23:04*
 
-## Overall Risk: ⛔ CRITICAL (Score: 372)
+## Overall Risk: ⛔ CRITICAL (Score: 360)
 
 ### Applicable Sanctions Rules
 | Rule | Scope |
@@ -14,16 +14,16 @@
 ## Per-Filing Risk Summary
 | Filing | Court | Critical | High | Medium | Total |
 |--------|-------|----------|------|--------|-------|
-| F1 | 14th Circuit | 0 | 1 | 1 | 2 |
+| F1 | 14th Circuit | 0 | 1 | 0 | 1 |
 | F10 | AGC | 0 | 0 | 0 | 0 |
 | F2 | 14th Circuit | 1 | 2 | 0 | 3 |
 | F3 | 14th Circuit | 0 | 0 | 0 | 0 |
-| F4 | USDC WDMI | 1 | 14 | 6 | 21 |
+| F4 | USDC WDMI | 1 | 14 | 2 | 17 |
 | F5 | MSC | 2 | 10 | 0 | 12 |
 | F6 | JTC | 0 | 2 | 0 | 2 |
 | F7 | 14th Circuit | 0 | 2 | 0 | 2 |
 | F8 | COA | 2 | 7 | 0 | 9 |
-| F9 | COA | 1 | 8 | 1 | 10 |
+| F9 | COA | 1 | 8 | 0 | 9 |
 
 ## Systemic Risks
 ### [HIGH] Filing 10 simultaneous actions across multiple courts

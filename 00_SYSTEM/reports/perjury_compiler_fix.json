@@ -1,0 +1,62 @@
+{
+  "generated": "2026-03-18T23:04:51.431366",
+  "tool": "Perjury Compiler Fix (#56)",
+  "watson_perjury_compilation": {
+    "total": 5821,
+    "columns": [
+      "id",
+      "watson_member",
+      "statement_text",
+      "contradicting_evidence",
+      "source_doc",
+      "date_of_statement",
+      "perjury_type",
+      "severity_score",
+      "admissible",
+      "mcr_mre_authority",
+      "notes"
+    ],
+    "by_member": {
+      "Emily Watson": 2525,
+      "Watson (Unspecified)": 2064,
+      "Tiffany Watson": 1058,
+      "Watson (General)": 145,
+      "Albert Watson": 17,
+      "Lori Watson": 6,
+      "Cody Watson": 6
+    },
+    "by_type": {
+      "timeline_conflict": 3525,
+      "prior_inconsistent_statement": 876,
+      "inconsistency": 453,
+      "testimony_vs_document": 323,
+      "evidence_quote": 251,
+      "judicial_acceptance_without_evidence": 214,
+      "false_statement": 75,
+      "direct_contradiction": 72,
+      "sworn_statement": 28,
+      "informal_statement": 4
+    },
+    "admissible": 0,
+    "high_severity_admissible": 0
+  },
+  "detected_contradictions": {
+    "total": 1061,
+    "columns": [
+      "id",
+      "speaker",
+      "statement_1",
+      "source_1",
+      "date_1",
+      "statement_2",
+      "source_2",
+      "date_2",
+      "contradiction_type",
+      "severity",
+      "impeachment_value",
+      "filing_use",
+      "notes",
+      "created_at"
+    ]
+  }
+}
