@@ -1,0 +1,2011 @@
+{
+  "tool": "mcr_violation_catalog",
+  "tool_number": 224,
+  "generated_at": "2026-03-19T09:21:42.129179",
+  "case": "Pigors v. Watson (2024-001507-DC)",
+  "judge": "Hon. Jenny L. McNeill",
+  "frequency": {
+    "total": 4660,
+    "per_month": 174.1,
+    "per_hearing": 47.1,
+    "date_range": "2023-10-01 to 2025-12-12",
+    "months_span": 26.8,
+    "hearing_count": 99
+  },
+  "severity_distribution": {
+    "critical": 2252,
+    "high": 1892,
+    "medium": 488,
+    "low": 23,
+    "info": 5
+  },
+  "mcr_chapters": {
+    "2.003": {
+      "name": "Disqualification of Judge",
+      "count": 1311,
+      "severities": {
+        "critical": 983,
+        "high": 303,
+        "medium": 24,
+        "info": 1
+      },
+      "sample_violations": [
+        {
+          "id": "JV-c22d274f6e3b",
+          "description": ",\n and  the Court  signed  an ex parte  order  suspending\n the  Plaintiff's\nparenting  time.  An evidentiary\n hearing  was held on Septemb",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-0d7c8cae71df",
+          "description": ",  Judge  McNeill\n signed  an ex parte  \"emergency\"\norder  suspending\n all of  my  parenting\n time  with  my  three-year-old\n son,\nLincoln",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-79de3d694f86",
+          "description": "suspended.\n3. \nOff-record,\n ex parte  handling\n of  evidence\n (USB  recording\n and  mental-health\nevaluation).\no  \nA USB  recording\n sub",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-73f3c8b967ed",
+          "description": "to continue  or modify\n the ex parte  suspension.\no  \nI attempted\n to present  photographs\n from  the July  29 exchange  showing\nLincoln",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-3cc7589c0e4e",
+          "description": "idence\n off  the\nrecord  and  ex parte,  contraiy\n to the  prohibition\n on ex parte\ncommunications\n about  pending\n matters  in Canon  3(A",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "3.206": {
+      "name": "",
+      "count": 17,
+      "severities": {
+        "critical": 11,
+        "high": 6
+      },
+      "sample_violations": [
+        {
+          "id": "JV-5c5ff48aa1d3",
+          "description": "on.\n04/11/2024\n \nP \n001  \nRNU\nNOTICE\n \nTO  APPEAR\nNOTICE\n \nTO  APPEAR\n04/11/2024\n \nD \n001  \nRNU\nNOTICE\n \nTO  APPEAR\nNOTICE\n \nTO  APPEAR\n04/11/2024\n \nRNU\nEX  \nPARTE\n \nORDER\nPERSONAL\n \nPROTECTION\n ORDER",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-5c5ff48aa1d3",
+          "description": "on.\n04/11/2024\n \nP \n001  \nRNU\nNOTICE\n \nTO  APPEAR\nNOTICE\n \nTO  APPEAR\n04/11/2024\n \nD \n001  \nRNU\nNOTICE\n \nTO  APPEAR\nNOTICE\n \nTO  APPEAR\n04/11/2024\n \nRNU\nEX  \nPARTE\n \nORDER\nPERSONAL\n \nPROTECTION\n ORDER",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-918a034638c2",
+          "description": "e  matter  before  the\ncourt  without  the assistance\n of counsel,  the  friend  of the  court  must  provide  you  with  the\nform  pleadings\n and  written  instructions\n and  must  schedule\n a hearin",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-918a034638c2",
+          "description": "e  matter  before  the\ncourt  without  the assistance\n of counsel,  the  friend  of the  court  must  provide  you  with  the\nform  pleadings\n and  written  instructions\n and  must  schedule\n a hearin",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-c967a0879fa1",
+          "description": "[MCR] MCR 3.206: 2. Ex parte orders without notice - MCR 3.206 violations",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "3.207": {
+      "name": "Domestic Relations — Mediation",
+      "count": 1614,
+      "severities": {
+        "high": 1212,
+        "critical": 91,
+        "medium": 310,
+        "info": 1
+      },
+      "sample_violations": [
+        {
+          "id": "JV-ea3c34e0c254",
+          "description": "hearings.\n(Micl'iigan\n Courts)\no  \nMCR  3.207(B)(1)\n and  (B)(5)-(6)\n govern\n ex parte  custody\n and  parenting-\ntime  orders  and  require:\nSpecific\n facts  in a verified\n pleading\n or affidavit\n sli",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-ea3c34e0c254",
+          "description": "hearings.\n(Micl'iigan\n Courts)\no  \nMCR  3.207(B)(1)\n and  (B)(5)-(6)\n govern\n ex parte  custody\n and  parenting-\ntime  orders  and  require:\nSpecific\n facts  in a verified\n pleading\n or affidavit\n sli",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-a811d844d8c6",
+          "description": "hearings.\n(Michigan\n Courts)\no  \nMCR  3.207(B)(1)\n and  (B)(5)-(6)\n govern\n ex parte  custody\n and  parenting-\ntime  orders  and  require:\nSpecific\n facts  in a verified\n pleading\n or affidavit\n showi",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-a811d844d8c6",
+          "description": "hearings.\n(Michigan\n Courts)\no  \nMCR  3.207(B)(1)\n and  (B)(5)-(6)\n govern\n ex parte  custody\n and  parenting-\ntime  orders  and  require:\nSpecific\n facts  in a verified\n pleading\n or affidavit\n showi",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-ef55cc73cf5c",
+          "description": "Ex parte shutdown plus financial barrier to filing  for parenting-\ntime reliefj MCR 3.207; MCR 3.310(B); access-to-court concerns; Benchbook \ni Trial: Modify/terminate  ex\nparte;  waive  or relax  bon",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "3.708": {
+      "name": "",
+      "count": 8,
+      "severities": {
+        "critical": 6,
+        "high": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-feddb3ad199b",
+          "description": "hearing:  10/18/2025\n.ludge.' JENNY L. MCNEILL\nP-58235\nBar  no.\n1. Order  entered  after  show-cause\n hearing  requested\n by petitioner\n pursuant\n to MCR  3.708(B).\nTHE  COURT  FINDS:\nFi2. The respond",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-feddb3ad199b",
+          "description": "hearing:  10/18/2025\n.ludge.' JENNY L. MCNEILL\nP-58235\nBar  no.\n1. Order  entered  after  show-cause\n hearing  requested\n by petitioner\n pursuant\n to MCR  3.708(B).\nTHE  COURT  FINDS:\nFi2. The respond",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-e215f0f48dc0",
+          "description": "hearing'  10/30/2024\n.ludge.' JENNY L. MCNEILL\nP-58235\nBar nO.\n1. Order  entered  after  show-cause\n hearing  requested\n by petitioner\n pursuant  to MCR  3.708(B).\nTHE  COURT  FINDS:\n€  2. The  respon",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-e215f0f48dc0",
+          "description": "hearing'  10/30/2024\n.ludge.' JENNY L. MCNEILL\nP-58235\nBar nO.\n1. Order  entered  after  show-cause\n hearing  requested\n by petitioner\n pursuant  to MCR  3.708(B).\nTHE  COURT  FINDS:\n€  2. The  respon",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-d2c9e42cfef6",
+          "description": "hearingpursuanttoMCR3.708(H),heldasaresultof\nga.\n show-causehearingpursuanttoMCR3.708(B).\nJb.  arraignmentforarrestpursuanttoMCL764.15bandMCR3.708(C).\nTHE  COURT\n FiNDS:\nn- PACC  Code  MCL  600.2950m\n",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "3.310": {
+      "name": "",
+      "count": 13,
+      "severities": {
+        "high": 7,
+        "critical": 6
+      },
+      "sample_violations": [
+        {
+          "id": "JV-ef55cc73cf5c",
+          "description": "Ex parte shutdown plus financial barrier to filing  for parenting-\ntime reliefj MCR 3.207; MCR 3.310(B); access-to-court concerns; Benchbook \ni Trial: Modify/terminate  ex\nparte;  waive  or relax  bon",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-ef55cc73cf5c",
+          "description": "Ex parte shutdown plus financial barrier to filing  for parenting-\ntime reliefj MCR 3.207; MCR 3.310(B); access-to-court concerns; Benchbook \ni Trial: Modify/terminate  ex\nparte;  waive  or relax  bon",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-91aabd36beb1",
+          "description": "ex parte suspension\nMCL 722.27a(3); holiday-priority  guidelines; MCR 3.207; MCR 3.310(B)i Trial: Restore Labor Day-type extended\ntime  via  make-up;\n clarify\n that  fuhire  Labor  Day  blocks  cannot",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-91aabd36beb1",
+          "description": "ex parte suspension\nMCL 722.27a(3); holiday-priority  guidelines; MCR 3.207; MCR 3.310(B)i Trial: Restore Labor Day-type extended\ntime  via  make-up;\n clarify\n that  fuhire  Labor  Day  blocks  cannot",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-d6efce35259a",
+          "description": "Ex parte suspension since -08/08/2025  \ni Ongoing suspension of all parenting time (months-long\nshutdown) \ni MCL 722.27a(3); MCR 3.207; MCR 3.310(B); Benchbook ex parte cautions \nTrial:\nVacate/modify\n",
+          "severity": "critical",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "2.119": {
+      "name": "Motion Practice",
+      "count": 2144,
+      "severities": {
+        "high": 111,
+        "critical": 2033
+      },
+      "sample_violations": [
+        {
+          "id": "JV-e6e6eec74b6f",
+          "description": "[MCR] MCR 2.119: - MCR 2.119(E)(1) - Ex parte relief requirements",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-e6e6eec74b6f",
+          "description": "[MCR] MCR 2.119: - MCR 2.119(E)(1) - Ex parte relief requirements",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-3520879cac9f",
+          "description": "[MCR] MCR 3.207: 01.txt,5,Ex parte basis: Mentions ex parte but no 'affidavit/verified/sworn' language on this page (MCR 3.207; MCR 3.310; MCR 2.119(B)(1)). | Ex parte basis: No articulated immediate/",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-3520879cac9f",
+          "description": "[MCR] MCR 3.207: 01.txt,5,Ex parte basis: Mentions ex parte but no 'affidavit/verified/sworn' language on this page (MCR 3.207; MCR 3.310; MCR 2.119(B)(1)). | Ex parte basis: No articulated immediate/",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-e0a4df5e7d75",
+          "description": "[MCR] MCR 3.310:  parte basis: Mentions ex parte but no 'affidavit/verified/sworn' language on this page (MCR 3.207; MCR 3.310; MCR 2.119(B)(1)). | Ex parte basis: No articulated immediate/irreparable",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "2.517": {
+      "name": "Findings by the Court",
+      "count": 4,
+      "severities": {
+        "high": 2,
+        "medium": 1,
+        "critical": 1
+      },
+      "sample_violations": [
+        {
+          "id": "JV-54e843d782f5",
+          "description": "[MCR] MCR 2.517: Order Lacked Child-Specific Findings of Fact (Violation of MCR 2.517(A)) – Instance: The Ex Parte",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-54e843d782f5",
+          "description": "[MCR] MCR 2.517: Order Lacked Child-Specific Findings of Fact (Violation of MCR 2.517(A)) – Instance: The Ex Parte",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-33428c73e03d",
+          "description": "notice.\nBased on a motion by either  party or a recommendation\n following  a review  by the friend  of the court, the amount\nabated  may be later oorrected  based  on the parties'  incomes  or ability",
+          "severity": "medium",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-03870AF7",
+          "description": "[MCR] MCR 2.517: Order Lacked Child-Specific Findings of Fact (Violation of MCR 2.517(A)) – Instance: The Ex Parte",
+          "severity": "critical",
+          "date": ""
+        }
+      ]
+    },
+    "2.107": {
+      "name": "Service and Filing of Pleadings",
+      "count": 330,
+      "severities": {
+        "high": 231,
+        "critical": 15,
+        "medium": 84
+      },
+      "sample_violations": [
+        {
+          "id": "JV-4b51920e5234",
+          "description": "[MCR] MCR 2.107: any “ex parte materials must be re-served as a complete packet (MCR 2.107)” for the court to",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-2c0560c10cd3",
+          "description": "[MCR] MCR 3.207: )). | Ex parte basis: No articulated immediate/irreparable harm or endangerment terms on this page (MCR 3.207/3.310). | Service/Notice: No service/notice language—verify compliance wi",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-e47c7bab000e",
+          "description": "[service/notice] Ex parte order flaws (08-08-2025 suspension logic error: SCAO checkbox contradiction, MCR 3.207(B)(1) affidavit defects, late service per MCR 2.107, etc.),",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-ddcac1a89992",
+          "description": "being homeless and couch surfing\nMonitoring her with a webcam\nthrowing her off of a table\nshow cause #! alleged text from a random number, an Obama meme about orgies.\nOctober 2023, I caught Emily send",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-7d2ed82da785",
+          "description": "MCR 2.107 – Service and Filing of Pleadings and Other Papers\nThis rule addresses the proper method of serving and filing documents, ensuring that all parties receive timely notification.",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "2.612": {
+      "name": "",
+      "count": 568,
+      "severities": {
+        "high": 375,
+        "critical": 25,
+        "medium": 168
+      },
+      "sample_violations": [
+        {
+          "id": "JV-2f23bfe3ad9a",
+          "description": "[MCR] MCR 2.612: - Motion to Set Aside Ex Parte Order (MCR 2.612)",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-ddcac1a89992",
+          "description": "being homeless and couch surfing\nMonitoring her with a webcam\nthrowing her off of a table\nshow cause #! alleged text from a random number, an Obama meme about orgies.\nOctober 2023, I caught Emily send",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-ddcac1a89992",
+          "description": "being homeless and couch surfing\nMonitoring her with a webcam\nthrowing her off of a table\nshow cause #! alleged text from a random number, an Obama meme about orgies.\nOctober 2023, I caught Emily send",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-e7eac3fd49f6",
+          "description": "Demonstrate that reopening the case and reassessing custody would serve the best interests of Lincoln. Use this law to highlight the statutory factors the court must consider.Vodvarka v. Grasmeyer, 25",
+          "severity": "medium",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-e7eac3fd49f6",
+          "description": "Demonstrate that reopening the case and reassessing custody would serve the best interests of Lincoln. Use this law to highlight the statutory factors the court must consider.Vodvarka v. Grasmeyer, 25",
+          "severity": "medium",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "3.700": {
+      "name": "",
+      "count": 4,
+      "severities": {
+        "high": 1,
+        "critical": 3
+      },
+      "sample_violations": [
+        {
+          "id": "JV-6a5a5e09453c",
+          "description": "[MCR] MCR 3.700: Ex Parte PPO request (where permitted; supported by sworn facts) — MCR 3.700.",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-30b70154c993",
+          "description": "[MI_COURT_FILINGS_MASTER_LIST_APPENDONLY_20260216_v2 (1).md] 27) PERSONAL PROTECTION ORDER (PPO) FILINGS — MCR 3.700 SERIES: - **Petition for Personal Protection Order (PPO)** (domestic / nondomestic ",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-6cbe19ae30a3",
+          "description": "[MI_COURT_FILINGS_MASTER_LIST_APPENDONLY_20260216_v4_MAXOVERDRIVE.md] 27) PERSONAL PROTECTION ORDER (PPO) FILINGS — MCR 3.700 SERIES: - **Petition for Personal Protection Order (PPO)** (domestic / non",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-CE4F3EA9",
+          "description": "[MCR] MCR 3.700: Ex Parte PPO request (where permitted; supported by sworn facts) — MCR 3.700.",
+          "severity": "critical",
+          "date": ""
+        }
+      ]
+    },
+    "3.210": {
+      "name": "Domestic Relations — Child Custody",
+      "count": 183,
+      "severities": {
+        "critical": 3,
+        "high": 176,
+        "medium": 4
+      },
+      "sample_violations": [
+        {
+          "id": "JV-25cc3fb4084c",
+          "description": "[MCR] MCR 3.207: - **Domestic Relations Ex Parte & Hearings:** MCR 3.207 and MCR 3.210 (recently amended 2025‑06‑18). Rule index: https://www.courts.michigan.gov/siteassets",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-d6c0b56cc056",
+          "description": "[MCR] MCR 3.210: - **Domestic Relations Ex Parte & Hearings:** MCR 3.207 and MCR 3.210 (recently amended 2025‑06‑18). Rule index: https://www.courts.michigan.gov/siteassets/rules-instruc",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-e88f8160a774",
+          "description": "[MCR] MCR 3.207: Motion to dissolve/modify ex parte parenting-time suspensions for noncompliance with MCR 3.207(C) (must schedule a hearing within 21 days), and with MCR 3.210(C)(8) timelines where th",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-e88f8160a774",
+          "description": "[MCR] MCR 3.207: Motion to dissolve/modify ex parte parenting-time suspensions for noncompliance with MCR 3.207(C) (must schedule a hearing within 21 days), and with MCR 3.210(C)(8) timelines where th",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-01fab6258d2e",
+          "description": "Post-judgment hearings must be noticed and allow time to respond unless waived.",
+          "severity": "medium",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "3.920": {
+      "name": "",
+      "count": 6,
+      "severities": {
+        "high": 4,
+        "critical": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-a60dd5d44b77",
+          "description": "[MCR] MCR 3.920: Under MCR 3.920(B)(2)(a), an ex parte parenting time order may only be entered",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-a60dd5d44b77",
+          "description": "[MCR] MCR 3.920: Under MCR 3.920(B)(2)(a), an ex parte parenting time order may only be entered",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-d2920d973e01",
+          "description": "[MCR] MCR 3.920: * Defendant has failed to meet the criteria of MCR 3.920(B)(2)(a) for emergency ex parte",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-d2920d973e01",
+          "description": "[MCR] MCR 3.920: * Defendant has failed to meet the criteria of MCR 3.920(B)(2)(a) for emergency ex parte",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-3CDF820F",
+          "description": "[MCR] MCR 3.920: Under MCR 3.920(B)(2)(a), an ex parte parenting time order may only be entered",
+          "severity": "critical",
+          "date": ""
+        }
+      ]
+    },
+    "3.707": {
+      "name": "",
+      "count": 5,
+      "severities": {
+        "high": 3,
+        "critical": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-b6660b7660da",
+          "description": "[MCR] MCR 3.707: * **Terminate/modify any PPO constraints** blocking parenting time: file **CC-379** under **MCR 3.707**; for ex parte PPOs, you’re entitled to a promp",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-9709480e2fab",
+          "description": "[MCR] MCR 3.707:   – Respondent requests hearing relief per MCR 3.707(b) (timely challenge to ex parte orders/extension).",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-9709480e2fab",
+          "description": "[MCR] MCR 3.707:   – Respondent requests hearing relief per MCR 3.707(b) (timely challenge to ex parte orders/extension).",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-BF51644D",
+          "description": "[MCR] MCR 3.707: * **Terminate/modify any PPO constraints** blocking parenting time: file **CC-379** under **MCR 3.707**; for ex parte PPOs, you’re entitled to a promp",
+          "severity": "critical",
+          "date": ""
+        },
+        {
+          "id": "FJA-65966BC1",
+          "description": "[MCR] MCR 3.707:   – Respondent requests hearing relief per MCR 3.707(b) (timely challenge to ex parte orders/extension).",
+          "severity": "critical",
+          "date": ""
+        }
+      ]
+    },
+    "1.109": {
+      "name": "",
+      "count": 15,
+      "severities": {
+        "high": 14,
+        "critical": 1
+      },
+      "sample_violations": [
+        {
+          "id": "JV-2e8884da73b3",
+          "description": "[MCR] MCR 1.109:    MCR 1.109(E)(5)–(6) for filings not well-grounded in fact or law; (c) an order prohibiting further ex parte",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-2e8884da73b3",
+          "description": "[MCR] MCR 1.109:    MCR 1.109(E)(5)–(6) for filings not well-grounded in fact or law; (c) an order prohibiting further ex parte",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-f0f5807bf74d",
+          "description": "[MCR] MCR 2.114:       [Filed Under: MCR 2.114(B); MCR 1.109(E); MCL 600.2922; Canon 3(D)(1)]",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-f0f5807bf74d",
+          "description": "[MCR] MCR 2.114:       [Filed Under: MCR 2.114(B); MCR 1.109(E); MCL 600.2922; Canon 3(D)(1)]",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-04e96578fd37",
+          "description": "[MCR] MCR 1.109:       [Filed Under: MCR 2.114(B); MCR 1.109(E); MCL 600.2922; Canon 3(D)(1)]",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "3.211": {
+      "name": "Domestic Relations — Parenting Time",
+      "count": 17,
+      "severities": {
+        "high": 16,
+        "critical": 1
+      },
+      "sample_violations": [
+        {
+          "id": "JV-fbfa62a8b16e",
+          "description": "[MASTER_INDEX.md] P: **Parenting Time**\n- Statute: MCL 722.27a\n- Court Rule: MCR 3.211\n- Issues: Repeated suspensions via ex parte orders\n- Lost Time: \"Stripped of 2 parenting weekends = 10 days\"\n- Re",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-978cb6d536ff",
+          "description": "[MCR] MCR 2.003: - Key Rules: MCR 2.003 (disqualification), MCR 3.207 (ex parte), MCR 3.211 (parenting time)",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-1d6fb8fea7e8",
+          "description": "[MCR] MCR 3.207: - Key Rules: MCR 2.003 (disqualification), MCR 3.207 (ex parte), MCR 3.211 (parenting time)",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-9287f47deb29",
+          "description": "[MCR] MCR 3.211: - Key Rules: MCR 2.003 (disqualification), MCR 3.207 (ex parte), MCR 3.211 (parenting time)",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-5e998366509a",
+          "description": "MCR 3.211 – Judgment or Order of Divorce or Separate Maintenance, or Judgment or Order in Custody or Support Proceedings\nDetails the requirements for judgments or orders concerning custody, parenting ",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "2.102": {
+      "name": "",
+      "count": 4,
+      "severities": {
+        "high": 4
+      },
+      "sample_violations": [
+        {
+          "id": "JV-5e74d2b07349",
+          "description": "Michigan requires summons + complaint served under MCR 2.105; clerk issues the summons under MCR 2.102(A); proof of service under MCR 2.104; summons generally expires in 91 days (seek second summons/e",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-5e74d2b07349",
+          "description": "Michigan requires summons + complaint served under MCR 2.105; clerk issues the summons under MCR 2.102(A); proof of service under MCR 2.104; summons generally expires in 91 days (seek second summons/e",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-AA60FEB9",
+          "description": "Michigan requires summons + complaint served under MCR 2.105; clerk issues the summons under MCR 2.102(A); proof of service under MCR 2.104; summons generally expires in 91 days (seek second summons/e",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "FJA-AA60FEB9",
+          "description": "Michigan requires summons + complaint served under MCR 2.105; clerk issues the summons under MCR 2.102(A); proof of service under MCR 2.104; summons generally expires in 91 days (seek second summons/e",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "2.104": {
+      "name": "",
+      "count": 2,
+      "severities": {
+        "high": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-5e74d2b07349",
+          "description": "Michigan requires summons + complaint served under MCR 2.105; clerk issues the summons under MCR 2.102(A); proof of service under MCR 2.104; summons generally expires in 91 days (seek second summons/e",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-AA60FEB9",
+          "description": "Michigan requires summons + complaint served under MCR 2.105; clerk issues the summons under MCR 2.102(A); proof of service under MCR 2.104; summons generally expires in 91 days (seek second summons/e",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "2.105": {
+      "name": "",
+      "count": 4,
+      "severities": {
+        "high": 4
+      },
+      "sample_violations": [
+        {
+          "id": "JV-5e74d2b07349",
+          "description": "Michigan requires summons + complaint served under MCR 2.105; clerk issues the summons under MCR 2.102(A); proof of service under MCR 2.104; summons generally expires in 91 days (seek second summons/e",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-232bb63a7fe9",
+          "description": "Party registry & service plan (who/where/how per MCR 2.105; proof method per 2.104; 91-day clock per 2.102) → ✔/✖.",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-AA60FEB9",
+          "description": "Michigan requires summons + complaint served under MCR 2.105; clerk issues the summons under MCR 2.102(A); proof of service under MCR 2.104; summons generally expires in 91 days (seek second summons/e",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "FJA-372AEFC2",
+          "description": "Party registry & service plan (who/where/how per MCR 2.105; proof method per 2.104; 91-day clock per 2.102) → ✔/✖.",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "2.108": {
+      "name": "",
+      "count": 2,
+      "severities": {
+        "high": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-6b4b42a9fde0",
+          "description": "Use the Benchbook Service of Process Table; file prompt proof of service; diary the 21/28-day answer clocks depending on service location (MCR 2.108).",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-E8CC7E5E",
+          "description": "Use the Benchbook Service of Process Table; file prompt proof of service; diary the 21/28-day answer clocks depending on service location (MCR 2.108).",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "2.116": {
+      "name": "",
+      "count": 2,
+      "severities": {
+        "high": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-9e4c8374feef",
+          "description": "Track common MCR 2.116 defenses (service defects must be raised early; C(7)/C(8)/C(10) standards). Build your evidence bank to survive C(10) (documentary proof, not just pleadings).",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-F011E724",
+          "description": "Track common MCR 2.116 defenses (service defects must be raised early; C(7)/C(8)/C(10) standards). Build your evidence bank to survive C(10) (documentary proof, not just pleadings).",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "2.401": {
+      "name": "",
+      "count": 2,
+      "severities": {
+        "high": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-3a8b2bfba942",
+          "description": "Step-1 — Evaluate & Route. Lock SOL, forum, venue, parties, service plan, and element matrix; pick State (MCR+MiFILE) vs WDMI (FRCP+LCr). \nStep-2 — Prepare to Serve. Generate summons (MC 01) + complai",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-DEE507FE",
+          "description": "Step-1 — Evaluate & Route. Lock SOL, forum, venue, parties, service plan, and element matrix; pick State (MCR+MiFILE) vs WDMI (FRCP+LCr). \nStep-2 — Prepare to Serve. Generate summons (MC 01) + complai",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "2.114": {
+      "name": "",
+      "count": 17,
+      "severities": {
+        "high": 16,
+        "info": 1
+      },
+      "sample_violations": [
+        {
+          "id": "JV-215f308ef721",
+          "description": "🧾 Generate Full Affidavit of Retaliatory Show Causes (Signed, MCR 2.114(B))",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-215f308ef721",
+          "description": "🧾 Generate Full Affidavit of Retaliatory Show Causes (Signed, MCR 2.114(B))",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-e8d895cb7096",
+          "description": "[MCR] MCR 2.114:    [Filed Under: MCR 2.114(D)–(E); MCL 600.2591; Canon 3(D)(1); Judicial Benchbook §9.1]",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-e8d895cb7096",
+          "description": "[MCR] MCR 2.114:    [Filed Under: MCR 2.114(D)–(E); MCL 600.2591; Canon 3(D)(1); Judicial Benchbook §9.1]",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-0b0b1fc6d03b",
+          "description": "[MCL] MCL 600.2591:    [Filed Under: MCR 2.114(D)–(E); MCL 600.2591; Canon 3(D)(1); Judicial Benchbook §9.1]",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "7.303": {
+      "name": "",
+      "count": 5,
+      "severities": {
+        "high": 5
+      },
+      "sample_violations": [
+        {
+          "id": "JV-0f0514d3efb1",
+          "description": "[COMPILATION_SUMMARY.md] 2. Michigan Supreme Court - Original Action ✓: **File:** `MSC_ORIGINAL_ACTION_COMPILED.md`  \n**Facts Compiled:** 900  \n**Evidence Atoms:** 900 EA references  \n**Status:** ✅ RE",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-19841fe4b498",
+          "description": "[JTC_MSC_BINDER_EXTRACTED.md] I. JURISDICTION AND VEHICLE: This Court has original jurisdiction under Const 1963, art 6, § 4 and MCR 7.303 to grant extraordinary writs including superintending control",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-eaf7237a2a5e",
+          "description": "[MSC_ORIGINAL_ACTION_COMPILED.md] I. JURISDICTION AND VEHICLE: This Court has original jurisdiction under Const 1963, art 6, § 4 and MCR 7.303 to grant extraordinary writs including superintending con",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-69f5ff724eca",
+          "description": "[JTC_MSC_BINDER_EXTRACTED.md] III. ISSUES PRESENTED FOR ORIGINAL JURISDICTION: 1. **Pattern of Judicial Misconduct**: Whether the trial court's systematic violations of procedural rules and constituti",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-c08b4cb2ce7b",
+          "description": "[MSC_ORIGINAL_ACTION_COMPILED.md] III. ISSUES PRESENTED FOR ORIGINAL JURISDICTION: 1. **Pattern of Judicial Misconduct**: Whether the trial court's systematic violations of procedural rules and consti",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "9.202": {
+      "name": "",
+      "count": 4,
+      "severities": {
+        "critical": 2,
+        "high": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-f280ceac5079",
+          "description": "[MCR] MCR 9.202: Grounds (see MCR 9.202; Code of Judicial Conduct Canons 2 & 3):",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-1010f48f6fc5",
+          "description": "[MCR] MCR 9.202: - JTC: MCR 9.202; Canons 2 & 3; JTC filing page.",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-4CD6310A",
+          "description": "[MCR] MCR 9.202: Grounds (see MCR 9.202; Code of Judicial Conduct Canons 2 & 3):",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "FJA-1301CF33",
+          "description": "[MCR] MCR 9.202: - JTC: MCR 9.202; Canons 2 & 3; JTC filing page.",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "3.706": {
+      "name": "",
+      "count": 5,
+      "severities": {
+        "critical": 5
+      },
+      "sample_violations": [
+        {
+          "id": "JV-b16874d70c0d",
+          "description": "[MCR] MCR 3.706: 65. **2024-05-02**: Michigan Court Rules (2019 ed. with 2025 updates) – MCR 3.706(C)(1) & 3.205 require PPO-custody court consultation[24]; MCR 2.003 disqualification procedure[62];",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-b16874d70c0d",
+          "description": "[MCR] MCR 3.706: 65. **2024-05-02**: Michigan Court Rules (2019 ed. with 2025 updates) – MCR 3.706(C)(1) & 3.205 require PPO-custody court consultation[24]; MCR 2.003 disqualification procedure[62];",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-751309f5e0a8",
+          "description": "[MCR] MCR 2.003:  (2019 ed. with 2025 updates) – MCR 3.706(C)(1) & 3.205 require PPO-custody court consultation[24]; MCR 2.003 disqualification procedure[62]; MCR 8.110(C) chief judge authority[61]...",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-751309f5e0a8",
+          "description": "[MCR] MCR 2.003:  (2019 ed. with 2025 updates) – MCR 3.706(C)(1) & 3.205 require PPO-custody court consultation[24]; MCR 2.003 disqualification procedure[62]; MCR 8.110(C) chief judge authority[61]...",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-C0BD5BFD",
+          "description": "[MCR] MCR 3.706: 65. **2024-05-02**: Michigan Court Rules (2019 ed. with 2025 updates) – MCR 3.706(C)(1) & 3.205 require PPO-custody court consultation[24]; MCR 2.003 disqualification procedure[62];",
+          "severity": "critical",
+          "date": ""
+        }
+      ]
+    },
+    "8.110": {
+      "name": "",
+      "count": 5,
+      "severities": {
+        "critical": 3,
+        "high": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-751309f5e0a8",
+          "description": "[MCR] MCR 2.003:  (2019 ed. with 2025 updates) – MCR 3.706(C)(1) & 3.205 require PPO-custody court consultation[24]; MCR 2.003 disqualification procedure[62]; MCR 8.110(C) chief judge authority[61]...",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-751309f5e0a8",
+          "description": "[MCR] MCR 2.003:  (2019 ed. with 2025 updates) – MCR 3.706(C)(1) & 3.205 require PPO-custody court consultation[24]; MCR 2.003 disqualification procedure[62]; MCR 8.110(C) chief judge authority[61]...",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-226a075cafe1",
+          "description": "[MCR] MCR 8.110: C)(1) & 3.205 require PPO-custody court consultation[24]; MCR 2.003 disqualification procedure[62]; MCR 8.110(C) chief judge authority[61]...",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-226a075cafe1",
+          "description": "[MCR] MCR 8.110: C)(1) & 3.205 require PPO-custody court consultation[24]; MCR 2.003 disqualification procedure[62]; MCR 8.110(C) chief judge authority[61]...",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-6E06C0B0",
+          "description": "[MCR] MCR 8.110: C)(1) & 3.205 require PPO-custody court consultation[24]; MCR 2.003 disqualification procedure[62]; MCR 8.110(C) chief judge authority[61]...",
+          "severity": "critical",
+          "date": ""
+        }
+      ]
+    },
+    "3.302": {
+      "name": "",
+      "count": 1,
+      "severities": {
+        "high": 1
+      },
+      "sample_violations": [
+        {
+          "id": "JV-d75357f5d37a",
+          "description": "[COMPILATION_SUMMARY.md] 1. Court of Appeals - Superintending Control ✓: **File:** `COA_SUPERINTENDING_CONTROL_COMPILED.md`  \n**Facts Compiled:** 900  \n**Evidence Atoms:** 900 EA references  \n**Status",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "3.606": {
+      "name": "",
+      "count": 11,
+      "severities": {
+        "high": 11
+      },
+      "sample_violations": [
+        {
+          "id": "JV-121df7867c88",
+          "description": "[COMPLETE_LITIGATION_COMMAND_CENTER.md] **Your Case Can Use:**: **Trial Court (14th Circuit, Family Division):**\n- Motion (MCR 2.119) - general motions practice\n- Emergency Motion (MCR 3.207) - ex par",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JA13-2068",
+          "description": "f an Order to Show Cause for civil contempt under MCR 3.606, with potential modification of the custodial arrangement to grant Father primary physical custody.",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "JA13-2416",
+          "description": "**Legal Authority:** MCL 600.1701; MCR 3.606",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "JA13-3196",
+          "description": "OW CAUSE (CONTEMPT) AND FOR SANCTIONS PURSUANT TO MCR 3.606, MCL 600.1701, AND MCL 722.27a",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "JA13-3197",
+          "description": "ion over this matter pursuant to MCL 600.1701 and MCR 3.606, which confer upon this Court the inherent power to enforce its own orders through contempt proceedings.",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "2.613": {
+      "name": "",
+      "count": 4,
+      "severities": {
+        "high": 4
+      },
+      "sample_violations": [
+        {
+          "id": "JV-9e194e4a454e",
+          "description": "[FILING_STATUS_AND_REVIEW_CHECKLIST.md] Court of Appeals Filing (COA): **Primary Issues:**\n1. Judicial disqualification - MCR 2.003(C)(1) violations\n2. Ex parte orders without notice - MCR 3.206 viola",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-07374152",
+          "description": "[MCR] MCR 2.613: 5. Systematic evidentiary bias - MCR 2.613(A)",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "FJA-71524C85",
+          "description": "[MCR] MCR 2.613: 32. **2023-11-12**: justification) and  MCR 2.613(A)  (which forbids ignoring material evidence). It demonstrates a bias",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "FJA-E7047EE3",
+          "description": "[MCR] MCR 2.613: 7. **2023-11-12**: justification) and  MCR 2.613(A)  (which forbids ignoring material evidence). It demonstrates a bias",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "2.625": {
+      "name": "",
+      "count": 21,
+      "severities": {
+        "high": 21
+      },
+      "sample_violations": [
+        {
+          "id": "JV-9e194e4a454e",
+          "description": "[FILING_STATUS_AND_REVIEW_CHECKLIST.md] Court of Appeals Filing (COA): **Primary Issues:**\n1. Judicial disqualification - MCR 2.003(C)(1) violations\n2. Ex parte orders without notice - MCR 3.206 viola",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-1C46A4B1",
+          "description": "Citation rule (use in Petition/Notice & Affidavit):\n  - Pin each fact to (SourceFile, MsgID, ts_local) from the Chronology CSVs.\n  - Use Corroboration CSV to link prior assertions → later proof and at",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "FJA-1C46A4B1",
+          "description": "Citation rule (use in Petition/Notice & Affidavit):\n  - Pin each fact to (SourceFile, MsgID, ts_local) from the Chronology CSVs.\n  - Use Corroboration CSV to link prior assertions → later proof and at",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "FJA-2DA6C044",
+          "description": "MCR 3.207(B) (interim orders); MCL 722.27a (parenting time and make‑up time); MCL 722.23 (best‑interest factors, including (j), (k), and (l)); MCR 2.002 (fee waiver); MCR 2.612(C) and MCR 2.625(A)(2) ",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "FJA-2DA6C044",
+          "description": "MCR 3.207(B) (interim orders); MCL 722.27a (parenting time and make‑up time); MCL 722.23 (best‑interest factors, including (j), (k), and (l)); MCR 2.002 (fee waiver); MCR 2.612(C) and MCR 2.625(A)(2) ",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "3.201": {
+      "name": "",
+      "count": 2,
+      "severities": {
+        "critical": 1,
+        "info": 1
+      },
+      "sample_violations": [
+        {
+          "id": "JV-ccce52af8502",
+          "description": "[GLOSSARY_COMPLETE.md] MICHIGAN FAMILY LAW QUICK REFERENCE: **Key Statutes:**\n- MCL 722.21-722.31 - Child Custody Act\n- MCL 722.23 - Best Interest Factors\n- MCL 722.27a - Parenting Time Factors  \n- MC",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-5AA4B740",
+          "description": "[MCR] MCR 3.201: contemptbb.pdf,MCR 3.201,15,\"Michigan Judicial Institute Page 1-3Contempt of Court Benchbook - Fifth Edition Section 1.2",
+          "severity": "info",
+          "date": ""
+        }
+      ]
+    },
+    "7.316": {
+      "name": "",
+      "count": 3,
+      "severities": {
+        "high": 3
+      },
+      "sample_violations": [
+        {
+          "id": "JV-cb1cd7744db4",
+          "description": "[JTC_MSC_BINDER_INDEX.md] KEY LEGAL CITATIONS: **Michigan Court Rules:**\n- MCR 7.304(A) - Original actions\n- MCR 7.316(A) - General powers/immediate relief\n- MCR 2.003 - Judicial disqualification\n- MC",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-cb1cd7744db4",
+          "description": "[JTC_MSC_BINDER_INDEX.md] KEY LEGAL CITATIONS: **Michigan Court Rules:**\n- MCR 7.304(A) - Original actions\n- MCR 7.316(A) - General powers/immediate relief\n- MCR 2.003 - Judicial disqualification\n- MC",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-28929469c9f5",
+          "description": "[JTC_MSC_BINDER_INDEX.md] KEYWORDS & SEARCH TERMS: parenting time, suspension, PPO, personal protection order, mental health evaluation, \njudicial misconduct, disqualification, superintending control,",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "7.304": {
+      "name": "",
+      "count": 3,
+      "severities": {
+        "high": 3
+      },
+      "sample_violations": [
+        {
+          "id": "JV-cb1cd7744db4",
+          "description": "[JTC_MSC_BINDER_INDEX.md] KEY LEGAL CITATIONS: **Michigan Court Rules:**\n- MCR 7.304(A) - Original actions\n- MCR 7.316(A) - General powers/immediate relief\n- MCR 2.003 - Judicial disqualification\n- MC",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-cb1cd7744db4",
+          "description": "[JTC_MSC_BINDER_INDEX.md] KEY LEGAL CITATIONS: **Michigan Court Rules:**\n- MCR 7.304(A) - Original actions\n- MCR 7.316(A) - General powers/immediate relief\n- MCR 2.003 - Judicial disqualification\n- MC",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-28929469c9f5",
+          "description": "[JTC_MSC_BINDER_INDEX.md] KEYWORDS & SEARCH TERMS: parenting time, suspension, PPO, personal protection order, mental health evaluation, \njudicial misconduct, disqualification, superintending control,",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "3.208": {
+      "name": "Domestic Relations — Friend of Court",
+      "count": 1,
+      "severities": {
+        "high": 1
+      },
+      "sample_violations": [
+        {
+          "id": "JV-83d8f6671b68",
+          "description": "[PIGGYPIGGY.md] Forum 1: 14th Circuit Court (Trial Level): - Motion to Set Aside Ex Parte Order (MCR 2.612)\n- Motion to Restore Parenting Time (MCR 3.207)\n- Motion to Disqualify Judge McNeill (MCR 2.0",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "3.203": {
+      "name": "",
+      "count": 1,
+      "severities": {
+        "high": 1
+      },
+      "sample_violations": [
+        {
+          "id": "JV-0370a1c3422e",
+          "description": "[PIGGYPIGGY_FINAL.md] Michigan Court Rules (MCR) — Top 20: | MCR | .txt Hits | .docx | .pdf | Description |\n|-----|----------|-------|------|-------------|\n| MCR 3.207 | 2,153 | 96 | 360 | Domestic re",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "7.205": {
+      "name": "",
+      "count": 1,
+      "severities": {
+        "high": 1
+      },
+      "sample_violations": [
+        {
+          "id": "JV-5b1178d3f023",
+          "description": "[PIGGYPIGGY_FINAL.md] SHORT-TERM (30 days): 4. **Motion to Disqualify Judge McNeill** — MCR 2.003(C), 26+ documented violations\n5. **JTC Complaint** — Canon 2, 3 violations with 100+ supporting eviden",
+          "severity": "high",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    "2.505": {
+      "name": "",
+      "count": 12,
+      "severities": {
+        "critical": 2,
+        "high": 10
+      },
+      "sample_violations": [
+        {
+          "id": "JV-7e64faefe920",
+          "description": "IN THE 14th CIRCUIT COURT FOR THE COUNTY OF MUSKEGON, MICHIGAN \n990 Terrace St Muskegon Michigan 49442 \nCase No.: 2023-5907-PP (PPO) & 2024-001507-DC (Custody) \nHonorable Judge: Jenny McNeill \n \nPlain",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-46d460f5ade3",
+          "description": "Legal Basis for Reopening Custody Case \nUnder MCL 722.27(1)(c), the court has the authority to modify or reopen a custody order if \nthere has been a significant change in circumstances or proper cause",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-73cef521b35d",
+          "description": "Plaintiff, Andrew J. Pigors, pursuant to MCR 2.505 and MCR 3.206, respectfully moves this Court to reopen the custody case and consolidate it with the PPO case (2023-5907-PP) due to overlapping facts ",
+          "severity": "critical",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-3c59c662928a",
+          "description": "• Coordinate PPO and custody calendars under MCR 2.505 to avoid inconsistent findings; bar use of PPO as sword/shield against exchanges.",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-45F1217B",
+          "description": "IN THE 14th CIRCUIT COURT FOR THE COUNTY OF MUSKEGON, MICHIGAN \n990 Terrace St Muskegon Michigan 49442 \nCase No.: 2023-5907-PP (PPO) & 2024-001507-DC (Custody) \nHonorable Judge: Jenny McNeill \n \nPlain",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "3.204": {
+      "name": "",
+      "count": 2,
+      "severities": {
+        "high": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-993aa7e774a1",
+          "description": "MCR 3.204 – Support and Parenting Time Proceedings\nCovers procedures for initiating actions regarding custody, child support, and parenting time, including post-judgment modifications like those in yo",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-EC155875",
+          "description": "MCR 3.204 – Support and Parenting Time Proceedings\nCovers procedures for initiating actions regarding custody, child support, and parenting time, including post-judgment modifications like those in yo",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "3.215": {
+      "name": "",
+      "count": 2,
+      "severities": {
+        "high": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-0175787d881a",
+          "description": "MCR 3.215 – Domestic Relations Referee\nThis rule applies if your case involves a Friend of the Court (FOC) referee, which is common in cases involving child custody and support modifications. It inclu",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-3688924C",
+          "description": "MCR 3.215 – Domestic Relations Referee\nThis rule applies if your case involves a Friend of the Court (FOC) referee, which is common in cases involving child custody and support modifications. It inclu",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "3.218": {
+      "name": "",
+      "count": 2,
+      "severities": {
+        "high": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-c6e681a9ec70",
+          "description": "MCR 3.218 – Friend of the Court\nThis rule outlines the Friend of the Court’s role in enforcing, modifying, and providing recommendations on child support, custody, and parenting time. It includes how ",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-9DFD30F6",
+          "description": "MCR 3.218 – Friend of the Court\nThis rule outlines the Friend of the Court’s role in enforcing, modifying, and providing recommendations on child support, custody, and parenting time. It includes how ",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "3.216": {
+      "name": "",
+      "count": 2,
+      "severities": {
+        "high": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JV-dd39f0d6b3a1",
+          "description": "MCR 3.216 – Domestic Relations Mediation\nIf mediation is considered or ordered in your case, this rule outlines how mediation should be conducted, including for custody, parenting time, and child supp",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-946F9854",
+          "description": "MCR 3.216 – Domestic Relations Mediation\nIf mediation is considered or ordered in your case, this rule outlines how mediation should be conducted, including for custody, parenting time, and child supp",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "2.002": {
+      "name": "",
+      "count": 26,
+      "severities": {
+        "high": 26
+      },
+      "sample_violations": [
+        {
+          "id": "JV-c3a26e1dce4d",
+          "description": "Proposed Order checkboxes driven by this set:\n  [ ] Interim parenting time reinstated immediately (MCR 3.207(B)); Attachment A make-up schedule.\n  [ ] PPO may not be used as sword/shield to impede exc",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "JV-04b4f15e1421",
+          "description": "Proposed Order checkboxes driven by these CSVs:\n  [ ] Interim parenting time reinstated immediately (MCR 3.207(B)); Attachment A make-up schedule.\n  [ ] PPO may not be used as sword/shield to impede e",
+          "severity": "high",
+          "date": "2026-02-26"
+        },
+        {
+          "id": "FJA-B5FE9DC9",
+          "description": "Proposed Order checkboxes driven by this set:\n  [ ] Interim parenting time reinstated immediately (MCR 3.207(B)); Attachment A make-up schedule.\n  [ ] PPO may not be used as sword/shield to impede exc",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "FJA-478B30D9",
+          "description": "Proposed Order checkboxes driven by this set:\n  [ ] Interim parenting time reinstated immediately (MCR 3.207(B)); Attachment A make-up schedule.\n  [ ] PPO may not be used as sword/shield to impede exc",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "FJA-52C0CB4F",
+          "description": "Proposed Order checkboxes driven by this set:\n  [ ] Interim parenting time reinstated immediately (MCR 3.207(B)); Attachment A make-up schedule.\n  [ ] PPO may not be used as sword/shield to impede exc",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "3.205": {
+      "name": "",
+      "count": 1,
+      "severities": {
+        "high": 1
+      },
+      "sample_violations": [
+        {
+          "id": "FJA-C56D3293",
+          "description": "MCR 3.205 – Prosecution of Support and Custody Proceedings\nGoverns the prosecution and defense of support and custody actions.",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "3.212": {
+      "name": "",
+      "count": 1,
+      "severities": {
+        "high": 1
+      },
+      "sample_violations": [
+        {
+          "id": "FJA-6738D4C3",
+          "description": "MCR 3.212 – Postjudgment Proceedings in Domestic Relations Cases\nThis rule covers post-judgment motions, such as those for modifying custody or parenting time. It will be relevant to your motion for c",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "2.310": {
+      "name": "",
+      "count": 1,
+      "severities": {
+        "high": 1
+      },
+      "sample_violations": [
+        {
+          "id": "FJA-3CB52EC0",
+          "description": "Exhibit exchange within 7 days; serve Interrogatories (MCR 2.309), RFPs (MCR 2.310), RFAs (MCR 2.312) within 48 hours; scope‑limited depositions within 30 days; protective/clawback terms; short‑cause ",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "2.309": {
+      "name": "",
+      "count": 1,
+      "severities": {
+        "high": 1
+      },
+      "sample_violations": [
+        {
+          "id": "FJA-3CB52EC0",
+          "description": "Exhibit exchange within 7 days; serve Interrogatories (MCR 2.309), RFPs (MCR 2.310), RFAs (MCR 2.312) within 48 hours; scope‑limited depositions within 30 days; protective/clawback terms; short‑cause ",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "2.312": {
+      "name": "",
+      "count": 1,
+      "severities": {
+        "high": 1
+      },
+      "sample_violations": [
+        {
+          "id": "FJA-3CB52EC0",
+          "description": "Exhibit exchange within 7 days; serve Interrogatories (MCR 2.309), RFPs (MCR 2.310), RFAs (MCR 2.312) within 48 hours; scope‑limited depositions within 30 days; protective/clawback terms; short‑cause ",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "9.200": {
+      "name": "",
+      "count": 327,
+      "severities": {
+        "high": 2,
+        "critical": 325
+      },
+      "sample_violations": [
+        {
+          "id": "FJA-3F9F29B5",
+          "description": "[MCR] MCR 9.200:   * Judicial Tenure Commission procedural framework (MCR 9.200 et seq. referenced as the JTC lane) ([Michigan Judicial Tenure Commission][9])",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "FJA-0FF545F5",
+          "description": "[MCR] MCR 9.200: Judicial Tenure Commission procedural framework (MCR 9.200 et seq. referenced as the JTC lane) ",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "JA13-72",
+          "description": "- **JTC:** [Assigned upon receipt]",
+          "severity": "critical",
+          "date": ""
+        },
+        {
+          "id": "JA13-73",
+          "description": "# PART III: JUDICIAL TENURE COMMISSION (JTC)",
+          "severity": "critical",
+          "date": ""
+        },
+        {
+          "id": "JA13-74",
+          "description": "Checklist/Guide | ~14 | 11.0 KB | ✅ COURT-READY | JTC-specific filing requirements and procedures | N/A — administrative |",
+          "severity": "critical",
+          "date": ""
+        }
+      ]
+    },
+    "3.705": {
+      "name": "",
+      "count": 1,
+      "severities": {
+        "info": 1
+      },
+      "sample_violations": [
+        {
+          "id": "FJA-E9AFE707",
+          "description": "[MCR] MCR 3.705: I. PREJUDICIAL TIMING + EXTENSION PRACTICE (MCR 3.705; 3.707)",
+          "severity": "info",
+          "date": ""
+        }
+      ]
+    },
+    "7.204": {
+      "name": "",
+      "count": 2,
+      "severities": {
+        "high": 2
+      },
+      "sample_violations": [
+        {
+          "id": "JA13-157",
+          "description": "pplication for Leave to Appeal (Claim of Right) | MCR 7.204(A) | **21 days** from entry of final order | Date of final order: ________ | ⬜ PENDING |",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "JA13-158",
+          "description": "### A. Appeal of Right (MCR 7.204)",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    },
+    "7.306": {
+      "name": "",
+      "count": 3,
+      "severities": {
+        "high": 3
+      },
+      "sample_violations": [
+        {
+          "id": "JA13-6155",
+          "description": "| Original Action (Superintending Control) | MCR 7.306 | Michigan Supreme Court | Ready |",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "JA13-8334",
+          "description": "**URGENT** | MSC Application | MCR 7.305 Leave / MCR 7.306 Extraordinary Writs | MI Supreme Court | Materials READY |",
+          "severity": "high",
+          "date": ""
+        },
+        {
+          "id": "JA13-8335",
+          "description": "5. MCR 7.306 — Extraordinary Writs",
+          "severity": "high",
+          "date": ""
+        }
+      ]
+    }
+  },
+  "omega_summary": {
+    "MCR 2.003 (Disqualification)": {
+      "count": 167,
+      "percentage": 14.82,
+      "severity_breakdown": "critical,high,medium"
+    },
+    "MCR / Canon — PROCEDURAL_MISCONDUCT": {
+      "count": 161,
+      "percentage": 14.29,
+      "severity_breakdown": "medium,critical,high"
+    },
+    "MCR / Canon — EX_PARTE_VIOLATION": {
+      "count": 150,
+      "percentage": 13.31,
+      "severity_breakdown": "critical,high,medium"
+    },
+    "MCL 600.2950/2950a; MCR 3.207(B)": {
+      "count": 126,
+      "percentage": 11.18,
+      "severity_breakdown": "medium,critical,high"
+    },
+    "MCR 2.107; MCR 2.612(C)": {
+      "count": 105,
+      "percentage": 9.32,
+      "severity_breakdown": "critical,medium,high"
+    },
+    "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)": {
+      "count": 62,
+      "percentage": 5.5,
+      "severity_breakdown": "critical,medium,high"
+    },
+    "MRE 613(b) — Prior inconsistent statement [hearing]": {
+      "count": 51,
+      "percentage": 4.53,
+      "severity_breakdown": "critical,medium,high"
+    },
+    "MCR / Canon — CREDIBILITY_FAILURE": {
+      "count": 51,
+      "percentage": 4.53,
+      "severity_breakdown": "medium,critical,high"
+    },
+    "MCR 3.207": {
+      "count": 35,
+      "percentage": 3.11,
+      "severity_breakdown": "critical,high"
+    },
+    "MCR / Canon — PPO_WEAPONIZATION": {
+      "count": 27,
+      "percentage": 2.4,
+      "severity_breakdown": "medium,critical,high"
+    },
+    "MRE 613(b) — Prior inconsistent statement [ex_parte]": {
+      "count": 14,
+      "percentage": 1.24,
+      "severity_breakdown": "critical,high"
+    },
+    "Canon 2 (Impropriety/Appearance)": {
+      "count": 14,
+      "percentage": 1.24,
+      "severity_breakdown": "high,medium,critical"
+    },
+    "medium": {
+      "count": 484,
+      "percentage": 42.95,
+      "severity_breakdown": null
+    },
+    "critical": {
+      "count": 377,
+      "percentage": 33.45,
+      "severity_breakdown": null
+    },
+    "high": {
+      "count": 243,
+      "percentage": 21.56,
+      "severity_breakdown": null
+    },
+    "low": {
+      "count": 23,
+      "percentage": 2.04,
+      "severity_breakdown": null
+    },
+    "Hon. Jenny L. McNeill": {
+      "count": 1127,
+      "percentage": 100.0,
+      "severity_breakdown": "{\"critical\": 377, \"high\": 243}"
+    }
+  },
+  "canons_matrix": {
+    "Canon 1": {
+      "subsection": "Canon 1 (General)",
+      "text": "A judge should participate in establishing, maintaining, and enforcing high standards of conduct, and shall personally observe those standards so that the integrity and independence of the judiciary will be preserved.",
+      "violation_count": 0,
+      "examples": null,
+      "severity": "none"
+    },
+    "Canon 2": {
+      "subsection": "Canon 2C",
+      "text": "A judge should not hold membership in any organization that practices invidious discrimination.",
+      "violation_count": 0,
+      "examples": null,
+      "severity": "none"
+    },
+    "Canon 3": {
+      "subsection": "Canon 3 (General)",
+      "text": "A judge should perform the duties of the office impartially and diligently.",
+      "violation_count": 10,
+      "examples": "[\"[medium] • Service of this order within 24 hours via MiFILE plus first‑class mail with SCAO proof of service filed.\", \"[low] I certify that on 2025-10-07, I served this filing via MiFILE electronic service to registered service contacts and by first‑class mail to addresses of record, and will file the SCAO Proof of Service \", \"[critical] Authority lock: Use current MCR PDF (May 1, 2025) as the rule spine; consult MJI Civil Benchbook for checklists and tables; keep SCAO forms as the canonical templates for summons/complaint; follow MiF\", \"[high] If any claim triggers federal jurisdiction or §1983, the OS flips to FRCP+WDMI LCr for pleading, e-filing, division assignment, and Rule 11 compliance. Otherwise it stays in MCR/SCAO/MiFILE lane.\", \"[low] For state filings: enforce MiFILE format/KB guidance and SCAO forms; for WDMI: enforce PDF standards and local rule constraints.\", \"[high] ⚖️ Motion Generators (MC, FOC, §1983, Strike, Show Cause, Canon Complaint)\", \"[critical] [CASE_LAW] 484 Mich 247: suggests due process was lacking. Michigan courts (e.g., Hunter v. Hunter, 484 Mich 247) recognize\", \"[low] [CASE_LAW] 451 Mich 470: | Cain v. Dept of Corrections, 451 Mich 470 | Judicial disqualification |\", \"[low] Ensure that you request a Friend of the Court (FOC) review of your case, particularly if Emily’s PPO or financial situation affected parenting time.\", \"[low] FOC Child Support Review: Request a FOC review of child support calculations to ensure that errors are identified and corrected, particularly in light of your proposed 50/50 arrangement.\"]",
+      "severity": "high"
+    },
+    "Canon 4": {
+      "subsection": null,
+      "text": "A judge may engage in activities to improve the law, the legal system, and the administration of justice.",
+      "violation_count": 0,
+      "examples": null,
+      "severity": "none"
+    },
+    "Canon 5": {
+      "subsection": null,
+      "text": "A judge should regulate extra-judicial activities to minimize the risk of conflict with judicial duties.",
+      "violation_count": 0,
+      "examples": null,
+      "severity": "none"
+    }
+  },
+  "violation_patterns": [
+    {
+      "pattern": "Ppo Ppo Abuse",
+      "frequency": 1307,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Due Process Ex Parte",
+      "frequency": 1015,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Child Welfare Pt Denial",
+      "frequency": 821,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Child Welfare Alienation",
+      "frequency": 327,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Bias Bias",
+      "frequency": 302,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Financial Dollar Amount",
+      "frequency": 289,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Child Welfare Bif",
+      "frequency": 252,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Child Welfare Separation",
+      "frequency": 190,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Due Process No Hearing",
+      "frequency": 188,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Conspiracy Conspiracy",
+      "frequency": 188,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Procedural Disqualification",
+      "frequency": 183,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Judicial Canons Jtc",
+      "frequency": 168,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Catastrophe Aug 8",
+      "frequency": 145,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Procedural Domestic Relations",
+      "frequency": 144,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Conspiracy Temporal",
+      "frequency": 123,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Ppo Perjury",
+      "frequency": 105,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Judicial Canons Canon",
+      "frequency": 105,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Procedural Motion Practice",
+      "frequency": 90,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Ppo False Allegations",
+      "frequency": 72,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Child Welfare Bond",
+      "frequency": 72,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Constitutional Fourteenth",
+      "frequency": 55,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Procedural Service",
+      "frequency": 51,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Due Process Right To Heard",
+      "frequency": 49,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Child Welfare Parental Rights",
+      "frequency": 47,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Due Process Silencing",
+      "frequency": 45,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Child Welfare Irreparable",
+      "frequency": 38,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Ppo Fabrication",
+      "frequency": 37,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Bias Impropriety",
+      "frequency": 32,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Judicial Canons Mcr 9",
+      "frequency": 30,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Bias No Enforcement",
+      "frequency": 27,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Constitutional Section 1983",
+      "frequency": 26,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Financial Ifp",
+      "frequency": 24,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Constitutional First Amend",
+      "frequency": 23,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Conspiracy Berry",
+      "frequency": 22,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Judicial Canons Judicial Conduct",
+      "frequency": 22,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Constitutional Court Access",
+      "frequency": 22,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Financial Support",
+      "frequency": 20,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Bias Disparate",
+      "frequency": 20,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Due Process Dp Explicit",
+      "frequency": 15,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Bias Favoritism",
+      "frequency": 14,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Constitutional Monell",
+      "frequency": 13,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Constitutional Color Of Law",
+      "frequency": 12,
+      "severity": "critical"
+    },
+    {
+      "pattern": "Procedural Contempt",
+      "frequency": 10,
+      "severity": "high"
+    },
+    {
+      "pattern": "Financial Bond",
+      "frequency": 9,
+      "severity": "high"
+    },
+    {
+      "pattern": "Conspiracy Civil Conspiracy",
+      "frequency": 4,
+      "severity": "high"
+    },
+    {
+      "pattern": "Due Process Evidence Refusal",
+      "frequency": 3,
+      "severity": "high"
+    },
+    {
+      "pattern": "Procedural Superintending",
+      "frequency": 3,
+      "severity": "high"
+    },
+    {
+      "pattern": "Procedural Appeal Right",
+      "frequency": 2,
+      "severity": "high"
+    },
+    {
+      "pattern": "Constitutional Qi",
+      "frequency": 2,
+      "severity": "high"
+    }
+  ],
+  "constitutional_violations": [
+    {
+      "amendment": "14th Amendment",
+      "clause": "Due Process — Procedural",
+      "violation_type": "EX_PARTE_WITHOUT_NOTICE",
+      "description": "Parenting time suspended via ex parte order without notice or hearing — 52 ex parte orders total with 44% rate, 100% favoring Emily Watson",
+      "severity": "CRITICAL",
+      "caselaw": "Mathews v. Eldridge, 424 U.S. 319 (1976) — three-factor balancing test for procedural due process; Fuentes v. Shevin, 407 U.S. 67 (1972) — prior notice and hearing required before deprivation"
+    },
+    {
+      "amendment": "14th Amendment",
+      "clause": "Due Process — Procedural",
+      "violation_type": "BIASED_EVALUATION_INTERFERENCE",
+      "description": "Judge McNeill sent biasing letter to HealthWest evaluator after first eval returned ALL ZEROS, resulting in changed \"Rule Out\" finding",
+      "severity": "CRITICAL",
+      "caselaw": "Ward v. Village of Monroeville, 409 U.S. 57 (1972) — judicial bias violates due process; Caperton v. A.T. Massey Coal Co., 556 U.S. 868 (2009)"
+    },
+    {
+      "amendment": "14th Amendment",
+      "clause": "Due Process — Procedural",
+      "violation_type": "ILLEGALLY_OBTAINED_EVIDENCE",
+      "description": "Ex parte order based on recording made in violation of MCL 750.539c (felony eavesdropping) by Lori Watson — fruit of the poisonous tree",
+      "severity": "CRITICAL",
+      "caselaw": "Mapp v. Ohio, 367 U.S. 643 (1961) — exclusionary rule; Wong Sun v. United States, 371 U.S. 471 (1963) — fruit of the poisonous tree"
+    },
+    {
+      "amendment": "14th Amendment",
+      "clause": "Due Process — Procedural",
+      "violation_type": "DENIAL_OF_MEANINGFUL_HEARING",
+      "description": "Repeated denial of opportunity to present evidence and cross-examine witnesses at critical hearings affecting parental rights",
+      "severity": "CRITICAL",
+      "caselaw": "Goldberg v. Kelly, 397 U.S. 254 (1970) — right to hearing before deprivation; Cleveland Board of Education v. Loudermill, 470 U.S. 532 (1985)"
+    },
+    {
+      "amendment": "14th Amendment",
+      "clause": "Due Process — Substantive",
+      "violation_type": "PARENTAL_RIGHTS_DEPRIVATION",
+      "description": "Fundamental liberty interest in parenting severed for 217+ days without compelling state interest — NEGATIVE drug screen, ALL ZEROS eval, 9 police investigations with ZERO findings",
+      "severity": "CRITICAL",
+      "caselaw": "Troxel v. Granville, 530 U.S. 57 (2000) — parental rights as fundamental liberty interest; Santosky v. Kramer, 455 U.S. 745 (1982) — clear and convincing evidence standard"
+    },
+    {
+      "amendment": "14th Amendment",
+      "clause": "Due Process — Substantive",
+      "violation_type": "EXCESSIVE_INCARCERATION",
+      "description": "59+ days incarceration for civil contempt without adequate purge conditions or proportionality review",
+      "severity": "CRITICAL",
+      "caselaw": "Turner v. Rogers, 564 U.S. 431 (2011) — procedural safeguards for civil contempt incarceration; Bearden v. Georgia, 461 U.S. 660 (1983)"
+    },
+    {
+      "amendment": "14th Amendment",
+      "clause": "Equal Protection",
+      "violation_type": "GENDER_DISCRIMINATION_PATTERN",
+      "description": "52 ex parte orders with 100% granted to mother (Emily) and 0% to father (Andrew) — statistical impossibility absent discrimination. 44% ex parte rate far exceeds Michigan average.",
+      "severity": "CRITICAL",
+      "caselaw": "Craig v. Boren, 429 U.S. 190 (1976) — intermediate scrutiny for gender; United States v. Virginia, 518 U.S. 515 (1996) — exceedingly persuasive justification required"
+    },
+    {
+      "amendment": "14th Amendment",
+      "clause": "Equal Protection",
+      "violation_type": "PRO_SE_DISCRIMINATION",
+      "description": "Pattern of adverse rulings against pro se father while accommodating represented mother — disparate treatment based on representation status",
+      "severity": "HIGH",
+      "caselaw": "Bounds v. Smith, 430 U.S. 817 (1977) — meaningful access to courts; Turner v. Rogers, 564 U.S. 431 (2011)"
+    },
+    {
+      "amendment": "1st Amendment",
+      "clause": "Freedom of Speech / Petition",
+      "violation_type": "RETALIATION_FOR_FILINGS",
+      "description": "Escalating sanctions and adverse orders in apparent retaliation for filing complaints (JTC, bar complaint, appellate filings) — chilling effect on right to petition",
+      "severity": "HIGH",
+      "caselaw": "BE&K Construction Co. v. NLRB, 536 U.S. 516 (2002) — First Amendment protects litigation activity; Borough of Duryea v. Guarnieri, 564 U.S. 379 (2011) — Petition Clause"
+    },
+    {
+      "amendment": "4th Amendment",
+      "clause": "Unreasonable Search/Seizure",
+      "violation_type": "WARRANTLESS_SEIZURE_OF_PERSON",
+      "description": "59+ days incarceration constitutes seizure of person without probable cause for criminal conduct — civil contempt used as criminal punishment",
+      "severity": "HIGH",
+      "caselaw": "Albright v. Oliver, 510 U.S. 266 (1994) — Fourth Amendment seizure; County of Sacramento v. Lewis, 523 U.S. 833 (1998)"
+    },
+    {
+      "amendment": "6th Amendment",
+      "clause": "Right to Counsel",
+      "violation_type": "CONTEMPT_WITHOUT_COUNSEL",
+      "description": "Incarcerated for civil contempt exceeding 6 months cumulative without appointed counsel — when liberty is at stake, right to counsel attaches",
+      "severity": "HIGH",
+      "caselaw": "Turner v. Rogers, 564 U.S. 431 (2011) — alternative procedural safeguards; Argersinger v. Hamlin, 407 U.S. 25 (1972) — right to counsel when imprisonment imposed"
+    }
+  ]
+}

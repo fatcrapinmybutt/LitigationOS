@@ -1,0 +1,96 @@
+{
+  "tool": 230,
+  "name": "Albert Watson Statement Analyzer",
+  "generated": "2026-03-19T09:20:25.487997",
+  "total_references": 106,
+  "findings_counts": {
+    "police_narrative": 21,
+    "evidence_quotes": 42,
+    "timeline_events": 20,
+    "rebuttal_pack": 4,
+    "cip_contradictions": 0,
+    "coe_entries": 19
+  },
+  "analysis": {
+    "admissions_against_interest": [
+      {
+        "statement": "Albert said they want this incident documented so Emily can go tomorrow to get an Ex Parte order for full custody of her son.",
+        "legal_basis": "MRE 801(d)(2) \u2014 Statement of party-opponent",
+        "significance": "Albert admitted the police report was filed specifically to obtain ex parte custody order \u2014 proves premeditation",
+        "applies_to": [
+          "F1",
+          "F3",
+          "F4",
+          "F9"
+        ]
+      },
+      {
+        "statement": "I made contact with Lori Watson, who was watching Lincoln Watson. Lori advised there was no custody agreement, but her daughter Emily was in the process of seeking full custody of Lincoln. Lori advised Emily had a signed Affidavit of Parentage, signed by both Emily and Andrew. In the affidavit it st",
+        "legal_basis": "MRE 801(d)(2) \u2014 Statement of party-opponent",
+        "significance": "Albert admitted the police report was filed specifically to obtain ex parte custody order \u2014 proves premeditation",
+        "applies_to": [
+          "F1",
+          "F3",
+          "F4",
+          "F9"
+        ]
+      }
+    ],
+    "impeachment_material": [],
+    "conspiracy_evidence": [
+      {
+        "theory": "Albert Watson coordinated with Emily to manufacture police report for litigation advantage",
+        "evidence": "NS2505044: Albert called police, stated goal was to get ex parte order next day",
+        "legal_basis": "MCL 750.157a (conspiracy), 42 USC \u00a71985(3) (conspiracy to deprive civil rights)",
+        "strength": "DEVASTATING"
+      },
+      {
+        "theory": "Albert Watson physically interfered with custody exchanges",
+        "evidence": "20 timeline events involving Albert, including physical removal of child",
+        "legal_basis": "MCL 750.350a (custodial interference), assault and battery",
+        "strength": "STRONG"
+      },
+      {
+        "theory": "Watson family operated as coordinated unit to alienate father",
+        "evidence": "Multiple family members (Albert, Cody, Emily) rotated interference tactics",
+        "legal_basis": "MCL 722.23(j) (best interest \u2014 willingness to facilitate relationship)",
+        "strength": "STRONG"
+      }
+    ],
+    "witness_credibility": [],
+    "legal_theories": [
+      {
+        "theory": "Fraud Upon the Court",
+        "rule": "MCR 2.612(C)(3)",
+        "application": "Albert manufactured police report as foundation for fraudulent ex parte filing",
+        "time_bar": "NONE \u2014 independent action for fraud on the court has no time limit"
+      },
+      {
+        "theory": "Conspiracy to Deprive Civil Rights",
+        "rule": "42 USC \u00a71985(3)",
+        "application": "Watson family conspired with Emily to deprive Andrew of parental rights through fraudulent legal process",
+        "time_bar": "2 years from last overt act (continuing violation doctrine extends)"
+      },
+      {
+        "theory": "Due Process Violation",
+        "rule": "42 USC \u00a71983 / 14th Amendment",
+        "application": "Ex parte order based on manufactured evidence = deprivation without due process",
+        "time_bar": "3 years (Michigan personal injury SOL applies to \u00a71983)"
+      },
+      {
+        "theory": "Abuse of Process",
+        "rule": "Michigan common law (Friedman v Dozorc, 412 Mich 1)",
+        "application": "Using police report and PPO/custody system for improper purpose (alienation, not protection)",
+        "time_bar": "3 years"
+      }
+    ]
+  },
+  "smoking_gun": {
+    "report_number": "NS2505044",
+    "date": "2025-08-07",
+    "officer": "Ella Randall (#47437)",
+    "key_admission": "Albert said they want this incident documented so Emily can go tomorrow to get an Ex Parte order for full custody of her son.",
+    "legal_significance": "Recorded admission of premeditated conspiracy to manufacture evidence for custody litigation",
+    "admissibility": "MRE 801(d)(2) \u2014 Statement of party-opponent"
+  }
+}

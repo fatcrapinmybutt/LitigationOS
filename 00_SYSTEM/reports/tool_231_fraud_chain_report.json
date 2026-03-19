@@ -1,0 +1,112 @@
+{
+  "tool": 231,
+  "name": "Fraud Upon the Court Chain Builder",
+  "generated": "2026-03-19T09:21:39.743072",
+  "total_evidence_items": 653,
+  "fraud_score": 100.0,
+  "score_breakdown": {
+    "fabrication_evidence": 25.0,
+    "perjury_evidence": 20.0,
+    "conspiracy_evidence": 20,
+    "pattern_evidence": 15.0,
+    "contradiction_evidence": 10.0,
+    "judicial_complicity": 10.0
+  },
+  "chain": {
+    "root_fraud": {
+      "description": "Emily Watson filed PPO (2023-5907-PP) based on fabricated allegations",
+      "date": "Late 2023",
+      "evidence": [
+        "Oct 15, 2023: Fabricated cocaine straw allegation \u2014 no evidence, no history",
+        "Filed PPO citing baseless harassment claims",
+        "Used professional knowledge (Kent County caseworker) to craft false narrative"
+      ],
+      "legal_status": "FRAUDULENT FOUNDATION \u2014 everything built on this is tainted"
+    },
+    "infected_orders": [
+      {
+        "order": "PPO (2023-5907-PP)",
+        "infection_path": "Direct fraud \u2014 based on fabricated allegations",
+        "status": "VOID AB INITIO",
+        "authority": "MCR 2.612(C)(1)(c) \u2014 fraud; MCR 2.612(C)(1)(d) \u2014 void judgment"
+      },
+      {
+        "order": "Initial custody arrangement (2024-001507-DC)",
+        "infection_path": "PPO used as evidence of \"danger\" to support custody restrictions",
+        "status": "TAINTED \u2014 fruit of fraudulent PPO",
+        "authority": "MCR 2.612(C)(3) \u2014 independent action for fraud on the court"
+      },
+      {
+        "order": "Emily's August 2025 Ex Parte Order",
+        "infection_path": "Built on manufactured police report NS2505044 (Albert Watson admitted premeditation)",
+        "status": "VOID \u2014 no required findings per MCL 722.27a(3)",
+        "authority": "MCL 722.27a(3) \u2014 ex parte requires specific findings; MCR 2.612(C)(1)(d) \u2014 void"
+      },
+      {
+        "order": "Parenting time restrictions",
+        "infection_path": "Based on void PPO + tainted custody order + fraudulent ex parte",
+        "status": "TAINTED \u2014 fruit of poisonous tree",
+        "authority": "Wong Sun v United States, 371 US 471 (1963) \u2014 fruit of poisonous tree doctrine"
+      },
+      {
+        "order": "All subsequent modifications",
+        "infection_path": "Built on foundation of fraudulent initial proceedings",
+        "status": "TAINTED",
+        "authority": "MCR 2.612(C)(3) \u2014 NO time bar for fraud on the court"
+      }
+    ],
+    "void_analysis": {
+      "void_ab_initio": [
+        "PPO (2023-5907-PP) \u2014 based on fabricated evidence",
+        "Emily's Aug 2025 Ex Parte \u2014 no MCL 722.27a(3) findings + manufactured basis"
+      ],
+      "voidable": [
+        "Custody order (2024-001507-DC) \u2014 tainted by fraudulent PPO evidence",
+        "Any order relying on HealthWest evaluation (weaponized/biased)",
+        "Parenting time restrictions built on void orders"
+      ],
+      "relief_mechanism": {
+        "primary": "MCR 2.612(C)(3) \u2014 Independent action for fraud on the court (NO TIME LIMIT)",
+        "secondary": "MCR 2.612(C)(1)(d) \u2014 Void judgment (NO TIME LIMIT)",
+        "tertiary": "MCR 2.612(C)(1)(c) \u2014 Fraud (1 year from discovery)",
+        "federal": "42 USC \u00a71983 \u2014 Due process violation (3 years SOL)"
+      }
+    },
+    "fruit_of_poisonous_tree": [
+      {
+        "original_poison": "Fabricated PPO allegations (Oct 2023)",
+        "fruit": "PPO issued against Andrew",
+        "consequence": "Andrew restricted from contact, portrayed as dangerous"
+      },
+      {
+        "original_poison": "PPO used as evidence in custody proceedings",
+        "fruit": "Custody restrictions imposed",
+        "consequence": "Andrew lost parenting time based on false \"danger\" narrative"
+      },
+      {
+        "original_poison": "Manufactured police report NS2505044 (Aug 2025)",
+        "fruit": "Ex parte custody order granting Emily full custody",
+        "consequence": "Andrew completely cut off from child"
+      },
+      {
+        "original_poison": "HealthWest weaponized evaluation (Sep 2025)",
+        "fruit": "Court-ordered mental health restrictions",
+        "consequence": "Andrew pathologized for asserting legal rights"
+      },
+      {
+        "original_poison": "All preceding fraud",
+        "fruit": "Ongoing parenting time denial",
+        "consequence": "Child alienated from father \u2014 MCL 722.23(j) factor"
+      }
+    ]
+  },
+  "evidence_counts": {
+    "fabricated_allegations": 97,
+    "perjury": 30,
+    "ex_parte": 200,
+    "docket_events": 0,
+    "timeline_fraud": 26,
+    "contradictions": 100,
+    "judicial_violations": 200
+  }
+}

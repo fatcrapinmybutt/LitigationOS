@@ -1,0 +1,285 @@
+{
+  "tool": "damages_calculator",
+  "tool_number": 226,
+  "generated_at": "2026-03-19T09:16:42.478918",
+  "database": "C:\\Users\\andre\\LitigationOS\\litigation_context.db",
+  "grand_totals": {
+    "conservative": 379950,
+    "moderate": 1176350,
+    "aggressive": 2591700
+  },
+  "lanes": [
+    {
+      "lane": "A",
+      "name": "Custody (Watson v. Pigors)",
+      "case_numbers": [
+        "2024-001507-DC"
+      ],
+      "categories": [
+        {
+          "category": "Lost Parenting Time",
+          "authority": "MCL 722.27a; Shulick v Richards (Mich App 2002)",
+          "methodology": "Per diem calculation: 589 days since separation (Aug 7, 2024)",
+          "supporting_claims": 124,
+          "supporting_evidence_quotes": 152,
+          "db_incidents": 0,
+          "estimates": {
+            "conservative": 29450,
+            "moderate": 88350,
+            "aggressive": 176700
+          }
+        },
+        {
+          "category": "Emotional Distress (IIED)",
+          "authority": "Roberts v Auto-Owners Ins Co, 422 Mich 594 (1985); MCL 600.2913",
+          "methodology": "Alienation constitutes extreme/outrageous conduct causing severe emotional distress",
+          "estimates": {
+            "conservative": 25000,
+            "moderate": 75000,
+            "aggressive": 150000
+          }
+        },
+        {
+          "category": "Attorney Fees Equivalent / Pro Se Litigation Costs",
+          "authority": "MCL 722.27a(7)(c); MCR 3.206(D)",
+          "methodology": "Pro se hours at reasonable attorney rate ($250-350/hr Michigan family law)",
+          "estimates": {
+            "conservative": 15000,
+            "moderate": 35000,
+            "aggressive": 60000
+          }
+        },
+        {
+          "category": "DB: Emotional Distress - Parent-child separation (569+ days)",
+          "authority": "MCL 600.2913; Troxel v Granville",
+          "methodology": "Per-day calculation \u00d7 severity; MI tort precedent",
+          "estimates": {
+            "conservative": 100000,
+            "moderate": 300000,
+            "aggressive": 500000
+          }
+        },
+        {
+          "category": "DB: Emotional Distress - Child psychological harm",
+          "authority": "MCL 722.23(a)-(l)",
+          "methodology": "Child development literature; expert testimony basis",
+          "estimates": {
+            "conservative": 50000,
+            "moderate": 150000,
+            "aggressive": 250000
+          }
+        },
+        {
+          "category": "DB: Housing Emotional Distress - Stress from housing conditions",
+          "authority": "MCL 600.2913",
+          "methodology": "Impact on custody case + child welfare",
+          "estimates": {
+            "conservative": 5000,
+            "moderate": 15000,
+            "aggressive": 25000
+          }
+        }
+      ],
+      "lane_totals": {
+        "conservative": 224450,
+        "moderate": 663350,
+        "aggressive": 1161700
+      }
+    },
+    {
+      "lane": "B",
+      "name": "Housing (Shady Oaks)",
+      "case_numbers": [
+        "2025-002760-CZ"
+      ],
+      "categories": [
+        {
+          "category": "Lease Violation Damages",
+          "authority": "MCL 554.601a; MCL 600.2918; Truth in Renting Act",
+          "methodology": "Statutory damages for lease violations; actual damages from improper termination",
+          "supporting_claims": 15,
+          "supporting_evidence": 509,
+          "estimates": {
+            "conservative": 5000,
+            "moderate": 15000,
+            "aggressive": 30000
+          }
+        },
+        {
+          "category": "Constructive Eviction",
+          "authority": "Automobile Club of Michigan v State Farm, 118 Mich App 106 (1982)",
+          "methodology": "Loss of quiet enjoyment, habitability issues, retaliatory conduct",
+          "estimates": {
+            "conservative": 5000,
+            "moderate": 20000,
+            "aggressive": 45000
+          }
+        },
+        {
+          "category": "Relocation Costs",
+          "authority": "MCL 600.2919a \u2014 actual damages including consequential losses",
+          "methodology": "Moving expenses, security deposits, rent differential, storage",
+          "estimates": {
+            "conservative": 3000,
+            "moderate": 8000,
+            "aggressive": 15000
+          }
+        }
+      ],
+      "lane_totals": {
+        "conservative": 13000,
+        "moderate": 43000,
+        "aggressive": 90000
+      }
+    },
+    {
+      "lane": "D",
+      "name": "PPO / Protection Orders",
+      "case_numbers": [
+        "2023-5907-PP"
+      ],
+      "categories": [
+        {
+          "category": "False PPO / Abuse of Process",
+          "authority": "Friedman v Dozorc, 412 Mich 1 (1981); MCL 600.2907",
+          "methodology": "Damages for wrongful use of PPO as custody weapon; abuse of judicial process",
+          "supporting_ppo_evidence": 998,
+          "db_ppo_violations": 200,
+          "estimates": {
+            "conservative": 10000,
+            "moderate": 35000,
+            "aggressive": 75000
+          }
+        },
+        {
+          "category": "Reputational Harm / Defamation",
+          "authority": "MCL 600.2911; Mitan v Campbell, 474 Mich 21 (2005)",
+          "methodology": "False allegations in PPO petition causing reputational injury in community and employment",
+          "estimates": {
+            "conservative": 10000,
+            "moderate": 40000,
+            "aggressive": 100000
+          }
+        },
+        {
+          "category": "Lost Employment Opportunities",
+          "authority": "MCL 600.2919a \u2014 consequential damages",
+          "methodology": "PPO on record impacting background checks, employment prospects, professional licenses",
+          "estimates": {
+            "conservative": 15000,
+            "moderate": 50000,
+            "aggressive": 120000
+          }
+        }
+      ],
+      "lane_totals": {
+        "conservative": 35000,
+        "moderate": 125000,
+        "aggressive": 295000
+      }
+    },
+    {
+      "lane": "E",
+      "name": "Judicial Misconduct / \u00a71983",
+      "case_numbers": [
+        "2024-001507-DC"
+      ],
+      "categories": [
+        {
+          "category": "\u00a71983 Compensatory Damages",
+          "authority": "42 USC \u00a71983; Carey v Piphus, 435 US 247 (1978); Memphis Community School Dist v Stachura, 477 US 299 (1986)",
+          "methodology": "Constitutional deprivations documented: 11 violations across 4 amendments; 1127 judicial violations in DB",
+          "db_judicial_violations": 1127,
+          "db_constitutional_violations": 11,
+          "severity_breakdown": {
+            "medium": 484,
+            "critical": 377,
+            "high": 243,
+            "low": 23
+          },
+          "constitutional_amendments": {
+            "14th Amendment": 8,
+            "6th Amendment": 1,
+            "4th Amendment": 1,
+            "1st Amendment": 1
+          },
+          "estimates": {
+            "conservative": 50000,
+            "moderate": 150000,
+            "aggressive": 500000
+          }
+        },
+        {
+          "category": "\u00a71983 Punitive Damages",
+          "authority": "Smith v Wade, 461 US 30 (1983); Kolstad v American Dental Assn, 527 US 526 (1999)",
+          "methodology": "Reckless or callous indifference to constitutional rights; pattern of violations",
+          "estimates": {
+            "conservative": 25000,
+            "moderate": 100000,
+            "aggressive": 350000
+          }
+        },
+        {
+          "category": "Attorney Fees Under \u00a71988",
+          "authority": "42 USC \u00a71988; Hensley v Eckerhart, 461 US 424 (1983)",
+          "methodology": "Prevailing party attorney fees; pro se litigant time calculated at market rate",
+          "estimates": {
+            "conservative": 20000,
+            "moderate": 60000,
+            "aggressive": 120000
+          }
+        }
+      ],
+      "lane_totals": {
+        "conservative": 95000,
+        "moderate": 310000,
+        "aggressive": 970000
+      }
+    },
+    {
+      "lane": "F",
+      "name": "Appellate (COA/MSC)",
+      "case_numbers": [
+        "COA-366810"
+      ],
+      "categories": [
+        {
+          "category": "Costs of Appeal",
+          "authority": "MCR 7.219; MCL 600.2441",
+          "methodology": "Filing fees, transcript costs, record preparation, printing/copying",
+          "appellate_filings_tracked": 12,
+          "estimates": {
+            "conservative": 2500,
+            "moderate": 5000,
+            "aggressive": 10000
+          }
+        },
+        {
+          "category": "Appellate Attorney Fees / Pro Se Costs",
+          "authority": "MCR 7.219(A); MCL 600.2405",
+          "methodology": "Costs of appellate briefing, research, oral argument preparation",
+          "estimates": {
+            "conservative": 10000,
+            "moderate": 25000,
+            "aggressive": 50000
+          }
+        },
+        {
+          "category": "Appeal Bond / Supersedeas",
+          "authority": "MCR 7.209; MCL 600.2631",
+          "methodology": "Bond required to stay enforcement during appeal (if applicable)",
+          "estimates": {
+            "conservative": 0,
+            "moderate": 5000,
+            "aggressive": 15000
+          }
+        }
+      ],
+      "lane_totals": {
+        "conservative": 12500,
+        "moderate": 35000,
+        "aggressive": 75000
+      }
+    }
+  ]
+}

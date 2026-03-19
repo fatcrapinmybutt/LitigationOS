@@ -1,75 +1,510 @@
 {
-  "generated": "2026-03-18T23:50:12.571318",
-  "tool": "Witness Credibility (#95)",
-  "witnesses": {
-    "Emily A. Watson": {
-      "role": "Respondent/Counter-Petitioner",
-      "bias_score": 9,
-      "contradictions": 660,
-      "credibility_score": 1,
-      "rating": "LOW",
-      "known_issues": [
-        "Filed PPO based on straw incident (fabricated)",
-        "Restricted parenting time systematically",
-        "Relationship with Ronald Berry (potential coaching)",
-        "Multiple contradictions documented in DB"
+  "tool": "witness_credibility_scorer",
+  "tool_number": 225,
+  "generated_at": "2026-03-19T09:21:51.467239",
+  "case": "Pigors v. Watson (2024-001507-DC)",
+  "summary": {
+    "total_witnesses": 8,
+    "total_contradictions": 808,
+    "total_impeachments": 1810,
+    "total_perjury": 5850,
+    "lowest_credibility": "Emily Watson",
+    "highest_credibility": "Pamela Rusco"
+  },
+  "witnesses": [
+    {
+      "name": "Emily Watson",
+      "role": "Defendant / Mother",
+      "relationship": "Opposing party",
+      "motive_to_lie": "Retain sole custody; justify parenting time denial",
+      "consistency_score": 0,
+      "corroboration_score": 0.0,
+      "contradiction_count": 806,
+      "impeachment_count": 1791,
+      "perjury_count": 5821,
+      "bias_indicators": [
+        "Referenced in 3758 contradiction map entries",
+        "44 AppClose co-parenting violations documented",
+        "Alienation scoring: 64/70 (family pattern)"
+      ],
+      "prior_false_statements": [
+        {
+          "statement_1": "Testimony of Dr. Richard Bone, Ph.D. Parental Alienation Specialist State of Michigan, 14th Circuit Court Muskegon County Case Name: Pigors v. Watson ",
+          "source_1": "chatgpt:66fcb890-b270-8002-adbc-0f20ac730a25",
+          "statement_2": "[ChatGPT conv: Testimony on Parental Alienation | msg #15 | 2024-10-02T03:25:17]",
+          "source_2": "contradicting_evidence",
+          "type": "fact",
+          "severity": "IMPEACHMENT"
+        },
+        {
+          "statement_1": "MASTER FILING STACK STRIKEBACK OBJECTION + RELIEF PACK PRIMARY DOCUMENTS TO BE GENERATED: Objection to Ex Parte Emergency Motion Line-by-line counter ",
+          "source_1": "chatgpt:68a5ac7f-0464-832e-bea8-bc6855f69fab",
+          "statement_2": "[ChatGPT conv: Ex parte motion response | msg #143 | 2025-08-20T14:07:23]",
+          "source_2": "contradicting_evidence",
+          "type": "fact",
+          "severity": "IMPEACHMENT"
+        },
+        {
+          "statement_1": "Understood. What you've just uploaded and declared spans over 300+ unique, date-stamped incidents documenting: 1. Massive Pattern of Misconduct, Alien",
+          "source_1": "chatgpt:68b9a901-5a30-8326-b2b3-6945738909e8",
+          "statement_2": "[ChatGPT conv: Exhibit Master Cover Page | msg #0 | 2025-09-04T14:58:08]",
+          "source_2": "contradicting_evidence",
+          "type": "fact",
+          "severity": "IMPEACHMENT"
+        },
+        {
+          "statement_1": "STATE OF MICHIGAN IN THE 14TH CIRCUIT COURT FOR THE COUNTY OF MUSKEGON FAMILY DIVISION AndrewJ. Pigors, Plaintif, Emily Watson, Defendant V. Case No. ",
+          "source_1": "chatgpt:68b9b34d-835c-8322-9e86-6dbbd24cfa9c",
+          "statement_2": "[ChatGPT conv: Objection to evidence admission | msg #4 | 2025-09-04T15:47:36]",
+          "source_2": "contradicting_evidence",
+          "type": "fact",
+          "severity": "IMPEACHMENT"
+        },
+        {
+          "statement_1": "refine this, strip it down to just exhibits A H and M ( mental health evaluation ) STATE OF MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON F",
+          "source_1": "chatgpt:68e022ec-5654-832a-9560-6a8a00075102",
+          "statement_2": "[ChatGPT conv: Refine affidavit exhibits A H M | msg #0 | 2025-10-03T19:24:26]",
+          "source_2": "contradicting_evidence",
+          "type": "fact",
+          "severity": "IMPEACHMENT"
+        },
+        {
+          "statement_1": "LDW has exhibited signs of emotional distress, including anxiety and trouble sleeping, as a direct result of the limited parenting time and Emily’s al",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "global_weaponization.rowid=269; cat=PPO chain; relief=Bar PPO interference; reinstate PT ex parte; sanctions for misuse; source=Custody_gpt_documents_",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "inconsistency",
+          "severity": "10"
+        },
+        {
+          "statement_1": "LDW has exhibited signs of emotional distress, including anxiety and trouble sleeping, as a direct result of the limited parenting time and Emily’s al",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "global_weaponization.rowid=544; cat=PPO chain; relief=Bar PPO interference; reinstate PT ex parte; sanctions for misuse; source=Custody_gpt_documents_",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "inconsistency",
+          "severity": "10"
+        },
+        {
+          "statement_1": "Testimony of Dr. Richard Bone, Ph.D. – Parental Alienation Specialist\n\nState of Michigan, 14th Circuit Court – Muskegon County\nCase Name: Pigors v. Wa",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "[ChatGPT conv: Testimony on Parental Alienation | msg #15 | 2024-10-02T03:25:17]",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "testimony_vs_document",
+          "severity": "10"
+        },
+        {
+          "statement_1": "Compile these all into 1 filing.  (motions)- 1, 2, 3, 4, 5, 10, 12,(motion to convert hearing to damages ) 13, 14, add a motion for damages maxing it ",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "[ChatGPT conv: System activation summary | msg #10 | 2025-08-04T21:55:24]",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "timeline_conflict",
+          "severity": "10"
+        },
+        {
+          "statement_1": "1. Counterattack Draft – Line-by-Line Rebuttal with Strike-Through Text (.docx)\n\nFormatted for direct court filing\n\nStrike-throughs expose contradicti",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "[ChatGPT conv: Housing appeal update | msg #187 | 2025-08-20T03:49:09]",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "timeline_conflict",
+          "severity": "10"
+        }
+      ],
+      "evidence_appearances": 21,
+      "credibility_score": 0,
+      "credibility_grade": "F (Not Credible)",
+      "key_findings": [
+        {
+          "type": "IMPEACHMENT_INDEX",
+          "contradiction_type": "BEHAVIORAL_INCONSISTENCY",
+          "value": "CRITICAL",
+          "statement_a": "Claims father is dangerous and abusive toward child",
+          "statement_b": "Sent 124 cooperative messages, proposed shared schedules, discussed normal co-parenting",
+          "legal_use": "MRE 613 — prior inconsistent conduct; shows manufactured narrative"
+        },
+        {
+          "type": "IMPEACHMENT_INDEX",
+          "contradiction_type": "FALSE_ALLEGATION",
+          "value": "CRITICAL",
+          "statement_a": "Claims father has substance abuse issues",
+          "statement_b": "Father tested NEGATIVE on all drug screens",
+          "legal_use": "MRE 613, MRE 608(b) — false accusation impeachment"
+        },
+        {
+          "type": "IMPEACHMENT_INDEX",
+          "contradiction_type": "MANUFACTURED_DIAGNOSIS",
+          "value": "CRITICAL",
+          "statement_a": "Claims father has mental health concerns requiring evaluation",
+          "statement_b": "HealthWest eval #1: ALL ZEROS (no issues). Eval #2 only says \"Rule Out\" after judge's letter",
+          "legal_use": "MRE 613, MRE 702/703 — tainted expert opinion; judicial influence on evaluation"
+        },
+        {
+          "type": "IMPEACHMENT_INDEX",
+          "contradiction_type": "CONTRADICTED_BY_INVESTIGATION",
+          "value": "CRITICAL",
+          "statement_a": "Claims father poses safety risk to child, seeks supervised visitation",
+          "statement_b": "9 separate police investigations resulted in ZERO findings against father",
+          "legal_use": "MRE 613 — law enforcement found no basis for allegations"
+        },
+        {
+          "type": "IMPEACHMENT_INDEX",
+          "contradiction_type": "CONCEALED_EXPERTISE",
+          "value": "HIGH",
+          "statement_a": "Presents as concerned mother acting in best interest of child",
+          "statement_b": "9 years in Kent County Prosecutor's Office Family Court Division — weaponized system knowledge",
+          "legal_use": "MRE 608(b) — demonstrates capacity for strategic manipulation of court system"
+        },
+        {
+          "type": "IMPEACHMENT_INDEX",
+          "contradiction_type": "ILLEGALLY_OBTAINED_EVIDENCE",
+          "value": "CRITICAL",
+          "statement_a": "Provided testimony/evidence against father",
+          "statement_b": "Illegally recorded conversations — MCL 750.539c felony (2-party consent violation)",
+          "legal_use": "Motion to suppress under MCL 750.539c; MRE 613 — fruit of felony; criminal referral"
+        },
+        {
+          "type": "IMPEACHMENT_INDEX",
+          "contradiction_type": "PREMEDITATION",
+          "value": "HIGH",
+          "statement_a": "Watson family claims to act in child's best interest",
+          "statement_b": "August 7, 2025 statement showing premeditation of custody strategy",
+          "legal_use": "MRE 613, MRE 801(d)(2) — admission by party opponent; shows coordinated plan"
+        },
+        {
+          "type": "PROFILE_SCORE",
+          "existing_credibility": 0.75,
+          "testimony_count": 0,
+          "notes": "Fka Pigors, Kent County Prosecutor Family Court Division (9 years), counsel: Jennifer L. Barnes"
+        }
       ]
     },
-    "Ronald T. Berry": {
-      "role": "Non-party witness",
-      "bias_score": 8,
-      "contradictions": 0,
-      "credibility_score": 2,
-      "rating": "LOW",
-      "known_issues": [
-        "Potential unauthorized practice of law (MCL 600.916)",
-        "May have coached Emily on filings/testimony",
-        "Financial interest in Emily retaining custody"
+    {
+      "name": "Albert Watson",
+      "role": "Defendant's Father",
+      "relationship": "Emily's father",
+      "motive_to_lie": "Protect daughter; prior aggressive behavior documented",
+      "consistency_score": 10.0,
+      "corroboration_score": 5.0,
+      "contradiction_count": 0,
+      "impeachment_count": 1,
+      "perjury_count": 17,
+      "bias_indicators": [
+        "Referenced in 5 contradiction map entries",
+        "44 AppClose co-parenting violations documented",
+        "Alienation scoring: 64/70 (family pattern)"
+      ],
+      "prior_false_statements": [
+        {
+          "statement_1": "Lori & Albert Watson → Improper Service Events",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "global_weaponization.rowid=3006; cat=service/notice; relief=Prospective-only cure; strike tainted orders; noticed hearing; source=chat gpt full chat 2",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "inconsistency",
+          "severity": "5"
+        },
+        {
+          "statement_1": "The PPO was originally served by Lori and Albert Watson, during an eviction dispute, without a proper officer. This raises questions of coercion and b",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "global_weaponization.rowid=2991; cat=PPO chain; relief=Bar PPO interference; reinstate PT ex parte; sanctions for misuse; source=chat gpt full chat 2.",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "inconsistency",
+          "severity": "5"
+        },
+        {
+          "statement_1": "Add this to your memory, jenny omicneal put $250 fine by in preventing me from filing. In my custody case. She knowing that Albert Watson and I have h",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "[ChatGPT conv: !!!!!Litigation OS upgrade | msg #61 | 2025-11-24T14:01:14]",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "inconsistency",
+          "severity": "5"
+        },
+        {
+          "statement_1": "[2024-03-03] [citation: no] exhibit ❌ - \"Police report dated March 3, 2024\" - no exhibit number ❌ - \"47 text messages\" - no exhibi",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "[2024-03-25] [citation: no] e Aug 8, 2025), >10 police reports with no arrest/no fault, Lori’s 3/25/24 ultimatum text, Albert’s No",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "timeline_conflict",
+          "severity": "4"
+        },
+        {
+          "statement_1": "rcing custody disputes into prolonged litigation.\nOctober 20, 2024: Albert Watson accosts Andrew during a parenting",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "Source type: discovery",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "evidence_quote",
+          "severity": "4"
+        }
+      ],
+      "evidence_appearances": 0,
+      "credibility_score": 7.7,
+      "credibility_grade": "B (Generally Credible)",
+      "key_findings": [
+        {
+          "type": "IMPEACHMENT_INDEX",
+          "contradiction_type": "PREMEDITATION",
+          "value": "HIGH",
+          "statement_a": "Watson family claims to act in child's best interest",
+          "statement_b": "August 7, 2025 statement showing premeditation of custody strategy",
+          "legal_use": "MRE 613, MRE 801(d)(2) — admission by party opponent; shows coordinated plan"
+        }
       ]
     },
-    "Jennifer Barnes (P55406)": {
-      "role": "Emily's former attorney (withdrew)",
-      "bias_score": 5,
-      "contradictions": 0,
-      "credibility_score": 5,
-      "rating": "MEDIUM",
-      "known_issues": [
-        "Withdrew \u2014 reason may indicate ethical concerns",
-        "MRPC 3.3 candor obligations may have been violated"
+    {
+      "name": "Lori Watson",
+      "role": "Defendant's Mother",
+      "relationship": "Emily's mother",
+      "motive_to_lie": "Support daughter's custody claims",
+      "consistency_score": 9.8,
+      "corroboration_score": 5.0,
+      "contradiction_count": 2,
+      "impeachment_count": 2,
+      "perjury_count": 6,
+      "bias_indicators": [
+        "Referenced in 6 contradiction map entries",
+        "44 AppClose co-parenting violations documented",
+        "Alienation scoring: 64/70 (family pattern)"
+      ],
+      "prior_false_statements": [
+        {
+          "statement_1": "[2024-10-20] [citation: no] of the Third PPO Violation (October 20, 2024):\\no During a parenting exchange on October 20, 202",
+          "source_1": "timeline.d4dbcfe02cd3",
+          "statement_2": "nges facilitated by/through Lori Watson and on March 26, 2024 was denied parenting time, informed by Lor",
+          "source_2": "774",
+          "type": "date",
+          "severity": "INCONSISTENCY"
+        },
+        {
+          "statement_1": "[2024-10-20] [citation: no] of the Third PPO Violation (October 20, 2024):\\no During a parenting exchange on October 20, 202",
+          "source_1": "timeline.d4dbcfe02cd3",
+          "statement_2": "es facilitated by/througli Lori Watson and on March 26, 2024 was denied parenting time, informed by Lori",
+          "source_2": "788",
+          "type": "date",
+          "severity": "INCONSISTENCY"
+        },
+        {
+          "statement_1": "[2024-03-03] [citation: no] exhibit ❌ - \"Police report dated March 3, 2024\" - no exhibit number ❌ - \"47 text messages\" - no exhibi",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "[2024-03-25] [citation: no] going since Aug 8, 2025), >10 police reports with no arrest/no fault, Lori’s 3/25/24 ultimatum text, A",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "timeline_conflict",
+          "severity": "4"
+        },
+        {
+          "statement_1": "[2024-10-02] [Watson Doc: custody_scanned2_0027.pdf.txt] Lori Hayes Elections Coordinator October 2, 2024 Andrew Pigors 1977 Wl-iitehall Rd North Musk",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "[2024-10-14] [Watson Doc: dockets_notices_proofs_scanned_0003.pdf.txt] AMAYASHOI UCCVPFK Muskegon County REGISTER OF ACTIONS REL2106 9/11/25 11:00:54 ",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "timeline_conflict",
+          "severity": "4"
+        }
+      ],
+      "evidence_appearances": 0,
+      "credibility_score": 8.1,
+      "credibility_grade": "A (Highly Credible)",
+      "key_findings": [
+        {
+          "type": "IMPEACHMENT_INDEX",
+          "contradiction_type": "ILLEGALLY_OBTAINED_EVIDENCE",
+          "value": "CRITICAL",
+          "statement_a": "Provided testimony/evidence against father",
+          "statement_b": "Illegally recorded conversations — MCL 750.539c felony (2-party consent violation)",
+          "legal_use": "Motion to suppress under MCL 750.539c; MRE 613 — fruit of felony; criminal referral"
+        }
       ]
     },
-    "Hon. Jenny L. McNeill": {
-      "role": "Presiding judge (disqualification sought)",
-      "bias_score": 6,
-      "contradictions": 0,
-      "credibility_score": 4,
-      "rating": "MEDIUM",
-      "known_issues": [
-        "1,127 documented violations in DB",
-        "Ex-parte communications alleged"
+    {
+      "name": "Cody Watson",
+      "role": "Defendant's Brother",
+      "relationship": "Emily's brother",
+      "motive_to_lie": "Family loyalty; support Emily's narrative",
+      "consistency_score": 10.0,
+      "corroboration_score": 5.0,
+      "contradiction_count": 0,
+      "impeachment_count": 0,
+      "perjury_count": 6,
+      "bias_indicators": [
+        "Referenced in 4 contradiction map entries",
+        "44 AppClose co-parenting violations documented",
+        "Alienation scoring: 64/70 (family pattern)"
+      ],
+      "prior_false_statements": [
+        {
+          "statement_1": "Safety concerns: The PPO and custody cases both involve concerns regarding Cody Watson’s behavior, including substance abuse and reckless endangerment",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "global_weaponization.rowid=287; cat=PPO chain; relief=Clarify PPO scope; reinstate PT ex parte; source=Custody_gpt_documents_use_me.docx",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "inconsistency",
+          "severity": "7"
+        },
+        {
+          "statement_1": "Safety concerns: The PPO and custody cases both involve concerns regarding Cody Watson’s behavior, including substance abuse and reckless endangerment",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "global_weaponization.rowid=562; cat=PPO chain; relief=Clarify PPO scope; reinstate PT ex parte; source=Custody_gpt_documents_use_me.docx",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "inconsistency",
+          "severity": "7"
+        },
+        {
+          "statement_1": "nd intimidation. These actions are documented\nin:\nOctober 27, 2024: During a scheduled exchange, Cody Watson arrived",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "Source type: discovery",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "evidence_quote",
+          "severity": "4"
+        },
+        {
+          "statement_1": ", despite my concerns for his safety.\nExample: On May 28, 2024, I raised concerns about Cody Watson’s behavior,",
+          "source_1": "watson_perjury_compilation",
+          "statement_2": "Source type: discovery",
+          "source_2": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+          "type": "evidence_quote",
+          "severity": "4"
+        }
+      ],
+      "evidence_appearances": 0,
+      "credibility_score": 8.2,
+      "credibility_grade": "A (Highly Credible)",
+      "key_findings": []
+    },
+    {
+      "name": "Ronald Berry",
+      "role": "Emily's Domestic Partner (NON-ATTORNEY)",
+      "relationship": "Emily's boyfriend",
+      "motive_to_lie": "Protect partner; potential UPL exposure",
+      "consistency_score": 10.0,
+      "corroboration_score": 5.0,
+      "contradiction_count": 0,
+      "impeachment_count": 16,
+      "perjury_count": 0,
+      "bias_indicators": [
+        "178 ethics violations documented (MRPC violations)"
+      ],
+      "prior_false_statements": [],
+      "evidence_appearances": 0,
+      "credibility_score": 9.3,
+      "credibility_grade": "A (Highly Credible)",
+      "key_findings": [
+        {
+          "type": "BERRY_INVESTIGATION",
+          "source": "pages_fts / ex parte objection",
+          "evidence": "Ron Berry voicemail listed as item #6 in LINE-BY-LINE OBJECTION to ex parte evidence. The voicemail was pre-listened in chambers.",
+          "strength": "STRONG"
+        },
+        {
+          "type": "BERRY_INVESTIGATION",
+          "source": "pages_fts / appendix",
+          "evidence": "Ron Berry voicemail referenced in Appendix_Pigors_COA_ordered - part of appellate record",
+          "strength": "STRONG"
+        },
+        {
+          "type": "BERRY_INVESTIGATION",
+          "source": "pages_fts / admin filing",
+          "evidence": "Ron Berry voicemail in ADMIN Filing Order Booklet - listed in line-by-line objection",
+          "strength": "MODERATE"
+        },
+        {
+          "type": "BERRY_INVESTIGATION",
+          "source": "md_sections / entity graph",
+          "evidence": "Ron Berry listed as Person entity (P_RON) in litigation knowledge graph alongside Watson family members (P_EMILY, P_LINCOLN, P_LORI, P_ALBERT)",
+          "strength": "STRONG"
+        },
+        {
+          "type": "BERRY_INVESTIGATION",
+          "source": "md_sections / entity graph",
+          "evidence": "Ron Berry listed alongside Emily Watson, Lori Watson, Albert Watson - indicating family/intimate association",
+          "strength": "MODERATE"
+        },
+        {
+          "type": "BERRY_INVESTIGATION",
+          "source": "md_sections / search terms",
+          "evidence": "ron berry appears as a search term alongside Emily Watson and lori Watson - searched together",
+          "strength": "MODERATE"
+        },
+        {
+          "type": "BERRY_INVESTIGATION",
+          "source": "md_sections / declaration",
+          "evidence": "Andrew declaration 2025-10-11: Ex parte flash-drive audio; chambers pre-listened - Berry voicemail was part of this ex parte submission",
+          "strength": "STRONG"
+        },
+        {
+          "type": "BERRY_INVESTIGATION",
+          "source": "inference",
+          "evidence": "Berry voicemail was submitted as ex parte evidence by Watson, pre-listened in chambers, used to support custody suspension - Berry actively participated in case proceedings",
+          "strength": "STRONG"
+        },
+        {
+          "type": "ETHICS_VIOLATIONS",
+          "count": 178,
+          "source": "berry_ethics_violations"
+        }
       ]
     },
-    "Pamela Rusco": {
-      "role": "Judicial Secretary to Judge McNeill",
-      "bias_score": 6,
-      "contradictions": 0,
-      "credibility_score": 4,
-      "rating": "MEDIUM",
-      "known_issues": [
-        "Gatekeeping behavior alleged"
-      ]
+    {
+      "name": "Pamela Rusco",
+      "role": "Friend of Court",
+      "relationship": "Court official",
+      "motive_to_lie": "Institutional alignment with judge",
+      "consistency_score": 10.0,
+      "corroboration_score": 5.0,
+      "contradiction_count": 0,
+      "impeachment_count": 0,
+      "perjury_count": 0,
+      "bias_indicators": [],
+      "prior_false_statements": [],
+      "evidence_appearances": 0,
+      "credibility_score": 9.5,
+      "credibility_grade": "A (Highly Credible)",
+      "key_findings": []
     },
-    "Andrew James Pigors": {
-      "role": "Plaintiff/Petitioner (pro se)",
-      "bias_score": 3,
-      "contradictions": 2,
-      "credibility_score": 7,
-      "rating": "HIGH",
-      "known_issues": [
-        "Pro se \u2014 may be perceived as less credible",
-        "Strong: consistent testimony, documented evidence"
+    {
+      "name": "Michelle Mitchell",
+      "role": "HealthWest Evaluator",
+      "relationship": "Court-appointed evaluator",
+      "motive_to_lie": "Responded to judicial pressure (biasing letter)",
+      "consistency_score": 10.0,
+      "corroboration_score": 5.0,
+      "contradiction_count": 0,
+      "impeachment_count": 0,
+      "perjury_count": 0,
+      "bias_indicators": [],
+      "prior_false_statements": [],
+      "evidence_appearances": 0,
+      "credibility_score": 9.5,
+      "credibility_grade": "A (Highly Credible)",
+      "key_findings": []
+    },
+    {
+      "name": "Jennifer Barnes",
+      "role": "Emily's Former Attorney (P55406, WITHDREW)",
+      "relationship": "Emily's attorney",
+      "motive_to_lie": "Client advocacy; ethical obligations limit scope",
+      "consistency_score": 10.0,
+      "corroboration_score": 5.0,
+      "contradiction_count": 0,
+      "impeachment_count": 0,
+      "perjury_count": 0,
+      "bias_indicators": [
+        "Referenced in 100 contradiction map entries"
+      ],
+      "prior_false_statements": [],
+      "evidence_appearances": 0,
+      "credibility_score": 9.5,
+      "credibility_grade": "A (Highly Credible)",
+      "key_findings": [
+        {
+          "type": "IMPEACHMENT_INDEX",
+          "contradiction_type": "KNOWING_USE_OF_ILLEGAL_EVIDENCE",
+          "value": "HIGH",
+          "statement_a": "Filed motions citing good faith concerns about child safety",
+          "statement_b": "Filed on evidence obtained through felony wiretapping (Lori Watson recording)",
+          "legal_use": "MRPC 3.3(a), 8.4(c) — State Bar grievance; motion to strike"
+        },
+        {
+          "type": "PROFILE_SCORE",
+          "existing_credibility": 0.9,
+          "testimony_count": 0,
+          "notes": "Opposing counsel, Barnes Law Firm PLLC, represents Tiffany Emily Watson"
+        }
       ]
     }
-  },
-  "perjury_total": 5821
+  ]
 }

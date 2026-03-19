@@ -1,260 +1,646 @@
 {
+  "tool": "service_requirements_matrix",
+  "tool_number": 227,
+  "generated_at": "2026-03-19T09:16:42.250873",
+  "database": "C:\\Users\\andre\\LitigationOS\\litigation_context.db",
   "parties": {
-    "andrew": {
+    "plaintiff": {
       "name": "Andrew James Pigors",
-      "role": "Plaintiff / Petitioner / Appellant",
       "address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
       "phone": "(231) 903-5690",
       "email": "andrewjpigors@gmail.com",
-      "pro_se": true
+      "role": "Plaintiff / Petitioner / Appellant (Pro Se)"
     },
-    "emily": {
+    "defendant": {
       "name": "Emily A. Watson",
-      "role": "Defendant / Respondent / Appellee",
       "address": "2160 Garland Drive, Norton Shores, MI 49441",
-      "attorney": null,
-      "service_method": "First-class mail + Certificate of Mailing"
+      "role": "Defendant / Respondent",
+      "attorney_status": "UNREPRESENTED (Jennifer Barnes P55406 withdrew)"
     },
-    "mcneill": {
+    "judge": {
       "name": "Hon. Jenny L. McNeill",
-      "role": "Respondent Judge",
-      "address": "14th Circuit Court, 990 Terrace St, Muskegon, MI 49442",
-      "service_method": "Via court clerk"
+      "court": "14th Circuit Court, Family Division"
     },
-    "berry": {
-      "name": "Ronald T. Berry",
-      "role": "Co-Defendant (Emily's boyfriend)",
-      "address": "[ADDRESS NEEDED \u2014 east side of MI]",
-      "service_method": "First-class mail"
-    },
-    "barnes": {
-      "name": "Jennifer Barnes (P55406)",
-      "role": "Former Attorney \u2014 WITHDREW",
-      "address": "Barnes Law Firm PLLC, 880 Jefferson St Ste B, Muskegon, MI 49440",
-      "service_method": "First-class mail"
-    },
-    "jtc": {
-      "name": "Michigan Judicial Tenure Commission",
-      "role": "Regulatory Body",
-      "address": "3034 W Grand Blvd, Suite 8-450, Detroit, MI 48202",
-      "service_method": "First-class mail"
-    },
-    "shady_oaks": {
-      "name": "Shady Oaks MHP / Cricklewood MHP LLC",
-      "role": "Defendant (Housing)",
-      "address": "[LARA REGISTERED AGENT ADDRESS NEEDED]",
-      "service_method": "Personal service or registered agent"
-    },
-    "14th_circuit_clerk": {
-      "name": "14th Circuit Court Clerk",
-      "role": "Court Clerk",
+    "foc": {
+      "name": "Pamela Rusco",
       "address": "990 Terrace St, Muskegon, MI 49442",
-      "service_method": "Filing via MiFILE or in-person"
+      "role": "Friend of the Court"
     }
   },
-  "requirements": {
-    "F1": {
-      "name": "Emergency TRO (Housing)",
-      "court": "14th Circuit Court",
-      "filing_method": "MiFILE (mifile.courts.michigan.gov) or in-person",
-      "serve": [
+  "total_filings": 10,
+  "filings": [
+    {
+      "filing_id": "F1",
+      "filing_type": "Motion to Restore Parenting Time",
+      "court": "14th Circuit Court \u2014 Family Division",
+      "case_number": "2024-001507-DC",
+      "lane": "A",
+      "serve_to": [
         {
-          "party": "shady_oaks",
-          "method": "Personal service \u2014 MCR 2.105(A)",
-          "timing": "Before or at TRO hearing"
+          "party": "Emily A. Watson",
+          "address": "2160 Garland Drive, Norton Shores, MI 49441",
+          "method": "First-class mail OR personal service",
+          "mcr": "MCR 2.107(C)(1) \u2014 mail service on unrepresented party",
+          "note": "Barnes withdrew \u2014 Watson is unrepresented. Cannot e-serve."
         },
         {
-          "party": "14th_circuit_clerk",
+          "party": "Friend of the Court (Pamela Rusco)",
+          "address": "990 Terrace St, Muskegon, MI 49442",
+          "method": "First-class mail or courthouse delivery",
+          "mcr": "MCR 3.203(A) \u2014 FOC must receive copies of all motions",
+          "note": "Required for all domestic relations filings"
+        }
+      ],
+      "documents": [
+        "Motion",
+        "Brief in Support",
+        "Proposed Order",
+        "Certificate of Service",
+        "Exhibits"
+      ],
+      "timing": "At least 9 days before hearing (MCR 2.119(C)(1))",
+      "timing_mcr": "MCR 2.119(C)(1)",
+      "filing_method": "MiFILE e-filing or counter filing"
+    },
+    {
+      "filing_id": "F2",
+      "filing_type": "Motion to Terminate PPO / Motion to Rescind",
+      "court": "14th Circuit Court",
+      "case_number": "2023-5907-PP",
+      "lane": "D",
+      "serve_to": [
+        {
+          "party": "Emily A. Watson",
+          "address": "2160 Garland Drive, Norton Shores, MI 49441",
+          "method": "First-class mail OR personal service",
+          "mcr": "MCR 2.107(C)(1); MCL 600.2950(14)",
+          "note": "Unrepresented party \u2014 mail or personal only"
+        },
+        {
+          "party": "14th Circuit Court Clerk",
+          "address": "990 Terrace St, Muskegon, MI 49442",
           "method": "MiFILE e-filing",
-          "timing": "With motion"
+          "mcr": "MCR 3.706(B)",
+          "note": "Original filed with court via MiFILE"
         }
       ],
-      "rules": [
-        "MCR 3.310(B)",
-        "MCR 2.105(A)"
+      "documents": [
+        "Motion to Terminate PPO",
+        "Brief in Support",
+        "Affidavit",
+        "Proposed Order",
+        "Certificate of Service",
+        "Exhibits"
       ],
-      "notes": "Emergency TRO may be granted ex-parte; service within reasonable time after."
+      "timing": "At least 9 days before hearing (MCR 2.119(C)(1))",
+      "timing_mcr": "MCR 2.119(C)(1); MCR 3.706(B)",
+      "filing_method": "MiFILE e-filing"
     },
-    "F2": {
-      "name": "Amended Complaint (Housing)",
-      "court": "14th Circuit Court \u2014 Chief Judge Kenneth Hoopes",
-      "filing_method": "MiFILE",
-      "serve": [
+    {
+      "filing_id": "F3",
+      "filing_type": "Emergency Motion (Ex Parte)",
+      "court": "14th Circuit Court \u2014 Family Division",
+      "case_number": "2024-001507-DC",
+      "lane": "A",
+      "serve_to": [
         {
-          "party": "shady_oaks",
-          "method": "Personal service via process server \u2014 MCR 2.105(A)",
-          "timing": "Within 91 days of filing \u2014 MCR 2.102(D)"
-        }
-      ],
-      "rules": [
-        "MCR 2.118(A)",
-        "MCR 2.105(A)",
-        "MCR 2.102(D)"
-      ],
-      "notes": "Amendment as of right within 21 days. After: leave of court needed."
-    },
-    "F3": {
-      "name": "Disqualification Motion (MCR 2.003)",
-      "court": "14th Circuit Court",
-      "filing_method": "MiFILE",
-      "serve": [
-        {
-          "party": "emily",
-          "method": "First-class mail \u2014 MCR 2.107(C)(1)",
-          "timing": "Same day as filing"
+          "party": "Emily A. Watson",
+          "address": "2160 Garland Drive, Norton Shores, MI 49441",
+          "method": "Personal service REQUIRED for ex parte",
+          "mcr": "MCR 3.207(B) \u2014 ex parte orders require immediate personal service",
+          "note": "Must be served immediately after entry of order"
         },
         {
-          "party": "mcneill",
-          "method": "Via court clerk \u2014 MCR 2.003(D)",
-          "timing": "Filed with clerk, forwarded to judge"
+          "party": "Friend of the Court",
+          "address": "990 Terrace St, Muskegon, MI 49442",
+          "method": "First-class mail or hand delivery",
+          "mcr": "MCR 3.203(A)",
+          "note": "FOC receives copy of all emergency filings"
         }
       ],
-      "rules": [
-        "MCR 2.003(D)",
-        "MCR 2.107(C)(1)"
+      "documents": [
+        "Emergency Motion",
+        "Brief in Support",
+        "Affidavit of Emergency",
+        "Proposed Ex Parte Order",
+        "Certificate of Service"
       ],
-      "notes": "MCR 2.003(D)(1): Motion must be filed and served promptly after grounds discovered."
+      "timing": "Immediate filing; service within 24 hours of order entry",
+      "timing_mcr": "MCR 3.207(B)",
+      "filing_method": "MiFILE e-filing (expedited) or counter"
     },
-    "F4": {
-      "name": "Federal \u00a71983 Complaint",
-      "court": "US District Court, Western District of Michigan (Grand Rapids)",
-      "filing_method": "CM/ECF (pacer.uscourts.gov) or in-person",
-      "serve": [
+    {
+      "filing_id": "F4",
+      "filing_type": "JTC Complaint (Judicial Tenure Commission)",
+      "court": "Judicial Tenure Commission",
+      "case_number": "JTC-001",
+      "lane": "E",
+      "serve_to": [
         {
-          "party": "emily",
-          "method": "Personal service or waiver \u2014 FRCP 4(e)",
-          "timing": "90 days from filing \u2014 FRCP 4(m)"
-        },
-        {
-          "party": "berry",
-          "method": "Personal service \u2014 FRCP 4(e)",
-          "timing": "90 days from filing"
-        },
-        {
-          "party": "barnes",
-          "method": "Personal service \u2014 FRCP 4(e)",
-          "timing": "90 days from filing"
-        },
-        {
-          "party": "mcneill",
-          "method": "State AG + judge personally \u2014 FRCP 4(j)",
-          "timing": "90 days from filing"
+          "party": "Judicial Tenure Commission",
+          "address": "3034 W. Grand Blvd, Suite 8-350, Detroit, MI 48202",
+          "method": "MAIL ONLY \u2014 NOT e-file",
+          "mcr": "MCR 9.234; Const 1963, art 6, \u00a730",
+          "note": "JTC does NOT accept e-filings. Send via USPS certified mail with return receipt."
         }
       ],
-      "rules": [
-        "FRCP 4(c)-(m)",
-        "42 USC \u00a71983",
-        "28 USC \u00a71915 (IFP)"
+      "documents": [
+        "Formal Complaint",
+        "Supporting Evidence Packet",
+        "Chronological Index",
+        "Exhibit List"
       ],
-      "notes": "IFP: if granted, USMS serves. Request waiver of service (FRCP 4(d)) to save costs."
+      "timing": "No statutory deadline \u2014 file when evidence is complete",
+      "timing_mcr": "MCR 9.234",
+      "filing_method": "USPS Certified Mail (NOT e-file, NOT hand delivery required)"
     },
-    "F5": {
-      "name": "MSC Original Action",
-      "court": "Michigan Supreme Court",
-      "filing_method": "MiFILE or mail to MSC Clerk",
-      "serve": [
-        {
-          "party": "emily",
-          "method": "First-class mail \u2014 MCR 7.306(B)",
-          "timing": "Within 7 days of filing"
-        },
-        {
-          "party": "14th_circuit_clerk",
-          "method": "First-class mail \u2014 MCR 7.306(B)",
-          "timing": "Within 7 days of filing"
-        }
-      ],
-      "rules": [
-        "MCR 7.306(B)",
-        "Const 1963 Art 6 \u00a74"
-      ],
-      "notes": "Extraordinary action \u2014 must demonstrate lower court systemic failure."
-    },
-    "F6": {
-      "name": "JTC Complaint",
-      "court": "Michigan Judicial Tenure Commission",
-      "filing_method": "Mail to JTC",
-      "serve": [
-        {
-          "party": "jtc",
-          "method": "First-class mail to JTC office",
-          "timing": "N/A \u2014 complaint to agency"
-        }
-      ],
-      "rules": [
-        "MCR 9.104",
-        "MCR 9.116"
-      ],
-      "notes": "JTC handles its own investigation and service. No party service required."
-    },
-    "F7": {
-      "name": "Custody Modification Motion",
-      "court": "14th Circuit Court",
-      "filing_method": "MiFILE",
-      "serve": [
-        {
-          "party": "emily",
-          "method": "First-class mail \u2014 MCR 2.107(C)(1)",
-          "timing": "At least 9 days before hearing \u2014 MCR 2.119(C)(1)"
-        }
-      ],
-      "rules": [
-        "MCR 2.119(C)(1)",
-        "MCL 722.27(1)(c)"
-      ],
-      "notes": "Motion hearing: 9 days notice by mail (MCR 2.119(C)(1) + 3 days for mail)."
-    },
-    "F8": {
-      "name": "PPO Termination / Modification",
-      "court": "14th Circuit Court",
-      "filing_method": "MiFILE",
-      "serve": [
-        {
-          "party": "emily",
-          "method": "First-class mail \u2014 MCR 2.107(C)(1)",
-          "timing": "9 days before hearing"
-        }
-      ],
-      "rules": [
-        "MCL 600.2950(8)",
-        "MCR 3.706(H)"
-      ],
-      "notes": "Motion to modify/terminate PPO under MCL 600.2950(8)."
-    },
-    "F9": {
-      "name": "COA Brief on Appeal",
+    {
+      "filing_id": "F5",
+      "filing_type": "COA Application for Leave / Appeal",
       "court": "Michigan Court of Appeals",
-      "filing_method": "MiFILE (COA e-filing)",
-      "serve": [
+      "case_number": "COA-366810",
+      "lane": "F",
+      "serve_to": [
         {
-          "party": "emily",
-          "method": "First-class mail \u2014 MCR 7.215(B)",
-          "timing": "Same day as filing"
+          "party": "Emily A. Watson",
+          "address": "2160 Garland Drive, Norton Shores, MI 49441",
+          "method": "First-class mail",
+          "mcr": "MCR 7.205(D); MCR 7.208(A)",
+          "note": "Unrepresented \u2014 serve at last known address"
+        },
+        {
+          "party": "14th Circuit Court Clerk",
+          "address": "990 Terrace St, Muskegon, MI 49442",
+          "method": "Copy to trial court",
+          "mcr": "MCR 7.205(D)(4)",
+          "note": "File copy with trial court clerk"
+        },
+        {
+          "party": "Michigan Court of Appeals",
+          "address": "MiFILE",
+          "method": "MiFILE e-service",
+          "mcr": "MCR 7.202(2); Admin Order 2019-8",
+          "note": "COA filings via MiFILE mandatory"
         }
       ],
-      "rules": [
-        "MCR 7.212(A)(6)",
-        "MCR 7.215(B)"
+      "documents": [
+        "Application for Leave to Appeal",
+        "Appellant Brief",
+        "Lower Court Record",
+        "Proposed Index",
+        "Certificate of Service"
       ],
-      "notes": "COA Case No. 366810. Cert of Service must name method and date."
+      "timing": "21 days from entry of order being appealed (MCR 7.205(F)(3))",
+      "timing_mcr": "MCR 7.205(F)(3)",
+      "filing_method": "MiFILE e-filing"
     },
-    "F10": {
-      "name": "COA Emergency Motion",
-      "court": "Michigan Court of Appeals",
-      "filing_method": "MiFILE + call COA clerk",
-      "serve": [
+    {
+      "filing_id": "F6",
+      "filing_type": "Federal \u00a71983 Complaint (WDMI)",
+      "court": "US District Court \u2014 Western District of Michigan",
+      "case_number": "[To be assigned on filing]",
+      "lane": "E",
+      "serve_to": [
         {
-          "party": "emily",
-          "method": "Email + mail \u2014 MCR 7.211(C)(6)",
-          "timing": "Same day \u2014 emergency"
+          "party": "Hon. Jenny L. McNeill (individual capacity)",
+          "address": "Via WDMI CM/ECF + Certified Mail to 990 Terrace St, Muskegon, MI 49442",
+          "method": "CM/ECF e-filing + USPS Certified Mail",
+          "mcr": "FRCP 4(e); 42 USC \u00a71983",
+          "note": "Federal service requires summons + complaint via certified mail"
+        },
+        {
+          "party": "Michigan Attorney General (official capacity)",
+          "address": "P.O. Box 30212, Lansing, MI 48909",
+          "method": "USPS Certified Mail",
+          "mcr": "FRCP 4(j)(2) \u2014 service on state officer",
+          "note": "Required when suing state judicial officer in official capacity"
         }
       ],
-      "rules": [
-        "MCR 7.211(C)(6)",
-        "MCR 7.215(B)"
+      "documents": [
+        "Civil Complaint",
+        "Civil Cover Sheet",
+        "Summons",
+        "Certificate of Service",
+        "IFP Application (if applicable)"
       ],
-      "notes": "Emergency: call COA clerk after filing. Opposing party must receive same-day notice."
+      "timing": "90 days for service after filing (FRCP 4(m))",
+      "timing_mcr": "FRCP 4(m)",
+      "filing_method": "WDMI CM/ECF e-filing"
+    },
+    {
+      "filing_id": "F7",
+      "filing_type": "Motion for Sanctions / Contempt",
+      "court": "14th Circuit Court \u2014 Family Division",
+      "case_number": "2024-001507-DC",
+      "lane": "A",
+      "serve_to": [
+        {
+          "party": "Emily A. Watson",
+          "address": "2160 Garland Drive, Norton Shores, MI 49441",
+          "method": "Personal service REQUIRED for contempt",
+          "mcr": "MCR 3.606(A) \u2014 personal service required for show cause/contempt",
+          "note": "Contempt requires personal service \u2014 mail insufficient"
+        },
+        {
+          "party": "Friend of the Court",
+          "address": "990 Terrace St, Muskegon, MI 49442",
+          "method": "First-class mail",
+          "mcr": "MCR 3.203(A)",
+          "note": "FOC copy required"
+        }
+      ],
+      "documents": [
+        "Motion for Contempt",
+        "Order to Show Cause",
+        "Affidavit",
+        "Proposed Order",
+        "Certificate of Service"
+      ],
+      "timing": "14 days before hearing for show cause (MCR 3.606(A))",
+      "timing_mcr": "MCR 3.606(A)",
+      "filing_method": "MiFILE e-filing"
+    },
+    {
+      "filing_id": "F8",
+      "filing_type": "Motion to Disqualify Judge",
+      "court": "14th Circuit Court",
+      "case_number": "2024-001507-DC",
+      "lane": "E",
+      "serve_to": [
+        {
+          "party": "Emily A. Watson",
+          "address": "2160 Garland Drive, Norton Shores, MI 49441",
+          "method": "First-class mail",
+          "mcr": "MCR 2.107(C)(1)",
+          "note": "Unrepresented party service"
+        },
+        {
+          "party": "Chief Judge (14th Circuit)",
+          "address": "990 Terrace St, Muskegon, MI 49442",
+          "method": "Hand delivery or mail to chambers",
+          "mcr": "MCR 2.003(D)(3)(a) \u2014 disqualification served on chief judge",
+          "note": "Motion goes to chief judge, not the judge being disqualified"
+        },
+        {
+          "party": "Friend of the Court",
+          "address": "990 Terrace St, Muskegon, MI 49442",
+          "method": "First-class mail",
+          "mcr": "MCR 3.203(A)",
+          "note": "FOC copy"
+        }
+      ],
+      "documents": [
+        "Motion for Disqualification",
+        "Affidavit of Bias/Prejudice",
+        "Brief in Support",
+        "Proposed Order",
+        "Certificate of Service"
+      ],
+      "timing": "As soon as grounds become known (MCR 2.003(D)(1))",
+      "timing_mcr": "MCR 2.003(D)(1)",
+      "filing_method": "MiFILE e-filing"
+    },
+    {
+      "filing_id": "F9",
+      "filing_type": "FOC Objection",
+      "court": "14th Circuit Court \u2014 Family Division",
+      "case_number": "2024-001507-DC",
+      "lane": "A",
+      "serve_to": [
+        {
+          "party": "Emily A. Watson",
+          "address": "2160 Garland Drive, Norton Shores, MI 49441",
+          "method": "First-class mail",
+          "mcr": "MCR 2.107(C)(1)",
+          "note": "Unrepresented party"
+        },
+        {
+          "party": "Friend of the Court",
+          "address": "990 Terrace St, Muskegon, MI 49442",
+          "method": "First-class mail or hand delivery",
+          "mcr": "MCR 3.218(D)",
+          "note": "FOC must receive objection"
+        }
+      ],
+      "documents": [
+        "Objection to FOC Recommendation",
+        "Brief in Support",
+        "Certificate of Service"
+      ],
+      "timing": "21 days from date of FOC recommendation (MCR 3.218(D))",
+      "timing_mcr": "MCR 3.218(D)",
+      "filing_method": "MiFILE e-filing"
+    },
+    {
+      "filing_id": "F10",
+      "filing_type": "Housing Complaint (Shady Oaks)",
+      "court": "14th Circuit Court \u2014 Civil Division",
+      "case_number": "2025-002760-CZ",
+      "lane": "B",
+      "serve_to": [
+        {
+          "party": "Shady Oaks MHC / Park Management",
+          "address": "[Verify registered agent address via LARA]",
+          "method": "Personal service on registered agent OR certified mail",
+          "mcr": "MCR 2.105(D) \u2014 service on corporation",
+          "note": "Must serve registered agent or officer per MCR 2.105(D)"
+        },
+        {
+          "party": "Any named individual defendants",
+          "address": "[Verify addresses]",
+          "method": "Personal service or first-class mail (after initial service)",
+          "mcr": "MCR 2.105(A) \u2014 personal service on individuals",
+          "note": "First service must be personal; subsequent by mail"
+        }
+      ],
+      "documents": [
+        "Summons",
+        "Complaint",
+        "Civil Cover Sheet",
+        "Certificate of Service"
+      ],
+      "timing": "91 days to serve after filing (MCR 2.102(D))",
+      "timing_mcr": "MCR 2.102(D)",
+      "filing_method": "MiFILE e-filing"
     }
-  },
-  "generated": "2026-03-18T19:42:18.519088"
+  ],
+  "db_enrichment": {
+    "service_tracking_count": 16,
+    "filing_readiness_count": 24,
+    "filing_sequence_count": 12,
+    "service_tracking": [
+      {
+        "id": 13,
+        "filing_name": "COA Appellant Brief",
+        "filing_path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\COA_BRIEF_366810_FINAL.pdf",
+        "court": "MI Court of Appeals",
+        "case_number": "366810",
+        "served_to": "Ron Berry, Esq.",
+        "served_address": "[Address on file]",
+        "service_method": "mifile",
+        "service_date": "2026-03-04",
+        "hearing_date": null,
+        "days_before_hearing": null,
+        "compliant": null,
+        "proof_of_service_path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\SERVICE_PACKETS\\PROOF_OF_SERVICE.pdf",
+        "notes": "MiFILE e-service to appellee attorney",
+        "created_at": "2026-03-04 15:12:51"
+      },
+      {
+        "id": 14,
+        "filing_name": "COA Appellant Brief",
+        "filing_path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\COA_BRIEF_366810_FINAL.pdf",
+        "court": "MI Court of Appeals",
+        "case_number": "366810",
+        "served_to": "Emily Ann Watson",
+        "served_address": "2160 Garland Drive, Norton Shores, MI 49441",
+        "service_method": "first_class_mail",
+        "service_date": "2026-03-04",
+        "hearing_date": null,
+        "days_before_hearing": null,
+        "compliant": null,
+        "proof_of_service_path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\SERVICE_PACKETS\\PROOF_OF_SERVICE.pdf",
+        "notes": "First-class mail to appellee",
+        "created_at": "2026-03-04 15:12:51"
+      },
+      {
+        "id": 15,
+        "filing_name": "COA Appellant Brief",
+        "filing_path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\COA_BRIEF_366810_FINAL.pdf",
+        "court": "MI Court of Appeals",
+        "case_number": "366810",
+        "served_to": "14th Circuit Court Clerk",
+        "served_address": "990 Terrace St, Muskegon MI 49442",
+        "service_method": "mifile",
+        "service_date": "2026-03-04",
+        "hearing_date": null,
+        "days_before_hearing": null,
+        "compliant": null,
+        "proof_of_service_path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\SERVICE_PACKETS\\PROOF_OF_SERVICE.pdf",
+        "notes": "MiFILE e-service to trial court",
+        "created_at": "2026-03-04 15:12:51"
+      },
+      {
+        "id": 16,
+        "filing_name": "COA Appellant Brief",
+        "filing_path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\COA_BRIEF_366810_FINAL.pdf",
+        "court": "MI Court of Appeals",
+        "case_number": "366810",
+        "served_to": "Muskegon County FOC",
+        "served_address": "990 Terrace St, Muskegon MI 49442",
+        "service_method": "first_class_mail",
+        "service_date": "2026-03-04",
+        "hearing_date": null,
+        "days_before_hearing": null,
+        "compliant": null,
+        "proof_of_service_path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810\\SERVICE_PACKETS\\PROOF_OF_SERVICE.pdf",
+        "notes": "First-class mail to Friend of the Court",
+        "created_at": "2026-03-04 15:12:51"
+      },
+      {
+        "id": 1,
+        "filing_name": "Motion 1",
+        "filing_path": "/filings/motion_1.pdf",
+        "court": "14th Judicial Circuit Court",
+        "case_number": "TBD",
+        "served_to": "Andrew J. Pigors",
+        "served_address": "1977 Whitehall Rd Lot 17, Laketon Twp MI",
+        "service_method": "certified_mail",
+        "service_date": "2026-02-02",
+        "hearing_date": "2026-04-15",
+        "days_before_hearing": 29,
+        "compliant": 0,
+        "proof_of_service_path": "/proofs/pos_1.pdf",
+        "notes": "Service package 1 of 12",
+        "created_at": "2026-03-03 00:07:46"
+      },
+      {
+        "id": 10,
+        "filing_name": "Motion 10",
+        "filing_path": "/filings/motion_10.pdf",
+        "court": "14th Judicial Circuit Court",
+        "case_number": "TBD",
+        "served_to": "Jennifer L. Barnes / Tiffany Emily Watson",
+        "served_address": "Barnes Law Firm PLLC",
+        "service_method": "personal",
+        "service_date": "2026-02-11",
+        "hearing_date": "2026-06-01",
+        "days_before_hearing": 20,
+        "compliant": 1,
+        "proof_of_service_path": "/proofs/pos_10.pdf",
+        "notes": "Service package 10 of 12",
+        "created_at": "2026-03-03 00:07:46"
+      },
+      {
+        "id": 11,
+        "filing_name": "Motion 11",
+        "filing_path": "/filings/motion_11.pdf",
+        "court": "14th Judicial Circuit Court",
+        "case_number": "TBD",
+        "served_to": "Andrew J. Pigors",
+        "served_address": "1977 Whitehall Rd Lot 17, Laketon Twp MI",
+        "service_method": "mifile",
+        "service_date": "2026-03-12",
+        "hearing_date": "2026-06-01",
+        "days_before_hearing": 19,
+        "compliant": 0,
+        "proof_of_service_path": "/proofs/pos_11.pdf",
+        "notes": "Service package 11 of 12",
+        "created_at": "2026-03-03 00:07:46"
+      },
+      {
+        "id": 12,
+        "filing_name": "Motion 12",
+        "filing_path": "/filings/motion_12.pdf",
+        "court": "14th Judicial Circuit Court",
+        "case_number": "TBD",
+        "served_to": "Jennifer L. Barnes / Tiffany Emily Watson",
+        "served_address": "Barnes Law Firm PLLC",
+        "service_method": "first_class_mail",
+        "service_date": "2026-04-13",
+        "hearing_date": "2026-06-01",
+        "days_before_hearing": 18,
+        "compliant": 1,
+        "proof_of_service_path": "/proofs/pos_12.pdf",
+        "notes": "Service package 12 of 12",
+        "created_at": "2026-03-03 00:07:46"
+      },
+      {
+        "id": 2,
+        "filing_name": "Motion 2",
+        "filing_path": "/filings/motion_2.pdf",
+        "court": "14th Judicial Circuit Court",
+        "case_number": "TBD",
+        "served_to": "Jennifer L. Barnes / Tiffany Emily Watson",
+        "served_address": "Barnes Law Firm PLLC",
+        "service_method": "email",
+        "service_date": "2026-03-03",
+        "hearing_date": "2026-04-15",
+        "days_before_hearing": 28,
+        "compliant": 1,
+        "proof_of_service_path": "/proofs/pos_2.pdf",
+        "notes": "Service package 2 of 12",
+        "created_at": "2026-03-03 00:07:46"
+      },
+      {
+        "id": 3,
+        "filing_name": "Motion 3",
+        "filing_path": "/filings/motion_3.pdf",
+        "court": "14th Judicial Circuit Court",
+        "case_number": "TBD",
+        "served_to": "Andrew J. Pigors",
+        "served_address": "1977 Whitehall Rd Lot 17, Laketon Twp MI",
+        "service_method": "efiling",
+        "service_date": "2026-04-04",
+        "hearing_date": "2026-04-15",
+        "days_before_hearing": 27,
+        "compliant": 0,
+        "proof_of_service_path": "/proofs/pos_3.pdf",
+        "notes": "Service package 3 of 12",
+        "created_at": "2026-03-03 00:07:46"
+      },
+      {
+        "id": 4,
+        "filing_name": "Motion 4",
+        "filing_path": "/filings/motion_4.pdf",
+        "court": "14th Judicial Circuit Court",
+        "case_number": "TBD",
+        "served_to": "Jennifer L. Barnes / Tiffany Emily Watson",
+        "served_address": "Barnes Law Firm PLLC",
+        "service_method": "personal",
+        "service_date": "2026-05-05",
+        "hearing_date": "2026-04-15",
+        "days_before_hearing": 26,
+        "compliant": 1,
+        "proof_of_service_path": "/proofs/pos_4.pdf",
+        "notes": "Service package 4 of 12",
+        "created_at": "2026-03-03 00:07:46"
+      },
+      {
+        "id": 5,
+        "filing_name": "Motion 5",
+        "filing_path": "/filings/motion_5.pdf",
+        "court": "14th Judicial Circuit Court",
+        "case_number": "TBD",
+        "served_to": "Andrew J. Pigors",
+        "served_address": "1977 Whitehall Rd Lot 17, Laketon Twp MI",
+        "service_method": "mifile",
+        "service_date": "2026-06-06",
+        "hearing_date": "2026-04-15",
+        "days_before_hearing": 25,
+        "compliant": 0,
+        "proof_of_service_path": "/proofs/pos_5.pdf",
+        "notes": "Service package 5 of 12",
+        "created_at": "2026-03-03 00:07:46"
+      },
+      {
+        "id": 6,
+        "filing_name": "Motion 6",
+        "filing_path": "/filings/motion_6.pdf",
+        "court": "14th Judicial Circuit Court",
+        "case_number": "TBD",
+        "served_to": "Jennifer L. Barnes / Tiffany Emily Watson",
+        "served_address": "Barnes Law Firm PLLC",
+        "service_method": "first_class_mail",
+        "service_date": "2026-07-07",
+        "hearing_date": "2026-04-15",
+        "days_before_hearing": 24,
+        "compliant": 1,
+        "proof_of_service_path": "/proofs/pos_6.pdf",
+        "notes": "Service package 6 of 12",
+        "created_at": "2026-03-03 00:07:46"
+      },
+      {
+        "id": 7,
+        "filing_name": "Motion 7",
+        "filing_path": "/filings/motion_7.pdf",
+        "court": "14th Judicial Circuit Court",
+        "case_number": "TBD",
+        "served_to": "Andrew J. Pigors",
+        "served_address": "1977 Whitehall Rd Lot 17, Laketon Twp MI",
+        "service_method": "certified_mail",
+        "service_date": "2026-08-08",
+        "hearing_date": "2026-06-01",
+        "days_before_hearing": 23,
+        "compliant": 0,
+        "proof_of_service_path": "/proofs/pos_7.pdf",
+        "notes": "Service package 7 of 12",
+        "created_at": "2026-03-03 00:07:46"
+      },
+      {
+        "id": 8,
+        "filing_name": "Motion 8",
+        "filing_path": "/filings/motion_8.pdf",
+        "court": "14th Judicial Circuit Court",
+        "case_number": "TBD",
+        "served_to": "Jennifer L. Barnes / Tiffany Emily Watson",
+        "served_address": "Barnes Law Firm PLLC",
+        "service_method": "email",
+        "service_date": "2026-09-09",
+        "hearing_date": "2026-06-01",
+        "days_before_hearing": 22,
+        "compliant": 1,
+        "proof_of_service_path": "/proofs/pos_8.pdf",
+        "notes": "Service package 8 of 12",
+        "created_at": "2026-03-03 00:07:46"
+      },
+      {
+        "id": 9,
+        "filing_name": "Motion 9",
+        "filing_path": "/filings/motion_9.pdf",
+        "court": "14th Judicial Circuit Court",
+        "case_number": "TBD",
+        "served_to": "Andrew J. Pigors",
+        "served_address": "1977 Whitehall Rd Lot 17, Laketon Twp MI",
+        "service_method": "efiling",
+        "service_date": "2026-01-10",
+        "hearing_date": "2026-06-01",
+        "days_before_hearing": 21,
+        "compliant": 0,
+        "proof_of_service_path": "/proofs/pos_9.pdf",
+        "notes": "Service package 9 of 12",
+        "created_at": "2026-03-03 00:07:46"
+      }
+    ]
+  }
 }

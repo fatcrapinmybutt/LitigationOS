@@ -1,0 +1,134 @@
+{
+  "tool": 229,
+  "name": "D Drive Evidence Cross-Reference Analyzer",
+  "generated": "2026-03-19T09:18:05.106245",
+  "evidence_totals": {
+    "rebuttal_pairs": 672,
+    "contradictions": 500,
+    "chain_of_evidence": 1011,
+    "timeline_events": 223,
+    "grand_total": 2406
+  },
+  "smoking_guns": [
+    {
+      "title": "HealthWest: Clean eval \u2192 \"delusional\" in 7 days",
+      "source": "HealthWest records Sep 4-11, 2025",
+      "quote": "9/4/2025: No safety issues, ADHD controlled. 9/11/2025: Rule-out delusional disorder",
+      "strength": "DEVASTATING",
+      "applies_to": [
+        "F3",
+        "F6",
+        "F7"
+      ],
+      "legal_theory": "Weaponized mental health evaluation = due process violation"
+    },
+    {
+      "title": "37-day custody interference without court order",
+      "source": "Master Timeline (EVERY LAST DETAIL)",
+      "quote": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Spring Break.",
+      "strength": "STRONG",
+      "applies_to": [
+        "F1",
+        "F3",
+        "F4",
+        "F5"
+      ],
+      "legal_theory": "MCL 750.350a custodial interference + \u00a71983 parental liberty"
+    },
+    {
+      "title": "Fabricated cocaine straw allegation",
+      "source": "Master Timeline \u2014 Oct 15, 2023",
+      "quote": "Emily alleged that she discovered a straw with suspected cocaine residue in her home and insinuated that I was responsible. Despite a lack of any evidence or history of substance abuse on my part, she has repeatedly referenced this fabricated claim to portray me as an unfit parent.",
+      "strength": "STRONG",
+      "applies_to": [
+        "F1",
+        "F3",
+        "F9"
+      ],
+      "legal_theory": "Fabricated evidence = fraud upon the court (MCR 2.612(C)(3))"
+    },
+    {
+      "title": "Albert Watson physical aggression at custody exchange",
+      "source": "Master Timeline",
+      "quote": ", during a parenting exchange, Emily\u2019s father, Albert Watson, forcibly removed LDW from my arms and acted aggressively, creating a hostile environment.",
+      "strength": "STRONG",
+      "applies_to": [
+        "F3",
+        "F4"
+      ],
+      "legal_theory": "Third-party interference + assault during custody exchange"
+    }
+  ],
+  "filing_map": {
+    "F1": {
+      "name": "Motion to Set Aside Void Orders (MCR 2.612)",
+      "evidence_count": 396
+    },
+    "F2": {
+      "name": "Motion for Disqualification (MCR 2.003)",
+      "evidence_count": 421
+    },
+    "F3": {
+      "name": "42 USC \u00a71983 Federal Civil Rights",
+      "evidence_count": 457
+    },
+    "F4": {
+      "name": "Emergency Custody Motion",
+      "evidence_count": 468
+    },
+    "F5": {
+      "name": "Motion to Modify Parenting Time",
+      "evidence_count": 456
+    },
+    "F6": {
+      "name": "JTC Complaint (Judicial Misconduct)",
+      "evidence_count": 373
+    },
+    "F7": {
+      "name": "Motion to Compel Discovery",
+      "evidence_count": 405
+    },
+    "F8": {
+      "name": "Shady Oaks Housing Fraud",
+      "evidence_count": 371
+    },
+    "F9": {
+      "name": "COA Appeal (366810)",
+      "evidence_count": 424
+    },
+    "F10": {
+      "name": "MSC Application for Leave",
+      "evidence_count": 424
+    }
+  },
+  "timeline_stats": {
+    "total_events": 223,
+    "by_category": {
+      "GENERAL": 90,
+      "INTERFERENCE": 51,
+      "MEDICAL": 37,
+      "PPO_ABUSE": 23,
+      "AGGRESSION": 12,
+      "POLICE": 5,
+      "FRAUD": 3,
+      "COURT": 2
+    },
+    "by_actor": {
+      "Emily Watson": 157,
+      "Albert Watson": 20
+    },
+    "interference_events": 51,
+    "fraud_events": 3,
+    "aggression_events": 12
+  },
+  "cip_by_type": {
+    "CONTEXTUAL_CONFLICT_CANDIDATE": 500
+  },
+  "coe_categories": {
+    "SERVICE_NOTICE": 368,
+    "EVAL_RELIANCE": 341,
+    "CONDITIONS": 300,
+    "IT_IS_ORDERED": 1,
+    "THE_COURT_FINDS": 1
+  }
+}
