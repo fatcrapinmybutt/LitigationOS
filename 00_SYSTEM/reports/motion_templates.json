@@ -1,0 +1,110 @@
+{
+  "generated": "2026-03-18T20:38:48.286912",
+  "templates": {
+    "disqualification": {
+      "title": "MOTION FOR DISQUALIFICATION OF JUDGE",
+      "court": "14th_circuit_family",
+      "mcr": "MCR 2.003",
+      "sections": 6,
+      "attachments": 3,
+      "page_limit": 20,
+      "file": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\reports\\motion_templates\\TEMPLATE_DISQUALIFICATION.md"
+    },
+    "custody_modification": {
+      "title": "MOTION TO MODIFY CUSTODY ORDER",
+      "court": "14th_circuit_family",
+      "mcr": "MCL 722.27(1)(c), MCR 3.210",
+      "sections": 6,
+      "attachments": 4,
+      "page_limit": 20,
+      "file": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\reports\\motion_templates\\TEMPLATE_CUSTODY_MODIFICATION.md"
+    },
+    "ppo_termination": {
+      "title": "MOTION TO TERMINATE PERSONAL PROTECTION ORDER",
+      "court": "14th_circuit_family",
+      "mcr": "MCL 600.2950(12)",
+      "sections": 6,
+      "attachments": 3,
+      "page_limit": 20,
+      "file": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\reports\\motion_templates\\TEMPLATE_PPO_TERMINATION.md"
+    },
+    "fraud_upon_court": {
+      "title": "MOTION FOR RELIEF FROM JUDGMENT \u2014 FRAUD UPON THE COURT",
+      "court": "14th_circuit_family",
+      "mcr": "MCR 2.612(C)(1)(c), MCR 2.612(C)(3)",
+      "sections": 8,
+      "attachments": 4,
+      "page_limit": 20,
+      "file": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\reports\\motion_templates\\TEMPLATE_FRAUD_UPON_COURT.md"
+    },
+    "section_1983": {
+      "title": "COMPLAINT UNDER 42 USC \u00a71983",
+      "court": "usdc_wdmi",
+      "mcr": "42 USC \u00a71983, 28 USC \u00a71343",
+      "sections": 9,
+      "attachments": 5,
+      "page_limit": 25,
+      "file": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\reports\\motion_templates\\TEMPLATE_SECTION_1983.md"
+    },
+    "superintending_control": {
+      "title": "COMPLAINT FOR SUPERINTENDING CONTROL",
+      "court": "msc",
+      "mcr": "Const 1963 Art 6 \u00a74, MCR 7.306",
+      "sections": 7,
+      "attachments": 4,
+      "page_limit": 50,
+      "file": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\reports\\motion_templates\\TEMPLATE_SUPERINTENDING_CONTROL.md"
+    },
+    "jtc_complaint": {
+      "title": "REQUEST FOR INVESTIGATION \u2014 JUDICIAL MISCONDUCT",
+      "court": "jtc",
+      "mcr": "Const 1963 Art 6 \u00a730, MCR 9.205",
+      "sections": 7,
+      "attachments": 4,
+      "page_limit": null,
+      "file": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\reports\\motion_templates\\TEMPLATE_JTC_COMPLAINT.md"
+    },
+    "coa_appeal": {
+      "title": "APPELLANT'S BRIEF ON APPEAL",
+      "court": "coa",
+      "mcr": "MCR 7.212",
+      "sections": 8,
+      "attachments": 4,
+      "page_limit": 50,
+      "file": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\reports\\motion_templates\\TEMPLATE_COA_APPEAL.md"
+    },
+    "emergency_motion_coa": {
+      "title": "EMERGENCY MOTION FOR STAY PENDING APPEAL",
+      "court": "coa",
+      "mcr": "MCR 7.209, MCR 7.211(C)(6)",
+      "sections": 7,
+      "attachments": 3,
+      "page_limit": 50,
+      "file": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\reports\\motion_templates\\TEMPLATE_EMERGENCY_MOTION_COA.md"
+    }
+  },
+  "courts_covered": [
+    "14th_circuit_family",
+    "14th_circuit_civil",
+    "coa",
+    "msc",
+    "usdc_wdmi",
+    "jtc"
+  ],
+  "motion_types_available": [
+    "disqualification",
+    "custody_modification",
+    "ppo_termination",
+    "fraud_upon_court",
+    "section_1983",
+    "superintending_control",
+    "jtc_complaint",
+    "coa_appeal",
+    "emergency_motion_coa"
+  ],
+  "db_stats": {
+    "high_severity_perjury": 414,
+    "high_contradictions": 1061,
+    "mcneill_violations": 5242
+  }
+}

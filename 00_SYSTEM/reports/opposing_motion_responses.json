@@ -1,0 +1,467 @@
+{
+  "summary": {
+    "generated": "2026-03-18T20:38:51.615880",
+    "total_predicted_motions": 17,
+    "high_probability_motions": 12,
+    "filings_covered": 10,
+    "counter_strategies_prepared": 17,
+    "priority_responses": [
+      {
+        "filing": "F3",
+        "motion": "Judge Denies Recusal (most likely \u2014 82% per predictor)",
+        "probability": 0.82,
+        "strategy": "mandamus_escalation"
+      },
+      {
+        "filing": "F4",
+        "motion": "Motion to Dismiss \u2014 Younger Abstention",
+        "probability": 0.75,
+        "strategy": "younger_exceptions"
+      },
+      {
+        "filing": "F1",
+        "motion": "Motion to Dismiss for Lack of Standing",
+        "probability": 0.7,
+        "strategy": "standing_rebuttal"
+      },
+      {
+        "filing": "F4",
+        "motion": "Motion to Dismiss \u2014 Rooker-Feldman Doctrine",
+        "probability": 0.7,
+        "strategy": "rooker_feldman_limits"
+      },
+      {
+        "filing": "F10",
+        "motion": "Opposition to Emergency Relief",
+        "probability": 0.7,
+        "strategy": "irreparable_harm_proof"
+      },
+      {
+        "filing": "F2",
+        "motion": "Motion to Dismiss \u2014 Failure to Exhaust Administrative Remedies",
+        "probability": 0.65,
+        "strategy": "futility_exception"
+      },
+      {
+        "filing": "F4",
+        "motion": "Motion to Dismiss \u2014 Judicial Immunity",
+        "probability": 0.65,
+        "strategy": "immunity_piercing"
+      },
+      {
+        "filing": "F5",
+        "motion": "MSC Denies Leave (most likely)",
+        "probability": 0.6,
+        "strategy": "motion_for_reconsideration"
+      },
+      {
+        "filing": "F7",
+        "motion": "Motion to Enforce Existing Order",
+        "probability": 0.6,
+        "strategy": "void_order_defense"
+      }
+    ]
+  },
+  "filings": {
+    "F1": {
+      "name": "Emergency TRO / Eviction Defense",
+      "predictions": [
+        {
+          "filing_id": "F1",
+          "predicted_motion": "Motion to Dismiss for Lack of Standing",
+          "probability": 0.7,
+          "basis": "Landlord argues tenant has no standing to challenge eviction procedures",
+          "counter_strategy": "standing_rebuttal",
+          "authorities_count": 3,
+          "authorities": [
+            "MCL 600.5714 (Summary proceedings \u2014 tenant rights)",
+            "MCL 554.601a (Security deposit \u2014 standing)",
+            "Specs Howard v Emmet 270 Mich App 127 (tenant standing)"
+          ],
+          "response_sections": [
+            "I. Plaintiff Has Standing as Current/Former Tenant",
+            "II. Statutory Standing Under MCL 600.5714",
+            "III. Constitutional Standing \u2014 Injury in Fact, Causation, Redressability",
+            "IV. Retaliatory Eviction Creates Independent Standing"
+          ],
+          "evidence_available": 10
+        },
+        {
+          "filing_id": "F1",
+          "predicted_motion": "Motion for Summary Disposition MCR 2.116(C)(8)",
+          "probability": 0.55,
+          "basis": "Failure to state a claim \u2014 lease terms permit eviction",
+          "counter_strategy": "habitability_defense",
+          "authorities_count": 3,
+          "authorities": [
+            "MCL 125.534 (Habitability requirements)",
+            "Rome v Walker 38 Mich App 458 (implied warranty habitability)",
+            "Trentadue v Buckler Lawn 479 Mich 378 (retaliatory eviction)"
+          ],
+          "response_sections": [
+            "I. Implied Warranty of Habitability Is Not Waivable",
+            "II. Documented Housing Code Violations",
+            "III. Notice and Failure to Repair",
+            "IV. Summary Disposition Inappropriate Where Material Facts Disputed"
+          ],
+          "evidence_available": 10
+        }
+      ]
+    },
+    "F2": {
+      "name": "Housing Rights Complaint",
+      "predictions": [
+        {
+          "filing_id": "F2",
+          "predicted_motion": "Motion to Dismiss \u2014 Failure to Exhaust Administrative Remedies",
+          "probability": 0.65,
+          "basis": "Must file with MDHHS/local housing authority first",
+          "counter_strategy": "futility_exception",
+          "authorities_count": 3,
+          "authorities": [
+            "MCL 125.534 (Direct court action permitted)",
+            "Vail v Board of Ed 354 Mich 127 (futility exception)",
+            "Glover v Eastern Nebraska 867 F2d 461 (futility doctrine)"
+          ],
+          "response_sections": [
+            "I. Direct Court Action Permitted Under MCL 125.534",
+            "II. Futility Exception Applies \u2014 Administrative Remedies Inadequate",
+            "III. Constitutional Claims Exempt from Exhaustion Requirement"
+          ],
+          "evidence_available": 10
+        },
+        {
+          "filing_id": "F2",
+          "predicted_motion": "Motion to Transfer Venue",
+          "probability": 0.4,
+          "basis": "Property in different county/jurisdiction",
+          "counter_strategy": "venue_proper",
+          "authorities_count": 3,
+          "authorities": [
+            "MCL 600.1629 (Real property actions \u2014 venue)",
+            "MCR 2.222 (Change of venue)",
+            "Dimmitt v Dietz 444 Mich 901 (venue properly in county of property)"
+          ],
+          "response_sections": [
+            "I. Venue Proper Under MCL 600.1629",
+            "II. Property Located Within This Court's Jurisdiction",
+            "III. Transfer Would Prejudice Plaintiff"
+          ],
+          "evidence_available": 10
+        }
+      ]
+    },
+    "F3": {
+      "name": "Judicial Disqualification MCR 2.003",
+      "predictions": [
+        {
+          "filing_id": "F3",
+          "predicted_motion": "Judge Denies Recusal (most likely \u2014 82% per predictor)",
+          "probability": 0.82,
+          "basis": "Judge finds insufficient grounds for disqualification",
+          "counter_strategy": "mandamus_escalation",
+          "authorities_count": 5,
+          "authorities": [
+            "MCR 2.003(D)(1) \u2014 Automatic appeal to chief judge",
+            "MCR 7.203(B)(1) \u2014 Appeal of right from disqualification denial",
+            "In re Hatcher 443 Mich 426 (mandatory disqualification standard)",
+            "Armstrong v Ypsilanti Charter Twp 248 Mich App 573 (pattern of bias)",
+            "Cain v Dep't of Corrections 451 Mich 470 (objective bias test)"
+          ],
+          "response_sections": [
+            "I. Automatic Right to Chief Judge Review Under MCR 2.003(D)(1)",
+            "II. Pattern of Bias Requires Disqualification \u2014 Armstrong Standard",
+            "III. Due Process Mandates Impartial Tribunal \u2014 Crampton/Hatcher",
+            "IV. Objective Bias Test Satisfied \u2014 Reasonable Person Would Doubt Impartiality",
+            "V. Relief Requested: Mandamus Compelling Disqualification"
+          ],
+          "evidence_available": 10
+        },
+        {
+          "filing_id": "F3",
+          "predicted_motion": "Motion to Strike Disqualification Motion",
+          "probability": 0.3,
+          "basis": "Untimely or procedurally defective",
+          "counter_strategy": "timeliness_defense",
+          "authorities_count": 3,
+          "authorities": [
+            "MCR 2.003(C)(1) \u2014 File when grounds become known",
+            "Kern v Kern-Koskela 320 Mich App 212 (continuing bias = continuing grounds)",
+            "Crampton v Dep't of State 395 Mich 347 (due process trumps timeliness)"
+          ],
+          "response_sections": [
+            "I. Motion Filed Promptly Upon Discovery of Grounds",
+            "II. Continuing Bias = Continuing Grounds Under Kern",
+            "III. Due Process Cannot Be Waived by Timeliness Technicality"
+          ],
+          "evidence_available": 10
+        }
+      ]
+    },
+    "F4": {
+      "name": "Federal \u00a71983 Civil Rights",
+      "predictions": [
+        {
+          "filing_id": "F4",
+          "predicted_motion": "Motion to Dismiss \u2014 Younger Abstention",
+          "probability": 0.75,
+          "basis": "Federal court should abstain from interfering with state proceedings",
+          "counter_strategy": "younger_exceptions",
+          "authorities_count": 4,
+          "authorities": [
+            "Sprint Communications v Jacobs 571 US 69 (narrowed Younger to 3 categories)",
+            "Middlesex County Ethics v Garden State 457 US 423 (3-part test)",
+            "Kugler v Helfant 421 US 117 (bad faith/harassment exception)",
+            "Gerstein v Pugh 420 US 103 (constitutional rights exception)"
+          ],
+          "response_sections": [
+            "I. Sprint v Jacobs Narrowed Younger to Three Categories Only",
+            "II. This Case Does Not Fit Any Younger Category",
+            "III. Bad Faith/Harassment Exception Applies \u2014 Kugler v Helfant",
+            "IV. Constitutional Rights Exception \u2014 No Adequate State Remedy",
+            "V. Extraordinary Circumstances: Judicial Conspiracy"
+          ],
+          "evidence_available": 10
+        },
+        {
+          "filing_id": "F4",
+          "predicted_motion": "Motion to Dismiss \u2014 Rooker-Feldman Doctrine",
+          "probability": 0.7,
+          "basis": "Cannot use \u00a71983 to relitigate state court decisions",
+          "counter_strategy": "rooker_feldman_limits",
+          "authorities_count": 4,
+          "authorities": [
+            "Exxon Mobil v Saudi Basic 544 US 280 (narrow Rooker-Feldman)",
+            "Skinner v Switzer 562 US 521 (\u00a71983 not barred by R-F)",
+            "McCormick v Braverman 451 F3d 382 (6th Cir \u2014 R-F does not bar conspiracy claims)",
+            "Catz v Chalker 142 F3d 279 (6th Cir \u2014 \u00a71983 viable for custody)"
+          ],
+          "response_sections": [
+            "I. Exxon Mobil Narrowed Rooker-Feldman to Direct State Court Losers",
+            "II. \u00a71983 Claims Are Independent Federal Claims \u2014 Not Relitigation",
+            "III. Conspiracy Claims Exempt From Rooker-Feldman \u2014 McCormick",
+            "IV. Prospective Injunctive Relief Not Barred"
+          ],
+          "evidence_available": 10
+        },
+        {
+          "filing_id": "F4",
+          "predicted_motion": "Motion to Dismiss \u2014 Judicial Immunity",
+          "probability": 0.65,
+          "basis": "Judge McNeill has absolute judicial immunity",
+          "counter_strategy": "immunity_piercing",
+          "authorities_count": 4,
+          "authorities": [
+            "Dennis v Sparks 449 US 24 (co-conspirators lose immunity)",
+            "Pulliam v Allen 466 US 522 (injunctive relief not barred)",
+            "Mireles v Waco 502 US 9 (clear absence of jurisdiction exception)",
+            "Stump v Sparkman 435 US 349 (jurisdiction requirement)"
+          ],
+          "response_sections": [
+            "I. Injunctive Relief Is Not Barred \u2014 Pulliam v Allen",
+            "II. Co-Conspirators Lose Judicial Immunity \u2014 Dennis v Sparks",
+            "III. Actions Taken in Clear Absence of Jurisdiction \u2014 Mireles Exception",
+            "IV. \u00a71983 Provides Independent Basis for Equitable Relief"
+          ],
+          "evidence_available": 10
+        }
+      ]
+    },
+    "F5": {
+      "name": "MSC Superintending Control",
+      "predictions": [
+        {
+          "filing_id": "F5",
+          "predicted_motion": "MSC Denies Leave (most likely)",
+          "probability": 0.6,
+          "basis": "MSC exercises discretion to deny \u2014 extraordinary writ standard",
+          "counter_strategy": "motion_for_reconsideration",
+          "authorities_count": 4,
+          "authorities": [
+            "Const 1963 Art 6 \u00a74 (MSC general superintending control)",
+            "MCR 7.306(H) (Motion for reconsideration)",
+            "Grievance Administrator v Fieger 476 Mich 231 (MSC supervisory authority)",
+            "In re Hatcher 443 Mich 426 (MSC corrective action)"
+          ],
+          "response_sections": [
+            "I. Constitutional Mandate for Superintending Control",
+            "II. Lower Courts Have Failed to Correct Violations",
+            "III. New Evidence of Continuing Misconduct",
+            "IV. Extraordinary Circumstances Warrant Exercise of Original Jurisdiction"
+          ],
+          "evidence_available": 10
+        }
+      ]
+    },
+    "F6": {
+      "name": "JTC Judicial Misconduct Complaint",
+      "predictions": [
+        {
+          "filing_id": "F6",
+          "predicted_motion": "JTC Dismisses Without Investigation",
+          "probability": 0.25,
+          "basis": "JTC finds insufficient evidence of misconduct",
+          "counter_strategy": "supplemental_filing",
+          "authorities_count": 3,
+          "authorities": [
+            "Const 1963 Art 6 \u00a730 (JTC constitutional authority)",
+            "MCR 9.205 (Formal complaint procedures)",
+            "In re Justin 809 NW2d 126 (pattern of misconduct)"
+          ],
+          "response_sections": [
+            "I. Additional Misconduct Discovered Since Initial Filing",
+            "II. Pattern and Practice Evidence",
+            "III. Harm to Litigants Continues",
+            "IV. Request for Formal Investigation"
+          ],
+          "evidence_available": 10
+        }
+      ]
+    },
+    "F7": {
+      "name": "Custody Modification",
+      "predictions": [
+        {
+          "filing_id": "F7",
+          "predicted_motion": "Motion to Dismiss \u2014 Res Judicata",
+          "probability": 0.5,
+          "basis": "Custody already adjudicated \u2014 cannot relitigate",
+          "counter_strategy": "changed_circumstances",
+          "authorities_count": 4,
+          "authorities": [
+            "MCL 722.27(1)(c) (Modification on proper cause/change of circumstances)",
+            "Vodvarka v Grasmeyer 259 Mich App 499 (proper cause/change standard)",
+            "Shade v Wright 291 Mich App 17 (fraud = changed circumstances)",
+            "MCR 2.612(C)(1)(c) (Fraud relief from judgment)"
+          ],
+          "response_sections": [
+            "I. Res Judicata Does Not Apply to Custody Modifications \u2014 MCL 722.27",
+            "II. Proper Cause / Change of Circumstances Established \u2014 Vodvarka",
+            "III. Fraud Discovery = Changed Circumstances \u2014 Shade v Wright",
+            "IV. Void Judgment Cannot Be Protected by Res Judicata"
+          ],
+          "evidence_available": 10
+        },
+        {
+          "filing_id": "F7",
+          "predicted_motion": "Motion to Enforce Existing Order",
+          "probability": 0.6,
+          "basis": "Emily moves to enforce current custody instead of modifying",
+          "counter_strategy": "void_order_defense",
+          "authorities_count": 3,
+          "authorities": [
+            "MCR 2.612(C)(1)(d) (Void judgment \u2014 no time limit)",
+            "Demski v Petlick 309 Mich App 404 (void vs voidable)",
+            "Sylvania Silica v Ridge Tool 858 F2d 248 (void order = nullity)"
+          ],
+          "response_sections": [
+            "I. Order Is Void Ab Initio \u2014 MCR 2.612(C)(1)(d)",
+            "II. Void Orders Cannot Be Enforced \u2014 Demski v Petlick",
+            "III. No Time Limit on Challenging Void Orders",
+            "IV. Enforcement of Void Order Violates Due Process"
+          ],
+          "evidence_available": 10
+        }
+      ]
+    },
+    "F8": {
+      "name": "PPO Termination",
+      "predictions": [
+        {
+          "filing_id": "F8",
+          "predicted_motion": "Motion to Continue PPO",
+          "probability": 0.55,
+          "basis": "Emily claims ongoing fear/threat",
+          "counter_strategy": "changed_circumstances_ppo",
+          "authorities_count": 4,
+          "authorities": [
+            "MCL 600.2950(12) (Modification/termination of PPO)",
+            "MCL 600.2950(1) (Reasonable cause standard)",
+            "Pickering v Pickering 253 Mich App 694 (PPO termination standard)",
+            "TM v MZ 501 Mich 312 (due process in PPO proceedings)"
+          ],
+          "response_sections": [
+            "I. Original PPO Based on Fabricated Evidence",
+            "II. Changed Circumstances \u2014 MCL 600.2950(12)",
+            "III. No Current Threat or Fear Supported by Evidence",
+            "IV. PPO Continuing Violates Due Process \u2014 TM v MZ"
+          ],
+          "evidence_available": 10
+        }
+      ]
+    },
+    "F9": {
+      "name": "COA Appeal Brief",
+      "predictions": [
+        {
+          "filing_id": "F9",
+          "predicted_motion": "Motion to Dismiss Appeal \u2014 Lack of Final Order",
+          "probability": 0.45,
+          "basis": "No final order to appeal from",
+          "counter_strategy": "collateral_order_doctrine",
+          "authorities_count": 4,
+          "authorities": [
+            "MCR 7.203(A)(1) (Appeals of right from final orders)",
+            "MCR 7.203(B) (Leave appeals \u2014 interlocutory)",
+            "Bonner v City of Brighton 495 Mich 209 (collateral order doctrine)",
+            "In re Contempt of Henry 282 Mich App 656 (appealable orders)"
+          ],
+          "response_sections": [
+            "I. Final Order Exists and Is Appealable \u2014 MCR 7.203(A)(1)",
+            "II. Alternatively, Collateral Order Doctrine Applies \u2014 Bonner",
+            "III. Leave to Appeal Warranted Under MCR 7.203(B)",
+            "IV. Constitutional Issues Require Appellate Review"
+          ],
+          "evidence_available": 10
+        },
+        {
+          "filing_id": "F9",
+          "predicted_motion": "Motion to Affirm on Brief",
+          "probability": 0.4,
+          "basis": "Trial court did not abuse discretion",
+          "counter_strategy": "abuse_of_discretion_clear",
+          "authorities_count": 3,
+          "authorities": [
+            "Maldonado v Ford 476 Mich 372 (abuse of discretion standard)",
+            "Berger v Berger 277 Mich App 700 (custody abuse of discretion)",
+            "Mitchell v Mitchell 296 Mich App 513 (clear error on findings)"
+          ],
+          "response_sections": [
+            "I. Abuse of Discretion Standard Met \u2014 Maldonado",
+            "II. Trial Court Findings Clearly Erroneous \u2014 Mitchell",
+            "III. Constitutional Violations Reviewed De Novo",
+            "IV. Full Briefing Required \u2014 Issues Too Complex for Summary Affirmance"
+          ],
+          "evidence_available": 10
+        }
+      ]
+    },
+    "F10": {
+      "name": "COA Emergency Motion",
+      "predictions": [
+        {
+          "filing_id": "F10",
+          "predicted_motion": "Opposition to Emergency Relief",
+          "probability": 0.7,
+          "basis": "No true emergency \u2014 normal appellate process adequate",
+          "counter_strategy": "irreparable_harm_proof",
+          "authorities_count": 4,
+          "authorities": [
+            "MCR 7.211(C)(6) (Emergency motions in COA)",
+            "MCR 7.209(A) (Stay pending appeal)",
+            "In re TK 306 Mich App 698 (child welfare emergency standard)",
+            "Mich Coalition of State Empl Unions v Civil Service 465 Mich 212 (irreparable harm)"
+          ],
+          "response_sections": [
+            "I. True Emergency Exists \u2014 Child Separated From Parent",
+            "II. Irreparable Harm \u2014 Lost Parenting Time Cannot Be Restored",
+            "III. Likelihood of Success on Merits",
+            "IV. Balance of Hardships Favors Emergency Relief",
+            "V. Public Interest Supports Parent-Child Relationship"
+          ],
+          "evidence_available": 10
+        }
+      ]
+    }
+  }
+}
