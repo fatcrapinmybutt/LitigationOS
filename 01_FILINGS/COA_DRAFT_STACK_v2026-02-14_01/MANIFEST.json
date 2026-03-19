@@ -1,0 +1,47 @@
+[
+  {
+    "path": "00_README_START.md",
+    "bytes": 1544,
+    "sha256": "77bcd2354e59f6c508d43fd9903c971e521f665a8605a2eea4b11c489043a6ae"
+  },
+  {
+    "path": "01_COA_Complaint_Superintending_Control.docx",
+    "bytes": 39368,
+    "sha256": "fd21faec93adad877802f63e115a8f38b1b7187e0eadfd6836e969294b876acd"
+  },
+  {
+    "path": "01_COA_Complaint_Superintending_Control.md",
+    "bytes": 6124,
+    "sha256": "3c4460489c2999df0b57f57d76ecd929d07bd1eb83d2e57a22746f9fbccf784e"
+  },
+  {
+    "path": "02_COA_Emergency_Motion_Stay_Interim_Relief.docx",
+    "bytes": 37478,
+    "sha256": "28b933834238396162eb700ab63d5424f62f3144d6e6fc4ae7d30c867a6a1691"
+  },
+  {
+    "path": "02_COA_Emergency_Motion_Stay_Interim_Relief.md",
+    "bytes": 1407,
+    "sha256": "8b236161a7bff95be19ca23d11e2a9a9eb8970f60c2f4e1acf43002df7d40d2e"
+  },
+  {
+    "path": "03_Verified_Statement_and_Exhibit_List.docx",
+    "bytes": 37471,
+    "sha256": "adca57fc670f65a78f3f79c16b401cf8a3bec7177d0f093665a35a3990622c2c"
+  },
+  {
+    "path": "03_Verified_Statement_and_Exhibit_List.md",
+    "bytes": 1497,
+    "sha256": "ce577104e76704f943c6913c60d0e0625e3474378e6710a53aab106abe7375c1"
+  },
+  {
+    "path": "04_Record_Acquisition_and_Pinpoint_Map.md",
+    "bytes": 1524,
+    "sha256": "2344756c9938aa40bfaacc58d48bfe48942b32f736c62029c7ab881209777b74"
+  },
+  {
+    "path": "05_JTC_Complaint_Structure.md",
+    "bytes": 1088,
+    "sha256": "6aee4d1c717467b12d258d56e468baaeb6ae7623cdcf4e1aee763ef5bb0cf4d0"
+  }
+]

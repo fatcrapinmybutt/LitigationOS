@@ -1,0 +1,166 @@
+{
+  "pipeline": "FilingProductionPipeline v1.0",
+  "stack": "05_BAR_BARNES",
+  "stack_path": "C:\\Users\\andre\\LitigationOS\\05_BAR_BARNES",
+  "court": {
+    "court": "Attorney Grievance Commission",
+    "rules": "MCR 9.100",
+    "efiling": "mifile"
+  },
+  "timestamp": "2026-03-04T22:41:32.716288",
+  "elapsed_seconds": 1.31,
+  "go_nogo": "GO",
+  "documents_scanned": 35,
+  "evidence_files": 0,
+  "steps": {
+    "INTAKE": {
+      "status": "PASS",
+      "details": [
+        "Found 35 documents",
+        "Found 0 evidence files",
+        "Court context: Attorney Grievance Commission",
+        "Rules: MCR 9.100"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "PLACEHOLDER_CHECK": {
+      "status": "WARN",
+      "details": [
+        "Auto-resolvable: 0",
+        "Unresolved: 259"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 20,
+      "warnings": [
+        "  Unresolved: [MCJC 2] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [BEV-0071] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [BEV-0077] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [MSG-123] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [MSG-126] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [MSG-126] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [MSG-128] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [MSG-123] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [MSG-126] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [MSG-128] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt"
+      ]
+    },
+    "AUTHORITY_CHECK": {
+      "status": "PASS",
+      "details": [
+        "Total citations found: 820",
+        "  MCL: 197",
+        "  MCR: 398",
+        "  Mich: 64",
+        "  Mich App: 49",
+        "  NW2d: 6",
+        "  US: 35",
+        "  Const: 15",
+        "  USC: 16",
+        "  F.3d: 13",
+        "  FRCP: 27"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EVIDENCE_CHECK": {
+      "status": "PASS",
+      "details": [
+        "Exhibit references found: 35",
+        "Evidence files on disk: 0",
+        "DB evidence items loaded: 28683"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "COMPLIANCE_CHECK": {
+      "status": "PASS",
+      "details": [],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 1,
+      "warnings": [
+        "Compliance check warning for 01_BAR_COMPLAINT.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'"
+      ]
+    },
+    "QA_GATE": {
+      "status": "PASS",
+      "details": [
+        "PreFilingQAEngine available for deep QA",
+        "Steps PASS: 4 / WARN: 1 / FAIL: 0",
+        "Total issues: 0",
+        "Total warnings: 21",
+        "Verdict: GO"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "PDF_GENERATION": {
+      "status": "PASS",
+      "details": [
+        "PDF manifests generated: 20",
+        "Existing PDFs copied: 2",
+        "Output dir: C:\\Users\\andre\\LitigationOS\\05_BAR_BARNES\\PRODUCTION_OUTPUT\\PDF"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EXHIBIT_COMPILATION": {
+      "status": "PASS",
+      "details": [
+        "Evidence files indexed: 0",
+        "DB exhibit entries: 718",
+        "Bates range: 05-000001 to 05-000000"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "SERVICE_PACKET": {
+      "status": "PASS",
+      "details": [
+        "Proof of service generated: PROOF_OF_SERVICE.md",
+        "Cover letter generated: COVER_LETTER.md",
+        "Mailing list generated: MAILING_LIST.md",
+        "Service parties from DB: 226"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EFILING_PREP": {
+      "status": "PASS",
+      "details": [
+        "E-filing system: MiFILE",
+        "Documents: 20",
+        "All PDF: False",
+        "Under size limit: True"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "FINAL_REPORT": {
+      "status": "RUNNING",
+      "details": [],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    }
+  }
+}

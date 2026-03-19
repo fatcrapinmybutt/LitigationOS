@@ -1,0 +1,38 @@
+{
+  "packet_template_id": "pkt_m2_pt_enforcement",
+  "vehicle_id": "m2_trial_parenting_time_enforcement_or_makeup",
+  "lane": "MEEK2",
+  "court_level": "TRIAL",
+  "outline": [
+    "Caption",
+    "Relief Requested (make-up time + enforcement)",
+    "Background (order terms + incidents)",
+    "Standard (authority resolved)",
+    "Argument",
+    "Requested Relief",
+    "Proposed Order (outline only)",
+    "Exhibit List"
+  ],
+  "exhibit_requirements": [
+    {
+      "exhibit_id": "PX-1",
+      "purpose": "Operative parenting time order terms",
+      "required_sources": [
+        "operating_order"
+      ]
+    },
+    {
+      "exhibit_id": "PX-2",
+      "purpose": "Withholding incidents",
+      "required_sources": [
+        "messages",
+        "app_logs"
+      ]
+    }
+  ],
+  "required_pins": [
+    "OperatingOrderPin",
+    "AUTHKEY_PARENTING_TIME_ENFORCEMENT"
+  ],
+  "requires_deadline_eval": false
+}

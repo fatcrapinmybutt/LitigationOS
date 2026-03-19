@@ -1,0 +1,78 @@
+{
+  "packet_template_id": "PKT_TRIAL_MOTION_V0_1",
+  "lane": "TRIAL",
+  "vehicle_type": "MOTION",
+  "sections": [
+    {
+      "section_id": "caption",
+      "sequence": 10,
+      "section_type": "caption",
+      "generator_operator": "OP.DRAFT.ASSEMBLE_DOCUMENT",
+      "required_inputs": [
+        "case_meta"
+      ]
+    },
+    {
+      "section_id": "motion_body",
+      "sequence": 20,
+      "section_type": "motion",
+      "generator_operator": "OP.DRAFT.GENERATE_FACT_BLOCK",
+      "required_inputs": [
+        "fact_atoms",
+        "issue_atoms"
+      ]
+    },
+    {
+      "section_id": "brief",
+      "sequence": 30,
+      "section_type": "brief",
+      "generator_operator": "OP.DRAFT.GENERATE_AUTHORITY_BLOCK",
+      "required_inputs": [
+        "authority_triples"
+      ]
+    },
+    {
+      "section_id": "affidavit",
+      "sequence": 40,
+      "section_type": "affidavit",
+      "generator_operator": "OP.DRAFT.GENERATE_FACT_BLOCK",
+      "required_inputs": [
+        "record_pins"
+      ]
+    },
+    {
+      "section_id": "exhibits",
+      "sequence": 50,
+      "section_type": "exhibits",
+      "generator_operator": "OP.EVIDENCE.LINK_EXHIBITS",
+      "required_inputs": [
+        "exhibit_refs"
+      ]
+    },
+    {
+      "section_id": "service",
+      "sequence": 60,
+      "section_type": "service",
+      "generator_operator": "OP.DRAFT.GENERATE_SERVICE_BLOCK",
+      "required_inputs": [
+        "service_targets"
+      ]
+    },
+    {
+      "section_id": "proposed_order",
+      "sequence": 70,
+      "section_type": "order",
+      "generator_operator": "OP.DRAFT.GENERATE_RELIEF_BLOCK",
+      "required_inputs": [
+        "relief_ask"
+      ]
+    }
+  ],
+  "required_forms": [],
+  "required_exhibits": [],
+  "validation_bundle": [
+    "VAL.PACKET.CAPTION_PRESENT",
+    "VAL.PACKET.EXHIBIT_INDEX_PRESENT",
+    "VAL.PACKET.SERVICE_DOC_PRESENT"
+  ]
+}

@@ -1,0 +1,529 @@
+# MEEK3_PPO_CONTEMPT — Extracted High-Signal Lines (Run 20260211_031143 UTC)
+
+## Notes
+- This is an automated extraction/triage packet: line-addressable citations `rel_path:L#`.
+- PDFs are extracted quickly (first ~12 pages). Scanned PDFs may show as empty without OCR.
+
+## Top Sources
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json` (35 lines)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md` (21 lines)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md` (21 lines)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt` (19 lines)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md` (18 lines)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md` (17 lines)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md` (17 lines)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md` (17 lines)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md` (14 lines)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md` (14 lines)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json` (14 lines)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json` (14 lines)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md` (12 lines)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md` (11 lines)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md` (11 lines)
+- `staging/LITIGATION_OSvariousparts/APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md` (10 lines)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_INDEX.md` (9 lines)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_LEGAL_ELEMENTS_MAPPING.md` (8 lines)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md` (7 lines)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md` (7 lines)
+
+## Excerpts
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L337` — This comprehensive fact extraction and categorization provides a solid factual foundation for the PIGORS v WATSON litigation, with **strong support for judge disqualification (MCR 2.003) and due process violation claims**, combined with **moderate support for contempt, PPO violations, and discovery issues**, and **identified support for custody best-interests arguments**.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L337` — This comprehensive fact extraction and categorization provides a solid factual foundation for the PIGORS v WATSON litigation, with **strong support for judge disqualification (MCR 2.003) and due process violation claims**, combined with **moderate support for contempt, PPO violations, and discovery issues**, and **identified support for custody best-interests arguments**.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L26` — Motion and Order to Show Cause for Contempt (Support)  (6/24)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md:L617` — This comprehensive analysis of 1,435 ALLSCANNED documents reveals substantial additional evidence supporting both existing claims and newly identified violations. The systematic nature of procedural failures across 52 ex parte orders, combined with inadequate findings in 30 judge orders, provides strong foundation for multiple new motions.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L26` — Motion and Order to Show Cause for Contempt (Support)  (6/24)
+- `staging/LITIGATION_OSvariousparts/APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md:L731` — | 2024-04-11 | Show Cause (contempt) | Jail threat, $250 bond | MCR 3.706(A)(2) |
+- `staging/LITIGATION_OSvariousparts/EXHIBIT_COVER_SHEETS_MRE_CERTIFIED_20260209.md:L20` — This exhibit is the Personal Protection Order (PPO) petition filed by Emily A. Watson (Respondent/Appellee) on December 4, 2023, alleging that Andrew J. Pigors (Petitioner/Appellant) "poisoned her coffee with arsenic" on November 30, 2023. The petition contains no supporting medical records, no toxicology reports, and no physical evidence. The PPO was issued ex parte on the same day the petition was filed.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L788` — **Note:** If ongoing PPO violations, may need motion to show cause or criminal referral.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L453` — | **Contempt of Court** | Highest | Violation of court order | MCL 600.1711 |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/MOTIONS_QUICK_REFERENCE.md:L154` — | No contact order | DV/threats/harassment | MCL 722.27(1)(c) |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/MOTIONS_QUICK_REFERENCE.md:L239` — | **Contempt** | Highest | Jail/fines for violating court order | MCL 600.1711 |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1176` — Emergency motion to compel immediate discovery production when court hearing scheduled within 7 days and opposing party failed to produce critical documents. Based on 383 documented discovery violations.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1968` — Comprehensive motion cataloging all constitutional violations, procedural errors, and abuses by court or opposing party. Seeks vacatur of all orders and dismissal with prejudice.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L136` — | **PPO Violations** | 462 | 15.9% | Contact allegations, harassment, protective order disputes |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_PROJECT_SUMMARY_v03_COMPLETE.md:L54` — - **Exhibit B-1 through B-5:** Ex parte orders without notice (MCR 3.603(A) violations)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md:L68` — - Granting an ex parte order without providing the respondent an opportunity for a hearing (MCR 2.119(C)(5))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md:L76` — Ex parte violations implicate both procedural (MCR 2.119) and constitutional (due process) standards. Pattern of violations across 52 orders suggests systematic failure rather than isolated incidents.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md:L295` — - **Action:** Motion to set aside 52 ex parte orders for MCR 2.119 violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L788` — **Note:** If ongoing PPO violations, may need motion to show cause or criminal referral.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L453` — | **Contempt of Court** | Highest | Violation of court order | MCL 600.1711 |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/MOTIONS_QUICK_REFERENCE.md:L154` — | No contact order | DV/threats/harassment | MCL 722.27(1)(c) |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/MOTIONS_QUICK_REFERENCE.md:L239` — | **Contempt** | Highest | Jail/fines for violating court order | MCL 600.1711 |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1176` — Emergency motion to compel immediate discovery production when court hearing scheduled within 7 days and opposing party failed to produce critical documents. Based on 383 documented discovery violations.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1968` — Comprehensive motion cataloging all constitutional violations, procedural errors, and abuses by court or opposing party. Seeks vacatur of all orders and dismissal with prejudice.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L136` — | **PPO Violations** | 462 | 15.9% | Contact allegations, harassment, protective order disputes |
+- `staging/LITIGATION_OSvariousparts/APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md:L62` — - MCR 2.119(B)(1): Motion must be verified or supported by affidavit
+- `staging/LITIGATION_OSvariousparts/APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md:L413` — - April 11, 2024: Motion and Order to Show Cause for Contempt filed
+- `staging/LITIGATION_OSvariousparts/APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md:L759` — | MCR 2.119(B)(1) | - | Motions must be verified or supported by affidavit |
+- `staging/LITIGATION_OSvariousparts/COA_APPLICATION_LEAVE_BRIEF_PIGORS_v_WATSON_20260209.md:L86` — Andrew Pigors (Appellant) and Emily Watson (Appellee) are the parents of Lincoln (age 6). The parties were never married but lived together from 2018 to 2023. On December 4, 2023, Appellee obtained a Personal Protection Order (PPO) in case 2023-005907-PP by alleging, inter alia, that Appellant poisoned her coffee with arsenic. (Exhibit A: PPO Petition). **Critically, Appellee provided no medical records, no toxicology report, and no evidence beyond her unsworn statement.** (Exhibit B: NSPD Police Report NS-2023-005907-PP showing "no evidence").
+- `staging/LITIGATION_OSvariousparts/COA_APPLICATION_LEAVE_BRIEF_PIGORS_v_WATSON_20260209.md:L516` — | MCR 2.119(B)(1) | - | Motions must be verified or supported by affidavit |
+- `staging/LITIGATION_OSvariousparts/EXHIBIT_COVER_SHEETS_MRE_CERTIFIED_20260209.md:L105` — - 89% lack "affidavit/verified/sworn" language (MCR 2.119(B)(1) violation)
+- `staging/LITIGATION_OSvariousparts/MSC_ORIGINAL_ACTION_SUPERINTENDING_CONTROL_PIGORS_20260209.md:L163` — **Violation**: Defendant has issued **156+ ex parte orders** in flagrant violation of MCR 3.207(C)(2) and MCR 2.119(B)(1):
+- `staging/LITIGATION_OSvariousparts/MSC_ORIGINAL_ACTION_SUPERINTENDING_CONTROL_PIGORS_20260209.md:L166` — - **MCR 2.119(B)(1)** requires motions be "verified or supported by affidavit"
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L254` — - Provides factual record supporting other claims (contempt, PPO violations)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L273` — **Strategic Note:** Discovery violations motion (B-1/B-2) may result in contempt finding as sanction, providing additional coverage.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L1026` — Once emergency motion filed (and hearing scheduled), immediately begin discovery violations documentation. File Motions B-1 and B-3 together within 14-30 days.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L189` — **Authority:** MCR 2.119(B)(1) - motions must be supported by affidavit
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1237` — I, Andrew J. Pigors, certify that I have made reasonable efforts to resolve the discovery dispute with Emily Watson before filing this motion, as required by MCR 2.401(I).
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L22` — 4. I request the court issue an order to show cause why the payer named above should not be found in contempt for     failure to comply with the court’s order.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/README.md:L413` — *This organization supports emergency custody motions, discovery violation motions, and all supporting family law procedures in Michigan state courts. All forms are SCAO standard forms. When in doubt, consult with a licensed Michigan attorney.*
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_INDEX.md:L16` — | 2 | **PPO Violation** (MCL 400.2950) | **85.0%** | 462 | ✅ PRIMARY |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_INDEX.md:L295` — ☐ Contempt order and violation notices (286 facts)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L77` — ### 2. PPO VIOLATION (MCL 400.2950 et seq.)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L54` — 3. PPO Violations (MCL 400.2950)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L230` — ✓ Contempt order and violation notices (286 facts)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L176` — - **PPO Violation Elements (5):** Order issued/served, knowledge, specific violation, intentional/negligent, harm/risk
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L241` — ### PRIORITY 5: CONTEMPT/PPO VIOLATIONS
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_LEGAL_ELEMENTS_MAPPING.md:L149` — | **PPO Violation** (MCL 400.2950) | **85.0%** | 462 | ✅ PRIMARY |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_analysis_detailed.txt:L268` — 4. Contempt/PPO Violations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L747` — "Line": "- Four PPO violation allegation sets summarized in the motion; one dismissed (vehicle exit during exchange); others described as unsubstantiated random-number texts etc.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L602` — "Couple with stronger claims (contempt, PPO violation, judicial disqualification)",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L1255` — "Contempt of Court - Perfect order existence (100%), excellent knowledge and ability (88.8%-95.1%), 286 documented violations",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/enhance_coa_filing.js:L93` — 'People v Cutting, 245 Mich App 249; 627 NW2d 511 (2001) (criminal contempt for PPO)'
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L56` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L62` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L68` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L74` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L80` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L86` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L92` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L98` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L104` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L110` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L116` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L122` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L128` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L134` — Violation: Ex parte communication without notice (MCR 3.603(A))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_PROJECT_SUMMARY_v03_COMPLETE.md:L55` — - **Exhibit B-6 through B-10:** Orders without required hearings (MCL 722.27a violations)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L254` — - Provides factual record supporting other claims (contempt, PPO violations)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L273` — **Strategic Note:** Discovery violations motion (B-1/B-2) may result in contempt finding as sanction, providing additional coverage.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L1026` — Once emergency motion filed (and hearing scheduled), immediately begin discovery violations documentation. File Motions B-1 and B-3 together within 14-30 days.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L189` — **Authority:** MCR 2.119(B)(1) - motions must be supported by affidavit
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1237` — I, Andrew J. Pigors, certify that I have made reasonable efforts to resolve the discovery dispute with Emily Watson before filing this motion, as required by MCR 2.401(I).
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L22` — 4. I request the court issue an order to show cause why the payer named above should not be found in contempt for     failure to comply with the court’s order.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/README.md:L413` — *This organization supports emergency custody motions, discovery violation motions, and all supporting family law procedures in Michigan state courts. All forms are SCAO standard forms. When in doubt, consult with a licensed Michigan attorney.*
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/05_LITOS_ENHANCED/Authority_Subgraph_edges_enhanced.csv:L28` — claim_discovery_violations,auth_MCR_MCR_2_003_C_1,supports,JUDICIAL_CONDUCT
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/05_LITOS_ENHANCED/Authority_Subgraph_edges_enhanced.csv:L29` — claim_discovery_violations,auth_MCR_MCR_2_003_C_1_a,supports,JUDICIAL_CONDUCT
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/05_LITOS_ENHANCED/Authority_Subgraph_edges_enhanced.csv:L30` — claim_discovery_violations,auth_MCR_MCR_2_003_C_1_b,supports,JUDICIAL_CONDUCT
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/05_LITOS_ENHANCED/Authority_Subgraph_edges_enhanced.csv:L31` — claim_discovery_violations,auth_MCR_MCR_2_401_D,supports,JUDICIAL_CONDUCT
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/05_LITOS_ENHANCED/Authority_Subgraph_edges_enhanced.csv:L32` — claim_discovery_violations,auth_MCR_MCR_2_401_H_1,supports,JUDICIAL_CONDUCT
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/05_LITOS_ENHANCED/Authority_Subgraph_edges_enhanced.csv:L33` — claim_discovery_violations,auth_MCR_MCR_2_401_I_1,supports,JUDICIAL_CONDUCT
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/05_LITOS_ENHANCED/Authority_Subgraph_edges_enhanced.csv:L34` — claim_discovery_violations,auth_MCR_MCR_2_313_B,supports,DISCOVERY
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/LEGAL_ELEMENTS_INDEX.md:L16` — | 2 | **PPO Violation** (MCL 400.2950) | **85.0%** | 462 | ✅ PRIMARY |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/LEGAL_ELEMENTS_INDEX.md:L295` — ☐ Contempt order and violation notices (286 facts)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L77` — ### 2. PPO VIOLATION (MCL 400.2950 et seq.)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L54` — 3. PPO Violations (MCL 400.2950)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L230` — ✓ Contempt order and violation notices (286 facts)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L176` — - **PPO Violation Elements (5):** Order issued/served, knowledge, specific violation, intentional/negligent, harm/risk
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L241` — ### PRIORITY 5: CONTEMPT/PPO VIOLATIONS
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/README_LEGAL_ELEMENTS_MAPPING.md:L149` — | **PPO Violation** (MCL 400.2950) | **85.0%** | 462 | ✅ PRIMARY |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_analysis_detailed.txt:L268` — 4. Contempt/PPO Violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L747` — "Line": "- Four PPO violation allegation sets summarized in the motion; one dismissed (vehicle exit during exchange); others described as unsubstantiated random-number texts etc.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/legal_elements_mapping.json:L602` — "Couple with stronger claims (contempt, PPO violation, judicial disqualification)",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/legal_elements_mapping.json:L1255` — "Contempt of Court - Perfect order existence (100%), excellent knowledge and ability (88.8%-95.1%), 286 documented violations",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/enhance_coa_filing.js:L93` — 'People v Cutting, 245 Mich App 249; 627 NW2d 511 (2001) (criminal contempt for PPO)'
+- `staging/LITIGATION_OSvariousparts/APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md:L15` — **Procedural Defects**: 156+ ex parte orders with MCR 3.207/3.310 violations
+- `staging/LITIGATION_OSvariousparts/APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md:L104` — Date: 2024-04-11, Event: MOTION AND ORDER TO SHOW CAUSE FOR CONTEMPT
+- `staging/LITIGATION_OSvariousparts/APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md:L761` — | MCR 3.706(A)(2) | - | Contempt requires opportunity to be heard |
+- `staging/LITIGATION_OSvariousparts/COMPLETE_FILING_PACKAGE_SUMMARY_20260209.md:L30` — - A. Ex Parte Orders Without Proper Foundation (MCR 3.207 violations)
+- `staging/LITIGATION_OSvariousparts/COMPLETE_FILING_PACKAGE_SUMMARY_20260209.md:L187` — | **Procedural Defects** | 156+ ex parte orders | MCR 3.207/3.310 violations |
+- `staging/LITIGATION_OSvariousparts/MSC_ORIGINAL_ACTION_SUPERINTENDING_CONTROL_PIGORS_20260209.md:L131` — - 89% lack verified affidavit (MCR 2.119(B)(1) violation)
+- `staging/LITIGATION_OSvariousparts/enhance_with_ollama_evidence.ps1:L195` — $jtcEnhanced += "`n  Violation: Ex parte communication without notice (MCR 3.603(A))"
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L379` — **Holding:** Trial court may impose sanctions under MCR 2.313 when party fails to comply with discovery and opposing party shows prejudice.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L399` — **Holding:** Trial court's decision on discovery sanctions reviewed for abuse of discretion; sanctions warranted when discovery violations are flagrant and significantly prejudice opposing party.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L522` — - **Contempt proceedings** for willful violation of discovery orders
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L645` — - Discovery violations may be preserved for appeal if sanctions motion filed but denied
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L776` — **Note:** If contempt by opposing party (not judge), may need separate contempt motion.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L822` — **Outcome:** Discovery motion filed; hearing scheduled; pressure on opposing party to comply.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L286` — **Strategic Note:** If PPO violations continue, criminal complaint to prosecutor remains option separate from civil litigation.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L401` — **File Motion B-2 only if opponent continues violations**
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L267` — | **No Contact Order** | MCL 722.27(1)(c) | Domestic violence, threats |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L506` — 1. **PRIMARY RELIEF:** Instruct jury that it may infer documents/information withheld by Respondent support Movant's claims regarding Child Welfare Emergency and Discovery Violations.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/EXECUTIVE_SUMMARY.md:L44` — | **B-2** Motion for Sanctions | MCR 2.313(B) | CUSTOM | Punish non-compliance, deter future violations |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/MOTIONS_QUICK_REFERENCE.md:L264` — **"Respondent's pattern of 383 discovery violations demonstrates willful defiance of discovery rules. The Court should impose adverse inference sanction, instructing the jury it may assume non-produced documents support Movant's claims."**
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/QUICK_REFERENCE_NEW_CLAIMS.md:L71` — Motion to compel opposing party to provide discovery and request sanctions for 383 documented discovery violations.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/QUICK_REFERENCE_NEW_CLAIMS.md:L175` — 2. **Evidence Synergy:** Discovery violations motion may uncover evidence supporting emergency jurisdiction
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_DECISION_TREE_STRUCTURE.md:L152` — - ✓ Opposing party in violation of court order OR discovery rules
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L150` — - Notice proposed to opposing party (MCR 3.204)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L306` — 4. NOTICE: The Clerk shall immediately provide notice of this Order to Emily Watson at <<UNRESOLVED:ADDRESS>> by [certified mail/personal service].
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/2026-02-10_FORM_COMPLETION_GUIDE.md:L3` — **Purpose:** Emergency Custody Motions, Discovery Violation Motions, and Supporting Documents
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L35` — to show cause why they should not be held in contempt for failure to comply with the court’ s order. If the named party
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc30.pdf:L58` — I request a hearing on the matter of the registration of a support order for the following reason(s).  (Check all that apply.)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc30.pdf:L78` — I served a copy of this Notice of Registration of Out-of-State or Foreign Support Order (UIFSA) and any attachments on
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc30.pdf:L86` — I acknowledge that I have received service of the Notice of Registration of Out-of-State or Foreign Support Order (UIFSA),
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc4.pdf:L28` — court determines that the payer owes an arrearage under the support order that is the basis of the contempt proceeding
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/FORMS_INVENTORY.md:L58` — | **MC 229** | **Motion/Affidavit for Discovery** | **Enforce discovery compliance** | **Motion for discovery violations (B-1 to B-3)** |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc56.pdf:L31` — 3. Payer     was    was not  served with    an order to show cause/adjournment notice   a bench warrant
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc56.pdf:L53` — Referee Findings and Rec. for Order After Hrg. on Bench Warrant/Show Cause (Support) (3/21)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc58.pdf:L43` — b. violation of the parenting-time order  second or subsequent finding of contempt.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L227` — ✓ Certified PPO with proof of service (462 violations documented)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L85` — #### 3. **Protective Order (PPO) Violations**
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L140` — | **Contempt** | 286 | 9.8% | Order violations, non-compliance, disobedience |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L175` — - **Contempt Elements (5):** Valid order, knowledge, ability, willful violation, clear/convincing proof
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_LEGAL_ELEMENTS_MAPPING.md:L226` — - File contempt motion (84.5% support)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_analysis_detailed.txt:L120` — 4. PROTECTIVE ORDER (PPO) VIOLATIONS - MODERATE FACTUAL SUPPORT
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L191` — "rule": "Protective Order Violation (MCL 600.2950)"
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L712` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L717` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L722` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L727` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L1186` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L1196` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L1206` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L1216` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L1560` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L1570` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L1580` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L1590` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L419` — "viability_notes": "STRONG VIABILITY. All six elements substantially satisfied with overall satisfaction of 85%. Perfect satisfaction for order existence (100%), excellent satisfaction for notice (95.5%) and clear terms (94.8%). Specific violations documented at 86.2%. Weakest element is timely reporting (62.1%), but this is a procedural matter not essential to proving violation itself.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L985` — "viability_notes": "STRONG VIABILITY. Discovery violation claim well-supported with 84.6% overall satisfaction. All foundational elements strong: valid request (95.3%), proper service (91.9%), relevant discovery (92.9%), non-response (89.0%). Weakest element is prejudice (63.5%), but sufficient to meet threshold. Discovery violations are excellent vehicle for sanctions.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L1256` — "PPO Violation - Perfect order existence (100%), 462 mapped facts, 86.2% specific violation satisfaction",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_DISQ_v03_WITH_EXHIBITS.md:L295` — - Violation: MCR 3.603(A) - prohibition on ex parte communications
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L142` — - Exhibits B-1 through B-5: Ex parte orders granted without notice to opposing party
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L143` — - Violation: MCR 3.603(A) - absolute prohibition on ex parte communications
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md:L36` — 5. Harassment, MCL 750.411h, Repeatedly contacting or communicating with the intention to torment, intimidate, or terrorize another person.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md:L52` — ## SECTION 2: EX PARTE VIOLATIONS (MCR 2.119)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md:L107` — ## SECTION 4: JUDGE ORDER VIOLATIONS (MCR 3.210)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md:L628` — - ✓ Ex parte procedural violations (MCR 2.119) - 85-90% viability
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md:L646` — 5. Begin MCR research on ex parte violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L379` — **Holding:** Trial court may impose sanctions under MCR 2.313 when party fails to comply with discovery and opposing party shows prejudice.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L399` — **Holding:** Trial court's decision on discovery sanctions reviewed for abuse of discretion; sanctions warranted when discovery violations are flagrant and significantly prejudice opposing party.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L522` — - **Contempt proceedings** for willful violation of discovery orders
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L645` — - Discovery violations may be preserved for appeal if sanctions motion filed but denied
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L776` — **Note:** If contempt by opposing party (not judge), may need separate contempt motion.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L822` — **Outcome:** Discovery motion filed; hearing scheduled; pressure on opposing party to comply.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L286` — **Strategic Note:** If PPO violations continue, criminal complaint to prosecutor remains option separate from civil litigation.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L401` — **File Motion B-2 only if opponent continues violations**
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L267` — | **No Contact Order** | MCL 722.27(1)(c) | Domestic violence, threats |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L506` — 1. **PRIMARY RELIEF:** Instruct jury that it may infer documents/information withheld by Respondent support Movant's claims regarding Child Welfare Emergency and Discovery Violations.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/ALLSCANNED_QUICK_REFERENCE.md:L57` — ## ⚖️ EX PARTE VIOLATIONS (MCR 2.119)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/ALLSCANNED_QUICK_REFERENCE.md:L74` — - ❌ No opportunity for hearing (MCR 2.119(C)(5))
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/ALLSCANNED_QUICK_REFERENCE.md:L85` — ## 📋 JUDGE ORDER VIOLATIONS (MCR 3.210)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/EXECUTIVE_SUMMARY.md:L44` — | **B-2** Motion for Sanctions | MCR 2.313(B) | CUSTOM | Punish non-compliance, deter future violations |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/MOTIONS_QUICK_REFERENCE.md:L264` — **"Respondent's pattern of 383 discovery violations demonstrates willful defiance of discovery rules. The Court should impose adverse inference sanction, instructing the jury it may assume non-produced documents support Movant's claims."**
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/QUICK_REFERENCE_NEW_CLAIMS.md:L71` — Motion to compel opposing party to provide discovery and request sanctions for 383 documented discovery violations.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/QUICK_REFERENCE_NEW_CLAIMS.md:L175` — 2. **Evidence Synergy:** Discovery violations motion may uncover evidence supporting emergency jurisdiction
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_DECISION_TREE_STRUCTURE.md:L152` — - ✓ Opposing party in violation of court order OR discovery rules
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L150` — - Notice proposed to opposing party (MCR 3.204)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L306` — 4. NOTICE: The Clerk shall immediately provide notice of this Order to Emily Watson at <<UNRESOLVED:ADDRESS>> by [certified mail/personal service].
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/2026-02-10_FORM_COMPLETION_GUIDE.md:L3` — **Purpose:** Emergency Custody Motions, Discovery Violation Motions, and Supporting Documents
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L35` — to show cause why they should not be held in contempt for failure to comply with the court’ s order. If the named party
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc30.pdf:L58` — I request a hearing on the matter of the registration of a support order for the following reason(s).  (Check all that apply.)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc30.pdf:L78` — I served a copy of this Notice of Registration of Out-of-State or Foreign Support Order (UIFSA) and any attachments on
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc30.pdf:L86` — I acknowledge that I have received service of the Notice of Registration of Out-of-State or Foreign Support Order (UIFSA),
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc4.pdf:L28` — court determines that the payer owes an arrearage under the support order that is the basis of the contempt proceeding
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/FORMS_INVENTORY.md:L58` — | **MC 229** | **Motion/Affidavit for Discovery** | **Enforce discovery compliance** | **Motion for discovery violations (B-1 to B-3)** |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc56.pdf:L31` — 3. Payer     was    was not  served with    an order to show cause/adjournment notice   a bench warrant
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc56.pdf:L53` — Referee Findings and Rec. for Order After Hrg. on Bench Warrant/Show Cause (Support) (3/21)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc58.pdf:L43` — b. violation of the parenting-time order  second or subsequent finding of contempt.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/05_LITOS_ENHANCED/INTEGRATION_COMPLETE_SUMMARY.md:L221` — - Discovery violations motion may uncover evidence supporting emergency jurisdiction
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/05_LITOS_ENHANCED/README.md:L205` — 6. Motion for Sanctions - Discovery Violations - MCR 2.313(B)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L227` — ✓ Certified PPO with proof of service (462 violations documented)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L85` — #### 3. **Protective Order (PPO) Violations**
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L140` — | **Contempt** | 286 | 9.8% | Order violations, non-compliance, disobedience |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/README_CASE_FACTS_EXTRACTION.md:L175` — - **Contempt Elements (5):** Valid order, knowledge, ability, willful violation, clear/convincing proof
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/README_LEGAL_ELEMENTS_MAPPING.md:L226` — - File contempt motion (84.5% support)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_analysis_detailed.txt:L120` — 4. PROTECTIVE ORDER (PPO) VIOLATIONS - MODERATE FACTUAL SUPPORT
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L191` — "rule": "Protective Order Violation (MCL 600.2950)"
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L712` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L717` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L722` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L727` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L1186` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L1196` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L1206` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L1216` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L1560` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L1570` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L1580` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/case_facts_categorized.json:L1590` — "Line": "- PPO Track — 2023-5907-PP (Judge McNeill). Multiple Show Cause hearings in 2024–2025.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/legal_elements_mapping.json:L419` — "viability_notes": "STRONG VIABILITY. All six elements substantially satisfied with overall satisfaction of 85%. Perfect satisfaction for order existence (100%), excellent satisfaction for notice (95.5%) and clear terms (94.8%). Specific violations documented at 86.2%. Weakest element is timely reporting (62.1%), but this is a procedural matter not essential to proving violation itself.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/legal_elements_mapping.json:L985` — "viability_notes": "STRONG VIABILITY. Discovery violation claim well-supported with 84.6% overall satisfaction. All foundational elements strong: valid request (95.3%), proper service (91.9%), relevant discovery (92.9%), non-response (89.0%). Weakest element is prejudice (63.5%), but sufficient to meet threshold. Discovery violations are excellent vehicle for sanctions.",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/07_METRICS/legal_elements_mapping.json:L1256` — "PPO Violation - Perfect order existence (100%), 462 mapped facts, 86.2% specific violation satisfaction",
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/integrate_phase2_4_discoveries.ps1:L159` — Forms = @("FOC 10", "Affidavit of Violations", "Brief in Support");
+- `staging/LITIGATION_OSvariousparts/APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md:L110` — [No equivalent show cause motions granted against Emily despite documented violations]
+- `staging/LITIGATION_OSvariousparts/APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md:L412` — **Violation: Show Cause Without Hearing**
+- `staging/LITIGATION_OSvariousparts/APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md:L729` — | 2023-12-04 | PPO issued ex parte | Immediate separation from home | MCR 3.207(C) |
+- `staging/LITIGATION_OSvariousparts/Branch · LitigationOS Glossary Blueprint.pdf:L63` — Examples: FILED_IN, SERVED_ON, ISSUED_BY, HEARD_ON, MODIFIES, VACATES, SUPPORTS, QUOTES, AUTHORIZED_BY, VIOLATES, COMPUTED_FROM .
+- `staging/LITIGATION_OSvariousparts/CAPSTONE_INVENTORY.md:L151` — - PPO (Personal Protection Order) filings
+- `staging/LITIGATION_OSvariousparts/COA_APPLICATION_LEAVE_BRIEF_PIGORS_v_WATSON_20260209.md:L214` — > "A motion must be verified or supported by affidavit..."
+- `staging/LITIGATION_OSvariousparts/COA_APPLICATION_LEAVE_BRIEF_PIGORS_v_WATSON_20260209.md:L325` — - Violated PPO by calling Appellant repeatedly (PPO ordered no contact)
+- `staging/LITIGATION_OSvariousparts/COA_APPLICATION_LEAVE_BRIEF_PIGORS_v_WATSON_20260209.md:L336` — - Contempt threats and show cause order
+- `staging/LITIGATION_OSvariousparts/COA_APPLICATION_LEAVE_BRIEF_PIGORS_v_WATSON_20260209.md:L390` — - Appellant has been unable to file contempt motions against Appellee (allowing her violations to continue)
+- `staging/LITIGATION_OSvariousparts/COA_APPLICATION_LEAVE_BRIEF_PIGORS_v_WATSON_20260209.md:L413` — 6. **VACATE all sanctions** imposed on Appellant (contempt threats, show cause orders);
+- `staging/LITIGATION_OSvariousparts/COMPLETE_FILING_PACKAGE_SUMMARY_20260209.md:L56` — - Systemic MCR 3.207/3.310 violations (156+ orders)
+- `staging/LITIGATION_OSvariousparts/EXHIBIT_COVER_SHEETS_MRE_CERTIFIED_20260209.md:L13` — **TITLE**: Personal Protection Order (PPO) Petition - Arsenic Allegation
+- `staging/LITIGATION_OSvariousparts/EXHIBIT_COVER_SHEETS_MRE_CERTIFIED_20260209.md:L69` — I, Andrew J. Pigors, certify that the attached document is a true and accurate copy of the Personal Protection Order petition filed by Emily A. Watson in Case No. 2023-005907-PP, Muskegon County 14th Judicial Circuit Court, on December 4, 2023. This document was obtained from the official court file.
+- `staging/LITIGATION_OSvariousparts/EXHIBIT_COVER_SHEETS_MRE_CERTIFIED_20260209.md:L107` — - 82% lack service/notice language (MCR 2.107 violation)
+- `staging/LITIGATION_OSvariousparts/EXHIBIT_COVER_SHEETS_MRE_CERTIFIED_20260209.md:L110` — - 71% lack duration/hearing scheduling (MCR 3.207(C)(5) violation)
+- `staging/LITIGATION_OSvariousparts/LitigationOS Glossary Blueprint.pdf:L75` — Judicial crosswire: “Motion FILED_IN Case,” “Order ISSUED_BY Court,” “Exhibit SUPPORTS Motion.”
+- `staging/LITIGATION_OSvariousparts/LitigationOS Glossary.pdf:L63` — Examples: FILED_IN, SERVED_ON, ISSUED_BY, HEARD_ON, MODIFIES, VACATES, SUPPORTS, QUOTES, AUTHORIZED_BY, VIOLATES, COMPUTED_FROM .
+- `staging/LITIGATION_OSvariousparts/MSC_ORIGINAL_ACTION_SUPERINTENDING_CONTROL_PIGORS_20260209.md:L52` — 1. **Writ of Superintending Control** under MCR 7.304(A)(1) to correct systemic constitutional violations by the lower court;
+- `staging/LITIGATION_OSvariousparts/MSC_ORIGINAL_ACTION_SUPERINTENDING_CONTROL_PIGORS_20260209.md:L133` — - 71% lack hearing scheduling (MCR 3.207(C)(5) violation)
+- `staging/LITIGATION_OSvariousparts/MSC_ORIGINAL_ACTION_SUPERINTENDING_CONTROL_PIGORS_20260209.md:L159` — ### Ground 1: Systemic Violation of MCR 3.207/3.310 (Ex Parte Procedures)
+- `staging/LITIGATION_OSvariousparts/MSC_ORIGINAL_ACTION_SUPERINTENDING_CONTROL_PIGORS_20260209.md:L316` — 2. **Ongoing Violations**: Defendant continues issuing defective ex parte orders **while appeal pending**. Only superintending control can **stop the pattern**.
+- `staging/LITIGATION_OSvariousparts/analyze_false_statements.ps1:L208` — - **Contempt** (violations of court orders)
+- `staging/LITIGATION_OSvariousparts/analyze_false_statements.ps1:L352` — - **Motion for Summary Disposition** - Claims lacking factual support (MCR 2.116(C)(10))
+- `staging/LITIGATION_OSvariousparts/enhance_with_ollama_evidence.ps1:L112` — - Violation: MCR 3.603(A) - prohibition on ex parte communications
+- `staging/LITIGATION_OSvariousparts/enhance_with_ollama_evidence.ps1:L208` — - Exhibits B-1 through B-5: Ex parte orders granted without notice to opposing party
+- `staging/LITIGATION_OSvariousparts/enhance_with_ollama_evidence.ps1:L209` — - Violation: MCR 3.603(A) - absolute prohibition on ex parte communications
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_COA_APPENDIX_v02_ENHANCED.txt:L20` — discovery violations and failure to produce documents as required by MCR 2.302.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_COA_APPENDIX_v02_ENHANCED.txt:L306` — egregious discovery violations warranting case-dispositive relief under MCR 2.313.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_COA_APPENDIX_v02_ENHANCED.txt:L419` — impose appropriate sanctions under MCR 2.313 for discovery violations.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_COA_ENHANCEMENT_REPORT.md:L374` — - Holdings: Each MCL 722.23 factor must be evaluated separately with record support
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_DISQ_ENHANCEMENT_REPORT.md:L137` — support for each argument, grounded in Michigan precedent and MCR 2.003 standards.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_ENHANCEMENT_REPORT.md:L243` — - **Procedural Violations**: 256 supporting facts
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_ENHANCEMENT_REPORT.md:L252` — **Supporting Facts:** 383 documented violations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_FINAL_SUMMARY.md:L169` — 5. Discovery Violations (MCR 2.302, 2.313) - NEW
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_FINAL_SUMMARY.md:L357` — ✅ **Multiple Violation Types:** 7 distinct categories with case support
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_FINAL_SUMMARY.md:L485` — - New discovery violations section with 383 supporting facts
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_INTEGRATION_GUIDE.md:L439` — - [ ] All violations supported by case law
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/PROJECT_SUMMARY_FINAL.md:L12` — Successfully enhanced the Disqualification Motion using Ollama Mistral AI to analyze legal arguments, add authoritative citations, and integrate evidence from the case record. The enhanced document now includes comprehensive legal support grounded in Michigan Court Rules and case law.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/PROJECT_SUMMARY_FINAL.md:L307` — The AI-enhanced Disqualification Motion now provides **robust legal support** grounded in Michigan Court Rules and Supreme Court precedent. The addition of 31 targeted citations and 30 specific evidence references substantially strengthens the motion's persuasiveness.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L42` — 2. **PPO Violation (85%)** - Covered by JTC Complaint allegations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L360` — - Communication records relevant to PPO violations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L401` — **Application:** 383 documented violations may support significant sanctions if properly presented.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L504` — Based on 383 documented violations and MCR 2.313(B), the following sanctions can be requested:
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L565` — - **Day 14:** Opposing party's response brief due (MCR 2.119)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L621` — 4. **Precedent:** Establishes pattern of non-compliance supporting contempt claims
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L641` — - Discovery violations by opposing party show pattern of litigation abuse
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L651` — Based on 383 supporting facts, the following categories of violations are documented:
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L676` — - Communications (text messages, emails) relevant to PPO violations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L780` — ### PPO Violation (85% satisfaction)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L785` — - PPO violation evidence supports other claims (child welfare, discovery)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L968` — - Show pattern of violations (383 facts support pattern)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L1138` — - [ ] Attend discovery violations motion hearing
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L22` — | **Total Supporting Facts** | 686 | 303 emergency + 383 discovery violations |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L30` — 3. ✅ **Opponent Accountability** (sanctions for violations)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L250` — - **Total Motions:** 3 (filed sequentially based on opponent response)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L275` — ### 2.2 PPO VIOLATION (85%)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L281` — - JTC complaint documents opponent's ethical violations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L282` — - PPO violations included in misconduct allegations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L554` — - Pattern of rule violations supports disqualification basis
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L565` — - Discovery violations provide new evidence of opponent misconduct
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L573` — - Sanctions findings support ethics violations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L580` — - Discovery violations may support interlocutory appeal
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L665` — ❌ No sanctions → opponent continues violations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L671` — - Criminal complaint for continued PPO violations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L937` — - Supporting facts: 383 violations documented
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L962` — After emergency motions filed, pursue discovery violations (Claim B) within 14-30 days.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L179` — ## MOTION A-3: UCCJEA AFFIDAVIT (MANDATORY SUPPORTING DOCUMENT)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L299` — - **MCR 2.313(B)** - Sanctionable Violations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L308` — - Can support summary judgment motion later
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L448` — | **Monetary** | Low-Medium | First violation/negligent | MCR 2.313(B)(1) |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L450` — | **Evidence Exclusion** | High | Willful violation | MCR 2.313(B)(3) |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L803` — ├─ Motion A-3: UCCJEA Affidavit (supporting doc)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L1030` — - **JTC complaint:** Documents pattern of rule violations (supports discovery violations)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/ANALYSIS_SUMMARY.txt:L67` — PPO Violation (85%)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/MOTIONS_QUICK_REFERENCE.md:L236` — | **Adverse Inference** | Medium | Jury assumes documents support your case | MCR 2.313(B)(2) |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/QUICK_REFERENCE_NEW_CLAIMS.md:L122` — ### PPO Violation (85%)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/02_NEW_FILINGS/WATSON_CASE_MOTIONS_INDEX.md:L18` — - **Supporting Facts:** 383 documented violations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_DECISION_TREE_STRUCTURE.md:L505` — - Criminal contempt referral
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L692` — - Opposing party also receives notice (if served)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L931` — - [ ] Document any violations by opposing party
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1116` — - [ ] Document any violations by opposing party
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1557` — 3. Defendant's responses shall be verified and complete. Objections must be substantiated with specific legal basis and supporting argument.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1803` — AFFIDAVIT IN SUPPORT OF SUPPLEMENTAL DISQUALIFICATION MOTION
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1978` — - Step 4: Prepare chart/table of violations (date, violation, MCR/Constitutional provision, remedy)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1994` — - MCR violations (cite each specific rule violated)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L2505` — **Filed AFTER motion to compel granted and opposing party still fails to comply.**
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/2026-02-10_FORM_COMPLETION_GUIDE.md:L206` — ### MC 229 - Motion/Affidavit for Discovery Violation
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc10.pdf:L173` — may also file a motion to modify this support order
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc10.pdf:L179` — order. Past-due amounts owed under any prior support order in this case are preserved and paid at the rate
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L3` — COUNTYMOTION AND ORDER TO SHOW CAUSE
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L4` — FOR CONTEMPT (SUPPORT)CASE NO. and JUDGE
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc30.pdf:L38` — 5. A copy of the registered support order and other related documents are attached to this notice.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc30.pdf:L52` — Notice of Registration of Out-of-State or Foreign Support Order (UIFSA) (3/23)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc30.pdf:L75` — Notice of Registration of Out-of-State or Foreign Support Order (UIFSA) (3/23)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc4.pdf:L20` — of the payer’s support obligation. The payer shall appear for hearing at a date noticed to the payer by the court at the
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc81.pdf:L32` — schedule, was given notice and an opportunity for a hearing, and failed to respond.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc82.pdf:L63` — it will be consolidated with a hearing on a motion to modify support.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc88.pdf:L40` — support as follows: If b is checked, explain in detail why and what you want the court to order. Use a separate sheet of paper if needed
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/README.md:L105` — 1. **MC 229** - Motion/Affidavit for Discovery Violation
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc51.pdf:L21` — b.I do not agree with what is being asked for in the motion and ask the court to order that support be paid as follows:
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc56.pdf:L6` — SHOW CAUSE (SUPPORT)CASE NO. and JUDGE
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc56.pdf:L25` — 2.  a. Payer was served with the support order.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc57.pdf:L22` — a bench warrant    an order to show cause/adjournment notice   personally.   by mail.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_INDEX.md:L18` — | 4 | **Discovery Violations** (MCR 2.313) | **84.6%** | 383 | ✅ SECONDARY |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_INDEX.md:L61` — ### PPO VIOLATION (462 facts)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_INDEX.md:L171` — - PPO contact violations: 152 facts
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_INDEX.md:L184` — ### COUNT II: PPO VIOLATION
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_INDEX.md:L354` — - PPO_004: Specific violation (86.2%)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_INDEX.md:L377` — 2. File PPO violation enforcement
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_INDEX.md:L400` — | PPO Violation | 85.0% | 80-90% | High |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L20` — | **PPO Violation** | **85.0%** | ✅ YES | **HIGH** |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L55` — - **PPO Violations**: 152 facts documented
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L86` — ✅ PPO_004: Specific violation            86.2%  (398/462 facts)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L197` — | **2. Provide care & support** | MCL 722.23(c)(1)(b) | **84.8%** ✅ | Strong |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L254` — ### 5. DISCOVERY VIOLATIONS (MCR 2.313)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L438` — ✅ PPO Violation                  85.0%   → PRIMARY CLAIM
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L499` — **COUNT II: PPO VIOLATION**
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L532` — ### Contempt/PPO Claims - Risks:
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L533` — 1. **Intent element weakness (71.2% PPO, 70.3% contempt)**
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L556` — - Mitigation: Use to support contempt/bias allegations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L571` — PPO Violations:          462 facts (7.2%)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L604` — 2. **File PPO Violation Enforcement** (highest viability - 85.0%)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L638` — - **Contempt/PPO:** 80-90% success rate with this evidence base
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L652` — - **MCL 400.2950** et seq. - Domestic Relations Protection Act (PPO)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L657` — - **MCR 2.313** - Discovery Violations and Sanctions
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/LEGAL_ELEMENTS_MAPPING_ANALYSIS.md:L672` — - *PPO violations must show knowledge and intentionality*
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L57` — 6. Discovery Violations (MCR 2.313)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L63` — - PPO Violation: 6 elements
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L75` — • PPO Violations: 462 facts (7.2%)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L91` — ✅ PPO VIOLATION (85.0%)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L153` — • Specific PPO violation: 86.2%
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L165` — • Timely reporting of PPO violation: 62.1%
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L185` — 2. File PPO violation enforcement petition (462 facts)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L201` — COUNT II: PPO Violation (85.0% - PRIMARY)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L202` — Elements: Valid PPO, service, terms, violations, knowledge
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L260` — PPO VIOLATION:              80-90% success rate (85.0% satisfaction)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L268` — element satisfaction, supported by 1,434 facts across contempt, PPO, child
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L285` — ✓ MCR 2.313 - Discovery Violations and Sanctions
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L309` — 2. PPO documentation perfect (100%) - clear violation evidence
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L316` — 2. Contempt and PPO claims support immediate enforcement
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L323` — 2. Reporting gaps in PPO violations (62%) → file police reports
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/MAPPING_COMPLETION_REPORT.txt:L343` — • PPO Violation Enforcement
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_LEGAL_ELEMENTS_MAPPING.md:L151` — | **Discovery Violations** (MCR 2.313) | **84.6%** | 383 | ✅ SECONDARY |
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_LEGAL_ELEMENTS_MAPPING.md:L172` — 2. **Review:** Contempt and PPO sections in ANALYSIS.md (30 min)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_LEGAL_ELEMENTS_MAPPING.md:L208` — - Timely reporting of PPO violations (62.1%) - document with police
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_LEGAL_ELEMENTS_MAPPING.md:L212` — 2. **PPO Violation** (85.0%) - 462 documented violations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_LEGAL_ELEMENTS_MAPPING.md:L227` — - File PPO violation enforcement (85.0% support)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/README_LEGAL_ELEMENTS_MAPPING.md:L278` — - MCR 2.313 - Discovery Violations and Sanctions
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_analysis_detailed.txt:L33` — 3. PPO Violations: 462 facts (15.9%)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_analysis_detailed.txt:L101` — 3. CONTEMPT OF COURT - MODERATE FACTUAL SUPPORT
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_analysis_detailed.txt:L133` — PPO violations documented regarding:
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_analysis_detailed.txt:L164` — 6. DISCOVERY VIOLATIONS - MODERATE FACTUAL SUPPORT
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_analysis_detailed.txt:L224` — Category: PPO Violations (462 facts)
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L76` — "ppo_violations": {
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L129` — "ppo_violations": 462,
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L178` — "ppo_violation_elements": {
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L280` — "Line": "F,PPO Order,,1,37,37,\"Substance Abuse: Cody has a history of substance abuse, yet he remains an active figure in LDW’s | daily life. Exposure to such behavior increases LDW’s risk of har",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L285` — "Line": "F,PPO Order,,1,37,37,\"Substance Abuse: Cody has a history of substance abuse, yet he remains an active figure in LDW’s | daily life. Exposure to such behavior increases LDW’s risk of har",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L290` — "Line": "F,PPO Order,,1,37,37,\"Substance Abuse: Cody has a history of substance abuse, yet he remains an active figure in LDW’s | daily life. Exposure to such behavior increases LDW’s risk of har",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L335` — "Line": "accusations, and violations of the best interests of the child standard under MCL 722.23.",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L509` — "ppo_violations": [
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L537` — "Line": "A,PPO Order,,1,5,5,\"Exhibit_N_NoReply_Index_2025-10-29 | EXHIBIT N — INDEX OF \"\"NoReply\"\" COURT PDFs (To Be Attached) | Date: 2025-10-29\"",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L547` — "Line": "C,PPO Order,10/27/2025,18,11,28,FILED  10/27/2025 | 14th CIRCUIT  COURT | MUSKECON  COUNTY",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L557` — "Line": "E,PPO Order,,1,35,35,\"Blocking Communication: Emily has routinely refused to facilitate video chats or phone calls between | me and LDW, undermining our bond. Her knowledge of the psychological impact of such actions makes\"",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L562` — "Line": "F,PPO Order,,1,37,37,\"Substance Abuse: Cody has a history of substance abuse, yet he remains an active figure in LDW’s | daily life. Exposure to such behavior increases LDW’s risk of har",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L572` — "Line": "A,PPO Order,,1,5,5,\"Exhibit_N_NoReply_Index_2025-10-29 | EXHIBIT N — INDEX OF \"\"NoReply\"\" COURT PDFs (To Be Attached) | Date: 2025-10-29\"",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L582` — "Line": "C,PPO Order,10/27/2025,18,11,28,FILED  10/27/2025 | 14th CIRCUIT  COURT | MUSKECON  COUNTY",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L592` — "Line": "E,PPO Order,,1,35,35,\"Blocking Communication: Emily has routinely refused to facilitate video chats or phone calls between | me and LDW, undermining our bond. Her knowledge of the psychological impact of such actions makes\"",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L597` — "Line": "F,PPO Order,,1,37,37,\"Substance Abuse: Cody has a history of substance abuse, yet he remains an active figure in LDW’s | daily life. Exposure to such behavior increases LDW’s risk of har",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L607` — "Line": "A,PPO Order,,1,5,5,\"Exhibit_N_NoReply_Index_2025-10-29 | EXHIBIT N — INDEX OF \"\"NoReply\"\" COURT PDFs (To Be Attached) | Date: 2025-10-29\"",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L617` — "Line": "C,PPO Order,10/27/2025,18,11,28,FILED  10/27/2025 | 14th CIRCUIT  COURT | MUSKECON  COUNTY",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L627` — "Line": "E,PPO Order,,1,35,35,\"Blocking Communication: Emily has routinely refused to facilitate video chats or phone calls between | me and LDW, undermining our bond. Her knowledge of the psychological impact of such actions makes\"",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L632` — "Line": "F,PPO Order,,1,37,37,\"Substance Abuse: Cody has a history of substance abuse, yet he remains an active figure in LDW’s | daily life. Exposure to such behavior increases LDW’s risk of har",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L1650` — "Line": "P-3,Muskegon PD Report MU2422249 – 'No PPO violation',2024-11-15,Exculpatory; due process,Muskegon PD",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L138` — "viability_notes": "Substantial factual support exceeds 80% threshold for objective bias standard (JD_005). Strongest claims involve ex parte communications (27.9%) and personal bias indicators (33.5%). Weakest elements are financial interest (8.1%) and kinship (5.6%).",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L220` — "PPO violations": {
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L276` — "ppo_violation": {
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L427` — "PPO violation claim is highly viable - strong factual support across all elements",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L845` — "discovery_violations_mcr_2_313": {
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L994` — "Discovery violations are viable - strong foundational support",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L1187` — "claim": "PPO Violation",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L1205` — "claim": "Discovery Violations (MCR 2.313)",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/legal_elements_mapping.json:L1261` — "Combine with PPO violations for cumulative sanctions",
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/enhance_coa_direct.js:L45` — discovery violations and failure to produce documents as required by MCR 2.302.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/enhance_coa_direct.js:L341` — egregious discovery violations warranting case-dispositive relief under MCR 2.313.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/enhance_coa_direct.js:L458` — impose appropriate sanctions under MCR 2.313 for discovery violations.
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/enhance_coa_filing.js:L90` — 'ppo_violations': [
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/enhance_coa_filing.js:L353` — recommended_citations: COA_PRECEDENTS.ppo_violations.slice(0, 3).map(cite => ({
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/enhance_coa_filing.js:L469` — ✓ MCR 7.204(A)(3): Statement of facts - Supported by record citations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/enhance_coa_filing.js:L575` — ✅ **MCR 7.204(A)(3)** - Statement of facts: Supported by record citations
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/enhance_jtc_complaint.ps1:L276` — $report += "**New Section Added:** Discovery Violations (MCR 2.302, 2.313)`n"
+- `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/enhance_jtc_v2.ps1:L244` — $report += "**Supporting Facts:** 383 documented violations`n"
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/00_EXECUTIVE_SUMMARY.md:L522` — *This Executive Summary synthesizes 22 days of comprehensive legal analysis into actionable strategic guidance. All supporting documentation is organized, verified, and readily accessible in the LEGAL_ANALYSIS_OUTPUT directory.*
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/00_PROJECT_COMPLETE.txt:L162` — - Supporting: 383 documented violations (83.7% viability)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/00_START_HERE_v03.md:L52` — - **JTC (B):** 14 ex parte motions → violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_COA_APPENDIX_v02_ENHANCED.txt:L20` — discovery violations and failure to produce documents as required by MCR 2.302.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_COA_APPENDIX_v02_ENHANCED.txt:L306` — egregious discovery violations warranting case-dispositive relief under MCR 2.313.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_COA_APPENDIX_v02_ENHANCED.txt:L419` — impose appropriate sanctions under MCR 2.313 for discovery violations.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_COA_ENHANCEMENT_REPORT.md:L374` — - Holdings: Each MCL 722.23 factor must be evaluated separately with record support
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_COA_v03_WITH_EXHIBITS.md:L37` — discovery violations and failure to produce documents as required by MCR 2.302.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_COA_v03_WITH_EXHIBITS.md:L323` — egregious discovery violations warranting case-dispositive relief under MCR 2.313.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_COA_v03_WITH_EXHIBITS.md:L436` — impose appropriate sanctions under MCR 2.313 for discovery violations.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_DISQ_ENHANCEMENT_REPORT.md:L137` — support for each argument, grounded in Michigan precedent and MCR 2.003 standards.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_ENHANCEMENT_REPORT.md:L243` — - **Procedural Violations**: 256 supporting facts
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_ENHANCEMENT_REPORT.md:L252` — **Supporting Facts:** 383 documented violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_FINAL_SUMMARY.md:L169` — 5. Discovery Violations (MCR 2.302, 2.313) - NEW
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_FINAL_SUMMARY.md:L357` — ✅ **Multiple Violation Types:** 7 distinct categories with case support
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_FINAL_SUMMARY.md:L485` — - New discovery violations section with 383 supporting facts
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_INTEGRATION_GUIDE.md:L439` — - [ ] All violations supported by case law
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L51` — **EXHIBIT B: EX PARTE MOTION VIOLATIONS**
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_JTC_v03_WITH_EXHIBITS.md:L139` — Using Ollama mistral analysis of ex parte motions, the following violations emerge:
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_PROJECT_SUMMARY_v03_COMPLETE.md:L36` — - Supports objective appearance test under MCR 2.003(C)(1)(b)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/PROJECT_SUMMARY_FINAL.md:L12` — Successfully enhanced the Disqualification Motion using Ollama Mistral AI to analyze legal arguments, add authoritative citations, and integrate evidence from the case record. The enhanced document now includes comprehensive legal support grounded in Michigan Court Rules and case law.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/01_ENHANCED_FILINGS/PROJECT_SUMMARY_FINAL.md:L307` — The AI-enhanced Disqualification Motion now provides **robust legal support** grounded in Michigan Court Rules and Supreme Court precedent. The addition of 31 targeted citations and 30 specific evidence references substantially strengthens the motion's persuasiveness.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md:L235` — - **Analysis Priority:** MCR 2.119 violations, due process failures
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md:L296` — - **Legal Basis:** MCR 2.119(F)(3), due process violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_ALLSCANNED_DISCOVERIES.md:L429` — - Right to counsel (quasi-criminal contempt)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L42` — 2. **PPO Violation (85%)** - Covered by JTC Complaint allegations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L360` — - Communication records relevant to PPO violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L401` — **Application:** 383 documented violations may support significant sanctions if properly presented.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L504` — Based on 383 documented violations and MCR 2.313(B), the following sanctions can be requested:
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L565` — - **Day 14:** Opposing party's response brief due (MCR 2.119)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L621` — 4. **Precedent:** Establishes pattern of non-compliance supporting contempt claims
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L641` — - Discovery violations by opposing party show pattern of litigation abuse
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L651` — Based on 383 supporting facts, the following categories of violations are documented:
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L676` — - Communications (text messages, emails) relevant to PPO violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L780` — ### PPO Violation (85% satisfaction)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L785` — - PPO violation evidence supports other claims (child welfare, discovery)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L968` — - Show pattern of violations (383 facts support pattern)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md:L1138` — - [ ] Attend discovery violations motion hearing
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L22` — | **Total Supporting Facts** | 686 | 303 emergency + 383 discovery violations |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L30` — 3. ✅ **Opponent Accountability** (sanctions for violations)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L250` — - **Total Motions:** 3 (filed sequentially based on opponent response)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L275` — ### 2.2 PPO VIOLATION (85%)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L281` — - JTC complaint documents opponent's ethical violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L282` — - PPO violations included in misconduct allegations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L554` — - Pattern of rule violations supports disqualification basis
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L565` — - Discovery violations provide new evidence of opponent misconduct
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L573` — - Sanctions findings support ethics violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L580` — - Discovery violations may support interlocutory appeal
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L665` — ❌ No sanctions → opponent continues violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L671` — - Criminal complaint for continued PPO violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L937` — - Supporting facts: 383 violations documented
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_GAP_ANALYSIS_COMPREHENSIVE.md:L962` — After emergency motions filed, pursue discovery violations (Claim B) within 14-30 days.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L179` — ## MOTION A-3: UCCJEA AFFIDAVIT (MANDATORY SUPPORTING DOCUMENT)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L299` — - **MCR 2.313(B)** - Sanctionable Violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L308` — - Can support summary judgment motion later
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L448` — | **Monetary** | Low-Medium | First violation/negligent | MCR 2.313(B)(1) |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L450` — | **Evidence Exclusion** | High | Willful violation | MCR 2.313(B)(3) |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L803` — ├─ Motion A-3: UCCJEA Affidavit (supporting doc)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_VIABLE_MOTIONS.md:L1030` — - **JTC complaint:** Documents pattern of rule violations (supports discovery violations)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/ALLSCANNED_QUICK_REFERENCE.md:L50` — ### 5. **Harassment** (MCL 750.411h)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/ALLSCANNED_QUICK_REFERENCE.md:L77` — - ❌ Improper service (MCR 2.603 violations)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/ALLSCANNED_QUICK_REFERENCE.md:L293` — - [ ] Verify ex parte violation patterns in sample orders
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/ANALYSIS_SUMMARY.txt:L67` — PPO Violation (85%)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/MOTIONS_QUICK_REFERENCE.md:L236` — | **Adverse Inference** | Medium | Jury assumes documents support your case | MCR 2.313(B)(2) |
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/QUICK_REFERENCE_NEW_CLAIMS.md:L122` — ### PPO Violation (85%)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/WATSON_CASE_MOTIONS_INDEX.md:L18` — - **Supporting Facts:** 383 documented violations
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_DECISION_TREE_STRUCTURE.md:L505` — - Criminal contempt referral
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L692` — - Opposing party also receives notice (if served)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L931` — - [ ] Document any violations by opposing party
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1116` — - [ ] Document any violations by opposing party
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1557` — 3. Defendant's responses shall be verified and complete. Objections must be substantiated with specific legal basis and supporting argument.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1803` — AFFIDAVIT IN SUPPORT OF SUPPLEMENTAL DISQUALIFICATION MOTION
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1978` — - Step 4: Prepare chart/table of violations (date, violation, MCR/Constitutional provision, remedy)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1994` — - MCR violations (cite each specific rule violated)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L2505` — **Filed AFTER motion to compel granted and opposing party still fails to comply.**
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_MASTER_FILING_DECISION_TREE.md:L439` — - Procedural violations (MCR breaches)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/03_DECISION_TREES/2026-02-10_MASTER_FILING_DECISION_TREE.md:L1184` — - [ ] Organize evidence supporting each violation
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/2026-02-10_FORM_COMPLETION_GUIDE.md:L206` — ### MC 229 - Motion/Affidavit for Discovery Violation
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc10.pdf:L173` — may also file a motion to modify this support order
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc10.pdf:L179` — order. Past-due amounts owed under any prior support order in this case are preserved and paid at the rate
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L3` — COUNTYMOTION AND ORDER TO SHOW CAUSE
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc2.pdf:L4` — FOR CONTEMPT (SUPPORT)CASE NO. and JUDGE
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc30.pdf:L38` — 5. A copy of the registered support order and other related documents are attached to this notice.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc30.pdf:L52` — Notice of Registration of Out-of-State or Foreign Support Order (UIFSA) (3/23)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc30.pdf:L75` — Notice of Registration of Out-of-State or Foreign Support Order (UIFSA) (3/23)
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc4.pdf:L20` — of the payer’s support obligation. The payer shall appear for hearing at a date noticed to the payer by the court at the
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc81.pdf:L32` — schedule, was given notice and an opportunity for a hearing, and failed to respond.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc82.pdf:L63` — it will be consolidated with a hearing on a motion to modify support.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/EMERGENCY_CUSTODY/foc88.pdf:L40` — support as follows: If b is checked, explain in detail why and what you want the court to order. Use a separate sheet of paper if needed
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/README.md:L105` — 1. **MC 229** - Motion/Affidavit for Discovery Violation
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc51.pdf:L21` — b.I do not agree with what is being asked for in the motion and ask the court to order that support be paid as follows:
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc56.pdf:L6` — SHOW CAUSE (SUPPORT)CASE NO. and JUDGE
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc56.pdf:L25` — 2.  a. Payer was served with the support order.
+- `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc57.pdf:L22` — a bench warrant    an order to show cause/adjournment notice   personally.   by mail.

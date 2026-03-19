@@ -1,0 +1,35 @@
+2026-03-04 22:41:46,965 [INFO] ======================================================================
+2026-03-04 22:41:46,965 [INFO] FILING PRODUCTION PIPELINE v1.0
+2026-03-04 22:41:46,966 [INFO] Stack: 06_FILINGS
+2026-03-04 22:41:46,966 [INFO] Path:  C:\Users\andre\LitigationOS\06_FILINGS
+2026-03-04 22:41:46,966 [INFO] Court: General Filings
+2026-03-04 22:41:46,966 [INFO] ======================================================================
+2026-03-04 22:41:46,966 [INFO] --- STEP 1: INTAKE ---
+2026-03-04 22:41:46,982 [INFO]   Intake complete: 26 docs, 0 evidence files
+2026-03-04 22:41:46,982 [INFO] --- STEP 2: PLACEHOLDER_CHECK ---
+2026-03-04 22:41:46,982 [INFO]   Loaded 45 known placeholder values
+2026-03-04 22:41:47,172 [INFO]   18 unresolved placeholders found
+2026-03-04 22:41:47,172 [INFO] --- STEP 3: AUTHORITY_CHECK ---
+2026-03-04 22:41:47,252 [INFO]   Authority check passed: 454 citations verified
+2026-03-04 22:41:47,264 [INFO] --- STEP 4: EVIDENCE_CHECK ---
+2026-03-04 22:41:47,811 [INFO]   Evidence check passed: 10 refs, 0 files
+2026-03-04 22:41:47,847 [INFO] --- STEP 5: COMPLIANCE_CHECK ---
+2026-03-04 22:41:47,847 [INFO]   Compliance passed for 0 documents
+2026-03-04 22:41:47,847 [INFO] --- STEP 6: QA_GATE (GO/NO-GO Decision) ---
+2026-03-04 22:41:47,847 [INFO]   QA Gate verdict: GO (P:4 W:1 F:0)
+2026-03-04 22:41:47,847 [INFO] --- STEP 7: PDF_GENERATION ---
+2026-03-04 22:41:47,864 [INFO]   PDF generation: 12 documents prepared
+2026-03-04 22:41:47,864 [INFO] --- STEP 8: EXHIBIT_COMPILATION ---
+2026-03-04 22:41:47,883 [INFO]   Exhibit compilation: 0 files, 718 DB entries
+2026-03-04 22:41:47,883 [INFO] --- STEP 9: SERVICE_PACKET ---
+2026-03-04 22:41:47,897 [INFO]   Service packet generated: 226 parties
+2026-03-04 22:41:47,897 [INFO] --- STEP 10: EFILING_PREP ---
+2026-03-04 22:41:47,897 [INFO]   E-filing prep: MiFILE, 12 documents
+2026-03-04 22:41:47,897 [INFO] --- STEP 11: FINAL_REPORT ---
+2026-03-04 22:41:47,910 [INFO]   Final report written to C:\Users\andre\LitigationOS\06_FILINGS\PRODUCTION_OUTPUT
+2026-03-04 22:41:47,910 [INFO] ======================================================================
+2026-03-04 22:41:47,910 [INFO] PIPELINE COMPLETE: 10/11 steps passed
+2026-03-04 22:41:47,910 [INFO] VERDICT: GO
+2026-03-04 22:41:47,910 [INFO] Output: C:\Users\andre\LitigationOS\06_FILINGS\PRODUCTION_OUTPUT
+2026-03-04 22:41:47,910 [INFO] ======================================================================
+2026-03-04 22:41:47,919 [INFO]   Pipeline run logged to DB

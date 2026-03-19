@@ -1,0 +1,211 @@
+[
+  {
+    "packet_template_id": "pkt_trial_reconsideration",
+    "vehicle_id": "m2_trial_motion_reconsideration",
+    "lane": "MEEK2",
+    "court_level": "TRIAL",
+    "outline": [
+      "Caption",
+      "Relief Requested",
+      "Background (record-pinned chronology)",
+      "Standard (authority resolved)",
+      "Argument (rebut adverse findings)",
+      "Requested Relief",
+      "Proposed Order (outline only)",
+      "Exhibit List"
+    ],
+    "exhibit_requirements": [
+      {
+        "exhibit_id": "PX-1",
+        "purpose": "Adverse order language (verbatim excerpts)",
+        "required_sources": [
+          "order_pdf_or_txt"
+        ]
+      },
+      {
+        "exhibit_id": "PX-2",
+        "purpose": "Transcript excerpts supporting rebuttal",
+        "required_sources": [
+          "transcript_txt"
+        ]
+      },
+      {
+        "exhibit_id": "PX-3",
+        "purpose": "Key documentary proof",
+        "required_sources": [
+          "evidence_atoms"
+        ]
+      }
+    ],
+    "required_pins": [
+      "OperatingOrderPin",
+      "AUTHKEY_TRIAL_RECONSIDERATION_RULE"
+    ],
+    "requires_deadline_eval": true
+  },
+  {
+    "packet_template_id": "pkt_m2_pt_enforcement",
+    "vehicle_id": "m2_trial_parenting_time_enforcement_or_makeup",
+    "lane": "MEEK2",
+    "court_level": "TRIAL",
+    "outline": [
+      "Caption",
+      "Relief Requested (make-up time + enforcement)",
+      "Background (order terms + incidents)",
+      "Standard (authority resolved)",
+      "Argument",
+      "Requested Relief",
+      "Proposed Order (outline only)",
+      "Exhibit List"
+    ],
+    "exhibit_requirements": [
+      {
+        "exhibit_id": "PX-1",
+        "purpose": "Operative parenting time order terms",
+        "required_sources": [
+          "operating_order"
+        ]
+      },
+      {
+        "exhibit_id": "PX-2",
+        "purpose": "Withholding incidents",
+        "required_sources": [
+          "messages",
+          "app_logs"
+        ]
+      }
+    ],
+    "required_pins": [
+      "OperatingOrderPin",
+      "AUTHKEY_PARENTING_TIME_ENFORCEMENT"
+    ],
+    "requires_deadline_eval": false
+  },
+  {
+    "packet_template_id": "pkt_m3_contempt_set_aside",
+    "vehicle_id": "m3_trial_contempt_defense_or_set_aside",
+    "lane": "MEEK3",
+    "court_level": "TRIAL",
+    "outline": [
+      "Caption",
+      "Relief Requested",
+      "Background (notice/service/hearing chronology)",
+      "Standard (authority resolved)",
+      "Argument (due process + findings defects)",
+      "Requested Relief",
+      "Proposed Order (outline only)",
+      "Exhibit List"
+    ],
+    "exhibit_requirements": [
+      {
+        "exhibit_id": "PX-1",
+        "purpose": "Contempt/jail order(s) + mittimus",
+        "required_sources": [
+          "order_pdf_or_txt"
+        ]
+      },
+      {
+        "exhibit_id": "PX-2",
+        "purpose": "Notices + proof of service",
+        "required_sources": [
+          "service_docs"
+        ]
+      },
+      {
+        "exhibit_id": "PX-3",
+        "purpose": "Transcript excerpts",
+        "required_sources": [
+          "transcript_txt"
+        ]
+      }
+    ],
+    "required_pins": [
+      "OperatingOrderPin",
+      "AUTHKEY_CONTEMPT_PROCEDURE",
+      "AUTHKEY_CRIMINAL_CONTEMPT_PROTECTIONS"
+    ],
+    "requires_deadline_eval": true
+  },
+  {
+    "packet_template_id": "pkt_m3_ppo_modify_terminate",
+    "vehicle_id": "m3_trial_ppo_modify_terminate",
+    "lane": "MEEK3",
+    "court_level": "TRIAL",
+    "outline": [
+      "Caption",
+      "Relief Requested (modify/terminate PPO)",
+      "Background (PPO history + incidents)",
+      "Standard (authority resolved)",
+      "Argument",
+      "Requested Relief",
+      "Proposed Order (outline only)",
+      "Exhibit List"
+    ],
+    "exhibit_requirements": [
+      {
+        "exhibit_id": "PX-1",
+        "purpose": "Operative PPO order(s) + extension history",
+        "required_sources": [
+          "order_pdf_or_txt"
+        ]
+      },
+      {
+        "exhibit_id": "PX-2",
+        "purpose": "Contradictions and rebuttal evidence",
+        "required_sources": [
+          "evidence_atoms",
+          "messages"
+        ]
+      }
+    ],
+    "required_pins": [
+      "OperatingOrderPin",
+      "AUTHKEY_PPO_MODIFY_TERMINATE_PROCEDURE"
+    ],
+    "requires_deadline_eval": true
+  },
+  {
+    "packet_template_id": "pkt_m4_jtc_complaint",
+    "vehicle_id": "m4_jtc_complaint",
+    "lane": "MEEK4",
+    "court_level": "JTC",
+    "outline": [
+      "Identification",
+      "Chronology (record-pinned)",
+      "Conduct categories (authority keys)",
+      "Record excerpts",
+      "Requested action",
+      "Attachment index"
+    ],
+    "exhibit_requirements": [
+      {
+        "exhibit_id": "PX-1",
+        "purpose": "Orders with adverse phrasing",
+        "required_sources": [
+          "order_pdf_or_txt"
+        ]
+      },
+      {
+        "exhibit_id": "PX-2",
+        "purpose": "Transcripts",
+        "required_sources": [
+          "transcript_txt"
+        ]
+      },
+      {
+        "exhibit_id": "PX-3",
+        "purpose": "ROA/docket spine",
+        "required_sources": [
+          "docket_txt",
+          "roa"
+        ]
+      }
+    ],
+    "required_pins": [
+      "AUTHKEY_JTC_RULES",
+      "AUTHKEY_MI_CONST_JTC",
+      "AUTHKEY_MICHIGAN_CODE_OF_JUDICIAL_CONDUCT"
+    ],
+    "requires_deadline_eval": false
+  }
+]

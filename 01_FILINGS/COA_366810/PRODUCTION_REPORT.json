@@ -1,0 +1,178 @@
+{
+  "pipeline": "FilingProductionPipeline v1.0",
+  "stack": "01_COA_366810",
+  "stack_path": "C:\\Users\\andre\\LitigationOS\\01_COA_366810",
+  "court": {
+    "court": "Michigan Court of Appeals",
+    "rules": "MCR 7.212",
+    "efiling": "truefiling"
+  },
+  "timestamp": "2026-03-04T22:40:33.816067",
+  "elapsed_seconds": 5.22,
+  "go_nogo": "GO",
+  "documents_scanned": 261,
+  "evidence_files": 0,
+  "steps": {
+    "INTAKE": {
+      "status": "PASS",
+      "details": [
+        "Found 261 documents",
+        "Found 0 evidence files",
+        "Court context: Michigan Court of Appeals",
+        "Rules: MCR 7.212"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "PLACEHOLDER_CHECK": {
+      "status": "WARN",
+      "details": [
+        "Auto-resolvable: 0",
+        "Unresolved: 3914"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 20,
+      "warnings": [
+        "  Unresolved: [PDF] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [TBD] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [TBD] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [BIRTH] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [JUDICIAL_VIOLATION] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [JUDICIAL_VIOLATION] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [MCR] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [TBD] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [JUDICIAL_VIOLATION] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [JUDICIAL_VIOLATION] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt"
+      ]
+    },
+    "AUTHORITY_CHECK": {
+      "status": "WARN",
+      "details": [
+        "Total citations found: 21455",
+        "  MCL: 4152",
+        "  MCR: 14531",
+        "  USC: 18",
+        "  Mich: 758",
+        "  Mich App: 713",
+        "  NW2d: 373",
+        "  US: 775",
+        "  Const: 114",
+        "  FRCP: 21"
+      ],
+      "issue_count": 2,
+      "issues": [
+        "Incomplete citation: '___ (2024)' in 01_CERT_PETITION_FRAMEWORK.md",
+        "Incomplete citation: '___ (2024)' in 02_SCOTUS_QUESTIONS_PRESENTED.md"
+      ],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EVIDENCE_CHECK": {
+      "status": "PASS",
+      "details": [
+        "Exhibit references found: 252",
+        "Evidence files on disk: 0",
+        "DB evidence items loaded: 28683"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "COMPLIANCE_CHECK": {
+      "status": "PASS",
+      "details": [],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 42,
+      "warnings": [
+        "Compliance check warning for BRIEF_COMPLIANCE_CHECK.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for COA_BRIEF_366810_FINAL.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 01_COA_Complaint_Superintending_Control.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 02_COA_Emergency_Motion_Stay_Interim_Relief.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 05_JTC_Complaint_Structure.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 00_MASTER_BRIEF.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for APPELLANT_BRIEF_COA_366810.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for APPELLANT_BRIEF_COA_366810_1.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for APPELLANT_BRIEF_COA_366810_2.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for APPELLATE_BRIEF_DOCUMENTED_VIOLATIONS(1).md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'"
+      ]
+    },
+    "QA_GATE": {
+      "status": "PASS",
+      "details": [
+        "PreFilingQAEngine available for deep QA",
+        "Steps PASS: 3 / WARN: 2 / FAIL: 0",
+        "Total issues: 2",
+        "Total warnings: 62",
+        "Verdict: GO"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "PDF_GENERATION": {
+      "status": "PASS",
+      "details": [
+        "Assembly pipeline loaded 2 files",
+        "PDF manifests generated: 149",
+        "Existing PDFs copied: 23",
+        "Output dir: C:\\Users\\andre\\LitigationOS\\01_COA_366810\\PRODUCTION_OUTPUT\\PDF"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EXHIBIT_COMPILATION": {
+      "status": "PASS",
+      "details": [
+        "Evidence files indexed: 0",
+        "DB exhibit entries: 718",
+        "Bates range: 01-000001 to 01-000000"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "SERVICE_PACKET": {
+      "status": "PASS",
+      "details": [
+        "Proof of service generated: PROOF_OF_SERVICE.md",
+        "Cover letter generated: COVER_LETTER.md",
+        "Mailing list generated: MAILING_LIST.md",
+        "Service parties from DB: 226"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EFILING_PREP": {
+      "status": "PASS",
+      "details": [
+        "E-filing system: TrueFiling",
+        "Documents: 172",
+        "All PDF: False",
+        "Under size limit: True"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "FINAL_REPORT": {
+      "status": "RUNNING",
+      "details": [],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    }
+  }
+}

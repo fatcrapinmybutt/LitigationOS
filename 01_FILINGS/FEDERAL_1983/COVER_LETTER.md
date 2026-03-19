@@ -1,0 +1,35 @@
+# COVER LETTER
+
+Date: March 04, 2026
+
+RE: Filing Submission - 03_FEDERAL_1983
+Court: WDMI Federal Court
+
+Dear Clerk of the Court,
+
+Enclosed please find the following documents for filing:
+
+1. Federal_Court_Filing_Packet_1.pdf
+2. 02_IMMUNITY_DEFENSE_MATRIX.pdf
+3. 03_IFP_APPLICATION.pdf
+4. 04_EVIDENCE_COMPILATION.pdf
+5. 05_DISCOVERY_PLAN.pdf
+6. 06_SERVICE_PLAN.pdf
+7. Section_1983_Complaint.pdf
+8. 01_COMPLAINT_1983_FINAL.pdf
+9. 02_IFP_APPLICATION_FINAL.pdf
+10. 03_IMMUNITY_DEFENSE_MATRIX.pdf
+11. 04_EVIDENCE_COMPILATION.pdf
+12. 05_DISCOVERY_PLAN.pdf
+13. 06_SERVICE_PLAN.pdf
+14. 07_FILING_INSTRUCTIONS.pdf
+15. 08_FILING_READINESS_SCORE.pdf
+16. 09_WDMI_FILING_CHECKLIST.pdf
+17. WDMI_FILING_PACKAGE.pdf
+18. 05_USDC__FEDERAL_1983_COMPLAINT.docx
+19. 1983_VERIFIED_COMPLAINT_FULL.docx
+20. 42USC1983_FEDERAL.docx
+
+Respectfully submitted,
+
+Andrew J. Pigors, Pro Se

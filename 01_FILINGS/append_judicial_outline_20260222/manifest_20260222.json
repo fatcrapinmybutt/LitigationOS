@@ -1,0 +1,71 @@
+{
+  "generated_at_utc": "2026-02-22T19:36:14.369702Z",
+  "inputs": [
+    "/mnt/data/SCANNED 5th exparte suspension 18 pdfs.zip",
+    "/mnt/data/SCANNED2sided judge orders scanned_0001.zip",
+    "/mnt/data/SCANNEDruscomartiniemailsscannd_0028.zip",
+    "/mnt/data/SCANNEDcustody scanned2_0070.zip",
+    "/mnt/data/SCANNED EXPARTE EMILY AND JUDGE DOCS.zip",
+    "/mnt/data/SCANNEDexpartescannedandmine_0008.zip"
+  ],
+  "archive_status": [
+    {
+      "zip": "/mnt/data/SCANNED 5th exparte suspension 18 pdfs.zip",
+      "exists": true,
+      "bytes": 2913349,
+      "unpacked_seen_in_records": true,
+      "status_guess": "INGESTED"
+    },
+    {
+      "zip": "/mnt/data/SCANNED2sided judge orders scanned_0001.zip",
+      "exists": true,
+      "bytes": 3567575,
+      "unpacked_seen_in_records": true,
+      "status_guess": "INGESTED"
+    },
+    {
+      "zip": "/mnt/data/SCANNEDruscomartiniemailsscannd_0028.zip",
+      "exists": true,
+      "bytes": 1747731,
+      "unpacked_seen_in_records": true,
+      "status_guess": "INGESTED"
+    },
+    {
+      "zip": "/mnt/data/SCANNEDcustody scanned2_0070.zip",
+      "exists": true,
+      "bytes": 10165668,
+      "unpacked_seen_in_records": true,
+      "status_guess": "INGESTED"
+    },
+    {
+      "zip": "/mnt/data/SCANNED EXPARTE EMILY AND JUDGE DOCS.zip",
+      "exists": true,
+      "bytes": 17433,
+      "unpacked_seen_in_records": false,
+      "status_guess": "FAILED_OR_CORRUPT"
+    },
+    {
+      "zip": "/mnt/data/SCANNEDexpartescannedandmine_0008.zip",
+      "exists": true,
+      "bytes": 4570649,
+      "unpacked_seen_in_records": true,
+      "status_guess": "INGESTED"
+    }
+  ],
+  "outputs": [
+    "append_case_outline_analysis_20260222.md",
+    "source_inventory_20260222.csv",
+    "supporting_date_contexts_20260222.csv",
+    "append_chronology_events_20260222.csv",
+    "viable_actions_matrix_20260222.csv",
+    "manifest_20260222.json"
+  ],
+  "notes": {
+    "web_run": "failed_internal_error",
+    "provenance_tags": [
+      "DOC_EXTRACTED",
+      "DOC_RECITED_ANALYSIS",
+      "USER_ASSERTED"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "event_id": "LEASE_COERCION_EVENT_2024",
+  "summary": "Coerced lease signing under duress at Cricklewood MHP LLC in March 2024. User forced to travel 35 minutes to sign under threat of eviction.",
+  "location": "Cricklewood MHP LLC, Ravenna, MI",
+  "agent": "Kim Davis (Homes of America)",
+  "timeline": {
+    "February 2024": "EGLE violations begin (ongoing sewage leak)",
+    "March 2024": "User coerced into signing new lease at different park",
+    "April 2024": "Billing increases to $695 despite violations, rent charged without lease clarity"
+  },
+  "legal_conflicts": {
+    "entity_mismatch": "Lease and eviction filed under different entities (Shady Oaks Park MHP LLC vs Shady Oaks MHP LLC)",
+    "duress": "Lease signed under pressure, not freely entered",
+    "fraud": "Charging rent during ongoing EGLE sewage violations",
+    "retaliation": "Lease ultimatum issued during health crisis",
+    "no_disclosure": "Lease change did not disclose management/company change"
+  },
+  "linked_exhibits": [
+    "Kim Davis Emails (March 2024)",
+    "Nicole Browley Statement (Jan 2024)",
+    "Transaction Sheet (Jan\u2013Apr 2024)",
+    "EGLE Violation Notice (April 2025)"
+  ],
+  "legal_triggers": [
+    "Motion to Strike Lease",
+    "Constructive Eviction",
+    "Motion to Vacate for Standing Defect",
+    "Canon Violation (Lease Coercion)",
+    "Veil Piercing (Entity Discrepancy)"
+  ],
+  "status": "fully embedded",
+  "export_path": "/mnt/data/coerced_lease_event.json"
+}

@@ -1,0 +1,218 @@
+{
+  "extraction_time": "2026-03-03T20:56:10.194768",
+  "claims_count": 0,
+  "violations_count": 200,
+  "harms_count": 5000,
+  "facts_count": 0,
+  "quotes_count": 0,
+  "adversary_summaries": [
+    {
+      "adversary": "Shady Oaks",
+      "total_mentions": 1805,
+      "harm_count": 4580,
+      "top_categories": "HOUSING_HARM: 1805; PPO_WEAPONIZATION: 692; FINANCIAL_HARM: 529; CHILD_WELFARE: 391; EMOTIONAL_PSYCHOLOGICAL: 344",
+      "key_incidents": "",
+      "legal_theories": "",
+      "filing_stacks": "",
+      "created_at": "2026-02-28 13:44:27"
+    },
+    {
+      "adversary": "Homes of America",
+      "total_mentions": 1019,
+      "harm_count": 211,
+      "top_categories": "HOUSING_HARM: 135; PPO_WEAPONIZATION: 20; FINANCIAL_HARM: 20; CHILD_WELFARE: 14; EMOTIONAL_PSYCHOLOGICAL: 11",
+      "key_incidents": "",
+      "legal_theories": "",
+      "filing_stacks": "",
+      "created_at": "2026-02-28 13:44:27"
+    },
+    {
+      "adversary": "Alden Global",
+      "total_mentions": 921,
+      "harm_count": 199,
+      "top_categories": "HOUSING_HARM: 114; PPO_WEAPONIZATION: 27; FINANCIAL_HARM: 17; CHILD_WELFARE: 12; CONSPIRACY_COORDINATION: 10",
+      "key_incidents": "",
+      "legal_theories": "",
+      "filing_stacks": "",
+      "created_at": "2026-02-28 13:44:27"
+    },
+    {
+      "adversary": "Housing Entity",
+      "total_mentions": 0,
+      "harm_count": 1343,
+      "top_categories": "HOUSING_HARM: 1343",
+      "key_incidents": "",
+      "legal_theories": "",
+      "filing_stacks": "",
+      "created_at": "2026-02-28 13:44:27"
+    }
+  ],
+  "harm_categories": [
+    [
+      "HOUSING_HARM",
+      2054
+    ],
+    [
+      "PPO_WEAPONIZATION",
+      739
+    ],
+    [
+      "FINANCIAL_HARM",
+      566
+    ],
+    [
+      "CHILD_WELFARE",
+      417
+    ],
+    [
+      "EMOTIONAL_PSYCHOLOGICAL",
+      364
+    ],
+    [
+      "PROCEDURAL_VIOLATIONS",
+      296
+    ],
+    [
+      "CONSPIRACY_COORDINATION",
+      232
+    ],
+    [
+      "EX_PARTE_ABUSE",
+      172
+    ],
+    [
+      "FALSE_IMPRISONMENT",
+      127
+    ],
+    [
+      "PARENTAL_ALIENATION",
+      23
+    ]
+  ],
+  "sample_claims": [],
+  "sample_violations": [
+    {
+      "id": null,
+      "property": "General Evidence",
+      "code_section": null,
+      "description": "EX_P-1__2025-08-08_ExParte_Motion_Suspend_Parenting_Time.pdf",
+      "date_reported": "2026-02-28 20:44:22",
+      "status": "open",
+      "evidence_id": "1013"
+    },
+    {
+      "id": null,
+      "property": "General Evidence",
+      "code_section": null,
+      "description": "EX_P-1__2025-08-08_ExParte_Motion_Suspend_Parenting_Time_v1.pdf",
+      "date_reported": "2026-02-28 20:44:22",
+      "status": "open",
+      "evidence_id": "1014"
+    },
+    {
+      "id": null,
+      "property": "General Evidence",
+      "code_section": null,
+      "description": "EX_P-2__2025-08-08_ExParte_Order_Suspending_Parenting_Time.pdf",
+      "date_reported": "2026-02-28 20:44:22",
+      "status": "open",
+      "evidence_id": "1015"
+    },
+    {
+      "id": null,
+      "property": "General Evidence",
+      "code_section": null,
+      "description": "EX_P-2__2025-08-08_ExParte_Order_Suspending_Parenting_Time_v1.pdf",
+      "date_reported": "2026-02-28 20:44:22",
+      "status": "open",
+      "evidence_id": "1016"
+    },
+    {
+      "id": null,
+      "property": "General Evidence",
+      "code_section": null,
+      "description": "FOC65_Motion_Regarding_Parenting_Time.pdf",
+      "date_reported": "2026-02-28 20:44:22",
+      "status": "open",
+      "evidence_id": "1071"
+    }
+  ],
+  "sample_harms": [
+    {
+      "id": 9,
+      "category": "HOUSING_HARM",
+      "subcategory": null,
+      "adversary": "Shady Oaks",
+      "date_ref": "October 1, 2023",
+      "description": "HOUSING_HARM: Verified Chronology of Procedural Violations (Pigors v. Watson, 2023\u20132025) Executive Summary  Overview: Since October 1, 2023, Plaintiff Andrew J. Pigors (\u201cFather\u201d) has experienced numerous procedural",
+      "andrew_quote": "Verified Chronology of Procedural Violations (Pigors v. Watson, 2023\u20132025) Executive Summary  Overview: Since October 1, 2023, Plaintiff Andrew J. Pigors (\u201cFather\u201d) has experienced numerous procedural and legal violations in the Muskegon County custody case Pigors v. Watson (No. 24-01507-DC). These violations range from improper ex parte orders that suspended Father\u2019s parenting time without the required affidavits or findings, to failures of due process such as delayed hearings, lack of notice,",
+      "conversation_title": "Activate court script systems",
+      "severity": 9,
+      "constitutional_violation": "MCL 600.5720 \u2014 Retaliatory eviction; Fair Housing Act",
+      "mcr_violation": null,
+      "filing_stacks": "housing_stack",
+      "created_at": "2026-02-28 13:44:26"
+    },
+    {
+      "id": 22,
+      "category": "HOUSING_HARM",
+      "subcategory": null,
+      "adversary": "Shady Oaks",
+      "date_ref": "October 1, 2023",
+      "description": "HOUSING_HARM: Verified Chronology of Procedural Violations (Pigors v. Watson, 2023\u20132025) Executive Summary  Overview: Since October 1, 2023, Plaintiff Andrew J. Pigors (\u201cFather\u201d) has experienced numerous procedural",
+      "andrew_quote": "Verified Chronology of Procedural Violations (Pigors v. Watson, 2023\u20132025) Executive Summary  Overview: Since October 1, 2023, Plaintiff Andrew J. Pigors (\u201cFather\u201d) has experienced numerous procedural and legal violations in the Muskegon County custody case Pigors v. Watson (No. 24-01507-DC). These violations range from improper ex parte orders that suspended Father\u2019s parenting time without the required affidavits or findings, to failures of due process such as delayed hearings, lack of notice,",
+      "conversation_title": "Activate court script systems",
+      "severity": 9,
+      "constitutional_violation": "MCL 600.5720 \u2014 Retaliatory eviction; Fair Housing Act",
+      "mcr_violation": null,
+      "filing_stacks": "housing_stack",
+      "created_at": "2026-02-28 13:44:26"
+    },
+    {
+      "id": 35,
+      "category": "HOUSING_HARM",
+      "subcategory": null,
+      "adversary": "Shady Oaks",
+      "date_ref": "October 1, 2023",
+      "description": "HOUSING_HARM: Verified Chronology of Procedural Violations (Pigors v. Watson, 2023\u20132025) Executive Summary  Overview: Since October 1, 2023, Plaintiff Andrew J. Pigors (\u201cFather\u201d) has experienced numerous procedural",
+      "andrew_quote": "Verified Chronology of Procedural Violations (Pigors v. Watson, 2023\u20132025) Executive Summary  Overview: Since October 1, 2023, Plaintiff Andrew J. Pigors (\u201cFather\u201d) has experienced numerous procedural and legal violations in the Muskegon County custody case Pigors v. Watson (No. 24-01507-DC). These violations range from improper ex parte orders that suspended Father\u2019s parenting time without the required affidavits or findings, to failures of due process such as delayed hearings, lack of notice,",
+      "conversation_title": "Activate court script systems",
+      "severity": 9,
+      "constitutional_violation": "MCL 600.5720 \u2014 Retaliatory eviction; Fair Housing Act",
+      "mcr_violation": null,
+      "filing_stacks": "housing_stack",
+      "created_at": "2026-02-28 13:44:26"
+    },
+    {
+      "id": 48,
+      "category": "HOUSING_HARM",
+      "subcategory": null,
+      "adversary": "Shady Oaks",
+      "date_ref": "October 1, 2023",
+      "description": "HOUSING_HARM: i want bullet points. i also need a section on objections/corrections because of the false statements by emily. Verified Chronology of Procedural Violations (Pigors v. Watson, 2023\u20132025) Executive Sum",
+      "andrew_quote": "i want bullet points. i also need a section on objections/corrections because of the false statements by emily. Verified Chronology of Procedural Violations (Pigors v. Watson, 2023\u20132025) Executive Summary  Overview: Since October 1, 2023, Plaintiff Andrew J. Pigors (\u201cFather\u201d) has experienced numerous procedural and legal violations in the Muskegon County custody case Pigors v. Watson (No. 24-01507-DC). These violations range from improper ex parte orders that suspended Father\u2019s parenting time wi",
+      "conversation_title": "Activate court script systems",
+      "severity": 9,
+      "constitutional_violation": "MCL 600.5720 \u2014 Retaliatory eviction; Fair Housing Act",
+      "mcr_violation": null,
+      "filing_stacks": "housing_stack",
+      "created_at": "2026-02-28 13:44:26"
+    },
+    {
+      "id": 61,
+      "category": "HOUSING_HARM",
+      "subcategory": null,
+      "adversary": "Shady Oaks",
+      "date_ref": "08/08/2025",
+      "description": "HOUSING_HARM: Got it. Here\u2019s a **long-form, recital-ready** set you can deliver in court\u2014organized, assertive, and bias-focused, with a tight **move to admit your recording** and a full **objections/corrections** s",
+      "andrew_quote": "Got it. Here\u2019s a **long-form, recital-ready** set you can deliver in court\u2014organized, assertive, and bias-focused, with a tight **move to admit your recording** and a full **objections/corrections** section. Use these verbatim.  # Verified Chronology &amp; Bias Manifest \u2014 Recital Script (Pigors v. Watson, 2023\u20132025)  ## A. Opening Frame (Start Here)  * **Your Honor, this record shows bias, unequal enforcement, and multiple rule violations** that culminated in an unlawful deprivation of my parent",
+      "conversation_title": "Court recitation script",
+      "severity": 9,
+      "constitutional_violation": "MCL 600.5720 \u2014 Retaliatory eviction; Fair Housing Act",
+      "mcr_violation": null,
+      "filing_stacks": "housing_stack",
+      "created_at": "2026-02-28 13:44:26"
+    }
+  ],
+  "sample_facts": []
+}

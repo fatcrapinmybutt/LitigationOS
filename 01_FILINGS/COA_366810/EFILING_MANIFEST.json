@@ -1,0 +1,1222 @@
+{
+  "system": "TrueFiling",
+  "court": "Michigan Court of Appeals",
+  "stack": "01_COA_366810",
+  "generated": "2026-03-04T22:40:33.810308",
+  "max_file_size_mb": 25,
+  "accepted_formats": [
+    ".pdf"
+  ],
+  "documents": [
+    {
+      "name": "COA_BRIEF_366810_FINAL.pdf",
+      "format": ".pdf",
+      "size_bytes": 133981,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "02_TABLE_OF_CONTENTS.pdf",
+      "format": ".pdf",
+      "size_bytes": 130382,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "03_TABLE_OF_AUTHORITIES.pdf",
+      "format": ".pdf",
+      "size_bytes": 132551,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "04_STATEMENT_OF_FACTS_EXPANDED.pdf",
+      "format": ".pdf",
+      "size_bytes": 140172,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "05_APPENDIX_INDEX.pdf",
+      "format": ".pdf",
+      "size_bytes": 135031,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "06_CERTIFICATE_OF_SERVICE.pdf",
+      "format": ".pdf",
+      "size_bytes": 132630,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "07_PROOF_OF_FILING.pdf",
+      "format": ".pdf",
+      "size_bytes": 132419,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Appellants_Brief.pdf",
+      "format": ".pdf",
+      "size_bytes": 172684,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "APPELLATE_BRIEF_DOCUMENTED_VIOLATIONSmd.pdf",
+      "format": ".pdf",
+      "size_bytes": 155747,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Case_No___Circuit_____Court_of_Appeals__Michigan_Court_of_Appeals____DOCKETING_STATEMENT____Please_r_1.pdf",
+      "format": ".pdf",
+      "size_bytes": 81175,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Court_of_Appeals_Internal_Operating_Procedures___Revision_Date__12__20_2023__Page_1_of_61_MICHIGAN_C_1.pdf",
+      "format": ".pdf",
+      "size_bytes": 504141,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "federal-rules-of-appellate-procedure-dec-1-2024_0 (3).pdf",
+      "format": ".pdf",
+      "size_bytes": 770780,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "FEDERAL_CONSTITUTIONAL_APPELLATE_BRIEFmd.pdf",
+      "format": ".pdf",
+      "size_bytes": 120395,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "MICHIGAN_APPEALS_REPORTS_CASES_DECIDED_IN_THE_MICHIGAN_COURT_OF_APPEALS_FROM_February_21,_2017,_thro_1.pdf",
+      "format": ".pdf",
+      "size_bytes": 2124010,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "STATE_OF_MICHIGAN__COURT_OF_APPEALS__PEOPLE_OF_THE_STATE_OF_MICHIGAN,__UNPUBLISHED__August_2,_2002___1.pdf",
+      "format": ".pdf",
+      "size_bytes": 32019,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "03_LEGAL_ARGUMENTS.pdf",
+      "format": ".pdf",
+      "size_bytes": 40553,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "04_STATEMENT_OF_FACTS_EXPANDED.pdf",
+      "format": ".pdf",
+      "size_bytes": 31081,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "COMBINED_SERVICE_PACKET.pdf",
+      "format": ".pdf",
+      "size_bytes": 13359,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "COVER_LETTER_APPELLEE.pdf",
+      "format": ".pdf",
+      "size_bytes": 2725,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "COVER_LETTER_TRIAL_COURT.pdf",
+      "format": ".pdf",
+      "size_bytes": 2729,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "PROOF_OF_SERVICE.pdf",
+      "format": ".pdf",
+      "size_bytes": 4240,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "SERVICE_CHECKLIST.pdf",
+      "format": ".pdf",
+      "size_bytes": 3921,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "SERVICE_LOG.pdf",
+      "format": ".pdf",
+      "size_bytes": 3177,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "BRIEF_COMPLIANCE_CHECK.md",
+      "format": ".md",
+      "size_bytes": 4833,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_BRIEF_366810_FINAL.md",
+      "format": ".md",
+      "size_bytes": 117309,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "appendix_cover.md",
+      "format": ".md",
+      "size_bytes": 3122,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "appendix_index.md",
+      "format": ".md",
+      "size_bytes": 3910,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "00_README_START.md",
+      "format": ".md",
+      "size_bytes": 1544,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "01_COA_Complaint_Superintending_Control.md",
+      "format": ".md",
+      "size_bytes": 6124,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "02_COA_Emergency_Motion_Stay_Interim_Relief.md",
+      "format": ".md",
+      "size_bytes": 1407,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "03_Verified_Statement_and_Exhibit_List.md",
+      "format": ".md",
+      "size_bytes": 1497,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "04_Record_Acquisition_and_Pinpoint_Map.md",
+      "format": ".md",
+      "size_bytes": 1524,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "05_JTC_Complaint_Structure.md",
+      "format": ".md",
+      "size_bytes": 1088,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "00_MASTER_BRIEF.md",
+      "format": ".md",
+      "size_bytes": 54509,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "03_BUNDLE_SPECIFICATIONS.md",
+      "format": ".md",
+      "size_bytes": 827,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "05_READINESS_ASSESSMENT.md",
+      "format": ".md",
+      "size_bytes": 740,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "06_COMPLIANCE_MATRIX.md",
+      "format": ".md",
+      "size_bytes": 1266,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "08_CONSTITUTIONAL_SECTIONS.md",
+      "format": ".md",
+      "size_bytes": 20896,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "09_REPLY_TEMPLATES.md",
+      "format": ".md",
+      "size_bytes": 8415,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "02_COA_APPLICATION_LEAVE_APPEAL_v3.md",
+      "format": ".md",
+      "size_bytes": 120132,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "19_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md",
+      "format": ".md",
+      "size_bytes": 31293,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "20_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md",
+      "format": ".md",
+      "size_bytes": 31293,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "21_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md",
+      "format": ".md",
+      "size_bytes": 31293,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "32b96621-7b62-4848-8873-28ac6217155f__checkpoints__004-complete-appellate-filing-pack.md",
+      "format": ".md",
+      "size_bytes": 12094,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "32b96621-7b62-4848-8873-28ac6217155f__checkpoints__005-appellate-document-audit-initi.md",
+      "format": ".md",
+      "size_bytes": 8204,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "34_APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md",
+      "format": ".md",
+      "size_bytes": 34152,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "35_APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md",
+      "format": ".md",
+      "size_bytes": 34152,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "36_APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md",
+      "format": ".md",
+      "size_bytes": 34152,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "41_APPELLATE_JOURNAL.md",
+      "format": ".md",
+      "size_bytes": 2317929,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "41_APPELLATE_LLM_APPELLATE_STRATEGY.md",
+      "format": ".md",
+      "size_bytes": 2012,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "AFFIDAVIT_PIGORS_COA.md",
+      "format": ".md",
+      "size_bytes": 12467,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPELLANT_BRIEF_COA_366810.md",
+      "format": ".md",
+      "size_bytes": 33978,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPELLANT_BRIEF_COA_366810_1.md",
+      "format": ".md",
+      "size_bytes": 35486,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPELLANT_BRIEF_COA_366810_2.md",
+      "format": ".md",
+      "size_bytes": 46238,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPELLATE_BRIEF_DOCUMENTED_VIOLATIONS(1).md",
+      "format": ".md",
+      "size_bytes": 35788,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPELLATE_BRIEF_DOCUMENTED_VIOLATIONS.md",
+      "format": ".md",
+      "size_bytes": 35788,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md",
+      "format": ".md",
+      "size_bytes": 34152,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209_2.md",
+      "format": ".md",
+      "size_bytes": 34152,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209_3.md",
+      "format": ".md",
+      "size_bytes": 34152,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209_4.md",
+      "format": ".md",
+      "size_bytes": 34152,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "BRIEF_IN_SUPPORT_EMERGENCY_MOTION_COA.md",
+      "format": ".md",
+      "size_bytes": 24273,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_366810_APPELLANTS_BRIEF.md",
+      "format": ".md",
+      "size_bytes": 72662,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_366810_APPELLANTS_BRIEF_1.md",
+      "format": ".md",
+      "size_bytes": 82138,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_366810_APPELLANTS_BRIEF_CONVERGED.md",
+      "format": ".md",
+      "size_bytes": 72662,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_366810_APPELLANTS_BRIEF_PACKAGE.md",
+      "format": ".md",
+      "size_bytes": 57976,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_366810_APPELLANTS_BRIEF_PACKAGE_1.md",
+      "format": ".md",
+      "size_bytes": 59632,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_366810_APPELLATE_TIMELINE.md",
+      "format": ".md",
+      "size_bytes": 23369,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_APPELLANT_BRIEF.md",
+      "format": ".md",
+      "size_bytes": 59690,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_APPELLANT_BRIEF_366810.md",
+      "format": ".md",
+      "size_bytes": 9202,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_APPELLANT_BRIEF_366810_v2.md",
+      "format": ".md",
+      "size_bytes": 22982,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_APPENDIX_INDEX_366810.md",
+      "format": ".md",
+      "size_bytes": 13309,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_BRIEF_APPENDIX.md",
+      "format": ".md",
+      "size_bytes": 17462,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_BRIEF_DRAFT.md",
+      "format": ".md",
+      "size_bytes": 16719,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "coa_brief_factory.md",
+      "format": ".md",
+      "size_bytes": 861,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_BRIEF_FINAL.md",
+      "format": ".md",
+      "size_bytes": 40216,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_EMERGENCY_APPLICATION_366810_v2.md",
+      "format": ".md",
+      "size_bytes": 22158,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md",
+      "format": ".md",
+      "size_bytes": 31293,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209_2.md",
+      "format": ".md",
+      "size_bytes": 31293,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209_3.md",
+      "format": ".md",
+      "size_bytes": 31293,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209_4.md",
+      "format": ".md",
+      "size_bytes": 31293,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "data__19_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md",
+      "format": ".md",
+      "size_bytes": 31293,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "data__20_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md",
+      "format": ".md",
+      "size_bytes": 31293,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "data__21_COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md",
+      "format": ".md",
+      "size_bytes": 31293,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "data__34_APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md",
+      "format": ".md",
+      "size_bytes": 34152,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "data__35_APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md",
+      "format": ".md",
+      "size_bytes": 34152,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "data__36_APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md",
+      "format": ".md",
+      "size_bytes": 34152,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "data__APPELLATE_BRIEF_DOCUMENTED_VIOLATIONS.md",
+      "format": ".md",
+      "size_bytes": 35788,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "data__APPELLATE_HARM_EVIDENCE_EXTRACTION_COMPREHENSIVE_20260209.md",
+      "format": ".md",
+      "size_bytes": 34152,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "data__COMPREHENSIVE_APPELLATE_AUDIT_ENHANCEMENT_REPORT_20260209.md",
+      "format": ".md",
+      "size_bytes": 31293,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "data__FEDERAL_CONSTITUTIONAL_APPELLATE_BRIEF.md",
+      "format": ".md",
+      "size_bytes": 22350,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "data__FEDERAL_CONSTITUTIONAL_APPELLATE_BRIEF1.md",
+      "format": ".md",
+      "size_bytes": 22350,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EVIDENCE_CHAINS.md",
+      "format": ".md",
+      "size_bytes": 22803,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "FEDERAL_CONSTITUTIONAL_APPELLATE_BRIEF.md",
+      "format": ".md",
+      "size_bytes": 22350,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "FEDERAL_CONSTITUTIONAL_APPELLATE_BRIEF1.md",
+      "format": ".md",
+      "size_bytes": 22350,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "journal_md.md",
+      "format": ".md",
+      "size_bytes": 1092092,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "LANE_F_APPELLATE_APPELLANT_BRIEF_COA_366810.md",
+      "format": ".md",
+      "size_bytes": 35486,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "LANE_F_APPELLATE_COA_366810_APPELLANTS_BRIEF.md",
+      "format": ".md",
+      "size_bytes": 72662,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "LLM_APPELLATE_STRATEGY.md",
+      "format": ".md",
+      "size_bytes": 2012,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MOTION_IMMEDIATE_CONSIDERATION_COA.md",
+      "format": ".md",
+      "size_bytes": 17348,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "Pigors_v_Watson_2024-001507-DC_Custody__11_Appeals__Appellate_Brief__Federal_Constitutional_Brief.md",
+      "format": ".md",
+      "size_bytes": 22350,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PKG05_COA_APPELLANT_BRIEF_FINALIZED.md",
+      "format": ".md",
+      "size_bytes": 94353,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SIGNAL_SCORES.md",
+      "format": ".md",
+      "size_bytes": 13661,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SUMMARY.md",
+      "format": ".md",
+      "size_bytes": 1878,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "VERBATIM_QUOTES.md",
+      "format": ".md",
+      "size_bytes": 14135,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "01_APPELLANTS_BRIEF_ON_APPEAL.md",
+      "format": ".md",
+      "size_bytes": 35768,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "02_TABLE_OF_CONTENTS.md",
+      "format": ".md",
+      "size_bytes": 2224,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "03_LEGAL_ARGUMENTS.md",
+      "format": ".md",
+      "size_bytes": 33542,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "03_TABLE_OF_AUTHORITIES.md",
+      "format": ".md",
+      "size_bytes": 4129,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "04_STATEMENT_OF_FACTS_EXPANDED.md",
+      "format": ".md",
+      "size_bytes": 24626,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "05_APPENDIX_INDEX.md",
+      "format": ".md",
+      "size_bytes": 6446,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "06_CERTIFICATE_OF_SERVICE.md",
+      "format": ".md",
+      "size_bytes": 2978,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "07_PROOF_OF_FILING.md",
+      "format": ".md",
+      "size_bytes": 3085,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "08_FILING_INSTRUCTIONS_COA.md",
+      "format": ".md",
+      "size_bytes": 6640,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "09_READINESS_SCORE.md",
+      "format": ".md",
+      "size_bytes": 9948,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "VALIDATION_REPORT.md",
+      "format": ".md",
+      "size_bytes": 5448,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "AFFIDAVIT_PIGORS_COA.md",
+      "format": ".md",
+      "size_bytes": 60290,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPLICATION_LEAVE_TO_APPEAL.md",
+      "format": ".md",
+      "size_bytes": 90891,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "FILING_BUNDLE_CHECKLIST.md",
+      "format": ".md",
+      "size_bytes": 9228,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MOTION_IMMEDIATE_CONSIDERATION.md",
+      "format": ".md",
+      "size_bytes": 15597,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "TABLE_OF_AUTHORITIES.md",
+      "format": ".md",
+      "size_bytes": 4784,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "AFFIDAVIT_PIGORS_MSC.md",
+      "format": ".md",
+      "size_bytes": 50674,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "FILING_BUNDLE_CHECKLIST.md",
+      "format": ".md",
+      "size_bytes": 9567,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PETITION_SUPERINTENDING_CONTROL.md",
+      "format": ".md",
+      "size_bytes": 80871,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "TABLE_OF_AUTHORITIES.md",
+      "format": ".md",
+      "size_bytes": 3630,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "01_APPLICATION_LEAVE_TO_APPEAL.md",
+      "format": ".md",
+      "size_bytes": 16069,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "02_BRIEF_IN_SUPPORT.md",
+      "format": ".md",
+      "size_bytes": 19505,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "03_APPENDIX_INDEX.md",
+      "format": ".md",
+      "size_bytes": 6555,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "04_ORIGINAL_ACTION_SUPERINTENDING.md",
+      "format": ".md",
+      "size_bytes": 12907,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "05_FILING_INSTRUCTIONS.md",
+      "format": ".md",
+      "size_bytes": 9284,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "06_FILING_READINESS_SCORE.md",
+      "format": ".md",
+      "size_bytes": 7549,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "01_CERT_PETITION_FRAMEWORK.md",
+      "format": ".md",
+      "size_bytes": 8047,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "02_SCOTUS_QUESTIONS_PRESENTED.md",
+      "format": ".md",
+      "size_bytes": 5937,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "03_FILING_INSTRUCTIONS.md",
+      "format": ".md",
+      "size_bytes": 7330,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "04_READINESS_SCORE.md",
+      "format": ".md",
+      "size_bytes": 5223,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "filing_instructions_coa.md",
+      "format": ".md",
+      "size_bytes": 4396,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "proof_of_service_coa.md",
+      "format": ".md",
+      "size_bytes": 2549,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COVER_LETTER_APPELLEE.md",
+      "format": ".md",
+      "size_bytes": 1103,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COVER_LETTER_TRIAL_COURT.md",
+      "format": ".md",
+      "size_bytes": 1112,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PROOF_OF_SERVICE.md",
+      "format": ".md",
+      "size_bytes": 2201,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SERVICE_CHECKLIST.md",
+      "format": ".md",
+      "size_bytes": 3047,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SERVICE_LOG.md",
+      "format": ".md",
+      "size_bytes": 1884,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPELLANT_BRIEF.md",
+      "format": ".md",
+      "size_bytes": 52223,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPENDIX.md",
+      "format": ".md",
+      "size_bytes": 9967,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPLICATION_LEAVE_TO_APPEAL.md",
+      "format": ".md",
+      "size_bytes": 17886,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_7.212_COMPLIANCE_GRID.md",
+      "format": ".md",
+      "size_bytes": 1992,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_CERTIFICATE_OF_SERVICE.md",
+      "format": ".md",
+      "size_bytes": 3670,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COA_PROOF_OF_SERVICE.md",
+      "format": ".md",
+      "size_bytes": 2257,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COMPLAINT_SUPERINTENDING_CONTROL.md",
+      "format": ".md",
+      "size_bytes": 11690,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COVER_PAGE.md",
+      "format": ".md",
+      "size_bytes": 2185,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COVER_PAGE_BLUE.md",
+      "format": ".md",
+      "size_bytes": 1940,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EMERGENCY_APPLICATION.md",
+      "format": ".md",
+      "size_bytes": 13020,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EXHIBIT_STACK.md",
+      "format": ".md",
+      "size_bytes": 2045,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MC_20_FEE_WAIVER.md",
+      "format": ".md",
+      "size_bytes": 6046,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MSC_7.305_STRUCTURE.md",
+      "format": ".md",
+      "size_bytes": 1977,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MSC_CERTIFICATE_OF_SERVICE.md",
+      "format": ".md",
+      "size_bytes": 3211,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MSC_COMPLIANCE_CERTIFICATE.md",
+      "format": ".md",
+      "size_bytes": 5442,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PROOFREAD_REPORT.md",
+      "format": ".md",
+      "size_bytes": 1140,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "REPRODUCED_MATERIALS_ADDENDUM.md",
+      "format": ".md",
+      "size_bytes": 8281,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "TRANSCRIPT_SUBSTITUTE_CONTINGENCY.md",
+      "format": ".md",
+      "size_bytes": 4824,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "AFFIDAVIT_PIGORS_COA.md",
+      "format": ".md",
+      "size_bytes": 60290,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "APPLICATION_LEAVE_TO_APPEAL.md",
+      "format": ".md",
+      "size_bytes": 90891,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "DEADLINE_TRACKER.md",
+      "format": ".md",
+      "size_bytes": 22097,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EXHIBIT_AUTHENTICATION_TEMPLATES.md",
+      "format": ".md",
+      "size_bytes": 25853,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "FILING_BUNDLE_CHECKLIST.md",
+      "format": ".md",
+      "size_bytes": 9228,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "FINAL_FILING_INSTRUCTIONS.md",
+      "format": ".md",
+      "size_bytes": 39993,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "IN_FORMA_PAUPERIS_AFFIDAVIT.md",
+      "format": ".md",
+      "size_bytes": 5602,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "LITIGATION_STRATEGY_MEMO.md",
+      "format": ".md",
+      "size_bytes": 30546,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MASTER_EXHIBIT_INDEX.md",
+      "format": ".md",
+      "size_bytes": 23877,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MASTER_FILING_SEQUENCE.md",
+      "format": ".md",
+      "size_bytes": 17697,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MOTION_IMMEDIATE_CONSIDERATION.md",
+      "format": ".md",
+      "size_bytes": 15652,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PROOF_OF_SERVICE_TEMPLATE.md",
+      "format": ".md",
+      "size_bytes": 16653,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "TABLE_OF_AUTHORITIES.md",
+      "format": ".md",
+      "size_bytes": 4784,
+      "under_limit": true,
+      "needs_conversion": true
+    }
+  ],
+  "checklist": {
+    "all_pdf": false,
+    "under_size_limit": true,
+    "service_attached": false,
+    "fee_paid_or_waived": false
+  }
+}

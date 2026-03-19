@@ -1,0 +1,10 @@
+route_id,court,vehicle,status,anchor_events
+V-TRIAL-001,Muskegon 14th Circuit (Family),Motion to modify/restore parenting time + evidentiary hearing request,HIGH_PRIORITY (timeliness/order-pin check needed),CHRON-013..CHRON-022 (+ CHRON-012 no-contact anchor)
+V-TRIAL-002,Muskegon 14th Circuit (Family),Motion for relief from order / set-aside (service + due-process lane),HIGH_PRIORITY (exact rule branch must be pinned),CHRON-013..CHRON-022
+V-TRIAL-003,Muskegon 14th Circuit (Family),Motion to enforce parenting time / compensatory parenting time (or FOC enforcement),CONDITIONAL on operative order terms,CHRON-012 + CHRON-023..CHRON-025 (subject to operative orders/PPO amendment)
+V-TRIAL-004,Muskegon 14th Circuit (Family),Motion to settle/correct record + transcript/record completeness,HIGH_LEVERAGE record-survival step,CHRON-017..CHRON-024
+V-TRIAL-005,Muskegon 14th Circuit (Family),Written/renewed judicial disqualification motion (if new grounds),CONDITIONAL (new grounds/timing required),CHRON-022 (+ transcript/order text)
+V-COA-001,Michigan Court of Appeals,Application for leave / delayed application (family postjudgment orders),TIMELINESS_BRANCH (ROA + entry dates required),CHRON-013..CHRON-024 (plus appealable order IDs)
+V-COA-002,Michigan Court of Appeals,Emergency/stay motion tied to active parenting-time harm,CONDITIONAL but high-impact if branch open,CHRON-012..CHRON-025 + current operative order
+V-MSC-001,Michigan Supreme Court,Application for leave after COA disposition,FUTURE_BRANCH,COA-dependent
+V-JTC-001,Michigan Judicial Tenure Commission,JTC complaint packet (conduct chronology + record cites),PARALLEL_NON-APPELLATE,CHRON-017..CHRON-024 + transcripts

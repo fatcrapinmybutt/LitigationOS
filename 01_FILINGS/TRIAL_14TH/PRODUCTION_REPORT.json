@@ -1,0 +1,199 @@
+{
+  "pipeline": "FilingProductionPipeline v1.0",
+  "stack": "02_TRIAL_14TH",
+  "stack_path": "C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH",
+  "court": {
+    "court": "14th Circuit Court",
+    "rules": "MCR 2.119",
+    "efiling": "mifile"
+  },
+  "timestamp": "2026-03-04T22:41:06.936102",
+  "elapsed_seconds": 33.11,
+  "go_nogo": "NO-GO",
+  "documents_scanned": 3116,
+  "evidence_files": 0,
+  "steps": {
+    "INTAKE": {
+      "status": "PASS",
+      "details": [
+        "Found 3116 documents",
+        "Found 0 evidence files",
+        "Court context: 14th Circuit Court",
+        "Rules: MCR 2.119"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "PLACEHOLDER_CHECK": {
+      "status": "WARN",
+      "details": [
+        "Auto-resolvable: 0",
+        "Unresolved: 8711"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 20,
+      "warnings": [
+        "  Unresolved: [PDF] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [MEDIUM] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [TBD] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [TBD] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [BENCHBOOK] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [VIOLATION] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [ADDRESS TO BE PROVIDED UPON FILING] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [CRITICAL] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [CRITICAL] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [FILING] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt"
+      ]
+    },
+    "AUTHORITY_CHECK": {
+      "status": "WARN",
+      "details": [
+        "Total citations found: 60178",
+        "  MCL: 27706",
+        "  MCR: 27731",
+        "  USC: 129",
+        "  Mich: 1349",
+        "  Mich App: 1653",
+        "  NW2d: 622",
+        "  US: 793",
+        "  FRCP: 49",
+        "  Const: 130",
+        "  F.3d: 14",
+        "  S.Ct: 2"
+      ],
+      "issue_count": 24,
+      "issues": [
+        "Incomplete citation: '___ (2024)' in child-custody-dispute-between-parents-checklist.pdf_d85420fd.txt",
+        "Incomplete citation: '___ (2024)' in child-custody-dispute-between-parents-checklist.pdf_d85420fd_copy1.txt",
+        "Incomplete citation: '___ (2024)' in child-custody-dispute-between-parents-checklist.pdf_d85420fd_copy2.txt",
+        "Incomplete citation: '__ Mich __' in modification-of-parenting-time-checklist.pdf_8449280a.txt",
+        "Incomplete citation: '_ (2024)' in modification-of-parenting-time-checklist.pdf_8449280a.txt",
+        "Incomplete citation: '__ Mich __' in modification-of-parenting-time-checklist.pdf_8449280a.txt",
+        "Incomplete citation: '___ (2024)' in modification-of-parenting-time-checklist.pdf_8449280a.txt",
+        "Incomplete citation: '___ (2023)' in modification-of-parenting-time-checklist.pdf_8449280a.txt",
+        "Incomplete citation: '__ Mich __' in modification-of-parenting-time-checklist.pdf_8449280a_copy1.txt",
+        "Incomplete citation: '_ (2024)' in modification-of-parenting-time-checklist.pdf_8449280a_copy1.txt",
+        "Incomplete citation: '__ Mich __' in modification-of-parenting-time-checklist.pdf_8449280a_copy1.txt",
+        "Incomplete citation: '___ (2024)' in modification-of-parenting-time-checklist.pdf_8449280a_copy1.txt",
+        "Incomplete citation: '___ (2023)' in modification-of-parenting-time-checklist.pdf_8449280a_copy1.txt",
+        "Incomplete citation: '__ Mich __' in modification-of-parenting-time-checklist.pdf_8449280a_copy2.txt",
+        "Incomplete citation: '_ (2024)' in modification-of-parenting-time-checklist.pdf_8449280a_copy2.txt",
+        "Incomplete citation: '__ Mich __' in modification-of-parenting-time-checklist.pdf_8449280a_copy2.txt",
+        "Incomplete citation: '___ (2024)' in modification-of-parenting-time-checklist.pdf_8449280a_copy2.txt",
+        "Incomplete citation: '___ (2023)' in modification-of-parenting-time-checklist.pdf_8449280a_copy2.txt",
+        "Incomplete citation: '__ Mich __' in modification-of-parenting-time-flowchart.pdf_b5007b3a.txt",
+        "Incomplete citation: '_ (2024)' in modification-of-parenting-time-flowchart.pdf_b5007b3a.txt"
+      ],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EVIDENCE_CHECK": {
+      "status": "PASS",
+      "details": [
+        "Exhibit references found: 531",
+        "Evidence files on disk: 0",
+        "DB evidence items loaded: 28683"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "COMPLIANCE_CHECK": {
+      "status": "PASS",
+      "details": [],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 226,
+      "warnings": [
+        "Compliance check warning for 00_MASTER_BRIEF.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 04_MOTION_DISQUALIFICATION_v3.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 08_MOTION_CONTEMPT_SHOW_CAUSE_v3.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 01_14TH_CIRCUIT__BAR_COMPLAINT_JENNIFER_BARNES.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 01_14TH_CIRCUIT__CIVIL_COMPLAINT_WATSON_FAMILY.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 01_14TH_CIRCUIT__EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 01_14TH_CIRCUIT__ENHANCED_ALIENATION_BRIEF.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 01_14TH_CIRCUIT__MOTION_APPOINT_GAL.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 01_14TH_CIRCUIT__MOTION_CHANGE_OF_VENUE.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 01_14TH_CIRCUIT__MOTION_CHILD_SUPPORT_MODIFICATION.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'"
+      ]
+    },
+    "QA_GATE": {
+      "status": "FAIL",
+      "details": [
+        "PreFilingQAEngine available for deep QA",
+        "Steps PASS: 3 / WARN: 2 / FAIL: 0",
+        "Total issues: 24",
+        "Total warnings: 246",
+        "Verdict: NO-GO"
+      ],
+      "issue_count": 1,
+      "issues": [
+        "NO-GO: 24 total issues (threshold: 10)"
+      ],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "PDF_GENERATION": {
+      "status": "PASS",
+      "details": [
+        "PDF manifests generated: 1318",
+        "Existing PDFs copied: 901",
+        "Output dir: C:\\Users\\andre\\LitigationOS\\02_TRIAL_14TH\\PRODUCTION_OUTPUT\\PDF"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EXHIBIT_COMPILATION": {
+      "status": "PASS",
+      "details": [
+        "Evidence files indexed: 0",
+        "DB exhibit entries: 718",
+        "Bates range: 02-000001 to 02-000000"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "SERVICE_PACKET": {
+      "status": "PASS",
+      "details": [
+        "Proof of service generated: PROOF_OF_SERVICE.md",
+        "Cover letter generated: COVER_LETTER.md",
+        "Mailing list generated: MAILING_LIST.md",
+        "Service parties from DB: 226"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EFILING_PREP": {
+      "status": "PASS",
+      "details": [
+        "E-filing system: MiFILE",
+        "Documents: 1365",
+        "All PDF: False",
+        "Under size limit: False"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "FINAL_REPORT": {
+      "status": "RUNNING",
+      "details": [],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PacketPlan",
+  "type": "object",
+  "required": [
+    "packet_template_id",
+    "task_id",
+    "vehicle_id",
+    "lane",
+    "court_level",
+    "status",
+    "generated",
+    "outline",
+    "exhibits",
+    "deadlines",
+    "checklist",
+    "blockers"
+  ],
+  "properties": {
+    "packet_template_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "vehicle_id": {
+      "type": "string"
+    },
+    "lane": {
+      "type": "string"
+    },
+    "court_level": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "READY",
+        "BLOCKED"
+      ]
+    },
+    "generated": {
+      "type": "string"
+    },
+    "outline": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "exhibits": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "deadlines": {
+      "type": "object"
+    },
+    "checklist": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": true
+}

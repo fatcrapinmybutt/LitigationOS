@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PacketTemplate",
+  "type": "object",
+  "required": [
+    "packet_template_id",
+    "vehicle_id",
+    "lane",
+    "court_level",
+    "outline",
+    "exhibit_requirements",
+    "required_pins",
+    "requires_deadline_eval"
+  ],
+  "properties": {
+    "packet_template_id": {
+      "type": "string"
+    },
+    "vehicle_id": {
+      "type": "string"
+    },
+    "lane": {
+      "type": "string"
+    },
+    "court_level": {
+      "type": "string"
+    },
+    "outline": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "exhibit_requirements": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "required_pins": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requires_deadline_eval": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

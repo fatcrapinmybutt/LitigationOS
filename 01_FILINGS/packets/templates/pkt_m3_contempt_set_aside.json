@@ -1,0 +1,45 @@
+{
+  "packet_template_id": "pkt_m3_contempt_set_aside",
+  "vehicle_id": "m3_trial_contempt_defense_or_set_aside",
+  "lane": "MEEK3",
+  "court_level": "TRIAL",
+  "outline": [
+    "Caption",
+    "Relief Requested",
+    "Background (notice/service/hearing chronology)",
+    "Standard (authority resolved)",
+    "Argument (due process + findings defects)",
+    "Requested Relief",
+    "Proposed Order (outline only)",
+    "Exhibit List"
+  ],
+  "exhibit_requirements": [
+    {
+      "exhibit_id": "PX-1",
+      "purpose": "Contempt/jail order(s) + mittimus",
+      "required_sources": [
+        "order_pdf_or_txt"
+      ]
+    },
+    {
+      "exhibit_id": "PX-2",
+      "purpose": "Notices + proof of service",
+      "required_sources": [
+        "service_docs"
+      ]
+    },
+    {
+      "exhibit_id": "PX-3",
+      "purpose": "Transcript excerpts",
+      "required_sources": [
+        "transcript_txt"
+      ]
+    }
+  ],
+  "required_pins": [
+    "OperatingOrderPin",
+    "AUTHKEY_CONTEMPT_PROCEDURE",
+    "AUTHKEY_CRIMINAL_CONTEMPT_PROTECTIONS"
+  ],
+  "requires_deadline_eval": true
+}

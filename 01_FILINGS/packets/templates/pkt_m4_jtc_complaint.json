@@ -1,0 +1,44 @@
+{
+  "packet_template_id": "pkt_m4_jtc_complaint",
+  "vehicle_id": "m4_jtc_complaint",
+  "lane": "MEEK4",
+  "court_level": "JTC",
+  "outline": [
+    "Identification",
+    "Chronology (record-pinned)",
+    "Conduct categories (authority keys)",
+    "Record excerpts",
+    "Requested action",
+    "Attachment index"
+  ],
+  "exhibit_requirements": [
+    {
+      "exhibit_id": "PX-1",
+      "purpose": "Orders with adverse phrasing",
+      "required_sources": [
+        "order_pdf_or_txt"
+      ]
+    },
+    {
+      "exhibit_id": "PX-2",
+      "purpose": "Transcripts",
+      "required_sources": [
+        "transcript_txt"
+      ]
+    },
+    {
+      "exhibit_id": "PX-3",
+      "purpose": "ROA/docket spine",
+      "required_sources": [
+        "docket_txt",
+        "roa"
+      ]
+    }
+  ],
+  "required_pins": [
+    "AUTHKEY_JTC_RULES",
+    "AUTHKEY_MI_CONST_JTC",
+    "AUTHKEY_MICHIGAN_CODE_OF_JUDICIAL_CONDUCT"
+  ],
+  "requires_deadline_eval": false
+}

@@ -1,0 +1,183 @@
+{
+  "pipeline": "FilingProductionPipeline v1.0",
+  "stack": "06_EMERGENCY",
+  "stack_path": "C:\\Users\\andre\\LitigationOS\\06_EMERGENCY",
+  "court": {
+    "court": "Emergency Filing",
+    "rules": "MCR 3.207",
+    "efiling": "mifile"
+  },
+  "timestamp": "2026-03-04T22:41:46.940128",
+  "elapsed_seconds": 14.21,
+  "go_nogo": "GO",
+  "documents_scanned": 335,
+  "evidence_files": 0,
+  "steps": {
+    "INTAKE": {
+      "status": "PASS",
+      "details": [
+        "Found 335 documents",
+        "Found 0 evidence files",
+        "Court context: Emergency Filing",
+        "Rules: MCR 3.207"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "PLACEHOLDER_CHECK": {
+      "status": "WARN",
+      "details": [
+        "Auto-resolvable: 0",
+        "Unresolved: 5413"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 20,
+      "warnings": [
+        "  Unresolved: [BUGFIX] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [BUGFIX] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [BUGFIX] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [BUGFIX] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [BUGFIX] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [BUGFIX] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [BUGFIX] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [BUGFIX] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [BUGFIX] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [GENERAL] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt"
+      ]
+    },
+    "AUTHORITY_CHECK": {
+      "status": "WARN",
+      "details": [
+        "Total citations found: 33575",
+        "  MCL: 14238",
+        "  MCR: 17700",
+        "  USC: 128",
+        "  Mich: 356",
+        "  Mich App: 549",
+        "  NW2d: 252",
+        "  US: 184",
+        "  FRCP: 133",
+        "  Const: 28",
+        "  F.3d: 7"
+      ],
+      "issue_count": 6,
+      "issues": [
+        "Incomplete citation: '___ (2024)' in contempt-comparison-table.pdf_93df4839.txt",
+        "Incomplete citation: '___ \n(2024)' in contempt-comparison-table.pdf_93df4839.txt",
+        "Incomplete citation: '___ (2024)' in contempt-comparison-table.pdf_93df4839_copy1.txt",
+        "Incomplete citation: '___ \n(2024)' in contempt-comparison-table.pdf_93df4839_copy1.txt",
+        "Incomplete citation: '___ (2024)' in contempt-comparison-table.pdf_93df4839_copy2.txt",
+        "Incomplete citation: '___ \n(2024)' in contempt-comparison-table.pdf_93df4839_copy2.txt"
+      ],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EVIDENCE_CHECK": {
+      "status": "PASS",
+      "details": [
+        "Exhibit references found: 399",
+        "Evidence files on disk: 0",
+        "DB evidence items loaded: 28683"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "COMPLIANCE_CHECK": {
+      "status": "PASS",
+      "details": [],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 33,
+      "warnings": [
+        "Compliance check warning for MASTER_COMPLAINT_PACKAGE.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 01_MDHHS_CPS_COMPLAINT.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 03_LARA_HOUSING_COMPLAINT.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 05_HUD_ADMIN_COMPLAINT.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 00_MASTER_BRIEF.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 05_MOTION_TERMINATE_PPO_v3.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 01_MAIN_MOTION_CONTEMPT_SHOW_CAUSE_V4.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 08_MOTION_CONTEMPT_SHOW_CAUSE_v3.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 42_EMERGENCY_LLM_EMERGENCY_BRIEF.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for FILING_PACKAGE_A_MOTION_FOR_ORDER_TO_SHOW_CAUSE_AND_CONTEMPT.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'"
+      ]
+    },
+    "QA_GATE": {
+      "status": "PASS",
+      "details": [
+        "PreFilingQAEngine available for deep QA",
+        "Steps PASS: 3 / WARN: 2 / FAIL: 0",
+        "Total issues: 6",
+        "Total warnings: 53",
+        "Verdict: GO"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "PDF_GENERATION": {
+      "status": "PASS",
+      "details": [
+        "Assembly pipeline loaded 1 files",
+        "PDF manifests generated: 198",
+        "Existing PDFs copied: 64",
+        "Output dir: C:\\Users\\andre\\LitigationOS\\06_EMERGENCY\\PRODUCTION_OUTPUT\\PDF"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EXHIBIT_COMPILATION": {
+      "status": "PASS",
+      "details": [
+        "Evidence files indexed: 0",
+        "DB exhibit entries: 718",
+        "Bates range: 06-000001 to 06-000000"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "SERVICE_PACKET": {
+      "status": "PASS",
+      "details": [
+        "Proof of service generated: PROOF_OF_SERVICE.md",
+        "Cover letter generated: COVER_LETTER.md",
+        "Mailing list generated: MAILING_LIST.md",
+        "Service parties from DB: 226"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EFILING_PREP": {
+      "status": "PASS",
+      "details": [
+        "E-filing system: MiFILE",
+        "Documents: 200",
+        "All PDF: False",
+        "Under size limit: False"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "FINAL_REPORT": {
+      "status": "RUNNING",
+      "details": [],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "system": "MiFILE",
+  "court": "Attorney Grievance Commission",
+  "stack": "05_BAR_BARNES",
+  "generated": "2026-03-04T22:41:32.715257",
+  "max_file_size_mb": 35,
+  "accepted_formats": [
+    ".pdf",
+    ".docx"
+  ],
+  "documents": [
+    {
+      "name": "02_MRPC_VIOLATION_MAP.pdf",
+      "format": ".pdf",
+      "size_bytes": 91861,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Bar_Complaint.pdf",
+      "format": ".pdf",
+      "size_bytes": 94804,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "08_CONSTITUTIONAL_SECTIONS.md",
+      "format": ".md",
+      "size_bytes": 20598,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "09_REPLY_TEMPLATES.md",
+      "format": ".md",
+      "size_bytes": 8083,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PKG10_FEDERAL_1983_FINALIZED.md",
+      "format": ".md",
+      "size_bytes": 106463,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "01_BAR_COMPLAINT.md",
+      "format": ".md",
+      "size_bytes": 2548,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "02_MRPC_VIOLATION_MAP.md",
+      "format": ".md",
+      "size_bytes": 1038,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "03_FILING_INSTRUCTIONS.md",
+      "format": ".md",
+      "size_bytes": 1128,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "CERTIFICATE_OF_MAILING.md",
+      "format": ".md",
+      "size_bytes": 1024,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COVER_LETTER.md",
+      "format": ".md",
+      "size_bytes": 701,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PROOF_OF_SERVICE.md",
+      "format": ".md",
+      "size_bytes": 999,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SERVICE_ADDRESS_LIST.md",
+      "format": ".md",
+      "size_bytes": 798,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "DEADLINE_TRACKER.md",
+      "format": ".md",
+      "size_bytes": 22097,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EXHIBIT_AUTHENTICATION_TEMPLATES.md",
+      "format": ".md",
+      "size_bytes": 25525,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "FINAL_FILING_INSTRUCTIONS.md",
+      "format": ".md",
+      "size_bytes": 39993,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "IN_FORMA_PAUPERIS_AFFIDAVIT.md",
+      "format": ".md",
+      "size_bytes": 5602,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "LITIGATION_STRATEGY_MEMO.md",
+      "format": ".md",
+      "size_bytes": 30546,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MASTER_EXHIBIT_INDEX.md",
+      "format": ".md",
+      "size_bytes": 23877,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MASTER_FILING_SEQUENCE.md",
+      "format": ".md",
+      "size_bytes": 17697,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PROOF_OF_SERVICE_TEMPLATE.md",
+      "format": ".md",
+      "size_bytes": 15864,
+      "under_limit": true,
+      "needs_conversion": true
+    }
+  ],
+  "checklist": {
+    "all_pdf": false,
+    "under_size_limit": true,
+    "service_attached": false,
+    "fee_paid_or_waived": false
+  }
+}

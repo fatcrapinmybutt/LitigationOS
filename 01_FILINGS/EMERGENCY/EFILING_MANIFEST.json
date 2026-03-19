@@ -1,0 +1,1419 @@
+{
+  "system": "MiFILE",
+  "court": "Emergency Filing",
+  "stack": "06_EMERGENCY",
+  "generated": "2026-03-04T22:41:46.940128",
+  "max_file_size_mb": 35,
+  "accepted_formats": [
+    ".pdf",
+    ".docx"
+  ],
+  "documents": [
+    {
+      "name": "02_MOTION_TERMINATE_PPO.pdf",
+      "format": ".pdf",
+      "size_bytes": 137737,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "03_MOTION_CONTEMPT_SHOW_CAUSE.pdf",
+      "format": ".pdf",
+      "size_bytes": 138271,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "04_MOTION_DISQUALIFY_JUDGE.pdf",
+      "format": ".pdf",
+      "size_bytes": 139102,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "05_MOTION_VACATE_EX_PARTE_ORDERS.pdf",
+      "format": ".pdf",
+      "size_bytes": 139740,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "06_MOTION_CHANGE_OF_VENUE.pdf",
+      "format": ".pdf",
+      "size_bytes": 136208,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "07_AFFIDAVIT_ANDREW_PIGORS.pdf",
+      "format": ".pdf",
+      "size_bytes": 143007,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "08_PROPOSED_ORDERS.pdf",
+      "format": ".pdf",
+      "size_bytes": 138832,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Emergency_Motion_Packet.pdf",
+      "format": ".pdf",
+      "size_bytes": 141752,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "1___FORM_FOC_68____OBJECTION_TO_REFEREE\u2019S_RECOMMENDED_ORDER__Use_this_form_if_____\uf0b7_you_are_objectin_40c562a3.pdf",
+      "format": ".pdf",
+      "size_bytes": 190859,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "2025-10-29_Pigors_v_Watson_MSC_Proposed_Order_Emergency_Relief_v5.pdf",
+      "format": ".pdf",
+      "size_bytes": 324649,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "2870_VAR_Form_FOC_68_OBJECTION_TO_REFEREE_S_RECOMMENDED_ORDER_Use_this_form_if__\u2022you_are_objecting_to_a_refer_195717.pdf",
+      "format": ".pdf",
+      "size_bytes": 36372,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "2920_VAR_STATE_OF_MICHIGAN_JUDICIAL_CIRCUIT_COUNTYMOTION_AND_ORDER_TO_SHOW_CAUSE_FOR_CONTEMPT_(SUPPORT)CASE_N.pdf",
+      "format": ".pdf",
+      "size_bytes": 148493,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "34_Request_Court_Appointed_Counsel_PPO_Contempt.pdf",
+      "format": ".pdf",
+      "size_bytes": 55375,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "all filings contempt.pdf",
+      "format": ".pdf",
+      "size_bytes": 3070230,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "alternative-contempt-track-plan-checklist.pdf",
+      "format": ".pdf",
+      "size_bytes": 185547,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "common-forms-of-contempt-table.pdf",
+      "format": ".pdf",
+      "size_bytes": 209281,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "conducting-civil-contempt-proceedings-checklist.pdf",
+      "format": ".pdf",
+      "size_bytes": 197437,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "conducting-criminal-contempt-proceedings-checklist.pdf",
+      "format": ".pdf",
+      "size_bytes": 82381,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "contempt bench book rules court chapter 1.pdf",
+      "format": ".pdf",
+      "size_bytes": 1690151,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "contempt bench book rules court chapter 2.pdf",
+      "format": ".pdf",
+      "size_bytes": 2630751,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "contempt-comparison-table.pdf",
+      "format": ".pdf",
+      "size_bytes": 49464,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "contempt-due-process-flowchart.pdf",
+      "format": ".pdf",
+      "size_bytes": 173202,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "contempt-of-court-flowchart.pdf",
+      "format": ".pdf",
+      "size_bytes": 113543,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "contemptbb.pdf",
+      "format": ".pdf",
+      "size_bytes": 1126543,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "contemptbb_1.pdf",
+      "format": ".pdf",
+      "size_bytes": 1557714,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "contemptbb_2.pdf",
+      "format": ".pdf",
+      "size_bytes": 4993149,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Emergency_Clerk_Filing_Memo.pdf",
+      "format": ".pdf",
+      "size_bytes": 34,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Exhibit_Covers_Bates_Assignment_2025-10-08.pdf",
+      "format": ".pdf",
+      "size_bytes": 7909,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Formatted_FOC_Objection_and_Motions Copy Copy.pdf",
+      "format": ".pdf",
+      "size_bytes": 689232,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Formatted_FOC_Objection_and_Motions Copy_1.pdf",
+      "format": ".pdf",
+      "size_bytes": 689118,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Formatted_FOC_Objection_and_Motions_d4d7feec.pdf",
+      "format": ".pdf",
+      "size_bytes": 704550,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Form_FOC_68_OBJECTION_TO_REFEREE_S_RECOMMENDED_ORDER_Use_this_form_if__\u2022you_are_objecting_to_a_refer_195801_fae25bb3.pdf",
+      "format": ".pdf",
+      "size_bytes": 30133,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Form_FOC_78_OBJECTION_TO_PROPOSED_ORDER_Use_this_form_if__\u2022you_received_notice_to_enter_a_proposed_o_2b80e32b.pdf",
+      "format": ".pdf",
+      "size_bytes": 19440,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "FULL BENCHBOOK CONTEMPT RULES.pdf",
+      "format": ".pdf",
+      "size_bytes": 110103768,
+      "under_limit": false,
+      "needs_conversion": false
+    },
+    {
+      "name": "God_Level_Contempt_Vacatur_Full_Motion_Package_1.pdf",
+      "format": ".pdf",
+      "size_bytes": 12328,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "LITIGATION_OS__ALL_PC_EVIDENCE_EXTRACTED__Uncategorized__MEEK1Appendix_Manifest_A-Index___Proposed_Order_Emergency_Ex_Parte_Pigors_2025-10-29 (1).pdf",
+      "format": ".pdf",
+      "size_bytes": 3545,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "LITIGATION_OS__ALL_PC_EVIDENCE_EXTRACTED__Uncategorized__MEEK1Appendix_Manifest_A-Index___Proposed_Order_Emergency_Ex_Parte_Pigors_2025-10-29.pdf",
+      "format": ".pdf",
+      "size_bytes": 3545,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Motion_to_Vacate_Contempt_b9877045.pdf",
+      "format": ".pdf",
+      "size_bytes": 1124,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Post_Contempt_Full_Motion_Package_7352424c.pdf",
+      "format": ".pdf",
+      "size_bytes": 1159,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Proposed_Order_Emergency_Ex_Parte_Pigors_2025-10-29 (1).pdf",
+      "format": ".pdf",
+      "size_bytes": 3195,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Proposed_Order_Emergency_Ex_Parte_Pigors_2025-10-29.pdf",
+      "format": ".pdf",
+      "size_bytes": 3195,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "sewage notice email.pdf",
+      "format": ".pdf",
+      "size_bytes": 211381,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "STATE_OF_MICHIGAN_JUDICIAL_CIRCUIT_COUNTYSWORN_WRITTEN_PETITION_AFTER__IMMEDIATE__EMERGENCY_EX_PARTE_1.pdf",
+      "format": ".pdf",
+      "size_bytes": 144356,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "summary-punishment-of-direct-contempt-checklist.pdf",
+      "format": ".pdf",
+      "size_bytes": 111902,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "EMERGENCY_FILING_PACKAGE.pdf",
+      "format": ".pdf",
+      "size_bytes": 113590,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Healthwest_Investigation_Request.pdf",
+      "format": ".pdf",
+      "size_bytes": 123548,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "COMBINED_HUD_PACKAGE.pdf",
+      "format": ".pdf",
+      "size_bytes": 40830,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "DEADLINE_ANALYSIS.pdf",
+      "format": ".pdf",
+      "size_bytes": 5983,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "EVIDENCE_INDEX.pdf",
+      "format": ".pdf",
+      "size_bytes": 6917,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "FILING_INSTRUCTIONS.pdf",
+      "format": ".pdf",
+      "size_bytes": 6048,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "HUD_COMPLAINT_FORM.pdf",
+      "format": ".pdf",
+      "size_bytes": 12314,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "SUPPORTING_STATEMENT.pdf",
+      "format": ".pdf",
+      "size_bytes": 10766,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "COMBINED_LARA_PACKAGE.pdf",
+      "format": ".pdf",
+      "size_bytes": 42742,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "EVIDENCE_INDEX.pdf",
+      "format": ".pdf",
+      "size_bytes": 10941,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "FILING_INSTRUCTIONS.pdf",
+      "format": ".pdf",
+      "size_bytes": 7201,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "LARA_COMPLAINT.pdf",
+      "format": ".pdf",
+      "size_bytes": 16729,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "VIOLATION_SCHEDULE.pdf",
+      "format": ".pdf",
+      "size_bytes": 9538,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Adverse Statements Timeline.pdf",
+      "format": ".pdf",
+      "size_bytes": 114527,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "AP Recap 062124.pdf",
+      "format": ".pdf",
+      "size_bytes": 13526085,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "bv_miapp326_final.pdf",
+      "format": ".pdf",
+      "size_bytes": 3821843,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Healthwest Investigation Request (1).pdf",
+      "format": ".pdf",
+      "size_bytes": 119607,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Healthwest Investigation Request (2).pdf",
+      "format": ".pdf",
+      "size_bytes": 123469,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Healthwest Investigation Request.pdf",
+      "format": ".pdf",
+      "size_bytes": 90268,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "Michigan Academician Volume 45 Issue 1.pdf",
+      "format": ".pdf",
+      "size_bytes": 1517971,
+      "under_limit": true,
+      "needs_conversion": false
+    },
+    {
+      "name": "MASTER_COMPLAINT_PACKAGE.md",
+      "format": ".md",
+      "size_bytes": 42230,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "01_MDHHS_CPS_COMPLAINT.md",
+      "format": ".md",
+      "size_bytes": 6519,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "02_MDHHS_EVIDENCE.md",
+      "format": ".md",
+      "size_bytes": 6064,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "03_LARA_HOUSING_COMPLAINT.md",
+      "format": ".md",
+      "size_bytes": 7606,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "04_LARA_EVIDENCE.md",
+      "format": ".md",
+      "size_bytes": 7709,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "05_HUD_ADMIN_COMPLAINT.md",
+      "format": ".md",
+      "size_bytes": 7716,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "06_ADMIN_FILING_INSTRUCTIONS.md",
+      "format": ".md",
+      "size_bytes": 8264,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "07_ADMIN_READINESS_SCORES.md",
+      "format": ".md",
+      "size_bytes": 7530,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MASTER_FILING_TRACKER.md",
+      "format": ".md",
+      "size_bytes": 6854,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "00_MASTER_BRIEF.md",
+      "format": ".md",
+      "size_bytes": 90120,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "02_EXHIBIT_GRAFT_PARAGRAPHS.md",
+      "format": ".md",
+      "size_bytes": 2867233,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "03_BUNDLE_SPECIFICATIONS.md",
+      "format": ".md",
+      "size_bytes": 829,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "05_READINESS_ASSESSMENT.md",
+      "format": ".md",
+      "size_bytes": 1583,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "06_COMPLIANCE_MATRIX.md",
+      "format": ".md",
+      "size_bytes": 1816,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "08_CONSTITUTIONAL_SECTIONS.md",
+      "format": ".md",
+      "size_bytes": 20889,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "09_REPLY_TEMPLATES.md",
+      "format": ".md",
+      "size_bytes": 8408,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "05_MOTION_TERMINATE_PPO_v3.md",
+      "format": ".md",
+      "size_bytes": 43251,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "07_EMERGENCY_STAY_v3.md",
+      "format": ".md",
+      "size_bytes": 45315,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "00_FILING_CHECKLIST.md",
+      "format": ".md",
+      "size_bytes": 4281,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "01_MAIN_MOTION_CONTEMPT_SHOW_CAUSE_V4.md",
+      "format": ".md",
+      "size_bytes": 12821,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "02_EXHIBIT_INDEX.md",
+      "format": ".md",
+      "size_bytes": 3118,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "03_EXHIBIT_FOUNDATION.md",
+      "format": ".md",
+      "size_bytes": 10709,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "04_CERTIFICATE_OF_SERVICE.md",
+      "format": ".md",
+      "size_bytes": 955,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "05_EMERGENCY_APPLICATION_EVIDENCE.md",
+      "format": ".md",
+      "size_bytes": 24320,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "07_EMERGENCY_STAY_v3.md",
+      "format": ".md",
+      "size_bytes": 45289,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "08_MOTION_CONTEMPT_SHOW_CAUSE_v3.md",
+      "format": ".md",
+      "size_bytes": 71519,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "24_CONTEMPT_JOURNAL.md",
+      "format": ".md",
+      "size_bytes": 2426227,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "24_CONTEMPT_LLM_CONTEMPT_ANALYSIS.md",
+      "format": ".md",
+      "size_bytes": 1853,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "42_EMERGENCY_JOURNAL.md",
+      "format": ".md",
+      "size_bytes": 2979821,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "42_EMERGENCY_LLM_EMERGENCY_BRIEF.md",
+      "format": ".md",
+      "size_bytes": 2811,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "CONTEMPT_REVERSAL_CASELAW.md",
+      "format": ".md",
+      "size_bytes": 244912,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EMERGENCY_THRESHOLD_ANALYSIS.md",
+      "format": ".md",
+      "size_bytes": 8400,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EVIDENCE_CHAINS.md",
+      "format": ".md",
+      "size_bytes": 21955,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EVIDENCE_CHAINS_1.md",
+      "format": ".md",
+      "size_bytes": 20966,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "FILING_PACKAGE_A_MOTION_FOR_ORDER_TO_SHOW_CAUSE_AND_CONTEMPT.md",
+      "format": ".md",
+      "size_bytes": 31732,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "FILING_PACKAGE_A_MOTION_FOR_ORDER_TO_SHOW_CAUSE_AND_CONTEMPT_1.md",
+      "format": ".md",
+      "size_bytes": 30786,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "journal_md.md",
+      "format": ".md",
+      "size_bytes": 551866,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "journal_md_1.md",
+      "format": ".md",
+      "size_bytes": 783960,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "LLM_CONTEMPT_ANALYSIS.md",
+      "format": ".md",
+      "size_bytes": 1853,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "LLM_EMERGENCY_BRIEF.md",
+      "format": ".md",
+      "size_bytes": 2811,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MEEK3_PPO_CONTEMPT.md",
+      "format": ".md",
+      "size_bytes": 97710,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MEEK3_PPO_CONTEMPT_CLEAN.md",
+      "format": ".md",
+      "size_bytes": 97704,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MEEK3_PPO_CONTEMPT_CLEAN_DELTA2.md",
+      "format": ".md",
+      "size_bytes": 97730,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MEEK3_PPO_CONTEMPT_DELTA2_RECORD_AWARE.md",
+      "format": ".md",
+      "size_bytes": 85440,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MEEK3_PPO_CONTEMPT_DELTA2_RECORD_FIRST.md",
+      "format": ".md",
+      "size_bytes": 85823,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MEEK3_PPO_Jailing_Contempt_EXHIBIT_GRADE_GRAFT_PARAGRAPHS.md",
+      "format": ".md",
+      "size_bytes": 2845887,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MSC_EMERGENCY_APPLICATION_FINAL.md",
+      "format": ".md",
+      "size_bytes": 17737,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PACKET_09_EMERGENCY_STAY_PENDING_APPEAL.md",
+      "format": ".md",
+      "size_bytes": 4296,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PKG11_SPOLIATION_NOTICE_FINALIZED.md",
+      "format": ".md",
+      "size_bytes": 31876,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PKG12_FOC_OBJECTION_FINALIZED.md",
+      "format": ".md",
+      "size_bytes": 37417,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "QC_REPORT_A_MOTION_FOR_ORDER_TO_SHOW_CAUSE_AND_CONTEMPT.md",
+      "format": ".md",
+      "size_bytes": 970,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT.md",
+      "format": ".md",
+      "size_bytes": 97710,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_CLEAN.md",
+      "format": ".md",
+      "size_bytes": 97704,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_CLEAN_DELTA2.md",
+      "format": ".md",
+      "size_bytes": 97730,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_DELTA2_RECORD_AWARE.md",
+      "format": ".md",
+      "size_bytes": 85440,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "runs_embedded__runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_DELTA2_RECORD_FIRST.md",
+      "format": ".md",
+      "size_bytes": 85823,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT.md",
+      "format": ".md",
+      "size_bytes": 97710,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_CLEAN.md",
+      "format": ".md",
+      "size_bytes": 97704,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_CLEAN_DELTA2.md",
+      "format": ".md",
+      "size_bytes": 97730,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_DELTA2_RECORD_AWARE.md",
+      "format": ".md",
+      "size_bytes": 85440,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "runs__run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_DELTA2_RECORD_FIRST.md",
+      "format": ".md",
+      "size_bytes": 85823,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT.md",
+      "format": ".md",
+      "size_bytes": 97710,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_CLEAN.md",
+      "format": ".md",
+      "size_bytes": 97704,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_CLEAN_DELTA2.md",
+      "format": ".md",
+      "size_bytes": 97730,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_DELTA2_RECORD_AWARE.md",
+      "format": ".md",
+      "size_bytes": 85440,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "run_20260211_031143__compiled_packets__MEEK3_PPO_CONTEMPT_DELTA2_RECORD_FIRST.md",
+      "format": ".md",
+      "size_bytes": 85823,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SIGNAL_SCORES.md",
+      "format": ".md",
+      "size_bytes": 14113,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SIGNAL_SCORES_1.md",
+      "format": ".md",
+      "size_bytes": 13957,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SUMMARY.md",
+      "format": ".md",
+      "size_bytes": 571,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SUMMARY_1.md",
+      "format": ".md",
+      "size_bytes": 625,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "VERBATIM_QUOTES.md",
+      "format": ".md",
+      "size_bytes": 7246,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "VERBATIM_QUOTES_1.md",
+      "format": ".md",
+      "size_bytes": 8865,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "A_EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md",
+      "format": ".md",
+      "size_bytes": 32214,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "B_VERIFIED_AFFIDAVIT.md",
+      "format": ".md",
+      "size_bytes": 16189,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "C_BRIEF_IN_SUPPORT.md",
+      "format": ".md",
+      "size_bytes": 24560,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "D_PROPOSED_ORDER.md",
+      "format": ".md",
+      "size_bytes": 8049,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "E_CERTIFICATE_OF_SERVICE.md",
+      "format": ".md",
+      "size_bytes": 1752,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "F_FEE_WAIVER_MC20.md",
+      "format": ".md",
+      "size_bytes": 5930,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "G_MIFLE_FILING_CHECKLIST.md",
+      "format": ".md",
+      "size_bytes": 6934,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "01_EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md",
+      "format": ".md",
+      "size_bytes": 10416,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "02_MOTION_TERMINATE_PPO.md",
+      "format": ".md",
+      "size_bytes": 6984,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "03_MOTION_CONTEMPT_SHOW_CAUSE.md",
+      "format": ".md",
+      "size_bytes": 7263,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "04_MOTION_DISQUALIFY_JUDGE.md",
+      "format": ".md",
+      "size_bytes": 7871,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "05_MOTION_VACATE_EX_PARTE_ORDERS.md",
+      "format": ".md",
+      "size_bytes": 8753,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "06_MOTION_CHANGE_OF_VENUE.md",
+      "format": ".md",
+      "size_bytes": 5737,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "07_AFFIDAVIT_ANDREW_PIGORS.md",
+      "format": ".md",
+      "size_bytes": 10178,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "08_PROPOSED_ORDERS.md",
+      "format": ".md",
+      "size_bytes": 7824,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "09_FILING_INSTRUCTIONS.md",
+      "format": ".md",
+      "size_bytes": 9207,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "10_READINESS_SCORES.md",
+      "format": ".md",
+      "size_bytes": 7630,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "DEADLINE_ANALYSIS.md",
+      "format": ".md",
+      "size_bytes": 5309,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EVIDENCE_INDEX.md",
+      "format": ".md",
+      "size_bytes": 6169,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "FILING_INSTRUCTIONS.md",
+      "format": ".md",
+      "size_bytes": 4698,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "HUD_COMPLAINT_FORM.md",
+      "format": ".md",
+      "size_bytes": 13001,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SUPPORTING_STATEMENT.md",
+      "format": ".md",
+      "size_bytes": 11523,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EVIDENCE_INDEX.md",
+      "format": ".md",
+      "size_bytes": 9903,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "FILING_INSTRUCTIONS.md",
+      "format": ".md",
+      "size_bytes": 4799,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "LARA_COMPLAINT.md",
+      "format": ".md",
+      "size_bytes": 16248,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "VIOLATION_SCHEDULE.md",
+      "format": ".md",
+      "size_bytes": 7980,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "CERTIFICATE_OF_MAILING.md",
+      "format": ".md",
+      "size_bytes": 1122,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COVER_LETTER.md",
+      "format": ".md",
+      "size_bytes": 809,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PROOF_OF_SERVICE.md",
+      "format": ".md",
+      "size_bytes": 1078,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SERVICE_ADDRESS_LIST.md",
+      "format": ".md",
+      "size_bytes": 892,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "ag_referral.md",
+      "format": ".md",
+      "size_bytes": 7219,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "bar_grievance.md",
+      "format": ".md",
+      "size_bytes": 7051,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "emergency_writ.md",
+      "format": ".md",
+      "size_bytes": 9602,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "motion_recuse_crossref.md",
+      "format": ".md",
+      "size_bytes": 1715,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "motion_sanctions.md",
+      "format": ".md",
+      "size_bytes": 6383,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "motion_unseal_discovery.md",
+      "format": ".md",
+      "size_bytes": 6441,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "hipaa_complaint.md",
+      "format": ".md",
+      "size_bytes": 7201,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "jtc_complaint.md",
+      "format": ".md",
+      "size_bytes": 7259,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "mdcr_complaint.md",
+      "format": ".md",
+      "size_bytes": 8279,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "recipient_rights_complaint.md",
+      "format": ".md",
+      "size_bytes": 6683,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "prosecutor_complaint.md",
+      "format": ".md",
+      "size_bytes": 6684,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "CERTIFICATE_OF_SERVICE.md",
+      "format": ".md",
+      "size_bytes": 1630,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "CERTIFICATE_OF_SERVICE_MCR2107.md",
+      "format": ".md",
+      "size_bytes": 2296,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "CIVIL_COMPLAINT.md",
+      "format": ".md",
+      "size_bytes": 13129,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COVER_PAGE.md",
+      "format": ".md",
+      "size_bytes": 2711,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EXHIBIT_INDEX_BATES.md",
+      "format": ".md",
+      "size_bytes": 7542,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EXHIBIT_STACK.md",
+      "format": ".md",
+      "size_bytes": 2047,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "HOUSING_LAW_AUTHORITY.md",
+      "format": ".md",
+      "size_bytes": 1727,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MC_01_FIRST_FILING.md",
+      "format": ".md",
+      "size_bytes": 3222,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MC_20_FEE_WAIVER.md",
+      "format": ".md",
+      "size_bytes": 5704,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MOTION_PRESERVE_EVIDENCE.md",
+      "format": ".md",
+      "size_bytes": 7551,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PROOFREAD_REPORT.md",
+      "format": ".md",
+      "size_bytes": 1014,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PROOF_OF_SERVICE.md",
+      "format": ".md",
+      "size_bytes": 4908,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PROPOSED_ORDER.md",
+      "format": ".md",
+      "size_bytes": 4502,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SPOLIATION_NOTICE_WATSON.md",
+      "format": ".md",
+      "size_bytes": 6721,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SUMMONS.md",
+      "format": ".md",
+      "size_bytes": 3614,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "DEADLINE_TRACKER.md",
+      "format": ".md",
+      "size_bytes": 22097,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "EXHIBIT_AUTHENTICATION_TEMPLATES.md",
+      "format": ".md",
+      "size_bytes": 25525,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "FINAL_FILING_INSTRUCTIONS.md",
+      "format": ".md",
+      "size_bytes": 39993,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "IN_FORMA_PAUPERIS_AFFIDAVIT.md",
+      "format": ".md",
+      "size_bytes": 5602,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "LITIGATION_STRATEGY_MEMO.md",
+      "format": ".md",
+      "size_bytes": 30546,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MASTER_EXHIBIT_INDEX.md",
+      "format": ".md",
+      "size_bytes": 23877,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "MASTER_FILING_SEQUENCE.md",
+      "format": ".md",
+      "size_bytes": 17697,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PROOF_OF_SERVICE_TEMPLATE.md",
+      "format": ".md",
+      "size_bytes": 16020,
+      "under_limit": true,
+      "needs_conversion": true
+    }
+  ],
+  "checklist": {
+    "all_pdf": false,
+    "under_size_limit": false,
+    "service_attached": false,
+    "fee_paid_or_waived": false
+  }
+}

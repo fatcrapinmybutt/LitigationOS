@@ -1,0 +1,95 @@
+{
+  "system": "TrueFiling",
+  "court": "Michigan Supreme Court",
+  "stack": "04_MSC_ORIGINAL_ACTION",
+  "generated": "2026-03-04T22:41:31.396753",
+  "max_file_size_mb": 25,
+  "accepted_formats": [
+    ".pdf"
+  ],
+  "documents": [
+    {
+      "name": "A_msc_complaint_superintending_control.md",
+      "format": ".md",
+      "size_bytes": 22583,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "B_msc_brief_in_support.md",
+      "format": ".md",
+      "size_bytes": 20434,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "C_msc_appendix.md",
+      "format": ".md",
+      "size_bytes": 8836,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "D_proof_of_service.md",
+      "format": ".md",
+      "size_bytes": 3920,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "E_verification.md",
+      "format": ".md",
+      "size_bytes": 3220,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "F_fee_waiver_motion.md",
+      "format": ".md",
+      "size_bytes": 7600,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "G_cover_letter.md",
+      "format": ".md",
+      "size_bytes": 3637,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "CERTIFICATE_OF_MAILING.md",
+      "format": ".md",
+      "size_bytes": 1280,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "COVER_LETTER.md",
+      "format": ".md",
+      "size_bytes": 925,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "PROOF_OF_SERVICE.md",
+      "format": ".md",
+      "size_bytes": 1252,
+      "under_limit": true,
+      "needs_conversion": true
+    },
+    {
+      "name": "SERVICE_ADDRESS_LIST.md",
+      "format": ".md",
+      "size_bytes": 1055,
+      "under_limit": true,
+      "needs_conversion": true
+    }
+  ],
+  "checklist": {
+    "all_pdf": false,
+    "under_size_limit": true,
+    "service_attached": false,
+    "fee_paid_or_waived": false
+  }
+}

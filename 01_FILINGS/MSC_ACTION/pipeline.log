@@ -1,0 +1,35 @@
+2026-03-04 22:41:30,628 [INFO] ======================================================================
+2026-03-04 22:41:30,629 [INFO] FILING PRODUCTION PIPELINE v1.0
+2026-03-04 22:41:30,629 [INFO] Stack: 04_MSC_ORIGINAL_ACTION
+2026-03-04 22:41:30,629 [INFO] Path:  C:\Users\andre\LitigationOS\04_MSC_ORIGINAL_ACTION
+2026-03-04 22:41:30,629 [INFO] Court: Michigan Supreme Court
+2026-03-04 22:41:30,630 [INFO] ======================================================================
+2026-03-04 22:41:30,630 [INFO] --- STEP 1: INTAKE ---
+2026-03-04 22:41:30,636 [INFO]   Intake complete: 11 docs, 0 evidence files
+2026-03-04 22:41:30,637 [INFO] --- STEP 2: PLACEHOLDER_CHECK ---
+2026-03-04 22:41:30,637 [INFO]   Loaded 45 known placeholder values
+2026-03-04 22:41:30,725 [INFO]   21 unresolved placeholders found
+2026-03-04 22:41:30,725 [INFO] --- STEP 3: AUTHORITY_CHECK ---
+2026-03-04 22:41:30,747 [INFO]   Authority check passed: 304 citations verified
+2026-03-04 22:41:30,764 [INFO] --- STEP 4: EVIDENCE_CHECK ---
+2026-03-04 22:41:31,307 [INFO]   Evidence check passed: 14 refs, 0 files
+2026-03-04 22:41:31,343 [INFO] --- STEP 5: COMPLIANCE_CHECK ---
+2026-03-04 22:41:31,345 [INFO]   Compliance passed for 0 documents
+2026-03-04 22:41:31,345 [INFO] --- STEP 6: QA_GATE (GO/NO-GO Decision) ---
+2026-03-04 22:41:31,346 [INFO]   QA Gate verdict: GO (P:4 W:1 F:0)
+2026-03-04 22:41:31,346 [INFO] --- STEP 7: PDF_GENERATION ---
+2026-03-04 22:41:31,361 [INFO]   PDF generation: 11 documents prepared
+2026-03-04 22:41:31,362 [INFO] --- STEP 8: EXHIBIT_COMPILATION ---
+2026-03-04 22:41:31,381 [INFO]   Exhibit compilation: 0 files, 718 DB entries
+2026-03-04 22:41:31,382 [INFO] --- STEP 9: SERVICE_PACKET ---
+2026-03-04 22:41:31,393 [INFO]   Service packet generated: 226 parties
+2026-03-04 22:41:31,393 [INFO] --- STEP 10: EFILING_PREP ---
+2026-03-04 22:41:31,396 [INFO]   E-filing prep: TrueFiling, 11 documents
+2026-03-04 22:41:31,396 [INFO] --- STEP 11: FINAL_REPORT ---
+2026-03-04 22:41:31,396 [INFO]   Final report written to C:\Users\andre\LitigationOS\04_MSC_ORIGINAL_ACTION\PRODUCTION_OUTPUT
+2026-03-04 22:41:31,401 [INFO] ======================================================================
+2026-03-04 22:41:31,401 [INFO] PIPELINE COMPLETE: 10/11 steps passed
+2026-03-04 22:41:31,401 [INFO] VERDICT: GO
+2026-03-04 22:41:31,401 [INFO] Output: C:\Users\andre\LitigationOS\04_MSC_ORIGINAL_ACTION\PRODUCTION_OUTPUT
+2026-03-04 22:41:31,401 [INFO] ======================================================================
+2026-03-04 22:41:31,402 [INFO]   Pipeline run logged to DB

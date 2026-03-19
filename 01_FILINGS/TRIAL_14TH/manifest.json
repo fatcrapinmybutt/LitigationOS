@@ -1,0 +1,30 @@
+{
+  "bundle_name": "Disqualification_Reassignment_Packet_2024-001507-DC",
+  "generated_date": "2026-03-04",
+  "files": [
+    {
+      "path": "Motion_Disqualify_Reassign_McNeill_MCR2003_v2.docx",
+      "role": "primary_motion_packet"
+    },
+    {
+      "path": "Motion_Disqualify_Reassign_2024-001507-DC.docx",
+      "role": "prior_version_reference"
+    },
+    {
+      "path": "Convergence_RunLedger_v1.md",
+      "role": "run_ledger"
+    },
+    {
+      "path": "Exhibit_Binder_Assembly_Checklist.md",
+      "role": "binder_checklist"
+    },
+    {
+      "path": "manifest.json",
+      "role": "manifest"
+    },
+    {
+      "path": "AdverseStatementLedger_v1.md",
+      "role": "adverse_statement_ledger"
+    }
+  ]
+}

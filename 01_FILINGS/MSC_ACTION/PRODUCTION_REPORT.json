@@ -1,0 +1,166 @@
+{
+  "pipeline": "FilingProductionPipeline v1.0",
+  "stack": "04_MSC_ORIGINAL_ACTION",
+  "stack_path": "C:\\Users\\andre\\LitigationOS\\04_MSC_ORIGINAL_ACTION",
+  "court": {
+    "court": "Michigan Supreme Court",
+    "rules": "MCR 7.306",
+    "efiling": "truefiling"
+  },
+  "timestamp": "2026-03-04T22:41:31.396753",
+  "elapsed_seconds": 0.78,
+  "go_nogo": "GO",
+  "documents_scanned": 11,
+  "evidence_files": 0,
+  "steps": {
+    "INTAKE": {
+      "status": "PASS",
+      "details": [
+        "Found 11 documents",
+        "Found 0 evidence files",
+        "Court context: Michigan Supreme Court",
+        "Rules: MCR 7.306"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "PLACEHOLDER_CHECK": {
+      "status": "WARN",
+      "details": [
+        "Auto-resolvable: 0",
+        "Unresolved: 21"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 20,
+      "warnings": [
+        "  Unresolved: [NOTARY SEAL] in E_verification.md",
+        "  Unresolved: [DATE OF MAILING] in CERTIFICATE_OF_MAILING.md",
+        "  Unresolved: [ADDRESS ON FILE WITH COURT] in CERTIFICATE_OF_MAILING.md",
+        "  Unresolved: [ZIP] in CERTIFICATE_OF_MAILING.md",
+        "  Unresolved: [ADDRESS ON FILE] in CERTIFICATE_OF_MAILING.md",
+        "  Unresolved: [CITY] in CERTIFICATE_OF_MAILING.md",
+        "  Unresolved: [ZIP] in CERTIFICATE_OF_MAILING.md",
+        "  Unresolved: [PHONE ON FILE] in COVER_LETTER.md",
+        "  Unresolved: [EMAIL ON FILE] in COVER_LETTER.md",
+        "  Unresolved: [ADDRESS ON FILE WITH COURT] in PROOF_OF_SERVICE.md"
+      ]
+    },
+    "AUTHORITY_CHECK": {
+      "status": "PASS",
+      "details": [
+        "Total citations found: 304",
+        "  MCL: 48",
+        "  MCR: 123",
+        "  Mich: 49",
+        "  Mich App: 10",
+        "  NW2d: 21",
+        "  US: 39",
+        "  Const: 14"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EVIDENCE_CHECK": {
+      "status": "PASS",
+      "details": [
+        "Exhibit references found: 14",
+        "Evidence files on disk: 0",
+        "DB evidence items loaded: 28683"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "COMPLIANCE_CHECK": {
+      "status": "PASS",
+      "details": [],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 3,
+      "warnings": [
+        "Compliance check warning for A_msc_complaint_superintending_control.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for B_msc_brief_in_support.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for F_fee_waiver_motion.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'"
+      ]
+    },
+    "QA_GATE": {
+      "status": "PASS",
+      "details": [
+        "PreFilingQAEngine available for deep QA",
+        "Steps PASS: 4 / WARN: 1 / FAIL: 0",
+        "Total issues: 0",
+        "Total warnings: 23",
+        "Verdict: GO"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "PDF_GENERATION": {
+      "status": "PASS",
+      "details": [
+        "Assembly pipeline loaded 7 files",
+        "PDF manifests generated: 11",
+        "Existing PDFs copied: 0",
+        "Output dir: C:\\Users\\andre\\LitigationOS\\04_MSC_ORIGINAL_ACTION\\PRODUCTION_OUTPUT\\PDF"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EXHIBIT_COMPILATION": {
+      "status": "PASS",
+      "details": [
+        "Evidence files indexed: 0",
+        "DB exhibit entries: 718",
+        "Bates range: 04-000001 to 04-000000"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "SERVICE_PACKET": {
+      "status": "PASS",
+      "details": [
+        "Proof of service generated: PROOF_OF_SERVICE.md",
+        "Cover letter generated: COVER_LETTER.md",
+        "Mailing list generated: MAILING_LIST.md",
+        "Service parties from DB: 226"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EFILING_PREP": {
+      "status": "PASS",
+      "details": [
+        "E-filing system: TrueFiling",
+        "Documents: 11",
+        "All PDF: False",
+        "Under size limit: True"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "FINAL_REPORT": {
+      "status": "RUNNING",
+      "details": [],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    }
+  }
+}

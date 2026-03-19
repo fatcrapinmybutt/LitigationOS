@@ -1,0 +1,60 @@
+{
+  "packet_template_id": "PKT_COA_ISSUE_V0_1",
+  "lane": "COA",
+  "vehicle_type": "APPEAL_PACKET",
+  "sections": [
+    {
+      "section_id": "cover",
+      "sequence": 10,
+      "section_type": "cover",
+      "generator_operator": "OP.DRAFT.ASSEMBLE_DOCUMENT",
+      "required_inputs": [
+        "case_meta"
+      ]
+    },
+    {
+      "section_id": "issues_presented",
+      "sequence": 20,
+      "section_type": "issues",
+      "generator_operator": "OP.DRAFT.GENERATE_AUTHORITY_BLOCK",
+      "required_inputs": [
+        "issue_atoms",
+        "standards_of_review"
+      ]
+    },
+    {
+      "section_id": "statement_of_facts",
+      "sequence": 30,
+      "section_type": "facts",
+      "generator_operator": "OP.DRAFT.GENERATE_FACT_BLOCK",
+      "required_inputs": [
+        "fact_atoms",
+        "record_pins"
+      ]
+    },
+    {
+      "section_id": "preservation",
+      "sequence": 40,
+      "section_type": "preservation",
+      "generator_operator": "OP.DRAFT.GENERATE_PRESERVATION_BLOCK",
+      "required_inputs": [
+        "preservation_map"
+      ]
+    },
+    {
+      "section_id": "appendix",
+      "sequence": 50,
+      "section_type": "appendix",
+      "generator_operator": "OP.EVIDENCE.LINK_EXHIBITS",
+      "required_inputs": [
+        "appendix_refs"
+      ]
+    }
+  ],
+  "required_forms": [],
+  "required_exhibits": [],
+  "validation_bundle": [
+    "VAL.PACKET.CAPTION_PRESENT",
+    "VAL.PACKET.SERVICE_DOC_PRESENT"
+  ]
+}

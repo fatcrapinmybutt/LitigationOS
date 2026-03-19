@@ -1,0 +1,38 @@
+{
+  "packet_template_id": "pkt_m3_ppo_modify_terminate",
+  "vehicle_id": "m3_trial_ppo_modify_terminate",
+  "lane": "MEEK3",
+  "court_level": "TRIAL",
+  "outline": [
+    "Caption",
+    "Relief Requested (modify/terminate PPO)",
+    "Background (PPO history + incidents)",
+    "Standard (authority resolved)",
+    "Argument",
+    "Requested Relief",
+    "Proposed Order (outline only)",
+    "Exhibit List"
+  ],
+  "exhibit_requirements": [
+    {
+      "exhibit_id": "PX-1",
+      "purpose": "Operative PPO order(s) + extension history",
+      "required_sources": [
+        "order_pdf_or_txt"
+      ]
+    },
+    {
+      "exhibit_id": "PX-2",
+      "purpose": "Contradictions and rebuttal evidence",
+      "required_sources": [
+        "evidence_atoms",
+        "messages"
+      ]
+    }
+  ],
+  "required_pins": [
+    "OperatingOrderPin",
+    "AUTHKEY_PPO_MODIFY_TERMINATE_PROCEDURE"
+  ],
+  "requires_deadline_eval": true
+}

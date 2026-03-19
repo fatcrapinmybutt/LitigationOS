@@ -1,0 +1,175 @@
+{
+  "pipeline": "FilingProductionPipeline v1.0",
+  "stack": "03_FEDERAL_1983",
+  "stack_path": "C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983",
+  "court": {
+    "court": "WDMI Federal Court",
+    "rules": "FRCP",
+    "efiling": "pacer"
+  },
+  "timestamp": "2026-03-04T22:41:09.630713",
+  "elapsed_seconds": 2.66,
+  "go_nogo": "GO",
+  "documents_scanned": 117,
+  "evidence_files": 0,
+  "steps": {
+    "INTAKE": {
+      "status": "PASS",
+      "details": [
+        "Found 117 documents",
+        "Found 0 evidence files",
+        "Court context: WDMI Federal Court",
+        "Rules: FRCP"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "PLACEHOLDER_CHECK": {
+      "status": "WARN",
+      "details": [
+        "Auto-resolvable: 0",
+        "Unresolved: 568"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 20,
+      "warnings": [
+        "  Unresolved: [PDF] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [ADDRESS TO BE PROVIDED UPON FILING] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [FALSE_IMPRISONMENT] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [JUDICIAL_VIOLATION] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [FALSE_IMPRISONMENT] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [JUDICIAL_VIOLATION] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [JUDICIAL_VIOLATION] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [MCR] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [JUDICIAL_VIOLATION] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+        "  Unresolved: [JUDICIAL_VIOLATION] in 01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt"
+      ]
+    },
+    "AUTHORITY_CHECK": {
+      "status": "PASS",
+      "details": [
+        "Total citations found: 2208",
+        "  MCL: 540",
+        "  MCR: 906",
+        "  USC: 171",
+        "  Mich App: 23",
+        "  US: 276",
+        "  FRCP: 189",
+        "  Const: 9",
+        "  Mich: 36",
+        "  F.3d: 55",
+        "  NW2d: 3"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EVIDENCE_CHECK": {
+      "status": "PASS",
+      "details": [
+        "Exhibit references found: 90",
+        "Evidence files on disk: 0",
+        "DB evidence items loaded: 28683"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "COMPLIANCE_CHECK": {
+      "status": "PASS",
+      "details": [],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 17,
+      "warnings": [
+        "Compliance check warning for 00_MASTER_BRIEF.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 05_USDC__FEDERAL_1983_COMPLAINT.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for 42usc1983__FILING_B4_42USC1983_FEDERAL_COMPLAINT.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for FEDERAL_1983_COMPLAINT.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for FEDERAL_1983_COMPLAINT_1.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for FEDERAL_1983_COMPLAINT_2.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for FEDERAL_1983_COMPLAINT_FINAL.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for FILING_B4_42USC1983_FEDERAL_COMPLAINT.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for PACKET_05_FEDERAL_1983_COMPLAINT.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'",
+        "Compliance check warning for PKG08_CONTEMPT_MOTION_FINALIZED.md: BriefComplianceEngine.check_word_count() missing 1 required positional argument: 'content'"
+      ]
+    },
+    "QA_GATE": {
+      "status": "PASS",
+      "details": [
+        "PreFilingQAEngine available for deep QA",
+        "Steps PASS: 4 / WARN: 1 / FAIL: 0",
+        "Total issues: 0",
+        "Total warnings: 37",
+        "Verdict: GO"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "PDF_GENERATION": {
+      "status": "PASS",
+      "details": [
+        "PDF manifests generated: 86",
+        "Existing PDFs copied: 17",
+        "Output dir: C:\\Users\\andre\\LitigationOS\\03_FEDERAL_1983\\PRODUCTION_OUTPUT\\PDF"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EXHIBIT_COMPILATION": {
+      "status": "PASS",
+      "details": [
+        "Evidence files indexed: 0",
+        "DB exhibit entries: 718",
+        "Bates range: 03-000001 to 03-000000"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "SERVICE_PACKET": {
+      "status": "PASS",
+      "details": [
+        "Proof of service generated: PROOF_OF_SERVICE.md",
+        "Cover letter generated: COVER_LETTER.md",
+        "Mailing list generated: MAILING_LIST.md",
+        "Service parties from DB: 226"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "EFILING_PREP": {
+      "status": "PASS",
+      "details": [
+        "E-filing system: PACER/CM/ECF",
+        "Documents: 89",
+        "All PDF: False",
+        "Under size limit: True"
+      ],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    },
+    "FINAL_REPORT": {
+      "status": "RUNNING",
+      "details": [],
+      "issue_count": 0,
+      "issues": [],
+      "warning_count": 0,
+      "warnings": []
+    }
+  }
+}
