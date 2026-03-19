@@ -1,0 +1,13 @@
+{
+  "generated": "2026-03-18T23:46:00.723044",
+  "tool": "Deposition Question Generator (#91)",
+  "total_questions": 106,
+  "contradiction_based": 15,
+  "targets": [
+    "Emily A. Watson",
+    "Ronald T. Berry",
+    "Jennifer Barnes (P55406)"
+  ],
+  "db_contradictions_used": 15,
+  "db_perjury_items_used": 15
+}

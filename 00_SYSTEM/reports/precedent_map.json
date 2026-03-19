@@ -1,0 +1,49 @@
+{
+  "generated": "2026-03-18T23:54:41.795105",
+  "tool": "Judicial Precedent Mapper (#99)",
+  "total_authorities": 36,
+  "filing_coverage": {
+    "F1": 9,
+    "F2": 5,
+    "F3": 6,
+    "F4": 12,
+    "F5": 1,
+    "F6": 3,
+    "F7": 8,
+    "F8": 3,
+    "F9": 9,
+    "F10": 0
+  },
+  "courts": {
+    "SCOTUS": {
+      "level": 1,
+      "weight": 10,
+      "count": 7
+    },
+    "6th Circuit": {
+      "level": 2,
+      "weight": 8,
+      "count": 3
+    },
+    "MI Supreme Court": {
+      "level": 3,
+      "weight": 9,
+      "count": 6
+    },
+    "MI Court of Appeals": {
+      "level": 4,
+      "weight": 7,
+      "count": 7
+    },
+    "Statutes": {
+      "level": 5,
+      "weight": 8,
+      "count": 8
+    },
+    "Court Rules": {
+      "level": 6,
+      "weight": 7,
+      "count": 5
+    }
+  }
+}

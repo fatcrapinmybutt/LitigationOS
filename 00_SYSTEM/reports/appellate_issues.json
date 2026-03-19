@@ -1,0 +1,129 @@
+{
+  "generated": "2026-03-18T23:52:11.203190",
+  "tool": "Appellate Issue Spotter (#96)",
+  "total_issues": 8,
+  "average_reversal": 6.5,
+  "f9_issues": 6,
+  "f8_issues": 2,
+  "issues": [
+    {
+      "id": "ISSUE-01",
+      "title": "Ex-Parte Proceedings Without Notice",
+      "description": "Trial court conducted proceedings and issued orders without proper notice to Andrew, violating due process.",
+      "standard_of_review": "De novo (constitutional question)",
+      "preserved": true,
+      "preservation_note": "Raised in multiple motions and objections on record",
+      "authority": [
+        "Mathews v Eldridge 424 US 319 (1976) \u2014 due process requires notice and opportunity to be heard",
+        "In re Rood 483 Mich 73 (2009) \u2014 notice requirements in custody proceedings",
+        "MCR 2.107 \u2014 service requirements"
+      ],
+      "reversal_likelihood": 8,
+      "filing": "F9"
+    },
+    {
+      "id": "ISSUE-02",
+      "title": "Judicial Bias / Failure to Recuse",
+      "description": "Judge McNeill demonstrated actual bias and appearance of impropriety through 1,127 documented violations.",
+      "standard_of_review": "Abuse of discretion / De novo (constitutional)",
+      "preserved": true,
+      "preservation_note": "MCR 2.003 motion filed; disqualification sought",
+      "authority": [
+        "Cain v Dep't of Corrections 451 Mich 470 (1996) \u2014 judicial bias standard",
+        "Crampton v Dep't of State 395 Mich 347 \u2014 objective bias test",
+        "MCR 2.003(C) \u2014 disqualification grounds"
+      ],
+      "reversal_likelihood": 7,
+      "filing": "F9"
+    },
+    {
+      "id": "ISSUE-03",
+      "title": "Fraud Upon the Court / Perjury",
+      "description": "Emily Watson submitted false sworn statements that formed the basis for custody and PPO orders.",
+      "standard_of_review": "De novo (fraud voids judgments)",
+      "preserved": true,
+      "preservation_note": "MCR 2.612 motion filed; evidence compiled",
+      "authority": [
+        "MCR 2.612(C)(1)(c) \u2014 fraud relief from judgment",
+        "MCR 2.612(C)(1)(d) \u2014 void judgment (no time limit)",
+        "Churchman v Rickerson 240 Mich App 223 \u2014 fraud standard"
+      ],
+      "reversal_likelihood": 6,
+      "filing": "F9"
+    },
+    {
+      "id": "ISSUE-04",
+      "title": "Best Interest Factors \u2014 Clearly Erroneous",
+      "description": "Trial court's best interest findings were against the great weight of evidence (Andrew 91/120 vs Emily 57/120).",
+      "standard_of_review": "Great weight of evidence (factual findings) / Abuse of discretion (custody decision)",
+      "preserved": true,
+      "preservation_note": "Objected to findings; evidence in record",
+      "authority": [
+        "MCL 722.23 \u2014 best interest factors",
+        "Berger v Berger 277 Mich App 700 \u2014 clearly erroneous standard",
+        "Fletcher v Fletcher 447 Mich 871 \u2014 custody standard of review"
+      ],
+      "reversal_likelihood": 6,
+      "filing": "F9"
+    },
+    {
+      "id": "ISSUE-05",
+      "title": "Parenting Time Deprivation Without Findings",
+      "description": "Emily's Aug 2025 ex-parte order suspended ALL parenting time without required MCL 722.27a(3) findings.",
+      "standard_of_review": "Abuse of discretion",
+      "preserved": true,
+      "preservation_note": "Objected on record; filed emergency motion",
+      "authority": [
+        "MCL 722.27a(3) \u2014 required findings for parenting time suspension",
+        "Shade v Wright 291 Mich App 17 \u2014 parenting time deprivation standard",
+        "Rains v Rains 301 Mich App 313 \u2014 reasonable parenting time"
+      ],
+      "reversal_likelihood": 8,
+      "filing": "F9"
+    },
+    {
+      "id": "ISSUE-06",
+      "title": "PPO Based on Insufficient Evidence",
+      "description": "PPO issued based on straw incident \u2014 insufficient for reasonable apprehension of violence.",
+      "standard_of_review": "Abuse of discretion",
+      "preserved": true,
+      "preservation_note": "Contested at hearing; moved to dissolve",
+      "authority": [
+        "MCL 600.2950 \u2014 PPO requirements",
+        "Hayford v Hayford 279 Mich App 324 \u2014 standard for PPO issuance",
+        "TM v MZ 326 Mich App 227 \u2014 evidentiary standard"
+      ],
+      "reversal_likelihood": 7,
+      "filing": "F8"
+    },
+    {
+      "id": "ISSUE-07",
+      "title": "Unauthorized Practice of Law by Berry",
+      "description": "Ronald Berry (non-attorney) drafted/advised on legal filings, constituting UPL under MCL 600.916.",
+      "standard_of_review": "De novo (legal question)",
+      "preserved": true,
+      "preservation_note": "Raised in filings; evidence of Berry's involvement documented",
+      "authority": [
+        "MCL 600.916 \u2014 unauthorized practice of law",
+        "Dressel v Ameribank 468 Mich 557 \u2014 UPL definition"
+      ],
+      "reversal_likelihood": 5,
+      "filing": "F8"
+    },
+    {
+      "id": "ISSUE-08",
+      "title": "Conspiracy to Deprive Parental Rights",
+      "description": "Emily, Berry, and Barnes acted in concert to deprive Andrew of fundamental parental liberty.",
+      "standard_of_review": "De novo (constitutional / civil rights)",
+      "preserved": true,
+      "preservation_note": "Raised in federal \u00a71983 complaint and state motions",
+      "authority": [
+        "42 USC \u00a71985(3) \u2014 conspiracy to deprive civil rights",
+        "Dennis v Sparks 449 US 24 \u2014 co-conspirators lose immunity",
+        "Troxel v Granville 530 US 57 \u2014 fundamental parental rights"
+      ],
+      "reversal_likelihood": 5,
+      "filing": "F9"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "generated": "2026-03-18T23:43:34.245044",
+  "tool": "Master Litigation Dashboard (#90)",
+  "system": {
+    "tools": 122,
+    "reports": 185,
+    "pkg_files": 0,
+    "pdfs": 0,
+    "db_tables": 804,
+    "db_size_mb": 12198
+  },
+  "evidence": {
+    "judicial_violations": 1127,
+    "detected_contradictions": 1061,
+    "watson_perjury_compilation": 5821,
+    "evidence_quotes": 36891,
+    "chatgpt_evidence": 0
+  },
+  "best_interest": {
+    "generated": "2026-03-18T23:40:58.231367",
+    "tool": "Best Interest Factor Scorecard (#88)",
+    "andrew_total": 91,
+    "emily_total": 57,
+    "max_total": 120,
+    "andrew_wins": 10,
+    "emily_wins": 0,
+    "ties": 2,
+    "factors": {
+      "a": {
+        "name": "Love, Affection & Emotional Ties",
+        "andrew": 9,
+        "emily": 5
+      },
+      "b": {
+        "name": "Capacity for Love, Affection, Guidance & Education",
+        "andrew": 8,
+        "emily": 6
+      },
+      "c": {
+        "name": "Capacity for Food, Clothing, Medical Care",
+        "andrew": 7,
+        "emily": 7
+      },
+      "d": {
+        "name": "Stable, Satisfactory Environment",
+        "andrew": 7,
+        "emily": 5
+      },
+      "e": {
+        "name": "Permanence of Family Unit",
+        "andrew": 7,
+        "emily": 5
+      },
+      "f": {
+        "name": "Moral Fitness",
+        "andrew": 8,
+        "emily": 3
+      },
+      "g": {
+        "name": "Mental & Physical Health",
+        "andrew": 7,
+        "emily": 6
+      },
+      "h": {
+        "name": "Home, School & Community Record",
+        "andrew": 7,
+        "emily": 6
+      },
+      "i": {
+        "name": "Child's Reasonable Preference",
+        "andrew": 5,
+        "emily": 5
+      },
+      "j": {
+        "name": "Willingness to Facilitate Parent-Child Relationship",
+        "andrew": 10,
+        "emily": 1
+      },
+      "k": {
+        "name": "Domestic Violence",
+        "andrew": 8,
+        "emily": 5
+      },
+      "l": {
+        "name": "Any Other Relevant Factor",
+        "andrew": 8,
+        "emily": 3
+      }
+    }
+  },
+  "damages": {
+    "generated": "2026-03-18T23:30:57.534435",
+    "tool": "Damages Recovery Calculator (#77)",
+    "conservative_total": 141025,
+    "aggressive_total": 1003830,
+    "categories": {
+      "compensatory": {
+        "name": "Compensatory Damages (\u00a71983)",
+        "conservative": 105000,
+        "aggressive": 550000
+      },
+      "punitive": {
+        "name": "Punitive Damages",
+        "conservative": 25000,
+        "aggressive": 250000
+      },
+      "statutory": {
+        "name": "Statutory Damages",
+        "conservative": 10000,
+        "aggressive": 150000
+      },
+      "costs": {
+        "name": "Recoverable Costs",
+        "conservative": 1025,
+        "aggressive": 3830
+      },
+      "fees": {
+        "name": "Attorney Fees (\u00a71988)",
+        "conservative": 0,
+        "aggressive": 50000
+      }
+    }
+  },
+  "bias": {
+    "generated": "2026-03-18T23:33:24.450234",
+    "tool": "Judicial Bias Pattern Detector (#80)",
+    "total_violations": 1127,
+    "bias_score": 5.9,
+    "indicators": {
+      "volume": 10,
+      "severity": 10,
+      "pattern": 0,
+      "temporal": 0,
+      "exparte": 9.7
+    },
+    "top_types": {},
+    "severity": {
+      "medium": 484,
+      "critical": 377,
+      "high": 243,
+      "low": 23
+    },
+    "exparte_evidence": 193
+  }
+}

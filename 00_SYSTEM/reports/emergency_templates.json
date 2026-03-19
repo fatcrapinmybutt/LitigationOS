@@ -1,0 +1,9 @@
+{
+  "generated": "2026-03-18T23:52:35.204444",
+  "tool": "Emergency Motion Template Engine (#98)",
+  "templates": [
+    "emergency_parenting",
+    "emergency_stay"
+  ],
+  "template_count": 2
+}

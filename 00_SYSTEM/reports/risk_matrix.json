@@ -1,0 +1,87 @@
+{
+  "generated": "2026-03-18T23:42:32.027426",
+  "tool": "Litigation Risk Matrix (#89)",
+  "total_filing_cost": 580,
+  "filings": {
+    "F1": {
+      "name": "Emergency Parenting Time",
+      "success_prob": 70,
+      "evidence_strength": 85,
+      "legal_basis": 80,
+      "priority_score": 158.7,
+      "filing_cost": 85
+    },
+    "F7": {
+      "name": "Custody Modification",
+      "success_prob": 60,
+      "evidence_strength": 85,
+      "legal_basis": 80,
+      "priority_score": 102.0,
+      "filing_cost": 85
+    },
+    "F2": {
+      "name": "Fraud on Court (MCR 2.612)",
+      "success_prob": 55,
+      "evidence_strength": 90,
+      "legal_basis": 75,
+      "priority_score": 92.8,
+      "filing_cost": 85
+    },
+    "F9": {
+      "name": "COA Appeal Brief (366810)",
+      "success_prob": 45,
+      "evidence_strength": 85,
+      "legal_basis": 75,
+      "priority_score": 71.7,
+      "filing_cost": 0
+    },
+    "F3": {
+      "name": "Judicial Disqualification (MCR 2.003)",
+      "success_prob": 45,
+      "evidence_strength": 95,
+      "legal_basis": 70,
+      "priority_score": 54.4,
+      "filing_cost": 0
+    },
+    "F6": {
+      "name": "JTC Complaint",
+      "success_prob": 40,
+      "evidence_strength": 95,
+      "legal_basis": 85,
+      "priority_score": 35.9,
+      "filing_cost": 0
+    },
+    "F4": {
+      "name": "\u00a71983 Federal Complaint",
+      "success_prob": 35,
+      "evidence_strength": 80,
+      "legal_basis": 65,
+      "priority_score": 30.3,
+      "filing_cost": 0
+    },
+    "F8": {
+      "name": "COA Leave Application",
+      "success_prob": 30,
+      "evidence_strength": 75,
+      "legal_basis": 60,
+      "priority_score": 22.5,
+      "filing_cost": 175
+    },
+    "F10": {
+      "name": "AGC Grievance (Barnes)",
+      "success_prob": 35,
+      "evidence_strength": 70,
+      "legal_basis": 75,
+      "priority_score": 20.4,
+      "filing_cost": 0
+    },
+    "F5": {
+      "name": "MSC Superintending Control",
+      "success_prob": 15,
+      "evidence_strength": 90,
+      "legal_basis": 50,
+      "priority_score": 9.6,
+      "filing_cost": 150
+    }
+  }
+}

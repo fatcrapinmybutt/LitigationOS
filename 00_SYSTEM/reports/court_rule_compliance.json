@@ -1,0 +1,140 @@
+{
+  "generated": "2026-03-18T23:47:52.126824",
+  "tool": "Court Rule Compliance Checker (#93)",
+  "total_rules": 52,
+  "total_docs_needed": 42,
+  "filings": {
+    "F1": {
+      "name": "Emergency Parenting Time",
+      "court": "14th Circuit (State)",
+      "rules_count": 6,
+      "required_docs": [
+        "Motion",
+        "Brief in Support",
+        "Affidavit",
+        "Certificate of Service",
+        "Proposed Order"
+      ],
+      "pkg_files": 0,
+      "pkg_exists": false
+    },
+    "F2": {
+      "name": "Fraud on Court",
+      "court": "14th Circuit (State)",
+      "rules_count": 6,
+      "required_docs": [
+        "Motion",
+        "Brief in Support",
+        "Affidavit",
+        "Exhibits",
+        "Certificate of Service"
+      ],
+      "pkg_files": 0,
+      "pkg_exists": false
+    },
+    "F3": {
+      "name": "Judicial Disqualification",
+      "court": "14th Circuit (State)",
+      "rules_count": 5,
+      "required_docs": [
+        "Motion",
+        "Brief",
+        "Affidavit of Bias",
+        "Exhibit List",
+        "Certificate of Service"
+      ],
+      "pkg_files": 0,
+      "pkg_exists": false
+    },
+    "F4": {
+      "name": "\u00a71983 Federal Complaint",
+      "court": "USDC Western District MI",
+      "rules_count": 8,
+      "required_docs": [
+        "Complaint",
+        "Civil Cover Sheet",
+        "Summons",
+        "IFP Application",
+        "Certificate of Service"
+      ],
+      "pkg_files": 0,
+      "pkg_exists": false
+    },
+    "F5": {
+      "name": "MSC Superintending Control",
+      "court": "Michigan Supreme Court",
+      "rules_count": 5,
+      "required_docs": [
+        "Complaint for Superintending Control",
+        "Brief",
+        "Appendix",
+        "Proof of Service"
+      ],
+      "pkg_files": 0,
+      "pkg_exists": false
+    },
+    "F6": {
+      "name": "JTC Complaint",
+      "court": "Judicial Tenure Commission",
+      "rules_count": 4,
+      "required_docs": [
+        "Complaint Letter/Form",
+        "Supporting Documentation"
+      ],
+      "pkg_files": 0,
+      "pkg_exists": false
+    },
+    "F7": {
+      "name": "Custody Modification",
+      "court": "14th Circuit (State)",
+      "rules_count": 6,
+      "required_docs": [
+        "Motion",
+        "Brief",
+        "Affidavit",
+        "Proposed Order",
+        "Certificate of Service"
+      ],
+      "pkg_files": 0,
+      "pkg_exists": false
+    },
+    "F8": {
+      "name": "COA Leave Application",
+      "court": "Michigan Court of Appeals",
+      "rules_count": 4,
+      "required_docs": [
+        "Application for Leave",
+        "Brief",
+        "Lower Court Record",
+        "Proof of Service"
+      ],
+      "pkg_files": 0,
+      "pkg_exists": false
+    },
+    "F9": {
+      "name": "COA Appeal Brief (366810)",
+      "court": "Michigan Court of Appeals",
+      "rules_count": 4,
+      "required_docs": [
+        "Brief on Appeal",
+        "Table of Authorities",
+        "Appendix",
+        "Proof of Service"
+      ],
+      "pkg_files": 0,
+      "pkg_exists": false
+    },
+    "F10": {
+      "name": "AGC Grievance",
+      "court": "Attorney Grievance Commission",
+      "rules_count": 4,
+      "required_docs": [
+        "Request for Investigation",
+        "Supporting Documentation",
+        "Chronology"
+      ],
+      "pkg_files": 0,
+      "pkg_exists": false
+    }
+  }
+}

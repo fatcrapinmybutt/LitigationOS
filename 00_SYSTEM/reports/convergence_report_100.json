@@ -1,0 +1,142 @@
+{
+  "generated": "2026-03-18T23:54:42.134057",
+  "tool": "Litigation Convergence Report (#100)",
+  "milestone": "CENTURY",
+  "system": {
+    "tools": 131,
+    "reports": 203,
+    "db_tables": 804,
+    "db_size_mb": 12198
+  },
+  "evidence": {
+    "judicial_violations": 1127,
+    "detected_contradictions": 1061,
+    "watson_perjury_compilation": 5821,
+    "evidence_quotes": 36891,
+    "chatgpt_evidence": 0
+  },
+  "filing_status": {
+    "F1": {
+      "name": "Emergency Parenting Time",
+      "priority": 1,
+      "status": "REVIEW",
+      "pkg_files": 0,
+      "sanction_level": "LOW",
+      "sanction_avg": 8.0,
+      "blockers": [
+        "Package not accessible from tool"
+      ]
+    },
+    "F2": {
+      "name": "Fraud on Court",
+      "priority": 5,
+      "status": "REVIEW",
+      "pkg_files": 0,
+      "sanction_level": "MEDIUM",
+      "sanction_avg": 6.5,
+      "blockers": [
+        "Package not accessible from tool"
+      ]
+    },
+    "F3": {
+      "name": "Judicial Disqualification",
+      "priority": 2,
+      "status": "REVIEW",
+      "pkg_files": 0,
+      "sanction_level": "MEDIUM",
+      "sanction_avg": 6.8,
+      "blockers": [
+        "Package not accessible from tool"
+      ]
+    },
+    "F4": {
+      "name": "\u00a71983 Federal Complaint",
+      "priority": 7,
+      "status": "REVIEW",
+      "pkg_files": 0,
+      "sanction_level": "MEDIUM",
+      "sanction_avg": 6.0,
+      "blockers": [
+        "Package not accessible from tool"
+      ]
+    },
+    "F5": {
+      "name": "MSC Superintending Control",
+      "priority": 8,
+      "status": "CAUTION",
+      "pkg_files": 0,
+      "sanction_level": "HIGH",
+      "sanction_avg": 5.0,
+      "blockers": [
+        "HIGH sanctions risk",
+        "Package not accessible from tool"
+      ]
+    },
+    "F6": {
+      "name": "JTC Complaint",
+      "priority": 3,
+      "status": "REVIEW",
+      "pkg_files": 0,
+      "sanction_level": "NONE",
+      "sanction_avg": 8.0,
+      "blockers": [
+        "Package not accessible from tool"
+      ]
+    },
+    "F7": {
+      "name": "Custody Modification",
+      "priority": 6,
+      "status": "REVIEW",
+      "pkg_files": 0,
+      "sanction_level": "LOW",
+      "sanction_avg": 7.5,
+      "blockers": [
+        "Package not accessible from tool"
+      ]
+    },
+    "F8": {
+      "name": "COA Leave Application",
+      "priority": 9,
+      "status": "REVIEW",
+      "pkg_files": 0,
+      "sanction_level": "LOW",
+      "sanction_avg": 6.5,
+      "blockers": [
+        "Package not accessible from tool"
+      ]
+    },
+    "F9": {
+      "name": "COA Appeal Brief",
+      "priority": 10,
+      "status": "REVIEW",
+      "pkg_files": 0,
+      "sanction_level": "LOW",
+      "sanction_avg": 7.5,
+      "blockers": [
+        "Package not accessible from tool"
+      ]
+    },
+    "F10": {
+      "name": "AGC Grievance",
+      "priority": 4,
+      "status": "REVIEW",
+      "pkg_files": 0,
+      "sanction_level": "NONE",
+      "sanction_avg": 7.2,
+      "blockers": [
+        "Package not accessible from tool"
+      ]
+    }
+  },
+  "overall_assessment": "NOT READY",
+  "go_count": 0,
+  "key_metrics": {
+    "best_interest_andrew": 91,
+    "best_interest_emily": 57,
+    "damages_low": 141025,
+    "damages_high": 1003830,
+    "bias_score": 5.9,
+    "appellate_issues": 8,
+    "sanctions_overall": 6.9
+  }
+}
