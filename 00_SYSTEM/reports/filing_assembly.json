@@ -1,0 +1,281 @@
+{
+  "generated": "2026-03-18T21:07:17.488750",
+  "summary": {
+    "assembled": 10,
+    "total_words": 99775,
+    "total_authorities": 396,
+    "over_limit": 4
+  },
+  "filings": {
+    "F1": {
+      "filing_id": "F1",
+      "title": "EMERGENCY MOTION FOR TEMPORARY CUSTODY AND RESTRAINING ORDER",
+      "court": "14th Circuit",
+      "status": "ASSEMBLED",
+      "word_count": 4868,
+      "page_estimate": 16,
+      "page_limit": 20,
+      "over_limit": false,
+      "sections": 25,
+      "authorities_cited": 27,
+      "authority_breakdown": {
+        "cases": 6,
+        "statutes": 19,
+        "rules": 2,
+        "constitution": 0
+      },
+      "components": [
+        "caption",
+        "toc",
+        "toa",
+        "body",
+        "verification",
+        "certificate_of_service"
+      ],
+      "output_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\ASSEMBLED_FILING.md"
+    },
+    "F2": {
+      "filing_id": "F2",
+      "title": "MOTION TO TERMINATE PERSONAL PROTECTION ORDER",
+      "court": "14th Circuit",
+      "status": "ASSEMBLED",
+      "word_count": 8420,
+      "page_estimate": 28,
+      "page_limit": 20,
+      "over_limit": true,
+      "sections": 41,
+      "authorities_cited": 33,
+      "authority_breakdown": {
+        "cases": 1,
+        "statutes": 28,
+        "rules": 4,
+        "constitution": 0
+      },
+      "components": [
+        "caption",
+        "toc",
+        "toa",
+        "body",
+        "verification",
+        "certificate_of_service"
+      ],
+      "output_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\ASSEMBLED_FILING.md"
+    },
+    "F3": {
+      "filing_id": "F3",
+      "title": "MOTION FOR DISQUALIFICATION OF JUDGE PURSUANT TO MCR 2.003",
+      "court": "14th Circuit",
+      "status": "ASSEMBLED",
+      "word_count": 14140,
+      "page_estimate": 47,
+      "page_limit": 20,
+      "over_limit": true,
+      "sections": 72,
+      "authorities_cited": 42,
+      "authority_breakdown": {
+        "cases": 26,
+        "statutes": 7,
+        "rules": 9,
+        "constitution": 0
+      },
+      "components": [
+        "caption",
+        "toc",
+        "toa",
+        "body",
+        "verification",
+        "certificate_of_service"
+      ],
+      "output_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\ASSEMBLED_FILING.md"
+    },
+    "F4": {
+      "filing_id": "F4",
+      "title": "COMPLAINT UNDER 42 U.S.C. \u00a7 1983",
+      "court": "U.S. District Court, Western District of Michigan",
+      "status": "ASSEMBLED",
+      "word_count": 14680,
+      "page_estimate": 48,
+      "page_limit": null,
+      "over_limit": null,
+      "sections": 73,
+      "authorities_cited": 42,
+      "authority_breakdown": {
+        "cases": 18,
+        "statutes": 19,
+        "rules": 5,
+        "constitution": 0
+      },
+      "components": [
+        "caption",
+        "toc",
+        "toa",
+        "body",
+        "verification",
+        "certificate_of_service"
+      ],
+      "output_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\ASSEMBLED_FILING.md"
+    },
+    "F5": {
+      "filing_id": "F5",
+      "title": "EMERGENCY MOTION TO RESTORE PARENTING TIME",
+      "court": "14th Circuit",
+      "status": "ASSEMBLED",
+      "word_count": 24022,
+      "page_estimate": 80,
+      "page_limit": 20,
+      "over_limit": true,
+      "sections": 152,
+      "authorities_cited": 103,
+      "authority_breakdown": {
+        "cases": 66,
+        "statutes": 10,
+        "rules": 23,
+        "constitution": 4
+      },
+      "components": [
+        "caption",
+        "toc",
+        "toa",
+        "body",
+        "verification",
+        "certificate_of_service"
+      ],
+      "output_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\ASSEMBLED_FILING.md"
+    },
+    "F6": {
+      "filing_id": "F6",
+      "title": "REQUEST FOR INVESTIGATION \u2014 JUDICIAL TENURE COMMISSION",
+      "court": "Judicial Tenure Commission",
+      "status": "ASSEMBLED",
+      "word_count": 7331,
+      "page_estimate": 24,
+      "page_limit": null,
+      "over_limit": null,
+      "sections": 50,
+      "authorities_cited": 22,
+      "authority_breakdown": {
+        "cases": 5,
+        "statutes": 6,
+        "rules": 11,
+        "constitution": 0
+      },
+      "components": [
+        "caption",
+        "toc",
+        "toa",
+        "body",
+        "verification",
+        "certificate_of_service"
+      ],
+      "output_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\ASSEMBLED_FILING.md"
+    },
+    "F7": {
+      "filing_id": "F7",
+      "title": "MOTION FOR RELIEF FROM JUDGMENT \u2014 FRAUD UPON THE COURT",
+      "court": "14th Circuit",
+      "status": "ASSEMBLED",
+      "word_count": 9026,
+      "page_estimate": 30,
+      "page_limit": 20,
+      "over_limit": true,
+      "sections": 37,
+      "authorities_cited": 37,
+      "authority_breakdown": {
+        "cases": 13,
+        "statutes": 12,
+        "rules": 11,
+        "constitution": 1
+      },
+      "components": [
+        "caption",
+        "toc",
+        "toa",
+        "body",
+        "verification",
+        "certificate_of_service"
+      ],
+      "output_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F7_CUSTODY_MODIFICATION\\ASSEMBLED_FILING.md"
+    },
+    "F8": {
+      "filing_id": "F8",
+      "title": "COMPLAINT FOR SUPERINTENDING CONTROL",
+      "court": "Michigan Supreme Court",
+      "status": "ASSEMBLED",
+      "word_count": 7880,
+      "page_estimate": 26,
+      "page_limit": 50,
+      "over_limit": false,
+      "sections": 42,
+      "authorities_cited": 28,
+      "authority_breakdown": {
+        "cases": 12,
+        "statutes": 6,
+        "rules": 8,
+        "constitution": 2
+      },
+      "components": [
+        "caption",
+        "toc",
+        "toa",
+        "body",
+        "verification",
+        "certificate_of_service"
+      ],
+      "output_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F8_PPO_TERMINATION\\ASSEMBLED_FILING.md"
+    },
+    "F9": {
+      "filing_id": "F9",
+      "title": "APPEAL BRIEF",
+      "court": "Michigan Court of Appeals",
+      "status": "ASSEMBLED",
+      "word_count": 7371,
+      "page_estimate": 24,
+      "page_limit": 50,
+      "over_limit": false,
+      "sections": 54,
+      "authorities_cited": 47,
+      "authority_breakdown": {
+        "cases": 21,
+        "statutes": 5,
+        "rules": 20,
+        "constitution": 1
+      },
+      "components": [
+        "caption",
+        "toc",
+        "toa",
+        "body",
+        "verification",
+        "certificate_of_service"
+      ],
+      "output_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F9_COA_BRIEF_ON_APPEAL\\ASSEMBLED_FILING.md"
+    },
+    "F10": {
+      "filing_id": "F10",
+      "title": "REQUEST FOR INVESTIGATION \u2014 ATTORNEY GRIEVANCE COMMISSION",
+      "court": "Attorney Grievance Commission",
+      "status": "ASSEMBLED",
+      "word_count": 2037,
+      "page_estimate": 6,
+      "page_limit": null,
+      "over_limit": null,
+      "sections": 15,
+      "authorities_cited": 15,
+      "authority_breakdown": {
+        "cases": 8,
+        "statutes": 0,
+        "rules": 7,
+        "constitution": 0
+      },
+      "components": [
+        "caption",
+        "toc",
+        "toa",
+        "body",
+        "verification",
+        "certificate_of_service"
+      ],
+      "output_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION\\ASSEMBLED_FILING.md"
+    }
+  }
+}
