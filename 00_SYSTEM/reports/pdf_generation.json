@@ -1,0 +1,551 @@
+{
+  "generated": "2026-03-18T22:57:19.316843",
+  "tool": "Court-Ready PDF Generator (#48)",
+  "output_dir": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PDF_OUTPUT",
+  "total_pdfs": 87,
+  "total_errors": 0,
+  "filings": {
+    "F10": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "pdf": "01_MAIN_FILING.pdf",
+        "size": 20344,
+        "status": "\u2705"
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "pdf": "02_AFFIDAVIT.pdf",
+        "size": 5652,
+        "status": "\u2705"
+      },
+      {
+        "file": "03_EXHIBIT_INDEX.md",
+        "pdf": "03_EXHIBIT_INDEX.pdf",
+        "size": 1888,
+        "status": "\u2705"
+      },
+      {
+        "file": "04_CERTIFICATE_OF_SERVICE.md",
+        "pdf": "04_CERTIFICATE_OF_SERVICE.pdf",
+        "size": 2179,
+        "status": "\u2705"
+      },
+      {
+        "file": "05_COURT_FORMS_CHECKLIST.md",
+        "pdf": "05_COURT_FORMS_CHECKLIST.pdf",
+        "size": 2155,
+        "status": "\u2705"
+      },
+      {
+        "file": "06_CAPTION.md",
+        "pdf": "06_CAPTION.pdf",
+        "size": 1770,
+        "status": "\u2705"
+      },
+      {
+        "file": "ASSEMBLED_FILING.md",
+        "pdf": "ASSEMBLED_FILING.pdf",
+        "size": 24474,
+        "status": "\u2705"
+      },
+      {
+        "file": "PACKAGE_MANIFEST.md",
+        "pdf": "PACKAGE_MANIFEST.pdf",
+        "size": 2992,
+        "status": "\u2705"
+      }
+    ],
+    "F1": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "pdf": "01_MAIN_FILING.pdf",
+        "size": 45770,
+        "status": "\u2705"
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "pdf": "02_AFFIDAVIT.pdf",
+        "size": 5631,
+        "status": "\u2705"
+      },
+      {
+        "file": "03_EXHIBIT_INDEX.md",
+        "pdf": "03_EXHIBIT_INDEX.pdf",
+        "size": 1889,
+        "status": "\u2705"
+      },
+      {
+        "file": "04_CERTIFICATE_OF_SERVICE.md",
+        "pdf": "04_CERTIFICATE_OF_SERVICE.pdf",
+        "size": 2179,
+        "status": "\u2705"
+      },
+      {
+        "file": "05_COURT_FORMS_CHECKLIST.md",
+        "pdf": "05_COURT_FORMS_CHECKLIST.pdf",
+        "size": 2276,
+        "status": "\u2705"
+      },
+      {
+        "file": "06_CAPTION.md",
+        "pdf": "06_CAPTION.pdf",
+        "size": 1778,
+        "status": "\u2705"
+      },
+      {
+        "file": "ASSEMBLED_FILING.md",
+        "pdf": "ASSEMBLED_FILING.pdf",
+        "size": 51135,
+        "status": "\u2705"
+      },
+      {
+        "file": "PACKAGE_MANIFEST.md",
+        "pdf": "PACKAGE_MANIFEST.pdf",
+        "size": 3134,
+        "status": "\u2705"
+      }
+    ],
+    "F2": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "pdf": "01_MAIN_FILING.pdf",
+        "size": 57734,
+        "status": "\u2705"
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "pdf": "02_AFFIDAVIT.pdf",
+        "size": 5739,
+        "status": "\u2705"
+      },
+      {
+        "file": "03_EXHIBIT_INDEX.md",
+        "pdf": "03_EXHIBIT_INDEX.pdf",
+        "size": 1898,
+        "status": "\u2705"
+      },
+      {
+        "file": "04_CERTIFICATE_OF_SERVICE.md",
+        "pdf": "04_CERTIFICATE_OF_SERVICE.pdf",
+        "size": 2179,
+        "status": "\u2705"
+      },
+      {
+        "file": "05_COURT_FORMS_CHECKLIST.md",
+        "pdf": "05_COURT_FORMS_CHECKLIST.pdf",
+        "size": 2286,
+        "status": "\u2705"
+      },
+      {
+        "file": "06_CAPTION.md",
+        "pdf": "06_CAPTION.pdf",
+        "size": 1778,
+        "status": "\u2705"
+      },
+      {
+        "file": "ASSEMBLED_FILING.md",
+        "pdf": "ASSEMBLED_FILING.pdf",
+        "size": 77367,
+        "status": "\u2705"
+      },
+      {
+        "file": "PACKAGE_MANIFEST.md",
+        "pdf": "PACKAGE_MANIFEST.pdf",
+        "size": 3144,
+        "status": "\u2705"
+      }
+    ],
+    "F3": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "pdf": "01_MAIN_FILING.pdf",
+        "size": 33799,
+        "status": "\u2705"
+      },
+      {
+        "file": "01B_BRIEF_IN_SUPPORT.md",
+        "pdf": "01B_BRIEF_IN_SUPPORT.pdf",
+        "size": 23385,
+        "status": "\u2705"
+      },
+      {
+        "file": "01C_SUPPORTING_DOCUMENTS.md",
+        "pdf": "01C_SUPPORTING_DOCUMENTS.pdf",
+        "size": 13760,
+        "status": "\u2705"
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "pdf": "02_AFFIDAVIT.pdf",
+        "size": 5891,
+        "status": "\u2705"
+      },
+      {
+        "file": "03_EXHIBIT_INDEX.md",
+        "pdf": "03_EXHIBIT_INDEX.pdf",
+        "size": 1898,
+        "status": "\u2705"
+      },
+      {
+        "file": "04_CERTIFICATE_OF_SERVICE.md",
+        "pdf": "04_CERTIFICATE_OF_SERVICE.pdf",
+        "size": 2179,
+        "status": "\u2705"
+      },
+      {
+        "file": "05_COURT_FORMS_CHECKLIST.md",
+        "pdf": "05_COURT_FORMS_CHECKLIST.pdf",
+        "size": 2415,
+        "status": "\u2705"
+      },
+      {
+        "file": "06_CAPTION.md",
+        "pdf": "06_CAPTION.pdf",
+        "size": 1778,
+        "status": "\u2705"
+      },
+      {
+        "file": "ASSEMBLED_FILING.md",
+        "pdf": "ASSEMBLED_FILING.pdf",
+        "size": 116872,
+        "status": "\u2705"
+      },
+      {
+        "file": "PACKAGE_MANIFEST.md",
+        "pdf": "PACKAGE_MANIFEST.pdf",
+        "size": 3224,
+        "status": "\u2705"
+      }
+    ],
+    "F4": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "pdf": "01_MAIN_FILING.pdf",
+        "size": 111758,
+        "status": "\u2705"
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "pdf": "02_AFFIDAVIT.pdf",
+        "size": 5833,
+        "status": "\u2705"
+      },
+      {
+        "file": "03_EXHIBIT_INDEX.md",
+        "pdf": "03_EXHIBIT_INDEX.pdf",
+        "size": 1899,
+        "status": "\u2705"
+      },
+      {
+        "file": "04_CERTIFICATE_OF_SERVICE.md",
+        "pdf": "04_CERTIFICATE_OF_SERVICE.pdf",
+        "size": 2179,
+        "status": "\u2705"
+      },
+      {
+        "file": "05_COURT_FORMS_CHECKLIST.md",
+        "pdf": "05_COURT_FORMS_CHECKLIST.pdf",
+        "size": 2144,
+        "status": "\u2705"
+      },
+      {
+        "file": "06_CAPTION.md",
+        "pdf": "06_CAPTION.pdf",
+        "size": 1765,
+        "status": "\u2705"
+      },
+      {
+        "file": "ASSEMBLED_FILING.md",
+        "pdf": "ASSEMBLED_FILING.pdf",
+        "size": 119971,
+        "status": "\u2705"
+      },
+      {
+        "file": "PACKAGE_MANIFEST.md",
+        "pdf": "PACKAGE_MANIFEST.pdf",
+        "size": 2937,
+        "status": "\u2705"
+      }
+    ],
+    "F5": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "pdf": "01_MAIN_FILING.pdf",
+        "size": 51973,
+        "status": "\u2705"
+      },
+      {
+        "file": "01B_BRIEF_IN_SUPPORT.md",
+        "pdf": "01B_BRIEF_IN_SUPPORT.pdf",
+        "size": 47903,
+        "status": "\u2705"
+      },
+      {
+        "file": "01C_SUPPORTING_DOCUMENTS.md",
+        "pdf": "01C_SUPPORTING_DOCUMENTS.pdf",
+        "size": 32651,
+        "status": "\u2705"
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "pdf": "02_AFFIDAVIT.pdf",
+        "size": 5666,
+        "status": "\u2705"
+      },
+      {
+        "file": "03_EXHIBIT_INDEX.md",
+        "pdf": "03_EXHIBIT_INDEX.pdf",
+        "size": 3913,
+        "status": "\u2705"
+      },
+      {
+        "file": "04_CERTIFICATE_OF_SERVICE.md",
+        "pdf": "04_CERTIFICATE_OF_SERVICE.pdf",
+        "size": 2179,
+        "status": "\u2705"
+      },
+      {
+        "file": "05_COURT_FORMS_CHECKLIST.md",
+        "pdf": "05_COURT_FORMS_CHECKLIST.pdf",
+        "size": 2224,
+        "status": "\u2705"
+      },
+      {
+        "file": "06_CAPTION.md",
+        "pdf": "06_CAPTION.pdf",
+        "size": 1756,
+        "status": "\u2705"
+      },
+      {
+        "file": "ASSEMBLED_FILING.md",
+        "pdf": "ASSEMBLED_FILING.pdf",
+        "size": 209287,
+        "status": "\u2705"
+      },
+      {
+        "file": "PACKAGE_MANIFEST.md",
+        "pdf": "PACKAGE_MANIFEST.pdf",
+        "size": 3029,
+        "status": "\u2705"
+      }
+    ],
+    "F6": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "pdf": "01_MAIN_FILING.pdf",
+        "size": 62592,
+        "status": "\u2705"
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "pdf": "02_AFFIDAVIT.pdf",
+        "size": 5639,
+        "status": "\u2705"
+      },
+      {
+        "file": "03_EXHIBIT_INDEX.md",
+        "pdf": "03_EXHIBIT_INDEX.pdf",
+        "size": 1881,
+        "status": "\u2705"
+      },
+      {
+        "file": "04_CERTIFICATE_OF_SERVICE.md",
+        "pdf": "04_CERTIFICATE_OF_SERVICE.pdf",
+        "size": 2179,
+        "status": "\u2705"
+      },
+      {
+        "file": "05_COURT_FORMS_CHECKLIST.md",
+        "pdf": "05_COURT_FORMS_CHECKLIST.pdf",
+        "size": 2219,
+        "status": "\u2705"
+      },
+      {
+        "file": "06_CAPTION.md",
+        "pdf": "06_CAPTION.pdf",
+        "size": 1756,
+        "status": "\u2705"
+      },
+      {
+        "file": "ASSEMBLED_FILING.md",
+        "pdf": "ASSEMBLED_FILING.pdf",
+        "size": 68990,
+        "status": "\u2705"
+      },
+      {
+        "file": "PACKAGE_MANIFEST.md",
+        "pdf": "PACKAGE_MANIFEST.pdf",
+        "size": 3024,
+        "status": "\u2705"
+      }
+    ],
+    "F7": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "pdf": "01_MAIN_FILING.pdf",
+        "size": 14332,
+        "status": "\u2705"
+      },
+      {
+        "file": "01B_BRIEF_IN_SUPPORT.md",
+        "pdf": "01B_BRIEF_IN_SUPPORT.pdf",
+        "size": 35362,
+        "status": "\u2705"
+      },
+      {
+        "file": "01C_SUPPORTING_DOCUMENTS.md",
+        "pdf": "01C_SUPPORTING_DOCUMENTS.pdf",
+        "size": 12051,
+        "status": "\u2705"
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "pdf": "02_AFFIDAVIT.pdf",
+        "size": 5898,
+        "status": "\u2705"
+      },
+      {
+        "file": "03_EXHIBIT_INDEX.md",
+        "pdf": "03_EXHIBIT_INDEX.pdf",
+        "size": 10574,
+        "status": "\u2705"
+      },
+      {
+        "file": "04_CERTIFICATE_OF_SERVICE.md",
+        "pdf": "04_CERTIFICATE_OF_SERVICE.pdf",
+        "size": 2179,
+        "status": "\u2705"
+      },
+      {
+        "file": "05_COURT_FORMS_CHECKLIST.md",
+        "pdf": "05_COURT_FORMS_CHECKLIST.pdf",
+        "size": 2414,
+        "status": "\u2705"
+      },
+      {
+        "file": "06_CAPTION.md",
+        "pdf": "06_CAPTION.pdf",
+        "size": 1778,
+        "status": "\u2705"
+      },
+      {
+        "file": "ASSEMBLED_FILING.md",
+        "pdf": "ASSEMBLED_FILING.pdf",
+        "size": 79051,
+        "status": "\u2705"
+      },
+      {
+        "file": "PACKAGE_MANIFEST.md",
+        "pdf": "PACKAGE_MANIFEST.pdf",
+        "size": 3221,
+        "status": "\u2705"
+      }
+    ],
+    "F8": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "pdf": "01_MAIN_FILING.pdf",
+        "size": 68424,
+        "status": "\u2705"
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "pdf": "02_AFFIDAVIT.pdf",
+        "size": 5657,
+        "status": "\u2705"
+      },
+      {
+        "file": "03_EXHIBIT_INDEX.md",
+        "pdf": "03_EXHIBIT_INDEX.pdf",
+        "size": 1886,
+        "status": "\u2705"
+      },
+      {
+        "file": "04_CERTIFICATE_OF_SERVICE.md",
+        "pdf": "04_CERTIFICATE_OF_SERVICE.pdf",
+        "size": 2179,
+        "status": "\u2705"
+      },
+      {
+        "file": "05_COURT_FORMS_CHECKLIST.md",
+        "pdf": "05_COURT_FORMS_CHECKLIST.pdf",
+        "size": 2148,
+        "status": "\u2705"
+      },
+      {
+        "file": "06_CAPTION.md",
+        "pdf": "06_CAPTION.pdf",
+        "size": 1776,
+        "status": "\u2705"
+      },
+      {
+        "file": "ASSEMBLED_FILING.md",
+        "pdf": "ASSEMBLED_FILING.pdf",
+        "size": 74813,
+        "status": "\u2705"
+      },
+      {
+        "file": "PACKAGE_MANIFEST.md",
+        "pdf": "PACKAGE_MANIFEST.pdf",
+        "size": 2927,
+        "status": "\u2705"
+      }
+    ],
+    "F9": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "pdf": "01_MAIN_FILING.pdf",
+        "size": 61064,
+        "status": "\u2705"
+      },
+      {
+        "file": "01D_SETTLED_STATEMENT.md",
+        "pdf": "01D_SETTLED_STATEMENT.pdf",
+        "size": 5990,
+        "status": "\u2705"
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "pdf": "02_AFFIDAVIT.pdf",
+        "size": 5518,
+        "status": "\u2705"
+      },
+      {
+        "file": "03_EXHIBIT_INDEX.md",
+        "pdf": "03_EXHIBIT_INDEX.pdf",
+        "size": 1888,
+        "status": "\u2705"
+      },
+      {
+        "file": "04_CERTIFICATE_OF_SERVICE.md",
+        "pdf": "04_CERTIFICATE_OF_SERVICE.pdf",
+        "size": 2179,
+        "status": "\u2705"
+      },
+      {
+        "file": "05_COURT_FORMS_CHECKLIST.md",
+        "pdf": "05_COURT_FORMS_CHECKLIST.pdf",
+        "size": 2160,
+        "status": "\u2705"
+      },
+      {
+        "file": "06_CAPTION.md",
+        "pdf": "06_CAPTION.pdf",
+        "size": 1770,
+        "status": "\u2705"
+      },
+      {
+        "file": "ASSEMBLED_FILING.md",
+        "pdf": "ASSEMBLED_FILING.pdf",
+        "size": 68721,
+        "status": "\u2705"
+      },
+      {
+        "file": "PACKAGE_MANIFEST.md",
+        "pdf": "PACKAGE_MANIFEST.pdf",
+        "size": 2996,
+        "status": "\u2705"
+      }
+    ]
+  }
+}

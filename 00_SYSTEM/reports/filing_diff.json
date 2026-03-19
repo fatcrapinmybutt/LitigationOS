@@ -1,0 +1,208 @@
+{
+  "generated": "2026-03-18T23:01:15.053185",
+  "tool": "Filing Diff Comparator (#53)",
+  "total_pairs": 20,
+  "total_changes": 18,
+  "diffs": {
+    "F10": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "backup": "01_MAIN_FILING.md.bak.convergence_20260318_224412",
+        "backup_count": 2,
+        "summary": "Words: 2,131 \u2192 2,131 (+0) | Lines: 223 \u2192 223 (+0)",
+        "additions": 0,
+        "deletions": 0,
+        "diff_lines": 0
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "backup": "02_AFFIDAVIT.md.bak.pre_rebuild_20260318_224549",
+        "backup_count": 1,
+        "summary": "Words: 235 \u2192 382 (+147) | Lines: 47 \u2192 85 (+38) | Sections added: 4 | Sections removed: 2",
+        "additions": 65,
+        "deletions": 27,
+        "diff_lines": 115
+      }
+    ],
+    "F1": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "backup": "01_MAIN_FILING.md.bak.convergence_20260318_224412",
+        "backup_count": 2,
+        "summary": "Words: 5,081 \u2192 5,081 (+0) | Lines: 515 \u2192 515 (+0)",
+        "additions": 0,
+        "deletions": 0,
+        "diff_lines": 0
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "backup": "02_AFFIDAVIT.md.bak.pre_rebuild_20260318_224548",
+        "backup_count": 1,
+        "summary": "Words: 230 \u2192 377 (+147) | Lines: 47 \u2192 85 (+38) | Sections added: 4 | Sections removed: 2",
+        "additions": 65,
+        "deletions": 27,
+        "diff_lines": 115
+      }
+    ],
+    "F2": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "backup": "01_MAIN_FILING.md.bak.trim_20260318_224734",
+        "backup_count": 2,
+        "summary": "Words: 6,881 \u2192 6,893 (+12) | Lines: 545 \u2192 545 (+0)",
+        "additions": 4,
+        "deletions": 4,
+        "diff_lines": 24
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "backup": "02_AFFIDAVIT.md.bak.pre_rebuild_20260318_224548",
+        "backup_count": 1,
+        "summary": "Words: 231 \u2192 396 (+165) | Lines: 47 \u2192 86 (+39) | Sections added: 4 | Sections removed: 2",
+        "additions": 66,
+        "deletions": 27,
+        "diff_lines": 116
+      }
+    ],
+    "F3": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "backup": "01_MAIN_FILING.md.bak.trim_20260318_224734",
+        "backup_count": 3,
+        "summary": "Words: 8,660 \u2192 4,391 (-4,269) | Lines: 663 \u2192 242 (-421) | Sections removed: 45",
+        "additions": 0,
+        "deletions": 409,
+        "diff_lines": 427
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "backup": "02_AFFIDAVIT.md.bak.pre_rebuild_20260318_224548",
+        "backup_count": 1,
+        "summary": "Words: 231 \u2192 417 (+186) | Lines: 47 \u2192 89 (+42) | Sections added: 4 | Sections removed: 2",
+        "additions": 69,
+        "deletions": 27,
+        "diff_lines": 119
+      }
+    ],
+    "F4": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "backup": "01_MAIN_FILING.md.bak.convergence_20260318_224412",
+        "backup_count": 2,
+        "summary": "Words: 15,228 \u2192 15,230 (+2) | Lines: 878 \u2192 878 (+0)",
+        "additions": 3,
+        "deletions": 3,
+        "diff_lines": 29
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "backup": "02_AFFIDAVIT.md.bak.pre_rebuild_20260318_224548",
+        "backup_count": 1,
+        "summary": "Words: 227 \u2192 424 (+197) | Lines: 47 \u2192 88 (+41) | Sections added: 4 | Sections removed: 2",
+        "additions": 68,
+        "deletions": 27,
+        "diff_lines": 118
+      }
+    ],
+    "F5": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "backup": "01_MAIN_FILING.md.bak.trim_20260318_224734",
+        "backup_count": 3,
+        "summary": "Words: 15,829 \u2192 6,570 (-9,259) | Lines: 1,587 \u2192 562 (-1,025) | Sections removed: 109",
+        "additions": 1,
+        "deletions": 950,
+        "diff_lines": 1040
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "backup": "02_AFFIDAVIT.md.bak.pre_rebuild_20260318_224548",
+        "backup_count": 1,
+        "summary": "Words: 251 \u2192 388 (+137) | Lines: 56 \u2192 85 (+29) | Sections added: 4 | Sections removed: 3",
+        "additions": 62,
+        "deletions": 33,
+        "diff_lines": 121
+      }
+    ],
+    "F6": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "backup": "01_MAIN_FILING.md.bak.convergence_20260318_224412",
+        "backup_count": 1,
+        "summary": "Words: 7,709 \u2192 7,718 (+9) | Lines: 590 \u2192 590 (+0)",
+        "additions": 3,
+        "deletions": 3,
+        "diff_lines": 29
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "backup": "02_AFFIDAVIT.md.bak.pre_rebuild_20260318_224548",
+        "backup_count": 1,
+        "summary": "Words: 226 \u2192 381 (+155) | Lines: 47 \u2192 85 (+38) | Sections added: 4 | Sections removed: 2",
+        "additions": 65,
+        "deletions": 27,
+        "diff_lines": 115
+      }
+    ],
+    "F7": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "backup": "01_MAIN_FILING.md.bak.pre_split",
+        "backup_count": 3,
+        "summary": "Words: 7,393 \u2192 1,582 (-5,811) | Lines: 596 \u2192 158 (-438) | Sections removed: 31",
+        "additions": 2,
+        "deletions": 434,
+        "diff_lines": 461
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "backup": "02_AFFIDAVIT.md.bak.pre_rebuild_20260318_224548",
+        "backup_count": 1,
+        "summary": "Words: 319 \u2192 433 (+114) | Lines: 69 \u2192 91 (+22) | Sections added: 4 | Sections removed: 3",
+        "additions": 68,
+        "deletions": 46,
+        "diff_lines": 140
+      }
+    ],
+    "F8": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "backup": "01_MAIN_FILING.md.bak.convergence_20260318_224412",
+        "backup_count": 1,
+        "summary": "Words: 8,266 \u2192 8,268 (+2) | Lines: 787 \u2192 787 (+0)",
+        "additions": 1,
+        "deletions": 1,
+        "diff_lines": 11
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "backup": "02_AFFIDAVIT.md.bak.pre_rebuild_20260318_224549",
+        "backup_count": 1,
+        "summary": "Words: 230 \u2192 387 (+157) | Lines: 47 \u2192 85 (+38) | Sections added: 4 | Sections removed: 2",
+        "additions": 65,
+        "deletions": 27,
+        "diff_lines": 115
+      }
+    ],
+    "F9": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "backup": "01_MAIN_FILING.md.bak.convergence_20260318_224412",
+        "backup_count": 1,
+        "summary": "Words: 7,724 \u2192 7,728 (+4) | Lines: 589 \u2192 589 (+0)",
+        "additions": 2,
+        "deletions": 2,
+        "diff_lines": 20
+      },
+      {
+        "file": "02_AFFIDAVIT.md",
+        "backup": "02_AFFIDAVIT.md.bak.pre_rebuild_20260318_224549",
+        "backup_count": 1,
+        "summary": "Words: 231 \u2192 367 (+136) | Lines: 47 \u2192 83 (+36) | Sections added: 4 | Sections removed: 2",
+        "additions": 63,
+        "deletions": 27,
+        "diff_lines": 113
+      }
+    ]
+  }
+}

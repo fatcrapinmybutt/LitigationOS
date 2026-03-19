@@ -1,0 +1,318 @@
+{
+  "generated": "2026-03-18T22:59:28.256732",
+  "tool": "Court Form Auto-Filler (#51)",
+  "forms_count": 12,
+  "fields_count": 198,
+  "instructions": {
+    "F1": {
+      "forms": [
+        {
+          "form_id": "MC 01",
+          "filing_id": "F1",
+          "fields": {
+            "Court name": "14th Circuit Court, Muskegon County",
+            "Court address": "990 Terrace St, Muskegon, MI 49442",
+            "Case No.": "2024-001507-DC",
+            "Judge": "Hon. Jenny L. McNeill",
+            "Plaintiff/Petitioner name": "Andrew James Pigors",
+            "Plaintiff address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Plaintiff telephone": "(231) 903-5690",
+            "Plaintiff email": "andrewjpigors@gmail.com",
+            "Defendant/Respondent name": "Emily A. Watson",
+            "Defendant address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Filed by": "Andrew James Pigors",
+            "Filing date": "[DATE OF FILING]",
+            "Attorney/Bar No.": "In Propria Persona (Pro Se)",
+            "Type of case": "Domestic Relations",
+            "Related cases": "2024-001507-DC, 2023-5907-PP, 2025-002760-CZ, 366810"
+          }
+        },
+        {
+          "form_id": "MC 02",
+          "filing_id": "F1",
+          "fields": {
+            "Court name": "14th Circuit Court, Muskegon County",
+            "Court address": "990 Terrace St, Muskegon, MI 49442",
+            "Case No.": "2024-001507-DC",
+            "Judge": "Hon. Jenny L. McNeill",
+            "Plaintiff/Petitioner name": "Andrew James Pigors",
+            "Plaintiff address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Plaintiff telephone": "(231) 903-5690",
+            "Plaintiff email": "andrewjpigors@gmail.com",
+            "Defendant/Respondent name": "Emily A. Watson",
+            "Defendant address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Filed by": "Andrew James Pigors",
+            "Filing date": "[DATE OF FILING]",
+            "Attorney/Bar No.": "In Propria Persona (Pro Se)",
+            "Served on": "Emily A. Watson",
+            "Service address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Method": "[First-class mail / Personal service]",
+            "Date of service": "[DATE OF SERVICE]",
+            "Server name": "Andrew James Pigors",
+            "Server address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445"
+          }
+        },
+        {
+          "form_id": "FOC 10",
+          "filing_id": "F1",
+          "fields": {
+            "Court name": "14th Circuit Court, Muskegon County",
+            "Court address": "990 Terrace St, Muskegon, MI 49442",
+            "Case No.": "2024-001507-DC",
+            "Judge": "Hon. Jenny L. McNeill",
+            "Plaintiff/Petitioner name": "Andrew James Pigors",
+            "Plaintiff address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Plaintiff telephone": "(231) 903-5690",
+            "Plaintiff email": "andrewjpigors@gmail.com",
+            "Defendant/Respondent name": "Emily A. Watson",
+            "Defendant address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Filed by": "Andrew James Pigors",
+            "Filing date": "[DATE OF FILING]",
+            "Attorney/Bar No.": "In Propria Persona (Pro Se)",
+            "Child initials": "L.D.W.",
+            "Child DOB": "November 9, 2022",
+            "Present address": "[CHILD'S CURRENT ADDRESS]",
+            "Home state": "Michigan"
+          }
+        }
+      ]
+    },
+    "F2": {
+      "forms": [
+        {
+          "form_id": "MC 01",
+          "filing_id": "F2",
+          "fields": {
+            "Court name": "14th Circuit Court, Muskegon County",
+            "Court address": "990 Terrace St, Muskegon, MI 49442",
+            "Case No.": "2024-001507-DC",
+            "Judge": "Hon. Jenny L. McNeill",
+            "Plaintiff/Petitioner name": "Andrew James Pigors",
+            "Plaintiff address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Plaintiff telephone": "(231) 903-5690",
+            "Plaintiff email": "andrewjpigors@gmail.com",
+            "Defendant/Respondent name": "Emily A. Watson",
+            "Defendant address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Filed by": "Andrew James Pigors",
+            "Filing date": "[DATE OF FILING]",
+            "Attorney/Bar No.": "In Propria Persona (Pro Se)",
+            "Type of case": "Domestic Relations",
+            "Related cases": "2024-001507-DC, 2023-5907-PP, 2025-002760-CZ, 366810"
+          }
+        },
+        {
+          "form_id": "DC 100",
+          "filing_id": "F2",
+          "fields": {
+            "Court name": "14th Circuit Court, Muskegon County",
+            "Court address": "990 Terrace St, Muskegon, MI 49442",
+            "Case No.": "2024-001507-DC",
+            "Judge": "Hon. Jenny L. McNeill",
+            "Plaintiff/Petitioner name": "Andrew James Pigors",
+            "Plaintiff address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Plaintiff telephone": "(231) 903-5690",
+            "Plaintiff email": "andrewjpigors@gmail.com",
+            "Defendant/Respondent name": "Emily A. Watson",
+            "Defendant address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Filed by": "Andrew James Pigors",
+            "Filing date": "[DATE OF FILING]",
+            "Attorney/Bar No.": "In Propria Persona (Pro Se)",
+            "Nature of suit": "Fraud upon the court / Void judgment",
+            "Demand": "Relief from all orders entered based on fraudulent filings"
+          }
+        },
+        {
+          "form_id": "MC 02",
+          "filing_id": "F2",
+          "fields": {
+            "Court name": "14th Circuit Court, Muskegon County",
+            "Court address": "990 Terrace St, Muskegon, MI 49442",
+            "Case No.": "2024-001507-DC",
+            "Judge": "Hon. Jenny L. McNeill",
+            "Plaintiff/Petitioner name": "Andrew James Pigors",
+            "Plaintiff address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Plaintiff telephone": "(231) 903-5690",
+            "Plaintiff email": "andrewjpigors@gmail.com",
+            "Defendant/Respondent name": "Emily A. Watson",
+            "Defendant address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Filed by": "Andrew James Pigors",
+            "Filing date": "[DATE OF FILING]",
+            "Attorney/Bar No.": "In Propria Persona (Pro Se)",
+            "Served on": "Emily A. Watson",
+            "Service address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Method": "[First-class mail / Personal service]",
+            "Date of service": "[DATE OF SERVICE]",
+            "Server name": "Andrew James Pigors",
+            "Server address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445"
+          }
+        }
+      ]
+    },
+    "F3": {
+      "forms": [
+        {
+          "form_id": "MC 01",
+          "filing_id": "F3",
+          "fields": {
+            "Court name": "14th Circuit Court, Muskegon County",
+            "Court address": "990 Terrace St, Muskegon, MI 49442",
+            "Case No.": "2024-001507-DC",
+            "Judge": "Hon. Jenny L. McNeill",
+            "Plaintiff/Petitioner name": "Andrew James Pigors",
+            "Plaintiff address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Plaintiff telephone": "(231) 903-5690",
+            "Plaintiff email": "andrewjpigors@gmail.com",
+            "Defendant/Respondent name": "Emily A. Watson",
+            "Defendant address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Filed by": "Andrew James Pigors",
+            "Filing date": "[DATE OF FILING]",
+            "Attorney/Bar No.": "In Propria Persona (Pro Se)",
+            "Type of case": "Domestic Relations",
+            "Related cases": "2024-001507-DC, 2023-5907-PP, 2025-002760-CZ, 366810"
+          }
+        },
+        {
+          "form_id": "MC 02",
+          "filing_id": "F3",
+          "fields": {
+            "Court name": "14th Circuit Court, Muskegon County",
+            "Court address": "990 Terrace St, Muskegon, MI 49442",
+            "Case No.": "2024-001507-DC",
+            "Judge": "Hon. Jenny L. McNeill",
+            "Plaintiff/Petitioner name": "Andrew James Pigors",
+            "Plaintiff address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Plaintiff telephone": "(231) 903-5690",
+            "Plaintiff email": "andrewjpigors@gmail.com",
+            "Defendant/Respondent name": "Emily A. Watson",
+            "Defendant address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Filed by": "Andrew James Pigors",
+            "Filing date": "[DATE OF FILING]",
+            "Attorney/Bar No.": "In Propria Persona (Pro Se)",
+            "Served on": "Emily A. Watson",
+            "Service address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Method": "[First-class mail / Personal service]",
+            "Date of service": "[DATE OF SERVICE]",
+            "Server name": "Andrew James Pigors",
+            "Server address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445"
+          }
+        }
+      ]
+    },
+    "F4": {
+      "forms": [],
+      "note": "No SCAO forms \u2014 uses different form system"
+    },
+    "F5": {
+      "forms": [],
+      "note": "No SCAO forms \u2014 uses different form system"
+    },
+    "F6": {
+      "forms": [],
+      "note": "No SCAO forms \u2014 uses different form system"
+    },
+    "F7": {
+      "forms": [
+        {
+          "form_id": "MC 01",
+          "filing_id": "F7",
+          "fields": {
+            "Court name": "14th Circuit Court, Muskegon County",
+            "Court address": "990 Terrace St, Muskegon, MI 49442",
+            "Case No.": "2024-001507-DC",
+            "Judge": "Hon. Jenny L. McNeill",
+            "Plaintiff/Petitioner name": "Andrew James Pigors",
+            "Plaintiff address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Plaintiff telephone": "(231) 903-5690",
+            "Plaintiff email": "andrewjpigors@gmail.com",
+            "Defendant/Respondent name": "Emily A. Watson",
+            "Defendant address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Filed by": "Andrew James Pigors",
+            "Filing date": "[DATE OF FILING]",
+            "Attorney/Bar No.": "In Propria Persona (Pro Se)",
+            "Type of case": "Domestic Relations",
+            "Related cases": "2024-001507-DC, 2023-5907-PP, 2025-002760-CZ, 366810"
+          }
+        },
+        {
+          "form_id": "MC 02",
+          "filing_id": "F7",
+          "fields": {
+            "Court name": "14th Circuit Court, Muskegon County",
+            "Court address": "990 Terrace St, Muskegon, MI 49442",
+            "Case No.": "2024-001507-DC",
+            "Judge": "Hon. Jenny L. McNeill",
+            "Plaintiff/Petitioner name": "Andrew James Pigors",
+            "Plaintiff address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Plaintiff telephone": "(231) 903-5690",
+            "Plaintiff email": "andrewjpigors@gmail.com",
+            "Defendant/Respondent name": "Emily A. Watson",
+            "Defendant address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Filed by": "Andrew James Pigors",
+            "Filing date": "[DATE OF FILING]",
+            "Attorney/Bar No.": "In Propria Persona (Pro Se)",
+            "Served on": "Emily A. Watson",
+            "Service address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Method": "[First-class mail / Personal service]",
+            "Date of service": "[DATE OF SERVICE]",
+            "Server name": "Andrew James Pigors",
+            "Server address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445"
+          }
+        },
+        {
+          "form_id": "FOC 10",
+          "filing_id": "F7",
+          "fields": {
+            "Court name": "14th Circuit Court, Muskegon County",
+            "Court address": "990 Terrace St, Muskegon, MI 49442",
+            "Case No.": "2024-001507-DC",
+            "Judge": "Hon. Jenny L. McNeill",
+            "Plaintiff/Petitioner name": "Andrew James Pigors",
+            "Plaintiff address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Plaintiff telephone": "(231) 903-5690",
+            "Plaintiff email": "andrewjpigors@gmail.com",
+            "Defendant/Respondent name": "Emily A. Watson",
+            "Defendant address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Filed by": "Andrew James Pigors",
+            "Filing date": "[DATE OF FILING]",
+            "Attorney/Bar No.": "In Propria Persona (Pro Se)",
+            "Child initials": "L.D.W.",
+            "Child DOB": "November 9, 2022",
+            "Present address": "[CHILD'S CURRENT ADDRESS]",
+            "Home state": "Michigan"
+          }
+        },
+        {
+          "form_id": "FOC 89",
+          "filing_id": "F7",
+          "fields": {
+            "Court name": "14th Circuit Court, Muskegon County",
+            "Court address": "990 Terrace St, Muskegon, MI 49442",
+            "Case No.": "2024-001507-DC",
+            "Judge": "Hon. Jenny L. McNeill",
+            "Plaintiff/Petitioner name": "Andrew James Pigors",
+            "Plaintiff address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+            "Plaintiff telephone": "(231) 903-5690",
+            "Plaintiff email": "andrewjpigors@gmail.com",
+            "Defendant/Respondent name": "Emily A. Watson",
+            "Defendant address": "2160 Garland Drive, Norton Shores, MI 49441",
+            "Filed by": "Andrew James Pigors",
+            "Filing date": "[DATE OF FILING]",
+            "Attorney/Bar No.": "In Propria Persona (Pro Se)"
+          }
+        }
+      ]
+    },
+    "F8": {
+      "forms": [],
+      "note": "No SCAO forms \u2014 uses different form system"
+    },
+    "F9": {
+      "forms": [],
+      "note": "No SCAO forms \u2014 uses different form system"
+    },
+    "F10": {
+      "forms": [],
+      "note": "No SCAO forms \u2014 uses different form system"
+    }
+  }
+}

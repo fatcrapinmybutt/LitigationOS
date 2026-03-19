@@ -1,0 +1,335 @@
+{
+  "generated": "2026-03-18T22:55:35.628250",
+  "filings": [
+    {
+      "name": "Emergency Motion \u2014 Parenting Time",
+      "court": "14th Circuit Court",
+      "lane": "A",
+      "type": "motion",
+      "limit": 20,
+      "id": "F1",
+      "status": "\u2705 COMPLIANT",
+      "words": 5081,
+      "pages": 16.9,
+      "brief_words": 0,
+      "brief_pages": 0,
+      "aff_words": 377,
+      "files": [
+        "01_MAIN_FILING.md",
+        "02_AFFIDAVIT.md",
+        "03_EXHIBIT_INDEX.md",
+        "04_CERTIFICATE_OF_SERVICE.md",
+        "05_COURT_FORMS_CHECKLIST.md",
+        "06_CAPTION.md",
+        "ASSEMBLED_FILING.md",
+        "PACKAGE_MANIFEST.md"
+      ],
+      "compliant": true
+    },
+    {
+      "name": "Fraud Upon the Court Complaint",
+      "court": "14th Circuit Court",
+      "lane": "A",
+      "type": "complaint",
+      "limit": null,
+      "id": "F2",
+      "status": "\u2705 COMPLIANT",
+      "words": 6881,
+      "pages": 22.9,
+      "brief_words": 0,
+      "brief_pages": 0,
+      "aff_words": 396,
+      "files": [
+        "01_MAIN_FILING.md",
+        "02_AFFIDAVIT.md",
+        "03_EXHIBIT_INDEX.md",
+        "04_CERTIFICATE_OF_SERVICE.md",
+        "05_COURT_FORMS_CHECKLIST.md",
+        "06_CAPTION.md",
+        "ASSEMBLED_FILING.md",
+        "PACKAGE_MANIFEST.md"
+      ],
+      "compliant": true
+    },
+    {
+      "name": "Motion to Disqualify Judge McNeill (MCR 2.003)",
+      "court": "14th Circuit Court",
+      "lane": "E",
+      "type": "motion",
+      "limit": 20,
+      "id": "F3",
+      "status": "\u2705 COMPLIANT",
+      "words": 4391,
+      "pages": 14.6,
+      "brief_words": 3007,
+      "brief_pages": 10.0,
+      "aff_words": 417,
+      "files": [
+        "01B_BRIEF_IN_SUPPORT.md",
+        "01C_SUPPORTING_DOCUMENTS.md",
+        "01_MAIN_FILING.md",
+        "02_AFFIDAVIT.md",
+        "03_EXHIBIT_INDEX.md",
+        "04_CERTIFICATE_OF_SERVICE.md",
+        "05_COURT_FORMS_CHECKLIST.md",
+        "06_CAPTION.md",
+        "ASSEMBLED_FILING.md",
+        "PACKAGE_MANIFEST.md"
+      ],
+      "compliant": true
+    },
+    {
+      "name": "42 USC \u00a71983 Federal Civil Rights Complaint",
+      "court": "USDC Western District MI",
+      "lane": "A",
+      "type": "complaint",
+      "limit": null,
+      "id": "F4",
+      "status": "\u2705 COMPLIANT",
+      "words": 15228,
+      "pages": 50.8,
+      "brief_words": 0,
+      "brief_pages": 0,
+      "aff_words": 424,
+      "files": [
+        "01_MAIN_FILING.md",
+        "02_AFFIDAVIT.md",
+        "03_EXHIBIT_INDEX.md",
+        "04_CERTIFICATE_OF_SERVICE.md",
+        "05_COURT_FORMS_CHECKLIST.md",
+        "06_CAPTION.md",
+        "ASSEMBLED_FILING.md",
+        "PACKAGE_MANIFEST.md"
+      ],
+      "compliant": true
+    },
+    {
+      "name": "MSC Application for Leave to Appeal",
+      "court": "Michigan Supreme Court",
+      "lane": "F",
+      "type": "petition",
+      "limit": 50,
+      "id": "F5",
+      "status": "\u2705 COMPLIANT",
+      "words": 6567,
+      "pages": 21.9,
+      "brief_words": 5978,
+      "brief_pages": 19.9,
+      "aff_words": 388,
+      "files": [
+        "01B_BRIEF_IN_SUPPORT.md",
+        "01C_SUPPORTING_DOCUMENTS.md",
+        "01_MAIN_FILING.md",
+        "02_AFFIDAVIT.md",
+        "03_EXHIBIT_INDEX.md",
+        "04_CERTIFICATE_OF_SERVICE.md",
+        "05_COURT_FORMS_CHECKLIST.md",
+        "06_CAPTION.md",
+        "ASSEMBLED_FILING.md",
+        "PACKAGE_MANIFEST.md"
+      ],
+      "compliant": true
+    },
+    {
+      "name": "JTC Complaint \u2014 Judicial Misconduct",
+      "court": "Judicial Tenure Commission",
+      "lane": "E",
+      "type": "complaint",
+      "limit": null,
+      "id": "F6",
+      "status": "\u2705 COMPLIANT",
+      "words": 7709,
+      "pages": 25.7,
+      "brief_words": 0,
+      "brief_pages": 0,
+      "aff_words": 381,
+      "files": [
+        "01_MAIN_FILING.md",
+        "02_AFFIDAVIT.md",
+        "03_EXHIBIT_INDEX.md",
+        "04_CERTIFICATE_OF_SERVICE.md",
+        "05_COURT_FORMS_CHECKLIST.md",
+        "06_CAPTION.md",
+        "ASSEMBLED_FILING.md",
+        "PACKAGE_MANIFEST.md"
+      ],
+      "compliant": true
+    },
+    {
+      "name": "Motion to Modify Custody and Parenting Time",
+      "court": "14th Circuit Court",
+      "lane": "A",
+      "type": "motion",
+      "limit": 20,
+      "id": "F7",
+      "status": "\u2705 COMPLIANT",
+      "words": 1582,
+      "pages": 5.3,
+      "brief_words": 4672,
+      "brief_pages": 15.6,
+      "aff_words": 433,
+      "files": [
+        "01B_BRIEF_IN_SUPPORT.md",
+        "01C_SUPPORTING_DOCUMENTS.md",
+        "01_MAIN_FILING.md",
+        "02_AFFIDAVIT.md",
+        "03_EXHIBIT_INDEX.md",
+        "04_CERTIFICATE_OF_SERVICE.md",
+        "05_COURT_FORMS_CHECKLIST.md",
+        "06_CAPTION.md",
+        "ASSEMBLED_FILING.md",
+        "PACKAGE_MANIFEST.md"
+      ],
+      "compliant": true
+    },
+    {
+      "name": "COA Complaint for Superintending Control",
+      "court": "Michigan Court of Appeals",
+      "lane": "F",
+      "type": "complaint",
+      "limit": 50,
+      "id": "F8",
+      "status": "\u2705 COMPLIANT",
+      "words": 8266,
+      "pages": 27.6,
+      "brief_words": 0,
+      "brief_pages": 0,
+      "aff_words": 387,
+      "files": [
+        "01_MAIN_FILING.md",
+        "02_AFFIDAVIT.md",
+        "03_EXHIBIT_INDEX.md",
+        "04_CERTIFICATE_OF_SERVICE.md",
+        "05_COURT_FORMS_CHECKLIST.md",
+        "06_CAPTION.md",
+        "ASSEMBLED_FILING.md",
+        "PACKAGE_MANIFEST.md"
+      ],
+      "compliant": true
+    },
+    {
+      "name": "COA Brief on Appeal (366810)",
+      "court": "Michigan Court of Appeals",
+      "lane": "F",
+      "type": "brief",
+      "limit": 50,
+      "id": "F9",
+      "status": "\u2705 COMPLIANT",
+      "words": 7724,
+      "pages": 25.7,
+      "brief_words": 0,
+      "brief_pages": 0,
+      "aff_words": 367,
+      "files": [
+        "01_MAIN_FILING.md",
+        "02_AFFIDAVIT.md",
+        "03_EXHIBIT_INDEX.md",
+        "04_CERTIFICATE_OF_SERVICE.md",
+        "05_COURT_FORMS_CHECKLIST.md",
+        "06_CAPTION.md",
+        "ASSEMBLED_FILING.md",
+        "PACKAGE_MANIFEST.md"
+      ],
+      "compliant": true
+    },
+    {
+      "name": "Attorney Grievance Commission Complaint",
+      "court": "AGC",
+      "lane": "E",
+      "type": "complaint",
+      "limit": null,
+      "id": "F10",
+      "status": "\u2705 COMPLIANT",
+      "words": 2131,
+      "pages": 7.1,
+      "brief_words": 0,
+      "brief_pages": 0,
+      "aff_words": 382,
+      "files": [
+        "01_MAIN_FILING.md",
+        "02_AFFIDAVIT.md",
+        "03_EXHIBIT_INDEX.md",
+        "04_CERTIFICATE_OF_SERVICE.md",
+        "05_COURT_FORMS_CHECKLIST.md",
+        "06_CAPTION.md",
+        "ASSEMBLED_FILING.md",
+        "PACKAGE_MANIFEST.md"
+      ],
+      "compliant": true
+    }
+  ],
+  "db_stats": {
+    "evidence_quotes": 36891,
+    "judicial_violations": 1127,
+    "claims": 653,
+    "contradictions": 1061,
+    "perjury_items": 5821
+  },
+  "efiling": {
+    "14th Circuit Court": {
+      "system": "MiFILE",
+      "url": "https://mifile.courts.michigan.gov",
+      "fee": "$20 motion / $175 complaint",
+      "filing_ids": [
+        "F1",
+        "F2",
+        "F3",
+        "F7"
+      ]
+    },
+    "USDC Western District MI": {
+      "system": "CM/ECF via PACER",
+      "url": "https://ecf.miwd.uscourts.gov",
+      "fee": "$405 complaint",
+      "filing_ids": [
+        "F4"
+      ]
+    },
+    "Michigan Supreme Court": {
+      "system": "MiFILE",
+      "url": "https://mifile.courts.michigan.gov",
+      "fee": "$375 application",
+      "filing_ids": [
+        "F5"
+      ]
+    },
+    "Michigan Court of Appeals": {
+      "system": "MiFILE",
+      "url": "https://mifile.courts.michigan.gov",
+      "fee": "$375 appeal",
+      "filing_ids": [
+        "F8",
+        "F9"
+      ]
+    },
+    "Judicial Tenure Commission": {
+      "system": "Mail/email",
+      "url": "https://jtc.courts.mi.gov",
+      "fee": "Free",
+      "filing_ids": [
+        "F6"
+      ]
+    },
+    "AGC": {
+      "system": "Online form",
+      "url": "https://www.agcmi.com",
+      "fee": "Free",
+      "filing_ids": [
+        "F10"
+      ]
+    }
+  },
+  "optimal_order": [
+    "F3",
+    "F4",
+    "F6",
+    "F5",
+    "F9",
+    "F8",
+    "F7",
+    "F10",
+    "F1",
+    "F2"
+  ],
+  "compliance": "10/10"
+}

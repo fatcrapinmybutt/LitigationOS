@@ -1,0 +1,75 @@
+{
+  "generated": "2026-03-18T23:01:14.928186",
+  "tool": "Sanctions Risk Analyzer (#50)",
+  "overall_score": 372,
+  "overall_level": "\u26d4 CRITICAL",
+  "per_filing": {
+    "F10": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0
+    },
+    "F1": {
+      "critical": 0,
+      "high": 1,
+      "medium": 1
+    },
+    "F2": {
+      "critical": 1,
+      "high": 2,
+      "medium": 0
+    },
+    "F3": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0
+    },
+    "F4": {
+      "critical": 1,
+      "high": 14,
+      "medium": 6
+    },
+    "F5": {
+      "critical": 2,
+      "high": 10,
+      "medium": 0
+    },
+    "F6": {
+      "critical": 0,
+      "high": 2,
+      "medium": 0
+    },
+    "F7": {
+      "critical": 0,
+      "high": 2,
+      "medium": 0
+    },
+    "F8": {
+      "critical": 2,
+      "high": 7,
+      "medium": 0
+    },
+    "F9": {
+      "critical": 1,
+      "high": 8,
+      "medium": 1
+    }
+  },
+  "systemic_risks": [
+    {
+      "risk": "Filing 10 simultaneous actions across multiple courts",
+      "severity": "HIGH",
+      "rule": "28 USC \u00a71927 / MCR 1.109(E)",
+      "mitigation": "Stagger filings over 2-4 weeks. File the strongest cases first (F3, F4, F6). Each filing must clearly articulate WHY it cannot be consolidated with others (different courts, different legal theories, different parties)."
+    },
+    {
+      "risk": "4 filings in 14th Circuit: F1, F2, F3, F7",
+      "severity": "MEDIUM",
+      "rule": "Duplicative proceedings concern",
+      "mitigation": "Consider consolidating F1, F2, F3, F7 or filing sequentially"
+    }
+  ],
+  "total_findings": 69,
+  "critical_count": 7,
+  "high_count": 54
+}

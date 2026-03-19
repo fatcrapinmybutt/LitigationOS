@@ -1,0 +1,210 @@
+{
+  "generated": "2026-03-18T23:00:32.343383",
+  "tool": "Sanctions Remediation Engine (#52)",
+  "total_changes": 16,
+  "files_modified": 8,
+  "per_filing": {
+    "F10": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 0
+      }
+    ],
+    "F1": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 0
+      }
+    ],
+    "F2": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 3
+      }
+    ],
+    "F3": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 0
+      },
+      {
+        "file": "01B_BRIEF_IN_SUPPORT.md",
+        "changes": 0
+      }
+    ],
+    "F4": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 4
+      }
+    ],
+    "F5": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 1
+      },
+      {
+        "file": "01B_BRIEF_IN_SUPPORT.md",
+        "changes": 1
+      }
+    ],
+    "F6": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 3
+      }
+    ],
+    "F7": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 0
+      },
+      {
+        "file": "01B_BRIEF_IN_SUPPORT.md",
+        "changes": 1
+      }
+    ],
+    "F8": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 1
+      }
+    ],
+    "F9": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 2
+      }
+    ]
+  },
+  "all_changes": [
+    {
+      "original": "outrageous",
+      "replacement": "extraordinary and unprecedented",
+      "context": "D\") requires: (1) extreme and outrageous conduct; (2) intent or reckle",
+      "line": 350,
+      "filing": "F2",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "outrageous",
+      "replacement": "extraordinary and unprecedented",
+      "context": "ndants engaged in extreme and outrageous conduct that exceeds all boun",
+      "line": 352,
+      "filing": "F2",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "personally liable",
+      "replacement": "subject to liability under the conspiracy exception (Dennis v Sparks)",
+      "context": "bers, and controlling persons personally liable for all damages in this actio",
+      "line": 497,
+      "filing": "F2",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "evil",
+      "replacement": "improper",
+      "context": "tion and belief, motivated by evil motive or intent, or at minim",
+      "line": 712,
+      "filing": "F4",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "evil",
+      "replacement": "improper",
+      "context": "nt's conduct is \"motivated by evil motive or intent, or when it ",
+      "line": 712,
+      "filing": "F4",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "shocking",
+      "replacement": "deeply concerning",
+      "context": "ion was arbitrary, conscience-shocking, and without rational justifi",
+      "line": 359,
+      "filing": "F4",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "shocking",
+      "replacement": "deeply concerning",
+      "context": " U.S. 833 (1998) | Conscience-shocking standard | | *Craig v. Boren*",
+      "line": 838,
+      "filing": "F4",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "corruption",
+      "replacement": "pattern of procedural irregularities",
+      "context": "ot remedy structural judicial corruption; the pending COA appeal (No. ",
+      "line": 450,
+      "filing": "F5",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "undeniably",
+      "replacement": "as the record reflects",
+      "context": "dren he has sired and raised, undeniably warrants deference and, absen",
+      "line": 295,
+      "filing": "F5",
+      "source": "01B_BRIEF_IN_SUPPORT.md"
+    },
+    {
+      "original": "criminal conduct",
+      "replacement": "conduct that violates applicable rules and statutes",
+      "context": " domestic violence, abuse, or criminal conduct against Father. McNeill subse",
+      "line": 238,
+      "filing": "F6",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "crazy",
+      "replacement": "without rational basis",
+      "context": "l called Father \"a liar\" and \"crazy\" on the record \u2014 ad hominem a",
+      "line": 126,
+      "filing": "F6",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "crazy",
+      "replacement": "without rational basis",
+      "context": "of fact.  2. **Called Father \"crazy\" on the record** \u2014 hostile, d",
+      "line": 204,
+      "filing": "F6",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "self-evident",
+      "replacement": "supported by the evidence cited herein",
+      "context": "ather respectfully submits is self-evident), the Court must then evaluat",
+      "line": 99,
+      "filing": "F7",
+      "source": "01B_BRIEF_IN_SUPPORT.md"
+    },
+    {
+      "original": "outrageous",
+      "replacement": "extraordinary and unprecedented",
+      "context": "mbers constitutes extreme and outrageous conduct that exceeds all boun",
+      "line": 432,
+      "filing": "F8",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "crazy",
+      "replacement": "without rational basis",
+      "context": "eill called him a \"liar\" and \"crazy.\"  ### H. Rusco Ex Parte Warr",
+      "line": 236,
+      "filing": "F9",
+      "source": "01_MAIN_FILING.md"
+    },
+    {
+      "original": "crazy",
+      "replacement": "without rational basis",
+      "context": "tizing mental-health labels (\"crazy,\" \"liar\") before any neutral ",
+      "line": 499,
+      "filing": "F9",
+      "source": "01_MAIN_FILING.md"
+    }
+  ]
+}

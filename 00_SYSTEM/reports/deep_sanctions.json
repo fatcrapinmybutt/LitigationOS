@@ -1,0 +1,80 @@
+{
+  "generated": "2026-03-18T23:03:50.722840",
+  "tool": "Deep Sanctions Cleaner (#55)",
+  "total_changes": 20,
+  "files_modified": 9,
+  "per_filing": {
+    "F10": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 0
+      }
+    ],
+    "F1": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 1
+      }
+    ],
+    "F2": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 0
+      }
+    ],
+    "F3": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 0
+      },
+      {
+        "file": "01B_BRIEF_IN_SUPPORT.md",
+        "changes": 1
+      }
+    ],
+    "F4": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 7
+      }
+    ],
+    "F5": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 2
+      },
+      {
+        "file": "01B_BRIEF_IN_SUPPORT.md",
+        "changes": 1
+      }
+    ],
+    "F6": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 1
+      }
+    ],
+    "F7": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 0
+      },
+      {
+        "file": "01B_BRIEF_IN_SUPPORT.md",
+        "changes": 1
+      }
+    ],
+    "F8": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 5
+      }
+    ],
+    "F9": [
+      {
+        "file": "01_MAIN_FILING.md",
+        "changes": 1
+      }
+    ]
+  }
+}
