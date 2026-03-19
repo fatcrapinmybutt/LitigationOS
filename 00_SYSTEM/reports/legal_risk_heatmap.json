@@ -1,0 +1,816 @@
+{
+  "generated": "2026-03-18T21:02:57.683579",
+  "risk_matrix": {
+    "Emily Watson": {
+      "F1": {
+        "exposure": "HIGH",
+        "exposure_score": 9,
+        "success_probability": 0.45,
+        "impact_if_succeed": "CRITICAL",
+        "impact_score": 10,
+        "risk_factors": [
+          "Loses primary custody",
+          "Documented perjury exposed",
+          "Must return parenting time"
+        ]
+      },
+      "F2": {
+        "exposure": "HIGH",
+        "exposure_score": 8,
+        "success_probability": 0.55,
+        "impact_if_succeed": "HIGH",
+        "impact_score": 8,
+        "risk_factors": [
+          "PPO revealed as fraudulent",
+          "Criminal perjury referral",
+          "Costs order"
+        ]
+      },
+      "F3": {
+        "exposure": "MODERATE",
+        "exposure_score": 5,
+        "success_probability": 0.7,
+        "impact_if_succeed": "MODERATE",
+        "impact_score": 5,
+        "risk_factors": [
+          "Indirect \u2014 loss of favorable judge/rulings"
+        ]
+      },
+      "F4": {
+        "exposure": "CRITICAL",
+        "exposure_score": 10,
+        "success_probability": 0.6,
+        "impact_if_succeed": "CRITICAL",
+        "impact_score": 10,
+        "risk_factors": [
+          "Federal damages (\u00a71983)",
+          "Co-conspirator liability",
+          "No judicial immunity shield"
+        ]
+      },
+      "F5": {
+        "exposure": "HIGH",
+        "exposure_score": 9,
+        "success_probability": 0.65,
+        "impact_if_succeed": "CRITICAL",
+        "impact_score": 10,
+        "risk_factors": [
+          "Loses primary custody",
+          "Documented perjury exposed",
+          "Must return parenting time"
+        ]
+      },
+      "F6": {
+        "exposure": "MODERATE",
+        "exposure_score": 5,
+        "success_probability": 0.75,
+        "impact_if_succeed": "MODERATE",
+        "impact_score": 5,
+        "risk_factors": [
+          "Indirect \u2014 loss of favorable judge/rulings"
+        ]
+      },
+      "F7": {
+        "exposure": "CRITICAL",
+        "exposure_score": 10,
+        "success_probability": 0.6,
+        "impact_if_succeed": "CRITICAL",
+        "impact_score": 10,
+        "risk_factors": [
+          "All orders voided",
+          "Fraud on court finding",
+          "Criminal referral"
+        ]
+      },
+      "F8": {
+        "exposure": "MODERATE",
+        "exposure_score": 5,
+        "success_probability": 0.5,
+        "impact_if_succeed": "MODERATE",
+        "impact_score": 5,
+        "risk_factors": [
+          "Indirect \u2014 loss of favorable judge/rulings"
+        ]
+      },
+      "F9": {
+        "exposure": "MODERATE",
+        "exposure_score": 5,
+        "success_probability": 0.65,
+        "impact_if_succeed": "MODERATE",
+        "impact_score": 5,
+        "risk_factors": [
+          "Indirect \u2014 loss of favorable judge/rulings"
+        ]
+      },
+      "F10": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.7,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      }
+    },
+    "Ronald Berry": {
+      "F1": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.45,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F2": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.55,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F3": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.7,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F4": {
+        "exposure": "HIGH",
+        "exposure_score": 9,
+        "success_probability": 0.6,
+        "impact_if_succeed": "CRITICAL",
+        "impact_score": 9,
+        "risk_factors": [
+          "Co-conspirator liability",
+          "No immunity",
+          "Federal damages"
+        ]
+      },
+      "F5": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.65,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F6": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.75,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F7": {
+        "exposure": "MODERATE",
+        "exposure_score": 6,
+        "success_probability": 0.6,
+        "impact_if_succeed": "MODERATE",
+        "impact_score": 6,
+        "risk_factors": [
+          "Co-conspirator in fraud on court"
+        ]
+      },
+      "F8": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.5,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F9": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.65,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F10": {
+        "exposure": "HIGH",
+        "exposure_score": 8,
+        "success_probability": 0.7,
+        "impact_if_succeed": "HIGH",
+        "impact_score": 7,
+        "risk_factors": [
+          "UPL investigation",
+          "Potential criminal charges"
+        ]
+      }
+    },
+    "Jennifer Barnes": {
+      "F1": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.45,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F2": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.55,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F3": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.7,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F4": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.6,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F5": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.65,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F6": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.75,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F7": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.6,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F8": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.5,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F9": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.65,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F10": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.7,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      }
+    },
+    "Judge McNeill": {
+      "F1": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.45,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F2": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.55,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F3": {
+        "exposure": "HIGH",
+        "exposure_score": 8,
+        "success_probability": 0.7,
+        "impact_if_succeed": "HIGH",
+        "impact_score": 9,
+        "risk_factors": [
+          "Disqualified from case",
+          "Bias documented on record"
+        ]
+      },
+      "F4": {
+        "exposure": "HIGH",
+        "exposure_score": 8,
+        "success_probability": 0.6,
+        "impact_if_succeed": "CRITICAL",
+        "impact_score": 9,
+        "risk_factors": [
+          "Federal damages personally",
+          "Conspiracy = no immunity"
+        ]
+      },
+      "F5": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.65,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F6": {
+        "exposure": "CRITICAL",
+        "exposure_score": 10,
+        "success_probability": 0.75,
+        "impact_if_succeed": "CRITICAL",
+        "impact_score": 10,
+        "risk_factors": [
+          "JTC investigation",
+          "Potential removal from bench",
+          "Public record of misconduct"
+        ]
+      },
+      "F7": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.6,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F8": {
+        "exposure": "HIGH",
+        "exposure_score": 9,
+        "success_probability": 0.5,
+        "impact_if_succeed": "CRITICAL",
+        "impact_score": 10,
+        "risk_factors": [
+          "MSC superintending control",
+          "All orders reviewed",
+          "Precedent-setting"
+        ]
+      },
+      "F9": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.65,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      },
+      "F10": {
+        "exposure": "NONE",
+        "exposure_score": 0,
+        "success_probability": 0.7,
+        "impact_if_succeed": "LOW",
+        "impact_score": 0,
+        "risk_factors": []
+      }
+    },
+    "Andrew Pigors": {
+      "F1": {
+        "exposure": "SELF",
+        "exposure_score": 5.5,
+        "success_probability": 0.45,
+        "impact_if_succeed": "POSITIVE",
+        "impact_score": 4.5,
+        "risk_factors": [
+          "Failure probability: 55%",
+          "Pro se bias from court",
+          "Sanctions risk if poorly drafted"
+        ]
+      },
+      "F2": {
+        "exposure": "SELF",
+        "exposure_score": 4.5,
+        "success_probability": 0.55,
+        "impact_if_succeed": "POSITIVE",
+        "impact_score": 5.5,
+        "risk_factors": [
+          "Failure probability: 45%",
+          "Pro se bias from court",
+          "Sanctions risk if poorly drafted"
+        ]
+      },
+      "F3": {
+        "exposure": "SELF",
+        "exposure_score": 3.0,
+        "success_probability": 0.7,
+        "impact_if_succeed": "POSITIVE",
+        "impact_score": 7.0,
+        "risk_factors": [
+          "Failure probability: 30%",
+          "Pro se bias from court",
+          "Sanctions risk if poorly drafted"
+        ]
+      },
+      "F4": {
+        "exposure": "SELF",
+        "exposure_score": 4.0,
+        "success_probability": 0.6,
+        "impact_if_succeed": "POSITIVE",
+        "impact_score": 6.0,
+        "risk_factors": [
+          "Failure probability: 40%",
+          "Pro se bias from court",
+          "Sanctions risk if poorly drafted"
+        ]
+      },
+      "F5": {
+        "exposure": "SELF",
+        "exposure_score": 3.5,
+        "success_probability": 0.65,
+        "impact_if_succeed": "POSITIVE",
+        "impact_score": 6.5,
+        "risk_factors": [
+          "Failure probability: 35%",
+          "Pro se bias from court",
+          "Sanctions risk if poorly drafted"
+        ]
+      },
+      "F6": {
+        "exposure": "SELF",
+        "exposure_score": 2.5,
+        "success_probability": 0.75,
+        "impact_if_succeed": "POSITIVE",
+        "impact_score": 7.5,
+        "risk_factors": [
+          "Failure probability: 25%",
+          "Pro se bias from court",
+          "Sanctions risk if poorly drafted"
+        ]
+      },
+      "F7": {
+        "exposure": "SELF",
+        "exposure_score": 4.0,
+        "success_probability": 0.6,
+        "impact_if_succeed": "POSITIVE",
+        "impact_score": 6.0,
+        "risk_factors": [
+          "Failure probability: 40%",
+          "Pro se bias from court",
+          "Sanctions risk if poorly drafted"
+        ]
+      },
+      "F8": {
+        "exposure": "SELF",
+        "exposure_score": 5.0,
+        "success_probability": 0.5,
+        "impact_if_succeed": "POSITIVE",
+        "impact_score": 5.0,
+        "risk_factors": [
+          "Failure probability: 50%",
+          "Pro se bias from court",
+          "Sanctions risk if poorly drafted"
+        ]
+      },
+      "F9": {
+        "exposure": "SELF",
+        "exposure_score": 3.5,
+        "success_probability": 0.65,
+        "impact_if_succeed": "POSITIVE",
+        "impact_score": 6.5,
+        "risk_factors": [
+          "Failure probability: 35%",
+          "Pro se bias from court",
+          "Sanctions risk if poorly drafted"
+        ]
+      },
+      "F10": {
+        "exposure": "SELF",
+        "exposure_score": 3.0,
+        "success_probability": 0.7,
+        "impact_if_succeed": "POSITIVE",
+        "impact_score": 7.0,
+        "risk_factors": [
+          "Failure probability: 30%",
+          "Pro se bias from court",
+          "Sanctions risk if poorly drafted"
+        ]
+      }
+    }
+  },
+  "cascading_failures": {
+    "F3": {
+      "depends_on": [],
+      "enables": [],
+      "failure_cascade": "If recusal denied, McNeill rules on all subsequent motions \u2014 file COA mandamus immediately",
+      "mitigation": "File simultaneously with F9 COA appeal as backup",
+      "cascade_depth": 4,
+      "affected_filings": [
+        "F1",
+        "F7",
+        "F2",
+        "F5"
+      ]
+    },
+    "F4": {
+      "depends_on": [],
+      "enables": [],
+      "failure_cascade": "Federal abstention sends case back to state court \u2014 but creates federal record of claims",
+      "mitigation": "Plead Younger abstention exception (bad faith prosecution); file in state simultaneously",
+      "cascade_depth": 1,
+      "affected_filings": [
+        "F1"
+      ]
+    },
+    "F5": {
+      "depends_on": [
+        "F3"
+      ],
+      "enables": [],
+      "failure_cascade": "Denied parenting time continues \u2014 but denial creates additional due process claims",
+      "mitigation": "Each denial = additional \u00a71983 claim; document EVERY denial with specificity",
+      "cascade_depth": 1,
+      "affected_filings": [
+        "F1"
+      ]
+    },
+    "F6": {
+      "depends_on": [],
+      "enables": [],
+      "failure_cascade": "JTC investigation is independent \u2014 even dismissal doesn't affect other filings",
+      "mitigation": "JTC complaint strengthens disqualification motion regardless of JTC outcome",
+      "cascade_depth": 2,
+      "affected_filings": [
+        "F8",
+        "F3"
+      ]
+    },
+    "F7": {
+      "depends_on": [
+        "F3"
+      ],
+      "enables": [],
+      "failure_cascade": "If fraud not found, all existing orders remain valid \u2014 appeal immediately",
+      "mitigation": "Build overwhelming evidence package; fraud on court has NO time bar (MCR 2.612(C)(3))",
+      "cascade_depth": 3,
+      "affected_filings": [
+        "F1",
+        "F2",
+        "F5"
+      ]
+    },
+    "F8": {
+      "depends_on": [
+        "F6",
+        "F9"
+      ],
+      "enables": [],
+      "failure_cascade": "MSC denial is final for state extraordinary relief \u2014 federal court remains",
+      "mitigation": "MSC rarely grants superintending control \u2014 but filing creates record; federal \u00a71983 is primary path",
+      "cascade_depth": 1,
+      "affected_filings": [
+        "F3"
+      ]
+    },
+    "F9": {
+      "depends_on": [],
+      "enables": [],
+      "failure_cascade": "COA affirmance means binding precedent against you \u2014 carefully choose which issues to appeal",
+      "mitigation": "Only appeal STRONGEST issues; weak issues get bad precedent",
+      "cascade_depth": 2,
+      "affected_filings": [
+        "F7",
+        "F5"
+      ]
+    },
+    "F1": {
+      "depends_on": [
+        "F3",
+        "F4",
+        "F5",
+        "F7"
+      ],
+      "enables": [],
+      "failure_cascade": "Emergency custody denied \u2014 but creates appellate record; file for regular custody modification",
+      "mitigation": "Emergency requires 'immediate danger' \u2014 standard custody modification has lower bar",
+      "cascade_depth": 0,
+      "affected_filings": []
+    },
+    "F2": {
+      "depends_on": [
+        "F7"
+      ],
+      "enables": [],
+      "failure_cascade": "PPO remains \u2014 but void if underlying orders void (fruit of poisonous tree)",
+      "mitigation": "PPO termination tied to fraud finding; if F7 succeeds, PPO falls automatically",
+      "cascade_depth": 0,
+      "affected_filings": []
+    },
+    "F10": {
+      "depends_on": [],
+      "enables": [],
+      "failure_cascade": "AGC may take no action \u2014 but complaint is on record for \u00a71983 evidence",
+      "mitigation": "AGC complaint demonstrates good faith and exhaustion of remedies",
+      "cascade_depth": 1,
+      "affected_filings": [
+        "F4"
+      ]
+    }
+  },
+  "expected_value_analysis": {
+    "F1": {
+      "success_probability": 0.45,
+      "filing_cost": 175,
+      "damage_potential": {
+        "best": 0,
+        "likely": 0,
+        "worst": 0,
+        "type": "custody_recovery"
+      },
+      "expected_monetary_value": {
+        "best": -175,
+        "likely": -175,
+        "worst": -175
+      },
+      "non_monetary_value": 100000,
+      "total_expected_value": 44825,
+      "roi_ratio": 256.1
+    },
+    "F2": {
+      "success_probability": 0.55,
+      "filing_cost": 175,
+      "damage_potential": {
+        "best": 5000,
+        "likely": 2000,
+        "worst": 0,
+        "type": "costs_only"
+      },
+      "expected_monetary_value": {
+        "best": 2575,
+        "likely": 925,
+        "worst": -175
+      },
+      "non_monetary_value": 20000,
+      "total_expected_value": 11925,
+      "roi_ratio": 68.1
+    },
+    "F3": {
+      "success_probability": 0.7,
+      "filing_cost": 175,
+      "damage_potential": {
+        "best": 10000,
+        "likely": 5000,
+        "worst": 0,
+        "type": "new_judge"
+      },
+      "expected_monetary_value": {
+        "best": 6825,
+        "likely": 3325,
+        "worst": -175
+      },
+      "non_monetary_value": 50000,
+      "total_expected_value": 38325,
+      "roi_ratio": 219.0
+    },
+    "F4": {
+      "success_probability": 0.6,
+      "filing_cost": 400,
+      "damage_potential": {
+        "best": 2000000,
+        "likely": 500000,
+        "worst": 50000,
+        "type": "federal_damages"
+      },
+      "expected_monetary_value": {
+        "best": 1199600,
+        "likely": 299600,
+        "worst": 29600
+      },
+      "non_monetary_value": 30000,
+      "total_expected_value": 317600,
+      "roi_ratio": 794.0
+    },
+    "F5": {
+      "success_probability": 0.65,
+      "filing_cost": 175,
+      "damage_potential": {
+        "best": 0,
+        "likely": 0,
+        "worst": 0,
+        "type": "parenting_time"
+      },
+      "expected_monetary_value": {
+        "best": -175,
+        "likely": -175,
+        "worst": -175
+      },
+      "non_monetary_value": 80000,
+      "total_expected_value": 51825,
+      "roi_ratio": 296.1
+    },
+    "F6": {
+      "success_probability": 0.75,
+      "filing_cost": 0,
+      "damage_potential": {
+        "best": 0,
+        "likely": 0,
+        "worst": 0,
+        "type": "judicial_accountability"
+      },
+      "expected_monetary_value": {
+        "best": 0,
+        "likely": 0,
+        "worst": 0
+      },
+      "non_monetary_value": 40000,
+      "total_expected_value": 30000,
+      "roi_ratio": 30000.0
+    },
+    "F7": {
+      "success_probability": 0.6,
+      "filing_cost": 175,
+      "damage_potential": {
+        "best": 500000,
+        "likely": 100000,
+        "worst": 0,
+        "type": "void_orders"
+      },
+      "expected_monetary_value": {
+        "best": 299825,
+        "likely": 59825,
+        "worst": -175
+      },
+      "non_monetary_value": 60000,
+      "total_expected_value": 95825,
+      "roi_ratio": 547.6
+    },
+    "F8": {
+      "success_probability": 0.5,
+      "filing_cost": 100,
+      "damage_potential": {
+        "best": 100000,
+        "likely": 25000,
+        "worst": 0,
+        "type": "superintending"
+      },
+      "expected_monetary_value": {
+        "best": 49900,
+        "likely": 12400,
+        "worst": -100
+      },
+      "non_monetary_value": 30000,
+      "total_expected_value": 27400,
+      "roi_ratio": 274.0
+    },
+    "F9": {
+      "success_probability": 0.65,
+      "filing_cost": 375,
+      "damage_potential": {
+        "best": 200000,
+        "likely": 50000,
+        "worst": 0,
+        "type": "appellate_reversal"
+      },
+      "expected_monetary_value": {
+        "best": 129625,
+        "likely": 32125,
+        "worst": -375
+      },
+      "non_monetary_value": 40000,
+      "total_expected_value": 58125,
+      "roi_ratio": 155.0
+    },
+    "F10": {
+      "success_probability": 0.7,
+      "filing_cost": 0,
+      "damage_potential": {
+        "best": 50000,
+        "likely": 10000,
+        "worst": 0,
+        "type": "sanctions"
+      },
+      "expected_monetary_value": {
+        "best": 35000,
+        "likely": 7000,
+        "worst": 0
+      },
+      "non_monetary_value": 10000,
+      "total_expected_value": 14000,
+      "roi_ratio": 14000.0
+    }
+  },
+  "critical_findings": [
+    "F4 (Federal \u00a71983) has highest expected value at ~$300K+ likely",
+    "F7 (Fraud on Court) creates biggest cascade \u2014 enables F1, F2, F5",
+    "Emily Watson faces CRITICAL exposure on 4 filings (F1, F4, F5, F7)",
+    "McNeill faces CRITICAL exposure on F6 (JTC) and F8 (MSC)",
+    "Berry faces HIGH exposure on F4 (federal) and F10 (AGC)",
+    "F6 (JTC) is zero-cost with 75% success probability \u2014 highest ROI",
+    "Filing F3 first is optimal \u2014 it enables F5 and F7 with no dependencies"
+  ]
+}

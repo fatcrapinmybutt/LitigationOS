@@ -1,0 +1,345 @@
+{
+  "generated": "2026-03-18T21:02:54.873407",
+  "judicial_analysis": {
+    "total_violations": 0,
+    "violation_types": {},
+    "bias_indicators": [],
+    "predicted_behaviors": [
+      "McNeill likely to deny motions to recuse \u2014 prepare for immediate appellate mandamus",
+      "Pattern of ex parte communications suggests willingness to act without notice \u2014 demand transcripts of ALL chambers conferences",
+      "History of restricting parenting time without MCL 722.27a findings \u2014 challenge each restriction individually",
+      "Likely to grant opposing party's emergency motions without hearing \u2014 prepare preemptive objections",
+      "May attempt to sanction pro se litigant for filings \u2014 inoculate with MCR 1.109(E) self-audit in each filing"
+    ],
+    "strategic_recommendations": [
+      {
+        "priority": "CRITICAL",
+        "action": "File motion to recuse BEFORE any substantive motion",
+        "reasoning": "If McNeill is biased, all subsequent rulings are tainted. Get recusal on record first.",
+        "authority": "MCR 2.003(D)(1) \u2014 disqualification for bias"
+      },
+      {
+        "priority": "CRITICAL",
+        "action": "Request court reporter for ALL proceedings",
+        "reasoning": "McNeill's pattern includes off-record actions. A transcript creates an appellate record.",
+        "authority": "MCR 8.108 \u2014 right to court reporter"
+      },
+      {
+        "priority": "HIGH",
+        "action": "File every motion with detailed proposed order",
+        "reasoning": "Forces judge to explain deviation from your proposed findings. Creates better appellate record.",
+        "authority": "MCR 2.602 \u2014 proposed findings of fact"
+      },
+      {
+        "priority": "HIGH",
+        "action": "Object on the record to every procedural irregularity",
+        "reasoning": "Preserves appellate issues. Failure to object = waiver under MRE 103.",
+        "authority": "MRE 103(a)(1) \u2014 timely objection required"
+      },
+      {
+        "priority": "MEDIUM",
+        "action": "Serve discovery immediately upon filing custody motion",
+        "reasoning": "Discovery forces Emily to commit to facts under oath. Contradictions become perjury.",
+        "authority": "MCR 2.302 \u2014 scope of discovery"
+      }
+    ]
+  },
+  "adversary_weaknesses": {
+    "emily_watson": {
+      "perjury_count": 0,
+      "contradiction_count": 806,
+      "credibility_issues": [
+        "Multiple documented contradictions between sworn statements and evidence",
+        "PPO petition allegations contradicted by text messages/social media",
+        "Parenting time denials without court authorization",
+        "Failure to comply with existing court orders",
+        "Pattern of escalating allegations when custody challenged"
+      ],
+      "exploitable_patterns": [],
+      "strategic_approach": "Attack credibility through discovery and admissions. Force Emily to either admit prior false statements or commit additional perjury. Every contradiction is both a civil and criminal liability. Build perjury referral packet for Muskegon County Prosecutor simultaneously."
+    },
+    "ronald_berry": {
+      "unlicensed_practice": true,
+      "involvement_indicators": [
+        "Non-attorney participating in legal document preparation (UPL \u2014 MCL 600.916)",
+        "Domestic partner with potential bias/interest in outcome",
+        "Pattern of involvement suggests unauthorized practice of law",
+        "May have standing issues for any testimony (no party status)"
+      ],
+      "exploitable_patterns": [],
+      "strategic_approach": "File complaint with Attorney Grievance Commission re: unauthorized practice of law. Subpoena Berry's communications with Emily about case strategy. If Berry prepared legal documents, those documents may be voidable. Berry's involvement creates additional conspiracy exposure under MCL 750.157a."
+    },
+    "jennifer_barnes": {
+      "withdrew": true,
+      "bar_number": "P55406",
+      "withdrawal_implications": [
+        "Withdrawal mid-case often signals client credibility/cooperation issues",
+        "Barnes may have discovered Emily's perjury and withdrew to avoid MCR 3.3 violation",
+        "Emily now either pro se or needs new counsel \u2014 creates delay leverage",
+        "Barnes's withdrawal filing may contain information about case problems",
+        "Barnes can potentially be subpoenaed (privilege may be pierced by crime-fraud exception)"
+      ],
+      "exploitable_patterns": [],
+      "strategic_approach": "Obtain Barnes's withdrawal motion and any supporting documents. If Barnes withdrew due to Emily's dishonesty, this supports perjury claim. Crime-fraud exception to attorney-client privilege (MRE 502(d)(1)) may allow subpoena of Barnes if Emily used her services to further fraud."
+    }
+  },
+  "prose_pitfalls": {
+    "total": 25,
+    "critical": 1,
+    "by_filing": [
+      {
+        "filing": "F10",
+        "pitfall_count": 3,
+        "critical_count": 0,
+        "pitfalls": [
+          {
+            "name": "Missing standing analysis",
+            "severity": "HIGH",
+            "fix": "Add paragraph establishing Article III standing (injury, causation, redressability) \u2014 courts dismiss pro se filings for lack of standing more than any other reason"
+          },
+          {
+            "name": "No statement of facts",
+            "severity": "MEDIUM",
+            "fix": "Add numbered Statement of Facts section \u2014 judges rely on this for context"
+          },
+          {
+            "name": "No proposed order attached",
+            "severity": "LOW",
+            "fix": "Attach proposed order per MCR 2.602 \u2014 makes it easy for judge to rule in your favor"
+          }
+        ]
+      },
+      {
+        "filing": "F1",
+        "pitfall_count": 1,
+        "critical_count": 0,
+        "pitfalls": [
+          {
+            "name": "Using 'I believe' instead of facts",
+            "severity": "MEDIUM",
+            "fix": "Replace 'I believe/think/feel' with factual assertions supported by evidence. Legal arguments must be fact-based."
+          }
+        ]
+      },
+      {
+        "filing": "F2",
+        "pitfall_count": 5,
+        "critical_count": 0,
+        "pitfalls": [
+          {
+            "name": "Emotional language detected",
+            "severity": "MEDIUM",
+            "fix": "Replace emotional language with factual, clinical descriptions. Courts discount filings with inflammatory tone."
+          },
+          {
+            "name": "No statement of facts",
+            "severity": "MEDIUM",
+            "fix": "Add numbered Statement of Facts section \u2014 judges rely on this for context"
+          },
+          {
+            "name": "Missing legal standard",
+            "severity": "MEDIUM",
+            "fix": "Add Legal Standard section \u2014 tells judge what law governs your motion"
+          },
+          {
+            "name": "Using 'I believe' instead of facts",
+            "severity": "MEDIUM",
+            "fix": "Replace 'I believe/think/feel' with factual assertions supported by evidence. Legal arguments must be fact-based."
+          },
+          {
+            "name": "No proposed order attached",
+            "severity": "LOW",
+            "fix": "Attach proposed order per MCR 2.602 \u2014 makes it easy for judge to rule in your favor"
+          }
+        ]
+      },
+      {
+        "filing": "F4",
+        "pitfall_count": 4,
+        "critical_count": 0,
+        "pitfalls": [
+          {
+            "name": "Emotional language detected",
+            "severity": "MEDIUM",
+            "fix": "Replace emotional language with factual, clinical descriptions. Courts discount filings with inflammatory tone."
+          },
+          {
+            "name": "No statement of facts",
+            "severity": "MEDIUM",
+            "fix": "Add numbered Statement of Facts section \u2014 judges rely on this for context"
+          },
+          {
+            "name": "Missing legal standard",
+            "severity": "MEDIUM",
+            "fix": "Add Legal Standard section \u2014 tells judge what law governs your motion"
+          },
+          {
+            "name": "No proposed order attached",
+            "severity": "LOW",
+            "fix": "Attach proposed order per MCR 2.602 \u2014 makes it easy for judge to rule in your favor"
+          }
+        ]
+      },
+      {
+        "filing": "F6",
+        "pitfall_count": 4,
+        "critical_count": 1,
+        "pitfalls": [
+          {
+            "name": "Missing standing analysis",
+            "severity": "HIGH",
+            "fix": "Add paragraph establishing Article III standing (injury, causation, redressability) \u2014 courts dismiss pro se filings for lack of standing more than any other reason"
+          },
+          {
+            "name": "No certificate of service",
+            "severity": "CRITICAL",
+            "fix": "Add MCR 2.107(C) certificate of service \u2014 filing will be STRICKEN without it"
+          },
+          {
+            "name": "Using 'I believe' instead of facts",
+            "severity": "MEDIUM",
+            "fix": "Replace 'I believe/think/feel' with factual assertions supported by evidence. Legal arguments must be fact-based."
+          },
+          {
+            "name": "No proposed order attached",
+            "severity": "LOW",
+            "fix": "Attach proposed order per MCR 2.602 \u2014 makes it easy for judge to rule in your favor"
+          }
+        ]
+      },
+      {
+        "filing": "F7",
+        "pitfall_count": 3,
+        "critical_count": 0,
+        "pitfalls": [
+          {
+            "name": "Missing standing analysis",
+            "severity": "HIGH",
+            "fix": "Add paragraph establishing Article III standing (injury, causation, redressability) \u2014 courts dismiss pro se filings for lack of standing more than any other reason"
+          },
+          {
+            "name": "No statement of facts",
+            "severity": "MEDIUM",
+            "fix": "Add numbered Statement of Facts section \u2014 judges rely on this for context"
+          },
+          {
+            "name": "Missing legal standard",
+            "severity": "MEDIUM",
+            "fix": "Add Legal Standard section \u2014 tells judge what law governs your motion"
+          }
+        ]
+      },
+      {
+        "filing": "F8",
+        "pitfall_count": 3,
+        "critical_count": 0,
+        "pitfalls": [
+          {
+            "name": "Missing standing analysis",
+            "severity": "HIGH",
+            "fix": "Add paragraph establishing Article III standing (injury, causation, redressability) \u2014 courts dismiss pro se filings for lack of standing more than any other reason"
+          },
+          {
+            "name": "Emotional language detected",
+            "severity": "MEDIUM",
+            "fix": "Replace emotional language with factual, clinical descriptions. Courts discount filings with inflammatory tone."
+          },
+          {
+            "name": "No statement of facts",
+            "severity": "MEDIUM",
+            "fix": "Add numbered Statement of Facts section \u2014 judges rely on this for context"
+          }
+        ]
+      },
+      {
+        "filing": "F9",
+        "pitfall_count": 2,
+        "critical_count": 0,
+        "pitfalls": [
+          {
+            "name": "Missing standing analysis",
+            "severity": "HIGH",
+            "fix": "Add paragraph establishing Article III standing (injury, causation, redressability) \u2014 courts dismiss pro se filings for lack of standing more than any other reason"
+          },
+          {
+            "name": "No proposed order attached",
+            "severity": "LOW",
+            "fix": "Attach proposed order per MCR 2.602 \u2014 makes it easy for judge to rule in your favor"
+          }
+        ]
+      }
+    ]
+  },
+  "strategic_leverage": {
+    "A_Custody": {
+      "case": "2024-001507-DC",
+      "factors": {
+        "evidence_density": 5.5,
+        "adversary_vulnerability": 8.1,
+        "judicial_bias": 7.0,
+        "authority_strength": 7.0,
+        "procedural_advantage": 6.0
+      },
+      "leverage_score": 6.7,
+      "leverage_grade": "C \u2014 Moderate leverage"
+    },
+    "B_Housing": {
+      "case": "2025-002760-CZ",
+      "factors": {
+        "evidence_density": 9.7,
+        "adversary_vulnerability": 8.1,
+        "judicial_bias": 7.0,
+        "authority_strength": 5.0,
+        "procedural_advantage": 6.0
+      },
+      "leverage_score": 7.3,
+      "leverage_grade": "B \u2014 Strong leverage"
+    },
+    "D_PPO": {
+      "case": "2023-5907-PP",
+      "factors": {
+        "evidence_density": 10,
+        "adversary_vulnerability": 8.1,
+        "judicial_bias": 7.0,
+        "authority_strength": 8.0,
+        "procedural_advantage": 6.0
+      },
+      "leverage_score": 8.0,
+      "leverage_grade": "A \u2014 Dominant position"
+    },
+    "E_Misconduct": {
+      "case": "JTC Complaint",
+      "factors": {
+        "evidence_density": 0.0,
+        "adversary_vulnerability": 8.1,
+        "judicial_bias": 7.0,
+        "authority_strength": 9.0,
+        "procedural_advantage": 8.0
+      },
+      "leverage_score": 6.0,
+      "leverage_grade": "C \u2014 Moderate leverage"
+    },
+    "F_Appellate": {
+      "case": "COA 366810",
+      "factors": {
+        "evidence_density": 5.0,
+        "adversary_vulnerability": 8.1,
+        "judicial_bias": 7.0,
+        "authority_strength": 7.0,
+        "procedural_advantage": 6.0
+      },
+      "leverage_score": 6.6,
+      "leverage_grade": "C \u2014 Moderate leverage"
+    }
+  },
+  "top_recommendations": [
+    "File MCR 2.003 recusal motion FIRST \u2014 McNeill has 1,127+ documented violations",
+    "Serve discovery immediately \u2014 force Emily to commit under oath or plead the Fifth",
+    "File UPL complaint against Berry with Attorney Grievance Commission",
+    "Subpoena Barnes's withdrawal filing and supporting communications",
+    "Fix 1 CRITICAL pro se pitfalls before filing anything",
+    "Request court reporter for every proceeding to build appellate record",
+    "File in federal court (\u00a71983) to bypass McNeill entirely",
+    "Build perjury referral packet for Muskegon County Prosecutor"
+  ]
+}
