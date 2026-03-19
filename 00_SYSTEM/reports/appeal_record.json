@@ -1,13 +1,7 @@
 {
-  "generated": "2026-03-18T23:11:02.793246",
-  "tool": "Appeal Record Assembler (#61)",
-  "coa_case": "366810",
-  "lower_court_case": "2024-001507-DC",
-  "docket_events": 200,
-  "judicial_orders": 100,
-  "lower_court_docs": 80,
-  "appellate_docs": 36,
-  "total_pdfs": 87,
-  "exhibit_indexes": 10,
-  "settled_statement": true
+  "generated": "2026-03-19T00:17:05.126604",
+  "tool": "Appeal Record Organizer (#124)",
+  "record_sections": 5,
+  "total_items": 17,
+  "appellate_issues": 8
 }

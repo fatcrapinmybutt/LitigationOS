@@ -1,0 +1,9 @@
+{
+  "generated": "2026-03-19T00:17:05.321781",
+  "tool": "Compliance Monitor (#125)",
+  "total_orders": 5,
+  "non_compliant": 3,
+  "total_violations": 9,
+  "db_evidence_items": 184,
+  "andrew_status": "FULL_COMPLIANCE"
+}
