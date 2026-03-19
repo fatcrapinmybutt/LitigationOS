@@ -1,0 +1,279 @@
+{
+  "tool": "#248 Witness List & Subpoena Generator",
+  "generated": "2026-03-19T09:39:58.224559",
+  "witnesses": [
+    {
+      "name": "Emily A. Watson",
+      "category": "Adverse Party",
+      "testimony_topics": [
+        "Custody interference patterns",
+        "PPO filing basis and truthfulness",
+        "Ronald Berry's involvement in legal proceedings",
+        "Withholding of L.D.W. from Andrew Pigors",
+        "Communications with FOC/Rusco",
+        "Ex parte order of August 2025"
+      ],
+      "evidence_count": 0,
+      "priority": "CRITICAL",
+      "subpoena_needed": true,
+      "documents_to_produce": []
+    },
+    {
+      "name": "Ronald T. Berry",
+      "category": "Adverse Witness",
+      "testimony_topics": [
+        "Unauthorized practice of law (MCL 600.916)",
+        "Drafting legal documents for Emily Watson",
+        "Communications with court/FOC on Emily's behalf",
+        "Albert Watson statement about premeditated ex parte",
+        "Presence in home during custody periods",
+        "Conspiracy to deprive parental rights"
+      ],
+      "evidence_count": 0,
+      "priority": "CRITICAL",
+      "subpoena_needed": true,
+      "documents_to_produce": []
+    },
+    {
+      "name": "Pamela Rusco",
+      "category": "FOC Representative",
+      "testimony_topics": [
+        "Ex parte communications with Emily Watson/Ronald Berry",
+        "HealthWest evaluation referral process",
+        "Basis for FOC recommendations",
+        "Communications with Judge McNeill outside hearings",
+        "Compliance with MCR 3.224 procedures"
+      ],
+      "evidence_count": 0,
+      "priority": "CRITICAL",
+      "subpoena_needed": true,
+      "documents_to_produce": []
+    },
+    {
+      "name": "Jennifer Barnes",
+      "category": "Former Attorney (P55406)",
+      "testimony_topics": [
+        "Withdrawal from representation",
+        "Knowledge of fraudulent filings",
+        "Ronald Berry's role during her representation",
+        "Communications with FOC on Emily's behalf"
+      ],
+      "evidence_count": 0,
+      "priority": "HIGH",
+      "subpoena_needed": true,
+      "documents_to_produce": []
+    },
+    {
+      "name": "Albert Watson",
+      "category": "Fact Witness",
+      "testimony_topics": [
+        "Statement NS2505044 about premeditated ex parte",
+        "Knowledge of Emily and Berry's plan to obtain ex parte order",
+        "Observations of Berry's control over legal proceedings",
+        "Witnessed 15 documented events",
+        "Witnessed 5 documented events"
+      ],
+      "evidence_count": 20,
+      "priority": "CRITICAL",
+      "subpoena_needed": true,
+      "documents_to_produce": []
+    },
+    {
+      "name": "WATSON",
+      "category": "Adverse Party",
+      "testimony_topics": [
+        "Testimony regarding 21 evidence items"
+      ],
+      "evidence_count": 21,
+      "priority": "HIGH",
+      "subpoena_needed": true,
+      "documents_to_produce": []
+    },
+    {
+      "name": "Emily Watson",
+      "category": "Fact Witness",
+      "testimony_topics": [
+        "Witnessed 152 documented events",
+        "Witnessed 5 documented events"
+      ],
+      "evidence_count": 157,
+      "priority": "MEDIUM",
+      "subpoena_needed": true,
+      "documents_to_produce": []
+    }
+  ],
+  "expert_witnesses_needed": [
+    {
+      "name": "Forensic Psychologist (TBD)",
+      "category": "Expert Witness",
+      "purpose": "Rebut HealthWest evaluation; testify on parental alienation patterns; evaluate Emily's pattern of false allegations",
+      "testimony_topics": [
+        "HealthWest evaluation methodology flaws",
+        "Parental alienation indicators",
+        "Child's best interest factors"
+      ],
+      "priority": "CRITICAL",
+      "subpoena_needed": false,
+      "retained": false
+    },
+    {
+      "name": "HealthWest Evaluator (Records Custodian)",
+      "category": "Expert/Custodian",
+      "purpose": "Produce raw evaluation data; testify on 7-day diagnostic reversal; disclose communications with FOC",
+      "testimony_topics": [
+        "Evaluation methodology",
+        "Basis for diagnostic change",
+        "Communications with Rusco/FOC"
+      ],
+      "priority": "CRITICAL",
+      "subpoena_needed": true,
+      "retained": false
+    },
+    {
+      "name": "UPL Expert (Michigan State Bar)",
+      "category": "Expert Witness",
+      "purpose": "Testify that Berry's actions constitute unauthorized practice of law under MCL 600.916",
+      "testimony_topics": [
+        "Definition of practicing law in Michigan",
+        "Berry's actions as UPL"
+      ],
+      "priority": "HIGH",
+      "subpoena_needed": false,
+      "retained": false
+    }
+  ],
+  "subpoenas": [
+    {
+      "witness": "Emily A. Watson",
+      "category": "Adverse Party",
+      "priority": "CRITICAL",
+      "testimony_topics": [
+        "Custody interference patterns",
+        "Communications with FOC/Rusco",
+        "PPO filing basis and truthfulness",
+        "Withholding of L.D.W. from Andrew Pigors",
+        "Ronald Berry's involvement in legal proceedings",
+        "Ex parte order of August 2025"
+      ],
+      "evidence_count": 0,
+      "documents_to_produce": [
+        "All documents relating to Custody interference patterns",
+        "All documents relating to Communications with FOC/Rusco",
+        "All documents relating to PPO filing basis and truthfulness",
+        "All documents relating to Withholding of L.D.W. from Andrew Pigors",
+        "All documents relating to Ronald Berry's involvement in legal proceedings"
+      ],
+      "service_method": "Personal service per MCR 2.105",
+      "form": "MC 11 (Subpoena)"
+    },
+    {
+      "witness": "Ronald T. Berry",
+      "category": "Adverse Witness",
+      "priority": "CRITICAL",
+      "testimony_topics": [
+        "Presence in home during custody periods",
+        "Communications with court/FOC on Emily's behalf",
+        "Conspiracy to deprive parental rights",
+        "Unauthorized practice of law (MCL 600.916)",
+        "Drafting legal documents for Emily Watson",
+        "Albert Watson statement about premeditated ex parte"
+      ],
+      "evidence_count": 0,
+      "documents_to_produce": [
+        "All documents relating to Presence in home during custody periods",
+        "All documents relating to Communications with court/FOC on Emily's behalf",
+        "All documents relating to Conspiracy to deprive parental rights",
+        "All documents relating to Unauthorized practice of law (MCL 600.916)",
+        "All documents relating to Drafting legal documents for Emily Watson"
+      ],
+      "service_method": "Personal service per MCR 2.105",
+      "form": "MC 11 (Subpoena)"
+    },
+    {
+      "witness": "Pamela Rusco",
+      "category": "FOC Representative",
+      "priority": "CRITICAL",
+      "testimony_topics": [
+        "Compliance with MCR 3.224 procedures",
+        "Ex parte communications with Emily Watson/Ronald Berry",
+        "Communications with Judge McNeill outside hearings",
+        "HealthWest evaluation referral process",
+        "Basis for FOC recommendations"
+      ],
+      "evidence_count": 0,
+      "documents_to_produce": [
+        "All documents relating to Compliance with MCR 3.224 procedures",
+        "All documents relating to Ex parte communications with Emily Watson/Ronald Berry",
+        "All documents relating to Communications with Judge McNeill outside hearings",
+        "All documents relating to HealthWest evaluation referral process",
+        "All documents relating to Basis for FOC recommendations"
+      ],
+      "service_method": "Personal service per MCR 2.105",
+      "form": "MC 11 (Subpoena)"
+    },
+    {
+      "witness": "Jennifer Barnes",
+      "category": "Former Attorney (P55406)",
+      "priority": "HIGH",
+      "testimony_topics": [
+        "Knowledge of fraudulent filings",
+        "Withdrawal from representation",
+        "Ronald Berry's role during her representation",
+        "Communications with FOC on Emily's behalf"
+      ],
+      "evidence_count": 0,
+      "documents_to_produce": [
+        "All documents relating to Knowledge of fraudulent filings",
+        "All documents relating to Withdrawal from representation",
+        "All documents relating to Ronald Berry's role during her representation",
+        "All documents relating to Communications with FOC on Emily's behalf"
+      ],
+      "service_method": "Personal service per MCR 2.105",
+      "form": "MC 11 (Subpoena)"
+    },
+    {
+      "witness": "Albert Watson",
+      "category": "Fact Witness",
+      "priority": "CRITICAL",
+      "testimony_topics": [
+        "Witnessed 5 documented events",
+        "Statement NS2505044 about premeditated ex parte",
+        "Knowledge of Emily and Berry's plan to obtain ex parte order",
+        "Witnessed 15 documented events",
+        "Observations of Berry's control over legal proceedings"
+      ],
+      "evidence_count": 20,
+      "documents_to_produce": [
+        "All documents relating to Witnessed 5 documented events",
+        "All documents relating to Statement NS2505044 about premeditated ex parte",
+        "All documents relating to Knowledge of Emily and Berry's plan to obtain ex parte order",
+        "All documents relating to Witnessed 15 documented events",
+        "All documents relating to Observations of Berry's control over legal proceedings"
+      ],
+      "service_method": "Personal service per MCR 2.105",
+      "form": "MC 11 (Subpoena)"
+    },
+    {
+      "witness": "WATSON",
+      "category": "Adverse Party",
+      "priority": "HIGH",
+      "testimony_topics": [
+        "Testimony regarding 21 evidence items"
+      ],
+      "evidence_count": 21,
+      "documents_to_produce": [
+        "All documents relating to Testimony regarding 21 evidence items"
+      ],
+      "service_method": "Personal service per MCR 2.105",
+      "form": "MC 11 (Subpoena)"
+    }
+  ],
+  "totals": {
+    "fact_witnesses": 2,
+    "adverse_parties": 3,
+    "officials": 2,
+    "experts_needed": 3,
+    "subpoenas_needed": 6,
+    "total_witnesses": 10
+  }
+}

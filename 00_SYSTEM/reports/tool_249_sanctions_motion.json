@@ -1,0 +1,213 @@
+{
+  "tool": "#249 Sanctions Motion Builder",
+  "generated": "2026-03-19T09:40:03.203718",
+  "frivolous_filings": [
+    {
+      "filing": "PPO Petition (2023-5907-PP)",
+      "respondent": "Emily A. Watson",
+      "basis": "MCR 2.114(D) \u2014 filing not well-grounded in fact",
+      "description": "PPO petition contained false allegations of physical violence. Andrew Pigors has no violence convictions. Straw-throwing incident (Oct 2023) fabricated or grossly exaggerated to obtain emergency protection order.",
+      "evidence_sources": [
+        "d_drive_events",
+        "evidence_quotes",
+        "d_drive_cip"
+      ],
+      "severity": "CRITICAL"
+    },
+    {
+      "filing": "Custody Motion (2024-001507-DC)",
+      "respondent": "Emily A. Watson",
+      "basis": "MCR 2.114(D) \u2014 interposed for improper purpose (harassment, delay)",
+      "description": "Serial false allegations used as litigation weapon to deprive Andrew of parental rights. Pattern of filing motions timed to interfere with parenting time.",
+      "evidence_sources": [
+        "d_drive_events",
+        "claims"
+      ],
+      "severity": "CRITICAL"
+    },
+    {
+      "filing": "Ex Parte Motion (Aug 2025)",
+      "respondent": "Emily A. Watson",
+      "basis": "MCR 2.114(D), MCL 722.27a(3) \u2014 no required emergency findings",
+      "description": "August 2025 ex parte order suspending ALL parenting time without the required statutory findings under MCL 722.27a(3). No evidence of imminent danger to child.",
+      "evidence_sources": [
+        "docket_events",
+        "judicial_violations"
+      ],
+      "severity": "CRITICAL"
+    },
+    {
+      "filing": "Documents prepared by Ronald Berry",
+      "respondent": "Ronald T. Berry",
+      "basis": "MCR 2.114(A) \u2014 unsigned filings by non-attorney, MCL 600.916 UPL",
+      "description": "Ronald Berry, a non-attorney, drafted, edited, or prepared legal documents filed in this case. These filings violate MCR 2.114 signing requirements and constitute unauthorized practice of law.",
+      "evidence_sources": [
+        "evidence_quotes",
+        "d_drive_events"
+      ],
+      "severity": "CRITICAL"
+    }
+  ],
+  "discovery_abuse": [
+    {
+      "respondent": "Emily A. Watson",
+      "basis": "MCR 2.313(B)(2)(a) \u2014 failure to comply with discovery",
+      "description": "Failure to produce medical records for L.D.W., financial records, and communications with Ronald Berry as required by discovery requests.",
+      "remedy": "Order compelling production + costs of motion"
+    },
+    {
+      "respondent": "Emily A. Watson",
+      "basis": "MCR 2.313(B)(2)(c) \u2014 evasive or incomplete answers",
+      "description": "Provided incomplete and evasive responses regarding Ronald Berry's role, withholding periods, and communications with FOC.",
+      "remedy": "Treat matters as admitted per MCR 2.313(B)(2)(c)"
+    }
+  ],
+  "evidence_counts": {
+    "perjury_claims": 0,
+    "contradiction_pairs": 500,
+    "interference_events": 51,
+    "judicial_violations": 1127
+  },
+  "damages": {
+    "attorney_fees_equivalent": {
+      "description": "Pro se litigant hourly rate for time spent responding to frivolous filings",
+      "hours_estimated": 500,
+      "rate": 50,
+      "total": 25000,
+      "authority": "MCL 600.2591(2) \u2014 costs include reasonable attorney fees"
+    },
+    "filing_fees": {
+      "description": "Filing fees incurred responding to frivolous motions",
+      "estimated": 1500,
+      "authority": "MCR 2.114(E)"
+    },
+    "travel_costs": {
+      "description": "Travel to and from court for unnecessary hearings",
+      "estimated": 800,
+      "authority": "MCL 600.2591"
+    },
+    "lost_parenting_time": {
+      "description": "268 documented days of lost parenting time due to frivolous filings and false allegations",
+      "days": 268,
+      "authority": "Court's inherent authority + MCL 722.23(j)"
+    },
+    "emotional_distress": {
+      "description": "Emotional distress from false allegations, parental alienation, and separation from child",
+      "estimated": 50000,
+      "authority": "42 USC 1983 \u2014 compensatory damages"
+    },
+    "total_conservative": 27300,
+    "total_with_1983": 77300
+  },
+  "authorities": [
+    {
+      "cite": "MCR 2.114(D)-(E)",
+      "rule": "Sanctions for frivolous filings \u2014 court SHALL award costs and fees"
+    },
+    {
+      "cite": "MCR 2.114(F)",
+      "rule": "Sanctions against represented party AND attorney jointly"
+    },
+    {
+      "cite": "MCR 2.313(B)(2)",
+      "rule": "Sanctions for discovery abuse \u2014 compelling, striking, default"
+    },
+    {
+      "cite": "MCL 600.2591",
+      "rule": "Costs for frivolous civil actions or defenses"
+    },
+    {
+      "cite": "MCL 600.916",
+      "rule": "Unauthorized practice of law \u2014 criminal penalty"
+    },
+    {
+      "cite": "MCL 750.423",
+      "rule": "Perjury \u2014 felony (15 years)"
+    },
+    {
+      "cite": "MCL 750.424",
+      "rule": "Subornation of perjury \u2014 felony"
+    },
+    {
+      "cite": "42 USC 1983",
+      "rule": "Federal civil rights \u2014 compensatory + punitive damages"
+    },
+    {
+      "cite": "Chambers v NASCO 501 US 32 (1991)",
+      "rule": "Court's inherent power to sanction bad-faith litigation conduct"
+    },
+    {
+      "cite": "Cooley v Chrysler Corp 349 Mich 570",
+      "rule": "Michigan standard for frivolous filings"
+    },
+    {
+      "cite": "Contel Sys v Appolonia 169 Mich App 484 (1988)",
+      "rule": "Sanctions under MCR 2.114 \u2014 objective standard"
+    },
+    {
+      "cite": "Kitchen v Kitchen 465 Mich 654 (2002)",
+      "rule": "MCL 600.2591 \u2014 'frivolous' includes no reasonable basis in fact or law"
+    }
+  ],
+  "respondents": {
+    "Emily A. Watson": {
+      "violation_count": 5,
+      "severity": "CRITICAL"
+    },
+    "Ronald T. Berry": {
+      "violation_count": 1,
+      "severity": "CRITICAL"
+    }
+  },
+  "motion_structure": {
+    "caption": {
+      "court": "14th Circuit Court, Family Division",
+      "county": "Muskegon County, Michigan",
+      "case_no": "2024-001507-DC",
+      "plaintiff": "Andrew James Pigors",
+      "defendant": "Emily A. Watson",
+      "title": "MOTION FOR SANCTIONS AND COSTS"
+    },
+    "sections": [
+      {
+        "heading": "I. INTRODUCTION",
+        "content": "Plaintiff Andrew James Pigors moves this Court for sanctions against Defendant Emily A. Watson and non-party Ronald T. Berry pursuant to MCR 2.114(D)-(E), MCR 2.313(B), MCL 600.2591, and this Court's inherent authority."
+      },
+      {
+        "heading": "II. STATEMENT OF FACTS",
+        "content": "The pattern of sanctionable conduct spans from 2023 to present and includes: (a) filing a PPO petition based on false allegations; (b) serial custody interference totaling 268 documented days; (c) unauthorized practice of law by Ronald Berry; (d) procurement of an ex parte order without statutory findings; (e) discovery abuse through evasion and non-production."
+      },
+      {
+        "heading": "III. ARGUMENT",
+        "subsections": [
+          "A. Sanctions Are Mandatory Under MCR 2.114(E)",
+          "B. Discovery Sanctions Under MCR 2.313",
+          "C. Costs Under MCL 600.2591",
+          "D. Ronald Berry's UPL Warrants Referral Under MCL 600.916",
+          "E. The Court's Inherent Authority Supports Additional Sanctions"
+        ]
+      },
+      {
+        "heading": "IV. DAMAGES AND COSTS REQUESTED",
+        "content": "Conservative: $27,300. With federal claims: $77,300."
+      },
+      {
+        "heading": "V. RELIEF REQUESTED",
+        "items": [
+          "Award of costs and fees under MCR 2.114(E) and MCL 600.2591",
+          "Order compelling discovery responses under MCR 2.313",
+          "Referral of Ronald Berry to State Bar for UPL investigation",
+          "Default on discovery matters per MCR 2.313(B)(2)(c)",
+          "Such other relief as this Court deems just and proper"
+        ]
+      }
+    ]
+  },
+  "totals": {
+    "sanctionable_acts": 6,
+    "respondents": 2,
+    "authorities_cited": 12,
+    "conservative_damages": 27300,
+    "full_damages": 77300
+  }
+}

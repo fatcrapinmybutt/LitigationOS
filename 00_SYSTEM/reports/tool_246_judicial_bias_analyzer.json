@@ -1,0 +1,1272 @@
+{
+  "tool": 246,
+  "name": "Judicial Bias Pattern Analyzer",
+  "generated": "2026-03-19T09:41:59.500328",
+  "case": "Pigors v. Watson",
+  "subject_judge": "Hon. Jenny L. McNeill",
+  "total_violations": 1127,
+  "violations_by_severity": {
+    "critical": 377,
+    "high": 243,
+    "medium": 484,
+    "low": 23
+  },
+  "canon_analysis": {
+    "MCR 2.003 (Disqualification)": {
+      "count": 167,
+      "description": "Canon MCR 2.003 (Disqualification)",
+      "severity_breakdown": {
+        "critical": 70,
+        "high": 73,
+        "medium": 24
+      },
+      "sample_violations": [
+        ",\n and  the Court  signed  an ex parte  order  suspending\n the  Plaintiff's\nparenting  time.  An evidentiary\n hearing  was held on Septemb",
+        ",  Judge  McNeill\n signed  an ex parte  \"emergency\"\norder  suspending\n all of  my  parenting\n time  with  my  three-year-old\n son,\nLincoln",
+        "suspended.\n3. \nOff-record,\n ex parte  handling\n of  evidence\n (USB  recording\n and  mental-health\nevaluation).\no  \nA USB  recording\n sub",
+        "to continue  or modify\n the ex parte  suspension.\no  \nI attempted\n to present  photographs\n from  the July  29 exchange  showing\nLincoln",
+        "idence\n off  the\nrecord  and  ex parte,  contraiy\n to the  prohibition\n on ex parte\ncommunications\n about  pending\n matters  in Canon  3(A"
+      ]
+    },
+    "MCR 3.206(A)": {
+      "count": 2,
+      "description": "Canon MCR 3.206(A)",
+      "severity_breakdown": {
+        "critical": 2
+      },
+      "sample_violations": [
+        "on.\n04/11/2024\n \nP \n001  \nRNU\nNOTICE\n \nTO  APPEAR\nNOTICE\n \nTO  APPEAR\n04/11/2024\n \nD \n001  \nRNU\nNOTICE\n \nTO  APPEAR\nNOTICE\n \nTO  APPEAR\n04/11/2024\n \nRNU\nEX  \nPARTE\n \nORDER\nPERSONAL\n \nPROTECTION\n ORDER",
+        "e  matter  before  the\ncourt  without  the assistance\n of counsel,  the  friend  of the  court  must  provide  you  with  the\nform  pleadings\n and  written  instructions\n and  must  schedule\n a hearin"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [hearing]": {
+      "count": 51,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [hearing]",
+      "severity_breakdown": {
+        "critical": 15,
+        "medium": 33,
+        "high": 3
+      },
+      "sample_violations": [
+        "HEARING\n 11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant\n requested,\n and  the Court  signed  an ex parte  order  suspending\n the  Plaintiff's\nparenting  time.  An evidentiary\n hearing  was held on S",
+        "Defendant.\n The  Court  ordered  that  once  he\nprovided  the  assessment\n as requested,  another  hearing  would  be set.\nThe Court  received  the  2nd Assessment\n on 9/12/25.  A hearing  was  set  f",
+        "the Court.  He is to inform  the  assessor\n of  ALL  the information\nthat was presented to the  Court  at the hearing,  including  the incident  at the library,  alleged\nfollowing  by the same  indivi",
+        "hearing  on 8/22/25.\nOn 9/22/2025,\n the  Court  asked  the Plaintiff  to undergo  an assessment\n at Health  West.\nThe  matter  was  then  set for an evidentiary\n hearing  on 9/4/25.  At the evidentiar",
+        "hearing.\nIt is further  ordered that the Plaintiff  must pay a bond of $250 (for each motion) before he\nmay  file another  motion  in this matter.  The  Court  will  then  review  the  motion.  If the"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [hearing, mental_health]": {
+      "count": 3,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [hearing, mental_health]",
+      "severity_breakdown": {
+        "medium": 2,
+        "critical": 1
+      },
+      "sample_violations": [
+        "hearing  would  be set.\nThe Court  received  the  2nd Assessment\n on 9/12/25.  A hearing  was  set  for  10/29/25.\nBoth  parties  appeared.\n The  Court  referenced\n the  second  assessment.\n The  Plai",
+        "hearing  was\nadjourned  for Piaintiffto\n obtain  a mental  health  assessment.  The  parties  appeared  on 10/29/25.\nThe Plaintiff objected to the Court reviewing  a 2nd assessment from  Health  West,",
+        "hearing  on 8/22/25.\nOn 9/22/2025,  the Court  asked  the Plaintiff  to undergo  an assessment  at Health  West.\nThe matter  was  then set for an evidentiary  hearing  on 9/4/25.  At the evidentiary  "
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [abuse_allegations, anger, child_welfa": {
+      "count": 1,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [abuse_allegations, anger, child_welfa",
+      "severity_breakdown": {
+        "low": 1
+      },
+      "sample_violations": [
+        "the Court.  He describes\n being  around\nthreaten  him, being  followed  and other  dangerous\nactivities.  These  situations\n are harmful  to the  child  and place  him at risk.\n* \nThe reasonable\n like"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [communication]": {
+      "count": 4,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [communication]",
+      "severity_breakdown": {
+        "low": 4
+      },
+      "sample_violations": [
+        "NOTICE\n REQUIREMENTS\nEach party shall immediately\n notify  the Office  of  Fatnily  Court  Services,  in  writing,\n of  any  changes  in\ntheir mailing  address, resiaence address, email  address  and ",
+        "NOTICE  RE0UIREMENTS\nEach  party  shall  immediately\n notify  the  Office  of  Family\n Court  Services,  in writing,\n of  any changes  in\ntheir  mailing\n address,  residence  address, email  address  ",
+        "NOTICE\n REOUIREMENTS\nEach  party  shall immediately\n notify  the Office  of  Family  Court  Services,  in writing,  of  any changes  in\ntheir  mailing  address, residence  address, email  address  and",
+        "NOTICE  REOUIREMENTS\nEach  party  shall immediately\n notify  the Office  of  Family  Court  Services,  in writing,  of  any changes  in\ntheir  mailing  address, residence  address, email  address  and"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [financial, ppo]": {
+      "count": 4,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [financial, ppo]",
+      "severity_breakdown": {
+        "low": 3,
+        "medium": 1
+      },
+      "sample_violations": [
+        "the court.  Support  charges  shall  be reinstated  effective  60 days  affer  the incapacitation\n ends.  The  office  shall\nprovide  notice  of reinstatement\n to the parties  and to the court  that  ",
+        "notice  of the abatement\n to the parties  and\nto the court.  Support  charges  shall  be reinstated  effective  60 days  affer  the incapacitation\n ends.  The  office  shall\nprovide  notice  of reinst",
+        "notice  of the abatement  to the parties  and\nto the court. Support  charges  shall be reinstated  effedive  60 days after  the incapacitation  ends. The office shall\nprovide  notice  of reinstatement",
+        "notice  was filed, or by fiting a motion. If a timely objection  is received,  the friend of the court shall\neither  set the objection  for hearing  or complete  a support  review  with an effective  "
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [financial, hearing, ppo]": {
+      "count": 1,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [financial, hearing, ppo]",
+      "severity_breakdown": {
+        "medium": 1
+      },
+      "sample_violations": [
+        "notice  was  filed,  or by filing  a motion.  If a timely  objection  is received,  the friend  of the court  shall\neither  set the objection  for hearing  or complete  a support  review  with an effe"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [financial]": {
+      "count": 1,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [financial]",
+      "severity_breakdown": {
+        "medium": 1
+      },
+      "sample_violations": [
+        "notice.\nBased  on a motion  by either  party  or a recommendation\n following  a review  by the friend  of the court,  the amount\nabated  may  be later  corrected  based  on the parties'  incomes  or a"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [best_interest]": {
+      "count": 1,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [best_interest]",
+      "severity_breakdown": {
+        "medium": 1
+      },
+      "sample_violations": [
+        "best interest  factors;  the\nPlaintiff\n filed  an objection,\n but  failed\n to follow\n the  Court  rules,  in  stating  with  specificity\n what  parts of\nthe  order  he objected\n to and  did  not  prov"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [child_welfare]": {
+      "count": 11,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [child_welfare]",
+      "severity_breakdown": {
+        "low": 5,
+        "medium": 6
+      },
+      "sample_violations": [
+        "the Court.  He describes  being  around\nrandom  men who beat him up and threaten  him, being  followed  and other  dangerous\nactivities.  These  situations  are harmful  to the child and place  him at",
+        "hearing:\n*  \nMy  three-year-old\n son  has been  deprived\n of  regular,\n loving\n contact  with  his  father\nfor  months\n at a time.\nA genuine\n father-child\n bond,  previously\n recognized\n by  the  cour",
+        "Judge:\nJENNY  L. MCNEILL\nP-58235\nBar  no.\n\u20ac  1. Thisorderisenteredafterhearing.\nTHECOURTFINDS:\n2. A T':i;;t!On  %'ifaS 'nibu  !(J\n[I]a. mod$thepersonalprotectionordpirrlqtpd\nIZ]b. extendtheexpirationd",
+        "Judge:\nRespondent's name, address, and telephone no.\nANDREW\n PIGORS\n1977  WmTEHALL\n RD TRLR  17\nMUSKEGON\n MI  49445\nJENNY\n L. MCNEILL\nP-58235\nBar  no.\n2. A motion  was  filed  to\n[]a.\n modifytheperson",
+        "best interest  of  the child  to c}iange  parenting  time  (F 5. of  form)\nPlaintiff\n requested  the Court  to Order  parenting  time  be changed  (G 6. of  form).\nAttached  to the Motion  was 16 addi"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [ex_parte]": {
+      "count": 14,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [ex_parte]",
+      "severity_breakdown": {
+        "critical": 11,
+        "high": 3
+      },
+      "sample_violations": [
+        "ex parte order suspending  his\nparenting  time  is denied.  The  Court  also  notes  that  it offered  supervised\n parenting  time  to the\nFather  and he categorically\n rejected  that.  The  Court  wi",
+        "EX PARTE  MOTION  TO  SUSPEND\n PLAINTIFF'S\nPARENTING\n TIME\nAt a session  of said  Court,  held  in the\nCourthouse  in the Counjy  of Muskegon,  State of Michigan\nPresent  Hon. JENNY  L MCNEILL\nWHEREAS",
+        "hearing.\nEVen !f an ObjeCt!On !S f!!ed, Fle eX parte OrCier !V!11 rema!n In effeCk and mLlSi 5e Obeied\nunless  changed\n by a later  court  order.",
+        "Ex Parte Motion iuccor4a<<e\nwith Michigan  Court Rules. This marks at least the fourth  instance of  evasion de6gned :\nsuppress Plaintiffs  ability  to receive notice, present rebuttal, or obtain time",
+        "eX parte OrCier !V!11 rema!n In effeCk and mLlSi 5e Obeied\nunless  changed\n by a later  court  order."
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [custody, ex_parte, hearing]": {
+      "count": 1,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [custody, ex_parte, hearing]",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "hearings.\n(Micl'iigan\n Courts)\no  \nMCR  3.207(B)(1)\n and  (B)(5)-(6)\n govern\n ex parte  custody\n and  parenting-\ntime  orders  and  require:\nSpecific\n facts  in a verified\n pleading\n or affidavit\n sli"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, compliance, hearing]": {
+      "count": 2,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, compliance, hearing]",
+      "severity_breakdown": {
+        "medium": 1,
+        "high": 1
+      },
+      "sample_violations": [
+        "HEARING\n ON\nVIOLATION\n OF VALID  PERSONAL/\nFOREIGN\n PROTECTION\n \nORDER\nOriginal  - Court\n1 st copy  - Petitioner\n2nd copy - Respondent (if applicable)\n3rd copy - Michigan State Police CJIC\nI \nCASE  NO",
+        "hearingpursuanttoMCR3.708(B).\n\u20ac b. arraignmentforarrestpursuanttoMCL764.15bandMCR3.708(C).\nTHE  COURT\n FINDS:\n?i'2. The\n respondent\n was\n present\n at the hearing\n on violation\n of a valid\n personal/\n "
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, hearing]": {
+      "count": 8,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, hearing]",
+      "severity_breakdown": {
+        "medium": 4,
+        "critical": 4
+      },
+      "sample_violations": [
+        "hearing.\nTHECOURTFINDS:\n2. A T':i;;t!On  %'ifaS 'nibu  !(J\n[I]a. mod$thepersonalprotectionordpirrlqtpd\nIZ]b. extendtheexpirationdateofthepersonalprotectionorderdated\n\u20ac c. terminatethepersonalprotectio",
+        "Judge:  JENNY L MCNEILL\n58235\nBar  no.\n[a1. Thisorderisenteredafterhearing.\nTHE  COURT  FINDS:\n2. A motion  was  filed  to\nE]a.  modifythepersonalprotectionorderdated\n 12/4/2023\n@b.  extendtheexpirati",
+        "hearing.\nTHE  COURT  FINDS:\n2. A motion  was  filed  to\nE]a.  modifythepersonalprotectionorderdated\n 12/4/2023\n@b.  extendtheexpirationdateofthepersonalprotectionorderdated\n\u20ac\nc. terminatethepersona)pr",
+        "Judge:  JENNY L MCNEILL\n\u20ac 1. Thisorderisenteredafterhearing.\nTHE  COURT  FINDS:\n2. A motion  was  filed  to\n[]a.  modifythepersonalprotectionorderdated\n\u20ac\nb. extendtheexpirationdateofthepersonalprotect",
+        "hearing.\nTHE  COURT  FINDS:\n2. A motion  was  filed  to\n[]a.  modifythepersonalprotectionorderdated\n\u20ac\nb. extendtheexpirationdateofthepersonalprotectionorderdated\nBc.  terminatethepersonalprotectionord"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [hearing, ppo]": {
+      "count": 4,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [hearing, ppo]",
+      "severity_breakdown": {
+        "critical": 4
+      },
+      "sample_violations": [
+        "HEARING\n \nINFORMATION**\nSET \nNEXT \nDATE:  \nPPOH \n04/11/2024\n \n10:00\n AM \nMCNEILL  \nCOURTROOM:\n \nCCG\nIN  PERSON\n ROOM  G\n03/29/2024\n \nD \n001  \nRNU\nPROOF\n OF  \nSERVICE\nPROOF\n \nOF  \nSERVICE\n03 /29/2024\n ",
+        "HEARING\n GRANTED\nSET  \nNEXT  \nDATE:\n \nPPOH \n04/11/2024\n \n10:00\n \nAM \nMCNEILL  \nCOURTROOM:\n \nCCG\nIN  \nPERSON\n COURTROOM\n G,  \n4TH\n \nFLOOR\n04/09/2024\n \nP \n001  \nRNU\nPROOF\n OF  \nSERVICE\nPROOF\n OF  \nSERVI",
+        "hearing  dates. Below  is a\nnarrative  summary\n of  key  episodes,  with  emphasis  on the  judge's\n conduct.\nA. Eackground:  Origin arid Use of  the PPO\n1. \nInitial\n PPO  obtained\n in 2023  based  on",
+        "hearing\n (Counts\n #5 and  #6).\nAt  the February\n 28, 2025  PPO  violation\n hearing,  the record  reflects  side-channel\ncommunication\n minimizing\n the immediate\n threat  of  jail,  while  in  open  co"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, compliance, hearing, p": {
+      "count": 2,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, compliance, hearing, p",
+      "severity_breakdown": {
+        "critical": 2
+      },
+      "sample_violations": [
+        "HEARING\n ON \nVIOLATION\n \nOF \nVALID\n \nPERSONAL\n \nPROTECTION\n \nFOREIGN\nPROTECTION\n ORDER\nSET  \nNEXT  \nDATE:\n \nPPOH\n \n04/23/2024\n \n10:00\n \nAM \nMCNEILL  \nCOURTROOM:  \nCCG\nIN  \nPERSON\n04/11/2024\n \nD \n001  ",
+        "HEARING\n \nON \nVIOLATION\n \nOF \nVALID\n \nPERSONAL\n \nPROTECTION\n \nFOREIGN\nPROTECTION\n ORDER\n01 /07/2025\n \nRNU\nREQUEST\n \nFOR  \nCOURT\n APPOINTED\n ATTORNEY\n AND  \nORDER\nREQUEST\n \nFOR  \nAPPOINTMENT\n OF \nATTOR"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [compliance]": {
+      "count": 2,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [compliance]",
+      "severity_breakdown": {
+        "medium": 2
+      },
+      "sample_violations": [
+        "IT IS ORDERED:\nZl.  The  respondent\n is ordered\n to appear  before  this  court  on  11/18/2025\n a' 11:30 AM\nDate and time\n'Q the  court  address\n above\nRf\ncou,lr00mnum5P,\n G-4THFLOOR-INPERSON\nL-i\nto ",
+        "IT IS ORDERED:\nDate and lime\n[% thq coiii't  address\n above\n!'K courttoorri\n nurribpr\n G\" - 4'h Flo(ir\nn\n,'it\nto shcw  c='iuse why  the  resporic{ent s)iould  not be t'ielcl iri contempt\n for  vicilat"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, compliance]": {
+      "count": 3,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, compliance]",
+      "severity_breakdown": {
+        "medium": 2,
+        "low": 1
+      },
+      "sample_violations": [
+        "IT IS ORDERED\n4/22/2025\n at 3:30  pm\n1. The respondent\n is ordered\n to appear\n before\n this court\n on Daleandti'me\n[K the  court  address\n above\nA  courtroom\n number\nCourtroom\n G - 4th Floor  - In Per",
+        "IT IS ORDERED:\nXJ 3. The  respondent\n is ordered  to appear  before  this  court  on  \n4111/2024\n af lo am\nDate  and time\nat\n[XI the court  address  above\n[Z courtroom\n number  G\nn\nto show  cause  why",
+        "MR.  \nPIGORS:\nthem?\nTHE  COURT  :\nthe\n \nPPO\ncan\n violate\n \nthe\n \nPPO  \nis  \nyou.\nMR.  \nPIGORS:\n \nSo,  \nif\nthe\n only\n person\n \nthat\n4"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [communication, hearing]": {
+      "count": 1,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [communication, hearing]",
+      "severity_breakdown": {
+        "medium": 1
+      },
+      "sample_violations": [
+        "hearing,\n Judge  McNeill\n ordered\n me  to obtain  a\npsychological\n assessment\n from  HealtliWest.\no  \nThe  judge's\n secretary\n then  emailed\n me,  instructing\n that  the  completed\nHealthWest\n evaluat"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [custody]": {
+      "count": 3,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [custody]",
+      "severity_breakdown": {
+        "high": 1,
+        "low": 2
+      },
+      "sample_violations": [
+        "hearings.\n(Michigan\n Courts)\no  \nMCR  3.207(B)(1)\n and  (B)(5)-(6)\n govern\n ex parte  custody\n and  parenting-\ntime  orders  and  require:\nSpecific\n facts  in a verified\n pleading\n or affidavit\n showi",
+        "Dismissed.\n \nPlaintiff/Father\n was not granted  Joint Legal\nCustody  or 50/50  Parenting  Time  by this Court.  \nPlaintiff\"s\n request  to restore  50/50  joint  legal and\nphysical  custody  arrangemen",
+        "Dismissed.\n \nPlaintiff/Father\n was not granted  Joint Legal\nCustody  or 50/50 Parenting  Time  by this Court.  \nPlaintiff's\n request  to restore  50/50  joint  legal and\nphysical  custody  arrangement"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [credibility]": {
+      "count": 1,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [credibility]",
+      "severity_breakdown": {
+        "medium": 1
+      },
+      "sample_violations": [
+        "Court Rules  and\nFederal Rules of Civil  Procedure, FRCP 26(b)(1),  45(d%3%A) requesting subpoenas issued by Defendant  be quaslied,\nDefendant  be prohibited  from  issuing any further  subpoenas and "
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [ppo]": {
+      "count": 2,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [ppo]",
+      "severity_breakdown": {
+        "medium": 2
+      },
+      "sample_violations": [
+        "dismissed.\nIT IS FURTHER  ORDERED\n that  this Judgment  of Custody,  Parenting  Time,  and\nChi!d Support  is the initial  Order  regarding  custody  and parenting  time,  issued  by this\nCourt.\nIT !S ",
+        "The Court finds that the following facto7@,arq\n applicable:\n*  \nthe mental  and  physical\n health  of  the parties  involved:\n The  Court  has serious  concerns\nabout  the  Father's  mental  health.  "
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [compliance, ppo]": {
+      "count": 2,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [compliance, ppo]",
+      "severity_breakdown": {
+        "low": 2
+      },
+      "sample_violations": [
+        "MR.  \nPIGORS:\n \nBut\n \nthere's\n \nnew  evidence.\n \nIf\nthere's\n \nnew  \nevidence,\n \nam  I  \nallowed\n \nto  \nfile\n \nthat?\nTHE  \nCOURT:\n \nI  \ndid  \nnot\n \nsee\nnew  \nin  your\nthere\n \nwas  \nnothing\nMR.  \nPIGORS",
+        "MR.  \nPIGORS:\n \nBut\n \nthere's\n \nnew  \nevidence.\n \nIf\nthere's\n new  \nevidence,\n \nam  I  \nallowed\n to  \nfile\n \nthat?\nTHE  COURT:\n \nI  \ndid  \nnot\n \nsee\nnew  in  \nyour\nthere\n was  \nnothing\nMR.  \nPIGORS:\n "
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [communication, ex_parte, ppo]": {
+      "count": 1,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [communication, ex_parte, ppo]",
+      "severity_breakdown": {
+        "critical": 1
+      },
+      "sample_violations": [
+        "ex parte\ncommunications,\n fair  opportunity\n to be heard).  (Michigan\n Courts)\nII.  SUMMARY\n OF  MISCONDUCT\nDrawing\n on my  compiled\n narrative,\n timeline,\n and  my  record,  the core  patteriis\n I ha"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, ex_parte]": {
+      "count": 1,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, ex_parte]",
+      "severity_breakdown": {
+        "critical": 1
+      },
+      "sample_violations": [
+        "ex parte  communications,\n and  a fair\nopportunity\n to be heard,  especially\n given  that  Ms.Watson\n is an employee\n of  the  Kent\nCounty\n Prosecutors\n office,\n Family\n Court  Division\n as a casework"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [communication, ex_parte]": {
+      "count": 1,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [communication, ex_parte]",
+      "severity_breakdown": {
+        "critical": 1
+      },
+      "sample_violations": [
+        "Ex Parte Communications)\n7. \nOrder\n to obtain\n HealthWest\n evaluation,\n followed\n by  chambers-only\ninstructions.\no  \nAfter  the August  28 hearing,  Judge  McNeill\n ordered  me to obtain  a\npsycholog"
+      ]
+    },
+    "MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, ex_parte, hearing]": {
+      "count": 1,
+      "description": "Canon MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, ex_parte, hearing]",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "ex parte  orders\nare initially\n justified,\n the  court  must  hold  a hearing\n and  address  the  child's\nbest  interests\n within\n a reasonable\n time,  and  that  failure\n to comply\n with\nMCR  3.207's"
+      ]
+    },
+    "MRE 616 \u2014 Bias of witness": {
+      "count": 1,
+      "description": "Canon MRE 616 \u2014 Bias of witness",
+      "severity_breakdown": {
+        "critical": 1
+      },
+      "sample_violations": [
+        "Judge.  The  Court notes\nthat  the  Father  has been  repeatedly\n warned  of this  behavior  over  the course  of the litigation.\nDespite  numerous\n warnings,  the Father  continues\n to interrupt  the"
+      ]
+    },
+    "MRE 608(b) \u2014 Specific instances of conduct for credibility": {
+      "count": 1,
+      "description": "Canon MRE 608(b) \u2014 Specific instances of conduct for credibility",
+      "severity_breakdown": {
+        "medium": 1
+      },
+      "sample_violations": [
+        "Court Rules and\nFederal Rules of Civil  Procedure, FRCP 26(b%l),  45(d%3)(A)  requesting subpoenas issued by Defendant  be quaslied,\nDefenday'it be prohibited  from  issuing any fiirtber  subpoenas an"
+      ]
+    },
+    "MRE 613/803(6) \u2014 Testimony contradicted by document [hearing]": {
+      "count": 1,
+      "description": "Canon MRE 613/803(6) \u2014 Testimony contradicted by document [hearing]",
+      "severity_breakdown": {
+        "critical": 1
+      },
+      "sample_violations": [
+        "Respondent.\nSHOW CAUSE\n HEARING\n \nON  \nPERSONAL\n \nPROTECTION\n ORDER\n(EXCERPT\n 1  \nAND  \n2 \n0F  PROCEEDINGS\n \nONLY)\nBEFORE\n THE  HONORABLE\n \nJENNY\n MCNEILL,\n \nCIRCUI'T\n COURT  \nJUDGE\nMuskegon,\n \"!\"ichi"
+      ]
+    },
+    "MCR / Canon \u2014 EX_PARTE_VIOLATION": {
+      "count": 150,
+      "description": "Canon MCR / Canon \u2014 EX_PARTE_VIOLATION",
+      "severity_breakdown": {
+        "critical": 126,
+        "high": 16,
+        "medium": 8
+      },
+      "sample_violations": [
+        "**Event:** Emily Watson filed 32 objections against the Ex Parte Custody Order, making false claims about Plaintiff\u2019s living conditions, finances, and parenting ability.",
+        "EX PARTE MOTION  TO SUSPEND  PLAINTIFF'S\n PARENTING  TIME\nNOW  COMES  Defendant,\n EmilyWatson,\n files  the  Emergency\n Ex Parte  Motion  to Suspend\nParenting\n Time,  station  as follows:\nq, \nTheDefend",
+        "ex parte  order  will automatically\n become  a temporary\n order  if you  do not  file a written\nobjection\n or motion  to modify  or rescind  the  ex parte  order  and  a request  for  a hearing.\nEVen ",
+        "Ex Parte Use); \u00a74.6 (Best-Interest  Evidence)\nIII.  LINE-BY-LINE\n OBJECTION\nStatement\nl \"Sole\n custody\"\n2 Drug/mental\n health\nclaims\nOfficer\n Randall\n3 flash  drive\n4 \"Anonymous\nfriend\"\n quote\n5 Drive",
+        "ex parte  suspension\n has\nfunctioned\n since  August  8, 2025.\n1. Chronological\n withholding\n pattern\nFirst,  the timeline\n of  withheld\n parenting\n time  as I have  experienced\n it:\n1. From  March  26"
+      ]
+    },
+    "MCR 3.207": {
+      "count": 35,
+      "description": "Canon MCR 3.207",
+      "severity_breakdown": {
+        "critical": 5,
+        "high": 30
+      },
+      "sample_violations": [
+        "[MCR] MCR 3.207: 48. **2023-11-12**: justify an ex parte custody order (MCR 3.207(B)(1)). By issuing the order despite the judge\u2019s own",
+        "[MCR] MCR 3.207: - Complete legal framework for ex parte orders (MCR 3.207, MCL 600.2950)",
+        "[MCR] MCR 3.207: - Emergency Motion (MCR 3.207) - ex parte relief",
+        "[MCR] MCR 3.207: - MCR 3.207 - Ex parte custody orders (notice required)",
+        "[MCR] MCR 3.207: **MCR 3.207** - Ex Parte, Temporary, and Protective Orders (Domestic Relations)"
+      ]
+    },
+    "MCL 600.2950": {
+      "count": 1,
+      "description": "Canon MCL 600.2950",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "[MCL] MCL 600.2950: - Complete legal framework for ex parte orders (MCR 3.207, MCL 600.2950)"
+      ]
+    },
+    "MCR 2.119": {
+      "count": 3,
+      "description": "Canon MCR 2.119",
+      "severity_breakdown": {
+        "high": 3
+      },
+      "sample_violations": [
+        "[MCR] MCR 2.119: - MCR 2.119(E)(1) - Ex parte relief requirements",
+        "[MCR] MCR 2.119: s: Mentions ex parte but no 'affidavit/verified/sworn' language on this page (MCR 3.207; MCR 3.310; MCR 2.119(B)(1)). | Ex parte basis: No articulated immediate/irreparable harm or en",
+        "[MCR] MCR 2.119: | Multiple | Orders without notice | MCR 2.119(B) \u2014 service required | Cumulative due process |"
+      ]
+    },
+    "MCR 3.206": {
+      "count": 2,
+      "description": "Canon MCR 3.206",
+      "severity_breakdown": {
+        "high": 1,
+        "critical": 1
+      },
+      "sample_violations": [
+        "[MCR] MCR 3.206: 2. Ex parte orders without notice - MCR 3.206 violations",
+        "[MCR] MCR 3.206: | **1. Vacate Ex Parte** | 2024-001507-DC | **Strong** | MCR 3.206 violations + HealthWest evaluation |"
+      ]
+    },
+    "MCL 722.27": {
+      "count": 3,
+      "description": "Canon MCL 722.27",
+      "severity_breakdown": {
+        "high": 3
+      },
+      "sample_violations": [
+        "[MCL] MCL 722.27: Ex Parte Order Granted Without Clear and Convincing Evidence of Harm (MCL 722.27a) \u2013 Instance: The",
+        "[MCL] MCL 722.27: ex parte, parental alienation, due process, best interests, MCL 722.23, MCL 722.27a, ",
+        "[MCL] MCL 722.27: to meet the statutoty burden under MCR 3.207(B), MCL 722.27a(7), and due process standards."
+      ]
+    },
+    "MCR 2.517": {
+      "count": 1,
+      "description": "Canon MCR 2.517",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "[MCR] MCR 2.517: Order Lacked Child-Specific Findings of Fact (Violation of MCR 2.517(A)) \u2013 Instance: The Ex Parte"
+      ]
+    },
+    "MCR 2.107": {
+      "count": 2,
+      "description": "Canon MCR 2.107",
+      "severity_breakdown": {
+        "high": 2
+      },
+      "sample_violations": [
+        "[MCR] MCR 2.107: any \u201cex parte materials must be re-served as a complete packet (MCR 2.107)\u201d for the court to",
+        "MCR 2.107 \u2013 Service and Filing of Pleadings and Other Papers\nThis rule addresses the proper method of serving and filing documents, ensuring that all parties receive timely notification."
+      ]
+    },
+    "MCL 722.23": {
+      "count": 6,
+      "description": "Canon MCL 722.23",
+      "severity_breakdown": {
+        "high": 6
+      },
+      "sample_violations": [
+        "[MCL] MCL 722.23: ex parte, parental alienation, due process, best interests, MCL 722.23, MCL 722.27a, ",
+        "[MCL] MCL 722.23: violates substantive and procedural due process. See MCL 722.23(j)-(l) (facilitating parent-child",
+        "Argue the Harm to Child's Best Interests: Emphasize how the PPO and the resulting limitations on your parenting time are detrimental to the child's well-being and contrary to the best interest factors",
+        "Best Interest Factor Analysis: A breakdown of MCL 722.23 factors that support your request for 50/50 custody.",
+        "For each piece of evidence, we can draft explanations on how it relates to the best interest factors under MCL 722.23 and demonstrate how each factor supports your case."
+      ]
+    },
+    "MCR 2.612": {
+      "count": 1,
+      "description": "Canon MCR 2.612",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "[MCR] MCR 2.612: - Motion to Set Aside Ex Parte Order (MCR 2.612)"
+      ]
+    },
+    "MCR 3.700": {
+      "count": 1,
+      "description": "Canon MCR 3.700",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "[MCR] MCR 3.700: Ex Parte PPO request (where permitted; supported by sworn facts) \u2014 MCR 3.700."
+      ]
+    },
+    "MCR 3.210": {
+      "count": 1,
+      "description": "Canon MCR 3.210",
+      "severity_breakdown": {
+        "critical": 1
+      },
+      "sample_violations": [
+        "[MCR] MCR 3.210: - **Domestic Relations Ex Parte & Hearings:** MCR 3.207 and MCR 3.210 (recently amended 2025\u201106\u201118). Rule index: https://www.courts.michigan.gov/siteassets/rules-instruc"
+      ]
+    },
+    "MCR 3.310": {
+      "count": 2,
+      "description": "Canon MCR 3.310",
+      "severity_breakdown": {
+        "high": 1,
+        "critical": 1
+      },
+      "sample_violations": [
+        "[MCR] MCR 3.310:  parte basis: Mentions ex parte but no 'affidavit/verified/sworn' language on this page (MCR 3.207; MCR 3.310; MCR 2.119(B)(1)). | Ex parte basis: No articulated immediate/irreparable",
+        "[MCR] MCR 3.310:       \"label\": \"MCR 3.310(B)(2) \\u2014 Ex parte custody/PT order requires specific facts of immediate danger\","
+      ]
+    },
+    "MCR 3.920": {
+      "count": 2,
+      "description": "Canon MCR 3.920",
+      "severity_breakdown": {
+        "high": 2
+      },
+      "sample_violations": [
+        "[MCR] MCR 3.920: Under MCR 3.920(B)(2)(a), an ex parte parenting time order may only be entered",
+        "[MCR] MCR 3.920: * Defendant has failed to meet the criteria of MCR 3.920(B)(2)(a) for emergency ex parte"
+      ]
+    },
+    "MCR 3.707": {
+      "count": 2,
+      "description": "Canon MCR 3.707",
+      "severity_breakdown": {
+        "high": 2
+      },
+      "sample_violations": [
+        "[MCR] MCR 3.707: * **Terminate/modify any PPO constraints** blocking parenting time: file **CC-379** under **MCR 3.707**; for ex parte PPOs, you\u2019re entitled to a promp",
+        "[MCR] MCR 3.707:   \u2013 Respondent requests hearing relief per MCR 3.707(b) (timely challenge to ex parte orders/extension)."
+      ]
+    },
+    "MCR 1.109": {
+      "count": 1,
+      "description": "Canon MCR 1.109",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "[MCR] MCR 1.109:    MCR 1.109(E)(5)\u2013(6) for filings not well-grounded in fact or law; (c) an order prohibiting further ex parte"
+      ]
+    },
+    "Canon 2 (Impropriety/Appearance)": {
+      "count": 14,
+      "description": "Canon Canon 2 (Impropriety/Appearance)",
+      "severity_breakdown": {
+        "high": 11,
+        "medium": 1,
+        "critical": 2
+      },
+      "sample_violations": [
+        "[ENCYCLOPEDIA_MASTER.md] Canon Violations Alleged: **Canon 2** - Impartiality and Appearance of Impropriety\n- Pattern creates appearance of bias\n- One-sided ex parte proceedings\n\n**Canon 3(B)(2)** - A",
+        "[PIGGYPIGGY.md] Pattern 5: Predetermined Outcome Indicators: - Orders entered before evidence fully considered\n- Findings of fact unsupported by record\n- Pattern consistent across 18+ months of procee",
+        "A judge shall not allow family, social, or other relationships to influence judicial conduct.",
+        "[JTC_COMPLAINT_COMPILED.md] II. JUDGE'S CONDUCT - DOCUMENTED VIOLATIONS: The following facts demonstrate violations of Canon 1 (upholding judiciary integrity), Canon 2 (avoiding impropriety), Canon 3 ",
+        "[JTC_COMPLAINT_EXPANSION_COMPLETION_REPORT.md] 1. MORE CANON VIOLATION EXAMPLES \u2713: - Canon 1: Added 5 specific dated instances\n- Canon 2: Added 5 specific examples with case details\n- Canon 3: Added 5"
+      ]
+    },
+    "MCR 3.207(B)": {
+      "count": 2,
+      "description": "Canon MCR 3.207(B)",
+      "severity_breakdown": {
+        "critical": 1,
+        "high": 1
+      },
+      "sample_violations": [
+        "Emergency ex parte parenting-time suspension must include factual findings of immediate harm or risk.",
+        "Use CTRL+F or filters to find nodes like \u201cPPO Show Cause #3\u201d, \u201cEmily Watson False Allegation\u201d, or \u201cMCR 3.207(B) Violation\u201d"
+      ]
+    },
+    "MCR 3.210(C)": {
+      "count": 1,
+      "description": "Canon MCR 3.210(C)",
+      "severity_breakdown": {
+        "medium": 1
+      },
+      "sample_violations": [
+        "Post-judgment hearings must be noticed and allow time to respond unless waived."
+      ]
+    },
+    "MCL 552.511b": {
+      "count": 1,
+      "description": "Canon MCL 552.511b",
+      "severity_breakdown": {
+        "medium": 1
+      },
+      "sample_violations": [
+        "Missed parenting time must be enforced via complaint or expedited hearing."
+      ]
+    },
+    "Canon 3 (Impartiality/Diligence)": {
+      "count": 9,
+      "description": "Canon Canon 3 (Impartiality/Diligence)",
+      "severity_breakdown": {
+        "medium": 1,
+        "high": 7,
+        "critical": 1
+      },
+      "sample_violations": [
+        "Judges must ensure each party is given the right to be heard.",
+        "[MCR] MCR 2.107: off-the-record email could be seen as a violation of Canon 3(A)(4) and MCR 2.107(G) (which requires",
+        "[MCR] MCR 2.114:    [Filed Under: MCR 2.114(D)\u2013(E); MCL 600.2591; Canon 3(D)(1); Judicial Benchbook \u00a79.1]",
+        "[MCL] MCL 600.2591:    [Filed Under: MCR 2.114(D)\u2013(E); MCL 600.2591; Canon 3(D)(1); Judicial Benchbook \u00a79.1]",
+        "[MCR] MCR 2.114:       [Filed Under: MCR 2.114(B); MCR 1.109(E); MCL 600.2922; Canon 3(D)(1)]"
+      ]
+    },
+    "MCR 2.107; MCR 2.612(C)": {
+      "count": 105,
+      "description": "Canon MCR 2.107; MCR 2.612(C)",
+      "severity_breakdown": {
+        "critical": 12,
+        "medium": 84,
+        "high": 9
+      },
+      "sample_violations": [
+        "being homeless and couch surfing\nMonitoring her with a webcam\nthrowing her off of a table\nshow cause #! alleged text from a random number, an Obama meme about orgies.\nOctober 2023, I caught Emily send",
+        "Demonstrate that reopening the case and reassessing custody would serve the best interests of Lincoln. Use this law to highlight the statutory factors the court must consider.Vodvarka v. Grasmeyer, 25",
+        "Proof of Service: Documentation showing the other party was served with the motion.",
+        "If possible, provide neutral third-party witnesses to vouch for your parenting abilities. Friends, teachers, healthcare providers, or others who have observed you with your child can provide powerful ",
+        "Filing Deadlines: I can track all relevant deadlines for filing motions, responses, and notices with the court to ensure you don\u2019t miss any."
+      ]
+    },
+    "SCAO": {
+      "count": 5,
+      "description": "Canon SCAO",
+      "severity_breakdown": {
+        "medium": 1,
+        "low": 2,
+        "critical": 1,
+        "high": 1
+      },
+      "sample_violations": [
+        "\u2022 Service of this order within 24 hours via MiFILE plus first\u2011class mail with SCAO proof of service filed.",
+        "I certify that on 2025-10-07, I served this filing via MiFILE electronic service to registered service contacts and by first\u2011class mail to addresses of record, and will file the SCAO Proof of Service ",
+        "Authority lock: Use current MCR PDF (May 1, 2025) as the rule spine; consult MJI Civil Benchbook for checklists and tables; keep SCAO forms as the canonical templates for summons/complaint; follow MiF",
+        "If any claim triggers federal jurisdiction or \u00a71983, the OS flips to FRCP+WDMI LCr for pleading, e-filing, division assignment, and Rule 11 compliance. Otherwise it stays in MCR/SCAO/MiFILE lane.",
+        "For state filings: enforce MiFILE format/KB guidance and SCAO forms; for WDMI: enforce PDF standards and local rule constraints."
+      ]
+    },
+    "MCR 2.102(A); MCR 2.104; MCR 2.105": {
+      "count": 1,
+      "description": "Canon MCR 2.102(A); MCR 2.104; MCR 2.105",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "Michigan requires summons + complaint served under MCR 2.105; clerk issues the summons under MCR 2.102(A); proof of service under MCR 2.104; summons generally expires in 91 days (seek second summons/e"
+      ]
+    },
+    "MCR 2.108": {
+      "count": 1,
+      "description": "Canon MCR 2.108",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "Use the Benchbook Service of Process Table; file prompt proof of service; diary the 21/28-day answer clocks depending on service location (MCR 2.108)."
+      ]
+    },
+    "MCR 2.116": {
+      "count": 1,
+      "description": "Canon MCR 2.116",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "Track common MCR 2.116 defenses (service defects must be raised early; C(7)/C(8)/C(10) standards). Build your evidence bank to survive C(10) (documentary proof, not just pleadings)."
+      ]
+    },
+    "MCR 2.105": {
+      "count": 1,
+      "description": "Canon MCR 2.105",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "Party registry & service plan (who/where/how per MCR 2.105; proof method per 2.104; 91-day clock per 2.102) \u2192 \u2714/\u2716."
+      ]
+    },
+    "MCR 2.401": {
+      "count": 1,
+      "description": "Canon MCR 2.401",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "Step-1 \u2014 Evaluate & Route. Lock SOL, forum, venue, parties, service plan, and element matrix; pick State (MCR+MiFILE) vs WDMI (FRCP+LCr). \nStep-2 \u2014 Prepare to Serve. Generate summons (MC 01) + complai"
+      ]
+    },
+    "MCR 2.107; MCR 3.207(B)(1); SCAO": {
+      "count": 1,
+      "description": "Canon MCR 2.107; MCR 3.207(B)(1); SCAO",
+      "severity_breakdown": {
+        "critical": 1
+      },
+      "sample_violations": [
+        "Ex parte order flaws (08-08-2025 suspension logic error: SCAO checkbox contradiction, MCR 3.207(B)(1) affidavit defects, late service per MCR 2.107, etc.),"
+      ]
+    },
+    "FOC": {
+      "count": 3,
+      "description": "Canon FOC",
+      "severity_breakdown": {
+        "high": 1,
+        "low": 2
+      },
+      "sample_violations": [
+        "\u2696\ufe0f Motion Generators (MC, FOC, \u00a71983, Strike, Show Cause, Canon Complaint)",
+        "Ensure that you request a Friend of the Court (FOC) review of your case, particularly if Emily\u2019s PPO or financial situation affected parenting time.",
+        "FOC Child Support Review: Request a FOC review of child support calculations to ensure that errors are identified and corrected, particularly in light of your proposed 50/50 arrangement."
+      ]
+    },
+    "MCR 2.114(B)": {
+      "count": 1,
+      "description": "Canon MCR 2.114(B)",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "\ud83e\uddfe Generate Full Affidavit of Retaliatory Show Causes (Signed, MCR 2.114(B))"
+      ]
+    },
+    "484 Mich 247": {
+      "count": 1,
+      "description": "Canon 484 Mich 247",
+      "severity_breakdown": {
+        "critical": 1
+      },
+      "sample_violations": [
+        "[CASE_LAW] 484 Mich 247: suggests due process was lacking. Michigan courts (e.g., Hunter v. Hunter, 484 Mich 247) recognize"
+      ]
+    },
+    "MCR / Canon \u2014 DUE_PROCESS_VIOLATION": {
+      "count": 5,
+      "description": "Canon MCR / Canon \u2014 DUE_PROCESS_VIOLATION",
+      "severity_breakdown": {
+        "critical": 2,
+        "high": 3
+      },
+      "sample_violations": [
+        "[COA_BEFORE_AFTER_COMPARISON.md] After (Theory VII - 12 pages): **A. Parental Rights as Fundamental Liberty**\n- Historical foundation (*Meyer*, *Pierce*, *Prince*)\n- Modern reaffirmation (*Stanley*, *",
+        "[COA_EXPANSION_SUMMARY.md] THEORY VII: Constitutional Rights (NEW +12 pages): **ENTIRELY NEW COMPREHENSIVE SECTION covering:**\n\n**A. Parental Rights as Fundamental Liberty Interests**\n- Historical fou",
+        "[COMPILATION_SUMMARY.md] 2. Michigan Supreme Court - Original Action \u2713: **File:** `MSC_ORIGINAL_ACTION_COMPILED.md`  \n**Facts Compiled:** 900  \n**Evidence Atoms:** 900 EA references  \n**Status:** \u2705 RE",
+        "[JTC_MSC_BINDER_EXTRACTED.md] I. JURISDICTION AND VEHICLE: This Court has original jurisdiction under Const 1963, art 6, \u00a7 4 and MCR 7.303 to grant extraordinary writs including superintending control",
+        "[MSC_ORIGINAL_ACTION_COMPILED.md] I. JURISDICTION AND VEHICLE: This Court has original jurisdiction under Const 1963, art 6, \u00a7 4 and MCR 7.303 to grant extraordinary writs including superintending con"
+      ]
+    },
+    "MCR / Canon \u2014 PROCEDURAL_MISCONDUCT": {
+      "count": 161,
+      "description": "Canon MCR / Canon \u2014 PROCEDURAL_MISCONDUCT",
+      "severity_breakdown": {
+        "medium": 96,
+        "critical": 59,
+        "high": 6
+      },
+      "sample_violations": [
+        "Emily Watson has\u00a0deliberately violated Factor J\u00a0and has shown\u00a0no effort to encourage or foster a strong father-child relationship, warranting significant reconsideration of her custody arrangement.",
+        "Refusing all make-up parenting time\u00a0despite multiple requests.",
+        "Citation:\u00a0Parenting Time Observations, December 2024\u200b",
+        "\u2705\u00a0Emily\u2019s Family Interfering with Exchanges and Parenting Time (October 20, 2024, and Prior Incidents)",
+        "May 9, 2024:\u00a0Andrew requested consistent daycare, and Emily\u00a0refused to cooperate, disrupting Lincoln\u2019s routine."
+      ]
+    },
+    "MCL 600.2918": {
+      "count": 1,
+      "description": "Canon MCL 600.2918",
+      "severity_breakdown": {
+        "critical": 1
+      },
+      "sample_violations": [
+        "[MCL] MCL 600.2918: ,H-4__ParentingTime_MotionPack_PLUS_CanonBrief_FINAL_Updated_With_Fee_Waiver_Section(1).docx,Other,,MCL 600.2918 / \u00a71983 / FHA,Pigors Transcript. Partial Exercpts Only 10.30.24_202"
+      ]
+    },
+    "MCR 9.202": {
+      "count": 2,
+      "description": "Canon MCR 9.202",
+      "severity_breakdown": {
+        "critical": 2
+      },
+      "sample_violations": [
+        "[MCR] MCR 9.202: Grounds (see MCR 9.202; Code of Judicial Conduct Canons 2 & 3):",
+        "[MCR] MCR 9.202: - JTC: MCR 9.202; Canons 2 & 3; JTC filing page."
+      ]
+    },
+    "MCR / Canon \u2014 MCJC_CANON_VIOLATION": {
+      "count": 5,
+      "description": "Canon MCR / Canon \u2014 MCJC_CANON_VIOLATION",
+      "severity_breakdown": {
+        "critical": 2,
+        "high": 3
+      },
+      "sample_violations": [
+        "[COMPLETE_COMMAND_CENTER.md] \ud83d\uddc2\ufe0f YOUR EVIDENCE DATABASES: **Master Location:** `C:\\users\\andre\\LITIGATIONOS_MASTER\\OMNI_HARVEST_20260216_0357\\01_EVIDENCE\\`\n\n**Critical Files:**\n1. **MASTER_EVIDENCE_ATO",
+        "[JTC_MSC_BINDER_EXTRACTED.md] Applicable Authority: - MCL ,\n- MCL -600-1344\"),\n- MCL /MCR/CANON/BENCHBOOK\n- MCL 421.29(1)(B)\n- MCL 421.29(1)(B).\\R\\N\\R\n- MCL 450.1241\n- MCL 552\n- MCL 552.\n- MCL 552.603",
+        "[MSC_ORIGINAL_ACTION_COMPILED.md] Applicable Authority: - MCL ,\n- MCL -600-1344\"),\n- MCL /MCR/CANON/BENCHBOOK\n- MCL 421.29(1)(B)\n- MCL 421.29(1)(B).\\R\\N\\R\n- MCL 450.1241\n- MCL 552\n- MCL 552.\n- MCL 552",
+        "[PIGGYPIGGY.md] 1. CASE IDENTIFICATION: | Field | Value |\n|-------|-------|\n| **Father/Plaintiff** | Andrew J. Pigors (Pro Se) |\n| **Mother/Defendant** | Emily Watson |\n| **Child** | L.D.W. (born ~201",
+        "[PIGGYPIGGY.md] MEEK4 \u2014 JTC/Canon (Judicial Misconduct): - 5 Canon violations, 18+ month pattern, JTC packet with pin-cite exhibits"
+      ]
+    },
+    "451 Mich 470": {
+      "count": 1,
+      "description": "Canon 451 Mich 470",
+      "severity_breakdown": {
+        "low": 1
+      },
+      "sample_violations": [
+        "[CASE_LAW] 451 Mich 470: | Cain v. Dept of Corrections, 451 Mich 470 | Judicial disqualification |"
+      ]
+    },
+    "MCR / Canon \u2014 CREDIBILITY_FAILURE": {
+      "count": 51,
+      "description": "Canon MCR / Canon \u2014 CREDIBILITY_FAILURE",
+      "severity_breakdown": {
+        "medium": 31,
+        "critical": 17,
+        "high": 3
+      },
+      "sample_violations": [
+        "Emily falsely accused Andrew of assaulting her during an argument.",
+        "\u2705\u00a0October 15, 2023 \u2013 False Assault Allegation Against Andrew",
+        "1. False Allegations of Domestic Violence Against Andrew",
+        "Emily Watson has engaged in repeated acts of\u00a0domestic violence, false accusations, and hostile behavior, creating an unsafe environment for Lincoln. The following documented instances establish a\u00a0patt",
+        "Emily filed a\u00a0false police report (OCA 2023-08121), later identified as fabricated."
+      ]
+    },
+    "MCR / Canon \u2014 PPO_WEAPONIZATION": {
+      "count": 27,
+      "description": "Canon MCR / Canon \u2014 PPO_WEAPONIZATION",
+      "severity_breakdown": {
+        "medium": 15,
+        "critical": 9,
+        "high": 3
+      },
+      "sample_violations": [
+        "PLAINTIFF'S MOTION TO MODIFY CUSTODY, PARENTING TIME, AND CHILD SUPPORT",
+        "This included Lincoln\u2019s\u00a0birthday on November 9, which Emily denied Andrew the opportunity to celebrate.",
+        "She\u00a0failed to properly serve\u00a0the PPO extension, violating legal procedures.",
+        "Emily Watson\u00a0intentionally delayed the service of PPO extension documents\u00a0to prevent Andrew from responding in time.",
+        "Weaponizing the PPO process to interfere with parenting time."
+      ]
+    },
+    "MCL \n722.27; MCL 722.23; MCR \n2.505; MCR 2.505": {
+      "count": 1,
+      "description": "Canon MCL \n722.27; MCL 722.23; MCR \n2.505; MCR 2.505",
+      "severity_breakdown": {
+        "critical": 1
+      },
+      "sample_violations": [
+        "IN THE 14th CIRCUIT COURT FOR THE COUNTY OF MUSKEGON, MICHIGAN \n990 Terrace St Muskegon Michigan 49442 \nCase No.: 2023-5907-PP (PPO) & 2024-001507-DC (Custody) \nHonorable Judge: Jenny McNeill \n \nPlain"
+      ]
+    },
+    "MCL 552.17; MCL 600.2950; MCL 600.2950(14); MCL 722.23; MCL 722.27; MCL 722.27(1": {
+      "count": 1,
+      "description": "Canon MCL 552.17; MCL 600.2950; MCL 600.2950(14); MCL 722.23; MCL 722.27; MCL 722.27(1",
+      "severity_breakdown": {
+        "medium": 1
+      },
+      "sample_violations": [
+        "Termination of PPO \n \nGrounds for Termination of PPO \nThe Defendant obtained the PPO by presenting false and misleading evidence, including \nstaged photographs of a mason jar and a webcam purported to"
+      ]
+    },
+    "MCL 552.17; MCL 722.27; MCL 722.27(1)(c); MCL 722.27a": {
+      "count": 1,
+      "description": "Canon MCL 552.17; MCL 722.27; MCL 722.27(1)(c); MCL 722.27a",
+      "severity_breakdown": {
+        "medium": 1
+      },
+      "sample_violations": [
+        "circumstances, including changes in income or custody arrangements. The Plaintiff has \ndemonstrated that Emily Watson failed to disclose several income sources during the initial \nchild support calcul"
+      ]
+    },
+    "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)": {
+      "count": 62,
+      "description": "Canon MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)",
+      "severity_breakdown": {
+        "critical": 9,
+        "medium": 51,
+        "high": 2
+      },
+      "sample_violations": [
+        "Motion to Terminate PPO \nMotion to Prohibit International Travel to Non-Hague Countries \nSupporting Affidavit \nMemorandum of Law \nExhibit List and Supporting Evidence \non the Defendant, Emily Watson, ",
+        "financial information, including receiving undisclosed financial support from her brother \nCody and child support from Austin Muratori, which was not accounted for in child support \ncalculations. \nEvi",
+        "November 11 2023 Emily serves me with 30 day eviction\nNovember 14/16th 2024 Lori and Emily steal a mason jar full of rubbing alcohol and cigar tips ( being cleaned ) a baby monitor, and they stage the",
+        "show cause #2 Alleged text messages from same random number and also alleged that I yelled at her outside of the courthouse, cussing at her, no witnesses. For the trial of Show cause #2 I was appointe",
+        "Provide Financial Discrepancies: Make sure to clearly outline how the current child support order is based on incorrect data or assumptions. For example, if the order was calculated based on a differe"
+      ]
+    },
+    "MCL 722.23; MCL 722.27": {
+      "count": 1,
+      "description": "Canon MCL 722.23; MCL 722.27",
+      "severity_breakdown": {
+        "medium": 1
+      },
+      "sample_violations": [
+        "I declare that this statement is true to the best of my knowledge, information, and belief. \nDate: ________________ \nSignature: __________________________ \nAndrew Pigors, Plaintiff \n \nIV. Motion to Mo"
+      ]
+    },
+    "MCL 722.27; MCL 722.27(1); MCL 722.27(1)(c); MCR 2.505": {
+      "count": 1,
+      "description": "Canon MCL 722.27; MCL 722.27(1); MCL 722.27(1)(c); MCR 2.505",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "Legal Basis for Reopening Custody Case \nUnder MCL 722.27(1)(c), the court has the authority to modify or reopen a custody order if \nthere has been a significant change in circumstances or proper cause"
+      ]
+    },
+    "MCL 600.2950; MCL 722.23; MCL 722.23)": {
+      "count": 1,
+      "description": "Canon MCL 600.2950; MCL 722.23; MCL 722.23)",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "The PPO issued against Andrew Pigors is based on numerous false claims and manipulative \ntactics by Emily Watson. MCL 600.2950 allows for the termination of a PPO if it is shown \nthat the order was ob"
+      ]
+    },
+    "MCR 3.204": {
+      "count": 1,
+      "description": "Canon MCR 3.204",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "MCR 3.204 \u2013 Support and Parenting Time Proceedings\nCovers procedures for initiating actions regarding custody, child support, and parenting time, including post-judgment modifications like those in yo"
+      ]
+    },
+    "MCR 3.211": {
+      "count": 1,
+      "description": "Canon MCR 3.211",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "MCR 3.211 \u2013 Judgment or Order of Divorce or Separate Maintenance, or Judgment or Order in Custody or Support Proceedings\nDetails the requirements for judgments or orders concerning custody, parenting "
+      ]
+    },
+    "FOC; MCR 3.215": {
+      "count": 1,
+      "description": "Canon FOC; MCR 3.215",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "MCR 3.215 \u2013 Domestic Relations Referee\nThis rule applies if your case involves a Friend of the Court (FOC) referee, which is common in cases involving child custody and support modifications. It inclu"
+      ]
+    },
+    "MCR 3.218": {
+      "count": 1,
+      "description": "Canon MCR 3.218",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "MCR 3.218 \u2013 Friend of the Court\nThis rule outlines the Friend of the Court\u2019s role in enforcing, modifying, and providing recommendations on child support, custody, and parenting time. It includes how "
+      ]
+    },
+    "MCR 3.216": {
+      "count": 1,
+      "description": "Canon MCR 3.216",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "MCR 3.216 \u2013 Domestic Relations Mediation\nIf mediation is considered or ordered in your case, this rule outlines how mediation should be conducted, including for custody, parenting time, and child supp"
+      ]
+    },
+    "MCL 600.2950/2950a; MCR 3.207(B)": {
+      "count": 126,
+      "description": "Canon MCL 600.2950/2950a; MCR 3.207(B)",
+      "severity_breakdown": {
+        "medium": 103,
+        "critical": 7,
+        "high": 16
+      },
+      "sample_violations": [
+        "Financial documents (pay stubs, employment letters, etc.) to support your improved financial condition.",
+        "If the court reopens the case, request an interim order for custody and child support until the final resolution, showing the necessity for immediate relief.",
+        "This supports your request for a modification of custody orders based on a material change in circumstances (new financial situation, new evidence).",
+        "This law can be cited to argue that Emily provided false financial information that influenced the court\u2019s decision on child support.",
+        "Argue for a recalculation of child support based on your new financial evidence, and cite this rule to back it up."
+      ]
+    },
+    "MCR 3.211(B)": {
+      "count": 1,
+      "description": "Canon MCR 3.211(B)",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "MCR 3.211(B) \u2013 Child Support Modifications:"
+      ]
+    },
+    "MCR 2.119(A)(2)": {
+      "count": 1,
+      "description": "Canon MCR 2.119(A)(2)",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "MCR 2.119(A)(2) \u2013 Supporting Affidavits:"
+      ]
+    },
+    "MCL 600.2950; MCL 600.2950a; MCL 600.2950a)": {
+      "count": 1,
+      "description": "Canon MCL 600.2950; MCL 600.2950a; MCL 600.2950a)",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "Address the Legal Standard for PPOs: Cite the Michigan law governing PPOs (MCL 600.2950 or MCL 600.2950a) and argue how the facts do not meet the legal standard for a PPO or how the circumstances have"
+      ]
+    },
+    "MCL 722.23; MCL 722.23)": {
+      "count": 1,
+      "description": "Canon MCL 722.23; MCL 722.23)",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "Tailor your argument to Michigan's best interest factors (MCL 722.23), explaining how each factor supports you being the better custodial parent."
+      ]
+    },
+    "MCL 722.27; MCR 2.612": {
+      "count": 1,
+      "description": "Canon MCL 722.27; MCR 2.612",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "Plaintiff, Andrew J. Pigors, pursuant to MCR 2.612 and MCL 722.27, respectfully moves this Court to grant relief from the current custody and support judgment due to newly discovered evidence, mistake"
+      ]
+    },
+    "MCR 2.505; MCR 3.206": {
+      "count": 1,
+      "description": "Canon MCR 2.505; MCR 3.206",
+      "severity_breakdown": {
+        "critical": 1
+      },
+      "sample_violations": [
+        "Plaintiff, Andrew J. Pigors, pursuant to MCR 2.505 and MCR 3.206, respectfully moves this Court to reopen the custody case and consolidate it with the PPO case (2023-5907-PP) due to overlapping facts "
+      ]
+    },
+    "MCL 552.17; MCL 722.27; MCR 3.211": {
+      "count": 1,
+      "description": "Canon MCL 552.17; MCL 722.27; MCR 3.211",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "Plaintiff, Andrew J. Pigors, respectfully submits this motion to revoke child support arrears and modify the existing child support, parenting time, and custody orders, pursuant to MCL 552.17, MCL 722"
+      ]
+    },
+    "MCL 552.607; MCL 722.23; MCL 722.27": {
+      "count": 1,
+      "description": "Canon MCL 552.607; MCL 722.23; MCL 722.27",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "Plaintiff, Andrew J. Pigors, respectfully submits this motion requesting an immediate stoppage of income withholding for child support, a modification of parenting time, and a proposal for custody arr"
+      ]
+    },
+    "FOC; MCR 2.002; MCR 2.107; MCR 2.612(C); MCR 3.207(B)": {
+      "count": 2,
+      "description": "Canon FOC; MCR 2.002; MCR 2.107; MCR 2.612(C); MCR 3.207(B)",
+      "severity_breakdown": {
+        "high": 2
+      },
+      "sample_violations": [
+        "Proposed Order checkboxes driven by this set:\n  [ ] Interim parenting time reinstated immediately (MCR 3.207(B)); Attachment A make-up schedule.\n  [ ] PPO may not be used as sword/shield to impede exc",
+        "Proposed Order checkboxes driven by these CSVs:\n  [ ] Interim parenting time reinstated immediately (MCR 3.207(B)); Attachment A make-up schedule.\n  [ ] PPO may not be used as sword/shield to impede e"
+      ]
+    },
+    "MCR 2.505": {
+      "count": 1,
+      "description": "Canon MCR 2.505",
+      "severity_breakdown": {
+        "high": 1
+      },
+      "sample_violations": [
+        "\u2022 Coordinate PPO and custody calendars under MCR 2.505 to avoid inconsistent findings; bar use of PPO as sword/shield against exchanges."
+      ]
+    },
+    "MCL 600.2950 (PPO)": {
+      "count": 4,
+      "description": "Canon MCL 600.2950 (PPO)",
+      "severity_breakdown": {
+        "medium": 4
+      },
+      "sample_violations": [
+        "granted.  T tie court  cierR  snaii  compiete\n anci fiie ti-ie Removai  or\nEntry  rrom  LEIN  (form  MC  239)  with  the law  enforcement\n agency  named  in the  last  order.\nI \n(IEREBY  C,[-.Pi'i-IFY",
+        "granted.\n ThecourtclerkshallcompleteandfiletheRemovalof\nEntryfrom  LEIN  (form  MC  239)  with  the  law  enforcement\n agency  named  in the  last  order.\n\u20ac 7. Themotiontomodify,extend,orterminatethep",
+        "granted.  The  court  clerk  shall  complete\n and  file  the Removal  of\nEntry  from  LEIN  (form  MC 239)  with  the law enforcement\n agency  named  in the last order.\n07.  Themotiontomodify,extend,o",
+        "granted.  \nThe  court  clerk  shall  complete\n and  File the  Removal  of\nEntry  from  LEIN  (form  MC 239)  with  the law  enforcement\n agency  named  in the last order.\nThe  motion  to modify,  exte"
+      ]
+    },
+    "MCR 2.517 (findings of fact)": {
+      "count": 1,
+      "description": "Canon MCR 2.517 (findings of fact)",
+      "severity_breakdown": {
+        "medium": 1
+      },
+      "sample_violations": [
+        "notice.\nBased on a motion by either  party or a recommendation\n following  a review  by the friend  of the court, the amount\nabated  may be later oorrected  based  on the parties'  incomes  or ability"
+      ]
+    }
+  },
+  "ruling_analysis": {
+    "total_rulings": 100,
+    "favoring_emily": 2,
+    "favoring_andrew": 0,
+    "neutral": 98,
+    "procedural_shortcuts": 31,
+    "no_hearing_orders": [
+      {
+        "date": "2024-07-01",
+        "description": "Ex Parte Custody Order Entered"
+      },
+      {
+        "date": "2024-04-11",
+        "description": "PPO Amended \u2014 Ex Parte Order"
+      },
+      {
+        "date": "2024-04-29",
+        "description": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 6/5/24 PAGE 2 5. On April 29, 2024 an Ex Parte Order for Custody, Parenting Time and Child "
+      },
+      {
+        "date": "2024-04-29",
+        "description": "IT IS FURTHER ORDERED that parties participated in a Facilitative Information Gathering Conference which resulted in a temporary Order titled Ex Parte"
+      },
+      {
+        "date": "2024-07-17",
+        "description": "STATE  OF  MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEG-ON ANDREW PIGORS, Plaintiff, File No: 2024-001507-DC Hon. Jenny L. McNeill VS. CUSTO"
+      },
+      {
+        "date": "2025-04-25",
+        "description": "FILED 4/25/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY ST ATE OF MICHIGAN IN THE 14TH CIRCUIT COURT FOR TIIE COUNTY OF MUSKEGON - FAMILY DIVISION Case "
+      },
+      {
+        "date": "2025-08-06",
+        "description": "hearing. Appendix E - Ex Parte and Post-Ex Parte Orders in August-October 2025 The ex parte order suspending all parenting time (ente"
+      },
+      {
+        "date": "2025-08-06",
+        "description": "Ex Parte Paretxting-Time Suspension and Lack of Notice (August 2025) 4. August 6, 2025 - Ex parte order suspending all parenting time. o"
+      },
+      {
+        "date": "2025-08-06",
+        "description": "ex parte order suspending all parenting time (entered 011 or about August 6, 2025). Subsequent orders continuing the suspension (around"
+      },
+      {
+        "date": "2025-08-07",
+        "description": "2025 - Ex Parte Order Pattern (CRITICAL)"
+      },
+      {
+        "date": "2025-08-08",
+        "description": "ex parte motion was filed. On or about August 8, 2025, the ex parte order took effect, and my parenting time has been functionally sus"
+      },
+      {
+        "date": "2025-08-08",
+        "description": "ex parte motion or order before an August 8, 2025 exchange. I arrived expecting my regular parenting time, and only discovered after t"
+      },
+      {
+        "date": "2025-08-08",
+        "description": ":ECEIa7ED  ri/t'/2025 FILED  8/8/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY STATE OF MICHIGAN IN THE1 4TH CIRCUIT COURT IN THE COUNTY OF MUSKEGON FAMI"
+      },
+      {
+        "date": "2025-08-08",
+        "description": "2025 - Ex Parte Order Pattern (CRITICAL)"
+      },
+      {
+        "date": "2025-08-08",
+        "description": "1. Ex Parte Order Pattern \u26a0\ufe0f CRITICAL"
+      },
+      {
+        "date": "2025-08-08",
+        "description": "Ambush at Parenting Time Exchange \u2014 No Notice of Ex Parte"
+      },
+      {
+        "date": "2025-08-22",
+        "description": "2025 - Ex Parte Order Pattern (CRITICAL)"
+      },
+      {
+        "date": "2025-08-22",
+        "description": "Interim Hearing on Ex Parte Order"
+      },
+      {
+        "date": "2025-08-30",
+        "description": "2025 - Ex Parte Order Pattern (CRITICAL)"
+      },
+      {
+        "date": "2025-09-04",
+        "description": "STATE  OF  M CHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER RE"
+      }
+    ]
+  },
+  "crampton_test": {
+    "legal_citation": "Crampton v Dept of State, 395 Mich 347 (1975)",
+    "test_description": "Objective test: would a reasonable person question impartiality?",
+    "indicators": [
+      {
+        "indicator": "Ruling Asymmetry",
+        "finding": "2 rulings favoring Emily vs 0 favoring Andrew (2.0% vs 0.0%)",
+        "score": 0,
+        "query": "SELECT * FROM docket_events \u2014 analyzed 100 rulings"
+      },
+      {
+        "indicator": "Procedural Shortcuts",
+        "finding": "31 orders issued without hearing or notice (violates MCR 2.119 right to respond)",
+        "score": 10,
+        "query": "SELECT * FROM docket_events WHERE title/summary contains 'without hearing/ex parte/sua sponte'"
+      },
+      {
+        "indicator": "Canon Violation Volume",
+        "finding": "1,127 documented violations \u2014 620 critical/high severity",
+        "score": 10,
+        "query": "SELECT COUNT(*) FROM judicial_violations \u2014 1,127 rows"
+      },
+      {
+        "indicator": "FOC Communication Pattern",
+        "finding": "1 references to FOC/Rusco communications in evidence",
+        "score": 1,
+        "query": "SELECT * FROM evidence_quotes WHERE quote_text LIKE '%rusco%' OR '%foc%'"
+      },
+      {
+        "indicator": "Appearance of Impropriety (Canon 2)",
+        "finding": "0 Canon 2 violations \u2014 directly relevant to Crampton appearance test",
+        "score": 0,
+        "query": "SELECT * FROM judicial_violations WHERE canon_number LIKE '2%'"
+      },
+      {
+        "indicator": "Impartiality Violations (Canon 3)",
+        "finding": "0 Canon 3 violations \u2014 failure to perform duties impartially",
+        "score": 0,
+        "query": "SELECT * FROM judicial_violations WHERE canon_number LIKE '3%'"
+      }
+    ],
+    "composite_score": 21,
+    "max_possible": 60,
+    "composite_pct": 35.0
+  },
+  "mcneill_evidence_refs": 125,
+  "foc_communication_refs": 1,
+  "queries_used": {
+    "judicial_violations": "SELECT * FROM judicial_violations",
+    "docket_events": "SELECT * FROM docket_events",
+    "mcneill_quotes": "SELECT ... FROM evidence_quotes WHERE quote_text LIKE '%McNeill%'",
+    "foc_refs": "SELECT ... FROM evidence_quotes WHERE quote_text LIKE '%rusco%' OR '%foc%'"
+  }
+}

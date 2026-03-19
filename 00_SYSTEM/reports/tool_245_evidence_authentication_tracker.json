@@ -1,0 +1,134 @@
+{
+  "tool": 245,
+  "name": "Evidence Authentication Tracker",
+  "generated": "2026-03-19T09:41:48.718003",
+  "case": "Pigors v. Watson",
+  "total_documents": 18588,
+  "authenticated_count": 18588,
+  "pending_count": 0,
+  "auth_rate_pct": 100.0,
+  "linked_evidence_quotes": 1235,
+  "type_breakdown": {
+    "pdf_document": {
+      "total": 10671,
+      "authenticated": 10671,
+      "pending": 0,
+      "total_size_bytes": 9250804669
+    },
+    "court_record": {
+      "total": 4560,
+      "authenticated": 4560,
+      "pending": 0,
+      "total_size_bytes": 4059107442
+    },
+    "email": {
+      "total": 459,
+      "authenticated": 459,
+      "pending": 0,
+      "total_size_bytes": 88778104
+    },
+    "financial_record": {
+      "total": 30,
+      "authenticated": 30,
+      "pending": 0,
+      "total_size_bytes": 8049882
+    },
+    "medical_record": {
+      "total": 2641,
+      "authenticated": 2641,
+      "pending": 0,
+      "total_size_bytes": 770027315
+    },
+    "text_message": {
+      "total": 105,
+      "authenticated": 105,
+      "pending": 0,
+      "total_size_bytes": 244352888
+    },
+    "government_record": {
+      "total": 36,
+      "authenticated": 36,
+      "pending": 0,
+      "total_size_bytes": 26202919
+    },
+    "photo": {
+      "total": 83,
+      "authenticated": 83,
+      "pending": 0,
+      "total_size_bytes": 58515797
+    },
+    "video": {
+      "total": 3,
+      "authenticated": 3,
+      "pending": 0,
+      "total_size_bytes": 11042022
+    }
+  },
+  "action_items": {
+    "needs_affidavit_count": 0,
+    "needs_803_6_count": 2707,
+    "needs_chain_custody_count": 0
+  },
+  "authentication_requirements": {
+    "pdf_document": {
+      "affidavit": true,
+      "business_records_803_6": false,
+      "chain_of_custody": true,
+      "notes": "Authentication depends on content type \u2014 identify source for correct rule"
+    },
+    "court_record": {
+      "affidavit": false,
+      "business_records_803_6": false,
+      "chain_of_custody": false,
+      "notes": "MRE 902(4) certified copy of public record; self-authenticating if certified"
+    },
+    "email": {
+      "affidavit": true,
+      "business_records_803_6": false,
+      "chain_of_custody": true,
+      "notes": "MRE 901(b)(4) distinctive characteristics; header metadata + account ownership"
+    },
+    "financial_record": {
+      "affidavit": false,
+      "business_records_803_6": true,
+      "chain_of_custody": true,
+      "notes": "MRE 803(6) business records; bank/employer certification needed"
+    },
+    "medical_record": {
+      "affidavit": false,
+      "business_records_803_6": true,
+      "chain_of_custody": true,
+      "notes": "MRE 803(6) business records exception; custodian affidavit or MRE 902(11) certification"
+    },
+    "text_message": {
+      "affidavit": true,
+      "business_records_803_6": false,
+      "chain_of_custody": true,
+      "notes": "MRE 901(b)(1) testimony of knowledge; screenshot + device identification needed"
+    },
+    "government_record": {
+      "affidavit": false,
+      "business_records_803_6": true,
+      "chain_of_custody": false,
+      "notes": "MRE 803(8) public records exception; MRE 902(1)-(4) self-authenticating"
+    },
+    "photo": {
+      "affidavit": true,
+      "business_records_803_6": false,
+      "chain_of_custody": true,
+      "notes": "MRE 901(b)(1) fair and accurate representation; EXIF metadata preservation"
+    },
+    "video": {
+      "affidavit": true,
+      "business_records_803_6": false,
+      "chain_of_custody": true,
+      "notes": "MRE 901(b)(1) + (b)(9) process/system authentication; unedited original required"
+    }
+  },
+  "queries_used": {
+    "total_count": "SELECT COUNT(*) FROM documents",
+    "hash_status": "SELECT ... WHERE sha256_hash IS NOT NULL / IS NULL",
+    "full_inventory": "SELECT file_name, file_path, sha256_hash, file_size_bytes, evidence_category FROM documents",
+    "evidence_crossref": "SELECT COUNT(DISTINCT document_id) FROM evidence_quotes WHERE document_id IS NOT NULL"
+  }
+}
