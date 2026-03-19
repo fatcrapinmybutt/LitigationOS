@@ -1,315 +1,140 @@
-STATE OF MICHIGAN
-14TH JUDICIAL CIRCUIT COURT — FAMILY DIVISION
-MUSKEGON COUNTY
+# 🔍 DISCOVERY REQUEST GENERATOR
+*Generated: 2026-03-19 00:01 | Tool #107*
+*MCR 2.309 (Interrogatories) · MCR 2.310 (Production) · MCR 2.312 (Admissions)*
 
-ANDREW JAMES PIGORS,
-    Plaintiff,                    Case No. 2024-001507-DC
-                                  Hon. Jenny L. McNeill
-v.
+---
 
-EMILY A. WATSON,
-    Defendant.
-__________________________________________________
+## Summary: 15 Interrogatories + 14 Doc Requests + 10 Admissions
 
-============================================================
-PLAINTIFF'S FIRST SET OF INTERROGATORIES
-Pursuant to MCR 2.309
-============================================================
+## 📝 INTERROGATORIES (MCR 2.309)
 
-TO: EMILY A. WATSON
+*Note: Michigan limits to 20 interrogatories per party (including subparts). Prioritize accordingly.*
 
-You are hereby requested to answer the following interrogatories
-under oath within twenty-eight (28) days of service pursuant to
-MCR 2.309(B).
+### To: Emily Watson
 
+**Interrogatory No. 1** [Parenting Time]
+> State each and every reason you opposed Andrew Pigors' parenting time with L.D.W. from January 2024 to present, including the factual basis for each reason.
 
-INTERROGATORY NO. 1:
-[Contradiction]
-In watson_perjury_compilation.id=1347, Emily Watson stated: "Emily Watsons actions create an emotionally and physically unsafe environment for Lincoln, violating Best Interest Factor (K). Her repeated use of hos". However, in harvest_texts.id=68 (Affidavit_Exhibit_A_CUSTODY_WEAVED_MEEK4.docx), Emily Watson stated: "Parties operated under de facto 50/50 parenting time safely from separation until PPO filing". Please explain the discrepancy between these two statements, identify which statement is accurate, and state all facts supporting the accurate statement.
+**Interrogatory No. 2** [Straw Incident]
+> Describe in detail the "straw incident" of approximately October 2023, including: (a) the exact date, (b) the exact location, (c) all persons present, (d) exactly what occurred, (e) any medical treatment sought for L.D.W.
 
-INTERROGATORY NO. 2:
-[Contradiction]
-In 2, Tiffany Watson stated: "hearing was adjourned for Plaintiff to obtain a mental health assessment. The parties appeared on 1 0/29/25. ThePlaintiff West,stating(under oath) tha". However, in 31, Tiffany Watson stated: "hearing and subpoenaed the two health west staff for the next hearing, which occurred on 41/26/25. If a parenting time modification does not change th". Please explain the discrepancy between these two statements, identify which statement is accurate, and state all facts supporting the accurate statement.
+**Interrogatory No. 3** [PPO Basis]
+> State the specific facts you relied upon when filing for a Personal Protection Order in case 2023-5907-PP, and identify all documents that support each fact.
 
-INTERROGATORY NO. 3:
-[Contradiction]
-In timeline.7e93bfb705a8, Tiffany Watson stated: "[2024-11-27] [Scanned PDF: unpack/drive-download-20260209T030322Z-1-001/SCANNEDcourt docs ppo cust scanned_0029__unzipped__/court docs ppo cust scanne". However, in timeline.e78a17495c2c, Tiffany Watson stated: "[2025-10-18] [Scanned PDF: unpack/drive-download-20260209T030322Z-1-001/SCANNEDcourt docs ppo cust scanned_0029(1)__unzipped__/court docs ppo cust sca". Please explain the discrepancy between these two statements, identify which statement is accurate, and state all facts supporting the accurate statement.
+**Interrogatory No. 4** [Ronald Berry]
+> Describe your relationship with Ronald T. Berry, including: (a) when the relationship began, (b) whether he resides at your home, (c) his involvement in decisions regarding L.D.W., (d) whether he advised you on legal matters in this case.
 
-INTERROGATORY NO. 4:
-[Contradiction]
-In 106, Tiffany Watson stated: "44S v ADeNfeDnRdaEnWt/RepspIoGnOdeRntS's name YOU ARE DIRECTED TO APPEAR AS FOLLOWS: ',l For: PPO 'vIOLATION HEARING Date: '.HURSDAY JUNE 12, 2025 T.i". However, in 96, Tiffany Watson stated: "HEARING Date: FRIDAY DECEMBER 05, 2025 Time: 11 :OO AM Jurist: JENNY L. MCNEILL Comments: All parties to appear in person for PPO Violation. Comments:". Please explain the discrepancy between these two statements, identify which statement is accurate, and state all facts supporting the accurate statement.
+**Interrogatory No. 5** [Communication Blocking]
+> Identify every phone number, email address, and social media account you blocked or restricted Andrew Pigors from contacting, and the date of each action.
 
-INTERROGATORY NO. 5:
-[Contradiction]
-In timeline.cc95b6eb2453, Tiffany Watson stated: "[2024-04-26] [Scanned PDF: unpack/drive-download-20260209T030322Z-1-001/SCANNEDcustody scanned_0001__unzipped__/custody scanned_0068.pdf] Uniform Chil". However, in timeline.e78a17495c2c, Tiffany Watson stated: "[2025-10-18] [Scanned PDF: unpack/drive-download-20260209T030322Z-1-001/SCANNEDcourt docs ppo cust scanned_0029(1)__unzipped__/court docs ppo cust sca". Please explain the discrepancy between these two statements, identify which statement is accurate, and state all facts supporting the accurate statement.
+**Interrogatory No. 6** [Financial Support]
+> State all sources of financial support you have received since January 2024, including amounts from Ronald Berry, family members, or public assistance.
 
-INTERROGATORY NO. 6:
-[Contradiction]
-In timeline.cc95b6eb2453, Tiffany Watson stated: "[2024-04-26] [Scanned PDF: unpack/drive-download-20260209T030322Z-1-001/SCANNEDcustody scanned_0001__unzipped__/custody scanned_0068.pdf] Uniform Chil". However, in timeline.7e93bfb705a8, Tiffany Watson stated: "[2024-11-27] [Scanned PDF: unpack/drive-download-20260209T030322Z-1-001/SCANNEDcourt docs ppo cust scanned_0029__unzipped__/court docs ppo cust scanne". Please explain the discrepancy between these two statements, identify which statement is accurate, and state all facts supporting the accurate statement.
+**Interrogatory No. 7** [Ex Parte Motion]
+> Regarding your August 2025 ex parte motion to suspend all parenting time: (a) state the emergency requiring ex parte relief, (b) explain why regular notice could not be given, (c) identify who assisted you in preparing the motion.
 
-INTERROGATORY NO. 7:
-[Contradiction]
-In 91, Tiffany Watson stated: "HEARING SWEARS/DELACRUZ VIOLATION 05 /16/2025 PERSONAL PROTECTION ORDER SWEARS/DELACRUZ MOTION TO 05/16/2025 NOTICE TO APPEAR NOTICE TO APPEAR 05/16/2". However, in 96, Tiffany Watson stated: "HEARING Date: FRIDAY DECEMBER 05, 2025 Time: 11 :OO AM Jurist: JENNY L. MCNEILL Comments: All parties to appear in person for PPO Violation. Comments:". Please explain the discrepancy between these two statements, identify which statement is accurate, and state all facts supporting the accurate statement.
+**Interrogatory No. 8** [Child's Wellbeing]
+> Describe L.D.W.'s current: (a) daycare/school enrollment, (b) medical providers, (c) daily routine, (d) sleeping arrangements, (e) who provides primary care during your work hours.
 
-INTERROGATORY NO. 8:
-[Contradiction]
-In 266, Tiffany Watson stated: "Denied. February 14, 2025: Plaintiff filed Motion re: Parenting Time requesting Joint Custody and equal parenting time (50/50) be restored and for chi". However, in 261, Tiffany Watson stated: "Denied. Ordcr entered on April 12, 2024. April 11, 2024: Plaintiff filed a Motion regarding Custody. Plaintiff addressed the Best Interest Factors rep". Please explain the discrepancy between these two statements, identify which statement is accurate, and state all facts supporting the accurate statement.
+**Interrogatory No. 9** [Prior Statements]
+> Identify all written or recorded statements you have made about Andrew Pigors to: (a) courts, (b) police, (c) CPS, (d) medical providers, (e) school officials, (f) any other person or agency.
 
-INTERROGATORY NO. 9:
-[Contradiction]
-In 264, Tiffany Watson stated: "Dismissed. *Tliis Judgment is tlie initial Order regarding the issues of Custody and Parenting Time. *PlaintiFs six (6) Motions filed on July 16, 2024". However, in 266, Tiffany Watson stated: "Denied. February 14, 2025: Plaintiff filed Motion re: Parenting Time requesting Joint Custody and equal parenting time (50/50) be restored and for chi". Please explain the discrepancy between these two statements, identify which statement is accurate, and state all facts supporting the accurate statement.
+**Interrogatory No. 10** [ChatGPT Usage]
+> State whether you have used ChatGPT or any AI tool to: (a) draft court documents, (b) plan legal strategy, (c) discuss Andrew Pigors or L.D.W., and if so, produce all such records.
 
-INTERROGATORY NO. 10:
-[Contradiction]
-In 28, Tiffany Watson stated: "defendant. El not to exceed 6% of the plaintiffs/defendant's gross income. 3. Income Withholding. Income withholding takes immediate efflecl. Payments". However, in contradicting_evidence, Tiffany Watson stated: "dismissed. IT IS FURTHER ORDERED that this Judgment of Custody, Parenting Time, and Chi!d Support is the initial Order regarding custody and parenting". Please explain the discrepancy between these two statements, identify which statement is accurate, and state all facts supporting the accurate statement.
 
-INTERROGATORY NO. 11:
-[False Assertion]
-You have asserted: "",Neglect of Lincoln’s dental health and overall well-being". Please identify: (a) all evidence supporting this assertion; (b) all witnesses who can corroborate this assertion; (c) all documents relating to this assertion; and (d) whether you have any reason to believe this assertion may be inaccurate or incomplete.
+### To: Ronald Berry
 
-INTERROGATORY NO. 12:
-[False Assertion]
-You have asserted: ",Documented medical neglect and raised concerns in custody filings". Please identify: (a) all evidence supporting this assertion; (b) all witnesses who can corroborate this assertion; (c) all documents relating to this assertion; and (d) whether you have any reason to believe this assertion may be inaccurate or incomplete.
+**Interrogatory No. 11** [Legal Advice]
+> Have you at any time provided legal advice to Emily Watson regarding the cases of Pigors v. Watson? If so, describe each instance.
 
-INTERROGATORY NO. 13:
-[False Assertion]
-You have asserted: ",Worry and frustration over Emily's neglect of Lincoln’s health needs". Please identify: (a) all evidence supporting this assertion; (b) all witnesses who can corroborate this assertion; (c) all documents relating to this assertion; and (d) whether you have any reason to believe this assertion may be inaccurate or incomplete.
+**Interrogatory No. 12** [Court Involvement]
+> Have you at any time accompanied Emily Watson to court proceedings, assisted in preparing court documents, or communicated with her attorney Jennifer Barnes about this case?
 
-INTERROGATORY NO. 14:
-[False Assertion]
-You have asserted: "Emily Watson failed to address Lincoln’s peanut allergy,Neglecting medical concerns,Failure of the 12 Best Interests - Factor A,"March 15, 2024",Medical Records【13†source】【16†source】". Please identify: (a) all evidence supporting this assertion; (b) all witnesses who can corroborate this assertion; (c) all documents relating to this assertion; and (d) whether you have any reason to believe this assertion may be inaccurate or incomplete.
+**Interrogatory No. 13** [Bar Membership]
+> Are you a member of the State Bar of Michigan or any other state bar? If so, provide your bar number. If not, explain the basis for any legal advice given to Emily Watson.
 
-INTERROGATORY NO. 15:
-[False Assertion]
-You have asserted: "Emily Watson failed to inform Andrew of LDW’s viral infection,Medical neglect,Failure of the 12 Best Interests - Factor A,Date unspecified,Exhibit E【16†source】". Please identify: (a) all evidence supporting this assertion; (b) all witnesses who can corroborate this assertion; (c) all documents relating to this assertion; and (d) whether you have any reason to believe this assertion may be inaccurate or incomplete.
+**Interrogatory No. 14** [Unauthorized Practice]
+> Have you drafted, edited, or reviewed any court filings, motions, or legal documents for Emily Watson in any case involving Andrew Pigors?
 
-INTERROGATORY NO. 16:
-[False Assertion]
-You have asserted: "Emily Watson disregarded Lincoln’s emotional regression symptoms,Failure to ensure child’s emotional stability,Failure of the 12 Best Interests - Factor B,"September 8, 2024",Exhibit D【15†source】". Please identify: (a) all evidence supporting this assertion; (b) all witnesses who can corroborate this assertion; (c) all documents relating to this assertion; and (d) whether you have any reason to believe this assertion may be inaccurate or incomplete.
+**Interrogatory No. 15** [Child Contact]
+> Describe all contact you have had with L.D.W., including frequency, duration, and nature of the contact.
 
-INTERROGATORY NO. 17:
-[False Assertion]
-You have asserted: "Emily Watson failed to take Lincoln to the dentist for routine check-ups,Neglect of preventative healthcare,Failure of the 12 Best Interests - Factor A,"October 16, 2024",Medical Records【14†source】". Please identify: (a) all evidence supporting this assertion; (b) all witnesses who can corroborate this assertion; (c) all documents relating to this assertion; and (d) whether you have any reason to believe this assertion may be inaccurate or incomplete.
 
-INTERROGATORY NO. 18:
-[False Assertion]
-You have asserted: "Emily Watson missed multiple follow-up appointments for Lincoln’s medical needs,Neglect of medical follow-ups,Failure of the 12 Best Interests - Factor A,Multiple instances,Medical Records【16†source】". Please identify: (a) all evidence supporting this assertion; (b) all witnesses who can corroborate this assertion; (c) all documents relating to this assertion; and (d) whether you have any reason to believe this assertion may be inaccurate or incomplete.
+## 📂 REQUESTS FOR PRODUCTION (MCR 2.310)
 
-INTERROGATORY NO. 19:
-[False Assertion]
-You have asserted: "Emily Watson disrupted Lincoln’s sleep schedule by switching parenting exchange times,Disregard for child’s routine and stability,Failure of the 12 Best Interests - Factor A,May 2024,AppClose【15†sourc". Please identify: (a) all evidence supporting this assertion; (b) all witnesses who can corroborate this assertion; (c) all documents relating to this assertion; and (d) whether you have any reason to believe this assertion may be inaccurate or incomplete.
+### To: Emily Watson
 
-INTERROGATORY NO. 20:
-[False Assertion]
-You have asserted: "Emily Watson planned vacation trips without notifying Andrew during his scheduled parenting time,Disregarding shared parenting schedule,Parental Alienation,July 2024,AppClose【15†source】【16†source】". Please identify: (a) all evidence supporting this assertion; (b) all witnesses who can corroborate this assertion; (c) all documents relating to this assertion; and (d) whether you have any reason to believe this assertion may be inaccurate or incomplete.
+**Request No. 1:** All text messages, emails, and electronic communications between you and Andrew Pigors from October 2023 to present.
 
-INTERROGATORY NO. 21:
-[Standard Custody]
-State your current residential address, all persons residing with you, and the relationship of each person to L.D.W.
+**Request No. 2:** All text messages, emails, and electronic communications between you and Ronald Berry discussing Andrew Pigors, L.D.W., or this litigation.
 
-INTERROGATORY NO. 22:
-[Standard Custody]
-Identify all persons who have provided childcare for L.D.W. in the past 12 months, including dates and duration.
+**Request No. 3:** All text messages, emails, and electronic communications between you and Jennifer Barnes (P55406).
 
-INTERROGATORY NO. 23:
-[Standard Custody]
-State all communications you have had with Ronald T. Berry regarding this litigation, including dates, methods, and substance.
+**Request No. 4:** All photographs, videos, or recordings you claim depict the "straw incident" of October 2023.
 
-INTERROGATORY NO. 24:
-[Standard Custody]
-Identify all income sources, employment, and financial support you have received in the past 24 months.
+**Request No. 5:** All medical records for L.D.W. from October 2023 to present.
 
-INTERROGATORY NO. 25:
-[Standard Custody]
-State whether you have ever been investigated by Child Protective Services, and if so, provide dates, case numbers, and outcomes.
+**Request No. 6:** All documents submitted to any court in connection with the PPO (2023-5907-PP).
 
+**Request No. 7:** All ChatGPT or AI chat export data from your accounts.
 
-Total Interrogatories: 25 of 35 maximum (MCR 2.309(A)(2))
+**Request No. 8:** All documents relating to your August 2025 ex parte motion, including drafts.
 
+**Request No. 9:** Your complete phone records (call logs and text logs) for October 2023 through present.
 
-============================================================
-PLAINTIFF'S FIRST REQUEST FOR PRODUCTION OF DOCUMENTS
-Pursuant to MCR 2.310
-============================================================
+**Request No. 10:** All social media posts referencing Andrew Pigors or L.D.W.
 
-TO: EMILY A. WATSON
 
-You are hereby requested to produce the following documents
-within twenty-eight (28) days of service pursuant to MCR 2.310(B).
+### To: Ronald Berry
 
+**Request No. 11:** All communications with Emily Watson regarding Andrew Pigors or L.D.W.
 
-REQUEST NO. 1:
-[Communications]
-All text messages, emails, and electronic communications between you and Ronald T. Berry from January 1, 2023 to present.
+**Request No. 12:** All communications with Jennifer Barnes (P55406) regarding Pigors v. Watson.
 
-REQUEST NO. 2:
-[Attorney Communications]
-All text messages, emails, and electronic communications between you and Jennifer Barnes (P55406) from January 1, 2023 to present.
+**Request No. 13:** Any legal research, drafts, or documents prepared for or on behalf of Emily Watson.
 
-REQUEST NO. 3:
-[Media Evidence]
-All photographs, videos, and recordings relating to L.D.W., Andrew Pigors, or any incident described in your pleadings, from January 1, 2023 to present.
+**Request No. 14:** Your current resume or CV showing educational background and professional credentials.
 
-REQUEST NO. 4:
-[Medical]
-All medical records for L.D.W. from January 1, 2023 to present, including but not limited to pediatric visits, ER visits, therapy records, and medication records.
 
-REQUEST NO. 5:
-[Educational]
-All school records for L.D.W., including attendance records, report cards, disciplinary records, and communications with teachers or administrators.
+## ✅ REQUESTS FOR ADMISSION (MCR 2.312)
 
-REQUEST NO. 6:
-[Law Enforcement]
-All documents relating to any police report, CPS investigation, or protective order involving Andrew Pigors, L.D.W., or yourself from January 1, 2022 to present.
+*If not answered within 28 days, deemed ADMITTED (MCR 2.312(B)(1))*
 
-REQUEST NO. 7:
-[Financial]
-All financial records including bank statements, pay stubs, tax returns, and evidence of income from January 1, 2023 to present.
+### To: Emily Watson
 
-REQUEST NO. 8:
-[PPO Records]
-All documents, communications, or records relating to the Personal Protection Order (Case No. 2023-5907-PP), including the original petition and all supporting evidence.
+**Request No. 1:** Admit that Andrew Pigors has never been convicted of domestic violence.
 
-REQUEST NO. 9:
-[Ex Parte Communications]
-All communications with Judge McNeill's chambers, judicial secretary Pamela Rusco, or any court staff outside of normal court proceedings.
+**Request No. 2:** Admit that no medical professional has ever diagnosed L.D.W. with injuries caused by Andrew Pigors.
 
-REQUEST NO. 10:
-[Parenting Time]
-All documents, notes, calendars, or records reflecting dates and times you permitted or denied Andrew Pigors parenting time with L.D.W.
+**Request No. 3:** Admit that no CPS investigation has ever substantiated abuse or neglect by Andrew Pigors.
 
-REQUEST NO. 11:
-[Contradiction Source]
-All documents referenced in or relating to watson_perjury_compilation.id=1347, including but not limited to drafts, notes, and communications about the preparation of said document.
+**Request No. 4:** Admit that Ronald Berry is not a licensed attorney in the State of Michigan.
 
-REQUEST NO. 12:
-[Contradiction Source]
-All documents referenced in or relating to 2, including but not limited to drafts, notes, and communications about the preparation of said document.
+**Request No. 5:** Admit that Ronald Berry has drafted or edited court documents filed in this case.
 
-REQUEST NO. 13:
-[Contradiction Source]
-All documents referenced in or relating to timeline.7e93bfb705a8, including but not limited to drafts, notes, and communications about the preparation of said document.
+**Request No. 6:** Admit that the "straw incident" of October 2023 did not result in any medical treatment for L.D.W.
 
-REQUEST NO. 14:
-[Contradiction Source]
-All documents referenced in or relating to 106, including but not limited to drafts, notes, and communications about the preparation of said document.
+**Request No. 7:** Admit that you did not provide notice to Andrew Pigors before filing your August 2025 ex parte motion.
 
-REQUEST NO. 15:
-[Contradiction Source]
-All documents referenced in or relating to timeline.cc95b6eb2453, including but not limited to drafts, notes, and communications about the preparation of said document.
+**Request No. 8:** Admit that Andrew Pigors has requested parenting time on at least [X] occasions that you denied or failed to respond to.
 
+**Request No. 9:** Admit that you have used ChatGPT or AI tools to draft communications or documents related to this case.
 
-============================================================
-PLAINTIFF'S FIRST REQUEST FOR ADMISSIONS
-Pursuant to MCR 2.312
-============================================================
+**Request No. 10:** Admit that Jennifer Barnes (P55406) withdrew from representing you in this matter.
 
-TO: EMILY A. WATSON
+---
+## ⚠️ FILING NOTES
 
-You are hereby requested to admit or deny the following
-within twenty-eight (28) days of service pursuant to MCR 2.312(B).
-Failure to respond within 28 days results in automatic admission.
+1. **MCR 2.309(A)(2)**: Max 20 interrogatories (subparts count separately)
+2. **MCR 2.310(B)**: 28 days to respond (can request extension)
+3. **MCR 2.312(B)(1)**: Admissions deemed admitted if no response in 28 days — POWERFUL tool
+4. **Timing**: File discovery AFTER custody case is active (not during PPO)
+5. **Service**: Must serve on opposing party (certified mail if pro se)
 
+## 🎯 STRATEGIC PRIORITY
 
-ADMISSION NO. 1:
-[False Assertion Admission]
-Admit that the following assertion is false: "",Neglect of Lincoln’s dental health and overall well-being"
+File Requests for Admission FIRST — if Emily fails to respond in 28 days,
+all statements are deemed admitted, creating devastating evidence for trial.
 
-ADMISSION NO. 1A:
-Admit that you cannot produce evidence supporting this assertion.
-
-ADMISSION NO. 2:
-[False Assertion Admission]
-Admit that the following assertion is false: ",Documented medical neglect and raised concerns in custody filings"
-
-ADMISSION NO. 2A:
-Admit that you cannot produce evidence supporting this assertion.
-
-ADMISSION NO. 3:
-[False Assertion Admission]
-Admit that the following assertion is false: ",Worry and frustration over Emily's neglect of Lincoln’s health needs"
-
-ADMISSION NO. 3A:
-Admit that you cannot produce evidence supporting this assertion.
-
-ADMISSION NO. 4:
-[False Assertion Admission]
-Admit that the following assertion is false: "Emily Watson failed to address Lincoln’s peanut allergy,Neglecting medical concerns,Failure of the 12 Best Interests - Factor A,"March 15, 2024",Medical Records【13†source】【16†source】"
-
-ADMISSION NO. 4A:
-Admit that you cannot produce evidence supporting this assertion.
-
-ADMISSION NO. 5:
-[False Assertion Admission]
-Admit that the following assertion is false: "Emily Watson failed to inform Andrew of LDW’s viral infection,Medical neglect,Failure of the 12 Best Interests - Factor A,Date unspecified,Exhibit E【16†source】"
-
-ADMISSION NO. 5A:
-Admit that you cannot produce evidence supporting this assertion.
-
-ADMISSION NO. 6:
-[False Assertion Admission]
-Admit that the following assertion is false: "Emily Watson disregarded Lincoln’s emotional regression symptoms,Failure to ensure child’s emotional stability,Failure of the 12 Best Interests - Factor B,"September 8, 2024",Exhibit D【15†source】"
-
-ADMISSION NO. 6A:
-Admit that you cannot produce evidence supporting this assertion.
-
-ADMISSION NO. 7:
-[False Assertion Admission]
-Admit that the following assertion is false: "Emily Watson failed to take Lincoln to the dentist for routine check-ups,Neglect of preventative healthcare,Failure of the 12 Best Interests - Factor A,"October 16, 2024",Medical Records【14†source】"
-
-ADMISSION NO. 7A:
-Admit that you cannot produce evidence supporting this assertion.
-
-ADMISSION NO. 8:
-[False Assertion Admission]
-Admit that the following assertion is false: "Emily Watson missed multiple follow-up appointments for Lincoln’s medical needs,Neglect of medical follow-ups,Failure of the 12 Best Interests - Factor A,Multiple instances,Medical Records【16†source】"
-
-ADMISSION NO. 8A:
-Admit that you cannot produce evidence supporting this assertion.
-
-ADMISSION NO. 9:
-[False Assertion Admission]
-Admit that the following assertion is false: "Emily Watson disrupted Lincoln’s sleep schedule by switching parenting exchange times,Disregard for child’s routine and stability,Failure of the 12 Best Interests - Factor A,May 2024,AppClose【15†sourc"
-
-ADMISSION NO. 9A:
-Admit that you cannot produce evidence supporting this assertion.
-
-ADMISSION NO. 10:
-[False Assertion Admission]
-Admit that the following assertion is false: "Emily Watson planned vacation trips without notifying Andrew during his scheduled parenting time,Disregarding shared parenting schedule,Parental Alienation,July 2024,AppClose【15†source】【16†source】"
-
-ADMISSION NO. 10A:
-Admit that you cannot produce evidence supporting this assertion.
-
-ADMISSION NO. 11:
-[Standard Admission]
-Admit that Ronald T. Berry is not a licensed attorney in the State of Michigan.
-
-ADMISSION NO. 12:
-[Standard Admission]
-Admit that Ronald T. Berry has participated in the preparation of legal documents filed in this case.
-
-ADMISSION NO. 13:
-[Standard Admission]
-Admit that you have communicated with Judge McNeill's chambers outside of scheduled court proceedings.
-
-ADMISSION NO. 14:
-[Standard Admission]
-Admit that you have denied Andrew Pigors parenting time with L.D.W. on dates not authorized by court order.
-
-ADMISSION NO. 15:
-[Standard Admission]
-Admit that L.D.W. has expressed a desire to spend time with Andrew Pigors.
-
-
-__________________________________________________
-Respectfully submitted,
-
-____________________________
-ANDREW JAMES PIGORS, Pro Se
-1977 Whitehall Road, Lot 17
-North Muskegon, MI 49445
-(231) 903-5690
-andrewjpigors@gmail.com
-
-Date: _______________
+*Discovery Request Generator — Tool #107 — 39 total discovery items*

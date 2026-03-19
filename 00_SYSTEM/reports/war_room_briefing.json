@@ -1,0 +1,12 @@
+{
+  "generated": "2026-03-18T23:57:07.216833",
+  "tool": "War Room Briefing (#101)",
+  "day": "Wednesday",
+  "focus": "\u2696\ufe0f Legal Research",
+  "deadlines_count": 20,
+  "evidence_counts": {
+    "judicial_violations": 1127,
+    "detected_contradictions": 1061,
+    "watson_perjury_compilation": 5821
+  }
+}

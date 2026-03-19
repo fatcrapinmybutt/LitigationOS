@@ -1,0 +1,14 @@
+{
+  "generated": "2026-03-19T00:01:45.918272",
+  "tool": "Cost Tracker (#108)",
+  "grand_total": 3241,
+  "ifp_savings": 1680,
+  "net_with_ifp": 1561,
+  "categories": {
+    "filing_fees": 1680,
+    "service_costs": 159,
+    "copy_printing": 450,
+    "travel": 712,
+    "other": 240
+  }
+}

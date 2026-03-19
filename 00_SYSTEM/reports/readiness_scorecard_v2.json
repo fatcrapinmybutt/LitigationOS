@@ -1,0 +1,19 @@
+{
+  "generated": "2026-03-19T00:11:28.913559",
+  "tool": "Filing Readiness Scorecard v2 (#118)",
+  "average_readiness": 75.2,
+  "go_count": 2,
+  "review_count": 7,
+  "scores": {
+    "F1": 78.2,
+    "F2": 75.5,
+    "F3": 79.7,
+    "F4": 71.5,
+    "F5": 54.8,
+    "F6": 86.2,
+    "F7": 79.5,
+    "F8": 70.0,
+    "F9": 76.2,
+    "F10": 80.8
+  }
+}

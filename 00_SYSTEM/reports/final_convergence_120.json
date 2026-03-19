@@ -1,0 +1,16 @@
+{
+  "generated": "2026-03-19T00:12:27.586329",
+  "tool": "FINAL CONVERGENCE REPORT (#120)",
+  "tools": 151,
+  "reports": 239,
+  "db_size_gb": 11.9,
+  "tables": 804,
+  "evidence_counts": {
+    "evidence_quotes": 36891,
+    "judicial_violations": 1127,
+    "detected_contradictions": 1061,
+    "watson_perjury_compilation": 5821,
+    "chatgpt_evidence": 0
+  },
+  "filing_readiness": "7 GO / 2 REVIEW / 1 NOT READY"
+}

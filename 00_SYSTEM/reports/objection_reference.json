@@ -1,0 +1,56 @@
+{
+  "generated": "2026-03-18T23:57:07.356531",
+  "tool": "Objection Quick-Reference (#102)",
+  "objection_count": 12,
+  "emergency_phrases": 7,
+  "objections": [
+    {
+      "type": "HEARSAY",
+      "rule": "MRE 801-807"
+    },
+    {
+      "type": "RELEVANCE",
+      "rule": "MRE 401-403"
+    },
+    {
+      "type": "LEADING",
+      "rule": "MRE 611(c)"
+    },
+    {
+      "type": "SPECULATION",
+      "rule": "MRE 602"
+    },
+    {
+      "type": "LACK OF FOUNDATION",
+      "rule": "MRE 602, 901"
+    },
+    {
+      "type": "ASKED AND ANSWERED",
+      "rule": "MRE 611(a)"
+    },
+    {
+      "type": "ASSUMES FACTS NOT IN EVIDENCE",
+      "rule": "MRE 611(a)"
+    },
+    {
+      "type": "BEST EVIDENCE RULE",
+      "rule": "MRE 1002"
+    },
+    {
+      "type": "UNFAIRLY PREJUDICIAL",
+      "rule": "MRE 403"
+    },
+    {
+      "type": "IMPROPER CHARACTER EVIDENCE",
+      "rule": "MRE 404"
+    },
+    {
+      "type": "PRIVILEGED",
+      "rule": "MRE 501"
+    },
+    {
+      "type": "BEYOND THE SCOPE",
+      "rule": "MRE 611(b)"
+    }
+  ]
+}

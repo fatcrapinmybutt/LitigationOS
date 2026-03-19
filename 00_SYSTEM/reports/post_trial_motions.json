@@ -1,0 +1,11 @@
+{
+  "generated": "2026-03-19T00:04:53.962282",
+  "tool": "Post-Trial Motion Templates (#110)",
+  "motion_types": 3,
+  "total_templates": 9,
+  "deadlines": {
+    "new_trial": "14 days after entry of judgment",
+    "relief_from_judgment": "Varies: 1 year for (a)-(c); \"reasonable time\" for (d)-(f); NO limit for fraud on court",
+    "reconsideration": "21 days after entry of order"
+  }
+}

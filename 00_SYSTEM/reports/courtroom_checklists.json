@@ -1,0 +1,12 @@
+{
+  "generated": "2026-03-19T00:07:49.401773",
+  "tool": "Courtroom Checklist Generator (#114)",
+  "checklists": 4,
+  "total_items": 52,
+  "types": [
+    "every_hearing",
+    "emergency_motion",
+    "disqualification",
+    "custody_hearing"
+  ]
+}

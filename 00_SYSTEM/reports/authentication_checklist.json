@@ -1,0 +1,47 @@
+{
+  "generated": "2026-03-18T23:58:31.929735",
+  "tool": "Evidence Authentication Checklist (#104)",
+  "evidence_types": 8,
+  "types": [
+    {
+      "type": "Text Messages / SMS",
+      "rule": "MRE 901(b)(1), 901(b)(4)",
+      "needs_affidavit": false
+    },
+    {
+      "type": "Email Communications",
+      "rule": "MRE 901(b)(1), 901(b)(4), 901(b)(7)",
+      "needs_affidavit": false
+    },
+    {
+      "type": "ChatGPT / AI Chat Exports",
+      "rule": "MRE 901(b)(1), 901(b)(9)",
+      "needs_affidavit": true
+    },
+    {
+      "type": "Court Documents / Orders",
+      "rule": "MRE 902(1), 902(4)",
+      "needs_affidavit": false
+    },
+    {
+      "type": "Photographs",
+      "rule": "MRE 901(b)(1)",
+      "needs_affidavit": false
+    },
+    {
+      "type": "Medical / Psychological Records",
+      "rule": "MRE 803(6), 902(11)",
+      "needs_affidavit": true
+    },
+    {
+      "type": "Financial Records / Bank Statements",
+      "rule": "MRE 803(6), 902(11)",
+      "needs_affidavit": true
+    },
+    {
+      "type": "Social Media Posts",
+      "rule": "MRE 901(b)(1), 901(b)(4)",
+      "needs_affidavit": false
+    }
+  ]
+}

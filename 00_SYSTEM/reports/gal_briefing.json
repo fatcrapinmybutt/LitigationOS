@@ -1,0 +1,11 @@
+{
+  "generated": "2026-03-19T00:04:53.839885",
+  "tool": "GAL Briefing Package (#109)",
+  "evidence_counts": {
+    "evidence_quotes": 36891,
+    "judicial_violations": 1127,
+    "detected_contradictions": 1061
+  },
+  "best_interest_factors": 12,
+  "investigation_requests": 8
+}

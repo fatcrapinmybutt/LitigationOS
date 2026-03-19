@@ -1,0 +1,14 @@
+{
+  "generated": "2026-03-19T00:04:54.122804",
+  "tool": "Perjury Trap Detector (#111)",
+  "traps": 5,
+  "contradictions_analyzed": 500,
+  "perjury_items": 5821,
+  "trap_names": [
+    "Straw Incident",
+    "Parenting Time Denial",
+    "Ronald Berry's Role",
+    "Communication Blocking",
+    "Ex Parte Motion"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "generated": "2026-03-19T00:01:45.510830",
+  "tool": "IFP Application Generator (#105)",
+  "total_fees": 1680,
+  "total_savings": 1680,
+  "net_cost_with_ifp": 0,
+  "filings": {
+    "F1": {
+      "name": "Emergency Parenting Time",
+      "court": "State",
+      "fee": 175,
+      "ifp_saves": 175,
+      "form": "MC 20"
+    },
+    "F2": {
+      "name": "Fraud on Court",
+      "court": "State",
+      "fee": 175,
+      "ifp_saves": 175,
+      "form": "MC 20"
+    },
+    "F3": {
+      "name": "Judicial Disqualification",
+      "court": "State",
+      "fee": 0,
+      "ifp_saves": 0,
+      "form": "N/A (no fee)"
+    },
+    "F4": {
+      "name": "\u00a71983 Federal",
+      "court": "Federal",
+      "fee": 405,
+      "ifp_saves": 405,
+      "form": "AO 240"
+    },
+    "F5": {
+      "name": "MSC Superintending",
+      "court": "MSC",
+      "fee": 375,
+      "ifp_saves": 375,
+      "form": "MC 20"
+    },
+    "F6": {
+      "name": "JTC Complaint",
+      "court": "JTC",
+      "fee": 0,
+      "ifp_saves": 0,
+      "form": "N/A (free)"
+    },
+    "F7": {
+      "name": "Custody Modification",
+      "court": "State",
+      "fee": 175,
+      "ifp_saves": 175,
+      "form": "MC 20"
+    },
+    "F8": {
+      "name": "COA Leave",
+      "court": "COA",
+      "fee": 375,
+      "ifp_saves": 375,
+      "form": "MC 20"
+    },
+    "F9": {
+      "name": "COA Brief",
+      "court": "COA",
+      "fee": 0,
+      "ifp_saves": 0,
+      "form": "N/A (already filed)"
+    },
+    "F10": {
+      "name": "AGC Grievance",
+      "court": "AGC",
+      "fee": 0,
+      "ifp_saves": 0,
+      "form": "N/A (free)"
+    }
+  }
+}
