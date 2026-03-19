@@ -1,0 +1,861 @@
+{
+  "generated": "2026-03-19T09:06:24.234688",
+  "tool": "Impeachment Engine (#217)",
+  "summary": {
+    "impeachment_items_total": 15171,
+    "contradiction_map_total": 10672,
+    "perjury_compilation_total": 5821,
+    "impeachment_packages_total": 1148,
+    "curated_index_total": 11,
+    "strong_opportunities": 51,
+    "moderate_opportunities": 0
+  },
+  "curated_index": [
+    {
+      "id": 12,
+      "target": "Emily Watson",
+      "statement_a": "Claims father is dangerous and abusive toward child",
+      "source_a": "Multiple PPO/custody motions",
+      "date_a": "2024-2025",
+      "statement_b": "Sent 124 cooperative messages, proposed shared schedules, discussed normal co-parenting",
+      "source_b": "AppClose messages (DB: appclose_messages)",
+      "date_b": "2024-2025",
+      "type": "BEHAVIORAL_INCONSISTENCY",
+      "value": "CRITICAL",
+      "legal_use": "MRE 613 \u2014 prior inconsistent conduct; shows manufactured narrative",
+      "score": "strong"
+    },
+    {
+      "id": 13,
+      "target": "Emily Watson",
+      "statement_a": "Claims father has substance abuse issues",
+      "source_a": "Court filings / motions",
+      "date_a": "2024",
+      "statement_b": "Father tested NEGATIVE on all drug screens",
+      "source_b": "Drug screen results (evidence_documents)",
+      "date_b": "2024",
+      "type": "FALSE_ALLEGATION",
+      "value": "CRITICAL",
+      "legal_use": "MRE 613, MRE 608(b) \u2014 false accusation impeachment",
+      "score": "strong"
+    },
+    {
+      "id": 14,
+      "target": "Emily Watson",
+      "statement_a": "Claims father has mental health concerns requiring evaluation",
+      "source_a": "Court filings / judicial orders",
+      "date_a": "2024",
+      "statement_b": "HealthWest eval #1: ALL ZEROS (no issues). Eval #2 only says \"Rule Out\" after judge's letter",
+      "source_b": "HealthWest evaluation records",
+      "date_b": "2024",
+      "type": "MANUFACTURED_DIAGNOSIS",
+      "value": "CRITICAL",
+      "legal_use": "MRE 613, MRE 702/703 \u2014 tainted expert opinion; judicial influence on evaluation",
+      "score": "strong"
+    },
+    {
+      "id": 15,
+      "target": "Emily Watson",
+      "statement_a": "Claims father poses safety risk to child, seeks supervised visitation",
+      "source_a": "Court filings",
+      "date_a": "2024-2025",
+      "statement_b": "9 separate police investigations resulted in ZERO findings against father",
+      "source_b": "Police investigation records",
+      "date_b": "2024-2025",
+      "type": "CONTRADICTED_BY_INVESTIGATION",
+      "value": "CRITICAL",
+      "legal_use": "MRE 613 \u2014 law enforcement found no basis for allegations",
+      "score": "strong"
+    },
+    {
+      "id": 16,
+      "target": "Emily Watson",
+      "statement_a": "Presents as concerned mother acting in best interest of child",
+      "source_a": "Court filings and testimony",
+      "date_a": "2024-2025",
+      "statement_b": "9 years in Kent County Prosecutor's Office Family Court Division \u2014 weaponized system knowledge",
+      "source_b": "Employment records / FOIA",
+      "date_b": "2015-2024",
+      "type": "CONCEALED_EXPERTISE",
+      "value": "HIGH",
+      "legal_use": "MRE 608(b) \u2014 demonstrates capacity for strategic manipulation of court system",
+      "score": "strong"
+    },
+    {
+      "id": 17,
+      "target": "Lori Watson",
+      "statement_a": "Provided testimony/evidence against father",
+      "source_a": "Court filings",
+      "date_a": "2024",
+      "statement_b": "Illegally recorded conversations \u2014 MCL 750.539c felony (2-party consent violation)",
+      "source_b": "Recording evidence / MCL 750.539c",
+      "date_b": "2024",
+      "type": "ILLEGALLY_OBTAINED_EVIDENCE",
+      "value": "CRITICAL",
+      "legal_use": "Motion to suppress under MCL 750.539c; MRE 613 \u2014 fruit of felony; criminal referral",
+      "score": "strong"
+    },
+    {
+      "id": 18,
+      "target": "Albert Watson",
+      "statement_a": "Watson family claims to act in child's best interest",
+      "source_a": "General family position",
+      "date_a": "2024-2025",
+      "statement_b": "August 7, 2025 statement showing premeditation of custody strategy",
+      "source_b": "Albert Watson communication",
+      "date_b": "2025-08-07",
+      "type": "PREMEDITATION",
+      "value": "HIGH",
+      "legal_use": "MRE 613, MRE 801(d)(2) \u2014 admission by party opponent; shows coordinated plan",
+      "score": "strong"
+    },
+    {
+      "id": 19,
+      "target": "Judge Jenny L. McNeill",
+      "statement_a": "Claims judicial impartiality and fairness",
+      "source_a": "Judicial oath / MCJC Canon 2",
+      "date_a": "Ongoing",
+      "statement_b": "52 ex parte orders, 44% ex parte rate, 100% favoring Emily Watson",
+      "source_b": "Court record analysis (DB: judicial_violations)",
+      "date_b": "2024-2025",
+      "type": "STATISTICAL_BIAS",
+      "value": "CRITICAL",
+      "legal_use": "MCR 2.003 disqualification; MCJC Canon 2/3 violations; JTC complaint support",
+      "score": "strong"
+    },
+    {
+      "id": 20,
+      "target": "Judge Jenny L. McNeill",
+      "statement_a": "Ordered mental health evaluation as neutral fact-finding",
+      "source_a": "Court order",
+      "date_a": "2024",
+      "statement_b": "Sent letter to HealthWest that influenced eval #2 from \"ALL ZEROS\" to \"Rule Out\"",
+      "source_b": "HealthWest records comparison",
+      "date_b": "2024",
+      "type": "JUDICIAL_TAMPERING",
+      "value": "CRITICAL",
+      "legal_use": "JTC complaint; due process violation \u2014 judge tainted evaluation process",
+      "score": "strong"
+    },
+    {
+      "id": 21,
+      "target": "Judge Jenny L. McNeill",
+      "statement_a": "Found father in contempt, ordered incarceration",
+      "source_a": "Court orders",
+      "date_a": "2024-2025",
+      "statement_b": "Father had no counsel; no opportunity to purge contempt; 59+ days incarcerated",
+      "source_b": "Jail records / court transcripts",
+      "date_b": "2024-2025",
+      "type": "PROCEDURAL_VIOLATION",
+      "value": "CRITICAL",
+      "legal_use": "Turner v. Rogers, 564 U.S. 431 (2011) \u2014 civil contempt without counsel; 6th Amendment",
+      "score": "strong"
+    },
+    {
+      "id": 22,
+      "target": "Jennifer Barnes (P55406)",
+      "statement_a": "Filed motions citing good faith concerns about child safety",
+      "source_a": "Various motions",
+      "date_a": "2024-2025",
+      "statement_b": "Filed on evidence obtained through felony wiretapping (Lori Watson recording)",
+      "source_b": "Filing analysis / MCL 750.539c",
+      "date_b": "2024",
+      "type": "KNOWING_USE_OF_ILLEGAL_EVIDENCE",
+      "value": "HIGH",
+      "legal_use": "MRPC 3.3(a), 8.4(c) \u2014 State Bar grievance; motion to strike",
+      "score": "strong"
+    }
+  ],
+  "speaker_breakdown": {
+    "Andrew Pigors": {
+      "total": 1569,
+      "critical": 470,
+      "high": 1065,
+      "medium": 34,
+      "top_types": {
+        "EX_PARTE_COMMUNICATION": 16,
+        "NO_HEARING": 12,
+        "PRIOR_INCONSISTENT_STATEMENT": 487,
+        "TESTIMONY_VS_DOCUMENT": 129,
+        "TIMELINE_CONTRADICTION": 886,
+        "CROSS_SPEAKER_CONTRADICTION": 5,
+        "ABSOLUTE_LANGUAGE": 2,
+        "CREDIBILITY_BIAS": 1,
+        "TIMELINE_SEQUENCE_ANOMALY": 31
+      }
+    },
+    "COURT": {
+      "total": 7636,
+      "critical": 2405,
+      "high": 5001,
+      "medium": 230,
+      "top_types": {
+        "EX_PARTE_COMMUNICATION": 18,
+        "NO_HEARING": 2,
+        "PRIOR_INCONSISTENT_STATEMENT": 1685,
+        "CROSS_SPEAKER_CONTRADICTION": 49,
+        "TESTIMONY_VS_DOCUMENT": 567,
+        "JUDICIAL_EX_PARTE_VIOLATION": 226,
+        "JUDICIAL_DUE_PROCESS_VIOLATION": 175,
+        "JUDICIAL_MCR_2003_DISQUALIFICATION": 146,
+        "TIMELINE_CONTRADICTION": 2886,
+        "DENIAL_WITHOUT_HEARING": 1,
+        "JUDICIAL_BENCHBOOK_DEVIATION": 545,
+        "JUDICIAL_MCJC_CANON_VIOLATION": 150,
+        "JUDICIAL_CREDIBILITY_FAILURE": 76,
+        "JUDICIAL_PPO_WEAPONIZATION": 381,
+        "BENCHBOOK_VIOLATION": 504,
+        "CREDIBILITY_BIAS": 6,
+        "CREDIBILITY_FALSE_CLAIM": 4,
+        "JUDICIAL_PROCEDURAL_MISCONDUCT": 196,
+        "TIMELINE_SEQUENCE_ANOMALY": 19
+      }
+    },
+    "Tiffany Watson": {
+      "total": 1132,
+      "critical": 412,
+      "high": 678,
+      "medium": 42,
+      "top_types": {
+        "EX_PARTE_COMMUNICATION": 13,
+        "NO_HEARING": 7,
+        "PRIOR_INCONSISTENT_STATEMENT": 415,
+        "TESTIMONY_VS_DOCUMENT": 195,
+        "TIMELINE_CONTRADICTION": 450,
+        "CROSS_SPEAKER_CONTRADICTION": 9,
+        "DENIAL_WITHOUT_HEARING": 1,
+        "CREDIBILITY_BIAS": 1,
+        "TIMELINE_SEQUENCE_ANOMALY": 41
+      }
+    },
+    "Judge McNeill": {
+      "total": 1883,
+      "critical": 860,
+      "high": 1010,
+      "medium": 13,
+      "top_types": {
+        "NO_HEARING": 9,
+        "EX_PARTE_COMMUNICATION": 15,
+        "PRIOR_INCONSISTENT_STATEMENT": 480,
+        "TESTIMONY_VS_DOCUMENT": 130,
+        "TIMELINE_CONTRADICTION": 1235,
+        "CROSS_SPEAKER_CONTRADICTION": 1,
+        "BEST_INTEREST_FACTOR": 1,
+        "TIMELINE_SEQUENCE_ANOMALY": 12
+      }
+    },
+    "Emily Watson": {
+      "total": 321,
+      "critical": 75,
+      "high": 209,
+      "medium": 37,
+      "top_types": {
+        "NO_HEARING": 3,
+        "EX_PARTE_COMMUNICATION": 3,
+        "PRIOR_INCONSISTENT_STATEMENT": 124,
+        "TESTIMONY_VS_DOCUMENT": 19,
+        "TIMELINE_CONTRADICTION": 135,
+        "ECE_REFERENCE": 1,
+        "TIMELINE_SEQUENCE_ANOMALY": 36
+      }
+    },
+    "Cavan Berry": {
+      "total": 16,
+      "critical": 2,
+      "high": 14,
+      "medium": 0,
+      "top_types": {
+        "EX_PARTE_COMMUNICATION": 1,
+        "PRIOR_INCONSISTENT_STATEMENT": 15
+      }
+    },
+    "PIGORS": {
+      "total": 1206,
+      "critical": 137,
+      "high": 1000,
+      "medium": 69,
+      "top_types": {
+        "NO_HEARING": 1,
+        "PRIOR_INCONSISTENT_STATEMENT": 185,
+        "CROSS_SPEAKER_CONTRADICTION": 25,
+        "TESTIMONY_VS_DOCUMENT": 8,
+        "TIMELINE_CONTRADICTION": 579,
+        "CREDIBILITY_FORENSIC": 408
+      }
+    },
+    "FOC": {
+      "total": 15,
+      "critical": 3,
+      "high": 8,
+      "medium": 4,
+      "top_types": {
+        "NO_HEARING": 1,
+        "TIMELINE_CONTRADICTION": 10,
+        "TIMELINE_SEQUENCE_ANOMALY": 4
+      }
+    },
+    "UNKNOWN": {
+      "total": 1055,
+      "critical": 408,
+      "high": 640,
+      "medium": 7,
+      "top_types": {
+        "PRIOR_INCONSISTENT_STATEMENT": 17,
+        "TESTIMONY_VS_DOCUMENT": 62,
+        "TIMELINE_CONTRADICTION": 892,
+        "CREDIBILITY_FORENSIC": 76,
+        "CROSS_SPEAKER_CONTRADICTION": 1,
+        "CREDIBILITY_FALSE_CLAIM": 1,
+        "TIMELINE_SEQUENCE_ANOMALY": 6
+      }
+    },
+    "WATSON": {
+      "total": 335,
+      "critical": 177,
+      "high": 158,
+      "medium": 0,
+      "top_types": {
+        "PRIOR_INCONSISTENT_STATEMENT": 130,
+        "TESTIMONY_VS_DOCUMENT": 87,
+        "TIMELINE_CONTRADICTION": 116,
+        "CROSS_SPEAKER_CONTRADICTION": 2
+      }
+    },
+    "Lori Watson": {
+      "total": 2,
+      "critical": 0,
+      "high": 0,
+      "medium": 2,
+      "top_types": {
+        "TIMELINE_SEQUENCE_ANOMALY": 2
+      }
+    },
+    "Albert Watson": {
+      "total": 1,
+      "critical": 0,
+      "high": 0,
+      "medium": 1,
+      "top_types": {
+        "TIMELINE_SEQUENCE_ANOMALY": 1
+      }
+    }
+  },
+  "packages_by_party": {
+    "Emily A. Watson": {
+      "total": 618,
+      "by_category": {
+        "Contradiction": 15,
+        "Impeachment": 485,
+        "Smoking Gun": 20,
+        "Text Evidence": 98
+      },
+      "by_severity": {
+        "HIGH": 538,
+        "CRITICAL": 40,
+        "MEDIUM": 40
+      }
+    },
+    "Hon. Jenny L. McNeill": {
+      "total": 530,
+      "by_category": {
+        "Contradiction": 485,
+        "Impeachment": 15,
+        "Smoking Gun": 30
+      },
+      "by_severity": {
+        "HIGH": 500,
+        "CRITICAL": 30
+      }
+    }
+  },
+  "contradiction_stats": {
+    "total": 10672,
+    "by_type": {
+      "TIMELINE_DATE_CONFLICT": 6600,
+      "INCONSISTENT_STATEMENTS": 3253,
+      "TESTIMONY_VS_DOCUMENT": 629,
+      "CROSS_SPEAKER_CONFLICT": 170,
+      "STATEMENT_VS_ORDER": 20
+    },
+    "by_severity": {
+      "HIGH": 6603,
+      "CRITICAL": 3955,
+      "0.5": 114
+    },
+    "top_items": [
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "TRANSCRIPT: Defendant.  The  Court  ordered  that  once  he provided  the  assessment  as requested,  another  hearing  would  be set. The Court  received  the  2...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: hearing",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "TRANSCRIPT: hearing  on 8/22/25. On 9/22/2025,  the  Court  asked  the Plaintiff  to undergo  an assessment  at Health  West. The  matter  was  then  set for an e...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: hearing",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "CUSTODY_ORDER: hearing  the argument  of  the  parties; THE  COURT  FINDS  AS  FOLLOWS: 1.   On  February  14, 2025  Plaintiff/Father  filed  a Motion  regarding  Pa...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: hearing",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "CUSTODY_ORDER: hearing  was  held;  and  the  Court  rendered  an oral  opinion.  The  Defendant  submitted  an order under  the 7 day  rule,  using  parts  of  the ...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: hearing",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "CUSTODY_ORDER: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and the Court  signed  an ex parte  order  suspending  the Plaintiffs parenting...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: child_welfare, ex_parte, hearing",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "TRANSCRIPT: hearing  on 8/22/25. On 9/22/2025,  the Court  asked  the Plaintiff  to undergo  an assessment  at Health  West. The matter  was  then set for an evid...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: hearing",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "EX_PARTE_ORDER: ex parte order suspending  his parenting  time  is denied.  The  Court  also  notes  that  it offered  supervised  parenting  time  to the Father  and...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: ex_parte",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "EX_PARTE_ORDER: EX PARTE  MOTION  TO  SUSPEND  PLAINTIFF'S PARENTING  TIME At a session  of said  Court,  held  in the Courthouse  in the Counjy  of Muskegon,  State ...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: ex_parte",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "TRANSCRIPT: hearing. EVen !f an ObjeCt!On !S f!!ed, Fle eX parte OrCier !V!11 rema!n In effeCk and mLlSi 5e Obeied unless  changed  by a later  court  order.",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: ex_parte, hearing",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "TRANSCRIPT: hearing That  if  the Court  believes  any  restriction  on parenting  time  remains  necessary,  the Court  schedule  a focused evidentiary  hearing ...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: hearing",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "CUSTODY_ORDER: best interest  of  the child  to c}iange  parenting  time  (F 5. of  form) Plaintiff  requested  the Court  to Order  parenting  time  be changed  (G ...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: child_welfare",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "TRANSCRIPT: Respondent. SHOW CAUSE  HEARING   ON   PERSONAL   PROTECTION  ORDER (EXCERPT  1   AND   2  0F  PROCEEDINGS   ONLY) BEFORE  THE  HONORABLE   JENNY  MCN...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: child_welfare, hearing",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "EX_PARTE_ORDER: ex parte  suspension That  the Court  terminate  or substantially  modify  the August  2025  ex parte  order  so that  it no longer  operates  as a to...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: ex_parte",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "EX_PARTE_ORDER: EX PARTE  ORDER CONTINUED  HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and the Court  signed  an ex parte  order  suspendin...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: child_welfare, ex_parte, hearing",
+        "score": "strong"
+      },
+      {
+        "source_a": "TRANSCRIPT: HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parent...",
+        "source_b": "EX_PARTE_ORDER: ex parte  motion  or order  before  an August  8, 2025  exchange.  I arrived  expecting  my  regular  parenting  time,  and  only discovered  after  t...",
+        "type": "INCONSISTENT_STATEMENTS",
+        "severity": "CRITICAL",
+        "legal_impact": "Speaker COURT made inconsistent statements on: ex_parte",
+        "score": "strong"
+      }
+    ]
+  },
+  "perjury_stats": {
+    "total": 5821,
+    "by_member": {
+      "Albert Watson": 17,
+      "Cody Watson": 6,
+      "Emily Watson": 2525,
+      "Lori Watson": 6,
+      "Tiffany Watson": 1058,
+      "Watson (General)": 145,
+      "Watson (Unspecified)": 2064
+    },
+    "by_type": {
+      "evidence_quote": 251,
+      "inconsistency": 453,
+      "timeline_conflict": 3525,
+      "direct_contradiction": 72,
+      "false_statement": 75,
+      "informal_statement": 4,
+      "prior_inconsistent_statement": 876,
+      "sworn_statement": 28,
+      "testimony_vs_document": 323,
+      "judicial_acceptance_without_evidence": 214
+    },
+    "by_severity": {
+      "3": 2248,
+      "4": 2534,
+      "5": 298,
+      "7": 361,
+      "6": 327,
+      "9": 22,
+      "8": 13,
+      "10": 18
+    },
+    "top_items": [
+      {
+        "member": "Emily Watson",
+        "statement": "LDW has exhibited signs of emotional distress, including anxiety and trouble sleeping, as a direct result of the limited parenting time and Emily\u2019s alienating behavior. Expert testimony, supported by ...",
+        "contradicting": "global_weaponization.rowid=269; cat=PPO chain; relief=Bar PPO interference; reinstate PT ex parte; sanctions for misuse; source=Custody_gpt_documents_use_me.docx",
+        "type": "inconsistency",
+        "severity": 10,
+        "authority": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+        "score": "weak"
+      },
+      {
+        "member": "Emily Watson",
+        "statement": "LDW has exhibited signs of emotional distress, including anxiety and trouble sleeping, as a direct result of the limited parenting time and Emily\u2019s alienating behavior. Expert testimony, supported by ...",
+        "contradicting": "global_weaponization.rowid=544; cat=PPO chain; relief=Bar PPO interference; reinstate PT ex parte; sanctions for misuse; source=Custody_gpt_documents_use_me.docx",
+        "type": "inconsistency",
+        "severity": 10,
+        "authority": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+        "score": "weak"
+      },
+      {
+        "member": "Watson (General)",
+        "statement": "Testimony of Dr. Richard Bone, Ph.D. \u2013 Parental Alienation Specialist  State of Michigan, 14th Circuit Court \u2013 Muskegon County Case Name: Pigors v. Watson Case Number: 2024-001507-DC  Testimony of Dr....",
+        "contradicting": "[ChatGPT conv: Testimony on Parental Alienation | msg #15 | 2024-10-02T03:25:17]",
+        "type": "testimony_vs_document",
+        "severity": 10,
+        "authority": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+        "score": "weak"
+      },
+      {
+        "member": "Watson (General)",
+        "statement": "Compile these all into 1 filing.  (motions)- 1, 2, 3, 4, 5, 10, 12,(motion to convert hearing to damages ) 13, 14, add a motion for damages maxing it out Compile those all together into one master mot...",
+        "contradicting": "[ChatGPT conv: System activation summary | msg #10 | 2025-08-04T21:55:24]",
+        "type": "timeline_conflict",
+        "severity": 10,
+        "authority": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+        "score": "weak"
+      },
+      {
+        "member": "Emily Watson",
+        "statement": "1. Counterattack Draft \u2013 Line-by-Line Rebuttal with Strike-Through Text (.docx)  Formatted for direct court filing  Strike-throughs expose contradictions, paraphrased falsehoods, and unsupported claim...",
+        "contradicting": "[ChatGPT conv: Housing appeal update | msg #187 | 2025-08-20T03:49:09]",
+        "type": "timeline_conflict",
+        "severity": 10,
+        "authority": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+        "score": "weak"
+      },
+      {
+        "member": "Emily Watson",
+        "statement": "Create an affidavit detailing everything emily has done to me, acros all court cases, from her timing of service and timing in relation to my housing cases, the stalking by her brother and now mother,...",
+        "contradicting": "[ChatGPT conv: Ex parte motion response | msg #80 | 2025-08-20T13:33:50]",
+        "type": "false_statement",
+        "severity": 10,
+        "authority": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+        "score": "weak"
+      },
+      {
+        "member": "Emily Watson",
+        "statement": "\ud83e\uddfe MASTER FILING STACK \u2013 STRIKEBACK OBJECTION + RELIEF PACK  \u2696\ufe0f PRIMARY DOCUMENTS TO BE GENERATED: \ud83e\uddfe Objection to Ex Parte Emergency Motion Line-by-line counter to Emily\u2019s claims Direct invocation of M...",
+        "contradicting": "[ChatGPT conv: Ex parte motion response | msg #143 | 2025-08-20T14:07:23]",
+        "type": "testimony_vs_document",
+        "severity": 10,
+        "authority": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+        "score": "weak"
+      },
+      {
+        "member": "Emily Watson",
+        "statement": "include all of these, dont omit any   Service defects: PPO served by Emily\u2019s parents in garage; show causes served during parenting exchanges, some under 5-day requirement.  False allegations: cocaine...",
+        "contradicting": "[ChatGPT conv: Aggressive court document terms | msg #12 | 2025-08-20T15:19:57]",
+        "type": "timeline_conflict",
+        "severity": 10,
+        "authority": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+        "score": "weak"
+      },
+      {
+        "member": "Emily Watson",
+        "statement": "\u26a0\ufe0f Understood. What you've just uploaded and declared spans over 300+ unique, date-stamped incidents documenting:  \ud83d\udd25 1. Massive Pattern of Misconduct, Alienation, and Rights Violations \ud83d\udd34 False Allegat...",
+        "contradicting": "[ChatGPT conv: Exhibit Master Cover Page | msg #0 | 2025-09-04T14:58:08]",
+        "type": "testimony_vs_document",
+        "severity": 10,
+        "authority": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+        "score": "weak"
+      },
+      {
+        "member": "Emily Watson",
+        "statement": "STATE OF MICHIGAN IN THE 14TH CIRCUIT COURT FOR THE COUNTY OF MUSKEGON FAMILY DIVISION AndrewJ. Pigors, Plaintif, Emily Watson, Defendant V. Case No. 24-01507-DC Hon. Jenny L. McNeill AFFIDAVIT OF AND...",
+        "contradicting": "[ChatGPT conv: Objection to evidence admission | msg #4 | 2025-09-04T15:47:36]",
+        "type": "testimony_vs_document",
+        "severity": 10,
+        "authority": "MRE 613; MRE 801(d)(1)(A); MCL 750.423",
+        "score": "weak"
+      }
+    ]
+  },
+  "top_impeachment_items": [
+    {
+      "speaker": "Andrew Pigors",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": "NG  PLAINTIFF'S OBJECTION  TO EX PARTE  ORDER CONTINUED  HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the C",
+      "contradicting": "for  the  county  of muskegon andrew  j. pigors, plaintiff vs. case  2024-001507-dc hon.  jenny  l. mcneill order  denying  motion regarding  custody",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "COURT",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": ",  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parenting  time.  An evidentiary  hearing  was held on Septemb",
+      "contradicting": "mich  app  17, 3\"1- 32; 805 nw2d  1 (2010). the  court  may  consider  the  following  factors  when  determining  the  frequency,  duration, and  ty",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Andrew Pigors",
+      "type": "NO_HEARING",
+      "severity": "CRITICAL",
+      "statement": "*   He reports  no issues  with employment. @  He reports  no issues  with others  with  the  exception  of his ex. *   He has support  of friends  and family. None  of the above  statements  are what  he testified  to in Court.  He was  evicted,  an...",
+      "contradicting": "be made  with  findings  on only  the  contested  issues.  hoffman  v hoffman,  '119 mich  app  79, 83; 326 nw2d  136  (1982).\"  shade  v wright,  291",
+      "legal_hook": "MCR 3.206(A)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Andrew Pigors",
+      "type": "NO_HEARING",
+      "severity": "CRITICAL",
+      "statement": "her  was  not able  to speak  without  his interruption.  The Court  found  him in contempt  and sentenced  him to jail. On 12/5/25,  a hearing  on the Father's  7'h  PPO  violation  occurred.  He pled  guilty and received  45 days  in jail. P",
+      "contradicting": "tial  nutrition  through  nursing. (c) the  reasonable  likelihood  of abuse  or neglect  of  the child  during  parenting time. (d) the  reasonable",
+      "legal_hook": "MCR 3.206(A)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Andrew Pigors",
+      "type": "NO_HEARING",
+      "severity": "CRITICAL",
+      "statement": "ng  followed,  and other  paranoid/mental health  issues;  he was homeless;  he drove  by her parents  home  and called  them  again;  he called  her boyfriend;  he stated  that  he was  being  chased.   The  Court  granted  the request  and set the ...",
+      "contradicting": "which  may  estrange  the minor  child  from  the other  party,  or tend  to discredit,  cause  disrespect,  or diminish  the natural  affections  of",
+      "legal_hook": "MCR 3.206(A)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Tiffany Watson",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": "/8/25,  the Mother  filed  an ex parte  motion  to suspend  the Father's  parenting  time. She  alleged  that  she  was  concerned  regard",
+      "contradicting": "filed  5/20/2025 14th   circuit   court muskf.gon   county state   of   m  chigan in the  circuit  c",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Tiffany Watson",
+      "type": "NO_HEARING",
+      "severity": "CRITICAL",
+      "statement": "(7/21  ) Page  3 of  4 Case  No.  2024-001507-DC 6. Address,  Employment  Status,  Health  Insurance.   Both parties  shall notify  the friend  of the court  in writing  of: a) their mailing  and residential  addresses  and telephone  numbers;  b) th...",
+      "contradicting": "ropriate  in the particular case. mcl 722.27a(9). page 2 pigors  v watson   2024-001507-dc",
+      "legal_hook": "MCR 3.206(A)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Judge McNeill",
+      "type": "NO_HEARING",
+      "severity": "CRITICAL",
+      "statement": "ng  followed,  and other  paranoid/mental health  issues; he was homeless;  he drove by her parents  home and called them again;  he called  her boyfriend;  he stated  that  he was being chased,   The Court  granted  the request  and set the matter  ...",
+      "contradicting": "which  may  estrange  the minor  child  from  the other  party,  or tend  to discredit,  cause  disrespect,  or diminish  the natural  affections  of",
+      "legal_hook": "MCR 3.206(A)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Tiffany Watson",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": "8/8/25,  the Mother  filed an ex parte  motion  to suspend  the Father's  parenting  time. She alleged  that  she was concerned  regarding",
+      "contradicting": "filed  5/20/2025 14th   circuit   court muskf.gon   county state   of   m  chigan in the  circuit  c",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Andrew Pigors",
+      "type": "NO_HEARING",
+      "severity": "CRITICAL",
+      "statement": "*   He reports  no issues  with  employment, *   He reports  no issues  with others  with  the  exception  of his ex. *   He has support  of friends  and family. None  of the above  statements  are what  he testified  to in Court.  He was  evicted,  ...",
+      "contradicting": "be made  with  findings  on only  the  contested  issues.  hoffman  v hoffman,  '119 mich  app  79, 83; 326 nw2d  136  (1982).\"  shade  v wright,  291",
+      "legal_hook": "MCR 3.206(A)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Andrew Pigors",
+      "type": "NO_HEARING",
+      "severity": "CRITICAL",
+      "statement": "her  was  not able  to speak  without  his interruption. The Court  found  him in contempt  and sentenced  him to jail. On 12/5/25,  a hearing  on the Father's  7'h  PPO  violation  occurred.  He pled  guilty and received  45 days  in jail. P",
+      "contradicting": "tial  nutrition  through  nursing. (c) the  reasonable  likelihood  of abuse  or neglect  of  the child  during  parenting time. (d) the  reasonable",
+      "legal_hook": "MCR 3.206(A)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Judge McNeill",
+      "type": "NO_HEARING",
+      "severity": "CRITICAL",
+      "statement": ", Lincoln.  The  motion  did  not  set out  specific,  immediate,  irreparable  harm as required  for  ex parte  relief  in  domestic-relations  matters.  See MCR 3.207(B)(1)  (ex  parte  orders  require  \"specific  facts\"  showing  that \"irreparable...",
+      "contradicting": "objection  to the recommendation  dismissing  his motion regarding  parenting;  the court  hearing  the argument  of  the  parties; the  court  finds",
+      "legal_hook": "MCR 3.206(A)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Emily Watson",
+      "type": "NO_HEARING",
+      "severity": "CRITICAL",
+      "statement": "by  my  child  to a neighbor, without  that  neighbor  ever  testifying. o   Across  multiple  hearings,  I was  muted,  cut  off,  or told  the  judge  would  not look  at further  filings,  effectivel",
+      "contradicting": "of any  special  circumstances  or needs  of  the child. (lb) whether the child is a niirsing child less thari6 months of age, or less than i year of",
+      "legal_hook": "MCR 3.206(A)",
+      "score": "strong"
+    },
+    {
+      "speaker": "COURT",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": ",  Judge  McNeill  signed  an ex parte  \"emergency\" order  suspending  all of  my  parenting  time  with  my  three-year-old  son, Lincoln",
+      "contradicting": "dated: s/ri/;,s n.  ray l. mcneill ircu   court  judge -2-",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Andrew Pigors",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": "rable  harm as required  for  ex parte  relief  in  domestic-relations  matters.  See MCR 3.207(B)(1)  (ex  parte  orders  require  \"speci",
+      "contradicting": "motion indicates  a change  of  circumstances  as required  by law. 3.  plaintiff  makes  numerous  allegations,  which  the family  court  specialist",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Andrew Pigors",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": "was  not  served  with  the  ex parte  motion  or order  before  an August  8, 2025  exchange.  I arrived  expecting  my  regular  parent",
+      "contradicting": "s,  but parenting  time  decisions  may  be made  with  findings  on only  the  contested  issues.  hoffman  v hoffman,  '119 mich  app  79, 83; 326 n",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "COURT",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": "suspended. 3.  Off-record,  ex parte  handling  of  evidence  (USB  recording  and  mental-health evaluation). o   A USB  recording  sub",
+      "contradicting": "s   regarding   access  to  lincoln's   medical   records   are  unfounded. additionally,  the defendant  is not  obligated  to grant  the plaintiff",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Tiffany Watson",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": "impartiality,  avoidance  of  ex parte  communications,  and  a fair opportunity  to be heard,  especially  given  that  Ms.Watson  is an",
+      "contradicting": "on  to modify  or terminate  this order.  for  ex parte  orders,  the motion  must  be filed  within 14  days  after  being  served  with  or receivin",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Andrew Pigors",
+      "type": "NO_HEARING",
+      "severity": "CRITICAL",
+      "statement": "ng  statements  to a neighbor-without  that neighbor  testifying  under  oath  or subject  to cross-examination. o   The  court  expressed  concern  based  on that  hearsay,  but  refused  to consider my  first-hand,  objective  images.  This  unequa...",
+      "contradicting": "s hereby  ordered  that this matter is dismissed  without  an evidentiary  hearing. it is further  ordered that the plaintiff  must pay a bond of $250",
+      "legal_hook": "MCR 3.206(A)",
+      "score": "strong"
+    },
+    {
+      "speaker": "COURT",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": "to continue  or modify  the ex parte  suspension. o   I attempted  to present  photographs  from  the July  29 exchange  showing Lincoln",
+      "contradicting": "ntsarealsofrivolovs.the court  finds  that  this  continued  pattern  of  questioning  is meant  to harass  the  defendant. 5.  the family  court  spe",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Judge McNeill",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": "of  Health West Evaluatiotx (Ex Parte Communications) 7.  Order  to obtain  HealthWest  evaluation,  followed  by  chambers-only instruct",
+      "contradicting": "was adjourned  for piaintiffto  obtain  a mental  health  assessment.  the  parties  appeared  on 10/29/25. the plaintiff objected to the court review",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Judge McNeill",
+      "type": "NO_HEARING",
+      "severity": "CRITICAL",
+      "statement": "ty  and  the  priblic  could  not  obtain  it as a normal  court filing. o   The  judge  received  and  relied  on a key  piece  of  merits  evidence  off  the record  and  ex parte,  contraiy  to the  prohibition  on ex parte communications  about  ...",
+      "contradicting": "025. the hearing  was adjourned  for piaintiffto  obtain  a mental  health  assessment.  the  parties  appeared  on 10/29/25. the plaintiff objected t",
+      "legal_hook": "MCR 3.206(A)",
+      "score": "strong"
+    },
+    {
+      "speaker": "COURT",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": "idence  off  the record  and  ex parte,  contraiy  to the  prohibition  on ex parte communications  about  pending  matters  in Canon  3(A",
+      "contradicting": "nt  to the order  entered  on august 23, 2024. residence the residence  of  the minor  child  shall  not  be removed  from  the state of  michigan  wi",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Judge McNeill",
+      "type": "EX_PARTE_COMMUNICATION",
+      "severity": "CRITICAL",
+      "statement": "raiy  to the  prohibition  on ex parte communications  about  pending  matters  in Canon  3(A)(5)  and  the requirement  that  judicial  d",
+      "contradicting": "used  against  me  in custody  decisions. b. ex parte paretxting-time  suspension and lack of  notice (august  2025) 4.  august  6, 2025  -  ex  par",
+      "legal_hook": "MCR 2.003(C)(1)",
+      "score": "strong"
+    },
+    {
+      "speaker": "Judge McNeill",
+      "type": "NO_HEARING",
+      "severity": "CRITICAL",
+      "statement": "r  contested  circumstances,  without  a full opportunity  to present  exculpatory  evidence. *  The  resulting  jail  time  caused  me  to lose  my  job  and fall  behind  financially,  which contributed  to losing  my  housing. These  job  and hous...",
+      "contradicting": "ions  may  be made  with  findings  on only  the  contested  issues.  hoffman  v hoffman,  '119 mich  app  79, 83; 326 nw2d  136  (1982).\"  shade  v w",
+      "legal_hook": "MCR 3.206(A)",
+      "score": "strong"
+    }
+  ]
+}

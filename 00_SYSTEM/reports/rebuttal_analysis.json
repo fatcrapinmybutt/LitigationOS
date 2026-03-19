@@ -1,0 +1,223 @@
+{
+  "generated": "2026-03-19T09:06:32.562464",
+  "tool": "Rebuttal Pack Analyzer (#218)",
+  "summary": {
+    "rebuttal_matrix_total": 553,
+    "fully_rebutted": 553,
+    "partially_rebutted": 0,
+    "no_rebuttal": 0,
+    "coverage_percent": 100.0,
+    "adversary_assertions_total": 16372,
+    "assertions_with_rebuttal": 16372,
+    "assertions_without_rebuttal": 0,
+    "false_claims": 4551,
+    "claims_total": 653,
+    "evidence_links_total": 9061
+  },
+  "rebuttal_by_category": {
+    "MANIPULATION_MEDICAL_GATEKEEPING": {
+      "total": 16,
+      "fully": 16,
+      "partial": 0,
+      "none": 0
+    },
+    "JUDICIAL_MISCONDUCT": {
+      "total": 500,
+      "fully": 500,
+      "partial": 0,
+      "none": 0
+    },
+    "CHILD_WELFARE": {
+      "total": 21,
+      "fully": 21,
+      "partial": 0,
+      "none": 0
+    },
+    "LEGAL_MANIPULATION": {
+      "total": 2,
+      "fully": 2,
+      "partial": 0,
+      "none": 0
+    },
+    "CUSTODY_CLAIM": {
+      "total": 2,
+      "fully": 2,
+      "partial": 0,
+      "none": 0
+    },
+    "MANIPULATION_HOSTILE_WITHHOLDING": {
+      "total": 7,
+      "fully": 7,
+      "partial": 0,
+      "none": 0
+    },
+    "MANIPULATION_CONTROLLING": {
+      "total": 1,
+      "fully": 1,
+      "partial": 0,
+      "none": 0
+    },
+    "MANIPULATION_DEFLECTION": {
+      "total": 1,
+      "fully": 1,
+      "partial": 0,
+      "none": 0
+    },
+    "MANIPULATION_STONEWALLING": {
+      "total": 3,
+      "fully": 3,
+      "partial": 0,
+      "none": 0
+    }
+  },
+  "rebuttal_by_adversary": {
+    "Emily Watson": {
+      "total": 28,
+      "fully": 28,
+      "partial": 0,
+      "none": 0
+    },
+    "Hon. Jenny L. McNeill": {
+      "total": 500,
+      "fully": 500,
+      "partial": 0,
+      "none": 0
+    },
+    "WATSON": {
+      "total": 25,
+      "fully": 25,
+      "partial": 0,
+      "none": 0
+    }
+  },
+  "critical_gaps": [],
+  "claims_gaps": [
+    {
+      "claim_id": "C53f86f142938",
+      "classification": "evidence_factual",
+      "actor": "record",
+      "proposition": "a | grep &#x27;inet  192&#x27; | awk &#x27;{print $2}&#x27; | cut -d/ -f1 | head -n1)\\n&gt; if [ -z &q",
+      "status": "supported",
+      "gap": "COUNTER-PROPOSITION NEEDED"
+    }
+  ],
+  "assertion_types": {
+    "JUDICIAL_ORDER": 5321,
+    "ACCUSATION": 3767,
+    "FALSE_STATEMENT": 496,
+    "NEGATIVE_CONNOTATION": 2353,
+    "CUSTODY_DEMAND": 1656,
+    "FINANCIAL_CLAIM": 2491,
+    "CHARACTER_ATTACK": 288
+  },
+  "evidence_link_stats": {
+    "total": 9061,
+    "unique_claims": 1179,
+    "avg_relevance": 20.5,
+    "by_type": {
+      "null": 5910,
+      "judicial_misconduct": 741,
+      "evidence_factual": 454,
+      "procedural_event": 380,
+      "ex_parte_violation": 310,
+      "impeachment_credibility": 154,
+      "benchbook_violation": 115,
+      "record_contradiction": 97,
+      "mental_health_assessment": 95,
+      "parenting_time_evidence": 75,
+      "violation_evidence": 69,
+      "denial_evidence": 45,
+      "custody_evidence": 45,
+      "parenting_time_restriction": 35,
+      "contempt_or_violation": 35,
+      "parenting_time_statute_reference": 25,
+      "best_interest_reference": 20,
+      "parenting_time_denial": 15,
+      "ex_parte_evidence": 15,
+      "parental_alienation": 13,
+      "evidence_general": 10,
+      "dishonesty_credibility": 10,
+      "anger_characterization": 10,
+      "erratic_behavior": 7,
+      "superintending_control": 5,
+      "summary_disposition": 5,
+      "substantive_due_process": 5,
+      "service_of_process": 5,
+      "restriction_prohibition": 5,
+      "recusal_motion": 5,
+      "record_fact_court_finds": 5,
+      "procedural_due_process": 5,
+      "ppo_overbreadth": 5,
+      "ppo_modification": 5,
+      "ppo_insufficient_evidence": 5,
+      "ppo_hearing_denial": 5,
+      "ppo_fundamental_rights": 5,
+      "ppo_evidentiary_failure": 5,
+      "ppo_due_process": 5,
+      "ppo_custody_weapon": 5,
+      "ppo_allegations": 5,
+      "parenting_time_makeup": 5,
+      "notice_failure": 5,
+      "msc_public_interest": 5,
+      "msc_legal_significance": 5,
+      "msc_conflict_precedent": 5,
+      "meaningful_hearing": 5,
+      "mathews_balancing": 5,
+      "judicial_sanction_abuse": 5,
+      "judicial_pro_se_accommodation": 5,
+      "judicial_findings_failure": 5,
+      "judicial_ex_parte": 5,
+      "judicial_disqualification": 5,
+      "judicial_bias": 5,
+      "housing_retaliation": 5,
+      "housing_repair_failure": 5,
+      "housing_habitability": 5,
+      "housing_custody_nexus": 5,
+      "housing_corporate_liability": 5,
+      "foc_objection": 5,
+      "foc_failure": 5,
+      "findings_of_fact": 5,
+      "extraordinary_relief": 5,
+      "ex_parte_reference": 5,
+      "ece_analysis": 5,
+      "discovery_sanctions": 5,
+      "discovery_compel": 5,
+      "contempt_parenting_time": 5,
+      "conditional_gate_therapy": 5,
+      "civil_contempt": 5,
+      "change_of_circumstances": 5,
+      "canon_3B5_violation": 5,
+      "canon_3B4_violation": 5,
+      "canon_2_violation": 5,
+      "best_interest_factor_l": 5,
+      "best_interest_factor_k": 5,
+      "best_interest_factor_j": 5,
+      "best_interest_factor_i": 5,
+      "best_interest_factor_h": 5,
+      "best_interest_factor_g": 5,
+      "best_interest_factor_f": 5,
+      "best_interest_factor_e": 5,
+      "best_interest_factor_d": 5,
+      "best_interest_factor_c": 5,
+      "best_interest_factor_b": 5,
+      "best_interest_factor_a": 5,
+      "appellate_stay": 5,
+      "appellate_remedy": 5,
+      "appellate_plain_error": 5,
+      "appellate_legal_error": 5,
+      "appellate_issue_preservation": 5,
+      "appellate_hearing_denial": 5,
+      "appellate_expedition": 5,
+      "appellate_due_process": 5,
+      "access_to_courts": 5,
+      "abuse_of_discretion": 5,
+      "judicial_violation_pattern": 4,
+      "canon_3_violation": 3,
+      "risk_characterization": 2,
+      "liberty_interest": 2,
+      "ece_modification": 2,
+      "canon_1_violation": 2,
+      "equal_protection": 1
+    }
+  }
+}

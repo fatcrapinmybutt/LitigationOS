@@ -1,0 +1,1379 @@
+{
+  "tool": "Tool #220 — HealthWest Evidence Mapper",
+  "generated": "2026-03-19T09:02:57.026468",
+  "summary": {
+    "total_facts": 5,
+    "total_db_quotes": 62,
+    "additional_table_hits": 0,
+    "hw_file_references": 350,
+    "filings_mapped": 4,
+    "health_tables_discovered": 11
+  },
+  "healthwest_facts": [
+    {
+      "fact_id": "HW-001",
+      "date": "2025-09-04",
+      "title": "1st HealthWest Evaluation — CLEAN",
+      "description": "First HealthWest psychological evaluation found NO safety concerns. ADHD noted but controlled. No psychiatric diagnoses warranting custody restriction. Andrew assessed as competent, engaged parent.",
+      "significance": "CRITICAL — Establishes baseline: Andrew is fit parent per clinical eval.",
+      "filings": [
+        "F3-disqualification",
+        "F6-JTC",
+        "F7-custody"
+      ],
+      "arguments": {
+        "F3-disqualification": "Judge McNeill accepted this eval but later relied on contradictory 2nd eval only 7 days later — selective evidence use violating MCR 2.003(C)(1)(b).",
+        "F6-JTC": "Judicial misconduct: accepting 1st eval as valid then ignoring it in favor of 2nd eval obtained through ex parte contact = outcome-driven decision-making.",
+        "F7-custody": "1st eval supports Andrew's fitness. No safety concerns identified. Any custody restriction based on 'mental health' is contradicted by this eval."
+      }
+    },
+    {
+      "fact_id": "HW-002",
+      "date": "2025-09-11",
+      "title": "2nd HealthWest Evaluation — Rule-Out Delusional Disorder",
+      "description": "Only 7 days after clean eval, second evaluation diagnosed 'rule-out delusional disorder.' The basis: Andrew stating 'this whole thing is illegal.' No new clinical evidence between evals. Same patient, radically different conclusion.",
+      "significance": "CRITICAL — 7-day reversal with no new clinical data is medically unprecedented. Pathologizes protected legal speech (1st Amendment).",
+      "filings": [
+        "F3-disqualification",
+        "F6-JTC",
+        "F7-custody",
+        "F10-1983"
+      ],
+      "arguments": {
+        "F3-disqualification": "Judge relied on 2nd eval to justify custody restriction despite 1st eval clearing Andrew — demonstrates predetermined outcome, not evidence-based ruling.",
+        "F6-JTC": "JTC complaint: judge facilitated procurement of contradictory eval through court staff (Rusco) to manufacture justification for custody denial.",
+        "F7-custody": "Rebuttal: 'Rule-out' is NOT a diagnosis — it means 'consider and exclude.' Using it as basis for custody denial is clinical misapplication.",
+        "F10-1983": "§1983 due process: Pathologizing statement 'this is illegal' as evidence of delusion = punishing protected speech. Chilling effect on litigant advocacy."
+      }
+    },
+    {
+      "fact_id": "HW-003",
+      "date": "2025-09-04",
+      "title": "7-Day Contradiction — No New Clinical Data",
+      "description": "Between 9/4 (clean) and 9/11 (delusional disorder), zero new clinical events, zero new evidence, zero new incidents. The ONLY intervening event was Pamela Rusco's direct contact with the clinician.",
+      "significance": "The 7-day gap with no new data proves external influence on the 2nd eval. Temporal proximity to Rusco contact is devastating.",
+      "filings": [
+        "F3-disqualification",
+        "F6-JTC"
+      ],
+      "arguments": {
+        "F3-disqualification": "Timeline: 9/4 clean → Rusco contacts clinician → 9/11 delusional disorder. No clinical basis for reversal = court-influenced outcome.",
+        "F6-JTC": "Rusco is judge's secretary acting as agent of the court. Her direct clinician contact + subpoena email constitutes ex parte communication under MCR 2.003."
+      }
+    },
+    {
+      "fact_id": "HW-004",
+      "date": "2025-09-11",
+      "title": "Pamela Rusco Ex Parte Contact",
+      "description": "Pamela Rusco (FOC / judge's secretary) called the HealthWest clinician directly AND emailed a subpoena — both without notice to Andrew. This is textbook ex parte communication between court staff and a treating/evaluating clinician.",
+      "significance": "CRITICAL — Ex parte contact with evaluator is grounds for disqualification. Rusco acted as agent of Judge McNeill.",
+      "filings": [
+        "F3-disqualification",
+        "F6-JTC",
+        "F10-1983"
+      ],
+      "arguments": {
+        "F3-disqualification": "MCR 2.003(C)(1)(b): ex parte communication through court staff. Rusco's contact with clinician was not disclosed to Andrew. Judge has duty to ensure staff compliance — failure = imputed bias.",
+        "F6-JTC": "MCR 9.104, 9.202: Judicial staff acting as agent conducting ex parte contact with evaluation provider. JTC jurisdiction covers court staff acting under judge's authority.",
+        "F10-1983": "Due process violation: secret contact with evaluator to influence clinical outcome without notice or opportunity to respond = § 1983 liability."
+      }
+    },
+    {
+      "fact_id": "HW-005",
+      "date": "2025-09-11",
+      "title": "Pathologizing Legal Criticism as 'Delusional'",
+      "description": "The basis for 'delusional disorder' diagnosis was Andrew's statement 'this whole thing is illegal.' Criticizing court proceedings is protected speech, not a psychiatric symptom. This weaponizes mental health against a litigant.",
+      "significance": "CRITICAL — Using protected legal speech as evidence of mental illness is a constitutional violation and clinical ethics breach.",
+      "filings": [
+        "F3-disqualification",
+        "F6-JTC",
+        "F7-custody",
+        "F10-1983"
+      ],
+      "arguments": {
+        "F3-disqualification": "Judge accepted a diagnosis predicated on protected speech — demonstrates willingness to weaponize clinical authority against disfavored litigant.",
+        "F6-JTC": "Judicial misconduct: facilitating psychiatric labeling of a litigant for exercising right to criticize court proceedings.",
+        "F7-custody": "Rebuttal argument: 'This is illegal' is a legal conclusion, not a delusion. Courts have found ex parte contact illegal — Andrew's statement may be correct.",
+        "F10-1983": "1st Amendment: chilling effect. If criticizing court = 'delusional,' no litigant can safely advocate without risking psychiatric retaliation. Garcetti v. Ceballos distinguishes — private litigants retain full 1A rights."
+      }
+    }
+  ],
+  "filing_argument_map": {
+    "F3-disqualification": {
+      "name": "Motion to Disqualify Judge McNeill",
+      "authority": "MCR 2.003(C)(1)(b)",
+      "hw_relevance": "Selective evidence use + ex parte contact through Rusco",
+      "facts_count": 5,
+      "facts": [
+        {
+          "fact_id": "HW-001",
+          "title": "1st HealthWest Evaluation — CLEAN",
+          "date": "2025-09-04",
+          "argument": "Judge McNeill accepted this eval but later relied on contradictory 2nd eval only 7 days later — selective evidence use violating MCR 2.003(C)(1)(b)."
+        },
+        {
+          "fact_id": "HW-002",
+          "title": "2nd HealthWest Evaluation — Rule-Out Delusional Disorder",
+          "date": "2025-09-11",
+          "argument": "Judge relied on 2nd eval to justify custody restriction despite 1st eval clearing Andrew — demonstrates predetermined outcome, not evidence-based ruling."
+        },
+        {
+          "fact_id": "HW-003",
+          "title": "7-Day Contradiction — No New Clinical Data",
+          "date": "2025-09-04",
+          "argument": "Timeline: 9/4 clean → Rusco contacts clinician → 9/11 delusional disorder. No clinical basis for reversal = court-influenced outcome."
+        },
+        {
+          "fact_id": "HW-004",
+          "title": "Pamela Rusco Ex Parte Contact",
+          "date": "2025-09-11",
+          "argument": "MCR 2.003(C)(1)(b): ex parte communication through court staff. Rusco's contact with clinician was not disclosed to Andrew. Judge has duty to ensure staff compliance — failure = imputed bias."
+        },
+        {
+          "fact_id": "HW-005",
+          "title": "Pathologizing Legal Criticism as 'Delusional'",
+          "date": "2025-09-11",
+          "argument": "Judge accepted a diagnosis predicated on protected speech — demonstrates willingness to weaponize clinical authority against disfavored litigant."
+        }
+      ]
+    },
+    "F6-JTC": {
+      "name": "Judicial Tenure Commission Complaint",
+      "authority": "MCR 9.104, 9.202; Const 1963 Art 6 §30",
+      "hw_relevance": "Court staff ex parte contact + outcome-driven eval procurement",
+      "facts_count": 5,
+      "facts": [
+        {
+          "fact_id": "HW-001",
+          "title": "1st HealthWest Evaluation — CLEAN",
+          "date": "2025-09-04",
+          "argument": "Judicial misconduct: accepting 1st eval as valid then ignoring it in favor of 2nd eval obtained through ex parte contact = outcome-driven decision-making."
+        },
+        {
+          "fact_id": "HW-002",
+          "title": "2nd HealthWest Evaluation — Rule-Out Delusional Disorder",
+          "date": "2025-09-11",
+          "argument": "JTC complaint: judge facilitated procurement of contradictory eval through court staff (Rusco) to manufacture justification for custody denial."
+        },
+        {
+          "fact_id": "HW-003",
+          "title": "7-Day Contradiction — No New Clinical Data",
+          "date": "2025-09-04",
+          "argument": "Rusco is judge's secretary acting as agent of the court. Her direct clinician contact + subpoena email constitutes ex parte communication under MCR 2.003."
+        },
+        {
+          "fact_id": "HW-004",
+          "title": "Pamela Rusco Ex Parte Contact",
+          "date": "2025-09-11",
+          "argument": "MCR 9.104, 9.202: Judicial staff acting as agent conducting ex parte contact with evaluation provider. JTC jurisdiction covers court staff acting under judge's authority."
+        },
+        {
+          "fact_id": "HW-005",
+          "title": "Pathologizing Legal Criticism as 'Delusional'",
+          "date": "2025-09-11",
+          "argument": "Judicial misconduct: facilitating psychiatric labeling of a litigant for exercising right to criticize court proceedings."
+        }
+      ]
+    },
+    "F7-custody": {
+      "name": "Motion to Restore Parenting Time / Custody Modification",
+      "authority": "MCL 722.27; Child Custody Act",
+      "hw_relevance": "1st eval clears Andrew; 2nd eval clinically invalid; best interest factors",
+      "facts_count": 3,
+      "facts": [
+        {
+          "fact_id": "HW-001",
+          "title": "1st HealthWest Evaluation — CLEAN",
+          "date": "2025-09-04",
+          "argument": "1st eval supports Andrew's fitness. No safety concerns identified. Any custody restriction based on 'mental health' is contradicted by this eval."
+        },
+        {
+          "fact_id": "HW-002",
+          "title": "2nd HealthWest Evaluation — Rule-Out Delusional Disorder",
+          "date": "2025-09-11",
+          "argument": "Rebuttal: 'Rule-out' is NOT a diagnosis — it means 'consider and exclude.' Using it as basis for custody denial is clinical misapplication."
+        },
+        {
+          "fact_id": "HW-005",
+          "title": "Pathologizing Legal Criticism as 'Delusional'",
+          "date": "2025-09-11",
+          "argument": "Rebuttal argument: 'This is illegal' is a legal conclusion, not a delusion. Courts have found ex parte contact illegal — Andrew's statement may be correct."
+        }
+      ]
+    },
+    "F10-1983": {
+      "name": "42 USC §1983 Federal Civil Rights Action",
+      "authority": "42 USC §1983; 14th Amendment Due Process",
+      "hw_relevance": "Pathologizing speech + secret eval manipulation = constitutional violation",
+      "facts_count": 3,
+      "facts": [
+        {
+          "fact_id": "HW-002",
+          "title": "2nd HealthWest Evaluation — Rule-Out Delusional Disorder",
+          "date": "2025-09-11",
+          "argument": "§1983 due process: Pathologizing statement 'this is illegal' as evidence of delusion = punishing protected speech. Chilling effect on litigant advocacy."
+        },
+        {
+          "fact_id": "HW-004",
+          "title": "Pamela Rusco Ex Parte Contact",
+          "date": "2025-09-11",
+          "argument": "Due process violation: secret contact with evaluator to influence clinical outcome without notice or opportunity to respond = § 1983 liability."
+        },
+        {
+          "fact_id": "HW-005",
+          "title": "Pathologizing Legal Criticism as 'Delusional'",
+          "date": "2025-09-11",
+          "argument": "1st Amendment: chilling effect. If criticizing court = 'delusional,' no litigant can safely advocate without risking psychiatric retaliation. Garcetti v. Ceballos distinguishes — private litigants retain full 1A rights."
+        }
+      ]
+    }
+  },
+  "db_evidence_quotes": [
+    {
+      "id": 66,
+      "quote_text": "hearing,  Judge  McNeill\n ordered  me to obtain  a\npsychological\n assessment  from  HealtliWest.\no  \nThe  judge's\n secretary  then  emailed  me, instructing\n that  the completed\nHealthWest\n evaluation\n shoul",
+      "speaker": "COURT",
+      "date_ref": null,
+      "legal_significance": null,
+      "evidence_category": "TRANSCRIPT",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 46
+    },
+    {
+      "id": 83,
+      "quote_text": "Hearing\n*  \nTranscripts\n from  the  PPO  contempt\n hearing\n in  which\n I was  jailed\n (Show  Cause\n#4).\nAppendix\n H  -  HealthWest\n Evaluation\n and  Chambers\n Communications\nThe  HealthWest\n mental-health\n e",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": null,
+      "evidence_category": "TRANSCRIPT",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 53
+    },
+    {
+      "id": 257,
+      "quote_text": "hearing,\n Judge  McNeill\n ordered\n me  to obtain  a\npsychological\n assessment\n from  HealtliWest.\no  \nThe  judge's\n secretary\n then  emailed\n me,  instructing\n that  the  completed\nHealthWest\n evaluation\n sh",
+      "speaker": "COURT",
+      "date_ref": null,
+      "legal_significance": null,
+      "evidence_category": "TRANSCRIPT",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 245
+    },
+    {
+      "id": 268,
+      "quote_text": "Hearing\n*  \nTranscripts\n from  the PPO  contempt\n hearing  in which  I was  jailed  (Show  Cause\n#4).\nAppendix\n H -  HealthWest\n Evaluation\n and  Chambers\n Communications\nThe  HealthWest\n mental-health\n eval",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": null,
+      "evidence_category": "TRANSCRIPT",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 252
+    },
+    {
+      "id": 343,
+      "quote_text": "Ex Parte Use); §4.6 (Best-Interest  Evidence)\nIII.  LINE-BY-LINE\n OBJECTION\nStatement\nl \"Sole\n custody\"\n2 Drug/mental\n health\nclaims\nOfficer\n Randall\n3 flash  drive\n4 \"Anonymous\nfriend\"\n quote\n5 Drive-byfhonk",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "evidence_category": "EX_PARTE_ORDER",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 482
+    },
+    {
+      "id": 365,
+      "quote_text": "The Court finds that the following facto7@,arq\n applicable:\n*  \nthe mental  and  physical\n health  of  the parties  involved:\n The  Court  has serious  concerns\nabout  the  Father's  mental  health.  He previously\n informed  the Court  that  he was  in\ncounseling.\n In fact,  at one  PPO  violation  hearing  he was",
+      "speaker": "COURT",
+      "date_ref": null,
+      "legal_significance": "BINDING_DETERMINATION",
+      "evidence_category": "JUDGE_ORDER",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 533
+    },
+    {
+      "id": 372,
+      "quote_text": "ex parte  motion  to suspend  the Father's  parenting  time.\nShe alleged  that  she was concerned  regarding  on going  drug use/mental  health  iSsues  due to\nhis phone  calls  to herfatherwhere\n he stated",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "evidence_category": "EX_PARTE_ORDER",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 590
+    },
+    {
+      "id": 380,
+      "quote_text": "ex parte  handling\n of  evidence\n (USB  recording\n and  mental-health\nevaluation).\no  \nA USB  recording\n submitted\n by  the  opposing\n party  was  reviewed\n by  staff\noutside\n my  presence\n at the  judge's\n d",
+      "speaker": "COURT",
+      "date_ref": null,
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "evidence_category": "EX_PARTE_ORDER",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 600
+    },
+    {
+      "id": 387,
+      "quote_text": "Ex Parte Communications)\n7. \nOrder\n to obtain\n HealthWest\n evaluation,\n followed\n by  chambers-only\ninstructions.\no  \nAfter  the August  28 hearing,  Judge  McNeill\n ordered  me to obtain  a\npsychological\n as",
+      "speaker": "COURT",
+      "date_ref": null,
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "evidence_category": "EX_PARTE_ORDER",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 603
+    },
+    {
+      "id": 405,
+      "quote_text": "ex parte  parenting-time\n suspensions;\no  \nHer  ex parte  handling\n of  critical\n evidence,\n including\n the  HealthWest\nevaluation\n and  USB  recording;\no  \nHer  differential\n treatment\n of  my  evidence\n ver",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "evidence_category": "EX_PARTE_ORDER",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 611
+    },
+    {
+      "id": 3979,
+      "quote_text": "nal contempt|jail\nMEEK4=bias|recusal|disqual|bond/$250|sanction|JTC|HealthWest eval reliance\nMEEK1=housi",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $250",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1092
+    },
+    {
+      "id": 7881,
+      "quote_text": "squalify\",\"recuse\",\"MCR 2.003\",\"bond\",\"sanction\",\"$250\",\"ex parte\",\"suspend parenting\ntime\",\"HealthWest\"",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $250",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1320
+    },
+    {
+      "id": 7948,
+      "quote_text": "squalify\",\"recuse\",\"MCR 2.003\",\"bond\",\"sanction\",\"$250\",\"ex parte\",\"suspend parenting \ntime\",\"HealthWest",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $250",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1321
+    },
+    {
+      "id": 294404,
+      "quote_text": "patient Mental Health Care \nCovered – 100% after \n$20 co-pay  \nCovered - 85% after \ndeductible   \nCover",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $20",
+      "evidence_category": "general_court_doc",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 19949
+    },
+    {
+      "id": 298225,
+      "quote_text": "00-0003-14\nTWIN LAKE, MI 49457\n3639 E ROSEMARY LN\n$6.09\n0.022862\n3.0000\n3.0328\nKOWALSKI ROSEMARY/RUSCO RO",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $6.09",
+      "evidence_category": "general_court_doc",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 20003
+    },
+    {
+      "id": 2,
+      "quote_text": "hearing  was\nadjourned\n for  Plaintiff  to obtain  a mental  health  assessment.\n The  parties  appeared\n on 1 0/29/25.\nThePlaintiff\n \nWest,stating(under\noath)  that he did not obtain  a second  assessment.",
+      "speaker": null,
+      "date_ref": "0/29/25",
+      "legal_significance": null,
+      "evidence_category": "TRANSCRIPT",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 2
+    },
+    {
+      "id": 7,
+      "quote_text": "hearing  and  subpoenaed\n the  two\nhealth  west  staff  for  the next  hearing,  which  occurred  on 1 1/26/25.  At that  hearing,  the  two\nworkstestified,\n \nwas\nDespite  numerous\n warnings,  the Father  co",
+      "speaker": null,
+      "date_ref": "1/26/25",
+      "legal_significance": null,
+      "evidence_category": "TRANSCRIPT",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 4
+    },
+    {
+      "id": 38,
+      "quote_text": "hearing  was\nadjourned  for Piaintiffto\n obtain  a mental  health  assessment.  The  parties  appeared  on 10/29/25.\nThe Plaintiff objected to the Court reviewing  a 2nd assessment from  Health  West, statin",
+      "speaker": "COURT",
+      "date_ref": "10/29/25",
+      "legal_significance": null,
+      "evidence_category": "CUSTODY_ORDER",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 31
+    },
+    {
+      "id": 39,
+      "quote_text": "hearing  and\nsubpoenaed\n the two health  west  staff  for the next hearing,  which  occurred  on 41/26/25.\nIf a parenting time modification  does not change  the child's  estabfished  \ncustodial\nenvironment,",
+      "speaker": null,
+      "date_ref": "41/26/25",
+      "legal_significance": null,
+      "evidence_category": "CUSTODY_ORDER",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 31
+    },
+    {
+      "id": 10,
+      "quote_text": "hearing  on 8/22/25.\nOn 9/22/2025,\n the  Court  asked  the Plaintiff  to undergo  an assessment\n at Health  West.\nThe  matter  was  then  set for an evidentiary\n hearing  on 9/4/25.  At the evidentiary\n hear",
+      "speaker": "COURT",
+      "date_ref": "8/22/25",
+      "legal_significance": null,
+      "evidence_category": "TRANSCRIPT",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 5
+    },
+    {
+      "id": 43,
+      "quote_text": "hearing  on 8/22/25.\nOn 9/22/2025,  the Court  asked  the Plaintiff  to undergo  an assessment  at Health  West.\nThe matter  was  then set for an evidentiary  hearing  on 9/4/25.  At the evidentiary  hearing",
+      "speaker": "COURT",
+      "date_ref": "8/22/25",
+      "legal_significance": null,
+      "evidence_category": "TRANSCRIPT",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 33
+    },
+    {
+      "id": 60016,
+      "quote_text": "Equipment in Mental \nHealth Proceedings\n[Entered April 10, 1991.]\nUntil further order of the court, all Michigan",
+      "speaker": null,
+      "date_ref": "April 10, 1991",
+      "legal_significance": "Extracted DATE: April 10, 1991",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 5176
+    },
+    {
+      "id": 61415,
+      "quote_text": "Chapter 5. Probate Court\nPage 553\n  Updated April 11, 2024 \nSubchapter 5.730 Mental Health Rules\nRule 5.730",
+      "speaker": null,
+      "date_ref": "April 11, 2024",
+      "legal_significance": "Extracted DATE: April 11, 2024",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 5182
+    },
+    {
+      "id": 60034,
+      "quote_text": "Equipment in Mental Health \nProceedings\n[Entered April 3, 1992; rescinded by order entered December 14, 2016, ef",
+      "speaker": null,
+      "date_ref": "April 3, 1992",
+      "legal_significance": "Extracted DATE: April 3, 1992",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 5176
+    },
+    {
+      "id": 11640,
+      "quote_text": "QUALIFY|EX_PARTE|HEALTHWEST|dates=DATE_MONTH_DY_Y:August\n 28, 2025|snip=28, 2025 - Interim hearing; refusal to view",
+      "speaker": null,
+      "date_ref": "August\n 28, 2025",
+      "legal_significance": "Extracted DATE: August\n 28, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 3830
+    },
+    {
+      "id": 7456,
+      "quote_text": "elay\nInstance #4: Mental Health Evaluation Order (August 22, 2025)\n• What Happened: Judge ordered Andrew to undergo",
+      "speaker": null,
+      "date_ref": "August 22, 2025",
+      "legal_significance": "Extracted DATE: August 22, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1230
+    },
+    {
+      "id": 11672,
+      "quote_text": "|HEALTHWEST|PARENTING_TIME|dates=DATE_MO\nNTH_DY_Y:August 22, 2025|snip=runs afoul of due process (14th Amendment) a",
+      "speaker": null,
+      "date_ref": "August 22, 2025",
+      "legal_significance": "Extracted DATE: August 22, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 3830
+    },
+    {
+      "id": 11673,
+      "quote_text": "C|HEALTHWEST|PARENTING_TIME|dates=DATE_MONTH_DY_Y:August 22, 2025|snip=r\nuns afoul of due process (14th Amendment)",
+      "speaker": null,
+      "date_ref": "August 22, 2025",
+      "legal_significance": "Extracted DATE: August 22, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 3830
+    },
+    {
+      "id": 9196,
+      "quote_text": "rew P <andrewjpigors@gmail.com>\nSent: Wednesday,\n July  10,  20241\n :44  PM\nTo: Rusco, Pamela <RuscoPa@co.muskegon.",
+      "speaker": null,
+      "date_ref": "July  10,  2024",
+      "legal_significance": "Extracted DATE: July  10,  2024",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1432
+    },
+    {
+      "id": 9205,
+      "quote_text": "w P <andrewjpigors@ginail.com>\nSent:\n Wednesday,\n July  10,  2024  1:44  PM\nTo: Rusco, Pamela <RuscoPa@co.mhiskegon",
+      "speaker": null,
+      "date_ref": "July  10,  2024",
+      "legal_significance": "Extracted DATE: July  10,  2024",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1462
+    },
+    {
+      "id": 3640,
+      "quote_text": "ew P <andrewjpigors@gmail com>\nSent:  Wednesday,\n July  10, 2024  1:44  PM\nTo: Rusco, Pamela <RuscoPa@co muskegon.",
+      "speaker": null,
+      "date_ref": "July  10, 2024",
+      "legal_significance": "Extracted DATE: July  10, 2024",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1021
+    },
+    {
+      "id": 9211,
+      "quote_text": "ew  P <andrewjpigors@gmail.com>\nSent: Wednesday,  July 10, 2024 1:44 PM\nTo: Rusco, Pamela <RuscoPa@co.muskegon.mi",
+      "speaker": null,
+      "date_ref": "July 10, 2024",
+      "legal_significance": "Extracted DATE: July 10, 2024",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1473
+    },
+    {
+      "id": 9162,
+      "quote_text": "1  6 (cell)\nFrom:  Rusco,  Pamela\nSent:  Monday,\n March  3, 2025  8:51  :03  AM\nTo: Hooker,  Jamie\nCc: Duguid,  La",
+      "speaker": null,
+      "date_ref": "March  3, 2025",
+      "legal_significance": "Extracted DATE: March  3, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1402
+    },
+    {
+      "id": 9212,
+      "quote_text": "416\n (cell)\nFrom:  Rusco,  Pamela\nSent:  Monday,  March  3, 2025  8:51:03  AM\nTo: Hooker,  Jamie\nCc: Duguid,  Laur",
+      "speaker": null,
+      "date_ref": "March  3, 2025",
+      "legal_significance": "Extracted DATE: March  3, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1476
+    },
+    {
+      "id": 9213,
+      "quote_text": "1  6 (cell)\nFrom:  Rusco,  Pamela\nSent:  Monday,  March  3, 2025  8:51  :03  AM\nTo: Hooker,  Jamie\nCc: Duguid,  La",
+      "speaker": null,
+      "date_ref": "March  3, 2025",
+      "legal_significance": "Extracted DATE: March  3, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1478
+    },
+    {
+      "id": 9214,
+      "quote_text": "416\n (cell)\nFrom:  Rusco,  Pamela\nSent:  Monday,\n March  3, 2025  8:51:03  AM\nTo: Hooker,  Jamie\nCc: Duguid,  Laur",
+      "speaker": null,
+      "date_ref": "March  3, 2025",
+      "legal_significance": "Extracted DATE: March  3, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1483
+    },
+    {
+      "id": 300385,
+      "quote_text": "nt of 2012 PA 540 and 2012 PA 541,\nboth effective March 28, 2013, which amended the Mental Health Code and the Juv",
+      "speaker": null,
+      "date_ref": "March 28, 2013",
+      "legal_significance": "Extracted DATE: March 28, 2013",
+      "evidence_category": "general_court_doc",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 20028
+    },
+    {
+      "id": 511,
+      "quote_text": "safety with Cody, citing substance abuse\nissues.\nMay 19, 2024: Emily refuses to test Lincoln for potential pean",
+      "speaker": null,
+      "date_ref": "May 19, 2024",
+      "legal_significance": "Extracted DATE: May 19, 2024",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 657
+    },
+    {
+      "id": 59999,
+      "quote_text": "Equipment in Mental \nHealth Proceedings\n[Entered November 22, 1989.]\nOn order of the Court, the probate courts for t",
+      "speaker": null,
+      "date_ref": "November 22, 1989",
+      "legal_significance": "Extracted DATE: November 22, 1989",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 5176
+    },
+    {
+      "id": 11643,
+      "quote_text": "E|HEALTHWEST|PARENTING_TIME|dates=DATE_MONTH_DY_Y:October\n 29, 2025|snip=o In early August 2025, Judge McNeill signed",
+      "speaker": null,
+      "date_ref": "October\n 29, 2025",
+      "legal_significance": "Extracted DATE: October\n 29, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 3830
+    },
+    {
+      "id": 9197,
+      "quote_text": "49445\n2319035690\nAndrewjpigors@gmail  com\nDate:  October\n 7, 2024\nMs. Pamela  Rusco\nSecretary\n to Honorable\n Judge",
+      "speaker": null,
+      "date_ref": "October\n 7, 2024",
+      "legal_significance": "Extracted DATE: October\n 7, 2024",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1434
+    },
+    {
+      "id": 9198,
+      "quote_text": "ndrew P <andrewjpigors@gmail.com>\nSent:  Monday,\n October\n 7, 20241\n :45  PM\nTo: Rusco, Pamela <RciscoPa@co.muskegon",
+      "speaker": null,
+      "date_ref": "October\n 7, 2024",
+      "legal_significance": "Extracted DATE: October\n 7, 2024",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1435
+    },
+    {
+      "id": 9207,
+      "quote_text": "l 49445\n2319035690\nAndrewjpigors@gmail com\nDate:  October\n 7, 2024\nMs. Pamela  Rusco\nSecretary\n to Honorable\n Judge",
+      "speaker": null,
+      "date_ref": "October\n 7, 2024",
+      "legal_significance": "Extracted DATE: October\n 7, 2024",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1465
+    },
+    {
+      "id": 9208,
+      "quote_text": "drew P <andrewjpigors@gmail\n com>\nSent:  Monday,  October\n 7, 2024  1 :45 PM\nTo: Rusco, Pamela <RciscoPa@co.muskegon",
+      "speaker": null,
+      "date_ref": "October\n 7, 2024",
+      "legal_significance": "Extracted DATE: October\n 7, 2024",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1466
+    },
+    {
+      "id": 9144,
+      "quote_text": "the  suspension\n (around\n September\n 9, 2025  and\nOctober\n 8, 2025),  including\n any  references\n to the  HealthWest",
+      "speaker": null,
+      "date_ref": "October\n 8, 2025",
+      "legal_significance": "Extracted DATE: October\n 8, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1384
+    },
+    {
+      "id": 9209,
+      "quote_text": "ndrew P <andrewjpigors@gmail.com>\nSent:  Monday,  October  28, 2024  8:00 AM\nTo: Rusco, Pamela <RuscoPa@co.muskegon.m",
+      "speaker": null,
+      "date_ref": "October  28, 2024",
+      "legal_significance": "Extracted DATE: October  28, 2024",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1467
+    },
+    {
+      "id": 4352,
+      "quote_text": "the suspension\n (around  September\n 9, 2025  and\nOctober  8, 2025),  including\n any  references  to the HealthWest",
+      "speaker": null,
+      "date_ref": "October  8, 2025",
+      "legal_significance": "Extracted DATE: October  8, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1203
+    },
+    {
+      "id": 300371,
+      "quote_text": "ssessments\nA. Diversion Screening Tools\nEffective October 1, 2024, a risk screening tool and a mental health\nscreen",
+      "speaker": null,
+      "date_ref": "October 1, 2024",
+      "legal_significance": "Extracted DATE: October 1, 2024",
+      "evidence_category": "general_court_doc",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 20028
+    },
+    {
+      "id": 60011,
+      "quote_text": "Equipment in Mental \nHealth Proceedings\n[Entered October 22, 1990.]\nUntil further order of the court, the probate c",
+      "speaker": null,
+      "date_ref": "October 22, 1990",
+      "legal_significance": "Extracted DATE: October 22, 1990",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 5176
+    },
+    {
+      "id": 11644,
+      "quote_text": "E|HEALTHWEST|PARENTING_TIME|dates=DATE_MONTH_DY_Y:September\n 9, 2025|snip=o The opposing party and the priblic could n",
+      "speaker": null,
+      "date_ref": "September\n 9, 2025",
+      "legal_significance": "Extracted DATE: September\n 9, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 3830
+    },
+    {
+      "id": 9204,
+      "quote_text": "drew  P <andrewjpigors@gmail.com>\nSent:  Monday,  September  8, 20251  :03 PM\nTo: Rusco, Pamela  <RuscoPa@co  muskegon",
+      "speaker": null,
+      "date_ref": "September  8, 2025",
+      "legal_significance": "Extracted DATE: September  8, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1461
+    },
+    {
+      "id": 7420,
+      "quote_text": "ess\nIncident 26: HealthWest Evaluation Completed (September 15, 2025)\n• Date: September 15, 2025\n• Case: 2024-1507-DC",
+      "speaker": null,
+      "date_ref": "September 15, 2025",
+      "legal_significance": "Extracted DATE: September 15, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1229
+    },
+    {
+      "id": 7422,
+      "quote_text": "Incident 27: Court Ignores HealthWest Evaluation (September 20, 2025)\n• Date: September 20, 2025\n• Case: 2024-1507-DC",
+      "speaker": null,
+      "date_ref": "September 20, 2025",
+      "legal_significance": "Extracted DATE: September 20, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1229
+    },
+    {
+      "id": 9203,
+      "quote_text": "Andrew P <andrewjpigors@gmail.com>\nSent: Tuesday, September 30, 2025 2:12 PM\nTo: Rusco, Pamela <RuscoPa@co.muskegon.mi",
+      "speaker": null,
+      "date_ref": "September 30, 2025",
+      "legal_significance": "Extracted DATE: September 30, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1459
+    },
+    {
+      "id": 3633,
+      "quote_text": "-ou\n were working at HealthWest as a clinician on September 4, 2025, when you saw men.,\nt6rrect?'f\nTarget answer: ffl",
+      "speaker": null,
+      "date_ref": "September 4, 2025",
+      "legal_significance": "Extracted DATE: September 4, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1001
+    },
+    {
+      "id": 7800,
+      "quote_text": "picture of HealthWest mental-health evaluation on September 5, 2025 | EA_013b0a313d | mass\niveeee.zip/Response to sho",
+      "speaker": null,
+      "date_ref": "September 5, 2025",
+      "legal_significance": "Extracted DATE: September 5, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1317
+    },
+    {
+      "id": 7827,
+      "quote_text": "ictu\nre of HealthWest mental-health evaluation on September 5, 2025 | EA_013b0a313d | massiveeee.zip/Response to show",
+      "speaker": null,
+      "date_ref": "September 5, 2025",
+      "legal_significance": "Extracted DATE: September 5, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1318
+    },
+    {
+      "id": 7868,
+      "quote_text": "picture of HealthWest mental-health evaluation on September 5, 2025 | EA_013b0a313d |\nmassiveeee.zip/Response to show",
+      "speaker": null,
+      "date_ref": "September 5, 2025",
+      "legal_significance": "Extracted DATE: September 5, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1320
+    },
+    {
+      "id": 7935,
+      "quote_text": "picture of HealthWest mental-health evaluation on September 5, 2025 | EA_013b0a313d | massiveeee.zip/Response to \nsho",
+      "speaker": null,
+      "date_ref": "September 5, 2025",
+      "legal_significance": "Extracted DATE: September 5, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 1321
+    },
+    {
+      "id": 2037,
+      "quote_text": "Andrew P <andrewjpigors@gmail.com>\nSent: Monday, September 8, 2025 1:03 PM\nTo: Rusco, Pamela <RuscoPa@co.muskegon.mi",
+      "speaker": null,
+      "date_ref": "September 8, 2025",
+      "legal_significance": "Extracted DATE: September 8, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 705
+    },
+    {
+      "id": 29592,
+      "quote_text": "ather than filing it with the clerk). On or about September 1, 2025, the judge’s\nsecretary  (Pamela  Rusco)  emailed",
+      "speaker": null,
+      "date_ref": "September 1, 2025",
+      "legal_significance": "Extracted DATE: September 1, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 4065
+    },
+    {
+      "id": 29593,
+      "quote_text": "t via email to the judge\n. Mr. Pigors complied on September 5, 2025, emailing\nthe completed assessment to Ms. Rusco a",
+      "speaker": null,
+      "date_ref": "September 5, 2025",
+      "legal_significance": "Extracted DATE: September 5, 2025",
+      "evidence_category": "discovery",
+      "source_type": "PDF_COURT_DOC",
+      "document_id": 4065
+    }
+  ],
+  "discovered_tables": [
+    "medical_records_needed",
+    "psych_analysis_fts",
+    "psych_analysis_fts_config",
+    "psych_analysis_fts_data",
+    "psych_analysis_fts_docsize",
+    "psych_analysis_fts_idx",
+    "psych_analysis_results",
+    "psychological_harm_docs",
+    "system_evaluation",
+    "system_health_log",
+    "system_health_metrics"
+  ],
+  "additional_table_results": {},
+  "hw_file_references": [
+    {
+      "id": 2254,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\Exhibit_D_HealthWest_Eval_1_.txt.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 10424,
+      "file_modified": "2026-02-09T05:49:14",
+      "relevance_score": 225.0,
+      "keyword_hits": "[\"albert\", \"custody\", \"watson\", \"parenting time\", \"pigors\", \"norton shores\", \"gal\", \"berry\", \"ex parte\", \"best interest\", \"motion\", \"14th circuit\", \"muskegon\", \"andrew pigors\", \"mcneill\", \"emily\"]",
+      "extracted_facts": "[\"albert\", \"custody\", \"watson\", \"parenting time\", \"pigors\", \"norton shores\", \"gal\", \"berry\", \"ex parte\", \"best interest\", \"motion\", \"14th circuit\", \"muskegon\", \"andrew pigors\", \"mcneill\", \"emily\"]",
+      "party_mentions": "[\"emily watson\", \"watson\", \"pigors\", \"albert watson\", \"berry\", \"andrew pigors\", \"mcneill\"]",
+      "date_mentions": "[\"08/08/2025\", \"08/07/2025\", \"8/8/2025\"]",
+      "tort_relevance": "[\"fraud\", \"iied\"]",
+      "case_lane": "[\"A-Custody\", \"B-Housing\", \"C-Convergence\"]",
+      "scan_timestamp": "2026-02-25 06:01:32",
+      "notes": null
+    },
+    {
+      "id": 2472,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest08052025.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 2948,
+      "file_modified": "2026-02-09T05:50:02",
+      "relevance_score": 60.0,
+      "keyword_hits": "[\"brief\", \"hearing\", \"pigors\", \"muskegon\"]",
+      "extracted_facts": "[\"brief\", \"hearing\", \"pigors\", \"muskegon\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\", \"09/05/2025\", \"12/30/1987\", \"09/03/2026\"]",
+      "tort_relevance": "[\"fraud\"]",
+      "case_lane": "[\"B-Housing\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2473,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0001.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 1685,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 60.0,
+      "keyword_hits": "[\"brief\", \"hearing\", \"pigors\", \"muskegon\"]",
+      "extracted_facts": "[\"brief\", \"hearing\", \"pigors\", \"muskegon\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/05/2025\", \"12/30/1987\"]",
+      "tort_relevance": "[\"fraud\"]",
+      "case_lane": "[\"B-Housing\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2474,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0002.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 1379,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 30.0,
+      "keyword_hits": "[\"pigors\"]",
+      "extracted_facts": "[\"pigors\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\", \"19/05/2025\", \"09/05/2025\"]",
+      "tort_relevance": "[\"fraud\"]",
+      "case_lane": "[]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2475,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0003.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 3528,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 115.0,
+      "keyword_hits": "[\"ppo\", \"custody\", \"contempt\", \"pigors\", \"gal\", \"andrew pigors\"]",
+      "extracted_facts": "[\"ppo\", \"custody\", \"contempt\", \"pigors\", \"gal\", \"andrew pigors\"]",
+      "party_mentions": "[\"pigors\", \"andrew pigors\"]",
+      "date_mentions": "[\"09/05/2025\"]",
+      "tort_relevance": "[\"abuse_of_process\", \"interference\", \"contempt\"]",
+      "case_lane": "[\"A-Custody\", \"B-Housing\", \"D-PPO\", \"C-Convergence\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2476,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0004.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 3462,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 70.0,
+      "keyword_hits": "[\"pigors\", \"andrew pigors\", \"ppo\"]",
+      "extracted_facts": "[\"pigors\", \"andrew pigors\", \"ppo\"]",
+      "party_mentions": "[\"pigors\", \"andrew pigors\"]",
+      "date_mentions": "[\"09/05/2025\"]",
+      "tort_relevance": "[\"abuse_of_process\", \"interference\"]",
+      "case_lane": "[\"D-PPO\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2477,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0005.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 3864,
+      "file_modified": "2026-02-09T05:50:02",
+      "relevance_score": 95.0,
+      "keyword_hits": "[\"pigors\", \"lori\", \"ppo\", \"andrew pigors\"]",
+      "extracted_facts": "[\"pigors\", \"lori\", \"ppo\", \"andrew pigors\"]",
+      "party_mentions": "[\"pigors\", \"andrew pigors\"]",
+      "date_mentions": "[\"09/05/2025\"]",
+      "tort_relevance": "[\"conspiracy\", \"abuse_of_process\", \"interference\"]",
+      "case_lane": "[\"D-PPO\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2478,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0006.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 2955,
+      "file_modified": "2026-02-09T05:50:02",
+      "relevance_score": 35.0,
+      "keyword_hits": "[\"motion\", \"custody\"]",
+      "extracted_facts": "[\"motion\", \"custody\"]",
+      "party_mentions": "[]",
+      "date_mentions": "[\"09/05/2025\"]",
+      "tort_relevance": "[\"interference\"]",
+      "case_lane": "[\"A-Custody\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2479,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0007.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 3664,
+      "file_modified": "2026-02-09T05:50:02",
+      "relevance_score": 65.0,
+      "keyword_hits": "[\"motion\", \"ppo\"]",
+      "extracted_facts": "[\"motion\", \"ppo\"]",
+      "party_mentions": "[]",
+      "date_mentions": "[\"09/05/2025\"]",
+      "tort_relevance": "[\"alienation\", \"conspiracy\", \"abuse_of_process\"]",
+      "case_lane": "[\"D-PPO\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2480,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0008.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 4471,
+      "file_modified": "2026-02-09T05:50:02",
+      "relevance_score": 55.0,
+      "keyword_hits": "[\"brief\", \"pigors\", \"andrew pigors\"]",
+      "extracted_facts": "[\"brief\", \"pigors\", \"andrew pigors\"]",
+      "party_mentions": "[\"pigors\", \"andrew pigors\"]",
+      "date_mentions": "[\"09/05/2025\"]",
+      "tort_relevance": "[\"conspiracy\"]",
+      "case_lane": "[]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2481,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0009.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 3752,
+      "file_modified": "2026-02-09T05:50:02",
+      "relevance_score": 80.0,
+      "keyword_hits": "[\"pigors\", \"ppo\", \"gal\"]",
+      "extracted_facts": "[\"pigors\", \"ppo\", \"gal\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/05/2025\"]",
+      "tort_relevance": "[\"fraud\", \"conspiracy\", \"abuse_of_process\"]",
+      "case_lane": "[\"B-Housing\", \"D-PPO\", \"C-Convergence\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2482,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\07_PDF\\general\\healthwest1stscanned_0011.pdf",
+      "drive_letter": "C",
+      "file_type": ".pdf",
+      "file_size_bytes": 80287,
+      "file_modified": "2026-01-31T14:15:50",
+      "relevance_score": 10.0,
+      "keyword_hits": "[\"gal\"]",
+      "extracted_facts": "[\"gal\"]",
+      "party_mentions": "[]",
+      "date_mentions": "[]",
+      "tort_relevance": "[]",
+      "case_lane": "[]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2483,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0011.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 1639,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 60.0,
+      "keyword_hits": "[\"brief\", \"hearing\", \"pigors\", \"muskegon\"]",
+      "extracted_facts": "[\"brief\", \"hearing\", \"pigors\", \"muskegon\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/05/2025\", \"12/30/1987\"]",
+      "tort_relevance": "[\"fraud\"]",
+      "case_lane": "[\"B-Housing\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2484,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0012.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 2331,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 60.0,
+      "keyword_hits": "[\"motion\", \"pigors\", \"ppo\", \"gal\"]",
+      "extracted_facts": "[\"motion\", \"pigors\", \"ppo\", \"gal\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/05/2025\", \"12/30/1987\"]",
+      "tort_relevance": "[\"abuse_of_process\"]",
+      "case_lane": "[\"B-Housing\", \"D-PPO\", \"C-Convergence\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2485,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0014.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 3173,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 45.0,
+      "keyword_hits": "[\"pigors\"]",
+      "extracted_facts": "[\"pigors\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\", \"09/03/2026\"]",
+      "tort_relevance": "[\"fraud\", \"conspiracy\"]",
+      "case_lane": "[]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2486,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0015.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 3334,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 65.0,
+      "keyword_hits": "[\"pigors\", \"ppo\", \"muskegon\"]",
+      "extracted_facts": "[\"pigors\", \"ppo\", \"muskegon\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[]",
+      "tort_relevance": "[\"conspiracy\", \"abuse_of_process\"]",
+      "case_lane": "[\"D-PPO\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2487,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0016.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 2186,
+      "file_modified": "2026-02-09T05:50:02",
+      "relevance_score": 50.0,
+      "keyword_hits": "[\"brief\", \"pigors\", \"gal\"]",
+      "extracted_facts": "[\"brief\", \"pigors\", \"gal\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\", \"12/30/1987\"]",
+      "tort_relevance": "[\"conspiracy\"]",
+      "case_lane": "[\"B-Housing\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2488,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0017.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 1416,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 55.0,
+      "keyword_hits": "[\"brief\", \"pigors\", \"andrew pigors\"]",
+      "extracted_facts": "[\"brief\", \"pigors\", \"andrew pigors\"]",
+      "party_mentions": "[\"pigors\", \"andrew pigors\"]",
+      "date_mentions": "[\"09/04/2025\"]",
+      "tort_relevance": "[\"conspiracy\"]",
+      "case_lane": "[]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2489,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0018.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 2813,
+      "file_modified": "2026-02-09T05:50:02",
+      "relevance_score": 15.0,
+      "keyword_hits": "[\"pigors\"]",
+      "extracted_facts": "[\"pigors\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\", \"12/30/1987\"]",
+      "tort_relevance": "[]",
+      "case_lane": "[\"B-Housing\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2490,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0019.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 1463,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 15.0,
+      "keyword_hits": "[\"pigors\"]",
+      "extracted_facts": "[\"pigors\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\"]",
+      "tort_relevance": "[]",
+      "case_lane": "[\"B-Housing\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2491,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0020.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 802,
+      "file_modified": "2026-02-09T05:49:56",
+      "relevance_score": 40.0,
+      "keyword_hits": "[\"pigors\", \"ppo\"]",
+      "extracted_facts": "[\"pigors\", \"ppo\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\"]",
+      "tort_relevance": "[\"abuse_of_process\"]",
+      "case_lane": "[\"D-PPO\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2492,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0021.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 1621,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 15.0,
+      "keyword_hits": "[\"pigors\"]",
+      "extracted_facts": "[\"pigors\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\"]",
+      "tort_relevance": "[]",
+      "case_lane": "[\"B-Housing\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2493,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0023.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 2321,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 65.0,
+      "keyword_hits": "[\"pigors\", \"andrew pigors\", \"ppo\", \"gal\"]",
+      "extracted_facts": "[\"pigors\", \"andrew pigors\", \"ppo\", \"gal\"]",
+      "party_mentions": "[\"pigors\", \"andrew pigors\"]",
+      "date_mentions": "[\"09/04/2025\"]",
+      "tort_relevance": "[\"abuse_of_process\"]",
+      "case_lane": "[\"D-PPO\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2494,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0024.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 2288,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 50.0,
+      "keyword_hits": "[\"brief\", \"pigors\", \"ppo\"]",
+      "extracted_facts": "[\"brief\", \"pigors\", \"ppo\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\", \"12/30/1987\"]",
+      "tort_relevance": "[\"abuse_of_process\"]",
+      "case_lane": "[\"B-Housing\", \"D-PPO\", \"C-Convergence\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2495,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0025.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 531,
+      "file_modified": "2026-02-09T05:49:56",
+      "relevance_score": 60.0,
+      "keyword_hits": "[\"brief\", \"pigors\", \"ppo\", \"muskegon\"]",
+      "extracted_facts": "[\"brief\", \"pigors\", \"ppo\", \"muskegon\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\"]",
+      "tort_relevance": "[\"abuse_of_process\"]",
+      "case_lane": "[\"B-Housing\", \"D-PPO\", \"C-Convergence\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2496,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0026.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 2503,
+      "file_modified": "2026-02-09T05:50:02",
+      "relevance_score": 70.0,
+      "keyword_hits": "[\"pigors\", \"ppo\"]",
+      "extracted_facts": "[\"pigors\", \"ppo\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\"]",
+      "tort_relevance": "[\"conspiracy\", \"abuse_of_process\", \"iied\"]",
+      "case_lane": "[\"B-Housing\", \"D-PPO\", \"C-Convergence\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2497,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0027.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 2285,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 30.0,
+      "keyword_hits": "[\"pigors\"]",
+      "extracted_facts": "[\"pigors\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\"]",
+      "tort_relevance": "[\"conspiracy\"]",
+      "case_lane": "[]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2498,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0029.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 3727,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 45.0,
+      "keyword_hits": "[\"pigors\", \"andrew pigors\"]",
+      "extracted_facts": "[\"pigors\", \"andrew pigors\"]",
+      "party_mentions": "[\"pigors\", \"andrew pigors\"]",
+      "date_mentions": "[\"09/04/2025\"]",
+      "tort_relevance": "[\"alienation\"]",
+      "case_lane": "[]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2499,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0030.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 4115,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 65.0,
+      "keyword_hits": "[\"pigors\", \"ppo\", \"gal\"]",
+      "extracted_facts": "[\"pigors\", \"ppo\", \"gal\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\"]",
+      "tort_relevance": "[\"conspiracy\", \"abuse_of_process\"]",
+      "case_lane": "[\"B-Housing\", \"D-PPO\", \"C-Convergence\"]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    },
+    {
+      "id": 2500,
+      "file_path": "C:\\Users\\andre\\LitigationOS\\08_TEXT\\general\\healthwest1stscanned_0031.pdf.txt",
+      "drive_letter": "C",
+      "file_type": ".txt",
+      "file_size_bytes": 1373,
+      "file_modified": "2026-02-09T05:49:58",
+      "relevance_score": 30.0,
+      "keyword_hits": "[\"pigors\"]",
+      "extracted_facts": "[\"pigors\"]",
+      "party_mentions": "[\"pigors\"]",
+      "date_mentions": "[\"09/04/2025\", \"09/03/2026\"]",
+      "tort_relevance": "[\"fraud\"]",
+      "case_lane": "[]",
+      "scan_timestamp": "2026-02-25 06:01:34",
+      "notes": null
+    }
+  ]
+}

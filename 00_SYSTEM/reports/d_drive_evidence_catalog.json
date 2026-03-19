@@ -1,0 +1,2899 @@
+{
+  "tool": "Tool #222 — D: Drive Evidence Ingester",
+  "generated": "2026-03-19T09:04:03.886160",
+  "summary": {
+    "directories_scanned": 4,
+    "directories_found": 4,
+    "total_files": 27806,
+    "total_size_bytes": 24187765636,
+    "total_size_human": "22.5 GB",
+    "high_priority_files": 109,
+    "already_ingested": 41,
+    "needs_ingestion": 27
+  },
+  "directory_scans": {
+    "D:\\LitigationOS_Extracted": {
+      "path": "D:\\LitigationOS_Extracted",
+      "exists": true,
+      "total_files": 13879,
+      "total_size_bytes": 4043762076,
+      "total_size_human": "3.8 GB",
+      "subdirectories": 437,
+      "extensions": {
+        ".py": {
+          "count": 3970,
+          "size": 36811926,
+          "size_human": "35.1 MB"
+        },
+        ".pyc": {
+          "count": 2312,
+          "size": 30463220,
+          "size_human": "29.1 MB"
+        },
+        ".svg": {
+          "count": 1274,
+          "size": 1843885,
+          "size_human": "1.8 MB"
+        },
+        ".json": {
+          "count": 1210,
+          "size": 1962544948,
+          "size_human": "1.8 GB"
+        },
+        "(no ext)": {
+          "count": 858,
+          "size": 24695854,
+          "size_human": "23.6 MB"
+        },
+        ".ts": {
+          "count": 628,
+          "size": 3188379,
+          "size_human": "3.0 MB"
+        },
+        ".txt": {
+          "count": 355,
+          "size": 11145312,
+          "size_human": "10.6 MB"
+        },
+        ".png": {
+          "count": 347,
+          "size": 122467325,
+          "size_human": "116.8 MB"
+        },
+        ".pdf": {
+          "count": 342,
+          "size": 18007704,
+          "size_human": "17.2 MB"
+        },
+        ".md": {
+          "count": 222,
+          "size": 3113226,
+          "size_human": "3.0 MB"
+        },
+        ".rs": {
+          "count": 214,
+          "size": 1841475,
+          "size_human": "1.8 MB"
+        },
+        ".csv": {
+          "count": 166,
+          "size": 345215581,
+          "size_human": "329.2 MB"
+        },
+        ".cmd": {
+          "count": 158,
+          "size": 71816,
+          "size_human": "70.1 KB"
+        },
+        ".mdx": {
+          "count": 136,
+          "size": 985889,
+          "size_human": "962.8 KB"
+        },
+        ".css": {
+          "count": 117,
+          "size": 535656,
+          "size_human": "523.1 KB"
+        },
+        ".jsonl": {
+          "count": 94,
+          "size": 19186744,
+          "size_human": "18.3 MB"
+        },
+        ".jpg": {
+          "count": 87,
+          "size": 40987570,
+          "size_human": "39.1 MB"
+        },
+        ".enc": {
+          "count": 80,
+          "size": 1271702,
+          "size_human": "1.2 MB"
+        },
+        ".typed": {
+          "count": 78,
+          "size": 1038,
+          "size_human": "1.0 KB"
+        },
+        ".wav": {
+          "count": 77,
+          "size": 61662966,
+          "size_human": "58.8 MB"
+        },
+        ".ftl": {
+          "count": 72,
+          "size": 1478622,
+          "size_human": "1.4 MB"
+        },
+        ".ps1": {
+          "count": 69,
+          "size": 422843,
+          "size_human": "412.9 KB"
+        },
+        ".tcl": {
+          "count": 68,
+          "size": 827343,
+          "size_human": "808.0 KB"
+        },
+        ".js": {
+          "count": 55,
+          "size": 279151,
+          "size_human": "272.6 KB"
+        },
+        ".sh": {
+          "count": 52,
+          "size": 112091,
+          "size_human": "109.5 KB"
+        },
+        ".bat": {
+          "count": 41,
+          "size": 63292,
+          "size_human": "61.8 KB"
+        },
+        ".exe": {
+          "count": 40,
+          "size": 5491323,
+          "size_human": "5.2 MB"
+        },
+        ".cypher": {
+          "count": 36,
+          "size": 34943,
+          "size_human": "34.1 KB"
+        },
+        ".woff2": {
+          "count": 36,
+          "size": 464567,
+          "size_human": "453.7 KB"
+        },
+        ".slint": {
+          "count": 34,
+          "size": 204046,
+          "size_human": "199.3 KB"
+        },
+        ".toml": {
+          "count": 33,
+          "size": 26965,
+          "size_human": "26.3 KB"
+        },
+        ".docx": {
+          "count": 28,
+          "size": 1161889,
+          "size_human": "1.1 MB"
+        },
+        ".gitignore": {
+          "count": 26,
+          "size": 10128,
+          "size_human": "9.9 KB"
+        },
+        ".log": {
+          "count": 24,
+          "size": 24378,
+          "size_human": "23.8 KB"
+        },
+        ".yaml": {
+          "count": 20,
+          "size": 303212,
+          "size_human": "296.1 KB"
+        },
+        ".yml": {
+          "count": 19,
+          "size": 231956,
+          "size_human": "226.5 KB"
+        },
+        ".xml": {
+          "count": 18,
+          "size": 437825,
+          "size_human": "427.6 KB"
+        },
+        ".tsx": {
+          "count": 17,
+          "size": 567681,
+          "size_human": "554.4 KB"
+        },
+        ".jsx": {
+          "count": 17,
+          "size": 97642,
+          "size_human": "95.4 KB"
+        },
+        ".dot": {
+          "count": 14,
+          "size": 184602,
+          "size_human": "180.3 KB"
+        },
+        ".sql": {
+          "count": 14,
+          "size": 6064,
+          "size_human": "5.9 KB"
+        },
+        ".dist-info__installer": {
+          "count": 14,
+          "size": 56,
+          "size_human": "56.0 B"
+        },
+        ".dist-info__metadata": {
+          "count": 14,
+          "size": 204182,
+          "size_human": "199.4 KB"
+        },
+        ".dist-info__record": {
+          "count": 14,
+          "size": 119666,
+          "size_human": "116.9 KB"
+        },
+        ".dist-info__wheel": {
+          "count": 14,
+          "size": 1236,
+          "size_human": "1.2 KB"
+        },
+        ".dist-info__installer_2": {
+          "count": 14,
+          "size": 56,
+          "size_human": "56.0 B"
+        },
+        ".dist-info__metadata_2": {
+          "count": 14,
+          "size": 204182,
+          "size_human": "199.4 KB"
+        },
+        ".dist-info__record_2": {
+          "count": 14,
+          "size": 119666,
+          "size_human": "116.9 KB"
+        },
+        ".dist-info__wheel_2": {
+          "count": 14,
+          "size": 1236,
+          "size_human": "1.2 KB"
+        },
+        ".dist-info__installer_3": {
+          "count": 13,
+          "size": 52,
+          "size_human": "52.0 B"
+        },
+        ".dist-info__metadata_3": {
+          "count": 13,
+          "size": 189136,
+          "size_human": "184.7 KB"
+        },
+        ".dist-info__record_3": {
+          "count": 13,
+          "size": 118864,
+          "size_human": "116.1 KB"
+        },
+        ".dist-info__wheel_3": {
+          "count": 13,
+          "size": 1149,
+          "size_human": "1.1 KB"
+        },
+        ".gif": {
+          "count": 11,
+          "size": 126594,
+          "size_human": "123.6 KB"
+        },
+        ".aac": {
+          "count": 11,
+          "size": 68736,
+          "size_human": "67.1 KB"
+        },
+        ".mjs": {
+          "count": 10,
+          "size": 33436,
+          "size_human": "32.7 KB"
+        },
+        ".lock": {
+          "count": 10,
+          "size": 80134,
+          "size_human": "78.3 KB"
+        },
+        ".example": {
+          "count": 9,
+          "size": 8249,
+          "size_human": "8.1 KB"
+        },
+        ".sqlite": {
+          "count": 9,
+          "size": 208896,
+          "size_human": "204.0 KB"
+        },
+        ".pyd": {
+          "count": 9,
+          "size": 16687672,
+          "size_human": "15.9 MB"
+        },
+        ".ui": {
+          "count": 8,
+          "size": 103091,
+          "size_human": "100.7 KB"
+        },
+        ".spec": {
+          "count": 7,
+          "size": 6093,
+          "size_human": "6.0 KB"
+        },
+        ".ipynb": {
+          "count": 7,
+          "size": 119294,
+          "size_human": "116.5 KB"
+        },
+        ".html": {
+          "count": 7,
+          "size": 310215,
+          "size_human": "302.9 KB"
+        },
+        ".nix": {
+          "count": 6,
+          "size": 15885,
+          "size_human": "15.5 KB"
+        },
+        ".astro": {
+          "count": 6,
+          "size": 24733,
+          "size_human": "24.2 KB"
+        },
+        ".apache": {
+          "count": 6,
+          "size": 61044,
+          "size_human": "59.6 KB"
+        },
+        ".bsd": {
+          "count": 6,
+          "size": 8064,
+          "size_human": "7.9 KB"
+        },
+        ".pyi": {
+          "count": 6,
+          "size": 166122,
+          "size_human": "162.2 KB"
+        },
+        ".ini": {
+          "count": 5,
+          "size": 1407,
+          "size_human": "1.4 KB"
+        },
+        ".cfg": {
+          "count": 5,
+          "size": 1198,
+          "size_human": "1.2 KB"
+        },
+        ".rels": {
+          "count": 5,
+          "size": 3505,
+          "size_human": "3.4 KB"
+        },
+        ".lnk": {
+          "count": 5,
+          "size": 6741,
+          "size_human": "6.6 KB"
+        },
+        ".webmanifest": {
+          "count": 5,
+          "size": 617,
+          "size_human": "617.0 B"
+        },
+        ".ttf": {
+          "count": 5,
+          "size": 432900,
+          "size_human": "422.8 KB"
+        },
+        ".wxs": {
+          "count": 4,
+          "size": 2078,
+          "size_human": "2.0 KB"
+        },
+        ".gitkeep": {
+          "count": 4,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".ds_store": {
+          "count": 3,
+          "size": 6388,
+          "size_human": "6.2 KB"
+        },
+        ".mts": {
+          "count": 3,
+          "size": 12155,
+          "size_human": "11.9 KB"
+        },
+        ".gitignore_2": {
+          "count": 3,
+          "size": 879,
+          "size_human": "879.0 B"
+        },
+        ".toc": {
+          "count": 3,
+          "size": 20946,
+          "size_human": "20.5 KB"
+        },
+        ".tm": {
+          "count": 3,
+          "size": 53070,
+          "size_human": "51.8 KB"
+        },
+        ".rst": {
+          "count": 3,
+          "size": 28182,
+          "size_human": "27.5 KB"
+        },
+        ".pem": {
+          "count": 3,
+          "size": 874098,
+          "size_human": "853.6 KB"
+        },
+        ".dist-info__requested": {
+          "count": 3,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".dist-info__requested_2": {
+          "count": 3,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".conf": {
+          "count": 3,
+          "size": 731,
+          "size_human": "731.0 B"
+        },
+        ".ico": {
+          "count": 3,
+          "size": 145100,
+          "size_human": "141.7 KB"
+        },
+        ".mako": {
+          "count": 2,
+          "size": 1322,
+          "size_human": "1.3 KB"
+        },
+        ".patch": {
+          "count": 2,
+          "size": 3155,
+          "size_human": "3.1 KB"
+        },
+        ".mp3": {
+          "count": 2,
+          "size": 100658,
+          "size_human": "98.3 KB"
+        },
+        ".desktop": {
+          "count": 2,
+          "size": 1880,
+          "size_human": "1.8 KB"
+        },
+        ".jpeg": {
+          "count": 2,
+          "size": 102047,
+          "size_human": "99.7 KB"
+        },
+        ".kv1": {
+          "count": 2,
+          "size": 1826,
+          "size_human": "1.8 KB"
+        },
+        ".plist": {
+          "count": 2,
+          "size": 1413,
+          "size_human": "1.4 KB"
+        },
+        ".in": {
+          "count": 2,
+          "size": 118460,
+          "size_human": "115.7 KB"
+        },
+        ".inc": {
+          "count": 2,
+          "size": 9901,
+          "size_human": "9.7 KB"
+        },
+        ".ndjson": {
+          "count": 2,
+          "size": 1555,
+          "size_human": "1.5 KB"
+        },
+        ".eps": {
+          "count": 2,
+          "size": 64697,
+          "size_human": "63.2 KB"
+        },
+        ".jsonc": {
+          "count": 2,
+          "size": 1404,
+          "size_human": "1.4 KB"
+        },
+        ".dist-info__requested_3": {
+          "count": 2,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".save": {
+          "count": 2,
+          "size": 3756,
+          "size_human": "3.7 KB"
+        },
+        ".htm": {
+          "count": 2,
+          "size": 81270,
+          "size_human": "79.4 KB"
+        },
+        ".part02": {
+          "count": 2,
+          "size": 69206016,
+          "size_human": "66.0 MB"
+        },
+        ".mmd": {
+          "count": 1,
+          "size": 1163,
+          "size_human": "1.1 KB"
+        },
+        ".geminiignore": {
+          "count": 1,
+          "size": 278,
+          "size_human": "278.0 B"
+        },
+        ".rtf": {
+          "count": 1,
+          "size": 1690,
+          "size_human": "1.7 KB"
+        },
+        ".gitkeep_2": {
+          "count": 1,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".eml": {
+          "count": 1,
+          "size": 7699,
+          "size_human": "7.5 KB"
+        },
+        ".cmb": {
+          "count": 1,
+          "size": 1111,
+          "size_human": "1.1 KB"
+        },
+        ".psm1": {
+          "count": 1,
+          "size": 9000,
+          "size_human": "8.8 KB"
+        },
+        ".eslintrc": {
+          "count": 1,
+          "size": 162,
+          "size_human": "162.0 B"
+        },
+        ".ejs": {
+          "count": 1,
+          "size": 261,
+          "size_human": "261.0 B"
+        },
+        ".sqlite-wal": {
+          "count": 1,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".terms": {
+          "count": 1,
+          "size": 2307,
+          "size_human": "2.3 KB"
+        },
+        ".editorconfig": {
+          "count": 1,
+          "size": 136,
+          "size_human": "136.0 B"
+        },
+        ".prettierignore": {
+          "count": 1,
+          "size": 12,
+          "size_human": "12.0 B"
+        },
+        ".bmp": {
+          "count": 1,
+          "size": 25818,
+          "size_human": "25.2 KB"
+        },
+        ".snap": {
+          "count": 1,
+          "size": 165,
+          "size_human": "165.0 B"
+        },
+        ".mdc": {
+          "count": 1,
+          "size": 1300,
+          "size_human": "1.3 KB"
+        },
+        ".npmignore": {
+          "count": 1,
+          "size": 83,
+          "size_human": "83.0 B"
+        },
+        ".ocx": {
+          "count": 1,
+          "size": 22564,
+          "size_human": "22.0 KB"
+        },
+        ".jsonld": {
+          "count": 1,
+          "size": 6312,
+          "size_human": "6.2 KB"
+        },
+        ".db": {
+          "count": 1,
+          "size": 1131757568,
+          "size_human": "1.1 GB"
+        },
+        ".part": {
+          "count": 1,
+          "size": 16224895,
+          "size_human": "15.5 MB"
+        },
+        ".1": {
+          "count": 1,
+          "size": 3107887,
+          "size_human": "3.0 MB"
+        },
+        ".part01": {
+          "count": 1,
+          "size": 34603008,
+          "size_human": "33.0 MB"
+        },
+        ".part03": {
+          "count": 1,
+          "size": 34603008,
+          "size_human": "33.0 MB"
+        },
+        ".part04": {
+          "count": 1,
+          "size": 34603008,
+          "size_human": "33.0 MB"
+        },
+        ".sqlite-shm": {
+          "count": 1,
+          "size": 32768,
+          "size_human": "32.0 KB"
+        }
+      },
+      "key_files": [
+        {
+          "name": "Chat_GPT_Export__conversations.json",
+          "size": 1523901676,
+          "size_human": "1.4 GB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\Chat_GPT_Export__conversations.json"
+        },
+        {
+          "name": "litigation_context_20260220_113246.db",
+          "size": 1131757568,
+          "size_human": "1.1 GB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\litigation_context_20260220_113246.db"
+        },
+        {
+          "name": "WizTree_20260125180244.csv",
+          "size": 330953892,
+          "size_human": "315.6 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\WizTree_20260125180244.csv"
+        },
+        {
+          "name": "conversations.json",
+          "size": 236754935,
+          "size_human": "225.8 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\conversations.json"
+        },
+        {
+          "name": "1_desk_capstone_listing.json",
+          "size": 67062966,
+          "size_human": "64.0 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\THISONELitigationOS_preservation_bagit\\LitigationOS_preservation_bagit\\bag1\\data\\1_desk_capstone_listing.json"
+        },
+        {
+          "name": "ETERNAL_SUPERGRAPH_MASTER.json",
+          "size": 54196287,
+          "size_human": "51.7 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__MEEK1_FULL_STACK_REBUILT__L3__drive\\ETERNAL_SUPERGRAPH_MASTER.json"
+        },
+        {
+          "name": "text_lines.sample.json",
+          "size": 50655725,
+          "size_human": "48.3 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\text_lines.sample.json"
+        },
+        {
+          "name": "chat.html.part02",
+          "size": 34603008,
+          "size_human": "33.0 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__PROJECTS___PROBLEMS__MEEK1__OMNI_ME\\raw_sources\\chat.html.part02"
+        },
+        {
+          "name": "conversations.json.part01",
+          "size": 34603008,
+          "size_human": "33.0 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__PROJECTS___PROBLEMS__MEEK1__OMNI_ME\\raw_sources\\conversations.json.part01"
+        },
+        {
+          "name": "conversations.json.part02",
+          "size": 34603008,
+          "size_human": "33.0 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__PROJECTS___PROBLEMS__MEEK1__OMNI_ME\\raw_sources\\conversations.json.part02"
+        },
+        {
+          "name": "conversations.json.part03",
+          "size": 34603008,
+          "size_human": "33.0 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__PROJECTS___PROBLEMS__MEEK1__OMNI_ME\\raw_sources\\conversations.json.part03"
+        },
+        {
+          "name": "conversations.json.part04",
+          "size": 34603008,
+          "size_human": "33.0 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__PROJECTS___PROBLEMS__MEEK1__OMNI_ME\\raw_sources\\conversations.json.part04"
+        },
+        {
+          "name": "rclone-v1.m2rHpGHr.71.2-windows-amd64.zip.part",
+          "size": 16224895,
+          "size_human": "15.5 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\rclone-v1.m2rHpGHr.71.2-windows-amd64.zip.part"
+        },
+        {
+          "name": "5_g_capstone_listing.json",
+          "size": 6809559,
+          "size_human": "6.5 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\THISONELitigationOS_preservation_bagit\\LitigationOS_preservation_bagit\\bag1\\data\\5_g_capstone_listing.json"
+        },
+        {
+          "name": "6_g_capstone_listing.json",
+          "size": 6809559,
+          "size_human": "6.5 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\THISONELitigationOS_preservation_bagit\\LitigationOS_preservation_bagit\\bag1\\data\\6_g_capstone_listing.json"
+        },
+        {
+          "name": "7_g_capstone_listing.json",
+          "size": 6809559,
+          "size_human": "6.5 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\THISONELitigationOS_preservation_bagit\\LitigationOS_preservation_bagit\\bag1\\data\\7_g_capstone_listing.json"
+        },
+        {
+          "name": "_pydantic_core.cp312-win_amd64.pyd",
+          "size": 5436928,
+          "size_human": "5.2 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\_pydantic_core.cp312-win_amd64.pyd"
+        },
+        {
+          "name": "pydantic_core___pydantic_core.cp312-win_amd64.pyd",
+          "size": 5436928,
+          "size_human": "5.2 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\pydantic_core___pydantic_core.cp312-win_amd64.pyd"
+        },
+        {
+          "name": "pydantic_core___pydantic_core.cp312-win_amd64_2.pyd",
+          "size": 5436928,
+          "size_human": "5.2 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\pydantic_core___pydantic_core.cp312-win_amd64_2.pyd"
+        },
+        {
+          "name": "file_0000000023846230bb668bdabbc90895-3a964776-92c2-41ee-9311-34bbbf106a18.wav",
+          "size": 4375278,
+          "size_human": "4.2 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\file_0000000023846230bb668bdabbc90895-3a964776-92c2-41ee-9311-34bbbf106a18.wav"
+        }
+      ],
+      "high_priority_files": [
+        {
+          "name": "litigation_context_20260220_113246.db",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\litigation_context_20260220_113246.db",
+          "size": 1131757568,
+          "size_human": "1.1 GB",
+          "keyword_match": false
+        },
+        {
+          "name": "WizTree_20260125180244.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\WizTree_20260125180244.csv",
+          "size": 330953892,
+          "size_human": "315.6 MB",
+          "keyword_match": false
+        },
+        {
+          "name": "rclone-v1.72.1-windows-amd64__README.txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\rclone-v1.72.1-windows-amd64__README.txt",
+          "size": 2803339,
+          "size_human": "2.7 MB",
+          "keyword_match": false
+        },
+        {
+          "name": "nodes.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\BRAIN\\RUNS\\RUN_20260119_041049_UTC_094c5afd\\graph\\nodes.csv",
+          "size": 2702095,
+          "size_human": "2.6 MB",
+          "keyword_match": false
+        },
+        {
+          "name": "nodes.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\BRAIN\\RUNS\\RUN_20260119_040421_UTC_86c87087\\graph\\nodes.csv",
+          "size": 2604865,
+          "size_human": "2.5 MB",
+          "keyword_match": false
+        },
+        {
+          "name": "REBUTTAL_PACK.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\REBUTTAL_PACK.csv",
+          "size": 1374414,
+          "size_human": "1.3 MB",
+          "keyword_match": true
+        },
+        {
+          "name": "LITIGATION_OS__CAPSTONE__ETERNAL_DRIVE_BRIDGE_20251112_08103__manifest.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ETERNAL_DRIVE_BRIDGE_20251112_08103__manifest.csv",
+          "size": 1022402,
+          "size_human": "998.4 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "CIP.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\CIP.csv",
+          "size": 965865,
+          "size_human": "943.2 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "COE.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\COE.csv",
+          "size": 910216,
+          "size_human": "888.9 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "Branch · Superpin Codex Instructions-2.txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\VERSIONS\\v0008\\SOURCES\\extracted\\Branch · Superpin Codex Instructions-2.txt",
+          "size": 855225,
+          "size_human": "835.2 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "edges.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\BRAIN\\RUNS\\RUN_20260119_041049_UTC_094c5afd\\graph\\edges.csv",
+          "size": 632044,
+          "size_human": "617.2 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "Superpin Codex Instructions.txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\VERSIONS\\v0008\\SOURCES\\extracted\\Superpin Codex Instructions.txt",
+          "size": 595140,
+          "size_human": "581.2 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "edges.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\BRAIN\\RUNS\\RUN_20260119_040421_UTC_86c87087\\graph\\edges.csv",
+          "size": 577096,
+          "size_human": "563.6 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "FORM_INDEX_ALL.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\FORM_INDEX_ALL.csv",
+          "size": 292416,
+          "size_human": "285.6 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "MEEK234_CASE_CHRONOLOGY_APPEND6_PERMAFIX9R5_20260209_060430 (1).txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\txt\\MEEK234_CASE_CHRONOLOGY_APPEND6_PERMAFIX9R5_20260209_060430 (1).txt",
+          "size": 163447,
+          "size_human": "159.6 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "manifest_files.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__TRAVEL_BUNDLE_v2_ANALYSIS_APPEND\\out\\manifest_files.csv",
+          "size": 144531,
+          "size_human": "141.1 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "EVERY LAST DETAIL DATES USE ME AMAZING 10000000xxxxxx.docx",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\EVERY LAST DETAIL DATES USE ME AMAZING 10000000xxxxxx.docx",
+          "size": 128444,
+          "size_human": "125.4 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "eternal_codex_mapping_full.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\eternal_codex_mapping_full.csv",
+          "size": 117743,
+          "size_human": "115.0 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "GRAND SUMMARY EXPARTE PARENTING TIME VIOLATIONS(1).txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\GRAND SUMMARY EXPARTE PARENTING TIME VIOLATIONS(1).txt",
+          "size": 76537,
+          "size_human": "74.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0020.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0020.pdf",
+          "size": 64988,
+          "size_human": "63.5 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0020.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0020.pdf",
+          "size": 64988,
+          "size_human": "63.5 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0013.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0013.pdf",
+          "size": 64254,
+          "size_human": "62.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0013.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0013.pdf",
+          "size": 64254,
+          "size_human": "62.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0013.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0013.pdf",
+          "size": 64254,
+          "size_human": "62.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0022.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0022.pdf",
+          "size": 64242,
+          "size_human": "62.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0022.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0022.pdf",
+          "size": 64242,
+          "size_human": "62.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0022.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0022.pdf",
+          "size": 64242,
+          "size_human": "62.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "healthwest2ndscanned_0001.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\scanned_300\\healthwest2ndscanned_0001.pdf",
+          "size": 62567,
+          "size_human": "61.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "healthwest2ndscanned_0001.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDhealthwest2ndscanned_0006\\healthwest2ndscanned_0001.pdf",
+          "size": 62567,
+          "size_human": "61.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "healthwest2ndscanned_0001.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDhealthwest2ndscanned_0006__1_\\healthwest2ndscanned_0001.pdf",
+          "size": 62567,
+          "size_human": "61.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "healthwest2ndscanned_0001.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\12_healthwest_2nd\\healthwest2ndscanned_0001.pdf",
+          "size": 62567,
+          "size_human": "61.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "healthwest2ndscanned_0001.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDhealthwest2ndscanned_0006\\healthwest2ndscanned_0001.pdf",
+          "size": 62567,
+          "size_human": "61.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "healthwest2ndscanned_0001.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDhealthwest2ndscanned_0006__1\\healthwest2ndscanned_0001.pdf",
+          "size": 62567,
+          "size_human": "61.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0021.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0021.pdf",
+          "size": 62275,
+          "size_human": "60.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0021.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0021.pdf",
+          "size": 62275,
+          "size_human": "60.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0021.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0021.pdf",
+          "size": 62275,
+          "size_human": "60.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0006.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0006.pdf",
+          "size": 62265,
+          "size_human": "60.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0006.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0006.pdf",
+          "size": 62265,
+          "size_human": "60.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0006.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0006.pdf",
+          "size": 62265,
+          "size_human": "60.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0015.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0015.pdf",
+          "size": 60475,
+          "size_human": "59.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0015.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0015.pdf",
+          "size": 60475,
+          "size_human": "59.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0015.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0015.pdf",
+          "size": 60475,
+          "size_human": "59.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0024.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0024.pdf",
+          "size": 55184,
+          "size_human": "53.9 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0024.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0024.pdf",
+          "size": 55184,
+          "size_human": "53.9 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0024.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0024.pdf",
+          "size": 55184,
+          "size_human": "53.9 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0025.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0025.pdf",
+          "size": 55124,
+          "size_human": "53.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0025.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0025.pdf",
+          "size": 55124,
+          "size_human": "53.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0025.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0025.pdf",
+          "size": 55124,
+          "size_human": "53.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0004.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0004.pdf",
+          "size": 53964,
+          "size_human": "52.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0004.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0004.pdf",
+          "size": 53964,
+          "size_human": "52.7 KB",
+          "keyword_match": true
+        }
+      ]
+    },
+    "D:\\LitigationOS_Extracted\\evidence_zips": {
+      "path": "D:\\LitigationOS_Extracted\\evidence_zips",
+      "exists": true,
+      "total_files": 13874,
+      "total_size_bytes": 4043693882,
+      "total_size_human": "3.8 GB",
+      "subdirectories": 436,
+      "extensions": {
+        ".py": {
+          "count": 3970,
+          "size": 36811926,
+          "size_human": "35.1 MB"
+        },
+        ".pyc": {
+          "count": 2312,
+          "size": 30463220,
+          "size_human": "29.1 MB"
+        },
+        ".svg": {
+          "count": 1274,
+          "size": 1843885,
+          "size_human": "1.8 MB"
+        },
+        ".json": {
+          "count": 1210,
+          "size": 1962544948,
+          "size_human": "1.8 GB"
+        },
+        "(no ext)": {
+          "count": 858,
+          "size": 24695854,
+          "size_human": "23.6 MB"
+        },
+        ".ts": {
+          "count": 628,
+          "size": 3188379,
+          "size_human": "3.0 MB"
+        },
+        ".txt": {
+          "count": 350,
+          "size": 11077118,
+          "size_human": "10.6 MB"
+        },
+        ".png": {
+          "count": 347,
+          "size": 122467325,
+          "size_human": "116.8 MB"
+        },
+        ".pdf": {
+          "count": 342,
+          "size": 18007704,
+          "size_human": "17.2 MB"
+        },
+        ".md": {
+          "count": 222,
+          "size": 3113226,
+          "size_human": "3.0 MB"
+        },
+        ".rs": {
+          "count": 214,
+          "size": 1841475,
+          "size_human": "1.8 MB"
+        },
+        ".csv": {
+          "count": 166,
+          "size": 345215581,
+          "size_human": "329.2 MB"
+        },
+        ".cmd": {
+          "count": 158,
+          "size": 71816,
+          "size_human": "70.1 KB"
+        },
+        ".mdx": {
+          "count": 136,
+          "size": 985889,
+          "size_human": "962.8 KB"
+        },
+        ".css": {
+          "count": 117,
+          "size": 535656,
+          "size_human": "523.1 KB"
+        },
+        ".jsonl": {
+          "count": 94,
+          "size": 19186744,
+          "size_human": "18.3 MB"
+        },
+        ".jpg": {
+          "count": 87,
+          "size": 40987570,
+          "size_human": "39.1 MB"
+        },
+        ".enc": {
+          "count": 80,
+          "size": 1271702,
+          "size_human": "1.2 MB"
+        },
+        ".typed": {
+          "count": 78,
+          "size": 1038,
+          "size_human": "1.0 KB"
+        },
+        ".wav": {
+          "count": 77,
+          "size": 61662966,
+          "size_human": "58.8 MB"
+        },
+        ".ftl": {
+          "count": 72,
+          "size": 1478622,
+          "size_human": "1.4 MB"
+        },
+        ".ps1": {
+          "count": 69,
+          "size": 422843,
+          "size_human": "412.9 KB"
+        },
+        ".tcl": {
+          "count": 68,
+          "size": 827343,
+          "size_human": "808.0 KB"
+        },
+        ".js": {
+          "count": 55,
+          "size": 279151,
+          "size_human": "272.6 KB"
+        },
+        ".sh": {
+          "count": 52,
+          "size": 112091,
+          "size_human": "109.5 KB"
+        },
+        ".bat": {
+          "count": 41,
+          "size": 63292,
+          "size_human": "61.8 KB"
+        },
+        ".exe": {
+          "count": 40,
+          "size": 5491323,
+          "size_human": "5.2 MB"
+        },
+        ".cypher": {
+          "count": 36,
+          "size": 34943,
+          "size_human": "34.1 KB"
+        },
+        ".woff2": {
+          "count": 36,
+          "size": 464567,
+          "size_human": "453.7 KB"
+        },
+        ".slint": {
+          "count": 34,
+          "size": 204046,
+          "size_human": "199.3 KB"
+        },
+        ".toml": {
+          "count": 33,
+          "size": 26965,
+          "size_human": "26.3 KB"
+        },
+        ".docx": {
+          "count": 28,
+          "size": 1161889,
+          "size_human": "1.1 MB"
+        },
+        ".gitignore": {
+          "count": 26,
+          "size": 10128,
+          "size_human": "9.9 KB"
+        },
+        ".log": {
+          "count": 24,
+          "size": 24378,
+          "size_human": "23.8 KB"
+        },
+        ".yaml": {
+          "count": 20,
+          "size": 303212,
+          "size_human": "296.1 KB"
+        },
+        ".yml": {
+          "count": 19,
+          "size": 231956,
+          "size_human": "226.5 KB"
+        },
+        ".xml": {
+          "count": 18,
+          "size": 437825,
+          "size_human": "427.6 KB"
+        },
+        ".tsx": {
+          "count": 17,
+          "size": 567681,
+          "size_human": "554.4 KB"
+        },
+        ".jsx": {
+          "count": 17,
+          "size": 97642,
+          "size_human": "95.4 KB"
+        },
+        ".dot": {
+          "count": 14,
+          "size": 184602,
+          "size_human": "180.3 KB"
+        },
+        ".sql": {
+          "count": 14,
+          "size": 6064,
+          "size_human": "5.9 KB"
+        },
+        ".dist-info__installer": {
+          "count": 14,
+          "size": 56,
+          "size_human": "56.0 B"
+        },
+        ".dist-info__metadata": {
+          "count": 14,
+          "size": 204182,
+          "size_human": "199.4 KB"
+        },
+        ".dist-info__record": {
+          "count": 14,
+          "size": 119666,
+          "size_human": "116.9 KB"
+        },
+        ".dist-info__wheel": {
+          "count": 14,
+          "size": 1236,
+          "size_human": "1.2 KB"
+        },
+        ".dist-info__installer_2": {
+          "count": 14,
+          "size": 56,
+          "size_human": "56.0 B"
+        },
+        ".dist-info__metadata_2": {
+          "count": 14,
+          "size": 204182,
+          "size_human": "199.4 KB"
+        },
+        ".dist-info__record_2": {
+          "count": 14,
+          "size": 119666,
+          "size_human": "116.9 KB"
+        },
+        ".dist-info__wheel_2": {
+          "count": 14,
+          "size": 1236,
+          "size_human": "1.2 KB"
+        },
+        ".dist-info__installer_3": {
+          "count": 13,
+          "size": 52,
+          "size_human": "52.0 B"
+        },
+        ".dist-info__metadata_3": {
+          "count": 13,
+          "size": 189136,
+          "size_human": "184.7 KB"
+        },
+        ".dist-info__record_3": {
+          "count": 13,
+          "size": 118864,
+          "size_human": "116.1 KB"
+        },
+        ".dist-info__wheel_3": {
+          "count": 13,
+          "size": 1149,
+          "size_human": "1.1 KB"
+        },
+        ".gif": {
+          "count": 11,
+          "size": 126594,
+          "size_human": "123.6 KB"
+        },
+        ".aac": {
+          "count": 11,
+          "size": 68736,
+          "size_human": "67.1 KB"
+        },
+        ".mjs": {
+          "count": 10,
+          "size": 33436,
+          "size_human": "32.7 KB"
+        },
+        ".lock": {
+          "count": 10,
+          "size": 80134,
+          "size_human": "78.3 KB"
+        },
+        ".example": {
+          "count": 9,
+          "size": 8249,
+          "size_human": "8.1 KB"
+        },
+        ".sqlite": {
+          "count": 9,
+          "size": 208896,
+          "size_human": "204.0 KB"
+        },
+        ".pyd": {
+          "count": 9,
+          "size": 16687672,
+          "size_human": "15.9 MB"
+        },
+        ".ui": {
+          "count": 8,
+          "size": 103091,
+          "size_human": "100.7 KB"
+        },
+        ".spec": {
+          "count": 7,
+          "size": 6093,
+          "size_human": "6.0 KB"
+        },
+        ".ipynb": {
+          "count": 7,
+          "size": 119294,
+          "size_human": "116.5 KB"
+        },
+        ".html": {
+          "count": 7,
+          "size": 310215,
+          "size_human": "302.9 KB"
+        },
+        ".nix": {
+          "count": 6,
+          "size": 15885,
+          "size_human": "15.5 KB"
+        },
+        ".astro": {
+          "count": 6,
+          "size": 24733,
+          "size_human": "24.2 KB"
+        },
+        ".apache": {
+          "count": 6,
+          "size": 61044,
+          "size_human": "59.6 KB"
+        },
+        ".bsd": {
+          "count": 6,
+          "size": 8064,
+          "size_human": "7.9 KB"
+        },
+        ".pyi": {
+          "count": 6,
+          "size": 166122,
+          "size_human": "162.2 KB"
+        },
+        ".ini": {
+          "count": 5,
+          "size": 1407,
+          "size_human": "1.4 KB"
+        },
+        ".cfg": {
+          "count": 5,
+          "size": 1198,
+          "size_human": "1.2 KB"
+        },
+        ".rels": {
+          "count": 5,
+          "size": 3505,
+          "size_human": "3.4 KB"
+        },
+        ".lnk": {
+          "count": 5,
+          "size": 6741,
+          "size_human": "6.6 KB"
+        },
+        ".webmanifest": {
+          "count": 5,
+          "size": 617,
+          "size_human": "617.0 B"
+        },
+        ".ttf": {
+          "count": 5,
+          "size": 432900,
+          "size_human": "422.8 KB"
+        },
+        ".wxs": {
+          "count": 4,
+          "size": 2078,
+          "size_human": "2.0 KB"
+        },
+        ".gitkeep": {
+          "count": 4,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".ds_store": {
+          "count": 3,
+          "size": 6388,
+          "size_human": "6.2 KB"
+        },
+        ".mts": {
+          "count": 3,
+          "size": 12155,
+          "size_human": "11.9 KB"
+        },
+        ".gitignore_2": {
+          "count": 3,
+          "size": 879,
+          "size_human": "879.0 B"
+        },
+        ".toc": {
+          "count": 3,
+          "size": 20946,
+          "size_human": "20.5 KB"
+        },
+        ".tm": {
+          "count": 3,
+          "size": 53070,
+          "size_human": "51.8 KB"
+        },
+        ".rst": {
+          "count": 3,
+          "size": 28182,
+          "size_human": "27.5 KB"
+        },
+        ".pem": {
+          "count": 3,
+          "size": 874098,
+          "size_human": "853.6 KB"
+        },
+        ".dist-info__requested": {
+          "count": 3,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".dist-info__requested_2": {
+          "count": 3,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".conf": {
+          "count": 3,
+          "size": 731,
+          "size_human": "731.0 B"
+        },
+        ".ico": {
+          "count": 3,
+          "size": 145100,
+          "size_human": "141.7 KB"
+        },
+        ".mako": {
+          "count": 2,
+          "size": 1322,
+          "size_human": "1.3 KB"
+        },
+        ".patch": {
+          "count": 2,
+          "size": 3155,
+          "size_human": "3.1 KB"
+        },
+        ".mp3": {
+          "count": 2,
+          "size": 100658,
+          "size_human": "98.3 KB"
+        },
+        ".desktop": {
+          "count": 2,
+          "size": 1880,
+          "size_human": "1.8 KB"
+        },
+        ".jpeg": {
+          "count": 2,
+          "size": 102047,
+          "size_human": "99.7 KB"
+        },
+        ".kv1": {
+          "count": 2,
+          "size": 1826,
+          "size_human": "1.8 KB"
+        },
+        ".plist": {
+          "count": 2,
+          "size": 1413,
+          "size_human": "1.4 KB"
+        },
+        ".in": {
+          "count": 2,
+          "size": 118460,
+          "size_human": "115.7 KB"
+        },
+        ".inc": {
+          "count": 2,
+          "size": 9901,
+          "size_human": "9.7 KB"
+        },
+        ".ndjson": {
+          "count": 2,
+          "size": 1555,
+          "size_human": "1.5 KB"
+        },
+        ".eps": {
+          "count": 2,
+          "size": 64697,
+          "size_human": "63.2 KB"
+        },
+        ".jsonc": {
+          "count": 2,
+          "size": 1404,
+          "size_human": "1.4 KB"
+        },
+        ".dist-info__requested_3": {
+          "count": 2,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".save": {
+          "count": 2,
+          "size": 3756,
+          "size_human": "3.7 KB"
+        },
+        ".htm": {
+          "count": 2,
+          "size": 81270,
+          "size_human": "79.4 KB"
+        },
+        ".part02": {
+          "count": 2,
+          "size": 69206016,
+          "size_human": "66.0 MB"
+        },
+        ".mmd": {
+          "count": 1,
+          "size": 1163,
+          "size_human": "1.1 KB"
+        },
+        ".geminiignore": {
+          "count": 1,
+          "size": 278,
+          "size_human": "278.0 B"
+        },
+        ".rtf": {
+          "count": 1,
+          "size": 1690,
+          "size_human": "1.7 KB"
+        },
+        ".gitkeep_2": {
+          "count": 1,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".eml": {
+          "count": 1,
+          "size": 7699,
+          "size_human": "7.5 KB"
+        },
+        ".cmb": {
+          "count": 1,
+          "size": 1111,
+          "size_human": "1.1 KB"
+        },
+        ".psm1": {
+          "count": 1,
+          "size": 9000,
+          "size_human": "8.8 KB"
+        },
+        ".eslintrc": {
+          "count": 1,
+          "size": 162,
+          "size_human": "162.0 B"
+        },
+        ".ejs": {
+          "count": 1,
+          "size": 261,
+          "size_human": "261.0 B"
+        },
+        ".sqlite-wal": {
+          "count": 1,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".terms": {
+          "count": 1,
+          "size": 2307,
+          "size_human": "2.3 KB"
+        },
+        ".editorconfig": {
+          "count": 1,
+          "size": 136,
+          "size_human": "136.0 B"
+        },
+        ".prettierignore": {
+          "count": 1,
+          "size": 12,
+          "size_human": "12.0 B"
+        },
+        ".bmp": {
+          "count": 1,
+          "size": 25818,
+          "size_human": "25.2 KB"
+        },
+        ".snap": {
+          "count": 1,
+          "size": 165,
+          "size_human": "165.0 B"
+        },
+        ".mdc": {
+          "count": 1,
+          "size": 1300,
+          "size_human": "1.3 KB"
+        },
+        ".npmignore": {
+          "count": 1,
+          "size": 83,
+          "size_human": "83.0 B"
+        },
+        ".ocx": {
+          "count": 1,
+          "size": 22564,
+          "size_human": "22.0 KB"
+        },
+        ".jsonld": {
+          "count": 1,
+          "size": 6312,
+          "size_human": "6.2 KB"
+        },
+        ".db": {
+          "count": 1,
+          "size": 1131757568,
+          "size_human": "1.1 GB"
+        },
+        ".part": {
+          "count": 1,
+          "size": 16224895,
+          "size_human": "15.5 MB"
+        },
+        ".1": {
+          "count": 1,
+          "size": 3107887,
+          "size_human": "3.0 MB"
+        },
+        ".part01": {
+          "count": 1,
+          "size": 34603008,
+          "size_human": "33.0 MB"
+        },
+        ".part03": {
+          "count": 1,
+          "size": 34603008,
+          "size_human": "33.0 MB"
+        },
+        ".part04": {
+          "count": 1,
+          "size": 34603008,
+          "size_human": "33.0 MB"
+        },
+        ".sqlite-shm": {
+          "count": 1,
+          "size": 32768,
+          "size_human": "32.0 KB"
+        }
+      },
+      "key_files": [
+        {
+          "name": "Chat_GPT_Export__conversations.json",
+          "size": 1523901676,
+          "size_human": "1.4 GB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\Chat_GPT_Export__conversations.json"
+        },
+        {
+          "name": "litigation_context_20260220_113246.db",
+          "size": 1131757568,
+          "size_human": "1.1 GB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\litigation_context_20260220_113246.db"
+        },
+        {
+          "name": "WizTree_20260125180244.csv",
+          "size": 330953892,
+          "size_human": "315.6 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\WizTree_20260125180244.csv"
+        },
+        {
+          "name": "conversations.json",
+          "size": 236754935,
+          "size_human": "225.8 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\conversations.json"
+        },
+        {
+          "name": "1_desk_capstone_listing.json",
+          "size": 67062966,
+          "size_human": "64.0 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\THISONELitigationOS_preservation_bagit\\LitigationOS_preservation_bagit\\bag1\\data\\1_desk_capstone_listing.json"
+        },
+        {
+          "name": "ETERNAL_SUPERGRAPH_MASTER.json",
+          "size": 54196287,
+          "size_human": "51.7 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__MEEK1_FULL_STACK_REBUILT__L3__drive\\ETERNAL_SUPERGRAPH_MASTER.json"
+        },
+        {
+          "name": "text_lines.sample.json",
+          "size": 50655725,
+          "size_human": "48.3 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\text_lines.sample.json"
+        },
+        {
+          "name": "chat.html.part02",
+          "size": 34603008,
+          "size_human": "33.0 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__PROJECTS___PROBLEMS__MEEK1__OMNI_ME\\raw_sources\\chat.html.part02"
+        },
+        {
+          "name": "conversations.json.part01",
+          "size": 34603008,
+          "size_human": "33.0 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__PROJECTS___PROBLEMS__MEEK1__OMNI_ME\\raw_sources\\conversations.json.part01"
+        },
+        {
+          "name": "conversations.json.part02",
+          "size": 34603008,
+          "size_human": "33.0 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__PROJECTS___PROBLEMS__MEEK1__OMNI_ME\\raw_sources\\conversations.json.part02"
+        },
+        {
+          "name": "conversations.json.part03",
+          "size": 34603008,
+          "size_human": "33.0 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__PROJECTS___PROBLEMS__MEEK1__OMNI_ME\\raw_sources\\conversations.json.part03"
+        },
+        {
+          "name": "conversations.json.part04",
+          "size": 34603008,
+          "size_human": "33.0 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__PROJECTS___PROBLEMS__MEEK1__OMNI_ME\\raw_sources\\conversations.json.part04"
+        },
+        {
+          "name": "rclone-v1.m2rHpGHr.71.2-windows-amd64.zip.part",
+          "size": 16224895,
+          "size_human": "15.5 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\rclone-v1.m2rHpGHr.71.2-windows-amd64.zip.part"
+        },
+        {
+          "name": "5_g_capstone_listing.json",
+          "size": 6809559,
+          "size_human": "6.5 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\THISONELitigationOS_preservation_bagit\\LitigationOS_preservation_bagit\\bag1\\data\\5_g_capstone_listing.json"
+        },
+        {
+          "name": "6_g_capstone_listing.json",
+          "size": 6809559,
+          "size_human": "6.5 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\THISONELitigationOS_preservation_bagit\\LitigationOS_preservation_bagit\\bag1\\data\\6_g_capstone_listing.json"
+        },
+        {
+          "name": "7_g_capstone_listing.json",
+          "size": 6809559,
+          "size_human": "6.5 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\THISONELitigationOS_preservation_bagit\\LitigationOS_preservation_bagit\\bag1\\data\\7_g_capstone_listing.json"
+        },
+        {
+          "name": "_pydantic_core.cp312-win_amd64.pyd",
+          "size": 5436928,
+          "size_human": "5.2 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\_pydantic_core.cp312-win_amd64.pyd"
+        },
+        {
+          "name": "pydantic_core___pydantic_core.cp312-win_amd64.pyd",
+          "size": 5436928,
+          "size_human": "5.2 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\pydantic_core___pydantic_core.cp312-win_amd64.pyd"
+        },
+        {
+          "name": "pydantic_core___pydantic_core.cp312-win_amd64_2.pyd",
+          "size": 5436928,
+          "size_human": "5.2 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\pydantic_core___pydantic_core.cp312-win_amd64_2.pyd"
+        },
+        {
+          "name": "file_0000000023846230bb668bdabbc90895-3a964776-92c2-41ee-9311-34bbbf106a18.wav",
+          "size": 4375278,
+          "size_human": "4.2 MB",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\file_0000000023846230bb668bdabbc90895-3a964776-92c2-41ee-9311-34bbbf106a18.wav"
+        }
+      ],
+      "high_priority_files": [
+        {
+          "name": "litigation_context_20260220_113246.db",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\litigation_context_20260220_113246.db",
+          "size": 1131757568,
+          "size_human": "1.1 GB",
+          "keyword_match": false
+        },
+        {
+          "name": "WizTree_20260125180244.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\WizTree_20260125180244.csv",
+          "size": 330953892,
+          "size_human": "315.6 MB",
+          "keyword_match": false
+        },
+        {
+          "name": "rclone-v1.72.1-windows-amd64__README.txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\rclone-v1.72.1-windows-amd64__README.txt",
+          "size": 2803339,
+          "size_human": "2.7 MB",
+          "keyword_match": false
+        },
+        {
+          "name": "nodes.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\BRAIN\\RUNS\\RUN_20260119_041049_UTC_094c5afd\\graph\\nodes.csv",
+          "size": 2702095,
+          "size_human": "2.6 MB",
+          "keyword_match": false
+        },
+        {
+          "name": "nodes.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\BRAIN\\RUNS\\RUN_20260119_040421_UTC_86c87087\\graph\\nodes.csv",
+          "size": 2604865,
+          "size_human": "2.5 MB",
+          "keyword_match": false
+        },
+        {
+          "name": "REBUTTAL_PACK.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\REBUTTAL_PACK.csv",
+          "size": 1374414,
+          "size_human": "1.3 MB",
+          "keyword_match": true
+        },
+        {
+          "name": "LITIGATION_OS__CAPSTONE__ETERNAL_DRIVE_BRIDGE_20251112_08103__manifest.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ETERNAL_DRIVE_BRIDGE_20251112_08103__manifest.csv",
+          "size": 1022402,
+          "size_human": "998.4 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "CIP.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\CIP.csv",
+          "size": 965865,
+          "size_human": "943.2 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "COE.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\COE.csv",
+          "size": 910216,
+          "size_human": "888.9 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "Branch · Superpin Codex Instructions-2.txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\VERSIONS\\v0008\\SOURCES\\extracted\\Branch · Superpin Codex Instructions-2.txt",
+          "size": 855225,
+          "size_human": "835.2 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "edges.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\BRAIN\\RUNS\\RUN_20260119_041049_UTC_094c5afd\\graph\\edges.csv",
+          "size": 632044,
+          "size_human": "617.2 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "Superpin Codex Instructions.txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\VERSIONS\\v0008\\SOURCES\\extracted\\Superpin Codex Instructions.txt",
+          "size": 595140,
+          "size_human": "581.2 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "edges.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\BRAIN\\RUNS\\RUN_20260119_040421_UTC_86c87087\\graph\\edges.csv",
+          "size": 577096,
+          "size_human": "563.6 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "FORM_INDEX_ALL.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\FORM_INDEX_ALL.csv",
+          "size": 292416,
+          "size_human": "285.6 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "MEEK234_CASE_CHRONOLOGY_APPEND6_PERMAFIX9R5_20260209_060430 (1).txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\txt\\MEEK234_CASE_CHRONOLOGY_APPEND6_PERMAFIX9R5_20260209_060430 (1).txt",
+          "size": 163447,
+          "size_human": "159.6 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "manifest_files.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__TRAVEL_BUNDLE_v2_ANALYSIS_APPEND\\out\\manifest_files.csv",
+          "size": 144531,
+          "size_human": "141.1 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "EVERY LAST DETAIL DATES USE ME AMAZING 10000000xxxxxx.docx",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\EVERY LAST DETAIL DATES USE ME AMAZING 10000000xxxxxx.docx",
+          "size": 128444,
+          "size_human": "125.4 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "eternal_codex_mapping_full.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\eternal_codex_mapping_full.csv",
+          "size": 117743,
+          "size_human": "115.0 KB",
+          "keyword_match": false
+        },
+        {
+          "name": "GRAND SUMMARY EXPARTE PARENTING TIME VIOLATIONS(1).txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\GRAND SUMMARY EXPARTE PARENTING TIME VIOLATIONS(1).txt",
+          "size": 76537,
+          "size_human": "74.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0020.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0020.pdf",
+          "size": 64988,
+          "size_human": "63.5 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0020.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0020.pdf",
+          "size": 64988,
+          "size_human": "63.5 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0013.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0013.pdf",
+          "size": 64254,
+          "size_human": "62.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0013.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0013.pdf",
+          "size": 64254,
+          "size_human": "62.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0013.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0013.pdf",
+          "size": 64254,
+          "size_human": "62.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0022.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0022.pdf",
+          "size": 64242,
+          "size_human": "62.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0022.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0022.pdf",
+          "size": 64242,
+          "size_human": "62.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0022.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0022.pdf",
+          "size": 64242,
+          "size_human": "62.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "healthwest2ndscanned_0001.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\scanned_300\\healthwest2ndscanned_0001.pdf",
+          "size": 62567,
+          "size_human": "61.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "healthwest2ndscanned_0001.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDhealthwest2ndscanned_0006\\healthwest2ndscanned_0001.pdf",
+          "size": 62567,
+          "size_human": "61.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "healthwest2ndscanned_0001.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDhealthwest2ndscanned_0006__1_\\healthwest2ndscanned_0001.pdf",
+          "size": 62567,
+          "size_human": "61.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "healthwest2ndscanned_0001.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\12_healthwest_2nd\\healthwest2ndscanned_0001.pdf",
+          "size": 62567,
+          "size_human": "61.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "healthwest2ndscanned_0001.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDhealthwest2ndscanned_0006\\healthwest2ndscanned_0001.pdf",
+          "size": 62567,
+          "size_human": "61.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "healthwest2ndscanned_0001.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDhealthwest2ndscanned_0006__1\\healthwest2ndscanned_0001.pdf",
+          "size": 62567,
+          "size_human": "61.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0021.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0021.pdf",
+          "size": 62275,
+          "size_human": "60.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0021.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0021.pdf",
+          "size": 62275,
+          "size_human": "60.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0021.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0021.pdf",
+          "size": 62275,
+          "size_human": "60.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0006.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0006.pdf",
+          "size": 62265,
+          "size_human": "60.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0006.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0006.pdf",
+          "size": 62265,
+          "size_human": "60.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0006.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0006.pdf",
+          "size": 62265,
+          "size_human": "60.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0015.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0015.pdf",
+          "size": 60475,
+          "size_human": "59.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0015.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0015.pdf",
+          "size": 60475,
+          "size_human": "59.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0015.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0015.pdf",
+          "size": 60475,
+          "size_human": "59.1 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0024.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0024.pdf",
+          "size": 55184,
+          "size_human": "53.9 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0024.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0024.pdf",
+          "size": 55184,
+          "size_human": "53.9 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0024.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0024.pdf",
+          "size": 55184,
+          "size_human": "53.9 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0025.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0025.pdf",
+          "size": 55124,
+          "size_human": "53.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0025.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\14_rusco_martini_emails\\ruscomartiniemailsscannd_0025.pdf",
+          "size": 55124,
+          "size_human": "53.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0025.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0025.pdf",
+          "size": 55124,
+          "size_human": "53.8 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0004.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__SCANNED_EVIDENCE__ANALYSIS\\ANALYSIS\\EXTRACTED\\NESTED_FROM_SCANNED300\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0004.pdf",
+          "size": 53964,
+          "size_human": "52.7 KB",
+          "keyword_match": true
+        },
+        {
+          "name": "ruscomartiniemailsscannd_0004.pdf",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\SCANNEDruscomartiniemailsscannd_0028\\ruscomartiniemailsscannd_0004.pdf",
+          "size": 53964,
+          "size_human": "52.7 KB",
+          "keyword_match": true
+        }
+      ]
+    },
+    "D:\\LITIGATIONOS_DATA": {
+      "path": "D:\\LITIGATIONOS_DATA",
+      "exists": true,
+      "total_files": 25,
+      "total_size_bytes": 1042311,
+      "total_size_human": "1017.9 KB",
+      "subdirectories": 0,
+      "extensions": {
+        ".txt": {
+          "count": 17,
+          "size": 735935,
+          "size_human": "718.7 KB"
+        },
+        ".docx": {
+          "count": 6,
+          "size": 230895,
+          "size_human": "225.5 KB"
+        },
+        ".md": {
+          "count": 2,
+          "size": 75481,
+          "size_human": "73.7 KB"
+        }
+      },
+      "key_files": [
+        {
+          "name": "generate_superset.py.txt",
+          "size": 64675,
+          "size_human": "63.2 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\generate_superset.py.txt"
+        },
+        {
+          "name": "SuperBloom_ERD_Superset_v2026-01-21.6.json.txt",
+          "size": 60006,
+          "size_human": "58.6 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\SuperBloom_ERD_Superset_v2026-01-21.6.json.txt"
+        },
+        {
+          "name": "SuperBloom_ERD_Superset_v2026-01-21.6_2026_01_23_11_06_29_UTC_.json.txt",
+          "size": 60006,
+          "size_human": "58.6 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\SuperBloom_ERD_Superset_v2026-01-21.6_2026_01_23_11_06_29_UTC_.json.txt"
+        },
+        {
+          "name": "ARGUMENT2.txt",
+          "size": 56371,
+          "size_human": "55.0 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\ARGUMENT2.txt"
+        },
+        {
+          "name": "20260209_0039_CASE_CHRONOLOGY_APPEND_MASSIVEEEE.md.txt",
+          "size": 52489,
+          "size_human": "51.3 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\20260209_0039_CASE_CHRONOLOGY_APPEND_MASSIVEEEE.md.txt"
+        },
+        {
+          "name": "fwdexpartepack_analysis.txt.txt",
+          "size": 47325,
+          "size_human": "46.2 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\fwdexpartepack_analysis.txt.txt"
+        },
+        {
+          "name": "DELTA_COMPREHENSIVE_LEGAL_ANALYSIS_FINAL.md",
+          "size": 43733,
+          "size_human": "42.7 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\DELTA_COMPREHENSIVE_LEGAL_ANALYSIS_FINAL.md"
+        },
+        {
+          "name": "build_omega.py.txt",
+          "size": 43203,
+          "size_human": "42.2 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\build_omega.py.txt"
+        },
+        {
+          "name": "COA_ORIGINAL_ACTION_SUPERINTENDING_CONTROL_V2.docx",
+          "size": 40534,
+          "size_human": "39.6 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\COA_ORIGINAL_ACTION_SUPERINTENDING_CONTROL_V2.docx"
+        },
+        {
+          "name": "MSC_ORIGINAL_ACTION_SUPERINTENDING_CONTROL_V2.docx",
+          "size": 39620,
+          "size_human": "38.7 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\MSC_ORIGINAL_ACTION_SUPERINTENDING_CONTROL_V2.docx"
+        },
+        {
+          "name": "jtccoa.txt",
+          "size": 39208,
+          "size_human": "38.3 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\jtccoa.txt"
+        },
+        {
+          "name": "20260209_0018_CASE_CHRONOLOGY_APPEND.md.txt",
+          "size": 38144,
+          "size_human": "37.2 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\20260209_0018_CASE_CHRONOLOGY_APPEND.md.txt"
+        },
+        {
+          "name": "APPENDIX_A_RECORD_CHRONOLOGY_V2.docx",
+          "size": 37988,
+          "size_human": "37.1 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\APPENDIX_A_RECORD_CHRONOLOGY_V2.docx"
+        },
+        {
+          "name": "APPENDIX_B_FORMS_POINTERS_V2.docx",
+          "size": 37897,
+          "size_human": "37.0 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\APPENDIX_B_FORMS_POINTERS_V2.docx"
+        },
+        {
+          "name": "MEEK2_2024-001507-DC_Verified_Statement_Inability_To_Pay_Bond.docx",
+          "size": 37463,
+          "size_human": "36.6 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\MEEK2_2024-001507-DC_Verified_Statement_Inability_To_Pay_Bond.docx"
+        },
+        {
+          "name": "APPENDIX_C_AUTHORITY_SHORTLIST_V2.docx",
+          "size": 37393,
+          "size_human": "36.5 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\APPENDIX_C_AUTHORITY_SHORTLIST_V2.docx"
+        },
+        {
+          "name": "CASE_CHRONOLOGY_PROCEEDING_MAP_APPEND6_APPENDED_massiveeee_r1_20260209_0341.html.txt",
+          "size": 36548,
+          "size_human": "35.7 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\CASE_CHRONOLOGY_PROCEEDING_MAP_APPEND6_APPENDED_massiveeee_r1_20260209_0341.html.txt"
+        },
+        {
+          "name": "CASE_CHRONOLOGY_PROCEEDING_MAP_APPEND6_APPENDED_massiveeee_r1_20260209_0341.md.txt",
+          "size": 36079,
+          "size_human": "35.2 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\CASE_CHRONOLOGY_PROCEEDING_MAP_APPEND6_APPENDED_massiveeee_r1_20260209_0341.md.txt"
+        },
+        {
+          "name": "CASE_CHRONOLOGY_PROCEEDING_MAP_APPEND6_APPENDED_massiveeee_r1_20260209_0341.txt.txt",
+          "size": 36079,
+          "size_human": "35.2 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\CASE_CHRONOLOGY_PROCEEDING_MAP_APPEND6_APPENDED_massiveeee_r1_20260209_0341.txt.txt"
+        },
+        {
+          "name": "jtccoa1.txt",
+          "size": 35155,
+          "size_human": "34.3 KB",
+          "path": "D:\\LITIGATIONOS_DATA\\jtccoa1.txt"
+        }
+      ],
+      "high_priority_files": []
+    },
+    "D:\\LitigationOS_DB_Archive": {
+      "path": "D:\\LitigationOS_DB_Archive",
+      "exists": true,
+      "total_files": 28,
+      "total_size_bytes": 16099267367,
+      "total_size_human": "15.0 GB",
+      "subdirectories": 1,
+      "extensions": {
+        ".db": {
+          "count": 10,
+          "size": 13453918208,
+          "size_human": "12.5 GB"
+        },
+        ".db-wal": {
+          "count": 8,
+          "size": 0,
+          "size_human": "0.0 B"
+        },
+        ".db-shm": {
+          "count": 8,
+          "size": 262144,
+          "size_human": "256.0 KB"
+        },
+        ".7z": {
+          "count": 1,
+          "size": 1527766279,
+          "size_human": "1.4 GB"
+        },
+        ".gguf": {
+          "count": 1,
+          "size": 1117320736,
+          "size_human": "1.0 GB"
+        }
+      },
+      "key_files": [
+        {
+          "name": "litigation_context.db",
+          "size": 4293918720,
+          "size_human": "4.0 GB",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\litigation_context.db"
+        },
+        {
+          "name": "master_index.db",
+          "size": 3476389888,
+          "size_human": "3.2 GB",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\master_index.db"
+        },
+        {
+          "name": "litigation_context_1.db",
+          "size": 2533359616,
+          "size_human": "2.4 GB",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\litigation_context_1.db"
+        },
+        {
+          "name": "litigation_context.db.7z",
+          "size": 1527766279,
+          "size_human": "1.4 GB",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\litigation_context.db.7z"
+        },
+        {
+          "name": "cross_brain_index.db",
+          "size": 1253163008,
+          "size_human": "1.2 GB",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\cross_brain_index.db"
+        },
+        {
+          "name": "litigation_context_20260220_113246.db",
+          "size": 1131757568,
+          "size_human": "1.1 GB",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\litigation_context_20260220_113246.db"
+        },
+        {
+          "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+          "size": 1117320736,
+          "size_human": "1.0 GB",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\qwen2.5-1.5b-instruct-q4_k_m.gguf"
+        },
+        {
+          "name": "drive_inventory.db",
+          "size": 500383744,
+          "size_human": "477.2 MB",
+          "path": "D:\\LitigationOS_DB_Archive\\drive_inventory.db"
+        },
+        {
+          "name": "file_catalog.db",
+          "size": 244027392,
+          "size_human": "232.7 MB",
+          "path": "D:\\LitigationOS_DB_Archive\\file_catalog.db"
+        },
+        {
+          "name": "document_fulltext.db",
+          "size": 20721664,
+          "size_human": "19.8 MB",
+          "path": "D:\\LitigationOS_DB_Archive\\document_fulltext.db"
+        },
+        {
+          "name": "test_litigation_os.db",
+          "size": 135168,
+          "size_human": "132.0 KB",
+          "path": "D:\\LitigationOS_DB_Archive\\test_litigation_os.db"
+        },
+        {
+          "name": "litigation_contextsmall.db",
+          "size": 61440,
+          "size_human": "60.0 KB",
+          "path": "D:\\LitigationOS_DB_Archive\\litigation_contextsmall.db"
+        },
+        {
+          "name": "document_fulltext.db-shm",
+          "size": 32768,
+          "size_human": "32.0 KB",
+          "path": "D:\\LitigationOS_DB_Archive\\document_fulltext.db-shm"
+        },
+        {
+          "name": "test_litigation_os.db-shm",
+          "size": 32768,
+          "size_human": "32.0 KB",
+          "path": "D:\\LitigationOS_DB_Archive\\test_litigation_os.db-shm"
+        },
+        {
+          "name": "litigation_contextsmall.db-shm",
+          "size": 32768,
+          "size_human": "32.0 KB",
+          "path": "D:\\LitigationOS_DB_Archive\\litigation_contextsmall.db-shm"
+        },
+        {
+          "name": "drive_inventory.db-shm",
+          "size": 32768,
+          "size_human": "32.0 KB",
+          "path": "D:\\LitigationOS_DB_Archive\\drive_inventory.db-shm"
+        },
+        {
+          "name": "file_catalog.db-shm",
+          "size": 32768,
+          "size_human": "32.0 KB",
+          "path": "D:\\LitigationOS_DB_Archive\\file_catalog.db-shm"
+        },
+        {
+          "name": "cross_brain_index.db-shm",
+          "size": 32768,
+          "size_human": "32.0 KB",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\cross_brain_index.db-shm"
+        },
+        {
+          "name": "master_index.db-shm",
+          "size": 32768,
+          "size_human": "32.0 KB",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\master_index.db-shm"
+        },
+        {
+          "name": "litigation_context.db-shm",
+          "size": 32768,
+          "size_human": "32.0 KB",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\litigation_context.db-shm"
+        }
+      ],
+      "high_priority_files": [
+        {
+          "name": "litigation_context.db",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\litigation_context.db",
+          "size": 4293918720,
+          "size_human": "4.0 GB",
+          "keyword_match": false
+        },
+        {
+          "name": "master_index.db",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\master_index.db",
+          "size": 3476389888,
+          "size_human": "3.2 GB",
+          "keyword_match": false
+        },
+        {
+          "name": "litigation_context_1.db",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\litigation_context_1.db",
+          "size": 2533359616,
+          "size_human": "2.4 GB",
+          "keyword_match": false
+        },
+        {
+          "name": "cross_brain_index.db",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\cross_brain_index.db",
+          "size": 1253163008,
+          "size_human": "1.2 GB",
+          "keyword_match": false
+        },
+        {
+          "name": "litigation_context_20260220_113246.db",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\litigation_context_20260220_113246.db",
+          "size": 1131757568,
+          "size_human": "1.1 GB",
+          "keyword_match": false
+        },
+        {
+          "name": "drive_inventory.db",
+          "path": "D:\\LitigationOS_DB_Archive\\drive_inventory.db",
+          "size": 500383744,
+          "size_human": "477.2 MB",
+          "keyword_match": false
+        },
+        {
+          "name": "file_catalog.db",
+          "path": "D:\\LitigationOS_DB_Archive\\file_catalog.db",
+          "size": 244027392,
+          "size_human": "232.7 MB",
+          "keyword_match": false
+        },
+        {
+          "name": "document_fulltext.db",
+          "path": "D:\\LitigationOS_DB_Archive\\document_fulltext.db",
+          "size": 20721664,
+          "size_human": "19.8 MB",
+          "keyword_match": false
+        },
+        {
+          "name": "test_litigation_os.db",
+          "path": "D:\\LitigationOS_DB_Archive\\test_litigation_os.db",
+          "size": 135168,
+          "size_human": "132.0 KB",
+          "keyword_match": false
+        }
+      ]
+    }
+  },
+  "csv_inspection": {
+    "REBUTTAL_PACK.csv": {
+      "found": true,
+      "path": "D:\\LitigationOS_Extracted\\evidence_zips\\REBUTTAL_PACK.csv",
+      "headers": [
+        "pair_id",
+        "target_type",
+        "target_quote",
+        "target_pinpoint",
+        "rebuttal_theory",
+        "proof_slots",
+        "status"
+      ],
+      "row_count": 672
+    },
+    "CIP.csv": {
+      "found": true,
+      "path": "D:\\LitigationOS_Extracted\\evidence_zips\\CIP.csv",
+      "headers": [
+        "pair_id",
+        "statement_A",
+        "A_pinpoint",
+        "statement_B",
+        "B_pinpoint",
+        "contradiction_type",
+        "verification_status"
+      ],
+      "row_count": 500
+    },
+    "COE.csv": {
+      "found": true,
+      "path": "D:\\LitigationOS_Extracted\\evidence_zips\\COE.csv",
+      "headers": [
+        "doc_id",
+        "page",
+        "line_start",
+        "line_end",
+        "category",
+        "exact_text",
+        "source_path",
+        "integrity_key"
+      ],
+      "row_count": 1011
+    }
+  },
+  "integration_manifest": {
+    "total_new_files": 27,
+    "priority_tiers": {
+      "P0_critical": [],
+      "P1_high": [],
+      "P2_medium": [
+        {
+          "name": "litigation_context.db",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\litigation_context.db",
+          "size": 4293918720,
+          "size_human": "4.0 GB",
+          "suggested_table": "drive_evidence (DB merge)"
+        },
+        {
+          "name": "master_index.db",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\master_index.db",
+          "size": 3476389888,
+          "size_human": "3.2 GB",
+          "suggested_table": "drive_evidence (DB merge)"
+        },
+        {
+          "name": "litigation_context_1.db",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\litigation_context_1.db",
+          "size": 2533359616,
+          "size_human": "2.4 GB",
+          "suggested_table": "drive_evidence (DB merge)"
+        },
+        {
+          "name": "cross_brain_index.db",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\cross_brain_index.db",
+          "size": 1253163008,
+          "size_human": "1.2 GB",
+          "suggested_table": "drive_evidence (DB merge)"
+        },
+        {
+          "name": "litigation_context_20260220_113246.db",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\litigation_context_20260220_113246.db",
+          "size": 1131757568,
+          "size_human": "1.1 GB",
+          "suggested_table": "drive_evidence (DB merge)"
+        },
+        {
+          "name": "litigation_context_20260220_113246.db",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\litigation_context_20260220_113246.db",
+          "size": 1131757568,
+          "size_human": "1.1 GB",
+          "suggested_table": "drive_evidence (DB merge)"
+        },
+        {
+          "name": "litigation_context_20260220_113246.db",
+          "path": "D:\\LitigationOS_DB_Archive\\large_files\\litigation_context_20260220_113246.db",
+          "size": 1131757568,
+          "size_human": "1.1 GB",
+          "suggested_table": "drive_evidence (DB merge)"
+        },
+        {
+          "name": "drive_inventory.db",
+          "path": "D:\\LitigationOS_DB_Archive\\drive_inventory.db",
+          "size": 500383744,
+          "size_human": "477.2 MB",
+          "suggested_table": "drive_evidence (DB merge)"
+        },
+        {
+          "name": "WizTree_20260125180244.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\WizTree_20260125180244.csv",
+          "size": 330953892,
+          "size_human": "315.6 MB",
+          "suggested_table": "evidence_quotes or claims (CSV import)"
+        },
+        {
+          "name": "WizTree_20260125180244.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\WizTree_20260125180244.csv",
+          "size": 330953892,
+          "size_human": "315.6 MB",
+          "suggested_table": "evidence_quotes or claims (CSV import)"
+        },
+        {
+          "name": "file_catalog.db",
+          "path": "D:\\LitigationOS_DB_Archive\\file_catalog.db",
+          "size": 244027392,
+          "size_human": "232.7 MB",
+          "suggested_table": "drive_evidence (DB merge)"
+        },
+        {
+          "name": "document_fulltext.db",
+          "path": "D:\\LitigationOS_DB_Archive\\document_fulltext.db",
+          "size": 20721664,
+          "size_human": "19.8 MB",
+          "suggested_table": "drive_evidence (DB merge)"
+        },
+        {
+          "name": "LITIGATION_OS__CAPSTONE__ETERNAL_DRIVE_BRIDGE_20251112_08103__manifest.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ETERNAL_DRIVE_BRIDGE_20251112_08103__manifest.csv",
+          "size": 1022402,
+          "size_human": "998.4 KB",
+          "suggested_table": "evidence_quotes or claims (CSV import)"
+        },
+        {
+          "name": "LITIGATION_OS__CAPSTONE__ETERNAL_DRIVE_BRIDGE_20251112_08103__manifest.csv",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ETERNAL_DRIVE_BRIDGE_20251112_08103__manifest.csv",
+          "size": 1022402,
+          "size_human": "998.4 KB",
+          "suggested_table": "evidence_quotes or claims (CSV import)"
+        },
+        {
+          "name": "test_litigation_os.db",
+          "path": "D:\\LitigationOS_DB_Archive\\test_litigation_os.db",
+          "size": 135168,
+          "size_human": "132.0 KB",
+          "suggested_table": "drive_evidence (DB merge)"
+        }
+      ],
+      "P3_low": [
+        {
+          "name": "rclone-v1.72.1-windows-amd64__README.txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\rclone-v1.72.1-windows-amd64__README.txt",
+          "size": 2803339,
+          "size_human": "2.7 MB",
+          "suggested_table": "drive_evidence (general catalog)"
+        },
+        {
+          "name": "rclone-v1.72.1-windows-amd64__README.txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\rclone-v1.72.1-windows-amd64__README.txt",
+          "size": 2803339,
+          "size_human": "2.7 MB",
+          "suggested_table": "drive_evidence (general catalog)"
+        },
+        {
+          "name": "Branch · Superpin Codex Instructions-2.txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\VERSIONS\\v0008\\SOURCES\\extracted\\Branch · Superpin Codex Instructions-2.txt",
+          "size": 855225,
+          "size_human": "835.2 KB",
+          "suggested_table": "drive_evidence (general catalog)"
+        },
+        {
+          "name": "Branch · Superpin Codex Instructions-2.txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\VERSIONS\\v0008\\SOURCES\\extracted\\Branch · Superpin Codex Instructions-2.txt",
+          "size": 855225,
+          "size_human": "835.2 KB",
+          "suggested_table": "drive_evidence (general catalog)"
+        },
+        {
+          "name": "Superpin Codex Instructions.txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\VERSIONS\\v0008\\SOURCES\\extracted\\Superpin Codex Instructions.txt",
+          "size": 595140,
+          "size_human": "581.2 KB",
+          "suggested_table": "drive_evidence (general catalog)"
+        },
+        {
+          "name": "Superpin Codex Instructions.txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\LITIGATION_OS__CAPSTONE__ZIPS__LITIGATIONOS__MASTERv1_0__v00\\LITIGATIONOS__MASTERv1.0\\VERSIONS\\v0008\\SOURCES\\extracted\\Superpin Codex Instructions.txt",
+          "size": 595140,
+          "size_human": "581.2 KB",
+          "suggested_table": "drive_evidence (general catalog)"
+        },
+        {
+          "name": "MEEK234_CASE_CHRONOLOGY_APPEND6_PERMAFIX9R5_20260209_060430 (1).txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\txt\\MEEK234_CASE_CHRONOLOGY_APPEND6_PERMAFIX9R5_20260209_060430 (1).txt",
+          "size": 163447,
+          "size_human": "159.6 KB",
+          "suggested_table": "drive_evidence (general catalog)"
+        },
+        {
+          "name": "MEEK234_CASE_CHRONOLOGY_APPEND6_PERMAFIX9R5_20260209_060430 (1).txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\txt\\MEEK234_CASE_CHRONOLOGY_APPEND6_PERMAFIX9R5_20260209_060430 (1).txt",
+          "size": 163447,
+          "size_human": "159.6 KB",
+          "suggested_table": "drive_evidence (general catalog)"
+        },
+        {
+          "name": "EVERY LAST DETAIL DATES USE ME AMAZING 10000000xxxxxx.docx",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\EVERY LAST DETAIL DATES USE ME AMAZING 10000000xxxxxx.docx",
+          "size": 128444,
+          "size_human": "125.4 KB",
+          "suggested_table": "evidence_extract_inventory (DOCX extract)"
+        },
+        {
+          "name": "EVERY LAST DETAIL DATES USE ME AMAZING 10000000xxxxxx.docx",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\EVERY LAST DETAIL DATES USE ME AMAZING 10000000xxxxxx.docx",
+          "size": 128444,
+          "size_human": "125.4 KB",
+          "suggested_table": "evidence_extract_inventory (DOCX extract)"
+        },
+        {
+          "name": "GRAND SUMMARY EXPARTE PARENTING TIME VIOLATIONS(1).txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\GRAND SUMMARY EXPARTE PARENTING TIME VIOLATIONS(1).txt",
+          "size": 76537,
+          "size_human": "74.7 KB",
+          "suggested_table": "drive_evidence (general catalog)"
+        },
+        {
+          "name": "GRAND SUMMARY EXPARTE PARENTING TIME VIOLATIONS(1).txt",
+          "path": "D:\\LitigationOS_Extracted\\evidence_zips\\GRAND SUMMARY EXPARTE PARENTING TIME VIOLATIONS(1).txt",
+          "size": 76537,
+          "size_human": "74.7 KB",
+          "suggested_table": "drive_evidence (general catalog)"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1196 @@
+{
+  "generated": "2026-03-19T09:06:38.208594",
+  "tool": "Ex Parte Violation Tracker (#219)",
+  "summary": {
+    "judicial_violations_ex_parte": 287,
+    "judicial_violations_total": 1127,
+    "actor_violations_ex_parte": 1629,
+    "docket_ex_parte_events": 42,
+    "constitutional_violations": 3,
+    "benchbook_findings": 15,
+    "caselaw_entries": 20,
+    "avg_severity_score": 4.67,
+    "max_severity_score": 5,
+    "aggregate_bias_score": 10.0
+  },
+  "docket_timeline": [
+    {
+      "event_id": "DE-0149",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-11",
+      "title": "PPO Amended \u2014 Ex Parte Order",
+      "type": "ex_parte_order",
+      "summary": "Amended personal protection order (domestic) entered ex parte. Notice to appear issued.",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0158",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-29",
+      "title": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 6/5/24 PAGE 2 5. On April 29, 2024 an Ex Parte Order for Custody, Parenting Time and Child ",
+      "type": "ex_parte_order",
+      "summary": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 6/5/24 PAGE 2 5. On April 29, 2024 an Ex Parte Order for Custody, Parenting Time and Child  Support following Facilitative Information Gathering Conference was entered for the following: Join...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0159",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-29",
+      "title": "IT IS FURTHER ORDERED that parties participated in a Facilitative Information Gathering Conference which resulted in a temporary Order titled Ex Parte",
+      "type": "ex_parte_order",
+      "summary": "IT IS FURTHER ORDERED that parties participated in a Facilitative Information Gathering Conference which resulted in a temporary Order titled Ex Parte Order for Custody, Parenting Time, and Child Support Following Facilitative Information Gathering C...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-002",
+      "case_id": "2024-001507-DC",
+      "date": "2024-07-01",
+      "title": "Ex Parte Custody Order Entered",
+      "type": "order",
+      "summary": "Emergency ex parte order granting sole custody to Watson without full hearing",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0194",
+      "case_id": "2023-5907-PP",
+      "date": "2024-07-17",
+      "title": "STATE  OF  MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEG-ON ANDREW PIGORS, Plaintiff, File No: 2024-001507-DC Hon. Jenny L. McNeill VS. CUSTO",
+      "type": "hearing",
+      "summary": "STATE  OF  MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEG-ON ANDREW PIGORS, Plaintiff, File No: 2024-001507-DC Hon. Jenny L. McNeill VS. CUSTODY & PARENTING TIME & C-HILD SUPPORT ORDER - FOLLOWING CUSTODY HEARING EMILY WATSON, Defendant. Andr...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0297",
+      "case_id": "2024-001507-DC",
+      "date": "2025-04-25",
+      "title": "FILED 4/25/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY ST ATE OF MICHIGAN IN THE 14TH CIRCUIT COURT FOR TIIE COUNTY OF MUSKEGON - FAMILY DIVISION Case ",
+      "type": "ex_parte_order",
+      "summary": "FILED 4/25/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY ST ATE OF MICHIGAN IN THE 14TH CIRCUIT COURT FOR TIIE COUNTY OF MUSKEGON - FAMILY DIVISION Case No.: 2024-001507-DC Hon. Jenny L. McNeill l'6a'Qmiy WATSON, +  Defendant, 6  2160 Garland Drive Q  N...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0314",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-06",
+      "title": "hearing. Appendix E - Ex Parte and Post-Ex Parte Orders in August-October 2025 The ex parte order suspending all parenting time (ente",
+      "type": "hearing",
+      "summary": "hearing. Appendix E - Ex Parte and Post-Ex Parte Orders in August-October 2025 The ex parte order suspending all parenting time (entered 011 or about August 6, 2025). Subsequent orders",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0315",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-06",
+      "title": "Ex Parte Paretxting-Time Suspension and Lack of Notice (August 2025) 4. August 6, 2025 - Ex parte order suspending all parenting time. o",
+      "type": "ex_parte_order",
+      "summary": "Ex Parte Paretxting-Time Suspension and Lack of Notice (August 2025) 4. August 6, 2025 - Ex parte order suspending all parenting time. o  On or about August 6, 2025, Judge McNeill signed",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0316",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-06",
+      "title": "ex parte order suspending all parenting time (entered 011 or about August 6, 2025). Subsequent orders continuing the suspension (around",
+      "type": "ex_parte_order",
+      "summary": "ex parte order suspending all parenting time (entered 011 or about August 6, 2025). Subsequent orders continuing the suspension (around September 9, 2025 and October 8, 2025), including an",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0318",
+      "case_id": "2023-5907-PP",
+      "date": "2025-08-07",
+      "title": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "type": "evidentiary_hearing",
+      "summary": "**August 2025 - Mass Ex Parte Orders:** - **August 7, 2025** - Emergency Ex Parte Motion filed (multiple versions) - **August 8, 2025** - **FIVE separate ex parte orders** entered suspending Andrew's parenting time without prior notice - **August 22,...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0319",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "ex parte suspension has functioned since August 8, 2025. 1. Chronological withholding pattern First, the timeline of withheld parenting ti",
+      "type": "parenting_time",
+      "summary": "ex parte suspension has functioned since August 8, 2025. 1. Chronological withholding pattern First, the timeline of withheld parenting time as I have experienced it: 1. From March 26, 2024",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0320",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "ex parte motion was filed. On or about August 8, 2025, the ex parte order took effect, and my parenting time has been functionally sus",
+      "type": "ex_parte_order",
+      "summary": "ex parte motion was filed. On or about August 8, 2025, the ex parte order took effect, and my parenting time has been functionally suspended ever since. That same order also wiped out",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0321",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "Ex parte suspension since -08/08/2025  i Ongoing suspension of all parenting time (months-long shutdown) i MCL 722.27a(3); MCR 3.207; MCR 3.310(B);",
+      "type": "parenting_time",
+      "summary": "Ex parte suspension since -08/08/2025  i Ongoing suspension of all parenting time (months-long shutdown) i MCL 722.27a(3); MCR 3.207; MCR 3.310(B); Benchbook ex parte cautions Trial: Vacate/modify ex part",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0322",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "ex parte motion or order before an August 8, 2025 exchange. I arrived expecting my regular parenting time, and only discovered after t",
+      "type": "ex_parte_order",
+      "summary": "ex parte motion or order before an August 8, 2025 exchange. I arrived expecting my regular parenting time, and only discovered after the missed exchange-by contacting the court-that my p",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0324",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "fficient Basis for Ex Parte) \u2013 Instance: The same August 8, 2025 ex parte motion fails to allege that delaying for",
+      "type": "ex_parte_motion",
+      "summary": "fficient Basis for Ex Parte) \u2013 Instance: The same August 8, 2025 ex parte motion fails to allege that delaying for",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0327",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "RECEIVED  8/8/2025 FILED 8/8/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY STATE OF MICHIGAN IN THE14TH CIRCUIT COURT IN THE COUNTY OF MUSKEGON ANDREW PI",
+      "type": "ex_parte_motion",
+      "summary": "RECEIVED  8/8/2025 FILED 8/8/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY STATE OF MICHIGAN IN THE14TH CIRCUIT COURT IN THE COUNTY OF MUSKEGON ANDREW PIGORS, Plaintiff, V. FAMILY DMSION CASE NO: 24-01507-DC HON.  JENNYL.MCNEILL %/ EMILYWATSON, Defendan...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0328",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": ":ECEIa7ED  ri/t'/2025 FILED  8/8/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY STATE OF MICHIGAN IN THE1 4TH CIRCUIT COURT IN THE COUNTY OF MUSKEGON FAMI",
+      "type": "ex_parte_order",
+      "summary": ":ECEIa7ED  ri/t'/2025 FILED  8/8/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY STATE OF MICHIGAN IN THE1 4TH CIRCUIT COURT IN THE COUNTY OF MUSKEGON FAMILY DMSION ANDREW PIGORS, Plaintiff, V. CASE NO: 24-01507-DC HON. JENNYL.MCNEILL EMILY WATSON, Defend...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0329",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "ORAL STATEMENT - CHRONOLOGICAL ALIENATION, BIRTHDAYS, LABOR DAY & SUPERVISED TIME CLARIFICATION Your Honor, my name is Andrew J. Pigors. I am Lincoln'",
+      "type": "parenting_time",
+      "summary": "ORAL STATEMENT - CHRONOLOGICAL ALIENATION, BIRTHDAYS, LABOR DAY & SUPERVISED TIME CLARIFICATION Your Honor, my name is Andrew J. Pigors. I am Lincoln's father. I want to briefly put on the record a chronological summary of parenting time deprivation ...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0341",
+      "case_id": "2023-5907-PP",
+      "date": "2025-08-08",
+      "title": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "type": "evidentiary_hearing",
+      "summary": "**August 2025 - Mass Ex Parte Orders:** - **August 7, 2025** - Emergency Ex Parte Motion filed (multiple versions) - **August 8, 2025** - **FIVE separate ex parte orders** entered suspending Andrew's parenting time without prior notice - **August 22,...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0344",
+      "case_id": "2023-5907-PP",
+      "date": "2025-08-08",
+      "title": "1. Ex Parte Order Pattern \u26a0\ufe0f CRITICAL",
+      "type": "ex_parte_order",
+      "summary": "**Discovery:** - **24 of 55 orders** (44%) entered ex parte - **All 24 presided by Judge Jenny L. McNeill** - **August 8, 2025:** 5 separate ex parte orders same day - **Notice failures:** Orders entered before service to Andrew - **MCR 3.207 violati...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0353",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "Ex Parte Motion Filed by Mother to Suspend Parenting Time",
+      "type": "ex_parte_motion",
+      "summary": "Mother files ex parte motion to suspend Father parenting time, alleging drug use/mental health concerns based on phone calls",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0354",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "Ambush at Parenting Time Exchange \u2014 No Notice of Ex Parte",
+      "type": "proceeding",
+      "summary": "Father arrives for scheduled parenting time exchange; not served with ex parte motion or order beforehand",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0358",
+      "case_id": "2023-5907-PP",
+      "date": "2025-08-22",
+      "title": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "type": "evidentiary_hearing",
+      "summary": "**August 2025 - Mass Ex Parte Orders:** - **August 7, 2025** - Emergency Ex Parte Motion filed (multiple versions) - **August 8, 2025** - **FIVE separate ex parte orders** entered suspending Andrew's parenting time without prior notice - **August 22,...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0361",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-22",
+      "title": "Interim Hearing on Ex Parte Order",
+      "type": "hearing",
+      "summary": "Hearing on 8/22/25 regarding ex parte suspension of parenting time",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0363",
+      "case_id": "2023-5907-PP",
+      "date": "2025-08-30",
+      "title": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "type": "evidentiary_hearing",
+      "summary": "**August 2025 - Mass Ex Parte Orders:** - **August 7, 2025** - Emergency Ex Parte Motion filed (multiple versions) - **August 8, 2025** - **FIVE separate ex parte orders** entered suspending Andrew's parenting time without prior notice - **August 22,...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0366",
+      "case_id": "2024-001507-DC",
+      "date": "2025-09-04",
+      "title": "HEARING Date:  THURSDAY SEPTEMBER 04,  2025 Time:  2:30  PM Jurist:  JENNY L.  MCNEILL Comments:  All parties  to  appear  in person",
+      "type": "hearing",
+      "summary": "HEARING Date:  THURSDAY SEPTEMBER 04,  2025 Time:  2:30  PM Jurist:  JENNY L.  MCNEILL Comments:  All parties  to  appear  in person  for to  an Ex Parte  entered  on  8/8/2025. EDeMfeI",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0367",
+      "case_id": "2024-001507-DC",
+      "date": "2025-09-04",
+      "title": "STATE  OF  M CHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER RE",
+      "type": "evidentiary_hearing",
+      "summary": "STATE  OF  M CHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER REGARDING PLAINTIFF'S OBJECTION TO EX PARTE ORDER CONTINUED HEARING 11/26/2025 EMILY A. WATSON, Defend...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0368",
+      "case_id": "2024-001507-DC",
+      "date": "2025-09-04",
+      "title": "STATE  OF  MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER RE",
+      "type": "evidentiary_hearing",
+      "summary": "STATE  OF  MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER REGARDING PLAINTIFF'S OBJECTION TO EX PARTE ORDER CONTINUED HEARING 11/26/2025 EMILY A. WATSON, Defend...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0372",
+      "case_id": "2023-5907-PP",
+      "date": "2025-09-04",
+      "title": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "type": "evidentiary_hearing",
+      "summary": "**August 2025 - Mass Ex Parte Orders:** - **August 7, 2025** - Emergency Ex Parte Motion filed (multiple versions) - **August 8, 2025** - **FIVE separate ex parte orders** entered suspending Andrew's parenting time without prior notice - **August 22,...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0374",
+      "case_id": "2024-001507-DC",
+      "date": "2025-09-04",
+      "title": "Evidentiary Hearing Set",
+      "type": "evidentiary_hearing",
+      "summary": "Matter set for evidentiary hearing on 9/4/25 regarding ex parte parenting time suspension",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0391",
+      "case_id": "2024-001507-DC",
+      "date": "2025-09-22",
+      "title": "Facts On 8/8/25, the Mother filed an ex parte motion to suspend the Father's parenting time. She alleged that she was concerned regarding on going dru",
+      "type": "evidentiary_hearing",
+      "summary": "Facts On 8/8/25, the Mother filed an ex parte motion to suspend the Father's parenting time. She alleged that she was concerned regarding on going drug use/mental health iSSues due to his phone calls to her father where he stated he was being followe...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0395",
+      "case_id": "COA-366810",
+      "date": "2025-09-25",
+      "title": "Administrative Petition Filed \u2014 Fees, Record Integrity",
+      "type": "filing",
+      "summary": "Amended Ex Parte Administrative Petition filed re: fees waiver, record integrity, duty judge, prompt hearing per MCR 8.110(C)",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0397",
+      "case_id": "2024-001507-DC",
+      "date": "2025-10-08",
+      "title": "Continuation Hearing Scheduled for Oct 29",
+      "type": "hearing",
+      "summary": "Chambers schedules continuation of matter for October 29, 2025 \u2014 nearly two months after ex parte order",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0403",
+      "case_id": "2024-001507-DC",
+      "date": "2025-10-29",
+      "title": "hearing on October 29, 2025. 2.  Lack of notice and ambush at a scheduled parenting-time exchange. o  I was not served with the ex par",
+      "type": "hearing",
+      "summary": "hearing on October 29, 2025. 2.  Lack of notice and ambush at a scheduled parenting-time exchange. o  I was not served with the ex parte motion or order before an August 8, 2025 exchang",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0404",
+      "case_id": "2024-001507-DC",
+      "date": "2025-10-29",
+      "title": "HEARING Date:  WEDNESDAY  OCTOBER 29,  2025 Time:  10 :OO AM Jurist:  JENNY L.  MCNEILL Comments:  All parties to appear in  person",
+      "type": "hearing",
+      "summary": "HEARING Date:  WEDNESDAY  OCTOBER 29,  2025 Time:  10 :OO AM Jurist:  JENNY L.  MCNEILL Comments:  All parties to appear in  person  for Ex Parte that was  signed. (231 )724-6251 Date:",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0405",
+      "case_id": "2024-001507-DC",
+      "date": "2025-10-29",
+      "title": "ex parte suspension and far beyond the 21-day hearing expectation reflected in discussions of MCR 3.207(B)(6) in Michigan appellate practi",
+      "type": "hearing",
+      "summary": "ex parte suspension and far beyond the 21-day hearing expectation reflected in discussions of MCR 3.207(B)(6) in Michigan appellate practice. (FindLaw Case Law) 12. October 29, 2025 - Belated",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0406",
+      "case_id": "2024-001507-DC",
+      "date": "2025-10-29",
+      "title": "ex parte suspension order, subsequent continuation orders, and the scheduling of the October 29, 2025 evidentiary hearing. Appendix E -",
+      "type": "evidentiary_hearing",
+      "summary": "ex parte suspension order, subsequent continuation orders, and the scheduling of the October 29, 2025 evidentiary hearing. Appendix E - Ex Parte and Post-Ex Parte Orders in August-October",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0408",
+      "case_id": "2023-5907-PP",
+      "date": "2025-10-29",
+      "title": "SupremeCourt_Complaint_ExParte_Pigors_2025-10-29_v2 IN THE SUPREME COURT OF MICHIGAN Andrew J. Pigors, Petitioner, v. Hon. Jenny L. McNeill (14th Circ",
+      "type": "ex_parte_order",
+      "summary": "SupremeCourt_Complaint_ExParte_Pigors_2025-10-29_v2 IN THE SUPREME COURT OF MICHIGAN Andrew J. Pigors, Petitioner, v. Hon. Jenny L. McNeill (14th Circuit Court, Family Division), Respondent Judge, and Emily Watson, Interested Party. Original Action: ...",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0411",
+      "case_id": "2024-001507-DC",
+      "date": "2025-10-29",
+      "title": "Belated Evidentiary Hearing",
+      "type": "evidentiary_hearing",
+      "summary": "Evidentiary hearing finally held on October 29, 2025 regarding Father objection to ex parte order suspending parenting time",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0413",
+      "case_id": "2024-001507-DC",
+      "date": "2025-11-26",
+      "title": "HEARING 11/26/2025 EMILY A. WATSON, Defendant Defendant requested, and the Court signed an ex parte order suspending the Plaintiff's parent",
+      "type": "evidentiary_hearing",
+      "summary": "HEARING 11/26/2025 EMILY A. WATSON, Defendant Defendant requested, and the Court signed an ex parte order suspending the Plaintiff's parenting time. An evidentiary hearing was held on Septembe",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0415",
+      "case_id": "2024-001507-DC",
+      "date": "2025-11-26",
+      "title": "EX PARTE ORDER CONTINUED HEARING 11/26/2025 EMILY A. WATSON, Defendant Defendant requested, and the Court signed an ex parte order suspendin",
+      "type": "evidentiary_hearing",
+      "summary": "EX PARTE ORDER CONTINUED HEARING 11/26/2025 EMILY A. WATSON, Defendant Defendant requested, and the Court signed an ex parte order suspending the Plaintiffs parenting time. An evidentiary hearing",
+      "truth_tag": "RECORD_RECITED"
+    },
+    {
+      "event_id": "DE-0419",
+      "case_id": "2024-001507-DC",
+      "date": "2025-11-26",
+      "title": "Continued Hearing on Plaintiff Objection to Ex Parte Order",
+      "type": "hearing",
+      "summary": "Hearing continued from 10/29. Order regarding Plaintiff objection to ex parte order. Parenting time remains suspended.",
+      "truth_tag": "RECORD_RECITED"
+    }
+  ],
+  "frequency_pattern": {
+    "2024-04": 3,
+    "2024-07": 2,
+    "2025-04": 1,
+    "2025-08": 19,
+    "2025-09": 7,
+    "2025-10": 7,
+    "2025-11": 3
+  },
+  "judicial_violations": {
+    "by_canon": {
+      "MCR 2.003 (Disqualification)": 51,
+      "MCR 3.206(A)": 1,
+      "MRE 613(b) \u2014 Prior inconsistent statement [hearing]": 3,
+      "MRE 613(b) \u2014 Prior inconsistent statement [ex_parte]": 14,
+      "MRE 613(b) \u2014 Prior inconsistent statement [communication, ex_parte, ppo]": 1,
+      "MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, ex_parte]": 1,
+      "MRE 613(b) \u2014 Prior inconsistent statement [communication, ex_parte]": 1,
+      "MCR / Canon \u2014 EX_PARTE_VIOLATION": 150,
+      "MCR 3.207": 32,
+      "MCR 3.206": 2,
+      "MCR 3.210": 1,
+      "MCR 3.310": 2,
+      "MCR 3.207(B)": 1,
+      "MCR 2.107; MCR 2.612(C)": 1,
+      "MCR 2.107; MCR 3.207(B)(1); SCAO": 1,
+      "MRE 613(b) \u2014 Prior inconsistent statement [custody, ex_parte, hearing]": 1,
+      "MRE 613(b) \u2014 Prior inconsistent statement [custody]": 1,
+      "MRE 613(b) \u2014 Prior inconsistent statement [child_welfare, ex_parte, hearing]": 1,
+      "MCL 600.2950": 1,
+      "MCR 2.119": 2,
+      "MCL 722.27": 2,
+      "MCR 2.517": 1,
+      "MCR 2.107": 1,
+      "MCL 722.23": 1,
+      "MCR 2.612": 1,
+      "MCR 3.700": 1,
+      "MCR 3.920": 2,
+      "MCR 3.707": 2,
+      "MCR 1.109": 1,
+      "Canon 2 (Impropriety/Appearance)": 7
+    },
+    "by_severity": {
+      "critical": 189,
+      "high": 90,
+      "medium": 8
+    },
+    "top_items": [
+      {
+        "violation_id": "JV-c22d274f6e3b",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": ",  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parenting  time.  An evidentiary  hearing  was held on Septemb",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-0d7c8cae71df",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": ",  Judge  McNeill  signed  an ex parte  \"emergency\" order  suspending  all of  my  parenting  time  with  my  three-year-old  son, Lincoln",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-79de3d694f86",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": "suspended. 3.  Off-record,  ex parte  handling  of  evidence  (USB  recording  and  mental-health evaluation). o   A USB  recording  sub",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-73f3c8b967ed",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": "to continue  or modify  the ex parte  suspension. o   I attempted  to present  photographs  from  the July  29 exchange  showing Lincoln",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-ef7bf41f552d",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": "e,  the  combination  of  (a) ex parte  submissions,  (b)  refusal  to review my  exculpatory  photos,  (c)  willingness  to rely  on hear",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-5b0215a24097",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": "and diligently,  and  bars  ex parte  communications  on the  merits  of  pending matters  except  under  narrow  circumstances. o   Dir",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-5cc475cb95ed",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": "(1)  and  (B)(5)-(6)  govern  ex parte  custody  and  parenting- time  orders  and  require: Specific  facts  in a verified  pleading  or",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-cfe589a19bfe",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": "ction  order. gl  request  an ex parte  order  because  immediate  and irreparable  injury,loss,  or damage  will occur  between  now and",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-918a034638c2",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 3.206(A)",
+        "description": "e  matter  before  the court  without  the assistance  of counsel,  the  friend  of the  court  must  provide  you  with  the form  pleadings  and  written  instructions  and  must  schedule  a hearing  with  the  court. 3.  The  ex parte  order  will automatically  become  a temporary  order  if yo...",
+        "evidence_refs": "MCR 3.206(A)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-347a02996301",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": "g  with  the  court. 3.  The  ex parte  order  will automatically  become  a temporary  order  if you  do not  file a written objection  o",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-b1ba16cce955",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": "ly  modify  the August  2025  ex parte  order  so that  it no longer  operates  as a total  bar  to parenting  time,  and that  any  ongoi",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-34e4db1e394d",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": ",  Judge  McNeill  signed  an ex parte  \"emergency\" order  suspending  all  of  my  parenting  time  with  my  three-year-old  son, Lincol",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-479df0963894",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": "suspended. 3.  Off-record,  ex parte  handling  of  evidence  (USB  recording  and  mental-health evaluation). o   A USB  recording  sub",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-327d86f842d1",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": "to continue  or modify  the  ex parte  suspension. o   I attempted  to present  photographs  from  the  July  29 excliange  showing Linco",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-a5ba21166f2f",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": "e,  the  combination  of  (a) ex parte  submissions,  (b)  refusal  to review my  exculpatory  photos,  (c)  willingness  to rely  on  hea",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-d84ec1ff8b5f",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MCR 2.003 (Disqualification)",
+        "description": "and diligently,  and  bars  ex parte  communications  on  the  merits  of  pending matters  except  under  narrow  circumstances. o   Di",
+        "evidence_refs": "MCR 2.003(C)(1)",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-52d1e8c5c572",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MRE 613(b) \u2014 Prior inconsistent statement [hearing]",
+        "description": "HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parenting  time.  An evidentiary  hearing  was held on Septembe",
+        "evidence_refs": "MRE 613(b) \u2014 Prior inconsistent statement [hearing]",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-3e544ff68796",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MRE 613(b) \u2014 Prior inconsistent statement [hearing]",
+        "description": "HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and the Court  signed  an ex parte  order  suspending  the Plaintiffs parenting  time. An evidentiary  hearing  was held on September  4",
+        "evidence_refs": "MRE 613(b) \u2014 Prior inconsistent statement [hearing]",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-95ff028338e1",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MRE 613(b) \u2014 Prior inconsistent statement [ex_parte]",
+        "description": "ex parte order suspending  his parenting  time  is denied.  The  Court  also  notes  that  it offered  supervised  parenting  time  to the Father  and he categorically  rejected  that.  The  Court  will consi",
+        "evidence_refs": "MRE 613(b) \u2014 Prior inconsistent statement [ex_parte]",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      },
+      {
+        "violation_id": "JV-e9658dd9d93f",
+        "judge": "Hon. Jenny L. McNeill",
+        "canon": "MRE 613(b) \u2014 Prior inconsistent statement [ex_parte]",
+        "description": "EX PARTE  MOTION  TO  SUSPEND  PLAINTIFF'S PARENTING  TIME At a session  of said  Court,  held  in the Courthouse  in the Counjy  of Muskegon,  State of Michigan Present  Hon. JENNY  L MCNEILL WHEREAS,  this",
+        "evidence_refs": "MRE 613(b) \u2014 Prior inconsistent statement [ex_parte]",
+        "severity_label": "critical",
+        "severity_score": 5,
+        "date": "2026-02-26 01:50:49"
+      }
+    ]
+  },
+  "actor_violations": {
+    "by_actor": {
+      "McNeill": 1417,
+      "Watson": 57,
+      "Albert Watson": 67,
+      "Rusco": 23,
+      "Lori Watson": 17,
+      "Watson Family": 39,
+      "Barnes": 3,
+      "Cody Watson": 4,
+      "Shady Oaks": 1,
+      "Martini": 1
+    },
+    "by_severity": {
+      "critical": 1365,
+      "high": 264
+    },
+    "top_items": [
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "| 70.3 KB | \u2705 COURT-READY | MCR 2.003 \u2014 bias and prejudice; \"crazy\"/\"liar\" language in orders; 44% ex parte order rate; email-to-secretary directive; retaliation for filing motions; $250 sanction without hearing | Exhibits documenting specific instan...",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "54.6 KB | \u2705 COURT-READY | PPO weaponized to deny parenting time; no evidence of threat; PPO issued ex parte without hearing; changed circumstances; MCL 600.2950 factors | PPO orders, evidence of weaponization, communication records, police reports |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "ET_ASIDE_DEFAULT.md` | Motion + Brief | ~32 | 25.1 KB | \u2705 COURT-READY | MCR 2.612(C); set aside 52+ ex parte orders; void orders due to lack of jurisdiction/notice; 44% ex parte rate statistical anomaly; fraud upon the court | Ex parte orders list, s...",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "B | \u2705 COURT-READY | All lower court errors; abuse of discretion in custody; due process violations; ex parte orders without notice; improper sanctions; best interest factor errors | Appendix Tabs A\u2013P: Register of Actions, all appealed orders, transcr...",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "onduct Complaint | ~85 | 67.0 KB | \u2705 COURT-READY | Judicial misconduct under MCR 9.104/9.205; bias; ex parte communications; intemperate language (\"crazy,\" \"liar\"); retaliation; denial of due process; email-to-secretary directive; 44% ex parte order ...",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "due_process",
+        "description": "ve; retaliation for filing motions; $250 sanction without hearing | Exhibits documenting specific instances of judicial bias, ex parte orders, hearing transcripts |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "due_process",
+        "description": "time; no evidence of threat; PPO issued ex parte without hearing; changed circumstances; MCL 600.2950 factors | PPO orders, evidence of weaponization, communication records, police reports |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "due_process",
+        "description": "custody; due process violations; ex parte orders without notice; improper sanctions; best interest factor errors | Appendix Tabs A\u2013P: Register of Actions, all appealed orders, transcripts, key exhibits |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "judicial_bias",
+        "description": "QUALIFY_JUDGE_MCNEILL.md` | Motion + Affidavit of Prejudice + Brief | ~90 | 70.3 KB | \u2705 COURT-READY | MCR 2.003 \u2014 bias and prejudice; \"crazy\"/\"liar\" language in orders; 44% ex parte order rate; email-to-secretary directive; retaliation for filing mot...",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "judicial_bias",
+        "description": "EADY | Judicial misconduct under MCR 9.104/9.205; bias; ex parte communications; intemperate language (\"crazy,\" \"liar\"); retaliation; denial of due process; email-to-secretary directive; 44% ex parte order rate | Exhibits A\u2013AF (32 exhibits): orders, ...",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "| Emergency motion | MCR 2.119(B) | May be heard on **shortened notice** or ex parte |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "| 1 | PPO issued ex parte without hearing | 11/17/2023 | 11/17/2026 | State/Federal |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "| 3 | Ex Parte custody/PT/CS order | 04/29/2024 | 04/29/2027 | State/Federal |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "| 5 | 5 ex parte orders suspending parenting time (same day) | 08/08/2025 | 08/08/2028 | State/Federal |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "conspiracy",
+        "description": "5 | 5 ex parte orders suspending parenting time (same day) | 08/08/2025 | 08/08/2028 | State/Federal |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "c. The Court and its staff reviewed the recording ex parte before Plaintiff was served.",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "| 2 | Motion to Set Aside Ex Parte Orders (MCR 2.612(C)(1)) | 14th Circuit | Void orders / due process / fraud \u2014 comprehensive attack | Medium-High |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "- **Pre-planned ex parte filing** (Albert Watson's police report admission) is a smoking gun.",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "## MOTION TO SET ASIDE EX PARTE ORDERS (MCR 2.612(C)(1))",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "- **Statistical evidence** (44% ex parte rate, all against Father) is powerful pattern evidence.",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "- **Court may distinguish** between different ex parte orders, granting relief on some but not others.",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "### Response 5: \"The Ex Parte Orders Were Necessary for Child Safety\"",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "| 44% ex parte order rate | **Father** | \u2605\u2605\u2605\u2605 |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "| Rusco ex parte communication with HealthWest | **Father** | \u2605\u2605\u2605\u2605 |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "- Issue of first impression: Systematic ex parte order abuse in family court",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "| Motion to Set Aside Ex Parte | All ex parte orders vacated | Denied; partial vacatur | 20\u201330% at trial; 50%+ on appeal | Low \u2014 strongest appellate issue | **MEDIUM-HIGH** |",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "3. **Vacatur of August 8, 2025 ex parte orders** \u2014 or stipulation that they are superseded",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "2. **Vacatur of ALL ex parte orders**",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "- Exposure of systemic ex parte abuse patterns",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      },
+      {
+        "actor": "McNeill",
+        "type": "ex_parte",
+        "description": "3. **Frame as family court reform** \u2014 \"44% ex parte order rate is not justice\"",
+        "date": null,
+        "severity": "critical",
+        "severity_score": 5,
+        "linked_actors": null
+      }
+    ]
+  },
+  "constitutional_violations": [
+    {
+      "amendment": "14th Amendment",
+      "clause": "Due Process \u2014 Procedural",
+      "type": "EX_PARTE_WITHOUT_NOTICE",
+      "description": "Parenting time suspended via ex parte order without notice or hearing \u2014 52 ex parte orders total with 44% rate, 100% favoring Emily Watson",
+      "date": "2025-08-08",
+      "actors": "Judge McNeill; Emily Watson; Jennifer Barnes",
+      "evidence": "Ex parte orders; court docket; statistical analysis",
+      "caselaw": "Mathews v. Eldridge, 424 U.S. 319 (1976) \u2014 three-factor balancing test for procedural due process; Fuentes v. Shevin, 407 U.S. 67 (1972) \u2014 prior notice and hearing required before deprivation",
+      "michigan_auth": "MCR 3.207(A) \u2014 requirements for ex parte orders in domestic relations; In re Rood, 483 Mich 73 (2009) \u2014 due process in family proceedings",
+      "severity": "CRITICAL",
+      "severity_score": 5
+    },
+    {
+      "amendment": "14th Amendment",
+      "clause": "Due Process \u2014 Procedural",
+      "type": "ILLEGALLY_OBTAINED_EVIDENCE",
+      "description": "Ex parte order based on recording made in violation of MCL 750.539c (felony eavesdropping) by Lori Watson \u2014 fruit of the poisonous tree",
+      "date": "2025-08-08",
+      "actors": "Lori Watson; Judge McNeill; Emily Watson",
+      "evidence": "Illegal recording; MCL 750.539c; ex parte motion",
+      "caselaw": "Mapp v. Ohio, 367 U.S. 643 (1961) \u2014 exclusionary rule; Wong Sun v. United States, 371 U.S. 471 (1963) \u2014 fruit of the poisonous tree",
+      "michigan_auth": "People v. Beavers, 393 Mich 554 (1975) \u2014 Michigan eavesdropping; MCL 750.539c \u2014 felony, up to 2 years",
+      "severity": "CRITICAL",
+      "severity_score": 5
+    },
+    {
+      "amendment": "14th Amendment",
+      "clause": "Equal Protection",
+      "type": "GENDER_DISCRIMINATION_PATTERN",
+      "description": "52 ex parte orders with 100% granted to mother (Emily) and 0% to father (Andrew) \u2014 statistical impossibility absent discrimination. 44% ex parte rate far exceeds Michigan average.",
+      "date": "2024-01-01",
+      "actors": "Judge McNeill",
+      "evidence": "Court docket analysis; statistical comparison to state averages",
+      "caselaw": "Craig v. Boren, 429 U.S. 190 (1976) \u2014 intermediate scrutiny for gender; United States v. Virginia, 518 U.S. 515 (1996) \u2014 exceedingly persuasive justification required",
+      "michigan_auth": "MCL 722.23 \u2014 best interest factors make no gender distinction; MCR 2.003 \u2014 disqualification for bias",
+      "severity": "CRITICAL",
+      "severity_score": 5
+    }
+  ],
+  "benchbook_findings": [
+    {
+      "rule": "MCR 3.207(B)",
+      "explanation": "Emergency ex parte parenting-time suspension must include factual findings of immediate harm or risk.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time ex parte motion for immediate parenting time enforcement and make-up time"
+    },
+    {
+      "rule": "MCR 3.210(C)",
+      "explanation": "Post-judgment hearings must be noticed and allow time to respond unless waived.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time ex parte motion for immediate parenting time enforcement and make-up time"
+    },
+    {
+      "rule": "MCL 552.511b",
+      "explanation": "Missed parenting time must be enforced via complaint or expedited hearing.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time ex parte motion for immediate parenting time enforcement and make-up time"
+    },
+    {
+      "rule": "Canon 2(B)",
+      "explanation": "A judge shall not allow family, social, or other relationships to influence judicial conduct.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time ex parte motion for immediate parenting time enforcement and make-up time"
+    },
+    {
+      "rule": "MCR 3.207(B)",
+      "explanation": "Emergency ex parte parenting-time suspension must include factual findings of immediate harm or risk.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time n propria persona, and respectfully requests this honorable court grant immediate relief to enforce parenting time and order make-up time due to t..."
+    },
+    {
+      "rule": "MCR 3.207(B)",
+      "explanation": "Emergency ex parte parenting-time suspension must include factual findings of immediate harm or risk.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time 2. on july 17, 2024, this court entered a final judgment of custody and parenting time."
+    },
+    {
+      "rule": "MCR 3.207(B)",
+      "explanation": "Emergency ex parte parenting-time suspension must include factual findings of immediate harm or risk.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time 3. plaintiff was denied parenting time for the easter holiday weekend, despite his good-faith efforts to coordinate and discuss alternativ"
+    },
+    {
+      "rule": "MCR 3.207(B)",
+      "explanation": "Emergency ex parte parenting-time suspension must include factual findings of immediate harm or risk.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time 4. on april 15, 2025, defendant explicitly refused to facilitate make-up parenting time, stating: \"no, i am not facilitating make-up days for the ..."
+    },
+    {
+      "rule": "MCR 3.207(B)",
+      "explanation": "Emergency ex parte parenting-time suspension must include factual findings of immediate harm or risk.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time 6. defendant\u2019s conduct demonstrates willful obstruction of court-ordered parenting time, undermining both the letter and spirit of the final judgm..."
+    },
+    {
+      "rule": "MCR 3.207(B)",
+      "explanation": "Emergency ex parte parenting-time suspension must include factual findings of immediate harm or risk.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time 2. i have been denied court-ordered parenting time on multiple occasions by emily watson, including easter weekend 2025, despite making several go..."
+    },
+    {
+      "rule": "MCR 3.207(B)",
+      "explanation": "Emergency ex parte parenting-time suspension must include factual findings of immediate harm or risk.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time 5. the only equitable and timely remedy is to grant weekday make-up parenting time from april 22\u201325, 2025."
+    },
+    {
+      "rule": "MCR 3.207(B)",
+      "explanation": "Emergency ex parte parenting-time suspension must include factual findings of immediate harm or risk.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time 6. i respectfully ask the court to grant the relief requested in the ex parte motion and enforce parenting time consistent with my child\u2019s best in..."
+    },
+    {
+      "rule": "MCR 3.210(C)",
+      "explanation": "Post-judgment hearings must be noticed and allow time to respond unless waived.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time 6. i respectfully ask the court to grant the relief requested in the ex parte motion and enforce parenting time consistent with my child\u2019s best in..."
+    },
+    {
+      "rule": "MCL 552.511b",
+      "explanation": "Missed parenting time must be enforced via complaint or expedited hearing.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time 6. i respectfully ask the court to grant the relief requested in the ex parte motion and enforce parenting time consistent with my child\u2019s best in..."
+    },
+    {
+      "rule": "Canon 2(B)",
+      "explanation": "A judge shall not allow family, social, or other relationships to influence judicial conduct.",
+      "matching_text": "2022-11-09 exparte parenting time.docx parenting time 6. i respectfully ask the court to grant the relief requested in the ex parte motion and enforce parenting time consistent with my child\u2019s best in..."
+    }
+  ],
+  "caselaw_for_reversal": [
+    {
+      "case_name": "Boddie v Connecticut",
+      "citation": "401 US 371",
+      "holding": "Filing: EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md, Forms: [\"*See Boddie v Connecticut*, 401 US 371\", \"*See Boddie v Connecticut*\"], Count: 2",
+      "basis": "General",
+      "relevance": "From citation_frequency_map (key case: Boddie v Connecticut)"
+    },
+    {
+      "case_name": "Boddie v Connecticut",
+      "citation": "\u2014",
+      "holding": "Filing: 01_14TH_CIRCUIT__EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md, Forms: [\"*See Boddie v Connecticut*\"], Count: 1",
+      "basis": "General",
+      "relevance": "From citation_frequency_map (key case: Boddie v Connecticut)"
+    },
+    {
+      "case_name": "Boddie v. Connecticut",
+      "citation": "401 U.S. 371",
+      "holding": "ndings  **Authority**: - *Boddie v. Connecticut*, 401 U.S. 371 (1971): Due process requires meaningful access to",
+      "basis": "Due process violation",
+      "relevance": "From master_citations_parsed (key case: Boddie v. Connecticut)"
+    },
+    {
+      "case_name": "Boddie v. Connecticut",
+      "citation": "\u2014",
+      "holding": "Filing: COA__COA_COMPLAINT_SUPERINTENDING_CONTROL.md, Forms: [\"*See Boddie v. Connecticut*\"], Count: 1",
+      "basis": "General",
+      "relevance": "From citation_frequency_map (key case: Boddie v. Connecticut)"
+    },
+    {
+      "case_name": "Boddie v. Connecticut",
+      "citation": "401 US 371",
+      "holding": "Filing: JTC_FORMAL_COMPLAINT_v2.md, Forms: [\"*Boddie v. Connecticut*, 401 US 371\"], Count: 1",
+      "basis": "General",
+      "relevance": "From citation_frequency_map (key case: Boddie v. Connecticut)"
+    },
+    {
+      "case_name": "Fuentes v Shevin",
+      "citation": "\u2014",
+      "holding": "Filing: 01_14TH_CIRCUIT__EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md, Forms: [\"*Fuentes v Shevin*\"], Count: 1",
+      "basis": "General",
+      "relevance": "From citation_frequency_map (key case: Fuentes v Shevin)"
+    },
+    {
+      "case_name": "Fuentes v Shevin",
+      "citation": "407 US 67",
+      "holding": "Filing: MOTION_UCCJEA_EMERGENCY_JURISDICTION.md, Forms: [\"*Fuentes v Shevin*\", \"*Fuentes v Shevin*, 407 US 67\"], Count: 2",
+      "basis": "General",
+      "relevance": "From citation_frequency_map (key case: Fuentes v Shevin)"
+    },
+    {
+      "case_name": "Fuentes v. Shevin",
+      "citation": "407 US 67",
+      "holding": "Filing: MOTION_EMERGENCY_CUSTODY.md, Forms: [\"Fuentes v. Shevin, 407 US 67\"], Count: 1",
+      "basis": "General",
+      "relevance": "From citation_frequency_map (key case: Fuentes v Shevin)"
+    },
+    {
+      "case_name": "Fuentes v. Shevin",
+      "citation": "457 U.S. 922",
+      "holding": "Oil Co., 457 U.S. 922 (1982)  Fuentes v. Shevin, 407 U.S. 67 (1972)  4. RICO / Civil Conspiracy A chain of ent",
+      "basis": "General",
+      "relevance": "From master_citations_parsed (key case: Fuentes v. Shevin)"
+    },
+    {
+      "case_name": "Fuentes v. Shevin",
+      "citation": "407 U.S. 67",
+      "holding": "America\u2019s authority or claims.\tFuentes v. Shevin, 407 U.S. 67 (1972); Lugar v. Edmondson Oil, 457 U.S. 922 (198",
+      "basis": "General",
+      "relevance": "From master_citations_parsed (key case: Fuentes v. Shevin)"
+    },
+    {
+      "case_name": "Fuentes v. Shevin",
+      "citation": "\u2014",
+      "holding": "Filing: 03_JTC__ENHANCED_MISCONDUCT_BRIEF.md, Forms: [\"*Fuentes v. Shevin*\"], Count: 1",
+      "basis": "General",
+      "relevance": "From citation_frequency_map (key case: Fuentes v. Shevin)"
+    },
+    {
+      "case_name": "Grew v Knox",
+      "citation": "265 Mich App 333",
+      "holding": "Filing: 02_COA_APPLICATION_LEAVE_APPEAL_v3.md, Forms: [\"*Grew v Knox*\", \"*Grew v Knox*, 265 Mich App 333\"], Count: 3",
+      "basis": "General",
+      "relevance": "From citation_frequency_map (key case: Grew v Knox)"
+    },
+    {
+      "case_name": "Mathews v Eldridge",
+      "citation": "\u2014",
+      "holding": "Filing: 01_14TH_CIRCUIT__EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md, Forms: [\"*See Mathews v Eldridge*\"], Count: 1",
+      "basis": "General",
+      "relevance": "From citation_frequency_map (key case: Mathews v Eldridge)"
+    },
+    {
+      "case_name": "Mathews v Eldridge",
+      "citation": "424 US 319",
+      "holding": "Filing: FILING_PACKAGE_MSC_Msc_Superintending_Control_Application.md, Forms: [\"*Mathews v Eldridge*\", \"*Mathews v Eldridge*, 424 US 319\"], Count: 3",
+      "basis": "General",
+      "relevance": "From citation_frequency_map (key case: Mathews v Eldridge)"
+    },
+    {
+      "case_name": "Mathews v. Eldridge",
+      "citation": "424 US 319",
+      "holding": "Filing: AFFIDAVIT_PIGORS_14TH_CIRCUIT.md, Forms: [\"*Mathews v. Eldridge*\", \"*Mathews v. Eldridge*, 424 US 319\"], Count: 2",
+      "basis": "General",
+      "relevance": "From citation_frequency_map (key case: Mathews v. Eldridge)"
+    },
+    {
+      "case_name": "Mathews v. Eldridge",
+      "citation": "\u2014",
+      "holding": "\u2022 Due process requires notice and opportunity to be heard (Mathews v. Eldridge) \u2022 MCR 2.313 requires judges to ensure fairness and equal treatment \u2022 MCL 722.27 contemplates adversarial process with bo...",
+      "basis": "Lack of notice",
+      "relevance": "From master_citations_parsed"
+    },
+    {
+      "case_name": "Mathews v. Eldridge",
+      "citation": "424 U.S. 319",
+      "holding": "undamental liberty interest. Mathews v. Eldridge, 424 U.S. 319 (1976) provides the test for due process: conside",
+      "basis": "Due process violation",
+      "relevance": "From master_citations_parsed (key case: Mathews v. Eldridge)"
+    },
+    {
+      "case_name": "Mathews v. Eldridge Test",
+      "citation": "\u2014",
+      "holding": "CESS - Mathews v. Eldridge Test  **Add to Section V.A:**  **Mathews v. Eldridge Three-Factor Balancing",
+      "basis": "General",
+      "relevance": "From master_citations_parsed (key case: Mathews v. Eldridge)"
+    },
+    {
+      "case_name": "Stricklin",
+      "citation": "\u2014",
+      "holding": "follow through the civil child protection and criminal proceedings.34 The Stricklin court also ruled that the adverse party statute (MCL 600.2159), which provides that a defendant in a criminal case s...",
+      "basis": "General",
+      "relevance": "From master_citations_parsed (key case: Stricklin)"
+    },
+    {
+      "case_name": "Advice of Appellate Rights. At",
+      "citation": "MCR_3.944",
+      "holding": "under MCL 712A.18(1)(e) to a detention facility for a specified period of time  if all the following circumstances exist:  (i) the juvenile is under the jurisdiction of the court under MCL 712A.2(a)(1...",
+      "basis": "Lack of notice",
+      "relevance": "From auth_passages_fts"
+    }
+  ]
+}

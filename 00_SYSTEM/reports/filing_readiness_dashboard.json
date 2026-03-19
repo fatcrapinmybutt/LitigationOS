@@ -1,0 +1,441 @@
+{
+  "tool": "Tool #221 — Filing Readiness Dashboard",
+  "generated": "2026-03-19T09:02:43.293213",
+  "global_stats": {
+    "Total claims": 653,
+    "Active deadlines": 23,
+    "Filing packages": 29,
+    "Evidence quotes": 36891
+  },
+  "total_filings": 10,
+  "priority_order": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10"
+  ],
+  "filings": {
+    "F1": {
+      "filing_id": "F1",
+      "name": "PPO Rescission Motion",
+      "lane": "D",
+      "case_number": "2023-5907-PP",
+      "court": "14th Circuit Court",
+      "status": "EARLY STAGE — Major assembly required",
+      "completeness_pct": 0,
+      "urgency": 50,
+      "priority_score": 30,
+      "required_sections": [
+        "motion_body",
+        "brief_in_support",
+        "affidavit",
+        "proposed_order",
+        "proof_of_service",
+        "exhibit_list"
+      ],
+      "sections_found": 0,
+      "court_forms": [
+        "MC 375",
+        "CC 375"
+      ],
+      "filing_fee": 0,
+      "service_requirement": "Personal service on Emily A. Watson or her counsel",
+      "claims_count": 0,
+      "evidence_linked": 28459,
+      "deadlines_count": 0,
+      "packages_count": 0,
+      "qa_checks": 0,
+      "physical_actions": [
+        "Complete missing document sections",
+        "Obtain signature (Andrew Pigors)",
+        "Notarize affidavit",
+        "Prepare proof of service"
+      ],
+      "db_readiness_data": null,
+      "omega_readiness_data": null
+    },
+    "F2": {
+      "filing_id": "F2",
+      "name": "Parenting Time Enforcement",
+      "lane": "A",
+      "case_number": "2024-001507-DC",
+      "court": "14th Circuit Court, Family Division",
+      "status": "EARLY STAGE — Major assembly required",
+      "completeness_pct": 0,
+      "urgency": 50,
+      "priority_score": 30,
+      "required_sections": [
+        "motion_body",
+        "brief_in_support",
+        "affidavit",
+        "proposed_order",
+        "proof_of_service",
+        "parenting_time_log"
+      ],
+      "sections_found": 0,
+      "court_forms": [
+        "FOC 109",
+        "FOC 104"
+      ],
+      "filing_fee": 0,
+      "service_requirement": "Service on FOC + Emily A. Watson",
+      "claims_count": 0,
+      "evidence_linked": 47586,
+      "deadlines_count": 0,
+      "packages_count": 0,
+      "qa_checks": 0,
+      "physical_actions": [
+        "Complete missing document sections",
+        "Obtain signature (Andrew Pigors)",
+        "Notarize affidavit",
+        "Prepare proof of service"
+      ],
+      "db_readiness_data": null,
+      "omega_readiness_data": null
+    },
+    "F3": {
+      "filing_id": "F3",
+      "name": "Motion to Disqualify Judge McNeill",
+      "lane": "E",
+      "case_number": "2024-001507-DC",
+      "court": "14th Circuit Court",
+      "status": "EARLY STAGE — Major assembly required",
+      "completeness_pct": 0,
+      "urgency": 50,
+      "priority_score": 30,
+      "required_sections": [
+        "motion_body",
+        "brief_in_support",
+        "affidavit_of_bias",
+        "proposed_order",
+        "proof_of_service",
+        "exhibit_index"
+      ],
+      "sections_found": 0,
+      "court_forms": [
+        "MC 17"
+      ],
+      "filing_fee": 0,
+      "service_requirement": "Service on all parties + judge's clerk",
+      "claims_count": 0,
+      "evidence_linked": 28421,
+      "deadlines_count": 0,
+      "packages_count": 0,
+      "qa_checks": 0,
+      "physical_actions": [
+        "Complete missing document sections",
+        "Obtain signature (Andrew Pigors)",
+        "Notarize affidavit",
+        "Prepare proof of service"
+      ],
+      "db_readiness_data": null,
+      "omega_readiness_data": null
+    },
+    "F4": {
+      "filing_id": "F4",
+      "name": "Shady Oaks Housing Complaint",
+      "lane": "B",
+      "case_number": "2025-002760-CZ",
+      "court": "14th Circuit Court, Civil Division",
+      "status": "EARLY STAGE — Major assembly required",
+      "completeness_pct": 0,
+      "urgency": 50,
+      "priority_score": 30,
+      "required_sections": [
+        "complaint",
+        "summons",
+        "affidavit",
+        "exhibit_list",
+        "proof_of_service",
+        "civil_cover_sheet"
+      ],
+      "sections_found": 0,
+      "court_forms": [
+        "MC 01",
+        "MC 11"
+      ],
+      "filing_fee": 175,
+      "service_requirement": "Process server on Shady Oaks management + registered agent",
+      "claims_count": 0,
+      "evidence_linked": 9204,
+      "deadlines_count": 0,
+      "packages_count": 0,
+      "qa_checks": 0,
+      "physical_actions": [
+        "Complete missing document sections",
+        "Obtain signature (Andrew Pigors)",
+        "Pay filing fee: $175",
+        "Notarize affidavit",
+        "Prepare proof of service"
+      ],
+      "db_readiness_data": null,
+      "omega_readiness_data": null
+    },
+    "F5": {
+      "filing_id": "F5",
+      "name": "FOC Objection / Motion for De Novo Hearing",
+      "lane": "A",
+      "case_number": "2024-001507-DC",
+      "court": "14th Circuit Court, Family Division",
+      "status": "EARLY STAGE — Major assembly required",
+      "completeness_pct": 0,
+      "urgency": 50,
+      "priority_score": 30,
+      "required_sections": [
+        "objection",
+        "brief_in_support",
+        "proposed_order",
+        "proof_of_service",
+        "foc_recommendation_copy"
+      ],
+      "sections_found": 0,
+      "court_forms": [
+        "FOC 13"
+      ],
+      "filing_fee": 0,
+      "service_requirement": "Service on FOC + Emily A. Watson",
+      "claims_count": 0,
+      "evidence_linked": 42443,
+      "deadlines_count": 0,
+      "packages_count": 0,
+      "qa_checks": 0,
+      "physical_actions": [
+        "Complete missing document sections",
+        "Obtain signature (Andrew Pigors)",
+        "Prepare proof of service"
+      ],
+      "db_readiness_data": null,
+      "omega_readiness_data": null
+    },
+    "F6": {
+      "filing_id": "F6",
+      "name": "JTC Complaint (Judicial Tenure Commission)",
+      "lane": "E",
+      "case_number": "2024-001507-DC",
+      "court": "Judicial Tenure Commission (Lansing)",
+      "status": "EARLY STAGE — Major assembly required",
+      "completeness_pct": 0,
+      "urgency": 50,
+      "priority_score": 30,
+      "required_sections": [
+        "complaint_letter",
+        "factual_summary",
+        "evidence_appendix",
+        "chronology",
+        "authority_citations"
+      ],
+      "sections_found": 0,
+      "court_forms": [
+        "JTC Complaint Form"
+      ],
+      "filing_fee": 0,
+      "service_requirement": "Mail to JTC, 3034 W Grand Blvd Ste 8-450, Detroit MI 48202",
+      "claims_count": 0,
+      "evidence_linked": 12302,
+      "deadlines_count": 0,
+      "packages_count": 0,
+      "qa_checks": 0,
+      "physical_actions": [
+        "Complete missing document sections",
+        "Obtain signature (Andrew Pigors)",
+        "Prepare proof of service"
+      ],
+      "db_readiness_data": null,
+      "omega_readiness_data": null
+    },
+    "F7": {
+      "filing_id": "F7",
+      "name": "Motion to Restore Custody / Parenting Time",
+      "lane": "A",
+      "case_number": "2024-001507-DC",
+      "court": "14th Circuit Court, Family Division",
+      "status": "EARLY STAGE — Major assembly required",
+      "completeness_pct": 0,
+      "urgency": 50,
+      "priority_score": 30,
+      "required_sections": [
+        "motion_body",
+        "brief_in_support",
+        "best_interest_analysis",
+        "affidavit",
+        "proposed_order",
+        "proof_of_service",
+        "exhibit_index"
+      ],
+      "sections_found": 0,
+      "court_forms": [
+        "FOC 89",
+        "MC 17"
+      ],
+      "filing_fee": 0,
+      "service_requirement": "Service on Emily A. Watson + FOC (Pamela Rusco)",
+      "claims_count": 0,
+      "evidence_linked": 38739,
+      "deadlines_count": 0,
+      "packages_count": 0,
+      "qa_checks": 0,
+      "physical_actions": [
+        "Complete missing document sections",
+        "Obtain signature (Andrew Pigors)",
+        "Notarize affidavit",
+        "Prepare proof of service"
+      ],
+      "db_readiness_data": null,
+      "omega_readiness_data": null
+    },
+    "F8": {
+      "filing_id": "F8",
+      "name": "COA Application for Leave to Appeal",
+      "lane": "F",
+      "case_number": "COA 366810",
+      "court": "Michigan Court of Appeals",
+      "status": "EARLY STAGE — Major assembly required",
+      "completeness_pct": 0,
+      "urgency": 50,
+      "priority_score": 30,
+      "required_sections": [
+        "application",
+        "brief_on_appeal",
+        "appendix",
+        "proof_of_service",
+        "lower_court_orders",
+        "claim_of_appeal"
+      ],
+      "sections_found": 0,
+      "court_forms": [
+        "COA Claim of Appeal",
+        "COA Docketing Statement"
+      ],
+      "filing_fee": 375,
+      "service_requirement": "eFiling + service on all parties",
+      "claims_count": 0,
+      "evidence_linked": 1622,
+      "deadlines_count": 0,
+      "packages_count": 0,
+      "qa_checks": 0,
+      "physical_actions": [
+        "Complete missing document sections",
+        "Obtain signature (Andrew Pigors)",
+        "Pay filing fee: $375",
+        "Prepare proof of service",
+        "Set up eFiling account"
+      ],
+      "db_readiness_data": null,
+      "omega_readiness_data": null
+    },
+    "F9": {
+      "filing_id": "F9",
+      "name": "MSC Application for Leave to Appeal",
+      "lane": "F",
+      "case_number": "Assigned on filing",
+      "court": "Michigan Supreme Court",
+      "status": "EARLY STAGE — Major assembly required",
+      "completeness_pct": 0,
+      "urgency": 50,
+      "priority_score": 30,
+      "required_sections": [
+        "application",
+        "appendix",
+        "proof_of_service",
+        "lower_court_opinion",
+        "questions_presented"
+      ],
+      "sections_found": 0,
+      "court_forms": [
+        "MSC Application"
+      ],
+      "filing_fee": 375,
+      "service_requirement": "eFiling via TrueFiling + service on all parties",
+      "claims_count": 0,
+      "evidence_linked": 38806,
+      "deadlines_count": 0,
+      "packages_count": 0,
+      "qa_checks": 0,
+      "physical_actions": [
+        "Complete missing document sections",
+        "Obtain signature (Andrew Pigors)",
+        "Pay filing fee: $375",
+        "Prepare proof of service",
+        "Set up eFiling account"
+      ],
+      "db_readiness_data": null,
+      "omega_readiness_data": null
+    },
+    "F10": {
+      "filing_id": "F10",
+      "name": "42 USC §1983 Federal Civil Rights Action",
+      "lane": "A",
+      "case_number": "To be assigned (W.D. Mich.)",
+      "court": "US District Court, Western District of Michigan",
+      "status": "EARLY STAGE — Major assembly required",
+      "completeness_pct": 0,
+      "urgency": 50,
+      "priority_score": 30,
+      "required_sections": [
+        "complaint",
+        "civil_cover_sheet",
+        "summons",
+        "affidavit_ifp",
+        "exhibit_index",
+        "proof_of_service"
+      ],
+      "sections_found": 0,
+      "court_forms": [
+        "AO 440 (Civil Cover Sheet)",
+        "AO 239 (Summons)",
+        "AO 240 (IFP Application)"
+      ],
+      "filing_fee": 405,
+      "service_requirement": "US Marshals Service for state actors; process server for private defendants",
+      "claims_count": 0,
+      "evidence_linked": 44,
+      "deadlines_count": 0,
+      "packages_count": 0,
+      "qa_checks": 0,
+      "physical_actions": [
+        "Complete missing document sections",
+        "Obtain signature (Andrew Pigors)",
+        "Pay filing fee: $405",
+        "Notarize affidavit",
+        "Prepare proof of service"
+      ],
+      "db_readiness_data": null,
+      "omega_readiness_data": null
+    }
+  },
+  "status_summary": {
+    "ready": 0,
+    "near_ready": 0,
+    "in_progress": 0,
+    "early_stage": 10
+  },
+  "total_filing_fees": 1330,
+  "lane_breakdown": {
+    "D": [
+      "F1"
+    ],
+    "A": [
+      "F2",
+      "F5",
+      "F7",
+      "F10"
+    ],
+    "E": [
+      "F3",
+      "F6"
+    ],
+    "B": [
+      "F4"
+    ],
+    "F": [
+      "F8",
+      "F9"
+    ]
+  }
+}
