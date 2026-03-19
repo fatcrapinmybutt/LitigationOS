@@ -1,0 +1,129 @@
+{
+  "tool_id": 184,
+  "version": 2,
+  "title": "OPPOSING COUNSEL PROFILE v2 \u2014 BARNES LAW FIRM",
+  "subject": {
+    "name": "Jennifer Barnes",
+    "bar_number": "P55406",
+    "firm": "Barnes Law Firm PLLC",
+    "address": "880 Jefferson St Ste B, Muskegon, MI 49440",
+    "status": "WITHDREW from representation"
+  },
+  "sections": [
+    {
+      "title": "WITHDRAWAL ANALYSIS",
+      "significance": "Barnes's withdrawal is a STRATEGIC GIFT to Andrew",
+      "points": [
+        {
+          "point": "Emily is now PRO SE \u2014 she lost her legal advantage",
+          "implication": "Level playing field"
+        },
+        {
+          "point": "Withdrawal suggests Barnes recognized ethical problems",
+          "authority": "MRPC 1.16(a)"
+        },
+        {
+          "point": "Barnes may have discovered Emily's perjury and refused to suborn it",
+          "authority": "MRPC 3.3(a)(3)"
+        },
+        {
+          "point": "Withdrawal does NOT cure prior misconduct",
+          "authority": "MRPC 8.4(c)"
+        },
+        {
+          "point": "Emily must file own motions \u2014 limited legal sophistication",
+          "note": "Berry may ghost-write = UPL"
+        },
+        {
+          "point": "Monitor for Berry drafting Emily's filings",
+          "authority": "MCL 600.916"
+        }
+      ]
+    },
+    {
+      "title": "POTENTIAL ETHICAL VIOLATIONS",
+      "violations": [
+        {
+          "rule": "MRPC 3.1",
+          "violation": "Filing PPO based on fabricated allegations"
+        },
+        {
+          "rule": "MRPC 3.3(a)",
+          "violation": "Presenting false testimony without correction"
+        },
+        {
+          "rule": "MRPC 3.4(a)",
+          "violation": "Obstructing Andrew's access to evidence"
+        },
+        {
+          "rule": "MRPC 4.1",
+          "violation": "Material misrepresentations in filings"
+        },
+        {
+          "rule": "MRPC 8.4(c)",
+          "violation": "Participating in fraud upon the court"
+        },
+        {
+          "rule": "MRPC 8.4(d)",
+          "violation": "Conduct prejudicial to justice"
+        }
+      ]
+    },
+    {
+      "title": "STRATEGIC OPPORTUNITIES",
+      "opportunities": [
+        {
+          "action": "File State Bar grievance against Barnes (P55406)",
+          "priority": "HIGH"
+        },
+        {
+          "action": "Include Barnes as \u00a71983 co-defendant",
+          "theory": "Dennis v Sparks",
+          "priority": "HIGH"
+        },
+        {
+          "action": "Subpoena Barnes's file in federal discovery",
+          "priority": "CRITICAL"
+        },
+        {
+          "action": "Motion for sanctions under MCR 2.114(E)",
+          "priority": "MEDIUM"
+        },
+        {
+          "action": "Depose Barnes about Berry's role",
+          "priority": "HIGH"
+        },
+        {
+          "action": "Monitor post-withdrawal filings for Berry UPL",
+          "priority": "ONGOING"
+        }
+      ]
+    },
+    {
+      "title": "BERRY UPL RISK",
+      "note": "Ronald Berry has NO bar number. NOT an attorney. NEVER was Emily's attorney.",
+      "indicators": [
+        {
+          "sign": "Berry drafting/ghost-writing filings for Emily",
+          "authority": "MCL 600.916"
+        },
+        {
+          "sign": "Berry providing legal strategy direction",
+          "authority": "MCL 600.916"
+        },
+        {
+          "sign": "Berry communicating with court on Emily's behalf",
+          "authority": "MCR 2.117"
+        },
+        {
+          "sign": "Filing quality change post-Barnes withdrawal",
+          "note": "Compare style before/after"
+        }
+      ]
+    }
+  ],
+  "db_evidence": {
+    "barnes_mentions": 19,
+    "berry_mentions": 5
+  }
+}

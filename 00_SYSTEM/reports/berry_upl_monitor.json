@@ -1,0 +1,120 @@
+{
+  "tool_id": 193,
+  "title": "BERRY UPL MONITOR \u2014 UNAUTHORIZED PRACTICE OF LAW",
+  "subtitle": "Ronald T. Berry \u2014 NOT an attorney, NO bar number",
+  "subject": {
+    "name": "Ronald T. Berry",
+    "status": "NON-ATTORNEY \u2014 Emily Watson's boyfriend/domestic partner",
+    "bar_number": "NONE \u2014 never admitted to Michigan Bar",
+    "relationship": "Cohabiting with Emily at 2160 Garland Drive, Norton Shores, MI 49441"
+  },
+  "legal_framework": {
+    "statute": "MCL 600.916 \u2014 Unauthorized Practice of Law",
+    "penalty": "Misdemeanor for first offense, felony for subsequent",
+    "definition": "Practice of law includes: legal advice, drafting legal documents, representing in court, negotiating legal matters",
+    "reporting": "Report to State Bar of Michigan UPL Committee + circuit court judge"
+  },
+  "indicators": [
+    {
+      "indicator": "Berry drafting or ghost-writing Emily's legal filings",
+      "evidence_type": "Writing style analysis \u2014 compare pre/post Barnes withdrawal",
+      "severity": "HIGH"
+    },
+    {
+      "indicator": "Berry providing legal strategy to Emily",
+      "evidence_type": "Communications (text, email) showing Berry directing legal decisions",
+      "severity": "HIGH"
+    },
+    {
+      "indicator": "Berry communicating with court or court staff",
+      "evidence_type": "Court records showing Berry as contact person",
+      "severity": "CRITICAL"
+    },
+    {
+      "indicator": "Berry attending court hearings and advising Emily during proceedings",
+      "evidence_type": "Courtroom observation, transcript references",
+      "severity": "MEDIUM"
+    },
+    {
+      "indicator": "Berry researching law and preparing legal arguments for Emily",
+      "evidence_type": "Electronic evidence of legal research on Emily's behalf",
+      "severity": "MEDIUM"
+    },
+    {
+      "indicator": "Berry negotiating with Andrew on legal matters on Emily's behalf",
+      "evidence_type": "Communications showing Berry acting as Emily's agent",
+      "severity": "HIGH"
+    },
+    {
+      "indicator": "Filing quality increase after Barnes withdrawal",
+      "evidence_type": "Compare complexity of Emily's filings before/after Barnes left",
+      "severity": "MEDIUM"
+    },
+    {
+      "indicator": "Berry signing or co-signing legal documents",
+      "evidence_type": "Court filings with Berry's signature or electronic submission",
+      "severity": "CRITICAL"
+    }
+  ],
+  "detection_methods": [
+    {
+      "method": "Writing style analysis",
+      "description": "Compare Emily's pre-Barnes and post-Barnes filings. If legal sophistication suddenly increases without attorney, someone is helping.",
+      "tool": "Use linguistic analysis tools \u2014 sentence complexity, legal terminology density, citation accuracy"
+    },
+    {
+      "method": "Discovery requests",
+      "description": "Serve interrogatories asking Emily: 'Who assisted in preparing this filing?' \u2014 she must answer under oath",
+      "authority": "MCR 2.309"
+    },
+    {
+      "method": "Court observation",
+      "description": "Note if Berry whispers to Emily during hearings, passes notes, or speaks to court staff",
+      "note": "Document every instance with date/time"
+    },
+    {
+      "method": "Electronic evidence",
+      "description": "Subpoena Emily's email/text for communications with Berry about legal matters",
+      "authority": "MCR 2.310"
+    },
+    {
+      "method": "Metadata analysis",
+      "description": "If Emily's filings are electronic, check document metadata for author name",
+      "note": "PDF properties often show original author"
+    }
+  ],
+  "action_plan": [
+    {
+      "step": 1,
+      "action": "Document every suspected UPL indicator with dates and evidence",
+      "priority": "ONGOING"
+    },
+    {
+      "step": 2,
+      "action": "File formal UPL complaint with State Bar of Michigan",
+      "form": "UPL complaint form at michbar.org",
+      "priority": "HIGH"
+    },
+    {
+      "step": 3,
+      "action": "Notify circuit court judge of suspected UPL",
+      "authority": "Court has inherent authority to prevent UPL in proceedings",
+      "priority": "HIGH"
+    },
+    {
+      "step": 4,
+      "action": "Include UPL in federal \u00a71983 complaint as evidence of conspiracy",
+      "theory": "Berry's UPL shows coordinated effort to deprive Andrew's rights",
+      "priority": "MEDIUM"
+    },
+    {
+      "step": 5,
+      "action": "Serve discovery specifically targeting Berry's involvement",
+      "note": "Berry is NOT Emily's attorney \u2014 no privilege for Berry communications",
+      "priority": "HIGH"
+    }
+  ],
+  "db_evidence": {
+    "berry_mentions": 5
+  }
+}

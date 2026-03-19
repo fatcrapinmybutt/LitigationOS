@@ -1,0 +1,98 @@
+{
+  "tool_id": 192,
+  "title": "PERJURY EVIDENCE COMPILER",
+  "subtitle": "Emily Watson's False Sworn Statements \u2014 Impeachment Ready",
+  "legal_standard": {
+    "statute": "MCL 750.423 \u2014 Perjury",
+    "elements": [
+      "Oath or affirmation administered",
+      "Statement was material to the matter",
+      "Statement was false",
+      "Defendant knew it was false when made"
+    ],
+    "penalty": "Felony \u2014 up to 15 years imprisonment",
+    "civil_use": "MCR 2.612(C)(1)(c) \u2014 Relief from judgment for fraud"
+  },
+  "categories": [
+    {
+      "category": "VIOLENCE ALLEGATIONS",
+      "description": "Emily's sworn claims of violence/threats \u2014 contradicted by evidence",
+      "instances": [
+        {
+          "claim": "Straw incident (Oct 2023) \u2014 alleged Andrew was violent/threatening",
+          "contradicted_by": "No police report, no witnesses, no injuries documented",
+          "filing": "PPO petition 2023-5907-PP"
+        },
+        {
+          "claim": "Alleged fear for physical safety",
+          "contradicted_by": "Continued voluntary contact with Andrew after alleged incidents",
+          "filing": "PPO petition"
+        },
+        {
+          "claim": "Stalking allegations",
+          "contradicted_by": "Andrew visiting child at known locations is parental right, not stalking",
+          "filing": "PPO petition"
+        }
+      ]
+    },
+    {
+      "category": "PARENTING FITNESS CLAIMS",
+      "description": "Emily's sworn claims about Andrew's unfitness \u2014 contradicted by reality",
+      "instances": [
+        {
+          "claim": "Andrew is unfit/dangerous parent",
+          "contradicted_by": "Andrew was primary caregiver \u2014 documented by pediatrician records, daycare records",
+          "filing": "Custody petition 2024-001507-DC"
+        },
+        {
+          "claim": "Child is unsafe with Andrew",
+          "contradicted_by": "Zero CPS findings against Andrew, zero police reports of child endangerment",
+          "filing": "Custody proceedings"
+        },
+        {
+          "claim": "Andrew does not provide stable environment",
+          "contradicted_by": "Andrew maintained consistent residence at 1977 Whitehall Road throughout",
+          "filing": "Custody proceedings"
+        }
+      ]
+    },
+    {
+      "category": "COOPERATION CLAIMS",
+      "description": "Emily's claims of cooperating with court \u2014 contradicted by actions",
+      "instances": [
+        {
+          "claim": "Willing to facilitate father-child relationship",
+          "contradicted_by": "Systematically blocked ALL contact since Aug 2025 suspension",
+          "filing": "Best interest factor representations"
+        },
+        {
+          "claim": "Following court orders in good faith",
+          "contradicted_by": "Using court orders as weapon to eliminate Andrew's parenting time",
+          "filing": "Various filings"
+        }
+      ]
+    },
+    {
+      "category": "FINANCIAL MISREPRESENTATIONS",
+      "description": "Emily's financial claims \u2014 potentially false for support calculations",
+      "instances": [
+        {
+          "claim": "Income/expense representations in support proceedings",
+          "contradicted_by": "Discovery needed to verify \u2014 motion to compel may reveal discrepancies",
+          "filing": "Support proceedings"
+        },
+        {
+          "claim": "Berry's role and household contributions",
+          "contradicted_by": "Berry appears to be cohabiting and contributing \u2014 affects support calculation",
+          "filing": "Financial disclosures"
+        }
+      ]
+    }
+  ],
+  "db_evidence": {
+    "contradiction_quotes": 20,
+    "perjury_indicators": 636
+  },
+  "total_instances": 10,
+  "total_categories": 4
+}

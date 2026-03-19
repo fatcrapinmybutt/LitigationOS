@@ -1,0 +1,129 @@
+{
+  "tool_id": 191,
+  "title": "MOTION TO COMPEL DISCOVERY \u2014 TEMPLATE & GUIDE",
+  "subtitle": "Force Production of Documents Emily/Berry Are Withholding",
+  "sections": [
+    {
+      "title": "REQUIRED ELEMENTS",
+      "elements": [
+        {
+          "element": "Caption with case number 2024-001507-DC",
+          "authority": "MCR 2.113(A)"
+        },
+        {
+          "element": "Statement that good faith conference was attempted per MCR 2.313(A)(1)",
+          "note": "MUST certify you tried to resolve without court intervention"
+        },
+        {
+          "element": "Specific discovery requests that were served",
+          "note": "List each interrogatory/document request by number"
+        },
+        {
+          "element": "Date discovery was served and response deadline",
+          "authority": "MCR 2.309(B) \u2014 28 days to respond"
+        },
+        {
+          "element": "Description of deficient or missing responses",
+          "note": "Be specific about what was not provided"
+        },
+        {
+          "element": "Relevance of requested information",
+          "note": "Explain why each item matters to custody/fraud claims"
+        },
+        {
+          "element": "Request for sanctions under MCR 2.313(B)(2)",
+          "note": "Costs of bringing motion + evidentiary sanctions"
+        },
+        {
+          "element": "Proposed order for court signature",
+          "authority": "MCR 2.119(A)(2)"
+        }
+      ]
+    },
+    {
+      "title": "DISCOVERY ITEMS TO COMPEL",
+      "items": [
+        {
+          "item": "All text messages between Emily and Berry regarding L.D.W. or Andrew",
+          "reason": "Conspiracy evidence",
+          "priority": "CRITICAL"
+        },
+        {
+          "item": "Emily's phone records (call log) for 2023-2025",
+          "reason": "Pattern of coordination with Berry/Barnes/McNeill",
+          "priority": "HIGH"
+        },
+        {
+          "item": "Berry's employment and criminal records",
+          "reason": "Fitness assessment for household contact with L.D.W.",
+          "priority": "HIGH"
+        },
+        {
+          "item": "All communications between Berry and Barnes (P55406)",
+          "reason": "Conspiracy evidence \u2014 Berry is NOT Barnes's client, no privilege",
+          "priority": "CRITICAL"
+        },
+        {
+          "item": "Emily's social media posts (Facebook, Instagram) 2023-2025",
+          "reason": "Contradictions to sworn statements",
+          "priority": "HIGH"
+        },
+        {
+          "item": "Medical records for L.D.W. since separation",
+          "reason": "Best interest factor analysis + potential neglect evidence",
+          "priority": "HIGH"
+        },
+        {
+          "item": "Emily's financial records (income, expenses, assets)",
+          "reason": "Child support calculation + potential hidden assets",
+          "priority": "MEDIUM"
+        },
+        {
+          "item": "Photos/videos of L.D.W. since Aug 2025 suspension",
+          "reason": "Child welfare assessment during denial of father contact",
+          "priority": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "title": "SANCTIONS FOR NON-COMPLIANCE",
+      "sanctions": [
+        {
+          "sanction": "MCR 2.313(B)(2)(a) \u2014 Order establishing facts as proven",
+          "effect": "Court deems disputed facts true in Andrew's favor"
+        },
+        {
+          "sanction": "MCR 2.313(B)(2)(b) \u2014 Refuse to allow disobedient party to support/oppose claims",
+          "effect": "Emily cannot use defenses she refused to disclose"
+        },
+        {
+          "sanction": "MCR 2.313(B)(2)(c) \u2014 Strike pleadings",
+          "effect": "Emily's counterclaims dismissed"
+        },
+        {
+          "sanction": "MCR 2.313(B)(2)(d) \u2014 Default judgment",
+          "effect": "Andrew wins on all claims \u2014 nuclear option"
+        },
+        {
+          "sanction": "MCR 2.313(A)(5) \u2014 Reasonable expenses including attorney fees",
+          "effect": "Andrew recovers costs of bringing motion (pro se hourly rate)"
+        },
+        {
+          "sanction": "Adverse inference instruction",
+          "effect": "Jury/court may infer withheld evidence would be unfavorable to Emily"
+        }
+      ]
+    },
+    {
+      "title": "GOOD FAITH CONFERENCE CERTIFICATION",
+      "template": "I, Andrew James Pigors, hereby certify that on [DATE], I attempted in good faith to resolve this discovery dispute with Emily A. Watson by [METHOD \u2014 email/letter/in-person] as required by MCR 2.313(A)(1). Despite my efforts, Defendant has [refused to respond / provided incomplete responses / failed to produce documents]. This motion is therefore necessary to obtain Court intervention.",
+      "methods": [
+        "Send written request via email and certified mail to Emily at 2160 Garland Drive, Norton Shores, MI 49441",
+        "Document date sent and response (or lack thereof)",
+        "Wait minimum 7 days for response before filing motion",
+        "Keep copies of ALL correspondence as exhibits to the motion"
+      ]
+    }
+  ],
+  "total_elements": 26
+}

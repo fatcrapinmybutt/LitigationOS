@@ -1,0 +1,150 @@
+{
+  "tool_id": 199,
+  "title": "MASTER EVIDENCE INDEX BY LANE",
+  "subtitle": "All Evidence Organized by Case Lane \u2014 DB-Verified",
+  "lanes": [
+    {
+      "lane": "A",
+      "name": "Custody (2024-001507-DC)",
+      "evidence_types": [
+        {
+          "type": "Parenting fitness evidence",
+          "description": "Andrew's 26 strengths, pediatric records, daycare records"
+        },
+        {
+          "type": "Alienation evidence",
+          "description": "Emily blocking contact, denying visits, disparaging Andrew"
+        },
+        {
+          "type": "Best interest factor evidence",
+          "description": "12 factors per MCL 722.23 \u2014 evidence for each"
+        },
+        {
+          "type": "Child development evidence",
+          "description": "Attachment theory, developmental milestones for L.D.W."
+        },
+        {
+          "type": "Financial evidence",
+          "description": "Income, expenses, child support calculations"
+        }
+      ]
+    },
+    {
+      "lane": "B",
+      "name": "Housing (2025-002760-CZ)",
+      "evidence_types": [
+        {
+          "type": "Lease/tenancy records",
+          "description": "Lease agreements, payment history, correspondence"
+        },
+        {
+          "type": "Retaliation evidence",
+          "description": "Timeline of landlord actions after complaints"
+        },
+        {
+          "type": "Housing code violations",
+          "description": "Inspection reports, photos, repair requests"
+        }
+      ]
+    },
+    {
+      "lane": "D",
+      "name": "PPO (2023-5907-PP)",
+      "evidence_types": [
+        {
+          "type": "False allegation evidence",
+          "description": "Emily's PPO claims vs. reality \u2014 contradictions"
+        },
+        {
+          "type": "Straw incident evidence",
+          "description": "No police report, no witnesses, no injuries"
+        },
+        {
+          "type": "Continued contact evidence",
+          "description": "Emily's voluntary contact after alleged threats"
+        },
+        {
+          "type": "Perjury evidence",
+          "description": "Sworn statements contradicted by other evidence"
+        }
+      ]
+    },
+    {
+      "lane": "E",
+      "name": "Judicial Misconduct (McNeill)",
+      "evidence_types": [
+        {
+          "type": "Judicial violations",
+          "description": "1127 documented in DB"
+        },
+        {
+          "type": "Ex parte communications",
+          "description": "Documented instances of off-record contacts"
+        },
+        {
+          "type": "Bias pattern evidence",
+          "description": "5 categories, 14 indicators per tool #175"
+        },
+        {
+          "type": "Canon violations",
+          "description": "Specific MI Code of Judicial Conduct violations"
+        },
+        {
+          "type": "Procedural due process violations",
+          "description": "10 categories per tool #196"
+        }
+      ]
+    },
+    {
+      "lane": "F",
+      "name": "Appellate (COA 366810)",
+      "evidence_types": [
+        {
+          "type": "Trial court record",
+          "description": "All filings, orders, transcripts from 14th Circuit"
+        },
+        {
+          "type": "Preservation of error",
+          "description": "Issues preserved for appeal per tool #172"
+        },
+        {
+          "type": "Legal error evidence",
+          "description": "McNeill's misapplication of law \u2014 specific instances"
+        },
+        {
+          "type": "Abuse of discretion evidence",
+          "description": "Orders outside range of reasonable outcomes"
+        }
+      ]
+    },
+    {
+      "lane": "C",
+      "name": "Federal \u00a71983 / Convergence",
+      "evidence_types": [
+        {
+          "type": "Conspiracy evidence",
+          "description": "Berry-Watson-Barnes-McNeill coordination"
+        },
+        {
+          "type": "Constitutional violation evidence",
+          "description": "Due process, equal protection, 1st Amendment"
+        },
+        {
+          "type": "Damages evidence",
+          "description": "Emotional distress, lost wages, parent-child bond damage"
+        },
+        {
+          "type": "Pattern evidence",
+          "description": "Cross-lane evidence showing systematic rights deprivation"
+        }
+      ]
+    }
+  ],
+  "db_stats": {
+    "total_evidence_quotes": 36891,
+    "total_judicial_violations": 1127,
+    "total_documents": 18588,
+    "total_claims": 653
+  },
+  "total_types": 25
+}

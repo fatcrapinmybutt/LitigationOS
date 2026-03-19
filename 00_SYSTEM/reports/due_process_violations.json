@@ -1,0 +1,71 @@
+{
+  "tool_id": 196,
+  "title": "DUE PROCESS VIOLATION CATALOG",
+  "subtitle": "Every Procedural Due Process Violation by McNeill",
+  "violations": [
+    {
+      "violation": "Ex parte order without required statutory findings",
+      "amendment": "14th Amendment \u2014 Procedural Due Process",
+      "authority": "MCL 722.27a(3) \u2014 must find clear and convincing evidence of danger",
+      "remedy": "Vacate order \u2014 MCR 2.612(C)(1)(d) \u2014 void"
+    },
+    {
+      "violation": "Denial of right to be heard before deprivation",
+      "amendment": "14th Amendment \u2014 Procedural Due Process",
+      "authority": "Mathews v Eldridge 424 US 319 (1976) \u2014 balancing test",
+      "remedy": "De novo hearing before new judge"
+    },
+    {
+      "violation": "Denial of right to present evidence",
+      "amendment": "14th Amendment \u2014 Procedural Due Process",
+      "authority": "Goldberg v Kelly 397 US 254 (1970)",
+      "remedy": "New hearing with full evidentiary presentation"
+    },
+    {
+      "violation": "Denial of right to cross-examine witnesses",
+      "amendment": "14th Amendment \u2014 Confrontation",
+      "authority": "Greene v McElroy 360 US 474 (1959)",
+      "remedy": "New hearing with cross-examination rights preserved"
+    },
+    {
+      "violation": "Bias and prejudgment of issues",
+      "amendment": "14th Amendment \u2014 Impartial Tribunal",
+      "authority": "Caperton v Massey 556 US 868 (2009)",
+      "remedy": "Disqualification + vacatur of all biased orders"
+    },
+    {
+      "violation": "Retaliation for exercising legal rights",
+      "amendment": "1st Amendment \u2014 Access to Courts",
+      "authority": "Thaddeus-X v Blatter 175 F.3d 378 (6th Cir 1999)",
+      "remedy": "\u00a71983 damages + injunctive relief"
+    },
+    {
+      "violation": "Complete deprivation of parental liberty without adequate process",
+      "amendment": "14th Amendment \u2014 Substantive Due Process",
+      "authority": "Troxel v Granville 530 US 57 (2000) \u2014 fundamental right",
+      "remedy": "Immediate restoration + compensatory damages"
+    },
+    {
+      "violation": "Failure to make required findings of fact",
+      "amendment": "14th Amendment \u2014 Procedural Due Process",
+      "authority": "MCR 3.210(A) \u2014 court must state findings",
+      "remedy": "Remand with instructions to make findings"
+    },
+    {
+      "violation": "Application of incorrect legal standard",
+      "amendment": "14th Amendment \u2014 Due Process",
+      "authority": "Santosky v Kramer 455 US 745 (1982) \u2014 clear and convincing standard",
+      "remedy": "Reversal on appeal \u2014 legal error"
+    },
+    {
+      "violation": "Denial of continuance for preparation",
+      "amendment": "14th Amendment \u2014 Procedural Due Process",
+      "authority": "Ungar v Sarafite 376 US 575 (1964)",
+      "remedy": "New hearing with adequate preparation time"
+    }
+  ],
+  "db_stats": {
+    "judicial_violations": 1127
+  },
+  "total_violations": 10
+}

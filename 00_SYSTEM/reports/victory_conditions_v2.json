@@ -1,0 +1,129 @@
+{
+  "tool_id": 195,
+  "version": 2,
+  "title": "VICTORY CONDITIONS CHECKLIST v2",
+  "subtitle": "Measurable Outcomes Across All 6 Lanes",
+  "lanes": [
+    {
+      "lane": "A \u2014 Custody (2024-001507-DC)",
+      "conditions": [
+        {
+          "condition": "Parenting time RESTORED",
+          "priority": "CRITICAL"
+        },
+        {
+          "condition": "Joint legal custody established",
+          "priority": "HIGH"
+        },
+        {
+          "condition": "Equal parenting time (50/50)",
+          "priority": "HIGH"
+        },
+        {
+          "condition": "Make-up time ordered \u2014 MCL 722.27a(8)",
+          "priority": "HIGH"
+        },
+        {
+          "condition": "Alienation addressed by court order",
+          "priority": "HIGH"
+        },
+        {
+          "condition": "GAL appointed and reports favor Andrew",
+          "priority": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "lane": "B \u2014 Housing (2025-002760-CZ)",
+      "conditions": [
+        {
+          "condition": "Housing rights protected",
+          "priority": "HIGH"
+        },
+        {
+          "condition": "Retaliation stopped",
+          "priority": "MEDIUM"
+        },
+        {
+          "condition": "Damages for housing violations",
+          "priority": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "lane": "D \u2014 PPO (2023-5907-PP)",
+      "conditions": [
+        {
+          "condition": "PPO VACATED as fraudulently obtained",
+          "priority": "CRITICAL"
+        },
+        {
+          "condition": "Emily sanctioned for false allegations",
+          "priority": "HIGH"
+        },
+        {
+          "condition": "Criminal perjury referral \u2014 MCL 750.423",
+          "priority": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "lane": "E \u2014 Judicial Misconduct",
+      "conditions": [
+        {
+          "condition": "McNeill DISQUALIFIED from all Pigors cases",
+          "priority": "CRITICAL"
+        },
+        {
+          "condition": "JTC investigation opened",
+          "priority": "HIGH"
+        },
+        {
+          "condition": "All McNeill orders reviewed de novo",
+          "priority": "HIGH"
+        }
+      ]
+    },
+    {
+      "lane": "F \u2014 Appellate (COA 366810)",
+      "conditions": [
+        {
+          "condition": "COA reverses McNeill's orders",
+          "priority": "HIGH"
+        },
+        {
+          "condition": "Stay of harmful orders pending appeal",
+          "priority": "CRITICAL"
+        },
+        {
+          "condition": "MSC grants leave if COA denies",
+          "priority": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "lane": "C \u2014 Federal \u00a71983 / Convergence",
+      "conditions": [
+        {
+          "condition": "Federal complaint filed and accepted",
+          "priority": "HIGH"
+        },
+        {
+          "condition": "Preliminary injunction for parenting time",
+          "priority": "CRITICAL"
+        },
+        {
+          "condition": "Discovery uncovers conspiracy evidence",
+          "priority": "HIGH"
+        },
+        {
+          "condition": "Compensatory + punitive damages awarded",
+          "priority": "MEDIUM"
+        }
+      ]
+    }
+  ],
+  "ultimate": "L.D.W. has healthy relationship with BOTH parents. Corrupt actors held accountable. System reformed.",
+  "total": 22,
+  "critical": 5
+}

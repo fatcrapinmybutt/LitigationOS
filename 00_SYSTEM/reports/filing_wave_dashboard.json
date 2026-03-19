@@ -1,0 +1,125 @@
+{
+  "tool_id": 198,
+  "title": "FILING WAVE EXECUTION DASHBOARD",
+  "subtitle": "5-Wave Strategy \u2014 Status, Actions, Blockers",
+  "as_of": "2026-03-19 01:10",
+  "waves": [
+    {
+      "wave": 1,
+      "timeframe": "Day 1-3",
+      "cost": "$0",
+      "filings": [
+        {
+          "id": "F3",
+          "name": "Motion to Disqualify Judge McNeill",
+          "status": "GO",
+          "court": "14th Circuit",
+          "blocker": "Andrew must sign affidavit"
+        },
+        {
+          "id": "F6",
+          "name": "JTC Complaint",
+          "status": "GO",
+          "court": "Judicial Tenure Commission",
+          "blocker": "None \u2014 FREE to file"
+        },
+        {
+          "id": "F10",
+          "name": "AG Complaint (Barnes)",
+          "status": "GO",
+          "court": "Attorney Grievance Commission",
+          "blocker": "None \u2014 FREE to file"
+        }
+      ],
+      "strategy": "GATEWAY filings \u2014 F3 opens the door for everything else. F6 and F10 are free, file same day."
+    },
+    {
+      "wave": 2,
+      "timeframe": "Day 3-5",
+      "cost": "$0 (IFP)",
+      "filings": [
+        {
+          "id": "F1",
+          "name": "Emergency Motion for Parenting Time",
+          "status": "REVIEW",
+          "court": "14th Circuit (new judge after F3)",
+          "blocker": "Depends on F3 success; Andrew must sign affidavit"
+        }
+      ],
+      "strategy": "File AFTER new judge is assigned from F3. Emergency motion for immediate parenting time restoration."
+    },
+    {
+      "wave": 3,
+      "timeframe": "Day 7-14",
+      "cost": "$0 (IFP)",
+      "filings": [
+        {
+          "id": "F2",
+          "name": "Motion for Relief \u2014 Fraud Upon Court",
+          "status": "REVIEW",
+          "court": "14th Circuit",
+          "blocker": "Andrew must compile specific fraud instances"
+        },
+        {
+          "id": "F7",
+          "name": "Motion to Modify Custody",
+          "status": "REVIEW",
+          "court": "14th Circuit",
+          "blocker": "Andrew must sign affidavit of changed circumstances"
+        }
+      ],
+      "strategy": "MCR 2.612 fraud motion + custody modification. Present to new judge the full pattern."
+    },
+    {
+      "wave": 4,
+      "timeframe": "Day 14-21",
+      "cost": "$0 (IFP)",
+      "filings": [
+        {
+          "id": "F4",
+          "name": "Federal \u00a71983 Complaint",
+          "status": "REVIEW",
+          "court": "USDC Western District MI",
+          "blocker": "Federal IFP (AO 239) must be filed; PACER registration"
+        },
+        {
+          "id": "F8",
+          "name": "COA Leave Application",
+          "status": "REVIEW",
+          "court": "Michigan Court of Appeals",
+          "blocker": "Andrew must call COA clerk for 366810 status"
+        }
+      ],
+      "strategy": "Federal bypass + appellate escalation. Hit from two directions simultaneously."
+    },
+    {
+      "wave": 5,
+      "timeframe": "Day 21-30",
+      "cost": "$0 (IFP)",
+      "filings": [
+        {
+          "id": "F5",
+          "name": "MSC Original Action",
+          "status": "NOT READY",
+          "court": "Michigan Supreme Court",
+          "blocker": "Needs strongest possible record; may wait for COA ruling"
+        },
+        {
+          "id": "F9",
+          "name": "COA Brief on Merits",
+          "status": "REVIEW",
+          "court": "Michigan Court of Appeals",
+          "blocker": "Confirm brief deadline with COA clerk"
+        }
+      ],
+      "strategy": "MSC superintending control + full COA brief. The nuclear options."
+    }
+  ],
+  "summary": {
+    "total_filings": 10,
+    "GO": 3,
+    "REVIEW": 6,
+    "NOT_READY": 1,
+    "total_cost": "$0 with IFP across all courts"
+  }
+}

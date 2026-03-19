@@ -1,0 +1,136 @@
+{
+  "tool_id": 189,
+  "title": "IN FORMA PAUPERIS (IFP) APPLICATION GUIDE",
+  "subtitle": "Fee Waiver Strategy for ALL Courts \u2014 State + Federal",
+  "courts": [
+    {
+      "court": "Michigan Circuit Court (14th Circuit)",
+      "form": "MC 20 \u2014 Fee Waiver Request",
+      "authority": "MCR 2.002",
+      "requirements": [
+        "Affidavit of indigency (income, assets, expenses, dependents)",
+        "Proof of income (pay stubs, tax returns, benefits statements)",
+        "Proof of government assistance (if applicable)",
+        "List of all assets and liabilities"
+      ],
+      "tips": [
+        "Michigan uses 125% of federal poverty line as guideline",
+        "Single person 2024: $18,225/year ($1,519/month) = auto-qualify",
+        "If above 125% but still unable to afford: explain circumstances in detail",
+        "Include litigation costs already incurred (travel, copies, postage)",
+        "Judge has discretion \u2014 be thorough and honest in the affidavit"
+      ],
+      "fees_waived": [
+        "Filing fees",
+        "Service fees",
+        "Transcript fees (MCR 8.108(3))",
+        "Appeal fees",
+        "Certified copy fees"
+      ]
+    },
+    {
+      "court": "Michigan Court of Appeals",
+      "form": "MC 20 \u2014 same form as circuit court",
+      "authority": "MCR 7.202(6)(c)",
+      "requirements": [
+        "Same MC 20 affidavit of indigency",
+        "If granted at circuit level, COA usually honors it",
+        "If not previously granted, file fresh MC 20 with COA"
+      ],
+      "tips": [
+        "COA filing fee is $375 \u2014 IFP waives this entirely",
+        "File MC 20 WITH the claim of appeal (same day)",
+        "If denied, can file motion for reconsideration within 21 days"
+      ],
+      "fees_waived": [
+        "$375 filing fee",
+        "Transcript ordering fees",
+        "Brief printing/copying fees"
+      ]
+    },
+    {
+      "court": "Michigan Supreme Court",
+      "form": "MC 20 + MSC-specific supplement",
+      "authority": "MCR 7.302(B)",
+      "requirements": [
+        "MC 20 affidavit of indigency",
+        "Prior IFP orders from lower courts (if any)",
+        "Description of case and why review is warranted"
+      ],
+      "tips": [
+        "MSC filing fee is $375 \u2014 IFP waives this",
+        "Include prior IFP grants to show established indigency",
+        "MSC has broad discretion \u2014 focus on meritorious legal issues"
+      ],
+      "fees_waived": [
+        "$375 application fee",
+        "Printing fees",
+        "Service fees"
+      ]
+    },
+    {
+      "court": "Federal Court (USDC Western District Michigan)",
+      "form": "AO 239 \u2014 Application to Proceed Without Prepaying Fees",
+      "authority": "28 USC \u00a71915",
+      "requirements": [
+        "AO 239 affidavit (different from state MC 20)",
+        "Monthly income from ALL sources",
+        "Monthly expenses itemized",
+        "All assets (bank accounts, vehicles, property)",
+        "All debts and obligations",
+        "Employment history (last 12 months)",
+        "Dependents and their ages"
+      ],
+      "tips": [
+        "Federal IFP is broader \u2014 28 USC \u00a71915(a) allows ANY person to apply",
+        "Filing fee is $405 \u2014 IFP waives completely",
+        "Federal courts also waive service of process costs (US Marshal serves for free)",
+        "Pro se litigants get liberal construction \u2014 Haines v Kerner 404 US 519",
+        "If denied, can appeal to magistrate judge, then district judge",
+        "Partial IFP: court may allow installment payments if not fully indigent"
+      ],
+      "fees_waived": [
+        "$405 filing fee",
+        "Service of process fees (US Marshal serves free)",
+        "Transcript fees",
+        "Witness fees",
+        "Appeal fees to 6th Circuit"
+      ]
+    },
+    {
+      "court": "Judicial Tenure Commission (JTC)",
+      "form": "No filing fee",
+      "authority": "Const 1963 Art 6 \u00a730",
+      "requirements": [
+        "NO FEE TO FILE \u2014 JTC complaints are always free",
+        "Standard complaint form available at courts.michigan.gov/jtc"
+      ],
+      "tips": [
+        "JTC complaints are FREE \u2014 no IFP needed",
+        "Focus on specific Canon violations with dates and evidence"
+      ],
+      "fees_waived": [
+        "No fees \u2014 JTC complaints are always free"
+      ]
+    },
+    {
+      "court": "Attorney Grievance Commission (AGC)",
+      "form": "Request for Investigation form",
+      "authority": "MCR 9.104",
+      "requirements": [
+        "NO FEE TO FILE \u2014 grievance complaints are always free",
+        "Standard form available at agc.michigan.gov"
+      ],
+      "tips": [
+        "AGC complaints are FREE \u2014 no IFP needed",
+        "Specify bar number of attorney (Barnes: P55406)",
+        "Include specific MRPC rules violated"
+      ],
+      "fees_waived": [
+        "No fees \u2014 grievance complaints are always free"
+      ]
+    }
+  ],
+  "total_savings": "$1,215+ (circuit $175 + COA $375 + MSC $375 + federal $405) \u2014 all waived with IFP",
+  "total_courts": 6
+}

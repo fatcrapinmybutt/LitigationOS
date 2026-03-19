@@ -1,0 +1,94 @@
+{
+  "tool_id": 187,
+  "title": "PARENTING TIME CALCULATION ENGINE",
+  "subtitle": "Days Lost, Time Owed, and Michigan Law Requirements",
+  "as_of": "2026-03-19",
+  "child": {
+    "initials": "L.D.W.",
+    "dob": "2022-11-09",
+    "age_days": 1226,
+    "age_years": 3.4,
+    "life_percentage_without_father": 18.8
+  },
+  "parenting_time": {
+    "suspension_date": "2025-08-01",
+    "days_since_suspension": 230,
+    "weeks_since_suspension": 32,
+    "months_since_suspension": 7.6
+  },
+  "calculations": [
+    {
+      "metric": "Standard MI Parenting Time",
+      "value": "6 overnights/month",
+      "source": "Michigan Friend of the Court parenting time guidelines"
+    },
+    {
+      "metric": "Total Overnights DENIED",
+      "value": 45,
+      "formula": "7.6 months \u00d7 6 nights/month"
+    },
+    {
+      "metric": "Percentage of L.D.W.'s Life Without Father",
+      "value": "18.8%",
+      "impact": "DEVASTATING \u2014 developmental psychology literature is clear on harm"
+    },
+    {
+      "metric": "Make-Up Time Owed (MCL 722.27a(8))",
+      "value": "45 overnights",
+      "authority": "MCL 722.27a(8) \u2014 court SHALL provide make-up time",
+      "note": "Make-up time is MANDATORY, not discretionary"
+    },
+    {
+      "metric": "Holidays Missed",
+      "value": "Thanksgiving 2025, Christmas 2025, New Year 2026, Easter 2026, July 4 2026",
+      "impact": "Each missed holiday is an additional deprivation"
+    },
+    {
+      "metric": "Birthdays Missed",
+      "value": "L.D.W.'s 3rd birthday (Nov 9, 2025)",
+      "impact": "Father absent from critical milestone \u2014 irreversible harm"
+    }
+  ],
+  "legal_framework": [
+    {
+      "law": "MCL 722.27a(1)",
+      "text": "Parenting time shall be granted in frequency/duration/type reasonably calculated to promote strong relationship",
+      "application": "PRESUMPTION of parenting time \u2014 suspension requires extraordinary findings"
+    },
+    {
+      "law": "MCL 722.27a(3)",
+      "text": "Court may SUSPEND parenting time ONLY if clear and convincing evidence of danger",
+      "application": "No such finding was made \u2014 Emily's ex-parte order was procedurally defective"
+    },
+    {
+      "law": "MCL 722.27a(7)",
+      "text": "Parenting time denied ONLY if preponderance shows child's physical/mental/emotional health endangered",
+      "application": "No evidence of any danger from Andrew \u2014 burden is on Emily"
+    },
+    {
+      "law": "MCL 722.27a(8)",
+      "text": "Court SHALL provide make-up time for wrongfully denied parenting time",
+      "application": "45 overnights of make-up time are MANDATORY"
+    },
+    {
+      "law": "MCR 3.218",
+      "text": "Domestic relations referees may conduct investigations",
+      "application": "Request independent investigation of parenting time fitness"
+    },
+    {
+      "law": "Troxel v Granville 530 US 57 (2000)",
+      "text": "Parental liberty is a fundamental constitutional right",
+      "application": "Strict scrutiny applies to complete deprivation of parenting time"
+    }
+  ],
+  "arguments_for_restoration": [
+    "L.D.W. has been denied ALL contact with father for 230 days",
+    "This represents 18.8% of L.D.W.'s entire life",
+    "Standard parenting time of 45 overnights has been wrongfully denied",
+    "No clear and convincing evidence of danger was ever presented (MCL 722.27a(3))",
+    "Emily's ex-parte motion lacked required statutory findings",
+    "Developmental psychology research unanimously shows harm from parental absence at this age",
+    "Make-up time of 45 overnights is MANDATORY under MCL 722.27a(8)",
+    "Continued separation causes irreversible attachment damage \u2014 immediate restoration is essential"
+  ]
+}

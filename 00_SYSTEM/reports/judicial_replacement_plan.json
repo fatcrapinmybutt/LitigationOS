@@ -1,0 +1,188 @@
+{
+  "tool_id": 181,
+  "title": "JUDICIAL REPLACEMENT TRANSITION PLAN",
+  "subtitle": "Post-Disqualification Roadmap \u2014 What Happens After McNeill Is Removed",
+  "phases": [
+    {
+      "phase": 1,
+      "name": "IMMEDIATE \u2014 Assignment & Stay",
+      "timeframe": "Day 1-7 after disqualification order",
+      "steps": [
+        {
+          "step": 1,
+          "action": "File MCR 2.003 disqualification order with Chief Judge",
+          "authority": "MCR 2.003(D)"
+        },
+        {
+          "step": 2,
+          "action": "Request case reassignment to different judge in 14th Circuit",
+          "authority": "MCR 8.111(C)"
+        },
+        {
+          "step": 3,
+          "action": "If no eligible judge, request assignment from SCAO",
+          "authority": "MCR 8.111(E)"
+        },
+        {
+          "step": 4,
+          "action": "File emergency motion to STAY all McNeill orders pending reassignment",
+          "authority": "MCR 2.614"
+        },
+        {
+          "step": 5,
+          "action": "Serve stay motion on Emily Watson at 2160 Garland Drive, Norton Shores, MI 49441",
+          "note": "Certified mail + email"
+        },
+        {
+          "step": 6,
+          "action": "Request new judge review ALL prior orders for bias contamination",
+          "authority": "MCR 2.612(C)(1)(b)"
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "FIRST HEARING \u2014 Fresh Eyes Review",
+      "timeframe": "Day 7-30",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare judicial bias summary for new judge (max 10 pages)",
+          "note": "Reference McNeill Pattern Analysis tool #175"
+        },
+        {
+          "step": 2,
+          "action": "File motion to vacate ALL orders entered by McNeill",
+          "authority": "MCR 2.612(C)(1)(b) \u2014 newly discovered evidence of bias"
+        },
+        {
+          "step": 3,
+          "action": "Present evidence of McNeill's pattern: 1,127 documented violations",
+          "source": "litigation_context.db judicial_violations table"
+        },
+        {
+          "step": 4,
+          "action": "Request de novo hearing on custody per MCL 722.27",
+          "authority": "Child Custody Act, best interest factors"
+        },
+        {
+          "step": 5,
+          "action": "Request immediate supervised parenting time restoration",
+          "authority": "MCL 722.27a \u2014 parenting time presumption"
+        },
+        {
+          "step": 6,
+          "action": "File motion for psychological evaluation of BOTH parents",
+          "authority": "MCR 3.218"
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "CUSTODY RE-HEARING \u2014 Best Interest Factors",
+      "timeframe": "Day 30-90",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Present 12 best interest factors (MCL 722.23) with evidence for each",
+          "authority": "MCL 722.23(a)-(l)"
+        },
+        {
+          "step": 2,
+          "action": "Demonstrate established custodial environment with Andrew",
+          "note": "L.D.W. lived with Andrew until fraudulent PPO"
+        },
+        {
+          "step": 3,
+          "action": "Present contradiction evidence re: Emily's credibility",
+          "note": "1,061 contradictions from tool #178"
+        },
+        {
+          "step": 4,
+          "action": "Present evidence of parental alienation per Factor (j)",
+          "authority": "MCL 722.23(j) \u2014 willingness to facilitate close relationship"
+        },
+        {
+          "step": 5,
+          "action": "Request GAL appointment for L.D.W.",
+          "authority": "MCL 722.24"
+        },
+        {
+          "step": 6,
+          "action": "Present Andrew's 26 documented strengths (tool #157)",
+          "note": "10/12 best interest factors favorable"
+        }
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "ORDER VACATUR \u2014 Cleaning the Slate",
+      "timeframe": "Day 90-120",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Move to vacate PPO (2023-5907-PP) as fraudulently obtained",
+          "authority": "MCR 2.612(C)(1)(c) \u2014 fraud"
+        },
+        {
+          "step": 2,
+          "action": "Move to vacate Emily's Aug 2025 ex-parte order",
+          "authority": "MCR 2.612(C)(1)(d) \u2014 void (no required findings per MCL 722.27a(3))"
+        },
+        {
+          "step": 3,
+          "action": "Request recalculation of child support from correct baseline",
+          "authority": "Michigan Child Support Formula Manual"
+        },
+        {
+          "step": 4,
+          "action": "Request attorney fee reimbursement for Barnes's misconduct",
+          "authority": "MCR 2.114(E) \u2014 sanctions for frivolous filings"
+        },
+        {
+          "step": 5,
+          "action": "File motion for costs incurred due to judicial bias",
+          "authority": "MCL 600.2445"
+        }
+      ]
+    },
+    {
+      "phase": 5,
+      "name": "LONG-TERM STABILIZATION",
+      "timeframe": "Day 120+",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Establish regular parenting time schedule",
+          "note": "Per Michigan Friend of the Court guidelines"
+        },
+        {
+          "step": 2,
+          "action": "Request joint legal custody",
+          "authority": "MCL 722.26a \u2014 custody presumption"
+        },
+        {
+          "step": 3,
+          "action": "Monitor compliance with new orders",
+          "note": "Use Order Compliance Monitor tool"
+        },
+        {
+          "step": 4,
+          "action": "Continue federal \u00a71983 action for damages",
+          "note": "Separate from state custody proceedings"
+        },
+        {
+          "step": 5,
+          "action": "Continue JTC complaint against McNeill",
+          "note": "Independent of custody outcome"
+        }
+      ]
+    }
+  ],
+  "db_stats": {
+    "judicial_violations": 1127,
+    "contradictions": 7
+  },
+  "total_steps": 28,
+  "total_phases": 5
+}

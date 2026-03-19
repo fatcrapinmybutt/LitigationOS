@@ -1,0 +1,168 @@
+{
+  "tool_id": 194,
+  "title": "REUNIFICATION PROTOCOL \u2014 ANDREW & L.D.W.",
+  "subtitle": "Graduated Reintroduction Based on Attachment Theory + Michigan Guidelines",
+  "phases": [
+    {
+      "phase": 1,
+      "name": "REINTRODUCTION (Week 1-2)",
+      "goal": "Reestablish father-child bond in safe, structured setting",
+      "schedule": [
+        {
+          "day": "Day 1-3",
+          "activity": "2-hour supervised visits at neutral location (library, park)",
+          "frequency": "Every other day"
+        },
+        {
+          "day": "Day 4-7",
+          "activity": "3-hour visits, child-led play, no pressure",
+          "frequency": "Every other day"
+        },
+        {
+          "day": "Week 2",
+          "activity": "4-hour visits including meal together",
+          "frequency": "3x per week"
+        }
+      ],
+      "guidelines": [
+        "Let L.D.W. set the pace \u2014 no forcing physical contact",
+        "Bring familiar toys/items from before separation",
+        "Keep routine predictable \u2014 same time, same location",
+        "No negative talk about Emily \u2014 EVER (MCL 722.23(j))",
+        "Document each visit: duration, child's mood, activities"
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "BUILDING COMFORT (Week 3-4)",
+      "goal": "Transition to unsupervised visits at Andrew's home",
+      "schedule": [
+        {
+          "day": "Week 3",
+          "activity": "Full-day visits (8 hours) at Andrew's home",
+          "frequency": "2x per week"
+        },
+        {
+          "day": "Week 3",
+          "activity": "Include one meal preparation together",
+          "frequency": "Each visit"
+        },
+        {
+          "day": "Week 4",
+          "activity": "First overnight stay (Friday to Saturday)",
+          "frequency": "1x this week"
+        },
+        {
+          "day": "Week 4",
+          "activity": "Continue daytime visits",
+          "frequency": "2x additional"
+        }
+      ],
+      "guidelines": [
+        "Set up L.D.W.'s room with familiar items",
+        "Establish bedtime routine immediately",
+        "FaceTime/video calls on non-visit days",
+        "Share photos of visits with court/evaluator if required"
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "STANDARD PARENTING TIME (Week 5-8)",
+      "goal": "Achieve Michigan standard parenting time schedule",
+      "schedule": [
+        {
+          "day": "Every other weekend",
+          "activity": "Friday 6pm to Sunday 6pm",
+          "frequency": "Bi-weekly"
+        },
+        {
+          "day": "Wednesday",
+          "activity": "After school/daycare to 8pm",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Holidays",
+          "activity": "Per Michigan FOC holiday schedule",
+          "frequency": "As applicable"
+        }
+      ],
+      "guidelines": [
+        "This is the MINIMUM standard per Michigan FOC guidelines",
+        "Exchange locations should be neutral (police station, school)",
+        "Maintain communication log for all exchanges",
+        "Begin make-up time calculation \u2014 MCL 722.27a(8)"
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "EXPANDED TIME + MAKE-UP (Month 3-6)",
+      "goal": "Recover lost parenting time + establish 50/50 schedule",
+      "schedule": [
+        {
+          "day": "Alternating weeks",
+          "activity": "Move toward week-on/week-off",
+          "frequency": "Bi-weekly"
+        },
+        {
+          "day": "Make-up time",
+          "activity": "Additional overnights per MCL 722.27a(8)",
+          "frequency": "As ordered"
+        },
+        {
+          "day": "Extended holidays",
+          "activity": "1-2 week blocks during school breaks",
+          "frequency": "Per schedule"
+        }
+      ],
+      "guidelines": [
+        "Make-up time is MANDATORY \u2014 court SHALL grant it",
+        "Document all denied or shortened visits for make-up calculation",
+        "Request modification to joint physical custody if going well",
+        "File motion for equal parenting time if Emily resists"
+      ]
+    },
+    {
+      "phase": 5,
+      "name": "LONG-TERM STABILITY (Month 6+)",
+      "goal": "Established co-parenting relationship with equal time",
+      "schedule": [
+        {
+          "day": "Equal time",
+          "activity": "50/50 or per agreed schedule",
+          "frequency": "Ongoing"
+        },
+        {
+          "day": "Communication",
+          "activity": "Use OurFamilyWizard or similar co-parenting app",
+          "frequency": "Daily as needed"
+        }
+      ],
+      "guidelines": [
+        "Maintain detailed records of all exchanges and communications",
+        "If alienation continues, file for primary custody",
+        "Continue therapy for L.D.W. if recommended",
+        "Annual review of parenting plan per court order"
+      ]
+    }
+  ],
+  "professional_support": [
+    {
+      "role": "Family therapist",
+      "purpose": "Facilitate reunification, assess attachment recovery"
+    },
+    {
+      "role": "Guardian ad litem (GAL)",
+      "purpose": "Independent assessment of L.D.W.'s best interests \u2014 MCL 722.24"
+    },
+    {
+      "role": "Parenting coordinator",
+      "purpose": "Resolve day-to-day co-parenting disputes without court"
+    },
+    {
+      "role": "Child psychologist",
+      "purpose": "Assess developmental impact of separation and recovery trajectory"
+    }
+  ],
+  "total_phases": 5,
+  "total_steps": 36
+}
