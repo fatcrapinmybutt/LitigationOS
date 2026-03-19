@@ -1,0 +1,68 @@
+{
+  "generated": "2026-03-18T23:36:55.925807",
+  "tool": "Service of Process Planner (#83)",
+  "total_serve_actions": 12,
+  "total_cost": 285,
+  "filings": {
+    "F1": {
+      "name": "Emergency Parenting Time Motion",
+      "court": "14th Circuit Court",
+      "parties_to_serve": 1,
+      "cost": 75
+    },
+    "F2": {
+      "name": "Motion to Set Aside (Fraud)",
+      "court": "14th Circuit Court",
+      "parties_to_serve": 1,
+      "cost": 75
+    },
+    "F3": {
+      "name": "Motion for Disqualification",
+      "court": "14th Circuit Court",
+      "parties_to_serve": 2,
+      "cost": 10
+    },
+    "F4": {
+      "name": "\u00a71983 Federal Complaint",
+      "court": "USDC Western District MI",
+      "parties_to_serve": 3,
+      "cost": 0
+    },
+    "F5": {
+      "name": "MSC Complaint for Superintending Control",
+      "court": "Michigan Supreme Court",
+      "parties_to_serve": 2,
+      "cost": 30
+    },
+    "F6": {
+      "name": "JTC Complaint",
+      "court": "Judicial Tenure Commission",
+      "parties_to_serve": 0,
+      "cost": 0
+    },
+    "F7": {
+      "name": "Motion to Modify Custody",
+      "court": "14th Circuit Court",
+      "parties_to_serve": 1,
+      "cost": 75
+    },
+    "F8": {
+      "name": "COA Application for Leave",
+      "court": "Court of Appeals",
+      "parties_to_serve": 1,
+      "cost": 10
+    },
+    "F9": {
+      "name": "COA Appeal Brief",
+      "court": "Court of Appeals",
+      "parties_to_serve": 1,
+      "cost": 10
+    },
+    "F10": {
+      "name": "AGC Grievance",
+      "court": "Attorney Grievance Commission",
+      "parties_to_serve": 0,
+      "cost": 0
+    }
+  }
+}

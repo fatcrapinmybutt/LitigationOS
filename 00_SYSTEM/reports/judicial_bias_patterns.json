@@ -1,0 +1,21 @@
+{
+  "generated": "2026-03-18T23:33:24.450234",
+  "tool": "Judicial Bias Pattern Detector (#80)",
+  "total_violations": 1127,
+  "bias_score": 5.9,
+  "indicators": {
+    "volume": 10,
+    "severity": 10,
+    "pattern": 0,
+    "temporal": 0,
+    "exparte": 9.7
+  },
+  "top_types": {},
+  "severity": {
+    "medium": 484,
+    "critical": 377,
+    "high": 243,
+    "low": 23
+  },
+  "exparte_evidence": 193
+}

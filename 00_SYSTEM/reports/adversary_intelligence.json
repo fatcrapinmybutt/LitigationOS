@@ -1,0 +1,26 @@
+{
+  "generated": "2026-03-18T23:34:34.560847",
+  "tool": "Opposing Counsel Intelligence (#81)",
+  "db_intelligence": {
+    "contradictions": 1061,
+    "perjury_items": 5821,
+    "evidence_quotes": 36891
+  },
+  "profiles": {
+    "jennifer_barnes": {
+      "name": "Jennifer Barnes",
+      "role": "Emily's Former Attorney",
+      "status": "WITHDREW from representation"
+    },
+    "ronald_berry": {
+      "name": "Ronald T. Berry",
+      "role": "Emily's Boyfriend/Domestic Partner",
+      "status": "Active \u2014 living with Emily and L.D.W."
+    },
+    "emily_watson": {
+      "name": "Emily A. Watson",
+      "role": "Defendant",
+      "status": "Currently unrepresented (Barnes withdrew)"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "generated": "2026-03-18T23:26:47.786633",
+  "tool": "Motion to Dismiss Defense Kit (#73)",
+  "total_defenses": 12,
+  "filings_covered": 6,
+  "defenses": {
+    "F1": {
+      "filing": "Emergency Parenting Time Motion",
+      "likely_mtd": [
+        {
+          "argument": "Res judicata \u2014 custody already adjudicated",
+          "rebuttal": "MCL 722.27(1)(c) allows modification upon showing of proper cause or change of circumstances. The August 2025 ex-parte order suspending ALL parenting time is itself the changed circumstance.",
+          "authority": "Vodvarka v Grasmeyer, 259 Mich App 499 (2003)"
+        },
+        {
+          "argument": "No emergency exists \u2014 child is safe with mother",
+          "rebuttal": "Emergency is the complete denial of parental contact. MCL 722.27a(7) recognizes that denial of parenting time IS an emergency requiring immediate judicial attention. 45+ days without contact causes irreparable harm to parent-child bond.",
+          "authority": "MCL 722.27a(7); Troxel v Granville, 530 US 57 (2000)"
+        }
+      ]
+    },
+    "F2": {
+      "filing": "Fraud Upon the Court",
+      "likely_mtd": [
+        {
+          "argument": "Failure to state a claim \u2014 MCR 2.116(C)(8)",
+          "rebuttal": "Complaint specifically alleges: (1) false statements under oath in PPO petition, (2) fabricated evidence (straw incident), (3) conspiracy between Watson, Berry, and Barnes to deprive parental rights. These are cognizable fraud claims under MCR 2.612(C)(1)(c) and (C)(3).",
+          "authority": "MCR 2.612(C)(1)(c), (C)(3); Wilkinson v Lee, unpub (Mich App 2018)"
+        },
+        {
+          "argument": "Time-barred \u2014 MCR 2.612(C)(1) one-year limit",
+          "rebuttal": "MCR 2.612(C)(3) provides an independent action for fraud upon the court with NO time limit. Additionally, the fraud is ongoing (continuing violation doctrine) as the fraudulent PPO and orders remain in effect.",
+          "authority": "MCR 2.612(C)(3); Hazel Park v Highland Park, 350 Mich 46 (1957)"
+        },
+        {
+          "argument": "Litigation privilege \u2014 statements in court proceedings are privileged",
+          "rebuttal": "Litigation privilege does not protect perjury or fraud upon the court. False statements made knowingly in judicial proceedings are criminal acts (MCL 750.423), not privileged communications.",
+          "authority": "MCL 750.423; Friedman v Dozorc, 412 Mich 1 (1981)"
+        }
+      ]
+    },
+    "F3": {
+      "filing": "Judicial Disqualification",
+      "likely_mtd": [
+        {
+          "argument": "Insufficient showing of bias \u2014 mere adverse rulings",
+          "rebuttal": "This is not about individual rulings. The motion documents a PATTERN of cumulative bias: ex-parte orders without hearing, ex-parte communications through Rusco, denial of due process, and appearance of impropriety. Armstrong v Ypsilanti holds that a pattern of rulings CAN establish bias.",
+          "authority": "Armstrong v Ypsilanti Charter Twp, 248 Mich App 573 (2001); Crampton v Dept of State, 395 Mich 347 (1975)"
+        }
+      ]
+    },
+    "F4": {
+      "filing": "42 USC \u00a71983 Federal Complaint",
+      "likely_mtd": [
+        {
+          "argument": "Younger abstention \u2014 federal court should abstain from interfering with state proceedings",
+          "rebuttal": "Sprint Communications v Jacobs, 571 US 69 (2013) limits Younger to three categories: (1) criminal prosecutions, (2) civil enforcement proceedings akin to criminal, (3) contempt. A custody case is NONE of these. Additionally, the bad faith exception to Younger applies when state proceedings are conducted in bad faith.",
+          "authority": "Sprint Communications v Jacobs, 571 US 69 (2013); Middlesex County Ethics Comm v Garden State Bar, 457 US 423 (1982)"
+        },
+        {
+          "argument": "Domestic relations exception \u2014 federal courts lack jurisdiction",
+          "rebuttal": "Ankenbrandt v Richards, 504 US 689 (1992) holds the DRE is NARROW \u2014 limited to divorce, alimony, and child custody DECREES. Claims for constitutional violations (due process, equal protection) under \u00a71983 are NOT barred. Catz v Chalker, 142 F.3d 279 (6th Cir 1998) specifically holds \u00a71983 claims arising from custody interference are actionable in federal court.",
+          "authority": "Ankenbrandt v Richards, 504 US 689 (1992); Catz v Chalker, 142 F.3d 279 (6th Cir 1998)"
+        },
+        {
+          "argument": "Judicial immunity \u2014 McNeill immune from \u00a71983 suit",
+          "rebuttal": "While judges have absolute immunity for judicial acts, Dennis v Sparks, 449 US 24 (1981) holds that co-conspirators who corrupt the judicial process do NOT share immunity. If McNeill acted in concert with private parties (Watson, Berry) to deprive constitutional rights, the conspiracy pierces immunity.",
+          "authority": "Dennis v Sparks, 449 US 24 (1981); Stump v Sparkman, 435 US 349 (1978)"
+        },
+        {
+          "argument": "Rooker-Feldman doctrine \u2014 cannot use federal court to appeal state decisions",
+          "rebuttal": "Rooker-Feldman only bars claims that are \"inextricably intertwined\" with state court judgments. An independent \u00a71983 claim for constitutional violations (due process, conspiracy) is a separate cause of action, not an appeal of the state judgment. Exxon Mobil Corp v Saudi Basic Industries Corp, 544 US 280 (2005).",
+          "authority": "Exxon Mobil Corp v Saudi Basic Industries Corp, 544 US 280 (2005); McCormick v Braverman, 451 F.3d 382 (6th Cir 2006)"
+        }
+      ]
+    },
+    "F5": {
+      "filing": "MSC Superintending Control",
+      "likely_mtd": [
+        {
+          "argument": "Adequate remedy at law \u2014 appeal to COA available",
+          "rebuttal": "Superintending control is appropriate where the lower court has committed a clear legal error and there is no adequate appellate remedy. The ongoing deprivation of parental rights without due process constitutes extraordinary circumstances warranting original jurisdiction.",
+          "authority": "Const 1963 Art 6 \u00a74; Plachta v Pub Corp, 289 Mich App 252 (2010)"
+        }
+      ]
+    },
+    "F7": {
+      "filing": "Custody Modification",
+      "likely_mtd": [
+        {
+          "argument": "No proper cause or change in circumstances",
+          "rebuttal": "The August 2025 ex-parte order completely eliminating parenting time IS the change in circumstances. Additionally, Emily's fraud in obtaining initial orders, Berry's cohabitation, and the passage of time all constitute proper cause under Vodvarka v Grasmeyer.",
+          "authority": "Vodvarka v Grasmeyer, 259 Mich App 499 (2003); MCL 722.27(1)(c)"
+        }
+      ]
+    }
+  }
+}

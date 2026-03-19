@@ -1,0 +1,1013 @@
+{
+  "generated": "2026-03-18T23:24:39.572551",
+  "tool": "Redaction Engine (#70)",
+  "files_scanned": 103,
+  "total_findings": 147,
+  "critical": 0,
+  "high": 2,
+  "info": 110,
+  "needs_redaction": 2,
+  "flag_only": 145,
+  "findings": [
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION\\01_MAIN_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 183,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION\\01_MAIN_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 222,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION\\01_MAIN_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION\\02_AFFIDAVIT.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 35,
+      "context": "2. I reside at 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445. My telepho",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION\\02_AFFIDAVIT.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 241,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 280,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 297,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 329,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10_COA_EMERGENCY_MOTION\\ASSEMBLED_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\01_MAIN_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 10,
+      "context": "Phone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\01_MAIN_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 265,
+      "context": "Phone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\01_MAIN_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 483,
+      "context": "Phone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\01_MAIN_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\02_AFFIDAVIT.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 37,
+      "context": "2. I reside at 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445. My telepho",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\02_AFFIDAVIT.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\07_FORM_FILL_GUIDE.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 13,
+      "context": "| Plaintiff telephone | (231) 903-5690 |",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\07_FORM_FILL_GUIDE.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 32,
+      "context": "| Plaintiff telephone | (231) 903-5690 |",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\07_FORM_FILL_GUIDE.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 55,
+      "context": "| Plaintiff telephone | (231) 903-5690 |",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\07_FORM_FILL_GUIDE.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\09_IFP_APPLICATION.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 15,
+      "context": "- Phone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\11_COURTROOM_PROTOCOL.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 724-6241",
+      "line": 9,
+      "context": "**Phone:** (231) 724-6241",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\11_COURTROOM_PROTOCOL.md",
+      "rule": "Phone Number (personal)",
+      "match": "(616) 456-2381",
+      "line": 24,
+      "context": "**Phone:** (616) 456-2381",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\11_COURTROOM_PROTOCOL.md",
+      "rule": "Phone Number (personal)",
+      "match": "(517) 373-0786",
+      "line": 40,
+      "context": "**Phone:** (517) 373-0786",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 95,
+      "context": "Phone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 350,
+      "context": "Phone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 568,
+      "context": "Phone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 616,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 652,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1_EMERGENCY_TRO\\ASSEMBLED_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\01_MAIN_FILING.md",
+      "rule": "Financial Account",
+      "match": "Account #33700",
+      "line": 102,
+      "context": "16. Defendants systematically manipulated Plaintiff's payment ledger to fabricat",
+      "severity": "HIGH",
+      "mcr": "MCR 8.119(D)(2)",
+      "flag_only": false
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\01_MAIN_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 10,
+      "context": "Phone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\01_MAIN_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\02_AFFIDAVIT.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 36,
+      "context": "2. I reside at 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445. My telepho",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\02_AFFIDAVIT.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\07_FORM_FILL_GUIDE.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 13,
+      "context": "| Plaintiff telephone | (231) 903-5690 |",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\07_FORM_FILL_GUIDE.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 32,
+      "context": "| Plaintiff telephone | (231) 903-5690 |",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\07_FORM_FILL_GUIDE.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 51,
+      "context": "| Plaintiff telephone | (231) 903-5690 |",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\07_FORM_FILL_GUIDE.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Financial Account",
+      "match": "Account #33700",
+      "line": 217,
+      "context": "16. Defendants systematically manipulated Plaintiff's payment ledger to fabricat",
+      "severity": "HIGH",
+      "mcr": "MCR 8.119(D)(2)",
+      "flag_only": false
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 117,
+      "context": "Phone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "001-200-0064",
+      "line": 163,
+      "context": "2. **Defendant Shady Oaks Park MHP LLC** (\"Shady Oaks\") is a New Jersey limited ",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 732,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 759,
+      "context": "Phone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 779,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 815,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2_SHADY_OAKS_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\01C_SUPPORTING_DOCUMENTS.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 15,
+      "context": "\u00b6 93. I am the biological father of L.D.W. (DOB November 9, 2022). I have appear",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\01C_SUPPORTING_DOCUMENTS.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 204,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\01C_SUPPORTING_DOCUMENTS.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\02_AFFIDAVIT.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 37,
+      "context": "2. I reside at 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445. My telepho",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\02_AFFIDAVIT.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\07_FORM_FILL_GUIDE.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 13,
+      "context": "| Plaintiff telephone | (231) 903-5690 |",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\07_FORM_FILL_GUIDE.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 32,
+      "context": "| Plaintiff telephone | (231) 903-5690 |",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\07_FORM_FILL_GUIDE.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\11_COURTROOM_PROTOCOL.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 724-6241",
+      "line": 9,
+      "context": "**Phone:** (231) 724-6241",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\11_COURTROOM_PROTOCOL.md",
+      "rule": "Phone Number (personal)",
+      "match": "(616) 456-2381",
+      "line": 24,
+      "context": "**Phone:** (616) 456-2381",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\11_COURTROOM_PROTOCOL.md",
+      "rule": "Phone Number (personal)",
+      "match": "(517) 373-0786",
+      "line": 40,
+      "context": "**Phone:** (517) 373-0786",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 778,
+      "context": "\u00b6 93. I am the biological father of L.D.W. (DOB November 9, 2022). I have appear",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 1050,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 1071,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 1107,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3_DISQUALIFICATION_MCR_2003\\ASSEMBLED_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\01_MAIN_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 71,
+      "context": "12\\. **Andrew James Pigors** is a natural person and citizen of the State of Mic",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\01_MAIN_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 764,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\01_MAIN_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\02_AFFIDAVIT.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 36,
+      "context": "2. I reside at 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445. My telepho",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\02_AFFIDAVIT.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 219,
+      "context": "12\\. **Andrew James Pigors** is a natural person and citizen of the State of Mic",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 912,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 1042,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 1074,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\01_MAIN_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 53,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\01_MAIN_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\02_AFFIDAVIT.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 35,
+      "context": "2. I reside at 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445. My telepho",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\02_AFFIDAVIT.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 343,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 1632,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 1876,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 724-6289",
+      "line": 2196,
+      "context": "| **Phone** | (231) 724-6289 |",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 724-6251",
+      "line": 2226,
+      "context": "| **Phone** | (231) 724-6251 |",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 2244,
+      "context": "Telephone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 2355,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 2391,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5_MSC_ORIGINAL_ACTION\\ASSEMBLED_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\01_MAIN_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 22,
+      "context": "| **Telephone:** | (231) 903-5690 |",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\01_MAIN_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 535,
+      "context": "**Telephone:** (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\01_MAIN_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 566,
+      "context": "Phone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\01_MAIN_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\02_AFFIDAVIT.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 35,
+      "context": "2. I reside at 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445. My telepho",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\02_AFFIDAVIT.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 124,
+      "context": "| **Telephone:** | (231) 903-5690 |",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 637,
+      "context": "**Telephone:** (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 668,
+      "context": "Phone: (231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 708,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 740,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6_JTC_COMPLAINT\\ASSEMBLED_FILING.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F7_CUSTODY_MODIFICATION\\01C_SUPPORTING_DOCUMENTS.md",
+      "rule": "Phone Number (personal)",
+      "match": "(231) 903-5690",
+      "line": 135,
+      "context": "(231) 903-5690",
+      "severity": "INFO",
+      "mcr": "MCR 8.119(H) (minor context)",
+      "flag_only": true
+    },
+    {
+      "file": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F7_CUSTODY_MODIFICATION\\01C_SUPPORTING_DOCUMENTS.md",
+      "rule": "FILE_ERROR",
+      "match": "'mcr'",
+      "line": 0,
+      "context": "Could not read file",
+      "severity": "ERROR",
+      "mcr": "N/A",
+      "flag_only": true
+    }
+  ]
+}

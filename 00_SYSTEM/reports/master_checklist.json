@@ -1,0 +1,21 @@
+{
+  "generated": "2026-03-18T23:19:14.347359",
+  "tool": "Master Action Checklist (#68)",
+  "package_files": 103,
+  "pdfs": 87,
+  "tools": 100,
+  "reports": 132,
+  "phases": 7,
+  "packages": {
+    "PKG_F10_COA_EMERGENCY_MOTION": 8,
+    "PKG_F1_EMERGENCY_TRO": 12,
+    "PKG_F2_SHADY_OAKS_COMPLAINT": 9,
+    "PKG_F3_DISQUALIFICATION_MCR_2003": 13,
+    "PKG_F4_FEDERAL_S1983_COMPLAINT": 9,
+    "PKG_F5_MSC_ORIGINAL_ACTION": 11,
+    "PKG_F6_JTC_COMPLAINT": 8,
+    "PKG_F7_CUSTODY_MODIFICATION": 13,
+    "PKG_F8_PPO_TERMINATION": 9,
+    "PKG_F9_COA_BRIEF_ON_APPEAL": 11
+  }
+}

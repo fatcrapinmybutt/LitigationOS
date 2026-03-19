@@ -1,0 +1,109 @@
+{
+  "generated": "2026-03-18T23:36:12.180642",
+  "tool": "Filing Word Count Checker (#82)",
+  "total_words": 0,
+  "over_limit": 0,
+  "words_per_page": 250,
+  "filings": {
+    "PKG_F1": {
+      "name": "Emergency Parenting Time",
+      "court": "14th Circuit",
+      "words": 0,
+      "est_pages": 0.0,
+      "max_pages": 20,
+      "rule": "MCR 2.119(A)(2)",
+      "status": "ok",
+      "files": 0
+    },
+    "PKG_F2": {
+      "name": "Fraud on Court",
+      "court": "14th Circuit",
+      "words": 0,
+      "est_pages": 0.0,
+      "max_pages": 20,
+      "rule": "MCR 2.119(A)(2)",
+      "status": "ok",
+      "files": 0
+    },
+    "PKG_F3": {
+      "name": "Judicial Disqualification",
+      "court": "14th Circuit",
+      "words": 0,
+      "est_pages": 0.0,
+      "max_pages": 20,
+      "rule": "MCR 2.119(A)(2)",
+      "status": "ok",
+      "files": 0
+    },
+    "PKG_F4": {
+      "name": "\u00a71983 Federal Complaint",
+      "court": "USDC WDMI",
+      "words": 0,
+      "est_pages": 0.0,
+      "max_pages": 25,
+      "rule": "Local Rule 7.1(d)",
+      "status": "ok",
+      "files": 0
+    },
+    "PKG_F5": {
+      "name": "MSC Superintending Control",
+      "court": "MSC",
+      "words": 0,
+      "est_pages": 0.0,
+      "max_pages": 50,
+      "rule": "MCR 7.305(A)",
+      "status": "ok",
+      "files": 0
+    },
+    "PKG_F6": {
+      "name": "JTC Complaint",
+      "court": "JTC",
+      "words": 0,
+      "est_pages": 0.0,
+      "max_pages": 50,
+      "rule": "JTC Rule 4 (no strict limit)",
+      "status": "ok",
+      "files": 0
+    },
+    "PKG_F7": {
+      "name": "Custody Modification",
+      "court": "14th Circuit",
+      "words": 0,
+      "est_pages": 0.0,
+      "max_pages": 20,
+      "rule": "MCR 2.119(A)(2)",
+      "status": "ok",
+      "files": 0
+    },
+    "PKG_F8": {
+      "name": "COA Leave Application",
+      "court": "COA",
+      "words": 0,
+      "est_pages": 0.0,
+      "max_pages": 50,
+      "rule": "MCR 7.305(A)",
+      "status": "ok",
+      "files": 0
+    },
+    "PKG_F9": {
+      "name": "COA Appeal Brief",
+      "court": "COA",
+      "words": 0,
+      "est_pages": 0.0,
+      "max_pages": 50,
+      "rule": "MCR 7.212(B)",
+      "status": "ok",
+      "files": 0
+    },
+    "PKG_F10": {
+      "name": "AGC Complaint",
+      "court": "AGC",
+      "words": 0,
+      "est_pages": 0.0,
+      "max_pages": 50,
+      "rule": "No strict limit",
+      "status": "ok",
+      "files": 0
+    }
+  }
+}

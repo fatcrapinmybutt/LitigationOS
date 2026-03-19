@@ -1,0 +1,56 @@
+{
+  "generated": "2026-03-18T23:27:01.635204",
+  "tool": "Judicial Recusal Argument Builder (#72)",
+  "argument": {
+    "title": "MOTION FOR DISQUALIFICATION OF HON. JENNY L. McNEILL",
+    "authority": "MCR 2.003(C)(1)",
+    "standard": "A reasonable person, knowing all the circumstances, would harbor a reasonable fear of lack of impartiality. Crampton v Dept of State, 395 Mich 347 (1975).",
+    "factors": {
+      "C1a": {
+        "factor": "Personal bias or prejudice concerning a party",
+        "mcr": "MCR 2.003(C)(1)(a)",
+        "key_facts": [
+          "Pattern of ruling against father on every motion",
+          "Granted Emily's ex-parte motions without hearing",
+          "Denied Andrew's motions without stated basis",
+          "Hostile demeanor toward pro se father"
+        ]
+      },
+      "C1b": {
+        "factor": "Personal knowledge of disputed evidentiary facts",
+        "mcr": "MCR 2.003(C)(1)(b)",
+        "key_facts": [
+          "Received ex-parte communications through Pamela Rusco",
+          "Relied on information not in the record",
+          "Made factual findings without evidentiary hearing"
+        ]
+      },
+      "appearance": {
+        "factor": "Appearance of impropriety (Canon 2, MI Code of Judicial Conduct)",
+        "mcr": "Canon 2, Rule 2.11",
+        "key_facts": [
+          "Reasonable person would question impartiality",
+          "Pattern establishes cumulative bias (Armstrong v Ypsilanti)",
+          "Ex-parte orders without required findings (MCL 722.27a(3))",
+          "Failure to recuse despite documented pattern"
+        ]
+      }
+    },
+    "evidence_counts": {
+      "total_violations": 1127,
+      "docket_events": 221,
+      "de_error": "no such column: description",
+      "exparte_evidence": 193
+    },
+    "authorities": [
+      "MCR 2.003(C)(1)(a)-(f) \u2014 Grounds for disqualification",
+      "Crampton v Dept of State, 395 Mich 347 (1975) \u2014 Objective bias test",
+      "Armstrong v Ypsilanti Charter Twp, 248 Mich App 573 (2001) \u2014 Pattern establishes bias",
+      "In re Dougherty, 429 Mich 81 (1987) \u2014 Contemnor must be heard",
+      "Canon 2, MI Code of Judicial Conduct \u2014 Appearance of impropriety",
+      "Rule 2.11, MI Rules of Judicial Conduct \u2014 Disqualification required",
+      "Liteky v United States, 510 US 540 (1994) \u2014 Extrajudicial source doctrine",
+      "In re MKK, 286 Mich App 546 (2009) \u2014 Cumulative errors require reversal"
+    ]
+  }
+}

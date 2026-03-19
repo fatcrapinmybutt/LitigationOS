@@ -1,0 +1,33 @@
+{
+  "generated": "2026-03-18T23:30:57.534435",
+  "tool": "Damages Recovery Calculator (#77)",
+  "conservative_total": 141025,
+  "aggressive_total": 1003830,
+  "categories": {
+    "compensatory": {
+      "name": "Compensatory Damages (\u00a71983)",
+      "conservative": 105000,
+      "aggressive": 550000
+    },
+    "punitive": {
+      "name": "Punitive Damages",
+      "conservative": 25000,
+      "aggressive": 250000
+    },
+    "statutory": {
+      "name": "Statutory Damages",
+      "conservative": 10000,
+      "aggressive": 150000
+    },
+    "costs": {
+      "name": "Recoverable Costs",
+      "conservative": 1025,
+      "aggressive": 3830
+    },
+    "fees": {
+      "name": "Attorney Fees (\u00a71988)",
+      "conservative": 0,
+      "aggressive": 50000
+    }
+  }
+}

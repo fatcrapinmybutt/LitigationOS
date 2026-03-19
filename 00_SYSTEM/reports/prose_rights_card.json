@@ -1,0 +1,28 @@
+{
+  "generated": "2026-03-18T23:31:55.710485",
+  "tool": "Pro Se Rights Quick Reference (#78)",
+  "total_rights": 28,
+  "categories": 5,
+  "rights": {
+    "constitutional": {
+      "title": "\ud83c\uddfa\ud83c\uddf8 Constitutional Rights",
+      "count": 4
+    },
+    "michigan_court": {
+      "title": "\u2696\ufe0f Michigan Court Rights",
+      "count": 8
+    },
+    "federal_court": {
+      "title": "\ud83c\udfdb\ufe0f Federal Court Rights",
+      "count": 5
+    },
+    "hearing": {
+      "title": "\ud83c\udfa4 At Hearings / In Court",
+      "count": 6
+    },
+    "protections": {
+      "title": "\ud83d\udee1\ufe0f Key Protections",
+      "count": 5
+    }
+  }
+}

@@ -1,0 +1,512 @@
+{
+  "generated": "2026-03-18T23:24:39.556929",
+  "tool": "E-Filing Package Assembler (#71)",
+  "filings": {
+    "F1": {
+      "name": "Emergency Parenting Time Motion",
+      "court": "14th Circuit Court, Family Division",
+      "system": "MiFILE",
+      "case_no": "2024-001507-DC",
+      "documents": [
+        [
+          "01_MAIN_FILING.md",
+          "Motion for Emergency Parenting Time",
+          true
+        ],
+        [
+          "02_AFFIDAVIT.md",
+          "Supporting Affidavit",
+          true
+        ],
+        [
+          "03_EXHIBIT_INDEX.md",
+          "Exhibit Index",
+          true
+        ],
+        [
+          "04_CERTIFICATE_OF_SERVICE.md",
+          "Certificate of Service",
+          true
+        ],
+        [
+          "05_COURT_FORMS_CHECKLIST.md",
+          "Court Forms Reference",
+          false
+        ],
+        [
+          "06_CAPTION.md",
+          "Caption Page",
+          true
+        ],
+        [
+          "09_IFP_APPLICATION.md",
+          "IFP Application (MC 20)",
+          true
+        ]
+      ],
+      "filing_fee": "$175 (waived with IFP)",
+      "instructions": [
+        "Log into MiFILE (mifile.courts.michigan.gov)",
+        "Select \"14th Circuit Court\"",
+        "Select existing case: 2024-001507-DC",
+        "Filing type: \"Motion\"",
+        "Upload: Motion PDF, Affidavit PDF, Exhibits PDF, Certificate of Service PDF",
+        "Upload MC 20 (Fee Waiver) as separate filing if not already on file",
+        "Mark as EMERGENCY to request expedited hearing",
+        "Pay fee or submit IFP simultaneously"
+      ],
+      "pdf_status": {
+        "pdfs": 8,
+        "markdown": 0,
+        "required_docs": 6
+      }
+    },
+    "F2": {
+      "name": "Fraud Upon the Court",
+      "court": "14th Circuit Court, Civil Division",
+      "system": "MiFILE",
+      "case_no": "NEW CASE",
+      "documents": [
+        [
+          "01_MAIN_FILING.md",
+          "Complaint for Fraud Upon the Court",
+          true
+        ],
+        [
+          "02_AFFIDAVIT.md",
+          "Supporting Affidavit",
+          true
+        ],
+        [
+          "03_EXHIBIT_INDEX.md",
+          "Exhibit Index",
+          true
+        ],
+        [
+          "04_CERTIFICATE_OF_SERVICE.md",
+          "Certificate of Service",
+          true
+        ],
+        [
+          "06_CAPTION.md",
+          "Caption Page",
+          true
+        ]
+      ],
+      "filing_fee": "$175 (waived with IFP)",
+      "instructions": [
+        "Log into MiFILE",
+        "Select \"14th Circuit Court\"",
+        "Select \"New Case Filing\"",
+        "Case type: \"Civil \u2014 General Civil\"",
+        "Upload: Complaint PDF, Affidavit PDF, Exhibits PDF",
+        "Request summons issuance",
+        "Arrange personal service via process server (not yourself)"
+      ],
+      "pdf_status": {
+        "pdfs": 8,
+        "markdown": 0,
+        "required_docs": 5
+      }
+    },
+    "F3": {
+      "name": "Judicial Disqualification",
+      "court": "14th Circuit Court, Family Division",
+      "system": "MiFILE",
+      "case_no": "2024-001507-DC",
+      "documents": [
+        [
+          "01_MAIN_FILING.md",
+          "Motion for Disqualification",
+          true
+        ],
+        [
+          "01B_BRIEF.md",
+          "Supporting Brief",
+          true
+        ],
+        [
+          "02_AFFIDAVIT.md",
+          "Supporting Affidavit",
+          true
+        ],
+        [
+          "03_EXHIBIT_INDEX.md",
+          "Exhibit Index",
+          true
+        ],
+        [
+          "04_CERTIFICATE_OF_SERVICE.md",
+          "Certificate of Service",
+          true
+        ],
+        [
+          "06_CAPTION.md",
+          "Caption Page",
+          true
+        ]
+      ],
+      "filing_fee": "$0 (motion in existing case)",
+      "instructions": [
+        "Log into MiFILE",
+        "Select existing case: 2024-001507-DC",
+        "Filing type: \"Motion \u2014 Disqualification of Judge\"",
+        "Upload: Motion PDF, Brief PDF, Affidavit PDF, Exhibits PDF, Cert of Service",
+        "Judge has 14 days to respond (MCR 2.003(D)(3))",
+        "If no recusal, automatically referred to chief judge"
+      ],
+      "pdf_status": {
+        "pdfs": 10,
+        "markdown": 0,
+        "required_docs": 6
+      }
+    },
+    "F4": {
+      "name": "42 USC \u00a71983 Federal Civil Rights",
+      "court": "USDC Western District of Michigan",
+      "system": "CM/ECF (PACER)",
+      "case_no": "NEW CASE",
+      "documents": [
+        [
+          "01_MAIN_FILING.md",
+          "Complaint under 42 USC \u00a71983",
+          true
+        ],
+        [
+          "01B_BRIEF.md",
+          "Memorandum of Law",
+          true
+        ],
+        [
+          "02_AFFIDAVIT.md",
+          "Declaration under 28 USC \u00a71746",
+          true
+        ],
+        [
+          "03_EXHIBIT_INDEX.md",
+          "Exhibit Index",
+          true
+        ],
+        [
+          "04_CERTIFICATE_OF_SERVICE.md",
+          "Certificate of Service",
+          true
+        ],
+        [
+          "06_CAPTION.md",
+          "Civil Cover Sheet (JS 44)",
+          true
+        ],
+        [
+          "09_IFP_APPLICATION.md",
+          "IFP Application (AO 240)",
+          true
+        ]
+      ],
+      "filing_fee": "$405 (waived with IFP)",
+      "instructions": [
+        "Log into CM/ECF (ecf.miwd.uscourts.gov)",
+        "Select \"Civil\" \u2192 \"Open a New Civil Case\"",
+        "Nature of Suit: 440 (Other Civil Rights)",
+        "Cause of Action: 42 USC \u00a71983",
+        "Upload: Complaint, Memorandum, Declaration, Exhibits",
+        "File AO 240 (IFP) simultaneously",
+        "File Civil Cover Sheet (JS 44)",
+        "If IFP granted, request US Marshals service (FRCP 4(c)(3))",
+        "Serve Michigan AG: certified mail to Capitol, Lansing MI"
+      ],
+      "pdf_status": {
+        "pdfs": 8,
+        "markdown": 0,
+        "required_docs": 7
+      }
+    },
+    "F5": {
+      "name": "MSC Superintending Control",
+      "court": "Michigan Supreme Court",
+      "system": "TrueFiling",
+      "case_no": "NEW CASE",
+      "documents": [
+        [
+          "01_MAIN_FILING.md",
+          "Complaint for Superintending Control",
+          true
+        ],
+        [
+          "01B_BRIEF.md",
+          "Supporting Brief",
+          true
+        ],
+        [
+          "02_AFFIDAVIT.md",
+          "Supporting Affidavit",
+          true
+        ],
+        [
+          "03_EXHIBIT_INDEX.md",
+          "Exhibit Index",
+          true
+        ],
+        [
+          "04_CERTIFICATE_OF_SERVICE.md",
+          "Certificate of Service",
+          true
+        ],
+        [
+          "06_CAPTION.md",
+          "Caption Page",
+          true
+        ],
+        [
+          "09_IFP_APPLICATION.md",
+          "IFP Application (MC 20)",
+          true
+        ]
+      ],
+      "filing_fee": "$375 (waived with IFP)",
+      "instructions": [
+        "Log into TrueFiling (truefiling.com)",
+        "Select \"Michigan Supreme Court\"",
+        "Filing type: \"Original Action \u2014 Superintending Control\"",
+        "Upload all documents as single combined PDF or separate PDFs",
+        "File MC 20 for fee waiver",
+        "Serve all parties via first-class mail"
+      ],
+      "pdf_status": {
+        "pdfs": 10,
+        "markdown": 0,
+        "required_docs": 7
+      }
+    },
+    "F6": {
+      "name": "JTC Complaint",
+      "court": "Judicial Tenure Commission",
+      "system": "Mail/Email",
+      "case_no": "N/A",
+      "documents": [
+        [
+          "01_MAIN_FILING.md",
+          "JTC Complaint",
+          true
+        ],
+        [
+          "02_AFFIDAVIT.md",
+          "Supporting Declaration",
+          false
+        ],
+        [
+          "03_EXHIBIT_INDEX.md",
+          "Evidence Summary",
+          false
+        ]
+      ],
+      "filing_fee": "FREE",
+      "instructions": [
+        "Print complaint and attachments",
+        "Mail to: JTC, 3034 W Grand Blvd Ste 8-450, Detroit MI 48202",
+        "OR email to: jtc@jtc.courts.mi.gov",
+        "No specific format required \u2014 letter format acceptable",
+        "Include all supporting evidence as attachments",
+        "JTC will investigate and respond (timeline varies)"
+      ],
+      "pdf_status": {
+        "pdfs": 8,
+        "markdown": 0,
+        "required_docs": 1
+      }
+    },
+    "F7": {
+      "name": "Custody Modification",
+      "court": "14th Circuit Court, Family Division",
+      "system": "MiFILE",
+      "case_no": "2024-001507-DC",
+      "documents": [
+        [
+          "01_MAIN_FILING.md",
+          "Motion for Custody Modification",
+          true
+        ],
+        [
+          "01B_BRIEF.md",
+          "Supporting Brief",
+          true
+        ],
+        [
+          "02_AFFIDAVIT.md",
+          "Supporting Affidavit",
+          true
+        ],
+        [
+          "03_EXHIBIT_INDEX.md",
+          "Exhibit Index",
+          true
+        ],
+        [
+          "04_CERTIFICATE_OF_SERVICE.md",
+          "Certificate of Service",
+          true
+        ],
+        [
+          "06_CAPTION.md",
+          "Caption Page",
+          true
+        ]
+      ],
+      "filing_fee": "$0 (motion in existing case)",
+      "instructions": [
+        "Log into MiFILE",
+        "Select existing case: 2024-001507-DC",
+        "Filing type: \"Motion \u2014 Modification of Custody\"",
+        "Upload all documents",
+        "Serve Emily Watson \u2014 certified mail",
+        "Request hearing date"
+      ],
+      "pdf_status": {
+        "pdfs": 10,
+        "markdown": 0,
+        "required_docs": 6
+      }
+    },
+    "F8": {
+      "name": "COA Application for Leave",
+      "court": "Michigan Court of Appeals",
+      "system": "TrueFiling",
+      "case_no": "NEW APPLICATION",
+      "documents": [
+        [
+          "01_MAIN_FILING.md",
+          "Application for Leave to Appeal",
+          true
+        ],
+        [
+          "02_AFFIDAVIT.md",
+          "Supporting Affidavit",
+          true
+        ],
+        [
+          "03_EXHIBIT_INDEX.md",
+          "Exhibit Index",
+          true
+        ],
+        [
+          "04_CERTIFICATE_OF_SERVICE.md",
+          "Certificate of Service",
+          true
+        ],
+        [
+          "06_CAPTION.md",
+          "Caption Page",
+          true
+        ],
+        [
+          "09_IFP_APPLICATION.md",
+          "IFP Application (MC 20)",
+          true
+        ]
+      ],
+      "filing_fee": "$375 (waived with IFP)",
+      "instructions": [
+        "Log into TrueFiling",
+        "Select \"Michigan Court of Appeals\"",
+        "Filing type: \"Application for Leave to Appeal\"",
+        "Upload all documents",
+        "File MC 20 for fee waiver",
+        "Must be filed within 21 days of order (MCR 7.205(A))"
+      ],
+      "pdf_status": {
+        "pdfs": 8,
+        "markdown": 0,
+        "required_docs": 6
+      }
+    },
+    "F9": {
+      "name": "COA 366810 Appeal Brief",
+      "court": "Michigan Court of Appeals",
+      "system": "TrueFiling",
+      "case_no": "COA 366810",
+      "documents": [
+        [
+          "01_MAIN_FILING.md",
+          "Appellant Brief",
+          true
+        ],
+        [
+          "01B_BRIEF.md",
+          "Full Appellate Brief",
+          true
+        ],
+        [
+          "02_AFFIDAVIT.md",
+          "Supporting Declaration",
+          true
+        ],
+        [
+          "03_EXHIBIT_INDEX.md",
+          "Appendix / Exhibit Index",
+          true
+        ],
+        [
+          "04_CERTIFICATE_OF_SERVICE.md",
+          "Certificate of Service",
+          true
+        ],
+        [
+          "06_CAPTION.md",
+          "Caption Page",
+          true
+        ]
+      ],
+      "filing_fee": "$0 (already docketed)",
+      "instructions": [
+        "Log into TrueFiling",
+        "Select existing case: COA 366810",
+        "Filing type: \"Appellant Brief\"",
+        "Upload brief + appendix as separate PDFs",
+        "Brief must comply with MCR 7.212 (format, length, margins)",
+        "Serve Emily Watson \u2014 first-class mail",
+        "CALL COA CLERK FIRST: (517) 373-0786 to confirm deadline"
+      ],
+      "pdf_status": {
+        "pdfs": 9,
+        "markdown": 0,
+        "required_docs": 6
+      }
+    },
+    "F10": {
+      "name": "AGC Attorney Grievance",
+      "court": "Attorney Grievance Commission",
+      "system": "Online/Mail",
+      "case_no": "N/A",
+      "documents": [
+        [
+          "01_MAIN_FILING.md",
+          "AGC Grievance Complaint",
+          true
+        ],
+        [
+          "02_AFFIDAVIT.md",
+          "Supporting Declaration",
+          false
+        ],
+        [
+          "03_EXHIBIT_INDEX.md",
+          "Evidence Summary",
+          false
+        ]
+      ],
+      "filing_fee": "FREE",
+      "instructions": [
+        "File online at: agcmi.com",
+        "OR mail to: 535 Griswold Ste 1700, Detroit MI 48226",
+        "No specific format required",
+        "Include: complaint, supporting evidence, relevant filings",
+        "AGC will investigate \u2014 response timeline varies"
+      ],
+      "pdf_status": {
+        "pdfs": 8,
+        "markdown": 0,
+        "required_docs": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "generated": "2026-03-18T23:16:49.267057",
+  "tool": "Litigation Cost Estimator (#66)",
+  "total_without_ifp": 2030.1,
+  "total_with_ifp": 525.1,
+  "savings": 1505.0,
+  "mileage_rate": 0.7,
+  "costs": {
+    "F1": {
+      "total": 226.5,
+      "total_ifp": 51.5
+    },
+    "F2": {
+      "total": 290.5,
+      "total_ifp": 115.5
+    },
+    "F3": {
+      "total": 19.5,
+      "total_ifp": 19.5
+    },
+    "F4": {
+      "total": 644.6,
+      "total_ifp": 239.6
+    },
+    "F5": {
+      "total": 399.5,
+      "total_ifp": 24.5
+    },
+    "F6": {
+      "total": 4.5,
+      "total_ifp": 4.5
+    },
+    "F7": {
+      "total": 52.5,
+      "total_ifp": 52.5
+    },
+    "F8": {
+      "total": 381.5,
+      "total_ifp": 6.5
+    },
+    "F9": {
+      "total": 7.5,
+      "total_ifp": 7.5
+    },
+    "F10": {
+      "total": 3.5,
+      "total_ifp": 3.5
+    }
+  }
+}

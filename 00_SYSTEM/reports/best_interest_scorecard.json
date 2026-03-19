@@ -1,0 +1,72 @@
+{
+  "generated": "2026-03-18T23:40:58.231367",
+  "tool": "Best Interest Factor Scorecard (#88)",
+  "andrew_total": 91,
+  "emily_total": 57,
+  "max_total": 120,
+  "andrew_wins": 10,
+  "emily_wins": 0,
+  "ties": 2,
+  "factors": {
+    "a": {
+      "name": "Love, Affection & Emotional Ties",
+      "andrew": 9,
+      "emily": 5
+    },
+    "b": {
+      "name": "Capacity for Love, Affection, Guidance & Education",
+      "andrew": 8,
+      "emily": 6
+    },
+    "c": {
+      "name": "Capacity for Food, Clothing, Medical Care",
+      "andrew": 7,
+      "emily": 7
+    },
+    "d": {
+      "name": "Stable, Satisfactory Environment",
+      "andrew": 7,
+      "emily": 5
+    },
+    "e": {
+      "name": "Permanence of Family Unit",
+      "andrew": 7,
+      "emily": 5
+    },
+    "f": {
+      "name": "Moral Fitness",
+      "andrew": 8,
+      "emily": 3
+    },
+    "g": {
+      "name": "Mental & Physical Health",
+      "andrew": 7,
+      "emily": 6
+    },
+    "h": {
+      "name": "Home, School & Community Record",
+      "andrew": 7,
+      "emily": 6
+    },
+    "i": {
+      "name": "Child's Reasonable Preference",
+      "andrew": 5,
+      "emily": 5
+    },
+    "j": {
+      "name": "Willingness to Facilitate Parent-Child Relationship",
+      "andrew": 10,
+      "emily": 1
+    },
+    "k": {
+      "name": "Domestic Violence",
+      "andrew": 8,
+      "emily": 5
+    },
+    "l": {
+      "name": "Any Other Relevant Factor",
+      "andrew": 8,
+      "emily": 3
+    }
+  }
+}

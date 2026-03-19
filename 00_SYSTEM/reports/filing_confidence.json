@@ -1,0 +1,187 @@
+{
+  "generated": "2026-03-18T23:27:53.250771",
+  "tool": "Final Filing Confidence Score (#74)",
+  "average": 44.5,
+  "results": {
+    "F1": {
+      "filing_id": "F1",
+      "name": "Emergency Parenting Time Motion",
+      "scores": {
+        "completeness": 0,
+        "authority": 0,
+        "evidence": 95,
+        "sanctions": 85,
+        "affidavit": 0,
+        "service": 30,
+        "forms": 50,
+        "compliance": 85,
+        "mtd_defense": 80,
+        "redaction": 95
+      },
+      "total": 45.5,
+      "grade": "F"
+    },
+    "F2": {
+      "filing_id": "F2",
+      "name": "Fraud Upon the Court",
+      "scores": {
+        "completeness": 0,
+        "authority": 0,
+        "evidence": 90,
+        "sanctions": 60,
+        "affidavit": 0,
+        "service": 30,
+        "forms": 50,
+        "compliance": 85,
+        "mtd_defense": 100,
+        "redaction": 95
+      },
+      "total": 43.2,
+      "grade": "F"
+    },
+    "F3": {
+      "filing_id": "F3",
+      "name": "Judicial Disqualification",
+      "scores": {
+        "completeness": 0,
+        "authority": 0,
+        "evidence": 98,
+        "sanctions": 75,
+        "affidavit": 0,
+        "service": 30,
+        "forms": 50,
+        "compliance": 85,
+        "mtd_defense": 50,
+        "redaction": 95
+      },
+      "total": 43.5,
+      "grade": "F"
+    },
+    "F4": {
+      "filing_id": "F4",
+      "name": "42 USC \u00a71983 Federal Civil Rights",
+      "scores": {
+        "completeness": 0,
+        "authority": 0,
+        "evidence": 85,
+        "sanctions": 15,
+        "affidavit": 0,
+        "service": 30,
+        "forms": 50,
+        "compliance": 85,
+        "mtd_defense": 100,
+        "redaction": 95
+      },
+      "total": 38.0,
+      "grade": "F"
+    },
+    "F5": {
+      "filing_id": "F5",
+      "name": "MSC Superintending Control",
+      "scores": {
+        "completeness": 0,
+        "authority": 0,
+        "evidence": 88,
+        "sanctions": 65,
+        "affidavit": 0,
+        "service": 30,
+        "forms": 50,
+        "compliance": 85,
+        "mtd_defense": 50,
+        "redaction": 95
+      },
+      "total": 41.0,
+      "grade": "F"
+    },
+    "F6": {
+      "filing_id": "F6",
+      "name": "JTC Complaint",
+      "scores": {
+        "completeness": 0,
+        "authority": 0,
+        "evidence": 95,
+        "sanctions": 80,
+        "affidavit": 80,
+        "service": 100,
+        "forms": 50,
+        "compliance": 85,
+        "mtd_defense": 20,
+        "redaction": 95
+      },
+      "total": 57.0,
+      "grade": "F"
+    },
+    "F7": {
+      "filing_id": "F7",
+      "name": "Custody Modification",
+      "scores": {
+        "completeness": 0,
+        "authority": 0,
+        "evidence": 92,
+        "sanctions": 80,
+        "affidavit": 0,
+        "service": 30,
+        "forms": 50,
+        "compliance": 85,
+        "mtd_defense": 50,
+        "redaction": 95
+      },
+      "total": 43.0,
+      "grade": "F"
+    },
+    "F8": {
+      "filing_id": "F8",
+      "name": "COA Application for Leave",
+      "scores": {
+        "completeness": 0,
+        "authority": 0,
+        "evidence": 75,
+        "sanctions": 75,
+        "affidavit": 0,
+        "service": 30,
+        "forms": 50,
+        "compliance": 85,
+        "mtd_defense": 20,
+        "redaction": 95
+      },
+      "total": 38.5,
+      "grade": "F"
+    },
+    "F9": {
+      "filing_id": "F9",
+      "name": "COA 366810 Appeal Brief",
+      "scores": {
+        "completeness": 0,
+        "authority": 0,
+        "evidence": 85,
+        "sanctions": 70,
+        "affidavit": 0,
+        "service": 30,
+        "forms": 50,
+        "compliance": 85,
+        "mtd_defense": 20,
+        "redaction": 95
+      },
+      "total": 39.5,
+      "grade": "F"
+    },
+    "F10": {
+      "filing_id": "F10",
+      "name": "AGC Attorney Grievance",
+      "scores": {
+        "completeness": 0,
+        "authority": 0,
+        "evidence": 90,
+        "sanctions": 80,
+        "affidavit": 80,
+        "service": 100,
+        "forms": 50,
+        "compliance": 85,
+        "mtd_defense": 20,
+        "redaction": 95
+      },
+      "total": 56.2,
+      "grade": "F"
+    }
+  }
+}

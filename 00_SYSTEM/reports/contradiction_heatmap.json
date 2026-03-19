@@ -1,0 +1,20 @@
+{
+  "generated": "2026-03-18T23:38:51.850314",
+  "tool": "Contradiction Heat Map (#86)",
+  "total": 1061,
+  "topic_counts": {
+    "custody_parenting": 2128,
+    "court_process": 2060,
+    "housing": 731,
+    "financial": 503,
+    "violence_abuse": 436,
+    "ppo_stalking": 275,
+    "mental_health": 100,
+    "substance": 41
+  },
+  "severity": {
+    "INCONSISTENCY": 839,
+    "IMPEACHMENT": 221,
+    "PERJURY": 1
+  }
+}
