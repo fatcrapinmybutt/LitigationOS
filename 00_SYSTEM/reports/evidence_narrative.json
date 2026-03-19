@@ -1,0 +1,44 @@
+{
+  "generated": "2026-03-18T20:51:48.282717",
+  "total_events": 3325,
+  "dated_events": 2249,
+  "undated_events": 1076,
+  "themes": 6,
+  "theme_details": {
+    "custody_interference": {
+      "event_count": 780,
+      "description": "Pattern of interference with parent-child relationship",
+      "legal_framework": "MCL 722.27a \u2014 Parenting Time; MCL 722.23 \u2014 Best Interest Factors"
+    },
+    "fraud_perjury": {
+      "event_count": 984,
+      "description": "Pattern of fraud upon the court and perjury",
+      "legal_framework": "MCL 750.423 \u2014 Perjury; MCR 2.612(C)(1)(c) \u2014 Fraud"
+    },
+    "judicial_misconduct": {
+      "event_count": 414,
+      "description": "Pattern of judicial bias and misconduct",
+      "legal_framework": "MCR 2.003 \u2014 Disqualification; MCJC Canons"
+    },
+    "housing_violations": {
+      "event_count": 179,
+      "description": "Housing rights violations and retaliatory actions",
+      "legal_framework": "MCL 125.534 \u2014 Habitability; MCL 554.601a \u2014 Security Deposits"
+    },
+    "conspiracy": {
+      "event_count": 244,
+      "description": "Coordinated conspiracy to deprive rights",
+      "legal_framework": "42 USC \u00a71985(3) \u2014 Conspiracy; MCL 750.157a"
+    },
+    "due_process": {
+      "event_count": 508,
+      "description": "Due process violations \u2014 notice and opportunity to be heard",
+      "legal_framework": "US Const Amend XIV; Const 1963 Art 1 \u00a717"
+    }
+  },
+  "sources": {
+    "evidence_quotes": 1825,
+    "watson_perjury_compilation": 1000,
+    "detected_contradictions": 500
+  }
+}
