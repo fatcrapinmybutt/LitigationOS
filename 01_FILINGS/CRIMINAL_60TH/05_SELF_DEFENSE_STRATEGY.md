@@ -8,6 +8,8 @@
 
 > **⚠️ PRIVILEGED ATTORNEY-CLIENT WORK PRODUCT — DO NOT FILE WITH COURT**
 > This document is a defense strategy roadmap for trial preparation only.
+> **DO NOT share with opposing counsel, prosecution, or any third party.**
+> Access restricted to: Defendant (Andrew J. Pigors) and defense counsel/advisors only.
 
 ---
 

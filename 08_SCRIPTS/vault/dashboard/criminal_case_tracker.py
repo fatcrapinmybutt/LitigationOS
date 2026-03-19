@@ -34,6 +34,7 @@ ARREST_DATE = date(2025, 12, 22)
 BOND_RELEASE_DATE = date(2025, 12, 25)
 PRETRIAL_DATE = date(2026, 1, 21)
 TRIAL_DATE = date(2026, 4, 7)
+ARREST_DELAY_DAYS = (ARREST_DATE - INCIDENT_DATE).days
 
 # Action items with deadlines
 ACTIONS = [
@@ -208,7 +209,7 @@ def print_timeline():
     print("-" * 72)
     dates = [
         (INCIDENT_DATE, "Jail incident (5-on-1 attack)"),
-        (ARREST_DATE, f"Arrest ({(ARREST_DATE - INCIDENT_DATE).days}-day delay)"),
+        (ARREST_DATE, f"Arrest ({ARREST_DELAY_DAYS}-day delay)"),
         (BOND_RELEASE_DATE, "Released on bond"),
         (PRETRIAL_DATE, "Pre-trial hearing"),
         (TRIAL_DATE, "JURY TRIAL — 9:00 AM"),

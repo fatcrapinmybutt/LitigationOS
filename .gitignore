@@ -7,7 +7,8 @@ dist/
 build/
 *.egg
 
-# Databases (local state, not source)
+# Databases (local state, not source — except script_vault.db which
+# contains versioned case data and ScriptVault metadata)
 *.db
 !script_vault.db
 
