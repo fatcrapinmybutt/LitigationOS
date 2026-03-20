@@ -428,6 +428,9 @@ def main():
 
     # Build expanded evidence_by_adversary + tort_evidence_matrix
     print("Building expanded adversary + matrix tables...")
+    # Collect rows for batch insert instead of row-by-row execute()
+    eba_rows = []
+    expanded_matrix_rows = []
     for claim_id, claim_name, tort_type, adversary, vehicles, patterns in EXPANDED_CLAIMS:
         for adv in adversary.split(','):
             adv = adv.strip()
@@ -437,13 +440,8 @@ def main():
             file_count = len(files)
             hit_count = sum(f[0] for f in files.values())
             strongest = max(files.items(), key=lambda x: x[1][0])
-            conn.execute("""
-                INSERT INTO evidence_by_adversary
-                (adversary, claim_id, claim_name, tort_type, file_count, hit_count,
-                 strongest_file, strongest_excerpt, filing_vehicles)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """, (adv, claim_id, claim_name, tort_type, file_count, hit_count,
-                  strongest[0], strongest[1][1][:500], vehicles))
+            eba_rows.append((adv, claim_id, claim_name, tort_type, file_count, hit_count,
+                             strongest[0], strongest[1][1][:500], vehicles))
 
         files = claim_file_hits.get(claim_id, {})
         total_files = len(files) if files else 0
@@ -463,14 +461,23 @@ def main():
         sorted_files = sorted(files.items(), key=lambda x: -x[1][0])[:5] if files else []
         top = json.dumps([f[0] for f in sorted_files])
 
-        conn.execute("""
+        expanded_matrix_rows.append((tort_type, claim_id, adversary, total_files,
+                                     total_file_hits, top, vehicles, sufficiency))
+
+    if eba_rows:
+        conn.executemany("""
+            INSERT INTO evidence_by_adversary
+            (adversary, claim_id, claim_name, tort_type, file_count, hit_count,
+             strongest_file, strongest_excerpt, filing_vehicles)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, eba_rows)
+    if expanded_matrix_rows:
+        conn.executemany("""
             INSERT INTO tort_evidence_matrix
             (tort_type, claim_id, adversary, total_files, total_hits,
              avg_strength, top_files, filing_vehicles, evidence_sufficient)
             VALUES (?, ?, ?, ?, ?, 2.2, ?, ?, ?)
-        """, (tort_type, claim_id, adversary, total_files, total_file_hits,
-              top, vehicles, sufficiency))
-
+        """, expanded_matrix_rows)
     conn.commit()
 
     # Populate damages_expanded from evidence
@@ -505,14 +512,18 @@ def main():
         ("Psychological Evaluation Abuse", "McNeill", 25000, 100000,
          "Forced HealthWest eval without due process, F22 diagnosis weaponized, chambers-only handling"),
     ]
-    for cat, adv, low, high, authority in damage_map:
-        conn.execute("""
-            INSERT INTO damages_expanded
-            (damage_category, adversary, evidence_file, evidence_text,
-             quantification_basis, low_estimate, high_estimate, legal_authority)
-            VALUES (?, ?, 'Multiple — see actionable_evidence table', ?, ?, ?, ?, ?)
-        """, (cat, adv, f"Based on {total_hits} evidence items across {len(all_rows)} documents",
-              authority, low, high, authority))
+    # Batch insert damage rows instead of row-by-row execute()
+    dmg_rows = [
+        (cat, adv, f"Based on {total_hits} evidence items across {len(all_rows)} documents",
+         authority, low, high, authority)
+        for cat, adv, low, high, authority in damage_map
+    ]
+    conn.executemany("""
+        INSERT INTO damages_expanded
+        (damage_category, adversary, evidence_file, evidence_text,
+         quantification_basis, low_estimate, high_estimate, legal_authority)
+        VALUES (?, ?, 'Multiple — see actionable_evidence table', ?, ?, ?, ?, ?)
+    """, dmg_rows)
     conn.commit()
 
     # Create indexes
@@ -582,11 +593,18 @@ def main():
     for m in matrix:
         print(f"  {m[0]:45s} {m[1]:25s} {m[2]:6d} {m[3]:7,d} {m[4]:>14s}")
 
-    # Totals
-    total_ae = conn.execute("SELECT COUNT(*) FROM actionable_evidence").fetchone()[0]
-    total_ppo = conn.execute("SELECT COUNT(*) FROM ppo_rescission_evidence").fetchone()[0]
-    total_wfc = conn.execute("SELECT COUNT(*) FROM watson_family_conspiracy").fetchone()[0]
-    total_dmg = conn.execute("SELECT COUNT(*) FROM damages_expanded").fetchone()[0]
+    # Totals — single consolidated query replaces 4 separate round-trips
+    totals_row = conn.execute("""
+        SELECT
+            (SELECT COUNT(*) FROM actionable_evidence)       AS total_ae,
+            (SELECT COUNT(*) FROM ppo_rescission_evidence)   AS total_ppo,
+            (SELECT COUNT(*) FROM watson_family_conspiracy)  AS total_wfc,
+            (SELECT COUNT(*) FROM damages_expanded)          AS total_dmg
+    """).fetchone()
+    total_ae  = totals_row[0]
+    total_ppo = totals_row[1]
+    total_wfc = totals_row[2]
+    total_dmg = totals_row[3]
 
     elapsed = time.time() - t0
     print(f"\n=== COMPLETE in {elapsed:.1f}s ===")

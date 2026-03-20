@@ -8,6 +8,9 @@ EVIDENCE DEDUP + CONSOLIDATION
 import sys, os, json, re, time
 from collections import defaultdict
 
+# Regex to validate that a name is safe to interpolate into SQL (word chars only)
+_SAFE_LABEL_RE = re.compile(r'^\w+$')
+
 sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace')
 sys.stderr = open(sys.stderr.fileno(), mode='w', encoding='utf-8', errors='replace')
 
@@ -155,31 +158,45 @@ def main():
     for s in strengths:
         print(f"  {s[0]:25s}  {s[1]:>6,} items  avg {s[2]} claims/item  {s[3]:>7,} raw patterns")
 
-    # By adversary (unnest)
+    # By adversary — single query with conditional aggregation (replaces 22 round-trips)
+    # Names are validated against \w+ so only [A-Za-z0-9_] chars are interpolated.
+    _ADV_NAMES = [
+        'McNeill', 'Emily_Watson', 'Watson', 'Muskegon_County', 'Watson_Family',
+        'Lori_Watson', 'Albert_Watson', 'Cody_Watson', 'Ronald_Berry', 'Rusco', 'Barnes',
+    ]
+    _safe_adv = [a for a in _ADV_NAMES if _SAFE_LABEL_RE.match(a)]
+    adv_sql = "SELECT " + ", ".join(
+        f"SUM(CASE WHEN adversaries LIKE '%{a}%' THEN 1 ELSE 0 END) AS cnt_{i},"
+        f" SUM(CASE WHEN adversaries LIKE '%{a}%' AND strength_rank >= 3 THEN 1 ELSE 0 END) AS strong_{i}"
+        for i, a in enumerate(_safe_adv)
+    ) + " FROM evidence_consolidated"
+    adv_row = conn.execute(adv_sql).fetchone()
     print("\n--- CONSOLIDATED BY ADVERSARY ---")
-    for adv in ['McNeill', 'Emily_Watson', 'Watson', 'Muskegon_County', 'Watson_Family',
-                 'Lori_Watson', 'Albert_Watson', 'Cody_Watson', 'Ronald_Berry', 'Rusco', 'Barnes']:
-        count = conn.execute("""
-            SELECT COUNT(*) FROM evidence_consolidated WHERE adversaries LIKE ?
-        """, (f'%{adv}%',)).fetchone()[0]
+    for i, adv in enumerate(_safe_adv):
+        count = adv_row[i * 2]
+        strong = adv_row[i * 2 + 1]
         if count > 0:
-            strong = conn.execute("""
-                SELECT COUNT(*) FROM evidence_consolidated 
-                WHERE adversaries LIKE ? AND strength_rank >= 3
-            """, (f'%{adv}%',)).fetchone()[0]
             print(f"  {adv:20s}  {count:>6,} unique items  ({strong:,} STRONG+)")
 
-    # By tort type
+    # By tort type — single query with conditional aggregation (replaces 19 round-trips)
+    # Names are validated against \w+ so only [A-Za-z0-9_] chars are interpolated.
+    _TORT_NAMES = [
+        'due_process_violation', 'judicial_misconduct', 'abuse_of_process',
+        'civil_rights_1983', 'perjury_fraud', 'tortious_interference',
+        'civil_conspiracy', 'fraud', 'emotional_distress', 'damages',
+        'constitutional_violation', 'spoliation', 'conflict_of_interest',
+        'civil_rights_1983_monell', 'equal_protection', 'unauthorized_practice',
+        'obstruction', 'punitive_damages', 'procedural_violation',
+    ]
+    _safe_torts = [t for t in _TORT_NAMES if _SAFE_LABEL_RE.match(t)]
+    tort_sql = "SELECT " + ", ".join(
+        f"SUM(CASE WHEN tort_types LIKE '%{t}%' THEN 1 ELSE 0 END) AS tort_{i}"
+        for i, t in enumerate(_safe_torts)
+    ) + " FROM evidence_consolidated"
+    tort_row = conn.execute(tort_sql).fetchone()
     print("\n--- CONSOLIDATED BY TORT TYPE ---")
-    for tort in ['due_process_violation', 'judicial_misconduct', 'abuse_of_process',
-                 'civil_rights_1983', 'perjury_fraud', 'tortious_interference',
-                 'civil_conspiracy', 'fraud', 'emotional_distress', 'damages',
-                 'constitutional_violation', 'spoliation', 'conflict_of_interest',
-                 'civil_rights_1983_monell', 'equal_protection', 'unauthorized_practice',
-                 'obstruction', 'punitive_damages', 'procedural_violation']:
-        count = conn.execute("""
-            SELECT COUNT(*) FROM evidence_consolidated WHERE tort_types LIKE ?
-        """, (f'%{tort}%',)).fetchone()[0]
+    for i, tort in enumerate(_safe_torts):
+        count = tort_row[i]
         if count > 0:
             print(f"  {tort:35s}  {count:>6,} items")
 
@@ -193,11 +210,6 @@ def main():
         ORDER BY num_claims DESC, num_patterns DESC
         LIMIT 25
     """).fetchall()
-    print(f"  {len(conn.execute('SELECT COUNT(*) FROM evidence_consolidated WHERE num_claims >= 3').fetchone())} items cover 3+ claims")
-    for m in multi[:25]:
-        print(f"  [{m[1]} claims, {m[2]} patterns] {m[0][:50]:50s} vs:{m[3][:40]} | {m[5]}")
-        print(f"    Torts: {m[4][:100]}")
-        print(f"    Text: {m[6][:120]}...")
 
     # Top 20 files by evidence density
     print("\n--- TOP 20 FILES BY EVIDENCE DENSITY ---")
@@ -213,10 +225,28 @@ def main():
     for t in top:
         print(f"  {t[0][:60]:60s}  {t[1]:>4} items  {t[2]:>5} claim-hits  max={t[3]}  [{t[4][:40]}]")
 
-    # Summary
-    total_strong = conn.execute("SELECT COUNT(*) FROM evidence_consolidated WHERE strength_rank >= 3").fetchone()[0]
-    total_multi = conn.execute("SELECT COUNT(*) FROM evidence_consolidated WHERE num_claims >= 2").fetchone()[0]
-    total_files = conn.execute("SELECT COUNT(DISTINCT source_file) FROM evidence_consolidated").fetchone()[0]
+    # Summary — single query replaces 3 separate COUNT(*) round-trips and also
+    # captures the accurate total for 3+ claim items (not capped by LIMIT 25 above).
+    summary_row = conn.execute("""
+        SELECT
+            SUM(CASE WHEN strength_rank >= 3 THEN 1 ELSE 0 END) AS total_strong,
+            SUM(CASE WHEN num_claims >= 2 THEN 1 ELSE 0 END) AS total_multi,
+            COUNT(DISTINCT source_file) AS total_files,
+            SUM(CASE WHEN num_claims >= 3 THEN 1 ELSE 0 END) AS total_3plus
+        FROM evidence_consolidated
+    """).fetchone()
+    total_strong = summary_row[0] or 0
+    total_multi = summary_row[1] or 0
+    total_files = summary_row[2] or 0
+    total_3plus = summary_row[3] or 0
+
+    # Print multi-claim section header with the accurate total, then the sample rows
+    print(f"\n--- MULTI-CLAIM EVIDENCE (covers 3+ claims — MOST POWERFUL) ---")
+    print(f"  {total_3plus:,} items cover 3+ claims (showing top {len(multi)})")
+    for m in multi:
+        print(f"  [{m[1]} claims, {m[2]} patterns] {m[0][:50]:50s} vs:{m[3][:40]} | {m[5]}")
+        print(f"    Torts: {m[4][:100]}")
+        print(f"    Text: {m[6][:120]}...")
 
     elapsed = time.time() - t0
     print(f"\n=== CONSOLIDATION COMPLETE in {elapsed:.1f}s ===")

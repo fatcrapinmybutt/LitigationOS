@@ -8,6 +8,7 @@ Writes results into litigation_context.db:
   - tort_evidence_matrix: claim × evidence cross-reference
 """
 import sys, os, json, re, time
+from collections import defaultdict
 
 sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace')
 sys.stderr = open(sys.stderr.fileno(), mode='w', encoding='utf-8', errors='replace')
@@ -417,6 +418,21 @@ def main():
 
     # Build tort_evidence_matrix
     print("Building tort_evidence_matrix...")
+
+    # Pre-fetch all strength values in ONE query instead of N per-claim round-trips
+    _all_strengths = conn.execute(
+        "SELECT claim_id, strength FROM actionable_evidence"
+    ).fetchall()
+    _strength_by_claim: dict = defaultdict(list)
+    for _r in _all_strengths:
+        _cid, _s = _r[0], _r[1]
+        if 'STRONG' in _s:
+            _strength_by_claim[_cid].append(3)
+        elif 'MODERATE' in _s:
+            _strength_by_claim[_cid].append(2)
+        else:
+            _strength_by_claim[_cid].append(1)
+
     matrix_rows = []
     for claim_id, claim_name, tort_type, adversary, vehicles, patterns in CLAIM_PATTERNS:
         files = claim_file_hits.get(claim_id, {})
@@ -429,19 +445,8 @@ def main():
         total_files = len(files)
         total_file_hits = sum(f[0] for f in files.values())
 
-        # Strength scoring
-        strength_scores = []
-        ae_rows = conn.execute("""
-            SELECT strength FROM actionable_evidence WHERE claim_id = ?
-        """, (claim_id,)).fetchall()
-        for r in ae_rows:
-            s = r[0]
-            if 'STRONG' in s:
-                strength_scores.append(3)
-            elif 'MODERATE' in s:
-                strength_scores.append(2)
-            else:
-                strength_scores.append(1)
+        # Strength scoring — use pre-fetched data (no per-claim query)
+        strength_scores = _strength_by_claim.get(claim_id, [])
         avg_str = sum(strength_scores) / len(strength_scores) if strength_scores else 0
 
         # Top files by hit count
