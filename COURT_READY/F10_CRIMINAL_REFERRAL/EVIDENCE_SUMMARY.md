@@ -195,7 +195,7 @@ The volume and variety of false statements demonstrates a **pattern of fabricati
 
 ---
 
-## SUBJECT 3: CODY [LAST NAME — VERIFY]
+## SUBJECT 3: CODY WATSON
 
 **Role:** Threatening communications; conspiracy participant
 **Criminal Statutes:** MCL 750.411, 750.157a
@@ -215,7 +215,7 @@ The volume and variety of false statements demonstrates a **pattern of fabricati
 
 ---
 
-## SUBJECT 4: LORI [LAST NAME — VERIFY]
+## SUBJECT 4: LORI WATSON
 
 **Role:** Facilitation of alienation and conspiracy
 **Criminal Statutes:** MCL 750.157a, 750.424

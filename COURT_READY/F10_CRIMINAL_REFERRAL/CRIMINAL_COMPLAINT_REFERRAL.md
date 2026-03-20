@@ -28,8 +28,8 @@ Phone: (231) 724-6435
 *Subjects of Referral:*
 1. Emily A. Watson — 2160 Garland Drive, Norton Shores, MI 49441
 2. Ronald Berry — residing at 2160 Garland Drive, Norton Shores, MI 49441
-3. Cody [LAST NAME — VERIFY] — text message threats documented
-4. Lori [LAST NAME — VERIFY] — facilitation of conspiracy and alienation
+3. Cody Watson — text message threats documented
+4. Lori Watson — facilitation of conspiracy and alienation
 
 ---
 
@@ -61,13 +61,13 @@ Dear Prosecuting Attorney:
 
 8. **Criminal Conduct Alleged:** Criminal Conspiracy (MCL 750.157a); Witness Tampering/Intimidation (MCL 750.122); Subornation of Perjury (MCL 750.424); False Pretenses (MCL 750.218); Unauthorized Practice of Law (MCL 600.916); Fraud Upon the Court (MCR 2.612(C)).
 
-### C. Cody [LAST NAME — VERIFY] (Tertiary Subject)
+### C. Cody Watson (Tertiary Subject)
 
 9. **Identity:** Known associate of Emily Watson. Sent threatening text messages to Complainant regarding his parental relationship with L.D.W.
 
 10. **Criminal Conduct Alleged:** Threatening Communications (MCL 750.411); Conspiracy to Interfere with Parental Rights (MCL 750.157a).
 
-### D. Lori [LAST NAME — VERIFY] (Tertiary Subject)
+### D. Lori Watson (Tertiary Subject)
 
 11. **Identity:** Known associate who facilitated the alienation scheme and conspiracy against Complainant's parental rights.
 
@@ -105,13 +105,13 @@ Dear Prosecuting Attorney:
 
 ### D. The Conspiracy
 
-18. The criminal conduct described herein was not the work of one person acting alone. The evidence demonstrates a coordinated conspiracy among Watson, Berry, Cody [LAST NAME — VERIFY], and Lori [LAST NAME — VERIFY] to deprive Complainant of his parental rights through criminal means.
+18. The criminal conduct described herein was not the work of one person acting alone. The evidence demonstrates a coordinated conspiracy among Watson, Berry, Cody Watson, and Lori Watson to deprive Complainant of his parental rights through criminal means.
 
 19. **Albert Watson Kitchen Recording (November 2024):** An audio/video recording made at 2160 Garland Drive, Norton Shores, in November 2024 captures Albert Watson (Emily's father) in the kitchen explicitly stating: **"I will make sure you don't see your son."** This is direct evidence of the conspiracy's objective — the deliberate deprivation of Complainant's parental relationship with L.D.W. Albert Watson berates Complainant in this recording, and Emily Watson is present.
 
-20. **Cody's Threatening Text Messages:** Screenshots of text messages from Cody [LAST NAME — VERIFY] document threats communicating the same conspiratorial objective — keeping Complainant from his son. These messages are direct evidence of the coordinated nature of the scheme and constitute threatening communications under MCL 750.411.
+20. **Cody's Threatening Text Messages:** Screenshots of text messages from Cody Watson document threats communicating the same conspiratorial objective — keeping Complainant from his son. These messages are direct evidence of the coordinated nature of the scheme and constitute threatening communications under MCL 750.411.
 
-21. **Lori's Facilitation:** Lori [LAST NAME — VERIFY] actively participated in the alienation scheme, facilitating the conspiracy to deprive Complainant of parental rights.
+21. **Lori's Facilitation:** Lori Watson actively participated in the alienation scheme, facilitating the conspiracy to deprive Complainant of parental rights.
 
 22. **Ronald Berry's Role:** Berry, while having no legal training or license, orchestrated and assisted in the preparation of false filings, influenced Watson's litigation strategy, and participated in witness tampering and intimidation. Berry resides at the same address as Watson and L.D.W., has access to the child, while Complainant — the father — is denied all contact.
 
@@ -212,7 +212,7 @@ Dear Prosecuting Attorney:
 
 44. **Classification:** Misdemeanor. **Maximum Penalty:** 1 year imprisonment.
 
-45. Cody [LAST NAME — VERIFY] sent threatening text messages to Complainant regarding his parental relationship, constituting threatening communications under MCL 750.411.
+45. Cody Watson sent threatening text messages to Complainant regarding his parental relationship, constituting threatening communications under MCL 750.411.
 
 ---
 
@@ -252,7 +252,7 @@ Dear Prosecuting Attorney:
 
 52. The undersigned respectfully requests that your office:
 
-   a. **Investigate** the allegations of criminal conduct described herein by initiating a criminal investigation into the conduct of Emily A. Watson, Ronald Berry, Cody [LAST NAME — VERIFY], and Lori [LAST NAME — VERIFY];
+   a. **Investigate** the allegations of criminal conduct described herein by initiating a criminal investigation into the conduct of Emily A. Watson, Ronald Berry, Cody Watson, and Lori Watson;
 
    b. **Prosecute** the subjects of this referral for the criminal offenses identified, including but not limited to: Perjury (MCL 750.423), Filing False Police Reports (MCL 750.411a), Criminal Conspiracy (MCL 750.157a), Custodial Interference (MCL 750.350a), Witness Tampering (MCL 750.122), Subornation of Perjury (MCL 750.424), False Pretenses (MCL 750.218), and Threatening Communications (MCL 750.411);
 

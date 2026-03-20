@@ -25,7 +25,7 @@ I, Andrew James Pigors, being first duly sworn, depose and state the following u
 
 3. I make this affidavit based on my personal knowledge, observation, and review of court records and documentary evidence. The facts stated herein are true and correct to the best of my knowledge, information, and belief.
 
-4. I submit this affidavit in support of the Criminal Complaint and Referral for Prosecution directed to the Muskegon County Prosecutor's Office regarding the criminal conduct of Emily A. Watson, Ronald Berry, Cody [LAST NAME — VERIFY], and Lori [LAST NAME — VERIFY].
+4. I submit this affidavit in support of the Criminal Complaint and Referral for Prosecution directed to the Muskegon County Prosecutor's Office regarding the criminal conduct of Emily A. Watson, Ronald Berry, Cody Watson, and Lori Watson.
 
 ---
 
@@ -73,7 +73,7 @@ I, Andrew James Pigors, being first duly sworn, depose and state the following u
 
 #### D. Cody's Threatening Text Messages
 
-14. I received text messages from an individual identified as Cody [LAST NAME — VERIFY] containing threats directed at my parental relationship with L.D.W.
+14. I received text messages from an individual identified as Cody Watson containing threats directed at my parental relationship with L.D.W.
 
 15. The content of these messages communicated the same objective as Albert Watson's recorded statement — to keep me from my son. The messages used threatening language and constituted threatening communications under MCL 750.411.
 
@@ -93,7 +93,7 @@ I, Andrew James Pigors, being first duly sworn, depose and state the following u
 
 #### F. Lori's Facilitation
 
-22. Lori [LAST NAME — VERIFY] actively participated in the scheme to alienate L.D.W. from me and deprive me of parental rights. Lori facilitated the conspiracy by [SPECIFIC ACTS — VERIFY AND DETAIL FROM COMPLAINANT'S RECORDS].
+22. Lori Watson actively participated in the scheme to alienate L.D.W. from me and deprive me of parental rights. Lori facilitated the conspiracy by [SPECIFIC ACTS — VERIFY AND DETAIL FROM COMPLAINANT'S RECORDS].
 
 #### G. The August 8, 2025 Catastrophe — Custodial Interference Begins
 
@@ -107,7 +107,7 @@ I, Andrew James Pigors, being first duly sworn, depose and state the following u
 
 ### III. THE CONSPIRACY — COORDINATED CRIMINAL CONDUCT
 
-26. The criminal conduct described herein was not a series of independent acts. It was a coordinated conspiracy among Emily Watson, Ronald Berry, Cody [LAST NAME — VERIFY], and Lori [LAST NAME — VERIFY] — with facilitation by Albert Watson — to achieve a common criminal objective: **the complete destruction of my relationship with my son L.D.W.**
+26. The criminal conduct described herein was not a series of independent acts. It was a coordinated conspiracy among Emily Watson, Ronald Berry, Cody Watson, and Lori Watson — with facilitation by Albert Watson — to achieve a common criminal objective: **the complete destruction of my relationship with my son L.D.W.**
 
 27. Evidence of the conspiracy includes:
 
@@ -159,7 +159,7 @@ I, Andrew James Pigors, being first duly sworn, depose and state the following u
 
    a. Providing the Albert Watson kitchen recording (November 2024) in its original format;
 
-   b. Providing all text message screenshots from Cody [LAST NAME — VERIFY];
+   b. Providing all text message screenshots from Cody Watson;
 
    c. Providing all documentation of false statements and their contradicting evidence;
 

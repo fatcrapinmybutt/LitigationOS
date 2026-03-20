@@ -202,7 +202,7 @@ Under *Ashcroft v. Iqbal*, 556 U.S. 662, 678 (2009), and *Bell Atlantic Corp. v.
 The Complaint provides detailed, date-specific factual allegations for each count:
 
 **Due Process (Count I):**
-- *Specific dates:* Ex parte orders of December 3, 2023; July 17, 2025; August 8, 2025. Incarceration imposed November 15, 2024 (14 days) and November 26, 2025 (45 days).
+- *Specific dates:* Ex parte orders of December 3, 2023; July 17, 2025; August 8, 2025. Incarceration imposed November 15, 2025 (14 days) and November 26, 2025 (45 days).
 - *Specific conduct:* Entry of orders without notice; muting three times; refusal of exculpatory evidence (Report No. NS2505044); reliance on illegally obtained recording.
 - *Specific harm:* 223+ days separation; 59 days incarceration; loss of four named jobs; loss of two homes.
 - *Specific constitutional provision:* Fourteenth Amendment Due Process Clause.

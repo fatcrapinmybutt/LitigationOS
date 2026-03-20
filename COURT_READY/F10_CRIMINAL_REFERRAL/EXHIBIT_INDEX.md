@@ -83,7 +83,7 @@
 
 ### EXHIBIT E — TEXT MESSAGE SCREENSHOTS (Cody's Threats)
 
-**Description:** Screenshots of text messages from Cody [LAST NAME — VERIFY] directed at Complainant. The messages contain threats regarding Complainant's parental relationship with L.D.W., communicating the same objective as Albert Watson's recorded statement.
+**Description:** Screenshots of text messages from Cody Watson directed at Complainant. The messages contain threats regarding Complainant's parental relationship with L.D.W., communicating the same objective as Albert Watson's recorded statement.
 
 **Format:** Printed screenshots with visible metadata (date, time, phone number)
 

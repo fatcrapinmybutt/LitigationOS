@@ -156,9 +156,9 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 34\. Evidence obtained through a felony cannot form the basis of a court order. The illegally obtained recording — and all orders derived from it — are fruit of the poisonous tree. *People v. Beavers*, 393 Mich. 554 (1975) (recordings obtained in violation of MCL 750.539c are inadmissible).
 
-### G. Show Cause Proceeding — November 15, 2024 (14 Days Incarceration)
+### G. Show Cause Proceeding — November 15, 2025 (14 Days Incarceration)
 
-35\. On **November 15, 2024**, Judge McNeill presided over a Show Cause proceeding against Plaintiff. At this hearing:
+35\. On **November 15, 2025**, Judge McNeill presided over a Show Cause proceeding against Plaintiff. At this hearing:
 
 &emsp;(a) Plaintiff was **muted three (3) separate times** during the proceeding, physically preventing him from presenting his defense;
 
@@ -287,7 +287,7 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 61\. As a direct and proximate result of Defendants' conduct, Plaintiff has suffered:
 
-&emsp;(a) **59 days of incarceration** (14 days on November 15, 2024, plus 45 days on November 26, 2025) — deprivation of liberty without constitutionally adequate process;
+&emsp;(a) **59 days of incarceration** (14 days on November 15, 2025, plus 45 days on November 26, 2025) — deprivation of liberty without constitutionally adequate process;
 
 &emsp;(b) **Loss of four (4) jobs** (Metal Arc Welding, IndiGrow Inc., USPS, Shape Corp.) as a direct result of incarceration;
 
@@ -343,7 +343,7 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 &emsp;(a) Entry of the August 8, 2025 ex parte order suspending all parenting time without notice to Plaintiff;
 
-&emsp;(b) Muting Plaintiff three times during the November 15, 2024 hearing — physically preventing him from presenting his defense;
+&emsp;(b) Muting Plaintiff three times during the November 15, 2025 hearing — physically preventing him from presenting his defense;
 
 &emsp;(c) Refusal to review an exculpatory police report (Report No. NS2505044);
 
@@ -405,7 +405,7 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 &emsp;(b) **"Do Not File Anymore" Directive:** McNeill stated on the record: "Do not file anymore, I will not look at it." This is a categorical refusal to consider any future filings from a specific party;
 
-&emsp;(c) **Muting During Hearings:** Plaintiff's microphone was muted three (3) separate times during the November 15, 2024 remote hearing — the hearing at which the Court imposed 14 days of incarceration. A "hearing" at which a party is physically prevented from speaking is no hearing at all;
+&emsp;(c) **Muting During Hearings:** Plaintiff's microphone was muted three (3) separate times during the November 15, 2025 remote hearing — the hearing at which the Court imposed 14 days of incarceration. A "hearing" at which a party is physically prevented from speaking is no hearing at all;
 
 &emsp;(d) **Self-Ruling on Disqualification:** McNeill ruled on her own disqualification motion — denying Plaintiff even the procedural remedy the court rules prescribe for this situation.
 
