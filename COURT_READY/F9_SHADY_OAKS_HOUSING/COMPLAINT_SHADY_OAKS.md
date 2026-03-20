@@ -355,7 +355,7 @@ ________________________________/
 
 68. Plaintiff re-alleges and incorporates by reference paragraphs 1 through 43 as if fully set forth herein.
 
-69. As the owner and operator of Shady Oaks Mobile Home Community, Defendants owed a duty of reasonable care to maintain the premises — including all common areas, utility infrastructure, and the sewage system — in a safe condition for tenants and their families, including minor children. *See Trentadue v Buckler Automatic Lawn Sprinkler Co.*, 479 Mich 378 (2007); *Allison v AEW Capital Management*, 481 Mich 419 (2008).
+69. As the owner and operator of Shady Oaks Mobile Home Community, Defendants owed a duty of reasonable care to maintain the premises — including all common areas, utility infrastructure, and the sewage system — in a safe condition for tenants and their families, including minor children. *See Trentadue v Gorton*, 479 Mich 378 (2007); *Allison v AEW Capital Management*, 481 Mich 419 (2008).
 
 70. Defendants breached this duty of care in the following respects:
 

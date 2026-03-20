@@ -61,7 +61,7 @@ Email: andrewjpigors@gmail.com
 | Statement of Facts | 4 |
 | Standard of Review | 8 |
 | **Argument** | |
-| I. This Case Qualifies as "Extraordinary" Under *Cherryvale* and *In re Hatcher* | 10 |
+| I. This Case Qualifies as "Extraordinary" Under *In re Hatcher* | 10 |
 |     A. The Three-Part Test Is Satisfied | 10 |
 |     B. The Systematic Nature Distinguishes This from Routine Error | 13 |
 | II. Petitioner Has Exhausted All Lower Court Remedies | 15 |
@@ -104,7 +104,7 @@ Email: andrewjpigors@gmail.com
 
 | Case | Citation | Page |
 |---|---|---|
-| *Cherryvale Care Center v Michigan* | (Mich 2006) | 10, 13, 14 |
+| *In re Hatcher* | 443 Mich 426 (1993) | 10, 13, 14 |
 | *Vodvarka v Grasmeyer* | 259 Mich App 499 (2003) | 5, 11, 12 |
 
 ### United States Supreme Court Cases

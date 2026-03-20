@@ -128,7 +128,6 @@ Barnes Law Firm PLLC, 880 Jefferson St, Ste B, Muskegon, MI 49440
 
 | Case | Citation |
 |---|---|
-| *Cherryvale Care Center v Michigan* | (Mich 2006) |
 | *In re Contempt of Henry* | 282 Mich App 656; 766 NW2d 44 (2009) |
 | *Kaeb v Kaeb* | 309 Mich App 556; 873 NW2d 319 (2015) |
 | *Shade v Wright* | 291 Mich App 17 (2010) |
