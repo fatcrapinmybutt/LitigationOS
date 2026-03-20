@@ -148,7 +148,7 @@ The volume and variety of false statements demonstrates a **pattern of fabricati
 
 ---
 
-## SUBJECT 2: RONALD T. BERRY
+## SUBJECT 2: RONALD BERRY
 
 **Address:** 2160 Garland Drive, Norton Shores, MI 49441
 **Role:** Orchestrator, non-attorney co-conspirator, Emily Watson's boyfriend/domestic partner
