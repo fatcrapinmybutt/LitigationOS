@@ -328,7 +328,7 @@ parenting time and active interference with the parent-child bond are proper gro
 
 modification of custody. *See Shade v. Wright*, 291 Mich App 17, 31 (2010) (factor (j)
 
-analysis); *See also* MCL 722.27(1)(c) (court may modify custody if in child's best interest).
+analysis); *See also* MCL 722.27(1)(c) (court may modify custody if in child's best interest). The Michigan Supreme Court's decision in *Harvey v. Harvey*, 470 Mich 186, 192 (2004), makes clear that a trial court *must* conduct a de novo best-interest analysis before modifying custody — the failure to do so is reversible error. *Vodvarka v. Grasmeyer*, 259 Mich App 499, 509 (2003), holds that parental alienation behaviors establish "proper cause" under the threshold test, permitting the Court to proceed to that best-interest analysis. The right of a parent to the care, custody, and control of his child is among "the oldest of the fundamental liberty interests recognized by this Court." *Troxel v. Granville*, 530 U.S. 57, 65 (2000). Michigan recognizes that "parenting time is a right, not a privilege," and that enforcement of parenting time orders is mandatory when violations are established. *Eldred v. Ziny*, 246 Mich App 142, 150 (2001). When a contemnor willfully violates a court order, the court has both statutory and inherent authority to enforce compliance through civil contempt. *In re Contempt of Dougherty*, 429 Mich 81, 96 (1987).
 
 **Analysis:**
 

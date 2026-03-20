@@ -127,7 +127,7 @@ Norton Shores, MI 49441
 
 32\. Due process requires, at minimum, that a parent receive notice and an opportunity to be heard before parental rights are restricted. *Stanley v. Illinois*, 405 U.S. 645, 649 (1972). Plaintiff was denied both.
 
-33\. A parent's fundamental right to the companionship of his child "undeniably warrants deference and, absent a powerful countervailing interest, protection." *Hunter v. Hunter*, 484 Mich 247, 257; 771 NW2d 694 (2009).
+33\. A parent's fundamental right to the companionship of his child "undeniably warrants deference and, absent a powerful countervailing interest, protection." *Hunter v. Hunter*, 484 Mich 247, 257; 771 NW2d 694 (2009). Michigan recognizes that "parenting time is a right, not a privilege," and enforcement is mandatory. *Eldred v. Ziny*, 246 Mich App 142, 150 (2001). Before modifying custody, a trial court *must* conduct a de novo best-interest analysis — failure to do so is reversible error. *Harvey v. Harvey*, 470 Mich 186, 192 (2004).
 
 ---
 
