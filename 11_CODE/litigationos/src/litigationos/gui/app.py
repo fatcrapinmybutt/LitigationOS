@@ -32,6 +32,7 @@ NAV_ITEMS = [
     ("📅", "Calendar", "calendar"),
     ("📅", "Timeline", "timeline"),
     ("👨‍⚖️", "Judge Profiles", "judge_profiles"),
+    ("🚀", "Pipeline", "pipeline"),
     ("⚙️", "Settings", "settings"),
 ]
 
@@ -405,6 +406,12 @@ class LitigationOSApp(ctk.CTk):
         if name == "judge_profiles":
             from litigationos.gui.judge_profile import JudgeProfileFrame
             return JudgeProfileFrame(
+                self._content, db=self._db, navigate_cb=self.switch_screen,
+            )
+
+        if name == "pipeline":
+            from litigationos.gui.pipeline_runner_screen import PipelineRunnerFrame
+            return PipelineRunnerFrame(
                 self._content, db=self._db, navigate_cb=self.switch_screen,
             )
 
