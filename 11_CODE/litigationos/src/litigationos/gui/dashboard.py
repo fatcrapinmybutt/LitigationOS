@@ -84,6 +84,13 @@ try:
 except ImportError:
     _HAS_RULES_ENGINE = False
 
+# Litigation DB bridge — read-only access to litigation_context.db
+try:
+    from litigationos.db.litigation_bridge import LitigationBridge
+    _HAS_BRIDGE = True
+except ImportError:
+    _HAS_BRIDGE = False
+
 
 # ===================================================================
 # DashboardFrame
@@ -103,6 +110,8 @@ class DashboardFrame(ctk.CTkFrame):
         super().__init__(parent, fg_color="transparent", **kwargs)
         self._db = db
         self._navigate_cb = navigate_cb
+        self._bridge: Optional[LitigationBridge] = None
+        self._init_bridge()
 
         # --- scrollable container ---
         self._scroll = ctk.CTkScrollableFrame(
@@ -126,6 +135,24 @@ class DashboardFrame(ctk.CTkFrame):
         self._stat_cards: list[DataCard] = []
 
         self.refresh()
+
+    # ------------------------------------------------------------------
+    # Bridge to litigation_context.db
+    # ------------------------------------------------------------------
+
+    def _init_bridge(self) -> None:
+        """Create bridge to the real litigation DB if available."""
+        if not _HAS_BRIDGE:
+            return
+        try:
+            db_path = self._db.db_path if self._db else None
+            self._bridge = LitigationBridge(db_path)
+            if self._bridge.is_real_db:
+                logger.info("LitigationBridge connected to real DB")
+            else:
+                self._bridge = None
+        except Exception:
+            self._bridge = None
 
     # ------------------------------------------------------------------
     # Layout helpers
@@ -320,12 +347,33 @@ class DashboardFrame(ctk.CTkFrame):
     # --- alerts ---
 
     def _load_alerts(self) -> None:
-        """Show alert banner for EMERGENCY/CRITICAL deadlines from engine."""
+        """Show alert banner for EMERGENCY/CRITICAL deadlines from bridge or engine."""
         self._clear_container(self._alert_container)
 
         critical_deadlines: list[dict] = []
 
-        if _HAS_DEADLINE_ENGINE and self._db:
+        # --- Bridge path: check real deadlines ---
+        if self._bridge:
+            bridge_rows = self._bridge.get_deadlines(status="pending")
+            for d in bridge_rows:
+                due_str = d.get("due_date", "")
+                try:
+                    due = date.fromisoformat(due_str)
+                    days = (due - date.today()).days
+                except (ValueError, TypeError):
+                    continue
+                if days < 0:
+                    d["_urgency"] = "OVERDUE"
+                    critical_deadlines.append(d)
+                elif days <= 3:
+                    d["_urgency"] = "EMERGENCY"
+                    critical_deadlines.append(d)
+                elif days <= 7:
+                    urg = d.get("urgency", "")
+                    if urg in ("critical", "high", "CRITICAL", "HIGH"):
+                        d["_urgency"] = "CRITICAL"
+                        critical_deadlines.append(d)
+        elif _HAS_DEADLINE_ENGINE and self._db:
             try:
                 engine = DeadlineEngine(self._db)
                 overdue = engine.get_overdue()
@@ -380,7 +428,15 @@ class DashboardFrame(ctk.CTkFrame):
         self._clear_container(self._deadline_container)
 
         rows: list[dict] = []
-        if _HAS_DEADLINE_ENGINE and self._db:
+
+        # --- Bridge path: real deadlines from litigation_context.db ---
+        if self._bridge:
+            bridge_rows = self._bridge.get_deadlines(status="pending", limit=5)
+            if bridge_rows:
+                rows = bridge_rows
+
+        # --- Engine path ---
+        if not rows and _HAS_DEADLINE_ENGINE and self._db:
             try:
                 engine = DeadlineEngine(self._db)
                 upcoming = engine.get_upcoming(days=30)
@@ -451,6 +507,47 @@ class DashboardFrame(ctk.CTkFrame):
 
     def _load_cases(self) -> None:
         self._clear_container(self._cases_frame)
+
+        # --- Bridge path: synthesize cases from real litigation DB ---
+        if self._bridge:
+            cases = self._bridge.get_active_cases()
+            if cases:
+                for c in cases:
+                    lane = c.get("lane", "C")
+                    meta = LANE_META.get(lane, LANE_META["C"])
+                    frame = ctk.CTkFrame(self._cases_frame, fg_color="transparent")
+                    frame.pack(fill="x", pady=2, padx=4)
+
+                    lane_badge = ctk.CTkFrame(frame, fg_color=meta["color"], corner_radius=4, width=28)
+                    lane_badge.pack(side="left", padx=(0, 6), pady=2)
+                    lane_badge.pack_propagate(False)
+                    ctk.CTkLabel(
+                        lane_badge, text=meta["icon"], font=ctk.CTkFont(size=12), width=28,
+                    ).pack(expand=True)
+
+                    case_label = f"{c.get('case_number', '')}  {c.get('case_type', '')}"
+                    btn = ctk.CTkButton(
+                        frame, text=case_label, anchor="w",
+                        fg_color="transparent", hover_color=COLORS["bg_sidebar"],
+                        text_color=COLORS["text"], font=ctk.CTkFont(size=13),
+                        command=lambda: self._on_case_click(0),
+                    )
+                    btn.pack(side="left", fill="x", expand=True)
+
+                    ctk.CTkLabel(
+                        frame, text=f"Lane {lane}",
+                        font=ctk.CTkFont(size=10), text_color=meta["color"],
+                    ).pack(side="right", padx=(0, 4))
+
+                    activity = c.get("last_activity", "")
+                    evts = c.get("event_count", 0)
+                    ctk.CTkLabel(
+                        frame, text=f"{evts} events · {activity}",
+                        font=ctk.CTkFont(size=10), text_color=COLORS["text_dim"],
+                    ).pack(side="right", padx=4)
+                return
+
+        # --- Fallback: app-schema cases table ---
         try:
             rows = self._db.fetchall(
                 "SELECT id, case_number, title, case_type, status, updated_at "
@@ -523,6 +620,33 @@ class DashboardFrame(ctk.CTkFrame):
 
     def _load_filings(self) -> None:
         self._clear_container(self._filings_frame)
+
+        # --- Bridge path: show recent docket events as filing activity ---
+        if self._bridge:
+            events = self._bridge.get_recent_docket_events(limit=10)
+            if events:
+                for ev in events:
+                    desc = ev.get("description", "")
+                    ev_type = ev.get("event_type", "")
+                    case_num = ev.get("case_number", "")
+                    ev_date = ev.get("event_date", "")
+                    label = f"[{ev_type.upper()}]  {desc[:60]}"
+                    if case_num:
+                        label += f"  ({case_num})"
+
+                    row = ctk.CTkFrame(self._filings_frame, fg_color="transparent")
+                    row.pack(fill="x", pady=2, padx=4)
+                    ctk.CTkLabel(
+                        row, text=label, anchor="w",
+                        font=ctk.CTkFont(size=12), text_color=COLORS["text"],
+                    ).pack(side="left", fill="x", expand=True)
+                    ctk.CTkLabel(
+                        row, text=ev_date,
+                        font=ctk.CTkFont(size=10), text_color=COLORS["text_dim"],
+                    ).pack(side="right", padx=4)
+                return
+
+        # --- Fallback: app-schema filings table ---
         try:
             rows = self._db.fetchall(
                 "SELECT id, title, filing_type, status, compliance_score "
@@ -572,28 +696,41 @@ class DashboardFrame(ctk.CTkFrame):
         """Load evidence counts grouped by lane with optional strength scores."""
         self._clear_container(self._evidence_frame)
 
-        # Gather per-case evidence counts
+        # Gather per-lane evidence data
         lane_counts: dict[str, int] = {k: 0 for k in LANE_META}
         lane_strength: dict[str, list[float]] = {k: [] for k in LANE_META}
 
-        try:
-            rows = self._db.fetchall(
-                "SELECT e.case_id, e.relevance_score, c.case_type, c.case_number "
-                "FROM evidence e "
-                "LEFT JOIN cases c ON e.case_id = c.id "
-                "WHERE c.status = 'active'",
-            )
-        except Exception:
-            logger.debug("Evidence summary query failed")
-            rows = []
+        # --- Bridge path: real evidence_quotes data ---
+        if self._bridge:
+            by_lane = self._bridge.get_evidence_by_lane()
+            if by_lane:
+                for lane_key, data in by_lane.items():
+                    if lane_key in lane_counts:
+                        lane_counts[lane_key] = data["count"]
+                        avg = data.get("avg_score", 0)
+                        if avg:
+                            lane_strength[lane_key] = [float(avg)]
+            # Fall through to rendering below
+        else:
+            # --- Fallback: app-schema evidence + cases tables ---
+            try:
+                rows = self._db.fetchall(
+                    "SELECT e.case_id, e.relevance_score, c.case_type, c.case_number "
+                    "FROM evidence e "
+                    "LEFT JOIN cases c ON e.case_id = c.id "
+                    "WHERE c.status = 'active'",
+                )
+            except Exception:
+                logger.debug("Evidence summary query failed")
+                rows = []
 
-        for row in rows:
-            r = dict(row)
-            lane = self._detect_lane(r)
-            lane_counts[lane] = lane_counts.get(lane, 0) + 1
-            score = r.get("relevance_score")
-            if score is not None:
-                lane_strength.setdefault(lane, []).append(float(score))
+            for row in rows:
+                r = dict(row)
+                lane = self._detect_lane(r)
+                lane_counts[lane] = lane_counts.get(lane, 0) + 1
+                score = r.get("relevance_score")
+                if score is not None:
+                    lane_strength.setdefault(lane, []).append(float(score))
 
         # Build grid — one card per lane
         grid = ctk.CTkFrame(self._evidence_frame, fg_color="transparent")
@@ -672,6 +809,71 @@ class DashboardFrame(ctk.CTkFrame):
             except Exception:
                 return 0
 
+        # --- Bridge path: real litigation DB stats ---
+        if self._bridge:
+            stats = self._bridge.get_dashboard_stats()
+            if stats:
+                evidence = stats.get("evidence_count", 0)
+                documents = stats.get("document_count", 0)
+                violations = stats.get("violation_count", 0)
+                docket = stats.get("docket_count", 0)
+                files = stats.get("file_count", 0)
+                pending = stats.get("deadline_count", 0)
+                next_date = stats.get("next_deadline_date")
+
+                next_deadline_days = None
+                if next_date:
+                    try:
+                        nxt = date.fromisoformat(next_date)
+                        next_deadline_days = (nxt - date.today()).days
+                    except (ValueError, TypeError):
+                        pass
+
+                row_frame = ctk.CTkFrame(self._stats_container, fg_color="transparent")
+                row_frame.pack(fill="x")
+
+                # Build two rows of stat cards for the full arsenal
+                # Row 1: Core counts
+                row_frame.columnconfigure((0, 1, 2, 3), weight=1)
+
+                if next_deadline_days is not None:
+                    dl_value = f"{next_deadline_days}d"
+                    dl_title = f"Next Deadline ({pending} pending)"
+                    dl_color = COLORS["red"] if next_deadline_days <= 7 else COLORS["orange"]
+                else:
+                    dl_value = str(pending)
+                    dl_title = "Pending Deadlines"
+                    dl_color = COLORS["orange"]
+
+                cards_r1: list[tuple[str, str | int, str]] = [
+                    (dl_title, dl_value, dl_color),
+                    ("Evidence Quotes", f"{evidence:,}", COLORS["yellow"]),
+                    ("Documents", f"{documents:,}", COLORS["green"]),
+                    ("Judicial Violations", f"{violations:,}", COLORS["red"]),
+                ]
+                for i, (title, value, color) in enumerate(cards_r1):
+                    card = DataCard(row_frame, title=title, value=value, color=color)
+                    card.grid(row=0, column=i, sticky="nsew", padx=6, pady=6)
+                    self._stat_cards.append(card)
+
+                # Row 2: Additional arsenal
+                row2 = ctk.CTkFrame(self._stats_container, fg_color="transparent")
+                row2.pack(fill="x")
+                row2.columnconfigure((0, 1, 2), weight=1)
+
+                file_display = f"{files:,}" if files < 1_000_000 else f"{files // 1000}K"
+                cards_r2: list[tuple[str, str | int, str]] = [
+                    ("Docket Events", f"{docket:,}", COLORS["blue"]),
+                    ("Files Inventoried", file_display, COLORS["accent"]),
+                    ("Litigation Arsenal", f"{evidence + documents + violations:,}", COLORS["green"]),
+                ]
+                for i, (title, value, color) in enumerate(cards_r2):
+                    card = DataCard(row2, title=title, value=value, color=color)
+                    card.grid(row=0, column=i, sticky="nsew", padx=6, pady=6)
+                    self._stat_cards.append(card)
+                return
+
+        # --- Fallback: app-schema tables ---
         cases = _count("SELECT COUNT(*) FROM cases")
         filings = _count("SELECT COUNT(*) FROM filings")
         evidence = _count("SELECT COUNT(*) FROM evidence")

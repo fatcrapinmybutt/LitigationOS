@@ -29,6 +29,13 @@ try:
 except ImportError:
     _HAS_DEADLINE_ENGINE = False
 
+# Litigation DB bridge — read-only access to litigation_context.db
+try:
+    from litigationos.db.litigation_bridge import LitigationBridge
+    _HAS_BRIDGE = True
+except ImportError:
+    _HAS_BRIDGE = False
+
 # Hard-coded fallback deadlines when no external source is available.
 _DEFAULT_DEADLINES = [
     {"name": "McNeill Disqualification", "date": "2026-03-15", "court": "14th Circuit"},
@@ -62,8 +69,22 @@ class DeadlineDashboardFrame(ctk.CTkFrame):
         super().__init__(parent, fg_color="transparent", **kwargs)
         self._db = db
         self._navigate_cb = navigate_cb
+        self._bridge: Optional[LitigationBridge] = None
+        self._init_bridge()
         self._build_ui()
         self.refresh()
+
+    def _init_bridge(self) -> None:
+        """Create bridge to the real litigation DB if available."""
+        if not _HAS_BRIDGE:
+            return
+        try:
+            db_path = self._db.db_path if self._db else None
+            self._bridge = LitigationBridge(db_path)
+            if not self._bridge.is_real_db:
+                self._bridge = None
+        except Exception:
+            self._bridge = None
 
     # ------------------------------------------------------------------
     # Helpers
@@ -124,8 +145,25 @@ class DeadlineDashboardFrame(ctk.CTkFrame):
     # ------------------------------------------------------------------
 
     def _load_deadlines(self) -> list[dict]:
-        """Return deadline dicts from DeadlineEngine, DB, or built-in defaults."""
-        # Try engine-backed data first
+        """Return deadline dicts from bridge, DeadlineEngine, DB, or built-in defaults."""
+        # --- Bridge path: real deadlines from litigation_context.db ---
+        if self._bridge:
+            bridge_rows = self._bridge.get_deadlines(status="pending", limit=20)
+            if bridge_rows:
+                results = []
+                for d in bridge_rows:
+                    results.append({
+                        "name": d.get("title", "Deadline"),
+                        "date": d.get("due_date", ""),
+                        "court": d.get("court", ""),
+                        "case_number": d.get("case_number", ""),
+                        "urgency": d.get("urgency", ""),
+                        "filing_id": d.get("filing_id", ""),
+                        "notes": d.get("notes", ""),
+                    })
+                return results
+
+        # Try engine-backed data
         if _HAS_DEADLINE_ENGINE and self._db:
             try:
                 engine = DeadlineEngine(self._db)
@@ -220,11 +258,31 @@ class DeadlineDashboardFrame(ctk.CTkFrame):
                 font=ctk.CTkFont(size=12, weight="bold"), width=110,
             ).grid(row=0, column=0, padx=10, pady=8)
 
+            # Title with case number if available
+            name = dl.get("name", "Unknown")
+            case_num = dl.get("case_number", "")
+            if case_num:
+                name = f"{name}  ({case_num})"
+
             ctk.CTkLabel(
-                row, text=dl.get("name", "Unknown"),
+                row, text=name,
                 font=ctk.CTkFont(size=14, weight="bold"),
                 text_color=COLORS["text"], anchor="w",
-            ).grid(row=0, column=1, padx=4, pady=8, sticky="w")
+            ).grid(row=0, column=1, padx=4, pady=(8, 0), sticky="w")
+
+            # Sub-row: filing reference + notes
+            filing_id = dl.get("filing_id", "")
+            notes = dl.get("notes", "")
+            sub_parts = []
+            if filing_id:
+                sub_parts.append(f"Filing: {filing_id}")
+            if notes:
+                sub_parts.append(notes[:80])
+            if sub_parts:
+                ctk.CTkLabel(
+                    row, text="  ·  ".join(sub_parts),
+                    font=ctk.CTkFont(size=10), text_color=COLORS["text_dim"], anchor="w",
+                ).grid(row=1, column=1, padx=4, pady=(0, 6), sticky="w")
 
             if days < 0:
                 countdown = f"OVERDUE by {abs(days)} days"
@@ -238,8 +296,9 @@ class DeadlineDashboardFrame(ctk.CTkFrame):
                 font=ctk.CTkFont(size=12),
             ).grid(row=0, column=2, padx=10, pady=8)
 
+            court = dl.get("court", "")
             ctk.CTkLabel(
-                row, text=dl.get("court", ""),
+                row, text=court,
                 font=ctk.CTkFont(size=11), text_color=COLORS["text_dim"],
             ).grid(row=0, column=3, padx=10, pady=8)
 

@@ -2,11 +2,13 @@
 
 Provides a split-pane interface with a filterable filing list on the left,
 filing detail / checklist on the right, and build → validate → export workflow.
+Uses LitigationBridge to discover real filing packages on disk when available.
 """
 
 from __future__ import annotations
 
 import logging
+import os
 import tkinter as tk
 from pathlib import Path
 from tkinter import filedialog, messagebox
@@ -25,6 +27,12 @@ from litigationos.engines.filing import (
     ValidationResult,
 )
 
+try:
+    from litigationos.db.litigation_bridge import LitigationBridge
+    _HAS_BRIDGE = True
+except ImportError:
+    _HAS_BRIDGE = False
+
 logger = logging.getLogger(__name__)
 
 # Status workflow display order
@@ -35,6 +43,7 @@ _STATUS_COLORS = {
     "ready": "#3B82F6",
     "filed": "#10B981",
     "served": "#8B5CF6",
+    "incomplete": "#EF4444",
 }
 
 
@@ -46,9 +55,22 @@ class FilingManagerFrame(ctk.CTkFrame):
         self.app = app
         self.engine = FilingEngine(app.db)
         self._filings: list[dict] = []
+        self._packages: list[dict] = []
         self._selected_filing: Optional[dict] = None
+        self._selected_package: Optional[dict] = None
         self._current_stack: Optional[FilingStack] = None
         self._current_validation: Optional[ValidationResult] = None
+
+        # Bridge to real litigation_context.db + disk packages
+        self._bridge: Optional[LitigationBridge] = None  # type: ignore[assignment]
+        if _HAS_BRIDGE:
+            try:
+                db_path = getattr(app, '_db_path', None) or getattr(app.db, 'db_path', None)
+                self._bridge = LitigationBridge(str(db_path) if db_path else None)
+                if not self._bridge.is_real_db:
+                    self._bridge = None
+            except Exception:
+                self._bridge = None
 
         self._build_ui()
         self.refresh()
@@ -88,8 +110,14 @@ class FilingManagerFrame(ctk.CTkFrame):
         filt.grid_columnconfigure((0, 1, 2), weight=1)
 
         ctk.CTkLabel(filt, text="Status").grid(row=0, column=0, sticky="w")
+        status_values = list(VALID_STATUSES)
+        if self._bridge:
+            # Add package-specific statuses
+            for s in ("ready", "draft", "incomplete"):
+                if s not in status_values:
+                    status_values.append(s)
         self._filter_status = ctk.CTkComboBox(
-            filt, values=["All"] + list(VALID_STATUSES), command=lambda _: self.refresh()
+            filt, values=["All"] + status_values, command=lambda _: self.refresh()
         )
         self._filter_status.set("All")
         self._filter_status.grid(row=1, column=0, sticky="ew", padx=(0, 4))
@@ -194,6 +222,16 @@ class FilingManagerFrame(ctk.CTkFrame):
         )
         self._btn_export.pack(side="left", padx=8)
 
+        # Package-specific buttons (hidden until a package is selected)
+        self._btn_open_folder = ctk.CTkButton(
+            btn_frame, text="📂 Open Folder", fg_color="#6366F1", hover_color="#4F46E5",
+            command=self._on_open_folder,
+        )
+        self._btn_open_main = ctk.CTkButton(
+            btn_frame, text="📄 Open Filing", fg_color="#8B5CF6", hover_color="#7C3AED",
+            command=self._on_open_main_filing,
+        )
+
     def _build_status_workflow(self, parent: ctk.CTkFrame) -> None:
         wf = ctk.CTkFrame(parent, fg_color="transparent")
         wf.grid(row=2, column=0, sticky="ew", padx=16, pady=4)
@@ -212,15 +250,31 @@ class FilingManagerFrame(ctk.CTkFrame):
     # -- Data -----------------------------------------------------------------
 
     def refresh(self) -> None:
-        """Reload filing list from DB applying current filters."""
+        """Reload filing list from DB + disk packages via bridge."""
         status_val = self._filter_status.get()
         type_val = self._filter_type.get()
         court_val = self._filter_court.get().strip()
 
+        # Try loading disk-based filing packages via bridge
+        if self._bridge:
+            self._packages = self._bridge.get_filing_packages()
+            if self._packages:
+                # Apply status filter to packages
+                if status_val != "All":
+                    self._packages = [p for p in self._packages if p.get("status") == status_val]
+                if court_val:
+                    court_lower = court_val.lower()
+                    self._packages = [
+                        p for p in self._packages
+                        if court_lower in p.get("title", "").lower()
+                    ]
+                self._populate_package_list()
+                return
+
+        # Fallback to engine-based filings
         status_filter = None if status_val == "All" else status_val
         self._filings = self.engine.get_filings(status=status_filter)
 
-        # Client-side filters
         if type_val != "All":
             self._filings = [f for f in self._filings if f.get("filing_type") == type_val]
         if court_val:
@@ -266,10 +320,146 @@ class FilingManagerFrame(ctk.CTkFrame):
             for widget in (row, dot, lbl, tag):
                 widget.bind("<Button-1>", lambda e, f=filing: self._on_select(f))
 
-    def _on_select(self, filing: dict) -> None:
-        self._selected_filing = filing
+    def _populate_package_list(self) -> None:
+        """Populate left panel with disk-based filing packages."""
+        for w in self._list_frame.winfo_children():
+            w.destroy()
+
+        if not self._packages:
+            ctk.CTkLabel(self._list_frame, text="No filing packages found.", text_color="#6B7280").pack(
+                pady=20
+            )
+            return
+
+        for pkg in self._packages:
+            row = ctk.CTkFrame(self._list_frame, cursor="hand2")
+            row.pack(fill="x", pady=2)
+            row.grid_columnconfigure(1, weight=1)
+
+            status = pkg.get("status", "incomplete")
+            status_color = _STATUS_COLORS.get(status, "#6B7280")
+            dot = ctk.CTkLabel(row, text="●", text_color=status_color, width=20)
+            dot.grid(row=0, column=0, padx=(8, 4), pady=6)
+
+            lbl = ctk.CTkLabel(
+                row, text=pkg.get("title", pkg.get("id", "Untitled")), anchor="w",
+                font=ctk.CTkFont(size=13),
+            )
+            lbl.grid(row=0, column=1, sticky="ew", pady=6)
+
+            info_text = f"{pkg.get('file_count', 0)} files · {pkg.get('total_size_str', '')}"
+            tag = ctk.CTkLabel(
+                row, text=info_text, text_color="#9CA3AF",
+                font=ctk.CTkFont(size=11),
+            )
+            tag.grid(row=0, column=2, padx=8, pady=6)
+
+            for widget in (row, dot, lbl, tag):
+                widget.bind("<Button-1>", lambda e, p=pkg: self._on_select_package(p))
+
+    def _on_select_package(self, pkg: dict) -> None:
+        """Handle selection of a disk-based filing package."""
+        self._selected_package = pkg
+        self._selected_filing = None
         self._current_stack = None
         self._current_validation = None
+        self._show_package_detail(pkg)
+
+    def _show_package_detail(self, pkg: dict) -> None:
+        """Show filing package detail in the right panel."""
+        self._detail_title.configure(text=pkg.get("title", pkg.get("id", "Untitled")))
+
+        status = pkg.get("status", "incomplete")
+        self._lbl_type.configure(text="Filing Package")
+        self._lbl_court.configure(text=pkg.get("total_size_str", "—"))
+        self._lbl_status.configure(
+            text=status.capitalize(),
+            text_color=_STATUS_COLORS.get(status, "#FFFFFF"),
+        )
+
+        # Score based on completeness
+        completeness = 0
+        if pkg.get("has_main_filing"):
+            completeness += 40
+        if pkg.get("has_affidavit"):
+            completeness += 20
+        if pkg.get("has_exhibits"):
+            completeness += 20
+        if pkg.get("has_assembled"):
+            completeness += 20
+        self._set_score(completeness)
+
+        # Checklist
+        self._issues_text.delete("1.0", "end")
+        self._issues_text.insert("end", "PACKAGE CHECKLIST\n" + "─" * 40 + "\n")
+        checks = [
+            ("Main Filing (01_MAIN_FILING.md)", pkg.get("has_main_filing", False)),
+            ("Affidavit (02_AFFIDAVIT)", pkg.get("has_affidavit", False)),
+            ("Exhibit Index", pkg.get("has_exhibits", False)),
+            ("Assembled Filing", pkg.get("has_assembled", False)),
+        ]
+        for label, ok in checks:
+            icon = "✅" if ok else "❌"
+            self._issues_text.insert("end", f"  {icon}  {label}\n")
+        self._issues_text.insert("end", f"\nFiles: {pkg.get('file_count', 0)}\n")
+        self._issues_text.insert("end", f"Size: {pkg.get('total_size_str', '—')}\n")
+
+        # Populate document list with files from the package
+        for w in self._doc_list.winfo_children():
+            w.destroy()
+        for fname in pkg.get("files", []):
+            icon = "📄"
+            if fname.startswith("01_MAIN"):
+                icon = "📋"
+            elif fname.startswith("02_AFFIDAVIT"):
+                icon = "✍️"
+            elif "EXHIBIT" in fname.upper():
+                icon = "📎"
+            elif fname.startswith("ASSEMBLED_"):
+                icon = "📦"
+            lbl = ctk.CTkLabel(
+                self._doc_list,
+                text=f"  {icon} {fname}",
+                anchor="w",
+            )
+            lbl.pack(fill="x", padx=4, pady=1)
+
+        # Show/hide package-specific buttons
+        self._btn_open_folder.pack(side="left", padx=8)
+        self._btn_open_main.pack(side="left", padx=8)
+
+    def _on_open_folder(self) -> None:
+        """Open the selected package directory in Windows Explorer."""
+        pkg = self._selected_package
+        if not pkg or not pkg.get("dir_path"):
+            return
+        try:
+            os.startfile(pkg["dir_path"])  # type: ignore[attr-defined]
+        except Exception as exc:
+            messagebox.showerror("Open Folder", str(exc))
+
+    def _on_open_main_filing(self) -> None:
+        """Open the main filing markdown in the default editor."""
+        pkg = self._selected_package
+        if not pkg or not pkg.get("dir_path"):
+            return
+        main = Path(pkg["dir_path"]) / "01_MAIN_FILING.md"
+        if not main.exists():
+            messagebox.showwarning("Open Filing", "01_MAIN_FILING.md not found in this package.")
+            return
+        try:
+            os.startfile(str(main))  # type: ignore[attr-defined]
+        except Exception as exc:
+            messagebox.showerror("Open Filing", str(exc))
+
+    def _on_select(self, filing: dict) -> None:
+        self._selected_filing = filing
+        self._selected_package = None
+        self._current_stack = None
+        self._current_validation = None
+        # Hide package-specific buttons
+        self._btn_open_folder.pack_forget()
+        self._btn_open_main.pack_forget()
         self._show_detail(filing)
 
     def _show_detail(self, filing: dict) -> None:

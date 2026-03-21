@@ -2,6 +2,8 @@
 
 Provides FTS5 search, a results table, filter panel, detail view with
 authentication status, Bates assignment, and exhibit list export.
+Uses the real litigation_context.db via LitigationBridge when available,
+falling back to the app-schema EvidenceEngine otherwise.
 """
 
 from __future__ import annotations
@@ -18,6 +20,12 @@ if TYPE_CHECKING:
     from litigationos.app import App
 
 from litigationos.engines.evidence import VALID_EVIDENCE_TYPES, EvidenceEngine
+
+try:
+    from litigationos.db.litigation_bridge import LitigationBridge
+    _HAS_BRIDGE = True
+except ImportError:
+    _HAS_BRIDGE = False
 
 logger = logging.getLogger(__name__)
 
@@ -43,6 +51,17 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
         self.engine = EvidenceEngine(app.db)
         self._evidence: list[dict] = []
         self._selected: Optional[dict] = None
+
+        # Bridge to real litigation_context.db
+        self._bridge: Optional[LitigationBridge] = None  # type: ignore[assignment]
+        if _HAS_BRIDGE:
+            try:
+                db_path = getattr(app, '_db_path', None) or getattr(app.db, 'db_path', None)
+                self._bridge = LitigationBridge(str(db_path) if db_path else None)
+                if not self._bridge.is_real_db:
+                    self._bridge = None
+            except Exception:
+                self._bridge = None
 
         self._build_ui()
         self.refresh()
@@ -94,9 +113,41 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
             padx=8, pady=(8, 4), anchor="w"
         )
 
-        # Evidence type checkboxes
-        ctk.CTkLabel(panel, text="Evidence Type", font=ctk.CTkFont(size=11)).pack(
+        # Category filter (populated from bridge or fallback to evidence types)
+        ctk.CTkLabel(panel, text="Category", font=ctk.CTkFont(size=11)).pack(
             padx=8, anchor="w"
+        )
+        cat_values = ["All"]
+        if self._bridge:
+            cats = self._bridge.get_evidence_categories()
+            if cats:
+                cat_values += cats
+        if len(cat_values) == 1:
+            cat_values += [t.replace("_", " ").title() for t in VALID_EVIDENCE_TYPES]
+        self._category_combo = ctk.CTkComboBox(
+            panel, values=cat_values, command=lambda _: self._apply_filters()
+        )
+        self._category_combo.set("All")
+        self._category_combo.pack(padx=8, fill="x", pady=(0, 4))
+
+        # Lane filter (populated from bridge)
+        ctk.CTkLabel(panel, text="Lane", font=ctk.CTkFont(size=11)).pack(
+            padx=8, anchor="w"
+        )
+        lane_values = ["All"]
+        if self._bridge:
+            lanes = self._bridge.get_evidence_lanes()
+            if lanes:
+                lane_values += lanes
+        self._lane_combo = ctk.CTkComboBox(
+            panel, values=lane_values, command=lambda _: self._apply_filters()
+        )
+        self._lane_combo.set("All")
+        self._lane_combo.pack(padx=8, fill="x", pady=(0, 4))
+
+        # Evidence type checkboxes (kept for legacy engine fallback)
+        ctk.CTkLabel(panel, text="Evidence Type", font=ctk.CTkFont(size=11)).pack(
+            padx=8, pady=(8, 0), anchor="w"
         )
         self._type_vars: dict[str, tk.BooleanVar] = {}
         for etype in VALID_EVIDENCE_TYPES:
@@ -114,7 +165,15 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
         self._case_combo.set("All")
         self._case_combo.pack(padx=8, fill="x")
 
-        # Refresh case list
+        # Show evidence count
+        if self._bridge:
+            count = self._bridge.get_evidence_count()
+            if count:
+                ctk.CTkLabel(
+                    panel, text=f"📊 {count:,} evidence items",
+                    font=ctk.CTkFont(size=10), text_color="#10B981",
+                ).pack(padx=8, pady=(8, 4), anchor="w")
+
         self._refresh_case_combo()
 
     def _refresh_case_combo(self) -> None:
@@ -133,10 +192,13 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
         table_frame.grid_columnconfigure(0, weight=1)
         table_frame.grid_rowconfigure(1, weight=1)
 
-        # Header
+        # Header — adapt columns based on bridge availability
         hdr = ctk.CTkFrame(table_frame, fg_color="#1E293B", height=30)
         hdr.grid(row=0, column=0, sticky="ew")
-        cols = [("Bates #", 100), ("Description", 260), ("Type", 90), ("Case", 50), ("Date", 90)]
+        if self._bridge:
+            cols = [("Source", 150), ("Quote", 220), ("Category", 80), ("Lane", 40), ("Score", 50)]
+        else:
+            cols = [("Bates #", 100), ("Description", 260), ("Type", 90), ("Case", 50), ("Date", 90)]
         for i, (text, w) in enumerate(cols):
             ctk.CTkLabel(hdr, text=text, font=ctk.CTkFont(size=11, weight="bold"), width=w, anchor="w").grid(
                 row=0, column=i, padx=4, pady=4
@@ -181,16 +243,29 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
     # -- Data -----------------------------------------------------------------
 
     def refresh(self) -> None:
-        """Reload evidence list from DB."""
-        self._evidence = self.engine.get_evidence()
-        self._refresh_case_combo()
-        self._apply_filters()
+        """Reload evidence list from bridge or DB."""
+        if self._bridge:
+            lane = self._lane_combo.get() if hasattr(self, '_lane_combo') else None
+            cat = self._category_combo.get() if hasattr(self, '_category_combo') else None
+            self._evidence = self._bridge.search_evidence(lane=lane, category=cat)
+            self._populate_bridge_table(self._evidence)
+        else:
+            self._evidence = self.engine.get_evidence()
+            self._refresh_case_combo()
+            self._apply_filters()
 
     def _do_search(self) -> None:
         query = self._search_entry.get().strip()
         if not query:
             self.refresh()
             return
+        if self._bridge:
+            lane = self._lane_combo.get() if hasattr(self, '_lane_combo') else None
+            cat = self._category_combo.get() if hasattr(self, '_category_combo') else None
+            self._evidence = self._bridge.search_evidence(query, lane=lane, category=cat)
+            self._populate_bridge_table(self._evidence)
+            return
+        # Fallback to EvidenceEngine
         case_id = self._get_case_filter()
         try:
             self._evidence = self.engine.search_evidence(query, case_id=case_id)
@@ -212,6 +287,15 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
             return None
 
     def _apply_filters(self) -> None:
+        if self._bridge:
+            # Re-query bridge with selected filters
+            lane = self._lane_combo.get() if hasattr(self, '_lane_combo') else None
+            cat = self._category_combo.get() if hasattr(self, '_category_combo') else None
+            query = self._search_entry.get().strip() if hasattr(self, '_search_entry') else ""
+            self._evidence = self._bridge.search_evidence(query, lane=lane, category=cat)
+            self._populate_bridge_table(self._evidence)
+            return
+        # Legacy: filter in-memory evidence list
         active_types = {t for t, v in self._type_vars.items() if v.get()}
         case_id = self._get_case_filter()
         filtered = self._evidence
@@ -251,20 +335,74 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
                 lbl.bind("<Button-1>", lambda e, item=ev: self._on_select(item))
             row_frame.bind("<Button-1>", lambda e, item=ev: self._on_select(item))
 
+    def _populate_bridge_table(self, items: list[dict]) -> None:
+        """Populate the results table with evidence_quotes data from bridge."""
+        for w in self._table_scroll.winfo_children():
+            w.destroy()
+
+        if not items:
+            ctk.CTkLabel(self._table_scroll, text="No evidence found.", text_color="#6B7280").grid(
+                row=0, column=0, columnspan=5, pady=20
+            )
+            return
+
+        for idx, ev in enumerate(items):
+            row_frame = ctk.CTkFrame(
+                self._table_scroll, fg_color="#1F2937" if idx % 2 == 0 else "transparent",
+                cursor="hand2",
+            )
+            row_frame.grid(row=idx, column=0, sticky="ew", pady=1)
+            row_frame.grid_columnconfigure(1, weight=1)
+
+            source = Path(ev.get("source_file", "")).name if ev.get("source_file") else "—"
+            quote = (ev.get("quote_text") or "")[:80]
+            category = ev.get("category") or "—"
+            lane = ev.get("lane") or "—"
+            score = ev.get("relevance_score")
+            score_str = f"{score:.1f}" if score is not None else "—"
+
+            vals = [
+                (source[:30], 150),
+                (quote, 220),
+                (category, 80),
+                (lane, 40),
+                (score_str, 50),
+            ]
+            for ci, (text, w) in enumerate(vals):
+                lbl = ctk.CTkLabel(row_frame, text=text, width=w, anchor="w", font=ctk.CTkFont(size=12))
+                lbl.grid(row=0, column=ci, padx=4, pady=3)
+                lbl.bind("<Button-1>", lambda e, item=ev: self._on_select(item))
+            row_frame.bind("<Button-1>", lambda e, item=ev: self._on_select(item))
+
     def _on_select(self, ev: dict) -> None:
         self._selected = ev
-        mapping = {
-            "Bates #": ev.get("bates_number") or "—",
-            "Title": ev.get("title") or "—",
-            "File Path": ev.get("file_path") or "—",
-            "File Type": ev.get("file_type") or "—",
-            "Hash": (ev.get("notes") or "—")[:64],
-            "Source": ev.get("source") or "—",
-            "Date Created": ev.get("date_created") or "—",
-            "Date Imported": ev.get("date_imported") or "—",
-            "Authentication": ev.get("authentication_method") or "Not authenticated",
-            "Tags": ev.get("tags") or "—",
-        }
+        # Bridge evidence_quotes have different fields than app-schema evidence
+        if "quote_text" in ev:
+            mapping = {
+                "Bates #": str(ev.get("id", "—")),
+                "Title": (ev.get("quote_text") or "—")[:200],
+                "File Path": ev.get("source_file") or "—",
+                "File Type": ev.get("category") or "—",
+                "Hash": "—",
+                "Source": ev.get("source_file") or "—",
+                "Date Created": ev.get("created_at") or "—",
+                "Date Imported": "—",
+                "Authentication": f"Lane: {ev.get('lane', '—')} | Score: {ev.get('relevance_score', '—')}",
+                "Tags": ev.get("tags") or ev.get("filing_refs") or "—",
+            }
+        else:
+            mapping = {
+                "Bates #": ev.get("bates_number") or "—",
+                "Title": ev.get("title") or "—",
+                "File Path": ev.get("file_path") or "—",
+                "File Type": ev.get("file_type") or "—",
+                "Hash": (ev.get("notes") or "—")[:64],
+                "Source": ev.get("source") or "—",
+                "Date Created": ev.get("date_created") or "—",
+                "Date Imported": ev.get("date_imported") or "—",
+                "Authentication": ev.get("authentication_method") or "Not authenticated",
+                "Tags": ev.get("tags") or "—",
+            }
         for field, value in mapping.items():
             self._detail_labels[field].configure(text=str(value))
 
