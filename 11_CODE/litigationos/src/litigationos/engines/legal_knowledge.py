@@ -566,3 +566,128 @@ class LegalKnowledgeEngine:
                 continue
 
         return results
+
+    # ------------------------------------------------------------------
+    # Static Dataset Integration (offline data/ package)
+    # ------------------------------------------------------------------
+
+    def load_static_datasets(self) -> Dict[str, int]:
+        """Load all static legal datasets into the FTS5 index.
+
+        Imports from ``litigationos.data`` package and populates the
+        ``legal_knowledge_fts`` table with entries that aren't already in the
+        litigation_context.db source tables.  This ensures offline-first
+        knowledge is always searchable.
+
+        Returns:
+            Dict mapping source name to count of entries loaded.
+        """
+        loaded: Dict[str, int] = {}
+        dataset_map = [
+            ("mcr_static", "litigationos.data.mcr_complete", "MCR_RULES", "MCR"),
+            ("mcl_static", "litigationos.data.mcl_complete", "MCL_CHAPTERS", "MCL"),
+            ("mre_static", "litigationos.data.mre_complete", "MRE_RULES", "MRE"),
+            ("frcp_static", "litigationos.data.federal_rules", "FRCP_RULES", "FRCP"),
+            ("fre_static", "litigationos.data.federal_rules", "FRE_RULES", "FRE"),
+            ("federal_statutes", "litigationos.data.federal_rules", "FEDERAL_STATUTES", "FEDERAL"),
+            ("wdmi_local", "litigationos.data.federal_rules", "WDMI_LOCAL_RULES", "WDMI"),
+            ("local_14th", "litigationos.data.local_rules", "LOCAL_RULES_14TH_CIRCUIT", "LOCAL"),
+            ("admin_orders", "litigationos.data.local_rules", "ADMIN_ORDERS", "ADMIN"),
+            ("jury_instr", "litigationos.data.local_rules", "JURY_INSTRUCTIONS", "JURY"),
+            ("bench_book", "litigationos.data.local_rules", "BENCH_BOOK_ENTRIES", "BENCH"),
+        ]
+
+        with self._connect() as conn:
+            for name, module_path, attr_name, src_type in dataset_map:
+                try:
+                    import importlib
+                    mod = importlib.import_module(module_path)
+                    entries = getattr(mod, attr_name, [])
+
+                    # Handle MCL_CHAPTERS which is a dict of lists
+                    if isinstance(entries, dict):
+                        flat: List[Dict[str, Any]] = []
+                        for chapter_key, statutes in entries.items():
+                            if isinstance(statutes, list):
+                                flat.extend(statutes)
+                        entries = flat
+
+                    count = 0
+                    for entry in entries:
+                        citation = entry.get("citation", entry.get("form_number", ""))
+                        title = entry.get("title", "")
+                        text = entry.get("full_text", entry.get("summary", entry.get("description", "")))
+                        chapter = entry.get("chapter", entry.get("article", entry.get("category", "")))
+
+                        conn.execute(
+                            """
+                            INSERT INTO legal_knowledge_fts(
+                                source_type, source_id, rule_number, title, full_text, category
+                            ) VALUES (?, ?, ?, ?, ?, ?)
+                            """,
+                            (src_type, citation, citation, title, text or "", chapter or ""),
+                        )
+                        count += 1
+
+                    loaded[name] = count
+                    logger.info("Loaded %d entries from %s", count, name)
+
+                except Exception as exc:  # noqa: BLE001
+                    logger.warning("Failed to load %s: %s", name, exc)
+                    loaded[name] = 0
+
+            conn.commit()
+
+        total = sum(loaded.values())
+        logger.info("Static datasets: loaded %d total entries across %d sources", total, len(loaded))
+        return loaded
+
+    def search_static(self, query: str, limit: int = 20) -> List[Dict[str, Any]]:
+        """Search static datasets directly (no DB required).
+
+        Performs in-memory substring search across all offline datasets.
+        Useful when litigation_context.db is unavailable.
+        """
+        results: List[Dict[str, Any]] = []
+        query_lower = query.lower()
+
+        dataset_imports = [
+            ("litigationos.data.mcr_complete", "MCR_RULES"),
+            ("litigationos.data.mcl_complete", "MCL_CHAPTERS"),
+            ("litigationos.data.mre_complete", "MRE_RULES"),
+            ("litigationos.data.federal_rules", "FRCP_RULES"),
+            ("litigationos.data.federal_rules", "FRE_RULES"),
+            ("litigationos.data.federal_rules", "FEDERAL_STATUTES"),
+            ("litigationos.data.federal_rules", "WDMI_LOCAL_RULES"),
+            ("litigationos.data.local_rules", "LOCAL_RULES_14TH_CIRCUIT"),
+            ("litigationos.data.local_rules", "ADMIN_ORDERS"),
+            ("litigationos.data.local_rules", "JURY_INSTRUCTIONS"),
+            ("litigationos.data.local_rules", "BENCH_BOOK_ENTRIES"),
+        ]
+
+        for module_path, attr_name in dataset_imports:
+            try:
+                import importlib
+                mod = importlib.import_module(module_path)
+                entries = getattr(mod, attr_name, [])
+
+                # Flatten MCL_CHAPTERS dict
+                if isinstance(entries, dict):
+                    flat_entries: List[Dict[str, Any]] = []
+                    for statutes in entries.values():
+                        if isinstance(statutes, list):
+                            flat_entries.extend(statutes)
+                    entries = flat_entries
+
+                for entry in entries:
+                    searchable = " ".join(
+                        str(v) for v in entry.values() if isinstance(v, str)
+                    ).lower()
+                    if query_lower in searchable:
+                        results.append(entry)
+                        if len(results) >= limit:
+                            return results
+            except Exception:  # noqa: BLE001
+                continue
+
+        return results
