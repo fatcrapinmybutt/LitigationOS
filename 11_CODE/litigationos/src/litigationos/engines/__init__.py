@@ -1,8 +1,10 @@
 """Engines package — business logic for court rules, deadlines, documents, and AI."""
 
+from litigationos.engines.authority_chain import AuthorityChainEngine
 from litigationos.engines.ai_legal_brain import LegalAIBrain
 from litigationos.engines.autonomous_income import AutonomousIncomeEngine
 from litigationos.engines.case_engine import CaseEngine
+from litigationos.engines.court_form_filler import CourtFormFiller
 from litigationos.engines.court_rules import CourtRulesEngine
 from litigationos.engines.deadline import DeadlineEngine
 from litigationos.engines.document import DocumentEngine
@@ -35,9 +37,11 @@ from litigationos.engines.rag import RAGEngine
 from litigationos.engines.settings import SettingsEngine
 
 __all__ = [
+    "AuthorityChainEngine",
     "AutonomousIncomeEngine",
     "LegalAIBrain",
     "CaseEngine",
+    "CourtFormFiller",
     "CourtRulesEngine",
     "DeadlineEngine",
     "DiscoveryGenerator",
