@@ -8,6 +8,14 @@ v2.0 OMEGA Upgrades:
   - AgentMessage: inter-agent communication bus
   - Enhanced AgentResult with quality scoring + plan history
   - RetryableError for transient failures with backoff hints
+
+v3.0 OMEGA Upgrades:
+  - HealthReport: structured fleet-readable health status
+  - ProvenanceEntry: immutable provenance chain record
+  - EvidenceScore: multi-dimensional evidence scoring
+  - LaneDetection: lane classification result with confidence
+  - FleetStatus: aggregated fleet health snapshot
+  - ValidationResult: output validation with issues list
 """
 import time
 from dataclasses import dataclass, field
@@ -149,6 +157,136 @@ class AgentResult:
     def __str__(self) -> str:
         q = f" {self.quality}" if self.quality else ""
         return f"{self.agent_id}: {self.status} {self.stats}{q}"
+
+
+# ═══════════════════════════════════════════
+# v3.0 OMEGA DATA CLASSES
+# ═══════════════════════════════════════════
+
+@dataclass
+class HealthReport:
+    """Structured health report for fleet monitoring.
+    Every agent can report its health in a fleet-readable format."""
+    agent_id: str
+    status: str              # healthy, degraded, failing, dead
+    uptime_seconds: float = 0.0
+    items_processed: int = 0
+    error_count: int = 0
+    last_error: Optional[str] = None
+    memory_mb: float = 0.0
+    db_connected: bool = False
+    lane: str = "U"          # Which case lane (A-F or U=unclassified)
+    capabilities: List[str] = field(default_factory=list)
+
+    @property
+    def health_score(self) -> float:
+        """0.0 to 1.0 health score based on error rate and connectivity."""
+        if self.status == "dead":
+            return 0.0
+        total = self.items_processed + self.error_count
+        error_penalty = (self.error_count / max(total, 1)) * 0.5
+        db_penalty = 0.0 if self.db_connected else 0.2
+        base = {"healthy": 1.0, "degraded": 0.7, "failing": 0.3}.get(self.status, 0.5)
+        return max(0.0, base - error_penalty - db_penalty)
+
+    def __str__(self) -> str:
+        return f"{self.agent_id}: {self.status} (score={self.health_score:.2f}, items={self.items_processed})"
+
+
+@dataclass
+class ProvenanceEntry:
+    """Immutable provenance chain record — links outputs to their source inputs.
+    Every generated artifact (filing, analysis, score) MUST have provenance."""
+    output_type: str         # filing, analysis, score, classification, timeline
+    output_id: str           # Unique identifier for the output
+    inputs: List[Dict[str, str]] = field(default_factory=list)  # [{type, id, path}]
+    agent_id: str = ""
+    timestamp: float = field(default_factory=time.time)
+
+    def __str__(self) -> str:
+        return f"[{self.output_type}] {self.output_id} ← {len(self.inputs)} inputs"
+
+
+@dataclass
+class EvidenceScore:
+    """Multi-dimensional evidence scoring result.
+    Rates evidence on relevance, admissibility, and impact."""
+    relevance: float = 0.0      # 0-1: How relevant to the claim?
+    admissibility: float = 0.0  # 0-1: Will court admit it? (MRE compliance)
+    impact: float = 0.0         # 0-1: How much does it help the case?
+    evidence_type: str = ""     # document, testimony, photo, record, digital
+    claim_type: str = ""        # custody, misconduct, housing, ppo, appeal, civil_rights
+    mre_issues: List[str] = field(default_factory=list)  # MRE rules that may exclude
+    notes: str = ""
+
+    @property
+    def composite(self) -> float:
+        """Weighted composite score. Admissibility gates everything."""
+        if self.admissibility < 0.3:
+            return self.admissibility * 0.5  # Inadmissible = near-zero value
+        return (self.relevance * 0.35 + self.admissibility * 0.35 + self.impact * 0.30)
+
+    def __str__(self) -> str:
+        return (f"Evidence[{self.evidence_type}→{self.claim_type}]: "
+                f"composite={self.composite:.2f} (rel={self.relevance:.2f} "
+                f"adm={self.admissibility:.2f} imp={self.impact:.2f})")
+
+
+@dataclass
+class LaneDetection:
+    """Lane classification result with confidence scoring.
+    Maps evidence/documents to one of 6 case lanes."""
+    lane: str = "U"           # A, B, C, D, E, F, or U (unclassified)
+    confidence: float = 0.0   # 0-1: How confident in the classification?
+    signals_found: List[str] = field(default_factory=list)
+    signal_counts: Dict[str, int] = field(default_factory=dict)  # {lane: count}
+
+    @property
+    def is_confident(self) -> bool:
+        return self.confidence >= 0.6
+
+    def __str__(self) -> str:
+        return f"Lane={self.lane} (conf={self.confidence:.2f}, signals={len(self.signals_found)})"
+
+
+@dataclass
+class FleetStatus:
+    """Aggregated fleet health snapshot for orchestrator monitoring."""
+    total_agents: int = 0
+    healthy: int = 0
+    degraded: int = 0
+    failing: int = 0
+    dead: int = 0
+    total_items_processed: int = 0
+    total_errors: int = 0
+    reports: List[HealthReport] = field(default_factory=list)
+    timestamp: float = field(default_factory=time.time)
+
+    @property
+    def fleet_health(self) -> float:
+        if self.total_agents == 0:
+            return 0.0
+        return sum(r.health_score for r in self.reports) / self.total_agents
+
+    def __str__(self) -> str:
+        return (f"Fleet: {self.total_agents} agents, health={self.fleet_health:.2f} "
+                f"({self.healthy}✓ {self.degraded}~ {self.failing}! {self.dead}✗)")
+
+
+@dataclass
+class ValidationResult:
+    """Output validation result with detailed issue tracking.
+    Used by guard_output() and validate_output() in Agent9999 v3.0."""
+    is_valid: bool = True
+    issues: List[str] = field(default_factory=list)
+    corrections_made: int = 0
+    hallucinations_caught: int = 0
+    original_text: str = ""
+    corrected_text: str = ""
+
+    def __str__(self) -> str:
+        status = "VALID" if self.is_valid else f"INVALID ({len(self.issues)} issues)"
+        return f"Validation: {status}, {self.corrections_made} corrections, {self.hallucinations_caught} hallucinations caught"
 
 
 # Lane definitions (IRON LAW — never mix)
