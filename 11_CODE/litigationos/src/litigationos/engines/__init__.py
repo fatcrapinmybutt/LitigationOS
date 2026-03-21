@@ -1,5 +1,6 @@
 """Engines package — business logic for court rules, deadlines, documents, and AI."""
 
+from litigationos.engines.branding import BrandingEngine
 from litigationos.engines.authority_chain import AuthorityChainEngine
 from litigationos.engines.ai_legal_brain import LegalAIBrain
 from litigationos.engines.autonomous_income import AutonomousIncomeEngine
@@ -16,6 +17,7 @@ from litigationos.engines.irac_engine import IRACEngine
 from litigationos.engines.legal_knowledge import LegalKnowledgeEngine
 from litigationos.engines.monetization import MonetizationEngine
 from litigationos.engines.motion_templates import MotionTemplateEngine
+from litigationos.engines.notifications import NotificationEngine
 from litigationos.engines.onboarding import OnboardingEngine
 from litigationos.engines.pdf_production import (
     assemble_filing_package,
@@ -33,10 +35,12 @@ from litigationos.engines.pdf_production import (
     stamp_bates_on_pdf,
 )
 from litigationos.engines.discovery_generator import DiscoveryGenerator
+from litigationos.engines.mcp_bridge import MCPBridge
 from litigationos.engines.rag import RAGEngine
 from litigationos.engines.settings import SettingsEngine
 
 __all__ = [
+    "BrandingEngine",
     "AuthorityChainEngine",
     "AutonomousIncomeEngine",
     "LegalAIBrain",
@@ -52,8 +56,10 @@ __all__ = [
     "EvidenceEngine",
     "IRACEngine",
     "LegalKnowledgeEngine",
+    "MCPBridge",
     "MonetizationEngine",
     "MotionTemplateEngine",
+    "NotificationEngine",
     "OnboardingEngine",
     "RAGEngine",
     "SettingsEngine",
