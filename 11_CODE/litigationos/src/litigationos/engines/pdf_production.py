@@ -847,3 +847,524 @@ def assemble_filing_package(
     logger.info("Assembled filing package: %d pages, %d exhibits → %s",
                 total_pages, result["exhibit_count"], output_pdf)
     return result
+
+
+# ---------------------------------------------------------------------------
+# 6. TABLE OF CONTENTS
+# ---------------------------------------------------------------------------
+
+
+def _toc_dot_leader(title: str, page_num: int, width: float) -> str:
+    """Build a title . . . . page string with dot leaders for TOC/TOA rows."""
+    dots = " . " * 40
+    return f"{title}{dots}{page_num}"
+
+
+def generate_toc(
+    entries: List[Dict[str, Any]],
+    output_pdf: str | Path,
+    title: str = "TABLE OF CONTENTS",
+    case_caption: Optional[str] = None,
+) -> Path:
+    """Generate a court-formatted Table of Contents PDF.
+
+    Args:
+        entries: List of dicts with keys ``title`` (str), ``page`` (int),
+            and ``level`` (0 = main heading, 1 = subheading, 2 = exhibit).
+        output_pdf: Destination PDF path.
+        title: Heading text printed at the top of the TOC.
+        case_caption: Optional case caption printed above the title.
+
+    Returns:
+        Path to the generated TOC PDF.
+    """
+    output_pdf = Path(output_pdf)
+    output_pdf.parent.mkdir(parents=True, exist_ok=True)
+
+    width, height = letter
+    styles = getSampleStyleSheet()
+
+    # --- custom paragraph styles for dot-leader rows -------------------
+    toc_base = ParagraphStyle(
+        "TOCBase",
+        parent=styles["Normal"],
+        fontName=_COURT_FONT,
+        fontSize=_COURT_FONT_SIZE,
+        leading=_COURT_LEADING,
+    )
+    toc_bold = ParagraphStyle(
+        "TOCBold",
+        parent=toc_base,
+        fontName=_COURT_FONT_BOLD,
+    )
+    toc_sub = ParagraphStyle(
+        "TOCSub",
+        parent=toc_base,
+        leftIndent=0.5 * inch,
+    )
+    toc_exhibit = ParagraphStyle(
+        "TOCExhibit",
+        parent=toc_base,
+        leftIndent=1.0 * inch,
+    )
+    heading_style = ParagraphStyle(
+        "TOCHeading",
+        parent=styles["Normal"],
+        fontName=_COURT_FONT_BOLD,
+        fontSize=14,
+        leading=20,
+        alignment=1,  # center
+        spaceAfter=12,
+    )
+    caption_style = ParagraphStyle(
+        "TOCCaption",
+        parent=styles["Normal"],
+        fontName=_COURT_FONT,
+        fontSize=11,
+        leading=14,
+        alignment=1,
+        spaceAfter=6,
+    )
+
+    story: List[Any] = []
+
+    if case_caption:
+        story.append(Paragraph(case_caption.replace("\n", "<br/>"), caption_style))
+        story.append(Spacer(1, 12))
+
+    story.append(Paragraph(title, heading_style))
+    story.append(Spacer(1, 6))
+
+    # Build table rows: [title_with_dots, page_number]
+    table_data: List[List[Any]] = []
+    row_styles: List[Tuple[str, Tuple[int, int], Tuple[int, int], Any]] = []
+    level_style_map = {0: toc_bold, 1: toc_sub, 2: toc_exhibit}
+
+    for idx, entry in enumerate(entries):
+        lvl = entry.get("level", 0)
+        style = level_style_map.get(lvl, toc_base)
+        entry_title = entry.get("title", "")
+        page_num = entry.get("page", 0)
+        dots = " . " * max(1, 30 - len(entry_title) // 2)
+        cell_text = Paragraph(f"{entry_title}{dots}", style)
+        page_para = Paragraph(
+            str(page_num),
+            ParagraphStyle("PageNum", parent=toc_base, alignment=2),
+        )
+        table_data.append([cell_text, page_para])
+
+    if not table_data:
+        table_data.append([Paragraph("(No entries)", toc_base), Paragraph("", toc_base)])
+
+    col_widths = [width - 2.5 * inch, 0.75 * inch]
+    toc_table = Table(table_data, colWidths=col_widths)
+    toc_table.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("TOPPADDING", (0, 0), (-1, -1), 1),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 1),
+        ("LINEBELOW", (0, -1), (-1, -1), 0.5, black),
+    ]))
+    story.append(toc_table)
+
+    def _toc_footer(canvas_obj: canvas.Canvas, doc: Any) -> None:
+        canvas_obj.saveState()
+        canvas_obj.setFont("Helvetica", 8)
+        canvas_obj.setFillColor(Color(0.5, 0.5, 0.5))
+        canvas_obj.drawCentredString(
+            width / 2, 0.4 * inch, "Prepared by MBP LLC — LitigationOS",
+        )
+        canvas_obj.restoreState()
+
+    doc = SimpleDocTemplate(
+        str(output_pdf),
+        pagesize=letter,
+        leftMargin=1.0 * inch,
+        rightMargin=1.0 * inch,
+        topMargin=1.0 * inch,
+        bottomMargin=0.75 * inch,
+    )
+    doc.build(story, onFirstPage=_toc_footer, onLaterPages=_toc_footer)
+    logger.info("Generated TOC (%d entries) → %s", len(entries), output_pdf)
+    return output_pdf
+
+
+# ---------------------------------------------------------------------------
+# 7. TABLE OF AUTHORITIES
+# ---------------------------------------------------------------------------
+
+
+_TOA_TYPE_ORDER = ["case", "statute", "rule", "other"]
+_TOA_TYPE_HEADINGS = {
+    "case": "Cases",
+    "statute": "Statutes",
+    "rule": "Court Rules",
+    "other": "Other Authorities",
+}
+
+
+def generate_toa(
+    authorities: List[Dict[str, str]],
+    output_pdf: str | Path,
+    title: str = "TABLE OF AUTHORITIES",
+    case_caption: Optional[str] = None,
+) -> Path:
+    """Generate a court-formatted Table of Authorities PDF.
+
+    Authorities are grouped by type (Cases, Statutes, Court Rules, Other)
+    and sorted alphabetically within each group.  Case names are italicised
+    per Bluebook convention.
+
+    Args:
+        authorities: List of dicts with keys ``citation`` (str),
+            ``type`` (case | statute | rule | other), and ``pages`` (str).
+        output_pdf: Destination PDF path.
+        title: Heading text printed at the top.
+        case_caption: Optional case caption printed above the title.
+
+    Returns:
+        Path to the generated TOA PDF.
+    """
+    output_pdf = Path(output_pdf)
+    output_pdf.parent.mkdir(parents=True, exist_ok=True)
+
+    width, _height = letter
+    styles = getSampleStyleSheet()
+
+    heading_style = ParagraphStyle(
+        "TOAHeading",
+        parent=styles["Normal"],
+        fontName=_COURT_FONT_BOLD,
+        fontSize=14,
+        leading=20,
+        alignment=1,
+        spaceAfter=12,
+    )
+    caption_style = ParagraphStyle(
+        "TOACaption",
+        parent=styles["Normal"],
+        fontName=_COURT_FONT,
+        fontSize=11,
+        leading=14,
+        alignment=1,
+        spaceAfter=6,
+    )
+    group_heading = ParagraphStyle(
+        "TOAGroupHeading",
+        parent=styles["Normal"],
+        fontName=_COURT_FONT_BOLD,
+        fontSize=_COURT_FONT_SIZE,
+        leading=_COURT_LEADING,
+        spaceBefore=12,
+        spaceAfter=4,
+        underlineWidth=0.5,
+    )
+    cite_style = ParagraphStyle(
+        "TOACite",
+        parent=styles["Normal"],
+        fontName=_COURT_FONT,
+        fontSize=_COURT_FONT_SIZE,
+        leading=_COURT_LEADING,
+        leftIndent=0.25 * inch,
+    )
+    cite_italic = ParagraphStyle(
+        "TOACiteItalic",
+        parent=cite_style,
+        fontName="Times-Italic",
+    )
+    page_style = ParagraphStyle(
+        "TOAPage",
+        parent=cite_style,
+        alignment=2,  # right
+    )
+
+    # Group authorities by type
+    grouped: Dict[str, List[Dict[str, str]]] = {t: [] for t in _TOA_TYPE_ORDER}
+    for auth in authorities:
+        atype = auth.get("type", "other").lower()
+        if atype not in grouped:
+            atype = "other"
+        grouped[atype].append(auth)
+
+    story: List[Any] = []
+
+    if case_caption:
+        story.append(Paragraph(case_caption.replace("\n", "<br/>"), caption_style))
+        story.append(Spacer(1, 12))
+
+    story.append(Paragraph(title, heading_style))
+    story.append(Spacer(1, 6))
+
+    for atype in _TOA_TYPE_ORDER:
+        items = grouped.get(atype, [])
+        if not items:
+            continue
+        items.sort(key=lambda a: a.get("citation", "").lower())
+
+        story.append(Paragraph(_TOA_TYPE_HEADINGS[atype], group_heading))
+
+        table_data: List[List[Any]] = []
+        for item in items:
+            citation = item.get("citation", "")
+            pages = item.get("pages", "")
+            dots = " . " * max(1, 28 - len(citation) // 2)
+            style = cite_italic if atype == "case" else cite_style
+            cell = Paragraph(f"{citation}{dots}", style)
+            page_cell = Paragraph(pages, page_style)
+            table_data.append([cell, page_cell])
+
+        col_widths = [width - 2.75 * inch, 1.0 * inch]
+        auth_table = Table(table_data, colWidths=col_widths)
+        auth_table.setStyle(TableStyle([
+            ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ("TOPPADDING", (0, 0), (-1, -1), 1),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 1),
+        ]))
+        story.append(auth_table)
+
+    if not any(grouped.values()):
+        story.append(Paragraph("(No authorities cited)", cite_style))
+
+    def _toa_footer(canvas_obj: canvas.Canvas, doc: Any) -> None:
+        canvas_obj.saveState()
+        canvas_obj.setFont("Helvetica", 8)
+        canvas_obj.setFillColor(Color(0.5, 0.5, 0.5))
+        canvas_obj.drawCentredString(
+            width / 2, 0.4 * inch, "Prepared by MBP LLC — LitigationOS",
+        )
+        canvas_obj.restoreState()
+
+    doc = SimpleDocTemplate(
+        str(output_pdf),
+        pagesize=letter,
+        leftMargin=1.0 * inch,
+        rightMargin=1.0 * inch,
+        topMargin=1.0 * inch,
+        bottomMargin=0.75 * inch,
+    )
+    doc.build(story, onFirstPage=_toa_footer, onLaterPages=_toa_footer)
+    logger.info("Generated TOA (%d authorities) → %s", len(authorities), output_pdf)
+    return output_pdf
+
+
+# ---------------------------------------------------------------------------
+# 8. PDF METADATA
+# ---------------------------------------------------------------------------
+
+
+def embed_pdf_metadata(
+    input_pdf: str | Path,
+    output_pdf: Optional[str | Path] = None,
+    title: Optional[str] = None,
+    author: str = "Andrew James Pigors",
+    subject: Optional[str] = None,
+    keywords: Optional[str] = None,
+    case_number: str = "2024-001507-DC",
+    court: str = "14th Circuit Court, Muskegon County, Michigan",
+    creator: str = "LitigationOS by MBP LLC",
+) -> Path:
+    """Embed XMP / docinfo metadata into a PDF using pikepdf.
+
+    Sets standard PDF metadata fields (Title, Author, Subject, Keywords,
+    Creator, Producer, CreationDate, ModDate) plus custom litigation
+    fields (CaseNumber, Court).
+
+    Args:
+        input_pdf: Source PDF.
+        output_pdf: Destination PDF.  If *None*, the file is overwritten
+            in-place.
+        title: Document title (``/Title``).
+        author: Author name (``/Author``).
+        subject: Document subject (``/Subject``).
+        keywords: Comma-separated keywords (``/Keywords``).
+        case_number: Michigan case number stored as ``/CaseNumber``.
+        court: Court name stored as ``/Court``.
+        creator: Creator application name (``/Creator``).
+
+    Returns:
+        Path to the output PDF.
+    """
+    input_pdf = Path(input_pdf)
+    if output_pdf is None:
+        output_pdf = input_pdf
+    else:
+        output_pdf = Path(output_pdf)
+    output_pdf.parent.mkdir(parents=True, exist_ok=True)
+
+    if not input_pdf.exists():
+        raise FileNotFoundError(f"PDF not found: {input_pdf}")
+
+    overwrite = input_pdf.resolve() == output_pdf.resolve()
+    pdf = pikepdf.Pdf.open(
+        str(input_pdf), allow_overwriting_input=overwrite,
+    )
+
+    now_str = datetime.now().strftime("D:%Y%m%d%H%M%S")
+
+    with pdf.open_metadata() as meta:
+        if title:
+            meta["dc:title"] = title
+        meta["dc:creator"] = [author]
+        if subject:
+            meta["dc:description"] = subject
+        if keywords:
+            meta["pdf:Keywords"] = keywords
+        meta["pdf:Producer"] = creator
+        meta["xmp:CreatorTool"] = creator
+        meta["xmp:ModifyDate"] = datetime.now().isoformat()
+
+    # Also set legacy docinfo for maximum compatibility
+    info = pdf.docinfo
+    if title:
+        info["/Title"] = title
+    info["/Author"] = author
+    if subject:
+        info["/Subject"] = subject
+    if keywords:
+        info["/Keywords"] = keywords
+    info["/Creator"] = creator
+    info["/Producer"] = creator
+    info["/CreationDate"] = now_str
+    info["/ModDate"] = now_str
+    # Custom litigation fields
+    info["/CaseNumber"] = case_number
+    info["/Court"] = court
+
+    pdf.save(str(output_pdf))
+    pdf.close()
+    logger.info("Embedded metadata → %s", output_pdf)
+    return output_pdf
+
+
+# ---------------------------------------------------------------------------
+# 9. E-FILING PREPARATION
+# ---------------------------------------------------------------------------
+
+
+def prepare_for_efiling(
+    input_pdf: str | Path,
+    output_pdf: str | Path,
+    max_file_size_mb: float = 25.0,
+    naming_convention: str = "mifile",
+    case_number: str = "2024-001507-DC",
+    document_type: str = "Motion",
+    filing_date: Optional[str] = None,
+) -> Dict[str, Any]:
+    """Prepare a PDF for Michigan e-filing (MiFILE).
+
+    Validates size, text-searchability, and page count, then renames the
+    file per MiFILE naming convention and embeds standard metadata.
+
+    Args:
+        input_pdf: Source PDF to prepare.
+        output_pdf: Destination directory **or** file path.
+        max_file_size_mb: Maximum allowed file size (MiFILE default 25 MB).
+        naming_convention: Naming scheme (currently only ``"mifile"``).
+        case_number: Michigan case number used in the filename.
+        document_type: Document type label (e.g. ``"Motion"``,
+            ``"Brief"``, ``"Exhibit"``).
+        filing_date: Filing date as ``YYYY-MM-DD``.  Defaults to today.
+
+    Returns:
+        Dict with keys ``output``, ``file_size_mb``, ``page_count``,
+        ``is_text_searchable``, ``warnings``, and ``compliant``.
+    """
+    input_pdf = Path(input_pdf)
+    output_pdf = Path(output_pdf)
+
+    if not input_pdf.exists():
+        raise FileNotFoundError(f"PDF not found: {input_pdf}")
+
+    warnings: List[str] = []
+
+    # --- resolve filing date -----------------------------------------------
+    if filing_date is None:
+        filing_date = datetime.now().strftime("%Y-%m-%d")
+    date_clean = filing_date.replace("-", "")
+
+    # --- build MiFILE-compliant filename -----------------------------------
+    case_clean = re.sub(r"[^A-Za-z0-9]", "", case_number)
+    doc_clean = re.sub(r"[^A-Za-z0-9]", "", document_type)
+    efile_name = f"{case_clean}_{doc_clean}_{date_clean}.pdf"
+
+    if output_pdf.is_dir() or not str(output_pdf).lower().endswith(".pdf"):
+        output_pdf.mkdir(parents=True, exist_ok=True)
+        final_path = output_pdf / efile_name
+    else:
+        output_pdf.parent.mkdir(parents=True, exist_ok=True)
+        final_path = output_pdf
+
+    # --- file size check ---------------------------------------------------
+    file_size_bytes = input_pdf.stat().st_size
+    file_size_mb = round(file_size_bytes / (1024 * 1024), 2)
+    if file_size_mb > max_file_size_mb:
+        warnings.append(
+            f"File size {file_size_mb} MB exceeds {max_file_size_mb} MB limit"
+        )
+
+    # --- page count & text-searchability -----------------------------------
+    page_count = 0
+    is_text_searchable = False
+    try:
+        reader_pdf = pikepdf.Pdf.open(str(input_pdf))
+        page_count = len(reader_pdf.pages)
+        # Check text on first page
+        if page_count > 0:
+            first_page = reader_pdf.pages[0]
+            try:
+                content = first_page.get("/Contents")
+                if content is not None:
+                    raw = content.read_bytes() if hasattr(content, "read_bytes") else b""
+                    # Text operators in PDF content streams
+                    if any(op in raw for op in [b"Tj", b"TJ", b"Tf"]):
+                        is_text_searchable = True
+            except Exception:
+                pass
+        reader_pdf.close()
+    except Exception as exc:
+        warnings.append(f"Could not read PDF structure: {exc}")
+
+    if not is_text_searchable:
+        warnings.append("PDF may not be text-searchable (image-only); consider OCR")
+
+    # --- embed metadata & copy to final path --------------------------------
+    import shutil
+    shutil.copy2(str(input_pdf), str(final_path))
+    embed_pdf_metadata(
+        final_path,
+        title=f"{document_type} — {case_number}",
+        case_number=case_number,
+        subject=document_type,
+        keywords=f"{document_type}, {case_number}, Michigan, e-filing",
+    )
+
+    # --- add bookmarks if multi-section ------------------------------------
+    if page_count > 1:
+        try:
+            pdf = pikepdf.Pdf.open(str(final_path))
+            with pdf.open_outline() as outline:
+                if len(outline.root) == 0:
+                    outline.root.append(
+                        pikepdf.OutlineItem(document_type, 0)
+                    )
+            pdf.save(str(final_path))
+            pdf.close()
+        except Exception as exc:
+            warnings.append(f"Could not add bookmarks: {exc}")
+
+    compliant = len(warnings) == 0 or all(
+        "text-searchable" in w for w in warnings
+    )
+
+    result = {
+        "output": str(final_path),
+        "file_size_mb": file_size_mb,
+        "page_count": page_count,
+        "is_text_searchable": is_text_searchable,
+        "warnings": warnings,
+        "compliant": compliant,
+    }
+    logger.info(
+        "E-filing prep: %d pages, %.2f MB, searchable=%s, compliant=%s → %s",
+        page_count, file_size_mb, is_text_searchable, compliant, final_path,
+    )
+    return result

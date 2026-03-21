@@ -7,6 +7,7 @@ from litigationos.engines.court_rules import CourtRulesEngine
 from litigationos.engines.deadline import DeadlineEngine
 from litigationos.engines.document import DocumentEngine
 from litigationos.engines.filing import FilingEngine
+from litigationos.engines.filing_assembler import FilingAssembler
 from litigationos.engines.filing_factory import FilingFactory
 from litigationos.engines.evidence import EvidenceEngine
 from litigationos.engines.legal_knowledge import LegalKnowledgeEngine
@@ -16,10 +17,14 @@ from litigationos.engines.pdf_production import (
     assemble_filing_package,
     create_exhibit_cover,
     create_exhibit_covers_batch,
+    embed_pdf_metadata,
     fill_pdf_form,
+    generate_toa,
+    generate_toc,
     get_form_fields,
     markdown_file_to_pdf,
     markdown_to_pdf,
+    prepare_for_efiling,
     stamp_bates_batch,
     stamp_bates_on_pdf,
 )
@@ -33,6 +38,7 @@ __all__ = [
     "CourtRulesEngine",
     "DeadlineEngine",
     "DocumentEngine",
+    "FilingAssembler",
     "FilingEngine",
     "FilingFactory",
     "EvidenceEngine",
@@ -45,10 +51,14 @@ __all__ = [
     "assemble_filing_package",
     "create_exhibit_cover",
     "create_exhibit_covers_batch",
+    "embed_pdf_metadata",
     "fill_pdf_form",
+    "generate_toa",
+    "generate_toc",
     "get_form_fields",
     "markdown_file_to_pdf",
     "markdown_to_pdf",
+    "prepare_for_efiling",
     "stamp_bates_batch",
     "stamp_bates_on_pdf",
 ]

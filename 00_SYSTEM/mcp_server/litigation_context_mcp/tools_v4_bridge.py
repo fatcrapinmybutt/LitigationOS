@@ -4,14 +4,22 @@ Usage in server.py:
     from tools_v4_bridge import register_v4_tools
     register_v4_tools(mcp)   # call after mcp = FastMCP(...)
 
-Provides 7 Convergence & Combat Intelligence tools:
-  1. litigation_convergence_status  — Quality score + lane readiness
-  2. litigation_egcp_score          — EGCP component breakdown per lane
-  3. litigation_gap_tracker         — BLOCKER/DNEW/NEXT_PATCH queries
-  4. litigation_emergence_scan      — Cross-lane emergence patterns
-  5. litigation_filing_priority     — Ranked filing matrix
-  6. litigation_impeachment_lookup  — Impeachment package queries
-  7. litigation_red_team_findings   — Adversarial vulnerability report
+Provides 15 Convergence, Combat Intelligence & Filing Assembly tools:
+  1.  litigation_convergence_status  — Quality score + lane readiness
+  2.  litigation_egcp_score          — EGCP component breakdown per lane
+  3.  litigation_gap_tracker         — BLOCKER/DNEW/NEXT_PATCH queries
+  4.  litigation_emergence_scan      — Cross-lane emergence patterns
+  5.  litigation_filing_priority     — Ranked filing matrix
+  6.  litigation_impeachment_lookup  — Impeachment package queries
+  7.  litigation_red_team_findings   — Adversarial vulnerability report
+  8.  litigation_legal_search        — FTS5 legal knowledge search
+  9.  litigation_authority_lookup    — Single authority detail lookup
+  10. litigation_filing_authorities  — Filing required authorities
+  11. litigation_filing_generate_pdf — Markdown → court PDF
+  12. litigation_exhibit_bates_stamp — Bates-stamp a PDF
+  13. litigation_filing_assemble_package — Full package assembly
+  14. litigation_filing_certificate_of_service — COS generation
+  15. litigation_filing_get_required_forms — Required forms lookup
 """
 import json
 from typing import Optional
@@ -126,6 +134,67 @@ class AuthorityLookupInput(BaseModel):
 
 
 class FilingAuthoritiesInput(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+    filing_id: str = Field(description="Filing identifier (e.g. 'F1', 'F3', 'F5').")
+
+
+# ── Filing Assembly input models ────────────────────────────────────
+
+
+class FilingGeneratePdfInput(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+    filing_id: str = Field(description="Filing identifier (e.g. 'F1', 'F3').")
+    markdown_content: str = Field(description="Markdown text to convert to court-formatted PDF.")
+
+
+class ExhibitBatesStampInput(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+    input_pdf: str = Field(description="Path to the source PDF to stamp.")
+    output_pdf: str = Field(description="Path for the Bates-stamped output PDF.")
+    start_number: int = Field(default=1, ge=1, description="First Bates number (default 1).")
+    prefix: str = Field(default="PIGORS", description="Bates prefix (default 'PIGORS').")
+
+
+class ExhibitDict(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+    label: str = Field(description="Exhibit label (e.g. 'Exhibit A').")
+    title: str = Field(description="Short exhibit title.")
+    path: str = Field(description="Filesystem path to the exhibit PDF.")
+
+
+class FilingAssemblePackageInput(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+    filing_id: str = Field(description="Filing identifier (e.g. 'F1', 'F3').")
+    main_document: str = Field(description="Markdown text or path to main document (.md/.pdf).")
+    exhibits: Optional[list[ExhibitDict]] = Field(
+        default=None,
+        description="List of exhibits with label, title, and path. Omit to auto-detect from DB.",
+    )
+
+
+class PartyDict(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+    name: str = Field(description="Party name.")
+    via: Optional[str] = Field(default=None, description="Service address / attorney info.")
+
+
+class FilingCertificateOfServiceInput(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+    parties: Optional[list[PartyDict]] = Field(
+        default=None,
+        description="Parties served. Defaults to Watson (via Barnes) + FOC (Rusco).",
+    )
+    method: str = Field(
+        default="electronic",
+        description="Service method: 'electronic', 'personal', or 'mail'.",
+    )
+    filing_date: Optional[str] = Field(
+        default=None,
+        description="Date of service (e.g. 'January 15, 2025'). Defaults to today.",
+    )
+
+
+class FilingGetRequiredFormsInput(BaseModel):
     model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
     filing_id: str = Field(description="Filing identifier (e.g. 'F1', 'F3', 'F5').")
 
@@ -340,6 +409,127 @@ def register_v4_tools(mcp):
         """
         return json.dumps(
             t4.litigation_filing_authorities(filing_id=params.filing_id),
+            indent=2,
+            default=str,
+        )
+
+    # ── Filing Assembly hints (write-capable) ──────────────────────
+    _WR = {
+        "readOnlyHint": False,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False,
+    }
+
+    # ── Tool 11: Filing Generate PDF ───────────────────────────────
+
+    @mcp.tool(
+        name="litigation_filing_generate_pdf",
+        annotations={"title": "Filing Generate PDF", **_WR},
+    )
+    async def _filing_generate_pdf(params: FilingGeneratePdfInput) -> str:
+        """Convert markdown text to a court-formatted PDF for a specific filing.
+
+        Produces a professionally formatted PDF using Times New Roman 12pt
+        double-spaced layout suitable for Michigan circuit court filing.
+        """
+        return json.dumps(
+            t4.litigation_filing_generate_pdf(
+                filing_id=params.filing_id,
+                markdown_content=params.markdown_content,
+            ),
+            indent=2,
+            default=str,
+        )
+
+    # ── Tool 12: Exhibit Bates Stamp ───────────────────────────────
+
+    @mcp.tool(
+        name="litigation_exhibit_bates_stamp",
+        annotations={"title": "Exhibit Bates Stamp", **_WR},
+    )
+    async def _exhibit_bates_stamp(params: ExhibitBatesStampInput) -> str:
+        """Apply sequential Bates numbers to every page of a PDF.
+
+        Overlays 'PREFIX-NNNNNN' on each page (bottom-right by default).
+        Returns the stamped PDF path and the Bates range applied.
+        """
+        return json.dumps(
+            t4.litigation_exhibit_bates_stamp(
+                input_pdf=params.input_pdf,
+                output_pdf=params.output_pdf,
+                start_number=params.start_number,
+                prefix=params.prefix,
+            ),
+            indent=2,
+            default=str,
+        )
+
+    # ── Tool 13: Filing Assemble Package ───────────────────────────
+
+    @mcp.tool(
+        name="litigation_filing_assemble_package",
+        annotations={"title": "Filing Assemble Package", **_WR},
+    )
+    async def _filing_assemble_package(params: FilingAssemblePackageInput) -> str:
+        """Assemble a complete court filing package: main document + exhibits
+        + certificate of service + Bates stamps + metadata.
+
+        Returns output directory, merged PDF path, page count, Bates range,
+        manifest, and list of required forms.
+        """
+        exhibits = None
+        if params.exhibits:
+            exhibits = [e.model_dump() for e in params.exhibits]
+        return json.dumps(
+            t4.litigation_filing_assemble_package(
+                filing_id=params.filing_id,
+                main_document=params.main_document,
+                exhibits=exhibits,
+            ),
+            indent=2,
+            default=str,
+        )
+
+    # ── Tool 14: Filing Certificate of Service ─────────────────────
+
+    @mcp.tool(
+        name="litigation_filing_certificate_of_service",
+        annotations={"title": "Filing Certificate of Service", **_WR},
+    )
+    async def _filing_cos(params: FilingCertificateOfServiceInput) -> str:
+        """Generate a Certificate of Service in markdown format.
+
+        Defaults to serving Emily A. Watson (via Jennifer Barnes P55406)
+        and FOC (Pamela Rusco) by electronic filing.
+        """
+        parties = None
+        if params.parties:
+            parties = [p.model_dump() for p in params.parties]
+        return json.dumps(
+            t4.litigation_filing_certificate_of_service(
+                parties=parties,
+                method=params.method,
+                filing_date=params.filing_date,
+            ),
+            indent=2,
+            default=str,
+        )
+
+    # ── Tool 15: Filing Get Required Forms ─────────────────────────
+
+    @mcp.tool(
+        name="litigation_filing_get_required_forms",
+        annotations={"title": "Filing Required Forms", **_RO},
+    )
+    async def _filing_required_forms(params: FilingGetRequiredFormsInput) -> str:
+        """Get all required SCAO court forms and legal authorities for a filing.
+
+        Returns form numbers, names, mandatory/optional status, and authority
+        cross-references from the filing_rule_map and court_forms databases.
+        """
+        return json.dumps(
+            t4.litigation_filing_get_required_forms(filing_id=params.filing_id),
             indent=2,
             default=str,
         )

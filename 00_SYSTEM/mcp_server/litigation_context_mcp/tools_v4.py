@@ -1,8 +1,8 @@
 """LitigationOS MCP Server v4 Tools — Convergence & Combat Intelligence
 
 Exposes convergence cycle outputs, EGCP scoring, gap tracking, emergence
-detection, filing priority, impeachment lookup, and red team findings as
-callable tool functions.
+detection, filing priority, impeachment lookup, red team findings, and
+filing assembly tools as callable tool functions.
 
 Each function returns a dict or list suitable for JSON serialization.
 Integration with the FastMCP server is handled via tools_v4_bridge.py.
@@ -10,6 +10,8 @@ Integration with the FastMCP server is handled via tools_v4_bridge.py.
 import os
 import sqlite3
 from datetime import datetime
+from pathlib import Path
+from typing import Any, Dict, List, Optional
 
 DB_PATH = os.environ.get(
     "LITIGATION_DB_PATH",
@@ -715,3 +717,178 @@ def litigation_filing_authorities(filing_id: str) -> dict:
         return {"error": str(e)}
     finally:
         conn.close()
+
+
+# ── TOOL 11: FILING GENERATE PDF ───────────────────────────────────
+
+
+_OUTPUT_ROOT = Path(
+    os.environ.get(
+        "LITIGATION_OUTPUT_DIR",
+        r"C:\Users\andre\LitigationOS\COURT_READY",
+    )
+)
+
+
+def litigation_filing_generate_pdf(
+    filing_id: str,
+    markdown_content: str,
+) -> dict:
+    """Generate a court-formatted PDF from markdown for a specific filing.
+
+    Args:
+        filing_id: Filing identifier (e.g. 'F1', 'F3').
+        markdown_content: Markdown text to convert.
+    """
+    try:
+        # Late import to avoid circular deps when used outside the product app
+        from litigationos.engines.pdf_production import markdown_to_pdf
+
+        out_dir = _OUTPUT_ROOT / filing_id
+        out_dir.mkdir(parents=True, exist_ok=True)
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        out_pdf = out_dir / f"{filing_id}_{ts}.pdf"
+        result_path = markdown_to_pdf(
+            markdown_content,
+            out_pdf,
+            title=f"Filing {filing_id}",
+        )
+        return {
+            "status": "ok",
+            "filing_id": filing_id,
+            "output_pdf": str(result_path),
+            "size_bytes": result_path.stat().st_size,
+        }
+    except ImportError:
+        return {"error": "litigationos.engines.pdf_production not installed"}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+# ── TOOL 12: EXHIBIT BATES STAMP ──────────────────────────────────
+
+
+def litigation_exhibit_bates_stamp(
+    input_pdf: str,
+    output_pdf: str,
+    start_number: int = 1,
+    prefix: str = "PIGORS",
+) -> dict:
+    """Apply Bates numbers to every page of a PDF.
+
+    Args:
+        input_pdf: Path to the source PDF.
+        output_pdf: Path for the stamped output PDF.
+        start_number: First Bates number (default 1).
+        prefix: Bates prefix (default 'PIGORS').
+    """
+    try:
+        from litigationos.engines.pdf_production import stamp_bates_on_pdf
+
+        inp = Path(input_pdf)
+        outp = Path(output_pdf)
+        if not inp.exists():
+            return {"error": f"Input PDF not found: {input_pdf}"}
+        outp.parent.mkdir(parents=True, exist_ok=True)
+
+        result_path, next_num = stamp_bates_on_pdf(
+            inp, outp, start_number=start_number, prefix=prefix
+        )
+        return {
+            "status": "ok",
+            "input_pdf": str(inp),
+            "output_pdf": str(result_path),
+            "bates_start": f"{prefix}-{start_number:06d}",
+            "bates_end": f"{prefix}-{next_num - 1:06d}",
+            "page_count": next_num - start_number,
+        }
+    except ImportError:
+        return {"error": "litigationos.engines.pdf_production not installed"}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+# ── TOOL 13: FILING ASSEMBLE PACKAGE ──────────────────────────────
+
+
+def litigation_filing_assemble_package(
+    filing_id: str,
+    main_document: str,
+    exhibits: Optional[List[Dict[str, Any]]] = None,
+) -> dict:
+    """Assemble a complete court filing package (main doc + exhibits + COS).
+
+    Args:
+        filing_id: Filing identifier (e.g. 'F1', 'F3').
+        main_document: Markdown text or path to main document (.md or .pdf).
+        exhibits: Optional list of {label, title, path} dicts.
+    """
+    try:
+        from litigationos.engines.filing_assembler import FilingAssembler
+
+        assembler = FilingAssembler()
+        result = assembler.assemble(
+            filing_id=filing_id,
+            main_content=main_document,
+            exhibits=exhibits,
+        )
+        return {"status": "ok", **result}
+    except ImportError:
+        return {"error": "litigationos.engines.filing_assembler not installed"}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+# ── TOOL 14: FILING CERTIFICATE OF SERVICE ────────────────────────
+
+
+def litigation_filing_certificate_of_service(
+    parties: Optional[List[Dict[str, str]]] = None,
+    method: str = "electronic",
+    filing_date: Optional[str] = None,
+) -> dict:
+    """Generate a Certificate of Service in markdown format.
+
+    Args:
+        parties: List of {name, via} dicts. Defaults to Watson + FOC.
+        method: Service method: 'electronic', 'personal', or 'mail'.
+        filing_date: Date string. Defaults to today.
+    """
+    try:
+        from litigationos.engines.filing_assembler import FilingAssembler
+
+        assembler = FilingAssembler()
+        md = assembler.generate_certificate_of_service(
+            parties=parties, method=method, filing_date=filing_date
+        )
+        return {"status": "ok", "markdown": md, "method": method}
+    except ImportError:
+        return {"error": "litigationos.engines.filing_assembler not installed"}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+# ── TOOL 15: FILING GET REQUIRED FORMS ────────────────────────────
+
+
+def litigation_filing_get_required_forms(filing_id: str) -> dict:
+    """Get all required court forms and legal authorities for a filing.
+
+    Args:
+        filing_id: Filing identifier (e.g. 'F1', 'F3', 'F5').
+    """
+    try:
+        from litigationos.engines.filing_assembler import FilingAssembler
+
+        assembler = FilingAssembler()
+        forms = assembler.get_required_forms(filing_id)
+        return {
+            "status": "ok",
+            "filing_id": filing_id,
+            "forms": forms,
+            "count": len(forms),
+        }
+    except ImportError:
+        return {"error": "litigationos.engines.filing_assembler not installed"}
+    except Exception as e:
+        return {"error": str(e)}
