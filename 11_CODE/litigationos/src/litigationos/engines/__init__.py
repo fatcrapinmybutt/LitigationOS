@@ -10,8 +10,10 @@ from litigationos.engines.filing import FilingEngine
 from litigationos.engines.filing_assembler import FilingAssembler
 from litigationos.engines.filing_factory import FilingFactory
 from litigationos.engines.evidence import EvidenceEngine
+from litigationos.engines.irac_engine import IRACEngine
 from litigationos.engines.legal_knowledge import LegalKnowledgeEngine
 from litigationos.engines.monetization import MonetizationEngine
+from litigationos.engines.motion_templates import MotionTemplateEngine
 from litigationos.engines.onboarding import OnboardingEngine
 from litigationos.engines.pdf_production import (
     assemble_filing_package,
@@ -28,6 +30,7 @@ from litigationos.engines.pdf_production import (
     stamp_bates_batch,
     stamp_bates_on_pdf,
 )
+from litigationos.engines.discovery_generator import DiscoveryGenerator
 from litigationos.engines.rag import RAGEngine
 from litigationos.engines.settings import SettingsEngine
 
@@ -37,13 +40,16 @@ __all__ = [
     "CaseEngine",
     "CourtRulesEngine",
     "DeadlineEngine",
+    "DiscoveryGenerator",
     "DocumentEngine",
     "FilingAssembler",
     "FilingEngine",
     "FilingFactory",
     "EvidenceEngine",
+    "IRACEngine",
     "LegalKnowledgeEngine",
     "MonetizationEngine",
+    "MotionTemplateEngine",
     "OnboardingEngine",
     "RAGEngine",
     "SettingsEngine",
