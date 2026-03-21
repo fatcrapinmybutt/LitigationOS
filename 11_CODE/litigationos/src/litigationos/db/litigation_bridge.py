@@ -828,6 +828,43 @@ class LitigationBridge:
             return result
 
 
+    def get_legal_coverage_stats(self) -> Dict[str, Any]:
+        """Return counts and coverage metrics for the legal knowledge base."""
+        result: Dict[str, Any] = {"mcr": 0, "mcl": 0, "mre": 0, "cases": 0,
+                                   "canons": 0, "cross_refs": 0, "fts5": 0,
+                                   "local_rules": 0, "categories": {}}
+        try:
+            with self._connect() as conn:
+                row = conn.execute("""
+                    SELECT
+                        (SELECT COUNT(*) FROM michigan_court_rules) AS mcr,
+                        (SELECT COUNT(*) FROM michigan_statutes) AS mcl,
+                        (SELECT COUNT(*) FROM michigan_evidence_rules) AS mre,
+                        (SELECT COUNT(*) FROM michigan_case_law) AS cases,
+                        (SELECT COUNT(*) FROM michigan_judicial_canons) AS canons,
+                        (SELECT COUNT(*) FROM legal_cross_references) AS xrefs,
+                        (SELECT COUNT(*) FROM legal_knowledge_fts) AS fts5,
+                        (SELECT COUNT(*) FROM michigan_court_rules
+                         WHERE doc_type = 'LCR') AS lcr
+                """).fetchone()
+                result.update({
+                    "mcr": row["mcr"], "mcl": row["mcl"], "mre": row["mre"],
+                    "cases": row["cases"], "canons": row["canons"],
+                    "cross_refs": row["xrefs"], "fts5": row["fts5"],
+                    "local_rules": row["lcr"],
+                    "total": row["mcr"] + row["mcl"] + row["mre"] + row["cases"] + row["canons"],
+                })
+                # Category breakdown for MCR
+                for r in conn.execute(
+                    "SELECT category, COUNT(*) AS cnt FROM michigan_court_rules "
+                    "GROUP BY category ORDER BY cnt DESC"
+                ).fetchall():
+                    result["categories"][r["category"]] = r["cnt"]
+        except Exception:
+            pass
+        return result
+
+
 def _format_size(nbytes: int) -> str:
     """Format byte count as human-readable string."""
     if nbytes < 1024:
