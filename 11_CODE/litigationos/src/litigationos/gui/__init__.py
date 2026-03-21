@@ -10,6 +10,7 @@ from litigationos.gui.filing_wizard import FilingWizardFrame
 from litigationos.gui.filing_wizard_v2 import FilingWizardV2Frame
 from litigationos.gui.first_run_wizard import FirstRunWizard
 from litigationos.gui.judge_profile import JudgeProfileFrame
+from litigationos.gui.splash_screen import OnboardingWizard, SplashScreen
 from litigationos.gui.legal_brain_screen import LegalBrainFrame
 from litigationos.gui.pdf_studio_screen import PDFStudioFrame
 from litigationos.gui.pipeline_runner_screen import PipelineRunnerFrame
@@ -26,6 +27,8 @@ __all__ = [
     "FirstRunWizard",
     "JudgeProfileFrame",
     "LegalBrainFrame",
+    "OnboardingWizard",
     "PDFStudioFrame",
     "PipelineRunnerFrame",
+    "SplashScreen",
 ]
