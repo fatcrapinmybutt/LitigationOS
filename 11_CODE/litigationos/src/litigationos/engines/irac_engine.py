@@ -17,6 +17,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from litigationos.data.rule_lookup import get_rules_for_claim, get_rule_text
+
 logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
@@ -393,6 +395,11 @@ class IRACEngine:
                         "source_table": table,
                         "relevance": ref,
                     })
+
+        # --- Static data fallback (when DB tables are empty) ---
+        if not results:
+            results = get_rules_for_claim(rule_refs)
+
         return results
 
     # ------------------------------------------------------------------ #

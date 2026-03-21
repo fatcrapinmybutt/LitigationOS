@@ -20,4 +20,5 @@ __all__ = [
     "local_rules",
     "scao_forms",
     "legal_scraper",
+    "rule_lookup",
 ]

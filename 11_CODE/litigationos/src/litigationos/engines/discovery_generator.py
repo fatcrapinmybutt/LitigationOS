@@ -22,6 +22,8 @@ from pathlib import Path
 from textwrap import dedent
 from typing import Any, Optional
 
+from litigationos.data.rule_lookup import get_rule_text, search_rules
+
 logger = logging.getLogger(__name__)
 
 # -- Constants ----------------------------------------------------------------
@@ -829,3 +831,11 @@ class DiscoveryGenerator:
                 ),
             },
         ]
+
+    def get_rule_context(self, mcr_citation: str) -> str:
+        """Return full rule text for an MCR citation from static data.
+
+        Useful for enriching discovery documents with governing rule text.
+        Falls back to an empty string if the rule is not found.
+        """
+        return get_rule_text(mcr_citation)

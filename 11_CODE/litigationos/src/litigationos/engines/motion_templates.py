@@ -13,6 +13,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
+from litigationos.data.rule_lookup import get_rule_text, lookup_rule
+
 logger = logging.getLogger(__name__)
 
 # -- Party & Court Constants (verified identity — never fabricate) -------------
@@ -639,9 +641,17 @@ class MotionTemplateEngine:
         for auth in authorities:
             sections.append(f"### Authority: {auth}\n")
             sections.append(f"**Issue:** Whether relief is warranted under {auth}.\n")
-            sections.append(
-                f"**Rule:** {auth} provides the legal standard applicable to this motion.\n"
-            )
+            # Pull real rule text from static data modules
+            rule_text = get_rule_text(auth)
+            if rule_text:
+                summary = rule_text[:400].rstrip()
+                if len(rule_text) > 400:
+                    summary += "..."
+                sections.append(f"**Rule:** {summary}\n")
+            else:
+                sections.append(
+                    f"**Rule:** {auth} provides the legal standard applicable to this motion.\n"
+                )
             sections.append(
                 "**Application:** The facts set forth above satisfy the requirements of "
                 f"{auth} because:\n"
