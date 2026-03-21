@@ -1,0 +1,411 @@
+{
+  "tool": "#258 Void Order Chain Analyzer",
+  "generated": "2026-03-19T09:50:28.235159",
+  "poisonous_tree": {
+    "root_filing": {
+      "case_no": "2023-5907-PP",
+      "type": "PPO Petition",
+      "filed_by": "Emily A. Watson",
+      "basis": "False allegations of physical violence/stalking",
+      "fraud_elements": [
+        "Fabricated straw-throwing incident (Oct 2023)",
+        "Alleged violence with zero convictions/findings",
+        "Staged photos presented as evidence",
+        "False statements under oath (MCL 750.423)"
+      ],
+      "void_basis": "MCR 2.612(C)(1)(c) \u2014 fraud; MCR 2.612(C)(1)(d) \u2014 void judgment",
+      "status": "VOID AB INITIO \u2014 obtained through fraud"
+    }
+  },
+  "tainted_orders_count": 65,
+  "tainted_orders": [
+    {
+      "date": "2023-12-04",
+      "title": "Judge: JENNY L MCNEILL 58235 Bar no. [a1. Thisorderisenteredafterhearing. THE COURT FINDS: 2. A motion was filed to E]a. modifythepersonalprot",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Order in case tainted by root fraud"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-04-05",
+      "title": "IT IS ORDERED that Plaintiff filed a Complaint for Custody, Parenting Time and Child ori April 5, 2024. Pigors v ll'atsnn Page l of 14 Judgment",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Custody order infected by PPO findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-04-11",
+      "title": "EX  PARTE  ORDER PERSONAL  PROTECTION ORDER  (DOMESTIC)  AMENDED",
+      "case_id": "2023-5907-PP",
+      "taint_reason": [
+        "Directly relies on fraudulent PPO"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-04-11",
+      "title": "ORDER ORDER AFTER HEARING ON VIOLATION  OF VALID  PERSONAL  PROTECTION  FOREIGN PROTECTION ORDER SET  NEXT  DATE",
+      "case_id": "2023-5907-PP",
+      "taint_reason": [
+        "Directly relies on fraudulent PPO"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-04-11",
+      "title": "PPO Amended \u2014 Ex Parte Order",
+      "case_id": "2023-5907-PP",
+      "taint_reason": [
+        "Directly relies on fraudulent PPO",
+        "Ex parte order without required findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-04-11",
+      "title": "Order After Hearing on PPO Violation",
+      "case_id": "2023-5907-PP",
+      "taint_reason": [
+        "Directly relies on fraudulent PPO"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-04-12",
+      "title": "Denied.  Order entered on April 12, 2024. April 11, 2024: Plaintiff filed a Motion regarding Custody. Plaintiff addresscd the Best Intere",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Custody order infected by PPO findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-04-23",
+      "title": "HEARING ON VIOLATION  OF VALID  PERSONAL  PROTECTION  FOREIGN PROTECTION ORDER SET  NEXT  DATE:  PPOH  04/23/2024  10:00  AM MCNEILL",
+      "case_id": "2023-5907-PP",
+      "taint_reason": [
+        "Directly relies on fraudulent PPO"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-04-29",
+      "title": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 6/5/24 PAGE 2 5. On April 29, 2024 an Ex Parte Order for Custody, Parenting Time and Child ",
+      "case_id": "2023-5907-PP",
+      "taint_reason": [
+        "Directly relies on fraudulent PPO",
+        "Custody order infected by PPO findings",
+        "Ex parte order without required findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-04-29",
+      "title": "IT IS FURTHER ORDERED that parties participated in a Facilitative Information Gathering Conference which resulted in a temporary Order titled Ex Parte",
+      "case_id": "2023-5907-PP",
+      "taint_reason": [
+        "Directly relies on fraudulent PPO",
+        "Ex parte order without required findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-05-02",
+      "title": "urt-ordered parenting time, including: March 26 \u2013 May 2, 2024 (37 consecutive days) October 20 \u2013 November 12, 2",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Custody order infected by PPO findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-05-23",
+      "title": "Dismissed. ORDER RF,GARDING PARENTING TIME IT IS HEREBY aII'HE RECOMA/IENDATION AND ORDER that the Plaintiff Father, ANDREW PIGORS's Motio",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Custody order infected by PPO findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-07-01",
+      "title": "Ex Parte Custody Order Entered",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Custody order infected by PPO findings",
+        "Ex parte order without required findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-07-16",
+      "title": "Dismissed. *Tliis Judgment is tlie initial Order regarding the issues of Custody and Parenting Time. *PlaintiFs six (6) Motions filed on",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Custody order infected by PPO findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-07-16",
+      "title": "Dismissed. *This Judgment is the initial Order regarding the issues of Custody and Parenting Time. *Plainti'ff's six (6) Motions filed on",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Custody order infected by PPO findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-07-30",
+      "title": "Granted.  Child Support to be recalculated. July 30, 2024: Plaintiff filed Objection to prepared/proposed Judgment. Plaiiitiff objected to t",
+      "case_id": "2023-5907-PP",
+      "taint_reason": [
+        "Directly relies on fraudulent PPO"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-08-23",
+      "title": "PIGORS v WATSON FILE # 2024-001507-DC PAGE 2 2. A Final Judgment entered on August 23, 2024 granting Sole Legal and Sole Physical Custody to Defendant",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Custody order infected by PPO findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-08-23",
+      "title": "PIGORS v WATSON FILE # 2024-001507-DC Recommendation dated 3/26/25 PAGE 12 August 23, 2024: Final Order entered regarding Custody & Parenting Time & C",
+      "case_id": "2023-5907-PP",
+      "taint_reason": [
+        "Directly relies on fraudulent PPO",
+        "Custody order infected by PPO findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-08-23",
+      "title": "Final Judgment \u2014 Sole Custody to Watson",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Custody order infected by PPO findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-08-23",
+      "title": "Uniform Child Support Order Entered",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Directly relies on fraudulent PPO"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-10-20",
+      "title": "ction Orders (PPOs) to restrict my access to LDW: October 20, 2024: Albert Watson served a PPO violation during an e",
+      "case_id": "2023-5907-PP",
+      "taint_reason": [
+        "Directly relies on fraudulent PPO"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-10-30",
+      "title": "hearing' 10/30/2024 .ludge.' JENNY L. MCNEILL P-58235 Bar nO. 1. Order entered after show-cause hearing requested by petitioner pursuant to M",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Order in case tainted by root fraud"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-10-30",
+      "title": "Respondent. SHOW CAUSE HEARING  ON  PERSONAL  PROTECTION ORDER (EXCERPT 1  AND  2 0F PROCEEDINGS  ONLY) BEFORE THE HONORABLE  JENNY MCN",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Order in case tainted by root fraud"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2024-12-04",
+      "title": "Judge: JENNY L MCNEILL \u20ac 1. Thisorderisenteredafterhearing. THE COURT FINDS: 2. A motion was filed to []a. modifythepersonalprotectionorderdate",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Order in case tainted by root fraud"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2025-01-07",
+      "title": "hearing' 1/7/2025 L]PACCCodeMCL600.2950a  []pqcccooeucteoo.zgsom i)uBge'JE!JhJYL.MCNEILL  P-58235 Bar no i Order entered after show-cause hea",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Order in case tainted by root fraud"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2025-01-07",
+      "title": "Order Regarding Parenting Time",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Custody order infected by PPO findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2025-02-04",
+      "title": "Hearing. 02/04/2025  RNU MOTION  FILED MOTION TO MODIFY,  EXTEND,  OR TERMINATE  PPO  (DENIED) 02/05/2025  RNU ORDER ORDER  ON MOTION  TO",
+      "case_id": "2023-5907-PP",
+      "taint_reason": [
+        "Directly relies on fraudulent PPO"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2025-02-14",
+      "title": "IT IS ORDERED that the Plaintiff's Motion regarding Parenting Tinie filed on February 14, 2025 is dismissed for the reasons stated above.",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Custody order infected by PPO findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2025-02-14",
+      "title": "ST ATE  OF MICHIG AN IN THE CIRCUIT COtJRT FOR THE COUNTY OF MUSKEGON ANDREW PIGORS FILE N0. 2024-001507-DC Plaintiff, ORDER REGARDING PARENTING TIME ",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Custody order infected by PPO findings"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    },
+    {
+      "date": "2025-02-28",
+      "title": "hearing' 2/28/2025 .1,,,.lge. Jenny L McNeill t OrderenteredafterviolationhearingpursuanttoMCR3.708(H),heldasaresultof jPa. show-cause hearing pur",
+      "case_id": "2024-001507-DC",
+      "taint_reason": [
+        "Order in case tainted by root fraud"
+      ],
+      "void_basis": "Fruit of the poisonous tree \u2014 derived from void PPO"
+    }
+  ],
+  "void_doctrine": {
+    "principle": "A judgment obtained through fraud is void ab initio and may be challenged at any time",
+    "mcr_authority": [
+      {
+        "cite": "MCR 2.612(C)(1)(c)",
+        "rule": "Relief from fraud \u2014 1 year limit",
+        "applies": true
+      },
+      {
+        "cite": "MCR 2.612(C)(1)(d)",
+        "rule": "Void judgment \u2014 NO time limit",
+        "applies": true
+      },
+      {
+        "cite": "MCR 2.612(C)(3)",
+        "rule": "Independent action for fraud on the court \u2014 NO time limit",
+        "applies": true
+      }
+    ],
+    "case_law": [
+      {
+        "cite": "Phinney v Perlmutter 222 Mich App 513 (1997)",
+        "rule": "Fraud upon the court vitiates entire proceeding"
+      },
+      {
+        "cite": "Res-Care Inc v Roto-Die Inc 284 Mich App 84 (2009)",
+        "rule": "No time limit to void a void judgment"
+      },
+      {
+        "cite": "Smith v Smith 218 Mich App 727 (1996)",
+        "rule": "Orders based on fraud are void and unenforceable"
+      },
+      {
+        "cite": "Heugel v Heugel 237 Mich App 471 (1999)",
+        "rule": "Court has inherent power to set aside void judgments"
+      },
+      {
+        "cite": "US v Throckmorton 98 US 61 (1878)",
+        "rule": "Fraud in obtaining a judgment makes it void"
+      }
+    ],
+    "fruit_doctrine": {
+      "principle": "Evidence and orders derived from the initial fraud are themselves tainted and void",
+      "application": "Because PPO 2023-5907-PP was obtained through fraud: (1) All custody restrictions based on PPO findings are void, (2) All parenting time suspensions relying on PPO are void, (3) The August 2025 ex parte order is void (built on prior void orders), (4) All FOC recommendations tainted by void PPO are invalid"
+    }
+  },
+  "impact": {
+    "days_lost_from_void_orders": 268,
+    "holidays_missed": 8,
+    "orders_to_void": 65,
+    "cases_affected": [
+      "2023-5907-PP",
+      "2024-001507-DC"
+    ],
+    "relief_available": [
+      "Void PPO 2023-5907-PP in its entirety",
+      "Void all custody orders derived from PPO findings",
+      "Void August 2025 ex parte order",
+      "Restore full parenting time retroactively",
+      "Award damages for wrongful deprivation (268 days)",
+      "Sanctions against Emily for fraud upon the court",
+      "Criminal referral for perjury (MCL 750.423)"
+    ],
+    "filing_vehicles": {
+      "MCR 2.612 Motion": "File in 14th Circuit \u2014 void orders in state court",
+      "Federal 1983": "File in USDC WDMI \u2014 bypass state court entirely",
+      "COA Appeal": "COA 366810 \u2014 appellate review of void orders",
+      "MSC Superintending Control": "Ask MSC to void all orders as extraordinary relief"
+    }
+  },
+  "chain": [
+    {
+      "level": 0,
+      "event": "Emily files false PPO (2023-5907-PP)",
+      "status": "ROOT FRAUD"
+    },
+    {
+      "level": 1,
+      "event": "PPO granted based on false allegations",
+      "status": "VOID AB INITIO"
+    },
+    {
+      "level": 2,
+      "event": "Custody case filed (2024-001507-DC)",
+      "status": "TAINTED by void PPO"
+    },
+    {
+      "level": 3,
+      "event": "Custody restrictions imposed citing PPO findings",
+      "status": "VOID \u2014 fruit of poisonous tree"
+    },
+    {
+      "level": 3,
+      "event": "FOC recommendations based on PPO history",
+      "status": "VOID \u2014 tainted foundation"
+    },
+    {
+      "level": 4,
+      "event": "HealthWest evaluation referral by FOC",
+      "status": "VOID \u2014 tainted referral"
+    },
+    {
+      "level": 4,
+      "event": "August 2025 ex parte order suspending parenting time",
+      "status": "VOID \u2014 no statutory findings + tainted"
+    },
+    {
+      "level": 5,
+      "event": "268 days separation from L.D.W.",
+      "status": "COMPENSABLE \u2014 damages from void orders"
+    }
+  ]
+}

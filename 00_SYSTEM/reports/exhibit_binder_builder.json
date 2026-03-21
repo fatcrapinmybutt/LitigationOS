@@ -1,0 +1,282 @@
+{
+  "tool": "exhibit_binder_builder",
+  "tool_number": 271,
+  "generated": "2026-03-19 10:58:28",
+  "exhibits_dir": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\exhibits",
+  "filings": {
+    "F1": {
+      "title": "Custody \u2014 Enforcement of Parenting Time",
+      "case": "2024-001507-DC",
+      "exhibits": [
+        {
+          "letter": "A",
+          "description": "PPO petition and related filings",
+          "bates_start": "PIGORS-00001",
+          "bates_end": "PIGORS-00010",
+          "page_count": 10,
+          "source_file": "PDF_COURT_DOC",
+          "evidence_type": "PPO",
+          "row_count": 10
+        },
+        {
+          "letter": "B",
+          "description": "Ex parte orders",
+          "bates_start": "PIGORS-00011",
+          "bates_end": "PIGORS-00020",
+          "page_count": 10,
+          "source_file": "litigation_context.db",
+          "evidence_type": "TRANSCRIPT",
+          "row_count": 10
+        },
+        {
+          "letter": "C",
+          "description": "Parenting time withholding",
+          "bates_start": "PIGORS-00021",
+          "bates_end": "PIGORS-00035",
+          "page_count": 15,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 15
+        },
+        {
+          "letter": "D",
+          "description": "Best interest factors",
+          "bates_start": "PIGORS-00036",
+          "bates_end": "PIGORS-00045",
+          "page_count": 10,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 10
+        }
+      ],
+      "exhibit_count": 4,
+      "total_pages": 45
+    },
+    "F2": {
+      "title": "PPO \u2014 Motion to Modify/Terminate",
+      "case": "2023-5907-PP",
+      "exhibits": [
+        {
+          "letter": "A",
+          "description": "Original PPO and allegations",
+          "bates_start": "PIGORS-00046",
+          "bates_end": "PIGORS-00055",
+          "page_count": 10,
+          "source_file": "litigation_context.db",
+          "evidence_type": "PPO",
+          "row_count": 10
+        },
+        {
+          "letter": "B",
+          "description": "False allegations evidence",
+          "bates_start": "PIGORS-00056",
+          "bates_end": "PIGORS-00065",
+          "page_count": 10,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 10
+        },
+        {
+          "letter": "C",
+          "description": "Threats and intimidation",
+          "bates_start": "PIGORS-00066",
+          "bates_end": "PIGORS-00075",
+          "page_count": 10,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 10
+        }
+      ],
+      "exhibit_count": 3,
+      "total_pages": 30
+    },
+    "F3": {
+      "title": "Disqualification of Judge McNeill",
+      "case": "2024-001507-DC",
+      "exhibits": [
+        {
+          "letter": "A",
+          "description": "Canon violations",
+          "bates_start": "PIGORS-00076",
+          "bates_end": "PIGORS-00090",
+          "page_count": 15,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 15
+        },
+        {
+          "letter": "B",
+          "description": "Ex parte communications",
+          "bates_start": "PIGORS-00091",
+          "bates_end": "PIGORS-00100",
+          "page_count": 10,
+          "source_file": "litigation_context.db",
+          "evidence_type": "TRANSCRIPT",
+          "row_count": 10
+        },
+        {
+          "letter": "C",
+          "description": "Muting / silencing incidents",
+          "bates_start": "PIGORS-00101",
+          "bates_end": "PIGORS-00110",
+          "page_count": 10,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 10
+        }
+      ],
+      "exhibit_count": 3,
+      "total_pages": 35
+    },
+    "F4": {
+      "title": "42 USC \u00a71983 \u2014 Federal Civil Rights",
+      "case": "2024-001507-DC",
+      "exhibits": [
+        {
+          "letter": "A",
+          "description": "Due process violations",
+          "bates_start": "PIGORS-00111",
+          "bates_end": "PIGORS-00125",
+          "page_count": 15,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 15
+        },
+        {
+          "letter": "B",
+          "description": "Parenting time denial (209+ days)",
+          "bates_start": "PIGORS-00126",
+          "bates_end": "PIGORS-00140",
+          "page_count": 15,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 15
+        }
+      ],
+      "exhibit_count": 2,
+      "total_pages": 30
+    },
+    "F5": {
+      "title": "MSC \u2014 Application for Superintending Control",
+      "case": "2024-001507-DC",
+      "exhibits": [
+        {
+          "letter": "A",
+          "description": "Court rule violations",
+          "bates_start": "PIGORS-00141",
+          "bates_end": "PIGORS-00155",
+          "page_count": 15,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 15
+        }
+      ],
+      "exhibit_count": 1,
+      "total_pages": 15
+    },
+    "F6": {
+      "title": "JTC \u2014 Judicial Tenure Commission Complaint",
+      "case": "2024-001507-DC",
+      "exhibits": [
+        {
+          "letter": "A",
+          "description": "Judicial misconduct",
+          "bates_start": "PIGORS-00156",
+          "bates_end": "PIGORS-00175",
+          "page_count": 20,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 20
+        }
+      ],
+      "exhibit_count": 1,
+      "total_pages": 20
+    },
+    "F7": {
+      "title": "COA \u2014 Court of Appeals",
+      "case": "2024-001507-DC",
+      "exhibits": [
+        {
+          "letter": "A",
+          "description": "Docket entries challenged",
+          "bates_start": "PIGORS-00176",
+          "bates_end": "PIGORS-00195",
+          "page_count": 20,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 20
+        }
+      ],
+      "exhibit_count": 1,
+      "total_pages": 20
+    },
+    "F8": {
+      "title": "Contempt \u2014 Enforcement of Court Orders",
+      "case": "2024-001507-DC",
+      "exhibits": [
+        {
+          "letter": "A",
+          "description": "Emily's court order violations",
+          "bates_start": "PIGORS-00196",
+          "bates_end": "PIGORS-00210",
+          "page_count": 15,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 15
+        }
+      ],
+      "exhibit_count": 1,
+      "total_pages": 15
+    },
+    "F9": {
+      "title": "Housing \u2014 Shady Oaks Conditions",
+      "case": "2025-002760-CZ",
+      "exhibits": [
+        {
+          "letter": "A",
+          "description": "Housing conditions / habitability",
+          "bates_start": "PIGORS-00211",
+          "bates_end": "PIGORS-00225",
+          "page_count": 15,
+          "source_file": "litigation_context.db",
+          "evidence_type": "TRANSCRIPT",
+          "row_count": 15
+        }
+      ],
+      "exhibit_count": 1,
+      "total_pages": 15
+    },
+    "F10": {
+      "title": "Criminal Evidence Referral",
+      "case": "2024-001507-DC",
+      "exhibits": [
+        {
+          "letter": "A",
+          "description": "Criminal evidence scanner results",
+          "bates_start": "PIGORS-00226",
+          "bates_end": "PIGORS-00245",
+          "page_count": 20,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 20
+        },
+        {
+          "letter": "B",
+          "description": "Perjury / conspiracy evidence",
+          "bates_start": "PIGORS-00246",
+          "bates_end": "PIGORS-00246",
+          "page_count": 1,
+          "source_file": "litigation_context.db",
+          "evidence_type": "documentary",
+          "row_count": 0
+        }
+      ],
+      "exhibit_count": 2,
+      "total_pages": 21
+    }
+  },
+  "total_filings": 10,
+  "total_exhibits": 19,
+  "total_pages": 246,
+  "final_bates": "PIGORS-00246"
+}

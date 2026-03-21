@@ -1,0 +1,4157 @@
+{
+  "tool": "Tool #241: Court Order Compliance Tracker",
+  "generated": "2026-03-19T09:44:22.198559",
+  "db_queries": {
+    "docket_events_orders": 93,
+    "evidence_quotes_compliance": 500,
+    "d_drive_events_timeline": 104
+  },
+  "scores": {
+    "andrew": {
+      "compliant": 0,
+      "non_compliant": 0,
+      "indeterminate": 93,
+      "total_orders_evaluated": 93,
+      "compliance_rate_pct": 100.0,
+      "timeline_incidents": 0
+    },
+    "emily": {
+      "compliant": 0,
+      "non_compliant": 59,
+      "indeterminate": 34,
+      "total_orders_evaluated": 93,
+      "compliance_rate_pct": 36.6,
+      "timeline_incidents": 81,
+      "incident_categories": {
+        "INTERFERENCE": 44,
+        "MEDICAL": 33,
+        "FRAUD": 3,
+        "AGGRESSION": 1
+      }
+    }
+  },
+  "matrix": [
+    {
+      "order_id": "DE-0111",
+      "case_id": "2023-5907-PP",
+      "date": "2023-10-15",
+      "title": "PPO Petition Filed",
+      "summary": "Personal Protection Order petition filed in Case No. 2023-5907-PP, 14th Circuit Court",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0112",
+      "case_id": "2023-5907-PP",
+      "date": "2023-11-01",
+      "title": "PPO Issued — Domestic",
+      "summary": "Personal protection order (domestic) issued against Andrew Pigors without full evidentiary hearing",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0117",
+      "case_id": "2024-001507-DC",
+      "date": "2023-12-04",
+      "title": "Judge: JENNY L MCNEILL 58235 Bar no. [a1. Thisorderisenteredafterhearing. THE COURT FINDS: 2. A motion was filed to E]a. modifythepersonalprot",
+      "summary": "Judge: JENNY L MCNEILL 58235 Bar no. [a1. Thisorderisenteredafterhearing. THE COURT FINDS: 2. A motion was filed to E]a. modifythepersonalprotectionorderdated 12/4/2023 @b. extendtheexpirationdateofth",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0120",
+      "case_id": "2023-5907-PP",
+      "date": "2024-01-04",
+      "title": "AMAYASHOI  UCCVPFK Muskegon  County REGISTER OF ACTIONS REL2 10 6 9/11/25 11:00:54 Pg:  2 Caseload Dsp:  OEP Crt : C 14 Case:  2023 61  Jur:  MCNEILL ",
+      "summary": "AMAYASHOI  UCCVPFK Muskegon  County REGISTER OF ACTIONS REL2 10 6 9/11/25 11:00:54 Pg:  2 Caseload Dsp:  OEP Crt : C 14 Case:  2023 61  Jur:  MCNEILL 0000005907  PP Ref : WATSON  V  PIGORS CLOSE  Pub ",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0133",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-01",
+      "title": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 3/26/25 PAGE 7 CASE HISTORY S[ED April 1, 2024: Summons and Complaint for Patemity filed w'",
+      "summary": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 3/26/25 PAGE 7 CASE HISTORY S[ED April 1, 2024: Summons and Complaint for Patemity filed w'tli the Corirt. April 11, 2024: Order to Appear fo",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0134",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-01",
+      "title": "PIGORS v WATSON FILE # 2024-001507-DC Recoinmendation dated 3/26/25 PAGE 7 CASH, HISTORY SUMMARIZF,D April 1, 2024: Suinrnons and Complaint for Patern",
+      "summary": "PIGORS v WATSON FILE # 2024-001507-DC Recoinmendation dated 3/26/25 PAGE 7 CASH, HISTORY SUMMARIZF,D April 1, 2024: Suinrnons and Complaint for Paternity filed ivith the Court. April 11, 2024: Order t",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0135",
+      "case_id": "2024-001507-DC",
+      "date": "2024-04-05",
+      "title": "IT IS ORDERED that Plaintiff filed a Complaint for Custody, Parenting Time and Child ori April 5, 2024. Pigors v ll'atsnn Page l of 14 Judgment",
+      "summary": "IT IS ORDERED that Plaintiff filed a Complaint for Custody, Parenting Time and Child ori April 5, 2024. Pigors v ll'atsnn Page l of 14 Judgment Custody, PT, CS  2024-001507-DC",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0141",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-11",
+      "title": "EX  PARTE  ORDER PERSONAL  PROTECTION ORDER  (DOMESTIC)  AMENDED",
+      "summary": "ROA Entry: EX  PARTE  ORDER PERSONAL  PROTECTION ORDER  (DOMESTIC)  AMENDED",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0143",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-11",
+      "title": "ORDER ORDER AFTER HEARING ON VIOLATION  OF VALID  PERSONAL  PROTECTION  FOREIGN PROTECTION ORDER SET  NEXT  DATE",
+      "summary": "ROA Entry: ORDER ORDER AFTER HEARING ON VIOLATION  OF VALID  PERSONAL  PROTECTION  FOREIGN PROTECTION ORDER SET  NEXT  DATE",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0145",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-11",
+      "title": "AMAYASHOI  UCCVPFK Muskegon County REGISTER OF ACTIONS REL2106 9/11/25 11:00:54 Pg:  3 Caseload Dsp:  OEP Crt : C 14 Case:  2023 61  Jur:  MCNEILL 000",
+      "summary": "AMAYASHOI  UCCVPFK Muskegon County REGISTER OF ACTIONS REL2106 9/11/25 11:00:54 Pg:  3 Caseload Dsp:  OEP Crt : C 14 Case:  2023 61  Jur:  MCNEILL 0000005907  PP Ref : WATSON V PIGORS CLOSE  Pub 24 25",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0149",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-11",
+      "title": "PPO Amended — Ex Parte Order",
+      "summary": "Amended personal protection order (domestic) entered ex parte. Notice to appear issued.",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0151",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-11",
+      "title": "Order After Hearing on PPO Violation",
+      "summary": "Order entered after hearing on violation of valid personal protection order. Next date: PPOH 04/23/2024",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0153",
+      "case_id": "2024-001507-DC",
+      "date": "2024-04-12",
+      "title": "Denied.  Order entered on April 12, 2024. April 11, 2024: Plaintiff filed a Motion regarding Custody. Plaintiff addresscd the Best Intere",
+      "summary": "Denied.  Order entered on April 12, 2024. April 11, 2024: Plaintiff filed a Motion regarding Custody. Plaintiff addresscd the Best Interest Factors reporting a strong bond with the child; al",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0154",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-23",
+      "title": "HEARING ON VIOLATION  OF VALID  PERSONAL  PROTECTION  FOREIGN PROTECTION ORDER SET  NEXT  DATE:  PPOH  04/23/2024  10:00  AM MCNEILL",
+      "summary": "HEARING ON VIOLATION  OF VALID  PERSONAL  PROTECTION  FOREIGN PROTECTION ORDER SET  NEXT  DATE:  PPOH  04/23/2024  10:00  AM MCNEILL  COURTROOM:  CCG IN  PERSON 04/11/2024  D 001  RNU OR",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0158",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-29",
+      "title": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 6/5/24 PAGE 2 5. On April 29, 2024 an Ex Parte Order for Custody, Parenting Time and Child ",
+      "summary": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 6/5/24 PAGE 2 5. On April 29, 2024 an Ex Parte Order for Custody, Parenting Time and Child  Support following Facilitative Information Gather",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0159",
+      "case_id": "2023-5907-PP",
+      "date": "2024-04-29",
+      "title": "IT IS FURTHER ORDERED that parties participated in a Facilitative Information Gathering Conference which resulted in a temporary Order titled Ex Parte",
+      "summary": "IT IS FURTHER ORDERED that parties participated in a Facilitative Information Gathering Conference which resulted in a temporary Order titled Ex Parte Order for Custody, Parenting Time, and Child Supp",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0161",
+      "case_id": "2024-001507-DC",
+      "date": "2024-05-02",
+      "title": "urt-ordered parenting time, including: March 26 – May 2, 2024 (37 consecutive days) October 20 – November 12, 2",
+      "summary": "urt-ordered parenting time, including: March 26 – May 2, 2024 (37 consecutive days) October 20 – November 12, 2",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0170",
+      "case_id": "2024-001507-DC",
+      "date": "2024-05-23",
+      "title": "Dismissed. ORDER RF,GARDING PARENTING TIME IT IS HEREBY aII'HE RECOMA/IENDATION AND ORDER that the Plaintiff Father, ANDREW PIGORS's Motio",
+      "summary": "Dismissed. ORDER RF,GARDING PARENTING TIME IT IS HEREBY aII'HE RECOMA/IENDATION AND ORDER that the Plaintiff Father, ANDREW PIGORS's Motion regarding Parenting Time filed on May 23, 2024 reques",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0183",
+      "case_id": "2023-5907-PP",
+      "date": "2024-06-27",
+      "title": "PIGORS v WATSON FILE # 2024-001507-DC Recommendation dated 3/26/25 PAGE 9 June 27, 2024: Plaintiff filed a Motion to Quash Subpoena. Requested the Sub",
+      "summary": "PIGORS v WATSON FILE # 2024-001507-DC Recommendation dated 3/26/25 PAGE 9 June 27, 2024: Plaintiff filed a Motion to Quash Subpoena. Requested the Subpoenas issued to IndiGrowi Weed Dispensary Muskego",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-002",
+      "case_id": "2024-001507-DC",
+      "date": "2024-07-01",
+      "title": "Ex Parte Custody Order Entered",
+      "summary": "Emergency ex parte order granting sole custody to Watson without full hearing",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0189",
+      "case_id": "2024-001507-DC",
+      "date": "2024-07-16",
+      "title": "Dismissed. *Tliis Judgment is tlie initial Order regarding the issues of Custody and Parenting Time. *PlaintiFs six (6) Motions filed on",
+      "summary": "Dismissed. *Tliis Judgment is tlie initial Order regarding the issues of Custody and Parenting Time. *PlaintiFs six (6) Motions filed on July 16, 2024, tlie day before Trial, Denied \"as they",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0190",
+      "case_id": "2024-001507-DC",
+      "date": "2024-07-16",
+      "title": "Dismissed. *This Judgment is the initial Order regarding the issues of Custody and Parenting Time. *Plainti'ff's six (6) Motions filed on",
+      "summary": "Dismissed. *This Judgment is the initial Order regarding the issues of Custody and Parenting Time. *Plainti'ff's six (6) Motions filed on July 16, 2024, tlie day before Trial, Denied \"as they",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0191",
+      "case_id": "2023-5907-PP",
+      "date": "2024-07-16",
+      "title": "PIGORS v WATSON FII,E # 2024-001507-DC Recommendation dated 3/26/25 PAGE 10 July 16, 2024: Plaintiff filed a Motion for Contempt of Court for the grou",
+      "summary": "PIGORS v WATSON FII,E # 2024-001507-DC Recommendation dated 3/26/25 PAGE 10 July 16, 2024: Plaintiff filed a Motion for Contempt of Court for the grounds of \"Failure to Pay Child Support\" and \"Refiisa",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0192",
+      "case_id": "2023-5907-PP",
+      "date": "2024-07-16",
+      "title": "PIGORS v WATSON FILE # 2024-001507-DC Recommendation dated 3/26/25 PAGE 10 July 16, 2024: Plaintiff filed a Motion for Contempt of Court for the groun",
+      "summary": "PIGORS v WATSON FILE # 2024-001507-DC Recommendation dated 3/26/25 PAGE 10 July 16, 2024: Plaintiff filed a Motion for Contempt of Court for the grounds of \"Failure to Pay Child Support\" and \"Refusal ",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0194",
+      "case_id": "2023-5907-PP",
+      "date": "2024-07-17",
+      "title": "STATE  OF  MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEG-ON ANDREW PIGORS, Plaintiff, File No: 2024-001507-DC Hon. Jenny L. McNeill VS. CUSTO",
+      "summary": "STATE  OF  MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEG-ON ANDREW PIGORS, Plaintiff, File No: 2024-001507-DC Hon. Jenny L. McNeill VS. CUSTODY & PARENTING TIME & C-HILD SUPPORT ORDER - FOLLO",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0199",
+      "case_id": "2023-5907-PP",
+      "date": "2024-08-23",
+      "title": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 3/26/25 PAGE 2 was titled as follows: \"AFFnDAVIT IN SUPPORT OF MOTION TO MODIFY CUSTODY AND",
+      "summary": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 3/26/25 PAGE 2 was titled as follows: \"AFFnDAVIT IN SUPPORT OF MOTION TO MODIFY CUSTODY AND PARENTING TIME\" stating \"Plaintiff seeks an order",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0200",
+      "case_id": "2023-5907-PP",
+      "date": "2024-08-23",
+      "title": "PIGORS v WATSON FILE # 2024-001507-DC Recommendation dated 3/26/25 PAGE 12 August 23, 2024: Final Order entered regarding Custody & Parenting Time & C",
+      "summary": "PIGORS v WATSON FILE # 2024-001507-DC Recommendation dated 3/26/25 PAGE 12 August 23, 2024: Final Order entered regarding Custody & Parenting Time & Child Support following Custody Hearing. All of Pla",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0202",
+      "case_id": "2023-5907-PP",
+      "date": "2024-08-23",
+      "title": "STACK|id=MEEK234_CASECATALOG_ENCYCLOPEDIA|rev=PERMAFIX.1|mode=DRAFT|locks=TRUTHLOCK+AUTHLOCK+QUOTELOCK|a only=1|scope=MEEK2+MEEK3+MEEK4|mi_only=1|form",
+      "summary": "STACK|id=MEEK234_CASECATALOG_ENCYCLOPEDIA|rev=PERMAFIX.1|mode=DRAFT|locks=TRUTHLOCK+AUTHLOCK+QUOTELOCK|a only=1|scope=MEEK2+MEEK3+MEEK4|mi_only=1|forms_only_if_mandated=1|vehicle_requires_operating_or",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0203",
+      "case_id": "2024-001507-DC",
+      "date": "2024-08-23",
+      "title": "Final Judgment — Sole Custody to Watson",
+      "summary": "Final Judgment entered granting sole legal and sole physical custody to Defendant/Mother with specific parenting time after hearing",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0204",
+      "case_id": "2024-001507-DC",
+      "date": "2024-08-23",
+      "title": "Uniform Child Support Order Entered",
+      "summary": "Uniform child support order entered as part of final judgment",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-003",
+      "case_id": "2023-5907-PP",
+      "date": "2024-09-15",
+      "title": "PPO Issued Against Andrew Pigors",
+      "summary": "Personal protection order entered without full evidentiary hearing",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0210",
+      "case_id": "2024-001507-DC",
+      "date": "2024-10-02",
+      "title": "Lori Hayes Elections Coordinator October 2, 2024 Andrew Pigors 1977 Wl-iitehall Rd North Muskegon, Ml 49445 Re: Motion for Reconsideration Dear Mr. Pi",
+      "summary": "Lori Hayes Elections Coordinator October 2, 2024 Andrew Pigors 1977 Wl-iitehall Rd North Muskegon, Ml 49445 Re: Motion for Reconsideration Dear Mr. Pigors: Karen D. Buie Muskegon County Clerk CCR-COR ",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0216",
+      "case_id": "2023-5907-PP",
+      "date": "2024-10-20",
+      "title": "ction Orders (PPOs) to restrict my access to LDW: October 20, 2024: Albert Watson served a PPO violation during an e",
+      "summary": "ction Orders (PPOs) to restrict my access to LDW: October 20, 2024: Albert Watson served a PPO violation during an e",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0230",
+      "case_id": "2023-5907-PP",
+      "date": "2024-10-20",
+      "title": "exchanges, creating an unsafe and emotionally volatile environment for LDW. Example: On October 20, 2024, Albert Watson forcibly removed LDW from my a",
+      "summary": "exchanges, creating an unsafe and emotionally volatile environment for LDW. Example: On October 20, 2024, Albert Watson forcibly removed LDW from my arms during an exchange, shouting and throwing a PP",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0235",
+      "case_id": "2024-001507-DC",
+      "date": "2024-10-30",
+      "title": "hearing' 10/30/2024 .ludge.' JENNY L. MCNEILL P-58235 Bar nO. 1. Order entered after show-cause hearing requested by petitioner pursuant to M",
+      "summary": "hearing' 10/30/2024 .ludge.' JENNY L. MCNEILL P-58235 Bar nO. 1. Order entered after show-cause hearing requested by petitioner pursuant to MCR 3.708(B). THE COURT FINDS: € 2. The respondent w",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0236",
+      "case_id": "2023-5907-PP",
+      "date": "2024-10-30",
+      "title": "HEARING ppo VIO DISMISSED/  PPO AMENDED/  ccasza/ccags/pos 10/30/2024  D 001  ZTJ PROOF OF  SERVICE PROOF OF  SERVICE 10/30/2024  ZTJ EX",
+      "summary": "HEARING ppo VIO DISMISSED/  PPO AMENDED/  ccasza/ccags/pos 10/30/2024  D 001  ZTJ PROOF OF  SERVICE PROOF OF  SERVICE 10/30/2024  ZTJ EX  PARTE ORDER PERSONAL  PROTECTION ORDER  (DOMESTIC)",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0237",
+      "case_id": "2024-001507-DC",
+      "date": "2024-10-30",
+      "title": "Respondent. SHOW CAUSE HEARING  ON  PERSONAL  PROTECTION ORDER (EXCERPT 1  AND  2 0F PROCEEDINGS  ONLY) BEFORE THE HONORABLE  JENNY MCN",
+      "summary": "Respondent. SHOW CAUSE HEARING  ON  PERSONAL  PROTECTION ORDER (EXCERPT 1  AND  2 0F PROCEEDINGS  ONLY) BEFORE THE HONORABLE  JENNY MCNEILL,  CIRCUI'T COURT  JUDGE Muskegon, \"!\"ichigan - Wednesday,  O",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0256",
+      "case_id": "2024-001507-DC",
+      "date": "2024-11-27",
+      "title": "RECEIVED 11/2-//2024 FILED 11/27/2024 14th  CIRCUIT COURT MUSKEGON COUNTY Approved, SCAO Muskegon Original - Court 1 st copy - LEIN (if applicable) 2 ",
+      "summary": "RECEIVED 11/2-//2024 FILED 11/27/2024 14th  CIRCUIT COURT MUSKEGON COUNTY Approved, SCAO Muskegon Original - Court 1 st copy - LEIN (if applicable) 2 nd copy - Respondent 3 rd copy - Petitioner Court ",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0257",
+      "case_id": "2023-5907-PP",
+      "date": "2024-11-27",
+      "title": "AMAYASHOI  UCCVPFK Muskegon County REGISTER OF ACTIONS REL2 10 6 9 / 11 /2 5 11: 0 0 : 5 4 Pg:  4 Caseload Dsp:  OEP Crt : C 14 Case:  2023 61  Jur:  ",
+      "summary": "AMAYASHOI  UCCVPFK Muskegon County REGISTER OF ACTIONS REL2 10 6 9 / 11 /2 5 11: 0 0 : 5 4 Pg:  4 Caseload Dsp:  OEP Crt : C 14 Case:  2023 61  Jur:  MCNEILL 0000005907  PP Re f : WATSON V PIGORS CLOS",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0258",
+      "case_id": "2024-001507-DC",
+      "date": "2024-12-04",
+      "title": "Judge: JENNY L MCNEILL € 1. Thisorderisenteredafterhearing. THE COURT FINDS: 2. A motion was filed to []a. modifythepersonalprotectionorderdate",
+      "summary": "Judge: JENNY L MCNEILL € 1. Thisorderisenteredafterhearing. THE COURT FINDS: 2. A motion was filed to []a. modifythepersonalprotectionorderdated € b. extendtheexpirationdateofthepersonalprotectionorde",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0261",
+      "case_id": "2024-001507-DC",
+      "date": "2025-01-07",
+      "title": "hearing' 1/7/2025 L]PACCCodeMCL600.2950a  []pqcccooeucteoo.zgsom i)uBge'JE!JhJYL.MCNEILL  P-58235 Bar no i Order entered after show-cause hea",
+      "summary": "hearing' 1/7/2025 L]PACCCodeMCL600.2950a  []pqcccooeucteoo.zgsom i)uBge'JE!JhJYL.MCNEILL  P-58235 Bar no i Order entered after show-cause hearing requested by petitioner pursuant to MCR 3.708(B).",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0264",
+      "case_id": "2024-001507-DC",
+      "date": "2025-01-07",
+      "title": "Order Regarding Parenting Time",
+      "summary": "Court enters order regarding parenting time. Judge McNeill presiding.",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0267",
+      "case_id": "2023-5907-PP",
+      "date": "2025-02-04",
+      "title": "Hearing. 02/04/2025  RNU MOTION  FILED MOTION TO MODIFY,  EXTEND,  OR TERMINATE  PPO  (DENIED) 02/05/2025  RNU ORDER ORDER  ON MOTION  TO",
+      "summary": "Hearing. 02/04/2025  RNU MOTION  FILED MOTION TO MODIFY,  EXTEND,  OR TERMINATE  PPO  (DENIED) 02/05/2025  RNU ORDER ORDER  ON MOTION  TO MODIFY,  EXTEND,  OR TERMINATE  PERSONAL  PROTECTI",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0269",
+      "case_id": "2023-5907-PP",
+      "date": "2025-02-04",
+      "title": "A.MAYASHO1  UCCVPFK Muskegon County REGISTER OF ACTIONS REL2 10 6 9 / 11 / 2 5 11: 0 0 :5 4 Pg:  5 Caseload  Dsp:  OEP Crt : C 14 Case:  2023 61  Jur:",
+      "summary": "A.MAYASHO1  UCCVPFK Muskegon County REGISTER OF ACTIONS REL2 10 6 9 / 11 / 2 5 11: 0 0 :5 4 Pg:  5 Caseload  Dsp:  OEP Crt : C 14 Case:  2023 61  Jur:  MCNEILL 0000005907  PP Ref : WATSON V  PIGORS CL",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0271",
+      "case_id": "2024-001507-DC",
+      "date": "2025-02-14",
+      "title": "IT IS ORDERED that the Plaintiff's Motion regarding Parenting Tinie filed on February 14, 2025 is dismissed for the reasons stated above.",
+      "summary": "IT IS ORDERED that the Plaintiff's Motion regarding Parenting Tinie filed on February 14, 2025 is dismissed for the reasons stated above. Parenting Time shall remain pursuant to the Order entered on A",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0273",
+      "case_id": "2024-001507-DC",
+      "date": "2025-02-14",
+      "title": "ST ATE  OF MICHIG AN IN THE CIRCUIT COtJRT FOR THE COUNTY OF MUSKEGON ANDREW PIGORS FILE N0. 2024-001507-DC Plaintiff, ORDER REGARDING PARENTING TIME ",
+      "summary": "ST ATE  OF MICHIG AN IN THE CIRCUIT COtJRT FOR THE COUNTY OF MUSKEGON ANDREW PIGORS FILE N0. 2024-001507-DC Plaintiff, ORDER REGARDING PARENTING TIME VS. F,MILY WATSON HON. JENNY L. MCNEILL Defen&ant.",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0274",
+      "case_id": "2024-001507-DC",
+      "date": "2025-02-14",
+      "title": "PIGORS v WATSON FILE # 2024-001507-DC Recommendation dated 3/26/25 PAGE 5 12. T]ie Family Couit Specialist having reviewed the Case File in its entire",
+      "summary": "PIGORS v WATSON FILE # 2024-001507-DC Recommendation dated 3/26/25 PAGE 5 12. T]ie Family Couit Specialist having reviewed the Case File in its entirety, having Summarized the Case File, having found ",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0281",
+      "case_id": "2024-001507-DC",
+      "date": "2025-02-28",
+      "title": "hearing' 2/28/2025 .1,,,.lge. Jenny L McNeill t OrderenteredafterviolationhearingpursuanttoMCR3.708(H),heldasaresultof jPa. show-cause hearing pur",
+      "summary": "hearing' 2/28/2025 .1,,,.lge. Jenny L McNeill t OrderenteredafterviolationhearingpursuanttoMCR3.708(H),heldasaresultof jPa. show-cause hearing pursuantto MCR 3.708(B). € b. arraignmentforarrestpursuan",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0282",
+      "case_id": "2024-001507-DC",
+      "date": "2025-02-28",
+      "title": "hearing' 2/28/2025 € PACC Code MCL 600.2950a .ludge' Jenny L McNeill € PACC Code MCL 600.2950m P-58235 Bar no. 1. Orderenteredafterviolation",
+      "summary": "hearing' 2/28/2025 € PACC Code MCL 600.2950a .ludge' Jenny L McNeill € PACC Code MCL 600.2950m P-58235 Bar no. 1. OrderenteredafterviolationhearingpursuanttoMCR3.708(H),heldasaresultof 2Fa. show-ca",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0284",
+      "case_id": "2023-5907-PP",
+      "date": "2025-02-28",
+      "title": "The filed Motion to Disqualify Judge McNeill in Pigors v. Watson, witli its exhibits, documenting many of the same incidents described liere. Appendix",
+      "summary": "The filed Motion to Disqualify Judge McNeill in Pigors v. Watson, witli its exhibits, documenting many of the same incidents described liere. Appendix C - PPO Docket and Register of Actions (Case No. ",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0289",
+      "case_id": "2023-5907-PP",
+      "date": "2025-03-03",
+      "title": "M Fw: Andrew Pigors I message Vartini, Mandi <MartiniMa@co.muskegon.mi.us> ro: andrewjpigors@gmail.com <andrewjpigors@gmail.com> Mon, Mar 3, 2025 at 9",
+      "summary": "M Fw: Andrew Pigors I message Vartini, Mandi <MartiniMa@co.muskegon.mi.us> ro: andrewjpigors@gmail.com <andrewjpigors@gmail.com> Mon, Mar 3, 2025 at 9:18 A Mandi Martini Assistant Public Defender Fami",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0293",
+      "case_id": "2024-001507-DC",
+      "date": "2025-04-22",
+      "title": "hearing' 4/22/2025 ,ludge' JENY !- MCNEILL P-58235 Bar no 1. Order entered after show-cause hearing requested by petitioner pursuant to MC",
+      "summary": "hearing' 4/22/2025 ,ludge' JENY !- MCNEILL P-58235 Bar no 1. Order entered after show-cause hearing requested by petitioner pursuant to MCR 3.708(B) THE COURT FINDS advised of his/her rights",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0296",
+      "case_id": "2024-001507-DC",
+      "date": "2025-04-22",
+      "title": "Chief Judge Motion Packet Filed",
+      "summary": "Chief Judge Motion Packet prepared and filed — cover page, motion, proposed order, filing checklist",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0297",
+      "case_id": "2024-001507-DC",
+      "date": "2025-04-25",
+      "title": "FILED 4/25/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY ST ATE OF MICHIGAN IN THE 14TH CIRCUIT COURT FOR TIIE COUNTY OF MUSKEGON - FAMILY DIVISION Case ",
+      "summary": "FILED 4/25/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY ST ATE OF MICHIGAN IN THE 14TH CIRCUIT COURT FOR TIIE COUNTY OF MUSKEGON - FAMILY DIVISION Case No.: 2024-001507-DC Hon. Jenny L. McNeill l'6a'Qmi",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0300",
+      "case_id": "2023-5907-PP",
+      "date": "2025-05-16",
+      "title": "5. Punitive structural barriers to access the court. o A May 16, 2025 order imposed a $250.00 filing bond in the custody case, that has functioned as ",
+      "summary": "5. Punitive structural barriers to access the court. o A May 16, 2025 order imposed a $250.00 filing bond in the custody case, that has functioned as a financial gate against my ability to bring forth",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0303",
+      "case_id": "2023-5907-PP",
+      "date": "2025-05-16",
+      "title": "AMAYASHOI  UCCVPFK Muskegon County REGISTER OF ACTIONS REL2106 9/11/25 11:00:54 Pg:  6 Caseload  Dsp:  OEP Crt : C 14 Case:  2023 61  Jur:  MCNEILL 00",
+      "summary": "AMAYASHOI  UCCVPFK Muskegon County REGISTER OF ACTIONS REL2106 9/11/25 11:00:54 Pg:  6 Caseload  Dsp:  OEP Crt : C 14 Case:  2023 61  Jur:  MCNEILL 0000005907  PP Ref : WATSON  V PIGORS CLOSE  Pub 68 ",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0304",
+      "case_id": "2024-001507-DC",
+      "date": "2025-05-16",
+      "title": "Order Imposing Filing Bond Requirement",
+      "summary": "Court imposes filing bond requirement on Plaintiff, restricting access to court",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0305",
+      "case_id": "2023-5907-PP",
+      "date": "2025-05-20",
+      "title": "FILED 5/20/2025 14th  CIRCUIT  COURT MUSKF.GON  COUNTY STATE  OF  M CHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff",
+      "summary": "FILED 5/20/2025 14th  CIRCUIT  COURT MUSKF.GON  COUNTY STATE  OF  M CHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff VS. CASE 2024-001507-DC HON. JENNY L. MCNEILL ORD",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "EQ-507 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "to support Lincoln emotionally during off weeks. June 1, 2024: Emily refuses video chats during Andrew’s off-we"
+        },
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0307",
+      "case_id": "2024-001507-DC",
+      "date": "2025-05-20",
+      "title": "Order Denying Motion Regarding Custody Filed",
+      "summary": "FILED 5/20/2025 — Order denying motion regarding custody. 14th Circuit Court, Muskegon County.",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "EQ-497 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ncoln’s behavior, raising concerns Emily ignores. September 5, 2024: Emily rejects collaboration on custody and child"
+        },
+        {
+          "ref": "EQ-501 (p.78)",
+          "status": "NON-COMPLIANT",
+          "snippet": "ricular activities or sports choices for Lincoln. July 9, 2024: Emily refuses to address Andrew’s custody resolu"
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0308",
+      "case_id": "2024-001507-DC",
+      "date": "2025-05-22",
+      "title": "Order Denying Post-Judgment Relief",
+      "summary": "Court denies post-judgment relief motion filed by Plaintiff",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0309",
+      "case_id": "2024-001507-DC",
+      "date": "2025-06-12",
+      "title": "hearing' 6/12/2025 .liidge' JENNY L MCNEILL P58235 Bar no. hL\"\",;4:ymz-r' 1.Order entered after violation hearing pursuant to MCR 3.708(H),",
+      "summary": "hearing' 6/12/2025 .liidge' JENNY L MCNEILL P58235 Bar no. hL\"\",;4:ymz-r' 1.Order entered after violation hearing pursuant to MCR 3.708(H), held as a result of a,. show-causehearingpursuanttoMCR3",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0312",
+      "case_id": "COA-366810",
+      "date": "2025-06-15",
+      "title": "Claim of Appeal Filed — COA 366810",
+      "summary": "Notice/Claim of Appeal filed with Michigan Court of Appeals, Docket No. 366810, appeal of right from trial court orders in 2024-001507-DC",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0314",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-06",
+      "title": "hearing. Appendix E - Ex Parte and Post-Ex Parte Orders in August-October 2025 The ex parte order suspending all parenting time (ente",
+      "summary": "hearing. Appendix E - Ex Parte and Post-Ex Parte Orders in August-October 2025 The ex parte order suspending all parenting time (entered 011 or about August 6, 2025). Subsequent orders",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0315",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-06",
+      "title": "Ex Parte Paretxting-Time Suspension and Lack of Notice (August 2025) 4. August 6, 2025 - Ex parte order suspending all parenting time. o",
+      "summary": "Ex Parte Paretxting-Time Suspension and Lack of Notice (August 2025) 4. August 6, 2025 - Ex parte order suspending all parenting time. o  On or about August 6, 2025, Judge McNeill signed",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0316",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-06",
+      "title": "ex parte order suspending all parenting time (entered 011 or about August 6, 2025). Subsequent orders continuing the suspension (around",
+      "summary": "ex parte order suspending all parenting time (entered 011 or about August 6, 2025). Subsequent orders continuing the suspension (around September 9, 2025 and October 8, 2025), including an",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0318",
+      "case_id": "2023-5907-PP",
+      "date": "2025-08-07",
+      "title": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "summary": "**August 2025 - Mass Ex Parte Orders:** - **August 7, 2025** - Emergency Ex Parte Motion filed (multiple versions) - **August 8, 2025** - **FIVE separate ex parte orders** entered suspending Andrew's ",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0320",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "ex parte motion was filed. On or about August 8, 2025, the ex parte order took effect, and my parenting time has been functionally sus",
+      "summary": "ex parte motion was filed. On or about August 8, 2025, the ex parte order took effect, and my parenting time has been functionally suspended ever since. That same order also wiped out",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0322",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "ex parte motion or order before an August 8, 2025 exchange. I arrived expecting my regular parenting time, and only discovered after t",
+      "summary": "ex parte motion or order before an August 8, 2025 exchange. I arrived expecting my regular parenting time, and only discovered after the missed exchange-by contacting the court-that my p",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0326",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "parenting time due to the suspension order (from August 8, 2025 through present, amounting to at least 15 missed",
+      "summary": "parenting time due to the suspension order (from August 8, 2025 through present, amounting to at least 15 missed",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0328",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": ":ECEIa7ED  ri/t'/2025 FILED  8/8/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY STATE OF MICHIGAN IN THE1 4TH CIRCUIT COURT IN THE COUNTY OF MUSKEGON FAMI",
+      "summary": ":ECEIa7ED  ri/t'/2025 FILED  8/8/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY STATE OF MICHIGAN IN THE1 4TH CIRCUIT COURT IN THE COUNTY OF MUSKEGON FAMILY DMSION ANDREW PIGORS, Plaintiff, V. CASE NO: 24",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0341",
+      "case_id": "2023-5907-PP",
+      "date": "2025-08-08",
+      "title": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "summary": "**August 2025 - Mass Ex Parte Orders:** - **August 7, 2025** - Emergency Ex Parte Motion filed (multiple versions) - **August 8, 2025** - **FIVE separate ex parte orders** entered suspending Andrew's ",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0344",
+      "case_id": "2023-5907-PP",
+      "date": "2025-08-08",
+      "title": "1. Ex Parte Order Pattern ⚠️ CRITICAL",
+      "summary": "**Discovery:** - **24 of 55 orders** (44%) entered ex parte - **All 24 presided by Judge Jenny L. McNeill** - **August 8, 2025:** 5 separate ex parte orders same day - **Notice failures:** Orders ente",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0354",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-08",
+      "title": "Ambush at Parenting Time Exchange — No Notice of Ex Parte",
+      "summary": "Father arrives for scheduled parenting time exchange; not served with ex parte motion or order beforehand",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0358",
+      "case_id": "2023-5907-PP",
+      "date": "2025-08-22",
+      "title": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "summary": "**August 2025 - Mass Ex Parte Orders:** - **August 7, 2025** - Emergency Ex Parte Motion filed (multiple versions) - **August 8, 2025** - **FIVE separate ex parte orders** entered suspending Andrew's ",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0361",
+      "case_id": "2024-001507-DC",
+      "date": "2025-08-22",
+      "title": "Interim Hearing on Ex Parte Order",
+      "summary": "Hearing on 8/22/25 regarding ex parte suspension of parenting time",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0363",
+      "case_id": "2023-5907-PP",
+      "date": "2025-08-30",
+      "title": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "summary": "**August 2025 - Mass Ex Parte Orders:** - **August 7, 2025** - Emergency Ex Parte Motion filed (multiple versions) - **August 8, 2025** - **FIVE separate ex parte orders** entered suspending Andrew's ",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0367",
+      "case_id": "2024-001507-DC",
+      "date": "2025-09-04",
+      "title": "STATE  OF  M CHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER RE",
+      "summary": "STATE  OF  M CHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER REGARDING PLAINTIFF'S OBJECTION TO EX PARTE ORDER CO",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0368",
+      "case_id": "2024-001507-DC",
+      "date": "2025-09-04",
+      "title": "STATE  OF  MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER RE",
+      "summary": "STATE  OF  MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEGON ANDREW J. PIGORS, Plaintiff CASE 2024-001507-DC HON. JENNY L. MCNEILL VS. ORDER REGARDING PLAINTIFF'S OBJECTION TO EX PARTE ORDER CO",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0371",
+      "case_id": "2024-001507-DC",
+      "date": "2025-09-04",
+      "title": "!iiY HeaLthWest HealthWest Consent for Treatment & Information Receipt l!Jflllu*M!Aii - I mlNJWIMffllullmllRl)llll*affiu I NAME Andrew Pigors COB 12/3",
+      "summary": "!iiY HeaLthWest HealthWest Consent for Treatment & Information Receipt l!Jflllu*M!Aii - I mlNJWIMffllullmllRl)llll*affiu I NAME Andrew Pigors COB 12/30/al987 AGE 37 CASE # 02508341 GENDER Male ADDRESS",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0372",
+      "case_id": "2023-5907-PP",
+      "date": "2025-09-04",
+      "title": "2025 - Ex Parte Order Pattern (CRITICAL)",
+      "summary": "**August 2025 - Mass Ex Parte Orders:** - **August 7, 2025** - Emergency Ex Parte Motion filed (multiple versions) - **August 8, 2025** - **FIVE separate ex parte orders** entered suspending Andrew's ",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0392",
+      "case_id": "2024-001507-DC",
+      "date": "2025-09-22",
+      "title": "Court Orders HealthWest Assessment",
+      "summary": "Court asks Plaintiff to undergo assessment at Health West. Matter adjourned.",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0397",
+      "case_id": "2024-001507-DC",
+      "date": "2025-10-08",
+      "title": "Continuation Hearing Scheduled for Oct 29",
+      "summary": "Chambers schedules continuation of matter for October 29, 2025 — nearly two months after ex parte order",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0398",
+      "case_id": "2024-001507-DC",
+      "date": "2025-10-18",
+      "title": "hearing: 10/18/2025 .ludge.' JENNY L. MCNEILL P-58235 Bar no. 1. Order entered after show-cause hearing requested by petitioner pursuant to",
+      "summary": "hearing: 10/18/2025 .ludge.' JENNY L. MCNEILL P-58235 Bar no. 1. Order entered after show-cause hearing requested by petitioner pursuant to MCR 3.708(B). THE COURT FINDS: Fi2. The respondent wa",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0400",
+      "case_id": "2024-001507-DC",
+      "date": "2025-10-27",
+      "title": "FILED 10/27/2025 14th CIRCUIT COURT MUSKEGON COUN'ry Approved, SCAO Muskegon Court address 990 Tenace St. Muskegon, MI49442 Original - Court lsl copy ",
+      "summary": "FILED 10/27/2025 14th CIRCUIT COURT MUSKEGON COUN'ry Approved, SCAO Muskegon Court address 990 Tenace St. Muskegon, MI49442 Original - Court lsl copy - LEIN (if applicable) 2nd copy - Respondent 3rd c",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0403",
+      "case_id": "2024-001507-DC",
+      "date": "2025-10-29",
+      "title": "hearing on October 29, 2025. 2.  Lack of notice and ambush at a scheduled parenting-time exchange. o  I was not served with the ex par",
+      "summary": "hearing on October 29, 2025. 2.  Lack of notice and ambush at a scheduled parenting-time exchange. o  I was not served with the ex parte motion or order before an August 8, 2025 exchang",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0406",
+      "case_id": "2024-001507-DC",
+      "date": "2025-10-29",
+      "title": "ex parte suspension order, subsequent continuation orders, and the scheduling of the October 29, 2025 evidentiary hearing. Appendix E -",
+      "summary": "ex parte suspension order, subsequent continuation orders, and the scheduling of the October 29, 2025 evidentiary hearing. Appendix E - Ex Parte and Post-Ex Parte Orders in August-October",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    },
+    {
+      "order_id": "DE-0408",
+      "case_id": "2023-5907-PP",
+      "date": "2025-10-29",
+      "title": "SupremeCourt_Complaint_ExParte_Pigors_2025-10-29_v2 IN THE SUPREME COURT OF MICHIGAN Andrew J. Pigors, Petitioner, v. Hon. Jenny L. McNeill (14th Circ",
+      "summary": "SupremeCourt_Complaint_ExParte_Pigors_2025-10-29_v2 IN THE SUPREME COURT OF MICHIGAN Andrew J. Pigors, Petitioner, v. Hon. Jenny L. McNeill (14th Circuit Court, Family Division), Respondent Judge, and",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-8",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily refused a weekly video call schedule, citing discomfort without proposing alternatives."
+        },
+        {
+          "ref": "DDE-127",
+          "status": "NON-COMPLIANT",
+          "snippet": ", and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn’t want to talk.\" These refusals create a gap"
+        },
+        {
+          "ref": "DDE-133",
+          "status": "NON-COMPLIANT",
+          "snippet": ", and September 12, 2024, Emily refused to allow scheduled video calls, claiming LDW “doesn’t want to talk.” These actions disrupt LDW’s sense of conn"
+        },
+        {
+          "ref": "DDE-161",
+          "status": "NON-COMPLIANT",
+          "snippet": ", and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn’t want to talk.\" These refusals create a gap"
+        },
+        {
+          "ref": "DDE-187",
+          "status": "NON-COMPLIANT",
+          "snippet": ", I requested a weekly video chat during off-weeks to maintain LDW’s sense of connection and security. Emily refused without offering an alternative."
+        },
+        {
+          "ref": "DDE-199",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily denied a scheduled video call, citing that LDW “didn’t want to talk.” However, LDW later expressed excitement when he saw me in person, contra"
+        },
+        {
+          "ref": "DDE-56",
+          "status": "INDETERMINATE",
+          "snippet": "Andrew reports Lincoln’s rash worsening, but Emily dismisses medical concerns again."
+        },
+        {
+          "ref": "DDE-99",
+          "status": "INDETERMINATE",
+          "snippet": "Andrew reports Lincoln’s rash worsening, but Emily dismisses medical concerns again."
+        },
+        {
+          "ref": "DDE-118",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW returned to me with severe rashes that Emily had failed to address, leaving me to manage his medical care and comfort."
+        },
+        {
+          "ref": "DDE-129",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW returned from Emily’s care with severe rashes on his face and body. Despite my repeated inquiries, Emily dismissed the condition as \"minor\" and "
+        },
+        {
+          "ref": "DDE-152",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW returned to me with severe rashes that Emily had failed to address, leaving me to manage his medical care and comfort."
+        },
+        {
+          "ref": "DDE-163",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW returned from Emily’s care with severe rashes on his face and body. Despite my repeated inquiries, Emily dismissed the condition as \"minor\" and "
+        },
+        {
+          "ref": "DDE-206",
+          "status": "NON-COMPLIANT",
+          "snippet": ": LDW returned from Emily’s care with severe rashes on his body. Despite Andrew’s suggestion for medical attention, Emily dismissed the concern and fa"
+        },
+        {
+          "ref": "DDE-69",
+          "status": "NON-COMPLIANT",
+          "snippet": "- May 2, 2024: Emily withholds Lincoln for 37 days, citing unfounded claims about safety."
+        },
+        {
+          "ref": "DDE-112",
+          "status": "NON-COMPLIANT",
+          "snippet": "- May 2, 2024: Emily withholds Lincoln for 37 days, citing unfounded claims about safety."
+        },
+        {
+          "ref": "DDE-3",
+          "status": "NON-COMPLIANT",
+          "snippet": "Without consulting me, Emily made unilateral decisions regarding LDW’s vaccinations, only informing me afterward."
+        },
+        {
+          "ref": "DDE-64",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily vaccinates Lincoln without consulting Andrew."
+        },
+        {
+          "ref": "DDE-107",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily vaccinates Lincoln without consulting Andrew."
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-207",
+          "status": "INDETERMINATE",
+          "snippet": ": Andrew noticed a rash on LDW and suggested testing for a peanut allergy. Emily dismissed this suggestion, attributing the rash to vaccinations witho"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-19",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for 37 consecutive days without justification, depriving me of meaningful interaction and disrupting our bond."
+        },
+        {
+          "ref": "DDE-68",
+          "status": "NON-COMPLIANT",
+          "snippet": "Court orders Emily to return Lincoln to Andrew after a month-long withholding."
+        },
+        {
+          "ref": "DDE-111",
+          "status": "NON-COMPLIANT",
+          "snippet": "Court orders Emily to return Lincoln to Andrew after a month-long withholding."
+        },
+        {
+          "ref": "DDE-137",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW for 37 consecutive days, disrupting our bond and creating emotional distress for LDW."
+        },
+        {
+          "ref": "DDE-171",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW for 37 consecutive days, disrupting our bond and creating emotional distress for LDW."
+        },
+        {
+          "ref": "DDE-177",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily withheld LDW for 37 consecutive days, ignoring the court-ordered parenting schedule."
+        },
+        {
+          "ref": "DDE-13",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily provided only partial medical records despite a court order requiring full disclosure. Her failure to cooperate hindered my ability to make info"
+        },
+        {
+          "ref": "DDE-61",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds full pediatric records after Andrew requests them per the court order."
+        },
+        {
+          "ref": "DDE-104",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds full pediatric records after Andrew requests them per the court order."
+        },
+        {
+          "ref": "DDE-60",
+          "status": "INDETERMINATE",
+          "snippet": "Emily responds minimally to Andrew's inquiries about Lincoln's health updates."
+        },
+        {
+          "ref": "DDE-103",
+          "status": "INDETERMINATE",
+          "snippet": "Emily responds minimally to Andrew's inquiries about Lincoln's health updates."
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-196",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW without providing updates, causing unnecessary confusion and anxiety for him. Upon his return, LDW appeared disoriented and took "
+        },
+        {
+          "ref": "DDE-29",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s withholding of Lincoln ends after 25 consecutive days."
+        },
+        {
+          "ref": "DDE-72",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s withholding of Lincoln ends after 25 consecutive days."
+        },
+        {
+          "ref": "DDE-208",
+          "status": "NON-COMPLIANT",
+          "snippet": ": Emily vaccinated LDW without informing Andrew beforehand or consulting him, violating his parental rights and disregarding co-parenting responsibili"
+        },
+        {
+          "ref": "DDE-215",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily failed to inform Andrew about LDW’s vaccinations in advance, excluding him from important medical decisions."
+        },
+        {
+          "ref": "DDE-31",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily continues withholding Lincoln during his birthday week."
+        },
+        {
+          "ref": "DDE-74",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily continues withholding Lincoln during his birthday week."
+        },
+        {
+          "ref": "DDE-182",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s birthday, Emily refused to allow me any time with him, depriving us of the chance to celebrate together."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-1",
+          "status": "INDETERMINATE",
+          "snippet": "Emily alleged that she discovered a straw with suspected cocaine residue in her home and insinuated that I was responsible. Despite a lack of any evid"
+        },
+        {
+          "ref": "DDE-10",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that she discovered a straw with suspected cocaine residue in her home, falsely insinuating that I was responsible. This baseless clai"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-174",
+          "status": "NON-COMPLIANT",
+          "snippet": ", during a parenting exchange, LDW referred to Emily’s partner as “Daddy,” despite my consistent presence and active role in his life. Emily refused t"
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-116",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily failed to notify me about LDW’s illness (hand, foot, and mouth disease) until just hours before the exchange, leaving me unprepared to manage "
+        },
+        {
+          "ref": "DDE-150",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily failed to notify me about LDW’s illness (hand, foot, and mouth disease) until just hours before the exchange, leaving me unprepared to manage "
+        },
+        {
+          "ref": "DDE-33",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily leaves for vacation early, taking Lincoln and withholding him through Halloween."
+        },
+        {
+          "ref": "DDE-76",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily leaves for vacation early, taking Lincoln and withholding him through Halloween."
+        },
+        {
+          "ref": "DDE-183",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily denied my request to take LDW trick-or-treating, citing her vacation plans."
+        },
+        {
+          "ref": "DDE-2",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily delayed notifying me that LDW had hand, foot, and mouth disease until hours before a scheduled exchange. She refused to provide details about pr"
+        },
+        {
+          "ref": "DDE-6",
+          "status": "INDETERMINATE",
+          "snippet": ", LDW arrived at my care with hand, foot, and mouth disease, and Emily delayed informing me, providing no details about prior medical consultations."
+        },
+        {
+          "ref": "DDE-22",
+          "status": "INDETERMINATE",
+          "snippet": "LDW arrived with a large, unexplained bruise on his leg. Emily dismissed concerns without providing a credible explanation."
+        },
+        {
+          "ref": "DDE-44",
+          "status": "INDETERMINATE",
+          "snippet": "Emily refuses medical follow-up for Lincoln’s illness despite Andrew’s insistence."
+        },
+        {
+          "ref": "DDE-45",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds critical details about Lincoln’s illness, preventing Andrew from adequately preparing for care."
+        },
+        {
+          "ref": "DDE-87",
+          "status": "INDETERMINATE",
+          "snippet": "Emily refuses medical follow-up for Lincoln’s illness despite Andrew’s insistence."
+        },
+        {
+          "ref": "DDE-88",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds critical details about Lincoln’s illness, preventing Andrew from adequately preparing for care."
+        },
+        {
+          "ref": "DDE-117",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW arrived at an exchange with a large unexplained bruise on his leg. When I raised concerns, Emily dismissed them without providing any credible e"
+        },
+        {
+          "ref": "DDE-130",
+          "status": "INDETERMINATE",
+          "snippet": ", LDW arrived with a large, unexplained bruise on his leg. When asked for an explanation, Emily gave vague responses, refusing to acknowledge the need"
+        },
+        {
+          "ref": "DDE-136",
+          "status": "INDETERMINATE",
+          "snippet": ", LDW had a visible bruise and a cut on his leg, yet Emily offered no credible explanation for how the injuries occurred."
+        },
+        {
+          "ref": "DDE-143",
+          "status": "INDETERMINATE",
+          "snippet": "LDW had a large bruise on his leg. Emily dismissed concerns without explanation."
+        },
+        {
+          "ref": "DDE-151",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW arrived at an exchange with a large unexplained bruise on his leg. When I raised concerns, Emily dismissed them without providing any credible e"
+        },
+        {
+          "ref": "DDE-164",
+          "status": "INDETERMINATE",
+          "snippet": ", LDW arrived with a large, unexplained bruise on his leg. When asked for an explanation, Emily gave vague responses, refusing to acknowledge the need"
+        },
+        {
+          "ref": "DDE-170",
+          "status": "INDETERMINATE",
+          "snippet": ", LDW had a visible bruise and a cut on his leg, yet Emily offered no credible explanation for how the injuries occurred."
+        },
+        {
+          "ref": "DDE-197",
+          "status": "INDETERMINATE",
+          "snippet": ", LDW arrived with a large bruise on his leg. Emily dismissed the concern without explanation, leaving LDW visibly uncomfortable and withdrawn."
+        },
+        {
+          "ref": "DDE-205",
+          "status": "INDETERMINATE",
+          "snippet": ": LDW arrived at an exchange with a large, unexplained bruise on his leg. When questioned, Emily dismissed the concern without offering a credible exp"
+        },
+        {
+          "ref": "DDE-179",
+          "status": "INDETERMINATE",
+          "snippet": ", I requested an additional day with LDW to make up for missed time during her vacation. Emily refused, showing no willingness to cooperate."
+        },
+        {
+          "ref": "DDE-42",
+          "status": "INDETERMINATE",
+          "snippet": "Emily denies Andrew’s request to seek medical attention for Lincoln."
+        },
+        {
+          "ref": "DDE-85",
+          "status": "INDETERMINATE",
+          "snippet": "Emily denies Andrew’s request to seek medical attention for Lincoln."
+        },
+        {
+          "ref": "DDE-167",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to allow scheduled video calls, claiming LDW “doesn’t want to talk.” These actions disrupt LDW’s sense of connection and emotional sta"
+        },
+        {
+          "ref": "DDE-175",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to allow scheduled video calls, citing vague excuses such as LDW “being too tired” or “not wanting to talk.”"
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0409",
+      "case_id": "2023-5907-PP",
+      "date": "2025-10-29",
+      "title": "SupremeCourt_Subpoenas_Pigors_2025-10-29_v2 SUPREME COURT SUBPOENAS — DATA & RECORDS Matter: Pigors Original Action for Superintending Control — Data ",
+      "summary": "SupremeCourt_Subpoenas_Pigors_2025-10-29_v2 SUPREME COURT SUBPOENAS — DATA & RECORDS Matter: Pigors Original Action for Superintending Control — Data Acquisition Orders Date: 2025-10-29 Targets and Sc",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-184",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests."
+        },
+        {
+          "ref": "DDE-8",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily refused a weekly video call schedule, citing discomfort without proposing alternatives."
+        },
+        {
+          "ref": "DDE-127",
+          "status": "NON-COMPLIANT",
+          "snippet": ", and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn’t want to talk.\" These refusals create a gap"
+        },
+        {
+          "ref": "DDE-133",
+          "status": "NON-COMPLIANT",
+          "snippet": ", and September 12, 2024, Emily refused to allow scheduled video calls, claiming LDW “doesn’t want to talk.” These actions disrupt LDW’s sense of conn"
+        },
+        {
+          "ref": "DDE-161",
+          "status": "NON-COMPLIANT",
+          "snippet": ", and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn’t want to talk.\" These refusals create a gap"
+        },
+        {
+          "ref": "DDE-187",
+          "status": "NON-COMPLIANT",
+          "snippet": ", I requested a weekly video chat during off-weeks to maintain LDW’s sense of connection and security. Emily refused without offering an alternative."
+        },
+        {
+          "ref": "DDE-199",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily denied a scheduled video call, citing that LDW “didn’t want to talk.” However, LDW later expressed excitement when he saw me in person, contra"
+        },
+        {
+          "ref": "DDE-56",
+          "status": "INDETERMINATE",
+          "snippet": "Andrew reports Lincoln’s rash worsening, but Emily dismisses medical concerns again."
+        },
+        {
+          "ref": "DDE-99",
+          "status": "INDETERMINATE",
+          "snippet": "Andrew reports Lincoln’s rash worsening, but Emily dismisses medical concerns again."
+        },
+        {
+          "ref": "DDE-118",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW returned to me with severe rashes that Emily had failed to address, leaving me to manage his medical care and comfort."
+        },
+        {
+          "ref": "DDE-129",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW returned from Emily’s care with severe rashes on his face and body. Despite my repeated inquiries, Emily dismissed the condition as \"minor\" and "
+        },
+        {
+          "ref": "DDE-152",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW returned to me with severe rashes that Emily had failed to address, leaving me to manage his medical care and comfort."
+        },
+        {
+          "ref": "DDE-163",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW returned from Emily’s care with severe rashes on his face and body. Despite my repeated inquiries, Emily dismissed the condition as \"minor\" and "
+        },
+        {
+          "ref": "DDE-206",
+          "status": "NON-COMPLIANT",
+          "snippet": ": LDW returned from Emily’s care with severe rashes on his body. Despite Andrew’s suggestion for medical attention, Emily dismissed the concern and fa"
+        },
+        {
+          "ref": "DDE-69",
+          "status": "NON-COMPLIANT",
+          "snippet": "- May 2, 2024: Emily withholds Lincoln for 37 days, citing unfounded claims about safety."
+        },
+        {
+          "ref": "DDE-112",
+          "status": "NON-COMPLIANT",
+          "snippet": "- May 2, 2024: Emily withholds Lincoln for 37 days, citing unfounded claims about safety."
+        },
+        {
+          "ref": "DDE-3",
+          "status": "NON-COMPLIANT",
+          "snippet": "Without consulting me, Emily made unilateral decisions regarding LDW’s vaccinations, only informing me afterward."
+        },
+        {
+          "ref": "DDE-64",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily vaccinates Lincoln without consulting Andrew."
+        },
+        {
+          "ref": "DDE-107",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily vaccinates Lincoln without consulting Andrew."
+        },
+        {
+          "ref": "DDE-131",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-165",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily vaccinated LDW without informing or consulting me, despite the joint custody arrangement. This not only undermines co-parenting but also demon"
+        },
+        {
+          "ref": "DDE-207",
+          "status": "INDETERMINATE",
+          "snippet": ": Andrew noticed a rash on LDW and suggested testing for a peanut allergy. Emily dismissed this suggestion, attributing the rash to vaccinations witho"
+        },
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-19",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for 37 consecutive days without justification, depriving me of meaningful interaction and disrupting our bond."
+        },
+        {
+          "ref": "DDE-68",
+          "status": "NON-COMPLIANT",
+          "snippet": "Court orders Emily to return Lincoln to Andrew after a month-long withholding."
+        },
+        {
+          "ref": "DDE-111",
+          "status": "NON-COMPLIANT",
+          "snippet": "Court orders Emily to return Lincoln to Andrew after a month-long withholding."
+        },
+        {
+          "ref": "DDE-137",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW for 37 consecutive days, disrupting our bond and creating emotional distress for LDW."
+        },
+        {
+          "ref": "DDE-171",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW for 37 consecutive days, disrupting our bond and creating emotional distress for LDW."
+        },
+        {
+          "ref": "DDE-177",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily withheld LDW for 37 consecutive days, ignoring the court-ordered parenting schedule."
+        },
+        {
+          "ref": "DDE-13",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily provided only partial medical records despite a court order requiring full disclosure. Her failure to cooperate hindered my ability to make info"
+        },
+        {
+          "ref": "DDE-61",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds full pediatric records after Andrew requests them per the court order."
+        },
+        {
+          "ref": "DDE-104",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds full pediatric records after Andrew requests them per the court order."
+        },
+        {
+          "ref": "DDE-60",
+          "status": "INDETERMINATE",
+          "snippet": "Emily responds minimally to Andrew's inquiries about Lincoln's health updates."
+        },
+        {
+          "ref": "DDE-103",
+          "status": "INDETERMINATE",
+          "snippet": "Emily responds minimally to Andrew's inquiries about Lincoln's health updates."
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-20",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories."
+        },
+        {
+          "ref": "DDE-178",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday."
+        },
+        {
+          "ref": "DDE-196",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily withheld LDW without providing updates, causing unnecessary confusion and anxiety for him. Upon his return, LDW appeared disoriented and took "
+        },
+        {
+          "ref": "DDE-29",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s withholding of Lincoln ends after 25 consecutive days."
+        },
+        {
+          "ref": "DDE-72",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s withholding of Lincoln ends after 25 consecutive days."
+        },
+        {
+          "ref": "DDE-208",
+          "status": "NON-COMPLIANT",
+          "snippet": ": Emily vaccinated LDW without informing Andrew beforehand or consulting him, violating his parental rights and disregarding co-parenting responsibili"
+        },
+        {
+          "ref": "DDE-215",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily failed to inform Andrew about LDW’s vaccinations in advance, excluding him from important medical decisions."
+        },
+        {
+          "ref": "DDE-31",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily continues withholding Lincoln during his birthday week."
+        },
+        {
+          "ref": "DDE-74",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily continues withholding Lincoln during his birthday week."
+        },
+        {
+          "ref": "DDE-182",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s birthday, Emily refused to allow me any time with him, depriving us of the chance to celebrate together."
+        },
+        {
+          "ref": "DDE-195",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW’s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW’s emo"
+        },
+        {
+          "ref": "DDE-1",
+          "status": "INDETERMINATE",
+          "snippet": "Emily alleged that she discovered a straw with suspected cocaine residue in her home and insinuated that I was responsible. Despite a lack of any evid"
+        },
+        {
+          "ref": "DDE-10",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that she discovered a straw with suspected cocaine residue in her home, falsely insinuating that I was responsible. This baseless clai"
+        },
+        {
+          "ref": "DDE-185",
+          "status": "INDETERMINATE",
+          "snippet": ", Emily alleged that LDW returned from my care with bruises, falsely suggesting neglect or harm without any supporting evidence."
+        },
+        {
+          "ref": "DDE-15",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily’s father aggressively removed LDW from my arms during a custody exchange. This behavior, witnessed by LDW, created a hostile environment, leadin"
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-174",
+          "status": "NON-COMPLIANT",
+          "snippet": ", during a parenting exchange, LDW referred to Emily’s partner as “Daddy,” despite my consistent presence and active role in his life. Emily refused t"
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-116",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily failed to notify me about LDW’s illness (hand, foot, and mouth disease) until just hours before the exchange, leaving me unprepared to manage "
+        },
+        {
+          "ref": "DDE-150",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily failed to notify me about LDW’s illness (hand, foot, and mouth disease) until just hours before the exchange, leaving me unprepared to manage "
+        },
+        {
+          "ref": "DDE-33",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily leaves for vacation early, taking Lincoln and withholding him through Halloween."
+        },
+        {
+          "ref": "DDE-76",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily leaves for vacation early, taking Lincoln and withholding him through Halloween."
+        },
+        {
+          "ref": "DDE-183",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily denied my request to take LDW trick-or-treating, citing her vacation plans."
+        },
+        {
+          "ref": "DDE-2",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily delayed notifying me that LDW had hand, foot, and mouth disease until hours before a scheduled exchange. She refused to provide details about pr"
+        },
+        {
+          "ref": "DDE-6",
+          "status": "INDETERMINATE",
+          "snippet": ", LDW arrived at my care with hand, foot, and mouth disease, and Emily delayed informing me, providing no details about prior medical consultations."
+        },
+        {
+          "ref": "DDE-22",
+          "status": "INDETERMINATE",
+          "snippet": "LDW arrived with a large, unexplained bruise on his leg. Emily dismissed concerns without providing a credible explanation."
+        },
+        {
+          "ref": "DDE-44",
+          "status": "INDETERMINATE",
+          "snippet": "Emily refuses medical follow-up for Lincoln’s illness despite Andrew’s insistence."
+        },
+        {
+          "ref": "DDE-45",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds critical details about Lincoln’s illness, preventing Andrew from adequately preparing for care."
+        },
+        {
+          "ref": "DDE-87",
+          "status": "INDETERMINATE",
+          "snippet": "Emily refuses medical follow-up for Lincoln’s illness despite Andrew’s insistence."
+        },
+        {
+          "ref": "DDE-88",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds critical details about Lincoln’s illness, preventing Andrew from adequately preparing for care."
+        },
+        {
+          "ref": "DDE-117",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW arrived at an exchange with a large unexplained bruise on his leg. When I raised concerns, Emily dismissed them without providing any credible e"
+        },
+        {
+          "ref": "DDE-130",
+          "status": "INDETERMINATE",
+          "snippet": ", LDW arrived with a large, unexplained bruise on his leg. When asked for an explanation, Emily gave vague responses, refusing to acknowledge the need"
+        },
+        {
+          "ref": "DDE-136",
+          "status": "INDETERMINATE",
+          "snippet": ", LDW had a visible bruise and a cut on his leg, yet Emily offered no credible explanation for how the injuries occurred."
+        },
+        {
+          "ref": "DDE-143",
+          "status": "INDETERMINATE",
+          "snippet": "LDW had a large bruise on his leg. Emily dismissed concerns without explanation."
+        },
+        {
+          "ref": "DDE-151",
+          "status": "NON-COMPLIANT",
+          "snippet": ", LDW arrived at an exchange with a large unexplained bruise on his leg. When I raised concerns, Emily dismissed them without providing any credible e"
+        },
+        {
+          "ref": "DDE-164",
+          "status": "INDETERMINATE",
+          "snippet": ", LDW arrived with a large, unexplained bruise on his leg. When asked for an explanation, Emily gave vague responses, refusing to acknowledge the need"
+        },
+        {
+          "ref": "DDE-170",
+          "status": "INDETERMINATE",
+          "snippet": ", LDW had a visible bruise and a cut on his leg, yet Emily offered no credible explanation for how the injuries occurred."
+        },
+        {
+          "ref": "DDE-197",
+          "status": "INDETERMINATE",
+          "snippet": ", LDW arrived with a large bruise on his leg. Emily dismissed the concern without explanation, leaving LDW visibly uncomfortable and withdrawn."
+        },
+        {
+          "ref": "DDE-205",
+          "status": "INDETERMINATE",
+          "snippet": ": LDW arrived at an exchange with a large, unexplained bruise on his leg. When questioned, Emily dismissed the concern without offering a credible exp"
+        },
+        {
+          "ref": "DDE-179",
+          "status": "INDETERMINATE",
+          "snippet": ", I requested an additional day with LDW to make up for missed time during her vacation. Emily refused, showing no willingness to cooperate."
+        },
+        {
+          "ref": "DDE-42",
+          "status": "INDETERMINATE",
+          "snippet": "Emily denies Andrew’s request to seek medical attention for Lincoln."
+        },
+        {
+          "ref": "DDE-85",
+          "status": "INDETERMINATE",
+          "snippet": "Emily denies Andrew’s request to seek medical attention for Lincoln."
+        },
+        {
+          "ref": "DDE-167",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to allow scheduled video calls, claiming LDW “doesn’t want to talk.” These actions disrupt LDW’s sense of connection and emotional sta"
+        },
+        {
+          "ref": "DDE-175",
+          "status": "NON-COMPLIANT",
+          "snippet": ", Emily refused to allow scheduled video calls, citing vague excuses such as LDW “being too tired” or “not wanting to talk.”"
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0411",
+      "case_id": "2024-001507-DC",
+      "date": "2025-10-29",
+      "title": "Belated Evidentiary Hearing",
+      "summary": "Evidentiary hearing finally held on October 29, 2025 regarding Father objection to ex parte order suspending parenting time",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0413",
+      "case_id": "2024-001507-DC",
+      "date": "2025-11-26",
+      "title": "HEARING 11/26/2025 EMILY A. WATSON, Defendant Defendant requested, and the Court signed an ex parte order suspending the Plaintiff's parent",
+      "summary": "HEARING 11/26/2025 EMILY A. WATSON, Defendant Defendant requested, and the Court signed an ex parte order suspending the Plaintiff's parenting time. An evidentiary hearing was held on Septembe",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0415",
+      "case_id": "2024-001507-DC",
+      "date": "2025-11-26",
+      "title": "EX PARTE ORDER CONTINUED HEARING 11/26/2025 EMILY A. WATSON, Defendant Defendant requested, and the Court signed an ex parte order suspendin",
+      "summary": "EX PARTE ORDER CONTINUED HEARING 11/26/2025 EMILY A. WATSON, Defendant Defendant requested, and the Court signed an ex parte order suspending the Plaintiffs parenting time. An evidentiary hearing",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0419",
+      "case_id": "2024-001507-DC",
+      "date": "2025-11-26",
+      "title": "Continued Hearing on Plaintiff Objection to Ex Parte Order",
+      "summary": "Hearing continued from 10/29. Order regarding Plaintiff objection to ex parte order. Parenting time remains suspended.",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NON-COMPLIANT",
+      "andrew_evidence": [],
+      "emily_evidence": [
+        {
+          "ref": "DDE-4",
+          "status": "INDETERMINATE",
+          "snippet": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Sprin"
+        },
+        {
+          "ref": "DDE-5",
+          "status": "INDETERMINATE",
+          "snippet": "Emily again withheld LDW for 23 days, including Halloween and LDW’s birthday, despite my court-ordered parenting time."
+        },
+        {
+          "ref": "DDE-37",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-80",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew’s parenting time."
+        },
+        {
+          "ref": "DDE-34",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        },
+        {
+          "ref": "DDE-77",
+          "status": "NON-COMPLIANT",
+          "snippet": "Emily withholds Lincoln during Andrew’s scheduled parenting time."
+        }
+      ]
+    },
+    {
+      "order_id": "DE-0422",
+      "case_id": "2024-001507-DC",
+      "date": "2025-12-12",
+      "title": "Judge:  JENNY L-  MCNEILL (231 ) 724-6251 Date:  FRDAY DECEMBER 12,  2025 TO: ANDREW JAMES  PIGORS 1977  WHITEHALL RD LOT  17 NORTH MUSK",
+      "summary": "Judge:  JENNY L-  MCNEILL (231 ) 724-6251 Date:  FRDAY DECEMBER 12,  2025 TO: ANDREW JAMES  PIGORS 1977  WHITEHALL RD LOT  17 NORTH MUSKEGON  MI  49445 APlaNnD'RffEIPWe\":JoAMnerES PIGORS V EDeMfelnLda",
+      "andrew_compliance": "NO EVIDENCE OF VIOLATION",
+      "emily_compliance": "NO EVIDENCE OF VIOLATION",
+      "andrew_evidence": [],
+      "emily_evidence": []
+    }
+  ]
+}

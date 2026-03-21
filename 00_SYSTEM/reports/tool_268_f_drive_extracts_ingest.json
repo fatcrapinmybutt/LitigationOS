@@ -1,0 +1,83 @@
+{
+  "tool": "#268 F Drive Extracts Ingestor",
+  "generated": "2026-03-19T10:21:39.727445",
+  "sections": {
+    "extracts": {
+      "cross_exam_questions": {
+        "files_found": 1,
+        "ingested": 1
+      },
+      "custody_docket": {
+        "files_found": 1,
+        "ingested": 1
+      },
+      "custody_judgment_OCR": {
+        "files_found": 1,
+        "ingested": 1
+      },
+      "emily_exparte_motion": {
+        "files_found": 5,
+        "ingested": 5
+      },
+      "exparte_objection_order": {
+        "files_found": 0,
+        "ingested": 0
+      },
+      "judge_response": {
+        "files_found": 2,
+        "ingested": 2
+      }
+    },
+    "root_files": {
+      "CLAIMS.json": {
+        "rows": 4
+      },
+      "REFUTATION_MATRIX.csv": {
+        "table": "f_drive_refutation_matrix",
+        "rows": 129,
+        "error": null
+      },
+      "EXHIBIT_MATRIX_FULL.csv": {
+        "table": "f_drive_exhibit_matrix",
+        "rows": 53,
+        "error": null
+      },
+      "deadlines.csv": {
+        "table": "f_drive_deadlines",
+        "rows": 28,
+        "error": null
+      },
+      "circuit_court_docket.txt": {
+        "size": 11845,
+        "case_number": "2024-001507-DC"
+      },
+      "KNOWLEDGE_ALL.md": {
+        "size": 152342
+      }
+    },
+    "permafix": {
+      "PERMAFIX9R13_20260214_203353_QUOTE_DB.csv": {
+        "table": "permafix_quote_db",
+        "rows": 320,
+        "error": null
+      },
+      "PERMAFIX9R13_20260214_203353_STATEMENT_CONTRADICTION_GRID.csv": {
+        "table": "permafix_contradiction_grid",
+        "rows": 320,
+        "error": null
+      },
+      "PERMAFIX9R13_20260214_203353_DOC_RECORDS.csv": {
+        "table": "permafix_doc_records",
+        "rows": 272,
+        "error": null
+      },
+      "PERMAFIX9R13_20260214_203353_OPERATING_ORDERS_PIN.csv": {
+        "table": "permafix_operating_orders",
+        "rows": 25,
+        "error": null
+      }
+    }
+  },
+  "total_rows_added": 1163,
+  "errors": []
+}

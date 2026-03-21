@@ -1,0 +1,232 @@
+{
+  "tool": "#254 Motion Template Library",
+  "generated": "2026-03-19T09:58:40.834795",
+  "case": "Pigors v. Watson",
+  "templates": {
+    "F1": {
+      "filing_id": "F1",
+      "title": "Emergency Motion to Restore Parenting Time",
+      "court": "14TH JUDICIAL CIRCUIT COURT \u2014 FAMILY DIVISION",
+      "case_no": "2024-001507-DC",
+      "type": "EMERGENCY_MOTION",
+      "authority": "MCR 3.207; MCL 722.27a",
+      "db_sourced": {
+        "docket_events": 20,
+        "authority_chains": 4,
+        "claims": 20,
+        "evidence_quotes": 8
+      },
+      "readiness": {
+        "total_score": 94,
+        "status": "EVIDENCE_READY",
+        "authority_score": 25,
+        "evidence_score": 25
+      },
+      "template_length_chars": 8828
+    },
+    "F2": {
+      "filing_id": "F2",
+      "title": "Motion for Fraud Upon the Court / Sanctions",
+      "court": "14TH JUDICIAL CIRCUIT COURT \u2014 FAMILY DIVISION",
+      "case_no": "2024-001507-DC",
+      "type": "MOTION",
+      "authority": "MCR 2.114(D); MCR 2.625",
+      "db_sourced": {
+        "docket_events": 20,
+        "authority_chains": 0,
+        "claims": 13,
+        "evidence_quotes": 8
+      },
+      "readiness": {
+        "total_score": "N/A",
+        "status": "N/A",
+        "authority_score": "N/A",
+        "evidence_score": "N/A"
+      },
+      "template_length_chars": 4940
+    },
+    "F3": {
+      "filing_id": "F3",
+      "title": "Motion for Disqualification of Judge",
+      "court": "14TH JUDICIAL CIRCUIT COURT \u2014 FAMILY DIVISION",
+      "case_no": "2024-001507-DC",
+      "type": "MOTION",
+      "authority": "MCR 2.003(C)",
+      "db_sourced": {
+        "docket_events": 20,
+        "authority_chains": 4,
+        "claims": 1,
+        "evidence_quotes": 8
+      },
+      "readiness": {
+        "total_score": 97,
+        "status": "EVIDENCE_READY",
+        "authority_score": 25,
+        "evidence_score": 22
+      },
+      "template_length_chars": 5381
+    },
+    "F4": {
+      "filing_id": "F4",
+      "title": "42 USC \u00a71983 Civil Rights Complaint",
+      "court": "UNITED STATES DISTRICT COURT",
+      "case_no": "[TO BE ASSIGNED]",
+      "type": "COMPLAINT",
+      "authority": "42 USC \u00a71983; Monell v. Dept of Social Svcs",
+      "db_sourced": {
+        "docket_events": 0,
+        "authority_chains": 0,
+        "claims": 7,
+        "evidence_quotes": 8
+      },
+      "readiness": {
+        "total_score": "N/A",
+        "status": "N/A",
+        "authority_score": "N/A",
+        "evidence_score": "N/A"
+      },
+      "template_length_chars": 4278
+    },
+    "F5": {
+      "filing_id": "F5",
+      "title": "MSC Complaint for Superintending Control",
+      "court": "MICHIGAN SUPREME COURT",
+      "case_no": "[TO BE ASSIGNED]",
+      "type": "COMPLAINT",
+      "authority": "MCR 7.306; MCR 3.302",
+      "db_sourced": {
+        "docket_events": 0,
+        "authority_chains": 0,
+        "claims": 13,
+        "evidence_quotes": 8
+      },
+      "readiness": {
+        "total_score": 82,
+        "status": "READY",
+        "authority_score": 25,
+        "evidence_score": 22
+      },
+      "template_length_chars": 5565
+    },
+    "F6": {
+      "filing_id": "F6",
+      "title": "JTC Judicial Misconduct Complaint",
+      "court": "MICHIGAN JUDICIAL TENURE COMMISSION",
+      "case_no": "[JTC FILE NO.]",
+      "type": "COMPLAINT",
+      "authority": "MCR 9.205; Judicial Canons",
+      "db_sourced": {
+        "docket_events": 0,
+        "authority_chains": 0,
+        "claims": 16,
+        "evidence_quotes": 8
+      },
+      "readiness": {
+        "total_score": "N/A",
+        "status": "N/A",
+        "authority_score": "N/A",
+        "evidence_score": "N/A"
+      },
+      "template_length_chars": 5297
+    },
+    "F7": {
+      "filing_id": "F7",
+      "title": "Motion to Modify Custody",
+      "court": "14TH JUDICIAL CIRCUIT COURT \u2014 FAMILY DIVISION",
+      "case_no": "2024-001507-DC",
+      "type": "MOTION",
+      "authority": "MCL 722.27; MCL 722.23",
+      "db_sourced": {
+        "docket_events": 20,
+        "authority_chains": 0,
+        "claims": 20,
+        "evidence_quotes": 8
+      },
+      "readiness": {
+        "total_score": "N/A",
+        "status": "N/A",
+        "authority_score": "N/A",
+        "evidence_score": "N/A"
+      },
+      "template_length_chars": 6616
+    },
+    "F8": {
+      "filing_id": "F8",
+      "title": "COA Application for Leave to Appeal",
+      "court": "MICHIGAN COURT OF APPEALS",
+      "case_no": "COA 366810",
+      "type": "APPLICATION",
+      "authority": "MCR 7.205",
+      "db_sourced": {
+        "docket_events": 0,
+        "authority_chains": 0,
+        "claims": 5,
+        "evidence_quotes": 8
+      },
+      "readiness": {
+        "total_score": 40,
+        "status": "NEEDS_WORK",
+        "authority_score": 0,
+        "evidence_score": 0
+      },
+      "template_length_chars": 3071
+    },
+    "F9": {
+      "filing_id": "F9",
+      "title": "COA Appeal Brief",
+      "court": "MICHIGAN COURT OF APPEALS",
+      "case_no": "COA 366810",
+      "type": "BRIEF",
+      "authority": "MCR 7.212",
+      "db_sourced": {
+        "docket_events": 0,
+        "authority_chains": 0,
+        "claims": 10,
+        "evidence_quotes": 8
+      },
+      "readiness": {
+        "total_score": "N/A",
+        "status": "N/A",
+        "authority_score": "N/A",
+        "evidence_score": "N/A"
+      },
+      "template_length_chars": 4613
+    },
+    "F10": {
+      "filing_id": "F10",
+      "title": "AGC Attorney Grievance Commission Complaint",
+      "court": "ATTORNEY GRIEVANCE COMMISSION OF MICHIGAN",
+      "case_no": "[AGC FILE NO.]",
+      "type": "COMPLAINT",
+      "authority": "MRPC 3.3; MRPC 3.4; MRPC 8.4",
+      "db_sourced": {
+        "docket_events": 0,
+        "authority_chains": 0,
+        "claims": 15,
+        "evidence_quotes": 8
+      },
+      "readiness": {
+        "total_score": "N/A",
+        "status": "N/A",
+        "authority_score": "N/A",
+        "evidence_score": "N/A"
+      },
+      "template_length_chars": 5314
+    }
+  },
+  "statistics": {
+    "total_filings": 10,
+    "total_authorities_sourced": 8,
+    "total_claims_sourced": 120,
+    "total_evidence_sourced": 80,
+    "total_docket_events": 80,
+    "query_source": "litigation_context.db",
+    "tables_queried": [
+      "docket_events",
+      "authority_chains",
+      "claims",
+      "evidence_quotes",
+      "filing_readiness"
+    ]
+  }
+}

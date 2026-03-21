@@ -1,0 +1,232 @@
+{
+  "tool": "#259 IFP Financial Affidavit Helper",
+  "generated": "2026-03-19T09:50:35.148604",
+  "filing_fees": {
+    "14th_circuit_custody": {
+      "case": "2024-001507-DC",
+      "court": "14th Circuit Court",
+      "filings": [
+        {
+          "type": "Motion to Disqualify (F2)",
+          "fee": 20,
+          "form": "MC 02"
+        },
+        {
+          "type": "Emergency Motion (F5)",
+          "fee": 20,
+          "form": "MC 02"
+        },
+        {
+          "type": "Motion Relief from Judgment (F1)",
+          "fee": 20,
+          "form": "MC 02"
+        },
+        {
+          "type": "Motion for Sanctions (F10)",
+          "fee": 20,
+          "form": "MC 02"
+        },
+        {
+          "type": "PPO Termination (F4)",
+          "fee": 0,
+          "form": "CC 381"
+        }
+      ],
+      "subtotal": 80
+    },
+    "coa_appeal": {
+      "case": "COA 366810",
+      "court": "Court of Appeals",
+      "filings": [
+        {
+          "type": "Appellant Brief (F9)",
+          "fee": 0,
+          "form": "Already filed claim of appeal"
+        },
+        {
+          "type": "Emergency Motion for Stay",
+          "fee": 0,
+          "form": "Motion in pending appeal"
+        }
+      ],
+      "subtotal": 0
+    },
+    "federal_1983": {
+      "case": "New filing",
+      "court": "USDC Western District MI",
+      "filings": [
+        {
+          "type": "42 USC 1983 Complaint (F3)",
+          "fee": 405,
+          "form": "Pro Se Complaint Form"
+        }
+      ],
+      "subtotal": 405
+    },
+    "msc_original": {
+      "case": "New filing",
+      "court": "Michigan Supreme Court",
+      "filings": [
+        {
+          "type": "Complaint for Superintending Control (F7)",
+          "fee": 375,
+          "form": "MSC complaint"
+        }
+      ],
+      "subtotal": 375
+    },
+    "jtc_complaint": {
+      "case": "New filing",
+      "court": "Judicial Tenure Commission",
+      "filings": [
+        {
+          "type": "JTC Complaint (F6)",
+          "fee": 0,
+          "form": "JTC complaint form"
+        }
+      ],
+      "subtotal": 0
+    },
+    "housing": {
+      "case": "2025-002760-CZ",
+      "court": "14th Circuit Court",
+      "filings": [
+        {
+          "type": "Housing Complaint (F8)",
+          "fee": 0,
+          "form": "Already filed"
+        }
+      ],
+      "subtotal": 0
+    }
+  },
+  "total_fees": 860,
+  "ifp_requirements": {
+    "state_court": {
+      "authority": "MCR 2.002",
+      "form": "MC 20 (Affidavit and Order \u2014 Suspension of Fees/Costs)",
+      "requirements": [
+        "Affidavit showing inability to pay fees",
+        "Income below 125% of federal poverty guidelines",
+        "List of monthly expenses exceeding income",
+        "No substantial assets available",
+        "Good faith basis for claims"
+      ],
+      "filing_covers": [
+        "All 14th Circuit motions",
+        "Service costs",
+        "Transcript fees for appeal"
+      ],
+      "poverty_guidelines_2026": {
+        "household_1": 16090,
+        "household_2": 21750,
+        "125_percent_1": 20113,
+        "125_percent_2": 27188
+      }
+    },
+    "federal_court": {
+      "authority": "28 USC 1915(a)",
+      "form": "Application to Proceed In Forma Pauperis (AO 240)",
+      "requirements": [
+        "Affidavit of poverty including income, assets, expenses",
+        "Statement of claims (must not be frivolous)",
+        "Previous 12 months income",
+        "Cash on hand and in bank accounts",
+        "Real and personal property owned",
+        "Debts and obligations"
+      ],
+      "fee_waived": 405,
+      "note": "Federal IFP also waives service costs \u2014 US Marshals serve for free under 28 USC 1915(d)"
+    },
+    "msc": {
+      "authority": "MCR 7.302(B)(4)",
+      "form": "Affidavit of Indigency",
+      "requirements": [
+        "Same standard as MCR 2.002",
+        "Filed with application for leave"
+      ],
+      "fee_waived": 375
+    }
+  },
+  "service_costs": {
+    "personal_service": {
+      "per_party": 75,
+      "parties_to_serve": [
+        "Emily A. Watson",
+        "Ronald T. Berry (if named)",
+        "Hon. Jenny L. McNeill (JTC complaint \u2014 no service needed)",
+        "Pamela Rusco (subpoena)"
+      ],
+      "estimated_total": 225
+    },
+    "certified_mail": {
+      "per_mailing": 8,
+      "estimated_mailings": 20,
+      "estimated_total": 160
+    },
+    "copies": {
+      "per_page": 0.25,
+      "estimated_pages": 500,
+      "estimated_total": 125
+    },
+    "mileage": {
+      "per_mile": 0.67,
+      "round_trip_court": 30,
+      "estimated_trips": 10,
+      "estimated_total": 201
+    },
+    "total_service_costs": 711
+  },
+  "affidavit_template": {
+    "header": "AFFIDAVIT IN SUPPORT OF APPLICATION TO PROCEED IN FORMA PAUPERIS",
+    "case": "Pigors v. Watson, Case No. 2024-001507-DC",
+    "court": "14th Circuit Court, Muskegon County, Michigan",
+    "sections": {
+      "personal_info": {
+        "name": "Andrew James Pigors",
+        "address": "1977 Whitehall Road, Lot 17, North Muskegon, MI 49445",
+        "phone": "(231) 903-5690",
+        "email": "andrewjpigors@gmail.com",
+        "dependents": "L.D.W. (minor child)"
+      },
+      "income": {
+        "instruction": "[ANDREW_REQUIRED: Enter current monthly income from all sources]",
+        "fields": [
+          "Employment income: $____/month",
+          "Unemployment/disability: $____/month",
+          "Child support received: $____/month",
+          "Other income: $____/month",
+          "TOTAL MONTHLY INCOME: $____/month"
+        ]
+      },
+      "expenses": {
+        "instruction": "[ANDREW_REQUIRED: Enter monthly expenses]",
+        "fields": [
+          "Rent/mortgage: $____/month",
+          "Utilities: $____/month",
+          "Food: $____/month",
+          "Transportation: $____/month",
+          "Medical: $____/month",
+          "Insurance: $____/month",
+          "Child-related expenses: $____/month",
+          "Other: $____/month",
+          "TOTAL MONTHLY EXPENSES: $____/month"
+        ]
+      },
+      "assets": {
+        "instruction": "[ANDREW_REQUIRED: List all assets]",
+        "fields": [
+          "Cash on hand: $____",
+          "Bank accounts: $____",
+          "Vehicles: ____",
+          "Real property: ____",
+          "Other assets: ____"
+        ]
+      },
+      "verification": "I declare under the penalties of perjury that the foregoing is true and correct. MCL 600.2922a."
+    },
+    "total_fees_requested_waived": 1571
+  },
+  "total_costs_to_waive": 1571,
+  "recommendation": "File MC 20 (state) + AO 240 (federal) to waive all fees"
+}

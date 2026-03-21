@@ -1,0 +1,16 @@
+{
+  "tool": "#260 H Drive Strategic Document Ingestor",
+  "generated": "2026-03-19T09:52:02.731868",
+  "tables_created": 4,
+  "row_counts": {
+    "h_drive_documents": 2,
+    "h_drive_litigation_lanes": 6,
+    "h_drive_tort_claims": 13,
+    "h_drive_authorities": 28
+  },
+  "total_ingested": 47,
+  "documents_ingested": 2,
+  "lanes": 6,
+  "tort_claims": 13,
+  "authorities": 28
+}

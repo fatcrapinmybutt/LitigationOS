@@ -1,0 +1,69 @@
+{
+  "tool": "#269 I Drive PDF Ingestor",
+  "generated": "2026-03-19T10:53:15.462676",
+  "pymupdf_available": true,
+  "pdfs": [
+    {
+      "file": "2024-001507-DC - ORDER RE PARENTING TIME(1).pdf",
+      "path": "I:\\01_PDF\\2024-001507-DC - ORDER RE PARENTING TIME(1).pdf",
+      "size": 140685,
+      "pages": 0,
+      "type": "order",
+      "lane": "A",
+      "value": "high",
+      "case_number": "2024-001507-DC",
+      "text_preview_len": 0
+    },
+    {
+      "file": "JTC_Exhibits_Binder_v3_2025-10-29_18-23-45 (1).pdf",
+      "path": "I:\\01_PDF\\JTC_Exhibits_Binder_v3_2025-10-29_18-23-45 (1).pdf",
+      "size": 30696,
+      "pages": 17,
+      "type": "exhibit",
+      "lane": "E",
+      "value": "high",
+      "case_number": "",
+      "text_preview_len": 2000
+    },
+    {
+      "file": "federal-rules-of-appellate-procedure-dec-1-2024_0 (3).pdf",
+      "path": "I:\\01_PDF\\federal-rules-of-appellate-procedure-dec-1-2024_0 (3).pdf",
+      "size": 770780,
+      "pages": 0,
+      "type": "rules",
+      "lane": "F",
+      "value": "reference",
+      "case_number": "",
+      "text_preview_len": 0
+    },
+    {
+      "file": "paper_1col.pdf",
+      "path": "I:\\01_PDF\\paper_1col.pdf",
+      "size": 78504,
+      "pages": 5,
+      "type": "document",
+      "lane": "",
+      "value": "low",
+      "case_number": "",
+      "text_preview_len": 2000
+    }
+  ],
+  "summary": {
+    "pdfs_discovered": 4,
+    "ingested_this_run": 4,
+    "errors": 0,
+    "total_in_db": 4,
+    "pymupdf": true,
+    "by_type": {
+      "order": 1,
+      "exhibit": 1,
+      "rules": 1,
+      "document": 1
+    },
+    "by_lane": {
+      "A": 1,
+      "E": 1,
+      "F": 1
+    }
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "tool": "#263 Multi-Drive Evidence Catalog",
+  "generated": "2026-03-19T10:13:49.461791",
+  "total_entries": 87,
+  "total_in_db": 87,
+  "by_drive": {
+    "C": 25,
+    "F": 62
+  },
+  "by_category": {
+    "photo_video": 5,
+    "unknown": 36,
+    "report": 3,
+    "evidence": 22,
+    "authority": 3,
+    "filing": 17,
+    "transcript": 1
+  },
+  "by_value": {
+    "MEDIUM": 23,
+    "HIGH": 50,
+    "LOW": 14
+  },
+  "by_lane": {
+    "A": 67,
+    "B": 2,
+    "E": 8,
+    "F": 4,
+    "D": 4,
+    "D,F": 1,
+    "A,E": 1
+  },
+  "high_value_count": 50,
+  "high_value_items": [
+    {
+      "path": "C:\\Users\\andre\\Videos\\EVIDENCE_MINING_CYCLE6.md",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "C:\\Users\\andre\\Videos\\EVIDENCE_MINING_CYCLE1.md",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Hearing_Brief_Ex_Parte_PT_Pigors_v_Watson_v6.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Hearing_Brief_Ex_Parte_PT_Pigors_v_Watson_v5.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Hearing_Brief_Ex_Parte_PT_Pigors_v_Watson_v4.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Hearing_Brief_Ex_Parte_PT_Pigors_v_Watson_v3.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Affidavit_Exhibit_A_CUSTODY_WEAVED_MEEK4.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Affidavit_Exhibit_A_PPO_WEAVED_MEEK4.docx",
+      "category": "evidence",
+      "lane": "D"
+    },
+    {
+      "path": "F:\\Exhibit_A.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Exhibit_B.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Exhibit_C.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Exhibit_D.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Exhibit_E.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Exhibit_F.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Exhibit_G.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Exhibit_H.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Exhibit_I.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Exhibit_J.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Exhibit_K.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Exhibit_L.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Exhibit_M.docx",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\EXHIBIT_MATRIX_FULL.csv",
+      "category": "evidence",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Pigors_ExParte_PT_Hearing_Brief_vFinal.docx",
+      "category": "filing",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Supervisory_Order_MCR_7.206_Pigors_v_Watson.docx",
+      "category": "filing",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Verified_Affidavit_Linked_FINAL.docx",
+      "category": "filing",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\MOTION_CUSTODY_EmergencyPT_SHORT.docx",
+      "category": "filing",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\MOTION_PPO_TerminateVacateSanctions_SHORT.docx",
+      "category": "filing",
+      "lane": "D"
+    },
+    {
+      "path": "F:\\Motion_Disqualify_and_Refer_Chief_Judge_v1.1.docx",
+      "category": "filing",
+      "lane": "E"
+    },
+    {
+      "path": "F:\\Motion_to_Rescind_Suspension_Pigors_v_Watson.docx",
+      "category": "filing",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Proposed_Order_ParentingTime_Reinstatement.docx",
+      "category": "filing",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Affidavit_Pigors_Disqualification_v1.1.docx",
+      "category": "filing",
+      "lane": "E"
+    },
+    {
+      "path": "F:\\Canon_Violation_Brief_Pigors_v_Watson.docx",
+      "category": "filing",
+      "lane": "E"
+    },
+    {
+      "path": "F:\\2025-10-29_COA_Brief_in_Support_v2.docx",
+      "category": "filing",
+      "lane": "D,F"
+    },
+    {
+      "path": "F:\\2025-10-29_COA_Complaint_Superintending_Control_v2.docx",
+      "category": "filing",
+      "lane": "F"
+    },
+    {
+      "path": "F:\\2025-10-29_JTC_Verified_Complaint_Captioned_Signed_Notarized_v6.docx",
+      "category": "filing",
+      "lane": "E"
+    },
+    {
+      "path": "F:\\CC379_Motion_Modify_Terminate_PPO_2023-5907-PP_2025-09-26.docx",
+      "category": "filing",
+      "lane": "D"
+    },
+    {
+      "path": "F:\\CC385_Order_Modify_Terminate_PPO_2023-5907-PP_2025-09-26.docx",
+      "category": "filing",
+      "lane": "D"
+    },
+    {
+      "path": "F:\\Verified_Complaint_ShadyOaks.docx",
+      "category": "filing",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\MC-230_Emergency_TRO_Motion.docx",
+      "category": "filing",
+      "lane": "A"
+    },
+    {
+      "path": "F:\\Pigors_Hearing_Record_Building_Playbook_v1.docx",
+      "category": "transcript",
+      "lane": "A"
+    },
+    {
+      "path": "C:\\Users\\andre\\Videos\\CHATGPT_CHRONOLOGICAL_ENCYCLOPEDIA.md",
+      "category": "unknown",
+      "lane": "A"
+    },
+    {
+      "path": "C:\\Users\\andre\\Videos\\SHADY_OAKS_ENCYCLOPEDIA.md",
+      "category": "unknown",
+      "lane": "B"
+    },
+    {
+      "path": "C:\\Users\\andre\\Videos\\MASTER_DATED_FACTS_INDEX.md",
+      "category": "unknown",
+      "lane": "A"
+    },
+    {
+      "path": "C:\\Users\\andre\\Videos\\MASTER_LITIGATION_ENCYCLOPEDIA_v2.md",
+      "category": "unknown",
+      "lane": "A"
+    },
+    {
+      "path": "C:\\Users\\andre\\Videos\\MASTER_LITIGATION_ENCYCLOPEDIA.md",
+      "category": "unknown",
+      "lane": "A"
+    },
+    {
+      "path": "C:\\Users\\andre\\Videos\\EVIDENTIARY_NARRATIVE_MCNEILL.md",
+      "category": "unknown",
+      "lane": "E"
+    },
+    {
+      "path": "C:\\Users\\andre\\Videos\\EVIDENTIARY_NARRATIVE_SHADY_OAKS.md",
+      "category": "unknown",
+      "lane": "B"
+    },
+    {
+      "path": "C:\\Users\\andre\\Videos\\JUDICIAL_DOSSIER_MCNEILL.md",
+      "category": "unknown",
+      "lane": "E"
+    },
+    {
+      "path": "C:\\Users\\andre\\Videos\\IMPEACHMENT_PACKAGES.md",
+      "category": "unknown",
+      "lane": "A"
+    },
+    {
+      "path": "C:\\Users\\andre\\Desktop\\MASTER_LITIGATION_ENCYCLOPEDIA.md",
+      "category": "unknown",
+      "lane": "A"
+    }
+  ],
+  "perpetrator_links": {
+    "emily": 7,
+    "mcneill": 4
+  }
+}

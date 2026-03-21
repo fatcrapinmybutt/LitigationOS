@@ -1,0 +1,1133 @@
+{
+  "tool": "Tool #243: Appeal Argument Generator",
+  "case": "COA 366810 — Pigors v Watson",
+  "court": "Michigan Court of Appeals",
+  "generated": "2026-03-19T09:43:06.402964",
+  "data_sources": {
+    "authority_chains": 28,
+    "judicial_violations_mcneill": 1127,
+    "docket_events": 221,
+    "evidence_quotes_total": 662
+  },
+  "arguments": [
+    {
+      "id": "ARG-1",
+      "title": "Due Process Violations",
+      "issue": "Whether the trial court violated Plaintiff-Appellant's procedural due process rights under the Fourteenth Amendment and Const 1963, art 1, § 17 by entering ex parte orders without notice or opportunity to be heard.",
+      "standard_of_review": "Constitutional questions are reviewed de novo. Const 1963, art 1, § 17; US Const, Am XIV. Due process violations are questions of law reviewed without deference. In re Rood, 483 Mich 73, 91 (2009).",
+      "rule": {
+        "authorities": [
+          "US Const, Am XIV (Due Process Clause)",
+          "Const 1963, art 1, § 17 (Michigan Due Process)",
+          "Mathews v Eldridge, 424 US 319 (1976) (three-factor balancing test)",
+          "In re Rood, 483 Mich 73, 91 (2009) (de novo review of constitutional questions)",
+          "MCR 3.207(B) (ex parte orders in domestic relations)",
+          "Troxel v Granville, 530 US 57 (2000) (parental rights as fundamental liberty interest)"
+        ],
+        "db_authority_chains": [
+          {
+            "cite": "MCR 2.003(C)",
+            "fact_claim": "ex parte communication",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "MCL 600.2950",
+            "fact_claim": "due process violation",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "42 USC 1983",
+            "fact_claim": "14th Amendment due process",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "MCR 9.104-9.121",
+            "fact_claim": "ex parte contact",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "42 USC § 1983; Flagg Bros. v. Brooks, 436 US 149 (1978); Monroe v. Pape, 365 US 167 (1961)",
+            "fact_claim": "Deprivation of rights under color of law",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "In re Dettmer, 260 Mich App 356 (2004)",
+            "fact_claim": "567-day denial of parenting time constitutes constructive restraint",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "Troxel v Granville, 530 US 57 (2000)",
+            "fact_claim": "Suspension of all parenting time without evidentiary hearing violates substantive due process",
+            "chain_complete": true,
+            "gap": null
+          }
+        ]
+      },
+      "application": {
+        "violation_count": 400,
+        "severity_breakdown": {
+          "medium": 73,
+          "low": 7,
+          "high": 99,
+          "critical": 221
+        },
+        "key_violations": [
+          {
+            "id": "JV-014f622f4185",
+            "canon": "MRE 613(b) — Prior inconsistent statement [financial]",
+            "severity": "medium",
+            "description": "notice. Based  on a motion  by either  party  or a recommendation  following  a review  by the friend  of the court,  the amount abated  may  be later  corrected  based  on the parties'  incomes  or ability",
+            "evidence_refs": "MRE 613(b) — Prior inconsistent statement [financial]"
+          },
+          {
+            "id": "JV-01fab6258d2e",
+            "canon": "MCR 3.210(C)",
+            "severity": "medium",
+            "description": "Post-judgment hearings must be noticed and allow time to respond unless waived.",
+            "evidence_refs": "MCR 3.210(C)"
+          },
+          {
+            "id": "JV-04a61100a989",
+            "canon": "MRE 613(b) — Prior inconsistent statement [hearing]",
+            "severity": "medium",
+            "description": "notice,  or that  notice  itself  will  precipitate  adverse  action\"). (Michigan  Courts) o   Despite  my  timely  objection  and  repeated  requests  for  a prompt evidentiary  hearing,  the  suspension",
+            "evidence_refs": "MRE 613(b) — Prior inconsistent statement [hearing]"
+          },
+          {
+            "id": "JV-07f5624cbf5c",
+            "canon": "MRE 613(b) — Prior inconsistent statement [hearing]",
+            "severity": "medium",
+            "description": "hearings  where  Judge  McNeill  muted my  microplione,  cut  me  off  mid-objection,  or instructed  me  not  to file  further materials  becarise  she would  not  look  at them. As a self-represented  liti",
+            "evidence_refs": "MRE 613(b) — Prior inconsistent statement [hearing]"
+          },
+          {
+            "id": "JV-09e28dd2ab10",
+            "canon": "MRE 613(b) — Prior inconsistent statement [hearing]",
+            "severity": "medium",
+            "description": "Hearing.   Hearing Comments: If you  require  special  accommodations  to use  the  court  because  of a disability  or if you  require  a foreign  languageinterpreter  to help you  fully  participate  in co",
+            "evidence_refs": "MRE 613(b) — Prior inconsistent statement [hearing]"
+          },
+          {
+            "id": "JV-0c38a7d5256c",
+            "canon": "MCL 600.2950/2950a; MCR 3.207(B)",
+            "severity": "medium",
+            "description": "Intentional use of PPO + contempt hearings to disrupt ECE",
+            "evidence_refs": "MCL 600.2950/2950a; MCR 3.207(B)"
+          },
+          {
+            "id": "JV-0def9b508db5",
+            "canon": "MCR 2.107; MCR 2.612(C)",
+            "severity": "medium",
+            "description": "Possibly “Notice of Appearance” or similar if required by local court.",
+            "evidence_refs": "MCR 2.107; MCR 2.612(C)"
+          },
+          {
+            "id": "JV-0ffdcaca54e7",
+            "canon": "MRE 613(b) — Prior inconsistent statement [hearing]",
+            "severity": "medium",
+            "description": "hearing.   [2] \"after  hearing. THE  COURT  FIND8: g2.  A petition  requested  respondent  be prohibited  from  entry  onto the premises,  and either  the parties  are married, petitioner  has a property  in",
+            "evidence_refs": "MRE 613(b) — Prior inconsistent statement [hearing]"
+          },
+          {
+            "id": "JV-106a5b393cc6",
+            "canon": "MCL 600.2950/2950a; MCR 3.207(B)",
+            "severity": "medium",
+            "description": "User muted, testimony ignored, no opportunity to cross-examine",
+            "evidence_refs": "MCL 600.2950/2950a; MCR 3.207(B)"
+          },
+          {
+            "id": "JV-1352751051e8",
+            "canon": "MRE 613(b) — Prior inconsistent statement [financial, ppo]",
+            "severity": "medium",
+            "description": "notice  was filed, or by fiting a motion. If a timely objection  is received,  the friend of the court shall either  set the objection  for hearing  or complete  a support  review  with an effective  date n",
+            "evidence_refs": "MRE 613(b) — Prior inconsistent statement [financial, ppo]"
+          }
+        ],
+        "supporting_evidence": [
+          {
+            "ref": "EQ-1",
+            "document_id": 2,
+            "page": 1,
+            "snippet": "HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parenting  time.  An evidentiary  hearing  was held on S",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-2",
+            "document_id": 2,
+            "page": 1,
+            "snippet": "hearing  was adjourned  for  Plaintiff  to obtain  a mental  health  assessment.  The  parties  appeared  on 1 0/29/25. ThePlaintiff   West,stating(under oath)  that he did not obtain  a second  asses",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-3",
+            "document_id": 2,
+            "page": 1,
+            "snippet": "hearing  and subpoenaed  the   which  occurred  on 1 1/26/25. Law If a  parenting   time  modification   does  not change  the  child's   established   custodial environment,  the parenting  time  mod",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-4",
+            "document_id": 3,
+            "page": 1,
+            "snippet": "notice  when  parenting  time  wifl not occur. (i) Any  other  reasonable  condition  determined  to be appropriate  in the particular case. MCL 722.27a(9). Page 2 Pigors  v Watson   2024-001507-DC",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-5",
+            "document_id": 4,
+            "page": 1,
+            "snippet": "Defendant.  The  Court  ordered  that  once  he provided  the  assessment  as requested,  another  hearing  would  be set. The Court  received  the  2nd Assessment  on 9/12/25.  A hearing  was  set  f",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-6",
+            "document_id": 4,
+            "page": 1,
+            "snippet": "hearing  would  be set. The Court  received  the  2nd Assessment  on 9/12/25.  A hearing  was  set  for  10/29/25. Both  parties  appeared.  The  Court  referenced  the  second  assessment.  The  Plai",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-7",
+            "document_id": 4,
+            "page": 1,
+            "snippet": "hearing  and  subpoenaed  the  two health  west  staff  for  the next  hearing,  which  occurred  on 1 1/26/25.  At that  hearing,  the  two workstestified,   was Despite  numerous  warnings,  the Fat",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-8",
+            "document_id": 4,
+            "page": 1,
+            "snippet": "hearing  on the Father's  7'h  PPO  violation  occurred.  He pled  guilty and received  45 days  in jail. Page  4 Pigors  v Watson   2024-001507-DC",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-9",
+            "document_id": 5,
+            "page": 1,
+            "snippet": "the Court.  He is to inform  the  assessor  of  ALL  the information that was presented to the  Court  at the hearing,  including  the incident  at the library,  alleged following  by the same  indivi",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-10",
+            "document_id": 5,
+            "page": 1,
+            "snippet": "hearing  on 8/22/25. On 9/22/2025,  the  Court  asked  the Plaintiff  to undergo  an assessment  at Health  West. The  matter  was  then  set for an evidentiary  hearing  on 9/4/25.  At the evidentiar",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-11",
+            "document_id": 5,
+            "page": 1,
+            "snippet": "hearing,  the  Plaintiff  stated  that  he was  accosted  at the  library;  these  same  men  were  following him; he could  not say  what  their  names  were;  and stated  that  they  were  arrested.",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-12",
+            "document_id": 5,
+            "page": 1,
+            "snippet": "hearing,  including  the incident  at the library,  alleged following  by the same  individuals,  eviction  from  his housing,  his Mother's  refusal  to talk  to him ariy forther, and his lack  of em",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-14",
+            "document_id": 6,
+            "page": 1,
+            "snippet": "hearing  he was  given  a suspended  sentence because  he said  he understood  what  he had done  wrong,  and  was  in counseling  at Services  of Hope.  As of the  last hearing,  he could  not  state",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-16",
+            "document_id": 9,
+            "page": 1,
+            "snippet": "hearing. It is further  ordered that the Plaintiff  must pay a bond of $250 (for each motion) before he may  file another  motion  in this matter.  The  Court  will  then  review  the  motion.  If the",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-17",
+            "document_id": 10,
+            "page": 1,
+            "snippet": "hearing  the argument  of  the  parties; THE  COURT  FINDS  AS  FOLLOWS: 1.   On  February  14, 2025  Plaintiff/Father  filed  a Motion  regarding  Parenting  Time. of  the motion  included  the follo",
+            "source": "PDF_COURT_DOC"
+          }
+        ],
+        "procedural_events": [
+          {
+            "date": "2023-11-01",
+            "title": "PPO Issued — Domestic",
+            "type": "order"
+          },
+          {
+            "date": "2023-11-17",
+            "title": "c. I am the defendanUrespondent. d. Please note my contact information for any related correspondence or additional instructions: @ Email: andrewjpigo",
+            "type": "hearing"
+          },
+          {
+            "date": "2023-11-17",
+            "title": "c. I am the deTendant/respondent. d. Please note my contact information for any related correspondence or additional instructions: * Email: andrewjpig",
+            "type": "hearing"
+          },
+          {
+            "date": "2023-12-04",
+            "title": "Judge: JENNY L MCNEILL 58235 Bar no. [a1. Thisorderisenteredafterhearing. THE COURT FINDS: 2. A motion was filed to E]a. modifythepersonalprot",
+            "type": "hearing"
+          },
+          {
+            "date": "2024-01-04",
+            "title": "AMAYASHOI  UCCVPFK Muskegon  County REGISTER OF ACTIONS REL2 10 6 9/11/25 11:00:54 Pg:  2 Caseload Dsp:  OEP Crt : C 14 Case:  2023 61  Jur:  MCNEILL ",
+            "type": "hearing"
+          },
+          {
+            "date": "2024-01-07",
+            "title": "PPO Violation Hearing — Show Cause",
+            "type": "hearing"
+          },
+          {
+            "date": "2024-03-22",
+            "title": "Motion for Hearing on PPO Granted",
+            "type": "motion"
+          },
+          {
+            "date": "2024-04-11",
+            "title": "HEARING  INFORMATION** SET NEXT DATE:  PPOH 04/11/2024  10:00 AM MCNEILL  COURTROOM:  CCG IN PERSON ROOM G 03/29/2024  D 001  RNU PROO",
+            "type": "hearing"
+          },
+          {
+            "date": "2024-04-11",
+            "title": "HEARING GRANTED SET  NEXT  DATE:  PPOH 04/11/2024  10:00  AM MCNEILL  COURTROOM:  CCG IN  PERSON COURTROOM G,  4TH  FLOOR 04/09/2024",
+            "type": "hearing"
+          },
+          {
+            "date": "2024-04-11",
+            "title": "NOTICE  TO APPEAR NOTICE  TO APPEAR",
+            "type": "notice"
+          }
+        ]
+      },
+      "conclusion": "The trial court's actions constitute reversible error requiring vacatur and remand. DB evidence: 400 judicial violations found (query: judicial_violations WHERE judge_name LIKE '%mcneill%' filtered by [due process, ex parte, notice...]), 200 supporting evidence quotes (query: evidence_quotes WHERE quote_text LIKE '%keyword%'), 7 authority chains (query: authority_chains filtered by argument keywords)."
+    },
+    {
+      "id": "ARG-2",
+      "title": "Abuse of Discretion in Custody Determination",
+      "issue": "Whether the trial court abused its discretion by restricting Plaintiff-Appellant's parenting time without adequate evidentiary basis and without proper consideration of the best-interest factors under MCL 722.23.",
+      "standard_of_review": "Custody decisions are reviewed for abuse of discretion. MCL 722.28. The trial court's findings of fact are reviewed for clear error. A finding is clearly erroneous if, after review of the entire record, the appellate court is left with the definite and firm conviction that a mistake was made. Pierron v Pierron, 486 Mich 81, 85 (2010).",
+      "rule": {
+        "authorities": [
+          "MCL 722.23 (Best Interest Factors)",
+          "MCL 722.27 (Court authority to modify custody)",
+          "MCL 722.27a (Parenting time)",
+          "MCL 722.28 (Appellate review standard)",
+          "Pierron v Pierron, 486 Mich 81 (2010) (clear error review of findings)",
+          "Vodvarka v Grasmeyer, 259 Mich App 499 (2003) (proper cause/change of circumstances)",
+          "Shade v Wright, 291 Mich App 17 (2010) (parenting time modification standard)"
+        ],
+        "db_authority_chains": [
+          {
+            "cite": "MCR 3.206(A)",
+            "fact_claim": "best interest of child",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "In re Dettmer, 260 Mich App 356 (2004)",
+            "fact_claim": "567-day denial of parenting time constitutes constructive restraint",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "Troxel v Granville, 530 US 57 (2000)",
+            "fact_claim": "Suspension of all parenting time without evidentiary hearing violates substantive due process",
+            "chain_complete": true,
+            "gap": null
+          }
+        ]
+      },
+      "application": {
+        "violation_count": 335,
+        "severity_breakdown": {
+          "medium": 117,
+          "low": 5,
+          "high": 74,
+          "critical": 139
+        },
+        "key_violations": [
+          {
+            "id": "JV-00784fbb7588",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Andrew requested make-up time for the parenting days Emily withheld, but she refused without explanation.",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-0195e2fc64ba",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "The dates and instances contained in this affidavit are extracted from the AppClose co-parenting application,parenting time journals, police reports, and photographic evidence.",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-01fa1732330f",
+            "canon": "MRE 613(b) — Prior inconsistent statement [child_welfare]",
+            "severity": "medium",
+            "description": "best interest  of  the child  to c}iange  parenting  time  (F 5. of  form) Plaintiff  requested  the Court  to Order  parenting  time  be changed  (G 6. of  form). Attached  to the Motion  was 16 additional  pages",
+            "evidence_refs": "MRE 613(b) — Prior inconsistent statement [child_welfare]"
+          },
+          {
+            "id": "JV-036917e8de0f",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Emily’s inability to provide a stable, consistent, and parent-centered home environment for Lincoln reinforces that her custody arrangement is not in Lincoln’s best interests. Instead, Lincoln appears to have a stronger reliance on his grandparents r",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-0383154fd78a",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Denying parenting time on holidays, birthdays, and without justification.",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-0459c4edf2bc",
+            "canon": "MRE 613(b) — Prior inconsistent statement [ppo]",
+            "severity": "medium",
+            "description": "dismissed. IT IS FURTHER  ORDERED  that  this Judgment  of Custody,  Parenting  Time,  and Chi!d Support  is the initial  Order  regarding  custody  and parenting  time,  issued  by this Court. IT !S FURTHER  OR",
+            "evidence_refs": "MRE 613(b) — Prior inconsistent statement [ppo]"
+          },
+          {
+            "id": "JV-0571e0e93543",
+            "canon": "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)",
+            "severity": "medium",
+            "description": "Motion to Revoke Child Support Arrears and Modify Custody and Parenting Time",
+            "evidence_refs": "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)"
+          },
+          {
+            "id": "JV-070d8402ed28",
+            "canon": "MCL 600.2950/2950a; MCR 3.207(B)",
+            "severity": "medium",
+            "description": "Brief in Support of Motion: Legal arguments supporting the combination of cases and changes to custody and child support.",
+            "evidence_refs": "MCL 600.2950/2950a; MCR 3.207(B)"
+          },
+          {
+            "id": "JV-071aad7f2994",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Emily Watson has repeatedly violated Best Interest Factor (D) by:",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-072c3bda6d47",
+            "canon": "MCR / Canon — PPO_WEAPONIZATION",
+            "severity": "medium",
+            "description": "PLAINTIFF'S MOTION TO MODIFY CUSTODY, PARENTING TIME, AND CHILD SUPPORT",
+            "evidence_refs": "MCR / Canon — PPO_WEAPONIZATION"
+          }
+        ],
+        "supporting_evidence": [
+          {
+            "ref": "EQ-1",
+            "document_id": 2,
+            "page": 1,
+            "snippet": "HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parenting  time.  An evidentiary  hearing  was held on S",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-4",
+            "document_id": 3,
+            "page": 1,
+            "snippet": "notice  when  parenting  time  wifl not occur. (i) Any  other  reasonable  condition  determined  to be appropriate  in the particular case. MCL 722.27a(9). Page 2 Pigors  v Watson   2024-001507-DC",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-10",
+            "document_id": 5,
+            "page": 1,
+            "snippet": "hearing  on 8/22/25. On 9/22/2025,  the  Court  asked  the Plaintiff  to undergo  an assessment  at Health  West. The  matter  was  then  set for an evidentiary  hearing  on 9/4/25.  At the evidentiar",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-14",
+            "document_id": 6,
+            "page": 1,
+            "snippet": "hearing  he was  given  a suspended  sentence because  he said  he understood  what  he had done  wrong,  and  was  in counseling  at Services  of Hope.  As of the  last hearing,  he could  not  state",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-18",
+            "document_id": 10,
+            "page": 1,
+            "snippet": "best interests  of  the child  standard  under  MCL  722.23.   This  request  is based  on significant  changes  in circumstances,  including  parental  alienation,  legal  manipulations,  financial f",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-34",
+            "document_id": 29,
+            "page": 1,
+            "snippet": "HEARING EMILY  WATSON, Defendant. Andrew  Pigors Self-Represented  Litigant Jennifer  Batnes  (P55406) Attorney  for  Defendant Both  parties  appeared  for  a Trial  regarding  Custody,  Parenting  T",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-35",
+            "document_id": 29,
+            "page": 1,
+            "snippet": "hearing  was  held;  and  the  Court  rendered  an oral  opinion.  The  Defendant  submitted  an order under  the 7 day  rule,  using  parts  of  the  rulings  the  Court  made  regarding  the  best i",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-36",
+            "document_id": 29,
+            "page": 1,
+            "snippet": "best interest  factors;  the Plaintiff  filed  an objection,  but  failed  to follow  the  Court  rules,  in  stating  with  specificity  what  parts of the  order  he objected  to and  did  not  prov",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-37",
+            "document_id": 31,
+            "page": 1,
+            "snippet": "HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and the Court  signed  an ex parte  order  suspending  the Plaintiffs parenting  time. An evidentiary  hearing  was held on Septe",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-39",
+            "document_id": 31,
+            "page": 1,
+            "snippet": "hearing  and subpoenaed  the two health  west  staff  for the next hearing,  which  occurred  on 41/26/25. If a parenting time modification  does not change  the child's  estabfished   custodial envir",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-40",
+            "document_id": 31,
+            "page": 1,
+            "snippet": "best interests  of the child. It is presumed  to be in the best interests of a child for the child to have a strong  relationship  with both of his or her parents. MCL 722.27a(1).  A child has a right",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-41",
+            "document_id": 32,
+            "page": 1,
+            "snippet": "notice  when  parenting  time  will not occur. (i) Any  other  reasonable  condition  determined  to be appropriate  in the particular case. MCL 722.27a(9). Page 2 Pigors  v Watson   2024-001507-DC",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-43",
+            "document_id": 33,
+            "page": 1,
+            "snippet": "hearing  on 8/22/25. On 9/22/2025,  the Court  asked  the Plaintiff  to undergo  an assessment  at Health  West. The matter  was  then set for an evidentiary  hearing  on 9/4/25.  At the evidentiary  ",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-52",
+            "document_id": 35,
+            "page": 1,
+            "snippet": "hearing  he was given  a suspended  sentence because  he said he understood  what  he had done  wrong,  and was in counseling  at Services  of Hope.  As of the last hearing,'he  could not state  when ",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-53",
+            "document_id": 36,
+            "page": 1,
+            "snippet": "ex parte order suspending  his parenting  time  is denied.  The  Court  also  notes  that  it offered  supervised  parenting  time  to the Father  and he categorically  rejected  that.  The  Court  wi",
+            "source": "PDF_COURT_DOC"
+          }
+        ],
+        "procedural_events": [
+          {
+            "date": "2023-12-04",
+            "title": "2023",
+            "type": "filing"
+          },
+          {
+            "date": "2024-04-05",
+            "title": "IT IS ORDERED that Plaintiff filed a Complaint for Custody, Parenting Time and Child ori April 5, 2024. Pigors v ll'atsnn Page l of 14 Judgment",
+            "type": "order"
+          },
+          {
+            "date": "2024-04-11",
+            "title": "Custody Complaint Filed by Watson",
+            "type": "filing"
+          },
+          {
+            "date": "2024-04-12",
+            "title": "Denied.  Ordcr entered on April 12, 2024. April 11, 2024: Plaintiff filed a Motion regarding Custody. Plaintiff addressed the Best Interes",
+            "type": "motion_filed"
+          },
+          {
+            "date": "2024-04-12",
+            "title": "Denied.  Order entered on April 12, 2024. April 11, 2024: Plaintiff filed a Motion regarding Custody. Plaintiff addresscd the Best Intere",
+            "type": "order"
+          },
+          {
+            "date": "2024-04-29",
+            "title": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 6/5/24 PAGE 2 5. On April 29, 2024 an Ex Parte Order for Custody, Parenting Time and Child ",
+            "type": "ex_parte_order"
+          },
+          {
+            "date": "2024-04-29",
+            "title": "IT IS FURTHER ORDERED that parties participated in a Facilitative Information Gathering Conference which resulted in a temporary Order titled Ex Parte",
+            "type": "ex_parte_order"
+          },
+          {
+            "date": "2024-05-02",
+            "title": "g LDW During Parenting Time Misbehavior: March 26–May 2, 2024: Emily withheld LDW for over 37 days without a co",
+            "type": "parenting_time"
+          },
+          {
+            "date": "2024-05-02",
+            "title": "urt-ordered parenting time, including: March 26 – May 2, 2024 (37 consecutive days) October 20 – November 12, 2",
+            "type": "order"
+          },
+          {
+            "date": "2024-05-02",
+            "title": "ing Parenting Time: Withheld LDW from March 26 to May 2, 2024, for 37 consecutive days without legal justificat",
+            "type": "parenting_time"
+          }
+        ]
+      },
+      "conclusion": "The trial court's actions constitute reversible error requiring vacatur and remand. DB evidence: 335 judicial violations found (query: judicial_violations WHERE judge_name LIKE '%mcneill%' filtered by [custody, parenting, best interest...]), 200 supporting evidence quotes (query: evidence_quotes WHERE quote_text LIKE '%keyword%'), 3 authority chains (query: authority_chains filtered by argument keywords)."
+    },
+    {
+      "id": "ARG-3",
+      "title": "Ex Parte Communications",
+      "issue": "Whether the trial court engaged in improper ex parte communications with Defendant's counsel, the FOC, or other parties in violation of MCR 2.003 and the Michigan Code of Judicial Conduct.",
+      "standard_of_review": "Judicial disqualification is reviewed for abuse of discretion. MCR 2.003(D). However, actual bias is reviewed de novo as a constitutional question. Armstrong v Ypsilanti Charter Twp, 248 Mich App 573, 597 (2001).",
+      "rule": {
+        "authorities": [
+          "MCR 2.003(C) (Grounds for disqualification)",
+          "MCJC Canon 2 (Impropriety and appearance of impropriety)",
+          "MCJC Canon 3(A)(4) (Prohibition on ex parte communications)",
+          "Armstrong v Ypsilanti Charter Twp, 248 Mich App 573 (2001)",
+          "Cain v Dep't of Corrections, 451 Mich 470 (1996) (due process requires impartial tribunal)",
+          "In re MKK, 286 Mich App 546 (2009) (ex parte communications as basis for disqualification)"
+        ],
+        "db_authority_chains": [
+          {
+            "cite": "MCR 2.003(C)",
+            "fact_claim": "personal bias/prejudice",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "MCR 2.003(C)",
+            "fact_claim": "ex parte communication",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "MCR 2.003(C)",
+            "fact_claim": "personal knowledge of disputed facts",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "MCR 2.003(C)",
+            "fact_claim": "appearance of impropriety",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "MCR 9.104-9.121",
+            "fact_claim": "ex parte contact",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "MCR 2.003(C)(1); Cain v. Dept of Corrections, 451 Mich 470 (1996)",
+            "fact_claim": "Prejudice to administration of justice",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "MCR 2.003(C)(1); Cain v. Dept of Corrections, 451 Mich 470 (1996)",
+            "fact_claim": "Prejudice to substantial rights",
+            "chain_complete": true,
+            "gap": null
+          },
+          {
+            "cite": "In re Dettmer, 260 Mich App 356 (2004)",
+            "fact_claim": "567-day denial of parenting time constitutes constructive restraint",
+            "chain_complete": true,
+            "gap": null
+          }
+        ]
+      },
+      "application": {
+        "violation_count": 681,
+        "severity_breakdown": {
+          "medium": 205,
+          "low": 4,
+          "high": 163,
+          "critical": 309
+        },
+        "key_violations": [
+          {
+            "id": "JV-00784fbb7588",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Andrew requested make-up time for the parenting days Emily withheld, but she refused without explanation.",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-01542861827f",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Exposing Lincoln to unstable situations, including medical neglect and unexplained injuries.",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-0195e2fc64ba",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "The dates and instances contained in this affidavit are extracted from the AppClose co-parenting application,parenting time journals, police reports, and photographic evidence.",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-0368cb779314",
+            "canon": "MCR / Canon — PPO_WEAPONIZATION",
+            "severity": "medium",
+            "description": "She failed to properly serve the PPO extension, violating legal procedures.",
+            "evidence_refs": "MCR / Canon — PPO_WEAPONIZATION"
+          },
+          {
+            "id": "JV-036917e8de0f",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Emily’s inability to provide a stable, consistent, and parent-centered home environment for Lincoln reinforces that her custody arrangement is not in Lincoln’s best interests. Instead, Lincoln appears to have a stronger reliance on his grandparents r",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-0383154fd78a",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Denying parenting time on holidays, birthdays, and without justification.",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-0571e0e93543",
+            "canon": "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)",
+            "severity": "medium",
+            "description": "Motion to Revoke Child Support Arrears and Modify Custody and Parenting Time",
+            "evidence_refs": "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)"
+          },
+          {
+            "id": "JV-065261d8ce0a",
+            "canon": "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)",
+            "severity": "medium",
+            "description": "To maintain financial stability and continue providing for LDW, I have taken on additional work hours, currently working 50-60 hours per week. After taxes, gas expenses for work, and child support, I am bringing home approximately $2,220 pe",
+            "evidence_refs": "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)"
+          },
+          {
+            "id": "JV-071aad7f2994",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Emily Watson has repeatedly violated Best Interest Factor (D) by:",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-072c3bda6d47",
+            "canon": "MCR / Canon — PPO_WEAPONIZATION",
+            "severity": "medium",
+            "description": "PLAINTIFF'S MOTION TO MODIFY CUSTODY, PARENTING TIME, AND CHILD SUPPORT",
+            "evidence_refs": "MCR / Canon — PPO_WEAPONIZATION"
+          }
+        ],
+        "supporting_evidence": [
+          {
+            "ref": "EQ-1",
+            "document_id": 2,
+            "page": 1,
+            "snippet": "HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and  the Court  signed  an ex parte  order  suspending  the  Plaintiff's parenting  time.  An evidentiary  hearing  was held on S",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-37",
+            "document_id": 31,
+            "page": 1,
+            "snippet": "HEARING  11/26/2025 EMILY  A. WATSON, Defendant Defendant  requested,  and the Court  signed  an ex parte  order  suspending  the Plaintiffs parenting  time. An evidentiary  hearing  was held on Septe",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-53",
+            "document_id": 36,
+            "page": 1,
+            "snippet": "ex parte order suspending  his parenting  time  is denied.  The  Court  also  notes  that  it offered  supervised  parenting  time  to the Father  and he categorically  rejected  that.  The  Court  wi",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-58",
+            "document_id": 43,
+            "page": 1,
+            "snippet": "hearing  on October  29, 2025. 2.   Lack  of  notice  and  ambush  at a scheduled  parenting-time  exchange. o   I was  not  served  with  the  ex parte  motion  or order  before  an August  8, 2025  ",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-62",
+            "document_id": 45,
+            "page": 1,
+            "snippet": "hearings  and jail  time,  which  in  him  caused  job  loss  and  housing  instability  that  were later  used  against  me  in custody  decisions. B. Ex Parte Paretxting-Time  Suspension and Lack of",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-64",
+            "document_id": 45,
+            "page": 1,
+            "snippet": "notice  of SuSpenSlOn. o   I was  not  served  with  the  ex parte  motion  or order  before  the  August  8 scheduled  exchange. o   I arrived  expecting  my  regular  parenting  time.  Emily  did  n",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-72",
+            "document_id": 48,
+            "page": 1,
+            "snippet": "hearing  (Counts  #5 and  #6). At  the February  28, 2025  PPO  violation  hearing,  the record  reflects  side-channel communication  minimizing  the immediate  threat  of  jail,  while  in open  cou",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-74",
+            "document_id": 50,
+            "page": 1,
+            "snippet": "the court. 2.  Canon  2(A)  and  2(B)  -  Avoiding  impropriety  and  the  appearance  of impropriety;  equal  treatment.  () o   Canon  2(A)  reqriires  judges  to avoid  both  impropriety  and  the ",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-75",
+            "document_id": 50,
+            "page": 1,
+            "snippet": "hearings. (Micl'iigan  Courts) o   MCR  3.207(B)(1)  and  (B)(5)-(6)  govern  ex parte  custody  and  parenting- time  orders  and  require: Specific  facts  in a verified  pleading  or affidavit  sli",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-78",
+            "document_id": 51,
+            "page": 1,
+            "snippet": "hearing  occurred,  despite  my  objection  and  repeated  requests, and  without  detailed  best-interest  findings  during  the  extended  suspension. 5.  Canon  3(A)(3)  -  Patience,  dignity,  and",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-81",
+            "document_id": 53,
+            "page": 1,
+            "snippet": "hearing. Appendix  E -  Ex  Parte  and  Post-Ex  Parte  Orders  in  August-October  2025 The  ex parte  order  suspending  all  parenting  time  (entered  011 or about  August  6, 2025). Subsequent  o",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-83",
+            "document_id": 53,
+            "page": 1,
+            "snippet": "Hearing *   Transcripts  from  the  PPO  contempt  hearing  in  which  I was  jailed  (Show  Cause #4). Appendix  H  -  HealthWest  Evaluation  and  Chambers  Communications The  HealthWest  mental-he",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-101",
+            "document_id": 67,
+            "page": 1,
+            "snippet": "IT IS ORDERED: 6\"L.(c\"sntuaelkdi)ngasdefinedunderMCL750.411handMCL750.411ithatincludesbutisn lfollowing  petitioner Or appearing within his/her sight.  9appearing  at petitioner's workplace Or residen",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-103",
+            "document_id": 68,
+            "page": 1,
+            "snippet": "IT IS ORDERED: 6. (continued) \"  [ZI e. stalking  as defined  under  MCL 750.411h  and MCL  750.411i  that includes  but is not limited  to: IID following  petitioner or appearing  within  his/her  si",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-113",
+            "document_id": 71,
+            "page": 1,
+            "snippet": "IT IS ORDERED: 6. (continued) \"*@e.stalking  aS defined  under  MCL yso.oiih  and MCL ';'so.<aiii  that includes  but is not limited  to: Bollowing  petitioner Or appearing  within his/her  sight.   r",
+            "source": "PDF_COURT_DOC"
+          }
+        ],
+        "procedural_events": [
+          {
+            "date": "2023-10-15",
+            "title": "My requests for communication were lawful and aligned with MCL 722.23(a), which recognizes the importance of maintaining love, affection, and emotiona",
+            "type": "motion"
+          },
+          {
+            "date": "2024-04-11",
+            "title": "PPO Amended — Ex Parte Order",
+            "type": "ex_parte_order"
+          },
+          {
+            "date": "2024-04-29",
+            "title": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 6/5/24 PAGE 2 5. On April 29, 2024 an Ex Parte Order for Custody, Parenting Time and Child ",
+            "type": "ex_parte_order"
+          },
+          {
+            "date": "2024-04-29",
+            "title": "IT IS FURTHER ORDERED that parties participated in a Facilitative Information Gathering Conference which resulted in a temporary Order titled Ex Parte",
+            "type": "ex_parte_order"
+          },
+          {
+            "date": "2024-07-01",
+            "title": "Ex Parte Custody Order Entered",
+            "type": "order"
+          },
+          {
+            "date": "2024-07-17",
+            "title": "STATE  OF  MICHIGAN IN THE CIRCUIT COURT FOR THE COUNTY OF MUSKEG-ON ANDREW PIGORS, Plaintiff, File No: 2024-001507-DC Hon. Jenny L. McNeill VS. CUSTO",
+            "type": "hearing"
+          },
+          {
+            "date": "2025-02-28",
+            "title": "hearing (Counts #5 and #6). At the February 28, 2025 PPO violation hearing, the record reflects side-channel communication minimizing the",
+            "type": "hearing"
+          },
+          {
+            "date": "2025-02-28",
+            "title": "PPO Violation Hearing (Counts 5 & 6)",
+            "type": "hearing"
+          },
+          {
+            "date": "2025-04-25",
+            "title": "FILED 4/25/2025 14th  CIRCUIT  COURT MUSKEGON  COUNTY ST ATE OF MICHIGAN IN THE 14TH CIRCUIT COURT FOR TIIE COUNTY OF MUSKEGON - FAMILY DIVISION Case ",
+            "type": "ex_parte_order"
+          },
+          {
+            "date": "2025-05-16",
+            "title": "5. Punitive structural barriers to access the court. o A May 16, 2025 order imposed a $250.00 filing bond in the custody case, that has functioned as ",
+            "type": "evidentiary_hearing"
+          }
+        ]
+      },
+      "conclusion": "The trial court's actions constitute reversible error requiring vacatur and remand. DB evidence: 681 judicial violations found (query: judicial_violations WHERE judge_name LIKE '%mcneill%' filtered by [ex parte, communication, off-record...]), 200 supporting evidence quotes (query: evidence_quotes WHERE quote_text LIKE '%keyword%'), 8 authority chains (query: authority_chains filtered by argument keywords)."
+    },
+    {
+      "id": "ARG-4",
+      "title": "Failure to Make Required Findings Under MCL 722.27a",
+      "issue": "Whether the trial court erred by restricting parenting time without making the specific findings required by MCL 722.27a(6), including findings that parenting time would endanger the child's physical, mental, or emotional health.",
+      "standard_of_review": "Failure to make required findings is a question of law reviewed de novo. The trial court's findings, where made, are reviewed for clear error. Lieberman v Orr, 319 Mich App 68, 78 (2017).",
+      "rule": {
+        "authorities": [
+          "MCL 722.27a(6) (Required findings for parenting time restriction)",
+          "MCL 722.27a(7) (Conditions on parenting time)",
+          "Lieberman v Orr, 319 Mich App 68 (2017) (required findings)",
+          "Shade v Wright, 291 Mich App 17 (2010) (parenting time standard)",
+          "Brown v Loveman, 260 Mich App 576 (2004) (necessity of findings on record)",
+          "Berger v Berger, 277 Mich App 700 (2008) (clear error in custody findings)"
+        ],
+        "db_authority_chains": []
+      },
+      "application": {
+        "violation_count": 249,
+        "severity_breakdown": {
+          "medium": 67,
+          "low": 5,
+          "high": 63,
+          "critical": 114
+        },
+        "key_violations": [
+          {
+            "id": "JV-00784fbb7588",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Andrew requested make-up time for the parenting days Emily withheld, but she refused without explanation.",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-0195e2fc64ba",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "The dates and instances contained in this affidavit are extracted from the AppClose co-parenting application,parenting time journals, police reports, and photographic evidence.",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-01fa1732330f",
+            "canon": "MRE 613(b) — Prior inconsistent statement [child_welfare]",
+            "severity": "medium",
+            "description": "best interest  of  the child  to c}iange  parenting  time  (F 5. of  form) Plaintiff  requested  the Court  to Order  parenting  time  be changed  (G 6. of  form). Attached  to the Motion  was 16 additional  pages",
+            "evidence_refs": "MRE 613(b) — Prior inconsistent statement [child_welfare]"
+          },
+          {
+            "id": "JV-036917e8de0f",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Emily’s inability to provide a stable, consistent, and parent-centered home environment for Lincoln reinforces that her custody arrangement is not in Lincoln’s best interests. Instead, Lincoln appears to have a stronger reliance on his grandparents r",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-0383154fd78a",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Denying parenting time on holidays, birthdays, and without justification.",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-0459c4edf2bc",
+            "canon": "MRE 613(b) — Prior inconsistent statement [ppo]",
+            "severity": "medium",
+            "description": "dismissed. IT IS FURTHER  ORDERED  that  this Judgment  of Custody,  Parenting  Time,  and Chi!d Support  is the initial  Order  regarding  custody  and parenting  time,  issued  by this Court. IT !S FURTHER  OR",
+            "evidence_refs": "MRE 613(b) — Prior inconsistent statement [ppo]"
+          },
+          {
+            "id": "JV-0571e0e93543",
+            "canon": "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)",
+            "severity": "medium",
+            "description": "Motion to Revoke Child Support Arrears and Modify Custody and Parenting Time",
+            "evidence_refs": "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)"
+          },
+          {
+            "id": "JV-072c3bda6d47",
+            "canon": "MCR / Canon — PPO_WEAPONIZATION",
+            "severity": "medium",
+            "description": "PLAINTIFF'S MOTION TO MODIFY CUSTODY, PARENTING TIME, AND CHILD SUPPORT",
+            "evidence_refs": "MCR / Canon — PPO_WEAPONIZATION"
+          },
+          {
+            "id": "JV-0efb7fb572ec",
+            "canon": "MCR / Canon — PROCEDURAL_MISCONDUCT",
+            "severity": "medium",
+            "description": "Emily withheld Lincoln for nearly a month, denying Andrew’s parenting time.",
+            "evidence_refs": "MCR / Canon — PROCEDURAL_MISCONDUCT"
+          },
+          {
+            "id": "JV-14a3a465e6b4",
+            "canon": "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)",
+            "severity": "medium",
+            "description": "Parsing PPO abuse chain → False allegations → Jail → Parenting-time deprivation",
+            "evidence_refs": "MCL 600.2950/2950a; Canons 2/3; MCR 3.207(B)"
+          }
+        ],
+        "supporting_evidence": [
+          {
+            "ref": "EQ-4",
+            "document_id": 3,
+            "page": 1,
+            "snippet": "notice  when  parenting  time  wifl not occur. (i) Any  other  reasonable  condition  determined  to be appropriate  in the particular case. MCL 722.27a(9). Page 2 Pigors  v Watson   2024-001507-DC",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-40",
+            "document_id": 31,
+            "page": 1,
+            "snippet": "best interests  of the child. It is presumed  to be in the best interests of a child for the child to have a strong  relationship  with both of his or her parents. MCL 722.27a(1).  A child has a right",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-41",
+            "document_id": 32,
+            "page": 1,
+            "snippet": "notice  when  parenting  time  will not occur. (i) Any  other  reasonable  condition  determined  to be appropriate  in the particular case. MCL 722.27a(9). Page 2 Pigors  v Watson   2024-001507-DC",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-246",
+            "document_id": 144,
+            "page": 1,
+            "snippet": "notice  & approval  requirements;  travel  limits  if  needed. 4  Halloween2024   Child-centeredeventwithheld   MCL 722.27a(3); holiday/event guidelines  i Trial: Halloween make-up (extra fall/winter ",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-247",
+            "document_id": 144,
+            "page": 1,
+            "snippet": "hearing;  require  specific  danger findings. 9 i Lincoln's 3rd birthday in 2025 (under suspension)i 3rd birthday missed during ongoing ex parte-based shutdown  i MCL 722.27a(3); birthday/special-even",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-248",
+            "document_id": 144,
+            "page": 1,
+            "snippet": "hearing;  clear  tindings  on record. 12 i Misstatement that father \"refused\"  supervision  i Court characterizes best-interests objection as refusal of supervised time i MCL 722.27a(1)-(3); accuracy ",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-351",
+            "document_id": 486,
+            "page": 1,
+            "snippet": "ex parte suspension MCL 722.27a(3); holiday-priority  guidelines; MCR 3.207; MCR 3.310(B)i Trial: Restore Labor Day-type extended time  via  make-up;  clarify  that  fuhire  Labor  Day  blocks  cannot",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-352",
+            "document_id": 486,
+            "page": 1,
+            "snippet": "Ex parte suspension since -08/08/2025   i Ongoing suspension of all parenting time (months-long shutdown)  i MCL 722.27a(3); MCR 3.207; MCR 3.310(B); Benchbook ex parte cautions  Trial: Vacate/modify ",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-353",
+            "document_id": 486,
+            "page": 1,
+            "snippet": "ex parte-based shutdown  i MCL 722.27a(3); birthday/special-event guidelines  i Trial: Compensatory birthday time  (extra  weekends/overnights);  explicit  birthday-sharing  clause  in order;  enforce",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-575",
+            "document_id": 657,
+            "page": 83,
+            "snippet": "the PPO, endangering LDW during the incident. On October 20, 2024, her father, Albert Watson, forcibly removed LDW",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-605",
+            "document_id": 657,
+            "page": 92,
+            "snippet": "hreatening behavior, including road harassment on September 20, 2024, violating the PPO and endangering LDW. III. APPL",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-3785",
+            "document_id": 1089,
+            "page": 67,
+            "snippet": "th Joe  Matyk under coercive conditions.\\n- Rent: $395/month, plus minor fees. Sewer line was defective;",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-5759",
+            "document_id": 1221,
+            "page": 284,
+            "snippet": "Special Proceedings and Actions Page 464 Updated September 1, 2025 Node: R453 | Title: (1) Conditions. A minor shall",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-29595",
+            "document_id": 4065,
+            "page": 2,
+            "snippet": "y Hearing or Findings No Hearing, No Findings: On September 9, 2025, Judge McNeill issued a written interim order in",
+            "source": "PDF_COURT_DOC"
+          },
+          {
+            "ref": "EQ-33774",
+            "document_id": 4133,
+            "page": 1,
+            "snippet": "D to the last regular schedule in effect prior to August 8, 2025, without supervision or additional conditions, un",
+            "source": "PDF_COURT_DOC"
+          }
+        ],
+        "procedural_events": [
+          {
+            "date": "2024-09-20",
+            "title": "hreatening behavior, including road harassment on September 20, 2024, violating the PPO and endangering LDW. III. APPL",
+            "type": "ppo"
+          },
+          {
+            "date": "2024-10-20",
+            "title": "the PPO, endangering LDW during the incident. On October 20, 2024, her father, Albert Watson, forcibly removed LDW",
+            "type": "ppo"
+          },
+          {
+            "date": "2025-01-15",
+            "title": "Motion for Parenting Time Filed by Father",
+            "type": "motion_filed"
+          },
+          {
+            "date": "2025-02-14",
+            "title": "Motion Regarding Parenting Time Filed by Father",
+            "type": "motion_filed"
+          },
+          {
+            "date": "2025-08-08",
+            "title": "Ex parte suspension since -08/08/2025  i Ongoing suspension of all parenting time (months-long shutdown) i MCL 722.27a(3); MCR 3.207; MCR 3.310(B);",
+            "type": "parenting_time"
+          }
+        ]
+      },
+      "conclusion": "The trial court's actions constitute reversible error requiring vacatur and remand. DB evidence: 249 judicial violations found (query: judicial_violations WHERE judge_name LIKE '%mcneill%' filtered by [finding, 722.27, parenting...]), 62 supporting evidence quotes (query: evidence_quotes WHERE quote_text LIKE '%keyword%'), 0 authority chains (query: authority_chains filtered by argument keywords)."
+    }
+  ]
+}

@@ -1,0 +1,3764 @@
+{
+  "tool": "#252 Parental Alienation Evidence Compiler",
+  "generated": "2026-03-19T09:53:43.395491",
+  "case": "Pigors v. Watson \u2014 2024-001507-DC",
+  "authorities": [
+    "Keenan v Dawson, 275 Mich App 671 (2007)",
+    "Demski v Petlick, 309 Mich App 404 (2015)",
+    "Berger v Berger, 277 Mich App 700 (2008)",
+    "Shade v Wright, 291 Mich App 17 (2010)"
+  ],
+  "sources_scanned": {
+    "evidence_quotes": {
+      "total": 36891,
+      "matches": 271
+    },
+    "d_drive_events": {
+      "total": 223,
+      "matches": 55
+    },
+    "claims": {
+      "total": 653,
+      "matches": 31
+    },
+    "docket_events": {
+      "total": 221,
+      "matches": 11
+    }
+  },
+  "total_alienation_evidence": 368,
+  "indicator_summary": {
+    "1": {
+      "name": "Campaign of Denigration",
+      "evidence_count": 1,
+      "sources": {
+        "claims": 1
+      }
+    },
+    "2": {
+      "name": "Weak, Frivolous, or Absurd Rationalizations",
+      "evidence_count": 19,
+      "sources": {
+        "evidence_quotes": 18,
+        "d_drive_events": 1
+      }
+    },
+    "3": {
+      "name": "Lack of Ambivalence",
+      "evidence_count": 0,
+      "sources": {}
+    },
+    "4": {
+      "name": "Independent Thinker Phenomenon",
+      "evidence_count": 0,
+      "sources": {}
+    },
+    "5": {
+      "name": "Reflexive Support of Alienating Parent",
+      "evidence_count": 0,
+      "sources": {}
+    },
+    "6": {
+      "name": "Absence of Guilt",
+      "evidence_count": 0,
+      "sources": {}
+    },
+    "7": {
+      "name": "Borrowed Scenarios",
+      "evidence_count": 3,
+      "sources": {
+        "d_drive_events": 3
+      }
+    },
+    "8": {
+      "name": "Spread of Animosity to Extended Family",
+      "evidence_count": 0,
+      "sources": {}
+    }
+  },
+  "all_evidence": [
+    {
+      "source": "evidence_quotes",
+      "id": 18,
+      "text": "best interests  of  the child  standard  under  MCL  722.23.  \nThis  request  is based  on\nsignificant\n changes  in circumstances,\n including\n parental  alienation,\n legal  manipulations,\n financial\nfraud,  and  v",
+      "category": "CUSTODY_ORDER",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": null,
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 30,
+      "text": "plaintiff.  \n[1] up to a maximum  of $ \n for defendant.\nEl not to exceed  6% of the plaintiffs/defendant's\n gross  income.\n3. Income  Withholding.\n Income  withholding  takes immediate  efflecl. Payments  shall be made  through  the Michigan  State\nDisbursement  Unlt unless  otherwise  ordered  in i",
+      "category": "TRANSCRIPT",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": null,
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 32,
+      "text": "defendant.\nEl not to exceed  6% of the plaintiffs/defendant's\n gross  income.\n3. Income  Withholding.\n Income  withholding  takes immediate  efflecl. Payments  shall be made  through  the Michigan  State\nDisbursement  Unlt unless  otherwise  ordered  in item 12.\n4. Qualffled  Medlcal  Support  Order",
+      "category": "TRANSCRIPT",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": null,
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 242,
+      "text": "Hearing\nSanctions,\nRestriction\n Order\nZ",
+      "category": "TRANSCRIPT",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": null,
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 245,
+      "text": "hearing\nThat  if  the Court  believes  any  restriction\n on parenting\n time  remains  necessary,  the Court  schedule  a focused\nevidentiary\n hearing  where  both  sides  can present  evidence  and cross-exa",
+      "category": "TRANSCRIPT",
+      "speaker": "COURT",
+      "date_ref": null,
+      "legal_significance": null,
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 344,
+      "text": "ex parte  suspension\n has\nfunctioned\n since  August  8, 2025.\n1. Chronological\n withholding\n pattern\nFirst,  the timeline\n of  withheld\n parenting\n time  as I have  experienced\n it:\n1. From  March  26, 2024",
+      "category": "EX_PARTE_ORDER",
+      "speaker": null,
+      "date_ref": "August  8, 2025",
+      "legal_significance": "DUE_PROCESS_VIOLATION",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 445,
+      "text": "Withholding Medical and Developmental Information\nOctober 4, 2024: Emily delayed notifying me that LDW had hand, fo",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "October 4, 2024",
+      "legal_significance": "Extracted DATE: October 4, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 446,
+      "text": "ving me unprepared to care for him appropriately.\nMay 15, 2024: Without consulting me, Emily made unilateral dec",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "May 15, 2024",
+      "legal_significance": "Extracted DATE: May 15, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 465,
+      "text": "LDW\u2019s doctor\u2019s appointment or his\nvaccinations on November 19, 2024.\n3. Withholding Parenting Time\nEmily\u2019s pattern of",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "November 19, 2024",
+      "legal_significance": "Extracted DATE: November 19, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 471,
+      "text": "ction Orders (PPOs) to restrict my access to LDW:\nOctober 20, 2024: Albert Watson served a PPO violation during an e",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "October 20, 2024",
+      "legal_significance": "Extracted DATE: October 20, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 477,
+      "text": "nd ensure his long-term well-being.\nNovember 2024\nNovember 15, 2024: Emily\u2019s withholding of Lincoln ends after 25 con",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "November 15, 2024",
+      "legal_significance": "Extracted DATE: November 15, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 479,
+      "text": "denies Andrew access to Lincoln on his birthday.\nNovember 7, 2024: Emily continues withholding Lincoln during his b",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "November 7, 2024",
+      "legal_significance": "Extracted DATE: November 7, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 482,
+      "text": "ng Lincoln and withholding him through\nHalloween.\nOctober 27, 2024: Emily withholds Lincoln during Andrew\u2019s schedule",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "October 27, 2024",
+      "legal_significance": "Extracted DATE: October 27, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 485,
+      "text": "parenting exchange, taking Lincoln from his\narms.\nOctober 20, 2024: Emily begins withholding Lincoln again, overlapp",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "October 20, 2024",
+      "legal_significance": "Extracted DATE: October 20, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 493,
+      "text": "or Lincoln\u2019s illness despite Andrew\u2019s insistence.\nOctober 4, 2024: Emily withholds critical details about Lincoln\u2019s",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "October 4, 2024",
+      "legal_significance": "Extracted DATE: October 4, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 509,
+      "text": "ndrew's inquiries about Lincoln's health updates.\nMay 28, 2024: Emily withholds full pediatric records after And",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "May 28, 2024",
+      "legal_significance": "Extracted DATE: May 28, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 517,
+      "text": "Lincoln to Andrew after a month-long withholding.\nMarch 26, 2024 - May 2, 2024: Emily withholds Lincoln for 37 day",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "March 26, 2024",
+      "legal_significance": "Extracted DATE: March 26, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 518,
+      "text": "after a month-long withholding.\nMarch 26, 2024 - May 2, 2024: Emily withholds Lincoln for 37 days, citing unfo",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "May 2, 2024",
+      "legal_significance": "Extracted DATE: May 2, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 597,
+      "text": "ing withholding information about\nvaccinations on November 19, 2024.\nWithholding Parenting Time:\nEmily has withheld L",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "November 19, 2024",
+      "legal_significance": "Extracted DATE: November 19, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 652,
+      "text": "extended withholding periods, such as March 26 to May 2, 2024, LDW displayed\nreluctance to leave my care, sugge",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "May 2, 2024",
+      "legal_significance": "Extracted DATE: May 2, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 655,
+      "text": "r periods of alienation or hostility.\nExample: On November 15, 2024, after being withheld for 25 days, LDW demonstrat",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "November 15, 2024",
+      "legal_significance": "Extracted DATE: November 15, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 665,
+      "text": "rolonged withholding periods, such\nas March 26 to May 2, 2024, suggests an erosion of trust caused by Emily\u2019s a",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "May 2, 2024",
+      "legal_significance": "Extracted DATE: May 2, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 682,
+      "text": ", such as doctor\u2019s\nvisits and vaccinations (e.g., November 19, 2024).\nWithholding Parenting Time:\nWithheld LDW from M",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "November 19, 2024",
+      "legal_significance": "Extracted DATE: November 19, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 2054,
+      "text": "spite documented gatekeeping\n\u2022 Father: Sanctioned $250 for disputed communication\n\u2022 Mother: Not sanction",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $250",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 2418,
+      "text": "rts.\n3. Fabricated\n Welfare\n Check  Allegations\n (March\n 26,  2024):\nAllegation:\n Emily  falsely  reported\n to autho",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "March\n 26,  2024",
+      "legal_significance": "Extracted DATE: March\n 26,  2024",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 2420,
+      "text": "n\n1. Withholding\n LDW\n Without\n Cause  (March\n 26-May\n 2, 2024):\n@ \nAllegation:\n Emily\n withheld\n LDW  for  over",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "May\n 2, 2024",
+      "legal_significance": "Extracted DATE: May\n 2, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 3618,
+      "text": "the ex parte  suspension\n has\nfunctioned\n since  August  8, 2025.\n1. Chronological\n withholding\n pattern\nFirst,  t",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "August  8, 2025",
+      "legal_significance": "Extracted DATE: August  8, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 7406,
+      "text": "rental alienation\n\u2022 Evidence:\n\u2022 Court order dated August 8, 2025\n\u2022 Order references \"phone call\" not affidavit\n\u2022 N",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "August 8, 2025",
+      "legal_significance": "Extracted DATE: August 8, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 7449,
+      "text": "g time\n\u2022 Eliminate all restrictions imposed after July 17, 2024\n3. Award Makeup Parenting Time\n\u2022 192+ days of wro",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "July 17, 2024",
+      "legal_significance": "Extracted DATE: July 17, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 7450,
+      "text": "Prepared by: Manus AI Legal Analysis System\nDate: February 10, 2026\nStatus: URGENT - Parental Alienation & Judicial M",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "February 10, 2026",
+      "legal_significance": "Extracted DATE: February 10, 2026",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 7498,
+      "text": "ter of\nthree times the tenant\u2019s actual damages or $200 for each\ntime the unlawful interference occurs, a",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $200",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 29597,
+      "text": "nied. Mr. Pigors had no contact with his son from July\u00a029, 2025\nonward, a span of roughly 50+ days by late Septem",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "July\u00a029, 2025",
+      "legal_significance": "Extracted DATE: July\u00a029, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 30011,
+      "text": "or\nrestricting parenting time entered on or after August 8, 2025, and\nrestore the last regular parenting-time sche",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "August 8, 2025",
+      "legal_significance": "Extracted DATE: August 8, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 31640,
+      "text": "ge.\u201d State Bar of Michigan\nEthics Opinion, JI-40, July 29, 1991.\n\u2022 Selling computer program. \u201cA judge who has dev",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "July 29, 1991",
+      "legal_significance": "Extracted DATE: July 29, 1991",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 31670,
+      "text": "s.\u201d State Bar of Michigan Ethics\nOpinion, JI-149, March 30, 2020.\n\u2022 Hosting a commercially-sponsored program. \u201cA j",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "March 30, 2020",
+      "legal_significance": "Extracted DATE: March 30, 2020",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 31731,
+      "text": "ed.\u201d State Bar of Michigan\nEthics Opinion, JI-21, May 11, 1990.38 \u201cDevelopment of a computer\nprogram to assist i",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "May 11, 1990",
+      "legal_significance": "Extracted DATE: May 11, 1990",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 31762,
+      "text": "ity Service Program (CSP)] account to herself for $349.40,\nwhich she estimated to be the round-trip cost fo",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $349.40",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 33781,
+      "text": "steep and unilateral rent increases (from around $395 to $720 per month)\nwithout proper notice or justi",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $395",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 33782,
+      "text": "nd unilateral rent increases (from around $395 to $720 per month)\nwithout proper notice or justification",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $720",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 33785,
+      "text": "fully interfere are liable for  actual damages or $200, and treble\ndamages for forcible ejectment)\n \u2013 her",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $200,",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 33853,
+      "text": "led to withholding rent were still not fixed.\n\u201cOn June 13, 2025, I filed the present action in Circuit Court seek",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "June 13, 2025",
+      "legal_significance": "Extracted DATE: June 13, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 34385,
+      "text": "Ledger manipulation: $395 \u2192 $695 + stacked admin fees = Exhibit G\n\ud83d\udcb5\n Rent p",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $395",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 34386,
+      "text": "Ledger manipulation: $395 \u2192 $695 + stacked admin fees = Exhibit G\n\ud83d\udcb5\n Rent paid thr",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $695",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 34404,
+      "text": "R IMPOSITION OF FILING \nRESTRICTIONS, EXHIBITS\nD1\n$20.00\nReceipt No - 18484\nCSJ\nHearing Officer - HOOPES,K",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $20.00",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 34405,
+      "text": "R IMPOSITION OF FILING RESTRICTIONS, \nEXHIBITS\nD2\n$20.00\nReceipt No - 18484\nCSJ\nHearing Officer - HOOPES,K",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $20.00",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 34485,
+      "text": "Outdoor use only water.\nJul-24\n3,400 3,400 $22.23\n$52.63\n...\n Ultimate Argument:\n\ud83d\udd25\n\u201cDefendants fabricated",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $52.63",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 35783,
+      "text": "ed 50% of all funds received by the prisoner over $50.00 each month. The Michigan Title IV-D \t \t\n\t\nProgram",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $50.00",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 35823,
+      "text": "er of \nthree times the tenant\u2019s actual damages or $200 for each \ntime the unlawful interference occurs,",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $200",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 54080,
+      "text": "not more than 93 days or a fine of not \nmore than $500.00, or both.\u201d Id.\n6.4\nFirearms Restrictions Involvin",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $500.00",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 54096,
+      "text": "reflect the amendment to MCL 750.224f, effective May 12, 2014, \nwhich also restricts a convicted felon\u2019s posses",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "May 12, 2014",
+      "legal_significance": "Extracted DATE: May 12, 2014",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 54098,
+      "text": "under [MCL 28.425b(7)(n)].\u201d45\nOAG, 2003, No 7133 (May 2, 2003).\n6.6\nFirearms Restrictions Resulting from Misdem",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "May 2, 2003",
+      "legal_significance": "Extracted DATE: May 2, 2003",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 54107,
+      "text": "more than 5 years, or by \na fine of not more than $2,500.00.\u201d MCL 750.227(2)-(3).\n6.7\nFirearms Restrictions R",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $2,500.00",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 54109,
+      "text": "not more than 90 days or a fine \nof not more than $100.00, or both.\u201d66 MCL 750.232a(1).\n2. Restrictions on",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $100.00",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 55487,
+      "text": ", Volunteer Services and Programs, PD \n03.02.105 (May 26, 2015). \nMichigan Department of Health and Human Servic",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "May 26, 2015",
+      "legal_significance": "Extracted DATE: May 26, 2015",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 58741,
+      "text": "e.\u201d State Bar of Michigan \nEthics Opinion, JI-40, July 29, 1991.\n\u2022 Selling computer program. \u201cA judge who has dev",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "July 29, 1991",
+      "legal_significance": "Extracted DATE: July 29, 1991",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 58771,
+      "text": ".\u201d State Bar of \nMichigan Ethics Opinion, JI-149, March 30, 2020.\n\u2022 Hosting a commercially-sponsored program. \u201cA j",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "March 30, 2020",
+      "legal_significance": "Extracted DATE: March 30, 2020",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 58833,
+      "text": "d.\u201d State Bar of Michigan \nEthics Opinion, JI-21, May 11, 1990.38 \u201cDevelopment of a computer \nprogram to assist",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "May 11, 1990",
+      "legal_significance": "Extracted DATE: May 11, 1990",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 58864,
+      "text": "ity Service Program (CSP)] account to herself for $349.40, \nwhich she estimated to be the round-trip cost f",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $349.40",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 59309,
+      "text": "ll not be suspended.\u201d MCL 257.904d(5).\n\u201cBeginning October 31, 2010, if the person obtains a restricted \noperator\u2019s .",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "October 31, 2010",
+      "legal_significance": "Extracted DATE: October 31, 2010",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 60064,
+      "text": "Funds From Lawyer Trust Account Program\n[Entered October 4, 1994; text as amended by orders entered on October 12",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "October 4, 1994",
+      "legal_significance": "Extracted DATE: October 4, 1994",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 60139,
+      "text": "Funds from Lawyer Trust \nAccount Program\n[Entered November 14, 1997; rescinded by AO No. 2021-3, entered April 27, 20",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "November 14, 1997",
+      "legal_significance": "Extracted DATE: November 14, 1997",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 60356,
+      "text": "e Court, this pilot program shall \ncontinue until July 30, 2009.",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "July 30, 2009",
+      "legal_significance": "Extracted DATE: July 30, 2009",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 60388,
+      "text": "tions Program and Reporting Requirements\n[Entered February 2, 2010; effective May 1, 2010.]\nOn order of the Court, n",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "February 2, 2010",
+      "legal_significance": "Extracted DATE: February 2, 2010",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 60519,
+      "text": "t Court. The pilot \nprogram is expected to launch October 1, 2014 and will continue through \nNovember 30, 2014. If",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "October 1, 2014",
+      "legal_significance": "Extracted DATE: October 1, 2014",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 60561,
+      "text": "s of appellate mediation. The program shall begin October 1, 2015, and shall remain \nin effect for 12 months. The C",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "October 1, 2015",
+      "legal_significance": "Extracted DATE: October 1, 2015",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 60570,
+      "text": "6-3 \u2014 Prisoner Electronic Filing Program\n[Entered November 2, 2016; language as amended by orders entered October 2,",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "November 2, 2016",
+      "legal_significance": "Extracted DATE: November 2, 2016",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 60698,
+      "text": "Funds from Lawyer Trust Account Program\n[Entered April 27, 2021.]\nOn order of the Court, effective immediately, A",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "April 27, 2021",
+      "legal_significance": "Extracted DATE: April 27, 2021",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 60699,
+      "text": "nt of the net proceeds not to exceed a maximum of $50,000 of the Lawyer \nTrust Account Program to support t",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $50,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 60710,
+      "text": "y Continuing Judicial \nEducation Program\n[Entered October 20, 2021; rescinded by order entered November 1, 2023, eff",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "October 20, 2021",
+      "legal_significance": "Extracted DATE: October 20, 2021",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 61041,
+      "text": "pecial Proceedings and Actions\nPage 198\n  Updated January 28, 2026 \n(3) In the case of periodic earnings, withholdin",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "January 28, 2026",
+      "legal_significance": "Extracted DATE: January 28, 2026",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 61144,
+      "text": "pecial Proceedings and Actions\nPage 297\n  Updated January 28, 2026 \nFoundation to support activities and programs th",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "January 28, 2026",
+      "legal_significance": "Extracted DATE: January 28, 2026",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 61217,
+      "text": "pecial Proceedings and Actions\nPage 365\n  Updated January 28, 2026 \n(a) The least restrictive setting possible.\n(b)",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "January 28, 2026",
+      "legal_significance": "Extracted DATE: January 28, 2026",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 61384,
+      "text": "Chapter 5. Probate Court\nPage 526\n  Updated April 11, 2024 \n(B) Restrictions and Limitations. The court may",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "April 11, 2024",
+      "legal_significance": "Extracted DATE: April 11, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 61672,
+      "text": ". Administrative Rules of Court\nPage 774\n Updated January 1, 2025 \n(B) Legal Training Programs. Law students and re",
+      "category": "discovery",
+      "speaker": null,
+      "date_ref": "January 1, 2025",
+      "legal_significance": "Extracted DATE: January 1, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 270160,
+      "text": "and/or  Fees\nfor a Total  Amount\n to Withhold\n of $385.50  per MONTH.\nIV. \nAmounts\n to Withhold:\n (Complete",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $385.50",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 270161,
+      "text": "cycle,  withhold  one of the following  amounts:\n$88.62 \nper weekly  pay period  \n$192.75\n \nper semimonth",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $88.62",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 270165,
+      "text": "and/or  Fees\n,or a Total  Amount\n to Withhold\n oT $385.50\n per  MONTH.",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $385.50",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 270483,
+      "text": "say, $70,000+ as estimated; treble that would be $210,000+.\nSimilarly, each act of interference (water shut",
+      "category": "complaint",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $210,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 270704,
+      "text": "ments on April 22, 2003, and Plaintiffs moved on \nApril 23, 2003 for leave to file their own \"unilateral\" Pretrial",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 23, 2003",
+      "legal_significance": "Extracted DATE: April 23, 2003",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 270705,
+      "text": "own \"unilateral\" Pretrial Statement. By Order of April 28, \n2003, the Court granted Plaintiffs the requested leave",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 28, \n2003",
+      "legal_significance": "Extracted DATE: April 28, \n2003",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 270790,
+      "text": "ber of benefit weeks available to claimants after June 1, 2012. \n \nThe EUC program is federally funded; therefor",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 1, 2012",
+      "legal_significance": "Extracted DATE: June 1, 2012",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 270792,
+      "text": "UC program and its four tiers expires week ending December 29, 2012.  This means \nthat EUC claims for Tier I cannot b",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "December 29, 2012",
+      "legal_significance": "Extracted DATE: December 29, 2012",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 271798,
+      "text": "Table of Contents: Court Rules\nxix\n Updated  May 1, 2025 \nRule 9.264 Ethics Materials and Programs .......",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May 1, 2025",
+      "legal_significance": "Extracted DATE: May 1, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 272457,
+      "text": "Chapter 6. Criminal Procedure\nPage 607\n  Updated May 1, 2025 \nfabricated; and the need for secrecy regarding t",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May 1, 2025",
+      "legal_significance": "Extracted DATE: May 1, 2025",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 272596,
+      "text": "Chapter 7. Appellate Rules\nPage 738\n Updated  May 1, 2025 \nimpose filing restrictions on the party. The res",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May 1, 2025",
+      "legal_significance": "Extracted DATE: May 1, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 275511,
+      "text": "ea median income(AMI)\u0003\nfor up to 18 months. As of August 25, 2022, the program had spent $875 million and helped al",
+      "category": "report",
+      "speaker": null,
+      "date_ref": "August 25, 2022",
+      "legal_significance": "Extracted DATE: August 25, 2022",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 275523,
+      "text": "ths. As of August 25, 2022, the program had spent $875 million and helped almost a quarter\u0003\nmillion of f",
+      "category": "report",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $875",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 275561,
+      "text": "on-diversion-initiative\u00ad\ngrant-program> (accessed January 9, 2024).\u0003\n73 Administrative Order No.  2020-17, supra no",
+      "category": "report",
+      "speaker": null,
+      "date_ref": "January 9, 2024",
+      "legal_significance": "Extracted DATE: January 9, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 275576,
+      "text": "ofessionals-chapter-194-sc-rule-35.pdf> (accessed January 9, 2024).\u0003\n104 Community Justice Worker Program, Alaska L",
+      "category": "report",
+      "speaker": null,
+      "date_ref": "January 9, 2024",
+      "legal_significance": "Extracted DATE: January 9, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 275577,
+      "text": "org/community\u00ad\njustice-worker-program/> (accessed January 9, 2024).\u0003\n105 Michigan Justice for All Commission, Repor",
+      "category": "report",
+      "speaker": null,
+      "date_ref": "January 9, 2024",
+      "legal_significance": "Extracted DATE: January 9, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 275737,
+      "text": "71 Neb. Admin. Code \u00a7 12-011.02.  \n. . . . \nSince October 17, 1977, the Nebraska medicaid program has recognized dep",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "October 17, 1977",
+      "legal_significance": "Extracted DATE: October 17, 1977",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 276477,
+      "text": "labels, in 1995.\u201d J.A. 3607 (Women\u2019s Wear Daily, May 5, \n1997). \n\u2022 \u201cCoach, one of the top makers of status hand",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May 5, \n1997",
+      "legal_significance": "Extracted DATE: May 5, \n1997",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 276479,
+      "text": "which ended last \nJune 30, Coach\u2019s sales exceeded $500 million. The name also resonates with consumers.",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $500",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 276724,
+      "text": "book ended its Sponsored Stories program and paid $20 million to settle the \ndispute. See Mike Wheatley",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $20",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 276773,
+      "text": "Court\u2019s LLLT Program Met Its Demise,\nABA JOURNAL (July 9, 2020), https://www.abajournal.com/web/article/how-wash",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "July 9, 2020",
+      "legal_significance": "Extracted DATE: July 9, 2020",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 276778,
+      "text": "oftware Program\u2019s Secret Algorithms, N.Y. TIMES \n(May 1, 2017), https://perma.cc/6CF8-7FMK. \n \n4. Deborah Casse",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May 1, 2017",
+      "legal_significance": "Extracted DATE: May 1, 2017",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 276813,
+      "text": "In February 2025, rent was unilaterally raised to $720, and illegal charges were added for water and\nsewe",
+      "category": "complaint",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $720,",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 276929,
+      "text": "In February 2025, Defendants increased rent from $695 to $720 unilaterally and billed $100+ in false\nwa",
+      "category": "complaint",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $695",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 276930,
+      "text": "uary 2025, Defendants increased rent from $695 to $720 unilaterally and billed $100+ in false\nwater/sewe",
+      "category": "complaint",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $720",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 276931,
+      "text": "ed rent from $695 to $720 unilaterally and billed $100+ in false\nwater/sewer charges, despite known EGLE",
+      "category": "complaint",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $100",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 277487,
+      "text": "Table of Contents: Court Rules\nxix\n Updated  March 10, 2025 \nRule 9.264 Ethics Materials and Programs .......",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "March 10, 2025",
+      "legal_significance": "Extracted DATE: March 10, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 278146,
+      "text": "Chapter 6. Criminal Procedure\nPage 33\n  Updated March 10, 2025 \nfabricated; and the need for secrecy regarding t",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "March 10, 2025",
+      "legal_significance": "Extracted DATE: March 10, 2025",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 278193,
+      "text": "Chapter 6. Criminal Procedure\nPage 78\n  Updated March 10, 2025 \n(2) Jailing of Juveniles; Restricted. On motion",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "March 10, 2025",
+      "legal_significance": "Extracted DATE: March 10, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 278570,
+      "text": "s of fluid injected and operating pressures and a $2,500 fee per disposal well for the state \nprogram. \nIn",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $2,500",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 278885,
+      "text": "entation of the Interim Administrator \nProgram by January 1, 2024. The report shall contain an accounting of the fu",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "January 1, 2024",
+      "legal_significance": "Extracted DATE: January 1, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 279422,
+      "text": "ll not be suspended.\u201d MCL 257.904d(5).\n\u201cBeginning October 31, 2010, if the person obtains a restricted\noperator\u2019s .",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "October 31, 2010",
+      "legal_significance": "Extracted DATE: October 31, 2010",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280015,
+      "text": "asing the fees for lawn maintenance and edging to $50 per occasion; \nand \n(j) \nRestricting tenants\u2019 par",
+      "category": "complaint",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $50",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280343,
+      "text": "es that exceed such total into the Program, up to $2 million (including cash balances retained at SoFi",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $2",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280779,
+      "text": "ncial Strain: $7,000 \n\u2022 \nEviction-Related Losses: $4,000 \n\u2022 \nEmotional Distress from Withholding LDW: $6,0",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $4,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280780,
+      "text": ",000 \n\u2022 \nEmotional Distress from Withholding LDW: $6,000 \n\u2022 \nTotal Compensatory Damages: $22,000 \n \nDetail",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $6,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280787,
+      "text": "d from a \nchild. \n\u2022 \nKey Withholding Periods: \n\u2022 \nMarch 26, 2024 \u2013 May 2, 2024: 37 days \n\u2022 \nOctober 20, 2024 \u2013 Nov",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "March 26, 2024",
+      "legal_significance": "Extracted DATE: March 26, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280788,
+      "text": "\u2022 \nKey Withholding Periods: \n\u2022 \nMarch 26, 2024 \u2013 May 2, 2024: 37 days \n\u2022 \nOctober 20, 2024 \u2013 November 15, 2024",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May 2, 2024",
+      "legal_significance": "Extracted DATE: May 2, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280805,
+      "text": "+ $2,400 (relocation) + $1,000 (emotional harm) = $4,000 \n4. Emotional Distress from Withholding LDW: $6,0",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $4,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280806,
+      "text": ",000 \n4. Emotional Distress from Withholding LDW: $6,000 \nEmily\u2019s deliberate withholding of LDW during key",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $6,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280815,
+      "text": ",000 \n\u2022 \nEmotional Distress from Withholding LDW: $6,000 \nPunitive Damages: $15,000 \nPunitive damages are",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $6,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280816,
+      "text": "s from Withholding LDW: $6,000 \nPunitive Damages: $15,000 \nPunitive damages are designed to punish Emily fo",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $15,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280925,
+      "text": "\u25cf\u200b Withholding the child from March 26 through May 2, 2024, despite a standing informal \nparenting time agre",
+      "category": "motion",
+      "speaker": null,
+      "date_ref": "May 2, 2024",
+      "legal_significance": "Extracted DATE: May 2, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280938,
+      "text": "he withholding of parenting time from March 26 to May 2, 2024, and again during key \nholidays\u2014including Easter",
+      "category": "motion",
+      "speaker": null,
+      "date_ref": "May 2, 2024",
+      "legal_significance": "Extracted DATE: May 2, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 280965,
+      "text": "- Withholding of parenting time from March 26 to May 6, 2024 and again from April 6 to \nMay 2, 2025.\n- Weaponi",
+      "category": "brief",
+      "speaker": null,
+      "date_ref": "May 6, 2024",
+      "legal_significance": "Extracted DATE: May 6, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281203,
+      "text": "eturning payments, failing to account for the two $715 money orders, manipulating \naccounts, and imposin",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $715",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281204,
+      "text": "tion of Parental Alienation Specialists (NAOPAS) \nOctober 1, 2024 \n \n201 W Canton Ave \nSuite 225 \nWinter Park, FL 3",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "October 1, 2024",
+      "legal_significance": "Extracted DATE: October 1, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281496,
+      "text": "visitation program expenses for 2009-10 totaled \n$315,353.  Federal funding contributed $283,818 or 90 perc",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $315,353",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281497,
+      "text": "0 totaled \n$315,353.  Federal funding contributed $283,818 or 90 percent \nof the program expenses and the re",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $283,818",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281498,
+      "text": "the program expenses and the remaining balance of $31,535 \nor 10 percent was financed by nongovernmental so",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $31,535",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281653,
+      "text": "ars and/or Fees\nfor a Total Amount to Withhold of $385.50 per MONTH.\nIV.  Amounts to Withhold: (Completed b",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $385.50",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281654,
+      "text": "ent cycle, withhold one of the following amounts:\n$88.62\nper weekly pay period\n$192.75\nper semimonthly pay",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $88.62",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281658,
+      "text": "withholders to charge support payers a fee up to $2 or $4/month for withholding: MCL 552.623.\n\u2022 MI ha",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $2",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281659,
+      "text": "olders to charge support payers a fee up to $2 or $4/month for withholding: MCL 552.623.\n\u2022 MI has no w",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $4",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281660,
+      "text": "on-employee income/non-earnings MCL\n552.608, 611a;$2 or $4/month withholding fee MCL 552.623.\n\u2022 Additi",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $2",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281661,
+      "text": "loyee income/non-earnings MCL\n552.608, 611a;$2 or $4/month withholding fee MCL 552.623.\n\u2022 Additional c",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $4",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281845,
+      "text": "es) for each of the actions below for \na total of $75 in Pulse Cash ($30 for spouses) per \nprogram year",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $75",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281846,
+      "text": "actions below for \na total of $75 in Pulse Cash ($30 for spouses) per \nprogram year. \n\u2022 Complete a Jou",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $30",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281851,
+      "text": "reward may be earned \ntwice per program year for $50 total in Pulse Cash \n($25 for spouses).\nAll emplo",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $50",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 281852,
+      "text": "ce per program year for $50 total in Pulse Cash \n($25 for spouses).\nAll employees and spouses on a Shap",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $25",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282300,
+      "text": "olated\nby fabricating health-related concerns.\n5. October 15, 2023 - False Allegation of Assault\nPetitioner's accusa",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "October 15, 2023",
+      "legal_significance": "Extracted DATE: October 15, 2023",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282330,
+      "text": "5. October 15, 2023 \u2013 False Allegation of Assault\nPetitioner's accusa",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "October 15, 2023",
+      "legal_significance": "Extracted DATE: October 15, 2023",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282537,
+      "text": "ng the 36-day withholding\nperiod from March 26 to May 3, 2024, and all other days lost due to the Court\u2019s previ",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May 3, 2024",
+      "legal_significance": "Extracted DATE: May 3, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282621,
+      "text": "ence and hindering bonding time with Lincoln. \n\u2022  March 26, 2024: Emily filed a fabricated welfare check claiming",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "March 26, 2024",
+      "legal_significance": "Extracted DATE: March 26, 2024",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282634,
+      "text": "ln, \nfurthering parental alienation concerns. \n\u2022  June 8, 2024: Emily refused to return a sentimental family hei",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 8, 2024",
+      "legal_significance": "Extracted DATE: June 8, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282661,
+      "text": "d fabricated by police report OCA 2023-08121. \n\u2022  December 4, 2023: Lori and Emily Watson jointly filed against Andr",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "December 4, 2023",
+      "legal_significance": "Extracted DATE: December 4, 2023",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282667,
+      "text": "ourt order, leading \nto custody interference. \n\u2022  March 26, 2024: Emily filed a fabricated welfare check claiming",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "March 26, 2024",
+      "legal_significance": "Extracted DATE: March 26, 2024",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282798,
+      "text": "al alienation concerns(appclose emily fails). \n\u2022  June 8, 2024 - Emily refused to return a sentimental family he",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 8, 2024",
+      "legal_significance": "Extracted DATE: June 8, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282991,
+      "text": "incomplete financial data, and the withholding of\n$400 per month has severely impacted my ability to pro",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $400",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282993,
+      "text": "current income withholding order, which garnishes $400 per month, has been calculated\nbased on incomplet",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $400",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282995,
+      "text": "current income withholding order, which garnishes $400 per month, was calculated based\non incomplete fin",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $400",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282997,
+      "text": "current income withholding order,\nwhich garnishes $400 per month, I continue to provide for LDW with unw",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $400",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 282999,
+      "text": "e the current income withholding order garnishing $400 per month, I have continued to\nprovide for LDW wi",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $400",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 283002,
+      "text": "e the current income\nwithholding order garnishing $400 per month, I have continued to meet all of LDW\u2019s",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $400",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 283004,
+      "text": "viding for LDW, the current income withholding of $400\nper month is causing unnecessary financial strain",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $400",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 283186,
+      "text": "ON-EMPLOYEE\nINCOME/NON-EARNINGS MCL 552.608, 611A;$2 OR $4/MONTH WITHHOLDING FEE MCL 552.623.",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $2",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 283187,
+      "text": "LOYEE\nINCOME/NON-EARNINGS MCL 552.608, 611A;$2 OR $4/MONTH WITHHOLDING FEE MCL 552.623.",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $4",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 283343,
+      "text": "Table of Contents: Court Rules\nxix\n Updated  December 27, 2024 \nRule 9.264 Ethics Materials and Programs .......",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "December 27, 2024",
+      "legal_significance": "Extracted DATE: December 27, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 284002,
+      "text": "Chapter 6. Criminal Procedure\nPage 607\n  Updated December 27, 2024 \nfabricated; and the need for secrecy regarding t",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "December 27, 2024",
+      "legal_significance": "Extracted DATE: December 27, 2024",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 284049,
+      "text": "Chapter 6. Criminal Procedure\nPage 652\n  Updated December 27, 2024 \n(2) Jailing of Juveniles; Restricted. On motion",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "December 27, 2024",
+      "legal_significance": "Extracted DATE: December 27, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 284428,
+      "text": "t maximum: $4,500\n\u2022 Family out-of-pocket maximum: $9,000\n\u2022 NEW Rx Cap Pharmacy Savings Programs for eligib",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $9,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 284485,
+      "text": "autism \nservices.\nCovered \u2013 80% \nafter deductible\n$25 Copay. No \nage restrictions \nfor autism \nservices",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $25",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 284645,
+      "text": "tes have added a premium assistance program since July 31, 2023, or for more information on \nspecial enrollment r",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "July 31, 2023",
+      "legal_significance": "Extracted DATE: July 31, 2023",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 284671,
+      "text": "s in no \nbackup withholding, you are subject to a $500 penalty.\nCriminal penalty for falsifying informat",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $500",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 285061,
+      "text": "had developed a software program\ncalled EPIC. On September 1, 2005, defendant and Melange\nentered into an agreement",
+      "category": "report",
+      "speaker": null,
+      "date_ref": "September 1, 2005",
+      "legal_significance": "Extracted DATE: September 1, 2005",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 285066,
+      "text": "ous business interference/injurious\nfalsehood. On March 29, 2013, the Nebraska Supreme Court held\nthat the Nebrask",
+      "category": "report",
+      "speaker": null,
+      "date_ref": "March 29, 2013",
+      "legal_significance": "Extracted DATE: March 29, 2013",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 285072,
+      "text": "veloper of a soft-\nware program known as EPIC. On September 1, 2005,\nVideo King and Melange entered into an agreement",
+      "category": "report",
+      "speaker": null,
+      "date_ref": "September 1, 2005",
+      "legal_significance": "Extracted DATE: September 1, 2005",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 285245,
+      "text": "make restrictions on\nresignation in Michigan.\nOn October 31, 2013, [the charging party] received a\nletter from MEA",
+      "category": "report",
+      "speaker": null,
+      "date_ref": "October 31, 2013",
+      "legal_significance": "Extracted DATE: October 31, 2013",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 285356,
+      "text": "program had paid for medi-\ncal expenses totaling $1.9 million. Id. at 631. The\nsettlement agreement b",
+      "category": "report",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $1",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 285860,
+      "text": "me Court, this pilot program shall\ncontinue until July 30, 2009.",
+      "category": "court_order",
+      "speaker": null,
+      "date_ref": "July 30, 2009",
+      "legal_significance": "Extracted DATE: July 30, 2009",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 286024,
+      "text": "ct Court. The pilot program is expected to launch October 1, 2014\nand will continue through November 30, 2014. If i",
+      "category": "court_order",
+      "speaker": null,
+      "date_ref": "October 1, 2014",
+      "legal_significance": "Extracted DATE: October 1, 2014",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 286067,
+      "text": "s of appellate mediation. The program shall begin October 1, 2015, and shall remain\nin effect for 12 months. The Co",
+      "category": "court_order",
+      "speaker": null,
+      "date_ref": "October 1, 2015",
+      "legal_significance": "Extracted DATE: October 1, 2015",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 286203,
+      "text": "nt of the net proceeds not to exceed a maximum of $50,000 of the Lawyer\nTrust Account Program to support th",
+      "category": "court_order",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $50,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 286489,
+      "text": "1. Identify all dates between March 1, 2024, and April 21, 2025, on which you denied, \ncanceled, interfered with,",
+      "category": "motion",
+      "speaker": null,
+      "date_ref": "April 21, 2025",
+      "legal_significance": "Extracted DATE: April 21, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 286907,
+      "text": "Table of Contents: Court Rules\nxix\n Updated  October 16, 2024 \nRule 9.264 Ethics Materials and Programs .......",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "October 16, 2024",
+      "legal_significance": "Extracted DATE: October 16, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 287566,
+      "text": "Chapter 6. Criminal Procedure\nPage 607\n  Updated October 16, 2024 \nfabricated; and the need for secrecy regarding t",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "October 16, 2024",
+      "legal_significance": "Extracted DATE: October 16, 2024",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 287653,
+      "text": "Chapter 7. Appellate Rules\nPage 688\n Updated October 16, 2024 \n(2) This rule does not restrict the right of a p",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "October 16, 2024",
+      "legal_significance": "Extracted DATE: October 16, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 287879,
+      "text": "domestic incidents, identified as fabricated.\n8. December 5, 2023 - Emily served Andrew with a PPO, per police repo",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "December 5, 2023",
+      "legal_significance": "Extracted DATE: December 5, 2023",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 287889,
+      "text": "vides only minimal\n  vaccination information.\n17. May 31, 2024 - Emily withholds bedtime routines, preventing co",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May 31, 2024",
+      "legal_significance": "Extracted DATE: May 31, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 287987,
+      "text": "ed. The \nfund will raise the approximate cost of \n$150,000 for the program. \nThe 40-acre site was purchased",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $150,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 287988,
+      "text": "the program. \nThe 40-acre site was purchased for $2.6 \nmillion last year from the Malvern \nPreparator",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $2",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 288006,
+      "text": "your \u201cIncome Withholding Order\u201d was issued after January 1, 2005, there may be an \nautomatic stop date on the Orde",
+      "category": "court_order",
+      "speaker": null,
+      "date_ref": "January 1, 2005",
+      "legal_significance": "Extracted DATE: January 1, 2005",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 288054,
+      "text": "mal substitution under MCR 2.201(B) had occurred.\nJune 18, 2024 \u2014 Rent Invoice Shows Fabricated Balances\nA  docum",
+      "category": "complaint",
+      "speaker": null,
+      "date_ref": "June 18, 2024",
+      "legal_significance": "Extracted DATE: June 18, 2024",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 288070,
+      "text": "nd Ledger Manipulation (Exhibit N)\nMDHHS issued a $1,962.45 payment for my account, which Shady Oaks' bank fa",
+      "category": "complaint",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $1,962.45",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 288077,
+      "text": "918.\nJune 9, 2025 \u2014 Unlawful Eviction Executed\nOn June 9, 2025, I was forcibly removed based on manipulated bala",
+      "category": "complaint",
+      "speaker": null,
+      "date_ref": "June 9, 2025",
+      "legal_significance": "Extracted DATE: June 9, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 288376,
+      "text": "nd Human Services \n \n \n \n \n \n \n3.50 Case Closure \nJune 6, 2022 \n \n \n \nPage 55 of 70 \n \n \n4.6 Income Withholding",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": "June 6, 2022",
+      "legal_significance": "Extracted DATE: June 6, 2022",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 288435,
+      "text": "an Services \n \n \n2.05 Referrals and Applications \nJuly 1, 2022 \n \n \n \nPage 34 of 64 \n \nProgram \nType of \nAssista",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": "July 1, 2022",
+      "legal_significance": "Extracted DATE: July 1, 2022",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 289348,
+      "text": "ect to the duties, restrictions,\nRendered Monday, May 5, 2025\nPage 131\nMichigan Compiled Laws Complete Through",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May 5, 2025",
+      "legal_significance": "Extracted DATE: May 5, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 289465,
+      "text": "restrictions in sections 301 and\nRendered Monday, May 5, 2025\nPage 156\nMichigan Compiled Laws Complete Through",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May 5, 2025",
+      "legal_significance": "Extracted DATE: May 5, 2025",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 289542,
+      "text": "on authorized to conduct affairs in this state on January 1, 1983;\nrights and privileges; duties, restrictions, pen",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "January 1, 1983",
+      "legal_significance": "Extracted DATE: January 1, 1983",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 289758,
+      "text": "rofessional services.\nHistory: 1993, Act 23, Eff. June 1, 1993.\n450.4906 Disqualification, restriction, or limit",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 1, 1993",
+      "legal_significance": "Extracted DATE: June 1, 1993",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 290611,
+      "text": "was a\nmanipulation attempt for custody leverage.\nDecember 2, 2023: Fabricated domestic altercation \u2013 No evidence, n",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "December 2, 2023",
+      "legal_significance": "Extracted DATE: December 2, 2023",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 290612,
+      "text": "ights, including withholding the minor child\nfrom March 26, 2024, to May 5, 2024, and again from October 20, 2024,",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "March 26, 2024",
+      "legal_significance": "Extracted DATE: March 26, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 290686,
+      "text": "ergency-Operation-Plan \nRestricted access through April 6, 2020. \nCircuit Court: \nNon-emergency matters will be a",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 6, 2020",
+      "legal_significance": "Extracted DATE: April 6, 2020",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 290699,
+      "text": "f \nAccess to the courthouse is restricted through April 14, 2020. \nNo order posted.",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 14, 2020",
+      "legal_significance": "Extracted DATE: April 14, 2020",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 290700,
+      "text": "8a7 \nAccess to the courthouse is restricted until April 5, 2020. Those with essential in-person business \nwith an",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 5, 2020",
+      "legal_significance": "Extracted DATE: April 5, 2020",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 290770,
+      "text": "nsic-programs-\ncrime-scene-bpa.aspx (last visited April 14, 2019).\n107\t Id., at 178-179.\n108\t Edward J. Imwinkelri",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 14, 2019",
+      "legal_significance": "Extracted DATE: April 14, 2019",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291233,
+      "text": "court order, leading to\ncustody interference.\n22. March 26, 2024 - Emily filed a fabricated welfare check, claimin",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "March 26, 2024",
+      "legal_significance": "Extracted DATE: March 26, 2024",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291245,
+      "text": "with Lincoln, furthering\nalienation concerns.\n34. June 8, 2024 - Emily refused to return a sentimental family he",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 8, 2024",
+      "legal_significance": "Extracted DATE: June 8, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291616,
+      "text": "at 1:21 a,m, \ntrain to coach passengers for only $6.71 additional,\u00b7 This \ntrain Is convenient for Detroi",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $6.71",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291617,
+      "text": "Detroit suburbanites, New York Cen-\ntral charges $26.29 coach or $42.68 first class, round trip, \nwith Pu",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $26.29",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291618,
+      "text": "nites, New York Cen-\ntral charges $26.29 coach or $42.68 first class, round trip, \nwith Pullman charges ad",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $42.68",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291623,
+      "text": ", which has two trains \ndally to Chicago, charges $24.75 coach or $33,99 first class, \nroundtrip, Grand Tr",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $24.75",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291624,
+      "text": "trains \ndally to Chicago, charges $24.75 coach or $33,99 first class, \nroundtrip, Grand Trunk offers a low",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $33,99",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291625,
+      "text": "p.m. \nRoundtrip fares from Chicago range between $61.65 coach \nand $82,85 first class to Jacksonv!lle and",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $61.65",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291626,
+      "text": "ares from Chicago range between $61.65 coach \nand $82,85 first class to Jacksonv!lle and $81.70 and $110.8",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $82,85",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291627,
+      "text": "coach \nand $82,85 first class to Jacksonv!lle and $81.70 and $110.85 \nrespectively to Miami. \nThose taking",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $81.70",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291629,
+      "text": "ami. \nThose taking the B&O to Washington will pay $91.05 plus \na $1 seat charge for coach and $141 first c",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $91.05",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291630,
+      "text": "ing the B&O to Washington will pay $91.05 plus \na $1 seat charge for coach and $141 first class plus P",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $1",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 291631,
+      "text": "l pay $91.05 plus \na $1 seat charge for coach and $141 first class plus Pull-\nrnan charges for the round",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $141",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 292098,
+      "text": "t to any and \nall restrictions of record, \nDated: October 13, 1965 \nNOTICE IS HEREBY GIVEN \nthat on the 26th day of\u00b7",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "October 13, 1965",
+      "legal_significance": "Extracted DATE: October 13, 1965",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 292167,
+      "text": "DTE Gas residential customer is expected to save $2.37 each month because of energy optimization program",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $2.37",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 292751,
+      "text": "pecial Proceedings and Actions\nPage 402\n  Updated June 21, 2024 \n(e) that the juvenile will comply with restricti",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 21, 2024",
+      "legal_significance": "Extracted DATE: June 21, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 292774,
+      "text": "pecial Proceedings and Actions\nPage 424\n  Updated June 21, 2024 \n(5) the adequacy of the punishment or programmin",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 21, 2024",
+      "legal_significance": "Extracted DATE: June 21, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 292789,
+      "text": "pecial Proceedings and Actions\nPage 439\n  Updated June 21, 2024 \nthe placement is the least restrictive setting a",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 21, 2024",
+      "legal_significance": "Extracted DATE: June 21, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 292969,
+      "text": "Chapter 6. Criminal Procedure\nPage 604\n  Updated June 21, 2024 \nfabricated; and the need for secrecy regarding t",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 21, 2024",
+      "legal_significance": "Extracted DATE: June 21, 2024",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 293056,
+      "text": "Chapter 7. Appellate Rules\nPage 685\n Updated June 21, 2024 \n(2) This rule does not restrict the right of a p",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 21, 2024",
+      "legal_significance": "Extracted DATE: June 21, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 293760,
+      "text": "fied for the benefits of the Zone program totaled $82.1 million.\nTax Increment Authorities.  Act 450 of",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $82",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 293818,
+      "text": "y programs and current service levels from large ($1 million or \nmore) and unanticipated one-time Gene",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $1",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 293833,
+      "text": "o create 80 immediate new jobs and will receive a $480,000 Michigan Business \nDevelopment Program (MBDP) gra",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $480,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 293921,
+      "text": "(day care, after\nschool programs)\nLincoln Watson\n$100.00\nWeek\n Medical Expenses\nWho pays?\nType of Expense",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $100.00",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 293922,
+      "text": "unt\nFrequency\nAndrew Pigors\nStudent Loan Interest\n$300.00\nYear\nProgram Details\nHealthcare\n \nNo\nDid anyone h",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $300.00",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 294049,
+      "text": "218 48\nYour federal taxable wages this period are $717 87\nFederal: Standard\nWithholding\nTable\nOther Bene",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $717",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 294218,
+      "text": "n Energy Assistance Program \u2010 TSA \n \nGrant Award: $11,400,000 \nService Area: Statewide \nAnticipated Reach: 12,2",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $11,400,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 294321,
+      "text": "52 86\nYour federal taxable wages this period are $687 72\nFederal: Standard\nWithholding\nTable\nOther Bene",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $687",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 294408,
+      "text": "actic Spinal \nManipulation \nCovered \u2013 100% after \n$40 co-pay when \nreferred.  Up to 30 visits \nper cale",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $40",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 294549,
+      "text": "tes have added a premium assistance program since July 31, 2022, or for more information \non special enrollment r",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "July 31, 2022",
+      "legal_significance": "Extracted DATE: July 31, 2022",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 300048,
+      "text": "nces..\nMay 2025:\n\u2022 Rent unilaterally increased to $720/month.\n\u2022 Water and sewer billed without consent.",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $720",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 300533,
+      "text": "in a special alternative incarceration\nprogram on June 1, 2011, the samples shall be\nobtained not later than Jan",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 1, 2011",
+      "legal_significance": "Extracted DATE: June 1, 2011",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 300536,
+      "text": "incarceration program whose sentence\nbegins after June 1, 2011, the samples shall be\nobtained not later than 90",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 1, 2011",
+      "legal_significance": "Extracted DATE: June 1, 2011",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 300585,
+      "text": "y be ordered to pay a civil fine of\nnot more than $500.00.\u201d MCL 324.81147(3).\nB.\nAge-Specific Restrictions",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $500.00",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 301030,
+      "text": "reflect the amendment to MCL 750.224f, effective May 12, 2014,\nwhich also restricts a convicted felon\u2019s possess",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May 12, 2014",
+      "legal_significance": "Extracted DATE: May 12, 2014",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 301035,
+      "text": "under [MCL 28.425b(7)(n)].\u201d43\nOAG, 2003, No 7133 (May 2, 2003).\n6.6\nFirearms Restrictions Resulting from Misdem",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May 2, 2003",
+      "legal_significance": "Extracted DATE: May 2, 2003",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 301042,
+      "text": "more than 5 years, or by\na fine of not more than $2,500.00.\u201d MCL 750.227(2)-(3).\n6.7\nFirearms Restrictions R",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $2,500.00",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 301044,
+      "text": "not more than 90 days or a fine\nof not more than $100.00, or both.\u201d64 MCL 750.232a(1).\n2. Restrictions on",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $100.00",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 301091,
+      "text": "nt paid for eligible EV charging equipment, up to $70,000.  \nc. Clean Diesel Program: EGLE provides matchin",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $70,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 301258,
+      "text": "10\n(Score only for offenses committed on or after March 28, 20194) The offender otherwise interfered \nwith or atte",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "March 28, 2019",
+      "legal_significance": "Extracted DATE: March 28, 2019",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 301260,
+      "text": "019.\n10\n(Score only for offenses committed before March 28, 20195) The offender otherwise interfered with or \natte",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "March 28, 2019",
+      "legal_significance": "Extracted DATE: March 28, 2019",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 302877,
+      "text": "order, an instance\nof custodial interference.\n20. March 26, 2024 - Emily files a welfare check claiming Andrew was",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "March 26, 2024",
+      "legal_significance": "Extracted DATE: March 26, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 302887,
+      "text": "ressive behavior around LDW\nignored by Emily.\n30. June 1, 2024 - Emily refuses video calls, fostering alienation",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 1, 2024",
+      "legal_significance": "Extracted DATE: June 1, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 302888,
+      "text": "ly refuses video calls, fostering alienation.\n31. June 4, 2024 - Refuses Andrew\u2019s weekly call requests with LDW.",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "June 4, 2024",
+      "legal_significance": "Extracted DATE: June 4, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 302902,
+      "text": "for video call ignored, alienation persists.\n46. September 12, 2024 - Emily refuses Andrew\u2019s additional visitation re",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "September 12, 2024",
+      "legal_significance": "Extracted DATE: September 12, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 303577,
+      "text": "for program upon approval: \nResidential Fa\u00e7ade    $60-$500   \nPriority Repair    $0-$60   \n \nApplicatio",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $60",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 303578,
+      "text": "program upon approval: \nResidential Fa\u00e7ade    $60-$500   \nPriority Repair    $0-$60   \n \nApplication Che",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $500",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 303595,
+      "text": "is Parental Alienation Syndrome (PAS)? Retrieved\nApril 30, 2009 from www.custodycenter.com/PAS\nThe Washington Pos",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 30, 2009",
+      "legal_significance": "Extracted DATE: April 30, 2009",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304310,
+      "text": "338 61\nYour federal taxable wages this period are $533 84\nFederal: Standard\nWithholding\nTable\nOther Bene",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $533",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304315,
+      "text": "35 82\nYour federal taxable wages this period are $687 72\nFederal: Standard\nWithholding\nTable\nOther Bene",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $687",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304325,
+      "text": "455 18\nYour federal taxable wages this period are $514 61\nFederal: Standard\nWithholding\nTable\nOther Bene",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $514",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304355,
+      "text": "304 33\nYour federal taxable wages this period are $650 60\nFederal: Standard\nWithholding\nTable\nOther Bene",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $650",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304434,
+      "text": "total amount on the IWNs for support and arrears ($650 + $350 = \n$1,000) is higher than the withholding",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $650",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304435,
+      "text": "mount on the IWNs for support and arrears ($650 + $350 = \n$1,000) is higher than the withholding amount",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $350",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304436,
+      "text": "the IWNs for support and arrears ($650 + $350 = \n$1,000) is higher than the withholding amount allowed un",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $1,000",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304462,
+      "text": "d \n\uf0b7 \nAn IWN with a total biweekly withholding of $600 ($500 in current support and $100 in \npast-due su",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $600",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304463,
+      "text": "An IWN with a total biweekly withholding of $600 ($500 in current support and $100 in \npast-due support/",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $500",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304464,
+      "text": "withholding of $600 ($500 in current support and $100 in \npast-due support/arrears); \nIn this scenario,",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $100",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304468,
+      "text": "hich does not exceed the reasonable cost limit of $125 ($2,500 x 0.05). The total biweekly \nwithholding",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $125",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304469,
+      "text": "oes not exceed the reasonable cost limit of $125 ($2,500 x 0.05). The total biweekly \nwithholding amount f",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $2,500",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304470,
+      "text": "eekly \nwithholding amount for the IWN and NMSN is $710 ($600 + $110) and is less than the 50 \npercent of",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $710",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304471,
+      "text": "withholding amount for the IWN and NMSN is $710 ($600 + $110) and is less than the 50 \npercent of dispo",
+      "category": "ppo",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $600",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 304608,
+      "text": "Table of Contents: Court Rules\nxix\n Updated  November 26, 2024 \nRule 9.264 Ethics Materials and Programs .......",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "November 26, 2024",
+      "legal_significance": "Extracted DATE: November 26, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 305267,
+      "text": "Chapter 6. Criminal Procedure\nPage 607\n  Updated November 26, 2024 \nfabricated; and the need for secrecy regarding t",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "November 26, 2024",
+      "legal_significance": "Extracted DATE: November 26, 2024",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 305354,
+      "text": "Chapter 7. Appellate Rules\nPage 688\n Updated November 26, 2024 \n(2) This rule does not restrict the right of a p",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "November 26, 2024",
+      "legal_significance": "Extracted DATE: November 26, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 305666,
+      "text": "262 59\nYour federal taxable wages this period are $711 52\nFederal: Standard\nWithholding\nTable\nOther Bene",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $711",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 305676,
+      "text": "the City of Muskegon with a purchase price below $182,000, that meets \nprogram property standards \n\u2022 \nMainta",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $182,000,",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 306168,
+      "text": "pecial Proceedings and Actions\nPage 402\n  Updated April 26, 2024 \n(e) that the juvenile will comply with restricti",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 26, 2024",
+      "legal_significance": "Extracted DATE: April 26, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 306191,
+      "text": "pecial Proceedings and Actions\nPage 424\n  Updated April 26, 2024 \n(5) the adequacy of the punishment or programmin",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 26, 2024",
+      "legal_significance": "Extracted DATE: April 26, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 306206,
+      "text": "pecial Proceedings and Actions\nPage 439\n  Updated April 26, 2024 \nthe placement is the least restrictive setting a",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 26, 2024",
+      "legal_significance": "Extracted DATE: April 26, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 306472,
+      "text": "Chapter 7. Appellate Rules\nPage 684\n Updated April 26, 2024 \n(2) This rule does not restrict the right of a p",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 26, 2024",
+      "legal_significance": "Extracted DATE: April 26, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 306594,
+      "text": ". Administrative Rules of Court\nPage 783\n Updated April 26, 2024 \npanel may deny the request or establish restrict",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 26, 2024",
+      "legal_significance": "Extracted DATE: April 26, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 306606,
+      "text": ". Administrative Rules of Court\nPage 790\n Updated April 26, 2024 \n(a)restrict an aggrieved person from seeking to",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "April 26, 2024",
+      "legal_significance": "Extracted DATE: April 26, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 307786,
+      "text": "ng\n time  (November\n 7-10,  2024).\ns \nHalloween\n (October\n 31, 2024).\no \nThis  withholding\n is part  of  a larger  pa",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "October\n 31, 2024",
+      "legal_significance": "Extracted DATE: October\n 31, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 307796,
+      "text": "mestic  incidents,\n identified\n as fabricated.\n8, December  5, 2023 - Emily  served Andrew  with  a PPO, per  police",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "December  5, 2023",
+      "legal_significance": "Extracted DATE: December  5, 2023",
+      "gardner_indicators": [
+        2
+      ]
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 307806,
+      "text": "ides  only  minimal\nvaccination\n information.\n17. May  31, 2024 - Emily  withholds  bedtime routines, preventing",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "May  31, 2024",
+      "legal_significance": "Extracted DATE: May  31, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 307813,
+      "text": "before  an exchange,\nlimiting\n preparation.\n24 . October  20, 2024 - November\n 15,  2024 - Emily  withholds  Lincoln",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "October  20, 2024",
+      "legal_significance": "Extracted DATE: October  20, 2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 307814,
+      "text": ",\nlimiting\n preparation.\n24 . October  20, 2024 - November\n 15,  2024 - Emily  withholds  Lincoln  for  25 days,\noverla",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": "November\n 15,  2024",
+      "legal_significance": "Extracted DATE: November\n 15,  2024",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 307845,
+      "text": "18 78\nYour federal taxable wages this period are $634 83\nFederal: Standard\nWithholding\nTable\nOther Bene",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $634",
+      "gardner_indicators": []
+    },
+    {
+      "source": "evidence_quotes",
+      "id": 307850,
+      "text": "381 40\nYour federal taxable wages this period are $666 95\nFederal: Standard\nWithholding\nTable\nOther Bene",
+      "category": "general_court_doc",
+      "speaker": null,
+      "date_ref": null,
+      "legal_significance": "Extracted AMOUNT: $666",
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 1,
+      "text": "Emily alleged that she discovered a straw with suspected cocaine residue in her home and insinuated that I was responsible. Despite a lack of any evidence or history of substance abuse on my part, she has repeatedly referenced this fabricated claim to portray me as an unfit parent.",
+      "category": "FRAUD",
+      "actors": "Emily Watson",
+      "date": "October 15, 2023",
+      "severity": 3,
+      "gardner_indicators": [
+        2,
+        7
+      ]
+    },
+    {
+      "source": "d_drive_events",
+      "id": 2,
+      "text": "Emily delayed notifying me that LDW had hand, foot, and mouth disease until hours before a scheduled exchange. She refused to provide details about prior medical consultations, leaving me unprepared to care for him appropriately.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "October 4, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 3,
+      "text": "Without consulting me, Emily made unilateral decisions regarding LDW\u2019s vaccinations, only informing me afterward.",
+      "category": "MEDICAL",
+      "actors": "Emily Watson",
+      "date": "May 15, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 4,
+      "text": "Emily withheld LDW for over 37 days without a court order, depriving me of parenting time during a critical bonding period, including Easter and Spring Break.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "May 2, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 5,
+      "text": "Emily again withheld LDW for 23 days, including Halloween and LDW\u2019s birthday, despite my court-ordered parenting time.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "November 12, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 8,
+      "text": "Emily refused a weekly video call schedule, citing discomfort without proposing alternatives.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "June 1, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 18,
+      "text": "3. Withholding Parenting Time",
+      "category": "INTERFERENCE",
+      "actors": "",
+      "date": "November 19, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 19,
+      "text": "Emily withheld LDW for 37 consecutive days without justification, depriving me of meaningful interaction and disrupting our bond.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "May 2, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 20,
+      "text": "Emily again withheld LDW, which included Halloween and his birthday, both critical opportunities for bonding and creating positive memories.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "November 12, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 24,
+      "text": "Albert Watson served a PPO violation during an exchange, mocking me and creating unnecessary tension. This misuse of legal processes is designed to intimidate and alienate.",
+      "category": "PPO_ABUSE",
+      "actors": "Albert Watson",
+      "date": "October 20, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 29,
+      "text": "Emily\u2019s withholding of Lincoln ends after 25 consecutive days.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "November 15, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 31,
+      "text": "Emily continues withholding Lincoln during his birthday week.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "November 7, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 33,
+      "text": "Emily leaves for vacation early, taking Lincoln and withholding him through Halloween.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "October 30, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 34,
+      "text": "Emily withholds Lincoln during Andrew\u2019s scheduled parenting time.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "October 27, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 37,
+      "text": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew\u2019s parenting time.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "October 20, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 45,
+      "text": "Emily withholds critical details about Lincoln\u2019s illness, preventing Andrew from adequately preparing for care.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "October 4, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 61,
+      "text": "Emily withholds full pediatric records after Andrew requests them per the court order.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "May 28, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 68,
+      "text": "Court orders Emily to return Lincoln to Andrew after a month-long withholding.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "May 2, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 69,
+      "text": "- May 2, 2024: Emily withholds Lincoln for 37 days, citing unfounded claims about safety.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "March 26, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 72,
+      "text": "Emily\u2019s withholding of Lincoln ends after 25 consecutive days.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "November 15, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 74,
+      "text": "Emily continues withholding Lincoln during his birthday week.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "November 7, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 76,
+      "text": "Emily leaves for vacation early, taking Lincoln and withholding him through Halloween.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "October 30, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 77,
+      "text": "Emily withholds Lincoln during Andrew\u2019s scheduled parenting time.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "October 27, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 80,
+      "text": "Emily begins withholding Lincoln again, overlapping Halloween and Andrew\u2019s parenting time.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "October 20, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 88,
+      "text": "Emily withholds critical details about Lincoln\u2019s illness, preventing Andrew from adequately preparing for care.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "October 4, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 104,
+      "text": "Emily withholds full pediatric records after Andrew requests them per the court order.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "May 28, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 111,
+      "text": "Court orders Emily to return Lincoln to Andrew after a month-long withholding.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "May 2, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 112,
+      "text": "- May 2, 2024: Emily withholds Lincoln for 37 days, citing unfounded claims about safety.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "March 26, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 121,
+      "text": ", she withheld LDW for 37 consecutive days, depriving me of essential bonding time and causing emotional harm to LDW.",
+      "category": "INTERFERENCE",
+      "actors": "",
+      "date": "May 2, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 122,
+      "text": ", she withheld LDW again, including his birthday on November 9 and Halloween, critical opportunities for shared experiences that strengthen parent-child relationships.",
+      "category": "INTERFERENCE",
+      "actors": "",
+      "date": "November 15, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 127,
+      "text": ", and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn\u2019t want to talk.\" These refusals create a gap in our relationship and prevent LDW from maintaining the continuity of our bond during her parenting weeks.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "June 1, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 129,
+      "text": ", LDW returned from Emily\u2019s care with severe rashes on his face and body. Despite my repeated inquiries, Emily dismissed the condition as \"minor\" and refused to seek medical advice.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "June 15, 2024",
+      "severity": 3,
+      "gardner_indicators": [
+        7
+      ]
+    },
+    {
+      "source": "d_drive_events",
+      "id": 133,
+      "text": ", and September 12, 2024, Emily refused to allow scheduled video calls, claiming LDW \u201cdoesn\u2019t want to talk.\u201d These actions disrupt LDW\u2019s sense of connection and emotional stability.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "June 1, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 137,
+      "text": ", Emily withheld LDW for 37 consecutive days, disrupting our bond and creating emotional distress for LDW.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "May 2, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 140,
+      "text": ", claiming he \"doesn\u2019t want to talk\" without providing evidence. Additionally, she has failed to share updates on LDW\u2019s health and milestones, including withholding information about vaccinations on",
+      "category": "INTERFERENCE",
+      "actors": "",
+      "date": "September 12, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 155,
+      "text": ", she withheld LDW for 37 consecutive days, depriving me of essential bonding time and causing emotional harm to LDW.",
+      "category": "INTERFERENCE",
+      "actors": "",
+      "date": "May 2, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 156,
+      "text": ", she withheld LDW again, including his",
+      "category": "INTERFERENCE",
+      "actors": "",
+      "date": "November 15, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 161,
+      "text": ", and September 12, 2024, Emily denied my requests for scheduled video calls with LDW, claiming he \"doesn\u2019t want to talk.\" These refusals create a gap in our relationship and prevent LDW from maintaining the continuity of our bond during her parenting weeks.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "June 1, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 163,
+      "text": ", LDW returned from Emily\u2019s care with severe rashes on his face and body. Despite my repeated inquiries, Emily dismissed the condition as \"minor\" and refused to seek medical advice.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "June 15, 2024",
+      "severity": 3,
+      "gardner_indicators": [
+        7
+      ]
+    },
+    {
+      "source": "d_drive_events",
+      "id": 167,
+      "text": ", Emily refused to allow scheduled video calls, claiming LDW \u201cdoesn\u2019t want to talk.\u201d These actions disrupt LDW\u2019s sense of connection and emotional stability.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "September 12, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 171,
+      "text": ", Emily withheld LDW for 37 consecutive days, disrupting our bond and creating emotional distress for LDW.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "May 2, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 174,
+      "text": ", during a parenting exchange, LDW referred to Emily\u2019s partner as \u201cDaddy,\u201d despite my consistent presence and active role in his life. Emily refused to address the confusion this causes.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "October 20, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 175,
+      "text": ", Emily refused to allow scheduled video calls, citing vague excuses such as LDW \u201cbeing too tired\u201d or \u201cnot wanting to talk.\u201d",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "September 12, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 177,
+      "text": ", Emily withheld LDW for 37 consecutive days, ignoring the court-ordered parenting schedule.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "May 2, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 178,
+      "text": ", Emily withheld LDW again, including during critical bonding opportunities such as Halloween and his birthday.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "November 12, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 179,
+      "text": ", I requested an additional day with LDW to make up for missed time during her vacation. Emily refused, showing no willingness to cooperate.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "October 5, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 182,
+      "text": ", LDW\u2019s birthday, Emily refused to allow me any time with him, depriving us of the chance to celebrate together.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "November 9, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 183,
+      "text": ", Emily denied my request to take LDW trick-or-treating, citing her vacation plans.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "October 31, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 184,
+      "text": ", Emily refused to involve me in discussions about extracurricular activities or sports for LDW, limiting my ability to support his interests.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "July 9, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 187,
+      "text": ", I requested a weekly video chat during off-weeks to maintain LDW\u2019s sense of connection and security. Emily refused without offering an alternative.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "June 1, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 193,
+      "text": ", after being withheld for 25 days, LDW demonstrated regression in toilet training, a skill he had previously mastered while in my care.",
+      "category": "INTERFERENCE",
+      "actors": "",
+      "date": "November 15, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 194,
+      "text": ", LDW referred to Emily\u2019s partner as \"Daddy\" during an exchange, expressing confusion about his parental roles. This manipulation undermines LDW\u2019s emotional security and erodes his sense of identity.",
+      "category": "GENERAL",
+      "actors": "Emily Watson",
+      "date": "October 20, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 195,
+      "text": ", LDW\u2019s second birthday, Emily denied my request to see him, depriving us both of an opportunity to celebrate together. Such actions disrupt LDW\u2019s emotional attachment and sense of security in our relationship.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "November 9, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 196,
+      "text": ", Emily withheld LDW without providing updates, causing unnecessary confusion and anxiety for him. Upon his return, LDW appeared disoriented and took several days to readjust to his normal routine.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "November 12, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "d_drive_events",
+      "id": 199,
+      "text": ", Emily denied a scheduled video call, citing that LDW \u201cdidn\u2019t want to talk.\u201d However, LDW later expressed excitement when he saw me in person, contradicting Emily\u2019s claim and highlighting her alienating behavior.",
+      "category": "INTERFERENCE",
+      "actors": "Emily Watson",
+      "date": "June 1, 2024",
+      "severity": 3,
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Cfd5aba895223",
+      "text": "Defendant requested, and the Court signed an ex parte order suspending the Plaintiffs",
+      "actor": "court_text",
+      "classification": "parenting_time_restriction",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C515f3e68b4ba",
+      "text": "in a domestic violence shelter shall not be construed as",
+      "actor": "court_text",
+      "classification": "restriction_prohibition",
+      "status": "active",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C1d6a496779a2",
+      "text": "On 8/8/25, the Mother filed an ex parte motion to suspend the Father's parenting time.",
+      "actor": "court_text",
+      "classification": "parenting_time_restriction",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C8fc17501ba04",
+      "text": "Court considered supervised parenting",
+      "actor": "court_text",
+      "classification": "parenting_time_restriction",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C838c9ea780ad",
+      "text": "exercise supervised parenting time.",
+      "actor": "court_text",
+      "classification": "parenting_time_restriction",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C09c773f2bb9c",
+      "text": "Based on all of the above, the Father's objection to the ex parte order suspending his",
+      "actor": "court_text",
+      "classification": "parenting_time_restriction",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C8e529913f494",
+      "text": "parenting time is denied. The Court also notes that it offered supervised",
+      "actor": "court_text",
+      "classification": "parenting_time_restriction",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Ca58bec5f5ad4",
+      "text": "a motion for supervised",
+      "actor": "court_text",
+      "classification": "parenting_time_restriction",
+      "status": "active",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Cbf86d1c81ee4",
+      "text": "hearing\nThat  if  the Court  believes  any  restriction\n on parenting\n time  remains  necessary,  the Court  schedule  a focused\nevidentiary\n hearing  where  both  sides  can present  evidence  and cross-exa",
+      "actor": "Hon. Jenny L. McNeill",
+      "classification": "judicial_misconduct",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C289700747cf4",
+      "text": "holidays,\n and  the way  the ex parte  suspension\n has\nfunctioned\n since  August  8, 2025.\n1. Chronological\n withholding\n pattern\nFirst,",
+      "actor": "opposing_party",
+      "classification": "ex_parte_violation",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C2470028f4ec8",
+      "text": "LDW\u2019s doctor\u2019s appointment or his\nvaccinations on November 19, 2024.\n3. Withholding Parenting Time\nEmily\u2019s pattern of",
+      "actor": "record",
+      "classification": "evidence_factual",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Cdc0ae0e2afe4",
+      "text": "extended withholding periods, such as March 26 to May 2, 2024, LDW displayed\nreluctance to leave my care, sugge",
+      "actor": "record",
+      "classification": "evidence_factual",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C65c54a8c5d76",
+      "text": "after a month-long withholding.\nMarch 26, 2024 - May 2, 2024: Emily withholds Lincoln for 37 days, citing unfo",
+      "actor": "record",
+      "classification": "evidence_factual",
+      "status": "active",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Cfee2347c05ad",
+      "text": "ex parte suspension has functioned since August 8, 2025. 1. Chronological withholding pattern First, the timeline of withheld parenting ti: ex parte suspension has functioned since August 8, 2025. 1. Chronological withholding pattern First, the timeline of withheld parenting time as I have experienc",
+      "actor": "court",
+      "classification": "procedural_event",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Cdcd2d85b7124",
+      "text": "ORAL STATEMENT - CHRONOLOGICAL ALIENATION, BIRTHDAYS, LABOR DAY & SUPERVISED TIME CLARIFICATION Your Honor, my name is Andrew J. Pigors. I am Lincoln': ORAL STATEMENT - CHRONOLOGICAL ALIENATION, BIRTHDAYS, LABOR DAY & SUPERVISED TIME CLARIFICATION Your Honor, my name is Andrew J. Pigors. I am Lincol",
+      "actor": "court",
+      "classification": "procedural_event",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C6cfab4392607",
+      "text": "Order Imposing Filing Bond Requirement: Court imposes filing bond requirement on Plaintiff, restricting access to court",
+      "actor": "court",
+      "classification": "procedural_event",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Ca56a6b4e3b79",
+      "text": "Factor (f) MCL 722.23(f): Moral fitness \u2014 Defendant engaged in alienation and dishonesty constituting moral unfitness",
+      "actor": "Andrew Pigors",
+      "classification": "best_interest_factor_f",
+      "status": "active",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C06a751d0d0db",
+      "text": "Factor (i) MCL 722.23(i): Reasonable preference of child \u2014 Preference influenced by alienation campaign",
+      "actor": "Andrew Pigors",
+      "classification": "best_interest_factor_i",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Cd5d5d41bf495",
+      "text": "Defendant engaged in systematic parental alienation: refusal to facilitate contact, disparagement, obstruction of parenting time",
+      "actor": "Andrew Pigors",
+      "classification": "parental_alienation",
+      "status": "supported",
+      "gardner_indicators": [
+        1
+      ]
+    },
+    {
+      "source": "claims",
+      "claim_id": "C08a2c0787025",
+      "text": "Alienation documented by 329+ days of zero contact between father and child \u2014 longest period in child life",
+      "actor": "Andrew Pigors",
+      "classification": "parental_alienation",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C5c84c8b0e873",
+      "text": "Friend of Court failed to investigate or address parental alienation per MCL 552.505",
+      "actor": "Andrew Pigors",
+      "classification": "parental_alienation",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Cb0da25930d02",
+      "text": "Proper cause and change of circumstances exist under Vodvarka v Grasher to revisit custody: 329+ days separation, alienation, judicial bias",
+      "actor": "Andrew Pigors",
+      "classification": "change_of_circumstances",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C3b6dbb45fb55",
+      "text": "PPO restricts fundamental parental rights without adequate justification \u2014 no finding of danger to child",
+      "actor": "Andrew Pigors",
+      "classification": "ppo_fundamental_rights",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Ccf23e4902c43",
+      "text": "PPO terms are overbroad \u2014 restricting all contact including necessary parenting communications",
+      "actor": "Andrew Pigors",
+      "classification": "ppo_overbreadth",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Cbd583b40926b",
+      "text": "Substantive due process violated: fundamental right to parent arbitrarily restricted without compelling justification",
+      "actor": "Andrew Pigors",
+      "classification": "substantive_due_process",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Ccdbbda3595e1",
+      "text": "Superintending control warranted under MCR 3.302/MCL 600.1701 \u2014 lower courts exceeding jurisdiction in custody restrictions",
+      "actor": "Andrew Pigors",
+      "classification": "superintending_control",
+      "status": "active",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C882bf0ca17c2",
+      "text": "ing withholding information about\nvaccinations on November 19, 2024.\nWithholding Parenting Time:\nEmily has withheld L",
+      "actor": "record",
+      "classification": "parenting_time_evidence",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Cc26e227ade6d",
+      "text": ", such as doctor\u2019s\nvisits and vaccinations (e.g., November 19, 2024).\nWithholding Parenting Time:\nWithheld LDW from M",
+      "actor": "record",
+      "classification": "parenting_time_evidence",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Cc063e507b74c",
+      "text": "ction Orders (PPOs) to restrict my access to LDW:\nOctober 20, 2024: Albert Watson served a PPO violation during an e",
+      "actor": "record",
+      "classification": "violation_evidence",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "Cb7157d6af7fd",
+      "text": "the ex parte  suspension\n has\nfunctioned\n since  August  8, 2025.\n1. Chronological\n withholding\n pattern\nFirst,  t",
+      "actor": "record",
+      "classification": "ex_parte_evidence",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "claims",
+      "claim_id": "C4b9802ff3293",
+      "text": "LDW\u2019s doctor\u2019s appointment or his\nvaccinations on November 19, 2024.\n3. Withholding Parenting Time\nEmily\u2019s pattern of",
+      "actor": "record",
+      "classification": "parenting_time_evidence",
+      "status": "supported",
+      "gardner_indicators": []
+    },
+    {
+      "source": "docket_events",
+      "event_id": "DE-0133",
+      "text": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 3/26/25 PAGE 7 CASE HISTORY S[ED April 1, 2024: Summons and Complaint for Patemity filed w'",
+      "summary": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 3/26/25 PAGE 7 CASE HISTORY S[ED April 1, 2024: Summons and Complaint for Patemity filed w'tli the Corirt. April 11, 2024: Order to Appear fo",
+      "date": "2024-04-01",
+      "event_type": "order",
+      "gardner_indicators": []
+    },
+    {
+      "source": "docket_events",
+      "event_id": "DE-0134",
+      "text": "PIGORS v WATSON FILE # 2024-001507-DC Recoinmendation dated 3/26/25 PAGE 7 CASH, HISTORY SUMMARIZF,D April 1, 2024: Suinrnons and Complaint for Patern",
+      "summary": "PIGORS v WATSON FILE # 2024-001507-DC Recoinmendation dated 3/26/25 PAGE 7 CASH, HISTORY SUMMARIZF,D April 1, 2024: Suinrnons and Complaint for Paternity filed ivith the Court. April 11, 2024: Order t",
+      "date": "2024-04-01",
+      "event_type": "order",
+      "gardner_indicators": []
+    },
+    {
+      "source": "docket_events",
+      "event_id": "DE-0199",
+      "text": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 3/26/25 PAGE 2 was titled as follows: \"AFFnDAVIT IN SUPPORT OF MOTION TO MODIFY CUSTODY AND",
+      "summary": "PIGORS v WATSON Fn,E # 2024-001507-DC Recommendation dated 3/26/25 PAGE 2 was titled as follows: \"AFFnDAVIT IN SUPPORT OF MOTION TO MODIFY CUSTODY AND PARENTING TIME\" stating \"Plaintiff seeks an order",
+      "date": "2024-08-23",
+      "event_type": "order_grant",
+      "gardner_indicators": []
+    },
+    {
+      "source": "docket_events",
+      "event_id": "DE-0216",
+      "text": "ction Orders (PPOs) to restrict my access to LDW: October 20, 2024: Albert Watson served a PPO violation during an e",
+      "summary": "ction Orders (PPOs) to restrict my access to LDW: October 20, 2024: Albert Watson served a PPO violation during an e",
+      "date": "2024-10-20",
+      "event_type": "order",
+      "gardner_indicators": []
+    },
+    {
+      "source": "docket_events",
+      "event_id": "DE-0218",
+      "text": "parenting exchange, taking Lincoln from his arms. October 20, 2024: Emily begins withholding Lincoln again, overlapp",
+      "summary": "parenting exchange, taking Lincoln from his arms. October 20, 2024: Emily begins withholding Lincoln again, overlapp",
+      "date": "2024-10-20",
+      "event_type": "parenting_time",
+      "gardner_indicators": []
+    },
+    {
+      "source": "docket_events",
+      "event_id": "DE-0250",
+      "text": "LDW\u2019s doctor\u2019s appointment or his vaccinations on November 19, 2024. 3. Withholding Parenting Time Emily\u2019s pattern of",
+      "summary": "LDW\u2019s doctor\u2019s appointment or his vaccinations on November 19, 2024. 3. Withholding Parenting Time Emily\u2019s pattern of",
+      "date": "2024-11-19",
+      "event_type": "ppo",
+      "gardner_indicators": []
+    },
+    {
+      "source": "docket_events",
+      "event_id": "DE-0253",
+      "text": "ing withholding information about vaccinations on November 19, 2024. Withholding Parenting Time: Emily has withheld L",
+      "summary": "ing withholding information about vaccinations on November 19, 2024. Withholding Parenting Time: Emily has withheld L",
+      "date": "2024-11-19",
+      "event_type": "parenting_time",
+      "gardner_indicators": []
+    },
+    {
+      "source": "docket_events",
+      "event_id": "DE-0255",
+      "text": ", such as doctor\u2019s visits and vaccinations (e.g., November 19, 2024). Withholding Parenting Time: Withheld LDW from M",
+      "summary": ", such as doctor\u2019s visits and vaccinations (e.g., November 19, 2024). Withholding Parenting Time: Withheld LDW from M",
+      "date": "2024-11-19",
+      "event_type": "parenting_time",
+      "gardner_indicators": []
+    },
+    {
+      "source": "docket_events",
+      "event_id": "DE-0304",
+      "text": "Order Imposing Filing Bond Requirement",
+      "summary": "Court imposes filing bond requirement on Plaintiff, restricting access to court",
+      "date": "2025-05-16",
+      "event_type": "order",
+      "gardner_indicators": []
+    },
+    {
+      "source": "docket_events",
+      "event_id": "DE-0319",
+      "text": "ex parte suspension has functioned since August 8, 2025. 1. Chronological withholding pattern First, the timeline of withheld parenting ti",
+      "summary": "ex parte suspension has functioned since August 8, 2025. 1. Chronological withholding pattern First, the timeline of withheld parenting time as I have experienced it: 1. From March 26, 2024",
+      "date": "2025-08-08",
+      "event_type": "parenting_time",
+      "gardner_indicators": []
+    },
+    {
+      "source": "docket_events",
+      "event_id": "DE-0329",
+      "text": "ORAL STATEMENT - CHRONOLOGICAL ALIENATION, BIRTHDAYS, LABOR DAY & SUPERVISED TIME CLARIFICATION Your Honor, my name is Andrew J. Pigors. I am Lincoln'",
+      "summary": "ORAL STATEMENT - CHRONOLOGICAL ALIENATION, BIRTHDAYS, LABOR DAY & SUPERVISED TIME CLARIFICATION Your Honor, my name is Andrew J. Pigors. I am Lincoln's father. I want to briefly put on the record a ch",
+      "date": "2025-08-08",
+      "event_type": "parenting_time",
+      "gardner_indicators": []
+    }
+  ]
+}

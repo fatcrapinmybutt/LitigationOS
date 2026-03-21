@@ -43,9 +43,50 @@ python C:\Users\andre\LitigationOS\00_SYSTEM\local_model\copilot_startup_hook.py
 cat C:\Users\andre\LitigationOS\00_SYSTEM\STARTUP_REPORT.md
 # 3. Recall past sessions for continuity
 python C:\Users\andre\LitigationOS\00_SYSTEM\local_model\session_recall.py recent
+# 4. CHECK WHAT TO DO NEXT — continuity engine (CRITICAL)
+python C:\Users\andre\LitigationOS\00_SYSTEM\local_model\session_continuity_engine.py
+# 5. Read the continuity report
+cat C:\Users\andre\LitigationOS\00_SYSTEM\CONTINUITY_REPORT.md
 ```
 
 Then: Check deadline urgency via DB: `SELECT * FROM deadlines WHERE due_date_iso >= date('now') ORDER BY due_date_iso LIMIT 10`. Calculate separation day count (Aug 8, 2025 → today).
+
+### Session Continuity Tables (query on EVERY startup)
+Future sessions MUST query these 5 tables in `litigation_context.db` to know what's pending:
+```sql
+-- What tasks need doing? (priority order)
+SELECT id, title, priority, deadline, status FROM master_todos
+  WHERE status IN ('pending','in_progress','blocked') ORDER BY priority;
+-- What pipelines are incomplete?
+SELECT phase_id, status, items_processed, items_total FROM pipeline_registry
+  WHERE status NOT IN ('completed') ORDER BY phase_number;
+-- What did the last session accomplish?
+SELECT * FROM session_handoff ORDER BY id DESC LIMIT 1;
+-- Which filings are ready vs blocked?
+SELECT vehicle_name, status, readiness_score, deadline FROM filing_readiness
+  ORDER BY readiness_score ASC;
+-- Any new context intelligence?
+SELECT * FROM session_intelligence ORDER BY id DESC LIMIT 20;
+```
+
+### Session Exit Protocol (BEFORE ending any session)
+Every session MUST write a handoff record before ending:
+```sql
+INSERT INTO session_handoff (session_id, work_completed, work_in_progress,
+  work_blocked, next_priorities, critical_notes)
+VALUES ('<session_id>', '<json_array>', '<json_array>', '<json_array>',
+  '<json_array>', '<json_array>');
+-- Also update master_todos status for any completed tasks
+UPDATE master_todos SET status='done', completed_at=datetime('now'),
+  completed_by_session='<session_id>' WHERE id=<task_id>;
+```
+
+### Autonomous Execution Rules
+- **Deadline-driven:** If any deadline is ≤3 days away, it becomes P0 — drop everything else
+- **Resume partial pipelines:** Any pipeline with status='partial' should be re-run (they're idempotent)
+- **Don't recreate what exists:** Check pipeline_registry before building new pipelines
+- **Update as you go:** After every task completion, UPDATE master_todos AND pipeline_registry
+- **Ingest continuously:** JSON, PDF, DOCX across all drives — harvest into DB without being asked
 
 ---
 

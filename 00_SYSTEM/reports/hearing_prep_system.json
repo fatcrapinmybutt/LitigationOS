@@ -1,0 +1,1176 @@
+{
+  "tool": "#256 Court Hearing Preparation System",
+  "generated": "2026-03-19T09:58:42.936246",
+  "case": "Pigors v. Watson",
+  "hearings_found": 3,
+  "packages": [
+    {
+      "hearing_index": 1,
+      "title": "COA Brief Deadline",
+      "date": "2026-04-15",
+      "case_id": "TBD",
+      "source": "hearing_calendar",
+      "location": "Muskegon County Courthouse",
+      "agenda": {
+        "pre_hearing": [
+          "Review all evidence exhibits and organize by topic",
+          "Prepare 3 copies of each exhibit (court, opposing, self)",
+          "Print and review hearing outline",
+          "Confirm hearing date/time with court clerk",
+          "File proof of service at least 7 days before hearing (2026-04-15)",
+          "Prepare binder with tabbed sections",
+          "Review applicable court rules and standards",
+          "Practice opening statement (2-3 minutes max)"
+        ],
+        "day_of": [
+          "Arrive at 990 Terrace Street, Muskegon, MI 49442 at least 30 minutes early",
+          "Check in with court clerk upon arrival",
+          "Dress professionally (suit/business attire)",
+          "Bring: photo ID, case file, exhibits, pen, notepad",
+          "Silence phone before entering courtroom",
+          "Stand when judge enters/exits; address as 'Your Honor'",
+          "Speak clearly and at moderate pace"
+        ],
+        "during_hearing": [
+          "State name and case number for the record",
+          "Present evidence in organized, logical sequence",
+          "Object promptly to inadmissible evidence (see Objection Cheatsheet)",
+          "Take notes on judge's comments and opposing arguments",
+          "Request clarification on any orders issued"
+        ],
+        "post_hearing": [
+          "Request copy of any written orders",
+          "Note deadline for any post-hearing submissions",
+          "Write summary of what happened while fresh",
+          "Identify any appeal issues to preserve"
+        ]
+      },
+      "key_arguments": [
+        {
+          "authority": "In re Dettmer, 260 Mich App 356 (2004)",
+          "claim": "567-day denial of parenting time constitutes constructive restraint",
+          "elements": "MCL 600.4301 habeas corpus; constructive restraint; parental liberty interest; void ex parte orders",
+          "supporting_evidence": "Father denied ALL parenting time for 567+ consecutive days via ex parte orders lacking MCR 3.207(C) compliance",
+          "chain_complete": true
+        },
+        {
+          "authority": "Troxel v Granville, 530 US 57 (2000)",
+          "claim": "Suspension of all parenting time without evidentiary hearing violates substantive due process",
+          "elements": "Fundamental liberty interest; oldest recognized right; strict scrutiny for state interference; evidentiary hearing required",
+          "supporting_evidence": "The Supreme Court in Troxel v Granville, 530 US 57 (2000) recognized that the liberty interest of parents in the care, custody, and control of their children is perhaps the oldest of the fundamental l...",
+          "chain_complete": true
+        },
+        {
+          "authority": "MCR 3.206(A)",
+          "claim": "best interest of child",
+          "elements": "Standard: Clear and convincing evidence",
+          "supporting_evidence": "best interests  of  the child  standard  under  MCL  722.23.  \nThis  request  is based  on\nsignificant\n changes  in circumstances,\n including\n parental  alienation,\n legal  manipulations,\n financial\nf",
+          "chain_complete": true
+        }
+      ],
+      "anticipated_opposition": [
+        {
+          "opposing_argument": "2.7 HARM/DAMAGES LEDGER (HDL)\nRecord-only harms (no speculation):\n- parenting-time deprivation dates (if documented)",
+          "rebuttal_theory": "Record-only rebuttal candidate: demand pinpointed evidentiary basis; if conclusory label, flag missing findings/support and require on-record factual findings tied to admissible evidence.",
+          "proof_needed": "Transcript segment for basis; COE findings language; service/notice proof; contrary objective records (if admissible).",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        }
+      ],
+      "evidence_to_present": [
+        {
+          "exhibit_no": "Exhibit 1",
+          "category": "TRANSCRIPT",
+          "quote_preview": "HEARING\n 11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant\n requested,\n and  the Court  signed  an ex parte  order  suspending\n the  Plaintiff's\nparenting  time.  An evidentiary\n hearing  was held on S...",
+          "speaker": "COURT",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 2",
+          "category": "TRANSCRIPT",
+          "quote_preview": "hearing  and\nsubpoenaed\n the  \nwhich  occurred  on 1 1/26/25.\nLaw\nIf a \nparenting  \ntime \nmodification\n \ndoes  not change  the \nchild's  \nestablished\n \ncustodial\nenvironment,\n the parenting  time  mod...",
+          "speaker": null,
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 3",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "notice  when  parenting  time  wifl not occur.\n(i) Any  other  reasonable\n condition  determined\n to be appropriate\n in the particular case. MCL\n722.27a(9).\nPage 2\nPigors  v Watson  \n2024-001507-DC",
+          "speaker": "PIGORS",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 4",
+          "category": "TRANSCRIPT",
+          "quote_preview": "the Court.  He describes\n being  around\nthreaten  him, being  followed  and other  dangerous\nactivities.  These  situations\n are harmful  to the  child  and place  him at risk.\n* \nThe reasonable\n like...",
+          "speaker": "COURT",
+          "page": 1,
+          "legal_significance": "IMPEACHMENT_MATERIAL"
+        },
+        {
+          "exhibit_no": "Exhibit 5",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "hearing  the argument\n of  the  parties;\nTHE  COURT\n FINDS  AS  FOLLOWS:\n1.  \nOn  February  14, 2025  Plaintiff/Father\n filed  a Motion\n regarding\n Parenting\n Time.\nof  the motion\n included\n the follo...",
+          "speaker": "COURT",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 6",
+          "category": "JUDGE_ORDER",
+          "quote_preview": "IT IS ORDERED\n that  the Plaintiff's\n Motion\n regarding  Parenting\n Tinie  filed  on February  14, 2025  is\ndismissed for the reasons  stated  above. \nParenting  Time  shall  remain  pursuant\n to the ...",
+          "speaker": null,
+          "page": 1,
+          "legal_significance": "BINDING_DETERMINATION"
+        },
+        {
+          "exhibit_no": "Exhibit 7",
+          "category": "JUDGE_ORDER",
+          "quote_preview": "hearing,  the Plaintiff\n addressed  the  fact  that  the Mother  had  her Easter  weekend,  which  fell  on his\nweekend.  He demanded  make-up  parenting\n time  (The  Plaintiff\n also tried  to file  a...",
+          "speaker": null,
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 8",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "HEARING\nEMILY\n WATSON,\nDefendant.\nAndrew\n Pigors\nSelf-Represented\n Litigant\nJennifer\n Batnes  (P55406)\nAttorney\n for  Defendant\nBoth  parties  appeared\n for  a Trial  regarding\n Custody,\n Parenting  T...",
+          "speaker": "PIGORS",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 9",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "HEARING  11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant  requested,  and the Court  signed  an ex parte  order  suspending  the Plaintiffs\nparenting  time. An evidentiary  hearing  was held on Septe...",
+          "speaker": "COURT",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 10",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "hearing  and\nsubpoenaed\n the two health  west  staff  for the next hearing,  which  occurred  on 41/26/25.\nIf a parenting time modification  does not change  the child's  estabfished  \ncustodial\nenvir...",
+          "speaker": null,
+          "page": 1,
+          "legal_significance": ""
+        }
+      ],
+      "witness_outlines": {
+        "FOC_caseworker": {
+          "name": "FOC Caseworker (Pamela Rusco)",
+          "direct_topics": [
+            "Parenting time recommendations made",
+            "Basis for any restrictions",
+            "Observations of parent-child interaction",
+            "Compliance with existing orders by both parties"
+          ],
+          "cross_topics": [
+            "How many home visits were conducted?",
+            "Did you interview the child privately?",
+            "What specific evidence of harm did you observe?",
+            "Were both parents given equal consideration?",
+            "Did you review all submitted evidence?"
+          ]
+        },
+        "teacher": {
+          "name": "Child's Teacher / School Personnel",
+          "direct_topics": [
+            "Child's academic performance and behavior",
+            "Changes observed over time",
+            "Parent involvement in school activities",
+            "Communications from each parent"
+          ],
+          "cross_topics": [
+            "Have you observed the child with each parent?",
+            "Any concerns about either parent?",
+            "Is the child's performance consistent?"
+          ]
+        },
+        "family_member": {
+          "name": "Family Member / Character Witness",
+          "direct_topics": [
+            "Relationship to plaintiff and child",
+            "Observations of plaintiff as parent",
+            "Child's behavior during visits with plaintiff",
+            "Changes observed since custody issues began"
+          ],
+          "cross_topics": [
+            "Frequency of personal observations",
+            "Any bias or interest in the outcome?"
+          ]
+        }
+      },
+      "objection_cheatsheet": [
+        {
+          "rule": "MRE 401/402",
+          "objection": "Relevance",
+          "when": "Evidence has no tendency to make a fact of consequence more or less probable",
+          "response": "Explain the logical connection to a material issue"
+        },
+        {
+          "rule": "MRE 403",
+          "objection": "Unfair Prejudice",
+          "when": "Probative value substantially outweighed by prejudice, confusion, or waste of time",
+          "response": "Argue probative value outweighs and offer limiting instruction"
+        },
+        {
+          "rule": "MRE 602",
+          "objection": "Lack of Personal Knowledge",
+          "when": "Witness testifying about matters they did not personally observe",
+          "response": "Lay foundation showing witness's firsthand knowledge"
+        },
+        {
+          "rule": "MRE 611(a)",
+          "objection": "Leading Question",
+          "when": "Question suggests the answer on direct examination",
+          "response": "Rephrase as open-ended question; permissible on cross"
+        },
+        {
+          "rule": "MRE 802",
+          "objection": "Hearsay",
+          "when": "Out-of-court statement offered to prove truth of matter asserted",
+          "response": "Identify applicable exception (803, 804) or non-hearsay purpose"
+        },
+        {
+          "rule": "MRE 803(1)",
+          "objection": "N/A \u2014 Present Sense Impression Exception",
+          "when": "Statement describing event made while perceiving it or immediately after",
+          "response": "Foundation: show temporal connection to the event"
+        },
+        {
+          "rule": "MRE 803(2)",
+          "objection": "N/A \u2014 Excited Utterance Exception",
+          "when": "Statement relating to startling event made under stress of excitement",
+          "response": "Foundation: show the declarant was still under stress"
+        },
+        {
+          "rule": "MRE 803(3)",
+          "objection": "N/A \u2014 State of Mind Exception",
+          "when": "Statement of declarant's then-existing state of mind, emotion, or physical condition",
+          "response": "Show relevance of declarant's mental state"
+        },
+        {
+          "rule": "MRE 803(4)",
+          "objection": "N/A \u2014 Medical Diagnosis/Treatment Exception",
+          "when": "Statements made for medical treatment/diagnosis",
+          "response": "Show statement was pertinent to diagnosis/treatment"
+        },
+        {
+          "rule": "MRE 803(6)",
+          "objection": "N/A \u2014 Business Records Exception",
+          "when": "Records kept in regular course of business",
+          "response": "Foundation via custodian or qualified witness"
+        },
+        {
+          "rule": "MRE 803(8)",
+          "objection": "N/A \u2014 Public Records Exception",
+          "when": "Records of public offices setting forth official activities",
+          "response": "Authenticate as public record"
+        },
+        {
+          "rule": "MRE 901",
+          "objection": "Authentication / Foundation",
+          "when": "Proponent has not shown evidence is what it claims to be",
+          "response": "Lay proper foundation (testimony, distinctive characteristics, chain of custody)"
+        },
+        {
+          "rule": "MRE 1002",
+          "objection": "Best Evidence Rule",
+          "when": "Copy offered instead of original document",
+          "response": "Original unavailable; or duplicate admissible under MRE 1003"
+        },
+        {
+          "rule": "MRE 404(a)",
+          "objection": "Character Evidence",
+          "when": "Evidence of person's character offered to prove action in conformity",
+          "response": "Permissible exceptions: habit (406), motive, plan, identity (404(b))"
+        },
+        {
+          "rule": "MRE 404(b)",
+          "objection": "Prior Bad Acts",
+          "when": "Evidence of other crimes/wrongs to show character/action in conformity",
+          "response": "Offered for permissible purpose: motive, opportunity, intent, plan, knowledge"
+        },
+        {
+          "rule": "MCR 2.302",
+          "objection": "Privilege",
+          "when": "Question calls for privileged communication (attorney-client, spousal, etc.)",
+          "response": "Argue waiver, crime-fraud exception, or that privilege does not apply"
+        },
+        {
+          "rule": "MRE 701",
+          "objection": "Improper Lay Opinion",
+          "when": "Lay witness giving opinion not rationally based on perception",
+          "response": "Foundation showing opinion based on firsthand knowledge and helpful to trier of fact"
+        },
+        {
+          "rule": "MRE 702",
+          "objection": "Expert Qualification",
+          "when": "Witness not qualified as expert in relevant field",
+          "response": "Demonstrate education, training, experience, and methodology (Daubert/Davis)"
+        }
+      ],
+      "logistics": {
+        "court": "14th Circuit Court, Family Division, Muskegon County",
+        "address": "990 Terrace Street, Muskegon, MI 49442",
+        "judge": "Hon. Jenny L. McNeill",
+        "case_numbers": {
+          "custody": "2024-001507-DC",
+          "ppo": "2023-5907-PP"
+        },
+        "filing_method": "MiFILE (mifile.courts.michigan.gov)",
+        "service_requirements": {
+          "method": "First-class mail or MiFILE electronic service",
+          "deadline": "At least 7 days before hearing per MCR 2.107",
+          "proof": "File proof of service with court before hearing"
+        },
+        "copies_needed": {
+          "court_original": 1,
+          "judge_copy": 1,
+          "opposing_party": 1,
+          "personal_copy": 1,
+          "total": 4
+        },
+        "what_to_bring": [
+          "Photo ID",
+          "Complete case file binder",
+          "All exhibits (4 copies each)",
+          "This hearing prep package",
+          "Pen and notepad",
+          "Copies of relevant court rules",
+          "Proof of service"
+        ]
+      },
+      "recent_docket": []
+    },
+    {
+      "hearing_index": 2,
+      "title": "COA Brief Deadline",
+      "date": "2026-04-15",
+      "case_id": "TBD",
+      "source": "hearing_calendar",
+      "location": "Muskegon County Courthouse",
+      "agenda": {
+        "pre_hearing": [
+          "Review all evidence exhibits and organize by topic",
+          "Prepare 3 copies of each exhibit (court, opposing, self)",
+          "Print and review hearing outline",
+          "Confirm hearing date/time with court clerk",
+          "File proof of service at least 7 days before hearing (2026-04-15)",
+          "Prepare binder with tabbed sections",
+          "Review applicable court rules and standards",
+          "Practice opening statement (2-3 minutes max)"
+        ],
+        "day_of": [
+          "Arrive at 990 Terrace Street, Muskegon, MI 49442 at least 30 minutes early",
+          "Check in with court clerk upon arrival",
+          "Dress professionally (suit/business attire)",
+          "Bring: photo ID, case file, exhibits, pen, notepad",
+          "Silence phone before entering courtroom",
+          "Stand when judge enters/exits; address as 'Your Honor'",
+          "Speak clearly and at moderate pace"
+        ],
+        "during_hearing": [
+          "State name and case number for the record",
+          "Present evidence in organized, logical sequence",
+          "Object promptly to inadmissible evidence (see Objection Cheatsheet)",
+          "Take notes on judge's comments and opposing arguments",
+          "Request clarification on any orders issued"
+        ],
+        "post_hearing": [
+          "Request copy of any written orders",
+          "Note deadline for any post-hearing submissions",
+          "Write summary of what happened while fresh",
+          "Identify any appeal issues to preserve"
+        ]
+      },
+      "key_arguments": [
+        {
+          "authority": "In re Dettmer, 260 Mich App 356 (2004)",
+          "claim": "567-day denial of parenting time constitutes constructive restraint",
+          "elements": "MCL 600.4301 habeas corpus; constructive restraint; parental liberty interest; void ex parte orders",
+          "supporting_evidence": "Father denied ALL parenting time for 567+ consecutive days via ex parte orders lacking MCR 3.207(C) compliance",
+          "chain_complete": true
+        },
+        {
+          "authority": "Troxel v Granville, 530 US 57 (2000)",
+          "claim": "Suspension of all parenting time without evidentiary hearing violates substantive due process",
+          "elements": "Fundamental liberty interest; oldest recognized right; strict scrutiny for state interference; evidentiary hearing required",
+          "supporting_evidence": "The Supreme Court in Troxel v Granville, 530 US 57 (2000) recognized that the liberty interest of parents in the care, custody, and control of their children is perhaps the oldest of the fundamental l...",
+          "chain_complete": true
+        },
+        {
+          "authority": "MCR 3.206(A)",
+          "claim": "best interest of child",
+          "elements": "Standard: Clear and convincing evidence",
+          "supporting_evidence": "best interests  of  the child  standard  under  MCL  722.23.  \nThis  request  is based  on\nsignificant\n changes  in circumstances,\n including\n parental  alienation,\n legal  manipulations,\n financial\nf",
+          "chain_complete": true
+        }
+      ],
+      "anticipated_opposition": [
+        {
+          "opposing_argument": "2.7 HARM/DAMAGES LEDGER (HDL)\nRecord-only harms (no speculation):\n- parenting-time deprivation dates (if documented)",
+          "rebuttal_theory": "Record-only rebuttal candidate: demand pinpointed evidentiary basis; if conclusory label, flag missing findings/support and require on-record factual findings tied to admissible evidence.",
+          "proof_needed": "Transcript segment for basis; COE findings language; service/notice proof; contrary objective records (if admissible).",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        }
+      ],
+      "evidence_to_present": [
+        {
+          "exhibit_no": "Exhibit 1",
+          "category": "TRANSCRIPT",
+          "quote_preview": "HEARING\n 11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant\n requested,\n and  the Court  signed  an ex parte  order  suspending\n the  Plaintiff's\nparenting  time.  An evidentiary\n hearing  was held on S...",
+          "speaker": "COURT",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 2",
+          "category": "TRANSCRIPT",
+          "quote_preview": "hearing  and\nsubpoenaed\n the  \nwhich  occurred  on 1 1/26/25.\nLaw\nIf a \nparenting  \ntime \nmodification\n \ndoes  not change  the \nchild's  \nestablished\n \ncustodial\nenvironment,\n the parenting  time  mod...",
+          "speaker": null,
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 3",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "notice  when  parenting  time  wifl not occur.\n(i) Any  other  reasonable\n condition  determined\n to be appropriate\n in the particular case. MCL\n722.27a(9).\nPage 2\nPigors  v Watson  \n2024-001507-DC",
+          "speaker": "PIGORS",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 4",
+          "category": "TRANSCRIPT",
+          "quote_preview": "the Court.  He describes\n being  around\nthreaten  him, being  followed  and other  dangerous\nactivities.  These  situations\n are harmful  to the  child  and place  him at risk.\n* \nThe reasonable\n like...",
+          "speaker": "COURT",
+          "page": 1,
+          "legal_significance": "IMPEACHMENT_MATERIAL"
+        },
+        {
+          "exhibit_no": "Exhibit 5",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "hearing  the argument\n of  the  parties;\nTHE  COURT\n FINDS  AS  FOLLOWS:\n1.  \nOn  February  14, 2025  Plaintiff/Father\n filed  a Motion\n regarding\n Parenting\n Time.\nof  the motion\n included\n the follo...",
+          "speaker": "COURT",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 6",
+          "category": "JUDGE_ORDER",
+          "quote_preview": "IT IS ORDERED\n that  the Plaintiff's\n Motion\n regarding  Parenting\n Tinie  filed  on February  14, 2025  is\ndismissed for the reasons  stated  above. \nParenting  Time  shall  remain  pursuant\n to the ...",
+          "speaker": null,
+          "page": 1,
+          "legal_significance": "BINDING_DETERMINATION"
+        },
+        {
+          "exhibit_no": "Exhibit 7",
+          "category": "JUDGE_ORDER",
+          "quote_preview": "hearing,  the Plaintiff\n addressed  the  fact  that  the Mother  had  her Easter  weekend,  which  fell  on his\nweekend.  He demanded  make-up  parenting\n time  (The  Plaintiff\n also tried  to file  a...",
+          "speaker": null,
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 8",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "HEARING\nEMILY\n WATSON,\nDefendant.\nAndrew\n Pigors\nSelf-Represented\n Litigant\nJennifer\n Batnes  (P55406)\nAttorney\n for  Defendant\nBoth  parties  appeared\n for  a Trial  regarding\n Custody,\n Parenting  T...",
+          "speaker": "PIGORS",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 9",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "HEARING  11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant  requested,  and the Court  signed  an ex parte  order  suspending  the Plaintiffs\nparenting  time. An evidentiary  hearing  was held on Septe...",
+          "speaker": "COURT",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 10",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "hearing  and\nsubpoenaed\n the two health  west  staff  for the next hearing,  which  occurred  on 41/26/25.\nIf a parenting time modification  does not change  the child's  estabfished  \ncustodial\nenvir...",
+          "speaker": null,
+          "page": 1,
+          "legal_significance": ""
+        }
+      ],
+      "witness_outlines": {
+        "FOC_caseworker": {
+          "name": "FOC Caseworker (Pamela Rusco)",
+          "direct_topics": [
+            "Parenting time recommendations made",
+            "Basis for any restrictions",
+            "Observations of parent-child interaction",
+            "Compliance with existing orders by both parties"
+          ],
+          "cross_topics": [
+            "How many home visits were conducted?",
+            "Did you interview the child privately?",
+            "What specific evidence of harm did you observe?",
+            "Were both parents given equal consideration?",
+            "Did you review all submitted evidence?"
+          ]
+        },
+        "teacher": {
+          "name": "Child's Teacher / School Personnel",
+          "direct_topics": [
+            "Child's academic performance and behavior",
+            "Changes observed over time",
+            "Parent involvement in school activities",
+            "Communications from each parent"
+          ],
+          "cross_topics": [
+            "Have you observed the child with each parent?",
+            "Any concerns about either parent?",
+            "Is the child's performance consistent?"
+          ]
+        },
+        "family_member": {
+          "name": "Family Member / Character Witness",
+          "direct_topics": [
+            "Relationship to plaintiff and child",
+            "Observations of plaintiff as parent",
+            "Child's behavior during visits with plaintiff",
+            "Changes observed since custody issues began"
+          ],
+          "cross_topics": [
+            "Frequency of personal observations",
+            "Any bias or interest in the outcome?"
+          ]
+        }
+      },
+      "objection_cheatsheet": [
+        {
+          "rule": "MRE 401/402",
+          "objection": "Relevance",
+          "when": "Evidence has no tendency to make a fact of consequence more or less probable",
+          "response": "Explain the logical connection to a material issue"
+        },
+        {
+          "rule": "MRE 403",
+          "objection": "Unfair Prejudice",
+          "when": "Probative value substantially outweighed by prejudice, confusion, or waste of time",
+          "response": "Argue probative value outweighs and offer limiting instruction"
+        },
+        {
+          "rule": "MRE 602",
+          "objection": "Lack of Personal Knowledge",
+          "when": "Witness testifying about matters they did not personally observe",
+          "response": "Lay foundation showing witness's firsthand knowledge"
+        },
+        {
+          "rule": "MRE 611(a)",
+          "objection": "Leading Question",
+          "when": "Question suggests the answer on direct examination",
+          "response": "Rephrase as open-ended question; permissible on cross"
+        },
+        {
+          "rule": "MRE 802",
+          "objection": "Hearsay",
+          "when": "Out-of-court statement offered to prove truth of matter asserted",
+          "response": "Identify applicable exception (803, 804) or non-hearsay purpose"
+        },
+        {
+          "rule": "MRE 803(1)",
+          "objection": "N/A \u2014 Present Sense Impression Exception",
+          "when": "Statement describing event made while perceiving it or immediately after",
+          "response": "Foundation: show temporal connection to the event"
+        },
+        {
+          "rule": "MRE 803(2)",
+          "objection": "N/A \u2014 Excited Utterance Exception",
+          "when": "Statement relating to startling event made under stress of excitement",
+          "response": "Foundation: show the declarant was still under stress"
+        },
+        {
+          "rule": "MRE 803(3)",
+          "objection": "N/A \u2014 State of Mind Exception",
+          "when": "Statement of declarant's then-existing state of mind, emotion, or physical condition",
+          "response": "Show relevance of declarant's mental state"
+        },
+        {
+          "rule": "MRE 803(4)",
+          "objection": "N/A \u2014 Medical Diagnosis/Treatment Exception",
+          "when": "Statements made for medical treatment/diagnosis",
+          "response": "Show statement was pertinent to diagnosis/treatment"
+        },
+        {
+          "rule": "MRE 803(6)",
+          "objection": "N/A \u2014 Business Records Exception",
+          "when": "Records kept in regular course of business",
+          "response": "Foundation via custodian or qualified witness"
+        },
+        {
+          "rule": "MRE 803(8)",
+          "objection": "N/A \u2014 Public Records Exception",
+          "when": "Records of public offices setting forth official activities",
+          "response": "Authenticate as public record"
+        },
+        {
+          "rule": "MRE 901",
+          "objection": "Authentication / Foundation",
+          "when": "Proponent has not shown evidence is what it claims to be",
+          "response": "Lay proper foundation (testimony, distinctive characteristics, chain of custody)"
+        },
+        {
+          "rule": "MRE 1002",
+          "objection": "Best Evidence Rule",
+          "when": "Copy offered instead of original document",
+          "response": "Original unavailable; or duplicate admissible under MRE 1003"
+        },
+        {
+          "rule": "MRE 404(a)",
+          "objection": "Character Evidence",
+          "when": "Evidence of person's character offered to prove action in conformity",
+          "response": "Permissible exceptions: habit (406), motive, plan, identity (404(b))"
+        },
+        {
+          "rule": "MRE 404(b)",
+          "objection": "Prior Bad Acts",
+          "when": "Evidence of other crimes/wrongs to show character/action in conformity",
+          "response": "Offered for permissible purpose: motive, opportunity, intent, plan, knowledge"
+        },
+        {
+          "rule": "MCR 2.302",
+          "objection": "Privilege",
+          "when": "Question calls for privileged communication (attorney-client, spousal, etc.)",
+          "response": "Argue waiver, crime-fraud exception, or that privilege does not apply"
+        },
+        {
+          "rule": "MRE 701",
+          "objection": "Improper Lay Opinion",
+          "when": "Lay witness giving opinion not rationally based on perception",
+          "response": "Foundation showing opinion based on firsthand knowledge and helpful to trier of fact"
+        },
+        {
+          "rule": "MRE 702",
+          "objection": "Expert Qualification",
+          "when": "Witness not qualified as expert in relevant field",
+          "response": "Demonstrate education, training, experience, and methodology (Daubert/Davis)"
+        }
+      ],
+      "logistics": {
+        "court": "14th Circuit Court, Family Division, Muskegon County",
+        "address": "990 Terrace Street, Muskegon, MI 49442",
+        "judge": "Hon. Jenny L. McNeill",
+        "case_numbers": {
+          "custody": "2024-001507-DC",
+          "ppo": "2023-5907-PP"
+        },
+        "filing_method": "MiFILE (mifile.courts.michigan.gov)",
+        "service_requirements": {
+          "method": "First-class mail or MiFILE electronic service",
+          "deadline": "At least 7 days before hearing per MCR 2.107",
+          "proof": "File proof of service with court before hearing"
+        },
+        "copies_needed": {
+          "court_original": 1,
+          "judge_copy": 1,
+          "opposing_party": 1,
+          "personal_copy": 1,
+          "total": 4
+        },
+        "what_to_bring": [
+          "Photo ID",
+          "Complete case file binder",
+          "All exhibits (4 copies each)",
+          "This hearing prep package",
+          "Pen and notepad",
+          "Copies of relevant court rules",
+          "Proof of service"
+        ]
+      },
+      "recent_docket": []
+    },
+    {
+      "hearing_index": 3,
+      "title": "PPO Renewal Hearing",
+      "date": "2026-06-01",
+      "case_id": "TBD",
+      "source": "hearing_calendar",
+      "location": "Muskegon County Courthouse",
+      "agenda": {
+        "pre_hearing": [
+          "Review all evidence exhibits and organize by topic",
+          "Prepare 3 copies of each exhibit (court, opposing, self)",
+          "Print and review hearing outline",
+          "Confirm hearing date/time with court clerk",
+          "File proof of service at least 7 days before hearing (2026-06-01)",
+          "Prepare binder with tabbed sections",
+          "Review applicable court rules and standards",
+          "Practice opening statement (2-3 minutes max)"
+        ],
+        "day_of": [
+          "Arrive at 990 Terrace Street, Muskegon, MI 49442 at least 30 minutes early",
+          "Check in with court clerk upon arrival",
+          "Dress professionally (suit/business attire)",
+          "Bring: photo ID, case file, exhibits, pen, notepad",
+          "Silence phone before entering courtroom",
+          "Stand when judge enters/exits; address as 'Your Honor'",
+          "Speak clearly and at moderate pace"
+        ],
+        "during_hearing": [
+          "State name and case number for the record",
+          "Present evidence in organized, logical sequence",
+          "Object promptly to inadmissible evidence (see Objection Cheatsheet)",
+          "Take notes on judge's comments and opposing arguments",
+          "Request clarification on any orders issued"
+        ],
+        "post_hearing": [
+          "Request copy of any written orders",
+          "Note deadline for any post-hearing submissions",
+          "Write summary of what happened while fresh",
+          "Identify any appeal issues to preserve"
+        ]
+      },
+      "key_arguments": [
+        {
+          "authority": "In re Dettmer, 260 Mich App 356 (2004)",
+          "claim": "567-day denial of parenting time constitutes constructive restraint",
+          "elements": "MCL 600.4301 habeas corpus; constructive restraint; parental liberty interest; void ex parte orders",
+          "supporting_evidence": "Father denied ALL parenting time for 567+ consecutive days via ex parte orders lacking MCR 3.207(C) compliance",
+          "chain_complete": true
+        },
+        {
+          "authority": "Troxel v Granville, 530 US 57 (2000)",
+          "claim": "Suspension of all parenting time without evidentiary hearing violates substantive due process",
+          "elements": "Fundamental liberty interest; oldest recognized right; strict scrutiny for state interference; evidentiary hearing required",
+          "supporting_evidence": "The Supreme Court in Troxel v Granville, 530 US 57 (2000) recognized that the liberty interest of parents in the care, custody, and control of their children is perhaps the oldest of the fundamental l...",
+          "chain_complete": true
+        },
+        {
+          "authority": "MCR 3.206(A)",
+          "claim": "best interest of child",
+          "elements": "Standard: Clear and convincing evidence",
+          "supporting_evidence": "best interests  of  the child  standard  under  MCL  722.23.  \nThis  request  is based  on\nsignificant\n changes  in circumstances,\n including\n parental  alienation,\n legal  manipulations,\n financial\nf",
+          "chain_complete": true
+        }
+      ],
+      "anticipated_opposition": [
+        {
+          "opposing_argument": "2.7 HARM/DAMAGES LEDGER (HDL)\nRecord-only harms (no speculation):\n- parenting-time deprivation dates (if documented)",
+          "rebuttal_theory": "Record-only rebuttal candidate: demand pinpointed evidentiary basis; if conclusory label, flag missing findings/support and require on-record factual findings tied to admissible evidence.",
+          "proof_needed": "Transcript segment for basis; COE findings language; service/notice proof; contrary objective records (if admissible).",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        },
+        {
+          "opposing_argument": "A: /mnt/data/tmp_extracted_pdfs_for_run003/mcneillexparte_0001__mcneillexparte_0003.pdf,ab08062637fe8491411a0e9e76e0399f7e5b2a88577b34af7dd52e16ea0f27b8,1,30,CONDITIONS,\"NOW  COMES Defendant, EmilyWatson,  files the Emergency Ex Parte Motion to Suspend\"\n/mnt/data/tmp_extracted_pdfs_for_run003/mcneil",
+          "rebuttal_theory": "Record-only rebuttal candidate: present inconsistency/omission; request clarification/findings; impeach adverse narrative with order text or lack of prerequisites (candidate pending posture review).",
+          "proof_needed": "Full signed order page(s); sworn statement context; transcript timecodes; ROA/receipts for service & filing chronology.",
+          "status": "CANDIDATE_ONLY"
+        }
+      ],
+      "evidence_to_present": [
+        {
+          "exhibit_no": "Exhibit 1",
+          "category": "TRANSCRIPT",
+          "quote_preview": "HEARING\n 11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant\n requested,\n and  the Court  signed  an ex parte  order  suspending\n the  Plaintiff's\nparenting  time.  An evidentiary\n hearing  was held on S...",
+          "speaker": "COURT",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 2",
+          "category": "TRANSCRIPT",
+          "quote_preview": "hearing  and\nsubpoenaed\n the  \nwhich  occurred  on 1 1/26/25.\nLaw\nIf a \nparenting  \ntime \nmodification\n \ndoes  not change  the \nchild's  \nestablished\n \ncustodial\nenvironment,\n the parenting  time  mod...",
+          "speaker": null,
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 3",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "notice  when  parenting  time  wifl not occur.\n(i) Any  other  reasonable\n condition  determined\n to be appropriate\n in the particular case. MCL\n722.27a(9).\nPage 2\nPigors  v Watson  \n2024-001507-DC",
+          "speaker": "PIGORS",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 4",
+          "category": "TRANSCRIPT",
+          "quote_preview": "the Court.  He describes\n being  around\nthreaten  him, being  followed  and other  dangerous\nactivities.  These  situations\n are harmful  to the  child  and place  him at risk.\n* \nThe reasonable\n like...",
+          "speaker": "COURT",
+          "page": 1,
+          "legal_significance": "IMPEACHMENT_MATERIAL"
+        },
+        {
+          "exhibit_no": "Exhibit 5",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "hearing  the argument\n of  the  parties;\nTHE  COURT\n FINDS  AS  FOLLOWS:\n1.  \nOn  February  14, 2025  Plaintiff/Father\n filed  a Motion\n regarding\n Parenting\n Time.\nof  the motion\n included\n the follo...",
+          "speaker": "COURT",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 6",
+          "category": "JUDGE_ORDER",
+          "quote_preview": "IT IS ORDERED\n that  the Plaintiff's\n Motion\n regarding  Parenting\n Tinie  filed  on February  14, 2025  is\ndismissed for the reasons  stated  above. \nParenting  Time  shall  remain  pursuant\n to the ...",
+          "speaker": null,
+          "page": 1,
+          "legal_significance": "BINDING_DETERMINATION"
+        },
+        {
+          "exhibit_no": "Exhibit 7",
+          "category": "JUDGE_ORDER",
+          "quote_preview": "hearing,  the Plaintiff\n addressed  the  fact  that  the Mother  had  her Easter  weekend,  which  fell  on his\nweekend.  He demanded  make-up  parenting\n time  (The  Plaintiff\n also tried  to file  a...",
+          "speaker": null,
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 8",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "HEARING\nEMILY\n WATSON,\nDefendant.\nAndrew\n Pigors\nSelf-Represented\n Litigant\nJennifer\n Batnes  (P55406)\nAttorney\n for  Defendant\nBoth  parties  appeared\n for  a Trial  regarding\n Custody,\n Parenting  T...",
+          "speaker": "PIGORS",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 9",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "HEARING  11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant  requested,  and the Court  signed  an ex parte  order  suspending  the Plaintiffs\nparenting  time. An evidentiary  hearing  was held on Septe...",
+          "speaker": "COURT",
+          "page": 1,
+          "legal_significance": ""
+        },
+        {
+          "exhibit_no": "Exhibit 10",
+          "category": "CUSTODY_ORDER",
+          "quote_preview": "hearing  and\nsubpoenaed\n the two health  west  staff  for the next hearing,  which  occurred  on 41/26/25.\nIf a parenting time modification  does not change  the child's  estabfished  \ncustodial\nenvir...",
+          "speaker": null,
+          "page": 1,
+          "legal_significance": ""
+        }
+      ],
+      "witness_outlines": {
+        "FOC_caseworker": {
+          "name": "FOC Caseworker (Pamela Rusco)",
+          "direct_topics": [
+            "Parenting time recommendations made",
+            "Basis for any restrictions",
+            "Observations of parent-child interaction",
+            "Compliance with existing orders by both parties"
+          ],
+          "cross_topics": [
+            "How many home visits were conducted?",
+            "Did you interview the child privately?",
+            "What specific evidence of harm did you observe?",
+            "Were both parents given equal consideration?",
+            "Did you review all submitted evidence?"
+          ]
+        },
+        "teacher": {
+          "name": "Child's Teacher / School Personnel",
+          "direct_topics": [
+            "Child's academic performance and behavior",
+            "Changes observed over time",
+            "Parent involvement in school activities",
+            "Communications from each parent"
+          ],
+          "cross_topics": [
+            "Have you observed the child with each parent?",
+            "Any concerns about either parent?",
+            "Is the child's performance consistent?"
+          ]
+        },
+        "family_member": {
+          "name": "Family Member / Character Witness",
+          "direct_topics": [
+            "Relationship to plaintiff and child",
+            "Observations of plaintiff as parent",
+            "Child's behavior during visits with plaintiff",
+            "Changes observed since custody issues began"
+          ],
+          "cross_topics": [
+            "Frequency of personal observations",
+            "Any bias or interest in the outcome?"
+          ]
+        }
+      },
+      "objection_cheatsheet": [
+        {
+          "rule": "MRE 401/402",
+          "objection": "Relevance",
+          "when": "Evidence has no tendency to make a fact of consequence more or less probable",
+          "response": "Explain the logical connection to a material issue"
+        },
+        {
+          "rule": "MRE 403",
+          "objection": "Unfair Prejudice",
+          "when": "Probative value substantially outweighed by prejudice, confusion, or waste of time",
+          "response": "Argue probative value outweighs and offer limiting instruction"
+        },
+        {
+          "rule": "MRE 602",
+          "objection": "Lack of Personal Knowledge",
+          "when": "Witness testifying about matters they did not personally observe",
+          "response": "Lay foundation showing witness's firsthand knowledge"
+        },
+        {
+          "rule": "MRE 611(a)",
+          "objection": "Leading Question",
+          "when": "Question suggests the answer on direct examination",
+          "response": "Rephrase as open-ended question; permissible on cross"
+        },
+        {
+          "rule": "MRE 802",
+          "objection": "Hearsay",
+          "when": "Out-of-court statement offered to prove truth of matter asserted",
+          "response": "Identify applicable exception (803, 804) or non-hearsay purpose"
+        },
+        {
+          "rule": "MRE 803(1)",
+          "objection": "N/A \u2014 Present Sense Impression Exception",
+          "when": "Statement describing event made while perceiving it or immediately after",
+          "response": "Foundation: show temporal connection to the event"
+        },
+        {
+          "rule": "MRE 803(2)",
+          "objection": "N/A \u2014 Excited Utterance Exception",
+          "when": "Statement relating to startling event made under stress of excitement",
+          "response": "Foundation: show the declarant was still under stress"
+        },
+        {
+          "rule": "MRE 803(3)",
+          "objection": "N/A \u2014 State of Mind Exception",
+          "when": "Statement of declarant's then-existing state of mind, emotion, or physical condition",
+          "response": "Show relevance of declarant's mental state"
+        },
+        {
+          "rule": "MRE 803(4)",
+          "objection": "N/A \u2014 Medical Diagnosis/Treatment Exception",
+          "when": "Statements made for medical treatment/diagnosis",
+          "response": "Show statement was pertinent to diagnosis/treatment"
+        },
+        {
+          "rule": "MRE 803(6)",
+          "objection": "N/A \u2014 Business Records Exception",
+          "when": "Records kept in regular course of business",
+          "response": "Foundation via custodian or qualified witness"
+        },
+        {
+          "rule": "MRE 803(8)",
+          "objection": "N/A \u2014 Public Records Exception",
+          "when": "Records of public offices setting forth official activities",
+          "response": "Authenticate as public record"
+        },
+        {
+          "rule": "MRE 901",
+          "objection": "Authentication / Foundation",
+          "when": "Proponent has not shown evidence is what it claims to be",
+          "response": "Lay proper foundation (testimony, distinctive characteristics, chain of custody)"
+        },
+        {
+          "rule": "MRE 1002",
+          "objection": "Best Evidence Rule",
+          "when": "Copy offered instead of original document",
+          "response": "Original unavailable; or duplicate admissible under MRE 1003"
+        },
+        {
+          "rule": "MRE 404(a)",
+          "objection": "Character Evidence",
+          "when": "Evidence of person's character offered to prove action in conformity",
+          "response": "Permissible exceptions: habit (406), motive, plan, identity (404(b))"
+        },
+        {
+          "rule": "MRE 404(b)",
+          "objection": "Prior Bad Acts",
+          "when": "Evidence of other crimes/wrongs to show character/action in conformity",
+          "response": "Offered for permissible purpose: motive, opportunity, intent, plan, knowledge"
+        },
+        {
+          "rule": "MCR 2.302",
+          "objection": "Privilege",
+          "when": "Question calls for privileged communication (attorney-client, spousal, etc.)",
+          "response": "Argue waiver, crime-fraud exception, or that privilege does not apply"
+        },
+        {
+          "rule": "MRE 701",
+          "objection": "Improper Lay Opinion",
+          "when": "Lay witness giving opinion not rationally based on perception",
+          "response": "Foundation showing opinion based on firsthand knowledge and helpful to trier of fact"
+        },
+        {
+          "rule": "MRE 702",
+          "objection": "Expert Qualification",
+          "when": "Witness not qualified as expert in relevant field",
+          "response": "Demonstrate education, training, experience, and methodology (Daubert/Davis)"
+        }
+      ],
+      "logistics": {
+        "court": "14th Circuit Court, Family Division, Muskegon County",
+        "address": "990 Terrace Street, Muskegon, MI 49442",
+        "judge": "Hon. Jenny L. McNeill",
+        "case_numbers": {
+          "custody": "2024-001507-DC",
+          "ppo": "2023-5907-PP"
+        },
+        "filing_method": "MiFILE (mifile.courts.michigan.gov)",
+        "service_requirements": {
+          "method": "First-class mail or MiFILE electronic service",
+          "deadline": "At least 7 days before hearing per MCR 2.107",
+          "proof": "File proof of service with court before hearing"
+        },
+        "copies_needed": {
+          "court_original": 1,
+          "judge_copy": 1,
+          "opposing_party": 1,
+          "personal_copy": 1,
+          "total": 4
+        },
+        "what_to_bring": [
+          "Photo ID",
+          "Complete case file binder",
+          "All exhibits (4 copies each)",
+          "This hearing prep package",
+          "Pen and notepad",
+          "Copies of relevant court rules",
+          "Proof of service"
+        ]
+      },
+      "recent_docket": []
+    }
+  ],
+  "statistics": {
+    "hearings_prepared": 3,
+    "total_arguments": 9,
+    "total_rebuttals": 24,
+    "total_evidence_items": 30,
+    "objection_rules_included": 18,
+    "witness_patterns_included": 3,
+    "tables_queried": [
+      "deadlines",
+      "hearing_calendar",
+      "authority_chains",
+      "d_drive_rebuttal_pack",
+      "evidence_quotes",
+      "docket_events"
+    ]
+  }
+}

@@ -1,29 +1,26 @@
 # 🐻 THE MANBEARPIG — Startup Report
-**Generated:** 2026-03-18T15:27:40.637168
+**Generated:** 2026-03-21T12:36:18.775713
 **Engine:** THE-MANBEARPIG x NEXUS v11.0 OMEGA-SUPREME
-**Parent-Child Separation:** **222 DAYS** (since Aug 8, 2025)
+**Parent-Child Separation:** **225 DAYS** (since Aug 8, 2025)
 
 ## Database
 - Status: CONNECTED
-- Size: 12198.3 MB
-- Tables: 801
+- Size: 166.6 MB
+- Tables: 75
 
 ## Evidence Arsenal
-- **harms:** 26,459
-- **quotes:** 308,704
-- **impeachment:** 15,171
-- **violations:** 1,127
-- **contradictions:** 10,672
-- **claims:** 653
+- **quotes:** 14,716
+- **violations:** 5,059
+- **claims:** 0
 
-## System Health: 0/10 HEALTHY
+## System Health: UNKNOWN
 
-## Recent Copilot Sessions (70 total)
-- `070a961b-27a...` — 2026-03-18T15:27:37.749296 — No plan
+## Recent Copilot Sessions (71 total)
+- `070a961b-27a...` — 2026-03-21T12:36:18.760092 — # LitigationOS — AUTONOMOUS BUILD PLAN (Updated 2026-03-21)
+- `ab2c20bd-6fd...` — 2026-03-20T19:27:22.585929 — No plan
+- `60199f3d-dfa...` — 2026-03-11T20:01:17.156222 — No plan
 - `219bc871-7a1...` — 2026-03-18T15:07:39.213993 — # LitigationOS — OMEGA/ELITE Skill Remediation Plan
 - `7f9c71b5-4de...` — 2026-03-07T23:36:13.605475 — No plan
-- `94d4686a-f79...` — 2026-02-13T04:48:00.884094 — No plan
-- `ba06adf3-2f2...` — 2026-03-15T12:26:01.530939 — # Drive Consolidation Plan — Merge All Onto I:\, Dedup, Preserve Capabilities
 
 ## Jurisdiction Databases
 - **Court Forms DB:** ✅ 72KB
@@ -45,35 +42,12 @@
 ## Drive State
 | Drive | Free GB | Total GB | Status |
 |-------|---------|----------|--------|
-| C: | 3.58 | 237.69 | 🟠 LOW |
+| C: | 7.89 | 237.69 | 🟢 OK |
 | D: | 4.36 | 31.99 | 🟠 LOW |
 | F: | 8.24 | 31.99 | 🟢 OK |
-| G: | 18.58 | 25.75 | 🟢 OK |
-| H: | 29.82 | 29.82 | 🟢 OK |
-| I: | 19.53 | 465.74 | 🟢 OK |
-
-## Todo Tracker
-- **Total:** 1042
-- ✅ Done: 88
-- 🔄 In Progress: 4
-- ⏳ Pending: 950
-- 🚫 Blocked: 0
-
-## HuggingFace AI Models
-- **HF Legal Engine:** ✅ READY
-- **Engine path:** `00_SYSTEM/local_model/hf_legal_engine.py`
-- ✅ `nlpaueb/legal-bert-small-uncased` — Legal text classification, embeddings, NER fine-tuning base
-- ✅ `sentence-transformers/all-MiniLM-L6-v2` — Fast 384-dim semantic similarity embeddings for document search
-- ✅ `dslim/bert-base-NER` — Named entity recognition (persons, organizations, locations)
-- ✅ `en_core_web_sm (spaCy)` — NLP pipeline with custom Michigan legal entity patterns (MCR, MCL, MRE, CASE_NUMBER, JUDGE)
-- ✅ `eyecite` — Legal citation extraction - finds case citations, statutes, regulations
-- ✅ `Qwen2.5-1.5B-Instruct-Q4 (existing)` — Existing GGUF model for local generative inference (not yet integrated)
-- ✅ `Mistral-7B-Instruct-v0.3.Q5_K_M (on I:)` — 4.9GB Mistral 7B on I: drive - available for Ollama integration
-- ✅ `Mistral-7B-Instruct-v0.3.Q4_K_S (on I:)` — 3.9GB Mistral 7B Q4 on I: drive - lighter alternative
-- ❌ `nexus_engine` — Unified 85-system orchestrator v2.0
-- ❌ `fred_ceps` — FRED CEPS SUPREME v1.1 compliance
-- ❌ `fred_monolith` — FRED MONOLITH v3.5 10-module pipeline
-- ❌ `ale` — Autonomous Litigation Engine
+| G: | 13.81 | 25.75 | 🟢 OK |
+| H: | 29.78 | 29.82 | 🟢 OK |
+| I: | 0.0 | 465.74 | 🔴 CRITICAL |
 
 ## ⚠️ IRON RULES (PERMANENT)
 1. EXTREME DEPTH standard (8,348-violation thoroughness MINIMUM)

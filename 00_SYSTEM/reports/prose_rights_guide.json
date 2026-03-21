@@ -1,0 +1,273 @@
+{
+  "tool": "#253 Pro Se Litigant Rights Guide",
+  "generated": "2026-03-19T09:53:39.893524",
+  "for": "Andrew James Pigors \u2014 Pro Se Plaintiff",
+  "case": "Pigors v. Watson \u2014 2024-001507-DC",
+  "sections": {
+    "1": {
+      "title": "MCR and Statutory Protections for Self-Represented Parties",
+      "authorities": [
+        "MCR 2.002 \u2014 Waiver of fees for indigent parties",
+        "MCR 2.107 \u2014 Service of pleadings and other documents",
+        "MCR 2.111 \u2014 General rules of pleading",
+        "MCR 2.119 \u2014 Motion practice",
+        "Haines v Kerner, 404 US 519 (1972) \u2014 Pro se pleadings held to less stringent standard",
+        "Erickson v Pardus, 551 US 89 (2007) \u2014 Pro se filings must be liberally construed",
+        "Estelle v Gamble, 429 US 97 (1976) \u2014 Pro se allegations taken as true on motion",
+        "Mich Const 1963, Art 1 \u00a713 \u2014 Right of access to courts",
+        "Mich Const 1963, Art 6 \u00a71 \u2014 Judicial power vested in one court of justice"
+      ],
+      "content_points": 5
+    },
+    "2": {
+      "title": "Common Judicial Biases Against Pro Se Litigants",
+      "authorities": [
+        "Mich Code of Judicial Conduct Canon 2 \u2014 Appearance of impropriety",
+        "Mich Code of Judicial Conduct Canon 3(A)(4) \u2014 Patient, dignified, courteous treatment",
+        "In re Hague, 412 Mich 532 (1982) \u2014 Judicial bias standard",
+        "Armstrong v Ypsilanti Charter Twp, 248 Mich App 573 (2001) \u2014 Pro se parties entitled to same consideration",
+        "MCR 2.003 \u2014 Disqualification of judges for bias or prejudice"
+      ],
+      "content_points": 9
+    },
+    "3": {
+      "title": "Filing Fee Waiver (IFP) Under MCR 2.002",
+      "authorities": [
+        "MCR 2.002 \u2014 Waiver of fees and costs for indigent persons",
+        "MCR 2.002(B) \u2014 Eligibility criteria for fee waiver",
+        "MCR 2.002(C) \u2014 Procedure for requesting fee waiver",
+        "MCR 2.002(D) \u2014 Scope of waiver (covers filing fees, service costs, transcripts)",
+        "Boddie v Connecticut, 401 US 371 (1971) \u2014 Due process requires court access regardless of ability to pay"
+      ],
+      "content_points": 7
+    },
+    "4": {
+      "title": "Service Requirements Per MCR 2.105/2.107",
+      "authorities": [
+        "MCR 2.105 \u2014 Manner of service of process",
+        "MCR 2.107 \u2014 Service and filing of pleadings and other papers",
+        "MCR 2.104 \u2014 Process; sufficiency",
+        "MCR 2.106 \u2014 Publication of notice of action",
+        "MCR 2.108 \u2014 Service of nonparty subpoenas"
+      ],
+      "content_points": 7
+    },
+    "5": {
+      "title": "Evidence Preservation Rights",
+      "authorities": [
+        "MCR 2.302 \u2014 General rules of discovery",
+        "MCR 2.310 \u2014 Request for production of documents",
+        "MCR 2.313(B) \u2014 Sanctions for failure to comply with discovery order",
+        "Brenner v Kolk, 226 Mich App 149 (1997) \u2014 Adverse inference for spoliation",
+        "Bloemendaal v Town & Country Sports Center, 255 Mich App 207 (2002) \u2014 Spoliation sanctions"
+      ],
+      "content_points": 7
+    },
+    "6": {
+      "title": "Right to Full Hearing Before Custody Modifications (MCL 722.27)",
+      "authorities": [
+        "MCL 722.27 \u2014 Custody modification standard",
+        "MCL 722.27(1)(c) \u2014 Proper cause or change of circumstances required",
+        "Vodvarka v Grasmeyer, 259 Mich App 499 (2003) \u2014 Proper cause/change of circumstances standard",
+        "Shade v Wright, 291 Mich App 17 (2010) \u2014 Clear and convincing evidence for established custodial environment",
+        "Pierron v Pierron, 486 Mich 81 (2010) \u2014 Burden of proof in custody modification",
+        "MCR 3.210 \u2014 Custody proceedings procedure"
+      ],
+      "content_points": 7
+    },
+    "7": {
+      "title": "Access to FOC Files (MCR 3.224)",
+      "authorities": [
+        "MCR 3.224 \u2014 Friend of the Court records and access",
+        "MCR 3.218 \u2014 Friend of the Court procedures",
+        "MCR 3.219 \u2014 FOC objection and hearing process",
+        "MCL 552.505 \u2014 FOC duties and responsibilities",
+        "MCL 552.507 \u2014 Access to FOC files by parties"
+      ],
+      "content_points": 8
+    },
+    "8": {
+      "title": "Appellate Rights and Procedures",
+      "authorities": [
+        "MCR 7.204 \u2014 Filing claim of appeal in Court of Appeals",
+        "MCR 7.205 \u2014 Application for leave to appeal",
+        "MCR 7.212 \u2014 Briefs in Court of Appeals",
+        "MCR 7.215 \u2014 Court of Appeals decisions",
+        "MCR 7.302 \u2014 Application for leave to appeal to Supreme Court",
+        "MCR 7.305 \u2014 Supreme Court rule on applications",
+        "Const 1963, Art 6 \u00a74 \u2014 Right to appeal from circuit court"
+      ],
+      "content_points": 9
+    }
+  },
+  "db_authority_matches": {
+    "mcr 2.003": 6,
+    "best interest": 1
+  },
+  "total_authority_chains": 7,
+  "deadlines_count": 23,
+  "deadlines": [
+    {
+      "deadline_id": "DL-URGENT-001",
+      "case_id": "2024-001507-DC",
+      "title": "CRITICAL: Last saw son July 29 2025 - 212+ days separation",
+      "due_date": "2025-07-29",
+      "basis": "Ongoing deprivation of parenting time",
+      "status": "overdue"
+    },
+    {
+      "deadline_id": "DL-EMERGENCY-PT",
+      "case_id": "A",
+      "title": "Emergency Motion Parenting Time \u2014 FILE IMMEDIATELY",
+      "due_date": "2026-02-28",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": null,
+      "case_id": "COA-366810",
+      "title": "COA Emergency Motion Filing",
+      "due_date": "2026-02-28",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": null,
+      "case_id": "COA-366810",
+      "title": "COA Fee Waiver Filing",
+      "due_date": "2026-02-28",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": "DL-002",
+      "case_id": "2024-001507-DC",
+      "title": "[REMOVED] Response to Motion for Reconsideration",
+      "due_date": "2026-03-15",
+      "basis": "Response deadline for pending motions",
+      "status": "satisfied"
+    },
+    {
+      "deadline_id": "DL-DISQUALIFY",
+      "case_id": "E",
+      "title": "Motion for Disqualification \u2014 FILE BEFORE NEXT HEARING",
+      "due_date": "2026-03-15",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": null,
+      "case_id": "2024-001507-DC",
+      "title": "Disqualification Motion",
+      "due_date": "2026-03-15",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": "DL-MSC-ORIGINAL",
+      "case_id": "G",
+      "title": "MSC Original Action \u2014 Superintending Control",
+      "due_date": "2026-04-01",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": null,
+      "case_id": "MSC-ORIGINAL",
+      "title": "MSC Package Filing",
+      "due_date": "2026-04-01",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": "DL-001",
+      "case_id": "COA-366810",
+      "title": "COA Brief Filing Deadline",
+      "due_date": "2026-04-15",
+      "basis": "Appellant brief due within 56 days of transcript filing",
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": "DL-COA-BRIEF",
+      "case_id": "A",
+      "title": "COA Appellant Brief Due \u2014 COA 366810",
+      "due_date": "2026-04-15",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": "DL-COA-APPENDIX",
+      "case_id": "F",
+      "title": "COA Appendix Due with Brief",
+      "due_date": "2026-04-15",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": null,
+      "case_id": "COA-366810",
+      "title": "COA Appellant Brief Due",
+      "due_date": "2026-04-15",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": "DL-CIVIL-CONSPIRACY",
+      "case_id": "C",
+      "title": "Civil Conspiracy Complaint \u2014 Watson + Kent County",
+      "due_date": "2026-04-30",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": "DL-SHADY-OAKS",
+      "case_id": "B",
+      "title": "Shady Oaks Housing Complaint",
+      "due_date": "2026-04-30",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": null,
+      "case_id": "CIVIL-CONSPIRACY",
+      "title": "Civil Conspiracy Complaint",
+      "due_date": "2026-04-30",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": null,
+      "case_id": "SHADY-OAKS",
+      "title": "Housing Complaint Filing",
+      "due_date": "2026-04-30",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": "DL-004",
+      "case_id": "JTC-001",
+      "title": "JTC Complaint Follow-up",
+      "due_date": "2026-05-01",
+      "basis": "Follow up on JTC complaint status",
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": "DL-JTC-FOLLOWUP",
+      "case_id": "E",
+      "title": "JTC Complaint Follow-up",
+      "due_date": "2026-05-01",
+      "basis": null,
+      "status": "upcoming"
+    },
+    {
+      "deadline_id": "DL-1983-FEDERAL",
+      "case_id": "G",
+      "title": "42 USC 1983 Federal Complaint",
+      "due_date": "2026-05-15",
+      "basis": null,
+      "status": "upcoming"
+    }
+  ],
+  "docket_events_count": 88,
+  "judicial_violations_count": 1127
+}

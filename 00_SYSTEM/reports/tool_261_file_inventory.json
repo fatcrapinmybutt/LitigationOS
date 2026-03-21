@@ -1,0 +1,61 @@
+{
+  "tool": "#261 File Locations Inventory Ingestor",
+  "generated": "2026-03-19T09:54:01.740468",
+  "source_file": "C:\\Users\\andre\\Documents\\fileslocations.txt",
+  "total_files": 4063,
+  "direct_access": 212,
+  "in_archives": 3851,
+  "db_rows": 4063,
+  "categories": {
+    "uncategorized": 779,
+    "custody": 764,
+    "ppo": 529,
+    "police": 465,
+    "healthwest": 453,
+    "court": 305,
+    "order": 305,
+    "exparte": 258,
+    "rusco": 239,
+    "filing": 213,
+    "judge": 210,
+    "noreply": 188,
+    "transcript": 74,
+    "pigors": 62,
+    "mcneill": 51,
+    "watson": 28,
+    "shady_oaks": 23,
+    "affidavit": 14
+  },
+  "file_types": {
+    "pdf": 3190,
+    "text": 798,
+    "jpg": 20,
+    "json": 16,
+    "html": 10,
+    "csv": 8,
+    "py": 7,
+    "unknown": 4,
+    "pyc": 4,
+    "ttf": 1,
+    "svg": 1,
+    "markdown": 1,
+    "cpp": 1,
+    "archive": 1,
+    "crdownload": 1
+  },
+  "lane_distribution": {
+    "B": 55,
+    "D": 529,
+    "F": 34,
+    "E": 193,
+    "A": 796,
+    "C": 1
+  },
+  "high_value_targets": {
+    "rusco_emails": 239,
+    "healthwest_docs": 453,
+    "police_reports": 465,
+    "ex_parte_docs": 258,
+    "transcripts": 74
+  }
+}

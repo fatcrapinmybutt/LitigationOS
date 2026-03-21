@@ -1,0 +1,99 @@
+{
+  "tool": "certificate_of_service_generator",
+  "tool_number": 272,
+  "generated": "2026-03-19 10:58:36",
+  "cos_dir": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\certificates_of_service",
+  "certificates": [
+    {
+      "filing_id": "F1",
+      "title": "Motion for Emergency Relief \u2014 Custody / Parenting Time",
+      "case_number": "2024-001507-DC",
+      "court": "14th Judicial Circuit Court, Family Division, Muskegon County",
+      "documents_served": 5,
+      "parties_served": "Emily A. Watson, Muskegon County Friend of the Court",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\certificates_of_service\\COS_F1.txt"
+    },
+    {
+      "filing_id": "F2",
+      "title": "Motion Regarding Personal Protection Order",
+      "case_number": "2023-5907-PP",
+      "court": "14th Judicial Circuit Court, Muskegon County",
+      "documents_served": 5,
+      "parties_served": "Emily A. Watson, Muskegon County Friend of the Court",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\certificates_of_service\\COS_F2.txt"
+    },
+    {
+      "filing_id": "F3",
+      "title": "Motion to Disqualify Judge",
+      "case_number": "2024-001507-DC",
+      "court": "14th Judicial Circuit Court, Family Division, Muskegon County",
+      "documents_served": 5,
+      "parties_served": "Emily A. Watson, Muskegon County Friend of the Court",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\certificates_of_service\\COS_F3.txt"
+    },
+    {
+      "filing_id": "F4",
+      "title": "42 USC \u00a71983 \u2014 Federal Civil Rights Complaint",
+      "case_number": "[VERIFY \u2014 WDMI Case Number]",
+      "court": "United States District Court, Western District of Michigan",
+      "documents_served": 5,
+      "parties_served": "Emily A. Watson, Hon. Jenny L. McNeill, Muskegon County (\u00a71983 Defendant), Michigan Attorney General (\u00a71983)",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\certificates_of_service\\COS_F4.txt"
+    },
+    {
+      "filing_id": "F5",
+      "title": "Application for Superintending Control",
+      "case_number": "[VERIFY \u2014 MSC Case Number]",
+      "court": "Michigan Supreme Court",
+      "documents_served": 4,
+      "parties_served": "Michigan Supreme Court \u2014 Clerk, Emily A. Watson, Muskegon County Friend of the Court",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\certificates_of_service\\COS_F5.txt"
+    },
+    {
+      "filing_id": "F6",
+      "title": "Judicial Tenure Commission Complaint",
+      "case_number": "2024-001507-DC",
+      "court": "Judicial Tenure Commission",
+      "documents_served": 4,
+      "parties_served": "Judicial Tenure Commission, Hon. Jenny L. McNeill",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\certificates_of_service\\COS_F6.txt"
+    },
+    {
+      "filing_id": "F7",
+      "title": "Court of Appeals \u2014 Appeal",
+      "case_number": "[VERIFY \u2014 COA Docket Number]",
+      "court": "Michigan Court of Appeals",
+      "documents_served": 4,
+      "parties_served": "Michigan Court of Appeals \u2014 Clerk, Emily A. Watson, Muskegon County Friend of the Court",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\certificates_of_service\\COS_F7.txt"
+    },
+    {
+      "filing_id": "F8",
+      "title": "Motion for Contempt \u2014 Court Order Violations",
+      "case_number": "2024-001507-DC",
+      "court": "14th Judicial Circuit Court, Family Division, Muskegon County",
+      "documents_served": 5,
+      "parties_served": "Emily A. Watson, Muskegon County Friend of the Court",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\certificates_of_service\\COS_F8.txt"
+    },
+    {
+      "filing_id": "F9",
+      "title": "Housing \u2014 Shady Oaks Habitability",
+      "case_number": "2025-002760-CZ",
+      "court": "14th Judicial Circuit Court, Muskegon County",
+      "documents_served": 5,
+      "parties_served": "[VERIFY \u2014 Shady Oaks Property Owner/Manager]",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\certificates_of_service\\COS_F9.txt"
+    },
+    {
+      "filing_id": "F10",
+      "title": "Criminal Evidence Referral Package",
+      "case_number": "2024-001507-DC",
+      "court": "Muskegon County Prosecuting Attorney / Relevant Agencies",
+      "documents_served": 4,
+      "parties_served": "Muskegon County Prosecuting Attorney",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\certificates_of_service\\COS_F10.txt"
+    }
+  ],
+  "total": 10
+}

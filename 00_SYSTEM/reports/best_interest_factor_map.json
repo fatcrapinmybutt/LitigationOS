@@ -1,0 +1,1035 @@
+{
+  "tool": "#251 MCL 722.23 Best Interest Factor Mapper",
+  "generated": "2026-03-19T09:53:43.332994",
+  "case": "Pigors v. Watson \u2014 2024-001507-DC",
+  "sources_scanned": {
+    "evidence_quotes": 36891,
+    "d_drive_events": 223,
+    "claims": 653,
+    "docket_events": 221
+  },
+  "factor_scores": {
+    "a": {
+      "factor_letter": "a",
+      "factor_name": "Love, Affection, and Other Emotional Ties",
+      "andrew_evidence_count": 67,
+      "andrew_positive": 50,
+      "andrew_negative": 17,
+      "emily_evidence_count": 130,
+      "emily_positive": 62,
+      "emily_negative": 69,
+      "neutral_count": 495,
+      "total_evidence": 692,
+      "andrew_net_score": 102,
+      "emily_net_score": 10,
+      "favored_parent": "Andrew",
+      "top_evidence_andrew": [
+        {
+          "source": "evidence_quotes",
+          "id": 16,
+          "excerpt": "hearing.\nIt is further  ordered that the Plaintiff  must pay a bond of $250 (for each motion) before he\nmay  file another  motion  in this matter.  The  Court  will  then  review  the  motion.  If the",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 53,
+          "excerpt": "ex parte order suspending  his\nparenting  time  is denied.  The  Court  also  notes  that  it offered  supervised\n parenting  time  to the\nFather  and he categorically\n rejected  that.  The  Court  wi",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 54,
+          "excerpt": "denied.  The  Court  also  notes  that  it offered  supervised\n parenting  time  to the\nFather  and he categorically\n rejected  that.  The  Court  will consider\n a motion  for  supervised\nparenting  t",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 79,
+          "excerpt": "hearing:\n*  \nMy  three-year-old\n son  has been  deprived\n of  regular,\n loving\n contact  with  his  father\nfor  months\n at a time.\nA genuine\n father-child\n bond,  previously\n recognized\n by  the  cour",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 264,
+          "excerpt": "hearing:\nMy  three-year-old\n son  has  been  deprived\n of  regular,\n loving\n contact  with  his  father\nfor  months\n at a time.\n*  \nA genuine\n father-child\n bond,  previously\n recognized\n by  the  cou",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ],
+      "top_evidence_emily": [
+        {
+          "source": "evidence_quotes",
+          "id": 445,
+          "excerpt": "Withholding Medical and Developmental Information\nOctober 4, 2024: Emily delayed notifying me that LDW had hand, fo",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 451,
+          "excerpt": "ity to maintain an emotional connection with him.\nJune 1, 2024: Emily refused a weekly video call schedule, citi",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 452,
+          "excerpt": "citing discomfort without proposing\nalternatives.\nOctober 8, 2024: Emily ignored my requests to discuss Halloween p",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 465,
+          "excerpt": "LDW\u2019s doctor\u2019s appointment or his\nvaccinations on November 19, 2024.\n3. Withholding Parenting Time\nEmily\u2019s pattern of",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 466,
+          "excerpt": "ignificant emotional distress for LDW:\nMarch 26 \u2013 May 2, 2024: Emily withheld LDW for 37 consecutive days witho",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ]
+    },
+    "b": {
+      "factor_letter": "b",
+      "factor_name": "Capacity for Love, Affection, Guidance; Continuation of Education",
+      "andrew_evidence_count": 11,
+      "andrew_positive": 11,
+      "andrew_negative": 0,
+      "emily_evidence_count": 13,
+      "emily_positive": 13,
+      "emily_negative": 0,
+      "neutral_count": 223,
+      "total_evidence": 247,
+      "andrew_net_score": 11,
+      "emily_net_score": 13,
+      "favored_parent": "Emily",
+      "top_evidence_andrew": [
+        {
+          "source": "evidence_quotes",
+          "id": 297,
+          "excerpt": "The Court finds that neither has a religious affiliation. \nThe Court finds that\nalthough the child has a bond with both parties, the concern is the capacity and\ndisposition  to give the child love, af",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 294612,
+          "excerpt": "peding Andrew\u2019s role in LDW\u2019s early education. \n \nJune 1, 2024: Andrew proposed a weekly video call to maintain",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 303450,
+          "excerpt": "r curiam opinion of the Court of Appeals, \nissued September 27, 2011 (Docket No. 301060). When the father enrolls the",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "claims",
+          "claim_id": "Cb4cebfed0103",
+          "excerpt": "The Court finds that neither has a religious affiliation. \nThe Court finds that\nalthough the child has a bond with both parties, the concern is the capacity and\ndisposition  to give the child love, af",
+          "classification": "judicial_misconduct",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "claims",
+          "claim_id": "Cbbca1b351644",
+          "excerpt": "Contradiction: hearing.\nIt is further  ordered that the Plaintiff  must pay a bond of $250 (for each motion) before he\nmay  file another  motion  in this matter.  The  Court  will  then  review  the  ",
+          "classification": "record_contradiction",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ],
+      "top_evidence_emily": [
+        {
+          "source": "evidence_quotes",
+          "id": 276444,
+          "excerpt": "where tuition for defendant\u2019s school ranged from $90,000 to $150,000 per year). \nA Canadian case captured",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 276445,
+          "excerpt": "ion for defendant\u2019s school ranged from $90,000 to $150,000 per year). \nA Canadian case captured this aspect",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 282472,
+          "excerpt": "is to confirm that Lincoln David Watson, born on November 9, 2022, was enrolled at\nLittle Explorers Learning Center",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 282645,
+          "excerpt": "arly education; Emily gave evasive responses. \n\u2022  August 9, 2024: Emily did not provide medical records after a do",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 282681,
+          "excerpt": "ms for Lincoln led to potential unpaid bills. \n\u2022  May 20, 2024: Emily\u2019s vague response on Lincoln\u2019s preschool en",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ]
+    },
+    "c": {
+      "factor_letter": "c",
+      "factor_name": "Capacity to Provide Food, Clothing, Medical Care",
+      "andrew_evidence_count": 106,
+      "andrew_positive": 85,
+      "andrew_negative": 27,
+      "emily_evidence_count": 203,
+      "emily_positive": 193,
+      "emily_negative": 17,
+      "neutral_count": 1885,
+      "total_evidence": 2194,
+      "andrew_net_score": 75,
+      "emily_net_score": 203,
+      "favored_parent": "Emily",
+      "top_evidence_andrew": [
+        {
+          "source": "evidence_quotes",
+          "id": 36,
+          "excerpt": "best interest  factors;  the\nPlaintiff\n filed  an objection,\n but  failed\n to follow\n the  Court  rules,  in  stating  with  specificity\n what  parts of\nthe  order  he objected\n to and  did  not  prov",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 49,
+          "excerpt": "hearing  and  subpoenaed\n the two\nheath  west  staff  for  the next  hearing,  which  occurred  on I 1/26/25.  At  that  hearing,  the two\nworks  testified,  the Father  was  about  to provide  testim",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2026,
+          "excerpt": "Resum \nI\nA:NDREW\n PIGORS\n pays  EMILI'\n W,ll'SON\n $1.00  ii month.\n'The  support\n calculation\n provided",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2090,
+          "excerpt": "day. Father did \nnot receive the recording until August 8, 2025. Father had no opportunity to provide \ncontext, e",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2461,
+          "excerpt": "in\nMuratori,  and  Andrew\u2019s  pay  stubs  showing  $95/week  insurance  cost\n.  Violations: Financial\nmi",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ],
+      "top_evidence_emily": [
+        {
+          "source": "evidence_quotes",
+          "id": 9,
+          "excerpt": "the Court.  He is to inform  the  assessor\n of  ALL  the information\nthat was presented to the  Court  at the hearing,  including  the incident  at the library,  alleged\nfollowing  by the same  indivi",
+          "positive_match": true,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 12,
+          "excerpt": "hearing,  including  the incident  at the library,  alleged\nfollowing  by the same  individuals,\n eviction  from  his housing,  his Mother's  refusal  to talk  to him\nariy forther, and his lack  of em",
+          "positive_match": true,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 42,
+          "excerpt": "the Court. He is to inform  the assessor  of ALL  the information\nthat was presented to the Court at the hearing,  including  the incident  at the library,  alfeged\nfollowing by the same individuals, ",
+          "positive_match": true,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 45,
+          "excerpt": "hearing,  including  the incident  at the library,  alfeged\nfollowing by the same individuals,  eviction  from his housing,  his Mother's  refusal  to talk to him\nany fixrther, and his !ack cf emp!oym",
+          "positive_match": true,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 382,
+          "excerpt": "ex parte  communications,\n and  a fair\nopportunity\n to be heard,  especially\n given  that  Ms.Watson\n is an employee\n of  the  Kent\nCounty\n Prosecutors\n office,\n Family\n Court  Division\n as a casework",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ]
+    },
+    "d": {
+      "factor_letter": "d",
+      "factor_name": "Established Custodial Environment",
+      "andrew_evidence_count": 7,
+      "andrew_positive": 4,
+      "andrew_negative": 3,
+      "emily_evidence_count": 23,
+      "emily_positive": 7,
+      "emily_negative": 18,
+      "neutral_count": 30,
+      "total_evidence": 60,
+      "andrew_net_score": 19,
+      "emily_net_score": -8,
+      "favored_parent": "Andrew",
+      "top_evidence_andrew": [
+        {
+          "source": "evidence_quotes",
+          "id": 2797,
+          "excerpt": "sed emotional distress, PTSD, \nand\ninstability\"'.\nJuly 16, 2024:\nPlaintiff\n filed  a Motion  to Impeach  Witness.",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2880,
+          "excerpt": "used emotional distress, PTSD, \nand\ninstability\".\nJuly 16, 2024:\nPlaintiff\n filed  a Motion  to Impeach  Witness.",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 286471,
+          "excerpt": "e biological father of the minor child, LDW, born November 9, 2022.\n2. A valid Established Custodial Environment (EC",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "claims",
+          "claim_id": "Cf0b3ade801d6",
+          "excerpt": "Factor (d) MCL 722.23(d): Length of time in stable custodial environment \u2014 Child removed from father without proper ECE analysis",
+          "classification": "best_interest_factor_d",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "claims",
+          "claim_id": "C19d1a88305f5",
+          "excerpt": "Factor (e) MCL 722.23(e): Permanence of existing custodial home \u2014 Father offers permanent stable home",
+          "classification": "best_interest_factor_e",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ],
+      "top_evidence_emily": [
+        {
+          "source": "evidence_quotes",
+          "id": 467,
+          "excerpt": "interaction and disrupting our bond.\nOctober 20 \u2013 November 12, 2024: Emily again withheld LDW, which included Hallowe",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 648,
+          "excerpt": "with LDW and disrupt\nparenting time.\nExample: On October 20, 2024, Albert Watson served a PPO violation during an e",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 657,
+          "excerpt": "tes feelings of loss and instability.\nExample: On November 9, 2024, LDW\u2019s second birthday, Emily denied my request t",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2450,
+          "excerpt": "ly\u2019s claims of instability\n, the  PPO issuance on November 17, 2023 after Emily\u2019s poisoning allegation\n, subsequent P",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 282684,
+          "excerpt": "espond to updates on Lincoln\u2019s daily routine. \n\u2022  May 28, 2024: Emily\u2019s handling of Lincoln\u2019s healthcare through",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ]
+    },
+    "e": {
+      "factor_letter": "e",
+      "factor_name": "Permanence of Existing/Proposed Custodial Home",
+      "andrew_evidence_count": 48,
+      "andrew_positive": 22,
+      "andrew_negative": 27,
+      "emily_evidence_count": 43,
+      "emily_positive": 27,
+      "emily_negative": 16,
+      "neutral_count": 526,
+      "total_evidence": 617,
+      "andrew_net_score": 11,
+      "emily_net_score": 38,
+      "favored_parent": "Emily",
+      "top_evidence_andrew": [
+        {
+          "source": "evidence_quotes",
+          "id": 2797,
+          "excerpt": "sed emotional distress, PTSD, \nand\ninstability\"'.\nJuly 16, 2024:\nPlaintiff\n filed  a Motion  to Impeach  Witness.",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2880,
+          "excerpt": "used emotional distress, PTSD, \nand\ninstability\".\nJuly 16, 2024:\nPlaintiff\n filed  a Motion  to Impeach  Witness.",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 3786,
+          "excerpt": "n- Plaintiff was told to accept rent \nincrease to $695 or face eviction. No legal justification or notic",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 30032,
+          "excerpt": "Cox).\nSecond Denial and Execution of Eviction: On July 9, 2025, Judge Hoopes considered Plaintiff\u2019s\namended fili",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 33819,
+          "excerpt": "s to \ndelay eviction were denied by the court. On June 13, 2025, Plaintiff filed a new \ncivil action in the 14th",
+          "positive_match": false,
+          "negative_match": true
+        }
+      ],
+      "top_evidence_emily": [
+        {
+          "source": "evidence_quotes",
+          "id": 9,
+          "excerpt": "the Court.  He is to inform  the  assessor\n of  ALL  the information\nthat was presented to the  Court  at the hearing,  including  the incident  at the library,  alleged\nfollowing  by the same  indivi",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 12,
+          "excerpt": "hearing,  including  the incident  at the library,  alleged\nfollowing  by the same  individuals,\n eviction  from  his housing,  his Mother's  refusal  to talk  to him\nariy forther, and his lack  of em",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 42,
+          "excerpt": "the Court. He is to inform  the assessor  of ALL  the information\nthat was presented to the Court at the hearing,  including  the incident  at the library,  alfeged\nfollowing by the same individuals, ",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 45,
+          "excerpt": "hearing,  including  the incident  at the library,  alfeged\nfollowing by the same individuals,  eviction  from his housing,  his Mother's  refusal  to talk to him\nany fixrther, and his !ack cf emp!oym",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 138,
+          "excerpt": "IT iS ORDERED:\n6. (continued)\n\u20ac f. \ninterferingwithpetitioner'seffortstoremovehis/herchildren/personalpropert5rfrompremisessolelyowned/leased'\nby respondent.\naap.threateningtobiiiorphysicaiiyin3ursNam",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ]
+    },
+    "f": {
+      "factor_letter": "f",
+      "factor_name": "Moral Fitness of the Parties",
+      "andrew_evidence_count": 63,
+      "andrew_positive": 11,
+      "andrew_negative": 55,
+      "emily_evidence_count": 122,
+      "emily_positive": 3,
+      "emily_negative": 121,
+      "neutral_count": 1648,
+      "total_evidence": 1833,
+      "andrew_net_score": 77,
+      "emily_net_score": -63,
+      "favored_parent": "Andrew",
+      "top_evidence_andrew": [
+        {
+          "source": "evidence_quotes",
+          "id": 44,
+          "excerpt": "hearing,  the Plaintiff  stated  that  he was accosted  at the library;  these  same  men were  following\nhim; he could  not say  what  their  names  were;  and stated  that  they  were  arrested.  He",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 248,
+          "excerpt": "hearing;  clear  tindings\n on record.\n12 i Misstatement that father \"refused\"  supervision \ni Court characterizes best-interests objection as refusal of\nsupervised time i MCL 722.27a(1)-(3); accuracy ",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 372,
+          "excerpt": "ex parte  motion  to suspend  the Father's  parenting  time.\nShe alleged  that  she was concerned  regarding  on going  drug use/mental  health  iSsues  due to\nhis phone  calls  to herfatherwhere\n he ",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2769,
+          "excerpt": "liold\n the integrity\n of  the judicial\n process\".\nMay  23, 2024:\nPlaintiff\n filed  Motion\n regarding\n Parenting",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2852,
+          "excerpt": "old  tlie  integrity\n of  the judicial\n process\".\nMay  23, 2024:\nPlaintiff\n filed  Motion\n regarding\n Parenting",
+          "positive_match": true,
+          "negative_match": true
+        }
+      ],
+      "top_evidence_emily": [
+        {
+          "source": "evidence_quotes",
+          "id": 230,
+          "excerpt": "notice,  or that  notice  itself  will  precipitate\n adverse\n action\nbefore  an order  can  be issued.\nWHEREFORE,\n Defendant,  respectfully\n requests\n the  following\nrelieffrom\n this  Honorable\n Court",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 287,
+          "excerpt": "denied.  He states  that  he believes\n that  as a\nman  he fee's  that  sexism  and  an established\n systemic\n bias  favors  women/mothers\n in regards  to custody\n and  PPO  cases.\nIn order  to respond",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 511,
+          "excerpt": "safety with Cody, citing substance abuse\nissues.\nMay 19, 2024: Emily refuses to test Lincoln for potential pean",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2050,
+          "excerpt": "n fraudulent evidence\n\u2022 Restore parenting time to July 17, 2024 order\n\u2022 Disqualify Judge McNeill\n\u2022 Sanction Emily",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2419,
+          "excerpt": "aracter  assassination.\n4. Drug  Use Accusation\n (November\n 14,  2023):\n*  \nAllegation:\n Emily  falsely  accused  Plain",
+          "positive_match": false,
+          "negative_match": true
+        }
+      ]
+    },
+    "g": {
+      "factor_letter": "g",
+      "factor_name": "Mental and Physical Health of the Parties",
+      "andrew_evidence_count": 55,
+      "andrew_positive": 52,
+      "andrew_negative": 14,
+      "emily_evidence_count": 46,
+      "emily_positive": 44,
+      "emily_negative": 2,
+      "neutral_count": 326,
+      "total_evidence": 427,
+      "andrew_net_score": 40,
+      "emily_net_score": 56,
+      "favored_parent": "Emily",
+      "top_evidence_andrew": [
+        {
+          "source": "evidence_quotes",
+          "id": 2,
+          "excerpt": "hearing  was\nadjourned\n for  Plaintiff  to obtain  a mental  health  assessment.\n The  parties  appeared\n on 1 0/29/25.\nThePlaintiff\n \nWest,stating(under\noath)  that he did not obtain  a second  asses",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 7,
+          "excerpt": "hearing  and  subpoenaed\n the  two\nhealth  west  staff  for  the next  hearing,  which  occurred  on 1 1/26/25.  At that  hearing,  the  two\nworkstestified,\n \nwas\nDespite  numerous\n warnings,  the Fat",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 10,
+          "excerpt": "hearing  on 8/22/25.\nOn 9/22/2025,\n the  Court  asked  the Plaintiff  to undergo  an assessment\n at Health  West.\nThe  matter  was  then  set for an evidentiary\n hearing  on 9/4/25.  At the evidentiar",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 38,
+          "excerpt": "hearing  was\nadjourned  for Piaintiffto\n obtain  a mental  health  assessment.  The  parties  appeared  on 10/29/25.\nThe Plaintiff objected to the Court reviewing  a 2nd assessment from  Health  West,",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 43,
+          "excerpt": "hearing  on 8/22/25.\nOn 9/22/2025,  the Court  asked  the Plaintiff  to undergo  an assessment  at Health  West.\nThe matter  was  then set for an evidentiary  hearing  on 9/4/25.  At the evidentiary  ",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ],
+      "top_evidence_emily": [
+        {
+          "source": "evidence_quotes",
+          "id": 477,
+          "excerpt": "nd ensure his long-term well-being.\nNovember 2024\nNovember 15, 2024: Emily\u2019s withholding of Lincoln ends after 25 con",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 509,
+          "excerpt": "ndrew's inquiries about Lincoln's health updates.\nMay 28, 2024: Emily withholds full pediatric records after And",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 511,
+          "excerpt": "safety with Cody, citing substance abuse\nissues.\nMay 19, 2024: Emily refuses to test Lincoln for potential pean",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 19713,
+          "excerpt": "ns together regarding major health issues. 5.2 On\nMarch 15, 2024, Emily Watson accessed my personal medical record",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 19723,
+          "excerpt": "ns together regarding major health issues. 5.2 On March 15,\n2024, Emily Wats (Legal: MCR 3.207(B)(2); Source: CHAT",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ]
+    },
+    "h": {
+      "factor_letter": "h",
+      "factor_name": "Home, School, and Community Record of the Child",
+      "andrew_evidence_count": 27,
+      "andrew_positive": 25,
+      "andrew_negative": 8,
+      "emily_evidence_count": 52,
+      "emily_positive": 39,
+      "emily_negative": 15,
+      "neutral_count": 408,
+      "total_evidence": 487,
+      "andrew_net_score": 32,
+      "emily_net_score": 32,
+      "favored_parent": "Neutral/Insufficient",
+      "top_evidence_andrew": [
+        {
+          "source": "evidence_quotes",
+          "id": 13,
+          "excerpt": "the Court.  He describes\n being  around\nthreaten  him, being  followed  and other  dangerous\nactivities.  These  situations\n are harmful  to the  child  and place  him at risk.\n* \nThe reasonable\n like",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 46,
+          "excerpt": "Judge.  The  Court notes\nthat  the  Father  has been  repeatedly\n warned  of this  behavior  over  the course  of the litigation.\nDespite  numerous\n warnings,  the Father  continues\n to interrupt  the",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 496,
+          "excerpt": "arenting class, avoiding\ncollaborative solutions.\nSeptember 8, 2024: Andrew observes regression in Lincoln\u2019s behavior",
+          "positive_match": true,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2062,
+          "excerpt": "es to:\n\u2022 Withdraw PPO\n\u2022 Restore parenting time to July 17, 2024 order\n\u2022 Agree to 50/50 custody\n\u2022 Pay Father's att",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 270475,
+          "excerpt": "their community). Plaintiff anticipates at\nleast $5,000 in short-term costs, plus potentially months of h",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ],
+      "top_evidence_emily": [
+        {
+          "source": "evidence_quotes",
+          "id": 447,
+          "excerpt": "g LDW During Parenting Time\nMisbehavior:\nMarch 26\u2013May 2, 2024: Emily withheld LDW for over 37 days without a co",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 453,
+          "excerpt": "lse Narratives About My Parenting\nMisbehavior:\nOn October 15, 2023, Emily alleged that she discovered a straw with s",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 497,
+          "excerpt": "ncoln\u2019s behavior, raising concerns Emily ignores.\nSeptember 5, 2024: Emily rejects collaboration on custody and child",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 502,
+          "excerpt": "resolution proposal, preferring court\nlitigation.\nJuly 1, 2024: Emily declines to co-plan Lincoln\u2019s dental visit",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 588,
+          "excerpt": ", despite my concerns for his safety.\nExample: On May 28, 2024, I raised concerns about Cody Watson\u2019s behavior,",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ]
+    },
+    "i": {
+      "factor_letter": "i",
+      "factor_name": "Reasonable Preference of the Child",
+      "andrew_evidence_count": 3,
+      "andrew_positive": 0,
+      "andrew_negative": 3,
+      "emily_evidence_count": 0,
+      "emily_positive": 0,
+      "emily_negative": 0,
+      "neutral_count": 11,
+      "total_evidence": 14,
+      "andrew_net_score": -3,
+      "emily_net_score": 3,
+      "favored_parent": "Emily",
+      "top_evidence_andrew": [
+        {
+          "source": "evidence_quotes",
+          "id": 276916,
+          "excerpt": "utilities, and lease enforcement (Exhibit M).\nOn March 26, 2024, Plaintiff was coerced under threat of eviction t",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 276934,
+          "excerpt": "n and coerced Plaintiff\ninto executing a lease on March 26, 2024, at Cricklewood MHP while purporting to represent",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 276935,
+          "excerpt": "On March 26, 2024, Plaintiff was coerced into signing a lease agree",
+          "positive_match": false,
+          "negative_match": true
+        }
+      ],
+      "top_evidence_emily": []
+    },
+    "j": {
+      "factor_letter": "j",
+      "factor_name": "Willingness to Facilitate Relationship with Other Parent",
+      "andrew_evidence_count": 102,
+      "andrew_positive": 94,
+      "andrew_negative": 14,
+      "emily_evidence_count": 135,
+      "emily_positive": 76,
+      "emily_negative": 73,
+      "neutral_count": 356,
+      "total_evidence": 593,
+      "andrew_net_score": 153,
+      "emily_net_score": 17,
+      "favored_parent": "Andrew",
+      "top_evidence_andrew": [
+        {
+          "source": "evidence_quotes",
+          "id": 486,
+          "excerpt": "verlapping Halloween and Andrew\u2019s\nparenting time.\nOctober 15, 2024: Andrew raises concerns about Lincoln arriving wi",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2062,
+          "excerpt": "es to:\n\u2022 Withdraw PPO\n\u2022 Restore parenting time to July 17, 2024 order\n\u2022 Agree to 50/50 custody\n\u2022 Pay Father's att",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2067,
+          "excerpt": "ng time case. The trial court issued an order on \nAugust 5, 2025, suspending Father's parenting time. Father filed",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2069,
+          "excerpt": "fying Father's parenting time, culminating in the August 5, 2025 \nsuspension order that is the subject of this app",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 2071,
+          "excerpt": ". The August 5, 2025 Ex Parte Suspension Order\nOn August 5, 2025, Father's scheduled parenting time was suspended",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ],
+      "top_evidence_emily": [
+        {
+          "source": "evidence_quotes",
+          "id": 445,
+          "excerpt": "Withholding Medical and Developmental Information\nOctober 4, 2024: Emily delayed notifying me that LDW had hand, fo",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 447,
+          "excerpt": "g LDW During Parenting Time\nMisbehavior:\nMarch 26\u2013May 2, 2024: Emily withheld LDW for over 37 days without a co",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 465,
+          "excerpt": "LDW\u2019s doctor\u2019s appointment or his\nvaccinations on November 19, 2024.\n3. Withholding Parenting Time\nEmily\u2019s pattern of",
+          "positive_match": true,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 477,
+          "excerpt": "nd ensure his long-term well-being.\nNovember 2024\nNovember 15, 2024: Emily\u2019s withholding of Lincoln ends after 25 con",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 485,
+          "excerpt": "parenting exchange, taking Lincoln from his\narms.\nOctober 20, 2024: Emily begins withholding Lincoln again, overlapp",
+          "positive_match": false,
+          "negative_match": true
+        }
+      ]
+    },
+    "k": {
+      "factor_letter": "k",
+      "factor_name": "Domestic Violence",
+      "andrew_evidence_count": 111,
+      "andrew_positive": 111,
+      "andrew_negative": 0,
+      "emily_evidence_count": 148,
+      "emily_positive": 148,
+      "emily_negative": 0,
+      "neutral_count": 1592,
+      "total_evidence": 1851,
+      "andrew_net_score": 111,
+      "emily_net_score": 148,
+      "favored_parent": "Emily",
+      "top_evidence_andrew": [
+        {
+          "source": "evidence_quotes",
+          "id": 8,
+          "excerpt": "hearing  on the Father's  7'h \nPPO  violation  occurred.  He pled  guilty and\nreceived  45 days  in jail.\nPage  4\nPigors  v Watson  \n2024-001507-DC",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 13,
+          "excerpt": "the Court.  He describes\n being  around\nthreaten  him, being  followed  and other  dangerous\nactivities.  These  situations\n are harmful  to the  child  and place  him at risk.\n* \nThe reasonable\n like",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 50,
+          "excerpt": "hearing  on the Father's  7'h \nPPO  violation  occurred.  He pled  guilty and\nreceived  45 days  in jail.\nPage  4\nPigors  v Watson\n \n2024-001507-DC",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 237,
+          "excerpt": "Court Rules. This marks at least the fourth  instance of  evasion de6gned :\nsuppress Plaintiffs  ability  to receive notice, present rebuttal, or obtain timely  relM.  \n;3'i\nThis  defect  is not  cler",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 270,
+          "excerpt": "Dismissed.\n \nPlaintiff/Father\n was not granted  Joint Legal\nCustody  or 50/50  Parenting  Time  by this Court.  \nPlaintiff\"s\n request  to restore  50/50  joint  legal and\nphysical  custody  arrangemen",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ],
+      "top_evidence_emily": [
+        {
+          "source": "evidence_quotes",
+          "id": 31,
+          "excerpt": "defendant.Uninsuredexpensesexoeedingtheannual\nenfo  rmby\"firaae\n blamoundonftThfoer\n oo\"euyrLaaTrhe\"eaynnau'aa:\n ord'o\"ia\"nary\"mediam'a'oatpaindtmth.,in5248fOdTarchol.\nObligation\n Ends.  Except  for c",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 98,
+          "excerpt": "hearing  on violation of a valid personal/foreign protection order and was\nadvised  of his/her  rights.\n[1] 3. The  respondent\n pled guilty  to the violations\n in the motion  to show  cause  (complete",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 138,
+          "excerpt": "IT iS ORDERED:\n6. (continued)\n\u20ac f. \ninterferingwithpetitioner'seffortstoremovehis/herchildren/personalpropert5rfrompremisessolelyowned/leased'\nby respondent.\naap.threateningtobiiiorphysicaiiyin3ursNam",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 178,
+          "excerpt": "HEARING\nDate:\n \nFRIDAY\n \nMAY  \n24,\n \n2024\nTime:\n \n11 :30\n AM\nJurist:\n \nJENNY\n L.  \nMCNEILL\nComments:\n \nRE:  \nDEFENDANT'S\n OBJECTION\n \nTO \nEXPARTE\nAND  CHILD\n \nSUPPORT\n FOLLOWING\n FIG,\n \nVIA\n(231  ) 72",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 287,
+          "excerpt": "denied.  He states  that  he believes\n that  as a\nman  he fee's  that  sexism  and  an established\n systemic\n bias  favors  women/mothers\n in regards  to custody\n and  PPO  cases.\nIn order  to respond",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ]
+    },
+    "l": {
+      "factor_letter": "l",
+      "factor_name": "Any Other Relevant Factor",
+      "andrew_evidence_count": 100,
+      "andrew_positive": 46,
+      "andrew_negative": 64,
+      "emily_evidence_count": 66,
+      "emily_positive": 30,
+      "emily_negative": 38,
+      "neutral_count": 895,
+      "total_evidence": 1061,
+      "andrew_net_score": 20,
+      "emily_net_score": 56,
+      "favored_parent": "Emily",
+      "top_evidence_andrew": [
+        {
+          "source": "evidence_quotes",
+          "id": 36,
+          "excerpt": "best interest  factors;  the\nPlaintiff\n filed  an objection,\n but  failed\n to follow\n the  Court  rules,  in  stating  with  specificity\n what  parts of\nthe  order  he objected\n to and  did  not  prov",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 53,
+          "excerpt": "ex parte order suspending  his\nparenting  time  is denied.  The  Court  also  notes  that  it offered  supervised\n parenting  time  to the\nFather  and he categorically\n rejected  that.  The  Court  wi",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 231,
+          "excerpt": "EX PARTE  MOTION  TO  SUSPEND\n PLAINTIFF'S\nPARENTING\n TIME\nAt a session  of said  Court,  held  in the\nCourthouse  in the Counjy  of Muskegon,  State of Michigan\nPresent  Hon. JENNY  L MCNEILL\nWHEREAS",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 235,
+          "excerpt": "Ex Parte Motion iuccor4a<<e\nwith Michigan  Court Rules. This marks at least the fourth  instance of  evasion de6gned :\nsuppress Plaintiffs  ability  to receive notice, present rebuttal, or obtain time",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 269,
+          "excerpt": "best interest  of  the child  to c}iange  parenting  time  (F 5. of  form)\nPlaintiff\n requested  the Court  to Order  parenting  time  be changed  (G 6. of  form).\nAttached  to the Motion  was 16 addi",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ],
+      "top_evidence_emily": [
+        {
+          "source": "evidence_quotes",
+          "id": 1,
+          "excerpt": "HEARING\n 11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant\n requested,\n and  the Court  signed  an ex parte  order  suspending\n the  Plaintiff's\nparenting  time.  An evidentiary\n hearing  was held on S",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 35,
+          "excerpt": "hearing\n was  held;  and  the  Court  rendered\n an oral  opinion.\n The  Defendant  submitted  an order\nunder  the 7 day  rule,  using  parts  of  the  rulings\n the  Court  made  regarding\n the  best i",
+          "positive_match": true,
+          "negative_match": false
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 37,
+          "excerpt": "HEARING  11/26/2025\nEMILY  A. WATSON,\nDefendant\nDefendant  requested,  and the Court  signed  an ex parte  order  suspending  the Plaintiffs\nparenting  time. An evidentiary  hearing  was held on Septe",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 64,
+          "excerpt": "notice\n of\nSuSpenSlOn.\no  \nI was  not  served  with  the  ex parte  motion\n or order  before  the  August\n 8\nscheduled\n exchange.\no  \nI arrived\n expecting\n my  regular\n parenting\n time.  Emily\n did  n",
+          "positive_match": false,
+          "negative_match": true
+        },
+        {
+          "source": "evidence_quotes",
+          "id": 215,
+          "excerpt": "IT IS ORDERED:\nZl.  The  respondent\n is ordered\n to appear  before  this  court  on  11/18/2025\n a' 11:30 AM\nDate and time\n'Q the  court  address\n above\nRf\ncou,lr00mnum5P,\n G-4THFLOOR-INPERSON\nL-i\nto ",
+          "positive_match": true,
+          "negative_match": false
+        }
+      ]
+    }
+  }
+}

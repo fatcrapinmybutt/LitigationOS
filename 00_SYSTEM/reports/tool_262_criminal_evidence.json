@@ -1,0 +1,769 @@
+{
+  "tool": "#262 Criminal Evidence Scanner",
+  "generated": "2026-03-19T10:11:45.667077",
+  "tables_scanned": 57,
+  "rows_searched": 866673,
+  "crimes_with_evidence": 12,
+  "db_records_created": 33,
+  "prosecutable_count": 12,
+  "felony_count": 5,
+  "crime_report": {
+    "MCL 750.423": {
+      "name": "Perjury",
+      "max_penalty": "15 years",
+      "felony": true,
+      "total_evidence": 2586,
+      "elements_count": 5,
+      "elements_satisfied": 5,
+      "satisfaction_pct": 100.0,
+      "prosecutable": true,
+      "perpetrators": {
+        "Emily A. Watson": {
+          "evidence_count": 1409,
+          "top_sources": [
+            "evidence_consolidated",
+            "evidence_findings",
+            "master_violations_parsed",
+            "watson_family_conspiracy",
+            "conspiracy_timeline"
+          ],
+          "sample_terms": [
+            "false allegation",
+            "false statement",
+            "contradicted by",
+            "misrepresent",
+            "false testimony"
+          ]
+        },
+        "watson": {
+          "evidence_count": 1177,
+          "top_sources": [
+            "evidence_consolidated",
+            "evidence_findings",
+            "master_violations_parsed",
+            "watson_family_conspiracy",
+            "conspiracy_timeline"
+          ],
+          "sample_terms": [
+            "false allegation",
+            "false statement",
+            "contradicted by",
+            "misrepresent",
+            "false testimony"
+          ]
+        }
+      },
+      "elements": [
+        "False statement made",
+        "Under oath or affirmation",
+        "In judicial proceeding",
+        "Material to the matter",
+        "Willfully and knowingly false"
+      ]
+    },
+    "MCL 750.424": {
+      "name": "Subornation of Perjury / False Swearing",
+      "max_penalty": "15 years",
+      "felony": true,
+      "total_evidence": 30,
+      "elements_count": 3,
+      "elements_satisfied": 3,
+      "satisfaction_pct": 100.0,
+      "prosecutable": true,
+      "perpetrators": {
+        "watson": {
+          "evidence_count": 17,
+          "top_sources": [
+            "evidence_consolidated",
+            "chat_evidence_messages_fts",
+            "actionable_evidence",
+            "shadyoaks_evidence",
+            "chat_evidence_messages"
+          ],
+          "sample_terms": [
+            "scripted",
+            "coached"
+          ]
+        },
+        "Jennifer Barnes (P55406)": {
+          "evidence_count": 11,
+          "top_sources": [
+            "chat_evidence_messages_fts",
+            "shadyoaks_evidence",
+            "chat_evidence_messages"
+          ],
+          "sample_terms": [
+            "scripted",
+            "coached"
+          ]
+        },
+        "Ronald T. Berry": {
+          "evidence_count": 2,
+          "top_sources": [
+            "shadyoaks_evidence"
+          ],
+          "sample_terms": [
+            "scripted",
+            "coached"
+          ]
+        }
+      },
+      "elements": [
+        "Procured or induced another to commit perjury",
+        "Knowledge that testimony would be false",
+        "In judicial or official proceeding"
+      ]
+    },
+    "MCL 750.157a": {
+      "name": "Criminal Conspiracy",
+      "max_penalty": "Equal to underlying offense",
+      "felony": true,
+      "total_evidence": 2274,
+      "elements_count": 4,
+      "elements_satisfied": 4,
+      "satisfaction_pct": 100.0,
+      "prosecutable": true,
+      "perpetrators": {
+        "Emily A. Watson": {
+          "evidence_count": 1090,
+          "top_sources": [
+            "evidence_consolidated",
+            "evidence_findings",
+            "docket_events",
+            "master_violations_parsed",
+            "watson_family_conspiracy"
+          ],
+          "sample_terms": [
+            "coordinated",
+            "conspir",
+            "go tomorrow",
+            "orchestrat",
+            "want this incident documented"
+          ]
+        },
+        "watson": {
+          "evidence_count": 860,
+          "top_sources": [
+            "evidence_consolidated",
+            "evidence_findings",
+            "docket_events",
+            "master_violations_parsed",
+            "watson_family_conspiracy"
+          ],
+          "sample_terms": [
+            "coordinated",
+            "conspir",
+            "go tomorrow",
+            "orchestrat",
+            "want this incident documented"
+          ]
+        },
+        "Pamela Rusco": {
+          "evidence_count": 103,
+          "top_sources": [
+            "evidence_consolidated",
+            "evidence_quotes",
+            "evidence_content_extracts",
+            "chat_evidence_messages_fts",
+            "actor_violations"
+          ],
+          "sample_terms": [
+            "coordinated",
+            "conspir",
+            "orchestrat",
+            "agreement",
+            "scheme"
+          ]
+        },
+        "Ronald T. Berry": {
+          "evidence_count": 31,
+          "top_sources": [
+            "evidence_consolidated",
+            "email_evidence_package",
+            "h_drive_tort_claims",
+            "evidence_content_extracts",
+            "actor_violations"
+          ],
+          "sample_terms": [
+            "agreement",
+            "coordinated",
+            "conspir"
+          ]
+        },
+        "Jennifer Barnes (P55406)": {
+          "evidence_count": 190,
+          "top_sources": [
+            "evidence_consolidated",
+            "email_evidence_package",
+            "evidence_quotes",
+            "evidence_content_extracts",
+            "judicial_violations"
+          ],
+          "sample_terms": [
+            "coordinated",
+            "conspir",
+            "orchestrat",
+            "want this incident documented",
+            "agreement"
+          ]
+        }
+      },
+      "elements": [
+        "Agreement between two or more persons",
+        "To commit a criminal act",
+        "Overt act in furtherance",
+        "Intent to accomplish the objective"
+      ]
+    },
+    "MCL 750.350a": {
+      "name": "Custodial Interference / Parenting Time Interference",
+      "max_penalty": "1 year / felony if 24+ hrs",
+      "felony": false,
+      "total_evidence": 1526,
+      "elements_count": 4,
+      "elements_satisfied": 4,
+      "satisfaction_pct": 100.0,
+      "prosecutable": true,
+      "perpetrators": {
+        "Emily A. Watson": {
+          "evidence_count": 909,
+          "top_sources": [
+            "evidence_consolidated",
+            "docket_events",
+            "master_violations_parsed",
+            "watson_family_conspiracy",
+            "evidence_quotes"
+          ],
+          "sample_terms": [
+            "suspended parenting",
+            "no contact",
+            "denied parenting",
+            "withheld child",
+            "denied time"
+          ]
+        },
+        "watson": {
+          "evidence_count": 617,
+          "top_sources": [
+            "evidence_consolidated",
+            "docket_events",
+            "master_violations_parsed",
+            "watson_family_conspiracy",
+            "evidence_timeline"
+          ],
+          "sample_terms": [
+            "suspended parenting",
+            "no contact",
+            "denied parenting",
+            "denied time",
+            "interference"
+          ]
+        }
+      },
+      "elements": [
+        "Court order for custody/parenting time exists",
+        "Intentional denial of court-ordered time",
+        "Knowledge of the court order",
+        "No lawful justification"
+      ]
+    },
+    "MCL 600.916": {
+      "name": "Unauthorized Practice of Law (UPL)",
+      "max_penalty": "Contempt + injunction",
+      "felony": false,
+      "total_evidence": 29,
+      "elements_count": 5,
+      "elements_satisfied": 5,
+      "satisfaction_pct": 100.0,
+      "prosecutable": true,
+      "perpetrators": {
+        "Ronald T. Berry": {
+          "evidence_count": 29,
+          "top_sources": [
+            "evidence_consolidated",
+            "h_drive_tort_claims",
+            "evidence_content_extracts",
+            "actor_violations",
+            "actionable_evidence"
+          ],
+          "sample_terms": [
+            "unauthorized practice",
+            "legal advice",
+            "upl"
+          ]
+        }
+      },
+      "elements": [
+        "Not licensed to practice law in Michigan",
+        "Engaged in practice of law",
+        "Gave legal advice or prepared legal documents",
+        "Held self out as qualified to practice",
+        "For another person"
+      ]
+    },
+    "MCL 764.15a": {
+      "name": "Filing False Police Report",
+      "max_penalty": "93 days (misdemeanor) / 4 years (felony if causes arrest)",
+      "felony": false,
+      "total_evidence": 1080,
+      "elements_count": 4,
+      "elements_satisfied": 4,
+      "satisfaction_pct": 100.0,
+      "prosecutable": true,
+      "perpetrators": {
+        "Emily A. Watson": {
+          "evidence_count": 596,
+          "top_sources": [
+            "evidence_consolidated",
+            "evidence_quotes",
+            "watson_perjury_compilation",
+            "evidence_content_extracts",
+            "chat_evidence_messages_fts"
+          ],
+          "sample_terms": [
+            "false accusation",
+            "false complaint",
+            "false police",
+            "false report"
+          ]
+        },
+        "watson": {
+          "evidence_count": 484,
+          "top_sources": [
+            "evidence_consolidated",
+            "watson_perjury_compilation",
+            "evidence_content_extracts",
+            "chat_evidence_messages_fts",
+            "actor_violations"
+          ],
+          "sample_terms": [
+            "false accusation",
+            "false police",
+            "false report"
+          ]
+        }
+      },
+      "elements": [
+        "Report made to law enforcement",
+        "Report was false or misleading",
+        "Reporter knew it was false",
+        "Report concerned a crime or emergency"
+      ]
+    },
+    "MCL 750.218": {
+      "name": "False Pretenses (Fraud)",
+      "max_penalty": "10 years",
+      "felony": true,
+      "total_evidence": 1731,
+      "elements_count": 5,
+      "elements_satisfied": 5,
+      "satisfaction_pct": 100.0,
+      "prosecutable": true,
+      "perpetrators": {
+        "Emily A. Watson": {
+          "evidence_count": 956,
+          "top_sources": [
+            "evidence_consolidated",
+            "evidence_findings",
+            "docket_events",
+            "master_violations_parsed",
+            "watson_family_conspiracy"
+          ],
+          "sample_terms": [
+            "fabricated evidence",
+            "false pretense",
+            "falsified",
+            "manufactured",
+            "defraud"
+          ]
+        },
+        "watson": {
+          "evidence_count": 769,
+          "top_sources": [
+            "evidence_consolidated",
+            "evidence_findings",
+            "docket_events",
+            "master_violations_parsed",
+            "watson_family_conspiracy"
+          ],
+          "sample_terms": [
+            "fabricated evidence",
+            "false pretense",
+            "manufactured",
+            "falsified",
+            "defraud"
+          ]
+        },
+        "Ronald T. Berry": {
+          "evidence_count": 6,
+          "top_sources": [
+            "evidence_content_extracts",
+            "shadyoaks_evidence"
+          ],
+          "sample_terms": [
+            "fraud",
+            "false pretense"
+          ]
+        }
+      },
+      "elements": [
+        "False representation of fact",
+        "Known to be false by defendant",
+        "Made with intent to defraud",
+        "Victim relied on the false representation",
+        "Victim suffered loss"
+      ]
+    },
+    "MCL 750.120a": {
+      "name": "Witness Tampering / Intimidation",
+      "max_penalty": "10 years (felony)",
+      "felony": true,
+      "total_evidence": 2451,
+      "elements_count": 3,
+      "elements_satisfied": 3,
+      "satisfaction_pct": 100.0,
+      "prosecutable": true,
+      "perpetrators": {
+        "Hon. Jenny L. McNeill": {
+          "evidence_count": 873,
+          "top_sources": [
+            "evidence_consolidated",
+            "evidence_findings",
+            "master_violations_parsed",
+            "convergence_evidence_map",
+            "watson_family_conspiracy"
+          ],
+          "sample_terms": [
+            "silence",
+            "do not file",
+            "intimidat",
+            "retaliat",
+            "threaten"
+          ]
+        },
+        "Emily A. Watson": {
+          "evidence_count": 830,
+          "top_sources": [
+            "evidence_consolidated",
+            "docket_events",
+            "master_violations_parsed",
+            "convergence_evidence_map",
+            "watson_family_conspiracy"
+          ],
+          "sample_terms": [
+            "do not file",
+            "retaliat",
+            "intimidat",
+            "threaten"
+          ]
+        },
+        "watson": {
+          "evidence_count": 644,
+          "top_sources": [
+            "evidence_consolidated",
+            "docket_events",
+            "master_violations_parsed",
+            "convergence_evidence_map",
+            "watson_family_conspiracy"
+          ],
+          "sample_terms": [
+            "do not file",
+            "retaliat",
+            "intimidat",
+            "threaten"
+          ]
+        },
+        "Pamela Rusco": {
+          "evidence_count": 90,
+          "top_sources": [
+            "evidence_consolidated",
+            "email_evidence_package",
+            "watson_perjury_compilation",
+            "evidence_content_extracts",
+            "chat_evidence_messages_fts"
+          ],
+          "sample_terms": [
+            "do not file",
+            "retaliat",
+            "intimidat",
+            "threaten"
+          ]
+        },
+        "Ronald T. Berry": {
+          "evidence_count": 14,
+          "top_sources": [
+            "chat_evidence_messages_fts",
+            "actor_violations",
+            "shadyoaks_evidence",
+            "chat_evidence_messages"
+          ],
+          "sample_terms": [
+            "retaliat",
+            "intimidat",
+            "threaten"
+          ]
+        }
+      },
+      "elements": [
+        "Intimidated, threatened, or retaliated against a witness",
+        "In connection with a legal proceeding",
+        "Intent to influence testimony or prevent reporting"
+      ]
+    },
+    "MCL 750.81d": {
+      "name": "Filing False DV Allegations as Weapon",
+      "max_penalty": "93 days per false filing",
+      "felony": false,
+      "total_evidence": 835,
+      "elements_count": 4,
+      "elements_satisfied": 4,
+      "satisfaction_pct": 100.0,
+      "prosecutable": true,
+      "perpetrators": {
+        "Emily A. Watson": {
+          "evidence_count": 466,
+          "top_sources": [
+            "evidence_consolidated",
+            "watson_perjury_compilation",
+            "evidence_content_extracts",
+            "chat_evidence_messages_fts",
+            "actor_violations"
+          ],
+          "sample_terms": [
+            "no injuries",
+            "weaponized",
+            "never happened",
+            "false ppo",
+            "false dv"
+          ]
+        },
+        "watson": {
+          "evidence_count": 369,
+          "top_sources": [
+            "evidence_consolidated",
+            "watson_perjury_compilation",
+            "evidence_content_extracts",
+            "chat_evidence_messages_fts",
+            "actor_violations"
+          ],
+          "sample_terms": [
+            "no injuries",
+            "weaponized",
+            "false ppo",
+            "false dv",
+            "false stalking"
+          ]
+        }
+      },
+      "elements": [
+        "Allegation of domestic violence made",
+        "Allegation was knowingly false",
+        "Made to gain advantage in custody/PPO",
+        "Resulted in deprivation of rights"
+      ]
+    },
+    "42 USC 1983": {
+      "name": "Deprivation of Rights Under Color of Law",
+      "max_penalty": "Civil damages + injunctive relief",
+      "felony": false,
+      "total_evidence": 1466,
+      "elements_count": 4,
+      "elements_satisfied": 4,
+      "satisfaction_pct": 100.0,
+      "prosecutable": true,
+      "perpetrators": {
+        "Hon. Jenny L. McNeill": {
+          "evidence_count": 1343,
+          "top_sources": [
+            "evidence_consolidated",
+            "docket_events",
+            "master_violations_parsed",
+            "convergence_evidence_map",
+            "watson_family_conspiracy"
+          ],
+          "sample_terms": [
+            "due process",
+            "color of law",
+            "14th amendment",
+            "fundamental right",
+            "state actor"
+          ]
+        },
+        "Pamela Rusco": {
+          "evidence_count": 123,
+          "top_sources": [
+            "evidence_consolidated",
+            "watson_perjury_compilation",
+            "evidence_content_extracts",
+            "chat_evidence_messages_fts",
+            "actor_violations"
+          ],
+          "sample_terms": [
+            "due process",
+            "constitutional",
+            "deprivation"
+          ]
+        }
+      },
+      "elements": [
+        "Acting under color of state law",
+        "Deprived person of constitutional right",
+        "Due process (14th Amendment) or parental liberty",
+        "Causation between action and deprivation"
+      ]
+    },
+    "MCR 2.612(C)": {
+      "name": "Fraud Upon the Court",
+      "max_penalty": "Void judgment + sanctions + criminal referral",
+      "felony": false,
+      "total_evidence": 1007,
+      "elements_count": 4,
+      "elements_satisfied": 4,
+      "satisfaction_pct": 100.0,
+      "prosecutable": true,
+      "perpetrators": {
+        "Emily A. Watson": {
+          "evidence_count": 534,
+          "top_sources": [
+            "evidence_consolidated",
+            "appclose_violations_fts",
+            "docket_events",
+            "master_violations_parsed",
+            "watson_family_conspiracy"
+          ],
+          "sample_terms": [
+            "fraud on court",
+            "void",
+            "false filing",
+            "fraud upon"
+          ]
+        },
+        "watson": {
+          "evidence_count": 369,
+          "top_sources": [
+            "evidence_consolidated",
+            "h_drive_tort_claims",
+            "watson_perjury_compilation",
+            "evidence_content_extracts",
+            "chat_evidence_messages_fts"
+          ],
+          "sample_terms": [
+            "fraud on court",
+            "void",
+            "false filing",
+            "fraud upon"
+          ]
+        },
+        "Jennifer Barnes (P55406)": {
+          "evidence_count": 93,
+          "top_sources": [
+            "evidence_consolidated",
+            "evidence_quotes",
+            "watson_perjury_compilation",
+            "evidence_content_extracts",
+            "chat_evidence_messages_fts"
+          ],
+          "sample_terms": [
+            "fraud on court",
+            "void",
+            "false filing",
+            "fraud upon"
+          ]
+        },
+        "Ronald T. Berry": {
+          "evidence_count": 11,
+          "top_sources": [
+            "evidence_content_extracts",
+            "chat_evidence_messages_fts",
+            "watsons_evidence_docs",
+            "shadyoaks_evidence",
+            "chat_evidence_messages"
+          ],
+          "sample_terms": [
+            "fraud on court",
+            "void"
+          ]
+        }
+      },
+      "elements": [
+        "False statement or concealment of material fact",
+        "Made to the court",
+        "Court relied on the false information",
+        "Resulted in judgment or order"
+      ]
+    },
+    "Contempt of Court": {
+      "name": "Criminal/Civil Contempt",
+      "max_penalty": "Jail + fines",
+      "felony": false,
+      "total_evidence": 1619,
+      "elements_count": 4,
+      "elements_satisfied": 4,
+      "satisfaction_pct": 100.0,
+      "prosecutable": true,
+      "perpetrators": {
+        "Emily A. Watson": {
+          "evidence_count": 1065,
+          "top_sources": [
+            "evidence_consolidated",
+            "docket_events",
+            "master_violations_parsed",
+            "watson_family_conspiracy",
+            "email_evidence_package"
+          ],
+          "sample_terms": [
+            "non-compliance",
+            "contempt",
+            "failed to comply"
+          ]
+        },
+        "watson": {
+          "evidence_count": 554,
+          "top_sources": [
+            "evidence_consolidated",
+            "email_evidence_package",
+            "chat_evidence_messages",
+            "watson_perjury_compilation",
+            "evidence_content_extracts"
+          ],
+          "sample_terms": [
+            "contempt",
+            "failed to comply"
+          ]
+        }
+      },
+      "elements": [
+        "Valid court order exists",
+        "Knowledge of the order",
+        "Willful violation of the order",
+        "Ability to comply"
+      ]
+    }
+  },
+  "perpetrator_summary": {
+    "Emily A. Watson": {
+      "crimes": 9,
+      "total_evidence": 7855
+    },
+    "watson": {
+      "crimes": 10,
+      "total_evidence": 5860
+    },
+    "Hon. Jenny L. McNeill": {
+      "crimes": 2,
+      "total_evidence": 2216
+    },
+    "Pamela Rusco": {
+      "crimes": 3,
+      "total_evidence": 316
+    },
+    "Ronald T. Berry": {
+      "crimes": 6,
+      "total_evidence": 93
+    },
+    "Jennifer Barnes (P55406)": {
+      "crimes": 3,
+      "total_evidence": 294
+    }
+  }
+}

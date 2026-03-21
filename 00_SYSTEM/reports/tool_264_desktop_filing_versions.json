@@ -1,0 +1,818 @@
+{
+  "tool": "#264 Desktop Filing Consolidator",
+  "generated": "2026-03-19T10:13:57.367960",
+  "total_entries": 57,
+  "unique_filings": 54,
+  "latest_versions": 54,
+  "filing_groups": {
+    "emergency_motion_pt_reinstatement": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_DRAFTS\\Emergency_Motion_PT_Reinstatement.docx",
+          "version": "v1",
+          "title": "Emergency Motion PT Reinstatement",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\COURT_FILING_DRAFTS\\Emergency_Motion_PT_Reinstatement.docx",
+      "lane": "A",
+      "type": "motion"
+    },
+    "motion_disqualification_mcneill": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_DRAFTS\\Motion_Disqualification_McNeill.docx",
+          "version": "v1",
+          "title": "Motion Disqualification McNeill",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\COURT_FILING_DRAFTS\\Motion_Disqualification_McNeill.docx",
+      "lane": "E",
+      "type": "motion"
+    },
+    "jtc_verified_complaint": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_DRAFTS\\JTC_Verified_Complaint.docx",
+          "version": "v1",
+          "title": "JTC Verified Complaint",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\COURT_FILING_DRAFTS\\JTC_Verified_Complaint.docx",
+      "lane": "E",
+      "type": "complaint"
+    },
+    "contempt_motion_watson": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_DRAFTS\\Contempt_Motion_Watson.docx",
+          "version": "v1",
+          "title": "Contempt Motion Watson",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\COURT_FILING_DRAFTS\\Contempt_Motion_Watson.docx",
+      "lane": "A",
+      "type": "motion"
+    },
+    "ppo_modify_terminate_motion": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\COURT_FILING_DRAFTS\\PPO_Modify_Terminate_Motion.docx",
+          "version": "v1",
+          "title": "PPO Modify Terminate Motion",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\COURT_FILING_DRAFTS\\PPO_Modify_Terminate_Motion.docx",
+      "lane": "D",
+      "type": "motion"
+    },
+    "PKG_F1": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1\\main_filing.docx",
+          "version": "v1",
+          "title": "Emergency Motion Custody PT",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F1\\main_filing.docx",
+      "lane": "A",
+      "type": "filing"
+    },
+    "PKG_F2": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2\\main_filing.docx",
+          "version": "v1",
+          "title": "Shady Oaks Housing Complaint",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F2\\main_filing.docx",
+      "lane": "A",
+      "type": "filing"
+    },
+    "PKG_F3": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3\\main_filing.docx",
+          "version": "v1",
+          "title": "Motion Disqualify McNeill",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F3\\main_filing.docx",
+      "lane": "A",
+      "type": "filing"
+    },
+    "PKG_F4": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4\\main_filing.docx",
+          "version": "v1",
+          "title": "Federal §1983 WDMI",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F4\\main_filing.docx",
+      "lane": "A",
+      "type": "filing"
+    },
+    "PKG_F5": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5\\main_filing.docx",
+          "version": "v1",
+          "title": "COA Application Leave to Appeal",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F5\\main_filing.docx",
+      "lane": "A",
+      "type": "filing"
+    },
+    "PKG_F6": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6\\main_filing.docx",
+          "version": "v1",
+          "title": "PPO Terminate/Modify CC379",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F6\\main_filing.docx",
+      "lane": "A",
+      "type": "filing"
+    },
+    "PKG_F7": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F7\\main_filing.docx",
+          "version": "v1",
+          "title": "JTC Verified Complaint",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F7\\main_filing.docx",
+      "lane": "A",
+      "type": "filing"
+    },
+    "PKG_F8": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F8\\main_filing.docx",
+          "version": "v1",
+          "title": "MSC Original Action",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F8\\main_filing.docx",
+      "lane": "A",
+      "type": "filing"
+    },
+    "PKG_F9": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F9\\main_filing.docx",
+          "version": "v1",
+          "title": "Contempt Motion Watson",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F9\\main_filing.docx",
+      "lane": "A",
+      "type": "filing"
+    },
+    "PKG_F10": {
+      "versions": [
+        {
+          "path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10\\main_filing.docx",
+          "version": "v1",
+          "title": "Motion Rescind Suspension",
+          "date": "",
+          "size": 0
+        }
+      ],
+      "latest_path": "C:\\Users\\andre\\Desktop\\LITIGATION_FILING_PACKAGE\\PKG_F10\\main_filing.docx",
+      "lane": "A",
+      "type": "filing"
+    },
+    "hearing_brief_ex_parte_pt_pigors_v_watson": {
+      "versions": [
+        {
+          "path": "F:\\Hearing_Brief_Ex_Parte_PT_Pigors_v_Watson_v3.docx",
+          "version": "v3",
+          "title": "Hearing Brief Ex Parte PT",
+          "date": "2025-11-24T15:13:12",
+          "size": 43236
+        },
+        {
+          "path": "F:\\Hearing_Brief_Ex_Parte_PT_Pigors_v_Watson_v4.docx",
+          "version": "v4",
+          "title": "Hearing Brief Ex Parte PT",
+          "date": "2025-11-24T15:17:30",
+          "size": 45240
+        },
+        {
+          "path": "F:\\Hearing_Brief_Ex_Parte_PT_Pigors_v_Watson_v5.docx",
+          "version": "v5",
+          "title": "Hearing Brief Ex Parte PT",
+          "date": "2025-11-24T15:30:28",
+          "size": 45494
+        },
+        {
+          "path": "F:\\Hearing_Brief_Ex_Parte_PT_Pigors_v_Watson_v6.docx",
+          "version": "v6",
+          "title": "Hearing Brief Ex Parte PT",
+          "date": "2025-11-24T15:36:52",
+          "size": 45441
+        }
+      ],
+      "latest_path": "F:\\Hearing_Brief_Ex_Parte_PT_Pigors_v_Watson_v6.docx",
+      "lane": "A",
+      "type": "brief"
+    },
+    "pigors_exparte_pt_hearing_brief": {
+      "versions": [
+        {
+          "path": "F:\\Pigors_ExParte_PT_Hearing_Brief_vFinal.docx",
+          "version": "vFinal",
+          "title": "Hearing Brief Ex Parte PT",
+          "date": "2025-11-24T16:16:28",
+          "size": 43004
+        }
+      ],
+      "latest_path": "F:\\Pigors_ExParte_PT_Hearing_Brief_vFinal.docx",
+      "lane": "A",
+      "type": "brief"
+    },
+    "motion_custody_emergencypt": {
+      "versions": [
+        {
+          "path": "F:\\MOTION_CUSTODY_EmergencyPT_SHORT.docx",
+          "version": "SHORT",
+          "title": "Emergency Custody Motion PT",
+          "date": "2025-09-29T22:58:44",
+          "size": 37941
+        }
+      ],
+      "latest_path": "F:\\MOTION_CUSTODY_EmergencyPT_SHORT.docx",
+      "lane": "A",
+      "type": "motion"
+    },
+    "motion_ppo_terminatevacatesanctions": {
+      "versions": [
+        {
+          "path": "F:\\MOTION_PPO_TerminateVacateSanctions_SHORT.docx",
+          "version": "SHORT",
+          "title": "PPO Terminate Vacate Sanctions Motion",
+          "date": "2025-09-29T22:58:44",
+          "size": 37852
+        }
+      ],
+      "latest_path": "F:\\MOTION_PPO_TerminateVacateSanctions_SHORT.docx",
+      "lane": "D",
+      "type": "motion"
+    },
+    "motion_disqualify_and_refer_chief_judge": {
+      "versions": [
+        {
+          "path": "F:\\Motion_Disqualify_and_Refer_Chief_Judge_v1.1.docx",
+          "version": "v1.1",
+          "title": "Motion Disqualify Refer Chief Judge",
+          "date": "2025-09-12T02:35:04",
+          "size": 37634
+        }
+      ],
+      "latest_path": "F:\\Motion_Disqualify_and_Refer_Chief_Judge_v1.1.docx",
+      "lane": "E",
+      "type": "motion"
+    },
+    "motion_to_rescind_suspension_pigors_v_watson": {
+      "versions": [
+        {
+          "path": "F:\\Motion_to_Rescind_Suspension_Pigors_v_Watson.docx",
+          "version": "v1",
+          "title": "Motion Rescind Suspension",
+          "date": "2025-10-02T14:07:38",
+          "size": 37628
+        }
+      ],
+      "latest_path": "F:\\Motion_to_Rescind_Suspension_Pigors_v_Watson.docx",
+      "lane": "A",
+      "type": "motion"
+    },
+    "mc-230_emergency_tro_motion": {
+      "versions": [
+        {
+          "path": "F:\\MC-230_Emergency_TRO_Motion.docx",
+          "version": "v1",
+          "title": "Emergency TRO Motion MC-230",
+          "date": "2025-06-10T12:13:16",
+          "size": 56
+        }
+      ],
+      "latest_path": "F:\\MC-230_Emergency_TRO_Motion.docx",
+      "lane": "B",
+      "type": "motion"
+    },
+    "cc379_motion_modify_terminate_ppo_2023-5907-pp_2025-09-26": {
+      "versions": [
+        {
+          "path": "F:\\CC379_Motion_Modify_Terminate_PPO_2023-5907-PP_2025-09-26.docx",
+          "version": "v1",
+          "title": "CC379 Motion Modify Terminate PPO",
+          "date": "2025-09-26T14:44:14",
+          "size": 3486
+        }
+      ],
+      "latest_path": "F:\\CC379_Motion_Modify_Terminate_PPO_2023-5907-PP_2025-09-26.docx",
+      "lane": "D",
+      "type": "motion"
+    },
+    "verified_affidavit_linked_final": {
+      "versions": [
+        {
+          "path": "F:\\Verified_Affidavit_Linked_FINAL.docx",
+          "version": "v1",
+          "title": "Verified Affidavit Linked",
+          "date": "2025-06-10T13:47:56",
+          "size": 38203
+        }
+      ],
+      "latest_path": "F:\\Verified_Affidavit_Linked_FINAL.docx",
+      "lane": "A",
+      "type": "affidavit"
+    },
+    "affidavit_exhibit_a_custody_weaved_meek4": {
+      "versions": [
+        {
+          "path": "F:\\Affidavit_Exhibit_A_CUSTODY_WEAVED_MEEK4.docx",
+          "version": "v1",
+          "title": "Affidavit Exhibit A Custody",
+          "date": "2025-09-29T22:58:44",
+          "size": 37925
+        }
+      ],
+      "latest_path": "F:\\Affidavit_Exhibit_A_CUSTODY_WEAVED_MEEK4.docx",
+      "lane": "A",
+      "type": "affidavit"
+    },
+    "affidavit_exhibit_a_ppo_weaved_meek4": {
+      "versions": [
+        {
+          "path": "F:\\Affidavit_Exhibit_A_PPO_WEAVED_MEEK4.docx",
+          "version": "v1",
+          "title": "Affidavit Exhibit A PPO",
+          "date": "2025-09-29T22:58:44",
+          "size": 37803
+        }
+      ],
+      "latest_path": "F:\\Affidavit_Exhibit_A_PPO_WEAVED_MEEK4.docx",
+      "lane": "D",
+      "type": "affidavit"
+    },
+    "affidavit_pigors_disqualification": {
+      "versions": [
+        {
+          "path": "F:\\Affidavit_Pigors_Disqualification_v1.1.docx",
+          "version": "v1.1",
+          "title": "Affidavit Disqualification",
+          "date": "2025-09-12T02:35:04",
+          "size": 37255
+        }
+      ],
+      "latest_path": "F:\\Affidavit_Pigors_Disqualification_v1.1.docx",
+      "lane": "E",
+      "type": "affidavit"
+    },
+    "canon_violation_brief_pigors_v_watson": {
+      "versions": [
+        {
+          "path": "F:\\Canon_Violation_Brief_Pigors_v_Watson.docx",
+          "version": "v1",
+          "title": "Canon Violation Brief",
+          "date": "2025-10-02T14:07:38",
+          "size": 37099
+        }
+      ],
+      "latest_path": "F:\\Canon_Violation_Brief_Pigors_v_Watson.docx",
+      "lane": "E",
+      "type": "brief"
+    },
+    "pigors_jtc_structural_dueprocess_canon_narrative": {
+      "versions": [
+        {
+          "path": "F:\\Pigors_JTC_Structural_DueProcess_Canon_Narrative_v1.docx",
+          "version": "v1",
+          "title": "JTC Due Process Canon Narrative",
+          "date": "2025-11-24T15:45:08",
+          "size": 40785
+        }
+      ],
+      "latest_path": "F:\\Pigors_JTC_Structural_DueProcess_Canon_Narrative_v1.docx",
+      "lane": "E",
+      "type": "brief"
+    },
+    "pigors_hearing_record_building_playbook": {
+      "versions": [
+        {
+          "path": "F:\\Pigors_Hearing_Record_Building_Playbook_v1.docx",
+          "version": "v1",
+          "title": "Hearing Record Building Playbook",
+          "date": "2025-11-24T15:51:16",
+          "size": 39983
+        }
+      ],
+      "latest_path": "F:\\Pigors_Hearing_Record_Building_Playbook_v1.docx",
+      "lane": "A",
+      "type": "brief"
+    },
+    "pigors_wdmi_1983_framing_memo": {
+      "versions": [
+        {
+          "path": "F:\\Pigors_WDMI_1983_Framing_Memo_v1.docx",
+          "version": "v1",
+          "title": "WDMI §1983 Framing Memo",
+          "date": "2025-11-24T15:45:08",
+          "size": 39919
+        }
+      ],
+      "latest_path": "F:\\Pigors_WDMI_1983_Framing_Memo_v1.docx",
+      "lane": "F",
+      "type": "brief"
+    },
+    "pigors_parental_alienation_pattern_memo": {
+      "versions": [
+        {
+          "path": "F:\\Pigors_Parental_Alienation_Pattern_Memo_v1.docx",
+          "version": "v1",
+          "title": "Parental Alienation Pattern Memo",
+          "date": "2025-11-24T15:39:00",
+          "size": 39831
+        }
+      ],
+      "latest_path": "F:\\Pigors_Parental_Alienation_Pattern_Memo_v1.docx",
+      "lane": "A",
+      "type": "brief"
+    },
+    "supervisory_order_mcr_7.206_pigors_v_watson": {
+      "versions": [
+        {
+          "path": "F:\\Supervisory_Order_MCR_7.206_Pigors_v_Watson.docx",
+          "version": "v1",
+          "title": "Supervisory Order MCR 7.206",
+          "date": "2025-10-02T14:18:52",
+          "size": 38580
+        }
+      ],
+      "latest_path": "F:\\Supervisory_Order_MCR_7.206_Pigors_v_Watson.docx",
+      "lane": "F",
+      "type": "order"
+    },
+    "proposed_order_parentingtime_reinstatement": {
+      "versions": [
+        {
+          "path": "F:\\Proposed_Order_ParentingTime_Reinstatement.docx",
+          "version": "v1",
+          "title": "Proposed Order PT Reinstatement",
+          "date": "2025-10-02T14:07:38",
+          "size": 37332
+        }
+      ],
+      "latest_path": "F:\\Proposed_Order_ParentingTime_Reinstatement.docx",
+      "lane": "A",
+      "type": "order"
+    },
+    "cc385_order_modify_terminate_ppo_2023-5907-pp_2025-09-26": {
+      "versions": [
+        {
+          "path": "F:\\CC385_Order_Modify_Terminate_PPO_2023-5907-PP_2025-09-26.docx",
+          "version": "v1",
+          "title": "CC385 Order Modify Terminate PPO",
+          "date": "2025-09-26T14:44:14",
+          "size": 2954
+        }
+      ],
+      "latest_path": "F:\\CC385_Order_Modify_Terminate_PPO_2023-5907-PP_2025-09-26.docx",
+      "lane": "D",
+      "type": "order"
+    },
+    "2025-10-29_coa_brief_in_support": {
+      "versions": [
+        {
+          "path": "F:\\2025-10-29_COA_Brief_in_Support_v2.docx",
+          "version": "v2",
+          "title": "COA Brief in Support",
+          "date": "2025-10-29T18:36:22",
+          "size": 40205
+        }
+      ],
+      "latest_path": "F:\\2025-10-29_COA_Brief_in_Support_v2.docx",
+      "lane": "D",
+      "type": "brief"
+    },
+    "pigors_coa_application_leave_exparte_pt_suspension": {
+      "versions": [
+        {
+          "path": "F:\\Pigors_COA_Application_Leave_ExParte_PT_Suspension_v1.docx",
+          "version": "v1",
+          "title": "COA Application Leave to Appeal",
+          "date": "2025-11-24T15:38:02",
+          "size": 40161
+        }
+      ],
+      "latest_path": "F:\\Pigors_COA_Application_Leave_ExParte_PT_Suspension_v1.docx",
+      "lane": "F",
+      "type": "petition"
+    },
+    "2025-10-29_coa_complaint_superintending_control": {
+      "versions": [
+        {
+          "path": "F:\\2025-10-29_COA_Complaint_Superintending_Control_v2.docx",
+          "version": "v2",
+          "title": "COA Complaint Superintending Control",
+          "date": "2025-10-29T18:36:22",
+          "size": 40005
+        }
+      ],
+      "latest_path": "F:\\2025-10-29_COA_Complaint_Superintending_Control_v2.docx",
+      "lane": "F",
+      "type": "complaint"
+    },
+    "2025-10-29_jtc_verified_complaint_captioned_signed_notarized": {
+      "versions": [
+        {
+          "path": "F:\\2025-10-29_JTC_Verified_Complaint_Captioned_Signed_Notarized_v6.docx",
+          "version": "v6",
+          "title": "JTC Verified Complaint",
+          "date": "2025-10-29T18:36:20",
+          "size": 39386
+        }
+      ],
+      "latest_path": "F:\\2025-10-29_JTC_Verified_Complaint_Captioned_Signed_Notarized_v6.docx",
+      "lane": "E",
+      "type": "complaint"
+    },
+    "2025-10-29_msc_exparte_addendum_captioned_signed_notarized": {
+      "versions": [
+        {
+          "path": "F:\\2025-10-29_MSC_ExParte_Addendum_Captioned_Signed_Notarized_v6.docx",
+          "version": "v6",
+          "title": "MSC ExParte Addendum",
+          "date": "2025-10-29T18:36:20",
+          "size": 39327
+        }
+      ],
+      "latest_path": "F:\\2025-10-29_MSC_ExParte_Addendum_Captioned_Signed_Notarized_v6.docx",
+      "lane": "F",
+      "type": "filing"
+    },
+    "verified_complaint_shadyoaks": {
+      "versions": [
+        {
+          "path": "F:\\Verified_Complaint_ShadyOaks.docx",
+          "version": "v1",
+          "title": "Verified Complaint Shady Oaks",
+          "date": "2025-06-10T12:13:16",
+          "size": 57
+        }
+      ],
+      "latest_path": "F:\\Verified_Complaint_ShadyOaks.docx",
+      "lane": "B",
+      "type": "complaint"
+    },
+    "exhibit_a": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_A.docx",
+          "version": "v1",
+          "title": "Exhibit A",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_A.docx",
+      "lane": "A",
+      "type": "exhibit"
+    },
+    "exhibit_b": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_B.docx",
+          "version": "v1",
+          "title": "Exhibit B",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_B.docx",
+      "lane": "A",
+      "type": "exhibit"
+    },
+    "exhibit_c": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_C.docx",
+          "version": "v1",
+          "title": "Exhibit C",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_C.docx",
+      "lane": "A",
+      "type": "exhibit"
+    },
+    "exhibit_d": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_D.docx",
+          "version": "v1",
+          "title": "Exhibit D",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_D.docx",
+      "lane": "A",
+      "type": "exhibit"
+    },
+    "exhibit_e": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_E.docx",
+          "version": "v1",
+          "title": "Exhibit E",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_E.docx",
+      "lane": "A",
+      "type": "exhibit"
+    },
+    "exhibit_f": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_F.docx",
+          "version": "v1",
+          "title": "Exhibit F",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_F.docx",
+      "lane": "A",
+      "type": "exhibit"
+    },
+    "exhibit_g": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_G.docx",
+          "version": "v1",
+          "title": "Exhibit G",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_G.docx",
+      "lane": "A",
+      "type": "exhibit"
+    },
+    "exhibit_h": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_H.docx",
+          "version": "v1",
+          "title": "Exhibit H",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_H.docx",
+      "lane": "A",
+      "type": "exhibit"
+    },
+    "exhibit_i": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_I.docx",
+          "version": "v1",
+          "title": "Exhibit I",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_I.docx",
+      "lane": "A",
+      "type": "exhibit"
+    },
+    "exhibit_j": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_J.docx",
+          "version": "v1",
+          "title": "Exhibit J",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_J.docx",
+      "lane": "A",
+      "type": "exhibit"
+    },
+    "exhibit_k": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_K.docx",
+          "version": "v1",
+          "title": "Exhibit K",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_K.docx",
+      "lane": "A",
+      "type": "exhibit"
+    },
+    "exhibit_l": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_L.docx",
+          "version": "v1",
+          "title": "Exhibit L",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_L.docx",
+      "lane": "A",
+      "type": "exhibit"
+    },
+    "exhibit_m": {
+      "versions": [
+        {
+          "path": "F:\\Exhibit_M.docx",
+          "version": "v1",
+          "title": "Exhibit M",
+          "date": "2025-06-10T12:13:16",
+          "size": 38
+        }
+      ],
+      "latest_path": "F:\\Exhibit_M.docx",
+      "lane": "A",
+      "type": "exhibit"
+    }
+  },
+  "by_lane": {
+    "A": {
+      "total": 37,
+      "latest": 34
+    },
+    "B": {
+      "total": 2,
+      "latest": 2
+    },
+    "D": {
+      "total": 6,
+      "latest": 6
+    },
+    "E": {
+      "total": 7,
+      "latest": 7
+    },
+    "F": {
+      "total": 5,
+      "latest": 5
+    }
+  },
+  "by_type": {
+    "exhibit": 13,
+    "filing": 11,
+    "brief": 11,
+    "motion": 10,
+    "complaint": 4,
+    "affidavit": 4,
+    "order": 3,
+    "petition": 1
+  }
+}

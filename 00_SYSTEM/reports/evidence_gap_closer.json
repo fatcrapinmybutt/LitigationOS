@@ -1,0 +1,918 @@
+{
+  "tool": "#255 Evidence Gap Closer",
+  "generated": "2026-03-19T09:58:42.970553",
+  "case": "Pigors v. Watson",
+  "filings": {
+    "F1": {
+      "filing_id": "F1",
+      "title": "Emergency Motion to Restore Parenting Time",
+      "vehicle": "EMERGENCY_MOTION_RESTORE_PT",
+      "available_evidence": {
+        "quotes": 8107,
+        "documents": 2318
+      },
+      "categories": {
+        "documents": {
+          "needed_items": [
+            "Parenting time orders",
+            "Denial communications",
+            "School records showing exclusion",
+            "Supervised visit records",
+            "FOC recommendations"
+          ],
+          "needed_count": 5,
+          "available_evidence_quotes": 1753,
+          "available_documents": 2166,
+          "coverage_estimate": 5,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "witnesses": {
+          "needed_items": [
+            "FOC caseworker (Pamela Rusco)",
+            "Child's teacher",
+            "Family members who witnessed denial"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 27,
+          "available_documents": 0,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "foia_subpoena": {
+          "needed_items": [
+            "FOC parenting time logs",
+            "School attendance records",
+            "CPS/DHHS investigation records"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 1554,
+          "available_documents": 613,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "physical": {
+          "needed_items": [
+            "Communication screenshots (texts, emails)",
+            "Calendar of denied visits",
+            "Photos of child's room at father's home"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 119,
+          "available_documents": 8,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "authentication": {
+          "needed_items": [
+            "Text message affidavit",
+            "Email printout certification",
+            "Calendar log sworn statement"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 374,
+          "available_documents": 954,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        }
+      },
+      "authority_chain_gaps": [],
+      "claims_needing_evidence": 0,
+      "readiness": {
+        "evidence_score": 25,
+        "total_score": 94,
+        "status": "EVIDENCE_READY"
+      },
+      "total_gaps": 0,
+      "critical_gaps": 0
+    },
+    "F2": {
+      "filing_id": "F2",
+      "title": "Motion for Fraud Upon the Court",
+      "vehicle": "FRAUD_UPON_COURT",
+      "available_evidence": {
+        "quotes": 5328,
+        "documents": 3736
+      },
+      "categories": {
+        "documents": {
+          "needed_items": [
+            "Original PPO application",
+            "Contradicting prior statements",
+            "Police reports showing no violence",
+            "Financial fraud documents"
+          ],
+          "needed_count": 4,
+          "available_evidence_quotes": 780,
+          "available_documents": 361,
+          "coverage_estimate": 4,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "witnesses": {
+          "needed_items": [
+            "Police officers from cited incidents",
+            "Witnesses to false allegations"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 1106,
+          "available_documents": 3046,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "foia_subpoena": {
+          "needed_items": [
+            "Police incident reports (FOIA)",
+            "911 call recordings (FOIA)",
+            "Medical records contradicting claims"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 363,
+          "available_documents": 53,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "physical": {
+          "needed_items": [
+            "Timeline of contradictory statements",
+            "Side-by-side comparison exhibits"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 44,
+          "available_documents": 49,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "authentication": {
+          "needed_items": [
+            "Certified police reports",
+            "Court record certifications",
+            "Affidavit of perjury specifics"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 5781,
+          "available_documents": 4079,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        }
+      },
+      "authority_chain_gaps": [],
+      "claims_needing_evidence": 0,
+      "readiness": {
+        "evidence_score": "N/A",
+        "total_score": "N/A",
+        "status": "N/A"
+      },
+      "total_gaps": 0,
+      "critical_gaps": 0
+    },
+    "F3": {
+      "filing_id": "F3",
+      "title": "Motion for Disqualification of Judge",
+      "vehicle": "JUDICIAL_DISQUALIFICATION",
+      "available_evidence": {
+        "quotes": 245,
+        "documents": 554
+      },
+      "categories": {
+        "documents": {
+          "needed_items": [
+            "Hearing transcripts showing bias",
+            "Orders without statutory findings",
+            "Ex parte communication records",
+            "Case assignment records"
+          ],
+          "needed_count": 4,
+          "available_evidence_quotes": 1103,
+          "available_documents": 2136,
+          "coverage_estimate": 4,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "witnesses": {
+          "needed_items": [
+            "Court reporter (transcript accuracy)",
+            "Attorneys who witnessed bias"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 5240,
+          "available_documents": 3736,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "foia_subpoena": {
+          "needed_items": [
+            "Judge's financial disclosures",
+            "Court administrative records",
+            "Communication logs"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 5851,
+          "available_documents": 3758,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "physical": {
+          "needed_items": [
+            "Transcript excerpts with bias highlighted",
+            "Pattern analysis chart"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 2124,
+          "available_documents": 708,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "authentication": {
+          "needed_items": [
+            "Certified transcripts",
+            "Court clerk certifications",
+            "Affidavit of personal experience"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 5341,
+          "available_documents": 4131,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        }
+      },
+      "authority_chain_gaps": [],
+      "claims_needing_evidence": 0,
+      "readiness": {
+        "evidence_score": 22,
+        "total_score": 97,
+        "status": "EVIDENCE_READY"
+      },
+      "total_gaps": 0,
+      "critical_gaps": 0
+    },
+    "F4": {
+      "filing_id": "F4",
+      "title": "42 USC \u00a71983 Civil Rights Complaint",
+      "vehicle": "SECTION_1983_COMPLAINT",
+      "available_evidence": {
+        "quotes": 645,
+        "documents": 227
+      },
+      "categories": {
+        "documents": {
+          "needed_items": [
+            "All orders violating constitutional rights",
+            "Due process violation records",
+            "Pattern of rights deprivation",
+            "Similar cases in same court"
+          ],
+          "needed_count": 4,
+          "available_evidence_quotes": 515,
+          "available_documents": 1763,
+          "coverage_estimate": 4,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "witnesses": {
+          "needed_items": [
+            "Constitutional law expert",
+            "Other litigants with similar experiences"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 2975,
+          "available_documents": 751,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "foia_subpoena": {
+          "needed_items": [
+            "Court statistics on case outcomes",
+            "Municipal insurance policies",
+            "Training records for officials"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 6019,
+          "available_documents": 4002,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "physical": {
+          "needed_items": [
+            "Constitutional violation timeline",
+            "Comparison with state statistics"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 2488,
+          "available_documents": 377,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "authentication": {
+          "needed_items": [
+            "Certified court records",
+            "Expert declaration",
+            "Statistical analysis methodology affidavit"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 5352,
+          "available_documents": 4022,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        }
+      },
+      "authority_chain_gaps": [],
+      "claims_needing_evidence": 0,
+      "readiness": {
+        "evidence_score": "N/A",
+        "total_score": "N/A",
+        "status": "N/A"
+      },
+      "total_gaps": 0,
+      "critical_gaps": 0
+    },
+    "F5": {
+      "filing_id": "F5",
+      "title": "MSC Complaint for Superintending Control",
+      "vehicle": "MSC_SUPERINTENDING_CONTROL",
+      "available_evidence": {
+        "quotes": 130,
+        "documents": 404
+      },
+      "categories": {
+        "documents": {
+          "needed_items": [
+            "Lower court orders exceeding jurisdiction",
+            "Statutory mandate violations",
+            "Record of exhausted remedies"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 5543,
+          "available_documents": 5531,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "witnesses": {
+          "needed_items": [
+            "N/A (documentary action)"
+          ],
+          "needed_count": 1,
+          "available_evidence_quotes": 0,
+          "available_documents": 0,
+          "coverage_estimate": 0,
+          "gap_count": 1,
+          "priority": "CRITICAL",
+          "acquisition_actions": [
+            "Obtain: N/A (documentary action)"
+          ]
+        },
+        "foia_subpoena": {
+          "needed_items": [
+            "Complete lower court file",
+            "Administrative orders"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 7955,
+          "available_documents": 4484,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "physical": {
+          "needed_items": [
+            "Complete chronological record index"
+          ],
+          "needed_count": 1,
+          "available_evidence_quotes": 1516,
+          "available_documents": 700,
+          "coverage_estimate": 1,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "authentication": {
+          "needed_items": [
+            "Certified lower court record",
+            "Affidavit of compliance with MCR 7.306"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 5767,
+          "available_documents": 4072,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        }
+      },
+      "authority_chain_gaps": [],
+      "claims_needing_evidence": 0,
+      "readiness": {
+        "evidence_score": 22,
+        "total_score": 82,
+        "status": "READY"
+      },
+      "total_gaps": 1,
+      "critical_gaps": 1
+    },
+    "F6": {
+      "filing_id": "F6",
+      "title": "JTC Judicial Misconduct Complaint",
+      "vehicle": "JTC_MISCONDUCT",
+      "available_evidence": {
+        "quotes": 50,
+        "documents": 1273
+      },
+      "categories": {
+        "documents": {
+          "needed_items": [
+            "Hearing transcripts showing misconduct",
+            "Orders violating canons",
+            "Ex parte communication evidence",
+            "Prior complaints if any"
+          ],
+          "needed_count": 4,
+          "available_evidence_quotes": 1106,
+          "available_documents": 2144,
+          "coverage_estimate": 4,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "witnesses": {
+          "needed_items": [
+            "Attorneys, parties, court staff who witnessed misconduct"
+          ],
+          "needed_count": 1,
+          "available_evidence_quotes": 5229,
+          "available_documents": 3742,
+          "coverage_estimate": 1,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "foia_subpoena": {
+          "needed_items": [
+            "Prior JTC complaints against same judge",
+            "Judicial discipline records"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 1251,
+          "available_documents": 1400,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "physical": {
+          "needed_items": [
+            "Misconduct incident timeline",
+            "Canon violation matrix"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 499,
+          "available_documents": 761,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "authentication": {
+          "needed_items": [
+            "Certified transcripts",
+            "Sworn statements from witnesses",
+            "Declaration under penalty of perjury"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 1082,
+          "available_documents": 3382,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        }
+      },
+      "authority_chain_gaps": [],
+      "claims_needing_evidence": 0,
+      "readiness": {
+        "evidence_score": "N/A",
+        "total_score": "N/A",
+        "status": "N/A"
+      },
+      "total_gaps": 0,
+      "critical_gaps": 0
+    },
+    "F7": {
+      "filing_id": "F7",
+      "title": "Motion to Modify Custody",
+      "vehicle": "CUSTODY_MODIFICATION",
+      "available_evidence": {
+        "quotes": 253,
+        "documents": 6433
+      },
+      "categories": {
+        "documents": {
+          "needed_items": [
+            "Current custody order",
+            "Best interest factor evidence for each factor",
+            "School performance records",
+            "Medical/mental health records",
+            "Communication records showing interference"
+          ],
+          "needed_count": 5,
+          "available_evidence_quotes": 3115,
+          "available_documents": 9146,
+          "coverage_estimate": 5,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "witnesses": {
+          "needed_items": [
+            "Child's therapist",
+            "Teachers",
+            "Pediatrician",
+            "Family members",
+            "Community members"
+          ],
+          "needed_count": 5,
+          "available_evidence_quotes": 23,
+          "available_documents": 0,
+          "coverage_estimate": 5,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "foia_subpoena": {
+          "needed_items": [
+            "School records",
+            "Medical records",
+            "CPS investigation files",
+            "Police reports"
+          ],
+          "needed_count": 4,
+          "available_evidence_quotes": 664,
+          "available_documents": 596,
+          "coverage_estimate": 4,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "physical": {
+          "needed_items": [
+            "Father's home photos/video",
+            "Activity documentation",
+            "Child's belongings at father's home"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 396,
+          "available_documents": 36,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "authentication": {
+          "needed_items": [
+            "Medical records affidavit",
+            "School records certification",
+            "Parenting time log sworn statement"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 725,
+          "available_documents": 588,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        }
+      },
+      "authority_chain_gaps": [],
+      "claims_needing_evidence": 0,
+      "readiness": {
+        "evidence_score": "N/A",
+        "total_score": "N/A",
+        "status": "N/A"
+      },
+      "total_gaps": 0,
+      "critical_gaps": 0
+    },
+    "F8": {
+      "filing_id": "F8",
+      "title": "COA Application for Leave to Appeal",
+      "vehicle": "COA_APPLICATION_LEAVE",
+      "available_evidence": {
+        "quotes": 368,
+        "documents": 222
+      },
+      "categories": {
+        "documents": {
+          "needed_items": [
+            "Lower court decision/order appealed",
+            "Trial court record",
+            "Transcript of relevant hearings",
+            "Motion/objection preservation record"
+          ],
+          "needed_count": 4,
+          "available_evidence_quotes": 5713,
+          "available_documents": 4231,
+          "coverage_estimate": 4,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "witnesses": {
+          "needed_items": [
+            "N/A (appellate review of record)"
+          ],
+          "needed_count": 1,
+          "available_evidence_quotes": 192,
+          "available_documents": 52,
+          "coverage_estimate": 1,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "foia_subpoena": {
+          "needed_items": [
+            "Certified lower court file"
+          ],
+          "needed_count": 1,
+          "available_evidence_quotes": 6371,
+          "available_documents": 4460,
+          "coverage_estimate": 1,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "physical": {
+          "needed_items": [
+            "Issue preservation index",
+            "Standard of review chart"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 1206,
+          "available_documents": 444,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "authentication": {
+          "needed_items": [
+            "Certified lower court order",
+            "Certified transcripts",
+            "Verified statement in lieu of transcript (MCR 7.210(B)(3))"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 7717,
+          "available_documents": 6457,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        }
+      },
+      "authority_chain_gaps": [],
+      "claims_needing_evidence": 0,
+      "readiness": {
+        "evidence_score": 0,
+        "total_score": 40,
+        "status": "NEEDS_WORK"
+      },
+      "total_gaps": 0,
+      "critical_gaps": 0
+    },
+    "F9": {
+      "filing_id": "F9",
+      "title": "COA Appeal Brief (366810)",
+      "vehicle": "COA_APPEAL_BRIEF",
+      "available_evidence": {
+        "quotes": 1021,
+        "documents": 386
+      },
+      "categories": {
+        "documents": {
+          "needed_items": [
+            "Complete lower court record",
+            "All relevant orders",
+            "All transcripts",
+            "Exhibits admitted at trial",
+            "Motions/briefs filed below"
+          ],
+          "needed_count": 5,
+          "available_evidence_quotes": 6651,
+          "available_documents": 4050,
+          "coverage_estimate": 5,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "witnesses": {
+          "needed_items": [
+            "N/A (appellate record only)"
+          ],
+          "needed_count": 1,
+          "available_evidence_quotes": 486,
+          "available_documents": 304,
+          "coverage_estimate": 1,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "foia_subpoena": {
+          "needed_items": [
+            "Any missing record items"
+          ],
+          "needed_count": 1,
+          "available_evidence_quotes": 491,
+          "available_documents": 308,
+          "coverage_estimate": 1,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "physical": {
+          "needed_items": [
+            "Appendix index",
+            "Record page citations"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 10306,
+          "available_documents": 1416,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "authentication": {
+          "needed_items": [
+            "Certified record on appeal",
+            "Settlement statement if needed"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 1659,
+          "available_documents": 532,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        }
+      },
+      "authority_chain_gaps": [],
+      "claims_needing_evidence": 0,
+      "readiness": {
+        "evidence_score": "N/A",
+        "total_score": "N/A",
+        "status": "N/A"
+      },
+      "total_gaps": 0,
+      "critical_gaps": 0
+    },
+    "F10": {
+      "filing_id": "F10",
+      "title": "AGC Attorney Grievance Commission Complaint",
+      "vehicle": "AGC_MISCONDUCT",
+      "available_evidence": {
+        "quotes": 21,
+        "documents": 20
+      },
+      "categories": {
+        "documents": {
+          "needed_items": [
+            "Attorney filing containing false statements",
+            "Contradicting evidence",
+            "Court records showing attorney misconduct",
+            "Fee agreements if relevant"
+          ],
+          "needed_count": 4,
+          "available_evidence_quotes": 1000,
+          "available_documents": 1501,
+          "coverage_estimate": 4,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "witnesses": {
+          "needed_items": [
+            "Parties who witnessed misconduct",
+            "Other attorneys familiar with case"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 1233,
+          "available_documents": 505,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "foia_subpoena": {
+          "needed_items": [
+            "Attorney discipline records",
+            "Court filings by attorney"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 5761,
+          "available_documents": 5155,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "physical": {
+          "needed_items": [
+            "Side-by-side false statement comparison",
+            "MRPC violation matrix"
+          ],
+          "needed_count": 2,
+          "available_evidence_quotes": 272,
+          "available_documents": 110,
+          "coverage_estimate": 2,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        },
+        "authentication": {
+          "needed_items": [
+            "Certified court records",
+            "Declaration identifying false statements",
+            "Document comparison affidavit"
+          ],
+          "needed_count": 3,
+          "available_evidence_quotes": 5368,
+          "available_documents": 4016,
+          "coverage_estimate": 3,
+          "gap_count": 0,
+          "priority": "LOW",
+          "acquisition_actions": []
+        }
+      },
+      "authority_chain_gaps": [],
+      "claims_needing_evidence": 0,
+      "readiness": {
+        "evidence_score": "N/A",
+        "total_score": "N/A",
+        "status": "N/A"
+      },
+      "total_gaps": 0,
+      "critical_gaps": 0
+    }
+  },
+  "global_statistics": {
+    "total_filings_analyzed": 10,
+    "total_gaps_identified": 1,
+    "total_critical_gaps": 1,
+    "total_available_evidence": 31741,
+    "acquisition_actions_generated": 1,
+    "tables_queried": [
+      "documents",
+      "claims",
+      "authority_chains",
+      "evidence_quotes",
+      "filing_readiness",
+      "evidence_gap_analysis",
+      "gap_tickets"
+    ]
+  },
+  "acquisition_plan": [
+    {
+      "priority": "CRITICAL",
+      "filing": "F5",
+      "category": "witnesses",
+      "action": "Obtain: N/A (documentary action)"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "tool": "court_form_auto_filler",
+  "tool_number": 270,
+  "generated": "2026-03-19 10:58:19",
+  "forms_dir": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\court_forms",
+  "forms": [
+    {
+      "form_number": "MC_264",
+      "form_title": "Motion to Disqualify Judge",
+      "filing_id": "F3",
+      "case_number": "2024-001507-DC",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\court_forms\\MC_264_F3.txt",
+      "fields_filled": 3,
+      "fields_blank": 15
+    },
+    {
+      "form_number": "CC_379",
+      "form_title": "Motion Regarding Personal Protection Order",
+      "filing_id": "F2",
+      "case_number": "2023-5907-PP",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\court_forms\\CC_379_F2.txt",
+      "fields_filled": 7,
+      "fields_blank": 33
+    },
+    {
+      "form_number": "CC_385",
+      "form_title": "Order on Motion Regarding PPO",
+      "filing_id": "F2",
+      "case_number": "2023-5907-PP",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\court_forms\\CC_385_F2.txt",
+      "fields_filled": 4,
+      "fields_blank": 83
+    },
+    {
+      "form_number": "MC_230",
+      "form_title": "Ex Parte Application / Motion for TRO",
+      "filing_id": "F9",
+      "case_number": "2025-002760-CZ",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\court_forms\\MC_230_F9.txt",
+      "fields_filled": 4,
+      "fields_blank": 48
+    },
+    {
+      "form_number": "MC_231",
+      "form_title": "Motion for Emergency Relief",
+      "filing_id": "F1",
+      "case_number": "2024-001507-DC",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\court_forms\\MC_231_F1.txt",
+      "fields_filled": 5,
+      "fields_blank": 32
+    },
+    {
+      "form_number": "FOC_10",
+      "form_title": "Uniform Child Support Order (Reference)",
+      "filing_id": "F1",
+      "case_number": "2024-001507-DC",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\court_forms\\FOC_10_F1.txt",
+      "fields_filled": 5,
+      "fields_blank": 33
+    },
+    {
+      "form_number": "MC_01",
+      "form_title": "Case Inventory Addendum",
+      "filing_id": "ALL",
+      "case_number": "2024-001507-DC",
+      "output_path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\tools\\..\\..\\GENERATED_FILINGS\\court_forms\\MC_01_ALL.txt",
+      "fields_filled": 5,
+      "fields_blank": 17
+    }
+  ],
+  "total_forms": 7
+}

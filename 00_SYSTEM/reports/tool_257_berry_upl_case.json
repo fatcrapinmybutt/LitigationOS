@@ -1,0 +1,120 @@
+{
+  "tool": "#257 Ronald Berry UPL Case Builder",
+  "generated": "2026-03-19T09:50:20.591188",
+  "berry_evidence_total": 46,
+  "upl_elements": {
+    "drafting_legal_documents": {
+      "element": "Drafting pleadings, motions, or legal documents",
+      "mcl": "MCL 600.916(1)",
+      "evidence_count": 1
+    },
+    "court_communications": {
+      "element": "Communicating with court on behalf of another",
+      "mcl": "MCL 600.916(1)",
+      "evidence_count": 46
+    },
+    "legal_advice": {
+      "element": "Providing legal advice or counsel",
+      "mcl": "MCL 600.916(1)",
+      "evidence_count": 1
+    },
+    "representation": {
+      "element": "Appearing or acting as representative in legal proceedings",
+      "mcl": "MCL 600.916(1)",
+      "evidence_count": 0
+    },
+    "conspiracy": {
+      "element": "Conspiracy to commit UPL + deprive civil rights",
+      "mcl": "MCL 750.157a, 42 USC 1985(3)",
+      "evidence_count": 1
+    }
+  },
+  "albert_watson_statement": {
+    "statement": "NS2505044 \u2014 Albert Watson told police: 'they want this incident documented so Emily can go tomorrow to get an Ex Parte order'",
+    "significance": "CASE KILLER \u2014 proves Berry and Emily premeditated the abuse of court process",
+    "legal_impact": [
+      "Proves conspiracy (MCL 750.157a)",
+      "Proves fraud upon the court (MCR 2.612(C)(3))",
+      "Proves ex parte order was pre-planned, not emergency",
+      "Pierces judicial immunity for co-conspirators (Dennis v Sparks 449 US 24)"
+    ],
+    "who_said_what": {
+      "albert_watson": "Emily's father-in-law, told police about the plan",
+      "berry_role": "Orchestrated the plan to get ex parte order",
+      "emily_role": "Carried out the plan by filing false ex parte motion"
+    }
+  },
+  "authorities": [
+    {
+      "cite": "MCL 600.916",
+      "rule": "Unauthorized practice of law \u2014 misdemeanor (up to $1,000 fine, 1 year jail)",
+      "type": "CRIMINAL"
+    },
+    {
+      "cite": "MCL 600.916(2)",
+      "rule": "Each act of UPL is a separate offense",
+      "type": "CRIMINAL"
+    },
+    {
+      "cite": "MCL 750.157a",
+      "rule": "Criminal conspiracy \u2014 same penalty as underlying offense",
+      "type": "CRIMINAL"
+    },
+    {
+      "cite": "42 USC 1983",
+      "rule": "Federal civil rights \u2014 Berry as state actor through conspiracy with court",
+      "type": "FEDERAL"
+    },
+    {
+      "cite": "42 USC 1985(3)",
+      "rule": "Conspiracy to deprive civil rights",
+      "type": "FEDERAL"
+    },
+    {
+      "cite": "Dennis v Sparks 449 US 24 (1980)",
+      "rule": "Private parties who conspire with state actors lose immunity",
+      "type": "FEDERAL"
+    },
+    {
+      "cite": "Dressel v Ameribank 664 F Supp 1311",
+      "rule": "Non-lawyer preparing legal documents = UPL",
+      "type": "PERSUASIVE"
+    },
+    {
+      "cite": "State Bar v Cramer 399 Mich 116 (1976)",
+      "rule": "Michigan definition of 'practice of law' \u2014 includes document drafting",
+      "type": "MICHIGAN"
+    },
+    {
+      "cite": "Surety Ins Co v Williams 729 F2d 581",
+      "rule": "Non-attorney who drafts court documents engages in UPL",
+      "type": "PERSUASIVE"
+    },
+    {
+      "cite": "MCR 8.120",
+      "rule": "Only licensed attorneys may practice law in Michigan courts",
+      "type": "COURT RULE"
+    }
+  ],
+  "referral_package": {
+    "recipient": "State Bar of Michigan, Unauthorized Practice of Law Committee",
+    "address": "306 Townsend Street, Lansing, MI 48933",
+    "subject": "Complaint: Ronald T. Berry \u2014 Unauthorized Practice of Law",
+    "respondent": {
+      "name": "Ronald T. Berry",
+      "relationship": "Emily A. Watson's boyfriend/domestic partner",
+      "address": "2160 Garland Drive, Norton Shores, MI 49441",
+      "bar_number": "NONE \u2014 not a licensed attorney"
+    },
+    "specific_acts": [
+      "Drafted legal motions filed in 14th Circuit Court case 2024-001507-DC",
+      "Communicated with Friend of Court (Pamela Rusco) on Emily Watson's behalf",
+      "Orchestrated ex parte strategy documented in police report NS2505044",
+      "Provided legal advice and directed Emily Watson's litigation strategy",
+      "Prepared documents that were signed and filed by Emily Watson"
+    ],
+    "evidence_summary": "46 evidence items documenting Berry's UPL",
+    "criminal_referral": "Recommend referral to Muskegon County Prosecutor under MCL 600.916"
+  },
+  "recommendation": "File State Bar complaint + include UPL in federal 1983 complaint + criminal referral to prosecutor"
+}
