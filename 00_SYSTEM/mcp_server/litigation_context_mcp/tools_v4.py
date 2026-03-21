@@ -541,3 +541,177 @@ def litigation_red_team_findings(
         return {"error": str(e)}
     finally:
         conn.close()
+
+
+# ── TOOL 8: LEGAL KNOWLEDGE SEARCH ─────────────────────────────────
+
+
+def litigation_legal_search(
+    query: str,
+    source_type: str | None = None,
+    limit: int = 25,
+) -> dict:
+    """FTS5 full-text search across all Michigan legal knowledge.
+
+    Searches MCR court rules, MCL statutes, MRE evidence rules, case law,
+    and judicial canons using Porter-stemmed FTS5.
+
+    Args:
+        query: Search terms (e.g. "parenting time modification").
+        source_type: Filter: 'MCR', 'MCL', 'MRE', 'CASE', 'CANON'. Omit for all.
+        limit: Maximum results (1-100).
+    """
+    conn = get_db()
+    try:
+        if not _table_exists(conn, "legal_knowledge_fts"):
+            return {"results": [], "status": "fts5_not_initialized", "count": 0}
+
+        params: list = [query]
+        type_filter = ""
+        if source_type:
+            type_filter = "AND source_type = ?"
+            params.append(source_type)
+        params.append(limit)
+
+        rows = conn.execute(
+            f"""
+            SELECT source_type, source_id, rule_number, title,
+                   snippet(legal_knowledge_fts, 4, '<b>', '</b>', '...', 40) AS snippet,
+                   rank
+            FROM legal_knowledge_fts
+            WHERE legal_knowledge_fts MATCH ? {type_filter}
+            ORDER BY rank LIMIT ?
+            """,
+            params,
+        ).fetchall()
+
+        total = conn.execute("SELECT COUNT(*) FROM legal_knowledge_fts").fetchone()[0]
+        return {
+            "results": [dict(r) for r in rows],
+            "count": len(rows),
+            "total_indexed": total,
+            "query": query,
+        }
+    except Exception as e:
+        return {"error": str(e), "results": [], "count": 0}
+    finally:
+        conn.close()
+
+
+# ── TOOL 9: AUTHORITY LOOKUP ────────────────────────────────────────
+
+
+def litigation_authority_lookup(
+    authority_type: str,
+    authority_number: str,
+) -> dict:
+    """Look up a specific Michigan legal authority by type and number.
+
+    Args:
+        authority_type: One of 'MCR', 'MCL', 'MRE', 'CASE'.
+        authority_number: The identifier (e.g. 'MCR 2.119', 'MCL 722.23').
+    """
+    table_map = {
+        "MCR": ("michigan_court_rules", "rule_number"),
+        "MCL": ("michigan_statutes", "statute_number"),
+        "MRE": ("michigan_evidence_rules", "rule_number"),
+        "CASE": ("michigan_case_law", "citation"),
+    }
+    spec = table_map.get(authority_type.upper())
+    if not spec:
+        return {"error": f"Unknown authority_type '{authority_type}'."}
+
+    table, col = spec
+    conn = get_db()
+    try:
+        if not _table_exists(conn, table):
+            return {"error": f"Table '{table}' not found", "authority": None}
+
+        row = conn.execute(
+            f"SELECT * FROM {table} WHERE {col} = ?", (authority_number,)
+        ).fetchone()
+        if not row:
+            row = conn.execute(
+                f"SELECT * FROM {table} WHERE {col} LIKE ?", (f"%{authority_number}%",)
+            ).fetchone()
+
+        if row:
+            result = dict(row)
+            xrefs = []
+            if _table_exists(conn, "legal_cross_references"):
+                xrows = conn.execute(
+                    """
+                    SELECT source_type, source_number, target_type, target_number, relationship
+                    FROM legal_cross_references
+                    WHERE (source_type = ? AND source_number = ?)
+                       OR (target_type = ? AND target_number = ?)
+                    """,
+                    (authority_type, authority_number, authority_type, authority_number),
+                ).fetchall()
+                xrefs = [dict(x) for x in xrows]
+            return {"authority": result, "cross_references": xrefs, "found": True}
+        return {"authority": None, "found": False}
+    except Exception as e:
+        return {"error": str(e)}
+    finally:
+        conn.close()
+
+
+# ── TOOL 10: FILING AUTHORITIES ─────────────────────────────────────
+
+
+def litigation_filing_authorities(filing_id: str) -> dict:
+    """Get all legal authorities required for a specific filing.
+
+    Returns MCR rules, MCL statutes, MRE evidence rules grouped by type
+    with full text and mandatory/optional status.
+
+    Args:
+        filing_id: Filing identifier (e.g. 'F1', 'F3', 'F5').
+    """
+    conn = get_db()
+    try:
+        if not _table_exists(conn, "filing_rule_map"):
+            return {"error": "filing_rule_map not found", "authorities": {}}
+
+        mappings = conn.execute(
+            "SELECT authority_type, authority_number, requirement, mandatory "
+            "FROM filing_rule_map WHERE filing_id = ? ORDER BY authority_type",
+            (filing_id,),
+        ).fetchall()
+
+        if not mappings:
+            return {"filing_id": filing_id, "authorities": {}, "count": 0, "found": False}
+
+        result: dict = {"MCR": [], "MCL": [], "MRE": [], "CASE": []}
+        table_map = {
+            "MCR": ("michigan_court_rules", "rule_number"),
+            "MCL": ("michigan_statutes", "statute_number"),
+            "MRE": ("michigan_evidence_rules", "rule_number"),
+        }
+
+        for m in mappings:
+            entry = {
+                "authority_number": m["authority_number"],
+                "requirement": m["requirement"],
+                "mandatory": bool(m["mandatory"]),
+            }
+            spec = table_map.get(m["authority_type"])
+            if spec:
+                tbl, col = spec
+                if _table_exists(conn, tbl):
+                    detail = conn.execute(
+                        f"SELECT title, category FROM {tbl} WHERE {col} = ?",
+                        (m["authority_number"],),
+                    ).fetchone()
+                    if detail:
+                        entry["title"] = detail["title"]
+                        entry["category"] = detail["category"]
+            result.setdefault(m["authority_type"], []).append(entry)
+
+        total = sum(len(v) for v in result.values())
+        return {"filing_id": filing_id, "authorities": result, "count": total, "found": True}
+    except Exception as e:
+        return {"error": str(e)}
+    finally:
+        conn.close()

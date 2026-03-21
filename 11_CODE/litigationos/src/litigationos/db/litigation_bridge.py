@@ -587,6 +587,247 @@ class LitigationBridge:
         return None
 
 
+    # ------------------------------------------------------------------
+    # Legal Knowledge — MCR, MCL, MRE, Case Law
+    # ------------------------------------------------------------------
+
+    def search_legal_knowledge(
+        self,
+        query: str,
+        *,
+        source_type: Optional[str] = None,
+        limit: int = 25,
+    ) -> List[Dict[str, Any]]:
+        """Full-text search across ALL legal knowledge via FTS5.
+
+        Searches michigan_court_rules, michigan_statutes,
+        michigan_evidence_rules, and michigan_case_law through the
+        unified legal_knowledge_fts index.
+
+        Args:
+            query: Search terms (FTS5 syntax: AND, OR, NOT, phrases).
+            source_type: Filter — ``'MCR'``, ``'MCL'``, ``'MRE'``, ``'CASE'``.
+            limit: Max results.
+        """
+        if not self._is_real:
+            return []
+        try:
+            with self._connect() as conn:
+                if not self._table_exists(conn, "legal_knowledge_fts"):
+                    return self._fallback_legal_search(conn, query, limit)
+
+                params: list[Any] = [query]
+                type_clause = ""
+                if source_type:
+                    type_clause = "AND source_type = ?"
+                    params.append(source_type)
+                params.append(limit)
+
+                rows = conn.execute(
+                    f"""
+                    SELECT source_type, source_id, rule_number, title,
+                           snippet(legal_knowledge_fts, 4, '**', '**', '...', 40) AS snippet,
+                           rank
+                    FROM legal_knowledge_fts
+                    WHERE legal_knowledge_fts MATCH ?
+                    {type_clause}
+                    ORDER BY rank
+                    LIMIT ?
+                    """,
+                    params,
+                ).fetchall()
+                return [dict(r) for r in rows]
+        except Exception:
+            logger.debug("search_legal_knowledge failed", exc_info=True)
+            return []
+
+    def _fallback_legal_search(
+        self, conn: sqlite3.Connection, query: str, limit: int
+    ) -> List[Dict[str, Any]]:
+        """LIKE-based fallback when FTS5 table doesn't exist yet."""
+        results: List[Dict[str, Any]] = []
+        pattern = f"%{query}%"
+        table_map = [
+            ("michigan_court_rules", "MCR", "rule_number"),
+            ("michigan_statutes", "MCL", "statute_number"),
+            ("michigan_evidence_rules", "MRE", "rule_number"),
+        ]
+        for tbl, stype, num_col in table_map:
+            if not self._table_exists(conn, tbl):
+                continue
+            rows = conn.execute(
+                f"SELECT {num_col} AS rule_number, title, full_text "
+                f"FROM {tbl} WHERE title LIKE ? OR full_text LIKE ? LIMIT ?",
+                (pattern, pattern, limit),
+            ).fetchall()
+            for r in rows:
+                results.append({
+                    "source_type": stype,
+                    "rule_number": r["rule_number"],
+                    "title": r["title"],
+                    "snippet": (r["full_text"] or "")[:200],
+                })
+        # Case law
+        if self._table_exists(conn, "michigan_case_law"):
+            rows = conn.execute(
+                "SELECT citation AS rule_number, case_name AS title, holding "
+                "FROM michigan_case_law WHERE case_name LIKE ? OR holding LIKE ? LIMIT ?",
+                (pattern, pattern, limit),
+            ).fetchall()
+            for r in rows:
+                results.append({
+                    "source_type": "CASE",
+                    "rule_number": r["rule_number"],
+                    "title": r["title"],
+                    "snippet": (r["holding"] or "")[:200],
+                })
+        return results[:limit]
+
+    def get_court_rule(self, rule_number: str) -> Optional[Dict[str, Any]]:
+        """Get a specific MCR rule by number (e.g. ``'MCR 2.119'``)."""
+        if not self._is_real:
+            return None
+        try:
+            with self._connect() as conn:
+                if not self._table_exists(conn, "michigan_court_rules"):
+                    return None
+                row = conn.execute(
+                    "SELECT * FROM michigan_court_rules WHERE rule_number = ?",
+                    (rule_number,),
+                ).fetchone()
+                return dict(row) if row else None
+        except Exception:
+            return None
+
+    def get_statute(self, statute_number: str) -> Optional[Dict[str, Any]]:
+        """Get a specific MCL statute (e.g. ``'MCL 722.27a'``)."""
+        if not self._is_real:
+            return None
+        try:
+            with self._connect() as conn:
+                if not self._table_exists(conn, "michigan_statutes"):
+                    return None
+                row = conn.execute(
+                    "SELECT * FROM michigan_statutes WHERE statute_number = ?",
+                    (statute_number,),
+                ).fetchone()
+                return dict(row) if row else None
+        except Exception:
+            return None
+
+    def get_evidence_rule(self, rule_number: str) -> Optional[Dict[str, Any]]:
+        """Get a specific MRE rule (e.g. ``'MRE 803'``)."""
+        if not self._is_real:
+            return None
+        try:
+            with self._connect() as conn:
+                if not self._table_exists(conn, "michigan_evidence_rules"):
+                    return None
+                row = conn.execute(
+                    "SELECT * FROM michigan_evidence_rules WHERE rule_number = ?",
+                    (rule_number,),
+                ).fetchone()
+                return dict(row) if row else None
+        except Exception:
+            return None
+
+    def get_case_law(self, citation: str) -> Optional[Dict[str, Any]]:
+        """Get a case by citation (e.g. ``'259 Mich App 499'``)."""
+        if not self._is_real:
+            return None
+        try:
+            with self._connect() as conn:
+                if not self._table_exists(conn, "michigan_case_law"):
+                    return None
+                row = conn.execute(
+                    "SELECT * FROM michigan_case_law WHERE citation LIKE ?",
+                    (f"%{citation}%",),
+                ).fetchone()
+                return dict(row) if row else None
+        except Exception:
+            return None
+
+    def get_legal_knowledge_stats(self) -> Dict[str, int]:
+        """Return counts of all legal knowledge tables."""
+        if not self._is_real:
+            return {}
+        try:
+            with self._connect() as conn:
+                stats = {}
+                tables = [
+                    ("michigan_court_rules", "mcr_rules"),
+                    ("michigan_statutes", "mcl_statutes"),
+                    ("michigan_evidence_rules", "mre_rules"),
+                    ("michigan_case_law", "case_law"),
+                    ("michigan_judicial_canons", "judicial_canons"),
+                    ("filing_rule_map", "filing_mappings"),
+                    ("legal_cross_references", "cross_references"),
+                    ("legal_knowledge_fts", "fts_entries"),
+                ]
+                for tbl, key in tables:
+                    if self._table_exists(conn, tbl):
+                        cnt = conn.execute(
+                            f"SELECT COUNT(*) FROM {tbl}"
+                        ).fetchone()[0]
+                        stats[key] = cnt
+                    else:
+                        stats[key] = 0
+                return stats
+        except Exception:
+            return {}
+
+    def get_cross_references(
+        self, authority_type: str, authority_number: str
+    ) -> List[Dict[str, Any]]:
+        """Get cross-references for an authority (co-cited, references)."""
+        if not self._is_real:
+            return []
+        try:
+            with self._connect() as conn:
+                if not self._table_exists(conn, "legal_cross_references"):
+                    return []
+                rows = conn.execute(
+                    """
+                    SELECT * FROM legal_cross_references
+                    WHERE (source_type = ? AND source_number = ?)
+                       OR (target_type = ? AND target_number = ?)
+                    ORDER BY relationship
+                    """,
+                    (authority_type, authority_number,
+                     authority_type, authority_number),
+                ).fetchall()
+                return [dict(r) for r in rows]
+        except Exception:
+            return []
+
+    def get_filing_authorities(self, filing_id: str) -> Dict[str, List[Dict]]:
+        """Get all authorities for a filing, grouped by type."""
+        result: Dict[str, List[Dict]] = {"MCR": [], "MCL": [], "MRE": []}
+        if not self._is_real:
+            return result
+        try:
+            with self._connect() as conn:
+                if not self._table_exists(conn, "filing_rule_map"):
+                    return result
+                rows = conn.execute(
+                    "SELECT authority_type, authority_number, requirement, mandatory "
+                    "FROM filing_rule_map WHERE filing_id = ? "
+                    "ORDER BY authority_type",
+                    (filing_id,),
+                ).fetchall()
+                for r in rows:
+                    entry = {
+                        "authority_number": r["authority_number"],
+                        "requirement": r["requirement"],
+                        "mandatory": bool(r["mandatory"]),
+                    }
+                    atype = r["authority_type"]
+                    result.setdefault(atype, []).append(entry)
+                return result
+        except Exception:
+            return result
+
+
 def _format_size(nbytes: int) -> str:
     """Format byte count as human-readable string."""
     if nbytes < 1024:

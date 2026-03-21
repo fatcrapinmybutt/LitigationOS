@@ -109,6 +109,27 @@ class RedTeamFindingsInput(BaseModel):
     limit: int = Field(default=30, ge=1, le=100, description="Maximum findings to return.")
 
 
+class LegalSearchInput(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+    query: str = Field(description="Search terms (FTS5 syntax: AND, OR, NOT, phrases).")
+    source_type: Optional[str] = Field(
+        default=None,
+        description="Filter: 'MCR', 'MCL', 'MRE', 'CASE', 'CANON'. Omit for all.",
+    )
+    limit: int = Field(default=25, ge=1, le=100, description="Maximum results to return.")
+
+
+class AuthorityLookupInput(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+    authority_type: str = Field(description="One of 'MCR', 'MCL', 'MRE', 'CASE'.")
+    authority_number: str = Field(description="Identifier (e.g. 'MCR 2.119', 'MCL 722.23').")
+
+
+class FilingAuthoritiesInput(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+    filing_id: str = Field(description="Filing identifier (e.g. 'F1', 'F3', 'F5').")
+
+
 # ── Registration function ───────────────────────────────────────────
 
 def register_v4_tools(mcp):
@@ -263,6 +284,62 @@ def register_v4_tools(mcp):
                 category=params.category,
                 limit=params.limit,
             ),
+            indent=2,
+            default=str,
+        )
+
+    # ── Tool 8: Legal Knowledge Search ──────────────────────────────
+
+    @mcp.tool(
+        name="litigation_legal_search",
+        annotations={"title": "Legal Knowledge FTS5 Search", **_RO},
+    )
+    async def _legal_search(params: LegalSearchInput) -> str:
+        """Full-text search across all Michigan legal knowledge — MCR rules,
+        MCL statutes, MRE evidence rules, case law, and judicial canons.
+        Supports FTS5 syntax: AND, OR, NOT, and quoted phrases.
+        """
+        return json.dumps(
+            t4.litigation_legal_search(
+                query=params.query,
+                source_type=params.source_type,
+                limit=params.limit,
+            ),
+            indent=2,
+            default=str,
+        )
+
+    # ── Tool 9: Authority Lookup ────────────────────────────────────
+
+    @mcp.tool(
+        name="litigation_authority_lookup",
+        annotations={"title": "Legal Authority Lookup", **_RO},
+    )
+    async def _authority_lookup(params: AuthorityLookupInput) -> str:
+        """Look up a specific Michigan legal authority — court rule, statute,
+        evidence rule, or case — with full text and cross-references.
+        """
+        return json.dumps(
+            t4.litigation_authority_lookup(
+                authority_type=params.authority_type,
+                authority_number=params.authority_number,
+            ),
+            indent=2,
+            default=str,
+        )
+
+    # ── Tool 10: Filing Authorities ─────────────────────────────────
+
+    @mcp.tool(
+        name="litigation_filing_authorities",
+        annotations={"title": "Filing Required Authorities", **_RO},
+    )
+    async def _filing_authorities(params: FilingAuthoritiesInput) -> str:
+        """Get all legal authorities required for a specific filing (F1-F10),
+        grouped by type (MCR/MCL/MRE/CASE) with mandatory/optional status.
+        """
+        return json.dumps(
+            t4.litigation_filing_authorities(filing_id=params.filing_id),
             indent=2,
             default=str,
         )

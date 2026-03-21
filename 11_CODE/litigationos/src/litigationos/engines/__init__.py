@@ -9,6 +9,7 @@ from litigationos.engines.document import DocumentEngine
 from litigationos.engines.filing import FilingEngine
 from litigationos.engines.filing_factory import FilingFactory
 from litigationos.engines.evidence import EvidenceEngine
+from litigationos.engines.legal_knowledge import LegalKnowledgeEngine
 from litigationos.engines.monetization import MonetizationEngine
 from litigationos.engines.onboarding import OnboardingEngine
 from litigationos.engines.rag import RAGEngine
@@ -24,6 +25,7 @@ __all__ = [
     "FilingEngine",
     "FilingFactory",
     "EvidenceEngine",
+    "LegalKnowledgeEngine",
     "MonetizationEngine",
     "OnboardingEngine",
     "RAGEngine",
