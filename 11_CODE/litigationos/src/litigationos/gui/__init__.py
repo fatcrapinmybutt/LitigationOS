@@ -14,6 +14,7 @@ from litigationos.gui.splash_screen import OnboardingWizard, SplashScreen
 from litigationos.gui.legal_brain_screen import LegalBrainFrame
 from litigationos.gui.pdf_studio_screen import PDFStudioFrame
 from litigationos.gui.pipeline_runner_screen import PipelineRunnerFrame
+from litigationos.gui.pricing_screen import PricingFrame
 
 __all__ = [
     "AgentDashboardFrame",
@@ -30,5 +31,6 @@ __all__ = [
     "OnboardingWizard",
     "PDFStudioFrame",
     "PipelineRunnerFrame",
+    "PricingFrame",
     "SplashScreen",
 ]

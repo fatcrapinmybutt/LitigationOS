@@ -15,6 +15,7 @@ from litigationos.engines.filing_factory import FilingFactory
 from litigationos.engines.evidence import EvidenceEngine
 from litigationos.engines.irac_engine import IRACEngine
 from litigationos.engines.legal_knowledge import LegalKnowledgeEngine
+from litigationos.engines.license_manager import LicenseManager
 from litigationos.engines.monetization import MonetizationEngine
 from litigationos.engines.motion_templates import MotionTemplateEngine
 from litigationos.engines.notifications import NotificationEngine
@@ -37,6 +38,7 @@ from litigationos.engines.pdf_production import (
 from litigationos.engines.discovery_generator import DiscoveryGenerator
 from litigationos.engines.mcp_bridge import MCPBridge
 from litigationos.engines.rag import RAGEngine
+from litigationos.engines.security import SecurityEngine
 from litigationos.engines.settings import SettingsEngine
 
 __all__ = [
@@ -56,12 +58,14 @@ __all__ = [
     "EvidenceEngine",
     "IRACEngine",
     "LegalKnowledgeEngine",
+    "LicenseManager",
     "MCPBridge",
     "MonetizationEngine",
     "MotionTemplateEngine",
     "NotificationEngine",
     "OnboardingEngine",
     "RAGEngine",
+    "SecurityEngine",
     "SettingsEngine",
     # PDF Production functions
     "assemble_filing_package",
