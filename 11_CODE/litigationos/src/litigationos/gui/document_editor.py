@@ -70,7 +70,7 @@ class DocumentEditorFrame(ctk.CTkFrame):
 
         ctk.CTkLabel(
             hdr,
-            text="📃  DOCUMENT EDITOR",
+            text="📃 MBP LLC — Document Editor",
             font=ctk.CTkFont(size=22, weight="bold"),
             text_color=COLORS["text"],
         ).pack(side="left", padx=16, pady=12)

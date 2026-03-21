@@ -19,7 +19,7 @@ from typing import TYPE_CHECKING, Callable, Dict, List, Optional, Tuple
 
 import customtkinter as ctk
 
-from litigationos.gui.widgets import COLORS
+from litigationos.gui.widgets import COLORS, Tooltip
 
 if TYPE_CHECKING:
     from litigationos.db.connection import DatabaseManager
@@ -271,7 +271,7 @@ class ChatFrame(ctk.CTkFrame):
 
         title = ctk.CTkLabel(
             header,
-            text="💬  AI Legal Assistant — MANBEARPIG v10",
+            text="💬 MBP LLC — AI Legal Assistant",
             font=ctk.CTkFont(size=18, weight="bold"),
             text_color=COLORS["text"],
         )
@@ -298,6 +298,7 @@ class ChatFrame(ctk.CTkFrame):
             command=self._export_chat,
         )
         export_btn.grid(row=0, column=2, padx=(0, 16), pady=10, sticky="e")
+        Tooltip(export_btn, "Export entire chat history to a markdown file")
 
     # -- scrollable chat area ---------------------------------------------
 
@@ -351,6 +352,7 @@ class ChatFrame(ctk.CTkFrame):
             command=self._send_message,
         )
         self._send_btn.grid(row=0, column=1, sticky="e")
+        Tooltip(self._send_btn, "Send message to MANBEARPIG AI (Enter to send)")
 
         # --- char count + slash hints ----------------------------------------
         hints_row = ctk.CTkFrame(input_wrapper, fg_color="transparent")

@@ -13,19 +13,32 @@ import customtkinter as ctk
 # ---------------------------------------------------------------------------
 
 COLORS = {
-    "bg_dark": "#1a1a2e",
-    "bg_card": "#16213e",
-    "bg_sidebar": "#0f3460",
-    "accent": "#e94560",
-    "green": "#00b894",
-    "yellow": "#fdcb6e",
-    "orange": "#e17055",
-    "red": "#d63031",
-    "blue": "#0984e3",
-    "gray": "#636e72",
-    "text": "#dfe6e9",
-    "text_dim": "#b2bec3",
-    "border": "#2d3436",
+    # Core backgrounds
+    "bg_dark": "#0D0D0D",        # Near-black background
+    "bg_card": "#1A1A1A",        # Dark card background
+    "bg_sidebar": "#111111",     # Sidebar — deep black
+
+    # Brand accent — Hot pink
+    "accent": "#FF1493",          # Deep pink (MBP brand)
+    "accent_hover": "#FF69B4",    # Hot pink hover
+    "accent_dim": "#C71585",      # Medium violet-red
+
+    # Semantic colors
+    "green": "#00E676",           # Bright green (success)
+    "yellow": "#FFD600",          # Vivid yellow (warning)
+    "orange": "#FF6D00",          # Orange (caution)
+    "red": "#FF1744",             # Red (danger/overdue)
+    "blue": "#448AFF",            # Blue (info)
+    "purple": "#E040FB",          # Purple (special)
+    "gray": "#616161",            # Muted gray
+
+    # Text
+    "text": "#F5F5F5",            # Bright white text
+    "text_dim": "#9E9E9E",        # Dimmed gray text
+
+    # Borders
+    "border": "#2A2A2A",          # Dark border
+    "border_light": "#3A3A3A",    # Lighter border for hover
 }
 
 STATUS_COLORS = {
@@ -261,6 +274,97 @@ class ProgressScore(ctk.CTkFrame):
         self._bar.set(score / 100.0)
 
 
+# ---------------------------------------------------------------------------
+# Tooltip
+# ---------------------------------------------------------------------------
+
+class Tooltip:
+    """Hover tooltip for any widget. Shows after a short delay."""
+
+    def __init__(self, widget, text: str, delay: int = 500):
+        self.widget = widget
+        self.text = text
+        self.delay = delay
+        self._tip_window = None
+        self._after_id = None
+        widget.bind("<Enter>", self._schedule)
+        widget.bind("<Leave>", self._cancel)
+        widget.bind("<Button>", self._cancel)
+
+    def _schedule(self, event=None):
+        self._cancel()
+        self._after_id = self.widget.after(self.delay, self._show)
+
+    def _cancel(self, event=None):
+        if self._after_id:
+            self.widget.after_cancel(self._after_id)
+            self._after_id = None
+        self._hide()
+
+    def _show(self):
+        if self._tip_window:
+            return
+        x = self.widget.winfo_rootx() + 20
+        y = self.widget.winfo_rooty() + self.widget.winfo_height() + 5
+
+        import tkinter as tk
+        self._tip_window = tw = tk.Toplevel(self.widget)
+        tw.wm_overrideredirect(True)
+        tw.wm_geometry(f"+{x}+{y}")
+        tw.attributes("-topmost", True)
+
+        frame = tk.Frame(tw, bg="#1A1A1A", bd=1, relief="solid",
+                         highlightbackground="#FF1493", highlightthickness=1)
+        frame.pack()
+        label = tk.Label(
+            frame, text=self.text, bg="#1A1A1A", fg="#F5F5F5",
+            font=("Segoe UI", 9), padx=8, pady=4, wraplength=300, justify="left",
+        )
+        label.pack()
+
+    def _hide(self):
+        if self._tip_window:
+            self._tip_window.destroy()
+            self._tip_window = None
+
+    def update_text(self, text: str):
+        self.text = text
+
+
+# ---------------------------------------------------------------------------
+# ContextMenu
+# ---------------------------------------------------------------------------
+
+class ContextMenu:
+    """Right-click context menu helper for any widget."""
+
+    def __init__(self, widget, items: list[tuple] = None):
+        import tkinter as tk
+        self.widget = widget
+        self.menu = tk.Menu(widget, tearoff=0, bg="#1A1A1A", fg="#F5F5F5",
+                            activebackground="#FF1493", activeforeground="#FFFFFF",
+                            font=("Segoe UI", 10))
+        if items:
+            for label, command in items:
+                if label == "---":
+                    self.menu.add_separator()
+                else:
+                    self.menu.add_command(label=label, command=command)
+        widget.bind("<Button-3>", self._show)
+
+    def _show(self, event):
+        try:
+            self.menu.tk_popup(event.x_root, event.y_root)
+        finally:
+            self.menu.grab_release()
+
+    def add_item(self, label: str, command: callable):
+        self.menu.add_command(label=label, command=command)
+
+    def add_separator(self):
+        self.menu.add_separator()
+
+
 __all__ = [
     "COLORS",
     "STATUS_COLORS",
@@ -269,4 +373,6 @@ __all__ = [
     "DataCard",
     "DeadlineRow",
     "ProgressScore",
+    "Tooltip",
+    "ContextMenu",
 ]

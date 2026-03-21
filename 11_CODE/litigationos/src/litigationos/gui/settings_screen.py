@@ -12,6 +12,8 @@ from typing import TYPE_CHECKING
 
 import customtkinter as ctk
 
+from litigationos.gui.widgets import Tooltip
+
 if TYPE_CHECKING:
     from litigationos.app import App
 
@@ -45,7 +47,7 @@ class SettingsFrame(ctk.CTkFrame):
         self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(1, weight=1)
 
-        ctk.CTkLabel(self, text="Settings", font=ctk.CTkFont(size=20, weight="bold")).grid(
+        ctk.CTkLabel(self, text="⚙️ MBP LLC — Settings", font=ctk.CTkFont(size=20, weight="bold")).grid(
             row=0, column=0, sticky="w", padx=16, pady=(12, 4)
         )
 
@@ -61,13 +63,15 @@ class SettingsFrame(ctk.CTkFrame):
         # Bottom buttons
         btn_frame = ctk.CTkFrame(self, fg_color="transparent")
         btn_frame.grid(row=2, column=0, sticky="ew", padx=16, pady=(4, 12))
-        ctk.CTkButton(btn_frame, text="Save Settings", width=140, command=self._save).pack(
-            side="left", padx=(0, 8)
-        )
-        ctk.CTkButton(
+        save_btn = ctk.CTkButton(btn_frame, text="Save Settings", width=140, command=self._save)
+        save_btn.pack(side="left", padx=(0, 8))
+        Tooltip(save_btn, "Persist all settings to database")
+        reset_btn = ctk.CTkButton(
             btn_frame, text="Reset Defaults", width=140, fg_color="#EF4444",
             hover_color="#DC2626", command=self._reset,
-        ).pack(side="left", padx=8)
+        )
+        reset_btn.pack(side="left", padx=8)
+        Tooltip(reset_btn, "Restore all settings to Michigan family law defaults")
 
     # -- Section builders -----------------------------------------------------
 
@@ -139,10 +143,12 @@ class SettingsFrame(ctk.CTkFrame):
         self._ollama_entry.grid(row=r, column=1, sticky="ew", padx=8, pady=2)
         r += 1
 
-        ctk.CTkButton(
+        test_btn = ctk.CTkButton(
             sec, text="Test Connection", width=140, fg_color="#3B82F6",
             command=self._test_connection,
-        ).grid(row=r, column=1, sticky="w", padx=8, pady=(4, 8))
+        )
+        test_btn.grid(row=r, column=1, sticky="w", padx=8, pady=(4, 8))
+        Tooltip(test_btn, "Test Ollama AI server connection")
 
     def _build_appearance_section(self, parent: ctk.CTkFrame) -> None:
         sec = self._section_header(parent, "🎨  Appearance")

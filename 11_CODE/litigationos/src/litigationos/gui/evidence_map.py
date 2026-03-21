@@ -59,7 +59,7 @@ class EvidenceMapFrame(ctk.CTkFrame):
 
         ctk.CTkLabel(
             hdr,
-            text="🗺  EVIDENCE MAP",
+            text="🗺 MBP LLC — Evidence Map",
             font=ctk.CTkFont(size=22, weight="bold"),
             text_color=COLORS["text"],
         ).pack(side="left", padx=16, pady=12)

@@ -14,7 +14,7 @@ from typing import TYPE_CHECKING, Optional
 
 import customtkinter as ctk
 
-from litigationos.gui.widgets import COLORS
+from litigationos.gui.widgets import COLORS, Tooltip
 
 if TYPE_CHECKING:
     from litigationos.db.connection import DatabaseManager
@@ -96,7 +96,7 @@ class FilingWizardFrame(ctk.CTkFrame):
 
         ctk.CTkLabel(
             hdr,
-            text="📝  FILING WIZARD",
+            text="📝 MBP LLC — Filing Wizard",
             font=ctk.CTkFont(size=22, weight="bold"),
             text_color=COLORS["text"],
         ).pack(side="left", padx=16, pady=12)
@@ -135,12 +135,14 @@ class FilingWizardFrame(ctk.CTkFrame):
             state="disabled", corner_radius=8,
         )
         self._back_btn.pack(side="left", padx=4)
+        Tooltip(self._back_btn, "Return to the previous wizard step")
 
         self._next_btn = ctk.CTkButton(
             nav, text="Next →", width=100, command=self._next_step,
             fg_color=COLORS["blue"], hover_color=COLORS["accent"], corner_radius=8,
         )
         self._next_btn.pack(side="left", padx=4)
+        Tooltip(self._next_btn, "Proceed to the next wizard step")
 
     # ------------------------------------------------------------------
     # Step rendering

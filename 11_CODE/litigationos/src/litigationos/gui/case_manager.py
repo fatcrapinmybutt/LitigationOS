@@ -11,7 +11,7 @@ from typing import TYPE_CHECKING, Optional
 
 import customtkinter as ctk
 
-from litigationos.gui.widgets import COLORS, STATUS_COLORS, StatusBadge
+from litigationos.gui.widgets import COLORS, STATUS_COLORS, StatusBadge, Tooltip
 
 if TYPE_CHECKING:
     from litigationos.db.connection import DatabaseManager
@@ -44,12 +44,12 @@ class CaseManagerFrame(ctk.CTkFrame):
 
         ctk.CTkLabel(
             toolbar,
-            text="📁  Case Manager",
+            text="📁 MBP LLC — Case Manager",
             font=ctk.CTkFont(size=18, weight="bold"),
             text_color=COLORS["text"],
         ).pack(side="left", padx=12, pady=8)
 
-        ctk.CTkButton(
+        add_btn = ctk.CTkButton(
             toolbar,
             text="＋ Add Case",
             width=110,
@@ -57,7 +57,9 @@ class CaseManagerFrame(ctk.CTkFrame):
             hover_color="#00a381",
             corner_radius=8,
             command=self._new_case,
-        ).pack(side="left", padx=8, pady=8)
+        )
+        add_btn.pack(side="left", padx=8, pady=8)
+        Tooltip(add_btn, "Create a new case with auto-generated case number")
 
         self._search_var = ctk.StringVar()
         self._search_var.trace_add("write", lambda *_: self.load_cases())
@@ -174,17 +176,21 @@ class CaseManagerFrame(ctk.CTkFrame):
         btn_row = ctk.CTkFrame(form, fg_color="transparent")
         btn_row.pack(fill="x", pady=(16, 8))
 
-        ctk.CTkButton(
+        save_btn = ctk.CTkButton(
             btn_row, text="💾  Save", width=100,
             fg_color=COLORS["green"], hover_color="#00a381",
             corner_radius=8, command=self._save_case,
-        ).pack(side="left", padx=(0, 8))
+        )
+        save_btn.pack(side="left", padx=(0, 8))
+        Tooltip(save_btn, "Save case details to database")
 
-        ctk.CTkButton(
+        cancel_btn = ctk.CTkButton(
             btn_row, text="Cancel", width=80,
             fg_color=COLORS["gray"], hover_color=COLORS["border"],
             corner_radius=8, command=self._clear_form,
-        ).pack(side="left")
+        )
+        cancel_btn.pack(side="left")
+        Tooltip(cancel_btn, "Discard changes and reset form")
 
     # ------------------------------------------------------------------
     # Data operations

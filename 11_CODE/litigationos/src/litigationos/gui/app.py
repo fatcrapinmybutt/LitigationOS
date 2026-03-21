@@ -31,6 +31,7 @@ NAV_ITEMS = [
     ("📃", "Doc Editor", "doc_editor"),
     ("📅", "Calendar", "calendar"),
     ("📅", "Timeline", "timeline"),
+    ("👨‍⚖️", "Judge Profiles", "judge_profiles"),
     ("⚙️", "Settings", "settings"),
 ]
 
@@ -48,11 +49,19 @@ class LitigationOSApp(ctk.CTk):
 
     def __init__(self, db_path: Optional[str | Path] = None):
         super().__init__()
-        self.title("LitigationOS — Pro Se Litigation Command Center")
+        self.title("MBP LLC — LitigationOS Pro Se Command Center")
         self.geometry("1400x900")
         self.minsize(1000, 600)
+
+        # Set window icon (MBP pig logo)
+        _icon_path = Path(__file__).parent.parent / "assets" / "mbp_pig_logo.ico"
+        if _icon_path.exists():
+            try:
+                self.iconbitmap(str(_icon_path))
+            except Exception:
+                pass  # Skip if icon format not supported
         ctk.set_appearance_mode("dark")
-        ctk.set_default_color_theme("blue")
+        ctk.set_default_color_theme("blue")  # Base theme — our COLORS override it
 
         # --- Database ---
         self._db_path = Path(db_path) if db_path else DEFAULT_DB_PATH
@@ -79,8 +88,21 @@ class LitigationOSApp(ctk.CTk):
         # Start on dashboard
         self.switch_screen("dashboard")
 
+        # Keyboard shortcuts
+        self.bind("<Control-d>", lambda e: self.switch_screen("dashboard"))
+        self.bind("<Control-e>", lambda e: self.switch_screen("evidence"))
+        self.bind("<Control-f>", lambda e: self.switch_screen("filings"))
+        self.bind("<Control-n>", lambda e: self.switch_screen("cases"))
+        self.bind("<Control-t>", lambda e: self.switch_screen("chat"))
+        self.bind("<Control-w>", lambda e: self.switch_screen("filing_wizard"))
+        self.bind("<F5>", lambda e: self._refresh_current_screen())
+        self.bind("<F1>", lambda e: self._show_help())
+
         # Cleanup on close
         self.protocol("WM_DELETE_WINDOW", self._on_close)
+
+        # Check first-run wizard
+        self.after(100, self._check_first_run)
 
     # ------------------------------------------------------------------
     # Database initialisation
@@ -98,6 +120,30 @@ class LitigationOSApp(ctk.CTk):
             self._db = None
 
     # --- Public properties so screen frames that expect an ``app`` work ---
+
+    def _check_first_run(self):
+        """Show the setup wizard if this is the first launch."""
+        try:
+            from litigationos.gui.first_run_wizard import FirstRunWizard
+            if self._db:
+                conn = self._db.connect()
+                try:
+                    conn.execute(
+                        "CREATE TABLE IF NOT EXISTS settings "
+                        "(key TEXT PRIMARY KEY, value TEXT)"
+                    )
+                    conn.commit()
+                    row = conn.execute(
+                        "SELECT value FROM settings WHERE key = 'first_run_complete'"
+                    ).fetchone()
+                    if row and (row[0] == "1" if isinstance(row, tuple) else dict(row).get("value") == "1"):
+                        return
+                finally:
+                    conn.close()
+            wizard = FirstRunWizard(self, self._settings)
+            self.wait_window(wizard)
+        except Exception:
+            logger.debug("First-run wizard skipped", exc_info=True)
 
     @property
     def db(self) -> Optional[DatabaseManager]:
@@ -128,8 +174,15 @@ class LitigationOSApp(ctk.CTk):
 
         ctk.CTkLabel(
             logo_frame,
-            text="⚖  LitigationOS",
-            font=ctk.CTkFont(size=16, weight="bold"),
+            text="⚖  MBP LLC",
+            font=ctk.CTkFont(size=18, weight="bold"),
+            text_color=COLORS["accent"],
+        ).pack(padx=16)
+
+        ctk.CTkLabel(
+            logo_frame,
+            text="LitigationOS™",
+            font=ctk.CTkFont(size=12, weight="bold"),
             text_color=COLORS["text"],
         ).pack(padx=16)
 
@@ -211,6 +264,12 @@ class LitigationOSApp(ctk.CTk):
             font=ctk.CTkFont(size=11), text_color=db_color,
         )
         self._status_db_label.pack(side="right", padx=12)
+
+        ctk.CTkLabel(
+            self._status_bar, text="MBP LLC™",
+            font=ctk.CTkFont(size=10, weight="bold"),
+            text_color=COLORS["accent"],
+        ).pack(side="right", padx=12)
 
         self._refresh_status_bar()
 
@@ -343,6 +402,12 @@ class LitigationOSApp(ctk.CTk):
             from litigationos.gui.timeline_view import TimelineFrame
             return TimelineFrame(self._content, app=self)
 
+        if name == "judge_profiles":
+            from litigationos.gui.judge_profile import JudgeProfileFrame
+            return JudgeProfileFrame(
+                self._content, db=self._db, navigate_cb=self.switch_screen,
+            )
+
         if name == "settings":
             from litigationos.gui.settings_screen import SettingsFrame
             return SettingsFrame(self._content, app=self)
@@ -365,6 +430,27 @@ class LitigationOSApp(ctk.CTk):
         """Clean up and exit."""
         logger.info("LitigationOS shutting down")
         self.destroy()
+
+    def _refresh_current_screen(self):
+        """Refresh the currently active screen."""
+        if self._screen_frame and hasattr(self._screen_frame, 'refresh'):
+            self._screen_frame.refresh()
+
+    def _show_help(self):
+        """Show keyboard shortcuts help dialog."""
+        from tkinter import messagebox
+        shortcuts = (
+            "Keyboard Shortcuts:\n\n"
+            "Ctrl+D \u2014 Dashboard\n"
+            "Ctrl+E \u2014 Evidence Browser\n"
+            "Ctrl+F \u2014 Filing Manager\n"
+            "Ctrl+N \u2014 Case Manager\n"
+            "Ctrl+T \u2014 AI Chat\n"
+            "Ctrl+W \u2014 Filing Wizard\n"
+            "F5 \u2014 Refresh Current Screen\n"
+            "F1 \u2014 This Help Dialog"
+        )
+        messagebox.showinfo("MBP LLC \u2014 Keyboard Shortcuts", shortcuts)
 
     def mainloop(self, *args, **kwargs):
         """Start the GUI event loop."""

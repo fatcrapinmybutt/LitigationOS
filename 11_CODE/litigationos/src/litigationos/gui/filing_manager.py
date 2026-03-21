@@ -16,6 +16,8 @@ from typing import TYPE_CHECKING, Optional
 
 import customtkinter as ctk
 
+from litigationos.gui.widgets import ContextMenu, Tooltip
+
 if TYPE_CHECKING:
     from litigationos.app import App
 
@@ -82,7 +84,7 @@ class FilingManagerFrame(ctk.CTkFrame):
         self.grid_rowconfigure(1, weight=1)
 
         # ── Title bar ──
-        title = ctk.CTkLabel(self, text="Filing Manager", font=ctk.CTkFont(size=20, weight="bold"))
+        title = ctk.CTkLabel(self, text="📄 MBP LLC — Filing Manager", font=ctk.CTkFont(size=20, weight="bold"))
         title.grid(row=0, column=0, columnspan=2, sticky="w", padx=16, pady=(12, 4))
 
         # ── Left panel: filter + list ──
@@ -143,9 +145,9 @@ class FilingManagerFrame(ctk.CTkFrame):
 
         btn_row = ctk.CTkFrame(parent, fg_color="transparent")
         btn_row.grid(row=2, column=0, sticky="ew", padx=8)
-        ctk.CTkButton(btn_row, text="＋ New Filing", width=120, command=self._on_new_filing).pack(
-            side="left", pady=4
-        )
+        new_filing_btn = ctk.CTkButton(btn_row, text="＋ New Filing", width=120, command=self._on_new_filing)
+        new_filing_btn.pack(side="left", pady=4)
+        Tooltip(new_filing_btn, "Create a new court filing from scratch")
 
         scroll = ctk.CTkScrollableFrame(parent)
         scroll.grid(row=3, column=0, sticky="nsew", padx=8, pady=(4, 8))
@@ -211,30 +213,41 @@ class FilingManagerFrame(ctk.CTkFrame):
 
         self._btn_build = ctk.CTkButton(btn_frame, text="Build Stack", command=self._on_build_stack)
         self._btn_build.pack(side="left", padx=(0, 8))
+        Tooltip(self._btn_build, "Assemble filing components (main doc, exhibits, proof of service)")
         self._btn_validate = ctk.CTkButton(
             btn_frame, text="Validate", fg_color="#F59E0B", hover_color="#D97706",
             command=self._on_validate,
         )
         self._btn_validate.pack(side="left", padx=8)
+        Tooltip(self._btn_validate, "Run compliance checks against Michigan Court Rules")
         self._btn_export = ctk.CTkButton(
             btn_frame, text="Export", fg_color="#10B981", hover_color="#059669",
             command=self._on_export,
         )
         self._btn_export.pack(side="left", padx=8)
+        Tooltip(self._btn_export, "Export filing package to DOCX/PDF for court submission")
 
-        # Package-specific buttons (hidden until a package is selected)
         self._btn_open_folder = ctk.CTkButton(
             btn_frame, text="📂 Open Folder", fg_color="#6366F1", hover_color="#4F46E5",
             command=self._on_open_folder,
         )
+        Tooltip(self._btn_open_folder, "Open the filing folder in Windows Explorer")
         self._btn_open_main = ctk.CTkButton(
             btn_frame, text="📄 Open Filing", fg_color="#8B5CF6", hover_color="#7C3AED",
             command=self._on_open_main_filing,
         )
+        Tooltip(self._btn_open_main, "Open the main filing document")
 
     def _build_status_workflow(self, parent: ctk.CTkFrame) -> None:
         wf = ctk.CTkFrame(parent, fg_color="transparent")
         wf.grid(row=2, column=0, sticky="ew", padx=16, pady=4)
+        _status_tips = {
+            "draft": "Initial draft — still being written",
+            "review": "Under review — checking for errors and compliance",
+            "ready": "Ready to file — all checks passed",
+            "filed": "Filed with the court — awaiting confirmation",
+            "served": "Served on opposing party — proof of service attached",
+        }
         self._status_btns: dict[str, ctk.CTkButton] = {}
         for i, status in enumerate(_STATUS_LABELS):
             btn = ctk.CTkButton(
@@ -244,6 +257,7 @@ class FilingManagerFrame(ctk.CTkFrame):
             )
             btn.grid(row=0, column=i * 2, padx=2)
             self._status_btns[status] = btn
+            Tooltip(btn, _status_tips.get(status, status.capitalize()))
             if i < len(_STATUS_LABELS) - 1:
                 ctk.CTkLabel(wf, text="→").grid(row=0, column=i * 2 + 1)
 
@@ -319,6 +333,14 @@ class FilingManagerFrame(ctk.CTkFrame):
 
             for widget in (row, dot, lbl, tag):
                 widget.bind("<Button-1>", lambda e, f=filing: self._on_select(f))
+
+            ContextMenu(row, items=[
+                ("Open in Explorer", lambda f=filing: self._ctx_open_filing(f)),
+                ("View Main Filing", lambda f=filing: self._ctx_view_main(f)),
+                ("---", None),
+                ("Copy Filing Title", lambda f=filing: self._ctx_copy_title(f)),
+                ("Duplicate Filing", lambda f=filing: self._ctx_duplicate(f)),
+            ])
 
     def _populate_package_list(self) -> None:
         """Populate left panel with disk-based filing packages."""
@@ -461,6 +483,51 @@ class FilingManagerFrame(ctk.CTkFrame):
         self._btn_open_folder.pack_forget()
         self._btn_open_main.pack_forget()
         self._show_detail(filing)
+
+    # -- Context menu handlers ------------------------------------------------
+
+    def _ctx_open_filing(self, filing: dict) -> None:
+        notes = filing.get("notes") or ""
+        for line in notes.splitlines():
+            if line.startswith("Path:"):
+                path = line.replace("Path:", "").strip()
+                if os.path.exists(path):
+                    os.startfile(os.path.dirname(path))
+                    return
+        from tkinter import messagebox
+        messagebox.showinfo("Info", "No file path associated with this filing.")
+
+    def _ctx_view_main(self, filing: dict) -> None:
+        notes = filing.get("notes") or ""
+        for line in notes.splitlines():
+            if line.startswith("Path:"):
+                path = line.replace("Path:", "").strip()
+                if os.path.exists(path):
+                    os.startfile(path)
+                    return
+        from tkinter import messagebox
+        messagebox.showinfo("Info", "No main filing document found.")
+
+    def _ctx_copy_title(self, filing: dict) -> None:
+        try:
+            self.clipboard_clear()
+            self.clipboard_append(filing.get("title", ""))
+        except Exception:
+            pass
+
+    def _ctx_duplicate(self, filing: dict) -> None:
+        if not self.engine:
+            return
+        try:
+            self.engine.create_filing(
+                title=f"Copy of {filing.get('title', 'Untitled')}",
+                filing_type=filing.get("filing_type", "motion"),
+                case_id=filing.get("case_id"),
+                notes=filing.get("notes"),
+            )
+            self.refresh()
+        except Exception:
+            logger.exception("Failed to duplicate filing")
 
     def _show_detail(self, filing: dict) -> None:
         self._detail_title.configure(text=filing.get("title", "Untitled"))

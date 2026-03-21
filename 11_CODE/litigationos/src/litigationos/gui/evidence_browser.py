@@ -16,6 +16,7 @@ from typing import TYPE_CHECKING, Optional
 
 import customtkinter as ctk
 
+from litigationos.gui.widgets import ContextMenu, Tooltip
 if TYPE_CHECKING:
     from litigationos.app import App
 
@@ -48,7 +49,10 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
     def __init__(self, parent: ctk.CTkFrame, app: "App"):
         super().__init__(parent, fg_color="transparent")
         self.app = app
-        self.engine = EvidenceEngine(app.db)
+        try:
+            self.engine = EvidenceEngine(app.db)
+        except Exception:
+            self.engine = None
         self._evidence: list[dict] = []
         self._selected: Optional[dict] = None
 
@@ -73,7 +77,7 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
         self.grid_rowconfigure(2, weight=1)
 
         # ── Title ──
-        ctk.CTkLabel(self, text="Evidence Browser", font=ctk.CTkFont(size=20, weight="bold")).grid(
+        ctk.CTkLabel(self, text="🔍 MBP LLC — Evidence Browser", font=ctk.CTkFont(size=20, weight="bold")).grid(
             row=0, column=0, sticky="w", padx=16, pady=(12, 4)
         )
 
@@ -86,11 +90,13 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
         self._search_entry = ctk.CTkEntry(search_frame, placeholder_text="FTS5 search evidence…")
         self._search_entry.grid(row=0, column=1, sticky="ew")
         self._search_entry.bind("<Return>", lambda _: self._do_search())
-        ctk.CTkButton(search_frame, text="Search", width=80, command=self._do_search).grid(
-            row=0, column=2, padx=(8, 0)
-        )
-        ctk.CTkButton(search_frame, text="Clear", width=60, fg_color="#6B7280",
-                       command=self._clear_search).grid(row=0, column=3, padx=(4, 0))
+        search_btn = ctk.CTkButton(search_frame, text="Search", width=80, command=self._do_search)
+        search_btn.grid(row=0, column=2, padx=(8, 0))
+        Tooltip(search_btn, "Search across evidence items using FTS5 full-text search")
+        clear_btn = ctk.CTkButton(search_frame, text="Clear", width=60, fg_color="#6B7280",
+                       command=self._clear_search)
+        clear_btn.grid(row=0, column=3, padx=(4, 0))
+        Tooltip(clear_btn, "Clear search and show all evidence")
 
         # ── Main body: filters + table + detail ──
         body = ctk.CTkFrame(self, fg_color="transparent")
@@ -211,13 +217,21 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
         # Action buttons
         btn_row = ctk.CTkFrame(table_frame, fg_color="transparent")
         btn_row.grid(row=2, column=0, sticky="ew", pady=4, padx=4)
-        ctk.CTkButton(btn_row, text="＋ Add Evidence", width=130, command=self._on_add).pack(side="left", padx=(0, 6))
-        ctk.CTkButton(btn_row, text="Assign Bates", width=110, fg_color="#8B5CF6",
-                       hover_color="#7C3AED", command=self._on_assign_bates).pack(side="left", padx=6)
-        ctk.CTkButton(btn_row, text="Authenticate", width=110, fg_color="#F59E0B",
-                       hover_color="#D97706", command=self._on_authenticate).pack(side="left", padx=6)
-        ctk.CTkButton(btn_row, text="Export Exhibit List", width=140, fg_color="#10B981",
-                       hover_color="#059669", command=self._on_export_list).pack(side="left", padx=6)
+        add_btn = ctk.CTkButton(btn_row, text="＋ Add Evidence", width=130, command=self._on_add)
+        add_btn.pack(side="left", padx=(0, 6))
+        Tooltip(add_btn, "Upload a new evidence document, photo, or recording")
+        bates_btn = ctk.CTkButton(btn_row, text="Assign Bates", width=110, fg_color="#8B5CF6",
+                       hover_color="#7C3AED", command=self._on_assign_bates)
+        bates_btn.pack(side="left", padx=6)
+        Tooltip(bates_btn, "Auto-assign Bates numbers (PIGORS-XXXX) to unnumbered evidence")
+        auth_btn = ctk.CTkButton(btn_row, text="Authenticate", width=110, fg_color="#F59E0B",
+                       hover_color="#D97706", command=self._on_authenticate)
+        auth_btn.pack(side="left", padx=6)
+        Tooltip(auth_btn, "Generate MRE 901 authentication declaration for selected evidence")
+        export_btn = ctk.CTkButton(btn_row, text="Export Exhibit List", width=140, fg_color="#10B981",
+                       hover_color="#059669", command=self._on_export_list)
+        export_btn.pack(side="left", padx=6)
+        Tooltip(export_btn, "Export formatted exhibit list for court submission")
 
     # -- Detail panel ---------------------------------------------------------
 
@@ -249,7 +263,7 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
             cat = self._category_combo.get() if hasattr(self, '_category_combo') else None
             self._evidence = self._bridge.search_evidence(lane=lane, category=cat)
             self._populate_bridge_table(self._evidence)
-        else:
+        elif self.engine:
             self._evidence = self.engine.get_evidence()
             self._refresh_case_combo()
             self._apply_filters()
@@ -266,12 +280,13 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
             self._populate_bridge_table(self._evidence)
             return
         # Fallback to EvidenceEngine
-        case_id = self._get_case_filter()
-        try:
-            self._evidence = self.engine.search_evidence(query, case_id=case_id)
-        except Exception:
-            self._evidence = []
-        self._populate_table(self._evidence)
+        if self.engine:
+            case_id = self._get_case_filter()
+            try:
+                self._evidence = self.engine.search_evidence(query, case_id=case_id)
+            except Exception:
+                self._evidence = []
+            self._populate_table(self._evidence)
 
     def _clear_search(self) -> None:
         self._search_entry.delete(0, "end")
@@ -335,6 +350,15 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
                 lbl.bind("<Button-1>", lambda e, item=ev: self._on_select(item))
             row_frame.bind("<Button-1>", lambda e, item=ev: self._on_select(item))
 
+            ContextMenu(row_frame, items=[
+                ("Copy Description", lambda item=ev: self._ctx_copy_text(
+                    item.get("description") or item.get("title", ""))),
+                ("View Source File", lambda item=ev: self._ctx_view_source(item)),
+                ("---", None),
+                ("Change Category", lambda item=ev: self._ctx_change_category(item)),
+                ("Change Lane", lambda item=ev: self._ctx_change_lane(item)),
+            ])
+
     def _populate_bridge_table(self, items: list[dict]) -> None:
         """Populate the results table with evidence_quotes data from bridge."""
         for w in self._table_scroll.winfo_children():
@@ -374,6 +398,15 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
                 lbl.bind("<Button-1>", lambda e, item=ev: self._on_select(item))
             row_frame.bind("<Button-1>", lambda e, item=ev: self._on_select(item))
 
+            ContextMenu(row_frame, items=[
+                ("Copy Quote Text", lambda item=ev: self._ctx_copy_text(
+                    item.get("quote_text", ""))),
+                ("View Source File", lambda item=ev: self._ctx_view_source(item)),
+                ("---", None),
+                ("Change Category", lambda item=ev: self._ctx_change_category(item)),
+                ("Change Lane", lambda item=ev: self._ctx_change_lane(item)),
+            ])
+
     def _on_select(self, ev: dict) -> None:
         self._selected = ev
         # Bridge evidence_quotes have different fields than app-schema evidence
@@ -408,10 +441,53 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
 
     # -- Actions --------------------------------------------------------------
 
+    def _ctx_copy_text(self, text: str) -> None:
+        try:
+            self.clipboard_clear()
+            self.clipboard_append(text)
+        except Exception:
+            pass
+
+    def _ctx_view_source(self, ev: dict) -> None:
+        path = ev.get("source_file") or ev.get("file_path")
+        if path:
+            import os
+            os.startfile(Path(path).parent if Path(path).is_file() else path)
+
+    def _ctx_change_category(self, ev: dict) -> None:
+        from tkinter import simpledialog
+        new_cat = simpledialog.askstring("Change Category", "New category:", parent=self)
+        if new_cat and self._bridge and ev.get("id"):
+            try:
+                conn = self._bridge._conn
+                conn.execute("UPDATE evidence_quotes SET category=? WHERE rowid=?", (new_cat, ev["id"]))
+                conn.commit()
+            except Exception:
+                pass
+            self.refresh()
+
+    def _ctx_change_lane(self, ev: dict) -> None:
+        from tkinter import simpledialog
+        new_lane = simpledialog.askstring("Change Lane", "New lane (A-F):", parent=self)
+        if new_lane and self._bridge and ev.get("id"):
+            try:
+                conn = self._bridge._conn
+                conn.execute("UPDATE evidence_quotes SET lane=? WHERE rowid=?", (new_lane.upper(), ev["id"]))
+                conn.commit()
+            except Exception:
+                pass
+            self.refresh()
+
     def _on_add(self) -> None:
+        if not self.engine:
+            messagebox.showinfo("Add Evidence", "Evidence engine not available — use the bridge.")
+            return
         _AddEvidenceDialog(self, self.app, self.engine, on_done=self.refresh)
 
     def _on_assign_bates(self) -> None:
+        if not self.engine:
+            messagebox.showinfo("Assign Bates", "Evidence engine not available.")
+            return
         case_id = self._get_case_filter()
         if case_id is None:
             messagebox.showinfo("Assign Bates", "Select a case filter to assign Bates numbers.")
@@ -430,6 +506,9 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
         if not self._selected:
             messagebox.showinfo("Authenticate", "Select an evidence item first.")
             return
+        if not self.engine:
+            messagebox.showinfo("Authenticate", "Evidence engine not available.")
+            return
         try:
             declaration = self.engine.authenticate(self._selected["id"])
             _TextViewDialog(self, "MRE 901 Declaration", declaration)
@@ -438,6 +517,9 @@ class EvidenceBrowserFrame(ctk.CTkFrame):
             messagebox.showerror("Authenticate", str(exc))
 
     def _on_export_list(self) -> None:
+        if not self.engine:
+            messagebox.showinfo("Export", "Evidence engine not available.")
+            return
         case_id = self._get_case_filter()
         if case_id is None:
             messagebox.showinfo("Export", "Select a case filter to generate an exhibit list.")

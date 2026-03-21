@@ -15,7 +15,7 @@ from typing import TYPE_CHECKING, Optional
 
 import customtkinter as ctk
 
-from litigationos.gui.widgets import COLORS
+from litigationos.gui.widgets import COLORS, ContextMenu, Tooltip
 
 if TYPE_CHECKING:
     from litigationos.db.connection import DatabaseManager
@@ -126,15 +126,17 @@ class DeadlineDashboardFrame(ctk.CTkFrame):
 
         ctk.CTkLabel(
             hdr,
-            text="⏰  DEADLINE DASHBOARD",
+            text="⏰ MBP LLC — Deadline Command",
             font=ctk.CTkFont(size=22, weight="bold"),
             text_color=COLORS["text"],
         ).pack(side="left", padx=16, pady=12)
 
-        ctk.CTkButton(
+        refresh_btn = ctk.CTkButton(
             hdr, text="⟳  Refresh", width=100, command=self.refresh,
             fg_color=COLORS["blue"], hover_color=COLORS["accent"], corner_radius=8,
-        ).pack(side="right", padx=16, pady=12)
+        )
+        refresh_btn.pack(side="right", padx=16, pady=12)
+        Tooltip(refresh_btn, "Refresh deadlines from database")
 
         # Deadline list container
         self._deadline_container = ctk.CTkFrame(self._scroll, fg_color="transparent")
@@ -307,6 +309,17 @@ class DeadlineDashboardFrame(ctk.CTkFrame):
                 font=ctk.CTkFont(size=11), text_color=COLORS["text_dim"],
             ).grid(row=0, column=4, padx=10, pady=8)
 
+            # Right-click context menu for deadline rows
+            dl_name = dl.get("name", "Unknown")
+            dl_date = dl.get("date", "")
+            ContextMenu(row, items=[
+                ("Mark as Complete", lambda n=dl_name: self._ctx_mark_complete(n)),
+                ("Extend Deadline", lambda n=dl_name: self._ctx_extend(n)),
+                ("---", None),
+                ("Copy Details", lambda n=dl_name, d=dl_date: self._ctx_copy_details(n, d)),
+                ("Add Calendar Reminder", lambda n=dl_name, d=dl_date: self._ctx_add_reminder(n, d)),
+            ])
+
         # Filing wave plan section
         wave = self._load_filing_wave()
         if wave:
@@ -341,3 +354,45 @@ class DeadlineDashboardFrame(ctk.CTkFrame):
                     wrow, text=f"  {item['name']}  --  {item['date']}",
                     font=ctk.CTkFont(size=12), text_color=p_color, anchor="w",
                 ).pack(side="left", padx=8, pady=4)
+
+    # ------------------------------------------------------------------
+    # Context menu handlers
+    # ------------------------------------------------------------------
+
+    def _ctx_mark_complete(self, name: str) -> None:
+        logger.info("Context menu: mark complete — %s", name)
+        if self._db:
+            try:
+                self._db.execute(
+                    "UPDATE deadlines SET status='met' WHERE title=? AND status='pending'",
+                    (name,),
+                )
+            except Exception:
+                pass
+        self.refresh()
+
+    def _ctx_extend(self, name: str) -> None:
+        logger.info("Context menu: extend deadline — %s", name)
+        if self._db:
+            try:
+                self._db.execute(
+                    "UPDATE deadlines SET status='extended' WHERE title=? AND status='pending'",
+                    (name,),
+                )
+            except Exception:
+                pass
+        self.refresh()
+
+    def _ctx_copy_details(self, name: str, date_str: str) -> None:
+        try:
+            self.clipboard_clear()
+            self.clipboard_append(f"{name} — Due: {date_str}")
+        except Exception:
+            pass
+
+    def _ctx_add_reminder(self, name: str, date_str: str) -> None:
+        from tkinter import messagebox
+        messagebox.showinfo(
+            "Calendar Reminder",
+            f"Add to your calendar:\n\n{name}\nDue: {date_str}",
+        )

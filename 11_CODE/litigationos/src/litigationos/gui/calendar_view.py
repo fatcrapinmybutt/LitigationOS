@@ -71,7 +71,7 @@ class CalendarViewFrame(ctk.CTkFrame):
 
         ctk.CTkLabel(
             hdr,
-            text="📅  COURT CALENDAR",
+            text="📅 MBP LLC — Court Calendar",
             font=ctk.CTkFont(size=22, weight="bold"),
             text_color=COLORS["text"],
         ).pack(side="left", padx=16, pady=12)

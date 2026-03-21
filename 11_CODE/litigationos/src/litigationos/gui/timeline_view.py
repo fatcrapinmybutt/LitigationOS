@@ -54,7 +54,7 @@ class TimelineFrame(ctk.CTkFrame):
         self.grid_rowconfigure(1, weight=1)
 
         # ── Title ──
-        ctk.CTkLabel(self, text="Case Timeline", font=ctk.CTkFont(size=20, weight="bold")).grid(
+        ctk.CTkLabel(self, text="📅 MBP LLC — Case Timeline", font=ctk.CTkFont(size=20, weight="bold")).grid(
             row=0, column=0, columnspan=2, sticky="w", padx=16, pady=(12, 4)
         )
 

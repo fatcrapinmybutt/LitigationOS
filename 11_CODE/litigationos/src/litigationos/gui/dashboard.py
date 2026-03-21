@@ -24,10 +24,12 @@ from litigationos.gui.widgets import (
     COLORS,
     PRIORITY_COLORS,
     STATUS_COLORS,
+    ContextMenu,
     DataCard,
     DeadlineRow,
     ProgressScore,
     StatusBadge,
+    Tooltip,
 )
 
 if TYPE_CHECKING:
@@ -164,7 +166,7 @@ class DashboardFrame(ctk.CTkFrame):
 
         ctk.CTkLabel(
             hdr,
-            text="⚖  LITIGATION COMMAND CENTER",
+            text="📊 MBP LLC — Dashboard",
             font=ctk.CTkFont(size=22, weight="bold"),
             text_color=COLORS["text"],
         ).pack(side="left", padx=16, pady=12)
@@ -176,7 +178,7 @@ class DashboardFrame(ctk.CTkFrame):
             text_color=COLORS["text_dim"],
         ).pack(side="right", padx=16, pady=12)
 
-        ctk.CTkButton(
+        refresh_btn = ctk.CTkButton(
             hdr,
             text="⟳  Refresh",
             width=100,
@@ -184,7 +186,9 @@ class DashboardFrame(ctk.CTkFrame):
             fg_color=COLORS["blue"],
             hover_color=COLORS["accent"],
             corner_radius=8,
-        ).pack(side="right", padx=(0, 8), pady=12)
+        )
+        refresh_btn.pack(side="right", padx=(0, 8), pady=12)
+        Tooltip(refresh_btn, "Refresh all dashboard data from the database")
 
     def _build_section(self, title: str) -> ctk.CTkFrame:
         """Create a titled section and return its inner content frame."""
@@ -287,15 +291,19 @@ class DashboardFrame(ctk.CTkFrame):
         btn_bar.pack(fill="x", pady=(4, 0))
         btn_bar.columnconfigure((0, 1, 2, 3), weight=1)
 
-        actions: list[tuple[str, str, str, str]] = [
-            ("📁  New Case",        COLORS["blue"],   "cases",        "new_case"),
-            ("📎  Add Evidence",    COLORS["green"],  "evidence",     "add_evidence"),
-            ("📄  Generate Filing", COLORS["orange"], "filing_wizard", "gen_filing"),
-            ("✅  Run QA",          COLORS["red"],    "filings",      "run_qa"),
+        actions: list[tuple[str, str, str, str, str]] = [
+            ("📁  New Case",        COLORS["blue"],   "cases",        "new_case",
+             "Create a new case in the Case Manager"),
+            ("📎  Add Evidence",    COLORS["green"],  "evidence",     "add_evidence",
+             "Open Evidence Browser to add new evidence"),
+            ("📄  Generate Filing", COLORS["orange"], "filing_wizard", "gen_filing",
+             "Start the Filing Wizard to create a new court filing"),
+            ("✅  Run QA",          COLORS["red"],    "filings",      "run_qa",
+             "Open Filing Manager to validate filing compliance"),
         ]
 
-        for col, (text, color, screen, action_id) in enumerate(actions):
-            ctk.CTkButton(
+        for col, (text, color, screen, action_id, tip) in enumerate(actions):
+            btn = ctk.CTkButton(
                 btn_bar,
                 text=text,
                 fg_color=color,
@@ -304,7 +312,9 @@ class DashboardFrame(ctk.CTkFrame):
                 height=40,
                 font=ctk.CTkFont(size=13, weight="bold"),
                 command=lambda s=screen: self._on_quick_action(s),
-            ).grid(row=0, column=col, sticky="ew", padx=8, pady=10)
+            )
+            btn.grid(row=0, column=col, sticky="ew", padx=8, pady=10)
+            Tooltip(btn, tip)
 
     def _on_quick_action(self, screen_name: str) -> None:
         """Navigate to the target screen via the app's switch callback."""
