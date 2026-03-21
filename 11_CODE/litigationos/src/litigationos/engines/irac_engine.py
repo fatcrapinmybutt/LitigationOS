@@ -3,7 +3,8 @@
 Performs structured Issue → Rule → Application → Conclusion analysis for
 Michigan family-law claims.  Every authority is sourced from the litigation
 database — the engine **never** fabricates citations.  When no matching
-authority exists, a ``[VERIFY — authority needed]`` placeholder is emitted.
+authority exists, the engine logs a warning and inserts a court-safe
+notice directing the filer to supply the missing authority.
 
 Designed for 100 % local / offline operation.  No external API calls.
 """
@@ -509,11 +510,14 @@ class IRACEngine:
             meta, self.get_applicable_rules(claim_type),
         )
 
-        factual_basis = (
-            "\n".join(f"- {f}" for f in facts)
-            if facts
-            else "[VERIFY — factual basis needed]"
-        )
+        if facts:
+            factual_basis = "\n".join(f"- {f}" for f in facts)
+        else:
+            logger.warning("No facts supplied for claim_type=%s — flagging for review", claim_type)
+            factual_basis = (
+                "No factual basis on file for this claim. "
+                "Supply supporting facts from evidence records before filing."
+            )
 
         db_authorities = self.get_applicable_rules(claim_type)
         authorities = [
@@ -522,8 +526,9 @@ class IRACEngine:
             for a in db_authorities
         ]
         if not authorities:
+            logger.warning("No DB authorities found for claim_type=%s", claim_type)
             authorities = [
-                {"citation": "[VERIFY — authority needed]",
+                {"citation": "No authority on file — supply rule citation before filing",
                  "relevance": claim_type}
             ]
 
@@ -716,7 +721,11 @@ class IRACEngine:
                 parts.append(f"\n**{source}:** {_truncate(text, 300)}")
 
         if not parts:
-            parts.append("[VERIFY — authority needed]")
+            logger.warning("_build_rule produced no content for claim; flagging.")
+            parts.append(
+                "No applicable authority located in the database. "
+                "Cite the governing statute or court rule before filing."
+            )
 
         return "\n".join(parts)
 
@@ -740,9 +749,11 @@ class IRACEngine:
             if matched:
                 parts.append(f"\n**Element {i + 1} — {elem}:**  \n{matched}")
             else:
+                logger.warning("No fact supplied for required element %d (%s)", i + 1, elem)
                 parts.append(
                     f"\n**Element {i + 1} — {elem}:**  \n"
-                    "[VERIFY — supporting fact needed]"
+                    "No supporting fact on file for this element — "
+                    "supply evidence before filing."
                 )
 
         # Additional facts beyond the element count.

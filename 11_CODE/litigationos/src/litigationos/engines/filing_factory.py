@@ -571,7 +571,20 @@ class FilingFactory:
             except ImportError:
                 logger.warning("Jinja2 unavailable; returning raw template.")
                 return dict(row)["content"]
-        return f"[Body for {spec.filing_type.value}: {spec.title}]\n\n[ANDREW_REQUIRED]"
+        logger.warning(
+            "No body_text or template for filing '%s' (%s) — generating skeleton",
+            spec.title, spec.filing_type.value,
+        )
+        return (
+            f"## {spec.title}\n\n"
+            f"Filing type: {spec.filing_type.value}\n\n"
+            "### Statement of Facts\n\n"
+            "(Provide factual basis from evidence records.)\n\n"
+            "### Legal Argument\n\n"
+            "(Cite applicable Michigan Court Rules and statutes.)\n\n"
+            "### Relief Requested\n\n"
+            "(State the specific relief sought from the Court.)\n"
+        )
 
     def _load_parties(self, case_id: int) -> list[str]:
         """Load opposing party names for COS generation."""

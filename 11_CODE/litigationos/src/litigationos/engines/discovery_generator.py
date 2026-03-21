@@ -276,6 +276,35 @@ class DiscoveryGenerator:
             (case_number,),
         )
 
+    def _get_next_hearing(self, case_number: str) -> str | None:
+        """Look up the next scheduled hearing date from the deadlines table."""
+        rows = self._query(
+            "SELECT due_date_iso FROM deadlines "
+            "WHERE vehicle_name = ? AND status != 'completed' "
+            "AND (description LIKE '%hearing%' OR description LIKE '%Hearing%' "
+            "     OR category LIKE '%hearing%') "
+            "AND due_date_iso >= date('now') "
+            "ORDER BY due_date_iso ASC LIMIT 1",
+            (case_number,),
+        )
+        if rows:
+            return dict(rows[0]).get("due_date_iso")
+        # Fallback: try docket_events table for scheduled hearings
+        rows = self._query(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name='docket_events'"
+        )
+        if rows:
+            hearing_rows = self._query(
+                "SELECT event_date FROM docket_events "
+                "WHERE case_number = ? AND event_type LIKE '%hearing%' "
+                "AND event_date >= date('now') "
+                "ORDER BY event_date ASC LIMIT 1",
+                (case_number,),
+            )
+            if hearing_rows:
+                return dict(hearing_rows[0]).get("event_date")
+        return None
+
     # -- Document generators -------------------------------------------------
 
     def generate_interrogatories(
@@ -611,7 +640,7 @@ class DiscoveryGenerator:
             Markdown document template string.
         """
         case_number = CASE_NUMBERS.get("A", "")
-        hearing_text = hearing_date or "[HEARING DATE — VERIFY]"
+        hearing_text = hearing_date or self._get_next_hearing(case_number) or "TO BE DETERMINED BY THE COURT"
         production_date = _deadline_date(14)
 
         doc = _caption(case_number, "Subpoena Duces Tecum")

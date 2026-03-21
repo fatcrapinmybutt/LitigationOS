@@ -2,6 +2,7 @@
 
 from litigationos.engines.branding import BrandingEngine
 from litigationos.engines.authority_chain import AuthorityChainEngine
+from litigationos.engines.dashboard import DashboardEngine
 from litigationos.engines.ai_legal_brain import LegalAIBrain
 from litigationos.engines.autonomous_income import AutonomousIncomeEngine
 from litigationos.engines.case_engine import CaseEngine
@@ -18,6 +19,7 @@ from litigationos.engines.legal_knowledge import LegalKnowledgeEngine
 from litigationos.engines.license_manager import LicenseManager
 from litigationos.engines.monetization import MonetizationEngine
 from litigationos.engines.motion_templates import MotionTemplateEngine
+from litigationos.engines.emergency_motions import EmergencyMotionEngine
 from litigationos.engines.notifications import NotificationEngine
 from litigationos.engines.onboarding import OnboardingEngine
 from litigationos.engines.pdf_production import (
@@ -40,10 +42,12 @@ from litigationos.engines.mcp_bridge import MCPBridge
 from litigationos.engines.rag import RAGEngine
 from litigationos.engines.security import SecurityEngine
 from litigationos.engines.settings import SettingsEngine
+from litigationos.engines.witness_prep import WitnessEngine
 
 __all__ = [
     "BrandingEngine",
     "AuthorityChainEngine",
+    "DashboardEngine",
     "AutonomousIncomeEngine",
     "LegalAIBrain",
     "CaseEngine",
@@ -62,11 +66,13 @@ __all__ = [
     "MCPBridge",
     "MonetizationEngine",
     "MotionTemplateEngine",
+    "EmergencyMotionEngine",
     "NotificationEngine",
     "OnboardingEngine",
     "RAGEngine",
     "SecurityEngine",
     "SettingsEngine",
+    "WitnessEngine",
     # PDF Production functions
     "assemble_filing_package",
     "create_exhibit_cover",
