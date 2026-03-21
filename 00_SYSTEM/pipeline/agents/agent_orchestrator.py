@@ -263,6 +263,52 @@ TIER_DEPENDENCIES = {
     "convergence": ["tierL"],
 }
 
+# Configurable worker counts per tier
+TIER_WORKERS: Dict[str, int] = {
+    "tier1": 2, "tier2": 2, "tier3": 2,
+    "tierJ": 3, "tierK": 3, "tierL": 3,
+    "convergence": 2,
+}
+
+
+class TierCircuitBreaker:
+    """Halts a tier after N consecutive agent failures to prevent cascade waste."""
+
+    def __init__(self, threshold: int = 3):
+        self._threshold = threshold
+        self._tier_failures: Dict[str, int] = {}
+        self._open_tiers: set = set()
+
+    def record_success(self, tier: str) -> None:
+        self._tier_failures[tier] = 0
+
+    def record_failure(self, tier: str) -> bool:
+        """Record failure. Returns True if circuit just opened."""
+        self._tier_failures[tier] = self._tier_failures.get(tier, 0) + 1
+        if self._tier_failures[tier] >= self._threshold and tier not in self._open_tiers:
+            self._open_tiers.add(tier)
+            print(f"  [CIRCUIT_BREAKER] Tier {tier} halted after {self._tier_failures[tier]} failures")
+            return True
+        return False
+
+    def is_open(self, tier: str) -> bool:
+        return tier in self._open_tiers
+
+    def reset(self, tier: str) -> None:
+        self._tier_failures.pop(tier, None)
+        self._open_tiers.discard(tier)
+
+    def snapshot(self) -> Dict[str, dict]:
+        """Return per-tier failure counts and open status."""
+        tiers = set(list(self._tier_failures.keys()) + list(self._open_tiers))
+        return {t: {"consecutive_failures": self._tier_failures.get(t, 0),
+                     "circuit_open": t in self._open_tiers} for t in tiers}
+
+
+# Module-level singletons
+_circuit_breaker = TierCircuitBreaker(threshold=3)
+_message_bus_stats: Dict[str, int] = {"sent": 0, "delivered": 0, "pending": 0}
+
 
 def _verify_cross_lane_data(db_path: Path, all_results: dict):
     """Cross-lane synchronization barrier.
@@ -328,21 +374,31 @@ def run_tier(tier: str, max_workers: int = 4, dry_run: bool = False) -> List[Age
 
     results: List[AgentResult] = []
     max_retries = 2
+    workers = TIER_WORKERS.get(tier, max_workers)
 
-    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+    with ThreadPoolExecutor(max_workers=workers) as pool:
         futures = {pool.submit(a.run): a for a in agents}
         for future in as_completed(futures):
+            if _circuit_breaker.is_open(tier):
+                for f in futures:
+                    f.cancel()
+                break
             agent = futures[future]
             try:
                 result = future.result()
                 results.append(result)
                 status_icon = "✓" if result.status == "SUCCESS" else "✗"
                 print(f"  {status_icon} {result}")
+                if result.status == "SUCCESS":
+                    _circuit_breaker.record_success(tier)
+                else:
+                    _circuit_breaker.record_failure(tier)
             except Exception as e:
                 print(f"  ✗ {agent.agent_id}: EXCEPTION: {e}")
                 from .agent_models import AgentStats
                 results.append(AgentResult(agent.agent_id, "CRASH",
                                            AgentStats(), error=str(e)))
+                _circuit_breaker.record_failure(tier)
 
     # Retry failed agents (up to max_retries times)
     for retry_round in range(1, max_retries + 1):
@@ -388,7 +444,14 @@ def run_tier(tier: str, max_workers: int = 4, dry_run: bool = False) -> List[Age
     if success_rate < 0.5:
         print(f"\n  ⚠ WARNING: Tier {tier} success rate {success_rate:.0%} < 50%")
         print(f"    Only {total_processed} items processed across {success_count}/{len(results)} agents")
-    
+
+    # Route inter-agent messages after tier execution
+    sent = sum(len(a._outbox) for a in agents if hasattr(a, '_outbox') and a._outbox)
+    _message_bus_stats["sent"] += sent
+    delivered = route_messages(agents, results)
+    _message_bus_stats["delivered"] += delivered
+    _message_bus_stats["pending"] += max(0, sent - delivered)
+
     return results
 
 
@@ -622,6 +685,54 @@ def adaptive_workers(tier: str, health_history: dict) -> int:
             base = max(2, base - 1)
 
     return base
+
+
+def get_fleet_health() -> dict:
+    """Return a structured health snapshot of the fleet from the last run."""
+    report_path = CHECKPOINT_DIR / "fleet_report.json"
+    report: dict = {}
+    if report_path.exists():
+        try:
+            report = json.loads(report_path.read_text())
+        except (json.JSONDecodeError, OSError):
+            pass
+
+    tiers_detail: Dict[str, dict] = {}
+    total_agents = total_passed = total_failed = 0
+
+    for tier_id, agents_list in report.get("tiers", {}).items():
+        passed = sum(1 for a in agents_list if a.get("status") == "SUCCESS")
+        failed = len(agents_list) - passed
+        cb_snap = _circuit_breaker.snapshot()
+        tiers_detail[tier_id] = {
+            "agents_run": len(agents_list),
+            "agents_passed": passed,
+            "agents_failed": failed,
+            "circuit_open": cb_snap.get(tier_id, {}).get("circuit_open", False),
+        }
+        total_agents += len(agents_list)
+        total_passed += passed
+        total_failed += failed
+
+    if total_agents == 0:
+        health = "HEALTHY"
+    elif total_failed == 0:
+        health = "HEALTHY"
+    elif total_passed / total_agents >= 0.7:
+        health = "HEALTHY"
+    elif total_passed / total_agents >= 0.3:
+        health = "DEGRADED"
+    else:
+        health = "CRITICAL"
+
+    return {
+        "tiers": tiers_detail,
+        "total_agents": total_agents,
+        "total_passed": total_passed,
+        "total_failed": total_failed,
+        "overall_health": health,
+        "message_bus_stats": dict(_message_bus_stats),
+    }
 
 
 # =========================================

@@ -140,9 +140,14 @@ class Agent9999(ABC):
         self._plan_lock = Lock()
         # Quality tracking (auto-computed at end of run)
         self._quality: Optional[QualityScore] = None
+        self._quality_history: list = []  # last 5 quality scores for trend tracking
         # Findings accumulator (key evidence/results to pass upstream)
         self._findings: List[dict] = []
         self._findings_lock = Lock()
+        # Self-healing: known error patterns from past runs
+        self._known_error_patterns: set = set()
+        # Performance profiling: phase timing
+        self._timing: dict = {}
 
     # =========================================
     # CONTEXT HANDOFF PROTOCOL
@@ -220,12 +225,16 @@ class Agent9999(ABC):
         self._main_thread_id = threading.get_ident()
         self._log("BOOT", f"Agent {self.agent_id} initializing")
         try:
+            self._mark_time("setup_start")
             self._connect_db()
             self._ensure_base_tables()
             self._ensure_tables()
             self._load_checkpoint()
             self._validate_preconditions()
+            self._self_heal()
+            self._mark_time("setup_end")
 
+            self._mark_time("process_start")
             items = self._get_work_items()
             self.stats.total = len(items)
             self._log("WORK", f"{self.stats.total} items to process")
@@ -241,11 +250,14 @@ class Agent9999(ABC):
                 self._run_parallel(pending)
             else:
                 self._run_sequential(pending)
+            self._mark_time("process_end")
 
             self._save_checkpoint()
             self._finalize()
             self._flush_log()
             self._quality = self._compute_quality()
+            self._quality_history.append(self._quality.overall if self._quality else 0.0)
+            self._quality_history = self._quality_history[-5:]
             self._log("DONE", f"{self.stats} {self._quality or ''}")
 
             # Determine status: PARTIAL if significant errors but some success
@@ -969,6 +981,46 @@ class Agent9999(ABC):
         """Recall past error memories for self-healing. Convenience wrapper."""
         return self.recall(category='error', limit=limit)
 
+    def _self_heal(self) -> None:
+        """Load past error patterns so the agent can skip/handle known-bad items.
+        Called automatically in run() before processing starts."""
+        try:
+            past_errors = self.recall_errors(limit=10)
+            for err in past_errors:
+                val = err.get("value", "")
+                if isinstance(val, str) and val:
+                    # Extract file paths and exception types as patterns
+                    for token in val.replace("\\", "/").split():
+                        if "/" in token or "Error" in token or "Exception" in token:
+                            self._known_error_patterns.add(token.strip(":'\""))
+            if self._known_error_patterns:
+                self._log("HEAL", f"Loaded {len(self._known_error_patterns)} known error patterns")
+        except Exception as e:
+            self._log("WARN", f"Self-heal load failed: {e}")
+
+    # =========================================
+    # PERFORMANCE PROFILING
+    # =========================================
+    def _mark_time(self, phase: str) -> None:
+        """Record a timestamp for a named phase."""
+        self._timing[phase] = time.time()
+
+    def _profile_run(self) -> dict:
+        """Return timing breakdown from recorded phase marks and stats."""
+        t = self._timing
+        total = self.stats.elapsed
+        setup_time = t.get("setup_end", 0) - t.get("setup_start", 0) if "setup_end" in t else 0.0
+        process_time = t.get("process_end", 0) - t.get("process_start", 0) if "process_end" in t else 0.0
+        db_time = total - setup_time - process_time
+        items_per_sec = self.stats.processed / max(process_time, 0.001) if process_time > 0 else 0.0
+        return {
+            "setup_time": round(setup_time, 3),
+            "process_time": round(process_time, 3),
+            "db_time": round(max(db_time, 0.0), 3),
+            "total_time": round(total, 3),
+            "items_per_sec": round(items_per_sec, 2),
+        }
+
     # =========================================
     # DB-BACKED CHECKPOINTING
     # =========================================
@@ -1040,6 +1092,8 @@ class Agent9999(ABC):
     # =========================================
     def _compute_quality(self) -> QualityScore:
         """Auto-compute quality score from AgentStats.
+        Factors: completeness, accuracy, throughput, coverage,
+        error diversity penalty, memory efficiency penalty.
         Subclasses can override for domain-specific scoring."""
         s = self.stats
         done = s.processed + s.skipped + s.errored
@@ -1048,6 +1102,21 @@ class Agent9999(ABC):
         accuracy = 1.0 - (s.errored / max(done, 1))
         throughput = min(1.0, s.rate / max(self._expected_rate(), 0.001))
         coverage = s.processed / max(s.total, 1)
+
+        # Error diversity: many distinct error types is worse than one repeated error
+        error_types = set()
+        for entry in self._log_buffer:
+            if entry.get("level") == "ERROR":
+                detail = entry.get("detail", "")
+                etype = detail.split(":")[0] if ":" in detail else detail[:40]
+                error_types.add(etype)
+        if s.errored > 0 and len(error_types) > 1:
+            diversity_penalty = min(0.1, 0.02 * len(error_types))
+            accuracy = max(0.0, accuracy - diversity_penalty)
+
+        # Memory efficiency: penalize if peak memory is excessive (>500MB)
+        mem_penalty = min(1.0, s.peak_memory_mb / 500.0) * 0.05
+        throughput = max(0.0, throughput - mem_penalty)
 
         return QualityScore(
             completeness=round(completeness, 3),
@@ -1107,6 +1176,23 @@ class Agent9999(ABC):
         with self._findings_lock:
             self._findings.append(finding)
         self.send_message("*", "finding", finding, priority=3)
+
+    def add_finding(self, finding_type: str, content: str, **kwargs) -> dict:
+        """Convenience method to record a finding without broadcasting."""
+        finding = {
+            "type": finding_type, "content": content,
+            "agent_id": self.agent_id, "ts": time.time(), **kwargs
+        }
+        with self._findings_lock:
+            self._findings.append(finding)
+        return finding
+
+    def get_findings(self, finding_type: Optional[str] = None) -> list:
+        """Retrieve accumulated findings, optionally filtered by type."""
+        with self._findings_lock:
+            if finding_type:
+                return [f for f in self._findings if f.get("type") == finding_type]
+            return list(self._findings)
 
     # =========================================
     # OMEGA v2.0: PLAN-AND-EXECUTE PATTERN

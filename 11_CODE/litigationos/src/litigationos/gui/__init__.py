@@ -1,5 +1,6 @@
 """GUI package — CustomTkinter desktop interface for LitigationOS."""
 
+from litigationos.gui.agent_dashboard_screen import AgentDashboardFrame
 from litigationos.gui.calendar_view import CalendarViewFrame
 from litigationos.gui.deadline_dashboard import DeadlineDashboardFrame
 from litigationos.gui.document_editor import DocumentEditorFrame
@@ -12,6 +13,7 @@ from litigationos.gui.legal_brain_screen import LegalBrainFrame
 from litigationos.gui.pdf_studio_screen import PDFStudioFrame
 
 __all__ = [
+    "AgentDashboardFrame",
     "CalendarViewFrame",
     "DeadlineDashboardFrame",
     "DocumentEditorFrame",
