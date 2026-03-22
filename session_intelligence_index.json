@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-22T08:36:04.310628",
+    "database": "session-store.db",
+    "database_size_mb": 19.4,
+    "queries_executed": 6,
+    "total_unique_facts": 135
+  },
+  "critical_corrections": {
+    "python_issues": [
+      "Python 3.14 f-strings with escaped quotes FAIL - write to .py files",
+      "pydantic v1 broken on Python 3.14 (ConfigError)",
+      "Pillow 10.4.0 no Python 3.14 support",
+      "Always use: py -3.14 launcher (not python command)",
+      "Works: FAISS, LanceDB, OCRmyPDF"
+    ],
+    "powershell_issues": [
+      "Sync mode dies on file system traversal",
+      "Use async mode for interactive/long-running commands",
+      "Rclone, package install, anything >10s use async"
+    ],
+    "bom_bug": {
+      "cause": "Set-Content -Encoding UTF8 adds BOM header",
+      "symptom": "import failures despite file existing",
+      "fix": "Use Set-Content -Encoding ASCII OR programmatic UTF-8"
+    }
+  },
+  "database_schema_corrections": {
+    "deadlines": {
+      "title": "NOT description",
+      "basis": "NOT forum"
+    },
+    "filing_readiness": {
+      "total_score": "NOT readiness_score",
+      "status": "NOT risks"
+    },
+    "impeachment_items": {
+      "item_type": "NOT category",
+      "speaker": "NOT target",
+      "statement": "NOT description",
+      "contradicting_source": "NOT evidence_source",
+      "note": "NO severity_score column"
+    },
+    "adversary_harm_summary": {
+      "adversary": "NOT adversary_name"
+    }
+  },
+  "workflow_patterns": {
+    "autonomous_execution": [
+      "Ask clarifying questions first (scope, LLM, GPU, timeline)",
+      "Deploy 5+ parallel background agents (independent tasks)",
+      "Execute in 14-phase checkpoints with documentation",
+      "Dispatch agent-13 to background, main session continues"
+    ],
+    "14_phase_structure": [
+      "Phase 0: Compliance",
+      "Phase 2: Infrastructure",
+      "Phase 3-12: Features",
+      "Phase 13: Onboarding"
+    ],
+    "evidence_pipeline": [
+      "Discover (file scan)",
+      "Extract Harms (NER)",
+      "Dedup by Adversary",
+      "Build Timeline",
+      "Map to Vehicles"
+    ]
+  },
+  "filing_requirements": {
+    "canonical_stack_order": [
+      "Motion document (argument)",
+      "Proposed Order (relief)",
+      "Notice of Hearing (if required)",
+      "Affidavit (sworn testimony)",
+      "SCAO Approved Court Form",
+      "Exhibits A, B, C, D (labeled cover pages)",
+      "Exhibit Index (clerk reference)"
+    ],
+    "service_defects": {
+      "note": "PPO Show Cause #3 dismissed (improper service)",
+      "critical": "Service defect = grounds for dismissal",
+      "always_document": "date, time, method, recipient"
+    },
+    "compliance": "Michigan Court Rules (MCR), MCL, Benchbook, Proof of Service"
+  },
+  "technology_stack": {
+    "languages": {
+      "python": "3.14.3 (use py -3.14)",
+      "node": "v25.6.0",
+      "npm": "11.9.0"
+    },
+    "tools": {
+      "ollama": "0.16.1 (models: deepseek-r1, mistral, qwen3, gpt-oss)",
+      "copilot_cli": "0.0.410",
+      "gemini_cli": "0.28.2",
+      "rclone": "v1.73.1"
+    },
+    "libraries": [
+      "rapidfuzz",
+      "regex",
+      "dateparser",
+      "scikit-learn",
+      "textblob",
+      "whoosh",
+      "numpy 2.4.2",
+      "pandas 3.0.0",
+      "pdfplumber 0.11.9",
+      "PyPDF2"
+    ],
+    "hardware": {
+      "gpu": "AMD Vega 8 (2GB VRAM - too small for large models)",
+      "storage": "C: ~14GB free, D: ~18.41GB free",
+      "os": "Windows 10/11, PowerShell 7"
+    },
+    "database": {
+      "primary": "SQLite (1.1GB litigation_context.db)",
+      "search": "FAISS (308K vectors, 474.2MB)"
+    }
+  },
+  "user_directives": {
+    "always": [
+      "Autonomous max power (parallel agents, full authority)",
+      "Complete 100% (no stone unturned)",
+      "Apex quality (converged, emergent, legally correct)",
+      "Peak performance audited"
+    ],
+    "never": [
+      "Use cloud APIs (local-only AI)",
+      "Assume cloud services",
+      "Use outdated legal frameworks",
+      "Accept service violations"
+    ],
+    "preferences": [
+      "Open-source LLM only",
+      "Solo developer timeline",
+      "MANBEARPIG LLM integrated with Copilot",
+      "Pull past sessions on launch",
+      "Extract ALL harms, organize by defendant",
+      "ChatGPT conversations = gold standard for facts"
+    ]
+  },
+  "case_intelligence": {
+    "case_name": "Pigors v. Watson",
+    "cases": [
+      "2024-001507-DC (custody)",
+      "2023-5907-PP (PPO)"
+    ],
+    "courts": [
+      "14th Circuit (Muskegon)",
+      "COA (366810)",
+      "JTC",
+      "MSC",
+      "USDC W.D. Michigan"
+    ],
+    "judge": "Hon. Jenny L. McNeill (ALERT: jailing without evidence, muted 3x)",
+    "strength": "9/10 (755+ docs, 26+ violations)",
+    "key_harms": [
+      "Parenting time withholding (Oct 20 - Nov 15, 2024)",
+      "PPO service defects (#3 dismissed)",
+      "Jailing for yelling without evidence (APPEALABLE)",
+      "Judicial misconduct (muting in hearing)",
+      "Watson family assault at exchange"
+    ],
+    "adversaries": {
+      "watson_family": [
+        "Emily",
+        "Albert",
+        "Cody",
+        "Lori"
+      ],
+      "housing": [
+        "Shady Oaks",
+        "Homes of America",
+        "Alden Global"
+      ],
+      "judicial": [
+        "Judge McNeill",
+        "Pamela Rusco",
+        "Mandi Martini"
+      ]
+    },
+    "viable_claims": "37+ across 22 vehicles (appellate, misconduct, trial, federal 1983)"
+  },
+  "preventive_measures": {
+    "code_quality": [
+      "Document py -3.14 launcher in all scripts",
+      "Add import smoke tests after file creation",
+      "Validate DB schema before writes",
+      "Disable progress bars in batch (env vars)"
+    ],
+    "filing_quality": [
+      "Always verify service (date/time/method/recipient)",
+      "Always check SCAO forms current year",
+      "Always use canonical stack checklist",
+      "Always document violations by adversary"
+    ],
+    "data_quality": [
+      "Always dedup evidence (use symlinks)",
+      "Always create timeline visualization",
+      "Always organize by defendant separately",
+      "Always verify FK constraints before insert"
+    ]
+  },
+  "quick_wins": [
+    "Commit database schema as single source of truth",
+    "Default to async mode for PowerShell >10s",
+    "Batch FAISS: 2K rows/query, 256/encode, truncate 512 chars",
+    "Enable WAL mode on large DBs",
+    "Test queries on sample data first"
+  ]
+}
