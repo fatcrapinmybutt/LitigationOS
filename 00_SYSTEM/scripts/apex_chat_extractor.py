@@ -42,6 +42,7 @@ DEFAULT_DB = r"C:\Users\andre\LitigationOS\00_SYSTEM\brains\chat_intelligence_br
 DEFAULT_MANIFEST = r"C:\Users\andre\LitigationOS\temp\_unique_manifest.json"
 BATCH_SIZE = 5000
 PROGRESS_INTERVAL = 100
+MAX_TREE_NODES = 50000  # Safety limit for conversation tree traversal
 SOURCE_PLATFORM = "chatgpt"
 EXTRACTION_METHOD = "apex_chat_extractor_v1"
 
@@ -285,6 +286,8 @@ def walk_conversation_tree(mapping: dict) -> list[dict]:
         if node_id in visited or node_id not in mapping:
             continue
         visited.add(node_id)
+        if len(visited) > MAX_TREE_NODES:
+            break  # Safety limit for pathological trees
 
         node = mapping[node_id]
         msg = node.get("message")
@@ -507,6 +510,20 @@ def process_file(
     if not dry_run:
         log_id = log_extraction_start(conn, file_path, fingerprint)
 
+    # Pre-load already-extracted conversation IDs for resume capability
+    existing_conv_ids = set()
+    if not dry_run:
+        try:
+            rows = conn.execute(
+                "SELECT DISTINCT conversation_id FROM chat_intelligence WHERE file_source = ?",
+                (file_path,),
+            ).fetchall()
+            existing_conv_ids = {r[0] for r in rows}
+            if existing_conv_ids:
+                print(f"  Resume mode: {len(existing_conv_ids):,} conversations already extracted, will skip them")
+        except Exception:
+            pass
+
     start_time = time.time()
 
     try:
@@ -517,6 +534,11 @@ def process_file(
                     stats["conversations"] += 1
                     conv_id = conversation.get("id") or conversation.get("title", f"conv_{conv_idx}")
                     title = conversation.get("title") or ""
+
+                    # Skip already-extracted conversations (resume support)
+                    if str(conv_id) in existing_conv_ids:
+                        continue
+
                     mapping = conversation.get("mapping") or {}
                     conv_create = conversation.get("create_time")
 
