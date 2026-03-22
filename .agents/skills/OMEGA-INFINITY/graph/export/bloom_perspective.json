@@ -1,0 +1,112 @@
+{
+  "name": "Michigan Litigation \u2014 OMEGA-INFINITY",
+  "version": "2.0",
+  "categories": [
+    {
+      "label": "Case",
+      "color": "#1E3A5F",
+      "size": 1.0,
+      "caption": "{id}"
+    },
+    {
+      "label": "Lane",
+      "color": "#F9A825",
+      "size": 1.0,
+      "caption": "{id}"
+    },
+    {
+      "label": "Party",
+      "color": "#37474F",
+      "size": 1.0,
+      "caption": "{name}"
+    },
+    {
+      "label": "Judge",
+      "color": "#880E4F",
+      "size": 1.0,
+      "caption": "{name}"
+    },
+    {
+      "label": "Attorney",
+      "color": "#546E7A",
+      "size": 1.0,
+      "caption": "{name}"
+    },
+    {
+      "label": "Evidence",
+      "color": "#1565C0",
+      "size": 3.0,
+      "caption": "{id}"
+    },
+    {
+      "label": "Filing",
+      "color": "#2E7D32",
+      "size": 1.5,
+      "caption": "{id}"
+    },
+    {
+      "label": "Form",
+      "color": "#00695C",
+      "size": 2.0,
+      "caption": "{id}"
+    },
+    {
+      "label": "Rule",
+      "color": "#4E342E",
+      "size": 2.0,
+      "caption": "{id}"
+    },
+    {
+      "label": "Violation",
+      "color": "#C62828",
+      "size": 3.0,
+      "caption": "{id}"
+    },
+    {
+      "label": "Witness",
+      "color": "#6A1B9A",
+      "size": 1.5,
+      "caption": "{name}"
+    },
+    {
+      "label": "Event",
+      "color": "#00838F",
+      "size": 3.0,
+      "caption": "{id}"
+    },
+    {
+      "label": "Exhibit",
+      "color": "#FF6F00",
+      "size": 3.0,
+      "caption": "{id}"
+    },
+    {
+      "label": "BestInterestFactor",
+      "color": "#AD1457",
+      "size": 3.0,
+      "caption": "{id}"
+    }
+  ],
+  "searchPhrases": [
+    {
+      "name": "All evidence for a lane",
+      "cypher": "MATCH (e:Evidence)-[:EVIDENCE_IN_LANE]->(l:Lane {code: $lane}) RETURN e, l LIMIT 200"
+    },
+    {
+      "name": "Judicial violations",
+      "cypher": "MATCH (j:Judge)-[:HAS_VIOLATION]->(v:Violation) RETURN j, v LIMIT 200"
+    },
+    {
+      "name": "Filing dependencies",
+      "cypher": "MATCH (f:Filing)-[:USES_FORM]->(form:Form) RETURN f, form"
+    },
+    {
+      "name": "Case parties",
+      "cypher": "MATCH (c:Case)-[:INVOLVES_PARTY]->(p:Party) RETURN c, p"
+    },
+    {
+      "name": "Timeline",
+      "cypher": "MATCH (e1:Event)-[:NEXT_EVENT]->(e2:Event) RETURN e1, e2 LIMIT 100"
+    }
+  ]
+}
