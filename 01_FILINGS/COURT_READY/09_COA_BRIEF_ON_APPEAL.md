@@ -70,7 +70,7 @@ Email: andrewjpigors@gmail.com
 | *Fletcher v Fletcher* | 447 Mich 871, 876–881; 526 NW2d 889 (1994) | 4–5 |
 | *Harvey v Harvey* | 470 Mich 186, 191–193; 680 NW2d 835 (2004) | 4, 15, 18 |
 | *Hunter v Hunter* | 484 Mich 247, 265–268; 771 NW2d 694 (2009) | 28, 29, 35 |
-| *In re Contempt of Henry* | 282 Mich App 656, 668; 765 NW2d 44 (2009) | 28, 35 |
+| *In re Contempt of Henry* | 282 Mich App 656, 668; 766 NW2d 44 (2009) | 28, 35 |
 | *In re Sanders* | 495 Mich 394, 404–412; 852 NW2d 524 (2014) | 4, 5, 24, 25 |
 | *Lieberman v Orr* | 319 Mich App 68, 78–87; 900 NW2d 130 (2017) | 15, 16, 18 |
 | *People v Yost* | 278 Mich App 341, 356; 749 NW2d 753 (2008) | 21 |
@@ -437,7 +437,7 @@ This Court should:
 
 #### A. Law
 
-Domestic-relationship PPOs are governed by MCL 600.2950 and associated rules. When a court uses contempt powers to enforce a PPO, that contempt is criminal in nature and must satisfy criminal-procedure safeguards, including proof beyond a reasonable doubt and the right to be present and defend. *In re Contempt of Henry*, 282 Mich App 656, 668; 765 NW2d 44 (2009).
+Domestic-relationship PPOs are governed by MCL 600.2950 and associated rules. When a court uses contempt powers to enforce a PPO, that contempt is criminal in nature and must satisfy criminal-procedure safeguards, including proof beyond a reasonable doubt and the right to be present and defend. *In re Contempt of Henry*, 282 Mich App 656, 668; 766 NW2d 44 (2009).
 
 MCR 3.708 governs PPO enforcement and contempt. It requires notice, a show-cause hearing, and proof of a knowing violation of a valid PPO before criminal contempt sanctions may be imposed. It does **not** authorize using PPO violations as an informal vehicle to restructure custody or parenting time outside the Child Custody Act.
 

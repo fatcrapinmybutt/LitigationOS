@@ -3902,13 +3902,13 @@ schedule**
   > ION_OSvariousparts/COA_APPLICATION_LEAVE_BRIEF_PIGORS_v_WATSON_20260209.md:L88` — On April 1, 2024, Appellant filed a custody complaint seeking joint legal custody and established parenting time. (Exhibit C: Complaint, Case 2024-001507-DC). Appellee immediately responded with an ex parte motion to s
 
 - **physical custody**
-  > staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L470` — "Line": "1. The Defendant, Emily Watson, has sole physical custody of the minor child, Lincoln Watson, and sole legal custody of the minor child, Lincoln Watson. The Plaintiff, Andrew Pigors, has pare
+  > staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L470` — "Line": "1. The Defendant, Emily Watson, has sole physical custody of the minor child, L.D.W. (minor child, born November 9, 2022), and sole legal custody of the minor child, L.D.W.. The Plaintiff, Andrew Pigors, has pare
 
 - **Parenting schedule**
   > and telephone no. - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/FORMS_INVENTORY.md:L25` — | FOC 6 | Motion About Parenting Time | Parenting schedule changes | Modify custody/access | - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc46.pdf:L23` —
 
 - **weekend**
-  > Watson, and sole legal custody of the minor child, Lincoln Watson. The Plaintiff, Andrew Pigors, has parenting time with the minor child every other weekend, from Friday at 5:30PM to Sunday at 5:30 pm and every other weekend in the summer from Fri", - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_O
+  > Watson, and sole legal custody of the minor child, L.D.W.. The Plaintiff, Andrew Pigors, has parenting time with the minor child every other weekend, from Friday at 5:30PM to Sunday at 5:30 pm and every other weekend in the summer from Fri", - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_O
 
 - **Holiday**
   > NALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L757` — "Line": "Legend: 🔵 Police | 🟢 Watson family | 🔴 PPO/Court (opposing) | 🟡 Custody/PT | 🟠 Holiday | 🟣 Misc | 🟪 User (Andrew) Filing | 🟧 AppClose", - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.jso
@@ -3929,13 +3929,13 @@ schedule**
   > ION_OSvariousparts/COA_APPLICATION_LEAVE_BRIEF_PIGORS_v_WATSON_20260209.md:L88` — On April 1, 2024, Appellant filed a custody complaint seeking joint legal custody and established parenting time. (Exhibit C: Complaint, Case 2024-001507-DC). Appellee immediately responded with an ex parte motion to s
 
 - **physical custody**
-  > staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L470` — "Line": "1. The Defendant, Emily Watson, has sole physical custody of the minor child, Lincoln Watson, and sole legal custody of the minor child, Lincoln Watson. The Plaintiff, Andrew Pigors, has pare
+  > staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L470` — "Line": "1. The Defendant, Emily Watson, has sole physical custody of the minor child, L.D.W., and sole legal custody of the minor child, L.D.W.. The Plaintiff, Andrew Pigors, has pare
 
 - **Parenting schedule**
   > and telephone no. - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/FORMS_INVENTORY.md:L25` — | FOC 6 | Motion About Parenting Time | Parenting schedule changes | Modify custody/access | - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc46.pdf:L23` —
 
 - **weekend**
-  > Watson, and sole legal custody of the minor child, Lincoln Watson. The Plaintiff, Andrew Pigors, has parenting time with the minor child every other weekend, from Friday at 5:30PM to Sunday at 5:30 pm and every other weekend in the summer from Fri", - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_O
+  > Watson, and sole legal custody of the minor child, L.D.W.. The Plaintiff, Andrew Pigors, has parenting time with the minor child every other weekend, from Friday at 5:30PM to Sunday at 5:30 pm and every other weekend in the summer from Fri", - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_O
 
 - **Holiday**
   > NALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L757` — "Line": "Legend: 🔵 Police | 🟢 Watson family | 🔴 PPO/Court (opposing) | 🟡 Custody/PT | 🟠 Holiday | 🟣 Misc | 🟪 User (Andrew) Filing | 🟧 AppClose", - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.jso
@@ -3956,13 +3956,13 @@ schedule**
   > ION_OSvariousparts/COA_APPLICATION_LEAVE_BRIEF_PIGORS_v_WATSON_20260209.md:L88` — On April 1, 2024, Appellant filed a custody complaint seeking joint legal custody and established parenting time. (Exhibit C: Complaint, Case 2024-001507-DC). Appellee immediately responded with an ex parte motion to s
 
 - **physical custody**
-  > staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L470` — "Line": "1. The Defendant, Emily Watson, has sole physical custody of the minor child, Lincoln Watson, and sole legal custody of the minor child, Lincoln Watson. The Plaintiff, Andrew Pigors, has pare
+  > staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L470` — "Line": "1. The Defendant, Emily Watson, has sole physical custody of the minor child, L.D.W., and sole legal custody of the minor child, L.D.W.. The Plaintiff, Andrew Pigors, has pare
 
 - **Parenting schedule**
   > and telephone no. - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/FORMS_INVENTORY.md:L25` — | FOC 6 | Motion About Parenting Time | Parenting schedule changes | Modify custody/access | - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/04_FORMS/SUPPORTING_FORMS/foc46.pdf:L23` —
 
 - **weekend**
-  > Watson, and sole legal custody of the minor child, Lincoln Watson. The Plaintiff, Andrew Pigors, has parenting time with the minor child every other weekend, from Friday at 5:30PM to Sunday at 5:30 pm and every other weekend in the summer from Fri", - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_O
+  > Watson, and sole legal custody of the minor child, L.D.W.. The Plaintiff, Andrew Pigors, has parenting time with the minor child every other weekend, from Friday at 5:30PM to Sunday at 5:30 pm and every other weekend in the summer from Fri", - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_O
 
 - **Holiday**
   > NALYSIS_OUTPUT/07_METRICS/case_facts_categorized.json:L757` — "Line": "Legend: 🔵 Police | 🟢 Watson family | 🔴 PPO/Court (opposing) | 🟡 Custody/PT | 🟠 Holiday | 🟣 Misc | 🟪 User (Andrew) Filing | 🟧 AppClose", - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_categorized.jso
@@ -4980,10 +4980,10 @@ time**
   > W the Plaintiff, Andrew Pigors, by and through his undersigned counsel, and moves this Honorable Court to dismiss the Defendant's objections to joint physical custody and parenting time, and in support thereof, states as follows:",baseline CHATGPT/Here are the.txt,10,Lincoln,1. This Court has previo
 
 - **Joint custody**
-  > joint physical custody serves the best interests of Lincoln Watson under Michigan law (MCL 722.23).,baseline CHATGPT/Here are the.txt,12,Lincoln,"3. Joint custody provides Lincoln Watson with the benefit of a balanced upbringing, involving both parents.",baseline CHATGPT/Here are the.txt,13,Andrew; 
+  > joint physical custody serves the best interests of L.D.W. under Michigan law (MCL 722.23).,baseline CHATGPT/Here are the.txt,12,Lincoln,"3. Joint custody provides L.D.W. with the benefit of a balanced upbringing, involving both parents.",baseline CHATGPT/Here are the.txt,13,Andrew; 
 
 - **legal custody**
-  > to Suspend Parenting Time, stating as follows: 1. The Defendant, Emily Watson, has sole physical custody of the minor child, Lincoln Watson, and sole legal custody of the minor child, Lincoln Watson. The Plaintiff, Andrew Pigors, has parenting time with the minor child every other weekend, from Frid
+  > to Suspend Parenting Time, stating as follows: 1. The Defendant, Emily Watson, has sole physical custody of the minor child, L.D.W., and sole legal custody of the minor child, L.D.W.. The Plaintiff, Andrew Pigors, has parenting time with the minor child every other weekend, from Frid
 
 - **parenting schedule**
   > Immediate ex parte dissolution of the August 8, 2025 parenting‑time suspension order.   2. Immediate reinstatement of a baseline every‑other‑weekend parenting schedule and      reasonable contact consistent with MCL 722.27a(1)–(2).   3. Scheduling of an evidentiary hearing within 21 days as required
@@ -5038,10 +5038,10 @@ time**
   > W the Plaintiff, Andrew Pigors, by and through his undersigned counsel, and moves this Honorable Court to dismiss the Defendant's objections to joint physical custody and parenting time, and in support thereof, states as follows:",baseline CHATGPT/Here are the.txt,10,Lincoln,1. This Court has previo
 
 - **Joint custody**
-  > joint physical custody serves the best interests of Lincoln Watson under Michigan law (MCL 722.23).,baseline CHATGPT/Here are the.txt,12,Lincoln,"3. Joint custody provides Lincoln Watson with the benefit of a balanced upbringing, involving both parents.",baseline CHATGPT/Here are the.txt,13,Andrew; 
+  > joint physical custody serves the best interests of L.D.W. under Michigan law (MCL 722.23).,baseline CHATGPT/Here are the.txt,12,Lincoln,"3. Joint custody provides L.D.W. with the benefit of a balanced upbringing, involving both parents.",baseline CHATGPT/Here are the.txt,13,Andrew; 
 
 - **legal custody**
-  > to Suspend Parenting Time, stating as follows: 1. The Defendant, Emily Watson, has sole physical custody of the minor child, Lincoln Watson, and sole legal custody of the minor child, Lincoln Watson. The Plaintiff, Andrew Pigors, has parenting time with the minor child every other weekend, from Frid
+  > to Suspend Parenting Time, stating as follows: 1. The Defendant, Emily Watson, has sole physical custody of the minor child, L.D.W., and sole legal custody of the minor child, L.D.W.. The Plaintiff, Andrew Pigors, has parenting time with the minor child every other weekend, from Frid
 
 - **parenting schedule**
   > Immediate ex parte dissolution of the August 8, 2025 parenting‑time suspension order.   2. Immediate reinstatement of a baseline every‑other‑weekend parenting schedule and      reasonable contact consistent with MCL 722.27a(1)–(2).   3. Scheduling of an evidentiary hearing within 21 days as required

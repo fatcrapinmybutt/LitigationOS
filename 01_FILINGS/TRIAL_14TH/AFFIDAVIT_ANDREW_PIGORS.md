@@ -8,7 +8,7 @@ Plaintiff / Father,
 
 v. Case No. 2024-001507-DC
 
-**TIFFANY EMILY WATSON,** Hon. [Assigned Judge]
+**Emily A. Watson,** Hon. [Assigned Judge]
 Defendant / Mother.
 
 ---
@@ -224,7 +224,7 @@ date for the entire 571+ day period — is attached as **Exhibit C**.)*
 
 ## IX. DEFENDANT'S PROFESSIONAL BACKGROUND
 
-28. Upon information and belief, Defendant Tiffany Emily Watson has been
+28. Upon information and belief, Defendant Emily A. Watson has been
     employed for approximately nine (9) years in the **Kent County
     Prosecutor's Office, Family Court Division**.
 

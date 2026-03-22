@@ -8,8 +8,7 @@ ANDREW J. PIGORS,                    Case No. _______________
 v.
 
 HON. JENNY L. MCNEILL, in her
-individual capacity; TIFFANY EMILY
-WATSON; JENNIFER L. BARNES;
+individual capacity; Emily A. Watson; JENNIFER L. BARNES;
 MUSKEGON COUNTY, a municipal entity,
     Defendants.
 ____________________________________________/
@@ -2211,7 +2210,7 @@ PARTY
 
 Quantified across Gardner/Warshak/Bernet frameworks:
 
-**Overall Score: 64/70 (91%) — SEVERE**
+**Documented Pattern: SEVERE — based on behavioral indicators under MCL 722.23(j)**
 
 This scoring satisfies the evidentiary foundation for expert testimony 
 under MRE 702 and supports a finding of severe parental alienation 

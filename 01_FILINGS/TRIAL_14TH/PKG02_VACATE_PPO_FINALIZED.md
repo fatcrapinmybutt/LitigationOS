@@ -7,7 +7,7 @@ ANDREW J. PIGORS,                    Case No. 2024-001507-DC
     
 v.
 
-TIFFANY EMILY WATSON (fka PIGORS),
+Emily A. Watson (fka PIGORS),
     Defendant/Mother.
 ____________________________________________/
 
@@ -27,7 +27,7 @@ Case No. 2023-5907-PP
 
 v.
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
 Petitioner/Respondent to Motion.
 
 Hon. Jenny L. McNeill
@@ -59,9 +59,9 @@ I, Andrew J. Pigors, being first duly sworn, depose and state as follows:
 
 ### THE PERSONAL PROTECTION ORDER
 
-5. In 2023, a Personal Protection Order was entered against me in this Court, Case No. 2023-5907-PP, upon the petition of Tiffany Emily Watson.
+5. In 2023, a Personal Protection Order was entered against me in this Court, Case No. 2023-5907-PP, upon the petition of Emily A. Watson.
 
-6. I contest the factual allegations underlying the PPO. I did not engage in acts of domestic violence against Tiffany Emily Watson as alleged in the PPO petition.
+6. I contest the factual allegations underlying the PPO. I did not engage in acts of domestic violence against Emily A. Watson as alleged in the PPO petition.
 
 7. The PPO was entered without a full adversarial evidentiary hearing at which I had a meaningful opportunity to confront witnesses, cross-examine the petitioner, and present evidence in my own defense.
 
@@ -69,13 +69,13 @@ I, Andrew J. Pigors, being first duly sworn, depose and state as follows:
 
 ### NO DOMESTIC VIOLENCE
 
-8. I have not committed any act of domestic violence against Tiffany Emily Watson at any time, either before or after the entry of the PPO.
+8. I have not committed any act of domestic violence against Emily A. Watson at any time, either before or after the entry of the PPO.
 
 9. Since the entry of the PPO, I have not engaged in any conduct that constitutes domestic violence as defined by MCL 600.2950(1), including but not limited to: physical harm, threats of physical harm, harassment, or stalking.
 
 10. No criminal charges for domestic violence have been filed against me at any time during the pendency of the PPO.
 
-11. No police reports involving domestic violence between myself and Tiffany Emily Watson have been generated during the pendency of the PPO.
+11. No police reports involving domestic violence between myself and Emily A. Watson have been generated during the pendency of the PPO.
 
 12. No personal protection order violations have resulted in criminal conviction.
 
@@ -109,7 +109,7 @@ I, Andrew J. Pigors, being first duly sworn, depose and state as follows:
 
 19. The following are specific instances in which the PPO has been used to prevent my involvement in Lincoln's life:
 
-(a) **Denial of parenting time.** I have made requests to see Lincoln, and those requests have been denied based on the existence of the PPO, even when the requested contact posed no risk to Tiffany Emily Watson's safety;
+(a) **Denial of parenting time.** I have made requests to see Lincoln, and those requests have been denied based on the existence of the PPO, even when the requested contact posed no risk to Emily A. Watson's safety;
 
 (b) **Interference with custody proceedings.** The existence of the PPO has been cited as a basis for restricting or denying custody and parenting time in related proceedings;
 
@@ -200,7 +200,7 @@ Case No. 2023-5907-PP
 
 v.
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
 Petitioner/Respondent to Motion.
 
 Hon. Jenny L. McNeill
@@ -287,7 +287,7 @@ Hon. Jenny L. McNeill
 
 ### A. Parties and the Minor Child
 
-1. Movant Andrew J. Pigors ("Movant" or "Father") and Petitioner Tiffany Emily Watson ("Petitioner" or "Mother") are the biological parents of Lincoln Pigors, born November 9, 2022. Lincoln is presently three years of age.
+1. Movant Andrew J. Pigors ("Movant" or "Father") and Petitioner Emily A. Watson ("Petitioner" or "Mother") are the biological parents of Lincoln Pigors, born November 9, 2022. Lincoln is presently three years of age.
 
 2. Father resides at 1977 Whitehall Rd, Lot 17, Laketon Township, Michigan 49445, and is reachable at (231) 903-5690.
 
@@ -605,7 +605,7 @@ Muskegon, MI 49442
 
 | Field | Information |
 |-------|-------------|
-| **Name:** | Tiffany Emily Watson |
+| **Name:** | Emily A. Watson |
 | **Address:** | c/o Attorney — see below |
 | **City, State, Zip:** | Muskegon County, MI |
 | **Attorney:** | Jennifer L. Barnes (Barnes Law Firm PLLC) |
@@ -738,7 +738,7 @@ Muskegon, MI 49442
 
 ---
 
-### TO:TIFFANY EMILY WATSON
+### TO:Emily A. Watson
 
 *Through her attorney:*
 Jennifer L. Barnes
@@ -805,7 +805,7 @@ The following documents accompany this Notice:
 
 ### SERVICE REQUIREMENTS
 
-This Notice of Hearing shall be served upon Respondent/Petitioner Tiffany Emily Watson (through counsel) in accordance with MCR 2.107 not less than 9 days before the hearing date, or as otherwise ordered by the Court.
+This Notice of Hearing shall be served upon Respondent/Petitioner Emily A. Watson (through counsel) in accordance with MCR 2.107 not less than 9 days before the hearing date, or as otherwise ordered by the Court.
 
 ---
 
@@ -858,7 +858,7 @@ Case No. 2023-5907-PP
 
 v.
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
 Petitioner/Respondent to Motion.
 
 Hon. Jenny L. McNeill
@@ -892,7 +892,7 @@ upon the following person(s) by the method(s) indicated:
 | **Firm:** | Barnes Law Firm PLLC |
 | **Address:** | 880 Jefferson St, Suite B |
 | | Muskegon, MI 49440 |
-| **On behalf of:** | Tiffany Emily Watson (Petitioner) |
+| **On behalf of:** | Emily A. Watson (Petitioner) |
 
 **Method of Service:** *(check one)*
 
@@ -941,7 +941,7 @@ Case No. 2023-5907-PP
 
 v.
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
 Petitioner/Respondent to Motion.
 
 Hon. Jenny L. McNeill
@@ -1007,7 +1007,7 @@ Case No. 2023-5907-PP
 
 v.
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
 Petitioner/Respondent to Motion.
 
 Hon. Jenny L. McNeill
@@ -1028,7 +1028,7 @@ All exhibits are Bates-stamped with the prefix **PIGORS-PPO-** followed by seque
 
 | Exhibit | Bates Range | Description |
 |---------|-------------|-------------|
-| **A-1** | PIGORS-PPO-0001 through PIGORS-PPO-0010 | Original Personal Protection Order Petition filed by Tiffany Emily Watson (2023) |
+| **A-1** | PIGORS-PPO-0001 through PIGORS-PPO-0010 | Original Personal Protection Order Petition filed by Emily A. Watson (2023) |
 | **A-2** | PIGORS-PPO-0011 through PIGORS-PPO-0015 | Personal Protection Order as entered by the Court, Case No. 2023-5907-PP |
 | **A-3** | PIGORS-PPO-0016 through PIGORS-PPO-0025 | PPO Timeline — Chronological record of PPO-related events, filings, and enforcement actions from 2023 to present |
 | **A-4** | PIGORS-PPO-0026 through PIGORS-PPO-0030 | PPO Renewal / Continuation Records (if applicable) |
@@ -1155,7 +1155,7 @@ Case No. 2023-5907-PP
 
 v.
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
 Petitioner/Respondent to Motion.
 
 Hon. Jenny L. McNeill
@@ -1172,7 +1172,7 @@ Hon. Jenny L. McNeill
 
 ## I. INTRODUCTION
 
-1. On or about 2023, this Court entered a Personal Protection Order ("PPO") against Movant Andrew J. Pigors, restraining him from contact with Petitioner Tiffany Emily Watson. Case No. 2023-5907-PP.
+1. On or about 2023, this Court entered a Personal Protection Order ("PPO") against Movant Andrew J. Pigors, restraining him from contact with Petitioner Emily A. Watson. Case No. 2023-5907-PP.
 
 2. Movant respectfully requests that this Court terminate or vacate the PPO pursuant to MCL 600.2950(12), which provides that "[a] court shall modify or rescind a personal protection order upon a finding that the personal protection order is no longer needed."
 
@@ -1553,7 +1553,7 @@ Case No. 2023-5907-PP
 
 v.
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
 Petitioner/Respondent to Motion.
 
 Hon. Jenny L. McNeill
@@ -1645,7 +1645,7 @@ Muskegon County, Michigan
 
 I certify that on \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, 2026, I served a copy of this Order upon the following:
 
-**Tiffany Emily Watson**
+**Emily A. Watson**
 *Through her attorney:*
 Jennifer L. Barnes
 Barnes Law Firm PLLC

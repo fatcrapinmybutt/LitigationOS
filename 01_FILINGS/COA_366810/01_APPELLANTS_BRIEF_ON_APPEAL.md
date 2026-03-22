@@ -23,7 +23,7 @@
 | | Lower Court: **14th Judicial Circuit Court** |
 | v. | Muskegon County, Family Division |
 | | |
-| **TIFFANY A. WATSON,** | Lower Court Case No. **2024-001507-DC** |
+| **Emily A. Watson,** | Lower Court Case No. **2024-001507-DC** |
 | *Defendant-Appellee.* | Related Case No. **2023-5907-PP** |
 | | |
 | | Hon. **Jenny L. McNeill** |
@@ -55,7 +55,7 @@ This Honorable Court has jurisdiction over this appeal pursuant to MCR 7.203(A) 
 
 Plaintiff-Appellant Andrew J. Pigors ("Father") appeals from the following orders entered in the 14th Judicial Circuit Court, Muskegon County, Family Division, the Honorable Jenny L. McNeill presiding, in Case No. 2024-001507-DC:
 
-1. **August 23, 2024 — Final Judgment of Custody and Parenting Time**, granting Defendant-Appellee Tiffany A. Watson ("Mother") sole legal and sole physical custody of the minor child, L.D.W. (DOB: November 9, 2022), and restricting Father's parenting time. (Lower Court Record ["LCR"], Final Judgment, 08/23/2024.)
+1. **August 23, 2024 — Final Judgment of Custody and Parenting Time**, granting Defendant-Appellee Emily A. Watson ("Mother") sole legal and sole physical custody of the minor child, L.D.W. (DOB: November 9, 2022), and restricting Father's parenting time. (Lower Court Record ["LCR"], Final Judgment, 08/23/2024.)
 
 2. **August 8, 2025 — Ex Parte Order Suspending All Parenting Time**, entered without notice to Father and without evidentiary hearing, suspending all of Father's parenting time with L.D.W. (LCR, Ex Parte Order, 08/08/2025.)
 
@@ -129,7 +129,7 @@ Trial Court answered: No.
 
 ## A. Parties and Background
 
-Andrew J. Pigors ("Father") and Tiffany A. Watson ("Mother") are the biological parents of L.D.W., born November 9, 2022. (LCR, Complaint for Custody, filed 04/01/2024.) Father commenced custody proceedings in the 14th Judicial Circuit Court, Muskegon County, Family Division, seeking to establish his parental rights and obtain meaningful parenting time with his son. The matter was assigned to the Honorable Jenny L. McNeill. (LCR, Register of Actions ["ROA"].)
+Andrew J. Pigors ("Father") and Emily A. Watson ("Mother") are the biological parents of L.D.W., born November 9, 2022. (LCR, Complaint for Custody, filed 04/01/2024.) Father commenced custody proceedings in the 14th Judicial Circuit Court, Muskegon County, Family Division, seeking to establish his parental rights and obtain meaningful parenting time with his son. The matter was assigned to the Honorable Jenny L. McNeill. (LCR, Register of Actions ["ROA"].)
 
 L.D.W. was approximately one year old when the initial PPO proceeding was filed and approximately eighteen months old when Father filed his custody complaint. These are critical developmental periods during which secure attachment bonds between parent and child are formed and consolidated.
 

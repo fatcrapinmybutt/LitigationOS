@@ -272,7 +272,7 @@ Trial Court effectively answered: **No.**
 
 ## A. Parties and Background
 
-Andrew J. Pigors ("Father") and Emily A. Watson ("Mother") are the biological parents of Lincoln David Watson ("L.D.W."), born November 9, 2022. [ANDREW_REQUIRED: confirm LCR cite — Complaint for Custody, filing date.] Father resides at 1977 Whitehall Rd, Laketon Township, Muskegon County, Michigan 49445.
+Andrew J. Pigors ("Father") and Emily A. Watson ("Mother") are the biological parents of L.D.W. (minor child, born November 9, 2022) ("L.D.W."), born November 9, 2022. [ANDREW_REQUIRED: confirm LCR cite — Complaint for Custody, filing date.] Father resides at 1977 Whitehall Rd, Laketon Township, Muskegon County, Michigan 49445.
 
 Father commenced custody proceedings in the 14th Judicial Circuit Court, Muskegon County, Family Division, seeking to establish parental rights and obtain meaningful parenting time with L.D.W. The case was assigned to the Honorable Jenny L. McNeill. [ANDREW_REQUIRED: cite Register of Actions.]
 

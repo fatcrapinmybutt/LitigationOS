@@ -11,7 +11,7 @@
 
 | # | Party / Entity | Method | Date Served | Tracking / Confirmation # | Status |
 |---|---------------|--------|-------------|--------------------------|--------|
-| 1 | **Ron Berry, Esq.** (Appellee Attorney) | MiFILE e-Service | March 04, 2026 | _[MiFILE Conf. #]_ | ☐ Pending |
+| 1 | **Ronald Berry (non-attorney, domestic partner of Emily Watson)** | MiFILE e-Service | March 04, 2026 | _[MiFILE Conf. #]_ | ☐ Pending |
 | 2 | **Emily A. Watson** (Defendant-Appellee) | First-Class U.S. Mail | March 04, 2026 | _[USPS Tracking #]_ | ☐ Pending |
 | 3 | **14th Circuit Court Clerk** (Trial Court) | MiFILE e-Service | March 04, 2026 | _[MiFILE Conf. #]_ | ☐ Pending |
 | 4 | **Muskegon County FOC** | First-Class U.S. Mail | March 04, 2026 | _[USPS Tracking #]_ | ☐ Pending |

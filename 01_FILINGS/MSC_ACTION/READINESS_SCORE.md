@@ -22,7 +22,7 @@
 ## Change: +6.4
 
 ### Fixes Applied by Agent-160:
-1. SERVICE_PACKET: Fixed party names (Tiffany Watson -> Emily A. Watson) across all 4 files
+1. SERVICE_PACKET: Fixed party names (Emily A. Watson -> Emily A. Watson) across all 4 files
 2. SERVICE_PACKET: Fixed COA address (was MSC address; now Grand Rapids COA)
 3. SERVICE_PACKET: Added Friend of Court as 5th service recipient (MCR 7.306(D))
 4. SERVICE_PACKET: Filled Ron Berry address (1423 W. Norton Ave, Norton Shores, MI 49441)

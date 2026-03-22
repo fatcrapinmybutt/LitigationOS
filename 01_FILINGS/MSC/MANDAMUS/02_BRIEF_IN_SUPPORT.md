@@ -133,7 +133,7 @@ Judge Jenny L. McNeill has:
 - **Refused to recuse** despite documented bias, instead imposing a $250 financial barrier to the disqualification process;
 - **Incarcerated Petitioner for 59+ days** on contempt without the procedural safeguards required by *Dougherty*;
 - **Ignored all twelve best interest factors** under MCL 722.23, entering orders against the weight of the evidence;
-- **Tolerated a 91% parental alienation probability**, taking no action despite 305 documented interference incidents.
+- **Tolerated severe parental alienation**, taking no action despite 305 documented interference incidents.
 
 Each of these represents not an error of discretion, but a refusal to perform a clear legal duty. Mandamus exists for exactly this purpose.
 
@@ -189,7 +189,7 @@ The facts are set forth in detail in the Application for Writ of Mandamus and ar
 
 7. Petitioner has been incarcerated for a total of **59+ days** on civil contempt findings, without the procedural protections required by *Dougherty*, directly causing the loss of three jobs (including USPS employment), two or more homes, and documented economic damages exceeding $82,250.
 
-8. Independent alienation analysis across three clinical frameworks produces a **91% parental alienation probability score**, with Watson's conduct matching 15 of 17 Baker strategies. Judge McNeill has taken no corrective action.
+8. Independent alienation analysis across three clinical frameworks produces a documented pattern of parental alienation under MCL 722.23(j), with Watson's conduct matching 15 of 17 Baker strategies. Judge McNeill has taken no corrective action.
 
 9. Petitioner has filed an appeal with the Michigan Court of Appeals (Case No. 366810), which remains pending. However, the ongoing harm to L.D.W. cannot await ordinary appellate timelines.
 
@@ -403,7 +403,7 @@ This case does not present a single error of law or a debatable exercise of disc
 | 3 | Refusal to recuse | $250 bond barrier | MCR 2.003, *Boddie* |
 | 4 | Due process violations | 59+ days incarceration | *Dougherty*, 14th Amendment |
 | 5 | BIF analysis failure | 12/12 factors ignored | MCL 722.23 |
-| 6 | Alienation tolerated | 91% score, zero sanctions | MCL 722.23(j), (k), (l) |
+| 6 | Alienation tolerated | severe documented alienation, zero sanctions | MCL 722.23(j), (k), (l) |
 
 No single item on this list, standing alone, would necessarily warrant this Court's intervention. But the pattern — six categories of misconduct, each documented with statistical precision, each flowing from the same judge in the same case — tells the story of a judicial process that has ceased to function as a neutral forum for the resolution of disputes.
 

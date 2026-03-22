@@ -38,7 +38,7 @@ Muskegon, MI 49442
 
 | Field | Information |
 |-------|-------------|
-| **Name:** | Tiffany Emily Watson |
+| **Name:** | Emily A. Watson |
 | **Address:** | c/o Attorney — see below |
 | **City, State, Zip:** | Muskegon County, MI |
 | **Attorney:** | Jennifer L. Barnes (Barnes Law Firm PLLC) |

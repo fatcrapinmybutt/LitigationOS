@@ -657,7 +657,7 @@ Related: MCR 3.210, MCL 552.101
 | MCL 722.23 | MCL 722.23(g): Moral fitness of the parties involved. |
 | MCL 722.23 | instability; HealthWest exam confirms only external stressors.,MRE 403 (exclude unfair prejudice); M... |
 | MCL 722.23 | Custody objection claims homelessness,Motion shows resolved housing and employment stability,MCL 722... |
-| MCL 722.23 | ermined that joint physical custody serves the best interests of Lincoln Watson under Michigan law (... |
+| MCL 722.23 | ermined that joint physical custody serves the best interests of L.D.W. (minor child, born November 9, 2022) under Michigan law (... |
 | MCL 722.23 | schedule and is deemed in the child's best interest pursuant to MCL 722.23. |
 | MCL 722.23 | (d) specific references to best-interest factors under MCL 722.23. |
 | MCL 722.23 | MCL_722_23,Authority,MCL 722.23 — Best Interests |

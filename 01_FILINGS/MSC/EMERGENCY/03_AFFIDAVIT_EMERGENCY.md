@@ -105,7 +105,7 @@ I, Andrew J. Pigors, being first duly sworn, depose and state as follows:
 
     e. **Defiance of FOC Recommendations:** The Friend of the Court issued recommendations regarding parenting time on [ANDREW_REQUIRED: dates]. Watson defied these recommendations by [ANDREW_REQUIRED: describe specific acts of defiance].
 
-15. Based on analysis of the 305 documented incidents using recognized parental alienation assessment criteria, the alienation score is 91%. This score reflects the severity and persistence of Watson's interference with the parent-child relationship.
+15. Based on analysis of the 305 documented incidents using recognized parental alienation assessment criteria, the documented alienation pattern is severe, as established by the specific incidents detailed herein. This score reflects the severity and persistence of Watson's interference with the parent-child relationship.
 
 ---
 

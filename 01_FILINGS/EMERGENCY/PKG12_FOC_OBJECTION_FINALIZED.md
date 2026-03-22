@@ -7,7 +7,7 @@ ANDREW J. PIGORS,                    Case No. 2024-001507-DC
     
 v.
 
-TIFFANY EMILY WATSON (fka PIGORS),
+Emily A. Watson (fka PIGORS),
     Defendant/Mother.
 ____________________________________________/
 
@@ -26,7 +26,7 @@ ____________________________________________/
 | | |
 | v. | **Hon. [Assigned Judge]** |
 | | |
-| **TIFFANY EMILY WATSON,** | |
+| **Emily A. Watson,** | |
 | Defendant/Mother. | |
 
 ---
@@ -258,7 +258,7 @@ Telephone: (231) 903-5690
 | | |
 | v. | **Hon. [Assigned Judge]** |
 | | |
-| **TIFFANY EMILY WATSON,** | |
+| **Emily A. Watson,** | |
 | Defendant/Mother. | |
 
 ---
@@ -285,7 +285,7 @@ upon the following individual(s) by the method(s) indicated:
 | **Name:** | Jennifer L. Barnes, Esq. |
 | **Firm:** | Barnes Law Firm PLLC |
 | **Address:** | 880 Jefferson St, Suite B, Muskegon, MI 49440 |
-| **Representing:** | Defendant/Mother, Tiffany Emily Watson |
+| **Representing:** | Defendant/Mother, Emily A. Watson |
 
 ### Method of Service:
 
@@ -324,7 +324,7 @@ I declare under the penalties of perjury that the foregoing is true and correct.
 | **Case No.:** | 2024-001507-DC |
 | **Judge:** | Hon. [Assigned Judge] |
 | **Plaintiff/Father:** | Andrew J. Pigors |
-| **Defendant/Mother:** | Tiffany Emily Watson |
+| **Defendant/Mother:** | Emily A. Watson |
 
 ---
 
@@ -348,7 +348,7 @@ I declare under the penalties of perjury that the foregoing is true and correct.
 | **Name:** | Jennifer L. Barnes, Esq. |
 | **Firm:** | Barnes Law Firm PLLC |
 | **Address:** | 880 Jefferson St, Suite B, Muskegon, MI 49440 |
-| **Representing:** | Defendant/Mother, Tiffany Emily Watson |
+| **Representing:** | Defendant/Mother, Emily A. Watson |
 
 ---
 
@@ -408,7 +408,7 @@ I declare under the penalties of perjury that the statements above are true to t
 | | |
 | v. | **Hon. [Assigned Judge]** |
 | | |
-| **TIFFANY EMILY WATSON,** | |
+| **Emily A. Watson,** | |
 | Defendant/Mother. | |
 
 ---
@@ -509,7 +509,7 @@ Total Exhibits: 15
 
 | | |
 |---|---|
-| **Name:** | Tiffany Emily Watson |
+| **Name:** | Emily A. Watson |
 | **Address:** | [Address on file with the Court] |
 | **Attorney:** | Jennifer L. Barnes, Esq. |
 | **Firm:** | Barnes Law Firm PLLC |
@@ -721,7 +721,7 @@ Citations: 7 (MCR:4 MCL:1 Cases:0 Forms:2)
 | | |
 | v. | **Hon. [Assigned Judge]** |
 | | |
-| **TIFFANY EMILY WATSON,** | |
+| **Emily A. Watson,** | |
 | Defendant/Mother. | |
 
 ---

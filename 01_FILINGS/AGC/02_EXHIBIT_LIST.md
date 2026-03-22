@@ -68,7 +68,7 @@ Bates stamp format: `AGC-BERRY-XXXX` (four-digit sequential numbering)
 
 | Exhibit | Bates Range | Description | LitigationOS Source |
 |---------|-------------|-------------|---------------------|
-| C-1 | AGC-BERRY-[TBD] | Parental Alienation Analysis Report (91% score) | `litigation_context.db` → alienation scoring tables |
+| C-1 | AGC-BERRY-[TBD] | Parental Alienation Pattern Documentation (incident-based analysis) | `litigation_context.db` → alienation scoring tables |
 | C-2 | AGC-BERRY-[TBD] | Interference Incident Log — Summary (305 incidents) | `litigation_context.db` → interference/alienation incident records |
 | C-3 | AGC-BERRY-[TBD] | Interference Incident Log — Detailed entries (sample set) | `litigation_context.db` → Select representative sample of 20–30 incidents |
 | C-4 | AGC-BERRY-[TBD] | Denied Parenting Time Calendar (200+ consecutive days) | Court records; parenting time logs; calendar visualization |

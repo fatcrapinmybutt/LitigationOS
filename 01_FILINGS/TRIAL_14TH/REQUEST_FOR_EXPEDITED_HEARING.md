@@ -15,7 +15,7 @@ Plaintiff, *Pro Se*,
 
 **Hon. Jenny L. McNeill**
 
-**TIFFANY EMILY WATSON (fka PIGORS),**
+**Emily A. Watson (fka PIGORS),**
 Defendant.
 
 ___________________________________________/
@@ -44,7 +44,7 @@ ___________________________________________/
 
 ### A. Ongoing Irreparable Harm
 
-3. Father has been separated from his minor child Lincoln Watson (DOB: November 9, 2022) for **571+ cumulative days**. The most recent continuous period of total deprivation has been running since **July 29, 2025**.
+3. Father has been separated from his minor child L.D.W. (minor child, born November 9, 2022) (DOB: November 9, 2022) for **571+ cumulative days**. The most recent continuous period of total deprivation has been running since **July 29, 2025**.
 
 4. The separation is causing **ongoing, irreparable harm** to the parent-child bond during a critical developmental period (ages 2–3). Every additional day of separation deepens this harm.
 

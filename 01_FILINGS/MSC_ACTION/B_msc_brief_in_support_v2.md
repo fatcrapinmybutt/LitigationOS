@@ -383,7 +383,7 @@ The PPO case was itself initiated via ex parte proceedings. The docket documents
 
 **3. Cross-Case: 538 rows, priority 1,604 (HIGH)**
 
-Additional ex parte conduct spans both proceedings, including: "the Ex Parte FIG Order which was held on July 17, 2024 in regards to the minor child, Lincoln Watson." (Source: JTC_Conduct_Pattern_Table.csv; AEM_000061.)
+Additional ex parte conduct spans both proceedings, including: "the Ex Parte FIG Order which was held on July 17, 2024 in regards to the minor child, L.D.W. (minor child, born November 9, 2022)." (Source: JTC_Conduct_Pattern_Table.csv; AEM_000061.)
 
 ### C. Ex Parte Conduct Causes Ongoing Irreparable Harm
 

@@ -7,7 +7,7 @@ ANDREW J. PIGORS,                    Case No. 2024-001507-DC
     
 v.
 
-TIFFANY EMILY WATSON (fka PIGORS),
+Emily A. Watson (fka PIGORS),
     Defendant/Mother.
 ____________________________________________/
 
@@ -26,7 +26,7 @@ ____________________________________________/
 | | |
 | v. | **Hon. [Assigned Judge]** |
 | | |
-| **TIFFANY EMILY WATSON,** | |
+| **Emily A. Watson,** | |
 | Defendant/Mother. | |
 
 ---
@@ -53,7 +53,7 @@ upon the following individual(s) by the method(s) indicated:
 | **Name:** | Jennifer L. Barnes, Esq. |
 | **Firm:** | Barnes Law Firm PLLC |
 | **Address:** | 880 Jefferson St, Suite B, Muskegon, MI 49440 |
-| **Representing:** | Defendant/Mother, Tiffany Emily Watson |
+| **Representing:** | Defendant/Mother, Emily A. Watson |
 
 ### Method of Service:
 
@@ -92,7 +92,7 @@ I declare under the penalties of perjury that the foregoing is true and correct.
 | **Case No.:** | 2024-001507-DC |
 | **Judge:** | Hon. [Assigned Judge] |
 | **Plaintiff/Father:** | Andrew J. Pigors |
-| **Defendant/Mother:** | Tiffany Emily Watson |
+| **Defendant/Mother:** | Emily A. Watson |
 
 ---
 
@@ -116,7 +116,7 @@ I declare under the penalties of perjury that the foregoing is true and correct.
 | **Name:** | Jennifer L. Barnes, Esq. |
 | **Firm:** | Barnes Law Firm PLLC |
 | **Address:** | 880 Jefferson St, Suite B, Muskegon, MI 49440 |
-| **Representing:** | Defendant/Mother, Tiffany Emily Watson |
+| **Representing:** | Defendant/Mother, Emily A. Watson |
 
 ---
 
@@ -176,7 +176,7 @@ I declare under the penalties of perjury that the statements above are true to t
 | | |
 | v. | **Hon. [Assigned Judge]** |
 | | |
-| **TIFFANY EMILY WATSON,** | |
+| **Emily A. Watson,** | |
 | Defendant/Mother. | |
 
 ---
@@ -257,7 +257,7 @@ Total Exhibits: 15
 | | |
 | v. | **Hon. [Assigned Judge]** |
 | | |
-| **TIFFANY EMILY WATSON,** | |
+| **Emily A. Watson,** | |
 | Defendant/Mother. | |
 
 ---
@@ -445,7 +445,7 @@ Citations: 1 (MCR:1 MCL:0 Cases:0 Forms:0)
 | | |
 | v. | **Hon. [Assigned Judge]** |
 | | |
-| **TIFFANY EMILY WATSON,** | |
+| **Emily A. Watson,** | |
 | Defendant/Mother. | |
 
 ---
@@ -540,7 +540,7 @@ Circuit Court Judge
 
 **TO:**
 
-Tiffany Emily Watson
+Emily A. Watson
 c/o Jennifer L. Barnes, Esq.
 Barnes Law Firm PLLC
 880 Jefferson St, Suite B
@@ -555,7 +555,7 @@ Telephone: (231) 903-5690
 
 **RE:** Litigation Hold — Preservation of Evidence
 Case No. 2024-001507-DC
-*Andrew J. Pigors v. Tiffany Emily Watson*
+*Andrew J. Pigors v. Emily A. Watson*
 14th Judicial Circuit Court, Muskegon County, Michigan
 
 ---

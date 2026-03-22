@@ -35,7 +35,7 @@ I, Andrew J. Pigors, being first duly sworn upon my oath, depose and say as foll
 
 2. I reside at 1977 Whitehall Road, Laketon Township, Muskegon County, Michigan 49445.
 
-3. I am the biological father of Lincoln David Watson ("L.D.W."), born on November 9, 2022, in Muskegon County, Michigan.
+3. I am the biological father of L.D.W. (minor child, born November 9, 2022) ("L.D.W."), born on November 9, 2022, in Muskegon County, Michigan.
 
 4. The mother of L.D.W. is Defendant Emily A. Watson.
 

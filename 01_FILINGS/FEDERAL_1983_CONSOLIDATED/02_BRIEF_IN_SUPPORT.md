@@ -39,11 +39,11 @@ V. Conclusion
 
 ## I. INTRODUCTION
 
-Plaintiff Andrew J. Pigors brings this civil rights action under 42 U.S.C. § 1983 against Judge Jenny L. McNeill, Emily A. Watson, Ron Berry, Esq., Pamela Rusco, and Muskegon County, Michigan. This Memorandum addresses the principal legal issues this Court will confront at the threshold: federal abstention doctrines, judicial immunity, and the sufficiency of each of the seven counts.
+Plaintiff Andrew J. Pigors brings this civil rights action under 42 U.S.C. § 1983 against Judge Jenny L. McNeill, Emily A. Watson, Ronald Berry (non-attorney), Pamela Rusco, and Muskegon County, Michigan. This Memorandum addresses the principal legal issues this Court will confront at the threshold: federal abstention doctrines, judicial immunity, and the sufficiency of each of the seven counts.
 
 This is not a case about a disputed custody ruling or a dissatisfied litigant seeking federal appellate review of a state judgment. This is an original federal civil rights action challenging the **process** — or total absence of process — by which Defendants systematically deprived a father of his fundamental constitutional rights over more than 200 consecutive days through 24 ex parte orders, 59 days of wrongful incarceration, and the imposition of a $250 financial barrier that now blocks all access to the state courts.
 
-The scale of documented misconduct is staggering: 1,127 discrete judicial conduct violations across 19 categories, a 91% parental alienation score, 305 Watson family interference incidents, and three jobs lost to wrongful incarceration. These are not the hallmarks of judicial discretion — they are the hallmarks of systematic constitutional deprivation.
+The scale of documented misconduct is staggering: 1,127 discrete judicial conduct violations across 19 categories, a documented pattern of parental alienation under MCL 722.23(j), 305 Watson family interference incidents, and three jobs lost to wrongful incarceration. These are not the hallmarks of judicial discretion — they are the hallmarks of systematic constitutional deprivation.
 
 ---
 
@@ -204,7 +204,7 @@ Under *Mathews v. Eldridge*, 424 U.S. 319 (1976), Plaintiff must show: (a) a pro
 
 #### 2. Count II — Substantive Due Process / Parental Liberty (Fourteenth Amendment)
 
-The "shocks the conscience" test applies. *County of Sacramento v. Lewis*, 523 U.S. 833, 846 (1998). A total separation exceeding 200 consecutive days without a hearing, maintained through ex parte orders, enforced by wrongful incarceration and a financial barrier, producing a 91% parental alienation score — this shocks the conscience of any reasonable observer. The Sixth Circuit recognizes this claim. *Doe v. Claiborne County*, 103 F.3d 495, 506 (6th Cir. 1996).
+The "shocks the conscience" test applies. *County of Sacramento v. Lewis*, 523 U.S. 833, 846 (1998). A total separation exceeding 200 consecutive days without a hearing, maintained through ex parte orders, enforced by wrongful incarceration and a financial barrier, producing a documented pattern of parental alienation under MCL 722.23(j) — this shocks the conscience of any reasonable observer. The Sixth Circuit recognizes this claim. *Doe v. Claiborne County*, 103 F.3d 495, 506 (6th Cir. 1996).
 
 #### 3. Count III — Conspiracy (§ 1983 / § 1985(3))
 

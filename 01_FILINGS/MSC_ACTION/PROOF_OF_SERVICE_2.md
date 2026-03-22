@@ -14,7 +14,7 @@ I, Andrew J. Pigors, hereby certify that on **_________________, 2026**, I serve
 | # | Party | Address | Method of Service |
 |---|-------|---------|-------------------|
 | 1 | Emily A. Watson (Real Party in Interest) | Address on file with the Court | First-class mail |
-| 2 | Ron Berry, Esq. (Appellee's Appellate Counsel) | 1423 W. Norton Ave, Norton Shores, MI 49441 | First-class mail |
+| 2 | Ronald Berry (non-attorney, domestic partner of Emily Watson) | 1423 W. Norton Ave, Norton Shores, MI 49441 | First-class mail |
 | 3 | Clerk -- 14th Circuit Court, Muskegon County | 990 Terrace Street, Hall of Justice, Muskegon, MI 49442 | First-class mail |
 | 4 | Clerk -- Michigan Court of Appeals | 300 Ottawa Avenue NW, Suite 453, Grand Rapids, MI 49503 | First-class mail |
 | 5 | Muskegon County Friend of the Court | 990 Terrace Street, Hall of Justice, Muskegon, MI 49442, Attn: Jennifer Barnes | First-class mail |

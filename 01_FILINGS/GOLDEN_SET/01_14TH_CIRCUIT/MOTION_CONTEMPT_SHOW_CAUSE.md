@@ -86,7 +86,7 @@ NOW COMES Plaintiff/Movant, ANDREW J. PIGORS, appearing *pro se*, and respectful
 
 ### V. SPECIFIC CONTEMPT INSTANCES — EPISODE 4 (ONGOING): AUGUST 8, 2025 – PRESENT (200+ DAYS AND CONTINUING)
 
-15. On or about **August 5, 2025**, a USB recording was submitted to the court clerk by Defendant's family. An ex parte suspension order was issued **that same day** — before Father was even served. Father was served on **August 8, 2025** (Friday), and the first objection hearing was held on **August 11, 2025** (Monday) — giving Father **zero (0) business days** to prepare, in violation of MCR 2.119(C)(1) and MCR 2.305. Defendant obtained or caused to be obtained this ex parte order, which has been used as the vehicle to deny Plaintiff all parenting time with the minor child from that date to the present — a period exceeding two hundred (200) days and continuing.
+15. On or about **August 5, 2025**, a USB recording was submitted to the court clerk by Defendant's family. An ex parte suspension order was issued **that same day** — before Father was even served. Father was served on **August 8, 2025** (Friday), and the first objection hearing was held on **August 11, 2025** (Monday) — giving Father **zero (0) business days** to prepare, in violation of MCR 2.119(C)(1). Defendant obtained or caused to be obtained this ex parte order, which has been used as the vehicle to deny Plaintiff all parenting time with the minor child from that date to the present — a period exceeding two hundred (200) days and continuing.
 
 16. Plaintiff avers that the ex parte order was procured through misrepresentation and/or omission of material facts, and that Defendant has exploited the order to accomplish the same pattern of total parenting time denial that she previously achieved through unilateral withholding.
 
@@ -422,8 +422,8 @@ This Motion should be read in conjunction with the following companion filings, 
 | MCL 722.27c | — | Parental alienation — interference with parent-child relationship |
 | MCL 750.539c | — | Felony wiretapping — two-party consent required |
 | MCL 750.60 | — | False testimony during court proceedings |
-| MCL 750.411h | — | Harassment — repeated contact to torment/intimidate |
-| MCR 2.101(J) | — | Contempt — willfully disobeying court order |
+| MCL 750.411h | — | Stalking — willful course of conduct involving repeated or continuing harassment |
+| MCR 3.606 | — | Contempt — willfully disobeying court order |
 | MCR 3.221 | — | Parenting time enforcement procedures |
 | *Brady v Maryland* | 373 US 83 (1963) | Right to disclosure of all evidence |
 | *People v Bednarz* | 360 Mich 552 (1960) | Two-party consent wiretapping law |

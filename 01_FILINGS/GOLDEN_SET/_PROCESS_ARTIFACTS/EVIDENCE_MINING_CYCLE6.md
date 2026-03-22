@@ -318,7 +318,7 @@ Cycle 6 mined **65+ files** not previously extracted in Cycles 1–3, including:
 | Person | DOB Version 1 | DOB Version 2 | Source Conflict |
 |--------|--------------|--------------|----------------|
 | **Emily Watson** | 10/27/1989 | 10/4/1994 | Multiple documents |
-| **Lincoln David Watson** | **11/09/2022** | **June 27, 2018** | BRIEF_SUPPORTING_VACATION says 2018; most docs say 2022 |
+| **L.D.W. (minor child, born November 9, 2022)** | **11/09/2022** | **June 27, 2018** | BRIEF_SUPPORTING_VACATION says 2018; most docs say 2022 |
 
 **NOTE:** The child's DOB discrepancy (2022 vs 2018) is critical. If Lincoln was born in 2022, he is ~3 years old. If 2018, he would be ~7. The ENHANCED_ALIENATION_BRIEF consistently uses DOB 11/9/2022. The BRIEF_SUPPORTING_VACATION reference to "June 27, 2018" may be a drafting error or reference to a different event.
 

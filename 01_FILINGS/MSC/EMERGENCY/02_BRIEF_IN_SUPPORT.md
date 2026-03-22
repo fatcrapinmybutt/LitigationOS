@@ -101,7 +101,7 @@ The trial court has issued twenty-four (24) ex parte orders in this case, repres
 
 ### C. Interference by Defendant Watson
 
-Father has documented 305 separate incidents in which Defendant Watson interfered with his parenting time or his relationship with L.D.W. Analysis of these documented incidents yields a 91% parental alienation score. Watson defied FOC recommendations repeatedly without consequence from the trial court.
+Father has documented 305 separate incidents in which Defendant Watson interfered with his parenting time or his relationship with L.D.W. Analysis of these documented incidents yields a documented pattern of parental alienation under MCL 722.23(j). Watson defied FOC recommendations repeatedly without consequence from the trial court.
 
 ### D. Father's Child Safety Report
 

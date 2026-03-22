@@ -12,10 +12,10 @@ v.                                                                    Case No. _
 **HON. JENNY L. McNEILL,**
 individually and in her official capacity,
 
-**TIFFANY (EMILY) WATSON,**
+**EMILY A. WATSON,**
 individually,
 
-**RON BERRY, ESQ.,**
+**Ronald Berry (non-attorney),**
 individually,
 
 Defendants.
@@ -58,9 +58,9 @@ Plaintiff Andrew J. Pigors, proceeding pro se, respectfully submits this Civil R
 
 7. **Hon. Jenny L. McNeill** is a judge of the 14th Circuit Court, Muskegon County, Michigan. She is sued in both her individual and official capacities. In her individual capacity, McNeill is liable for acts taken in the complete absence of all jurisdiction and for conspiring with private parties to deprive Plaintiff of constitutional rights. *Dennis v. Sparks*, 449 U.S. 24 (1980); *Mireles v. Waco*, 502 U.S. 9, 12 (1991). In her official capacity, McNeill is named for purposes of prospective injunctive and declaratory relief. *Pulliam v. Allen*, 466 U.S. 522 (1984).
 
-8. **Tiffany (Emily) Watson** is a natural person and citizen of the State of Michigan, residing in Muskegon County. Watson is the biological mother of L.D.W. She is a private party who, acting in concert with a state judicial officer, conspired to deprive Plaintiff of his constitutional rights under color of state law. *Dennis v. Sparks*, 449 U.S. 24, 27-28 (1980). Watson is a non-attorney who has filed substantive legal documents in coordination with the court, raising unauthorized practice of law concerns under MCR 8.120.
+8. **EMILY A. WATSON** is a natural person and citizen of the State of Michigan, residing in Muskegon County. Watson is the biological mother of L.D.W. She is a private party who, acting in concert with a state judicial officer, conspired to deprive Plaintiff of his constitutional rights under color of state law. *Dennis v. Sparks*, 449 U.S. 24, 27-28 (1980). Watson is a non-attorney who has filed substantive legal documents in coordination with the court, raising unauthorized practice of law concerns under MCR 8.120.
 
-9. **Ron Berry, Esq.** is an attorney licensed to practice in the State of Michigan, residing in or around Muskegon County. Berry serves as appellate counsel to Watson and is a private party who conspired with Defendant McNeill to deprive Plaintiff of constitutional rights. Berry's direct ex parte contacts with the court are evidenced by voicemail recordings (Item #6, ex parte objection table) and the temporal coordination pattern: Watson files → McNeill rules same day → Berry files within 48 hours, repeated across months.
+9. **Ronald Berry** is not an attorney. He is the domestic partner and boyfriend of Defendant Emily A. Watson, residing in or around Muskegon County. Berry is a private party who conspired with Defendant McNeill to deprive Plaintiff of constitutional rights. Berry's direct ex parte contacts with the court are evidenced by voicemail recordings and the temporal coordination pattern. Berry is the domestic partner of Watson and is a private party who conspired with Defendant McNeill to deprive Plaintiff of constitutional rights. Berry's direct ex parte contacts with the court are evidenced by voicemail recordings (Item #6, ex parte objection table) and the temporal coordination pattern: Watson files → McNeill rules same day → Berry files within 48 hours, repeated across months.
 
 10. At all times relevant herein, Defendant McNeill acted under color of state law within the meaning of 42 U.S.C. § 1983. *West v. Atkins*, 487 U.S. 42, 49 (1988). Defendants Watson and Berry, by conspiring with Defendant McNeill, likewise acted under color of state law. *Dennis v. Sparks*, 449 U.S. 24 (1980); *Adickes v. S.H. Kress & Co.*, 398 U.S. 144 (1970).
 
@@ -404,11 +404,11 @@ I hereby certify that on _____________, 2026, I served a true and correct copy o
 990 Terrace Street
 Muskegon, MI 49442
 
-**Tiffany (Emily) Watson**
+**EMILY A. WATSON**
 2160 Garland Drive
 Norton Shores, MI 49441
 
-**Ron Berry, Esq.**
+**Ronald Berry (non-attorney)**
 Address Unknown — Service to be effectuated upon discovery
 Muskegon County, MI
 

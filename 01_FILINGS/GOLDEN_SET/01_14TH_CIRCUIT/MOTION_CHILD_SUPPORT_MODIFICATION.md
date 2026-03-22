@@ -43,7 +43,7 @@ A hearing on this motion is requested. Movant requests the Court Clerk schedule 
 
 ### I. INTRODUCTION
 
-1. Father has been denied ALL parenting time with the minor child, Lincoln David Watson (DOB: November 9, 2022), for **more than 200 consecutive days**.
+1. Father has been denied ALL parenting time with the minor child, L.D.W. (minor child, born November 9, 2022) (DOB: November 9, 2022), for **more than 200 consecutive days**.
 
 2. During this period, Mother has exercised **100% of custodial time** with the child. Father has exercised **0%** of custodial time.
 

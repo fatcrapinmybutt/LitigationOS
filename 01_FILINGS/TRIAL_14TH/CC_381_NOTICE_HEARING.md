@@ -22,7 +22,7 @@ Muskegon, MI 49442
 
 ---
 
-### TO:TIFFANY EMILY WATSON
+### TO:Emily A. Watson
 
 *Through her attorney:*
 Jennifer L. Barnes
@@ -89,7 +89,7 @@ The following documents accompany this Notice:
 
 ### SERVICE REQUIREMENTS
 
-This Notice of Hearing shall be served upon Respondent/Petitioner Tiffany Emily Watson (through counsel) in accordance with MCR 2.107 not less than 9 days before the hearing date, or as otherwise ordered by the Court.
+This Notice of Hearing shall be served upon Respondent/Petitioner Emily A. Watson (through counsel) in accordance with MCR 2.107 not less than 9 days before the hearing date, or as otherwise ordered by the Court.
 
 ---
 

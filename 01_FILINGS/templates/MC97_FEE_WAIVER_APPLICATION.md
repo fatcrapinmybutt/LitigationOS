@@ -41,7 +41,7 @@ NOW COMES Plaintiff Andrew J. Pigors, appearing pro se, and respectfully request
 
 7. My net monthly income after taxes, health insurance premiums (for myself and my minor child, L.D.W.), and required deductions is approximately **$[ANDREW_REQUIRED — net monthly income]**.
 
-8. I provide health, dental, and vision insurance coverage for both myself and my minor child, Lincoln David Watson (DOB: 11/9/2022), through my employer's benefit plan.
+8. I provide health, dental, and vision insurance coverage for both myself and my minor child, L.D.W. (minor child, born November 9, 2022) (DOB: 11/9/2022), through my employer's benefit plan.
 
 ### III. MONTHLY EXPENSES
 

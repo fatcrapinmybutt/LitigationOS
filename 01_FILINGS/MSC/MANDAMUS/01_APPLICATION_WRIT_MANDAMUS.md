@@ -196,7 +196,7 @@ The Court of Appeals appeal (Case No. 366810) remains pending but is insufficien
 
 ### G. Toleration of Parental Alienation
 
-18. Independent analysis using three recognized clinical frameworks — Dr. Amy J.L. Baker's 17 Strategies of Parental Alienation, Dr. Craig Childress's Attachment-Based Model, and Dr. Richard Warshak's Five-Factor Model — yields a **91% parental alienation probability score**.
+18. Independent analysis using three recognized clinical frameworks — Dr. Amy J.L. Baker's 17 Strategies of Parental Alienation, Dr. Craig Childress's Attachment-Based Model, and Dr. Richard Warshak's Five-Factor Model — yields a documented pattern of parental alienation under MCL 722.23(j).
 
 19. Watson's conduct matches **15 of 17** Baker strategies (88.2%), including badmouthing Petitioner to the child, limiting contact, blocking communication, interfering with symbolic communication (gifts and cards), and encouraging the child to call Watson's new partner "Daddy."
 

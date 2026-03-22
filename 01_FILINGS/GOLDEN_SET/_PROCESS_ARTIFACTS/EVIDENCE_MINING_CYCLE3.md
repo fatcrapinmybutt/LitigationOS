@@ -363,7 +363,7 @@
 | 6 | **Ella Randall** | Norton Shores PD Officer (#47437) | Incident NS2505044; opined "result of meth use" — no drug test ordered | expartescannedandmine_0002 |
 | 7 | **Adam Ludovicz** | Norton Shores PD Officer (#47416) | Case NS2505078; harassment report by Lori Watson 08/09/2025 | EVIDENCE_MINING_CYCLE2 |
 | 8 | **Stephanie Deater** | Court Reporter, CER-16139 | Transcribed PPO hearings; 15729 Mercury Drive, Grand Haven, MI 49417 | EVIDENCE_MINING_CYCLE2 |
-| 9 | **Lincoln Watson** | Minor child, DOB 11/09/2022 | Named in ex parte motion as basis for emergency | expartescannedandmine_0002 |
+| 9 | **L.D.W. (minor child, born November 9, 2022)** | Minor child, DOB 11/09/2022 | Named in ex parte motion as basis for emergency | expartescannedandmine_0002 |
 | 10 | **"Kassandra"** | Second HealthWest clinician (Gansen) | Referenced by first name in Rusco's 10/29/2025 call | healthwest2ndscanned_0001 |
 
 ---

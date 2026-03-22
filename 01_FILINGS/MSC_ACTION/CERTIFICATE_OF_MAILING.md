@@ -23,7 +23,7 @@ addressed to the following persons at the addresses stated below:
 Address on file with the Court
 ```
 
-**2. Ron Berry, Esq. (Appellee's Appellate Counsel -- COA 366810)**
+**2. Ronald Berry (non-attorney, domestic partner of Emily Watson)**
 ```
 1423 W. Norton Ave
 Norton Shores, MI 49441

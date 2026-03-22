@@ -180,7 +180,7 @@ See Sections II.B through II.F below for element-by-element mapping of each cons
 | **2024-01-XX** | Custody case filed (2024-001507-DC); also assigned to McNeill | — | — | Court docket |
 | **2024-04-11** | Show Cause (contempt) filed; **jail threat** + $250 bond | 14th Amend. Due Process; 1st Amend. | CRITICAL | AEM_000012–AEM_000015 (CONTEMPT_SANCTION_CHAIN, 2,722 rows) |
 | **2024-04-11** | Ex Parte PPO order entered same day | 14th Amend. Due Process | CRITICAL | AEM_000047–AEM_000050 (EX_PARTE_HANDLING, 630 rows) |
-| **2024-07-17** | Ex Parte "FIG Order" hearing re: minor child Lincoln Watson | 14th Amend. Due Process | HIGH | AEM_000058–AEM_000061 (EX_PARTE_HANDLING, 538 rows) |
+| **2024-07-17** | Ex Parte "FIG Order" hearing re: minor child L.D.W. (minor child, born November 9, 2022) | 14th Amend. Due Process | HIGH | AEM_000058–AEM_000061 (EX_PARTE_HANDLING, 538 rows) |
 | **2025-05-XX** | **$250 bond per motion** imposed on Plaintiff | 1st Amend. Access to Courts | CRITICAL | AEM_000043–AEM_000044; Bond order text |
 | **2025-07-29** | Parenting exchange — exculpatory photographs taken; court later **refuses to view** | 14th Amend. Due Process | HIGH | Hearing record; MENTAL_HEALTH_EVAL_PROCESS |
 | **2025-08-08** | **FIVE (5) ex parte orders on single day** — ALL parenting time suspended | 14th Amend. Due Process (total deprivation) | CRITICAL | AEM_000016–AEM_000019 (EX_PARTE_HANDLING, 2,327 rows) |

@@ -133,7 +133,7 @@ Defendant.
 
 ### A. Background and Case History
 
-1. Plaintiff Andrew J. Pigors ("Father") and Defendant Emily A. Watson ("Mother") are the parents of Lincoln Watson, born approximately 2022. Plaintiff filed a Complaint for Custody, Parenting Time, and Child Support on April 1, 2024, in Case No. 2024-001507-DC.
+1. Plaintiff Andrew J. Pigors ("Father") and Defendant Emily A. Watson ("Mother") are the parents of L.D.W. (minor child, born November 9, 2022), born approximately 2022. Plaintiff filed a Complaint for Custody, Parenting Time, and Child Support on April 1, 2024, in Case No. 2024-001507-DC.
 
 2. A related Personal Protection Order case, No. 2023-5907-PP, was filed on or about December 4, 2023, and has been consolidated with the custody matter before Judge McNeill.
 
@@ -289,7 +289,7 @@ Defendant.
 | Ex parte orders | 24 (18.26% rate) |
 | Days of denied parenting time | 569+ |
 | Days of incarceration (contempt) | 59 |
-| Parental alienation score | 91% |
+| Parental alienation pattern | Severe — 230+ days withheld, 7 PPO weaponizations, 3 jailings |
 | Jobs lost to incarceration | 3 |
 | Child support (no evidentiary hearing) | $1,056.60/mo |
 | Complete authority chains | 4 of 4 |

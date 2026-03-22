@@ -96,7 +96,7 @@
 | T | Contempt Orders / Commitment Records | ⬜ OBTAIN from Clerk |
 | U | Employment Termination Records (3 jobs) | [ANDREW_REQUIRED] |
 | V | Child Support Order ($1,056.60/mo) | ⬜ OBTAIN from file |
-| W | Parental Alienation Analysis (91%) | ✅ AVAILABLE |
+| W | Parental Alienation Pattern Documentation | ✅ AVAILABLE |
 | X | Judicial Analysis Report | ✅ AVAILABLE (05_ANALYSIS/) |
 | Y | Benchbook Excerpts | ⬜ COMPILE |
 | Z | MCJC Canons 2 & 3 | ⬜ COMPILE |

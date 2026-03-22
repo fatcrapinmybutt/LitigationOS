@@ -113,7 +113,7 @@ Petitioner Andrew J. Pigors, appearing pro se, respectfully petitions this Honor
 
 ### A. Background and Parties
 
-5. Petitioner Andrew J. Pigors is the biological father of L.D.W. (Lincoln David Watson), a minor child born [ANDREW_REQUIRED: Child's DOB]. Petitioner has been found to be a fit parent. No court has ever found Petitioner to pose a danger to L.D.W.
+5. Petitioner Andrew J. Pigors is the biological father of L.D.W. (L.D.W. (minor child, born November 9, 2022)), a minor child born [ANDREW_REQUIRED: Child's DOB]. Petitioner has been found to be a fit parent. No court has ever found Petitioner to pose a danger to L.D.W.
 
 6. Respondent Emily A. Watson is L.D.W.'s mother. Watson was formerly represented by Jennifer Barnes, Esq. (P55406) [WITHDREW — verify current counsel via MiFILE]
 
@@ -168,7 +168,7 @@ Petitioner Andrew J. Pigors, appearing pro se, respectfully petitions this Honor
 
 19. L.D.W. has been separated from his father for 200+ consecutive days. Developmental research establishes that prolonged, involuntary parent-child separation causes severe emotional, psychological, and developmental harm to children. See Affidavit of Andrew J. Pigors, filed herewith.
 
-20. The parental alienation probability score in this case has been assessed at 91%, indicating a near-certainty that L.D.W. is being actively alienated from his father — with the lower court's acquiescence.
+20. The documented pattern of parental alienation in this case is severe: 230+ consecutive days of withheld parenting time, 7 instances of PPO weaponization, 3 separate jailings for contact attempts, and Albert Watson's recorded threat ("I will make sure you don't see your son") — all with the lower court's acquiescence.
 
 21. Every day that passes without intervention deepens the harm to L.D.W. This is not a case where the appellate process can run its course. The Court of Appeals cannot restore the days, weeks, and months of L.D.W.'s childhood that are being irretrievably lost.
 

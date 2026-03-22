@@ -7,7 +7,7 @@ ANDREW J. PIGORS,                    Case No. 2024-001507-DC
     
 v.
 
-TIFFANY EMILY WATSON (fka PIGORS),
+Emily A. Watson (fka PIGORS),
     Defendant/Mother.
 ____________________________________________/
 
@@ -24,7 +24,7 @@ Plaintiff / Father,
 
 v. Case No. 2024-001507-DC
 
-**TIFFANY EMILY WATSON,** Hon. [Assigned Judge]
+**Emily A. Watson,** Hon. [Assigned Judge]
 Defendant / Mother.
 
 ---
@@ -240,7 +240,7 @@ date for the entire 571+ day period — is attached as **Exhibit C**.)*
 
 ## IX. DEFENDANT'S PROFESSIONAL BACKGROUND
 
-28. Upon information and belief, Defendant Tiffany Emily Watson has been
+28. Upon information and belief, Defendant Emily A. Watson has been
     employed for approximately nine (9) years in the **Kent County
     Prosecutor's Office, Family Court Division**.
 
@@ -291,7 +291,7 @@ Plaintiff / Father,
 
 v. Case No. 2024-001507-DC
 
-**TIFFANY EMILY WATSON,** Hon. [Assigned Judge]
+**Emily A. Watson,** Hon. [Assigned Judge]
 Defendant / Mother.
 
 ---
@@ -599,7 +599,7 @@ the child. The urgency of this motion cannot be overstated.
 
 ### A. Defendant's Professional Background
 
-Defendant Tiffany Emily Watson has been employed for approximately nine (9)
+Defendant Emily A. Watson has been employed for approximately nine (9)
 years in the **Kent County Prosecutor's Office, Family Court Division**.
 
 This fact is relevant not to prejudice Defendant, but to establish the depth
@@ -735,7 +735,7 @@ Plaintiff / Father,
 
 v. Case No. 2024-001507-DC
 
-**TIFFANY EMILY WATSON,** Hon. [Assigned Judge]
+**Emily A. Watson,** Hon. [Assigned Judge]
 Defendant / Mother.
 
 ---
@@ -810,7 +810,7 @@ Date: ____________________
 
 ---
 
-**CASE:**  Andrew J. Pigors v. Tiffany Emily Watson
+**CASE:**  Andrew J. Pigors v. Emily A. Watson
 
 **CASE NO.:**  2024-001507-DC
 
@@ -843,7 +843,7 @@ Laketon Township, MI 49445
 Telephone: (231) 903-5690
 
 **Defendant / Mother:**
-Tiffany Emily Watson
+Emily A. Watson
 Represented by: Jennifer L. Barnes (P[Bar No.])
 Barnes Law Firm PLLC
 880 Jefferson St, Suite B
@@ -886,7 +886,7 @@ Plaintiff / Father,
 
 v. Case No. 2024-001507-DC
 
-**TIFFANY EMILY WATSON,** Hon. [Assigned Judge]
+**Emily A. Watson,** Hon. [Assigned Judge]
 Defendant / Mother.
 
 ---
@@ -1169,7 +1169,7 @@ Total Exhibits: 15
 **Case No.:** 2024-001507-DC
 
 **Plaintiff:** Andrew J. Pigors
-**Defendant:** Tiffany Emily Watson
+**Defendant:** Emily A. Watson
 
 ---
 
@@ -1191,7 +1191,7 @@ I served the following document(s):
 ## 2. PERSON SERVED
 
 **Name:** Jennifer L. Barnes
-**Title/Capacity:** Attorney for Defendant Tiffany Emily Watson
+**Title/Capacity:** Attorney for Defendant Emily A. Watson
 **Firm:** Barnes Law Firm PLLC
 **Address:** 880 Jefferson St, Suite B, Muskegon, MI 49440
 
@@ -1280,7 +1280,7 @@ Plaintiff / Father,
 
 v. Case No. 2024-001507-DC
 
-**TIFFANY EMILY WATSON,** Hon. [Assigned Judge]
+**Emily A. Watson,** Hon. [Assigned Judge]
 Defendant / Mother.
 
 ---
@@ -1306,7 +1306,7 @@ Laketon Township, MI 49445
 **NOW COMES** Plaintiff, Andrew J. Pigors, appearing in propria persona, and
 respectfully moves this Honorable Court, pursuant to MCL 722.27a(7), MCR 3.208,
 and the Court's inherent contempt authority, for an Order to Show Cause why
-Defendant, Tiffany Emily Watson, should not be held in contempt of court for her
+Defendant, Emily A. Watson, should not be held in contempt of court for her
 willful, continuous, and systematic denial of Plaintiff's court-ordered
 parenting time. In support thereof, Plaintiff states as follows:
 
@@ -1602,7 +1602,7 @@ Plaintiff / Father,
 
 v. Case No. 2024-001507-DC
 
-**TIFFANY EMILY WATSON,** Hon. [Assigned Judge]
+**Emily A. Watson,** Hon. [Assigned Judge]
 Defendant / Mother.
 
 ---
@@ -1691,7 +1691,7 @@ in the premises;
 
 ### A. Contempt Finding
 
-16. Defendant Tiffany Emily Watson is found **IN CONTEMPT** of this Court's
+16. Defendant Emily A. Watson is found **IN CONTEMPT** of this Court's
     parenting time order dated [date].
 
 ### B. Immediate Resumption of Parenting Time

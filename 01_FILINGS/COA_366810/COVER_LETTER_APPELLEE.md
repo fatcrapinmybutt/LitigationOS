@@ -10,7 +10,7 @@ March 04, 2026
 
 ---
 
-**Ron Berry, Esq.**
+**Ronald Berry (non-attorney)**
 Attorney for Defendant-Appellee
 *[Address on file with Court]*
 

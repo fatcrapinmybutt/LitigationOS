@@ -40,7 +40,7 @@ The Court having reviewed the Petition, Brief in Support, Affidavit of Andrew J.
 
 The Court finding that:
 
-1. L.D.W. (Lincoln David Watson), a minor child, has been completely denied all contact with his father, Andrew J. Pigors, for **200+ consecutive days**;
+1. L.D.W. (L.D.W. (minor child, born November 9, 2022)), a minor child, has been completely denied all contact with his father, Andrew J. Pigors, for **200+ consecutive days**;
 
 2. No valid court order exists authorizing the complete termination of all contact between L.D.W. and his father;
 
@@ -68,7 +68,7 @@ The Writ of Habeas Corpus is hereby **ISSUED** and directed to Respondent Emily 
 
 ### 2. Production of the Child
 
-Respondent Emily A. Watson **SHALL produce L.D.W.** (Lincoln David Watson) at the following location within **forty-eight (48) hours** of service of this Order:
+Respondent Emily A. Watson **SHALL produce L.D.W.** (L.D.W.) at the following location within **forty-eight (48) hours** of service of this Order:
 
 **Location:** _________________________________ [To be designated by the Court]
 

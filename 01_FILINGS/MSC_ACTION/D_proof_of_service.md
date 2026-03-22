@@ -82,7 +82,7 @@ Address on file with the Court
 
 ---
 
-### 4. Ron Berry, Esq. (Appellee's Appellate Counsel — COA 366810)
+### 4. Ronald Berry (non-attorney, domestic partner of Emily Watson)
 
 **By: [ ] First-Class Mail, Postage Prepaid [ ] Personal Delivery [ ] Electronic Service**
 
@@ -154,7 +154,7 @@ Email: andrewjpigors@gmail.com
 | 14th Circuit Court Clerk | | | |
 | Hon. Jenny L. McNeill (via Clerk) | | | |
 | Emily A. Watson | | | |
-| Ron Berry, Esq. | | | |
+| Ronald Berry (non-attorney) | | | |
 | MI Court of Appeals | | | |
 | Muskegon Co. FOC | | | |
 

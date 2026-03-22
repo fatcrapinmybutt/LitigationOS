@@ -18,7 +18,7 @@
 | **ANDREW J. PIGORS,** | Supreme Court No. **[TO BE ASSIGNED]** |
 | *Plaintiff-Appellant,* | Court of Appeals No. **366810** |
 | v. | Lower Court Case No. **2024-001507-DC** |
-| **TIFFANY A. WATSON,** | Related: **2023-5907-PP** |
+| **Emily A. Watson,** | Related: **2023-5907-PP** |
 | *Defendant-Appellee.* | |
 
 ---

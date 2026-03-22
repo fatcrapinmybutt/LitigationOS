@@ -28,7 +28,7 @@ Address on file with the Court
 
 **Method:** First-class mail, postage prepaid
 
-### 2. Ron Berry, Esq. (Appellee's Appellate Counsel -- COA 366810)
+### 2. Ronald Berry (non-attorney, domestic partner of Emily Watson)
 
 ```
 1423 W. Norton Ave

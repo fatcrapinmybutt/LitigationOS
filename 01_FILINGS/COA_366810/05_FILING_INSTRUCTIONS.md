@@ -155,7 +155,7 @@ The fee waiver application requires:
 
 Per MCR 7.305(D), serve a copy of the Application for Leave to Appeal and all supporting documents on:
 
-1. **Tiffany A. Watson** (Defendant-Appellee)
+1. **Emily A. Watson** (Defendant-Appellee)
    - Serve through her attorney of record (if represented).
    - If pro se, serve at her last known address.
 
@@ -167,7 +167,7 @@ For the Complaint for Superintending Control under MCR 7.304:
    - Serve at: Muskegon County Hall of Justice, 990 Terrace Street, Muskegon, MI 49442
 2. **Hon. Jenny L. McNeill**
    - Service through the court clerk's office is typically appropriate.
-3. **Tiffany A. Watson** (as an interested party)
+3. **Emily A. Watson** (as an interested party)
    - Same service method as the Application.
 
 ### C. Method of Service

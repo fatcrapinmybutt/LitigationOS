@@ -31,7 +31,7 @@ Plaintiff Andrew J. Pigors, appearing pro se, respectfully submits this Verified
 
 ## PRELIMINARY STATEMENT
 
-1. This is a civil tort action seeking compensatory and exemplary damages for a coordinated, multi-year campaign by the Watson family to systematically deprive Plaintiff of his fundamental constitutional right to the care, custody, companionship, and society of his minor son, Lincoln David Watson ("L.D.W." or "the child"), born November 9, 2022.
+1. This is a civil tort action seeking compensatory and exemplary damages for a coordinated, multi-year campaign by the Watson family to systematically deprive Plaintiff of his fundamental constitutional right to the care, custody, companionship, and society of his minor son, L.D.W. (minor child, born November 9, 2022) ("L.D.W." or "the child"), born November 9, 2022.
 
 2. This action is filed as a separate civil case, independent of the pending domestic relations matter styled *Pigors v. Watson*, Case No. 2024-001507-DC, 14th Judicial Circuit Court. The Michigan Supreme Court in *Adair v. State*, 470 Mich 105; 680 NW2d 386 (2004), recognizes that tort claims arising from conduct related to a domestic relations matter may be brought as independent civil actions. The causes of action pleaded herein sound in tort, fraud, and equity — not domestic relations — and are therefore properly brought as a separate case.
 

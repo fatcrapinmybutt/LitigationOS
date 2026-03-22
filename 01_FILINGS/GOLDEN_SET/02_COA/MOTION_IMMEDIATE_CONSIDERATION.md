@@ -33,7 +33,7 @@ Defendant-Appellee.
 
 1. This is an emergency motion requesting that the Michigan Court of Appeals expedite its review of Plaintiff-Appellant's Application for Leave to Appeal from orders of the 14th Circuit Court, Family Division, Muskegon County (Hon. Jenny L. McNeill, presiding).
 
-2. The orders below have resulted in the **complete termination** of Father's parenting time with his three-year-old son, Lincoln David Watson (DOB: November 9, 2022). Father has been denied ALL contact with his child for **more than 200 consecutive days** and counting.
+2. The orders below have resulted in the **complete termination** of Father's parenting time with his three-year-old son, L.D.W. (minor child, born November 9, 2022) (DOB: November 9, 2022). Father has been denied ALL contact with his child for **more than 200 consecutive days** and counting.
 
 3. Each day that passes without appellate review causes **irreparable developmental harm** to a child in the critical attachment period of early childhood. The normal appellate timeline — measured in months or years — would cause further irreversible damage to the parent-child bond that this Court has the power to prevent.
 
@@ -65,7 +65,7 @@ Defendant-Appellee.
 
 #### B. The Child Is Three Years Old — Critical Attachment Period
 
-10. Lincoln David Watson was born on November 9, 2022. He is now approximately three years and three months old. He has spent more than **one-quarter of his entire life** without any contact with his father.
+10. L.D.W. was born on November 9, 2022. He is now approximately three years and three months old. He has spent more than **one-quarter of his entire life** without any contact with his father.
 
 11. Developmental psychology research consistently establishes that the period from birth to age five is the most critical period for attachment formation. Secure attachment to both parents during this period is essential for:
    - Emotional regulation development;

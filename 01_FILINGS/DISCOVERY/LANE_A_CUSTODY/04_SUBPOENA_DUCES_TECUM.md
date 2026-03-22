@@ -54,7 +54,7 @@ Muskegon, MI 49442
 
 1.1. All records of any mental health evaluation, psychological assessment, or psychiatric evaluation of Plaintiff Andrew J. Pigors from October 1, 2023 through the present.
 
-1.2. All records of any mental health evaluation, psychological assessment, or treatment records for L.D.W. (Lincoln David Watson, DOB 11/9/2022) from October 1, 2023 through the present.
+1.2. All records of any mental health evaluation, psychological assessment, or treatment records for L.D.W. (L.D.W. (minor child, born November 9, 2022), DOB 11/9/2022) from October 1, 2023 through the present.
 
 1.3. All intake documents, referral sources, and the identity of any person who referred either party for evaluation or treatment.
 
@@ -104,7 +104,7 @@ Muskegon, MI 49440
 
 **Documents Requested:**
 
-3.1. Complete educational records for L.D.W. (Lincoln David Watson, DOB 11/9/2022) from October 1, 2023 through the present.
+3.1. Complete educational records for L.D.W. (L.D.W., DOB 11/9/2022) from October 1, 2023 through the present.
 
 3.2. All enrollment documents, registration forms, and emergency contact cards, including any changes to emergency contacts during the period.
 
@@ -131,7 +131,7 @@ Muskegon, MI 49440
 
 **Documents Requested:**
 
-4.1. Complete medical records for L.D.W. (Lincoln David Watson, DOB 11/9/2022) from October 1, 2023 through the present.
+4.1. Complete medical records for L.D.W. (L.D.W., DOB 11/9/2022) from October 1, 2023 through the present.
 
 4.2. All immunization records, including dates of administration and whether both parents consented.
 

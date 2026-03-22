@@ -272,7 +272,7 @@ CUMULATIVE TOTAL    |   377    | 243  |  484   | 1,127* |
 
 | Metric | Value |
 |--------|------:|
-| **Parental alienation score** | **91%** |
+| **Documented parental alienation pattern** | **Severe — see incident documentation** |
 | Alienation enablement findings | 74 |
 | Alienation tactic findings | 50 |
 

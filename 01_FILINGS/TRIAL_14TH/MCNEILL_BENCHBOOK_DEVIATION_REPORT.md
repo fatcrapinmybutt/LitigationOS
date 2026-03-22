@@ -2019,7 +2019,7 @@ multiple categories.
   - *Contradicted by:* ions may be made with findings on only the contested issues. hoffman v hoffman, '119 mich app 79, 83; 326 nw2d 136 (1982)." shade v w
   - *Legal Authority:* MCR 3.206(A)
 
-- **[CRITICAL]** NTING TIME - IMAGES OF MINOR CHILD, LINCOLN WATSON) Case No: 24-01507-DC - Andrew J. Pigors v. Emily Watson 14th Circuit Court - Muskegon County Judge Jenny L. McNeill Date of Hearing: August 22, 2025 SCRIPT FOR THE RECORD: Your Honor, Pursuant to MRE 401-403, 901, 1001, and 1002, I respectfully ask...
+- **[CRITICAL]** NTING TIME - IMAGES OF MINOR CHILD, L.D.W. (minor child, born November 9, 2022)) Case No: 24-01507-DC - Andrew J. Pigors v. Emily Watson 14th Circuit Court - Muskegon County Judge Jenny L. McNeill Date of Hearing: August 22, 2025 SCRIPT FOR THE RECORD: Your Honor, Pursuant to MRE 401-403, 901, 1001, and 1002, I respectfully ask...
   - *Contradicted by:* cl 722.23 and the factors listed in the parenting time statute, mcl 722.27a(7), are relevant to the decision. pierron v pierron, 486 m
   - *Legal Authority:* MCR 3.206(A)
 

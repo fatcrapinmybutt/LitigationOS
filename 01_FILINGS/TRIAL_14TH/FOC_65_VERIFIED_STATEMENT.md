@@ -50,7 +50,7 @@
 
 | Field | Information |
 |-------|-------------|
-| **Full Name** | Lincoln D. Watson |
+| **Full Name** | L.D.W. (minor child, born November 9, 2022) |
 | **Date of Birth** | November 9, 2022 |
 | **Age** | 3 years |
 | **Current Residence** | With Defendant-Mother (per ex parte orders of August 8, 2025) |

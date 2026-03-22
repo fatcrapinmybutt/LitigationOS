@@ -79,11 +79,11 @@ Files should be filed in this sequence. The TRO is MOST URGENT (trailer being ta
 - [ ] Submit IFP application (28 USC § 1915)
 - [ ] Serve via US Marshal (federal rules) — ALL defendants:
   - Emily A. Watson (2160 Garland Dr, Norton Shores MI 49441)
-  - Ronald Berry — [ANDREW: VERIFY ADDRESS]
+  - Ronald Berry (2160 Garland Dr, Norton Shores, MI 49441)
   - Hon. Jenny L. McNeill (via County Clerk — judicial immunity may apply)
-  - Albert Watson — [ANDREW: PROVIDE ADDRESS]
-  - Cody Watson — [ANDREW: PROVIDE ADDRESS]
-  - Lori Watson — [ANDREW: PROVIDE ADDRESS]
+  - Albert Watson (1143 E Norton Ave, Norton Shores, MI 49441)
+  - Cody Watson (2160 Garland Dr, Norton Shores, MI 49441)
+  - Lori Watson (1143 E Norton Ave, Norton Shores, MI 49441)
   - Muskegon County (990 Terrace St, Muskegon MI 49442)
 - [ ] Note: 16 counts = 8 federal §1983 + 8 state tort (28 USC §1367 supplemental)
 

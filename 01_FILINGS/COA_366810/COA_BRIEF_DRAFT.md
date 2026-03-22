@@ -9,7 +9,7 @@ Plaintiff-Appellant,
 
 v.
 
-**TIFFANY EMILY WATSON (fka PIGORS),**
+**Emily A. Watson (fka PIGORS),**
 Defendant-Appellee.
 
 ---
@@ -127,7 +127,7 @@ This Court has jurisdiction pursuant to MCL 600.308 and MCR 7.203(A). Appellant 
 
 ### A. Background
 
-Appellant Andrew J. Pigors ("Father") and Defendant-Appellee Tiffany Emily Watson ("Mother") are the parents of Lincoln D. Watson, born November 9, 2022. The underlying domestic relations case, No. 2024-001507-DC, was filed in the 14th Judicial Circuit Court, Muskegon County, with the Honorable Jenny L. McNeill presiding.
+Appellant Andrew J. Pigors ("Father") and Defendant-Appellee Emily A. Watson ("Mother") are the parents of L.D.W. (minor child, born November 9, 2022), born November 9, 2022. The underlying domestic relations case, No. 2024-001507-DC, was filed in the 14th Judicial Circuit Court, Muskegon County, with the Honorable Jenny L. McNeill presiding.
 
 Mother has been employed for nine years at the Kent County Prosecutor's Office, Family Court Division, giving her extensive familiarity with family court procedures, judges, and legal strategies — a significant advantage over Father, who proceeds pro se.
 

@@ -10,7 +10,7 @@
 | | |
 | v. | **Hon. [Assigned Judge]** |
 | | |
-| **TIFFANY EMILY WATSON,** | |
+| **Emily A. Watson,** | |
 | Defendant/Mother. | |
 
 ---
@@ -37,7 +37,7 @@ upon the following individual(s) by the method(s) indicated:
 | **Name:** | Jennifer L. Barnes, Esq. |
 | **Firm:** | Barnes Law Firm PLLC |
 | **Address:** | 880 Jefferson St, Suite B, Muskegon, MI 49440 |
-| **Representing:** | Defendant/Mother, Tiffany Emily Watson |
+| **Representing:** | Defendant/Mother, Emily A. Watson |
 
 ### Method of Service:
 

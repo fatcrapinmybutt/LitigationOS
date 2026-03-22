@@ -25,7 +25,7 @@
 | **HON. JENNY L. McNEILL,** | **JURY TRIAL DEMANDED** |
 | *in her individual capacity,* | |
 | | |
-| **TIFFANY A. WATSON,** | |
+| **Emily A. Watson,** | |
 | | |
 | **PAMELA BARNES** (State Bar No. P55406), | |
 | *in her individual capacity,* | |
@@ -68,7 +68,7 @@ Plaintiff Andrew J. Pigors, proceeding *pro se*, files this Complaint against th
 
 5. **Hon. Jenny L. McNeill** ("Defendant McNeill") is sued in her **individual capacity** for actions taken in the complete absence of all jurisdiction and/or actions that were non-judicial in character. At all relevant times, Defendant McNeill served as a judge of the 14th Judicial Circuit Court, Muskegon County, Family Division, and presided over Cases No. 2024-001507-DC and 2023-5907-PP. Defendant McNeill acted under color of state law at all relevant times.
 
-6. **Tiffany A. Watson** ("Defendant Watson") is a citizen of the State of Michigan, residing in Muskegon County. Defendant Watson is the biological mother of L.D.W. and the defendant in the underlying state custody proceedings. Defendant Watson is named as a co-conspirator under 42 USC §§ 1985 and 1986 for her role in coordinating with state actors to deprive Plaintiff of his constitutional rights.
+6. **Emily A. Watson** ("Defendant Watson") is a citizen of the State of Michigan, residing in Muskegon County. Defendant Watson is the biological mother of L.D.W. and the defendant in the underlying state custody proceedings. Defendant Watson is named as a co-conspirator under 42 USC §§ 1985 and 1986 for her role in coordinating with state actors to deprive Plaintiff of his constitutional rights.
 
 7. **Pamela Barnes** (State Bar No. P55406) ("Defendant Barnes") is an attorney licensed to practice law in the State of Michigan. Defendant Barnes is sued in her **individual capacity** for actions taken as counsel for Defendant Watson that, in conspiracy with Defendant McNeill, deprived Plaintiff of his constitutional rights. At all relevant times, Defendant Barnes acted under color of state law by wielding the authority of the court system to accomplish the unconstitutional deprivation.
 
@@ -425,7 +425,7 @@ Andrew J. Pigors
 I hereby certify that on _________________, I caused a copy of this Complaint and Summons to be served upon each Defendant as follows:
 
 1. **Hon. Jenny L. McNeill** — [Service method per FRCP 4 and service plan]
-2. **Tiffany A. Watson** — [Service method per FRCP 4]
+2. **Emily A. Watson** — [Service method per FRCP 4]
 3. **Pamela Barnes** — [Service method per FRCP 4]
 4. **Muskegon County** — [Service on County Clerk per FRCP 4(j)(2)]
 5. **14th Judicial Circuit Court, FOC** — [Service per FRCP 4(j)(2)]

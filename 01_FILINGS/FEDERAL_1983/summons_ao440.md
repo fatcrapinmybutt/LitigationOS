@@ -68,7 +68,7 @@ Signature of Clerk or Deputy Clerk: ____________________________
 
 ---
 
-# SUMMONS 2 OF 5 — DEFENDANT: TIFFANY A. WATSON
+# SUMMONS 2 OF 5 — DEFENDANT: Emily A. Watson
 
 ---
 
@@ -82,7 +82,7 @@ Signature of Clerk or Deputy Clerk: ____________________________
 
 ---
 
-**TO:** TIFFANY A. WATSON
+**TO:** Emily A. Watson
 1423 W. Norton Ave, Norton Shores, MI 49441
 [City, State, ZIP]
 
@@ -306,7 +306,7 @@ Date: ____________________
 
 ---
 
-## PROOF OF SERVICE — DEFENDANT 2: TIFFANY A. WATSON
+## PROOF OF SERVICE — DEFENDANT 2: Emily A. Watson
 
 I declare under penalty of perjury that on _____________ (date), I served the summons and complaint on Defendant Watson by:
 

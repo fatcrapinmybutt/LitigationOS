@@ -1102,19 +1102,23 @@ Norton Shores, Michigan 49441
 
 **Ronald Berry**
 (Via U.S. Marshal Service pursuant to Fed. R. Civ. P. 4(c)(3) and 28 U.S.C. § 1915(d))
-[Address to be determined through discovery or U.S. Marshal diligent search — Berry is Defendant Watson's domestic partner and believed to reside at or near 2160 Garland Drive, Norton Shores, MI 49441]
+2160 Garland Drive
+Norton Shores, Michigan 49441
 
 **Albert Watson**
 (Via U.S. Marshal Service pursuant to Fed. R. Civ. P. 4(c)(3) and 28 U.S.C. § 1915(d))
-[ANDREW: INSERT ADDRESS — believed to reside in Muskegon County, Michigan]
+1143 E Norton Ave
+Norton Shores, Michigan 49441
 
 **Cody Watson**
 (Via U.S. Marshal Service pursuant to Fed. R. Civ. P. 4(c)(3) and 28 U.S.C. § 1915(d))
-[ANDREW: INSERT ADDRESS — believed to reside in Muskegon County, Michigan]
+2160 Garland Drive
+Norton Shores, Michigan 49441
 
 **Lori Watson**
 (Via U.S. Marshal Service pursuant to Fed. R. Civ. P. 4(c)(3) and 28 U.S.C. § 1915(d))
-[ANDREW: INSERT ADDRESS — believed to reside in Muskegon County, Michigan]
+1143 E Norton Ave
+Norton Shores, Michigan 49441
 
 **Muskegon County (14th Circuit Court)**
 (Via certified mail pursuant to Fed. R. Civ. P. 4(j)(2))

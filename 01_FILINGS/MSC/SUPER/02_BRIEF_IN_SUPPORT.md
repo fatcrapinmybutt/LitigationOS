@@ -161,7 +161,7 @@ The factual record supporting this Petition is set forth in detail in the Petiti
 
 ### A. The Custody Case
 
-1. Petitioner and Watson are the parents of L.D.W. (Lincoln David Watson), a minor child. The custody case (2024-001507-DC) and related PPO case (2023-5907-PP) are pending before the 14th Circuit Court.
+1. Petitioner and Watson are the parents of L.D.W. (L.D.W. (minor child, born November 9, 2022)), a minor child. The custody case (2024-001507-DC) and related PPO case (2023-5907-PP) are pending before the 14th Circuit Court.
 
 2. No court has ever found Petitioner to be an unfit parent or to pose a danger to L.D.W.
 
@@ -179,7 +179,7 @@ The factual record supporting this Petition is set forth in detail in the Petiti
 | **Contempt incarceration** | Petitioner jailed on civil contempt | 59+ days |
 | **Economic devastation** | Job loss, housing loss, financial ruin | 3 jobs, 2 homes, $82,250+ damages |
 | **Access barrier** | Bond on disqualification motion | $250 imposed on indigent litigant |
-| **Alienation indicator** | Parental alienation probability assessment | 91% score |
+| **Alienation indicator** | Documented parental alienation pattern | Severe — documented pattern |
 
 5. These facts are supported by the evidentiary record, as detailed in the Affidavit of Andrew J. Pigors and exhibits thereto.
 
@@ -381,7 +381,7 @@ L.D.W. has been separated from his father for 200+ days. No court has found that
 2. Judge McNeill refuses to enforce those provisions; and
 3. The disqualification remedy is blocked by a $250 bond.
 
-The parental alienation probability assessment of 91% indicates that L.D.W. is being actively alienated from his father. Developmental research establishes that parental alienation causes severe and lasting psychological harm to children, including anxiety, depression, low self-esteem, difficulty forming relationships, and identity confusion.
+The documented pattern of systematic parental alienation indicates that L.D.W. is being actively alienated from his father. Developmental research establishes that parental alienation causes severe and lasting psychological harm to children, including anxiety, depression, low self-esteem, difficulty forming relationships, and identity confusion.
 
 Every day without intervention deepens the harm. Unlike property or money, a child's developmental stages cannot be recovered. The months and years of L.D.W.'s childhood that have been lost to this separation are gone permanently.
 

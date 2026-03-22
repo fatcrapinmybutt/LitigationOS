@@ -41,7 +41,7 @@ I, **Andrew J. Pigors**, being first duly sworn upon oath, depose and state as f
 
 1. I am the Plaintiff in the above-captioned matters. I am over the age of 18 years and competent to testify to the matters stated herein. I make this Affidavit based on personal knowledge.
 
-2. I am the biological father of Lincoln Watson (DOB approximately 2022). I have appeared *in propria persona* (pro se) throughout these proceedings.
+2. I am the biological father of L.D.W. (minor child, born November 9, 2022) (DOB approximately 2022). I have appeared *in propria persona* (pro se) throughout these proceedings.
 
 3. I reside in Muskegon County, Michigan. My contact information is: telephone (231) 903-5690; email andrewjpigors@gmail.com.
 
@@ -180,7 +180,7 @@ I, **Andrew J. Pigors**, being first duly sworn upon oath, depose and state as f
 
    a. **Parent-child separation**: I was completely separated from my three-year-old son Lincoln for approximately four months (August–November 2025) based on an ex parte order entered without proper findings. In total, I have been denied parenting time for **569+ cumulative days** through a combination of ex parte suspensions, Defendant's willful obstruction, and the Court's refusal to enforce its own orders.
 
-   b. **91% parental alienation score**: Forensic analysis documents that the Court's systematic removal of me from my child's life has produced a parental alienation score of **91%**, reflecting near-total destruction of the father-child relationship.
+   b. a documented pattern of parental alienation under MCL 722.23(j): Forensic analysis documents that the Court's systematic removal of me from my child's life has produced a parental the documented alienation pattern is severe, as established by the specific incidents detailed herein, reflecting near-total destruction of the father-child relationship.
 
    c. **Missed developmental milestones**: I missed my son's 3rd birthday, Labor Day 2025, and numerous developmental milestones during the separation.
 

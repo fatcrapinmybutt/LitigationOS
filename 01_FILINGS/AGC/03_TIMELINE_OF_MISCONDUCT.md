@@ -98,7 +98,7 @@ This timeline documents Attorney Berry's specific acts organized by date. Items 
 |--------|-------|--------|
 | Total days of denied parenting time | 200+ consecutive (300+ total) | Court records and parenting time logs |
 | Total documented interference incidents | 305 | Compiled interference incident log |
-| Parental alienation score | 91% | Alienation criteria analysis |
+| Parental alienation pattern | Severe — 230+ days withheld, 7 PPO weaponizations, 3 jailings | Documented incident compilation |
 | Ex parte communication rate | 44% (24 of 55 orders) | Court docket analysis |
 | Best interest factors favoring Pigors | 12 of 12 | MCL 722.23 factor analysis |
 | Child support imposed | $1,056.60/month | Court order |

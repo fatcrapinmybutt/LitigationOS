@@ -267,7 +267,7 @@ Under MCL 722.23, the court must consider twelve statutory factors in determinin
 | **MCR 3.211** | Show cause proceedings | Available remedy for Mother's contempt |
 | **MCR 2.003** | Disqualification of judge | Bias demonstrated by failure to address alienation |
 | **MCR 2.105** | Service of process | Service defects in underlying proceedings |
-| **MCR 7.304** | Original proceedings in Supreme Court | Extraordinary relief for constitutional violations |
+| **MCR 7.306** | Original proceedings in Supreme Court | Extraordinary relief for constitutional violations |
 | **MCR 7.316** | Miscellaneous relief in Supreme Court | Emergency superintending control |
 | **MCR 8.119(F)** | Court records access | Father's right to access sealed records |
 | **MRE 901** | Authentication of evidence | Unauthenticated evidence (fabricated mental health evaluation) admitted against Father |
@@ -278,12 +278,11 @@ Under MCL 722.23, the court must consider twelve statutory factors in determinin
 |------|----------|-----------|
 | **Pierron v. Pierron** | 282 Mich App 222 (2009) | Factor (j) — alienating parent's interference with relationship is ground for custody modification |
 | **Pickering v. Pickering** | 268 Mich App 1 (2005) | Factor (j) — willingness to foster parent-child relationship; alienation as basis for change of custody |
-| **Sanders v. Sanders** | Mich App | Parental alienation pattern as basis for modification |
 | **Caperton v. A.T. Massey Coal Co.** | 556 US 868 (2009) | Appearance of judicial impropriety; due process requires fair tribunal |
 | **Boddie v. Connecticut** | 401 US 371 (1971) | Constitutional right of access to courts |
 | **Troxel v. Granville** | 530 US 57 (2000) | Fundamental liberty interest in parent-child relationship |
 | **Santosky v. Kramer** | 455 US 745 (1982) | Due process protections before deprivation of parental rights |
-| **M.L.B. v. S.L.J.** | 519 US 102 (1997) | Equal protection in parental rights proceedings |
+| **M.L.B. v. S.L.J.** | 519 US 102 (1996) | Equal protection in parental rights proceedings |
 
 ### D. Constitutional Provisions
 

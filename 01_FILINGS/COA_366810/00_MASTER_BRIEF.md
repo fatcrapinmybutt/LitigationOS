@@ -8,7 +8,7 @@
      MCR 7.212(C) — Full Compliance
      COA Case No. 366810
      LC Case No. 2024-001507-DC
-     Andrew J. Pigors v. Tiffany Emily Watson
+     Andrew J. Pigors v. Emily A. Watson
      14th Circuit Court, Muskegon County
      Hon. Jenny L. McNeill
      ============================================================
@@ -31,7 +31,7 @@
 v.                                                    COA Case No. **366810**
                                                       LC Case No. **2024-001507-DC**
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
      Defendant-Appellee.
 
 ---
@@ -255,7 +255,7 @@ Plaintiff-Appellant states that the trial court erred and that each of the follo
 
 ## A. The Parties and the Minor Child
 
-1. Plaintiff-Appellant Andrew J. Pigors ("Father") and Defendant-Appellee Tiffany Emily Watson ("Mother") are the parents of one minor child, Lincoln, born in 2022. (Lower Ct. Rec., pp. 1–3, Complaint.) At the time of the proceedings below, Lincoln was approximately two to three years old — a critical stage of early childhood development.
+1. Plaintiff-Appellant Andrew J. Pigors ("Father") and Defendant-Appellee Emily A. Watson ("Mother") are the parents of one minor child, Lincoln, born in 2022. (Lower Ct. Rec., pp. 1–3, Complaint.) At the time of the proceedings below, Lincoln was approximately two to three years old — a critical stage of early childhood development.
 
 2. Father and Mother were not married. Custody proceedings were initiated in the 14th Circuit Court, Muskegon County, under Case No. 2024-001507-DC. (Lower Ct. Rec., p. 1, Register of Actions.)
 

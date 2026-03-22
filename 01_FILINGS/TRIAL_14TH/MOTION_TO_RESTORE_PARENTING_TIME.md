@@ -15,7 +15,7 @@ Plaintiff, *Pro Se*,
 
 **Hon. Jenny L. McNeill**
 
-**TIFFANY WATSON (fka PIGORS),**
+**Emily A. Watson (fka PIGORS),**
 Defendant.
 
 ___________________________________________/
@@ -85,7 +85,7 @@ A hearing on this Emergency Motion is requested on an **expedited basis**. Movan
 
 7. Plaintiff Andrew J. Pigors ("Father") is the biological father of the minor child, L.D.W. (DOB: November 9, 2022), and resides at 1977 Whitehall Road, Lot 17, Laketon Township, Michigan 49445.
 
-8. Defendant Emily A. Watson, formerly known as Tiffany Pigors ("Mother"), is the biological mother of the minor child.
+8. Defendant Emily A. Watson ("Mother"), is the biological mother of the minor child.
 
 ---
 

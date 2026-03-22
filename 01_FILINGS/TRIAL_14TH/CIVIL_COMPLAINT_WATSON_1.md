@@ -13,7 +13,7 @@ Plaintiff,
 
 v.
 
-**TIFFANY WATSON (fka PIGORS) and
+**Emily A. Watson (fka PIGORS) and
 EMILY WATSON,**
 Defendants.
 
@@ -40,7 +40,7 @@ andrewjpigors@gmail.com
 
 ## INTRODUCTORY STATEMENT
 
-1. Plaintiff Andrew Pigors ("Father" or "Plaintiff") brings this Verified Civil Complaint against Defendants Emily A. Watson (fka Pigors) ("Tiffany") and Emily Watson ("Emily") (collectively, "Defendants"), seeking compensatory and punitive damages for Defendants' systematic, willful, and malicious campaign to sever the bond between Plaintiff and his minor child, Lincoln ("the child"), over a period exceeding **329 consecutive days** of enforced zero contact.
+1. Plaintiff Andrew Pigors ("Father" or "Plaintiff") brings this Verified Civil Complaint against Defendants Emily A. Watson (fka Pigors) ("Emily") and Emily Watson ("Emily") (collectively, "Defendants"), seeking compensatory and punitive damages for Defendants' systematic, willful, and malicious campaign to sever the bond between Plaintiff and his minor child, L.D.W. ("the minor child"), over a period exceeding **329 consecutive days** of enforced zero contact.
 
 2. This complaint arises from a documented pattern of tortious conduct including, but not limited to: unilateral denial of all court-ordered parenting time; weaponization of ex parte proceedings to achieve de facto permanent custody through attrition; refusal of all video calls, make-up parenting time, and holiday access; interference by Defendants' family members at custody exchanges; and exploitation of Defendant Emily Watson's nine-year insider position at the Kent County Prosecutor's Office, Family Court Division, to gain procedural advantage in custody and Personal Protection Order ("PPO") proceedings.
 

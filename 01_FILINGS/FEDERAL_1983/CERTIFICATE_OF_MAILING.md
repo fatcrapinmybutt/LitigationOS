@@ -1,6 +1,6 @@
 # CERTIFICATE OF MAILING
 
-**Case:** ANDREW PIGORS, Plaintiff, /     v. / HON. JENNY L. MCNEILL, in her individual capacity; / TIFFANY WATSON; / et al., Defendants.
+**Case:** ANDREW PIGORS, Plaintiff, /     v. / HON. JENNY L. MCNEILL, in her individual capacity; / Emily A. Watson; / et al., Defendants.
 **Court:** United States District Court, Western District of Michigan
 
 ---

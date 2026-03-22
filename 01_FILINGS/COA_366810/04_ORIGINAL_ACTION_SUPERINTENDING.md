@@ -234,7 +234,7 @@ Andrew J. Pigors, Pro Se, Muskegon, Michigan 49442
 **Hon. Jenny L. McNeill**
 [Per court rules for service on a judicial officer]
 
-**Tiffany A. Watson** (Interested Party)
+**Emily A. Watson** (Interested Party)
 [Through her attorney of record, if applicable]
 Andrew J. Pigors, Pro Se, Muskegon, Michigan 49442
 

@@ -37,7 +37,7 @@ The opposing party's name is inconsistent. The ACTIVE packages use "Emily A. Wat
 |---|------|------|---------------|---------------|----------|
 | 1 | `TRIAL_14TH\shady_oaks_mega_complaint.md` | — | Not mentioned (housing case) | N/A — not a party to housing | INFO |
 
-**VERDICT:** All 16 active packages correctly use "Emily A. Watson" in captions. The "Tiffany Emily Watson" and "Emily A. Watson" variants exist only in OLDER/LEGACY files outside the active package set. **No action needed on active packages for this item.**
+**VERDICT:** All 16 active packages correctly use "Emily A. Watson" in captions. The "Emily A. Watson" and "Emily A. Watson" variants exist only in OLDER/LEGACY files outside the active package set. **No action needed on active packages for this item.**
 
 #### 1B. Andrew J. Pigors — "Andrew James" Variant ⚠️ HIGH
 
@@ -51,7 +51,7 @@ The opposing party's name is inconsistent. The ACTIVE packages use "Emily A. Wat
 
 #### 1C. Child Name Privacy (L.D.W.) ✅ CLEAN IN ACTIVE PACKAGES
 
-All 16 active packages correctly use "L.D.W." with at most one alias definition per document. The bare "Lincoln David Watson" usage found by the broader audit exists only in legacy/older TRIAL_14TH files OUTSIDE the active package subdirectories.
+All 16 active packages correctly use "L.D.W." with at most one alias definition per document. The bare "L.D.W. (minor child, born November 9, 2022)" usage found by the broader audit exists only in legacy/older TRIAL_14TH files OUTSIDE the active package subdirectories.
 
 **Verified clean:**
 - CONVERGENCE\CONVERGENCE_BRIEF_CROSS_LANE.md — Uses "L.D.W." throughout ✅

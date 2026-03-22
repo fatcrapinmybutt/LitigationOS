@@ -2,7 +2,7 @@
 
 ## Pursuant to Federal Rule of Civil Procedure 5(b)
 
-**Case:** ANDREW PIGORS, Plaintiff, /     v. / HON. JENNY L. MCNEILL, in her individual capacity; / TIFFANY WATSON; / et al., Defendants.
+**Case:** ANDREW PIGORS, Plaintiff, /     v. / HON. JENNY L. MCNEILL, in her individual capacity; / Emily A. Watson; / et al., Defendants.
 **Court:** United States District Court, Western District of Michigan
 
 I, Andrew Pigors, hereby certify that on **March 04, 2026**, I served a true and correct copy of the **42 U.S.C. Section 1983 Civil Rights Complaint** and all attached exhibits upon the following parties by the methods indicated:

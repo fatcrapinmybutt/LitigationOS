@@ -15,7 +15,7 @@
 v.                                                    COA Case No. **366810**
                                                       LC Case No. **2024-001507-DC**
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
      Defendant-Appellee.
 
 ---
@@ -60,7 +60,7 @@ Muskegon, MI 49440
 
 ---
 
-**Tiffany Emily Watson**
+**Emily A. Watson**
 Defendant-Appellee
 c/o Jennifer L. Barnes (P55406)
 Barnes Law Firm PLLC
@@ -114,7 +114,7 @@ I, Andrew J. Pigors, being duly sworn, depose and say:
    ☒ Electronic service via Michigan TrueFiling system
    ☒ First-class U.S. Mail, postage prepaid
 
-   **Tiffany Emily Watson**
+   **Emily A. Watson**
    c/o Jennifer L. Barnes
    880 Jefferson St, Suite B
    Muskegon, MI 49440

@@ -295,7 +295,7 @@
 - **Andrew James Pigors** (DOB 12/30/87) — Plaintiff/Respondent, 1977 Whitehall Rd Lot 17, Muskegon MI 49445, (231) 903-5690 / (231) 740-0992 / (231) 260-1936
 
 ### Minor Child
-- **Lincoln David Watson** (DOB 11/09/2022) — Minor child at issue
+- **L.D.W. (minor child, born November 9, 2022)** (DOB 11/09/2022) — Minor child at issue
 
 ---
 

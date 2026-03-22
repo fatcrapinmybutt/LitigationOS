@@ -111,7 +111,7 @@ Muskegon County, MI 49445
     a. Refusing to produce L.D.W. for scheduled parenting time;
     b. Failing to respond to communications regarding scheduling;
     c. Making false allegations to law enforcement;
-    d. Engaging in conduct consistent with a pattern of parental alienation, which an analysis of the documented incidents scores at 91% on recognized alienation metrics;
+    d. Engaging in conduct consistent with a pattern of parental alienation, which an analysis of the documented incidents reflects a severe pattern under recognized alienation frameworks;
     e. [ANDREW_REQUIRED: Additional specific interference examples with approximate dates].
 
 ### E. Father's Genuine Child Welfare Concerns

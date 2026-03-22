@@ -31,7 +31,7 @@ I, Andrew J. Pigors, being first duly sworn, depose and state as follows:
 
 2. I reside at 1977 Whitehall Rd, Laketon Township, Muskegon County, Michigan 49445.
 
-3. I am the biological father of L.D.W. (Lincoln David Watson), a minor child. I have been L.D.W.'s father since the day he was born, and I love him more than anything in this world.
+3. I am the biological father of L.D.W. (L.D.W. (minor child, born November 9, 2022)), a minor child. I have been L.D.W.'s father since the day he was born, and I love him more than anything in this world.
 
 4. Emily A. Watson ("Respondent") is L.D.W.'s biological mother. Respondent currently has physical custody of L.D.W.
 

@@ -324,7 +324,7 @@ The danger claims that underpin the ex parte suspension are **systematically deb
 | 4 | **Notarized affidavit** — required for emergency application | **CRITICAL** | Schedule notary |
 | 5 | **Severity field in judicial_violations** — many show "medium" text rather than numeric scale | LOW | Does not affect legal arguments |
 | 6 | **COA 366810 current status** — last docket entry Sept 2025 | MEDIUM | Check COA online docket for updates |
-| 7 | **Emily claims by actor** — 0 rows matched Emily/Watson/Tiffany/Defendant in actor field | LOW | Claims may use different actor naming |
+| 7 | **Emily claims by actor** — 0 rows matched Emily/Watson/Defendant in actor field | LOW | Claims may use different actor naming |
 
 ### Deadlines
 

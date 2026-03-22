@@ -12,7 +12,7 @@
 
 v.
 
-**TIFFANY A. WATSON** (a/k/a Emily Watson), et al., Defendants.
+**Emily A. Watson** (a/k/a Emily Watson), et al., Defendants.
 
 ---
 

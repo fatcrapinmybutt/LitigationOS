@@ -1,6 +1,6 @@
 # CERTIFICATE OF MAILING
 
-**Case:** ANDREW PIGORS, Plaintiff, /     v. / TIFFANY WATSON, Defendant.
+**Case:** ANDREW PIGORS, Plaintiff, /     v. / Emily A. Watson, Defendant.
 **Case No.:** 2024-001507-DC
 **Court:** 14th Circuit Court, Muskegon County
 
@@ -20,7 +20,7 @@ addressed to the following persons at the addresses stated below:
 Muskegon, MI [ZIP]
 ```
 
-**2. Ron Berry, Esq. (Attorney for Defendant)**
+**2. Ronald Berry (non-attorney, domestic partner of Emily Watson)**
 ```
 [ADDRESS ON FILE]
 [CITY], MI [ZIP]

@@ -10,7 +10,7 @@
 | **ANDREW PIGORS,** | **Case No. 366810** |
 | Plaintiff-Appellant, | **Lower Court No. 2024-001507-DC** |
 | v. | **14th Circuit Court** |
-| **TIFFANY WATSON (fka PIGORS),** | **Muskegon County** |
+| **Emily A. Watson (fka PIGORS),** | **Muskegon County** |
 | Defendant-Appellee. | **Hon. Jenny L. McNeill** |
 
 ---

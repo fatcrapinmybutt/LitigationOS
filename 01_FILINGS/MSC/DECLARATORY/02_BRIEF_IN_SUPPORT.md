@@ -100,7 +100,7 @@ As a direct result of the ex parte orders, Plaintiff has been denied all parenti
 
 ### C. Defendant Watson's Conduct
 
-Defendant Watson has engaged in 305 documented instances of parenting time interference, achieving a 91% parental alienation score. She defied FOC recommendations repeatedly without consequence. Watson also characterized Plaintiff's single, good-faith report to CPS about observed bruising on L.D.W. — supported by photographs, journal entries, and a police report — as "harassment," which was used to further restrict Plaintiff's parenting time.
+Defendant Watson has engaged in 305 documented instances of parenting time interference, achieving a documented pattern of parental alienation under MCL 722.23(j). She defied FOC recommendations repeatedly without consequence. Watson also characterized Plaintiff's single, good-faith report to CPS about observed bruising on L.D.W. — supported by photographs, journal entries, and a police report — as "harassment," which was used to further restrict Plaintiff's parenting time.
 
 ### D. FOC Recommendations Overridden
 

@@ -87,7 +87,7 @@ NOW COMES Petitioner, **ANDREW J. PIGORS**, appearing Pro Se, and respectfully a
 
 12. The underlying claims are not frivolous. They are supported by:
    - A comprehensive evidence archive of **224,000+ evidence rows** compiled over 18+ months of litigation;
-   - A documented **91% parental alienation score** based on independent behavioral indicators;
+   - A documented pattern of parental alienation under MCL 722.23(j) based on independent behavioral indicators;
    - An independently verified **44% ex parte rate** (24 of 55 orders) in the trial court proceedings;
    - Contemporaneous audio recordings, court transcripts, and documentary evidence of judicial misconduct.
 

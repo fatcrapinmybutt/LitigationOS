@@ -129,7 +129,7 @@ The evidence supporting this complaint is drawn from extensive documented eviden
 
 1. **Facilitating Parental Alienation Causing Direct Harm to Minor Child L.D.W.** Attorney Berry's litigation strategy directly facilitated and perpetuated the alienation of the minor child L.D.W. from his father, Andrew J. Pigors. The evidence documents:
 
-   - **91% parental alienation score** based on established alienation criteria
+   - a documented pattern of parental alienation under MCL 722.23(j) based on established alienation criteria
    - **200+ consecutive days** of denied parenting time
    - **305 documented interference incidents** by Emily A. Watson, enabled and defended by Attorney Berry's litigation conduct
 

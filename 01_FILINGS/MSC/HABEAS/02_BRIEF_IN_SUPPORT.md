@@ -122,7 +122,7 @@ This petition is not about visitation schedules or custody percentages. It is ab
 
 ### A. Background
 
-Andrew J. Pigors is the biological father of L.D.W. (Lincoln David Watson). Emily A. Watson is L.D.W.'s mother. The underlying custody matter is pending in the 14th Judicial Circuit Court, Muskegon County, under Case No. 2024-001507-DC, with the Honorable Jenny L. McNeill presiding.
+Andrew J. Pigors is the biological father of L.D.W. (L.D.W. (minor child, born November 9, 2022)). Emily A. Watson is L.D.W.'s mother. The underlying custody matter is pending in the 14th Judicial Circuit Court, Muskegon County, under Case No. 2024-001507-DC, with the Honorable Jenny L. McNeill presiding.
 
 ### B. The 200+ Day Severance
 

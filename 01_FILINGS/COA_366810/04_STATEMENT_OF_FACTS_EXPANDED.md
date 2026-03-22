@@ -26,11 +26,11 @@ At every phase, Father was denied the fundamental procedural safeguards that the
 
 ## I. THE PARTIES AND THE CHILD
 
-Andrew J. Pigors ("Father" or "Plaintiff-Appellant") and Tiffany A. Watson ("Mother" or "Defendant-Appellee") are the biological parents of L.D.W., a minor child born on November 9, 2022. (LCR, Complaint for Custody, Parenting Time, and Child Support, filed 04/01/2024.) At the time proceedings commenced, L.D.W. was approximately one year old — a critical developmental period during which secure attachment bonds between parent and child are formed, consolidated, and essential to the child's psychological development.
+Andrew J. Pigors ("Father" or "Plaintiff-Appellant") and Emily A. Watson ("Mother" or "Defendant-Appellee") are the biological parents of L.D.W., a minor child born on November 9, 2022. (LCR, Complaint for Custody, Parenting Time, and Child Support, filed 04/01/2024.) At the time proceedings commenced, L.D.W. was approximately one year old — a critical developmental period during which secure attachment bonds between parent and child are formed, consolidated, and essential to the child's psychological development.
 
 Father was actively engaged in L.D.W.'s care and upbringing prior to the filing of any court proceedings. The record reflects that Father exercised a parenting role with L.D.W. and maintained a loving, bonded relationship with his son. (LCR, Father's Filings; Father's Communications to FOC.) Father has consistently expressed his desire and commitment to maintain a meaningful relationship with L.D.W. and to participate in her upbringing, education, and development.
 
-Mother, Tiffany A. Watson, is the custodial parent under the orders entered below. The custody matter was assigned to the Honorable Jenny L. McNeill of the 14th Judicial Circuit Court, Muskegon County, Family Division. (LCR, Register of Actions ["ROA"].)
+Mother, Emily A. Watson, is the custodial parent under the orders entered below. The custody matter was assigned to the Honorable Jenny L. McNeill of the 14th Judicial Circuit Court, Muskegon County, Family Division. (LCR, Register of Actions ["ROA"].)
 
 ---
 

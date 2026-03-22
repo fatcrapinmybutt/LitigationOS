@@ -12,7 +12,7 @@ v.
 **14th Circuit Court No. 2024-001507-DC**
 **Court of Appeals No. 366810**
 
-**TIFFANY WATSON,**
+**Emily A. Watson,**
 Defendant-Appellee / Respondent.
 
 ---
@@ -48,7 +48,7 @@ Plaintiff-Petitioner Andrew Pigors ("Father"), proceeding pro se, respectfully s
 
 2. MCR 7.305(F) authorizes emergency procedures when "delay in taking an appeal or in seeking leave to appeal will cause substantial harm to the applicant or others." Each additional day that passes causes measurable, irreversible developmental harm to a child who is losing formative years of his relationship with his father.
 
-3. The child, Lincoln David Watson ("LDW"), born approximately 2022, is now approaching his fourth birthday. He has spent **more than one-third of his entire life** completely separated from his father. The Court's own prior finding — that "[b]oth parents have a strong bond with the minor child" and that "[t]his Factor is equal between the parties" — is being destroyed by the very orders this Court is asked to review.
+3. The child, L.D.W. (minor child, born November 9, 2022) ("LDW"), born approximately 2022, is now approaching his fourth birthday. He has spent **more than one-third of his entire life** completely separated from his father. The Court's own prior finding — that "[b]oth parents have a strong bond with the minor child" and that "[t]his Factor is equal between the parties" — is being destroyed by the very orders this Court is asked to review.
 
 4. Normal appellate timelines are wholly inadequate to address this emergency. Court of Appeals Case No. 366810 was filed in June 2025. Over seven months have passed with no substantive action. Normal COA briefing schedules contemplate 6–12 additional months. By the time the COA issues any ruling, the child will have spent **half his life** separated from his father.
 

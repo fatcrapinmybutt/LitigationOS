@@ -11,7 +11,7 @@ Plaintiff,
 v.                                                          **Civil Action No. ____________**
 
 **HON. JENNY L. McNEILL, in her individual**
-**capacity; TIFFANY WATSON; COUNTY OF**
+**capacity; Emily A. Watson; COUNTY OF**
 **MUSKEGON; and DOES 1–10,**
 
 **JURY DEMAND**
@@ -60,7 +60,7 @@ Plaintiff Andrew Pigors ("Plaintiff" or "Mr. Pigors"), proceeding *pro se*, brin
 
 10. Defendant **Hon. Jenny L. McNeill** ("Judge McNeill") is a judge of the 14th Circuit Court for the County of Muskegon, Michigan. She is sued in her **individual capacity only** for actions taken in the clear absence of all jurisdiction, and for non-judicial acts performed in an administrative or executive capacity that are not entitled to absolute judicial immunity. See *Mireles v. Waco*, 502 U.S. 9, 11–12 (1991); *Stump v. Sparkman*, 435 U.S. 349, 360 (1978).
 
-11. Defendant **Emily A. Watson** (f/k/a Tiffany Pigors) ("Watson") is a natural person, citizen of the State of Michigan, and resident of Muskegon County. Watson is the Defendant/Appellee in the underlying state-court proceedings. Watson is sued for conspiring with state actors and willfully using state judicial mechanisms to deprive Plaintiff of his constitutional rights while acting under color of state law. See *Dennis v. Sparks*, 449 U.S. 24, 27–28 (1980) (private party may be liable under § 1983 when engaged in conspiracy with state actor).
+11. Defendant **Emily A. Watson** ("Watson") is a natural person, citizen of the State of Michigan, and resident of Muskegon County. Watson is the Defendant/Appellee in the underlying state-court proceedings. Watson is sued for conspiring with state actors and willfully using state judicial mechanisms to deprive Plaintiff of his constitutional rights while acting under color of state law. See *Dennis v. Sparks*, 449 U.S. 24, 27–28 (1980) (private party may be liable under § 1983 when engaged in conspiracy with state actor).
 
 12. Defendant **County of Muskegon** ("the County") is a municipal entity organized under the laws of the State of Michigan. The County is the governing body responsible for the administration of the 14th Circuit Court, the Friend of the Court, and related judicial and quasi-judicial offices. The County is sued under *Monell v. Department of Social Services*, 436 U.S. 658 (1978), for maintaining policies, customs, and practices that caused the deprivation of Plaintiff's constitutional rights.
 

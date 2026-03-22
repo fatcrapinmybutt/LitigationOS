@@ -10,7 +10,7 @@ Plaintiff-Appellant,
 
 **v.** COA Case No. **366810**
 
-**TIFFANY A. WATSON,**
+**Emily A. Watson,**
 Defendant-Appellee.
 
 **Lower Court: 14th Circuit Court — Muskegon County**
@@ -35,7 +35,7 @@ upon the following parties by the methods indicated:
 | Field | Detail |
 |-------|--------|
 | **Name** | Jennifer L. Barnes (P55406) |
-| **Role** | Attorney for Defendant-Appellee Tiffany A. Watson |
+| **Role** | Attorney for Defendant-Appellee Emily A. Watson |
 | **Address** | 1423 W. Norton Ave, Norton Shores, MI 49441 |
 | **Method** | ☐ First-class U.S. Mail, postage prepaid |
 | | ☐ Electronic service via TrueFiling |
@@ -44,11 +44,11 @@ upon the following parties by the methods indicated:
 
 ---
 
-### 2. Defendant-Appellee — Tiffany A. Watson
+### 2. Defendant-Appellee — Emily A. Watson
 
 | Field | Detail |
 |-------|--------|
-| **Name** | Tiffany A. Watson |
+| **Name** | Emily A. Watson |
 | **Role** | Defendant-Appellee |
 | **Address** | 1423 W. Norton Ave, Norton Shores, MI 49441 |
 | **Method** | ☐ First-class U.S. Mail, postage prepaid |

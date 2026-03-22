@@ -192,7 +192,7 @@ Mother's household at 2160 Garland Dr, Norton Shores, MI 49441, includes Albert 
 
 #### (h) Home, School, and Community Record of the Child
 
-Lincoln David Watson was born November 9, 2022, and is currently approximately 2 years and 11 months old. At this age, the relevant 'community record' includes:
+L.D.W. (minor child, born November 9, 2022) was born November 9, 2022, and is currently approximately 2 years and 11 months old. At this age, the relevant 'community record' includes:
 
 - **Daycare/Childcare:** [Information to be supplemented upon FOIA receipt]
 - **Medical Records:** Father has consistently sought to maintain involvement in Lincoln's medical care. Mother has restricted Father's access to medical information.

@@ -232,7 +232,7 @@ Generated: 2026-03-04T22:41:47.897587
 - filing_path: C:\Users\andre\LitigationOS\01_COA_366810\COA_BRIEF_366810_FINAL.pdf
 - court: MI Court of Appeals
 - case_number: 366810
-- served_to: Ron Berry, Esq.
+- served_to: Ronald Berry (non-attorney)
 - served_address: [Address on file]
 - service_method: mifile
 - service_date: 2026-03-04

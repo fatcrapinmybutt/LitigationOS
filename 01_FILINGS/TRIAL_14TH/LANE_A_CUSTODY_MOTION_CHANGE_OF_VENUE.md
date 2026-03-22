@@ -10,7 +10,7 @@ Plaintiff,
 **v.** Case No. 2024-001507-DC
 Hon. Jenny L. McNeill
 
-**EMILY A. (TIFFANY) WATSON,**
+**EMILY A. WATSON,**
 Defendant.
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_/
@@ -31,7 +31,7 @@ Defendant.
 
 2. However, when the record demonstrates — as it does here — **540 documented benchbook violations**, **226 ex parte communication violations** (rated "critical" severity), **146 findings warranting disqualification under MCR 2.003** (rated "critical"), **169 due process violations**, and **329+ days of enforced parent-child separation** without a single best-interest-factor analysis under MCL 722.23, the presumption is overcome. An impartial trial cannot be had where this action is pending. MCR 2.222(A).
 
-3. The Defendant, Emily A. (Tiffany) Watson, spent **9+ years employed by the Kent County Prosecutor's Office, Family Court Division**, maintaining relationships with prosecutors, court staff, and judicial personnel across Western Michigan. Her significant other, **Ron Berry**, has documented connections to ex parte proceedings in this case, with his voicemail submitted as ex parte evidence and pre-listened in chambers. These combined insider connections taint both trial-level and appellate proceedings.
+3. The Defendant, Emily A. Watson, spent **9+ years employed by the Kent County Prosecutor's Office, Family Court Division**, maintaining relationships with prosecutors, court staff, and judicial personnel across Western Michigan. Her significant other, **Ron Berry**, has documented connections to ex parte proceedings in this case, with his voicemail submitted as ex parte evidence and pre-listened in chambers. These combined insider connections taint both trial-level and appellate proceedings.
 
 4. Plaintiff's minor child, Lincoln, has been separated from his father for **329+ consecutive days** — a period during which this Court has failed to conduct any best-interest analysis under MCL 722.23(a)–(l), failed to make findings of fact on contested issues as required by MCR 3.210(C), and has enabled a pattern of parental alienation under MCL 722.23(j) (Factor J).
 
@@ -82,7 +82,7 @@ Defendant.
 
 ### C. Defendant's Insider Connections
 
-11. Defendant Emily A. (Tiffany) Watson was employed by the **Kent County Prosecutor's Office, Family Court Division** for **9+ years**. This employment provided Defendant with deep familiarity with judicial personnel, court procedures, and prosecutorial staff across Western Michigan's legal community — including Muskegon County, which shares the same judicial circuit and professional network.
+11. Defendant Emily A. Watson was employed by the **Kent County Prosecutor's Office, Family Court Division** for **9+ years**. This employment provided Defendant with deep familiarity with judicial personnel, court procedures, and prosecutorial staff across Western Michigan's legal community — including Muskegon County, which shares the same judicial circuit and professional network.
 
 12. Defendant's significant other, **Ron Berry**, has documented connections to the proceedings in this case. The Berry Investigation database contains 8 verified evidence items establishing:
 
@@ -365,7 +365,7 @@ My Commission Expires: \_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 I, ANDREW J. PIGORS, certify that on \_\_\_\_\_\_\_\_\_\_\_\_\_\_, 2026, I served a true and correct copy of the foregoing **PLAINTIFF'S MOTION FOR CHANGE OF VENUE** and **PROPOSED ORDER** upon:
 
-**Emily A. (Tiffany) Watson**
+**Emily A. Watson**
 Defendant
 1977 Whitehall Road, Trailer 17, North Muskegon, MI 49445
 North Muskegon, MI 49445
@@ -404,7 +404,7 @@ Plaintiff,
 **v.** Case No. 2024-001507-DC
 Hon. Jenny L. McNeill
 
-**EMILY A. (TIFFANY) WATSON,**
+**EMILY A. WATSON,**
 Defendant.
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_/

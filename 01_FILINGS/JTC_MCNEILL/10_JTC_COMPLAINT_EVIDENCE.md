@@ -256,7 +256,7 @@ From `impeachment_items` table:
 |---------|-------|----------------|
 | COURT / Judge McNeill | **9,519** (62.7%) | Court's own statements form majority of impeachment material |
 | Andrew Pigors / PIGORS | 2,775 (18.3%) | Plaintiff's documented account |
-| Tiffany/Emily Watson | 1,453 (9.6%) | Defendant statements |
+| Emily A. Watson | 1,453 (9.6%) | Defendant statements |
 
 **The court's own record impeaches itself.** Nearly two-thirds of all impeachment items derive from the court's own statements, orders, and actions.
 

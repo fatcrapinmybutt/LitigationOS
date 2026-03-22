@@ -15,7 +15,7 @@
 |------|----------|-------|--------|
 | Plaintiff name | Andrew J. Pigors | Andrew J. Pigors | ✅ PASS |
 | Defendant name | Emily A. Watson | Emily A. Watson | ✅ PASS |
-| Child name/DOB | Lincoln David Watson, 11/9/2022 | Lincoln David Watson, DOB 11/9/2022 | ✅ PASS |
+| Child name/DOB | L.D.W. (minor child, born November 9, 2022), 11/9/2022 | L.D.W., DOB 11/9/2022 | ✅ PASS |
 | Case No. | 2024-001507-DC | 2024-001507-DC | ✅ PASS |
 | Separation days | 215+ | 215+ consecutive days | ✅ PASS |
 | Interference incidents | 305 | 305 | ✅ PASS |
@@ -213,7 +213,7 @@
 |------|----------|-------|--------|
 | Plaintiff name | Andrew J. Pigors | Andrew J. Pigors | ✅ PASS |
 | Defendant name | Emily A. Watson | Emily A. Watson | ✅ PASS |
-| Child name/DOB | Lincoln David Watson, 11/9/2022 | Lincoln David Watson (DOB 11/9/2022) | ✅ PASS |
+| Child name/DOB | L.D.W., 11/9/2022 | L.D.W. (DOB 11/9/2022) | ✅ PASS |
 | Case No. | 2024-001507-DC | 2024-001507-DC | ✅ PASS |
 | Separation days | 215+ | 215+ consecutive days | ✅ PASS |
 | Interference incidents | 305 | 305+ documented incidents | ✅ PASS |

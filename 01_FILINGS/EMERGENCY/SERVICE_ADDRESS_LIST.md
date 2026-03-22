@@ -27,7 +27,7 @@ Muskegon, MI [ZIP]
 
 **Method:** First-class mail
 
-### 2. Ron Berry, Esq. (Attorney for Defendant)
+### 2. Ronald Berry (non-attorney, domestic partner of Emily Watson)
 
 ```
 [ADDRESS ON FILE]

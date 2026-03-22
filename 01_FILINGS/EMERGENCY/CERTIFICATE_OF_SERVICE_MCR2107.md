@@ -12,7 +12,7 @@
 | **Case No.:** | 2024-001507-DC |
 | **Judge:** | Hon. [Assigned Judge] |
 | **Plaintiff/Father:** | Andrew J. Pigors |
-| **Defendant/Mother:** | Tiffany Emily Watson |
+| **Defendant/Mother:** | Emily A. Watson |
 
 ---
 
@@ -36,7 +36,7 @@
 | **Name:** | Jennifer L. Barnes, Esq. |
 | **Firm:** | Barnes Law Firm PLLC |
 | **Address:** | 880 Jefferson St, Suite B, Muskegon, MI 49440 |
-| **Representing:** | Defendant/Mother, Tiffany Emily Watson |
+| **Representing:** | Defendant/Mother, Emily A. Watson |
 
 ---
 

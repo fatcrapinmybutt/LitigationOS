@@ -56,7 +56,7 @@ The following 20 scanned documents in the production output specifically documen
 | B-6 | Order entered after submission of negative drug screen — no reference to results | [ANDREW_REQUIRED: Date] | `jtc scanned_0012.pdf` | Evidence disregarded without explanation |
 | B-7 | MCR 2.003 Disqualification Motion filed by Complainant (March 4, 2025) and ruling | 03/04/2025 | Court file | Court's refusal to disqualify despite documented bias |
 | B-8 | Checkbox-format orders without written findings of fact | Various | `jtc scanned_0013.pdf` – `0015.pdf` | Predetermined outcomes without MCR 2.517 analysis |
-| B-9 | Parental alienation assessment showing 91% score (Watson as alienating parent) | [ANDREW_REQUIRED: Date] | Assessment records | High alienation score ignored by court |
+| B-9 | Parental alienation assessment documenting severe alienation pattern based on specific incidents (Watson as alienating parent) | [ANDREW_REQUIRED: Date] | Assessment records | Documented alienation pattern (230+ days withheld, 7 PPO weaponizations) ignored by court |
 | B-10 | 305 Watson interference incidents compilation | Compiled | LitigationOS database | Documented pattern of interference tolerated by court |
 
 ---

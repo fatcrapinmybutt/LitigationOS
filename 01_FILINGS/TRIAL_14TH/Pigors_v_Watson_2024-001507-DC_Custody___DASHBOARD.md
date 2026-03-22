@@ -140,7 +140,7 @@ suspended                           filing DEADLINE
 - Appeals (±15 pts): **+13 pts** - Excellent appellate prospects
 - Strategy (5 pts max): **4 pts** - Strong strategic positioning
 
-**Total: 64/70 pts = 91% raw score**  
+**Documented Pattern: Severe parental alienation across multiple behavioral indicators**  
 **Adjusted for pro se disadvantage: 88%**
 
 ---

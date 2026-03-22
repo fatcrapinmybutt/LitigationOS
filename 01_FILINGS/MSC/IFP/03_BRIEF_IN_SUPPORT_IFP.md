@@ -141,7 +141,7 @@ Petitioner's claims are far from frivolous. They are supported by:
 
 1. **Massive evidentiary record.** Petitioner has compiled **224,000+ evidence rows** from 18+ months of litigation, including court transcripts, audio recordings, judicial orders, and documentary evidence — all indexed, deduplicated, and organized for court presentation.
 
-2. **Quantified parental alienation.** Independent behavioral analysis yields a **91% parental alienation probability score**, based on documented behavioral indicators and the systematic exclusion of Petitioner from his child's life.
+2. **Quantified parental alienation.** Independent behavioral analysis yields a documented pattern of parental alienation under MCL 722.23(j), based on documented behavioral indicators and the systematic exclusion of Petitioner from his child's life.
 
 3. **Documented ex parte abuse.** An independently verified **44% ex parte rate** (24 of 55 orders) demonstrates a pattern of proceedings conducted without notice to Petitioner, far exceeding any reasonable norm for ex parte activity in custody proceedings.
 

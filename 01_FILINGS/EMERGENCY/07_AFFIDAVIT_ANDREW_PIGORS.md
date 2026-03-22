@@ -161,7 +161,7 @@ I, ANDREW J. PIGORS, being first duly sworn, depose and state as follows:
     - The Watson family has coordinated to ensure my complete exclusion from my daughter's life
     - All investigations have cleared me, meaning the isolation has no legitimate safety basis
 
-27. As assessed under the Gardner 8-Factor Test, Warshak framework, and Bernet DSM diagnostic criteria, the alienation scores range from 4/5 to 5/5 on virtually all factors, rating as **SEVERE**.
+27. The documented pattern of conduct satisfies multiple recognized indicators of parental alienation: campaign of denigration (false accusations of assault, drug use, poisoning), restriction of contact (230+ days withheld), interference with communication (AppClose messages used as contempt basis), and extension to family network (Albert Watson's threat: "I will make sure you don't see your son"). The pattern is **severe** based on these documented incidents.
 
 ---
 

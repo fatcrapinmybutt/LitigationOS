@@ -117,7 +117,7 @@ Service pursuant to Fed. R. Civ. P. 4(e) — personal delivery, leaving at dwell
 
 ---
 
-## SUMMONS 3 OF 5: RON BERRY, ESQ.
+## SUMMONS 3 OF 5: Ronald Berry (non-attorney)
 
 ### AO 440 — SUMMONS IN A CIVIL ACTION
 
@@ -130,7 +130,7 @@ Hon. Jenny L. McNeill, et al., *Defendant(s)*
 
 Civil Action No. _______________
 
-**TO:** Ron Berry, Esq.
+**TO:** Ronald Berry (non-attorney)
 [ANDREW_REQUIRED: Berry's office address — check Michigan State Bar directory at https://member.michbar.org/]
 Muskegon County, MI
 
@@ -156,7 +156,7 @@ Signature of Clerk or Deputy Clerk: ________________________________
 ### USM-285 — PROCESS RECEIPT AND RETURN
 
 **Plaintiff:** Andrew J. Pigors
-**Defendant:** Ron Berry, Esq.
+**Defendant:** Ronald Berry (non-attorney)
 **Address for Service:** [ANDREW_REQUIRED: Berry's office address]
 **Case Number:** _______________
 
@@ -277,7 +277,7 @@ Muskegon, MI 49442
 |---|---|---|---|---|
 | 1 | Hon. Jenny L. McNeill | 990 Terrace St, Muskegon, MI 49442 | FRCP 4(e) + 4(j)(2) | **YES** |
 | 2 | Emily A. Watson | [ANDREW_REQUIRED] | FRCP 4(e) | No |
-| 3 | Ron Berry, Esq. | [ANDREW_REQUIRED] | FRCP 4(e) | No |
+| 3 | Ronald Berry (non-attorney) | [ANDREW_REQUIRED] | FRCP 4(e) | No |
 | 4 | Pamela Rusco | 990 Terrace St, Muskegon, MI 49442 | FRCP 4(e) + 4(j)(2) | **YES** |
 | 5 | Muskegon County | 990 Terrace St, Muskegon, MI 49442 | FRCP 4(j)(2) | No |
 

@@ -156,7 +156,7 @@ Exact quotes extracted from evidence, ready for citation.
    > "A Non-Jury  Trial Regarding  Custody,  Parenting  Time, and Child Support was;CategoryHub;Node;Violation"
 
 52. **Source:** `TONS OF TEXT.md`
-   > "3. Joint custody provides Lincoln Watson with the benefit of a balanced upbringing, involving both parents."
+   > "3. Joint custody provides L.D.W. (minor child, born November 9, 2022) with the benefit of a balanced upbringing, involving both parents."
 
 53. **Source:** `TONS OF TEXT.md`
    > ",Emily withheld LDW on his birthday weekend despite court schedules.,"

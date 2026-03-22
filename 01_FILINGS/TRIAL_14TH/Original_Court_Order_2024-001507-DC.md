@@ -36,7 +36,7 @@ A Non-Jury Trial Regarding Custody, Parenting Time, and Child Support was conduc
 2. Parties participated in a Facilitative Information Gathering Conference resulting in a temporary Ex Parte Order on April 29, 2024, which is hereby dismissed.
 3. This Judgment of Custody, Parenting Time, and Child Support is the initial Order regarding custody and parenting time.
 4. Plaintiff's six Motions filed on July 16, 2024, are denied as frivolous; further frivolous filings will incur sanctions.
-5. The minor child is Lincoln Watson, born November 9, 2022, now almost two years old.
+5. The minor child is L.D.W. (minor child, born November 9, 2022), born November 9, 2022, now almost two years old.
 6. Established Custodial Environment exists with both parties; burden of proof: clear and convincing.
 7. Best Interest Factors evaluated under MCL 722.23; findings favor Defendant on most factors, including stability, moral fitness, and parental cooperation.
 8. Clear and convincing evidence awards Defendant sole physical and legal custody; parties must communicate only via AppClose for emergencies.

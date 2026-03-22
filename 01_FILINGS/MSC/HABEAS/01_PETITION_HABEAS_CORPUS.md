@@ -61,7 +61,7 @@ Person Restrained.
 
 | Field | Detail |
 |-------|--------|
-| **Name** | L.D.W. (Lincoln David Watson), a minor |
+| **Name** | L.D.W. (L.D.W. (minor child, born November 9, 2022)), a minor |
 | **Age** | Minor child |
 | **Current Custodian** | Emily A. Watson (Respondent) |
 | **Nature of Restraint** | Complete denial of all contact with father for more than 200 consecutive days |
@@ -100,7 +100,7 @@ The Michigan Constitution provides that **"[t]he privilege of the writ of habeas
 
 ### A. The Parent-Child Relationship
 
-1. L.D.W. (Lincoln David Watson) is the biological son of Petitioner Andrew J. Pigors and Respondent Emily A. Watson.
+1. L.D.W. (L.D.W.) is the biological son of Petitioner Andrew J. Pigors and Respondent Emily A. Watson.
 
 2. Prior to the severance of contact, Petitioner had an active, loving, and involved relationship with L.D.W. Petitioner participated fully in L.D.W.'s daily life, care, education, and upbringing.
 

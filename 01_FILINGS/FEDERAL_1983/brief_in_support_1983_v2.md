@@ -39,7 +39,7 @@ V. Conclusion
 
 ## I. INTRODUCTION
 
-Plaintiff Andrew J. Pigors brings this civil rights action under 42 U.S.C. § 1983 against Judge Jenny L. McNeill, Tiffany (Emily) Watson, Ron Berry, Esq., and Muskegon County, Michigan. This Brief addresses the principal legal issues the Court will confront at the threshold: judicial immunity, federal abstention doctrines, and the sufficiency of Plaintiff's claims.
+Plaintiff Andrew J. Pigors brings this civil rights action under 42 U.S.C. § 1983 against Judge Jenny L. McNeill, EMILY A. WATSON, Ronald Berry (non-attorney), and Muskegon County, Michigan. This Brief addresses the principal legal issues the Court will confront at the threshold: judicial immunity, federal abstention doctrines, and the sufficiency of Plaintiff's claims.
 
 This is not a case about a single disputed custody ruling. This is a case about **1,127 documented judicial conduct violations**, **150 ex parte deprivations**, a **$250 financial barrier** blocking court access, **567+ consecutive days** of total parent-child separation, and **76,329 adverse findings** cataloged from independently maintained evidence databases. The sheer volume of documented misconduct — unprecedented in any published federal case this counsel has identified — transforms the legal analysis from a question of ordinary judicial error to one of systematic, deliberate constitutional deprivation.
 

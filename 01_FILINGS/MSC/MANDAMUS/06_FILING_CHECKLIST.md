@@ -64,7 +64,7 @@ Per the Appendix Index (`03_APPENDIX_INDEX.md`):
    - Needed: All orders listed in Tab A (approximately 6-8 orders)
 
 2. **Print statistical exhibits** from LitigationOS archive:
-   - Tab F-1: Parental Alienation Analysis (91% score)
+   - Tab F-1: Parental Alienation Pattern Documentation (incident-based analysis)
    - Tab F-2: Baker 17 Strategies Assessment
    - Tab F-5: Ex Parte Communication Rate (44%)
    - Tab F-6: Best Interest Factor Analysis

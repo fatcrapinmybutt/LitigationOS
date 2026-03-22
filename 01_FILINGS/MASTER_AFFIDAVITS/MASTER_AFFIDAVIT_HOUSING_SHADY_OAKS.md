@@ -33,7 +33,7 @@ I, ANDREW J. PIGORS, being first duly sworn, depose and state as follows:
 
 **2.** I currently reside at 1423 W. Norton Ave, Muskegon, Michigan 49441. I previously resided at the property that is the subject of this action, Lot 17, Shady Oaks Mobile Home Park, 1977 Whitehall Rd, Laketon Township, Michigan 49445.
 
-**3.** I am the father of Lincoln David Watson ("L.D.W."), a minor child born November 9, 2022, who is now three (3) years old. L.D.W. resided with me at the Shady Oaks property and was present during the July 17, 2025 forced removal described herein.
+**3.** I am the father of L.D.W. (minor child, born November 9, 2022) ("L.D.W."), a minor child born November 9, 2022, who is now three (3) years old. L.D.W. resided with me at the Shady Oaks property and was present during the July 17, 2025 forced removal described herein.
 
 ---
 

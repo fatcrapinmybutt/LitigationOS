@@ -101,7 +101,7 @@ but not limited to:
            time denial;
         f. Making statements designed to alienate L.D.W. from
            Plaintiff — LitigationOS analysis scores alienation
-           pattern at 91%.
+           pattern based on documented incidents detailed herein.
 
     12. Despite this pattern of interference:
         a. Plaintiff's drug screen results: NEGATIVE (all substances);

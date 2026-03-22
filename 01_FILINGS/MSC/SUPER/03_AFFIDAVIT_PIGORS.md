@@ -43,7 +43,7 @@ I, Andrew J. Pigors, being first duly sworn, depose and state as follows:
 
 2. I reside at 1977 Whitehall Rd, Laketon Township, Muskegon County, Michigan 49445.
 
-3. I am the biological father of L.D.W. (Lincoln David Watson), a minor child born [ANDREW_REQUIRED: Child's DOB]. No court has ever found me to be an unfit parent or to pose any danger to my son.
+3. I am the biological father of L.D.W. (L.D.W. (minor child, born November 9, 2022)), a minor child born [ANDREW_REQUIRED: Child's DOB]. No court has ever found me to be an unfit parent or to pose any danger to my son.
 
 ---
 
@@ -138,7 +138,7 @@ I, Andrew J. Pigors, being first duly sworn, depose and state as follows:
 
 ### PARENTAL ALIENATION AND HARM TO L.D.W.
 
-27. Based on the documented patterns in this case, the parental alienation probability has been assessed at 91%. This assessment is based on the following indicators:
+27. Based on the documented patterns in this case, the pattern of parental alienation is well-documented based on the following indicators:
     - Complete denial of contact for 200+ days;
     - Watson's documented pattern of interference (305 incidents);
     - Court's refusal to enforce parenting time;

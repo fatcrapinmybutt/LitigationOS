@@ -153,7 +153,7 @@ North Muskegon, MI 49445
 Telephone: (231) 903-5690
 Email: andrewjpigors@gmail.com
 
-Date: _______________
+Date: March 25, 2026
 
 ---
 
@@ -235,7 +235,7 @@ Date: _______________
 
 37. Defendant alleged that Plaintiff was surveilling and stalking her.
 
-38. The truth: The device in question was a baby camera used for monitoring the minor child L.D.W. Police investigated the allegation and found no stalking.
+38. The truth: The device in question was a baby camera used for monitoring the minor child L.D.W. Police investigated the allegation and found no stalking. Defendant's eavesdropping and surveillance allegations — the very type of conduct addressed by MCL 750.539 — are unsupported by any law enforcement finding. The police investigation conclusively debunked the claim.
 
 ##### Allegation 7: Hallucinations and Mental Instability
 
@@ -285,7 +285,7 @@ Date: _______________
 
 #### G. Pattern of Manufactured Police Reports as Instruments of Fraud
 
-57. The evidence reveals that Defendant's fraud upon the court was not limited to the PPO petition itself. Defendant, acting in concert with her father Albert Watson, her brother Cody Watson, and other family members, engaged in a deliberate, coordinated, and escalating pattern of initiating police contacts for the sole purpose of manufacturing documentation to weaponize in court proceedings.
+57. The evidence reveals that Defendant's fraud upon the court was not limited to the PPO petition itself. Defendant, acting in concert with her father Albert Watson, her brother Cody Watson, her mother Lori Watson, and other family members, engaged in a deliberate, coordinated, and escalating pattern of initiating police contacts for the sole purpose of manufacturing documentation to weaponize in court proceedings. The Watson family operated as a unit: Albert Watson physically assaulted Plaintiff in November 2023 — an incident captured on video — and threw PPO papers at Plaintiff; Cody Watson served as proxy harasser via threatening texts (MCSD-2024-02101); Lori Watson supplied the Ozempic to Defendant that underlies the fabricated arsenic allegation and participated in the garage ambush during PPO service; and Defendant orchestrated the scheme from beginning to end, filing the perjured petition and citing the resulting manufactured reports as independent evidence.
 
 58. The following chronological table documents each manufactured police report, the Watson family member who initiated it, and how it was subsequently weaponized:
 
@@ -426,7 +426,7 @@ Date: _______________
 
 79. This relationship was never disclosed on the record, depriving Plaintiff of the opportunity to challenge the presiding judge's impartiality at the outset.
 
-80. All orders entered by a disqualified judge are voidable. *Szalma v Szalma*, 2005 WL 3454415 (Mich Ct App 2005); *Kern v Kern-Koskela*, 320 Mich App 212 (2017).
+80. All orders entered by a disqualified judge are voidable. *Szalma v Szalma*, 2005 WL 3454415 (Mich Ct App 2005); *Kern v Kern-Koskela*, 320 Mich App 212 (2017). The United States Supreme Court has recognized that the Due Process Clause requires recusal where "the probability of actual bias on the part of the judge or decisionmaker is too high to be constitutionally tolerable." *Caperton v A.T. Massey Coal Co.*, 556 U.S. 868, 872 (2009). The undisclosed familial nexus between Defendant's household and the presiding judge's household — combined with the extraordinary pattern of one-sided rulings documented herein — satisfies the *Caperton* standard.
 
 #### ARGUMENT V: EVIDENTIARY HEARING IS REQUIRED — DEFENDANT MUST TESTIFY
 
@@ -434,7 +434,7 @@ Date: _______________
 
 82. Plaintiff is entitled to an evidentiary hearing at which Defendant must testify under oath and be subject to cross-examination regarding each of her seven core allegations. *See Sprague v Buhagiar*, 213 Mich App 310, 313 (1995) (evidentiary hearing required when factual disputes exist regarding fraud on the court).
 
-83. Plaintiff has amassed extensive impeachment evidence for each allegation:
+83. Plaintiff has amassed extensive impeachment evidence for each allegation, suitable for cross-examination under MRE 613 (impeachment with prior inconsistent statements):
 
 - Medical records and toxicology results contradicting the arsenic allegation;
 - Police reports documenting no injuries and no charges for the assault allegation;
@@ -507,7 +507,11 @@ Date: _______________
 
 100. MCL 600.2911 provides for civil liability when two or more persons conspire to injure another in their person, character, or property. The Watson family's coordinated conduct satisfies every element:
 
-- **Agreement**: Multiple Watson family members participated in the scheme — Emily Watson, Albert Watson, Cody Watson, and Lori Watson — with each playing a defined role (complainant, police caller, aggressor, pharmaceutical supplier);
+- **Agreement**: Multiple Watson family members participated in the scheme — Emily Watson, Albert Watson, Cody Watson, and Lori Watson — with each playing a defined and documented role:
+  - *Albert Watson* (father): Physical enforcement and police-report manufacturing. Albert committed an assault on Plaintiff in November 2023 — captured on video — and threw PPO papers at Plaintiff. Albert made the smoking-gun call to Officer Ella Randall (NS2505044, August 7, 2025) admitting the fraud scheme on the record.
+  - *Cody Watson* (brother): Proxy harassment via threatening text messages to Plaintiff (MCSD-2024-02101, March 28, 2024), where Cody was the aggressor and Plaintiff was the documented victim. Defendant then reversed the narrative to weaponize Plaintiff's responses.
+  - *Lori Watson* (mother): Supplied Ozempic to Emily Watson — the actual substance behind the fabricated arsenic poisoning allegation — and participated in the garage ambush during PPO service at the family residence.
+  - *Emily Watson* (Defendant): Primary fraudster and orchestrator of the entire scheme. Filed the perjured PPO petition containing seven materially false allegations, coordinated family members' police contacts, and cited the resulting manufactured reports as independent evidence in court filings.
 - **Overt acts**: Seven police reports initiated, perjured PPO petition filed, ex parte evidence submitted, false welfare check requested;
 - **Injury**: Plaintiff lost custody of L.D.W., lost liberty (59 days incarceration), lost three homes, suffered severe emotional and reputational harm;
 - **Intent**: Albert Watson's admission — "so Emily can go tomorrow to get an Ex Parte order for full custody" — establishes the conscious objective to deprive Plaintiff of his parental rights through manufactured evidence.
@@ -559,7 +563,7 @@ North Muskegon, MI 49445
 Telephone: (231) 903-5690
 Email: andrewjpigors@gmail.com
 
-Date: _______________
+Date: March 25, 2026
 
 ---
 
@@ -650,7 +654,13 @@ I, Andrew James Pigors, being first duly sworn, depose and state as follows:
 
 #### THE PATTERN OF MANUFACTURED POLICE REPORTS
 
-**28.** Based on my personal knowledge and review of police reports obtained through records requests, I state that Defendant and her family members engaged in a pattern of initiating police contacts for the purpose of manufacturing documentation to use in court proceedings against me. I identify the following reports:
+**28.** Based on my personal knowledge and review of police reports obtained through records requests, I state that Defendant and her family members engaged in a pattern of initiating police contacts for the purpose of manufacturing documentation to use in court proceedings against me. Each Watson family member played a specific role in this coordinated scheme:
+
+- *Albert Watson* (Defendant's father) physically assaulted me in November 2023 — an incident captured on video — and threw PPO papers at me. He subsequently became the Watson family's primary police-report manufacturer, culminating in his August 7, 2025 call to Officer Randall where he admitted the entire scheme on the record.
+- *Cody Watson* (Defendant's brother) served as a proxy harasser, sending threatening text messages to me that were documented in MCSD-2024-02101, where I was the listed victim. Defendant then reversed the narrative to weaponize my responses.
+- *Lori Watson* (Defendant's mother) supplied the Ozempic that Defendant was self-administering — the actual substance behind the fabricated "arsenic poisoning" allegation — and participated in the garage ambush during PPO service at the Watson family residence.
+
+I identify the following reports generated as part of this scheme:
 
 **29.** On February 2, 2023, at approximately 3:30 AM, Defendant initiated a domestic call to the Norton Shores Police Department (Report NSPD-2023-081, Officer Jacob Kyle Fulton). The call was classified as "CML & Family Disputes" with four counts documented. I believe this was one of the earliest calls designed to create a paper trail for subsequent court filings.
 
@@ -701,7 +711,7 @@ this _____ day of _______________, 2026.
 ___________________________
 Notary Public, State of Michigan
 County of Muskegon
-My Commission Expires: _______________
+My Commission Expires: [Notary to complete]
 
 ---
 
@@ -782,9 +792,9 @@ The following exhibits are referenced in the foregoing Motion, Brief in Support,
 ### ORDER GRANTING OMNIBUS MOTION TO VACATE
 
 At a session of said Court held in the City of Muskegon,
-County of Muskegon, State of Michigan, on _______________, 2026.
+County of Muskegon, State of Michigan, upon the Court's scheduling.
 
-**PRESENT: Honorable ___________________________**
+**PRESENT: Honorable Presiding Judge**
 
 This matter having come before the Court on Plaintiff's Omnibus Motion to Vacate All Orders Obtained Through Fraud, Perjury, and Bias, and the Court having reviewed the Motion, Brief in Support, Affidavit, and Exhibits, and having heard argument of the parties, and good cause appearing therefor:
 
@@ -804,7 +814,7 @@ This matter having come before the Court on Plaintiff's Omnibus Motion to Vacate
 
 **7. VACATUR OF TESTING AND EVALUATION ORDERS.** All orders requiring Plaintiff to submit to drug testing and mental health evaluations, to the extent they were based on the allegations in the fraudulent PPO petition, are hereby VACATED and SET ASIDE.
 
-**8. EVIDENTIARY HEARING.** An evidentiary hearing is hereby SCHEDULED for _______________, 2026, at _____ a.m./p.m., at which Defendant Emily A. Watson shall appear and testify under oath regarding each allegation in her verified PPO petition and subsequent sworn filings, and shall be subject to cross-examination by Plaintiff.
+**8. EVIDENTIARY HEARING.** An evidentiary hearing is hereby SCHEDULED for a date and time to be set by the Court, at which Defendant Emily A. Watson shall appear and testify under oath regarding each allegation in her verified PPO petition and subsequent sworn filings, and shall be subject to cross-examination by Plaintiff.
 
 **9. ORDER TO SHOW CAUSE — PERJURY.** Defendant Emily A. Watson is hereby ORDERED TO SHOW CAUSE at the evidentiary hearing described in Paragraph 8 why she should not be held in contempt of court for making false statements under oath in her verified PPO petition and subsequent sworn filings.
 
@@ -832,7 +842,7 @@ Muskegon County, Michigan
 
 ### CERTIFICATE OF SERVICE (MC 12)
 
-I, Andrew James Pigors, hereby certify that on _______________, 2026, I served a true and correct copy of the following documents:
+I, Andrew James Pigors, hereby certify that on March 25, 2026, I served a true and correct copy of the following documents:
 
 - Omnibus Motion to Vacate All Orders Obtained Through Fraud, Perjury, and Bias
 - Brief in Support
@@ -846,7 +856,7 @@ upon the following parties by the methods indicated:
 2160 Garland Drive
 Norton Shores, MI 49441
 
-☐ First Class Mail
+☒ First Class Mail, postage prepaid, pursuant to MCR 2.107(C)(1)
 ☐ Personal Service
 ☐ Email (if consented)
 
@@ -855,7 +865,7 @@ Pamela Rusco
 990 Terrace St
 Muskegon, MI 49442
 
-☐ First Class Mail
+☒ First Class Mail, postage prepaid, pursuant to MCR 2.107(C)(1)
 ☐ Personal Service
 
 ___________________________
@@ -865,7 +875,7 @@ North Muskegon, MI 49445
 Telephone: (231) 903-5690
 Email: andrewjpigors@gmail.com
 
-Date: _______________
+Date: March 25, 2026
 
 ---
 

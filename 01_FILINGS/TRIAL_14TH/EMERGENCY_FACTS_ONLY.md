@@ -15,7 +15,7 @@ Plaintiff, *Pro Se*,
 
 **Hon. Jenny L. McNeill**
 
-**TIFFANY EMILY WATSON (fka PIGORS),**
+**Emily A. Watson (fka PIGORS),**
 Defendant.
 
 ___________________________________________/
@@ -34,7 +34,7 @@ ___________________________________________/
 
 ## PURPOSE
 
-This memorandum sets forth the undisputed material facts establishing ongoing irreparable harm to the parent-child relationship between Plaintiff-Father Andrew J. Pigors and the minor child Lincoln Watson (DOB: November 9, 2022), supporting the emergency designation of this filing under MCR 2.119(B) and MCR 3.207(A).
+This memorandum sets forth the undisputed material facts establishing ongoing irreparable harm to the parent-child relationship between Plaintiff-Father Andrew J. Pigors and the minor child L.D.W. (minor child, born November 9, 2022) (DOB: November 9, 2022), supporting the emergency designation of this filing under MCR 2.119(B) and MCR 3.207(A).
 
 ---
 
@@ -42,7 +42,7 @@ This memorandum sets forth the undisputed material facts establishing ongoing ir
 
 ### A. Duration of Separation
 
-1. Plaintiff-Father has been separated from his minor child Lincoln Watson for **571+ cumulative days** across the pendency of this case.
+1. Plaintiff-Father has been separated from his minor child L.D.W. for **571+ cumulative days** across the pendency of this case.
 
 2. The most recent continuous period of complete deprivation has been running since **July 29, 2025** — the last date Plaintiff-Father had any contact whatsoever with his son.
 
@@ -70,7 +70,7 @@ This memorandum sets forth the undisputed material facts establishing ongoing ir
 
 10. Plaintiff-Father was **not given an opportunity to be heard** before the deprivation occurred.
 
-11. Upon information and belief, the ex parte orders were based on a motion filed by Defendant Tiffany Emily Watson that was:
+11. Upon information and belief, the ex parte orders were based on a motion filed by Defendant Emily A. Watson that was:
     - **Not sworn** — no oath or affirmation of truth
     - **Not notarized** — no jurat or notarial certification
     - **Not verified** — in violation of MCR 3.207(B)(1) requiring "specific facts in a verified pleading or affidavit"

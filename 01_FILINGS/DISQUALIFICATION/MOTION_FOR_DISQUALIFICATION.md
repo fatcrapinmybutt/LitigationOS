@@ -54,7 +54,7 @@ Defendant.
 
    b. **Differential treatment**: The Court consistently granted Defendant's ex parte motions while denying or failing to rule on Plaintiff's motions, including motions for parenting time enforcement, make-up time, and reconsideration.
 
-   c. **Suspension of parenting time without evidentiary basis**: On multiple occasions, Judge McNeill signed ex parte orders suspending Plaintiff's parenting time with his three-year-old son, Lincoln Watson, without the factual findings of immediate harm or risk required by MCR 3.207(B).
+   c. **Suspension of parenting time without evidentiary basis**: On multiple occasions, Judge McNeill signed ex parte orders suspending Plaintiff's parenting time with his three-year-old son, L.D.W. (minor child, born November 9, 2022), without the factual findings of immediate harm or risk required by MCR 3.207(B).
 
    d. **Credibility determinations made without hearing**: The Court made adverse credibility determinations against Plaintiff based on unsworn, ex parte filings from Defendant, without affording Plaintiff the opportunity to cross-examine or present rebuttal evidence.
 
@@ -68,7 +68,7 @@ Defendant.
 
    i. **Pattern of ordered-then-reversed evaluations**: The Court ordered a custody evaluation, then reversed course; ordered parenting time, then suspended it via ex parte order; and set child support at $1,056.60 per month without conducting a proper evidentiary hearing on income — a pattern demonstrating outcome-driven adjudication rather than neutral fact-finding.
 
-   j. **Enabling parental alienation**: The Court's actions have produced a **91% parental alienation score** as documented by forensic analysis, by systematically removing Plaintiff from his child's life while crediting Defendant's unsupported allegations.
+   j. **Enabling parental alienation**: The Court's actions have produced a documented pattern of parental alienation under MCL 722.23(j) as documented by forensic analysis, by systematically removing Plaintiff from his child's life while crediting Defendant's unsupported allegations.
 
    k. **Employment destruction through incarceration**: Plaintiff lost three (3) jobs as a direct result of court-ordered incarceration, compounding the financial harm and undermining his ability to meet the very support obligations the Court imposed.
 
@@ -165,7 +165,7 @@ Defendant.
    - Parenting time ordered, then suspended via ex parte order without MCR 3.207(B) findings;
    - Child support set at $1,056.60/mo without evidentiary hearing on income;
    - **569+ days** of denied parenting time through cumulative process failures;
-   - **91% parental alienation score** enabled by the Court's systematic removal of Plaintiff from his child's life.
+   - a documented pattern of parental alienation under MCL 722.23(j) enabled by the Court's systematic removal of Plaintiff from his child's life.
 
 ---
 

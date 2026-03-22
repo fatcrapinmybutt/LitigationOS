@@ -77,7 +77,7 @@ All exhibits should be tabbed, Bates-stamped (PIGORS_FED_0001 through PIGORS_FED
 | Exhibit | Description | Bates Range | Source |
 |---|---|---|---|
 | E-1 | Watson Family Interference Log (305 incidents, representative sample) | PIGORS_FED_0486–0530 | Plaintiff's documentation |
-| E-2 | Parental Alienation Assessment (91% score methodology and indicators) | PIGORS_FED_0531–0555 | Plaintiff's analysis based on recognized PA indicators |
+| E-2 | Parental Alienation Assessment (incident-based methodology and behavioral indicators) | PIGORS_FED_0531–0555 | Plaintiff's analysis based on recognized PA indicators |
 | E-3 | Protective CPS Report (bruising on L.D.W.) | PIGORS_FED_0556–0565 | CPS records / Plaintiff's copy |
 
 ---

@@ -5614,7 +5614,7 @@ v**
   > d a PPO show cause claiming i yelled at her at that parenting exchange, i called the police and they stated no PPO violation had occured, Judge Jenny Mcneill ignored that police report and my statements, and use my statement and emily;s to convict me of criminal contempt in the PP === SAMPLE FROM: D
 
 - **McNeill of**
-  > minor child, Lincoln David Watson (L.D.W.), is their son. The presiding judge in both the custody (No. 2024-001507-DC) and PPO cases is Hon. Jenny L. McNeill of the 14th Circuit Court (Muskegon County Family Division)[3][4]. Emily is represented by attorney Jennifer Barnes in the custody matter[5], 
+  > minor child, L.D.W. (minor child, born November 9, 2022) (L.D.W.), is their son. The presiding judge in both the custody (No. 2024-001507-DC) and PPO cases is Hon. Jenny L. McNeill of the 14th Circuit Court (Muskegon County Family Division)[3][4]. Emily is represented by attorney Jennifer Barnes in the custody matter[5], 
 
 - **MCNEILL
 VS**
@@ -5767,7 +5767,7 @@ v**
   > d a PPO show cause claiming i yelled at her at that parenting exchange, i called the police and they stated no PPO violation had occured, Judge Jenny Mcneill ignored that police report and my statements, and use my statement and emily;s to convict me of criminal contempt in the PP === SAMPLE FROM: D
 
 - **McNeill of**
-  > minor child, Lincoln David Watson (L.D.W.), is their son. The presiding judge in both the custody (No. 2024-001507-DC) and PPO cases is Hon. Jenny L. McNeill of the 14th Circuit Court (Muskegon County Family Division)[3][4]. Emily is represented by attorney Jennifer Barnes in the custody matter[5], 
+  > minor child, L.D.W. (L.D.W.), is their son. The presiding judge in both the custody (No. 2024-001507-DC) and PPO cases is Hon. Jenny L. McNeill of the 14th Circuit Court (Muskegon County Family Division)[3][4]. Emily is represented by attorney Jennifer Barnes in the custody matter[5], 
 
 - **MCNEILL
 VS**

@@ -39,7 +39,7 @@ Phone: (517) 373-0786
 ## Required Copies:
 - 1 original + 4 copies to COA (if filing by mail)
 - 1 copy to opposing counsel (Jennifer L. Barnes, P55406)
-- 1 copy to Defendant-Appellee Tiffany A. Watson (if not represented or not on e-service)
+- 1 copy to Defendant-Appellee Emily A. Watson (if not represented or not on e-service)
 - 1 copy to 14th Circuit Court Clerk
 - 1 copy for your records
 

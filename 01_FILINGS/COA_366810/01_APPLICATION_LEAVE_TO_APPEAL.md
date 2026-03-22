@@ -23,7 +23,7 @@
 | | Court of Appeals No. **366810** |
 | v. | |
 | | Lower Court: **14th Judicial Circuit Court** |
-| **TIFFANY A. WATSON,** | Muskegon County, Family Division |
+| **Emily A. Watson,** | Muskegon County, Family Division |
 | *Defendant-Appellee.* | Lower Court Case No. **2024-001507-DC** |
 | | Related Case No. **2023-5907-PP** |
 | | |
@@ -99,7 +99,7 @@ These questions affect every parent in Michigan's family court system and requir
 
 ## A. Parties and Background
 
-Andrew J. Pigors ("Father") and Tiffany A. Watson ("Mother") are the biological parents of L.D.W., born November 9, 2022. Father commenced custody proceedings in the 14th Judicial Circuit Court, Muskegon County, Family Division, on April 1, 2024 (Case No. 2024-001507-DC). The matter was assigned to Judge Jenny L. McNeill. A related personal protection order proceeding (Case No. 2023-5907-PP) was also assigned to Judge McNeill.
+Andrew J. Pigors ("Father") and Emily A. Watson ("Mother") are the biological parents of L.D.W., born November 9, 2022. Father commenced custody proceedings in the 14th Judicial Circuit Court, Muskegon County, Family Division, on April 1, 2024 (Case No. 2024-001507-DC). The matter was assigned to Judge Jenny L. McNeill. A related personal protection order proceeding (Case No. 2023-5907-PP) was also assigned to Judge McNeill.
 
 ## B. Chronology of Key Events
 
@@ -261,7 +261,7 @@ Andrew J. Pigors
 
 I hereby certify that on _________________, I served a copy of the foregoing Application for Leave to Appeal upon:
 
-**Tiffany A. Watson** (Defendant-Appellee)
+**Emily A. Watson** (Defendant-Appellee)
 [Through her attorney of record, if applicable]
 Andrew J. Pigors, Pro Se, Muskegon, Michigan 49442
 

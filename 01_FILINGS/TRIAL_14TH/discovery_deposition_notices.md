@@ -12,7 +12,7 @@
 
 v.
 
-**TIFFANY A. WATSON** (a/k/a Emily Watson), et al., Defendants.
+**Emily A. Watson** (a/k/a Emily Watson), et al., Defendants.
 
 ---
 
@@ -24,7 +24,7 @@ Each deposition will be recorded by stenographic means and may also be recorded 
 
 ---
 
-### DEPOSITION NO. 1: EMILY (TIFFANY) WATSON
+### DEPOSITION NO. 1: EMILY A. WATSON
 **Role:** Defendant / Mother — primary adversary
 **Priority:** CRITICAL
 
@@ -82,7 +82,7 @@ Each deposition will be recorded by stenographic means and may also be recorded 
 
 ---
 
-### DEPOSITION NO. 3: RON BERRY, ESQ.
+### DEPOSITION NO. 3: Ronald Berry (non-attorney)
 **Role:** Emily Watson's appellate attorney
 **Priority:** CRITICAL
 

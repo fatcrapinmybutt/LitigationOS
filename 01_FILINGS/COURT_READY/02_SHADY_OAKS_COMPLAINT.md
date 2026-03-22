@@ -24,7 +24,7 @@ Last Known Address: Muskegon, MI,
 
 **CRICKLEWOOD MHP LLC,**
 a Limited Liability Company,
-Address to be determined through discovery,
+c/o CT Corporation System, 40600 Ann Arbor Rd E Ste 201, Plymouth, MI 48170,
 
 and
 

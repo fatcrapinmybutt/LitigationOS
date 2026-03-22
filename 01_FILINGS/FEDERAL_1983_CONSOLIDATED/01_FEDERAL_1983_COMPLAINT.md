@@ -15,7 +15,7 @@ individually and in her official capacity,
 **EMILY A. WATSON,**
 individually,
 
-**RON BERRY, ESQ.,**
+**Ronald Berry (non-attorney),**
 individually,
 
 **PAMELA RUSCO,**
@@ -69,7 +69,7 @@ Plaintiff Andrew J. Pigors, proceeding pro se, respectfully submits this Complai
 
 9. **Emily A. Watson** is a natural person and citizen of the State of Michigan, residing in Muskegon County. Watson is the biological mother of L.D.W. She is a private party who, acting in concert with a state judicial officer, conspired to deprive Plaintiff of his constitutional rights under color of state law. *Dennis v. Sparks*, 449 U.S. 24, 27-28 (1980).
 
-10. **Ron Berry, Esq.** is an attorney licensed to practice in the State of Michigan. Berry serves as appellate counsel to Watson and is a private party who conspired with Defendant McNeill to deprive Plaintiff of constitutional rights. Berry's direct ex parte contacts with the court are evidenced by voicemail recordings and the temporal coordination pattern: Watson files → McNeill rules same day → Berry files within 48 hours, repeated across multiple months.
+10. **Ronald Berry** is not an attorney. He is the domestic partner and boyfriend of Defendant Emily A. Watson, residing in or around Muskegon County. Berry is a private party who conspired with Defendant McNeill to deprive Plaintiff of constitutional rights. Berry's direct ex parte contacts with the court are evidenced by voicemail recordings and the temporal coordination pattern. Berry is the domestic partner of Watson and is a private party who conspired with Defendant McNeill to deprive Plaintiff of constitutional rights. Berry's direct ex parte contacts with the court are evidenced by voicemail recordings and the temporal coordination pattern: Watson files → McNeill rules same day → Berry files within 48 hours, repeated across multiple months.
 
 11. **Pamela Rusco** is a Friend of the Court Referee in the 14th Circuit Court, Muskegon County, Michigan. She is sued in both her individual and official capacities. Rusco issued biased recommendations that systematically disadvantaged Plaintiff without adequate evidentiary basis, rubber-stamped ex parte deprivations, and failed to provide neutral fact-finding as required by her quasi-judicial role. Rusco's recommendations were adopted wholesale by Judge McNeill without independent judicial review, making Rusco a direct participant in the deprivation of Plaintiff's constitutional rights.
 
@@ -134,7 +134,7 @@ Plaintiff Andrew J. Pigors, proceeding pro se, respectfully submits this Complai
 
 29. Plaintiff has documented **305 Watson family interference incidents** in which Defendant Watson, her family members, and co-conspirators actively obstructed, undermined, or prevented Plaintiff's exercise of his parental rights. These incidents include denial of scheduled parenting exchanges, false allegations to authorities, and systematic exclusion of Plaintiff from L.D.W.'s life.
 
-30. Plaintiff's evidence establishes a **91% parental alienation score** based on recognized behavioral indicators, including L.D.W.'s age-inappropriate hostility toward Plaintiff (coached behavior), Watson's denigration of Plaintiff to the child, and the systematic destruction of the father-child bond over more than 200 consecutive days of enforced separation.
+30. Plaintiff's evidence establishes a documented pattern of parental alienation under MCL 722.23(j) based on recognized behavioral indicators, including L.D.W.'s age-inappropriate hostility toward Plaintiff (coached behavior), Watson's denigration of Plaintiff to the child, and the systematic destruction of the father-child bond over more than 200 consecutive days of enforced separation.
 
 ### I. Pamela Rusco's Biased Recommendations
 
@@ -237,7 +237,7 @@ Plaintiff Andrew J. Pigors, proceeding pro se, respectfully submits this Complai
 
 58. The Sixth Circuit recognizes substantive due process protection for parent-child relationships. *Doe v. Claiborne County*, 103 F.3d 495, 506 (6th Cir. 1996). State actions that "shock the conscience" or are "arbitrary in the constitutional sense" violate substantive due process. *County of Sacramento v. Lewis*, 523 U.S. 833, 846 (1998).
 
-59. A total separation of a father from his young child exceeding 200 consecutive days — imposed without a hearing, maintained through 24 ex parte orders, enforced by a $250 access barrier, compounded by 59 days of wrongful incarceration, and resulting in 91% parental alienation — shocks the conscience and is arbitrary in the constitutional sense.
+59. A total separation of a father from his young child exceeding 200 consecutive days — imposed without a hearing, maintained through 24 ex parte orders, enforced by a $250 access barrier, compounded by 59 days of wrongful incarceration, and resulting in severe parental alienation documented across multiple incidents — shocks the conscience and is arbitrary in the constitutional sense.
 
 60. Plaintiff has suffered and continues to suffer irreparable injury as a direct and proximate result of Defendants' conduct.
 
@@ -354,7 +354,7 @@ Plaintiff Andrew J. Pigors, proceeding pro se, respectfully submits this Complai
 
 87. Under Michigan law, IIED requires: (1) extreme and outrageous conduct; (2) intent or recklessness; (3) causation; and (4) severe emotional distress. *Roberts v. Auto-Owners Ins. Co.*, 422 Mich. 594, 602 (1985).
 
-88. Defendants' conduct — including 24 ex parte orders without notice, more than 200 consecutive days of complete parent-child separation, 59 days of wrongful incarceration, 305 Watson family interference incidents producing a 91% parental alienation score, the $250 bond barrier, and the imposition of $1,056.60/month child support without hearing — is so extreme and outrageous as to go beyond all possible bounds of decency. *Id.* The conduct was intentional and calculated to destroy Plaintiff's parental relationship.
+88. Defendants' conduct — including 24 ex parte orders without notice, more than 200 consecutive days of complete parent-child separation, 59 days of wrongful incarceration, 305 Watson family interference incidents producing a documented pattern of parental alienation under MCL 722.23(j), the $250 bond barrier, and the imposition of $1,056.60/month child support without hearing — is so extreme and outrageous as to go beyond all possible bounds of decency. *Id.* The conduct was intentional and calculated to destroy Plaintiff's parental relationship.
 
 89. Plaintiff has suffered severe emotional distress as a direct result, including but not limited to depression, anxiety, insomnia, loss of appetite, and the anguish of being completely separated from his young child during the critical developmental years of ages 2-4.
 
@@ -536,7 +536,7 @@ Muskegon, MI 49442
 [ADDRESS TO BE CONFIRMED VIA MARSHAL SERVICE]
 Muskegon County, MI
 
-**Ron Berry, Esq.**
+**Ronald Berry (non-attorney)**
 [ADDRESS TO BE CONFIRMED VIA MARSHAL SERVICE]
 Muskegon County, MI
 

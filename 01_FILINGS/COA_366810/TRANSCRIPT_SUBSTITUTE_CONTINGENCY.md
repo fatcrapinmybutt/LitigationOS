@@ -69,7 +69,7 @@ File the proposed settled statement with the Clerk of the 14th Circuit Court, Mu
 
 ### Step 4: Serve Copy on All Parties
 
-Serve a copy of the proposed settled statement on the opposing party (Appellee Tiffany Emily Watson and/or her counsel, Jennifer L. Barnes, P55406) via the methods required by the court rules.
+Serve a copy of the proposed settled statement on the opposing party (Appellee Emily A. Watson and/or her counsel, Jennifer L. Barnes, P55406) via the methods required by the court rules.
 
 ### Step 5: Wait 14 Days for Objections
 
@@ -93,7 +93,7 @@ Once the trial court settles and certifies the statement, it becomes the officia
 | LC Case No. | 2024-001507-DC |
 | Lower Court | 14th Circuit Court, Muskegon County |
 | Appellant | Andrew J. Pigors |
-| Appellee | Tiffany Emily Watson |
+| Appellee | Emily A. Watson |
 | Applicable Rule | MCR 7.210(B)(2) |
 
 ---

@@ -446,7 +446,7 @@ The trial court's record is devoid of any clear and convincing evidence finding.
 
 ### C. 329+ Days of Separation Constitutes Irreparable Harm
 
-The severity of the deprivation here cannot be overstated. This Court should take judicial notice that Lincoln Watson is a three-year-old child. At this critical developmental stage, 329+ days represents a substantial fraction of the child's entire conscious life. Developmental psychology research consistently demonstrates that prolonged separation from a primary attachment figure during early childhood causes lasting emotional and psychological damage.
+The severity of the deprivation here cannot be overstated. This Court should take judicial notice that L.D.W. (minor child, born November 9, 2022) is a three-year-old child. At this critical developmental stage, 329+ days represents a substantial fraction of the child's entire conscious life. Developmental psychology research consistently demonstrates that prolonged separation from a primary attachment figure during early childhood causes lasting emotional and psychological damage.
 
 Plaintiff-Appellant stated on the record: "My three-year-old son has been deprived of regular, loving contact with his father for months at a time. A genuine father-child bond, previously recognized by the court[, has been severed]." The trial court itself previously recognized the existence of a genuine father-child bond, making the subsequent destruction of that bond all the more troubling.
 

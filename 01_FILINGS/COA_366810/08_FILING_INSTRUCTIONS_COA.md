@@ -135,7 +135,7 @@ If Appellee is not registered on TrueFiling:
    - Appendix
    - Certificate of Service
 2. Mail via First-Class U.S. Mail to:
-   - Tiffany A. Watson, Andrew J. Pigors, Pro Se, Muskegon, Michigan 49442
+   - Emily A. Watson, Andrew J. Pigors, Pro Se, Muskegon, Michigan 49442
    - Appellee's attorney (if represented): [NAME, ADDRESS]
 3. Obtain proof of mailing (USPS receipt, tracking number)
 

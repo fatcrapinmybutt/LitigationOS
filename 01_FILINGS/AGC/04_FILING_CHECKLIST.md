@@ -47,7 +47,7 @@
 
 - [ ] Export interference incident log from `litigation_context.db` (Exhibits C-2, C-3)
 - [ ] Export parenting time denial calendar (Exhibit C-4)
-- [ ] Export alienation score analysis (Exhibit C-1)
+- [ ] Export parental alienation pattern documentation (Exhibit C-1)
 - [ ] Export ex parte communication analysis (Exhibit B-1)
 - [ ] Export best interest factor analysis (Exhibit C-8 / F-5)
 - [ ] Generate LitigationOS evidence summary report (Exhibit F-4)

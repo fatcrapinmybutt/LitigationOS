@@ -239,7 +239,7 @@ Email: andrewjpigors@gmail.com
 
  c. **Finding 3 (FILING_RECORD):** Ron Berry voicemail in ADMIN Filing Order Booklet — listed in line-by-line objection. *(Source: ADMIN_Filing_Order_Booklet_v5.pdf p.52)*
 
- d. **Finding 4 (ENTITY_GRAPH):** Ron Berry listed as Person entity (P_RON) in litigation knowledge graph alongside Watson family members: Emily Watson (P_EMILY), Lincoln Watson (P_LINCOLN), Lori Watson (P_LORI), Albert Watson (P_ALBERT).
+ d. **Finding 4 (ENTITY_GRAPH):** Ron Berry listed as Person entity (P_RON) in litigation knowledge graph alongside Watson family members: Emily Watson (P_EMILY), L.D.W. (minor child, born November 9, 2022) (P_LINCOLN), Lori Watson (P_LORI), Albert Watson (P_ALBERT).
 
  e. **Finding 5 (RELATIONSHIP):** Ron Berry listed alongside Emily Watson, Lori Watson, Albert Watson — indicating family/intimate association with Defendant.
 

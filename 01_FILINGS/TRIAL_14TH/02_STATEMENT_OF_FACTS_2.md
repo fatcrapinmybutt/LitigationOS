@@ -213,11 +213,11 @@ that the order was obtained under fraudulent circumstances or
    to unnecessary tension and hostility. Example: On September 20, 2024, Cody Watson engaged in road harassment while LDW
 
 **53. [2024-10-02]** � [ALIENATION] Pattern: alienat
-   samantha ross, regard lincoln david watson's emotional distresses as a result of parental alienation by emily watson.
+   samantha ross, regard L.D.W. (minor child, born November 9, 2022)'s emotional distresses as a result of parental alienation by emily watson.
    *Harm to Andrew:* Parental alienation of child
 
 **54. [2024-10-02]** � [DAMAGES] Pattern: emotional.*distress
-   samantha ross, regard lincoln david watson's emotional distresses as a result of parental alienation by emily watson.
+   samantha ross, regard L.D.W.'s emotional distresses as a result of parental alienation by emily watson.
    *Harm to Andrew:* Parental alienation of child; Financial harm
 
 **55. [2024-10-02]** � [ALIENATION] Pattern: alienat
@@ -312,7 +312,7 @@ you coul
    *Harm to Andrew:* Restricted freedom via PPO; Parental alienation of child; Financial harm
 
 **70. [2024-10-02]** � [BIAS] Pattern: ex parte
-   pigors, respectfully requests that the court grant the requested relief to ensure the best interests of lincoln david watson are motion for ex parte temporary custody order
+   pigors, respectfully requests that the court grant the requested relief to ensure the best interests of L.D.W. are motion for ex parte temporary custody order
 state of michigan, 14th circuit court � muskegon county
 case name: pigors v.
    *Harm to Andrew:* Denied contact with child; Due process denied � no notice/hearing; Judicial bias � unequal treatment

@@ -395,7 +395,7 @@ The trial court engaged in pervasive ex parte conduct across both proceedings:
 
 - **Case 2024-001507-DC:** 2,327 rows documenting ex parte handling, including the critical finding: "Ex Parte Custody Suspension Order (08/08/2025): Judge McNeill's signed order suspending [Petitioner's parenting time]." (JTC Conduct Pattern Table, priority score 6,379; Adverse Evidence Matrix finding AEM_000019.)
 - **Case 2023-005907-PP:** 630 rows documenting ex parte PPO proceedings, including: "EX PARTE ORDER PERSONAL PROTECTION ORDER." (JTC Conduct Pattern Table, priority score 1,812; AEM_000050.)
-- **Cross-case/Unassigned:** 538 rows documenting additional ex parte conduct, including: "the Ex Parte FIG Order which was held on July 17, 2024 in regards to the minor child, Lincoln Watson." (JTC Conduct Pattern Table, priority score 1,604; AEM_000061.)
+- **Cross-case/Unassigned:** 538 rows documenting additional ex parte conduct, including: "the Ex Parte FIG Order which was held on July 17, 2024 in regards to the minor child, L.D.W. (minor child, born November 9, 2022)." (JTC Conduct Pattern Table, priority score 1,604; AEM_000061.)
 
 **b. Recusal/Bias Signals (4,195 documented rows)**
 

@@ -10,7 +10,7 @@
 **Case No.:** 2024-001507-DC
 
 **Plaintiff:** Andrew J. Pigors
-**Defendant:** Tiffany Emily Watson
+**Defendant:** Emily A. Watson
 
 ---
 
@@ -32,7 +32,7 @@ I served the following document(s):
 ## 2. PERSON SERVED
 
 **Name:** Jennifer L. Barnes
-**Title/Capacity:** Attorney for Defendant Tiffany Emily Watson
+**Title/Capacity:** Attorney for Defendant Emily A. Watson
 **Firm:** Barnes Law Firm PLLC
 **Address:** 880 Jefferson St, Suite B, Muskegon, MI 49440
 

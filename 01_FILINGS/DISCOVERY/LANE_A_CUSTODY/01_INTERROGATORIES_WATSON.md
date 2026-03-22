@@ -39,7 +39,7 @@ ________________________________/
 
 1. **"You," "Your," "Defendant,"** and **"Watson"** refer to Emily A. Watson, individually and in any representative capacity.
 
-2. **"L.D.W."** refers to the parties' minor child, Lincoln David Watson.
+2. **"L.D.W."** refers to the parties' minor child, L.D.W. (minor child, born November 9, 2022).
 
 3. **"Document"** means any writing, recording, or photograph, including electronically stored information (ESI), as defined in MCR 2.302(B)(5) and MRE 1001.
 

@@ -6,7 +6,7 @@ ANDREW J. PIGORS,                    COA Case No. 366810
     
 v.
 
-TIFFANY EMILY WATSON (fka PIGORS),
+Emily A. Watson (fka PIGORS),
     Defendant-Appellee.
 ____________________________________________/
 
@@ -18,7 +18,7 @@ ____________________________________________/
      MCR 7.212(C) — Full Compliance
      COA Case No. 366810
      LC Case No. 2024-001507-DC
-     Andrew J. Pigors v. Tiffany Emily Watson
+     Andrew J. Pigors v. Emily A. Watson
      14th Circuit Court, Muskegon County
      Hon. Jenny L. McNeill
      ============================================================
@@ -41,7 +41,7 @@ ____________________________________________/
 v.                                                    COA Case No. **366810**
                                                       LC Case No. **2024-001507-DC**
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
      Defendant-Appellee.
 
 ---
@@ -265,7 +265,7 @@ Plaintiff-Appellant states that the trial court erred and that each of the follo
 
 ## A. The Parties and the Minor Child
 
-1. Plaintiff-Appellant Andrew J. Pigors ("Father") and Defendant-Appellee Tiffany Emily Watson ("Mother") are the parents of one minor child, Lincoln, born in 2022. (Lower Ct. Rec., pp. 1–3, Complaint.) At the time of the proceedings below, Lincoln was approximately two to three years old — a critical stage of early childhood development.
+1. Plaintiff-Appellant Andrew J. Pigors ("Father") and Defendant-Appellee Emily A. Watson ("Mother") are the parents of one minor child, Lincoln, born in 2022. (Lower Ct. Rec., pp. 1–3, Complaint.) At the time of the proceedings below, Lincoln was approximately two to three years old — a critical stage of early childhood development.
 
 2. Father and Mother were not married. Custody proceedings were initiated in the 14th Circuit Court, Muskegon County, under Case No. 2024-001507-DC. (Lower Ct. Rec., p. 1, Register of Actions.)
 
@@ -644,7 +644,7 @@ Dated: ____________, 2026
 v.                                                    COA Case No. **366810**
                                                       LC Case No. **2024-001507-DC**
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
      Defendant-Appellee.
 
 ---
@@ -816,7 +816,7 @@ Dated: ____________, 2026
 v.                                                    COA Case No. **366810**
                                                       LC Case No. **2024-001507-DC**
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
      Defendant-Appellee.
 
 ---
@@ -861,7 +861,7 @@ Muskegon, MI 49440
 
 ---
 
-**Tiffany Emily Watson**
+**Emily A. Watson**
 Defendant-Appellee
 c/o Jennifer L. Barnes (P55406)
 Barnes Law Firm PLLC
@@ -915,7 +915,7 @@ I, Andrew J. Pigors, being duly sworn, depose and say:
    ☒ Electronic service via Michigan TrueFiling system
    ☒ First-class U.S. Mail, postage prepaid
 
-   **Tiffany Emily Watson**
+   **Emily A. Watson**
    c/o Jennifer L. Barnes
    880 Jefferson St, Suite B
    Muskegon, MI 49440
@@ -950,7 +950,7 @@ Appellant,
 
 v
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
 Appellee.
 
 ---
@@ -1051,7 +1051,7 @@ Phone: (231) 903-5690
 v.                                                    COA Case No. **366810**
                                                       LC Case No. **2024-001507-DC**
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
      Defendant-Appellee.
 
 ---
@@ -1150,7 +1150,7 @@ All exhibits authenticated under Michigan Rules of Evidence
 v.                                                    COA Case No. **366810**
                                                       LC Case No. **2024-001507-DC**
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
      Defendant-Appellee.
 
 ---
@@ -1350,7 +1350,7 @@ Appellant,
 
 v
 
-**TIFFANY EMILY WATSON,**
+**Emily A. Watson,**
 Appellee.
 
 ---
@@ -1571,7 +1571,7 @@ File the proposed settled statement with the Clerk of the 14th Circuit Court, Mu
 
 ### Step 4: Serve Copy on All Parties
 
-Serve a copy of the proposed settled statement on the opposing party (Appellee Tiffany Emily Watson and/or her counsel, Jennifer L. Barnes, P55406) via the methods required by the court rules.
+Serve a copy of the proposed settled statement on the opposing party (Appellee Emily A. Watson and/or her counsel, Jennifer L. Barnes, P55406) via the methods required by the court rules.
 
 ### Step 5: Wait 14 Days for Objections
 
@@ -1595,7 +1595,7 @@ Once the trial court settles and certifies the statement, it becomes the officia
 | LC Case No. | 2024-001507-DC |
 | Lower Court | 14th Circuit Court, Muskegon County |
 | Appellant | Andrew J. Pigors |
-| Appellee | Tiffany Emily Watson |
+| Appellee | Emily A. Watson |
 | Applicable Rule | MCR 7.210(B)(2) |
 
 ---
@@ -1855,7 +1855,7 @@ PARTY
 
 Quantified across Gardner/Warshak/Bernet frameworks:
 
-**Overall Score: 64/70 (91%) — SEVERE**
+**Documented Pattern: SEVERE — based on behavioral indicators under MCL 722.23(j)**
 
 This scoring satisfies the evidentiary foundation for expert testimony 
 under MRE 702 and supports a finding of severe parental alienation 
