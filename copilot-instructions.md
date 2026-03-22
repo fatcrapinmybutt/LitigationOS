@@ -1,5 +1,12 @@
 # LitigationOS — Unified Copilot Instructions (v15.0)
 
+## 🔬 APEX RESEARCH MANDATE (SUPREME — READ BEFORE ALL OTHER RULES)
+
+> **Every decision must be apex. Research bleeding-edge technologies BEFORE implementing ANYTHING.**
+> This applies full-spectrum: tool selection, algorithms, architecture, data structures, NLP approaches,
+> parsing strategies, search methods, storage formats. Never default to baseline when apex exists.
+> See `.github/instructions/elite-omega-standard.instructions.md` for the complete mandate + decision matrix.
+
 ## 🛡️ EAGAIN Prevention v2.0 — EXPANDED CONCURRENCY (read FIRST, obey ALWAYS)
 
 > Master doc: `.github/instructions/eagain-prevention.instructions.md` v2.0
