@@ -274,13 +274,14 @@ def walk_conversation_tree(mapping: dict) -> list[dict]:
     if not roots:
         return []
 
-    # Depth-first walk
+    # BFS walk using deque for O(1) popleft (was O(n) with list.pop(0))
+    from collections import deque
     messages = []
     visited = set()
-    stack = list(roots)
+    queue = deque(roots)
 
-    while stack:
-        node_id = stack.pop(0)  # BFS-like for conversation order
+    while queue:
+        node_id = queue.popleft()
         if node_id in visited or node_id not in mapping:
             continue
         visited.add(node_id)
@@ -311,12 +312,10 @@ def walk_conversation_tree(mapping: dict) -> list[dict]:
                     "create_time": create_time,
                 })
 
-        # Queue children for traversal
+        # Queue children for traversal (append to end for BFS order)
         children = node.get("children", [])
         if isinstance(children, list):
-            # Insert at current position to maintain depth-first-like ordering
-            for i, child_id in enumerate(children):
-                stack.insert(i, child_id)
+            queue.extend(children)
 
     return messages
 
