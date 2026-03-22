@@ -2,7 +2,7 @@
 name: litigation-supreme-commander
 description: "Use when drafting motions, briefs, complaints, or any court filing. Covers complaint drafting, brief writing, motion practice, Michigan litigation writing, filing architecture, pro se guidance, service, sanctions, analysis, convergence orchestration, pipeline command, lawsuit forging, record building, LitigationOS core, skill auditing, court order tracking, mandatory disclosure, fee petitions, default judgment, summary judgment, contempt, and FOC challenges. Michigan family law focused (Pigors v. Watson)."
 category: discipline
-version: "2.0.0"
+version: "3.0.0-APEX-OMEGA"
 triggers:
   - motion
   - brief
@@ -1628,4 +1628,424 @@ output:
     - certificate_of_service_included: boolean
     - proposed_order_included: boolean
     - correct_court_rules_applied: boolean
+```
+
+---
+
+# APEX-OMEGA v3.0 MODULES — Supreme Command Intelligence
+
+> Upgrade from v2.0 to v3.0 APEX-OMEGA tier. The following modules transform litigation command
+> from reactive filing generation to proactive, database-driven, intelligence-powered litigation warfare.
+> Every filing decision is now grounded in DB evidence, impeachment chains, police intelligence,
+> and chronological narrative construction.
+
+---
+
+## Module SC1: Database-First Mandate (Zero-Tolerance Placeholder Prevention)
+
+> Before ANY placeholder ([ANDREW_REQUIRED], [INSERT], [ATTACH]) is inserted into a document,
+> THREE mandatory searches must be exhausted. This module eliminates the #1 user complaint:
+> "the data was in the DB the entire time."
+
+### SC1 Three-Source Search Protocol
+
+```
+ENTRY: A document section requires data not yet in the draft
+│
+├─ SOURCE 1: Query litigation_context.db
+│   ├─ evidence_quotes (308,704 rows)
+│   │   SELECT quote_text, source_file, page_number, bates_number
+│   │   FROM evidence_quotes WHERE [relevant filters] LIMIT 20;
+│   │
+│   ├─ claims (all active claims with status)
+│   │   SELECT claim_id, claim_type, status, lane, description
+│   │   FROM claims WHERE lane = ? AND status = 'active';
+│   │
+│   ├─ deadlines (all active deadlines)
+│   │   SELECT deadline_id, description, due_date_iso, court, status
+│   │   FROM deadlines WHERE status != 'completed' ORDER BY due_date_iso;
+│   │
+│   ├─ documents (filed and draft documents)
+│   │   SELECT doc_id, title, file_path, document_type, lane
+│   │   FROM documents WHERE [relevant filters];
+│   │
+│   ├─ judicial_violations (documented misconduct)
+│   │   SELECT violation_id, violation_type, date, description, evidence_refs
+│   │   FROM judicial_violations WHERE judge_name LIKE '%McNeill%'
+│   │   ORDER BY date DESC;
+│   │
+│   ├─ docket_events (court record)
+│   │   SELECT event_date, event_type, description, filed_by
+│   │   FROM docket_events WHERE case_number = ?
+│   │   ORDER BY event_date DESC;
+│   │
+│   └─ master_evidence_timeline (24,859 events)
+│       SELECT event_date, event_description, source_document, actors, lane
+│       FROM master_evidence_timeline WHERE [relevant filters]
+│       ORDER BY event_date;
+│
+├─ SOURCE 2: Search filesystem across all drives
+│   rg -l "[search term]" C:\Users\andre\LitigationOS\ --type md --type txt --type pdf
+│   rg -l "[search term]" C:\Users\andre\LitigationOS\03_EVIDENCE\ -r
+│   rg -l "[search term]" C:\Users\andre\LitigationOS\01_FILINGS\ -r
+│   fd --type f "[filename pattern]" C:\Users\andre\LitigationOS\
+│
+├─ SOURCE 3: Check summary files
+│   View: COMPLETE_FILING_DATA_SUMMARY.txt
+│   View: QUICK_REFERENCE_FILING_PLACEHOLDERS.txt
+│   View: QUICK_REFERENCE.txt
+│   View: EVIDENCE_QUICK_REFERENCE.csv
+│
+├─ Decision:
+│   ├─ Data found in ANY source → EMBED data directly (no placeholder)
+│   ├─ Partial data found → EMBED what exists + targeted placeholder for remainder
+│   └─ ALL THREE sources return nothing → Insert SPECIFIC placeholder:
+│       "[ACQUIRE: [exact description of missing data].
+│        Searched: evidence_quotes (0 rows), claims (0 rows), filesystem (0 hits).
+│        Likely location: [suggested source/drive/agency].
+│        Priority: [HIGH/MEDIUM/LOW]]"
+│
+└─ VIOLATION: Inserting a generic [ANDREW_REQUIRED] without running all 3 sources
+   is a PROTOCOL VIOLATION that undermines the entire system.
+```
+
+### SC1 Common Data Lookups (Pre-Built Queries)
+
+```sql
+-- Party information (ALWAYS available — hardcoded in verified table)
+-- Plaintiff: Andrew James Pigors, 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445
+-- Defendant: Emily A. Watson, 2160 Garland Drive, Norton Shores, MI 49441
+-- Child: L.D.W. (initials only per MCR 8.119(H))
+-- Judge: Hon. Jenny L. McNeill, 14th Circuit Court
+-- Emily's Former Attorney: Jennifer Barnes (P55406) — WITHDREW
+
+-- Case numbers (ALWAYS available)
+-- Lane A: 2024-001507-DC (Custody)
+-- Lane B: 2025-002760-CZ (Housing)
+-- Lane D: 2023-5907-PP (PPO)
+-- Lane F: COA 366810 (Appellate)
+
+-- Filing fee status
+SELECT fee_type, amount, waiver_status FROM filing_fees
+WHERE case_number = ? ORDER BY date DESC LIMIT 1;
+
+-- Service addresses
+SELECT party_name, service_address, service_method, last_served_date
+FROM service_records WHERE case_number = ?;
+
+-- Prior filings for cross-reference
+SELECT filing_id, title, filed_date, court, status
+FROM filings WHERE case_number = ? AND lane = ?
+ORDER BY filed_date DESC LIMIT 20;
+```
+
+---
+
+## Module SC2: Impeachment Chain Integration
+
+> Auto-query impeachment_chains table (31 chains) from contradictions.db.
+> For motions attacking credibility: embed top impeachment chains per target actor.
+> For cross-exam outlines: auto-generate question sequences from chain data.
+
+### SC2 Impeachment Retrieval Protocol
+
+```
+ENTRY: Document involves credibility challenge or cross-examination
+│
+├─ Step 1: Identify target actor(s) being challenged
+│   ├─ Emily A. Watson (custody, PPO, false allegations)
+│   ├─ Hon. Jenny L. McNeill (judicial misconduct, bias)
+│   ├─ Ronald Berry (interference, unauthorized legal advice)
+│   ├─ Jennifer Barnes (P55406) (misconduct before withdrawal)
+│   ├─ Pamela Rusco (FOC bias)
+│   └─ Other witnesses
+│
+├─ Step 2: Query impeachment chains
+│   SELECT ic.chain_id, ic.chain_name, ic.target_actor,
+│          ic.contradiction_count, ic.overall_severity, ic.summary
+│   FROM impeachment_chains ic
+│   WHERE ic.target_actor LIKE '%[actor]%'
+│   ORDER BY ic.overall_severity DESC;
+│
+├─ Step 3: Retrieve top 5 chains per actor
+│   For each chain, get linked contradictions:
+│   SELECT c.statement_1, c.source_1, c.statement_2, c.source_2, c.severity
+│   FROM chain_contradictions cc
+│   JOIN contradictions c ON cc.contradiction_id = c.contradiction_id
+│   WHERE cc.chain_id = ?
+│   ORDER BY c.severity DESC LIMIT 10;
+│
+├─ Step 4: Generate impeachment section
+│   For each chain:
+│   - Title: "[Actor]'s [Category] Contradictions"
+│   - List contradictions with dual citations
+│   - Link to exhibits (Bates numbers)
+│   - Generate cross-exam question sequence
+│
+└─ OUTPUT: Impeachment section ready for insertion into document
+```
+
+### SC2 Integration Points by Document Type
+
+| Filing Type | Impeachment Usage | Auto-Query Target |
+|---|---|---|
+| Motion to Modify Custody | Watson credibility on best interest factors | Emily A. Watson chains |
+| Motion for Contempt | Watson compliance contradictions | Emily A. Watson chains |
+| Motion to Disqualify Judge | Judicial inconsistency / bias patterns | Hon. Jenny L. McNeill chains |
+| JTC Complaint | Judicial misconduct pattern | Hon. Jenny L. McNeill chains |
+| Response to PPO | False allegation contradictions | Emily A. Watson chains |
+| §1983 Complaint | State actor bad faith evidence | All judicial/FOC chains |
+| Trial Brief | All witness credibility | All relevant actor chains |
+| Appellate Brief | Lower court bias evidence | Hon. Jenny L. McNeill chains |
+
+### SC2 Cross-Examination Question Generator
+
+For each contradiction in an impeachment chain:
+
+```
+COMMITMENT PHASE:
+  Q: "[Actor], you [stated/testified/wrote] that [Statement 1], correct?"
+  Q: "And that was [on date/in document/under oath], wasn't it?"
+
+CONFRONTATION PHASE:
+  Q: "But isn't it true that [contradicting fact from Statement 2]?"
+  Q: "Let me show you [Exhibit X, Bates number]. Does this refresh your recollection?"
+  Q: "So which statement is accurate — [Statement 1] or [Statement 2]?"
+
+CONSEQUENCE PHASE:
+  Q: "And this inconsistency relates to [critical issue], doesn't it?"
+  Q: "[If pattern]: And this is the [Nth] time your statements have been contradicted
+      by the record, isn't that right?"
+```
+
+---
+
+## Module SC3: Police Report Intelligence
+
+> Auto-query police_reports table (356 records) for relevant incident reports.
+> Extract exculpatory findings, false allegations, and zero-charge investigations.
+
+### SC3 Police Report Retrieval
+
+```sql
+-- All police reports related to Andrew Pigors
+SELECT report_id, incident_date, incident_type, reporting_party,
+       outcome, charges_filed, officer_name, agency, summary
+FROM police_reports
+WHERE subject LIKE '%Pigors%' OR reporting_party LIKE '%Watson%'
+ORDER BY incident_date DESC;
+
+-- Zero-charge investigation reports (EXCULPATORY)
+SELECT report_id, incident_date, incident_type, reporting_party, summary
+FROM police_reports
+WHERE (subject LIKE '%Pigors%' OR reporting_party LIKE '%Watson%')
+AND charges_filed = 0
+ORDER BY incident_date DESC;
+
+-- CPS/DHHS investigation reports
+SELECT report_id, incident_date, incident_type, reporting_party,
+       outcome, summary
+FROM police_reports
+WHERE incident_type IN ('CPS', 'DHHS', 'child_welfare')
+AND (subject LIKE '%Pigors%' OR reporting_party LIKE '%Watson%')
+ORDER BY incident_date DESC;
+
+-- Reports by specific agency
+SELECT report_id, incident_date, summary, outcome
+FROM police_reports
+WHERE agency = ? AND incident_date BETWEEN ? AND ?
+ORDER BY incident_date DESC;
+```
+
+### SC3 Key Evidence Pattern: Zero-Charge Investigations
+
+**Critical for PPO defense, custody motions, and §1983 complaints:**
+
+When police/CPS investigations consistently result in ZERO charges against Andrew Pigors,
+this establishes a pattern of:
+1. **False/frivolous reporting** by Emily A. Watson (relevant to credibility)
+2. **Exculpatory findings** (relevant to custody best interest factors)
+3. **Abuse of process** (relevant to §1983 claims)
+4. **Pattern evidence** (relevant to court's assessment of each party's conduct)
+
+### SC3 Auto-Embed Template
+
+```
+The record demonstrates a pattern of [NUMBER] investigations initiated by
+[reporting party], each of which resulted in zero charges/substantiated findings:
+
+[For each zero-charge report]:
+  - [Date]: [Incident Type] — Report #[ID], [Agency]
+    Reported by: [Reporting Party]
+    Finding: [Outcome — no charges/unsubstantiated]
+    (Ex. [Bates#], Police Report, p. [Page].)
+
+This pattern of [NUMBER] unsubstantiated reports is relevant to [legal purpose]
+and demonstrates [conclusion tied to filing type].
+```
+
+**WARNING:** Do NOT cite a specific count of investigations without running the query first.
+Past sessions fabricated "9 CPS investigations" — this number must come from the actual
+`SELECT COUNT(*)` query result, not from memory.
+
+---
+
+## Module SC4: Timeline-Driven Narrative Construction
+
+> Auto-query master_evidence_timeline (24,859 events) for chronological fact sequences.
+> Build narrative sections in date order with source citations.
+> Flag gaps where evidence is missing → generate acquisition tasks.
+
+### SC4 Timeline Retrieval Queries
+
+```sql
+-- Full timeline for a specific lane
+SELECT event_date, event_description, source_document, actors, lane,
+       event_type, evidence_strength
+FROM master_evidence_timeline
+WHERE lane = ?
+ORDER BY event_date ASC;
+
+-- Timeline for specific date range
+SELECT event_date, event_description, source_document, actors
+FROM master_evidence_timeline
+WHERE lane = ? AND event_date BETWEEN ? AND ?
+ORDER BY event_date ASC;
+
+-- Timeline filtered by actor
+SELECT event_date, event_description, source_document, lane
+FROM master_evidence_timeline
+WHERE actors LIKE '%[actor name]%'
+ORDER BY event_date ASC;
+
+-- Timeline filtered by event type
+SELECT event_date, event_description, source_document, actors, lane
+FROM master_evidence_timeline
+WHERE event_type = ? AND lane = ?
+ORDER BY event_date ASC;
+
+-- Gap detection: find periods with no events
+SELECT
+  t1.event_date as last_event,
+  MIN(t2.event_date) as next_event,
+  CAST(julianday(MIN(t2.event_date)) - julianday(t1.event_date) AS INTEGER) as gap_days
+FROM master_evidence_timeline t1
+JOIN master_evidence_timeline t2
+  ON t2.event_date > t1.event_date AND t2.lane = t1.lane
+WHERE t1.lane = ?
+GROUP BY t1.event_date
+HAVING gap_days > 30
+ORDER BY gap_days DESC LIMIT 10;
+```
+
+### SC4 Narrative Construction Protocol
+
+```
+ENTRY: Filing requires chronological fact section
+│
+├─ Step 1: Determine relevant date range and lane
+├─ Step 2: Query master_evidence_timeline for all events in range
+├─ Step 3: Organize events by date (ascending)
+├─ Step 4: For each event:
+│   ├─ Convert to narrative paragraph with date, actors, conduct
+│   ├─ Add source citation: (Ex. [Bates#], [Source], p. [Page].)
+│   └─ Cross-reference with evidence_quotes for direct quotes
+│
+├─ Step 5: Run gap detection query
+│   ├─ Gaps > 30 days: Flag as potential acquisition tasks
+│   ├─ Gaps > 90 days: Mark as CRITICAL gaps in narrative
+│   └─ For each gap: Generate specific acquisition task:
+│       "[GAP: No evidence found between [Date1] and [Date2] for Lane [X].
+│        Possible sources: [FOIA request], [subpoena target], [records search].
+│        Priority: [based on gap location in narrative arc]]"
+│
+└─ OUTPUT: Chronological narrative section with embedded citations + gap report
+```
+
+### SC4 Narrative Paragraph Template
+
+```
+On [DATE], [ACTOR] [CONDUCT VERB] [TARGET/OBJECT]. [Additional detail from evidence].
+(Ex. [Bates#], [Source Document], p. [Page Number].) [If direct quote available]:
+Specifically, [Actor] [stated/wrote/testified]: "[Direct quote from evidence_quotes]."
+(Ex. [Bates#], [Source], p. [Page].)
+```
+
+### SC4 Pattern Detection Overlay
+
+After constructing the timeline narrative, auto-detect these patterns:
+
+| Pattern | Detection Query | Filing Relevance |
+|---|---|---|
+| Retaliation | Events where [adverse action] follows [protected activity] within 30 days | §1983, contempt, custody |
+| Escalation | Events increasing in severity over time | PPO defense, §1983 |
+| Withholding | Gaps in parenting time correlating with court dates | Custody, contempt |
+| False reporting | Police/CPS reports followed by zero-charge outcomes | PPO defense, sanctions |
+| Judicial bias | Rulings consistently adverse despite evidence weight | Disqualification, JTC |
+| Coordination | Events from multiple actors occurring in temporal proximity | Conspiracy, §1983 |
+
+```sql
+-- Retaliation pattern detection
+SELECT t1.event_date as protected_activity, t1.event_description,
+       t2.event_date as adverse_action, t2.event_description,
+       CAST(julianday(t2.event_date) - julianday(t1.event_date) AS INTEGER) as days_between
+FROM master_evidence_timeline t1
+JOIN master_evidence_timeline t2
+  ON t2.event_date > t1.event_date
+  AND julianday(t2.event_date) - julianday(t1.event_date) <= 30
+WHERE t1.event_type = 'protected_activity'
+AND t2.event_type = 'adverse_action'
+AND t1.lane = ?
+ORDER BY t1.event_date;
+```
+
+---
+
+## APEX Command Quality Gate (v3.0 Addition)
+
+All filings generated by litigation-supreme-commander v3.0 MUST pass these gates:
+
+```yaml
+apex_command_gates:
+  SC1_database_first:
+    - three_source_search_completed: boolean
+    - evidence_quotes_queried: boolean
+    - filesystem_searched: boolean
+    - summary_files_checked: boolean
+    - generic_placeholders_zero: integer  # MUST be 0
+
+  SC2_impeachment_integrated:
+    - impeachment_chains_queried_for_credibility_filings: boolean
+    - cross_exam_questions_generated: boolean
+    - contradiction_citations_verified: boolean
+
+  SC3_police_intelligence:
+    - police_reports_queried_where_relevant: boolean
+    - zero_charge_count_from_actual_query: boolean
+    - no_fabricated_investigation_counts: boolean
+
+  SC4_timeline_driven:
+    - timeline_queried_for_narrative_sections: boolean
+    - gap_detection_run: boolean
+    - acquisition_tasks_generated_for_gaps: boolean
+    - pattern_detection_applied: boolean
+
+  anti_hallucination:
+    - no_fabricated_names: boolean
+    - blacklist_checked: ["Jane Berry", "Patricia Berry", "91% alienation score",
+                          "Tiffany Watson", "Lincoln David Watson", "Ron Berry Esq",
+                          "Amy McNeill", "P35878", "Emily Ann Watson", "Emily M. Watson"]
+    - all_party_names_from_verified_table: boolean
+    - all_statistics_traceable_to_sql_query: boolean
+    - ronald_berry_marked_non_attorney: boolean
+    - jennifer_barnes_marked_withdrawn: boolean
+
+  verified_party_identity:
+    plaintiff: "Andrew James Pigors"
+    defendant: "Emily A. Watson"
+    child: "L.D.W."
+    judge: "Hon. Jenny L. McNeill"
+    former_attorney: "Jennifer Barnes (P55406) — WITHDREW"
+    foc: "Pamela Rusco"
+    non_attorney: "Ronald Berry — NON-ATTORNEY, no bar number, no Esq."
 ```

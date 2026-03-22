@@ -156,3 +156,182 @@ Private parties acting under color of state law receive NO immunity defense:
 | Tony Watson Sr. | None (if state action) | Full damages + punitive | Available | Establish conspiracy participation |
 | Shady Oaks / HoA | None (if state action) | Full damages + punitive | Available | Establish nexus with state |
 | Muskegon County | None (Monell) | Compensatory only | Available | Policy/custom/failure to train |
+
+---
+
+## VI. APEX-OMEGA v3.0 — Automated Immunity Piercing Checklist
+
+*Added: v3.0.0-APEX-OMEGA*
+
+### Automated Pre-Filing Immunity Audit
+
+Run this checklist for **every defendant** before including them in the federal complaint. Each item must be answered YES/NO with evidence citation.
+
+```
+DEFENDANT: _______________
+IMMUNITY TYPE: [ ] Absolute Judicial  [ ] Qualified  [ ] None  [ ] Prosecutorial
+
+═══════════════════════════════════════════════════════════════
+SECTION A: JUDICIAL IMMUNITY PIERCING (if applicable)
+═══════════════════════════════════════════════════════════════
+
+□ A.1  Identify ALL acts by this judge at issue
+       Source: litigation_context.db → judicial_violations
+       Query: SELECT * FROM judicial_violations ORDER BY violation_date
+
+□ A.2  For EACH act, classify: JUDICIAL or NON-JUDICIAL?
+       Test: Mireles v. Waco — "function normally performed by a judge"?
+       - If parties dealt with judge in judicial capacity AND act is a
+         normal judicial function → JUDICIAL (immune from damages)
+       - If act is administrative, enforcement, investigative, or
+         retaliatory → NON-JUDICIAL (immunity pierced)
+
+□ A.3  Non-judicial act inventory:
+       [ ] Ex parte communications (with whom, dates, subject)
+       [ ] Scheduling manipulation (specific instances, effect on rights)
+       [ ] Retaliatory conduct (protected activity → adverse action → timing)
+       [ ] Administrative/enforcement acts (specific conduct)
+       [ ] Independent factfinding outside record
+       Evidence: ____________________________________________
+
+□ A.4  Absence of jurisdiction check:
+       [ ] Did judge act in complete absence of subject matter jurisdiction?
+       [ ] Distinguish "excess of jurisdiction" (immune) vs "clear absence" (not immune)
+       [ ] For family court: MCL Chapter 722 confers jurisdiction → likely not absent
+       Result: [ ] Jurisdiction present (cannot pierce on this ground)
+               [ ] Arguable absence (document basis)
+
+□ A.5  Pulliam pathway available?
+       [ ] Injunctive relief: Can seek order requiring constitutional procedures
+       [ ] Declaratory relief: Can seek declaration that procedures violated due process
+       [ ] Damages for non-judicial acts: Available if A.2 identified non-judicial acts
+       [ ] Attorney fees: Limited by FCIA (only if declaratory relief "unavailable")
+
+═══════════════════════════════════════════════════════════════
+SECTION B: QUALIFIED IMMUNITY PIERCING (if applicable)
+═══════════════════════════════════════════════════════════════
+
+□ B.1  Step 1 — Constitutional violation:
+       [ ] Identify specific constitutional right violated
+       [ ] Cite specific conduct that caused the violation
+       [ ] Document evidence from DB:
+           Query: SELECT * FROM evidence_quotes
+                  WHERE legal_significance LIKE '%[right]%'
+       Violation strength: [ ] STRONG  [ ] MODERATE  [ ] WEAK
+
+□ B.2  Step 2 — Clearly established (6th Circuit):
+       [ ] Supreme Court precedent with analogous facts: ________________
+       [ ] 6th Circuit precedent with analogous facts: ________________
+       [ ] Consensus of sister circuits (if 6th Cir. silent): ________________
+       [ ] "Obviousness" doctrine (Hope v. Pelzer): applicable? [ ] YES  [ ] NO
+       Clearly established strength: [ ] STRONG  [ ] MODERATE  [ ] WEAK
+
+□ B.3  Combined assessment:
+       [ ] Both steps strong → IMMUNITY DEFEATED (proceed with damages)
+       [ ] Step 1 strong, Step 2 uncertain → ARGUABLE (prepare for litigation)
+       [ ] Either step weak → IMMUNITY LIKELY (focus on injunctive relief)
+
+□ B.4  Discovery strategy for immunity:
+       [ ] Request early limited discovery on immunity question
+       [ ] Seek training records, policy manuals, prior complaints
+       [ ] Deposition on knowledge of constitutional requirements
+
+═══════════════════════════════════════════════════════════════
+SECTION C: STATE ACTION FOR PRIVATE PARTIES (if applicable)
+═══════════════════════════════════════════════════════════════
+
+□ C.1  Which state action theory applies?
+       [ ] Joint action (Dennis v. Sparks) — conspiracy with state actor
+       [ ] Nexus test — state "insinuated itself" into private action
+       [ ] Public function — private party performs traditional state function
+       [ ] Symbiotic relationship — state and private party interdependent
+
+□ C.2  Evidence of state action:
+       [ ] Communications between private party and state actors
+       [ ] Coordinated timing of actions
+       [ ] Shared objectives in depriving plaintiff of rights
+       [ ] State actor's role in enabling private party's conduct
+       Source: litigation_context.db → evidence_quotes, contradiction_map
+
+□ C.3  Result:
+       [ ] STATE ACTION ESTABLISHED → No immunity defense available
+       [ ] STATE ACTION ARGUABLE → Include in complaint, prepare for MTD
+       [ ] STATE ACTION WEAK → Consider dropping or limiting claims
+
+═══════════════════════════════════════════════════════════════
+SECTION D: MONELL (if municipal defendant)
+═══════════════════════════════════════════════════════════════
+
+□ D.1  Policy/custom identified?
+       [ ] Written policy: ________________
+       [ ] Widespread custom: ________________ (need multiple instances)
+       [ ] Failure to train: ________________ (deliberate indifference)
+       [ ] Ratification: ________________ (policymaker approved specific act)
+
+□ D.2  Policymaker identified?
+       [ ] Name: ________________ Role: ________________
+       [ ] Authority to make policy (per state law): documented? [ ] YES  [ ] NO
+
+□ D.3  "Moving force" causation:
+       [ ] Policy/custom was the "moving force" behind specific violation
+       [ ] Direct connection between policy and plaintiff's injury
+       [ ] Not mere respondeat superior
+```
+
+### Judge McNeill — Specific Immunity Piercing Analysis
+
+**Acts classified as NON-JUDICIAL (immunity pierced for damages):**
+
+| # | Act | Date(s) | Classification | Evidence Source |
+|---|-----|---------|---------------|----------------|
+| 1 | Ex parte communications with GAL | [Query judicial_violations] | Non-judicial: factfinding outside adversarial process | `judicial_violations` WHERE violation_type LIKE '%ex parte%' |
+| 2 | Ex parte communications with Emily Watson's counsel | [Query] | Non-judicial: one-sided communication | Same query |
+| 3 | Scheduling manipulation to deny father hearing | [Query] | Non-judicial: administrative act | `judicial_violations` WHERE violation_type LIKE '%schedul%' |
+| 4 | Retaliation after JTC complaint filed | [Query] | Non-judicial: retaliation is never judicial | `judicial_violations` WHERE description LIKE '%retaliat%' |
+| 5 | Directing FOC actions outside court orders | [Query] | Non-judicial: enforcement/administrative | `judicial_violations` WHERE description LIKE '%direct%FOC%' |
+
+**Acts that remain JUDICIAL (immune from damages, but Pulliam injunctive relief available):**
+
+| # | Act | Classification | Pulliam Pathway |
+|---|-----|---------------|-----------------|
+| 1 | Custody ruling after hearing | Judicial | Injunction requiring constitutional procedures |
+| 2 | Order entering findings | Judicial | Declaration that findings process was deficient |
+| 3 | Courtroom management (muting) | Judicial | Injunction against silencing parties |
+
+### FOC / GAL Qualified Immunity Vulnerability Analysis
+
+**Pamela Rusco (FOC):**
+
+| Vulnerability | Step 1 (Violation) | Step 2 (Clearly Established) | Assessment |
+|---------------|-------------------|------------------------------|------------|
+| Biased investigation | Conducting investigation with predetermined conclusion violates due process | Mathews v. Eldridge (1976): fair process required; Cleveland Bd. v. Loudermill (1985): right to present evidence | **IMMUNITY LIKELY DEFEATED** |
+| Failure to investigate father's evidence | Refusing to consider exculpatory evidence = due process violation | Clearly established in investigative context | **IMMUNITY LIKELY DEFEATED** |
+| Coordinating with one party | Ex parte coordination = due process violation | Dennis v. Sparks analogy: corruption of process | **ARGUABLE — strong facts needed** |
+| Following court's instructions | If merely following judge's orders, may be protected | "Just following orders" defense is weak but has some traction | **IMMUNITY POSSIBLE — distinguish** |
+
+**GAL (Guardian Ad Litem):**
+
+| Vulnerability | Step 1 (Violation) | Step 2 (Clearly Established) | Assessment |
+|---------------|-------------------|------------------------------|------------|
+| Biased investigation | Predetermined recommendation without genuine investigation | Kurzawa: GAL has qualified, not absolute immunity; Troxel: parental rights fundamental | **IMMUNITY LIKELY DEFEATED** |
+| Failure to interview father | Not hearing from both parents = due process violation | Standard GAL practice requires interviewing both parents — deviation is clear | **IMMUNITY DEFEATED** |
+| Ex parte report to judge | Communicating conclusions to judge outside adversarial process | Due process requires opportunity to confront evidence | **STRONG — immunity pierced** |
+| Recommending against father without basis | Arbitrary recommendation = substantive due process violation | Fundamental right to parent requires more than arbitrary deprivation | **ARGUABLE — need evidence of arbitrariness** |
+
+### Emily Watson / Barnes — Private Party State Action Analysis
+
+**Emily A. Watson:**
+
+| State Action Theory | Evidence Needed | Strength | Notes |
+|--------------------|-----------------|----------|-------|
+| **Dennis v. Sparks joint action** | Communications with court/GAL coordinating strategy; evidence of ex parte influence on judicial decisions | **STRONG** if ex parte coordination documented | Dennis specifically addresses corrupting judicial process |
+| **Conspiracy with state actors (§ 1985)** | Agreement (express or implied) with McNeill/Rusco/GAL to deprive father of rights | **MODERATE** — needs specific evidence of agreement | Parallel conduct alone insufficient; need coordinated action |
+| **Nexus test** | State "so far insinuated itself" into Watson's private custody actions | **WEAK** for general custody — stronger if court actively assisted Watson's interference | Better theories available |
+
+**Jennifer Barnes P55406:**
+
+| State Action Theory | Evidence Needed | Strength | Notes |
+|--------------------|-----------------|----------|-------|
+| **Joint action with court** | Evidence Barnes participated in ex parte communications with judge/GAL; used improper channels to influence proceedings | **MODERATE** — attorneys sometimes have legitimate ex parte contact (scheduling, etc.) | Must distinguish legitimate from improper |
+| **Conspiracy (§ 1985)** | Agreement with court actors to deprive father of rights through improper means | **MODERATE** — need specific evidence beyond zealous advocacy | Attorney conduct claims are disfavored without strong evidence |
+| **Caution** | Courts protect vigorous advocacy; must show conduct beyond normal representation | — | High evidence bar for attorney as § 1983 defendant |

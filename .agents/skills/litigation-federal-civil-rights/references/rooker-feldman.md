@@ -178,3 +178,163 @@ Include in every federal complaint:
 4. **Anticipate the defense** — Defendants WILL raise Rooker-Feldman; have your response ready
 5. **Brief the distinction** — At complaint stage, explain why each claim is independent
 6. **Monitor state proceedings** — Keep federal filing window open by filing before final judgment where possible
+
+---
+
+## APEX-OMEGA v3.0 — Enhanced Rooker-Feldman Navigation
+
+*Added: v3.0.0-APEX-OMEGA*
+
+### Pre-Built Complaint Framing Language (Copy-Paste Ready)
+
+These framing paragraphs are designed to inoculate each federal claim against Rooker-Feldman dismissal. Include the appropriate version in each Count of the complaint.
+
+**Universal Rooker-Feldman Shield (include in EVERY complaint):**
+
+> "Plaintiff expressly disclaims any request for this Court to review, reverse, vacate, or modify any state court judgment, order, or decision. The claims herein challenge the unconstitutional CONDUCT of Defendants, not the correctness of any state court ruling. The constitutional injuries alleged exist independently of any state court outcome and would be actionable federal wrongs regardless of whether any state court judgment is affirmed, reversed, or vacated on direct appeal. This Court's resolution of Plaintiff's claims requires no examination of the merits of any state court decision. See Exxon Mobil Corp. v. Saudi Basic Industries Corp., 544 U.S. 280, 284 (2005); Skinner v. Switzer, 562 U.S. 521, 532 (2011)."
+
+**Per-Count Framing — Procedural Due Process:**
+
+> "The deprivation of procedural due process alleged in this Count is an independent constitutional injury. Whether the state court's ultimate decision was correct, incorrect, or somewhere in between is irrelevant to this claim. The injury is the PROCESS ITSELF — specifically, the failure to provide [notice / hearing / opportunity to be heard / impartial decisionmaker] before depriving Plaintiff of [parental rights / liberty / property]. This injury exists and is actionable regardless of what the state court decided on the merits."
+
+**Per-Count Framing — First Amendment Retaliation:**
+
+> "The retaliatory conduct alleged in this Count is an independent federal wrong wholly separate from any state court judgment. Defendant [Name] retaliated against Plaintiff for exercising the constitutionally protected right to [file motions / petition for redress / file complaints with oversight bodies]. The retaliation — not any state court ruling — is the injury. Adjudicating this claim requires the Court to evaluate Defendant's retaliatory motive, not to review any state court decision."
+
+**Per-Count Framing — § 1985(3) Conspiracy:**
+
+> "The conspiracy alleged in this Count is an independent federal tort. The agreement among Defendants to deprive Plaintiff of [equal protection / constitutional rights] through concerted unconstitutional action is itself the actionable wrong, separate from any state court judgment that may have resulted. This Court need not review any state court decision to determine whether Defendants entered into a conspiracy and committed overt acts in furtherance thereof."
+
+**Per-Count Framing — Monell Liability:**
+
+> "The municipal liability alleged in this Count challenges the systemic policies, customs, and practices of Defendant [County], not any individual state court judgment. The pattern of [unconstitutional conduct] is an independently actionable federal claim that requires this Court to examine Defendant's institutional behavior, training programs, and policy decisions — none of which requires review of any specific state court ruling."
+
+**Per-Count Framing — Equal Protection:**
+
+> "The equal protection violation alleged in this Count challenges the discriminatory TREATMENT Plaintiff received, not the correctness of any state court decision. Whether the state court reached the right result is irrelevant; the claim is that Plaintiff was subjected to [different procedures / heightened burdens / disparate treatment] compared to similarly situated [represented parties / mothers / non-pro-se litigants], in violation of the Fourteenth Amendment's guarantee of equal protection."
+
+### MTD Response Templates — Rooker-Feldman
+
+**Opening Framework:**
+
+```
+III. ROOKER-FELDMAN DOES NOT BAR ANY OF PLAINTIFF'S CLAIMS
+
+    A. The Doctrine Is Narrow
+
+    Defendants' reliance on Rooker-Feldman is misplaced. Since Exxon
+Mobil Corp. v. Saudi Basic Industries Corp., 544 U.S. 280 (2005), the
+doctrine is "confined to" — and only to — "cases brought by state-court
+losers complaining of injuries caused by state-court judgments rendered
+before the district court proceedings commenced and inviting district court
+review and rejection of those judgments." Id. at 284. The Supreme Court
+characterized it as a "narrow doctrine." Id. at 291.
+
+    Defendants bear the burden of establishing that ALL FOUR requirements
+are met for each challenged claim. Failure on any single requirement
+defeats the defense. McCormick v. Braverman, 451 F.3d 382, 393 (6th Cir.
+2006).
+```
+
+**Requirement-by-Requirement Rebuttal:**
+
+```
+    B. Plaintiff's Claims Fail One or More Exxon Mobil Requirements
+
+    Requirement 1 (State-court loser): [If state proceedings are still
+pending, there is no final judgment and Plaintiff is not a "loser" within
+the meaning of the doctrine.]
+
+    Requirement 2 (Injuries caused by judgment): Plaintiff's injuries
+are caused by Defendants' unconstitutional CONDUCT, not by any state court
+judgment. The injury of [specific deprivation] exists independently of any
+ruling. [Cite specific non-judgment injury for each claim.]
+
+    Requirement 3 (Judgment before federal filing): [If state proceedings
+remain pending or post-judgment motions are outstanding, this requirement
+is not met.]
+
+    Requirement 4 (Inviting review/rejection): This Court need not review
+or reject any state court judgment to adjudicate Plaintiff's claims.
+Plaintiff asks this Court to:
+    - Declare that certain PROCEDURES violated the Constitution
+    - Enjoin future unconstitutional CONDUCT
+    - Award damages for past unconstitutional CONDUCT
+    None of these remedies requires reviewing any state court decision.
+```
+
+**Distinguishing Key Counter-Arguments:**
+
+```
+    C. Defendants' "Inextricably Intertwined" Argument Fails
+
+    Defendants may argue Plaintiff's claims are "inextricably intertwined"
+with state court judgments. Post-Exxon Mobil, this test has been
+significantly narrowed. A claim is intertwined ONLY if succeeding on it
+would require the federal court to determine the state court decided
+wrongly. McCormick, 451 F.3d at 393.
+
+    Here, Plaintiff can prevail on every claim without this Court ever
+determining whether any state court order was correct or incorrect:
+    - Due process claims: The Court need only find that Plaintiff was
+      denied [notice/hearing/opportunity to be heard] — not that the
+      outcome should have been different.
+    - Retaliation claims: The Court need only find retaliatory motive —
+      not that any underlying ruling was wrong.
+    - Conspiracy claims: The Court need only find an agreement to deprive
+      rights — not that any state judgment should be reversed.
+
+    D. The Domestic Relations Exception Does Not Apply
+
+    Defendants may invoke the domestic relations exception (Ankenbrandt v.
+Richards, 504 U.S. 689 (1992)). The exception bars federal courts from
+issuing divorce decrees, custody determinations, and alimony awards. It
+does NOT bar constitutional challenges to HOW family courts conduct
+proceedings. Plaintiff does not ask this Court to make any custody
+determination — only to enforce constitutional procedural requirements.
+```
+
+### Andrew-Specific Fact Application — Independent Federal Claims
+
+| State Court Event | Why It's NOT a Challenge to the Judgment | Independent Federal Injury | Key Evidence (DB Source) |
+|-------------------|------------------------------------------|---------------------------|------------------------|
+| Custody determination | Plaintiff does not seek different custody outcome — seeks constitutional process | Judge held ex parte proceedings, denied notice, foreclosed father's evidence presentation | `judicial_violations` WHERE violation_type LIKE '%ex parte%' OR '%notice%' |
+| PPO issuance/modification | Plaintiff does not challenge PPO validity — challenges the unconstitutional process | PPO modified/issued without hearing, without constitutional notice requirements | `judicial_violations` WHERE description LIKE '%PPO%' |
+| GAL recommendation adopted | Plaintiff does not challenge recommendation — challenges biased investigation | GAL conducted predetermined investigation, refused to interview father, ex parte communications | `evidence_quotes` WHERE claim_type LIKE '%GAL%' |
+| Parenting time suspension | Plaintiff does not ask federal court to set parenting schedule — challenges deprivation without process | Liberty interest in parent-child relationship deprived without hearing or findings | `evidence_quotes` WHERE legal_significance LIKE '%parenting time%' |
+| Contempt findings | Plaintiff does not challenge factual findings — challenges criminal punishment without criminal protections | Criminal-level sanctions imposed without right to counsel, jury, proof beyond reasonable doubt | `judicial_violations` WHERE violation_type LIKE '%contempt%' |
+| Motion denials | Plaintiff does not argue motions should have been granted — challenges refusal to consider them at all | Motions denied without reading, without hearing, without ruling on merits | `judicial_violations` WHERE violation_type LIKE '%motion%denied%' |
+| FOC investigation/recommendation | Plaintiff does not challenge recommendation — challenges biased investigative process | Due process requires fair investigation; FOC conducted biased, one-sided investigation | `evidence_quotes` WHERE legal_significance LIKE '%FOC%' |
+
+### Younger Abstention Defensive Strategy
+
+If defendants raise Younger v. Harris, 401 U.S. 37 (1971):
+
+**Three-factor test (all must be met for abstention):**
+1. Ongoing state judicial proceeding — [address whether proceedings are truly "ongoing"]
+2. Important state interest — custody is an important state interest (likely met)
+3. Adequate opportunity to raise federal claims in state court — **THIS IS THE KEY DEFENSE**
+
+**Attack on factor 3 — inadequate opportunity:**
+
+```
+    Younger abstention requires an "adequate opportunity" to raise federal
+constitutional issues in state court. Middlesex County Ethics Comm. v.
+Garden State Bar Ass'n, 457 U.S. 423, 432 (1982). This requirement is
+not met where the state court itself is the source of the constitutional
+violation.
+
+    Plaintiff has been denied the ability to meaningfully raise
+constitutional claims in state court because:
+    a. Motions raising constitutional issues were denied without hearing
+    b. The presiding judge is the primary defendant — raising bias/due
+       process claims to the very judge accused of violating those rights
+       is futile
+    c. Plaintiff has been sanctioned, held in contempt, or otherwise
+       punished for asserting constitutional rights in state court
+    d. [Additional specific examples from DB]
+
+    Where the state forum itself is hostile to the assertion of federal
+rights, Younger abstention is inappropriate. Kugler v. Helfant, 421 U.S.
+117, 124 (1975) (exception for "extraordinary circumstances").
+```
