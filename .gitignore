@@ -67,6 +67,7 @@ bin/
 backend/
 frontend/
 data/
+!11_CODE/litigationos/src/litigationos/data/
 09_DATA/
 10_IMAGES/
 12_EXTERNAL/
