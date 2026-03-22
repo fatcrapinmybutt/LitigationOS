@@ -96,3 +96,6 @@ gitattributes
 *.dll
 *.so
 naschedulingorder.doc
+
+# MCP server virtual environment
+.mcp_venv/

@@ -5,7 +5,7 @@ applyTo: "**/*.py"
 
 # SQLite Memory
 
-Hard-won SQLite performance patterns for a 10 GB+, 694-table litigation database.
+Hard-won SQLite performance patterns for a 10 GB+, 790+-table litigation database across 70+ database files on 6 drives.
 
 ## Three-Tier Connection Strategy
 
@@ -103,3 +103,69 @@ When pipe buffers overflow (too many shells), DB connections may also fail becau
 starved for file descriptors. Controlling SHARED pipe pressure (max 2 shells) indirectly protects
 DB connections. Agents use ISOLATED pipes (safe at 3 concurrent). Total: max 2 shells + 3 agents = 5.
 Never open DB connections inside shell commands — use dedicated Python scripts instead.
+
+## Filesystem-Aware Journal Mode Selection
+
+exFAT (used on USB removable drives like J:\) has **no file locking** and **no filesystem journaling**. SQLite WAL mode requires `.shm` shared memory files and POSIX-style file locks — both fail silently on exFAT, risking data corruption.
+
+```python
+# NTFS drives (C:\ SSD) — WAL mode is safe and fast
+PRAGMA journal_mode = WAL;
+PRAGMA synchronous = NORMAL;
+
+# exFAT drives (J:\ USB, removable media) — DELETE mode only
+PRAGMA journal_mode = DELETE;
+PRAGMA synchronous = FULL;   # compensate for no filesystem journal
+
+# Read-only WAL databases on exFAT — use immutable=1 URI flag
+conn = sqlite3.connect("file:///J:/path/db.sqlite?immutable=1", uri=True)
+```
+
+Match journal mode to the filesystem hosting the database file. When ATTACHing cross-filesystem, each attached DB inherits its own journal mode independently.
+
+## Multi-Database Federation with ATTACH
+
+LitigationOS has 70+ databases across 6 drives. Cross-DB queries use SQLite's ATTACH:
+
+```python
+conn.execute("ATTACH DATABASE ? AS ?", (str(db_path), alias))
+
+# Cross-DB query spanning main + attached
+cursor = conn.execute("""
+    SELECT a.claim_id, b.authority_text
+    FROM main.claims a
+    JOIN authority_brain.authorities b ON a.authority_id = b.id
+""")
+```
+
+**Constraints and patterns:**
+- Default max 10 attached DBs per connection (compile-time limit: 125)
+- WAL mode does **NOT** provide atomic cross-DB transactions — use DELETE mode when atomicity across attached DBs is required
+- Pre-attach known DBs at connection startup; avoid ATTACH/DETACH in hot request paths
+- For 10+ source DBs, batch-attach in groups of 9 (main uses one slot), query, DETACH, rotate
+- Run `ANALYZE` on all attached DBs for optimal cross-DB query plans
+- Prefix all table references with schema alias in cross-DB queries for clarity
+
+## 3-Tier Storage Architecture
+
+| Tier | Location | Journal Mode | Use Case |
+|------|----------|-------------|----------|
+| **HOT** | C:\ NVMe SSD | WAL | `litigation_context.db`, brain DBs, rules, forms — fast reads/writes |
+| **WARM** | J:\ USB 2TB exFAT | DELETE | Manifests, OCR, tools, reference — infrequent cold queries |
+| **ARCHIVE** | J:\ USB 2TB exFAT | `immutable=1` | Historical backups — read-only, never written to |
+
+Active databases stay on the SSD for WAL performance + reliable file locking. USB drives serve archives and cold reference queries only. When building connection helpers, detect the drive letter and auto-select the correct journal mode.
+
+## Schema Introspection Before Queries
+
+Production tables created by the pipeline may have completely different columns than DDL definitions in code (e.g., pipeline-created `documents` table has `title`, `doc_type`, `content_preview` while MCP DDL expects `file_name`, `file_size_bytes`, `sha256_hash`).
+
+```python
+# Always verify schema before first query to any table
+columns = {row[1] for row in conn.execute("PRAGMA table_info(documents)")}
+has_title = "title" in columns
+has_file_name = "file_name" in columns
+# Build adaptive SELECT based on actual columns present
+```
+
+**Key gotcha:** `CREATE TABLE IF NOT EXISTS` silently skips when the table already exists with a **different** schema. It does NOT validate or migrate columns. Use adaptive column helpers (like `_doc_columns()`) that introspect at runtime and alias columns to bridge mismatches between production schema and expected schema.
