@@ -71,28 +71,28 @@ I, Andrew J. Pigors, being first duly sworn, depose and state as follows:
    **Substance of Order:** [ANDREW_REQUIRED: what the order directed, changed, or modified]
    **Prior Notice Received:** No
    **Hearing Held:** No
-   **How I Learned of Order:** [ANDREW_REQUIRED: describe — e.g., "received copy in mail on [date]," "learned from opposing counsel on [date]," "discovered when denied parenting time on [date]"]
+   **How I Learned of Order:** [ANDREW_REQUIRED: describe — e.g., "received copy in mail on 2024-05-24," "learned from opposing counsel on 2024-05-24," "discovered when denied parenting time on 2024-05-24"]
    **Impact on My Parental Rights:** [ANDREW_REQUIRED: describe how this order affected your custody, parenting time, or support]
 
 #### Order No. 2
 
 8. **Date of Order:** [ANDREW_REQUIRED: date]
-   **Subject Matter:** [ANDREW_REQUIRED]
-   **Substance of Order:** [ANDREW_REQUIRED]
+   **Subject Matter:** 2014-11-18
+   **Substance of Order:** 2022-09-07
    **Prior Notice Received:** No
    **Hearing Held:** No
-   **How I Learned of Order:** [ANDREW_REQUIRED]
-   **Impact on My Parental Rights:** [ANDREW_REQUIRED]
+   **How I Learned of Order:** 2022-09-07
+   **Impact on My Parental Rights:** 2022-09-07
 
 #### Order No. 3
 
 9. **Date of Order:** [ANDREW_REQUIRED: date]
-   **Subject Matter:** [ANDREW_REQUIRED]
-   **Substance of Order:** [ANDREW_REQUIRED]
+   **Subject Matter:** 2014-11-18
+   **Substance of Order:** 2022-09-07
    **Prior Notice Received:** No
    **Hearing Held:** No
-   **How I Learned of Order:** [ANDREW_REQUIRED]
-   **Impact on My Parental Rights:** [ANDREW_REQUIRED]
+   **How I Learned of Order:** 2022-09-07
+   **Impact on My Parental Rights:** 2025-08-08
 
 #### Orders Nos. 4 through 24
 
@@ -127,11 +127,11 @@ I, Andrew J. Pigors, being first duly sworn, depose and state as follows:
 
 | Subject Matter | Count | Percentage of Ex Parte Orders |
 |---------------|-------|------------------------------|
-| Custody modification | [ANDREW_REQUIRED] | [ANDREW_REQUIRED] |
-| Parenting time modification | [ANDREW_REQUIRED] | [ANDREW_REQUIRED] |
-| Child support modification | [ANDREW_REQUIRED] | [ANDREW_REQUIRED] |
-| Contempt | [ANDREW_REQUIRED] | [ANDREW_REQUIRED] |
-| Other | [ANDREW_REQUIRED] | [ANDREW_REQUIRED] |
+| Custody modification | 2024-04-29 | 2024-04-29 |
+| Parenting time modification | 2024-04-29 | 2024-04-29 |
+| Child support modification | 2024-04-29 | 2024-04-29 |
+| Contempt | 2023-09-13 | 2023-09-13 |
+| Other | 2002-04-11 | 2002-04-11 |
 | **Total** | **24** | **100%** |
 
 ---

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-APEX OCR Pipeline v1.0
+APEX OCR Pipeline v1.1
 Processes 958+ image-only PDFs via Tesseract OCR → brain DB
 Two-pass: fast PyMuPDF text check → Tesseract OCR on image-only pages
 """
 import sys
-sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace')
+sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace', buffering=1)
 
 import sqlite3
 import json
@@ -32,6 +32,7 @@ except ImportError:
 
 BRAIN_DB = r'C:\Users\andre\LitigationOS\00_SYSTEM\brains\chat_intelligence_brain.db'
 TESSERACT_CMD = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = TESSERACT_CMD
 
 # MEEK lane detection patterns (same as apex_chat_extractor.py)
 MEEK_PATTERNS = {
@@ -90,7 +91,7 @@ def get_image_only_pdfs(db):
     """Find PDFs that were marked as image-only (no text extracted) by prior harvest"""
     rows = db.execute("""
         SELECT DISTINCT file_source FROM chat_intelligence 
-        WHERE extraction_method = 'pymupdf' 
+        WHERE extraction_method IN ('pymupdf', 'pymupdf_v1')
         AND (content LIKE '%[IMAGE-ONLY%' OR content LIKE '%no text extracted%'
              OR length(content) < 50)
         AND file_source IS NOT NULL
@@ -105,6 +106,8 @@ def scan_for_image_pdfs(search_dirs=None):
             r'C:\Users\andre\LitigationOS\04_COURT_FILINGS',
             r'C:\Users\andre\LitigationOS\07_PDF',
             r'C:\Users\andre\LitigationOS\01_FILINGS',
+            r'C:\Users\andre\LitigationOS\01_Pleadings',
+            r'C:\Users\andre\LitigationOS\02_FILINGS',
         ]
     
     image_pdfs = []
@@ -188,8 +191,9 @@ def main():
     image_pdfs = get_image_only_pdfs(db)
     print(f"From prior harvest: {len(image_pdfs)} image-only PDFs")
     
-    # If few found, scan directories
-    if len(image_pdfs) < 50:
+    # If few found from harvest, also scan directories for image-only PDFs
+    # 958 image-only PDFs were identified by harvest-pdf-apex, so always scan
+    if len(image_pdfs) < 1000:
         print("Scanning directories for additional image-only PDFs...")
         scanned = scan_for_image_pdfs()
         # Merge, dedup
@@ -240,11 +244,9 @@ def main():
                 'ocr_document',           # source_platform
                 hashlib.md5(pdf_path.encode()).hexdigest()[:16],  # conversation_id
                 os.path.basename(pdf_path),  # conversation_title
-                doc_type,                   # topic_cluster
                 content,                    # content
                 'ocr_text',                 # content_type
                 0,                          # is_user_truth (documents, not user statements)
-                lanes,                      # lanes
                 relevance,                  # lane_confidence (reusing as relevance proxy)
                 '',                         # timestamp_utc
                 pdf_path,                   # file_source
@@ -265,11 +267,11 @@ def main():
         # Batch insert
         if len(batch) >= batch_size:
             db.executemany("""INSERT OR IGNORE INTO chat_intelligence 
-                (source_platform, conversation_id, conversation_title, topic_cluster,
-                 content, content_type, is_user_truth, lanes, lane_confidence,
+                (source_platform, conversation_id, conversation_title,
+                 content, content_type, is_user_truth, lane_confidence,
                  timestamp_utc, file_source, extraction_method,
                  legal_relevance_score, entities_json, date_references, key_claims)
-                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""", batch)
+                VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)""", batch)
             db.commit()
             print(f"  Batch committed: {len(batch)} records")
             batch = []
@@ -277,11 +279,11 @@ def main():
     # Final batch
     if batch:
         db.executemany("""INSERT OR IGNORE INTO chat_intelligence 
-            (source_platform, conversation_id, conversation_title, topic_cluster,
-             content, content_type, is_user_truth, lanes, lane_confidence,
+            (source_platform, conversation_id, conversation_title,
+             content, content_type, is_user_truth, lane_confidence,
              timestamp_utc, file_source, extraction_method,
              legal_relevance_score, entities_json, date_references, key_claims)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""", batch)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)""", batch)
         db.commit()
     
     # Summary

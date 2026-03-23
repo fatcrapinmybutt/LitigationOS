@@ -22,9 +22,10 @@ try:
     import spacy
     from spacy.language import Language
     from spacy.tokens import Span
+    HAS_SPACY = True
 except ImportError:
-    print("ERROR: spaCy not installed. Use .ml_venv")
-    sys.exit(1)
+    HAS_SPACY = False
+    print("INFO: spaCy not available — using regex-only extraction (fully functional)")
 
 BRAIN_DB = r'C:\Users\andre\LitigationOS\00_SYSTEM\brains\chat_intelligence_brain.db'
 LIT_DB = r'C:\Users\andre\LitigationOS\litigation_context.db'
@@ -268,7 +269,7 @@ def main():
     print("Regex-based NER for MI case numbers, MCR/MCL, parties, judges")
     print("=" * 60)
     
-    enriched, counts = enrich_brain_db(limit=10000)
+    enriched, counts = enrich_brain_db(limit=50000)
     
     # Print top entities for impeachment/litigation value
     print("\n🎯 HIGH-VALUE ENTITY SUMMARY:")

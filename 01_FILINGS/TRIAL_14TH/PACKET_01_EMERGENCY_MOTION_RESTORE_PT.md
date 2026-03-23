@@ -58,7 +58,7 @@ born November 9, 2022. The parties were never married.
 birth and has demonstrated consistent dedication to the child's welfare,
 including maintaining stable housing, employment, and a safe environment.
 
-7. On or about [date], Defendant-Mother filed a Personal Protection
+7. On or about 2023-11-01, Defendant-Mother filed a Personal Protection
 Order (PPO) petition (Case No. 2023-5907-PP) against Plaintiff-Father.
 The PPO was issued ex parte, without notice or hearing, and has been
 used as a mechanism to prevent all contact between Plaintiff-Father and

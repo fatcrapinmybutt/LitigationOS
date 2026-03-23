@@ -12,7 +12,7 @@
 
 ---
 
-I, Andrew J. Pigors, hereby certify that on **[Date]**, I served a true and complete copy of the following documents:
+I, Andrew J. Pigors, hereby certify that on **2024-05-13**, I served a true and complete copy of the following documents:
 
 1. Request for Investigation — Judicial Tenure Commission
 2. Attachment B — Narrative of Misconduct

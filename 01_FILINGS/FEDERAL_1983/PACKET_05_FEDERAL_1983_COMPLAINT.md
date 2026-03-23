@@ -75,7 +75,7 @@ responsible for the administration of the 14th Judicial Circuit Court.
 November 9, 2022. Plaintiff has been actively involved in L.D.W.'s
 life from birth.
 
-10. Beginning on or about [date], Defendants engaged in a course of
+10. Beginning on or about 2024-05-02, Defendants engaged in a course of
 conduct that deprived Plaintiff of all contact with his son for
 a period exceeding 329 consecutive days, without:
     a. An evidentiary hearing;

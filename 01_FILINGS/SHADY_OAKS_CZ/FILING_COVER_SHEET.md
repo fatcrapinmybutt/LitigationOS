@@ -27,7 +27,7 @@
 ### Content Review
 - [ ] **Verify current address**: The complaint uses 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445. If Andrew has moved, update to current address (existing filings show 306 W. Southern Ave., Muskegon, MI 49441 — confirm which is current)
 - [ ] **Verify phone number**: (231) 903-5690 vs. (231) 260-1936 — confirm which is current
-- [ ] **[VERIFY] markers**: Search the document for "[VERIFY]" tags and resolve all items before filing
+- [ ] ** markers**: Search the document for "[VERIFY]" tags and resolve all items before filing
 - [ ] **Assigned Judge**: Fill in the assigned judge name in the caption (existing filings show Hon. Kenneth Hoopes — confirm)
 - [ ] **Security Deposit amount**: Count VI references deposit amount — verify exact dollar amount from lease records or receipts
 - [ ] **Date verification**: All dates are from verified sources (EGLE records, ledger versions, court filings)

@@ -310,14 +310,14 @@ A total of **79** police reports contain documented threat data. These reports c
 - **Location(s):** ["4814 Henry Street", "2160 GARLAND  DR\nNORTON  SHORES", "2160 GARLAND  DR", "1977 WHITEHALL  RD TRLR 17\nMUSKEGON", "1143 E Norton Ave", "2160 Garland Dr\nI was dispatched  to TX Andrew Pigors regarding  an other investigation.\nSpeaking  with Andrevv on TX", "2160 Garland Dr"]
 - **Officer(s):** ["Michael Lowry", "Investigator\nReported"]
 - **Threats Documented:** ["report. The caller, Albert Watson, reported his daughter's ex-boyfriend called him saying the FBI w"]
-- **Allegations:** ["number and cleared. The recording of the phone call is attached to this report.", "he picked up his son, Lincoln Watson, from Lincoln's  mother, Emily", "she had previously  answered  Andrew's  questions  regarding  Lincoln.", "Emily was not currently", "she believes that Andrew is recently hom...
+- **Allegations:** ["number and cleared. The recording of the phone call is attached to this report.", "he picked up his son, L.D.W., from L.D.W.'s  mother, Emily", "she had previously  answered  Andrew's  questions  regarding  L.D.W.", "Emily was not currently", "she believes that Andrew is recently hom...
 
 ### Report 5: `AFFIDAVIT_APPENDIX_EXHIBIT_C_VERBATIM_POLICE_NARRATIVES_1_.docx.txt`
 - **Date(s):** ["12/30/1987", "2/7/25", "11/09/2022", "02/07/25", "10/4/94", "10/04/1994", "12/30/87", "1/9/22", "02/08/25"]
 - **Location(s):** ["4814 Henry Street", "2160 GARLAND  DR\nNORTON  SHORES", "2160 GARLAND  DR", "1977 WHITEHALL  RD TRLR 17\nMUSKEGON", "1143 E Norton Ave", "2160 Garland Dr\nI was dispatched  to TX Andrew Pigors regarding  an other investigation.\nSpeaking  with Andrevv on TX", "2160 Garland Dr"]
 - **Officer(s):** ["Michael Lowry", "Investigator\nReported"]
 - **Threats Documented:** ["report. The caller, Albert Watson, reported his daughter's ex-boyfriend called him saying the FBI w"]
-- **Allegations:** ["number and cleared. The recording of the phone call is attached to this report.", "he picked up his son, Lincoln Watson, from Lincoln's  mother, Emily", "she had previously  answered  Andrew's  questions  regarding  Lincoln.", "Emily was not currently", "she believes that Andrew is recently hom...
+- **Allegations:** ["number and cleared. The recording of the phone call is attached to this report.", "he picked up his son, L.D.W., from L.D.W.'s  mother, Emily", "she had previously  answered  Andrew's  questions  regarding  L.D.W.", "Emily was not currently", "she believes that Andrew is recently hom...
 
 ### Report 6: `AFFIDAVIT_APPENDIX_EXHIBIT_C_VERBATIM_POLICE_NARRATIVES_v2(1).docx`
 - **Date(s):** ["12/30/1987", "2/7/25", "11/09/2022", "02/07/25", "10/4/94", "10/04/1994", "12/30/87", "1/9/22", "02/08/25"]

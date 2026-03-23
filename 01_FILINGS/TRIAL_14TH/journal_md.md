@@ -4276,7 +4276,7 @@ Case**
   > MCR 3.603(A)(1) - Prohibition on ex parte communications\n\n3. EVIDENCE INTEGRATION\n   - Exhibit A, court transcript from a previous case involving Judge McNeill and Party A\n     - Quote: \"Judge McNeill: I have represented Party A in the past.\"\n   - Exhibit B, order granting Judge McNeill's mot
 
 - **Judge Jenny L. McNeill**
-  > S_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1693` — Plaintiff filed a Motion for Disqualification of Judge Jenny L. McNeill on [DATE] based on [original grounds]. Since that filing, additional evidence of bias and prejudicial rulings have come to ligh
+  > S_OUTPUT/LEGAL_ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1693` — Plaintiff filed a Motion for Disqualification of Judge Jenny L. McNeill on 2026-02-28 based on [original grounds]. Since that filing, additional evidence of bias and prejudicial rulings have come to ligh
 
 - **mcneill**
   > ure Commission procedures - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/01_ENHANCED_FILINGS/2026-02-10_DISQ_v02_ENHANCED.txt:L96` — Ex. 7: [mcneill] JTC-1B,36_20251001_095306_0014 (3).pdf,,Judge McNeill issued her order on this matter today - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_
@@ -4288,7 +4288,7 @@ Case**
   > ve appearances of impropriety arising from prior relationships between judges and parties or attorneys.\n   - The evidence presented shows that Judge McNeill has represented Party A in the past, granted a motion to recuse himself in a related matter involving Party B, and has social media posts indi
 
 - **McNeill on**
-  > ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1693` — Plaintiff filed a Motion for Disqualification of Judge Jenny L. McNeill on [DATE] based on [original grounds]. Since that filing, additional evidence of bias and prejudicial rulings have come to light, necessitatin
+  > ANALYSIS_OUTPUT/03_DECISION_TREES/2026-02-10_FILING_INSTRUCTIONS_COMPLETE.md:L1693` — Plaintiff filed a Motion for Disqualification of Judge Jenny L. McNeill on 2026-02-28 based on [original grounds]. Since that filing, additional evidence of bias and prejudicial rulings have come to light, necessitatin
 
 - **McNeill may**
   > L SUPPORT - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_analysis_detailed.txt:L65` — Strong evidence suggesting Judge McNeill may have violated MCR 2.003 - `staging/!LEGAL_ANALYSIS_OUTPUT/LEGAL_ANALYSIS_OUTPUT/07_METRICS/case_facts_analysis_detailed.txt:L243` — 1. Jud

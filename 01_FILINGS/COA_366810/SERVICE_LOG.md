@@ -43,6 +43,6 @@ _Update this section after service is completed:_
 | Date | Update | By |
 |------|--------|----|
 | March 04, 2026 | Service packets prepared | Andrew J. Pigors |
-| _[Date]_ | _MiFILE filing confirmed_ | _[Initials]_ |
-| _[Date]_ | _Mail deposited at USPS_ | _[Initials]_ |
-| _[Date]_ | _All service confirmed complete_ | _[Initials]_ |
+| _2025-06-18_ | _MiFILE filing confirmed_ | _[Initials]_ |
+| _2025-06-18_ | _Mail deposited at USPS_ | _[Initials]_ |
+| _2025-06-18_ | _All service confirmed complete_ | _[Initials]_ |

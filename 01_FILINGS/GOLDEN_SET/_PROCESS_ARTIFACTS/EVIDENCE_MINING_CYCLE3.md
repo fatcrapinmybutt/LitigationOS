@@ -431,7 +431,7 @@
 | Two-party consent violations | MCL 750.539c | Lori Watson |
 | Custodial interference (3x) | MCL 750.350a | Emily Watson |
 | Ex parte coordination | MCR 2.003 violation | Pamela Rusco |
-| Unauthorized practice of law | — | Ron Berry (attorney boyfriend assisting off-record) |
+| Unauthorized practice of law | — | Ron Berry (non-attorney boyfriend assisting off-record) |
 
 ### Continuity
 - Pattern spans **2023–2026** (3+ years)
@@ -449,7 +449,7 @@
 | Violation | Evidence |
 |-----------|----------|
 | Assisting in filing false/misleading pleadings | Ex parte motion contained unverified meth-use allegation with no drug test |
-| Conflict of interest / off-record assistance | Emily's "attorney boyfriend" Ron Berry reportedly provides off-record legal assistance |
+| Conflict of interest / off-record assistance | Emily's boyfriend Ron Berry (non-attorney) reportedly provides unauthorized off-record legal assistance |
 | Facilitating abuse of process | 7 show cause motions used as harassment tool; strategic timing (SC#7 filed 2 days before hearing) |
 | Failure to disclose | Mother's prior alienation of other child's father not disclosed |
 
@@ -469,7 +469,7 @@
 | 2 | **Norton Shores Police Dept** | All incident reports involving Andrew Pigors and/or Emily Watson (2023–2026); all body cam footage | 25+ reports referenced; verify Officer Randall's "meth" opinion basis |
 | 3 | **Muskegon County 14th Circuit Court** | All inter-office communications re: Pigors v. Watson; USB evidence chain of custody; Rusco's phone/email logs re: HealthWest | Document ex parte evidence review and court-clinician coordination |
 | 4 | **Kent County Prosecutor's Office** | Emily Watson employment records, any case involvement in Muskegon County matters | Emily employed there 9+ years; potential conflicts of interest |
-| 5 | **Michigan LARA** | Jennifer Barnes disciplinary history; Ron Berry bar status | Verify standing and prior complaints |
+| 5 | **Michigan LARA** | Jennifer Barnes disciplinary history; Ron Berry (non-attorney — confirm no bar license) | Verify standing and prior complaints |
 | 6 | **Muskegon County FOC** | All FOC reports, recommendations, and communications in 2024-001507-DC | Verify what FOC recommended vs. what court ordered |
 | 7 | **Services of Hope** | Verify Andrew Pigors as active client; confirm therapy engagement since 2012 | Contradicts "untreated" narrative — Andrew has been in therapy 13+ years |
 

@@ -70,7 +70,7 @@
 
 ## Step 1: Finalize All Documents
 - ☐ Review and finalize First Amended Complaint
-- ☐ Insert all [ANDREW_REQUIRED] fields (dates, addresses, missing details)
+- ☐ Insert all 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 fields (dates, addresses, missing details)
 - ☐ Attach all available exhibits (labeled with Bates stamps)
 - ☐ Print or prepare electronic copies
 

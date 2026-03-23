@@ -8,7 +8,7 @@
 
 > **INSTRUCTIONS:** Generate one summons per defendant using the template below.
 > Replace `[DEFENDANT BLOCK]` with the appropriate defendant entry from the
-> Defendant Table. Fill all `[ANDREW_REQUIRED]` fields before filing.
+> Defendant Table. Fill all `2022-08-01` fields before filing.
 > Use Michigan SCAO form **MC 01** (Summons) or **CC 79** (Summons and Complaint)
 > as the official court form. This markdown is a content reference — the actual
 > filing must be on the SCAO form or an approved substitute.
@@ -213,7 +213,7 @@ c/o Registered Agent
 ## FILING CHECKLIST
 
 - [ ] Obtain SCAO form MC 01 or CC 79 (8 copies — one per defendant)
-- [ ] Fill in all [ANDREW_REQUIRED] fields with verified information
+- [ ] Fill in all 2026-03-04 fields with verified information
 - [ ] Attach copy of 22-Count Complaint to each summons
 - [ ] File originals with the Clerk of the 14th Circuit Court
 - [ ] Pay filing fee (or file fee waiver if applicable)

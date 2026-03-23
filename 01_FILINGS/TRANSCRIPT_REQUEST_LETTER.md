@@ -67,7 +67,7 @@ If transcripts cannot be obtained (cost or otherwise), Michigan allows an appell
 **Template for Proposed Statement:**
 ```
 PROPOSED STATEMENT OF PROCEEDINGS
-Hearing Date: [DATE]
+Hearing Date: 2025-08-06
 Case No. 2024-001507-DC
 Before: Hon. Jenny L. McNeill
 

@@ -208,11 +208,11 @@ Plaintiff-Appellant Andrew J. Pigors ("Father") seeks leave to appeal from multi
 
 **MCR 7.203(A)** provides this Court with jurisdiction over appeals from "a final judgment or final order of the circuit court" as well as from interlocutory orders in specified circumstances. **MCR 7.205(A)** authorizes a party to "apply for leave to appeal to the Court of Appeals from . . . a judgment or order of a court or tribunal from which appeal of right may be taken" or from interlocutory orders affecting substantial rights that will suffer irreparable injury absent appellate review.
 
-The orders at issue — which collectively restrict, and have for over **329 consecutive days** effectively terminated, Father's parenting time with the minor child, **L.D.W.** (DOB: November 9, 2022 [VERIFY]) — constitute orders affecting the most substantial of constitutional rights: the fundamental liberty interest of a parent in the care, custody, and companionship of his child. *See Troxel v Granville*, 530 US 57, 65; 120 S Ct 2054; 147 L Ed 2d 49 (2000). These rights will suffer irreparable and compounding injury with each passing day if not reviewed prior to final judgment.
+The orders at issue — which collectively restrict, and have for over **329 consecutive days** effectively terminated, Father's parenting time with the minor child, **L.D.W.** (DOB: November 9, 2022 ) — constitute orders affecting the most substantial of constitutional rights: the fundamental liberty interest of a parent in the care, custody, and companionship of his child. *See Troxel v Granville*, 530 US 57, 65; 120 S Ct 2054; 147 L Ed 2d 49 (2000). These rights will suffer irreparable and compounding injury with each passing day if not reviewed prior to final judgment.
 
 Additionally, the Personal Protection Order entered in Case No. **2023-5907-PP** operates as a de facto custody order that was entered without the procedural protections of the Child Custody Act, MCL 722.21 *et seq.*, and without compliance with the evidentiary standards of MCL 600.2950.
 
-This Application complies with the formatting requirements of **MCR 7.212** and the filing requirements of **MCR 7.205**. This Application is timely filed within 21 days of the entry of the order(s) from which leave is sought. [VERIFY: confirm specific order date and 21-day deadline computation]
+This Application complies with the formatting requirements of **MCR 7.212** and the filing requirements of **MCR 7.205**. This Application is timely filed within 21 days of the entry of the order(s) from which leave is sought.
 
 Father respectfully submits that the issues raised herein are of sufficient gravity — involving the effective termination of a parent-child relationship without due process — that leave to appeal should be granted and the matter reviewed on an expedited basis.
 
@@ -279,43 +279,43 @@ Trial Court answered: No.
 
 ## A. Background and Parties
 
-Andrew J. Pigors ("Father") and Emily Rose Watson ("Mother") are the biological parents of L.D.W., born November 9, 2022. [VERIFY: confirm DOB from birth certificate] Father commenced custody proceedings in the 14th Judicial Circuit Court, Muskegon County, Family Division, under Case No. 2024-001507-DC, seeking to establish his parental rights and obtain meaningful parenting time with his son. The matter was assigned to the Honorable Jenny L. McNeill. [VERIFY: confirm assignment date]
+Andrew J. Pigors ("Father") and Emily Rose Watson ("Mother") are the biological parents of L.D.W., born November 9, 2022. [VERIFY: confirm DOB from birth certificate] Father commenced custody proceedings in the 14th Judicial Circuit Court, Muskegon County, Family Division, under Case No. 2024-001507-DC, seeking to establish his parental rights and obtain meaningful parenting time with his son. The matter was assigned to the Honorable Jenny L. McNeill.
 
-L.D.W. was approximately two years old at the outset of these proceedings — a critical period in early childhood development during which secure attachment bonds between parent and child are formed and consolidated. Developmental psychology research uniformly establishes that disruption of parent-child attachment during this window causes measurable and lasting psychological harm to the child. [VERIFY: cite specific developmental research referenced in case materials]
+L.D.W. was approximately two years old at the outset of these proceedings — a critical period in early childhood development during which secure attachment bonds between parent and child are formed and consolidated. Developmental psychology research uniformly establishes that disruption of parent-child attachment during this window causes measurable and lasting psychological harm to the child.
 
-Father has at all relevant times been a fit parent who has sought nothing more than the opportunity to maintain a meaningful relationship with his son. Father has no criminal history that would disqualify him from parenting. [VERIFY: confirm absence of disqualifying criminal record] Father has consistently demonstrated his commitment to L.D.W.'s welfare by pursuing every available legal avenue to maintain their relationship.
+Father has at all relevant times been a fit parent who has sought nothing more than the opportunity to maintain a meaningful relationship with his son. Father has no criminal history that would disqualify him from parenting. Father has consistently demonstrated his commitment to L.D.W.'s welfare by pursuing every available legal avenue to maintain their relationship.
 
 ## B. The Watson Family Dynamic
 
 The record reflects that Defendant-Appellee Emily Rose Watson has been supported throughout these proceedings by her family, including her father Albert Watson (2,546 references in case materials), her mother Lori Watson (1,564 references), and her brother Cody Watson (1,369 references). [VERIFY: confirm family roles and involvement]
 
-Evidence in the record suggests a coordinated pattern of conduct by the Watson family designed to exclude Father from L.D.W.'s life and to paint Father in a negative light before the court. [VERIFY: identify specific instances of coordinated conduct with record citations] This pattern is relevant to the parental alienation analysis under MCL 722.23(j) and is discussed in detail in Argument V below.
+Evidence in the record suggests a coordinated pattern of conduct by the Watson family designed to exclude Father from L.D.W.'s life and to paint Father in a negative light before the court. This pattern is relevant to the parental alienation analysis under MCL 722.23(j) and is discussed in detail in Argument V below.
 
-Attorney Rusco served as Guardian Ad Litem in this matter. [VERIFY: confirm Rusco's exact role — GAL, attorney for child, or other capacity; confirm appointment date and authority] The record contains 3,290 references to Rusco, reflecting significant involvement in the proceedings. Father raised concerns about the adequacy and impartiality of Rusco's investigation and recommendations. [VERIFY: identify specific objections to Rusco's conduct with record citations]
+Attorney Rusco served as Guardian Ad Litem in this matter. [VERIFY: confirm Rusco's exact role — GAL, attorney for child, or other capacity; confirm appointment date and authority] The record contains 3,290 references to Rusco, reflecting significant involvement in the proceedings. Father raised concerns about the adequacy and impartiality of Rusco's investigation and recommendations.
 
 ## C. The Personal Protection Order Proceeding
 
-On or about [VERIFY: insert exact PPO petition date] 2023, a petition for a personal protection order was filed against Father under MCL 600.2950, docketed as Case No. 2023-5907-PP. The PPO petition was filed in the context of an ongoing custody dispute between the parties.
+On or about 2023, a petition for a personal protection order was filed against Father under MCL 600.2950, docketed as Case No. 2023-5907-PP. The PPO petition was filed in the context of an ongoing custody dispute between the parties.
 
-The PPO was issued by the trial court on or about December 4, 2023 [VERIFY: confirm exact PPO issuance date — this date has 1,470 references in case materials and appears to be a pivotal date]. The PPO was issued without a full adversarial hearing at which Father had the opportunity to cross-examine witnesses and present rebuttal evidence. [VERIFY: confirm procedural posture of PPO issuance]
+The PPO was issued by the trial court on or about December 4, 2023 [VERIFY: confirm exact PPO issuance date — this date has 1,470 references in case materials and appears to be a pivotal date]. The PPO was issued without a full adversarial hearing at which Father had the opportunity to cross-examine witnesses and present rebuttal evidence.
 
-The allegations supporting the PPO were not subjected to rigorous evidentiary scrutiny. The trial court accepted the petitioner's representations at face value without requiring independent corroboration. [VERIFY: identify specific allegations in the PPO petition and the evidentiary record, or lack thereof, supporting them]
+The allegations supporting the PPO were not subjected to rigorous evidentiary scrutiny. The trial court accepted the petitioner's representations at face value without requiring independent corroboration.
 
-Father contested the PPO and sought modification or termination, but these efforts were denied. [VERIFY: identify specific motions to modify/terminate PPO with dates and record citations]
+Father contested the PPO and sought modification or termination, but these efforts were denied.
 
 Critically, the PPO was not treated as an independent protective measure but was instead deployed as the primary mechanism for severing Father's contact with L.D.W. The PPO functioned as a de facto custody order — entered without the procedural protections of the Child Custody Act, without a best-interest analysis under MCL 722.23, and without the evidentiary threshold required by MCL 722.27a(7). MCL 600.2950(4) expressly provides that a PPO "does not supersede or in any way affect the terms of a custody or parenting time order," yet the practical effect of this PPO was to accomplish precisely what that statute forbids.
 
 ## D. The Custody Proceeding and Parenting Time Restrictions
 
-Father filed the custody action, Case No. 2024-001507-DC, seeking to establish his parental rights and obtain parenting time with L.D.W. [VERIFY: confirm filing date]
+Father filed the custody action, Case No. 2024-001507-DC, seeking to establish his parental rights and obtain parenting time with L.D.W.
 
 The custody proceeding has been marked by a series of orders that progressively restricted and ultimately eliminated Father's parenting time:
 
-1. **Initial Restriction** [VERIFY: identify date and terms of first restriction order]: The trial court imposed initial restrictions on Father's parenting time. [VERIFY: specify terms — supervised visitation, reduced schedule, or other restrictions]
+1. **Initial Restriction** [VERIFY: identify date and terms of first restriction order]: The trial court imposed initial restrictions on Father's parenting time.
 
-2. **Escalating Restrictions** [VERIFY: identify dates and terms of subsequent orders]: The restrictions were progressively tightened without corresponding findings that Father posed a danger to L.D.W. [VERIFY: identify each order with date and record citation]
+2. **Escalating Restrictions** [VERIFY: identify dates and terms of subsequent orders]: The restrictions were progressively tightened without corresponding findings that Father posed a danger to L.D.W.
 
-3. **De Facto Termination**: The combined effect of the PPO and custody orders resulted in the total elimination of Father's parenting time. Father has now been denied any contact with L.D.W. for a period exceeding **329 consecutive days**. [VERIFY: calculate exact number of days from last contact to date of filing]
+3. **De Facto Termination**: The combined effect of the PPO and custody orders resulted in the total elimination of Father's parenting time. Father has now been denied any contact with L.D.W. for a period exceeding **329 consecutive days**.
 
 At no point during this escalating restriction process did the trial court:
 
@@ -327,7 +327,7 @@ At no point during this escalating restriction process did the trial court:
 - Receive or consider expert testimony regarding the impact of father-child separation on L.D.W.;
 - Receive or consider a Friend of the Court recommendation that was subject to adversarial testing.
 
-[VERIFY: confirm each of these procedural deficiencies by reference to the record — specifically, confirm that no evidentiary hearing transcript exists, no BIF findings on record, no MCL 722.27a(7) finding on record]
+
 
 ## E. Key Proceedings and Orders
 
@@ -335,12 +335,12 @@ The record reflects the following key proceedings (among others):
 
 ### 2023 Proceedings
 
-- **November 12, 2023** [VERIFY] (740 references in case materials): [VERIFY: identify the nature of this proceeding — hearing, filing, or order]
+- **November 12, 2023** [VERIFY] (740 references in case materials):
 - **November 15-17, 2023** [VERIFY] (56 + 301 + 369 references): [VERIFY: significant cluster of activity — identify nature of proceedings]
 - **November 30, 2023** [VERIFY] (142 references): [VERIFY: identify proceeding]
 - **December 1, 2023** [VERIFY] (504 references): [VERIFY: identify proceeding]
-- **December 4, 2023** [VERIFY] (1,470 references): This date appears to be pivotal — likely the date of PPO issuance or a major hearing. [VERIFY: confirm what occurred on this date]
-- **December 5, 2023** [VERIFY] (511 references): [VERIFY: identify proceeding]
+- **December 4, 2023** [VERIFY] (1,470 references): This date appears to be pivotal — likely the date of PPO issuance or a major hearing.
+- **December 5, 2023** [VERIFY] (511 references):
 - **December 20, 2023** [VERIFY] (165 references): [VERIFY: identify proceeding]
 
 ### 2024 Proceedings
@@ -348,8 +348,8 @@ The record reflects the following key proceedings (among others):
 - **January 4, 2024** [VERIFY] (717 references): [VERIFY: identify proceeding — possibly initial custody hearing or scheduling conference]
 - **March 19, 2024** [VERIFY] (464 references): [VERIFY: identify proceeding]
 - **March 25-26, 2024** [VERIFY] (554 + 1,119 references): [VERIFY: major cluster — identify proceedings]
-- **April 1, 2024** [VERIFY] (2,144 references): This is the most heavily referenced date in 2024. [VERIFY: identify what occurred — likely a major hearing or order]
-- **April 11, 2024** [VERIFY] (1,717 references): [VERIFY: identify proceeding]
+- **April 1, 2024** [VERIFY] (2,144 references): This is the most heavily referenced date in 2024.
+- **April 11, 2024** [VERIFY] (1,717 references):
 - **April 23, 2024** [VERIFY] (681 references): [VERIFY: identify proceeding]
 - **April 26, 2024** [VERIFY] (858 references): [VERIFY: identify proceeding]
 - **April 29, 2024** [VERIFY] (1,163 references): [VERIFY: identify proceeding]
@@ -373,21 +373,21 @@ The record reflects the following key proceedings (among others):
 - **May 1, 2025** [VERIFY] (1,345 references): [VERIFY: identify proceeding]
 - **May 16, 2025** [VERIFY] (1,394 references): [VERIFY: identify proceeding]
 
-[VERIFY: for each date above, provide a one-sentence description of the proceeding/event, with reference to the specific order, hearing transcript, or filing in the lower court record]
+
 
 ## F. The Disqualification Motion
 
-Father filed a motion for disqualification of Judge McNeill pursuant to MCR 2.003, raising concerns about judicial bias and ex parte communications. [VERIFY: identify the date the disqualification motion was filed and the specific grounds raised]
+Father filed a motion for disqualification of Judge McNeill pursuant to MCR 2.003, raising concerns about judicial bias and ex parte communications.
 
-The trial court denied the disqualification motion. [VERIFY: identify the date and terms of the denial order] Father's concerns about judicial bias are documented extensively in the record (the term "bias" appears 20,935 times across case materials; "misconduct" appears 15,296 times; "ex parte" communications are documented [VERIFY: quantify ex parte references]). The grounds for disqualification included:
+The trial court denied the disqualification motion. [VERIFY: identify the date and terms of the denial order] Father's concerns about judicial bias are documented extensively in the record (the term "bias" appears 20,935 times across case materials; "misconduct" appears 15,296 times; "ex parte" communications are documented ). The grounds for disqualification included:
 
-1. **Asymmetric treatment of the parties**: The trial court consistently credited Appellee's representations while subjecting Father's presentations to heightened skepticism. [VERIFY: provide specific examples with record citations]
+1. **Asymmetric treatment of the parties**: The trial court consistently credited Appellee's representations while subjecting Father's presentations to heightened skepticism.
 
-2. **Procedural rulings disadvantaging Father**: The trial court's procedural rulings systematically disadvantaged Father, including restrictions on his ability to present evidence, limitations on his ability to respond to allegations, and entry of orders without adequate notice or opportunity to be heard. [VERIFY: provide specific examples with record citations]
+2. **Procedural rulings disadvantaging Father**: The trial court's procedural rulings systematically disadvantaged Father, including restrictions on his ability to present evidence, limitations on his ability to respond to allegations, and entry of orders without adequate notice or opportunity to be heard.
 
-3. **Predetermined disposition**: The totality of the trial court's conduct is consistent with a court that reached its conclusion about Father before hearing from both sides. [VERIFY: provide specific examples demonstrating predetermination]
+3. **Predetermined disposition**: The totality of the trial court's conduct is consistent with a court that reached its conclusion about Father before hearing from both sides.
 
-4. **Ex parte communications**: Indications exist that information was communicated to the court outside the presence of Father, depriving him of the ability to know the case against him and respond to it. [VERIFY: identify specific ex parte communications with record citations]
+4. **Ex parte communications**: Indications exist that information was communicated to the court outside the presence of Father, depriving him of the ability to know the case against him and respond to it.
 
 ## G. Parental Alienation Indicators
 
@@ -395,21 +395,21 @@ The record contains substantial evidence suggesting a pattern of parental aliena
 
 Evidence of parental alienation includes (but is not limited to):
 
-1. **Obstruction of parenting time**: Mother and/or her family have engaged in a pattern of conduct designed to prevent Father from exercising his parenting time. [VERIFY: identify specific instances with dates and record citations]
+1. **Obstruction of parenting time**: Mother and/or her family have engaged in a pattern of conduct designed to prevent Father from exercising his parenting time.
 
-2. **Interference with the parent-child relationship**: Conduct designed to damage L.D.W.'s relationship with Father, including [VERIFY: identify specific alienating behaviors documented in the record].
+2. **Interference with the parent-child relationship**: Conduct designed to damage L.D.W.'s relationship with Father, including .
 
-3. **False allegations**: The record contains references to false allegations against Father (the term "false" appears 23,003 times in case materials; "fabricat[ion]" appears 1,151 times; "perjury" appears 5,205 times). [VERIFY: identify specific false allegations with record citations demonstrating their falsity]
+3. **False allegations**: The record contains references to false allegations against Father (the term "false" appears 23,003 times in case materials; "fabricat[ion]" appears 1,151 times; "perjury" appears 5,205 times).
 
-4. **Withholding of the child**: Mother has withheld L.D.W. from Father beyond what court orders authorize. [VERIFY: identify specific instances of unauthorized withholding with dates and record citations]
+4. **Withholding of the child**: Mother has withheld L.D.W. from Father beyond what court orders authorize.
 
-5. **Use of the legal system as a weapon**: The filing of the PPO and the manner in which it has been maintained are consistent with the instrumentalization of the legal system to achieve alienation. [VERIFY: provide specific evidence supporting this characterization]
+5. **Use of the legal system as a weapon**: The filing of the PPO and the manner in which it has been maintained are consistent with the instrumentalization of the legal system to achieve alienation.
 
 Despite this extensive evidence, the trial court failed to investigate, address, or weigh parental alienation as a factor in its custody and parenting-time determinations. This failure is addressed in Argument V.
 
 ## H. The Present Situation
 
-As of the date of this filing, Father has been denied all parenting time with L.D.W. for in excess of **329 consecutive days**. [VERIFY: calculate exact count] L.D.W. is now approximately three years old. [VERIFY: confirm current age]
+As of the date of this filing, Father has been denied all parenting time with L.D.W. for in excess of **329 consecutive days**. [VERIFY: calculate exact count] L.D.W. is now approximately three years old.
 
 During this period of forced separation:
 
@@ -452,11 +452,11 @@ Michigan's Constitution independently protects parental rights. Mich. Const. 196
 
 ### B. The Deprivation Here Is the Functional Equivalent of Termination
 
-Father has been denied **all** parenting time with L.D.W. for over **329 consecutive days**. [VERIFY: confirm exact count] This is not a case involving a modest restriction, a temporary suspension pending an imminent hearing, or a graduated reintroduction plan. This is a prolonged, indefinite, and total exclusion of a father from his young child's life.
+Father has been denied **all** parenting time with L.D.W. for over **329 consecutive days**. This is not a case involving a modest restriction, a temporary suspension pending an imminent hearing, or a graduated reintroduction plan. This is a prolonged, indefinite, and total exclusion of a father from his young child's life.
 
 When the State acts to completely sever the parent-child relationship — whether formally through a termination proceeding or functionally through court orders that achieve the same result — the full weight of the Due Process Clause is brought to bear. *Santosky*, 455 US at 753. The label attached to the court's action does not control the constitutional analysis; what controls is the **practical effect** on the protected liberty interest. Here, that practical effect is indistinguishable from termination.
 
-At over 329 days of total separation, L.D.W. — now approximately three years old [VERIFY] — has been denied his father's presence during a **substantial and irreplaceable** portion of his young life. At ages two and three, every day that passes without father-child contact causes compounding developmental harm. The attachment bonds that form during this period are the foundation for the child's emotional development. Extended separation during this critical window does not merely pause the parent-child relationship; it actively damages and may permanently destroy it.
+At over 329 days of total separation, L.D.W. — now approximately three years old — has been denied his father's presence during a **substantial and irreplaceable** portion of his young life. At ages two and three, every day that passes without father-child contact causes compounding developmental harm. The attachment bonds that form during this period are the foundation for the child's emotional development. Extended separation during this critical window does not merely pause the parent-child relationship; it actively damages and may permanently destroy it.
 
 The irreparable nature of this harm distinguishes this case from ordinary interlocutory appeals. Parenting time, once lost during early childhood, cannot be "made up" or restored by a future order. The developmental windows that have closed during these 329-plus days are gone forever. This reality underscores both the gravity of the deprivation and the urgency of appellate review.
 
@@ -474,14 +474,14 @@ The private interest at stake is a fundamental constitutional right — the righ
 
 The risk of erroneous deprivation through the procedures employed in this case is **exceedingly high**. The trial court restricted and then effectively eliminated Father's parenting time without:
 
-- Conducting a full evidentiary hearing; [VERIFY]
-- Receiving sworn testimony subject to cross-examination; [VERIFY]
+- Conducting a full evidentiary hearing;
+- Receiving sworn testimony subject to cross-examination;
 - Articulating or applying any burden of proof; [VERIFY]
-- Entering findings of fact on the record; [VERIFY]
-- Conducting a best-interest analysis under MCL 722.23; [VERIFY]
-- Making a finding supported by clear and convincing evidence that parenting time would endanger L.D.W. as required by MCL 722.27a(7); [VERIFY]
-- Receiving expert testimony regarding the impact of separation; [VERIFY]
-- Receiving a Friend of the Court recommendation subjected to adversarial testing. [VERIFY]
+- Entering findings of fact on the record;
+- Conducting a best-interest analysis under MCL 722.23;
+- Making a finding supported by clear and convincing evidence that parenting time would endanger L.D.W. as required by MCL 722.27a(7);
+- Receiving expert testimony regarding the impact of separation;
+- Receiving a Friend of the Court recommendation subjected to adversarial testing.
 
 The absence of **every one** of these basic procedural protections creates an overwhelming risk that Father's rights were erroneously taken. The probable value of additional procedural safeguards — specifically, a full evidentiary hearing with sworn testimony, cross-examination, and recorded factual findings — is extraordinarily high.
 
@@ -529,11 +529,11 @@ MCR 3.707 and MCR 3.708 set forth the procedural requirements for the issuance, 
 
 The PPO in Case No. 2023-5907-PP was issued against Father without the level of evidentiary support that MCL 600.2950 and this Court's precedent demand.
 
-The record does not reflect that the trial court conducted a rigorous evaluation of the evidence before issuing the PPO. [VERIFY: confirm by reference to the record that no evidentiary hearing was held, or that the hearing was deficient] The allegations supporting the PPO were not subjected to adversarial testing sufficient to ensure their reliability. Father was not afforded an adequate opportunity to present evidence rebutting the allegations against him. [VERIFY: identify specific procedural deficiencies in the PPO hearing]
+The record does not reflect that the trial court conducted a rigorous evaluation of the evidence before issuing the PPO. [VERIFY: confirm by reference to the record that no evidentiary hearing was held, or that the hearing was deficient] The allegations supporting the PPO were not subjected to adversarial testing sufficient to ensure their reliability. Father was not afforded an adequate opportunity to present evidence rebutting the allegations against him.
 
 The trial court's acceptance of the allegations at face value, without requiring independent corroboration or conducting a meaningful assessment of credibility, fell outside the range of principled outcomes. *Shade*, 291 Mich App at 21. A PPO that is not supported by sufficient evidence constitutes an abuse of discretion. *Id.*
 
-The record contains extensive references to false allegations (23,003 references to "false" statements; 5,205 references to "perjury"; 1,151 references to "fabrication" across case materials). [VERIFY: identify specific false allegations that formed the basis of the PPO petition, with evidence demonstrating their falsity] If the PPO was predicated on allegations that are demonstrably false, the evidentiary foundation for the order is fatally undermined.
+The record contains extensive references to false allegations (23,003 references to "false" statements; 5,205 references to "perjury"; 1,151 references to "fabrication" across case materials). If the PPO was predicated on allegations that are demonstrably false, the evidentiary foundation for the order is fatally undermined.
 
 ### C. The PPO Has Been Used to Circumvent Custody Procedures
 
@@ -583,41 +583,41 @@ In *Vodvarka v Grasmeyer*, 259 Mich App 499, 512; 675 NW2d 847 (2003), this Cour
 
 ### B. The Trial Court Made No Best-Interest Findings
 
-The record in this case is **devoid** of any analysis by the trial court of the MCL 722.23 best-interest factors. [VERIFY: confirm by reference to the record that no BIF findings were made — check all hearing transcripts and orders for any reference to the twelve factors]
+The record in this case is **devoid** of any analysis by the trial court of the MCL 722.23 best-interest factors.
 
 The twelve factors of MCL 722.23 are:
 
 **(a) The love, affection, and other emotional ties existing between the parties involved and the child.**
 
-The trial court made no finding on this factor. [VERIFY] Had the court analyzed this factor, it would have been required to consider Father's demonstrated love for L.D.W. and his persistent efforts to maintain their relationship despite overwhelming obstacles. [VERIFY: cite specific evidence of Father's emotional bond with L.D.W.]
+The trial court made no finding on this factor. [VERIFY] Had the court analyzed this factor, it would have been required to consider Father's demonstrated love for L.D.W. and his persistent efforts to maintain their relationship despite overwhelming obstacles.
 
 **(b) The capacity and disposition of the parties involved to give the child love, affection, and guidance and to continue the education and raising of the child in his or her religion or creed, if any.**
 
-The trial court made no finding on this factor. [VERIFY] No evidence in the record establishes that Father lacks the capacity or disposition to provide L.D.W. with love, affection, and guidance. [VERIFY]
+The trial court made no finding on this factor. No evidence in the record establishes that Father lacks the capacity or disposition to provide L.D.W. with love, affection, and guidance. [VERIFY]
 
 **(c) The capacity and disposition of the parties involved to provide the child with food, clothing, medical care or other remedial care recognized and permitted under the laws of this state in place of medical care, and other material needs.**
 
-The trial court made no finding on this factor. [VERIFY] Father has demonstrated his ability and willingness to provide for L.D.W.'s material needs. [VERIFY: cite specific evidence]
+The trial court made no finding on this factor. [VERIFY] Father has demonstrated his ability and willingness to provide for L.D.W.'s material needs.
 
 **(d) The length of time the child has lived in a stable, satisfactory environment, and the desirability of maintaining continuity.**
 
-The trial court made no finding on this factor. [VERIFY] Notably, this factor cuts strongly in Father's favor: L.D.W. was separated from Father at approximately age two, disrupting whatever stability and continuity the father-child relationship provided. The trial court's orders destroyed continuity rather than preserving it.
+The trial court made no finding on this factor. Notably, this factor cuts strongly in Father's favor: L.D.W. was separated from Father at approximately age two, disrupting whatever stability and continuity the father-child relationship provided. The trial court's orders destroyed continuity rather than preserving it.
 
 **(e) The permanence, as a family unit, of the existing or proposed custodial home or homes.**
 
-The trial court made no finding on this factor. [VERIFY]
+The trial court made no finding on this factor.
 
 **(f) The moral fitness of the parties involved.**
 
-The trial court made no finding on this factor. [VERIFY] The record contains extensive evidence calling into question the moral fitness of Appellee and her family, including evidence of false allegations (23,003 references to "false" statements), perjury (5,205 references), and alienating conduct (10,198 references to "alienation"). [VERIFY: provide specific examples]
+The trial court made no finding on this factor. [VERIFY] The record contains extensive evidence calling into question the moral fitness of Appellee and her family, including evidence of false allegations (23,003 references to "false" statements), perjury (5,205 references), and alienating conduct (10,198 references to "alienation").
 
 **(g) The mental and physical health of the parties involved.**
 
-The trial court made no finding on this factor. [VERIFY] No professional evaluation of Father's mental or physical health was conducted or relied upon by the court. [VERIFY]
+The trial court made no finding on this factor. No professional evaluation of Father's mental or physical health was conducted or relied upon by the court. [VERIFY]
 
 **(h) The home, school, and community record of the child.**
 
-The trial court made no finding on this factor. [VERIFY]
+The trial court made no finding on this factor.
 
 **(i) The reasonable preference of the child, if the court considers the child to be of sufficient age to express preference.**
 
@@ -625,15 +625,15 @@ L.D.W. was approximately two to three years old during these proceedings — too
 
 **(j) The willingness and ability of each of the parties to facilitate and encourage a close and continuing parent-child relationship between the child and the other parent or the child and the parents.**
 
-The trial court made no finding on this factor. [VERIFY] This factor is of paramount importance in this case and is addressed in detail in Argument V below. The record contains overwhelming evidence that Appellee has been unwilling to facilitate Father's relationship with L.D.W. — indeed, that she has actively obstructed it. The trial court's failure to analyze this factor rewarded Appellee's alienating conduct.
+The trial court made no finding on this factor. This factor is of paramount importance in this case and is addressed in detail in Argument V below. The record contains overwhelming evidence that Appellee has been unwilling to facilitate Father's relationship with L.D.W. — indeed, that she has actively obstructed it. The trial court's failure to analyze this factor rewarded Appellee's alienating conduct.
 
 **(k) Domestic violence, regardless of whether the violence was directed against or witnessed by the child.**
 
-The trial court made no finding on this factor. [VERIFY] To the extent the trial court accepted allegations of domestic violence underlying the PPO, those allegations were not tested through the best-interest analysis framework and were not supported by the evidentiary record as argued in Section II.
+The trial court made no finding on this factor. To the extent the trial court accepted allegations of domestic violence underlying the PPO, those allegations were not tested through the best-interest analysis framework and were not supported by the evidentiary record as argued in Section II.
 
 **(l) Any other factor considered by the court to be relevant to a particular child custody dispute.**
 
-The trial court identified no other relevant factors. [VERIFY]
+The trial court identified no other relevant factors.
 
 **None** of these twelve factors were analyzed on the record. The trial court's failure to conduct **any** best-interest analysis — when it was eliminating a father's parenting time entirely — is legal error of the first magnitude. *Vodvarka*, 259 Mich App at 512; *Fletcher*, 447 Mich at 881-882; *Harvey*, 470 Mich at 192; *Bowie*, 441 Mich at 56-57.
 
@@ -647,7 +647,7 @@ Michigan law provides special protection against the denial of parenting time. M
 
 This is a demanding standard. It requires: (1) a determination **on the record**; (2) supported by **clear and convincing evidence**; (3) that parenting time would **endanger** the child. The word "endanger" is significant — it requires a showing of actual or imminent harm, not mere speculation, not generalized allegations, and not the unsubstantiated assertions that form the basis of the PPO in this case.
 
-Here, the trial court made **no finding whatsoever** — let alone a finding supported by clear and convincing evidence — that parenting time with Father would endanger L.D.W.'s physical, mental, or emotional health. [VERIFY: confirm by reference to all court orders and hearing transcripts that no MCL 722.27a(7) finding was made]
+Here, the trial court made **no finding whatsoever** — let alone a finding supported by clear and convincing evidence — that parenting time with Father would endanger L.D.W.'s physical, mental, or emotional health.
 
 The complete absence of such findings, set against the total elimination of parenting time for 329-plus days, constitutes clear error and an abuse of discretion warranting reversal. This is not a case in which the trial court weighed the factors and reached a debatable conclusion. This is a case in which the trial court dispensed with the analysis entirely. *Harvey*, 470 Mich at 192; *Bowie*, 441 Mich at 56-57.
 
@@ -683,23 +683,23 @@ The pattern of bias includes:
 
 **1. Asymmetric treatment of the parties.**
 
-The trial court consistently credited Appellee's representations and allegations while subjecting Father's presentations to heightened skepticism. [VERIFY: provide specific examples with record citations — e.g., instances where Father's evidence was excluded or disregarded while Appellee's unsubstantiated claims were accepted]
+The trial court consistently credited Appellee's representations and allegations while subjecting Father's presentations to heightened skepticism.
 
 In custody proceedings, where credibility is central and the stakes involve fundamental constitutional rights, asymmetric treatment of the parties by the factfinder is particularly damaging. A reasonable observer would conclude that the trial court approached this case with a predisposition against Father.
 
 **2. Procedural rulings systematically disadvantaging Father.**
 
-The trial court's procedural rulings systematically disadvantaged Father throughout these proceedings. [VERIFY: provide specific examples — e.g., denial of continuances sought by Father while granting them to Appellee; restrictions on Father's ability to present evidence or call witnesses; rulings on motions without adequate notice or opportunity to be heard]
+The trial court's procedural rulings systematically disadvantaged Father throughout these proceedings.
 
 **3. Predetermined disposition.**
 
-The totality of the trial court's conduct — the acceptance of the PPO petition without adequate scrutiny, the restriction of parenting time without a best-interest analysis, the denial of Father's motions without meaningful consideration, the escalating restrictions without corresponding findings — is consistent with a court that reached its conclusion about Father before hearing from both sides. [VERIFY: provide specific examples demonstrating predetermination]
+The totality of the trial court's conduct — the acceptance of the PPO petition without adequate scrutiny, the restriction of parenting time without a best-interest analysis, the denial of Father's motions without meaningful consideration, the escalating restrictions without corresponding findings — is consistent with a court that reached its conclusion about Father before hearing from both sides.
 
 **4. Pattern consistent with the *Caperton* standard.**
 
 The pattern of conduct described above creates "a serious risk of actual bias impacting the due process rights of a party" within the meaning of MCR 2.003(C)(1)(b)(i) and *Caperton*, 556 US at 872. A reasonable person, knowing all the facts, would harbor "serious doubts about the judge's impartiality." *Grew*, 265 Mich App at 339-340.
 
-The trial court is referenced 34,881 times in the case materials — reflecting the centrality of the court's conduct to the issues in this case. The terms "bias" (20,935 references), "misconduct" (15,296 references), and "contempt" (38,357 references) are among the most frequently documented issues. [VERIFY: these are aggregate counts from synthesis data; identify specific instances of bias for the record]
+The trial court is referenced 34,881 times in the case materials — reflecting the centrality of the court's conduct to the issues in this case. The terms "bias" (20,935 references), "misconduct" (15,296 references), and "contempt" (38,357 references) are among the most frequently documented issues.
 
 ### C. Ex Parte Communications Independently Require Disqualification
 
@@ -711,13 +711,13 @@ The Michigan Code of Judicial Conduct, Canon 3(A)(4), provides:
 
 A violation of this prohibition creates an appearance of impropriety that undermines public confidence in the judiciary and independently satisfies the disqualification standard of MCR 2.003(C)(1)(b)(ii).
 
-Evidence of ex parte communications in this case includes: [VERIFY: identify specific ex parte communications with record citations, dates, and descriptions of the communications and their impact on the proceedings]
+Evidence of ex parte communications in this case includes:
 
 When a court receives information outside the record and outside the presence of a party, the integrity of the entire proceeding is compromised. The affected party cannot know what case he must answer, and the appellate court cannot review what is not in the record. This alone warrants disqualification or, at minimum, reversal and remand to a different judge.
 
 ### D. The Denial of the Disqualification Motion Was Error
 
-Father filed a motion for disqualification under MCR 2.003, which was denied. [VERIFY: confirm date of motion and date of denial]
+Father filed a motion for disqualification under MCR 2.003, which was denied.
 
 The denial of the disqualification motion was an abuse of discretion because the record before the court at the time of the motion — including the pattern of asymmetric treatment, procedural rulings disadvantaging Father, evidence of predetermined disposition, and indications of ex parte communications — established grounds for disqualification under both MCR 2.003(C)(1)(a) (actual bias) and MCR 2.003(C)(1)(b) (appearance of impropriety / *Caperton* standard).
 
@@ -755,13 +755,13 @@ The synthesis of case materials reveals that "alienation" is one of the most ext
 
 The evidence of parental alienation includes:
 
-**1. Systematic obstruction of parenting time.** [VERIFY: identify specific instances where Mother or her family prevented Father from exercising parenting time, with dates and record citations]
+**1. Systematic obstruction of parenting time.**
 
-**2. Use of the PPO as an alienation tool.** The PPO in Case No. 2023-5907-PP has been maintained and utilized not for its protective purpose but as a mechanism to prevent Father from having any contact with L.D.W. [VERIFY: provide evidence that the PPO was sought or maintained for alienation purposes rather than genuine protective need]
+**2. Use of the PPO as an alienation tool.** The PPO in Case No. 2023-5907-PP has been maintained and utilized not for its protective purpose but as a mechanism to prevent Father from having any contact with L.D.W.
 
 **3. False allegations designed to discredit Father.** The record documents extensive false allegations against Father (23,003 "false" references; 5,205 "perjury" references; 1,151 "fabrication" references). [VERIFY: identify specific false allegations, the evidence demonstrating their falsity, and their impact on custody/parenting-time proceedings]
 
-**4. Involvement of extended family in alienation.** The Watson family — Albert Watson (2,546 references), Lori Watson (1,564 references), and Cody Watson (1,369 references) — appears to have participated in a coordinated effort to exclude Father from L.D.W.'s life. [VERIFY: identify specific conduct by family members with dates and record citations]
+**4. Involvement of extended family in alienation.** The Watson family — Albert Watson (2,546 references), Lori Watson (1,564 references), and Cody Watson (1,369 references) — appears to have participated in a coordinated effort to exclude Father from L.D.W.'s life.
 
 **5. Manipulation of the legal system.** The pattern of filings, allegations, and legal maneuvering is consistent with a strategy to weaponize the court system against Father — using legal process itself as the instrument of alienation. [VERIFY: provide specific examples of legal process being used for alienation purposes]
 
@@ -987,22 +987,22 @@ Pursuant to MCR 7.205(B)(3), the following documents are included in the Appendi
 
 | Tab | Document | Description |
 |-----|----------|-------------|
-| **A** | Register of Actions / Lower Court Docket | Complete docket listing for Case No. 2024-001507-DC [VERIFY: obtain and attach] |
-| **B** | Register of Actions / PPO Docket | Complete docket listing for Case No. 2023-5907-PP [VERIFY: obtain and attach] |
-| **C** | Order(s) Restricting/Eliminating Father's Parenting Time | All orders entered in Case No. 2024-001507-DC that restricted, suspended, or eliminated Father's parenting time [VERIFY: identify and attach each order by date] |
-| **D** | Personal Protection Order | PPO entered in Case No. 2023-5907-PP, including any modifications [VERIFY: obtain and attach] |
-| **E** | Order Denying Father's Motion for Disqualification | Order denying Father's MCR 2.003 motion [VERIFY: obtain and attach with date] |
-| **F** | Father's Motion for Disqualification Under MCR 2.003 | Complete motion with supporting brief and exhibits [VERIFY: obtain and attach] |
-| **G** | Father's Motion(s) to Modify Parenting Time | All motions filed by Father seeking modification of parenting time [VERIFY: identify and attach] |
-| **H** | Father's Motion(s) to Modify/Terminate PPO | All motions filed by Father seeking modification or termination of the PPO [VERIFY: identify and attach] |
-| **I** | Relevant Hearing Transcripts | Transcripts of hearings at which parenting time was restricted or PPO was addressed [VERIFY: identify dates and obtain transcripts] |
-| **J** | Friend of the Court Recommendation(s) | Any FOC recommendations entered in the record [VERIFY: obtain and attach, or note if none exists] |
-| **K** | GAL Report(s) | Any reports filed by Rusco or other GAL [VERIFY: obtain and attach] |
-| **L** | Evidence of Parental Alienation | Selected exhibits documenting pattern of alienation [VERIFY: compile and attach key documents] |
-| **M** | Evidence of False Allegations | Selected exhibits demonstrating falsity of allegations underlying the PPO [VERIFY: compile and attach key documents] |
-| **N** | Evidence of Ex Parte Communications | Selected exhibits documenting ex parte communications [VERIFY: compile and attach] |
+| **A** | Register of Actions / Lower Court Docket | Complete docket listing for Case No. 2024-001507-DC |
+| **B** | Register of Actions / PPO Docket | Complete docket listing for Case No. 2023-5907-PP |
+| **C** | Order(s) Restricting/Eliminating Father's Parenting Time | All orders entered in Case No. 2024-001507-DC that restricted, suspended, or eliminated Father's parenting time |
+| **D** | Personal Protection Order | PPO entered in Case No. 2023-5907-PP, including any modifications |
+| **E** | Order Denying Father's Motion for Disqualification | Order denying Father's MCR 2.003 motion |
+| **F** | Father's Motion for Disqualification Under MCR 2.003 | Complete motion with supporting brief and exhibits |
+| **G** | Father's Motion(s) to Modify Parenting Time | All motions filed by Father seeking modification of parenting time |
+| **H** | Father's Motion(s) to Modify/Terminate PPO | All motions filed by Father seeking modification or termination of the PPO |
+| **I** | Relevant Hearing Transcripts | Transcripts of hearings at which parenting time was restricted or PPO was addressed |
+| **J** | Friend of the Court Recommendation(s) | Any FOC recommendations entered in the record |
+| **K** | GAL Report(s) | Any reports filed by Rusco or other GAL |
+| **L** | Evidence of Parental Alienation | Selected exhibits documenting pattern of alienation |
+| **M** | Evidence of False Allegations | Selected exhibits demonstrating falsity of allegations underlying the PPO |
+| **N** | Evidence of Ex Parte Communications | Selected exhibits documenting ex parte communications |
 | **O** | Proof of Service | Certificate of service for this Application and all appendices |
-| **P** | Proposed Order | Proposed order granting leave to appeal [VERIFY: draft and attach] |
+| **P** | Proposed Order | Proposed order granting leave to appeal |
 
 ---
 
@@ -1056,7 +1056,7 @@ The following items must be verified and completed before this Application is fi
 - [ ] Address for service on Emily Rose Watson confirmed
 - [ ] All appendix documents obtained and tabulated
 - [ ] Proof of service prepared
-- [ ] Filing fee paid or fee waiver obtained [VERIFY]
+- [ ] Filing fee paid or fee waiver obtained
 - [ ] Number of copies required for filing confirmed [VERIFY]
 - [ ] Document complies with MCR 7.212 page and formatting requirements
 - [ ] Document reviewed for consistency and accuracy

@@ -73,7 +73,7 @@ I, Andrew J. Pigors, pursuant to 28 U.S.C. § 1746, declare under penalty of per
 ## V. WRONGFUL INCARCERATION
 
 15. I was incarcerated for a total of 59 days on civil contempt of court. The specific dates of incarceration were:
-    - [ANDREW_REQUIRED: list each period of incarceration with start and end dates — e.g., "From [date] to [date] (X days)" for each separate incarceration].
+    - [ANDREW_REQUIRED: list each period of incarceration with start and end dates — e.g., "From 2025-08-08 to 2025-08-08 (X days)" for each separate incarceration].
 
 16. The contempt findings were based on [ANDREW_REQUIRED: describe the basis — e.g., alleged failure to comply with specific court orders, describe what orders and why you contend the contempt was unjust].
 
@@ -124,7 +124,7 @@ I, Andrew J. Pigors, pursuant to 28 U.S.C. § 1746, declare under penalty of per
 
 27. I have documented 305 incidents in which Emily A. Watson, her family members, or persons acting in concert with her interfered with my parental rights. These include:
 
-    a. [ANDREW_REQUIRED: describe 3-5 specific, representative interference incidents with approximate dates — e.g., "On [date], Watson failed to appear at the scheduled parenting exchange at [location]"; "On [date], Watson's [family member] made threats to me at [location]"; etc.].
+    a. [ANDREW_REQUIRED: describe 3-5 specific, representative interference incidents with approximate dates — e.g., "On 2024-05-02, Watson failed to appear at the scheduled parenting exchange at [location]"; "On 2024-05-02, Watson's [family member] made threats to me at [location]"; etc.].
 
 28. The cumulative effect of these 305 documented interference incidents, combined with the court's refusal to sanction Watson, has produced severe parental alienation. Nearly all recognized indicators of parental alienation under MCL 722.23(j) are present, including systematic denial of contact, disparagement, and coaching.
 
@@ -134,7 +134,7 @@ I, Andrew J. Pigors, pursuant to 28 U.S.C. § 1746, declare under penalty of per
 
 29. I filed one (1) CPS report regarding bruising I observed on L.D.W. on [ANDREW_REQUIRED: approximate date you observed the bruising and filed the report]. I filed this report in good faith based on genuine concern for L.D.W.'s physical safety.
 
-30. [ANDREW_REQUIRED: describe what you observed — e.g., "I observed bruising on L.D.W.'s [location on body] during a parenting exchange on [date]. The bruising was [describe — size, color, location]. I reported this to [CPS agency name] out of concern for L.D.W.'s welfare."].
+30. [ANDREW_REQUIRED: describe what you observed — e.g., "I observed bruising on L.D.W.'s [location on body] during a parenting exchange on 2025-02-14. The bruising was [describe — size, color, location]. I reported this to [CPS agency name] out of concern for L.D.W.'s welfare."].
 
 31. Rather than investigating my report, the court used it as a basis for further adverse action against me.
 
@@ -157,7 +157,7 @@ I, Andrew J. Pigors, pursuant to 28 U.S.C. § 1746, declare under penalty of per
 ## XII. FOC REFEREE RUSCO'S BIAS
 
 35. Pamela Rusco, acting as FOC Referee, issued recommendations in my case that:
-    a. [ANDREW_REQUIRED: describe 2-3 specific biased recommendations with approximate dates — e.g., "On [date], Rusco recommended [specific recommendation] without considering [evidence you presented]"];
+    a. [ANDREW_REQUIRED: describe 2-3 specific biased recommendations with approximate dates — e.g., "On 2025-08-08, Rusco recommended [specific recommendation] without considering [evidence you presented]"];
     b. Systematically favored Watson without adequate evidentiary basis;
     c. Were adopted by Judge McNeill without independent review.
 

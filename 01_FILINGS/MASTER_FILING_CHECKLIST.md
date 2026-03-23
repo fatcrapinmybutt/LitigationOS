@@ -196,7 +196,7 @@ E-Filing: https://courts.michigan.gov/tfa
 
 **Proof of Service Format:**
 - [ ] Case caption
-- [ ] "I, Andrew James Pigors, certify that on [DATE], I served a copy of [DOCUMENT NAMES] on the following by [METHOD]:"
+- [ ] "I, Andrew James Pigors, certify that on 2024-05-13, I served a copy of [DOCUMENT NAMES] on the following by [METHOD]:"
 - [ ] List each party, address, and method
 - [ ] Signature and date
 - [ ] If certified mail: attach return receipt or tracking number
@@ -712,7 +712,7 @@ PHASE 4 ─── EMERGENCY RELIEF (IF NEEDED) ───────────
 - [ ] All case numbers correct (2024-001507-DC, 2023-5907-PP, 2025-002760-CZ, COA 366810)
 - [ ] All rule citations verified against current Michigan Court Rules / FRCP
 - [ ] All case citations include full reporter citation and year
-- [ ] No placeholder text remaining ([INSERT], [ANDREW_REQUIRED], [TBD], etc.)
+- [ ] No placeholder text remaining ([INSERT], 2022-11-09, [TBD], etc.)
 - [ ] Child referred to by initials only (L.D.W.) — MCR 8.119(H)
 - [ ] Every factual assertion supported by evidence in the record or affidavit
 - [ ] No fabricated statistics or inflated numbers

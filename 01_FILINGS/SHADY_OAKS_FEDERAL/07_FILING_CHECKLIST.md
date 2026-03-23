@@ -29,11 +29,11 @@
 
 | # | Task | Status | Notes |
 |---|------|--------|-------|
-| 1 | ☐ Complete all [ANDREW_REQUIRED] placeholders in 01_FEDERAL_HOUSING_COMPLAINT.md | | Review every bracket — court will not accept incomplete filings |
-| 2 | ☐ Complete all [ANDREW_REQUIRED] placeholders in 03_AFFIDAVIT_PIGORS.md | | Must have specific dates, amounts, names |
-| 3 | ☐ Complete all [ANDREW_REQUIRED] placeholders in 04_EXHIBIT_INDEX.md | | Confirm exhibit numbering matches actual evidence |
-| 4 | ☐ Complete all [ANDREW_REQUIRED] placeholders in 05_SUMMONS_PACKAGE.md | | Need service addresses for all Defendants |
-| 5 | ☐ Complete all [ANDREW_REQUIRED] placeholders in 06_CIVIL_COVER_SHEET.md | | Transfer to official JS-44 form |
+| 1 | ☐ Complete all 2026-02-16 placeholders in 01_FEDERAL_HOUSING_COMPLAINT.md | | Review every bracket — court will not accept incomplete filings |
+| 2 | ☐ Complete all 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 placeholders in 03_AFFIDAVIT_PIGORS.md | | Must have specific dates, amounts, names |
+| 3 | ☐ Complete all 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 placeholders in 04_EXHIBIT_INDEX.md | | Confirm exhibit numbering matches actual evidence |
+| 4 | ☐ Complete all 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 placeholders in 05_SUMMONS_PACKAGE.md | | Need service addresses for all Defendants |
+| 5 | ☐ Complete all 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 placeholders in 06_CIVIL_COVER_SHEET.md | | Transfer to official JS-44 form |
 | 6 | ☐ Review 02_BRIEF_IN_SUPPORT.md for accuracy | | Ensure all case citations are correct |
 | 7 | ☐ Convert all documents to PDF format for filing | | W.D. Michigan requires PDF for e-filing |
 
@@ -177,7 +177,7 @@ Each Defendant must receive:
 
 ### ⚠️ DO NOT:
 - ❌ Miss the 90-day service deadline — case will be dismissed
-- ❌ File without completing ALL [ANDREW_REQUIRED] placeholders
+- ❌ File without completing ALL 2022-11-09 placeholders
 - ❌ File the Affidavit without getting it notarized first
 - ❌ Forget to include the JS-44 Civil Cover Sheet with filing
 - ❌ Serve the wrong person — verify identities and addresses

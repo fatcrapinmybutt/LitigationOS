@@ -30,12 +30,12 @@ upon the following parties and courts by the methods indicated:
 
 ---
 
-### 1. Appellee's Attorney — Ron Berry
+### 1. Ronald Berry (non-attorney, Watson's domestic partner)
 
 | Field | Detail |
 |-------|--------|
-| **Name** | Ron Berry |
-| **Role** | Attorney for Defendant-Appellee Emily A. Watson |
+| **Name** | Ronald Berry |
+| **Role** | Non-attorney, domestic partner of Defendant-Appellee Emily A. Watson |
 | **Method** | MiFILE e-Service and First-Class U.S. Mail |
 | **Date Served** | March 04, 2026 |
 

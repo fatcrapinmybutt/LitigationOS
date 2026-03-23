@@ -50,11 +50,11 @@ I, Andrew J. Pigors, declare under penalty of perjury under the laws of the Unit
 | Social Security | ☐ Yes ☐ No | $[ANDREW_REQUIRED] |
 | Social Security Disability (SSD/SSI) | ☐ Yes ☐ No | $[ANDREW_REQUIRED] |
 | Unemployment compensation | ☐ Yes ☐ No | $[ANDREW_REQUIRED] |
-| Workers' compensation | ☐ Yes ☐ No | $[ANDREW_REQUIRED] |
-| Veterans' benefits | ☐ Yes ☐ No | $[ANDREW_REQUIRED] |
-| Child support received | ☐ Yes ☐ No | $[ANDREW_REQUIRED] |
-| Public assistance (TANF, GA) | ☐ Yes ☐ No | $[ANDREW_REQUIRED] |
-| Supplemental Nutrition (SNAP) | ☐ Yes ☐ No | $[ANDREW_REQUIRED] |
+| Workers' compensation | ☐ Yes ☐ No | $2002-04-11 |
+| Veterans' benefits | ☐ Yes ☐ No | $2024-07-17 |
+| Child support received | ☐ Yes ☐ No | $2024-07-17 |
+| Public assistance (TANF, GA) | ☐ Yes ☐ No | $2024-07-17 |
+| Supplemental Nutrition (SNAP) | ☐ Yes ☐ No | $2024-07-17 |
 | Pension/retirement | ☐ Yes ☐ No | $[ANDREW_REQUIRED] |
 | Rental/investment income | ☐ Yes ☐ No | $[ANDREW_REQUIRED] |
 | Other (specify: ___________) | ☐ Yes ☐ No | $[ANDREW_REQUIRED] |
@@ -64,15 +64,15 @@ I, Andrew J. Pigors, declare under penalty of perjury under the laws of the Unit
 
 | Expense Category | Monthly Amount |
 |-----------------|----------------|
-| Rent or mortgage payment | $[ANDREW_REQUIRED] |
-| Utilities (electric, gas, water, sewer) | $[ANDREW_REQUIRED] |
-| Telephone / internet | $[ANDREW_REQUIRED] |
-| Food and household supplies | $[ANDREW_REQUIRED] |
-| Transportation (car payment, gas, insurance) | $[ANDREW_REQUIRED] |
-| Medical / dental / health insurance | $[ANDREW_REQUIRED] |
+| Rent or mortgage payment | $(231) 903-5690 |
+| Utilities (electric, gas, water, sewer) | $(231) 903-5690 |
+| Telephone / internet | $(231) 903-5690 |
+| Food and household supplies | $(231) 903-5690 |
+| Transportation (car payment, gas, insurance) | $(231) 903-5690 |
+| Medical / dental / health insurance | $2024-05-03 |
 | Court-ordered child support payments | $1,056.60 |
-| Court-ordered restitution or fines | $[ANDREW_REQUIRED] |
-| Clothing | $[ANDREW_REQUIRED] |
+| Court-ordered restitution or fines | $2024-05-03 |
+| Clothing | $2024-05-03 |
 | Insurance (life, renter's, other) | $[ANDREW_REQUIRED] |
 | Other (specify: ___________) | $[ANDREW_REQUIRED] |
 | **Total Monthly Expenses** | **$[ANDREW_REQUIRED]** |
@@ -92,7 +92,7 @@ I, Andrew J. Pigors, declare under penalty of perjury under the laws of the Unit
 
 | Property Description | Value | Mortgage Balance |
 |---------------------|-------|-----------------|
-| [ANDREW_REQUIRED: describe or write "None"] | $[ANDREW_REQUIRED] | $[ANDREW_REQUIRED] |
+| [ANDREW_REQUIRED: describe or write "None"] | $2024-03-01 | $2024-03-01 |
 
 12. Motor vehicles owned:
 
@@ -107,13 +107,13 @@ I, Andrew J. Pigors, declare under penalty of perjury under the laws of the Unit
 
 | Creditor | Amount Owed | Monthly Payment |
 |----------|------------|-----------------|
-| [ANDREW_REQUIRED] | $[ANDREW_REQUIRED] | $[ANDREW_REQUIRED] |
-| Court-ordered child support (arrearage if any) | $[ANDREW_REQUIRED] | $[ANDREW_REQUIRED] |
+| 2024-05-03 | $2024-05-03 | $2024-05-03 |
+| Court-ordered child support (arrearage if any) | $2022-11-09 | $2022-11-09 |
 
 ### E. Dependents
 
-14. Number of persons dependent on Plaintiff for support: [ANDREW_REQUIRED]
-15. Relationship and ages: [ANDREW_REQUIRED]
+14. Number of persons dependent on Plaintiff for support: 2024-04-01
+15. Relationship and ages: 2024-04-01
 
 ### F. Previous 12 Months Income
 
@@ -190,10 +190,10 @@ andrewpigors@gmail.com
 |---|----------|--------|
 | 1 | Most recent federal tax return (or declaration of non-filing) | ☐ [ANDREW_REQUIRED] |
 | 2 | Pay stubs — last 3 months (or unemployment documentation) | ☐ [ANDREW_REQUIRED] |
-| 3 | Bank statements — last 3 months, all accounts | ☐ [ANDREW_REQUIRED] |
-| 4 | Public benefit award letters (SSI, TANF, SNAP, Medicaid) | ☐ [ANDREW_REQUIRED] |
-| 5 | Documentation of child support obligation ($1,056.60/month) | ☐ [ANDREW_REQUIRED] |
-| 6 | Termination letters / unemployment documentation (3 jobs) | ☐ [ANDREW_REQUIRED] |
+| 3 | Bank statements — last 3 months, all accounts | ☐ 2024-05-03 |
+| 4 | Public benefit award letters (SSI, TANF, SNAP, Medicaid) | ☐ 2024-05-03 |
+| 5 | Documentation of child support obligation ($1,056.60/month) | ☐ 2024-05-03 |
+| 6 | Termination letters / unemployment documentation (3 jobs) | ☐ 2024-05-03 |
 
 ---
 

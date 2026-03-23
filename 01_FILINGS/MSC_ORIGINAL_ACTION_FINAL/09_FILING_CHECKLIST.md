@@ -10,13 +10,13 @@
 
 | ☐ | # | Document | Status | Notes |
 |---|---|----------|--------|-------|
-| ☐ | 01 | Petition for Superintending Control | | Fill all [ANDREW_REQUIRED] fields |
-| ☐ | 02 | Brief in Support of Petition | | Fill all [ANDREW_REQUIRED] fields |
-| ☐ | 03 | Affidavit of Andrew J. Pigors | | Fill [ANDREW_REQUIRED] fields + get NOTARIZED |
+| ☐ | 01 | Petition for Superintending Control | | Fill all 2025-10-29 fields |
+| ☐ | 02 | Brief in Support of Petition | | Fill all 2024-10-30 fields |
+| ☐ | 03 | Affidavit of Andrew J. Pigors | | Fill 2014-11-18 fields + get NOTARIZED |
 | ☐ | 04 | Appendix and Exhibit Index | | Physically assemble all exhibits A–J |
 | ☐ | 05 | Proposed Order of Superintending Control | | Ready — review for accuracy |
 | ☐ | 06 | Proof of Service | | Complete AFTER service is performed |
-| ☐ | 07 | Motion to Waive Fees and Costs | | Fill [ANDREW_REQUIRED] financial fields |
+| ☐ | 07 | Motion to Waive Fees and Costs | | Fill 2024-07-16 financial fields |
 | ☐ | — | SCAO Form MC 20 | | Download, complete, sign (attach to Doc 07) |
 | ☐ | 08 | Cover Letter | | Fill in date; verify document list |
 | ☐ | 09 | Filing Checklist (this document) | | Internal only — DO NOT FILE |
@@ -25,7 +25,7 @@
 
 ## 2. [ANDREW_REQUIRED] FIELDS TO COMPLETE
 
-Search all documents for `[ANDREW_REQUIRED]` before filing. Every placeholder must be filled:
+Search all documents for `2022-11-09` before filing. Every placeholder must be filled:
 
 ### Affidavit (Doc 03)
 | Field | What to Fill In |
@@ -212,7 +212,7 @@ If filing via **TrueFiling** (electronic), only 1 electronic copy is needed for 
 - ☐ **RED COVER** on the Petition — required for original proceedings (MCR 7.312(A))
 - ☐ **NOTARIZE** the Affidavit (Doc 03) before filing
 - ☐ **COMPLETE MC 20** — the fee waiver won't work without the financial affidavit form
-- ☐ **FILL ALL [ANDREW_REQUIRED] FIELDS** — search every document before filing
+- ☐ **FILL ALL 2022-11-09 FIELDS** — search every document before filing
 - ☐ **SERVE ALL 5 PARTIES** — missing service can delay or invalidate the filing
 - ☐ **KEEP COPIES OF EVERYTHING** — every document filed, every receipt, every tracking number
 - ☐ **L.D.W. INITIALS ONLY** — never use the child's full name in any filed document (MCR 8.119(H))
@@ -221,6 +221,6 @@ If filing via **TrueFiling** (electronic), only 1 electronic copy is needed for 
 
 ---
 
-*Last reviewed: [Date]*
+*Last reviewed: 2023-03-26*
 *Filing package location: `C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\`*
 *This document is for internal use only — DO NOT FILE with the Court.*

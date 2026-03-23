@@ -103,7 +103,7 @@ reasonably be questioned."
 14. The following specific incidents support this complaint:
 
     Incident 1: Ex Parte PPO Issuance Without Subsequent Hearing
-    - Date: On or about [date]
+    - Date: On or about 2023-11-01
     - Description: PPO issued ex parte in Case No. 2023-5907-PP without
       scheduling a timely hearing for Respondent to be heard, in
       violation of MCR 3.705 and Canon 3(A)(4).

@@ -361,10 +361,10 @@ I hereby certify that on the _____ day of _____________, 2026, I served a true c
 | Defendant | Address | Method |
 |-----------|---------|--------|
 | Emily A. Watson | 2160 Garland Dr, Norton Shores, MI | ☐ |
-| Lane A. Watson | [ANDREW_REQUIRED] | ☐ |
+| Lane A. Watson | 2023-12-04 | ☐ |
 | Lori Watson | 1143 E. Norton Ave, Muskegon, MI | ☐ |
 | Albert Watson | 1143 E. Norton Ave, Muskegon, MI | ☐ |
-| Cody Watson | [ANDREW_REQUIRED] | ☐ |
+| Cody Watson | 2023-12-04 | ☐ |
 
 ________________________
 ANDREW J. PIGORS, Plaintiff Pro Se
@@ -375,17 +375,17 @@ ANDREW J. PIGORS, Plaintiff Pro Se
 
 | # | Description | Bates/Exhibit # | Location |
 |---|-------------|-----------------|----------|
-| 1 | AppClose co-parenting communications log | [ANDREW_REQUIRED] | 03_EVIDENCE/ |
-| 2 | Contemporaneous parenting time denial records | [ANDREW_REQUIRED] | 03_EVIDENCE/ |
-| 3 | Police reports re: Albert Watson assault | [ANDREW_REQUIRED] | 03_EVIDENCE/ |
-| 4 | Police reports re: Cody Watson threats | [ANDREW_REQUIRED] | 03_EVIDENCE/ |
-| 5 | Investigation reports — zero criminal findings | [ANDREW_REQUIRED] | 03_EVIDENCE/ |
-| 6 | Dr. Richard Bone — alienation expert report/testimony | [ANDREW_REQUIRED] | 03_EVIDENCE/ |
-| 7 | MyPortal medical records access evidence | [ANDREW_REQUIRED] | 03_EVIDENCE/ |
-| 8 | L.D.W. photographs showing regression/bruising | [ANDREW_REQUIRED] | 03_EVIDENCE/ |
-| 9 | Employment records — termination following jailing | [ANDREW_REQUIRED] | 03_EVIDENCE/ |
-| 10 | Housing records — eviction following job loss | [ANDREW_REQUIRED] | 03_EVIDENCE/ |
-| 11 | Financial records — child support payments during zero PT | [ANDREW_REQUIRED] | 03_EVIDENCE/ |
+| 1 | AppClose co-parenting communications log | 2023-11-12 | 03_EVIDENCE/ |
+| 2 | Contemporaneous parenting time denial records | 2023-11-12 | 03_EVIDENCE/ |
+| 3 | Police reports re: Albert Watson assault | 2023-11-12 | 03_EVIDENCE/ |
+| 4 | Police reports re: Cody Watson threats | 2023-11-12 | 03_EVIDENCE/ |
+| 5 | Investigation reports — zero criminal findings | 2026-02-19 | 03_EVIDENCE/ |
+| 6 | Dr. Richard Bone — alienation expert report/testimony | 2026-02-19 | 03_EVIDENCE/ |
+| 7 | MyPortal medical records access evidence | 2021-02-28 | 03_EVIDENCE/ |
+| 8 | L.D.W. photographs showing regression/bruising | 2023-12-04 | 03_EVIDENCE/ |
+| 9 | Employment records — termination following jailing | 2024-07-17 | 03_EVIDENCE/ |
+| 10 | Housing records — eviction following job loss | 2024-07-17 | 03_EVIDENCE/ |
+| 11 | Financial records — child support payments during zero PT | 2024-07-17 | 03_EVIDENCE/ |
 
 ---
 

@@ -24,7 +24,7 @@ Complete each item and check the box before proceeding to filing.
 
 | # | Document | Status | Notes |
 |---|----------|--------|-------|
-| 1 | Application for Emergency Relief (01) | ☐ Complete | Review all [ANDREW_REQUIRED] tags — fill in ALL personal details, dates, and facts before filing |
+| 1 | Application for Emergency Relief (01) | ☐ Complete | Review all 2022-11-09 tags — fill in ALL personal details, dates, and facts before filing |
 | 2 | Brief in Support (02) | ☐ Complete | Verify all citations are accurate; confirm page/subsection pinpoint cites |
 | 3 | Affidavit of Emergency (03) | ☐ Complete | MUST be signed and notarized before filing — unsigned affidavit will be rejected |
 | 4 | Proposed Order (04) | ☐ Complete | Review proposed parenting time schedule for reasonableness |
@@ -35,7 +35,7 @@ Complete each item and check the box before proceeding to filing.
 
 | # | Check | Status |
 |---|-------|--------|
-| 1 | All [ANDREW_REQUIRED] placeholders have been replaced with actual information | ☐ |
+| 1 | All 2024-04-26 placeholders have been replaced with actual information | ☐ |
 | 2 | Caption is consistent across ALL documents (case numbers, party names, court names) | ☐ |
 | 3 | All citations have been verified for accuracy (case names, volume/page numbers, year) | ☐ |
 | 4 | Affidavit has been reviewed for accuracy — all facts are true and verifiable | ☐ |

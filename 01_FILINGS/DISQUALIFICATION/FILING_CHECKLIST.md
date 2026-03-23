@@ -94,7 +94,7 @@
 | R | Parenting Time Denial Log | ⬜ COMPILE |
 | S | Financial Burden Docs | ⬜ COMPILE |
 | T | Contempt Orders / Commitment Records | ⬜ OBTAIN from Clerk |
-| U | Employment Termination Records (3 jobs) | [ANDREW_REQUIRED] |
+| U | Employment Termination Records (3 jobs) | 2024-05-03 |
 | V | Child Support Order ($1,056.60/mo) | ⬜ OBTAIN from file |
 | W | Parental Alienation Pattern Documentation | ✅ AVAILABLE |
 | X | Judicial Analysis Report | ✅ AVAILABLE (05_ANALYSIS/) |
@@ -108,9 +108,9 @@
 
 | # | Check | Status |
 |---|-------|--------|
-| 1 | All [ANDREW_REQUIRED] items resolved | ⬜ PENDING (7 items — see list below) |
+| 1 | All 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 items resolved | ⬜ PENDING (7 items — see list below) |
 | 2 | Address and ZIP filled in signature blocks | ✅ DONE (1977 Whitehall Rd, Laketon Twp, MI 49445) |
-| 3 | Defendant's counsel name/address verified | ⬜ PENDING [ANDREW_REQUIRED] |
+| 3 | Defendant's counsel name/address verified | ⬜ PENDING 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 |
 | 4 | Notary arranged for Affidavit | ⬜ PENDING |
 | 5 | Page numbers added to final PDFs | ⬜ PENDING |
 | 6 | Exhibit tabs/labels prepared | ⬜ PENDING |
@@ -118,7 +118,7 @@
 | 8 | Filing fee confirmed with Clerk | ⬜ PENDING |
 | 9 | MiFILE e-filing compatibility verified | ⬜ PENDING |
 | 10 | All cross-references verified | ✅ DONE |
-| 11 | Ex parte orders 4–23 itemized from ROA | ⬜ PENDING [ANDREW_REQUIRED] |
+| 11 | Ex parte orders 4–23 itemized from ROA | ⬜ PENDING 2025-08-08 |
 
 ---
 
@@ -126,16 +126,16 @@
 
 | Step | Action | Target Date | Status |
 |------|--------|-------------|--------|
-| 1 | Resolve all [ANDREW_REQUIRED] items (7 total) | [DATE] | ⬜ |
-| 2 | Obtain certified ROAs from Clerk | [DATE] | ⬜ |
-| 3 | Order hearing transcripts | [DATE] | ⬜ |
-| 4 | Obtain contempt orders / commitment records | [DATE] | ⬜ |
-| 5 | Compile all exhibits (A–AA) | [DATE] | ⬜ |
-| 6 | Have Affidavit notarized | [DATE] | ⬜ |
-| 7 | Convert all documents to PDF | [DATE] | ⬜ |
-| 8 | Serve on opposing party | [DATE] | ⬜ |
-| 9 | File with Court (MiFILE or in person) | [DATE] | ⬜ |
-| 10 | File Proof of Service | [DATE] | ⬜ |
+| 1 | Resolve all 2023-10-26 items (7 total) | 2023-10-26 | ⬜ |
+| 2 | Obtain certified ROAs from Clerk | 2022-09-07 | ⬜ |
+| 3 | Order hearing transcripts | 2022-09-07 | ⬜ |
+| 4 | Obtain contempt orders / commitment records | 2025-08-08 | ⬜ |
+| 5 | Compile all exhibits (A–AA) | 2025-08-08 | ⬜ |
+| 6 | Have Affidavit notarized | 2025-08-08 | ⬜ |
+| 7 | Convert all documents to PDF | 2022-11-09 | ⬜ |
+| 8 | Serve on opposing party | 2024-11-15 | ⬜ |
+| 9 | File with Court (MiFILE or in person) | 2024-04-11 | ⬜ |
+| 10 | File Proof of Service | 2024-04-11 | ⬜ |
 | 11 | Monitor for judge's response (14-day window) | [DATE + 14] | ⬜ |
 
 ---

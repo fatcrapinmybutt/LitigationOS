@@ -24,7 +24,7 @@ Complete each item and check the box before proceeding to filing.
 
 | # | Document | Status | Notes |
 |---|----------|--------|-------|
-| 1 | Complaint for Declaratory Judgment (01) | ☐ Complete | Review all [ANDREW_REQUIRED] tags — fill in ALL details before filing |
+| 1 | Complaint for Declaratory Judgment (01) | ☐ Complete | Review all 2022-11-09 tags — fill in ALL details before filing |
 | 2 | Brief in Support (02) | ☐ Complete | Verify all citations; confirm CREAC structure per argument |
 | 3 | Affidavit — Ex Parte Pattern (03) | ☐ Complete | MUST be signed and notarized; complete the 24-order catalog |
 | 4 | Proposed Order (04) | ☐ Complete | Review declarations and injunctive provisions |
@@ -154,7 +154,7 @@ The strongest possible presentation of the ex parte pattern includes:
 
 | # | Date | Subject | Notice? | Hearing? | Impact |
 |---|------|---------|---------|----------|--------|
-| 1 | [date] | [subject] | No | No | [impact] |
+| 1 | 2024-05-13 | [subject] | No | No | [impact] |
 | 2 | [date] | [subject] | No | No | [impact] |
 | ... | ... | ... | ... | ... | ... |
 | 24 | [date] | [subject] | No | No | [impact] |

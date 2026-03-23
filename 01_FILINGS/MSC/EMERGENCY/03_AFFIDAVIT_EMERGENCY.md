@@ -87,7 +87,7 @@ I, Andrew J. Pigors, being first duly sworn, depose and state as follows:
 
 12. The twenty-four (24) ex parte orders represent approximately 44% of all orders entered in this case (24 of 55 total orders). Based on my understanding of normal judicial practice, this rate vastly exceeds what is customary.
 
-13. On multiple occasions, I learned of orders affecting my custody rights only after they had already been entered and taken effect. [ANDREW_REQUIRED: Describe specific instances — e.g., "On [date], I arrived for scheduled parenting time only to be informed by [person] that an order had been entered on [date] canceling my parenting time, although I had received no notice of any motion or hearing."].
+13. On multiple occasions, I learned of orders affecting my custody rights only after they had already been entered and taken effect. [ANDREW_REQUIRED: Describe specific instances — e.g., "On 2025-08-08, I arrived for scheduled parenting time only to be informed by [person] that an order had been entered on 2025-08-08 canceling my parenting time, although I had received no notice of any motion or hearing."].
 
 ---
 

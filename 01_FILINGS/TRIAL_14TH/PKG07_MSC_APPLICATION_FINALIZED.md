@@ -115,11 +115,11 @@ Defendant-Appellee.
 
 | No. | Date Filed | Motion | Disposition |
 |-----|-----------|--------|-------------|
-| 1 | [DATE] | Motion for Evidentiary Hearing on Custody/Parenting Time | [Pending/Denied/Not Addressed] |
-| 2 | [DATE] | Motion to Dissolve/Modify Ex Parte Orders | [Pending/Denied/Not Addressed] |
-| 3 | [DATE] | Motion for Parenting Time | [Pending/Denied/Not Addressed] |
-| 4 | [DATE] | Motion for Due Process Hearing | [Pending/Denied/Not Addressed] |
-| 5 | [DATE] | [Additional Motions as applicable] | [Disposition] |
+| 1 | 2022-11-09 | Motion for Evidentiary Hearing on Custody/Parenting Time | [Pending/Denied/Not Addressed] |
+| 2 | 2025-05-16 | Motion to Dissolve/Modify Ex Parte Orders | [Pending/Denied/Not Addressed] |
+| 3 | 2025-11-26 | Motion for Parenting Time | [Pending/Denied/Not Addressed] |
+| 4 | 2025-11-26 | Motion for Due Process Hearing | [Pending/Denied/Not Addressed] |
+| 5 | 2025-11-26 | [Additional Motions as applicable] | [Disposition] |
 
 *These motions demonstrate:*
 - Father's repeated, good-faith efforts to obtain a hearing through proper channels
@@ -136,10 +136,10 @@ Defendant-Appellee.
 
 | No. | Date Entered | Order Description | Ex Parte? | Hearing Held? | Findings Made? |
 |-----|-------------|-------------------|-----------|---------------|----------------|
-| 1 | [DATE] | [Order restricting parenting time] | Yes | No | No |
-| 2 | [DATE] | [Order further restricting parenting time] | Yes | No | No |
-| 3 | [DATE] | [Order eliminating parenting time] | Yes | No | No |
-| 4 | [DATE] | [Additional orders as applicable] | [Y/N] | [Y/N] | [Y/N] |
+| 1 | 2024-05-05 | [Order restricting parenting time] | Yes | No | No |
+| 2 | 2022-11-09 | [Order further restricting parenting time] | Yes | No | No |
+| 3 | 2022-11-09 | [Order eliminating parenting time] | Yes | No | No |
+| 4 | 2022-11-09 | [Additional orders as applicable] | [Y/N] | [Y/N] | [Y/N] |
 
 *This index demonstrates the systematic pattern:*
 - Every significant custody/parenting time order was entered ex parte
@@ -758,7 +758,7 @@ The father seeks leave to appeal, superintending control over the 14th Circuit C
 
 ---
 
-**Filed:** [DATE]
+**Filed:** 2024-06-15
 
 **Andrew J. Pigors, Pro Se Plaintiff-Appellant**
 
@@ -1165,8 +1165,8 @@ Phone: (231) 903-5690
 ### REQUIRED ORDERING (MCR 7.305(A)(1)(a)-(f))
 
 #### (a) Statement of order/date being appealed
-- COA order/opinion: [DATE]
-- Trial court judgment: [DATE]
+- COA order/opinion: 2024-04-11
+- Trial court judgment: 2024-04-11
 
 #### (b) Questions presented for review
 - Concisely stated, separately numbered
@@ -1203,9 +1203,9 @@ Select applicable ground(s):
 - Typically: constitutional issues, extraordinary public importance
 
 ### TIMELINE
-- [ ] COA decision received: [DATE]
+- [ ] COA decision received: 2014-11-18
 - [ ] 42-day deadline to file in MSC: [DATE + 42 DAYS]
-- [ ] Application filed: [DATE]
+- [ ] Application filed: 2014-11-18
 
 ### SUPERINTENDING CONTROL (Alternative)
 If filing complaint for superintending control (MCR 7.305(G)):
@@ -1239,7 +1239,7 @@ Defendant-Appellee.
 
 ---
 
-I, Andrew J. Pigors, hereby certify that on **[DATE]**, I served copies of the following documents:
+I, Andrew J. Pigors, hereby certify that on **2026-03-04**, I served copies of the following documents:
 
 1. Application for Leave to Appeal (MCR 7.305(B))
 2. Complaint for Superintending Control (MCR 7.306)
@@ -1334,10 +1334,10 @@ Phone: (231) 903-5690
 
 | Recipient | Method | Copies | Date Mailed | Tracking No. |
 |-----------|--------|--------|-------------|--------------|
-| MSC Clerk | USPS First Class | 13 | [DATE] | [TRACKING] |
-| Jennifer L. Barnes | USPS First Class | 1 | [DATE] | [TRACKING] |
-| COA Clerk (courtesy) | USPS First Class | 1 | [DATE] | [TRACKING] |
-| 14th Circuit Clerk (courtesy) | USPS First Class | 1 | [DATE] | [TRACKING] |
+| MSC Clerk | USPS First Class | 13 | 2024-04-23 | [TRACKING] |
+| Jennifer L. Barnes | USPS First Class | 1 | 2024-07-17 | [TRACKING] |
+| COA Clerk (courtesy) | USPS First Class | 1 | 2026-02-28 | [TRACKING] |
+| 14th Circuit Clerk (courtesy) | USPS First Class | 1 | 2026-02-28 | [TRACKING] |
 | **TOTAL COPIES** | | **16** | | |
 
 ---

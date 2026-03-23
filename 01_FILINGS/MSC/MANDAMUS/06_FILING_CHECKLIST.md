@@ -17,8 +17,8 @@ Check each item when complete:
 
 | ☐ | Document | File | Status |
 |---|----------|------|--------|
-| ☐ | Application for Writ of Mandamus | `01_APPLICATION_WRIT_MANDAMUS.md` | Draft — fill [ANDREW_REQUIRED] fields |
-| ☐ | Brief in Support | `02_BRIEF_IN_SUPPORT.md` | Draft — fill [ANDREW_REQUIRED] fields |
+| ☐ | Application for Writ of Mandamus | `01_APPLICATION_WRIT_MANDAMUS.md` | Draft — fill 2025-10-29 fields |
+| ☐ | Brief in Support | `02_BRIEF_IN_SUPPORT.md` | Draft — fill 2014-11-18 fields |
 | ☐ | Appendix with Index | `03_APPENDIX_INDEX.md` | Draft — gather Tab documents |
 | ☐ | Proposed Order | `04_PROPOSED_ORDER.md` | Draft — ready for filing |
 | ☐ | Proof of Service | `05_PROOF_OF_SERVICE.md` | Complete after service |
@@ -37,7 +37,7 @@ Check each item when complete:
 
 ## STEP-BY-STEP FILING INSTRUCTIONS
 
-### STEP 1: Complete All [ANDREW_REQUIRED] Fields
+### STEP 1: Complete All 2018-01-08 Fields
 
 Search all documents for `[ANDREW_REQUIRED]` and fill in:
 

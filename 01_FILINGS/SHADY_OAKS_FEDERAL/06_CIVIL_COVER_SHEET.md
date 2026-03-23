@@ -20,10 +20,10 @@
 | Name | County of Residence (if known) | State of Incorporation / Citizenship |
 |------|-------------------------------|--------------------------------------|
 | Shady Oaks Park MHP, LLC | Muskegon (operations) | **New Jersey** (DISSOLVED ~2022) |
-| Homes of America, LLC | [ANDREW_REQUIRED] | **Delaware** |
-| Alden Global Capital, LLC | [ANDREW_REQUIRED] | **New York** |
+| Homes of America, LLC | 2023-01-01 | **Delaware** |
+| Alden Global Capital, LLC | 2023-01-01 | **New York** |
 | Partridge Equity Group | Muskegon (Norton Shores) | **Michigan** |
-| VRM Capital Corp | [ANDREW_REQUIRED] | [ANDREW_REQUIRED] |
+| VRM Capital Corp | 2025-04-25 | 2025-04-25 |
 | Cricklewood MHP LLC | [ANDREW_REQUIRED] | [ANDREW_REQUIRED] |
 | Cassandra "Casey" VanDam | Muskegon | Michigan |
 | Nicole Browley | Muskegon | Michigan |

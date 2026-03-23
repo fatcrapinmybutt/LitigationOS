@@ -1110,9 +1110,9 @@ Plaintiff Andrew J. Pigors submits this Exhibit Index cataloging the documentary
 
 | Bates No. | Description | Date | Relevance |
 |-----------|-------------|------|-----------|
-| PKG10-EX-0001 | Original custody/parenting order | [DATE] | Establishes baseline parental rights |
-| PKG10-EX-0002 | Subsequent modification order(s) | [DATE] | Documents progressive restriction pattern |
-| PKG10-EX-0003 | Order(s) restricting parental access | [DATE] | Direct evidence of deprivation |
+| PKG10-EX-0001 | Original custody/parenting order | 2023-09-13 | Establishes baseline parental rights |
+| PKG10-EX-0002 | Subsequent modification order(s) | 2023-09-13 | Documents progressive restriction pattern |
+| PKG10-EX-0003 | Order(s) restricting parental access | 2024-05-24 | Direct evidence of deprivation |
 | PKG10-EX-0004 | Court docket sheet (complete) | [DATE RANGE] | Procedural history documenting pattern |
 | PKG10-EX-0005 | Notice of hearing documents (or absence thereof) | [DATE RANGE] | Due process — notice element |
 | PKG10-EX-0006 – 0020 | Motions filed by Plaintiff | [DATE RANGE] | Protected First Amendment activity |
@@ -1178,16 +1178,16 @@ Plaintiff Andrew J. Pigors submits this Exhibit Index cataloging the documentary
 
 | Bates No. | Date of Filing | Document Filed | Protected Activity |
 |-----------|---------------|---------------|-------------------|
-| PKG10-EX-0601 | [DATE] | [Motion/Objection Description] | Right to Petition |
-| PKG10-EX-0602 | [DATE] | [Motion/Objection Description] | Right to Petition |
+| PKG10-EX-0601 | 2023-10-15 | [Motion/Objection Description] | Right to Petition |
+| PKG10-EX-0602 | 2025-05-16 | [Motion/Objection Description] | Right to Petition |
 | *[Continue for each documented filing]* | | | |
 
 ### B. Adverse Action Timeline (PKG10-EX-0651 – 0700)
 
 | Bates No. | Date of Action | Adverse Action | Temporal Proximity to Filing |
 |-----------|---------------|---------------|------------------------------|
-| PKG10-EX-0651 | [DATE] | [Restriction/Sanction Description] | [X] days after filing PKG10-EX-0601 |
-| PKG10-EX-0652 | [DATE] | [Restriction/Sanction Description] | [X] days after filing PKG10-EX-0602 |
+| PKG10-EX-0651 | 2022-02-01 | [Restriction/Sanction Description] | [X] days after filing PKG10-EX-0601 |
+| PKG10-EX-0652 | 2025-05-16 | [Restriction/Sanction Description] | [X] days after filing PKG10-EX-0602 |
 | *[Continue for each documented adverse action]* | | | |
 
 ### C. Escalation Pattern Analysis (PKG10-EX-0701 – 0750)

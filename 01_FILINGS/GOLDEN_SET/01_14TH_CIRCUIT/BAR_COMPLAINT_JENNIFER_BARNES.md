@@ -62,7 +62,7 @@ Troy, Michigan 48084-4903
 
 4. The underlying custody case (2024-001507-DC) was filed in 2024. Emily Watson and I initially shared approximately equal parenting time (50/50) with our child.
 
-5. Ms. Barnes represents Emily Watson as her custody attorney. Emily Watson's boyfriend, Ron Berry, is also believed to be a licensed attorney and is suspected of providing off-record legal assistance in this matter.
+5. Ms. Barnes represents Emily Watson as her custody attorney. Emily Watson's boyfriend, Ron Berry, is NOT a licensed attorney. He is suspected of providing unauthorized off-record legal assistance in this matter, which would constitute the unauthorized practice of law under MCL 600.916.
 
 6. Beginning in 2024, Ms. Barnes filed or facilitated a series of motions, ex parte filings, and show cause actions that have systematically eliminated my parenting time, from 50/50 custody to 0% — a total deprivation accomplished without any evidentiary hearing on the merits.
 

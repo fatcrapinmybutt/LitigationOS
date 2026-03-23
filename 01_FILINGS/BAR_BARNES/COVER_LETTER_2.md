@@ -12,7 +12,7 @@ Detroit, MI 48226
 ```
 Request for Investigation
 Re: Jennifer Barnes (P55406)
-Re: Ron Berry ([BAR # ON FILE])
+Re: Ronald Berry (non-attorney)
 ```
 
 Dear Clerk of Court:

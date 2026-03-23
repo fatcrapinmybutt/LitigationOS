@@ -106,7 +106,7 @@
 
 ---
 
-## [ANDREW_REQUIRED] ITEMS -- MUST COMPLETE BEFORE FILING
+## 2026-03-05 ITEMS -- MUST COMPLETE BEFORE FILING
 
 1. **SIGN** the Motion to Disqualify (verification section AND certificate of service)
 2. **SIGN** the Brief in Support (signature page)

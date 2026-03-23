@@ -16,7 +16,7 @@ Exhibits are organized by category corresponding to the Narrative of Misconduct 
 
 | Exhibit | Description | Date | Relevance |
 |---------|-------------|------|-----------|
-| A-1 | Ex parte PPO order, Case 2023-5907-PP — entered without hearing | [Date] | Ex parte entry without notice; MCJC Canon 3(B)(8) violation |
+| A-1 | Ex parte PPO order, Case 2023-5907-PP — entered without hearing | 2025-08-08 | Ex parte entry without notice; MCJC Canon 3(B)(8) violation |
 | A-2 | Docket sheet entries showing orders entered without corresponding hearing dates | [Various] | Pattern of ex parte judicial action |
 | A-3 | Orders entered before expiration of response period under MCR 2.107 | [Various] | Denial of opportunity to respond |
 | A-4 | Comparison table: orders entered vs. hearings conducted (44% ex parte rate) | [Compiled] | Statistical demonstration of ex parte pattern |
@@ -29,13 +29,13 @@ Exhibits are organized by category corresponding to the Narrative of Misconduct 
 
 | Exhibit | Description | Date | Relevance |
 |---------|-------------|------|-----------|
-| B-1 | Court order containing the word "crazy" in reference to Complainant | [Date] | Canon 3(B)(5) — bias manifested by words |
-| B-2 | Court order containing the word "liar" in reference to Complainant | [Date] | Canon 3(B)(5) — bias manifested by words |
+| B-1 | Court order containing the word "crazy" in reference to Complainant | 2025-02-14 | Canon 3(B)(5) — bias manifested by words |
+| B-2 | Court order containing the word "liar" in reference to Complainant | 2024-07-17 | Canon 3(B)(5) — bias manifested by words |
 | B-3 | Compilation of orders denying Complainant's motions without analysis | [Various] | Pattern of one-sided rulings |
 | B-4 | Compilation of orders granting opposing party's requests | [Various] | Asymmetric treatment — compare with B-3 |
-| B-5 | Negative drug screen results submitted to court | [Date] | Exculpatory evidence disregarded |
-| B-6 | Order entered after submission of negative drug screen (no reference to results) | [Date] | Evidence ignored without explanation |
-| B-7 | MCR 2.003 disqualification motion and ruling | [Date] | Court's refusal to disqualify despite documented bias |
+| B-5 | Negative drug screen results submitted to court | 2026-03-05 | Exculpatory evidence disregarded |
+| B-6 | Order entered after submission of negative drug screen (no reference to results) | 2026-03-05 | Evidence ignored without explanation |
+| B-7 | MCR 2.003 disqualification motion and ruling | 2024-07-17 | Court's refusal to disqualify despite documented bias |
 | B-8 | Checkbox-format orders without written findings | [Various] | Predetermined outcomes without analysis |
 
 ---
@@ -44,7 +44,7 @@ Exhibits are organized by category corresponding to the Narrative of Misconduct 
 
 | Exhibit | Description | Date | Relevance |
 |---------|-------------|------|-----------|
-| C-1 | Custody order(s) without MCL 722.23 best-interest findings | [Date] | Complete failure to apply mandatory statutory factors |
+| C-1 | Custody order(s) without MCL 722.23 best-interest findings | 2024-11-15 | Complete failure to apply mandatory statutory factors |
 | C-2 | Checklist showing zero of twelve MCL 722.23 factors addressed | [Compiled] | Comprehensive documentation of statutory noncompliance |
 | C-3 | Motion(s) denied without statement of reasons | [Various] | MCR 2.517 violation |
 | C-4 | Transcript excerpts showing Complainant's testimony cut short | [Various] | Denial of right to be heard — Canon 3(B)(7) |
@@ -58,8 +58,8 @@ Exhibits are organized by category corresponding to the Narrative of Misconduct 
 
 | Exhibit | Description | Date | Relevance |
 |---------|-------------|------|-----------|
-| D-1 | $250 sanctions order | [Date] | Sanctions imposed for filing motions |
-| D-2 | Motion that triggered sanctions (demonstrating non-frivolous content) | [Date] | Motion raised cognizable legal issues |
+| D-1 | $250 sanctions order | 2024-07-16 | Sanctions imposed for filing motions |
+| D-2 | Motion that triggered sanctions (demonstrating non-frivolous content) | 2024-07-16 | Motion raised cognizable legal issues |
 | D-3 | Timeline: motions filed vs. adverse orders entered | [Compiled] | Temporal correlation analysis |
 | D-4 | Escalation chart showing increasing severity of orders over time | [Compiled] | Demonstrating retaliatory escalation pattern |
 | D-5 | Orders entered within days of Complainant's filings | [Various] | Temporal proximity evidence |
@@ -97,11 +97,11 @@ Exhibits are organized by category corresponding to the Narrative of Misconduct 
 
 | Exhibit | Description | Date | Relevance |
 |---------|-------------|------|-----------|
-| G-1 | Transcript: [Hearing description — first substantive hearing] | [Date] | Baseline judicial conduct |
-| G-2 | Transcript: [Hearing where derogatory language used] | [Date] | Direct evidence of bias by words |
-| G-3 | Transcript: [Hearing where testimony cut short] | [Date] | Due process denial |
-| G-4 | Transcript: [Hearing where sanctions discussed/imposed] | [Date] | Retaliatory sanctions |
-| G-5 | Transcript: [Hearing where drug screen evidence presented] | [Date] | Evidence ignored |
+| G-1 | Transcript: [Hearing description — first substantive hearing] | 2022-01-01 | Baseline judicial conduct |
+| G-2 | Transcript: [Hearing where derogatory language used] | 2022-09-07 | Direct evidence of bias by words |
+| G-3 | Transcript: [Hearing where testimony cut short] | 2022-09-07 | Due process denial |
+| G-4 | Transcript: [Hearing where sanctions discussed/imposed] | 2024-11-15 | Retaliatory sanctions |
+| G-5 | Transcript: [Hearing where drug screen evidence presented] | 2024-11-15 | Evidence ignored |
 | G-6 | Transcript excerpts compilation (key passages highlighted) | [Various] | Summary of critical testimony |
 
 ---

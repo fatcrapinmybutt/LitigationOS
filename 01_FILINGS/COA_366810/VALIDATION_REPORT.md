@@ -58,7 +58,7 @@
 | County for notary | ✅ RESOLVED | County of Muskegon |
 | Word count compliance | ✅ RESOLVED | 14,224 words (under 16,000 limit) |
 | Claim of Appeal filing date | ✅ RESOLVED (Agent-159) | DB shows June 15, 2025 -- Andrew to confirm exact date |
-| Motion for Disqualification date | ✅ PARTIALLY RESOLVED | Filed 02/28/2025 per DB; denial date still [ANDREW_REQUIRED] |
+| Motion for Disqualification date | ✅ PARTIALLY RESOLVED | Filed 02/28/2025 per DB; denial date still andrewjpigors@gmail.com |
 | Transcript page counts | ⬜ ANDREW ACTION | [ANDREW_REQUIRED: insert page counts when transcripts obtained] |
 | Jennifer Barnes email | ⬜ ANDREW ACTION | andrewjpigors@gmail.com |
 | Signature/date blanks | ⬜ FILL ON FILING DAY | Standard fill-in-the-blank fields for date of signing |

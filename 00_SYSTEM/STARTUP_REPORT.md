@@ -1,19 +1,19 @@
 # 🐻 THE MANBEARPIG — Startup Report
-**Generated:** 2026-03-22T03:42:08.573537
+**Generated:** 2026-03-23T10:06:11.721533
 **Engine:** THE-MANBEARPIG x NEXUS v11.0 OMEGA-SUPREME
-**Parent-Child Separation:** **226 DAYS** (since Aug 8, 2025)
+**Parent-Child Separation:** **227 DAYS** (since Aug 8, 2025)
 
 ## Database
 - Status: CONNECTED
-- Size: 422.4 MB
-- Tables: 115
+- Size: 670.1 MB
+- Tables: 166
 
 ## Evidence Arsenal
 - **quotes:** 92,246
 - **impeachment:** 0
-- **violations:** 5,059
+- **violations:** 5,063
 - **contradictions:** 0
-- **claims:** 0
+- **claims:** 35
 
 ## Filing Readiness
 | Vehicle | Status | Score |
@@ -34,18 +34,12 @@
 | Motion for Custody Modification | ingested | 75.0 |
 | Motion to Terminate PPO | ingested | 75.0 |
 
-## System Health: ALL HEALTHY
-
-## Recent Copilot Sessions (71 total)
-- `070a961b-27a...` — 2026-03-22T03:42:08.331893 — # OMEGA-INFINITY: COGNITIVE LITIGATION KERNEL — GOD PLAN v4.0
-- `e757a636-acb...` — 2026-02-14T18:35:58.396247 — Implementation plan — LitigationOS
-- `ab2c20bd-6fd...` — 2026-03-20T19:27:22.585929 — No plan
-- `60199f3d-dfa...` — 2026-03-11T20:01:17.156222 — No plan
-- `219bc871-7a1...` — 2026-03-18T15:07:39.213993 — # LitigationOS — OMEGA/ELITE Skill Remediation Plan
+## System Health: 0/1 HEALTHY
 
 ## Jurisdiction Databases
 - **Court Forms DB:** ✅ 160KB
-- **Specialty DBs:** 10 loaded
+- **Specialty DBs:** 11 loaded
+  - ✅ `court_forms.db` — 0KB, 0 tables
   - ✅ `jurisdiction_14th_circuit_civil.db` — 32KB, 7 tables
   - ✅ `jurisdiction_14th_circuit_family.db` — 44KB, 8 tables
   - ✅ `jurisdiction_coa.db` — 36KB, 8 tables
@@ -63,12 +57,12 @@
 ## Drive State
 | Drive | Free GB | Total GB | Status |
 |-------|---------|----------|--------|
-| C: | 1.07 | 237.69 | 🔴 CRITICAL |
-| D: | 4.36 | 31.99 | 🟠 LOW |
-| F: | 8.24 | 31.99 | 🟢 OK |
-| G: | 13.81 | 25.75 | 🟢 OK |
-| H: | 29.78 | 29.82 | 🟢 OK |
-| I: | 0.0 | 465.74 | 🔴 CRITICAL |
+| C: | 13.95 | 237.69 | 🟢 OK |
+| D: | 1.02 | 31.99 | 🔴 CRITICAL |
+| F: | 7.45 | 31.99 | 🟢 OK |
+| G: | 18.63 | 25.75 | 🟢 OK |
+| H: | 24.32 | 29.82 | 🟢 OK |
+| I: | 7.39 | 465.74 | 🟢 OK |
 
 ## Todo Tracker
 - **Total:** 12

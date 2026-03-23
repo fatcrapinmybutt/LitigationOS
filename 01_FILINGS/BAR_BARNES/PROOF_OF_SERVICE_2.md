@@ -2,7 +2,7 @@
 
 ## Pursuant to MCR 9.100-9.131
 
-**Case:** Request for Investigation / Re: Jennifer Barnes (P55406) / Re: Ron Berry ([BAR # ON FILE])
+**Case:** Request for Investigation / Re: Jennifer Barnes (P55406) / Re: Ronald Berry (non-attorney)
 **Court:** Attorney Grievance Commission of Michigan
 
 I, Andrew Pigors, hereby certify that on **March 04, 2026**, I served a true and correct copy of the **Attorney Grievance Complaint** and all attached exhibits upon the following parties by the methods indicated:

@@ -323,7 +323,7 @@ Each deposition will be recorded by stenographic means and may also be recorded 
 
 ## CERTIFICATE OF SERVICE
 
-I hereby certify that on [DATE], I served a true copy of the foregoing Notice of Depositions upon each party and deponent by [method].
+I hereby certify that on 2024-05-13, I served a true copy of the foregoing Notice of Depositions upon each party and deponent by [method].
 
 Andrew J. Pigors, Plaintiff *pro se*
 

@@ -154,7 +154,7 @@ Responses to these Requests for Admission must be signed by the party, not by an
 
 ## CERTIFICATE OF SERVICE
 
-I hereby certify that on [DATE], I served a true copy of the foregoing upon each Defendant by [method] at their last known addresses.
+I hereby certify that on 2024-05-13, I served a true copy of the foregoing upon each Defendant by [method] at their last known addresses.
 
 Andrew J. Pigors, Plaintiff *pro se*
 

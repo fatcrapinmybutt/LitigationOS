@@ -645,7 +645,7 @@ All exhibits in this package are assigned Bates numbers using the prefix **PKG04
 | **C** | PKG04-___ — PKG04-___ | **Ex Parte Order — July 1, 2024** | 07/01/2024 | Ex parte order affecting Father's custodial rights. Pre-printed checkbox form. No specific findings. Demonstrates pattern of void ex parte orders. |
 | **D** | PKG04-___ — PKG04-___ | **Motion Underlying July 1 Order** | On or about 07/2024 | Motion filed without verification or sworn support. Demonstrates violation of MCR 3.207(B)(1). |
 | **E** | PKG04-___ — PKG04-___ | **Docket Entries Reflecting Service Violations** | Various | Excerpts from case docket documenting 105 violations of MCR 2.107 service requirements. Demonstrates systematic pattern of proceeding without notice. |
-| **F** | PKG04-___ — PKG04-___ | **Father's Negative Drug Screen** | [Date] | Negative drug screen results contradicting unsworn allegations. Demonstrates absence of evidentiary basis for total elimination of parenting time. |
+| **F** | PKG04-___ — PKG04-___ | **Father's Negative Drug Screen** | 2022-11-09 | Negative drug screen results contradicting unsworn allegations. Demonstrates absence of evidentiary basis for total elimination of parenting time. |
 
 ---
 

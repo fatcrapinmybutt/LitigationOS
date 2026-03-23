@@ -77,9 +77,9 @@ The United States Supreme Court has recognized that the parent-child relationshi
 The record in this case, encompassing 377 files across 51 categories of evidence and spanning over 160 megabytes of documented material, reveals a **systematic pattern of parenting time interference and denial** by Defendant Emily Watson ("Mother"). The synthesis of this evidence reveals:
 
 - **38,357** instances of contempt-related conduct documented across the case record [VERIFY];
-- **12,035** combined references to parental alienation and interference patterns [VERIFY];
-- **5,752** instances of denial of parental rights documented [VERIFY];
-- **1,837** documented instances of direct interference with parenting time [VERIFY].
+- **12,035** combined references to parental alienation and interference patterns ;
+- **5,752** instances of denial of parental rights documented ;
+- **1,837** documented instances of direct interference with parenting time .
 
 These numbers represent not mere allegations but documented, categorized, and cross-referenced evidentiary findings drawn from court filings, communications, and official records.
 
@@ -95,10 +95,10 @@ If the circuit court's orders are ultimately reversed on appeal but no stay is i
 
 Father respectfully requests that this Court treat this Application on an emergency basis because:
 
-1. The circuit court's orders are currently being enforced, causing daily and compounding harm [VERIFY];
+1. The circuit court's orders are currently being enforced, causing daily and compounding harm ;
 2. Father's parenting time is being systematically withheld or reduced [VERIFY — specific dates];
 3. The next regularly scheduled hearing or status conference is not until [VERIFY DATE], by which time additional irreparable harm will have accrued;
-4. The child L.D.W. has expressed a desire to maintain a relationship with Father [VERIFY];
+4. The child L.D.W. has expressed a desire to maintain a relationship with Father ;
 5. Delay in granting a stay will render the appeal moot as a practical matter, as the harm to the parent-child relationship may become irreversible.
 
 ---
@@ -163,17 +163,17 @@ Father respectfully requests that this Court treat this Application on an emerge
 
 23. Specifically, Father contends that the trial court:
 
-   a. Failed to conduct proper evidentiary hearings before modifying custody and/or parenting time [VERIFY];
+ a. Failed to conduct proper evidentiary hearings before modifying custody and/or parenting time ;
 
-   b. Failed to make findings of fact on the record as required by MCR 2.517 [VERIFY];
+ b. Failed to make findings of fact on the record as required by MCR 2.517 ;
 
-   c. Failed to properly consider the best interest factors set forth in MCL 722.23 [VERIFY];
+ c. Failed to properly consider the best interest factors set forth in MCL 722.23 ;
 
-   d. Entered orders without providing Father adequate notice and opportunity to be heard as required by MCR 2.119 [VERIFY];
+ d. Entered orders without providing Father adequate notice and opportunity to be heard as required by MCR 2.119 ;
 
-   e. Demonstrated bias against Father as a *pro se* litigant [VERIFY];
+ e. Demonstrated bias against Father as a *pro se* litigant ;
 
-   f. Failed to consider or give appropriate weight to evidence of Mother's violations of prior court orders [VERIFY].
+ f. Failed to consider or give appropriate weight to evidence of Mother's violations of prior court orders .
 
 ---
 
@@ -193,7 +193,7 @@ Under MCR 7.209(A), a court may grant a stay pending appeal upon consideration o
 
 *See also Michigan Coalition of State Employee Unions v. Civil Service Comm'n*, 465 Mich 212; 634 NW2d 692 (2001) [VERIFY — correct citation]; *In re Contempt of Robertson*, 209 Mich App 433, 436; 531 NW2d 763 (1995) [VERIFY — correct citation].
 
-The Michigan Court of Appeals has recognized that these factors are to be **balanced**, and that a particularly strong showing on one factor may compensate for a weaker showing on another. A movant need not demonstrate certainty of success on the merits; rather, a showing of "serious questions going to the merits" is sufficient when the balance of hardships tips decidedly in the movant's favor. *See Pontiac Fire Fighters Union Local 376 v. City of Pontiac*, 482 Mich 1, 21; 753 NW2d 595 (2008) [VERIFY].
+The Michigan Court of Appeals has recognized that these factors are to be **balanced**, and that a particularly strong showing on one factor may compensate for a weaker showing on another. A movant need not demonstrate certainty of success on the merits; rather, a showing of "serious questions going to the merits" is sufficient when the balance of hardships tips decidedly in the movant's favor. *See Pontiac Fire Fighters Union Local 376 v. City of Pontiac*, 482 Mich 1, 21; 753 NW2d 595 (2008) .
 
 In child custody cases, the balance of these factors is informed by the paramount constitutional significance of the parent-child relationship. As the United States Supreme Court has stated:
 
@@ -232,9 +232,9 @@ Here, the record documents **36,231** combined instances of misconduct and bias-
 
 The trial court's orders are the product of proceedings tainted by:
 
-- **Actual bias or the appearance of impropriety** as documented in the record and as grounds for disqualification under MCR 2.003(C)(1) [VERIFY];
-- **Failure to consider material evidence** presented by Father regarding Mother's pattern of alienation, interference, and contempt [VERIFY];
-- **Disparate treatment of Father as a *pro se* litigant**, in violation of the principle that pro se parties are entitled to fair treatment and reasonable accommodation by the court [VERIFY];
+- **Actual bias or the appearance of impropriety** as documented in the record and as grounds for disqualification under MCR 2.003(C)(1) ;
+- **Failure to consider material evidence** presented by Father regarding Mother's pattern of alienation, interference, and contempt ;
+- **Disparate treatment of Father as a *pro se* litigant**, in violation of the principle that pro se parties are entitled to fair treatment and reasonable accommodation by the court ;
 - **Ex parte communications or improper influences** [VERIFY — only if supported by evidence].
 
 #### 3. Due Process Violations Require Reversal
@@ -243,15 +243,15 @@ The Fourteenth Amendment to the United States Constitution and Article I, § 17 
 
 Father contends that the trial court violated his due process rights by:
 
-a. Failing to provide adequate notice of proceedings that resulted in modification of custody or parenting time [VERIFY];
+a. Failing to provide adequate notice of proceedings that resulted in modification of custody or parenting time ;
 
-b. Failing to afford Father a meaningful opportunity to be heard, including the right to present evidence and cross-examine witnesses [VERIFY];
+b. Failing to afford Father a meaningful opportunity to be heard, including the right to present evidence and cross-examine witnesses ;
 
-c. Failing to apply the correct burden of proof (clear and convincing evidence) when modifying an established custodial environment [VERIFY];
+c. Failing to apply the correct burden of proof (clear and convincing evidence) when modifying an established custodial environment ;
 
 d. Entering orders based on incomplete or one-sided evidence [VERIFY];
 
-e. Failing to make findings of fact sufficient to permit meaningful appellate review as required by MCR 2.517 [VERIFY].
+e. Failing to make findings of fact sufficient to permit meaningful appellate review as required by MCR 2.517 .
 
 Under the *Mathews v. Eldridge* balancing test, the due process analysis requires consideration of: (1) the private interest at stake; (2) the risk of erroneous deprivation through the procedures used, and the probable value of additional safeguards; and (3) the government's interest. *Mathews*, 424 U.S. at 335. Here, all three factors weigh decisively in Father's favor:
 
@@ -284,8 +284,8 @@ The deprivation of this fundamental right — even temporarily — constitutes i
 The harm is not static but **accelerating**. Each day without meaningful parenting time:
 
 - Further entrenches the alienation pattern documented in the record (12,035 combined alienation/interference references) [VERIFY];
-- Allows Mother and the Watson family to continue undermining Father's relationship with L.D.W. without consequence [VERIFY];
-- Causes additional psychological harm to L.D.W., who is being deprived of a meaningful relationship with Father [VERIFY];
+- Allows Mother and the Watson family to continue undermining Father's relationship with L.D.W. without consequence ;
+- Causes additional psychological harm to L.D.W., who is being deprived of a meaningful relationship with Father ;
 - Creates a new *status quo* that may prejudice Father's position even if he prevails on appeal (the so-called "possession is nine-tenths of the law" effect in custody disputes);
 - Makes eventual reunification more difficult and traumatic for both Father and L.D.W.
 
@@ -327,7 +327,7 @@ d. Ensuring that the child is not used as a tool in litigation strategy.
 
 #### 3. No Third Party Would Be Substantially Harmed
 
-A stay would not cause substantial harm to any third party. The Watson family members — Albert Watson, Lori Watson, and Cody Watson — have no independent legal right to interfere with Father's constitutionally protected parental relationship with L.D.W. To the extent that these individuals have participated in a pattern of parental alienation and interference [VERIFY], a stay that preserves Father's parenting time would actually serve the interests of justice.
+A stay would not cause substantial harm to any third party. The Watson family members — Albert Watson, Lori Watson, and Cody Watson — have no independent legal right to interfere with Father's constitutionally protected parental relationship with L.D.W. To the extent that these individuals have participated in a pattern of parental alienation and interference , a stay that preserves Father's parenting time would actually serve the interests of justice.
 
 ### D. The Public Interest Favors a Stay
 
@@ -337,7 +337,7 @@ The public has a strong interest in the protection of fundamental constitutional
 
 #### 2. The Public Interest in the Integrity of the Judicial System
 
-The case record documents **36,231** combined references to judicial misconduct and bias [VERIFY]. The public has a compelling interest in ensuring that judicial proceedings are conducted fairly and impartially. When there are substantial questions about the integrity of the proceedings below, a stay serves the public interest by preventing enforcement of orders that may be the product of a flawed process.
+The case record documents **36,231** combined references to judicial misconduct and bias . The public has a compelling interest in ensuring that judicial proceedings are conducted fairly and impartially. When there are substantial questions about the integrity of the proceedings below, a stay serves the public interest by preventing enforcement of orders that may be the product of a flawed process.
 
 The Judicial Tenure Commission (JTC), referenced 18,524 times in the case record, exists precisely to address these types of systemic concerns [VERIFY — describe any pending JTC proceedings].
 
@@ -367,7 +367,7 @@ WHEREFORE, Plaintiff-Appellant Andrew J. Pigors respectfully prays that this Hon
 
    b. The order of [VERIFY DATE] restricting Father's parenting time;
 
-   c. The order of [VERIFY DATE] denying Father's motion for [VERIFY];
+ c. The order of [VERIFY DATE] denying Father's motion for ;
 
    d. Any and all subsequent orders that derive from or enforce the above-referenced orders;
 
@@ -397,7 +397,7 @@ I, Andrew J. Pigors, Plaintiff-Appellant in the above-captioned matter, do hereb
 
 3. The legal arguments set forth herein are presented in good faith and are not made for the purpose of delay or harassment.
 
-4. I have made reasonable efforts to verify all factual assertions, and statements marked [VERIFY] indicate matters that require confirmation from the official record or additional documentation.
+4. I have made reasonable efforts to verify all factual assertions, and statements marked indicate matters that require confirmation from the official record or additional documentation.
 
 5. I understand that making false statements in a court filing may subject me to penalties for perjury under MCL 750.423.
 
@@ -473,7 +473,7 @@ Andrew J. Pigors, *Pro Se*
 | *Vodvarka v. Grasmeyer* | 259 Mich App 499 (2003) | Findings required on best interest factors for parenting time |
 | *Shade v. Wright* | 291 Mich App 17 (2010) | Parenting time enforcement; alienation recognized |
 | *Fletcher v. Fletcher* | 447 Mich 871 (1994) | Abuse of discretion standard in custody |
-| *Pierron v. Pierron* | 486 Mich 81 (2010) | Importance of parenting time [VERIFY] |
+| *Pierron v. Pierron* | 486 Mich 81 (2010) | Importance of parenting time |
 | *Hunter v. Hunter* | [VERIFY — citation] | [VERIFY — holding] |
 | *Lieberman v. Orr* | [VERIFY — citation] | [VERIFY — holding] |
 | *Dean v. Tucker* | [VERIFY — citation] | [VERIFY — holding] |
@@ -514,7 +514,7 @@ Dated: ____________________
 
 ---
 
-*This document was prepared by Plaintiff-Appellant Andrew J. Pigors, proceeding pro se. All factual assertions marked [VERIFY] require confirmation from the official record prior to filing. All legal citations should be verified for accuracy and current validity through an authoritative legal research service prior to submission to the Court.*
+*This document was prepared by Plaintiff-Appellant Andrew J. Pigors, proceeding pro se. All factual assertions marked require confirmation from the official record prior to filing. All legal citations should be verified for accuracy and current validity through an authoritative legal research service prior to submission to the Court.*
 
 ---
 

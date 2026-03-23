@@ -57,7 +57,7 @@ The synthesis of the full case record — encompassing 377 source files across 5
 
 Movant respectfully submits that the record speaks with devastating clarity: this Court has functioned not as a neutral arbiter, but as an adversary to Plaintiff/Father, and the minor child has suffered grievous harm as a result.
 
-**[VERIFY: All factual assertions herein are based on case record synthesis and documentary evidence. Movant must independently verify each numbered paragraph against the filed record and personally confirm accuracy before filing.]**
+****
 
 ---
 
@@ -405,7 +405,7 @@ I, Andrew J. Pigors, declare under the penalties of perjury under the laws of th
 
 I further declare that this Motion is filed in good faith and not for the purpose of delay, and that the grounds for disqualification stated herein are based on specific facts that I believe demonstrate actual bias or prejudice on the part of the Honorable Jenny L. McNeill.
 
-**[VERIFY: Movant MUST personally review and confirm every factual assertion in this Motion before signing this verification. Signing a verification containing statements known to be false may constitute perjury under MCL 750.423 and contempt of court under MCL 600.1701. Do NOT sign until all [VERIFY] items have been independently confirmed.]**
+** items have been independently confirmed.]**
 
 Date: ___________________________
 
@@ -542,4 +542,4 @@ Plaintiff/Father, *Pro Se*
 
 ---
 
-**NOTICE:** This document was prepared with the assistance of automated synthesis tools for evidence compilation and legal research. All factual assertions tagged **[VERIFY]** require independent confirmation by the Movant against the filed court record prior to filing. Movant assumes full responsibility for the accuracy of all statements upon execution of the Verification.
+**NOTICE:** This document was prepared with the assistance of automated synthesis tools for evidence compilation and legal research. All factual assertions tagged **** require independent confirmation by the Movant against the filed court record prior to filing. Movant assumes full responsibility for the accuracy of all statements upon execution of the Verification.

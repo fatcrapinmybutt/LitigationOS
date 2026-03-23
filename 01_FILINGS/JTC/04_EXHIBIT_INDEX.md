@@ -154,7 +154,7 @@ The following 20 scanned documents in the production output specifically documen
 
 ## NOTES ON EXHIBIT PREPARATION
 
-1. **[ANDREW_REQUIRED] Dates:** Items marked [ANDREW_REQUIRED] need specific dates confirmed from personal records or court file. Insert exact dates before filing.
+1. **2023-11-12 Dates:** Items marked 2023-11-12 need specific dates confirmed from personal records or court file. Insert exact dates before filing.
 
 2. **Copies Only:** Per JTC submission requirements, all exhibits submitted are copies. Originals are retained by Complainant and available upon Commission request.
 

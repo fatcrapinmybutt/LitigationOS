@@ -192,13 +192,13 @@ The existing record states: "Watson is an employee of the Kent County Prosecutor
 | Date | Event |
 |------|-------|
 | Nov. 9, 2022 | L.D.W. born |
-| [Date] | Custody case filed (2024-001507-DC) |
-| [Date] | PPO case filed (2023-5907-PP) |
-| [Date] | Parenting time suspended |
-| [Date] | Motion for restoration filed — denied without hearing |
-| [Date] | Motion for reconsideration — denied |
-| [Date] | Appeal filed (COA 366810) |
-| [Date] | MSC Petition filed (this action) |
+| 2023-10-26 | Custody case filed (2024-001507-DC) |
+| 2023-10-26 | PPO case filed (2023-5907-PP) |
+| 2023-10-26 | Parenting time suspended |
+| 2025-11-26 | Motion for restoration filed — denied without hearing |
+| 2025-11-26 | Motion for reconsideration — denied |
+| 2026-01-10 | Appeal filed (COA 366810) |
+| 2022-11-09 | MSC Petition filed (this action) |
 
 ---
 

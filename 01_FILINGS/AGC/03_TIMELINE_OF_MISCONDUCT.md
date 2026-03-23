@@ -16,7 +16,7 @@
 
 ## INSTRUCTIONS
 
-This timeline documents Attorney Berry's specific acts organized by date. Items marked **[ANDREW_REQUIRED]** need Andrew to verify dates, add details, or confirm accuracy before filing. Populate every `[ANDREW_REQUIRED]` field with the actual date and specifics from your case file and LitigationOS database.
+This timeline documents Attorney Berry's specific acts organized by date. Items marked **2022-02-01** need Andrew to verify dates, add details, or confirm accuracy before filing. Populate every `2022-02-01` field with the actual date and specifics from your case file and LitigationOS database.
 
 ---
 
@@ -24,9 +24,9 @@ This timeline documents Attorney Berry's specific acts organized by date. Items 
 
 | Date | Event | MRPC Implicated | Source / Exhibit |
 |------|-------|-----------------|------------------|
-| [ANDREW_REQUIRED] | Emily A. Watson begins restricting Andrew's contact with L.D.W. | Background | Personal records |
-| [ANDREW_REQUIRED] | PPO case (2023-5907-PP) filed | Background | Court docket |
-| [ANDREW_REQUIRED] | Custody case (2024-001507-DC) filed | Background | Court docket |
+| 2023-10-26 | Emily A. Watson begins restricting Andrew's contact with L.D.W. | Background | Personal records |
+| 2023-10-26 | PPO case (2023-5907-PP) filed | Background | Court docket |
+| 2023-10-26 | Custody case (2024-001507-DC) filed | Background | Court docket |
 
 ---
 
@@ -34,9 +34,9 @@ This timeline documents Attorney Berry's specific acts organized by date. Items 
 
 | Date | Event | MRPC Implicated | Source / Exhibit |
 |------|-------|-----------------|------------------|
-| [ANDREW_REQUIRED] | **Berry enters appearance** as counsel for Emily A. Watson in Case No. 2024-001507-DC | — | Court docket, Exhibit F-3 |
-| [ANDREW_REQUIRED] | Berry enters appearance in PPO case 2023-5907-PP (if separate) | — | Court docket |
-| [ANDREW_REQUIRED] | Berry files initial responsive pleading — **first documented false representations** about Andrew's fitness as a parent | 3.3(a) — False statements to tribunal | Exhibit A-1 |
+| 2026-03-10 | **Berry enters appearance** as counsel for Emily A. Watson in Case No. 2024-001507-DC | — | Court docket, Exhibit F-3 |
+| 2026-03-10 | Berry enters appearance in PPO case 2023-5907-PP (if separate) | — | Court docket |
+| 2026-03-10 | Berry files initial responsive pleading — **first documented false representations** about Andrew's fitness as a parent | 3.3(a) — False statements to tribunal | Exhibit A-1 |
 
 ---
 
@@ -44,14 +44,14 @@ This timeline documents Attorney Berry's specific acts organized by date. Items 
 
 | Date | Event | MRPC Implicated | Source / Exhibit |
 |------|-------|-----------------|------------------|
-| [ANDREW_REQUIRED] | **First denial of parenting time** after Berry's involvement — Berry takes no corrective action | 1.1, 1.3 — Failure to ensure client compliance | Exhibit E-2 |
-| [ANDREW_REQUIRED] | Berry files **first vexatious motion** — [ANDREW_REQUIRED — describe motion] | 3.4 — Obstruction / frivolous filings | Exhibit B-4 |
-| [ANDREW_REQUIRED] | **First documented ex parte communication** between Berry and Judge McNeill's chambers | 3.4, 3.5(b), 8.4(c) — Ex parte contact | Exhibit B-2 |
-| [ANDREW_REQUIRED] | Berry makes **false oral statement** to court at hearing regarding [ANDREW_REQUIRED — topic] | 3.3(a) — False statement to tribunal | Exhibit A-2 |
-| [ANDREW_REQUIRED] | Berry files pleading **arguing against parenting time** despite best interest factors favoring Andrew | 4.4(a) — Harm to third person (child) | Exhibit C-5 |
-| [ANDREW_REQUIRED] | Watson denies parenting time — Berry fails to correct or counsel compliance | 1.1, 1.3, 8.4(a) | Exhibit E-2 |
-| [ANDREW_REQUIRED] | Berry files **second vexatious motion** — [ANDREW_REQUIRED — describe motion] | 3.4 — Frivolous filings | Exhibit B-5 |
-| [ANDREW_REQUIRED] | **Second documented ex parte communication** | 3.4, 3.5(b), 8.4(c) | Exhibit B-3 |
+| 2026-02-20 | **First denial of parenting time** after Berry's involvement — Berry takes no corrective action | 1.1, 1.3 — Failure to ensure client compliance | Exhibit E-2 |
+| 2026-02-20 | Berry files **first vexatious motion** — [ANDREW_REQUIRED — describe motion] | 3.4 — Obstruction / frivolous filings | Exhibit B-4 |
+| 2026-02-20 | **First documented ex parte communication** between Berry and Judge McNeill's chambers | 3.4, 3.5(b), 8.4(c) — Ex parte contact | Exhibit B-2 |
+| 2022-11-09 | Berry makes **false oral statement** to court at hearing regarding [ANDREW_REQUIRED — topic] | 3.3(a) — False statement to tribunal | Exhibit A-2 |
+| 2022-11-09 | Berry files pleading **arguing against parenting time** despite best interest factors favoring Andrew | 4.4(a) — Harm to third person (child) | Exhibit C-5 |
+| 2024-05-05 | Watson denies parenting time — Berry fails to correct or counsel compliance | 1.1, 1.3, 8.4(a) | Exhibit E-2 |
+| 2025-08-08 | Berry files **second vexatious motion** — [ANDREW_REQUIRED — describe motion] | 3.4 — Frivolous filings | Exhibit B-5 |
+| 2024-05-05 | **Second documented ex parte communication** | 3.4, 3.5(b), 8.4(c) | Exhibit B-3 |
 
 ---
 
@@ -59,12 +59,12 @@ This timeline documents Attorney Berry's specific acts organized by date. Items 
 
 | Date | Event | MRPC Implicated | Source / Exhibit |
 |------|-------|-----------------|------------------|
-| [ANDREW_REQUIRED] | Discovery requests served on Berry/Watson | Background | Exhibit B-6 |
-| [ANDREW_REQUIRED] | **Deficient discovery response** received — material withheld | 3.4 — Obstruction of evidence | Exhibit B-7 |
-| [ANDREW_REQUIRED] | Berry **fails to correct** Watson's false statement(s) to court regarding [ANDREW_REQUIRED — topic] | 3.3(a)(1) — Failure to correct | Exhibit A-4, A-5 |
-| [ANDREW_REQUIRED] | Berry files pleading **defending Watson's refusal** to comply with parenting time order | 8.4(a) — Assisting client misconduct | Exhibit D-6 |
-| [ANDREW_REQUIRED] | **Child support order** of $1,056.60/month imposed — hearing procedurally deficient [ANDREW_REQUIRED — describe deficiency] | 8.4(c) — Prejudicial conduct | Exhibit D-7 |
-| [ANDREW_REQUIRED] | Continued denial of parenting time — cumulative count reaches [X] days | 4.4, 1.3 | Exhibit C-4 |
+| 2024-04-01 | Discovery requests served on Berry/Watson | Background | Exhibit B-6 |
+| 2024-05-02 | **Deficient discovery response** received — material withheld | 3.4 — Obstruction of evidence | Exhibit B-7 |
+| 2024-05-24 | Berry **fails to correct** Watson's false statement(s) to court regarding [ANDREW_REQUIRED — topic] | 3.3(a)(1) — Failure to correct | Exhibit A-4, A-5 |
+| 2024-05-24 | Berry files pleading **defending Watson's refusal** to comply with parenting time order | 8.4(a) — Assisting client misconduct | Exhibit D-6 |
+| 2024-05-24 | **Child support order** of $1,056.60/month imposed — hearing procedurally deficient [ANDREW_REQUIRED — describe deficiency] | 8.4(c) — Prejudicial conduct | Exhibit D-7 |
+| 2024-05-24 | Continued denial of parenting time — cumulative count reaches [X] days | 4.4, 1.3 | Exhibit C-4 |
 
 ---
 
@@ -72,12 +72,12 @@ This timeline documents Attorney Berry's specific acts organized by date. Items 
 
 | Date | Event | MRPC Implicated | Source / Exhibit |
 |------|-------|-----------------|------------------|
-| [ANDREW_REQUIRED] | Parenting time denial count exceeds **100 days** | 4.4, 1.3 | Exhibit C-4 |
-| [ANDREW_REQUIRED] | Berry files additional motion to [ANDREW_REQUIRED — describe] | 3.4 | [ANDREW_REQUIRED — Exhibit ref] |
-| [ANDREW_REQUIRED] | Andrew raises alienation concerns — Berry dismisses or opposes | 4.4(a), 8.4(c) | [ANDREW_REQUIRED — Transcript or filing ref] |
-| [ANDREW_REQUIRED] | Parenting time denial count exceeds **200 days** | 4.4, 1.3 | Exhibit C-4 |
-| [ANDREW_REQUIRED] | [ANDREW_REQUIRED — Additional significant event] | [ANDREW_REQUIRED] | [ANDREW_REQUIRED] |
-| [ANDREW_REQUIRED] | Parenting time denial count exceeds **365 days (1 full year)** | 4.4, 1.3 | Exhibit C-4 |
+| 2018-01-08 | Parenting time denial count exceeds **100 days** | 4.4, 1.3 | Exhibit C-4 |
+| 2018-01-08 | Berry files additional motion to [ANDREW_REQUIRED — describe] | 3.4 | [ANDREW_REQUIRED — Exhibit ref] |
+| 2018-01-08 | Andrew raises alienation concerns — Berry dismisses or opposes | 4.4(a), 8.4(c) | [ANDREW_REQUIRED — Transcript or filing ref] |
+| 2018-01-08 | Parenting time denial count exceeds **200 days** | 4.4, 1.3 | Exhibit C-4 |
+| 2018-01-08 | [ANDREW_REQUIRED — Additional significant event] | 2018-01-08 | 2018-01-08 |
+| 2024-03-28 | Parenting time denial count exceeds **365 days (1 full year)** | 4.4, 1.3 | Exhibit C-4 |
 
 ---
 
@@ -85,10 +85,10 @@ This timeline documents Attorney Berry's specific acts organized by date. Items 
 
 | Date | Event | MRPC Implicated | Source / Exhibit |
 |------|-------|-----------------|------------------|
-| [ANDREW_REQUIRED] | **Motion for disqualification** of Judge McNeill filed by Andrew Pigors | Background (supports 8.4 count) | Exhibit D-3 |
-| [ANDREW_REQUIRED] | Parenting time denial count exceeds **200 consecutive days** | 4.4, 1.3 | Exhibit C-4 |
-| [ANDREW_REQUIRED] | Evidence compilation completed — 305 interference incidents documented | Supporting evidence | Exhibit C-1, C-2 |
-| [ANDREW_REQUIRED] | **AGC complaint filed** against Ronald Berry | — | This complaint |
+| 2024-08-16 | **Motion for disqualification** of Judge McNeill filed by Andrew Pigors | Background (supports 8.4 count) | Exhibit D-3 |
+| 2024-04-01 | Parenting time denial count exceeds **200 consecutive days** | 4.4, 1.3 | Exhibit C-4 |
+| 2024-04-01 | Evidence compilation completed — 305 interference incidents documented | Supporting evidence | Exhibit C-1, C-2 |
+| 2024-04-01 | **AGC complaint filed** against Ronald Berry | — | This complaint |
 
 ---
 
@@ -109,7 +109,7 @@ This timeline documents Attorney Berry's specific acts organized by date. Items 
 
 ## INSTRUCTIONS FOR COMPLETING THIS TIMELINE
 
-1. **Pull dates from the court docket.** Every motion, order, and hearing has a specific date. Enter the actual date in place of each `[ANDREW_REQUIRED]`.
+1. **Pull dates from the court docket.** Every motion, order, and hearing has a specific date. Enter the actual date in place of each `2025-06-18`.
 
 2. **Cross-reference with LitigationOS.** The `litigation_context.db` contains dated entries for interference incidents, evidence items, and analysis results. Use these to verify and supplement dates.
 

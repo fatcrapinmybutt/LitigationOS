@@ -133,7 +133,7 @@ Muskegon County, MI 49445
     - Impact on your parental rights
 
     Format:
-    a. [Date] — [Subject] — No prior notice — Learned of order on [date] — Impact: [description]
+    a. 2025-08-08 — [Subject] — No prior notice — Learned of order on 2025-08-08 — Impact: [description]
     b. [Continue for each order]
 
     If you cannot identify all 24 individually, list as many as you can and note: "Additional ex parte orders are reflected in the court record but cannot be individually identified from Plaintiff's available records at this time."]

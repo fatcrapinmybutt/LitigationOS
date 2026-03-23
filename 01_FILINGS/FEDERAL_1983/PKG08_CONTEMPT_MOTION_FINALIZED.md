@@ -93,19 +93,19 @@ under penalty of perjury pursuant to MCL 600.1561 and 28 USC § 1746:
 
 | Date | Scheduled PT | My Action | Defendant's Response |
 |------|-------------|-----------|---------------------|
-| [Date] | Regular weekend | Arrived at exchange location at scheduled time | Defendant did not appear; child not produced |
-| [Date] | Midweek visit | Arrived at exchange location | No appearance by Defendant |
-| [Date] | Regular weekend | Arrived at exchange location; sent text message confirming arrival | No response; child not produced |
-| [Date] | Midweek visit | Arrived at exchange location | Defendant refused to answer door |
+| 2025-08-08 | Regular weekend | Arrived at exchange location at scheduled time | Defendant did not appear; child not produced |
+| 2025-08-08 | Midweek visit | Arrived at exchange location | No appearance by Defendant |
+| 2025-08-08 | Regular weekend | Arrived at exchange location; sent text message confirming arrival | No response; child not produced |
+| 2024-05-13 | Midweek visit | Arrived at exchange location | Defendant refused to answer door |
 
 ### Period 2: [Month 2] through [Month 3]
 
 | Date | Scheduled PT | My Action | Defendant's Response |
 |------|-------------|-----------|---------------------|
-| [Date] | Regular weekend | Sent written communication requesting parenting time per court order | No response |
-| [Date] | Midweek visit | Arrived at exchange location | Defendant not present |
-| [Date] | Regular weekend | Arrived at exchange location; documented with photographs | No appearance |
-| [Date] | Holiday parenting time | Sent written request in advance | No response; child not produced |
+| 2024-05-24 | Regular weekend | Sent written communication requesting parenting time per court order | No response |
+| 2024-08-23 | Midweek visit | Arrived at exchange location | Defendant not present |
+| 2024-08-23 | Regular weekend | Arrived at exchange location; documented with photographs | No appearance |
+| 2025-08-08 | Holiday parenting time | Sent written request in advance | No response; child not produced |
 
 ### Period 3: [Month 4] through [Month 6]
 
@@ -135,8 +135,8 @@ date for the entire 571+ day period — is attached as **Exhibit C**.)*
 11. Each denied parenting time date constitutes a separate violation of the
     following court order(s):
 
-    a. **Order Regarding Parenting Time**, entered [date], Exhibit A;
-    b. **[Any additional relevant orders]**, entered [date], Exhibit [X].
+    a. **Order Regarding Parenting Time**, entered 2025-05-16, Exhibit A;
+    b. **[Any additional relevant orders]**, entered 2023-09-13, Exhibit [X].
 
 12. The cumulative violations over 571+ days include, at minimum:
 
@@ -336,7 +336,7 @@ parenting time. The statute mandates remedies. This Court is required to act.
 ### A. The Parenting Time Order
 
 1. This Court entered an Order establishing Plaintiff's parenting time with
-   the minor child(ren) on [date]. (**Exhibit A.**)
+   the minor child(ren) on 2025-08-08. (**Exhibit A.**)
 
 2. The Order provides for [specific parenting time schedule].
 
@@ -363,11 +363,11 @@ parenting time. The statute mandates remedies. This Court is required to act.
 
    | Date | Attempt | Defendant's Response |
    |------|---------|---------------------|
-   | [Date] | Presented at exchange location | Defendant failed to appear |
-   | [Date] | Written request for parenting time | No response |
-   | [Date] | Attempted telephonic contact with child | Blocked/refused |
-   | [Date] | Presented at exchange location | Defendant refused to produce child |
-   | [Date] | Written request citing court order | No response |
+   | 2024-05-23 | Presented at exchange location | Defendant failed to appear |
+   | 2025-01-15 | Written request for parenting time | No response |
+   | 2024-08-23 | Attempted telephonic contact with child | Blocked/refused |
+   | 2024-08-23 | Presented at exchange location | Defendant refused to produce child |
+   | 2019-01-01 | Written request citing court order | No response |
    | [Additional dates as documented in Affidavit] | | |
 
 8. A complete chronological log of every denied parenting time date is set
@@ -872,7 +872,7 @@ jurisdiction.
 
 ---
 
-*Filed: [Date]*
+*Filed: 2025-08-08*
 *Prepared by: Andrew J. Pigors, In Propria Persona*
 
 
@@ -909,7 +909,7 @@ by a sequential four-digit number.
 
 | Exhibit | Description | Bates Range | Pages |
 |---------|-------------|-------------|-------|
-| **A** | Order Regarding Parenting Time, entered [date] | PKG08-CONTEMPT-0001 – 0010 | [X] |
+| **A** | Order Regarding Parenting Time, entered 2024-05-02 | PKG08-CONTEMPT-0001 – 0010 | [X] |
 | **B** | [Any additional/amended parenting time orders] | PKG08-CONTEMPT-0011 – 0020 | [X] |
 | **C** | Calendar of Denied Parenting Time Dates (571+ days) | PKG08-CONTEMPT-0021 – 0040 | [X] |
 | **D** | Communications Showing Denial — Text Messages | PKG08-CONTEMPT-0041 – 0080 | [X] |
@@ -930,7 +930,7 @@ by a sequential four-digit number.
 **Description:** Court order establishing Plaintiff's parenting time with the
 minor child(ren).
 
-**Date Entered:** [Date]
+**Date Entered:** 2026-03-04
 
 **Court:** 14th Judicial Circuit Court, Muskegon County
 
@@ -1055,8 +1055,8 @@ FOC responses, investigations, or recommendations.
 days of separation between Father and child.
 
 **Methodology:**
-- Start date of denial: [Date]
-- Date of this filing: [Date]
+- Start date of denial: 2025-08-08
+- Date of this filing: 2025-06-18
 - Calculation: [End date] minus [Start date] = 571+ days
 - Cross-referenced with Calendar of Denied Dates (Exhibit C)
 - Verified against court docket (no intervening orders modifying parenting
@@ -1338,7 +1338,7 @@ parenting time. In support thereof, Plaintiff states as follows:
 6. The operative parenting time order provides Plaintiff with [specific
    schedule — e.g., alternating weekends, midweek overnights, holiday
    rotation, summer parenting time], as set forth in the Court's Order
-   dated [date] (attached as **Exhibit A**).
+   dated 2024-08-23 (attached as **Exhibit A**).
 
 7. Said Order remains in full force and effect and has not been modified,
    stayed, or vacated.
@@ -1367,11 +1367,11 @@ parenting time. In support thereof, Plaintiff states as follows:
     time have been met with refusal, nonresponse, and obstruction by
     Defendant. Specific instances include, but are not limited to:
 
-    a. **[Date]:** Plaintiff presented at the designated exchange location at
+    a. **2024-03-28:** Plaintiff presented at the designated exchange location at
        the court-ordered time. Defendant failed to appear with the child
        and did not respond to communications.
 
-    b. **[Date]:** Plaintiff communicated in writing to Defendant requesting
+    b. **2024-07-17:** Plaintiff communicated in writing to Defendant requesting
        parenting time in accordance with the court order. No response was
        received.
 
@@ -1632,7 +1632,7 @@ in the premises;
 
 ## I. FINDINGS OF FACT
 
-1. A valid parenting time order was entered by this Court on [date],
+1. A valid parenting time order was entered by this Court on 2025-08-08,
    establishing Plaintiff's parenting time with the minor child(ren).
 
 2. Said order has not been modified, stayed, or vacated and remains in full
@@ -1692,7 +1692,7 @@ in the premises;
 ### A. Contempt Finding
 
 16. Defendant Emily A. Watson is found **IN CONTEMPT** of this Court's
-    parenting time order dated [date].
+    parenting time order dated 2024-05-02.
 
 ### B. Immediate Resumption of Parenting Time
 

@@ -132,7 +132,7 @@ The following exhibits are submitted in support of Plaintiff's Complaint for Vio
 2. Each exhibit should be separated by a numbered tab.
 3. Certified copies of court records should be obtained from the 14th Circuit Court Clerk and 60th District Court Clerk.
 4. Public records should be printed with URL and access date noted.
-5. Items marked [ANDREW_REQUIRED] require Plaintiff to locate and attach the specified documentation before filing.
+5. Items marked 2024-07-17 require Plaintiff to locate and attach the specified documentation before filing.
 6. Total exhibit count: 42 exhibits across 10 categories.
 
 ---

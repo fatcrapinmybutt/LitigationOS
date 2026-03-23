@@ -160,7 +160,7 @@ P.O. Box 30212, Lansing, MI 48909
 | 2 | **ZERO** references to "nine false CPS reports" or multiple CPS investigations | ☐ |
 | 3 | Child referenced only as **L.D.W.** (initials — minor protection) | ☐ |
 | 4 | All 5 defendants named with correct capacity (individual/official) | ☐ |
-| 5 | All [ANDREW_REQUIRED] placeholders filled in by Andrew | ☐ |
+| 5 | All 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 placeholders filled in by Andrew | ☐ |
 | 6 | Jurisdictional statement cites 28 U.S.C. §§ 1331, 1343, 1367 | ☐ |
 | 7 | Rooker-Feldman, Younger, and domestic relations defenses addressed | ☐ |
 | 8 | Judicial immunity analysis included (Mireles, Stump, Dennis v. Sparks) | ☐ |

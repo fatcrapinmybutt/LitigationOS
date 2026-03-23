@@ -86,7 +86,7 @@ Pursuant to MCR 2.310, Plaintiff requests that each Defendant produce for inspec
 
 ## CERTIFICATE OF SERVICE
 
-I hereby certify that on [DATE], I served a true copy of the foregoing Request for Production of Documents upon each Defendant by [first-class mail/personal service] at their last known addresses.
+I hereby certify that on 2024-05-13, I served a true copy of the foregoing Request for Production of Documents upon each Defendant by [first-class mail/personal service] at their last known addresses.
 
 Andrew J. Pigors, Plaintiff *pro se*
 

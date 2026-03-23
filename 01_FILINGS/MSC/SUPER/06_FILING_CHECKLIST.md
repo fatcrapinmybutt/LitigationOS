@@ -20,9 +20,9 @@
 
 | ☐ | # | Document | File | Status |
 |---|---|----------|------|--------|
-| ☐ | 1 | Petition for Superintending Control | `01_PETITION_SUPERINTENDING_CONTROL.md` | DRAFTED — Fill [ANDREW_REQUIRED] fields |
-| ☐ | 2 | Brief in Support | `02_BRIEF_IN_SUPPORT.md` | DRAFTED — Fill [ANDREW_REQUIRED] fields |
-| ☐ | 3 | Affidavit of Andrew J. Pigors | `03_AFFIDAVIT_PIGORS.md` | DRAFTED — Fill [ANDREW_REQUIRED] fields, notarize |
+| ☐ | 1 | Petition for Superintending Control | `01_PETITION_SUPERINTENDING_CONTROL.md` | DRAFTED — Fill 2025-10-29 fields |
+| ☐ | 2 | Brief in Support | `02_BRIEF_IN_SUPPORT.md` | DRAFTED — Fill 2022-11-09 fields |
+| ☐ | 3 | Affidavit of Andrew J. Pigors | `03_AFFIDAVIT_PIGORS.md` | DRAFTED — Fill 2022-11-09 fields, notarize |
 | ☐ | 4 | Proposed Order | `04_PROPOSED_ORDER.md` | DRAFTED — Ready for filing |
 | ☐ | 5 | Proof of Service | `05_PROOF_OF_SERVICE.md` | DRAFTED — Complete after service |
 | ☐ | 6 | Filing Checklist (this document) | `06_FILING_CHECKLIST.md` | Internal use only — do not file |
@@ -105,7 +105,7 @@ The Petition and Brief cross-reference the mandamus and habeas filings extensive
 | ☐ | Check |
 |---|-------|
 | ☐ | Mandamus petition is finalized and all [ANDREW_REQUIRED] fields completed |
-| ☐ | Habeas petition is finalized and all [ANDREW_REQUIRED] fields completed |
+| ☐ | Habeas petition is finalized and all 2023-5907-PP fields completed |
 | ☐ | IFP application is finalized |
 | ☐ | All four filings use consistent case numbers |
 | ☐ | All four filings use consistent party names and addresses |

@@ -67,7 +67,7 @@ upon the following parties and courts by the method indicated:
 | **Method** | ☐ First-Class U.S. Mail, postage prepaid |
 |  | ☐ Electronic service via email |
 |  | ☐ Other: _________________________________ |
-| **Date Served** | [ANDREW_REQUIRED] |
+| **Date Served** | andrewjpigors@gmail.com |
 
 ---
 
@@ -81,7 +81,7 @@ upon the following parties and courts by the method indicated:
 | **Method** | ☐ First-Class U.S. Mail, postage prepaid |
 |  | ☐ TrueFiling electronic filing system |
 |  | ☐ Personal delivery |
-| **Date Filed/Served** | [ANDREW_REQUIRED] |
+| **Date Filed/Served** | 2023-10-15 |
 
 ---
 
@@ -95,7 +95,7 @@ upon the following parties and courts by the method indicated:
 | **Method** | ☐ First-Class U.S. Mail, postage prepaid |
 |  | ☐ TrueFiling electronic filing system |
 | **Documents Served** | Notice of Related Proceeding and courtesy copy of Application for Writ of Mandamus |
-| **Date Served** | [ANDREW_REQUIRED] |
+| **Date Served** | 2025-03-27 |
 
 ---
 

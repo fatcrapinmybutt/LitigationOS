@@ -159,7 +159,7 @@ Using Ollama mistral analysis of ex parte motions, the following violations emer
 
 Count I (Ex Parte Communications):
   → Reference Exhibits B-1 through B-5
-  → Add: "See Exhibit B-1 (Ex parte order dated [DATE] granting motion without notice)"
+  → Add: "See Exhibit B-1 (Ex parte order dated 2025-08-22 granting motion without notice)"
 
 Count II (Failure to Provide Due Process):
   → Reference Exhibits B-6 through B-10

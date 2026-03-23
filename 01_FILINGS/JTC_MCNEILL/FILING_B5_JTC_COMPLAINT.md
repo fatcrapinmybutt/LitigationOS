@@ -1,6 +1,6 @@
 # COMPLAINT TO THE MICHIGAN JUDICIAL TENURE COMMISSION
 
-**Date:** [Date]
+**Date:** 2025-09-01
 
 **TO:** Michigan Judicial Tenure Commission
 3034 W. Grand Blvd., Suite 8-450

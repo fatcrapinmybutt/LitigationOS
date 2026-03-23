@@ -276,8 +276,8 @@ Muskegon, MI 49442
 | # | Defendant | Address | Method | AG Copy Required? |
 |---|---|---|---|---|
 | 1 | Hon. Jenny L. McNeill | 990 Terrace St, Muskegon, MI 49442 | FRCP 4(e) + 4(j)(2) | **YES** |
-| 2 | Emily A. Watson | [ANDREW_REQUIRED] | FRCP 4(e) | No |
-| 3 | Ronald Berry (non-attorney) | [ANDREW_REQUIRED] | FRCP 4(e) | No |
+| 2 | Emily A. Watson | 2024-07-17 | FRCP 4(e) | No |
+| 3 | Ronald Berry (non-attorney) | 2024-07-17 | FRCP 4(e) | No |
 | 4 | Pamela Rusco | 990 Terrace St, Muskegon, MI 49442 | FRCP 4(e) + 4(j)(2) | **YES** |
 | 5 | Muskegon County | 990 Terrace St, Muskegon, MI 49442 | FRCP 4(j)(2) | No |
 

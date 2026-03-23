@@ -308,7 +308,7 @@ These messages contain no threats, no profanity, no harassment. They are a fathe
 
 ¶78. **(k) Domestic Violence Regardless of Whether Directed Against the Child (MCL 722.23(k)):** I incorporate by reference my statements in paragraph 74 above. Emily has a documented pattern of false reporting. The allegations of domestic violence against me are unsupported by any criminal conviction, any judicial finding of assaultive behavior, or any evidence beyond Emily's unsworn assertions.
 
-¶79. **(l) Any Other Factor Considered by the Court to Be Relevant (MCL 722.23(l)):** The following additional factors are relevant: the Watson family's coordinated campaign of harassment, intimidation, and interference; the pattern of judicial bias demonstrated by the statistical and procedural irregularities documented herein; Emily's exploitation of her professional position within the Kent County Family Division; the undisclosed legal assistance Emily receives from her attorney boyfriend; and the 329+ day separation between L.D.W. and me during the most critical period of L.D.W.'s developmental years (ages 2-3).
+¶79. **(l) Any Other Factor Considered by the Court to Be Relevant (MCL 722.23(l)):** The following additional factors are relevant: the Watson family's coordinated campaign of harassment, intimidation, and interference; the pattern of judicial bias demonstrated by the statistical and procedural irregularities documented herein; Emily's exploitation of her professional position within the Kent County Family Division; the undisclosed legal assistance Emily receives from her boyfriend (a non-attorney); and the 329+ day separation between L.D.W. and me during the most critical period of L.D.W.'s developmental years (ages 2-3).
 
 ---
 

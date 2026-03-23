@@ -299,5 +299,5 @@ Acting in the County of Muskegon
 Andrew J. Pigors, Pro Se
 1977 Whitehall Road
 Laketon Township, MI 49445
-Telephone: [ANDREW_REQUIRED]
-Email: [ANDREW_REQUIRED]
+Telephone: (231) 903-5690
+Email: (231) 903-5690

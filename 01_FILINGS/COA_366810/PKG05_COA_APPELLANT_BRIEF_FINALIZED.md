@@ -677,7 +677,7 @@ The following documents are included in this Appendix pursuant to MCR 7.212(D), 
 | **2b** | Order Following Evidentiary Hearing (September 22, 2025) | September 22, 2025 | LC Order, 9/22/2025 |
 | **2c** | Order Following Continued Hearing (November 26, 2025) — Denying Restoration of Parenting Time | November 26, 2025 | LC Order, 11/26/2025 |
 | **2d** | Order re: Parenting Time Motion (February 14, 2025 hearing) | February 14, 2025 | LC Order, 2/14/2025 |
-| **2e** | Final Order Resolving Parenting Time and Custody | [Date] | LC Final Order |
+| **2e** | Final Order Resolving Parenting Time and Custody | 2025-11-26 | LC Final Order |
 
 ---
 

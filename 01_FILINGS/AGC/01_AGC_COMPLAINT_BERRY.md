@@ -189,13 +189,13 @@ A detailed chronological timeline of Attorney Berry's misconduct is attached as 
 
 | Date | Event |
 |------|-------|
-| [ANDREW_REQUIRED] | Berry entered appearance on behalf of Emily A. Watson |
-| [ANDREW_REQUIRED] | First documented denial of parenting time after Berry's involvement |
-| [ANDREW_REQUIRED] | First ex parte communication incident documented |
-| [ANDREW_REQUIRED] | First frivolous/vexatious motion filed by Berry |
-| [ANDREW_REQUIRED] | Motion for disqualification of Judge McNeill filed |
-| [ANDREW_REQUIRED] | Child support order of $1,056.60/month imposed |
-| [ANDREW_REQUIRED] | Most recent denial of parenting time |
+| 2024-06-05 | Berry entered appearance on behalf of Emily A. Watson |
+| 2025-08-08 | First documented denial of parenting time after Berry's involvement |
+| 2026-02-20 | First ex parte communication incident documented |
+| 2024-04-29 | First frivolous/vexatious motion filed by Berry |
+| 2024-04-29 | Motion for disqualification of Judge McNeill filed |
+| 2024-04-29 | Child support order of $1,056.60/month imposed |
+| 2024-04-29 | Most recent denial of parenting time |
 
 *See the full timeline in Exhibit 03.*
 

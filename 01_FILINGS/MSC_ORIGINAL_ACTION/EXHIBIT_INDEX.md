@@ -75,8 +75,8 @@ Pursuant to MCR 7.212(J) and MCR 7.306, the following exhibits are attached in s
 | **D-4** | Show Cause Order #5 — Contempt (14 days incarceration) | ~November 15, 2025 | [___] |
 | **D-5** | Show Cause Orders #6 and #7 — Contempt (45 days incarceration) | ~November 26, 2025 | [___] |
 | **D-6** | Order Permitting Watson to Remove L.D.W. from Country | ~October 2025 | [___] |
-| **D-7** | Order Imposing $250 Bond on MCR 2.003 Disqualification Motion | [Date] | [___] |
-| **D-8** | Child Support Order — $1,056.60/month set without evidentiary hearing | [Date] | [___] |
+| **D-7** | Order Imposing $250 Bond on MCR 2.003 Disqualification Motion | 2024-04-11 | [___] |
+| **D-8** | Child Support Order — $1,056.60/month set without evidentiary hearing | 2024-04-29 | [___] |
 
 ---
 
@@ -84,10 +84,10 @@ Pursuant to MCR 7.212(J) and MCR 7.306, the following exhibits are attached in s
 
 | Exhibit | Description | Date Filed | Disposition |
 |---|---|---|---|
-| **E-1** | Motion for Restoration of Parenting Time | [Date] | Denied/No Hearing |
-| **E-2** | Motion for Evidentiary Hearing | [Date] | Denied/Ignored |
-| **E-3** | Motion for Judicial Disqualification (MCR 2.003) | [Date] | Blocked by $250 Bond |
-| **E-4** | Motion for Reconsideration | [Date] | Denied |
+| **E-1** | Motion for Restoration of Parenting Time | 2024-08-16 | Denied/No Hearing |
+| **E-2** | Motion for Evidentiary Hearing | 2025-11-26 | Denied/Ignored |
+| **E-3** | Motion for Judicial Disqualification (MCR 2.003) | 2025-11-26 | Blocked by $250 Bond |
+| **E-4** | Motion for Reconsideration | 2025-11-26 | Denied |
 | **E-5** | Other Motions Denied Without Hearing | [Various] | Denied/No Ruling |
 
 ---
@@ -107,9 +107,9 @@ Pursuant to MCR 7.212(J) and MCR 7.306, the following exhibits are attached in s
 | Exhibit | Description | Date | Pages |
 |---|---|---|---|
 | **G-1** | Contempt orders — 59 total days of incarceration | November 2025 | [___] |
-| **G-2** | Purge conditions imposed (financial requirements) | [Date] | [___] |
-| **G-3** | Documentation of employment loss — USPS and second position | [Date] | [___] |
-| **G-4** | Documentation of housing loss — two homes | [Date] | [___] |
+| **G-2** | Purge conditions imposed (financial requirements) | 2024-11-19 | [___] |
+| **G-3** | Documentation of employment loss — USPS and second position | 2024-11-19 | [___] |
+| **G-4** | Documentation of housing loss — two homes | 2022-02-02 | [___] |
 
 ---
 
@@ -129,9 +129,9 @@ Pursuant to MCR 7.212(J) and MCR 7.306, the following exhibits are attached in s
 |---|---|---|---|
 | **I-1** | COA Claim of Appeal (No. 366810) | [Date Filed] | [___] |
 | **I-2** | COA Docket Sheet confirming pending status | Current | [___] |
-| **I-3** | Motion for Disqualification (filed in 14th Circuit) | [Date] | [___] |
-| **I-4** | JTC Complaint (filed) | [Date] | [___] |
-| **I-5** | FOC Complaint (filed) | [Date] | [___] |
+| **I-3** | Motion for Disqualification (filed in 14th Circuit) | 2014-07-17 | [___] |
+| **I-4** | JTC Complaint (filed) | 2025-05-27 | [___] |
+| **I-5** | FOC Complaint (filed) | 2025-08-08 | [___] |
 
 ---
 
@@ -143,11 +143,11 @@ Pursuant to MCR 7.212(J) and MCR 7.306, the following exhibits are attached in s
 
 | Remedy | Date Attempted | Result |
 |---|---|---|
-| Motion for Disqualification (MCR 2.003) | [Date] | Blocked by $250 bond |
+| Motion for Disqualification (MCR 2.003) | 2026-02-28 | Blocked by $250 bond |
 | Chief Judge Review (Hoopes) | N/A | Structurally compromised — McNeill's former law partner |
-| FOC Complaint | [Date] | Pending/no relief |
-| JTC Complaint | [Date] | Filed — no individual relief available |
-| COA Appeal (No. 366810) | [Date] | Pending — 12-24 month timeline |
+| FOC Complaint | 2026-02-28 | Pending/no relief |
+| JTC Complaint | 2024-04-26 | Filed — no individual relief available |
+| COA Appeal (No. 366810) | 2024-04-26 | Pending — 12-24 month timeline |
 | Motions for Restoration | [Various] | Denied/ignored by McNeill |
 
 ---

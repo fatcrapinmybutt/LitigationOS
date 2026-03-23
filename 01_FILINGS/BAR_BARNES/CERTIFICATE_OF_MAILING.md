@@ -1,6 +1,6 @@
 # CERTIFICATE OF MAILING
 
-**Case:** Request for Investigation / Re: Jennifer Barnes (P55406) / Re: Ron Berry ([BAR # ON FILE])
+**Case:** Request for Investigation / Re: Jennifer Barnes (P55406) / Re: Ronald Berry (non-attorney)
 **Court:** Attorney Grievance Commission of Michigan
 
 ---

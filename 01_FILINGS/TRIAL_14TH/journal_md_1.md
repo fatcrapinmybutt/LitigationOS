@@ -3977,7 +3977,7 @@ schedule**
   > # MEEK2_CUSTODY_PT — DELTA2 Excerpt Packet (Record-Aware)  ## Corpus reality check - Selected excerpts role distribution: {'DERIVED': 180} - Note: current corpus con
 
 - **parenting time**
-  > emporary emergency custody of [Child Name], DOB [DATE], pending the scheduling and hearing of a full custody petition under MCL 722.1203(2), with all parenting time by [Other Parent] to be supervised by [approved supervisor] or suspended entirely pending further order." ``` **Context (±1 line):** ``
+  > emporary emergency custody of [Child Name], DOB 2026-03-05, pending the scheduling and hearing of a full custody petition under MCL 722.1203(2), with all parenting time by [Other Parent] to be supervised by [approved supervisor] or suspended entirely pending further order." ``` **Context (±1 line):** ``
 
 - **visitation**
   > ource:** `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md`  ```text - Names and addresses of all persons with custody/visitation ``` **Context (±1 line):** ```text   L00160:      - Child's residence for past 5 years > L00161:      - Names and addresses of all persons 
@@ -3998,7 +3998,7 @@ schedule**
   > # MEEK2_CUSTODY_PT — DELTA2 Record-First Packet  ## Purpose Record-first excerpt packet prioritized toward filing-grade source documents; derived/enhanced/commentary
 
 - **parenting time**
-  > emporary emergency custody of [Child Name], DOB [DATE], pending the scheduling and hearing of a full custody petition under MCL 722.1203(2), with all parenting time by [Other Parent] to be supervised by [approved supervisor] or suspended entirely pending further order." ``` **Context (±1 line):** ``
+  > emporary emergency custody of [Child Name], DOB 2026-03-05, pending the scheduling and hearing of a full custody petition under MCL 722.1203(2), with all parenting time by [Other Parent] to be supervised by [approved supervisor] or suspended entirely pending further order." ``` **Context (±1 line):** ``
 
 - **visitation**
   > ource:** `staging/LEGAL_OUTPUT/LEGAL_OUTPUT/02_NEW_FILINGS/2026-02-10_DISCOVERY_REPORT.md`  ```text - Names and addresses of all persons with custody/visitation ``` **Context (±1 line):** ```text   L00160:      - Child's residence for past 5 years > L00161:      - Names and addresses of all persons 
@@ -5071,7 +5071,7 @@ time**
 **Time:** 19:01:48 | **Finds:** 1
 
 - **CUSTODY**
-  > # UNRESOLVED VALUES — DELTA2  This file lists placeholders intentionally not guessed/fabricated.  - MEEK2_CUSTODY_PT_CLEAN.md: replaced [DATE] → <<UNRESOLVED:DATE>> - MEEK3_PPO_CONTEMPT_CLEAN.md: replaced [ADDRESS] → <<UNRESOLVED:ADDRESS>> - MEEK4_JTC_CANON_CLEAN
+  > # UNRESOLVED VALUES — DELTA2  This file lists placeholders intentionally not guessed/fabricated.  - MEEK2_CUSTODY_PT_CLEAN.md: replaced 2024-04-11 → <<UNRESOLVED:DATE>> - MEEK3_PPO_CONTEMPT_CLEAN.md: replaced [ADDRESS] → <<UNRESOLVED:ADDRESS>> - MEEK4_JTC_CANON_CLEAN
 
 ---
 

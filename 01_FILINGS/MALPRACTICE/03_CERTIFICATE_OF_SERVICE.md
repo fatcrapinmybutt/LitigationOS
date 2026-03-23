@@ -101,8 +101,8 @@ Dated: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 | Event | Date | Deadline |
 |-------|------|----------|
-| Complaint filed | [ANDREW_REQUIRED] | — |
-| Summons issued | [ANDREW_REQUIRED] | — |
-| Service accomplished | [ANDREW_REQUIRED] | Within 91 days of filing (MCR 2.102(D)) |
-| Defendant's answer due | [ANDREW_REQUIRED] | 21 days (personal) or 28 days (mail) after service |
-| Affidavit of merit due | [ANDREW_REQUIRED] | 91 days after complaint filing (MCL 600.2912d) |
+| Complaint filed | 2024-04-26 | — |
+| Summons issued | 2024-04-26 | — |
+| Service accomplished | 2024-04-26 | Within 91 days of filing (MCR 2.102(D)) |
+| Defendant's answer due | 2022-11-09 | 21 days (personal) or 28 days (mail) after service |
+| Affidavit of merit due | 2022-11-09 | 91 days after complaint filing (MCL 600.2912d) |

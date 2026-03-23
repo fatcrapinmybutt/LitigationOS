@@ -12,9 +12,9 @@
 
 ## PHASE 1: COMPLETE THE COMPLAINT DOCUMENTS
 
-### 1.1 Fill in All [ANDREW_REQUIRED] Fields
+### 1.1 Fill in All 2026-02-16 Fields
 
-- [ ] **01_AGC_COMPLAINT_BERRY.md** — Fill in every `[ANDREW_REQUIRED]` tag:
+- [ ] **01_AGC_COMPLAINT_BERRY.md** — Fill in every `1977 Whitehall Road, Lot 17, North Muskegon, MI 49445` tag:
   - [ ] Your phone number and email address
   - [ ] ~~Berry's bar number~~ — **Ronald Berry is NOT an attorney. He has NO bar number. Do NOT look one up.**
   - [ ] ~~Berry's law firm~~ — **Berry has no law firm. He is Emily's boyfriend/domestic partner. The AGC complaint targets his UNAUTHORIZED practice of law (UPL under MCL 600.916).**
@@ -79,7 +79,7 @@
 - [ ] Read the entire complaint aloud — does every factual statement have supporting evidence?
 - [ ] Verify every MRPC rule citation is accurate (cross-check with Michigan Rules of Professional Conduct at https://www.courts.michigan.gov/siteassets/rules-instructions-administrative-orders/michigan-court-rules/court-rules-book-ch-9.pdf)
 - [ ] Verify every case citation is accurate (e.g., *Demski v. Petlick*, 309 Mich App 404 (2015))
-- [ ] Confirm no remaining `[ANDREW_REQUIRED]` tags in any document
+- [ ] Confirm no remaining `2019-09-01` tags in any document
 - [ ] Confirm no `[TBD]` Bates numbers remain in the exhibit list
 - [ ] Verify the timeline is in strict chronological order
 - [ ] Ensure the complaint is factual and professional in tone (no emotional language)

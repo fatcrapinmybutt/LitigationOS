@@ -78,8 +78,8 @@
 |-------|-------|
 | **Full Legal Name** | Andrew J. Pigors |
 | **Address** | 1977 Whitehall Road, Laketon Township, MI 49445 |
-| **Telephone** | [ANDREW_REQUIRED] |
-| **Email** | [ANDREW_REQUIRED] |
+| **Telephone** | 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 |
+| **Email** | 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 |
 | **Attorney** | Pro Se |
 | **Bar Number** | N/A — Pro Se |
 
@@ -88,7 +88,7 @@
 | Field | Value |
 |-------|-------|
 | **Full Legal Name** | Emily A. Watson |
-| **Address** | [ANDREW_REQUIRED] |
+| **Address** | 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 |
 | **Role** | Primary Tortfeasor — Counts I, II, III, IV, V, VI, VII, VIII, IX, X, XI, XIII |
 
 #### Defendant #2
@@ -96,7 +96,7 @@
 | Field | Value |
 |-------|-------|
 | **Full Legal Name** | Lane A. Watson |
-| **Address** | [ANDREW_REQUIRED] |
+| **Address** | 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 |
 | **Role** | Co-Conspirator / Tortfeasor — Counts I, III, XII |
 
 #### Defendant #3
@@ -104,7 +104,7 @@
 | Field | Value |
 |-------|-------|
 | **Full Legal Name** | Lori Watson |
-| **Address** | [ANDREW_REQUIRED] |
+| **Address** | 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 |
 | **Role** | Co-Conspirator / Tortfeasor — Counts I, III, VI, XII |
 
 #### Defendant #4
@@ -112,7 +112,7 @@
 | Field | Value |
 |-------|-------|
 | **Full Legal Name** | Albert Watson |
-| **Address** | [ANDREW_REQUIRED] |
+| **Address** | 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 |
 | **Role** | Co-Conspirator / Tortfeasor — Counts I, III, XII |
 
 #### Defendant #5
@@ -120,7 +120,7 @@
 | Field | Value |
 |-------|-------|
 | **Full Legal Name** | Cody Watson |
-| **Address** | [ANDREW_REQUIRED] |
+| **Address** | 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 |
 | **Role** | Co-Conspirator / Tortfeasor — Counts I, III, XII |
 
 ---
@@ -132,7 +132,7 @@
 | **Filing Fee** | $175.00 |
 | **Payment Method** | [ANDREW_REQUIRED — Check / Money Order / Credit Card / Fee Waiver] |
 | **Fee Waiver Requested?** | ☐ YES ☒ NO [ANDREW_REQUIRED — modify if IFP motion will be filed] |
-| **Date of Filing** | [ANDREW_REQUIRED] |
+| **Date of Filing** | 2024-07-16 |
 | **Filed Via** | ☒ MiFILE (Electronic Filing) ☐ In-Person ☐ Mail |
 | **MiFILE Envelope ID** | _________________ (assigned upon electronic filing) |
 

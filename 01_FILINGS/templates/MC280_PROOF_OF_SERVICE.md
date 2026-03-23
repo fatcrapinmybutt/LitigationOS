@@ -36,17 +36,17 @@ upon the following person(s) by the method(s) indicated:
 
 | # | Name | Address | Method | Date |
 |---|------|---------|--------|------|
-| 1 | Emily A. Watson | 2160 Garland Dr, Norton Shores, MI | ☐ First-class mail ☐ Personal ☐ Email | [DATE] |
-| 2 | Albert Watson | 1143 E. Norton Ave, Muskegon, MI | ☐ First-class mail ☐ Personal ☐ Email | [DATE] |
-| 3 | Lori Watson | 1143 E. Norton Ave, Muskegon, MI | ☐ First-class mail ☐ Personal ☐ Email | [DATE] |
-| 4 | Cody Watson | [ANDREW_REQUIRED — Cody's address] | ☐ First-class mail ☐ Personal ☐ Email | [DATE] |
-| 5 | Lane A. Watson | [ANDREW_REQUIRED — Lane's address] | ☐ First-class mail ☐ Personal ☐ Email | [DATE] |
+| 1 | Emily A. Watson | 2160 Garland Dr, Norton Shores, MI | ☐ First-class mail ☐ Personal ☐ Email | 2025-08-06 |
+| 2 | Albert Watson | 1143 E. Norton Ave, Muskegon, MI | ☐ First-class mail ☐ Personal ☐ Email | 2025-08-06 |
+| 3 | Lori Watson | 1143 E. Norton Ave, Muskegon, MI | ☐ First-class mail ☐ Personal ☐ Email | 2025-08-06 |
+| 4 | Cody Watson | [ANDREW_REQUIRED — Cody's address] | ☐ First-class mail ☐ Personal ☐ Email | 2024-03-26 |
+| 5 | Lane A. Watson | [ANDREW_REQUIRED — Lane's address] | ☐ First-class mail ☐ Personal ☐ Email | 2024-05-13 |
 
 #### SERVICE ON ATTORNEYS (if applicable)
 
 | # | Attorney Name | Address | Method | Date |
 |---|--------------|---------|--------|------|
-| 1 | Ronald Berry (Emily's boyfriend — NON-ATTORNEY) | 2160 Garland Drive, Norton Shores, MI 49441 | ☐ First-class mail ☐ Personal ☐ Email | [DATE] |
+| 1 | Ronald Berry (Emily's boyfriend — NON-ATTORNEY) | 2160 Garland Drive, Norton Shores, MI 49441 | ☐ First-class mail ☐ Personal ☐ Email | 2024-04-01 |
 
 #### SERVICE ON COURT/AGENCY (if applicable)
 
@@ -58,13 +58,13 @@ upon the following person(s) by the method(s) indicated:
 
 ### SERVICE METHODS (MCR 2.107)
 
-**☐ First-class mail** — Placed in a sealed envelope with sufficient postage, addressed to the party at the address shown above, and deposited in the United States mail at [CITY], Michigan on [DATE].
+**☐ First-class mail** — Placed in a sealed envelope with sufficient postage, addressed to the party at the address shown above, and deposited in the United States mail at [CITY], Michigan on 2024-12-05.
 
-**☐ Personal service** — Delivered personally to the party named above on [DATE] at [LOCATION].
+**☐ Personal service** — Delivered personally to the party named above on 2024-04-01 at [LOCATION].
 
-**☐ Electronic service (email)** — Transmitted by electronic means to the email address shown above on [DATE] at [TIME], pursuant to MCR 2.107(C)(4).
+**☐ Electronic service (email)** — Transmitted by electronic means to the email address shown above on 2024-04-01 at [TIME], pursuant to MCR 2.107(C)(4).
 
-**☐ Certified mail, return receipt requested** — Placed in a sealed envelope with sufficient postage and certified mail fees prepaid, addressed to the party at the address shown above, and deposited with the United States Postal Service on [DATE]. Tracking No: [TRACKING_NUMBER].
+**☐ Certified mail, return receipt requested** — Placed in a sealed envelope with sufficient postage and certified mail fees prepaid, addressed to the party at the address shown above, and deposited with the United States Postal Service on 2024-04-01. Tracking No: [TRACKING_NUMBER].
 
 ---
 

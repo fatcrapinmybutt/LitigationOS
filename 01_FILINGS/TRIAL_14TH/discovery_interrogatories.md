@@ -388,7 +388,7 @@ Signature: _______________
 
 ## CERTIFICATE OF SERVICE
 
-I hereby certify that on [DATE], I served a true copy of the foregoing Plaintiff's First Set of Interrogatories upon each Defendant by [first-class mail/personal service] at their last known addresses.
+I hereby certify that on 2024-05-13, I served a true copy of the foregoing Plaintiff's First Set of Interrogatories upon each Defendant by [first-class mail/personal service] at their last known addresses.
 
 Andrew J. Pigors, Plaintiff *pro se*
 

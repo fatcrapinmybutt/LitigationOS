@@ -115,4 +115,4 @@
 
 ---
 
-*This chronology was compiled from court records, police reports, clinical records, and the personal knowledge of Andrew James Pigors. All dates are verified against documentary sources except where marked [VERIFY]. This is an append-only document — entries are never deleted, only added or corrected with notation.*
+*This chronology was compiled from court records, police reports, clinical records, and the personal knowledge of Andrew James Pigors. All dates are verified against documentary sources except where marked . This is an append-only document — entries are never deleted, only added or corrected with notation.*

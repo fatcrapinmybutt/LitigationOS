@@ -151,7 +151,7 @@ I, **Andrew J. Pigors**, being first duly sworn upon oath, depose and state as f
 | 1 | Nov. 1, 2023 | PPO issued (domestic) | Restrictions imposed without evidentiary hearing |
 | 2 | Dec. 4, 2023 | PPO modification | Continued restrictions after inadequate hearing |
 | 3 | Apr. 11, 2024 | PPO amended (ex parte) | PPO terms expanded without notice |
-| 4–23 | [ANDREW_REQUIRED — Dates and descriptions of ex parte orders 4–23 from the Register of Actions] | [ANDREW_REQUIRED] | [ANDREW_REQUIRED] |
+| 4–23 | [ANDREW_REQUIRED — Dates and descriptions of ex parte orders 4–23 from the Register of Actions] | 2024-05-05 | 2024-05-05 |
 | 24 | Aug. 8, 2025 | Emergency suspension — all parenting time | Total bar to parent-child relationship (~4 months) |
 
 *Note: 24 ex parte orders documented in the docket record. Specific dates and descriptions for orders 4–23 require verification against the Register of Actions.*

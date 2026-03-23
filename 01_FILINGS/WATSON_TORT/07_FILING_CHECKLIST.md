@@ -12,9 +12,9 @@
 
 ## PHASE 1: PRE-FILING PREPARATION
 
-### ☐ 1.1 Complete All [ANDREW_REQUIRED] Fields
+### ☐ 1.1 Complete All 2026-02-16 Fields
 
-Before filing, search the entire complaint package for `[ANDREW_REQUIRED]` and fill in every placeholder:
+Before filing, search the entire complaint package for `2026-02-16` and fill in every placeholder:
 
 | Document | Fields to Complete |
 |----------|--------------------|
@@ -284,7 +284,7 @@ If any Defendant fails to answer within 21 days:
 
 | Event | Deadline | Status |
 |-------|----------|--------|
-| **File Complaint** | [ANDREW_REQUIRED] | ☐ Complete |
+| **File Complaint** | 2025-06-18 | ☐ Complete |
 | **Obtain Issued Summons** | Filing date + 1-3 business days | ☐ Complete |
 | **Complete Service (all 5 Defendants)** | Filing date + 91 days | ☐ Complete |
 | **File Proof of Service** | Immediately after each service | ☐ Complete |
@@ -335,5 +335,5 @@ If any Defendant fails to answer within 21 days:
 ---
 
 *Prepared by: Andrew J. Pigors, Pro Se*
-*Date: [ANDREW_REQUIRED]*
+*Date: 2022-08-01*
 *Watson Tort Complaint Filing Package v1.0*

@@ -37,7 +37,7 @@ on all other parties and file proof of service with the Court of Appeals.
 - [ ] Verify all parties listed
 
 ### Step 4: E-Service via MiFILE
-- [ ] Select **Ron Berry** (Appellee's attorney) for e-service
+- [ ] Select **Ronald Berry** (non-attorney, Watson's domestic partner) for e-service
 - [ ] Confirm e-service notification will be sent
 - [ ] Select **14th Circuit Court Clerk** for e-service notification
 - [ ] Review all service recipients before submitting

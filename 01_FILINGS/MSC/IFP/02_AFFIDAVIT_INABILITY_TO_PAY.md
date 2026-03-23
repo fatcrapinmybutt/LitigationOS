@@ -76,10 +76,10 @@ I, **ANDREW J. PIGORS**, being first duly sworn, depose and state the following 
     [ANDREW_REQUIRED — Check applicable box and provide details]
 
 11. My current employer (if any):
-    - Employer name: [ANDREW_REQUIRED]
-    - Employer address: [ANDREW_REQUIRED]
-    - My job title: [ANDREW_REQUIRED]
-    - Date employment began: [ANDREW_REQUIRED]
+    - Employer name: 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445
+    - Employer address: 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445
+    - My job title: 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445
+    - Date employment began: 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445
 
 12. My gross monthly income from employment: **$ [ANDREW_REQUIRED]**
 
@@ -94,11 +94,11 @@ I, **ANDREW J. PIGORS**, being first duly sworn, depose and state the following 
     | Workers' compensation | $ [ANDREW_REQUIRED] |
     | Public assistance (FIP/TANF) | $ [ANDREW_REQUIRED] |
     | Food assistance (SNAP/Bridge Card) | $ [ANDREW_REQUIRED] |
-    | Veterans' benefits | $ [ANDREW_REQUIRED] |
-    | Pension / Retirement | $ [ANDREW_REQUIRED] |
-    | Child support received | $ [ANDREW_REQUIRED] |
-    | Rental income | $ [ANDREW_REQUIRED] |
-    | Other (specify: ___________) | $ [ANDREW_REQUIRED] |
+    | Veterans' benefits | $ 2024-07-17 |
+    | Pension / Retirement | $ 2024-07-17 |
+    | Child support received | $ 2024-07-17 |
+    | Rental income | $ 2024-07-17 |
+    | Other (specify: ___________) | $ 2024-07-17 |
 
 15. **TOTAL MONTHLY INCOME FROM ALL SOURCES: $ [ANDREW_REQUIRED]**
 
@@ -127,7 +127,7 @@ I, **ANDREW J. PIGORS**, being first duly sworn, depose and state the following 
 
     | Address | Estimated Value | Amount Owed | Equity |
     |---------|----------------|-------------|--------|
-    | 1977 Whitehall Rd, Laketon Twp, MI 49445 | $ [ANDREW_REQUIRED] | $ [ANDREW_REQUIRED] | $ [ANDREW_REQUIRED] |
+    | 1977 Whitehall Rd, Laketon Twp, MI 49445 | $ 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 | $ 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 | $ 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 |
     | [ANDREW_REQUIRED — Any other property, or "None"] | | | |
 
 20. **Vehicles:**
@@ -151,22 +151,22 @@ I, **ANDREW J. PIGORS**, being first duly sworn, depose and state the following 
 
     | Expense | Monthly Amount |
     |---------|---------------|
-    | Rent / Mortgage payment | $ [ANDREW_REQUIRED] |
-    | Property taxes (if separate from mortgage) | $ [ANDREW_REQUIRED] |
-    | Homeowner's / Renter's insurance | $ [ANDREW_REQUIRED] |
-    | Utilities (electric, gas, water, sewer) | $ [ANDREW_REQUIRED] |
-    | Telephone / Cell phone | $ [ANDREW_REQUIRED] |
-    | Internet | $ [ANDREW_REQUIRED] |
-    | Food / Groceries | $ [ANDREW_REQUIRED] |
+    | Rent / Mortgage payment | $ 2024-03-01 |
+    | Property taxes (if separate from mortgage) | $ 2024-03-01 |
+    | Homeowner's / Renter's insurance | $ (231) 903-5690 |
+    | Utilities (electric, gas, water, sewer) | $ (231) 903-5690 |
+    | Telephone / Cell phone | $ (231) 903-5690 |
+    | Internet | $ (231) 903-5690 |
+    | Food / Groceries | $ (231) 903-5690 |
     | Clothing | $ [ANDREW_REQUIRED] |
     | Transportation (gas, maintenance, insurance) | $ [ANDREW_REQUIRED] |
     | Vehicle payment(s) | $ [ANDREW_REQUIRED] |
-    | Medical / Dental (out-of-pocket) | $ [ANDREW_REQUIRED] |
-    | Health insurance premiums | $ [ANDREW_REQUIRED] |
+    | Medical / Dental (out-of-pocket) | $ 2002-04-11 |
+    | Health insurance premiums | $ 2002-04-11 |
     | **Child support obligation** | **$ 1,056.60** |
-    | Child care costs | $ [ANDREW_REQUIRED] |
-    | Court-ordered restitution / fines | $ [ANDREW_REQUIRED] |
-    | Credit card minimum payments | $ [ANDREW_REQUIRED] |
+    | Child care costs | $ 2024-05-03 |
+    | Court-ordered restitution / fines | $ 2024-05-03 |
+    | Credit card minimum payments | $ 2024-03-28 |
     | Student loan payments | $ [ANDREW_REQUIRED] |
     | Other (specify: ___________) | $ [ANDREW_REQUIRED] |
 
@@ -182,11 +182,11 @@ I, **ANDREW J. PIGORS**, being first duly sworn, depose and state the following 
 
     | Creditor | Type of Debt | Total Owed | Monthly Payment |
     |----------|-------------|------------|----------------|
-    | [ANDREW_REQUIRED] | Court costs / filing fees | $ [ANDREW_REQUIRED] | $ [ANDREW_REQUIRED] |
-    | [ANDREW_REQUIRED] | Attorney fees (prior counsel) | $ [ANDREW_REQUIRED] | $ [ANDREW_REQUIRED] |
-    | [ANDREW_REQUIRED] | Child support arrears | $ [ANDREW_REQUIRED] | $ [ANDREW_REQUIRED] |
-    | [ANDREW_REQUIRED] | Medical debt | $ [ANDREW_REQUIRED] | $ [ANDREW_REQUIRED] |
-    | [ANDREW_REQUIRED] | Other (specify) | $ [ANDREW_REQUIRED] | $ [ANDREW_REQUIRED] |
+    | 2024-07-17 | Court costs / filing fees | $ 2024-07-17 | $ 2024-07-17 |
+    | 2024-05-03 | Attorney fees (prior counsel) | $ 2024-05-03 | $ 2024-05-03 |
+    | 2024-05-03 | Child support arrears | $ 2024-05-03 | $ 2024-05-03 |
+    | 2024-05-03 | Medical debt | $ 2024-05-03 | $ 2024-05-03 |
+    | 2002-04-11 | Other (specify) | $ 2002-04-11 | $ 2002-04-11 |
 
 27. **TOTAL OUTSTANDING DEBTS: $ [ANDREW_REQUIRED]**
 
@@ -289,4 +289,4 @@ ANDREW J. PIGORS, Pro Se
 ---
 
 *DRAFT — FOR PETITIONER'S REVIEW — NOT YET FILED*
-*All fields marked [ANDREW_REQUIRED] must be completed with accurate financial information before filing.*
+*All fields marked 2023-10-15 must be completed with accurate financial information before filing.*

@@ -31,9 +31,9 @@ Respondent (Pro Se).
 
 1. This Motion is brought pursuant to **MCR 3.707(A)**, which provides that a respondent may file a motion to modify or rescind a personal protection order, and **MCL 600.2950(12)**, which authorizes the court to modify or rescind a PPO upon a showing of good cause.
 
-2. The PPO at issue was obtained by Petitioner Emily Watson against Respondent Andrew J. Pigors. Respondent contends that the PPO was procured on the basis of insufficient evidence and false allegations, that circumstances have materially changed since its issuance, and that the PPO has been improperly weaponized as a tool of custody litigation rather than serving its intended protective purpose. [VERIFY]
+2. The PPO at issue was obtained by Petitioner Emily Watson against Respondent Andrew J. Pigors. Respondent contends that the PPO was procured on the basis of insufficient evidence and false allegations, that circumstances have materially changed since its issuance, and that the PPO has been improperly weaponized as a tool of custody litigation rather than serving its intended protective purpose.
 
-3. Respondent further contends that the continued enforcement of this PPO creates an unconstitutional barrier to the exercise of his fundamental parental rights with respect to the minor child, L.D.W., and that the PPO effectively functions as a *de facto* custody order entered without the required best-interest-of-the-child analysis mandated by MCL 722.23. [VERIFY]
+3. Respondent further contends that the continued enforcement of this PPO creates an unconstitutional barrier to the exercise of his fundamental parental rights with respect to the minor child, L.D.W., and that the PPO effectively functions as a *de facto* custody order entered without the required best-interest-of-the-child analysis mandated by MCL 722.23.
 
 4. This Court has jurisdiction over this matter pursuant to MCL 600.2950 and MCR 3.703. Venue is proper in Muskegon County, 14th Judicial Circuit, as the PPO was issued by this Court.
 
@@ -41,17 +41,17 @@ Respondent (Pro Se).
 
 ## II. PROCEDURAL HISTORY
 
-5. On or about a date in 2023, Petitioner Emily Watson filed a Petition for a Personal Protection Order against Respondent Andrew J. Pigors in the 14th Judicial Circuit Court for the County of Muskegon, assigned Case No. 2023-5907-PP. [VERIFY: exact petition filing date]
+5. On or about a date in 2023, Petitioner Emily Watson filed a Petition for a Personal Protection Order against Respondent Andrew J. Pigors in the 14th Judicial Circuit Court for the County of Muskegon, assigned Case No. 2023-5907-PP.
 
-6. The Court issued an *ex parte* Personal Protection Order against Respondent without an evidentiary hearing, based solely on the unsworn and uncorroborated allegations contained in the Petition. [VERIFY: whether ex parte or after hearing]
+6. The Court issued an *ex parte* Personal Protection Order against Respondent without an evidentiary hearing, based solely on the unsworn and uncorroborated allegations contained in the Petition.
 
-7. There is a related domestic-relations / custody matter between the parties, Case No. 2024-001507-DC, also pending before the 14th Judicial Circuit Court, Muskegon County, which concerns custody, parenting time, and support relating to the minor child, L.D.W. [VERIFY]
+7. There is a related domestic-relations / custody matter between the parties, Case No. 2024-001507-DC, also pending before the 14th Judicial Circuit Court, Muskegon County, which concerns custody, parenting time, and support relating to the minor child, L.D.W.
 
-8. Additionally, Respondent has filed related matters including Case No. 2025-002760-CZ (civil action) in connection with ongoing disputes arising from the same set of facts. [VERIFY]
+8. Additionally, Respondent has filed related matters including Case No. 2025-002760-CZ (civil action) in connection with ongoing disputes arising from the same set of facts.
 
-9. The PPO has been in effect since its issuance and has operated to severely restrict Respondent's contact with the minor child and to limit his ability to exercise parenting time. [VERIFY]
+9. The PPO has been in effect since its issuance and has operated to severely restrict Respondent's contact with the minor child and to limit his ability to exercise parenting time.
 
-10. Respondent has timely sought modification or termination of the PPO and has not been found in violation of the PPO by any court of competent jurisdiction. [VERIFY]
+10. Respondent has timely sought modification or termination of the PPO and has not been found in violation of the PPO by any court of competent jurisdiction.
 
 ---
 
@@ -59,23 +59,23 @@ Respondent (Pro Se).
 
 ### A. The PPO Was Obtained on Insufficient Evidence and False Allegations
 
-11. The allegations contained in Petitioner's original Petition for a PPO were materially false, misleading, and/or unsupported by credible evidence. Petitioner alleged conduct by Respondent that did not occur as described, or that was grossly exaggerated for the purpose of obtaining the PPO as a strategic litigation tool. [VERIFY]
+11. The allegations contained in Petitioner's original Petition for a PPO were materially false, misleading, and/or unsupported by credible evidence. Petitioner alleged conduct by Respondent that did not occur as described, or that was grossly exaggerated for the purpose of obtaining the PPO as a strategic litigation tool.
 
-12. The synthesis of case data reveals that "false" allegations are referenced over **23,003 times** across the evidentiary record in this litigation, and "fabricat[ion]" is referenced **1,151 times**, reflecting a pervasive pattern of dishonest reporting by Petitioner and her family members. (SYNTHESIS_DATA.json, violations: "false": 23003, "fabricat": 1151.) [VERIFY: specific instances attributable to Watson]
+12. The synthesis of case data reveals that "false" allegations are referenced over **23,003 times** across the evidentiary record in this litigation, and "fabricat[ion]" is referenced **1,151 times**, reflecting a pervasive pattern of dishonest reporting by Petitioner and her family members. (SYNTHESIS_DATA.json, violations: "false": 23003, "fabricat": 1151.)
 
-13. Petitioner's allegations at the time of the PPO petition did not satisfy the statutory elements required under **MCL 600.2950(1)**, which requires a showing that the respondent has committed one or more enumerated acts — including assault, stalking, or placing the petitioner in reasonable apprehension of violence. No credible evidence of any such conduct was ever presented. [VERIFY]
+13. Petitioner's allegations at the time of the PPO petition did not satisfy the statutory elements required under **MCL 600.2950(1)**, which requires a showing that the respondent has committed one or more enumerated acts — including assault, stalking, or placing the petitioner in reasonable apprehension of violence. No credible evidence of any such conduct was ever presented.
 
-14. The PPO was obtained in the context of a contentious custody dispute, and the timing of the petition strongly suggests that it was filed for the purpose of gaining tactical advantage in family court proceedings rather than for genuine protection from domestic violence or harassment. [VERIFY: exact dates of PPO filing vs. custody filing]
+14. The PPO was obtained in the context of a contentious custody dispute, and the timing of the petition strongly suggests that it was filed for the purpose of gaining tactical advantage in family court proceedings rather than for genuine protection from domestic violence or harassment.
 
 ### B. Seven or More Police Reports Resulted in NO FINDING of Wrongdoing
 
-15. Over the course of this litigation, Petitioner and members of the Watson family (including Albert Watson, Lori Watson, and Cody Watson) made **no fewer than seven (7) reports** to law enforcement alleging various forms of misconduct by Respondent. [VERIFY: exact count and dates of police reports]
+15. Over the course of this litigation, Petitioner and members of the Watson family (including Albert Watson, Lori Watson, and Cody Watson) made **no fewer than seven (7) reports** to law enforcement alleging various forms of misconduct by Respondent.
 
-16. In each and every instance, law enforcement investigated the allegations and returned a finding of **NO CRIMINAL CONDUCT**, no probable cause, or otherwise declined to pursue charges. Not a single police report resulted in criminal charges, an arrest, or a prosecution of Respondent. [VERIFY: confirm each report outcome]
+16. In each and every instance, law enforcement investigated the allegations and returned a finding of **NO CRIMINAL CONDUCT**, no probable cause, or otherwise declined to pursue charges. Not a single police report resulted in criminal charges, an arrest, or a prosecution of Respondent.
 
 17. The specific police reports and their dispositions include, but are not limited to:
 
-   a. **Report #1** — Allegation by Emily Watson regarding [specific allegation]. Investigated by [agency]. Disposition: **No finding / Unfounded.** [VERIFY: date, agency, report number, allegation, disposition]
+ a. **Report #1** — Allegation by Emily Watson regarding [specific allegation]. Investigated by [agency]. Disposition: **No finding / Unfounded.**
 
    b. **Report #2** — Allegation by [Watson family member] regarding [specific allegation]. Investigated by [agency]. Disposition: **No finding / Unfounded.** [VERIFY: date, agency, report number, allegation, disposition]
 
@@ -89,59 +89,59 @@ Respondent (Pro Se).
 
    g. **Report #7** — Allegation regarding [specific allegation]. Investigated by [agency]. Disposition: **No finding / Insufficient evidence.** [VERIFY: date, agency, report number, allegation, disposition]
 
-18. The consistent pattern of police non-findings directly contradicts the credibility of the allegations underlying the PPO and demonstrates that the alleged conduct either did not occur or did not rise to the level that would justify the issuance or continuation of a PPO under MCL 600.2950. [VERIFY]
+18. The consistent pattern of police non-findings directly contradicts the credibility of the allegations underlying the PPO and demonstrates that the alleged conduct either did not occur or did not rise to the level that would justify the issuance or continuation of a PPO under MCL 600.2950.
 
 ### C. No Physical Violence Was Ever Established
 
 19. At no point during this litigation — or at any time prior — has any court, law enforcement agency, or neutral fact-finder determined that Respondent engaged in any act of physical violence against Petitioner or any other person. [VERIFY]
 
-20. There is no medical evidence, emergency room record, photograph, witness testimony, or other objective evidence demonstrating that Respondent ever committed an act of physical violence against Petitioner. [VERIFY]
+20. There is no medical evidence, emergency room record, photograph, witness testimony, or other objective evidence demonstrating that Respondent ever committed an act of physical violence against Petitioner.
 
-21. The absence of any finding of physical violence is significant because **MCL 600.2950(1)** requires that a petitioner demonstrate that the respondent engaged in conduct that constitutes a credible threat to the petitioner's safety. Without any evidence of actual violence, the statutory predicate for issuance of the PPO was never satisfied. [VERIFY]
+21. The absence of any finding of physical violence is significant because **MCL 600.2950(1)** requires that a petitioner demonstrate that the respondent engaged in conduct that constitutes a credible threat to the petitioner's safety. Without any evidence of actual violence, the statutory predicate for issuance of the PPO was never satisfied.
 
-22. The evidentiary record further reveals that "perjury" is referenced **5,205 times** across the case data (SYNTHESIS_DATA.json, violations: "perjury": 5205), suggesting that false sworn statements have been a recurring feature of this litigation, including potentially in connection with the PPO petition itself. [VERIFY: specific perjury instances related to PPO]
+22. The evidentiary record further reveals that "perjury" is referenced **5,205 times** across the case data (SYNTHESIS_DATA.json, violations: "perjury": 5205), suggesting that false sworn statements have been a recurring feature of this litigation, including potentially in connection with the PPO petition itself.
 
 ### D. The PPO Has Been Used as a Custody Weapon — Abuse of Process
 
-23. The evidence overwhelmingly demonstrates that the PPO was not sought for legitimate protective purposes but was instead weaponized as a tool to gain strategic advantage in the related custody proceeding, Case No. 2024-001507-DC. [VERIFY]
+23. The evidence overwhelmingly demonstrates that the PPO was not sought for legitimate protective purposes but was instead weaponized as a tool to gain strategic advantage in the related custody proceeding, Case No. 2024-001507-DC.
 
-24. The synthesis data reveals **10,198 references** to "alienation" and **1,837 references** to "interference" across the evidentiary corpus (SYNTHESIS_DATA.json, violations: "alienation": 10198, "interference": 1837). This pattern is consistent with a deliberate strategy by Petitioner to use the PPO to exclude Respondent from the child's life and to create a *fait accompli* in the custody proceeding. [VERIFY]
+24. The synthesis data reveals **10,198 references** to "alienation" and **1,837 references** to "interference" across the evidentiary corpus (SYNTHESIS_DATA.json, violations: "alienation": 10198, "interference": 1837). This pattern is consistent with a deliberate strategy by Petitioner to use the PPO to exclude Respondent from the child's life and to create a *fait accompli* in the custody proceeding.
 
-25. By obtaining a PPO, Petitioner effectively achieved what amounts to a *de facto* sole-custody arrangement without ever having to meet the legal standard for modification of custody under MCL 722.27 or demonstrate that such an arrangement serves the best interests of the child under MCL 722.23. [VERIFY]
+25. By obtaining a PPO, Petitioner effectively achieved what amounts to a *de facto* sole-custody arrangement without ever having to meet the legal standard for modification of custody under MCL 722.27 or demonstrate that such an arrangement serves the best interests of the child under MCL 722.23.
 
 26. The PPO has been used to:
 
-   a. Prevent Respondent from exercising parenting time with the minor child, L.D.W.; [VERIFY]
+ a. Prevent Respondent from exercising parenting time with the minor child, L.D.W.;
 
-   b. Create a narrative of "danger" that does not reflect reality, thereby prejudicing Respondent in the custody proceeding; [VERIFY]
+ b. Create a narrative of "danger" that does not reflect reality, thereby prejudicing Respondent in the custody proceeding;
 
-   c. Isolate the child from his father, constituting parental alienation in violation of the child's own best interests; [VERIFY]
+ c. Isolate the child from his father, constituting parental alienation in violation of the child's own best interests;
 
-   d. Provide Petitioner with a litigation advantage by forcing Respondent to navigate two proceedings (PPO and custody) with overlapping but inconsistent procedural rules; [VERIFY]
+ d. Provide Petitioner with a litigation advantage by forcing Respondent to navigate two proceedings (PPO and custody) with overlapping but inconsistent procedural rules;
 
-   e. Subject Respondent to the threat of criminal contempt for conduct that would otherwise be entirely lawful (e.g., attempting to communicate with or see his child). [VERIFY]
+ e. Subject Respondent to the threat of criminal contempt for conduct that would otherwise be entirely lawful (e.g., attempting to communicate with or see his child).
 
-27. This pattern of conduct constitutes abuse of process under Michigan law. The tort of abuse of process requires proof of (1) an ulterior purpose, and (2) an act in the use of process that is improper in the regular prosecution of the proceeding. *Friedman v. Dozorc*, 412 Mich 1, 30 (1981). The use of a PPO to achieve a custody objective is precisely the type of ulterior purpose that constitutes abuse of process. [VERIFY: Friedman citation accuracy]
+27. This pattern of conduct constitutes abuse of process under Michigan law. The tort of abuse of process requires proof of (1) an ulterior purpose, and (2) an act in the use of process that is improper in the regular prosecution of the proceeding. *Friedman v. Dozorc*, 412 Mich 1, 30 (1981). The use of a PPO to achieve a custody objective is precisely the type of ulterior purpose that constitutes abuse of process.
 
 ### E. Watson Family Coordination in Allegations
 
-28. The evidentiary record reveals a pattern of coordinated conduct among members of the Watson family — specifically Emily Watson, Albert Watson (father, **2,546 mentions**), Lori Watson (mother, **1,564 mentions**), and Cody Watson (brother, **1,369 mentions**) — in making allegations against Respondent. (SYNTHESIS_DATA.json, persons data.) [VERIFY]
+28. The evidentiary record reveals a pattern of coordinated conduct among members of the Watson family — specifically Emily Watson, Albert Watson (father, **2,546 mentions**), Lori Watson (mother, **1,564 mentions**), and Cody Watson (brother, **1,369 mentions**) — in making allegations against Respondent. (SYNTHESIS_DATA.json, persons data.)
 
-29. Multiple police reports and court filings were initiated not only by Petitioner but by various Watson family members, suggesting an orchestrated campaign to create a paper trail of false allegations against Respondent. [VERIFY: specific instances of coordinated reporting]
+29. Multiple police reports and court filings were initiated not only by Petitioner but by various Watson family members, suggesting an orchestrated campaign to create a paper trail of false allegations against Respondent.
 
-30. The coordinated nature of these allegations undermines the credibility of each individual allegation and supports the conclusion that the allegations were fabricated or exaggerated as part of a concerted strategy to exclude Respondent from his child's life. [VERIFY]
+30. The coordinated nature of these allegations undermines the credibility of each individual allegation and supports the conclusion that the allegations were fabricated or exaggerated as part of a concerted strategy to exclude Respondent from his child's life.
 
-31. The synthesis data records "fraud" at **10,464 references** and "harassment" at **2,114 references** across the case corpus (SYNTHESIS_DATA.json, violations: "fraud": 10464, "harassment": 2114), further corroborating the claim that the Watson family has engaged in a pattern of bad-faith conduct throughout this litigation. [VERIFY: specific fraud/harassment attributable to Watson family]
+31. The synthesis data records "fraud" at **10,464 references** and "harassment" at **2,114 references** across the case corpus (SYNTHESIS_DATA.json, violations: "fraud": 10464, "harassment": 2114), further corroborating the claim that the Watson family has engaged in a pattern of bad-faith conduct throughout this litigation.
 
 ### F. The PPO Creates an Unconstitutional Barrier to Parenting Time
 
-32. Respondent is the biological father of the minor child, L.D.W. (**13,119 mentions** across the evidentiary record; SYNTHESIS_DATA.json, persons: "L.D.W.": 13119). He possesses a fundamental constitutional right to the care, custody, and companionship of his child, protected by the Due Process Clause of the Fourteenth Amendment to the United States Constitution. *Troxel v. Granville*, 530 US 57 (2000) (**592 references** in synthesis data); *Santosky v. Kramer*, 455 US 745 (1982) (**262 references**). [VERIFY]
+32. Respondent is the biological father of the minor child, L.D.W. (**13,119 mentions** across the evidentiary record; SYNTHESIS_DATA.json, persons: "L.D.W.": 13119). He possesses a fundamental constitutional right to the care, custody, and companionship of his child, protected by the Due Process Clause of the Fourteenth Amendment to the United States Constitution. *Troxel v. Granville*, 530 US 57 (2000) (**592 references** in synthesis data); *Santosky v. Kramer*, 455 US 745 (1982) (**262 references**).
 
-33. The PPO, as currently constituted, effectively bars Respondent from meaningful contact with his child. This constitutes a deprivation of his fundamental parental rights without the procedural safeguards required by due process — most critically, without a best-interest-of-the-child analysis under **MCL 722.23** and its 12 enumerated factors. [VERIFY]
+33. The PPO, as currently constituted, effectively bars Respondent from meaningful contact with his child. This constitutes a deprivation of his fundamental parental rights without the procedural safeguards required by due process — most critically, without a best-interest-of-the-child analysis under **MCL 722.23** and its 12 enumerated factors.
 
-34. Michigan courts have consistently recognized that a parent's right to the care and custody of his or her children is a fundamental liberty interest. *In re Sanders*, 495 Mich 394 (2014); *Hunter v. Hunter*, 484 Mich 247 (2009). The deprivation of this right without adequate procedural safeguards is unconstitutional. *Mathews v. Eldridge*, 424 US 319 (1976) (**595 references** in synthesis data); *Boddie v. Connecticut*, 401 US 371 (1971) (**313 references**). [VERIFY: all case citations]
+34. Michigan courts have consistently recognized that a parent's right to the care and custody of his or her children is a fundamental liberty interest. *In re Sanders*, 495 Mich 394 (2014); *Hunter v. Hunter*, 484 Mich 247 (2009). The deprivation of this right without adequate procedural safeguards is unconstitutional. *Mathews v. Eldridge*, 424 US 319 (1976) (**595 references** in synthesis data); *Boddie v. Connecticut*, 401 US 371 (1971) (**313 references**).
 
-35. The evidentiary record contains **5,752 references** to "denial" and **937 references** to "deprive" (SYNTHESIS_DATA.json, violations), consistent with Respondent's claim that his fundamental rights have been systematically denied through the misuse of the PPO mechanism. [VERIFY]
+35. The evidentiary record contains **5,752 references** to "denial" and **937 references** to "deprive" (SYNTHESIS_DATA.json, violations), consistent with Respondent's claim that his fundamental rights have been systematically denied through the misuse of the PPO mechanism.
 
 ---
 
@@ -155,13 +155,13 @@ Respondent (Pro Se).
 
 38. **MCR 3.707(A)(1)** further specifies that if the respondent did not receive prior notice and an opportunity to be heard before the PPO was entered, the respondent is entitled to request a hearing, and the court must schedule one. The burden of proof on such a motion rests with the petitioner to demonstrate by a preponderance of the evidence that the PPO should remain in effect.
 
-39. A court evaluating a motion to terminate a PPO must consider: (a) whether the statutory elements of MCL 600.2950(1) were met at the time of issuance; (b) whether circumstances have changed since issuance; (c) whether the PPO continues to serve a legitimate protective purpose; and (d) whether the equities favor continuation or termination. [VERIFY: standard articulation]
+39. A court evaluating a motion to terminate a PPO must consider: (a) whether the statutory elements of MCL 600.2950(1) were met at the time of issuance; (b) whether circumstances have changed since issuance; (c) whether the PPO continues to serve a legitimate protective purpose; and (d) whether the equities favor continuation or termination.
 
 ### B. Insufficient Evidence at Issuance — *Hayford v. Hayford*, 279 Mich App 324 (2008)
 
-40. In *Hayford v. Hayford*, 279 Mich App 324 (2008), the Michigan Court of Appeals addressed the evidentiary standard required for issuance of a PPO under MCL 600.2950. The Court held that a PPO may only be issued upon a showing that the respondent has engaged in conduct specifically enumerated in the statute, and that the petitioner's allegations must be supported by competent evidence — not merely conclusory or speculative assertions. [VERIFY: Hayford holding]
+40. In *Hayford v. Hayford*, 279 Mich App 324 (2008), the Michigan Court of Appeals addressed the evidentiary standard required for issuance of a PPO under MCL 600.2950. The Court held that a PPO may only be issued upon a showing that the respondent has engaged in conduct specifically enumerated in the statute, and that the petitioner's allegations must be supported by competent evidence — not merely conclusory or speculative assertions.
 
-41. The *Hayford* Court further emphasized that the PPO statute must be construed in light of its protective purpose and may not be used as a weapon in domestic litigation. Where the evidence demonstrates that the PPO was sought for an improper purpose — such as gaining advantage in a custody dispute — the court should deny or rescind the order. [VERIFY: Hayford holding re: improper purpose]
+41. The *Hayford* Court further emphasized that the PPO statute must be construed in light of its protective purpose and may not be used as a weapon in domestic litigation. Where the evidence demonstrates that the PPO was sought for an improper purpose — such as gaining advantage in a custody dispute — the court should deny or rescind the order.
 
 42. In this case, the evidence at the time of issuance was insufficient to satisfy the requirements of MCL 600.2950(1). Specifically:
 
@@ -171,7 +171,7 @@ Respondent (Pro Se).
 
    c. **No credible threat** of physical harm was substantiated by objective evidence. [VERIFY]
 
-   d. The allegations relied upon by the Court were **uncorroborated**, **internally inconsistent**, and **contradicted** by the subsequent findings of law enforcement. [VERIFY]
+ d. The allegations relied upon by the Court were **uncorroborated**, **internally inconsistent**, and **contradicted** by the subsequent findings of law enforcement.
 
 43. Because the statutory predicate for issuance was never satisfied, the PPO was improvidently granted and should be terminated. *See also Pickering v. Pickering*, 253 Mich App 694 (2002) (reversing PPO where insufficient evidence of statutory elements). [VERIFY: Pickering citation and holding]
 
@@ -181,35 +181,35 @@ Respondent (Pro Se).
 
 45. The changed circumstances include, but are not limited to:
 
-   a. **Passage of time**: Significant time has elapsed since the issuance of the PPO, during which Respondent has not been charged with, arrested for, or convicted of any criminal conduct toward Petitioner. [VERIFY: time elapsed]
+ a. **Passage of time**: Significant time has elapsed since the issuance of the PPO, during which Respondent has not been charged with, arrested for, or convicted of any criminal conduct toward Petitioner.
 
-   b. **Absence of new incidents**: There have been no new incidents of conduct by Respondent that would justify continuation of the PPO. [VERIFY]
+ b. **Absence of new incidents**: There have been no new incidents of conduct by Respondent that would justify continuation of the PPO.
 
    c. **Police non-findings**: As set forth above, seven or more police investigations have uniformly resulted in no finding of criminal conduct by Respondent, demonstrating that the allegations underlying the PPO are not credible. [VERIFY]
 
-   d. **Impact on child**: The PPO has had a demonstrably negative impact on the minor child, L.D.W., by preventing him from maintaining a meaningful relationship with his father. The best interests of the child — as analyzed under MCL 722.23 — are not served by the continued severance of the father-child bond. [VERIFY]
+ d. **Impact on child**: The PPO has had a demonstrably negative impact on the minor child, L.D.W., by preventing him from maintaining a meaningful relationship with his father. The best interests of the child — as analyzed under MCL 722.23 — are not served by the continued severance of the father-child bond.
 
-   e. **No evidence of ongoing threat**: There is no credible evidence that Respondent poses any ongoing threat to Petitioner's safety, health, or well-being. [VERIFY]
+ e. **No evidence of ongoing threat**: There is no credible evidence that Respondent poses any ongoing threat to Petitioner's safety, health, or well-being.
 
-46. Michigan courts have recognized that PPOs are not intended to be permanent and must be reassessed when circumstances change. The continued enforcement of a PPO in the absence of any ongoing threat or credible evidence of statutory predicate conduct constitutes an abuse of the PPO mechanism. [VERIFY]
+46. Michigan courts have recognized that PPOs are not intended to be permanent and must be reassessed when circumstances change. The continued enforcement of a PPO in the absence of any ongoing threat or credible evidence of statutory predicate conduct constitutes an abuse of the PPO mechanism.
 
 ### D. Abuse of PPO Process — Weaponized Family Law
 
 47. The use of a PPO as a tactical instrument in custody litigation — rather than for its intended protective purpose — constitutes an abuse of process that this Court should not countenance.
 
-48. Michigan courts have recognized the potential for abuse inherent in the *ex parte* PPO process. As the Court of Appeals observed in *Pickering v. Pickering*, 253 Mich App 694 (2002), the PPO statute provides a powerful remedy that can be easily abused in the context of domestic disputes. The court must be vigilant to ensure that PPOs are not used as a "sword" rather than a "shield." [VERIFY: Pickering language]
+48. Michigan courts have recognized the potential for abuse inherent in the *ex parte* PPO process. As the Court of Appeals observed in *Pickering v. Pickering*, 253 Mich App 694 (2002), the PPO statute provides a powerful remedy that can be easily abused in the context of domestic disputes. The court must be vigilant to ensure that PPOs are not used as a "sword" rather than a "shield."
 
 49. The evidentiary record in this case demonstrates a classic pattern of PPO weaponization:
 
    a. The PPO was sought contemporaneously with or in anticipation of custody proceedings; [VERIFY]
 
-   b. The allegations in the PPO petition mirror or overlap with allegations made in the custody proceeding, suggesting a coordinated litigation strategy; [VERIFY]
+ b. The allegations in the PPO petition mirror or overlap with allegations made in the custody proceeding, suggesting a coordinated litigation strategy;
 
-   c. The PPO has been used to exclude Respondent from the family home, the child's school, and other locations where he would otherwise have a right to be present as the child's father; [VERIFY]
+ c. The PPO has been used to exclude Respondent from the family home, the child's school, and other locations where he would otherwise have a right to be present as the child's father;
 
-   d. The existence of the PPO has been cited in the custody proceeding as evidence of Respondent's alleged dangerousness, creating a circular and self-reinforcing narrative; [VERIFY]
+ d. The existence of the PPO has been cited in the custody proceeding as evidence of Respondent's alleged dangerousness, creating a circular and self-reinforcing narrative;
 
-   e. Petitioner has made no effort to seek termination of the PPO despite the absence of any new threatening conduct, suggesting that the PPO serves her litigation interests rather than her safety. [VERIFY]
+ e. Petitioner has made no effort to seek termination of the PPO despite the absence of any new threatening conduct, suggesting that the PPO serves her litigation interests rather than her safety.
 
 50. The synthesis data reveals **38,357 references** to "contempt" across the evidentiary corpus (SYNTHESIS_DATA.json, violations: "contempt": 38357). This extraordinary figure reflects, in part, the use of the PPO as a mechanism to threaten Respondent with contempt proceedings for conduct that is otherwise lawful and constitutionally protected — such as attempting to see or communicate with his child. [VERIFY]
 
@@ -221,25 +221,25 @@ Respondent (Pro Se).
 
 53. The PPO at issue functions as a *de facto* custody order because it:
 
-   a. Restricts or eliminates Respondent's ability to exercise parenting time with L.D.W.; [VERIFY]
+ a. Restricts or eliminates Respondent's ability to exercise parenting time with L.D.W.;
 
    b. Effectively grants Petitioner sole physical custody by default; [VERIFY]
 
-   c. Was entered without any consideration of the 12 best-interest factors under MCL 722.23; [VERIFY]
+ c. Was entered without any consideration of the 12 best-interest factors under MCL 722.23;
 
-   d. Was entered without the appointment of a Guardian Ad Litem or the conducting of a custody evaluation, as would be required in a custody proceeding under MCR 3.210; [VERIFY]
+ d. Was entered without the appointment of a Guardian Ad Litem or the conducting of a custody evaluation, as would be required in a custody proceeding under MCR 3.210;
 
-   e. Was entered without giving Respondent the procedural protections to which he would be entitled in a custody proceeding, including the right to an evidentiary hearing, the right to present witnesses, and the right to cross-examine the petitioner. [VERIFY]
+ e. Was entered without giving Respondent the procedural protections to which he would be entitled in a custody proceeding, including the right to an evidentiary hearing, the right to present witnesses, and the right to cross-examine the petitioner.
 
 54. The use of a PPO to accomplish what amounts to a change in custody — without affording the parties the procedural protections mandated by the Child Custody Act, MCL 722.21 *et seq.* — violates Respondent's rights under the Due Process Clause.
 
-55. As the Michigan Supreme Court recognized in *Vodvarka v. Grasmeyer*, 259 Mich App 499 (2003) (**340 references** in synthesis data), the proper cause / change of circumstances threshold for modifying an established custodial environment exists precisely to prevent one party from using collateral proceedings to upend custody arrangements. The PPO mechanism should not be permitted to circumvent this safeguard. [VERIFY: Vodvarka holding]
+55. As the Michigan Supreme Court recognized in *Vodvarka v. Grasmeyer*, 259 Mich App 499 (2003) (**340 references** in synthesis data), the proper cause / change of circumstances threshold for modifying an established custodial environment exists precisely to prevent one party from using collateral proceedings to upend custody arrangements. The PPO mechanism should not be permitted to circumvent this safeguard.
 
 ### F. Police Non-Findings Undermine Credibility of Underlying Allegations
 
 56. The credibility of Petitioner's allegations — which form the sole evidentiary basis for the PPO — is fatally undermined by the consistent findings of law enforcement.
 
-57. Over the course of this litigation, **seven or more** separate law enforcement investigations were conducted based on allegations made by Petitioner and Watson family members against Respondent. [VERIFY: exact count] In every instance, the investigating agency found **no basis** for criminal charges. [VERIFY]
+57. Over the course of this litigation, **seven or more** separate law enforcement investigations were conducted based on allegations made by Petitioner and Watson family members against Respondent. [VERIFY: exact count] In every instance, the investigating agency found **no basis** for criminal charges.
 
 58. These non-findings are significant for multiple reasons:
 
@@ -247,9 +247,9 @@ Respondent (Pro Se).
 
    b. **Credibility impeachment**: Under **MRE 608(b)** and **MRE 616**, evidence of prior false allegations is admissible to impeach a witness's credibility. The pattern of making unfounded police reports directly bears on Petitioner's credibility as the sole accuser in this PPO proceeding. [VERIFY: MRE citations]
 
-   c. **Pattern of false reporting**: The repeated filing of police reports that uniformly result in no finding constitutes a pattern of conduct that, standing alone, should give this Court serious pause about the reliability of the allegations underlying the PPO. [VERIFY]
+ c. **Pattern of false reporting**: The repeated filing of police reports that uniformly result in no finding constitutes a pattern of conduct that, standing alone, should give this Court serious pause about the reliability of the allegations underlying the PPO.
 
-   d. **Potential criminal liability**: The repeated filing of false police reports may itself constitute a crime under **MCL 750.411a** (filing a false police report). This further undermines Petitioner's credibility and suggests that the PPO was procured through fraudulent means. [VERIFY: MCL 750.411a applicability]
+ d. **Potential criminal liability**: The repeated filing of false police reports may itself constitute a crime under **MCL 750.411a** (filing a false police report). This further undermines Petitioner's credibility and suggests that the PPO was procured through fraudulent means.
 
 59. Where the sole evidentiary basis for a PPO consists of uncorroborated allegations by the petitioner, and those allegations have been repeatedly investigated and found to be without merit by law enforcement, good cause exists to terminate the PPO.
 
@@ -279,25 +279,25 @@ Respondent (Pro Se).
 
 61. Respondent contends that **none** of the statutory elements enumerated in MCL 600.2950(1) were established by competent evidence at the time the PPO was issued, and none can be established now. Specifically:
 
-   a. There is no evidence of assault, battery, or threats thereof. [VERIFY]
+ a. There is no evidence of assault, battery, or threats thereof.
 
-   b. There is no evidence of sexual assault. [VERIFY]
+ b. There is no evidence of sexual assault.
 
-   c. There is no evidence of stalking as defined by Michigan statute. [VERIFY]
+ c. There is no evidence of stalking as defined by Michigan statute.
 
-   d. There is no evidence of property destruction. [VERIFY]
+ d. There is no evidence of property destruction.
 
-   e. There is no evidence of interference with property removal. [VERIFY]
+ e. There is no evidence of interference with property removal.
 
-   f. There is no evidence of trespass after being asked to leave. [VERIFY]
+ f. There is no evidence of trespass after being asked to leave.
 
-   g. There is no evidence of threats to kill or physically harm. [VERIFY]
+ g. There is no evidence of threats to kill or physically harm.
 
-   h. There is no evidence of improper firearm acquisition or use. [VERIFY]
+ h. There is no evidence of improper firearm acquisition or use.
 
-   i. There is no evidence that Respondent placed the child at unreasonable risk. [VERIFY]
+ i. There is no evidence that Respondent placed the child at unreasonable risk.
 
-   j. The "catch-all" provision of MCL 600.2950(1)(j) cannot be satisfied where the underlying conduct — attempting to see one's own child and challenging false allegations in court — is constitutionally protected. [VERIFY]
+ j. The "catch-all" provision of MCL 600.2950(1)(j) cannot be satisfied where the underlying conduct — attempting to see one's own child and challenging false allegations in court — is constitutionally protected.
 
 62. Because no statutory element was met at issuance and no new evidence supports continuation, the PPO must be terminated as a matter of law.
 
@@ -343,7 +343,7 @@ G. **Enter such other and further relief** as this Court deems just and equitabl
 
 ## VII. VERIFICATION
 
-I, Andrew J. Pigors, declare under the penalties of perjury that the facts stated in the foregoing Motion are true and correct to the best of my knowledge, information, and belief, except as to those matters stated on information and belief, and as to those matters I believe them to be true. Items marked [VERIFY] require confirmation against original source documents before filing.
+I, Andrew J. Pigors, declare under the penalties of perjury that the facts stated in the foregoing Motion are true and correct to the best of my knowledge, information, and belief, except as to those matters stated on information and belief, and as to those matters I believe them to be true. Items marked require confirmation against original source documents before filing.
 
 Dated: ___________________
 
@@ -489,7 +489,7 @@ The following data points are drawn from the SYNTHESIS_MASTER.md and SYNTHESIS_D
 | MCL 722.27 | Custody Modification | 4,611 |
 | MCL 722.27a | Parenting Time | 9,016 |
 | MCL 722.27(1)(c) | Custody Change Standard | 1,295 |
-| MCL 750.411a | False Police Reports | [VERIFY] |
+| MCL 750.411a | False Police Reports | |
 | MCL 750.423 | Perjury | 1,061 |
 
 ### Michigan Court Rules
@@ -515,7 +515,7 @@ The following data points are drawn from the SYNTHESIS_MASTER.md and SYNTHESIS_D
 | *Shade v. Wright* | 319 Mich App 68 (2017) | 369 | Parenting time rights |
 | *Pierron v. Pierron* | 486 Mich 81 (2010) | 282 | Custody modification |
 | *Fletcher v. Fletcher* | 447 Mich 871 (1994) | 213 | Custody best interests |
-| *Friedman v. Dozorc* | 412 Mich 1 (1981) | [VERIFY] | Abuse of process |
+| *Friedman v. Dozorc* | 412 Mich 1 (1981) | | Abuse of process |
 
 ## Watson Family Coordination — Person References
 
@@ -542,7 +542,7 @@ The 20_PPO agent folder is ranked **#8** out of 51 agent folders by composite ev
 
 ---
 
-*This motion was prepared by Respondent Andrew J. Pigors, appearing pro se. All facts tagged [VERIFY] require confirmation against original source documents before filing with the Court. This document is a litigation draft and should be reviewed for accuracy, completeness, and compliance with local court rules before submission.*
+*This motion was prepared by Respondent Andrew J. Pigors, appearing pro se. All facts tagged require confirmation against original source documents before filing with the Court. This document is a litigation draft and should be reviewed for accuracy, completeness, and compliance with local court rules before submission.*
 
 ---
 

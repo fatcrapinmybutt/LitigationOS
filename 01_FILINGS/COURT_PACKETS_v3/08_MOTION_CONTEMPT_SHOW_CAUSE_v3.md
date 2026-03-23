@@ -73,13 +73,13 @@ In support of this Motion, Father states as follows:
 
    a. **Outright denial of court-ordered parenting time** on multiple specific occasions [VERIFY — dates and circumstances];
 
-   b. **Interference with scheduled parenting time** through unilateral cancellation, last-minute changes, and refusal to produce the child L.D.W. at designated exchange times and locations [VERIFY];
+ b. **Interference with scheduled parenting time** through unilateral cancellation, last-minute changes, and refusal to produce the child L.D.W. at designated exchange times and locations ;
 
-   c. **Failure to comply with specific provisions** of the parenting time order, including but not limited to holiday schedules, vacation time, and regular weekly/biweekly schedules [VERIFY];
+ c. **Failure to comply with specific provisions** of the parenting time order, including but not limited to holiday schedules, vacation time, and regular weekly/biweekly schedules ;
 
    d. **Active obstruction of the parent-child relationship** through parental alienation tactics designed to undermine Father's relationship with L.D.W. [VERIFY];
 
-   e. **Coordination with Watson family members** — specifically Albert Watson, Lori Watson, and Cody Watson — to effectuate the denial, interference, and obstruction of Father's parenting time [VERIFY].
+ e. **Coordination with Watson family members** — specifically Albert Watson, Lori Watson, and Cody Watson — to effectuate the denial, interference, and obstruction of Father's parenting time .
 
 ### C. Relief Sought
 
@@ -119,7 +119,7 @@ In support of this Motion, Father states as follows:
 
    c. Mother's own references to the orders in communications and court filings [VERIFY];
 
-   d. Mother's selective compliance with certain provisions of the orders while violating others, demonstrating knowledge of the orders' requirements [VERIFY].
+ d. Mother's selective compliance with certain provisions of the orders while violating others, demonstrating knowledge of the orders' requirements .
 
 ### C. Specific Instances of Denied Parenting Time
 
@@ -131,7 +131,7 @@ In support of this Motion, Father states as follows:
 
 10. Father made reasonable efforts to exercise his parenting time, including [VERIFY — describe Father's efforts to comply with the order and exercise parenting time].
 
-11. Mother had no lawful justification for denying this parenting time. No emergency existed, no court order suspended the parenting time schedule, and no legitimate basis existed for Mother's unilateral decision to withhold the child from Father [VERIFY].
+11. Mother had no lawful justification for denying this parenting time. No emergency existed, no court order suspended the parenting time schedule, and no legitimate basis existed for Mother's unilateral decision to withhold the child from Father .
 
 #### Instance 2: [VERIFY DATE — likely on or about April 11, 2024]
 
@@ -232,11 +232,11 @@ In support of this Motion, Father states as follows:
 
    a. **Decision-Making Authority:** Mother has made unilateral decisions regarding L.D.W.'s [VERIFY — education, healthcare, religious upbringing, extracurricular activities] without consulting Father as required by the custody order [VERIFY — whether joint legal custody exists and what provisions govern decision-making].
 
-   b. **Information Sharing:** Mother has failed to share information about L.D.W.'s [VERIFY — school records, medical records, activities, significant events] as required by court order or the Friend of the Court guidelines [VERIFY].
+ b. **Information Sharing:** Mother has failed to share information about L.D.W.'s [VERIFY — school records, medical records, activities, significant events] as required by court order or the Friend of the Court guidelines .
 
    c. **Relocation/Residence Changes:** [VERIFY — whether Mother has changed residence without proper notice or in violation of any order].
 
-   d. **Enrollment in Activities:** Mother has enrolled L.D.W. in activities that conflict with Father's parenting time without prior consultation or court approval [VERIFY].
+ d. **Enrollment in Activities:** Mother has enrolled L.D.W. in activities that conflict with Father's parenting time without prior consultation or court approval .
 
 ### F. Watson Family Interference
 
@@ -276,13 +276,13 @@ In support of this Motion, Father states as follows:
 
 39. Mother's contemptuous conduct has caused and continues to cause significant harm to L.D.W. (referenced 13,119 times in the case record), including:
 
-   a. **Disruption of the parent-child bond** between L.D.W. and Father, resulting in diminished attachment, trust, and emotional security [VERIFY];
+ a. **Disruption of the parent-child bond** between L.D.W. and Father, resulting in diminished attachment, trust, and emotional security ;
 
    b. **Exposure to loyalty conflicts** as L.D.W. is placed in the untenable position of choosing between parents [VERIFY];
 
-   c. **Psychological harm** resulting from the alienation tactics employed by Mother and the Watson family, including denigration of Father, restriction of contact, and undermining of Father's parental authority [VERIFY];
+ c. **Psychological harm** resulting from the alienation tactics employed by Mother and the Watson family, including denigration of Father, restriction of contact, and undermining of Father's parental authority ;
 
-   d. **Loss of developmental benefits** that come from maintaining a close and continuous relationship with both parents, as recognized by MCL 722.23 and the Michigan public policy favoring joint custody and shared parenting [VERIFY];
+ d. **Loss of developmental benefits** that come from maintaining a close and continuous relationship with both parents, as recognized by MCL 722.23 and the Michigan public policy favoring joint custody and shared parenting ;
 
    e. **Normalization of defiance** of court authority, teaching L.D.W. that court orders can be ignored with impunity [VERIFY].
 
@@ -300,7 +300,7 @@ In support of this Motion, Father states as follows:
 
    e. Documenting each violation and providing Mother with written notice of the specific provisions being violated [VERIFY].
 
-41. Despite these good-faith efforts, Mother has continued to violate the parenting time orders without remorse, without apology, and without any indication that she intends to comply in the future [VERIFY].
+41. Despite these good-faith efforts, Mother has continued to violate the parenting time orders without remorse, without apology, and without any indication that she intends to comply in the future .
 
 ---
 
@@ -332,9 +332,9 @@ MCR 3.606(A)-(B) [VERIFY — exact text of current rule].
 
 MCL 600.1701(a)-(g) [VERIFY — exact text of relevant subsections].
 
-46. The purpose of civil contempt is not punitive but **coercive** — it is designed to compel compliance with a court order and to vindicate the authority of the court. *See In re Contempt of Robertson*, 209 Mich App 433, 436; 531 NW2d 763 (1995) [VERIFY].
+46. The purpose of civil contempt is not punitive but **coercive** — it is designed to compel compliance with a court order and to vindicate the authority of the court. *See In re Contempt of Robertson*, 209 Mich App 433, 436; 531 NW2d 763 (1995) .
 
-47. In a civil contempt proceeding, the contemnor holds the "keys to the jail" — she can purge herself of contempt by complying with the court's order. *See In re Contempt of Dougherty*, 429 Mich at 93 [VERIFY].
+47. In a civil contempt proceeding, the contemnor holds the "keys to the jail" — she can purge herself of contempt by complying with the court's order. *See In re Contempt of Dougherty*, 429 Mich at 93 .
 
 ### C. MCL 722.27a(7) — Parenting Time Enforcement
 
@@ -364,13 +364,13 @@ MCL 722.27a(7)(a)-(f) [VERIFY — exact text of current statute].
 
 #### Element 1: A Clear and Unambiguous Court Order Existed
 
-51. There must be a court order that is clear, specific, and unambiguous in its terms. The order must be sufficiently definite that the person to whom it is directed can ascertain what conduct is required or prohibited. *See In re Contempt of Dougherty*, 429 Mich at 92 [VERIFY].
+51. There must be a court order that is clear, specific, and unambiguous in its terms. The order must be sufficiently definite that the person to whom it is directed can ascertain what conduct is required or prohibited. *See In re Contempt of Dougherty*, 429 Mich at 92 .
 
 52. Here, this Court's parenting time orders specify the dates, times, and conditions of Father's parenting time with L.D.W. [VERIFY — describe the specificity of the orders]. The orders are clear and leave no room for reasonable disagreement about what is required of Mother.
 
 #### Element 2: The Respondent Had Knowledge of the Order
 
-53. The respondent must have had actual knowledge of the court order. Knowledge may be established by proof of personal service, presence in court when the order was entered, or other circumstances demonstrating actual awareness. *See Dunn v. Detroit Inter-Insurance Exchange*, [VERIFY — citation]; *In re Contempt of Henry*, 282 Mich App at 668 [VERIFY].
+53. The respondent must have had actual knowledge of the court order. Knowledge may be established by proof of personal service, presence in court when the order was entered, or other circumstances demonstrating actual awareness. *See Dunn v. Detroit Inter-Insurance Exchange*, [VERIFY — citation]; *In re Contempt of Henry*, 282 Mich App at 668 .
 
 54. Mother had actual knowledge of all parenting time orders at issue, as established by the facts set forth in Section III.B above.
 
@@ -382,17 +382,17 @@ MCL 722.27a(7)(a)-(f) [VERIFY — exact text of current statute].
 
 #### Element 4: The Violation Was Willful
 
-57. The violation must be willful — that is, the respondent must have had the ability to comply but chose not to do so. *See In re Contempt of Henry*, 282 Mich App at 668 [VERIFY]. Willfulness may be inferred from the totality of the circumstances, including the pattern and frequency of violations, the absence of legitimate justification, and the respondent's failure to take reasonable steps to ensure compliance.
+57. The violation must be willful — that is, the respondent must have had the ability to comply but chose not to do so. *See In re Contempt of Henry*, 282 Mich App at 668 . Willfulness may be inferred from the totality of the circumstances, including the pattern and frequency of violations, the absence of legitimate justification, and the respondent's failure to take reasonable steps to ensure compliance.
 
 58. Mother's violations are plainly willful, as demonstrated by:
 
    a. **The sheer number of violations** — 17+ documented instances is not the product of inadvertence or miscommunication [VERIFY];
 
-   b. **The pattern of violations** — the violations occur consistently and across different types of parenting time (regular, holiday, vacation), demonstrating a deliberate strategy [VERIFY];
+ b. **The pattern of violations** — the violations occur consistently and across different types of parenting time (regular, holiday, vacation), demonstrating a deliberate strategy ;
 
-   c. **The coordination with the Watson family** — the involvement of Albert Watson, Lori Watson, and Cody Watson in the interference pattern demonstrates planning and premeditation [VERIFY];
+ c. **The coordination with the Watson family** — the involvement of Albert Watson, Lori Watson, and Cody Watson in the interference pattern demonstrates planning and premeditation ;
 
-   d. **Mother's selective compliance** — Mother complies with court orders that benefit her while violating those that require cooperation with Father, demonstrating that she has the ability to comply but chooses not to [VERIFY];
+ d. **Mother's selective compliance** — Mother complies with court orders that benefit her while violating those that require cooperation with Father, demonstrating that she has the ability to comply but chooses not to ;
 
    e. **Mother's failure to offer justification** — Mother has not identified any legitimate emergency, safety concern, or other good-cause basis for her noncompliance [VERIFY — or describe any justifications Mother has offered and explain why they are pretextual];
 
@@ -416,7 +416,7 @@ MCL 722.27a(7)(a)-(f) [VERIFY — exact text of current statute].
 
 ### B. Mother Cannot Establish an Inability to Comply
 
-60. Once Father establishes the prima facie case for contempt, the burden shifts to Mother to demonstrate that she was unable to comply with the parenting time orders despite making reasonable, good-faith efforts to do so. *See In re Contempt of Henry*, 282 Mich App at 668 [VERIFY].
+60. Once Father establishes the prima facie case for contempt, the burden shifts to Mother to demonstrate that she was unable to comply with the parenting time orders despite making reasonable, good-faith efforts to do so. *See In re Contempt of Henry*, 282 Mich App at 668 .
 
 61. Mother cannot meet this burden because:
 
@@ -446,7 +446,7 @@ MCL 722.27a(7)(a)-(f) [VERIFY — exact text of current statute].
 
 ### D. Contempt Sanctions Must Be Coercive, Not Merely Symbolic
 
-65. The purpose of civil contempt sanctions is to coerce compliance with court orders. *See In re Contempt of Robertson*, 209 Mich App at 436 [VERIFY]. When prior sanctions have proven insufficient to achieve compliance, the court must consider escalating the severity of sanctions to ensure that the contemnor understands that compliance is not optional.
+65. The purpose of civil contempt sanctions is to coerce compliance with court orders. *See In re Contempt of Robertson*, 209 Mich App at 436 . When prior sanctions have proven insufficient to achieve compliance, the court must consider escalating the severity of sanctions to ensure that the contemnor understands that compliance is not optional.
 
 66. In this case, the mere threat of contempt has proven insufficient to deter Mother's violations. The violations have continued and escalated despite [VERIFY — describe any prior warnings, admonishments, or sanctions imposed by the court]. The court must therefore impose sanctions of sufficient magnitude to compel future compliance.
 
@@ -476,7 +476,7 @@ MCL 722.27a(7)(a)-(f) [VERIFY — exact text of current statute].
 
 ### G. Mother's Conduct Constitutes Parental Alienation
 
-73. The pattern of conduct described herein constitutes **parental alienation** as recognized by Michigan courts. Parental alienation occurs when one parent engages in a sustained campaign to undermine, damage, or destroy the child's relationship with the other parent. *See Shade v. Wright*, 291 Mich App at 31 [VERIFY].
+73. The pattern of conduct described herein constitutes **parental alienation** as recognized by Michigan courts. Parental alienation occurs when one parent engages in a sustained campaign to undermine, damage, or destroy the child's relationship with the other parent. *See Shade v. Wright*, 291 Mich App at 31 .
 
 74. The hallmarks of parental alienation are present in this case:
 
@@ -656,7 +656,7 @@ I, Andrew J. Pigors, Plaintiff in the above-captioned matter, do hereby verify u
 
 3. This Motion is filed in good faith and is not made for the purpose of delay, harassment, or any other improper purpose. It is filed solely for the purpose of enforcing this Court's orders and protecting my constitutional right to a relationship with my child, L.D.W.
 
-4. I have made reasonable efforts to verify all factual assertions. Statements marked [VERIFY] indicate matters that require confirmation from the official record or additional documentation and will be supported with exhibits at the hearing on the Order to Show Cause.
+4. I have made reasonable efforts to verify all factual assertions. Statements marked indicate matters that require confirmation from the official record or additional documentation and will be supported with exhibits at the hearing on the Order to Show Cause.
 
 5. I understand that making false statements in a court filing may subject me to penalties for perjury under MCL 750.423 and sanctions under MCR 1.109(E) and MCR 2.114.
 
@@ -706,7 +706,7 @@ Andrew J. Pigors, *Pro Se*
 | MCR 3.606 | Contempt in domestic relations cases | Primary procedural authority |
 | MCR 3.606(A) | Definition of contempt | Elements of the claim |
 | MCR 3.606(B) | Proof requirements | Burden of proof and shifting |
-| MCR 3.208 | Friend of the Court enforcement | FOC involvement [VERIFY] |
+| MCR 3.208 | Friend of the Court enforcement | FOC involvement |
 | MCR 1.109(E) | Verification requirements | Filing obligations |
 | MCR 2.114 | Signatures and verification | Good faith certification |
 | MCR 2.119 | Motion practice | Procedural requirements |
@@ -737,11 +737,11 @@ Andrew J. Pigors, *Pro Se*
 |------|----------|-------------------|
 | *Shade v. Wright* | 291 Mich App 17; 805 NW2d 1 (2010) | Parenting time enforcement; alienation |
 | *Vodvarka v. Grasmeyer* | 259 Mich App 499; 675 NW2d 847 (2003) | Parenting time modification; best interest findings |
-| *Pierron v. Pierron* | 486 Mich 81; 782 NW2d 480 (2010) | Enforcement of parenting time [VERIFY] |
+| *Pierron v. Pierron* | 486 Mich 81; 782 NW2d 480 (2010) | Enforcement of parenting time |
 | *Fletcher v. Fletcher* | 447 Mich 871; 526 NW2d 889 (1994) | Abuse of discretion in custody |
-| *In re Contempt of Dougherty* | 429 Mich 81; 413 NW2d 392 (1987) | Elements of contempt [VERIFY] |
-| *In re Contempt of Henry* | 282 Mich App 656; 765 NW2d 44 (2009) | Burden shifting; willfulness [VERIFY] |
-| *In re Contempt of Robertson* | 209 Mich App 433; 531 NW2d 763 (1995) | Coercive purpose of civil contempt [VERIFY] |
+| *In re Contempt of Dougherty* | 429 Mich 81; 413 NW2d 392 (1987) | Elements of contempt |
+| *In re Contempt of Henry* | 282 Mich App 656; 765 NW2d 44 (2009) | Burden shifting; willfulness |
+| *In re Contempt of Robertson* | 209 Mich App 433; 531 NW2d 763 (1995) | Coercive purpose of civil contempt |
 | *Lieberman v. Orr* | [VERIFY — citation] | [VERIFY — holding] |
 | *Dean v. Tucker* | [VERIFY — citation] | [VERIFY — holding] |
 | *Hunter v. Hunter* | [VERIFY — citation] | [VERIFY — holding] |
@@ -798,7 +798,7 @@ Dated: ____________________
 
 ---
 
-*This document was prepared by Plaintiff Andrew J. Pigors, proceeding pro se. All factual assertions marked [VERIFY] require confirmation from the official record or additional documentation prior to filing. All legal citations should be verified for accuracy and current validity through an authoritative legal research service prior to submission to the Court. This Motion should be accompanied by a filing fee [VERIFY — current filing fee amount for contempt motions in Muskegon County] or a fee waiver request if applicable.*
+*This document was prepared by Plaintiff Andrew J. Pigors, proceeding pro se. All factual assertions marked require confirmation from the official record or additional documentation prior to filing. All legal citations should be verified for accuracy and current validity through an authoritative legal research service prior to submission to the Court. This Motion should be accompanied by a filing fee [VERIFY — current filing fee amount for contempt motions in Muskegon County] or a fee waiver request if applicable.*
 
 ---
 

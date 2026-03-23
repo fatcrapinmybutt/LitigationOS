@@ -318,7 +318,7 @@ In *In re Contempt of Dougherty*, 429 Mich 81 (1987), this Court established the
 
 Petitioner was incarcerated for **59+ cumulative days** on civil contempt findings. These incarcerations were effected without full compliance with the *Dougherty* requirements.
 
-[ANDREW_REQUIRED: Identify 2-3 specific contempt hearings with dates and describe the specific procedural deficiencies — e.g., "On [date], Petitioner was found in contempt and jailed without being given adequate notice of the specific conduct alleged" or "The purge condition required payment of $X, which was beyond Petitioner's ability to pay given his incarceration-induced unemployment."]
+[ANDREW_REQUIRED: Identify 2-3 specific contempt hearings with dates and describe the specific procedural deficiencies — e.g., "On 2024-07-01, Petitioner was found in contempt and jailed without being given adequate notice of the specific conduct alleged" or "The purge condition required payment of $X, which was beyond Petitioner's ability to pay given his incarceration-induced unemployment."]
 
 ### C. The Consequences Were Severe and Irreversible
 
