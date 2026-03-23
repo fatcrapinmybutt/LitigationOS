@@ -1,0 +1,436 @@
+{
+  "_generated": "2026-03-23T00:55:04.059778+00:00",
+  "_generator": "temp/_db_central.py",
+  "_total_databases": 47,
+  "databases": {
+    "brain_authority_brain": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\brains\\authority_brain.db",
+      "role": "brain",
+      "size_bytes": 69771264,
+      "size_mb": 66.54,
+      "tables": 36,
+      "wal_mode": false,
+      "last_modified": "2026-03-22T19:54:15.006773+00:00"
+    },
+    "brain_chat_intelligence_brain": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\brains\\chat_intelligence_brain.db",
+      "role": "brain",
+      "size_bytes": 934588416,
+      "size_mb": 891.29,
+      "tables": 8,
+      "wal_mode": true,
+      "last_modified": "2026-03-23T00:55:01.984484+00:00"
+    },
+    "brain_claims_brain": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\brains\\claims_brain.db",
+      "role": "brain",
+      "size_bytes": 14929920,
+      "size_mb": 14.24,
+      "tables": 9,
+      "wal_mode": false,
+      "last_modified": "2026-03-10T15:26:05.076287+00:00"
+    },
+    "brain_contradictions": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\brains\\contradictions.db",
+      "role": "brain",
+      "size_bytes": 4214784,
+      "size_mb": 4.02,
+      "tables": 5,
+      "wal_mode": false,
+      "last_modified": "2026-03-22T19:17:21.282739+00:00"
+    },
+    "brain_entity_brain": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\brains\\entity_brain.db",
+      "role": "brain",
+      "size_bytes": 10686464,
+      "size_mb": 10.19,
+      "tables": 8,
+      "wal_mode": false,
+      "last_modified": "2026-03-10T15:26:13.591694+00:00"
+    },
+    "brain_interpretation_brain": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\brains\\interpretation_brain.db",
+      "role": "brain",
+      "size_bytes": 359968768,
+      "size_mb": 343.29,
+      "tables": 30,
+      "wal_mode": false,
+      "last_modified": "2026-03-10T20:32:13.946157+00:00"
+    },
+    "brain_narrative_brain": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\brains\\narrative_brain.db",
+      "role": "brain",
+      "size_bytes": 273362944,
+      "size_mb": 260.7,
+      "tables": 40,
+      "wal_mode": false,
+      "last_modified": "2026-03-10T20:32:14.008658+00:00"
+    },
+    "court_forms": {
+      "path": "C:\\Users\\andre\\LitigationOS\\court_forms.db",
+      "role": "reference",
+      "size_bytes": 163840,
+      "size_mb": 0.16,
+      "tables": 7,
+      "wal_mode": false,
+      "last_modified": "2026-03-22T01:42:08.286966+00:00"
+    },
+    "jurisdiction_14th_circuit_civil": {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_14th_circuit_civil.db",
+      "role": "jurisdiction",
+      "size_bytes": 32768,
+      "size_mb": 0.03,
+      "tables": 7,
+      "wal_mode": true,
+      "last_modified": "2026-03-17T14:50:49.937170+00:00"
+    },
+    "jurisdiction_14th_circuit_family": {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_14th_circuit_family.db",
+      "role": "jurisdiction",
+      "size_bytes": 45056,
+      "size_mb": 0.04,
+      "tables": 8,
+      "wal_mode": true,
+      "last_modified": "2026-03-17T14:50:49.890297+00:00"
+    },
+    "jurisdiction_coa": {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_coa.db",
+      "role": "jurisdiction",
+      "size_bytes": 36864,
+      "size_mb": 0.04,
+      "tables": 8,
+      "wal_mode": true,
+      "last_modified": "2026-03-17T14:50:50.109042+00:00"
+    },
+    "jurisdiction_federal_wdmi": {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_federal_wdmi.db",
+      "role": "jurisdiction",
+      "size_bytes": 69632,
+      "size_mb": 0.07,
+      "tables": 8,
+      "wal_mode": true,
+      "last_modified": "2026-03-17T15:17:36.950740+00:00"
+    },
+    "jurisdiction_jtc": {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_jtc.db",
+      "role": "jurisdiction",
+      "size_bytes": 57344,
+      "size_mb": 0.05,
+      "tables": 7,
+      "wal_mode": true,
+      "last_modified": "2026-03-17T15:17:36.965743+00:00"
+    },
+    "jurisdiction_msc": {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_msc.db",
+      "role": "jurisdiction",
+      "size_bytes": 61440,
+      "size_mb": 0.06,
+      "tables": 7,
+      "wal_mode": true,
+      "last_modified": "2026-03-17T15:17:36.936740+00:00"
+    },
+    "legal_iq": {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\legal_iq.db",
+      "role": "auxiliary",
+      "size_bytes": 53248,
+      "size_mb": 0.05,
+      "tables": 6,
+      "wal_mode": true,
+      "last_modified": "2026-03-17T15:45:05.276547+00:00"
+    },
+    "litigation_context": {
+      "path": "C:\\Users\\andre\\LitigationOS\\litigation_context.db",
+      "role": "primary",
+      "size_bytes": 682450944,
+      "size_mb": 650.84,
+      "tables": 163,
+      "wal_mode": true,
+      "last_modified": "2026-03-23T00:54:16.326523+00:00"
+    },
+    "litigation_context (2)": {
+      "path": "C:\\Users\\andre\\LitigationOS\\litigation_context (2).db",
+      "role": "primary",
+      "size_bytes": 286720,
+      "size_mb": 0.27,
+      "tables": 37,
+      "wal_mode": true,
+      "last_modified": "2026-03-19T14:38:33.782200+00:00"
+    },
+    "litigation_skills": {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\litigation_skills.db",
+      "role": "auxiliary",
+      "size_bytes": 53248,
+      "size_mb": 0.05,
+      "tables": 6,
+      "wal_mode": true,
+      "last_modified": "2026-03-17T15:45:05.260921+00:00"
+    },
+    "litigationos": {
+      "path": "C:\\Users\\andre\\LitigationOS\\litigationos.db",
+      "role": "auxiliary",
+      "size_bytes": 188416,
+      "size_mb": 0.18,
+      "tables": 25,
+      "wal_mode": true,
+      "last_modified": "2026-03-20T22:31:49.883925+00:00"
+    },
+    "mcr_rules": {
+      "path": "C:\\Users\\andre\\LitigationOS\\mcr_rules.db",
+      "role": "reference",
+      "size_bytes": 3878912,
+      "size_mb": 3.7,
+      "tables": 5,
+      "wal_mode": true,
+      "last_modified": "2026-03-08T10:04:45.575963+00:00"
+    },
+    "michigan_judicial_system": {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\michigan_judicial_system.db",
+      "role": "auxiliary",
+      "size_bytes": 53248,
+      "size_mb": 0.05,
+      "tables": 7,
+      "wal_mode": true,
+      "last_modified": "2026-03-17T15:45:05.292173+00:00"
+    },
+    "procedures": {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\procedures.db",
+      "role": "auxiliary",
+      "size_bytes": 53248,
+      "size_mb": 0.05,
+      "tables": 6,
+      "wal_mode": true,
+      "last_modified": "2026-03-17T15:45:05.292173+00:00"
+    },
+    "script_forge": {
+      "path": "C:\\Users\\andre\\LitigationOS\\script_forge.db",
+      "role": "tools",
+      "size_bytes": 221413376,
+      "size_mb": 211.16,
+      "tables": 26,
+      "wal_mode": true,
+      "last_modified": "2026-03-14T12:48:10.103696+00:00"
+    },
+    "script_vault": {
+      "path": "C:\\Users\\andre\\LitigationOS\\script_vault.db",
+      "role": "tools",
+      "size_bytes": 204800,
+      "size_mb": 0.2,
+      "tables": 10,
+      "wal_mode": true,
+      "last_modified": "2026-03-13T16:03:28.844228+00:00"
+    },
+    "system_case_analysis": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\case_analysis.db",
+      "role": "auxiliary",
+      "size_bytes": 98304,
+      "size_mb": 0.09,
+      "tables": 8,
+      "wal_mode": true,
+      "last_modified": "2026-02-22T22:12:49.577422+00:00"
+    },
+    "system_consolidation_plan": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\consolidation_plan.db",
+      "role": "auxiliary",
+      "size_bytes": 13500416,
+      "size_mb": 12.88,
+      "tables": 5,
+      "wal_mode": false,
+      "last_modified": "2026-02-22T22:53:58.325313+00:00"
+    },
+    "system_drive_C_manifest": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\drive_C_manifest.db",
+      "role": "manifest",
+      "size_bytes": 17809408,
+      "size_mb": 16.98,
+      "tables": 4,
+      "wal_mode": false,
+      "last_modified": "2026-03-14T10:57:03.941550+00:00"
+    },
+    "system_drive_D_manifest": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\drive_D_manifest.db",
+      "role": "manifest",
+      "size_bytes": 3985408,
+      "size_mb": 3.8,
+      "tables": 4,
+      "wal_mode": false,
+      "last_modified": "2026-02-22T22:00:07.135522+00:00"
+    },
+    "system_drive_F_manifest": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\drive_F_manifest.db",
+      "role": "manifest",
+      "size_bytes": 8179712,
+      "size_mb": 7.8,
+      "tables": 4,
+      "wal_mode": false,
+      "last_modified": "2026-02-22T22:06:04.512413+00:00"
+    },
+    "system_drive_G_manifest": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\drive_G_manifest.db",
+      "role": "manifest",
+      "size_bytes": 3940352,
+      "size_mb": 3.76,
+      "tables": 4,
+      "wal_mode": false,
+      "last_modified": "2026-02-22T22:08:23.919734+00:00"
+    },
+    "system_drive_H_manifest": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\drive_H_manifest.db",
+      "role": "manifest",
+      "size_bytes": 8667136,
+      "size_mb": 8.27,
+      "tables": 4,
+      "wal_mode": false,
+      "last_modified": "2026-02-22T21:57:37.846292+00:00"
+    },
+    "system_drive_I_manifest": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\drive_I_manifest.db",
+      "role": "manifest",
+      "size_bytes": 1508212736,
+      "size_mb": 1438.34,
+      "tables": 10,
+      "wal_mode": true,
+      "last_modified": "2026-03-14T14:50:17.386313+00:00"
+    },
+    "system_emergency_templates": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\omega\\emergency_templates.db",
+      "role": "auxiliary",
+      "size_bytes": 20480,
+      "size_mb": 0.02,
+      "tables": 1,
+      "wal_mode": false,
+      "last_modified": "2026-03-04T23:57:35.696767+00:00"
+    },
+    "system_event_bridge": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\autonomos\\event_bridge.db",
+      "role": "auxiliary",
+      "size_bytes": 32768,
+      "size_mb": 0.03,
+      "tables": 2,
+      "wal_mode": true,
+      "last_modified": "2026-03-08T07:27:08.403065+00:00"
+    },
+    "system_evidence_20260305_212344": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\backups\\evidence_checkpoints\\evidence_20260305_212344.db",
+      "role": "backup",
+      "size_bytes": 61440,
+      "size_mb": 0.06,
+      "tables": 3,
+      "wal_mode": true,
+      "last_modified": "2026-03-06T02:23:30.352155+00:00"
+    },
+    "system_evidence_checkpoint": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\evidence_checkpoint.db",
+      "role": "backup",
+      "size_bytes": 61440,
+      "size_mb": 0.06,
+      "tables": 3,
+      "wal_mode": true,
+      "last_modified": "2026-03-06T02:27:32.372145+00:00"
+    },
+    "system_failsafe_incidents": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\failsafe_incidents.db",
+      "role": "system",
+      "size_bytes": 28672,
+      "size_mb": 0.03,
+      "tables": 3,
+      "wal_mode": true,
+      "last_modified": "2026-03-05T19:15:20.825259+00:00"
+    },
+    "system_file_catalog": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\file_catalog.db",
+      "role": "auxiliary",
+      "size_bytes": 244027392,
+      "size_mb": 232.72,
+      "tables": 4,
+      "wal_mode": false,
+      "last_modified": "2026-03-01T06:18:19.392374+00:00"
+    },
+    "system_inventory": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\cyclepacks\\CYCLE_PRODUCTION_001\\inventory.db",
+      "role": "auxiliary",
+      "size_bytes": 2940928,
+      "size_mb": 2.8,
+      "tables": 2,
+      "wal_mode": false,
+      "last_modified": "2026-02-24T21:23:22.884856+00:00"
+    },
+    "system_learning_metrics": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\local_model\\learning_metrics.db",
+      "role": "auxiliary",
+      "size_bytes": 73728,
+      "size_mb": 0.07,
+      "tables": 7,
+      "wal_mode": true,
+      "last_modified": "2026-03-08T22:23:45.318785+00:00"
+    },
+    "system_litigation_context": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\litigation_context.db",
+      "role": "auxiliary",
+      "size_bytes": 2830336,
+      "size_mb": 2.7,
+      "tables": 2,
+      "wal_mode": true,
+      "last_modified": "2026-03-19T11:55:42.985446+00:00"
+    },
+    "system_master_index": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\pipeline\\agents\\master_index.db",
+      "role": "auxiliary",
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "tables": 0,
+      "wal_mode": false,
+      "last_modified": "2026-03-20T12:01:04.263628+00:00"
+    },
+    "system_omega_C_manifest": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\omega_C_manifest.db",
+      "role": "manifest",
+      "size_bytes": 163360768,
+      "size_mb": 155.79,
+      "tables": 5,
+      "wal_mode": true,
+      "last_modified": "2026-03-01T23:20:18.759389+00:00"
+    },
+    "system_omega_dedup": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\omega_dedup.db",
+      "role": "dedup",
+      "size_bytes": 620462080,
+      "size_mb": 591.72,
+      "tables": 7,
+      "wal_mode": true,
+      "last_modified": "2026-03-08T21:41:08.550356+00:00"
+    },
+    "system_pipeline": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\pipeline\\pipeline.db",
+      "role": "system",
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "tables": 0,
+      "wal_mode": false,
+      "last_modified": "2026-02-22T20:25:49.637405+00:00"
+    },
+    "system_provenance": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\autonomos\\provenance.db",
+      "role": "auxiliary",
+      "size_bytes": 49152,
+      "size_mb": 0.05,
+      "tables": 4,
+      "wal_mode": true,
+      "last_modified": "2026-03-08T07:27:08.418688+00:00"
+    },
+    "system_watchdog": {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\watchdog\\watchdog.db",
+      "role": "system",
+      "size_bytes": 61440,
+      "size_mb": 0.06,
+      "tables": 8,
+      "wal_mode": true,
+      "last_modified": "2026-02-28T20:28:47.715631+00:00"
+    }
+  },
+  "centralization": {
+    "warm_target": "J:\\LITIGATIONOS_CENTRAL\\DATABASES",
+    "archive_target": "J:\\LITIGATIONOS_CENTRAL\\ARCHIVE",
+    "backup_target": "J:\\LITIGATIONOS_CENTRAL\\BACKUPS",
+    "status": "pending"
+  }
+}
