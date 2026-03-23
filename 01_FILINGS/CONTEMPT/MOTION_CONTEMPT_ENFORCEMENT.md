@@ -22,6 +22,21 @@
 
 ---
 
+## TABLE OF CONTENTS
+
+| Section | Title |
+|---------|-------|
+| I | Introduction |
+| II | Jurisdiction and Authority |
+| III | Statement of Violated Orders |
+| IV | Specific Violations (Chronological) |
+| V | Evidence of Willfulness |
+| VI | Pattern and Escalation Analysis |
+| VII | Relief Requested |
+| VIII | Verification |
+
+---
+
 ## I. INTRODUCTION
 
 Plaintiff Andrew James Pigors ("Plaintiff"), appearing *pro se*, respectfully moves this Honorable Court for an Order finding Defendant Emily A. Watson ("Defendant") in contempt of court for her willful and repeated violations of this Court's orders.
@@ -562,6 +577,10 @@ The data establishes a clear pattern of contemptuous conduct:
 **Issue:** Whether Watson's willful violation of court orders regarding custody and parenting time constitutes civil and/or criminal contempt under MCR 3.606.
 **Rule:** MCR 3.606 governs contempt in domestic relations cases. In re Contempt of Dougherty, 429 Mich 81 (1987), requires clear and convincing evidence of willful noncompliance. DeGeorge v Warwick, 404 Mich 434 (1978), distinguishes civil from criminal contempt.
 **Conclusion:** Moderate-to-strong contempt claim; success depends on proving willfulness by clear and convincing evidence.
+
+### Structural Conflict Compounding Contempt
+
+The willfulness of Defendant's violations must be assessed against the structural environment that enabled them. Public records confirm that Hon. Jenny L. McNeill is married to attorney Cavan John Berry, who practices family law at 990 Terrace Street, Muskegon — the same address as FOC Pamela Rusco. Ronald Berry, Defendant's domestic partner who actively participated in multiple order violations, shares the Berry surname with Cavan Berry in the same community of Norton Shores (population ~24,000). This undisclosed connection between the bench, the FOC, and Defendant's household created a structural environment in which Defendant could violate court orders with impunity — knowing that the mechanisms for enforcement were compromised by familial ties. The Court's consistent failure to enforce its own orders, despite documented violations supported by clear and convincing evidence, is explained by this structural conflict. Judge McNeill never disclosed this relationship during 290+ days of proceedings.
 
 
 ---

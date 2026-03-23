@@ -29,6 +29,35 @@ Plaintiff Andrew J. Pigors, appearing pro se, respectfully submits this Verified
 
 ---
 
+## TABLE OF CONTENTS
+
+| Section | Title |
+|---------|-------|
+| — | Preliminary Statement |
+| — | Parties |
+| — | Jurisdiction and Venue |
+| — | General Allegations |
+| I | Count I — Civil Conspiracy |
+| II | Count II — Intentional Infliction of Emotional Distress |
+| III | Count III — Tortious Interference with Parental Relationship |
+| IV | Count IV — Tortious Interference with Custody Order |
+| V | Count V — Defamation Per Se |
+| VI | Count VI — Slander |
+| VII | Count VII — Malicious Prosecution |
+| VIII | Count VIII — Abuse of Process |
+| IX | Count IX — Fraud on the Court |
+| X | Count X — Conversion |
+| XI | Count XI — Unjust Enrichment |
+| XII | Count XII — Negligent Infliction of Emotional Distress |
+| XIII | Count XIII — Loss of Parental Companionship |
+| — | Statute of Limitations Compliance |
+| — | General Prayer for Relief |
+| — | Jury Demand |
+| — | Verification |
+| — | Exhibit List |
+
+---
+
 ## PRELIMINARY STATEMENT
 
 1. This is a civil tort action seeking compensatory and exemplary damages for a coordinated, multi-year campaign by the Watson family to systematically deprive Plaintiff of his fundamental constitutional right to the care, custody, companionship, and society of his minor son, L.D.W. (minor child, born November 9, 2022) ("L.D.W." or "the child"), born November 9, 2022.

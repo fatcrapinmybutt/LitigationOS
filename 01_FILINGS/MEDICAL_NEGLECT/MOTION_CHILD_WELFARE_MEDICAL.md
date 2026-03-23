@@ -42,6 +42,23 @@ status: "DRAFT — ATTORNEY REVIEW REQUIRED"
 
 ---
 
+## TABLE OF CONTENTS
+
+| Section | Title |
+|---------|-------|
+| I | Introduction |
+| II | Legal Standard |
+| III | Documented Concerns |
+| IV | Critical Facts from the Record |
+| V | Chronological Timeline of Medical and Welfare Events |
+| VI | Related Claims and Legal Theories |
+| VII | IRAC Legal Analyses |
+| VIII | Best Interest Analysis Under MCL 722.23 |
+| IX | Relief Requested |
+| X | Verification |
+
+---
+
 ## I. INTRODUCTION
 
 1. Plaintiff Andrew James Pigors is the father of the minor child L.D.W. and brings this Motion to address serious and documented concerns regarding the medical care, health, welfare, and overall safety of L.D.W. while in the custody of Defendant Emily A. Watson.
@@ -618,6 +635,10 @@ Defendant's documented failure to communicate medical information to Plaintiff, 
 ### Factor (l) — Other Relevant Factors
 
 The Court should consider the totality of the evidence, including judicial system interactions documented in **50 judicial violation entries** that relate to the child welfare context, and the **100 timeline events** documenting the chronological progression of concerns.
+
+### Structural Conflict Affecting This Motion
+
+Public records confirm that the presiding judge, Hon. Jenny L. McNeill, is married to attorney Cavan John Berry, who practices family law in Muskegon County and serves as Attorney Magistrate at 990 Terrace Street — the same address as FOC Pamela Rusco. Ronald Berry, Defendant's domestic partner who has participated in decisions affecting L.D.W.'s welfare, shares the Berry surname with Cavan Berry in the same community of Norton Shores. This undisclosed structural conflict raises serious concerns about whether custody and welfare recommendations from the FOC — issued from the same building where the judge's spouse works — can be considered impartial. The child's best interests cannot be properly evaluated when the institutional safeguards designed to protect children are compromised by undisclosed familial connections between the bench, the FOC, and the opposing party's household.
 
 ---
 

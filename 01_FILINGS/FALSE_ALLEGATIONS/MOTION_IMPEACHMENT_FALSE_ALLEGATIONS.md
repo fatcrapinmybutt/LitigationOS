@@ -20,6 +20,20 @@ BASED ON DOCUMENTED FALSE ALLEGATIONS AND FABRICATED EVIDENCE**
 
 ---
 
+## TABLE OF CONTENTS
+
+| Section | Title |
+|---------|-------|
+| I | Introduction |
+| II | Statement of Facts |
+| III | Legal Standard |
+| IV | Argument |
+| V | Evidence Summary Table |
+| VI | Relief Requested |
+| VII | Verification |
+
+---
+
 ## I. INTRODUCTION
 
 Plaintiff Andrew James Pigors respectfully moves this Honorable Court to consider the documented pattern of false allegations made by Defendant Emily A. Watson and her associates, which have materially influenced custody, parenting time, and personal protection order proceedings in this matter.
@@ -566,6 +580,12 @@ Of **356** police reports in the database, **356** contain documented false-repo
 | A-PT-ENFORCE | parenting_time_enforcement | ready | 1149 | 0.7 | Enforcement of parenting time order. Watson has systematically withheld and blocked Andrew's court-o |
 | A-CHILD-WELF | child_welfare_concerns | draft | 1770 | 0.7 | Child welfare concerns regarding L.D.W. including emotional harm from parental alienation, isolation |
 | A-CONTEMPT | contempt_watson_order_violations | draft | 502 | 0.7 | Motion for contempt against Watson for willful violation of court orders including parenting time or |
+
+---
+
+### Structural Conflict Context
+
+The pattern of false allegations documented herein must be evaluated against the backdrop of a recently discovered structural conflict. Public records confirm that Hon. Jenny L. McNeill is married to attorney Cavan John Berry, a family law practitioner working at 990 Terrace Street, Muskegon — the same address as FOC Pamela Rusco. Ronald Berry, Defendant's domestic partner, shares the Berry surname with Cavan Berry in Norton Shores. This undisclosed connection explains why Defendant's false allegations received uncritical acceptance from the Court while Plaintiff's documented rebuttals were systematically disregarded: the institutional mechanisms for evaluating credibility were structurally compromised by familial ties between the bench, the FOC, and the opposing party's household. Judge McNeill never disclosed this relationship during 290+ days of proceedings.
 
 ---
 

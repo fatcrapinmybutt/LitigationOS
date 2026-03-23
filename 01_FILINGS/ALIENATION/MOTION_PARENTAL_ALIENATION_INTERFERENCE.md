@@ -25,6 +25,24 @@
 
 ---
 
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| I | Introduction | 1 |
+| II | Legal Standard | 2 |
+| III | Alienation Timeline | 4 |
+| IV | Categories of Interference | 48 |
+| V | Impact on L.D.W. | 52 |
+| VI | Pattern Evidence | 54 |
+| VII | Supporting Evidence Excerpts | 56 |
+| VIII | Legal Claims and IRAC Analysis | 60 |
+| IX | Relief Requested | 67 |
+| X | Verification | 70 |
+| — | Certificate of Service | 71 |
+
+---
+
 ## I. INTRODUCTION
 
 Plaintiff Andrew James Pigors respectfully moves this Honorable Court for relief regarding the systematic and ongoing pattern of parental alienation and custodial interference perpetrated by Defendant Emily A. Watson against Plaintiff and the minor child, L.D.W.
@@ -237,7 +255,7 @@ Upon information and belief, [information not ava·
 
 EMERGENCY EX PARTE MOTION FOR TEMPORARY PARENTING TIME ORDER
 
-NOW COMES Andrew Pigors, in pro per, and pursuant to MCR 3.207(B) and MCL 722.27a(9), respectfully requests this Honorable Court issue an EMERGENCY EX PARTE ORDER to restore and enforce temporary parenting time for the minor child, Lincoln David Watson, DOB: 11/09/2022, and in support thereof states:
+NOW COMES Andrew Pigors, in pro per, and pursuant to MCR 3.207(B) and MCL 722.27a(9), respectfully requests this Honorable Court issue an EMERGENCY EX PARTE ORDER to restore and enforce temporary parenting time for the minor child, L.D.W., DOB: 11/09/2022, and in support thereof states:
 
 1. `[SYSTEM_MANIPULATION]`
 - **2022-11-09** — matching_text: 2022-11-09 exparte parenting time.docx parenting time ex parte motion for immediate parenting time en
@@ -1114,6 +1132,10 @@ The following are representative excerpts from the **6,339 evidence quotes** in 
 
 **Conclusion:** Strong appellate posture; mixed standards of review with strongest arguments on legal (de novo) issues.
 
+### Structural Conflict Enabling Alienation
+
+The parental alienation and custodial interference documented herein were enabled by a structural conflict within the court system. Public records confirm that Hon. Jenny L. McNeill is married to attorney Cavan John Berry, a family law practitioner working at 990 Terrace Street — the same address as FOC Pamela Rusco. Ronald Berry, Defendant's domestic partner who has been present during multiple alienation episodes and custodial interference incidents, shares the Berry surname with Cavan Berry in the same small community of Norton Shores. This undisclosed familial connection between the presiding judge, the FOC officer, and the opposing party's household created a permissive environment for alienation: Defendant could systematically exclude Plaintiff from L.D.W.'s life, knowing that the Court would continue to ratify exclusion rather than enforce parenting time. The 281 cumulative days of denied parenting time were not merely the product of individual misconduct — they were enabled by an institutional structure compromised at every level by undisclosed relationships.
+
 
 
 ---
@@ -1140,7 +1162,9 @@ WHEREFORE, Plaintiff Andrew James Pigors respectfully requests that this Honorab
 
 9. **Award Plaintiff reasonable attorney fees and costs** incurred in bringing this motion, or in the alternative, recognize the substantial costs incurred by Plaintiff in prosecuting this matter *in propria persona*;
 
-10. **Grant such other and further relief** as this Court deems just and equitable.
+10. **Award compensatory damages** for the documented harm caused by Defendant's alienation campaign, including but not limited to: lost wages due to court appearances and incarceration arising from false allegations; costs of forced relocation from 2160 Garland Drive; transportation costs for attempted custody exchanges; communication expenses for maintaining contact with L.D.W.; and emotional distress damages under *Graves v Warner Bros*, 253 Mich App 486, supported by 226+ days of parent-child separation, wrongful incarceration, and the documented psychological impact of systematic alienation;
+
+11. **Grant such other and further relief** as this Court deems just and equitable.
 
 ---
 

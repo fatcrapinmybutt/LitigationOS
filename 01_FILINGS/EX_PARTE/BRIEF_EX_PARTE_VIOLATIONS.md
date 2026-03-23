@@ -16,6 +16,23 @@ v.
 
 ---
 
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| I | Introduction | 1 |
+| II | Legal Framework | 2 |
+| III | Documented Ex Parte Violations | 4 |
+| IV | Pattern Analysis | 52 |
+| V | Prejudice to Plaintiff | 64 |
+| VI | The Ladas–Hoopes–McNeill Structural Problem | 73 |
+| VII | Remedies | 75 |
+| VII-A | Structural Conflict — Berry-McNeill Family Connection | 76 |
+| VIII | Conclusion | 78 |
+| App. A | Database Query Traceability | 79 |
+
+---
+
 ## I. INTRODUCTION
 
 This brief documents **3697** ex parte communications and procedural violations catalogued in the litigation database that have fundamentally compromised the fairness of these proceedings. The evidence record contains **6380** evidentiary items related to ex parte conduct and **1774** timeline events on the judicial misconduct lane (Lane E) concerning ex parte violations.
@@ -1029,7 +1046,7 @@ Custody, Parenting Time, and Child Support Following Facilitative Info
 Exhibit 028 - Ex Parte Order Suspending Parenting Time #1 - Filing: COA (Exhibit 6); cross-ref Disqualification Exhibit 007 - Description: May 5, 2024 suspension without notice or hearing - Pages: Est.
 - **2024-05-05**: May 5, 2024: Ex Parte Order suspending parenting time without notice or hearing
 3.
-- **2024-07-01**: On or about July 1, 2024, the Court entered an Emergency Ex Parte Custody Order granting sole custody to Defendant Tiffany Watson without a full evidentiary hearing.
+- **2024-07-01**: On or about July 1, 2024, the Court entered an Emergency Ex Parte Custody Order granting sole custody to Defendant Emily A. Watson without a full evidentiary hearing.
 - **2024-07-01**: On or about July 1, 2024, this Court entered an ex parte custody order granting Defendant sole custody of the parties' minor child without a full evidentiary hearing and without adequate notice to Plaintiff.
 - **2024-08-23**: (Lower Court Record ["LCR"], Final Judgment, 08/23/2024.)
 * August 8, 2025 -- Ex Parte Order Suspending All Parenting Time, entered
@@ -1264,6 +1281,20 @@ The documented pattern of ex parte communications, combined with the structural 
 - **42 U.S.C. § 1983** — Deprivation of procedural due process rights under color of state law.
 - **42 U.S.C. § 1985** — Conspiracy to deprive of civil rights, where the pattern of ex parte communications involves coordination between judicial officers, the FOC, and opposing parties.
 - **U.S. Const. Amend. XIV** — Fundamental right to parent and right to fair proceedings.
+
+---
+
+## VII-A. STRUCTURAL CONFLICT — BERRY-McNEILL FAMILY CONNECTION
+
+The pervasive pattern of ex parte communications documented herein must be understood in the context of a recently discovered structural conflict. Public records confirm that the presiding judge, Hon. Jenny L. McNeill, is married to attorney **Cavan John Berry**, who practices **family law** in Muskegon County — the same jurisdiction and practice area over which his spouse presides.
+
+Critically, Cavan Berry serves as Attorney Magistrate at **990 Terrace Street, Muskegon** — the **same address** where Friend of the Court Pamela Rusco maintains her office and issues custody recommendations in this case. The judge's spouse and the FOC officer work in the **same building**, creating a structural channel for precisely the type of ex parte information flow documented in this brief.
+
+**Ronald Berry**, Defendant's domestic partner, shares the Berry surname with Cavan Berry in the same small community of Norton Shores (population ~24,000). **Shannon Patrick Berry** is confirmed by public records as a relative of Cavan Berry in the same area. If Ronald Berry is related to Cavan within the third degree, MCR 2.003(C)(1)(b) mandates automatic disqualification — independent of any showing of actual bias.
+
+This structural conflict provides the **mechanism** explaining how 3,697 ex parte violations could occur unchecked: when the presiding judge's spouse works at the FOC's address and shares a family name with the opposing party's domestic partner, the channels for improper communication are not merely possible — they are architecturally embedded in the court's structure.
+
+Judge McNeill **never disclosed** this relationship during 290+ days of proceedings, in independent violation of Canon 2, Rule 2.11(A) of the Michigan Code of Judicial Conduct.
 
 ---
 

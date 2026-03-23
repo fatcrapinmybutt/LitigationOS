@@ -21,6 +21,20 @@ Phone: (231) 903-5690 | Email: andrewjpigors@gmail.com
 
 ---
 
+## TABLE OF CONTENTS
+
+| Section | Title |
+|---------|-------|
+| I | Introduction |
+| II | Legal Standard |
+| III | Sanctionable Conduct |
+| IV | Evidence of Bad Faith |
+| V | Harm to Plaintiff |
+| VI | Sanctions Requested |
+| VII | Verification |
+
+---
+
 ## I. INTRODUCTION
 
 Plaintiff Andrew James Pigors ("Plaintiff"), appearing *in propria persona*, respectfully moves this Honorable Court for sanctions against Defendant Emily A. Watson ("Defendant") and/or her former counsel, Jennifer Barnes (P55406) of Barnes Law Firm PLLC, pursuant to MCR 1.109(E), MCR 2.114(D)-(E), MCR 2.313, MCL 600.2591, and this Court's inherent authority.

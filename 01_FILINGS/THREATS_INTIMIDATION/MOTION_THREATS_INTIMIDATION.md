@@ -34,6 +34,22 @@ v.
 
 ---
 
+## TABLE OF CONTENTS
+
+| Section | Title |
+|---------|-------|
+| I | Introduction |
+| II | Legal Standard |
+| III | Key Recording Evidence |
+| IV | Documented Threats and Intimidation (Chronological) |
+| V | Police Report Corroboration |
+| VI | Pattern Analysis — Escalation Timeline |
+| VII | Relief Requested |
+| VIII | Related Claims in Litigation Database |
+| IX | Verification |
+
+---
+
 ## I. INTRODUCTION
 
 This motion documents a sustained and escalating pattern of threats, intimidation, coercive conduct, and witness tampering by Defendant Emily A. Watson, her father Albert Watson (1143 E Norton Ave), her domestic partner Ronald Berry (residing at 2160 Garland Dr with Defendant), and other associates directed at Plaintiff Andrew James Pigors over the course of 726 days since the parties' separation on March 26, 2024.
@@ -432,6 +448,10 @@ Each escalation in threats and intimidation corresponds to critical points in th
 - Intimidation intensifies during custody exchanges
 - False reports to law enforcement follow Plaintiff's filing of motions
 - This pattern is consistent with witness tampering under MCL 750.457a
+
+### Structural Conflict Amplifying Intimidation
+
+The threats and intimidation documented herein were enabled by a structural conflict within the court system. Public records confirm that the presiding judge, Hon. Jenny L. McNeill, is married to attorney Cavan John Berry, who practices family law at 990 Terrace Street, Muskegon — the same address as FOC Pamela Rusco. Ronald Berry, Defendant's domestic partner and a principal intimidation actor with 20+ documented incidents, shares the Berry surname with Cavan Berry in the same small community of Norton Shores (population ~24,000). This undisclosed familial connection between the bench, the FOC, and the opposing party's household created a permissive environment in which Albert Watson and Ronald Berry could escalate intimidation tactics with impunity — confident that the Court's pattern of one-sided rulings (44% ex parte, all adverse to Plaintiff) would continue to shield their conduct from scrutiny.
 
 ---
 
