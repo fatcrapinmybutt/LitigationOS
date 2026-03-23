@@ -1,5 +1,5 @@
 # 🐻 THE MANBEARPIG — Startup Report
-**Generated:** 2026-03-23T10:06:11.721533
+**Generated:** 2026-03-23T15:35:41.581082
 **Engine:** THE-MANBEARPIG x NEXUS v11.0 OMEGA-SUPREME
 **Parent-Child Separation:** **227 DAYS** (since Aug 8, 2025)
 
@@ -51,18 +51,34 @@
   - ✅ `michigan_judicial_system.db` — 52KB, 7 tables
   - ✅ `procedures.db` — 52KB, 6 tables
 
+## 🧬 Evolution Engines
+### NOVEL v2 (Invention Factory)
+- **Status:** ✅ ACTIVE — 156KB
+- **Inventions:** 22 total (6 prototyped, 0 tested, 0 deployed)
+- **Gaps tracked:** 27
+- **Evolution cycles:** 2
+- **Best fitness:** 0.72
+- **Commands:** `perceive` `scan` `compose` `evolve` `validate` `forge` `dashboard`
+- **Run:** `cd 00_SYSTEM/novel && python novel_engine.py <command>`
+
+### DARWIN (Self-Evolving Agent Fleet)
+- **Status:** ✅ ACTIVE — 612KB
+- **Genomes:** 0 (max generation: 0)
+- **Best fitness:** 0
+- **Run:** `cd 00_SYSTEM/darwin && python darwin_engine.py evolve`
+
 ---
 *MANBEARPIG v11.0 OMEGA-SUPREME — Zero external API. Every assertion DB-grounded.*
 
 ## Drive State
 | Drive | Free GB | Total GB | Status |
 |-------|---------|----------|--------|
-| C: | 13.95 | 237.69 | 🟢 OK |
+| C: | 11.83 | 237.69 | 🟢 OK |
 | D: | 1.02 | 31.99 | 🔴 CRITICAL |
 | F: | 7.45 | 31.99 | 🟢 OK |
 | G: | 18.63 | 25.75 | 🟢 OK |
 | H: | 24.32 | 29.82 | 🟢 OK |
-| I: | 7.39 | 465.74 | 🟢 OK |
+| I: | 13.2 | 465.74 | 🟢 OK |
 
 ## Todo Tracker
 - **Total:** 12
@@ -85,6 +101,9 @@
 - Run NEXUS benchmark: `python 00_SYSTEM/local_model/nexus_engine.py --benchmark`
 - Run NEXUS status: `python 00_SYSTEM/local_model/nexus_engine.py --status`
 - Run HF engine: `python 00_SYSTEM/local_model/hf_legal_engine.py --benchmark`
+- Run NOVEL perceive: `cd 00_SYSTEM/novel && python novel_engine.py perceive`
+- Run NOVEL evolve: `cd 00_SYSTEM/novel && python novel_engine.py evolve`
+- Run DARWIN evolve: `cd 00_SYSTEM/darwin && python darwin_engine.py evolve`
 
 ## NEXUS v2.0 OMEGA-SUPREME System Map
 **6 Core Brains:** MANBEARPIG | HF Legal AI | GGUF LLM | FRED CEPS | FRED MONOLITH | ALE

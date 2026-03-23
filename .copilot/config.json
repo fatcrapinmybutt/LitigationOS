@@ -1,0 +1,62 @@
+{
+  "banner": "never",
+  "last_logged_in_user": {
+    "host": "https://github.com",
+    "login": "fatcrapinmybutt"
+  },
+  "logged_in_users": [
+    {
+      "host": "https://github.com",
+      "login": "fatcrapinmybutt"
+    }
+  ],
+  "model": "claude-opus-4.6",
+  "reasoning_effort": "high",
+  "render_markdown": true,
+  "theme": "github-dark-colorblind",
+  "trusted_folders": [
+    "C:\\Users\\andre\\Desktop\\CAPSTONE",
+    "c:\\Users",
+    "C:\\Users\\andre",
+    "H:\\",
+    "C:\\Users",
+    "C:\\users\\andre\\scans"
+  ],
+  "allowed_urls": [
+    "http://localhost:11434"
+  ],
+  "marketplaces": {
+    "anthropic-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      }
+    }
+  },
+  "installed_plugins": [
+    {
+      "name": "workiq",
+      "marketplace": "copilot-plugins",
+      "version": "1.0.0",
+      "installed_at": "2026-02-15T05:41:40.979Z",
+      "enabled": true,
+      "cache_path": "C:\\Users\\andre\\.copilot\\installed-plugins\\copilot-plugins\\workiq"
+    },
+    {
+      "name": "document-skills",
+      "marketplace": "anthropic-agent-skills",
+      "installed_at": "2026-02-17T05:18:29.200Z",
+      "enabled": true,
+      "cache_path": "C:\\Users\\andre\\.copilot\\installed-plugins\\anthropic-agent-skills\\document-skills"
+    }
+  ],
+  "asked_setup_terminals": [
+    "vscode"
+  ],
+  "show_reasoning": true,
+  "experimental": true,
+  "disabled_skills": [
+    "3d-web-experience",
+    "3d-games"
+  ]
+}

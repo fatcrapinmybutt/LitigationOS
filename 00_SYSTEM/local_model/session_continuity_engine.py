@@ -253,7 +253,65 @@ def generate_report(conn):
     lines.append("   ```")
     lines.append("")
 
-    # ── SECTION 7: CONTEXT TABLES REMINDER ──
+    # ── SECTION 7: EVOLUTION ENGINES (NOVEL + DARWIN) ──
+    lines.append("## 🧬 EVOLUTION ENGINES")
+
+    # NOVEL Engine
+    novel_db = Path(r"C:\Users\andre\LitigationOS\00_SYSTEM\novel\novel.db")
+    if novel_db.exists():
+        try:
+            nconn = sqlite3.connect(str(novel_db), timeout=5)
+            nconn.execute("PRAGMA busy_timeout=5000")
+            nconn.row_factory = sqlite3.Row
+            row = nconn.execute("""
+                SELECT
+                    (SELECT COUNT(*) FROM inventions) as total,
+                    (SELECT COUNT(*) FROM inventions WHERE status='prototyped') as prototyped,
+                    (SELECT COUNT(*) FROM inventions WHERE status='deployed') as deployed,
+                    (SELECT COUNT(*) FROM gap_registry) as gaps,
+                    (SELECT COUNT(*) FROM evolution_cycles) as cycles
+            """).fetchone()
+            lines.append(f"### NOVEL v2 — Invention Factory")
+            lines.append(f"  - Inventions: {row['total']} ({row['prototyped']} prototyped, {row['deployed']} deployed)")
+            lines.append(f"  - Gaps tracked: {row['gaps']} | Evolution cycles: {row['cycles']}")
+            # Recent inventions
+            recent = nconn.execute(
+                "SELECT name, status, fitness_score FROM inventions ORDER BY created_at DESC LIMIT 3"
+            ).fetchall()
+            if recent:
+                lines.append(f"  - Recent inventions:")
+                for r in recent:
+                    lines.append(f"    - {r['name']} [{r['status']}] fitness={r['fitness_score']:.2f}")
+            nconn.close()
+        except Exception as e:
+            lines.append(f"  - NOVEL: ⚠️ Error reading DB: {e}")
+    else:
+        lines.append("  - NOVEL: ❌ Not initialized")
+
+    # DARWIN Engine
+    darwin_db = Path(r"C:\Users\andre\LitigationOS\00_SYSTEM\darwin\darwin.db")
+    if darwin_db.exists():
+        try:
+            dconn = sqlite3.connect(str(darwin_db), timeout=5)
+            dconn.execute("PRAGMA busy_timeout=5000")
+            dconn.row_factory = sqlite3.Row
+            row = dconn.execute("""
+                SELECT
+                    (SELECT COUNT(*) FROM genomes) as total,
+                    (SELECT MAX(generation) FROM genomes) as max_gen,
+                    (SELECT MAX(fitness) FROM genomes) as best_fit
+            """).fetchone()
+            lines.append(f"### DARWIN — Self-Evolving Agent Fleet")
+            lines.append(f"  - Genomes: {row['total']} (max generation: {row['max_gen']})")
+            lines.append(f"  - Best fitness: {row['best_fit']:.3f}" if row['best_fit'] else "  - Best fitness: N/A")
+            dconn.close()
+        except Exception as e:
+            lines.append(f"  - DARWIN: ⚠️ Error reading DB: {e}")
+    else:
+        lines.append("  - DARWIN: ❌ Not initialized")
+    lines.append("")
+
+    # ── SECTION 8: CONTEXT TABLES REMINDER ──
     lines.append("## 🧠 PERMANENT CONTEXT TABLES (query these for intelligence)")
     context_tables = [
         ("narrative_context", "Case narrative elements by category/lane"),

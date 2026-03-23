@@ -1,0 +1,30 @@
+{
+  "locations": {
+    "C:\\Users\\andre": {
+      "tool_approvals": [
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "python"
+          ]
+        },
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "sqlite3"
+          ]
+        }
+      ]
+    },
+    "C:\\Users\\andre\\Desktop": {
+      "tool_approvals": [
+        {
+          "kind": "commands",
+          "commandIdentifiers": [
+            "python"
+          ]
+        }
+      ]
+    }
+  }
+}

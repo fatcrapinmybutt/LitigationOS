@@ -1,0 +1,87 @@
+[
+  {
+    "relpath": "README_NEXT_STEPS.md",
+    "bytes": 2508,
+    "sha256": "2225c020e53d5f4c0c0452d3e87042f60c38fdd17bb3a164f771db61707f882e"
+  },
+  {
+    "relpath": "manifest.csv",
+    "bytes": 1870,
+    "sha256": "07ba63b48298b63c7cd2a1c19d5c91c70badab17370050e3c0b9e3e3fd77ff4a"
+  },
+  {
+    "relpath": "manifest.json",
+    "bytes": 2649,
+    "sha256": "590df5ea9865411ca67946eea5c8e7727e185f1c5ddcf2bb4af4135cd675dd4a"
+  },
+  {
+    "relpath": "filings_docx/03_COA_Complaint_for_Superintending_Control_MCR7.206_R2.docx",
+    "bytes": 39962,
+    "sha256": "85a91e7baf14b5cb0d222942672c486d3f5b17ce03705c0868fc2fa0c6d59523"
+  },
+  {
+    "relpath": "filings_docx/06_MSC_Complaint_for_Superintending_Control_MCR7.306_R2.docx",
+    "bytes": 38130,
+    "sha256": "6eaac8dc71e24826056076ffc187b2a4d129cbe088abedd1434ab95f007c3d80"
+  },
+  {
+    "relpath": "filings_docx/01_Motion_to_Disqualify_Judge_McNeill_MCR2.003_R2.docx",
+    "bytes": 38534,
+    "sha256": "ba481c01870d1b63fae306d362628c5451975202b952a9ee4e4630355f5f4ed9"
+  },
+  {
+    "relpath": "filings_docx/02_Motion_to_Enforce_Parenting_Time_FOC65_Supplement_R2.docx",
+    "bytes": 38058,
+    "sha256": "c5b5af5437282cf05982b10389c76281de6eac39902e83cd57c1ae39408219ac"
+  },
+  {
+    "relpath": "filings_docx/07_Motion_to_Modify_or_Terminate_PPO_CC379_Supplement_R2.docx",
+    "bytes": 38036,
+    "sha256": "d76910471bf86d9926b9ac8140ef7ec9e983f7da4a3c241f8ff67a15a04842a1"
+  },
+  {
+    "relpath": "filings_docx/08_JTC_RFI_Narrative_Addendum_R2.docx",
+    "bytes": 37995,
+    "sha256": "b5a828f8b868dcea458b9d450497079a829858db3a6a3d8c5c53601114316c7a"
+  },
+  {
+    "relpath": "motions_docx/04_COA_Motion_for_Immediate_Consideration_MCR7.211_R2.docx",
+    "bytes": 37724,
+    "sha256": "a2dfc765dde7c0c2a3c5c122c4314df382d269bcaa740fcc9b2e17664f2de5a1"
+  },
+  {
+    "relpath": "motions_docx/05_COA_Motion_for_Stay_MCR7.209_R2.docx",
+    "bytes": 37585,
+    "sha256": "3aedfa1998f0d55d02a01742820f445ffeb731f57933c9cf9e6218aeaa38ba1d"
+  },
+  {
+    "relpath": "forms_pdf/JTC_Request_for_Investigation_Form_8.8.2023.pdf",
+    "bytes": 159716,
+    "sha256": "f46b8d5a4614dfe0d8d86ed285c1a461e2676df75bb4d41e71c9f188f86ce5a2"
+  },
+  {
+    "relpath": "exhibits_pdf/EXH_A_CUST_EXPARTE_MOTION_2025-08-08.pdf",
+    "bytes": 65532,
+    "sha256": "6b0c1d81e0b984f11cc4d41ce0cd715ad2364172e40c35e29e151fd1173ab261"
+  },
+  {
+    "relpath": "exhibits_pdf/EXH_B_TRIAL_ORDER_EXCERPT_2sided_judge_orders_scanned_0005.pdf",
+    "bytes": 361318,
+    "sha256": "df630a7b1ba6394880d1c8ee220ca65ff4b4b346fe0e7228faf8966a95920c5a"
+  },
+  {
+    "relpath": "exhibits_pdf/EXH_C_PPO_ROA_DOCKETS_NOTICES_PROOFS_scanned_0001.pdf",
+    "bytes": 54914,
+    "sha256": "2208a904527ef518d9fc0dc080b7182b211124d061cff8cb114a3700e2b9d3e0"
+  },
+  {
+    "relpath": "indices/adverse_statements_ledger.csv",
+    "bytes": 2165,
+    "sha256": "6657d5a96341088a085a64e99d16446435a03d62a3eae382b65064bcdbc60ffd"
+  },
+  {
+    "relpath": "tooling/rebuild_verify.py",
+    "bytes": 1554,
+    "sha256": "783083a34956e1a17d44f14964a3d574762572d08e372a3720bb35698643f12a"
+  }
+]

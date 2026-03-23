@@ -203,6 +203,101 @@ def generate_report():
                 jur_info["databases"][db_name] = {"exists": True, "size_kb": os.path.getsize(db_file) // 1024, "tables": 0}
     report["jurisdiction_dbs"] = jur_info
 
+    # ── NOVEL + DARWIN Engine Status ──
+    novel_info = {"available": False}
+    novel_db_path = LITIGOS_ROOT / "00_SYSTEM" / "novel" / "novel.db"
+    if novel_db_path.exists():
+        novel_info["available"] = True
+        novel_info["size_kb"] = os.path.getsize(str(novel_db_path)) // 1024
+        try:
+            nconn = sqlite3.connect(str(novel_db_path), timeout=5)
+            nconn.execute("PRAGMA busy_timeout=5000")
+            row = nconn.execute("""
+                SELECT
+                    (SELECT COUNT(*) FROM inventions) as total,
+                    (SELECT COUNT(*) FROM inventions WHERE status='prototyped') as prototyped,
+                    (SELECT COUNT(*) FROM inventions WHERE status='tested') as tested,
+                    (SELECT COUNT(*) FROM inventions WHERE status='deployed') as deployed,
+                    (SELECT COUNT(*) FROM gap_registry) as gaps,
+                    (SELECT COUNT(*) FROM evolution_cycles) as cycles
+            """).fetchone()
+            novel_info["inventions"] = row[0] if row else 0
+            novel_info["prototyped"] = row[1] if row else 0
+            novel_info["tested"] = row[2] if row else 0
+            novel_info["deployed"] = row[3] if row else 0
+            novel_info["gaps"] = row[4] if row else 0
+            novel_info["cycles"] = row[5] if row else 0
+            # Best fitness
+            best = nconn.execute(
+                "SELECT MAX(fitness_score) FROM inventions WHERE status != 'archived'"
+            ).fetchone()
+            novel_info["best_fitness"] = round(best[0], 3) if best and best[0] else 0
+            nconn.close()
+        except Exception as e:
+            novel_info["error"] = str(e)
+    report["novel_engine"] = novel_info
+
+    darwin_info = {"available": False}
+    darwin_db_path = LITIGOS_ROOT / "00_SYSTEM" / "darwin" / "darwin.db"
+    if darwin_db_path.exists():
+        darwin_info["available"] = True
+        darwin_info["size_kb"] = os.path.getsize(str(darwin_db_path)) // 1024
+        try:
+            dconn = sqlite3.connect(str(darwin_db_path), timeout=5)
+            dconn.execute("PRAGMA busy_timeout=5000")
+            row = dconn.execute("""
+                SELECT
+                    (SELECT COUNT(*) FROM genomes) as total,
+                    (SELECT MAX(generation) FROM genomes) as max_gen,
+                    (SELECT MAX(fitness) FROM genomes) as best_fitness
+            """).fetchone()
+            darwin_info["genomes"] = row[0] if row else 0
+            darwin_info["max_generation"] = row[1] if row else 0
+            darwin_info["best_fitness"] = round(row[2], 3) if row and row[2] else 0
+            dconn.close()
+        except Exception as e:
+            darwin_info["error"] = str(e)
+    report["darwin_engine"] = darwin_info
+
+    # ── LEXICON + ORACLE Legal Intelligence ──
+    lexicon_info = {"available": False}
+    lexicon_db_path = LITIGOS_ROOT / "00_SYSTEM" / "databases" / "lexicon.db"
+    if lexicon_db_path.exists():
+        lexicon_info["available"] = True
+        lexicon_info["size_kb"] = os.path.getsize(str(lexicon_db_path)) // 1024
+        try:
+            lconn = sqlite3.connect(str(lexicon_db_path), timeout=5)
+            lconn.execute("PRAGMA busy_timeout=5000")
+            row = lconn.execute("""
+                SELECT
+                    (SELECT COUNT(*) FROM legal_rules) as total_rules,
+                    (SELECT COUNT(*) FROM legal_rules WHERE source='MCR') as mcr,
+                    (SELECT COUNT(*) FROM legal_rules WHERE source='MCL') as mcl,
+                    (SELECT COUNT(*) FROM legal_rules WHERE source='MRE') as mre,
+                    (SELECT COUNT(*) FROM rule_cross_refs) as xrefs,
+                    (SELECT COUNT(*) FROM filing_requirements) as filing_reqs,
+                    (SELECT COUNT(*) FROM deadline_rules) as deadlines,
+                    (SELECT COUNT(*) FROM evidence_rules) as evidence,
+                    (SELECT COUNT(*) FROM canon_violations) as canons
+            """).fetchone()
+            if row:
+                lexicon_info["total_rules"] = row[0]
+                lexicon_info["mcr"] = row[1]
+                lexicon_info["mcl"] = row[2]
+                lexicon_info["mre"] = row[3]
+                lexicon_info["cross_refs"] = row[4]
+                lexicon_info["filing_reqs"] = row[5]
+                lexicon_info["deadlines"] = row[6]
+                lexicon_info["evidence_rules"] = row[7]
+                lexicon_info["canon_violations"] = row[8]
+            lconn.close()
+        except Exception as e:
+            lexicon_info["error"] = str(e)
+    # Check ORACLE
+    oracle_engine = LITIGOS_ROOT / "00_SYSTEM" / "engines" / "oracle" / "oracle_engine.py"
+    lexicon_info["oracle_available"] = oracle_engine.exists()
+    report["lexicon_oracle"] = lexicon_info
+
     conn.close()
     return report
 
@@ -282,6 +377,60 @@ def format_markdown(report):
             lines.append(f"  - {status_icon} `{db_name}` — {size}KB, {tables} tables")
         lines.append("")
 
+    # NOVEL + DARWIN Engines
+    novel = report.get("novel_engine", {})
+    darwin = report.get("darwin_engine", {})
+    if novel.get("available") or darwin.get("available"):
+        lines.append("## 🧬 Evolution Engines")
+        if novel.get("available"):
+            lines.append(f"### NOVEL v2 (Invention Factory)")
+            lines.append(f"- **Status:** ✅ ACTIVE — {novel.get('size_kb', 0)}KB")
+            lines.append(f"- **Inventions:** {novel.get('inventions', 0)} total "
+                        f"({novel.get('prototyped', 0)} prototyped, "
+                        f"{novel.get('tested', 0)} tested, "
+                        f"{novel.get('deployed', 0)} deployed)")
+            lines.append(f"- **Gaps tracked:** {novel.get('gaps', 0)}")
+            lines.append(f"- **Evolution cycles:** {novel.get('cycles', 0)}")
+            lines.append(f"- **Best fitness:** {novel.get('best_fitness', 0)}")
+            lines.append(f"- **Commands:** `perceive` `scan` `compose` `evolve` `validate` `forge` `dashboard`")
+            lines.append(f"- **Run:** `cd 00_SYSTEM/novel && python novel_engine.py <command>`")
+        else:
+            lines.append("- **NOVEL:** ❌ NOT INITIALIZED (run `python 00_SYSTEM/novel/novel_engine.py scan`)")
+        lines.append("")
+        if darwin.get("available"):
+            lines.append(f"### DARWIN (Self-Evolving Agent Fleet)")
+            lines.append(f"- **Status:** ✅ ACTIVE — {darwin.get('size_kb', 0)}KB")
+            lines.append(f"- **Genomes:** {darwin.get('genomes', 0)} "
+                        f"(max generation: {darwin.get('max_generation', 0)})")
+            lines.append(f"- **Best fitness:** {darwin.get('best_fitness', 0)}")
+            lines.append(f"- **Run:** `cd 00_SYSTEM/darwin && python darwin_engine.py evolve`")
+        else:
+            lines.append("- **DARWIN:** ❌ NOT INITIALIZED (run `python 00_SYSTEM/darwin/darwin_engine.py bootstrap`)")
+        lines.append("")
+
+    # LEXICON + ORACLE Legal Intelligence
+    lex = report.get("lexicon_oracle", {})
+    if lex.get("available"):
+        lines.append("## ⚖️ Legal Intelligence Engines")
+        lines.append(f"### LEXICON (Michigan Legal Authority Database)")
+        lines.append(f"- **Status:** ✅ ACTIVE — {lex.get('size_kb', 0)}KB")
+        lines.append(f"- **Total rules:** {lex.get('total_rules', 0)} "
+                     f"(MCR:{lex.get('mcr', 0)} MCL:{lex.get('mcl', 0)} MRE:{lex.get('mre', 0)})")
+        lines.append(f"- **Cross-references:** {lex.get('cross_refs', 0)}")
+        lines.append(f"- **Filing requirements:** {lex.get('filing_reqs', 0)}")
+        lines.append(f"- **Deadline rules:** {lex.get('deadlines', 0)}")
+        lines.append(f"- **Evidence decision trees:** {lex.get('evidence_rules', 0)}")
+        lines.append(f"- **Canon violations (JTC):** {lex.get('canon_violations', 0)}")
+        lines.append(f"- **Run:** `cd 00_SYSTEM/engines/lexicon && python lexicon_engine.py ask \"your question\"`")
+        lines.append("")
+        if lex.get("oracle_available"):
+            lines.append(f"### ORACLE (Rule Reasoning Engine)")
+            lines.append(f"- **Status:** ✅ ACTIVE")
+            lines.append(f"- **Capabilities:** roadmap, deadlines, checklists, forms, service, risks")
+            lines.append(f"- **Run:** `cd 00_SYSTEM/engines/oracle && python oracle_engine.py roadmap <type> <court>`")
+            lines.append(f"- **Deadlines:** `python oracle_engine.py deadlines motion_filing --date YYYY-MM-DD`")
+        lines.append("")
+
     lines.append("---")
     lines.append("*MANBEARPIG v11.0 OMEGA-SUPREME — Zero external API. Every assertion DB-grounded.*")
     lines.append("")
@@ -338,6 +487,9 @@ def format_markdown(report):
     lines.append("- Run NEXUS benchmark: `python 00_SYSTEM/local_model/nexus_engine.py --benchmark`")
     lines.append("- Run NEXUS status: `python 00_SYSTEM/local_model/nexus_engine.py --status`")
     lines.append("- Run HF engine: `python 00_SYSTEM/local_model/hf_legal_engine.py --benchmark`")
+    lines.append("- Run NOVEL perceive: `cd 00_SYSTEM/novel && python novel_engine.py perceive`")
+    lines.append("- Run NOVEL evolve: `cd 00_SYSTEM/novel && python novel_engine.py evolve`")
+    lines.append("- Run DARWIN evolve: `cd 00_SYSTEM/darwin && python darwin_engine.py evolve`")
     lines.append("")
 
     # NEXUS System Map

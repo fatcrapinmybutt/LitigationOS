@@ -1,0 +1,14 @@
+{
+  "filing_id": "TEST_WAVE4",
+  "created": "20260320_233157",
+  "case_number": "2024-001507-DC",
+  "files": {
+    "main_pdf": "C:\\Users\\andre\\LitigationOS\\COURT_READY\\TEST_WAVE4_20260320_233157\\main_document.pdf",
+    "package_pdf": "C:\\Users\\andre\\LitigationOS\\COURT_READY\\TEST_WAVE4_20260320_233157\\TEST_WAVE4_COMPLETE.pdf",
+    "cos_pdf": null
+  },
+  "page_count": 1,
+  "bates_range": "PIGORS-000001 through PIGORS-000001",
+  "forms_needed": [],
+  "exhibit_count": 0
+}

@@ -1,0 +1,69 @@
+name: Scheduled DB Backup
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Daily at midnight UTC
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  backup:
+    name: Backup Database
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Locate database files
+        id: find-db
+        shell: pwsh
+        run: |
+          $dbFiles = Get-ChildItem -Path . -Recurse -Include *.db,*.sqlite,*.sqlite3 -ErrorAction SilentlyContinue
+          if ($dbFiles.Count -eq 0) {
+            Write-Warning "No database files found — using default path"
+            echo "DB_PATH=00_SYSTEM/data/litigation.db" >> $env:GITHUB_OUTPUT
+          } else {
+            $primary = $dbFiles[0].FullName
+            Write-Host "Found database: $primary"
+            echo "DB_PATH=$primary" >> $env:GITHUB_OUTPUT
+          }
+
+      - name: Check database integrity
+        shell: pwsh
+        run: |
+          $dbPath = "${{ steps.find-db.outputs.DB_PATH }}"
+          if (Test-Path $dbPath) {
+            sqlite3 $dbPath "PRAGMA integrity_check;"
+          } else {
+            Write-Host "Database file not found at $dbPath — skipping integrity check"
+          }
+
+      - name: Compress with 7-Zip
+        shell: pwsh
+        run: |
+          $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
+          $archiveName = "db-backup-${timestamp}.7z"
+          echo "ARCHIVE_NAME=$archiveName" >> $env:GITHUB_ENV
+
+          $dbPath = "${{ steps.find-db.outputs.DB_PATH }}"
+          if (Test-Path $dbPath) {
+            7z a $archiveName $dbPath
+          } else {
+            Write-Warning "No DB file to compress — creating empty marker archive"
+            echo "NO_DB_FOUND" > backup-marker.txt
+            7z a $archiveName backup-marker.txt
+          }
+
+      - name: Compute SHA-256 checksum
+        shell: pwsh
+        run: |
+          $hash = (Get-FileHash -Path $env:ARCHIVE_NAME -Algorithm SHA256).Hash
+          Write-Host "SHA-256: $hash"
+          echo $hash > "${{ env.ARCHIVE_NAME }}.sha256"
+
+      - name: Upload backup artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: db-backup-${{ github.run_id }}
+          path: |
+            ${{ env.ARCHIVE_NAME }}
+            ${{ env.ARCHIVE_NAME }}.sha256
+          retention-days: 30

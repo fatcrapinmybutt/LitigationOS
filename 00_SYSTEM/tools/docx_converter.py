@@ -9,19 +9,27 @@ Usage:
 """
 
 import argparse
+import logging
 import os
 import re
 import sys
-import glob
 from pathlib import Path
 from datetime import datetime
+from xml.sax.saxutils import escape as xml_escape
 
 sys.stdout = open(sys.stdout.fileno(), mode="w", encoding="utf-8", errors="replace")
+
+logger = logging.getLogger("docx_converter")
+if not logger.handlers:
+    _handler = logging.StreamHandler(sys.stderr)
+    _handler.setFormatter(logging.Formatter("%(levelname)s: %(message)s"))
+    logger.addHandler(_handler)
+    logger.setLevel(logging.INFO)
 
 try:
     from docx import Document
     from docx.shared import Pt, Inches, RGBColor
-    from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
+    from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING, WD_COLOR_INDEX, WD_BREAK
     from docx.enum.section import WD_ORIENT
     from docx.oxml.ns import qn, nsdecls
     from docx.oxml import parse_xml
@@ -85,6 +93,11 @@ STATUTE_PATTERNS = [
     r"(42\s+U\.?S\.?C\.?\s+§?\s*\d+)",         # 42 USC § 1983
     r"(MRE\s+\d+[\.\d]*)",                     # MRE 801
 ]
+
+# Placeholder patterns — rendered in red highlight so they stand out for review
+PLACEHOLDER_RE = re.compile(
+    r'(\[(?:VERIFY|ANDREW_REQUIRED|INSERT|ATTACH|UNKNOWN)[^\]]*\])'
+)
 
 
 # ── Document Setup ─────────────────────────────────────────────────────────────
@@ -182,6 +195,18 @@ def _setup_styles(doc):
     bq.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
     bq.paragraph_format.space_before = Pt(6)
     bq.paragraph_format.space_after = Pt(6)
+
+    # Heading 3 — 12pt bold+underline left-aligned subsections
+    h3 = styles["Heading 3"]
+    h3.font.name = FONT_NAME
+    h3.font.size = BODY_SIZE
+    h3.font.bold = True
+    h3.font.underline = True
+    h3.font.color.rgb = RGBColor(0, 0, 0)
+    h3.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    h3.paragraph_format.space_before = Pt(12)
+    h3.paragraph_format.space_after = Pt(6)
+    h3.paragraph_format.line_spacing_rule = WD_LINE_SPACING.DOUBLE
 
     # Caption style — single-spaced for case caption
     try:
@@ -382,17 +407,33 @@ def parse_markdown(md_text):
 
 
 def _add_formatted_text(paragraph, text):
-    """Add text with inline markdown formatting (bold, italic, citations)."""
-    # Process bold+italic first, then bold, then italic, then statute, then citation
-    parts = _split_inline(text)
-    for part_text, fmt in parts:
-        run = paragraph.add_run(part_text)
-        run.font.name = FONT_NAME
-        run.font.size = BODY_SIZE
-        if "bold" in fmt:
-            run.bold = True
-        if "italic" in fmt:
-            run.italic = True
+    """Add text with inline markdown formatting (bold, italic, underline, citations, placeholders)."""
+    # Split on placeholder patterns first, render those specially
+    segments = PLACEHOLDER_RE.split(text)
+
+    for segment in segments:
+        if not segment:
+            continue
+        if PLACEHOLDER_RE.match(segment):
+            # Placeholder — red text on yellow highlight
+            run = paragraph.add_run(segment)
+            run.font.name = FONT_NAME
+            run.font.size = BODY_SIZE
+            run.font.color.rgb = RGBColor(255, 0, 0)
+            run.font.highlight_color = WD_COLOR_INDEX.YELLOW
+        else:
+            # Normal text — process inline formatting
+            parts = _split_inline(segment)
+            for part_text, fmt in parts:
+                run = paragraph.add_run(part_text)
+                run.font.name = FONT_NAME
+                run.font.size = BODY_SIZE
+                if "bold" in fmt:
+                    run.bold = True
+                if "italic" in fmt:
+                    run.italic = True
+                if "underline" in fmt:
+                    run.underline = True
 
 
 def _split_inline(text):
@@ -412,14 +453,15 @@ def _split_inline(text):
     text = text.replace("***", "**")
 
     result = []
-    # Parse bold (**text**), italic (*text* or _text_), plain text, stray markers
-    # Use [^*]+ and [^_]+ to prevent catastrophic backtracking on large texts
+    # Parse bold (**text**), italic (*text* or _text_), underline (++text++ or <u>text</u>)
     pattern = re.compile(
-        r"\*\*([^*]+)\*\*"     # **bold**
-        r"|\*([^*]+)\*"        # *italic*
-        r"|_([^_]+)_"          # _italic_
-        r"|([^*_]+)"           # plain text
-        r"|([*_])"             # stray markers
+        r"\*\*([^*]+)\*\*"         # **bold**
+        r"|\*([^*]+)\*"            # *italic*
+        r"|_([^_]+)_"              # _italic_
+        r"|\+\+([^+]+)\+\+"       # ++underline++
+        r"|<u>([^<]+)</u>"         # <u>underline</u>
+        r"|([^*_+<]+)"            # plain text
+        r"|([*_+<])"              # stray markers
     )
 
     for m in pattern.finditer(text):
@@ -430,9 +472,13 @@ def _split_inline(text):
         elif m.group(3):
             result.append((m.group(3), {"italic"}))
         elif m.group(4):
-            result.append((m.group(4), set()))
+            result.append((m.group(4), {"underline"}))
         elif m.group(5):
-            result.append((m.group(5), set()))
+            result.append((m.group(5), {"underline"}))
+        elif m.group(6):
+            result.append((m.group(6), set()))
+        elif m.group(7):
+            result.append((m.group(7), set()))
 
     return result if result else [(text, set())]
 
@@ -459,7 +505,7 @@ def render_blocks(doc, blocks):
             run.font.size = BODY_SIZE
 
         elif btype == "h3":
-            p = doc.add_paragraph(style="Normal")
+            p = doc.add_paragraph(style="Heading 3")
             run = p.add_run(block["text"])
             run.bold = True
             run.underline = True
@@ -560,7 +606,6 @@ def add_certificate_of_service(doc):
     # Page break before certificate
     p = doc.add_paragraph()
     run = p.add_run()
-    from docx.enum.text import WD_BREAK
     run.add_break(break_type=WD_BREAK.PAGE)
 
     date_str = datetime.now().strftime("%B %d, %Y")
@@ -580,6 +625,141 @@ def add_certificate_of_service(doc):
                 run = p.add_run(line)
                 run.font.name = FONT_NAME
                 run.font.size = BODY_SIZE
+
+
+# ── Watermark & TOC ────────────────────────────────────────────────────────────
+
+def _add_watermark(doc, text="DRAFT \u2014 NOT FOR FILING"):
+    """Add diagonal text watermark to all pages via VML shape in header."""
+    safe_text = xml_escape(text)
+    # Explicit namespace declarations — python-docx nsdecls() doesn't include VML/Office
+    ns = (
+        'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" '
+        'xmlns:v="urn:schemas-microsoft-com:vml" '
+        'xmlns:o="urn:schemas-microsoft-com:office:office"'
+    )
+    try:
+        watermark_xml = (
+            f'<w:r {ns}>'
+            '<w:rPr><w:noProof/></w:rPr>'
+            '<w:pict>'
+            '<v:shapetype id="_x0000_t136" coordsize="21600,21600" '
+            'o:spt="136" adj="10800" '
+            'path="m@7,l@8,m@5,21600l@6,21600e">'
+            '<v:formulas>'
+            '<v:f eqn="sum #0 0 10800"/>'
+            '<v:f eqn="prod #0 2 1"/>'
+            '<v:f eqn="sum 21600 0 @1"/>'
+            '<v:f eqn="sum 0 0 @2"/>'
+            '<v:f eqn="sum 21600 0 @3"/>'
+            '<v:f eqn="if @0 @3 0"/>'
+            '<v:f eqn="if @0 21600 @1"/>'
+            '<v:f eqn="if @0 0 @2"/>'
+            '<v:f eqn="if @0 @4 21600"/>'
+            '<v:f eqn="mid @5 @6"/>'
+            '<v:f eqn="mid @8 @5"/>'
+            '<v:f eqn="mid @7 @8"/>'
+            '<v:f eqn="mid @6 @7"/>'
+            '<v:f eqn="sum @6 0 @5"/>'
+            '</v:formulas>'
+            '<v:path textpathok="t" o:connecttype="custom" '
+            'o:connectlocs="@9,0;@10,10800;@11,21600;@12,10800" '
+            'o:connectangles="270,180,90,0"/>'
+            '<v:textpath on="t" fitshape="t"/>'
+            '<v:handles><v:h position="#0,bottomRight" xrange="6629,14971"/></v:handles>'
+            '<o:lock v:ext="edit" text="t" shapetype="t"/>'
+            '</v:shapetype>'
+            '<v:shape id="PowerPlusWaterMarkObject" o:spid="_x0000_s2049" '
+            'type="#_x0000_t136" '
+            'style="position:absolute;margin-left:0;margin-top:0;'
+            'width:527.85pt;height:131.95pt;rotation:315;'
+            'z-index:-251658752;'
+            'mso-position-horizontal:center;'
+            'mso-position-horizontal-relative:margin;'
+            'mso-position-vertical:center;'
+            'mso-position-vertical-relative:margin" '
+            'o:allowincell="f" fillcolor="silver" stroked="f">'
+            '<v:fill opacity=".5"/>'
+            '<v:textpath style="font-family:&quot;Times New Roman&quot;;font-size:1pt" '
+            f'string="{safe_text}"/>'
+            '</v:shape>'
+            '</w:pict>'
+            '</w:r>'
+        )
+        for section in doc.sections:
+            header = section.header
+            header.is_linked_to_previous = False
+            p = header.paragraphs[0] if header.paragraphs else header.add_paragraph()
+            p._p.append(parse_xml(watermark_xml))
+        logger.info("VML watermark applied: %s", text)
+    except Exception as exc:
+        # Fallback: simple large gray text in header
+        logger.warning("VML watermark failed (%s), using header text fallback", exc)
+        for section in doc.sections:
+            header = section.header
+            header.is_linked_to_previous = False
+            p = header.paragraphs[0] if header.paragraphs else header.add_paragraph()
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            run = p.add_run(text)
+            run.font.name = FONT_NAME
+            run.font.size = Pt(36)
+            run.font.color.rgb = RGBColor(192, 192, 192)
+            run.bold = True
+
+
+def _add_toc(doc):
+    """Insert a Table of Contents field that Word will populate on open."""
+    p = doc.add_paragraph(style="Heading 1")
+    run = p.add_run("TABLE OF CONTENTS")
+    run.bold = True
+    run.font.name = FONT_NAME
+    run.font.size = HEADING_SIZE
+
+    p = doc.add_paragraph()
+    # Begin field
+    run = p.add_run()
+    run._r.append(parse_xml(f'<w:fldChar {nsdecls("w")} w:fldCharType="begin"/>'))
+    # Field instruction — TOC with heading levels 1-3, hyperlinks, hide page numbers in web
+    run2 = p.add_run()
+    run2._r.append(parse_xml(
+        f'<w:instrText {nsdecls("w")} xml:space="preserve"> TOC \\o "1-3" \\h \\z \\u </w:instrText>'
+    ))
+    # Separate
+    run3 = p.add_run()
+    run3._r.append(parse_xml(f'<w:fldChar {nsdecls("w")} w:fldCharType="separate"/>'))
+    # Placeholder text until Word updates the field
+    run4 = p.add_run("[Right-click and select 'Update Field' to generate Table of Contents]")
+    run4.font.name = FONT_NAME
+    run4.font.size = BODY_SIZE
+    run4.font.color.rgb = RGBColor(128, 128, 128)
+    run4.italic = True
+    # End field
+    run5 = p.add_run()
+    run5._r.append(parse_xml(f'<w:fldChar {nsdecls("w")} w:fldCharType="end"/>'))
+
+    # Page break after TOC
+    p = doc.add_paragraph()
+    run = p.add_run()
+    run.add_break(break_type=WD_BREAK.PAGE)
+    logger.debug("Table of contents field inserted")
+
+
+def _estimate_pages(blocks):
+    """Rough page count estimate (double-spaced, 12pt Times, 1" margins ≈ 23 lines/page)."""
+    lines = 0
+    for block in blocks:
+        btype = block.get("type", "")
+        if btype in ("h1", "h2", "h3", "hr"):
+            lines += 3
+        elif btype == "paragraph":
+            lines += max(1, len(block.get("text", "")) // 80) + 1
+        elif btype == "blockquote":
+            lines += max(1, len(block.get("text", "")) // 70) + 2
+        elif btype in ("bullet_list", "numbered_list"):
+            lines += len(block.get("items", [])) + 1
+        elif btype == "table":
+            lines += len(block.get("lines", [])) + 2
+    return max(1, lines // 23)
 
 
 # ── Metadata Extraction ───────────────────────────────────────────────────────
@@ -610,14 +790,33 @@ def extract_title_from_md(md_text):
 # ── Main Conversion ───────────────────────────────────────────────────────────
 
 def convert_md_to_docx(md_path, docx_path, case_number=None, court=None,
-                       no_caption=False, no_signature=False, no_service=False):
-    """Convert a markdown file to a formatted DOCX court filing."""
+                       no_caption=False, no_signature=False, no_service=False,
+                       draft=False):
+    """Convert a markdown file to a formatted DOCX court filing.
+
+    Args:
+        md_path: Path to source markdown file.
+        docx_path: Path for output DOCX file.
+        case_number: Override case number (default from frontmatter or 2024-001507-DC).
+        court: Override court name.
+        no_caption: Skip the case caption block.
+        no_signature: Skip the signature block.
+        no_service: Skip the certificate of service.
+        draft: Add "DRAFT — NOT FOR FILING" watermark.
+
+    Returns:
+        bool: True on success, False on failure.
+    """
     md_path = Path(md_path)
     if not md_path.exists():
-        print(f"ERROR: Input file not found: {md_path}", file=sys.stderr)
+        logger.error("Input file not found: %s", md_path)
         return False
 
-    md_text = md_path.read_text(encoding="utf-8", errors="replace")
+    try:
+        md_text = md_path.read_text(encoding="utf-8", errors="replace")
+    except OSError as exc:
+        logger.error("Cannot read %s: %s", md_path, exc)
+        return False
 
     # Strip XML-incompatible control characters (NULL bytes, etc.) that crash python-docx
     md_text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', md_text)
@@ -631,6 +830,10 @@ def convert_md_to_docx(md_path, docx_path, case_number=None, court=None,
     # Create document
     doc = setup_document()
 
+    # Draft watermark
+    if draft:
+        _add_watermark(doc)
+
     # Case caption
     if not no_caption:
         add_case_caption(doc, case_number=case_number, court=court, title=title)
@@ -640,6 +843,11 @@ def convert_md_to_docx(md_path, docx_path, case_number=None, court=None,
     # Skip the first h1 block if we already used it as caption title
     if title and blocks and blocks[0]["type"] == "h1":
         blocks = blocks[1:]
+
+    # Auto-generate TOC for long documents (>10 estimated pages)
+    if _estimate_pages(blocks) > 10:
+        _add_toc(doc)
+        logger.info("Auto-inserted TOC (estimated %d pages)", _estimate_pages(blocks))
 
     render_blocks(doc, blocks)
 
@@ -654,8 +862,13 @@ def convert_md_to_docx(md_path, docx_path, case_number=None, court=None,
     # Save
     docx_path = Path(docx_path)
     docx_path.parent.mkdir(parents=True, exist_ok=True)
-    doc.save(str(docx_path))
-    print(f"OK: {md_path.name} → {docx_path}")
+    try:
+        doc.save(str(docx_path))
+    except OSError as exc:
+        logger.error("Cannot save %s: %s", docx_path, exc)
+        return False
+
+    print(f"OK: {md_path.name} \u2192 {docx_path}")
     return True
 
 
@@ -667,19 +880,60 @@ def batch_convert(input_dir, output_dir, case_number=None, court=None, **kwargs)
 
     md_files = sorted(input_dir.glob("*.md"))
     if not md_files:
-        print(f"No .md files found in {input_dir}", file=sys.stderr)
+        logger.warning("No .md files found in %s", input_dir)
         return 0
 
     count = 0
+    errors = []
     for md_file in md_files:
         docx_name = md_file.stem + ".docx"
         docx_path = output_dir / docx_name
-        if convert_md_to_docx(md_file, docx_path, case_number=case_number,
-                              court=court, **kwargs):
-            count += 1
+        try:
+            if convert_md_to_docx(md_file, docx_path, case_number=case_number,
+                                  court=court, **kwargs):
+                count += 1
+            else:
+                errors.append(md_file.name)
+        except Exception as exc:
+            logger.error("Failed to convert %s: %s", md_file.name, exc)
+            errors.append(md_file.name)
 
     print(f"\nBatch complete: {count}/{len(md_files)} files converted to {output_dir}")
+    if errors:
+        logger.warning("Failed files: %s", ", ".join(errors))
     return count
+
+
+# ── Public API ─────────────────────────────────────────────────────────────────
+
+def convert_single(input_md, output_docx, **kwargs):
+    """Public API: Convert a single markdown file to a court-ready DOCX.
+
+    Args:
+        input_md: Path to input markdown file.
+        output_docx: Path to output DOCX file.
+        **kwargs: Options forwarded to convert_md_to_docx
+            (case_number, court, draft, no_caption, no_signature, no_service).
+
+    Returns:
+        bool: True if conversion succeeded.
+    """
+    return convert_md_to_docx(input_md, output_docx, **kwargs)
+
+
+def convert_directory(input_dir, output_dir, **kwargs):
+    """Public API: Batch convert all .md files in a directory to DOCX.
+
+    Args:
+        input_dir: Directory containing .md files.
+        output_dir: Directory for output .docx files (created if needed).
+        **kwargs: Options forwarded to convert_md_to_docx
+            (case_number, court, draft, no_caption, no_signature, no_service).
+
+    Returns:
+        int: Number of files successfully converted.
+    """
+    return batch_convert(input_dir, output_dir, **kwargs)
 
 
 # ── CLI ────────────────────────────────────────────────────────────────────────
@@ -704,13 +958,20 @@ def main():
     parser.add_argument("--no-caption", action="store_true", help="Omit case caption")
     parser.add_argument("--no-signature", action="store_true", help="Omit signature block")
     parser.add_argument("--no-service", action="store_true", help="Omit certificate of service")
+    parser.add_argument("--draft", action="store_true",
+                        help='Add "DRAFT — NOT FOR FILING" watermark to every page')
+    parser.add_argument("--verbose", "-v", action="store_true", help="Verbose logging output")
 
     args = parser.parse_args()
+
+    if args.verbose:
+        logger.setLevel(logging.DEBUG)
 
     opts = dict(
         no_caption=args.no_caption,
         no_signature=args.no_signature,
         no_service=args.no_service,
+        draft=args.draft,
     )
 
     # Batch mode
