@@ -43,15 +43,15 @@ Plaintiff Andrew J. Pigors, appearing pro se, respectfully submits this Verified
 
 4. **Plaintiff Andrew J. Pigors** is an adult individual residing at 1977 Whitehall Road, Laketon Township, Muskegon County, Michigan 49445. Plaintiff is the biological father of L.D.W. and has standing to bring this action as a parent whose fundamental constitutional rights have been violated.
 
-5. **Defendant Emily A. Watson** ("Emily") is an adult individual residing at [ANDREW_REQUIRED — current residential address]. Emily is the biological mother of L.D.W. Emily is the primary tortfeasor who has systematically alienated the child from Plaintiff, denied all court-ordered parenting time for more than 200 consecutive days (with total deprivation across all episodes exceeding 300 days), recharacterized Plaintiff's protective actions (including a single CPS report filed out of genuine concern for bruising on L.D.W.) as harassment, and violated multiple court orders. Emily is sued individually and as the primary actor in the tortious conspiracy alleged herein.
+5. **Defendant Emily A. Watson** ("Emily") is an adult individual residing at 2160 Garland Drive, Norton Shores, MI 49441. Emily is the biological mother of L.D.W. Emily is the primary tortfeasor who has systematically alienated the child from Plaintiff, denied all court-ordered parenting time for more than 200 consecutive days (with total deprivation across all episodes exceeding 300 days), recharacterized Plaintiff's protective actions (including a single CPS report filed out of genuine concern for bruising on L.D.W.) as harassment, and violated multiple court orders. Emily is sued individually and as the primary actor in the tortious conspiracy alleged herein.
 
-6. **Defendant Lane A. Watson** ("Lane") is an adult individual residing at [ANDREW_REQUIRED — current residential address]. Lane is Emily's relative. Lane has served as a secondary intimidator during custody exchanges and has participated in documented interference incidents. Lane is sued individually and as a co-conspirator.
+6. **Defendant Lane A. Watson** ("Lane") is an adult individual residing at 2160 Garland Drive, Norton Shores, MI 49441. Lane is Emily's relative. Lane has served as a secondary intimidator during custody exchanges and has participated in documented interference incidents. Lane is sued individually and as a co-conspirator.
 
-7. **Defendant Lori Watson** ("Lori") is an adult individual residing at [ANDREW_REQUIRED — current residential address]. Lori is Emily's mother. Lori has weaponized the personal protection order ("PPO") system, made false statements to the court, and facilitated the parental alienation campaign. Lori is sued individually and as a co-conspirator.
+7. **Defendant Lori Watson** ("Lori") is an adult individual residing at 1143 E Norton Avenue, Norton Shores, MI 49441. Lori is Emily's mother. Lori has weaponized the personal protection order ("PPO") system, made false statements to the court, and facilitated the parental alienation campaign. Lori is sued individually and as a co-conspirator.
 
-8. **Defendant Albert Watson** ("Albert") is an adult individual residing at [ANDREW_REQUIRED — current residential address]. Albert is Emily's father and has served as the primary physical intimidator during custody exchanges, with documented incidents of verbal threats and hostile confrontations. Albert is sued individually and as a co-conspirator.
+8. **Defendant Albert Watson** ("Albert") is an adult individual residing at 1143 E Norton Avenue, Norton Shores, MI 49441. Albert is Emily's father and has served as the primary physical intimidator during custody exchanges, with documented incidents of verbal threats and hostile confrontations. Albert is sued individually and as a co-conspirator.
 
-9. **Defendant Cody Watson** ("Cody") is an adult individual residing at [ANDREW_REQUIRED — current residential address]. Cody is Emily's relative who has participated in harassment at custody exchanges and the coordinated intimidation campaign against Plaintiff. Cody is sued individually and as a co-conspirator.
+9. **Defendant Cody Watson** ("Cody") is an adult individual residing at 2160 Garland Drive, Norton Shores, MI 49441. Cody is Emily's relative who has participated in harassment at custody exchanges and the coordinated intimidation campaign against Plaintiff. Cody is sued individually and as a co-conspirator.
 
 ---
 
@@ -75,13 +75,13 @@ Plaintiff Andrew J. Pigors, appearing pro se, respectfully submits this Verified
 
 15. Plaintiff has at all relevant times been a loving, fit, and capable parent who has sought to maintain a meaningful relationship with his son.
 
-16. On or about [ANDREW_REQUIRED — date of custody order], the 14th Judicial Circuit Court entered a custody and parenting time order in Case No. 2024-001507-DC, establishing Plaintiff's right to regular parenting time with L.D.W. (the "Custody Order").
+16. On or about August 8, 2025, the 14th Judicial Circuit Court entered a custody and parenting time order in Case No. 2024-001507-DC, establishing Plaintiff's right to regular parenting time with L.D.W. (the "Custody Order"). On that same date, Judge McNeill entered five (5) ex parte orders suspending all of Plaintiff's parenting time without notice, hearing, or opportunity to be heard.
 
 17. Despite the Custody Order, Defendant Emily Watson has denied Plaintiff all parenting time with L.D.W. for a continuous period exceeding 200 consecutive days as of the date of this filing, with total deprivation across all episodes exceeding 300 days, constituting a willful and ongoing violation of the Custody Order.
 
 ### B. The Watson Family Conspiracy
 
-18. Beginning on or about [ANDREW_REQUIRED — approximate start date of interference], the Watson Defendants entered into a common plan, scheme, and agreement to deprive Plaintiff of his parental rights and relationship with L.D.W. through any and all means, lawful and unlawful.
+18. Beginning on or about early 2024, the Watson Defendants entered into a common plan, scheme, and agreement to deprive Plaintiff of his parental rights and relationship with L.D.W. through any and all means, lawful and unlawful.
 
 19. The conspiracy operated through a division of labor among the Watson family members: Emily served as the primary actor who denied parenting time and filed false reports; Lane and Albert served as physical intimidators at custody exchanges; Lori provided false statements to the court and weaponized the PPO system; and Cody participated in harassment and coordinated intimidation.
 
@@ -109,7 +109,7 @@ Plaintiff Andrew J. Pigors, appearing pro se, respectfully submits this Verified
 
 28. The pattern of intimidation included: verbal threats directed at Plaintiff; hostile physical confrontations; menacing behavior designed to prevent Plaintiff from exercising parenting time; following Plaintiff; and creating an atmosphere of fear and danger at exchange locations.
 
-29. This intimidation campaign has been documented across 305 separate incidents spanning [ANDREW_REQUIRED — date range of documented incidents].
+29. This intimidation campaign has been documented across 305 separate incidents spanning 2024 through 2026.
 
 ### F. Parental Alienation
 
@@ -284,7 +284,7 @@ Plaintiff Andrew J. Pigors, appearing pro se, respectfully submits this Verified
 
 70. These oral statements were published to: neighbors, community members, Plaintiff's employers and coworkers, mutual acquaintances, extended family members, and other third parties.
 
-71. Each statement was demonstrably false, as evidenced by the absence of any substantiated child welfare findings against Plaintiff, Plaintiff's clean criminal record [ANDREW_REQUIRED — confirm clean record or modify], Plaintiff's own police reports and photographic evidence of genuine parental concern, and the absence of any substantiated evidence of the alleged conduct.
+71. Each statement was demonstrably false, as evidenced by the absence of any substantiated child welfare findings against Plaintiff, Plaintiff's lack of any prior criminal convictions before the current disputed charge (People v. Pigors, 2025-25245676SM, 60th District Court, trial April 7, 2026), Plaintiff's own police reports and photographic evidence of genuine parental concern, and the absence of any substantiated evidence of the alleged conduct.
 
 72. The publication of these slanderous statements to Plaintiff's employers was a proximate cause of Plaintiff's loss of three (3) jobs, constituting special damages.
 
@@ -306,11 +306,11 @@ Plaintiff Andrew J. Pigors, appearing pro se, respectfully submits this Verified
     - (d) Ex parte motions and petitions containing false allegations of abuse or danger;
     - (e) [ANDREW_REQUIRED — any additional proceedings initiated by Emily Watson].
 
-76. No proceeding initiated by Emily Watson has resulted in a substantiated finding of abuse or neglect against Plaintiff. The PPO petition was contested [ANDREW_REQUIRED — state disposition]. The contempt finding was based on inability to pay, not willful violation, as the U.S. Supreme Court recognized in *Turner v. Rogers*, 564 U.S. 431 (2011).
+76. No proceeding initiated by Emily Watson has resulted in a substantiated finding of abuse or neglect against Plaintiff. The PPO petition was contested and remains in dispute with no evidentiary hearing held after 571+ days. The contempt finding was based on inability to pay, not willful violation, as the U.S. Supreme Court recognized in *Turner v. Rogers*, 564 U.S. 431 (2011).
 
 77. Emily Watson lacked probable cause to initiate each proceeding. The absence of probable cause is demonstrated by the uniform failure to produce any substantiated finding of abuse, neglect, or endangerment against Plaintiff, and by Plaintiff's own documented evidence of genuine parental concern (photographs of bruising on L.D.W., police reports, contemporaneous journal entries).
 
-78. Emily Watson acted with malice — her primary purpose in initiating each proceeding was not to protect L.D.W. but to harass Plaintiff, deprive him of parenting time, and further the alienation campaign. The pattern of repeated baseless filings, spanning [ANDREW_REQUIRED — time period], combined with the total absence of substantiated findings, conclusively establishes malicious intent.
+78. Emily Watson acted with malice — her primary purpose in initiating each proceeding was not to protect L.D.W. but to harass Plaintiff, deprive him of parenting time, and further the alienation campaign. The pattern of repeated baseless filings, spanning 2024 through 2026, combined with the total absence of substantiated findings, conclusively establishes malicious intent.
 
 79. Under Michigan law, the elements of malicious prosecution are: (1) prior proceedings terminated in favor of the present plaintiff; (2) absence of probable cause for those proceedings; (3) malice, or a purpose other than bringing the plaintiff to justice; and (4) special injury. *Walsh v. Taylor*, 263 Mich App 618, 633; 689 NW2d 506 (2004).
 
@@ -571,8 +571,8 @@ Pursuant to MCR 2.113(C)(2):
 Andrew J. Pigors, Pro Se
 1977 Whitehall Road
 Laketon Township, MI 49445
-Telephone: [ANDREW_REQUIRED]
-Email: [ANDREW_REQUIRED]
+Telephone: (231) 903-5690
+Email: andrewjpigors@gmail.com
 
 ---
 
