@@ -8,8 +8,11 @@ description: >-
   gap analysis, and timeline forensics. Michigan Rules of Evidence (MRE 901/902).
   All 6 case lanes (A-F). NEVER hard-delete — move duplicates to I:\ drive.
   Content-based dedup ONLY — peek inside documents, never rely solely on hashing.
+  APEX v3.0: Hybrid FTS5+vector search for evidence discovery, automatic evidence-to-
+  contradiction linking, police report cross-referencing (356 files, 890 allegations,
+  101 exculpatory), timeline-based evidence clustering (24,859 events).
 category: discipline
-version: "2.0.0"
+version: "3.0.0"
 triggers:
   - evidence
   - exhibit
@@ -44,24 +47,39 @@ metadata:
   fused_skills: 10
   author: andrew-pigors + copilot-omega
   forge_date: 2026-03-21
+  apex_version: "3.0.0 APEX"
+  apex_date: "2026-03-22"
+  apex_capabilities:
+    - "Hybrid FTS5+sqlite-vec evidence discovery"
+    - "Automatic evidence-to-contradiction linking"
+    - "Police report cross-referencing (356 files)"
+    - "Timeline-based evidence clustering (24,859 events)"
 ---
 
 # 🔬 OMEGA-EVIDENCE 🔬
 
-> **TIER 1 — Core Litigation Evidence Pipeline**
+> **TIER 1 — Core Litigation Evidence Pipeline — APEX v3.0**
 > **Pipeline:** Raw Files → Scan → Fingerprint → Dedup → Classify → Extract → Authenticate → Index → Link → Timeline
 > **Case:** Pigors v Watson · 6 drives · 6 lanes · 12 GB intelligence database
 > **Iron Law:** NEVER hard-delete. Content-based dedup. Every item traceable to source.
+> **APEX Additions:** Hybrid search · Contradiction linking · Police cross-reference · 24,859-event timeline
 
 ```
 ╔═══════════════════════════════════════════════════════════════════════════╗
-║                        OMEGA-EVIDENCE v2.0                               ║
-║               10 Skills → 8 Modules → 1 Evidence System                  ║
+║                      OMEGA-EVIDENCE v3.0 APEX                            ║
+║             10 Skills → 12 Modules → 1 Evidence Combat System            ║
 ║                                                                          ║
 ║  E1  Drive Scanning ──────┐                                              ║
 ║  E2  Extraction & OCR ────┤→ E4 Classification ──→ E5 Authentication     ║
 ║  E3  Deduplication ───────┘        ↓                      ↓              ║
 ║  E7  Gap Analysis ←───── E6 Bates & Index ──→ E8 Timeline Forensics     ║
+║                                                       ↓                  ║
+║  ┌────────────── APEX v3.0 MODULES ──────────────────┐                   ║
+║  │ E9  Hybrid Evidence Search (FTS5 + sqlite-vec)    │                   ║
+║  │ E10 Evidence-to-Contradiction Auto-Linking         │                   ║
+║  │ E11 Police Report Cross-Reference                  │                   ║
+║  │ E12 Timeline-Based Evidence Clustering             │                   ║
+║  └───────────────────────────────────────────────────┘                   ║
 ║                                                                          ║
 ║  Drives: C:\ D:\ F:\ G:\ H:\ I:\                                       ║
 ║  DB: litigation_context.db (evidence_quotes, documents, atoms, claims)   ║
@@ -130,10 +148,22 @@ Evidence task received
   │   └─→ E7: Evidence Gaps & Linking
   │
   ├─ "Timeline" / "chronolog" / "when" / "sequence"
-  │   └─→ E8: Timeline Forensics
+  │   └─→ E8: Timeline Forensics + E12: Timeline Clustering (APEX v3.0)
+  │
+  ├─ "Search" / "find evidence" / "semantic" / "similar"
+  │   └─→ E9: Hybrid Evidence Search (APEX v3.0)
+  │
+  ├─ "Contradiction" / "inconsistency" / "impeach" / "link"
+  │   └─→ E10: Evidence-to-Contradiction Auto-Linking (APEX v3.0)
+  │
+  ├─ "Police" / "officer" / "investigation" / "exculpatory" / "charges"
+  │   └─→ E11: Police Report Cross-Reference (APEX v3.0)
+  │
+  ├─ "Pattern" / "cluster" / "retaliation" / "timing"
+  │   └─→ E12: Timeline-Based Evidence Clustering (APEX v3.0)
   │
   └─ Complex / multi-step
-      └─→ Run E1 → E2 → E3 → E4 → E5 → E6 → E7 → E8 sequentially
+      └─→ Run E1 → E2 → E3 → E4 → E5 → E6 → E7 → E8 → E9 → E10 → E11 → E12
 ```
 
 ---
@@ -534,6 +564,232 @@ ORDER BY event_date;
 -- Gap detection
 SELECT gap_start, gap_end, gap_days, lane, significance
 FROM timeline_gaps WHERE significance >= 'MEDIUM';
+```
+
+---
+
+## ██ MODULE E9: Hybrid Evidence Search (APEX v3.0) ██
+
+### Purpose
+Traditional keyword search misses semantically related evidence. An evidence atom
+describing "father was denied access to child at police station" won't match a search
+for "parenting time interference" — but that's exactly what it is. Hybrid search
+combines FTS5 keyword precision with vector semantic understanding.
+
+### Architecture
+```
+Evidence Query → 
+  ├─ FTS5: keyword search across pages_fts + evidence_quotes → BM25 ranked
+  ├─ Vector: encode query → cosine search in vec_evidence → distance ranked
+  └─ RRF Fusion: merge both result sets with k=60 → unified ranking
+
+sqlite-vec embedding model: sentence-transformers/all-MiniLM-L6-v2 (384 dim, 80MB)
+Embedding generated at: Phase E-2 extraction time (dual-indexed)
+Storage: vec_evidence virtual table in litigation_context.db
+```
+
+### Legal Query Expansion (Evidence Domain)
+```
+"withholding" → withholding OR denied OR prevented OR blocked OR restricted OR refused
+"abuse" → abuse OR mistreatment OR harm OR violence OR assault OR endangerment
+"interference" → interference OR obstruction OR blocking OR preventing OR denying
+"false" → false OR fabricated OR untrue OR misrepresented OR inaccurate OR lying
+```
+
+### Integration with OMEGA-LITIGATION-SUPREME
+E9 is the evidence-domain implementation of M13 Hybrid Intelligence Search.
+When M13 is invoked for evidence queries, it delegates to E9 for evidence-specific
+tables (evidence_quotes, documents, atoms) and handles cross-table search itself.
+
+### Query Templates
+```sql
+-- Hybrid search: keyword component
+SELECT rowid, rank, quote_text, source_document, lane
+FROM evidence_quotes_fts
+WHERE evidence_quotes_fts MATCH ?
+ORDER BY rank LIMIT 100;
+
+-- Hybrid search: vector component
+SELECT rowid, distance, source_table, source_rowid, lane
+FROM vec_evidence
+WHERE embedding MATCH ? AND k = 100;
+
+-- Evidence by semantic cluster (find similar evidence)
+SELECT e2.quote_text, e2.lane, e2.source_document
+FROM vec_evidence v1
+JOIN vec_evidence v2 ON v2.rowid != v1.rowid
+JOIN evidence_quotes e2 ON e2.rowid = v2.source_rowid
+WHERE v1.source_rowid = ?  -- seed evidence atom
+  AND v2.distance < 0.3    -- similarity threshold
+ORDER BY v2.distance LIMIT 20;
+```
+
+---
+
+## ██ MODULE E10: Evidence-to-Contradiction Auto-Linking (APEX v3.0) ██
+
+### Purpose
+Automatically link evidence atoms to contradictions they support or refute.
+When new evidence is ingested (E1-E2), E10 scans it against all 10,672 existing
+contradictions and 2,930 contradiction chains to find matches.
+
+### Auto-Linking Algorithm
+```
+FOR EACH new evidence atom:
+  1. Extract key assertions (actor, date, claim, topic)
+  2. Query contradiction_map for same actor + overlapping date range
+  3. Compare assertion against each contradiction side:
+     - If it SUPPORTS side A → link as corroborating evidence
+     - If it SUPPORTS side B → link as corroborating evidence
+     - If it introduces NEW contradiction → create new entry in contradiction_map
+  4. Check against contradiction_chains:
+     - If it extends an existing chain → add as new link
+     - If it bridges two chains → merge chains
+  5. Update impeachment_items if new evidence changes impeachment score
+
+Matching methods:
+  - Exact actor match + date overlap (highest confidence)
+  - Same topic + semantic similarity > 0.7 (medium confidence)
+  - Cross-actor (witness corroboration or refutation)
+```
+
+### Database Operations
+```sql
+-- Link evidence to contradiction
+INSERT INTO evidence_contradiction_links (evidence_id, contradiction_id, link_type, confidence)
+VALUES (?, ?, 'CORROBORATES_SIDE_A', 0.85);
+
+-- Find unlinked evidence with potential contradiction matches
+SELECT e.atom_id, e.assertion_text, c.contradiction_id, c.type
+FROM evidence_atoms e
+CROSS JOIN contradiction_map c
+WHERE e.actor = c.actor_a OR e.actor = c.actor_b
+  AND e.atom_id NOT IN (SELECT evidence_id FROM evidence_contradiction_links)
+ORDER BY e.created_at DESC;
+```
+
+---
+
+## ██ MODULE E11: Police Report Cross-Reference (APEX v3.0) ██
+
+### Purpose
+Cross-reference every evidence item against police intelligence (356 files,
+890 allegations, 101 exculpatory findings). When evidence mentions a police
+interaction, allegation, or investigation, automatically link it to the
+corresponding police file and its outcome.
+
+### Cross-Reference Protocol
+```
+FOR EACH evidence atom mentioning police/law enforcement:
+  1. Extract: officer name, department, date, incident type
+  2. Query police_intelligence for matching record
+  3. If ALLEGATION found: flag with investigation result
+     → "Emily alleged X. Investigation result: NO CHARGES FILED"
+  4. If EXCULPATORY found: flag as HIGH-VALUE defensive evidence
+     → "Drug screen: NEGATIVE" — directly refutes substance allegations
+  5. Link evidence atom to police file via evidence_police_links table
+
+KEY CROSS-REFERENCES (hardcoded high-value):
+  □ ANY mention of "meth" or "drug use" → Link to drug screen: NEGATIVE
+  □ ANY PPO violation allegation → Link to investigation result (7/7 = 0 charges)
+  □ ANY Albert Watson mention → Link to false FBI report documentation
+  □ ANY "officer stated" language → Verify: did officer state it, or did Emily?
+```
+
+### Database Tables
+```sql
+-- Link evidence to police records
+CREATE TABLE IF NOT EXISTS evidence_police_links (
+  evidence_id TEXT,
+  police_file_id TEXT,
+  link_type TEXT, -- 'ALLEGATION_REFUTED', 'EXCULPATORY_MATCH', 'OFFICER_CITED'
+  PRIMARY KEY (evidence_id, police_file_id)
+);
+
+-- Find evidence claiming police support that is actually refuted
+SELECT e.quote_text, p.allegation_text, p.investigation_result, p.charges_filed
+FROM evidence_quotes e
+JOIN evidence_police_links epl ON e.quote_id = epl.evidence_id
+JOIN police_intelligence p ON p.file_id = epl.police_file_id
+WHERE epl.link_type = 'ALLEGATION_REFUTED'
+ORDER BY p.date;
+```
+
+---
+
+## ██ MODULE E12: Timeline-Based Evidence Clustering (APEX v3.0) ██
+
+### Purpose
+Cluster evidence by temporal proximity to detect coordinated activity patterns,
+filing-driven allegation waves, and retaliatory response timing. Uses the
+24,859-event master timeline as the backbone.
+
+### Clustering Algorithm
+```
+1. TEMPORAL WINDOW CLUSTERING:
+   - Slide a 14-day window across the master_timeline
+   - Group events within each window by actor and lane
+   - Flag windows with ≥3 adverse events from same actor → SURGE CLUSTER
+   - Flag windows where filing event followed by ≥2 retaliatory events → RETALIATION CLUSTER
+
+2. EVENT-RESPONSE PAIRING:
+   - For each filing by Andrew, find all events within 14 days after
+   - Classify response events: neutral, adverse, retaliatory, escalatory
+   - Build response-chain: filing → response₁ → response₂ → ...
+   - Compute response intensity score per filing
+
+3. CROSS-LANE TEMPORAL CORRELATION:
+   - Detect when adverse events across different lanes cluster in time
+   - Example: Housing eviction (Lane B) + PPO amendment (Lane D) within 7 days
+   - This feeds into M16 Three-Court Conspiracy Tracker
+
+4. EVIDENCE GAP DETECTION:
+   - Find periods in master_timeline with zero events per lane
+   - Cross-reference with known active periods from docket_events
+   - Flag unexplained gaps as potential document destruction or concealment
+```
+
+### Key Temporal Patterns (Known — Verify in Data)
+```
+PATTERN: FILING → RETALIATION
+  Andrew files custody (Apr 1, 2024) → Emily withholds 40 days (Mar 26-May 5)
+  Andrew files disqualification (Sep 25, 2025) → Court escalates PPO enforcement
+  Andrew files COA appeal → [Track response pattern]
+
+PATTERN: ALLEGATION SURGE
+  Pre-hearing windows: Scan 14 days before each hearing date
+  Expected: spike in new allegations filed by Emily
+  Evidence: Compare allegation filing dates against court calendar
+
+PATTERN: POLICE REPORT CLUSTERING
+  Cross-reference police investigation dates with court filing dates
+  Expected: Police calls cluster around custody hearing dates
+  Evidence: 7 PPO investigations correlate with key custody events
+```
+
+### Database Queries
+```sql
+-- Find retaliation clusters (events within 14 days after Andrew's filings)
+SELECT f.event_date AS filing_date, f.event_description AS andrew_filed,
+       r.event_date AS response_date, r.event_description AS response,
+       r.actor, julianday(r.event_date) - julianday(f.event_date) AS days_after
+FROM master_timeline f
+JOIN master_timeline r ON r.event_date BETWEEN f.event_date 
+  AND date(f.event_date, '+14 days')
+WHERE f.actor = 'Andrew Pigors' AND f.event_type = 'FILING'
+  AND r.actor != 'Andrew Pigors' AND r.adverse_to_andrew = 1
+ORDER BY f.event_date, days_after;
+
+-- Evidence surge detection per 14-day window
+SELECT date(event_date, 'start of day') AS window_start,
+       COUNT(*) AS events,
+       GROUP_CONCAT(DISTINCT actor) AS actors,
+       GROUP_CONCAT(DISTINCT lane) AS lanes
+FROM master_timeline
+WHERE adverse_to_andrew = 1
+GROUP BY strftime('%Y-%W', event_date)
+HAVING events >= 3
+ORDER BY events DESC;
 ```
 
 ---

@@ -6,8 +6,11 @@ description: >-
   or coordinating cross-skill fusion across the OMEGA system. This is the strategic leadership
   skill for all non-litigation structural decisions in LitigationOS — the blueprint authority
   that shapes how every subsystem connects, communicates, and evolves.
+  APEX v3.0: Coordinates M13-M16 integration (hybrid search, impeachment networks,
+  police intelligence, three-court conspiracy tracker), sqlite-vec schema design,
+  and cross-module dependency validation for 16-module SUPREME system.
 category: discipline
-version: "2.0.0"
+version: "3.0.0"
 triggers:
   - system design
   - architecture
@@ -41,31 +44,51 @@ metadata:
   fused_skills: 51
   author: andrew-pigors + copilot-omega
   forge_date: 2026-03-21
+  apex_version: "3.0.0 APEX"
+  apex_date: "2026-03-22"
+  apex_responsibilities:
+    - "sqlite-vec schema design for hybrid search (M13)"
+    - "Impeachment network graph schema (M14 → NetworkX integration)"
+    - "Police intelligence table schema (M15)"
+    - "Three-court tracker schema (M16)"
+    - "Cross-module DAG validation (16 modules, zero circular deps)"
+    - "vec_evidence virtual table architecture"
 ---
 
-# 🏛️ OMEGA-ARCHITECT — Strategic System Leadership
+# 🏛️ OMEGA-ARCHITECT — Strategic System Leadership (APEX v3.0)
 
 > **META TIER** — Coordinates OMEGA-AGENT-ARCHITECT, OMEGA-ORCHESTRATOR, and OMEGA-MCP
 > **Domain:** System design, agent fleet evolution, pipeline architecture, knowledge modeling
 > **Scope:** Every structural decision in LitigationOS flows through this skill
 > **Principle:** Build systems that are local-first, deterministic, append-only, and self-healing
+> **APEX v3.0:** Owns schema design for sqlite-vec, impeachment networks, police intelligence, and three-court tracker
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                        OMEGA-ARCHITECT v2.0                                 ║
-║              51 Skills → 7 Strategic Areas → 1 Blueprint Authority          ║
-║                                                                             ║
-║  SA1  System Architecture ──────┐                                           ║
-║  SA2  Agent Fleet Design ───────┤                                           ║
-║  SA3  MCP Tool Design ──────────┤→ UNIFIED ARCHITECTURE VISION              ║
-║  SA4  Pipeline Architecture ────┤        ↓                                  ║
-║  SA5  Knowledge Architecture ───┤   IMPLEMENTATION                          ║
-║  SA6  Evolution Strategy ───────┤        ↓                                  ║
-║  SA7  Cross-Skill Fusion ───────┘   VALIDATION → FEEDBACK                   ║
-║                                                                             ║
-║  Subordinates: OMEGA-AGENT-ARCHITECT · OMEGA-ORCHESTRATOR · OMEGA-MCP       ║
-║  Peers:        OMEGA-ENGINEER · OMEGA-SENTINEL                              ║
-║  Reports to:   OMEGA-LITIGATION-SUPREME (litigation domain authority)        ║
+║                      OMEGA-ARCHITECT v3.0 APEX                              ║
+║            51 Skills → 7 Strategic Areas → 1 Blueprint Authority             ║
+║                                                                              ║
+║  SA1  System Architecture ──────┐                                            ║
+║  SA2  Agent Fleet Design ───────┤                                            ║
+║  SA3  MCP Tool Design ──────────┤→ UNIFIED ARCHITECTURE VISION               ║
+║  SA4  Pipeline Architecture ────┤        ↓                                   ║
+║  SA5  Knowledge Architecture ───┤   IMPLEMENTATION                           ║
+║  SA6  Evolution Strategy ───────┤        ↓                                   ║
+║  SA7  Cross-Skill Fusion ───────┘   VALIDATION → FEEDBACK                    ║
+║                                                                              ║
+║  APEX v3.0 Architecture Ownership:                                           ║
+║  ┌────────────────────────────────────────────────────────────────────┐      ║
+║  │ sqlite-vec schema (vec_evidence, 384-dim, RRF fusion)             │      ║
+║  │ Impeachment network graph (NetworkX + contradiction_chains DB)     │      ║
+║  │ Police intelligence schema (police_intelligence, 356 files)       │      ║
+║  │ Three-court tracker schema (three_court_tracker, 3 judges)        │      ║
+║  │ Master timeline schema (master_timeline, 24,859 events)           │      ║
+║  │ Cross-module DAG: 16 modules, verified acyclic                    │      ║
+║  └────────────────────────────────────────────────────────────────────┘      ║
+║                                                                              ║
+║  Subordinates: OMEGA-AGENT-ARCHITECT · OMEGA-ORCHESTRATOR · OMEGA-MCP        ║
+║  Peers:        OMEGA-ENGINEER · OMEGA-SENTINEL                               ║
+║  Reports to:   OMEGA-LITIGATION-SUPREME (litigation domain authority)         ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -408,6 +431,95 @@ CREATE INDEX IF NOT EXISTS idx_evidence_quotes_vehicle_claim
 5. **FTS5 for text search** — Never use `LIKE '%term%'` on large tables
 6. **WAL mode mandatory** — `PRAGMA journal_mode=WAL` on every connection
 
+### APEX v3.0 Schema Designs (Owned by OMEGA-ARCHITECT)
+
+These schemas support modules M13-M16 in OMEGA-LITIGATION-SUPREME and E9-E12 in OMEGA-EVIDENCE.
+
+```sql
+-- M13/E9: Hybrid Intelligence Search — sqlite-vec virtual table
+-- Requires: sqlite-vec extension loaded
+-- Embedding model: sentence-transformers/all-MiniLM-L6-v2 (384-dim)
+CREATE VIRTUAL TABLE IF NOT EXISTS vec_evidence USING vec0(
+    evidence_id TEXT PRIMARY KEY,
+    embedding FLOAT[384],
+    source_table TEXT,     -- origin table name
+    source_id TEXT         -- origin row ID
+);
+
+-- M14/E10: Impeachment Network — contradiction chains
+CREATE TABLE IF NOT EXISTS contradiction_chains (
+    chain_id TEXT PRIMARY KEY,
+    chain_type TEXT NOT NULL,  -- ESCALATION|FABRICATION|RETRACTION|COACHING|SHIFTING
+    source_claim_id TEXT,
+    target_claim_id TEXT,
+    power_multiplier REAL DEFAULT 1.0,  -- 1.3x-2.0x based on chain_type
+    evidence_count INTEGER DEFAULT 0,
+    chain_score REAL DEFAULT 0.0,       -- SUM(evidence_count * power_multiplier)
+    created_at TEXT DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_chains_type ON contradiction_chains(chain_type);
+CREATE INDEX IF NOT EXISTS idx_chains_score ON contradiction_chains(chain_score DESC);
+
+-- M15/E11: Police Intelligence Integration
+CREATE TABLE IF NOT EXISTS police_intelligence (
+    report_id TEXT PRIMARY KEY,
+    file_path TEXT NOT NULL,
+    report_date TEXT,
+    officer_name TEXT,
+    allegation_type TEXT,
+    outcome TEXT,              -- UNFOUNDED|EXCULPATORY|NO_CHARGES|FOUNDED
+    exculpatory_finding TEXT,
+    linked_claim_id TEXT,
+    source_hash TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_police_outcome ON police_intelligence(outcome);
+CREATE INDEX IF NOT EXISTS idx_police_date ON police_intelligence(report_date);
+
+-- M16: Three-Court Conspiracy Tracker
+CREATE TABLE IF NOT EXISTS three_court_tracker (
+    event_id TEXT PRIMARY KEY,
+    court TEXT NOT NULL,       -- LADAS|HOOPES|MCNEILL
+    event_type TEXT NOT NULL,  -- RULING|FILING|COMMUNICATION|COORDINATION
+    event_date TEXT NOT NULL,
+    description TEXT,
+    linked_events TEXT,        -- JSON array of related event_ids
+    coordination_score REAL DEFAULT 0.0,
+    timing_window_hours REAL
+);
+CREATE INDEX IF NOT EXISTS idx_tracker_court ON three_court_tracker(court);
+CREATE INDEX IF NOT EXISTS idx_tracker_date ON three_court_tracker(event_date);
+
+-- Master Timeline (24,859 events) — feeds M7, E8, E12
+CREATE TABLE IF NOT EXISTS master_timeline (
+    event_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    event_date TEXT NOT NULL,
+    event_type TEXT NOT NULL,
+    actor TEXT,
+    description TEXT NOT NULL,
+    source_table TEXT,
+    source_id TEXT,
+    lane TEXT,                 -- A|B|C|D|E|F
+    confidence REAL DEFAULT 1.0
+);
+CREATE INDEX IF NOT EXISTS idx_timeline_date ON master_timeline(event_date);
+CREATE INDEX IF NOT EXISTS idx_timeline_type ON master_timeline(event_type);
+CREATE INDEX IF NOT EXISTS idx_timeline_lane ON master_timeline(lane);
+```
+
+### Cross-Module Schema Dependencies (DAG — verified acyclic)
+
+```
+E1 (scan) → E2 (extract) → E3 (dedup) → E4 (classify)
+  → E5 (authenticate) → E6 (Bates) → E7 (gaps) → E8 (timeline)
+    → master_timeline → E12 (clustering)
+    → vec_evidence → E9 (hybrid search) → M13 (hybrid intelligence)
+    → contradiction_chains → E10 (linking) → M14 (impeachment network)
+    → police_intelligence → E11 (police cross-ref) → M15 (police integration)
+    → three_court_tracker → M16 (conspiracy tracker)
+
+All paths flow downward. No circular dependencies. Verified.
+```
+
 ---
 
 ## SA6: Evolution Strategy — Self-Improving Architecture
@@ -437,20 +549,21 @@ When testing agent improvements:
 
 ### Current OMEGA Skill Map
 
-| OMEGA Skill | Skills Fused | Domain |
-|-------------|-------------|--------|
-| OMEGA-LITIGATION-SUPREME | 67 | All litigation (supreme tier) |
-| OMEGA-AGENT-ARCHITECT | 21 | Agent design, multi-agent patterns |
-| OMEGA-ORCHESTRATOR | 17 | Workflow execution, task decomposition |
-| OMEGA-MEMORY | 13 | Memory systems, cross-session recall |
-| OMEGA-CODE | 41 | Python, clean code, TDD, debugging |
-| OMEGA-DATA | 13 | SQLite, queries, schema management |
-| OMEGA-MCP | 13 | MCP servers, tool design, FastMCP |
-| OMEGA-SECURITY | 29 | Security audit, OWASP, PII protection |
-| OMEGA-DEVOPS | 23 | Git, CI/CD, backup, system health |
-| OMEGA-WRITING | 17 | Documentation, README, reports |
-| OMEGA-EVIDENCE | 10 | Evidence processing, exhibits |
-| OMEGA-RESEARCH | 12 | Legal research, RAG, citations |
+| OMEGA Skill | Skills Fused | Domain | Version |
+|-------------|-------------|--------|---------|
+| OMEGA-LITIGATION-SUPREME | 67 | All litigation (supreme tier) | **v3.0 APEX** |
+| OMEGA-EVIDENCE | 10 | Evidence processing, exhibits | **v3.0 APEX** |
+| OMEGA-ARCHITECT | 51 | System design, schema, evolution | **v3.0 APEX** |
+| OMEGA-AGENT-ARCHITECT | 21 | Agent design, multi-agent patterns | v2.0 |
+| OMEGA-ORCHESTRATOR | 17 | Workflow execution, task decomposition | v2.0 |
+| OMEGA-MEMORY | 13 | Memory systems, cross-session recall | v2.0 |
+| OMEGA-CODE | 41 | Python, clean code, TDD, debugging | v2.0 |
+| OMEGA-DATA | 13 | SQLite, queries, schema management | v2.0 |
+| OMEGA-MCP | 13 | MCP servers, tool design, FastMCP | v2.0 |
+| OMEGA-SECURITY | 29 | Security audit, OWASP, PII protection | v2.0 |
+| OMEGA-DEVOPS | 23 | Git, CI/CD, backup, system health | v2.0 |
+| OMEGA-WRITING | 17 | Documentation, README, reports | v2.0 |
+| OMEGA-RESEARCH | 12 | Legal research, RAG, citations | v2.0 |
 
 ### Fusion Decision Criteria
 

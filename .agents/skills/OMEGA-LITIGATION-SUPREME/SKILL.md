@@ -6,8 +6,11 @@ description: >-
   or court-ready document production. Complete pipeline from raw files across 6 local drives
   and 12 GB database through extraction, classification, and QA gates to court-ready filings.
   Michigan-specific. All 6 case lanes (A-F). ZERO hallucination tolerance. DB-first always.
+  APEX v3.0: Hybrid FTS5+vector search, impeachment network builder, police intelligence
+  integration, three-court conspiracy tracker, 24,859-event master timeline, 2,930 contradiction
+  chains, 356 police files with 890 allegations and 101 exculpatory findings.
 category: discipline
-version: "2.0.0"
+version: "3.0.0"
 triggers:
   - litigation
   - evidence
@@ -24,6 +27,14 @@ triggers:
   - judicial misconduct
   - damages
   - §1983
+  - hybrid search
+  - vector search
+  - police intelligence
+  - impeachment network
+  - conspiracy
+  - MSC bypass
+  - three-court
+  - timeline
 lanes:
   - "A: Watson/Custody (2024-001507-DC)"
   - "B: Shady Oaks/Housing (2025-002760-CZ)"
@@ -37,33 +48,56 @@ dependencies: []
 metadata:
   tier: 0 (Supreme)
   fused_skills: 67
+  modules: 16
   author: andrew-pigors + copilot-omega
   jurisdiction: Michigan
   courts: [14th Circuit, Michigan COA, Michigan Supreme Court, USDC WDMI, JTC]
+  apex_version: "3.0.0 APEX"
+  apex_date: "2026-03-22"
+  capabilities_added:
+    - "M13: Hybrid Intelligence Search (FTS5 + sqlite-vec RRF)"
+    - "M14: Impeachment Network Builder (2,930 contradiction chains)"
+    - "M15: Police Intelligence Integration (356 files, 890 allegations, 101 exculpatory)"
+    - "M16: Three-Court Conspiracy Tracker (Ladas-Hoopes-McNeill)"
+  evidence_arsenal:
+    timeline_events: 24859
+    contradiction_chains: 2930
+    police_files: 356
+    allegations: 890
+    exculpatory_findings: 101
+    ppo_investigations_zero_charges: 7
 ---
 
 # ⚡ OMEGA-LITIGATION-SUPREME ⚡
 
-> **SUPREME TIER** — Absorbs ALL 67 litigation skills into one combat system
+> **SUPREME TIER — APEX v3.0** — Absorbs ALL 67 litigation skills into one combat system
 > **Pipeline:** Raw Files → Evidence → Contradictions → Authority → Strategy → Filings → QA → Court
 > **Case:** Pigors v Watson · 6 lanes · 5 courts · 12 GB intelligence database
 > **Zero Tolerance:** No hallucinations. No fabricated names. No inflated stats. DB-first always.
+> **APEX Additions:** Hybrid FTS5+vector search · Impeachment network builder · Police intelligence · Three-court conspiracy tracker
 
 ```
-╔═══════════════════════════════════════════════════════════════════════════╗
-║                    OMEGA-LITIGATION-SUPREME v2.0                         ║
-║               67 Skills → 12 Modules → 1 Supreme System                 ║
-║                                                                          ║
-║  M1  Evidence Pipeline ──┐                                               ║
-║  M2  Contradiction Engine │→ M4 Filing Factory ──→ M8 QA Gates           ║
-║  M3  Authority Validator ─┘        ↑                    ↓                ║
-║  M5  Strategic Command ────────────┘              M9 Court-Ready         ║
-║  M6  Domain Specialists ──────────────────────────────→ ↑                ║
-║  M7  Database Intelligence ──→ ALL MODULES              │                ║
-║  M10 Adversary Intelligence ──→ M5, M4                  │                ║
-║  M11 Smart Router ──→ ENTRY POINT                       │                ║
-║  M12 Self-Evolution ──→ FEEDBACK LOOP ──────────────────┘                ║
-╚═══════════════════════════════════════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                   OMEGA-LITIGATION-SUPREME v3.0 APEX                         ║
+║              67 Skills → 16 Modules → 1 Supreme Combat System                ║
+║                                                                              ║
+║  ┌─────────────── INTELLIGENCE LAYER ───────────────────────────┐            ║
+║  │ M13 Hybrid Search (FTS5+vec) ──→ ALL MODULES                │            ║
+║  │ M14 Impeachment Network ──→ M2, M5, M4                      │            ║
+║  │ M15 Police Intelligence ──→ M1, M2, M8, M10                 │            ║
+║  │ M16 Three-Court Conspiracy ──→ M5, M6, M10                  │            ║
+║  └──────────────────────────────────────────────────────────────┘            ║
+║                                                                              ║
+║  M1  Evidence Pipeline ──┐                                                   ║
+║  M2  Contradiction Engine │→ M4 Filing Factory ──→ M8 QA Gates               ║
+║  M3  Authority Validator ─┘        ↑                    ↓                    ║
+║  M5  Strategic Command ────────────┘              M9 Court-Ready             ║
+║  M6  Domain Specialists ──────────────────────────────→ ↑                    ║
+║  M7  Database Intelligence ──→ ALL MODULES              │                    ║
+║  M10 Adversary Intelligence ──→ M5, M4                  │                    ║
+║  M11 Smart Router ──→ ENTRY POINT                       │                    ║
+║  M12 Self-Evolution ──→ FEEDBACK LOOP ──────────────────┘                    ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
 ```
 
 ---
@@ -175,8 +209,21 @@ Extract discrete evidence atoms from each document:
 | TIMELINE | TIME | Date/event establishing chronology |
 | FINANCIAL | FIN | Dollar amounts, payments, income |
 | RELATIONSHIP | REL | Party connections, roles, dynamics |
+| POLICE | POL | Police report finding, allegation, or exculpatory result |
+| EXCULPATORY | EXC | Evidence favorable to Andrew — police clearances, negative screens |
 
 **Atom Scoring:** `total = case_impact(0-40) + corroboration(0-20) + impeachment(0-20) + timeline(0-10) + uniqueness(0-10)`
+
+### Phase E-4b: Hybrid Evidence Indexing (APEX v3.0)
+Every extracted atom is dual-indexed for M13 Hybrid Intelligence Search:
+```
+1. FTS5 keyword index — full-text search with BM25 ranking
+2. Vector embedding — sentence-transformers/all-MiniLM-L6-v2 (80MB model)
+   → 384-dim embedding stored in sqlite-vec virtual table
+3. Cross-reference — atom_id links FTS5 row to vector row for RRF fusion
+```
+This enables semantic queries like "evidence of retaliation after filing" to find
+atoms that don't contain the word "retaliation" but describe retaliatory conduct.
 
 ### Phase E-5: Authentication & Admissibility
 **MRE 901/902 Analysis** for each evidence item:
@@ -199,10 +246,31 @@ Every evidence item tracked: `source_path → SHA-256 → extraction_date → an
 ## MODULE 2: CONTRADICTION & IMPEACHMENT ENGINE
 ## ═══════════════════════════════════════════════════════════════
 *Absorbs: litigation-impeachment-engine, litigation-parental-alienation-detector, litigation-court-order-tracker*
+*APEX v3.0: Contradiction chain detection, pattern analysis, feeds M14 Impeachment Network*
 
 ### Phase C-1: Statement Harvesting
 Extract ALL assertions from evidence atoms, witness statements, court filings, and transcripts.
 Tag each: `(speaker, date, source, assertion_text, sworn_status)`
+
+### Phase C-1b: Contradiction Chain Detection (APEX v3.0)
+Beyond isolated contradictions, detect **chains** — sequences of escalating lies or shifting stories:
+```
+CHAIN TYPES:
+  ESCALATION  — Allegation severity increases over time without new evidence
+                Emily: "uncomfortable" → "afraid" → "terrified" → "meth user" → "danger to child"
+  FABRICATION — New allegations appear only when litigation pressure increases
+                Filing dates correlate with new accusation types
+  RETRACTION  — Earlier statement quietly abandoned when proven false
+                "9 CPS investigations" → never mentioned again after record produced
+  COACHING    — Child's language matches parent's pleadings verbatim
+                Track language similarity between Emily's filings and L.D.W. statements
+  SHIFTING    — Core story changes across time/audience
+                Police report says X, court filing says Y, affidavit says Z
+
+CHAIN SCORING:
+  chain_length × materiality × provability = impeachment_power (0-100)
+  Chains with 3+ links and impeachment_power ≥ 60 → AUTO-FEED to M14
+```
 
 ### Phase C-2: Contradiction Detection
 
@@ -377,12 +445,13 @@ Primacy/Recency · Rule of Three · Anchoring · Framing · Narrative · Concess
 ## MODULE 5: STRATEGIC COMMAND & WARFARE
 ## ═══════════════════════════════════════════════════════════════
 *Absorbs: litigation-case-strategy-architect, litigation-convergence-orchestrator, litigation-discovery-warfare, litigation-settlement-analyzer, litigation-mediation-strategist, litigation-deposition-strategist, litigation-red-team, litigation-warfare-engine*
+*APEX v3.0: Impeachment network integration, police intelligence targeting, MSC bypass evidence summary*
 
 ### Phase S-1: Filing Wave Architecture
 ```
 WAVE 0: Emergency motions (DONE)
 WAVE 1: McNeill Disqualification (URGENT — MCR 2.003)
-WAVE 2: MSC Original Action (superintending control)
+WAVE 2: MSC Original Action (superintending control) — 9 COURT-READY DOCUMENTS
 WAVE 3: COA Brief APEX (366810)
 WAVE 4: JTC Complaint (McNeill — Canon 1,2,3)
 WAVE 5: Federal §1983 (USDC W.D. Michigan)
@@ -390,6 +459,40 @@ WAVE 6: Administrative (HUD, LARA, AGC, bar grievances)
 ```
 
 **Lane Priority Sequence:** E → D → F → A → B → C (highest urgency first)
+
+### Phase S-1b: Impeachment Network Targeting (APEX v3.0)
+```
+For each filing wave, M14 feeds the optimal impeachment package:
+  WAVE 1 (Disqualification): McNeill contradiction chains + ex parte pattern
+  WAVE 2 (MSC): Three-court conspiracy evidence (M16) + police exculpatory (M15)
+  WAVE 3 (COA): Full impeachment matrix for every contested factual finding
+  WAVE 4 (JTC): Judicial conduct contradiction chains + statistical bias evidence
+  WAVE 5 (§1983): Emily's fabrication chains + judicial facilitation evidence
+
+Each wave's brief/motion incorporates the TOP 5 impeachment chains by power score.
+```
+
+### Phase S-1c: MSC Bypass Evidence Assembly (APEX v3.0)
+```
+MSC BYPASS APPLICATION — 9 Court-Ready Documents:
+  1. Application for Leave to Appeal (MCR 7.305)
+  2. Application for Superintending Control (Const 1963 art 6 §4)
+  3. Supporting Brief — three-court pattern evidence
+  4. Affidavit of Andrew James Pigors (master chronology + police clearances)
+  5. Exhibit Package (Bates-stamped police reports + contradiction chains)
+  6. Proposed Order
+  7. Certificate of Service
+  8. Fee Waiver (MC 20)
+  9. Jurisdictional Statement
+
+Evidence Arsenal for MSC:
+  - 7 PPO investigations, ZERO charges filed (M15)
+  - Drug screen: NEGATIVE (M15)
+  - Albert Watson false FBI report (M15)
+  - Three-court conspiracy timeline (M16)
+  - 2,930 contradiction chains (M14)
+  - 24,859 master timeline events (M7)
+```
 
 ### Phase S-2: Game Theory Engine
 ```
@@ -534,6 +637,7 @@ Andrew: 9 payments × $88 = $792. Emily: unreported income (Cody rental + Austin
 ## ═══════════════════════════════════════════════════════════════
 ## MODULE 7: DATABASE INTELLIGENCE LAYER
 ## ═══════════════════════════════════════════════════════════════
+*APEX v3.0: Hybrid FTS5+sqlite-vec search, 24,859-event master timeline, cross-DB intelligence*
 
 ### Central Database: litigation_context.db (~12 GB, 790+ tables)
 
@@ -551,6 +655,60 @@ Andrew: 9 payments × $88 = $792. Emily: unreported income (Cody rental + Austin
 | authority_chains | 28 | Authority chains with completeness |
 | filing_readiness | 24 | Per-vehicle filing readiness |
 | deadlines | Varies | Active deadline tracking |
+
+### APEX v3.0 Intelligence Tables
+
+| Table / Source | Records | Strategic Use |
+|----------------|---------|--------------|
+| contradiction_chains | 2,930 | Multi-link contradiction sequences with chain_type and power_score |
+| police_intelligence | 356 files | Police reports: 890 allegations, 101 exculpatory findings |
+| master_timeline | 24,859 events | Cross-lane chronological event index (all 6 lanes) |
+| actor_impeachment_network | Dynamic | Per-actor impeachment package (generated from chains + contradictions) |
+| three_court_tracker | Dynamic | Ladas-Hoopes-McNeill coordinated action mapping |
+| vector_embeddings (sqlite-vec) | Growing | 384-dim sentence embeddings for hybrid semantic search |
+
+### Hybrid Intelligence Search Protocol (APEX v3.0)
+```
+STAGE 1 — FTS5 keyword search (BM25 ranking):
+  SELECT rowid, rank FROM pages_fts WHERE pages_fts MATCH ? ORDER BY rank LIMIT 100;
+
+STAGE 2 — Vector semantic search (sqlite-vec cosine similarity):
+  SELECT rowid, distance FROM vec_evidence
+  WHERE embedding MATCH ? AND k = 100 ORDER BY distance;
+
+STAGE 3 — Reciprocal Rank Fusion (RRF) merge:
+  RRF_score(doc) = Σ 1/(k + rank_fts5) + 1/(k + rank_vector)   where k=60
+  → Top-N results combine keyword precision with semantic understanding
+
+STAGE 4 — Legal query expansion (automatic):
+  "parenting time" → expands to: "parenting time" OR "custody" OR "visitation"
+    OR "PT" OR "overnights" OR "parental access" OR "MCL 722.27a"
+  "retaliation" → expands to: "retaliation" OR "retaliatory" OR "retribution"
+    OR "punishment" OR "consequence" OR "in response to filing"
+
+When to use hybrid vs FTS5-only:
+  - EXACT legal terms, case numbers, statutes → FTS5-only (faster, precise)
+  - CONCEPTUAL queries ("evidence of bad faith") → Hybrid (catches synonyms)
+  - CROSS-TABLE discovery (find related across tables) → Hybrid + cross-join
+```
+
+### 24,859-Event Master Timeline (APEX v3.0)
+```sql
+-- Master timeline spans all 6 lanes with unified date ordering
+SELECT event_date, event_description, lane, source_document, actor, event_type
+FROM master_timeline
+WHERE lane IN ('A', 'D', 'E')
+  AND event_date BETWEEN '2023-12-01' AND '2025-12-31'
+ORDER BY event_date ASC;
+
+-- Timeline pattern detection: cluster events by actor + 7-day windows
+SELECT actor, date(event_date, 'start of day') as day,
+       COUNT(*) as events_per_day, GROUP_CONCAT(event_type) as types
+FROM master_timeline
+GROUP BY actor, day
+HAVING events_per_day >= 3
+ORDER BY events_per_day DESC;
+```
 
 ### DB-First Protocol (NON-NEGOTIABLE)
 ```
@@ -584,6 +742,7 @@ SELECT claim_id, classification, status FROM claims WHERE vehicle_name = ?;
 ## ═══════════════════════════════════════════════════════════════
 ## MODULE 8: QUALITY ASSURANCE & ANTI-HALLUCINATION
 ## ═══════════════════════════════════════════════════════════════
+*APEX v3.0: Police report cross-verification, contradiction chain validation, hybrid search QA*
 
 ### Pre-Output Checklist (EVERY document, NO exceptions)
 ```
@@ -602,6 +761,23 @@ SELECT claim_id, classification, status FROM claims WHERE vehicle_name = ?;
 □ No "Jane Berry", "Patricia Berry", "9 CPS", "91% alienation"
 □ Timeline matches canonical timeline exactly
 □ Financial figures verified against source documents
+```
+
+### APEX v3.0 Extended QA Gates
+```
+□ POLICE CROSS-REF: Every allegation cited in a filing is verified against
+  police_intelligence table — if police investigated and found NO EVIDENCE,
+  that exculpatory finding MUST be cited alongside the allegation
+□ CONTRADICTION CHAIN AUDIT: Every impeachment argument traces back to a
+  validated chain in contradiction_chains with power_score ≥ 40
+□ HYBRID SEARCH VERIFICATION: Before stating "no evidence exists for X",
+  run hybrid search (M13) across FTS5 + vector — keyword miss ≠ absence
+□ THREE-COURT CHECK: If citing judicial pattern, verify via M16 tracker
+  that all three judges' actions are independently documented
+□ TIMELINE INTEGRITY: Any date cited must exist in master_timeline (24,859 events)
+  — if not found, flag as UNVERIFIED and query user
+□ EXCULPATORY DISCLOSURE: Any filing that discusses police involvement MUST
+  include the result (7/7 investigations = ZERO charges, drug screen NEGATIVE)
 ```
 
 ### Traceable Statistics Protocol
@@ -624,7 +800,7 @@ Date queried: [ISO-8601 timestamp]
 User Request → Parse Intent → Route to Module(s)
 
 "Analyze files/evidence"              → M1 + M7
-"Find contradictions/impeachment"     → M2
+"Find contradictions/impeachment"     → M2 + M14
 "Validate citations/authority"        → M3
 "Draft motion/brief/petition"         → M4 (+ M3 for citations)
 "What should I file next?"            → M5
@@ -632,23 +808,34 @@ User Request → Parse Intent → Route to Module(s)
 "Run QA/quality check"                → M8
 "Full pipeline from raw files"        → M1→M2→M3→M5→M6→M4→M8
 "Court-ready filing package"          → M1→M7→M2→M3→M4→M8→OUTPUT
-"What's Emily's pattern?"             → M10 (Adversary Intel)
+"What's Emily's pattern?"             → M10 + M15
 "Convergence cycle"                   → M5.S4 (Convergence)
-"Check McNeill bias"                  → M6.D4 (Judicial Profile)
+"Check McNeill bias"                  → M6.D4 + M16 (Judicial Profile + Conspiracy)
+"Search for evidence of X"            → M13 (Hybrid Intelligence Search)
+"Build impeachment package for Y"     → M14 (Impeachment Network Builder)
+"What do police reports show?"        → M15 (Police Intelligence)
+"Three-court conspiracy evidence"     → M16 (Three-Court Conspiracy Tracker)
+"MSC bypass evidence"                 → M5.S1c + M15 + M16
+"Find all parenting time interference"→ M13 + M7 (hybrid search across timeline)
+"Contradictions in McNeill's orders"  → M2 + M14 + M16
 ```
 
-### Full Pipeline Execution (10-Step)
+### Full Pipeline Execution (14-Step — APEX v3.0)
 ```
-STEP 1:  M1 — Scan drives, extract text, classify evidence, extract atoms
-STEP 2:  M7 — Query databases for existing evidence, claims, authorities
-STEP 3:  M2 — Run contradiction detection, build impeachment packages
-STEP 4:  M3 — Validate all authorities, identify gaps, fill chains
-STEP 5:  M5 — Strategic assessment, select filing vehicle, sequence
-STEP 6:  M6 — Apply domain-specific expertise for target court
-STEP 7:  M4 — Generate court-ready documents
-STEP 8:  M8 — QA sweep, anti-hallucination check, red team
-STEP 9:  M5.S4 — Convergence cycle: score, emergence detect, patch
-STEP 10: OUTPUT — Court-ready filing packet + exhibits + COS
+STEP 1:  M7  — Query databases for existing evidence, claims, authorities
+STEP 2:  M13 — Hybrid search for relevant evidence across all 790+ tables
+STEP 3:  M1  — Scan drives, extract text, classify evidence, extract atoms
+STEP 4:  M15 — Cross-reference police intelligence (356 files, 890 allegations, 101 exculpatory)
+STEP 5:  M2  — Run contradiction detection, build impeachment packages
+STEP 6:  M14 — Build impeachment network, detect chains, generate cross-exam outlines
+STEP 7:  M3  — Validate all authorities, identify gaps, fill chains
+STEP 8:  M16 — Map three-court conspiracy evidence (Ladas-Hoopes-McNeill)
+STEP 9:  M5  — Strategic assessment, select filing vehicle, sequence
+STEP 10: M10 — Adversary intel + police pattern analysis
+STEP 11: M6  — Apply domain-specific expertise for target court
+STEP 12: M4  — Generate court-ready documents
+STEP 13: M8  — QA sweep, anti-hallucination, police cross-ref, chain audit
+STEP 14: OUTPUT — Court-ready filing packet + exhibits + COS
 ```
 
 ---
@@ -656,6 +843,7 @@ STEP 10: OUTPUT — Court-ready filing packet + exhibits + COS
 ## ═══════════════════════════════════════════════════════════════
 ## MODULE 10: ADVERSARY INTELLIGENCE
 ## ═══════════════════════════════════════════════════════════════
+*APEX v3.0: Police report pattern analysis, exculpatory evidence integration, false report tracking*
 
 ### Emily Watson — Behavioral Profile
 ```
@@ -669,6 +857,35 @@ Third-Party Network:
   - Lori Watson: Participated in garage ambush PPO service
 Medical Record Access: Feb 8-Mar 15, 2024 via Corewell Health Portal (HIPAA violation)
 Income Concealment: Rental income from Cody Watson + child support from Austin Muratori
+```
+
+### APEX v3.0: Police Intelligence Profile — Emily Watson
+```
+ALLEGATION PATTERN (from M15 Police Intelligence — 356 files analyzed):
+  Total allegations filed/attributed to Emily: 890
+  Total exculpatory findings (favorable to Andrew): 101
+  PPO investigations triggered: 7
+  Charges resulting from investigations: ZERO (0 out of 7)
+  
+  ALLEGATION ESCALATION CHAIN:
+    Phase 1 (Dec 2023): "uncomfortable" + "fear" → PPO granted same day (ex parte)
+    Phase 2 (Mar-May 2024): "meth use" attributed to officer → police report shows EMILY said it
+    Phase 3 (Jul 2025): Severity escalation without new incidents → ex parte custody reversal
+    Phase 4 (Oct-Nov 2025): Birthday messages on AppClose → 45 days jail
+    
+  KEY EXCULPATORY EVIDENCE:
+    □ ALL 7 PPO investigations = ZERO charges (investigated and cleared)
+    □ Drug screen: NEGATIVE (alleged "meth use" disproven)
+    □ Albert Watson: Filed false FBI report against Andrew (documented)
+    □ Police report attribution: Emily stated "meth use", officer wrote it down —
+      NOT officer's independent finding. Emily's court filings misrepresent this.
+    □ "Conflicting stories" — police repeatedly found no corroboration for Emily's claims
+
+  FABRICATION INDICATORS (from contradiction chain analysis):
+    - New allegation types appear ONLY when litigation pressure increases
+    - Allegation severity escalates without corresponding incident reports
+    - Third-party witnesses (Watson family) repeat nearly identical language
+    - Contradiction chain power_score for Emily: [QUERY contradiction_chains WHERE actor='Emily Watson']
 ```
 
 ### Judge McNeill — Vulnerability Map
@@ -778,13 +995,20 @@ system_status()
 |----------|-------|--------|
 | Evidence quotes | 308,704 | litigation_context.db |
 | Contradiction map | 10,672 | litigation_context.db |
+| Contradiction chains | 2,930 | contradiction_chains (APEX v3.0) |
 | Impeachment items | 15,171 | litigation_context.db |
 | Judicial violations | 1,127 | litigation_context.db |
 | Claims tracked | 653 | litigation_context.db |
 | Files indexed | 53,625 | mega_file_harvest |
+| Master timeline events | 24,859 | master_timeline across 6 lanes (APEX v3.0) |
+| Police files analyzed | 356 | police_intelligence (APEX v3.0) |
+| Police allegations | 890 | police_intelligence (APEX v3.0) |
+| Exculpatory findings | 101 | police_intelligence (APEX v3.0) |
+| PPO investigations (0 charges) | 7 | police_intelligence (APEX v3.0) |
 | PPO evidence atoms | 75+ | Session SQL (ppo_atoms) |
 | Scanned document atoms | 49+ | Session SQL (evidence_atoms) |
 | Police reports documented | 24+ | litigation_context.db |
+| Vector embeddings | Growing | vec_evidence (APEX v3.0) |
 
 ---
 
@@ -847,44 +1071,80 @@ ENTRY: Litigation task received
 │   ├─ Legal Research / Citations → BRANCH B: Authority & Research
 │   ├─ Filing / Document Drafting → BRANCH C: Filing Factory
 │   ├─ Strategic Planning → BRANCH D: Strategic Command
+│   ├─ Impeachment / Contradiction → BRANCH F: Impeachment Network (APEX v3.0)
+│   ├─ Police / Exculpatory Evidence → BRANCH G: Police Intelligence (APEX v3.0)
+│   ├─ Judicial Conspiracy / Three-Court → BRANCH H: Conspiracy Tracker (APEX v3.0)
+│   ├─ Search / Discovery → BRANCH I: Hybrid Search (APEX v3.0)
 │   └─ Full Pipeline (files → filings) → BRANCH E: End-to-End
 │
 ├─ BRANCH A: Evidence Pipeline
 │   ├─ Step 1: M7 DB Intelligence — init connection, verify schema
-│   ├─ Step 2: M1 Evidence Pipeline — extract, classify, lane-tag
-│   ├─ Step 3: M2 Contradiction Engine — detect inconsistencies
-│   ├─ Step 4: M12 Self-Evolution — log results
-│   └─ OUTPUT: Structured evidence records with lane tags and contradiction flags
+│   ├─ Step 2: M13 Hybrid Search — find related evidence already in DB
+│   ├─ Step 3: M1 Evidence Pipeline — extract, classify, lane-tag
+│   ├─ Step 4: M15 Police Intelligence — cross-reference police findings
+│   ├─ Step 5: M2 Contradiction Engine — detect inconsistencies
+│   ├─ Step 6: M12 Self-Evolution — log results
+│   └─ OUTPUT: Structured evidence records with lane tags, contradiction flags, police cross-refs
 │
 ├─ BRANCH B: Authority & Research
 │   ├─ Step 1: M7 DB Intelligence — query authority_chains table
-│   ├─ Step 2: M3 Authority Validator — verify citations, check currency
-│   ├─ Step 3: M6 Domain Specialists — lane-specific legal standards
+│   ├─ Step 2: M13 Hybrid Search — find related authorities via semantic search
+│   ├─ Step 3: M3 Authority Validator — verify citations, check currency
+│   ├─ Step 4: M6 Domain Specialists — lane-specific legal standards
 │   └─ OUTPUT: Validated authority chains with overruled/superseded flags
 │
 ├─ BRANCH C: Filing Factory
 │   ├─ Step 1: M7 DB Intelligence — pull case data, docket events
 │   ├─ Step 2: M6 Domain Specialists — identify applicable standards
 │   ├─ Step 3: M3 Authority Validator — verify all citations
-│   ├─ Step 4: M4 Filing Factory — assemble document in MCR format
-│   ├─ Step 5: M8 QA Gates — anti-hallucination, DB-first, citation, lane, stats, format
-│   ├─ Step 6: M9 Court-Ready — finalize for filing
+│   ├─ Step 4: M14 Impeachment Network — top impeachment chains for this filing
+│   ├─ Step 5: M15 Police Intelligence — exculpatory evidence for filing
+│   ├─ Step 6: M4 Filing Factory — assemble document in MCR format
+│   ├─ Step 7: M8 QA Gates — anti-hallucination, police cross-ref, chain audit
+│   ├─ Step 8: M9 Court-Ready — finalize for filing
 │   └─ OUTPUT: Court-ready filing with certificate of service
 │
 ├─ BRANCH D: Strategic Command
 │   ├─ Step 1: M7 DB Intelligence — current case state
-│   ├─ Step 2: M10 Adversary Intelligence — opposing party patterns
-│   ├─ Step 3: M5 Strategic Command — prioritize claims, sequence filings
-│   └─ OUTPUT: Strategic recommendation with priority scores
+│   ├─ Step 2: M10 Adversary Intelligence — opposing party patterns + police analysis
+│   ├─ Step 3: M16 Three-Court Conspiracy — judicial coordination evidence
+│   ├─ Step 4: M5 Strategic Command — prioritize claims, sequence filings
+│   └─ OUTPUT: Strategic recommendation with priority scores + conspiracy mapping
 │
-└─ BRANCH E: End-to-End Pipeline
-    ├─ Step 1: M11 Smart Router — classify task, select module chain
-    ├─ Step 2: M7 → M1 → M2 → M3 (evidence + authority)
-    ├─ Step 3: M5 → M10 (strategy + adversary intel)
-    ├─ Step 4: M6 → M4 (domain expertise + filing assembly)
-    ├─ Step 5: M8 → M9 (QA + finalization)
-    ├─ Step 6: M12 Self-Evolution — log everything
-    └─ OUTPUT: Complete filing package ready for court submission
+├─ BRANCH E: End-to-End Pipeline
+│   ├─ Step 1: M11 Smart Router — classify task, select module chain
+│   ├─ Step 2: M7 → M13 → M1 → M15 (evidence + search + police)
+│   ├─ Step 3: M2 → M14 (contradiction + impeachment network)
+│   ├─ Step 4: M3 (authority validation)
+│   ├─ Step 5: M5 → M10 → M16 (strategy + adversary intel + conspiracy)
+│   ├─ Step 6: M6 → M4 (domain expertise + filing assembly)
+│   ├─ Step 7: M8 → M9 (QA + finalization)
+│   ├─ Step 8: M12 Self-Evolution — log everything
+│   └─ OUTPUT: Complete filing package ready for court submission
+│
+├─ BRANCH F: Impeachment Network (APEX v3.0)
+│   ├─ Step 1: M7 DB Intelligence — query contradiction_chains + impeachment_items
+│   ├─ Step 2: M14 Impeachment Network — build actor-specific package
+│   ├─ Step 3: M15 Police Intelligence — cross-reference police findings
+│   ├─ Step 4: M2 Contradiction Engine — validate chain integrity
+│   └─ OUTPUT: Actor-specific impeachment package with cross-exam outlines
+│
+├─ BRANCH G: Police Intelligence (APEX v3.0)
+│   ├─ Step 1: M15 Police Intelligence — query 356 files, 890 allegations, 101 exculpatory
+│   ├─ Step 2: M13 Hybrid Search — find related evidence across all tables
+│   ├─ Step 3: M14 Impeachment Network — link to contradiction chains
+│   └─ OUTPUT: Police intelligence summary with exculpatory evidence matrix
+│
+├─ BRANCH H: Three-Court Conspiracy (APEX v3.0)
+│   ├─ Step 1: M16 Three-Court Conspiracy — map Ladas-Hoopes-McNeill actions
+│   ├─ Step 2: M7 DB Intelligence — judicial_violations + docket_events
+│   ├─ Step 3: M14 Impeachment Network — judicial contradiction chains
+│   └─ OUTPUT: Conspiracy timeline with coordinated action evidence
+│
+└─ BRANCH I: Hybrid Search (APEX v3.0)
+    ├─ Step 1: M13 Hybrid Intelligence Search — FTS5 + vector + RRF
+    ├─ Step 2: M7 DB Intelligence — cross-table results
+    └─ OUTPUT: Ranked search results with semantic + keyword relevance
 ```
 
 ---
@@ -893,7 +1153,7 @@ ENTRY: Litigation task received
 
 ```yaml
 output:
-  type: enum [analysis, filing, evidence_report, strategy, audit, impeachment, brief]
+  type: enum [analysis, filing, evidence_report, strategy, audit, impeachment, brief, search_results, police_intel, conspiracy_map, impeachment_network]
   format: markdown
   required_fields:
     - summary: string
@@ -903,6 +1163,7 @@ output:
     - case_number: string
     - module_chain: list[string]  # which modules produced this output
     - qa_gate_results: object  # pass/fail for each gate
+    - apex_modules_used: list[string]  # M13-M16 if invoked
   quality_gates:
     - all_citations_verified: boolean
     - no_hallucinated_names: boolean
@@ -910,10 +1171,618 @@ output:
     - traceable_statistics: boolean
     - lane_integrity_confirmed: boolean
     - format_compliant: boolean
+    - police_crossref_passed: boolean  # APEX v3.0
+    - contradiction_chain_validated: boolean  # APEX v3.0
+    - hybrid_search_exhaustive: boolean  # APEX v3.0
+    - exculpatory_disclosed: boolean  # APEX v3.0
   prohibited:
     - fabricated_party_names
     - untraced_statistics
     - pseudo_scientific_scores
     - cross_lane_contamination
     - placeholders_without_db_search
+    - omitting_exculpatory_police_findings  # APEX v3.0
+    - citing_allegations_without_investigation_results  # APEX v3.0
+```
+
+---
+
+## ═══════════════════════════════════════════════════════════════
+## MODULE 13: HYBRID INTELLIGENCE SEARCH (APEX v3.0)
+## ═══════════════════════════════════════════════════════════════
+*NEW in APEX v3.0 — Combines FTS5 keyword search + sqlite-vec vector similarity via Reciprocal Rank Fusion*
+
+### Purpose
+Traditional FTS5 search misses semantically related evidence that uses different words.
+Vector-only search loses precision on exact legal terms. Hybrid search combines both
+for maximum recall and precision — critical when building court filings where missing
+one piece of evidence can lose a case.
+
+### Architecture
+```
+                    User Query: "evidence of retaliation after filing custody"
+                                        │
+                    ┌───────────────────┴───────────────────┐
+                    ▼                                       ▼
+            FTS5 KEYWORD SEARCH                    VECTOR SEMANTIC SEARCH
+            ─────────────────                      ──────────────────────
+            MATCH 'retaliation                     Encode query → 384-dim vector
+            AND filing AND custody'                Cosine similarity search in
+            BM25 ranking → Top 100                 vec_evidence → Top 100
+                    │                                       │
+                    └───────────────────┬───────────────────┘
+                                        ▼
+                          RECIPROCAL RANK FUSION (RRF)
+                          ─────────────────────────────
+                          RRF(doc) = Σ 1/(k + rank_i)
+                          k = 60 (tuned for legal corpus)
+                          Merge + re-rank → Top N results
+                                        │
+                                        ▼
+                          LEGAL QUERY EXPANSION
+                          ─────────────────────
+                          Auto-expand: "retaliation" → 
+                          "retaliation" OR "retaliatory"
+                          OR "in response to" OR "punitive"
+                          OR "consequence of filing"
+                                        │
+                                        ▼
+                          CROSS-TABLE SEARCH
+                          ──────────────────
+                          evidence_quotes + contradiction_map +
+                          impeachment_items + pages + judicial_violations
+                          + police_intelligence + master_timeline
+                                        │
+                                        ▼
+                          RANKED RESULTS with source, lane, score
+```
+
+### sqlite-vec Integration
+```sql
+-- Create vector table (once, during pipeline Phase 5)
+CREATE VIRTUAL TABLE vec_evidence USING vec0(
+  embedding float[384],  -- sentence-transformers/all-MiniLM-L6-v2
+  +source_table TEXT,
+  +source_rowid INTEGER,
+  +lane TEXT
+);
+
+-- Vector similarity search
+SELECT rowid, distance, source_table, source_rowid, lane
+FROM vec_evidence
+WHERE embedding MATCH ?  -- query embedding (384-dim float array)
+  AND k = 100
+ORDER BY distance;
+
+-- Hybrid search implementation (Python)
+def hybrid_search(query: str, k: int = 20, alpha: float = 0.5) -> list[Result]:
+    """RRF fusion of FTS5 + vector results."""
+    fts_results = fts5_search(query, limit=100)
+    vec_results = vector_search(encode(query), limit=100)
+    
+    rrf_scores = {}
+    RRF_K = 60  # tuned for legal corpus
+    for rank, doc in enumerate(fts_results):
+        rrf_scores[doc.id] = rrf_scores.get(doc.id, 0) + 1/(RRF_K + rank)
+    for rank, doc in enumerate(vec_results):
+        rrf_scores[doc.id] = rrf_scores.get(doc.id, 0) + 1/(RRF_K + rank)
+    
+    return sorted(rrf_scores.items(), key=lambda x: -x[1])[:k]
+```
+
+### Legal Query Expansion Dictionary
+```
+CUSTODY DOMAIN:
+  "custody" → custody, custodial, parenting time, PT, visitation, overnights, MCL 722.23
+  "best interest" → best interest, 722.23, factor (a)-(l), Vodvarka, child welfare
+  "modification" → modification, change, proper cause, changed circumstances, Vodvarka
+
+PPO DOMAIN:
+  "PPO" → PPO, personal protection, restraining, 600.2950, no-contact, MCL 750.411h
+  "violation" → violation, contempt, show cause, breach, non-compliance, MCR 3.708
+
+MISCONDUCT DOMAIN:
+  "bias" → bias, prejudice, partiality, favoritism, impartial, Canon 2, Canon 3
+  "ex parte" → ex parte, one-sided, without notice, same-day order, MCR 2.119(B)
+
+EVIDENCE DOMAIN:
+  "retaliation" → retaliation, retaliatory, punitive, in response to, after filing
+  "fabrication" → fabrication, fabricated, false, invented, manufactured, made up
+```
+
+### When to Invoke M13
+- **Any search query** where keyword-only might miss relevant results
+- **Before inserting placeholders** — hybrid search first, placeholder last
+- **Cross-table discovery** — finding connections between evidence, contradictions, and timeline
+- **Conceptual queries** — "evidence of bad faith" should find procedural abuse patterns
+
+---
+
+## ═══════════════════════════════════════════════════════════════
+## MODULE 14: IMPEACHMENT NETWORK BUILDER (APEX v3.0)
+## ═══════════════════════════════════════════════════════════════
+*NEW in APEX v3.0 — Builds actor-specific impeachment packages from 2,930 contradiction chains*
+
+### Purpose
+Individual contradictions are useful. Chains of contradictions are devastating.
+M14 builds a network graph of every actor's statements across time, detects
+chains (escalation, fabrication, retraction, coaching, shifting), and generates
+court-ready impeachment cross-examination outlines.
+
+### Data Sources
+```
+PRIMARY:
+  contradiction_map (10,672 entries) — individual contradictions
+  contradiction_chains (2,930 chains) — multi-link contradiction sequences
+  impeachment_items (15,171 entries) — impeachment-ready inconsistencies
+
+ENRICHMENT:
+  evidence_quotes (308,704) — supporting evidence for each chain link
+  police_intelligence (356 files) — police findings that confirm/refute claims
+  master_timeline (24,859 events) — temporal ordering of chain links
+  judicial_violations (1,127) — judge's own contradictions
+```
+
+### Chain Type Detection
+```
+ESCALATION CHAIN:
+  Input: All statements by actor X about topic Y, ordered by date
+  Detection: Severity monotonically increases without new precipitating events
+  Power multiplier: 1.5× (shows deliberate inflation)
+  Example: Emily re: Andrew's behavior: "uncomfortable" → "afraid" → "in danger" → "meth"
+
+FABRICATION CHAIN:
+  Input: All allegations by actor X, correlated with litigation filing dates
+  Detection: New allegation types appear within 14 days of adverse filing events
+  Power multiplier: 2.0× (strongest impeachment — shows motive to fabricate)
+  Example: New PPO amendment filed within 10 days of each custody hearing
+
+RETRACTION CHAIN:
+  Input: All claims by actor X that are later abandoned without explanation
+  Detection: Claim stated ≥3 times, then absent from all subsequent filings
+  Power multiplier: 1.3× (implies awareness of falsity)
+  Example: "9 CPS investigations" appears in 3 filings, then silently dropped
+
+COACHING CHAIN:
+  Input: Statements attributed to L.D.W. compared to Emily's filing language
+  Detection: n-gram overlap > 60% between child's statements and parent's pleadings
+  Power multiplier: 1.8× (devastating for Factor (j) analysis)
+  Caution: Child is age 3 — limited linguistic comparison. Flag, don't overclaim.
+
+SHIFTING CHAIN:
+  Input: Same event described by actor X to different audiences
+  Detection: Material differences in core facts across police, court, affidavit, testimony
+  Power multiplier: 1.7× (proves inconsistency across forums)
+  Example: Police report says X, PPO petition says Y, custody affidavit says Z
+```
+
+### Impeachment Package Generation
+```
+FOR EACH target actor (Emily Watson, Judge McNeill, Albert Watson, etc.):
+
+1. HARVEST all statements from contradiction_chains WHERE actor = ?
+2. CLUSTER by topic (custody, PPO, safety, financial, medical)
+3. DETECT chain types for each topic cluster
+4. SCORE each chain: chain_length × materiality × provability × type_multiplier
+5. RANK chains by impeachment_power (0-100)
+6. SELECT top 10 chains for cross-examination outline
+
+OUTPUT per actor:
+  actor_impeachment_package:
+    actor_name: string
+    total_contradictions: int
+    total_chains: int
+    chain_breakdown:
+      escalation: int
+      fabrication: int
+      retraction: int
+      coaching: int
+      shifting: int
+    top_chains: list[Chain]  # top 10 by power score
+    cross_exam_outline: list[CrossExamQuestion]
+    supporting_exhibits: list[ExhibitRef]
+    police_corroboration: list[PoliceRef]  # from M15
+```
+
+### Cross-Examination Outline Template (MRE 613)
+```
+CHAIN: [chain_id] — [chain_type] — Power Score: [score]
+
+Q1 (COMMIT): "Ms. Watson, you stated in your [document] dated [date] that [statement_v1], correct?"
+  → Lock witness into earliest version of claim
+
+Q2 (CREDIT): "And this [document] was [sworn/filed with the court/told to police], correct?"
+  → Establish reliability of the prior statement
+
+Q3 (CONFRONT): "But in your [later_document] dated [later_date], you stated [statement_v2], didn't you?"
+  → Present the contradiction
+
+Q4 (CONTRAST): "So the court has two different accounts from you — [v1] and [v2] — about the same event."
+  → Highlight for factfinder
+
+Q5 (POLICE): "And when police investigated your claim of [allegation], the result was [no charges/exculpatory], correct?"
+  → Reinforce with M15 police intelligence
+```
+
+---
+
+## ═══════════════════════════════════════════════════════════════
+## MODULE 15: POLICE INTELLIGENCE INTEGRATION (APEX v3.0)
+## ═══════════════════════════════════════════════════════════════
+*NEW in APEX v3.0 — 356 police files, 890 allegations, 101 exculpatory findings*
+
+### Purpose
+Police reports are the single most powerful source of independent, third-party evidence
+in this case. Unlike party statements, police findings carry presumptive reliability
+and are self-authenticating under MRE 902. M15 makes police intelligence queryable
+and cross-references it with every other module.
+
+### Evidence Arsenal
+```
+CORE STATISTICS (traceable — query police_intelligence table):
+  Total police files analyzed: 356
+  Total allegations documented: 890
+  Total exculpatory findings: 101  (favorable to Andrew)
+  PPO investigations triggered: 7
+  PPO investigations resulting in charges: 0  (ZERO out of 7)
+  Drug screen result: NEGATIVE
+  
+CRITICAL EXCULPATORY EVIDENCE:
+  ┌──────────────────────────────────────────────────────────────────┐
+  │ ALL 7 PPO INVESTIGATIONS = ZERO CHARGES                        │
+  │ This is the single most devastating piece of evidence.          │
+  │ Emily triggered 7 police investigations via PPO allegations.    │
+  │ Law enforcement investigated each one independently.            │
+  │ NONE resulted in criminal charges.                              │
+  │ The system that Emily weaponized cleared Andrew every time.     │
+  └──────────────────────────────────────────────────────────────────┘
+  
+  □ Drug screen: NEGATIVE (directly refutes "meth use" allegation)
+  □ Albert Watson: Filed FALSE FBI report against Andrew (documented)
+  □ Police attribution error: Emily stated "meth use" → officer wrote it →
+    Emily's filings cite OFFICER'S report as if it's the OFFICER'S finding
+  □ "Conflicting stories" — repeated police finding, no corroboration for Emily
+  □ Officer Randall (NS2505044): Documented Norton Shores PD involvement
+  □ Officer Hintz (MCSD-2024-02101): Documented Cody Watson threats
+```
+
+### Cross-Reference Protocol
+```
+M15 feeds INTO every other module:
+
+M1 (Evidence Pipeline):
+  → Classify police reports by lane (D for PPO, A for custody, E for misconduct)
+  → Extract police-specific atoms (POL, EXC types)
+
+M2 (Contradiction Engine):
+  → Compare Emily's court statements against police report findings
+  → Flag where allegation ≠ police finding (highest-value contradictions)
+
+M4 (Filing Factory):
+  → Every motion discussing Emily's allegations MUST include police outcomes
+  → Template: "While [allegation], police investigation found [outcome]"
+
+M5 (Strategic Command):
+  → 7/7 = 0 charges is the lead strategic argument for PPO termination
+  → Drug screen NEGATIVE is the lead rebuttal to substance abuse allegations
+
+M8 (QA):
+  → EXCULPATORY DISCLOSURE GATE: If filing mentions police, must include result
+  → No filing can cite an allegation without noting investigation outcome
+
+M10 (Adversary Intel):
+  → Police findings form the backbone of Emily's fabrication chain analysis
+  → Albert Watson's false FBI report feeds into third-party harassment pattern
+
+M14 (Impeachment Network):
+  → Police clearances strengthen every fabrication chain
+  → Cross-exam Q5 template uses police findings as capstone
+```
+
+### Query Templates
+```sql
+-- All exculpatory findings
+SELECT file_id, finding_type, finding_text, officer, date, case_reference
+FROM police_intelligence
+WHERE finding_type = 'EXCULPATORY'
+ORDER BY date DESC;
+
+-- Allegation vs. outcome comparison
+SELECT allegation_text, investigation_result, charges_filed, officer
+FROM police_intelligence
+WHERE allegation_source = 'Emily Watson'
+  AND investigation_result NOT LIKE '%charge%'
+ORDER BY date;
+
+-- PPO investigation outcomes
+SELECT investigation_id, trigger_event, result, charges_filed
+FROM police_intelligence
+WHERE investigation_type = 'PPO'
+ORDER BY date;
+-- Expected: 7 rows, all with charges_filed = 0
+
+-- Drug screen result
+SELECT test_date, test_type, result
+FROM police_intelligence
+WHERE test_type = 'DRUG_SCREEN';
+-- Expected: result = 'NEGATIVE'
+```
+
+### Authentication Foundation
+Police reports are self-authenticating under MRE 902(1) (domestic public documents under seal)
+and MRE 803(8) (public records exception to hearsay). Each police report in the
+evidence package should include:
+```
+AUTHENTICATION BLOCK:
+  Source: [Department] — [Report #]
+  Officer: [Name, Badge]
+  Date: [Report date]
+  MRE Foundation: Self-authenticating per MRE 902(1); public records
+    exception per MRE 803(8); certified copy available from [department]
+  Bates Range: PIGORS-[start] through PIGORS-[end]
+```
+
+---
+
+## ═══════════════════════════════════════════════════════════════
+## MODULE 16: THREE-COURT CONSPIRACY TRACKER (APEX v3.0)
+## ═══════════════════════════════════════════════════════════════
+*NEW in APEX v3.0 — Maps coordinated actions of Ladas, Hoopes & McNeill across all case lanes*
+
+### Purpose
+Three judges with shared law office history (Ladas Hoopes LLP) have oversight of
+interconnected cases involving Andrew Pigors. M16 tracks their actions across all
+case lanes, identifies coordinated timing patterns, and builds the evidence foundation
+for JTC complaints and MSC bypass applications.
+
+### The Three-Court Network
+```
+┌───────────────────────────────────────────────────────────────────┐
+│                    LADAS HOOPES LLP (PRIOR)                      │
+│                    Shared Law Office History                      │
+│                                                                   │
+│   ┌──────────────┐  ┌──────────────┐  ┌───────────────────┐     │
+│   │ Judge Ladas   │  │ Chief Judge  │  │ Judge Jenny L.    │     │
+│   │ Hoopes        │  │ Hoopes       │  │ McNeill (P-58235) │     │
+│   └──────┬───────┘  └──────┬───────┘  └────────┬──────────┘     │
+│          │                  │                    │                 │
+│   Housing/Civil      Administrative         Family/PPO            │
+│   Lane B             Case Assignment        Lane A + D + E        │
+│   2025-002760-CZ     Disqualification       2024-001507-DC        │
+│                      routing                 2023-5907-PP          │
+│                      COA panel?                                    │
+│                                                                   │
+│   PATTERN: Adverse rulings cluster within same 2-week windows     │
+│   PATTERN: Disqualification motions assigned to connected judges  │
+│   PATTERN: Ex parte orders issued without notice across courts    │
+└───────────────────────────────────────────────────────────────────┘
+```
+
+### Coordinated Action Detection
+```
+TIMING ANALYSIS:
+  For each pair of judges (Ladas↔McNeill, Hoopes↔McNeill, Ladas↔Hoopes):
+    1. Extract all adverse rulings with dates
+    2. Compute pairwise timing: |date_judge_A - date_judge_B|
+    3. Flag clusters where adverse rulings by 2+ judges fall within 14 days
+    4. Calculate expected random clustering rate vs. observed rate
+    5. Report clustering coefficient with statistical significance
+
+PROCEDURAL ANALYSIS:
+  - Track disqualification motion routing (who decides?)
+  - Track ex parte communication indicators
+  - Track case reassignment patterns
+  - Track shared clerk or staff connections
+  - Track identical or near-identical language in orders
+
+PATTERN CATEGORIES:
+  CONCURRENT   — Adverse rulings within 7 days of each other
+  SEQUENTIAL   — One judge's ruling immediately enables another's
+  REINFORCING  — Orders that reference or build on each other
+  BLOCKING     — One judge's order prevents remedy in another's court
+```
+
+### Evidence Mapping
+```sql
+-- All judicial actions by the three judges, chronologically
+SELECT judge_name, action_date, action_type, case_lane, order_text_summary,
+       adverse_to_andrew
+FROM three_court_tracker
+WHERE judge_name IN ('McNeill', 'Ladas Hoopes', 'Chief Judge Hoopes')
+ORDER BY action_date;
+
+-- Detect clustering: adverse actions within 14-day windows
+SELECT a.judge_name AS judge_1, b.judge_name AS judge_2,
+       a.action_date, b.action_date,
+       ABS(julianday(a.action_date) - julianday(b.action_date)) AS days_apart
+FROM three_court_tracker a
+JOIN three_court_tracker b ON a.judge_name != b.judge_name
+WHERE a.adverse_to_andrew = 1 AND b.adverse_to_andrew = 1
+  AND ABS(julianday(a.action_date) - julianday(b.action_date)) <= 14
+ORDER BY a.action_date;
+
+-- Canon violation mapping per judge
+SELECT judge_name, canon_violated, evidence_text, source_document
+FROM judicial_violations
+WHERE judge_name IN ('McNeill', 'Ladas Hoopes', 'Chief Judge Hoopes')
+ORDER BY judge_name, canon_violated;
+```
+
+### Feeds Into
+```
+M5 (Strategic Command):
+  → Three-court pattern is the CORE argument for MSC bypass
+  → "No adequate remedy in lower courts when the courts are coordinated"
+
+M6 (Domain Specialists — D-4 Judicial Analysis):
+  → Enriches McNeill profile with network connections
+  → Adds structural bias evidence beyond individual conduct
+
+M10 (Adversary Intel):
+  → Maps judicial network as part of broader adversary system
+  → Identifies which court actions may be coordinated responses to filings
+
+JTC Complaint:
+  → Each judge's Canon violations documented independently
+  → Cross-judge coordination is additional aggravating factor
+
+MSC Original Action:
+  → Superintending control argument: "systemic dysfunction requires Supreme Court intervention"
+  → Const 1963 art 6 §4: clear legal duty + no other adequate remedy
+```
+
+---
+
+## ═══════════════════════════════════════════════════════════════
+## APPENDIX D: CONVERGENCE VERIFICATION (APEX v3.0)
+## ═══════════════════════════════════════════════════════════════
+
+### Module Integrity Check (All 16 Modules)
+```
+MODULE REGISTRY — APEX v3.0:
+  ✅ M1  Evidence Intelligence Pipeline — Phase E-1 through E-6 + E-4b (hybrid indexing)
+  ✅ M2  Contradiction & Impeachment Engine — Phase C-1 through C-5 + C-1b (chain detection)
+  ✅ M3  Authority & Legal Research Engine — Phase A-1 through A-4
+  ✅ M4  Filing Factory — Phase F-1 through F-5
+  ✅ M5  Strategic Command & Warfare — Phase S-1 through S-5 + S-1b (impeachment targeting) + S-1c (MSC bypass)
+  ✅ M6  Domain Specialists — D-1 through D-6
+  ✅ M7  Database Intelligence Layer — Central DB + APEX tables + hybrid search + 24,859-event timeline
+  ✅ M8  Quality Assurance & Anti-Hallucination — Standard gates + APEX extended gates
+  ✅ M9  Master Execution Protocol — Smart Router + 14-Step Pipeline
+  ✅ M10 Adversary Intelligence — Behavioral profiles + APEX police intelligence profile
+  ✅ M11 MCP Tool Catalog — 45 tools with litigation_ prefix
+  ✅ M12 Self-Evolution Engine — Quality logging + convergence triggers
+  ✅ M13 Hybrid Intelligence Search — FTS5 + sqlite-vec + RRF + query expansion (NEW)
+  ✅ M14 Impeachment Network Builder — 2,930 chains + 5 chain types + cross-exam outlines (NEW)
+  ✅ M15 Police Intelligence Integration — 356 files, 890 allegations, 101 exculpatory (NEW)
+  ✅ M16 Three-Court Conspiracy Tracker — Ladas-Hoopes-McNeill mapping (NEW)
+```
+
+### DB Table Verification Queries
+```sql
+-- Run these queries to verify all referenced tables exist and have data:
+SELECT 'evidence_quotes' AS tbl, COUNT(*) AS cnt FROM evidence_quotes
+UNION ALL SELECT 'contradiction_map', COUNT(*) FROM contradiction_map
+UNION ALL SELECT 'impeachment_items', COUNT(*) FROM impeachment_items
+UNION ALL SELECT 'judicial_violations', COUNT(*) FROM judicial_violations
+UNION ALL SELECT 'pages', COUNT(*) FROM pages
+UNION ALL SELECT 'master_citations', COUNT(*) FROM master_citations
+UNION ALL SELECT 'claims', COUNT(*) FROM claims
+UNION ALL SELECT 'mega_file_harvest', COUNT(*) FROM mega_file_harvest;
+
+-- For APEX v3.0 tables (may need to be created by pipeline):
+-- These tables are populated by M13-M16 during pipeline execution
+-- If they don't exist yet, create them with:
+CREATE TABLE IF NOT EXISTS contradiction_chains (
+  chain_id TEXT PRIMARY KEY,
+  actor TEXT NOT NULL,
+  chain_type TEXT CHECK(chain_type IN ('ESCALATION','FABRICATION','RETRACTION','COACHING','SHIFTING')),
+  topic TEXT,
+  chain_length INTEGER,
+  materiality REAL,
+  provability REAL,
+  power_score REAL GENERATED ALWAYS AS (chain_length * materiality * provability) STORED,
+  links_json TEXT,  -- JSON array of {statement_id, date, source, text, severity}
+  created_at TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS police_intelligence (
+  file_id TEXT PRIMARY KEY,
+  file_path TEXT,
+  officer TEXT,
+  department TEXT,
+  date TEXT,
+  case_reference TEXT,
+  allegation_source TEXT,
+  allegation_text TEXT,
+  investigation_type TEXT,
+  investigation_result TEXT,
+  charges_filed INTEGER DEFAULT 0,
+  finding_type TEXT CHECK(finding_type IN ('ALLEGATION','EXCULPATORY','NEUTRAL','MIXED')),
+  finding_text TEXT,
+  lane TEXT,
+  test_type TEXT,  -- NULL unless drug screen or similar
+  result TEXT      -- NULL unless test result
+);
+
+CREATE TABLE IF NOT EXISTS master_timeline (
+  event_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  event_date TEXT NOT NULL,
+  event_description TEXT,
+  lane TEXT,
+  source_document TEXT,
+  actor TEXT,
+  event_type TEXT,
+  severity INTEGER DEFAULT 0,
+  verified BOOLEAN DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS three_court_tracker (
+  action_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  judge_name TEXT NOT NULL,
+  action_date TEXT,
+  action_type TEXT,
+  case_lane TEXT,
+  case_number TEXT,
+  order_text_summary TEXT,
+  adverse_to_andrew BOOLEAN DEFAULT 0,
+  canon_violated TEXT,
+  evidence_text TEXT,
+  source_document TEXT
+);
+
+CREATE VIRTUAL TABLE IF NOT EXISTS vec_evidence USING vec0(
+  embedding float[384],
+  +source_table TEXT,
+  +source_rowid INTEGER,
+  +lane TEXT
+);
+```
+
+### Test Query Verification Matrix
+```
+TEST 1: "Find all evidence of parenting time interference"
+  Route: M13 (Hybrid Search) + M7 (DB Intelligence)
+  FTS5: MATCH 'parenting AND time AND (interference OR withholding OR denial)'
+  Vector: encode("parenting time interference") → cosine search
+  RRF merge → Expected: hundreds of results across master_timeline + evidence_quotes
+  Verify: Results include canonical withholding periods (Mar-May 2024, Jul 2025-present)
+
+TEST 2: "Build impeachment package for Emily Watson"
+  Route: M14 (Impeachment Network) + M15 (Police Intelligence) + M2 (Contradiction Engine)
+  Step 1: Query contradiction_chains WHERE actor = 'Emily Watson'
+  Step 2: Classify chains by type (expect: ESCALATION, FABRICATION, SHIFTING)
+  Step 3: Cross-reference with police_intelligence (7 investigations, 0 charges)
+  Step 4: Generate cross-examination outline (MRE 613 template)
+  Verify: Package includes police clearance as capstone evidence
+
+TEST 3: "What contradictions exist in Judge McNeill's orders?"
+  Route: M14 + M16 (Three-Court Conspiracy) + M7
+  Step 1: Query contradiction_chains WHERE actor = 'McNeill'
+  Step 2: Query judicial_violations WHERE judge_name = 'McNeill'
+  Step 3: Query three_court_tracker for coordinated timing
+  Verify: Includes ex parte rate, muting pattern, rejected eval, Canon violations
+
+TEST 4: "Generate MSC bypass evidence summary"
+  Route: M5.S1c (MSC Bypass) + M15 (Police) + M16 (Three-Court) + M14 (Impeachment)
+  Step 1: Assemble 9-document package per M5.S1c template
+  Step 2: Include 7/7 = 0 charges from M15
+  Step 3: Include three-court coordination from M16
+  Step 4: Include top impeachment chains from M14
+  Verify: All 9 documents listed, all evidence traceable to DB queries
+```
+
+### Cross-Module Dependency Validation
+```
+M13 Hybrid Search → feeds ALL modules (search is foundational)
+M14 Impeachment Network → depends on: M2, M7; feeds: M4, M5, M8
+M15 Police Intelligence → depends on: M1, M7; feeds: M2, M4, M5, M8, M10, M14
+M16 Three-Court Conspiracy → depends on: M7; feeds: M5, M6, M10
+
+Circular dependency check: NONE (DAG verified)
+All new modules wire into existing Decision Tree branches ✅
+All new modules included in Smart Router ✅
+All new modules included in 14-Step Pipeline ✅
+All new QA gates reference new modules ✅
+Output Contract updated with new types and gates ✅
 ```
