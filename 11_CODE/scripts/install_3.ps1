@@ -1,0 +1,1 @@
+Write-Host 'Installing Canon Kernel v1.0 Appliance'
