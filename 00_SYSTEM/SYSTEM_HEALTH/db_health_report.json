@@ -1,0 +1,484 @@
+{
+  "timestamp": "2026-03-23T21:38:19.761957",
+  "scan_locations": [
+    "C:\\Users\\andre\\LitigationOS\\databases",
+    "C:\\Users\\andre\\LitigationOS\\09_DATA",
+    "C:\\Users\\andre\\LitigationOS",
+    "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\pipeline",
+    "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\novel",
+    "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\darwin"
+  ],
+  "total_databases": 46,
+  "ok_count": 43,
+  "empty_count": 2,
+  "error_count": 1,
+  "stale_moves": [
+    {
+      "source": "C:\\Users\\andre\\LitigationOS\\litigation_context (2).db",
+      "destination": "I:\\backups\\litigation_context_copy2_20260323_213739.db",
+      "status": "moved"
+    }
+  ],
+  "databases": [
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\darwin\\darwin.db",
+      "filename": "darwin.db",
+      "size_bytes": 626688,
+      "size_mb": 0.6,
+      "status": "ok",
+      "table_count": 5,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 5 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\novel\\novel.db",
+      "filename": "novel.db",
+      "size_bytes": 159744,
+      "size_mb": 0.15,
+      "status": "ok",
+      "table_count": 7,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 7 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\pipeline\\agents\\master_index.db",
+      "filename": "master_index.db",
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "status": "empty",
+      "table_count": 0,
+      "journal_mode": "",
+      "detail": "0 bytes \u2014 needs rebuild"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\pipeline\\pipeline.db",
+      "filename": "pipeline.db",
+      "size_bytes": 0,
+      "size_mb": 0.0,
+      "status": "empty",
+      "table_count": 0,
+      "journal_mode": "",
+      "detail": "0 bytes \u2014 needs rebuild"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\4302_VAR_Unnamed_20250107_190300_190300.db",
+      "filename": "4302_VAR_Unnamed_20250107_190300_190300.db",
+      "size_bytes": 188416,
+      "size_mb": 0.18,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 11 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\authority_master.db",
+      "filename": "authority_master.db",
+      "size_bytes": 87265280,
+      "size_mb": 83.22,
+      "status": "ok",
+      "table_count": 18,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 18 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\databases\\lane_E_misconduct.db",
+      "filename": "lane_E_misconduct.db",
+      "size_bytes": 520192,
+      "size_mb": 0.5,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 11 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\databases\\lane_F_appellate.db",
+      "filename": "lane_F_appellate.db",
+      "size_bytes": 507904,
+      "size_mb": 0.48,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 11 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\ec.db",
+      "filename": "ec.db",
+      "size_bytes": 29954048,
+      "size_mb": 28.57,
+      "status": "ok",
+      "table_count": 2,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 2 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Install.db",
+      "filename": "Install.db",
+      "size_bytes": 27648,
+      "size_mb": 0.03,
+      "status": "ok",
+      "table_count": 10,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 10 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\lane_A_custody.db",
+      "filename": "lane_A_custody.db",
+      "size_bytes": 593920,
+      "size_mb": 0.57,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 11 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\lane_B_housing.db",
+      "filename": "lane_B_housing.db",
+      "size_bytes": 630784,
+      "size_mb": 0.6,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 11 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\lane_C_convergence.db",
+      "filename": "lane_C_convergence.db",
+      "size_bytes": 589824,
+      "size_mb": 0.56,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 11 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\lane_D_ppo.db",
+      "filename": "lane_D_ppo.db",
+      "size_bytes": 512000,
+      "size_mb": 0.49,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 11 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\litigation_lite.db",
+      "filename": "litigation_lite.db",
+      "size_bytes": 52695040,
+      "size_mb": 50.25,
+      "status": "ok",
+      "table_count": 15,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 15 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Media_db.db",
+      "filename": "Media_db.db",
+      "size_bytes": 29696,
+      "size_mb": 0.03,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 11 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190255_190255.db",
+      "filename": "Unnamed_20250107_190255_190255.db",
+      "size_bytes": 51200,
+      "size_mb": 0.05,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 11 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190256_190257.db",
+      "filename": "Unnamed_20250107_190256_190257.db",
+      "size_bytes": 74752,
+      "size_mb": 0.07,
+      "status": "ok",
+      "table_count": 53,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 53 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190257_190257.db",
+      "filename": "Unnamed_20250107_190257_190257.db",
+      "size_bytes": 672768,
+      "size_mb": 0.64,
+      "status": "ok",
+      "table_count": 53,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 53 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190258.db",
+      "filename": "Unnamed_20250107_190258.db",
+      "size_bytes": 34816,
+      "size_mb": 0.03,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 11 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190258_190258.db",
+      "filename": "Unnamed_20250107_190258_190258.db",
+      "size_bytes": 4320256,
+      "size_mb": 4.12,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 11 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190300.db",
+      "filename": "Unnamed_20250107_190300.db",
+      "size_bytes": 31744,
+      "size_mb": 0.03,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 11 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190301.db",
+      "filename": "Unnamed_20250107_190301.db",
+      "size_bytes": 74752,
+      "size_mb": 0.07,
+      "status": "ok",
+      "table_count": 53,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 53 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190303.db",
+      "filename": "Unnamed_20250107_190303.db",
+      "size_bytes": 74752,
+      "size_mb": 0.07,
+      "status": "ok",
+      "table_count": 53,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 53 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_191620_191620.db",
+      "filename": "Unnamed_20250107_191620_191620.db",
+      "size_bytes": 74752,
+      "size_mb": 0.07,
+      "status": "ok",
+      "table_count": 53,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 53 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_191621_191621.db",
+      "filename": "Unnamed_20250107_191621_191621.db",
+      "size_bytes": 4245504,
+      "size_mb": 4.05,
+      "status": "ok",
+      "table_count": 11,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 11 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\usage.db",
+      "filename": "usage.db",
+      "size_bytes": 56,
+      "size_mb": 0.0,
+      "status": "corrupt",
+      "table_count": -1,
+      "journal_mode": "unknown",
+      "detail": "error: file is not a database"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\court_forms.db",
+      "filename": "court_forms.db",
+      "size_bytes": 163840,
+      "size_mb": 0.16,
+      "status": "ok",
+      "table_count": 7,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 7 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\court_forms.db",
+      "filename": "court_forms.db",
+      "size_bytes": 94208,
+      "size_mb": 0.09,
+      "status": "ok",
+      "table_count": 9,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 9 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_14th_circuit_civil.db",
+      "filename": "jurisdiction_14th_circuit_civil.db",
+      "size_bytes": 32768,
+      "size_mb": 0.03,
+      "status": "ok",
+      "table_count": 7,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 7 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_14th_circuit_family.db",
+      "filename": "jurisdiction_14th_circuit_family.db",
+      "size_bytes": 45056,
+      "size_mb": 0.04,
+      "status": "ok",
+      "table_count": 8,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 8 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_coa.db",
+      "filename": "jurisdiction_coa.db",
+      "size_bytes": 36864,
+      "size_mb": 0.04,
+      "status": "ok",
+      "table_count": 8,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 8 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_federal_wdmi.db",
+      "filename": "jurisdiction_federal_wdmi.db",
+      "size_bytes": 69632,
+      "size_mb": 0.07,
+      "status": "ok",
+      "table_count": 8,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 8 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_jtc.db",
+      "filename": "jurisdiction_jtc.db",
+      "size_bytes": 57344,
+      "size_mb": 0.05,
+      "status": "ok",
+      "table_count": 7,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 7 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_msc.db",
+      "filename": "jurisdiction_msc.db",
+      "size_bytes": 61440,
+      "size_mb": 0.06,
+      "status": "ok",
+      "table_count": 7,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 7 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\lane_C_convergence.db",
+      "filename": "lane_C_convergence.db",
+      "size_bytes": 86016,
+      "size_mb": 0.08,
+      "status": "ok",
+      "table_count": 4,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 4 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\legal_iq.db",
+      "filename": "legal_iq.db",
+      "size_bytes": 53248,
+      "size_mb": 0.05,
+      "status": "ok",
+      "table_count": 6,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 6 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\litigation_skills.db",
+      "filename": "litigation_skills.db",
+      "size_bytes": 53248,
+      "size_mb": 0.05,
+      "status": "ok",
+      "table_count": 6,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 6 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\michigan_judicial_system.db",
+      "filename": "michigan_judicial_system.db",
+      "size_bytes": 53248,
+      "size_mb": 0.05,
+      "status": "ok",
+      "table_count": 7,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 7 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\procedures.db",
+      "filename": "procedures.db",
+      "size_bytes": 53248,
+      "size_mb": 0.05,
+      "status": "ok",
+      "table_count": 6,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 6 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\fred_prime_index.db",
+      "filename": "fred_prime_index.db",
+      "size_bytes": 8192,
+      "size_mb": 0.01,
+      "status": "ok",
+      "table_count": 1,
+      "journal_mode": "delete",
+      "detail": "Integrity OK, 1 tables, delete mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\litigation_context.db",
+      "filename": "litigation_context.db",
+      "size_bytes": 702660608,
+      "size_mb": 670.11,
+      "status": "ok",
+      "table_count": 166,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 166 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\litigationos.db",
+      "filename": "litigationos.db",
+      "size_bytes": 188416,
+      "size_mb": 0.18,
+      "status": "ok",
+      "table_count": 25,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 25 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\mcr_rules.db",
+      "filename": "mcr_rules.db",
+      "size_bytes": 3878912,
+      "size_mb": 3.7,
+      "status": "ok",
+      "table_count": 5,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 5 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\script_forge.db",
+      "filename": "script_forge.db",
+      "size_bytes": 221413376,
+      "size_mb": 211.16,
+      "status": "ok",
+      "table_count": 26,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 26 tables, wal mode"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\script_vault.db",
+      "filename": "script_vault.db",
+      "size_bytes": 204800,
+      "size_mb": 0.2,
+      "status": "ok",
+      "table_count": 10,
+      "journal_mode": "wal",
+      "detail": "Integrity OK, 10 tables, wal mode"
+    }
+  ]
+}

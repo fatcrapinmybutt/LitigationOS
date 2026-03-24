@@ -175,9 +175,19 @@ def generate_report():
     except:
         report["hf_models"] = []
 
-    # HF Legal Engine availability
-    hf_engine = LITIGOS_ROOT / "00_SYSTEM" / "local_model" / "hf_legal_engine.py"
-    report["hf_engine_available"] = hf_engine.exists()
+    # Engine availability (NOVEL, DARWIN, inference_engine)
+    try:
+        engines_status = {}
+        engine_paths = {
+            "novel": LITIGOS_ROOT / "00_SYSTEM" / "novel" / "novel_engine.py",
+            "darwin": LITIGOS_ROOT / "00_SYSTEM" / "darwin" / "darwin_engine.py",
+            "inference": LITIGOS_ROOT / "00_SYSTEM" / "local_model" / "inference_engine.py",
+        }
+        for name, path in engine_paths.items():
+            engines_status[name] = path.exists()
+        report["engines"] = engines_status
+    except Exception:
+        report["engines"] = {}
 
     # Jurisdiction databases
     jur_db_dir = LITIGOS_ROOT / "databases"
@@ -460,11 +470,18 @@ def format_markdown(report):
         lines.append("")
 
     # HF Models
+    # Engine status
+    engines = report.get("engines", {})
+    if engines:
+        lines.append("## AI Engines")
+        for eng_name, available in engines.items():
+            icon = "✅" if available else "❌"
+            lines.append(f"- {icon} **{eng_name.upper()}**")
+        lines.append("")
+
     hf_models = report.get("hf_models", [])
     if hf_models:
         lines.append("## HuggingFace AI Models")
-        lines.append(f"- **HF Legal Engine:** {'✅ READY' if report.get('hf_engine_available') else '❌ NOT FOUND'}")
-        lines.append(f"- **Engine path:** `00_SYSTEM/local_model/hf_legal_engine.py`")
         for m in hf_models:
             status_icon = "✅" if m["status"] == "ready" else "❌"
             lines.append(f"- {status_icon} `{m['id']}` — {m['purpose']}")
@@ -486,7 +503,7 @@ def format_markdown(report):
     lines.append("- Query: `SELECT * FROM master_todos WHERE status='pending' ORDER BY id LIMIT 20`")
     lines.append("- Run NEXUS benchmark: `python 00_SYSTEM/local_model/nexus_engine.py --benchmark`")
     lines.append("- Run NEXUS status: `python 00_SYSTEM/local_model/nexus_engine.py --status`")
-    lines.append("- Run HF engine: `python 00_SYSTEM/local_model/hf_legal_engine.py --benchmark`")
+    lines.append("- Run inference engine: `cd 00_SYSTEM/local_model && python inference_engine.py --benchmark`")
     lines.append("- Run NOVEL perceive: `cd 00_SYSTEM/novel && python novel_engine.py perceive`")
     lines.append("- Run NOVEL evolve: `cd 00_SYSTEM/novel && python novel_engine.py evolve`")
     lines.append("- Run DARWIN evolve: `cd 00_SYSTEM/darwin && python darwin_engine.py evolve`")
