@@ -350,19 +350,16 @@ class ChimeraEngine:
 
     @staticmethod
     def _pat_accusation_timing(stmts, _contras) -> List[Dict]:
-        accuse_topics = {"physical_violence", "threats", "fear", "substance_abuse", "child_welfare"}
-        hits = [s for s in stmts if s["speaker"] == "Emily Watson" and s["topic"] in accuse_topics]
-        if len(hits) < 2:
-            return []
+        hits = [s for s in stmts if s["speaker"] == "Emily Watson"
+                and s["topic"] in {"physical_violence", "threats", "fear", "substance_abuse", "child_welfare"}]
+        if len(hits) < 2: return []
         topics_seen = ", ".join(sorted({s["topic"] for s in hits}))
         dr = f"{hits[0].get('statement_date', '?')} to {hits[-1].get('statement_date', '?')}"
-        return [dict(
-            description=(f"Emily Watson made {len(hits)} accusatory statements across "
-                         f"topics: {topics_seen}. Recommend cross-reference against court docket dates."),
-            evidence_refs=[s["id"] for s in hits[:10]],
-            confidence=min(0.5 + len(hits) * 0.05, 0.95),
-            speaker="Emily Watson", date_range=dr,
-        )]
+        return [dict(description=(f"Emily Watson made {len(hits)} accusatory statements across "
+                                  f"topics: {topics_seen}. Recommend cross-ref against court docket dates."),
+                     evidence_refs=[s["id"] for s in hits[:10]],
+                     confidence=min(0.5 + len(hits) * 0.05, 0.95),
+                     speaker="Emily Watson", date_range=dr)]
 
     @staticmethod
     def _pat_escalation(_stmts, contras) -> List[Dict]:
