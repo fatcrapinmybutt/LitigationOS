@@ -165,7 +165,7 @@ The following chronology is drawn from **4,660 timeline events** (Lane E) and **
 46. **Unknown date** **[critical]** — [brain_14_mcneill.json] > g - Documented alienating statements - Maternal grandmother's written trespass threats - Violation of custody order's communication provisions Judge McNeill did not address alienation in any order. **Violation 3: Failure to Issue Findings of Fact and Conclusions of Law** Ju
 47. **Unknown date** **[critical]** — [brain_18_alienation.json] > nted alienating statements - Maternal grandmother's written trespass threats - Violation of custody order's communication provisions Judge McNeill's response: - No sanctions imposed - No protective orders issued - No findings regarding alienation - Continued to restrict 
 48. **Unknown date** **[critical]** — [_extracted_data.json] Highlight omissions → emphasize that Emily never mentions Lincoln’s best interests or name in her Ex Parte motion.ECE damage → juxtapose your texts about therapy, holidays, and consistent contact with Emily’s refusals and denials.Civil preservation → embed the arsenic/Ozempic 
-49. **Unknown date** **[critical]** — [brain_10_emily.json] > G FACILITATIVE INFORMATION GATHERING CONFERENCE (Legal: MCR 3.207(B)(2)) (Source: - CHATGPT/32objections.docx) - 23. [ExParte] NOW COMES Defendant, Emily Ann Watson, by and through her Attorney, Jennifer L. Barnes - of Barnes Law Firm, PLLC, and files this Objection to Ex Par
+49. **Unknown date** **[critical]** — [brain_10_emily.json] > G FACILITATIVE INFORMATION GATHERING CONFERENCE (Legal: MCR 3.207(B)(2)) (Source: - CHATGPT/32objections.docx) - 23. [ExParte] NOW COMES Defendant, Emily A. Watson, by and through her Attorney, Jennifer L. Barnes - of Barnes Law Firm, PLLC, and files this Objection to Ex Par
 50. **Unknown date** **[critical]** — [LITIGATION_OS__ALL_PC_EVIDENCE_EXTRACTED__Uncategorized__MindEye2_Fixed_Pack_47MB (4)__MindEye2_nodes.json] of America (shadow operator, ex parte beneficiary, eviction enforcer). \n - Partridge Securities (financial clearinghouse). \n - Alden Global Capital (ultimate parent). \n\n- **Violation Laye
 
 *[5257 additional entries omitted for brevity — full dataset in litigation_context.db]*
@@ -823,7 +823,7 @@ the circumstances, falls within any of the following categories:
 > (a) The judge is biased or prejudiced for or against a party or attorney.
 43. **Unknown date** **[medium]** — An investigation or proceeding may not be held invalid because of a nonprejudicial irregularity
 or an error not resulting in a miscarriage of justice.
-44. **Unknown date** **[high]** — [ExParte] NOW COMES Defendant, Emily Ann Watson, by and through her Attorney, Jennifer L.
+44. **Unknown date** **[high]** — [ExParte] NOW COMES Defendant, Emily A. Watson, by and through her Attorney, Jennifer L.
 45. **Unknown date** **[medium]** — Consolidating these cases will enable the court to address the improper use of the PPO 
 and issues related to custody and parenting time more efficiently, ensuring the best 
 interests of LDW are protected.

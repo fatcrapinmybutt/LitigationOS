@@ -233,10 +233,10 @@ Plaintiff has experienced barriers to obtaining medical information about L.D.W.
 | 12 | _extracted_data.json | ppo | add an Exhibit List page, cover pages for each exhibit, keep exhibits to a bare minimum. healthwest, judges prior orders | 85.0 |
 | 13 | LITIGATION_OS__ALL_PC_EVIDENCE_EXTRACTED | financial | PIGORS v WATSON FILE # 2024-001507-DC Recommendation dated 3/26/25 PAGE 8 Parties to Communicate via co-parenting applic | 82.0 |
 | 14 | brain_14_mcneill.json | witness | > n. Jenny L. McNeill - v. - EMILY WATSON, - Defendant. - AFFIDAVIT OF ANDREW J. PIGORS - Expanded Specific Instances fr | 82.0 |
-| 15 | analysis_data.json | witness | Affidavit Chat/Evidence Harvest (v3) ATGPT/32objections.docx) 51. [ExParte] NOW COMES Defendant, Emily Ann Watson, by an | 77.0 |
+| 15 | analysis_data.json | witness | Affidavit Chat/Evidence Harvest (v3) ATGPT/32objections.docx) 51. [ExParte] NOW COMES Defendant, Emily A. Watson, by an | 77.0 |
 | 16 | LITIGATION_OS__ALL_PC_EVIDENCE_EXTRACTED | custody | ": "file_search", "metadata": {}}, "create_time": 1753552633.733861, "update_time": null, "content": {"content_type": "t | 75.0 |
-| 17 | SCANNEDcustody scanned_0001__custody_sca | financial | ST ATE OF M CH GAN N THE i4" C RCU T COURT FOR THE COUNTY OF MUSKEGON ANDREW JAMES PIGORS, Plaintiff, -VS- EMILY ANN WAT | 74.0 |
-| 18 | SCANNEDcustody scanned2_0070__custody_sc | financial | ST ATE OF M CH GAN N THE 1 4th C RCUIT FOR THE COUNTY OF MUSKEGON ANDREW JAMES PIGORS, Plaintiff, -VS- EMILY ANN WATSON, | 74.0 |
+| 17 | SCANNEDcustody scanned_0001__custody_sca | financial | ST ATE OF M CH GAN N THE i4" C RCU T COURT FOR THE COUNTY OF MUSKEGON ANDREW JAMES PIGORS, Plaintiff, -VS- EMILY A. WAT | 74.0 |
+| 18 | SCANNEDcustody scanned2_0070__custody_sc | financial | ST ATE OF M CH GAN N THE 1 4th C RCUIT FOR THE COUNTY OF MUSKEGON ANDREW JAMES PIGORS, Plaintiff, -VS- EMILY A. WATSON, | 74.0 |
 | 19 | LITIGATION_OS__ALL_PC_EVIDENCE_EXTRACTED | custody | "weight": 1.0, "metadata": {"async_source": "688067c766808191b1f51e45d04a4b23", "timestamp_": "absolute"}, "recipient":  | 74.0 |
 | 20 | brain_38_credibility.json | witness | > ) - under penalty of perjury - PPO Hearing (Jan 2024) - sworn testimony - Custody Trial (July 2024) - sworn testimony  | 74.0 |
 | 21 | brain_11_albert.json | threat | > - **Albert Watson's role**: Orchestrated ex parte custody grab - **HIPAA violation**: Emily accessed Andrew's health r | 74.0 |
@@ -267,7 +267,7 @@ Plaintiff has experienced barriers to obtaining medical information about L.D.W.
 | 12 | LITIGATION_OS__ALL_PC_EVIDENCE_EXTRACTED | financial | pient": "all", "channel": null}, "parent": "bbb21ad2-191b-4910-a235-e216d0440445", "children": ["bbb21501-2b7c-4cca-b6c8 | 79.0 |
 | 13 | operating_order_pins_custody.json | witness | PIGORS v WATSON FILE # 2024-001507-DC Recommendation dated 3/26/25 PAGE 10 July 16, 2024: Plaintiff filed a Motion for C | 77.0 |
 | 14 | SCANNEDcustody scanned_0001__custody_sca | witness | S TATE O F MIC HIG A N IN THE 1 4th CIRCUIT FOR THE COUNTY OF MUSKEGON ***** ANDREW JAMES PIGORS, Plaintiff, -VS- EMILY  | 77.0 |
-| 15 | SCANNEDcustody scanned2_0070__custody_sc | witness | S TATE O F MIC HiG A N IN THE 141h C!RCUIT FOR THE COUNTY OF MUSKEGON ANDREW JAMES PIGORS, Plaintiff, -VS- EMILY ANN WAT | 77.0 |
+| 15 | SCANNEDcustody scanned2_0070__custody_sc | witness | S TATE O F MIC HiG A N IN THE 141h C!RCUIT FOR THE COUNTY OF MUSKEGON ANDREW JAMES PIGORS, Plaintiff, -VS- EMILY A. WAT | 77.0 |
 | 16 | LITIGATION_OS__ALL_PC_EVIDENCE_EXTRACTED | financial | PAGE I 990 TERRACE STREET, MUSKEGON MI 49442 TO : ANDREW JAMES PIGORS 1977 WHITEHALL RD NORTH MUSKEGON MI 49445 Plaintif | 74.0 |
 | 17 | LITIGATION_OS__ALL_PC_EVIDENCE_EXTRACTED | due_process | n - All affidavits and declarations now include:\n > \u201cPetitioner asserts that the opposing party has repeatedly eng | 74.0 |
 | 18 | _extracted_data.json | financial | i want to re use this program, but to find and organize all data regarding emily watson, custody, parenting time, child  | 74.0 |
@@ -301,7 +301,10 @@ The following critical facts have been documented and verified in the litigation
 
 6. **[analytical_finding]** Added findings from Drive:  - Your affidavits reference Emily’s objections to the ex parte order and your consolidated rebuttals; they also log a Nov 30, 2023 video involving Albert and Emily. fileci *(Source: C:\Users\andre\Downloads\conversations.json)*
 
-7. **[general]** # ⚖️ Judicial Bias & Misconduct Timeline — Judge Jenny L. McNeill  1. **Appellate escalation** — show a consistent pattern of due process denial, ex parte misuse, and failure to make findings. 2. * *(Source: C:\Users\andre\Downloads\conversations.json)*
+7. **[general]** # ⚖️ Judicial Bias & Misconduct Timeline — Judge Jenny L. McNeill
+ 
+ 1. **Appellate escalation** — show a consistent pattern of due process denial, ex parte misuse, and failure to make findings.
+ 2. * *(Source: C:\Users\andre\Downloads\conversations.json)*
 
 8. **[analytical_finding]** To build a formal JTC complaint with integrated supplemental pages, I need a few specific confirmations:  1. **Respondent Judge Full Name and Role**: Is it "Hon. Jenny L. McNeill, Family Division, 14t *(Source: C:\Users\andre\Downloads\conversations.json)*
 

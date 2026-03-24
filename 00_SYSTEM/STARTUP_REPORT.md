@@ -1,5 +1,5 @@
 # 🐻 THE MANBEARPIG — Startup Report
-**Generated:** 2026-03-23T15:35:41.581082
+**Generated:** 2026-03-23T20:56:20.018769
 **Engine:** THE-MANBEARPIG x NEXUS v11.0 OMEGA-SUPREME
 **Parent-Child Separation:** **227 DAYS** (since Aug 8, 2025)
 
@@ -55,7 +55,7 @@
 ### NOVEL v2 (Invention Factory)
 - **Status:** ✅ ACTIVE — 156KB
 - **Inventions:** 22 total (6 prototyped, 0 tested, 0 deployed)
-- **Gaps tracked:** 27
+- **Gaps tracked:** 29
 - **Evolution cycles:** 2
 - **Best fitness:** 0.72
 - **Commands:** `perceive` `scan` `compose` `evolve` `validate` `forge` `dashboard`
@@ -67,13 +67,30 @@
 - **Best fitness:** 0
 - **Run:** `cd 00_SYSTEM/darwin && python darwin_engine.py evolve`
 
+## ⚖️ Legal Intelligence Engines
+### LEXICON (Michigan Legal Authority Database)
+- **Status:** ✅ ACTIVE — 308KB
+- **Total rules:** 148 (MCR:36 MCL:30 MRE:63)
+- **Cross-references:** 28
+- **Filing requirements:** 32
+- **Deadline rules:** 15
+- **Evidence decision trees:** 10
+- **Canon violations (JTC):** 7
+- **Run:** `cd 00_SYSTEM/engines/lexicon && python lexicon_engine.py ask "your question"`
+
+### ORACLE (Rule Reasoning Engine)
+- **Status:** ✅ ACTIVE
+- **Capabilities:** roadmap, deadlines, checklists, forms, service, risks
+- **Run:** `cd 00_SYSTEM/engines/oracle && python oracle_engine.py roadmap <type> <court>`
+- **Deadlines:** `python oracle_engine.py deadlines motion_filing --date YYYY-MM-DD`
+
 ---
 *MANBEARPIG v11.0 OMEGA-SUPREME — Zero external API. Every assertion DB-grounded.*
 
 ## Drive State
 | Drive | Free GB | Total GB | Status |
 |-------|---------|----------|--------|
-| C: | 11.83 | 237.69 | 🟢 OK |
+| C: | 9.39 | 237.69 | 🟢 OK |
 | D: | 1.02 | 31.99 | 🔴 CRITICAL |
 | F: | 7.45 | 31.99 | 🟢 OK |
 | G: | 18.63 | 25.75 | 🟢 OK |

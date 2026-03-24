@@ -212,7 +212,7 @@ Jurisdiction is therefore properly vested in this Court.
 
 ### A. Background and Parties
 
-Plaintiff-Appellant Andrew J. Pigors ("Father") and Defendant-Appellee Emily A. Watson ("Mother") are the biological parents of one minor child, Lincoln D.W. Pigors ("LDW" or "Lincoln"), born in 2022. (R. at 1.) At all relevant times, the parties resided in Muskegon County, Michigan, within the jurisdiction of the 14th Circuit Court. All proceedings below were before the Honorable Jenny L. McNeill. (R. at 1.)
+Plaintiff-Appellant Andrew J. Pigors ("Father") and Defendant-Appellee Emily A. Watson ("Mother") are the biological parents of one minor child, L.D.W.W. Pigors ("LDW" or "Lincoln"), born in 2022. (R. at 1.) At all relevant times, the parties resided in Muskegon County, Michigan, within the jurisdiction of the 14th Circuit Court. All proceedings below were before the Honorable Jenny L. McNeill. (R. at 1.)
 
 ### B. Pre-Litigation Period (2022-2023)
 

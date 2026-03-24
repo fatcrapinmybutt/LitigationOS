@@ -13,7 +13,7 @@ ANDREW J. PIGORS,                         )
                                            )
 v.                                         )   COMPLAINT FOR DAMAGES
                                            )   (Jury Trial Demanded)
-EMILY ANN WATSON,                          )
+EMILY A. WATSON,                          )
 ALBERT WATSON,                             )   Hon. ___________________
 LORI WATSON, and                           )   [To Be Assigned by Clerk]
 CODY WATSON,                               )
@@ -25,15 +25,15 @@ ___________________________________________)
 
 # PLAINTIFF'S VERIFIED COMPLAINT FOR TORT DAMAGES
 
-COMES NOW Plaintiff Andrew J. Pigors, a self-represented litigant proceeding in propria persona, and for his Complaint against Defendants Emily Ann Watson, Albert Watson, Lori Watson, and Cody Watson, pursuant to MCR 2.111(B)(1) (general rules of pleading) and MCR 2.112(B)(1) (fraud pled with particularity), states as follows:
+COMES NOW Plaintiff Andrew J. Pigors, a self-represented litigant proceeding in propria persona, and for his Complaint against Defendants Emily A. Watson, Albert Watson, Lori Watson, and Cody Watson, pursuant to MCR 2.111(B)(1) (general rules of pleading) and MCR 2.112(B)(1) (fraud pled with particularity), states as follows:
 
 ---
 
 ## I. PARTIES
 
-1. Plaintiff Andrew J. Pigors ("Plaintiff" or "Father") is a natural person and resident of the State of Michigan, residing at 1977 Whitehall Road, Trailer 17, North Muskegon, Michigan 49445. Plaintiff may be reached at (231) 260-1936 and andrewjpigors@gmail.com. Plaintiff is the biological father of the minor child, Lincoln Watson ("Lincoln" or "the child"), born during the parties' relationship, whose custody is at issue in the related domestic relations case Pigors v. Watson, Case No. 2024-001507-DC, 14th Circuit Court, Muskegon County.
+1. Plaintiff Andrew J. Pigors ("Plaintiff" or "Father") is a natural person and resident of the State of Michigan, residing at 1977 Whitehall Road, Trailer 17, North Muskegon, Michigan 49445. Plaintiff may be reached at (231) 260-1936 and andrewjpigors@gmail.com. Plaintiff is the biological father of the minor child, L.D.W. ("Lincoln" or "the child"), born during the parties' relationship, whose custody is at issue in the related domestic relations case Pigors v. Watson, Case No. 2024-001507-DC, 14th Circuit Court, Muskegon County.
 
-2. Defendant Emily Ann Watson ("Emily" or "Defendant Watson") is a natural person and resident of the State of Michigan, residing at 2160 Garland Drive, Norton Shores, Michigan 49441. Emily is the biological mother of Lincoln and has been employed by the Kent County Prosecutor's Office, Family Court Division, as a caseworker for approximately nine (9) years. Emily is the primary actor in the tortious conduct described herein and the custodial parent under existing orders in Case No. 2024-001507-DC.
+2. Defendant Emily A. Watson ("Emily" or "Defendant Watson") is a natural person and resident of the State of Michigan, residing at 2160 Garland Drive, Norton Shores, Michigan 49441. Emily is the biological mother of Lincoln and has been employed by the Kent County Prosecutor's Office, Family Court Division, as a caseworker for approximately nine (9) years. Emily is the primary actor in the tortious conduct described herein and the custodial parent under existing orders in Case No. 2024-001507-DC.
 
 3. Defendant Albert Watson ("Albert") is a natural person and resident of the State of Michigan, residing at or about 2160 Garland Drive, Norton Shores, Michigan 49441. Albert is Emily's father and has participated in and facilitated the coordinated tortious conduct described herein, including harboring the child, blocking Plaintiff's access, and providing material support for the alienation campaign.
 
@@ -107,7 +107,7 @@ COMES NOW Plaintiff Andrew J. Pigors, a self-represented litigant proceeding in 
 
 ### F. The Ex Parte Suspension — August 8, 2025
 
-29. On August 8, 2025, Defendant Emily Watson filed an Emergency Ex Parte Motion to Suspend Plaintiff's Parenting Time. As the motion states: "NOW COMES Defendant, Emily Watson, files the Emergency Ex Parte Motion to Suspend Parenting Time" — asserting that she had "sole physical custody of the minor child, Lincoln Watson, and sole legal custody of the minor child, Lincoln Watson."
+29. On August 8, 2025, Defendant Emily Watson filed an Emergency Ex Parte Motion to Suspend Plaintiff's Parenting Time. As the motion states: "NOW COMES Defendant, Emily Watson, files the Emergency Ex Parte Motion to Suspend Parenting Time" — asserting that she had "sole physical custody of the minor child, L.D.W., and sole legal custody of the minor child, L.D.W.."
 
 30. The Court signed the ex parte order suspending all of Plaintiff's parenting time on August 8, 2025, without providing Plaintiff notice, an opportunity to be heard, or any findings that Plaintiff posed a danger to Lincoln or that unsupervised parenting time was unsafe. MCR 3.207(B) requires that ex parte orders in domestic relations cases include specific facts in a verified pleading demonstrating that the child will be exposed to a risk of physical or emotional harm, and the ex parte order shall schedule a hearing within 14 days. MCR 3.207(B)(5)–(6). No such findings were made. This constitutes a due process violation under the Fourteenth Amendment to the United States Constitution, *Troxel v. Granville*, 530 U.S. 57, 65 (2000), and MCR 3.207(B).
 
@@ -315,7 +315,7 @@ COMES NOW Plaintiff Andrew J. Pigors, a self-represented litigant proceeding in 
 
 ### Application (Pled with Particularity)
 
-87. **WHO:** Defendant Emily Ann Watson, individually and through her attorneys Jennifer L. Barnes (P55406) and others.
+87. **WHO:** Defendant Emily A. Watson, individually and through her attorneys Jennifer L. Barnes (P55406) and others.
 
 88. **WHAT — False Statement 1:** In the Emergency Ex Parte Motion to Suspend Plaintiff's Parenting Time filed on August 8, 2025, Emily Watson represented to the Court that an emergency existed requiring the immediate suspension of Plaintiff's parenting time. Emily Watson failed to disclose material facts showing that Plaintiff posed no danger to Lincoln, including photographs from the July 29, 2025 exchange showing Lincoln healthy and happy in Plaintiff's care.
 
@@ -547,7 +547,7 @@ Email: andrewjpigors@gmail.com
 
 I hereby certify that on the ______ day of _____________, 2026, I served a true and correct copy of the foregoing PLAINTIFF'S VERIFIED COMPLAINT FOR TORT DAMAGES upon all Defendants by first-class mail, postage prepaid, and by personal service or certified mail, return receipt requested, at the following addresses:
 
-**Defendant Emily Ann Watson**
+**Defendant Emily A. Watson**
 c/o Jennifer L. Barnes (P55406), Attorney for Defendant
 Barnes Law Firm, PLLC
 880 Jefferson St., Ste. B

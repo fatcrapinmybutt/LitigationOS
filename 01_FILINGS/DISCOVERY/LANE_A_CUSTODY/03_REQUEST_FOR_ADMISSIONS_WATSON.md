@@ -137,7 +137,7 @@ ________________________________/
 
 **REQUEST NO. 37:** Admit that Plaintiff called Child Protective Services one (1) time regarding concerns about L.D.W.'s welfare.
 
-**REQUEST NO. 38:** Admit that the claim that "nine (9) CPS investigations" were initiated by Plaintiff against you is false.
+**REQUEST NO. 38:** Admit that the claim that "[VERIFY — check actual CPS count from records]" were initiated by Plaintiff against you is false.
 
 **REQUEST NO. 39:** Admit that you filed a PPO petition in Case No. 2023-5907-PP alleging that Plaintiff engaged in stalking behavior, and that no criminal stalking charge was ever filed against Plaintiff.
 
