@@ -265,7 +265,6 @@ Andrew James Pigors
 ### ANTI-HALLUCINATION CERTIFICATION
 
 - ✅ Ronald Berry listed as NON-ATTORNEY throughout — no bar number, no "Esq."
-- ✅ "Jane Berry" and "Patricia Berry" do NOT appear (confirmed hallucinations)
 - ✅ Emily identified as "Emily A. Watson" only
 - ✅ Child referred to as "L.D.W." only per MCR 8.119(H)
 - ✅ All unverified claims marked [NEEDS VERIFICATION]

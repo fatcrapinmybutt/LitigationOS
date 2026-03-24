@@ -114,8 +114,7 @@ All court filings (motions, briefs, petitions, complaints, affidavits, applicati
 - Verify every statistic is traceable to a DB query
 - Verify no fabricated names, bar numbers, or case numbers
 - Verify no inflated evidence counts (deduplicated)
-- Check for "Jane Berry", "Patricia Berry" — PURGE if found
-- Verify no "91% alienation score" or similar pseudo-science
+- Verify no "documented pattern of parental alienation" or similar pseudo-science
 - Every claim must have evidence or [EVIDENCE NEEDED] tag
 - OUTPUT: Audit checklist (PASS/FAIL per item)
 

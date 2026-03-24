@@ -1,0 +1,292 @@
+{
+  "timestamp": "2026-03-23T22:56:02.739439",
+  "files_scanned": 22317,
+  "files_modified": 22,
+  "pattern_counts": {
+    "tiffany_watson": 80,
+    "jane_berry": 22,
+    "patricia_berry": 13,
+    "alienation_91": 19,
+    "cps_9": 15,
+    "berry_esq": 14
+  },
+  "changes": [
+    {
+      "file": "00_SYSTEM\\tools\\adversary_intelligence.py",
+      "pattern": "jane_berry",
+      "count": 1,
+      "action": "Removed lines containing \"Jane Berry\""
+    },
+    {
+      "file": "00_SYSTEM\\tools\\contradiction_detector.py",
+      "pattern": "tiffany_watson",
+      "count": 4,
+      "action": "Tiffany Watson \u2192 Emily A. Watson"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\court_compliance_validator.py",
+      "pattern": "jane_berry",
+      "count": 2,
+      "action": "Removed lines containing \"Jane Berry\""
+    },
+    {
+      "file": "00_SYSTEM\\tools\\court_compliance_validator.py",
+      "pattern": "patricia_berry",
+      "count": 2,
+      "action": "Removed lines containing \"Patricia Berry\""
+    },
+    {
+      "file": "00_SYSTEM\\tools\\court_compliance_validator.py",
+      "pattern": "alienation_91",
+      "count": 3,
+      "action": "91% alienation score \u2192 documented pattern of parental alienation"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\court_compliance_validator.py",
+      "pattern": "cps_9",
+      "count": 2,
+      "action": "9 CPS investigations \u2192 CPS records [VERIFY]"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\decontamination_w9.py",
+      "pattern": "tiffany_watson",
+      "count": 5,
+      "action": "Tiffany Watson \u2192 Emily A. Watson"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\decontamination_w9.py",
+      "pattern": "jane_berry",
+      "count": 8,
+      "action": "Removed lines containing \"Jane Berry\""
+    },
+    {
+      "file": "00_SYSTEM\\tools\\decontamination_w9.py",
+      "pattern": "patricia_berry",
+      "count": 6,
+      "action": "Removed lines containing \"Patricia Berry\""
+    },
+    {
+      "file": "00_SYSTEM\\tools\\decontamination_w9.py",
+      "pattern": "alienation_91",
+      "count": 5,
+      "action": "91% alienation score \u2192 documented pattern of parental alienation"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\decontamination_w9.py",
+      "pattern": "cps_9",
+      "count": 5,
+      "action": "9 CPS investigations \u2192 CPS records [VERIFY]"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\decontamination_w9.py",
+      "pattern": "berry_esq",
+      "count": 8,
+      "action": "Ronald Berry Esq/attorney \u2192 Ronald Berry"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\decontamination_w9.py",
+      "pattern": "berry_esq",
+      "count": 2,
+      "action": "Berry, Esq \u2192 Berry"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\filing_auto_patcher.py",
+      "pattern": "alienation_91",
+      "count": 2,
+      "action": "91% alienation score \u2192 documented pattern of parental alienation"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\filing_readiness_scorecard.py",
+      "pattern": "jane_berry",
+      "count": 1,
+      "action": "Removed lines containing \"Jane Berry\""
+    },
+    {
+      "file": "00_SYSTEM\\tools\\filing_readiness_scorecard.py",
+      "pattern": "patricia_berry",
+      "count": 1,
+      "action": "Removed lines containing \"Patricia Berry\""
+    },
+    {
+      "file": "00_SYSTEM\\tools\\filing_readiness_scorecard.py",
+      "pattern": "cps_9",
+      "count": 1,
+      "action": "9 CPS investigations \u2192 CPS records [VERIFY]"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\quality_audit_verifier.py",
+      "pattern": "cps_9",
+      "count": 1,
+      "action": "9 CPS investigations \u2192 CPS records [VERIFY]"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\witness_credibility_scorer.py",
+      "pattern": "tiffany_watson",
+      "count": 1,
+      "action": "Tiffany Watson \u2192 Emily A. Watson"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\audit_scripts\\scan_filings.py",
+      "pattern": "jane_berry",
+      "count": 1,
+      "action": "Removed lines containing \"Jane Berry\""
+    },
+    {
+      "file": "00_SYSTEM\\tools\\audit_scripts\\scan_filings.py",
+      "pattern": "patricia_berry",
+      "count": 1,
+      "action": "Removed lines containing \"Patricia Berry\""
+    },
+    {
+      "file": "00_SYSTEM\\tools\\_self_test_output\\Cover_Exhibit_A.md",
+      "pattern": "tiffany_watson",
+      "count": 1,
+      "action": "Tiffany Watson \u2192 Emily A. Watson"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\_self_test_output\\Cover_Exhibit_B.md",
+      "pattern": "tiffany_watson",
+      "count": 1,
+      "action": "Tiffany Watson \u2192 Emily A. Watson"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\_self_test_output\\Cover_Exhibit_C.md",
+      "pattern": "tiffany_watson",
+      "count": 1,
+      "action": "Tiffany Watson \u2192 Emily A. Watson"
+    },
+    {
+      "file": "00_SYSTEM\\tools\\_self_test_output\\Cover_Exhibit_D.md",
+      "pattern": "tiffany_watson",
+      "count": 1,
+      "action": "Tiffany Watson \u2192 Emily A. Watson"
+    },
+    {
+      "file": "01_FILINGS\\QA_CONVERGENCE_REPORT.md",
+      "pattern": "jane_berry",
+      "count": 3,
+      "action": "Removed lines containing \"Jane Berry\""
+    },
+    {
+      "file": "01_FILINGS\\QA_CONVERGENCE_REPORT.md",
+      "pattern": "patricia_berry",
+      "count": 1,
+      "action": "Removed lines containing \"Patricia Berry\""
+    },
+    {
+      "file": "01_FILINGS\\QA_CONVERGENCE_REPORT.md",
+      "pattern": "alienation_91",
+      "count": 1,
+      "action": "91% alienation score \u2192 documented pattern of parental alienation"
+    },
+    {
+      "file": "01_FILINGS\\QA_CONVERGENCE_SWEEP_FINAL.md",
+      "pattern": "tiffany_watson",
+      "count": 6,
+      "action": "Tiffany Watson \u2192 Emily A. Watson"
+    },
+    {
+      "file": "01_FILINGS\\QA_CONVERGENCE_SWEEP_FINAL.md",
+      "pattern": "jane_berry",
+      "count": 2,
+      "action": "Removed lines containing \"Jane Berry\""
+    },
+    {
+      "file": "01_FILINGS\\QA_CONVERGENCE_SWEEP_FINAL.md",
+      "pattern": "alienation_91",
+      "count": 6,
+      "action": "91% alienation score \u2192 documented pattern of parental alienation"
+    },
+    {
+      "file": "01_FILINGS\\QA_CONVERGENCE_SWEEP_FINAL.md",
+      "pattern": "berry_esq",
+      "count": 4,
+      "action": "Berry, Esq \u2192 Berry"
+    },
+    {
+      "file": "01_FILINGS\\QA_DECONTAMINATION_REPORT_2026-03-24.md",
+      "pattern": "tiffany_watson",
+      "count": 56,
+      "action": "Tiffany Watson \u2192 Emily A. Watson"
+    },
+    {
+      "file": "01_FILINGS\\QA_DECONTAMINATION_REPORT_2026-03-24.md",
+      "pattern": "jane_berry",
+      "count": 1,
+      "action": "Removed lines containing \"Jane Berry\""
+    },
+    {
+      "file": "01_FILINGS\\QA_DECONTAMINATION_REPORT_2026-03-24.md",
+      "pattern": "patricia_berry",
+      "count": 1,
+      "action": "Removed lines containing \"Patricia Berry\""
+    },
+    {
+      "file": "01_FILINGS\\QA_DECONTAMINATION_REPORT_2026-03-24.md",
+      "pattern": "alienation_91",
+      "count": 1,
+      "action": "91% alienation score \u2192 documented pattern of parental alienation"
+    },
+    {
+      "file": "01_FILINGS\\QA_DECONTAMINATION_REPORT_2026-03-24.md",
+      "pattern": "cps_9",
+      "count": 1,
+      "action": "9 CPS investigations \u2192 CPS records [VERIFY]"
+    },
+    {
+      "file": "01_FILINGS\\QA_REPORT_FINAL.md",
+      "pattern": "tiffany_watson",
+      "count": 2,
+      "action": "Tiffany Watson \u2192 Emily A. Watson"
+    },
+    {
+      "file": "01_FILINGS\\QA_REPORT_FINAL.md",
+      "pattern": "alienation_91",
+      "count": 1,
+      "action": "91% alienation score \u2192 documented pattern of parental alienation"
+    },
+    {
+      "file": "01_FILINGS\\QA_REPORT_FINAL.md",
+      "pattern": "cps_9",
+      "count": 2,
+      "action": "9 CPS investigations \u2192 CPS records [VERIFY]"
+    },
+    {
+      "file": "01_FILINGS\\CLERK_READY\\QA_REPORT.md",
+      "pattern": "cps_9",
+      "count": 3,
+      "action": "9 CPS investigations \u2192 CPS records [VERIFY]"
+    },
+    {
+      "file": "01_FILINGS\\DISQUALIFICATION\\BERRY_MCNEILL_INVESTIGATION.md",
+      "pattern": "jane_berry",
+      "count": 2,
+      "action": "Removed lines containing \"Jane Berry\""
+    },
+    {
+      "file": "01_FILINGS\\DISQUALIFICATION\\BERRY_MCNEILL_INVESTIGATION.md",
+      "pattern": "patricia_berry",
+      "count": 1,
+      "action": "Removed lines containing \"Patricia Berry\""
+    },
+    {
+      "file": "01_FILINGS\\DISQUALIFICATION\\MCR_2003_DISQUALIFICATION_BRIEF.md",
+      "pattern": "jane_berry",
+      "count": 1,
+      "action": "Removed lines containing \"Jane Berry\""
+    },
+    {
+      "file": "05_BAR_BARNES\\CONVERGED_FILING_STACK\\07_APEX_INTELLIGENCE\\01_STATEMENT_OF_FACTS_CHRONOLOGICAL.txt",
+      "pattern": "tiffany_watson",
+      "count": 1,
+      "action": "Tiffany Watson \u2192 Emily A. Watson"
+    },
+    {
+      "file": "05_BAR_BARNES\\CONVERGED_FILING_STACK\\07_APEX_INTELLIGENCE\\05_ADVERSARY_REBUTTAL_FRAMEWORK.txt",
+      "pattern": "tiffany_watson",
+      "count": 1,
+      "action": "Tiffany Watson \u2192 Emily A. Watson"
+    }
+  ],
+  "errors": []
+}

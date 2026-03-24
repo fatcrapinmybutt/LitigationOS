@@ -172,7 +172,7 @@ def verify_number(claim, db_counts):
         if 'cps' in context:
             result['status'] = 'UNVERIFIABLE'
             result['confidence'] = 'LOW'
-            result['note'] = 'CPS count MUST be verified from actual records — prior sessions fabricated "9 CPS investigations"'
+            result['note'] = 'CPS count MUST be verified from actual records — prior sessions fabricated "CPS records [VERIFY — check actual CPS records for count]"'
     
     return result
 

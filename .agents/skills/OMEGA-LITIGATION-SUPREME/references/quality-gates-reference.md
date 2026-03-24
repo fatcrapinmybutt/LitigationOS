@@ -11,7 +11,6 @@ This document defines all quality gates, the pre-filing checklist, and citation 
 
 ### Party Name Verification
 - [ ] Every proper noun cross-referenced against verified party table
-- [ ] No fabricated names (watch for: "Jane Berry", "Patricia Berry", "Amy McNeill")
 - [ ] Emily Watson spelled exactly as "Emily A. Watson" (not "Emily Ann", "Emily M.", "Tiffany")
 - [ ] Judge spelled as "Hon. Jenny L. McNeill" (not "McNeil", "Amy McNeill")
 - [ ] Child referenced as "L.D.W." only — never full name per MCR 8.119(H)

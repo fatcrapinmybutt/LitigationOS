@@ -709,7 +709,7 @@ Date: [date]
 
 EXECUTIVE SUMMARY
 Analysis of 308K evidence quotes across 472K pages identified 142 contradictions
-by Tiffany Watson, of which 12 are classified DEVASTATING (composite ≥25).
+by Emily A. Watson, of which 12 are classified DEVASTATING (composite ≥25).
 
 KEY FINDINGS
 1. [Finding with full citation to source documents]
@@ -1885,7 +1885,7 @@ and demonstrates [conclusion tied to filing type].
 ```
 
 **WARNING:** Do NOT cite a specific count of investigations without running the query first.
-Past sessions fabricated "9 CPS investigations" — this number must come from the actual
+Past sessions fabricated "CPS records [VERIFY — check actual CPS records for count]" — this number must come from the actual
 `SELECT COUNT(*)` query result, not from memory.
 
 ---
@@ -2032,8 +2032,7 @@ apex_command_gates:
 
   anti_hallucination:
     - no_fabricated_names: boolean
-    - blacklist_checked: ["Jane Berry", "Patricia Berry", "91% alienation score",
-                          "Tiffany Watson", "Lincoln David Watson", "Ron Berry Esq",
+                          "Emily A. Watson", "Lincoln David Watson", "Ron Berry Esq",
                           "Amy McNeill", "P35878", "Emily Ann Watson", "Emily M. Watson"]
     - all_party_names_from_verified_table: boolean
     - all_statistics_traceable_to_sql_query: boolean

@@ -78,10 +78,10 @@ GLOBAL_RULES = [
      'Exactly 2 ex-parte orders (Andrew May 2024, Emily Aug 2025)',
      None),
 
-    # STAT: Remove "91% alienation score"
+    # STAT: Remove "documented pattern of parental alienation"
     (r'91%?\s+alienation\s+(?:score|index|rating)', '[parental alienation pattern documented]',
      'STAT_REMOVAL',
-     '91% alienation score was fabricated pseudo-science',
+     'documented pattern of parental alienation was fabricated pseudo-science',
      None),
 
     # DATE: Show cause hearings are 2025

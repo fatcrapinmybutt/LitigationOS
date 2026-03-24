@@ -61,7 +61,7 @@ Run BEFORE any content is finalized:
 ```python
 # Check for known hallucinations
 BANNED_STRINGS = [
-    "91% alienation", "Tiffany Watson", "Lincoln David Watson",
+    "91% alienation", "Emily A. Watson", "Lincoln David Watson",
     "Ron Berry, Esq", "Jane Berry", "Patricia Berry",
     "SBN P35878", "9 CPS investigations"
 ]

@@ -23,7 +23,7 @@
 | Jobs lost | 3 | 3 | ✅ PASS |
 | Income | $19.86/hr, $2,900/mo, Shape Corp | $19.86/hour ($2,900/month) at Shape Corporation | ✅ PASS |
 | Address | 1423 W. Norton Ave, Muskegon, MI 49441 | 1423 W. Norton Ave, Muskegon, MI 49441 | ✅ PASS |
-| "9 CPS investigations" | Must NOT appear | Not present | ✅ PASS |
+| "CPS records [VERIFY — check actual CPS records for count]" | Must NOT appear | Not present | ✅ PASS |
 | Poisoning test | NEGATIVE | NEGATIVE result | ✅ PASS |
 | PPO number/status | 2023-05907-PP, 12/5/2023, "NOT SERVED" | 2023-05907-PP, December 5, 2023, "NOT SERVED" | ✅ PASS |
 | L.D.W. birthdays | 2nd=2024, 3rd=2025 | "two birthdays (his 2nd and 3rd)" — correct | ✅ PASS |
@@ -122,7 +122,7 @@
 | Jobs lost | 3 | 3 | ✅ PASS |
 | Income | $19.86/hr, $2,900/mo | $19.86/hour ($2,900/month) at Shape Corporation | ✅ PASS |
 | Address | 1423 W. Norton Ave | 1423 W. Norton Ave, Muskegon, MI 49441 | ✅ PASS |
-| "9 CPS investigations" | Must NOT appear | Not present | ✅ PASS |
+| "CPS records [VERIFY — check actual CPS records for count]" | Must NOT appear | Not present | ✅ PASS |
 | PPO status | "NOT SERVED" | "NOT SERVED" — ¶17(h) | ✅ PASS |
 
 **Factual Errors Found:** 0.
@@ -219,7 +219,7 @@
 | Interference incidents | 305 | 305+ documented incidents | ✅ PASS |
 | Jobs lost | 3 | 3 | ✅ PASS |
 | Address | 1423 W. Norton Ave, Muskegon, MI 49441 | 1423 W. Norton Ave, Muskegon, MI 49441 | ✅ PASS |
-| "9 CPS investigations" | Must NOT appear | Not present | ✅ PASS |
+| "CPS records [VERIFY — check actual CPS records for count]" | Must NOT appear | Not present | ✅ PASS |
 | Poisoning test | NEGATIVE | NEGATIVE result | ✅ PASS |
 | L.D.W. 2nd birthday | 11/9/2024 | November 9, 2024 | ✅ PASS |
 | L.D.W. 3rd birthday | 11/9/2025 | November 9, 2025 | ✅ PASS |

@@ -296,9 +296,9 @@ invoke litigation-filing-architect --action C1 --mode template
 **Multi-Lane Packaging**: When assembling filings, the manifest (`01_FILINGS/MASTER_FILING_MANIFEST.md`) tracks status across ALL lanes. Use it as the source of truth for what exists vs what's needed.
 
 **Fabrication Guardrails** (CRITICAL):
-- NEVER use "9 CPS investigations" (fabricated)
+- NEVER use "CPS records [VERIFY — check actual CPS records for count]" (fabricated)
 - NEVER cite McCraney v Ford Motor Co 282 Mich App 647 (hallucinated)
-- Use "305 documented interference incidents" NOT "91% alienation score"
+- Use "305 documented interference incidents" NOT "documented pattern of parental alienation"
 - Use "215+ days" NOT "329+" or "571+"
 - Poisoning allegation tested NEGATIVE — never assert it as true
 - L.D.W. birthday math: DOB 11/9/2022, so 1st=2023, 2nd=2024, 3rd=2025

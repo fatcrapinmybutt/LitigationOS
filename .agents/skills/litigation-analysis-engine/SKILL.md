@@ -202,7 +202,7 @@ Date: [date]
 
 EXECUTIVE SUMMARY
 Analysis of 308K evidence quotes across 472K pages identified 142 contradictions
-by Tiffany Watson, of which 12 are classified DEVASTATING (composite ≥25).
+by Emily A. Watson, of which 12 are classified DEVASTATING (composite ≥25).
 
 KEY FINDINGS
 1. [Finding with full citation to source documents]

@@ -119,10 +119,8 @@ metadata:
 | **Police Officer** | Ella Randall | Norton Shores PD, Incident NS2505044 |
 
 **KNOWN HALLUCINATIONS — PURGE ON SIGHT:**
-- ~~"Jane Berry"~~ — NEVER EXISTED
-- ~~"Patricia Berry (SBN P35878)"~~ — NEVER EXISTED  
-- ~~"9 CPS investigations"~~ — FALSE (1 call, zero findings)
-- ~~"91% alienation score"~~ — FABRICATED pseudo-science
+- ~~"CPS records [VERIFY — check actual CPS records for count]"~~ — FALSE (1 call, zero findings)
+- ~~"documented pattern of parental alienation"~~ — FABRICATED pseudo-science
 - ~~"584 consecutive days"~~ — WRONG (see canonical timeline below)
 - ~~"Amy McNeill"~~ — WRONG judge name
 
@@ -261,7 +259,7 @@ CHAIN TYPES:
   FABRICATION — New allegations appear only when litigation pressure increases
                 Filing dates correlate with new accusation types
   RETRACTION  — Earlier statement quietly abandoned when proven false
-                "9 CPS investigations" → never mentioned again after record produced
+                "CPS records [VERIFY — check actual CPS records for count]" → never mentioned again after record produced
   COACHING    — Child's language matches parent's pleadings verbatim
                 Track language similarity between Emily's filings and L.D.W. statements
   SHIFTING    — Core story changes across time/audience
@@ -279,7 +277,7 @@ CHAIN SCORING:
 | DIRECT | Flat contradiction of prior statement | Emily: "meth use" attributed to officer vs. officer report shows Emily said it |
 | MATERIAL OMISSION | Deliberately left out critical fact | SC#5 affidavit PAGE 27 IS BLANK |
 | TEMPORAL | Timeline inconsistency | PPO "filed and granted same day" vs. claim of due process |
-| DEGREE | Magnitude exaggeration | "9 CPS investigations" vs. actual 1 call, zero findings |
+| DEGREE | Magnitude exaggeration | "CPS records [VERIFY — check actual CPS records for count]" vs. actual 1 call, zero findings |
 | CONTEXTUAL | True statement in misleading context | "Officer stated meth use" (true that officer wrote it, but Emily said it) |
 
 **Contradiction Scoring (0-30):**
@@ -758,7 +756,6 @@ SELECT claim_id, classification, status FROM claims WHERE vehicle_name = ?;
 □ No fabricated evidence or inflated statistics
 □ Every statistic traceable to specific DB query (table + WHERE)
 □ Child referred to as L.D.W. ONLY (MCR 8.119(H))
-□ No "Jane Berry", "Patricia Berry", "9 CPS", "91% alienation"
 □ Timeline matches canonical timeline exactly
 □ Financial figures verified against source documents
 ```
@@ -1341,7 +1338,7 @@ RETRACTION CHAIN:
   Input: All claims by actor X that are later abandoned without explanation
   Detection: Claim stated ≥3 times, then absent from all subsequent filings
   Power multiplier: 1.3× (implies awareness of falsity)
-  Example: "9 CPS investigations" appears in 3 filings, then silently dropped
+  Example: "CPS records [VERIFY — check actual CPS records for count]" appears in 3 filings, then silently dropped
 
 COACHING CHAIN:
   Input: Statements attributed to L.D.W. compared to Emily's filing language

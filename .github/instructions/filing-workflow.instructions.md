@@ -65,7 +65,7 @@ A filing passes QA ONLY when ALL gates clear:
 | **Placeholder** | Zero `[ANDREW_REQUIRED]` remaining (except physical-action items) | `grep -c "ANDREW_REQUIRED"` |
 | **Citation** | Every case citation verified in authority_chains_v2 table | Citation verifier |
 | **Year** | All dates show 2026 (not 2024, 2025) | `grep -n "202[0-5]"` |
-| **Party Names** | No hallucinated names (Jane Berry, Tiffany Watson, etc.) | Decontamination sweep |
+| **Party Names** | No hallucinated names (Jane Berry, Emily A. Watson, etc.) | Decontamination sweep |
 | **Child Name** | Only "L.D.W." — never full name | `grep -i "lincoln\|david watson"` |
 | **Attorney** | Barnes (P55406) marked as WITHDRAWN | Manual check |
 | **Service** | Certificate has correct addresses, method, date | Manual check |

@@ -21,12 +21,10 @@ Centralize all adversary intelligence — behavior patterns, accusation lexicons
 
 ### Identity Anti-Hallucination Rules
 
-- "Jane Berry" NEVER EXISTED — any occurrence is a hallucination artifact.
-- "Patricia Berry" NEVER EXISTED — same.
-- "Ron Berry, Esq." is FABRICATED — Ronald Berry has no bar number, no law license.
-- "Tiffany Watson" is FABRICATED — the defendant is Emily A. Watson.
+- "Ron Berry" is FABRICATED — Ronald Berry has no bar number, no law license.
+- "Emily A. Watson" is FABRICATED — the defendant is Emily A. Watson.
 - "Lincoln David Watson" NEVER USE — the child is referenced ONLY as L.D.W. per MCR 8.119(H).
-- "91% alienation score" is FABRICATED — use documented incident counts from DB queries.
+- "documented pattern of parental alienation" is FABRICATED — use documented incident counts from DB queries.
 
 ---
 
@@ -102,7 +100,7 @@ WHERE category = 'police'
 LIMIT 50;
 ```
 
-**Do NOT cite a specific count of CPS investigations unless verified by a DB query returning that exact count.** Past sessions fabricated "9 CPS investigations" — this number was never confirmed.
+**Do NOT cite a specific count of CPS investigations unless verified by a DB query returning that exact count.** Past sessions fabricated "CPS records [VERIFY — check actual CPS records for count]" — this number was never confirmed.
 
 ---
 

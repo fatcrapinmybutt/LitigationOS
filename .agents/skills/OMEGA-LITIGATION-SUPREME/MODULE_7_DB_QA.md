@@ -290,16 +290,14 @@ Insert `[VERIFY — not found in DB]` rather than guessing.
 - **Case citations** — Every cite must exist in `authority_chains` or `master_citations`
 - **Evidence statistics** — Every count must come from `SELECT COUNT(*)`
 - **Dates** — Every date must come from `docket_events` or `deadlines`
-- **Scores or percentages** — No synthetic scoring (no "91% alienation score")
+- **Scores or percentages** — No synthetic scoring (no "documented pattern of parental alienation")
 
 #### KNOWN HALLUCINATIONS TO PURGE ON SIGHT:
 
 | Hallucination | Reality | Origin |
 |---------------|---------|--------|
-| "Jane Berry" | **Never existed** — fabricated party | Sessions 2024-12 through 2025-02 |
-| "Patricia Berry (SBN P35878)" | **Never existed** — fabricated attorney | Same sessions |
-| "9 CPS investigations" | **Unverified count** — no DB source | Inflated from partial data |
-| "91% alienation score" | **Pseudo-scientific** — no valid methodology | Synthetic generation |
+| "CPS records [VERIFY — check actual CPS records for count]" | **Unverified count** — no DB source | Inflated from partial data |
+| "documented pattern of parental alienation" | **Pseudo-scientific** — no valid methodology | Synthetic generation |
 | "584 consecutive days" | **Unverified** — requires date math against DB | Hallucinated round number |
 | "Amy McNeill" | **Wrong name** — Judge is Jenny L. McNeill | Persistent name confusion |
 | "Emily Ann Watson" | **Wrong middle** — Emily A. Watson only | Middle name fabrication |

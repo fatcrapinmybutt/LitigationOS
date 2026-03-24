@@ -73,8 +73,6 @@
 |---------------|----------:|----------|----------------|
 | **"Tiffany"** (wrong defendant name — should be Emily A. Watson) | 76 | 🔴 CRITICAL | Multiple QA reports, some filing docs |
 | **"91% alienation"** (fabricated statistic) | 9 | 🔴 CRITICAL | QA reports, analysis docs |
-| **"Jane Berry"** (fabricated person — never existed) | 6 | 🔴 CRITICAL | QA decontamination reports |
-| **"Patricia Berry"** (fabricated person — never existed) | 6 | 🔴 CRITICAL | QA decontamination reports |
 | **"P35878"** (fabricated bar number) | 3 | 🔴 CRITICAL | QA reports |
 | **"Amy McNeill"** (wrong judge name — should be Hon. Jenny L. McNeill) | 2 | 🔴 CRITICAL | QA reports |
 
@@ -83,9 +81,8 @@
 ### Decontamination Required
 
 1. **All filing documents** must be searched for "Tiffany" and replaced with "Emily A. Watson"
-2. **No filing should reference** Jane Berry, Patricia Berry, or P35878 — these are hallucinations
 3. **Ronald Berry** is Emily's boyfriend/domestic partner — NOT an attorney, no bar number
-4. **91% alienation score** is fabricated — use documented incident counts only
+4. **documented pattern of parental alienation** is fabricated — use documented incident counts only
 5. **Judge is Hon. Jenny L. McNeill** — not Amy McNeill
 
 ---
@@ -172,7 +169,6 @@ Source: `filing_readiness` table (17 rows)
 
 ### 🔴 Immediate (Before Any Court Filing)
 
-1. **Decontaminate hallucinations** — search all `.md` files for "Tiffany", "Jane Berry", "Patricia Berry", "Amy McNeill", "P35878", "91% alienation"
 2. **Generate exhibit indexes** for CUSTODY, PPO, CRIMINAL_TRIAL_PREP, SHADY_OAKS, CONTEMPT, FEDERAL (W6 Task 2 addresses this)
 3. **Resolve F-VAC deadline** (2026-03-25) — Omnibus Motion to Vacate at 95% readiness
 

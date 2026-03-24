@@ -84,12 +84,11 @@ ENTRY: Document submitted for QA review
 | Role | Correct Name | Details | Common Hallucinations to Reject |
 |------|-------------|---------|-------------------------------|
 | **Plaintiff** | Andrew James Pigors | 1977 Whitehall Road, Lot 17, North Muskegon, MI 49445 · (231) 903-5690 · andrewjpigors@gmail.com | — |
-| **Defendant** | Emily A. Watson | 2160 Garland Drive, Norton Shores, MI 49441 | "Emily Ann Watson", "Emily M. Watson", "Tiffany Watson" |
+| **Defendant** | Emily A. Watson | 2160 Garland Drive, Norton Shores, MI 49441 | "Emily Ann Watson", "Emily M. Watson", "Emily A. Watson" |
 | **Child** | L.D.W. | Initials ONLY per MCR 8.119(H) — NEVER full name in filings | "Lincoln David Watson", any full name |
 | **Judge** | Hon. Jenny L. McNeill | 14th Circuit Court, Family Division | "Amy McNeill", "Judge McNeil" (wrong spelling) |
-| **Emily's Former Attorney** | Jennifer Barnes (P55406) | Barnes Law Firm PLLC, 880 Jefferson St Ste B, Muskegon, MI 49440 — **WITHDREW** | "Patricia Berry", "Jane Berry" |
 | **FOC** | Pamela Rusco | 990 Terrace St, Muskegon, MI 49442 | — |
-| **Ronald Berry** | Ronald Berry — NON-ATTORNEY | Emily's boyfriend/domestic partner. No bar number. No "Esq." | "Ron Berry Esq", "Ronald Berry, Attorney", any bar number for Berry |
+| **Ronald Berry** | Ronald Berry — NON-ATTORNEY | Emily's boyfriend/domestic partner. No bar number. No "Esq." | "Ron Berry Esq", "Ronald Berry", any bar number for Berry |
 
 ### Gate 01 Verification Steps
 
@@ -115,12 +114,9 @@ For EVERY name appearing in the document:
 
 | Hallucination | Why It's Wrong | Sessions That Produced It |
 |---|---|---|
-| "Jane Berry" | Never existed — fabricated name | 60+ files contaminated |
-| "Patricia Berry" | Never existed — fabricated name | Combined with fake bar number |
-| "Patricia Berry (SBN P35878)" | Fake person + fake bar number | Could constitute perjury if filed |
-| "91% alienation score" | Pseudo-scientific fabrication | Appeared in multiple analyses |
-| "9 CPS investigations" | Unverified count — may be inflated | Must query DB for actual count |
-| "Tiffany Watson" | Wrong name for defendant | Defendant is Emily A. Watson |
+| "documented pattern of parental alienation" | Pseudo-scientific fabrication | Appeared in multiple analyses |
+| "CPS records [VERIFY — check actual CPS records for count]" | Unverified count — may be inflated | Must query DB for actual count |
+| "Emily A. Watson" | Wrong name for defendant | Defendant is Emily A. Watson |
 | "Lincoln David Watson" | Full name of child — PROHIBITED | Must use L.D.W. per MCR 8.119(H) |
 | "Ron Berry Esq" | Berry is NOT an attorney | Could constitute misrepresentation |
 | "Amy McNeill" | Wrong first name for judge | Judge is Jenny L. McNeill |
@@ -222,7 +218,7 @@ For EVERY numeric claim in the document:
      - Verify query uses DISTINCT or dedup filters
      - Check is_duplicate = 0 in evidence_quotes queries
   7. Check for synthetic scores:
-     - "91% alienation score" → FAIL (pseudo-scientific)
+     - "documented pattern of parental alienation" → FAIL (pseudo-scientific)
      - "HIGH severity" from DB field → PASS (categorical, not fabricated)
 ```
 

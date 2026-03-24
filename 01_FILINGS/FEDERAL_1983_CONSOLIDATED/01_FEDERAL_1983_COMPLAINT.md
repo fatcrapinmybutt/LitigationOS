@@ -402,7 +402,7 @@ Plaintiff Andrew J. Pigors, proceeding pro se, respectfully submits this Complai
 | McNeill (individual) | Judicial immunity | Pierced: (1) non-judicial acts; (2) complete absence of jurisdiction; (3) conspiracy per *Dennis v. Sparks* |
 | McNeill (official) | Sovereign immunity | Not applicable to prospective injunctive/declaratory relief per *Pulliam* and *Ex parte Young* |
 | Watson | None | Private parties have NO judicial immunity per *Dennis v. Sparks* |
-| Berry | Attorney immunity | Does not extend to conspiracy with judge per *Dennis v. Sparks*; litigation privilege does not protect ex parte communications |
+| Berry | None available (non-attorney) | Private parties have NO judicial or attorney immunity per *Dennis v. Sparks*; Berry is not an attorney and cannot claim litigation privilege for ex parte communications |
 | Rusco (individual) | Quasi-judicial immunity | Pierced: biased recommendations without adequate process; participation in conspiracy |
 | Rusco (official) | Sovereign immunity | Not applicable to prospective relief per *Ex parte Young* |
 | Muskegon County | Governmental immunity | Not applicable to § 1983 *Monell* claims; municipalities cannot assert qualified immunity per *Owen v. City of Independence* |

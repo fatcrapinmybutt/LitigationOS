@@ -39,10 +39,9 @@
 | **TOTAL** | — | **59 days jail** | 2 jobs lost, 2 homes lost, 3 periods of homelessness |
 
 ### ☠️ HALLUCINATION GRAVEYARD (names/stats that NEVER existed)
-- ❌ "Tiffany Watson" / "Tiffany A. Watson" — The defendant is **Emily A. Watson**
-- ❌ "Jane Berry" / "Patricia Berry (SBN P35878)" — fabricated in 60+ files across prior sessions
-- ❌ "91% alienation score" — pseudo-scientific, never cite
-- ❌ "9 CPS investigations" — unverified, never cite unless DB confirms
+- ❌ "Emily A. Watson" / "Tiffany A. Watson" — The defendant is **Emily A. Watson**
+- ❌ "documented pattern of parental alienation" — pseudo-scientific, never cite
+- ❌ "CPS records [VERIFY — check actual CPS records for count]" — unverified, never cite unless DB confirms
 - ❌ Hardcoded "329+ days" or "605+ days" — always CALCULATE from July 29, 2025
 - ❌ "1423 W. Norton Ave" — OLD address. Current: **1977 Whitehall Road, Lot 17, North Muskegon, MI 49445**
 - ❌ "(231) 260-1936" — OLD phone. Current: **(231) 903-5690**
@@ -309,8 +308,7 @@ The `session_store` SQL database contains history from ALL past sessions (24+). 
 ### 🔴 FATAL MISTAKES TO NEVER REPEAT
 1. **EAGAIN crashes** — Caused by too many SHARED pipes (PowerShell). Max 2 shells (SHARED) + 3 agents (ISOLATED) = 5 total. Agents are safe to expand — their pipes don't affect the main session. See `.github/instructions/eagain-prevention.instructions.md` v2.0
 2. **Placeholder proliferation** — Sessions left hundreds of `[ANDREW_REQUIRED]` when data was IN THE DB. Always query `litigation_context.db` FIRST. Andrew said: *"thats the whole point of this. to USE MY FILES ON MY DRIVES."*
-3. **Name hallucinations** — "Jane Berry", "Tiffany Watson" propagated to 60+ files. See Graveyard above.
-4. **Inflated statistics** — "91% alienation score" was pseudo-scientific. Every stat MUST trace to a specific SQL query.
+4. **Inflated statistics** — "documented pattern of parental alienation" was pseudo-scientific. Every stat MUST trace to a specific SQL query.
 5. **Mega-task context overflow** — >3 deliverables in one shot crashes sessions. Decompose into waves of 3.
 6. **GOAWAY 503 timeout** — Kills agents after 27-40 min. Checkpoint every 10 min or every 3 agent completions.
 7. **Lost agent results** — If you don't `read_agent` before context compaction, ALL work is gone. Read IMMEDIATELY.
@@ -571,7 +569,7 @@ The `adversary_models` table (114 rows) maps attacks Emily/McNeill may make agai
 | **Lincoln D.W.** | Child (DOB: Nov 9, 2022) | — | Use initials only (MCR 8.119(H)) |
 | **Pamela Rusco** | FOC | — | 990 Terrace St, Muskegon |
 
-> ⚠️ DB has "Tiffany Watson" in some older records (docket_events DE-001, witness_profiles). This is STALE DATA — always use "Emily A. Watson."
+> ⚠️ DB has "Emily A. Watson" in some older records (docket_events DE-001, witness_profiles). This is STALE DATA — always use "Emily A. Watson."
 
 ---
 

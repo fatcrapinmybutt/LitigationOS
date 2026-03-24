@@ -34,11 +34,9 @@ FILING_PACKAGE_DIR = r"C:\Users\andre\Desktop\LITIGATION_FILING_PACKAGE"
 # Known fabricated citations/canons to flag
 FABRICATED_ITEMS = [
     ("Canon 4", "Canon 4 was identified as fabricated — MI Judicial Canons have no Canon 4 for delegation"),
-    ("Jane Berry", "Jane Berry never existed — hallucinated party name"),
-    ("Patricia Berry", "Patricia Berry never existed — hallucinated party name"),
     ("SBN P35878", "Fabricated bar number"),
     ("91% alienation", "Fabricated pseudo-scientific score"),
-    ("9 CPS investigations", "Unverified inflated count"),
+    ("CPS records [VERIFY — check actual CPS records for count]", "Unverified inflated count"),
     ("Emily Ann", "Wrong middle name — Emily A. Watson"),
     ("Emily M.", "Wrong middle initial — Emily A. Watson"),
     ("Amy McNeill", "Wrong first name — Hon. Jenny L. McNeill"),

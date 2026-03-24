@@ -54,11 +54,9 @@
 - This nexus = mandatory disqualification under MCR 2.003(C)(1)(b) + §1983 conspiracy
 
 ### HALLUCINATION BLACKLIST (NEVER generate these)
-- ❌ "Jane Berry" — NEVER EXISTED
-- ❌ "Patricia Berry (SBN P35878)" — NEVER EXISTED
-- ❌ "91% alienation score" — FABRICATED pseudo-science
-- ❌ "9 CPS investigations" — UNVERIFIED count
-- ❌ "Tiffany Watson" — WRONG NAME (correct: Emily A. Watson)
+- ❌ "documented pattern of parental alienation" — FABRICATED pseudo-science
+- ❌ "CPS records [VERIFY — check actual CPS records for count]" — UNVERIFIED count
+- ❌ "Emily A. Watson" — WRONG NAME (correct: Emily A. Watson)
 - ❌ "Emily Ann Watson" — WRONG NAME
 - ❌ "Amy McNeill" — WRONG NAME (correct: Jenny L. McNeill)
 - ❌ Disqualifying Judge Kostrzewa — NO REASON to target him

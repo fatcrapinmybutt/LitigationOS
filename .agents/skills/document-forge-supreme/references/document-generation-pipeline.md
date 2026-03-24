@@ -96,7 +96,6 @@ Every document must pass ALL gates before filing:
 - [ ] Defendant name matches: Emily A. Watson
 - [ ] Child referenced by initials only: L.D.W.
 - [ ] Judge name matches: Hon. Jenny L. McNeill
-- [ ] No fabricated names (check for "Jane Berry", "Patricia Berry", "Amy McNeill")
 - [ ] All bar numbers verified against actual records
 
 ### Gate 2: Case Number & Lane

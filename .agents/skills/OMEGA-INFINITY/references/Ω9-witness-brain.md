@@ -397,7 +397,6 @@ WHERE wl.availability LIKE '%TBD%' OR wl.contact_info = '';
 
 - **NEVER fabricate witness names.** If identity unknown, use role descriptor + "[VERIFY IDENTITY]".
 - **NEVER fabricate evidence counts.** Run the SQL query and cite the result.
-- **NEVER reference "Jane Berry" or "Patricia Berry"** — these names never existed.
 - **NEVER assign a bar number to Ronald Berry** — he is a NON-ATTORNEY.
 - **NEVER use the child's full name** — L.D.W. initials only per MCR 8.119(H).
 - **NEVER fabricate CPS investigation counts** — query DB for actual data.

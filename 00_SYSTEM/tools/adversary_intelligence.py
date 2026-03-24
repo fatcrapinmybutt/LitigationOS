@@ -52,7 +52,6 @@ ADVERSARY_PROFILES = {
             'Lives with Emily at 2160 Garland Drive, Norton Shores',
             'Has access to L.D.W. while Andrew is denied contact',
             'NO bar number — any legal advice to Emily may be UPL',
-            'Not related to "Jane Berry" or "Patricia Berry" (those names were AI hallucinations)',
             'May be influencing Emily\'s litigation strategy',
             'Albert Watson (Emily\'s father) made statement about Berry',
         ],

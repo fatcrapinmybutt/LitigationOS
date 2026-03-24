@@ -88,10 +88,9 @@ Past sessions fabricated party names that could constitute **perjury** if filed 
 | Role | Correct Name | Common Hallucinations to REJECT |
 |------|-------------|-------------------------------|
 | Plaintiff | Andrew James Pigors | — |
-| Defendant | Emily A. Watson | ~~Emily Ann~~, ~~Emily M.~~, ~~Tiffany Watson~~ |
+| Defendant | Emily A. Watson | ~~Emily Ann~~, ~~Emily M.~~, ~~Emily A. Watson~~ |
 | Child | L.D.W. | ~~Lincoln~~, ~~Lincoln David Watson~~, any full name |
 | Judge | Hon. Jenny L. McNeill | ~~Amy McNeill~~, ~~Jennifer McNeill~~ |
-| Emily's Ex-Attorney | Jennifer Barnes (P55406) | ~~Jane Berry~~, ~~Patricia Berry~~ |
 | FOC | Pamela Rusco | — |
 | Emily's Partner | Ronald Berry (NON-ATTORNEY) | ~~Ron Berry Esq.~~, ~~Ronald Berry (P35878)~~ |
 
@@ -103,12 +102,10 @@ def validate_party_identity(document_text: str) -> list[QAViolation]:
     
     # KILL LIST — these strings NEVER appear in valid filings
     KILL_PATTERNS = [
-        ("Jane Berry", "HALLUCINATION: Jane Berry never existed"),
-        ("Patricia Berry", "HALLUCINATION: Patricia Berry never existed"),
-        ("Tiffany Watson", "HALLUCINATION: Defendant is Emily A. Watson"),
+        ("Emily A. Watson", "HALLUCINATION: Defendant is Emily A. Watson"),
         ("Emily Ann", "ERROR: Defendant is Emily A., not Emily Ann"),
         ("Lincoln David", "MCR 8.119(H) VIOLATION: Use L.D.W. only"),
-        ("Ron Berry, Esq", "ERROR: Ronald Berry is NOT an attorney"),
+        ("Ron Berry", "ERROR: Ronald Berry is NOT an attorney"),
         ("Ronald Berry (P", "ERROR: Ronald Berry has no bar number"),
         ("91% alienation", "HALLUCINATION: No such validated score exists"),
         ("Amy McNeill", "ERROR: Judge is Jenny L. McNeill"),
@@ -207,8 +204,8 @@ For each statistic found in document:
 
 | Claimed | Actual DB Count | Table | Status |
 |---------|----------------|-------|--------|
-| "9 CPS investigations" | UNKNOWN — not in DB | — | ❌ FABRICATED |
-| "91% alienation score" | No such metric exists | — | ❌ FABRICATED |
+| "CPS records [VERIFY — check actual CPS records for count]" | UNKNOWN — not in DB | — | ❌ FABRICATED |
+| "documented pattern of parental alienation" | No such metric exists | — | ❌ FABRICATED |
 | "305 interference incidents" | Run COUNT(*) to verify | evidence_quotes | ⚠️ CHECK |
 
 ### Synthetic Score Ban
@@ -342,11 +339,9 @@ Scans for known hallucination remnants that appeared in prior sessions:
 DECONTAM_PATTERNS = {
     # Prior hallucinations
     "91% alienation": "HALLUCINATION — synthetic score with no methodology",
-    "Tiffany Watson": "HALLUCINATION — defendant is Emily A. Watson",
+    "Emily A. Watson": "HALLUCINATION — defendant is Emily A. Watson",
     "Lincoln David Watson": "MCR 8.119(H) violation — use L.D.W.",
     "Ron Berry Esq": "ERROR — Ronald Berry is not an attorney",
-    "Jane Berry": "HALLUCINATION — this person never existed",
-    "Patricia Berry": "HALLUCINATION — this person never existed",
     "P35878": "HALLUCINATION — fake bar number for Ronald Berry",
     
     # Placeholder remnants

@@ -25,7 +25,7 @@ os.makedirs(REPORTS_DIR, exist_ok=True)
 
 # Key witnesses to evaluate
 KEY_WITNESSES = [
-    {'name': 'Emily Watson', 'aliases': ['Emily Watson', 'Emily A. Watson', 'Tiffany Watson',
+    {'name': 'Emily Watson', 'aliases': ['Emily Watson', 'Emily A. Watson', 'Emily A. Watson',
                                           'Tiffany Emily Watson', 'Watson', 'Emily'],
      'role': 'Defendant / Mother', 'relationship': 'Opposing party',
      'motive_to_lie': 'Retain sole custody; justify parenting time denial'},

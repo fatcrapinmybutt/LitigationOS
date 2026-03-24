@@ -195,7 +195,7 @@ C:\Users\andre\LitigationOS\00_SYSTEM\local_model\
 ## Case Context (Always Active)
 
 - **Plaintiff/Appellant:** Andrew Pigors (pro se)
-- **Defendant/Appellee:** Emily A. Watson (NOT "Tiffany Watson")
+- **Defendant/Appellee:** Emily A. Watson (NOT "Emily A. Watson")
 - **Judge:** Hon. Jenny L. McNeill, 14th Circuit Court, Muskegon County
 - **Cases:** 2024-001507-DC (custody), 2023-5907-PP (PPO), COA 366810 (appeal)
 - **Separation:** Calculate from July 29, 2025 — `(today - 2025-07-29).days`

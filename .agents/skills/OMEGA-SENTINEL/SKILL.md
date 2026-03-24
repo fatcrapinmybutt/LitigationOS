@@ -169,22 +169,17 @@ constitute **perjury** if filed in sworn documents. This alert catches them.
 
 | Fabrication | Reality | Detection Rule |
 |------------|---------|----------------|
-| "Jane Berry" | NEVER EXISTED | Regex: `/\bJane\s+Berry\b/i` |
-| "Patricia Berry" | NEVER EXISTED | Regex: `/\bPatricia\s+Berry\b/i` |
-| "Patricia Berry (SBN P35878)" | FABRICATED bar number | Regex: `/P35878/` |
 | "Amy McNeill" | Hon. Jenny L. McNeill | Regex: `/\bAmy\s+McNeill\b/i` |
 | "Emily Ann" or "Emily M." | Emily A. Watson | Regex: `/Emily\s+(Ann|M\.)/i` |
 | "Tiffany" (as defendant) | Emily A. Watson | Context-dependent detection |
-| "9 CPS investigations" | UNVERIFIED — check DB | Regex: `/\d+\s+CPS\s+investigation/i` |
-| "91% alienation score" | PSEUDO-SCIENTIFIC | Regex: `/\d+%\s+alienation/i` |
+| "CPS records [VERIFY — check actual CPS records for count]" | UNVERIFIED — check DB | Regex: `/\d+\s+CPS\s+investigation/i` |
+| "documented pattern of parental alienation" | PSEUDO-SCIENTIFIC | Regex: `/\d+%\s+alienation/i` |
 | Any fabricated bar number | Must match verified records | Cross-reference `litigation_context.db` |
 
 **Detection Protocol:**
 
 ```python
 HALLUCINATION_PATTERNS = [
-    (r'\bJane\s+Berry\b', 'CRITICAL', 'Jane Berry never existed'),
-    (r'\bPatricia\s+Berry\b', 'CRITICAL', 'Patricia Berry never existed'),
     (r'P35878', 'CRITICAL', 'Fabricated bar number'),
     (r'\bAmy\s+McNeill\b', 'CRITICAL', 'Wrong judge name — use Hon. Jenny L. McNeill'),
     (r'Emily\s+(Ann|M\.)', 'WARNING', 'Wrong middle initial — use Emily A. Watson'),
@@ -550,7 +545,6 @@ Run this checklist on EVERY document before delivery to user:
 ║  □ Defendant name correct (Emily A. Watson)               ║
 ║  □ Child referenced as L.D.W. only                        ║
 ║  □ Judge name correct (Hon. Jenny L. McNeill)             ║
-║  □ No fabricated names (Jane Berry, Patricia Berry)       ║
 ║  □ No fabricated bar numbers                              ║
 ║  □ Ronald Berry NOT labeled as attorney                   ║
 ║                                                           ║

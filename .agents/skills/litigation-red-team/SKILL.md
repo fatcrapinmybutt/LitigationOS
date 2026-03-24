@@ -273,10 +273,10 @@ invoke litigation-red-team --filing C1_complaint.md --mode judge
 ### v2.1 (2026-03-11) — Session-Learned Enhancements
 
 **Fabrication Detection Vectors (NEW — V26-V30)**:
-- **V26 FABRICATED_STATISTICS**: Check for inflated numbers — "9 CPS investigations" (real: 1 call), "571 days" (real: 215+), "91% alienation score" (should be "305 documented incidents"). AI-generated filings frequently inflate statistics.
+- **V26 FABRICATED_STATISTICS**: Check for inflated numbers — "CPS records [VERIFY — check actual CPS records for count]" (real: 1 call), "571 days" (real: 215+), "documented pattern of parental alienation" (should be "305 documented incidents"). AI-generated filings frequently inflate statistics.
 - **V27 HALLUCINATED_CITATIONS**: Cross-reference ALL case citations against known-real list. Known hallucinations: McCraney v Ford Motor Co 282 Mich App 647 (2009). If citation cannot be verified, flag as [VERIFY].
 - **V28 BIRTHDAY_MATH**: Child DOB 11/9/2022. 1st=2023, 2nd=2024, 3rd=2025. AI frequently miscalculates which birthday is which.
-- **V29 NAME_VARIANTS**: Emily A. Watson ONLY. NOT "Emily Ann Watson", "Emily M. Watson", "EMILY M. WATSON", or "Tiffany Watson". Party name errors are the #1 clerk rejection reason.
+- **V29 NAME_VARIANTS**: Emily A. Watson ONLY. NOT "Emily Ann Watson", "Emily M. Watson", "EMILY M. WATSON", or "Emily A. Watson". Party name errors are the #1 clerk rejection reason.
 - **V30 CASE_NUMBER_FORMAT**: Michigan case numbers require leading zeros: 2024-001507-DC (NOT 2024-1507-DC). PPO: 2023-5907-PP (NOT 2023-05907-PP in body text, though the PPO number itself is 2023-05907-PP).
 
 **QA Report Standard Format**: Red-team reports should follow the CLERK_READY/QA_REPORT.md format:

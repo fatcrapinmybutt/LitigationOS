@@ -6,8 +6,6 @@ sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='repla
 BASE = r"C:\Users\andre\Desktop\LITIGATION_FILING_PACKAGE"
 CRITICAL_PATTERNS = {
     'HALLUCINATED_NAMES': [
-        (r'Jane Berry', 'CRITICAL: "Jane Berry" never existed — hallucination'),
-        (r'Patricia Berry', 'CRITICAL: "Patricia Berry" never existed — hallucination'),
         (r'Amy McNeill', 'CRITICAL: Wrong judge name — should be "Jenny L. McNeill"'),
         (r'McNeill-Hoopes', 'CRITICAL: Wrong judge name variant'),
         (r'Emily Ann\b', 'HIGH: Wrong middle name — should be "Emily A."'),

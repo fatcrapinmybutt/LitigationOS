@@ -711,7 +711,6 @@ OMEGA-ORCHESTRATOR naturally invokes other OMEGA skills:
 □ NEVER invent party names. Source of truth: instruction header table.
 □ NEVER fabricate bar numbers or case numbers.
 □ NEVER generate inflated statistics. Every number → traceable SQL query.
-□ ~~"Jane Berry"~~ and ~~"Patricia Berry"~~ NEVER EXISTED.
 □ Ronald Berry is a NON-ATTORNEY. No bar number. No "Esq."
 ```
 

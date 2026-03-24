@@ -49,7 +49,7 @@
 
 ## CHECK 1: WRONG NAMES ✅ ALL CLEAR
 
-**Searched for:** `Emily A. Watson`, `Emily A. Watson`, `Tiffany Watson`
+**Searched for:** `Emily A. Watson`, `Emily A. Watson`, `Emily A. Watson`
 
 | Package | Result |
 |---------|--------|
@@ -61,7 +61,7 @@
 
 ## CHECK 2: FABRICATED / HALLUCINATED CLAIMS ✅ ALL CLEAR
 
-**Searched for:** `91% alienation`, `9 CPS investigation`, `nine CPS`, `nine (9) police`
+**Searched for:** `91% alienation`, `CPS records [VERIFY — check actual CPS records for count]`, `nine CPS`, `nine (9) police`
 
 | Package | Result |
 |---------|--------|
@@ -380,10 +380,10 @@ Andrew must resolve all `ANDREW_REQUIRED` placeholders before filing. Highest-co
 ## CLEAN BILL OF HEALTH — GLOBAL FINDINGS
 
 ### ✅ No Wrong Names Anywhere
-"Emily A. Watson", "Emily A. Watson", and "Tiffany Watson" have been **completely eliminated** from all 18 active filing packages. This was a critical contamination issue in prior drafts — it is now fully resolved.
+"Emily A. Watson", "Emily A. Watson", and "Emily A. Watson" have been **completely eliminated** from all 18 active filing packages. This was a critical contamination issue in prior drafts — it is now fully resolved.
 
 ### ✅ No Fabricated Claims Anywhere
-"91% alienation score", "9 CPS investigations", and similar hallucinated statistics have been **completely eliminated**. Zero instances across all packages.
+"documented pattern of parental alienation", "CPS records [VERIFY — check actual CPS records for count]", and similar hallucinated statistics have been **completely eliminated**. Zero instances across all packages.
 
 ### ✅ Consistent Address Usage
 Andrew's address (`1977 Whitehall Rd, North Muskegon, MI 49445`) appears consistently across all packages that require it.

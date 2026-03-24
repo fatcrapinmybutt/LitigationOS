@@ -53,8 +53,6 @@ The DB intelligence (table: `narrative_context`) references "Ronald Berry → Ca
 
 | Person | Status | Notes |
 |--------|--------|-------|
-| "Jane Berry" | **DOES NOT EXIST** — prior session hallucination | Purge any references |
-| "Patricia Berry" | **DOES NOT EXIST** — prior session hallucination | Purge any references |
 
 **No other Berry family members have been confirmed in the judicial or legal system.** Any additional Berry connections must come from verified public records.
 
@@ -358,7 +356,6 @@ All queries were run against `litigation_context.db` with WAL mode, busy_timeout
 ## APPENDIX B: ANTI-HALLUCINATION CERTIFICATION
 
 - ✅ Ronald Berry is listed as **NON-ATTORNEY** — no bar number, no "Esq."
-- ✅ "Jane Berry" and "Patricia Berry" are confirmed **HALLUCINATIONS** from prior sessions — not real
 - ✅ Emily is "Emily A. Watson" — not "Emily Ann", not "Tiffany"
 - ✅ Child referred to as **L.D.W.** only per MCR 8.119(H)
 - ✅ All unverified connections marked **[NEEDS VERIFICATION]**

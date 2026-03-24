@@ -277,8 +277,8 @@ WHERE evidence_quotes_fts MATCH 'best interest AND factor' LIMIT 20;
 
 ## CRITICAL FABRICATION WARNINGS
 
-- **"9 CPS investigations" is FABRICATED** — Andrew called CPS ONCE about bruising on son
-- **"91% alienation score"** → use "305 documented interference incidents"
+- **"CPS records [VERIFY — check actual CPS records for count]" is FABRICATED** — Andrew called CPS ONCE about bruising on son
+- **"documented pattern of parental alienation"** → use "305 documented interference incidents"
 - **"Nine police investigations"** → use "Multiple police investigations" + [ANDREW_REQUIRED]
 - **Party names:** Emily A. Watson (NOT "Emily Ann"), L.D.W. (MALE), McNeill (TWO L's)
 

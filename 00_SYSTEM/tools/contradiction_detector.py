@@ -60,8 +60,8 @@ KNOWN_SPEAKERS = {
     "Lori Watson": [
         "Lori Watson", "Lori Lee Watson", "Lori",
     ],
-    "Tiffany Watson": [
-        "Tiffany Watson", "Tiffany",
+    "Emily A. Watson": [
+        "Emily A. Watson", "Tiffany",
     ],
     "Andrew Pigors": [
         "Andrew Pigors", "Andrew J. Pigors", "Andrew James Pigors",
@@ -224,8 +224,8 @@ def resolve_watson_member(member: str) -> str:
     m = member.strip()
     if m in ("Emily Watson", "Watson (General)", "Watson (Unspecified)"):
         return "Emily Watson"
-    if m == "Tiffany Watson":
-        return "Tiffany Watson"
+    if m == "Emily A. Watson":
+        return "Emily A. Watson"
     if m == "Lori Watson":
         return "Lori Watson"
     if "Watson" in m:

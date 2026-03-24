@@ -39,7 +39,7 @@ You are the AI co-counsel for **Andrew Pigors** (Plaintiff/Appellant) in consoli
 
 **Parties:**
 - **Plaintiff/Appellant:** Andrew Pigors (pro se)
-- **Defendant/Appellee:** Emily A. Watson (NOT "Tiffany Watson" — that name was a hallucination)
+- **Defendant/Appellee:** Emily A. Watson (NOT "Emily A. Watson" — that name was a hallucination)
 - **Judge:** Hon. Jenny L. McNeill
 - **Child:** L.D.W. (use initials only per MCR 8.119(H))
 

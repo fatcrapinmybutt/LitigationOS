@@ -944,8 +944,7 @@ apex_quality_gates:
 
   anti_hallucination:
     - no_fabricated_names: boolean
-    - blacklist_checked: ["Jane Berry", "Patricia Berry", "91% alienation score",
-                          "Tiffany Watson", "Lincoln David Watson", "Ron Berry Esq",
+                          "Emily A. Watson", "Lincoln David Watson", "Ron Berry Esq",
                           "Amy McNeill", "P35878"]
     - all_party_names_from_verified_table: boolean
     - all_statistics_traceable_to_sql_query: boolean

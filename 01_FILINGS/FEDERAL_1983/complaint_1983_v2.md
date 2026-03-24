@@ -175,7 +175,7 @@ Plaintiff Andrew J. Pigors, proceeding pro se, respectfully submits this Second 
 
 42. Ron Berry's voicemail to Plaintiff (Item #6, ex parte objection table), combined with the December 18, 2024 transcription filing, constitutes **direct evidence** of Berry's participation in ex parte communications outside the formal record.
 
-43. Berry's position as an appellate attorney with professional connections to the Michigan Court of Appeals creates a structural conflict that compromises the appellate proceedings in COA Case No. 366810.
+43. The Berry family connection — Ronald Berry (Defendant Watson's domestic partner) and Cavan Berry (Judge McNeill's spouse, a practicing attorney in Muskegon County) — creates a structural conflict that compromises both the trial and appellate proceedings in COA Case No. 366810.
 
 ### K. Aggregate Statistical Evidence — 76,329 Total Findings
 
@@ -418,7 +418,7 @@ Plaintiff Andrew J. Pigors, proceeding pro se, respectfully submits this Second 
 | McNeill (individual) | Judicial immunity | Pierced: (1) non-judicial acts (ex parte communications, self-ruling on disqualification, cross-case weaponization); (2) complete absence of jurisdiction (no MCR 3.207(B) affidavit, no MCR 3.207(C)(2) compliance); (3) conspiracy (*Dennis v. Sparks*) |
 | McNeill (official) | Sovereign immunity | Not applicable to prospective injunctive/declaratory relief (*Ex parte Young*; *Pulliam*) |
 | Watson | None available | Private parties have NO judicial immunity (*Dennis v. Sparks*); litigation privilege does not extend to fraud or civil rights violations |
-| Berry | Attorney immunity | Does not extend to conspiracy with judge (*Dennis v. Sparks*); litigation privilege does not protect ex parte communications prohibited by MCR 2.003 and Canon 3A(4) |
+| Berry | None available (non-attorney) | Private parties have NO judicial or attorney immunity (*Dennis v. Sparks*); Berry is not an attorney and cannot claim litigation privilege for ex parte communications prohibited by MCR 2.003 and Canon 3A(4) |
 | Muskegon County | Governmental immunity | Not applicable to § 1983 *Monell* claims based on policy/custom; municipalities cannot assert qualified immunity (*Owen v. City of Independence*, 445 U.S. 622 (1980)) |
 
 ---
