@@ -235,15 +235,48 @@
 
 | Item | Filed? | Served? | Response? | Notes |
 |------|--------|---------|-----------|-------|
-| Brady Motion | [ ] | [ ] | [ ] | |
+| Brady Motion | [ ] | [ ] | [ ] | **CRITICAL — file THIS WEEK (by March 28)** — see `BRADY_MOTION.md` |
+| Motion Regarding Counsel | [ ] | [ ] | [ ] | **URGENT — request hearing within 3 days** — see `MOTION_REGARDING_COUNSEL.md` |
 | Motion in Limine | [ ] | [ ] | [ ] | |
 | Witness List | [ ] | [ ] | N/A | |
 | Exhibit List | [ ] | [ ] | N/A | |
 | Jury Instructions | [ ] | [ ] | [ ] | |
-| Subpoena — Officer | [ ] | [ ] | N/A | |
-| Subpoena — Body Cam | [ ] | [ ] | N/A | |
-| Subpoena — Medical | [ ] | [ ] | N/A | |
-| Counsel Motion | [ ] | [ ] | [ ] | |
+| Self-Defense Brief | [ ] | [ ] | [ ] | Filed with court — see `SELF_DEFENSE_BRIEF.md` |
+| Subpoena — Body Cam | [ ] | [ ] | N/A | **Serve by March 28** — see `SUBPOENA_PACKAGE.md` #1 |
+| Subpoena — Jail Surveillance | [ ] | [ ] | N/A | Serve by March 28 — see `SUBPOENA_PACKAGE.md` #2 |
+| Subpoena — Medical Records | [ ] | [ ] | N/A | Serve by March 28 — see `SUBPOENA_PACKAGE.md` #3 |
+| Subpoena — Threat Reports | [ ] | [ ] | N/A | Serve by March 28 — see `SUBPOENA_PACKAGE.md` #4 |
+| Subpoena — Officer Reports | [ ] | [ ] | N/A | Serve by March 28 — see `SUBPOENA_PACKAGE.md` #5 |
+| Subpoena — 911 Recordings | [ ] | [ ] | N/A | Serve by March 28 — see `SUBPOENA_PACKAGE.md` #6 |
+| Subpoena — Booking Records | [ ] | [ ] | N/A | Serve by March 28 — see `SUBPOENA_PACKAGE.md` #7 |
+
+---
+
+## 🔴 CRITICAL DEADLINES ADDED (March 24, 2026)
+
+| Deadline | Date | Action Required |
+|----------|------|-----------------|
+| **Brady Motion Filing** | **March 24-25 (ASAP)** | File `BRADY_MOTION.md` with court clerk, serve on prosecutor |
+| **Counsel Hearing Request** | **March 24-25 (ASAP)** | File `MOTION_REGARDING_COUNSEL.md`, request hearing within 3 days |
+| **Subpoena Service Deadline** | **March 28, 2026** | All 7 subpoenas must be served — 10 days before trial |
+| **Counsel Hearing Date** | **By March 31** | Court must resolve counsel situation before trial week |
+| **Witness Prep Sessions** | **March 31 – April 4** | Prepare direct examination, cross-exam questions, opening/closing |
+| **Brady Compliance Check** | **April 1, 2026** | Prosecution's 5-day disclosure deadline (if order signed March 27) |
+| **Final Evidence Review** | **April 4, 2026** | All subpoenaed materials must be in hand and reviewed |
+| **TRIAL** | **April 7, 2026** | 60th District Court, Judge Kostrzewa |
+
+---
+
+## DOCUMENTS PACKAGE (Created March 24, 2026)
+
+| Document | File | Status |
+|----------|------|--------|
+| Brady Motion + Proposed Order | `BRADY_MOTION.md` | ✅ Drafted — ready to file |
+| Motion Regarding Counsel | `MOTION_REGARDING_COUNSEL.md` | ✅ Drafted — ready to file |
+| Subpoena Package (7 subpoenas) | `SUBPOENA_PACKAGE.md` | ✅ Drafted — present to court clerk |
+| Self-Defense Brief | `SELF_DEFENSE_BRIEF.md` | ✅ Drafted — ready to file |
+| Trial Prep Package | `trial_prep_package.md` | Previously created |
+| Trial Countdown | `trial_countdown_14_days.md` | This document |
 
 ---
 
