@@ -1020,3 +1020,65 @@ SYSTEM (1):
 
 *OMEGA-MCP v2.0 — 13 skills forged into one MCP mastery system.*
 *Design descriptions first. Schema is the contract. Test everything. Zero pipes.*
+
+---
+
+## ═══════════════════════════════════════════════════════════════
+## UPGRADE v2.1: LITIGATION MCP INTEGRATION
+## ═══════════════════════════════════════════════════════════════
+
+### litigation-context MCP — 45 Tools (9 Categories)
+| Category | Count | Key Tools |
+|----------|-------|-----------|
+| Core | 10 | `search`, `list_documents`, `get_document`, `get_stats`, `upcoming_deadlines` |
+| Filing | 8 | `filing_readiness`, `filing_validate`, `filing_assemble`, `placeholder_scan` |
+| Evidence | 7 | `evidence_chain`, `evidence_gaps`, `evidence_link`, `bates_assign` |
+| Deadline | 5 | `deadline_dashboard`, `deadline_urgency`, `deadline_add` |
+| Analysis | 5 | `authority_index`, `citation_graph`, `impeachment_search`, `judicial_bias_scan` |
+| QA | 4 | `prefiling_qa`, `qa_sweep`, `signature_check`, `service_check` |
+| Backup | 3 | `backup_create`, `backup_version`, `backup_report` |
+| Calendar | 2 | `calendar_generate`, `calendar_sync` |
+| System | 1 | `system_health` |
+
+All tools prefixed `litigation_` (e.g., `litigation_deadline_dashboard`).
+
+### Tool Composition Recipes
+
+**Full Filing Pipeline:**
+```
+litigation_search("custody withholding evidence")
+  → litigation_evidence_chain(document_ids)
+  → litigation_filing_readiness("custody-motion")
+  → litigation_placeholder_scan("01_FILINGS/CUSTODY/")
+  → litigation_filing_validate("custody-motion")
+  → litigation_prefiling_qa("custody-motion")
+  → litigation_filing_assemble("custody-motion")
+```
+
+**Deadline-Driven Triage:**
+```
+litigation_deadline_dashboard()
+  → litigation_deadline_urgency(top_3)
+  → litigation_filing_readiness(urgent_vehicles)
+  → litigation_evidence_gaps(urgent_vehicles)
+  → Prioritized action plan
+```
+
+**Evidence-to-Filing:**
+```
+litigation_search(query)
+  → litigation_evidence_link(quote_ids, claim_ids)
+  → litigation_bates_assign(exhibit_list)
+  → litigation_filing_assemble(vehicle, exhibits)
+```
+
+### Command-Runner MCP — Zero-Pipe Execution
+```
+exec_command("Get-ChildItem *.pdf | Measure")   — PowerShell command
+exec_python("script.py", "--arg value")          — Python (shadow-safe)
+exec_git("status")                               — Git operations
+exec_pipeline_phase("phase3_classify")           — Pipeline phase
+system_status()                                  — Health check
+```
+
+**ALWAYS prefer command-runner over `powershell` tool.** Zero pipes = zero EAGAIN risk.

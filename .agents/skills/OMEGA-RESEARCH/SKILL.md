@@ -629,3 +629,64 @@ with managed_db() as conn:
 - Court rules not italicized: MCR 2.003(C)(1)
 - Pin cites required: *Ireland*, 451 Mich at 461
 - Subsequent history required: *Smith v Jones*, 100 Mich App 200 (2020), rev'd, 510 Mich 50 (2022)
+
+---
+
+## ═══════════════════════════════════════════════════════════════
+## UPGRADE v2.1: MICHIGAN AUTHORITY SYSTEM
+## ═══════════════════════════════════════════════════════════════
+
+### Authority Master Index (728 authorities indexed)
+```sql
+-- litigation_context.db
+SELECT * FROM authority_master_index WHERE type = 'MCR' AND lanes LIKE '%A%';
+SELECT * FROM authority_fts WHERE authority_fts MATCH 'disqualification OR recusal';
+```
+
+### Michigan Rule Systems
+| System | Scope | Key Rules for Pigors v Watson |
+|--------|-------|------------------------------|
+| **MCR** | Court Rules | 2.003 (disqualification), 2.119 (motions), 3.206 (custody), 7.212 (COA briefs) |
+| **MCL** | Compiled Laws | 722.23 (best interest), 552.605 (child support), 600.2950 (PPO), 780.972 (self-defense) |
+| **MRE** | Evidence Rules | 401/402 (relevance), 404(b) (prior acts), 702 (experts), 801-807 (hearsay), 901 (authentication) |
+| **SCAO** | Admin Orders | Court forms, e-filing, case assignment |
+| **FOC** | Friend of Court | MCL 552.505+, FOC handbook, support calculations |
+| **JTC** | Judicial Tenure | MCR 9.200+, complaint procedures, grounds for discipline |
+| **Canon** | Judicial Canons | Canons 1-7, esp. Canon 2 (impartiality), Canon 3 (recusal) |
+
+### LEXICON Integration (148 procedural rules)
+```sql
+-- 00_SYSTEM/databases/lexicon.db
+SELECT r.*, cr.target_rule FROM rules r
+LEFT JOIN cross_references cr ON r.rule_id = cr.source_rule
+WHERE r.rule_id = 'MCR 2.003';
+-- Returns: rule text + all cross-referenced rules
+```
+
+### Shepardizing Workflow (Local-Only)
+```
+1. Extract citation from filing → parse components (reporter, volume, page)
+2. Query authority_master_index for the citation
+3. Check authority_chains for treatment history
+4. Cross-reference with LEXICON rules_fts for procedural context
+5. Flag: overruled? distinguished? affirmed? modified?
+6. If not in DB → insert [VERIFY — Shepardize citation] placeholder
+```
+
+### COA/MSC Brief Requirements
+| Court | Rule | Page Limit | Font | Margins | Appendix |
+|-------|------|-----------|------|---------|----------|
+| **COA** | MCR 7.212 | 50 pp (or 16K words) | 12pt proportional or 12pt mono | 1" all sides | Required per MCR 7.212(H) |
+| **MSC** | MCR 7.312 | 50 pp (or 16K words) | Same as COA | Same | Required per MCR 7.312 |
+| **14th Circuit** | MCR 2.119 | No fixed limit (15pp guideline) | 12pt | 1" | Not required |
+
+### Opposition Research Patterns
+```
+For any opposing motion/brief:
+  1. Extract ALL citations
+  2. Verify each against authority_master_index
+  3. Check subsequent history — are any overruled/distinguished?
+  4. Identify distinguishing facts (our case vs. cited case)
+  5. Find counter-authorities supporting our position
+  6. Check for misquotes/selective quoting via evidence_quotes
+```

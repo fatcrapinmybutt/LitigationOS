@@ -852,3 +852,57 @@ except sqlite3.OperationalError as e:
 - Every percentage shows `numerator / denominator`
 - Never round up, never extrapolate, never estimate
 - Cite the table and WHERE clause for every stat
+
+---
+
+## ═══════════════════════════════════════════════════════════════
+## UPGRADE v2.1: LITIGATION DB SCHEMA MAP
+## ═══════════════════════════════════════════════════════════════
+
+### Core Table Groups (litigation_context.db — 166+ tables)
+
+| Group | Key Tables | Purpose |
+|-------|-----------|---------|
+| **Evidence** | evidence_quotes, evidence_exhibits, evidence_images | 92K+ quotes, exhibit tracking |
+| **Filing** | filing_readiness, claims, filing_packages | 15 vehicles, readiness scoring |
+| **Judicial** | judicial_violations, docket_events | 5K+ violations, court docket |
+| **Authority** | authority_master_index, authority_fts, authority_chains | 728 authorities with FTS5 |
+| **Deadlines** | deadlines | Filing deadlines with urgency |
+| **Intelligence** | narrative_context, critical_facts, session_intelligence | Persistent case narrative |
+| **Pipeline** | pipeline_registry, master_todos, system_health_log | 16-phase pipeline tracking |
+| **Continuity** | session_handoff, session_intelligence | Cross-session state |
+
+### Adaptive Query Rewriter Integration
+Route queries through `adaptive_query_rewriter.py` for automatic optimization:
+```python
+from adaptive_query_rewriter import rewrite
+# LIKE '%term%' → FTS5 MATCH (10-100x faster)
+# COUNT(*) → cached result (if fresh)
+# Missing LIMIT → safety LIMIT 10000 appended
+optimized = rewrite("SELECT * FROM evidence_quotes WHERE content LIKE '%custody%'")
+```
+
+### Composite Index Recommendations (Hot Queries)
+```sql
+CREATE INDEX IF NOT EXISTS idx_eq_vehicle_claim ON evidence_quotes(vehicle_name, claim_id);
+CREATE INDEX IF NOT EXISTS idx_ac_vehicle_complete ON authority_chains(vehicle_name, chain_complete);
+CREATE INDEX IF NOT EXISTS idx_dl_vehicle_status ON deadlines(vehicle_name, status);
+CREATE INDEX IF NOT EXISTS idx_fr_vehicle_score ON filing_readiness(vehicle_name, readiness_score);
+CREATE INDEX IF NOT EXISTS idx_jv_judge_type ON judicial_violations(judge_name, violation_type);
+```
+
+### Connection Multiplexer (Tier 1 — High Performance)
+```python
+# For heavy analytics across multiple tables
+from connection_multiplexer import get_connection
+conn = get_connection()  # mmap=12GB, cache=128MB, busy_timeout=180s
+```
+
+### LEXICON DB Integration
+```sql
+-- 00_SYSTEM/databases/lexicon.db — 148 rules, 28 cross-refs
+-- Tables: rules, cross_references, filing_requirements, deadline_rules, evidence_rules
+-- FTS5: rules_fts
+SELECT * FROM rules WHERE rule_id LIKE 'MCR%' AND category = 'procedure';
+SELECT * FROM cross_references WHERE source_rule = 'MCR 2.003';
+```

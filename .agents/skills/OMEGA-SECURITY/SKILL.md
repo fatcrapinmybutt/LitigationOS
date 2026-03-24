@@ -617,3 +617,78 @@ These rules are ABSOLUTE — no exception, no override, no "just this once":
 ║  A missed PII exposure in a filed document is NOT.             ║
 ╚════════════════════════════════════════════════════════════════╝
 ```
+
+---
+
+## ═══════════════════════════════════════════════════════════════
+## UPGRADE v2.1: MICHIGAN FILING SECURITY
+## ═══════════════════════════════════════════════════════════════
+
+### MCR 8.119(H) — Protected Personal Information
+Michigan court rules REQUIRE redaction of:
+```
+MUST REDACT in all filings:
+  □ Minor child's full name → use initials (L.D.W.)
+  □ Social Security numbers → last 4 digits only (XXX-XX-1234)
+  □ Date of birth (minors) → year only (born 20XX)
+  □ Financial account numbers → last 4 digits only
+  □ Driver's license numbers → redact entirely
+  □ Home addresses (in DV/PPO cases) → use "address on file with court"
+```
+
+### PII Detection Patterns (Auto-Scan Before Filing)
+```python
+PII_PATTERNS = {
+    'ssn': r'\b\d{3}-\d{2}-\d{4}\b',
+    'dob_full': r'\b\d{1,2}/\d{1,2}/\d{4}\b',  # context-dependent
+    'account_number': r'\b\d{10,17}\b',
+    'drivers_license': r'\b[A-Z]\d{12}\b',  # MI format
+    'child_full_name': r'Lincoln|L\.D\.W\.',  # Case-specific
+    'phone': r'\b\d{3}[-.]?\d{3}[-.]?\d{4}\b',
+    'email': r'\b[\w.+-]+@[\w.-]+\.\w+\b',
+}
+
+# ALWAYS scan BEFORE any filing export:
+# grep -n for each pattern in output document
+# Flag findings for review, auto-redact where safe
+```
+
+### Metadata Scrubbing (Pre-Filing)
+```
+DOCX files contain:
+  □ Author name → strip or set to "Andrew James Pigors"
+  □ Company → strip
+  □ Last modified by → strip
+  □ Track changes → accept all, remove history
+  □ Comments → remove all
+  □ Embedded file paths → strip (reveals local directory structure)
+
+PDF files contain:
+  □ Producer/Creator metadata → strip
+  □ Modification timestamps → normalize
+  □ XMP metadata → remove
+  □ Embedded fonts (subset only — don't leak full system fonts)
+```
+
+### Evidence Chain-of-Custody Protection
+```
+For every exhibit:
+  □ Original file: SHA-256 hash recorded at intake
+  □ Any modification: new hash + audit trail
+  □ Export: verify hash matches original
+  □ Filing: certify authenticity per MRE 901(b)(9)
+  □ NEVER modify originals — create annotated copies
+```
+
+### Filing Sanitization Pipeline
+```
+Pre-Filing Checklist:
+  1. PII scan → auto-redact SSN/accounts/DL
+  2. Child name check → L.D.W. only (never full name)
+  3. Metadata scrub → strip DOCX/PDF metadata
+  4. Privilege check → no attorney-client communications
+  5. Work product check → no internal strategy notes
+  6. Hallucination check → no fabricated names/stats
+  7. Hash verification → original evidence hashes intact
+  8. Final review → human eyes before e-filing
+```
