@@ -31,10 +31,13 @@ SESSION_STATE = LITIGOS_ROOT / "00_SYSTEM" / "MANBEARPIG_SESSION_STATE.md"
 
 def get_db():
     try:
-        conn = sqlite3.connect(str(DB_PATH), timeout=10)
+        conn = sqlite3.connect(str(DB_PATH), timeout=30)
+        conn.row_factory = sqlite3.Row
+        conn.execute("PRAGMA busy_timeout=60000")
         conn.execute("PRAGMA journal_mode=WAL")
+        conn.execute("PRAGMA cache_size=-32000")
         return conn
-    except Exception as e:
+    except Exception:
         return None
 
 def separation_days():
@@ -128,6 +131,28 @@ def generate_report():
             cnt = conn.execute(f"SELECT COUNT(*) FROM {tbl}").fetchone()[0]
             report["evidence"][key] = cnt
         except:
+            pass
+
+    # Extended intelligence tables (query if they exist)
+    extended_tables = {
+        "narrative_context": "narratives",
+        "critical_facts": "critical_facts",
+        "police_reports": "police_reports",
+        "evidence_exhibits": "exhibits",
+        "false_allegations": "false_allegations",
+        "session_intelligence": "session_intel",
+    }
+    report["extended_intel"] = {}
+    for tbl, key in extended_tables.items():
+        try:
+            exists = conn.execute(
+                "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name=?",
+                (tbl,),
+            ).fetchone()[0]
+            if exists:
+                cnt = conn.execute(f"SELECT COUNT(*) FROM {tbl}").fetchone()[0]
+                report["extended_intel"][key] = cnt
+        except Exception:
             pass
 
     # System health
@@ -333,6 +358,14 @@ def format_markdown(report):
         lines.append("## Evidence Arsenal")
         for k, v in ev.items():
             lines.append(f"- **{k}:** {v:,}")
+        lines.append("")
+
+    # Extended intelligence
+    ext = report.get("extended_intel", {})
+    if ext:
+        lines.append("## Extended Intelligence Tables")
+        for key, cnt in sorted(ext.items()):
+            lines.append(f"- **{key.replace('_', ' ').title()}:** {cnt:,}")
         lines.append("")
 
     # Deadlines

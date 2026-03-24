@@ -85,6 +85,44 @@ DB_PATH = os.environ.get(
     r"C:\Users\andre\LitigationOS\litigation_context.db",
 )
 
+# ── Path Traversal Protection ─────────────────────────────────────
+_SAFE_ROOTS = [
+    os.path.realpath(r"C:\Users\andre\LitigationOS"),
+    os.path.realpath(r"D:\\"),
+    os.path.realpath(r"F:\\"),
+    os.path.realpath(r"G:\\"),
+    os.path.realpath(r"H:\\"),
+    os.path.realpath(r"I:\\"),
+]
+
+
+def _validate_path(file_path: str) -> str:
+    """Validate that a path is within safe boundaries.
+
+    Returns the resolved real path if safe; raises ValueError on traversal.
+    """
+    resolved = os.path.realpath(file_path)
+    for root in _SAFE_ROOTS:
+        # Drive roots like "D:\" already end with os.sep; avoid "D:\\"
+        prefix = root if root.endswith(os.sep) else root + os.sep
+        if resolved.startswith(prefix) or resolved == root:
+            return resolved
+    raise ValueError(
+        f"Path traversal blocked: {file_path!r} resolves to {resolved!r} "
+        f"which is outside allowed directories."
+    )
+
+
+# ── Rate Limiting (Production Deployment) ─────────────────────────
+# These constants define recommended limits for production deployment.
+# The MCP server currently relies on the circuit breaker for protection.
+# For production, wrap tool handlers with per-endpoint rate limiters.
+RATE_LIMIT_SEARCH_RPM = 60        # max search queries per minute
+RATE_LIMIT_INGEST_RPM = 10        # max document ingestions per minute
+RATE_LIMIT_EVOLVE_RPM = 5         # max evolution operations per minute
+RATE_LIMIT_SCAN_RPM = 2           # max system scans per minute
+RATE_LIMIT_BURST_MULTIPLIER = 3   # allow burst of 3x normal rate
+
 
 # ── Error Infrastructure ──────────────────────────────────────────
 class ErrorCode(Enum):
@@ -93,6 +131,7 @@ class ErrorCode(Enum):
     ERR_PDF_TIMEOUT = "ERR_PDF_TIMEOUT"
     ERR_FTS_SYNTAX = "ERR_FTS_SYNTAX"
     ERR_DB_LOCKED = "ERR_DB_LOCKED"
+    ERR_PATH_TRAVERSAL = "ERR_PATH_TRAVERSAL"
 
 
 _RECOVERY_HINTS: dict[ErrorCode, str] = {
@@ -115,6 +154,10 @@ _RECOVERY_HINTS: dict[ErrorCode, str] = {
     ErrorCode.ERR_DB_LOCKED: (
         "Another process holds a write lock. Wait a few seconds and retry. "
         "If persistent, check for long-running pipeline phases."
+    ),
+    ErrorCode.ERR_PATH_TRAVERSAL: (
+        "The requested path is outside the allowed directory tree. "
+        "Only paths under LitigationOS root or configured drive letters are permitted."
     ),
 }
 
@@ -894,6 +937,10 @@ _GRAPH_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."
 
 def _load_json_graph(conn: sqlite3.Connection, file_path: str, graph_source: str) -> dict:
     """Load a single JSON graph file into graph_nodes / graph_edges."""
+    try:
+        file_path = _validate_path(file_path)
+    except ValueError as exc:
+        return {"file": file_path, "status": "blocked", "error": str(exc)}
     if not os.path.isfile(file_path):
         return {"file": file_path, "status": "not_found"}
 
@@ -1328,6 +1375,11 @@ def _link_ref_to_graph(conn: sqlite3.Connection, ref_value: str) -> dict | None:
 
 def evolve_all_md_files(conn: sqlite3.Connection, directory: str) -> dict:
     """Parse all .md files in directory into sections, extract cross-refs, store in DB."""
+    try:
+        directory = _validate_path(directory)
+    except ValueError as exc:
+        return {"evolved": 0, "skipped": 0, "errors": 0, "error": str(exc)}
+
     evolved = 0
     skipped = 0
     errors = 0
@@ -1387,6 +1439,11 @@ def evolve_all_md_files(conn: sqlite3.Connection, directory: str) -> dict:
 
 def evolve_all_txt_files(conn: sqlite3.Connection, directory: str) -> dict:
     """Parse all .txt files in directory into sections, extract cross-refs, store in DB."""
+    try:
+        directory = _validate_path(directory)
+    except ValueError as exc:
+        return {"evolved": 0, "skipped": 0, "errors": 0, "error": str(exc)}
+
     evolved = 0
     skipped = 0
     errors = 0
@@ -1643,6 +1700,10 @@ def scan_all_systems(conn: sqlite3.Connection) -> dict:
 
 def ingest_master_csv(conn: sqlite3.Connection, path: str, dataset: str) -> dict:
     """Ingest a single CSV file into master_data."""
+    try:
+        path = _validate_path(path)
+    except ValueError as exc:
+        return {"error": str(exc), "rows_ingested": 0}
     if not os.path.isfile(path):
         return {"error": f"File not found: {path}", "rows_ingested": 0}
 
@@ -1679,6 +1740,10 @@ def ingest_master_csv(conn: sqlite3.Connection, path: str, dataset: str) -> dict
 
 def ingest_all_master_csvs(conn: sqlite3.Connection, data_dir: str) -> dict:
     """Ingest all CSV files from a directory into master_data."""
+    try:
+        data_dir = _validate_path(data_dir)
+    except ValueError as exc:
+        return {"error": str(exc)}
     results: dict[str, Any] = {}
     if not os.path.isdir(data_dir):
         return {"error": f"Directory not found: {data_dir}"}

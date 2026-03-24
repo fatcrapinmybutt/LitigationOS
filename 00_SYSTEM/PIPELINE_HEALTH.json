@@ -1,0 +1,1462 @@
+{
+  "generated_at": "2026-03-23T22:25:43.968276",
+  "engine": "LitigationOS Pipeline Health Check v1.0",
+  "litigos_root": "C:\\Users\\andre\\LitigationOS",
+  "central_db": {
+    "path": "C:\\Users\\andre\\LitigationOS\\litigation_context.db",
+    "exists": true,
+    "size_mb": 670.1,
+    "table_count": 167,
+    "total_rows": 1978025,
+    "tables": [
+      {
+        "name": "external_drive_files",
+        "rows": 363000
+      },
+      {
+        "name": "file_inventory",
+        "rows": 230000
+      },
+      {
+        "name": "json_atoms",
+        "rows": 208759
+      },
+      {
+        "name": "json_atoms_fts",
+        "rows": 208759
+      },
+      {
+        "name": "json_atoms_fts_docsize",
+        "rows": 208759
+      },
+      {
+        "name": "evidence_fts",
+        "rows": 92246
+      },
+      {
+        "name": "evidence_fts_docsize",
+        "rows": 92246
+      },
+      {
+        "name": "evidence_quotes",
+        "rows": 92246
+      },
+      {
+        "name": "atoms",
+        "rows": 71109
+      },
+      {
+        "name": "best_interest_factor_map",
+        "rows": 58847
+      },
+      {
+        "name": "authority_chains_v2",
+        "rows": 31538
+      },
+      {
+        "name": "dedup_log",
+        "rows": 27301
+      },
+      {
+        "name": "master_evidence_timeline",
+        "rows": 24859
+      },
+      {
+        "name": "timeline_fts",
+        "rows": 24859
+      },
+      {
+        "name": "timeline_fts_docsize",
+        "rows": 24859
+      },
+      {
+        "name": "evidence_dedup_map",
+        "rows": 20496
+      },
+      {
+        "name": "timeline_events",
+        "rows": 16644
+      },
+      {
+        "name": "session_intelligence",
+        "rows": 13976
+      },
+      {
+        "name": "exhibit_binders",
+        "rows": 12617
+      },
+      {
+        "name": "json_harvest",
+        "rows": 12322
+      },
+      {
+        "name": "near_duplicate_log",
+        "rows": 10546
+      },
+      {
+        "name": "vec_evidence_auxiliary",
+        "rows": 10000
+      },
+      {
+        "name": "vec_evidence_meta",
+        "rows": 10000
+      },
+      {
+        "name": "vec_evidence_rowids",
+        "rows": 10000
+      },
+      {
+        "name": "narrative_context",
+        "rows": 9110
+      },
+      {
+        "name": "documents",
+        "rows": 6386
+      },
+      {
+        "name": "json_atoms_fts_data",
+        "rows": 5213
+      },
+      {
+        "name": "omega_evidence_atoms",
+        "rows": 5084
+      },
+      {
+        "name": "judicial_violations",
+        "rows": 5063
+      },
+      {
+        "name": "dedup_cross_table_links",
+        "rows": 4940
+      },
+      {
+        "name": "evidence_fts_data",
+        "rows": 4891
+      },
+      {
+        "name": "downloads_pages",
+        "rows": 4706
+      },
+      {
+        "name": "downloads_pages_fts",
+        "rows": 4706
+      },
+      {
+        "name": "downloads_pages_fts_docsize",
+        "rows": 4706
+      },
+      {
+        "name": "ocr_master_xref",
+        "rows": 4061
+      },
+      {
+        "name": "evidence_fts_idx",
+        "rows": 3583
+      },
+      {
+        "name": "exhibit_cross_references",
+        "rows": 3302
+      },
+      {
+        "name": "critical_facts",
+        "rows": 3048
+      },
+      {
+        "name": "json_atoms_fts_idx",
+        "rows": 2748
+      },
+      {
+        "name": "alienation_timeline",
+        "rows": 2404
+      },
+      {
+        "name": "citation_audit",
+        "rows": 2369
+      },
+      {
+        "name": "timeline_fts_data",
+        "rows": 2246
+      },
+      {
+        "name": "file_dedup_log",
+        "rows": 2234
+      },
+      {
+        "name": "judicial_bias_chronology",
+        "rows": 1940
+      },
+      {
+        "name": "timeline_fts_idx",
+        "rows": 1829
+      },
+      {
+        "name": "downloads_pages_fts_idx",
+        "rows": 1608
+      },
+      {
+        "name": "downloads_pages_fts_data",
+        "rows": 1587
+      },
+      {
+        "name": "case_timeline",
+        "rows": 1472
+      },
+      {
+        "name": "impeachment_matrix",
+        "rows": 1436
+      },
+      {
+        "name": "master_citations",
+        "rows": 1402
+      }
+    ],
+    "wal_mode": true,
+    "integrity": "ok"
+  },
+  "database_count": 57,
+  "databases": [
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\darwin\\darwin.db",
+      "name": "darwin.db",
+      "size_bytes": 626688,
+      "size_kb": 612,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 5,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\local_model\\learning_metrics.db",
+      "name": "learning_metrics.db",
+      "size_bytes": 73728,
+      "size_kb": 72,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 7,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\case_analysis.db",
+      "name": "case_analysis.db",
+      "size_bytes": 98304,
+      "size_kb": 96,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 8,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\consolidation_plan.db",
+      "name": "consolidation_plan.db",
+      "size_bytes": 13500416,
+      "size_kb": 13184,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 5,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\drive_C_manifest.db",
+      "name": "drive_C_manifest.db",
+      "size_bytes": 17809408,
+      "size_kb": 17392,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 4,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\drive_D_manifest.db",
+      "name": "drive_D_manifest.db",
+      "size_bytes": 3985408,
+      "size_kb": 3892,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 4,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\drive_F_manifest.db",
+      "name": "drive_F_manifest.db",
+      "size_bytes": 8179712,
+      "size_kb": 7988,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 4,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\drive_G_manifest.db",
+      "name": "drive_G_manifest.db",
+      "size_bytes": 3940352,
+      "size_kb": 3848,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 4,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\drive_H_manifest.db",
+      "name": "drive_H_manifest.db",
+      "size_bytes": 8667136,
+      "size_kb": 8464,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 4,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\drive_I_manifest.db",
+      "name": "drive_I_manifest.db",
+      "size_bytes": 1508212736,
+      "size_kb": 1472864,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 10,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\omega_C_manifest.db",
+      "name": "omega_C_manifest.db",
+      "size_bytes": 163360768,
+      "size_kb": 159532,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 5,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\manifests\\omega_dedup.db",
+      "name": "omega_dedup.db",
+      "size_bytes": 620462080,
+      "size_kb": 605920,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 7,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\novel\\novel.db",
+      "name": "novel.db",
+      "size_bytes": 159744,
+      "size_kb": 156,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 7,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\pipeline\\agents\\master_index.db",
+      "name": "master_index.db",
+      "size_bytes": 40960,
+      "size_kb": 40,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 3,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\00_SYSTEM\\pipeline\\pipeline.db",
+      "name": "pipeline.db",
+      "size_bytes": 0,
+      "size_kb": 0,
+      "integrity": "empty",
+      "journal_mode": "unknown",
+      "wal_mode": false,
+      "table_count": 0,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\4302_VAR_Unnamed_20250107_190300_190300.db",
+      "name": "4302_VAR_Unnamed_20250107_190300_190300.db",
+      "size_bytes": 188416,
+      "size_kb": 184,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\authority_master.db",
+      "name": "authority_master.db",
+      "size_bytes": 87265280,
+      "size_kb": 85220,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 18,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\databases\\lane_E_misconduct.db",
+      "name": "lane_E_misconduct.db",
+      "size_bytes": 520192,
+      "size_kb": 508,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\databases\\lane_F_appellate.db",
+      "name": "lane_F_appellate.db",
+      "size_bytes": 507904,
+      "size_kb": 496,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\ec.db",
+      "name": "ec.db",
+      "size_bytes": 29954048,
+      "size_kb": 29252,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 2,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Install.db",
+      "name": "Install.db",
+      "size_bytes": 27648,
+      "size_kb": 27,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 10,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\lane_A_custody.db",
+      "name": "lane_A_custody.db",
+      "size_bytes": 593920,
+      "size_kb": 580,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\lane_B_housing.db",
+      "name": "lane_B_housing.db",
+      "size_bytes": 630784,
+      "size_kb": 616,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\lane_C_convergence.db",
+      "name": "lane_C_convergence.db",
+      "size_bytes": 589824,
+      "size_kb": 576,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\lane_D_ppo.db",
+      "name": "lane_D_ppo.db",
+      "size_bytes": 512000,
+      "size_kb": 500,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\litigation_lite.db",
+      "name": "litigation_lite.db",
+      "size_bytes": 52695040,
+      "size_kb": 51460,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 15,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Media_db.db",
+      "name": "Media_db.db",
+      "size_bytes": 29696,
+      "size_kb": 29,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190255_190255.db",
+      "name": "Unnamed_20250107_190255_190255.db",
+      "size_bytes": 51200,
+      "size_kb": 50,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190256_190257.db",
+      "name": "Unnamed_20250107_190256_190257.db",
+      "size_bytes": 74752,
+      "size_kb": 73,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 53,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190257_190257.db",
+      "name": "Unnamed_20250107_190257_190257.db",
+      "size_bytes": 672768,
+      "size_kb": 657,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 53,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190258.db",
+      "name": "Unnamed_20250107_190258.db",
+      "size_bytes": 34816,
+      "size_kb": 34,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190258_190258.db",
+      "name": "Unnamed_20250107_190258_190258.db",
+      "size_bytes": 4320256,
+      "size_kb": 4219,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190300.db",
+      "name": "Unnamed_20250107_190300.db",
+      "size_bytes": 31744,
+      "size_kb": 31,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190301.db",
+      "name": "Unnamed_20250107_190301.db",
+      "size_bytes": 74752,
+      "size_kb": 73,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 53,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_190303.db",
+      "name": "Unnamed_20250107_190303.db",
+      "size_bytes": 74752,
+      "size_kb": 73,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 53,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_191620_191620.db",
+      "name": "Unnamed_20250107_191620_191620.db",
+      "size_bytes": 74752,
+      "size_kb": 73,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 53,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\Unnamed_20250107_191621_191621.db",
+      "name": "Unnamed_20250107_191621_191621.db",
+      "size_bytes": 4245504,
+      "size_kb": 4146,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 11,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\09_DATA\\usage.db",
+      "name": "usage.db",
+      "size_bytes": 56,
+      "size_kb": 0,
+      "integrity": "error",
+      "journal_mode": "unknown",
+      "wal_mode": false,
+      "table_count": 0,
+      "error": "file is not a database"
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\court_forms.db",
+      "name": "court_forms.db",
+      "size_bytes": 163840,
+      "size_kb": 160,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 7,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\court_forms.db",
+      "name": "court_forms.db",
+      "size_bytes": 94208,
+      "size_kb": 92,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 9,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_14th_circuit_civil.db",
+      "name": "jurisdiction_14th_circuit_civil.db",
+      "size_bytes": 32768,
+      "size_kb": 32,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 7,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_14th_circuit_family.db",
+      "name": "jurisdiction_14th_circuit_family.db",
+      "size_bytes": 45056,
+      "size_kb": 44,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 8,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_coa.db",
+      "name": "jurisdiction_coa.db",
+      "size_bytes": 36864,
+      "size_kb": 36,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 8,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_federal_wdmi.db",
+      "name": "jurisdiction_federal_wdmi.db",
+      "size_bytes": 69632,
+      "size_kb": 68,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 8,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_jtc.db",
+      "name": "jurisdiction_jtc.db",
+      "size_bytes": 57344,
+      "size_kb": 56,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 7,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\jurisdiction_msc.db",
+      "name": "jurisdiction_msc.db",
+      "size_bytes": 61440,
+      "size_kb": 60,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 7,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\lane_C_convergence.db",
+      "name": "lane_C_convergence.db",
+      "size_bytes": 86016,
+      "size_kb": 84,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 4,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\legal_iq.db",
+      "name": "legal_iq.db",
+      "size_bytes": 53248,
+      "size_kb": 52,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 6,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\litigation_skills.db",
+      "name": "litigation_skills.db",
+      "size_bytes": 53248,
+      "size_kb": 52,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 6,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\michigan_judicial_system.db",
+      "name": "michigan_judicial_system.db",
+      "size_bytes": 53248,
+      "size_kb": 52,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 7,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\databases\\procedures.db",
+      "name": "procedures.db",
+      "size_bytes": 53248,
+      "size_kb": 52,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 6,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\fred_prime_index.db",
+      "name": "fred_prime_index.db",
+      "size_bytes": 8192,
+      "size_kb": 8,
+      "integrity": "ok",
+      "journal_mode": "delete",
+      "wal_mode": false,
+      "table_count": 1,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\litigation_context.db",
+      "name": "litigation_context.db",
+      "size_bytes": 702664704,
+      "size_kb": 686196,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 167,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\litigationos.db",
+      "name": "litigationos.db",
+      "size_bytes": 188416,
+      "size_kb": 184,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 25,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\mcr_rules.db",
+      "name": "mcr_rules.db",
+      "size_bytes": 3878912,
+      "size_kb": 3788,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 5,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\script_forge.db",
+      "name": "script_forge.db",
+      "size_bytes": 221413376,
+      "size_kb": 216224,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 26,
+      "error": null
+    },
+    {
+      "path": "C:\\Users\\andre\\LitigationOS\\script_vault.db",
+      "name": "script_vault.db",
+      "size_bytes": 204800,
+      "size_kb": 200,
+      "integrity": "ok",
+      "journal_mode": "wal",
+      "wal_mode": true,
+      "table_count": 10,
+      "error": null
+    }
+  ],
+  "summary": {
+    "total_databases": 57,
+    "healthy": 55,
+    "corrupt_or_error": 1,
+    "empty": 1,
+    "wal_enabled": 34,
+    "non_wal": 23
+  },
+  "orphaned_temp_files": {
+    "count": 416,
+    "total_size_kb": 5511,
+    "files": [
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\batch_convert.log",
+        "size_kb": 0,
+        "age_hours": 23.9,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\broken_finder_314.bak",
+        "size_kb": 3,
+        "age_hours": 770.7,
+        "extension": ".bak"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\broken_pth_314.bak",
+        "size_kb": 0,
+        "age_hours": 770.7,
+        "extension": ".bak"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\_json_harvest_progress.log",
+        "size_kb": 29,
+        "age_hours": 49.8,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\_mega_ocr_progress.log",
+        "size_kb": 51,
+        "age_hours": 52.1,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\_mega_ocr_stderr.log",
+        "size_kb": 0,
+        "age_hours": 55.2,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\_mega_ocr_stdout.log",
+        "size_kb": 82,
+        "age_hours": 52.1,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\_ocr_large_progress.log",
+        "size_kb": 2,
+        "age_hours": 55.6,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\_ocr_large_stderr.log",
+        "size_kb": 0,
+        "age_hours": 55.7,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\_ocr_large_stdout.log",
+        "size_kb": 2,
+        "age_hours": 55.6,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\_ocr_progress.log",
+        "size_kb": 4,
+        "age_hours": 55.8,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\_ocr_stderr.log",
+        "size_kb": 0,
+        "age_hours": 56.0,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\_ocr_stdout.log",
+        "size_kb": 0,
+        "age_hours": 56.0,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\_ocr_v2_stderr.log",
+        "size_kb": 0,
+        "age_hours": 55.8,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\_ocr_v2_stdout.log",
+        "size_kb": 4,
+        "age_hours": 55.8,
+        "extension": ".log"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\__pycache__\\__init__.cpython-314.pyc",
+        "size_kb": 0,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\__pycache__\\__main__.cpython-314.pyc",
+        "size_kb": 0,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\__pycache__\\__pip-runner__.cpython-314.pyc",
+        "size_kb": 2,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\__pycache__\\build_env.cpython-314.pyc",
+        "size_kb": 29,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\__pycache__\\cache.cpython-314.pyc",
+        "size_kb": 14,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\__pycache__\\configuration.cpython-314.pyc",
+        "size_kb": 21,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\__pycache__\\exceptions.cpython-314.pyc",
+        "size_kb": 50,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\__pycache__\\main.cpython-314.pyc",
+        "size_kb": 0,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\__pycache__\\pyproject.cpython-314.pyc",
+        "size_kb": 4,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\__pycache__\\self_outdated_check.cpython-314.pyc",
+        "size_kb": 11,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\__pycache__\\wheel_builder.cpython-314.pyc",
+        "size_kb": 11,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\__pycache__\\__init__.cpython-314.pyc",
+        "size_kb": 0,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\autocompletion.cpython-314.pyc",
+        "size_kb": 10,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\base_command.cpython-314.pyc",
+        "size_kb": 12,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\cmdoptions.cpython-314.pyc",
+        "size_kb": 40,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\command_context.cpython-314.pyc",
+        "size_kb": 2,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\index_command.cpython-314.pyc",
+        "size_kb": 9,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\main.cpython-314.pyc",
+        "size_kb": 2,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\main_parser.cpython-314.pyc",
+        "size_kb": 5,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\parser.cpython-314.pyc",
+        "size_kb": 21,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\progress_bars.cpython-314.pyc",
+        "size_kb": 6,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\req_command.cpython-314.pyc",
+        "size_kb": 17,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\spinners.cpython-314.pyc",
+        "size_kb": 14,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\status_codes.cpython-314.pyc",
+        "size_kb": 0,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\cli\\__pycache__\\__init__.cpython-314.pyc",
+        "size_kb": 0,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\cache.cpython-314.pyc",
+        "size_kb": 13,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\check.cpython-314.pyc",
+        "size_kb": 2,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\completion.cpython-314.pyc",
+        "size_kb": 5,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\configuration.cpython-314.pyc",
+        "size_kb": 15,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\debug.cpython-314.pyc",
+        "size_kb": 11,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\download.cpython-314.pyc",
+        "size_kb": 7,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\freeze.cpython-314.pyc",
+        "size_kb": 4,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\hash.cpython-314.pyc",
+        "size_kb": 3,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\help.cpython-314.pyc",
+        "size_kb": 1,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\index.cpython-314.pyc",
+        "size_kb": 8,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\inspect.cpython-314.pyc",
+        "size_kb": 4,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\install.cpython-314.pyc",
+        "size_kb": 31,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\list.cpython-314.pyc",
+        "size_kb": 19,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\lock.cpython-314.pyc",
+        "size_kb": 8,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\search.cpython-314.pyc",
+        "size_kb": 8,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\show.cpython-314.pyc",
+        "size_kb": 12,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\uninstall.cpython-314.pyc",
+        "size_kb": 5,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\wheel.cpython-314.pyc",
+        "size_kb": 8,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\commands\\__pycache__\\__init__.cpython-314.pyc",
+        "size_kb": 4,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\distributions\\__pycache__\\base.cpython-314.pyc",
+        "size_kb": 3,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\distributions\\__pycache__\\installed.cpython-314.pyc",
+        "size_kb": 2,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\distributions\\__pycache__\\sdist.cpython-314.pyc",
+        "size_kb": 9,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\distributions\\__pycache__\\wheel.cpython-314.pyc",
+        "size_kb": 2,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\distributions\\__pycache__\\__init__.cpython-314.pyc",
+        "size_kb": 1,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\index\\__pycache__\\collector.cpython-314.pyc",
+        "size_kb": 24,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\index\\__pycache__\\package_finder.cpython-314.pyc",
+        "size_kb": 49,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\index\\__pycache__\\sources.cpython-314.pyc",
+        "size_kb": 15,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\index\\__pycache__\\__init__.cpython-314.pyc",
+        "size_kb": 0,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\locations\\__pycache__\\base.cpython-314.pyc",
+        "size_kb": 4,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\locations\\__pycache__\\_distutils.cpython-314.pyc",
+        "size_kb": 7,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\locations\\__pycache__\\_sysconfig.cpython-314.pyc",
+        "size_kb": 9,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\locations\\__pycache__\\__init__.cpython-314.pyc",
+        "size_kb": 18,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\metadata\\__pycache__\\base.cpython-314.pyc",
+        "size_kb": 40,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\metadata\\__pycache__\\pkg_resources.cpython-314.pyc",
+        "size_kb": 20,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\metadata\\__pycache__\\_json.cpython-314.pyc",
+        "size_kb": 3,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\metadata\\__pycache__\\__init__.cpython-314.pyc",
+        "size_kb": 7,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\metadata\\importlib\\__pycache__\\_compat.cpython-314.pyc",
+        "size_kb": 5,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\metadata\\importlib\\__pycache__\\_dists.cpython-314.pyc",
+        "size_kb": 15,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\metadata\\importlib\\__pycache__\\_envs.cpython-314.pyc",
+        "size_kb": 9,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\metadata\\importlib\\__pycache__\\__init__.cpython-314.pyc",
+        "size_kb": 0,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\candidate.cpython-314.pyc",
+        "size_kb": 2,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\direct_url.cpython-314.pyc",
+        "size_kb": 13,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\format_control.cpython-314.pyc",
+        "size_kb": 5,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\index.cpython-314.pyc",
+        "size_kb": 2,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\installation_report.cpython-314.pyc",
+        "size_kb": 2,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\link.cpython-314.pyc",
+        "size_kb": 32,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\release_control.cpython-314.pyc",
+        "size_kb": 4,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\scheme.cpython-314.pyc",
+        "size_kb": 1,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\search_scope.cpython-314.pyc",
+        "size_kb": 5,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\selection_prefs.cpython-314.pyc",
+        "size_kb": 2,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\target_python.cpython-314.pyc",
+        "size_kb": 5,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\wheel.cpython-314.pyc",
+        "size_kb": 5,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\models\\__pycache__\\__init__.cpython-314.pyc",
+        "size_kb": 0,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\network\\__pycache__\\auth.cpython-314.pyc",
+        "size_kb": 25,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\network\\__pycache__\\cache.cpython-314.pyc",
+        "size_kb": 9,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\network\\__pycache__\\download.cpython-314.pyc",
+        "size_kb": 18,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\network\\__pycache__\\lazy_wheel.cpython-314.pyc",
+        "size_kb": 13,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\network\\__pycache__\\session.cpython-314.pyc",
+        "size_kb": 21,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\network\\__pycache__\\utils.cpython-314.pyc",
+        "size_kb": 2,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      },
+      {
+        "path": "C:\\Users\\andre\\LitigationOS\\temp\\pip_backup_314\\pip\\_internal\\network\\__pycache__\\xmlrpc.cpython-314.pyc",
+        "size_kb": 3,
+        "age_hours": 893.1,
+        "extension": ".pyc"
+      }
+    ]
+  },
+  "verdict": "CRITICAL",
+  "elapsed_seconds": 207.72
+}

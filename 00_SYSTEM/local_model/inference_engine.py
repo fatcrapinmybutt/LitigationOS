@@ -983,6 +983,20 @@ class MichiganLegalModel:
             "parental_rights_fundamental": ["fundamental right", "parental rights", "troxel", "liberty interest", "strict scrutiny"],
             "mcneill_pattern": ["mcneill", "judge mcneill", "jenny mcneill", "biased judge"],
             "emily_watson_pattern": ["emily watson", "watson", "tiffany watson", "defendant watson", "opposing party"],
+            # ── Michigan-Specific Procedural Expansion ────────
+            "mcr_2_107_service": ["mcr 2.107", "2.107", "service requirement", "notice requirement", "proof of service"],
+            "mcr_2_119_motion_practice": ["mcr 2.119", "2.119", "motion practice", "brief in support", "response brief", "reply brief"],
+            "mcr_3_210_custody_investigation": ["mcr 3.210", "3.210", "custody investigation", "investigation report"],
+            "mcr_7_211_brief_standards": ["mcr 7.211", "7.211", "appellate brief", "brief on appeal", "statement of questions"],
+            "mcl_712a_child_protection": ["mcl 712a", "712a", "child protective", "cps", "abuse neglect"],
+            "mcl_600_1701_superintending": ["mcl 600.1701", "1701", "superintending control power", "circuit court power"],
+            "scao_forms": ["scao", "mc form", "dc form", "cc form", "foc form", "court form"],
+            "judicial_canon_2": ["canon 2", "mcjc", "judicial conduct", "appearance of impropriety", "impartiality"],
+            "judicial_canon_3": ["canon 3", "judicial duties", "competence", "diligence", "adjudicative responsibilities"],
+            "mre_901_authentication": ["mre 901", "901", "authentication", "identification", "foundation"],
+            "mre_803_hearsay_exception": ["mre 803", "803(6)", "business records", "803(1)", "present sense impression"],
+            "garnishment_enforcement": ["garnishment", "wage garnishment", "periodic garnishment", "600.4011", "600.4012"],
+            "friend_of_court_act": ["friend of court act", "552.501", "552.505", "552.507", "foc act"],
         }
         # Dynamically add concepts from JSON if they exist
         for concept_id in self.legal_concepts:
@@ -1001,6 +1015,55 @@ class MichiganLegalModel:
                         })
                     break
         return matches
+
+    def legal_search(self, query: str, top_k: int = 10) -> dict:
+        """Convenience method: combined legal search across all engines.
+
+        Runs TF-IDF retrieval, concept matching, entity extraction, and DB
+        lookup in one call.  Returns a unified result dict suitable for
+        quick answers or further processing.
+
+        Args:
+            query: Natural language legal question.
+            top_k: Max documents to return from retrieval.
+
+        Returns:
+            dict with keys: documents, concepts, entities, authorities,
+            db_results, and metadata.
+        """
+        t0 = time.time()
+        text = query.strip()
+        if not text:
+            return {"error": "empty query", "documents": [], "concepts": []}
+
+        # Parallel retrieval
+        documents = self.retrieve(text, top_k=top_k)
+        concepts = self.match_concepts(text)
+        entities = self.extract_entities(text)
+        intent, confidence = self.classify_intent(text)
+
+        # DB lookup for precise answers
+        keywords = [w.lower() for w in text.split() if len(w) > 2]
+        db_results = self._db_lookup(intent, entities, keywords)
+
+        # Authority lookup if legal topic detected
+        authorities = []
+        if any(k in intent for k in ("rule", "statute", "authority", "disqualif", "custody")):
+            authorities = self.find_authority(text, limit=5)
+
+        elapsed = round((time.time() - t0) * 1000, 1)
+        return {
+            "query": text,
+            "intent": intent,
+            "confidence": round(confidence, 3),
+            "documents": documents[:top_k],
+            "concepts": concepts,
+            "entities": entities,
+            "db_results": db_results,
+            "authorities": authorities,
+            "result_count": len(documents) + len(db_results) + len(authorities),
+            "elapsed_ms": elapsed,
+        }
 
     def _db_lookup(self, intent: str, entities: dict, keywords: list[str]) -> list[dict]:
         """Direct DB lookups for precise answers."""
@@ -3355,6 +3418,11 @@ def run_pipe():
             elif method == "concepts":
                 concepts = model.match_concepts(request.get("text", ""))
                 result = {"concepts": concepts}
+            elif method == "legal_search":
+                result = model.legal_search(
+                    request.get("query", request.get("text", "")),
+                    top_k=request.get("top_k", 10),
+                )
             elif method == "find_authority":
                 result = {"authorities": model.find_authority(
                     request.get("topic", request.get("text", "")),

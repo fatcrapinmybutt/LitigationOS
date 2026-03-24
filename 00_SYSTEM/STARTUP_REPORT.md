@@ -1,12 +1,12 @@
 # 🐻 THE MANBEARPIG — Startup Report
-**Generated:** 2026-03-23T20:56:20.018769
+**Generated:** 2026-03-23T22:25:36.685533
 **Engine:** THE-MANBEARPIG x NEXUS v11.0 OMEGA-SUPREME
 **Parent-Child Separation:** **227 DAYS** (since Aug 8, 2025)
 
 ## Database
 - Status: CONNECTED
 - Size: 670.1 MB
-- Tables: 166
+- Tables: 167
 
 ## Evidence Arsenal
 - **quotes:** 92,246
@@ -14,6 +14,14 @@
 - **violations:** 5,063
 - **contradictions:** 0
 - **claims:** 35
+
+## Extended Intelligence Tables
+- **Critical Facts:** 3,048
+- **Exhibits:** 31
+- **False Allegations:** 7
+- **Narratives:** 9,110
+- **Police Reports:** 356
+- **Session Intel:** 13,976
 
 ## Filing Readiness
 | Vehicle | Status | Score |
@@ -38,14 +46,15 @@
 
 ## Jurisdiction Databases
 - **Court Forms DB:** ✅ 160KB
-- **Specialty DBs:** 11 loaded
-  - ✅ `court_forms.db` — 0KB, 0 tables
+- **Specialty DBs:** 12 loaded
+  - ✅ `court_forms.db` — 92KB, 9 tables
   - ✅ `jurisdiction_14th_circuit_civil.db` — 32KB, 7 tables
   - ✅ `jurisdiction_14th_circuit_family.db` — 44KB, 8 tables
   - ✅ `jurisdiction_coa.db` — 36KB, 8 tables
   - ✅ `jurisdiction_federal_wdmi.db` — 68KB, 8 tables
   - ✅ `jurisdiction_jtc.db` — 56KB, 7 tables
   - ✅ `jurisdiction_msc.db` — 60KB, 7 tables
+  - ✅ `lane_C_convergence.db` — 84KB, 4 tables
   - ✅ `legal_iq.db` — 52KB, 6 tables
   - ✅ `litigation_skills.db` — 52KB, 6 tables
   - ✅ `michigan_judicial_system.db` — 52KB, 7 tables
@@ -90,7 +99,7 @@
 ## Drive State
 | Drive | Free GB | Total GB | Status |
 |-------|---------|----------|--------|
-| C: | 9.39 | 237.69 | 🟢 OK |
+| C: | 9.37 | 237.69 | 🟢 OK |
 | D: | 1.02 | 31.99 | 🔴 CRITICAL |
 | F: | 7.45 | 31.99 | 🟢 OK |
 | G: | 18.63 | 25.75 | 🟢 OK |
@@ -103,6 +112,11 @@
 - 🔄 In Progress: 2
 - ⏳ Pending: 8
 - 🚫 Blocked: 1
+
+## AI Engines
+- ✅ **NOVEL**
+- ✅ **DARWIN**
+- ✅ **INFERENCE**
 
 ## ⚠️ IRON RULES (PERMANENT)
 1. EXTREME DEPTH standard (8,348-violation thoroughness MINIMUM)
@@ -117,7 +131,7 @@
 - Query: `SELECT * FROM master_todos WHERE status='pending' ORDER BY id LIMIT 20`
 - Run NEXUS benchmark: `python 00_SYSTEM/local_model/nexus_engine.py --benchmark`
 - Run NEXUS status: `python 00_SYSTEM/local_model/nexus_engine.py --status`
-- Run HF engine: `python 00_SYSTEM/local_model/hf_legal_engine.py --benchmark`
+- Run inference engine: `cd 00_SYSTEM/local_model && python inference_engine.py --benchmark`
 - Run NOVEL perceive: `cd 00_SYSTEM/novel && python novel_engine.py perceive`
 - Run NOVEL evolve: `cd 00_SYSTEM/novel && python novel_engine.py evolve`
 - Run DARWIN evolve: `cd 00_SYSTEM/darwin && python darwin_engine.py evolve`
