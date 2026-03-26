@@ -243,9 +243,10 @@ def get_tier_agents(tier: str) -> list:
         from .convergence.f06_convergence_certifier import ConvergenceCertifier
         from .convergence.f07_filing_packager import FilingPackager
         from .convergence.f09_deadline_enforcer import DeadlineEnforcer
+        from .convergence.f10_oneshot_filer import OneShotFiler
         agents = [FilingFactory(), BrainFeeder(), GraphBuilder(),
                   MscArchitect(), TestRunner(), ConvergenceCertifier(),
-                  FilingPackager(), DeadlineEnforcer()]
+                  FilingPackager(), DeadlineEnforcer(), OneShotFiler()]
 
     return agents
 
