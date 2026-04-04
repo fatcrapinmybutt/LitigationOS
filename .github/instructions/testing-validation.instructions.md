@@ -97,6 +97,29 @@ cd 00_SYSTEM\pipeline && python quick_status.py     # Status
 python validate.py                                   # Full validation
 ```
 
+## Engine Smoke Test Requirement
+
+Every engine directory under `00_SYSTEM/engines/` MUST have at least one smoke test that verifies:
+1. **Import succeeds** — `from engines.{name} import *` without errors
+2. **Instantiation succeeds** — Primary class can be created (may use mock DB)
+3. **Basic operation** — One representative query/function returns expected type
+
+Currently 34/36 engine directories have ZERO tests (only `narrative/` and `semantic/` have tests). When touching any engine, add a `test_{engine}.py` in the engine directory or in `tests/engines/`.
+
+```python
+# Minimal smoke test template
+def test_engine_import():
+    """Engine module imports without stdout corruption or missing deps."""
+    import importlib
+    mod = importlib.import_module(f"engines.{ENGINE_NAME}")
+    assert hasattr(mod, "EXPECTED_CLASS")
+
+def test_engine_instantiate():
+    """Primary class instantiates without crashing."""
+    engine = mod.EXPECTED_CLASS()  # or with mock config
+    assert engine is not None
+```
+
 ## Regression Watchlist
 
 Known issues that MUST NOT regress:

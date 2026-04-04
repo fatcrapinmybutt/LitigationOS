@@ -111,6 +111,24 @@ ALL THREE of these sources MUST be exhausted:
 
 **VIOLATION:** Inserting a generic `[ANDREW_REQUIRED]` without running all 3 searches.
 
+### Automated Placeholder QA Gate (DRAFT→QA_REVIEW transition)
+
+Before ANY filing transitions from DRAFT to QA_REVIEW, run automated scan:
+```python
+PLACEHOLDER_PATTERNS = [
+    r'\[ANDREW_REQUIRED[^\]]*\]',
+    r'\[VERIFY[^\]]*\]',
+    r'\[COMPUTE[^\]]*\]',
+    r'\[INSERT[^\]]*\]',
+    r'\[TBD[^\]]*\]',
+    r'\[PLACEHOLDER[^\]]*\]',
+    r'\[TODO[^\]]*\]',
+    r'\[ATTACH[^\]]*\]',
+]
+# Only [ACQUIRE: ...] placeholders with full search documentation survive QA
+```
+**Zero generic placeholders in QA_REVIEW.** Each must be resolved or converted to a specific `[ACQUIRE:]` with documented search results.
+
 ---
 
 ## 4. Anti-Hallucination Verification Protocol
@@ -152,6 +170,21 @@ Every number cited in a document MUST be traceable to a SQL query:
 SELECT COUNT(*) FROM [table] WHERE [conditions];
 -- Record the exact query and result. Do NOT round up or extrapolate.
 ```
+
+### Fabricated Aggregate Statistics Ban (Rule 20 Enforcement)
+
+**NEVER include AI-generated aggregate statistics in court filings.** The following patterns are BANNED:
+- "241,160 misconduct-related keyword hits" ← AI artifact, unverifiable
+- "12,478 person references" ← database artifact, meaningless to court
+- "5,059 documented judicial violations" ← only if backed by SELECT COUNT(*)
+- Any count derived from NLP keyword scanning, AI scoring, or automated classification
+
+**Permitted statistics in filings:**
+- Hand-countable: "On seven occasions documented in Exhibits A through G..."
+- Specific query: "Review of court dockets reveals 14 ex parte orders issued without notice"
+- Record-based: "Police reports from NSPD show zero arrests across nine contacts"
+
+The JTC and courts will not take AI-generated aggregate numbers seriously. They destroy credibility. If you can't point to specific exhibits for every item in the count, the number does not belong in the filing.
 
 ---
 
@@ -247,19 +280,67 @@ EXHIBIT:   "And this exhibit shows [contradiction]?"
 
 ---
 
-## Summary: APEX-OMEGA Document Generation Workflow
+## 8. Filing State Machine
+
+`DRAFT → QA_REVIEW → SERVICE_READY → FILED → DOCKETED → MONITORING`
+
+Every filing = complete **packet family** (not isolated documents):
+- **Motion**: motion + brief + affidavit + exhibit index + exhibits + proposed order + MC 12 COS + MC 20 fee waiver (if applicable)
+- **Appellate**: brief (MCR 7.212, 50pp max) + TOC + index of authorities + appendix + proof of service + filing fee
+- **Complaint**: complaint + cover sheet (CC 257 state / JS 44 federal) + summons (DC 101) + affidavit + exhibits + proposed order
+
+## 9. Service Protocol (Barnes WITHDREW — Serve Emily DIRECTLY)
+
+| Court | Primary Method | Backup |
+|-------|---------------|--------|
+| 14th Circuit | MiFILE e-service or first-class mail | Personal service |
+| Court of Appeals | TrueFiling | Mail |
+| MSC | Mail to all parties | — |
+| Federal (WDMI) | CM/ECF | Mail |
+| JTC | Mail to JTC + respondent judge | — |
+
+Serve: **Emily A. Watson**, 2160 Garland Dr, Norton Shores, MI 49441 + **FOC**: Pamela Rusco, 990 Terrace St, Muskegon, MI 49442 (custody/PT matters). MC 12 with EVERY filing.
+
+## 10. SCAO Forms & Filing Fees
+
+| Form | Name | Form | Name |
+|------|------|------|------|
+| MC 12 | Proof of Service | MC 375 | Motion |
+| MC 20 | Fee Waiver | DC 100 | Complaint |
+| MC 302 | PPO (Domestic) | DC 101 | Summons |
+| COA 1 | Claim of Appeal | CC 257 | Civil Cover Sheet |
+| JS 44 | Federal Cover Sheet | AO 239 | Federal IFP |
+
+| Court | Motion | New Case | Appeal |
+|-------|--------|----------|--------|
+| Circuit | $20 | $175 | — |
+| COA/MSC | — | — | $375 |
+| Federal | — | $405 | — |
+| JTC | $0 | $0 | — |
+
+## 11. MCR Quick Reference
+
+- **MCR 2.003** — Disqualification: motion + affidavit of bias, file ASAP after discovering grounds
+- **MCR 2.107** — Service: personal (2.105), mail (2.107(C)(3)), e-filing. MC 12 required
+- **MCR 2.612** — Relief from judgment: (a) mistake, (b) new evidence, (c) fraud, (f) catch-all. Within 1 year
+- **MCR 3.206** — Custody modification: proper cause/change of circumstances (*Vodvarka*), all 12 MCL 722.23 factors
+- **MCR 3.707** — PPO: ex parte if immediate harm, hearing within 14 days, MCL 764.15b criminal contempt
+- **MCR 7.212** — COA briefs: 50pp/16K words, double-spaced, TOC + authorities + jurisdictional statement + facts + argument
+- **MCR 7.305/7.306** — MSC: leave to appeal, superintending control, mandamus, habeas corpus
+
+## Summary: SINGULARITY Document Generation Workflow
 
 ```
 1. RECEIVE filing task → identify lane (A-F) and document type
-2. SEARCH for existing documents (D5 hybrid search — prevent duplicates)
-3. QUERY evidence from litigation_context.db (D1 evidence grounding)
-4. SELECT structure: IRAC / CREAC / TEC (D2 auto-structuring)
-5. RETRIEVE authorities from authority_master_index (D2 rule retrieval)
-6. QUERY contradictions for credibility sections (D3 impeachment)
-7. APPLY correct court format (D4 multi-court adapter)
-8. AUTHENTICATE recordings if applicable (D6 Sullivan v Gray)
-9. BUILD document with all modules integrated
-10. RUN 15-gate QA pipeline (litigation-document-qa-supreme)
-11. VERDICT: GO / NO-GO / CONDITIONAL
-12. FILE only if GO or CONDITIONAL with fixes applied
+2. SEARCH existing documents (hybrid search — prevent duplicates)
+3. QUERY evidence from litigation_context.db (evidence grounding)
+4. SELECT structure: IRAC / CREAC / TEC (per filing type table §2)
+5. RETRIEVE authorities from authority_chains_v2 + michigan_rules_extracted
+6. QUERY contradictions for credibility sections (impeachment)
+7. APPLY correct court format (per lane table §5)
+8. AUTHENTICATE recordings if applicable (Sullivan v Gray §6)
+9. BUILD complete packet family (§8)
+10. RUN QA gates: zero placeholders, verified citations, correct year/names/child/attorney
+11. GENERATE service proof (MC 12) per protocol (§9)
+12. VERDICT: GO / NO-GO / CONDITIONAL
 ```

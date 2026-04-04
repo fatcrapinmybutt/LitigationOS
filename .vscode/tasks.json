@@ -1,0 +1,105 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Verify (5-gate)",
+      "type": "shell",
+      "command": "just verify",
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "shared", "clear": true },
+      "problemMatcher": ["$pep8"],
+      "detail": "Syntax → Contracts → Boundaries → Schema → FTS5 (<15s)"
+    },
+    {
+      "label": "Test (pytest)",
+      "type": "shell",
+      "command": "just test",
+      "group": { "kind": "test", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": ["$pep8"]
+    },
+    {
+      "label": "Lint (ruff)",
+      "type": "shell",
+      "command": "just lint",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": ["$pep8"]
+    },
+    {
+      "label": "Status (DB + deadlines)",
+      "type": "shell",
+      "command": "just status",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Engines (list all)",
+      "type": "shell",
+      "command": "just engines",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Deadlines",
+      "type": "shell",
+      "command": "just deadlines",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Separation Counter",
+      "type": "shell",
+      "command": "just separation",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean (__pycache__)",
+      "type": "shell",
+      "command": "just clean",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "FTS5 Rebuild",
+      "type": "shell",
+      "command": "just fts5-rebuild",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Startup Report",
+      "type": "shell",
+      "command": "just startup",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Search Evidence",
+      "type": "shell",
+      "command": "just search \"${input:searchQuery}\"",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Filing Readiness",
+      "type": "shell",
+      "command": "just filing \"${input:filingLane}\"",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "searchQuery",
+      "type": "promptString",
+      "description": "FTS5 search query (supports AND, OR, NOT, \"phrases\")"
+    },
+    {
+      "id": "filingLane",
+      "type": "pickString",
+      "description": "Filing lane to check",
+      "options": ["A", "B", "C", "D", "E", "F", "F01", "F02", "F03", "F04", "F05", "F06", "F09", "F10"]
+    }
+  ]
+}

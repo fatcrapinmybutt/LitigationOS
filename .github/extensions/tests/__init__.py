@@ -1,0 +1,1 @@
+# MCP extension contract tests

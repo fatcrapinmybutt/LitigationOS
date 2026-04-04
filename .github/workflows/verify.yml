@@ -1,0 +1,50 @@
+name: Verify
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "00_SYSTEM/**"
+      - "scripts/**"
+      - ".github/extensions/**"
+      - ".github/workflows/verify.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "00_SYSTEM/**"
+      - "scripts/**"
+      - ".github/extensions/**"
+
+jobs:
+  verify:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install test dependencies
+        run: pip install pytest
+
+      - name: Syntax check
+        run: |
+          python -m py_compile 00_SYSTEM/engines/nexus/nexus_engine.py
+          python -m py_compile 00_SYSTEM/engines/chimera/chimera_engine.py
+          python -m py_compile 00_SYSTEM/engines/chronos/chronos_engine.py
+          python -m py_compile 00_SYSTEM/engines/cerberus/cerberus_engine.py
+          python -m py_compile 00_SYSTEM/brains/brain_manager.py
+
+      - name: Contract tests
+        run: >
+          python -m pytest
+          00_SYSTEM/shared/tests/
+          00_SYSTEM/engines/tests/
+          00_SYSTEM/brains/tests/
+          00_SYSTEM/tools/tests/
+          .github/extensions/tests/
+          -v --tb=short
+
+      - name: Boundary check
+        run: python scripts/check_boundaries.py

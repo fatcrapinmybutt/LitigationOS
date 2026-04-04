@@ -1,5 +1,22 @@
 {
   "recommendations": [
-    "lpyedge.gemini-cli-mcp"
-  ]
+    "github.copilot",
+    "github.copilot-chat",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.debugpy",
+    "charliermarsh.ruff",
+    "ms-python.black-formatter",
+    "eamodio.gitlens",
+    "usernamehw.errorlens",
+    "gruntfuggly.todo-tree",
+    "streetsidesoftware.code-spell-checker",
+    "yzhang.markdown-all-in-one",
+    "tamasfe.even-better-toml",
+    "redhat.vscode-yaml",
+    "kokakiwi.vscode-just",
+    "mechatroner.rainbow-csv",
+    "ms-vscode.live-server"
+  ],
+  "unwantedRecommendations": []
 }

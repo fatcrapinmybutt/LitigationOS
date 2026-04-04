@@ -23,6 +23,10 @@ __pycache__/
 dist/
 build/
 
+# Go compiled binaries
+*.exe
+!scripts/*.bat
+
 # OS files
 desktop.ini
 Thumbs.db
@@ -59,7 +63,9 @@ pip_cache/
 .superpower-copilot/
 .learnings/
 objects/
-hooks/
+.git/hooks/
+**/node_modules/
+**/dup_.git/
 info/
 net/
 http-v2/
@@ -68,8 +74,11 @@ backend/
 frontend/
 data/
 !11_CODE/litigationos/src/litigationos/data/
+06_DATA/
+08_MEDIA/
 09_DATA/
 10_IMAGES/
+11_ARCHIVES/
 12_EXTERNAL/
 compiler_runtime/
 
@@ -99,6 +108,24 @@ naschedulingorder.doc
 
 # MCP server virtual environment
 .mcp_venv/
+
+# Python virtual environments
+fresh_venv/
+pytools_venv/
+pytools_venv.bak/
+*_venv/
+
+# Logs directory
+logs/
+
+# SQLite WAL/SHM orphans
+*.sqlite-wal
+*.sqlite-shm
+
+# Python package backups
+pip_backup_314/
+pip_cache/
+precommit_home/
 
 # Vendored code examples/templates (23K+ files, kept locally, not version-controlled)
 11_CODE/py/
@@ -241,3 +268,6 @@ naschedulingorder.doc
 skills
 
 00_SYSTEM/tools/docmind-ai-llm
+
+09_REFERENCE/openclaw/
+10_EXTERNAL/czkawka-master/

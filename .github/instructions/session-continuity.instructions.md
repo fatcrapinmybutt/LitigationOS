@@ -34,6 +34,19 @@ Also query permanent context tables:
 - `session_intelligence` — 7+ session-level insights
 - `evidence_exhibits` — 31+ exhibit records with locations
 
+## Total Legal Convergence Tables (ALWAYS CHECK)
+
+These tables track the multi-session effort to make Michigan's entire legal system machine-readable. Query on EVERY session start:
+
+```sql
+-- Quick convergence dashboard
+SELECT status, COUNT(*) as cnt FROM convergence_domains GROUP BY status;
+SELECT wave_id, wave_name, status FROM convergence_waves WHERE status != 'COMPLETE' ORDER BY wave_number LIMIT 5;
+SELECT todo_id, title, status FROM convergence_todos WHERE status = 'IN_PROGRESS' OR (status = 'PENDING' AND (depends_on IS NULL OR depends_on IN (SELECT todo_id FROM convergence_todos WHERE status = 'COMPLETE')));
+```
+
+Tables: `convergence_domains` (105 rows), `convergence_waves` (10), `convergence_todos` (37), `drive_inventory` (13), `legal_theories` (grows with Waves 5-6). Full schema in `convergence-tracker.instructions.md`.
+
 ## Pre-Compaction Checklist (BEFORE Context Loss)
 
 **MANDATORY before every context compaction:**

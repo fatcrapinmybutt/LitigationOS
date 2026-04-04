@@ -11,6 +11,8 @@ tools:
   - "litigationos/*"
   - "github/*"
 model: GPT-5 (copilot)
+user-invokable: true
+disable-model-invocation: false
 ---
 
 
