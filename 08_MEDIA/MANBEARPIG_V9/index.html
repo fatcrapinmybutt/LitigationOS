@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THEMANBEARPIG v9.0 — Unified Legal Brain</title>
+<style>
+/* ===== RESET & BASE ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0a0a0f;color:#c8ccd0;font-size:13px;line-height:1.5}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);border-radius:3px}
+::selection{background:rgba(77,150,255,.3)}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,select,textarea{font-family:inherit;font-size:13px;color:#c8ccd0;background:rgba(15,15,25,.9);border:1px solid rgba(255,255,255,.15);border-radius:6px;padding:6px 10px;outline:none}
+input:focus,select:focus{border-color:rgba(77,150,255,.6)}
+
+/* ===== TAB BAR ===== */
+#tab-bar{position:fixed;top:0;left:0;right:0;height:40px;background:rgba(8,8,16,.95);border-bottom:1px solid rgba(77,150,255,.25);display:flex;align-items:center;z-index:1000;padding:0 12px;gap:2px}
+.tab-btn{padding:6px 16px;font-size:13px;font-weight:600;letter-spacing:.5px;color:#888;border-radius:6px 6px 0 0;transition:all .2s;border-bottom:2px solid transparent;white-space:nowrap}
+.tab-btn:hover{color:#c8ccd0;background:rgba(77,150,255,.08)}
+.tab-btn.active{color:#4d96ff;background:rgba(77,150,255,.12);border-bottom-color:#4d96ff}
+#tab-sep{margin-left:auto;color:#ff4444;font-size:14px;font-weight:700;text-shadow:0 0 8px rgba(255,68,68,.4);letter-spacing:1px}
+
+/* ===== PANELS ===== */
+.panel{position:fixed;top:40px;left:0;right:0;bottom:0;display:none;overflow:hidden}
+.panel.active{display:flex;flex-direction:column}
+
+/* ===== BRAIN GRAPH (Tab 1) ===== */
+#brain-panel{position:relative}
+#graph-canvas{width:100%;height:100%;cursor:crosshair}
+#brain-sidebar{position:absolute;top:8px;left:8px;width:200px;max-height:calc(100% - 16px);overflow-y:auto;background:rgba(8,8,16,.92);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:10px;z-index:10}
+#brain-sidebar h3{font-size:11px;color:#4d96ff;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}
+.layer-row{display:flex;align-items:center;gap:6px;padding:3px 0;font-size:12px}
+.layer-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.layer-row input[type=checkbox]{accent-color:#4d96ff;width:14px;height:14px}
+.layer-row .cnt{margin-left:auto;color:#666;font-size:10px}
+.edge-section{margin-top:10px;padding-top:8px;border-top:1px solid rgba(255,255,255,.08)}
+
+#brain-hud{position:absolute;top:8px;right:8px;width:290px;background:rgba(8,8,16,.92);border:1px solid rgba(77,150,255,.35);border-radius:8px;padding:12px;z-index:10;
+  background-image:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(77,150,255,.03) 2px,rgba(77,150,255,.03) 4px);
+  box-shadow:0 0 20px rgba(77,150,255,.08),inset 0 0 40px rgba(0,0,0,.4)}
+#brain-hud h3{font-size:12px;color:#4d96ff;font-weight:700;letter-spacing:2px;text-shadow:0 0 6px rgba(77,150,255,.4);margin-bottom:8px;text-transform:uppercase}
+.hud-row{display:flex;justify-content:space-between;padding:2px 0;font-size:12px}
+.hud-row .val{font-weight:600}
+.val-red{color:#ff4444} .val-blue{color:#4d96ff} .val-green{color:#6bcb77} .val-gold{color:#ffd93d} .val-purple{color:#9b59b6}
+.strongest-box{margin-top:8px;padding:8px;background:rgba(77,150,255,.08);border-radius:6px;font-size:11px}
+
+#brain-search{position:absolute;top:8px;left:50%;transform:translateX(-50%);z-index:10;display:flex;align-items:center;gap:4px}
+#brain-search input{width:300px;height:34px;padding:6px 32px 6px 12px;border-radius:17px;background:rgba(15,15,25,.92);border:1px solid rgba(255,255,255,.15)}
+#brain-search input:focus{border-color:rgba(77,150,255,.6)}
+#search-count{font-size:10px;color:#666}
+
+#brain-info{position:absolute;bottom:0;left:0;right:0;height:28px;background:rgba(8,8,16,.88);border-top:1px solid rgba(255,255,255,.08);display:flex;align-items:center;padding:0 12px;gap:20px;font-size:11px;z-index:10}
+#brain-info .mode-active{color:#4d96ff} #brain-info .mode-dim{color:#666}
+#tooltip{display:none;position:fixed;max-width:360px;background:rgba(12,12,20,.96);border:1px solid rgba(77,150,255,.4);border-radius:8px;padding:10px;font-size:11px;z-index:2000;box-shadow:0 4px 20px rgba(0,0,0,.6);pointer-events:none}
+#tt-label{font-size:13px;font-weight:700;color:#fff;margin-bottom:6px}
+.tt-row{display:flex;gap:8px;padding:1px 0}.tt-key{min-width:70px;color:#888}.tt-val{color:#c8ccd0;word-break:break-all}
+
+/* ===== ADVERSARY (Tab 2) ===== */
+#adversary-panel{padding:16px;overflow-y:auto}
+.adv-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.adv-search{width:280px}
+.adv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.adv-card{background:rgba(15,15,25,.9);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:14px;transition:border-color .2s}
+.adv-card:hover{border-color:rgba(77,150,255,.4)}
+.adv-name{font-size:15px;font-weight:700;margin-bottom:6px}
+.adv-stat{display:flex;justify-content:space-between;padding:2px 0;font-size:12px}
+.adv-badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700}
+.badge-high{background:rgba(255,68,68,.2);color:#ff4444;border:1px solid rgba(255,68,68,.3)}
+.badge-med{background:rgba(255,204,68,.15);color:#ffd93d;border:1px solid rgba(255,204,68,.3)}
+
+/* ===== KRAKEN (Tab 3) ===== */
+#kraken-panel{padding:16px;overflow-y:auto}
+.kraken-controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px;padding:12px;background:rgba(15,15,25,.9);border:1px solid rgba(255,68,68,.2);border-radius:8px}
+.kraken-controls label{font-size:12px;color:#888}
+.kraken-controls input[type=number],.kraken-controls select{width:70px}
+.kraken-btn{padding:8px 20px;background:rgba(255,68,68,.15);color:#ff4444;border:1px solid rgba(255,68,68,.4);border-radius:6px;font-weight:700;letter-spacing:1px;transition:all .2s}
+.kraken-btn:hover{background:rgba(255,68,68,.25)}
+.kraken-btn.running{background:rgba(255,204,68,.15);color:#ffd93d;border-color:rgba(255,204,68,.4)}
+.kraken-progress{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.kraken-stat{background:rgba(15,15,25,.9);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:12px;text-align:center}
+.kraken-stat .num{font-size:28px;font-weight:800;line-height:1}
+.kraken-stat .lbl{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.findings-list{max-height:500px;overflow-y:auto}
+.finding-card{background:rgba(15,15,25,.9);border-left:3px solid #ff4444;border-radius:0 6px 6px 0;padding:10px 12px;margin-bottom:6px}
+.finding-card.medium{border-left-color:#ffd93d}
+.finding-file{font-weight:700;font-size:12px;margin-bottom:2px}
+.finding-meta{font-size:11px;color:#888}
+.finding-quote{font-size:11px;color:#aaa;font-style:italic;margin-top:4px;border-left:2px solid rgba(255,255,255,.1);padding-left:8px}
+
+/* ===== FILING (Tab 4) ===== */
+#filing-panel{display:flex;gap:0}
+#filing-list{width:320px;border-right:1px solid rgba(255,255,255,.08);overflow-y:auto;padding:12px}
+.filing-item{padding:10px;border:1px solid rgba(255,255,255,.08);border-radius:6px;margin-bottom:6px;cursor:pointer;transition:all .2s}
+.filing-item:hover,.filing-item.selected{border-color:rgba(77,150,255,.4);background:rgba(77,150,255,.06)}
+.filing-id{font-weight:700;font-size:13px}.filing-lane{font-size:11px;color:#888}
+.filing-strength{font-size:12px;font-weight:600}
+#filing-output{flex:1;overflow-y:auto;padding:16px}
+#filing-output pre{font-family:'Cascadia Code','Fira Code',monospace;font-size:12px;line-height:1.6;white-space:pre-wrap;word-break:break-word}
+.filing-actions{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.gen-btn{padding:6px 14px;background:rgba(77,150,255,.1);color:#4d96ff;border:1px solid rgba(77,150,255,.3);border-radius:6px;font-size:12px;font-weight:600;transition:all .2s}
+.gen-btn:hover{background:rgba(77,150,255,.2)}
+
+/* ===== ANALYTICS (Tab 5) ===== */
+#analytics-panel{padding:16px;overflow-y:auto}
+.sep-counter{text-align:center;margin-bottom:24px}
+.sep-num{font-size:72px;font-weight:900;color:#ff4444;text-shadow:0 0 30px rgba(255,68,68,.3);line-height:1}
+.sep-label{font-size:14px;color:#888;text-transform:uppercase;letter-spacing:3px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:24px}
+.stat-card{background:rgba(15,15,25,.9);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:16px;text-align:center}
+.stat-card .num{font-size:24px;font-weight:800;color:#4d96ff}
+.stat-card .lbl{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.analytics-search{display:flex;gap:8px;margin-bottom:16px}
+.analytics-search input{flex:1}
+.analytics-search button{padding:6px 16px;background:rgba(77,150,255,.15);color:#4d96ff;border:1px solid rgba(77,150,255,.3);border-radius:6px;font-weight:600}
+#analytics-results{max-height:400px;overflow-y:auto}
+.result-item{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.05);font-size:12px}
+.result-item .src{color:#4d96ff;font-size:10px;text-transform:uppercase}
+
+/* ===== NO API OVERLAY ===== */
+#no-api-overlay{display:none;position:fixed;inset:0;background:rgba(10,10,15,.97);z-index:9999;justify-content:center;align-items:center;flex-direction:column;gap:16px}
+#no-api-overlay h1{font-size:32px;color:#ff4444}
+#no-api-overlay p{color:#888;max-width:500px;text-align:center}
+#no-api-overlay code{background:rgba(77,150,255,.1);padding:8px 16px;border-radius:6px;color:#4d96ff}
+
+/* ===== LOADING ===== */
+.spinner{width:32px;height:32px;border:3px solid rgba(77,150,255,.2);border-top-color:#4d96ff;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-msg{text-align:center;padding:40px;color:#888}
+
+/* ===== MINIMAP ===== */
+#minimap-canvas{position:absolute;bottom:36px;right:8px;width:200px;height:150px;border:1px solid rgba(77,150,255,.3);border-radius:6px;background:rgba(8,8,16,.85);z-index:10;pointer-events:none}
+
+/* ===== NODE DETAIL PANEL ===== */
+#node-detail{position:absolute;top:0;right:-360px;width:350px;height:calc(100% - 28px);background:rgba(8,8,16,.96);border-left:2px solid rgba(77,150,255,.35);z-index:25;transition:right .3s cubic-bezier(.4,0,.2,1);overflow-y:auto;padding:16px;backdrop-filter:blur(10px)}
+#node-detail.open{right:0}
+.nd-close{position:absolute;top:8px;right:8px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.08);color:#888;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.nd-close:hover{background:rgba(255,68,68,.2);color:#ff4444}
+.nd-title{font-size:16px;font-weight:800;color:#fff;margin-bottom:4px;padding-right:36px}
+.nd-subtitle{font-size:11px;color:#888;margin-bottom:12px}
+.nd-section{margin-bottom:12px}
+.nd-section-title{font-size:10px;color:#4d96ff;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;font-weight:700}
+.nd-score-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:12px}
+.nd-score-bar{flex:1;height:6px;background:rgba(255,255,255,.06);border-radius:3px;overflow:hidden}
+.nd-score-fill{height:100%;border-radius:3px;transition:width .4s ease}
+.nd-stat-row{display:flex;justify-content:space-between;padding:3px 0;font-size:12px;border-bottom:1px solid rgba(255,255,255,.04)}
+.nd-stat-row:last-child{border-bottom:none}
+.nd-desc{font-size:11px;color:#aaa;line-height:1.6;max-height:120px;overflow-y:auto;padding:8px;background:rgba(255,255,255,.03);border-radius:6px}
+.nd-trace-btn{width:100%;padding:8px;background:rgba(77,150,255,.12);color:#4d96ff;border:1px solid rgba(77,150,255,.3);border-radius:6px;font-size:12px;font-weight:700;letter-spacing:1px;transition:all .2s;margin-top:8px;cursor:pointer}
+.nd-trace-btn:hover{background:rgba(77,150,255,.25)}
+
+/* ===== KEYBOARD HELP ===== */
+#kb-help{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:5000;justify-content:center;align-items:center;backdrop-filter:blur(4px)}
+#kb-help.open{display:flex}
+.kb-box{background:rgba(15,15,25,.98);border:1px solid rgba(77,150,255,.3);border-radius:12px;padding:28px;max-width:420px;width:90%;box-shadow:0 8px 40px rgba(0,0,0,.6)}
+.kb-box h2{color:#4d96ff;font-size:16px;margin-bottom:16px;text-align:center;letter-spacing:2px}
+.kb-row{display:flex;align-items:center;padding:6px 0;font-size:13px}
+.kb-key{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:26px;padding:0 8px;background:rgba(77,150,255,.12);border:1px solid rgba(77,150,255,.25);border-radius:5px;font-weight:700;color:#4d96ff;font-size:12px;margin-right:12px;font-family:'Cascadia Code','Fira Code',monospace}
+.kb-desc{color:#c8ccd0}
+
+/* ===== TAB BADGES ===== */
+.tab-badge{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:16px;padding:0 5px;background:rgba(77,150,255,.2);color:#4d96ff;font-size:9px;font-weight:800;border-radius:8px;margin-left:5px;vertical-align:middle;line-height:1}
+.tab-btn.active .tab-badge{background:rgba(77,150,255,.3)}
+
+/* ===== ENHANCED TAB STYLING ===== */
+.tab-btn{position:relative;transition:all .3s cubic-bezier(.4,0,.2,1)}
+.tab-btn.active{text-shadow:0 0 12px rgba(77,150,255,.4);box-shadow:0 2px 12px rgba(77,150,255,.15)}
+.tab-btn.active::after{content:'';position:absolute;bottom:-1px;left:20%;right:20%;height:2px;background:linear-gradient(90deg,transparent,#4d96ff,transparent);border-radius:1px}
+
+/* ===== EXPORT BUTTON ===== */
+#export-btn{position:absolute;top:8px;left:220px;z-index:10;padding:5px 12px;background:rgba(107,203,119,.1);color:#6bcb77;border:1px solid rgba(107,203,119,.3);border-radius:6px;font-size:11px;font-weight:600;letter-spacing:.5px;transition:all .2s;cursor:pointer}
+#export-btn:hover{background:rgba(107,203,119,.2);box-shadow:0 0 12px rgba(107,203,119,.15)}
+
+/* ===== GRAPH LOADING ===== */
+#graph-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(10,10,15,.97);z-index:30;transition:opacity .5s}
+#graph-loading.hidden{opacity:0;pointer-events:none}
+.hex-spinner{width:60px;height:60px;position:relative;animation:hex-rotate 3s linear infinite}
+.hex-spinner::before{content:'⬡';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:52px;color:#4d96ff;text-shadow:0 0 20px rgba(77,150,255,.5),0 0 40px rgba(77,150,255,.2);animation:hex-pulse 1.5s ease-in-out infinite}
+@keyframes hex-rotate{to{transform:rotate(360deg)}}
+@keyframes hex-pulse{0%,100%{opacity:.6;transform:scale(.9)}50%{opacity:1;transform:scale(1.1)}}
+.loading-text{color:#4d96ff;font-size:12px;letter-spacing:3px;text-transform:uppercase;margin-top:16px;font-weight:700;animation:loading-blink 1.2s ease-in-out infinite}
+@keyframes loading-blink{0%,100%{opacity:.4}50%{opacity:1}}
+.loading-progress{width:200px;height:3px;background:rgba(255,255,255,.06);border-radius:2px;margin-top:12px;overflow:hidden}
+.loading-progress-bar{height:100%;background:linear-gradient(90deg,#4d96ff,#6bcb77,#4d96ff);background-size:200% 100%;border-radius:2px;animation:progress-sweep 1.5s ease-in-out infinite;width:40%}
+@keyframes progress-sweep{0%{transform:translateX(-100%);background-position:0 0}100%{transform:translateX(350%);background-position:200% 0}}
+</style>
+</head>
+<body>
+
+<!-- Tab Bar -->
+<div id="tab-bar">
+  <button class="tab-btn active" data-tab="brain" title="Brain Graph [1]">🧠 Brain<span class="tab-badge" id="badge-brain">—</span></button>
+  <button class="tab-btn" data-tab="adversary" title="Adversary Network [2]">⚔️ Adversary<span class="tab-badge" id="badge-adversary">12</span></button>
+  <button class="tab-btn" data-tab="kraken" title="KRAKEN Hunter [3]">🦑 KRAKEN<span class="tab-badge" id="badge-kraken">0</span></button>
+  <button class="tab-btn" data-tab="filing" title="Filing Generator [4]">📋 Filings<span class="tab-badge" id="badge-filing">—</span></button>
+  <button class="tab-btn" data-tab="analytics" title="Analytics [5]">📊 Analytics<span class="tab-badge" id="badge-analytics">—</span></button>
+  <span id="tab-sep"></span>
+</div>
+
+<!-- No API Overlay -->
+<div id="no-api-overlay">
+  <h1>🐻 THEMANBEARPIG v9.0</h1>
+  <p>This visualization requires the pywebview desktop application to access the legal database.</p>
+  <p>Launch via:</p>
+  <code>python -I scripts/themanbearpig.py</code>
+</div>
+
+<!-- Tab 1: Brain Graph -->
+<div id="brain-panel" class="panel active">
+  <canvas id="graph-canvas"></canvas>
+  <div id="brain-sidebar">
+    <h3>Layers</h3>
+    <div id="layer-toggles"></div>
+    <div class="edge-section">
+      <h3>Edges</h3>
+      <div id="edge-toggles"></div>
+    </div>
+  </div>
+  <div id="brain-search">
+    <input type="text" id="graph-search" placeholder="Search nodes... (/)">
+    <span id="search-count"></span>
+  </div>
+  <div id="brain-hud">
+    <h3>⬡ Brain HUD</h3>
+    <div class="hud-row"><span>Nodes</span><span class="val val-blue" id="hud-nodes">—</span></div>
+    <div class="hud-row"><span>Edges</span><span class="val val-green" id="hud-edges">—</span></div>
+    <div class="hud-row"><span>Chains</span><span class="val val-gold" id="hud-chains">—</span></div>
+    <div class="hud-row"><span>Open Gaps</span><span class="val val-red" id="hud-gaps">—</span></div>
+    <div class="hud-row"><span>Separation</span><span class="val val-red" id="hud-sep">—</span></div>
+    <div class="hud-row"><span>Brain Ver</span><span class="val val-purple" id="hud-ver">—</span></div>
+    <div class="strongest-box" id="hud-strongest">Loading...</div>
+  </div>
+  <div id="brain-info">
+    <span id="info-mode" class="mode-active">Navigate</span>
+    <span id="info-chain" class="mode-dim">Chain: none</span>
+    <span id="info-zoom" class="mode-dim">Zoom: 100%</span>
+    <span id="info-fps" class="mode-dim">— FPS</span>
+    <span id="info-nodes" class="mode-dim">— visible</span>
+  </div>
+  <div id="tooltip"><div id="tt-label"></div><div id="tt-body"></div></div>
+  <canvas id="minimap-canvas" width="200" height="150"></canvas>
+  <button id="export-btn" title="Export canvas as PNG (E)">📷 Export PNG</button>
+  <div id="node-detail">
+    <button class="nd-close" id="nd-close-btn" title="Close">✕</button>
+    <div id="nd-content"></div>
+  </div>
+  <div id="graph-loading">
+    <div class="hex-spinner"></div>
+    <div class="loading-text">INITIALIZING NEURAL GRAPH...</div>
+    <div class="loading-progress"><div class="loading-progress-bar"></div></div>
+  </div>
+</div>
+
+<!-- Tab 2: Adversary Network -->
+<div id="adversary-panel" class="panel">
+  <div class="adv-header">
+    <h2 style="color:#ff4444">⚔️ Adversary Intelligence</h2>
+    <input class="adv-search" type="text" id="adv-search" placeholder="Search adversaries...">
+  </div>
+  <div class="adv-grid" id="adv-grid"></div>
+</div>
+
+<!-- Tab 3: KRAKEN Hunter -->
+<div id="kraken-panel" class="panel">
+  <h2 style="color:#ff4444;margin-bottom:12px">🦑 PROJECT KRAKEN — Evidence Hunter</h2>
+  <div class="kraken-controls">
+    <label>Rounds: <input type="number" id="kr-rounds" value="3" min="1" max="20"></label>
+    <label>Files/round: <input type="number" id="kr-count" value="10" min="1" max="100"></label>
+    <label>Focus: <select id="kr-focus">
+      <option value="all">All</option>
+      <option value="adversary">Adversary</option>
+      <option value="judicial">Judicial</option>
+      <option value="housing">Housing</option>
+      <option value="custody">Custody</option>
+      <option value="ppo">PPO</option>
+      <option value="legal">Legal</option>
+    </select></label>
+    <button class="kraken-btn" id="kr-start">🦑 START HUNT</button>
+  </div>
+  <div class="kraken-progress">
+    <div class="kraken-stat"><div class="num val-blue" id="kr-rounds-done">0</div><div class="lbl">Rounds Done</div></div>
+    <div class="kraken-stat"><div class="num val-green" id="kr-files">0</div><div class="lbl">Files Scanned</div></div>
+    <div class="kraken-stat"><div class="num val-red" id="kr-high">0</div><div class="lbl">HIGH Findings</div></div>
+    <div class="kraken-stat"><div class="num val-gold" id="kr-total">0</div><div class="lbl">Total Findings</div></div>
+  </div>
+  <h3 style="margin-bottom:8px;color:#888">Recent Findings</h3>
+  <div class="findings-list" id="kr-findings"></div>
+</div>
+
+<!-- Tab 4: Filing Generator -->
+<div id="filing-panel" class="panel">
+  <div id="filing-list"><div class="loading-msg"><div class="spinner" style="margin:0 auto 12px"></div>Loading filings...</div></div>
+  <div id="filing-output">
+    <p style="color:#888;padding:40px;text-align:center">Select a filing from the list to generate documents.</p>
+  </div>
+</div>
+
+<!-- Tab 5: Analytics -->
+<div id="analytics-panel" class="panel">
+  <div class="sep-counter">
+    <div class="sep-num" id="an-sep">—</div>
+    <div class="sep-label">Days Since Last Contact with L.D.W.</div>
+  </div>
+  <div class="stats-grid" id="an-stats"></div>
+  <div class="analytics-search">
+    <input type="text" id="an-query" placeholder="Search evidence, timeline, impeachment...">
+    <button id="an-search-btn">Search</button>
+  </div>
+  <div id="analytics-results"></div>
+</div>
+
+<!-- Keyboard Help Overlay -->
+<div id="kb-help">
+  <div class="kb-box">
+    <h2>⌨️ KEYBOARD SHORTCUTS</h2>
+    <div class="kb-row"><span class="kb-key">1-5</span><span class="kb-desc">Switch between tabs</span></div>
+    <div class="kb-row"><span class="kb-key">/</span><span class="kb-desc">Focus search bar</span></div>
+    <div class="kb-row"><span class="kb-key">Esc</span><span class="kb-desc">Clear search / selection</span></div>
+    <div class="kb-row"><span class="kb-key">?</span><span class="kb-desc">Toggle this help overlay</span></div>
+    <div class="kb-row"><span class="kb-key">R</span><span class="kb-desc">Reset zoom to default</span></div>
+    <div class="kb-row"><span class="kb-key">F</span><span class="kb-desc">Fit graph to screen</span></div>
+    <div class="kb-row"><span class="kb-key">E</span><span class="kb-desc">Export canvas as PNG</span></div>
+    <div class="kb-row"><span class="kb-key">Click</span><span class="kb-desc">Select node / trace chains</span></div>
+    <div class="kb-row"><span class="kb-key">Dbl-Click</span><span class="kb-desc">Reset zoom</span></div>
+    <p style="text-align:center;color:#666;font-size:11px;margin-top:16px">Press <b>?</b> or click outside to close</p>
+  </div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+"use strict";
+
+// ===== API ACCESS (wait for pywebview injection) =====
+let API = window.pywebview ? window.pywebview.api : null;
+let HAS_API = !!API;
+
+function _bootApi(){
+  if(window.pywebview && window.pywebview.api){
+    API = window.pywebview.api;
+    HAS_API = true;
+    document.getElementById("no-api-overlay").style.display="none";
+    // Graph loads via fetch (no API needed), tabs need API for data
+    return true;
+  }
+  return false;
+}
+
+if(!_bootApi()){
+  // pywebview injects after DOMContentLoaded — poll up to 8s
+  let _tries=0;
+  const _poll=setInterval(()=>{
+    _tries++;
+    if(_bootApi()||_tries>40){
+      clearInterval(_poll);
+      if(!HAS_API) document.getElementById("no-api-overlay").style.display="flex";
+    }
+  },200);
+  // Also listen for pywebview's own ready event
+  window.addEventListener("pywebviewready",()=>{_bootApi();clearInterval(_poll);});
+}
+
+// ===== CONSTANTS =====
+const LAYER_ORDER=["EVIDENCE","ACTOR","VIOLATION","AUTHORITY","REMEDY","FILING","LANE"];
+const LAYER_COLORS={EVIDENCE:"#00e5ff",ACTOR:"#ff9800",VIOLATION:"#ff4444",AUTHORITY:"#ffd93d",REMEDY:"#6bcb77",FILING:"#9b59b6",LANE:"#ffffff"};
+const LAYER_SHAPES={EVIDENCE:"circle",ACTOR:"diamond",VIOLATION:"triangle",AUTHORITY:"hexagon",REMEDY:"star",FILING:"rect",LANE:"ring"};
+const LAYER_Y_BAND={EVIDENCE:.15,ACTOR:.35,VIOLATION:.45,AUTHORITY:.55,REMEDY:.65,FILING:.80,LANE:.92};
+const NODE_RADIUS={LANE:20,FILING:15,REMEDY:12,ACTOR:11,VIOLATION:10,AUTHORITY:7,EVIDENCE:4};
+const EDGE_COLORS={PROVES:"#ff4444",GOVERNED_BY:"#ffd93d",AUTHORIZES:"#6bcb77",EXECUTED_VIA:"#4d96ff",CITES:"rgba(255,217,61,0.4)",CONTRADICTS:"#ff0000",ASSIGNED_TO:"rgba(155,89,182,0.3)",RELATED:"rgba(136,136,136,0.25)"};
+const EDGE_WIDTHS={PROVES:2.5,GOVERNED_BY:1.2,AUTHORIZES:1.5,EXECUTED_VIA:3,CITES:.8,CONTRADICTS:2,ASSIGNED_TO:.5,RELATED:.6};
+const EDGE_DASH={GOVERNED_BY:[6,3],CITES:[4,2],RELATED:[2,2]};
+const LINK_DIST={PROVES:60,GOVERNED_BY:90,AUTHORIZES:80,EXECUTED_VIA:70,CITES:120,CONTRADICTS:140,ASSIGNED_TO:180,RELATED:150};
+const EDGE_TYPES=["PROVES","GOVERNED_BY","AUTHORIZES","EXECUTED_VIA","CITES","CONTRADICTS","ASSIGNED_TO","RELATED"];
+
+// ===== TAB MANAGEMENT =====
+const tabBtns=document.querySelectorAll(".tab-btn");
+const panels=document.querySelectorAll(".panel");
+let activeTab="brain";
+
+function switchTab(name){
+  activeTab=name;
+  tabBtns.forEach(b=>{b.classList.toggle("active",b.dataset.tab===name)});
+  panels.forEach(p=>{p.classList.toggle("active",p.id===name+"-panel")});
+  if(name==="brain"&&!graphLoaded) loadGraph();
+  if(name==="adversary") loadAdversary();
+  if(name==="kraken") refreshKraken();
+  if(name==="filing"&&!filingsLoaded) loadFilings();
+  if(name==="analytics") loadAnalytics();
+}
+tabBtns.forEach(b=>b.addEventListener("click",()=>switchTab(b.dataset.tab)));
+
+// Keyboard shortcuts
+document.addEventListener("keydown",e=>{
+  if(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA") return;
+  if(e.key>="1"&&e.key<="5"){
+    e.preventDefault();
+    switchTab(["brain","adversary","kraken","filing","analytics"][+e.key-1]);
+  }
+  if(e.key==="/"){e.preventDefault();document.getElementById("graph-search").focus()}
+  if(e.key==="Escape"){
+    activeChains=[];rebuildChainSets();
+    document.getElementById("graph-search").value="";
+    searchQuery="";searchMatches.clear();
+    closeNodeDetail();
+    const kb=document.getElementById("kb-help");if(kb.classList.contains("open"))kb.classList.remove("open");
+  }
+  if(e.key==="?"){document.getElementById("kb-help").classList.toggle("open")}
+  if(e.key==="r"||e.key==="R"){if(activeTab==="brain"&&zoomBehavior)d3.select(canvas).transition().duration(500).call(zoomBehavior.transform,d3.zoomIdentity)}
+  if(e.key==="f"||e.key==="F"){if(activeTab==="brain")fitGraph()}
+  if(e.key==="e"||e.key==="E"){if(activeTab==="brain")exportCanvasPNG()}
+});
+document.getElementById("kb-help").addEventListener("click",e=>{if(e.target.id==="kb-help")e.target.classList.remove("open")});
+
+// ===== UTILITIES =====
+function fmt(n){if(n==null)return"—";if(n>=1e6)return(n/1e6).toFixed(1)+"M";if(n>=1e3)return(n/1e3).toFixed(1)+"K";return String(n)}
+function esc(s){const d=document.createElement("div");d.textContent=s;return d.innerHTML}
+function truncate(s,n){if(!s)return"";return s.length>n?s.slice(0,n)+"…":s}
+
+// ===== BRAIN GRAPH (Tab 1) =====
+let DATA=null, graphLoaded=false;
+let simulation=null, transform=d3.zoomIdentity;
+let visibleLayers=new Set(LAYER_ORDER), visibleEdgeTypes=new Set(EDGE_TYPES);
+let searchQuery="", searchMatches=new Set();
+let activeChains=[], activeChainNodeSet=new Set(), activeChainEdgeSet=new Set();
+let hoveredNode=null, laneFilter=null;
+let zoomBehavior=null;
+let particles=[];
+let chainEdgeStrength=new Map();
+let graphEdgesRef=null;
+let W,H,ctx,dpr;
+
+const canvas=document.getElementById("graph-canvas");
+
+function initCanvas(){
+  dpr=window.devicePixelRatio||1;
+  const rect=canvas.parentElement.getBoundingClientRect();
+  W=rect.width; H=rect.height-28;
+  canvas.width=W*dpr; canvas.height=H*dpr;
+  canvas.style.width=W+"px"; canvas.style.height=H+"px";
+  ctx=canvas.getContext("2d");
+  ctx.scale(dpr,dpr);
+}
+
+function loadGraph(){
+  if(graphLoaded) return;
+  initCanvas();
+  const loadingEl=document.getElementById("graph-loading");
+  fetch("graph_data.json").then(r=>{
+    if(!r.ok) throw new Error("graph_data.json not found ("+r.status+")");
+    return r.json();
+  }).then(data=>{
+    DATA=data;
+    graphLoaded=true;
+    initVis();
+    updateHUD();
+    if(loadingEl)loadingEl.classList.add("hidden");
+  }).catch(err=>{
+    if(loadingEl)loadingEl.classList.add("hidden");
+    ctx.fillStyle="#ff4444";ctx.font="16px sans-serif";
+    ctx.fillText("ERROR: "+err.message,40,H/2-20);
+    ctx.fillStyle="#888";ctx.font="13px sans-serif";
+    ctx.fillText("Run: python -I scripts/export_brain_d3.py",40,H/2+10);
+  });
+}
+
+function initVis(){
+  const nodes=DATA.nodes;
+  const edges=DATA.edges||[];
+  const cfg=DATA.layer_config||{};
+
+  nodes.forEach(d=>{
+    d.r=nodeRadius(d);
+    if(d.x==null) d.x=W*(0.2+Math.random()*0.6);
+    if(d.y==null){
+      const band=(cfg[d.layer]||{}).y_band||LAYER_Y_BAND[d.layer]||0.5;
+      d.y=H*band+(Math.random()-0.5)*60;
+    }
+  });
+
+  const nodeMap=new Map(nodes.map(d=>[d.id,d]));
+  const resolvedEdges=[];
+  edges.forEach(e=>{
+    const s=typeof e.source==="object"?e.source:nodeMap.get(e.source);
+    const t=typeof e.target==="object"?e.target:nodeMap.get(e.target);
+    if(s&&t) resolvedEdges.push({...e,source:s,target:t});
+  });
+
+  simulation=d3.forceSimulation(nodes)
+    .force("link",d3.forceLink(resolvedEdges).id(d=>d.id).distance(d=>LINK_DIST[d.type]||120).strength(0.15))
+    .force("charge",d3.forceManyBody().strength(d=>-d.r*12).distanceMax(400))
+    .force("y",d3.forceY(d=>{const band=(cfg[d.layer]||{}).y_band||LAYER_Y_BAND[d.layer]||0.5;return H*band}).strength(0.25))
+    .force("x",d3.forceX(W/2).strength(0.03))
+    .force("collide",d3.forceCollide(d=>d.r+1.5).iterations(2))
+    .force("center",d3.forceCenter(W/2,H/2))
+    .alphaDecay(0.025).velocityDecay(0.35)
+    .on("tick",()=>{});
+
+  buildSidebar(nodes);
+  setupInteractions(nodes,resolvedEdges);
+  graphEdgesRef=resolvedEdges;
+
+  // Init ambient particles
+  particles=[];
+  for(let i=0;i<65;i++){
+    particles.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-0.5)*0.3,vy:(Math.random()-0.5)*0.2,r:Math.random()*1.5+0.5,alpha:Math.random()*0.15+0.05});
+  }
+
+  // Update brain badge
+  const bb=document.getElementById("badge-brain");
+  if(bb)bb.textContent=fmt(nodes.length);
+
+  requestAnimationFrame(ts=>renderLoop(ts,nodes,resolvedEdges));
+}
+
+function nodeRadius(d){
+  if(d.layer==="EVIDENCE")return 4+Math.min((d.edge_count||0)/20,2);
+  return NODE_RADIUS[d.layer]||6;
+}
+
+function buildSidebar(nodes){
+  const layerCounts={};
+  nodes.forEach(d=>{layerCounts[d.layer]=(layerCounts[d.layer]||0)+1});
+
+  let html="";
+  LAYER_ORDER.forEach(l=>{
+    const c=LAYER_COLORS[l]||"#888";
+    const cnt=layerCounts[l]||0;
+    html+=`<div class="layer-row"><input type="checkbox" checked data-layer="${l}"><span class="layer-dot" style="background:${c}"></span><span>${l}</span><span class="cnt">${fmt(cnt)}</span></div>`;
+  });
+  document.getElementById("layer-toggles").innerHTML=html;
+
+  let ehtml="";
+  EDGE_TYPES.forEach(t=>{
+    const c=EDGE_COLORS[t]||"#888";
+    ehtml+=`<div class="layer-row"><input type="checkbox" checked data-edge="${t}"><span class="layer-dot" style="background:${c}"></span><span style="font-size:10px">${t}</span></div>`;
+  });
+  document.getElementById("edge-toggles").innerHTML=ehtml;
+
+  document.querySelectorAll("[data-layer]").forEach(cb=>{
+    cb.addEventListener("change",e=>{
+      if(e.target.checked) visibleLayers.add(e.target.dataset.layer);
+      else visibleLayers.delete(e.target.dataset.layer);
+    });
+  });
+  document.querySelectorAll("[data-edge]").forEach(cb=>{
+    cb.addEventListener("change",e=>{
+      if(e.target.checked) visibleEdgeTypes.add(e.target.dataset.edge);
+      else visibleEdgeTypes.delete(e.target.dataset.edge);
+    });
+  });
+}
+
+function setupInteractions(nodes,edges){
+  zoomBehavior=d3.zoom().scaleExtent([0.05,12]).on("zoom",e=>{transform=e.transform});
+  d3.select(canvas).call(zoomBehavior).on("dblclick.zoom",()=>{
+    d3.select(canvas).transition().duration(500).call(zoomBehavior.transform,d3.zoomIdentity);
+  });
+
+  const searchInput=document.getElementById("graph-search");
+  searchInput.addEventListener("input",e=>{
+    searchQuery=e.target.value.trim().toLowerCase();
+    searchMatches.clear();
+    if(searchQuery&&DATA){
+      DATA.nodes.forEach(d=>{
+        if((d.label||"").toLowerCase().includes(searchQuery)||(d.id||"").toLowerCase().includes(searchQuery))
+          searchMatches.add(d.id);
+      });
+    }
+    document.getElementById("search-count").textContent=searchQuery?searchMatches.size+" matches":"";
+  });
+
+  canvas.addEventListener("mousemove",e=>{
+    const[mx,my]=screenToWorld(e.clientX,e.clientY-40);
+    hoveredNode=findNode(nodes,mx,my);
+    canvas.style.cursor=hoveredNode?"pointer":"crosshair";
+    updateTooltip(e.clientX,e.clientY);
+  });
+
+  canvas.addEventListener("click",e=>{
+    const[mx,my]=screenToWorld(e.clientX,e.clientY-40);
+    const clicked=findNode(nodes,mx,my);
+    if(!clicked){activeChains=[];rebuildChainSets();closeNodeDetail();return}
+    if(clicked.layer==="LANE"){
+      const lane=clicked.lane||clicked.label;
+      laneFilter=(laneFilter===lane)?null:lane;
+      return;
+    }
+    if(DATA.chains){
+      activeChains=DATA.chains.filter(c=>c.path&&c.path.includes(clicked.id));
+      rebuildChainSets();
+    }
+    openNodeDetail(clicked,edges);
+    if(HAS_API){
+      API.get_node_details(clicked.id).then(d=>{
+        if(d&&!d.error) showNodePanel(d);
+      });
+    }
+  });
+}
+
+function screenToWorld(sx,sy){return[(sx-transform.x)/transform.k,(sy-transform.y)/transform.k]}
+function findNode(nodes,mx,my){
+  for(let i=nodes.length-1;i>=0;i--){
+    const d=nodes[i];
+    if(!visibleLayers.has(d.layer))continue;
+    const dx=d.x-mx,dy=d.y-my,r2=(d.r+4)*(d.r+4);
+    if(dx*dx+dy*dy<r2)return d;
+  }
+  return null;
+}
+
+function rebuildChainSets(){
+  activeChainNodeSet.clear();activeChainEdgeSet.clear();
+  activeChains.forEach(c=>{
+    if(!c.path)return;
+    c.path.forEach(nid=>activeChainNodeSet.add(nid));
+    for(let i=0;i<c.path.length-1;i++){
+      activeChainEdgeSet.add(c.path[i]+"|"+c.path[i+1]);
+      activeChainEdgeSet.add(c.path[i+1]+"|"+c.path[i]);
+    }
+  });
+  const info=document.getElementById("info-chain");
+  info.textContent=activeChains.length?"Chain: "+activeChains.length+" chains":"Chain: none";
+  info.className=activeChains.length?"mode-active":"mode-dim";
+  // Build chain edge strength map
+  chainEdgeStrength.clear();
+  activeChains.forEach(c=>{
+    if(!c.path)return;
+    const str=c.strength_score||0.5;
+    for(let i=0;i<c.path.length-1;i++){
+      const key=c.path[i]+"|"+c.path[i+1];
+      const rkey=c.path[i+1]+"|"+c.path[i];
+      chainEdgeStrength.set(key,Math.max(chainEdgeStrength.get(key)||0,str));
+      chainEdgeStrength.set(rkey,Math.max(chainEdgeStrength.get(rkey)||0,str));
+    }
+  });
+}
+
+function updateTooltip(sx,sy){
+  const tt=document.getElementById("tooltip");
+  if(!hoveredNode){tt.style.display="none";return}
+  const d=hoveredNode;
+  document.getElementById("tt-label").textContent=d.label||d.id;
+  let html=ttRow("ID",d.id)+ttRow("Layer",d.layer)+ttRow("Type",d.type||"—");
+  if(d.lane)html+=ttRow("Lane",d.lane);
+  if(d.severity)html+=ttRow("Severity",(+d.severity).toFixed(2));
+  if(d.confidence)html+=ttRow("Confidence",(+d.confidence).toFixed(2));
+  if(d.readiness)html+=ttRow("Readiness",((+d.readiness)*100).toFixed(0)+"%");
+  html+=ttRow("Edges",d.edge_count||0);
+  html+=ttRow("Chains",d.chain_count||0);
+  document.getElementById("tt-body").innerHTML=html;
+  const tx=Math.min(sx+14,window.innerWidth-380);
+  const ty=Math.min(sy+14,window.innerHeight-200);
+  tt.style.left=tx+"px";tt.style.top=ty+"px";tt.style.display="block";
+}
+function ttRow(k,v){return`<div class="tt-row"><span class="tt-key">${k}</span><span class="tt-val">${esc(String(v))}</span></div>`}
+
+function showNodePanel(data){
+  const n=data.node;
+  const hud=document.getElementById("hud-strongest");
+  hud.innerHTML=`<b>${esc(n.label||n.id)}</b><br>Layer: ${n.layer} | Edges: ${data.edge_count} | Chains: ${data.chain_count}`;
+  // Enrich open detail panel with API data
+  const panel=document.getElementById("node-detail");
+  if(panel.classList.contains("open")&&data.description){
+    const descEl=panel.querySelector(".nd-desc");
+    if(descEl) descEl.textContent=data.description;
+  }
+}
+
+function drawShape(ctx,x,y,r,shape){
+  ctx.beginPath();
+  switch(shape){
+    case"diamond":ctx.moveTo(x,y-r);ctx.lineTo(x+r,y);ctx.lineTo(x,y+r);ctx.lineTo(x-r,y);ctx.closePath();break;
+    case"triangle":ctx.moveTo(x,y-r);ctx.lineTo(x+r*.87,y+r*.5);ctx.lineTo(x-r*.87,y+r*.5);ctx.closePath();break;
+    case"hexagon":for(let i=0;i<6;i++){const a=Math.PI/3*i-Math.PI/2;ctx.lineTo(x+r*Math.cos(a),y+r*Math.sin(a))}ctx.closePath();break;
+    case"star":{const or=r,ir=r*.45;for(let i=0;i<10;i++){const a=Math.PI/5*i-Math.PI/2;const cr=i%2?ir:or;ctx.lineTo(x+cr*Math.cos(a),y+cr*Math.sin(a))}ctx.closePath();break}
+    case"rect":ctx.rect(x-r*1.1,y-r*.7,r*2.2,r*1.4);break;
+    case"ring":ctx.arc(x,y,r,0,Math.PI*2);ctx.moveTo(x+r*.5,y);ctx.arc(x,y,r*.5,0,Math.PI*2);break;
+    default:ctx.arc(x,y,r,0,Math.PI*2);
+  }
+}
+
+let frameCount=0,lastFpsTime=0,currentFps=0;
+function renderLoop(ts,nodes,edges){
+  requestAnimationFrame(t=>renderLoop(t,nodes,edges));
+  if(activeTab!=="brain")return;
+
+  frameCount++;
+  if(ts-lastFpsTime>=1000){currentFps=frameCount;frameCount=0;lastFpsTime=ts;document.getElementById("info-fps").textContent=currentFps+" FPS"}
+
+  const pulse=0.6+0.4*Math.sin(ts/400);
+  ctx.save();
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  ctx.fillStyle="#0a0a0f";ctx.fillRect(0,0,W,H);
+
+  ctx.strokeStyle="rgba(255,255,255,0.02)";ctx.lineWidth=0.5;ctx.beginPath();
+  for(let x=0;x<W;x+=60){ctx.moveTo(x,0);ctx.lineTo(x,H)}
+  for(let y=0;y<H;y+=60){ctx.moveTo(0,y);ctx.lineTo(W,y)}
+  ctx.stroke();
+
+  // Ambient particles (screen-space, behind graph)
+  for(let i=0;i<particles.length;i++){
+    const p=particles[i];
+    p.x+=p.vx;p.y+=p.vy;
+    if(p.x<0)p.x=W;if(p.x>W)p.x=0;
+    if(p.y<0)p.y=H;if(p.y>H)p.y=0;
+    ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fillStyle="rgba(77,150,255,"+p.alpha+")";ctx.fill();
+  }
+
+  ctx.translate(transform.x,transform.y);ctx.scale(transform.k,transform.k);
+
+  const vx0=-transform.x/transform.k-50,vy0=-transform.y/transform.k-50;
+  const vx1=(W-transform.x)/transform.k+50,vy1=(H-transform.y)/transform.k+50;
+  const hasChain=activeChainNodeSet.size>0;
+  const hasSearch=searchQuery.length>0;
+
+  ctx.lineCap="round";
+  for(let i=0;i<edges.length;i++){
+    const e=edges[i];
+    const s=e.source,t=e.target;
+    if(!visibleLayers.has(s.layer)||!visibleLayers.has(t.layer))continue;
+    if(!visibleEdgeTypes.has(e.type))continue;
+    if(laneFilter&&s.lane!==laneFilter&&t.lane!==laneFilter)continue;
+    if(s.x<vx0&&t.x<vx0||s.x>vx1&&t.x>vx1||s.y<vy0&&t.y<vy0||s.y>vy1&&t.y>vy1)continue;
+
+    const inChain=hasChain&&(activeChainEdgeSet.has(s.id+"|"+t.id));
+    let alpha=0.6;
+    if(hasChain) alpha=inChain?1:0.06;
+    if(hasSearch&&!searchMatches.has(s.id)&&!searchMatches.has(t.id)) alpha=0.04;
+
+    ctx.beginPath();ctx.moveTo(s.x,s.y);ctx.lineTo(t.x,t.y);
+    const ec=EDGE_COLORS[e.type]||"rgba(136,136,136,0.25)";
+    ctx.globalAlpha=alpha;
+    if(EDGE_DASH[e.type])ctx.setLineDash(EDGE_DASH[e.type]);else ctx.setLineDash([]);
+
+    if(inChain&&hasChain){
+      const str=chainEdgeStrength.get(s.id+"|"+t.id)||0.5;
+      ctx.shadowColor=ec;ctx.shadowBlur=(8+16*str)*pulse;
+      ctx.lineWidth=(EDGE_WIDTHS[e.type]||1)*(1.5+str*2);
+    }else{
+      ctx.shadowBlur=0;ctx.lineWidth=EDGE_WIDTHS[e.type]||1;
+    }
+    ctx.strokeStyle=ec;ctx.stroke();
+    ctx.shadowBlur=0;
+    // Arrowhead at target end
+    if(alpha>0.1&&transform.k>0.15){
+      const angle=Math.atan2(t.y-s.y,t.x-s.x);
+      const hl=Math.max(4,ctx.lineWidth*2.5);
+      const tr=t.r||4;
+      const ax=t.x-Math.cos(angle)*tr;
+      const ay=t.y-Math.sin(angle)*tr;
+      ctx.beginPath();
+      ctx.moveTo(ax,ay);
+      ctx.lineTo(ax-hl*Math.cos(angle-Math.PI/7),ay-hl*Math.sin(angle-Math.PI/7));
+      ctx.lineTo(ax-hl*Math.cos(angle+Math.PI/7),ay-hl*Math.sin(angle+Math.PI/7));
+      ctx.closePath();
+      ctx.fillStyle=ec;ctx.fill();
+    }
+  }
+  ctx.setLineDash([]);ctx.globalAlpha=1;
+
+  let visCount=0;
+  for(let i=0;i<nodes.length;i++){
+    const d=nodes[i];
+    if(!visibleLayers.has(d.layer))continue;
+    if(laneFilter&&d.lane!==laneFilter&&d.layer!=="LANE")continue;
+    if(d.x<vx0||d.x>vx1||d.y<vy0||d.y>vy1)continue;
+    visCount++;
+
+    const inChain=hasChain&&activeChainNodeSet.has(d.id);
+    const isMatch=hasSearch&&searchMatches.has(d.id);
+    const isHovered=hoveredNode&&hoveredNode.id===d.id;
+
+    let alpha=1;
+    if(hasChain&&!inChain) alpha=0.08;
+    if(hasSearch&&!isMatch) alpha=0.08;
+    ctx.globalAlpha=alpha;
+
+    const c=LAYER_COLORS[d.layer]||"#888";
+    const shape=LAYER_SHAPES[d.layer]||"circle";
+
+    if(isHovered){ctx.shadowColor=c;ctx.shadowBlur=20}
+    else if(inChain){ctx.shadowColor=c;ctx.shadowBlur=8*pulse}
+    else{ctx.shadowBlur=0}
+
+    drawShape(ctx,d.x,d.y,d.r,shape);
+    ctx.fillStyle=c;ctx.fill();
+    if(isHovered||inChain){ctx.strokeStyle="#fff";ctx.lineWidth=isHovered?2.5:1.5;ctx.stroke()}
+    ctx.shadowBlur=0;
+
+    if((transform.k>0.5&&(d.r>=10||isMatch||inChain||isHovered))&&alpha>0.5){
+      ctx.fillStyle="rgba(255,255,255,0.9)";
+      ctx.font=(isHovered?"bold ":"")+"10px sans-serif";
+      ctx.textAlign="center";
+      ctx.fillText(truncate(d.label||d.id,24),d.x,d.y+d.r+12);
+    }
+  }
+  ctx.globalAlpha=1;
+  ctx.restore();
+
+  document.getElementById("info-zoom").textContent="Zoom: "+(transform.k*100).toFixed(0)+"%";
+  document.getElementById("info-nodes").textContent=visCount+" visible";
+
+  // Minimap
+  drawMinimap(nodes);
+}
+
+async function updateHUD(){
+  if(!HAS_API)return;
+  try{
+    const s=await API.get_stats();
+    document.getElementById("hud-nodes").textContent=fmt(s.node_count);
+    document.getElementById("hud-edges").textContent=fmt(s.edge_count);
+    document.getElementById("hud-chains").textContent=fmt(s.chain_count);
+    document.getElementById("hud-gaps").textContent=fmt(s.gap_open);
+    document.getElementById("hud-sep").textContent=s.separation_days+" days";
+    document.getElementById("hud-ver").textContent="v"+(s.brain_version||"?");
+    document.getElementById("tab-sep").textContent="🔴 "+s.separation_days+" DAYS SEPARATED";
+    updateBadge("badge-brain",fmt(s.node_count));
+
+    if(s.top_chains&&s.top_chains.length){
+      const tc=s.top_chains[0];
+      document.getElementById("hud-strongest").innerHTML=
+        `<b># STRONGEST CHAIN</b><br>Filing: ${esc(tc.filing_id||"—")} | Score: ${(+tc.strength_score).toFixed(2)} | Lane: ${esc(tc.lane||"—")}`;
+    }
+  }catch(e){console.error("HUD update failed:",e)}
+}
+
+// Minimap renderer
+function drawMinimap(nodes){
+  const mc=document.getElementById("minimap-canvas");
+  if(!mc)return;
+  const mctx=mc.getContext("2d");
+  const mw=200,mh=150;
+  mctx.clearRect(0,0,mw,mh);
+  mctx.fillStyle="rgba(8,8,16,.85)";mctx.fillRect(0,0,mw,mh);
+  if(!nodes||!nodes.length)return;
+  let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;
+  for(const d of nodes){
+    if(!visibleLayers.has(d.layer))continue;
+    if(d.x<minX)minX=d.x;if(d.y<minY)minY=d.y;
+    if(d.x>maxX)maxX=d.x;if(d.y>maxY)maxY=d.y;
+  }
+  if(!isFinite(minX))return;
+  const pad=60;minX-=pad;minY-=pad;maxX+=pad;maxY+=pad;
+  const gw=maxX-minX,gh=maxY-minY;
+  const scale=Math.min(mw/gw,mh/gh);
+  const ox=(mw-gw*scale)/2,oy=(mh-gh*scale)/2;
+  for(const d of nodes){
+    if(!visibleLayers.has(d.layer))continue;
+    const x=ox+(d.x-minX)*scale,y=oy+(d.y-minY)*scale;
+    mctx.fillStyle=LAYER_COLORS[d.layer]||"#888";
+    mctx.globalAlpha=0.6;
+    mctx.fillRect(x-1,y-1,2,2);
+  }
+  mctx.globalAlpha=1;
+  // Viewport rectangle
+  const vx=ox+(-transform.x/transform.k-minX)*scale;
+  const vy=oy+(-transform.y/transform.k-minY)*scale;
+  const vw=(W/transform.k)*scale,vh=(H/transform.k)*scale;
+  mctx.strokeStyle="rgba(77,150,255,.7)";mctx.lineWidth=1.5;
+  mctx.strokeRect(vx,vy,vw,vh);
+}
+
+// Node detail panel
+function openNodeDetail(d,edges){
+  const panel=document.getElementById("node-detail");
+  const content=document.getElementById("nd-content");
+  const edgeCounts={};let totalEdges=0;
+  if(edges){
+    edges.forEach(e=>{
+      const sid=typeof e.source==="object"?e.source.id:e.source;
+      const tid=typeof e.target==="object"?e.target.id:e.target;
+      if(sid===d.id||tid===d.id){edgeCounts[e.type]=(edgeCounts[e.type]||0)+1;totalEdges++}
+    });
+  }
+  function scoreBar(label,val,max,color){
+    if(val==null)return"";
+    const pct=Math.min((val/max)*100,100);
+    return`<div class="nd-score-row"><span style="min-width:80px">${label}</span><div class="nd-score-bar"><div class="nd-score-fill" style="width:${pct}%;background:${color}"></div></div><span style="min-width:40px;text-align:right">${typeof val==="number"?val.toFixed(2):val}</span></div>`;
+  }
+  let html=`<div class="nd-title">${esc(d.label||d.id)}</div>`;
+  html+=`<div class="nd-subtitle">${d.layer}${d.type?" · "+d.type:""}${d.lane?" · Lane "+d.lane:""}</div>`;
+  html+=`<div class="nd-section"><div class="nd-section-title">Scores</div>`;
+  html+=scoreBar("Severity",d.severity,1.0,"#ff4444");
+  html+=scoreBar("Confidence",d.confidence,1.0,"#6bcb77");
+  html+=scoreBar("Readiness",d.readiness,1.0,"#4d96ff");
+  html+=`</div>`;
+  html+=`<div class="nd-section"><div class="nd-section-title">Connections (${totalEdges})</div>`;
+  Object.entries(edgeCounts).sort((a,b)=>b[1]-a[1]).forEach(([type,cnt])=>{
+    html+=`<div class="nd-stat-row"><span style="color:${EDGE_COLORS[type]||'#888'}">${type}</span><span>${cnt}</span></div>`;
+  });
+  if(totalEdges===0)html+=`<div class="nd-stat-row"><span style="color:#666">No visible edges</span><span>—</span></div>`;
+  html+=`</div>`;
+  const chainCount=d.chain_count||0;
+  html+=`<div class="nd-section"><div class="nd-section-title">Chain Participation</div>`;
+  html+=`<div class="nd-stat-row"><span>Chains through node</span><span class="val-gold">${chainCount}</span></div></div>`;
+  if(d.description||d.full_text){
+    html+=`<div class="nd-section"><div class="nd-section-title">Description</div><div class="nd-desc">${esc(d.description||d.full_text)}</div></div>`;
+  }
+  html+=`<button class="nd-trace-btn" id="nd-trace-btn">⚡ Trace All Chains Through This Node</button>`;
+  content.innerHTML=html;
+  panel.classList.add("open");
+  document.getElementById("nd-trace-btn").addEventListener("click",()=>{
+    if(DATA&&DATA.chains){
+      activeChains=DATA.chains.filter(c=>c.path&&c.path.includes(d.id));
+      rebuildChainSets();
+    }
+  });
+}
+
+function closeNodeDetail(){
+  document.getElementById("node-detail").classList.remove("open");
+}
+
+// Export canvas as PNG
+function exportCanvasPNG(){
+  canvas.toBlob(blob=>{
+    if(!blob)return;
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement("a");
+    a.href=url;a.download="MANBEARPIG_brain_"+new Date().toISOString().slice(0,10)+".png";
+    document.body.appendChild(a);a.click();document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  },"image/png");
+}
+
+// Fit graph to screen
+function fitGraph(){
+  if(!DATA||!DATA.nodes.length||!zoomBehavior)return;
+  let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;
+  DATA.nodes.forEach(d=>{
+    if(!visibleLayers.has(d.layer))return;
+    if(d.x<minX)minX=d.x;if(d.y<minY)minY=d.y;
+    if(d.x>maxX)maxX=d.x;if(d.y>maxY)maxY=d.y;
+  });
+  if(!isFinite(minX))return;
+  const pad=60;minX-=pad;minY-=pad;maxX+=pad;maxY+=pad;
+  const gw=maxX-minX,gh=maxY-minY;
+  const scale=Math.min(W/gw,H/gh)*0.9;
+  const tx=W/2-((minX+maxX)/2)*scale;
+  const ty=H/2-((minY+maxY)/2)*scale;
+  const t=d3.zoomIdentity.translate(tx,ty).scale(scale);
+  d3.select(canvas).transition().duration(750).call(zoomBehavior.transform,t);
+}
+
+// Badge update helper
+function updateBadge(id,val){const el=document.getElementById(id);if(el)el.textContent=val}
+
+// ===== ADVERSARY (Tab 2) =====
+const ADVERSARY_LIST=["Emily Watson","Judge McNeill","Albert Watson","Lori Watson","Ronald Berry","Cavan Berry","Pamela Rusco","Kenneth Hoopes","Maria Ladas-Hoopes","Jennifer Barnes","FOC","Shady Oaks"];
+let advLoaded=false;
+
+async function loadAdversary(){
+  if(!HAS_API||advLoaded)return;
+  advLoaded=true;
+  const grid=document.getElementById("adv-grid");
+  grid.innerHTML='<div class="loading-msg"><div class="spinner" style="margin:0 auto 12px"></div>Loading adversary intel...</div>';
+
+  const cards=[];
+  for(const name of ADVERSARY_LIST){
+    try{
+      const d=await API.query_adversary(name);
+      cards.push(d);
+    }catch(e){
+      cards.push({name,error:e.message});
+    }
+  }
+
+  grid.innerHTML=cards.map(d=>{
+    const evBadge=d.evidence_count>100?'<span class="adv-badge badge-high">'+fmt(d.evidence_count)+' evidence</span>':
+                  d.evidence_count>10?'<span class="adv-badge badge-med">'+fmt(d.evidence_count)+' evidence</span>':'';
+    const vols=(d.violations||[]).slice(0,3).map(v=>`<div class="adv-stat"><span>${esc(v.violation_type||v.category||"—")}</span><span class="val-red">${v.cnt}</span></div>`).join("");
+    const imps=(d.impeachment||[]).slice(0,2).map(v=>`<div class="adv-stat"><span>${esc(v.category||"—")}</span><span class="val-gold">${v.cnt}</span></div>`).join("");
+    return`<div class="adv-card"><div class="adv-name">${esc(d.name)} ${evBadge}</div>${vols}${imps}</div>`;
+  }).join("");
+
+  document.getElementById("adv-search").addEventListener("input",e=>{
+    const q=e.target.value.toLowerCase();
+    document.querySelectorAll(".adv-card").forEach((card,i)=>{
+      card.style.display=cards[i].name.toLowerCase().includes(q)?"":"none";
+    });
+  });
+}
+
+// ===== KRAKEN (Tab 3) =====
+let krakenInterval=null;
+
+document.getElementById("kr-start").addEventListener("click",async()=>{
+  if(!HAS_API)return;
+  const btn=document.getElementById("kr-start");
+  const rounds=document.getElementById("kr-rounds").value;
+  const count=document.getElementById("kr-count").value;
+  const focus=document.getElementById("kr-focus").value;
+
+  try{
+    const res=await API.start_kraken(+rounds,+count,focus);
+    if(res.status==="already_running"){btn.textContent="🦑 HUNTING...";btn.classList.add("running");return}
+    btn.textContent="🦑 HUNTING...";btn.classList.add("running");
+    if(krakenInterval) clearInterval(krakenInterval);
+    krakenInterval=setInterval(refreshKraken,2000);
+  }catch(e){console.error(e)}
+});
+
+async function refreshKraken(){
+  if(!HAS_API)return;
+  try{
+    const s=await API.get_kraken_status();
+    document.getElementById("kr-rounds-done").textContent=s.rounds_done+"/"+s.rounds_total;
+    document.getElementById("kr-files").textContent=s.files_scanned;
+    document.getElementById("kr-high").textContent=s.findings_high;
+    document.getElementById("kr-total").textContent=s.findings_total;
+    updateBadge("badge-kraken",s.findings_total||"0");
+
+    const list=document.getElementById("kr-findings");
+    if(s.recent&&s.recent.length){
+      list.innerHTML=s.recent.map(f=>{
+        const cls=f.label==="HIGH"?"finding-card":"finding-card medium";
+        const advs=f.adversaries?f.adversaries.join(", "):"—";
+        const cats=f.categories?f.categories.join(", "):"—";
+        const quotes=(f.quotes||[]).map(q=>`<div class="finding-quote">"${esc(truncate(q,200))}"</div>`).join("");
+        return`<div class="${cls}"><div class="finding-file">${esc(f.file)} <span class="val-${f.label==='HIGH'?'red':'gold'}">[${f.label}]</span> score:${f.score}</div><div class="finding-meta">Adversaries: ${esc(advs)} | Categories: ${esc(cats)}</div>${quotes}</div>`;
+      }).join("");
+    }
+
+    if(!s.running){
+      const btn=document.getElementById("kr-start");
+      btn.textContent="🦑 START HUNT";btn.classList.remove("running");
+      if(krakenInterval){clearInterval(krakenInterval);krakenInterval=null}
+    }
+  }catch(e){console.error(e)}
+}
+
+// ===== FILING (Tab 4) =====
+let filingsLoaded=false, selectedFiling=null;
+
+async function loadFilings(){
+  if(!HAS_API)return;
+  filingsLoaded=true;
+  const list=document.getElementById("filing-list");
+  try{
+    const filings=await API.list_filings();
+    if(!filings||!filings.length||filings[0]?.error){
+      list.innerHTML='<p style="color:#888;padding:12px">No filings found in brain DB.</p>';
+      return;
+    }
+    list.innerHTML=filings.map(f=>{
+      const strength=f.avg_strength?(+f.avg_strength).toFixed(2):"—";
+      const color=+f.avg_strength>=0.7?"val-green":+f.avg_strength>=0.4?"val-gold":"val-red";
+      return`<div class="filing-item" data-fid="${esc(f.filing_id)}"><div class="filing-id">${esc(f.label||f.filing_id)}</div><div class="filing-lane">Lane: ${esc(f.lane||"—")} | Chains: ${f.chain_count}</div><div class="filing-strength ${color}">Strength: ${strength} (max: ${f.max_strength?(+f.max_strength).toFixed(2):"—"})</div></div>`;
+    }).join("");
+    updateBadge("badge-filing",filings.length);
+
+    list.querySelectorAll(".filing-item").forEach(el=>{
+      el.addEventListener("click",()=>{
+        list.querySelectorAll(".filing-item").forEach(e=>e.classList.remove("selected"));
+        el.classList.add("selected");
+        selectedFiling=el.dataset.fid;
+        showFilingActions(selectedFiling);
+      });
+    });
+  }catch(e){list.innerHTML=`<p style="color:#ff4444;padding:12px">Error: ${esc(e.message)}</p>`}
+}
+
+function showFilingActions(fid){
+  const out=document.getElementById("filing-output");
+  out.innerHTML=`
+    <h3 style="margin-bottom:8px">Filing: ${esc(fid)}</h3>
+    <div class="filing-actions">
+      <button class="gen-btn" onclick="generateDoc('brief','${esc(fid)}')">📝 Generate Brief</button>
+      <button class="gen-btn" onclick="generateDoc('impeach','${esc(fid)}')">⚔️ Impeachment</button>
+    </div>
+    <pre id="filing-content" style="color:#888">Click a button above to generate a document.</pre>`;
+}
+
+window.generateDoc=async function(type,fid){
+  const pre=document.getElementById("filing-content");
+  pre.textContent="Generating... please wait.";
+  pre.style.color="#4d96ff";
+  try{
+    let res;
+    if(type==="brief") res=await API.generate_brief(fid);
+    else if(type==="impeach") res=await API.generate_impeachment(fid);
+    else{pre.textContent="Unknown document type.";return}
+    if(res.success){pre.style.color="#c8ccd0";pre.textContent=res.text}
+    else{pre.style.color="#ff4444";pre.textContent="Generation failed:\n"+(res.stderr||res.error||"Unknown error")}
+  }catch(e){pre.style.color="#ff4444";pre.textContent="Error: "+e.message}
+};
+
+// ===== ANALYTICS (Tab 5) =====
+async function loadAnalytics(){
+  if(!HAS_API)return;
+  try{
+    const live=await API.get_live_data();
+    document.getElementById("an-sep").textContent=live.sep_days;
+    document.getElementById("tab-sep").textContent="🔴 "+live.sep_days+" DAYS SEPARATED";
+    if(live.stats&&live.stats.ev)updateBadge("badge-analytics",fmt(live.stats.ev));
+
+    const st=live.stats||{};
+    const grid=document.getElementById("an-stats");
+    grid.innerHTML=[
+      {n:st.ev,l:"Evidence Quotes",c:"val-blue"},
+      {n:st.jv,l:"Judicial Violations",c:"val-red"},
+      {n:st.im,l:"Impeachment Items",c:"val-gold"},
+      {n:st.tl,l:"Timeline Events",c:"val-green"},
+      {n:st.ct,l:"Contradictions",c:"val-purple"},
+    ].map(s=>`<div class="stat-card"><div class="num ${s.c}">${fmt(s.n)}</div><div class="lbl">${s.l}</div></div>`).join("");
+
+    const health=await API.get_health();
+    if(health.brain_db&&health.brain_db.nodes){
+      grid.innerHTML+=`<div class="stat-card"><div class="num val-blue">${fmt(health.brain_db.nodes)}</div><div class="lbl">Brain Nodes</div></div>`;
+      grid.innerHTML+=`<div class="stat-card"><div class="num val-green">${fmt(health.brain_db.edges)}</div><div class="lbl">Brain Edges</div></div>`;
+      grid.innerHTML+=`<div class="stat-card"><div class="num val-gold">${fmt(health.brain_db.chains)}</div><div class="lbl">Brain Chains</div></div>`;
+    }
+  }catch(e){console.error("Analytics load error:",e)}
+}
+
+document.getElementById("an-search-btn").addEventListener("click",doAnalyticsSearch);
+document.getElementById("an-query").addEventListener("keydown",e=>{if(e.key==="Enter")doAnalyticsSearch()});
+
+async function doAnalyticsSearch(){
+  if(!HAS_API)return;
+  const q=document.getElementById("an-query").value.trim();
+  if(!q)return;
+  const out=document.getElementById("analytics-results");
+  out.innerHTML='<div class="loading-msg"><div class="spinner" style="margin:0 auto 12px"></div>Searching...</div>';
+  try{
+    const res=await API.search_fts5(q);
+    if(!res.results||!res.results.length){out.innerHTML='<p style="color:#888;padding:12px">No results found.</p>';return}
+    out.innerHTML=res.results.map(r=>`<div class="result-item"><span class="src">${esc(r.source||"—")}</span><br>${esc(truncate(r.text||"",300))}</div>`).join("");
+  }catch(e){out.innerHTML=`<p style="color:#ff4444">Error: ${esc(e.message)}</p>`}
+}
+
+// ===== INIT =====
+document.getElementById("export-btn").addEventListener("click",exportCanvasPNG);
+document.getElementById("nd-close-btn").addEventListener("click",closeNodeDetail);
+
+function _fullInit(){
+  loadGraph();
+  if(HAS_API){
+    API.get_live_data().then(d=>{
+      if(d)document.getElementById("tab-sep").textContent="🔴 "+d.sep_days+" DAYS SEPARATED";
+    }).catch(()=>{});
+  }
+}
+
+// If API ready now, init immediately; otherwise wait for pywebview
+if(HAS_API){
+  _fullInit();
+}else{
+  // Start graph load even without API (graph_data.json is local)
+  loadGraph();
+  // When pywebview ready event fires, re-init API-dependent features
+  window.addEventListener("pywebviewready",()=>{
+    API = window.pywebview.api;
+    HAS_API = true;
+    document.getElementById("no-api-overlay").style.display="none";
+    API.get_live_data().then(d=>{
+      if(d)document.getElementById("tab-sep").textContent="🔴 "+d.sep_days+" DAYS SEPARATED";
+    }).catch(()=>{});
+  });
+}
+</script>
+</body>
+</html>
