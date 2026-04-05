@@ -1,12 +1,12 @@
 import { joinSession } from "@github/copilot-sdk/extension";
-import { execFile, spawn } from "node:child_process";
+import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { randomUUID } from "node:crypto";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const HELPER_PATH = join(__dirname, "query_helper.py");
-const BRIDGE_PATH = join(__dirname, "lexos_bridge.py");
+const DAEMON_PATH = join(__dirname, "nexus_daemon.py");
 const DB_PATH = "C:\\Users\\andre\\LitigationOS\\litigation_context.db";
 const BRIDGE_TIMEOUT = 60000; // 60s for bridge tools (multi-query orchestration)
 
@@ -35,110 +35,138 @@ function safeStringify(obj, maxLen = MAX_OUTPUT_CHARS) {
     }
 }
 
-// Secure query transport — all queries via query_helper.py (JSON stdin/stdout, ? placeholders only)
+// === NEXUS v2 — Persistent Daemon Transport ===
+// Single long-running Python process (nexus_daemon.py) with warm DB connections.
+// Eliminates ~500ms spawn overhead per tool call (was: new python process per call).
+// Protocol: line-delimited JSON over stdin/stdout with UUID request correlation.
 
-function queryDB(request) {
-    return new Promise((resolve) => {
-        const child = execFile(
-            "python",
-            [HELPER_PATH],
-            { maxBuffer: 10 * 1024 * 1024, timeout: 30000 },
-            (err, stdout) => {
-                if (err) {
-                    if (err.killed)
-                        resolve("⏰ Query timed out after 30 seconds. Try a more specific query.");
-                    else
-                        resolve(`Error: ${String(err.message || err).substring(0, 200)}`);
-                    return;
-                }
-                try {
-                    const trimmed = (stdout || "").trimEnd();
-                    if (trimmed.length > MAX_STDOUT_BYTES) {
-                        resolve(`⚠️ Query result too large (${(trimmed.length / 1024 / 1024).toFixed(1)} MB). Add LIMIT or narrow your query.`);
-                        return;
-                    }
-                    const data = JSON.parse(trimmed);
-                    if (data.error) {
-                        resolve(`❌ Query error: ${String(data.error).substring(0, 200)}`);
-                        return;
-                    }
-                    resolve(data);
-                } catch (parseErr) {
-                    resolve(`❌ Parse error: ${String(parseErr.message || parseErr).substring(0, 200)}`);
-                }
-            },
-        );
-        child.stdin.write(JSON.stringify(request));
-        child.stdin.end();
+let daemonProc = null;
+let daemonReady = false;
+let daemonReadyResolve = null;
+let daemonReadyPromise = null;
+const pendingRequests = new Map(); // id → { resolve, timer }
+let stdoutBuffer = "";
+let daemonRestarts = 0;
+const MAX_RESTARTS = 5;
+const DEFAULT_TIMEOUT = 30000;
+
+function startDaemon() {
+    if (daemonProc) return daemonReadyPromise;
+
+    daemonReadyPromise = new Promise((resolve) => { daemonReadyResolve = resolve; });
+    stdoutBuffer = "";
+    pendingRequests.clear();
+
+    daemonProc = spawn("python", [DAEMON_PATH], {
+        env: { ...process.env, PYTHONUTF8: "1" },
+        stdio: ["pipe", "pipe", "pipe"],
+        windowsHide: true,
     });
+
+    daemonProc.stdout.setEncoding("utf-8");
+    daemonProc.stdout.on("data", (chunk) => {
+        stdoutBuffer += chunk;
+        let nl;
+        while ((nl = stdoutBuffer.indexOf("\n")) !== -1) {
+            const line = stdoutBuffer.substring(0, nl).trim();
+            stdoutBuffer = stdoutBuffer.substring(nl + 1);
+            if (!line) continue;
+            try {
+                const msg = JSON.parse(line);
+                // Startup ready signal
+                if (msg.status === "ready" && !daemonReady) {
+                    daemonReady = true;
+                    if (daemonReadyResolve) { daemonReadyResolve(true); daemonReadyResolve = null; }
+                    continue;
+                }
+                // Route response to pending request by id
+                if (msg.id && pendingRequests.has(msg.id)) {
+                    const { resolve, timer } = pendingRequests.get(msg.id);
+                    clearTimeout(timer);
+                    pendingRequests.delete(msg.id);
+                    resolve(msg);
+                }
+            } catch {
+                // Non-JSON line — ignore (daemon logs go to stderr/temp file)
+            }
+        }
+    });
+
+    daemonProc.stderr.on("data", () => {}); // Daemon logs to %TEMP%/nexus_daemon.log
+
+    daemonProc.on("close", (code) => {
+        const wasReady = daemonReady;
+        daemonProc = null;
+        daemonReady = false;
+        // Reject all in-flight requests
+        for (const [, { resolve, timer }] of pendingRequests) {
+            clearTimeout(timer);
+            resolve({ ok: false, error: `Daemon exited (code ${code})` });
+        }
+        pendingRequests.clear();
+        // Auto-restart with backoff (unless exhausted)
+        if (wasReady && daemonRestarts < MAX_RESTARTS) {
+            daemonRestarts++;
+            setTimeout(startDaemon, 500 * daemonRestarts);
+        }
+    });
+
+    // Kill daemon when parent process exits
+    const cleanup = () => { if (daemonProc) { try { daemonProc.kill(); } catch {} } };
+    process.once("exit", cleanup);
+    process.once("SIGINT", cleanup);
+    process.once("SIGTERM", cleanup);
+
+    return daemonReadyPromise;
 }
 
-// Bridge transport (lexos_bridge.py) — multi-query orchestration via JSON stdin/stdout
+async function callDaemon(request, timeoutMs = DEFAULT_TIMEOUT) {
+    // Ensure daemon is running and ready
+    if (!daemonProc || !daemonReady) {
+        const readyP = startDaemon();
+        const ready = await Promise.race([
+            readyP.then(() => true),
+            new Promise((r) => setTimeout(() => r(false), 8000)),
+        ]);
+        if (!ready) return { ok: false, error: "Daemon startup timeout (8s)" };
+    }
 
-function callBridge(payload, timeoutMs = BRIDGE_TIMEOUT) {
+    const id = randomUUID();
+    request.id = id;
+
     return new Promise((resolve) => {
-        const proc = spawn("python", [BRIDGE_PATH], {
-            env: { ...process.env, OLLAMA_MODELS: "J:\\OLLAMA_MODELS" },
-            stdio: ["pipe", "pipe", "pipe"],
-        });
-
-        let stdout = "";
-        let stderr = "";
-        let settled = false;
-
         const timer = setTimeout(() => {
-            if (!settled) {
-                settled = true;
-                proc.kill();
-                resolve({ error: "⏰ Bridge timed out. Try a simpler query." });
+            if (pendingRequests.has(id)) {
+                pendingRequests.delete(id);
+                resolve({ ok: false, error: `Request timeout (${timeoutMs}ms)` });
             }
         }, timeoutMs);
 
-        proc.stdout.on("data", (d) => {
-            if (stdout.length < MAX_STDOUT_BYTES) {
-                stdout += d;
-                if (stdout.length > MAX_STDOUT_BYTES) {
-                    stdout = stdout.substring(0, MAX_STDOUT_BYTES);
-                }
-            }
-        });
-        proc.stderr.on("data", (d) => {
-            if (stderr.length < MAX_STDERR_BYTES) {
-                stderr += d;
-                if (stderr.length > MAX_STDERR_BYTES) {
-                    stderr = stderr.substring(0, MAX_STDERR_BYTES);
-                }
-            }
-        });
+        pendingRequests.set(id, { resolve, timer });
 
-        proc.on("error", (err) => {
-            if (!settled) {
-                settled = true;
-                clearTimeout(timer);
-                resolve({ error: `Bridge spawn error: ${err.message}` });
-            }
-        });
-
-        proc.on("close", (code) => {
-            if (!settled) {
-                settled = true;
-                clearTimeout(timer);
-                if (stdout.trim()) {
-                    try {
-                        const parsed = JSON.parse(stdout.trim());
-                        resolve(parsed);
-                    } catch {
-                        resolve({ error: `JSON parse failed (code ${code})`, raw: stdout.slice(0, 500) });
-                    }
-                } else {
-                    resolve({ error: stderr.slice(0, 500) || `Bridge exited with code ${code}` });
-                }
-            }
-        });
-
-        proc.stdin.write(JSON.stringify(payload));
-        proc.stdin.end();
+        try {
+            daemonProc.stdin.write(JSON.stringify(request) + "\n");
+        } catch (e) {
+            pendingRequests.delete(id);
+            clearTimeout(timer);
+            resolve({ ok: false, error: `Write failed: ${e.message}` });
+        }
     });
+}
+
+// Legacy-compatible wrappers — all 22+ tool handlers call these UNCHANGED.
+// queryDB: returns string on error (formatResult expects this pattern).
+// callBridge: returns object on error (bridge formatters check data.error).
+
+function queryDB(request) {
+    return callDaemon(request).then((res) => {
+        if (res && res.ok === false) return `❌ ${res.error || "Unknown error"}`;
+        return res;
+    });
+}
+
+function callBridge(payload, timeoutMs = BRIDGE_TIMEOUT) {
+    return callDaemon(payload, timeoutMs);
 }
 
 // Markdown formatter (queryDB results)
@@ -389,8 +417,9 @@ function formatCrossConnect(data) {
 const session = await joinSession({
     hooks: {
         onSessionStart: async () => {
+            startDaemon(); // Spawn NEXUS v2 daemon (warm connections, 24 actions)
             await session.log(
-                "⚖️ SINGULARITY v7.1 — 22 tools + 8 slash commands + governance hooks",
+                "⚖️ SINGULARITY v7.2 — NEXUS v2 daemon + 22 tools + 8 slash commands",
                 { level: "info" },
             );
         },
@@ -484,7 +513,8 @@ const session = await joinSession({
         {
             name: "query_litigation_db",
             description:
-                "Run a parameterized SQL query against litigation_context.db (186 tables, 1.3 M+ rows). " +
+                "READ-ONLY SQL query against litigation_context.db (186 tables, 1.3 M+ rows). " +
+                "SELECT queries ONLY — INSERT/UPDATE/DELETE are BLOCKED. For writes, use exec_python with a script. " +
                 "Pass SQL with ? placeholders and a params array — values are NEVER interpolated. " +
                 "Key tables: evidence_quotes, timeline_events, michigan_rules_extracted, police_reports, " +
                 "impeachment_matrix, authority_chains_v2, contradiction_map, deadlines, filing_packages.",

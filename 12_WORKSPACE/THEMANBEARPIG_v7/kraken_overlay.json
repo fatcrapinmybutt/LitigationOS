@@ -1,0 +1,772 @@
+{
+  "nodes": [
+    {
+      "id": "krk_jud_ex_parte",
+      "label": "JUD: Ex Parte",
+      "layer": "JUDICIAL_CARTEL",
+      "color": "#cc44ff",
+      "r": 14,
+      "threat": 10,
+      "group": "Judicial Violation",
+      "desc": "KRAKEN found 672 instances of ex_parte",
+      "lod": 2,
+      "data": {
+        "violation_type": "ex_parte",
+        "count": 672,
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_jud_bias",
+      "label": "JUD: Bias",
+      "layer": "JUDICIAL_CARTEL",
+      "color": "#cc44ff",
+      "r": 14,
+      "threat": 10,
+      "group": "Judicial Violation",
+      "desc": "KRAKEN found 230 instances of bias",
+      "lod": 2,
+      "data": {
+        "violation_type": "bias",
+        "count": 230,
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_jud_due_process",
+      "label": "JUD: Due Process",
+      "layer": "JUDICIAL_CARTEL",
+      "color": "#cc44ff",
+      "r": 14,
+      "threat": 10,
+      "group": "Judicial Violation",
+      "desc": "KRAKEN found 274 instances of due_process",
+      "lod": 2,
+      "data": {
+        "violation_type": "due_process",
+        "count": 274,
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_jud_contempt_abuse",
+      "label": "JUD: Contempt Abuse",
+      "layer": "JUDICIAL_CARTEL",
+      "color": "#cc44ff",
+      "r": 14,
+      "threat": 10,
+      "group": "Judicial Violation",
+      "desc": "KRAKEN found 417 instances of contempt_abuse",
+      "lod": 2,
+      "data": {
+        "violation_type": "contempt_abuse",
+        "count": 417,
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_jud_evidence_exclusion",
+      "label": "JUD: Evidence Exclusion",
+      "layer": "JUDICIAL_CARTEL",
+      "color": "#cc44ff",
+      "r": 6.0,
+      "threat": 9,
+      "group": "Judicial Violation",
+      "desc": "KRAKEN found 12 instances of evidence_exclusion",
+      "lod": 3,
+      "data": {
+        "violation_type": "evidence_exclusion",
+        "count": 12,
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_jud_recusal_refusal",
+      "label": "JUD: Recusal Refusal",
+      "layer": "JUDICIAL_CARTEL",
+      "color": "#cc44ff",
+      "r": 14,
+      "threat": 10,
+      "group": "Judicial Violation",
+      "desc": "KRAKEN found 360 instances of recusal_refusal",
+      "lod": 2,
+      "data": {
+        "violation_type": "recusal_refusal",
+        "count": 360,
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_jud_cartel_connection",
+      "label": "JUD: Cartel Connection",
+      "layer": "JUDICIAL_CARTEL",
+      "color": "#cc44ff",
+      "r": 11.5,
+      "threat": 10,
+      "group": "Judicial Violation",
+      "desc": "KRAKEN found 23 instances of cartel_connection",
+      "lod": 2,
+      "data": {
+        "violation_type": "cartel_connection",
+        "count": 23,
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_jud_rights_denial",
+      "label": "JUD: Rights Denial",
+      "layer": "JUDICIAL_CARTEL",
+      "color": "#cc44ff",
+      "r": 6.0,
+      "threat": 9,
+      "group": "Judicial Violation",
+      "desc": "KRAKEN found 12 instances of rights_denial",
+      "lod": 3,
+      "data": {
+        "violation_type": "rights_denial",
+        "count": 12,
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_0",
+      "label": "EVT: October 13, 2023",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "- **October 13, 2023**: Emily A.",
+      "lod": 3,
+      "data": {
+        "date": "October 13, 2023",
+        "file": "MSC_GOLDEN_SET_PROMPT.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_1",
+      "label": "EVT: October 15, 2023",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "Watson told police \"nothing was physical\" (NSPD-2023-08121)\n- **October 15, 2023**: Two days later, Emily filed a PPO alleging physical abuse \u2014 directly contradicting her own police statement\n- **The ",
+      "lod": 3,
+      "data": {
+        "date": "October 15, 2023",
+        "file": "MSC_GOLDEN_SET_PROMPT.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_2",
+      "label": "EVT: August 7, 2025",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "The entire 14th Circuit is compromised\n- **August 7, 2025**: Albert Watson (Emily's father) told police: \"They want this documented so Emily can go tomorrow to get an Ex Parte order for full custody o",
+      "lod": 3,
+      "data": {
+        "date": "August 7, 2025",
+        "file": "MSC_GOLDEN_SET_PROMPT.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_3",
+      "label": "EVT: August 8, 2025",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "# SUPREME COURT GOLDEN SET \u2014 MEGA-PROMPT\n\n> **PURPOSE:** Paste this ENTIRE prompt into a fresh Copilot session to activate full-spectrum MSC filing production against ALL adversaries. This is the kitc",
+      "lod": 3,
+      "data": {
+        "date": "August 8, 2025",
+        "file": "MSC_GOLDEN_SET_PROMPT.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_4",
+      "label": "EVT: 2025-07-19",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "======================================================================\nCONVERSATION: Eviction Relief and Custody\nDATE: 2025-07-19 12:54:35 UTC\nSOURCE: conversations_3.",
+      "lod": 3,
+      "data": {
+        "date": "2025-07-19",
+        "file": "conv_2025-07-19_eviction-relief-and-custody_conversations-3.txt",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_5",
+      "label": "EVT: August 7, 2025",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "**The conspiracy culminated in Albert Watson's August 7, 2025 admission** to Norton Shores Police Officer Ella Randall (#47437), documented in NSPD Case NS2505044: *\"Albert said they want this inciden",
+      "lod": 3,
+      "data": {
+        "date": "August 7, 2025",
+        "file": "CIVIL_COMPLAINT_WATSON_FAMILY_003.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_6",
+      "label": "EVT: August 8, 2025",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "\"* The five ex parte orders entered the next day \u2014 August 8, 2025 \u2014 were the premeditated result of this coordinated family strategy.",
+      "lod": 3,
+      "data": {
+        "date": "August 8, 2025",
+        "file": "CIVIL_COMPLAINT_WATSON_FAMILY_003.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_7",
+      "label": "EVT: November 17, 2023",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "Emily's hospital visit on November 17, 2023 for alleged \"blood poisoning\" was actually a self-injected Ozempic reaction from Lori Watson's lupus prescription \u2014 **narcotics test was NEGATIVE.",
+      "lod": 3,
+      "data": {
+        "date": "November 17, 2023",
+        "file": "CIVIL_COMPLAINT_WATSON_FAMILY_003.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_8",
+      "label": "EVT: October 15, 2023",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "**False physical assault allegation**: Emily accused Plaintiff of physical assault on October 15, 2023.",
+      "lod": 3,
+      "data": {
+        "date": "October 15, 2023",
+        "file": "CIVIL_COMPLAINT_WATSON_FAMILY_003.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_9",
+      "label": "EVT: December 2, 2023",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "\" NSPD Officer Ritchie (NSPD-2023-08121, December 2, 2023) confirmed nothing physical occurred.",
+      "lod": 3,
+      "data": {
+        "date": "December 2, 2023",
+        "file": "CIVIL_COMPLAINT_WATSON_FAMILY_003.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_10",
+      "label": "EVT: December 1, 2023",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "**False hidden camera and chemical weapon allegation (December 1, 2023)**: Emily claimed a hidden camera was in the garage and a \"mason jar of chemicals\" was present.",
+      "lod": 3,
+      "data": {
+        "date": "December 1, 2023",
+        "file": "CIVIL_COMPLAINT_WATSON_FAMILY_003.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_11",
+      "label": "EVT: November 14, 2023",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "**False sexual harassment allegation (November 14, 2023)**: Emily claimed Plaintiff \"grabbed my crotch.",
+      "lod": 3,
+      "data": {
+        "date": "November 14, 2023",
+        "file": "CIVIL_COMPLAINT_WATSON_FAMILY_003.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_12",
+      "label": "EVT: 08/07/2025",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "\"\n\n   > \"On Thursday, 08/07/2025, at 7:24 PM, the Plaintiff called the Defendant's father, Albert Watson, and started a conversation with him displaying extreme paranoia and exhibiting mental issues.",
+      "lod": 3,
+      "data": {
+        "date": "08/07/2025",
+        "file": "CIVIL_COMPLAINT_WATSON_FAMILY_003.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_13",
+      "label": "EVT: November 9, 2022",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": ", born November 9, 2022, who is the subject of the custody and parenting time orders in this case.",
+      "lod": 3,
+      "data": {
+        "date": "November 9, 2022",
+        "file": "MOTION_CONTEMPT_SHOW_CAUSE.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_14",
+      "label": "EVT: March 28, 2024",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "On or about **March 28, 2024**, Defendant unilaterally and without court authorization began withholding the minor child L.",
+      "lod": 3,
+      "data": {
+        "date": "March 28, 2024",
+        "file": "MOTION_CONTEMPT_SHOW_CAUSE.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_15",
+      "label": "EVT: May 5, 2024",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "This period of total withholding continued without interruption for approximately thirty-nine (39) consecutive days, through on or about May 5, 2024.",
+      "lod": 3,
+      "data": {
+        "date": "May 5, 2024",
+        "file": "MOTION_CONTEMPT_SHOW_CAUSE.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_16",
+      "label": "EVT: July 17, 2024",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "# STATE OF MICHIGAN\n\n# IN THE 14TH JUDICIAL CIRCUIT COURT FOR THE COUNTY OF MUSKEGON\n\n---\n\n**ANDREW J. PIGORS,**\nPlaintiff/Movant, *Pro Se*\n\n**v.**\n\n**EMILY A. WATSON,**\nDefendant.\n\n---\n\n| | |\n|---|--",
+      "lod": 3,
+      "data": {
+        "date": "July 17, 2024",
+        "file": "MOTION_CONTEMPT_SHOW_CAUSE.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_17",
+      "label": "EVT: August 5, 2025",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "On or about **August 5, 2025**, a USB recording was submitted to the court clerk by Defendant's family.",
+      "lod": 3,
+      "data": {
+        "date": "August 5, 2025",
+        "file": "MOTION_CONTEMPT_SHOW_CAUSE.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_18",
+      "label": "EVT: August 11, 2025",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "Father was served on **August 8, 2025** (Friday), and the first objection hearing was held on **August 11, 2025** (Monday) \u2014 giving Father **zero (0) business days** to prepare, in violation of MCR 2.",
+      "lod": 3,
+      "data": {
+        "date": "August 11, 2025",
+        "file": "MOTION_CONTEMPT_SHOW_CAUSE.md",
+        "source": "KRAKEN"
+      }
+    },
+    {
+      "id": "krk_evt_19",
+      "label": "EVT: March 26, 2023",
+      "layer": "TIMELINE",
+      "color": "#ffaa00",
+      "r": 5,
+      "threat": 0,
+      "group": "Timeline Event",
+      "desc": "On **March 26, 2023**, Lori Watson sent text messages declaring she was **\"No longer willing to work with [him] regarding Lincoln,\"** that **\"Everything will need to go through the court,\"** and threa",
+      "lod": 3,
+      "data": {
+        "date": "March 26, 2023",
+        "file": "MOTION_CONTEMPT_SHOW_CAUSE.md",
+        "source": "KRAKEN"
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "krk_jud_ex_parte",
+      "target": "adv_judge_mcneill",
+      "type": "VIOLATION",
+      "color": "#cc44ff",
+      "width": 33.6,
+      "strength": 0.3
+    },
+    {
+      "source": "krk_jud_bias",
+      "target": "adv_judge_mcneill",
+      "type": "VIOLATION",
+      "color": "#cc44ff",
+      "width": 11.5,
+      "strength": 0.3
+    },
+    {
+      "source": "krk_jud_due_process",
+      "target": "adv_judge_mcneill",
+      "type": "VIOLATION",
+      "color": "#cc44ff",
+      "width": 13.7,
+      "strength": 0.3
+    },
+    {
+      "source": "krk_jud_contempt_abuse",
+      "target": "adv_judge_mcneill",
+      "type": "VIOLATION",
+      "color": "#cc44ff",
+      "width": 20.85,
+      "strength": 0.3
+    },
+    {
+      "source": "krk_jud_evidence_exclusion",
+      "target": "adv_judge_mcneill",
+      "type": "VIOLATION",
+      "color": "#cc44ff",
+      "width": 0.6,
+      "strength": 0.3
+    },
+    {
+      "source": "krk_jud_recusal_refusal",
+      "target": "adv_judge_mcneill",
+      "type": "VIOLATION",
+      "color": "#cc44ff",
+      "width": 18.0,
+      "strength": 0.3
+    },
+    {
+      "source": "krk_jud_cartel_connection",
+      "target": "adv_judge_mcneill",
+      "type": "VIOLATION",
+      "color": "#cc44ff",
+      "width": 1.15,
+      "strength": 0.3
+    },
+    {
+      "source": "krk_jud_rights_denial",
+      "target": "adv_judge_mcneill",
+      "type": "VIOLATION",
+      "color": "#cc44ff",
+      "width": 0.6,
+      "strength": 0.3
+    },
+    {
+      "source": "adv_emily_watson",
+      "target": "adv_judge_mcneill",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 4.1,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_foc",
+      "target": "adv_judge_mcneill",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 2.5,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_emily_watson",
+      "target": "adv_foc",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 2.1,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_albert_watson",
+      "target": "adv_emily_watson",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.9,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_emily_watson",
+      "target": "adv_lori_watson",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.5,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_albert_watson",
+      "target": "adv_judge_mcneill",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.5,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_judge_mcneill",
+      "target": "adv_lori_watson",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.4,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_emily_watson",
+      "target": "adv_jennifer_barnes",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.3,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_albert_watson",
+      "target": "adv_lori_watson",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.3,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_jennifer_barnes",
+      "target": "adv_judge_mcneill",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.2,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_kenneth_hoopes",
+      "target": "adv_shady_oaks",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.2,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_egle",
+      "target": "adv_shady_oaks",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.1,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_albert_watson",
+      "target": "adv_foc",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.1,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_foc",
+      "target": "adv_lori_watson",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.1,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_emily_watson",
+      "target": "adv_shady_oaks",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.1,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_judge_mcneill",
+      "target": "adv_pamela_rusco",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.0,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_judge_mcneill",
+      "target": "adv_shady_oaks",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.0,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_kenneth_hoopes",
+      "target": "adv_maria_ladas-hoopes",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 1.0,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_emily_watson",
+      "target": "adv_pamela_rusco",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 0.9,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_albert_watson",
+      "target": "adv_jennifer_barnes",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 0.9,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_emily_watson",
+      "target": "adv_ronald_berry",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 0.9,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_emily_watson",
+      "target": "adv_kenneth_hoopes",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 0.9,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_emily_watson",
+      "target": "adv_mandi_martini",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 0.8,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_judge_mcneill",
+      "target": "adv_mandi_martini",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 0.8,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_albert_watson",
+      "target": "adv_pamela_rusco",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 0.8,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_jennifer_barnes",
+      "target": "adv_pamela_rusco",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 0.8,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_judge_mcneill",
+      "target": "adv_ronald_berry",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 0.8,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_foc",
+      "target": "adv_jennifer_barnes",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 0.8,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_emily_watson",
+      "target": "adv_maria_ladas-hoopes",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 0.8,
+      "strength": 0.4
+    },
+    {
+      "source": "adv_judge_mcneill",
+      "target": "adv_kenneth_hoopes",
+      "type": "KRAKEN_COOCCURRENCE",
+      "color": "#44ccff",
+      "width": 0.8,
+      "strength": 0.4
+    }
+  ],
+  "meta": {
+    "source": "KRAKEN",
+    "version": "2.0",
+    "exported": "2026-04-05T01:03:26.546637",
+    "node_count": 28,
+    "link_count": 38,
+    "stats": {
+      "total_findings": 135,
+      "judicial_violations": 2000,
+      "narrative_events": 193,
+      "adversaries_profiled": 20,
+      "condensed_at": "2026-04-05T01:03:26.531011"
+    }
+  }
+}
