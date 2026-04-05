@@ -41,7 +41,9 @@ BRAIN_DB = REPO_ROOT / "mbp_brain.db"
 LIT_DB = REPO_ROOT / "litigation_context.db"
 VIS_DIR = _BUNDLE / "08_MEDIA" / "MANBEARPIG_V9"
 VIS_DIR_V5 = _BUNDLE / "08_MEDIA" / "MANBEARPIG_V5"
-GRAPH_JSON = VIS_DIR_V5 / "graph_data.json"
+GRAPH_JSON_V9 = VIS_DIR / "graph_data.json"
+GRAPH_JSON_V5 = VIS_DIR_V5 / "graph_data.json"
+GRAPH_JSON = GRAPH_JSON_V9 if GRAPH_JSON_V9.exists() else GRAPH_JSON_V5
 EXPORT_SCRIPT = REPO_ROOT / "scripts" / "export_brain_d3.py"
 EVOLVE_SCRIPT = REPO_ROOT / "scripts" / "brain_evolution.py"
 KRAKEN_SCRIPT = REPO_ROOT / "07_CODE" / "PROJECT_KRAKEN" / "kraken.py"
@@ -1920,14 +1922,22 @@ class _QuietHandler(http.server.SimpleHTTPRequestHandler):
         return overrides.get(ext, super().guess_type(path))
 
     def do_GET(self):
-        """Serve graph_data.json from V5 dir if requested at /graph_data.json."""
-        if self.path in ("/graph_data.json", "/graph_data.json?*"):
-            gj = GRAPH_JSON
-            if not gj.exists():
-                self.send_error(404, "graph_data.json not found")
+        """Serve graph_data.json — check V9 dir first, V5 fallback."""
+        if self.path.split("?")[0] == "/graph_data.json":
+            # Try V9 (bundled), then V5, then same dir as index.html
+            candidates = [VIS_DIR / "graph_data.json", VIS_DIR_V5 / "graph_data.json"]
+            gj = None
+            for c in candidates:
+                if c.exists():
+                    gj = c
+                    break
+            if not gj:
+                self.send_error(404, "graph_data.json not found in V9 or V5")
                 return
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
+            sz = gj.stat().st_size
+            self.send_header("Content-Length", str(sz))
             self.end_headers()
             with open(str(gj), "rb") as f:
                 while True:
