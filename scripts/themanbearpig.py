@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""THEMANBEARPIG v9.0 — Unified Legal Brain Desktop Application.
+"""THEMANBEARPIG v10.0 -- Unified Legal Brain Desktop Application.
 
 Merges PROJECT KRAKEN evidence hunting + MBP Brain v5.0 graph intelligence
 + filing generation + adversary analytics into a single pywebview desktop app.
@@ -18,6 +18,7 @@ import mimetypes
 import os
 import random
 import re
+import shutil
 import socket
 import sqlite3
 import subprocess
@@ -28,7 +29,7 @@ from datetime import date, datetime
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Paths — PyInstaller-aware (sys._MEIPASS for bundled exe, normal for dev)
+# Paths -- PyInstaller-aware (sys._MEIPASS for bundled exe, normal for dev)
 # ---------------------------------------------------------------------------
 if getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
     _BUNDLE = Path(sys._MEIPASS)
@@ -73,6 +74,28 @@ _WRITE_RE = re.compile(
     r"\b(INSERT|UPDATE|DELETE|DROP|CREATE|ALTER|REPLACE|ATTACH|DETACH|VACUUM|REINDEX)\b",
     re.IGNORECASE,
 )
+
+
+def _find_python():
+    """Return path to the real Python interpreter, not the frozen exe.
+
+    When running as a PyInstaller bundle, sys.executable points to the
+    .exe itself.  Subprocess calls that need to run .py scripts must
+    use the system Python instead.
+    """
+    if getattr(sys, "frozen", False):
+        found = shutil.which("python")
+        if found:
+            return found
+        # Fallback: common install location on this machine
+        fallback = Path(r"C:\Users\andre\AppData\Local\Programs\Python\Python312\python.exe")
+        if fallback.exists():
+            return str(fallback)
+        return "python"
+    return sys.executable
+
+
+_PYTHON = _find_python()
 
 # Adversary patterns (from kraken.py)
 ADVERSARIES = {
@@ -408,7 +431,7 @@ def _file_hash(fp):
 
 
 # ---------------------------------------------------------------------------
-# UnifiedAPI — JS bridge
+# UnifiedAPI -- JS bridge
 # ---------------------------------------------------------------------------
 class UnifiedAPI:
     """Exposes ALL methods to JavaScript via window.pywebview.api.*"""
@@ -612,7 +635,7 @@ class UnifiedAPI:
             return {"error": f"Evolution script not found: {EVOLVE_SCRIPT}"}
         try:
             result = subprocess.run(
-                [sys.executable, "-I", str(EVOLVE_SCRIPT), "--stats"],
+                [_PYTHON, "-I", str(EVOLVE_SCRIPT), "--stats"],
                 capture_output=True, text=True, timeout=120,
                 cwd=str(REPO_ROOT),
             )
@@ -632,7 +655,7 @@ class UnifiedAPI:
             return {"error": f"Export script not found: {EXPORT_SCRIPT}"}
         try:
             result = subprocess.run(
-                [sys.executable, "-I", str(EXPORT_SCRIPT)],
+                [_PYTHON, "-I", str(EXPORT_SCRIPT)],
                 capture_output=True, text=True, timeout=120,
                 cwd=str(REPO_ROOT),
             )
@@ -644,7 +667,7 @@ class UnifiedAPI:
                 "message": (
                     "Reload the page to see updated data"
                     if result.returncode == 0
-                    else "Export failed — check stderr"
+                    else "Export failed -- check stderr"
                 ),
             }
         except subprocess.TimeoutExpired:
@@ -1046,7 +1069,7 @@ class UnifiedAPI:
             return {"error": "Filing script not found"}
         try:
             result = subprocess.run(
-                [sys.executable, "-I", str(FILING_SCRIPT), "--filing", filing_id, "--brief"],
+                [_PYTHON, "-I", str(FILING_SCRIPT), "--filing", filing_id, "--brief"],
                 capture_output=True, text=True, timeout=60,
                 cwd=str(REPO_ROOT),
             )
@@ -1067,7 +1090,7 @@ class UnifiedAPI:
             return {"error": "Filing script not found"}
         try:
             result = subprocess.run(
-                [sys.executable, "-I", str(FILING_SCRIPT), "--actor", actor_id, "--impeach"],
+                [_PYTHON, "-I", str(FILING_SCRIPT), "--actor", actor_id, "--impeach"],
                 capture_output=True, text=True, timeout=60,
                 cwd=str(REPO_ROOT),
             )
@@ -1083,7 +1106,7 @@ class UnifiedAPI:
             return {"error": str(exc)}
 
     def get_strongest_filing(self):
-        """Strongest chain → filing info."""
+        """Strongest chain -> filing info."""
         conn = self._brain()
         if conn is None:
             return {"error": "Brain DB not available"}
@@ -1117,7 +1140,7 @@ class UnifiedAPI:
             return {"error": "court_feed.py not found", "items": []}
         try:
             result = subprocess.run(
-                [sys.executable, "-I", str(COURT_FEED_SCRIPT), "--json"],
+                [_PYTHON, "-I", str(COURT_FEED_SCRIPT), "--json"],
                 capture_output=True, text=True, timeout=30,
                 cwd=str(REPO_ROOT),
             )
@@ -1145,7 +1168,7 @@ class UnifiedAPI:
             return {"error": "Write operations not allowed"}
         try:
             result = subprocess.run(
-                [sys.executable, "-I", str(intel_script), command],
+                [_PYTHON, "-I", str(intel_script), command],
                 capture_output=True, text=True, timeout=30,
                 cwd=str(REPO_ROOT),
             )
@@ -1336,7 +1359,7 @@ class UnifiedAPI:
                     "top_contradiction": None,
                 }
 
-            # Evidence counts — batch via CASE WHEN
+            # Evidence counts -- batch via CASE WHEN
             case_clauses = []
             params = []
             for name in adversary_names:
@@ -1557,7 +1580,7 @@ class UnifiedAPI:
 
         Args:
             query: Search text.
-            limit: Max results per source (total may be up to 2×limit
+            limit: Max results per source (total may be up to 2*limit
                    before dedup).
         Returns:
             dict with ``results`` list and ``count``.
@@ -1707,7 +1730,7 @@ class UnifiedAPI:
     # ===================================================================
 
     def rebuild_brain(self):
-        """Trigger a full brain rebuild (T1 — build_mbp_brain.py).
+        """Trigger a full brain rebuild (T1 -- build_mbp_brain.py).
 
         Runs asynchronously in a background thread.  Returns immediately
         with status ``started``.  Poll ``get_health()`` to see when
@@ -1720,7 +1743,7 @@ class UnifiedAPI:
         def _run():
             try:
                 subprocess.run(
-                    [sys.executable, "-I", str(script)],
+                    [_PYTHON, "-I", str(script)],
                     cwd=str(REPO_ROOT),
                     timeout=600,
                     capture_output=True,
@@ -1737,7 +1760,7 @@ class UnifiedAPI:
     # ===================================================================
 
     def recompute_chains(self):
-        """Trigger chain recomputation (T2 — compute_chains.py)."""
+        """Trigger chain recomputation (T2 -- compute_chains.py)."""
         script = REPO_ROOT / "scripts" / "compute_chains.py"
         if not script.exists():
             return {"status": "error", "message": f"Script not found: {script}"}
@@ -1745,7 +1768,7 @@ class UnifiedAPI:
         def _run():
             try:
                 subprocess.run(
-                    [sys.executable, "-I", str(script)],
+                    [_PYTHON, "-I", str(script)],
                     cwd=str(REPO_ROOT),
                     timeout=600,
                     capture_output=True,
@@ -1762,7 +1785,7 @@ class UnifiedAPI:
     # ===================================================================
 
     def start_watcher(self):
-        """Start the MEEK file watcher daemon (T3 — brain_watcher.py).
+        """Start the MEEK file watcher daemon (T3 -- brain_watcher.py).
 
         Launches brain_watcher.py as a background subprocess with
         auto-routing enabled.  Returns immediately.
@@ -1774,7 +1797,7 @@ class UnifiedAPI:
         def _run():
             try:
                 subprocess.Popen(
-                    [sys.executable, "-I", str(script)],
+                    [_PYTHON, "-I", str(script)],
                     cwd=str(REPO_ROOT),
                     stdout=subprocess.DEVNULL,
                     stderr=subprocess.DEVNULL,
@@ -1809,7 +1832,7 @@ class UnifiedAPI:
                 if script.exists():
                     try:
                         subprocess.run(
-                            [sys.executable, "-I", str(script)],
+                            [_PYTHON, "-I", str(script)],
                             cwd=str(REPO_ROOT),
                             timeout=600,
                             capture_output=True,
@@ -1941,18 +1964,20 @@ def _print_banner(port, stats):
     chains = stats.get("chain_count", "?")
     gaps = stats.get("gap_open", "?")
     ver = stats.get("brain_version", "?")
-    print(f"""
-╔══════════════════════════════════════════════════════════════╗
-║           THEMANBEARPIG v{VERSION} — Unified Legal Brain          ║
-╠══════════════════════════════════════════════════════════════╣
-║  HTTP  : http://127.0.0.1:{port:<5}                             ║
-║  Brain : {str(BRAIN_DB):<50} ║
-║  Lit DB: {str(LIT_DB):<50} ║
-║  Version: {ver:<4}  Nodes: {nodes:<8}  Edges: {edges:<8}         ║
-║  Chains: {chains:<6}  Open Gaps: {gaps:<6}                        ║
-║  SEPARATION: {sep} DAYS since July 29, 2025              ║
-╚══════════════════════════════════════════════════════════════╝
-""")
+    banner = (
+        "\n"
+        "+==============================================================+\n"
+        f"|       THEMANBEARPIG v{VERSION} -- Unified Legal Brain            |\n"
+        "+==============================================================+\n"
+        f"|  HTTP  : http://127.0.0.1:{port:<5}                             |\n"
+        f"|  Brain : {str(BRAIN_DB):<50} |\n"
+        f"|  Lit DB: {str(LIT_DB):<50} |\n"
+        f"|  Version: {ver:<4}  Nodes: {nodes:<8}  Edges: {edges:<8}         |\n"
+        f"|  Chains: {chains:<6}  Open Gaps: {gaps:<6}                        |\n"
+        f"|  SEPARATION: {sep} DAYS since July 29, 2025              |\n"
+        "+==============================================================+\n"
+    )
+    print(banner)
 
 
 # ---------------------------------------------------------------------------
@@ -1960,7 +1985,7 @@ def _print_banner(port, stats):
 # ---------------------------------------------------------------------------
 def main():
     parser = argparse.ArgumentParser(
-        description="THEMANBEARPIG v9.0 — Unified Legal Brain Desktop Application"
+        description="THEMANBEARPIG v10.0 -- Unified Legal Brain Desktop Application"
     )
     parser.add_argument("--debug", action="store_true", help="Enable developer tools")
     parser.add_argument("--port", type=int, default=0, help="HTTP server port (0=auto)")
@@ -1992,7 +2017,7 @@ def main():
     if args.export and EXPORT_SCRIPT.exists():
         print("Re-exporting graph data...")
         subprocess.run(
-            [sys.executable, "-I", str(EXPORT_SCRIPT)],
+            [_PYTHON, "-I", str(EXPORT_SCRIPT)],
             cwd=str(REPO_ROOT), timeout=300,
         )
 
@@ -2009,7 +2034,7 @@ def main():
         api.start_kraken(rounds=args.rounds, count=args.count, focus=args.focus)
 
     sep = _sep_days()
-    title = f"THEMANBEARPIG v{VERSION} \u2014 {sep} Days Separated"
+    title = f"THEMANBEARPIG v{VERSION} -- {sep} Days Separated"
 
     window = webview.create_window(
         title,
@@ -2028,4 +2053,11 @@ def main():
 
 
 if __name__ == "__main__":
+    import io as _io
+    try:
+        sys.stdout = _io.TextIOWrapper(
+            sys.stdout.buffer, encoding="utf-8", errors="replace", line_buffering=True
+        )
+    except Exception:
+        pass
     main()
