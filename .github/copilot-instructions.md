@@ -18,15 +18,16 @@
 | 5 | **Defendant = Emily A. Watson** — NOT "Tiffany", NOT "Emily Ann", NOT "Emily M.", NOT "Watson-Pigors." Always "Emily A. Watson" in filings |
 | 6 | **Judge = Hon. Jenny L. McNeill** — TWO L's in McNeill. ALWAYS. Never "McNeil" or "McNiel" |
 | 7 | **CRIMINAL lane is 100% separate** — 2025-25245676SM (60th District, Kostrzewa) has ZERO connection to Lanes A-F. Never cross-contaminate evidence, arguments, or strategy |
+| 8 | **NEVER use MCP tools** — `litigation_context-*` MCP tools are BANNED. They are deprecated, slow (spawn-per-call), and bottleneck every session. Use ONLY local SINGULARITY extension tools: `query_litigation_db`, `search_evidence`, `search_impeachment`, `search_contradictions`, `search_authority_chains`, `nexus_fuse`, `nexus_argue`, `nexus_readiness`, `nexus_damages`, `lexos_narrative`, `lexos_adversary`, `lexos_filing_plan`, `lexos_rules_check`, `lexos_gap_analysis`, `lexos_cross_connect`, `judicial_intel`, `timeline_search`, `case_context`, `filing_status`, `check_deadlines`. If a tool name starts with `litigation_context-` → DO NOT CALL IT. This has been corrected 7+ times across 6 sessions — zero tolerance |
 
 ### Tier 1 — QUALITY (output standards, evidence handling)
 
 | # | Rule |
 |---|------|
-| 8 | **First attempt = apex quality** — NEVER say "simpler", "basic", "minimal", "starting point", or "good enough" — these words signal downgrade thinking. Every output is apex-tier from the first attempt. When facing complexity, think HARDER not simpler. Court-ready, production-ready, no exceptions |
+| 8 | **First attempt = apex quality** — NEVER say "simpler", "basic", "minimal", "starting point", or "good enough" — these words signal downgrade thinking. Every output is apex-tier from the first attempt. When facing complexity, think HARDER not simpler. Court-ready, production-ready, no exceptions. **RESEARCH BEFORE PROPOSING** — before presenting ANY plan or implementation, research the 2025/2026 state-of-the-art for the specific task. Start with the MOST ambitious bleeding-edge approach. The user WILL challenge "is that the best you can do?" — pre-empt this by making your first attempt your absolute best. If you haven't researched alternatives, you haven't tried hard enough |
 | 9 | **No hallucinated citations** — Every citation must trace to `authority_chains_v2`, `michigan_rules_extracted`, or `master_citations`. If not in DB, use `web_search` to verify before including — especially criminal statutes. If still unverifiable, say "not found in DB or web." NEVER fabricate case law, statutes, or rule cites |
 | 10 | **No stubs in production** — `pass`, `TODO`, `raise NotImplementedError`, empty `except`, `...` ellipsis bodies, placeholder returns = FORBIDDEN in any committed or deployed code. Every function fully operational |
-| 11 | **Error = Upgrade + Decompose** — On ANY error: (1) identify root cause, (2) decompose into 2-3 sub-agent tasks, (3) execute in parallel, (4) verify the fix is an improvement. NEVER reduce scope, simplify, skip features, or return a lesser version. Downgrading on error = FORBIDDEN |
+| 11 | **Error = Upgrade + Decompose** — On ANY error: (1) identify root cause, (2) decompose into 2-3 sub-agent tasks, (3) execute in parallel, (4) verify the fix is an improvement. NEVER reduce scope, simplify, skip features, or return a lesser version. Downgrading on error = FORBIDDEN. **FAIL-FAST**: If an approach fails twice → switch strategies immediately. Never debug the same error 3+ times. Prefer action over explanation. If the user says "forget it" → stop, acknowledge, pivot instantly |
 | 12 | **Deep-read evidence files** — When user says "read" a file: read EVERY page/line, extract VERBATIM quotes with page numbers. Never summarize without quoting first. Read files one-by-one for thoroughness. If the user later points out a quote you missed = rule violation |
 | 13 | **Persist user testimony IMMEDIATELY** — When user provides verbatim quotes, hearing testimony, or witness statements: WRITE to `evidence_quotes` + `berry_mcneill_intelligence` + `timeline_events` with EXACT wording BEFORE any other analysis. The user should never have to repeat themselves |
 | 14 | **Search ALL 7 drives before creating** — Before writing ANY new content, search C:\, D:\, F:\, G:\, H:\, I:\, J:\ for existing versions via `glob`. User's existing files ARE the source of truth. Creating from scratch when a draft exists = rule violation |
@@ -56,6 +57,7 @@
 | 28 | **Transient API errors** — "Request failed due to transient API error" = GitHub infra, NOT our code. Acknowledge briefly, retry once, move on. Do NOT diagnose or treat as a code bug |
 | 29 | **No hardcoded day counts in filings** — NEVER embed a static number for days-since-separation in court documents. Compute at render time: `(filing_date - date(2025,7,29)).days`. Stale day counts discovered during QA = automatic FAIL. This includes "230 days", "329 days", or any frozen count |
 | 30 | **Path centralization in code** — All DB paths in engine/brain/script code MUST use `shared.get_db()` or `shared.config`. Hardcoded `C:\Users\andre\...` paths break portability and create maintenance debt. Fix on contact — never add new hardcoded paths |
+| 31 | **Session-start identity verification** — On EVERY session start or post-compaction recovery, verify these core facts from stored memories BEFORE doing any work: (1) L.D.W. = Andrew's son, (2) tool preferences (no MCP, no PowerShell default, SINGULARITY extension tools only), (3) party names (Emily A. Watson, Hon. Jenny L. McNeill), (4) established systems (NEXUS daemon, KRAKEN, bleeding-edge toolchain). Forgetting these has caused user frustration in 3+ sessions — zero tolerance for identity/preference amnesia |
 
 ### Case-Specific Facts (hardcoded knowledge — auto-correct on sight)
 
@@ -78,12 +80,12 @@
 | **A** | `view`/`edit`/`create` | ALL file read/write | ZERO |
 | **A** | `sql` | ALL session DB queries | ZERO |
 | **B** | `exec_command` | General shell commands | ZERO |
-| **B** | Litigation MCP tools | Evidence search, filing assembly | ZERO |
-| **C** | `powershell` (sync) | ONLY PS-specific cmdlets | ⚠️ SHARED |
-| **D** | `powershell` (async) | ONLY interactive sessions | ⚠️ SHARED |
+| **B** | SINGULARITY extension tools | Evidence search, filing, intel | ZERO |
+| **C** | `powershell` (sync) | ONLY when no S/A/B alternative exists | ⚠️ SHARED |
+| **D** | `powershell` (async) | ONLY interactive REPL sessions | ⚠️ SHARED |
+| **❌** | `litigation_context-*` MCP tools | **BANNED — see Tier 0 Rule 8** | N/A |
 
-> PowerShell is LAST RESORT. cp1252 encoding crashes Python, quoting mangles scripts.
-> Max 2 concurrent async shells. Prefer pipe-free tools (S/A/B tiers) for 100% EAGAIN immunity.
+> PowerShell is LAST RESORT — NEVER use for anything that exec_python, exec_command, or exec_git can do. cp1252 encoding crashes Python, quoting mangles scripts. Max 2 concurrent async shells. Prefer pipe-free tools (S/A/B tiers) for 100% EAGAIN immunity.
 > See `~/.github/instructions/eagain-prevention.instructions.md` for full protocol.
 
 ## Bleeding-Edge Toolchain (v7.0 — ALL LOCAL, ZERO API DEPENDENCY)
