@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""THEMANBEARPIG v10.0 -- Unified Legal Brain Desktop Application.
+"""THEMANBEARPIG v15.0 -- Self-Organizing Intelligence Graph.
 
 Merges PROJECT KRAKEN evidence hunting + MBP Brain v5.0 graph intelligence
 + filing generation + adversary analytics into a single pywebview desktop app.
@@ -11,6 +11,7 @@ Usage:
 
 import argparse
 import hashlib
+import gzip
 import http.server
 import io
 import json as _json
@@ -39,11 +40,14 @@ else:
     REPO_ROOT = _BUNDLE
 BRAIN_DB = REPO_ROOT / "mbp_brain.db"
 LIT_DB = REPO_ROOT / "litigation_context.db"
-VIS_DIR = _BUNDLE / "08_MEDIA" / "MANBEARPIG_V9"
+VIS_DIR = _BUNDLE / "08_MEDIA" / "MANBEARPIG_V15"
+VIS_DIR_V9 = _BUNDLE / "08_MEDIA" / "MANBEARPIG_V9"
 VIS_DIR_V5 = _BUNDLE / "08_MEDIA" / "MANBEARPIG_V5"
-GRAPH_JSON_V9 = VIS_DIR / "graph_data.json"
-GRAPH_JSON_V5 = VIS_DIR_V5 / "graph_data.json"
-GRAPH_JSON = GRAPH_JSON_V9 if GRAPH_JSON_V9.exists() else GRAPH_JSON_V5
+GRAPH_JSON = VIS_DIR / "graph_clusters.json"
+if not GRAPH_JSON.exists():
+    GRAPH_JSON = VIS_DIR_V9 / "graph_data.json"
+if not GRAPH_JSON.exists():
+    GRAPH_JSON = VIS_DIR_V5 / "graph_data.json"
 EXPORT_SCRIPT = REPO_ROOT / "scripts" / "export_brain_d3.py"
 EVOLVE_SCRIPT = REPO_ROOT / "scripts" / "brain_evolution.py"
 KRAKEN_SCRIPT = REPO_ROOT / "07_CODE" / "PROJECT_KRAKEN" / "kraken.py"
@@ -54,7 +58,7 @@ DOSSIER_DIR = REPO_ROOT / "04_ANALYSIS" / "ADVERSARY_TRACKS"
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
-VERSION = "10.0.0"
+VERSION = "15.0.0"
 SEPARATION_DATE = date(2025, 7, 29)
 APP_BG = "#0a0a0f"
 APP_WIDTH, APP_HEIGHT = 1920, 1080
@@ -66,6 +70,7 @@ _PRAGMAS = (
     "PRAGMA cache_size = -32000",
     "PRAGMA synchronous = NORMAL",
     "PRAGMA temp_store = MEMORY",
+    "PRAGMA mmap_size = 268435456",  # 256 MB — brain DB is 310 MB on NVMe
 )
 
 # FTS5 sanitizer
@@ -1850,6 +1855,169 @@ class UnifiedAPI:
         }
 
     # ===================================================================
+    # COMMUNITY INTELLIGENCE (v15.0 — Leiden Clusters)
+    # ===================================================================
+
+    def get_community_intel(self, community_id):
+        """Full intelligence for a community: metadata, top nodes, patterns."""
+        conn = self._brain()
+        if conn is None:
+            return {"error": "Brain DB not available"}
+        try:
+            comm = conn.execute(
+                "SELECT * FROM communities WHERE id = ?", (community_id,)
+            ).fetchone()
+            if not comm:
+                return {"error": f"Community {community_id} not found"}
+
+            members = conn.execute(
+                "SELECT n.id, n.label, n.node_type, n.lane, na.pagerank, "
+                "na.hub_score, na.authority_score "
+                "FROM community_members cm "
+                "JOIN nodes n ON cm.node_id = n.id "
+                "LEFT JOIN node_analytics na ON n.id = na.node_id "
+                "WHERE cm.community_id = ? "
+                "ORDER BY COALESCE(na.pagerank, 0) DESC LIMIT 50",
+                (community_id,),
+            ).fetchall()
+
+            children = conn.execute(
+                "SELECT id, label, member_count, level FROM communities "
+                "WHERE parent_id = ? ORDER BY member_count DESC",
+                (community_id,),
+            ).fetchall()
+
+            edges = conn.execute(
+                "SELECT ce.*, c2.label AS target_label "
+                "FROM community_edges ce "
+                "LEFT JOIN communities c2 ON ce.target_id = c2.id "
+                "WHERE ce.source_id = ? OR ce.target_id = ? "
+                "ORDER BY ce.total_weight DESC LIMIT 30",
+                (community_id, community_id),
+            ).fetchall()
+
+            return {
+                "community": dict(comm),
+                "top_nodes": _rows_to_dicts(members),
+                "children": _rows_to_dicts(children),
+                "inter_edges": _rows_to_dicts(edges),
+                "node_count": len(members),
+            }
+        except Exception as exc:
+            return {"error": str(exc)}
+
+    def search_communities(self, query, limit=30):
+        """Search communities by label, narrative, or key actors."""
+        conn = self._brain()
+        if conn is None:
+            return {"error": "Brain DB not available"}
+        try:
+            safe_q = _sanitize_fts(query)
+            like_pat = f"%{safe_q}%"
+            rows = conn.execute(
+                "SELECT id, label, level, lane, member_count, "
+                "evidence_strength, authority_completeness, impeachment_density "
+                "FROM communities "
+                "WHERE label LIKE ? OR narrative LIKE ? OR key_actors LIKE ? "
+                "ORDER BY member_count DESC LIMIT ?",
+                (like_pat, like_pat, like_pat, limit),
+            ).fetchall()
+            return {"communities": _rows_to_dicts(rows), "count": len(rows)}
+        except Exception as exc:
+            return {"error": str(exc)}
+
+    def get_community_timeline(self, community_id, limit=100):
+        """Chronological events within a community."""
+        conn = self._brain()
+        if conn is None:
+            return {"error": "Brain DB not available"}
+        try:
+            rows = conn.execute(
+                "SELECT n.id, n.label, n.node_type, n.date_start, n.lane "
+                "FROM community_members cm "
+                "JOIN nodes n ON cm.node_id = n.id "
+                "WHERE cm.community_id = ? AND n.date_start IS NOT NULL "
+                "ORDER BY n.date_start ASC LIMIT ?",
+                (community_id, limit),
+            ).fetchall()
+            return {"events": _rows_to_dicts(rows), "count": len(rows)}
+        except Exception as exc:
+            return {"error": str(exc)}
+
+    def expand_community(self, community_id, limit=200):
+        """Return individual nodes for JS-side expansion of a community."""
+        conn = self._brain()
+        if conn is None:
+            return {"error": "Brain DB not available"}
+        try:
+            nodes = conn.execute(
+                "SELECT n.id, n.label, n.node_type, n.lane, n.date_start, "
+                "na.pagerank, na.hub_score, na.authority_score "
+                "FROM community_members cm "
+                "JOIN nodes n ON cm.node_id = n.id "
+                "LEFT JOIN node_analytics na ON n.id = na.node_id "
+                "WHERE cm.community_id = ? "
+                "ORDER BY COALESCE(na.pagerank, 0) DESC LIMIT ?",
+                (community_id, limit),
+            ).fetchall()
+
+            node_ids = [r["id"] for r in nodes]
+            edges = []
+            if node_ids:
+                placeholders = ",".join("?" * len(node_ids))
+                edges = conn.execute(
+                    f"SELECT source_id, target_id, edge_type, weight "
+                    f"FROM edges "
+                    f"WHERE source_id IN ({placeholders}) "
+                    f"AND target_id IN ({placeholders}) LIMIT 1000",
+                    node_ids + node_ids,
+                ).fetchall()
+
+            return {
+                "nodes": _rows_to_dicts(nodes),
+                "edges": _rows_to_dicts(edges),
+                "community_id": community_id,
+            }
+        except Exception as exc:
+            return {"error": str(exc)}
+
+    def get_community_stats(self):
+        """Summary stats for the community system."""
+        conn = self._brain()
+        if conn is None:
+            return {"error": "Brain DB not available"}
+        try:
+            row = conn.execute(
+                "SELECT "
+                "(SELECT COUNT(*) FROM communities WHERE level = 0) AS lanes, "
+                "(SELECT COUNT(*) FROM communities WHERE level = 1) AS epochs, "
+                "(SELECT COUNT(*) FROM communities WHERE level = 2) AS communities, "
+                "(SELECT COUNT(*) FROM community_members) AS memberships, "
+                "(SELECT COUNT(*) FROM community_edges) AS inter_edges, "
+                "(SELECT COUNT(*) FROM node_analytics WHERE pagerank > 0) AS ranked_nodes"
+            ).fetchone()
+            return dict(row) if row else {}
+        except Exception as exc:
+            return {"error": str(exc)}
+
+    def get_detected_patterns(self, limit=50):
+        """Autonomously detected patterns across communities."""
+        conn = self._brain()
+        if conn is None:
+            return {"error": "Brain DB not available"}
+        try:
+            if not _table_exists(conn, "detected_patterns"):
+                return {"patterns": [], "count": 0}
+            rows = conn.execute(
+                "SELECT * FROM detected_patterns "
+                "ORDER BY confidence DESC, detected_at DESC LIMIT ?",
+                (limit,),
+            ).fetchall()
+            return {"patterns": _rows_to_dicts(rows), "count": len(rows)}
+        except Exception as exc:
+            return {"error": str(exc)}
+
+    # ===================================================================
     # HEALTH CHECK
     # ===================================================================
 
@@ -1875,6 +2043,16 @@ class UnifiedAPI:
                     "(SELECT MAX(version) FROM versions) AS version"
                 ).fetchone()
                 health["brain_db"].update(dict(row))
+
+                # Community stats (v15.0)
+                if _table_exists(brain, "communities"):
+                    crow = brain.execute(
+                        "SELECT "
+                        "(SELECT COUNT(*) FROM communities) AS communities, "
+                        "(SELECT COUNT(*) FROM community_members) AS memberships, "
+                        "(SELECT COUNT(*) FROM node_analytics WHERE pagerank > 0) AS ranked_nodes"
+                    ).fetchone()
+                    health["brain_db"]["communities"] = dict(crow) if crow else {}
             except Exception as exc:
                 health["brain_db"]["error"] = str(exc)
 
@@ -1902,7 +2080,9 @@ class UnifiedAPI:
 # HTTP Server
 # ---------------------------------------------------------------------------
 class _QuietHandler(http.server.SimpleHTTPRequestHandler):
-    """Serve V9 HTML assets with no logging."""
+    """Serve V15 HTML assets with gzip compression and smart caching."""
+
+    _gzip_cache: dict = {}  # path → (mtime, compressed_bytes)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(VIS_DIR), **kwargs)
@@ -1911,7 +2091,6 @@ class _QuietHandler(http.server.SimpleHTTPRequestHandler):
         pass
 
     def end_headers(self):
-        self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
         self.send_header("Access-Control-Allow-Origin", "*")
         super().end_headers()
 
@@ -1921,31 +2100,74 @@ class _QuietHandler(http.server.SimpleHTTPRequestHandler):
                      ".mjs": "application/javascript", ".woff2": "font/woff2"}
         return overrides.get(ext, super().guess_type(path))
 
+    def _serve_gzipped(self, file_path, content_type):
+        """Serve a file with gzip compression and aggressive caching."""
+        mtime = file_path.stat().st_mtime
+        cache_key = str(file_path)
+
+        # Check gzip cache (avoids re-compressing on every request)
+        cached = self._gzip_cache.get(cache_key)
+        if cached and cached[0] == mtime:
+            compressed = cached[1]
+        else:
+            with open(str(file_path), "rb") as f:
+                raw = f.read()
+            compressed = gzip.compress(raw, compresslevel=6)
+            self._gzip_cache[cache_key] = (mtime, compressed)
+
+        self.send_response(200)
+        self.send_header("Content-Type", content_type)
+        self.send_header("Content-Encoding", "gzip")
+        self.send_header("Content-Length", str(len(compressed)))
+        # Cache static assets aggressively (reload via Ctrl+Shift+R if needed)
+        self.send_header("Cache-Control", "public, max-age=3600, stale-while-revalidate=86400")
+        self.end_headers()
+        self.wfile.write(compressed)
+
     def do_GET(self):
-        """Serve graph_data.json — check V9 dir first, V5 fallback."""
-        if self.path.split("?")[0] == "/graph_data.json":
-            # Try V9 (bundled), then V5, then same dir as index.html
-            candidates = [VIS_DIR / "graph_data.json", VIS_DIR_V5 / "graph_data.json"]
-            gj = None
-            for c in candidates:
-                if c.exists():
-                    gj = c
-                    break
+        """Serve graph_data.json with gzip; other files with caching."""
+        clean_path = self.path.split("?")[0]
+
+        if clean_path in ("/graph_data.json", "/graph_clusters.json"):
+            candidates = [
+                VIS_DIR / "graph_clusters.json",
+                VIS_DIR / "graph_data.json",
+                VIS_DIR_V9 / "graph_data.json",
+                VIS_DIR_V5 / "graph_data.json",
+            ]
+            gj = next((c for c in candidates if c.exists()), None)
             if not gj:
-                self.send_error(404, "graph_data.json not found in V9 or V5")
+                self.send_error(404, "graph data not found in V15/V9/V5")
                 return
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json")
-            sz = gj.stat().st_size
-            self.send_header("Content-Length", str(sz))
-            self.end_headers()
-            with open(str(gj), "rb") as f:
-                while True:
-                    chunk = f.read(65536)
-                    if not chunk:
-                        break
-                    self.wfile.write(chunk)
+            # Gzip compress: 4.3 MB → ~400 KB
+            accept = self.headers.get("Accept-Encoding", "")
+            if "gzip" in accept:
+                self._serve_gzipped(gj, "application/json")
+            else:
+                # Fallback: uncompressed chunked
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json")
+                sz = gj.stat().st_size
+                self.send_header("Content-Length", str(sz))
+                self.send_header("Cache-Control", "public, max-age=3600")
+                self.end_headers()
+                with open(str(gj), "rb") as f:
+                    while True:
+                        chunk = f.read(65536)
+                        if not chunk:
+                            break
+                        self.wfile.write(chunk)
             return
+
+        # For HTML/JS/CSS: add caching headers
+        ext = os.path.splitext(clean_path)[1].lower()
+        if ext in (".html", ".js", ".css") and "gzip" in self.headers.get("Accept-Encoding", ""):
+            fpath = VIS_DIR / clean_path.lstrip("/")
+            if fpath.exists():
+                ct = self.guess_type(clean_path)
+                self._serve_gzipped(fpath, ct)
+                return
+
         super().do_GET()
 
 
@@ -1995,7 +2217,7 @@ def _print_banner(port, stats):
 # ---------------------------------------------------------------------------
 def main():
     parser = argparse.ArgumentParser(
-        description="THEMANBEARPIG v10.0 -- Unified Legal Brain Desktop Application"
+        description="THEMANBEARPIG v15.0 -- Self-Organizing Intelligence Graph"
     )
     parser.add_argument("--debug", action="store_true", help="Enable developer tools")
     parser.add_argument("--port", type=int, default=0, help="HTTP server port (0=auto)")
@@ -2021,7 +2243,7 @@ def main():
 
     index_html = VIS_DIR / "index.html"
     if not index_html.exists():
-        print(f"ERROR: {index_html} not found. Build the V9 visualization first.")
+        print(f"ERROR: {index_html} not found. Build the V15 visualization first.")
         sys.exit(1)
 
     if args.export and EXPORT_SCRIPT.exists():
