@@ -28,13 +28,18 @@ from datetime import date, datetime
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Paths
+# Paths — PyInstaller-aware (sys._MEIPASS for bundled exe, normal for dev)
 # ---------------------------------------------------------------------------
-REPO_ROOT = Path(__file__).resolve().parent.parent
+if getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
+    _BUNDLE = Path(sys._MEIPASS)
+    REPO_ROOT = Path(sys.executable).resolve().parent
+else:
+    _BUNDLE = Path(__file__).resolve().parent.parent
+    REPO_ROOT = _BUNDLE
 BRAIN_DB = REPO_ROOT / "mbp_brain.db"
 LIT_DB = REPO_ROOT / "litigation_context.db"
-VIS_DIR = REPO_ROOT / "08_MEDIA" / "MANBEARPIG_V9"
-VIS_DIR_V5 = REPO_ROOT / "08_MEDIA" / "MANBEARPIG_V5"
+VIS_DIR = _BUNDLE / "08_MEDIA" / "MANBEARPIG_V9"
+VIS_DIR_V5 = _BUNDLE / "08_MEDIA" / "MANBEARPIG_V5"
 GRAPH_JSON = VIS_DIR_V5 / "graph_data.json"
 EXPORT_SCRIPT = REPO_ROOT / "scripts" / "export_brain_d3.py"
 EVOLVE_SCRIPT = REPO_ROOT / "scripts" / "brain_evolution.py"
@@ -46,7 +51,7 @@ DOSSIER_DIR = REPO_ROOT / "04_ANALYSIS" / "ADVERSARY_TRACKS"
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
-VERSION = "9.0.0"
+VERSION = "10.0.0"
 SEPARATION_DATE = date(2025, 7, 29)
 APP_BG = "#0a0a0f"
 APP_WIDTH, APP_HEIGHT = 1920, 1080
@@ -130,6 +135,16 @@ MAX_CONTENT_BYTES = 500_000
 def _sanitize_fts(query: str) -> str:
     """Strip dangerous FTS5 metacharacters."""
     return _FTS_CLEAN.sub(" ", query).strip()
+
+
+def _safe_float(val, default=0.0):
+    """Coerce a value to float, returning *default* on any failure."""
+    if val is None:
+        return default
+    try:
+        return float(val)
+    except (ValueError, TypeError):
+        return default
 
 
 def _sep_days() -> int:
@@ -1143,6 +1158,671 @@ class UnifiedAPI:
             return {"error": f"Analytics command '{command}' timed out (30s)"}
         except Exception as exc:
             return {"error": str(exc)}
+
+    # ===================================================================
+    # CHRONOLOGY / FILING / ADVERSARY / DASHBOARD / EXPORT / SEARCH
+    # ===================================================================
+
+    def get_chronology(self, lane=None, limit=200):
+        """Timeline events from litigation_context.db, ordered by date.
+
+        Args:
+            lane: Optional lane filter (e.g. "A", "D").
+            limit: Max rows to return (default 200).
+        Returns:
+            dict with ``events`` list and ``count``.
+        """
+        conn = self._lit()
+        if conn is None:
+            return {"events": [], "count": 0, "error": "Litigation DB not available"}
+        try:
+            if lane:
+                sql = (
+                    "SELECT id, event_date, event_description, actors, lane, "
+                    "category, source_table, source_id, severity, filing_relevance "
+                    "FROM timeline_events WHERE lane = ? "
+                    "ORDER BY event_date ASC LIMIT ?"
+                )
+                rows = conn.execute(sql, (lane, limit)).fetchall()
+            else:
+                sql = (
+                    "SELECT id, event_date, event_description, actors, lane, "
+                    "category, source_table, source_id, severity, filing_relevance "
+                    "FROM timeline_events ORDER BY event_date ASC LIMIT ?"
+                )
+                rows = conn.execute(sql, (limit,)).fetchall()
+
+            events = []
+            for r in rows:
+                d = dict(r)
+                d["severity"] = _safe_float(d.get("severity"))
+                events.append(d)
+
+            return {"events": events, "count": len(events)}
+        except Exception as exc:
+            return {"events": [], "count": 0, "error": str(exc)}
+
+    def get_filing_packet(self, filing_id):
+        """Comprehensive packet overview for a filing from mbp_brain.db.
+
+        Args:
+            filing_id: e.g. ``"FILING_MCR_2003_DISQUALIFICATION"``.
+        Returns:
+            dict with filing details, chains, evidence/violation/authority
+            counts, exhibit candidates, and blocking gaps.
+        """
+        conn = self._brain()
+        if conn is None:
+            return {"error": "Brain DB not available"}
+        if not filing_id:
+            return {"error": "filing_id is required"}
+        try:
+            # Filing node
+            node = conn.execute(
+                "SELECT * FROM nodes WHERE id = ?", (filing_id,)
+            ).fetchone()
+            if not node:
+                return {"error": f"Filing node '{filing_id}' not found"}
+            filing_info = dict(node)
+            filing_info["readiness"] = _safe_float(filing_info.get("readiness"))
+            filing_info["severity"] = _safe_float(filing_info.get("severity"))
+            filing_info["confidence"] = _safe_float(filing_info.get("confidence"))
+
+            # Chains reaching this filing, sorted by strength
+            chain_rows = conn.execute(
+                "SELECT id, chain_path, chain_type, total_weight, length, "
+                "lane, filing_id, evidence_ids, strength_score "
+                "FROM chains WHERE filing_id = ? "
+                "ORDER BY strength_score DESC LIMIT 200",
+                (filing_id,),
+            ).fetchall()
+            chains = []
+            for r in chain_rows:
+                d = dict(r)
+                d["strength_score"] = _safe_float(d.get("strength_score"))
+                d["total_weight"] = _safe_float(d.get("total_weight"))
+                chains.append(d)
+
+            # Count supporting nodes by type across all chains
+            evidence_count = 0
+            violation_count = 0
+            authority_count = 0
+            exhibit_candidates = []
+            seen_evidence = set()
+
+            for ch in chains:
+                raw_ids = ch.get("evidence_ids") or "[]"
+                try:
+                    eid_list = _json.loads(raw_ids) if raw_ids.startswith("[") else []
+                except Exception:
+                    eid_list = []
+                for eid in eid_list:
+                    if eid not in seen_evidence:
+                        seen_evidence.add(eid)
+
+            if seen_evidence:
+                placeholders = ",".join("?" for _ in seen_evidence)
+                type_rows = conn.execute(
+                    f"SELECT node_type, COUNT(*) AS cnt FROM nodes "
+                    f"WHERE id IN ({placeholders}) GROUP BY node_type",
+                    list(seen_evidence),
+                ).fetchall()
+                for tr in type_rows:
+                    nt = (tr["node_type"] or "").lower()
+                    cnt = tr["cnt"]
+                    if "evidence" in nt or "quote" in nt:
+                        evidence_count += cnt
+                    elif "violation" in nt or "judicial" in nt:
+                        violation_count += cnt
+                    elif "authority" in nt or "rule" in nt or "statute" in nt:
+                        authority_count += cnt
+
+                # Exhibit candidates = evidence-type nodes in chains
+                ex_rows = conn.execute(
+                    f"SELECT id, label, node_type, lane, confidence FROM nodes "
+                    f"WHERE id IN ({placeholders}) "
+                    f"AND (node_type LIKE '%evidence%' OR node_type LIKE '%quote%' "
+                    f"     OR node_type LIKE '%exhibit%' OR node_type LIKE '%police%')",
+                    list(seen_evidence),
+                ).fetchall()
+                for er in ex_rows:
+                    d = dict(er)
+                    d["confidence"] = _safe_float(d.get("confidence"))
+                    exhibit_candidates.append(d)
+
+            # Gaps blocking this filing
+            gaps = []
+            if _table_exists(conn, "gaps"):
+                gap_rows = conn.execute(
+                    "SELECT id, gap_type, description, priority, acquisition_task "
+                    "FROM gaps WHERE node_id = ? AND resolved = 0 "
+                    "ORDER BY priority DESC",
+                    (filing_id,),
+                ).fetchall()
+                gaps = _rows_to_dicts(gap_rows)
+
+            return {
+                "filing": filing_info,
+                "chains": chains,
+                "chain_count": len(chains),
+                "evidence_count": evidence_count,
+                "violation_count": violation_count,
+                "authority_count": authority_count,
+                "exhibit_candidates": exhibit_candidates,
+                "gaps": gaps,
+                "gap_count": len(gaps),
+            }
+        except Exception as exc:
+            return {"error": str(exc)}
+
+    def get_adversary_overview(self):
+        """All adversary analytics in a single batch query.
+
+        Returns a dict keyed by adversary name, each containing
+        evidence_count, violation_count, impeachment_count, and
+        top_contradiction from litigation_context.db.
+        """
+        conn = self._lit()
+        if conn is None:
+            return {"adversaries": {}, "error": "Litigation DB not available"}
+        try:
+            adversary_names = list(ADVERSARIES.keys())
+            result = {}
+            for name in adversary_names:
+                result[name] = {
+                    "evidence_count": 0,
+                    "violation_count": 0,
+                    "impeachment_count": 0,
+                    "top_contradiction": None,
+                }
+
+            # Evidence counts — batch via CASE WHEN
+            case_clauses = []
+            params = []
+            for name in adversary_names:
+                case_clauses.append(
+                    "SUM(CASE WHEN quote_text LIKE ? OR source_file LIKE ? THEN 1 ELSE 0 END)"
+                )
+                like = f"%{name.split()[0]}%"
+                params.extend([like, like])
+            sql_ev = f"SELECT {', '.join(case_clauses)} FROM evidence_quotes WHERE is_duplicate = 0"
+            row = conn.execute(sql_ev, params).fetchone()
+            if row:
+                for i, name in enumerate(adversary_names):
+                    result[name]["evidence_count"] = row[i] or 0
+
+            # Judicial violation counts per adversary
+            jv_clauses = []
+            jv_params = []
+            for name in adversary_names:
+                jv_clauses.append(
+                    "SUM(CASE WHEN description LIKE ? OR source_quote LIKE ? THEN 1 ELSE 0 END)"
+                )
+                like = f"%{name.split()[0]}%"
+                jv_params.extend([like, like])
+            sql_jv = f"SELECT {', '.join(jv_clauses)} FROM judicial_violations"
+            row = conn.execute(sql_jv, jv_params).fetchone()
+            if row:
+                for i, name in enumerate(adversary_names):
+                    result[name]["violation_count"] = row[i] or 0
+
+            # Impeachment counts per adversary
+            imp_clauses = []
+            imp_params = []
+            for name in adversary_names:
+                imp_clauses.append(
+                    "SUM(CASE WHEN target LIKE ? OR evidence_summary LIKE ? THEN 1 ELSE 0 END)"
+                )
+                like = f"%{name.split()[0]}%"
+                imp_params.extend([like, like])
+            sql_imp = f"SELECT {', '.join(imp_clauses)} FROM impeachment_matrix"
+            row = conn.execute(sql_imp, imp_params).fetchone()
+            if row:
+                for i, name in enumerate(adversary_names):
+                    result[name]["impeachment_count"] = row[i] or 0
+
+            # Top contradiction per adversary
+            for name in adversary_names:
+                like = f"%{name.split()[0]}%"
+                ctr = conn.execute(
+                    "SELECT contradiction_text, severity FROM contradiction_map "
+                    "WHERE contradiction_text LIKE ? "
+                    "ORDER BY severity DESC LIMIT 1",
+                    (like,),
+                ).fetchone()
+                if ctr:
+                    result[name]["top_contradiction"] = {
+                        "text": ctr["contradiction_text"],
+                        "severity": _safe_float(ctr["severity"]),
+                    }
+
+            return {"adversaries": result}
+        except Exception as exc:
+            return {"adversaries": {}, "error": str(exc)}
+
+    def get_dashboard_data(self):
+        """All analytics dashboard data in a single call.
+
+        Consolidates separation counter, table counts, brain stats,
+        top chains, and recent brain operations.
+        """
+        data = {
+            "separation_days": _sep_days(),
+            "separation_date": str(SEPARATION_DATE),
+            "today": str(date.today()),
+            "table_counts": {},
+            "brain_stats": {},
+            "top_chains": [],
+            "recent_operations": [],
+        }
+
+        # Litigation DB table counts
+        lit = self._lit()
+        if lit:
+            try:
+                row = lit.execute(
+                    "SELECT "
+                    "(SELECT COUNT(*) FROM evidence_quotes) AS evidence_quotes, "
+                    "(SELECT COUNT(*) FROM judicial_violations) AS judicial_violations, "
+                    "(SELECT COUNT(*) FROM impeachment_matrix) AS impeachment_matrix, "
+                    "(SELECT COUNT(*) FROM timeline_events) AS timeline_events, "
+                    "(SELECT COUNT(*) FROM contradiction_map) AS contradiction_map"
+                ).fetchone()
+                data["table_counts"] = dict(row)
+            except Exception as exc:
+                data["table_counts"]["error"] = str(exc)
+
+        # Brain DB stats
+        brain = self._brain()
+        if brain:
+            try:
+                row = brain.execute(
+                    "SELECT "
+                    "(SELECT COUNT(*) FROM nodes) AS nodes, "
+                    "(SELECT COUNT(*) FROM edges) AS edges, "
+                    "(SELECT COUNT(*) FROM chains) AS chains, "
+                    "(SELECT COUNT(*) FROM gaps) AS gaps_total, "
+                    "(SELECT COUNT(*) FROM gaps WHERE resolved = 0) AS gaps_open, "
+                    "(SELECT COUNT(*) FROM gaps WHERE resolved = 1) AS gaps_resolved"
+                ).fetchone()
+                data["brain_stats"] = dict(row)
+            except Exception as exc:
+                data["brain_stats"]["error"] = str(exc)
+
+            # Top 5 strongest chains
+            try:
+                top = brain.execute(
+                    "SELECT id, chain_path, chain_type, strength_score, "
+                    "lane, filing_id, length "
+                    "FROM chains ORDER BY strength_score DESC LIMIT 5"
+                ).fetchall()
+                chains = []
+                for r in top:
+                    d = dict(r)
+                    d["strength_score"] = _safe_float(d.get("strength_score"))
+                    chains.append(d)
+                data["top_chains"] = chains
+            except Exception:
+                pass
+
+            # Recent brain operations (brain_log may be empty or absent)
+            if _table_exists(brain, "brain_log"):
+                try:
+                    ops = brain.execute(
+                        "SELECT * FROM brain_log ORDER BY rowid DESC LIMIT 10"
+                    ).fetchall()
+                    data["recent_operations"] = _rows_to_dicts(ops)
+                except Exception:
+                    pass
+
+        return data
+
+    def export_subgraph(self, node_ids):
+        """Export a subgraph as D3.js-compatible JSON.
+
+        Args:
+            node_ids: List of node IDs to include.
+        Returns:
+            dict with ``nodes`` and ``links`` arrays matching D3 format.
+        """
+        conn = self._brain()
+        if conn is None:
+            return {"error": "Brain DB not available"}
+        if not node_ids or not isinstance(node_ids, list):
+            return {"error": "node_ids must be a non-empty list"}
+        try:
+            placeholders = ",".join("?" for _ in node_ids)
+
+            # Fetch nodes
+            node_rows = conn.execute(
+                f"SELECT id, node_type, layer, label, description, "
+                f"date_start, date_end, severity, confidence, readiness, "
+                f"lane, metadata "
+                f"FROM nodes WHERE id IN ({placeholders})",
+                node_ids,
+            ).fetchall()
+
+            nodes = []
+            id_set = set()
+            for r in node_rows:
+                d = dict(r)
+                d["severity"] = _safe_float(d.get("severity"))
+                d["confidence"] = _safe_float(d.get("confidence"))
+                d["readiness"] = _safe_float(d.get("readiness"))
+                # Parse metadata JSON if present
+                raw_meta = d.get("metadata")
+                if raw_meta:
+                    try:
+                        d["metadata"] = _json.loads(raw_meta)
+                    except Exception:
+                        pass
+                nodes.append(d)
+                id_set.add(d["id"])
+
+            if not nodes:
+                return {"nodes": [], "links": [], "warning": "No matching nodes found"}
+
+            # Fetch edges between these nodes (both directions must be in set)
+            edge_rows = conn.execute(
+                f"SELECT id, source_id, target_id, edge_type, weight, evidence "
+                f"FROM edges "
+                f"WHERE source_id IN ({placeholders}) "
+                f"AND target_id IN ({placeholders})",
+                node_ids + node_ids,
+            ).fetchall()
+
+            links = []
+            for r in edge_rows:
+                d = dict(r)
+                d["source"] = d.pop("source_id")
+                d["target"] = d.pop("target_id")
+                d["weight"] = _safe_float(d.get("weight"), 1.0)
+                links.append(d)
+
+            return {
+                "nodes": nodes,
+                "links": links,
+                "node_count": len(nodes),
+                "link_count": len(links),
+            }
+        except Exception as exc:
+            return {"error": str(exc)}
+
+    def search_everything(self, query, limit=50):
+        """Unified search across both databases.
+
+        Searches evidence_fts in litigation_context.db and nodes in
+        mbp_brain.db, merges + deduplicates results, and sorts by
+        relevance.
+
+        Args:
+            query: Search text.
+            limit: Max results per source (total may be up to 2×limit
+                   before dedup).
+        Returns:
+            dict with ``results`` list and ``count``.
+        """
+        if not query or not query.strip():
+            return {"results": [], "count": 0, "method": "empty"}
+
+        safe_q = _sanitize_fts(query)
+        if not safe_q:
+            return {"results": [], "count": 0, "method": "sanitized_empty"}
+
+        all_results = []
+        seen_ids = set()
+
+        # --- litigation_context.db: evidence_fts ---
+        lit = self._lit()
+        if lit:
+            # FTS5 path
+            fts_hit = False
+            if _table_exists(lit, "evidence_fts"):
+                try:
+                    rows = lit.execute(
+                        "SELECT e.id, e.quote_text, e.source_file, e.category, "
+                        "e.lane, e.relevance_score "
+                        "FROM evidence_fts f "
+                        "JOIN evidence_quotes e ON f.rowid = e.rowid "
+                        "WHERE evidence_fts MATCH ? LIMIT ?",
+                        (safe_q, limit),
+                    ).fetchall()
+                    for r in rows:
+                        d = dict(r)
+                        uid = f"lit_{d['id']}"
+                        if uid not in seen_ids:
+                            seen_ids.add(uid)
+                            all_results.append({
+                                "source": "litigation",
+                                "id": d["id"],
+                                "text": d.get("quote_text", ""),
+                                "type": d.get("category", "evidence"),
+                                "lane": d.get("lane", ""),
+                                "score": _safe_float(d.get("relevance_score"), 0.5),
+                                "source_file": d.get("source_file", ""),
+                            })
+                    fts_hit = len(rows) > 0
+                except Exception:
+                    pass
+
+            # LIKE fallback if FTS5 missed
+            if not fts_hit:
+                like_pat = f"%{safe_q}%"
+                try:
+                    rows = lit.execute(
+                        "SELECT id, quote_text, source_file, category, lane, "
+                        "relevance_score FROM evidence_quotes "
+                        "WHERE quote_text LIKE ? OR source_file LIKE ? "
+                        "ORDER BY relevance_score DESC LIMIT ?",
+                        (like_pat, like_pat, limit),
+                    ).fetchall()
+                    for r in rows:
+                        d = dict(r)
+                        uid = f"lit_{d['id']}"
+                        if uid not in seen_ids:
+                            seen_ids.add(uid)
+                            all_results.append({
+                                "source": "litigation",
+                                "id": d["id"],
+                                "text": d.get("quote_text", ""),
+                                "type": d.get("category", "evidence"),
+                                "lane": d.get("lane", ""),
+                                "score": _safe_float(d.get("relevance_score"), 0.3),
+                                "source_file": d.get("source_file", ""),
+                            })
+                except Exception:
+                    pass
+
+        # --- mbp_brain.db: nodes ---
+        brain = self._brain()
+        if brain:
+            # FTS5 path
+            brain_fts_hit = False
+            if _table_exists(brain, "nodes_fts"):
+                try:
+                    rows = brain.execute(
+                        "SELECT n.id, n.label, n.node_type, n.layer, n.lane, "
+                        "n.confidence "
+                        "FROM nodes_fts f "
+                        "JOIN nodes n ON f.rowid = n.rowid "
+                        "WHERE nodes_fts MATCH ? LIMIT ?",
+                        (safe_q, limit),
+                    ).fetchall()
+                    for r in rows:
+                        d = dict(r)
+                        uid = f"brain_{d['id']}"
+                        if uid not in seen_ids:
+                            seen_ids.add(uid)
+                            all_results.append({
+                                "source": "brain",
+                                "id": d["id"],
+                                "text": d.get("label", ""),
+                                "type": d.get("node_type", ""),
+                                "lane": d.get("lane", ""),
+                                "score": _safe_float(d.get("confidence"), 0.5),
+                                "layer": d.get("layer", ""),
+                            })
+                    brain_fts_hit = len(rows) > 0
+                except Exception:
+                    pass
+
+            # LIKE fallback
+            if not brain_fts_hit:
+                like_pat = f"%{safe_q}%"
+                try:
+                    rows = brain.execute(
+                        "SELECT id, label, node_type, layer, lane, confidence "
+                        "FROM nodes WHERE label LIKE ? OR description LIKE ? "
+                        "ORDER BY confidence DESC LIMIT ?",
+                        (like_pat, like_pat, limit),
+                    ).fetchall()
+                    for r in rows:
+                        d = dict(r)
+                        uid = f"brain_{d['id']}"
+                        if uid not in seen_ids:
+                            seen_ids.add(uid)
+                            all_results.append({
+                                "source": "brain",
+                                "id": d["id"],
+                                "text": d.get("label", ""),
+                                "type": d.get("node_type", ""),
+                                "lane": d.get("lane", ""),
+                                "score": _safe_float(d.get("confidence"), 0.3),
+                                "layer": d.get("layer", ""),
+                            })
+                except Exception:
+                    pass
+
+        # Sort by score descending, then trim
+        all_results.sort(key=lambda x: x.get("score", 0), reverse=True)
+        all_results = all_results[: limit * 2]
+
+        return {
+            "results": all_results,
+            "count": len(all_results),
+        }
+
+    # ===================================================================
+    # T1: BRAIN REBUILD (build_mbp_brain.py)
+    # ===================================================================
+
+    def rebuild_brain(self):
+        """Trigger a full brain rebuild (T1 — build_mbp_brain.py).
+
+        Runs asynchronously in a background thread.  Returns immediately
+        with status ``started``.  Poll ``get_health()`` to see when
+        new node/edge counts appear.
+        """
+        script = REPO_ROOT / "scripts" / "build_mbp_brain.py"
+        if not script.exists():
+            return {"status": "error", "message": f"Script not found: {script}"}
+
+        def _run():
+            try:
+                subprocess.run(
+                    [sys.executable, "-I", str(script)],
+                    cwd=str(REPO_ROOT),
+                    timeout=600,
+                    capture_output=True,
+                )
+            except Exception:
+                pass
+
+        t = threading.Thread(target=_run, daemon=True, name="brain-rebuild")
+        t.start()
+        return {"status": "started", "script": str(script)}
+
+    # ===================================================================
+    # T2: CHAIN RECOMPUTE (compute_chains.py)
+    # ===================================================================
+
+    def recompute_chains(self):
+        """Trigger chain recomputation (T2 — compute_chains.py)."""
+        script = REPO_ROOT / "scripts" / "compute_chains.py"
+        if not script.exists():
+            return {"status": "error", "message": f"Script not found: {script}"}
+
+        def _run():
+            try:
+                subprocess.run(
+                    [sys.executable, "-I", str(script)],
+                    cwd=str(REPO_ROOT),
+                    timeout=600,
+                    capture_output=True,
+                )
+            except Exception:
+                pass
+
+        t = threading.Thread(target=_run, daemon=True, name="chain-recompute")
+        t.start()
+        return {"status": "started", "script": str(script)}
+
+    # ===================================================================
+    # T3: FILE WATCHER (brain_watcher.py)
+    # ===================================================================
+
+    def start_watcher(self):
+        """Start the MEEK file watcher daemon (T3 — brain_watcher.py).
+
+        Launches brain_watcher.py as a background subprocess with
+        auto-routing enabled.  Returns immediately.
+        """
+        script = REPO_ROOT / "scripts" / "brain_watcher.py"
+        if not script.exists():
+            return {"status": "error", "message": f"Script not found: {script}"}
+
+        def _run():
+            try:
+                subprocess.Popen(
+                    [sys.executable, "-I", str(script)],
+                    cwd=str(REPO_ROOT),
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                )
+            except Exception:
+                pass
+
+        t = threading.Thread(target=_run, daemon=True, name="watcher-start")
+        t.start()
+        return {"status": "started", "script": str(script)}
+
+    # ===================================================================
+    # CLOSED LOOP ORCHESTRATOR
+    # ===================================================================
+
+    def run_full_cycle(self):
+        """Execute the complete closed-loop pipeline:
+
+        Evidence -> Violation -> Authority -> Remedy -> Filing -> back to Evidence
+
+        Runs T1 (brain build) -> T2 (chains) -> T5 (evolution) -> T6 (export)
+        sequentially in a background thread.  Returns immediately.
+        """
+        def _cycle():
+            scripts = [
+                ("T1-Brain", REPO_ROOT / "scripts" / "build_mbp_brain.py"),
+                ("T2-Chains", REPO_ROOT / "scripts" / "compute_chains.py"),
+                ("T5-Evolution", REPO_ROOT / "scripts" / "brain_evolution.py"),
+                ("T6-Export", REPO_ROOT / "scripts" / "export_brain_d3.py"),
+            ]
+            for label, script in scripts:
+                if script.exists():
+                    try:
+                        subprocess.run(
+                            [sys.executable, "-I", str(script)],
+                            cwd=str(REPO_ROOT),
+                            timeout=600,
+                            capture_output=True,
+                        )
+                    except Exception:
+                        pass
+
+        t = threading.Thread(target=_cycle, daemon=True, name="full-cycle")
+        t.start()
+        return {
+            "status": "started",
+            "pipeline": "T1-Brain -> T2-Chains -> T5-Evolution -> T6-Export",
+        }
 
     # ===================================================================
     # HEALTH CHECK

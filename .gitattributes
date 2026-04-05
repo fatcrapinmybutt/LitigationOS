@@ -92,6 +92,8 @@
 # MBP workspace files: small enough for regular git, avoids LFS sync issues
 12_WORKSPACE/THEMANBEARPIG_v7/*.html !filter !diff !merge text
 12_WORKSPACE/THEMANBEARPIG_v7/*.json !filter !diff !merge text
+08_MEDIA/MANBEARPIG_V9/*.html !filter !diff !merge text
+08_MEDIA/MANBEARPIG_V9/*.json !filter !diff !merge text
 
 # --- Images (evidence photos) ---
 *.png filter=lfs diff=lfs merge=lfs -text

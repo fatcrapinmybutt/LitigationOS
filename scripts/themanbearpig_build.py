@@ -20,9 +20,11 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 ENTRY_POINT = REPO_ROOT / "scripts" / "themanbearpig.py"
 VIS_DIR_V9 = REPO_ROOT / "08_MEDIA" / "MANBEARPIG_V9"
 VIS_DIR_V5 = REPO_ROOT / "08_MEDIA" / "MANBEARPIG_V5"
-GRAPH_JSON = VIS_DIR_V5 / "graph_data.json"
+GRAPH_JSON_V9 = VIS_DIR_V9 / "graph_data.json"
+GRAPH_JSON_V5 = VIS_DIR_V5 / "graph_data.json"
 BRAIN_DB = REPO_ROOT / "mbp_brain.db"
-ICON_PATH = REPO_ROOT / "08_MEDIA" / "manbearpig.ico"
+ICON_PATH = REPO_ROOT / "08_MEDIA" / "chatgpt_image_apr_30__2025__12_12_28_am_5j0_icon_1.ico"
+ICON_FALLBACK = REPO_ROOT / "08_MEDIA" / "manbearpig_encyclopedia.ico"
 DIST_DIR = REPO_ROOT / "dist"
 BUILD_DIR = REPO_ROOT / "build"
 
@@ -75,8 +77,11 @@ def collect_data_files():
             if f.is_file():
                 datas.append((str(f), "08_MEDIA/MANBEARPIG_V9"))
 
-    if GRAPH_JSON.exists():
-        datas.append((str(GRAPH_JSON), "08_MEDIA/MANBEARPIG_V5"))
+    # V9 graph_data.json is the primary, V5 as fallback
+    if GRAPH_JSON_V9.exists():
+        pass  # already included from V9 dir iteration
+    elif GRAPH_JSON_V5.exists():
+        datas.append((str(GRAPH_JSON_V5), "08_MEDIA/MANBEARPIG_V9"))
 
     return datas
 
@@ -89,7 +94,8 @@ def generate_spec(name, onefile, windowed):
     hiddens_str = ", ".join(f"'{h}'" for h in HIDDEN_IMPORTS)
     excludes_str = ", ".join(f"'{e}'" for e in EXCLUDES)
 
-    icon_line = f"icon={repr(str(ICON_PATH))}," if ICON_PATH.exists() else ""
+    icon_actual = ICON_PATH if ICON_PATH.exists() else (ICON_FALLBACK if ICON_FALLBACK.exists() else None)
+    icon_line = f"icon={repr(str(icon_actual))}," if icon_actual else ""
     console_val = "False" if windowed else "True"
 
     if onefile:
@@ -209,8 +215,8 @@ def preflight_checks():
     except ImportError:
         errors.append("pywebview not installed. Run: pip install pywebview")
 
-    if not GRAPH_JSON.exists():
-        print(f"WARNING: graph_data.json not found at {GRAPH_JSON}")
+    if not GRAPH_JSON_V9.exists() and not GRAPH_JSON_V5.exists():
+        print(f"WARNING: graph_data.json not found in V9 or V5 dirs")
         print("  The brain graph tab will not work without it.")
         print("  Run: python -I scripts/export_brain_d3.py")
 
