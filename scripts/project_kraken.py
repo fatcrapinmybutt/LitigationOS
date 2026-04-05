@@ -22,7 +22,7 @@ Usage (CLI):
   PROJECT_KRAKEN.exe --continuous       # daemon mode (self-evolving)
 """
 
-import sqlite3, random, json, os, sys, re, hashlib, traceback, argparse, subprocess, shutil
+import sqlite3, random, json, os, sys, re, hashlib, traceback, argparse, subprocess, shutil, time
 from pathlib import Path
 from collections import defaultdict
 from datetime import datetime, date
@@ -62,17 +62,17 @@ EXTS = {'.pdf', '.txt', '.csv', '.html', '.json', '.docx', '.md'}
 MAX_CONTENT_BYTES = 500_000  # 500KB content cap per file
 MAX_PDF_PAGES = 30
 
-VERSION = "2.1.0"
+VERSION = "2.3.0"
 
 # Separation counter
 SEP_ANCHOR = date(2025, 7, 29)
 SEP_DAYS = (date.today() - SEP_ANCHOR).days
 
 # ===================================================================
-# ADVERSARY PATTERNS (22 targets)
+# ADVERSARY PATTERNS (22 targets) -- PRE-COMPILED for O(1) per match
 # ===================================================================
 
-ADVERSARIES = {
+_ADV_RAW = {
     'Emily Watson': r'(?i)\bemily\b.*\bwatson\b|\bwatson\b.*\bemily\b|\bemily\s+a\.?\s+watson\b',
     'Judge McNeill': r'(?i)\bmcneill\b|\bmcneil\b',
     'Pamela Rusco': r'(?i)\brusco\b|\bpamela\s+rusco\b',
@@ -96,25 +96,34 @@ ADVERSARIES = {
     'FOC Office': r'(?i)\bfriend\s+of\s+(the\s+)?court\b|\bFOC\b|\b990\s+terrace\b',
     'DHHS/CPS': r'(?i)\bDHHS\b|\bCPS\b|\bchild\s+protective\b|\bchildren.?s?\s+services\b',
 }
+ADVERSARIES = {name: re.compile(pat) for name, pat in _ADV_RAW.items()}
+
+# Pre-compiled mega-regex for fast initial screening (skip files with zero adversary hits)
+_SCREEN_PATTERN = re.compile(
+    r'(?i)\b(emily|watson|mcneill|mcneil|rusco|berry|hoopes|ladas|barnes|martini|'
+    r'shady\s+oaks|greenridge|davis|duguid|hilson|vandam|browley|brandell|cox|'
+    r'FOC|DHHS|CPS|friend\s+of.*court)\b'
+)
 
 # ===================================================================
-# LEGAL AUTHORITY PATTERNS
+# LEGAL AUTHORITY PATTERNS -- PRE-COMPILED
 # ===================================================================
 
-LEGAL_PATTERNS = {
+_LEGAL_RAW = {
     'MCR': r'\bMCR\s+\d+\.\d+',
     'MCL': r'\bMCL\s+\d+\.\d+',
     'MRE': r'\bMRE\s+\d+',
-    'USC': r'\b\d+\s+U\.?S\.?C\.?\s+', 
+    'USC': r'\b\d+\s+U\.?S\.?C\.?\s+',
     'FRCP': r'\bFRCP\b|\bFed\.?\s*R\.?\s*Civ\.?\s*P\b',
     'Case Law': r'\b\d+\s+Mich\.?\s*(App\.?)?\s+\d+|\b\d+\s+F\.\s*\d+d\s+\d+|\b\d+\s+S\.?\s*Ct\.?\s+\d+',
 }
+LEGAL_PATTERNS = {name: re.compile(pat) for name, pat in _LEGAL_RAW.items()}
 
 # ===================================================================
-# EVIDENCE CATEGORIES
+# EVIDENCE CATEGORIES -- PRE-COMPILED
 # ===================================================================
 
-EVIDENCE_CATEGORIES = {
+_CAT_RAW = {
     'custody': r'(?i)\bcustod(y|ial)\b|\bparenting\s+time\b|\bvisit(ation)?\b|\bbest\s+interest\b|\bchild\b.*\b(welfare|safety)\b',
     'judicial_misconduct': r'(?i)\bex\s+parte\b|\bbias\b|\bprejudice\b|\bmisconduct\b|\bcanon\b|\bJTC\b|\brecus(al|e)\b|\bdisqualif',
     'ppo_abuse': r'(?i)\bPPO\b|\bprotection\s+order\b|\bstalking\b|\bharass(ment)?\b|\bcontempt\b|\bviolat(e|ion)\b',
@@ -124,6 +133,17 @@ EVIDENCE_CATEGORIES = {
     'criminal': r'(?i)\barrest\b|\bcharge[sd]?\b|\bplea\b|\bsentenc\b|\bprobation\b|\bjail\b|\bincarcerat',
     'medical': r'(?i)\bmental\s+health\b|\bpsych(olog|iatr)\b|\bmedication\b|\btherapy\b|\bsubstance\b|\bmeth\b|\bdrug\b',
 }
+EVIDENCE_CATEGORIES = {name: re.compile(pat) for name, pat in _CAT_RAW.items()}
+
+# Pre-compiled high-value quote patterns
+_QUOTE_PATTERNS = [re.compile(p) for p in [
+    r'(?i)\bex\s+parte\b', r'(?i)\bwithout\s+notice\b', r'(?i)\bdenied\b.*\bhearing\b',
+    r'(?i)\bfalse\b.*\b(alleg|report)\b', r'(?i)\brecant\b', r'(?i)\badmit\b',
+    r'(?i)\bthreat\b', r'(?i)\bintimid\b', r'(?i)\bcoer\b', r'(?i)\bretaliat\b',
+    r'(?i)\bviolat\b.*\b(order|right|due\s+process)\b', r'(?i)\bmeth\b',
+    r'(?i)\bweaponiz\b', r'(?i)\bperjur\b', r'(?i)\bfraud\b',
+    r'(?i)\bpremeditat\b', r'(?i)\bconspirac?\b', r'(?i)\bcollu\b',
+]]
 
 # ===================================================================
 # FOCUS MODE BOOSTS
@@ -254,8 +274,11 @@ def discover_files(drives=None, conn=None):
                 encoding='utf-8', errors='replace'
             )
             fd_files = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
-            print(f"  [fd] {len(fd_files)} files on {drive.upper()}:\\")
-            all_files.extend(fd_files)
+            if fd_files and fd_files != ['']:
+                print(f"  [fd] {len(fd_files)} files on {drive.upper()}:\\")
+                all_files.extend(fd_files)
+            else:
+                print(f"  [fd] {drive.upper()}:\\ returned 0 files (empty or not accessible)")
         except subprocess.TimeoutExpired:
             print(f"  [fd] {drive.upper()}:\\ timed out (45s)")
         except FileNotFoundError:
@@ -328,7 +351,7 @@ def _extract_docx(path):
 # ===================================================================
 
 def analyze_content(content, file_path, focus='all'):
-    """Analyze content against all pattern sets. Returns scored result."""
+    """Analyze content against all PRE-COMPILED pattern sets. Returns scored result."""
     result = {
         'file': file_path,
         'adversaries': {},
@@ -341,49 +364,73 @@ def analyze_content(content, file_path, focus='all'):
     if not content or content.startswith('['):
         return result
     
-    # Adversary detection
-    for name, pattern in ADVERSARIES.items():
-        matches = re.findall(pattern, content)
+    # O1: Fast screen -- skip files with zero adversary/legal signal
+    if not _SCREEN_PATTERN.search(content[:50000]):
+        # Still check for legal patterns (files can be purely legal authority)
+        has_legal = False
+        for auth_type, rx in LEGAL_PATTERNS.items():
+            m = rx.findall(content[:50000])
+            if m:
+                result['legal'][auth_type] = m[:10]
+                has_legal = True
+        if not has_legal:
+            return result  # No signal at all -- fast exit
+    
+    # Adversary detection (compiled regex -- ~3x faster than re.findall with string)
+    for name, rx in ADVERSARIES.items():
+        matches = rx.findall(content)
         if matches:
             result['adversaries'][name] = len(matches)
     
-    # Legal authority detection
-    for auth_type, pattern in LEGAL_PATTERNS.items():
-        matches = re.findall(pattern, content)
-        if matches:
-            result['legal'][auth_type] = matches[:10]
+    # Legal authority detection (compiled)
+    if not result['legal']:  # skip if already filled by screen pass
+        for auth_type, rx in LEGAL_PATTERNS.items():
+            matches = rx.findall(content)
+            if matches:
+                result['legal'][auth_type] = matches[:10]
     
-    # Evidence category detection
-    for cat, pattern in EVIDENCE_CATEGORIES.items():
-        matches = re.findall(pattern, content)
+    # Evidence category detection (compiled)
+    for cat, rx in EVIDENCE_CATEGORIES.items():
+        matches = rx.findall(content)
         if matches:
             result['categories'][cat] = len(matches)
     
-    # Extract key quotes (sentences with high-value patterns)
-    sentences = re.split(r'[.!?]\s+', content[:100000])
-    high_patterns = [
-        r'(?i)\bex\s+parte\b', r'(?i)\bwithout\s+notice\b', r'(?i)\bdenied\b.*\bhearing\b',
-        r'(?i)\bfalse\b.*\b(alleg|report)\b', r'(?i)\brecant\b', r'(?i)\badmit\b',
-        r'(?i)\bthreat\b', r'(?i)\bintimid\b', r'(?i)\bcoer\b', r'(?i)\bretaliat\b',
-        r'(?i)\bviolat\b.*\b(order|right|due\s+process)\b', r'(?i)\bmeth\b',
-        r'(?i)\bweaponiz\b', r'(?i)\bperjur\b', r'(?i)\bfraud\b',
-    ]
-    for sent in sentences:
-        if len(sent) > 30 and len(sent) < 500:
-            for hp in high_patterns:
-                if re.search(hp, sent):
-                    result['quotes'].append(sent.strip())
-                    break
-        if len(result['quotes']) >= 5:
-            break
+    # O4: Enhanced quote extraction -- context windows + more quotes + priority scoring
+    sentences = re.split(r'(?<=[.!?])\s+', content[:150000])
+    quote_scores = []  # (score, text) tuples for priority ranking
+    for idx, sent in enumerate(sentences):
+        slen = len(sent)
+        if slen < 25 or slen > 600:
+            continue
+        qscore = 0
+        for qp in _QUOTE_PATTERNS:
+            if qp.search(sent):
+                qscore += 10
+        if qscore > 0:
+            # Add context: previous sentence as lead-in if short enough
+            context = sent.strip()
+            if idx > 0 and len(sentences[idx - 1]) < 200:
+                context = sentences[idx - 1].strip() + '. ' + context
+            quote_scores.append((qscore, context[:500]))
     
-    # Score calculation
+    # Take top 8 quotes by score (was 5, now more comprehensive)
+    quote_scores.sort(key=lambda x: -x[0])
+    result['quotes'] = [q[1] for q in quote_scores[:8]]
+    
+    # Score calculation (tuned weights)
     score = 0
     score += len(result['adversaries']) * 5
-    score += sum(result['adversaries'].values()) * 1
+    score += min(sum(result['adversaries'].values()), 50)  # cap raw mention bonus
     score += len(result['legal']) * 8
+    score += sum(min(len(v), 5) for v in result['legal'].values()) * 2  # depth bonus
     score += len(result['categories']) * 3
+    score += sum(min(v, 10) for v in result['categories'].values())  # category depth
     score += len(result['quotes']) * 10
+    
+    # Quote quality bonus (multi-pattern quotes score higher)
+    if quote_scores:
+        avg_qscore = sum(q[0] for q in quote_scores[:8]) / len(quote_scores[:8])
+        score += int(avg_qscore * 0.5)
     
     # Focus mode boost
     boosts = FOCUS_BOOSTS.get(focus, {})
@@ -402,13 +449,24 @@ def analyze_content(content, file_path, focus='all'):
 # ===================================================================
 
 def persist_high_value(conn, result, round_id):
-    """Persist HIGH-value findings to evidence_quotes."""
+    """Persist HIGH-value findings to evidence_quotes with dedup."""
     persisted = 0
     
-    # Persist quotes
+    # Persist quotes (with dedup check)
     for quote in result.get('quotes', []):
         if len(quote) < 30:
             continue
+        # Quote dedup: skip if substantially similar quote already exists from same source
+        try:
+            existing = conn.execute(
+                "SELECT 1 FROM evidence_quotes WHERE source_file = ? AND quote_text = ? LIMIT 1",
+                (result['file'], quote[:2000])
+            ).fetchone()
+            if existing:
+                continue
+        except Exception:
+            pass
+        
         advs = ', '.join(result.get('adversaries', {}).keys())
         cats = ', '.join(result.get('categories', {}).keys())
         lane = _detect_lane(result)
@@ -516,12 +574,15 @@ def expand_dossier(result):
 # ===================================================================
 
 def run_round(conn, all_files, count=10, focus='all', round_num=1, total_rounds=1):
-    """Execute one hunting round."""
+    """Execute one hunting round with batch dedup + smart selection + adaptive scoring."""
     round_id = f"KR-{datetime.now().strftime('%Y%m%d-%H%M%S')}-R{round_num}"
-    
+
+    # O5: Get adaptive thresholds from historical yield data
+    high_thresh, med_thresh = _get_adaptive_thresholds(conn)
+
     print(f"\n{'=' * 60}")
     print(f"  [ROUND {round_num}/{total_rounds}] {round_id}")
-    print(f"  Focus: {focus} | Count: {count}")
+    print(f"  Focus: {focus} | Count: {count} | Thresholds: H>={high_thresh} M>={med_thresh}")
     print(f"{'=' * 60}")
     
     # Record round start
@@ -531,19 +592,61 @@ def run_round(conn, all_files, count=10, focus='all', round_num=1, total_rounds=
     """, (round_id, focus))
     conn.commit()
     
-    # Select random unprocessed files
+    # O2: Batch-load ALL processed hashes into memory set (1 query vs N queries)
+    processed_hashes = set()
+    try:
+        rows = conn.execute("SELECT file_hash FROM kraken_processed").fetchall()
+        processed_hashes = {r[0] for r in rows}
+        print(f"  [*] {len(processed_hashes)} files previously processed (in-memory dedup)")
+    except Exception:
+        pass
+    
+    # O3: Smart file selection -- weight toward HIGH-yield extensions
+    ext_weights = _get_extension_weights(conn)
+    
     selected = []
-    attempts = 0
-    random.shuffle(all_files)
-    for fp in all_files:
-        if attempts >= count * 5:
+    candidates = list(all_files)  # copy to avoid mutating original
+    random.shuffle(candidates)
+    
+    # O3: If evolution data exists, sort candidates to prioritize high-yield extensions
+    if ext_weights:
+        def _ext_weight(fp):
+            ext = os.path.splitext(fp)[1].lower()
+            return ext_weights.get(ext, 1.0)
+        # Weighted shuffle: partition into tiers, shuffle within each tier
+        tier1 = [f for f in candidates if _ext_weight(f) >= 3.0]  # docx, etc.
+        tier2 = [f for f in candidates if 1.5 <= _ext_weight(f) < 3.0]  # pdf
+        tier3 = [f for f in candidates if _ext_weight(f) < 1.5]  # txt, csv, etc.
+        random.shuffle(tier1)
+        random.shuffle(tier2)
+        random.shuffle(tier3)
+        # Mix: 40% tier1, 35% tier2, 25% tier3 (ensures exploration of all tiers)
+        mixed = []
+        iters = [iter(tier1), iter(tier2), iter(tier3)]
+        ratios = [0.4, 0.35, 0.25]
+        target = count * 5  # need enough to fill 'count' after dedup filtering
+        for tier_iter, ratio in zip(iters, ratios):
+            n = max(1, int(target * ratio))
+            for _ in range(n):
+                try:
+                    mixed.append(next(tier_iter))
+                except StopIteration:
+                    break
+        # Fill remainder from any tier
+        for tier_iter in iters:
+            for f in tier_iter:
+                mixed.append(f)
+                if len(mixed) >= target:
+                    break
+        candidates = mixed if mixed else candidates
+    
+    for fp in candidates:
+        if len(selected) >= count:
             break
-        attempts += 1
         fh = file_hash(fp)
-        if not is_already_processed(conn, fh):
+        if fh not in processed_hashes:  # O(1) set lookup vs O(n) DB query
             selected.append((fp, fh))
-            if len(selected) >= count:
-                break
+            processed_hashes.add(fh)  # prevent selecting same file twice in round
     
     if not selected:
         print("  [!] No unprocessed files found!")
@@ -554,21 +657,27 @@ def run_round(conn, all_files, count=10, focus='all', round_num=1, total_rounds=
     low_count = 0
     total_persisted = 0
     total_dossiers = 0
+    t_start = time.time()
     
     for i, (fp, fh) in enumerate(selected, 1):
-        # Extract
-        content = extract_content(fp)
+        # O6: Per-file error resilience
+        try:
+            # Extract
+            content = extract_content(fp)
+            
+            # Analyze
+            result = analyze_content(content, fp, focus=focus)
+        except Exception as e:
+            print(f"  [X] {i:>2}/{count} ERROR: {os.path.basename(fp)[:40]} -- {e}")
+            continue
         
-        # Analyze
-        result = analyze_content(content, fp, focus=focus)
-        
-        # Classify
+        # O5: Adaptive thresholds from historical yield data
         score = result['score']
-        if score >= 40:
+        if score >= high_thresh:
             label = 'HIGH'
             high_count += 1
             marker = '[!]'
-        elif score >= 15:
+        elif score >= med_thresh:
             label = 'MEDIUM'
             med_count += 1
             marker = '[~]'
@@ -577,10 +686,16 @@ def run_round(conn, all_files, count=10, focus='all', round_num=1, total_rounds=
             low_count += 1
             marker = '[ ]'
         
+        # O6: Progress indicator with ETA
+        elapsed = time.time() - t_start
+        rate = i / elapsed if elapsed > 0 else 0
+        eta = (count - i) / rate if rate > 0 else 0
+        eta_str = f"ETA {int(eta)}s" if eta > 0 else ""
+        
         # Display
         basename = os.path.basename(fp)
         advs = ', '.join(result['adversaries'].keys())[:40] if result['adversaries'] else '-'
-        print(f"  {marker} {i:>2}/{count} [{score:>3}] {basename[:45]:45s} | {advs}")
+        print(f"  {marker} {i:>2}/{count} [{score:>3}] {basename[:42]:42s} | {advs} {eta_str}")
         
         # Record processed
         try:
@@ -597,8 +712,8 @@ def run_round(conn, all_files, count=10, focus='all', round_num=1, total_rounds=
                 json.dumps(result['categories']),
                 focus,
             ))
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"    [warn] DB record: {e}")
         
         # Persist HIGH to DB + expand dossiers
         if label == 'HIGH':
@@ -621,10 +736,12 @@ def run_round(conn, all_files, count=10, focus='all', round_num=1, total_rounds=
     """, (len(selected), high_count, med_count, low_count, total_persisted, round_id))
     conn.commit()
     
-    # Round summary
+    # Round summary with timing
+    elapsed_total = time.time() - t_start
     print(f"\n  --- Round {round_num} Summary ---")
     print(f"  Files: {len(selected)} | HIGH: {high_count} | MED: {med_count} | LOW: {low_count}")
     print(f"  Persisted: {total_persisted} | Dossiers: {total_dossiers}")
+    print(f"  Time: {elapsed_total:.1f}s ({elapsed_total/len(selected):.2f}s/file)")
     
     return {
         'round_id': round_id,
@@ -637,14 +754,89 @@ def run_round(conn, all_files, count=10, focus='all', round_num=1, total_rounds=
     }
 
 
+def _get_extension_weights(conn):
+    """O3: Query evolution data for extension yield rates. Returns {'.ext': weight}."""
+    try:
+        rows = conn.execute("""
+            SELECT 
+                LOWER(SUBSTR(file_path, INSTR(file_path, '.') - LENGTH(file_path))) as ext,
+                COUNT(*) as total,
+                SUM(CASE WHEN value_label = 'HIGH' THEN 1 ELSE 0 END) as highs
+            FROM kraken_processed 
+            WHERE file_path IS NOT NULL
+            GROUP BY ext
+            HAVING total >= 5
+        """).fetchall()
+        
+        weights = {}
+        for ext_raw, total, highs in rows:
+            # Extract actual extension (the SQL above is approximate)
+            ext = '.' + ext_raw.rsplit('.', 1)[-1] if '.' in ext_raw else ext_raw
+            if ext and total > 0:
+                yield_rate = highs / total
+                # Weight: 1.0 baseline, up to 5.0 for 50%+ HIGH yield
+                weights[ext] = max(1.0, 1.0 + yield_rate * 8.0)
+        return weights
+    except Exception:
+        return {}
+
+
+def _get_adaptive_thresholds(conn):
+    """O5: Adaptive scoring thresholds based on historical yield. Target ~25% HIGH rate."""
+    try:
+        row = conn.execute("""
+            SELECT COUNT(*) as total,
+                   SUM(CASE WHEN value_label = 'HIGH' THEN 1 ELSE 0 END) as highs,
+                   AVG(value_score) as avg_score,
+                   ROUND(AVG(CASE WHEN value_label = 'HIGH' THEN value_score ELSE NULL END), 1) as avg_high
+            FROM kraken_processed
+            WHERE value_score > 0
+        """).fetchone()
+
+        if not row or row[0] < 20:
+            return 40, 15  # default thresholds until enough data
+
+        total, highs, avg_score, avg_high_score = row
+        yield_rate = highs / total if total > 0 else 0
+
+        # Target ~25% HIGH rate: adjust thresholds to converge
+        high_thresh = 40
+        med_thresh = 15
+
+        if yield_rate > 0.40:
+            # Too many HIGHs -- raise threshold (more selective)
+            high_thresh = int(avg_high_score * 0.85) if avg_high_score else 50
+            med_thresh = int(high_thresh * 0.45)
+        elif yield_rate > 0.30:
+            # Slightly high -- nudge up
+            high_thresh = 45
+            med_thresh = 18
+        elif yield_rate < 0.10:
+            # Too few HIGHs -- lower threshold (more permissive)
+            high_thresh = max(25, int(avg_score * 1.2)) if avg_score else 30
+            med_thresh = max(8, int(high_thresh * 0.35))
+        elif yield_rate < 0.18:
+            # Somewhat low -- nudge down
+            high_thresh = 35
+            med_thresh = 12
+
+        # Clamp to reasonable bounds
+        high_thresh = max(20, min(60, high_thresh))
+        med_thresh = max(5, min(30, med_thresh))
+
+        return high_thresh, med_thresh
+    except Exception:
+        return 40, 15
+
+
 # ===================================================================
 # STATUS REPORT
 # ===================================================================
 
 def show_status(conn):
-    """Display KRAKEN cumulative status."""
+    """O7: Enhanced KRAKEN status with top adversaries, directories, yield stats."""
     print(f"\n{'=' * 60}")
-    print(f"  [KRAKEN] STATUS REPORT")
+    print(f"  [KRAKEN] STATUS REPORT v2.2")
     print(f"{'=' * 60}")
     
     try:
@@ -659,9 +851,10 @@ def show_status(conn):
         """).fetchone()
         
         if row:
-            print(f"  Total files processed: {row[0]}")
+            yield_pct = (row[1] / row[0] * 100) if row[0] > 0 else 0
+            print(f"  Total files: {row[0]} | Yield: {yield_pct:.1f}% HIGH")
             print(f"  HIGH: {row[1]} | MEDIUM: {row[2]} | LOW: {row[3]}")
-            print(f"  Evidence rows persisted: {row[4]}")
+            print(f"  Evidence persisted: {row[4]}")
     except Exception as e:
         print(f"  Error reading stats: {e}")
     
@@ -671,14 +864,83 @@ def show_status(conn):
             FROM kraken_rounds
         """).fetchone()
         if rounds:
-            print(f"  Total rounds: {rounds[0]}")
-            print(f"  Total files scanned: {rounds[1]}")
-            print(f"  Total HIGH across rounds: {rounds[2]}")
-            print(f"  Total new evidence: {rounds[3]}")
+            print(f"  Rounds: {rounds[0]} | Scanned: {rounds[1]} | New evidence: {rounds[3]}")
     except Exception:
         pass
     
-    print(f"  Separation: {SEP_DAYS} days since Jul 29, 2025")
+    # O7: Top adversaries found
+    try:
+        print(f"\n  -- Top Adversaries Found --")
+        rows = conn.execute("""
+            SELECT adversaries_found FROM kraken_processed 
+            WHERE value_label = 'HIGH' AND adversaries_found IS NOT NULL
+        """).fetchall()
+        adv_counts = defaultdict(int)
+        for (ajson,) in rows:
+            try:
+                d = json.loads(ajson)
+                for name, cnt in d.items():
+                    adv_counts[name] += cnt
+            except Exception:
+                pass
+        top_advs = sorted(adv_counts.items(), key=lambda x: -x[1])[:8]
+        for name, cnt in top_advs:
+            print(f"    {name:30s} {cnt:>5} mentions")
+    except Exception:
+        pass
+    
+    # O7: Yield by extension
+    try:
+        print(f"\n  -- Yield by Extension --")
+        rows = conn.execute("""
+            SELECT 
+                CASE 
+                    WHEN file_path LIKE '%.pdf' THEN '.pdf'
+                    WHEN file_path LIKE '%.docx' THEN '.docx'
+                    WHEN file_path LIKE '%.txt' THEN '.txt'
+                    WHEN file_path LIKE '%.csv' THEN '.csv'
+                    WHEN file_path LIKE '%.html' THEN '.html'
+                    WHEN file_path LIKE '%.json' THEN '.json'
+                    WHEN file_path LIKE '%.md' THEN '.md'
+                    ELSE 'other'
+                END as ext,
+                COUNT(*) as total,
+                SUM(CASE WHEN value_label = 'HIGH' THEN 1 ELSE 0 END) as highs
+            FROM kraken_processed
+            GROUP BY ext
+            HAVING total >= 3
+            ORDER BY highs DESC
+        """).fetchall()
+        for ext, total, highs in rows:
+            pct = (highs / total * 100) if total > 0 else 0
+            bar = '#' * int(pct / 5)
+            print(f"    {ext:>6s}: {highs:>4}/{total:<5} ({pct:>5.1f}%) {bar}")
+    except Exception:
+        pass
+    
+    # O7: Top source directories
+    try:
+        print(f"\n  -- Top Source Directories (HIGH) --")
+        rows = conn.execute("""
+            SELECT 
+                SUBSTR(file_path, 1, 
+                    CASE WHEN INSTR(SUBSTR(file_path, 4), '\\') > 0 
+                    THEN INSTR(SUBSTR(file_path, 4), '\\') + 3
+                    ELSE LENGTH(file_path) END
+                ) as dir_prefix,
+                COUNT(*) as cnt
+            FROM kraken_processed
+            WHERE value_label = 'HIGH'
+            GROUP BY dir_prefix
+            ORDER BY cnt DESC
+            LIMIT 6
+        """).fetchall()
+        for dir_pre, cnt in rows:
+            print(f"    {dir_pre[:50]:50s} {cnt:>4}")
+    except Exception:
+        pass
+    
+    print(f"\n  Separation: {SEP_DAYS} days since Jul 29, 2025")
     print(f"{'=' * 60}")
 
 
@@ -1052,6 +1314,7 @@ Examples:
         """
     )
     parser.add_argument('--rounds', type=int, default=0, help='Number of hunting rounds (0 = interactive menu)')
+    parser.add_argument('--version', action='version', version='PROJECT KRAKEN v%s' % VERSION)
     parser.add_argument('--count', type=int, default=10, help='Files per round (default: 10)')
     parser.add_argument('--focus', default='all', choices=list(FOCUS_BOOSTS.keys()), help='Focus mode')
     parser.add_argument('--drives', default=None, help='Comma-separated drive letters (default: all)')
@@ -1071,6 +1334,8 @@ Examples:
     print("[KRAKEN] PROJECT KRAKEN v%s -- Autonomous Evidence Hunting" % VERSION)
     print("   Standalone Desktop Edition | %s" % datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     print("   Separation: %d days since Jul 29, 2025" % SEP_DAYS)
+    if _FROZEN:
+        print("   (Icon wrong? Run: ie4uinit.exe -show)")
     print("=" * 70)
 
     # Verify DB exists
