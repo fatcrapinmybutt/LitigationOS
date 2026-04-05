@@ -1539,5 +1539,367 @@ const session = await joinSession({
                 return "## 📅 Timeline Results\n\n" + formatResult(result);
             },
         },
+
+        // ═══════════════════════════════════════════════════════════════
+        // ABSORBED MCP CAPABILITIES — 24 new tools via NEXUS daemon
+        // ═══════════════════════════════════════════════════════════════
+
+        {
+            name: "list_documents",
+            description: "List all documents in the litigation knowledge base with metadata (file name, size, page count, dates).",
+            parameters: {
+                type: "object",
+                properties: {
+                    limit: { type: "number", description: "Max documents (default 20, max 100)" },
+                    offset: { type: "number", description: "Pagination offset (default 0)" },
+                    name_filter: { type: "string", description: "Filter by file name (partial match)" },
+                },
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "list_documents", limit: args.limit || 20, offset: args.offset || 0, name_filter: args.name_filter || null });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "get_document",
+            description: "Retrieve full extracted text of a specific document by ID. Optionally get specific pages only.",
+            parameters: {
+                type: "object",
+                properties: {
+                    document_id: { type: "number", description: "Document ID from the database" },
+                    page_numbers: { type: "array", description: "Specific page numbers to retrieve. Omit for all pages." },
+                },
+                required: ["document_id"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "get_document", document_id: args.document_id, page_numbers: args.page_numbers || null });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "search_documents",
+            description: "Full-text search across all ingested PDF content using FTS5 with porter stemming. Supports AND/OR/NOT and quoted phrases.",
+            parameters: {
+                type: "object",
+                properties: {
+                    query: { type: "string", description: "FTS5 search query. Example: 'ex parte AND McNeill'" },
+                    limit: { type: "number", description: "Max results (default 20, max 100)" },
+                },
+                required: ["query"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "search_documents", query: args.query, limit: args.limit || 20 });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "lookup_rule",
+            description: "Look up Michigan Court Rules (MCR/MCL) by citation or keyword. Searches 873+ indexed rules with context snippets.",
+            parameters: {
+                type: "object",
+                properties: {
+                    query: { type: "string", description: "Rule citation (e.g. 'MCR 3.706') or keyword (e.g. 'custody')" },
+                    limit: { type: "number", description: "Max results (default 20)" },
+                },
+                required: ["query"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "lookup_rule", query: args.query, limit: args.limit || 20 });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "query_graph",
+            description: "Search the litigation knowledge graph for authorities, case law, forms, and procedures.",
+            parameters: {
+                type: "object",
+                properties: {
+                    query: { type: "string", description: "Search term (e.g. 'PPO', 'MCL 600.2950')" },
+                    node_type: { type: "string", description: "Filter: authority, CASELAW, FORM, PROCEDURE" },
+                    graph_source: { type: "string", description: "Filter: court_forms_graph, authority_forms_graph, master_graph" },
+                    limit: { type: "number", description: "Max results (default 20)" },
+                },
+                required: ["query"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "query_graph", query: args.query, node_type: args.node_type || null, graph_source: args.graph_source || null, limit: args.limit || 20 });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "lookup_authority",
+            description: "Look up specific legal authorities (case law, statutes, court rules) with pin cites, jurisdiction, and confidence scores.",
+            parameters: {
+                type: "object",
+                properties: {
+                    query: { type: "string", description: "Search term (e.g. 'Pierron', 'MCL 722', 'PPO')" },
+                    node_type: { type: "string", description: "Filter: authority, CASELAW, FORM, PROCEDURE" },
+                    limit: { type: "number", description: "Max results (default 20)" },
+                },
+                required: ["query"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "lookup_authority", query: args.query, node_type: args.node_type || null, limit: args.limit || 20 });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "assess_risk",
+            description: "Assess litigation risks from the risk event taxonomy. Returns severity scores, cure steps, deadlines, and authority references.",
+            parameters: {
+                type: "object",
+                properties: {
+                    severity_min: { type: "number", description: "Minimum severity threshold 0-100 (default 0)" },
+                    risk_class: { type: "string", description: "Filter: record_incomplete, curable_defect, etc." },
+                },
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "assess_risk", severity_min: args.severity_min || 0, risk_class: args.risk_class || null });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "get_vehicle_map",
+            description: "Map a relief type to its litigation vehicle, authority chain, required elements, and deadlines.",
+            parameters: {
+                type: "object",
+                properties: {
+                    relief_type: { type: "string", description: "Relief type (e.g. 'custody modification', 'PPO', 'contempt')" },
+                },
+                required: ["relief_type"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "get_vehicle_map", relief_type: args.relief_type });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "case_health",
+            description: "Case health dashboard — quotes, harms, impeachment, contradictions, claims, deadlines across all lanes.",
+            parameters: { type: "object", properties: {} },
+            handler: async () => {
+                const result = await callDaemon({ action: "case_health" });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "adversary_threats",
+            description: "Ranked adversary threat matrix with harm counts and category spread.",
+            parameters: {
+                type: "object",
+                properties: {
+                    limit: { type: "number", description: "Max adversaries (default 20)" },
+                },
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "adversary_threats", limit: args.limit || 20 });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "filing_pipeline",
+            description: "Filing pipeline — every action with phase, readiness %, risk score, and gaps.",
+            parameters: { type: "object", properties: {} },
+            handler: async () => {
+                const result = await callDaemon({ action: "filing_pipeline" });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "get_subagent_spec",
+            description: "Retrieve the specification for a SUPERPIN sub-agent (role, inputs, outputs, triggers).",
+            parameters: {
+                type: "object",
+                properties: {
+                    agent_name: { type: "string", description: "Agent name (e.g. 'AUTH_HARVESTER', 'DRAFTER_COA')" },
+                },
+                required: ["agent_name"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "get_subagent_spec", agent_name: args.agent_name });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "evolution_stats",
+            description: "Evolution coverage statistics dashboard — files evolved, sections, cross-refs, completeness.",
+            parameters: { type: "object", properties: {} },
+            handler: async () => {
+                const result = await callDaemon({ action: "evolution_stats" });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "search_evolved",
+            description: "FTS5 search across all evolved content (md, txt, pdf sections) with snippets.",
+            parameters: {
+                type: "object",
+                properties: {
+                    query: { type: "string", description: "Search query" },
+                    source_type: { type: "string", description: "Filter: md, txt, pdf, or null for all" },
+                    limit: { type: "number", description: "Max results (default 20)" },
+                },
+                required: ["query"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "search_evolved", query: args.query, source_type: args.source_type || null, limit: args.limit || 20 });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "cross_refs",
+            description: "Query the cross-reference network for matching references (agents, rules, vehicles, risks, authorities).",
+            parameters: {
+                type: "object",
+                properties: {
+                    query: { type: "string", description: 'Search value (e.g. "MCR 3.706", "AUTH_HARVESTER")' },
+                    ref_type: { type: "string", description: "Filter: agent, rule, vehicle, risk, authority" },
+                    limit: { type: "number", description: "Max results (default 50)" },
+                },
+                required: ["query"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "cross_refs", query: args.query, ref_type: args.ref_type || null, limit: args.limit || 50 });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "convergence_status",
+            description: "Check convergence status — quality score, ΔNEW items, BLOCKERs, NEXT_PATCH, emergence signals.",
+            parameters: { type: "object", properties: {} },
+            handler: async () => {
+                const result = await callDaemon({ action: "convergence_status" });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "self_test",
+            description: "Run diagnostic self-tests on the litigation database (DB connectivity, FTS5 round-trip, graph counts).",
+            parameters: { type: "object", properties: {} },
+            handler: async () => {
+                const result = await callDaemon({ action: "self_test" });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "query_master",
+            description: "Search across master CSV datasets with optional dataset filtering.",
+            parameters: {
+                type: "object",
+                properties: {
+                    query: { type: "string", description: "Search query against master data" },
+                    dataset: { type: "string", description: "Limit to specific dataset" },
+                    limit: { type: "number", description: "Max results (default 20)" },
+                },
+                required: ["query"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "query_master", query: args.query, dataset: args.dataset || null, limit: args.limit || 20 });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "vector_search",
+            description: "Vector similarity search via LanceDB (75K vectors, 384-dim). Falls back to FTS5 if LanceDB unavailable. Finds semantically similar content.",
+            parameters: {
+                type: "object",
+                properties: {
+                    query: { type: "string", description: "Natural language query for semantic search" },
+                    top_k: { type: "number", description: "Number of results (default 10, max 50)" },
+                },
+                required: ["query"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "vector_search", query: args.query, top_k: args.top_k || 10 });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "self_audit",
+            description: "Run comprehensive data-quality audit. Returns quality score 0-100, findings by severity, and summary statistics.",
+            parameters: { type: "object", properties: {} },
+            handler: async () => {
+                const result = await callDaemon({ action: "self_audit" });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "evidence_chain",
+            description: "Trace the evidence chain for a legal claim — maps claim → sections → cross-references → sources with completeness percentage.",
+            parameters: {
+                type: "object",
+                properties: {
+                    claim: { type: "string", description: "Legal claim to trace (e.g. 'parental alienation')" },
+                },
+                required: ["claim"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "evidence_chain", claim: args.claim });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "compute_deadlines",
+            description: "Compute legal deadlines from a trigger event and date using Michigan court rules. Returns timeline of upcoming deadlines with rule citations.",
+            parameters: {
+                type: "object",
+                properties: {
+                    trigger_event: { type: "string", description: "Event type: motion_served, complaint_filed, order_entered, ppo_served, appeal_filed" },
+                    trigger_date: { type: "string", description: "ISO date (e.g. '2026-04-01')" },
+                },
+                required: ["trigger_event", "trigger_date"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "compute_deadlines", trigger_event: args.trigger_event, trigger_date: args.trigger_date });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "red_team",
+            description: "Red-team validate a legal claim or argument. Scores authority, evidence, and consistency. Reports findings by severity and FILING_READY status.",
+            parameters: {
+                type: "object",
+                properties: {
+                    claim: { type: "string", description: "Legal claim or argument to validate" },
+                },
+                required: ["claim"],
+            },
+            handler: async (args) => {
+                const result = await callDaemon({ action: "red_team", claim: args.claim });
+                return formatResult(result);
+            },
+        },
+
+        {
+            name: "stats_extended",
+            description: "Extended knowledge base statistics including graphs, rules, risk data, and evolution counts.",
+            parameters: { type: "object", properties: {} },
+            handler: async () => {
+                const result = await callDaemon({ action: "stats_extended" });
+                return formatResult(result);
+            },
+        },
     ],
 });

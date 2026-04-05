@@ -46,7 +46,7 @@ import sqlite3
 import sys
 import os
 import traceback
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 
 # ── stdout guard: ALL output goes through protocol, never bare prints ─────
 _original_stdout = sys.stdout
@@ -1909,6 +1909,294 @@ def handle_query_master(req):
 
 
 # ══════════════════════════════════════════════════════════════════════════
+# ADVANCED INTELLIGENCE HANDLERS (vector search, audit, chains, deadlines)
+# ══════════════════════════════════════════════════════════════════════════
+
+
+def handle_vector_search(req):
+    """Real vector similarity search via LanceDB (not FTS5 stub)."""
+    query = req.get("query", "").strip()
+    if not query:
+        return {"ok": False, "error": "query required"}
+    top_k = min(req.get("top_k", 10), 50)
+
+    if not (_HAS_LANCEDB and pool.lance_table is not None):
+        clean = sanitize_fts5(query)
+        if _table_exists("evidence_fts"):
+            try:
+                cur = pool.sqlite.execute(
+                    """SELECT quote_text, source_file, category, lane,
+                              rank AS score
+                       FROM evidence_fts
+                       JOIN evidence_quotes ON evidence_quotes.rowid = evidence_fts.rowid
+                       WHERE evidence_fts MATCH ? ORDER BY rank LIMIT ?""",
+                    (clean, top_k)
+                )
+                cols = [d[0] for d in cur.description]
+                rows = [dict(zip(cols, r)) for r in cur.fetchall()]
+                return {"ok": True, "results": rows, "count": len(rows), "engine": "fts5_fallback"}
+            except Exception:
+                pass
+        return {"ok": True, "results": [], "count": 0, "note": "LanceDB not available, FTS5 fallback empty"}
+
+    try:
+        results = pool.lance_table.search(query).limit(top_k).to_list()
+        formatted = []
+        for r in results:
+            item = {"score": round(float(r.get("_distance", 0)), 4)}
+            for k in ["text", "content", "source", "category", "lane", "id"]:
+                if k in r:
+                    item[k] = r[k]
+            formatted.append(item)
+        return {"ok": True, "results": formatted, "count": len(formatted), "engine": "lancedb"}
+    except Exception as e:
+        return {"ok": False, "error": f"LanceDB search failed: {e}"}
+
+
+def handle_self_audit(_req):
+    """Data-quality audit — quality score 0-100 with findings."""
+    conn = pool.sqlite
+    findings = []
+    scores = {"documents": 0, "evidence": 0, "authority": 0, "evolution": 0, "system": 0}
+
+    doc_count = _count_table(conn, "documents")
+    page_count = _count_table(conn, "pages")
+    if doc_count > 0:
+        scores["documents"] = min(20, doc_count // 5)
+    if page_count > 0:
+        scores["documents"] = min(20, scores["documents"] + page_count // 50)
+    if doc_count == 0:
+        findings.append({"severity": "HIGH", "finding": "No documents ingested"})
+
+    ev_count = _count_table(conn, "evidence_quotes")
+    tl_count = _count_table(conn, "timeline_events")
+    scores["evidence"] = min(20, ev_count // 5000 + tl_count // 1000)
+    if ev_count == 0:
+        findings.append({"severity": "CRITICAL", "finding": "evidence_quotes table empty"})
+
+    auth_count = _count_table(conn, "authority_chains_v2")
+    rule_count = _count_table(conn, "michigan_rules_extracted")
+    scores["authority"] = min(20, auth_count // 5000 + rule_count // 500)
+    if auth_count == 0:
+        findings.append({"severity": "HIGH", "finding": "authority_chains_v2 empty"})
+
+    md_count = _count_table(conn, "md_sections")
+    xref_count = _count_table(conn, "md_cross_refs")
+    scores["evolution"] = min(20, md_count // 5000 + xref_count // 1000)
+
+    table_count = len(conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table'"
+    ).fetchall())
+    scores["system"] = min(20, table_count // 40)
+
+    total = sum(scores.values())
+    return {
+        "ok": True,
+        "quality_score": total,
+        "max_score": 100,
+        "component_scores": scores,
+        "findings": findings,
+        "finding_count": len(findings),
+        "summary": {
+            "documents": doc_count, "pages": page_count,
+            "evidence_quotes": ev_count, "timeline_events": tl_count,
+            "authority_chains": auth_count, "rules": rule_count,
+            "md_sections": md_count, "cross_refs": xref_count,
+            "tables": table_count
+        }
+    }
+
+
+def handle_evidence_chain(req):
+    """Trace the evidence chain for a legal claim."""
+    conn = pool.sqlite
+    claim = req.get("claim", "").strip()
+    if not claim:
+        return {"ok": False, "error": "claim required"}
+
+    chain = {"claim": claim, "sections": [], "cross_refs": [], "sources": [], "completeness": 0}
+
+    if _table_exists("md_sections_fts") and _table_exists("md_sections"):
+        clean = sanitize_fts5(claim)
+        if clean:
+            try:
+                cur = conn.execute(
+                    """SELECT ms.file_path, ms.heading,
+                              snippet(md_sections_fts, 0, '>>>', '<<<', '...', 80) AS snippet
+                       FROM md_sections_fts
+                       JOIN md_sections ms ON ms.rowid = md_sections_fts.rowid
+                       WHERE md_sections_fts MATCH ? ORDER BY rank LIMIT 15""", (clean,)
+                )
+                chain["sections"] = [{"file": r[0], "heading": r[1], "snippet": r[2]} for r in cur.fetchall()]
+            except Exception:
+                pass
+
+    if _table_exists("md_cross_refs"):
+        try:
+            cols_info = conn.execute("PRAGMA table_info(md_cross_refs)").fetchall()
+            cn = {c[1] for c in cols_info}
+            val_col = next((c for c in ["ref_value", "value"] if c in cn), None)
+            if val_col:
+                cur = conn.execute(
+                    f"SELECT * FROM md_cross_refs WHERE {val_col} LIKE ? LIMIT 20",
+                    (f"%{claim}%",)
+                )
+                cols = [d[0] for d in cur.description]
+                chain["cross_refs"] = [dict(zip(cols, r)) for r in cur.fetchall()]
+        except Exception:
+            pass
+
+    if _table_exists("evidence_fts"):
+        clean = sanitize_fts5(claim)
+        if clean:
+            try:
+                cur = conn.execute(
+                    """SELECT quote_text, source_file, category
+                       FROM evidence_fts
+                       JOIN evidence_quotes ON evidence_quotes.rowid = evidence_fts.rowid
+                       WHERE evidence_fts MATCH ? ORDER BY rank LIMIT 10""", (clean,)
+                )
+                chain["sources"] = [{"quote": r[0], "source": r[1], "category": r[2]} for r in cur.fetchall()]
+            except Exception:
+                pass
+
+    parts = sum(1 for v in [chain["sections"], chain["cross_refs"], chain["sources"]] if v)
+    chain["completeness"] = round(parts / 3 * 100)
+    chain["gaps"] = []
+    if not chain["sections"]:
+        chain["gaps"].append("No evolved sections match this claim")
+    if not chain["cross_refs"]:
+        chain["gaps"].append("No cross-references found")
+    if not chain["sources"]:
+        chain["gaps"].append("No direct evidence quotes found")
+
+    return {"ok": True, "chain": chain}
+
+
+def handle_compute_deadlines(req):
+    """Compute legal deadlines from a trigger event and date."""
+    trigger_event = req.get("trigger_event", "").strip()
+    trigger_date_str = req.get("trigger_date", "").strip()
+    if not trigger_event or not trigger_date_str:
+        return {"ok": False, "error": "trigger_event and trigger_date required"}
+
+    try:
+        trigger_date = datetime.strptime(trigger_date_str, "%Y-%m-%d").date()
+    except ValueError:
+        return {"ok": False, "error": f"Invalid date format: {trigger_date_str}. Use YYYY-MM-DD."}
+
+    rules = {
+        "motion_served": [
+            {"name": "Response due", "days": 21, "rule": "MCR 2.108(A)(1)"},
+            {"name": "Reply brief due", "days": 28, "rule": "MCR 2.119(F)(1)"},
+            {"name": "Hearing (earliest)", "days": 9, "rule": "MCR 2.119(C)(1)"},
+        ],
+        "complaint_filed": [
+            {"name": "Answer due", "days": 21, "rule": "MCR 2.108(A)(1)"},
+            {"name": "Default possible", "days": 22, "rule": "MCR 2.603"},
+        ],
+        "order_entered": [
+            {"name": "Motion for reconsideration", "days": 21, "rule": "MCR 2.119(F)(1)"},
+            {"name": "Claim of appeal", "days": 21, "rule": "MCR 7.204(A)(1)"},
+            {"name": "Application for leave (COA)", "days": 21, "rule": "MCR 7.205(A)"},
+            {"name": "Application for leave (MSC)", "days": 56, "rule": "MCR 7.305(C)(2)"},
+        ],
+        "ppo_served": [
+            {"name": "Motion to terminate/modify", "days": 14, "rule": "MCR 3.707(A)"},
+        ],
+        "appeal_filed": [
+            {"name": "Appellant brief due", "days": 56, "rule": "MCR 7.212(A)(1)"},
+            {"name": "Appellee brief due", "days": 91, "rule": "MCR 7.212(A)(2)"},
+            {"name": "Reply brief due", "days": 112, "rule": "MCR 7.212(A)(3)"},
+        ],
+    }
+
+    event_rules = rules.get(trigger_event, [])
+    if not event_rules:
+        known = list(rules.keys())
+        return {"ok": False, "error": f"Unknown trigger: {trigger_event}. Known: {known}"}
+
+    deadlines = []
+    for r in event_rules:
+        due = trigger_date + timedelta(days=r["days"])
+        days_left = (due - date.today()).days
+        urgency = "🔴 OVERDUE" if days_left < 0 else "🟠 CRITICAL" if days_left <= 3 else "🟡 URGENT" if days_left <= 7 else "🟢 OK"
+        deadlines.append({
+            "name": r["name"], "days_from_trigger": r["days"],
+            "due_date": due.isoformat(), "days_left": days_left,
+            "urgency": urgency, "rule": r["rule"]
+        })
+
+    deadlines.sort(key=lambda d: d["due_date"])
+    return {"ok": True, "trigger_event": trigger_event, "trigger_date": trigger_date_str,
+            "deadlines": deadlines, "count": len(deadlines)}
+
+
+def handle_red_team(req):
+    """Red-team validate a legal claim or argument."""
+    conn = pool.sqlite
+    claim = req.get("claim", "").strip()
+    if not claim:
+        return {"ok": False, "error": "claim required"}
+
+    findings = []
+    scores = {"authority": 0, "evidence": 0, "consistency": 0}
+
+    if _table_exists("authority_chains_v2"):
+        try:
+            cur = conn.execute(
+                "SELECT COUNT(*) FROM authority_chains_v2 WHERE primary_citation LIKE ? OR supporting_citation LIKE ?",
+                (f"%{claim}%", f"%{claim}%")
+            )
+            auth_count = cur.fetchone()[0]
+            scores["authority"] = min(33, auth_count * 3)
+            if auth_count == 0:
+                findings.append({"severity": "CRITICAL", "area": "authority",
+                                 "finding": f"No authority chain found for '{claim}'"})
+        except Exception:
+            pass
+
+    if _table_exists("evidence_fts"):
+        clean = sanitize_fts5(claim)
+        if clean:
+            try:
+                cur = conn.execute(
+                    "SELECT COUNT(*) FROM evidence_fts WHERE evidence_fts MATCH ?", (clean,)
+                )
+                ev_count = cur.fetchone()[0]
+                scores["evidence"] = min(34, ev_count * 2)
+                if ev_count < 3:
+                    findings.append({"severity": "HIGH", "area": "evidence",
+                                     "finding": f"Weak evidence support ({ev_count} quotes)"})
+            except Exception:
+                pass
+
+    if _table_exists("contradiction_map"):
+        try:
+            cur = conn.execute(
+                "SELECT COUNT(*) FROM contradiction_map WHERE contradiction_text LIKE ?",
+                (f"%{claim}%",)
+            )
+            contra_count = cur.fetchone()[0]
+            scores["consistency"] = max(0, 33 - contra_count * 5)
+            if contra_count > 0:
+                findings.append({"severity": "HIGH", "area": "consistency",
+                                 "finding": f"{contra_count} contradictions touch this claim"})
+            else:
+                scores["consistency"] = 33
+        except Exception:
+            scores["consistency"] = 20
+
+    total = sum(scores.values())
+    status = "FILING_READY" if total >= 70 else "NEEDS_WORK" if total >= 40 else "NOT_READY"
+    return {
+        "ok": True, "claim": claim, "total_score": total, "max_score": 100,
+        "component_scores": scores, "findings": findings,
+        "status": status, "finding_count": len(findings)
+    }
+
+
+# ══════════════════════════════════════════════════════════════════════════
 # ACTION ROUTER
 # ══════════════════════════════════════════════════════════════════════════
 
@@ -1965,6 +2253,12 @@ HANDLERS = {
     "self_test": handle_self_test,
     "ingest_csv": handle_ingest_csv,
     "query_master": handle_query_master,
+    # Advanced intelligence (new)
+    "vector_search": handle_vector_search,
+    "self_audit": handle_self_audit,
+    "evidence_chain": handle_evidence_chain,
+    "compute_deadlines": handle_compute_deadlines,
+    "red_team": handle_red_team,
 }
 
 

@@ -5,10 +5,10 @@ applyTo: "**/*"
 
 # Agent Activation Matrix — LitigationOS
 
-## ⛔ TOOL ROUTING (MANDATORY)
+## ⚡ TOOL ROUTING (MANDATORY)
 
-**NEVER use `litigation_context-*` MCP tools.** They are deprecated.
-Use ONLY local SINGULARITY extension tools: `query_litigation_db`, `search_evidence`, `search_impeachment`, `search_contradictions`, `search_authority_chains`, `nexus_fuse`, `nexus_argue`, `nexus_readiness`, `nexus_damages`, `lexos_narrative`, `lexos_adversary`, `lexos_filing_plan`, `lexos_rules_check`, `lexos_gap_analysis`, `lexos_cross_connect`, `judicial_intel`, `timeline_search`, `case_context`, `filing_status`, `check_deadlines`.
+**Prefer NEXUS daemon tools over `litigation_context-*` MCP tools.** All 38 MCP capabilities have been ABSORBED into the local NEXUS v2 persistent daemon (51 total handlers, warm connections, 100× faster). MCP tools still work as fallback but are slow (spawn-per-call).
+Use local SINGULARITY extension tools first: `query_litigation_db`, `search_evidence`, `search_impeachment`, `search_contradictions`, `search_authority_chains`, `nexus_fuse`, `nexus_argue`, `nexus_readiness`, `nexus_damages`, `lexos_narrative`, `lexos_adversary`, `lexos_filing_plan`, `lexos_rules_check`, `lexos_gap_analysis`, `lexos_cross_connect`, `judicial_intel`, `timeline_search`, `case_context`, `filing_status`, `check_deadlines`, plus 27 absorbed capabilities (list_documents, get_document, search_documents, lookup_rule, query_graph, lookup_authority, assess_risk, get_vehicle_map, case_health, adversary_threats, filing_pipeline, get_subagent_spec, evolution_stats, search_evolved, cross_refs, convergence_status, stats_extended, self_test, query_master, vector_search, self_audit, evidence_chain, compute_deadlines, red_team).
 
 For execution: `exec_python` > `exec_git` > `exec_command` > `powershell` (last resort).
 

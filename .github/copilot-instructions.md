@@ -18,7 +18,7 @@
 | 5 | **Defendant = Emily A. Watson** — NOT "Tiffany", NOT "Emily Ann", NOT "Emily M.", NOT "Watson-Pigors." Always "Emily A. Watson" in filings |
 | 6 | **Judge = Hon. Jenny L. McNeill** — TWO L's in McNeill. ALWAYS. Never "McNeil" or "McNiel" |
 | 7 | **CRIMINAL lane is 100% separate** — 2025-25245676SM (60th District, Kostrzewa) has ZERO connection to Lanes A-F. Never cross-contaminate evidence, arguments, or strategy |
-| 8 | **NEVER use MCP tools** — `litigation_context-*` MCP tools are BANNED. They are deprecated, slow (spawn-per-call), and bottleneck every session. Use ONLY local SINGULARITY extension tools: `query_litigation_db`, `search_evidence`, `search_impeachment`, `search_contradictions`, `search_authority_chains`, `nexus_fuse`, `nexus_argue`, `nexus_readiness`, `nexus_damages`, `lexos_narrative`, `lexos_adversary`, `lexos_filing_plan`, `lexos_rules_check`, `lexos_gap_analysis`, `lexos_cross_connect`, `judicial_intel`, `timeline_search`, `case_context`, `filing_status`, `check_deadlines`. If a tool name starts with `litigation_context-` → DO NOT CALL IT. This has been corrected 7+ times across 6 sessions — zero tolerance |
+| 8 | **MCP capabilities ABSORBED into NEXUS daemon** — All 38 MCP server capabilities have been absorbed into the local NEXUS v2 persistent daemon (51 total handlers). The `litigation_context-*` MCP tools still exist but are SLOWER (spawn-per-call vs warm connection). Prefer NEXUS extension tools: `query_litigation_db`, `search_evidence`, `search_impeachment`, `search_contradictions`, `search_authority_chains`, `nexus_fuse`, `nexus_argue`, `nexus_readiness`, `nexus_damages`, `lexos_narrative`, `lexos_adversary`, `lexos_filing_plan`, `lexos_rules_check`, `lexos_gap_analysis`, `lexos_cross_connect`, `judicial_intel`, `timeline_search`, `case_context`, `filing_status`, `check_deadlines`, plus 27 new absorbed tools (list_documents, vector_search, self_audit, compute_deadlines, red_team, etc.). If both NEXUS and MCP offer the same capability, ALWAYS use NEXUS — it's 100× faster (warm connection vs cold spawn) |
 
 ### Tier 1 — QUALITY (output standards, evidence handling)
 
@@ -83,7 +83,8 @@
 | **B** | SINGULARITY extension tools | Evidence search, filing, intel | ZERO |
 | **C** | `powershell` (sync) | ONLY when no S/A/B alternative exists | ⚠️ SHARED |
 | **D** | `powershell` (async) | ONLY interactive REPL sessions | ⚠️ SHARED |
-| **❌** | `litigation_context-*` MCP tools | **BANNED — see Tier 0 Rule 8** | N/A |
+| **A** | NEXUS extension tools (51 actions) | ALL evidence, intelligence, filing, evolution ops | ZERO — warm daemon |
+| **B** | `litigation_context-*` MCP tools | ABSORBED into NEXUS — use as fallback only | ⚠️ SLOW (spawn-per-call) |
 
 > PowerShell is LAST RESORT — NEVER use for anything that exec_python, exec_command, or exec_git can do. cp1252 encoding crashes Python, quoting mangles scripts. Max 2 concurrent async shells. Prefer pipe-free tools (S/A/B tiers) for 100% EAGAIN immunity.
 > See `~/.github/instructions/eagain-prevention.instructions.md` for full protocol.
