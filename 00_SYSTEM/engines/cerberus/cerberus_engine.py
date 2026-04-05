@@ -34,8 +34,23 @@ from dataclasses import dataclass, field, asdict
 from typing import Optional
 
 # Force UTF-8 stdout to prevent encoding crashes on Windows
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
-sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
+# Skip entirely if not running in a real terminal (e.g., exec_python, subprocess)
+if sys.stdout.isatty():
+    try:
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
+    except (OSError, AttributeError, ValueError):
+        pass
+
+# Prefer shared module for DB connections
+try:
+    _system_dir = str(Path(__file__).resolve().parent.parent.parent)
+    if _system_dir not in sys.path:
+        sys.path.insert(0, _system_dir)
+    from shared import get_db as _shared_get_db
+    _HAS_SHARED = True
+except ImportError:
+    _HAS_SHARED = False
 
 logger = logging.getLogger("cerberus")
 
@@ -43,9 +58,13 @@ logger = logging.getLogger("cerberus")
 # Constants
 # ---------------------------------------------------------------------------
 
-DB_PATH = r"C:\Users\andre\LitigationOS\litigation_context.db"
+if _HAS_SHARED:
+    from shared import get_db_path, get_root
+    DB_PATH = str(get_db_path("litigation"))
+else:
+    DB_PATH = str(Path(__file__).resolve().parents[3] / "litigation_context.db")  # fallback
 DRIVES = [
-    r"C:\Users\andre\LitigationOS",
+    str(Path(__file__).resolve().parents[3]),
     r"F:\\",
     r"G:\\",
     r"H:\\",
@@ -324,15 +343,25 @@ CREATE TABLE IF NOT EXISTS cerberus_gaps (
     detected_at TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_cerberus_gaps_lane ON cerberus_gaps(lane);
+
+CREATE TABLE IF NOT EXISTS cerberus_scans (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    scan_type TEXT NOT NULL,
+    scan_date TEXT DEFAULT (datetime('now')),
+    config_hash TEXT,
+    result_count INTEGER DEFAULT 0
+);
 """
 
 
 @contextmanager
 def _db(db_path: str = DB_PATH, readonly: bool = False):
     """Open a SQLite connection with LitigationOS-standard PRAGMAs."""
-    conn = sqlite3.connect(db_path, timeout=60)
-    conn.row_factory = sqlite3.Row
-    try:
+    if _HAS_SHARED and db_path == DB_PATH:
+        conn = _shared_get_db("litigation", readonly=readonly)
+    else:
+        conn = sqlite3.connect(db_path, timeout=60)
+        conn.row_factory = sqlite3.Row
         conn.execute("PRAGMA busy_timeout = 60000")
         conn.execute("PRAGMA journal_mode = WAL")
         conn.execute("PRAGMA cache_size = -32000")
@@ -340,6 +369,7 @@ def _db(db_path: str = DB_PATH, readonly: bool = False):
         conn.execute("PRAGMA synchronous = NORMAL")
         if readonly:
             conn.execute("PRAGMA query_only = ON")
+    try:
         yield conn
         if not readonly:
             conn.commit()
@@ -377,8 +407,9 @@ def _sha256(path: str, chunk_size: int = 65536) -> str:
 class CerberusEngine:
     """Core engine: scan → extract → classify → weaponize → gap-analyze."""
 
-    def __init__(self, db_path: str = DB_PATH):
+    def __init__(self, db_path: str = DB_PATH, default_lane: str = ""):
         self.db_path = db_path
+        self.default_lane = default_lane
         self._ensure_schema()
         logger.info("CERBERUS engine initialized — DB: %s", db_path)
 
@@ -622,9 +653,11 @@ class CerberusEngine:
                 match_details[lane] = hits[:5]
 
         if not matched_lanes:
-            lane = "A"  # default to custody (primary case)
-            confidence = 0.1
-            signals = "no_match_default"
+            lane = self.default_lane
+            confidence = 0.1 if lane else 0.0
+            signals = "no_match_default" if lane else "no_match_no_default"
+            if not lane:
+                logger.warning("No lane detected for %s and no default_lane configured", file_path)
         elif len(matched_lanes) >= 2:
             lane = "C"
             confidence = 0.7
@@ -671,10 +704,22 @@ class CerberusEngine:
                 "SELECT file_path, content_preview FROM cerberus_extractions WHERE content_preview IS NOT NULL AND content_preview != ''",
             ).fetchall()
 
+        # Pre-fetch lane lookup into O(1) dict — avoids opening connection per match
+        with _db(self.db_path, readonly=True) as conn_lanes:
+            lane_rows = conn_lanes.execute(
+                "SELECT file_path, lane FROM cerberus_lanes ORDER BY id DESC",
+            ).fetchall()
+        lane_map: dict[str, str] = {}
+        for lr in lane_rows:
+            fp = lr["file_path"]
+            if fp not in lane_map:  # Keep most recent (ORDER BY id DESC)
+                lane_map[fp] = lr["lane"]
+
         weapons: list[tuple] = []
         for row in rows:
             text = row["content_preview"] or ""
             fpath = row["file_path"]
+            file_lane = lane_map.get(fpath, "")
             for wtype, spec in WEAPON_PATTERNS.items():
                 if spec["severity"] < min_severity:
                     continue
@@ -683,32 +728,38 @@ class CerberusEngine:
                     end = min(len(text), match.end() + 100)
                     context = text[start:end].replace("\n", " ").strip()
 
-                    # Get lane if classified
-                    lane = ""
-                    with _db(self.db_path, readonly=True) as conn2:
-                        lr = conn2.execute(
-                            "SELECT lane FROM cerberus_lanes WHERE file_path = ? ORDER BY id DESC LIMIT 1",
-                            (fpath,),
-                        ).fetchone()
-                        if lr:
-                            lane = lr["lane"]
-
                     weapons.append((
                         fpath, wtype, match.group()[:200],
-                        spec["severity"], context[:500], lane, _now(),
+                        spec["severity"], context[:500], file_lane, _now(),
                     ))
 
         with _db(self.db_path) as conn:
-            # Clear prior weapon scan results to avoid duplicates
-            conn.execute("DELETE FROM cerberus_weapons")
-            conn.executemany(
-                """INSERT INTO cerberus_weapons
-                   (file_path, weapon_type, matched_text, severity, context, lane, detected_at)
-                   VALUES (?, ?, ?, ?, ?, ?, ?)""",
-                weapons,
+            # Create scan record instead of deleting history
+            cur = conn.execute(
+                "INSERT INTO cerberus_scans (scan_type, config_hash) VALUES (?, ?)",
+                ("weapons", str(min_severity)),
+            )
+            scan_id = cur.lastrowid
+
+            # Ensure scan_id column exists on cerberus_weapons
+            cols = {row[1] for row in conn.execute("PRAGMA table_info(cerberus_weapons)").fetchall()}
+            if "scan_id" not in cols:
+                conn.execute("ALTER TABLE cerberus_weapons ADD COLUMN scan_id INTEGER")
+
+            if weapons:
+                conn.executemany(
+                    """INSERT INTO cerberus_weapons
+                       (file_path, weapon_type, matched_text, severity, context, lane, detected_at, scan_id)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+                    [(*w, scan_id) for w in weapons],
+                )
+
+            conn.execute(
+                "UPDATE cerberus_scans SET result_count = ? WHERE id = ?",
+                (len(weapons), scan_id),
             )
 
-        logger.info("Detected %d legal weapons (min severity %d)", len(weapons), min_severity)
+        logger.info("Detected %d legal weapons (scan_id=%d, min severity %d)", len(weapons), scan_id, min_severity)
         return len(weapons)
 
     # ------------------------------------------------------------------
@@ -785,15 +836,32 @@ class CerberusEngine:
                 ))
 
         with _db(self.db_path) as conn:
-            conn.execute("DELETE FROM cerberus_gaps")
-            conn.executemany(
-                """INSERT INTO cerberus_gaps
-                   (lane, gap_type, description, severity, suggestion, detected_at)
-                   VALUES (?, ?, ?, ?, ?, ?)""",
-                gaps,
+            # Create scan record instead of deleting history
+            cur = conn.execute(
+                "INSERT INTO cerberus_scans (scan_type, config_hash) VALUES (?, ?)",
+                ("gaps", lane_filter or "ALL"),
+            )
+            scan_id = cur.lastrowid
+
+            # Ensure scan_id column exists on cerberus_gaps
+            cols = {row[1] for row in conn.execute("PRAGMA table_info(cerberus_gaps)").fetchall()}
+            if "scan_id" not in cols:
+                conn.execute("ALTER TABLE cerberus_gaps ADD COLUMN scan_id INTEGER")
+
+            for g in gaps:
+                conn.execute(
+                    """INSERT INTO cerberus_gaps
+                       (lane, gap_type, description, severity, suggestion, detected_at, scan_id)
+                       VALUES (?, ?, ?, ?, ?, ?, ?)""",
+                    (*g, scan_id),
+                )
+
+            conn.execute(
+                "UPDATE cerberus_scans SET result_count = ? WHERE id = ?",
+                (len(gaps), scan_id),
             )
 
-        logger.info("Found %d evidence gaps", len(gaps))
+        logger.info("Found %d evidence gaps (scan_id=%d)", len(gaps), scan_id)
         return len(gaps)
 
     # ------------------------------------------------------------------
@@ -883,6 +951,32 @@ class CerberusEngine:
     # ------------------------------------------------------------------
     # 7. Status
     # ------------------------------------------------------------------
+
+    def get_latest_weapons(self, limit: int = 100) -> list:
+        """Get weapons from the most recent scan."""
+        with _db(self.db_path, readonly=True) as conn:
+            latest = conn.execute(
+                "SELECT MAX(id) FROM cerberus_scans WHERE scan_type = 'weapons'"
+            ).fetchone()[0]
+            if not latest:
+                return []
+            return conn.execute(
+                "SELECT * FROM cerberus_weapons WHERE scan_id = ? ORDER BY severity DESC LIMIT ?",
+                (latest, limit),
+            ).fetchall()
+
+    def get_latest_gaps(self, limit: int = 100) -> list:
+        """Get gaps from the most recent scan."""
+        with _db(self.db_path, readonly=True) as conn:
+            latest = conn.execute(
+                "SELECT MAX(id) FROM cerberus_scans WHERE scan_type = 'gaps'"
+            ).fetchone()[0]
+            if not latest:
+                return []
+            return conn.execute(
+                "SELECT * FROM cerberus_gaps WHERE scan_id = ? ORDER BY severity DESC LIMIT ?",
+                (latest, limit),
+            ).fetchall()
 
     def status(self) -> dict:
         """Return engine status as a dict."""

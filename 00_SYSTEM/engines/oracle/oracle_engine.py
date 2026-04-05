@@ -56,7 +56,7 @@ except ImportError:
 # Paths
 # ---------------------------------------------------------------------------
 
-_REPO_ROOT = Path(r"C:\Users\andre\LitigationOS")
+_REPO_ROOT = Path(__file__).resolve().parents[3]
 _LEXICON_DB = _REPO_ROOT / "databases" / "lexicon.db"
 _PROCEDURES_DB = _REPO_ROOT / "databases" / "procedures.db"
 _LITIGATION_DB = _REPO_ROOT / "litigation_context.db"
@@ -935,7 +935,10 @@ def _print_json(data: Any) -> None:
 
 
 def main() -> None:
-    sys.stdout = open(sys.stdout.fileno(), mode="w", encoding="utf-8", errors="replace")
+    try:
+        sys.stdout = open(sys.stdout.fileno(), mode="w", encoding="utf-8", errors="replace", closefd=False)
+    except (OSError, AttributeError):
+        pass
 
     parser = argparse.ArgumentParser(
         description="ORACLE — Michigan Rule Reasoning Engine",

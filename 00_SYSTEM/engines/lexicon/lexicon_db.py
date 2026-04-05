@@ -698,7 +698,10 @@ def main():
         return
 
     # Force UTF-8
-    sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace')
+    try:
+        sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace', closefd=False)
+    except (OSError, AttributeError):
+        pass
 
     db = LexiconDB()
 

@@ -8,4 +8,7 @@ gaps, and overlays accusation/withholding/retaliation/judicial patterns.
 All data stored in litigation_context.db (chronos_events, chronos_links,
 chronos_gaps, chronos_patterns tables).
 """
+from .chronos_engine import ChronosEngine
+
+__all__ = ["ChronosEngine"]
 __version__ = "1.0.0"

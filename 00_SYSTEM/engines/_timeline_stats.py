@@ -1,5 +1,10 @@
 import sqlite3
-c = sqlite3.connect(r'C:\Users\andre\LitigationOS\litigation_context.db').cursor()
+from pathlib import Path
+conn = sqlite3.connect(str(Path(__file__).resolve().parents[2] / "litigation_context.db"))
+conn.execute("PRAGMA busy_timeout=60000")
+conn.execute("PRAGMA journal_mode=WAL")
+conn.execute("PRAGMA cache_size=-32000")
+c = conn.cursor()
 
 c.execute("SELECT COUNT(*) FROM master_timeline WHERE event_date >= '2020-01-01' AND event_date <= '2026-12-31'")
 print(f'Events in 2020-2026 range: {c.fetchone()[0]:,}')

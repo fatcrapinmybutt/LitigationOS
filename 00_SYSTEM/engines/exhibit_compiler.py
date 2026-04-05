@@ -5,15 +5,22 @@ Generates numbered exhibit binders with cover sheets and master index.
 """
 import sqlite3
 import os
+import logging
 from datetime import datetime
+from pathlib import Path
 
-db_path = r'C:\Users\andre\LitigationOS\litigation_context.db'
+logger = logging.getLogger(__name__)
+
+db_path = str(Path(__file__).resolve().parents[2] / "litigation_context.db")
 conn = sqlite3.connect(db_path)
+conn.execute("PRAGMA busy_timeout = 60000")
+conn.execute("PRAGMA journal_mode = WAL")
+conn.execute("PRAGMA cache_size = -32000")
 c = conn.cursor()
 
-print("=" * 70)
-print("  EVIDENCE EXHIBIT COMPILER v1.0")
-print("=" * 70)
+logger.info("=" * 70)
+logger.info("  EVIDENCE EXHIBIT COMPILER v1.0")
+logger.info("=" * 70)
 
 # Create exhibit registry table
 c.execute('''CREATE TABLE IF NOT EXISTS exhibit_registry (

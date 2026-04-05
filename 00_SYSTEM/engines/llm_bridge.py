@@ -19,8 +19,11 @@ import os
 import sys
 import json
 import time
+import logging
 import argparse
 import traceback
+
+logger = logging.getLogger(__name__)
 
 # ── Config ───────────────────────────────────────────────────────────────────
 OLLAMA_URL      = os.environ.get("OLLAMA_URL", "http://localhost:11434")

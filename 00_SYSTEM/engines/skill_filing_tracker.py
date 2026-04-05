@@ -8,14 +8,19 @@ Court-specific filing requirements.
 """
 import sys, sqlite3, json
 from datetime import datetime, date, timedelta
-sys.stdout.reconfigure(encoding='utf-8')
+from pathlib import Path
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
 
-DB = r'C:\Users\andre\LitigationOS\litigation_context.db'
+DB = str(Path(__file__).resolve().parents[2] / "litigation_context.db")
 
 def _connect():
     conn = sqlite3.connect(DB, timeout=120)
     conn.execute("PRAGMA busy_timeout=60000")
     conn.execute("PRAGMA journal_mode=WAL")
+    conn.execute("PRAGMA cache_size=-32000")
     conn.row_factory = sqlite3.Row
     return conn
 

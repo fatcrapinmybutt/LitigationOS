@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Backup & Versioning Engine v1.0 - Scheduled DB snapshots and file versioning."""
 import sys
-sys.stdout.reconfigure(encoding='utf-8')
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
 
 import sqlite3
 import os
@@ -13,7 +16,7 @@ from datetime import datetime
 import logging
 logger = logging.getLogger(__name__)
 
-LITOS_ROOT = Path(r"C:\Users\andre\LitigationOS")
+LITOS_ROOT = Path(__file__).resolve().parents[2]
 DB_PATH = LITOS_ROOT / "litigation_context.db"
 BACKUP_DIR = LITOS_ROOT / "00_SYSTEM" / "backups"
 MAX_BACKUPS = 5  # Keep last 5 backups

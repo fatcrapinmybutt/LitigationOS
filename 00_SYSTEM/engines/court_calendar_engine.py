@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Court Calendar Engine v1.0 - Deadline management and ICS export."""
 import sys
-sys.stdout.reconfigure(encoding='utf-8')
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
 
 import sqlite3
 import os
@@ -23,8 +26,22 @@ CRITICAL_DEADLINES = [
     {"name": "Federal 1983 Action", "date": "2029-12-31", "court": "WDMI Federal Court", "case": "NEW", "stack": "03_FEDERAL_1983", "priority": "LOW"},
 ]
 
-DB_PATH = r"C:\Users\andre\LitigationOS\litigation_context.db"
-OUTPUT_DIR = r"C:\Users\andre\LitigationOS\00_SYSTEM\calendar"
+# Shared module integration (with fallback for standalone execution)
+try:
+    _SYSTEM_DIR = Path(__file__).resolve().parent.parent  # engines/ → 00_SYSTEM/
+    if str(_SYSTEM_DIR) not in sys.path:
+        sys.path.insert(0, str(_SYSTEM_DIR))
+    from shared import get_db_path, get_root
+    _HAS_SHARED = True
+except ImportError:
+    _HAS_SHARED = False
+
+if _HAS_SHARED:
+    DB_PATH = str(get_db_path("litigation"))
+    OUTPUT_DIR = str(get_root() / "00_SYSTEM" / "calendar")
+else:
+    DB_PATH = str(Path(__file__).resolve().parents[2] / "litigation_context.db")  # fallback
+    OUTPUT_DIR = r"C:\Users\andre\LitigationOS\00_SYSTEM\calendar"
 
 class CourtCalendarEngine:
     def __init__(self, db_path=DB_PATH):
@@ -59,7 +76,7 @@ class CourtCalendarEngine:
                     cols = [d[0] for d in conn.execute(f"PRAGMA table_info({table})").fetchall()]
                     # Extract deadline info based on column names
                     # Add to self.deadlines
-                except:
+                except Exception:
                     continue
             conn.close()
         except Exception as e:

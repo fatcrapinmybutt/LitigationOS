@@ -9,12 +9,18 @@ Sources:
   - F:\LITIGATIONOS_GEMINI_MASTERPACK_v2026-02-14_01\ (nested)
   - F:\LITIGATIONOS_GEMINI_MASTERPACK_v2026-02-14_02\ (nested)
 """
-import sys, os, sqlite3, json, hashlib, re
+import sys, os, sqlite3, json, hashlib, re, logging
 from datetime import datetime
+from pathlib import Path
 
-sys.stdout.reconfigure(encoding='utf-8')
+logger = logging.getLogger(__name__)
 
-DB = r'C:\Users\andre\LitigationOS\litigation_context.db'
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
+
+DB = str(Path(__file__).resolve().parents[2] / "litigation_context.db")
 
 SUPERPIN_DIRS = [
     r'F:\MI_SUPERPIN_ATLAS_v2026-02-14\MI_SUPERPIN_ATLAS_v2026-02-14',
@@ -34,6 +40,7 @@ def _conn():
     c = sqlite3.connect(DB, timeout=120)
     c.execute('PRAGMA busy_timeout=60000')
     c.execute('PRAGMA journal_mode=WAL')
+    c.execute('PRAGMA cache_size=-32000')
     return c
 
 
@@ -176,8 +183,8 @@ def ingest_superpin():
     # Create FTS5 index
     try:
         conn.execute("DROP TABLE IF EXISTS superpin_atlas_fts")
-    except:
-        pass
+    except Exception as e:
+        logger.debug("[ingest] FTS5 drop failed (non-fatal): %s", e)
     conn.execute("""
         CREATE VIRTUAL TABLE IF NOT EXISTS superpin_atlas_fts USING fts5(
             filename, content, category, tags,
@@ -247,8 +254,8 @@ def ingest_gemini():
     # Create FTS5 index
     try:
         conn.execute("DROP TABLE IF EXISTS superpin_gemini_fts")
-    except:
-        pass
+    except Exception as e:
+        logger.debug("[ingest] Gemini FTS5 drop failed (non-fatal): %s", e)
     conn.execute("""
         CREATE VIRTUAL TABLE IF NOT EXISTS superpin_gemini_fts USING fts5(
             filename, content, category, tags,

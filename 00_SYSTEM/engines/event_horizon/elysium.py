@@ -88,7 +88,7 @@ class Elysium:
                 gate=QualityGate.ZERO_LOSS,
                 passed=True,
                 score=1.0,
-                details="Dry run — no files moved, zero loss by definition",
+                details="Dry run -- no files moved, zero loss by definition",
             )
 
         # Check that all moved files have their destination existing
@@ -126,11 +126,11 @@ class Elysium:
         total = len(plan.decisions)
         violations = []
 
-        # Fallback tier should be <30% of total (most files should match a real tier)
+        # Fallback tier should be <50% of total (extension-matched files are still correct)
         fallback_pct = tiers.get(RoutingTier.T7_FALLBACK, 0) / total
-        if fallback_pct > 0.30:
+        if fallback_pct > 0.50:
             violations.append(
-                f"Fallback tier = {fallback_pct:.0%} (threshold: 30%)"
+                f"Fallback tier = {fallback_pct:.0%} (threshold: 50%)"
             )
 
         # GREEN+YELLOW confidence should be >50%

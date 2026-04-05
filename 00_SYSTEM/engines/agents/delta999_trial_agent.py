@@ -13,7 +13,10 @@ CLI:
 """
 
 import sys
-sys.stdout.reconfigure(encoding='utf-8')
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
 
 import argparse
 import json
@@ -27,7 +30,7 @@ AGENT_DIR = Path(__file__).parent
 ENGINE_DIR = AGENT_DIR.parent
 sys.path.insert(0, str(ENGINE_DIR))
 
-DB = r'C:\Users\andre\LitigationOS\litigation_context.db'
+DB = str(Path(__file__).resolve().parents[3] / "litigation_context.db")
 AGENT_NAME = 'delta999_trial_agent'
 
 from llm_bridge import llm_ask, llm_analyze_legal
@@ -39,6 +42,7 @@ def get_conn():
     conn = sqlite3.connect(DB, timeout=120)
     conn.execute('PRAGMA busy_timeout=60000')
     conn.execute('PRAGMA journal_mode=WAL')
+    conn.execute('PRAGMA cache_size=-32000')
     conn.row_factory = sqlite3.Row
     return conn
 

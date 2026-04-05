@@ -8,6 +8,9 @@ from typing import Iterable, Dict, Any, List, Tuple, Optional
 def init_db(db_path: Path) -> None:
     db_path.parent.mkdir(parents=True, exist_ok=True)
     con = sqlite3.connect(str(db_path))
+    con.execute("PRAGMA busy_timeout=60000")
+    con.execute("PRAGMA journal_mode=WAL")
+    con.execute("PRAGMA cache_size=-32000")
     cur = con.cursor()
     # FTS5 table
     cur.execute("CREATE VIRTUAL TABLE IF NOT EXISTS chunks USING fts5(chunk_id, doc_id, path, text);")
@@ -29,6 +32,9 @@ def upsert_chunks(con: sqlite3.Connection, chunks: List[Dict[str, Any]]) -> None
 
 def search(db_path: Path, query: str, limit: int = 20) -> List[Dict[str, Any]]:
     con = sqlite3.connect(str(db_path))
+    con.execute("PRAGMA busy_timeout=60000")
+    con.execute("PRAGMA journal_mode=WAL")
+    con.execute("PRAGMA cache_size=-32000")
     con.row_factory = sqlite3.Row
     cur = con.cursor()
     rows = cur.execute("SELECT chunk_id, doc_id, path, snippet(chunks, 3, '[', ']', '…', 20) as snip FROM chunks WHERE chunks MATCH ? LIMIT ?",

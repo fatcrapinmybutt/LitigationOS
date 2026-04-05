@@ -1,8 +1,12 @@
 """Placeholder Scanner Engine — finds all unresolved placeholders across filing stacks."""
 import sys, os, re, json
-sys.stdout.reconfigure(encoding='utf-8')
+from pathlib import Path
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
 
-LITIGOS_ROOT = r'C:\Users\andre\LitigationOS'
+LITIGOS_ROOT = str(Path(__file__).resolve().parents[2])
 FILING_DIRS = [
     '01_COA_366810',
     '02_TRIAL_14TH',

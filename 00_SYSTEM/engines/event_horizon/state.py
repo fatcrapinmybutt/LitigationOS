@@ -27,14 +27,57 @@ DEFAULT_DB = Path(__file__).parent / "event_horizon.db"
 
 
 class StateDB:
-    """SQLite-backed state manager for the EVENT HORIZON engine."""
+    """SQLite-backed state manager for the EVENT HORIZON engine.
+    
+    Resilience features:
+    - Graceful fallback to in-memory DB if disk full/corrupt
+    - Integrity check on startup
+    - Auto-recovery from WAL corruption
+    - All writes wrapped with disk-full detection
+    """
 
     def __init__(self, db_path: Path = DEFAULT_DB):
         self.db_path = db_path
-        self.conn = sqlite3.connect(str(db_path))
-        self.conn.execute("PRAGMA journal_mode=WAL")
-        self.conn.execute("PRAGMA foreign_keys=ON")
+        self._in_memory = False
+        self.conn = self._connect(db_path)
         self._init_schema()
+
+    def _connect(self, db_path: Path) -> sqlite3.Connection:
+        """Connect with fallback to in-memory if disk DB fails."""
+        import logging
+        log = logging.getLogger("event_horizon.state")
+
+        try:
+            db_path.parent.mkdir(parents=True, exist_ok=True)
+            conn = sqlite3.connect(str(db_path))
+            conn.execute("PRAGMA busy_timeout=60000")
+            conn.execute("PRAGMA journal_mode=WAL")
+            conn.execute("PRAGMA cache_size=-32000")
+            conn.execute("PRAGMA foreign_keys=ON")
+
+            # Quick integrity check
+            result = conn.execute("PRAGMA integrity_check(1)").fetchone()
+            if result and result[0] != "ok":
+                log.warning("DB integrity issue: %s -- rebuilding", result[0])
+                conn.close()
+                db_path.unlink(missing_ok=True)
+                conn = sqlite3.connect(str(db_path))
+                conn.execute("PRAGMA busy_timeout=60000")
+                conn.execute("PRAGMA journal_mode=WAL")
+                conn.execute("PRAGMA cache_size=-32000")
+                conn.execute("PRAGMA foreign_keys=ON")
+
+            return conn
+
+        except (sqlite3.OperationalError, OSError) as e:
+            log.warning("Cannot open state DB at %s: %s -- using in-memory fallback", db_path, e)
+            self._in_memory = True
+            conn = sqlite3.connect(":memory:")
+            conn.execute("PRAGMA busy_timeout=60000")
+            conn.execute("PRAGMA journal_mode=WAL")
+            conn.execute("PRAGMA cache_size=-32000")
+            conn.execute("PRAGMA foreign_keys=ON")
+            return conn
 
     def _init_schema(self):
         """Create tables if they don't exist."""
@@ -250,8 +293,34 @@ class StateDB:
             "moves_success": moves[1] or 0,
         }
 
+    def _safe_execute(self, sql: str, params=None):
+        """Execute SQL with disk-full detection and retry."""
+        try:
+            if params:
+                return self.conn.execute(sql, params)
+            return self.conn.execute(sql)
+        except sqlite3.OperationalError as e:
+            err = str(e).lower()
+            if "disk" in err or "full" in err or "i/o" in err:
+                import logging
+                log = logging.getLogger("event_horizon.state")
+                log.error("Disk error during DB write: %s -- data may be lost", e)
+                if not self._in_memory:
+                    log.warning("Switching to in-memory DB to preserve run state")
+                    self._in_memory = True
+                    self.conn = sqlite3.connect(":memory:")
+                    self.conn.execute("PRAGMA busy_timeout=60000")
+                    self.conn.execute("PRAGMA journal_mode=WAL")
+                    self.conn.execute("PRAGMA cache_size=-32000")
+                    self.conn.execute("PRAGMA foreign_keys=ON")
+                    self._init_schema()
+            raise
+
     def close(self):
-        self.conn.close()
+        try:
+            self.conn.close()
+        except Exception:
+            pass
 
     def __enter__(self):
         return self

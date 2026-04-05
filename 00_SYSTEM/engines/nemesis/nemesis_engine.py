@@ -12,14 +12,15 @@ import json
 import sqlite3
 import hashlib
 import re
+import logging
 from datetime import datetime, date, timedelta
 from pathlib import Path
 from typing import Optional
 from collections import Counter, defaultdict
 
-sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace', closefd=False)
+logger = logging.getLogger(__name__)
 
-DB_PATH = r"C:\Users\andre\LitigationOS\litigation_context.db"
+DB_PATH= str(Path(__file__).resolve().parents[3] / "litigation_context.db")
 
 # Verified party identity — NEVER fabricate
 ADVERSARIES = {
@@ -223,8 +224,8 @@ class NemesisEngine:
                         "description": f"{quotes} evidence quotes referencing this adversary",
                         "confidence": 0.7,
                     })
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning("[_analyze_patterns] DB pattern query failed for %s: %s", adversary_key, e, exc_info=True)
 
         return patterns
 

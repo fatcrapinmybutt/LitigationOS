@@ -4,16 +4,22 @@ COURT-GRADE TIMELINE — Final pass.
 Takes condensed_timeline → produces tight ~300-500 event timeline
 suitable for appendix to COA brief or standalone exhibit.
 """
-import sqlite3, os
+import sqlite3, os, logging
 from datetime import datetime
+from pathlib import Path
 
-db_path = r'C:\Users\andre\LitigationOS\litigation_context.db'
+logger = logging.getLogger(__name__)
+
+db_path = str(Path(__file__).resolve().parents[2] / "litigation_context.db")
 conn = sqlite3.connect(db_path)
+conn.execute("PRAGMA busy_timeout = 60000")
+conn.execute("PRAGMA journal_mode = WAL")
+conn.execute("PRAGMA cache_size = -32000")
 c = conn.cursor()
 
-print("=" * 70)
-print("  COURT-GRADE TIMELINE — Final Condensation")
-print("=" * 70)
+logger.info("=" * 70)
+logger.info("  COURT-GRADE TIMELINE — Final Condensation")
+logger.info("=" * 70)
 
 # Only keep legally significant categories
 KEEP_CATEGORIES = {
@@ -116,7 +122,7 @@ with open(output, 'w', encoding='utf-8') as f:
             try:
                 dt = datetime.strptime(month + '-01', '%Y-%m-%d')
                 month_name = dt.strftime('%B %Y')
-            except:
+            except ValueError:
                 month_name = month
             f.write(f"\n### {month_name}\n\n")
         

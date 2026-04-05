@@ -11,19 +11,26 @@ Usage:
     python chimera_engine.py status
 """
 import sys
-
-sys.stdout = open(sys.stdout.fileno(), mode="w", encoding="utf-8", errors="replace")
-
 import sqlite3, json, re, argparse, hashlib, logging
 from pathlib import Path
 from datetime import datetime
 from collections import defaultdict
 from typing import Optional, List, Dict
 
+# Prefer shared module for DB connections
+try:
+    _system_dir = str(Path(__file__).resolve().parent.parent.parent)
+    if _system_dir not in sys.path:
+        sys.path.insert(0, _system_dir)
+    from shared import get_db as _shared_get_db
+    _HAS_SHARED = True
+except ImportError:
+    _HAS_SHARED = False
+
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
-DB_PATH = r"C:\Users\andre\LitigationOS\litigation_context.db"
+DB_PATH = str(Path(__file__).resolve().parents[3] / "litigation_context.db")
 
 # ── Verified party names — NEVER fabricate ──────────────────────
 KNOWN_SPEAKERS = {
@@ -139,20 +146,37 @@ class ChimeraEngine:
 
     def __init__(self, db_path: str = DB_PATH):
         self.db_path = db_path
+        self._conn_cache = None
         self._ensure_tables()
 
     def _connect(self) -> sqlite3.Connection:
-        conn = sqlite3.connect(self.db_path, timeout=120)
-        for pragma in ("busy_timeout=60000", "journal_mode=WAL", "cache_size=-32000",
-                        "temp_store=MEMORY", "synchronous=NORMAL"):
-            conn.execute(f"PRAGMA {pragma}")
-        conn.row_factory = sqlite3.Row
-        return conn
+        """Get or reuse a database connection (lazy singleton per instance)."""
+        if self._conn_cache is not None:
+            return self._conn_cache
+        if _HAS_SHARED and self.db_path == DB_PATH:
+            self._conn_cache = _shared_get_db("litigation")
+        else:
+            conn = sqlite3.connect(self.db_path, timeout=120)
+            conn.row_factory = sqlite3.Row
+            conn.execute("PRAGMA busy_timeout=60000")
+            conn.execute("PRAGMA journal_mode=WAL")
+            conn.execute("PRAGMA cache_size=-32000")
+            self._conn_cache = conn
+        return self._conn_cache
+
+    def close(self):
+        """Explicitly close the cached connection."""
+        if self._conn_cache is not None:
+            try:
+                self._conn_cache.close()
+            except Exception:
+                pass
+            self._conn_cache = None
 
     def _ensure_tables(self):
         conn = self._connect()
-        try: conn.executescript(self.SCHEMA_SQL); conn.commit()
-        finally: conn.close()
+        conn.executescript(self.SCHEMA_SQL)
+        conn.commit()
 
     # ── 1. Statement Extractor ──────────────────────────────────
     @staticmethod
@@ -244,7 +268,7 @@ class ChimeraEngine:
                         total_dupes += 1
             conn.commit()
         finally:
-            conn.close()
+            pass
         result = {"files": len(files), "statements": total_stmts, "duplicates": total_dupes}
         logger.info("Ingested: %s", result)
         return result
@@ -286,11 +310,12 @@ class ChimeraEngine:
                 q += " AND speaker = ?"; params.append(self._normalize_speaker(speaker))
             if topic:
                 q += " AND topic = ?"; params.append(topic)
-            statements = [dict(r) for r in conn.execute(q + " ORDER BY speaker, topic, statement_date", params).fetchall()]
+            statements = [dict(r) for r in conn.execute(q + " ORDER BY speaker, topic, statement_date LIMIT 5000", params).fetchall()]
             groups: Dict[tuple, list] = defaultdict(list)
             for s in statements:
                 groups[(s["speaker"], s["topic"])].append(s)
             contradictions: List[Dict] = []
+            batch_inserts = []
             for (spk, top), stmts in groups.items():
                 if len(stmts) < 2:
                     continue
@@ -301,23 +326,25 @@ class ChimeraEngine:
                             continue
                         desc = (f"{spk} [{score['contradiction_type']}] on {top}: "
                                 f"'{stmts[i]['content'][:80]}...' vs '{stmts[j]['content'][:80]}...'")
-                        try:
-                            conn.execute("INSERT OR IGNORE INTO chimera_contradictions "
-                                         "(statement_id_a, statement_id_b, topic, severity, confidence, "
-                                         "impeachment_value, description, contradiction_type) "
-                                         "VALUES (?,?,?,?,?,?,?,?)",
-                                         (stmts[i]["id"], stmts[j]["id"], top, score["severity"],
-                                          score["confidence"], score["impeachment_value"],
-                                          desc, score["contradiction_type"]))
-                            contradictions.append(dict(statement_a=stmts[i], statement_b=stmts[j],
-                                                       topic=top, description=desc, **score))
-                        except sqlite3.IntegrityError:
-                            pass
+                        batch_inserts.append((stmts[i]["id"], stmts[j]["id"], top,
+                                              score["severity"], score["confidence"],
+                                              score["impeachment_value"], desc,
+                                              score["contradiction_type"]))
+                        contradictions.append(dict(statement_a=stmts[i], statement_b=stmts[j],
+                                                   topic=top, description=desc, **score))
+            if batch_inserts:
+                conn.executemany(
+                    "INSERT OR IGNORE INTO chimera_contradictions "
+                    "(statement_id_a, statement_id_b, topic, severity, confidence, "
+                    "impeachment_value, description, contradiction_type) "
+                    "VALUES (?,?,?,?,?,?,?,?)",
+                    batch_inserts
+                )
             conn.commit()
             logger.info("Detected %d contradictions", len(contradictions))
             return contradictions
         finally:
-            conn.close()
+            pass
 
     # ── 3. Pattern Analyzer ─────────────────────────────────────
     def analyze_patterns(self, pattern_type: Optional[str] = None) -> List[Dict]:
@@ -325,9 +352,9 @@ class ChimeraEngine:
         conn = self._connect()
         try:
             stmts = [dict(r) for r in conn.execute(
-                "SELECT * FROM chimera_statements ORDER BY speaker, statement_date").fetchall()]
+                "SELECT * FROM chimera_statements ORDER BY speaker, statement_date LIMIT 10000").fetchall()]
             contras = [dict(r) for r in conn.execute(
-                "SELECT * FROM chimera_contradictions ORDER BY severity DESC").fetchall()]
+                "SELECT * FROM chimera_contradictions ORDER BY severity DESC LIMIT 10000").fetchall()]
             analyzers = dict(accusation_timing=self._pat_accusation_timing,
                              escalation=self._pat_escalation,
                              retaliation=self._pat_retaliation,
@@ -346,7 +373,7 @@ class ChimeraEngine:
             logger.info("Found %d patterns", len(patterns))
             return patterns
         finally:
-            conn.close()
+            pass
 
     @staticmethod
     def _pat_accusation_timing(stmts, _contras) -> List[Dict]:
@@ -409,7 +436,7 @@ class ChimeraEngine:
                 "FROM chimera_contradictions c "
                 "JOIN chimera_statements sa ON c.statement_id_a = sa.id "
                 "JOIN chimera_statements sb ON c.statement_id_b = sb.id "
-                "WHERE c.severity >= ? ORDER BY c.impeachment_value DESC, c.severity DESC",
+                "WHERE c.severity >= ? ORDER BY c.impeachment_value DESC, c.severity DESC LIMIT 5000",
                 (min_severity,)).fetchall()
             entries: List[Dict] = []
             for r in [dict(r) for r in rows]:
@@ -437,7 +464,7 @@ class ChimeraEngine:
             logger.info("Built %d impeachment entries (min severity=%d)", len(entries), min_severity)
             return entries
         finally:
-            conn.close()
+            pass
 
     @staticmethod
     def _cross_exam_questions(c: Dict) -> List[str]:
@@ -483,12 +510,12 @@ class ChimeraEngine:
                 "JOIN chimera_statements sb ON c.statement_id_b = sb.id "
                 "ORDER BY c.impeachment_value DESC LIMIT 20").fetchall()]
             pats = [dict(r) for r in conn.execute(
-                "SELECT * FROM chimera_patterns ORDER BY confidence DESC").fetchall()]
+                "SELECT * FROM chimera_patterns ORDER BY confidence DESC LIMIT 5000").fetchall()]
             speakers = [dict(r) for r in conn.execute(
                 "SELECT speaker, COUNT(*) AS cnt FROM chimera_statements "
                 "GROUP BY speaker ORDER BY cnt DESC").fetchall()]
         finally:
-            conn.close()
+            pass
         L = [f"# CHIMERA Contradiction Detection Report\n\n_Generated: {datetime.now():%Y-%m-%d %H:%M:%S}_\n",
              "## Summary\n", "| Metric | Count |", "|--------|-------|",
              f"| Statements | {counts['stmts']} |", f"| Contradictions | {counts['contras']} |",
@@ -524,7 +551,7 @@ class ChimeraEngine:
                 "(SELECT COUNT(DISTINCT speaker) FROM chimera_statements) AS speakers, "
                 "(SELECT COUNT(DISTINCT topic) FROM chimera_statements) AS topics").fetchone())
         finally:
-            conn.close()
+            pass
 
 
 # ── CLI ─────────────────────────────────────────────────────────

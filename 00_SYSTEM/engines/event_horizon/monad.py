@@ -31,9 +31,9 @@ EXTENSION_GROUPS = {
     "markdown": {".md"},
     "code":     {".py", ".js", ".ts", ".jsx", ".tsx", ".go", ".rs", ".java",
                  ".c", ".h", ".cpp", ".cs", ".rb", ".php", ".sh", ".bat",
-                 ".ps1", ".psm1", ".psd1"},
-    "data":     {".csv", ".tsv", ".json", ".jsonl", ".xml", ".yaml", ".yml",
-                 ".toml", ".sql", ".sqlite", ".db"},
+                 ".ps1", ".map", ".mdx"},
+    "data":     {".csv", ".tsv", ".json", ".jsonl", ".jsonc", ".xml", ".yaml", ".yml",
+                 ".toml", ".sql", ".cypher", ".graphml"},
     "document": {".docx", ".doc", ".pdf", ".rtf", ".odt", ".pptx", ".xlsx",
                  ".xls"},
     "image":    {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tiff", ".tif",
@@ -43,7 +43,13 @@ EXTENSION_GROUPS = {
     "archive":  {".zip", ".tar", ".gz", ".bz2", ".7z", ".rar", ".xz"},
     "web":      {".html", ".htm", ".css", ".scss", ".less"},
     "config":   {".env", ".gitignore", ".editorconfig", ".prettierrc",
-                 ".eslintrc"},
+                 ".eslintrc", ".gitconfig", ".gitattributes", ".shellcheckrc",
+                 ".vsixmanifest", ".cat", ".cmake", ".code-snippets",
+                 ".ps1xml", ".psd1", ".psm1"},
+    "test":     {".test", ".spec"},
+    "database": {".sqlite", ".db", ".db-shm", ".db-wal", ".db-journal"},
+    "compiled": {".pdb", ".dll", ".winmd", ".exe", ".pyd", ".so", ".o",
+                 ".rev", ".rhk"},
 }
 
 # Reverse map: extension → group
@@ -125,10 +131,43 @@ def quick_hash(path: Path) -> Optional[str]:
 # ---------------------------------------------------------------------------
 # File operation primitives (atomic, with rollback support)
 # ---------------------------------------------------------------------------
+# Windows NTFS max path length (conservative — long path support may be enabled)
+MAX_PATH_LENGTH = 255
+
+# Characters that can break NTFS filenames or shell commands
+_DANGEROUS_CHARS = set('<>:"/\\|?*\x00')
+_WARN_CHARS = set('[]{}()$&;`!#%@^~')
+
+
+def _sanitize_filename(name: str) -> str:
+    """Sanitize a filename for safe NTFS storage.
+    Replaces dangerous characters with underscore, normalizes Unicode."""
+    import unicodedata
+    # Normalize Unicode (NFC — precomposed form, most compatible with NTFS)
+    name = unicodedata.normalize("NFC", name)
+    # Replace dangerous chars
+    sanitized = "".join(c if c not in _DANGEROUS_CHARS else "_" for c in name)
+    # Trim trailing dots/spaces (Windows silently strips these)
+    sanitized = sanitized.rstrip(". ")
+    return sanitized or "_unnamed_"
+
+
+def _check_path_length(path: Path) -> bool:
+    """Check if path exceeds Windows MAX_PATH limit."""
+    return len(str(path)) <= MAX_PATH_LENGTH
+
+
 def safe_move(source: Path, destination: Path, dry_run: bool = False) -> MoveRecord:
     """
     Move a file atomically. Creates destination directories as needed.
     Returns a MoveRecord with rollback_path for undo.
+    
+    Handles:
+    - Name collisions (appends _1, _2, etc.)
+    - Dangerous/OCR-garbled filenames (sanitized)
+    - Path length > 255 (truncated stem)
+    - Cross-device moves (via shutil)
+    - Full rollback support
     """
     rec = MoveRecord(
         source=source,
@@ -142,6 +181,22 @@ def safe_move(source: Path, destination: Path, dry_run: bool = False) -> MoveRec
         return rec
 
     try:
+        # Sanitize destination filename if it has dangerous chars
+        dest_name = destination.name
+        sanitized = _sanitize_filename(dest_name)
+        if sanitized != dest_name:
+            destination = destination.parent / sanitized
+            rec.destination = destination
+
+        # Check path length — truncate stem if needed
+        if not _check_path_length(destination):
+            stem = destination.stem
+            suffix = destination.suffix
+            max_stem = MAX_PATH_LENGTH - len(str(destination.parent)) - len(suffix) - 2
+            if max_stem > 10:
+                destination = destination.parent / f"{stem[:max_stem]}{suffix}"
+                rec.destination = destination
+
         # Ensure destination directory exists
         destination.parent.mkdir(parents=True, exist_ok=True)
 
@@ -160,6 +215,17 @@ def safe_move(source: Path, destination: Path, dry_run: bool = False) -> MoveRec
         shutil.move(str(source), str(final_dest))
         rec.success = True
 
+    except PermissionError as e:
+        rec.success = False
+        rec.error = f"Permission denied: {e}"
+    except OSError as e:
+        err = str(e).lower()
+        if "disk" in err or "full" in err or "space" in err:
+            rec.success = False
+            rec.error = f"Disk full: {e}"
+        else:
+            rec.success = False
+            rec.error = f"OS error: {e}"
     except Exception as e:
         rec.success = False
         rec.error = str(e)

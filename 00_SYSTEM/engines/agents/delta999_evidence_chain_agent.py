@@ -14,7 +14,10 @@ CLI:
 """
 
 import sys
-sys.stdout.reconfigure(encoding='utf-8')
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
 
 import argparse
 import json
@@ -28,10 +31,25 @@ AGENT_DIR = Path(__file__).parent
 ENGINE_DIR = AGENT_DIR.parent
 sys.path.insert(0, str(ENGINE_DIR))
 
-DB = r'C:\Users\andre\LitigationOS\litigation_context.db'
+DB = str(Path(__file__).resolve().parents[3] / "litigation_context.db")
 AGENT_NAME = 'delta999_evidence_chain_agent'
 
 from llm_bridge import llm_ask, llm_analyze_legal
+
+
+# ── Shared module import ─────────────────────────────────────────────────────
+try:
+    _sys_dir = str(Path(__file__).resolve().parent.parent.parent)
+    if _sys_dir not in sys.path:
+        sys.path.insert(0, _sys_dir)
+    from shared import sanitize_fts5, safe_fts5_search
+    _HAS_SHARED = True
+except ImportError:
+    _HAS_SHARED = False
+    import re as _re
+    def sanitize_fts5(q):
+        if not q: return ""
+        return _re.sub(r'[^\w\s*"]', ' ', q).strip()
 
 
 # ── DB helpers ───────────────────────────────────────────────────────────────
@@ -39,6 +57,8 @@ from llm_bridge import llm_ask, llm_analyze_legal
 def get_conn():
     conn = sqlite3.connect(DB, timeout=120)
     conn.execute('PRAGMA busy_timeout=60000')
+    conn.execute('PRAGMA journal_mode=WAL')
+    conn.execute('PRAGMA cache_size=-32000')
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -56,31 +76,62 @@ def log_activity(action, result):
 # ── Core functions ───────────────────────────────────────────────────────────
 
 def search_evidence(query: str) -> dict:
-    """Search across all evidence_quotes via FTS5."""
+    """Search across all evidence_quotes via FTS5 with LIKE fallback."""
     conn = get_conn()
     results = []
+    safe_query = sanitize_fts5(query)
 
-    # FTS5 search on evidence_quotes_fts
+    # FTS5 search with automatic LIKE fallback on failure
     fts_tables = [
-        ('evidence_quotes_fts', 'evidence_quotes'),
-        ('canonical_facts_fts', 'canonical_facts'),
-        ('exhibit_registry_fts', 'exhibit_registry'),
+        ('evidence_quotes_fts', 'evidence_quotes', 'quote_text'),
+        ('canonical_facts_fts', 'canonical_facts', 'fact_text'),
+        ('exhibit_registry_fts', 'exhibit_registry', 'description'),
     ]
 
-    for fts_table, base_table in fts_tables:
-        try:
-            rows = conn.execute(
-                f"SELECT *, rank FROM [{fts_table}] WHERE [{fts_table}] MATCH ? "
-                f"ORDER BY rank LIMIT 25",
-                (query,)
-            ).fetchall()
+    for fts_table, base_table, text_col in fts_tables:
+        if _HAS_SHARED:
+            rows, method = safe_fts5_search(
+                conn, fts_table, base_table, text_col, query, limit=25
+            )
             for r in rows:
                 results.append({
                     'source_table': base_table,
-                    'data': dict(r),
+                    'search_method': method,
+                    'data': dict(r) if hasattr(r, 'keys') else r,
                 })
-        except Exception as e:
-            results.append({'source_table': base_table, 'error': str(e)})
+        else:
+            # Legacy path: try FTS5, fall back to LIKE
+            try:
+                rows = conn.execute(
+                    f"SELECT *, rank FROM [{fts_table}] WHERE [{fts_table}] MATCH ? "
+                    f"ORDER BY rank LIMIT 25",
+                    (safe_query,)
+                ).fetchall()
+                for r in rows:
+                    results.append({
+                        'source_table': base_table,
+                        'search_method': 'FTS5',
+                        'data': dict(r),
+                    })
+            except Exception:
+                # LIKE fallback
+                try:
+                    terms = [t for t in safe_query.split() if len(t) >= 2 and t.upper() not in {"AND","OR","NOT"}]
+                    if terms:
+                        like_clauses = " AND ".join([f"[{text_col}] LIKE ?" for _ in terms])
+                        like_params = [f"%{t}%" for t in terms]
+                        rows = conn.execute(
+                            f"SELECT * FROM [{base_table}] WHERE {like_clauses} LIMIT 25",
+                            like_params
+                        ).fetchall()
+                        for r in rows:
+                            results.append({
+                                'source_table': base_table,
+                                'search_method': 'LIKE_FALLBACK',
+                                'data': dict(r),
+                            })
+                except Exception:
+                    pass
 
     # Also search extracted_harms
     try:

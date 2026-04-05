@@ -15,11 +15,21 @@ from datetime import datetime, date, timedelta
 from pathlib import Path
 from typing import Optional
 
-sys.stdout = open(sys.stdout.fileno(), mode="w", encoding="utf-8", errors="replace")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [CHRONOS] %(levelname)s %(message)s")
 log = logging.getLogger("chronos")
 
-DB_PATH = r"C:\Users\andre\LitigationOS\litigation_context.db"
+# Prefer shared module for DB connections
+try:
+    _system_dir = str(Path(__file__).resolve().parent.parent.parent)
+    if _system_dir not in sys.path:
+        sys.path.insert(0, _system_dir)
+    from shared import get_db as _shared_get_db
+    _HAS_SHARED = True
+except ImportError:
+    _HAS_SHARED = False
+    log.debug("shared module not available, using standalone DB path")
+
+DB_PATH = str(Path(__file__).resolve().parents[3] / "litigation_context.db")
 SEPARATION_DATE = date(2025, 8, 8)
 LANES = ["A", "B", "C", "D", "E", "F"]
 LANE_CHOICES = LANES + ["ALL"]
@@ -64,6 +74,8 @@ CRITICAL_PERIODS = [
 
 
 def _connect(db_path: str = DB_PATH) -> sqlite3.Connection:
+    if _HAS_SHARED and db_path == DB_PATH:
+        return _shared_get_db("litigation")
     conn = sqlite3.connect(db_path, timeout=120)
     for p in ["PRAGMA busy_timeout=60000", "PRAGMA journal_mode=WAL",
               "PRAGMA cache_size=-32000", "PRAGMA temp_store=MEMORY", "PRAGMA synchronous=NORMAL"]:
@@ -103,7 +115,7 @@ def _parse_iso(s: str) -> Optional[date]:
     try:
         return datetime.strptime(s, "%Y-%m-%d").date()
     except (ValueError, TypeError):
-        return None
+        return None  # Expected for malformed date strings — no log needed
 
 
 def _days_sep(d: str) -> int:
@@ -135,7 +147,8 @@ class ChronosEngine:
             stats["files_scanned"] += 1
             try:
                 text = f.read_text(encoding="utf-8", errors="replace")
-            except Exception:
+            except Exception as e:
+                log.warning("[ingest] Failed to read file %s: %s", f, e, exc_info=True)
                 continue
             for ev in self._extract_events(text, str(f)):
                 if date_range:
@@ -191,7 +204,7 @@ class ChronosEngine:
                 try:
                     found.append(datetime.strptime(m.group(0).replace(",", ""), fmt).strftime("%Y-%m-%d"))
                 except ValueError:
-                    continue
+                    continue  # Regex matched date-like text but strptime rejected it — expected
         return sorted(set(found))
 
     @staticmethod

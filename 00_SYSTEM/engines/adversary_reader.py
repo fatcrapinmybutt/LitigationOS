@@ -7,15 +7,22 @@ identifies every factual assertion, and feeds into rebuttal_matrix.
 import sqlite3
 import os
 import re
+import logging
 from datetime import datetime
+from pathlib import Path
 
-db_path = r'C:\Users\andre\LitigationOS\litigation_context.db'
+logger = logging.getLogger(__name__)
+
+db_path = str(Path(__file__).resolve().parents[2] / "litigation_context.db")
 conn = sqlite3.connect(db_path)
+conn.execute("PRAGMA busy_timeout = 60000")
+conn.execute("PRAGMA journal_mode = WAL")
+conn.execute("PRAGMA cache_size = -32000")
 c = conn.cursor()
 
-print("=" * 70)
-print("  ADVERSARY FILING DEEP READER v1.0")
-print("=" * 70)
+logger.info("=" * 70)
+logger.info("  ADVERSARY FILING DEEP READER v1.0")
+logger.info("=" * 70)
 
 # Create adversary assertions table
 c.execute('''CREATE TABLE IF NOT EXISTS adversary_assertions (
@@ -38,15 +45,16 @@ if c.fetchone()[0] > 0:
     conn.commit()
 
 # Find adversary files on disk
-print("\n[1] Scanning disk for adversary files...")
+logger.info("\n[1] Scanning disk for adversary files...")
 c.execute("""SELECT file_path, file_name, extension FROM disk_inventory_omega 
 WHERE (file_name LIKE '%emily%' OR file_name LIKE '%watson%' OR file_name LIKE '%barnes%' 
    OR file_name LIKE '%mcneill%' OR file_name LIKE '%exparte%' OR file_name LIKE '%ex_parte%'
    OR file_name LIKE '%adversar%')
 AND extension IN ('.txt', '.md', '.csv')
-ORDER BY extension, file_name""")
+ORDER BY extension, file_name
+LIMIT 5000""")
 text_files = c.fetchall()
-print(f"    Found {len(text_files)} readable adversary text files")
+logger.info("    Found %d readable adversary text files", len(text_files))
 
 # Assertion detection patterns
 ASSERTION_PATTERNS = {
@@ -107,14 +115,15 @@ for fpath, fname, ext in text_files:
         files_failed += 1
 
 conn.commit()
-print(f"\n[2] Extracted {inserted} assertions from {files_read} files ({files_failed} failed)")
+logger.info("\n[2] Extracted %d assertions from %d files (%d failed)", inserted, files_read, files_failed)
 
 # Also scan evidence_quotes for adversary content not yet in rebuttal_matrix
-print("\n[3] Scanning evidence_quotes for unprocessed adversary content...")
+logger.info("\n[3] Scanning evidence_quotes for unprocessed adversary content...")
 eq_start = inserted
-c.execute("""SELECT id, quote_text, speaker, legal_significance FROM evidence_quotes
-WHERE (speaker LIKE '%WATSON%' OR speaker LIKE '%Emily%' OR speaker LIKE '%McNeill%' OR speaker LIKE '%Barnes%')
-AND id NOT IN (SELECT source_id FROM rebuttal_matrix WHERE source_type = 'evidence_quote')
+c.execute("""SELECT eq.id, eq.quote_text, eq.speaker, eq.legal_significance FROM evidence_quotes eq
+LEFT JOIN rebuttal_matrix rm ON eq.id = rm.source_id AND rm.source_type = 'evidence_quote'
+WHERE (eq.speaker LIKE '%WATSON%' OR eq.speaker LIKE '%Emily%' OR eq.speaker LIKE '%McNeill%' OR eq.speaker LIKE '%Barnes%')
+AND rm.source_id IS NULL
 LIMIT 1000""")
 for eid, text, speaker, sig in c.fetchall():
     if not text or len(text.strip()) < 20:
@@ -132,7 +141,7 @@ for eid, text, speaker, sig in c.fetchall():
             inserted += 1
             break
 conn.commit()
-print(f"    → {inserted - eq_start} additional assertions from evidence_quotes")
+logger.info("    → %d additional assertions from evidence_quotes", inserted - eq_start)
 
 # Build FTS
 try:
@@ -144,17 +153,17 @@ try:
     c.execute('''INSERT INTO adversary_assertions_fts(rowid, assertion_text, assertion_type, speaker, rebuttal_evidence)
         SELECT id, assertion_text, assertion_type, speaker, rebuttal_evidence FROM adversary_assertions''')
     conn.commit()
-    print("[+] FTS5 index built")
+    logger.info("[+] FTS5 index built")
 except Exception as e:
-    print(f"[!] FTS error: {e}")
+    logger.error("[!] FTS error: %s", e)
 
 # Summary
 c.execute("SELECT assertion_type, COUNT(*), SUM(is_false) FROM adversary_assertions GROUP BY assertion_type ORDER BY COUNT(*) DESC")
-print(f"\n{'='*70}")
-print(f"  ADVERSARY READER COMPLETE: {inserted} assertions extracted")
-print(f"  Files read: {files_read} | Failed: {files_failed}")
-print(f"{'='*70}")
+logger.info("\n%s", "=" * 70)
+logger.info("  ADVERSARY READER COMPLETE: %d assertions extracted", inserted)
+logger.info("  Files read: %d | Failed: %d", files_read, files_failed)
+logger.info("=" * 70)
 for atype, cnt, false_cnt in c.fetchall():
-    print(f"    {atype}: {cnt} ({false_cnt or 0} flagged false)")
+    logger.info("    %s: %d (%d flagged false)", atype, cnt, false_cnt or 0)
 
 conn.close()

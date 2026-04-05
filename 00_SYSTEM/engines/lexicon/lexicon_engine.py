@@ -27,9 +27,12 @@ Usage:
 import sys
 import json
 import os
+import logging
 from pathlib import Path
 from typing import Optional, List, Dict, Any
 from datetime import date, datetime
+
+logger = logging.getLogger(__name__)
 
 # Add parent paths for imports
 _engines_dir = Path(__file__).resolve().parent.parent
@@ -42,23 +45,64 @@ try:
     from oracle.oracle_engine import Oracle
     from oracle.deadlines import DeadlineCalculator, MichiganCalendar
     HAS_ORACLE = True
-except ImportError:
+except ImportError as e:
     HAS_ORACLE = False
+    logger.debug("[LexiconEngine] Oracle module not available, deadline features disabled: %s", e)
 
 
 class LexiconEngine:
     """Unified Michigan Legal Intelligence Query Engine."""
 
     def __init__(self, lexicon_db_path: Optional[str] = None):
-        self.lexicon = LexiconDB(db_path=lexicon_db_path)
-        if HAS_ORACLE:
-            self.oracle = Oracle()
-            self.calendar = MichiganCalendar()
-            self.deadlines = DeadlineCalculator()
-        else:
-            self.oracle = None
-            self.calendar = None
-            self.deadlines = None
+        self._lexicon_db_path = lexicon_db_path
+        self._lexicon = None
+        self._oracle = None
+        self._calendar = None
+        self._deadlines = None
+        self._oracle_initialized = False
+
+    @property
+    def lexicon(self) -> "LexiconDB":
+        """Lazy-init: defer LexiconDB connection until first actual use."""
+        if self._lexicon is None:
+            self._lexicon = LexiconDB(db_path=self._lexicon_db_path)
+        return self._lexicon
+
+    @property
+    def oracle(self):
+        if not self._oracle_initialized:
+            self._oracle_initialized = True
+            if HAS_ORACLE:
+                self._oracle = Oracle()
+                self._calendar = MichiganCalendar()
+                self._deadlines = DeadlineCalculator()
+        return self._oracle
+
+    @property
+    def calendar(self):
+        if not self._oracle_initialized:
+            _ = self.oracle  # trigger init
+        return self._calendar
+
+    @property
+    def deadlines(self):
+        if not self._oracle_initialized:
+            _ = self.oracle  # trigger init
+        return self._deadlines
+
+    def close(self):
+        """Release database connections for clean shutdown."""
+        if self._lexicon is not None:
+            try:
+                if hasattr(self._lexicon, 'close'):
+                    self._lexicon.close()
+            except Exception as e:
+                logger.debug("[close] lexicon close error (non-fatal): %s", e)
+            self._lexicon = None
+        self._oracle = None
+        self._calendar = None
+        self._deadlines = None
+        self._oracle_initialized = False
 
     # ─── High-Level Query Methods ─────────────────────────────
 
@@ -313,7 +357,10 @@ class LexiconEngine:
 def main():
     import argparse
 
-    sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace')
+    try:
+        sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace', closefd=False)
+    except (OSError, AttributeError):
+        pass
 
     parser = argparse.ArgumentParser(description="LEXICON Engine — Michigan Legal Intelligence")
     sub = parser.add_subparsers(dest="command")

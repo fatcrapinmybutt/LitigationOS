@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Evidence Chain Engine v1.0 - Chain of custody tracking and gap analysis."""
 import sys
-sys.stdout.reconfigure(encoding='utf-8')
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
 
 import sqlite3
 import os
@@ -12,8 +15,8 @@ from collections import defaultdict
 import logging
 logger = logging.getLogger(__name__)
 
-DB_PATH = r"C:\Users\andre\LitigationOS\litigation_context.db"
-LITOS_ROOT = r"C:\Users\andre\LitigationOS"
+DB_PATH = str(Path(__file__).resolve().parents[2] / "litigation_context.db")
+LITOS_ROOT = str(Path(__file__).resolve().parents[2])
 
 class EvidenceChainEngine:
     def __init__(self, db_path=DB_PATH):

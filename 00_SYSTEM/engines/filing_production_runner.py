@@ -11,7 +11,10 @@ Usage:
     python filing_production_runner.py --quick   (skip production steps)
 """
 import sys
-sys.stdout.reconfigure(encoding='utf-8')
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
 
 import os
 import re
@@ -21,10 +24,10 @@ import sqlite3
 from pathlib import Path
 from datetime import datetime
 
-LITOS_ROOT = Path(r"C:\Users\andre\LitigationOS")
+LITOS_ROOT = Path(__file__).resolve().parents[2]
 ENGINES_DIR = Path(r"C:\Users\andre\LitigationOS\00_SYSTEM\engines")
 SYSTEM_DIR = Path(r"C:\Users\andre\LitigationOS\00_SYSTEM")
-DB_PATH = r"C:\Users\andre\LitigationOS\litigation_context.db"
+DB_PATH = str(Path(__file__).resolve().parents[2] / "litigation_context.db")
 
 # Import pipeline
 sys.path.insert(0, str(ENGINES_DIR))

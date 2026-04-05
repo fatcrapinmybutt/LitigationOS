@@ -12,34 +12,59 @@ CLI:
 """
 
 import sys
-sys.stdout.reconfigure(encoding='utf-8')
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
 
 import argparse
 import json
 import os
 import sqlite3
 import importlib
+import logging
 from datetime import datetime
 from pathlib import Path
 
-# ── paths ────────────────────────────────────────────────────────────────────
+logger = logging.getLogger(__name__)
+
+# ── paths────────────────────────────────────────────────────────────────────
 AGENT_DIR = Path(__file__).parent
 ENGINE_DIR = AGENT_DIR.parent
 sys.path.insert(0, str(ENGINE_DIR))
 sys.path.insert(0, str(AGENT_DIR))
 
-DB = r'C:\Users\andre\LitigationOS\litigation_context.db'
+DB = str(Path(__file__).resolve().parents[3] / "litigation_context.db")
 
 from llm_bridge import llm_ask, llm_classify
 
 
 # ── DB helpers ───────────────────────────────────────────────────────────────
 
+_conn = None  # lazy singleton — avoids opening a new connection per log_activity call
+
+
 def get_conn():
-    conn = sqlite3.connect(DB, timeout=120)
-    conn.execute('PRAGMA busy_timeout=60000')
-    conn.row_factory = sqlite3.Row
-    return conn
+    """Return a shared module-level connection (lazy singleton with PRAGMA triad)."""
+    global _conn
+    if _conn is None:
+        _conn = sqlite3.connect(DB, timeout=120)
+        _conn.execute('PRAGMA busy_timeout=60000')
+        _conn.execute('PRAGMA journal_mode=WAL')
+        _conn.execute('PRAGMA cache_size=-32000')
+        _conn.row_factory = sqlite3.Row
+    return _conn
+
+
+def close_conn():
+    """Close the shared connection for clean shutdown."""
+    global _conn
+    if _conn is not None:
+        try:
+            _conn.close()
+        except Exception as e:
+            logger.debug("[close_conn] connection close error (non-fatal): %s", e)
+        _conn = None
 
 
 def log_activity(agent_name, action, result):
@@ -49,7 +74,6 @@ def log_activity(agent_name, action, result):
         (agent_name, action, str(result)[:2000])
     )
     conn.commit()
-    conn.close()
 
 
 AGENT_NAME = 'delta999_orchestrator'
@@ -105,7 +129,8 @@ def dispatch(task_description: str) -> dict:
     agents = list(AGENT_MODULES.keys())
     try:
         chosen = llm_classify(task_description, agents)
-    except Exception:
+    except Exception as e:
+        logger.warning("[dispatch] LLM classification failed, falling back to evidence_chain_agent: %s", e, exc_info=True)
         chosen = 'delta999_evidence_chain_agent'
 
     result = {
@@ -135,8 +160,8 @@ def run_pipeline(filing_stack: str) -> dict:
             step_result = func(**kwargs)
             results[step_name] = {'status': 'ok', 'result': step_result}
         except Exception as e:
+            logger.error("[run_pipeline] Step '%s' failed: %s", step_name, e, exc_info=True)
             results[step_name] = {'status': 'error', 'error': str(e)}
-            print(f"    ✗ {step_name} failed: {e}")
 
     log_activity(AGENT_NAME, f'pipeline:{filing_stack}', json.dumps(results, default=str)[:2000])
     return results

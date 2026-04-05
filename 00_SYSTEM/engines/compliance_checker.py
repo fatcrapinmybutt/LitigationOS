@@ -7,15 +7,22 @@ MCR 7.212 for COA, local rules for USDC WD Mich, JTC procedures.
 import sqlite3
 import os
 import re
+import logging
 from datetime import datetime
+from pathlib import Path
 
-db_path = r'C:\Users\andre\LitigationOS\litigation_context.db'
+logger = logging.getLogger(__name__)
+
+db_path = str(Path(__file__).resolve().parents[2] / "litigation_context.db")
 conn = sqlite3.connect(db_path)
+conn.execute("PRAGMA busy_timeout = 60000")
+conn.execute("PRAGMA journal_mode = WAL")
+conn.execute("PRAGMA cache_size = -32000")
 c = conn.cursor()
 
-print("=" * 70)
-print("  FILING COMPLIANCE CHECKER v1.0")
-print("=" * 70)
+logger.info("=" * 70)
+logger.info("  FILING COMPLIANCE CHECKER v1.0")
+logger.info("=" * 70)
 
 # Create compliance table
 c.execute('''CREATE TABLE IF NOT EXISTS filing_compliance (
@@ -70,8 +77,8 @@ total_fail = 0
 total_warn = 0
 
 if not os.path.isdir(delta):
-    print(f"[WARN] Delta99 directory not found: {delta}")
-    print("[WARN] Skipping package scan — I:\\ drive may not be mounted.")
+    logger.warning("Delta99 directory not found: %s", delta)
+    logger.warning("Skipping package scan — I:\\ drive may not be mounted.")
 else:
     for pkg_dir in sorted(os.listdir(delta)):
         pkg_path = os.path.join(delta, pkg_dir)
@@ -87,7 +94,7 @@ else:
                 try:
                     with open(os.path.join(pkg_path, f), 'r', encoding='utf-8', errors='replace') as fh:
                         content += fh.read() + '\n'
-                except:
+                except Exception:
                     pass
         
         is_coa = 'COA' in pkg_dir or 'APPELLANT' in pkg_dir
@@ -202,7 +209,7 @@ else:
                 (pkg_dir, pkg_dir, check_name, category, status, details, rule))
         
         pass_count = sum(1 for _ in [] if True)  # placeholder
-        print(f"  {pkg_dir}: {len(md_files)} MDs scanned")
+        logger.info("  %s: %d MDs scanned", pkg_dir, len(md_files))
 
 conn.commit()
 
@@ -225,11 +232,11 @@ with open(report_path, 'w', encoding='utf-8') as f:
         f.write(f"- {icon} **{check}** [{status}] — {details} *(Ref: {rule})*\n")
 
 rpt_size = os.path.getsize(report_path)
-print(f"\n[+] Compliance report: {rpt_size/1024:.0f}KB")
+logger.info("\n[+] Compliance report: %.0fKB", rpt_size / 1024)
 
-print(f"\n{'='*70}")
-print(f"  COMPLIANCE CHECKER COMPLETE")
-print(f"  ✅ PASS: {total_pass} | ⚠️ WARN: {total_warn} | ❌ FAIL: {total_fail}")
-print(f"{'='*70}")
+logger.info("\n%s", "=" * 70)
+logger.info("  COMPLIANCE CHECKER COMPLETE")
+logger.info("  ✅ PASS: %d | ⚠️ WARN: %d | ❌ FAIL: %d", total_pass, total_warn, total_fail)
+logger.info("=" * 70)
 
 conn.close()

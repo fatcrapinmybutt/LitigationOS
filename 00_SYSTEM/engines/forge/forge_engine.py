@@ -13,16 +13,32 @@ import os
 import json
 import sqlite3
 import hashlib
+import logging
 from datetime import datetime, date
 from pathlib import Path
 from typing import Optional
 
-# UTF-8 stdout
-sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', errors='replace', closefd=False)
+logger = logging.getLogger(__name__)
 
-DB_PATH = r"C:\Users\andre\LitigationOS\litigation_context.db"
-FILINGS_DIR = Path(r"C:\Users\andre\LitigationOS\01_FILINGS")
-TEMPLATES_DIR = Path(r"C:\Users\andre\LitigationOS\00_SYSTEM\engines\forge\templates")
+# Shared module integration(with fallback for standalone execution)
+try:
+    _SYSTEM_DIR = Path(__file__).resolve().parent.parent.parent  # engines/forge/ → 00_SYSTEM/
+    if str(_SYSTEM_DIR) not in sys.path:
+        sys.path.insert(0, str(_SYSTEM_DIR))
+    from shared import get_db_path, get_root
+    _HAS_SHARED = True
+except ImportError:
+    _HAS_SHARED = False
+    logger.debug("shared module not available, using standalone fallback paths")
+
+if _HAS_SHARED:
+    DB_PATH = str(get_db_path("litigation"))
+    FILINGS_DIR = get_root() / "01_FILINGS"
+    TEMPLATES_DIR = Path(__file__).resolve().parent / "templates"
+else:
+    DB_PATH = str(Path(__file__).resolve().parents[3] / "litigation_context.db")  # fallback
+    FILINGS_DIR = Path(r"C:\Users\andre\LitigationOS\01_FILINGS")
+    TEMPLATES_DIR = Path(r"C:\Users\andre\LitigationOS\00_SYSTEM\engines\forge\templates")
 
 # Michigan court info
 COURTS = {

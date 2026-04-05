@@ -561,7 +561,10 @@ def _parse_date(s: str) -> date:
 
 
 def main() -> None:
-    sys.stdout = open(sys.stdout.fileno(), mode="w", encoding="utf-8", errors="replace")
+    try:
+        sys.stdout = open(sys.stdout.fileno(), mode="w", encoding="utf-8", errors="replace", closefd=False)
+    except (OSError, AttributeError):
+        pass
 
     parser = argparse.ArgumentParser(
         description="Michigan Legal Deadline Calculator",

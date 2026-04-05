@@ -2,11 +2,15 @@
 """Generate report from master_timeline already in DB."""
 import sqlite3, os
 from datetime import datetime
+from pathlib import Path
 
-db_path = r'C:\Users\andre\LitigationOS\litigation_context.db'
+db_path = str(Path(__file__).resolve().parents[2] / "litigation_context.db")
 conn = sqlite3.connect(db_path)
+conn.execute("PRAGMA busy_timeout=60000")
+conn.execute("PRAGMA journal_mode=WAL")
+conn.execute("PRAGMA cache_size=-32000")
 c = conn.cursor()
-LOS_ROOT = r'C:\Users\andre\LitigationOS'
+LOS_ROOT = str(Path(__file__).resolve().parents[2])
 
 output_path = os.path.join(LOS_ROOT, '05_ANALYSIS', 'MASTER_CHRONOLOGICAL_TIMELINE.md')
 

@@ -62,6 +62,9 @@ class Genesis:
                 # Skip protected subdirectories
                 if is_protected_dir(item):
                     continue
+                # Skip embedded git repos
+                if ".git" in item.parts:
+                    continue
                 yield self._profile_file(item)
         except PermissionError as e:
             log.warning(f"GENESIS: Permission denied: {e}")

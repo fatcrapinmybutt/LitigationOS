@@ -1,8 +1,12 @@
 import os
 import json
+import logging
 from collections import defaultdict
+from pathlib import Path
 
-LOS = r'C:\Users\andre\LitigationOS'
+logger = logging.getLogger(__name__)
+
+LOS = str(Path(__file__).resolve().parents[2])
 
 # Full recursive scan
 folder_tree = {}
@@ -24,8 +28,8 @@ for root, dirs, files in os.walk(LOS):
             total_size += sz
             ext = os.path.splitext(f)[1].lower()
             extensions[ext] += 1
-        except:
-            pass
+        except OSError:
+            pass  # File inaccessible — skip size calculation
     
     folder_stats[rel] = {
         'depth': depth,

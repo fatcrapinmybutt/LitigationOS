@@ -7,15 +7,22 @@ Flags missing, malformed, or potentially outdated citations.
 import sqlite3
 import os
 import re
+import logging
 from datetime import datetime
+from pathlib import Path
 
-db_path = r'C:\Users\andre\LitigationOS\litigation_context.db'
+logger = logging.getLogger(__name__)
+
+db_path = str(Path(__file__).resolve().parents[2] / "litigation_context.db")
 conn = sqlite3.connect(db_path)
+conn.execute("PRAGMA busy_timeout = 60000")
+conn.execute("PRAGMA journal_mode = WAL")
+conn.execute("PRAGMA cache_size = -32000")
 c = conn.cursor()
 
-print("=" * 70)
-print("  LEGAL CITATION VALIDATOR v1.0")
-print("=" * 70)
+logger.info("=" * 70)
+logger.info("  LEGAL CITATION VALIDATOR v1.0")
+logger.info("=" * 70)
 
 # Create citation validation table
 c.execute('''CREATE TABLE IF NOT EXISTS citation_validation (
@@ -81,7 +88,7 @@ for scan_dir in scan_dirs:
             try:
                 with open(fpath, 'r', encoding='utf-8', errors='replace') as f:
                     content = f.read()
-            except:
+            except Exception:
                 continue
             files_scanned += 1
             
@@ -150,7 +157,7 @@ for scan_dir in scan_dirs:
 conn.commit()
 
 # Generate validation report
-report_path = r'C:\Users\andre\LitigationOS\05_ANALYSIS\CITATION_VALIDATION_REPORT.md'
+report_path = r'C:\Users\andre\LitigationOS\04_ANALYSIS\CITATION_VALIDATION_REPORT.md'
 with open(report_path, 'w', encoding='utf-8') as f:
     f.write("# CITATION VALIDATION REPORT\n")
     f.write(f"## Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}\n\n")

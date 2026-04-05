@@ -59,7 +59,7 @@ if "%1"=="--quick" (
 
 REM === STEP 2: Engine smoke tests (fast) ===
 echo [2/6] Engine smoke tests...
-python -I scripts\test_engine_smoke.py 2>NUL | findstr /C:"TOTAL:"
+python -I scripts\test_engine_smoke.py 2>NUL | findstr /C:"RESULTS:"
 if errorlevel 1 (
     echo.
     echo FAILED: Engine smoke tests failed.

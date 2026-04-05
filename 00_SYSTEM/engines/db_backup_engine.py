@@ -22,10 +22,25 @@ import sqlite3
 import argparse
 import datetime
 import glob as globmod
+from pathlib import Path
+
+# Shared module integration (with fallback for standalone execution)
+try:
+    _SYSTEM_DIR = Path(__file__).resolve().parent.parent  # engines/ → 00_SYSTEM/
+    if str(_SYSTEM_DIR) not in sys.path:
+        sys.path.insert(0, str(_SYSTEM_DIR))
+    from shared import get_db_path, get_root
+    _HAS_SHARED = True
+except ImportError:
+    _HAS_SHARED = False
 
 # ── Config ───────────────────────────────────────────────────────────────────
-LOS_ROOT        = r"C:\Users\andre\LitigationOS"
-DB_PATH         = os.path.join(LOS_ROOT, "litigation_context.db")
+if _HAS_SHARED:
+    LOS_ROOT = str(get_root())
+    DB_PATH = str(get_db_path("litigation"))
+else:
+    LOS_ROOT = str(Path(__file__).resolve().parents[2])  # fallback
+    DB_PATH = os.path.join(LOS_ROOT, "litigation_context.db")
 DEFAULT_DEST    = r"I:\LitigationOS_Backup"
 KEEP_BACKUPS    = 3
 BACKUP_PREFIX   = "litigation_context_"
@@ -44,8 +59,10 @@ def log_to_db(message, status="INFO"):
     """Log a message to the phase0b_ingest_log table if it exists."""
     try:
         conn = sqlite3.connect(DB_PATH)
+        conn.execute("PRAGMA busy_timeout=60000")
+        conn.execute("PRAGMA journal_mode=WAL")
+        conn.execute("PRAGMA cache_size=-32000")
         cur = conn.cursor()
-        # Check if table exists
         cur.execute(
             "SELECT name FROM sqlite_master "
             "WHERE type='table' AND name='phase0b_ingest_log';"
@@ -67,6 +84,9 @@ def wal_checkpoint():
     if not os.path.exists(DB_PATH):
         raise FileNotFoundError(f"Database not found: {DB_PATH}")
     conn = sqlite3.connect(DB_PATH)
+    conn.execute("PRAGMA busy_timeout=60000")
+    conn.execute("PRAGMA journal_mode=WAL")
+    conn.execute("PRAGMA cache_size=-32000")
     cur = conn.cursor()
     cur.execute("PRAGMA wal_checkpoint(TRUNCATE);")
     result = cur.fetchone()  # (busy, log, checkpointed)
@@ -93,6 +113,9 @@ def verify_backup(backup_path):
     """Run integrity check on the backup copy."""
     try:
         conn = sqlite3.connect(backup_path)
+        conn.execute("PRAGMA busy_timeout=60000")
+        conn.execute("PRAGMA journal_mode=WAL")
+        conn.execute("PRAGMA cache_size=-32000")
         cur = conn.cursor()
         cur.execute("PRAGMA integrity_check;")
         result = cur.fetchone()[0]

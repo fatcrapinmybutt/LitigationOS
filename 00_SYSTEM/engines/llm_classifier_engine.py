@@ -10,7 +10,10 @@ Usage:
     python llm_classifier_engine.py --batch file_list.txt --output-db
 """
 import sys
-sys.stdout.reconfigure(encoding='utf-8')
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
 
 import argparse
 import json
@@ -22,7 +25,7 @@ import traceback
 from datetime import datetime
 from pathlib import Path
 
-DB = r'C:\Users\andre\LitigationOS\litigation_context.db'
+DB = str(Path(__file__).resolve().parents[2] / "litigation_context.db")
 
 CATEGORIES = [
     'FILING', 'EVIDENCE', 'AUTHORITY', 'CORRESPONDENCE',

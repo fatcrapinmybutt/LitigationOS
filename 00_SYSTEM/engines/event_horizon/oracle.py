@@ -336,17 +336,20 @@ class Oracle:
         signals.append(f"extension:{group}")
 
         ext_routes = {
-            "image":    ("08_MEDIA", 0.65),
-            "video":    ("08_MEDIA", 0.70),
-            "audio":    ("08_MEDIA", 0.70),
-            "archive":  ("11_ARCHIVES", 0.75),
-            "document": ("06_DATA/DOCUMENTS", 0.60),
-            "data":     ("06_DATA", 0.55),
-            "code":     ("07_CODE", 0.60),
-            "web":      ("09_REFERENCE", 0.55),
-            "text":     ("06_DATA/TEXT", 0.50),
-            "markdown": ("04_ANALYSIS", 0.50),
-            "config":   ("07_CODE/CONFIG", 0.60),
+            "image":    ("08_MEDIA", 0.80),
+            "video":    ("08_MEDIA", 0.85),
+            "audio":    ("08_MEDIA", 0.85),
+            "archive":  ("11_ARCHIVES", 0.80),
+            "document": ("06_DATA/DOCUMENTS", 0.75),
+            "data":     ("06_DATA", 0.70),
+            "database": ("06_DATA/DATABASES", 0.85),
+            "code":     ("07_CODE", 0.70),
+            "web":      ("09_REFERENCE", 0.65),
+            "text":     ("06_DATA/TEXT", 0.65),
+            "markdown": ("04_ANALYSIS", 0.65),
+            "config":   ("07_CODE/CONFIG", 0.75),
+            "test":     ("07_CODE/TESTS", 0.75),
+            "compiled": ("11_ARCHIVES/BINARIES", 0.80),
         }
 
         if group in ext_routes:

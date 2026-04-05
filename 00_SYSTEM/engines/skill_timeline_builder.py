@@ -6,18 +6,21 @@ Wired to: master_chronological_timeline (14,568 rows)
 import sys, os, sqlite3, json
 from datetime import datetime
 
-sys.stdout.reconfigure(encoding='utf-8')
-
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
 DB = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'litigation_context.db')
 
 def _conn():
     c = sqlite3.connect(DB, timeout=120)
     c.execute('PRAGMA busy_timeout=60000')
     c.execute('PRAGMA journal_mode=WAL')
+    c.execute('PRAGMA cache_size=-32000')
     c.row_factory = sqlite3.Row
     return c
 
-# ── Core Functions ──────────────────────────────────────────────────
+# ── Core Functions──────────────────────────────────────────────────
 
 def get_timeline(start_date=None, end_date=None, limit=500):
     """Get timeline events between dates. Dates in YYYY-MM-DD format."""

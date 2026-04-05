@@ -16,14 +16,32 @@ import sqlite3
 import sys
 import textwrap
 import time
+import logging
 from pathlib import Path
 from typing import Optional
 
-import chromadb
+logger = logging.getLogger(__name__)
+
+try:
+    import chromadb
+    HAS_CHROMADB = True
+except ImportError:
+    chromadb = None
+    HAS_CHROMADB = False
 import requests
 
+# ── shared module import ─────────────────────────────────────────────────────
+try:
+    _sys_dir = str(Path(__file__).resolve().parent.parent)
+    if _sys_dir not in sys.path:
+        sys.path.insert(0, _sys_dir)
+    from shared import sanitize_fts5 as _shared_sanitize
+    _HAS_SHARED_FTS5 = True
+except ImportError:
+    _HAS_SHARED_FTS5 = False
+
 # ── paths ────────────────────────────────────────────────────────────────────
-BASE_DIR = Path(r"C:\Users\andre\LitigationOS")
+BASE_DIR = Path(__file__).resolve().parents[2]
 DB_PATH = BASE_DIR / "litigation_context.db"
 CHROMA_DIR = BASE_DIR / "00_SYSTEM" / "chroma_db"
 COLLECTION_NAME = "litigation_vectors"
@@ -151,12 +169,14 @@ def chunk_text(text: str, chunk_size: int = CHUNK_SIZE, overlap: int = CHUNK_OVE
     return chunks
 
 
-def get_chroma_client() -> chromadb.ClientAPI:
+def get_chroma_client():
+    if not HAS_CHROMADB:
+        raise ImportError("chromadb not installed. Run: pip install chromadb")
     CHROMA_DIR.mkdir(parents=True, exist_ok=True)
     return chromadb.PersistentClient(path=str(CHROMA_DIR))
 
 
-def get_collection(client: chromadb.ClientAPI) -> chromadb.Collection:
+def get_collection(client):
     return client.get_or_create_collection(
         name=COLLECTION_NAME,
         metadata={"hnsw:space": "cosine"},
@@ -165,6 +185,9 @@ def get_collection(client: chromadb.ClientAPI) -> chromadb.Collection:
 
 def get_db() -> sqlite3.Connection:
     conn = sqlite3.connect(str(DB_PATH), timeout=30)
+    conn.execute("PRAGMA busy_timeout=60000")
+    conn.execute("PRAGMA journal_mode=WAL")
+    conn.execute("PRAGMA cache_size=-32000")
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -300,10 +323,13 @@ def vector_search(collection: chromadb.Collection, query: str, top_k: int = TOP_
 
 
 def fts_search(conn: sqlite3.Connection, query: str, top_k: int = TOP_K) -> list[dict]:
-    """Search all FTS5 indexes for the query."""
-    # Clean query for FTS5 syntax
-    clean = re.sub(r'[^\w\s]', ' ', query)
-    terms = clean.split()
+    """Search all FTS5 indexes for the query, with LIKE fallback on failure."""
+    # Use shared sanitizer if available (handles legal citations properly)
+    if _HAS_SHARED_FTS5:
+        clean = _shared_sanitize(query)
+    else:
+        clean = re.sub(r'[^\w\s*"]', ' ', query)
+    terms = [t for t in clean.split() if len(t) >= 2 and t.upper() not in {"AND", "OR", "NOT"}]
     if not terms:
         return []
     fts_query = " OR ".join(terms)
@@ -342,7 +368,34 @@ def fts_search(conn: sqlite3.Connection, query: str, top_k: int = TOP_K) -> list
                     "source": "fts5",
                 })
         except Exception:
-            continue  # Skip broken/empty FTS indexes
+            # LIKE fallback — query the base table directly
+            base_table = fts_table.replace("_fts", "")
+            try:
+                # Get text columns from base table
+                cols_info = conn.execute(f"PRAGMA table_info([{base_table}])").fetchall()
+                text_cols = [c[1] for c in cols_info if c[2].upper() in ("TEXT", "")]
+                if text_cols:
+                    text_col = text_cols[0]
+                    like_clauses = " AND ".join([f"[{text_col}] LIKE ?" for _ in terms])
+                    like_params = [f"%{t}%" for t in terms]
+                    rows = conn.execute(
+                        f"SELECT rowid, * FROM [{base_table}] WHERE {like_clauses} LIMIT ?",
+                        like_params + [top_k]
+                    ).fetchall()
+                    columns = [desc[0] for desc in conn.execute(f"SELECT * FROM [{base_table}] LIMIT 0").description]
+                    for row in rows:
+                        row_dict = dict(zip(["rowid"] + columns, row))
+                        text_parts = [f"{k}: {v}" for k, v in row_dict.items()
+                                      if k != "rowid" and v is not None and str(v).strip()]
+                        hits.append({
+                            "id": f"{base_table}__row{row_dict.get('rowid', '?')}",
+                            "text": "\n".join(text_parts)[:4000],
+                            "metadata": {"source_table": base_table, "fts_index": fts_table},
+                            "score": 0.3,  # Lower score for LIKE results
+                            "source": "like_fallback",
+                        })
+            except Exception:
+                continue
 
     # Sort by score descending, take top_k
     hits.sort(key=lambda h: h["score"], reverse=True)
@@ -513,17 +566,22 @@ def run_status():
     fts_tables = [r[0] for r in cur.fetchall()]
 
     total_fts_rows = 0
+    fts_failures = []
     for ft in fts_tables:
         try:
             cur.execute(f"SELECT COUNT(*) FROM [{ft}]")
             total_fts_rows += cur.fetchone()[0]
-        except Exception:
-            pass
+        except Exception as e:
+            fts_failures.append((ft, str(e)))
 
     print(f"\n📊 SQLite Database: {DB_PATH.name}")
     print(f"   Data tables:    {len(data_tables)}")
     print(f"   FTS5 indexes:   {len(fts_tables)}")
     print(f"   FTS5 total rows:{total_fts_rows:,}")
+    if fts_failures:
+        print(f"   ⚠️  FTS5 query failures ({len(fts_failures)}):")
+        for ft_name, err in fts_failures:
+            print(f"      - {ft_name}: {err}")
 
     # Priority table status
     print(f"\n📋 Priority Tables ({len(PRIORITY_TABLES)}):")

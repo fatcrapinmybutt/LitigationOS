@@ -48,15 +48,32 @@ class Promethean:
         dry_run: bool = True,
         run_id: Optional[str] = None,
     ) -> MoveMetrics:
-        """Execute all routing decisions in the plan."""
+        """Execute all routing decisions in the plan.
+        
+        Pre-checks (live mode only):
+        - Disk space >= 1 GB before starting
+        - Disk space re-checked every checkpoint interval
+        """
         metrics = MoveMetrics()
         metrics.total_attempted = plan.routable
 
         mode = "DRY-RUN" if dry_run else "LIVE"
         log.info(f"PROMETHEAN [{mode}]: Executing {plan.routable} routing decisions")
 
-        # Ensure all destination directories exist
+        # Pre-flight disk check for live execution
         if not dry_run:
+            import shutil as _sh
+            try:
+                usage = _sh.disk_usage(str(self.root))
+                free_gb = usage.free / (1024**3)
+                if free_gb < 1.0:
+                    log.error("PROMETHEAN: ABORTING -- only %.1f GB free (need >= 1 GB)", free_gb)
+                    metrics.error_count = plan.routable
+                    return metrics
+                log.info("PROMETHEAN: %.1f GB free disk space -- OK", free_gb)
+            except Exception:
+                pass  # Can't check, proceed with caution
+
             self._ensure_destinations(plan.decisions)
 
         for i, decision in enumerate(plan.decisions):
@@ -73,10 +90,20 @@ class Promethean:
             if self.state_db and run_id:
                 self.state_db.save_move(run_id, rec)
 
-            # Checkpoint
+            # Checkpoint with disk space re-check
             if (i + 1) % self.CHECKPOINT_INTERVAL == 0:
                 log.info(f"PROMETHEAN: Checkpoint at {i+1}/{plan.routable} "
                          f"({metrics.success_count} ok, {metrics.error_count} err)")
+                # Re-check disk space at each checkpoint (live only)
+                if not dry_run:
+                    try:
+                        usage = _sh.disk_usage(str(self.root))
+                        free_gb = usage.free / (1024**3)
+                        if free_gb < 0.5:
+                            log.error("PROMETHEAN: HALTING -- disk critically low (%.1f GB)", free_gb)
+                            break
+                    except Exception:
+                        pass
 
         log.info(f"PROMETHEAN [{mode}]: Complete — "
                  f"{metrics.success_count} moved, {metrics.error_count} errors")

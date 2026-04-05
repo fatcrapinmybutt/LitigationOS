@@ -135,6 +135,9 @@ def main():
     out_dir.mkdir(parents=True, exist_ok=True)
 
     db = sqlite3.connect(Path(args.warchest).resolve())
+    db.execute("PRAGMA busy_timeout=60000")
+    db.execute("PRAGMA journal_mode=WAL")
+    db.execute("PRAGMA cache_size=-32000")
     cur = db.cursor()
 
     # load citation index from WarChest

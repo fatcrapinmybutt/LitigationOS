@@ -7,12 +7,15 @@ This script: adds indexes, runs fast dedup, installs rarfile/py7zr, extracts rem
 """
 import os, sys, sqlite3, subprocess, time
 from datetime import datetime
+from pathlib import Path
 
-LOS = r'C:\Users\andre\LitigationOS'
+LOS = str(Path(__file__).resolve().parents[2])
 DB = os.path.join(LOS, 'litigation_context.db')
 
 conn = sqlite3.connect(DB)
+conn.execute("PRAGMA busy_timeout=60000")
 conn.execute("PRAGMA journal_mode=WAL")
+conn.execute("PRAGMA cache_size=-32000")
 conn.execute("PRAGMA synchronous=NORMAL")
 cur = conn.cursor()
 
@@ -168,7 +171,7 @@ if rar_extracted + sz_extracted > 0:
                 continue
             try:
                 fsize = os.path.getsize(fpath)
-            except:
+            except OSError:
                 fsize = 0
             ext = os.path.splitext(fname)[1].lower()
             is_arch = 1 if ext in archive_exts else 0

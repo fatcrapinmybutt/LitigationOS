@@ -7,14 +7,23 @@ ex parte hearings, ex parte percentage. Compares to benchmarks, flags anomalies.
 """
 import sys, sqlite3, json, re
 from datetime import datetime
-sys.stdout.reconfigure(encoding='utf-8')
+import logging
+from pathlib import Path
 
-DB = r'C:\Users\andre\LitigationOS\litigation_context.db'
+logger = logging.getLogger(__name__)
+
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, OSError):
+    pass
+
+DB = str(Path(__file__).resolve().parents[2] / "litigation_context.db")
 
 def _connect():
     conn = sqlite3.connect(DB, timeout=120)
     conn.execute("PRAGMA busy_timeout=60000")
     conn.execute("PRAGMA journal_mode=WAL")
+    conn.execute("PRAGMA cache_size=-32000")
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -59,8 +68,8 @@ def calculate_ex_parte_rate() -> dict:
         ).fetchall()
         hearing_records = [dict(r) for r in rows]
         total_hearings = len(hearing_records)
-    except Exception:
-        pass
+    except Exception as e:
+        logger.warning("[calculate_ex_parte_rate] Failed to query hearing records: %s", e, exc_info=True)
 
     # Count ex parte hearings
     for h in hearing_records:
@@ -77,8 +86,8 @@ def calculate_ex_parte_rate() -> dict:
         try:
             rows = conn.execute(f"SELECT * FROM [{tbl}] LIMIT 100").fetchall()
             judicial_records.extend([dict(r) for r in rows])
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning("[calculate_ex_parte_rate] Failed to query table '%s': %s", tbl, e)
 
     # Additional ex parte from judicial records
     for jr in judicial_records:
@@ -161,8 +170,8 @@ def flag_anomalies() -> dict:
                     'table': tbl,
                     'record_count': count,
                 })
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning("[flag_anomalies] Failed to query judicial harm table '%s': %s", tbl, e)
 
     # Check for denied motions pattern
     denied_count = 0
@@ -177,8 +186,8 @@ def flag_anomalies() -> dict:
             desc = str(dict(r).get('description', '')).lower()
             if any(kw in desc for kw in ['denied', 'overruled', 'rejected']):
                 denied_count += 1
-    except Exception:
-        pass
+    except Exception as e:
+        logger.warning("[flag_anomalies] Failed to query motion denial patterns: %s", e, exc_info=True)
 
     if total_motions > 0:
         denial_rate = denied_count / total_motions * 100

@@ -21,12 +21,16 @@ Target structure:
   THIS_IS_THE_ONE/    - critical final filing versions (stays)
   [hidden: .agents, .copilot, .github, .vscode — untouched]
 """
+import logging
 import os
 import shutil
+from pathlib import Path
+
+logger = logging.getLogger(__name__)
 import time
 from datetime import datetime
 
-LOS = r'C:\Users\andre\LitigationOS'
+LOS = str(Path(__file__).resolve().parents[2])
 
 log_lines = []
 def log(msg):
@@ -77,8 +81,8 @@ def safe_move(src, dest_parent, dest_name=None):
             # Remove empty src
             try:
                 os.rmdir(src)
-            except:
-                pass
+            except OSError:
+                pass  # Directory not empty or already removed — expected
         except Exception as e:
             log(f"    [FAIL] Merge failed: {e}")
             failed += 1
@@ -229,7 +233,8 @@ for d in visible:
     try:
         files = sum(1 for _ in os.scandir(path) if _.is_file())
         dirs = sum(1 for _ in os.scandir(path) if _.is_dir())
-    except:
+    except OSError as e:
+        logger.debug("scandir failed for %s: %s", path, e)
         files = dirs = 0
     log(f"    {d:50s} ({files}f, {dirs}d)")
 

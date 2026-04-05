@@ -273,4 +273,4 @@ JUNK_EXTENSIONS = {
     ".DS_Store", ".thumbs.db", "desktop.ini",
 }
 
-REPO_ROOT = Path(os.environ.get("LITIGATIONOS_ROOT", r"C:\Users\andre\LitigationOS"))
+REPO_ROOT = Path(os.environ.get("LITIGATIONOS_ROOT", str(Path(__file__).resolve().parents[3])))
