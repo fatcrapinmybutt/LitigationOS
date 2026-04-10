@@ -1,0 +1,16 @@
+contradictions error: Incorrect number of bindings supplied. The current statement uses 7, and there are 6 supplied.
+contradictions error: Incorrect number of bindings supplied. The current statement uses 7, and there are 6 supplied.
+brain.evidence_registry: 47 rows
+brain.timeline_events: 28 rows
+brain.contradictions: 14 rows
+litigation_context.evidence_quotes lane=B: 11538 rows
+impeachment_matrix error: table impeachment_matrix has no column named target
+impeachment_matrix error: table impeachment_matrix has no column named target
+litigation_context.impeachment_matrix lane=B: 24 rows
+litigation_context.contradiction_map lane=B: 591 rows
+
+=== COOKING THE BOOKS PDF OCR ===
+CTB OCR error: Unknown argument: show_log
+
+=== VANDAM SCREENSHOT OCR ===
+VanDam OCR error: Unknown argument: show_log

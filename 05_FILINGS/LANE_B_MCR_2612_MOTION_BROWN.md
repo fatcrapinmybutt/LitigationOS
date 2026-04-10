@@ -59,9 +59,9 @@ Following the filing of Plaintiff's complaint in this action, defense counsel Je
 
 Cricklewood MHP LLC is a **separate and distinct legal entity** from Shady Oaks Park MHP LLC. The prior proceeding did not involve the same parties, the same claims, or a final adjudication on the merits. The inserted language was not the product of a ruling by this Court — it was inserted by Mr. Brown after the oral hearing, without authorization from the bench.
 
-### C. Shady Oaks Park MHP LLC Is a Dissolved Entity
+### C. SHADY OAKS PARK MHP LLC IS A DISSOLVED ENTITY
 
-Shady Oaks Park MHP LLC was dissolved in the State of New Jersey in 2022. Under MCL 450.4802 and applicable New Jersey law, a dissolved LLC has no legal capacity to sue, be sued, or hold property. Any judgment entered in its favor or against it is void ab initio. Mr. Brown knew or should have known of this dissolution at the time he filed the complaint and submitted the dismissal order.
+SHADY OAKS PARK MHP LLC WAS DISSOLVED IN THE STATE OF NEW JERSEY IN 2022. UNDER MCL 450.4802 AND APPLICABLE NEW JERSEY LAW, A DISSOLVED LLC HAS NO LEGAL CAPACITY TO SUE, BE SUED, OR HOLD PROPERTY. ANY JUDGMENT ENTERED IN ITS FAVOR OR AGAINST IT IS VOID AB INITIO. MR. BROWN KNEW OR SHOULD HAVE KNOWN OF THIS DISSOLUTION AT THE TIME HE FILED THE COMPLAINT AND SUBMITTED THE DISMISSAL ORDER.
 
 ### D. The Forgery Allegation Was Fabricated and Abandoned
 
@@ -93,17 +93,17 @@ Under *Adair v State of Michigan*, 470 Mich 105, 116–117, 680 NW2d 386 (2004),
 
 All four elements fail here.
 
-### Element 1: No Final Decision on the Merits
+### ELEMENT 1: NO FINAL DECISION ON THE MERITS
 
-The prior proceeding involving Cricklewood MHP LLC was dismissed. A dismissal without prejudice is not a final decision on the merits and cannot support res judicata. *Jones v State Farm Mutual Automobile Ins Co*, 202 Mich App 393, 397 (1993) ("res judicata requires a judgment on the merits, not merely a dismissal"). No court has ever adjudicated the merits of Andrew Pigors' claims regarding VIN 1646732 or the post-eviction torts at issue in this action.
+THE PRIOR PROCEEDING INVOLVING CRICKLEWOOD MHP LLC WAS DISMISSED. A DISMISSAL WITHOUT PREJUDICE IS NOT A FINAL DECISION ON THE MERITS AND CANNOT SUPPORT RES JUDICATA. *JONES V STATE FARM MUTUAL AUTOMOBILE INS CO*, 202 MICH APP 393, 397 (1993) ("RES JUDICATA REQUIRES A JUDGMENT ON THE MERITS, NOT MERELY A DISMISSAL"). NO COURT HAS EVER ADJUDICATED THE MERITS OF ANDREW PIGORS' CLAIMS REGARDING VIN 1646732 OR THE POST-EVICTION TORTS AT ISSUE IN THIS ACTION.
 
-### Element 2: Different Parties — Cricklewood MHP LLC ≠ Shady Oaks Park MHP LLC
+### ELEMENT 2: DIFFERENT PARTIES — CRICKLEWOOD MHP LLC ≠ SHADY OAKS PARK MHP LLC
 
-Res judicata requires identity of parties. *Adair*, 470 Mich at 121. Cricklewood MHP LLC is a New Jersey limited liability company. Shady Oaks Park MHP LLC is a **different** New Jersey limited liability company — separately registered, separately managed, with different principals. They are not the same entity. They are not in privity with one another for purposes of this claim (privity requires a legal relationship, not merely common ownership). The Cricklewood entity signed Andrew's lease; the Shady Oaks entity conducted the eviction. These are not the same parties.
+RES JUDICATA REQUIRES IDENTITY OF PARTIES. *ADAIR*, 470 MICH AT 121. CRICKLEWOOD MHP LLC IS A NEW JERSEY LIMITED LIABILITY COMPANY. SHADY OAKS PARK MHP LLC IS A **DIFFERENT** NEW JERSEY LIMITED LIABILITY COMPANY — SEPARATELY REGISTERED, SEPARATELY MANAGED, WITH DIFFERENT PRINCIPALS. THEY ARE NOT THE SAME ENTITY. THEY ARE NOT IN PRIVITY WITH ONE ANOTHER FOR PURPOSES OF THIS CLAIM (PRIVITY REQUIRES A LEGAL RELATIONSHIP, NOT MERELY COMMON OWNERSHIP). THE CRICKLEWOOD ENTITY SIGNED ANDREW'S LEASE; THE SHADY OAKS ENTITY CONDUCTED THE EVICTION. THESE ARE NOT THE SAME PARTIES.
 
-### Element 3: Different Claims
+### ELEMENT 3: DIFFERENT CLAIMS
 
-The prior Cricklewood proceeding involved a lease dispute. The instant action involves: (a) wrongful eviction of a titled homeowner under MCL 125.2330; (b) conversion of manufactured home chattel; (c) post-eviction property destruction; (d) fraud and misrepresentation in the dismissal order; (e) LARA license violations under MCL 125.2301; and (f) RICO predicate acts. These claims did not exist, were not raised, and could not have been raised in the prior Cricklewood proceeding.
+THE PRIOR CRICKLEWOOD PROCEEDING INVOLVED A LEASE DISPUTE. THE INSTANT ACTION INVOLVES: (A) WRONGFUL EVICTION OF A TITLED HOMEOWNER UNDER MCL 125.2330; (B) CONVERSION OF MANUFACTURED HOME CHATTEL; (C) POST-EVICTION PROPERTY DESTRUCTION; (D) FRAUD AND MISREPRESENTATION IN THE DISMISSAL ORDER; (E) LARA LICENSE VIOLATIONS UNDER MCL 125.2301; AND (F) RICO PREDICATE ACTS. THESE CLAIMS DID NOT EXIST, WERE NOT RAISED, AND COULD NOT HAVE BEEN RAISED IN THE PRIOR CRICKLEWOOD PROCEEDING.
 
 ### Element 4: Dissolved LLC = Void Standing
 

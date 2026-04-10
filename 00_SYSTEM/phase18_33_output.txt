@@ -1,0 +1,60 @@
+brain.timeline_events: 45
+brain.contradictions: 22
+main.contradiction_map lane=B: 601
+main.impeachment_matrix lane=B: 37
+damages_schedule cols: ['id', 'claim', 'legal_authority', 'damages_conservative', 'damages_aggressive', 'multiplier', 'notes']
+damages row error: table damages_schedule has no column named category
+damages row error: table damages_schedule has no column named category
+damages row error: table damages_schedule has no column named category
+damages row error: table damages_schedule has no column named category
+damages row error: table damages_schedule has no column named category
+damages row error: table damages_schedule has no column named category
+damages row error: table damages_schedule has no column named category
+damages row error: table damages_schedule has no column named category
+damages row error: table damages_schedule has no column named category
+damages row error: table damages_schedule has no column named category
+damages row error: table damages_schedule has no column named category
+damages row error: table damages_schedule has no column named category
+damages row error: table damages_schedule has no column named category
+damages error: no such column: low_estimate
+brain.evidence_registry: 56
+judicial_violations cols: ['id', 'violation_type', 'description', 'date_occurred', 'mcr_rule', 'canon', 'source_file', 'source_quote', 'severity', 'lane', 'created_at']
+main.evidence_quotes lane=B: 11552
+timeline_events cols: ['id', 'event_date', 'event_description', 'actors', 'lane', 'category', 'source_table', 'source_id', 'severity', 'filing_relevance', 'created_at']
+main.timeline_events lane=B: 1334
+Ledger OCR error: No module named 'paddle'
+acquisition_radar cols: []
+foia row error: no such table: acquisition_radar | cols: []
+foia row error: no such table: acquisition_radar | cols: []
+foia row error: no such table: acquisition_radar | cols: []
+foia row error: no such table: acquisition_radar | cols: []
+foia row error: no such table: acquisition_radar | cols: []
+foia row error: no such table: acquisition_radar | cols: []
+foia row error: no such table: acquisition_radar | cols: []
+foia row error: no such table: acquisition_radar | cols: []
+foia row error: no such table: acquisition_radar | cols: []
+foia row error: no such table: acquisition_radar | cols: []
+foia row error: no such table: acquisition_radar | cols: []
+acquisition_radar error: no such table: acquisition_radar
+
+=== SHADYOAKS_BRAIN.DB FINAL COUNTS ===
+  coercion_emails: 0
+  contradictions: 22
+  damages_schedule: 18
+  entities: 22
+  evidence_registry: 56
+  false_allegations: 3
+  judicial_cartel: 3
+  lara_intelligence: 6
+  legal_theories: 27
+  llc_chain: 9
+  post_eviction_torts: 8
+  sqlite_sequence: 12
+  timeline_events: 45
+  witnesses: 9
+
+=== LITIGATION_CONTEXT.DB LANE=B COUNTS ===
+  evidence_quotes (B): 11552
+  timeline_events (B): 1334
+  impeachment_matrix (B): 37
+  contradiction_map (B): 601

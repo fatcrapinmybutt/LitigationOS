@@ -1,0 +1,35 @@
+
+[SCANNING] D:\
+       500 files |  1004.5 MB | IONOS_ARCHIVES\system_v1\autonomos\inquisitor\plain_error.py
+     1,000 files |  1023.9 MB | epacks\CYCLE_20260221_201434\extraction_log_structured.jsonl
+     1,500 files |     5.0 GB | ganizerStudio_v2026-01-23_PRO5_QT_AI\OrganizerStudio_Qt.spec
+     2,000 files |     5.0 GB | TIONOS_ARCHIVES\system_v1\reports\contradiction_heatmap.json
+     2,500 files |     5.0 GB | GATIONOS_ARCHIVES\system_v1\schemas\AuthorityRef.schema.json
+     3,000 files |     9.5 GB | Continued Objection Hearing 2024-1507-DC\20250728_203655.jpg
+  [OK] D:\ complete: 3,225 files, 9.6 GB, 0 errors, 2.8m
+
+[SCANNING] F:\
+       500 files |  1014.7 KB | v3_ValidatedJobs\backend\modules\client_packager\__init__.py
+  [OK] F:\ complete: 608 files, 1.1 MB, 0 errors, 4.3s
+
+[SCANNING] G:\
+       500 files |     9.6 GB | G:\PHOTOS\NoReply_20250612_121525 conv 2.jpeg
+     1,000 files |    11.0 GB | G:\PHOTOS\20231116_172009_20250107182519_20250107182656.jpg
+     1,500 files |    11.5 GB | G:\PHOTOS\IMG_20240427_144520_20250107182658.jpg
+     2,000 files |    13.1 GB | G:\PHOTOS\IMG_20241020_194535_20250107182652.jpg
+     2,500 files |    14.0 GB | G:\PHOTOS\Snapchat-1965652710.jpg
+     3,000 files |    14.4 GB | apstone-develop__capstone__static__img__wordclouds__1988.png
+     3,500 files |    15.0 GB | G:\PHOTOS\Screenshot_20240514-043924.png
+  [OK] G:\ complete: 3,834 files, 15.2 GB, 0 errors, 3.3m
+
+[SCANNING] I:\
+       500 files |   226.9 MB | ctive\Affidavits\Affidavit_Parental_Alienation_Part2.pdf.txt
+Traceback (most recent call last):
+  File "D:\LitigationOS_tmp\consolidate_drives.py", line 1069, in <module>
+    main()
+  File "D:\LitigationOS_tmp\consolidate_drives.py", line 1066, in main
+    COMMANDS[cmd]()
+  File "D:\LitigationOS_tmp\consolidate_drives.py", line 345, in phase_inventory
+    print(f"  {drive_files:>8,} files | {fmt_size(drive_bytes):>10} | {fpath[-60:]}", flush=True)
+  File "encodings\cp1252.py", line 19, in encode
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 72-81: character maps to <undefined>

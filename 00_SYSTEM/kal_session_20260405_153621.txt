@@ -1,0 +1,316 @@
+==============================================================================
+  LITIGATIONOS KAL SESSION REPORT -- 20260405_153621
+  Day 250 of Father-Son Separation (since Jul 29, 2025)
+==============================================================================
+
+DATABASE CORPUS STATUS
+----------------------------------------
+  authority_chains_v2                      168,261
+  berry_mcneill_intelligence                   222
+  contradiction_map                          2,534
+  evidence_quotes                          176,222
+  file_inventory                           610,907
+  impeachment_matrix                         5,229
+  judicial_violations                        1,956
+  master_citations                          72,252
+  md_sections                              133,253
+  michigan_rules_extracted                  19,876
+  police_reports                               356
+  timeline_events                           16,886
+
+KRAKEN EVIDENCE PERSISTED TODAY: 487
+
+EVIDENCE BY CATEGORY (today)
+----------------------------------------
+  custody, PPO, judicial, housing, criminal, financial, police, medical    109
+  custody, PPO, judicial, housing, criminal, financial, police     60
+  housing                                 22
+  custody, PPO, judicial, financial, police     15
+  judicial                                15
+  custody, judicial                       14
+  custody, judicial, criminal, financial     13
+  custody, PPO, judicial, criminal        12
+  custody, PPO, judicial, housing, criminal, financial     12
+  custody, PPO, judicial, criminal, police     10
+  custody, PPO, judicial, criminal, police, medical     10
+  custody, PPO, judicial, housing, financial, police     10
+  custody, judicial, financial            10
+  housing, financial                       9
+  custody                                  8
+  custody, PPO, judicial, housing          8
+  custody, PPO, judicial, police           8
+  custody, housing, financial              8
+  custody, PPO, judicial, housing, police      7
+  judicial, financial                      7
+  custody, PPO, judicial, criminal, financial, police, medical      6
+  PPO, judicial, housing, criminal, financial      5
+  custody, PPO, financial, police          5
+  custody, PPO, judicial, criminal, medical      5
+  custody, PPO, judicial, housing, criminal, medical      5
+
+EVIDENCE BY LANE (today)
+----------------------------------------
+  B                                      304
+  E                                      159
+  A                                       12
+  D                                       10
+  CRIMINAL                                 2
+
+ADVERSARY DOSSIERS: 25 files, 6,252 total lines
+----------------------------------------
+  MCNEILL_JENNY_DOSSIER.md                         724 lines      39.0 KB
+  SHADY_OAKS_CORPORATE_DOSSIER.md                  662 lines      33.6 KB
+  WATSON_EMILY_DOSSIER.md                          626 lines      34.6 KB
+  WATSON_ALBERT_DOSSIER.md                         382 lines      21.1 KB
+  WATSON_FAMILY_DOSSIER.md                         310 lines      17.6 KB
+  ADVERSARY_NETWORK_GRAPH.md                       282 lines      14.5 KB
+  BERRY_RONALD_DOSSIER.md                          237 lines      12.9 KB
+  HOOPES_KENNETH_DOSSIER.md                        221 lines      11.7 KB
+  BROWLEY_NICOLE_DOSSIER.md                        212 lines      12.4 KB
+  BERRY_CAVAN_DOSSIER.md                           207 lines      11.3 KB
+  JUDICIAL_CARTEL_SYNTHESIS.md                     203 lines      10.1 KB
+  RUSCO_PAMELA_DOSSIER.md                          194 lines       9.5 KB
+  BARNES_JENNIFER_DOSSIER.md                       187 lines       8.5 KB
+  BRANDELL_HENRY_DOSSIER.md                        182 lines       8.6 KB
+  LADAS_HOOPES_MARIA_DOSSIER.md                    180 lines       8.6 KB
+  CAUSES_OF_ACTION_MATRIX.md                       175 lines      10.7 KB
+  MARTINI_MANDI_DOSSIER.md                         167 lines       9.0 KB
+  CROSS_ADVERSARY_MATRIX.md                        166 lines      11.1 KB
+  HILSON_DJ_DOSSIER.md                             164 lines       8.6 KB
+  KIM_DAVIS_DOSSIER.md                             162 lines       8.2 KB
+  COX_AARON_DOSSIER.md                             151 lines       6.5 KB
+  BROWN_JEREMY_DOSSIER.md                          147 lines       6.6 KB
+  DUGUID_LAUREN_DOSSIER.md                         144 lines       7.5 KB
+  VANDAM_CASSANDRA_DOSSIER.md                      132 lines       5.8 KB
+  KOSTRZEWA_DOSSIER.md                              35 lines       1.9 KB
+
+TOP 50 EVIDENCE QUOTES (by relevance, today)
+----------------------------------------
+  [01] score=0.70 lane=E cat=custody, PPO, judicial, criminal, financial, medical
+       | **A — Custody** | 2024-001507-DC | 14th Circuit, Muskegon | McNeill | Active |
+       src: FILING_READINESS_DASHBOARD_1.md
+
+  [02] score=0.70 lane=E cat=custody, PPO, judicial, criminal, financial, medical
+       | **D — PPO** | 2023-5907-PP | 14th Circuit, Muskegon | McNeill | Active |
+       src: FILING_READINESS_DASHBOARD_1.md
+
+  [03] score=0.70 lane=E cat=custody, PPO, judicial, criminal, financial, medical
+       │   └── (pending — Shady Oaks proceedings)
+       src: FILING_READINESS_DASHBOARD_1.md
+
+  [04] score=0.70 lane=E cat=custody, PPO, judicial, criminal, police
+       0000369    Judge: MCNEILL, JENNY L.
+       src: eea753cb24d8867ecf514c118b6cd50b27777b68.md.lines.txt
+
+  [05] score=0.70 lane=B cat=housing
+       To: "O'Brien, Connor (EGLE)" <OBrienC11@michigan.gov>; "Robinson, Lucy (EGLE)"
+       src: RE_ Correspondence_ Shady Oaks Park MHP VN-017235_39f00bf2.pdf
+
+  [06] score=0.70 lane=B cat=housing
+       <publichealth.environmentalhealth@co.muskegon.mi.us>; "Smith, Laura (EGLE)"
+       src: RE_ Correspondence_ Shady Oaks Park MHP VN-017235_39f00bf2.pdf
+
+  [07] score=0.70 lane=B cat=housing
+       <SMITHL16@michigan.gov>; "Worm, Michael (EGLE)" <WORMM@michigan.gov>; "Scott Pistorius"
+       src: RE_ Correspondence_ Shady Oaks Park MHP VN-017235_39f00bf2.pdf
+
+  [08] score=0.70 lane=B cat=housing
+       Subject: RE: Correspondence: Shady Oaks Park MHP VN-017235
+       src: RE_ Correspondence_ Shady Oaks Park MHP VN-017235_39f00bf2.pdf
+
+  [09] score=0.70 lane=B cat=housing
+       Attachments: Shady Oaks Park MHP – VN-017235.pdf
+       src: RE_ Correspondence_ Shady Oaks Park MHP VN-017235_39f00bf2.pdf
+
+  [10] score=0.70 lane=E cat=custody, PPO, judicial, financial, medical
+       | **J** | FOC Reports and Recommendations | [ ] Ready |
+       src: FILING_BUNDLE_CHECKLIST.md
+
+  [11] score=0.70 lane=B cat=custody, PPO, judicial, housing, criminal, financial, police, medical
+       Keywords matched: 14th circuit, affidavit, albert, andrew, arrest, attorney, brief, cody, contempt, court, custody, emil
+       src: conv_2025-09-26_omnibus-motion-draft_conversations-3.txt
+
+  [12] score=0.70 lane=B cat=custody, PPO, judicial, housing, criminal, financial, police, medical
+       People mentioned: Cody Watson, McNeill, Emily, Lori Watson, EMILY A.
+       src: conv_2025-09-26_omnibus-motion-draft_conversations-3.txt
+
+  [13] score=0.70 lane=B cat=custody, PPO, judicial, housing, criminal, financial, police, medical
+       WATSON, Lori, Andrew, Emily Watson, Emily A.
+       src: conv_2025-09-26_omnibus-motion-draft_conversations-3.txt
+
+  [14] score=0.70 lane=B cat=custody, PPO, judicial, housing, criminal, financial, police, medical
+       Watson, ANDREW, mcneill, Albert Watson, emily
+       src: conv_2025-09-26_omnibus-motion-draft_conversations-3.txt
+
+  [15] score=0.70 lane=B cat=custody, PPO, judicial, housing, criminal, financial, police, medical
+       i need an omnibus motion, to have judge jenny l mcneill recused, to petition the chief judge, to strike the PPO/dissolve
+       src: conv_2025-09-26_omnibus-motion-draft_conversations-3.txt
+
+  [16] score=0.70 lane=A cat=financial
+       Preparedby: JenniferL.Barnes,P55406
+       src: custody scanned_0064.pdf
+
+  [17] score=0.70 lane=B cat=custody, judicial, housing, criminal, financial, medical
+       payments shall be made through the friend of the court, court clerk, or state disbursement unit.
+       src: MCL-ACT-91-OF-1970_1.pdf
+
+  [18] score=0.70 lane=B cat=custody, judicial, housing, criminal, financial, medical
+       parte interim order is entered shall have a true copy of the order served on the friend of the court and the
+       src: MCL-ACT-91-OF-1970_1.pdf
+
+  [19] score=0.70 lane=B cat=custody, judicial, housing, criminal, financial, medical
+       motion served on the friend of the court and the party who obtained the ex parte interim order.
+       src: MCL-ACT-91-OF-1970_1.pdf
+
+  [20] score=0.70 lane=B cat=custody, judicial, housing, criminal, financial, medical
+       (14) If the opposing party files a written objection to the ex parte interim order, the friend of the court shall
+       src: MCL-ACT-91-OF-1970_1.pdf
+
+  [21] score=0.70 lane=B cat=custody, judicial, housing, criminal, financial, medical
+       proceed without assistance of counsel, the friend of the court shall schedule a hearing with the court that shall
+       src: MCL-ACT-91-OF-1970_1.pdf
+
+  [22] score=0.70 lane=B cat=custody, PPO, judicial, housing, criminal, financial, police, medical
+       Ineffective Assistance of Court-Appointed Counsel — The Martini "Don't Speak" Email  6
+       src: ASSEMBLED_FILING.md
+
+  [23] score=0.70 lane=B cat=custody, PPO, judicial, housing, criminal, financial, police, medical
+       Officer Ella Randall's August 7, 2025 report (Case NS2505044, Badge #47437) recorded Albert Watson's admission that the 
+       src: ASSEMBLED_FILING.md
+
+  [24] score=0.70 lane=B cat=custody, PPO, judicial, housing, criminal, financial, police, medical
+       **Albert Watson (Petitioner's father):** Physically assaulted Respondent during a custody exchange — throwing PPO papers
+       src: ASSEMBLED_FILING.md
+
+  [25] score=0.70 lane=B cat=custody, PPO, judicial, housing, criminal, financial, police, medical
+       Ineffective Assistance of Court-Appointed Counsel — The Martini "Don't Speak" Email
+       src: ASSEMBLED_FILING.md
+
+  [26] score=0.70 lane=B cat=custody, PPO, judicial, housing, criminal, financial, police, medical
+       On **February 28, 2025, at 1:05 PM**, court-appointed attorney **Mandi Martini** sent Respondent an email instructing hi
+       src: ASSEMBLED_FILING.md
+
+  [27] score=0.70 lane=E cat=judicial, financial
+       Watson (represented by Ronald Berry, Esq.)
+       src: MSC_FILING_FORMS.pdf
+
+  [28] score=0.70 lane=E cat=judicial, financial
+       Judge McNeill, Court Administrator, Watson (c/o Berry), Berry
+       src: MSC_FILING_FORMS.pdf
+
+  [29] score=0.70 lane=B cat=housing
+       <publichealth.environmentalhealth@co.muskegon.mi.us>; "Smith, Laura (EGLE)"
+       src: EX_MISC_Correspondence_ Shady Oaks Park MHP VN-017235_1773490264.pdf
+
+  [30] score=0.70 lane=B cat=housing
+       <SMITHL16@michigan.gov>; "Worm, Michael (EGLE)" <WORMM@michigan.gov>; "O'Brien, Connor
+       src: EX_MISC_Correspondence_ Shady Oaks Park MHP VN-017235_1773490264.pdf
+
+  [31] score=0.70 lane=B cat=housing
+       (EGLE)" <OBrienC11@michigan.gov>
+       src: EX_MISC_Correspondence_ Shady Oaks Park MHP VN-017235_1773490264.pdf
+
+  [32] score=0.70 lane=B cat=housing
+       Subject: Correspondence: Shady Oaks Park MHP VN-017235
+       src: EX_MISC_Correspondence_ Shady Oaks Park MHP VN-017235_1773490264.pdf
+
+  [33] score=0.70 lane=B cat=housing
+       Attachments: Shady Oaks Park MHP – VN-017235.pdf
+       src: EX_MISC_Correspondence_ Shady Oaks Park MHP VN-017235_1773490264.pdf
+
+  [34] score=0.70 lane=E cat=judicial, financial
+       0000013  The following is important information should you later seek to obtain the friend of the court's help to enforc
+       src: b93cfd59eab16f2a42180f3ecc8bbac3a7096645.md.lines.txt
+
+  [35] score=0.70 lane=E cat=judicial, financial
+       The bills must be presented to the friend of the court on or before the following: one year after the expense was incurr
+       src: b93cfd59eab16f2a42180f3ecc8bbac3a7096645.md.lines.txt
+
+  [36] score=0.70 lane=E cat=judicial, financial
+       In the event it is necessary for the friend of the court to enforce payment of the expenses, you must have supporting bi
+       src: b93cfd59eab16f2a42180f3ecc8bbac3a7096645.md.lines.txt
+
+  [37] score=0.70 lane=E cat=judicial, financial
+       You must keep a copy of this form and all attachments for the friend of the court to use in the event enforcement action
+       src: b93cfd59eab16f2a42180f3ecc8bbac3a7096645.md.lines.txt
+
+  [38] score=0.70 lane=E cat=judicial, financial
+       0000034  Telephone  no.Friend of court address
+       src: b93cfd59eab16f2a42180f3ecc8bbac3a7096645.md.lines.txt
+
+  [39] score=0.70 lane=E cat=custody, PPO, judicial, criminal
+       - Instruction by Judge McNeill to return documents (not to clerk)
+       src: runs_embedded__runs__run_20260211_031143__extracted_text__D000220.txt
+
+  [40] score=0.70 lane=E cat=custody, PPO, judicial, criminal
+       Strong evidence suggesting Judge McNeill may have violated MCR 2.003
+       src: runs_embedded__runs__run_20260211_031143__extracted_text__D000220.txt
+
+  [41] score=0.70 lane=E cat=custody, PPO, judicial, criminal
+       Judge McNeill's ex parte communications
+       src: runs_embedded__runs__run_20260211_031143__extracted_text__D000220.txt
+
+  [42] score=0.70 lane=E cat=custody, PPO, judicial, criminal
+       FOC communication/notice problems
+       src: runs_embedded__runs__run_20260211_031143__extracted_text__D000220.txt
+
+  [43] score=0.70 lane=E cat=custody, PPO, judicial, criminal
+       ✓ Obtain all orders issued by Judge McNeill in this case
+       src: runs_embedded__runs__run_20260211_031143__extracted_text__D000220.txt
+
+  [44] score=0.70 lane=B cat=custody, judicial, housing, financial, police
+       HENRY BRANDEL; and JOHN DOES 1–5,
+       src: MASTER_CURRENT (5)(2).txt
+
+  [45] score=0.70 lane=B cat=custody, judicial, housing, financial, police
+       Defendants Shady Oaks Park MHP LLC and Shady Oaks MHP LLC are Michigan LLCs involved in operating the park; Homes of Ame
+       src: MASTER_CURRENT (5)(2).txt
+
+  [46] score=0.70 lane=B cat=custody, judicial, housing, financial, police
+       Habitability defects: raw sewage leaks persisted near Plaintiff’s lot through Spring–Summer 2025; EGLE issued violations
+       src: MASTER_CURRENT (5)(2).txt
+
+  [47] score=0.70 lane=B cat=custody, judicial, housing, financial, police
+       by Henry Brandel); sheriff was present; no lawful scope for destruction beyond authorized officer actions.
+       src: MASTER_CURRENT (5)(2).txt
+
+  [48] score=0.70 lane=B cat=custody, judicial, housing, financial, police
+       Exhibit B-1 — EGLE Violation Letters/Notices [PLACEHOLDER]
+       src: MASTER_CURRENT (5)(2).txt
+
+  [49] score=0.70 lane=E cat=custody, PPO, judicial, financial, police
+       │   ├── foc47.pdf             (Proposed Friend of Court Order)
+       src: D000049(5).txt
+
+  [50] score=0.70 lane=E cat=custody, PPO, judicial, financial, police
+       │   ├── foc48.pdf             (Friend of Court Order)
+       src: D000049(5).txt
+
+
+==============================================================================
+  KAL SESSION SUMMARY
+==============================================================================
+  Rounds completed this session: 20 (5 adversary + 5 judicial + 5 custody + 5 ppo)
+  Total unique files processed: 709+
+  HIGH findings: 143+  MEDIUM: 88+  LOW: 462+
+  Evidence rows persisted: 487 (today)
+  Separation from L.D.W.: 250 days
+
+  Focus area breakdown:
+    Adversary (5 rounds): 69 HIGH / 43 MEDIUM / 219 LOW
+    Judicial  (5 rounds): 22 HIGH / 13 MEDIUM / 40 LOW
+    Custody   (5 rounds): 11 HIGH /  8 MEDIUM / 55 LOW
+    PPO       (5 rounds): 12 HIGH /  9 MEDIUM / 53 LOW
+
+  Top adversary mentions (cumulative):
+    Judge McNeill: 994  |  Emily Watson: 741  |  FOC: 725
+    Shady Oaks: 636  |  EGLE: 294  |  Albert Watson: 224
+
+  Co-occurrence network (top 5):
+    Emily <-> McNeill: 66  |  FOC <-> McNeill: 43
+    Emily <-> FOC: 34  |  Albert <-> Emily: 33  |  Albert <-> McNeill: 28
+
+  Evolution intelligence:
+    Best yield: .docx 52.6%, .csv 33.3%, .pdf 31.0%, .txt 30.2%
+    Drive yield: D:\ 50.0%, C:\ 20.4%
+==============================================================================

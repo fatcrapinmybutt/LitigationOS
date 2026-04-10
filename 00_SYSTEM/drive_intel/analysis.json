@@ -1,0 +1,120 @@
+{
+  "generated": "2026-04-04T16:53:58",
+  "total_files": 2097133125632,
+  "drives": {
+    "I:": {
+      "CRITICAL": {
+        "count": 191551,
+        "bytes": 100478017217
+      },
+      "OTHER": {
+        "count": 4288,
+        "bytes": 2967707793
+      },
+      "ARCHIVE": {
+        "count": 65,
+        "bytes": 734078083
+      },
+      "DATA_LARGE": {
+        "count": 11,
+        "bytes": 369513100
+      },
+      "DOCUMENT": {
+        "count": 4013,
+        "bytes": 2213650779
+      },
+      "DATABASE": {
+        "count": 14,
+        "bytes": 10899456
+      },
+      "IMAGE": {
+        "count": 1235,
+        "bytes": 569635660
+      },
+      "CODE": {
+        "count": 5823,
+        "bytes": 52007503
+      }
+    },
+    "G:": {
+      "DATABASE": {
+        "count": 9,
+        "bytes": 8638775296
+      },
+      "CRITICAL": {
+        "count": 356,
+        "bytes": 1579550883
+      },
+      "IMAGE": {
+        "count": 3349,
+        "bytes": 5997368063
+      },
+      "ARCHIVE": {
+        "count": 9,
+        "bytes": 48151200
+      },
+      "OTHER": {
+        "count": 111,
+        "bytes": 20359420
+      }
+    },
+    "D:": {
+      "DATABASE": {
+        "count": 57,
+        "bytes": 2370871296
+      },
+      "OTHER": {
+        "count": 1125,
+        "bytes": 6440793846
+      },
+      "MEDIA": {
+        "count": 15,
+        "bytes": 873983860
+      },
+      "ARCHIVE": {
+        "count": 3,
+        "bytes": 162798114
+      },
+      "DOCUMENT": {
+        "count": 1268,
+        "bytes": 267239661
+      },
+      "DATA_LARGE": {
+        "count": 1,
+        "bytes": 22237551
+      },
+      "IMAGE": {
+        "count": 58,
+        "bytes": 166362428
+      },
+      "CODE": {
+        "count": 698,
+        "bytes": 8215901
+      }
+    },
+    "F:": {
+      "DOCUMENT": {
+        "count": 1,
+        "bytes": 312060
+      },
+      "CRITICAL": {
+        "count": 607,
+        "bytes": 860549
+      }
+    }
+  },
+  "redundant": {
+    "count": 0,
+    "bytes": 0
+  },
+  "critical": {
+    "count": 192514,
+    "bytes": 102058428649
+  },
+  "unique": {
+    "count": 22153,
+    "bytes": 31934961070
+  },
+  "cross_drive_dupes": 972,
+  "external_db_refs": 479896
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.623" timestamp="2026-03-28T19:26:08.117250-04:00" hostname="DESKTOP-HELQGG5"><testcase classname="" name="00_SYSTEM.daemon.tests.test_core" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\Users\andre\LitigationOS\00_SYSTEM\daemon\tests\test_core.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+importlib\__init__.py:90: in import_module
+    ???
+test_core.py:15: in &lt;module&gt;
+    from daemon.core import DaemonCore
+..\core.py:21: in &lt;module&gt;
+    from .config import ConfigManager
+..\config.py:10: in &lt;module&gt;
+    import yaml
+E   ModuleNotFoundError: No module named 'yaml'</error></testcase></testsuite></testsuites>

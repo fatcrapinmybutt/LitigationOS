@@ -1,0 +1,38 @@
+damages_schedule cols: ['id', 'claim', 'legal_authority', 'damages_conservative', 'damages_aggressive', 'multiplier', 'notes']
+damages_schedule inserted: 13, errors: 0
+damages_schedule total: 31
+acquisition_radar table created/verified
+acquisition_radar inserted: 11, errors: 0
+acquisition_radar total: 11
+coercion_emails cols: ['id', 'date', 'from_entity', 'to_party', 'subject', 'summary', 'legal_significance', 'file_path', 'exhibit_id']
+coercion_emails cols after ensure: ['id', 'date', 'from_entity', 'to_party', 'subject', 'summary', 'legal_significance', 'file_path', 'exhibit_id']
+coercion err: table coercion_emails has no column named sender
+coercion err: table coercion_emails has no column named sender
+coercion err: table coercion_emails has no column named sender
+coercion_emails inserted: 0
+coercion_emails total: 0
+judicial_violations (housing) inserted: 3
+
+=== BRAIN DB FINAL COUNTS ===
+  acquisition_radar: 11
+  coercion_emails: 0
+  contradictions: 22
+  damages_schedule: 31
+  entities: 22
+  evidence_registry: 56
+  false_allegations: 3
+  judicial_cartel: 3
+  lara_intelligence: 6
+  legal_theories: 27
+  llc_chain: 9
+  post_eviction_torts: 8
+  sqlite_sequence: 13
+  timeline_events: 45
+  witnesses: 9
+
+=== LITIGATION_CONTEXT LANE=B COUNTS ===
+  evidence_quotes (B): 11552
+  timeline_events (B): 1334
+  impeachment_matrix: no such column: lane
+  contradiction_map (B): 601
+  judicial_violations (B): 13

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="11.633" timestamp="2026-03-23T22:21:16.913815-04:00" hostname="DESKTOP-HELQGG5"><testcase classname="00_SYSTEM.mcp_server.tests.test_mcp_basic.TestErrorCodes" name="test_error_codes_exist" time="0.012"><failure message="AssertionError: False is not true">tests\test_mcp_basic.py:226: in test_error_codes_exist
+    self.assertTrue(hasattr(ErrorCode, "ERR_CIRCUIT_OPEN"))
+E   AssertionError: False is not true</failure></testcase></testsuite></testsuites>

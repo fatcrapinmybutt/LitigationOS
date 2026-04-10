@@ -1,0 +1,209 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║        COMPLETE LITIGATIONOS FILING MARKDOWN FILE INVENTORY (10 Filings)      ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+┌─ F2: SHADY OAKS 9-COUNT COMPLAINT (10 files)
+│  Directory: C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT
+├─────────────────────────────────────────
+│  C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\01_AMENDED_COMPLAINT_COVER.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\02_EXHIBIT_INDEX_MASTER.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\03_DAMAGES_CALCULATION_FINAL.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\04_CORPORATE_DISCLOSURE_ENHANCED.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\05_TRO_APPLICATION.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\06_SUMMONS_PACKAGE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\07_FILING_CHECKLIST.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\08_BRIEF_IN_SUPPORT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\09_AFFIDAVIT_ANDREW_PIGORS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\complaint_shady_oaks_circuit_court.md
+└──────────────────────────────────────────
+
+┌─ F3: MCR 2.003 DISQUALIFICATION MOTION (6 files)
+│  Directory: C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION
+├─────────────────────────────────────────
+│  C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION\AFFIDAVIT_OF_BIAS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION\BRIEF_IN_SUPPORT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION\EXHIBIT_INDEX.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION\FILING_CHECKLIST.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION\MOTION_FOR_DISQUALIFICATION.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION\STATISTICAL_ANALYSIS_EXHIBIT.md
+└──────────────────────────────────────────
+
+┌─ F5: MSC ORIGINAL ACTION (9 files)
+│  Directory: C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL
+├─────────────────────────────────────────
+│  C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\01_PETITION_SUPERINTENDING_CONTROL.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\02_BRIEF_IN_SUPPORT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\03_AFFIDAVIT_OF_ANDREW_PIGORS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\04_APPENDIX_AND_EXHIBIT_INDEX.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\05_PROPOSED_ORDER.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\06_PROOF_OF_SERVICE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\07_FEE_WAIVER_MOTION.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\08_COVER_LETTER.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\09_FILING_CHECKLIST.md
+└──────────────────────────────────────────
+
+┌─ F6: JTC FORMAL COMPLAINT (6 files)
+│  Directory: C:\Users\andre\LitigationOS\01_FILINGS\JTC
+├─────────────────────────────────────────
+│  C:\Users\andre\LitigationOS\01_FILINGS\JTC\01_JTC_REQUEST_FOR_INVESTIGATION.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\JTC\02_NARRATIVE_OF_MISCONDUCT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\JTC\03_STATISTICAL_ANALYSIS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\JTC\04_EXHIBIT_INDEX.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\JTC\05_CERTIFICATE_OF_SERVICE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\JTC\06_FILING_CHECKLIST.md
+└──────────────────────────────────────────
+
+┌─ F10: COA EMERGENCY MOTION FOR STAY (6 files)
+│  Directory: C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY
+├─────────────────────────────────────────
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY\AFFIDAVIT_IN_SUPPORT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY\APPLICATION_FOR_LEAVE_TO_APPEAL.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY\BRIEF_IN_SUPPORT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY\EMERGENCY_MOTION_FOR_STAY.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY\EXHIBIT_INDEX.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY\FILING_CHECKLIST.md
+└──────────────────────────────────────────
+
+┌─ F1: EMERGENCY TRO MOTION (163 files) - First 30 shown
+│  Directory: C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY
+├─────────────────────────────────────────
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\00_FILING_CHECKLIST.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\00_MASTER_BRIEF.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\01_EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\01_MDHHS_CPS_COMPLAINT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\02_EXHIBIT_GRAFT_PARAGRAPHS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\02_EXHIBIT_INDEX.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\02_LEGAL_AUTHORITY_INDEX.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\02_MDHHS_EVIDENCE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\02_MOTION_TERMINATE_PPO.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\03_BUNDLE_SPECIFICATIONS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\03_EXHIBIT_FOUNDATION.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\03_LARA_HOUSING_COMPLAINT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\03_MOTION_CONTEMPT_SHOW_CAUSE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\03_VERIFICATION_AFFIDAVIT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\04_CERTIFICATE_OF_SERVICE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\04_LARA_EVIDENCE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\04_MOTION_DISQUALIFY_JUDGE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\04_PROOF_OF_SERVICE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\05_EMERGENCY_APPLICATION_EVIDENCE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\05_EXHIBIT_LIST.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\05_HUD_ADMIN_COMPLAINT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\05_MOTION_TERMINATE_PPO_v3.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\05_MOTION_VACATE_EX_PARTE_ORDERS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\05_READINESS_ASSESSMENT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\06_ADMIN_FILING_INSTRUCTIONS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\06_COMPLIANCE_MATRIX.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\06_FILING_INSTRUCTIONS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\06_MOTION_CHANGE_OF_VENUE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\07_ADMIN_READINESS_SCORES.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\07_AFFIDAVIT_ANDREW_PIGORS.md
+│  ... (133 more files) ...
+└──────────────────────────────────────────
+
+┌─ F4: FEDERAL §1983 CIVIL RIGHTS (90 files) - First 30 shown
+│  Directory: C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983
+├─────────────────────────────────────────
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\00_MASTER_BRIEF.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\01_COMPLAINT_1983.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\01_EDMI_VENUE_ANALYSIS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\01_HUD_COMPLAINT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\01_SECTION_1983_COMPLAINT_FRAMEWORK.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\01_SIXTH_CIRCUIT_APPEAL_FRAMEWORK.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\02_FEDERAL_COMPLAINT_WDMI.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\02_FHA_CIVIL_ACTION.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\02_IMMUNITY_ANALYSIS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\02_IMMUNITY_DEFENSE_MATRIX.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\02_SIXTH_CIRCUIT_INSTRUCTIONS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\03_CIVIL_COVER_SHEET_JS44.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\03_EVIDENCE_COMPILATION_2.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\03_EVIDENCE_COMPILATION.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\03_IFP_APPLICATION.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\04_EVIDENCE_COMPILATION.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\04_FILING_INSTRUCTIONS_2.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\04_FILING_INSTRUCTIONS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\04_VERIFICATION.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\05_CERTIFICATE_OF_SERVICE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\05_DISCOVERY_PLAN.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\05_FILING_READINESS_SCORE_2.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\05_FILING_READINESS_SCORE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\05_READINESS_ASSESSMENT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\05_USDC__FEDERAL_1983_COMPLAINT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\06_COMPLIANCE_MATRIX.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\06_EXHIBIT_LIST.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\06_SERVICE_PLAN.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\07_FILING_INSTRUCTIONS_2.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983\07_FILING_INSTRUCTIONS.md
+│  ... (60 more files) ...
+└──────────────────────────────────────────
+
+┌─ F9: COA APPELLATE BRIEF (125 files) - First 30 shown
+│  Directory: C:\Users\andre\LitigationOS\01_FILINGS\COA_366810
+├─────────────────────────────────────────
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\00_MASTER_BRIEF.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\01_APPELLANTS_BRIEF_ON_APPEAL.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\01_APPLICATION_LEAVE_TO_APPEAL.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\01_CERT_PETITION_FRAMEWORK.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\02_BRIEF_IN_SUPPORT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\02_COA_APPLICATION_LEAVE_APPEAL_v3.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\02_SCOTUS_QUESTIONS_PRESENTED.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\02_TABLE_OF_CONTENTS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\03_APPENDIX_INDEX.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\03_BUNDLE_SPECIFICATIONS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\03_FILING_INSTRUCTIONS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\03_LEGAL_ARGUMENTS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\03_TABLE_OF_AUTHORITIES.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\04_ORIGINAL_ACTION_SUPERINTENDING.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\04_READINESS_SCORE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\04_STATEMENT_OF_FACTS_EXPANDED.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\05_APPENDIX_INDEX.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\05_FILING_INSTRUCTIONS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\05_READINESS_ASSESSMENT.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\06_CERTIFICATE_OF_SERVICE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\06_COMPLIANCE_MATRIX.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\06_FILING_READINESS_SCORE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\07_PROOF_OF_FILING.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\08_CONSTITUTIONAL_SECTIONS.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\08_FILING_INSTRUCTIONS_COA.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\09_READINESS_SCORE.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\09_REPLY_TEMPLATES.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\32b96621-7b62-4848-8873-28ac6217155f__checkpoints__004-complete-appellate-filing-pack.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\32b96621-7b62-4848-8873-28ac6217155f__checkpoints__005-appellate-document-audit-initi.md
+│  C:\Users\andre\LitigationOS\01_FILINGS\COA_366810\41_APPELLATE_JOURNAL.md
+│  ... (95 more files) ...
+└──────────────────────────────────────────
+
+┌─ F7: CUSTODY MODIFICATION MOTION - Key Locations
+│  Primary: C:\Users\andre\LitigationOS\01_FILINGS\COURT_READY\07_CUSTODY_MODIFICATION.md
+│  Extended: C:\Users\andre\LitigationOS\01_FILINGS\TRIAL_14TH (40+ custody files)
+│  Key Files:
+│    • C:\Users\andre\LitigationOS\01_FILINGS\TRIAL_14TH\MOTION_MODIFY_CUSTODY_V4.md
+│    • C:\Users\andre\LitigationOS\01_FILINGS\TRIAL_14TH\MOTION_EMERGENCY_CUSTODY.md
+│    • C:\Users\andre\LitigationOS\01_FILINGS\TRIAL_14TH\MOTION_CHILD_SUPPORT_MODIFICATION.md
+└──────────────────────────────────────────
+
+┌─ F8: PPO TERMINATION MOTION - Key Locations
+│  Primary: C:\Users\andre\LitigationOS\01_FILINGS\COURT_READY\08_PPO_TERMINATION.md
+│  Extended: EMERGENCY, TRIAL_14TH, CLERK_READY (30+ PPO-related files)
+│  Key Files:
+│    • C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\02_MOTION_TERMINATE_PPO.md
+│    • C:\Users\andre\LitigationOS\01_FILINGS\CLERK_READY\MOTION_DISSOLVE_PPO.md
+│    • C:\Users\andre\LitigationOS\01_FILINGS\TRIAL_14TH\MOTION_TERMINATE_PPO.md
+└──────────────────────────────────────────
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                              SUMMARY STATISTICS                               ║
+╠════════════════════════════════════════════════════════════════════════════════╣
+║ F1: Emergency TRO (Shady Oaks)              163 markdown files               ║
+║ F2: Shady Oaks 9-Count Complaint             10 markdown files               ║
+║ F3: MCR 2.003 Disqualification               6 markdown files               ║
+║ F4: Federal §1983 Civil Rights              90 markdown files               ║
+║ F5: MSC Original Action                      9 markdown files               ║
+║ F6: JTC Formal Complaint                     6 markdown files               ║
+║ F7: Custody Modification                    50+ markdown files              ║
+║ F8: PPO Termination                         30+ markdown files              ║
+║ F9: COA Appellate Brief (366810)           125 markdown files               ║
+║ F10: COA Emergency Motion for Stay           6 markdown files               ║
+║────────────────────────────────────────────────────────────────────────────────║
+║ TOTAL ACROSS ALL 10 FILINGS:              ~500+ markdown files               ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+

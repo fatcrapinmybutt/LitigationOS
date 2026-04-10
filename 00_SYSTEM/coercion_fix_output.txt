@@ -1,0 +1,19 @@
+coercion_emails inserted: 3
+coercion_emails total: 3
+
+=== BRAIN DB FINAL COUNTS ===
+  acquisition_radar: 11
+  coercion_emails: 3
+  contradictions: 22
+  damages_schedule: 31
+  entities: 22
+  evidence_registry: 56
+  false_allegations: 3
+  judicial_cartel: 3
+  lara_intelligence: 6
+  legal_theories: 27
+  llc_chain: 9
+  post_eviction_torts: 8
+  sqlite_sequence: 14
+  timeline_events: 45
+  witnesses: 9

@@ -1,0 +1,207 @@
+[
+  {
+    "file": "C:\\Users\\andre\\LitigationOS\\06_DATA\\editorconfig.tmLanguage_1.json",
+    "ext": ".json",
+    "size": 10208,
+    "content_len": 9827,
+    "adversaries": {},
+    "legal": {},
+    "categories": [],
+    "key_quotes": [],
+    "value": "LOW",
+    "value_score": 0
+  },
+  {
+    "file": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\F03_DISQUALIFICATION\\02_DISQUALIFICATION_MOTION.pdf",
+    "ext": ".pdf",
+    "size": 18966,
+    "content_len": 9892,
+    "adversaries": {
+      "Emily Watson": 3,
+      "Judge McNeill": 7,
+      "Albert Watson": 1
+    },
+    "legal": {
+      "MCR": [
+        "MCR\r\n2.003",
+        "MCR 2.003",
+        "MCR 3.207"
+      ],
+      "MCL": [
+        "MCL 600.1561"
+      ],
+      "Case Law": [
+        "",
+        "App "
+      ]
+    },
+    "categories": [
+      "custody",
+      "PPO",
+      "judicial",
+      "criminal",
+      "police"
+    ],
+    "key_quotes": [
+      "significant doubt that Judge McNeill could maintain impartiality",
+      "GRANT this Motion for Disqualification of Judge McNeill pursuant to MCR",
+      "McNeill is hereby DISQUALIFIED from further proceedings in",
+      "McNeill, that the facts stated therein are true to the best of my knowledge,",
+      "F NSPD Incident Report NS2505044 (Albert Watson"
+    ],
+    "value": "HIGH",
+    "value_score": 25
+  },
+  {
+    "file": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\DRAFTS\\JTC_SUPPLEMENTAL_BRIEF_V4_1.md",
+    "ext": ".md",
+    "size": 26341,
+    "content_len": 26250,
+    "adversaries": {
+      "Emily Watson": 3,
+      "Judge McNeill": 12,
+      "Albert Watson": 2,
+      "Lori Watson": 3,
+      "Ronald Berry": 8
+    },
+    "legal": {
+      "MCR": [
+        "MCR 3.207",
+        "MCR 2.119",
+        "MCR 3.206",
+        "MCR 3.210",
+        "MCR 9.200",
+        "MCR 9.205",
+        "MCR 2.003",
+        "MCR 2.517"
+      ],
+      "MCL": [
+        "MCL 722.23",
+        "MCL 722.27",
+        "MCL 552.511"
+      ],
+      "MRE": [
+        "MRE 103",
+        "MRE 611"
+      ],
+      "Case Law": [
+        ""
+      ]
+    },
+    "categories": [
+      "custody",
+      "judicial",
+      "police",
+      "medical"
+    ],
+    "key_quotes": [
+      "McNeill, judge of the 14th Judicial Circuit Court, Muskegon County, Michigan",
+      "**Violation:** Judge McNeill entered five (5) ex parte orders on a single day (August 8, 2025) based on an **unverified, unsworn** motion, without compliance with the procedural safeguards of MCR 3",
+      "**USB Recording pre-reviewed in chambers:** Evidence in the record indicates that Judge McNeill received and considered a USB flash-drive containing audio recording submitted ex parte \u2014 pre-listened i",
+      "**Ron Berry voicemail \u2014 ex parte evidence taint (Berry Investigation Finding #1):** Ron Berry's voicemail was listed as **Item #6** in Plaintiff's line-by-line objection to ex parte evidence",
+      "Judge McNeill refused to review them"
+    ],
+    "value": "HIGH",
+    "value_score": 32
+  },
+  {
+    "file": "D:\\EVIDENCE\\(=_20251002_132308_0008.pdf",
+    "ext": ".pdf",
+    "size": 74334,
+    "content_len": 2397,
+    "adversaries": {
+      "Ronald Berry": 1
+    },
+    "legal": {},
+    "categories": [
+      "custody",
+      "police"
+    ],
+    "key_quotes": [
+      "flash drive labeled \"Andrews Voicemail to Ron Berry\""
+    ],
+    "value": "MEDIUM",
+    "value_score": 6
+  },
+  {
+    "file": "C:\\Users\\andre\\LitigationOS\\06_DATA\\TEXT\\lcms.txt",
+    "ext": ".txt",
+    "size": 1354,
+    "content_len": 1354,
+    "adversaries": {},
+    "legal": {},
+    "categories": [
+      "financial"
+    ],
+    "key_quotes": [],
+    "value": "LOW",
+    "value_score": 1
+  },
+  {
+    "file": "C:\\Users\\andre\\Favorites\\LITIGATION_FILING_PACKAGE\\PKG_F4_FEDERAL_S1983_COMPLAINT\\06_CAPTION.md",
+    "ext": ".md",
+    "size": 295,
+    "content_len": 283,
+    "adversaries": {
+      "Emily Watson": 1,
+      "Judge McNeill": 1
+    },
+    "legal": {},
+    "categories": [],
+    "key_quotes": [],
+    "value": "MEDIUM",
+    "value_score": 6
+  },
+  {
+    "file": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\PDF\\exhibits_0080 (2)_1.pdf",
+    "ext": ".pdf",
+    "size": 280648,
+    "content_len": 1809,
+    "adversaries": {},
+    "legal": {},
+    "categories": [],
+    "key_quotes": [],
+    "value": "LOW",
+    "value_score": 0
+  },
+  {
+    "file": "C:\\Users\\andre\\Desktop\\COURT_FILING_PACKETS\\txt\\JTC_Print_Order_Master_2025-10-29_with_bookmarks_footer_toc__p0435_1.txt",
+    "ext": ".txt",
+    "size": 4515,
+    "content_len": 4508,
+    "adversaries": {},
+    "legal": {
+      "MCR": [
+        "MCR 7.312"
+      ]
+    },
+    "categories": [],
+    "key_quotes": [],
+    "value": "LOW",
+    "value_score": 2
+  },
+  {
+    "file": "C:\\Users\\andre\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\share\\doc\\rust\\html\\core\\arch\\aarch64\\fn.vreinterpret_p64_u8.html",
+    "ext": ".html",
+    "size": 4132,
+    "content_len": 4127,
+    "adversaries": {},
+    "legal": {},
+    "categories": [],
+    "key_quotes": [],
+    "value": "LOW",
+    "value_score": 0
+  },
+  {
+    "file": "C:\\Users\\andre\\LitigationOS\\01_EVIDENCE\\CUSTODY\\channel-routing_001.md",
+    "ext": ".md",
+    "size": 3613,
+    "content_len": 2391,
+    "adversaries": {},
+    "legal": {},
+    "categories": [],
+    "key_quotes": [],
+    "value": "LOW",
+    "value_score": 0
+  }
+]

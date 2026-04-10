@@ -1,0 +1,45 @@
+SHADYOAKS-DESTRUCTION File List Statistics
+==================================================
+Total unique paths: 4104
+From List1 only: 2920
+From List2 (incremental): 1184
+
+By Drive:
+  C:\ — 1701 files
+  D:\ — 2 files
+  F:\ — 6 files
+  G:\ — 12 files
+  I:\ — 2380 files
+  J:\ — 3 files
+
+Top 30 Extensions:
+  .pdf            848
+  .txt            626
+  .json           515
+  .md             450
+  .csv            359
+  .py             325
+  .zip            173
+  .docx           149
+  .jpeg           96
+  (no extension)  75
+  .jpg            62
+  .jsonl          53
+  .png            40
+  .bat            40
+  .pyc            32
+  .cypher         31
+  .yml            24
+  .doc            23
+  .ps1            18
+  .sh             17
+  .dot            14
+  .html           13
+  .js             11
+  .ts             10
+  .mmd            10
+  .xlsx           8
+  .odt            6
+  .sqlite         6
+  .cmd            5
+  .rtf            5

@@ -1,0 +1,350 @@
+{
+  "timestamp": "2026-04-07T14:52:04.318751",
+  "total_filings": 17,
+  "filings_advanced": 10,
+  "average_egcp": 68.1,
+  "bates_entries": 137,
+  "separation_days": 252,
+  "scores": {
+    "F1": {
+      "vehicle": "Emergency TRO / Custody Motion",
+      "lane": "A",
+      "old_status": "ingested",
+      "new_status": "service_ready",
+      "egcp": {
+        "E": 25,
+        "G": 25,
+        "C": 25,
+        "P": 22,
+        "total": 97,
+        "evidence_count": 64593,
+        "impeachment_count": 1454,
+        "authority_count": 46320,
+        "exhibit_count": 12,
+        "word_count": 17429,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F2": {
+      "vehicle": "Shady Oaks Housing Complaint",
+      "lane": "B",
+      "old_status": "ingested",
+      "new_status": "draft",
+      "egcp": {
+        "E": 22,
+        "G": 0,
+        "C": 25,
+        "P": 14,
+        "total": 61,
+        "evidence_count": 8469,
+        "impeachment_count": 0,
+        "authority_count": 12274,
+        "exhibit_count": 0,
+        "word_count": 10322,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F3": {
+      "vehicle": "Motion to Disqualify Judge McNeill (MCR 2.003)",
+      "lane": "A",
+      "old_status": "ingested",
+      "new_status": "qa_review",
+      "egcp": {
+        "E": 25,
+        "G": 18,
+        "C": 25,
+        "P": 20,
+        "total": 88,
+        "evidence_count": 64593,
+        "impeachment_count": 188,
+        "authority_count": 46320,
+        "exhibit_count": 16,
+        "word_count": 8487,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F4": {
+      "vehicle": "Federal \u00a71983 Civil Rights Complaint",
+      "lane": "A",
+      "old_status": "ingested",
+      "new_status": "service_ready",
+      "egcp": {
+        "E": 25,
+        "G": 25,
+        "C": 25,
+        "P": 22,
+        "total": 97,
+        "evidence_count": 64593,
+        "impeachment_count": 1456,
+        "authority_count": 46320,
+        "exhibit_count": 12,
+        "word_count": 14606,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F5": {
+      "vehicle": "Michigan Supreme Court Original Action",
+      "lane": "F",
+      "old_status": "ingested",
+      "new_status": "qa_review",
+      "egcp": {
+        "E": 18,
+        "G": 18,
+        "C": 25,
+        "P": 22,
+        "total": 83,
+        "evidence_count": 3629,
+        "impeachment_count": 187,
+        "authority_count": 11550,
+        "exhibit_count": 14,
+        "word_count": 18470,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F6": {
+      "vehicle": "Judicial Tenure Commission Complaint",
+      "lane": "E",
+      "old_status": "ingested",
+      "new_status": "qa_review",
+      "egcp": {
+        "E": 25,
+        "G": 18,
+        "C": 25,
+        "P": 14,
+        "total": 82,
+        "evidence_count": 17297,
+        "impeachment_count": 187,
+        "authority_count": 36927,
+        "exhibit_count": 9,
+        "word_count": 7092,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F7": {
+      "vehicle": "Motion for Custody Modification",
+      "lane": "A",
+      "old_status": "ingested",
+      "new_status": "qa_review",
+      "egcp": {
+        "E": 25,
+        "G": 25,
+        "C": 25,
+        "P": 0,
+        "total": 75,
+        "evidence_count": 64593,
+        "impeachment_count": 1454,
+        "authority_count": 46320,
+        "exhibit_count": 0,
+        "word_count": 0,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F8": {
+      "vehicle": "Motion to Terminate PPO",
+      "lane": "D",
+      "old_status": "ingested",
+      "new_status": "service_ready",
+      "egcp": {
+        "E": 25,
+        "G": 25,
+        "C": 25,
+        "P": 19,
+        "total": 94,
+        "evidence_count": 18253,
+        "impeachment_count": 1454,
+        "authority_count": 35894,
+        "exhibit_count": 5,
+        "word_count": 13264,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F9": {
+      "vehicle": "Court of Appeals Brief on Appeal",
+      "lane": "F",
+      "old_status": "ingested",
+      "new_status": "service_ready",
+      "egcp": {
+        "E": 18,
+        "G": 25,
+        "C": 25,
+        "P": 22,
+        "total": 90,
+        "evidence_count": 3629,
+        "impeachment_count": 1457,
+        "authority_count": 11550,
+        "exhibit_count": 17,
+        "word_count": 16578,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F10": {
+      "vehicle": "Court of Appeals Emergency Motion",
+      "lane": "F",
+      "old_status": "ingested",
+      "new_status": "draft",
+      "egcp": {
+        "E": 18,
+        "G": 0,
+        "C": 25,
+        "P": 7,
+        "total": 50,
+        "evidence_count": 3629,
+        "impeachment_count": 0,
+        "authority_count": 11550,
+        "exhibit_count": 0,
+        "word_count": 3201,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F-VAC": {
+      "vehicle": "Omnibus Motion to Vacate",
+      "lane": "A",
+      "old_status": "final_review",
+      "new_status": "final_review",
+      "egcp": {
+        "E": 25,
+        "G": 0,
+        "C": 25,
+        "P": 0,
+        "total": 50,
+        "evidence_count": 64593,
+        "impeachment_count": 0,
+        "authority_count": 46320,
+        "exhibit_count": 0,
+        "word_count": 0,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F-MSC2": {
+      "vehicle": "MSC Bypass Application",
+      "lane": "F",
+      "old_status": "complete",
+      "new_status": "complete",
+      "egcp": {
+        "E": 18,
+        "G": 0,
+        "C": 25,
+        "P": 0,
+        "total": 43,
+        "evidence_count": 3629,
+        "impeachment_count": 0,
+        "authority_count": 11550,
+        "exhibit_count": 0,
+        "word_count": 0,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F-1983v2": {
+      "vehicle": "Amended 1983 Berry Conspiracy",
+      "lane": "C",
+      "old_status": "draft",
+      "new_status": "draft",
+      "egcp": {
+        "E": 22,
+        "G": 0,
+        "C": 25,
+        "P": 0,
+        "total": 47,
+        "evidence_count": 6166,
+        "impeachment_count": 0,
+        "authority_count": 13460,
+        "exhibit_count": 0,
+        "word_count": 0,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F-DISQv2": {
+      "vehicle": "MCR 2.003 Disqualification v2",
+      "lane": "E",
+      "old_status": "draft",
+      "new_status": "draft",
+      "egcp": {
+        "E": 25,
+        "G": 0,
+        "C": 25,
+        "P": 0,
+        "total": 50,
+        "evidence_count": 17297,
+        "impeachment_count": 0,
+        "authority_count": 36927,
+        "exhibit_count": 0,
+        "word_count": 0,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F-PPOterm": {
+      "vehicle": "PPO Termination Motion",
+      "lane": "D",
+      "old_status": "draft",
+      "new_status": "draft",
+      "egcp": {
+        "E": 25,
+        "G": 0,
+        "C": 25,
+        "P": 0,
+        "total": 50,
+        "evidence_count": 18253,
+        "impeachment_count": 0,
+        "authority_count": 35894,
+        "exhibit_count": 0,
+        "word_count": 0,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F-CUSTmod": {
+      "vehicle": "Custody Modification Motion",
+      "lane": "A",
+      "old_status": "draft",
+      "new_status": "draft",
+      "egcp": {
+        "E": 25,
+        "G": 0,
+        "C": 25,
+        "P": 0,
+        "total": 50,
+        "evidence_count": 64593,
+        "impeachment_count": 0,
+        "authority_count": 46320,
+        "exhibit_count": 0,
+        "word_count": 0,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    },
+    "F-JTC": {
+      "vehicle": "JTC Complaint McNeill",
+      "lane": "E",
+      "old_status": "draft",
+      "new_status": "draft",
+      "egcp": {
+        "E": 25,
+        "G": 0,
+        "C": 25,
+        "P": 0,
+        "total": 50,
+        "evidence_count": 17297,
+        "impeachment_count": 0,
+        "authority_count": 36927,
+        "exhibit_count": 0,
+        "word_count": 0,
+        "qa_issues": 0,
+        "qa_details": []
+      }
+    }
+  }
+}

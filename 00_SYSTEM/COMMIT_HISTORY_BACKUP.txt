@@ -1,0 +1,184 @@
+519be18ad566af4ee46992422f855bfdbed885eb 2026-04-03 22:29:41 -0400 Promote 13/13 CI learning candidates to instruction files
+1d9158c7783e5ac54d060353d001a3cd19cc10d7 2026-04-03 21:43:15 -0400 DX: workspace rewrite (164ΓåÆ6 folders) + VS Code config suite
+cf1f4fad83cb33cea0f2f961d622d254f7ba7c8c 2026-04-03 21:32:20 -0400 fix(engines): eliminate all sys.stdout contamination across 35 files
+c3616ece292bc094f96d8f580aaa91fb0faa8a14 2026-04-03 21:14:00 -0400 feat: SINGULARITY-OMNISCIENCE-APEX v3.0.0 ΓÇö complete arsenal activation skill
+d610663630f73f352ff4f2fb71be6797ec9ad4d8 2026-04-03 21:08:30 -0400 feat: SINGULARITY-OMNISCIENCE-APEX v2.0.0 ΓÇö GODMODE skill with 10-Wave Agent Fleet
+95354e4e8c7af5a5be86b75880973e215b858140 2026-04-03 18:14:42 -0400 THEMANBEARPIG v5: 235 nodes, 13 layers, search/minimap/glow/context menu
+06732ce3b8b926c588ab23609d41a39cd972bcff 2026-04-03 17:59:24 -0400 feat: merge 4 memory files into permanent instruction files
+f3207204738d66e3dbbda500894a0c374f3ae235 2026-04-03 17:50:05 -0400 feat: add 25 MBP skills to singularity-forge instruction manifest
+6c1e4d5f3c63d00c941b8dd6a9001cd2149b1476 2026-04-03 17:23:50 -0400 chore: checkpoint before automation campaign ΓÇö 34 pending changes
+540b25fbb970523bc1dccf173e74c9af89f092cb 2026-04-03 17:09:39 -0400 F09 COA: compile ALL appendix PDFs (16/16) + fix G1 Typst comment delimiter + recompile 6 core docs
+5ff9a770ec652382ceff106c9e0167c3532bfec2 2026-04-03 17:03:53 -0400 F09 COA Appendix: all 8 tabs + cover page (16 files)
+8839fef58ec2d30fada223968c9976f952c71875 2026-04-03 16:06:29 -0400 F04/F08: commit recompiled PDFs with 248-day separation counts
+be390ddfe93b0de5639776310044d1de66cea648 2026-04-03 16:06:19 -0400 feat: THEMANBEARPIG SINGULARITY skill forge ΓÇö 25 TRANSCENDENT-tier skills (611 KB)
+76b216b39f4a6a37f6ec01539c41089d4b30a8d8 2026-04-03 15:11:37 -0400 F05: fix attorney name (Barnes not Watson), purge exhibit contamination
+b4a6fcab228c81a461d3d25ee44a931078e13eb5 2026-04-03 15:00:46 -0400 F04 exhibits (12 complete), F05 exhibit updates
+f24ac791d4ac449a3a2f03f4baa4bd50d5754dbe 2026-04-03 15:00:01 -0400 F08 exhibits (5), cross-exam banks (749 questions, 7 adversaries), email PDF analysis report
+f56786b4624f00d460f239fcf7a9744a4d3f6dd5 2026-04-03 14:54:40 -0400 F04: recompile 7 PDFs with 248-day separation count
+0324a1ddb7bbdbeab7716585ea9ef911e8f5a245 2026-04-03 14:53:31 -0400 F05: instruction markersΓåÆHTML comments, word count 12649, all 8 PDFs recompiled
+faf8536e77b7edd532b259f7ce9d37b1a4307c39 2026-04-03 14:45:56 -0400 F04: 7x 230ΓåÆ248 day count fix; F05: instruction markersΓåÆcomments, word count 12649
+ce39bdaef593fabbfe6535eadab5cedbe383fa5d 2026-04-03 13:20:12 -0400 F08 PPO Termination: 13 fixes applied ΓÇö 230ΓåÆ248 day counts, HealthWest eval replaces placeholder, service/signature cleanup, hearing type, conditional blocks removed
+619fbcd9cf0f17b33489d3399c67bdc210ded72e 2026-04-03 13:08:49 -0400 All 9 filing packets compiled to PDF ΓÇö 53/53 zero errors
+594e13be9de1e235f47b282d59e8bdc58396f891 2026-04-03 12:48:19 -0400 feat: comprehensive email evidence report (10,327 lines, 38+ smoking guns)
+eaf8b5cae8b6d403057be7fbcc36ef420c97d3a2 2026-04-03 11:51:36 -0400 Phase 0-3: Full inventory (1.1M files), space recovery (+3.26 GB), MBOX extraction (1,427 emails)
+ceb7a353ca2e4bc74d8b62cc04a2e35e918ba6c8 2026-04-03 10:20:25 -0400 fix: purge ALL contamination from GOLDEN_SET filings
+6c84b35a5a61866a4b246a64ed184e2655327c9c 2026-04-03 09:19:32 -0400 MSC case master brief, knowledge blueprint, court visualizations, SCAO forms
+bdfbaf7fc95bd169843e7975969067d1a5d91550 2026-04-03 08:45:24 -0400 MSC Case Master Document: 13-section synthesis, 41.4KB, all stats DB-traceable
+29cc8e190d1c68217c4152fe7e3f1533dcea8317 2026-04-02 18:54:14 -0400 Golden Set QA remediation: 140 fixes, zero CRITICAL/HIGH issues
+d441439b105b7269605e09194c850cd476878ff5 2026-04-02 14:55:37 -0400 omega-phase-01: Genetic Memory ΓÇö Cross-Session Intel (1126L)
+c867c87923b99523ff44a55ad0f1a7693a34ba0b 2026-04-02 12:28:00 -0400 Fleet Wave 1: orchestrator (655L), 5 dormant engines activated, rebuttals 408ΓåÆ588, vectors 75KΓåÆ76K
+06c226a236b183a621a1f26c5f57abf87f813e83 2026-04-02 12:23:50 -0400 activate 5 dormant engines: wire __init__.py imports
+aebaf882adf00f59fffa23493454497795872e3d 2026-04-02 12:15:26 -0400 omega-phase-00: Event Bus + CQRS Event Store
+ce2c6c24594100a3434b21bea700445ac0b48171 2026-04-02 12:09:21 -0400 Wave 1: QA engine (865L, 12 gates) + Typst pipeline (685L, F10 PDFs) + contamination cleanup (8 exhibits)
+f4b03c0ad071dc20904ab3e4719355283713877b 2026-04-02 12:06:40 -0400 feat(qa): add QA Automation Engine (U09) ΓÇö 12-gate court filing validator
+16dab3e94317d16462b1c6128141f6dc6e2ec768 2026-04-02 11:49:44 -0400 Persist all 32 engines + 20 manifests to litigation_context.db
+1cd5d6b82cad35f75f585082bc991f060661916f 2026-04-02 11:40:23 -0400 feat: add Temporal Knowledge Graph engine with 3 critical fixes
+3bd9e55e64f2eddeeeb55e502ea4c237402b4d6a 2026-04-02 11:30:55 -0400 Add EvidenceHypergraph engine: 7,605 hyperedges, 4,771 nodes
+b2ea782c9617c15274f6933bc7627fdf88dc6716 2026-04-02 11:27:38 -0400 Register temporal + hypergraph in engine init, update causal tests
+b4bebad5bc7d25146147b17977739634a4fb3a7f 2026-04-02 11:26:30 -0400 Add adversary modeling + causal chain engines
+29d63c42e8ec77a284dd9dad3b81aa0198166e5e 2026-04-02 11:24:20 -0400 Register IRAC + Damages engines in master registry (12 engines total)
+fc67ecf483a0a93e2db1fbe6f5ea4c806bcc71ef 2026-04-02 11:05:08 -0400 P0: Legal-BERT centering fix + hybrid search integration
+c43d8ef541dd4cdda931f5233f02b7c37c6f7e06 2026-04-02 09:29:37 -0400 feat: OMEGA SINGULARITY design docs + golden set updates
+9ea78879b663943f32c3b48e4a0460443bb264b2 2026-04-02 09:24:10 -0400 integration plan: 16 cross-engine integrations + perception lazy accessor
+6d2ef05f79650fca7b81aaccc191804ac261bba1 2026-04-02 09:22:01 -0400 engines v3.0.0: register analytics+typst, remove duplicate perception import, add HybridSearchEngine to __all__
+126a684194b684c64d556ebadc4d13c9db94f49a 2026-04-02 09:12:52 -0400 feat: Legal-BERT perception engine ΓÇö INT8 quantized, 26.6ms avg inference
+f716f079d7cd11c731f269f57db1aa31feade2a3 2026-04-01 19:46:03 -0400 Add JUDICIAL_CARTEL_MAP.md ΓÇö three-court cartel network analysis
+c21f63742062d45c9f333cdf05973818da956434 2026-04-01 18:56:19 -0400 F04: Add housing conspiracy counts XVII-XVIII, 5 new defendants
+d94f40e47de5a01505339671475f5f728498272b 2026-04-01 17:59:24 -0400 feat: database registry in startup report ΓÇö 302 DBs across 5 drives always visible
+8b033bd29d42edc7456d0e466d7f6e67e47bb912 2026-04-01 17:17:38 -0400 feat: startup system ΓÇö auto-generates STARTUP_REPORT.md + session recall
+2d7691ae9d6886860200405ea06240dcdae49b27 2026-04-01 17:14:21 -0400 F09 COA Brief promoted to GOLDEN_SET ΓÇö complete packet family
+50d254203ec7048fb95968b11e158b00be0b5b9b 2026-04-01 16:47:55 -0400 fix: F03 phone/email filled, README updated, 32 old MSC files archived
+1e4673162d78f974ffa9cc295bba53a5244b9466 2026-04-01 16:36:26 -0400 golden set: packet family completion ΓÇö affidavits, COS, orders, cover sheets
+e62499915071eae6a7255cc79befd624776b217b 2026-04-01 16:32:03 -0400 golden set: complete packet families for all 7 filings
+3d3309ddf3136f29ba189d7e4f5306c85d924909 2026-04-01 16:20:30 -0400 golden set: promote F04 federal ┬º1983 complaint (129KB, verified clean)
+552f9a4b53f1a693d6281b4bf21808e96c0a1144 2026-04-01 16:20:16 -0400 fix: F04 federal complaint ΓÇö IFP instruction + database ref removed
+a386d56ce3cadfb6f76d397888c639b4a61528ff 2026-04-01 16:19:13 -0400 golden set: promote F01, F03, F05, F06, F08 ΓÇö all verified clean
+f17e215f36a707c8feb6605d06ad8626138b4288 2026-04-01 16:16:39 -0400 add: cross-lane conspiracy timeline + MSC file cleanup
+9ad15e1b091a0cab00a7de4a7342325df1f17221 2026-04-01 16:02:22 -0400 fix: purge all gender/day-count/Barnes errors across 22 MSC files (224 corrections)
+278e0788d1d350648c3f5f82e1124adc0bec1448 2026-04-01 16:00:05 -0400 golden set: F05 MSC Original Action ΓÇö 4 surgical DB ref removals
+4f1babc92c38f30cd38bbf514c6dac3c5f1d83ea 2026-04-01 15:36:29 -0400 golden set: F01 MSC petition + F06 JTC complaint ΓÇö fully remediated
+a3ef3b666fdeb2204785cd825cfd29541d5829b1 2026-04-01 15:29:44 -0400 fix: MSC brief ΓÇö 12 surgical edits (gender, separation count, Ezekiel nexus, show cause, COS)
+e11cfc12515ed8fd172cdac4b836783b7bff2b11 2026-04-01 15:26:21 -0400 golden set: promote F10 + create infrastructure
+76bded421a853fb541c1eb5b1eeb03b6f8aab3c1 2026-04-01 15:24:41 -0400 golden set: F10 complete + F09 autonomous fixes
+753c2271f99af27351ba5ad62208c541b362d1c7 2026-04-01 09:20:18 -0400 feat: MSC petition updates + STARTUP_REPORT rewrite
+3be87e67590eb424a0ef5be8bcae17c464f8f848 2026-03-31 21:34:59 -0400 perf: 100-todo convergence sweep ΓÇö 15 FTS5 indexes, 397 DB indexes, lane dashboard, xref expansion, full quality audit
+8a0a8fa62672303167c7e3381cb5e1ede6bbecf2 2026-03-31 20:37:24 -0400 fix: update all stale DB row counts to live values
+e1887c03adf8766279465b9c31d0ffabb144057e 2026-03-31 20:20:41 -0400 perf(search): singleton caching for cross-encoder + semantic engine
+a43a77b5eb8ff7237a86726815c057b72928f1f1 2026-03-31 19:29:49 -0400 Add master affidavit: 64-paragraph chronological narrative with 21 exhibits
+244897fb3dc1b605f829dea0398c9b42c2231dda 2026-03-31 19:29:06 -0400 SINGULARITY forge: Typst court templates + DuckDB dashboards + harm-tracker fix
+8174737f51b5c2a49867904991a189c7008ced40 2026-03-31 19:24:25 -0400 Upgrade 10 priority agents: add tools/model frontmatter + operational SQL/protocols
+5a7090f837c9c8746c3552904e762924f382f698 2026-03-31 19:11:52 -0400 forge: SINGULARITY instruction consolidation ΓÇö 14 files ΓåÆ 9
+cb4c26b4bd088dd22acdc4af7507ba4b5ca4fe3b 2026-03-31 19:10:37 -0400 feat(search): add cross-encoder reranking and BM25 optimization
+6ee8d05df8e7966cd488aadc9a72ee946ffdec56 2026-03-31 19:04:56 -0400 feat(singularity): add 8 slash commands + governance hooks
+86579d2ca05fe53174f8cdae171107a8079b79e4 2026-03-31 19:04:46 -0400 Compress eagain-prevention 560ΓåÆ13 lines (~7K tokens/turn saved)
+7c9d5bf1fc5ec36bcf70fbea5ecf33e9094548e8 2026-03-31 18:54:32 -0400 Strengthen complaint with verbatim ex parte motion quotes and police evidence
+b2b52a13ee08e43dc2abb27545b74597cd8b275c 2026-03-31 18:46:41 -0400 Lock all user-level assets into repo: 48 agents, 20 instructions, 45 skills
+617b5071f457785c6c13f886e51b1168d27bad68 2026-03-31 18:27:39 -0400 Watson tort: upgrade 7ΓåÆ15 police cases, specific officers/dates, full case index table
+3b6acabb44ba52dee7ee9ef10d47214a7bba30e8 2026-03-31 18:01:35 -0400 Watson tort complaint: add unique factual details from IIED DOCX
+25831e3ed677de090fe3a551cb8e163e2df9f47d 2026-03-31 17:49:17 -0400 chronicle improve: strengthen 3 rules from friction analysis
+2c6e4cef251cbcca1a47a55ca19991778cbf1ba4 2026-03-31 17:44:05 -0400 Upgrade Watson complaint: 15ΓåÆ17 counts, strengthen evidence
+c9af5a178ef9c986685183e27b73594865ad495b 2026-03-31 17:32:03 -0400 Add Watson Maximum Tort Complaint ΓÇö 15 counts, USDC Western District
+4ef30dafb00192abfff1af0dcf27788e77835bba 2026-03-31 10:04:09 -0400 feat: SINGULARITY v7.0 FORGE ΓÇö 15 forged superskills + bleeding-edge upgrade
+c4790b553feefbfc1c3317d4c3fb492b2387ed6a 2026-03-31 10:02:02 -0400 forge: create 3 SINGULARITY APEX superskills
+bbfb3adc6273b4c901b278a77990ec914521a819 2026-03-31 09:25:37 -0400 fix: add panic recovery to ingest engine PDF extraction
+1751cebdbed553c3da647663b2bc1fae753a0142 2026-03-31 08:59:43 -0400 fix: create 5 missing delta999 agents and 5 engine __init__.py files
+507434ae36882b41923ceee446de5512393ed12c 2026-03-31 08:44:42 -0400 fix: align 68 eval tests with actual implementation ΓÇö all passing
+8f2c7465d8eede7c86875da2456f5b923c54e970 2026-03-31 08:34:50 -0400 feat: Go ingest engine ΓÇö 8-worker parallel file processor with SHA-256 dedup
+30caaed9ac63bfb48d96f6c1080c12e44953b301 2026-03-31 08:30:19 -0400 feat: shared module v3.0.0 ΓÇö lazy engine accessors, quick_query (DuckDB), fast_dataframe (Polars)
+7e4afe5b8060641c7354d47858eccd1d73b5112c 2026-03-31 08:27:46 -0400 feat: bleeding-edge engine suite ΓÇö analytics (DuckDB), semantic (LanceDB), search (tantivy hybrid), typst (court PDFs)
+1255896357744169075d84ab059aa0e3b995ef1b 2026-03-30 21:12:57 -0400 feat: total legal convergence ΓÇö waves 1-10 complete
+07e2b636b2673a6bcd459b603c63e876614d0fe2 2026-03-30 20:03:23 -0400 perf: fix 6 SQL anti-patterns ΓÇö N+1 loops, IN(SELECT) ΓåÆ LEFT JOIN, parameterized dates
+1f2f1df42515a428e0661b53bccf2ec8b1d91c2a 2026-03-30 20:02:23 -0400 feat: agent evaluation framework with safety/citation/format checkers and 142 tests
+4452cd6aea1bc098d27213f64504dde314821049 2026-03-30 19:19:45 -0400 fix: PRAGMA triad compliance + stdout closefd + filing script fixes
+e89d8c6c2c69ad010e5c3c47e168cf9de984a59b 2026-03-30 19:15:40 -0400 fix: replace 68 bare except: handlers with typed exceptions in 00_SYSTEM/tools/
+306c4a0dbe039ce533a6f065a61799f0f19cf7ae 2026-03-30 18:06:20 -0400 feat: autonomous convergence tracker + narrative expansion
+cd3c2ea9cab462040cdafaa21cd8ec58d5646a31 2026-03-30 16:59:46 -0400 fix: replace 47 bare except: clauses with typed exceptions in 00_SYSTEM
+90531108f0230a944dd627926389f9a98e55481c 2026-03-30 16:44:54 -0400 Narrative events 52->74 across all lanes + convergence scripts
+02c1032f52c62b8adf5adb6d18822f828fc98d0b 2026-03-30 16:39:46 -0400 CRIMINAL lane 3->169 authority chains + Lane B 0->1387 evidence links + milestone narratives
+8c09051808b4a70d068c8e1539eaa6c29a4c8d90 2026-03-30 16:31:58 -0400 Archive temp scripts wave 4 (8 files -> 11_ARCHIVES/)
+6bb7768a0c1f55b270be272abe243a72bf005d56 2026-03-30 16:27:49 -0400 PRAGMA triad enforcement + rebuttal cross-links + code quality
+1f550bbc94b3f1d51ad5b7c83b27b730fa31db18 2026-03-30 16:27:24 -0400 Rebuttal engine v2.0: is_active soft-delete, for_motion(), 18/18 tests
+60767a0782b01edee0a235e102f44900d0f0cc0e 2026-03-30 16:22:49 -0400 fix: enforce PRAGMA triad + fix bare excepts across engines/scripts
+8db6aa5d925116733600812e73e515340fc25060 2026-03-30 15:46:10 -0400 Archive temp scripts wave 3 + DB convergence progress
+10449eb81e5f9c1e91d0d58e96d14d6f06021f53 2026-03-30 15:37:11 -0400 Add rebuttal engine test suite (16/16 pass)
+aa9cbd0b5ca08eb4fbfb746ee341c8cdee8946a6 2026-03-30 15:24:03 -0400 Rebuttal engine v1.0 + data quality upgrade
+041162d04525bbbd63562b71f82b8478fd7a9a08 2026-03-30 15:14:27 -0400 Judicial rebuttal engine + narrative engine + evidence linking + case law expansion
+0bf93f48f7e2f946f8e420d50218e339f186a163 2026-03-30 15:13:32 -0400 Extract judicial false findings + create rebuttals table
+fa5abd5ee5de3b59d480b7f18e26039b9b21df40 2026-03-30 15:06:58 -0400 feat: add Chronological Narrative Engine
+e858ec07ae0e55d17d4b72d3064d1a747ed6eb2b 2026-03-30 14:58:58 -0400 feat: evidence-to-claim linking system (evidence_claim_links table)
+435a6d1eae47a4ba317a726512988bc249666d97 2026-03-30 14:49:00 -0400 Authority expansion: Watson claims + county liability + hallucination purge
+9867fed5189172a9ac77f2b1c20a5e30bb8279f8 2026-03-30 14:28:45 -0400 fix(mcp): correct EGCP scoring column names in root tools_v4.py
+c3fe431727e2f6446093dda7d67f6d1e275087a2 2026-03-30 08:26:16 -0400 Authority saturation: +34 rules, +95 chains, +51K citations, +992 docs
+911fea688093ad916016f8c5c4200913880b1c93 2026-03-29 22:51:14 -0400 Final convergence: 38K child name redactions, PRAGMA/logging/bare-except fixes, boundary check fix
+09f7d981ba284ccfc18c101eee0bc556dc363c2f 2026-03-29 22:28:37 -0400 convergence: silent-except fixes, MCP pooling, filing proofreading, hallucination purge
+9e1257f4bd1cfd0575ee63a9c7d924fb00940a64 2026-03-29 22:21:24 -0400 perf: add connection pooling to MCP server database layer
+3aac774117ada892692804d207e24da392f86aea 2026-03-29 22:04:08 -0400 fix: purge hallucinations from 183 filing documents (647 fixes)
+49626ad43a462c49b26b303695d9980e55f4b25a 2026-03-29 21:52:44 -0400 perf: SINGULARITY optimization ΓÇö N+1 fixes, caching, PRAGMA compliance, verify hardening
+46fa9e3caad7b50e78abdbdced02f88e9f3e79e4 2026-03-29 20:50:07 -0400 SINGULARITY AI Engineering: shared v2.1.0 + FTS5 LIKE fallback + query expansion + search cache + safety hardening
+2e182202a71e55755c068cf9042128ef286ca7dc 2026-03-29 20:44:53 -0400 Add R15 (pro se language) and R16 (separation counter) to filing QA hook
+92cb3ea32a5ceb2391b215ccbd2e766c6e092440 2026-03-29 20:29:39 -0400 SINGULARITY v6.1: comprehensive rules restructure + 3 new protocols
+e8449019fd20f9357e8880d73fee2e7f19078474 2026-03-29 17:46:53 -0400 Optimize SINGULARITY extension: compress tool schemas for token efficiency
+590dea79864e455a426ac6d34e77f06e4af2bcee 2026-03-29 16:59:15 -0400 Wire HYDRA resilience protocol into daemon (17 handlers)
+c890f003b31b45e32b8e391440330b3b46d8a75b 2026-03-29 16:56:08 -0400 shared v2.0: db utilities, boundary enforcement, verify health checks
+3e5aed7e7167dae3eeaaeec154c77a35dc618377 2026-03-29 16:07:05 -0400 feat: add markdown evolution script for cross-reference knowledge layer
+16782157ba190eb07eb5443a96234508ffe8212c 2026-03-29 15:54:07 -0400 refactor: replace hardcoded paths with shared module in 6 engine files
+4a2bd197ae413546d354eaf458d91db48de10b9f 2026-03-29 15:46:26 -0400 feat(integration): Wave 4.3 ΓÇö tool registry (309 tools) + archive 65 orphaned dirs + tests
+243bedeed7d477a2b4ece02590372e8dc610e0da 2026-03-29 15:32:31 -0400 Add integration Wave 4 test suite (20 tests, 4 groups)
+6fd01143f6f824e5f2008f7cbc3ec9eb3b0d0675 2026-03-29 15:01:14 -0400 feat: add tools.registry + tool_run daemon handler
+f026f8bc690e39377a49fc86435071b754bc2d96 2026-03-29 14:50:16 -0400 feat(integration): Wave 4.2 ΓÇö legal_ai registry (66 tools) + automation (13 scripts)
+f4b2fb4beeff4e4cf7554f71652514fcfd08d9ce 2026-03-29 14:44:30 -0400 feat: wire 66 legal_ai modules into daemon via lazy-loading registry
+6f11760645e51dacc17caff49d882005d1bda54c 2026-03-29 14:26:04 -0400 feat(integration): Wave 4.1 ΓÇö BrainManager + 11 engines + filing pipeline
+8d9195d671319d0d13bf1bcbfdf44d583e20081e 2026-03-29 14:12:44 -0400 feat(engines): register all 14 engine sub-packages in __init__.py
+974a8284c8ead86e05573db15e7e360550bb063c 2026-03-29 13:00:44 -0400 Migrate 21 assets from D:/F: drives into centralized LitigationOS
+75f206fc2b88935bbf592a84786cd9627597f25a 2026-03-29 11:54:54 -0400 Wave 3: Protocol typing, file extractors, structured logging, scan history, error tests
+e422ef5ff4953dfd5873609add8cab327b2893e0 2026-03-29 10:59:09 -0400 feat(engines): bleeding-edge upgrades ΓÇö partial indexes, PRAGMA optimize, perf_counter_ns timing, exhibit integrity check, analyzer unified limits, case_config PRAGMAs
+e15d8cf7195960ad6e7b4e0bfad8c3880c017950 2026-03-29 10:55:56 -0400 fix(templates): M14/M16/M17 audit findings ΓÇö COS methods, sig role, WDMI font
+8d9d6ac4e1d21406a8bc3f5317d84b3f926ce87e 2026-03-29 10:55:18 -0400 fix(infra): unified test runner + daemon cleanup (H11/M18/L1/L2/M4)
+86fd02baf1cfb412c8ea83f7811eb525cdb92e75 2026-03-29 10:54:52 -0400 feat(intake): implement watch() and stop() methods on IntakePipeline (H7)
+12ac48ce5b78c95abccd4e740430e49973e9f1fd 2026-03-29 10:51:27 -0400 Wave 1 bleeding-edge fixes: StrEnum state machine, child name validator, router indexes, pipeline logging
+ff663a9472fd1b71f91640796ebde69bf6b50b1a 2026-03-29 10:48:38 -0400 fix(daemon): resolve H1/H2/M2/M3 audit findings in task_handlers
+f68ae76520eb66c2b8a31e10b205b45e60efd621 2026-03-29 10:37:55 -0400 Archive stale test artifacts to 11_ARCHIVES
+aa51397179475632a643c204fbb225e79160b0b5 2026-03-29 10:37:40 -0400 System convergence: all integration gaps closed, 28/28 tests pass
+b53c28b0f8a44d0d3df23f37d72a216b5b80dc01 2026-03-29 10:19:40 -0400 fix: Intake Engine char_count bug + integration tests pass 5/5
+80e200b1f9115b690b337e9cc69730f7874dcbbb 2026-03-29 10:16:14 -0400 feat: Intake Engine v1.0.0 ΓÇö 8 modules, 2150 lines
+054272f73808ac76f1be5c6d2a2a403dc1621197 2026-03-29 09:57:41 -0400 Filing Engine v1.1.0: wire templates, implement assembly/output, shared module
+d276002be1317af70cf78185040cae397e0c4188 2026-03-29 09:46:23 -0400 Persist Filing Engine metadata to litigation_context.db
+54a0fd552ac5153a723501d50248f5f694a5b828 2026-03-29 09:41:26 -0400 Add Filing Engine + reusable filing framework ΓÇö 4,745 lines
+ac6bf13c92f9eddfd33ed98dfde80eb534b997de 2026-03-29 09:28:51 -0400 Add store_filing_requirements.py ΓÇö populates shadyoaks.db with 45 filing requirements + 22 format specs
+cea3d46f8eac1d4eaf1fddb12ec262b996a74c61 2026-03-29 09:27:21 -0400 Add COURT_FILING_MASTER_REFERENCE.md ΓÇö judicial-grade requirements for all 10 filing vehicles
+0ff701089dbfa9581f005651a430423717a203db 2026-03-29 09:12:54 -0400 feat: Shady Oaks final legal analysis ΓÇö 13 claims, 10 vehicles, filing roadmap
+522d493e6103b4edf547925bab5baedf469bb84d 2026-03-29 09:05:40 -0400 feat: shadyoaks.db comprehensive housing evidence database
+3fca32521a120f251b71265a28495a0e0a44851a 2026-03-29 08:53:53 -0400 Add corporate entity structure diagram (ESD blueprint PNG)
+945ab1111568c784d56df03aeaaa85522f0ce306 2026-03-29 08:49:42 -0400 Add LLC entity scanner + corporate shell chain report
+91350a216cc997792ea61eae5fbe52a60b4a988f 2026-03-29 07:59:49 -0400 OCR extract 33 HOA image files + fix Karen Rettig description
+459871988420230941bf268aed820914673ebbbd 2026-03-29 07:52:03 -0400 Add 70 housing evidence screenshots + expand exhibit index
+a84e7a422c61dfa4a92edeaed483ed53be6bff3a 2026-03-29 07:41:46 -0400 Housing MCR 2.612 filing package + attorney consultation brief
+57fa59c0148ffd4bb22cee7b6fadc8e5d102e329 2026-03-29 07:39:38 -0400 fix: prevent RangeError: Invalid string length in SINGULARITY extension
+37808b8636ce3502028613b30feac75849b0f269 2026-03-28 23:46:36 -0400 CANON cleanup: 21 root violations ΓåÆ canonical folders + on-demand tools reference
+447462424a050cde8dd2b845559a866ca04086c2 2026-03-28 23:41:50 -0400 SINGULARITY v3.0: dual-transport extension ΓÇö 22 tools (queryDB + bridge)
+59544a4fd155d5137e211994d9d391cb0f80a1d3 2026-03-28 23:14:52 -0400 evolve AI infrastructure v6.0: instructions, hooks, extensions, references
+766add223a2307b033a2d11fb51992d3c2efdc1b 2026-03-28 22:14:50 -0400 SINGULARITY v2.0: 49 tools ΓåÆ 8, 3 extensions ΓåÆ 1, instructions 16.2ΓåÆ5.5KB
+8527391f515144280a76b3d8c366b3360caf1673 2026-03-28 20:43:59 -0400 SINGULARITY FORGE: 1,412ΓåÆ38 skills, instructions 35.8ΓåÆ10.1KB (72% reduction)
+bdd3d56e31a05bfccdfc1053d34dd4b7dfd7a7a8 2026-03-28 20:33:32 -0400 feat: migrate MCP extensions to shared.get_db()
+2c0e293736c3c30f8cdc408559eeda4c258717ba 2026-03-28 20:20:51 -0400 feat: tools facade, brains/MCP extension tests, verify hardening
+33f10057b656a9db6ef955832a571f911ffb5aa7 2026-03-28 19:48:48 -0400 ci: add GitHub Actions verify workflow
+92d4cf6318383d38fd0f8634d138dfd4bf3110d7 2026-03-28 19:48:12 -0400 feat: add sqlite3.connect() detection to boundary checker
+431432f76093dc9c8a3e5a5b41299eaff01fec41 2026-03-28 19:47:01 -0400 feat: migrate BrainManager to shared.get_db() + add __init__ exports
+4dc266773945cdae60c425c4c2035380dc70bae6 2026-03-28 19:45:29 -0400 feat: migrate chimera, chronos, cerberus to shared.get_db()
+4cff1bc7be02b1a2790aa89d73d5719afd37a3ac 2026-03-28 19:43:26 -0400 feat: add shared module, engine exports, verify script, and nexus migration
+da8a02bf32928871bd5c59a7aefab1967a957248 2026-03-28 17:11:37 -0400 fix: correct 13 critical discrepancies + DB optimization + reference files
+bcdf2e14599ba9730a5ee01962f2269fe8d36d31 2026-03-28 15:25:04 -0400 feat: MCP Auto-Launcher & Watchdog (mcp_launcher.py)
+73368ab45bc3e9ac6b2da0ef76a09645f29e8fbe 2026-03-28 15:23:33 -0400 feat: HYDRA Governor Engine v1.0 - session lifecycle + MCP watchdog
+062e2b62ba2fbef7a53ccb552015b5bf0c3a8fa3 2026-03-28 14:52:43 -0400 fix: FTS5 syntax error in alienation 'telling_child_not_loved' strategy
+175bd4bb352f68d49dd189e1dd90f2ecd0f71873 2026-03-28 12:55:46 -0400 fix: repair 3 broken MCP tools + 3 engine errors
+2080726776be001636f40b58acced8cd4ade2a51 2026-03-28 12:38:59 -0400 feat: NEXUS engine v2.0 - fix FTS5 sanitization + add 8 missing actions
+8c2a2bbf2449a51f886ab56f3f979703e80634ac 2026-03-28 12:07:06 -0400 fix: restore litigation_context.db (1162MB), restore _CANON.md, add court-ready PDFs and evidence
+af944d3c271f01647c6332b788d7573a6236f311 2026-03-28 09:57:05 -0400 feat: EVENT HORIZON Wave 1+2 deployment -- 85,748 files routed across 4 zones
+b176b645771e7397139834ebbc17a82d31c9ecb4 2026-03-28 08:42:04 -0400 feat: FULL CONVERGENCE pipeline -- all 12 subsystems autonomous (v1.5.0)
+980bc60fa0217687265e6c0a49e8a22bf349af7f 2026-03-28 08:28:13 -0400 feat: EMERGENCE + TRANSCENDENT + APOTHEOSIS -- all 12 subsystems complete (v1.4.0)
+ffda86ddd12b4e9f51e8a2184304412b49676cf1 2026-03-28 07:50:14 -0400 feat: SUPERNOVA parts harvester -- 8-phase pipeline (v1.3.0)
+a1a6a50a44666dd95b20211143550a4829bacab4 2026-03-28 06:46:08 -0400 feat: OUROBOROS self-improvement + ESCHATON convergence (v1.2.0)
+b92b0c8c458e20b118f7e977fd49304c1c948452 2026-03-28 06:29:44 -0400 feat: HYDRA self-healing subsystem (H1-H7) for EVENT HORIZON engine
+f613679a7e8e888633b3a5103ff9fd5c0bbfa061 2026-03-28 06:16:35 -0400 fix: 6 resilience improvements to EVENT HORIZON engine v1.1.0
+73ee0512eea9a124d7eb86879fa92651dc7a10db 2026-03-28 06:03:21 -0400 law: MANDATORY TOOL SELECTION hierarchy ΓÇö permanent, every session
+0e8dea659587b587511c3026b859eaa1a2c99872 2026-03-28 03:51:39 -0400 feat: EVENT HORIZON root routing - 923 files canonically sorted

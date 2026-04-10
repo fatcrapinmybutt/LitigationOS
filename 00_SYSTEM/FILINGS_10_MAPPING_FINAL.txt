@@ -1,0 +1,120 @@
+════════════════════════════════════════════════════════════════════════════════
+LITIGATIONOS FILING MARKDOWN FILES - FINAL MAPPING (10 Filings)
+════════════════════════════════════════════════════════════════════════════════
+
+F1: EMERGENCY TRO (Shady Oaks)
+  Location: C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY
+  Total Files: 163 markdown files
+  Primary Files:
+    • C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\00_MASTER_BRIEF.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\01_EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\A_EMERGENCY_MOTION_RESTORE_PARENTING_TIME.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\C_BRIEF_IN_SUPPORT.md
+
+F2: SHADY OAKS 9-COUNT
+  Location: C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT
+  Total Files: 10 markdown files
+  All Files:
+    • C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\01_AMENDED_COMPLAINT_COVER.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\02_EXHIBIT_INDEX_MASTER.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\03_DAMAGES_CALCULATION_FINAL.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\04_CORPORATE_DISCLOSURE_ENHANCED.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\05_TRO_APPLICATION.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\06_SUMMONS_PACKAGE.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\07_FILING_CHECKLIST.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\08_BRIEF_IN_SUPPORT.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\09_AFFIDAVIT_ANDREW_PIGORS.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\SHADY_OAKS_CIRCUIT\complaint_shady_oaks_circuit_court.md
+
+F3: MCR 2.003 DISQUALIFICATION
+  Location: C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION
+  Total Files: 6 markdown files
+  All Files:
+    • C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION\AFFIDAVIT_OF_BIAS.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION\BRIEF_IN_SUPPORT.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION\EXHIBIT_INDEX.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION\FILING_CHECKLIST.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION\MOTION_FOR_DISQUALIFICATION.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\DISQUALIFICATION\STATISTICAL_ANALYSIS_EXHIBIT.md
+
+F4: FEDERAL §1983
+  Location: C:\Users\andre\LitigationOS\01_FILINGS\FEDERAL_1983
+  Total Files: 90 markdown files
+  (Too many to list - see full report)
+
+F5: MSC ORIGINAL ACTION
+  Location: C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL
+  Total Files: 9 markdown files
+  All Files:
+    • C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\01_PETITION_SUPERINTENDING_CONTROL.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\02_BRIEF_IN_SUPPORT.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\03_AFFIDAVIT_OF_ANDREW_PIGORS.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\04_APPENDIX_AND_EXHIBIT_INDEX.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\05_PROPOSED_ORDER.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\06_PROOF_OF_SERVICE.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\07_FEE_WAIVER_MOTION.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\08_COVER_LETTER.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\MSC_ORIGINAL_ACTION_FINAL\09_FILING_CHECKLIST.md
+
+F6: JTC COMPLAINT
+  Location: C:\Users\andre\LitigationOS\01_FILINGS\JTC
+  Total Files: 6 markdown files
+  All Files:
+    • C:\Users\andre\LitigationOS\01_FILINGS\JTC\01_JTC_REQUEST_FOR_INVESTIGATION.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\JTC\02_NARRATIVE_OF_MISCONDUCT.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\JTC\03_STATISTICAL_ANALYSIS.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\JTC\04_EXHIBIT_INDEX.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\JTC\05_CERTIFICATE_OF_SERVICE.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\JTC\06_FILING_CHECKLIST.md
+
+F7: CUSTODY MODIFICATION
+  Primary Location: C:\Users\andre\LitigationOS\01_FILINGS\COURT_READY
+  Also found in: TRIAL_14TH (extensive)
+  Primary Files:
+    • C:\Users\andre\LitigationOS\01_FILINGS\COURT_READY\07_CUSTODY_MODIFICATION.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\TRIAL_14TH\MOTION_MODIFY_CUSTODY_V4.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\TRIAL_14TH\MOTION_EMERGENCY_CUSTODY.md
+    (Additional 40+ custody-related files in TRIAL_14TH)
+
+F8: PPO TERMINATION
+  Primary Location: C:\Users\andre\LitigationOS\01_FILINGS\COURT_READY
+  Also found in: EMERGENCY, TRIAL_14TH, CLERK_READY
+  Primary Files:
+    • C:\Users\andre\LitigationOS\01_FILINGS\COURT_READY\08_PPO_TERMINATION.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\EMERGENCY\02_MOTION_TERMINATE_PPO.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\CLERK_READY\MOTION_DISSOLVE_PPO.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\TRIAL_14TH\MOTION_TERMINATE_PPO.md
+    (Additional 20+ PPO-related files across locations)
+
+F9: COA BRIEF ON APPEAL (Case 366810)
+  Location: C:\Users\andre\LitigationOS\01_FILINGS\COA_366810
+  Total Files: 125 markdown files
+  (Too many to list - see full report)
+
+F10: COA EMERGENCY MOTION (Stay)
+  Location: C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY
+  Total Files: 6 markdown files
+  All Files:
+    • C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY\AFFIDAVIT_IN_SUPPORT.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY\APPLICATION_FOR_LEAVE_TO_APPEAL.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY\BRIEF_IN_SUPPORT.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY\EMERGENCY_MOTION_FOR_STAY.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY\EXHIBIT_INDEX.md
+    • C:\Users\andre\LitigationOS\01_FILINGS\COA_EMERGENCY_STAY\FILING_CHECKLIST.md
+
+════════════════════════════════════════════════════════════════════════════════
+SUMMARY STATISTICS
+════════════════════════════════════════════════════════════════════════════════
+F1 (EMERGENCY TRO): 163 files
+F2 (SHADY OAKS 9-COUNT): 10 files
+F3 (MCR 2.003 DISQUALIFICATION): 6 files
+F4 (FEDERAL §1983): 90 files
+F5 (MSC ORIGINAL ACTION): 9 files
+F6 (JTC COMPLAINT): 6 files
+F7 (CUSTODY MODIFICATION): 50+ files (multiple locations)
+F8 (PPO TERMINATION): 30+ files (multiple locations)
+F9 (COA BRIEF ON APPEAL): 125 files
+F10 (COA EMERGENCY MOTION): 6 files
+
+TOTAL: ~500+ markdown files across all 10 filings
+

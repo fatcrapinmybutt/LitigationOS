@@ -1,0 +1,694 @@
+{
+  "run_time": "2026-04-07T14:57:29.635581",
+  "source": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\GOLDEN_SET",
+  "known_citations_loaded": 45546,
+  "directories_scanned": 10,
+  "summary": {
+    "PASS": 2,
+    "CONDITIONAL": 8,
+    "FAIL": 0,
+    "NO_FILES": 0
+  },
+  "total_findings": 12,
+  "total_critical": 0,
+  "total_high": 11,
+  "total_medium": 0,
+  "total_low": 1,
+  "results": [
+    {
+      "directory": "F01_MSC_PETITION",
+      "path": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\GOLDEN_SET\\F01_MSC_PETITION",
+      "files_scanned": 6,
+      "total_findings": 3,
+      "critical": 0,
+      "high": 3,
+      "medium": 0,
+      "low": 0,
+      "gates_failed": [
+        "PLACEHOLDER",
+        "WRONG_YEAR"
+      ],
+      "gates_passed": [
+        "CHILD_NAME",
+        "CRIMINAL_CONTAMINATION",
+        "STALE_DAYS",
+        "AI_REFERENCE",
+        "TYPO",
+        "FILE_READ",
+        "UNVERIFIED_CITATION",
+        "BANNED_STRING",
+        "BAD_CITATION",
+        "PRO_SE"
+      ],
+      "file_results": [
+        {
+          "file": "F01_AFFIDAVIT.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F01_CERTIFICATE_OF_SERVICE.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F01_EXHIBIT_INDEX.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F01_FEE_WAIVER_MC20.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F01_PROPOSED_ORDER.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "PETITION_SUPERINTENDING_CONTROL_001.md",
+          "findings_count": 3,
+          "findings": [
+            {
+              "gate": "PLACEHOLDER",
+              "severity": "HIGH",
+              "message": "Placeholder found: [ADDRESS ON FILE WITH COURT]",
+              "line": 59
+            },
+            {
+              "gate": "WRONG_YEAR",
+              "severity": "HIGH",
+              "message": "Filing date uses year 2023 instead of 2026",
+              "line": 338
+            },
+            {
+              "gate": "PLACEHOLDER",
+              "severity": "HIGH",
+              "message": "Placeholder found: [ADDRESS ON FILE WITH COURT]",
+              "line": 986
+            }
+          ]
+        }
+      ],
+      "qa_result": "CONDITIONAL"
+    },
+    {
+      "directory": "F02_FAIR_HOUSING",
+      "path": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\GOLDEN_SET\\F02_FAIR_HOUSING",
+      "files_scanned": 7,
+      "total_findings": 1,
+      "critical": 0,
+      "high": 1,
+      "medium": 0,
+      "low": 0,
+      "gates_failed": [
+        "PLACEHOLDER"
+      ],
+      "gates_passed": [
+        "CHILD_NAME",
+        "CRIMINAL_CONTAMINATION",
+        "STALE_DAYS",
+        "WRONG_YEAR",
+        "AI_REFERENCE",
+        "TYPO",
+        "FILE_READ",
+        "UNVERIFIED_CITATION",
+        "BANNED_STRING",
+        "BAD_CITATION",
+        "PRO_SE"
+      ],
+      "file_results": [
+        {
+          "file": "F02_AFFIDAVIT.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F02_AO239_IFP.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F02_CERTIFICATE_OF_SERVICE.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F02_COMPLAINT.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F02_JS44_COVER_SHEET.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F02_PROPOSED_TRO.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "HOUSING_DEMAND_LETTER.md",
+          "findings_count": 1,
+          "findings": [
+            {
+              "gate": "PLACEHOLDER",
+              "severity": "HIGH",
+              "message": "Placeholder found: [Address from Michigan LARA corporate records]",
+              "line": 17
+            }
+          ]
+        }
+      ],
+      "qa_result": "CONDITIONAL"
+    },
+    {
+      "directory": "F03_DISQUALIFICATION",
+      "path": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\GOLDEN_SET\\F03_DISQUALIFICATION",
+      "files_scanned": 6,
+      "total_findings": 2,
+      "critical": 0,
+      "high": 2,
+      "medium": 0,
+      "low": 0,
+      "gates_failed": [
+        "PRO_SE",
+        "WRONG_YEAR"
+      ],
+      "gates_passed": [
+        "CHILD_NAME",
+        "CRIMINAL_CONTAMINATION",
+        "STALE_DAYS",
+        "PLACEHOLDER",
+        "AI_REFERENCE",
+        "TYPO",
+        "FILE_READ",
+        "UNVERIFIED_CITATION",
+        "BANNED_STRING",
+        "BAD_CITATION"
+      ],
+      "file_results": [
+        {
+          "file": "DISQUALIFICATION_MOTION_PACKAGE.md",
+          "findings_count": 2,
+          "findings": [
+            {
+              "gate": "WRONG_YEAR",
+              "severity": "HIGH",
+              "message": "Filing date uses year 2025 instead of 2026",
+              "line": 529
+            },
+            {
+              "gate": "PRO_SE",
+              "severity": "HIGH",
+              "message": "PRO_SE: No counsel \u2014 pro se",
+              "line": 710
+            }
+          ]
+        },
+        {
+          "file": "F03_CERTIFICATE_OF_SERVICE.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F03_COVER_SHEET_CC257.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F03_EXHIBIT_INDEX.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F03_FEE_WAIVER_MC20.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F03_PROPOSED_ORDER.md",
+          "findings_count": 0,
+          "findings": []
+        }
+      ],
+      "qa_result": "CONDITIONAL"
+    },
+    {
+      "directory": "F04_FEDERAL_1983",
+      "path": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\GOLDEN_SET\\F04_FEDERAL_1983",
+      "files_scanned": 7,
+      "total_findings": 1,
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 1,
+      "gates_failed": [
+        "UNVERIFIED_CITATION"
+      ],
+      "gates_passed": [
+        "CHILD_NAME",
+        "CRIMINAL_CONTAMINATION",
+        "STALE_DAYS",
+        "PLACEHOLDER",
+        "WRONG_YEAR",
+        "AI_REFERENCE",
+        "TYPO",
+        "FILE_READ",
+        "BANNED_STRING",
+        "BAD_CITATION",
+        "PRO_SE"
+      ],
+      "file_results": [
+        {
+          "file": "04_FEDERAL_1983_COMPLAINT.md",
+          "findings_count": 1,
+          "findings": [
+            {
+              "gate": "UNVERIFIED_CITATION",
+              "severity": "LOW",
+              "message": "Citation not found in DB: MCL 333.26269",
+              "line": 0
+            }
+          ]
+        },
+        {
+          "file": "F04_AFFIDAVIT.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F04_CERTIFICATE_OF_SERVICE.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F04_CIVIL_COVER_SHEET_JS44.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F04_EXHIBIT_INDEX.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F04_IFP_APPLICATION_AO239.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F04_PROPOSED_TRO.md",
+          "findings_count": 0,
+          "findings": []
+        }
+      ],
+      "qa_result": "PASS"
+    },
+    {
+      "directory": "F05_MSC_ORIGINAL",
+      "path": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\GOLDEN_SET\\F05_MSC_ORIGINAL",
+      "files_scanned": 8,
+      "total_findings": 1,
+      "critical": 0,
+      "high": 1,
+      "medium": 0,
+      "low": 0,
+      "gates_failed": [
+        "PRO_SE"
+      ],
+      "gates_passed": [
+        "CHILD_NAME",
+        "CRIMINAL_CONTAMINATION",
+        "STALE_DAYS",
+        "PLACEHOLDER",
+        "WRONG_YEAR",
+        "AI_REFERENCE",
+        "TYPO",
+        "FILE_READ",
+        "UNVERIFIED_CITATION",
+        "BANNED_STRING",
+        "BAD_CITATION"
+      ],
+      "file_results": [
+        {
+          "file": "05_MSC_ORIGINAL_ACTION.md",
+          "findings_count": 1,
+          "findings": [
+            {
+              "gate": "PRO_SE",
+              "severity": "HIGH",
+              "message": "PRO_SE: No counsel \u2014 pro se",
+              "line": 59
+            }
+          ]
+        },
+        {
+          "file": "F05_AFFIDAVIT.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F05_CERTIFICATE_OF_SERVICE.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F05_EMERGENCY_PARENTING_TIME_MOTION.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F05_EXHIBIT_INDEX.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F05_FEE_WAIVER_MC20.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F05_PROPOSED_ORDERS.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "MSC_BRIEF_IN_SUPPORT.md",
+          "findings_count": 0,
+          "findings": []
+        }
+      ],
+      "qa_result": "CONDITIONAL"
+    },
+    {
+      "directory": "F06_JTC_COMPLAINT",
+      "path": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\GOLDEN_SET\\F06_JTC_COMPLAINT",
+      "files_scanned": 4,
+      "total_findings": 1,
+      "critical": 0,
+      "high": 1,
+      "medium": 0,
+      "low": 0,
+      "gates_failed": [
+        "WRONG_YEAR"
+      ],
+      "gates_passed": [
+        "CHILD_NAME",
+        "CRIMINAL_CONTAMINATION",
+        "STALE_DAYS",
+        "PLACEHOLDER",
+        "AI_REFERENCE",
+        "TYPO",
+        "FILE_READ",
+        "UNVERIFIED_CITATION",
+        "BANNED_STRING",
+        "BAD_CITATION",
+        "PRO_SE"
+      ],
+      "file_results": [
+        {
+          "file": "03_JTC__FORMAL_COMPLAINT_JUDGE_MCNEILL_001.md",
+          "findings_count": 1,
+          "findings": [
+            {
+              "gate": "WRONG_YEAR",
+              "severity": "HIGH",
+              "message": "Filing date uses year 2025 instead of 2026",
+              "line": 257
+            }
+          ]
+        },
+        {
+          "file": "F06_CERTIFICATE_OF_SERVICE.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F06_EXHIBIT_INDEX.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F06_REQUESTED_RELIEF.md",
+          "findings_count": 0,
+          "findings": []
+        }
+      ],
+      "qa_result": "CONDITIONAL"
+    },
+    {
+      "directory": "F08_PPO_TERMINATION",
+      "path": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\GOLDEN_SET\\F08_PPO_TERMINATION",
+      "files_scanned": 5,
+      "total_findings": 1,
+      "critical": 0,
+      "high": 1,
+      "medium": 0,
+      "low": 0,
+      "gates_failed": [
+        "WRONG_YEAR"
+      ],
+      "gates_passed": [
+        "CHILD_NAME",
+        "CRIMINAL_CONTAMINATION",
+        "STALE_DAYS",
+        "PLACEHOLDER",
+        "AI_REFERENCE",
+        "TYPO",
+        "FILE_READ",
+        "UNVERIFIED_CITATION",
+        "BANNED_STRING",
+        "BAD_CITATION",
+        "PRO_SE"
+      ],
+      "file_results": [
+        {
+          "file": "08_PPO_TERMINATION.md",
+          "findings_count": 1,
+          "findings": [
+            {
+              "gate": "WRONG_YEAR",
+              "severity": "HIGH",
+              "message": "Filing date uses year 2023 instead of 2026",
+              "line": 307
+            }
+          ]
+        },
+        {
+          "file": "F08_CERTIFICATE_OF_SERVICE.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F08_EXHIBIT_INDEX.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F08_FEE_WAIVER_MC20.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F08_PROPOSED_ORDER.md",
+          "findings_count": 0,
+          "findings": []
+        }
+      ],
+      "qa_result": "CONDITIONAL"
+    },
+    {
+      "directory": "F09_COA_BRIEF",
+      "path": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\GOLDEN_SET\\F09_COA_BRIEF",
+      "files_scanned": 6,
+      "total_findings": 1,
+      "critical": 0,
+      "high": 1,
+      "medium": 0,
+      "low": 0,
+      "gates_failed": [
+        "WRONG_YEAR"
+      ],
+      "gates_passed": [
+        "CHILD_NAME",
+        "CRIMINAL_CONTAMINATION",
+        "STALE_DAYS",
+        "PLACEHOLDER",
+        "AI_REFERENCE",
+        "TYPO",
+        "FILE_READ",
+        "UNVERIFIED_CITATION",
+        "BANNED_STRING",
+        "BAD_CITATION",
+        "PRO_SE"
+      ],
+      "file_results": [
+        {
+          "file": "COA_BRIEF_366810.md",
+          "findings_count": 1,
+          "findings": [
+            {
+              "gate": "WRONG_YEAR",
+              "severity": "HIGH",
+              "message": "Filing date uses year 2025 instead of 2026",
+              "line": 60
+            }
+          ]
+        },
+        {
+          "file": "F09_CERTIFICATE_OF_SERVICE.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F09_EXHIBIT_INDEX.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F09_FEE_WAIVER_MC20.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F09_PROPOSED_ORDER.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "MCR_7210_SETTLED_STATEMENT.md",
+          "findings_count": 0,
+          "findings": []
+        }
+      ],
+      "qa_result": "CONDITIONAL"
+    },
+    {
+      "directory": "F10_COA_EMERGENCY",
+      "path": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\GOLDEN_SET\\F10_COA_EMERGENCY",
+      "files_scanned": 4,
+      "total_findings": 0,
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0,
+      "gates_failed": [],
+      "gates_passed": [
+        "CHILD_NAME",
+        "CRIMINAL_CONTAMINATION",
+        "STALE_DAYS",
+        "PLACEHOLDER",
+        "WRONG_YEAR",
+        "AI_REFERENCE",
+        "TYPO",
+        "FILE_READ",
+        "UNVERIFIED_CITATION",
+        "BANNED_STRING",
+        "BAD_CITATION",
+        "PRO_SE"
+      ],
+      "file_results": [
+        {
+          "file": "10_CERTIFICATE_OF_SERVICE_COA_Emergency_Motion.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "10_COA_EMERGENCY_MOTION.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "F10_FEE_WAIVER_MC20.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "PO_10_COA_EMERGENCY.md",
+          "findings_count": 0,
+          "findings": []
+        }
+      ],
+      "qa_result": "PASS"
+    },
+    {
+      "directory": "SETTLED_STATEMENTS",
+      "path": "C:\\Users\\andre\\LitigationOS\\05_FILINGS\\GOLDEN_SET\\SETTLED_STATEMENTS",
+      "files_scanned": 8,
+      "total_findings": 1,
+      "critical": 0,
+      "high": 1,
+      "medium": 0,
+      "low": 0,
+      "gates_failed": [
+        "WRONG_YEAR"
+      ],
+      "gates_passed": [
+        "CHILD_NAME",
+        "CRIMINAL_CONTAMINATION",
+        "STALE_DAYS",
+        "PLACEHOLDER",
+        "AI_REFERENCE",
+        "TYPO",
+        "FILE_READ",
+        "UNVERIFIED_CITATION",
+        "BANNED_STRING",
+        "BAD_CITATION",
+        "PRO_SE"
+      ],
+      "file_results": [
+        {
+          "file": "00_MOTION_TO_SETTLE_STATEMENTS.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "01_SETTLED_STATEMENT_Custody_Trial_2024-07-17.md",
+          "findings_count": 1,
+          "findings": [
+            {
+              "gate": "WRONG_YEAR",
+              "severity": "HIGH",
+              "message": "Filing date uses year 2024 instead of 2026",
+              "line": 70
+            }
+          ]
+        },
+        {
+          "file": "02_SETTLED_STATEMENT_Contempt_SC5_2024-11-15.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "03_SETTLED_STATEMENT_ExParte_Suspension_2025-08-08.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "04_SETTLED_STATEMENT_Contempt_SC6_SC7_2025-11-26.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "05_SETTLED_STATEMENT_Custody_Order_2025-09-28.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "06_SETTLED_STATEMENT_ExParte_JointCustody_2024-04-29.md",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "file": "07_SETTLED_STATEMENT_Contempt_Sentencing_2025-02-28.md",
+          "findings_count": 0,
+          "findings": []
+        }
+      ],
+      "qa_result": "CONDITIONAL"
+    }
+  ]
+}

@@ -1,0 +1,547 @@
+KRACK-A-LACK COMPLETE
+==================================================
+======================================================================
+[KRAKEN] PROJECT KRAKEN v2.0 -- Self-Evolving Evidence Hunting
+   Version 2.0 | 2026-04-05 15:30:52
+   Separation: 250 days since Jul 29, 2025
+======================================================================
+
+[PHASE 1] File Discovery...
+  [DB] 95193 files from file_inventory
+  [fd] 161888 files on C:\
+  [fd] 2067 files on D:\
+  [TOTAL] 241945 unique files discovered
+
+======================================================================
+[KRAKEN] KRAKEN ROUND 1/5 -- KRK-20260405-153054-R1
+   Focus: PPO | Count: 15 | Pool: 241945
+   Separation: 250 days since Jul 29, 2025
+======================================================================
+
+  [01/15] prd-template.md (8,694B)
+         [ ] LOW (score=1) via TEXT(utf-8)
+         [F] criminal
+
+  [02/15] mcl-Act-12-of-1901_1.html (22,439B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [03/15] mcl-Act-134-of-1905_001_1.html (22,109B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [04/15] fn.vreinterpret_s8_u8.html (492B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [05/15] 03_JTC_Formal_Complaint_Judge_McNeill.md (2,572B)
+         [!] HIGH (score=19) via TEXT(utf-8)
+         [P] Judge McNeill(5)
+         [L]  MCR:2, MCL:1, Case_Law:1
+         [F] custody, judicial
+         [Q] "# JTC FORMAL COMPLAINT ? JUDGE MCNEILL..."
+         [DB] Persisted 3 quotes to evidence_quotes
+         [+] Expanded 1 dossier(s)
+
+  [06/15] CCFD_24_(9_19)_PETITION_(COLLABORATIVE_LAW_PROCESS)_MCL_691.1331_et_seq.,_MCR_3_195754_84fc042a.pdf (135,986B)
+         [!] HIGH (score=11) via PDF(2pp)
+         [P] FOC(5)
+         [L]  MCR:1, MCL:1
+         [F] custody, judicial
+         [Q] "A verified statement (form FOC 23) has been submitted to the Friend of the Court...."
+         [DB] Persisted 2 quotes to evidence_quotes
+
+  [07/15] ADR-035-semantic-cache-qdrant.md (8,549B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [08/15] Michigan Court Rules Chap 9. Professional Disciplinary Proceedings.pdf (519,053B)
+         [~] MEDIUM (score=9) via PDF(55pp)
+         [L]  MCR:15, MCL:1, MRE:1
+         [F] judicial, criminal, police
+
+  [09/15] CHANGELOG_199.md (1,309B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [10/15] fn._mm512_mask_cvtepu64_pd.html (500B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [11/15] NOTE.md (874B)
+         [ ] LOW (score=1) via TEXT(utf-8)
+         [F] criminal
+
+  [12/15] README_298_1.md (1,769B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [13/15] D000248.txt (2,247B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [14/15] LITIGATION_OS__CAPSTONE__EXTRACTED__08_CODEX_Knowledge_Base__codex-main__codex-rs__tui2__frames__codex__frame_36.txt (662B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [15/15] COMPELTED 01-01-2025 Motion to terminate PPO amended_af35354a.docx (36,992B)
+         [!] HIGH (score=30) via DOCX(85P)
+         [P] Albert Watson(3), Emily Watson(2), Lori Watson(2), Judge McNeill(1)
+         [L]  MCR:1, MCL:4
+         [F] custody, PPO, judicial, housing, police
+         [Q] "Plaintiff/Petitioner:?Emily Watson..."
+         [DB] Persisted 5 quotes to evidence_quotes
+         [+] Expanded 3 dossier(s)
+
+  --------------------------------------------------
+  ROUND 1 SUMMARY: 15 files scanned
+  [!] HIGH: 3 | [~] MEDIUM: 1 | [ ] LOW: 11
+  [DB] DB inserts: 10 | [+] Dossiers expanded: 4
+
+======================================================================
+[KRAKEN] KRAKEN ROUND 2/5 -- KRK-20260405-153139-R2
+   Focus: PPO | Count: 15 | Pool: 241945
+   Separation: 250 days since Jul 29, 2025
+======================================================================
+
+  [01/15] 259-phase-2-perception-implementat.md (18,309B)
+         [~] MEDIUM (score=4) via TEXT(utf-8)
+         [F] custody, judicial, criminal, financial
+
+  [02/15] CHANGELOG_30_1.md (2,923B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [03/15] shady_oaks_park_mhp_llc_EXHIBIT(3).docx (40,489B)
+         [~] MEDIUM (score=4) via DOCX(6P)
+         [P] Shady Oaks(1)
+         [Q] "Exhibit ? Shady Oaks Park MHP LLC ? Ego Ledger..."
+         [+] Expanded 1 dossier(s)
+
+  [04/15] D000148(4).txt (20,200B)
+         [~] MEDIUM (score=9) via TEXT(utf-8)
+         [P] FOC(1)
+         [L]  MCL:1
+         [F] custody, financial, police
+         [Q] "Complete FOC 416 (mandatory UCCJEA affidavit)..."
+
+  [05/15] readme_1924_1.md (5,172B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [06/15] 2025-10-29_Pigors_v_Watson_MSC-JTC_Exhibits_Binder_v5__p0129.txt (5,395B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [07/15] cc99e.pdf (92,797B)
+         [~] MEDIUM (score=6) via PDF(1pp)
+         [P] FOC(1)
+         [L]  MCR:2
+         [F] judicial
+
+  [08/15] RE_ Correspondence_ Shady Oaks Park MHP VN-017235(2).pdf (286,033B)
+         [!] HIGH (score=17) via PDF(6pp)
+         [P] EGLE(21), Shady Oaks(16)
+         [L]  MCL:3
+         [F] housing
+         [Q] "To: "O'Brien, Connor (EGLE)" <OBrienC11@michigan.gov>; "Robinson, Lucy (EGLE)"..."
+         [DB] Persisted 5 quotes to evidence_quotes
+         [+] Expanded 1 dossier(s)
+
+  [09/15] fn.vcmlaq_f16.html (476B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [10/15] fn.vaddhn_u32.html (460B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [11/15] JTC_Print_Order_Master_2025-10-29_with_bookmarks_footer_toc__p0117_2.txt (4,500B)
+         [~] MEDIUM (score=7) via TEXT(utf-8)
+         [L]  MCR:1, MCL:1
+         [F] custody, judicial, police
+
+  [12/15] DOC6_NSR_REPORT_v5_001.md (947B)
+         [ ] LOW (score=2) via TEXT(utf-8)
+         [F] custody, judicial
+
+  [13/15] SKILL.md (7,860B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [14/15] TRIGGER_TYPES.md (8,014B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [15/15] package_620_001.json (1,551B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  --------------------------------------------------
+  ROUND 2 SUMMARY: 15 files scanned
+  [!] HIGH: 1 | [~] MEDIUM: 5 | [ ] LOW: 9
+  [DB] DB inserts: 5 | [+] Dossiers expanded: 2
+
+======================================================================
+[KRAKEN] KRAKEN ROUND 3/5 -- KRK-20260405-153223-R3
+   Focus: PPO | Count: 15 | Pool: 241945
+   Separation: 250 days since Jul 29, 2025
+======================================================================
+
+  [01/15] SKILL.md (12,927B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [02/15] base_001_1.html (174B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [03/15] fn._mm_mask_expandloadu_epi16.html (512B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [04/15] MOTION_EMERGENCY_CUSTODY_001.docx (56,498B)
+         [!] HIGH (score=53) via DOCX(214P)
+         [P] Emily Watson(9), Judge McNeill(3), Albert Watson(3), Lori Watson(3)
+         [L]  MCR:5, MCL:7, Case_Law:2
+         [F] custody, PPO, judicial, housing, police, medical
+         [Q] "Defendant's Counsel: Jennifer Barnes Barnes Law Firm, PLLC, 880 Jefferson St., Ste...."
+         [DB] Persisted 5 quotes to evidence_quotes
+         [+] Expanded 4 dossier(s)
+
+  [05/15] Andrew_Pigors_Resume_Hackley_Optimized(1).pdf (5,017B)
+         [ ] LOW (score=0) via PDF(2pp)
+
+  [06/15] isogrk4_1.txt (372B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [07/15] tool_230_albert_watson_analysis.md (8,336B)
+         [!] HIGH (score=34) via TEXT(utf-8)
+         [P] Albert Watson(24), Emily Watson(8)
+         [L]  MCR:1, MCL:3, MRE:1, Case_Law:1
+         [F] custody, PPO, judicial, police
+         [Q] "# Albert Watson Statement Analysis..."
+         [DB] Persisted 5 quotes to evidence_quotes
+         [+] Expanded 2 dossier(s)
+
+  [08/15] ACFrOgBkwY3h6R7m9mXPpYLIECW0srB3-h8dVh_U-o4WfOU2sFSdAWsrMJqCyWYCHOrrR2qs5B2Zl_H-PNACLnEmq80nMZhJqQ--xAbwaj1_uJjYVSpNVe3zTv2wKRLLpHa760jEt0BwQ3oD0CPVeE7a23B-r9FBacvSwkCmEg== (1).pdf (102,436B)
+         [~] MEDIUM (score=6) via PDF(1pp)
+         [P] Shady Oaks(1)
+         [L]  MCR:3
+         [F] housing
+
+  [09/15] fn.lasx_xvfrint_s.html (508B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [10/15] edges_authorities_xref.csv.pointer_8.txt (285B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [11/15] SKILL.md (8,447B)
+         [ ] LOW (score=1) via TEXT(utf-8)
+         [F] criminal
+
+  [12/15] SKILL.md (748B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [13/15] 1CO-PARENTING_GUIDE_Office_of_the_Attorney_General_of_Texas_?Children_need_and_deserve_the_love,_car.pdf (155,919B)
+         [ ] LOW (score=3) via PDF(24pp)
+         [F] custody, financial, medical
+
+  [14/15] fn.powf16.html (3,748B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [15/15] mcl-Act-183-of-1897_001_1.html (19,913B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  --------------------------------------------------
+  ROUND 3 SUMMARY: 15 files scanned
+  [!] HIGH: 2 | [~] MEDIUM: 1 | [ ] LOW: 12
+  [DB] DB inserts: 10 | [+] Dossiers expanded: 6
+
+======================================================================
+[KRAKEN] KRAKEN ROUND 4/5 -- KRK-20260405-153311-R4
+   Focus: PPO | Count: 15 | Pool: 241945
+   Separation: 250 days since Jul 29, 2025
+======================================================================
+
+  [01/15] JTC_MSC_Binder_v5_2025-10-29_19-13-34__p0169_dup1.txt (5,383B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [02/15] Court Ordered Judgment of Custody, PT CS and FOC10 FOC10d FOC10(4)_11.docx (220,341B)
+         ? Empty (DOCX_ERR(Package not found at 'C:\Users\andre\Favorites\PIGORS_v_WATSON_FILING_STACKS\Court Ordered Judgment of Custody, PT CS and FOC10 FOC10d FOC10(4)_11.docx'))
+
+  [03/15] emilys filings scanned_0013(1).pdf (1,268,654B)
+         [ ] LOW (score=1) via PDF(1pp)
+         [F] police
+
+  [04/15] fn.vec_all_nle.html (468B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [05/15] package_1032.json (1,925B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [06/15] 491b22f4-6d3c-4191-90e7-87d0ee87bce3__checkpoints__003-litigationos-120-completion-ac.md (15,246B)
+         [ ] LOW (score=1) via TEXT(utf-8)
+         [F] judicial
+
+  [07/15] struct.__m512d.html (28,726B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [08/15] D000015(1).txt (4,814B)
+         [~] MEDIUM (score=5) via TEXT(utf-8)
+         [L]  MCR:2, Case_Law:2
+         [F] judicial
+
+  [09/15] package_753_001.json (1,009B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [10/15] 2025-10-29_COA_Complaint_Superintending_Control_v2.docx (40,005B)
+         [!] HIGH (score=13) via DOCX(32P)
+         [P] Judge McNeill(2)
+         [L]  MCR:7, MRE:1
+         [F] custody, judicial, police
+         [Q] "McNeill in her official capacity...."
+         [DB] Persisted 1 quotes to evidence_quotes
+         [+] Expanded 1 dossier(s)
+
+  [11/15] tsdoc-metadata_1_1.json (340B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [12/15] eecea0ff81c3762ccf910b28c6c3beb2c4ab816c.md.lines.txt (41,017B)
+         [!] HIGH (score=11) via TEXT(utf-8)
+         [L]  MCR:7, MCL:1, MRE:1, Case_Law:2
+         [F] custody, PPO, judicial
+
+  [13/15] package.nls.ru_16_1.json (37,405B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [14/15] NoReply_20250703_115213_0002(1).pdf (427,053B)
+         [ ] LOW (score=1) via PDF(1pp)
+         [F] housing
+
+  [15/15] JTC_Print_Order_Master_2025-10-29_with_bookmarks_footer_toc__p0340.txt (129B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  --------------------------------------------------
+  ROUND 4 SUMMARY: 15 files scanned
+  [!] HIGH: 2 | [~] MEDIUM: 1 | [ ] LOW: 11
+  [DB] DB inserts: 1 | [+] Dossiers expanded: 1
+
+======================================================================
+[KRAKEN] KRAKEN ROUND 5/5 -- KRK-20260405-153354-R5
+   Focus: PPO | Count: 15 | Pool: 241945
+   Separation: 250 days since Jul 29, 2025
+======================================================================
+
+  [01/15] mappingTable_1_1.json (252,306B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [02/15] JTC_NARRATIVE_SUPPLEMENT.md (22,121B)
+         [!] HIGH (score=54) via TEXT(utf-8)
+         [P] Judge McNeill(12), Emily Watson(6), Ronald Berry(2), Albert Watson(1)
+         [L]  MCR:6, MCL:2, Case_Law:1
+         [F] custody, PPO, judicial, housing, criminal, financial, police, medical
+         [Q] "McNeill, 14th Circuit Court, Muskegon County..."
+         [DB] Persisted 5 quotes to evidence_quotes
+         [+] Expanded 2 dossier(s)
+
+  [03/15] package.nls.pt-br_5_1.json (1,948B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [04/15] repos-and-prs.md (7,058B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [05/15] is.md (670B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [06/15] duration-constructors.html (23,737B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [07/15] D000234(5).txt (34,521B)
+         [!] HIGH (score=21) via TEXT(utf-8)
+         [P] FOC(12)
+         [L]  MCR:8, MCL:3, Case_Law:2
+         [F] custody, judicial, criminal, financial
+         [Q] "Forms = @("FOC 10", "FOC 106_new");..."
+         [DB] Persisted 4 quotes to evidence_quotes
+
+  [08/15] NoReply_20250703_115213_0002_org1.pdf (427,053B)
+         [ ] LOW (score=1) via PDF(1pp)
+         [F] housing
+
+  [09/15] 087-lfs-push-fix-for-v10-0-deploy.md (16,307B)
+         [!] HIGH (score=30) via TEXT(utf-8)
+         [P] EGLE(3), Ronald Berry(1), Cavan Berry(1), Cassandra VanDam(1)
+         [F] custody, judicial
+         [Q] "User provided critical Berry testimony about Cavan Berry and Ronald T...."
+         [DB] Persisted 5 quotes to evidence_quotes
+         [+] Expanded 5 dossier(s)
+
+  [10/15] welcome_2.html (6,485B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [11/15] Motion_for_Contempt_and_Restitution_881e1553_001.docx (36,975B)
+         [~] MEDIUM (score=9) via DOCX(3P)
+         [P] Emily Watson(1), Judge McNeill(1)
+         [F] criminal
+
+  [12/15] version_info.html (375B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [13/15] package_119_001.json (2,387B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [14/15] SKILL_650_1.md (930B)
+         [ ] LOW (score=0) via TEXT(utf-8)
+
+  [15/15] ETERNAL_SUPERGRAPH_MASTER_nodes_001.csv (15,489,000B)
+         [!] HIGH (score=23) via TEXT(utf-8)
+         [P] Judge McNeill(2), FOC(2), EGLE(1)
+         [L]  MCR:2
+         [F] custody, PPO, judicial, housing, criminal, financial, police
+         [Q] "procedure::Motion Regarding Parenting Time (FOC 65),procedure::Motion Regarding Parenting Time (FOC ..."
+         [DB] Persisted 3 quotes to evidence_quotes
+         [+] Expanded 1 dossier(s)
+
+  --------------------------------------------------
+  ROUND 5 SUMMARY: 15 files scanned
+  [!] HIGH: 4 | [~] MEDIUM: 1 | [ ] LOW: 10
+  [DB] DB inserts: 17 | [+] Dossiers expanded: 8
+
+  [>] Results saved: D:\LitigationOS_tmp\kraken_results\kraken_20260405_153440.json
+
+======================================================================
+[KRAKEN] KRAKEN MISSION COMPLETE -- 5 round(s)
+   Files scanned: 75
+   [!] HIGH: 12 | [~] MEDIUM: 9
+   [DB] Evidence persisted: 43 rows
+   [+] Dossiers expanded: 21
+   Separation: 250 days -- EVERY DAY COUNTS
+======================================================================
+
+  [*] Auto-condensing (3+ rounds completed)...
+
+======================================================================
+[KRAKEN] CONDENSATION PIPELINE -- Judicial + Narrative Intelligence
+======================================================================
+
+  Processing 231 HIGH/MEDIUM findings...
+
+  JUDICIAL INTELLIGENCE CONDENSED:
+    ex_parte                 1141 ##############################
+    contempt_abuse            870 ##############################
+    recusal_refusal           709 ##############################
+    due_process               434 ##############################
+    bias                      361 ##############################
+    cartel_connection          23 #######################
+    rights_denial              19 ###################
+    evidence_exclusion         15 ###############
+    TOTAL                    3572
+
+  NARRATIVE INTELLIGENCE CONDENSED:
+    dated_events              314 events
+    court_actions               0 events
+    witness_statements          0 events
+    false_allegations           0 events
+    harm_indicators             0 events
+    separation_events           0 events
+
+  ADVERSARY INTELLIGENCE:
+    Judge McNeill              994 mentions,  85 HIGH (97 files)
+    Emily Watson               741 mentions,  73 HIGH (86 files)
+    FOC                        725 mentions,  68 HIGH (82 files)
+    Shady Oaks                 633 mentions,  48 HIGH (58 files)
+    EGLE                       294 mentions,  23 HIGH (25 files)
+    Albert Watson              224 mentions,  36 HIGH (36 files)
+    Lori Watson                158 mentions,  27 HIGH (27 files)
+    Kenneth Hoopes             130 mentions,  25 HIGH (25 files)
+    Ronald Berry                82 mentions,  19 HIGH (21 files)
+    Pamela Rusco                57 mentions,  16 HIGH (18 files)
+    Maria Ladas-Hoopes          54 mentions,  14 HIGH (14 files)
+    Jennifer Barnes             50 mentions,  21 HIGH (23 files)
+    Mandi Martini               37 mentions,  11 HIGH (12 files)
+    Kim Davis                   36 mentions,   9 HIGH (9 files)
+    Cavan Berry                 34 mentions,   5 HIGH (5 files)
+
+  [>] Condensation saved: D:\LitigationOS_tmp\kraken_results\condensed_20260405_153448.json
+
+  [*] Auto-exporting to MBP (5+ rounds)...
+
+======================================================================
+[KRAKEN] MBP BRIDGE -- Transforming to THEMANBEARPIG graph data
+======================================================================
+
+  Generated 28 new nodes and 38 new links
+  [+] KRAKEN overlay saved: C:\Users\andre\LitigationOS\12_WORKSPACE\THEMANBEARPIG_v7\kraken_overlay.json
+      28 nodes, 38 links ready for MBP merge
+  [>] Timestamped export: D:\LitigationOS_tmp\kraken_results\kraken_graph_20260405_153448.json
+  [+] Updated MBP metadata: C:\Users\andre\LitigationOS\12_WORKSPACE\THEMANBEARPIG_v7\graph_data_v7.json
+======================================================================
+
+======================================================================
+[KRAKEN] PROJECT KRAKEN -- STATUS REPORT
+======================================================================
+
+  Rounds completed: 20
+  Total files scanned: 300
+  [!] HIGH: 59 | [~] MEDIUM: 36 | [ ] LOW: 202
+  [DB] Evidence rows persisted: 210
+
+  Unique files processed: 709
+    LOW: 462
+    HIGH: 143
+    MEDIUM: 88
+    EMPTY: 16
+
+  Top adversaries discovered:
+    Judge McNeill: 994 mentions
+    Emily Watson: 741 mentions
+    FOC: 725 mentions
+    Shady Oaks: 636 mentions
+    EGLE: 294 mentions
+    Albert Watson: 224 mentions
+    Lori Watson: 158 mentions
+    Kenneth Hoopes: 130 mentions
+    Ronald Berry: 82 mentions
+    Pamela Rusco: 57 mentions
+
+  Recent rounds:
+    KRK-20260405-153354-R5 | 15 files | H:4 M:1 L:10 | focus:ppo | 2026-04-05 19:34:40
+    KRK-20260405-153311-R4 | 15 files | H:2 M:1 L:11 | focus:ppo | 2026-04-05 19:33:54
+    KRK-20260405-153223-R3 | 15 files | H:2 M:1 L:12 | focus:ppo | 2026-04-05 19:33:11
+    KRK-20260405-153139-R2 | 15 files | H:1 M:5 L:9 | focus:ppo | 2026-04-05 19:32:23
+    KRK-20260405-153054-R1 | 15 files | H:3 M:1 L:11 | focus:ppo | 2026-04-05 19:31:39
+
+  Separation: 250 days since Jul 29, 2025
+======================================================================
+
+======================================================================
+[KRAKEN] EVOLUTION ENGINE -- Self-Tuning Intelligence
+======================================================================
+
+  File Type Yield Rates (learned from all rounds):
+  Ext       Scanned   HIGH    Yield   Weight
+  -------- -------- ------ -------- --------
+  .docx          19     10   52.6%    1.00  ##########
+  .csv           12      4   33.3%    1.00  ######
+  .pdf           84     26   31.0%    1.00  ######
+  .txt          189     57   30.2%    1.00  ######
+  .md           157     37   23.6%    1.00  ####
+  .json          55      2    3.6%    1.00  
+  .html         149      1    0.7%    1.00  
+
+  Drive Yield Rates:
+  Drive     Scanned   HIGH    Yield   Weight
+  -------- -------- ------ -------- --------
+  D               4      2   50.0%    1.00  ##########
+  C             661    135   20.4%    1.00  ####
+
+  Adversary Co-Occurrence Network (discovered relationships):
+    Emily Watson         <-> Judge McNeill        [ 66] ####################
+    FOC                  <-> Judge McNeill        [ 43] ####################
+    Emily Watson         <-> FOC                  [ 34] ####################
+    Albert Watson        <-> Emily Watson         [ 33] ####################
+    Albert Watson        <-> Judge McNeill        [ 28] ####################
+    Emily Watson         <-> Lori Watson          [ 25] ####################
+    Judge McNeill        <-> Lori Watson          [ 24] ####################
+    Albert Watson        <-> Lori Watson          [ 23] ####################
+    Judge McNeill        <-> Shady Oaks           [ 22] ####################
+    Emily Watson         <-> Jennifer Barnes      [ 21] ####################
+    Kenneth Hoopes       <-> Shady Oaks           [ 21] ####################
+    EGLE                 <-> Shady Oaks           [ 20] ####################
+    Albert Watson        <-> FOC                  [ 20] ####################
+    Emily Watson         <-> Shady Oaks           [ 20] ####################
+    FOC                  <-> Shady Oaks           [ 20] ####################
+
+  Evolution Trajectory (last 10 rounds):
+    R5: 8 metrics, avg_yield=30.00%, samples=30
+    R4: 7 metrics, avg_yield=17.86%, samples=28
+    R3: 6 metrics, avg_yield=20.83%, samples=30
+    R2: 7 metrics, avg_yield=7.14%, samples=30
+    R1: 6 metrics, avg_yield=27.78%, samples=30
+    R5: 8 metrics, avg_yield=13.54%, samples=30
+    R4: 5 metrics, avg_yield=3.33%, samples=30
+    R3: 7 metrics, avg_yield=16.67%, samples=30
+    R2: 7 metrics, avg_yield=7.14%, samples=28
+    R1: 7 metrics, avg_yield=30.95%, samples=30
+======================================================================

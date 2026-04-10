@@ -1,0 +1,944 @@
+{
+  "nodes": [
+    {
+      "id": "table_alert_rules",
+      "label": "alert_rules",
+      "group": "table",
+      "size": 4,
+      "color": "#44ffff",
+      "desc": "Table: alert_rules\nRows: 0\nColumns: id, name, pattern, pattern_type, severity, action, enabled, created_at"
+    },
+    {
+      "id": "table_change_events",
+      "label": "change_events",
+      "group": "table",
+      "size": 12.528068170299473,
+      "color": "#44ffff",
+      "desc": "Table: change_events\nRows: 241\nColumns: id, filepath, event_type, old_hash, new_hash, old_size, new_size, size_delta"
+    },
+    {
+      "id": "table_events_fts",
+      "label": "events_fts",
+      "group": "table",
+      "size": 12.528068170299473,
+      "color": "#44ffff",
+      "desc": "Table: events_fts\nRows: 241\nColumns: filepath, event_type, classification, details"
+    },
+    {
+      "id": "table_events_fts_config",
+      "label": "events_fts_config",
+      "group": "table",
+      "size": 4,
+      "color": "#44ffff",
+      "desc": "Table: events_fts_config\nRows: 1\nColumns: k, v"
+    },
+    {
+      "id": "table_events_fts_data",
+      "label": "events_fts_data",
+      "group": "table",
+      "size": 7.165570740632901,
+      "color": "#44ffff",
+      "desc": "Table: events_fts_data\nRows: 11\nColumns: id, block"
+    },
+    {
+      "id": "table_events_fts_docsize",
+      "label": "events_fts_docsize",
+      "group": "table",
+      "size": 12.528068170299473,
+      "color": "#44ffff",
+      "desc": "Table: events_fts_docsize\nRows: 241\nColumns: id, sz"
+    },
+    {
+      "id": "table_events_fts_idx",
+      "label": "events_fts_idx",
+      "group": "table",
+      "size": 6.816970037757299,
+      "color": "#44ffff",
+      "desc": "Table: events_fts_idx\nRows: 9\nColumns: segid, term, pgno"
+    },
+    {
+      "id": "table_file_snapshots",
+      "label": "file_snapshots",
+      "group": "table",
+      "size": 12.528068170299473,
+      "color": "#44ffff",
+      "desc": "Table: file_snapshots\nRows: 241\nColumns: id, filepath, filename, directory, extension, size_bytes, sha256, modified_at"
+    },
+    {
+      "id": "table_watch_profiles",
+      "label": "watch_profiles",
+      "group": "table",
+      "size": 4,
+      "color": "#44ffff",
+      "desc": "Table: watch_profiles\nRows: 0\nColumns: id, name, directories, extensions, exclude_patterns, recursive, hash_files, max_file_size_mb"
+    },
+    {
+      "id": "col_alert_rules_id",
+      "label": "id",
+      "group": "cols_alert_rules",
+      "size": 6,
+      "color": "#88ff44",
+      "desc": "Column: alert_rules.id\nType: INTEGER"
+    },
+    {
+      "id": "col_alert_rules_name",
+      "label": "name",
+      "group": "cols_alert_rules",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: alert_rules.name\nType: TEXT"
+    },
+    {
+      "id": "col_alert_rules_pattern",
+      "label": "pattern",
+      "group": "cols_alert_rules",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: alert_rules.pattern\nType: TEXT"
+    },
+    {
+      "id": "col_alert_rules_pattern_type",
+      "label": "pattern_type",
+      "group": "cols_alert_rules",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: alert_rules.pattern_type\nType: TEXT"
+    },
+    {
+      "id": "col_alert_rules_severity",
+      "label": "severity",
+      "group": "cols_alert_rules",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: alert_rules.severity\nType: TEXT"
+    },
+    {
+      "id": "col_alert_rules_action",
+      "label": "action",
+      "group": "cols_alert_rules",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: alert_rules.action\nType: TEXT"
+    },
+    {
+      "id": "col_alert_rules_enabled",
+      "label": "enabled",
+      "group": "cols_alert_rules",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: alert_rules.enabled\nType: INTEGER"
+    },
+    {
+      "id": "col_alert_rules_created_at",
+      "label": "created_at",
+      "group": "cols_alert_rules",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: alert_rules.created_at\nType: TEXT"
+    },
+    {
+      "id": "col_change_events_id",
+      "label": "id",
+      "group": "cols_change_events",
+      "size": 6,
+      "color": "#8844ff",
+      "desc": "Column: change_events.id\nType: INTEGER"
+    },
+    {
+      "id": "col_change_events_filepath",
+      "label": "filepath",
+      "group": "cols_change_events",
+      "size": 4,
+      "color": "#8844ff",
+      "desc": "Column: change_events.filepath\nType: TEXT"
+    },
+    {
+      "id": "col_change_events_event_type",
+      "label": "event_type",
+      "group": "cols_change_events",
+      "size": 4,
+      "color": "#8844ff",
+      "desc": "Column: change_events.event_type\nType: TEXT"
+    },
+    {
+      "id": "col_change_events_old_hash",
+      "label": "old_hash",
+      "group": "cols_change_events",
+      "size": 4,
+      "color": "#8844ff",
+      "desc": "Column: change_events.old_hash\nType: TEXT"
+    },
+    {
+      "id": "col_change_events_new_hash",
+      "label": "new_hash",
+      "group": "cols_change_events",
+      "size": 4,
+      "color": "#8844ff",
+      "desc": "Column: change_events.new_hash\nType: TEXT"
+    },
+    {
+      "id": "col_change_events_old_size",
+      "label": "old_size",
+      "group": "cols_change_events",
+      "size": 4,
+      "color": "#8844ff",
+      "desc": "Column: change_events.old_size\nType: INTEGER"
+    },
+    {
+      "id": "col_change_events_new_size",
+      "label": "new_size",
+      "group": "cols_change_events",
+      "size": 4,
+      "color": "#8844ff",
+      "desc": "Column: change_events.new_size\nType: INTEGER"
+    },
+    {
+      "id": "col_change_events_size_delta",
+      "label": "size_delta",
+      "group": "cols_change_events",
+      "size": 4,
+      "color": "#8844ff",
+      "desc": "Column: change_events.size_delta\nType: INTEGER"
+    },
+    {
+      "id": "col_change_events_classification",
+      "label": "classification",
+      "group": "cols_change_events",
+      "size": 4,
+      "color": "#8844ff",
+      "desc": "Column: change_events.classification\nType: TEXT"
+    },
+    {
+      "id": "col_change_events_severity",
+      "label": "severity",
+      "group": "cols_change_events",
+      "size": 4,
+      "color": "#8844ff",
+      "desc": "Column: change_events.severity\nType: TEXT"
+    },
+    {
+      "id": "col_change_events_details",
+      "label": "details",
+      "group": "cols_change_events",
+      "size": 4,
+      "color": "#8844ff",
+      "desc": "Column: change_events.details\nType: TEXT"
+    },
+    {
+      "id": "col_change_events_detected_at",
+      "label": "detected_at",
+      "group": "cols_change_events",
+      "size": 4,
+      "color": "#8844ff",
+      "desc": "Column: change_events.detected_at\nType: TEXT"
+    },
+    {
+      "id": "col_change_events_profile_name",
+      "label": "profile_name",
+      "group": "cols_change_events",
+      "size": 4,
+      "color": "#8844ff",
+      "desc": "Column: change_events.profile_name\nType: TEXT"
+    },
+    {
+      "id": "col_events_fts_filepath",
+      "label": "filepath",
+      "group": "cols_events_fts",
+      "size": 4,
+      "color": "#ff4444",
+      "desc": "Column: events_fts.filepath\nType: "
+    },
+    {
+      "id": "col_events_fts_event_type",
+      "label": "event_type",
+      "group": "cols_events_fts",
+      "size": 4,
+      "color": "#ff4444",
+      "desc": "Column: events_fts.event_type\nType: "
+    },
+    {
+      "id": "col_events_fts_classification",
+      "label": "classification",
+      "group": "cols_events_fts",
+      "size": 4,
+      "color": "#ff4444",
+      "desc": "Column: events_fts.classification\nType: "
+    },
+    {
+      "id": "col_events_fts_details",
+      "label": "details",
+      "group": "cols_events_fts",
+      "size": 4,
+      "color": "#ff4444",
+      "desc": "Column: events_fts.details\nType: "
+    },
+    {
+      "id": "col_events_fts_config_k",
+      "label": "k",
+      "group": "cols_events_fts_config",
+      "size": 6,
+      "color": "#ff8844",
+      "desc": "Column: events_fts_config.k\nType: "
+    },
+    {
+      "id": "col_events_fts_config_v",
+      "label": "v",
+      "group": "cols_events_fts_config",
+      "size": 4,
+      "color": "#ff8844",
+      "desc": "Column: events_fts_config.v\nType: "
+    },
+    {
+      "id": "col_events_fts_data_id",
+      "label": "id",
+      "group": "cols_events_fts_data",
+      "size": 6,
+      "color": "#00ff88",
+      "desc": "Column: events_fts_data.id\nType: INTEGER"
+    },
+    {
+      "id": "col_events_fts_data_block",
+      "label": "block",
+      "group": "cols_events_fts_data",
+      "size": 4,
+      "color": "#00ff88",
+      "desc": "Column: events_fts_data.block\nType: BLOB"
+    },
+    {
+      "id": "col_events_fts_docsize_id",
+      "label": "id",
+      "group": "cols_events_fts_docsize",
+      "size": 6,
+      "color": "#44ff88",
+      "desc": "Column: events_fts_docsize.id\nType: INTEGER"
+    },
+    {
+      "id": "col_events_fts_docsize_sz",
+      "label": "sz",
+      "group": "cols_events_fts_docsize",
+      "size": 4,
+      "color": "#44ff88",
+      "desc": "Column: events_fts_docsize.sz\nType: BLOB"
+    },
+    {
+      "id": "col_events_fts_idx_segid",
+      "label": "segid",
+      "group": "cols_events_fts_idx",
+      "size": 6,
+      "color": "#44ff88",
+      "desc": "Column: events_fts_idx.segid\nType: "
+    },
+    {
+      "id": "col_events_fts_idx_term",
+      "label": "term",
+      "group": "cols_events_fts_idx",
+      "size": 6,
+      "color": "#44ff88",
+      "desc": "Column: events_fts_idx.term\nType: "
+    },
+    {
+      "id": "col_events_fts_idx_pgno",
+      "label": "pgno",
+      "group": "cols_events_fts_idx",
+      "size": 4,
+      "color": "#44ff88",
+      "desc": "Column: events_fts_idx.pgno\nType: "
+    },
+    {
+      "id": "col_file_snapshots_id",
+      "label": "id",
+      "group": "cols_file_snapshots",
+      "size": 6,
+      "color": "#88ff44",
+      "desc": "Column: file_snapshots.id\nType: INTEGER"
+    },
+    {
+      "id": "col_file_snapshots_filepath",
+      "label": "filepath",
+      "group": "cols_file_snapshots",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: file_snapshots.filepath\nType: TEXT"
+    },
+    {
+      "id": "col_file_snapshots_filename",
+      "label": "filename",
+      "group": "cols_file_snapshots",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: file_snapshots.filename\nType: TEXT"
+    },
+    {
+      "id": "col_file_snapshots_directory",
+      "label": "directory",
+      "group": "cols_file_snapshots",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: file_snapshots.directory\nType: TEXT"
+    },
+    {
+      "id": "col_file_snapshots_extension",
+      "label": "extension",
+      "group": "cols_file_snapshots",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: file_snapshots.extension\nType: TEXT"
+    },
+    {
+      "id": "col_file_snapshots_size_bytes",
+      "label": "size_bytes",
+      "group": "cols_file_snapshots",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: file_snapshots.size_bytes\nType: INTEGER"
+    },
+    {
+      "id": "col_file_snapshots_sha256",
+      "label": "sha256",
+      "group": "cols_file_snapshots",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: file_snapshots.sha256\nType: TEXT"
+    },
+    {
+      "id": "col_file_snapshots_modified_at",
+      "label": "modified_at",
+      "group": "cols_file_snapshots",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: file_snapshots.modified_at\nType: TEXT"
+    },
+    {
+      "id": "col_file_snapshots_created_at",
+      "label": "created_at",
+      "group": "cols_file_snapshots",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: file_snapshots.created_at\nType: TEXT"
+    },
+    {
+      "id": "col_file_snapshots_snapshot_time",
+      "label": "snapshot_time",
+      "group": "cols_file_snapshots",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: file_snapshots.snapshot_time\nType: TEXT"
+    },
+    {
+      "id": "col_file_snapshots_is_current",
+      "label": "is_current",
+      "group": "cols_file_snapshots",
+      "size": 4,
+      "color": "#88ff44",
+      "desc": "Column: file_snapshots.is_current\nType: INTEGER"
+    },
+    {
+      "id": "col_watch_profiles_id",
+      "label": "id",
+      "group": "cols_watch_profiles",
+      "size": 6,
+      "color": "#4488ff",
+      "desc": "Column: watch_profiles.id\nType: INTEGER"
+    },
+    {
+      "id": "col_watch_profiles_name",
+      "label": "name",
+      "group": "cols_watch_profiles",
+      "size": 4,
+      "color": "#4488ff",
+      "desc": "Column: watch_profiles.name\nType: TEXT"
+    },
+    {
+      "id": "col_watch_profiles_directories",
+      "label": "directories",
+      "group": "cols_watch_profiles",
+      "size": 4,
+      "color": "#4488ff",
+      "desc": "Column: watch_profiles.directories\nType: TEXT"
+    },
+    {
+      "id": "col_watch_profiles_extensions",
+      "label": "extensions",
+      "group": "cols_watch_profiles",
+      "size": 4,
+      "color": "#4488ff",
+      "desc": "Column: watch_profiles.extensions\nType: TEXT"
+    },
+    {
+      "id": "col_watch_profiles_exclude_patterns",
+      "label": "exclude_patterns",
+      "group": "cols_watch_profiles",
+      "size": 4,
+      "color": "#4488ff",
+      "desc": "Column: watch_profiles.exclude_patterns\nType: TEXT"
+    },
+    {
+      "id": "col_watch_profiles_recursive",
+      "label": "recursive",
+      "group": "cols_watch_profiles",
+      "size": 4,
+      "color": "#4488ff",
+      "desc": "Column: watch_profiles.recursive\nType: INTEGER"
+    },
+    {
+      "id": "col_watch_profiles_hash_files",
+      "label": "hash_files",
+      "group": "cols_watch_profiles",
+      "size": 4,
+      "color": "#4488ff",
+      "desc": "Column: watch_profiles.hash_files\nType: INTEGER"
+    },
+    {
+      "id": "col_watch_profiles_max_file_size_mb",
+      "label": "max_file_size_mb",
+      "group": "cols_watch_profiles",
+      "size": 4,
+      "color": "#4488ff",
+      "desc": "Column: watch_profiles.max_file_size_mb\nType: INTEGER"
+    },
+    {
+      "id": "col_watch_profiles_created_at",
+      "label": "created_at",
+      "group": "cols_watch_profiles",
+      "size": 4,
+      "color": "#4488ff",
+      "desc": "Column: watch_profiles.created_at\nType: TEXT"
+    }
+  ],
+  "links": [
+    {
+      "source": "table_alert_rules",
+      "target": "col_alert_rules_id",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_alert_rules",
+      "target": "col_alert_rules_name",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_alert_rules",
+      "target": "col_alert_rules_pattern",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_alert_rules",
+      "target": "col_alert_rules_pattern_type",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_alert_rules",
+      "target": "col_alert_rules_severity",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_alert_rules",
+      "target": "col_alert_rules_action",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_alert_rules",
+      "target": "col_alert_rules_enabled",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_alert_rules",
+      "target": "col_alert_rules_created_at",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_id",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_filepath",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_event_type",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_old_hash",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_new_hash",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_old_size",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_new_size",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_size_delta",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_classification",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_severity",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_details",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_detected_at",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_change_events",
+      "target": "col_change_events_profile_name",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts",
+      "target": "col_events_fts_filepath",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts",
+      "target": "col_events_fts_event_type",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts",
+      "target": "col_events_fts_classification",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts",
+      "target": "col_events_fts_details",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts_config",
+      "target": "col_events_fts_config_k",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts_config",
+      "target": "col_events_fts_config_v",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts_data",
+      "target": "col_events_fts_data_id",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts_data",
+      "target": "col_events_fts_data_block",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts_docsize",
+      "target": "col_events_fts_docsize_id",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts_docsize",
+      "target": "col_events_fts_docsize_sz",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts_idx",
+      "target": "col_events_fts_idx_segid",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts_idx",
+      "target": "col_events_fts_idx_term",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_events_fts_idx",
+      "target": "col_events_fts_idx_pgno",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_file_snapshots",
+      "target": "col_file_snapshots_id",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_file_snapshots",
+      "target": "col_file_snapshots_filepath",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_file_snapshots",
+      "target": "col_file_snapshots_filename",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_file_snapshots",
+      "target": "col_file_snapshots_directory",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_file_snapshots",
+      "target": "col_file_snapshots_extension",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_file_snapshots",
+      "target": "col_file_snapshots_size_bytes",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_file_snapshots",
+      "target": "col_file_snapshots_sha256",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_file_snapshots",
+      "target": "col_file_snapshots_modified_at",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_file_snapshots",
+      "target": "col_file_snapshots_created_at",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_file_snapshots",
+      "target": "col_file_snapshots_snapshot_time",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_file_snapshots",
+      "target": "col_file_snapshots_is_current",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_watch_profiles",
+      "target": "col_watch_profiles_id",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_watch_profiles",
+      "target": "col_watch_profiles_name",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_watch_profiles",
+      "target": "col_watch_profiles_directories",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_watch_profiles",
+      "target": "col_watch_profiles_extensions",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_watch_profiles",
+      "target": "col_watch_profiles_exclude_patterns",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_watch_profiles",
+      "target": "col_watch_profiles_recursive",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_watch_profiles",
+      "target": "col_watch_profiles_hash_files",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_watch_profiles",
+      "target": "col_watch_profiles_max_file_size_mb",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_watch_profiles",
+      "target": "col_watch_profiles_created_at",
+      "type": "HAS_COLUMN",
+      "color": "#ffffff22",
+      "weight": 1
+    },
+    {
+      "source": "table_alert_rules",
+      "target": "table_watch_profiles",
+      "type": "SHARED_COLUMN",
+      "color": "#4488ff44",
+      "weight": 2
+    },
+    {
+      "source": "table_alert_rules",
+      "target": "table_change_events",
+      "type": "SHARED_COLUMN",
+      "color": "#4488ff44",
+      "weight": 2
+    },
+    {
+      "source": "table_change_events",
+      "target": "table_events_fts",
+      "type": "SHARED_COLUMN",
+      "color": "#4488ff44",
+      "weight": 2
+    },
+    {
+      "source": "table_change_events",
+      "target": "table_file_snapshots",
+      "type": "SHARED_COLUMN",
+      "color": "#4488ff44",
+      "weight": 2
+    },
+    {
+      "source": "table_events_fts",
+      "target": "table_file_snapshots",
+      "type": "SHARED_COLUMN",
+      "color": "#4488ff44",
+      "weight": 2
+    },
+    {
+      "source": "table_change_events",
+      "target": "table_events_fts",
+      "type": "SHARED_COLUMN",
+      "color": "#4488ff44",
+      "weight": 2
+    },
+    {
+      "source": "table_change_events",
+      "target": "table_events_fts",
+      "type": "SHARED_COLUMN",
+      "color": "#4488ff44",
+      "weight": 2
+    },
+    {
+      "source": "table_change_events",
+      "target": "table_events_fts",
+      "type": "SHARED_COLUMN",
+      "color": "#4488ff44",
+      "weight": 2
+    }
+  ]
+}

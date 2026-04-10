@@ -1,13 +1,130 @@
 
-# ML model artifacts - generated, do not track
+# ============================================
+# LitigationOS .gitignore — COMPREHENSIVE
+# ============================================
+
+# === DATABASES (too large for GitHub, >100 MB) ===
+*.db
+*.db-shm
+*.db-wal
+*.db.7z
+*.sqlite
+*.sqlite3
+!00_SYSTEM/brains/.gitkeep
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
 *.pkl
 *.pickle
 00_SYSTEM/engines/predictive/models/
 
-# Brain DBs — too large for GitHub (>100 MB), stored locally on C:\
-00_SYSTEM/brains/*.db
-# litigation_context.db tracked separately
-litigation_context.db
-litigation_context.db-shm
-litigation_context.db-wal
-mbp_brain.db
+# === Virtual Environments ===
+pytools_venv/
+.venv/
+venv/
+env/
+.env
+
+# === Node.js ===
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# === Go ===
+*.exe
+!scripts/*.exe
+
+# === OS Files ===
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.temp
+*.swp
+*~
+
+# === IDE ===
+.idea/
+.vscode/settings.json
+*.sublime-*
+
+# === Large/Generated Content ===
+*.7z
+*.zip
+*.tar.gz
+*.rar
+
+# === Logs ===
+logs/
+*.log
+
+# === Temp ===
+temp/
+patches/
+
+# === Local Config (not portable) ===
+mcp.json
+osint.json
+master.code-workspace
+.lesshst
+.node_repl_history
+.eide/
+.learnings/
+.superpower-copilot/
+
+# === Cloned Repos (not ours) ===
+awesome-ctf/
+awesome-forensics/
+awesome-hacking/
+awesome-incident-response/
+awesome-malware-analysis/
+awesome-osint/
+awesome-pentest/
+awesome-security/
+
+# === Worktrees ===
+LitigationOS.worktrees/
+
+# === Large Data Directories (evidence, media, reference — NOT code) ===
+# These contain litigation data files too large for GitHub.
+# Code/engines/scripts ARE tracked; data is local-only.
+01_EVIDENCE/
+02_AUTHORITY/
+03_COURT/
+06_DATA/
+07_CODE/
+08_MEDIA/
+09_REFERENCE/
+10_EXTERNAL/
+11_ARCHIVES/
+
+# === 00_SYSTEM heavy subdirs (brains, builds, models, cloned repos) ===
+00_SYSTEM/brains/
+00_SYSTEM/blueprint_build/
+00_SYSTEM/consolidation_v2/
+00_SYSTEM/kraken_results/
+00_SYSTEM/awesome-*/
+00_SYSTEM/cortex-*/
+00_SYSTEM/.pytest_cache/
+00_SYSTEM/engines/perception/
+00_SYSTEM/engines/semantic/
+00_SYSTEM/engines/event_horizon/
+00_SYSTEM/engines/harvest_go/
+00_SYSTEM/engines/ingest/
+00_SYSTEM/tools/
+
+# === Large analysis/filings/workspace (track selectively via git add -f) ===
+04_ANALYSIS/
+05_FILINGS/
+12_WORKSPACE/
+
+# === Pytest ===
+.pytest_cache/

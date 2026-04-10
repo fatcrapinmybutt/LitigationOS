@@ -1,0 +1,47 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": ".local"
+	},
+	{
+		"path": "LitigationOS"
+	},
+	{
+		"name": "D: Drive",
+		"path": "D:\\"
+	},
+	{
+		"name": "F: Drive",
+		"path": "F:\\"
+	},
+	{
+		"name": "G: Drive",
+		"path": "G:\\"
+	},
+	{
+		"name": "H: Drive",
+		"path": "H:\\"
+	},
+	{
+		"name": "I: Drive",
+		"path": "I:\\"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "LitigationOS",
+    "github.copilot.chat.agentHistorySummarizationWithPromptCache": true,
+    "github.copilot.chat.agentCustomizationSkill.enabled": true,
+    "terminal.integrated.enableWin32InputMode": true,
+    "github.copilot.chat.agent.omitFileAttachmentContents": true,
+    "github.copilot.chat.cli.mcp.enabled": true,
+    "github.copilot.chat.editRecording.enabled": true,
+    "github.copilot.chat.edits.gemini3MultiReplaceString": true,
+    "github.copilot.chat.enableUserPreferences": true,
+    "github.copilot.chat.feedback.onChange": true,
+    "github.copilot.chat.inlineEdits.chatSessionContextProvider.enabled": true,
+    "github.copilot.chat.inlineEdits.diagnosticsContextProvider.enabled": true
+  }
+}

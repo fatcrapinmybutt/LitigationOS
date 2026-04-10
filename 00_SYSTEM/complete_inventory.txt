@@ -1,0 +1,99 @@
+================================================================================
+                    COMPLETE FILE INVENTORY
+                        I:\!!!TEXT!\
+================================================================================
+
+OVERALL STATISTICS:
+  • Total Files: 2,979
+  • Total Size: 1,389.46 MB (1.36 GB)
+  • Average File Size: 477.61 KB
+
+FILE TYPE DISTRIBUTION:
+  .pdf              1465 files     1051.42 MB  ( 75.7%)
+  .json              405 files        0.96 MB  (  0.1%)
+  .txt               215 files        77.4 MB  (  5.6%)
+  .bcmap             167 files        1.09 MB  (  0.1%)
+  .ts                153 files         0.4 MB  (    0%)
+  .gz                123 files        5.44 MB  (  0.4%)
+  .py                 95 files        0.74 MB  (  0.1%)
+  .js                 87 files       12.09 MB  (  0.9%)
+  .pyc                63 files        1.39 MB  (  0.1%)
+  .tsx                25 files        0.18 MB  (    0%)
+  .csv                24 files        0.58 MB  (    0%)
+  .md                 24 files        0.95 MB  (  0.1%)
+  .svg                23 files        0.02 MB  (    0%)
+  [No Ext]            15 files        0.09 MB  (    0%)
+  .afm                14 files        0.59 MB  (    0%)
+  .map                12 files       16.87 MB  (  1.2%)
+  .docx               11 files        0.38 MB  (    0%)
+  .pfb                10 files        0.19 MB  (    0%)
+  .html               10 files        0.04 MB  (    0%)
+  .css                 8 files        0.14 MB  (    0%)
+  .ttf                 5 files        0.55 MB  (    0%)
+  .zip                 4 files      187.55 MB  ( 13.5%)
+  .jsonl               4 files        0.06 MB  (    0%)
+  .bin                 4 files         1.2 MB  (  0.1%)
+  .ps1                 2 files        0.02 MB  (    0%)
+  .cts                 2 files           0 MB  (    0%)
+  .gif                 2 files           0 MB  (    0%)
+  .h                   2 files        0.01 MB  (    0%)
+  .crdownload          2 files       28.97 MB  (  2.1%)
+  .sh                  1 files           0 MB  (    0%)
+  .cpp                 1 files        0.03 MB  (    0%)
+  .jpg                 1 files        0.09 MB  (    0%)
+
+
+TOP 50 LARGEST FILES:
+
+File                                                                                       Size
+--------------------------------------------------------------------------------------------------------------
+I:\!!!TEXT!!!\txt.zip                                                                            180.14 MB
+I:\!!!TEXT!!!\shady oaks filing redacted ledger (3).pdf                                           25.27 MB
+I:\!!!TEXT!!!\shady oaks filings part #1(1).pdf                                                   25.27 MB
+I:\!!!TEXT!!!\07_PDF\shady oaks filing redacted ledger (1).pdf                                    25.27 MB
+I:\!!!TEXT!!!\07_PDF\meek1_0002 (2).pdf                                                           23.38 MB
+I:\!!!TEXT!!!\November 2020 Reports and Research.pdf_6c1feed6_1.crdownload                        22.47 MB
+I:\!!!TEXT!!!\pdf\shady oaks submitted lease scanned (2).pdf                                      19.87 MB
+I:\!!!TEXT!!!\shady oaks submitted lease scanned (3).pdf                                          19.86 MB
+I:\!!!TEXT!!!\TEXT_SAMPLES_001(0).txt                                                             19.68 MB
+I:\!!!TEXT!!!\TEXT_SAMPLES_001(1).txt                                                             19.68 MB
+I:\!!!TEXT!!!\TEXT_SAMPLES_001.txt                                                                19.68 MB
+I:\!!!TEXT!!!\pdf\TROs-Prelim-Injunctions-Questions(1).pdf                                        19.51 MB
+I:\!!!TEXT!!!\07_PDF\final judgement Unified Child Support order AND deviation (3)_c3118cfe.pdf        19.35 MB
+I:\!!!TEXT!!!\07_PDF\court_records\michigan-court-rules (1).pdf                                   19.34 MB
+I:\!!!TEXT!!!\NUCLEUS_APEX_POSTER_BLUEPRINT_V3_1_20260208_2039(1).pdf                                17 MB
+I:\!!!TEXT!!!\NUCLEUS_APEX_POSTER_BLUEPRINT_V3_2_20260208_2039(1).pdf                                17 MB
+I:\!!!TEXT!!!\NUCLEUS_APEX_POSTER_BLUEPRINT_V3_3_20260208_2124_1.pdf                                 17 MB
+I:\!!!TEXT!!!\NUCLEUS_APEX_POSTER_BLUEPRINT_V3_3_20260208_2124.pdf                                   17 MB
+I:\!!!TEXT!!!\NUCLEUS_APEX_POSTER_BLUEPRINT_V3_6_20260208_222952.pdf                                 17 MB
+I:\!!!TEXT!!!\NUCLEUS_APEX_POSTER_BLUEPRINT_V3_8_20260208_232032.pdf                                 17 MB
+I:\!!!TEXT!!!\NUCLEUS_APEX_POSTER_BLUEPRINT_V3_7_20260208_230615.pdf                                 17 MB
+I:\!!!TEXT!!!\07_PDF\meek1_0001 (2).pdf                                                           15.68 MB
+I:\!!!TEXT!!!\2402.05602v1.pdf                                                                    14.29 MB
+I:\!!!TEXT!!!\07_PDF\meek1_0003 (2).pdf                                                           12.78 MB
+I:\!!!TEXT!!!\Court Ordered Judgment of Custody, PT CS and FOC10 FOC10d FOC10 (1) (1)(1).pdf         12.4 MB
+I:\!!!TEXT!!!\shady oaks scanned court docs official(1).pdf                                       10.57 MB
+I:\!!!TEXT!!!\IMG_20250307_132629 (1).pdf                                                          9.58 MB
+I:\!!!TEXT!!!\IMG_20250307_132255 (1).pdf                                                          8.14 MB
+I:\!!!TEXT!!!\pdf\judgement final Custody Parenting Time child support order_copy (1)_20250107182534_6e3988fc.pdf         8.02 MB
+I:\!!!TEXT!!!\pdf\2025-10-29_Pigors_v_Watson_MSC-JTC_Exhibits_Binder_v5(1)_1.pdf                   7.89 MB
+I:\!!!TEXT!!!\07_PDF\9780198862345_Print (2).pdf                                                   7.65 MB
+I:\!!!TEXT!!!\TEXT_SAMPLES_001.txt.txt                                                             7.63 MB
+I:\!!!TEXT!!!\ppo paperwork.pdf                                                                    7.58 MB
+I:\!!!TEXT!!!\Scanned_20250521_122704(1).pdf                                                       7.21 MB
+I:\!!!TEXT!!!\07_PDF\clerks submitted ppo (1).pdf                                                  7.16 MB
+I:\!!!TEXT!!!\SHADY OAKScombined_chat_transcripts (5).pdf                                          6.76 MB
+I:\!!!TEXT!!!\pdf\JTC_Print_Order_Master_2025-10-29_with_bookmarks_footer_toc(1).pdf               6.56 MB
+I:\!!!TEXT!!!\07_PDF\scanned demand for possession (3).pdf                                         6.56 MB
+I:\!!!TEXT!!!\CC_DecemberNewsletter2019 (1).pdf_6ecaacc7_1.crdownload                               6.5 MB
+I:\!!!TEXT!!!\JTC_Print_Order_Master_2025-10-29_with_bookmarks.pdf                                 6.46 MB
+I:\!!!TEXT!!!\JTC_Print_Order_Master_2025-10-29.pdf                                                6.46 MB
+I:\!!!TEXT!!!\appclose just conversation_20250107182540 (1).pdf                                    6.35 MB
+I:\!!!TEXT!!!\Court Ordered Judgment of Custody, PT CS and FOC10 FOC10d FOC10 (1) (1)(0).pdf         5.93 MB
+I:\!!!TEXT!!!\Court Ordered Judgment of Custody, PT CS and FOC10 FOC10d FOC10 (1) (1)(2).pdf         5.93 MB
+I:\!!!TEXT!!!\Court Ordered Judgment of Custody, PT CS and FOC10 FOC10d FOC10 (1) (1).pdf          5.93 MB
+I:\!!!TEXT!!!\pdf\Court Ordered Judgment of Custody, PT CS and FOC10 FOC10d FOC10(1) (1).pdf         5.91 MB
+I:\!!!TEXT!!!\shady oaks march scanned(1).pdf                                                      5.68 MB
+I:\!!!TEXT!!!\incorrect Response Norton Shores FOIA-Watson & Pigors_20250107182537(1).pdf          5.65 MB
+I:\!!!TEXT!!!\exhibitMhealthwest.pdf                                                               5.57 MB
+I:\!!!TEXT!!!\exhibitMhealthwest(0).pdf                                                            5.57 MB

@@ -1,0 +1,256 @@
+{
+  "name": "Corporate Intelligence Pack",
+  "version": "1.0.0",
+  "description": "Investigate corporate structures, ownership chains, financial irregularities, and compliance risks.",
+  "author": "Pack Forge",
+  "license": "proprietary",
+  "tags": [
+    "corporate",
+    "investigation",
+    "compliance",
+    "due-diligence"
+  ],
+  "entities": {
+    "Company": {
+      "patterns": [
+        "(?:Inc|LLC|Corp|Ltd|GmbH|SA|AG|PLC|LP)\\b",
+        "\\b[A-Z][a-z]+(?:\\s[A-Z][a-z]+)+\\s(?:Inc|LLC|Corp)"
+      ],
+      "color": "#4fc3f7",
+      "shape": "hexagon"
+    },
+    "Person": {
+      "patterns": [
+        "\\b(?:CEO|CFO|COO|CTO|Director|Officer|President|Chairman)\\s[A-Z][a-z]+",
+        "\\b[A-Z][a-z]+\\s[A-Z]\\.\\s[A-Z][a-z]+"
+      ],
+      "color": "#ff7043",
+      "shape": "circle"
+    },
+    "Address": {
+      "patterns": [
+        "\\d+\\s[\\w\\s]+(?:St|Ave|Blvd|Rd|Dr|Ln|Way|Ct)\\b",
+        "(?:Suite|Floor|Ste)\\s\\d+"
+      ],
+      "color": "#66bb6a",
+      "shape": "square"
+    },
+    "Amount": {
+      "patterns": [
+        "\\$[\\d,]+(?:\\.\\d{2})?(?:\\s?(?:million|billion|M|B|K))?",
+        "\\b\\d+(?:,\\d{3})+(?:\\.\\d{2})?\\b"
+      ],
+      "color": "#ffd54f",
+      "shape": "diamond"
+    },
+    "Filing": {
+      "patterns": [
+        "\\b(?:10-K|10-Q|8-K|S-1|DEF 14A|13F|13D)\\b",
+        "\\bSEC\\s(?:filing|report|document)\\b"
+      ],
+      "color": "#ce93d8",
+      "shape": "triangle"
+    },
+    "Jurisdiction": {
+      "patterns": [
+        "\\b(?:Delaware|Nevada|Wyoming|Cayman|BVI|Luxembourg|Ireland)\\b",
+        "\\b(?:offshore|onshore|domiciled)\\b"
+      ],
+      "color": "#4db6ac",
+      "shape": "square"
+    }
+  },
+  "categories": {
+    "ownership": {
+      "keywords": [
+        "shareholder",
+        "stake",
+        "equity",
+        "beneficial owner",
+        "parent company",
+        "subsidiary"
+      ],
+      "color": "#4fc3f7"
+    },
+    "financial": {
+      "keywords": [
+        "revenue",
+        "profit",
+        "loss",
+        "audit",
+        "accounting",
+        "balance sheet"
+      ],
+      "color": "#ffd54f"
+    },
+    "compliance": {
+      "keywords": [
+        "violation",
+        "sanction",
+        "penalty",
+        "regulatory",
+        "enforcement",
+        "consent decree"
+      ],
+      "color": "#ef5350"
+    },
+    "governance": {
+      "keywords": [
+        "board",
+        "director",
+        "officer",
+        "bylaws",
+        "charter",
+        "proxy"
+      ],
+      "color": "#ce93d8"
+    },
+    "litigation": {
+      "keywords": [
+        "lawsuit",
+        "plaintiff",
+        "defendant",
+        "settlement",
+        "verdict",
+        "arbitration"
+      ],
+      "color": "#ff7043"
+    },
+    "intellectual_property": {
+      "keywords": [
+        "patent",
+        "trademark",
+        "copyright",
+        "trade secret",
+        "IP",
+        "licensing"
+      ],
+      "color": "#66bb6a"
+    }
+  },
+  "authorities": {
+    "SEC": {
+      "patterns": [
+        "\\bSEC\\b",
+        "Securities\\s(?:and\\s)?Exchange\\sCommission"
+      ],
+      "weight": 5
+    },
+    "DOJ": {
+      "patterns": [
+        "\\bDOJ\\b",
+        "Department\\sof\\sJustice"
+      ],
+      "weight": 5
+    },
+    "FTC": {
+      "patterns": [
+        "\\bFTC\\b",
+        "Federal\\sTrade\\sCommission"
+      ],
+      "weight": 4
+    },
+    "SOX": {
+      "patterns": [
+        "\\bSOX\\b",
+        "Sarbanes-Oxley"
+      ],
+      "weight": 4
+    },
+    "FCPA": {
+      "patterns": [
+        "\\bFCPA\\b",
+        "Foreign\\sCorrupt\\sPractices"
+      ],
+      "weight": 5
+    }
+  },
+  "focus_modes": {
+    "ownership": {
+      "description": "Trace ownership chains and beneficial owners",
+      "boost_categories": [
+        "ownership",
+        "governance"
+      ],
+      "boost_entities": [
+        "Company",
+        "Person"
+      ],
+      "multiplier": 2.0
+    },
+    "fraud": {
+      "description": "Detect financial irregularities and fraud indicators",
+      "boost_categories": [
+        "financial",
+        "compliance"
+      ],
+      "boost_entities": [
+        "Amount",
+        "Filing"
+      ],
+      "multiplier": 2.5
+    },
+    "compliance": {
+      "description": "Assess regulatory compliance posture",
+      "boost_categories": [
+        "compliance",
+        "governance"
+      ],
+      "boost_entities": [
+        "Filing",
+        "Jurisdiction"
+      ],
+      "multiplier": 2.0
+    },
+    "litigation": {
+      "description": "Map litigation exposure and legal risks",
+      "boost_categories": [
+        "litigation"
+      ],
+      "boost_entities": [
+        "Person",
+        "Company"
+      ],
+      "multiplier": 1.8
+    }
+  },
+  "node_types": {
+    "entity": {
+      "shape": "circle",
+      "color": "#4fc3f7"
+    },
+    "document": {
+      "shape": "square",
+      "color": "#90a4ae"
+    },
+    "event": {
+      "shape": "diamond",
+      "color": "#ffd54f"
+    }
+  },
+  "edge_types": {
+    "owns": {
+      "color": "#4fc3f7",
+      "width": 2
+    },
+    "filed_by": {
+      "color": "#ce93d8",
+      "width": 1
+    },
+    "related_to": {
+      "color": "#666666",
+      "width": 1
+    }
+  },
+  "scoring": {
+    "entity_match": 3,
+    "category_match": 2,
+    "authority_match": 5,
+    "focus_boost": 2.0
+  },
+  "ui": {
+    "primary_color": "#4fc3f7",
+    "background": "#0a0a1a",
+    "font": "Inter"
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "generated": "2026-04-04T17:02:33",
+  "actions": {
+    "dedup_i_drive": {
+      "description": "Remove same-drive dupes from I:\\",
+      "count": 125775,
+      "bytes": 33227161717
+    },
+    "move_to_j": {
+      "description": "Copy unique files to J:\\CONSOLIDATED",
+      "count": 0,
+      "bytes": 0
+    },
+    "migrate_db_paths": {
+      "description": "Update lit DB paths from old\u2192new",
+      "count": 62358
+    },
+    "cleanup_j_root": {
+      "description": "Organize J:\\ root into subfolders",
+      "count": 10710
+    }
+  },
+  "dedup_plan": [
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Appeals\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\CentralDashboard\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Custody\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Emergency\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Financial\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\HousingDisputes\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\JudicialConduct\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\LT\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Misc\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\PPO\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Procedural\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Property\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Scripts\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Timeline\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Appeals\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\CentralDashboard\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Custody\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Emergency\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Financial\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\HousingDisputes\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\JudicialConduct\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\LT\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Misc\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\PPO\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Procedural\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Property\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Scripts\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Timeline\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\6e3a3ae06e6b623b587e9f87c988e169fa1c6b",
+      "hash": "d2d1a4069df53a98",
+      "size": 44053019
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Appeals\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\CentralDashboard\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Custody\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Discovery\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Emergency\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Financial\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\FOIA\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\HousingDisputes\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Insurance\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\JudicialConduct\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\LT\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\PPO\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Procedural\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Scripts\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\Timeline\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Appeals\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\CentralDashboard\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Custody\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Discovery\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    },
+    {
+      "remove": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\GitRepo\\fredprime\\FRED-PRIME\\Emergency\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "keep": "I:\\02_EVIDENCE\\Primary\\05_EVIDENCE\\fred\\GitRepo\\fredprime\\FRED-PRIME\\AppClose\\df537bccfc6719eff7e34928c5f841fe737ffe",
+      "hash": "bd35c5ec006b1fa4",
+      "size": 37541852
+    }
+  ],
+  "move_plan": [
+    {
+      "source_drive": "D:",
+      "unique_files": 3078,
+      "unique_bytes": 10311300851,
+      "unhashed_files": 0
+    },
+    {
+      "source_drive": "F:",
+      "unique_files": 81,
+      "unique_bytes": 535726,
+      "unhashed_files": 0
+    },
+    {
+      "source_drive": "G:",
+      "unique_files": 3214,
+      "unique_bytes": 10682799879,
+      "unhashed_files": 0
+    },
+    {
+      "source_drive": "I:",
+      "unique_files": 85225,
+      "unique_bytes": 76448434226,
+      "unhashed_files": 0
+    }
+  ],
+  "path_migration": {
+    "D:\\": [
+      {
+        "table": "evidence_quotes",
+        "column": "source_file",
+        "count": 630
+      },
+      {
+        "table": "documents",
+        "column": "file_path",
+        "count": 106
+      },
+      {
+        "table": "impeachment_matrix",
+        "column": "source_file",
+        "count": 33
+      }
+    ],
+    "F:\\": [
+      {
+        "table": "evidence_quotes",
+        "column": "source_file",
+        "count": 1456
+      },
+      {
+        "table": "documents",
+        "column": "file_path",
+        "count": 276
+      },
+      {
+        "table": "impeachment_matrix",
+        "column": "source_file",
+        "count": 34
+      }
+    ],
+    "G:\\": [
+      {
+        "table": "evidence_quotes",
+        "column": "source_file",
+        "count": 219
+      }
+    ],
+    "I:\\": [
+      {
+        "table": "evidence_quotes",
+        "column": "source_file",
+        "count": 56121
+      },
+      {
+        "table": "documents",
+        "column": "file_path",
+        "count": 3200
+      },
+      {
+        "table": "impeachment_matrix",
+        "column": "source_file",
+        "count": 283
+      }
+    ]
+  }
+}

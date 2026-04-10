@@ -1,0 +1,2065 @@
+"""Database module for the litigation-context MCP server.
+
+Provides connection management, document CRUD, FTS5 search, knowledge graph
+loading, evolution pipeline, and system diagnostics against litigation_context.db.
+
+Architecture:
+    get_connection() → sqlite3.Connection (WAL, 60s busy_timeout, 32MB cache)
+    All public functions accept ``conn`` as first parameter.
+    _CircuitBreaker protects against cascading DB failures.
+    HealthStatus singleton tracks server health across the MCP lifespan.
+
+Usage::
+
+    conn = get_connection()
+    try:
+        stats = get_stats(conn)
+        results = search_pages(conn, "custody", limit=10)
+    finally:
+        conn.close()
+"""
+
+from __future__ import annotations
+
+import csv
+import hashlib
+import json
+import logging
+import os
+import re
+import shutil
+import sqlite3
+import time
+import traceback as _traceback_mod
+from enum import Enum
+from pathlib import Path
+from typing import Any
+
+logger = logging.getLogger("litigation_context_mcp.db")
+
+__all__ = [
+    "ErrorCode",
+    "DatabaseError",
+    "StructuredError",
+    "HealthStatus",
+    "health",
+    "check_disk_space",
+    "compute_deadlines",
+    "delete_document",
+    "dispatch_to_swarm",
+    "document_exists",
+    "evolve_all_md_files",
+    "evolve_all_txt_files",
+    "evolve_from_pages",
+    "get_connection",
+    "get_convergence_status",
+    "get_cross_refs",
+    "get_document_text",
+    "get_error_summary",
+    "get_evolution_stats",
+    "get_risk_events",
+    "get_stats",
+    "hash_exists",
+    "ingest_all_master_csvs",
+    "ingest_master_csv",
+    "insert_document",
+    "list_documents",
+    "load_all_knowledge_graphs",
+    "record_error",
+    "red_team_validate",
+    "run_self_audit",
+    "sanitize_fts_query",
+    "scan_all_systems",
+    "search_evolved_knowledge",
+    "search_graph_nodes",
+    "search_master_data",
+    "search_pages",
+    "search_rules",
+    "trace_evidence_chain",
+    "vector_search",
+]
+
+# ── Configuration ─────────────────────────────────────────────────
+DB_PATH = os.environ.get(
+    "LITIGATION_DB_PATH",
+    r"C:\Users\andre\LitigationOS\litigation_context.db",
+)
+
+
+# ── Error Infrastructure ──────────────────────────────────────────
+class ErrorCode(Enum):
+    ERR_DB_CONNECT = "ERR_DB_CONNECT"
+    ERR_PDF_PERMISSION = "ERR_PDF_PERMISSION"
+    ERR_PDF_TIMEOUT = "ERR_PDF_TIMEOUT"
+    ERR_FTS_SYNTAX = "ERR_FTS_SYNTAX"
+    ERR_DB_LOCKED = "ERR_DB_LOCKED"
+
+
+_RECOVERY_HINTS: dict[ErrorCode, str] = {
+    ErrorCode.ERR_DB_CONNECT: (
+        "Check that litigation_context.db exists and is not corrupted. "
+        "Verify LITIGATION_DB_PATH env var. Try: PRAGMA integrity_check;"
+    ),
+    ErrorCode.ERR_PDF_PERMISSION: (
+        "The PDF file is locked or read-protected. Close any application "
+        "that has the file open and retry."
+    ),
+    ErrorCode.ERR_PDF_TIMEOUT: (
+        "PDF extraction timed out — the file may be very large or encrypted. "
+        "Try a smaller file or check for password protection."
+    ),
+    ErrorCode.ERR_FTS_SYNTAX: (
+        "The search query has invalid FTS5 syntax. Use simple keywords, "
+        '"quoted phrases", AND/OR/NOT operators, or prefix* wildcards.'
+    ),
+    ErrorCode.ERR_DB_LOCKED: (
+        "Another process holds a write lock. Wait a few seconds and retry. "
+        "If persistent, check for long-running pipeline phases."
+    ),
+}
+
+
+class DatabaseError(Exception):
+    """General database error."""
+
+
+class StructuredError(Exception):
+    """Error with a machine-readable code, human message, and recovery hint."""
+
+    def __init__(
+        self,
+        code: ErrorCode,
+        message: str,
+        original_exception: Exception | None = None,
+    ):
+        self.code = code
+        self.message = message
+        self.original_exception = original_exception
+        self.hint = _RECOVERY_HINTS.get(code, "No recovery hint available.")
+        super().__init__(f"{code.value}: {message}")
+
+
+# ── Circuit Breaker ───────────────────────────────────────────────
+class _CircuitBreaker:
+    """Simple circuit breaker for DB connections."""
+
+    CLOSED = "closed"
+    OPEN = "open"
+    HALF_OPEN = "half_open"
+
+    def __init__(self, threshold: int = 5, reset_timeout: float = 60.0):
+        self.threshold = threshold
+        self.reset_timeout = reset_timeout
+        self.failure_count = 0
+        self.state = self.CLOSED
+        self._last_failure: float = 0.0
+
+    def record_failure(self):
+        self.failure_count += 1
+        self._last_failure = time.time()
+        if self.failure_count >= self.threshold:
+            self.state = self.OPEN
+
+    def record_success(self):
+        self.failure_count = 0
+        self.state = self.CLOSED
+
+    def allow_request(self) -> bool:
+        if self.state == self.CLOSED:
+            return True
+        if self.state == self.OPEN:
+            if time.time() - self._last_failure >= self.reset_timeout:
+                self.state = self.HALF_OPEN
+                return True
+            return False
+        # HALF_OPEN — allow one attempt
+        return True
+
+    def reset(self):
+        self.failure_count = 0
+        self.state = self.CLOSED
+        self._last_failure = 0.0
+
+    @property
+    def status(self) -> dict:
+        return {
+            "state": self.state,
+            "failure_count": self.failure_count,
+            "threshold": self.threshold,
+            "reset_timeout_s": self.reset_timeout,
+        }
+
+
+_db_circuit = _CircuitBreaker()
+
+
+# ── Health Status ─────────────────────────────────────────────────
+class HealthStatus:
+    """Server health singleton tracked across the MCP lifespan."""
+
+    def __init__(self):
+        self.startup_time: str | None = None
+        self.graphs_loaded: bool = False
+        self.graph_errors: list[str] = []
+        self.degraded: bool = False
+
+    @property
+    def status(self) -> dict:
+        return {
+            "startup_time": self.startup_time,
+            "graphs_loaded": self.graphs_loaded,
+            "graph_errors": self.graph_errors,
+            "degraded": self.degraded,
+            "circuit_breaker": _db_circuit.status,
+        }
+
+
+health = HealthStatus()
+
+
+# ── Helpers ───────────────────────────────────────────────────────
+def _table_exists(conn: sqlite3.Connection, table_name: str) -> bool:
+    """Check whether a table exists in the database."""
+    row = conn.execute(
+        "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name=?",
+        (table_name,),
+    ).fetchone()
+    return row[0] > 0
+
+
+def _safe_fetchone(conn: sqlite3.Connection, sql: str, params=()) -> sqlite3.Row | None:
+    try:
+        return conn.execute(sql, params).fetchone()
+    except sqlite3.OperationalError:
+        return None
+
+
+# ── Connection ────────────────────────────────────────────────────
+_SCHEMA_DDL = """
+CREATE TABLE IF NOT EXISTS documents (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    file_path TEXT UNIQUE NOT NULL,
+    file_name TEXT NOT NULL,
+    file_size_bytes INTEGER,
+    modified_date TEXT,
+    page_count INTEGER DEFAULT 0,
+    sha256_hash TEXT,
+    ingested_at TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS pages (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    document_id INTEGER NOT NULL REFERENCES documents(id) ON DELETE CASCADE,
+    page_number INTEGER NOT NULL,
+    text_content TEXT,
+    char_count INTEGER DEFAULT 0
+);
+
+CREATE VIRTUAL TABLE IF NOT EXISTS pages_fts USING fts5(
+    text_content,
+    content='pages',
+    content_rowid='id',
+    tokenize='porter unicode61'
+);
+
+CREATE TABLE IF NOT EXISTS graph_nodes (
+    id TEXT NOT NULL,
+    node_type TEXT,
+    label TEXT,
+    data TEXT,
+    graph_source TEXT NOT NULL,
+    loaded_at TEXT DEFAULT (datetime('now')),
+    PRIMARY KEY (id, graph_source)
+);
+
+CREATE TABLE IF NOT EXISTS graph_edges (
+    source_id TEXT NOT NULL,
+    target_id TEXT NOT NULL,
+    edge_type TEXT,
+    data TEXT,
+    graph_source TEXT NOT NULL,
+    loaded_at TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS risk_events (
+    risk_type_id TEXT PRIMARY KEY,
+    title TEXT,
+    severity INTEGER DEFAULT 0,
+    risk_class TEXT,
+    track TEXT,
+    forum TEXT,
+    cure_cost TEXT,
+    cure_deadline_clock TEXT,
+    cure_packet_json TEXT,
+    trigger_json TEXT,
+    authority_json TEXT,
+    loaded_at TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS md_sections (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_file TEXT NOT NULL,
+    source_path TEXT NOT NULL,
+    section_level INTEGER DEFAULT 1,
+    section_title TEXT,
+    section_path TEXT,
+    content TEXT,
+    evolved_at TEXT DEFAULT (datetime('now'))
+);
+
+CREATE VIRTUAL TABLE IF NOT EXISTS md_sections_fts USING fts5(
+    section_title,
+    content,
+    content='md_sections',
+    content_rowid='id',
+    tokenize='porter unicode61'
+);
+
+CREATE TABLE IF NOT EXISTS md_cross_refs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    section_id INTEGER REFERENCES md_sections(id),
+    ref_type TEXT,
+    ref_value TEXT,
+    confidence REAL DEFAULT 0.5,
+    graph_node_id TEXT,
+    graph_source TEXT,
+    created_at TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS error_log (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    error_code TEXT,
+    tool_name TEXT,
+    message TEXT,
+    traceback TEXT,
+    created_at TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS system_registry (
+    system_name TEXT PRIMARY KEY,
+    system_type TEXT,
+    path TEXT,
+    version TEXT,
+    file_count INTEGER DEFAULT 0,
+    status TEXT DEFAULT 'unknown',
+    scanned_at TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IF NOT EXISTS master_data (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    dataset TEXT NOT NULL,
+    row_data TEXT,
+    text_content TEXT,
+    ingested_at TEXT DEFAULT (datetime('now'))
+);
+
+CREATE VIRTUAL TABLE IF NOT EXISTS master_data_fts USING fts5(
+    text_content,
+    content='master_data',
+    content_rowid='id',
+    tokenize='porter unicode61'
+);
+"""
+
+# FTS triggers for pages — keep FTS in sync with content table
+_FTS_TRIGGERS_PAGES = """
+CREATE TRIGGER IF NOT EXISTS pages_ai AFTER INSERT ON pages BEGIN
+    INSERT INTO pages_fts(rowid, text_content) VALUES (new.id, new.text_content);
+END;
+CREATE TRIGGER IF NOT EXISTS pages_ad AFTER DELETE ON pages BEGIN
+    INSERT INTO pages_fts(pages_fts, rowid, text_content) VALUES('delete', old.id, old.text_content);
+END;
+CREATE TRIGGER IF NOT EXISTS pages_au AFTER UPDATE ON pages BEGIN
+    INSERT INTO pages_fts(pages_fts, rowid, text_content) VALUES('delete', old.id, old.text_content);
+    INSERT INTO pages_fts(rowid, text_content) VALUES (new.id, new.text_content);
+END;
+"""
+
+_FTS_TRIGGERS_MD = """
+CREATE TRIGGER IF NOT EXISTS md_sections_ai AFTER INSERT ON md_sections BEGIN
+    INSERT INTO md_sections_fts(rowid, section_title, content) VALUES (new.id, new.section_title, new.content);
+END;
+CREATE TRIGGER IF NOT EXISTS md_sections_ad AFTER DELETE ON md_sections BEGIN
+    INSERT INTO md_sections_fts(md_sections_fts, rowid, section_title, content) VALUES('delete', old.id, old.section_title, old.content);
+END;
+CREATE TRIGGER IF NOT EXISTS md_sections_au AFTER UPDATE ON md_sections BEGIN
+    INSERT INTO md_sections_fts(md_sections_fts, rowid, section_title, content) VALUES('delete', old.id, old.section_title, old.content);
+    INSERT INTO md_sections_fts(rowid, section_title, content) VALUES (new.id, new.section_title, new.content);
+END;
+"""
+
+_FTS_TRIGGERS_MASTER = """
+CREATE TRIGGER IF NOT EXISTS master_data_ai AFTER INSERT ON master_data BEGIN
+    INSERT INTO master_data_fts(rowid, text_content) VALUES (new.id, new.text_content);
+END;
+CREATE TRIGGER IF NOT EXISTS master_data_ad AFTER DELETE ON master_data BEGIN
+    INSERT INTO master_data_fts(master_data_fts, rowid, text_content) VALUES('delete', old.id, old.text_content);
+END;
+"""
+
+
+def get_connection() -> sqlite3.Connection:
+    """Open a connection to the litigation database with required PRAGMAs.
+
+    Returns a sqlite3.Connection with Row factory, WAL mode, 60 s busy timeout,
+    and 32 MB page cache.  Creates core tables if they don't exist.
+    """
+    if not _db_circuit.allow_request():
+        raise StructuredError(
+            ErrorCode.ERR_DB_CONNECT,
+            "Circuit breaker is OPEN — too many recent failures. "
+            "Use litigation_health with reset_circuit_breaker=true to reset.",
+        )
+
+    try:
+        conn = sqlite3.connect(DB_PATH, timeout=60)
+        conn.row_factory = sqlite3.Row
+        conn.execute("PRAGMA busy_timeout = 60000")
+        conn.execute("PRAGMA journal_mode = WAL")
+        conn.execute("PRAGMA cache_size = -32000")
+        conn.execute("PRAGMA temp_store = MEMORY")
+        conn.execute("PRAGMA synchronous = NORMAL")
+        conn.execute("PRAGMA foreign_keys = ON")
+
+        # Ensure core schema exists
+        conn.executescript(_SCHEMA_DDL)
+
+        # Install FTS triggers (best-effort — they may already exist)
+        for trigger_sql in (_FTS_TRIGGERS_PAGES, _FTS_TRIGGERS_MD, _FTS_TRIGGERS_MASTER):
+            try:
+                conn.executescript(trigger_sql)
+            except sqlite3.OperationalError:
+                pass  # triggers may already exist or table structure differs
+
+        _db_circuit.record_success()
+        return conn
+    except sqlite3.OperationalError as e:
+        _db_circuit.record_failure()
+        raise DatabaseError(f"Cannot open database at {DB_PATH}: {e}") from e
+    except Exception as e:
+        _db_circuit.record_failure()
+        raise DatabaseError(f"Database connection failed: {e}") from e
+
+
+# ── Document Operations ───────────────────────────────────────────
+def document_exists(conn: sqlite3.Connection, file_path: str) -> bool:
+    row = conn.execute(
+        "SELECT 1 FROM documents WHERE file_path = ?", (file_path,)
+    ).fetchone()
+    return row is not None
+
+
+def hash_exists(conn: sqlite3.Connection, sha256_hash: str) -> str | None:
+    """Return the file_path of a document with this hash, or None."""
+    row = conn.execute(
+        "SELECT file_path FROM documents WHERE sha256_hash = ?", (sha256_hash,)
+    ).fetchone()
+    return row["file_path"] if row else None
+
+
+def insert_document(
+    conn: sqlite3.Connection,
+    file_path: str,
+    file_name: str,
+    file_size_bytes: int,
+    modified_date: str,
+    page_count: int,
+    sha256_hash: str,
+    pages: list[dict[str, Any]],
+) -> int:
+    """Insert a document and its pages. Returns the new document ID."""
+    cur = conn.execute(
+        """INSERT INTO documents
+           (file_path, file_name, file_size_bytes, modified_date, page_count, sha256_hash)
+           VALUES (?, ?, ?, ?, ?, ?)""",
+        (file_path, file_name, file_size_bytes, modified_date, page_count, sha256_hash),
+    )
+    doc_id = cur.lastrowid
+
+    page_rows = [
+        (doc_id, p["page_number"], p.get("text_content", ""), len(p.get("text_content", "")))
+        for p in pages
+    ]
+    conn.executemany(
+        "INSERT INTO pages (document_id, page_number, text_content, char_count) VALUES (?, ?, ?, ?)",
+        page_rows,
+    )
+    conn.commit()
+    return doc_id
+
+
+def delete_document(conn: sqlite3.Connection, document_id: int) -> bool:
+    """Delete a document and its pages. Returns True if found and deleted."""
+    row = conn.execute("SELECT id FROM documents WHERE id = ?", (document_id,)).fetchone()
+    if not row:
+        return False
+    # Delete pages first (FTS triggers will fire)
+    conn.execute("DELETE FROM pages WHERE document_id = ?", (document_id,))
+    conn.execute("DELETE FROM documents WHERE id = ?", (document_id,))
+    conn.commit()
+    return True
+
+
+# ── Search ────────────────────────────────────────────────────────
+_FTS_UNSAFE = re.compile(r"[^\w\s\"*\-]", re.UNICODE)
+
+
+def sanitize_fts_query(query: str) -> str:
+    """Clean a user query so it won't crash FTS5.
+
+    Strips dangerous characters, balances quotes, and falls back to
+    a simple OR-joined token list if the query still looks risky.
+    """
+    q = query.strip()
+    if not q:
+        return q
+
+    # Remove characters that break FTS5 except quotes, *, -
+    q = _FTS_UNSAFE.sub(" ", q)
+
+    # Balance double-quotes
+    if q.count('"') % 2 != 0:
+        q = q.replace('"', "")
+
+    # If it's still empty after cleanup, return original tokens
+    if not q.strip():
+        tokens = query.split()
+        return " OR ".join(t for t in tokens if t.isalnum())
+
+    return q
+
+
+def search_pages(
+    conn: sqlite3.Connection,
+    query: str,
+    limit: int = 20,
+    offset: int = 0,
+) -> dict:
+    """FTS5 search across ingested PDF pages."""
+    # Count total matches
+    try:
+        total_row = conn.execute(
+            """SELECT COUNT(*) AS c FROM pages_fts WHERE pages_fts MATCH ?""",
+            (query,),
+        ).fetchone()
+        total = total_row["c"] if total_row else 0
+    except sqlite3.OperationalError:
+        total = 0
+
+    results: list[dict] = []
+    if total > 0:
+        rows = conn.execute(
+            """SELECT p.id, p.document_id, p.page_number,
+                      snippet(pages_fts, 0, '>>>', '<<<', '...', 64) AS snippet,
+                      d.file_name, d.file_path
+               FROM pages_fts
+               JOIN pages p ON p.id = pages_fts.rowid
+               JOIN documents d ON d.id = p.document_id
+               WHERE pages_fts MATCH ?
+               ORDER BY rank
+               LIMIT ? OFFSET ?""",
+            (query, limit, offset),
+        ).fetchall()
+        results = [dict(r) for r in rows]
+
+    count = len(results)
+    return {
+        "total": total,
+        "count": count,
+        "results": results,
+        "has_more": (offset + count) < total,
+        "next_offset": offset + count,
+    }
+
+
+def search_rules(
+    conn: sqlite3.Connection,
+    query: str,
+    limit: int = 20,
+    offset: int = 0,
+) -> dict:
+    """Search court rules across graph_nodes and any rules-specific tables."""
+    results: list[dict] = []
+    total = 0
+    pattern = f"%{query}%"
+
+    # Search graph_nodes for rule-type entries
+    try:
+        total_row = conn.execute(
+            """SELECT COUNT(*) AS c FROM graph_nodes
+               WHERE (node_type IN ('authority','rule','MCR','MCL')
+                      OR graph_source LIKE '%rule%' OR graph_source LIKE '%mcr%')
+                     AND (id LIKE ? OR label LIKE ? OR data LIKE ?)""",
+            (pattern, pattern, pattern),
+        ).fetchone()
+        total = total_row["c"] if total_row else 0
+
+        rows = conn.execute(
+            """SELECT id, node_type, label, data, graph_source
+               FROM graph_nodes
+               WHERE (node_type IN ('authority','rule','MCR','MCL')
+                      OR graph_source LIKE '%rule%' OR graph_source LIKE '%mcr%')
+                     AND (id LIKE ? OR label LIKE ? OR data LIKE ?)
+               ORDER BY id
+               LIMIT ? OFFSET ?""",
+            (pattern, pattern, pattern, limit, offset),
+        ).fetchall()
+
+        for r in rows:
+            entry: dict[str, Any] = {
+                "authority_id": r["id"],
+                "rule": r["label"] or r["id"],
+                "chapter": "",
+                "source_doc": r["graph_source"],
+                "context": "",
+                "context_count": 0,
+            }
+            # Try to extract structured fields from data JSON
+            try:
+                data = json.loads(r["data"]) if r["data"] else {}
+                entry["chapter"] = data.get("chapter", "")
+                entry["context"] = data.get("text", data.get("context", ""))[:300]
+                entry["snippet"] = data.get("snippet", entry["context"][:200])
+                entry["context_count"] = data.get("references", 0)
+            except (json.JSONDecodeError, TypeError):
+                pass
+            results.append(entry)
+    except sqlite3.OperationalError as e:
+        logger.warning("search_rules graph query failed: %s", e)
+
+    # Also search md_sections for rule references
+    if total == 0:
+        try:
+            safe_q = sanitize_fts_query(query)
+            if safe_q:
+                fts_rows = conn.execute(
+                    """SELECT ms.id, ms.section_title, ms.source_file,
+                              snippet(md_sections_fts, 1, '>>>', '<<<', '...', 50) AS snippet
+                       FROM md_sections_fts
+                       JOIN md_sections ms ON ms.id = md_sections_fts.rowid
+                       WHERE md_sections_fts MATCH ?
+                       ORDER BY rank LIMIT ? OFFSET ?""",
+                    (safe_q, limit, offset),
+                ).fetchall()
+                for r in fts_rows:
+                    results.append({
+                        "authority_id": str(r["id"]),
+                        "rule": r["section_title"] or query,
+                        "chapter": "",
+                        "source_doc": r["source_file"],
+                        "snippet": r["snippet"],
+                        "context": "",
+                        "context_count": 0,
+                    })
+                total = len(results)
+        except sqlite3.OperationalError:
+            pass
+
+    count = len(results)
+    return {
+        "total": total,
+        "count": count,
+        "results": results,
+        "has_more": (offset + count) < total,
+        "next_offset": offset + count,
+    }
+
+
+def search_graph_nodes(
+    conn: sqlite3.Connection,
+    query: str,
+    node_type: str | None = None,
+    graph_source: str | None = None,
+    limit: int = 20,
+    offset: int = 0,
+) -> dict:
+    """Search graph_nodes by label/id with optional type and source filters."""
+    pattern = f"%{query}%"
+    conditions = ["(id LIKE ? OR label LIKE ? OR data LIKE ?)"]
+    params: list = [pattern, pattern, pattern]
+
+    if node_type:
+        conditions.append("node_type = ?")
+        params.append(node_type)
+    if graph_source:
+        conditions.append("graph_source = ?")
+        params.append(graph_source)
+
+    where = " AND ".join(conditions)
+
+    total_row = conn.execute(
+        f"SELECT COUNT(*) AS c FROM graph_nodes WHERE {where}", params
+    ).fetchone()
+    total = total_row["c"] if total_row else 0
+
+    rows = conn.execute(
+        f"""SELECT id, node_type, label, data, graph_source
+            FROM graph_nodes WHERE {where}
+            ORDER BY label, id LIMIT ? OFFSET ?""",
+        params + [limit, offset],
+    ).fetchall()
+
+    results = [dict(r) for r in rows]
+    count = len(results)
+    return {
+        "total": total,
+        "count": count,
+        "results": results,
+        "has_more": (offset + count) < total,
+        "next_offset": offset + count,
+    }
+
+
+# ── Listing / Retrieval ──────────────────────────────────────────
+
+def _doc_columns(conn: sqlite3.Connection) -> tuple[set[str], str, str, str]:
+    """Detect available document columns and return (col_set, name_col, size_col, ts_col).
+
+    The ``documents`` table may have either the MCP schema (file_name, file_size_bytes,
+    ingested_at) or the pipeline schema (title, created_at).
+    """
+    cols = {r[1] for r in conn.execute("PRAGMA table_info(documents)").fetchall()}
+    name_col = "file_name" if "file_name" in cols else ("title" if "title" in cols else "file_path")
+    size_col = "file_size_bytes" if "file_size_bytes" in cols else "0"
+    ts_col = "ingested_at" if "ingested_at" in cols else ("created_at" if "created_at" in cols else "NULL")
+    return cols, name_col, size_col, ts_col
+
+
+def list_documents(
+    conn: sqlite3.Connection,
+    limit: int = 20,
+    offset: int = 0,
+    name_filter: str | None = None,
+) -> dict:
+    """List indexed documents with optional name filter."""
+    cols, name_col, size_col, ts_col = _doc_columns(conn)
+    select_cols = f"id, file_path, {name_col} AS file_name, {size_col} AS file_size_bytes, page_count, {ts_col} AS ingested_at"
+
+    if name_filter:
+        pattern = f"%{name_filter}%"
+        total_row = conn.execute(
+            f"SELECT COUNT(*) AS c FROM documents WHERE {name_col} LIKE ?", (pattern,)
+        ).fetchone()
+        total = total_row["c"]
+        rows = conn.execute(
+            f"""SELECT {select_cols}
+               FROM documents WHERE {name_col} LIKE ?
+               ORDER BY {ts_col} DESC LIMIT ? OFFSET ?""",
+            (pattern, limit, offset),
+        ).fetchall()
+    else:
+        total_row = conn.execute("SELECT COUNT(*) AS c FROM documents").fetchone()
+        total = total_row["c"]
+        rows = conn.execute(
+            f"""SELECT {select_cols}
+               FROM documents ORDER BY {ts_col} DESC LIMIT ? OFFSET ?""",
+            (limit, offset),
+        ).fetchall()
+
+    documents = [dict(r) for r in rows]
+    count = len(documents)
+    return {
+        "total": total,
+        "count": count,
+        "documents": documents,
+        "has_more": (offset + count) < total,
+        "next_offset": offset + count,
+    }
+
+
+def get_document_text(conn: sqlite3.Connection, document_id: int) -> dict | None:
+    """Get a document and all its pages by document ID."""
+    cols, name_col, size_col, ts_col = _doc_columns(conn)
+    hash_col = "sha256_hash" if "sha256_hash" in cols else "NULL"
+    select_cols = f"id, file_path, {name_col} AS file_name, {size_col} AS file_size_bytes, page_count, {hash_col} AS sha256_hash, {ts_col} AS ingested_at"
+
+    doc = conn.execute(
+        f"SELECT {select_cols} FROM documents WHERE id = ?",
+        (document_id,),
+    ).fetchone()
+    if not doc:
+        return None
+
+    pages = conn.execute(
+        """SELECT page_number, text_content
+           FROM pages WHERE document_id = ?
+           ORDER BY page_number""",
+        (document_id,),
+    ).fetchall()
+
+    return {
+        "document": dict(doc),
+        "pages": [dict(p) for p in pages],
+    }
+
+
+def get_stats(conn: sqlite3.Connection) -> dict:
+    """Aggregate statistics for the knowledge base.
+
+    Adapts to the actual schema — the ``documents`` table may have been created
+    by the pipeline (title, doc_type, lane) rather than the MCP DDL
+    (file_size_bytes, sha256_hash).
+    """
+    # Detect available columns to avoid OperationalError
+    doc_cols = {
+        r[1] for r in conn.execute("PRAGMA table_info(documents)").fetchall()
+    }
+
+    size_expr = (
+        "COALESCE(SUM(file_size_bytes), 0)"
+        if "file_size_bytes" in doc_cols
+        else "0"
+    )
+    ingest_expr = (
+        "MAX(ingested_at)"
+        if "ingested_at" in doc_cols
+        else ("MAX(created_at)" if "created_at" in doc_cols else "NULL")
+    )
+
+    total_documents = 0
+    total_pages = 0
+    total_size_bytes = 0
+    last_ingested_at = None
+
+    if _table_exists(conn, "documents"):
+        row = conn.execute(
+            f"SELECT COUNT(*) AS c, {size_expr} AS sz, {ingest_expr} AS ts FROM documents"
+        ).fetchone()
+        total_documents = row["c"]
+        total_size_bytes = row["sz"] or 0
+        last_ingested_at = row["ts"]
+
+    if _table_exists(conn, "pages"):
+        r = conn.execute("SELECT COUNT(*) AS c FROM pages").fetchone()
+        total_pages = r["c"]
+
+    total_size_mb = round(total_size_bytes / (1024 * 1024), 2) if total_size_bytes else 0
+
+    # Graph / rule / risk counts (may not exist)
+    graph_nodes = 0
+    court_rules_indexed = 0
+    rules_text_entries = 0
+    risk_events_count = 0
+
+    if _table_exists(conn, "graph_nodes"):
+        r = conn.execute("SELECT COUNT(*) AS c FROM graph_nodes").fetchone()
+        graph_nodes = r["c"]
+        r2 = conn.execute(
+            "SELECT COUNT(*) AS c FROM graph_nodes WHERE node_type IN ('authority','rule','MCR','MCL')"
+        ).fetchone()
+        court_rules_indexed = r2["c"]
+
+    if _table_exists(conn, "md_sections"):
+        r = conn.execute("SELECT COUNT(*) AS c FROM md_sections").fetchone()
+        rules_text_entries = r["c"]
+
+    if _table_exists(conn, "risk_events"):
+        r = conn.execute("SELECT COUNT(*) AS c FROM risk_events").fetchone()
+        risk_events_count = r["c"]
+
+    # Loaded graphs summary
+    graphs_loaded: list[dict] = []
+    if _table_exists(conn, "graph_nodes"):
+        gs = conn.execute(
+            """SELECT graph_source, COUNT(*) AS record_count, MAX(loaded_at) AS loaded_at
+               FROM graph_nodes GROUP BY graph_source ORDER BY graph_source"""
+        ).fetchall()
+        graphs_loaded = [dict(g) for g in gs]
+
+    return {
+        "total_documents": total_documents,
+        "total_pages": total_pages,
+        "total_size_mb": total_size_mb,
+        "last_ingested_at": last_ingested_at,
+        "graph_nodes": graph_nodes,
+        "court_rules_indexed": court_rules_indexed,
+        "rules_text_entries": rules_text_entries,
+        "risk_events": risk_events_count,
+        "graphs_loaded": graphs_loaded,
+        "database_path": DB_PATH,
+    }
+
+
+# ── Knowledge Graph Loading ──────────────────────────────────────
+_GRAPH_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "data")
+
+
+def _load_json_graph(conn: sqlite3.Connection, file_path: str, graph_source: str) -> dict:
+    """Load a single JSON graph file into graph_nodes / graph_edges."""
+    if not os.path.isfile(file_path):
+        return {"file": file_path, "status": "not_found"}
+
+    with open(file_path, "r", encoding="utf-8", errors="replace") as f:
+        data = json.load(f)
+
+    nodes = data if isinstance(data, list) else data.get("nodes", [])
+    edges = data.get("edges", []) if isinstance(data, dict) else []
+
+    node_rows = []
+    for n in nodes:
+        nid = n.get("id", n.get("node_id", ""))
+        ntype = n.get("node_type", n.get("type", ""))
+        label = n.get("label", n.get("name", n.get("title", "")))
+        node_rows.append((nid, ntype, label, json.dumps(n, default=str), graph_source))
+
+    if node_rows:
+        conn.executemany(
+            "INSERT OR REPLACE INTO graph_nodes (id, node_type, label, data, graph_source) VALUES (?, ?, ?, ?, ?)",
+            node_rows,
+        )
+
+    edge_rows = []
+    for e in edges:
+        src = e.get("source", e.get("source_id", ""))
+        tgt = e.get("target", e.get("target_id", ""))
+        etype = e.get("type", e.get("edge_type", ""))
+        edge_rows.append((src, tgt, etype, json.dumps(e, default=str), graph_source))
+
+    if edge_rows:
+        conn.executemany(
+            "INSERT OR REPLACE INTO graph_edges (source_id, target_id, edge_type, data, graph_source) VALUES (?, ?, ?, ?, ?)",
+            edge_rows,
+        )
+
+    conn.commit()
+    return {"file": file_path, "nodes": len(node_rows), "edges": len(edge_rows), "status": "loaded"}
+
+
+def load_all_knowledge_graphs(conn: sqlite3.Connection) -> dict:
+    """Discover and load all JSON graph files from the data directory."""
+    results: dict[str, Any] = {}
+    graph_dir = _GRAPH_DIR
+
+    if not os.path.isdir(graph_dir):
+        # Try alternate locations
+        for alt in [
+            os.path.join(os.path.dirname(DB_PATH), "data"),
+            os.path.join(os.path.dirname(DB_PATH), "09_DATA"),
+        ]:
+            if os.path.isdir(alt):
+                graph_dir = alt
+                break
+
+    if not os.path.isdir(graph_dir):
+        return {"status": "no_graph_directory", "searched": graph_dir}
+
+    json_files = list(Path(graph_dir).rglob("*.json"))
+    graph_keywords = ("graph", "authority", "risk", "court_form", "mcr", "master")
+
+    for jf in json_files:
+        name_lower = jf.stem.lower()
+        if any(kw in name_lower for kw in graph_keywords):
+            source_name = jf.stem
+            try:
+                results[source_name] = _load_json_graph(conn, str(jf), source_name)
+            except Exception as e:
+                results[source_name] = {"error": str(e)}
+
+    # Load risk events from any risk_events.json
+    for jf in json_files:
+        if "risk" in jf.stem.lower() and "event" in jf.stem.lower():
+            try:
+                _load_risk_events_json(conn, str(jf))
+                results[f"risk_events_{jf.stem}"] = {"status": "loaded"}
+            except Exception as e:
+                results[f"risk_events_{jf.stem}"] = {"error": str(e)}
+
+    return results
+
+
+def _load_risk_events_json(conn: sqlite3.Connection, file_path: str) -> None:
+    """Load risk events from a JSON file."""
+    with open(file_path, "r", encoding="utf-8", errors="replace") as f:
+        data = json.load(f)
+
+    events = data if isinstance(data, list) else data.get("events", data.get("risk_events", []))
+    rows = []
+    for ev in events:
+        rows.append((
+            ev.get("risk_type_id", ev.get("id", "")),
+            ev.get("title", ""),
+            ev.get("severity", 0),
+            ev.get("risk_class", ""),
+            ev.get("track", ""),
+            ev.get("forum", ""),
+            ev.get("cure_cost", ""),
+            ev.get("cure_deadline_clock", ""),
+            json.dumps(ev.get("cure_packet", ev.get("cure_steps", [])), default=str),
+            json.dumps(ev.get("triggers", []), default=str),
+            json.dumps(ev.get("authorities", []), default=str),
+        ))
+
+    if rows:
+        conn.executemany(
+            """INSERT OR REPLACE INTO risk_events
+               (risk_type_id, title, severity, risk_class, track, forum,
+                cure_cost, cure_deadline_clock, cure_packet_json, trigger_json, authority_json)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            rows,
+        )
+        conn.commit()
+
+
+def get_risk_events(
+    conn: sqlite3.Connection,
+    severity_min: int = 0,
+    risk_class: str | None = None,
+) -> list[dict]:
+    """Retrieve risk events filtered by severity and optional class."""
+    if not _table_exists(conn, "risk_events"):
+        return []
+
+    conditions = ["severity >= ?"]
+    params: list = [severity_min]
+    if risk_class:
+        conditions.append("risk_class = ?")
+        params.append(risk_class)
+
+    where = " AND ".join(conditions)
+    rows = conn.execute(
+        f"SELECT * FROM risk_events WHERE {where} ORDER BY severity DESC",
+        params,
+    ).fetchall()
+    return [dict(r) for r in rows]
+
+
+# ── Self-Audit ────────────────────────────────────────────────────
+def run_self_audit(conn: sqlite3.Connection) -> dict:
+    """Comprehensive data-quality audit. Returns quality_score, findings, summary."""
+    findings: list[dict] = []
+    score = 100
+
+    # Counts
+    docs = conn.execute("SELECT COUNT(*) AS c FROM documents").fetchone()["c"]
+    pages = conn.execute("SELECT COUNT(*) AS c FROM pages").fetchone()["c"]
+
+    graph_nodes_count = 0
+    if _table_exists(conn, "graph_nodes"):
+        graph_nodes_count = conn.execute("SELECT COUNT(*) AS c FROM graph_nodes").fetchone()["c"]
+
+    md_files_evolved = 0
+    md_sections_count = 0
+    cross_refs_count = 0
+    cross_ref_link_rate = 0
+
+    if _table_exists(conn, "md_sections"):
+        md_sections_count = conn.execute("SELECT COUNT(*) AS c FROM md_sections").fetchone()["c"]
+        md_files_evolved = conn.execute(
+            "SELECT COUNT(DISTINCT source_file) AS c FROM md_sections"
+        ).fetchone()["c"]
+
+    if _table_exists(conn, "md_cross_refs"):
+        cross_refs_count = conn.execute("SELECT COUNT(*) AS c FROM md_cross_refs").fetchone()["c"]
+        linked = conn.execute(
+            "SELECT COUNT(*) AS c FROM md_cross_refs WHERE graph_node_id IS NOT NULL"
+        ).fetchone()["c"]
+        cross_ref_link_rate = round(linked / max(cross_refs_count, 1) * 100, 1)
+
+    # Quality checks
+    if docs == 0:
+        findings.append({"issue": "No documents indexed", "severity": "high", "count": 0})
+        score -= 20
+
+    if graph_nodes_count == 0:
+        findings.append({"issue": "No knowledge graph nodes loaded", "severity": "high", "count": 0})
+        score -= 15
+
+    # Orphan pages
+    orphan = conn.execute(
+        """SELECT COUNT(*) AS c FROM pages p
+           LEFT JOIN documents d ON d.id = p.document_id
+           WHERE d.id IS NULL"""
+    ).fetchone()["c"]
+    if orphan > 0:
+        findings.append({"issue": "Orphan pages (no parent document)", "severity": "medium", "count": orphan})
+        score -= min(10, orphan)
+
+    # Empty pages
+    empty = conn.execute("SELECT COUNT(*) AS c FROM pages WHERE char_count = 0 OR text_content = ''").fetchone()["c"]
+    if empty > 0 and pages > 0 and (empty / pages) > 0.3:
+        findings.append({"issue": "High ratio of empty pages", "severity": "medium", "count": empty})
+        score -= 5
+
+    score = max(0, min(100, score))
+
+    return {
+        "quality_score": score,
+        "findings": findings,
+        "summary": {
+            "documents": docs,
+            "pages": pages,
+            "graph_nodes": graph_nodes_count,
+            "md_files_evolved": md_files_evolved,
+            "md_sections": md_sections_count,
+            "cross_refs": cross_refs_count,
+            "cross_ref_link_rate": cross_ref_link_rate,
+        },
+    }
+
+
+# ── Convergence Status ────────────────────────────────────────────
+def get_convergence_status(conn: sqlite3.Connection) -> dict:
+    """Compute convergence status: quality score, delta-new items, blockers, next patch."""
+    audit = run_self_audit(conn)
+    score = audit["quality_score"]
+    summary = audit["summary"]
+
+    blockers: list[str] = []
+    delta_new: list[str] = []
+
+    if summary["documents"] == 0:
+        blockers.append("No documents ingested — run litigation_bulk_ingest first.")
+    if summary["graph_nodes"] == 0:
+        blockers.append("No knowledge graph loaded — graph JSON files missing from data directory.")
+
+    # Check for recent additions (last 24 h)
+    recent_docs = conn.execute(
+        "SELECT COUNT(*) AS c FROM documents WHERE ingested_at >= datetime('now', '-1 day')"
+    ).fetchone()["c"]
+    if recent_docs:
+        delta_new.append(f"{recent_docs} documents ingested in the last 24 hours")
+
+    if _table_exists(conn, "md_sections"):
+        recent_sections = conn.execute(
+            "SELECT COUNT(*) AS c FROM md_sections WHERE evolved_at >= datetime('now', '-1 day')"
+        ).fetchone()["c"]
+        if recent_sections:
+            delta_new.append(f"{recent_sections} MD sections evolved in the last 24 hours")
+
+    # Cycle count approximation
+    cycle_count = 0
+    if _table_exists(conn, "error_log"):
+        cycle_count = conn.execute("SELECT COUNT(DISTINCT DATE(created_at)) AS c FROM error_log").fetchone()["c"]
+
+    converged = score >= 90 and not blockers
+
+    # Determine next patch
+    if blockers:
+        next_patch = blockers[0]
+    elif score < 70:
+        next_patch = "Run litigation_evolve_files to improve coverage."
+    elif score < 90:
+        next_patch = "Load additional knowledge graphs or ingest more documents."
+    else:
+        next_patch = "System converged — maintain with periodic self-audits."
+
+    # Emergence signals: top cross-ref clusters
+    emergence_signals: list[dict] = []
+    if _table_exists(conn, "md_cross_refs"):
+        top_refs = conn.execute(
+            """SELECT ref_value, COUNT(*) AS mentions
+               FROM md_cross_refs
+               GROUP BY ref_value
+               HAVING mentions >= 3
+               ORDER BY mentions DESC
+               LIMIT 20"""
+        ).fetchall()
+        emergence_signals = [dict(r) for r in top_refs]
+
+    return {
+        "converged": converged,
+        "quality_score": score,
+        "cycle_count": cycle_count,
+        "delta_new": delta_new,
+        "blockers": blockers,
+        "next_patch": next_patch,
+        "emergence_signals": emergence_signals,
+    }
+
+
+def get_error_summary(conn: sqlite3.Connection, hours: int = 24) -> list:
+    """Summary of errors from the last N hours, grouped by code and tool."""
+    if not _table_exists(conn, "error_log"):
+        return []
+
+    rows = conn.execute(
+        """SELECT error_code, tool_name, COUNT(*) AS count, MAX(created_at) AS last_seen
+           FROM error_log
+           WHERE created_at >= datetime('now', ? || ' hours')
+           GROUP BY error_code, tool_name
+           ORDER BY count DESC""",
+        (f"-{hours}",),
+    ).fetchall()
+    return [dict(r) for r in rows]
+
+
+def get_evolution_stats(conn: sqlite3.Connection) -> dict:
+    """Evolution coverage dashboard data."""
+    total_files_evolved = 0
+    total_sections = 0
+    total_cross_refs = 0
+    graph_linked_refs = 0
+    evolved_files: list[dict] = []
+    ref_types: list[dict] = []
+
+    if _table_exists(conn, "md_sections"):
+        total_sections = conn.execute("SELECT COUNT(*) AS c FROM md_sections").fetchone()["c"]
+        files = conn.execute(
+            "SELECT DISTINCT source_path, source_file FROM md_sections ORDER BY source_file"
+        ).fetchall()
+        evolved_files = [dict(f) for f in files]
+        total_files_evolved = len(evolved_files)
+
+    if _table_exists(conn, "md_cross_refs"):
+        total_cross_refs = conn.execute("SELECT COUNT(*) AS c FROM md_cross_refs").fetchone()["c"]
+        graph_linked_refs = conn.execute(
+            "SELECT COUNT(*) AS c FROM md_cross_refs WHERE graph_node_id IS NOT NULL"
+        ).fetchone()["c"]
+        rt = conn.execute(
+            "SELECT ref_type, COUNT(*) AS cnt FROM md_cross_refs GROUP BY ref_type ORDER BY cnt DESC"
+        ).fetchall()
+        ref_types = [dict(r) for r in rt]
+
+    link_rate = round(graph_linked_refs / max(total_cross_refs, 1) * 100, 1)
+
+    return {
+        "total_files_evolved": total_files_evolved,
+        "total_sections": total_sections,
+        "total_cross_refs": total_cross_refs,
+        "graph_linked_refs": graph_linked_refs,
+        "link_rate": link_rate,
+        "evolved_files": evolved_files,
+        "ref_types": ref_types,
+    }
+
+
+# ── Evolution / Processing ────────────────────────────────────────
+_HEADING_RE = re.compile(r"^(#{1,6})\s+(.+)$", re.MULTILINE)
+_REF_PATTERNS = {
+    "rule": re.compile(r"\b(MCR|MCL)\s+[\d.]+(?:\([a-zA-Z0-9]+\))?", re.IGNORECASE),
+    "vehicle": re.compile(r"\b(motion|petition|complaint|brief|appeal|order|objection)\b", re.IGNORECASE),
+    "agent": re.compile(r"AGENT:(\w+)", re.IGNORECASE),
+    "authority": re.compile(r"\b\d{1,3}\s+(Mich\.?\s*(App|ct)?\.?|NW\.?2d|F\.?\s*(Supp\.?|3d|2d))\s+\d+", re.IGNORECASE),
+    "risk": re.compile(r"\brisk[_ ]?(class|type|event|id)\b", re.IGNORECASE),
+}
+
+
+def _extract_md_sections(text: str, source_file: str, source_path: str) -> list[dict]:
+    """Parse markdown text into section dicts."""
+    sections: list[dict] = []
+    parts = _HEADING_RE.split(text)
+
+    # If no headings, treat the whole text as one section
+    if len(parts) <= 1:
+        if text.strip():
+            sections.append({
+                "source_file": source_file,
+                "source_path": source_path,
+                "section_level": 1,
+                "section_title": source_file,
+                "section_path": source_file,
+                "content": text.strip()[:50000],
+            })
+        return sections
+
+    # parts come in triples: (pre-text, hashes, title, content, hashes, title, content, ...)
+    preamble = parts[0].strip()
+    if preamble:
+        sections.append({
+            "source_file": source_file,
+            "source_path": source_path,
+            "section_level": 0,
+            "section_title": f"{source_file} (preamble)",
+            "section_path": source_file,
+            "content": preamble[:50000],
+        })
+
+    i = 1
+    path_stack: list[str] = []
+    while i + 2 <= len(parts):
+        level = len(parts[i])
+        title = parts[i + 1].strip()
+        content = parts[i + 2].strip() if i + 2 < len(parts) else ""
+        i += 3
+
+        # Build section path
+        while len(path_stack) >= level:
+            path_stack.pop()
+        path_stack.append(title)
+        section_path = " > ".join(path_stack)
+
+        sections.append({
+            "source_file": source_file,
+            "source_path": source_path,
+            "section_level": level,
+            "section_title": title,
+            "section_path": section_path,
+            "content": content[:50000],
+        })
+
+    return sections
+
+
+def _extract_cross_refs(text: str) -> list[dict]:
+    """Extract cross-reference patterns from text."""
+    refs: list[dict] = []
+    seen = set()
+    for ref_type, pattern in _REF_PATTERNS.items():
+        for m in pattern.finditer(text):
+            val = m.group(0).strip()
+            key = (ref_type, val)
+            if key not in seen:
+                seen.add(key)
+                refs.append({"ref_type": ref_type, "ref_value": val, "confidence": 0.7})
+    return refs
+
+
+def _link_ref_to_graph(conn: sqlite3.Connection, ref_value: str) -> dict | None:
+    """Try to find a graph node matching a cross-reference value."""
+    if not _table_exists(conn, "graph_nodes"):
+        return None
+    pattern = f"%{ref_value}%"
+    row = conn.execute(
+        "SELECT id, graph_source FROM graph_nodes WHERE id LIKE ? OR label LIKE ? LIMIT 1",
+        (pattern, pattern),
+    ).fetchone()
+    if row:
+        return {"graph_node_id": row["id"], "graph_source": row["graph_source"]}
+    return None
+
+
+def evolve_all_md_files(conn: sqlite3.Connection, directory: str) -> dict:
+    """Parse all .md files in directory into sections, extract cross-refs, store in DB."""
+    evolved = 0
+    skipped = 0
+    errors = 0
+
+    if not os.path.isdir(directory):
+        return {"evolved": 0, "skipped": 0, "errors": 0, "error": f"Directory not found: {directory}"}
+
+    for root, _dirs, files in os.walk(directory):
+        for fname in files:
+            if not fname.lower().endswith(".md"):
+                continue
+            fpath = os.path.join(root, fname)
+
+            # Skip already-evolved files
+            existing = conn.execute(
+                "SELECT 1 FROM md_sections WHERE source_path = ? LIMIT 1", (fpath,)
+            ).fetchone()
+            if existing:
+                skipped += 1
+                continue
+
+            try:
+                with open(fpath, "r", encoding="utf-8", errors="replace") as f:
+                    text = f.read()
+
+                sections = _extract_md_sections(text, fname, fpath)
+                for sec in sections:
+                    cur = conn.execute(
+                        """INSERT INTO md_sections
+                           (source_file, source_path, section_level, section_title, section_path, content)
+                           VALUES (?, ?, ?, ?, ?, ?)""",
+                        (sec["source_file"], sec["source_path"], sec["section_level"],
+                         sec["section_title"], sec["section_path"], sec["content"]),
+                    )
+                    section_id = cur.lastrowid
+
+                    refs = _extract_cross_refs(sec["content"])
+                    for ref in refs:
+                        link = _link_ref_to_graph(conn, ref["ref_value"])
+                        conn.execute(
+                            """INSERT INTO md_cross_refs
+                               (section_id, ref_type, ref_value, confidence, graph_node_id, graph_source)
+                               VALUES (?, ?, ?, ?, ?, ?)""",
+                            (section_id, ref["ref_type"], ref["ref_value"], ref["confidence"],
+                             link["graph_node_id"] if link else None,
+                             link["graph_source"] if link else None),
+                        )
+
+                conn.commit()
+                evolved += 1
+            except Exception as e:
+                logger.warning("Error evolving %s: %s", fpath, e)
+                errors += 1
+
+    return {"evolved": evolved, "skipped": skipped, "errors": errors}
+
+
+def evolve_all_txt_files(conn: sqlite3.Connection, directory: str) -> dict:
+    """Parse all .txt files in directory into sections, extract cross-refs, store in DB."""
+    evolved = 0
+    skipped = 0
+    errors = 0
+
+    if not os.path.isdir(directory):
+        return {"evolved": 0, "skipped": 0, "errors": 0, "error": f"Directory not found: {directory}"}
+
+    for root, _dirs, files in os.walk(directory):
+        for fname in files:
+            if not fname.lower().endswith(".txt"):
+                continue
+            fpath = os.path.join(root, fname)
+
+            existing = conn.execute(
+                "SELECT 1 FROM md_sections WHERE source_path = ? LIMIT 1", (fpath,)
+            ).fetchone()
+            if existing:
+                skipped += 1
+                continue
+
+            try:
+                with open(fpath, "r", encoding="utf-8", errors="replace") as f:
+                    text = f.read()
+
+                # Treat each txt file as a single section
+                cur = conn.execute(
+                    """INSERT INTO md_sections
+                       (source_file, source_path, section_level, section_title, section_path, content)
+                       VALUES (?, ?, ?, ?, ?, ?)""",
+                    (fname, fpath, 1, fname, fpath, text[:50000]),
+                )
+                section_id = cur.lastrowid
+
+                refs = _extract_cross_refs(text)
+                for ref in refs:
+                    link = _link_ref_to_graph(conn, ref["ref_value"])
+                    conn.execute(
+                        """INSERT INTO md_cross_refs
+                           (section_id, ref_type, ref_value, confidence, graph_node_id, graph_source)
+                           VALUES (?, ?, ?, ?, ?, ?)""",
+                        (section_id, ref["ref_type"], ref["ref_value"], ref["confidence"],
+                         link["graph_node_id"] if link else None,
+                         link["graph_source"] if link else None),
+                    )
+
+                conn.commit()
+                evolved += 1
+            except Exception as e:
+                logger.warning("Error evolving TXT %s: %s", fpath, e)
+                errors += 1
+
+    return {"evolved": evolved, "skipped": skipped, "errors": errors}
+
+
+def evolve_from_pages(conn: sqlite3.Connection, document_id: int | None = None) -> dict:
+    """Evolve ingested PDF page text into the md_sections cross-ref layer."""
+    if document_id:
+        docs = conn.execute(
+            "SELECT id, file_name, file_path FROM documents WHERE id = ?", (document_id,)
+        ).fetchall()
+    else:
+        docs = conn.execute("SELECT id, file_name, file_path FROM documents").fetchall()
+
+    docs_evolved = 0
+    total_sections = 0
+    total_refs = 0
+
+    for doc in docs:
+        # Skip if already evolved
+        existing = conn.execute(
+            "SELECT 1 FROM md_sections WHERE source_path = ? LIMIT 1", (doc["file_path"],)
+        ).fetchone()
+        if existing:
+            continue
+
+        pages = conn.execute(
+            "SELECT page_number, text_content FROM pages WHERE document_id = ? ORDER BY page_number",
+            (doc["id"],),
+        ).fetchall()
+
+        for page in pages:
+            text = page["text_content"] or ""
+            if not text.strip():
+                continue
+
+            cur = conn.execute(
+                """INSERT INTO md_sections
+                   (source_file, source_path, section_level, section_title, section_path, content)
+                   VALUES (?, ?, ?, ?, ?, ?)""",
+                (doc["file_name"], doc["file_path"], 1,
+                 f"{doc['file_name']} — Page {page['page_number']}",
+                 f"{doc['file_path']} > Page {page['page_number']}",
+                 text[:50000]),
+            )
+            section_id = cur.lastrowid
+            total_sections += 1
+
+            refs = _extract_cross_refs(text)
+            for ref in refs:
+                link = _link_ref_to_graph(conn, ref["ref_value"])
+                conn.execute(
+                    """INSERT INTO md_cross_refs
+                       (section_id, ref_type, ref_value, confidence, graph_node_id, graph_source)
+                       VALUES (?, ?, ?, ?, ?, ?)""",
+                    (section_id, ref["ref_type"], ref["ref_value"], ref["confidence"],
+                     link["graph_node_id"] if link else None,
+                     link["graph_source"] if link else None),
+                )
+                total_refs += 1
+
+        conn.commit()
+        docs_evolved += 1
+
+    return {
+        "status": "done",
+        "documents": docs_evolved,
+        "docs_evolved": docs_evolved,
+        "sections": total_sections,
+        "total_sections": total_sections,
+        "cross_refs": total_refs,
+        "total_refs": total_refs,
+    }
+
+
+def search_evolved_knowledge(
+    conn: sqlite3.Connection,
+    query: str,
+    source_file: str | None = None,
+    limit: int = 20,
+) -> dict:
+    """FTS5 search across evolved md_sections content."""
+    safe_q = sanitize_fts_query(query)
+    if not safe_q:
+        return {"total": 0, "count": 0, "results": [], "has_more": False, "next_offset": 0}
+
+    try:
+        if source_file:
+            total_row = conn.execute(
+                """SELECT COUNT(*) AS c
+                   FROM md_sections_fts
+                   JOIN md_sections ms ON ms.id = md_sections_fts.rowid
+                   WHERE md_sections_fts MATCH ? AND ms.source_file LIKE ?""",
+                (safe_q, f"%{source_file}%"),
+            ).fetchone()
+            total = total_row["c"] if total_row else 0
+
+            rows = conn.execute(
+                """SELECT ms.*, snippet(md_sections_fts, 1, '>>>', '<<<', '...', 50) AS snippet
+                   FROM md_sections_fts
+                   JOIN md_sections ms ON ms.id = md_sections_fts.rowid
+                   WHERE md_sections_fts MATCH ? AND ms.source_file LIKE ?
+                   ORDER BY rank LIMIT ?""",
+                (safe_q, f"%{source_file}%", limit),
+            ).fetchall()
+        else:
+            total_row = conn.execute(
+                "SELECT COUNT(*) AS c FROM md_sections_fts WHERE md_sections_fts MATCH ?",
+                (safe_q,),
+            ).fetchone()
+            total = total_row["c"] if total_row else 0
+
+            rows = conn.execute(
+                """SELECT ms.*, snippet(md_sections_fts, 1, '>>>', '<<<', '...', 50) AS snippet
+                   FROM md_sections_fts
+                   JOIN md_sections ms ON ms.id = md_sections_fts.rowid
+                   WHERE md_sections_fts MATCH ?
+                   ORDER BY rank LIMIT ?""",
+                (safe_q, limit),
+            ).fetchall()
+
+        results = [dict(r) for r in rows]
+    except sqlite3.OperationalError:
+        results = []
+        total = 0
+
+    count = len(results)
+    return {
+        "total": total,
+        "count": count,
+        "results": results,
+        "has_more": count < total,
+        "next_offset": count,
+    }
+
+
+def get_cross_refs(
+    conn: sqlite3.Connection,
+    ref_type: str | None = None,
+    ref_value: str | None = None,
+    limit: int = 50,
+) -> list[dict]:
+    """Query cross-reference network with optional type/value filters."""
+    if not _table_exists(conn, "md_cross_refs"):
+        return []
+
+    conditions: list[str] = []
+    params: list = []
+
+    if ref_type:
+        conditions.append("cr.ref_type = ?")
+        params.append(ref_type)
+    if ref_value:
+        conditions.append("cr.ref_value LIKE ?")
+        params.append(f"%{ref_value}%")
+
+    where = (" WHERE " + " AND ".join(conditions)) if conditions else ""
+
+    rows = conn.execute(
+        f"""SELECT cr.ref_type, cr.ref_value, cr.confidence,
+                   cr.graph_node_id, cr.graph_source,
+                   ms.section_title, ms.source_file
+            FROM md_cross_refs cr
+            LEFT JOIN md_sections ms ON ms.id = cr.section_id
+            {where}
+            ORDER BY cr.confidence DESC
+            LIMIT ?""",
+        params + [limit],
+    ).fetchall()
+    return [dict(r) for r in rows]
+
+
+# ── System / Master Data ─────────────────────────────────────────
+def scan_all_systems(conn: sqlite3.Connection) -> dict:
+    """Scan LitigationOS subsystems and register them."""
+    base = os.path.dirname(DB_PATH)
+    systems_found: dict[str, Any] = {}
+
+    scan_targets = {
+        "pipeline": ("pipeline", os.path.join(base, "00_SYSTEM", "pipeline")),
+        "mcp_server": ("mcp_server", os.path.join(base, "00_SYSTEM", "mcp_server")),
+        "local_model": ("ai_engine", os.path.join(base, "00_SYSTEM", "local_model")),
+        "product_app": ("application", os.path.join(base, "11_CODE", "litigationos")),
+        "agents": ("agent_fleet", os.path.join(base, "agents")),
+        "scripts": ("scripts", os.path.join(base, "00_SYSTEM", "scripts")),
+    }
+
+    for name, (stype, path) in scan_targets.items():
+        if os.path.isdir(path):
+            file_count = sum(1 for _ in Path(path).rglob("*.py"))
+            conn.execute(
+                """INSERT OR REPLACE INTO system_registry
+                   (system_name, system_type, path, version, file_count, status)
+                   VALUES (?, ?, ?, ?, ?, ?)""",
+                (name, stype, path, "auto-scanned", file_count, "active"),
+            )
+            systems_found[name] = {"type": stype, "path": path, "files": file_count}
+
+    conn.commit()
+    return systems_found
+
+
+def ingest_master_csv(conn: sqlite3.Connection, path: str, dataset: str) -> dict:
+    """Ingest a single CSV file into master_data."""
+    if not os.path.isfile(path):
+        return {"error": f"File not found: {path}", "rows_ingested": 0}
+
+    rows_ingested = 0
+    try:
+        with open(path, "r", encoding="utf-8", errors="replace") as f:
+            reader = csv.DictReader(f)
+            batch: list[tuple] = []
+            for row in reader:
+                text = " ".join(str(v) for v in row.values() if v)
+                batch.append((dataset, json.dumps(row, default=str), text))
+                if len(batch) >= 500:
+                    conn.executemany(
+                        "INSERT INTO master_data (dataset, row_data, text_content) VALUES (?, ?, ?)",
+                        batch,
+                    )
+                    rows_ingested += len(batch)
+                    batch.clear()
+
+            if batch:
+                conn.executemany(
+                    "INSERT INTO master_data (dataset, row_data, text_content) VALUES (?, ?, ?)",
+                    batch,
+                )
+                rows_ingested += len(batch)
+
+        conn.commit()
+    except Exception as e:
+        logger.error("Error ingesting CSV %s: %s", path, e)
+        return {"error": str(e), "rows_ingested": rows_ingested}
+
+    return {"rows_ingested": rows_ingested}
+
+
+def ingest_all_master_csvs(conn: sqlite3.Connection, data_dir: str) -> dict:
+    """Ingest all CSV files from a directory into master_data."""
+    results: dict[str, Any] = {}
+    if not os.path.isdir(data_dir):
+        return {"error": f"Directory not found: {data_dir}"}
+
+    for fname in os.listdir(data_dir):
+        if fname.lower().endswith(".csv"):
+            dataset = os.path.splitext(fname)[0]
+            fpath = os.path.join(data_dir, fname)
+            results[dataset] = ingest_master_csv(conn, fpath, dataset)
+
+    return results
+
+
+def search_master_data(
+    conn: sqlite3.Connection,
+    query: str,
+    dataset: str | None = None,
+    limit: int = 50,
+) -> list[dict]:
+    """Search master_data using FTS5, with optional dataset filter."""
+    if not _table_exists(conn, "master_data"):
+        return []
+
+    safe_q = sanitize_fts_query(query)
+    if not safe_q:
+        return []
+
+    try:
+        if dataset:
+            rows = conn.execute(
+                """SELECT md.id, md.dataset, md.row_data, md.text_content,
+                          snippet(master_data_fts, 0, '>>>', '<<<', '...', 50) AS matching_text
+                   FROM master_data_fts
+                   JOIN master_data md ON md.id = master_data_fts.rowid
+                   WHERE master_data_fts MATCH ? AND md.dataset = ?
+                   ORDER BY rank LIMIT ?""",
+                (safe_q, dataset, limit),
+            ).fetchall()
+        else:
+            rows = conn.execute(
+                """SELECT md.id, md.dataset, md.row_data, md.text_content,
+                          snippet(master_data_fts, 0, '>>>', '<<<', '...', 50) AS matching_text
+                   FROM master_data_fts
+                   JOIN master_data md ON md.id = master_data_fts.rowid
+                   WHERE master_data_fts MATCH ?
+                   ORDER BY rank LIMIT ?""",
+                (safe_q, limit),
+            ).fetchall()
+        return [dict(r) for r in rows]
+    except sqlite3.OperationalError:
+        # Fallback to LIKE search
+        pattern = f"%{query}%"
+        if dataset:
+            rows = conn.execute(
+                "SELECT * FROM master_data WHERE text_content LIKE ? AND dataset = ? LIMIT ?",
+                (pattern, dataset, limit),
+            ).fetchall()
+        else:
+            rows = conn.execute(
+                "SELECT * FROM master_data WHERE text_content LIKE ? LIMIT ?",
+                (pattern, limit),
+            ).fetchall()
+        return [dict(r) for r in rows]
+
+
+def vector_search(
+    conn: sqlite3.Connection,
+    query: str,
+    top_k: int = 10,
+) -> list[dict]:
+    """Vector similarity search — stub implementation using FTS5 ranking as proxy."""
+    # Full vector search requires embeddings; use FTS5 rank as a similarity proxy
+    safe_q = sanitize_fts_query(query)
+    if not safe_q:
+        return [{"status": "not_yet_implemented", "message": "Query was empty after sanitization."}]
+
+    results: list[dict] = []
+
+    # Search across md_sections_fts
+    if _table_exists(conn, "md_sections"):
+        try:
+            rows = conn.execute(
+                """SELECT ms.id, ms.section_title, ms.source_file, ms.content,
+                          rank AS score
+                   FROM md_sections_fts
+                   JOIN md_sections ms ON ms.id = md_sections_fts.rowid
+                   WHERE md_sections_fts MATCH ?
+                   ORDER BY rank
+                   LIMIT ?""",
+                (safe_q, top_k),
+            ).fetchall()
+            for r in rows:
+                results.append({
+                    "similarity": round(abs(r["score"]) if r["score"] else 0, 4),
+                    "score": round(abs(r["score"]) if r["score"] else 0, 4),
+                    "snippet": (r["content"] or "")[:200],
+                    "text": (r["content"] or "")[:200],
+                    "source": r["source_file"],
+                    "document": r["source_file"],
+                    "section_title": r["section_title"],
+                })
+        except sqlite3.OperationalError:
+            pass
+
+    # Also search pages_fts
+    if len(results) < top_k:
+        try:
+            _, name_col, _, _ = _doc_columns(conn)
+            rows = conn.execute(
+                f"""SELECT p.document_id, p.page_number, p.text_content,
+                          d.{name_col} AS file_name, rank AS score
+                   FROM pages_fts
+                   JOIN pages p ON p.id = pages_fts.rowid
+                   JOIN documents d ON d.id = p.document_id
+                   WHERE pages_fts MATCH ?
+                   ORDER BY rank
+                   LIMIT ?""",
+                (safe_q, top_k - len(results)),
+            ).fetchall()
+            for r in rows:
+                results.append({
+                    "similarity": round(abs(r["score"]) if r["score"] else 0, 4),
+                    "score": round(abs(r["score"]) if r["score"] else 0, 4),
+                    "snippet": (r["text_content"] or "")[:200],
+                    "text": (r["text_content"] or "")[:200],
+                    "source": f"{r['file_name']} p.{r['page_number']}",
+                    "document": r["file_name"],
+                })
+        except sqlite3.OperationalError:
+            pass
+
+    if not results:
+        return [{"status": "not_yet_implemented", "message": "No vector index available; used FTS5 proxy with no results."}]
+
+    return results
+
+
+# ── Case Intelligence ─────────────────────────────────────────────
+def compute_deadlines(
+    conn: sqlite3.Connection,
+    trigger_event: str,
+    trigger_date: str,
+    jurisdiction: str = "MI",
+) -> dict:
+    """Compute legal deadlines from a trigger event.
+
+    Searches the knowledge graph and rules for deadline-related data.
+    Returns a list of computed deadline entries or a stub if no rule data is found.
+    """
+    deadlines: list[dict] = []
+
+    # Search graph_nodes for deadline/rule patterns matching the trigger event
+    if _table_exists(conn, "graph_nodes"):
+        pattern = f"%{trigger_event}%"
+        rows = conn.execute(
+            """SELECT id, label, data, graph_source FROM graph_nodes
+               WHERE (data LIKE ? OR label LIKE ?) AND
+                     (data LIKE '%deadline%' OR data LIKE '%days%' OR data LIKE '%time%')
+               LIMIT 20""",
+            (pattern, pattern),
+        ).fetchall()
+
+        for r in rows:
+            try:
+                d = json.loads(r["data"]) if r["data"] else {}
+                deadlines.append({
+                    "deadline_date": d.get("deadline_date", "computed from rule"),
+                    "date": d.get("date", ""),
+                    "description": r["label"] or r["id"],
+                    "name": r["label"] or r["id"],
+                    "rule": d.get("rule", d.get("citation", r["graph_source"])),
+                    "authority": d.get("authority", ""),
+                })
+            except (json.JSONDecodeError, TypeError):
+                pass
+
+    if not deadlines:
+        return {
+            "status": "no_deadline_rules_found",
+            "trigger_event": trigger_event,
+            "trigger_date": trigger_date,
+            "jurisdiction": jurisdiction,
+            "message": (
+                f"No deadline rules found for '{trigger_event}' in {jurisdiction}. "
+                "Load court rule graphs first via litigation_evolve_files or knowledge graph loading."
+            ),
+        }
+
+    return deadlines
+
+
+def red_team_validate(conn: sqlite3.Connection, claim: str) -> dict:
+    """Red-team validate a legal claim. Searches for supporting and contradicting evidence."""
+    claim_pattern = f"%{claim}%"
+    sections_for = []
+    sections_against = []
+    gaps: list[str] = []
+
+    # Search evolved sections for the claim
+    if _table_exists(conn, "md_sections"):
+        rows = conn.execute(
+            "SELECT section_title, content FROM md_sections WHERE content LIKE ? LIMIT 20",
+            (claim_pattern,),
+        ).fetchall()
+        for r in rows:
+            sections_for.append({"title": r["section_title"], "snippet": (r["content"] or "")[:200]})
+
+    # Check for contradictions
+    contra_keywords = ["however", "but", "denied", "dismissed", "rejected", "contrary"]
+    for kw in contra_keywords:
+        contra_pattern = f"%{kw}%{claim.split()[0] if claim.split() else claim}%"
+        try:
+            rows = conn.execute(
+                "SELECT section_title, content FROM md_sections WHERE content LIKE ? LIMIT 5",
+                (contra_pattern,),
+            ).fetchall()
+            for r in rows:
+                sections_against.append({"title": r["section_title"], "snippet": (r["content"] or "")[:200]})
+        except sqlite3.OperationalError:
+            pass
+
+    # Scoring
+    authority_score = min(100, len(sections_for) * 15)
+    evidence_score = min(100, len(sections_for) * 20)
+    consistency_score = max(0, 100 - len(sections_against) * 20)
+
+    filing_ready = authority_score >= 50 and evidence_score >= 50 and consistency_score >= 60
+
+    findings: list[dict] = []
+    if not sections_for:
+        findings.append({"severity": "critical", "message": f"No supporting sections found for claim: {claim}"})
+        gaps.append("No direct evidence found in evolved knowledge base.")
+    if sections_against:
+        findings.append({
+            "severity": "high",
+            "message": f"Found {len(sections_against)} potentially contradicting section(s).",
+        })
+
+    return {
+        "claim": claim,
+        "filing_ready": filing_ready,
+        "scores": {
+            "authority": authority_score,
+            "evidence": evidence_score,
+            "consistency": consistency_score,
+        },
+        "findings": findings,
+        "supporting_sections": sections_for[:10],
+        "contradicting_sections": sections_against[:5],
+        "gaps": gaps,
+    }
+
+
+def trace_evidence_chain(conn: sqlite3.Connection, claim: str) -> dict:
+    """Trace evidence chain for a claim: sections → cross-refs → sources."""
+    claim_pattern = f"%{claim}%"
+    sections: list[dict] = []
+    cross_refs: list[dict] = []
+    sources: list[dict] = []
+    gaps: list[str] = []
+
+    if _table_exists(conn, "md_sections"):
+        sec_rows = conn.execute(
+            "SELECT id, section_title, source_file FROM md_sections WHERE content LIKE ? LIMIT 20",
+            (claim_pattern,),
+        ).fetchall()
+        for s in sec_rows:
+            sections.append({"title": s["section_title"], "name": s["section_title"]})
+            sources.append({"name": s["source_file"], "path": s["source_file"]})
+
+            # Get cross-refs for this section
+            if _table_exists(conn, "md_cross_refs"):
+                refs = conn.execute(
+                    "SELECT ref_type, ref_value FROM md_cross_refs WHERE section_id = ?",
+                    (s["id"],),
+                ).fetchall()
+                for ref in refs:
+                    cross_refs.append({
+                        "ref": f"{ref['ref_type']}: {ref['ref_value']}",
+                        "citation": ref["ref_value"],
+                    })
+
+    # Deduplicate sources
+    seen_sources = set()
+    unique_sources = []
+    for src in sources:
+        if src["name"] not in seen_sources:
+            seen_sources.add(src["name"])
+            unique_sources.append(src)
+
+    if not sections:
+        gaps.append(f"No sections found referencing: {claim}")
+
+    # Completeness
+    completeness = 0
+    if sections:
+        completeness += 30
+    if cross_refs:
+        completeness += 40
+    if unique_sources:
+        completeness += 30
+
+    return {
+        "claim": claim,
+        "completeness_pct": completeness,
+        "sections": sections,
+        "cross_refs": cross_refs,
+        "sources": unique_sources,
+        "gaps": gaps,
+    }
+
+
+def dispatch_to_swarm(conn: sqlite3.Connection, task: str) -> dict:
+    """Dispatch a task to the agent swarm for recommendations.
+
+    Searches the cross-reference network for agent-type refs that match the task,
+    and returns ranked recommendations.
+    """
+    agents: list[dict] = []
+
+    # Search for agent cross-refs related to the task
+    if _table_exists(conn, "md_cross_refs"):
+        task_pattern = f"%{task}%"
+        rows = conn.execute(
+            """SELECT cr.ref_value, ms.section_title, ms.content
+               FROM md_cross_refs cr
+               JOIN md_sections ms ON ms.id = cr.section_id
+               WHERE cr.ref_type = 'agent'
+                 AND (ms.content LIKE ? OR ms.section_title LIKE ?)
+               ORDER BY cr.confidence DESC
+               LIMIT 10""",
+            (task_pattern, task_pattern),
+        ).fetchall()
+
+        for i, r in enumerate(rows):
+            agents.append({
+                "agent": r["ref_value"],
+                "name": r["ref_value"],
+                "role": r["section_title"] or "agent",
+                "relevance": round(1.0 - (i * 0.1), 2),
+                "score": round(1.0 - (i * 0.1), 2),
+                "suggested_input": task,
+                "input": task,
+            })
+
+    if not agents:
+        # Provide default agent recommendations based on keywords
+        default_agents = [
+            {"agent": "filing-forge-master", "role": "Filing & QA", "relevance": 0.5},
+            {"agent": "evidence-warfare-commander", "role": "Evidence Strategy", "relevance": 0.4},
+            {"agent": "timeline-forensics", "role": "Timeline Analysis", "relevance": 0.3},
+        ]
+        for a in default_agents:
+            a["name"] = a["agent"]
+            a["score"] = a["relevance"]
+            a["suggested_input"] = task
+            a["input"] = task
+        agents = default_agents
+
+    return {"agents": agents}
+
+
+# ── Utilities ─────────────────────────────────────────────────────
+def record_error(
+    conn: sqlite3.Connection,
+    code: ErrorCode,
+    context: str,
+    message: str,
+    traceback_str: str,
+) -> None:
+    """Record an error event for telemetry."""
+    try:
+        conn.execute(
+            """INSERT INTO error_log (error_code, tool_name, message, traceback)
+               VALUES (?, ?, ?, ?)""",
+            (code.value, context, message, traceback_str),
+        )
+        conn.commit()
+    except Exception:
+        pass  # Telemetry must never crash the caller
+
+
+def check_disk_space(min_mb: int = 50) -> None:
+    """Raise DatabaseError if the DB drive has less than min_mb free."""
+    db_dir = os.path.dirname(DB_PATH) or "."
+    try:
+        usage = shutil.disk_usage(db_dir)
+        free_mb = usage.free / (1024 * 1024)
+        if free_mb < min_mb:
+            raise DatabaseError(
+                f"Insufficient disk space: {free_mb:.1f} MB free on {db_dir} "
+                f"(minimum {min_mb} MB required). Free up space before writing."
+            )
+    except OSError:
+        pass  # If we can't check disk space, proceed anyway

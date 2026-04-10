@@ -1,0 +1,235 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║           LITIGATION OS - COMPLETE SKILL INVENTORY (1,350 Skills)        ║
+║                     All Skills Across All Categories                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+LOCATIONS:
+  • Project:  C:\Users\andre\LitigationOS\.agents\skills\  (943 skills)
+  • User:     C:\Users\andre\.claude\skills\              (408 skills)
+
+SUMMARY BY CATEGORY
+═════════════════════════════════════════════════════════════════════════════
+agent-orchestration       : 346 skills (25.6%)
+other                     : 259 skills (19.2%)
+design                    : 140 skills (10.4%)
+code-quality              : 100 skills ( 7.4%)
+testing                   :  89 skills ( 6.6%)
+data                      :  69 skills ( 5.1%)
+documentation             :  67 skills (   5%)
+AI/LLM                    :  58 skills ( 4.3%)
+litigation                :  53 skills ( 3.9%)
+security                  :  46 skills ( 3.4%)
+automation                :  43 skills ( 3.2%)
+DevOps                    :  24 skills ( 1.8%)
+APIs                      :  17 skills ( 1.3%)
+performance               :  17 skills ( 1.3%)
+content-creation          :  15 skills ( 1.1%)
+media-generation          :   7 skills ( 0.5%)
+
+═════════════════════════════════════════════════════════════════════════════
+
+╔═ AGENT-ORCHESTRATION (346 skills) ═══╗
+  • activecampaign-automation              → Automate ActiveCampaign tasks via Rube MCP (Composio): manage contacts
+  • affidavit-narrative-agent              → Affidavit Narrative Agent
+  • agent-browser                          → Browser automation CLI for AI agents. Use for website interaction, for
+  • agent-development                      → Agent Development for Claude Code Plugins
+  • agent-framework-azure-ai-py            → Agent Framework Azure Hosted Agents
+  • agent-manager-skill                    → Agent Manager Skill
+  • agent-memory                           → agentMemory Skill
+  • agent-memory-mcp                       → Agent Memory Skill
+  • agent-memory-systems                   → Memory is the cornerstone of intelligent agents. Without it, every int
+  • agent-orchestration-improve-agent      → Systematic improvement of existing agents through performance analysis
+  ... and 336 more skills
+
+╔═ OTHER (259 skills) ═══╗
+  • 3d-games                               → 3D Game Development
+  • address-github-comments                → Address GitHub Comments
+  • algorithmic-art                        → ALGORITHMIC PHILOSOPHY CREATION
+  • angular                                → Angular Expert
+  • angular-best-practices                 → Angular Best Practices
+  • angular-migration                      → Angular Migration
+  • angular-state-management               → Angular State Management
+  • anti-reversing-techniques              → Anti-Reversing Techniques
+  • architecture-blueprint-generator       → Comprehensive Project Architecture Blueprint Generator
+  • architecture-patterns                  → Architecture Patterns
+  ... and 249 more skills
+
+╔═ DESIGN (140 skills) ═══╗
+  • 3d-web-experience                      → Expert in building 3D experiences for the web - Three.js, React Three 
+  • accessibility-compliance-accessibility-audit → You are an accessibility expert specializing in WCAG compliance, inclu
+  • ai-content-pipeline                    → Build multi-step AI content creation pipelines combining image, video,
+  • ai-content-pipeline                    → Build multi-step AI content creation pipelines combining image, video,
+  • ai-image-generation                    → Generate AI images with FLUX, Gemini, Grok, Seedream, Reve and 50+ mod
+  • ai-image-generation                    → Generate AI images with FLUX, Gemini, Grok, Seedream, Reve and 50+ mod
+  • ai-product-photography                 → Generate professional AI product photography and commercial images. Mo
+  • ai-product-photography                 → Generate professional AI product photography and commercial images. Mo
+  • ai-social-media-content                → Create AI-powered social media content for TikTok, Instagram, YouTube,
+  • ai-social-media-content                → Create AI-powered social media content for TikTok, Instagram, YouTube,
+  ... and 130 more skills
+
+╔═ CODE-QUALITY (100 skills) ═══╗
+  • api-fuzzing-for-bug-bounty             → API Fuzzing for Bug Bounty
+  • app-store-screenshots                  → App Store and Google Play screenshot creation with exact platform spec
+  • app-store-screenshots                  → App Store and Google Play screenshot creation with exact platform spec
+  • architect-review                       → Use this skill when
+  • cicd-automation-workflow-automate      → You are a workflow automation expert specializing in creating efficien
+  • clarity-gate                           → Pre-ingestion verification for epistemic quality in RAG systems with 9
+  • clean-code                             → Applies principles from Robert C. Martin's 'Clean Code'. Use this skil
+  • code-refactoring                       → Code Refactoring
+  • code-refactoring-context-restore       → Use when working with code refactoring context restore
+  • code-refactoring-refactor-clean        → You are a code refactoring expert specializing in clean code principle
+  ... and 90 more skills
+
+╔═ TESTING (89 skills) ═══╗
+  • ab-test-setup                          → A/B Test Setup
+  • agent-browser                          → Browser automation for AI agents via inference.sh. Navigate web pages,
+  • agent-evaluation                       → Testing and benchmarking LLM agents including behavioral testing, capa
+  • ai-marketing-videos                    → Create AI marketing videos for ads, promos, product launches, and bran
+  • ai-marketing-videos                    → Create AI marketing videos for ads, promos, product launches, and bran
+  • antigravity-workflows                  → Orchestrate multiple Antigravity skills through guided workflows for S
+  • api-testing-observability-api-mock     → You are an API mocking expert specializing in realistic mock services 
+  • aws-penetration-testing                → AWS Penetration Testing
+  • backend-testing                        → Backend Testing
+  • backtesting-frameworks                 → Backtesting Frameworks
+  ... and 79 more skills
+
+╔═ DATA (69 skills) ═══╗
+  • accessibility-compliance               → Accessibility Compliance
+  • ai-avatar-video                        → Create AI avatar and talking head videos with OmniHuman, Fabric, PixVe
+  • ai-avatar-video                        → Create AI avatar and talking head videos with OmniHuman, Fabric, PixVe
+  • ai-music-generation                    → Generate AI music and songs with Diffrythm, Tencent Song Generation vi
+  • ai-music-generation                    → Generate AI music and songs with Diffrythm, Tencent Song Generation vi
+  • ai-podcast-creation                    → Create AI-powered podcasts with text-to-speech, music, and audio editi
+  • ai-podcast-creation                    → Create AI-powered podcasts with text-to-speech, music, and audio editi
+  • ai-video-generation                    → Generate AI videos with Google Veo, Seedance, Wan, Grok and 40+ models
+  • ai-video-generation                    → Generate AI videos with Google Veo, Seedance, Wan, Grok and 40+ models
+  • ai-voice-cloning                       → AI voice generation, text-to-speech, and voice synthesis via inference
+  ... and 59 more skills
+
+╔═ DOCUMENTATION (67 skills) ═══╗
+  • api-documentation                      → API Documentation
+  • api-documentation-generator            → Generate comprehensive, developer-friendly API documentation from code
+  • appinsights-instrumentation            → AppInsights Instrumentation Guide
+  • audio-transcriber                      → Transform audio recordings into professional Markdown documentation wi
+  • backend-dev-guidelines                 → Backend Development Guidelines
+  • brand-guidelines                       → Anthropic Brand Styling
+  • breakdown-epic-pm                      → Epic Product Requirements Document (PRD) Prompt
+  • c4-architecture-c4-architecture        → Generate comprehensive C4 architecture documentation for an existing r
+  • claude-code-guide                      → Claude Code Guide
+  • code-documentation-code-explain        → You are a code education expert specializing in explaining complex cod
+  ... and 57 more skills
+
+╔═ AI/LLM (58 skills) ═══╗
+  • ai-codebase-deep-modules               → AI Codebase Deep Modules
+  • ai-tool-compliance                     → action performed (ai_call, role_change, login, etc.)
+  • airflow-dag-patterns                   → Apache Airflow DAG Patterns
+  • assemblyai-transcribe                  → AssemblyAI transcription + exports
+  • avalonia-viewmodels-zafiro             → Avalonia ViewModels with Zafiro
+  • beautiful-prose                        → Hard-edged writing style contract for timeless, forceful English prose
+  • behavioral-modes                       → Behavioral Modes - Adaptive AI Operating Modes
+  • bullmq-specialist                      → BullMQ expert for Redis-backed job queues, background processing, and 
+  • changelog-maintenance                  → Changelog Maintenance
+  • claude-automation-recommender          → Claude Automation Recommender
+  ... and 48 more skills
+
+╔═ LITIGATION (53 skills) ═══╗
+  • litigation-appeal-brief-engine         → LITIGATION-APPEAL-BRIEF-ENGINE
+  • litigation-appellate-record-specialist → Appellate Record Specialist
+  • litigation-appellate-strategist        → litigation-appellate-strategist
+  • litigation-asset-discovery-engine      → Asset Discovery Engine
+  • litigation-brief-writer                → LITIGATION-BRIEF-WRITER
+  • litigation-case-evaluation-specialist  → Case Evaluation Specialist
+  • litigation-case-strategy-architect     → litigation-case-strategy-architect
+  • litigation-cause-of-action-library     → litigation-cause-of-action-library
+  • litigation-child-support-analyzer      → litigation-child-support-analyzer
+  • litigation-contempt-specialist         → Contempt Specialist
+  ... and 43 more skills
+
+╔═ SECURITY (46 skills) ═══╗
+  • active-directory-attacks               → Active Directory Attacks
+  • api-security-best-practices            → Implement secure API design patterns including authentication, authori
+  • audit-openclaw-security                → audit-openclaw-security
+  • auth-implementation-patterns           → Authentication & Authorization Implementation Patterns
+  • authentication-setup                   → Authentication Setup
+  • backend-security-coder                 → Use this skill when
+  • clerk-auth                             → Expert patterns for Clerk auth implementation, middleware, organizatio
+  • codebase-cleanup-deps-audit            → You are a dependency security expert specializing in vulnerability sca
+  • computer-use-agents                    → Build AI agents that interact with computers like humans do - viewing 
+  • dependency-management-deps-audit       → You are a dependency security expert specializing in vulnerability sca
+  ... and 36 more skills
+
+╔═ AUTOMATION (43 skills) ═══╗
+  • architecture                           → Architecture Decision Framework
+  • architecture-decision-records          → Architecture Decision Records
+  • ask-questions-if-underspecified        → Ask Questions If Underspecified
+  • changelog-automation                   → Release type
+  • codebase-cleanup-tech-debt             → You are a technical debt expert specializing in identifying, quantifyi
+  • commit                                 → Create commit messages following Sentry conventions. Use when committi
+  • copilot-sdk                            → Get the current weather for a city
+  • copilot-sdk                            → Get the current weather for a city
+  • create-architectural-decision-record   → Create Architectural Decision Record
+  • create-github-action-workflow-specification → Create GitHub Actions Workflow Specification
+  ... and 33 more skills
+
+╔═ DEVOPS (24 skills) ═══╗
+  • automate-whatsapp                      → Build WhatsApp automations with Kapso workflows: configure WhatsApp tr
+  • azd-deployment                         → Azure Developer CLI (azd) Container Apps Deployment
+  • c4-container                           → C4 Container Level: System Deployment
+  • chat-ui                                → Chat UI building blocks for React/Next.js from ui.inference.sh. Compon
+  • cloud-design-patterns                  → Cloud Design Patterns
+  • containerize-aspnet-framework          → ASP.NET .NET Framework Containerization Prompt
+  • cost-optimization                      → Cloud Cost Optimization
+  • deployment-automation                  → Deployment Automation
+  • deployment-pipeline-design             → Deployment Pipeline Design
+  • deployment-procedures                  → Deployment Procedures
+  ... and 14 more skills
+
+╔═ APIS (17 skills) ═══╗
+  • api-patterns                           → API Patterns
+  • conductor-manage                       → Manage track lifecycle: archive, restore, delete, rename, and cleanup
+  • context-management-context-restore     → Use when working with context management context restore
+  • fabric-api                             → Fabric API (HTTP via Node/Python)
+  • fal-platform                           → Platform APIs for model management, pricing, and usage tracking
+  • fastapi-router-py                      → FastAPI Router
+  • fastapi-templates                      → FastAPI Project Templates
+  • litigation-damages-calculator          → Financial damages computation and per-defendant allocation for Michiga
+  • moodle-external-api-development        → Moodle External API Development
+  • openapi-spec-generation                → OpenAPI Spec Generation
+  ... and 7 more skills
+
+╔═ PERFORMANCE (17 skills) ═══╗
+  • context-optimization                   → Apply compaction, masking, and caching strategies
+  • form-cro                               → Form Conversion Rate Optimization (Form CRO)
+  • memory-forensics                       → Memory Forensics
+  • memory-merger                          → Memory Merger
+  • memory-safety-patterns                 → Memory Safety Patterns
+  • opencontext                            → OpenContext Context Management (Persistent Memory)
+  • page-cro                               → Page Conversion Rate Optimization (CRO)
+  • performance-optimization               → Performance Optimization
+  • performance-profiling                  → Performance Profiling
+  • product-hunt-launch                    → Product Hunt launch optimization with specific specs, timing, and gall
+  ... and 7 more skills
+
+╔═ CONTENT-CREATION (15 skills) ═══╗
+  • competitor-alternatives                → When the user wants to create competitor comparison or alternative pag
+  • content-creator                        → Content Creator
+  • copywriting                            → Copywriting
+  • free-tool-strategy                     → Free Tool Strategy (Engineering as Marketing)
+  • linkedin-content                       → LinkedIn post writing with hook formulas, formatting rules, and engage
+  • linkedin-content                       → LinkedIn post writing with hook formulas, formatting rules, and engage
+  • n8n-code-python                        → Write Python code in n8n Code nodes. Use when writing Python in n8n, u
+  • plan-writing                           → Plan Writing
+  • postmortem-writing                     → Postmortem Writing
+  • programmatic-seo                       → Programmatic SEO
+  ... and 5 more skills
+
+╔═ MEDIA-GENERATION (7 skills) ═══╗
+  • image-manipulation-image-magick        → Image Manipulation with ImageMagick
+  • press-release-writing                  → Press release writing in AP style with inverted pyramid structure. Cov
+  • press-release-writing                  → Press release writing in AP style with inverted pyramid structure. Cov
+  • remotion                               → Stitch to Remotion Walkthrough Videos
+  • remotion-video-production              → Remotion Video Production
+  • transloadit-media-processing           → Transloadit Media Processing
+  • video-production                       → Remotion Video Production
+
+

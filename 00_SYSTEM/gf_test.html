@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRAPHFORGE - test_nightwatch</title>
+<style>
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{background:#0a0a0f;color:#eee;font-family:'Segoe UI',system-ui,sans-serif;overflow:hidden}}
+canvas{{display:block;cursor:grab}}
+canvas:active{{cursor:grabbing}}
+#hud{{position:fixed;top:12px;left:12px;z-index:10;pointer-events:none}}
+#hud h1{{font-size:16px;color:#0f8;text-transform:uppercase;letter-spacing:2px}}
+#hud .stat{{font-size:11px;color:#888;margin-top:2px}}
+#tooltip{{position:fixed;display:none;background:rgba(10,10,20,0.95);border:1px solid #0f8;
+  border-radius:6px;padding:10px 14px;font-size:12px;max-width:320px;z-index:20;
+  pointer-events:none;white-space:pre-wrap;line-height:1.5}}
+#search-box{{position:fixed;top:12px;right:12px;z-index:10}}
+#search-box input{{background:rgba(20,20,30,0.9);border:1px solid #333;color:#eee;
+  padding:6px 12px;border-radius:4px;font-size:13px;width:200px}}
+#legend{{position:fixed;bottom:12px;left:12px;z-index:10;font-size:11px;max-height:200px;overflow-y:auto}}
+.leg-item{{display:flex;align-items:center;gap:6px;margin:2px 0;opacity:0.8}}
+.leg-dot{{width:10px;height:10px;border-radius:50%;flex-shrink:0}}
+#controls{{position:fixed;bottom:12px;right:12px;z-index:10;font-size:11px;color:#666}}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud">
+  <h1>GRAPHFORGE</h1>
+  <div class="stat" id="stats">Loading...</div>
+</div>
+<div id="tooltip"></div>
+<div id="search-box"><input type="text" id="search" placeholder="Search nodes..." /></div>
+<div id="legend" id="legend-box"></div>
+<div id="controls">Scroll=Zoom | Drag=Pan | Click=Select | Dbl-click=Focus</div>
+<script>
+const DATA = {"nodes": [{"id": "table_alert_rules", "label": "alert_rules", "group": "table", "size": 4, "color": "#8844ff", "desc": "Table: alert_rules\nRows: 0\nColumns: id, name, pattern, pattern_type, severity, action, enabled, created_at"}, {"id": "table_change_events", "label": "change_events", "group": "table", "size": 12.528068170299473, "color": "#8844ff", "desc": "Table: change_events\nRows: 241\nColumns: id, filepath, event_type, old_hash, new_hash, old_size, new_size, size_delta"}, {"id": "table_events_fts", "label": "events_fts", "group": "table", "size": 12.528068170299473, "color": "#8844ff", "desc": "Table: events_fts\nRows: 241\nColumns: filepath, event_type, classification, details"}, {"id": "table_events_fts_config", "label": "events_fts_config", "group": "table", "size": 4, "color": "#8844ff", "desc": "Table: events_fts_config\nRows: 1\nColumns: k, v"}, {"id": "table_events_fts_data", "label": "events_fts_data", "group": "table", "size": 7.165570740632901, "color": "#8844ff", "desc": "Table: events_fts_data\nRows: 11\nColumns: id, block"}, {"id": "table_events_fts_docsize", "label": "events_fts_docsize", "group": "table", "size": 12.528068170299473, "color": "#8844ff", "desc": "Table: events_fts_docsize\nRows: 241\nColumns: id, sz"}, {"id": "table_events_fts_idx", "label": "events_fts_idx", "group": "table", "size": 6.816970037757299, "color": "#8844ff", "desc": "Table: events_fts_idx\nRows: 9\nColumns: segid, term, pgno"}, {"id": "table_file_snapshots", "label": "file_snapshots", "group": "table", "size": 12.528068170299473, "color": "#8844ff", "desc": "Table: file_snapshots\nRows: 241\nColumns: id, filepath, filename, directory, extension, size_bytes, sha256, modified_at"}, {"id": "table_watch_profiles", "label": "watch_profiles", "group": "table", "size": 4, "color": "#8844ff", "desc": "Table: watch_profiles\nRows: 0\nColumns: id, name, directories, extensions, exclude_patterns, recursive, hash_files, max_file_size_mb"}, {"id": "col_alert_rules_id", "label": "id", "group": "cols_alert_rules", "size": 6, "color": "#ffaa00", "desc": "Column: alert_rules.id\nType: INTEGER"}, {"id": "col_alert_rules_name", "label": "name", "group": "cols_alert_rules", "size": 4, "color": "#ffaa00", "desc": "Column: alert_rules.name\nType: TEXT"}, {"id": "col_alert_rules_pattern", "label": "pattern", "group": "cols_alert_rules", "size": 4, "color": "#ffaa00", "desc": "Column: alert_rules.pattern\nType: TEXT"}, {"id": "col_alert_rules_pattern_type", "label": "pattern_type", "group": "cols_alert_rules", "size": 4, "color": "#ffaa00", "desc": "Column: alert_rules.pattern_type\nType: TEXT"}, {"id": "col_alert_rules_severity", "label": "severity", "group": "cols_alert_rules", "size": 4, "color": "#ffaa00", "desc": "Column: alert_rules.severity\nType: TEXT"}, {"id": "col_alert_rules_action", "label": "action", "group": "cols_alert_rules", "size": 4, "color": "#ffaa00", "desc": "Column: alert_rules.action\nType: TEXT"}, {"id": "col_alert_rules_enabled", "label": "enabled", "group": "cols_alert_rules", "size": 4, "color": "#ffaa00", "desc": "Column: alert_rules.enabled\nType: INTEGER"}, {"id": "col_alert_rules_created_at", "label": "created_at", "group": "cols_alert_rules", "size": 4, "color": "#ffaa00", "desc": "Column: alert_rules.created_at\nType: TEXT"}, {"id": "col_change_events_id", "label": "id", "group": "cols_change_events", "size": 6, "color": "#ffaa00", "desc": "Column: change_events.id\nType: INTEGER"}, {"id": "col_change_events_filepath", "label": "filepath", "group": "cols_change_events", "size": 4, "color": "#ffaa00", "desc": "Column: change_events.filepath\nType: TEXT"}, {"id": "col_change_events_event_type", "label": "event_type", "group": "cols_change_events", "size": 4, "color": "#ffaa00", "desc": "Column: change_events.event_type\nType: TEXT"}, {"id": "col_change_events_old_hash", "label": "old_hash", "group": "cols_change_events", "size": 4, "color": "#ffaa00", "desc": "Column: change_events.old_hash\nType: TEXT"}, {"id": "col_change_events_new_hash", "label": "new_hash", "group": "cols_change_events", "size": 4, "color": "#ffaa00", "desc": "Column: change_events.new_hash\nType: TEXT"}, {"id": "col_change_events_old_size", "label": "old_size", "group": "cols_change_events", "size": 4, "color": "#ffaa00", "desc": "Column: change_events.old_size\nType: INTEGER"}, {"id": "col_change_events_new_size", "label": "new_size", "group": "cols_change_events", "size": 4, "color": "#ffaa00", "desc": "Column: change_events.new_size\nType: INTEGER"}, {"id": "col_change_events_size_delta", "label": "size_delta", "group": "cols_change_events", "size": 4, "color": "#ffaa00", "desc": "Column: change_events.size_delta\nType: INTEGER"}, {"id": "col_change_events_classification", "label": "classification", "group": "cols_change_events", "size": 4, "color": "#ffaa00", "desc": "Column: change_events.classification\nType: TEXT"}, {"id": "col_change_events_severity", "label": "severity", "group": "cols_change_events", "size": 4, "color": "#ffaa00", "desc": "Column: change_events.severity\nType: TEXT"}, {"id": "col_change_events_details", "label": "details", "group": "cols_change_events", "size": 4, "color": "#ffaa00", "desc": "Column: change_events.details\nType: TEXT"}, {"id": "col_change_events_detected_at", "label": "detected_at", "group": "cols_change_events", "size": 4, "color": "#ffaa00", "desc": "Column: change_events.detected_at\nType: TEXT"}, {"id": "col_change_events_profile_name", "label": "profile_name", "group": "cols_change_events", "size": 4, "color": "#ffaa00", "desc": "Column: change_events.profile_name\nType: TEXT"}, {"id": "col_events_fts_filepath", "label": "filepath", "group": "cols_events_fts", "size": 4, "color": "#4488ff", "desc": "Column: events_fts.filepath\nType: "}, {"id": "col_events_fts_event_type", "label": "event_type", "group": "cols_events_fts", "size": 4, "color": "#4488ff", "desc": "Column: events_fts.event_type\nType: "}, {"id": "col_events_fts_classification", "label": "classification", "group": "cols_events_fts", "size": 4, "color": "#4488ff", "desc": "Column: events_fts.classification\nType: "}, {"id": "col_events_fts_details", "label": "details", "group": "cols_events_fts", "size": 4, "color": "#4488ff", "desc": "Column: events_fts.details\nType: "}, {"id": "col_events_fts_config_k", "label": "k", "group": "cols_events_fts_config", "size": 6, "color": "#ff44ff", "desc": "Column: events_fts_config.k\nType: "}, {"id": "col_events_fts_config_v", "label": "v", "group": "cols_events_fts_config", "size": 4, "color": "#ff44ff", "desc": "Column: events_fts_config.v\nType: "}, {"id": "col_events_fts_data_id", "label": "id", "group": "cols_events_fts_data", "size": 6, "color": "#ff8844", "desc": "Column: events_fts_data.id\nType: INTEGER"}, {"id": "col_events_fts_data_block", "label": "block", "group": "cols_events_fts_data", "size": 4, "color": "#ff8844", "desc": "Column: events_fts_data.block\nType: BLOB"}, {"id": "col_events_fts_docsize_id", "label": "id", "group": "cols_events_fts_docsize", "size": 6, "color": "#ff8844", "desc": "Column: events_fts_docsize.id\nType: INTEGER"}, {"id": "col_events_fts_docsize_sz", "label": "sz", "group": "cols_events_fts_docsize", "size": 4, "color": "#ff8844", "desc": "Column: events_fts_docsize.sz\nType: BLOB"}, {"id": "col_events_fts_idx_segid", "label": "segid", "group": "cols_events_fts_idx", "size": 6, "color": "#88ff44", "desc": "Column: events_fts_idx.segid\nType: "}, {"id": "col_events_fts_idx_term", "label": "term", "group": "cols_events_fts_idx", "size": 6, "color": "#88ff44", "desc": "Column: events_fts_idx.term\nType: "}, {"id": "col_events_fts_idx_pgno", "label": "pgno", "group": "cols_events_fts_idx", "size": 4, "color": "#88ff44", "desc": "Column: events_fts_idx.pgno\nType: "}, {"id": "col_file_snapshots_id", "label": "id", "group": "cols_file_snapshots", "size": 6, "color": "#44ff88", "desc": "Column: file_snapshots.id\nType: INTEGER"}, {"id": "col_file_snapshots_filepath", "label": "filepath", "group": "cols_file_snapshots", "size": 4, "color": "#44ff88", "desc": "Column: file_snapshots.filepath\nType: TEXT"}, {"id": "col_file_snapshots_filename", "label": "filename", "group": "cols_file_snapshots", "size": 4, "color": "#44ff88", "desc": "Column: file_snapshots.filename\nType: TEXT"}, {"id": "col_file_snapshots_directory", "label": "directory", "group": "cols_file_snapshots", "size": 4, "color": "#44ff88", "desc": "Column: file_snapshots.directory\nType: TEXT"}, {"id": "col_file_snapshots_extension", "label": "extension", "group": "cols_file_snapshots", "size": 4, "color": "#44ff88", "desc": "Column: file_snapshots.extension\nType: TEXT"}, {"id": "col_file_snapshots_size_bytes", "label": "size_bytes", "group": "cols_file_snapshots", "size": 4, "color": "#44ff88", "desc": "Column: file_snapshots.size_bytes\nType: INTEGER"}, {"id": "col_file_snapshots_sha256", "label": "sha256", "group": "cols_file_snapshots", "size": 4, "color": "#44ff88", "desc": "Column: file_snapshots.sha256\nType: TEXT"}, {"id": "col_file_snapshots_modified_at", "label": "modified_at", "group": "cols_file_snapshots", "size": 4, "color": "#44ff88", "desc": "Column: file_snapshots.modified_at\nType: TEXT"}, {"id": "col_file_snapshots_created_at", "label": "created_at", "group": "cols_file_snapshots", "size": 4, "color": "#44ff88", "desc": "Column: file_snapshots.created_at\nType: TEXT"}, {"id": "col_file_snapshots_snapshot_time", "label": "snapshot_time", "group": "cols_file_snapshots", "size": 4, "color": "#44ff88", "desc": "Column: file_snapshots.snapshot_time\nType: TEXT"}, {"id": "col_file_snapshots_is_current", "label": "is_current", "group": "cols_file_snapshots", "size": 4, "color": "#44ff88", "desc": "Column: file_snapshots.is_current\nType: INTEGER"}, {"id": "col_watch_profiles_id", "label": "id", "group": "cols_watch_profiles", "size": 6, "color": "#4488ff", "desc": "Column: watch_profiles.id\nType: INTEGER"}, {"id": "col_watch_profiles_name", "label": "name", "group": "cols_watch_profiles", "size": 4, "color": "#4488ff", "desc": "Column: watch_profiles.name\nType: TEXT"}, {"id": "col_watch_profiles_directories", "label": "directories", "group": "cols_watch_profiles", "size": 4, "color": "#4488ff", "desc": "Column: watch_profiles.directories\nType: TEXT"}, {"id": "col_watch_profiles_extensions", "label": "extensions", "group": "cols_watch_profiles", "size": 4, "color": "#4488ff", "desc": "Column: watch_profiles.extensions\nType: TEXT"}, {"id": "col_watch_profiles_exclude_patterns", "label": "exclude_patterns", "group": "cols_watch_profiles", "size": 4, "color": "#4488ff", "desc": "Column: watch_profiles.exclude_patterns\nType: TEXT"}, {"id": "col_watch_profiles_recursive", "label": "recursive", "group": "cols_watch_profiles", "size": 4, "color": "#4488ff", "desc": "Column: watch_profiles.recursive\nType: INTEGER"}, {"id": "col_watch_profiles_hash_files", "label": "hash_files", "group": "cols_watch_profiles", "size": 4, "color": "#4488ff", "desc": "Column: watch_profiles.hash_files\nType: INTEGER"}, {"id": "col_watch_profiles_max_file_size_mb", "label": "max_file_size_mb", "group": "cols_watch_profiles", "size": 4, "color": "#4488ff", "desc": "Column: watch_profiles.max_file_size_mb\nType: INTEGER"}, {"id": "col_watch_profiles_created_at", "label": "created_at", "group": "cols_watch_profiles", "size": 4, "color": "#4488ff", "desc": "Column: watch_profiles.created_at\nType: TEXT"}], "links": [{"source": "table_alert_rules", "target": "col_alert_rules_id", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_alert_rules", "target": "col_alert_rules_name", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_alert_rules", "target": "col_alert_rules_pattern", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_alert_rules", "target": "col_alert_rules_pattern_type", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_alert_rules", "target": "col_alert_rules_severity", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_alert_rules", "target": "col_alert_rules_action", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_alert_rules", "target": "col_alert_rules_enabled", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_alert_rules", "target": "col_alert_rules_created_at", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_id", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_filepath", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_event_type", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_old_hash", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_new_hash", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_old_size", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_new_size", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_size_delta", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_classification", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_severity", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_details", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_detected_at", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_change_events", "target": "col_change_events_profile_name", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts", "target": "col_events_fts_filepath", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts", "target": "col_events_fts_event_type", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts", "target": "col_events_fts_classification", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts", "target": "col_events_fts_details", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts_config", "target": "col_events_fts_config_k", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts_config", "target": "col_events_fts_config_v", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts_data", "target": "col_events_fts_data_id", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts_data", "target": "col_events_fts_data_block", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts_docsize", "target": "col_events_fts_docsize_id", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts_docsize", "target": "col_events_fts_docsize_sz", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts_idx", "target": "col_events_fts_idx_segid", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts_idx", "target": "col_events_fts_idx_term", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_events_fts_idx", "target": "col_events_fts_idx_pgno", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_file_snapshots", "target": "col_file_snapshots_id", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_file_snapshots", "target": "col_file_snapshots_filepath", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_file_snapshots", "target": "col_file_snapshots_filename", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_file_snapshots", "target": "col_file_snapshots_directory", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_file_snapshots", "target": "col_file_snapshots_extension", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_file_snapshots", "target": "col_file_snapshots_size_bytes", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_file_snapshots", "target": "col_file_snapshots_sha256", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_file_snapshots", "target": "col_file_snapshots_modified_at", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_file_snapshots", "target": "col_file_snapshots_created_at", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_file_snapshots", "target": "col_file_snapshots_snapshot_time", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_file_snapshots", "target": "col_file_snapshots_is_current", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_watch_profiles", "target": "col_watch_profiles_id", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_watch_profiles", "target": "col_watch_profiles_name", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_watch_profiles", "target": "col_watch_profiles_directories", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_watch_profiles", "target": "col_watch_profiles_extensions", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_watch_profiles", "target": "col_watch_profiles_exclude_patterns", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_watch_profiles", "target": "col_watch_profiles_recursive", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_watch_profiles", "target": "col_watch_profiles_hash_files", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_watch_profiles", "target": "col_watch_profiles_max_file_size_mb", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_watch_profiles", "target": "col_watch_profiles_created_at", "type": "HAS_COLUMN", "color": "#ffffff22", "weight": 1}, {"source": "table_alert_rules", "target": "table_watch_profiles", "type": "SHARED_COLUMN", "color": "#4488ff44", "weight": 2}, {"source": "table_alert_rules", "target": "table_change_events", "type": "SHARED_COLUMN", "color": "#4488ff44", "weight": 2}, {"source": "table_change_events", "target": "table_events_fts", "type": "SHARED_COLUMN", "color": "#4488ff44", "weight": 2}, {"source": "table_change_events", "target": "table_file_snapshots", "type": "SHARED_COLUMN", "color": "#4488ff44", "weight": 2}, {"source": "table_events_fts", "target": "table_file_snapshots", "type": "SHARED_COLUMN", "color": "#4488ff44", "weight": 2}, {"source": "table_change_events", "target": "table_events_fts", "type": "SHARED_COLUMN", "color": "#4488ff44", "weight": 2}, {"source": "table_change_events", "target": "table_events_fts", "type": "SHARED_COLUMN", "color": "#4488ff44", "weight": 2}, {"source": "table_change_events", "target": "table_events_fts", "type": "SHARED_COLUMN", "color": "#4488ff44", "weight": 2}]};
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+const tooltip = document.getElementById('tooltip');
+const searchInput = document.getElementById('search');
+let W, H, dpr;
+let cx = 0, cy = 0, zoom = 1;
+let dragging = false, dragX = 0, dragY = 0;
+let hoveredNode = null, selectedNode = null;
+let searchTerm = '';
+let simRunning = true;
+
+function resize() {{
+  dpr = window.devicePixelRatio || 1;
+  W = window.innerWidth; H = window.innerHeight;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}}
+window.addEventListener('resize', resize);
+resize();
+
+// Initialize positions
+const nodes = DATA.nodes;
+const links = DATA.links;
+const nodeMap = {{}};
+nodes.forEach((n, i) => {{
+  n.x = W/2 + (Math.random() - 0.5) * Math.min(W, H) * 0.6;
+  n.y = H/2 + (Math.random() - 0.5) * Math.min(W, H) * 0.6;
+  n.vx = 0; n.vy = 0;
+  nodeMap[n.id] = n;
+}});
+
+// Resolve links
+links.forEach(l => {{
+  if (typeof l.source === 'string') l.sourceNode = nodeMap[l.source];
+  if (typeof l.target === 'string') l.targetNode = nodeMap[l.target];
+}});
+
+// Build legend
+const groups = [...new Set(nodes.map(n => n.group))].sort();
+const legend = document.getElementById('legend');
+groups.forEach(g => {{
+  const sample = nodes.find(n => n.group === g);
+  if (!sample) return;
+  const d = document.createElement('div');
+  d.className = 'leg-item';
+  d.innerHTML = `<span class="leg-dot" style="background:${{sample.color}}"></span>${{g}} (${{nodes.filter(n=>n.group===g).length}})`;
+  legend.appendChild(d);
+}});
+
+document.getElementById('stats').textContent = `${{nodes.length}} nodes | ${{links.length}} links`;
+
+// Force simulation
+function simulate() {{
+  if (!simRunning) return;
+  const alpha = 0.15;
+  // Repulsion
+  for (let i = 0; i < nodes.length; i++) {{
+    for (let j = i+1; j < nodes.length; j++) {{
+      let dx = nodes[j].x - nodes[i].x;
+      let dy = nodes[j].y - nodes[i].y;
+      let d2 = dx*dx + dy*dy + 1;
+      let f = -300 / d2;
+      let fx = dx * f * alpha;
+      let fy = dy * f * alpha;
+      nodes[i].vx -= fx; nodes[i].vy -= fy;
+      nodes[j].vx += fx; nodes[j].vy += fy;
+    }}
+  }}
+  // Attraction (links)
+  links.forEach(l => {{
+    if (!l.sourceNode || !l.targetNode) return;
+    let dx = l.targetNode.x - l.sourceNode.x;
+    let dy = l.targetNode.y - l.sourceNode.y;
+    let d = Math.sqrt(dx*dx + dy*dy) + 0.1;
+    let f = (d - 80) * 0.01 * alpha;
+    let fx = dx/d * f;
+    let fy = dy/d * f;
+    l.sourceNode.vx += fx; l.sourceNode.vy += fy;
+    l.targetNode.vx -= fx; l.targetNode.vy -= fy;
+  }});
+  // Center gravity
+  nodes.forEach(n => {{
+    n.vx += (W/2 - n.x) * 0.001 * alpha;
+    n.vy += (H/2 - n.y) * 0.001 * alpha;
+    n.vx *= 0.85; n.vy *= 0.85;
+    n.x += n.vx; n.y += n.vy;
+  }});
+}}
+
+function draw() {{
+  ctx.clearRect(0, 0, W, H);
+  ctx.save();
+  ctx.translate(cx, cy);
+  ctx.scale(zoom, zoom);
+
+  // Links
+  links.forEach(l => {{
+    if (!l.sourceNode || !l.targetNode) return;
+    ctx.beginPath();
+    ctx.moveTo(l.sourceNode.x, l.sourceNode.y);
+    ctx.lineTo(l.targetNode.x, l.targetNode.y);
+    ctx.strokeStyle = l.color || '#ffffff22';
+    ctx.lineWidth = (l.weight || 1) / zoom;
+    ctx.stroke();
+  }});
+
+  // Nodes
+  const st = searchTerm.toLowerCase();
+  nodes.forEach(n => {{
+    const match = !st || n.label.toLowerCase().includes(st) || (n.group||'').toLowerCase().includes(st);
+    const alpha = match ? 1 : 0.15;
+    const r = n.size / zoom;
+
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, Math.PI*2);
+    ctx.fillStyle = n.color || '#0f8';
+    ctx.globalAlpha = alpha;
+    ctx.fill();
+
+    if (n === hoveredNode || n === selectedNode) {{
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth = 2 / zoom;
+      ctx.stroke();
+    }}
+
+    // Label
+    if (zoom > 0.5 || n === hoveredNode || n === selectedNode) {{
+      ctx.font = `${{Math.max(9, 11/zoom)}}px 'Segoe UI',sans-serif`;
+      ctx.fillStyle = '#eee';
+      ctx.globalAlpha = alpha * 0.9;
+      ctx.fillText(n.label, n.x + r + 3, n.y + 3);
+    }}
+    ctx.globalAlpha = 1;
+  }});
+
+  ctx.restore();
+}}
+
+function getNodeAt(mx, my) {{
+  const sx = (mx - cx) / zoom;
+  const sy = (my - cy) / zoom;
+  for (let i = nodes.length - 1; i >= 0; i--) {{
+    const n = nodes[i];
+    const dx = sx - n.x, dy = sy - n.y;
+    if (dx*dx + dy*dy < (n.size/zoom + 4) ** 2) return n;
+  }}
+  return null;
+}}
+
+canvas.addEventListener('mousedown', e => {{ dragging = true; dragX = e.clientX; dragY = e.clientY; }});
+canvas.addEventListener('mouseup', () => {{ dragging = false; }});
+canvas.addEventListener('mousemove', e => {{
+  if (dragging) {{
+    cx += e.clientX - dragX; cy += e.clientY - dragY;
+    dragX = e.clientX; dragY = e.clientY;
+  }}
+  const n = getNodeAt(e.clientX, e.clientY);
+  hoveredNode = n;
+  if (n) {{
+    tooltip.style.display = 'block';
+    tooltip.style.left = (e.clientX + 12) + 'px';
+    tooltip.style.top = (e.clientY + 12) + 'px';
+    tooltip.textContent = n.desc || n.label;
+  }} else {{
+    tooltip.style.display = 'none';
+  }}
+}});
+canvas.addEventListener('click', e => {{
+  selectedNode = getNodeAt(e.clientX, e.clientY);
+}});
+canvas.addEventListener('dblclick', e => {{
+  const n = getNodeAt(e.clientX, e.clientY);
+  if (n) {{
+    cx = W/2 - n.x * zoom;
+    cy = H/2 - n.y * zoom;
+    zoom = Math.min(zoom * 1.5, 5);
+  }}
+}});
+canvas.addEventListener('wheel', e => {{
+  e.preventDefault();
+  const factor = e.deltaY > 0 ? 0.9 : 1.1;
+  const mx = e.clientX, my = e.clientY;
+  cx = mx - (mx - cx) * factor;
+  cy = my - (my - cy) * factor;
+  zoom *= factor;
+  zoom = Math.max(0.1, Math.min(10, zoom));
+}}, {{passive: false}});
+
+searchInput.addEventListener('input', e => {{ searchTerm = e.target.value; }});
+
+let frame = 0;
+function loop() {{
+  if (frame < 300) simulate();
+  else simRunning = false;
+  draw();
+  frame++;
+  requestAnimationFrame(loop);
+}}
+loop();
+</script>
+</body>
+</html>

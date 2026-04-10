@@ -121,6 +121,7 @@ EVOLVE_SCRIPT = REPO_ROOT / "scripts" / "brain_evolution.py"
 KRAKEN_SCRIPT = REPO_ROOT / "07_CODE" / "PROJECT_KRAKEN" / "kraken.py"
 FILING_SCRIPT = REPO_ROOT / "scripts" / "generate_filing.py"
 COURT_FEED_SCRIPT = REPO_ROOT / "scripts" / "court_feed.py"
+HARVEST_EXE = REPO_ROOT / "00_SYSTEM" / "engines" / "harvest_go" / "harvest.exe"
 DOSSIER_DIR = REPO_ROOT / "04_ANALYSIS" / "ADVERSARY_TRACKS"
 
 # ---------------------------------------------------------------------------
@@ -4513,7 +4514,55 @@ def main():
     parser.add_argument("--focus", default="all", help="KRAKEN focus mode (with --hunt)")
     parser.add_argument("--v15", action="store_true", help="Use V15 visualization (legacy)")
     parser.add_argument("--v7", action="store_true", default=True, help="Use V7 SELFEVOLVE visualization (default)")
+    parser.add_argument("--harvest", action="store_true", help="Run harvest.exe batch ingest before launch")
+    parser.add_argument("--harvest-status", action="store_true", help="Print harvest.exe status and exit")
+    parser.add_argument("--harvest-scan", nargs="*", metavar="DIR", help="Run harvest.exe scan on given dirs (default: C:\\ I:\\)")
     args = parser.parse_args()
+
+    # ------------------------------------------------------------------
+    # Harvest commands (run-and-exit, no GUI needed)
+    # ------------------------------------------------------------------
+    if args.harvest_status or args.harvest or args.harvest_scan is not None:
+        if not HARVEST_EXE.exists():
+            print(f"ERROR: harvest.exe not found at {HARVEST_EXE}")
+            sys.exit(1)
+        _harvest_db = str(LIT_DB)
+
+        if args.harvest_status:
+            print("[HARVEST] Querying status...")
+            result = subprocess.run(
+                [str(HARVEST_EXE), "-db", _harvest_db, "status"],
+                capture_output=True, text=True, timeout=60,
+            )
+            print(result.stdout)
+            if result.stderr:
+                print(result.stderr, file=sys.stderr)
+            sys.exit(result.returncode)
+
+        if args.harvest_scan is not None:
+            scan_dirs = args.harvest_scan if args.harvest_scan else [r"C:\\", r"I:\\"]
+            print(f"[HARVEST] Scanning dirs: {scan_dirs}")
+            result = subprocess.run(
+                [str(HARVEST_EXE), "-db", _harvest_db, "scan"] + scan_dirs,
+                capture_output=True, text=True, timeout=600,
+            )
+            print(result.stdout)
+            if result.stderr:
+                print(result.stderr, file=sys.stderr)
+            sys.exit(result.returncode)
+
+        if args.harvest:
+            print("[HARVEST] Running batch ingest (500 files, 10 min timeout)...")
+            result = subprocess.run(
+                [str(HARVEST_EXE), "-db", _harvest_db, "batch", "500"],
+                capture_output=True, text=True, timeout=600,
+            )
+            print(result.stdout)
+            if result.stderr:
+                print(result.stderr, file=sys.stderr)
+            if result.returncode != 0:
+                print(f"WARNING: harvest.exe exited with code {result.returncode}")
+            # Fall through to launch GUI after harvest
 
     try:
         import webview
