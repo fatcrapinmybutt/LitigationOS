@@ -1,0 +1,842 @@
+{
+  "system": "FRED PRIME Litigation OS",
+  "total_skills": 56,
+  "categories": [
+    "root",
+    "notices",
+    "press",
+    "timeline",
+    "cli",
+    "violations",
+    "binder",
+    "warboard",
+    "mifile",
+    "scheduling",
+    "contradictions",
+    "entity_trace",
+    "federal",
+    "src",
+    "gui",
+    "motions",
+    "foia",
+    "scripts",
+    "modules",
+    "scanner"
+  ],
+  "skills": {
+    "fts_cli.py": {
+      "name": "fts_cli",
+      "path": "fts_cli.py",
+      "category": "root",
+      "purpose": "Full-text search CLI",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "get_connection",
+          "init_db",
+          "add_record",
+          "search_records",
+          "main"
+        ]
+      }
+    },
+    "list_skills.py": {
+      "name": "list_skills",
+      "path": "list_skills.py",
+      "category": "root",
+      "purpose": "Module in root subsystem",
+      "docstring": "FRED PRIME Skill Registry & Capability Inventory\nLists all available skills, modules, and capabilities in the litigation system.",
+      "structure": {
+        "classes": [
+          "SkillDiscovery"
+        ],
+        "functions": [
+          "main",
+          "extract_docstring",
+          "extract_classes_and_functions",
+          "categorize_module",
+          "get_module_purpose",
+          "scan_repository",
+          "get_categories",
+          "print_skills",
+          "save_registry"
+        ]
+      }
+    },
+    "firstimport.py": {
+      "name": "firstimport",
+      "path": "firstimport.py",
+      "category": "root",
+      "purpose": "Module in root subsystem",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "safe_mkdir",
+          "sha256_obj",
+          "validate_paths",
+          "build_systemdef",
+          "write_systemdef_file"
+        ]
+      }
+    },
+    "litigation_core_engine_v_9999_full.py": {
+      "name": "litigation_core_engine_v_9999_full",
+      "path": "litigation_core_engine_v_9999_full.py",
+      "category": "root",
+      "purpose": "Full litigation core engine",
+      "docstring": null,
+      "structure": {
+        "classes": [
+          "GPTClient"
+        ],
+        "functions": [
+          "ensure_package",
+          "status_dashboard",
+          "scan_and_repair_modules",
+          "litigation_task",
+          "litigation_flow",
+          "compute_sha256",
+          "run_evidence_pipeline",
+          "draft"
+        ]
+      }
+    },
+    "EPOCH_UNPACKER_ENGINE_v1.py": {
+      "name": "EPOCH_UNPACKER_ENGINE_v1",
+      "path": "EPOCH_UNPACKER_ENGINE_v1.py",
+      "category": "root",
+      "purpose": "OCR, exhibit tagging, and audit trail",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "set_base_dir",
+          "sha256_hash",
+          "load_queue",
+          "save_queue",
+          "log_ocr",
+          "log_progress",
+          "run_canon_validator",
+          "log_canon",
+          "run_exhibit_classifier",
+          "log_exhibit",
+          "unpack_zip",
+          "process_next_file",
+          "run_gui",
+          "run_headless",
+          "parse_args",
+          "reset_logs",
+          "select_file",
+          "start_processing",
+          "run"
+        ]
+      }
+    },
+    "DOCUMENT_NEEDS_ENGINE_v9999.py": {
+      "name": "DOCUMENT_NEEDS_ENGINE_v9999",
+      "path": "DOCUMENT_NEEDS_ENGINE_v9999.py",
+      "category": "root",
+      "purpose": "Document needs analysis and generation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "evaluate_document_needs"
+        ]
+      }
+    },
+    "ZIP_VALIDATOR.py": {
+      "name": "ZIP_VALIDATOR",
+      "path": "ZIP_VALIDATOR.py",
+      "category": "root",
+      "purpose": "ZIP file validation and integrity checking",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "validate_zip_folder"
+        ]
+      }
+    },
+    "build_system.py": {
+      "name": "build_system",
+      "path": "build_system.py",
+      "category": "root",
+      "purpose": "Build system definition and manifest generation",
+      "docstring": "Build the FRED PRIME litigation system definition as JSON.",
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_json",
+          "parse_args",
+          "configure_logging",
+          "main"
+        ]
+      }
+    },
+    "LITIGATION_CORE_ENGINE_v9999 (1).py": {
+      "name": "LITIGATION_CORE_ENGINE_v9999 (1)",
+      "path": "LITIGATION_CORE_ENGINE_v9999 (1).py",
+      "category": "root",
+      "purpose": "Module in root subsystem",
+      "docstring": null
+    },
+    "litigation_os_generate_motion (1).py": {
+      "name": "litigation_os_generate_motion (1)",
+      "path": "litigation_os_generate_motion (1).py",
+      "category": "root",
+      "purpose": "Module in root subsystem",
+      "docstring": null
+    },
+    "judge_sim_ladas_hoopes_v1.py": {
+      "name": "judge_sim_ladas_hoopes_v1",
+      "path": "judge_sim_ladas_hoopes_v1.py",
+      "category": "root",
+      "purpose": "Judge behavior simulation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_prediction"
+        ]
+      }
+    },
+    "organize_drive.py": {
+      "name": "organize_drive",
+      "path": "organize_drive.py",
+      "category": "root",
+      "purpose": "Evidence intake, sorting, and organization",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "get_category",
+          "safe_move",
+          "move_file",
+          "remove_empty_dirs",
+          "organize_drive",
+          "parse_args",
+          "main"
+        ]
+      }
+    },
+    "codex_brain.py": {
+      "name": "codex_brain",
+      "path": "codex_brain.py",
+      "category": "root",
+      "purpose": "Core codex intelligence and coordination",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "hash_file",
+          "update_manifest",
+          "main"
+        ]
+      }
+    },
+    "LITIGATION_CORE_ENGINE_v9999.py": {
+      "name": "LITIGATION_CORE_ENGINE_v9999",
+      "path": "LITIGATION_CORE_ENGINE_v9999.py",
+      "category": "root",
+      "purpose": "Litigation core processing",
+      "docstring": null,
+      "structure": {
+        "classes": [
+          "GPTClient"
+        ],
+        "functions": [
+          "litigation_task",
+          "litigation_flow",
+          "compute_sha256",
+          "run_evidence_pipeline",
+          "draft"
+        ]
+      }
+    },
+    "tarball.py": {
+      "name": "tarball",
+      "path": "tarball.py",
+      "category": "root",
+      "purpose": "Archive creation and management",
+      "docstring": null
+    },
+    "gdrive_sync.py": {
+      "name": "gdrive_sync",
+      "path": "gdrive_sync.py",
+      "category": "root",
+      "purpose": "Google Drive synchronization",
+      "docstring": "Minimal helper for uploading files to Google Drive.",
+      "structure": {
+        "classes": [],
+        "functions": [
+          "upload_to_drive"
+        ]
+      }
+    },
+    "LITIGATION_CORE_ENGINE_v9999 (2).py": {
+      "name": "LITIGATION_CORE_ENGINE_v9999 (2)",
+      "path": "LITIGATION_CORE_ENGINE_v9999 (2).py",
+      "category": "root",
+      "purpose": "Module in root subsystem",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "apply_patch"
+        ]
+      }
+    },
+    "BINDER_BUILDER.py": {
+      "name": "BINDER_BUILDER",
+      "path": "BINDER_BUILDER.py",
+      "category": "root",
+      "purpose": "Legal binder assembly and generation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "generate_index"
+        ]
+      }
+    },
+    "MBP_Omnia_Engine.py": {
+      "name": "MBP_Omnia_Engine",
+      "path": "MBP_Omnia_Engine.py",
+      "category": "root",
+      "purpose": "Omnia engine for comprehensive processing",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "load_json",
+          "save_json",
+          "dispatch_task",
+          "is_valid_motion_type",
+          "scan_for_new_violations",
+          "background_loop"
+        ]
+      }
+    },
+    "codex_patch_manager.py": {
+      "name": "codex_patch_manager",
+      "path": "codex_patch_manager.py",
+      "category": "root",
+      "purpose": "System update and patch management",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "backup_file",
+          "apply_patch",
+          "log_patch"
+        ]
+      }
+    },
+    "FRED_Codex_Bootstrap.py": {
+      "name": "FRED_Codex_Bootstrap",
+      "path": "FRED_Codex_Bootstrap.py",
+      "category": "root",
+      "purpose": "Module in root subsystem",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "sha256sum",
+          "download_file",
+          "main"
+        ]
+      }
+    },
+    "Build_And_Upload_Master_Litigation_Pack_Z.py": {
+      "name": "Build_And_Upload_Master_Litigation_Pack_Z",
+      "path": "Build_And_Upload_Master_Litigation_Pack_Z.py",
+      "category": "root",
+      "purpose": "Module in root subsystem",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "setup_drive",
+          "prepare_files",
+          "upload_to_drive"
+        ]
+      }
+    },
+    "notices/notice_of_claim.py": {
+      "name": "notice_of_claim",
+      "path": "notices/notice_of_claim.py",
+      "category": "notices",
+      "purpose": "Notice of claim generation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_notice"
+        ]
+      }
+    },
+    "press/press_draft_engine.py": {
+      "name": "press_draft_engine",
+      "path": "press/press_draft_engine.py",
+      "category": "press",
+      "purpose": "Press release and media draft generation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_press_summary"
+        ]
+      }
+    },
+    "timeline/builder.py": {
+      "name": "builder",
+      "path": "timeline/builder.py",
+      "category": "timeline",
+      "purpose": "Timeline building and management",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_timeline"
+        ]
+      }
+    },
+    "timeline/fusion_engine.py": {
+      "name": "fusion_engine",
+      "path": "timeline/fusion_engine.py",
+      "category": "timeline",
+      "purpose": "Timeline fusion and synchronization",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "merge_events",
+          "write_svg",
+          "build_fusion_timeline"
+        ]
+      }
+    },
+    "cli/generate_manifest.py": {
+      "name": "generate_manifest",
+      "path": "cli/generate_manifest.py",
+      "category": "cli",
+      "purpose": "Module in cli subsystem",
+      "docstring": "CLI entrypoint for generating a manifest.",
+      "structure": {
+        "classes": [],
+        "functions": [
+          "main"
+        ]
+      }
+    },
+    "violations/misconduct_letter.py": {
+      "name": "misconduct_letter",
+      "path": "violations/misconduct_letter.py",
+      "category": "violations",
+      "purpose": "Judicial misconduct letter generation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "generate_letter"
+        ]
+      }
+    },
+    "binder/tab_forger.py": {
+      "name": "tab_forger",
+      "path": "binder/tab_forger.py",
+      "category": "binder",
+      "purpose": "Binder tab generation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "forge_tab"
+        ]
+      }
+    },
+    "warboard/ppo_warboard.py": {
+      "name": "ppo_warboard",
+      "path": "warboard/ppo_warboard.py",
+      "category": "warboard",
+      "purpose": "PPO case warboard",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_ppo_warboard"
+        ]
+      }
+    },
+    "warboard/svg_motion_binder.py": {
+      "name": "svg_motion_binder",
+      "path": "warboard/svg_motion_binder.py",
+      "category": "warboard",
+      "purpose": "SVG motion binder generation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "bind_motion_links"
+        ]
+      }
+    },
+    "warboard/svg_builder.py": {
+      "name": "svg_builder",
+      "path": "warboard/svg_builder.py",
+      "category": "warboard",
+      "purpose": "SVG visualization builder",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "generate_svg_warboard"
+        ]
+      }
+    },
+    "warboard/warboard_matrix_export.py": {
+      "name": "warboard_matrix_export",
+      "path": "warboard/warboard_matrix_export.py",
+      "category": "warboard",
+      "purpose": "Warboard matrix export",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_zip_bundle"
+        ]
+      }
+    },
+    "warboard/warboard_engine.py": {
+      "name": "warboard_engine",
+      "path": "warboard/warboard_engine.py",
+      "category": "warboard",
+      "purpose": "Litigation warboard visualization",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_warboard_docx",
+          "deploy_supra_warboard"
+        ]
+      }
+    },
+    "warboard/custody_interference_engine.py": {
+      "name": "custody_interference_engine",
+      "path": "warboard/custody_interference_engine.py",
+      "category": "warboard",
+      "purpose": "Custody interference tracking",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_custody_warboard"
+        ]
+      }
+    },
+    "mifile/stack_dispatcher.py": {
+      "name": "stack_dispatcher",
+      "path": "mifile/stack_dispatcher.py",
+      "category": "mifile",
+      "purpose": "Form stack dispatch management",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_bundle"
+        ]
+      }
+    },
+    "scheduling/scheduler.py": {
+      "name": "scheduler",
+      "path": "scheduling/scheduler.py",
+      "category": "scheduling",
+      "purpose": "Court date and deadline scheduling",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "load_events",
+          "export_ics",
+          "export_docx",
+          "build_schedule"
+        ]
+      }
+    },
+    "contradictions/contradiction_matrix.py": {
+      "name": "contradiction_matrix",
+      "path": "contradictions/contradiction_matrix.py",
+      "category": "contradictions",
+      "purpose": "Contradiction detection and analysis",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "detect_contradictions"
+        ]
+      }
+    },
+    "entity_trace/ai_entity_review.py": {
+      "name": "ai_entity_review",
+      "path": "entity_trace/ai_entity_review.py",
+      "category": "entity_trace",
+      "purpose": "AI-powered entity relationship analysis",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "generate_reports"
+        ]
+      }
+    },
+    "federal/complaint_generator.py": {
+      "name": "complaint_generator",
+      "path": "federal/complaint_generator.py",
+      "category": "federal",
+      "purpose": "Federal complaint generation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "generate_complaint"
+        ]
+      }
+    },
+    "src/env.py": {
+      "name": "env",
+      "path": "src/env.py",
+      "category": "src",
+      "purpose": "Module in src subsystem",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "run_migrations_offline",
+          "run_migrations_online"
+        ]
+      }
+    },
+    "gui/frontend.py": {
+      "name": "frontend",
+      "path": "gui/frontend.py",
+      "category": "gui",
+      "purpose": "GUI frontend interface",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "launch_dashboard",
+          "refresh_warboard",
+          "refresh_ppo",
+          "refresh_custody",
+          "refresh_schedule",
+          "refresh_suppression"
+        ]
+      }
+    },
+    "motions/protective_order.py": {
+      "name": "protective_order",
+      "path": "motions/protective_order.py",
+      "category": "motions",
+      "purpose": "Protective order motion generation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_protective_order"
+        ]
+      }
+    },
+    "motions/emergency_injunction.py": {
+      "name": "emergency_injunction",
+      "path": "motions/emergency_injunction.py",
+      "category": "motions",
+      "purpose": "Emergency injunction motion generation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "generate_motion"
+        ]
+      }
+    },
+    "foia/autopacker.py": {
+      "name": "autopacker",
+      "path": "foia/autopacker.py",
+      "category": "foia",
+      "purpose": "FOIA request autopacking",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_requests"
+        ]
+      }
+    },
+    "foia/video_request_builder.py": {
+      "name": "video_request_builder",
+      "path": "foia/video_request_builder.py",
+      "category": "foia",
+      "purpose": "Video evidence FOIA request builder",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "build_video_request"
+        ]
+      }
+    },
+    "scripts/generate_manifest.py": {
+      "name": "generate_manifest",
+      "path": "scripts/generate_manifest.py",
+      "category": "scripts",
+      "purpose": "Module in scripts subsystem",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "generate_manifest"
+        ]
+      }
+    },
+    "modules/benchbook_loader.py": {
+      "name": "benchbook_loader",
+      "path": "modules/benchbook_loader.py",
+      "category": "modules",
+      "purpose": "Michigan benchbook text extraction",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "load_benchbook_texts"
+        ]
+      }
+    },
+    "modules/codex_guardian.py": {
+      "name": "codex_guardian",
+      "path": "modules/codex_guardian.py",
+      "category": "modules",
+      "purpose": "System integrity and validation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "get_current_branch",
+          "get_last_commit_message",
+          "hash_file",
+          "load_manifest",
+          "verify_commit_message",
+          "verify_branch_name",
+          "verify_manifest_hashes",
+          "run_guardian"
+        ]
+      }
+    },
+    "modules/codex_supreme.py": {
+      "name": "codex_supreme",
+      "path": "modules/codex_supreme.py",
+      "category": "modules",
+      "purpose": "Supreme codex controller",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "sha256_file",
+          "log_event",
+          "save_state",
+          "load_state",
+          "self_diagnostic",
+          "forensic_integrity_check",
+          "timeline_event_matrix"
+        ]
+      }
+    },
+    "modules/codex_manifest.py": {
+      "name": "codex_manifest",
+      "path": "modules/codex_manifest.py",
+      "category": "modules",
+      "purpose": "Module manifest generation and validation",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "generate_manifest",
+          "save_manifest",
+          "verify_all_modules"
+        ]
+      }
+    },
+    "scanner/scan_engine.py": {
+      "name": "scan_engine",
+      "path": "scanner/scan_engine.py",
+      "category": "scanner",
+      "purpose": "Document scanning and intake",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "scan_directory",
+          "run_scan"
+        ]
+      }
+    },
+    "src/knowledge/models.py": {
+      "name": "models",
+      "path": "src/knowledge/models.py",
+      "category": "src",
+      "purpose": "Data models and schema definitions",
+      "docstring": null,
+      "structure": {
+        "classes": [
+          "Fact"
+        ],
+        "functions": []
+      }
+    },
+    "src/forms/models.py": {
+      "name": "models",
+      "path": "src/forms/models.py",
+      "category": "src",
+      "purpose": "Data models and schema definitions",
+      "docstring": null,
+      "structure": {
+        "classes": [
+          "Form"
+        ],
+        "functions": []
+      }
+    },
+    "src/versions/b978fb447583_initial.py": {
+      "name": "b978fb447583_initial",
+      "path": "src/versions/b978fb447583_initial.py",
+      "category": "src",
+      "purpose": "Module in src subsystem",
+      "docstring": "initial\n\nRevision ID: b978fb447583\nRevises: \nCreate Date: 2025-07-14 05:17:23.871785",
+      "structure": {
+        "classes": [],
+        "functions": [
+          "upgrade",
+          "downgrade"
+        ]
+      }
+    },
+    "gui/modules/entity_suppression_feed.py": {
+      "name": "entity_suppression_feed",
+      "path": "gui/modules/entity_suppression_feed.py",
+      "category": "gui",
+      "purpose": "Entity suppression tracking",
+      "docstring": null,
+      "structure": {
+        "classes": [],
+        "functions": [
+          "log_event",
+          "load_events"
+        ]
+      }
+    }
+  },
+  "generated_at": "/home/runner/work/the_manbearpig/the_manbearpig"
+}
