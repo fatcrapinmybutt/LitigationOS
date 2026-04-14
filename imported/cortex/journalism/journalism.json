@@ -1,0 +1,526 @@
+{
+  "domain": "Investigative Journalism & Media Intelligence",
+  "version": "1.0.0",
+  "description": "Domain pack for investigative journalists, newsrooms, and media researchers. Covers source verification, corporate ownership tracing, public records analysis, campaign finance mapping, leak analysis, and editorial security workflows.",
+  "author": "CORTEX Intelligence Platform",
+  "license": "MIT",
+  "homepage": "https://fatcrapinmybutt.github.io/cortex-site/",
+  "purchase": "https://andrewpioneer6.gumroad.com/l/cjamvzo",
+  "keywords": [
+    "investigative journalism",
+    "OSINT for journalists",
+    "source protection",
+    "corporate ownership",
+    "public records",
+    "campaign finance",
+    "media intelligence",
+    "data journalism",
+    "leak analysis",
+    "FOIA",
+    "follow the money",
+    "accountability journalism"
+  ],
+
+  "entities": [
+    {
+      "type": "Public Official",
+      "description": "Elected or appointed government official with public duties and financial disclosures",
+      "fields": ["name", "title", "office", "jurisdiction", "party", "term_start", "term_end", "committees", "financial_disclosure_url"],
+      "icon": "🏛️",
+      "color": "#1a5276"
+    },
+    {
+      "type": "Corporate Entity",
+      "description": "Registered business entity — corporation, LLC, LP, or partnership",
+      "fields": ["name", "entity_type", "state_of_incorporation", "registration_number", "status", "registered_agent", "principal_office", "date_formed", "annual_report_date"],
+      "icon": "🏢",
+      "color": "#2e86c1"
+    },
+    {
+      "type": "Shell Company",
+      "description": "Entity with minimal operations suspected of existing primarily to obscure ownership or move funds",
+      "fields": ["name", "jurisdiction", "registered_agent", "nominee_directors", "formation_date", "dissolution_date", "connected_entities", "suspicion_indicators"],
+      "icon": "🐚",
+      "color": "#7d3c98"
+    },
+    {
+      "type": "Campaign Donation",
+      "description": "Political contribution from individual, PAC, or organization to candidate or committee",
+      "fields": ["donor_name", "donor_type", "recipient", "amount", "date", "employer", "occupation", "fec_filing_id", "is_itemized", "bundler"],
+      "icon": "💰",
+      "color": "#28b463"
+    },
+    {
+      "type": "FOIA Request",
+      "description": "Freedom of Information Act request submitted to a government agency",
+      "fields": ["request_id", "agency", "date_submitted", "date_acknowledged", "date_responded", "status", "exemptions_claimed", "pages_released", "pages_withheld", "appeal_status", "fee_waiver"],
+      "icon": "📋",
+      "color": "#d4ac0d"
+    },
+    {
+      "type": "Confidential Source",
+      "description": "Anonymized source node — identity compartmented, corroboration tracked separately",
+      "fields": ["alias", "access_level", "domain_expertise", "reliability_rating", "first_contact", "last_contact", "claims_count", "corroborated_count", "handling_notes"],
+      "icon": "🕵️",
+      "color": "#616a6b"
+    },
+    {
+      "type": "Public Record",
+      "description": "Government record obtained through FOIA, sunshine law, or public access portal",
+      "fields": ["record_type", "issuing_agency", "date_issued", "date_obtained", "docket_number", "parties", "source_method", "file_path", "page_count", "bates_range"],
+      "icon": "📄",
+      "color": "#5d6d7e"
+    },
+    {
+      "type": "Published Report",
+      "description": "News article, broadcast segment, press release, or published analysis",
+      "fields": ["headline", "outlet", "byline", "date_published", "url", "sources_cited", "entities_mentioned", "claims_made", "corrections"],
+      "icon": "📰",
+      "color": "#1abc9c"
+    },
+    {
+      "type": "Financial Instrument",
+      "description": "Loan, bond, grant, government contract, or procurement award",
+      "fields": ["instrument_type", "amount", "issuer", "recipient", "date", "maturity_date", "contract_number", "procurement_method", "performance_status"],
+      "icon": "🏦",
+      "color": "#e67e22"
+    },
+    {
+      "type": "Property Record",
+      "description": "Real estate parcel with ownership, assessment, and transaction history",
+      "fields": ["parcel_id", "address", "owner_name", "owner_entity", "assessed_value", "last_sale_price", "last_sale_date", "tax_status", "liens", "zoning"],
+      "icon": "🏘️",
+      "color": "#a04000"
+    },
+    {
+      "type": "Court Case",
+      "description": "Lawsuit, regulatory action, or criminal proceeding in any jurisdiction",
+      "fields": ["case_number", "court", "jurisdiction", "case_type", "plaintiff", "defendant", "date_filed", "status", "judge", "key_filings", "outcome"],
+      "icon": "⚖️",
+      "color": "#6c3483"
+    },
+    {
+      "type": "Political Committee",
+      "description": "PAC, super PAC, 527 organization, 501(c)(4), or party committee",
+      "fields": ["name", "fec_id", "committee_type", "treasurer", "affiliated_candidate", "total_receipts", "total_disbursements", "cash_on_hand", "filing_frequency"],
+      "icon": "🗳️",
+      "color": "#c0392b"
+    },
+    {
+      "type": "Lobbyist",
+      "description": "Registered lobbyist or lobbying firm with client and issue disclosures",
+      "fields": ["name", "firm", "registration_id", "clients", "issues", "total_compensation", "government_contacts", "prior_government_service", "filing_dates"],
+      "icon": "🤝",
+      "color": "#f39c12"
+    },
+    {
+      "type": "Whistleblower",
+      "description": "Individual who has reported wrongdoing through official channels or to media — identity protection paramount",
+      "fields": ["alias", "reporting_channel", "agency_or_organization", "date_reported", "protection_status", "statutory_protection", "retaliation_claims", "corroboration_level"],
+      "icon": "🔔",
+      "color": "#e74c3c"
+    },
+    {
+      "type": "Government Contract",
+      "description": "Federal, state, or local procurement award with vendor and performance data",
+      "fields": ["contract_number", "awarding_agency", "vendor", "amount", "date_awarded", "date_completed", "contract_type", "competition_type", "set_aside", "performance_rating"],
+      "icon": "📑",
+      "color": "#2980b9"
+    },
+    {
+      "type": "Nonprofit Organization",
+      "description": "Tax-exempt entity with IRS Form 990 disclosure obligations",
+      "fields": ["name", "ein", "exemption_type", "total_revenue", "total_expenses", "executive_compensation", "program_spending_ratio", "state_registrations", "key_personnel"],
+      "icon": "🎗️",
+      "color": "#27ae60"
+    },
+    {
+      "type": "Regulatory Filing",
+      "description": "Filing with SEC, FCC, EPA, or other regulatory agency",
+      "fields": ["filing_type", "agency", "filer", "date_filed", "accession_number", "subject", "attachments", "public_comment_period", "disposition"],
+      "icon": "📊",
+      "color": "#8e44ad"
+    },
+    {
+      "type": "Digital Artifact",
+      "description": "Domain registration, social media account, email address, IP address, or other digital identifier",
+      "fields": ["artifact_type", "value", "registrant", "creation_date", "last_updated", "hosting_provider", "associated_entities", "whois_data", "screenshot_path"],
+      "icon": "🌐",
+      "color": "#17a589"
+    },
+    {
+      "type": "Document Leak",
+      "description": "Set of documents obtained through unauthorized disclosure — metadata and authentication tracked",
+      "fields": ["collection_name", "document_count", "date_range", "source_organization", "classification_level", "authentication_status", "chain_of_custody", "publication_status", "legal_review"],
+      "icon": "📂",
+      "color": "#d35400"
+    },
+    {
+      "type": "Interview Subject",
+      "description": "Person interviewed for the investigation — on or off record",
+      "fields": ["name", "role", "organization", "interview_date", "interview_type", "on_record", "key_claims", "documents_provided", "credibility_assessment", "follow_up_needed"],
+      "icon": "🎤",
+      "color": "#2c3e50"
+    },
+    {
+      "type": "Environmental Facility",
+      "description": "Regulated facility with environmental permits, violations, and inspection history",
+      "fields": ["facility_name", "epa_id", "address", "permit_types", "violations_count", "last_inspection", "enforcement_actions", "toxic_releases", "compliance_status"],
+      "icon": "🏭",
+      "color": "#7f8c8d"
+    },
+    {
+      "type": "Law Enforcement Entity",
+      "description": "Police department, sheriff's office, or federal law enforcement agency",
+      "fields": ["agency_name", "jurisdiction", "officers_count", "budget", "use_of_force_reports", "misconduct_complaints", "settlements_paid", "oversight_body", "data_transparency_score"],
+      "icon": "🚔",
+      "color": "#34495e"
+    },
+    {
+      "type": "Healthcare Provider",
+      "description": "Hospital, physician, pharmacy, or medical device company with payment and enforcement data",
+      "fields": ["name", "npi", "provider_type", "state", "open_payments_total", "cms_penalties", "fda_warning_letters", "exclusion_status", "ownership_type"],
+      "icon": "💊",
+      "color": "#e91e63"
+    },
+    {
+      "type": "Educational Institution",
+      "description": "University, school district, or educational entity with governance and financial data",
+      "fields": ["name", "institution_type", "state", "enrollment", "endowment", "title_ix_complaints", "accreditation_status", "federal_funding", "key_administrators"],
+      "icon": "🎓",
+      "color": "#ff9800"
+    },
+    {
+      "type": "Timeline Event",
+      "description": "Dated event in the investigation narrative with source attribution",
+      "fields": ["date", "description", "actors", "location", "source", "significance", "corroboration_status", "related_entities", "publication_ready"],
+      "icon": "📅",
+      "color": "#607d8b"
+    },
+    {
+      "type": "Beneficial Owner",
+      "description": "Natural person who ultimately owns or controls an entity, often hidden behind layers of corporate structure",
+      "fields": ["name", "nationality", "ownership_percentage", "control_mechanism", "entity_chain", "identification_method", "source_documents", "confidence_level"],
+      "icon": "👤",
+      "color": "#795548"
+    }
+  ],
+
+  "categories": [
+    {
+      "id": "corporate_malfeasance",
+      "name": "Corporate Malfeasance",
+      "description": "Fraud, embezzlement, securities violations, accounting manipulation, self-dealing",
+      "icon": "🔴",
+      "keywords": ["fraud", "embezzlement", "securities", "accounting", "insider trading", "self-dealing", "Ponzi", "wire fraud"]
+    },
+    {
+      "id": "political_corruption",
+      "name": "Political Corruption",
+      "description": "Bribery, pay-to-play, revolving door, conflicts of interest, abuse of office",
+      "icon": "🟠",
+      "keywords": ["bribery", "kickback", "pay-to-play", "conflict of interest", "revolving door", "nepotism", "quid pro quo"]
+    },
+    {
+      "id": "environmental_violation",
+      "name": "Environmental Violations",
+      "description": "EPA enforcement, pollution, toxic releases, permit violations, contamination",
+      "icon": "🟡",
+      "keywords": ["pollution", "contamination", "PFAS", "Superfund", "toxic", "Clean Water Act", "Clean Air Act", "EPA"]
+    },
+    {
+      "id": "human_rights",
+      "name": "Human Rights",
+      "description": "Detention conditions, use of force, discrimination, labor exploitation, trafficking",
+      "icon": "🟢",
+      "keywords": ["detention", "use of force", "discrimination", "trafficking", "forced labor", "civil rights", "asylum"]
+    },
+    {
+      "id": "campaign_finance",
+      "name": "Campaign Finance",
+      "description": "Dark money, straw donors, coordination violations, super PAC abuse, foreign contributions",
+      "icon": "🔵",
+      "keywords": ["dark money", "PAC", "super PAC", "straw donor", "bundling", "foreign money", "FEC", "coordination"]
+    },
+    {
+      "id": "healthcare_fraud",
+      "name": "Healthcare Fraud",
+      "description": "Medicare/Medicaid billing fraud, pharmaceutical kickbacks, clinical trial manipulation, opioid distribution",
+      "icon": "🟣",
+      "keywords": ["Medicare", "Medicaid", "kickback", "False Claims Act", "opioid", "pharmaceutical", "billing fraud"]
+    },
+    {
+      "id": "national_security",
+      "name": "National Security & Surveillance",
+      "description": "Surveillance programs, classification abuse, whistleblower retaliation, intelligence oversight failures",
+      "icon": "⚫",
+      "keywords": ["surveillance", "FISA", "classification", "whistleblower", "intelligence", "NSA", "oversight"]
+    },
+    {
+      "id": "consumer_protection",
+      "name": "Consumer Protection",
+      "description": "Product safety failures, deceptive practices, data breaches, privacy violations",
+      "icon": "🟤",
+      "keywords": ["product safety", "recall", "data breach", "privacy", "FTC", "deceptive practices", "CFPB"]
+    },
+    {
+      "id": "housing",
+      "name": "Housing & Real Estate",
+      "description": "Predatory lending, redlining, slumlord networks, code violations, gentrification displacement",
+      "icon": "🔶",
+      "keywords": ["predatory lending", "redlining", "eviction", "code violations", "slumlord", "HUD", "Fair Housing"]
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "description": "Title IX violations, endowment mismanagement, admissions fraud, research misconduct, campus safety",
+      "icon": "🔷",
+      "keywords": ["Title IX", "admissions", "endowment", "research misconduct", "Clery Act", "accreditation"]
+    },
+    {
+      "id": "law_enforcement",
+      "name": "Law Enforcement Accountability",
+      "description": "Use of force patterns, asset forfeiture, misconduct databases, qualified immunity, oversight failures",
+      "icon": "⬛",
+      "keywords": ["use of force", "police", "misconduct", "asset forfeiture", "qualified immunity", "body camera", "Brady list"]
+    },
+    {
+      "id": "labor",
+      "name": "Labor & Employment",
+      "description": "Wage theft, union busting, workplace safety violations, H-1B abuse, gig worker exploitation",
+      "icon": "🟥",
+      "keywords": ["wage theft", "OSHA", "union", "workplace safety", "H-1B", "gig economy", "misclassification"]
+    },
+    {
+      "id": "nonprofit",
+      "name": "Nonprofit & Charity Fraud",
+      "description": "Self-dealing, inflated overhead, donor deception, governance failures, Form 990 analysis",
+      "icon": "🟧",
+      "keywords": ["nonprofit", "charity", "Form 990", "self-dealing", "overhead", "governance", "executive compensation"]
+    },
+    {
+      "id": "technology_surveillance",
+      "name": "Technology & Surveillance",
+      "description": "Facial recognition, cell-site simulators, social media monitoring, AI bias, content moderation",
+      "icon": "🟨",
+      "keywords": ["facial recognition", "Stingray", "social media monitoring", "AI bias", "content moderation", "encryption"]
+    },
+    {
+      "id": "infrastructure_procurement",
+      "name": "Infrastructure & Procurement",
+      "description": "No-bid contracts, cost overruns, revolving-door consultants, infrastructure failures, PPP abuse",
+      "icon": "🟩",
+      "keywords": ["no-bid", "procurement", "cost overrun", "infrastructure", "PPP", "consultant", "sole source"]
+    },
+    {
+      "id": "media_freedom",
+      "name": "Media Freedom & Press Rights",
+      "description": "Reporter arrests, subpoenas for sources, SLAPP suits, prior restraint, press credential revocation",
+      "icon": "📢",
+      "keywords": ["press freedom", "reporter subpoena", "SLAPP", "prior restraint", "shield law", "source protection"]
+    }
+  ],
+
+  "authority_patterns": [
+    {
+      "id": "federal_foia",
+      "name": "Federal FOIA",
+      "citation": "5 U.S.C. § 552",
+      "description": "Freedom of Information Act — right to access federal agency records with 9 exemptions",
+      "deadlines": {"acknowledgment": "20 business days", "appeal": "90 days from denial"},
+      "key_exemptions": ["(b)(1) national security", "(b)(4) trade secrets", "(b)(5) deliberative process", "(b)(6) personal privacy", "(b)(7) law enforcement"]
+    },
+    {
+      "id": "state_sunshine",
+      "name": "State Sunshine / Open Records Laws",
+      "citation": "Varies by state",
+      "description": "State-level public records access statutes — deadlines and exemptions vary by jurisdiction",
+      "examples": ["Michigan FOIA: MCL 15.231", "California PRA: Gov. Code § 6250", "Texas PIA: Gov. Code Ch. 552", "New York FOIL: Public Officers Law Art. 6"]
+    },
+    {
+      "id": "sec_edgar",
+      "name": "SEC EDGAR Filings",
+      "citation": "Securities Exchange Act of 1934",
+      "description": "Mandatory corporate disclosures — 10-K annual reports, 10-Q quarterly, 8-K material events, proxy statements, insider trading forms",
+      "key_filings": ["10-K", "10-Q", "8-K", "DEF 14A", "Form 3", "Form 4", "Form 5", "13-F", "S-1"]
+    },
+    {
+      "id": "fec_filing",
+      "name": "FEC Campaign Finance Filings",
+      "citation": "Federal Election Campaign Act, 52 U.S.C. § 30101",
+      "description": "Campaign contribution and expenditure reports filed with Federal Election Commission",
+      "key_reports": ["Form 3 (candidate)", "Form 3X (PAC)", "Form 1 (registration)", "24/48-hour reports", "independent expenditure reports"]
+    },
+    {
+      "id": "open_payments",
+      "name": "Open Payments (Sunshine Act)",
+      "citation": "42 U.S.C. § 1320a-7h",
+      "description": "Physician Payment Sunshine Act — mandatory disclosure of payments from drug/device manufacturers to physicians",
+      "data_source": "https://openpaymentsdata.cms.gov"
+    },
+    {
+      "id": "corporate_transparency",
+      "name": "Corporate Transparency Act",
+      "citation": "31 U.S.C. § 5336",
+      "description": "Beneficial ownership reporting to FinCEN — identifies natural persons behind LLCs and corporations",
+      "effective_date": "2024-01-01"
+    },
+    {
+      "id": "pacer",
+      "name": "PACER Federal Court Records",
+      "citation": "E-Government Act of 2002",
+      "description": "Public Access to Court Electronic Records — federal court dockets, filings, and opinions",
+      "fee": "$0.10/page (capped at $3.00/document)"
+    },
+    {
+      "id": "usaspending",
+      "name": "USASpending Government Contracts",
+      "citation": "Federal Funding Accountability and Transparency Act",
+      "description": "Federal contract awards, grants, and financial assistance searchable by agency, vendor, and amount",
+      "data_source": "https://www.usaspending.gov"
+    },
+    {
+      "id": "epa_echo",
+      "name": "EPA ECHO Enforcement Data",
+      "citation": "Clean Air Act / Clean Water Act / RCRA",
+      "description": "EPA Enforcement and Compliance History Online — facility inspections, violations, and enforcement actions",
+      "data_source": "https://echo.epa.gov"
+    },
+    {
+      "id": "form_990",
+      "name": "IRS Form 990 Nonprofit Disclosures",
+      "citation": "26 U.S.C. § 6033",
+      "description": "Annual information returns for tax-exempt organizations — revenue, expenses, compensation, governance",
+      "data_sources": ["ProPublica Nonprofit Explorer", "GuideStar/Candid", "IRS EO BMF"]
+    },
+    {
+      "id": "lobbying_disclosure",
+      "name": "Lobbying Disclosure Act",
+      "citation": "2 U.S.C. § 1601",
+      "description": "Quarterly lobbying activity reports — clients, issues, government contacts, compensation",
+      "data_source": "https://lda.senate.gov"
+    },
+    {
+      "id": "reporter_privilege",
+      "name": "Reporter's Privilege / Shield Laws",
+      "citation": "Varies by state (no federal shield law)",
+      "description": "Statutory and common-law protections for journalists against compelled disclosure of confidential sources",
+      "coverage": "49 states + DC have some form of shield law or reporter's privilege"
+    }
+  ],
+
+  "focus_modes": [
+    {
+      "id": "corruption",
+      "name": "Political Corruption",
+      "description": "Optimize for tracing pay-to-play relationships, conflicts of interest, and abuse of public office",
+      "priority_entities": ["Public Official", "Campaign Donation", "Lobbyist", "Government Contract", "Political Committee"],
+      "priority_categories": ["political_corruption", "campaign_finance", "infrastructure_procurement"],
+      "priority_authorities": ["fec_filing", "lobbying_disclosure", "usaspending"]
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate Ownership & Fraud",
+      "description": "Optimize for tracing beneficial ownership chains, shell company structures, and corporate misconduct",
+      "priority_entities": ["Corporate Entity", "Shell Company", "Beneficial Owner", "Financial Instrument", "Regulatory Filing"],
+      "priority_categories": ["corporate_malfeasance", "nonprofit"],
+      "priority_authorities": ["sec_edgar", "corporate_transparency", "form_990"]
+    },
+    {
+      "id": "environment",
+      "name": "Environmental Investigation",
+      "description": "Optimize for tracing pollution, permit violations, enforcement actions, and contamination sites",
+      "priority_entities": ["Environmental Facility", "Corporate Entity", "Regulatory Filing", "Public Record", "Government Contract"],
+      "priority_categories": ["environmental_violation", "infrastructure_procurement"],
+      "priority_authorities": ["epa_echo", "federal_foia", "state_sunshine"]
+    },
+    {
+      "id": "politics",
+      "name": "Campaign Finance & Elections",
+      "description": "Optimize for tracing money in politics — donor networks, PAC flows, dark money, and coordination",
+      "priority_entities": ["Campaign Donation", "Political Committee", "Public Official", "Lobbyist", "Nonprofit Organization"],
+      "priority_categories": ["campaign_finance", "political_corruption"],
+      "priority_authorities": ["fec_filing", "lobbying_disclosure", "form_990"]
+    },
+    {
+      "id": "housing",
+      "name": "Housing & Real Estate",
+      "description": "Optimize for tracing property ownership, slumlord networks, code violations, and lending patterns",
+      "priority_entities": ["Property Record", "Corporate Entity", "Shell Company", "Court Case", "Beneficial Owner"],
+      "priority_categories": ["housing", "corporate_malfeasance"],
+      "priority_authorities": ["state_sunshine", "pacer", "corporate_transparency"]
+    },
+    {
+      "id": "lawenforcement",
+      "name": "Law Enforcement Accountability",
+      "description": "Optimize for tracing use-of-force patterns, misconduct, settlements, and oversight failures",
+      "priority_entities": ["Law Enforcement Entity", "Court Case", "Public Record", "Interview Subject", "Government Contract"],
+      "priority_categories": ["law_enforcement", "human_rights"],
+      "priority_authorities": ["federal_foia", "state_sunshine", "pacer"]
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare Fraud & Pharma",
+      "description": "Optimize for tracing pharmaceutical payments, billing fraud, and clinical trial manipulation",
+      "priority_entities": ["Healthcare Provider", "Corporate Entity", "Financial Instrument", "Regulatory Filing", "Court Case"],
+      "priority_categories": ["healthcare_fraud", "corporate_malfeasance"],
+      "priority_authorities": ["open_payments", "sec_edgar", "federal_foia"]
+    },
+    {
+      "id": "leaks",
+      "name": "Leak Analysis & Whistleblower",
+      "description": "Optimize for document authentication, metadata analysis, source protection, and publication chain tracking",
+      "priority_entities": ["Document Leak", "Confidential Source", "Whistleblower", "Timeline Event", "Digital Artifact"],
+      "priority_categories": ["national_security", "media_freedom"],
+      "priority_authorities": ["reporter_privilege", "federal_foia"]
+    }
+  ],
+
+  "relationship_types": [
+    {"id": "owns", "label": "Owns / Controls", "directed": true},
+    {"id": "funds", "label": "Funds / Donates To", "directed": true},
+    {"id": "employs", "label": "Employs", "directed": true},
+    {"id": "lobbies", "label": "Lobbies", "directed": true},
+    {"id": "regulates", "label": "Regulates", "directed": true},
+    {"id": "contracts_with", "label": "Contracts With", "directed": true},
+    {"id": "related_to", "label": "Related To (Family/Personal)", "directed": false},
+    {"id": "board_member", "label": "Board Member Of", "directed": true},
+    {"id": "formerly_employed", "label": "Formerly Employed By (Revolving Door)", "directed": true},
+    {"id": "co_invested", "label": "Co-Invested With", "directed": false},
+    {"id": "litigated_by", "label": "Sued By / Litigated", "directed": true},
+    {"id": "sources_to", "label": "Sources Information To", "directed": true},
+    {"id": "corroborates", "label": "Corroborates", "directed": true},
+    {"id": "contradicts", "label": "Contradicts", "directed": true},
+    {"id": "subsidiary_of", "label": "Subsidiary Of", "directed": true},
+    {"id": "nominee_for", "label": "Nominee Director For", "directed": true}
+  ],
+
+  "templates": {
+    "investigation_checklist": [
+      "Define the central question and scope",
+      "Identify key entities (people, companies, agencies)",
+      "Map known relationships and financial flows",
+      "Submit FOIA requests to relevant agencies",
+      "Pull SEC EDGAR filings for corporate entities",
+      "Search FEC data for campaign finance connections",
+      "Check PACER for related litigation",
+      "Search property records for real estate holdings",
+      "Interview on-record sources",
+      "Develop confidential source network (compartmented)",
+      "Build master timeline of events",
+      "Identify gaps and contradictions",
+      "Cross-reference all claims with documents",
+      "Red-team the story — what's the strongest counter-narrative?",
+      "Legal review before publication",
+      "Prepare for post-publication response"
+    ],
+    "source_reliability_scale": {
+      "A": "Completely reliable — established track record, documents corroborate",
+      "B": "Usually reliable — mostly corroborated, minor inconsistencies",
+      "C": "Fairly reliable — some corroboration, possible bias",
+      "D": "Not usually reliable — limited corroboration, known bias",
+      "E": "Unreliable — contradicted by evidence or known fabricator",
+      "F": "Cannot be judged — new source, insufficient basis for assessment"
+    }
+  }
+}
