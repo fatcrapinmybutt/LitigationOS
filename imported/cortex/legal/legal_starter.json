@@ -1,0 +1,121 @@
+{
+  "name": "Legal & Compliance Starter",
+  "version": "1.0.0",
+  "description": "Free starter pack for legal research, contract analysis, and regulatory compliance investigations",
+  "author": "CORTEX Intelligence Platform",
+  "license": "MIT",
+  "entities": {
+    "Contract_Clause": {
+      "patterns": ["(?i)\\b(indemnif(?:y|ication)|limitation of liability|force majeure|non-compete|confidentiality|termination clause|arbitration clause|governing law|warranty|representations?)\\b"],
+      "color": "#e74c3c",
+      "shape": "diamond"
+    },
+    "Legal_Citation": {
+      "patterns": ["\\b\\d+\\s+U\\.?S\\.?C\\.?\\s+\\d+", "\\b\\d+\\s+C\\.?F\\.?R\\.?\\s+\\d+", "\\b\\d+\\s+(?:F\\.?\\s*(?:Supp|3d|2d)|S\\.?\\s*Ct)"],
+      "color": "#3498db",
+      "shape": "hexagon"
+    },
+    "Regulation": {
+      "patterns": ["(?i)\\b(GDPR|CCPA|HIPAA|SOX|Dodd-Frank|ADA|FCPA|OSHA|SEC Rule|FTC Act|COPPA|FERPA|GLBA|PCI[- ]DSS)\\b"],
+      "color": "#2ecc71",
+      "shape": "square"
+    },
+    "Court": {
+      "patterns": ["(?i)\\b(Supreme Court|Circuit Court|District Court|Appellate Court|Court of Appeals|Bankruptcy Court|Tax Court|Federal Circuit)\\b"],
+      "color": "#9b59b6",
+      "shape": "triangle"
+    },
+    "Legal_Party": {
+      "patterns": ["(?i)\\b(plaintiff|defendant|respondent|petitioner|appellant|appellee|intervenor|amicus curiae|third[- ]party)\\b"],
+      "color": "#f39c12",
+      "shape": "circle"
+    },
+    "Legal_Action": {
+      "patterns": ["(?i)\\b(filed suit|motion to (?:dismiss|compel|suppress)|summary judgment|injunction|subpoena|deposition|discovery request|class action|settlement|verdict|appeal)\\b"],
+      "color": "#e67e22",
+      "shape": "star"
+    },
+    "Monetary_Amount": {
+      "patterns": ["\\$[\\d,]+(?:\\.\\d{2})?(?:\\s*(?:million|billion|thousand|M|B|K))?"],
+      "color": "#27ae60",
+      "shape": "circle"
+    },
+    "Date_Reference": {
+      "patterns": ["\\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\\s+\\d{1,2},?\\s+\\d{4}\\b", "\\b\\d{1,2}/\\d{1,2}/\\d{2,4}\\b"],
+      "color": "#95a5a6",
+      "shape": "circle"
+    }
+  },
+  "categories": {
+    "Contract_Analysis": {
+      "keywords": ["contract", "agreement", "clause", "party", "obligation", "breach", "termination", "amendment", "addendum"],
+      "description": "Contract terms, obligations, and analysis"
+    },
+    "Regulatory_Compliance": {
+      "keywords": ["compliance", "regulation", "regulatory", "audit", "violation", "penalty", "enforcement", "standard"],
+      "description": "Regulatory requirements and compliance status"
+    },
+    "Litigation": {
+      "keywords": ["lawsuit", "complaint", "motion", "hearing", "trial", "verdict", "appeal", "settlement", "damages"],
+      "description": "Active litigation matters and case tracking"
+    },
+    "Intellectual_Property": {
+      "keywords": ["patent", "trademark", "copyright", "trade secret", "infringement", "licensing", "royalty", "IP"],
+      "description": "Intellectual property rights and disputes"
+    },
+    "Corporate_Governance": {
+      "keywords": ["board", "director", "officer", "shareholder", "fiduciary", "bylaws", "resolution", "proxy"],
+      "description": "Corporate governance and management oversight"
+    },
+    "Risk_Assessment": {
+      "keywords": ["risk", "liability", "exposure", "mitigation", "insurance", "indemnity", "warranty", "guarantee"],
+      "description": "Legal risk identification and mitigation"
+    }
+  },
+  "authorities": {
+    "US_Code": {
+      "patterns": ["\\b\\d+\\s+U\\.?S\\.?C\\.?\\s+(?:Sec(?:tion|\\.)?\\s*)?\\d+"],
+      "description": "United States Code citations"
+    },
+    "CFR": {
+      "patterns": ["\\b\\d+\\s+C\\.?F\\.?R\\.?\\s+(?:Part\\s+)?\\d+"],
+      "description": "Code of Federal Regulations"
+    },
+    "Case_Law": {
+      "patterns": ["\\b\\d+\\s+(?:F\\.?\\d?d?|S\\.?\\s*Ct|U\\.?S\\.?)\\s+\\d+"],
+      "description": "Federal and state case law citations"
+    },
+    "Statute": {
+      "patterns": ["(?i)\\bPub(?:lic)?\\s*L(?:aw)?[\\s.]+\\d+-\\d+"],
+      "description": "Public law and statute references"
+    }
+  },
+  "focus_modes": {
+    "contract_review": {
+      "boost_keywords": ["contract", "clause", "obligation", "breach", "term", "condition", "warranty", "indemnify"],
+      "boost_entities": ["Contract_Clause", "Legal_Party", "Monetary_Amount"],
+      "multiplier": 2.0
+    },
+    "litigation_tracking": {
+      "boost_keywords": ["filed", "motion", "order", "judgment", "hearing", "trial", "appeal", "verdict"],
+      "boost_entities": ["Legal_Action", "Court", "Legal_Citation"],
+      "multiplier": 2.0
+    },
+    "compliance_audit": {
+      "boost_keywords": ["compliance", "regulation", "audit", "violation", "penalty", "standard", "requirement"],
+      "boost_entities": ["Regulation", "Legal_Citation"],
+      "multiplier": 2.0
+    },
+    "due_diligence": {
+      "boost_keywords": ["acquisition", "merger", "liability", "disclosure", "material", "risk", "financial"],
+      "boost_entities": ["Monetary_Amount", "Contract_Clause", "Legal_Party"],
+      "multiplier": 1.8
+    }
+  },
+  "scoring": {
+    "entity_weight": 3,
+    "category_weight": 2,
+    "authority_weight": 5,
+    "focus_weight": 4
+  }
+}
