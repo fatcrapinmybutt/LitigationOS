@@ -1,0 +1,112 @@
+{
+  "name": "Fraud Detection Starter",
+  "version": "1.0.0",
+  "description": "Free starter pack for fraud investigation, financial crime detection, and forensic accounting",
+  "author": "CORTEX Intelligence Platform",
+  "license": "MIT",
+  "entities": {
+    "Transaction": {
+      "patterns": ["(?i)\\b(wire transfer|ACH|payment|refund|chargeback|disbursement|deposit|withdrawal|remittance)\\b"],
+      "color": "#e74c3c",
+      "shape": "diamond"
+    },
+    "Financial_Amount": {
+      "patterns": ["\\$[\\d,]+(?:\\.\\d{2})?(?:\\s*(?:million|billion|thousand|M|B|K))?", "(?i)\\b\\d+(?:,\\d{3})*(?:\\.\\d{2})?\\s*(?:USD|EUR|GBP|BTC|ETH)\\b"],
+      "color": "#27ae60",
+      "shape": "circle"
+    },
+    "Account": {
+      "patterns": ["(?i)\\b(?:account|acct)[\\s#:]*\\d{4,}", "\\b\\d{4}[- ]?\\d{4}[- ]?\\d{4}[- ]?\\d{4}\\b"],
+      "color": "#3498db",
+      "shape": "hexagon"
+    },
+    "Entity_Name": {
+      "patterns": ["(?i)\\b(?:LLC|Inc|Corp|Ltd|LLP|PLC|GmbH|SA|AG)\\b"],
+      "color": "#9b59b6",
+      "shape": "square"
+    },
+    "Suspicious_Pattern": {
+      "patterns": ["(?i)\\b(structuring|smurfing|layering|round[- ]tripping|shell company|straw buyer|kickback|embezzlement|ponzi|pyramid scheme|invoice fraud|ghost employee)\\b"],
+      "color": "#e67e22",
+      "shape": "star"
+    },
+    "Jurisdiction": {
+      "patterns": ["(?i)\\b(offshore|Cayman Islands|British Virgin Islands|Panama|Liechtenstein|Luxembourg|Switzerland|Cyprus|Bermuda|Isle of Man|Jersey|Guernsey)\\b"],
+      "color": "#f39c12",
+      "shape": "triangle"
+    },
+    "Regulatory_Body": {
+      "patterns": ["(?i)\\b(FinCEN|SEC|FBI|DOJ|FCA|FINRA|OCC|CFPB|FATF|IRS|Europol|Interpol)\\b"],
+      "color": "#2ecc71",
+      "shape": "hexagon"
+    },
+    "SAR_CTR": {
+      "patterns": ["(?i)\\b(SAR|CTR|suspicious activity report|currency transaction report|STR)\\b"],
+      "color": "#c0392b",
+      "shape": "diamond"
+    }
+  },
+  "categories": {
+    "Money_Laundering": {
+      "keywords": ["laundering", "placement", "layering", "integration", "smurfing", "structuring", "shell company", "offshore"],
+      "description": "Money laundering indicators and typologies"
+    },
+    "Insurance_Fraud": {
+      "keywords": ["claim", "insurance", "premium", "staged", "arson", "phantom", "inflated", "false claim"],
+      "description": "Insurance fraud patterns and red flags"
+    },
+    "Identity_Fraud": {
+      "keywords": ["identity theft", "synthetic identity", "account takeover", "phishing", "social engineering", "impersonation"],
+      "description": "Identity-based fraud schemes"
+    },
+    "Financial_Crime": {
+      "keywords": ["embezzlement", "bribery", "corruption", "kickback", "insider trading", "market manipulation", "ponzi"],
+      "description": "General financial crime indicators"
+    },
+    "Tax_Fraud": {
+      "keywords": ["tax evasion", "unreported income", "phantom deduction", "offshore account", "transfer pricing", "tax shelter"],
+      "description": "Tax fraud and evasion schemes"
+    }
+  },
+  "authorities": {
+    "BSA_AML": {
+      "patterns": ["(?i)\\b(?:Bank Secrecy Act|BSA|Anti[- ]Money Laundering|AML|31 U\\.?S\\.?C)\\b"],
+      "description": "Bank Secrecy Act and AML regulations"
+    },
+    "FCPA": {
+      "patterns": ["(?i)\\b(?:Foreign Corrupt Practices Act|FCPA|15 U\\.?S\\.?C\\.?\\s*78dd)\\b"],
+      "description": "Foreign Corrupt Practices Act"
+    },
+    "Wire_Fraud": {
+      "patterns": ["(?i)\\b(?:18 U\\.?S\\.?C\\.?\\s*1343|wire fraud|mail fraud|18 U\\.?S\\.?C\\.?\\s*1341)\\b"],
+      "description": "Federal wire and mail fraud statutes"
+    },
+    "RICO": {
+      "patterns": ["(?i)\\b(?:RICO|Racketeer|18 U\\.?S\\.?C\\.?\\s*196[12])\\b"],
+      "description": "RICO statute references"
+    }
+  },
+  "focus_modes": {
+    "aml_investigation": {
+      "boost_keywords": ["laundering", "structuring", "smurfing", "shell", "offshore", "beneficial owner", "nominee"],
+      "boost_entities": ["Transaction", "Suspicious_Pattern", "Jurisdiction"],
+      "multiplier": 2.0
+    },
+    "insurance_fraud": {
+      "boost_keywords": ["claim", "policy", "premium", "staged", "inflated", "phantom", "arson"],
+      "boost_entities": ["Financial_Amount", "Entity_Name"],
+      "multiplier": 2.0
+    },
+    "forensic_accounting": {
+      "boost_keywords": ["embezzlement", "misappropriation", "ghost employee", "kickback", "journal entry", "reconciliation"],
+      "boost_entities": ["Account", "Financial_Amount", "Transaction"],
+      "multiplier": 1.8
+    }
+  },
+  "scoring": {
+    "entity_weight": 3,
+    "category_weight": 2,
+    "authority_weight": 5,
+    "focus_weight": 4
+  }
+}
