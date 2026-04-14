@@ -1,0 +1,219 @@
+name: Build, Validate, and Release MBP Litigation OS
+name: Codex Build
+
+on:
+  push:
+    branches:
+      - codex/**
+      - main
+      - master
+  pull_request:
+    branches:
+      - '*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.10, 3.11, 3.12]
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install black flake8 mypy
+
+      - name: Run Linters
+        run: |
+          black . --check
+          flake8 .
+          mypy --strict .
+
+      - name: Run Selftest
+        run: |
+          python tests/codex_selftest.py
+
+      - name: Validate Output
+        run: |
+          python scripts/codex_output_validator.py
+
+      - name: Output SHA-256 and Manifest
+        run: |
+          if [ -f codex_manifest.json ]; then
+            sha256sum codex_manifest.json
+          fi
+
+      - name: Check for Placeholders
+        run: |
+          grep -iE 'TODO|WIP|placeholder|temp_var' $(git ls-files '*.py' '*.md' '*.txt') && exit 1 || echo "No placeholders found."
+
+      - name: Build ZIP Artifact
+        run: |
+          zip -r litigation_bundle.zip output/ codex_manifest.json || echo "Nothing to zip."
+
+      - name: Compute ZIP SHA-256
+        run: |
+          if [ -f litigation_bundle.zip ]; then
+            sha256sum litigation_bundle.zip > litigation_bundle.zip.sha256
+            cat litigation_bundle.zip.sha256
+          fi
+
+      - name: Generate SLSA Provenance
+        if: ${{ always() && hashFiles('litigation_bundle.zip') != '' }}
+        uses: slsa-framework/slsa-github-generator@v2.0.0
+        with:
+          artifact_path: litigation_bundle.zip
+          upload-assets: true
+
+      - name: Create GitHub Release (if on main/master/codex)
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/heads/codex/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            litigation_bundle.zip
+            litigation_bundle.zip.sha256
+            litigation_bundle.zip.intoto.jsonl
+            codex_manifest.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Build Artifacts (Matrix)
+        uses: actions/upload-artifact@v4
+        with:
+          name: mbp-litigation-os-${{ matrix.python-version }}
+          path: |
+            litigation_bundle.zip
+            litigation_bundle.zip.sha256
+            litigation_bundle.zip.intoto.jsonl
+            codex_manifest.json
+            output/**
+      - main
+      - codex/**
+  pull_request:
+    branches:
+      - main
+      - codex/**
+
+jobs:
+  codex-check:
+    if: |
+      github.ref == 'refs/heads/main' ||
+      startsWith(github.ref, 'refs/heads/codex/')
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Detect Changed Files
+        id: changes
+        run: |
+          git fetch --depth=2 origin main || true
+          before=${{ github.event.before }}
+          after=${{ github.sha }}
+
+          if [ -z "$before" ]; then before=$(git rev-parse HEAD^1); fi
+
+          diff=$(git diff --name-only $before $after || echo '')
+          echo "$diff" > changed_files.txt
+          echo "Changed files:"
+          cat changed_files.txt
+
+          run_tests=false
+          while read -r f; do
+            if [[ "$f" =~ \.py$|\.ts$|\.js$|\.json$ ]]; then
+              run_tests=true
+              break
+            fi
+          done <<< "$diff"
+
+          branch_name="${GITHUB_REF##*/}"
+          for key in core engine matrix patch hotfix echelon; do
+            if [[ "$branch_name" == *"$key"* ]]; then
+              run_tests=true
+              break
+            fi
+          done
+
+          echo "run_tests=$run_tests" >> "$GITHUB_OUTPUT"
+
+      - name: Cache Python Dependencies
+        uses: actions/cache@v5
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install Dependencies
+        if: steps.changes.outputs.run_tests == 'true'
+        run: |
+          pip install -r requirements.txt
+          pip install black flake8 mypy pytest safety
+
+      - name: Lint Code
+        if: steps.changes.outputs.run_tests == 'true'
+        run: |
+          black --check . || exit 1
+          mypy --strict || exit 1
+          flake8 || exit 1
+
+      - name: Security Audit
+        if: steps.changes.outputs.run_tests == 'true'
+        run: |
+          safety check --full-report || true
+
+      - name: Update Codex Manifest
+        if: steps.changes.outputs.run_tests == 'true'
+        run: python codex_brain.py
+
+      - name: Run Selftests (if exists)
+        if: steps.changes.outputs.run_tests == 'true'
+        continue-on-error: true
+        run: |
+          if [ -f codex_selftest.py ]; then
+            python codex_selftest.py
+          else
+            echo "No codex_selftest.py found"
+          fi
+
+      - name: Run Integration Tests (if present)
+        if: steps.changes.outputs.run_tests == 'true'
+        continue-on-error: false
+        run: |
+          if [ -d integration_tests ]; then
+            pytest integration_tests
+          else
+            echo "No integration_tests/ found"
+          fi
+
+      - name: Run Global Pytest Suite
+        if: steps.changes.outputs.run_tests == 'true'
+        run: pytest
+
+      - name: Upload Changed Files Log
+        uses: actions/upload-artifact@v7
+        with:
+          name: changed-files
+          path: changed_files.txt

@@ -1,0 +1,28 @@
+[drives.evidence_primary]
+path = "F:/"
+role = "evidence"
+enabled = true
+
+[drives.code_keeper]
+path = "Z:/"
+role = "code"
+enabled = true
+
+[drives.test_scan]
+path = "D:/"
+role = "evidence"
+enabled = true
+
+[drives.optional_removable]
+path = "R:/"
+role = "evidence"
+enabled = false
+
+[drives.gdrive_mirror]
+path = "G:/My Drive/"
+role = "cloud_mirror"
+enabled = true
+
+[policy]
+deny_drives = ["C"]
+require_any = ["F", "Z"]
