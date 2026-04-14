@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fatcrapinmybutt.github.io/cortex-site/sitemap.xml
