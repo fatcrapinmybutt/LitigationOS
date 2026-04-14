@@ -1,0 +1,756 @@
+{
+  "$schema": "https://cortex-graph.dev/schemas/domain-pack-v2.json",
+  "id": "cortex-supply-chain",
+  "name": "CORTEX Supply Chain Intelligence",
+  "version": "1.0.0",
+  "description": "Supply chain risk monitoring, vendor assessment, sanctions screening, and logistics intelligence for knowledge graph analysis.",
+  "author": "Andrew Pioneer",
+  "license": "MIT",
+  "homepage": "https://fatcrapinmybutt.github.io/cortex-site/",
+  "purchase_url": "https://andrewpioneer6.gumroad.com/l/cjamvzo",
+  "domain": "supply-chain",
+  "tags": [
+    "supply-chain",
+    "risk-management",
+    "sanctions-screening",
+    "vendor-assessment",
+    "logistics-intelligence",
+    "procurement",
+    "compliance",
+    "osint",
+    "trade",
+    "cortex"
+  ],
+
+  "entity_types": {
+    "supplier": {
+      "label": "Supplier",
+      "description": "Tier 1-3 suppliers providing goods or services within the supply network",
+      "shape": "hexagon",
+      "color": "#4CAF50",
+      "icon": "factory",
+      "properties": ["name", "tier_level", "country", "risk_score", "revenue", "certifications", "lead_time_days", "payment_terms", "diversity_status"],
+      "patterns": [
+        "(?i)\\b(?:supplier|vendor|provider|source|subcontractor)\\b",
+        "(?i)\\btier[- ]?[123]\\b",
+        "(?i)\\b(?:sole[- ]source|single[- ]source|approved supplier)\\b"
+      ]
+    },
+    "manufacturer": {
+      "label": "Manufacturer",
+      "description": "Production facilities and contract manufacturers with capacity data",
+      "shape": "octagon",
+      "color": "#FF9800",
+      "icon": "precision_manufacturing",
+      "properties": ["name", "country", "facility_type", "capacity_units", "certifications", "lead_time", "quality_rating", "workforce_size"],
+      "patterns": [
+        "(?i)\\b(?:manufacturer|factory|plant|production facility|OEM|contract manufacturer|CMO|CDMO)\\b",
+        "(?i)\\b(?:assembly line|production line|fabrication)\\b"
+      ]
+    },
+    "distributor": {
+      "label": "Distributor",
+      "description": "Distribution network nodes handling product movement and regional fulfillment",
+      "shape": "diamond",
+      "color": "#2196F3",
+      "icon": "local_shipping",
+      "properties": ["name", "region", "channels", "warehouse_count", "delivery_sla", "coverage_area"],
+      "patterns": [
+        "(?i)\\b(?:distributor|wholesaler|reseller|channel partner|3PL|logistics provider)\\b",
+        "(?i)\\b(?:distribution center|DC|fulfillment center)\\b"
+      ]
+    },
+    "port": {
+      "label": "Port",
+      "description": "Maritime ports, terminals, and intermodal hubs",
+      "shape": "triangle",
+      "color": "#00BCD4",
+      "icon": "anchor",
+      "properties": ["name", "country", "port_code", "type", "capacity_teu", "congestion_index", "avg_dwell_time", "customs_clearance_time"],
+      "patterns": [
+        "(?i)\\b(?:port of|seaport|terminal|harbor|harbour|berth|anchorage)\\b",
+        "(?i)\\b(?:TEU|twenty-foot equivalent|container terminal)\\b",
+        "(?i)\\bUN/?LOCODE\\s*[A-Z]{2}[A-Z0-9]{3}\\b"
+      ]
+    },
+    "warehouse": {
+      "label": "Warehouse",
+      "description": "Storage, staging, and fulfillment facilities",
+      "shape": "square",
+      "color": "#795548",
+      "icon": "warehouse",
+      "properties": ["name", "location", "sqft", "type", "temperature_controlled", "bonded", "ftz_status", "throughput_units_day"],
+      "patterns": [
+        "(?i)\\b(?:warehouse|storage facility|depot|stockroom|bonded warehouse|FTZ|foreign trade zone)\\b",
+        "(?i)\\b(?:cold storage|frozen storage|ambient storage|cross-dock)\\b"
+      ]
+    },
+    "commodity": {
+      "label": "Commodity",
+      "description": "Raw materials, components, and traded goods",
+      "shape": "circle",
+      "color": "#FFC107",
+      "icon": "category",
+      "properties": ["name", "hs_code", "category", "unit_of_measure", "price_benchmark", "origin_countries", "critical_mineral", "conflict_mineral"],
+      "patterns": [
+        "(?i)\\b(?:commodity|raw material|component|feedstock|input material|precursor)\\b",
+        "(?i)\\b(?:rare earth|lithium|cobalt|palladium|tungsten|tantalum|tin|gold|3TG)\\b",
+        "(?i)\\bHS\\s*\\d{4,10}\\b"
+      ]
+    },
+    "trade_route": {
+      "label": "Trade Route",
+      "description": "Shipping lanes, corridors, and transportation routes",
+      "shape": "parallelogram",
+      "color": "#3F51B5",
+      "icon": "route",
+      "properties": ["name", "origin", "destination", "mode", "transit_days", "cost_per_unit", "risk_level", "chokepoints"],
+      "patterns": [
+        "(?i)\\b(?:trade route|shipping lane|corridor|transit route|supply corridor)\\b",
+        "(?i)\\b(?:Suez Canal|Panama Canal|Strait of Malacca|Strait of Hormuz|Cape of Good Hope|Bab el-Mandeb)\\b"
+      ]
+    },
+    "sanction_entity": {
+      "label": "Sanction Entity",
+      "description": "Entities on OFAC SDN, BIS Entity List, EU sanctions, or other denied party lists",
+      "shape": "star",
+      "color": "#F44336",
+      "icon": "block",
+      "properties": ["name", "list_source", "designation_date", "program", "sdn_type", "aliases", "addresses", "id_numbers"],
+      "patterns": [
+        "(?i)\\b(?:SDN|specially designated national|sanctioned entity|blocked person|denied party)\\b",
+        "(?i)\\b(?:OFAC|entity list|denied persons list|unverified list|military end.?user)\\b",
+        "(?i)\\b(?:EAR\\s*§?\\s*7[4-6]\\d)\\b"
+      ]
+    },
+    "contract": {
+      "label": "Contract",
+      "description": "Procurement agreements, purchase orders, and framework contracts",
+      "shape": "rectangle",
+      "color": "#607D8B",
+      "icon": "description",
+      "properties": ["contract_id", "type", "value", "currency", "start_date", "end_date", "renewal_terms", "penalties", "incoterms"],
+      "patterns": [
+        "(?i)\\b(?:contract|purchase order|PO|framework agreement|blanket order|MSA|master service agreement)\\b",
+        "(?i)\\b(?:Incoterms|FOB|CIF|DDP|EXW|FCA|DAP)\\b"
+      ]
+    },
+    "regulatory_body": {
+      "label": "Regulatory Body",
+      "description": "Government agencies, standards bodies, and regulatory authorities",
+      "shape": "pentagon",
+      "color": "#9C27B0",
+      "icon": "account_balance",
+      "properties": ["name", "jurisdiction", "authority_type", "website", "enforcement_actions"],
+      "patterns": [
+        "(?i)\\b(?:OFAC|BIS|CBP|FDA|USDA|EPA|OSHA|CPSC|FTC|SEC|DOJ)\\b",
+        "(?i)\\b(?:European Commission|DG Trade|BAFA|METI|customs authority)\\b"
+      ]
+    },
+    "country": {
+      "label": "Country",
+      "description": "Geopolitical risk zone with country-level risk scoring",
+      "shape": "hexagon",
+      "color": "#009688",
+      "icon": "public",
+      "properties": ["name", "iso_code", "region", "risk_tier", "sanctions_programs", "trade_agreements", "corruption_index", "political_stability_score"],
+      "patterns": [
+        "(?i)\\bcountry[- ]?(?:of origin|risk|exposure)\\b",
+        "(?i)\\b(?:embargo|embargoed country|high-risk jurisdiction|sanctioned country)\\b"
+      ]
+    },
+    "beneficial_owner": {
+      "label": "Beneficial Owner",
+      "description": "Ultimate beneficial owners and corporate ownership chains",
+      "shape": "circle",
+      "color": "#E91E63",
+      "icon": "person",
+      "properties": ["name", "nationality", "ownership_pct", "pep_status", "adverse_media", "sanctions_hit"],
+      "patterns": [
+        "(?i)\\b(?:beneficial owner|UBO|ultimate beneficial|controlling person|shareholder|stakeholder)\\b",
+        "(?i)\\b(?:PEP|politically exposed person|state-owned enterprise|SOE)\\b"
+      ]
+    },
+    "quality_event": {
+      "label": "Quality Event",
+      "description": "Defects, recalls, audit failures, and corrective actions",
+      "shape": "diamond",
+      "color": "#FF5722",
+      "icon": "report_problem",
+      "properties": ["event_id", "type", "severity", "root_cause", "affected_lots", "corrective_action", "capa_status", "cost_impact"],
+      "patterns": [
+        "(?i)\\b(?:quality event|defect|nonconformance|NCR|recall|audit finding|CAPA|corrective action)\\b",
+        "(?i)\\b(?:rejection|out.?of.?spec|OOS|deviation|complaint)\\b"
+      ]
+    },
+    "transaction": {
+      "label": "Transaction",
+      "description": "Financial flows, payments, and trade finance instruments",
+      "shape": "rectangle",
+      "color": "#4DB6AC",
+      "icon": "payments",
+      "properties": ["transaction_id", "type", "amount", "currency", "date", "counterparty", "payment_method", "lc_number"],
+      "patterns": [
+        "(?i)\\b(?:transaction|payment|wire transfer|letter of credit|L/?C|trade finance|invoice)\\b",
+        "(?i)\\b(?:SWIFT|MT103|MT700|documentary collection)\\b"
+      ]
+    },
+    "kpi_metric": {
+      "label": "KPI Metric",
+      "description": "Supply chain performance measurement and benchmarking nodes",
+      "shape": "circle",
+      "color": "#8BC34A",
+      "icon": "analytics",
+      "properties": ["metric_name", "value", "unit", "target", "trend", "period", "data_source"],
+      "patterns": [
+        "(?i)\\b(?:KPI|metric|SLA|OTD|on.?time delivery|fill rate|OTIF|perfect order)\\b",
+        "(?i)\\b(?:cycle time|lead time|inventory turns|days.?of.?supply|stockout rate)\\b"
+      ]
+    },
+    "freight_forwarder": {
+      "label": "Freight Forwarder",
+      "description": "Logistics intermediaries handling shipment coordination",
+      "shape": "diamond",
+      "color": "#5C6BC0",
+      "icon": "flight",
+      "properties": ["name", "modes", "regions", "fmc_license", "iata_code", "customs_broker_license", "c_tpat_status"],
+      "patterns": [
+        "(?i)\\b(?:freight forwarder|NVOCC|customs broker|shipping agent|logistics company|4PL)\\b",
+        "(?i)\\b(?:FMC license|IATA agent|customs brokerage)\\b"
+      ]
+    },
+    "customs_entry": {
+      "label": "Customs Entry",
+      "description": "Import/export declarations and customs filings",
+      "shape": "square",
+      "color": "#78909C",
+      "icon": "inventory",
+      "properties": ["entry_number", "entry_type", "port_of_entry", "hs_codes", "value", "duties_paid", "broker", "release_date"],
+      "patterns": [
+        "(?i)\\b(?:customs entry|entry summary|7501|import declaration|export declaration|AES|ABI)\\b",
+        "(?i)\\b(?:CF-?28|CF-?29|notice of action|rate advance|protest)\\b"
+      ]
+    },
+    "compliance_record": {
+      "label": "Compliance Record",
+      "description": "Certifications, audit results, and regulatory compliance artifacts",
+      "shape": "shield",
+      "color": "#66BB6A",
+      "icon": "verified",
+      "properties": ["record_id", "type", "standard", "status", "issue_date", "expiry_date", "auditor", "scope"],
+      "patterns": [
+        "(?i)\\b(?:ISO\\s*\\d{4,5}|SA8000|SMETA|BSCI|RBA|CTPAT|AEO|FSSC 22000)\\b",
+        "(?i)\\b(?:certification|audit report|compliance certificate|accreditation|registration)\\b"
+      ]
+    },
+    "disruption_event": {
+      "label": "Disruption Event",
+      "description": "Natural disasters, strikes, factory shutdowns, and force majeure events",
+      "shape": "burst",
+      "color": "#D32F2F",
+      "icon": "warning",
+      "properties": ["event_id", "type", "severity", "location", "start_date", "end_date", "affected_suppliers", "estimated_impact", "recovery_time"],
+      "patterns": [
+        "(?i)\\b(?:disruption|force majeure|natural disaster|earthquake|typhoon|flood|strike|lockout|shutdown|pandemic)\\b",
+        "(?i)\\b(?:port closure|border closure|embargo|export ban|raw material shortage)\\b"
+      ]
+    },
+    "esg_factor": {
+      "label": "ESG Factor",
+      "description": "Environmental, social, and governance risk signals across the supply chain",
+      "shape": "leaf",
+      "color": "#2E7D32",
+      "icon": "eco",
+      "properties": ["factor_type", "category", "severity", "source", "supplier_link", "remediation_status", "scope_category"],
+      "patterns": [
+        "(?i)\\b(?:ESG|environmental|social|governance|sustainability|carbon footprint|scope [123])\\b",
+        "(?i)\\b(?:child labor|forced labor|deforestation|water stress|biodiversity|human rights)\\b",
+        "(?i)\\b(?:GHG|greenhouse gas|CDP|SBTi|TCFD|GRI|SASB)\\b"
+      ]
+    },
+    "bill_of_lading": {
+      "label": "Bill of Lading",
+      "description": "Shipping documentation and transport evidence",
+      "shape": "rectangle",
+      "color": "#90A4AE",
+      "icon": "receipt_long",
+      "properties": ["bl_number", "type", "shipper", "consignee", "notify_party", "vessel", "voyage", "port_of_loading", "port_of_discharge", "containers"],
+      "patterns": [
+        "(?i)\\b(?:bill of lading|B/?L|waybill|AWB|air waybill|sea waybill|multimodal transport)\\b",
+        "(?i)\\b(?:SCAC code|booking number|container number|[A-Z]{4}\\d{7})\\b"
+      ]
+    },
+    "hs_code": {
+      "label": "HS Code",
+      "description": "Harmonized System tariff classification codes",
+      "shape": "tag",
+      "color": "#FFB74D",
+      "icon": "label",
+      "properties": ["code", "description", "chapter", "duty_rate", "fta_eligibility", "export_control_classification", "anti_dumping_order"],
+      "patterns": [
+        "(?i)\\bH\\.?S\\.?\\s*(?:code|tariff)?\\s*\\d{4,10}\\b",
+        "(?i)\\bHTS(?:US)?\\s*\\d{4,10}\\b",
+        "(?i)\\b(?:tariff classification|Schedule B|ECCN)\\b"
+      ]
+    },
+    "insurance_policy": {
+      "label": "Insurance Policy",
+      "description": "Cargo, marine, liability, and trade credit insurance coverage",
+      "shape": "shield",
+      "color": "#AB47BC",
+      "icon": "shield",
+      "properties": ["policy_number", "type", "carrier", "coverage_amount", "deductible", "effective_date", "expiry_date", "perils_covered"],
+      "patterns": [
+        "(?i)\\b(?:cargo insurance|marine insurance|trade credit insurance|product liability|CGL|inland marine)\\b",
+        "(?i)\\b(?:certificate of insurance|COI|Institute Cargo Clauses|war risk)\\b"
+      ]
+    },
+    "raw_material": {
+      "label": "Raw Material",
+      "description": "Upstream material inputs, critical minerals, and feedstock",
+      "shape": "cylinder",
+      "color": "#A1887F",
+      "icon": "science",
+      "properties": ["name", "type", "origin_country", "criticality", "price_volatility", "substitutability", "recycled_content_pct"],
+      "patterns": [
+        "(?i)\\b(?:raw material|critical mineral|strategic material|feedstock|precursor chemical)\\b",
+        "(?i)\\b(?:lithium|cobalt|nickel|copper|aluminum|steel|semiconductor|chip|wafer)\\b"
+      ]
+    },
+    "iot_sensor": {
+      "label": "IoT Sensor",
+      "description": "Real-time tracking and monitoring telemetry from supply chain assets",
+      "shape": "dot",
+      "color": "#26C6DA",
+      "icon": "sensors",
+      "properties": ["sensor_id", "type", "location", "asset_linked", "last_reading", "alert_threshold", "battery_level"],
+      "patterns": [
+        "(?i)\\b(?:IoT|sensor|GPS tracker|temperature logger|humidity monitor|shock sensor|geofence)\\b",
+        "(?i)\\b(?:RFID|NFC|BLE beacon|LoRaWAN|cellular tracker)\\b"
+      ]
+    }
+  },
+
+  "categories": [
+    {
+      "id": "logistics",
+      "label": "Logistics & Transportation",
+      "description": "Port congestion, route optimization, carrier performance, lead time analysis",
+      "color": "#2196F3",
+      "keywords": ["shipping", "freight", "carrier", "transit", "drayage", "intermodal", "last mile"]
+    },
+    {
+      "id": "compliance",
+      "label": "Regulatory Compliance",
+      "description": "Export controls, sanctions adherence, customs compliance, trade regulations",
+      "color": "#9C27B0",
+      "keywords": ["regulation", "compliance", "audit", "certification", "license", "permit"]
+    },
+    {
+      "id": "risk_assessment",
+      "label": "Risk Assessment",
+      "description": "Supplier financial health, geopolitical exposure, concentration risk, single-source dependency",
+      "color": "#F44336",
+      "keywords": ["risk", "exposure", "vulnerability", "concentration", "dependency", "single source"]
+    },
+    {
+      "id": "procurement",
+      "label": "Procurement & Sourcing",
+      "description": "Vendor evaluation, contract lifecycle, spend analytics, category management",
+      "color": "#4CAF50",
+      "keywords": ["procurement", "sourcing", "RFP", "RFQ", "bid", "tender", "spend", "category"]
+    },
+    {
+      "id": "quality",
+      "label": "Quality Management",
+      "description": "Defect tracking, audit trails, CAPA, incoming inspection, supplier quality",
+      "color": "#FF5722",
+      "keywords": ["quality", "defect", "inspection", "CAPA", "nonconformance", "recall", "audit"]
+    },
+    {
+      "id": "trade_finance",
+      "label": "Trade Finance",
+      "description": "Letters of credit, payment terms, currency exposure, trade settlement",
+      "color": "#00BCD4",
+      "keywords": ["letter of credit", "payment", "wire", "SWIFT", "trade finance", "factoring"]
+    },
+    {
+      "id": "customs_trade",
+      "label": "Customs & Trade",
+      "description": "Tariff classification, duty optimization, FTZ, rules of origin, trade agreements",
+      "color": "#795548",
+      "keywords": ["customs", "tariff", "duty", "HTS", "FTZ", "origin", "USMCA", "FTA"]
+    },
+    {
+      "id": "inventory",
+      "label": "Inventory Intelligence",
+      "description": "Safety stock optimization, demand sensing, obsolescence risk, bullwhip detection",
+      "color": "#FF9800",
+      "keywords": ["inventory", "stock", "safety stock", "reorder", "demand", "forecast", "bullwhip"]
+    },
+    {
+      "id": "sustainability",
+      "label": "Sustainability & ESG",
+      "description": "Carbon footprint mapping, labor practices, conflict minerals, Scope 3 emissions",
+      "color": "#2E7D32",
+      "keywords": ["ESG", "sustainability", "carbon", "emissions", "scope 3", "labor", "conflict mineral"]
+    },
+    {
+      "id": "geopolitical",
+      "label": "Geopolitical Risk",
+      "description": "Country risk scoring, regime change, trade war impact, sanctions regimes",
+      "color": "#D32F2F",
+      "keywords": ["geopolitical", "country risk", "sanctions", "embargo", "trade war", "regime"]
+    },
+    {
+      "id": "sanctions_screening",
+      "label": "Sanctions & Screening",
+      "description": "OFAC SDN matching, EU consolidated list, BIS entity list, denied party screening",
+      "color": "#B71C1C",
+      "keywords": ["OFAC", "SDN", "sanctions", "denied party", "screening", "watchlist", "BIS"]
+    },
+    {
+      "id": "transportation",
+      "label": "Transportation Management",
+      "description": "Carrier performance, mode optimization, cost modeling, fleet management",
+      "color": "#3F51B5",
+      "keywords": ["carrier", "trucking", "ocean", "air freight", "rail", "mode", "fleet"]
+    },
+    {
+      "id": "supplier_development",
+      "label": "Supplier Development",
+      "description": "Capacity building, dual-sourcing strategy, supplier diversity, performance improvement",
+      "color": "#009688",
+      "keywords": ["supplier development", "capacity", "dual source", "second source", "diversity", "MWBE"]
+    },
+    {
+      "id": "demand_planning",
+      "label": "Demand Planning",
+      "description": "Forecast accuracy, demand shaping, seasonal patterns, consumption analytics",
+      "color": "#8BC34A",
+      "keywords": ["demand", "forecast", "planning", "S&OP", "seasonal", "consumption", "allocation"]
+    },
+    {
+      "id": "resilience",
+      "label": "Resilience Planning",
+      "description": "Scenario modeling, stress testing, business continuity, recovery playbooks",
+      "color": "#E91E63",
+      "keywords": ["resilience", "continuity", "BCP", "scenario", "stress test", "recovery", "redundancy"]
+    }
+  ],
+
+  "authority_patterns": [
+    {
+      "id": "ofac",
+      "label": "OFAC Sanctions",
+      "description": "Office of Foreign Assets Control — SDN List, Sectoral Sanctions, country programs",
+      "patterns": [
+        "(?i)\\bOFAC\\b",
+        "(?i)\\bSDN\\s*(?:list)?\\b",
+        "(?i)\\b(?:specially designated national|blocked person|sectoral sanctions)\\b",
+        "(?i)\\b31\\s*C\\.?F\\.?R\\.?\\s*Part\\s*5(?:01|10|15|37|38|42|44|46|48|60|61|76|88|89|90)\\b",
+        "(?i)\\bExecutive\\s+Order\\s+1(?:3224|3382|3599|3662|3694|3722|13846|14024)\\b"
+      ],
+      "jurisdiction": "United States",
+      "authority_type": "sanctions"
+    },
+    {
+      "id": "bis_export",
+      "label": "BIS Export Controls",
+      "description": "Bureau of Industry and Security — Entity List, EAR, export licensing",
+      "patterns": [
+        "(?i)\\bBIS\\b(?!.*\\bbasis\\b)",
+        "(?i)\\bEntity\\s+List\\b",
+        "(?i)\\b(?:EAR|Export Administration Regulations)\\b",
+        "(?i)\\bECCN\\s*[0-9][A-E]\\d{3}\\b",
+        "(?i)\\b15\\s*C\\.?F\\.?R\\.?\\s*Parts?\\s*7(?:30|32|34|36|38|40|42|44|46|48|50|52|54|56|58|62|64|66|68|72|74)\\b",
+        "(?i)\\b(?:denied persons list|unverified list|military end.?user list)\\b"
+      ],
+      "jurisdiction": "United States",
+      "authority_type": "export_control"
+    },
+    {
+      "id": "cbp_customs",
+      "label": "CBP Customs Regulations",
+      "description": "Customs and Border Protection — import requirements, duties, forced labor (UFLPA)",
+      "patterns": [
+        "(?i)\\bCBP\\b",
+        "(?i)\\b19\\s*C\\.?F\\.?R\\.?\\b",
+        "(?i)\\b(?:UFLPA|Uyghur Forced Labor Prevention Act)\\b",
+        "(?i)\\b(?:withhold release order|WRO|finding of forced labor)\\b",
+        "(?i)\\b(?:AD/?CVD|antidumping|countervailing duty)\\b",
+        "(?i)\\b(?:Section 301|Section 201|Section 232)\\s*(?:tariff|duty|action)\\b"
+      ],
+      "jurisdiction": "United States",
+      "authority_type": "customs"
+    },
+    {
+      "id": "iso_standards",
+      "label": "ISO Standards",
+      "description": "International Organization for Standardization quality and management systems",
+      "patterns": [
+        "(?i)\\bISO\\s*(?:9001|14001|45001|22000|28000|27001|31000|20400|50001|13485|17025)\\b",
+        "(?i)\\b(?:IATF 16949|AS9100|FSSC 22000|SA8000)\\b"
+      ],
+      "jurisdiction": "International",
+      "authority_type": "standard"
+    },
+    {
+      "id": "fcpa_bribery",
+      "label": "FCPA & Anti-Corruption",
+      "description": "Foreign Corrupt Practices Act, UK Bribery Act — anti-corruption compliance",
+      "patterns": [
+        "(?i)\\bFCPA\\b",
+        "(?i)\\b(?:Foreign Corrupt Practices Act)\\b",
+        "(?i)\\b(?:UK Bribery Act|Bribery Act 2010)\\b",
+        "(?i)\\b(?:facilitation payment|grease payment|PEP screening|anti.?bribery)\\b"
+      ],
+      "jurisdiction": "International",
+      "authority_type": "anti_corruption"
+    },
+    {
+      "id": "conflict_minerals",
+      "label": "Conflict Minerals",
+      "description": "Dodd-Frank Section 1502, EU Conflict Minerals Regulation — 3TG due diligence",
+      "patterns": [
+        "(?i)\\b(?:conflict minerals?|3TG|tin|tantalum|tungsten|gold)\\b(?=.*(?:due diligence|conflict|DRC|Congo))",
+        "(?i)\\bDodd.?Frank\\s*(?:Section|§)?\\s*1502\\b",
+        "(?i)\\b(?:EU (?:Conflict )?Minerals? Regulation|Regulation \\(EU\\) 2017/821)\\b",
+        "(?i)\\b(?:CMRT|Conflict Minerals Reporting Template|RMI|Responsible Minerals Initiative)\\b"
+      ],
+      "jurisdiction": "International",
+      "authority_type": "due_diligence"
+    },
+    {
+      "id": "trade_agreements",
+      "label": "Trade Agreements",
+      "description": "USMCA, EU FTAs, CPTPP — rules of origin, preferential tariff treatment",
+      "patterns": [
+        "(?i)\\b(?:USMCA|NAFTA|CPTPP|TPP|RCEP|CETA|EVFTA)\\b",
+        "(?i)\\b(?:rules? of origin|certificate of origin|preferential tariff|GSP)\\b",
+        "(?i)\\b(?:regional value content|tariff shift|change in tariff classification)\\b"
+      ],
+      "jurisdiction": "International",
+      "authority_type": "trade_agreement"
+    },
+    {
+      "id": "ctpat_aeo",
+      "label": "CTPAT / AEO Programs",
+      "description": "Customs-Trade Partnership Against Terrorism, Authorized Economic Operator",
+      "patterns": [
+        "(?i)\\b(?:C-?TPAT|Customs.?Trade Partnership)\\b",
+        "(?i)\\b(?:AEO|Authorized Economic Operator)\\b",
+        "(?i)\\b(?:trusted trader|known shipper|validated exporter)\\b"
+      ],
+      "jurisdiction": "International",
+      "authority_type": "trusted_trader"
+    },
+    {
+      "id": "fda_food_drug",
+      "label": "FDA / USDA Regulations",
+      "description": "Food safety, drug supply chain, FSMA, prior notice, DSCSA",
+      "patterns": [
+        "(?i)\\bFDA\\b",
+        "(?i)\\b(?:FSMA|Food Safety Modernization Act)\\b",
+        "(?i)\\b(?:DSCSA|Drug Supply Chain Security Act)\\b",
+        "(?i)\\b(?:prior notice|food facility registration|FSVP|Foreign Supplier Verification)\\b",
+        "(?i)\\b21\\s*C\\.?F\\.?R\\.?\\b"
+      ],
+      "jurisdiction": "United States",
+      "authority_type": "food_drug_safety"
+    },
+    {
+      "id": "reach_rohs",
+      "label": "REACH / RoHS",
+      "description": "EU chemical substance registration, restriction of hazardous substances",
+      "patterns": [
+        "(?i)\\bREACH\\b(?!.*(?:reach out|reaching))",
+        "(?i)\\bRoHS\\b",
+        "(?i)\\b(?:SVHC|substance of very high concern|candidate list)\\b",
+        "(?i)\\b(?:Regulation \\(EC\\) (?:1907/2006|No 1907))\\b",
+        "(?i)\\b(?:Directive 2011/65/EU|RoHS recast)\\b"
+      ],
+      "jurisdiction": "European Union",
+      "authority_type": "chemical_safety"
+    },
+    {
+      "id": "basel_convention",
+      "label": "Basel Convention",
+      "description": "Hazardous waste transboundary movement controls",
+      "patterns": [
+        "(?i)\\bBasel\\s+Convention\\b",
+        "(?i)\\b(?:transboundary movement|hazardous waste shipment|prior informed consent)\\b",
+        "(?i)\\b(?:e-?waste|WEEE|electronic waste)\\b(?=.*(?:export|ship|transboundary))"
+      ],
+      "jurisdiction": "International",
+      "authority_type": "environmental"
+    },
+    {
+      "id": "eu_sanctions",
+      "label": "EU Sanctions",
+      "description": "EU consolidated sanctions list, dual-use regulations, restrictive measures",
+      "patterns": [
+        "(?i)\\b(?:EU sanctions?|European Union (?:sanctions?|restrictive measures))\\b",
+        "(?i)\\b(?:EU consolidated (?:sanctions? )?list)\\b",
+        "(?i)\\b(?:Regulation \\(EU\\) (?:2021/821|269/2014|833/2014))\\b",
+        "(?i)\\b(?:EU dual.?use|dual.?use regulation)\\b"
+      ],
+      "jurisdiction": "European Union",
+      "authority_type": "sanctions"
+    }
+  ],
+
+  "focus_modes": {
+    "sanctions": {
+      "label": "Sanctions Screening",
+      "description": "OFAC/SDN exposure, denied party matches, transshipment evasion patterns, secondary sanctions risk",
+      "color": "#F44336",
+      "icon": "block",
+      "highlight_entities": ["sanction_entity", "beneficial_owner", "country", "transaction"],
+      "highlight_categories": ["sanctions_screening", "compliance", "geopolitical"],
+      "highlight_authorities": ["ofac", "bis_export", "eu_sanctions"],
+      "risk_questions": [
+        "Which suppliers have direct or indirect links to sanctioned entities?",
+        "Are there transshipment patterns suggesting sanctions evasion?",
+        "Which beneficial owners are PEPs or appear on watchlists?",
+        "What is our secondary sanctions exposure through Tier 2-3 suppliers?"
+      ]
+    },
+    "disruption": {
+      "label": "Disruption Detection",
+      "description": "Single points of failure, cascading risk paths, concentration risk, recovery timelines",
+      "color": "#FF9800",
+      "icon": "warning",
+      "highlight_entities": ["supplier", "manufacturer", "port", "trade_route", "disruption_event", "commodity"],
+      "highlight_categories": ["risk_assessment", "resilience", "logistics"],
+      "highlight_authorities": [],
+      "risk_questions": [
+        "Which suppliers are single-source with no backup?",
+        "What is the cascading impact if Port X shuts down?",
+        "Which commodities have >60% concentration in one country?",
+        "What is our estimated recovery time for each critical path?"
+      ]
+    },
+    "esg": {
+      "label": "ESG Compliance",
+      "description": "Scope 3 emissions mapping, forced labor indicators, deforestation links, conflict minerals",
+      "color": "#2E7D32",
+      "icon": "eco",
+      "highlight_entities": ["esg_factor", "supplier", "manufacturer", "raw_material", "country"],
+      "highlight_categories": ["sustainability", "compliance"],
+      "highlight_authorities": ["conflict_minerals", "reach_rohs", "basel_convention"],
+      "risk_questions": [
+        "Which Tier 2-3 suppliers are in high-risk regions for forced labor?",
+        "What is our Scope 3 emissions footprint by supplier?",
+        "Are any raw materials sourced from conflict-affected areas?",
+        "Which suppliers lack required ESG certifications?"
+      ]
+    },
+    "procurement": {
+      "label": "Procurement Intelligence",
+      "description": "Vendor concentration risk, maverick spend detection, contract compliance gaps",
+      "color": "#4CAF50",
+      "icon": "shopping_cart",
+      "highlight_entities": ["supplier", "contract", "commodity", "kpi_metric", "transaction"],
+      "highlight_categories": ["procurement", "supplier_development", "quality"],
+      "highlight_authorities": ["iso_standards", "fcpa_bribery"],
+      "risk_questions": [
+        "Which categories have dangerous supplier concentration?",
+        "What percentage of spend is off-contract (maverick)?",
+        "Which suppliers are approaching contract expiration without renewal?",
+        "Where can we achieve cost savings through consolidation or dual-sourcing?"
+      ]
+    },
+    "logistics": {
+      "label": "Logistics Optimization",
+      "description": "Port congestion analysis, carrier reliability, cost-per-mile optimization, route risk",
+      "color": "#2196F3",
+      "icon": "local_shipping",
+      "highlight_entities": ["port", "trade_route", "freight_forwarder", "warehouse", "bill_of_lading", "customs_entry"],
+      "highlight_categories": ["logistics", "transportation", "customs_trade"],
+      "highlight_authorities": ["cbp_customs", "ctpat_aeo"],
+      "risk_questions": [
+        "Which ports have congestion exceeding 7-day average dwell time?",
+        "What alternative routes exist for our top 5 trade lanes?",
+        "Which carriers have the best on-time delivery for our volume?",
+        "Where are customs clearance bottlenecks adding days to lead time?"
+      ]
+    },
+    "compliance": {
+      "label": "Compliance Audit",
+      "description": "Export control violations, denied party hits, missing certifications, regulatory gaps",
+      "color": "#9C27B0",
+      "icon": "gavel",
+      "highlight_entities": ["compliance_record", "regulatory_body", "sanction_entity", "customs_entry"],
+      "highlight_categories": ["compliance", "sanctions_screening", "customs_trade"],
+      "highlight_authorities": ["ofac", "bis_export", "cbp_customs", "fda_food_drug", "reach_rohs", "eu_sanctions"],
+      "risk_questions": [
+        "Which suppliers have expired or missing ISO certifications?",
+        "Are we compliant with UFLPA for all imports from flagged regions?",
+        "Which products require export licenses we haven't obtained?",
+        "What is our audit readiness score across all compliance domains?"
+      ]
+    },
+    "geopolitical": {
+      "label": "Geopolitical Risk",
+      "description": "Country risk overlay, trade corridor vulnerabilities, regime exposure, emerging sanctions",
+      "color": "#D32F2F",
+      "icon": "public",
+      "highlight_entities": ["country", "trade_route", "supplier", "port", "sanction_entity"],
+      "highlight_categories": ["geopolitical", "risk_assessment", "sanctions_screening"],
+      "highlight_authorities": ["ofac", "eu_sanctions"],
+      "risk_questions": [
+        "What percentage of our supply chain runs through high-risk countries?",
+        "Which trade routes pass through geopolitical chokepoints?",
+        "How exposed are we to emerging sanctions on Country X?",
+        "What is our nearshoring/friendshoring opportunity for critical materials?"
+      ]
+    },
+    "quality": {
+      "label": "Quality Intelligence",
+      "description": "Defect cluster detection, recall pattern analysis, supplier quality trending",
+      "color": "#FF5722",
+      "icon": "report_problem",
+      "highlight_entities": ["quality_event", "supplier", "manufacturer", "compliance_record", "kpi_metric"],
+      "highlight_categories": ["quality", "procurement", "supplier_development"],
+      "highlight_authorities": ["iso_standards", "fda_food_drug"],
+      "risk_questions": [
+        "Which suppliers have rising defect rates over the last 3 quarters?",
+        "Are there defect clusters correlated with specific facilities or lots?",
+        "Which open CAPAs are past their committed closure date?",
+        "What is the cost of poor quality (COPQ) by supplier and category?"
+      ]
+    }
+  },
+
+  "relationship_types": [
+    {"id": "supplies_to", "label": "Supplies To", "from": "supplier", "to": "manufacturer", "color": "#4CAF50"},
+    {"id": "manufactures_for", "label": "Manufactures For", "from": "manufacturer", "to": "distributor", "color": "#FF9800"},
+    {"id": "distributes_through", "label": "Distributes Through", "from": "distributor", "to": "warehouse", "color": "#2196F3"},
+    {"id": "ships_via", "label": "Ships Via", "from": "manufacturer", "to": "port", "color": "#00BCD4"},
+    {"id": "routes_through", "label": "Routes Through", "from": "trade_route", "to": "port", "color": "#3F51B5"},
+    {"id": "provides_material", "label": "Provides Material", "from": "raw_material", "to": "manufacturer", "color": "#A1887F"},
+    {"id": "governed_by", "label": "Governed By", "from": "contract", "to": "supplier", "color": "#607D8B"},
+    {"id": "sanctioned_as", "label": "Sanctioned As", "from": "sanction_entity", "to": "supplier", "color": "#F44336"},
+    {"id": "owned_by", "label": "Owned By", "from": "supplier", "to": "beneficial_owner", "color": "#E91E63"},
+    {"id": "classified_under", "label": "Classified Under", "from": "commodity", "to": "hs_code", "color": "#FFB74D"},
+    {"id": "insured_by", "label": "Insured By", "from": "bill_of_lading", "to": "insurance_policy", "color": "#AB47BC"},
+    {"id": "certified_with", "label": "Certified With", "from": "supplier", "to": "compliance_record", "color": "#66BB6A"},
+    {"id": "impacted_by", "label": "Impacted By", "from": "supplier", "to": "disruption_event", "color": "#D32F2F"},
+    {"id": "located_in", "label": "Located In", "from": "manufacturer", "to": "country", "color": "#009688"},
+    {"id": "forwarded_by", "label": "Forwarded By", "from": "bill_of_lading", "to": "freight_forwarder", "color": "#5C6BC0"},
+    {"id": "measures", "label": "Measures", "from": "kpi_metric", "to": "supplier", "color": "#8BC34A"},
+    {"id": "tracks", "label": "Tracks", "from": "iot_sensor", "to": "bill_of_lading", "color": "#26C6DA"},
+    {"id": "depends_on", "label": "Depends On", "from": "manufacturer", "to": "commodity", "color": "#FFC107"}
+  ],
+
+  "metadata": {
+    "created": "2025-07-17",
+    "entity_count": 25,
+    "category_count": 15,
+    "authority_count": 12,
+    "focus_mode_count": 8,
+    "relationship_type_count": 18,
+    "compatible_cortex_version": ">=1.0.0"
+  }
+}
