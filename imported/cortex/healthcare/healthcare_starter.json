@@ -1,0 +1,94 @@
+{
+  "name": "Healthcare Compliance Starter",
+  "version": "1.0.0",
+  "description": "Free starter pack for healthcare compliance, HIPAA investigation, and medical fraud detection",
+  "author": "CORTEX Intelligence Platform",
+  "license": "MIT",
+  "entities": {
+    "PHI_Indicator": {
+      "patterns": ["(?i)\\b(patient name|date of birth|DOB|SSN|social security|medical record number|MRN|health plan|beneficiary)\\b"],
+      "color": "#e74c3c",
+      "shape": "star"
+    },
+    "Medical_Code": {
+      "patterns": ["(?i)\\b(?:ICD[- ]?10|CPT|HCPCS|NDC|DRG)[\\s:]*[A-Z]?\\d{2,}", "(?i)\\bdiagnosis code\\b"],
+      "color": "#3498db",
+      "shape": "hexagon"
+    },
+    "Provider": {
+      "patterns": ["(?i)\\b(?:NPI|DEA)[\\s#:]*\\d{7,}", "(?i)\\b(?:physician|surgeon|nurse practitioner|pharmacist|clinic|hospital|practice)\\b"],
+      "color": "#9b59b6",
+      "shape": "circle"
+    },
+    "Drug_Device": {
+      "patterns": ["(?i)\\b(?:FDA|Schedule [IV]+|controlled substance|opioid|fentanyl|oxycodone|hydrocodone|benzodiazepine)\\b"],
+      "color": "#e67e22",
+      "shape": "diamond"
+    },
+    "Regulation": {
+      "patterns": ["(?i)\\b(?:HIPAA|HITECH|42 CFR|Stark Law|Anti[- ]Kickback|False Claims Act|Sunshine Act|EMTALA)\\b"],
+      "color": "#27ae60",
+      "shape": "square"
+    },
+    "Financial_Amount": {
+      "patterns": ["\\$[\\d,]+(?:\\.\\d{2})?"],
+      "color": "#f39c12",
+      "shape": "circle"
+    }
+  },
+  "categories": {
+    "HIPAA_Violation": {
+      "keywords": ["HIPAA", "breach", "unauthorized access", "PHI", "privacy", "security rule", "minimum necessary", "disclosure"],
+      "description": "HIPAA privacy and security violations"
+    },
+    "Medical_Fraud": {
+      "keywords": ["upcoding", "unbundling", "phantom billing", "duplicate claim", "medically unnecessary", "kickback", "self-referral"],
+      "description": "Healthcare billing fraud patterns"
+    },
+    "Prescriber_Abuse": {
+      "keywords": ["pill mill", "over-prescribing", "doctor shopping", "diversion", "controlled substance", "opioid", "DEA"],
+      "description": "Prescription drug abuse and diversion"
+    },
+    "Clinical_Safety": {
+      "keywords": ["adverse event", "patient harm", "sentinel event", "medication error", "misdiagnosis", "malpractice", "negligence"],
+      "description": "Patient safety incidents and clinical errors"
+    }
+  },
+  "authorities": {
+    "HIPAA_Privacy": {
+      "patterns": ["(?i)\\b(?:45 CFR (?:160|164)|HIPAA Privacy Rule|Protected Health Information)\\b"],
+      "description": "HIPAA Privacy Rule citations"
+    },
+    "False_Claims": {
+      "patterns": ["(?i)\\b(?:31 U\\.?S\\.?C\\.?\\s*3729|False Claims Act|qui tam|relator)\\b"],
+      "description": "Federal False Claims Act"
+    },
+    "Anti_Kickback": {
+      "patterns": ["(?i)\\b(?:42 U\\.?S\\.?C\\.?\\s*1320a|Anti[- ]Kickback Statute|AKS|safe harbor)\\b"],
+      "description": "Anti-Kickback Statute"
+    }
+  },
+  "focus_modes": {
+    "hipaa_investigation": {
+      "boost_keywords": ["HIPAA", "breach", "PHI", "privacy", "unauthorized", "disclosure", "security rule"],
+      "boost_entities": ["PHI_Indicator", "Regulation"],
+      "multiplier": 2.0
+    },
+    "billing_fraud": {
+      "boost_keywords": ["upcoding", "unbundling", "phantom", "duplicate", "kickback", "self-referral", "medically unnecessary"],
+      "boost_entities": ["Medical_Code", "Financial_Amount", "Provider"],
+      "multiplier": 2.0
+    },
+    "opioid_diversion": {
+      "boost_keywords": ["opioid", "fentanyl", "diversion", "pill mill", "doctor shopping", "schedule II", "DEA"],
+      "boost_entities": ["Drug_Device", "Provider"],
+      "multiplier": 1.8
+    }
+  },
+  "scoring": {
+    "entity_weight": 3,
+    "category_weight": 2,
+    "authority_weight": 5,
+    "focus_weight": 4
+  }
+}

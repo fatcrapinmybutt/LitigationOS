@@ -1,0 +1,149 @@
+{
+  "name": "Cybersecurity Starter",
+  "version": "1.0.0",
+  "description": "Free cybersecurity domain pack for CORTEX. Detects IPs, CVEs, hashes, domains, ports, protocols, and common threat indicators across local files.",
+  "author": "CORTEX Intelligence",
+  "license": "MIT",
+  "entities": {
+    "IP_Address": {
+      "patterns": [
+        "\\b(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\b"
+      ],
+      "color": "#e74c3c",
+      "shape": "diamond"
+    },
+    "CVE": {
+      "patterns": [
+        "CVE-\\d{4}-\\d{4,7}"
+      ],
+      "color": "#e67e22",
+      "shape": "hexagon"
+    },
+    "Domain": {
+      "patterns": [
+        "\\b(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\\.)+(?:com|net|org|io|gov|edu|mil|info|biz|co|uk|de|ru|cn|jp|br|fr|au|in)\\b"
+      ],
+      "color": "#3498db",
+      "shape": "circle"
+    },
+    "Hash_MD5": {
+      "patterns": [
+        "\\b[a-fA-F0-9]{32}\\b"
+      ],
+      "color": "#9b59b6",
+      "shape": "square"
+    },
+    "Hash_SHA256": {
+      "patterns": [
+        "\\b[a-fA-F0-9]{64}\\b"
+      ],
+      "color": "#8e44ad",
+      "shape": "square"
+    },
+    "Port": {
+      "patterns": [
+        "\\bport\\s*(\\d{1,5})\\b",
+        "\\b(?:tcp|udp)[/:]\\d{1,5}\\b"
+      ],
+      "color": "#1abc9c",
+      "shape": "triangle"
+    },
+    "Email": {
+      "patterns": [
+        "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"
+      ],
+      "color": "#2ecc71",
+      "shape": "circle"
+    },
+    "URL": {
+      "patterns": [
+        "https?://[^\\s<>\"']+",
+        "hxxps?://[^\\s<>\"']+"
+      ],
+      "color": "#f39c12",
+      "shape": "circle"
+    },
+    "MITRE_ATT_CK": {
+      "patterns": [
+        "\\bT\\d{4}(?:\\.\\d{3})?\\b"
+      ],
+      "color": "#e74c3c",
+      "shape": "hexagon"
+    },
+    "Registry_Key": {
+      "patterns": [
+        "\\bHK(?:LM|CU|CR|CC|U)\\\\[A-Za-z0-9\\\\_.]+\\b"
+      ],
+      "color": "#95a5a6",
+      "shape": "square"
+    }
+  },
+  "categories": {
+    "Malware": {
+      "keywords": ["malware", "trojan", "ransomware", "worm", "backdoor", "rootkit", "keylogger", "spyware", "adware", "botnet", "RAT", "dropper", "payload"],
+      "color": "#e74c3c"
+    },
+    "Vulnerability": {
+      "keywords": ["vulnerability", "CVE", "exploit", "zero-day", "0day", "buffer overflow", "RCE", "remote code execution", "privilege escalation", "XSS", "SQL injection", "SSRF"],
+      "color": "#e67e22"
+    },
+    "Network_Attack": {
+      "keywords": ["DDoS", "brute force", "man-in-the-middle", "MITM", "packet sniffing", "ARP spoofing", "DNS poisoning", "port scan", "lateral movement", "C2", "command and control"],
+      "color": "#f39c12"
+    },
+    "Phishing": {
+      "keywords": ["phishing", "spear phishing", "whaling", "social engineering", "credential harvesting", "BEC", "business email compromise"],
+      "color": "#3498db"
+    },
+    "Data_Breach": {
+      "keywords": ["data breach", "data leak", "exfiltration", "data loss", "PII", "exposed", "compromised credentials", "leaked", "dump"],
+      "color": "#9b59b6"
+    },
+    "Threat_Actor": {
+      "keywords": ["APT", "threat actor", "nation-state", "hacktivist", "cybercrime", "ransomware gang", "threat group"],
+      "color": "#c0392b"
+    }
+  },
+  "authorities": {
+    "CVE_Database": {
+      "patterns": ["CVE-\\d{4}-\\d{4,7}"],
+      "description": "Common Vulnerabilities and Exposures"
+    },
+    "MITRE_ATT_CK": {
+      "patterns": ["\\bT\\d{4}(?:\\.\\d{3})?\\b"],
+      "description": "MITRE ATT&CK technique identifiers"
+    },
+    "NIST": {
+      "patterns": ["\\bNIST\\s+SP\\s+\\d+-\\d+"],
+      "description": "NIST Special Publications"
+    },
+    "CWE": {
+      "patterns": ["CWE-\\d{1,4}"],
+      "description": "Common Weakness Enumeration"
+    }
+  },
+  "focus_modes": {
+    "malware": {
+      "boost_keywords": ["malware", "trojan", "ransomware", "payload", "backdoor"],
+      "description": "Focus on malware indicators"
+    },
+    "network": {
+      "boost_keywords": ["IP", "port", "DNS", "C2", "lateral", "packet"],
+      "description": "Focus on network-based threats"
+    },
+    "vulnerability": {
+      "boost_keywords": ["CVE", "exploit", "RCE", "zero-day", "patch"],
+      "description": "Focus on vulnerability intelligence"
+    },
+    "threat_actor": {
+      "boost_keywords": ["APT", "threat actor", "campaign", "nation-state", "TTP"],
+      "description": "Focus on threat actor profiling"
+    }
+  },
+  "scoring": {
+    "entity_weight": 0.35,
+    "category_weight": 0.30,
+    "authority_weight": 0.20,
+    "focus_weight": 0.15
+  }
+}
