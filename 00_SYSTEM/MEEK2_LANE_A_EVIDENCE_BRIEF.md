@@ -154,7 +154,7 @@
 | Hoopes ↔ Ladas-Hoopes | Married; both former partners at same firm | **0.99** | Bar records, court records |
 | McNeill ↔ Ladas-Hoopes | Former law partners at same firm | **0.99** | Bar records, firm history |
 | McNeill ↔ Cavan Berry | **Married** — confirmed child: Kyle McNeill Berry (combined surname) | confirmed | Court records |
-| Cavan Berry ↔ FOC Rusco | **SAME ADDRESS: 990 Terrace St, Muskegon** | **0.95** | Office records, 60th District roster |
+| Cavan Berry ↔ Rusco (McNeill's judicial secretary) | **SAME ADDRESS: 990 Terrace St courthouse** | **0.95** | Office records, 14th Circuit roster |
 | Ronald Berry ↔ Emily Watson | Domestic partner at 2160 Garland Dr | confirmed | Address records |
 | Ronald Berry ↔ Cavan Berry | Likely related — same surname, Norton Shores (~24K pop) | **0.75** | Whitepages, address records |
 
@@ -582,7 +582,7 @@ McNeill and Emily Watson discussed on the record that prescription medication co
 **Legal weaponization:**
 - MCL 600.916: Unauthorized practice of law — felony in Michigan
 - Ronald Berry appears in MSC filing forms as "Esq." — a court document — while having no bar number
-- Ronald Berry is also related to **Cavan Berry** (Judge McNeill's husband), who practices family law at 990 Terrace St (same address as FOC Pamela Rusco)
+- Ronald Berry is also related to **Cavan Berry** (Judge McNeill's husband), who practices family law at 990 Terrace St (same building as McNeill's judicial secretary Pamela Rusco and the FOC)
 - Chain: Emily Watson → Ronald Berry (non-attorney "Esq.") → Cavan Berry (McNeill's husband, family law attorney, 990 Terrace St) → Judge McNeill
 - This chain = undisclosed conflict of interest + possible coordination between opposing party's household and the judge's spouse
 - MCR 2.003: Mandatory recusal — judge's spouse is professionally connected to the opposing party's household through Ronald Berry
@@ -698,7 +698,7 @@ McNeill and Emily Watson discussed on the record that prescription medication co
 |-----|-------------|
 | A | Albert Watson NS2505044 premeditation admission ("go tomorrow to get an Ex Parte order") |
 | B | Emily Watson NSPD-2023-08121 recantation ("nothing was physical") — 2 days before PPO |
-| C | Rusco→Prosecutor ex parte warrant email — FOC coordinating arrest warrant |
+| C | Rusco→Prosecutor ex parte warrant email — McNeill's judicial secretary coordinating arrest warrant |
 | D | Martini "Don't Speak" email — court-appointed counsel silencing Andrew on judge's direction |
 | E | Sept 9 2025 suspension order citing chambers-only HealthWest evaluation |
 | F | Albert Watson physical assault at custody exchange — threw PPO papers, removed L.D.W. |
@@ -915,9 +915,9 @@ McNeill and Emily Watson discussed on the record that prescription medication co
 **Legal weaponization:**
 - MCL 552.517: When a party repeatedly violates parenting time orders, the FOC has a **statutory duty** to investigate and recommend modification
 - Three documented withholding episodes: (1) March 26–May 2, 2024 (37 days); (2) October 20–November 15, 2024 (25 days); (3) July 29, 2025–present (~260 days and counting)
-- FOC Pamela Rusco has taken NO action on any of these violations — while sending the Rusco→Prosecutor ex parte warrant email (Gun C) against Andrew
+- The FOC (a separate institutional actor from McNeill's judicial secretary Rusco) has taken NO action on any of these three withholding episodes
 - Mandamus: *Rinaldi v. Rinaldi*, MCR 7.306 — mandamus is available to compel a government official (FOC) to perform a ministerial duty
-- FOC's selective enforcement (zero action on Emily's three withholding episodes; coordinated warrant emails against Andrew) = documented institutional bias
+- The FOC's complete inaction on Emily's three documented withholding episodes — combined with the McNeill→Rusco→Prosecutor ex parte warrant email (Gun C) running through the same courthouse — demonstrates institutional capture: enforcement runs one direction only, against Andrew
 - This V027 entry is from the system's own internal MCR violation matrix — cross-machine verifiable
 
 ---
@@ -984,7 +984,7 @@ McNeill and Emily Watson discussed on the record that prescription medication co
 | **V** | PPO petition: "going to kill me MULTIPLE TIMES" — NOT in officer report; officer records "zoo argument" only | `POLICE_REPORT_EVIDENCE_EXTRACTION.md` | D, A | MCL 750.423 (perjury); MRE 613 |
 | **W** | 5-episode disparate treatment table (Mar 15, May 8, Aug 2024, Feb 2025, Feb 14 2026) | `weaponizable_timeline.json` | A, E | MCR 2.003(C)(1)(b); JTC |
 | **X** | Feb 2025: $8,500 Board Certified forensic eval excluded; 4-session therapist (no training) admitted | `weaponizable_timeline.json` | A, F | MRE 702; COA reversible error |
-| **Y** | FOC V027: MCL 552.517 — FOC Rusco never recommended modification despite 3 withholding episodes | `MCR_VIOLATION_MATRIX.csv` | A, E | MCL 552.517; mandamus; MCR 7.306 |
+| **Y** | FOC V027: MCL 552.517 — FOC never recommended modification despite 3 withholding episodes; mandamus available | `MCR_VIOLATION_MATRIX.csv` | A, E | MCL 552.517; mandamus; MCR 7.306 |
 | **Z** | Lori Watson police admission: "no custody agreement" while withholding L.D.W. | `ORDER_SPINE.csv`, EA_3cdda3a3781f | A, D | MCL 750.350a; MRE 804(b)(3) |
 | **AA** | Feb 14, 2026: Court adopted Mother's order verbatim — including typos — after 45-minute hearing on 200-page brief | `weaponizable_timeline.json` | A, F | *Vodvarka* line; rubber-stamp reversal |
 | **BB** | May 8, 2024: Father's police report excluded as hearsay; Mother's unsworn statement admitted | `weaponizable_timeline.json` | A, F | MRE 803(8) error; Canon 2(A) |
