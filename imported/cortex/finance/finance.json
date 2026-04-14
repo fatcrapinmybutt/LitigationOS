@@ -1,0 +1,566 @@
+{
+  "meta": {
+    "name": "Financial Intelligence & Market Analysis",
+    "id": "cortex-finance",
+    "version": "1.0.0",
+    "description": "Domain pack for financial crime detection, market surveillance, forensic accounting, AML/KYC compliance, and regulatory intelligence. Designed for investigators, compliance officers, and financial analysts.",
+    "author": "Andrew Pioneer",
+    "license": "MIT",
+    "homepage": "https://github.com/fatcrapinmybutt/cortex-finance",
+    "cortex_version": ">=1.0.0",
+    "tags": [
+      "finance",
+      "fintech",
+      "aml",
+      "kyc",
+      "sec",
+      "compliance",
+      "forensic-accounting",
+      "market-surveillance",
+      "insider-trading",
+      "financial-crime",
+      "fraud-detection",
+      "sanctions",
+      "regtech"
+    ]
+  },
+
+  "entities": [
+    {
+      "type": "Company",
+      "description": "Corporate entity, legal name, or DBA",
+      "patterns": [
+        "\\b[A-Z][A-Za-z&',.-]+(?: (?:Inc|Corp|LLC|LLP|LP|Ltd|PLC|AG|GmbH|SA|NV|BV|Pty|Co|Group|Holdings|Partners|Capital|Advisors|Management|Fund|Trust|Bank|Securities|Financial|Investments))\\.?\\b",
+        "\\b(?:d/b/a|doing business as|f/k/a|formerly known as)\\s+[A-Z][A-Za-z &',.-]+\\b"
+      ],
+      "priority": "high"
+    },
+    {
+      "type": "Ticker",
+      "description": "Stock ticker symbol (US exchanges, crypto pairs)",
+      "patterns": [
+        "\\b(?:NYSE|NASDAQ|OTC|AMEX|CBOE|LSE|TSX):\\s?[A-Z]{1,5}\\b",
+        "\\b[A-Z]{1,5}(?:\\.(?:A|B|WS|U|RT))\\b",
+        "\\b(?:BTC|ETH|SOL|XRP|USDT|USDC|BNB|ADA|DOGE|DOT|AVAX|MATIC)[-/](?:USD|USDT|EUR|GBP|BTC|ETH)\\b"
+      ],
+      "priority": "high"
+    },
+    {
+      "type": "CUSIP",
+      "description": "Committee on Uniform Securities Identification Procedures number",
+      "patterns": [
+        "\\b(?:CUSIP[:\\s#]?)?[0-9]{3}[A-Za-z0-9]{5}[0-9]\\b"
+      ],
+      "priority": "medium"
+    },
+    {
+      "type": "ISIN",
+      "description": "International Securities Identification Number",
+      "patterns": [
+        "\\b(?:ISIN[:\\s#]?)?[A-Z]{2}[A-Z0-9]{9}[0-9]\\b"
+      ],
+      "priority": "medium"
+    },
+    {
+      "type": "SEDOL",
+      "description": "Stock Exchange Daily Official List identifier",
+      "patterns": [
+        "\\b(?:SEDOL[:\\s#]?)?[0-9B-DF-HJ-NP-TV-Z]{6}[0-9]\\b"
+      ],
+      "priority": "low"
+    },
+    {
+      "type": "SEC_Filing",
+      "description": "SEC filing type reference",
+      "patterns": [
+        "\\b(?:Form\\s+)?(?:10-K|10-Q|8-K|S-1|S-3|S-4|F-1|F-4|13-F|13-D|13-G|SC 13D|SC 13G|DEF 14A|DEFM14A|PRE 14A|6-K|20-F|40-F|N-CSR|N-PORT|ADV|D|4|3|5|144|EFFECT|ARS|SD|NT 10-K|NT 10-Q)\\b",
+        "\\bCIK[:\\s#]?(?:0{0,6})?[0-9]{1,10}\\b",
+        "\\bEDGAR\\s+(?:filing|submission|accession)\\b",
+        "\\b(?:Accession|Acc)[:\\s#]?[0-9]{10}-[0-9]{2}-[0-9]{6}\\b"
+      ],
+      "priority": "high"
+    },
+    {
+      "type": "Monetary_Value",
+      "description": "Dollar amounts, foreign currencies, crypto values",
+      "patterns": [
+        "\\$\\s?[0-9]{1,3}(?:,?[0-9]{3})*(?:\\.[0-9]{1,2})?(?:\\s?(?:million|billion|trillion|M|B|T|K|mn|bn))?\\b",
+        "\\b(?:USD|EUR|GBP|CHF|JPY|CNY|HKD|SGD|AUD|CAD|KRW|RUB|INR|BRL|MXN|ZAR|AED|SAR)\\s?[0-9]{1,3}(?:,?[0-9]{3})*(?:\\.[0-9]{1,2})?\\b",
+        "\\b[0-9]+(?:\\.[0-9]+)?\\s?(?:BTC|ETH|SOL|USDT|USDC)\\b"
+      ],
+      "priority": "high"
+    },
+    {
+      "type": "SWIFT_BIC",
+      "description": "SWIFT/BIC bank identifier code",
+      "patterns": [
+        "\\b(?:SWIFT|BIC)[:\\s]?[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}(?:[A-Z0-9]{3})?\\b",
+        "\\b[A-Z]{4}(?:US|GB|DE|CH|SG|HK|JP|FR|LU|IE|KY|BM|VG|PA|BS)[A-Z0-9]{2}(?:[A-Z0-9]{3})?\\b"
+      ],
+      "priority": "high"
+    },
+    {
+      "type": "Routing_Number",
+      "description": "ABA routing transit number",
+      "patterns": [
+        "\\b(?:ABA|routing(?:\\s+number)?|RTN)[:\\s#]?[0-9]{9}\\b"
+      ],
+      "priority": "medium"
+    },
+    {
+      "type": "Account_Number",
+      "description": "Bank account, brokerage account, or wallet address",
+      "patterns": [
+        "\\b(?:acct|account|a/c)[.:\\s#]?[0-9]{5,17}\\b",
+        "\\b0x[a-fA-F0-9]{40}\\b",
+        "\\b(?:bc1|[13])[a-zA-HJ-NP-Z0-9]{25,42}\\b",
+        "\\bIBAN[:\\s]?[A-Z]{2}[0-9]{2}[A-Z0-9]{4,30}\\b"
+      ],
+      "priority": "high"
+    },
+    {
+      "type": "EIN",
+      "description": "Employer Identification Number / Tax ID",
+      "patterns": [
+        "\\b(?:EIN|TIN|Tax\\s+ID)[:\\s#]?[0-9]{2}-[0-9]{7}\\b"
+      ],
+      "priority": "medium"
+    },
+    {
+      "type": "Person",
+      "description": "Individual name with financial role context",
+      "patterns": [
+        "\\b(?:CEO|CFO|COO|CTO|CIO|CRO|CCO|Director|Officer|Trustee|Nominee|Beneficial\\s+Owner|Insider|Trader|Analyst|Broker|Dealer|Adviser|Advisor|Portfolio\\s+Manager|Fund\\s+Manager|Compliance\\s+Officer|General\\s+Partner|Managing\\s+Director|VP|SVP|EVP|Partner)\\s+[A-Z][a-z]+(?:\\s+[A-Z][a-z]+){1,3}\\b",
+        "\\b[A-Z][a-z]+(?:\\s+[A-Z]\\.?)?\\s+[A-Z][a-z]+(?:,\\s*(?:CEO|CFO|COO|CRO|CCO|Jr|Sr|II|III|IV|Esq|CPA|CFA|JD))\\b"
+      ],
+      "priority": "high"
+    },
+    {
+      "type": "Jurisdiction",
+      "description": "Offshore havens, secrecy jurisdictions, regulatory zones",
+      "patterns": [
+        "\\b(?:British\\s+Virgin\\s+Islands|BVI|Cayman\\s+Islands|Bermuda|Panama|Luxembourg|Liechtenstein|Jersey|Guernsey|Isle\\s+of\\s+Man|Mauritius|Seychelles|Labuan|Bahamas|Nevis|Belize|Samoa|Vanuatu|Marshall\\s+Islands|Delaware|Nevada|Wyoming|South\\s+Dakota|Singapore|Hong\\s+Kong|Dubai|DIFC|ADGM|Switzerland|Cyprus|Malta|Curaçao)\\b"
+      ],
+      "priority": "medium"
+    },
+    {
+      "type": "Exchange",
+      "description": "Securities exchange or trading venue",
+      "patterns": [
+        "\\b(?:NYSE|NASDAQ|CBOE|CME|ICE|NYMEX|COMEX|LSE|TSX|ASX|HKEX|SGX|JPX|Euronext|Deutsche\\s+Börse|Xetra|SIX|Binance|Coinbase|Kraken|FTX|Gemini|Bitfinex|OKX|Bybit|dYdX|Uniswap|SushiSwap|PancakeSwap|BATS|IEX|ARCA|EDGX|MEMX)\\b"
+      ],
+      "priority": "medium"
+    },
+    {
+      "type": "Date_Financial",
+      "description": "Financially significant dates (quarters, fiscal years, blackout periods)",
+      "patterns": [
+        "\\b(?:Q[1-4]|FY|H[12])\\s*['\"]?(?:20[0-9]{2}|[0-9]{2})\\b",
+        "\\b(?:fiscal\\s+year|tax\\s+year|calendar\\s+year)\\s+(?:ended?|ending|beginning)\\b",
+        "\\b(?:blackout|quiet|lock-up|lockup|vesting|settlement)\\s+period\\b",
+        "\\b(?:ex-dividend|record|payment|maturity|expiration|exercise)\\s+date\\b"
+      ],
+      "priority": "medium"
+    },
+    {
+      "type": "Regulatory_Body",
+      "description": "Financial regulatory agencies and SROs",
+      "patterns": [
+        "\\b(?:SEC|FINRA|CFTC|OCC|FDIC|Fed(?:eral\\s+Reserve)?|FinCEN|OFAC|PCAOB|SIPC|NFA|MSRB|FCA|PRA|BaFin|AMF|ESMA|MAS|SFC|ASIC|HKMA|BOJ|FSA|OSFI|IIROC|APRA)\\b"
+      ],
+      "priority": "high"
+    },
+    {
+      "type": "Legal_Action",
+      "description": "Enforcement action, litigation, or regulatory proceeding",
+      "patterns": [
+        "\\b(?:cease\\s+and\\s+desist|consent\\s+order|consent\\s+decree|enforcement\\s+action|administrative\\s+proceeding|civil\\s+penalty|disgorgement|injunction|bar\\s+order|suspension|revocation|censure|fine|sanction|settlement|plea\\s+agreement|deferred\\s+prosecution|non-prosecution)\\b",
+        "\\b(?:SEC\\s+v\\.|CFTC\\s+v\\.|In\\s+the\\s+Matter\\s+of|In\\s+re:?)\\s+[A-Z]\\b"
+      ],
+      "priority": "high"
+    },
+    {
+      "type": "Financial_Instrument",
+      "description": "Security type, derivative, structured product",
+      "patterns": [
+        "\\b(?:common\\s+stock|preferred\\s+stock|convertible|warrant|option|put|call|swap|CDS|CDO|CLO|MBS|ABS|CMBS|RMBS|ETF|ETN|mutual\\s+fund|hedge\\s+fund|private\\s+equity|venture\\s+fund|SPAC|blank\\s+check|unit\\s+trust|REIT|debenture|bond|note|commercial\\s+paper|repo|reverse\\s+repo|future|forward|swaption|cap|floor|collar)s?\\b"
+      ],
+      "priority": "medium"
+    },
+    {
+      "type": "Transaction_Type",
+      "description": "Trade or transaction classification",
+      "patterns": [
+        "\\b(?:wire\\s+transfer|ACH|RTGS|CHIPS|Fedwire|CHAPS|TARGET2|SEPA|correspondent\\s+banking|nostro|vostro|clearing|settlement|margin\\s+call|repo|reverse\\s+repo|block\\s+trade|dark\\s+pool|OTC|cross\\s+trade|wash\\s+trade|matched\\s+trade|pre-arranged|layering|spoofing|front-running|late\\s+trading|market\\s+timing)\\b"
+      ],
+      "priority": "high"
+    },
+    {
+      "type": "AML_Indicator",
+      "description": "Anti-money laundering red flag indicators",
+      "patterns": [
+        "\\b(?:structuring|smurfing|layering|integration|placement|cash\\s+intensive|bulk\\s+cash|funnel\\s+account|payable-through|shell\\s+company|nominee|bearer\\s+share|correspondent|nested|mirror\\s+trading|round-tripping|trade-based\\s+laundering|hawala|hundi|informal\\s+value\\s+transfer|suspicious\\s+activity|SAR|CTR|STR|unusual\\s+transaction)\\b"
+      ],
+      "priority": "high"
+    },
+    {
+      "type": "Crypto_Entity",
+      "description": "Cryptocurrency-specific entities and protocols",
+      "patterns": [
+        "\\b(?:mixer|tumbler|tornado\\s+cash|blender|wasabi|coinjoin|chain\\s+hopping|bridge|cross-chain|DEX|AMM|liquidity\\s+pool|flash\\s+loan|rug\\s+pull|exit\\s+scam|smart\\s+contract|NFT|DAO|DeFi|staking|yield\\s+farming|impermanent\\s+loss|MEV|sandwich\\s+attack|oracle\\s+manipulation)\\b"
+      ],
+      "priority": "medium"
+    },
+    {
+      "type": "Risk_Rating",
+      "description": "Risk assessment and credit rating references",
+      "patterns": [
+        "\\b(?:AAA|AA\\+|AA|AA-|A\\+|A|A-|BBB\\+|BBB|BBB-|BB\\+|BB|BB-|B\\+|B|B-|CCC|CC|C|D|NR|WD)\\b",
+        "\\b(?:Moody's|S&P|Fitch|DBRS|Morningstar|AM\\s+Best)\\s+(?:rating|grade|score|assessment)\\b",
+        "\\b(?:investment\\s+grade|high\\s+yield|junk|distressed|speculative|default)\\b"
+      ],
+      "priority": "low"
+    },
+    {
+      "type": "Sanctions_Reference",
+      "description": "Sanctions list and designation references",
+      "patterns": [
+        "\\b(?:SDN|Specially\\s+Designated\\s+National|Entity\\s+List|Denied\\s+Persons|Blocked\\s+Persons|Sectoral\\s+Sanctions|CAPTA|EU\\s+sanctions|UN\\s+sanctions|HMT\\s+sanctions|consolidated\\s+list|designated\\s+person|sanctioned\\s+entity|primary\\s+sanctions|secondary\\s+sanctions)\\b"
+      ],
+      "priority": "high"
+    },
+    {
+      "type": "Corporate_Event",
+      "description": "Material corporate actions and events",
+      "patterns": [
+        "\\b(?:merger|acquisition|takeover|tender\\s+offer|proxy\\s+fight|proxy\\s+contest|hostile\\s+bid|friendly\\s+bid|leveraged\\s+buyout|LBO|MBO|management\\s+buyout|spin-off|spinoff|carve-out|divestiture|IPO|SPO|secondary\\s+offering|rights\\s+issue|stock\\s+split|reverse\\s+split|share\\s+buyback|repurchase|dividend|special\\s+dividend|bankruptcy|Chapter\\s+11|Chapter\\s+7|restructuring|recapitalization|delisting)\\b"
+      ],
+      "priority": "medium"
+    },
+    {
+      "type": "Compliance_Program",
+      "description": "Compliance frameworks and program elements",
+      "patterns": [
+        "\\b(?:compliance\\s+program|compliance\\s+officer|BSA\\s+officer|MLRO|money\\s+laundering\\s+reporting|AML\\s+program|KYC\\s+program|CDD|EDD|enhanced\\s+due\\s+diligence|customer\\s+identification|CIP|beneficial\\s+ownership|risk\\s+assessment|transaction\\s+monitoring|suspicious\\s+activity\\s+reporting|independent\\s+testing|training\\s+program|audit\\s+trail|record\\s+retention)\\b"
+      ],
+      "priority": "medium"
+    },
+    {
+      "type": "Whistleblower",
+      "description": "Whistleblower and tip references",
+      "patterns": [
+        "\\b(?:whistleblower|tipster|informant|confidential\\s+source|qui\\s+tam|relator|bounty|award|retaliation|protected\\s+activity|SOX\\s+§806|Dodd-Frank\\s+§922|SEC\\s+Office\\s+of\\s+the\\s+Whistleblower|CFTC\\s+whistleblower|IRS\\s+whistleblower)\\b"
+      ],
+      "priority": "medium"
+    },
+    {
+      "type": "Financial_Ratio",
+      "description": "Key financial metrics and ratios",
+      "patterns": [
+        "\\b(?:P/E|EPS|EBITDA|EBIT|ROE|ROA|ROI|ROIC|debt-to-equity|current\\s+ratio|quick\\s+ratio|leverage\\s+ratio|tier\\s+1|CET1|LCR|NSFR|NIM|NPL|cost-to-income|operating\\s+margin|gross\\s+margin|net\\s+margin|book\\s+value|NAV|AUM|TER|Sharpe|Sortino|alpha|beta|VaR|CVaR|drawdown)\\b"
+      ],
+      "priority": "low"
+    },
+    {
+      "type": "Document_Type",
+      "description": "Financial document classification",
+      "patterns": [
+        "\\b(?:prospectus|offering\\s+memorandum|private\\s+placement|subscription\\s+agreement|term\\s+sheet|credit\\s+agreement|indenture|trust\\s+deed|custodial\\s+agreement|prime\\s+brokerage|ISDA\\s+master|give-up\\s+agreement|compliance\\s+manual|AML\\s+manual|trading\\s+policy|code\\s+of\\s+ethics|insider\\s+trading\\s+policy|restricted\\s+list|watch\\s+list|grey\\s+list)\\b"
+      ],
+      "priority": "low"
+    },
+    {
+      "type": "Fee_Structure",
+      "description": "Investment fee and compensation patterns",
+      "patterns": [
+        "\\b(?:management\\s+fee|performance\\s+fee|incentive\\s+fee|carried\\s+interest|carry|hurdle\\s+rate|high-water\\s+mark|clawback|2\\s+and\\s+20|expense\\s+ratio|load|front-end|back-end|12b-1|advisory\\s+fee|placement\\s+fee|origination\\s+fee|commitment\\s+fee|break\\s+fee|termination\\s+fee|reverse\\s+termination)\\b"
+      ],
+      "priority": "low"
+    },
+    {
+      "type": "Data_Source",
+      "description": "Financial data provider and platform references",
+      "patterns": [
+        "\\b(?:Bloomberg|Reuters|Refinitiv|FactSet|S&P\\s+Global|Morningstar|Pitchbook|Preqin|Chainalysis|Elliptic|TRM\\s+Labs|Dow\\s+Jones|LexisNexis|World-Check|OFAC\\s+SDN|Orbis|Dun\\s+&\\s+Bradstreet|Moody's|MSCI|ICE\\s+Data|Markit|Tradeweb|DTCC)\\b"
+      ],
+      "priority": "low"
+    }
+  ],
+
+  "categories": [
+    {
+      "name": "Market Manipulation",
+      "description": "Wash trading, spoofing, layering, pump & dump, cornering, painting the tape",
+      "keywords": ["wash trade", "spoof", "layering", "pump and dump", "pump & dump", "painting the tape", "cornering", "bear raid", "short and distort", "marking the close", "ramping", "front running", "quote stuffing"],
+      "color": "#FF1744"
+    },
+    {
+      "name": "Insider Trading",
+      "description": "Material non-public information (MNPI), tipping, trading on inside information",
+      "keywords": ["insider trading", "insider dealing", "MNPI", "material non-public", "tipping", "tipper", "tippee", "shadow trading", "blackout period", "pre-clearance", "restricted list", "watch list", "Rule 10b5-1", "Section 16"],
+      "color": "#D50000"
+    },
+    {
+      "name": "AML / KYC",
+      "description": "Anti-money laundering, know your customer, suspicious activity",
+      "keywords": ["money laundering", "AML", "KYC", "CDD", "EDD", "structuring", "smurfing", "layering", "placement", "integration", "SAR", "CTR", "suspicious activity", "FinCEN", "BSA", "beneficial ownership", "shell company"],
+      "color": "#FF6D00"
+    },
+    {
+      "name": "Regulatory Filing",
+      "description": "SEC, FINRA, CFTC filings and submissions",
+      "keywords": ["10-K", "10-Q", "8-K", "proxy", "13-F", "13-D", "Schedule 13", "Form 4", "Form 144", "EDGAR", "XBRL", "filing", "submission", "annual report", "quarterly report"],
+      "color": "#2962FF"
+    },
+    {
+      "name": "Wire & Fund Transfer",
+      "description": "Wire transfers, correspondent banking, payment flows",
+      "keywords": ["wire transfer", "SWIFT", "Fedwire", "CHIPS", "ACH", "correspondent", "nostro", "vostro", "intermediary bank", "beneficiary", "originator", "remittance"],
+      "color": "#00BFA5"
+    },
+    {
+      "name": "Corporate Action",
+      "description": "M&A, restructuring, IPO, buyback, dividend events",
+      "keywords": ["merger", "acquisition", "takeover", "IPO", "secondary offering", "buyback", "repurchase", "dividend", "spin-off", "restructuring", "bankruptcy", "Chapter 11", "delisting", "going private"],
+      "color": "#6200EA"
+    },
+    {
+      "name": "Financial Statement",
+      "description": "Financial reporting, accounting, and audit matters",
+      "keywords": ["balance sheet", "income statement", "cash flow", "footnote", "restatement", "material weakness", "going concern", "revenue recognition", "goodwill impairment", "off-balance sheet", "GAAP", "IFRS", "audit opinion"],
+      "color": "#0091EA"
+    },
+    {
+      "name": "Related Party Transaction",
+      "description": "Self-dealing, conflicts of interest, affiliated transactions",
+      "keywords": ["related party", "self-dealing", "conflict of interest", "affiliated", "arm's length", "intercompany", "beneficial owner", "controlling person", "insider loan", "executive compensation"],
+      "color": "#AA00FF"
+    },
+    {
+      "name": "Offshore Structure",
+      "description": "Shell companies, nominee arrangements, secrecy jurisdictions",
+      "keywords": ["offshore", "shell company", "nominee", "bearer share", "beneficial owner", "trust", "foundation", "BVI", "Cayman", "Panama", "Luxembourg", "nominee director", "registered agent", "corporate veil"],
+      "color": "#C51162"
+    },
+    {
+      "name": "Asset Concealment",
+      "description": "Hidden assets, layered ownership, fraudulent conveyance",
+      "keywords": ["asset concealment", "hidden assets", "layered ownership", "fraudulent conveyance", "fraudulent transfer", "alter ego", "piercing the veil", "commingling", "dissipation", "asset protection trust"],
+      "color": "#DD2C00"
+    },
+    {
+      "name": "Cryptocurrency",
+      "description": "Digital assets, DeFi, blockchain transactions, mixer activity",
+      "keywords": ["cryptocurrency", "bitcoin", "ethereum", "DeFi", "DEX", "mixer", "tumbler", "tornado cash", "bridge", "smart contract", "NFT", "DAO", "stablecoin", "CBDC", "flash loan", "rug pull", "exit scam"],
+      "color": "#F57C00"
+    },
+    {
+      "name": "Short Selling",
+      "description": "Short selling, naked shorts, fail-to-deliver, short squeeze",
+      "keywords": ["short selling", "short sale", "naked short", "locate", "borrow", "fail-to-deliver", "FTD", "short squeeze", "Reg SHO", "threshold list", "hard-to-borrow", "stock loan"],
+      "color": "#E65100"
+    },
+    {
+      "name": "Sanctions & Embargoes",
+      "description": "OFAC, EU, UN sanctions, export controls, designated persons",
+      "keywords": ["sanctions", "embargo", "OFAC", "SDN", "blocked person", "designated", "export control", "EAR", "ITAR", "EU sanctions", "UN sanctions", "primary sanctions", "secondary sanctions", "sanctions evasion"],
+      "color": "#B71C1C"
+    },
+    {
+      "name": "Data Privacy",
+      "description": "PII handling, GLBA, CCPA, GDPR in financial services",
+      "keywords": ["PII", "personal data", "privacy", "GLBA", "CCPA", "GDPR", "data breach", "data protection", "consumer financial", "Regulation P", "opt-out", "safeguards rule"],
+      "color": "#1565C0"
+    },
+    {
+      "name": "Whistleblower",
+      "description": "Whistleblower tips, rewards, retaliation, protected disclosures",
+      "keywords": ["whistleblower", "tip", "informant", "qui tam", "bounty", "retaliation", "protected activity", "SOX 806", "Dodd-Frank 922", "SEC whistleblower", "CFTC whistleblower", "IRS whistleblower"],
+      "color": "#FFD600"
+    },
+    {
+      "name": "Risk Event",
+      "description": "Credit events, margin calls, covenant breaches, systemic risk",
+      "keywords": ["credit event", "default", "cross-default", "margin call", "covenant breach", "downgrade", "credit watch", "force majeure", "material adverse", "systemic risk", "contagion", "stress test"],
+      "color": "#FF3D00"
+    },
+    {
+      "name": "Collusion & Conspiracy",
+      "description": "Price fixing, bid rigging, market allocation, cartel activity",
+      "keywords": ["collusion", "conspiracy", "price fixing", "bid rigging", "market allocation", "cartel", "antitrust", "LIBOR", "benchmark manipulation", "ISDAFIX", "FX fixing", "precious metals"],
+      "color": "#880E4F"
+    }
+  ],
+
+  "authorities": [
+    {
+      "name": "SEC Rule 10b-5",
+      "description": "Employment of manipulative and deceptive devices (anti-fraud)",
+      "patterns": ["\\b(?:Rule\\s+)?10b-?5\\b", "\\bSection\\s+10\\(b\\)\\b", "\\bExchange\\s+Act.*fraud\\b"]
+    },
+    {
+      "name": "SEC Regulation FD",
+      "description": "Fair disclosure — selective disclosure prohibition",
+      "patterns": ["\\bReg(?:ulation)?\\s+FD\\b", "\\bfair\\s+disclosure\\b", "\\bselective\\s+disclosure\\b"]
+    },
+    {
+      "name": "SEC Regulation SHO",
+      "description": "Short sale regulation — locate, close-out, threshold",
+      "patterns": ["\\bReg(?:ulation)?\\s+SHO\\b", "\\bRule\\s+20[0-9]\\b", "\\bthreshold\\s+securities?\\b"]
+    },
+    {
+      "name": "Dodd-Frank Act",
+      "description": "Wall Street Reform and Consumer Protection Act (2010)",
+      "patterns": ["\\bDodd[-\\s]Frank\\b", "\\bTitle\\s+(?:I{1,3}|IV|V|VI|VII|VIII|IX|X|XI|XII|XIII|XIV|XV|XVI)\\b.*(?:Dodd|Frank)", "\\bVolcker\\s+Rule\\b", "\\b§\\s*9(?:19|2[0-9])\\b"]
+    },
+    {
+      "name": "Bank Secrecy Act (BSA)",
+      "description": "Anti-money laundering framework — CTR, SAR, CDD",
+      "patterns": ["\\bBank\\s+Secrecy\\s+Act\\b", "\\bBSA\\b", "\\b31\\s+(?:USC|U\\.S\\.C\\.)\\s+§?\\s*53[0-9]{2}\\b"]
+    },
+    {
+      "name": "OFAC Regulations",
+      "description": "Office of Foreign Assets Control — sanctions enforcement",
+      "patterns": ["\\bOFAC\\b", "\\b31\\s+CFR\\s+(?:Part\\s+)?5[0-9]{2}\\b", "\\bSDN\\s+[Ll]ist\\b", "\\bSpecially\\s+Designated\\b"]
+    },
+    {
+      "name": "Sarbanes-Oxley Act (SOX)",
+      "description": "Corporate governance, financial disclosure, auditor independence",
+      "patterns": ["\\bSarbanes[-\\s]Oxley\\b", "\\bSOX\\b", "\\b(?:Section|§)\\s*(?:302|404|802|806|906)\\b.*(?:SOX|Sarbanes)"]
+    },
+    {
+      "name": "FCPA",
+      "description": "Foreign Corrupt Practices Act — anti-bribery, books & records",
+      "patterns": ["\\bFCPA\\b", "\\bForeign\\s+Corrupt\\s+Practices\\b", "\\b15\\s+(?:USC|U\\.S\\.C\\.)\\s+§?\\s*78[a-z]+\\b"]
+    },
+    {
+      "name": "FINRA Rules",
+      "description": "Financial Industry Regulatory Authority — broker-dealer regulation",
+      "patterns": ["\\bFINRA\\s+Rule\\s+[0-9]{4}\\b", "\\bNASD\\s+Rule\\b", "\\bFINRA.*(?:sanction|enforcement|arbitration|suspension|bar)\\b"]
+    },
+    {
+      "name": "MiFID II / MiFIR",
+      "description": "Markets in Financial Instruments — EU market regulation",
+      "patterns": ["\\bMiFID\\s*II?\\b", "\\bMiFIR\\b", "\\bMAR\\b.*(?:market\\s+abuse|manipulation)", "\\bEMIR\\b"]
+    },
+    {
+      "name": "Basel III / IV",
+      "description": "International banking capital and liquidity standards",
+      "patterns": ["\\bBasel\\s+(?:III|IV|3|4)\\b", "\\bCET1\\b", "\\bTier\\s+[12]\\s+capital\\b", "\\bLCR\\b.*(?:liquidity|coverage)", "\\bNSFR\\b"]
+    },
+    {
+      "name": "FATF Recommendations",
+      "description": "Financial Action Task Force — international AML/CFT standards",
+      "patterns": ["\\bFATF\\b", "\\bFinancial\\s+Action\\s+Task\\s+Force\\b", "\\bgrey\\s+list\\b", "\\bblack\\s+list\\b.*FATF", "\\bmutual\\s+evaluation\\b"]
+    },
+    {
+      "name": "CFTC Regulations",
+      "description": "Commodity Futures Trading Commission — derivatives oversight",
+      "patterns": ["\\bCFTC\\b", "\\b(?:17\\s+CFR|Commodity\\s+Exchange\\s+Act)\\b", "\\bswap\\s+dealer\\b", "\\bfutures\\s+commission\\s+merchant\\b"]
+    },
+    {
+      "name": "PCAOB Standards",
+      "description": "Public Company Accounting Oversight Board — audit standards",
+      "patterns": ["\\bPCAOB\\b", "\\bAS\\s+[0-9]{4}\\b", "\\baudit(?:or|ing)?\\s+standard\\b", "\\bpublic\\s+company\\s+accounting\\b"]
+    },
+    {
+      "name": "USA PATRIOT Act",
+      "description": "Enhanced due diligence, information sharing, correspondent banking",
+      "patterns": ["\\bPATRIOT\\s+Act\\b", "\\b(?:Section|§)\\s*(?:311|312|313|314|326)\\b.*(?:PATRIOT|BSA)", "\\b314\\(a\\)\\b", "\\b314\\(b\\)\\b"]
+    }
+  ],
+
+  "focus_modes": [
+    {
+      "name": "fraud",
+      "label": "Securities Fraud",
+      "description": "Securities fraud detection — Ponzi schemes, accounting fraud, market manipulation, misrepresentation",
+      "boost_categories": ["Market Manipulation", "Insider Trading", "Financial Statement", "Collusion & Conspiracy"],
+      "boost_entities": ["SEC_Filing", "Legal_Action", "Monetary_Value", "Person"],
+      "keywords": ["fraud", "scheme", "deceive", "misrepresent", "material misstatement", "Ponzi", "pyramid", "fictitious", "fabricated", "sham"]
+    },
+    {
+      "name": "compliance",
+      "label": "Regulatory Compliance",
+      "description": "Regulatory compliance audit — filing gaps, program deficiencies, examination findings",
+      "boost_categories": ["Regulatory Filing", "Data Privacy", "Risk Event"],
+      "boost_entities": ["SEC_Filing", "Regulatory_Body", "Compliance_Program", "Document_Type"],
+      "keywords": ["compliance", "deficiency", "finding", "remediation", "corrective action", "examination", "inspection", "audit", "policy", "procedure"]
+    },
+    {
+      "name": "market",
+      "label": "Market Surveillance",
+      "description": "Market microstructure analysis — order flow, price anomalies, trading pattern surveillance",
+      "boost_categories": ["Market Manipulation", "Short Selling", "Corporate Action"],
+      "boost_entities": ["Ticker", "Exchange", "Transaction_Type", "Monetary_Value"],
+      "keywords": ["surveillance", "anomaly", "pattern", "volume", "price", "order", "trade", "execution", "cross", "match"]
+    },
+    {
+      "name": "crypto",
+      "label": "Crypto Forensics",
+      "description": "Blockchain and cryptocurrency investigation — mixer tracing, DeFi exploits, wallet clustering",
+      "boost_categories": ["Cryptocurrency", "AML / KYC", "Sanctions & Embargoes"],
+      "boost_entities": ["Crypto_Entity", "Account_Number", "Monetary_Value", "Jurisdiction"],
+      "keywords": ["blockchain", "wallet", "address", "mixer", "tumbler", "DeFi", "smart contract", "on-chain", "off-chain", "bridge"]
+    },
+    {
+      "name": "aml",
+      "label": "AML Investigation",
+      "description": "Anti-money laundering investigation — transaction monitoring, typology matching, network mapping",
+      "boost_categories": ["AML / KYC", "Wire & Fund Transfer", "Offshore Structure", "Asset Concealment"],
+      "boost_entities": ["AML_Indicator", "SWIFT_BIC", "Account_Number", "Jurisdiction", "Company"],
+      "keywords": ["laundering", "structuring", "smurfing", "layering", "placement", "integration", "proceeds", "illicit", "suspicious", "unusual"]
+    },
+    {
+      "name": "sanctions",
+      "label": "Sanctions Screening",
+      "description": "Sanctions compliance — OFAC SDN screening, evasion detection, secondary sanctions risk",
+      "boost_categories": ["Sanctions & Embargoes", "Wire & Fund Transfer", "Offshore Structure"],
+      "boost_entities": ["Sanctions_Reference", "Jurisdiction", "Company", "Person", "SWIFT_BIC"],
+      "keywords": ["sanctions", "embargo", "designated", "blocked", "SDN", "restricted", "prohibited", "evasion", "circumvention", "front company"]
+    },
+    {
+      "name": "insider",
+      "label": "Insider Trading",
+      "description": "Insider trading investigation — MNPI flow tracing, trading window analysis, tipping chain mapping",
+      "boost_categories": ["Insider Trading", "Corporate Action", "Related Party Transaction"],
+      "boost_entities": ["Person", "Ticker", "SEC_Filing", "Date_Financial", "Company"],
+      "keywords": ["insider", "MNPI", "material", "non-public", "tipping", "trading window", "blackout", "pre-clearance", "Form 4", "Section 16"]
+    },
+    {
+      "name": "forensic",
+      "label": "Forensic Accounting",
+      "description": "Forensic accounting and asset tracing — fund flow reconstruction, beneficial ownership mapping",
+      "boost_categories": ["Financial Statement", "Offshore Structure", "Asset Concealment", "Related Party Transaction"],
+      "boost_entities": ["Company", "Account_Number", "Monetary_Value", "EIN", "Jurisdiction"],
+      "keywords": ["forensic", "tracing", "fund flow", "beneficial owner", "ultimate", "shell", "nominee", "round-trip", "kickback", "embezzlement"]
+    },
+    {
+      "name": "esg",
+      "label": "ESG & Greenwashing",
+      "description": "ESG fraud detection — greenwashing claims, carbon credit manipulation, social impact fraud",
+      "boost_categories": ["Financial Statement", "Regulatory Filing", "Whistleblower"],
+      "boost_entities": ["Company", "SEC_Filing", "Monetary_Value", "Regulatory_Body"],
+      "keywords": ["ESG", "greenwashing", "sustainability", "carbon credit", "offset", "net zero", "climate", "diversity", "social impact", "governance"]
+    },
+    {
+      "name": "tax",
+      "label": "Tax Evasion",
+      "description": "Tax evasion and avoidance investigation — transfer pricing, FATCA, offshore tax schemes",
+      "boost_categories": ["Offshore Structure", "Asset Concealment", "Related Party Transaction"],
+      "boost_entities": ["EIN", "Jurisdiction", "Company", "Monetary_Value", "Account_Number"],
+      "keywords": ["tax evasion", "tax fraud", "transfer pricing", "FATCA", "CRS", "treaty abuse", "base erosion", "profit shifting", "BEPS", "tax haven"]
+    }
+  ],
+
+  "settings": {
+    "default_focus": "fraud",
+    "entity_confidence_threshold": 0.65,
+    "max_entities_per_document": 500,
+    "enable_cross_reference": true,
+    "enable_relationship_mapping": true,
+    "enable_temporal_analysis": true,
+    "currency_normalization": "USD",
+    "jurisdiction_risk_scoring": true
+  }
+}
