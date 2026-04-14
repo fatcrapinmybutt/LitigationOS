@@ -1,0 +1,546 @@
+{
+  "$schema": "https://cortex-osint.dev/schemas/domain-pack-v1.json",
+  "name": "Real Estate Intelligence",
+  "id": "cortex-realestate",
+  "version": "1.0.0",
+  "description": "Property ownership research, title chain analysis, LLC piercing, shell company detection, investment intelligence, and fraud pattern recognition for real estate investigations.",
+  "author": "Andrew Pigors",
+  "license": "MIT",
+  "homepage": "https://fatcrapinmybutt.github.io/cortex-site/",
+  "purchase": "https://andrewpioneer6.gumroad.com/l/cjamvzo",
+
+  "entityTypes": [
+    {
+      "id": "property",
+      "label": "Property",
+      "description": "Real property parcel — the atomic unit of real estate intelligence",
+      "shape": "hexagon",
+      "color": "#2196F3",
+      "icon": "🏠",
+      "category": "ownership",
+      "patterns": ["parcel", "real property", "real estate", "lot", "tract", "premises"],
+      "fields": ["address", "apn", "legal_description", "property_type", "year_built", "sq_ft", "lot_size", "assessed_value"]
+    },
+    {
+      "id": "deed",
+      "label": "Deed",
+      "description": "Recorded conveyance instrument transferring property interest",
+      "shape": "document",
+      "color": "#1565C0",
+      "icon": "📋",
+      "category": "title",
+      "patterns": ["warranty deed", "quitclaim deed", "grant deed", "sheriff's deed", "trustee's deed", "deed of trust", "bargain and sale"],
+      "fields": ["instrument_number", "recording_date", "grantor", "grantee", "consideration", "deed_type", "book_page"]
+    },
+    {
+      "id": "parcel",
+      "label": "Tax Parcel",
+      "description": "Assessor's parcel with APN/PIN and tax valuation",
+      "shape": "diamond",
+      "color": "#0D47A1",
+      "icon": "🏷️",
+      "category": "tax",
+      "patterns": ["APN", "PIN", "parcel number", "tax parcel", "assessor parcel", "folio"],
+      "fields": ["apn", "pin", "land_value", "improvement_value", "total_assessed", "tax_year", "exemptions", "delinquent"]
+    },
+    {
+      "id": "building",
+      "label": "Building",
+      "description": "Physical structure on a parcel — residential, commercial, industrial",
+      "shape": "box",
+      "color": "#42A5F5",
+      "icon": "🏗️",
+      "category": "development",
+      "patterns": ["building", "structure", "improvement", "residence", "commercial building", "warehouse"],
+      "fields": ["building_type", "year_built", "stories", "sq_ft", "bedrooms", "bathrooms", "condition", "occupancy"]
+    },
+    {
+      "id": "owner",
+      "label": "Owner",
+      "description": "Individual natural person who owns or controls real property",
+      "shape": "circle",
+      "color": "#4CAF50",
+      "icon": "👤",
+      "category": "ownership",
+      "patterns": ["owner", "individual", "person", "taxpayer", "homeowner", "landlord"],
+      "fields": ["full_name", "mailing_address", "ssn_last4", "dob", "phone", "email"]
+    },
+    {
+      "id": "llc",
+      "label": "LLC",
+      "description": "Limited liability company — the #1 ownership veil in real estate",
+      "shape": "octagon",
+      "color": "#607D8B",
+      "icon": "🏢",
+      "category": "corporate",
+      "patterns": ["LLC", "limited liability", "L.L.C.", "limited liability company"],
+      "fields": ["entity_name", "state_of_formation", "formation_date", "registered_agent", "agent_address", "status", "members", "managers", "annual_report_date"]
+    },
+    {
+      "id": "trust",
+      "label": "Trust",
+      "description": "Trust vehicle holding real property — land trust, living trust, irrevocable",
+      "shape": "shield",
+      "color": "#78909C",
+      "icon": "🛡️",
+      "category": "corporate",
+      "patterns": ["trust", "land trust", "living trust", "irrevocable trust", "revocable trust", "family trust", "trustee"],
+      "fields": ["trust_name", "trust_type", "trustee", "beneficiary", "formation_date", "state"]
+    },
+    {
+      "id": "corporation",
+      "label": "Corporation",
+      "description": "Incorporated entity holding real property",
+      "shape": "pentagon",
+      "color": "#546E7A",
+      "icon": "🏛️",
+      "category": "corporate",
+      "patterns": ["Inc", "Corp", "corporation", "incorporated", "S-corp", "C-corp", "nonprofit"],
+      "fields": ["corporate_name", "state_of_incorporation", "date_incorporated", "officers", "directors", "registered_agent", "status"]
+    },
+    {
+      "id": "partnership",
+      "label": "Partnership",
+      "description": "General or limited partnership in property ownership or development",
+      "shape": "parallelogram",
+      "color": "#455A64",
+      "icon": "🤝",
+      "category": "corporate",
+      "patterns": ["partnership", "LP", "LLP", "general partnership", "limited partnership", "joint venture"],
+      "fields": ["partnership_name", "type", "general_partners", "limited_partners", "formation_date", "state"]
+    },
+    {
+      "id": "registered_agent",
+      "label": "Registered Agent",
+      "description": "Person or service receiving legal notice — key shell company indicator",
+      "shape": "tag",
+      "color": "#B0BEC5",
+      "icon": "📇",
+      "category": "corporate",
+      "patterns": ["registered agent", "statutory agent", "agent for service", "CT Corporation", "CSC"],
+      "fields": ["agent_name", "agent_address", "entities_served", "agent_type"]
+    },
+    {
+      "id": "beneficial_owner",
+      "label": "Beneficial Owner",
+      "description": "The real human behind the entity stack — the ultimate target",
+      "shape": "star",
+      "color": "#FF9800",
+      "icon": "🧑‍💼",
+      "category": "ownership",
+      "patterns": ["beneficial owner", "ultimate owner", "controlling person", "UBO", "real owner"],
+      "fields": ["full_name", "ownership_percentage", "control_method", "identified_via", "confidence_score"]
+    },
+    {
+      "id": "mortgage",
+      "label": "Mortgage",
+      "description": "Recorded lien securing debt against real property",
+      "shape": "rectangle",
+      "color": "#E91E63",
+      "icon": "💰",
+      "category": "finance",
+      "patterns": ["mortgage", "deed of trust", "security instrument", "note", "lien"],
+      "fields": ["instrument_number", "recording_date", "lender", "borrower", "original_amount", "interest_rate", "maturity_date", "loan_type"]
+    },
+    {
+      "id": "lien",
+      "label": "Lien",
+      "description": "Encumbrance against property — tax, mechanic's, judgment, HOA",
+      "shape": "triangle",
+      "color": "#F44336",
+      "icon": "⚠️",
+      "category": "legal",
+      "patterns": ["lien", "tax lien", "mechanic's lien", "judgment lien", "HOA lien", "federal tax lien", "lis pendens"],
+      "fields": ["lien_type", "amount", "recording_date", "creditor", "debtor", "status", "priority", "release_date"]
+    },
+    {
+      "id": "assessment",
+      "label": "Assessment",
+      "description": "County assessor valuation — land plus improvements",
+      "shape": "bar",
+      "color": "#795548",
+      "icon": "📊",
+      "category": "tax",
+      "patterns": ["assessment", "assessed value", "appraisal", "valuation", "tax assessment", "equalized value"],
+      "fields": ["tax_year", "land_value", "improvement_value", "total_value", "tax_rate", "annual_tax", "exemptions"]
+    },
+    {
+      "id": "lender",
+      "label": "Lender",
+      "description": "Financial institution or private lender providing mortgage financing",
+      "shape": "bank",
+      "color": "#4CAF50",
+      "icon": "🏦",
+      "category": "finance",
+      "patterns": ["bank", "credit union", "mortgage company", "lender", "hard money", "private lender", "servicer"],
+      "fields": ["lender_name", "nmls_id", "lender_type", "total_loans", "portfolio_value"]
+    },
+    {
+      "id": "transaction",
+      "label": "Transaction",
+      "description": "Property sale, refinance, or transfer event with price and parties",
+      "shape": "arrow",
+      "color": "#00C853",
+      "icon": "💵",
+      "category": "finance",
+      "patterns": ["sale", "purchase", "transfer", "conveyance", "refinance", "closing", "settlement"],
+      "fields": ["transaction_date", "sale_price", "buyer", "seller", "transaction_type", "financing", "title_company"]
+    },
+    {
+      "id": "permit",
+      "label": "Permit",
+      "description": "Building, demolition, or trade permit issued by local jurisdiction",
+      "shape": "clipboard",
+      "color": "#FF9800",
+      "icon": "📐",
+      "category": "development",
+      "patterns": ["building permit", "demolition permit", "electrical permit", "plumbing permit", "mechanical permit", "grading permit"],
+      "fields": ["permit_number", "permit_type", "issue_date", "status", "valuation", "contractor", "description", "inspections"]
+    },
+    {
+      "id": "zoning",
+      "label": "Zoning",
+      "description": "Land use classification — residential, commercial, industrial, mixed",
+      "shape": "grid",
+      "color": "#9C27B0",
+      "icon": "🗺️",
+      "category": "zoning",
+      "patterns": ["zoning", "land use", "R-1", "R-2", "C-1", "C-2", "M-1", "PUD", "overlay district", "conditional use"],
+      "fields": ["zone_code", "zone_description", "allowed_uses", "max_density", "max_height", "setbacks", "overlay", "variance"]
+    },
+    {
+      "id": "development",
+      "label": "Development Project",
+      "description": "Active development — planned, entitled, under construction, or completed",
+      "shape": "crane",
+      "color": "#E65100",
+      "icon": "🏗️",
+      "category": "development",
+      "patterns": ["development", "project", "subdivision", "site plan", "planned development", "construction"],
+      "fields": ["project_name", "developer", "status", "units", "sq_ft", "estimated_value", "completion_date", "entitlements"]
+    },
+    {
+      "id": "subdivision",
+      "label": "Subdivision",
+      "description": "Platted subdivision with lot/block/unit structure",
+      "shape": "map",
+      "color": "#BF360C",
+      "icon": "🌍",
+      "category": "development",
+      "patterns": ["subdivision", "plat", "addition", "phase", "lot", "block", "unit"],
+      "fields": ["subdivision_name", "plat_date", "total_lots", "developer", "county", "recording_info"]
+    },
+    {
+      "id": "court_case",
+      "label": "Court Case",
+      "description": "Litigation involving real property — foreclosure, quiet title, partition, eviction",
+      "shape": "gavel",
+      "color": "#D32F2F",
+      "icon": "⚖️",
+      "category": "legal",
+      "patterns": ["foreclosure", "quiet title", "partition", "eviction", "unlawful detainer", "ejectment", "condemnation", "eminent domain"],
+      "fields": ["case_number", "court", "case_type", "parties", "filing_date", "status", "judgment_amount", "sale_date"]
+    },
+    {
+      "id": "easement",
+      "label": "Easement",
+      "description": "Recorded right to use another's property — utility, access, conservation",
+      "shape": "path",
+      "color": "#8D6E63",
+      "icon": "📜",
+      "category": "title",
+      "patterns": ["easement", "right of way", "utility easement", "access easement", "conservation easement", "prescriptive"],
+      "fields": ["easement_type", "grantor", "grantee", "purpose", "recording_date", "instrument_number"]
+    },
+    {
+      "id": "violation",
+      "label": "Code Violation",
+      "description": "Building code violation, condemnation, or environmental notice",
+      "shape": "alert",
+      "color": "#B71C1C",
+      "icon": "🚫",
+      "category": "regulatory",
+      "patterns": ["violation", "code violation", "condemnation", "blight", "nuisance", "unsafe structure"],
+      "fields": ["violation_type", "date_issued", "status", "fine_amount", "description", "compliance_date"]
+    },
+    {
+      "id": "government_agency",
+      "label": "Government Agency",
+      "description": "County recorder, assessor, planning commission, housing authority",
+      "shape": "building",
+      "color": "#37474F",
+      "icon": "🏛️",
+      "category": "regulatory",
+      "patterns": ["recorder", "assessor", "planning commission", "zoning board", "housing authority", "building department"],
+      "fields": ["agency_name", "jurisdiction", "department", "contact"]
+    },
+    {
+      "id": "agent_broker",
+      "label": "Agent / Broker",
+      "description": "Licensed real estate professional — agent, broker, appraiser",
+      "shape": "person",
+      "color": "#00897B",
+      "icon": "👔",
+      "category": "market",
+      "patterns": ["real estate agent", "broker", "realtor", "appraiser", "listing agent", "buyer's agent"],
+      "fields": ["name", "license_number", "brokerage", "license_type", "status", "transactions"]
+    },
+    {
+      "id": "hoa",
+      "label": "HOA / COA",
+      "description": "Homeowners or condominium owners association",
+      "shape": "community",
+      "color": "#00695C",
+      "icon": "🏘️",
+      "category": "ownership",
+      "patterns": ["HOA", "homeowners association", "COA", "condo association", "property owners association", "POA"],
+      "fields": ["association_name", "management_company", "annual_dues", "reserve_fund", "special_assessments"]
+    },
+    {
+      "id": "title_company",
+      "label": "Title Company",
+      "description": "Title insurance underwriter or closing/settlement agent",
+      "shape": "seal",
+      "color": "#00ACC1",
+      "icon": "🛡️",
+      "category": "title",
+      "patterns": ["title company", "title insurance", "closing agent", "settlement agent", "escrow", "underwriter"],
+      "fields": ["company_name", "underwriter", "license_number", "state"]
+    }
+  ],
+
+  "categories": [
+    { "id": "ownership", "label": "Ownership", "color": "#2196F3", "description": "Property ownership chains, entity stacks, and beneficial owners" },
+    { "id": "finance", "label": "Finance", "color": "#4CAF50", "description": "Mortgages, loans, transactions, and financial instruments" },
+    { "id": "legal", "label": "Legal", "color": "#F44336", "description": "Liens, disputes, foreclosures, and court proceedings" },
+    { "id": "development", "label": "Development", "color": "#FF9800", "description": "Permits, projects, construction, and subdivisions" },
+    { "id": "zoning", "label": "Zoning", "color": "#9C27B0", "description": "Land use, zoning codes, variances, and overlays" },
+    { "id": "corporate", "label": "Corporate", "color": "#607D8B", "description": "LLCs, corporations, trusts, partnerships, and registered agents" },
+    { "id": "tax", "label": "Tax", "color": "#795548", "description": "Assessments, tax bills, exemptions, delinquencies, and sales" },
+    { "id": "title", "label": "Title", "color": "#00BCD4", "description": "Chain of title, encumbrances, deeds, and title insurance" },
+    { "id": "environmental", "label": "Environmental", "color": "#8BC34A", "description": "Phase I/II, contamination, brownfields, and cleanup" },
+    { "id": "insurance", "label": "Insurance", "color": "#FF5722", "description": "Title insurance policies, hazard, and flood zone data" },
+    { "id": "market", "label": "Market", "color": "#3F51B5", "description": "Comparables, listing data, market trends, and agents" },
+    { "id": "tenant", "label": "Tenant", "color": "#E91E63", "description": "Leases, rent rolls, occupancy rates, and eviction history" },
+    { "id": "infrastructure", "label": "Infrastructure", "color": "#009688", "description": "Utilities, roads, transit access, and connectivity" },
+    { "id": "historical", "label": "Historical", "color": "#827717", "description": "Prior ownership, historical land use, and demolition records" },
+    { "id": "regulatory", "label": "Regulatory", "color": "#AD1457", "description": "HUD, CFPB, state licensing, RESPA, and fair housing compliance" }
+  ],
+
+  "authorityPatterns": [
+    {
+      "id": "county_recorder",
+      "label": "County Recorder / Register of Deeds",
+      "description": "Official recorded instruments — deeds, mortgages, liens, easements, plats",
+      "patterns": ["instrument no", "book/page", "recording date", "document number", "official records", "register of deeds"],
+      "confidence": 0.95,
+      "sourceType": "public_record"
+    },
+    {
+      "id": "county_assessor",
+      "label": "County Assessor / Property Appraiser",
+      "description": "Tax parcel data — APN, assessed values, property characteristics",
+      "patterns": ["APN", "parcel ID", "assessed value", "tax roll", "property appraiser", "equalized value"],
+      "confidence": 0.95,
+      "sourceType": "public_record"
+    },
+    {
+      "id": "alta_standards",
+      "label": "ALTA Title Standards",
+      "description": "American Land Title Association examination and endorsement standards",
+      "patterns": ["ALTA", "title standard", "endorsement", "survey", "commitment", "policy exception"],
+      "confidence": 0.90,
+      "sourceType": "industry_standard"
+    },
+    {
+      "id": "hud_regulations",
+      "label": "HUD / CFPB Regulations",
+      "description": "Federal housing regulations — RESPA, TILA, Fair Housing Act, Reg Z",
+      "patterns": ["RESPA", "TILA", "Reg Z", "HUD-1", "closing disclosure", "good faith estimate", "Fair Housing"],
+      "confidence": 0.90,
+      "sourceType": "federal_regulation"
+    },
+    {
+      "id": "state_licensing",
+      "label": "State Real Estate Licensing",
+      "description": "Agent and broker license verification, disciplinary records",
+      "patterns": ["license number", "broker license", "agent license", "disciplinary action", "license status"],
+      "confidence": 0.85,
+      "sourceType": "state_regulatory"
+    },
+    {
+      "id": "mls_data",
+      "label": "MLS / Listing Data",
+      "description": "Multiple Listing Service records — listing price, DOM, history",
+      "patterns": ["MLS#", "listing", "days on market", "list price", "sold price", "pending", "active"],
+      "confidence": 0.80,
+      "sourceType": "industry_database"
+    },
+    {
+      "id": "ucc_filings",
+      "label": "Uniform Commercial Code",
+      "description": "UCC financing statements, fixture filings, and amendments",
+      "patterns": ["UCC", "financing statement", "UCC-1", "UCC-3", "fixture filing", "secured party"],
+      "confidence": 0.90,
+      "sourceType": "public_record"
+    },
+    {
+      "id": "fema_flood",
+      "label": "FEMA Flood Maps",
+      "description": "National Flood Insurance Program zone designations and FIRM panels",
+      "patterns": ["flood zone", "FIRM", "SFHA", "Zone A", "Zone V", "Zone X", "NFIP", "LOMA", "LOMR"],
+      "confidence": 0.95,
+      "sourceType": "federal_data"
+    },
+    {
+      "id": "epa_records",
+      "label": "EPA Environmental Records",
+      "description": "Superfund, brownfields, RCRA, underground storage tanks",
+      "patterns": ["Superfund", "NPL", "brownfield", "RCRA", "UST", "CERCLA", "Phase I", "Phase II"],
+      "confidence": 0.90,
+      "sourceType": "federal_environmental"
+    },
+    {
+      "id": "court_records",
+      "label": "Court Records",
+      "description": "Civil court filings — foreclosures, liens, judgments, quiet title actions",
+      "patterns": ["case number", "docket", "lis pendens", "judgment", "foreclosure", "complaint", "decree"],
+      "confidence": 0.90,
+      "sourceType": "public_record"
+    },
+    {
+      "id": "corporate_filings",
+      "label": "Secretary of State / Corporate Filings",
+      "description": "Entity formation, annual reports, officers, registered agents",
+      "patterns": ["articles of organization", "articles of incorporation", "annual report", "certificate of formation", "entity search"],
+      "confidence": 0.90,
+      "sourceType": "public_record"
+    },
+    {
+      "id": "census_acs",
+      "label": "Census / American Community Survey",
+      "description": "Demographic and housing data for market and community analysis",
+      "patterns": ["census tract", "block group", "ACS", "median income", "housing units", "vacancy rate"],
+      "confidence": 0.85,
+      "sourceType": "federal_statistical"
+    }
+  ],
+
+  "focusModes": [
+    {
+      "id": "ownership",
+      "label": "🔗 Ownership Tracing",
+      "description": "Trace full ownership chains from current holder through LLCs, trusts, and nominees to beneficial owners",
+      "highlightEntities": ["property", "owner", "llc", "trust", "corporation", "partnership", "beneficial_owner", "registered_agent"],
+      "highlightCategories": ["ownership", "corporate"],
+      "primaryColor": "#2196F3"
+    },
+    {
+      "id": "fraud",
+      "label": "🕵️ Fraud Detection",
+      "description": "Highlight suspicious patterns: straw buyers, same-day transfers, below-market sales, quitclaim chains, address clustering",
+      "highlightEntities": ["transaction", "deed", "llc", "registered_agent", "beneficial_owner", "court_case"],
+      "highlightCategories": ["ownership", "legal", "finance"],
+      "primaryColor": "#F44336",
+      "rules": [
+        "Flag transfers where buyer entity formed < 30 days before closing",
+        "Flag sales > 30% below comparable market value",
+        "Flag quitclaim deed chains with 3+ transfers in 12 months",
+        "Flag multiple LLCs sharing a registered agent address",
+        "Flag immediate re-transfer after purchase (< 90 days)"
+      ]
+    },
+    {
+      "id": "investment",
+      "label": "💰 Investment Analysis",
+      "description": "Evaluate investment potential: permits, zoning, comps, development pipeline, and upside indicators",
+      "highlightEntities": ["property", "permit", "zoning", "development", "transaction", "assessment"],
+      "highlightCategories": ["development", "market", "zoning", "finance"],
+      "primaryColor": "#4CAF50"
+    },
+    {
+      "id": "foreclosure",
+      "label": "🏚️ Foreclosure Tracking",
+      "description": "Track lis pendens → default → auction → REO → resale pipeline with tax delinquency cross-reference",
+      "highlightEntities": ["court_case", "lien", "property", "mortgage", "lender", "transaction"],
+      "highlightCategories": ["legal", "finance", "tax"],
+      "primaryColor": "#FF5722"
+    },
+    {
+      "id": "zoning",
+      "label": "🗺️ Zoning & Land Use",
+      "description": "Visualize zoning classifications, pending variances, conditional uses, and rezoning patterns",
+      "highlightEntities": ["zoning", "property", "permit", "development", "government_agency"],
+      "highlightCategories": ["zoning", "development", "regulatory"],
+      "primaryColor": "#9C27B0"
+    },
+    {
+      "id": "development",
+      "label": "🏗️ Development Pipeline",
+      "description": "Map active permits, contractor networks, inspection timelines, and certificate of occupancy status",
+      "highlightEntities": ["permit", "development", "subdivision", "building", "zoning"],
+      "highlightCategories": ["development", "zoning"],
+      "primaryColor": "#FF9800"
+    },
+    {
+      "id": "tax",
+      "label": "💸 Tax Exposure",
+      "description": "Aggregate assessed values, exemptions, delinquencies, and tax sale history across owner portfolios",
+      "highlightEntities": ["assessment", "parcel", "lien", "property", "owner", "llc"],
+      "highlightCategories": ["tax", "ownership"],
+      "primaryColor": "#795548"
+    },
+    {
+      "id": "title",
+      "label": "📜 Title Examination",
+      "description": "Full chain of title with every recorded instrument: deeds, mortgages, releases, easements, liens, judgments",
+      "highlightEntities": ["deed", "mortgage", "lien", "easement", "property", "title_company"],
+      "highlightCategories": ["title", "legal", "finance"],
+      "primaryColor": "#00BCD4"
+    }
+  ],
+
+  "relationshipTypes": [
+    { "id": "owns", "label": "Owns", "from": ["owner", "llc", "trust", "corporation", "partnership"], "to": ["property"], "color": "#2196F3" },
+    { "id": "member_of", "label": "Member Of", "from": ["owner", "beneficial_owner"], "to": ["llc", "partnership"], "color": "#607D8B" },
+    { "id": "trustee_of", "label": "Trustee Of", "from": ["owner"], "to": ["trust"], "color": "#78909C" },
+    { "id": "beneficiary_of", "label": "Beneficiary Of", "from": ["beneficial_owner", "owner"], "to": ["trust"], "color": "#90A4AE" },
+    { "id": "officer_of", "label": "Officer Of", "from": ["owner"], "to": ["corporation"], "color": "#546E7A" },
+    { "id": "registered_agent_for", "label": "Registered Agent For", "from": ["registered_agent"], "to": ["llc", "corporation", "partnership"], "color": "#B0BEC5" },
+    { "id": "conveyed_by", "label": "Conveyed By", "from": ["deed"], "to": ["property"], "color": "#1565C0" },
+    { "id": "granted_by", "label": "Grantor", "from": ["owner", "llc", "trust", "corporation"], "to": ["deed"], "color": "#1976D2" },
+    { "id": "granted_to", "label": "Grantee", "from": ["deed"], "to": ["owner", "llc", "trust", "corporation"], "color": "#1E88E5" },
+    { "id": "secures", "label": "Secures", "from": ["mortgage"], "to": ["property"], "color": "#E91E63" },
+    { "id": "lent_by", "label": "Lent By", "from": ["lender"], "to": ["mortgage"], "color": "#4CAF50" },
+    { "id": "encumbers", "label": "Encumbers", "from": ["lien", "easement"], "to": ["property"], "color": "#F44336" },
+    { "id": "assessed_at", "label": "Assessed At", "from": ["assessment"], "to": ["parcel"], "color": "#795548" },
+    { "id": "permitted_on", "label": "Permitted On", "from": ["permit"], "to": ["property"], "color": "#FF9800" },
+    { "id": "zoned_as", "label": "Zoned As", "from": ["property"], "to": ["zoning"], "color": "#9C27B0" },
+    { "id": "involves", "label": "Involves", "from": ["court_case"], "to": ["property", "owner", "llc"], "color": "#D32F2F" },
+    { "id": "sold_in", "label": "Sold In", "from": ["property"], "to": ["transaction"], "color": "#00C853" },
+    { "id": "developed_by", "label": "Developed By", "from": ["development"], "to": ["owner", "llc", "corporation"], "color": "#E65100" },
+    { "id": "insured_by", "label": "Insured By", "from": ["property"], "to": ["title_company"], "color": "#00ACC1" },
+    { "id": "managed_by", "label": "Managed By", "from": ["property"], "to": ["hoa"], "color": "#00695C" },
+    { "id": "listed_by", "label": "Listed By", "from": ["property"], "to": ["agent_broker"], "color": "#00897B" },
+    { "id": "parent_of", "label": "Parent Entity", "from": ["llc", "corporation", "trust"], "to": ["llc", "corporation"], "color": "#455A64" },
+    { "id": "controls", "label": "Controls", "from": ["beneficial_owner"], "to": ["llc", "trust", "corporation", "partnership"], "color": "#FF9800" }
+  ],
+
+  "settings": {
+    "defaultFocusMode": "ownership",
+    "graphLayout": "force-directed",
+    "physics": {
+      "chargeStrength": -300,
+      "linkDistance": 120,
+      "collisionRadius": 40,
+      "centerStrength": 0.05
+    },
+    "display": {
+      "showLabels": true,
+      "showEdgeLabels": false,
+      "nodeSize": "byConnections",
+      "edgeThickness": "byWeight",
+      "colorScheme": "byCategory"
+    }
+  }
+}
