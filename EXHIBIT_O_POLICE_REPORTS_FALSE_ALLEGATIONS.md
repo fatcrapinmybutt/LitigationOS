@@ -1,0 +1,764 @@
+# EXHIBIT O — Police Investigation Reports
+## False Allegations Refutation & Cooperation Records
+## Compiled: April 01, 2026
+
+### Summary
+Across 15+ police contacts initiated by Emily Watson and/or the Watson family, Plaintiff Andrew James Pigors was NEVER arrested or charged. Every investigation cleared Andrew or found insufficient evidence. Key findings include:
+
+- Officer Ella Randall: Emily Watson admitted to METH USE
+- NS2505044: Albert Watson admitted premeditated plan for ex parte custody
+- Multiple welfare checks: All cleared Andrew
+- Arsenic poisoning allegation: ER toxicology NEGATIVE
+- Physical assault allegations: No evidence found
+
+### Police Report Records (50 reviewed)
+
+**Report 1**
+- **id**: 1
+- **file_path**: 04 - Exhibit A - November 15 Police Report.pdf
+- **filename**: 04 - Exhibit A - November 15 Police Report.pdf
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 2**
+- **id**: 2
+- **file_path**: 1313_VAR_Chapter_4_PPO_Warfare_and_Police_Entanglement.docx
+- **filename**: 1313_VAR_Chapter_4_PPO_Warfare_and_Police_Entanglement.docx
+- **file_size**: 37984
+- **text_length**: 2745
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: ["without evidence, and to use the appearance of legal conflict to strip him of his parental rights.", "against Andrew Pigors, almost all of which were baseless and unsupported by law enforcement. On November 15, 2024, during a court-ordered parenting ex", "Andrew had violated the PPO. The police report generated from that incident\u2014Report MU2422249\u2014confirms that Andrew had not made contact with Emily outs", "was closed with no charges filed. Despite this, Emily continued to build a nar
+- **exculpatory**: []
+- **threats**: [", and alienation. Over the course of 2024 and into 2025, Emily filed multiple PPO violation claims a", ", or harassment of any kind. To further validate the malicious nature of these claims, the police ne", ". Each accusation was strategically timed near custody milestones or parenting exchanges. On January"]
+- **child_references**: ["milestones or parenting exchanges. On January 5, 2025, Emily filed PPO Violation #6. This was follo", "cutoff on March 26, 2024, Emily Watson initiated a full-scale legal offensive centered around the m", "claims without evidence, and to use the appearance of legal conflict to strip him of his parental r", "Protection Order (PPO) system. These actions weaponized a protective legal mechanism not for safety", ", a former insider as well, supported this campaign by coordinating parenting interfer
+- **arrests**: ["filed. Despite this, Emily continued to build a narrative of danger and noncompliance. Emily's goal", "Andrew in connection to any of these PPO allegations. Officers responded to calls, reviewed message", "\u2014because no violations had occurred. Nonetheless, the accusations accumulated. Emily's strategy was"]
+- **self_defense**: ["and noncompliance. Emily's goal was not protection\u2014it was punishment. She used these repeated filin", "Order (PPO) system. These actions weaponized a protective legal mechanism not for safety\u2014but for co"]
+- **cps_references**: []
+- **false_reports**: [". Over the course of 2024 and into 2025, Emily filed multiple PPO violation claims against Andrew Pi", "violations of contact rules, all drawn from routine messages in AppClose\u2014a platform specifically co"]
+- **weapons**: ["a protective legal mechanism not for safety\u2014but for control, intimidation, and alienation. Over the", "of the PPO system was not rooted in fear\u2014it was rooted in strategy. The goal was to legally dismant"]
+- **recordings**: ["a court-ordered parenting exchange at the Muskegon Police Department, Emily falsely claimed that An"]
+- **witnesses**: []
+- **key_quotes**: ["Chapter 4: PPO Warfare and Police Entanglement After the custody cutoff on March 26, 2024, Emily Watson initiated a full-scale legal offensive centered around the misuse of the Personal Protection Order (PPO) system", "Over the course of 2024 and into 2025, Emily filed multiple PPO violation claims against Andrew Pigors, almost all of which were baseless and unsupported by law enforcement", "Her mother, Lori Watson, a former insider as well, supported this campaign by coordinating parenting in
+- **entities**: {"pigors": ["Andrew Pigors"], "watson": ["Emily Watson", "Watson"]}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 3**
+- **id**: 3
+- **file_path**: 20250303_104403.jpg
+- **filename**: 20250303_104403.jpg
+- **file_size**: 4973670
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 4**
+- **id**: 4
+- **file_path**: 20250303_104409.jpg
+- **filename**: 20250303_104409.jpg
+- **file_size**: 5274244
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 5**
+- **id**: 5
+- **file_path**: 20250303_104416.jpg
+- **filename**: 20250303_104416.jpg
+- **file_size**: 5114971
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 6**
+- **id**: 6
+- **file_path**: 20250303_123001.jpg
+- **filename**: 20250303_123001.jpg
+- **file_size**: 4520906
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 7**
+- **id**: 7
+- **file_path**: 20250303_123008.jpg
+- **filename**: 20250303_123008.jpg
+- **file_size**: 4697183
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 8**
+- **id**: 8
+- **file_path**: 20250303_123037.jpg
+- **filename**: 20250303_123037.jpg
+- **file_size**: 2892607
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 9**
+- **id**: 9
+- **file_path**: 20250303_123047.jpg
+- **filename**: 20250303_123047.jpg
+- **file_size**: 3913480
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 10**
+- **id**: 10
+- **file_path**: 20250303_125731.jpg
+- **filename**: 20250303_125731.jpg
+- **file_size**: 4605625
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 11**
+- **id**: 11
+- **file_path**: 20250303_125739.jpg
+- **filename**: 20250303_125739.jpg
+- **file_size**: 4023124
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 12**
+- **id**: 12
+- **file_path**: 20250303_125747.jpg
+- **filename**: 20250303_125747.jpg
+- **file_size**: 4414113
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 13**
+- **id**: 13
+- **file_path**: 20250303_125755.jpg
+- **filename**: 20250303_125755.jpg
+- **file_size**: 4138452
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 14**
+- **id**: 14
+- **file_path**: 20250303_125800.jpg
+- **filename**: 20250303_125800.jpg
+- **file_size**: 4259800
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 15**
+- **id**: 15
+- **file_path**: 20250303_125807.jpg
+- **filename**: 20250303_125807.jpg
+- **file_size**: 4237496
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 16**
+- **id**: 16
+- **file_path**: 20250303_125813.jpg
+- **filename**: 20250303_125813.jpg
+- **file_size**: 4093316
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 17**
+- **id**: 17
+- **file_path**: 20250303_125819.jpg
+- **filename**: 20250303_125819.jpg
+- **file_size**: 4168585
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 18**
+- **id**: 18
+- **file_path**: 20250303_125825.jpg
+- **filename**: 20250303_125825.jpg
+- **file_size**: 4573068
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 19**
+- **id**: 19
+- **file_path**: 20250303_125914.jpg
+- **filename**: 20250303_125914.jpg
+- **file_size**: 4149418
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 20**
+- **id**: 20
+- **file_path**: 20250303_125922.jpg
+- **filename**: 20250303_125922.jpg
+- **file_size**: 4105603
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 21**
+- **id**: 21
+- **file_path**: 20250303_125935.jpg
+- **filename**: 20250303_125935.jpg
+- **file_size**: 4065460
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 22**
+- **id**: 22
+- **file_path**: 20250303_130916.jpg
+- **filename**: 20250303_130916.jpg
+- **file_size**: 4432296
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 23**
+- **id**: 23
+- **file_path**: 20250303_130925.jpg
+- **filename**: 20250303_130925.jpg
+- **file_size**: 4305204
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 24**
+- **id**: 24
+- **file_path**: 20250303_130932.jpg
+- **filename**: 20250303_130932.jpg
+- **file_size**: 4337767
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 25**
+- **id**: 25
+- **file_path**: 20250303_130944.jpg
+- **filename**: 20250303_130944.jpg
+- **file_size**: 4295524
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 26**
+- **id**: 26
+- **file_path**: 20250303_130951.jpg
+- **filename**: 20250303_130951.jpg
+- **file_size**: 4001825
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 27**
+- **id**: 27
+- **file_path**: 20250303_130957.jpg
+- **filename**: 20250303_130957.jpg
+- **file_size**: 4049401
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 28**
+- **id**: 28
+- **file_path**: 20250303_131005.jpg
+- **filename**: 20250303_131005.jpg
+- **file_size**: 4143396
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 29**
+- **id**: 29
+- **file_path**: 20250303_131104.jpg
+- **filename**: 20250303_131104.jpg
+- **file_size**: 4462690
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+
+**Report 30**
+- **id**: 30
+- **file_path**: 20250303_131110.jpg
+- **filename**: 20250303_131110.jpg
+- **file_size**: 4632402
+- **officers**: []
+- **incident_numbers**: []
+- **dates**: []
+- **locations**: []
+- **allegations**: []
+- **exculpatory**: []
+- **threats**: []
+- **child_references**: []
+- **ppo_references**: []
+- **arrests**: []
+- **self_defense**: []
+- **cps_references**: []
+- **false_reports**: []
+- **weapons**: []
+- **recordings**: []
+- **witnesses**: []
+- **key_quotes**: []
+- **entities**: {}
+- **created_at**: 2026-03-22 17:42:35
+

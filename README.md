@@ -1,100 +1,49 @@
-# 🧠 CORTEX OSINT Starter Pack
+# GOLDEN_SET — Court-Ready Filing Packets
 
-> **Free, open-source OSINT investigation domain pack for the [CORTEX Intelligence Platform](https://fatcrapinmybutt.github.io/cortex-site/).**
+## What is GOLDEN_SET?
 
-[![Download CORTEX](https://img.shields.io/badge/Download-CORTEX%20Pro-00d4ff?style=for-the-badge)](https://andrewpioneer6.gumroad.com/l/cjamvzo)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+Each subdirectory contains a **verified filing packet** that has passed quality gates:
 
-## What is CORTEX?
+- ✅ Zero AI/database/ references in court-facing content
+- ✅ Zero internal file paths (C:\, I:\, etc.) in court-facing content
+- ✅ All day counts use date-anchored phrasing (not hardcoded stale numbers)
+- ✅ Correct party names: Emily A. Watson, Hon. Jenny L. McNeill (two L's)
+- ✅ L.D.W. initials only (MCR 8.119(H)) — "her son"/"her daughter" in verbatim police quotes are LEGITIMATE
+- ✅ Barnes (P55406) marked as WITHDRAWN — Emily served directly
+- ✅ Pro se: "Plaintiff, appearing pro se" (never "Plaintiff, appearing pro se")
 
-**CORTEX** is a desktop intelligence platform that turns any pile of files into an interactive knowledge graph. Think **Maltego meets Palantir** — but offline, $29 one-time, and runs on your machine with zero cloud dependencies.
+## Status
 
-- 🔍 **Autonomous file hunting** — point it at a folder, it reads every file
-- 🧬 **Entity extraction** — regex-powered pattern matching (people, IPs, emails, crypto, etc.)
-- 🕸️ **Interactive graph** — D3.js force-directed visualization with search, filter, export
-- 📦 **Domain packs** — JSON configs that make CORTEX a specialist for any industry
-- 🔒 **100% offline** — your data never leaves your machine
+| Filing | Status | Date Promoted | Notes |
+|--------|--------|--------------|-------|
+| **F01** MSC Petition (Superintending Control) | ✅ GOLDEN | 2026-04-01 | 4 docs: petition (98.9 KB), affidavit, proposed order, COS |
+| **F03** Disqualification (MCR 2.003) | ⚠️ ACTION ITEMS | 2026-04-01 | 22 files with 16 exhibits (A-P). QA CLEAN. Remaining: 16 exhibit page counts + notarization + exhibit compilation. ALL are physical-action items Andrew must complete before filing. |
+| **F04** Federal §1983 Complaint | ✅ GOLDEN | 2026-04-01 | 3 docs: complaint (126 KB), IFP application, COS |
+| **F05** MSC Original Action | ✅ GOLDEN | 2026-04-01 | 4 docs: petition (156.8 KB), brief v2 (40.8 KB), proposed orders, evidence appendix |
+| **F06** JTC Complaint (Judge McNeill) | ✅ GOLDEN | 2026-04-01 | 3 docs: formal complaint (79 KB), evidence summary, COS |
+| **F08** PPO Termination Motion | ✅ GOLDEN | 2026-04-01 | 3 docs: motion, affidavit, proposed order |
+| **F10** COA Emergency Motion | ✅ GOLDEN | 2026-04-01 | 3 docs: motion, proposed order, COS |
 
-## This Pack
+## F03 Action Items (Andrew Must Complete)
 
-The **OSINT Starter Pack** (`osint.json`) transforms CORTEX into an open-source intelligence investigator:
+The disqualification package has physical action items — all are BEFORE FILING tasks:
 
-### 26 Entity Types
-| Entity | Example |
-|--------|---------|
-| Person | `John Smith`, `Dr. Jane Doe` |
-| Organization | `Acme Corp`, `CIA` |
-| Email | `user@domain.com` |
-| Phone | `+1-555-0123` |
-| IP Address | `192.168.1.1`, `2001:db8::1` |
-| Domain | `example.com` |
-| URL | `https://target.com/page` |
-| Crypto Wallet | BTC, ETH, XMR addresses |
-| Social Media | `@handle`, profile URLs |
-| Vehicle Plate | `ABC-1234` |
-| IMEI | Device identifiers |
-| MAC Address | `00:1A:2B:3C:4D:5E` |
-| Geolocation | `40.7128, -74.0060` |
-| File Hash | MD5, SHA-1, SHA-256 |
-| Dark Web | `.onion` addresses |
-| Username | Online handles |
-| IBAN | International bank accounts |
-| Passport | Document numbers |
-| ...and 8 more | |
+1. **Exhibits A–P page counts** (16 items) — Andrew must compile the actual exhibit documents, count pages, and fill in page counts in the Exhibit Index table
+2. **Notarization** (1 item) — Affidavit must be sworn before a Michigan notary with valid photo ID
+3. **Exhibit compilation instructions** (1 item) — Bates-stamp and number pages consecutively
 
-### 15 Evidence Categories
-Leaked Data, Social Engineering, Digital Forensics, Network Analysis, Financial Investigation, Physical Surveillance, Geospatial, Communications, Open Source, Human Intelligence, Dark Web, Cyber, Legal/Regulatory, Technical, Media
+These CANNOT be filled in by AI — they require Andrew's physical action.
 
-### 8 Focus Modes
-`person_trace`, `network_map`, `financial`, `cyber`, `geospatial`, `dark_web`, `corporate`, `counter_intel`
+## Packet Family Requirements
 
-## Quick Start
-
-1. **[Download CORTEX Pro](https://andrewpioneer6.gumroad.com/l/cjamvzo)** ($29 one-time — includes app + 3 packs)
-2. Drop `osint.json` into the `domains/` folder
-3. Run: `cortex.exe hunt --domain osint --path C:\your\files`
-4. View the graph: `cortex.exe view`
-
-Or use the free version with just this pack:
-```bash
-cortex.exe list-domains         # See available packs
-cortex.exe build --domain osint --path C:\investigation\files
-cortex.exe view                 # Opens interactive D3.js graph
-```
-
-## 55 Domain Packs Available
-
-The OSINT Starter is just the beginning. CORTEX has **55 domain packs** covering:
-
-| Domain | Domain | Domain |
-|--------|--------|--------|
-| 🕵️ OSINT (FREE) | 🛡️ Cybersecurity | ⚖️ Legal |
-| 💰 Fraud Investigation | 📰 Journalism | 🏥 Healthcare Fraud |
-| 🏗️ Construction | 🚢 Maritime & Shipping | ✈️ Aviation Safety |
-| 🎰 Casino & Gaming | 🏛️ Government Contracts | 🌍 Environmental |
-| 💊 Pharmaceutical | 🔬 Academic Integrity | 🏘️ Real Estate |
-| ...and 40 more | | |
-
-**[Get all 55 packs for $79](https://andrewpioneer6.gumroad.com/l/cjamvzo)** (94% off individual pricing)
-
-## Why CORTEX?
-
-| Feature | CORTEX | Maltego | i2 ANB | Palantir |
-|---------|--------|---------|--------|----------|
-| **Price** | $29 | $5,000/yr | $8,000+ | $$$$$ |
-| **Offline** | ✅ 100% | Partial | Yes | No |
-| **Domain Packs** | 55 | Limited | Limited | Custom |
-| **Autonomous Hunt** | ✅ | ❌ | ❌ | Partial |
-| **No API Keys** | ✅ | ❌ | N/A | ❌ |
-
-## License
-
-This OSINT Starter Pack is released under the [MIT License](LICENSE). Use it freely.
-
-The CORTEX application and premium domain packs are commercial products — [learn more](https://fatcrapinmybutt.github.io/cortex-site/).
-
----
-
-**Built by investigators, for investigators.**
-
-🌐 [Website](https://fatcrapinmybutt.github.io/cortex-site/) · 🛒 [Gumroad Store](https://andrewpioneer6.gumroad.com/l/cjamvzo)
+Each golden packet MUST include:
+1. Primary document (motion/complaint/brief) — CLEAN
+2. Supporting brief/memorandum (if applicable)
+3. Affidavit of facts (if applicable)
+4. Exhibit index with Bates numbers
+5. Exhibit files (numbered, authenticated)
+6. Proposed order (correct court format)
+7. Certificate of Service (MC 12)
+8. Fee waiver (MC 20) if applicable
+9. Cover sheet (CC 257 / JS 44) for new cases
+10. PDF conversion (courts require PDF, not markdown)
