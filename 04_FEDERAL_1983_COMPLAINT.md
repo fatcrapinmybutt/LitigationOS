@@ -4,37 +4,31 @@
 
 ---
 
-**ANDREW JAMES PIGORS,**
-Plaintiff,
-
-v. Case No. _______________
-
-**HON. JENNY L. McNEILL,** in her
-individual capacity,
-**EMILY A. WATSON,**
-**RONALD BERRY,**
-**ALBERT WATSON,** **JURY TRIAL DEMANDED**
-**CODY WATSON,**
-**LORI WATSON,**
-**HON. KENNETH HOOPES,** in his
-individual capacity,
-**SHADY OAKS PARK MHP, LLC,**
-**HOMES OF AMERICA, LLC,**
-**ALDEN GLOBAL CAPITAL, LLC,**
-**JEREMY COX,**
-**TRAVIS PARTRIDGE,**
-**INDIVIDUAL BROWN,**
-Defendants.
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_/
+| | |
+|---|---|
+| **ANDREW JAMES PIGORS,** | |
+| | |
+| &emsp;&emsp;&emsp;&emsp;Plaintiff, | Case No. _______________ |
+| | |
+| v. | **JURY TRIAL DEMANDED** |
+| | |
+| **HON. JENNY L. McNEILL,** in her | |
+| individual capacity, | |
+| | |
+| **EMILY A. WATSON,** | |
+| | |
+| **RONALD BERRY,** | |
+| | |
+| &emsp;&emsp;&emsp;&emsp;Defendants. | |
+| _______________________________________/ | |
 
 ---
 
-# COMPLAINT FOR DEPRIVATION OF CIVIL RIGHTS UNDER 42 U.S.C. §§ 1983, 1985, 1988, FAIR HOUSING ACT VIOLATIONS UNDER 42 U.S.C. § 3604, AND SUPPLEMENTAL STATE TORT CLAIMS
+# COMPLAINT FOR DEPRIVATION OF CIVIL RIGHTS UNDER 42 U.S.C. §§ 1983, 1985, 1988
 
 ---
 
-Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant to 28 U.S.C. § 1915, respectfully submits this Complaint pursuant to 42 U.S.C. § 1983, 42 U.S.C. § 1985(3), 42 U.S.C. § 1988, 42 U.S.C. § 3604 (Fair Housing Act), and supplemental state tort claims under 28 U.S.C. § 1367, for the deprivation of rights secured by the First, Fourth, Sixth, and Fourteenth Amendments to the United States Constitution, for violations of the Fair Housing Act, and for state-law torts arising from the same nucleus of operative facts, and states as follows:
+Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant to 28 U.S.C. § 1915, respectfully submits this Complaint pursuant to 42 U.S.C. § 1983, 42 U.S.C. § 1985(3), and 42 U.S.C. § 1988, for the deprivation of rights secured by the First and Fourteenth Amendments to the United States Constitution, and states as follows:
 
 ---
 
@@ -44,7 +38,7 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 2\. Over a period exceeding two years, Defendant Hon. Jenny L. McNeill, a judge of the 14th Circuit Court, Muskegon County, Michigan, issued **24 of 55 orders (43.6%) on an ex parte basis** — all without notice to Plaintiff, all without an opportunity for Plaintiff to be heard, and all to Plaintiff's detriment. She incarcerated Plaintiff for a combined **59 days** — including 45 days for the act of sending birthday messages to his child — muted him during hearings, refused to review exculpatory evidence, imposed a $250 bond to block his access to the courts, and told Plaintiff: **"Do not file anymore, I will not look at it."**
 
-3\. As a direct result, Plaintiff has been **completely separated from his child, L.D.W., for more than 248 consecutive days** — with zero contact, zero visitation, and zero parenting time — constituting a de facto termination of the parent-child relationship without any of the constitutional protections the Due Process Clause demands. This prolonged separation occurred despite objectively exculpatory evidence: Plaintiff's drug screen returned **negative**, his initial HealthWest psychological evaluation returned **all zeros** (no clinical findings), and **multiple police investigations** into allegations made by the Watson family resulted in **zero substantiated findings** against Plaintiff.
+3\. As a direct result, Plaintiff has been **completely separated from his child, L.D.W., for more than 230 consecutive days** — with zero contact, zero visitation, and zero parenting time — constituting a de facto termination of the parent-child relationship without any of the constitutional protections the Due Process Clause demands. This prolonged separation occurred despite objectively exculpatory evidence: Plaintiff's drug screen returned **negative**, his initial HealthWest psychological evaluation returned **all zeros** (no clinical findings), and **multiple police contacts** initiated by the Watson family's allegations resulted in **zero findings** against Plaintiff.
 
 4\. Plaintiff lost **two jobs** and **two homes** as a direct result of the 59 days of incarceration imposed without constitutionally adequate process.
 
@@ -54,9 +48,7 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 ## II. JURISDICTION AND VENUE
 
-6\. This Court has subject matter jurisdiction pursuant to **28 U.S.C. § 1331** (federal question jurisdiction) because this action arises under the Constitution and laws of the United States, specifically 42 U.S.C. § 1983, 42 U.S.C. § 1985(3), 42 U.S.C. § 1988, and 42 U.S.C. § 3604 (Fair Housing Act).
-
-6a\. This Court has independent subject matter jurisdiction over the Fair Housing Act claims pursuant to **42 U.S.C. § 3613(a)(1)(A)**, which authorizes an aggrieved person to commence a civil action in an appropriate United States district court to obtain appropriate relief with respect to a discriminatory housing practice under 42 U.S.C. § 3604.
+6\. This Court has subject matter jurisdiction pursuant to **28 U.S.C. § 1331** (federal question jurisdiction) because this action arises under the Constitution and laws of the United States, specifically 42 U.S.C. § 1983, 42 U.S.C. § 1985(3), and 42 U.S.C. § 1988.
 
 7\. This Court has additional jurisdiction pursuant to **28 U.S.C. § 1343(a)(3)** and **(a)(4)**, which confer jurisdiction over civil rights actions seeking to redress the deprivation, under color of state law, of rights secured by the Constitution and by Acts of Congress providing for equal rights.
 
@@ -64,9 +56,7 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 9\. This Court is authorized to award compensatory damages, punitive damages, declaratory relief, injunctive relief, and reasonable costs pursuant to **42 U.S.C. § 1988**, **Fed. R. Civ. P. 54(d)**, and **28 U.S.C. § 1920**.
 
-9a\. This Court has **supplemental jurisdiction** over Plaintiff's state-law tort claims (Counts IX through XVI) pursuant to **28 U.S.C. § 1367(a)** because they arise from the same case or controversy — the identical nucleus of operative facts — as Plaintiff's federal claims. The state tort claims derive from the same coordinated campaign of deprivation, conspiracy, and abuse that underlies the federal civil rights claims. Exercising supplemental jurisdiction serves judicial economy, convenience, and fairness, as the state claims share common witnesses, evidence, and the same core factual narrative. The Fair Housing Act claims (Count XVIII) and housing conspiracy claims (Count XVII) arise from the same coordinated scheme to deprive Plaintiff of housing and thereby destroy his custody standing.
-
-10\. Plaintiff proceeds in forma pauperis pursuant to **28 U.S.C. § 1915**. An Application to Proceed In Forma Pauperis (AO 239) is filed contemporaneously with this Complaint.
+10\. Plaintiff proceeds in forma pauperis pursuant to **28 U.S.C. § 1915**. [ANDREW: FILE IFP APPLICATION SEPARATELY]
 
 11\. Plaintiff is proceeding pro se. This Complaint is entitled to liberal construction under *Haines v. Kerner*, 404 U.S. 519 (1972), and *Erickson v. Pardus*, 551 U.S. 89 (2007), which hold that pro se filings are to be held to "less stringent standards than formal pleadings drafted by lawyers" and are not to be dismissed without the opportunity to amend. *See also Estelle v. Gamble*, 429 U.S. 97, 106 (1976).
 
@@ -82,31 +72,11 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 12\. **Hon. Jenny L. McNeill (P-58235)** is, and at all relevant times was, a judge of the 14th Circuit Court, Family Division, Muskegon County, Michigan. McNeill is sued in her **individual capacity only** for acts taken in the clear absence of all jurisdiction and for non-judicial acts falling outside the scope of judicial immunity. *Mireles v. Waco*, 502 U.S. 9, 11–12 (1991); *Stump v. Sparkman*, 435 U.S. 349, 356–57 (1978). At all relevant times, McNeill acted under color of state law within the meaning of 42 U.S.C. § 1983. *West v. Atkins*, 487 U.S. 42, 49 (1988).
 
-13\. **Emily A. Watson** is a natural person and citizen of the State of Michigan, residing at 2160 Garland Drive, Norton Shores, Michigan 49441. Watson is the biological mother of L.D.W. is a private party who, acting in concert with a state judicial officer, conspired to deprive Plaintiff of his constitutional rights under color of state law. A private party who conspires with a state actor to deprive another of constitutional rights acts under color of state law and is independently liable under 42 U.S.C. § 1983 and 42 U.S.C. § 1985(3). *Dennis v. Sparks*, 449 U.S. 24, 27–28 (1980); *Adickes v. S.H. Kress & Co.*, 398 U.S. 144 (1970).
+13\. **Emily A. Watson** is a natural person and citizen of the State of Michigan, residing at 2160 Garland Drive, Norton Shores, Michigan 49441. Watson is the biological mother of L.D.W. Watson is a private party who, acting in concert with a state judicial officer, conspired to deprive Plaintiff of his constitutional rights under color of state law. A private party who conspires with a state actor to deprive another of constitutional rights acts under color of state law and is independently liable under 42 U.S.C. § 1983 and 42 U.S.C. § 1985(3). *Dennis v. Sparks*, 449 U.S. 24, 27–28 (1980); *Adickes v. S.H. Kress & Co.*, 398 U.S. 144 (1970).
 
 14\. **Ronald Berry** is a natural person residing in or around Muskegon County, Michigan. Berry is the boyfriend and domestic partner of Defendant Watson. **Berry is not an attorney.** Berry is a private party who participated in the conspiracy to deprive Plaintiff of his constitutional rights by drafting legal filings on Watson's behalf — constituting the unauthorized practice of law — which were then filed and acted upon by the court. Berry's direct involvement in ex parte contacts with the court, including documented voicemail communications (Item #6, ex parte objection table), constitutes overt acts in furtherance of the conspiracy. *Dennis v. Sparks*, 449 U.S. 24 (1980).
 
-14a\. **Albert Watson** is a natural person and resident of Muskegon County, Michigan. Albert Watson is the father of Defendant Emily A. Watson. On or about **October 20, 2024**, Albert Watson forcibly removed the minor child L.D.W. from Plaintiff's arms during a parenting time exchange, threw Personal Protection Order papers through the window of Plaintiff's vehicle stating "Haha, now you're served," and thereby physically assaulted Plaintiff while facilitating Defendant Watson's withholding of L.D.W. from October 20, 2024 through November 15, 2024 — a period of 26 days encompassing L.D.W.'s birthday and Halloween. In **November 2023**, Albert Watson physically assaulted Plaintiff in an incident captured on video. Albert Watson conspired with Defendants Watson and Berry to deprive Plaintiff of his constitutional rights and is independently liable under 42 U.S.C. § 1985(3) and state tort law. *Griffin v. Breckenridge*, 403 U.S. 88, 102–03 (1971).
-
-14b\. **Cody Watson** is a natural person and resident of Muskegon County, Michigan. Cody Watson is the brother of Defendant Emily A. Watson. Cody Watson is a named third-party violator of the Personal Protection Order, having sent threatening text messages to Plaintiff as a proxy for Defendant Watson — documented in Police Report MCSD-2024-02101 (Officer Hintz). Cody Watson pays Defendant Watson's rent — a fact admitted by Watson at the custody trial — constituting undisclosed income relevant to the child support proceedings and demonstrating financial coordination in the conspiracy. Cody Watson directed Tamara Snider to stalk Plaintiff's business on Nextdoor. Cody Watson conspired with Defendants to deprive Plaintiff of his constitutional rights.
-
-14c\. **Lori Watson** is a natural person and resident of Muskegon County, Michigan. Lori Watson is the mother of Defendant Emily A. Watson. On or about **March 26, 2024**, Lori Watson participated in the forcible withholding of L.D.W. from Plaintiff during the first withholding period, issuing ultimatums and facilitating Defendant Watson's unilateral denial of Plaintiff's parenting time. Lori Watson participated in the October 2024 PPO service ambush alongside Albert Watson. Lori Watson conspired with Defendants to deprive Plaintiff of his constitutional rights.
-
-14d\. **Hon. Kenneth Hoopes** is, and at all relevant times was, a judge of the 14th Circuit Court, Muskegon County, Michigan, assigned to the Civil Division. Hoopes is sued in his **individual capacity only** for acts taken in the clear absence of all jurisdiction and for non-judicial acts falling outside the scope of judicial immunity. *Mireles v. Waco*, 502 U.S. 9, 11–12 (1991). **Hoopes was a former law partner of Defendant McNeill at the firm Ladas, Hoopes & McNeill, located at 435 Whitehall Road, Muskegon, Michigan** — the same street on which Plaintiff resides. Despite this disqualifying conflict of interest, Hoopes presided over Plaintiff's housing case (Case No. 2025-002760-CZ), dismissed it with prejudice, denied Plaintiff's motion to stay eviction, and thereby facilitated the destruction of Plaintiff's housing — all while his former law partner McNeill was simultaneously stripping Plaintiff of custody in the Family Division. Hoopes acted under color of state law within the meaning of 42 U.S.C. § 1983. *West v. Atkins*, 487 U.S. 42, 49 (1988).
-
-14e\. **Shady Oaks Park MHP, LLC** is a Michigan limited liability company that owns and operates the Shady Oaks Mobile Home Park located at Whitehall Road, North Muskegon, Michigan 49445, where Plaintiff resided at Lot #17. Upon information and belief, Shady Oaks Park MHP, LLC is the successor entity to Shady Oaks MHP, LLC, which was administratively dissolved by the Michigan Department of Licensing and Regulatory Affairs in 2022. The use of a dissolved entity to initiate eviction proceedings constitutes fraud upon the court. Shady Oaks Park MHP, LLC's registered address is PO Box 1908, Crested Butte, CO 81224.
-
-14f\. **Homes of America, LLC** is a Delaware limited liability company doing business in the State of Michigan. Homes of America, LLC is the management company that assumed operational control of the Shady Oaks Mobile Home Park. On July 14, 2025, Cassandra Van Dam, acting as a representative, confirmed that "Homes of America" — not Shady Oaks — controlled the park's operations. Homes of America, LLC is an instrumentality and subsidiary of Defendant Alden Global Capital, LLC. Homes of America, LLC participates in a nationwide business model of acquiring manufactured home communities, dramatically increasing lot rents and fees, minimizing maintenance, harassing residents with punitive rules and eviction threats, and profiting from the displacement of vulnerable residents — including families with minor children.
-
-14g\. **Alden Global Capital, LLC** is a New York-based private equity firm that, upon information and belief, is the ultimate parent and controlling entity of both Homes of America, LLC and Shady Oaks Park MHP, LLC, operating through layered corporate shells including but not limited to Partridge Securities LLC, Partridge Equity LLC, VRM Capital Corp, and Smith Management LLC. Alden Global Capital controls Homes of America's asset management policies, rent escalation practices, maintenance deferral protocols, and tenant displacement strategies. The layered corporate structure is designed to insulate Alden Global Capital from liability while extracting maximum revenue from vulnerable manufactured home residents. Alden Global Capital's role as the ultimate decision-maker and beneficiary of the policies that caused Plaintiff's eviction, lockout, and property destruction makes it directly liable as a principal under agency law and as a participant in the conspiracy.
-
-14h\. **Jeremy Cox** is a natural person who, upon information and belief, acted as a manager, agent, and/or representative of Defendant Homes of America, LLC and/or Defendant Shady Oaks Park MHP, LLC in connection with the eviction proceedings, lockout, property removal, and destruction at issue in this Complaint. Cox participated in and directed the unlawful entry into Plaintiff's home, the drilling of locks, the removal and destruction of Plaintiff's personal property, and the assertion that Plaintiff's titled manufactured home was "abandoned" — despite Plaintiff's continuing title ownership.
-
-14i\. **Travis Partridge** is a natural person who, upon information and belief, served as the on-site park manager of the Shady Oaks Mobile Home Park during the relevant period. Partridge acted as an agent of Defendants Homes of America, LLC and/or Shady Oaks Park MHP, LLC. Partridge participated in and facilitated the retaliatory eviction proceedings against Plaintiff, communicated false claims of "abandonment" to prospective buyers of Plaintiff's titled manufactured home, blocked Plaintiff's attempts to sell his home, and coordinated with Defendants Cox and Brown to effectuate the July 17, 2025 lockout and property destruction. Partridge texted prospective buyers with false information that Plaintiff's home had been "abandoned," thereby sabotaging Plaintiff's ability to mitigate his losses through a private sale of his titled property.
-
-14j\. **Individual Brown** is a natural person who, upon information and belief, acted as a maintenance worker, agent, and/or representative of Defendant Homes of America, LLC and/or Defendant Shady Oaks Park MHP, LLC during the relevant period. Brown participated in and facilitated the July 17, 2025 forced entry into Plaintiff's manufactured home, the drilling of locks, and the removal and/or destruction of Plaintiff's personal property. Brown's identity is known to Defendants; Plaintiff will amend this Complaint to identify Brown by full legal name upon discovery.
-
-15\. At all relevant times, Defendant McNeill and Defendant Hoopes acted under color of state law within the meaning of 42 U.S.C. § 1983. Defendants Watson, Berry, Albert Watson, Cody Watson, Lori Watson, Shady Oaks Park MHP LLC, Homes of America LLC, Alden Global Capital LLC, Jeremy Cox, Travis Partridge, and Individual Brown, by conspiring with Defendants McNeill and Hoopes and among themselves, likewise acted under color of state law with respect to the § 1983, § 1985(3), and § 3604 claims, and are independently liable under state tort law. *Dennis v. Sparks*, 449 U.S. 24 (1980); *Adickes v. S.H. Kress & Co.*, 398 U.S. 144 (1970). The private corporate Defendants and their agents willfully participated in joint activity with state actors — namely, utilizing the judicial process to effectuate an unlawful eviction and property destruction in coordination with the custody proceedings — thereby satisfying the joint-action test for § 1983 liability. *Lugar v. Edmondson Oil Co.*, 457 U.S. 922, 941 (1982).
+15\. At all relevant times, Defendant McNeill acted under color of state law within the meaning of 42 U.S.C. § 1983. Defendants Watson and Berry, by conspiring with Defendant McNeill, likewise acted under color of state law. *Dennis v. Sparks*, 449 U.S. 24 (1980); *Adickes v. S.H. Kress & Co.*, 398 U.S. 144 (1970).
 
 ---
 
@@ -146,7 +116,7 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 23\. Plaintiff arrived at the scheduled parenting exchange on August 8, 2025, with no knowledge that any ex parte motion had been filed or that any order had been entered. He was denied contact with his child without any opportunity to be heard.
 
-24\. From **July 29, 2025 through the present** — a period exceeding **248 consecutive days** as of the filing of this Complaint — Plaintiff has been **completely separated** from L.D.W., with zero contact, zero visitation, and zero parenting time. This constitutes a de facto termination of the parent-child relationship without any of the constitutional protections required by *Santosky v. Kramer*, 455 U.S. 745 (1982).
+24\. From **July 29, 2025 through the present** — a period exceeding **230 consecutive days** as of the filing of this Complaint — Plaintiff has been **completely separated** from L.D.W., with zero contact, zero visitation, and zero parenting time. This constitutes a de facto termination of the parent-child relationship without any of the constitutional protections required by *Santosky v. Kramer*, 455 U.S. 745 (1982).
 
 ### E. The Systematic Pattern of Ex Parte Deprivation
 
@@ -218,7 +188,7 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 | Hearing access | Muted/silenced at hearings | Full opportunity to be heard |
 | Contempt findings | Multiple contempt findings, 59 days jail | Zero contempt findings despite violations |
 | Sanctions | Multiple sanctions imposed | Zero sanctions |
-| Parenting time | 100% suspended for 248+ days | 100% awarded without hearing |
+| Parenting time | 100% suspended for 230+ days | 100% awarded without hearing |
 
 40\. This one-directional pattern of adverse treatment — 100% of ex parte orders entered against the Father, 0% of sanctions imposed on the Mother — cannot be explained by any legitimate government interest and is indicative of impermissible bias.
 
@@ -248,11 +218,13 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 &emsp;(c) **False allegation — Mental health concerns:** Watson alleged that Plaintiff had mental health issues requiring evaluation. The HealthWest evaluation #1 returned **all zeros** — no clinical findings whatsoever. Only after Judge McNeill's biasing letter to the evaluator did a second evaluation produce a tentative "Rule Out" notation;
 
-&emsp;(d) **False allegation — Safety risk to child:** Watson alleged in multiple filings that Plaintiff posed a safety risk to L.D.W. and sought supervised visitation. **Nine (9) separate police investigations** into Watson's allegations resulted in **zero findings** against Plaintiff;
+&emsp;(d) **False allegation — Safety risk to child:** Watson alleged in multiple filings that Plaintiff posed a safety risk to L.D.W. and sought supervised visitation. **Multiple police contacts** initiated by Watson's allegations resulted in **zero findings** against Plaintiff;
 
 &emsp;(e) **Concealed expertise in system manipulation:** Watson was employed for **nine (9) years** in the **Kent County Prosecutor's Office, Family Court Division** — giving her extensive insider knowledge of family court procedures, filings, and strategies. This expertise was not disclosed to the court and was used to weaponize the court system against Plaintiff.
 
 46H\. These contradictions, taken together, establish that Watson's ex parte motions were filed with knowledge that the underlying allegations were false or, at minimum, recklessly indifferent to their truth — supporting both the conspiracy claim under § 1985(3) and the substantive due process claim that the deprivation was based on fabricated evidence.
+
+46I\. Multiple NSPD reports (NSPD-2023-08121; NS2505044) and police contacts resulted in zero findings against Plaintiff, constituting exculpatory evidence that Defendant McNeill refused to consider by categorically excluding police reports as "hearsay" — despite their admissibility as public records under FRE 803(8) and as business records under FRE 803(6).
 
 ### O. The Watson–McNeill–Berry Conspiracy
 
@@ -271,6 +243,8 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 44\. Ronald Berry's voicemail to Plaintiff (Item #6, ex parte objection table) constitutes **direct evidence** of Berry's participation in communications outside the formal court record.
 
 45\. Ronald Berry — who is not an attorney — drafted substantive legal filings on Watson's behalf, which were filed and acted upon by the court. This constitutes unauthorized practice of law and evidences the coordinated, extrajudicial nature of the conspiracy.
+
+45A\. The Watson family conspiracy is documented through verified court records and police reports: Albert Watson told NSPD Officer Ella Randall (Badge #47437, Case NS2505044) on August 7, 2025, that the family wanted the incident "documented so Emily can go tomorrow to get an Ex Parte order for full custody" — five ex parte orders were entered the following day. Cody Watson engaged in documented road harassment on September 20, 2024 (police report filed). Lori Watson coordinated the original PPO service at 2160 Garland Drive and texted Father on March 26, 2023: "If you want to see your son again, you will have to go through the court." Ronald Berry participated in ex parte contacts with the court, including documented voicemail communications.
 
 ### P. PPO Guilty Plea — October 18, 2025
 
@@ -304,29 +278,13 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 &emsp;(c) **Loss of two (2) homes** as a direct result of incarceration and resulting inability to pay rent;
 
-&emsp;(d) **248+ consecutive days** of complete separation from L.D.W. (ongoing), constituting the destruction of the parent-child bond during a critical developmental period;
+&emsp;(d) **230+ consecutive days** of complete separation from L.D.W. (ongoing), constituting the destruction of the parent-child bond during a critical developmental period;
 
 &emsp;(e) Severe emotional distress, anxiety, depression, and psychological harm arising from the loss of his child, wrongful incarceration, and ongoing deprivation;
 
 &emsp;(f) Economic losses including lost wages, lost employment opportunities, housing costs, court costs, and transportation expenses;
 
 &emsp;(g) The continuing chilling effect on Plaintiff's right to communicate with his child and to petition the courts for redress.
-
-### S. Housing Destruction and Coordinated Displacement
-
-49a\. Plaintiff is the titled owner of a manufactured home located at Lot #17, 1977 Whitehall Road, North Muskegon, Michigan 49445, within the Shady Oaks Mobile Home Park. Plaintiff purchased this home, invested between **$23,700 and $48,750** in improvements — including plumbing repairs ($4,000–$8,000), bathroom renovation ($1,500–$4,300), and additional structural and utility upgrades — and maintained it as his primary residence and the established custodial environment for L.D.W. during Plaintiff's parenting time.
-
-49b\. **Corporate Chain of Control.** Defendant Shady Oaks Park MHP, LLC is the legal owner of the mobile home park. However, upon information and belief, it is Defendant Homes of America, LLC that assumed operational management of the park and directed all material decisions concerning rent increases, eviction proceedings, maintenance obligations, and tenant relations. On **July 14, 2025**, Cassandra Van Dam, a Homes of America representative, confirmed that Homes of America — not Shady Oaks — controlled park operations. Both entities are ultimately owned and controlled by Defendant Alden Global Capital, LLC, a New York-based private equity firm, operating through a web of intermediate entities including Partridge Securities LLC, Partridge Equity LLC, VRM Capital Corp, and Smith Management LLC.
-
-49c\. **Retaliatory Eviction.** Beginning in late 2024, Defendants Shady Oaks and Homes of America — through their agents including Defendant Jeremy Cox — initiated eviction proceedings against Plaintiff. On **May 27, 2025**, Defendant Hoopes, sitting as a circuit court judge in Case No. 2025-002760-CZ, entered an eviction order against Plaintiff. Defendant Hoopes did so despite his disqualifying conflict of interest as the former law partner of Defendant McNeill and despite the interrelation of the housing and custody proceedings. On **May 31, 2025**, Plaintiff's motion to stay was denied. The eviction was timed to coincide with the critical period in the custody case before Defendant McNeill — the very period during which Defendant McNeill would cite Plaintiff's homelessness as a basis for denying custody.
-
-49d\. **Unlawful Lockout and Property Destruction.** On or about **July 17, 2025**, Defendants Homes of America, Jeremy Cox, Travis Partridge, Individual Brown, and/or their agents — including personnel from Partridge Security LLC — drilled the locks on Plaintiff's manufactured home, entered without notice or consent, and removed and/or destroyed Plaintiff's personal property, including furnishings, documents, clothing, tools, and evidence relevant to these proceedings. The home was declared "abandoned" despite Plaintiff's continuing title ownership and despite no legal proceeding having divested Plaintiff of his ownership interest in the manufactured home itself. Defendant Partridge subsequently texted prospective buyers of Plaintiff's home with false claims of "abandonment," sabotaging Plaintiff's attempts to sell the titled property and mitigate his losses.
-
-49e\. **Water Shutoff and Habitability.** Prior to the eviction, Defendants Shady Oaks and/or Homes of America shut off water service to Plaintiff's unit, rendering the home uninhabitable and forcing displacement — a pattern consistent with their nationwide business model of pressuring manufactured home residents into surrender through utility deprivation and punitive fee escalation.
-
-49f\. **Coordinated Timing with Custody Proceedings.** The destruction of Plaintiff's housing was not incidental to the custody proceedings — it was weaponized within them. On **August 9, 2025** — just weeks after the lockout — Defendant McNeill entered an ex parte order suspending all of Plaintiff's parenting time. On **September 28, 2025**, Defendant McNeill entered a custody order granting Defendant Watson 100% custody and zero parenting time to Plaintiff. Upon information and belief, Plaintiff's lack of stable housing — directly caused by Defendants' coordinated conduct — was cited or considered as a factor militating against custody. The temporal coordination between the housing destruction (July 2025) and the custody destruction (August–September 2025) is not coincidental: it is the product of a conspiracy between judicial actors (McNeill and Hoopes) and private actors (Watson, Shady Oaks, Homes of America, Alden Global Capital, and Cox).
-
-49g\. **The McNeill-Hoopes Partnership.** Defendant McNeill and Defendant Hoopes were law partners at the firm of **Ladas, Hoopes & McNeill**, located at 435 Whitehall Road, Muskegon, Michigan — the same street on which Plaintiff's home was located. Their professional relationship creates at minimum an appearance of impropriety and at maximum a coordinated conspiracy to strip Plaintiff of both housing and custody simultaneously across two divisions of the same courthouse. Neither judge disclosed this relationship. Neither judge recused. The result: Plaintiff lost his home in Hoopes's courtroom and lost his child in McNeill's courtroom within weeks of each other.
 
 ---
 
@@ -340,9 +298,9 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 52\. Government interference with a fundamental liberty interest must survive **strict scrutiny** — it must be narrowly tailored to serve a compelling government interest. *Washington v. Glucksberg*, 521 U.S. 702, 720–21 (1997).
 
-53\. Defendants' actions — entering ex parte orders suspending ALL parenting time without sworn evidence of imminent danger, maintaining a total separation for 248+ consecutive days, and blocking access to the courts through a $250 bond and a retaliatory directive — constitute a **total deprivation** of Plaintiff's fundamental liberty interest in his parental relationship with L.D.W.
+53\. Defendants' actions — entering ex parte orders suspending ALL parenting time without sworn evidence of imminent danger, maintaining a total separation for 230+ consecutive days, and blocking access to the courts through a $250 bond and a retaliatory directive — constitute a **total deprivation** of Plaintiff's fundamental liberty interest in his parental relationship with L.D.W.
 
-54\. No compelling government interest justifies this prolonged, complete deprivation. No evidence of imminent danger was presented. No best-interest-factor hearing was conducted under MCL 722.23. No clear and convincing evidence was offered. To the contrary, the objective evidence affirmatively disproves any danger: Plaintiff's court-ordered drug screen returned **negative**; his initial HealthWest psychological evaluation returned **"all zeros"** (no clinical diagnoses, no findings of concern); and **multiple police investigations** into allegations made by the Watson family produced **zero substantiated findings** against Plaintiff. The deprivation was arbitrary, conscience-shocking, and without rational justification.
+54\. No compelling government interest justifies this prolonged, complete deprivation. No evidence of imminent danger was presented. No best-interest-factor hearing was conducted under MCL 722.23. No clear and convincing evidence was offered. To the contrary, the objective evidence affirmatively disproves any danger: Plaintiff's court-ordered drug screen returned **negative**; his initial HealthWest psychological evaluation returned **"all zeros"** (no clinical diagnoses, no findings of concern); and **multiple police contacts** initiated by the Watson family's allegations produced **zero findings** against Plaintiff. The deprivation was arbitrary, conscience-shocking, and without rational justification.
 
 55\. The Sixth Circuit recognizes substantive due process protection for parent-child relationships. *Doe v. Claiborne County*, 103 F.3d 495, 506 (6th Cir. 1996). State actions that "shock the conscience" or are "arbitrary in the constitutional sense" violate substantive due process. *County of Sacramento v. Lewis*, 523 U.S. 833, 846 (1998). *See also Kovacic v. Cuyahoga Cty. Dept of Children & Family Servs.*, 606 F.3d 301, 310 (6th Cir. 2010) (holding that removal of a child from parental custody without procedurally adequate due process violates substantive due process); *Bartell v. Lohiser*, 215 F.3d 550, 557 (6th Cir. 2000) (holding that parental right to custody is fundamental and removal without meeting strict scrutiny is unconstitutional).
 
@@ -390,7 +348,7 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 62\. The systematic denial of notice and hearing before depriving Plaintiff of his fundamental liberty interest constitutes a per se violation of procedural due process. The Supreme Court in *Santosky v. Kramer*, 455 U.S. 745, 747–48 (1982), held that even when a State provides a hearing, the Due Process Clause demands a heightened standard of proof — clear and convincing evidence — before parental rights may be terminated. Here, the State did not merely apply the wrong standard of proof; it provided **no hearing at all** for the 24 ex parte orders that collectively effected a de facto termination of Plaintiff's parental relationship. If clear and convincing evidence is the constitutional floor for terminating parental rights *with* process, then terminating those same rights *without any process whatsoever* is a fortiori unconstitutional.
 
-63\. As a direct and proximate result, Plaintiff has suffered 59 days of incarceration, 248+ days of separation from his child, loss of two jobs, loss of two homes, and severe emotional distress.
+63\. As a direct and proximate result, Plaintiff has suffered 59 days of incarceration, 230+ days of separation from his child, loss of two jobs, loss of two homes, and severe emotional distress.
 
 ---
 
@@ -446,45 +404,43 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 81\. **Element 1 — Conspiracy (Agreement):** The temporal coordination pattern — Watson files, McNeill rules the same day without notice to Plaintiff, Berry assists Watson in drafting filings as a non-attorney — repeated across months, establishes an implied agreement through circumstantial evidence. Circumstantial evidence is sufficient to establish conspiracy. *Halberstam v. Welch*, 705 F.2d 472 (D.C. Cir. 1983). Berry's voicemail to Plaintiff (Item #6) constitutes direct evidence of coordination outside the formal court record.
 
-82\. **Element 2 — Discriminatory Purpose:** The conspiracy was directed at depriving Plaintiff of his fundamental liberty interest in his parental relationship and his right to equal protection. The one-directional benefit pattern — every coordinated action exclusively benefited Watson and harmed Plaintiff — demonstrates discriminatory purpose. The conspiracy was motivated by class-based animus against Plaintiff as an unwed father and pro se litigant.
+82\. **Element 2 — Discriminatory Purpose:** The conspiracy was directed at depriving Plaintiff of his fundamental liberty interest in his parental relationship and his right to equal protection. The one-directional benefit pattern — every coordinated action exclusively benefited Watson and harmed Plaintiff — demonstrates discriminatory purpose. The conspiracy was motivated by sex-based animus: Plaintiff, as the father, was systematically subjected to procedural deprivations, incarceration, and exclusion from hearings that were never imposed on the mother under identical circumstances. Sex is a recognized suspect classification subject to intermediate scrutiny under the Equal Protection Clause. *Craig v. Boren*, 429 U.S. 190, 197 (1976); *United States v. Virginia*, 518 U.S. 515, 532–33 (1996). The radical asymmetry in treatment between father and mother — documented in the disparate treatment table above — constitutes direct evidence of sex-based discriminatory animus.
 
 83\. **Element 3 — Overt Acts:** Each ex parte order, each same-day ruling, and each Berry-drafted filing constitutes an overt act in furtherance of the conspiracy. The five ex parte orders entered on August 8, 2025 alone constitute five overt acts. Additional overt acts include: the ex parte PPO grant of December 3, 2023; the ex parte custody modification of July 17, 2025; the contempt incarcerations of November 15, 2024 and November 26, 2025. The **illegal recording** made by Lori Watson (Emily's mother) in violation of MCL 750.539c, which was subsequently used as the basis for the August 8, 2025 ex parte suspension of all parenting time, constitutes a further overt act — and an independently criminal one. The submission of this feloniously obtained evidence to the court, and the court's reliance upon it, demonstrates the depth of coordination among the conspirators.
 
-84\. **Element 4 — Injury:** Plaintiff has suffered 248+ consecutive days of complete separation from his child, 59 days of incarceration, loss of two jobs, loss of two homes, severe emotional distress, and deprivation of multiple constitutional rights.
+84\. **Element 4 — Injury:** Plaintiff has suffered 230+ consecutive days of complete separation from his child, 59 days of incarceration, loss of two jobs, loss of two homes, severe emotional distress, and deprivation of multiple constitutional rights.
 
 85\. Under *Dennis v. Sparks*, 449 U.S. 24 (1980), private parties who conspire with a judge to deprive others of constitutional rights act under color of state law and are liable under § 1983. Judicial immunity does not extend to co-conspirators — it is personal to the judge. *Id.* at 28–29. Neither Watson nor Berry has any judicial immunity whatsoever.
 
 ---
 
-## X. COUNT VI: FOURTH AMENDMENT — UNREASONABLE SEIZURE OF PERSON
+## X. COUNT VI: FOURTEENTH AMENDMENT DUE PROCESS — LIBERTY DEPRIVATION THROUGH CONTEMPT INCARCERATION
 
 86\. Plaintiff repeats and re-alleges each and every allegation set forth in the preceding paragraphs as though fully set forth herein.
 
-87\. The Fourth Amendment, applicable to the states through the Fourteenth Amendment, prohibits unreasonable seizures of persons. *Albright v. Oliver*, 510 U.S. 266, 274 (1994). Incarceration constitutes a seizure of the person. *See Baker v. McCollan*, 443 U.S. 137, 144 (1979).
+87\. The Fourteenth Amendment prohibits any State from depriving any person of liberty without due process of law. Civil contempt incarceration constitutes a deprivation of physical liberty that triggers the full protections of the Due Process Clause. *Turner v. Rogers*, 564 U.S. 431, 442 (2011); *Mathews v. Eldridge*, 424 U.S. 319, 332–33 (1976).
 
 88\. Judge McNeill ordered Plaintiff incarcerated for civil contempt on November 15, 2024 and November 26, 2025, resulting in **59+ days of incarceration** without adequate purge conditions, without the procedural safeguards required by *Turner v. Rogers*, 564 U.S. 431 (2011), and without a finding of willful noncompliance based on the ability to comply. Plaintiff was incarcerated despite having no ability to comply with the purge conditions imposed.
 
-89\. Civil contempt incarceration that is punitive in nature, rather than coercive — as where the contemnor lacks the ability to comply with the purge condition — constitutes criminal punishment imposed without criminal procedural protections, in violation of the Fourth Amendment's protection against unreasonable seizure. The seizure of Plaintiff's person was unreasonable because it was based on inability to pay rather than willful refusal.
+89\. Civil contempt incarceration that is punitive in nature, rather than coercive — as where the contemnor lacks the ability to comply with the purge condition — constitutes a deprivation of liberty without due process of law in violation of the Fourteenth Amendment. The deprivation of Plaintiff's liberty was without due process because it was based on inability to pay rather than willful refusal, and was imposed without the procedural safeguards mandated by *Turner*. *See also In re Contempt of Dougherty*, 429 Mich. 81, 95 (1987).
 
-90\. As a direct and proximate result of Defendants' Fourth Amendment violations, Plaintiff suffered loss of liberty, loss of employment, and severe emotional distress.
+90\. As a direct and proximate result of Defendants' Fourteenth Amendment violations, Plaintiff suffered loss of liberty, loss of employment, and severe emotional distress.
 
 ---
 
-## XI. COUNT VII: SIXTH AMENDMENT — INCARCERATION WITHOUT RIGHT TO COUNSEL
+## XI. COUNT VII: FOURTEENTH AMENDMENT DUE PROCESS — DENIAL OF PROCEDURAL SAFEGUARDS IN CIVIL CONTEMPT
 
 91\. Plaintiff repeats and re-alleges each and every allegation set forth in the preceding paragraphs as though fully set forth herein.
 
-92\. The Sixth Amendment, applicable to the states through the Fourteenth Amendment, provides that in criminal prosecutions the accused shall have the assistance of counsel. Under *Argersinger v. Hamlin*, 407 U.S. 25, 37 (1972), no person may be imprisoned unless afforded the right to counsel. The Supreme Court in *Turner v. Rogers*, 564 U.S. 431, 442 (2011), held that even in civil contempt proceedings, "where the opposing parent is unrepresented and the State is not, the Due Process Clause does not automatically require the provision of counsel" — but **does** require substitute procedural safeguards including notice, the opportunity to respond, and judicial findings on the record concerning ability to pay. *Id.* at 447–48.
+92\. The Due Process Clause of the Fourteenth Amendment requires that, before a court may incarcerate a person for civil contempt, it must provide adequate procedural safeguards to protect the contemnor's liberty interest. The Supreme Court in *Turner v. Rogers*, 564 U.S. 431, 447–48 (2011), held that in civil contempt proceedings where incarceration is imposed, due process requires at minimum: (a) notice that ability to comply is a critical issue; (b) the use of a form or equivalent to elicit relevant financial information; (c) an opportunity for the alleged contemnor to respond to statements and questions about financial status; and (d) an express finding by the court that the alleged contemnor has the ability to pay. These procedural safeguards are constitutionally mandated to ensure that civil contempt incarceration serves its coercive purpose rather than becoming punitive imprisonment without criminal procedural protections.
 
-93\. Judge McNeill incarcerated Plaintiff for civil contempt **without providing appointed counsel**, without making on-the-record findings of ability to comply, and without providing any of the substitute procedural safeguards required by *Turner*. This deprivation of liberty without either counsel or adequate procedural safeguards violated Plaintiff's rights under the Sixth and Fourteenth Amendments.
+93\. Judge McNeill incarcerated Plaintiff for civil contempt **without providing any of the procedural safeguards required by *Turner***, without making on-the-record findings of ability to comply, and without affording Plaintiff a meaningful opportunity to be heard on his financial status or ability to comply with the purge conditions. This deprivation of liberty without adequate procedural safeguards violated Plaintiff's Fourteenth Amendment right to due process.
 
-94\. As a direct and proximate result of Defendants' Sixth Amendment violations, Plaintiff was incarcerated without the constitutional protections to which he was entitled.
+94\. As a direct and proximate result of Defendants' due process violations, Plaintiff was incarcerated without the constitutional protections to which he was entitled.
 
 ---
 
 ## XII. COUNT VIII: DENIAL OF ACCESS TO COURTS
-### (42 U.S.C. § 1983 — First Amendment and Due Process Clause)
-### Against Defendant McNeill
 ### (42 U.S.C. § 1983 — First and Fourteenth Amendments)
 ### Against Defendant McNeill
 
@@ -496,7 +452,101 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 &emsp;(a) **$250 Filing Bond (May 16, 2025).** Judge McNeill imposed a $250 filing deposit as a precondition to Plaintiff filing any future motions. This bond was imposed on a pro se litigant who had already lost two jobs and two homes as a direct result of the Court's own orders, rendering him unable to pay. When fundamental rights are at stake and the courts are the exclusive forum for their vindication, conditioning access on the payment of fees an indigent litigant cannot afford violates due process. *Boddie v. Connecticut*, 401 U.S. 371 (1971);
 
-&emsp;(b) **"Do Not File Anymore" Directive.** Judge McNeill stated on the record, in substance: "Do not file anymore, I will not look at it." This is not a case management order or a vexatious-litigant sanction issued pursuant to proper procedures. It is a Constitutional Right | Clearly Established Since |
+&emsp;(b) **"Do Not File Anymore" Directive.** Judge McNeill stated on the record, in substance: "Do not file anymore, I will not look at it." This is not a case management order or a vexatious-litigant sanction issued pursuant to proper procedures. It is a categorical, on-the-record refusal by a sitting judge to consider any future filings from a party. A judicial directive refusing to consider any pleading from a specific party — without procedural safeguards, without findings, and without a right to appeal — is a de facto ban on court access;
+
+&emsp;(c) **Muting During Hearings.** Plaintiff's microphone was muted three (3) separate times during the November 15, 2025 remote hearing — the very hearing at which the Court imposed 14 days of incarceration. A "hearing" at which a party is physically prevented from speaking is no hearing at all. The right to be heard is the most basic component of access to courts;
+
+&emsp;(d) **Self-Ruling on Disqualification.** When Plaintiff sought to remove the source of the access barriers by filing a motion for disqualification, Judge McNeill ruled on her own disqualification — denying Plaintiff even the procedural remedy the court rules prescribe for this precise situation.
+
+98\. The combined effect of these four actions was a **complete denial of court access**: Plaintiff could not file (the bond), his filings would not be read (the directive), he could not speak (the muting), and he could not remove the judge who was blocking his access (the self-ruling). This is not a partial or incidental restriction on access — it is a total exclusion from the judicial process.
+
+99\. In *Christopher v. Harbury*, 536 U.S. 403, 415 (2002), the Supreme Court held that a plaintiff must identify a nonfrivolous underlying claim that was lost or impeded as a result of the denial of access. Plaintiff's underlying claims — enforcement of parenting time under MCL 722.27a(3), make-up parenting time under MCL 552.511b, modification of custody and support under MCL 722.27, and reconsideration of ex parte orders — are all nonfrivolous claims that were directly impeded by Judge McNeill's systematic denial of access.
+
+100\. As a direct and proximate result of Defendant McNeill's denial of access to courts, Plaintiff has been unable to vindicate his fundamental parental rights, unable to challenge the ex parte orders that stripped him of all parenting time, and unable to seek relief from the very conditions causing his ongoing injury.
+
+---
+
+## XIII. PREEMPTIVE DOCTRINAL DEFENSES
+
+Plaintiff anticipates that Defendants will raise five doctrinal defenses in a motion to dismiss. Each is addressed and rebutted below.
+
+### A. The Rooker-Feldman Doctrine Does Not Bar This Action
+
+86\. The Rooker-Feldman doctrine divests federal district courts of jurisdiction only over cases "brought by state-court losers complaining of injuries caused by state-court judgments rendered before the district court proceedings commenced and inviting district court review and rejection of those judgments." *Exxon Mobil Corp. v. Saudi Basic Industries Corp.*, 544 U.S. 280, 284 (2005).
+
+87\. The Sixth Circuit in *McCormick v. Braverman*, 451 F.3d 382, 393 (6th Cir. 2006), adopted the Supreme Court's narrow reading and held that Rooker-Feldman applies only where the "source of the injury" is the state court judgment itself. If the source is conduct by state actors rather than the judgment itself, the doctrine does not apply.
+
+88\. This Complaint does not ask the Court to reverse, vacate, or modify any state court custody determination. Plaintiff does not argue that the state court reached the wrong substantive result on custody. Rather, Plaintiff asserts that the *process* by which he was deprived of his fundamental parental rights was unconstitutionally deficient — regardless of the outcome. The "source of injury" in each count is *conduct*, not a *judgment*:
+
+&emsp;(a) **Count I (Substantive Due Process):** The injury is the total deprivation of parental rights without strict scrutiny — not the custody ruling itself;
+
+&emsp;(b) **Count II (Procedural Due Process):** The injury is the denial of notice and hearing before deprivation — not any specific custody order;
+
+&emsp;(c) **Count III (Equal Protection):** The injury is systematic disparate treatment — not the content of any order;
+
+&emsp;(d) **Count IV (First Amendment):** The injury is retaliatory incarceration for protected speech — no state judgment is implicated;
+
+&emsp;(e) **Count V (§ 1985(3) Conspiracy):** The injury is the coordinated deprivation through a concerted pattern of ex parte adjudication and extrajudicial collaboration.
+
+89\. None of these claims would be "rendered moot" by any particular custody outcome. They are independent constitutional violations actionable under § 1983. *See Catz v. Chalker*, 142 F.3d 279, 293 (6th Cir. 1998). Rooker-Feldman therefore poses no jurisdictional bar.
+
+### B. The Domestic Relations Exception Does Not Bar This Action
+
+90A\. The Supreme Court in *Ankenbrandt v. Richards*, 504 U.S. 689 (1992), held that the domestic relations exception to federal jurisdiction is **narrow** — it applies only to the issuance of divorce, alimony, and child custody decrees. The exception does **not** bar federal constitutional claims (including § 1983 claims) merely because they arise in a family law context. *Id.* at 700–04.
+
+90B\. This Complaint does not seek a custody decree, a divorce, or an alimony award. It seeks damages for constitutional violations — deprivation of due process, equal protection, First Amendment rights, and conspiracy under § 1985(3). The domestic relations exception is therefore inapplicable. *See also Catz v. Chalker*, 142 F.3d 279, 293 (6th Cir. 1998) (holding that § 1983 is a viable remedy for state interference with parental custody rights and that the domestic relations exception does not bar such claims).
+
+### C. Younger Abstention Does Not Apply
+
+90\. In *Sprint Communications, Inc. v. Jacobs*, 571 U.S. 69, 78 (2013), the Supreme Court dramatically narrowed *Younger v. Harris*, 401 U.S. 37 (1971), to only three "exceptional" categories: (a) ongoing state criminal prosecutions; (b) civil enforcement proceedings akin to criminal prosecutions; and (c) civil proceedings uniquely in furtherance of the state courts' ability to perform their judicial functions. A private custody proceeding between two parents does not fall within any of these categories.
+
+91\. Even if *Younger* were otherwise applicable, the **bad faith exception** squarely applies. *Younger*, 401 U.S. at 54; *Kugler v. Helfant*, 421 U.S. 117, 124 (1975). The following facts demonstrate bad faith: twenty-four ex parte orders (43.6% ex parte rate); muting Plaintiff three times during a hearing; refusing to review an exculpatory police report; imposing 45 days of incarceration for birthday messages; and telling Plaintiff "Do not file anymore."
+
+92\. Further, a fundamental premise of *Younger* is that the state forum provides an "adequate opportunity" to raise federal claims. *Middlesex County Ethics Comm. v. Garden State Bar Ass'n*, 457 U.S. 423, 432 (1982). Where the federal claim is *against the judge presiding over the state proceeding*, no adequate state remedy exists. A litigant cannot raise a § 1983 claim against the very judge controlling his case. The inherent conflict renders the state forum structurally inadequate. *See Gibson v. Berryhill*, 411 U.S. 564, 577 (1973).
+
+93\. Younger abstention therefore does not apply.
+
+### D. Heck v. Humphrey Does Not Bar These Claims
+
+94\. In *Heck v. Humphrey*, 512 U.S. 477, 486–87 (1994), the Supreme Court held that a § 1983 damages claim is not cognizable if "a judgment in favor of the plaintiff would *necessarily imply* the invalidity of his conviction or sentence." The operative word is "*necessarily*."
+
+95\. Plaintiff does not challenge the validity of his PPO guilty plea (October 18, 2025) or the underlying contempt findings. Plaintiff challenges the *process* by which those adjudications were reached — the denial of the right to be heard, the denial of the right to present exculpatory evidence, the denial of the right to counsel, and the imposition of incarceration as punishment for protected speech.
+
+96\. A judgment in Plaintiff's favor would not necessarily imply that he was innocent of the underlying conduct. It would establish only that the process was constitutionally deficient. Due process claims and the underlying merits are distinct inquiries. The Sixth Circuit has consistently held that *Heck* does not bar § 1983 claims challenging the *procedures* used in a proceeding. *Schreiber v. Moe*, 596 F.3d 323, 334 (6th Cir. 2010).
+
+97\. The First Amendment retaliation claim (Count IV) is categorically outside *Heck*. A judgment in Plaintiff's favor would not imply he did not send the birthday messages; it would establish that punishing a parent for sending birthday messages violates the First Amendment.
+
+98\. *Heck* therefore poses no bar to any of Plaintiff's counts.
+
+### E. Judicial Immunity Does Not Protect Judge McNeill
+
+99\. Judges are generally immune from § 1983 damages for acts performed in their judicial capacity. *Mireles v. Waco*, 502 U.S. 9 (1991). However, two well-established exceptions apply:
+
+100\. **Exception 1 — Non-Judicial Acts:** Judicial immunity does not apply to acts "not taken in the judge's judicial capacity." *Id.* at 11–12; *Forrester v. White*, 484 U.S. 219 (1988). The following acts by McNeill are non-judicial:
+
+&emsp;(a) Ex parte communications with a party — administrative acts violating MCR 2.003 and Canon 3A(4) of the Michigan Code of Judicial Conduct;
+
+&emsp;(b) Self-ruling on her own disqualification motion — a function MCR 2.003(D) assigns to the Chief Judge, not the challenged judge;
+
+&emsp;(c) Directing that Plaintiff's filings not be reviewed ("Do not file anymore") — a categorical refusal to adjudicate is the absence of judicial action, not the exercise of it;
+
+&emsp;(d) Conspiratorial conduct with Watson and Berry — conspiracy is not a function normally performed by a judge. *Dennis v. Sparks*, 449 U.S. 24, 31 (1980).
+
+101\. **Exception 2 — Clear Absence of All Jurisdiction:** Judicial immunity does not apply to acts "taken in the clear absence of all jurisdiction." *Stump v. Sparkman*, 435 U.S. 349, 356–57 (1978). The jurisdiction to act ex parte under MCR 3.207(C)(2) is *conditional* — it requires specific sworn facts showing imminent danger. When McNeill entered five ex parte orders on August 8, 2025, without compliance with any mandatory prerequisite that confers jurisdiction to act ex parte, she acted in the **clear absence of the jurisdiction that due process confers**.
+
+102\. McNeill is sued **only in her individual capacity** — not in her official or judicial capacity. The conspiracy with Watson and Berry further pierces any remaining immunity. *Dennis v. Sparks*, 449 U.S. at 28–29 (when a judge acts as a co-conspirator rather than as a judicial officer, immunity does not shield the conspiratorial conduct).
+
+### F. Qualified Immunity Does Not Shield Defendants
+
+103\. Under *Harlow v. Fitzgerald*, 457 U.S. 800, 818 (1982), government officials are entitled to qualified immunity unless their conduct violates "clearly established statutory or constitutional rights of which a reasonable person would have known."
+
+104\. The two-prong analysis requires: (1) whether the facts alleged show the defendant violated a constitutional right; and (2) whether the right was "clearly established" at the time. *Pearson v. Callahan*, 555 U.S. 223, 236 (2009).
+
+105\. **Prong One — Constitutional Violations:** As set forth in Counts I through IV, Defendants violated Plaintiff's substantive due process, procedural due process, equal protection, and First Amendment rights.
+
+106\. **Prong Two — Clearly Established Rights:** Every right at issue was clearly established decades before the conduct alleged:
+
+| Constitutional Right | Clearly Established Since |
 |---|---|
 | Right to notice and hearing before deprivation of fundamental liberty | *Mathews v. Eldridge*, 424 U.S. 319 (1976) |
 | Fundamental right to parent | *Stanley v. Illinois*, 405 U.S. 645 (1972); *Troxel*, 530 U.S. 57 (2000) |
@@ -511,49 +561,9 @@ Plaintiff Andrew James Pigors, proceeding pro se and in forma pauperis pursuant 
 
 109\. Qualified immunity therefore does not shield any Defendant.
 
-### G. Plaintiff Has Article III Standing
-
-110A\. Article III standing requires: (1) an injury in fact that is concrete and particularized; (2) a causal connection between the injury and the conduct complained of; and (3) a likelihood that the injury will be redressed by a favorable decision. *Lujan v. Defenders of Wildlife*, 504 U.S. 555, 560–61 (1992).
-
-110B\. Plaintiff's injuries are concrete, particularized, and severe:
-
-&emsp;(a) **59 days of incarceration** — a physical deprivation of liberty that is the most concrete injury cognizable at law;
-
-&emsp;(b) **Loss of two jobs** — IndiGrow LLC terminated Plaintiff on June 2, 2024, and Plaintiff lost his USPS weekend carrier position — as a direct, documented consequence of the incarceration imposed by Defendants;
-
-&emsp;(c) **Loss of two homes** — Plaintiff lost housing as a direct result of the incarceration and resulting inability to pay rent;
-
-&emsp;(d) **248+ consecutive days of total separation** from his child L.D.W. — the destruction of a fundamental liberty interest during the child's most critical developmental period (ages 2–4);
-
-&emsp;(e) **$250 filing bond** — a concrete financial barrier to court access, paid or unpayable.
-
-110C\. Each injury is directly traceable to Defendants' conduct — the ex parte orders, the contempt findings, the $250 bond, and the coordinated conspiracy. A favorable decision — declaratory relief, injunctive relief requiring reassignment and restoration of parenting time, and compensatory damages — would directly redress these injuries.
-
-110D\. Nominal damages alone confer Article III standing. *Uzuegbunam v. Preczewski*, 592 U.S. 279 (2021). Plaintiff's injuries extend far beyond the nominal — but even the constitutional violations standing alone satisfy Article III. No standing challenge is viable.
-
-### H. The Statute of Limitations Does Not Bar Any Claim — Continuing Violation Doctrine
-
-110E\. Section 1983 actions in Michigan are governed by Michigan's three-year statute of limitations for personal injury. *Owens v. Okure*, 488 U.S. 235, 249–50 (1989); MCL 600.5805(2). Federal law governs the accrual date. *Wallace v. Kato*, 549 U.S. 384, 388 (2007).
-
-110F\. All claims are timely under the **continuing violation doctrine**. The Sixth Circuit recognizes that where a defendant's conduct constitutes a "continuing violation" — a series of related acts, at least one of which falls within the limitations period — the entire course of conduct is actionable. *Tolbert v. Ohio Dep't of Transportation*, 172 F.3d 934, 940 (6th Cir. 1999); *Sharpe v. Cureton*, 319 F.3d 259, 267 (6th Cir. 2003).
-
-110G\. The constitutional violations alleged here are not discrete, completed acts but an **ongoing, continuous deprivation** that persists to this day:
-
-&emsp;(a) The total separation of Plaintiff from L.D.W. — now exceeding 248 consecutive days — is a **continuing deprivation** of Plaintiff's fundamental liberty interest. Each additional day of enforced separation is a new injury. The deprivation has not ceased;
-
-&emsp;(b) The $250 filing bond remains in effect, constituting a **continuing denial of access** to the courts. Each day the bond blocks Plaintiff from filing constitutes a new violation;
-
-&emsp;(c) The "Do not file anymore" directive has not been rescinded. Its chilling effect on Plaintiff's First Amendment rights is **ongoing**;
-
-&emsp;(d) The ex parte orders suspending all parenting time remain in force. Their effects are **continuing** — not historical;
-
-&emsp;(e) The conspiracy among Defendants is **ongoing**. Watson continues to benefit from the ex parte orders. McNeill continues to preside. Berry continues to assist Watson. The conspiracy has not terminated.
-
-110H\. Even absent the continuing violation doctrine, the most significant constitutional deprivations occurred well within the three-year limitations period: the five ex parte orders of August 8, 2025; the 45-day incarceration of November 26, 2025; the $250 bond of May 2025; and the ongoing total separation beginning July 29, 2025. No statute of limitations defense is viable as to any count.
-
 ---
 
-## XV. PRAYER FOR RELIEF
+## XIV. PRAYER FOR RELIEF
 
 WHEREFORE, Plaintiff Andrew James Pigors respectfully prays that this Court grant the following relief:
 
@@ -561,7 +571,7 @@ WHEREFORE, Plaintiff Andrew James Pigors respectfully prays that this Court gran
 
 110\. A declaratory judgment pursuant to 28 U.S.C. § 2201 that:
 
-&emsp;(a) Defendant McNeill violated Plaintiff's substantive and procedural due process rights under the Fourteenth Amendment by issuing 24 ex parte orders without notice or hearing and by maintaining a total separation of Plaintiff from his child for 248+ consecutive days;
+&emsp;(a) Defendant McNeill violated Plaintiff's substantive and procedural due process rights under the Fourteenth Amendment by issuing 24 ex parte orders without notice or hearing and by maintaining a total separation of Plaintiff from his child for 230+ consecutive days;
 
 &emsp;(b) Defendant McNeill violated Plaintiff's First Amendment rights by incarcerating Plaintiff for 45 days for sending birthday messages to his child and by retaliating against Plaintiff's exercise of his right to petition the court;
 
@@ -571,11 +581,155 @@ WHEREFORE, Plaintiff Andrew James Pigors respectfully prays that this Court gran
 
 &emsp;(e) Defendants Watson, Berry, and McNeill conspired to deprive Plaintiff of his civil rights in violation of 42 U.S.C. § 1985(3);
 
-&emsp;(f) Defendant McNeill violated Plaintiff's Fourth Amendment right to be free from unreasonable seizure by ordering Plaintiff incarcerated without adequate purge conditions and without a finding of willful noncompliance;
+&emsp;(f) Defendant McNeill violated Plaintiff's Fourteenth Amendment right to due process by ordering Plaintiff incarcerated for civil contempt without adequate purge conditions, without a finding of willful noncompliance, and without the procedural safeguards required by *Turner v. Rogers*, 564 U.S. 431 (2011);
 
-&emsp;(g) Defendant McNeill violated Plaintiff's Sixth Amendment right to counsel (as applicable through Due Process in civil contempt) by incarcerating Plaintiff without providing appointed counsel or the substitute procedural safeguards required by *Turner v. Rogers*, 564 U.S. 431 (2011);
+&emsp;(g) Defendant McNeill violated Plaintiff's Fourteenth Amendment right to due process by incarcerating Plaintiff without providing the procedural safeguards required by *Turner v. Rogers*, 564 U.S. 431 (2011), including notice that ability to comply is a critical issue, an opportunity to respond, and an express finding of ability to pay;
 
-&emsp;(h) Defendant McNeill violated Plaintiff's fundamental right of access to courts by imposing a $250 filing bond, issuing a Authority | Proposition |
+&emsp;(h) Defendant McNeill violated Plaintiff's fundamental right of access to courts by imposing a $250 filing bond, issuing a categorical directive refusing to consider Plaintiff's filings, muting Plaintiff during hearings, and self-ruling on her own disqualification — constituting a systematic denial of access in violation of *Boddie v. Connecticut*, 401 U.S. 371 (1971), and *Christopher v. Harbury*, 536 U.S. 403 (2002).
+
+### B. Injunctive Relief
+
+111\. A permanent injunction:
+
+&emsp;(a) **Prohibiting** Defendant McNeill from presiding over any further proceedings involving Plaintiff or L.D.W.;
+
+&emsp;(b) **Enjoining** the enforcement of the $250 bond requirement;
+
+&emsp;(c) **Ordering** prospective injunctive relief directing Defendants to provide constitutionally adequate procedures — including notice, an evidentiary hearing with findings of fact under MCL 722.23, and appointment of a neutral judicial officer — before any further deprivation of Plaintiff's parenting time with L.D.W.;
+
+&emsp;(d) **Ordering** the reassignment of all Pigors v. Watson matters (Case Nos. 2024-001507-DC and 2023-5907-PP) to a different judge.
+
+### C. Compensatory Damages
+
+112\. Compensatory damages against all Defendants, jointly and severally, for:
+
+&emsp;(a) Loss of parent-child companionship (230+ consecutive days of total separation);
+
+&emsp;(b) Emotional distress — Plaintiff (forced separation, systematic silencing, retaliatory incarceration, financial coercion);
+
+&emsp;(c) Emotional distress — child L.D.W. (developmental harm, attachment disruption during critical period);
+
+&emsp;(d) Lost income and economic opportunity (loss of two jobs);
+
+&emsp;(e) Lost housing (loss of two homes);
+
+&emsp;(f) Legal costs and litigation expenses;
+
+in an amount to be determined by the jury but believed to be within the range of **$100,000–$1,000,000**, including but not limited to the following verified damages:
+
+&emsp;(g) Parent-child separation (230+ consecutive days as of filing): **$100,000–$500,000**;
+
+&emsp;(h) Child psychological harm (attachment disruption during critical developmental period): **$50,000–$250,000**;
+
+&emsp;(i) Lost income from 14-day incarceration: **$2,000–$8,000**;
+
+&emsp;(j) Lost income from 45-day incarceration: **$5,000–$20,000**;
+
+&emsp;(k) Lost employment — IndiGrow LLC terminated Plaintiff on June 2, 2024, and Plaintiff lost his USPS weekend carrier position due to scheduling conflicts created by the litigation;
+
+&emsp;(l) Bond costs: **$250**;
+
+&emsp;(m) Watson conspiracy damages: **$25,000–$250,000**.
+
+113\. Emotional distress damages are recoverable under § 1983 without physical injury. *Memphis Community School Dist. v. Stachura*, 477 U.S. 299, 307 (1986); *Carey v. Piphus*, 435 U.S. 247, 264 (1978).
+
+113A\. Plaintiff's documented damages include: (a) Constitutional deprivation damages of $100,000–$1,000,000 based on the *Carey v. Piphus*, 435 U.S. 247 (1978) framework for actual injury plus presumed damages from 567+ days of parent-child separation; (b) Emotional distress damages of $100,000–$500,000 for the complete severance of the parent-child bond at $176–$882 per day of separation, supported by *Troxel v. Granville*, 530 U.S. 57 (2000); (c) Punitive damages of $50,000–$500,000 for the pattern of willful due process violations documented across 200 cataloged PPO violations and 24 of 55 orders (43.6%) entered ex parte; and (d) Conspiracy damages of $25,000–$250,000 under *Dennis v. Sparks*, 449 U.S. 24 (1980), for the coordinated Watson-Berry-McNeill campaign.
+
+### D. Punitive Damages
+
+114\. Punitive damages against each Defendant in their individual capacity, estimated at **$50,000–$500,000** per Defendant, in an amount sufficient to punish Defendants' willful, malicious, and reckless disregard for Plaintiff's constitutional rights and to deter similar conduct. Defendant McNeill issued 24 ex parte orders without notice or hearing, incarcerated Plaintiff for 45 days for sending birthday messages to his child, and maintained a total parent-child separation now exceeding 230 days — conduct that is, upon information and belief, motivated by evil motive or intent, or at minimum involves reckless and callous indifference to Plaintiff's federally protected rights. Punitive damages are available under § 1983 when the defendant's conduct is "motivated by evil motive or intent, or when it involves reckless or callous indifference to the federally protected rights of others." *Smith v. Wade*, 461 U.S. 30, 56 (1983).
+
+### E. Nominal Damages
+
+115\. Nominal damages of $1.00 per constitutional violation established at trial. Even absent quantifiable compensatory damages, violation of a constitutional right entitles the plaintiff to nominal damages. *Carey v. Piphus*, 435 U.S. 247, 266 (1978). Nominal damages are sufficient to establish Article III standing. *Uzuegbunam v. Preczewski*, 592 U.S. 279 (2021).
+
+### F. Costs
+
+116\. All litigation costs, filing fees, service costs, copying expenses, travel, and other reasonable out-of-pocket expenses pursuant to 42 U.S.C. § 1988, Fed. R. Civ. P. 54(d), and 28 U.S.C. § 1920.
+
+### F-1. Attorney Fees Under 42 U.S.C. § 1988
+
+116a\. Reasonable attorney fees (or, for *pro se* litigants, reasonable litigation expenses and costs to the extent permitted under § 1988) estimated at **$10,000–$100,000**. Section 1988 provides that "the court, in its discretion, may allow the prevailing party . . . a reasonable attorney's fee as part of the costs." 42 U.S.C. § 1988(b). Although *pro se* litigants generally may not recover attorney fees under § 1988, *Kay v. Ehrler*, 499 U.S. 432 (1991), Plaintiff reserves the right to retain counsel at any stage of these proceedings, at which point § 1988 fees shall accrue from the date of filing. Plaintiff further seeks all non-fee litigation costs recoverable under § 1988 and § 1920, including expert witness fees, deposition costs, and document production expenses.
+
+### G. Continuing Accrual
+
+117\. Damages continue to accrue daily. Each additional day of separation strengthens this action and increases Plaintiff's compensatory and punitive damages.
+
+### H. Further Relief
+
+118\. Such other and further relief as this Court deems just and equitable.
+
+---
+
+## XV. JURY DEMAND
+
+119\. Plaintiff demands trial by jury on all issues so triable pursuant to the Seventh Amendment to the United States Constitution and Rule 38 of the Federal Rules of Civil Procedure.
+
+---
+
+## XVI. VERIFICATION
+
+I, Andrew James Pigors, declare under penalty of perjury pursuant to **28 U.S.C. § 1746** that the foregoing is true and correct to the best of my knowledge, information, and belief. The factual allegations set forth in this Complaint are based upon my personal knowledge, documents in my possession, and the official records of the 14th Circuit Court, Muskegon County, Michigan.
+
+Executed on: ____________________
+
+&emsp;&emsp;&emsp;&emsp;\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+&emsp;&emsp;&emsp;&emsp;Andrew James Pigors, Plaintiff Pro Se
+
+[ANDREW: SIGN AND DATE]
+
+---
+
+Respectfully submitted,
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**ANDREW JAMES PIGORS**
+Plaintiff, Pro Se
+1977 Whitehall Road, Lot 17
+North Muskegon, Michigan 49445
+Telephone: (231) 903-5690
+Email: andrewjpigors@gmail.com
+
+Date: ____________________
+
+[ANDREW: SIGN AND DATE]
+
+---
+
+## XVII. CERTIFICATE OF SERVICE
+
+I, Andrew James Pigors, hereby certify that on _________________, I caused a true and correct copy of the foregoing COMPLAINT FOR DEPRIVATION OF CIVIL RIGHTS UNDER 42 U.S.C. §§ 1983, 1985, 1988 to be served upon the following parties:
+
+**Hon. Jenny L. McNeill**
+(Via U.S. Marshal Service pursuant to Fed. R. Civ. P. 4(c)(3) and 28 U.S.C. § 1915(d))
+14th Circuit Court, Family Division
+990 Terrace Street
+Muskegon, Michigan 49442
+
+**Emily A. Watson**
+(Via U.S. Marshal Service pursuant to Fed. R. Civ. P. 4(c)(3) and 28 U.S.C. § 1915(d))
+2160 Garland Drive
+Norton Shores, Michigan 49441
+
+**Ronald Berry**
+(Via U.S. Marshal Service pursuant to Fed. R. Civ. P. 4(c)(3) and 28 U.S.C. § 1915(d))
+[Address to be determined through discovery or U.S. Marshal diligent search — Berry is Defendant Watson's domestic partner and believed to reside at or near 2160 Garland Drive, Norton Shores, MI 49441]
+
+Service to be effectuated by the United States Marshal pursuant to 28 U.S.C. § 1915(d) (IFP — Marshal service).
+
+&emsp;&emsp;&emsp;&emsp;\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+&emsp;&emsp;&emsp;&emsp;Andrew James Pigors, Plaintiff Pro Se
+
+[ANDREW: SIGN AND DATE]
+
+---
+
+## APPENDIX: AUTHORITY TABLE
+
+| Authority | Proposition |
 |---|---|
 | *Troxel v. Granville*, 530 U.S. 57 (2000) | Parental liberty = oldest fundamental right |
 | *Santosky v. Kramer*, 455 U.S. 745 (1982) | Clear and convincing evidence for termination |
@@ -589,7 +743,8 @@ WHEREFORE, Plaintiff Andrew James Pigors respectfully prays that this Court gran
 | *Pulliam v. Allen*, 466 U.S. 522 (1984) | Injunctive relief available against judges |
 | *Exxon Mobil v. Saudi Basic Indus.*, 544 U.S. 280 (2005) | Rooker-Feldman is narrow — "source of injury" test |
 | *McCormick v. Braverman*, 451 F.3d 382 (6th Cir. 2006) | 6th Circuit applies Rooker-Feldman narrowly |
-| *Sprint Communications v. Jacobs*, 571 U.S. 69 (2013) | Younger narrowed to three exceptional | *Younger v. Harris*, 401 U.S. 37 (1971) | Abstention doctrine and bad faith exception |
+| *Sprint Communications v. Jacobs*, 571 U.S. 69 (2013) | Younger narrowed to three exceptional categories |
+| *Younger v. Harris*, 401 U.S. 37 (1971) | Abstention doctrine and bad faith exception |
 | *Kugler v. Helfant*, 421 U.S. 117 (1975) | Bad faith exception to Younger abstention |
 | *Heck v. Humphrey*, 512 U.S. 477 (1994) | Bars only claims "necessarily implying" conviction invalid |
 | *Schreiber v. Moe*, 596 F.3d 323 (6th Cir. 2010) | Process claims distinct from outcome — Heck inapplicable |
@@ -611,6 +766,7 @@ WHEREFORE, Plaintiff Andrew James Pigors respectfully prays that this Court gran
 | *Doe v. Claiborne County*, 103 F.3d 495 (6th Cir. 1996) | 6th Circuit substantive due process for parent-child |
 | *County of Sacramento v. Lewis*, 523 U.S. 833 (1998) | Conscience-shocking standard |
 | *Craig v. Boren*, 429 U.S. 190 (1976) | Intermediate scrutiny for sex-based classification |
+| *United States v. Virginia*, 518 U.S. 515 (1996) | Sex-based classifications require exceedingly persuasive justification |
 | *Patsy v. Board of Regents*, 457 U.S. 496 (1982) | No exhaustion required for § 1983 |
 | *Mead v. Batchlor*, 435 Mich. 480 (1990) | Right to counsel before incarceration for contempt |
 | *Crawford-El v. Britton*, 523 U.S. 574 (1998) | Retaliatory motive evidence |
@@ -642,30 +798,12 @@ WHEREFORE, Plaintiff Andrew James Pigors respectfully prays that this Court gran
 | *Caperton v. A.T. Massey Coal Co.*, 556 U.S. 868 (2009) | Due process right to recusal of biased judge |
 | *In re Murchison*, 349 U.S. 133 (1955) | Fair trial requires fair and impartial tribunal |
 | *Moore v. City of East Cleveland*, 431 U.S. 494 (1977) | Family integrity as constitutional right |
-| *Albright v. Oliver*, 510 U.S. 266 (1994) | Fourth Amendment seizure analysis — incarceration is seizure |
-| *Argersinger v. Hamlin*, 407 U.S. 25 (1972) | No imprisonment without right to counsel |
-| *Baker v. McCollan*, 443 U.S. 137 (1979) | Incarceration constitutes seizure of the person |
+| *Albright v. Oliver*, 510 U.S. 266 (1994) | Due process analysis of pretrial liberty deprivation |
+| *Argersinger v. Hamlin*, 407 U.S. 25 (1972) | Right to counsel when imprisonment is imposed |
+| *Baker v. McCollan*, 443 U.S. 137 (1979) | Liberty interest in freedom from incarceration |
 | *Mapp v. Ohio*, 367 U.S. 643 (1961) | Exclusionary rule — illegally obtained evidence inadmissible |
 | *Wong Sun v. United States*, 371 U.S. 471 (1963) | Fruit of the poisonous tree doctrine |
 | *People v. Beavers*, 393 Mich. 554 (1975) | Michigan application of exclusionary rule to MCL 750.539c recordings |
 | *Middlesex County Ethics Comm. v. Garden State Bar*, 457 U.S. 423 (1982) | Adequate state forum requirement for Younger |
 | *Halberstam v. Welch*, 705 F.2d 472 (D.C. Cir. 1983) | Circumstantial evidence sufficient for conspiracy |
 | MCL 750.539c | Michigan felony eavesdropping — all-party consent required |
-| *Saucier v. Katz*, 533 U.S. 194 (2001) | Qualified immunity — reasonable officer standard |
-| *Lujan v. Defenders of Wildlife*, 504 U.S. 555 (1992) | Article III standing — injury in fact, causation, redressability |
-| *Owens v. Okure*, 488 U.S. 235 (1989) | § 1983 uses state personal injury statute of limitations |
-| *Wallace v. Kato*, 549 U.S. 384 (2007) | Federal law governs § 1983 accrual date |
-| *Tolbert v. Ohio Dep't of Transportation*, 172 F.3d 934 (6th Cir. 1999) | Continuing violation doctrine in 6th Circuit |
-| *Sharpe v. Cureton*, 319 F.3d 259 (6th Cir. 2003) | Continuing violation — series of related acts |
-| *City of Canton v. Harris*, 489 U.S. 378 (1989) | Monell — deliberate indifference to known risk |
-| *Owen v. City of Independence*, 445 U.S. 622 (1980) | Municipalities do not enjoy qualified immunity |
-| *Friedman v. Dozorc*, 412 Mich. 1 (1981) | Michigan abuse of process elements |
-| MCR 2.313(A)(5) | Discovery sanctions for failure to comply with discovery order |
-| MCR 3.207(C)(2) | Ex parte orders require sworn facts of imminent danger |
-| MCR 2.003(C)–(D) | Disqualification procedure — Chief Judge decides if challenged judge does not recuse |
-| MCL 552.503 | Friend of the Court statutory investigative authority |
-| MCL 552.605 | Affirmative duty to disclose income in support proceedings |
-| MCL 333.26269 | Michigan Medical Records Access Act |
-| 42 U.S.C. § 1320d-6 | HIPAA criminal penalties for unauthorized medical records access |
-| *Hayley v. Dep't of Corrections*, 468 Mich. 600 (2003) | IIED — "outrageous" conduct standard in Michigan |
-| MCL 600.2950 | Personal Protection Order statute — scope and purpose |
